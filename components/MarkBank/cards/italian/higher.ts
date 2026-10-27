@@ -156,7 +156,8 @@ export const CARDS: SecCard[] = [
     questionText: "Con le vostre parole, riassumete il pensiero di Anna sui ragazzi di PC4U e sull’iniziativa.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "La mamma è stupita/contenta/sorpresa/stupefatta/esterrefatta (2m) (2+3) che i ragazzi facciano volontariato/di come siano generosi questi giovani/della bella idea che hanno avuto/del fatto che questi ragazzi vogliano aiutare altri in difficoltà/e il progetto le sembra una vera favola anche se è tutto reale/vero (3m)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "La mamma è stupita/contenta/sorpresa/stupefatta/esterrefatta", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "che i ragazzi facciano volontariato/di come siano generosi questi giovani/della bella idea che hanno avuto/del fatto che questi ragazzi vogliano aiutare altri in difficoltà/e il progetto le sembra una vera favola anche se è tutto reale/vero", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -202,7 +203,7 @@ export const CARDS: SecCard[] = [
     questionText: "Trovate l’espressione che vuol dire “ardú croí a thabhairt / to give a boost”.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dare una spinta", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Acquistasse popolarità” 1 mark; “Spinta al progresso” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Dare una spinta", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Acquistasse popolarità” 1 mark; “Spinta al progresso” 3 marks.", permittedMarks: [0,1,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -248,7 +249,7 @@ export const CARDS: SecCard[] = [
     questionText: "Trovate l’espressione che significa “sracfhéachaint a thabhairt / take a quick look”.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vi getta (sempre) un occhio", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Guido) vi getta sempre un occhio passando” 3 marks; “Un occhio passando” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Vi getta (sempre) un occhio", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Guido) vi getta sempre un occhio passando” 3 marks; “Un occhio passando” 1 mark.", permittedMarks: [0,1,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -639,7 +640,8 @@ export const CARDS: SecCard[] = [
     questionText: "Come si conoscono il Professor Laurana e l’Onorevole?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Erano stati compagni (1m) di scuola (4m)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Erano stati compagni", marks: 1, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "di scuola", marks: 4 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -731,7 +733,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa risponde l’Onorevole alla richiesta di Roscio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Che sarebbe stato più che lieto di denunciare/ Che sarebbe stato più che lieto di lanciare lo scandalo", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che aveva bisogno di qualche prova” 4 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Che sarebbe stato più che lieto di denunciare/ Che sarebbe stato più che lieto di lanciare lo scandalo", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Che aveva bisogno di qualche prova” 4 marks.", permittedMarks: [0,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -754,7 +756,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Roscio si rifiuta di dare qualsiasi indicazione o dettaglio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché era una cosa delicata e personale", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché era una cosa delicata” 3 marks; “Perché era una cosa personale” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Perché era una cosa delicata e personale", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché era una cosa delicata” 3 marks; “Perché era una cosa personale” 3 marks.", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -938,7 +940,8 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla terza sezione, quale vantaggio offre alle aziende il lavoro da remoto?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Possono avere accesso ai migliori talenti (3m) ovunque essi si trovino (2m)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Possono avere accesso ai migliori talenti", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "ovunque essi si trovino", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1007,7 +1010,8 @@ export const CARDS: SecCard[] = [
     questionText: "Spiegate con parole vostre a cosa ha rinunciato Claudia nella sua vita.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ha rinunciato ad un lavoro stabile/tradizionale/abituale/ordinario (3) come interprete/traduttrice (2)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Ha rinunciato ad un lavoro stabile/tradizionale/abituale/ordinario", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "come interprete/traduttrice", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1099,7 +1103,8 @@ export const CARDS: SecCard[] = [
     questionText: "Per quale motivo si arrabbia la mamma di Camilla?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché lei deve rifare i letti (2) quando le figlie/loro/le bambine/Camilla (e sua sorella) non li rifa(nno) (2)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Perché lei deve rifare i letti", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "quando le figlie/loro/le bambine/Camilla (e sua sorella) non li rifa(nno)", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1145,7 +1150,7 @@ export const CARDS: SecCard[] = [
     questionText: "Trovate la frase che ci fa capire che Camilla preferirebbe non avere fratelli e sorelle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sarebbe meglio essere figli unici", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Per essere felici, sarebbe meglio essere figli unici” 4 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Sarebbe meglio essere figli unici", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Per essere felici, sarebbe meglio essere figli unici” 4 marks.", permittedMarks: [0,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1237,7 +1242,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché le giornate di Leo sono vuote?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché Beatrice continua a non andare a scuola/non c’è alla fermata dell’autobus", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché non sta più vedendo Beatrice” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Perché Beatrice continua a non andare a scuola/non c’è alla fermata dell’autobus", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché non sta più vedendo Beatrice” 3 marks.", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1398,7 +1403,7 @@ export const CARDS: SecCard[] = [
     questionText: "Trovate la frase che ci indica che Leo non riesce a dormire per niente quella notte.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Notte in bianco al quadrato", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Roba da non dormirci” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Notte in bianco al quadrato", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Roba da non dormirci” 3 marks.", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1444,7 +1449,8 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa dice il Professor Laurana dei rapporti tra Roscio e Rosello?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Si salutavano e si parlavano (2) ma non mostravano tra loro intimità di parenti/cordialità d’amicizia (3)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Si salutavano e si parlavano", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "non mostravano tra loro intimità di parenti/cordialità d’amicizia", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1467,7 +1473,8 @@ export const CARDS: SecCard[] = [
     questionText: "Come si comporta Roscio trovandosi in una compagnia numerosa?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Più la compagnia era numerosa) e più si chiudeva (2) e in assorto/lontano silenzio (3)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "(Più la compagnia era numerosa) e più si chiudeva", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "in assorto/lontano silenzio", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1536,7 +1543,8 @@ export const CARDS: SecCard[] = [
     questionText: "Perché la signora Laurana non vuole andare a vivere nel capoluogo?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché era affezionata alla casa (3) e al paese (2)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Perché era affezionata alla casa", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "al paese", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1582,7 +1590,8 @@ export const CARDS: SecCard[] = [
     questionText: "Quale consiglio danno tutti al Professor Laurana?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Di imparare a guidare l’automobile (3) e di acquistarne una (2)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Di imparare a guidare l’automobile", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "di acquistarne una", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1651,7 +1660,7 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla prima sezione, cosa fa l’influencer per diventare un personaggio di\nriferimento nel proprio settore?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Si costruisce una reputazione (sul web e sui social media) grazie alla competenza acquisita in un particolare ambito", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Ha una competenza acquisita in un particolare ambito come la moda, ecc.” 3 marks; “Si costruisce una reputazione” 2 marks; “Ha una presenza sul web/sui social media” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Si costruisce una reputazione (sul web e sui social media) grazie alla competenza acquisita in un particolare ambito", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Ha una competenza acquisita in un particolare ambito come la moda, ecc.” 3 marks; “Si costruisce una reputazione” 2 marks; “Ha una presenza sul web/sui social media” 2 marks.", permittedMarks: [0,2,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1674,7 +1683,7 @@ export const CARDS: SecCard[] = [
     questionText: "In che cosa consiste il guadagno dell’influencer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Il guadagno) viene dalla diffusione di messaggi promozionali fatti per conto di aziende e brand", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Con la diffusione di messaggi promozionali” 3 marks; “Con messaggi promozionali” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "(Il guadagno) viene dalla diffusione di messaggi promozionali fatti per conto di aziende e brand", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Con la diffusione di messaggi promozionali” 3 marks; “Con messaggi promozionali” 2 marks.", permittedMarks: [0,2,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1697,7 +1706,7 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla seconda sezione, spiegate qual è la prima qualità per diventare\ninfluencer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Essere appassionati qualcosa e diventarne esperti attraverso lo studio", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “doti personali di convincimento” 1 mark; “Diventare esperti di qualcosa” 2 marks; “Essere appassionati qualcosa” 2 marks; “Studiare bene un argomento” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Essere appassionati qualcosa e diventarne esperti attraverso lo studio", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “doti personali di convincimento” 1 mark; “Diventare esperti di qualcosa” 2 marks; “Essere appassionati qualcosa” 2 marks; “Studiare bene un argomento” 2 marks.", permittedMarks: [0,1,2,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1743,7 +1752,7 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla terza sezione, spiegate con le vostre parole perché l’influencer non\npuò improvvisare.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Improvvisando, rischierebbe di non essere ritenuto credibile e di conseguenza di non avere seguaci/persone che ti seguono/follower", marks: 6, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Rischierebbe di non essere ritenuto credibile” 3 marks; “Non avrebbe seguaci” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Improvvisando, rischierebbe di non essere ritenuto credibile e di conseguenza di non avere seguaci/persone che ti seguono/follower", marks: 6, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Rischierebbe di non essere ritenuto credibile” 3 marks; “Non avrebbe seguaci” 3 marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1766,7 +1775,10 @@ export const CARDS: SecCard[] = [
     questionText: "Spiegate come l’influencer crea i suoi contenuti.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Crea il contenuto) scattando foto (1m), realizzando video (1m)oppure scrivendo post (1m) o scrivendo/preparando articoli(1m)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Pubblica contenuti) scegliendo il materiale migliore tra immagini, video, articoli, consigli o semplici informazioni” 2 marks; “Prepara attentamente una strategia” 1 mark; “Prepara un piano di pubblicazione 1m scegliendo le miglior tematiche tramite articoli e foto” 1 mark; “Minimum list of 4 without verb only (for both” 2 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "(Crea il contenuto) scattando foto", marks: 1, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Pubblica contenuti) scegliendo il materiale migliore tra immagini, video, articoli, consigli o semplici informazioni” 2 marks; “Prepara attentamente una strategia” 1 mark; “Prepara un piano di pubblicazione 1m scegliendo le miglior tematiche tramite articoli e foto” 1 mark; “Minimum list of 4 without verb only (for both” 2 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "realizzando video", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "scrivendo post", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "scrivendo/preparando articoli", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1789,7 +1801,7 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla quarta sezione, come fa l’influencer a garantirsi il massimo seguito di\npubblico?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sceglie/scegliere il momento opportuno per pubblicare il nuovo contenuto elaborato.", marks: 6, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Pubblica il nuovo contenuto” 3 marks; “Scegliendo il momento opportuno per pubblicare” 3 marks; “Pubblicare/condividere” 1 mark; “Scegliendo il momento opportuno” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Sceglie/scegliere il momento opportuno per pubblicare il nuovo contenuto elaborato.", marks: 6, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Pubblica il nuovo contenuto” 3 marks; “Scegliendo il momento opportuno per pubblicare” 3 marks; “Pubblicare/condividere” 1 mark; “Scegliendo il momento opportuno” 1 mark.", permittedMarks: [0,1,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2042,7 +2054,7 @@ export const CARDS: SecCard[] = [
     questionText: "Menzionate due cose che ci fanno capire che le vacanze di Natale stanno arrivando.\n(i)\n(ii)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "i festoni argentati/ le palle di Natale/ e le lucette/albero", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Barba/barbone” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "i festoni argentati/ le palle di Natale/ e le lucette/albero", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Barba/barbone” 1 mark.", permittedMarks: [0,1,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2065,7 +2077,8 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa è successo al Sognatore quando aveva l’età di Leo?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Si è spaccato un braccio (3m) giocando a calcio (2m).", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Operazione” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "Si è spaccato un braccio", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Operazione” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "giocando a calcio", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2088,7 +2101,7 @@ export const CARDS: SecCard[] = [
     questionText: "Secondo Leo, com’è la barzelletta del Sognatore?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Non fa ridere/non è buona/non è divertente", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “male/cattiva” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Non fa ridere/non è buona/non è divertente", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “male/cattiva” 1 mark.", permittedMarks: [0,1,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2111,7 +2124,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Leo non sa se vuole continuare con il suo sogno?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Perché ogni volta che ci si mette) succede qualcosa di male /ha paura che potrebbe andare male", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Succede qualcosa 3m che andrà male” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "(Perché ogni volta che ci si mette) succede qualcosa di male /ha paura che potrebbe andare male", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Succede qualcosa 3m che andrà male” 1 mark.", permittedMarks: [0,1,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2134,7 +2147,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa dice il Sognatore riguardo i sogni veri?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "I sogni veri si costruiscono con gli ostacoli , altrimenti non si trasformano in progetti (ma restano sogni).", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Tutto è andato in frantumi” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "I sogni veri si costruiscono con gli ostacoli , altrimenti non si trasformano in progetti (ma restano sogni).", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Tutto è andato in frantumi” 1 mark.", permittedMarks: [0,1,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2272,7 +2285,7 @@ export const CARDS: SecCard[] = [
     questionText: "Qual è la reazione di don Luigi quando legge la lettera anonima?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Urla “Un Cristo”/ Urla una imprecazione/esclamazione e Pensa sia uno scherzo/“E’ uno scherzo”", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “era scioccato/sorpreso” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Urla “Un Cristo”/ Urla una imprecazione/esclamazione e Pensa sia uno scherzo/“E’ uno scherzo”", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “era scioccato/sorpreso” 2 marks.", permittedMarks: [0,2,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2295,7 +2308,7 @@ export const CARDS: SecCard[] = [
     questionText: "Che cosa pensa don Luigi della caccia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ne/della caccia riprovava le irragionevoli spese e fatiche/la caccia era troppo costosa e faticosa.", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “I cacciatori sono capaci di tutto” 3 marks; “Apprezzava la pernice al brodo e il coniglio all’agrodolce.” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Ne/della caccia riprovava le irragionevoli spese e fatiche/la caccia era troppo costosa e faticosa.", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “I cacciatori sono capaci di tutto” 3 marks; “Apprezzava la pernice al brodo e il coniglio all’agrodolce.” 3 marks.", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2341,7 +2354,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa pensa don Luigi dei presenti?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Don Luigi ha sospetti su tutti i presenti sia per l’avvelenamento dei cani che per la lettera anonima", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Don Luigi ha sospetti sui (tutti i) presenti” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Don Luigi ha sospetti su tutti i presenti sia per l’avvelenamento dei cani che per la lettera anonima", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Don Luigi ha sospetti sui (tutti i) presenti” 3 marks.", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2433,7 +2446,9 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla prima sezione, spiegate cosa è la campagna 30x30 Italia.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "È una campagna italiana (1m) che ha l’obiettivo di proteggere almeno il 30% del nostro mare (2m), entro il 2030 (2m).", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Nata nel 2020” 2 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "È una campagna italiana", marks: 1, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Nata nel 2020” 2 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "che ha l’obiettivo di proteggere almeno il 30% del nostro mare", marks: 2 },
+    { id: "r-1-3", kind: "point", verbatim: "entro il 2030", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2502,7 +2517,8 @@ export const CARDS: SecCard[] = [
     questionText: "Dite con le vostre parole quali sono i benefici delle Aree Marine Protette.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Gli ecosistemi hanno la possibilità di rigenerarsi (3), producendo molti benefici ambientali, sociali ed economici per le comunità locali (3)", marks: 6, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Beneficia l’ambiente, la vita e la gente” 2 marks; “Siccome la legge limita molto le attività umane che ne alterano/cambiano l’ambiente/grazie alla legge che limita/che protegge” 1 mark; “Benefici ambientali” 1 mark; “Fermano attività umane che alterano l’ambiente” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "Gli ecosistemi hanno la possibilità di rigenerarsi", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Beneficia l’ambiente, la vita e la gente” 2 marks; “Siccome la legge limita molto le attività umane che ne alterano/cambiano l’ambiente/grazie alla legge che limita/che protegge” 1 mark; “Benefici ambientali” 1 mark; “Fermano attività umane che alterano l’ambiente” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "producendo molti benefici ambientali, sociali ed economici per le comunità locali", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2640,7 +2656,8 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla prima sezione, spiegate con le vostre parole quale problema incontra\nKreshnik quando arriva nella nuova scuola.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Non sapeva dov’era la sua aula (quindi ha chiesto informazioni a due persone) (4m) ma si è perso (in entrambi i casi) (1m)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Si era trovato nel cortile (non nell’aula” 3 marks; “L’aula era dalla parte opposta” 3 marks; “Era andato troppo avanti” 3 marks; “Era andato in portineria a chiedere dove si trovava l’aula della quarta 2m non sa dove andare” 3 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "Non sapeva dov’era la sua aula (quindi ha chiesto informazioni a due persone)", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Si era trovato nel cortile (non nell’aula” 3 marks; “L’aula era dalla parte opposta” 3 marks; “Era andato troppo avanti” 3 marks; “Era andato in portineria a chiedere dove si trovava l’aula della quarta 2m non sa dove andare” 3 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "si è perso (in entrambi i casi)", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2686,7 +2703,8 @@ export const CARDS: SecCard[] = [
     questionText: "Riferendovi alla seconda sezione, dite perché l’aula EI è vuota.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(L’aula era vuota) perché mancava un professore (2 m) e la classe faceva lezione da un’altra parte (3m)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "(L’aula era vuota) perché mancava un professore", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "la classe faceva lezione da un’altra parte", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2709,7 +2727,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Kreshnik non dice il suo nome a Fabio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché il professore lo aveva detto / il professore aveva detto Kreshnik / Visto che il professore non appena entrato aveva guardato il registro e aveva detto K./ Perché il professore appena K. entra dice il suo nome", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non c’era bisogno di dirgli il nome visto che il professore non appena era entrato 4m si era limitato a dargli la mano” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Perché il professore lo aveva detto / il professore aveva detto Kreshnik / Visto che il professore non appena entrato aveva guardato il registro e aveva detto K./ Perché il professore appena K. entra dice il suo nome", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non c’era bisogno di dirgli il nome visto che il professore non appena era entrato 4m si era limitato a dargli la mano” 1 mark.", permittedMarks: [0,1,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2755,7 +2773,8 @@ export const CARDS: SecCard[] = [
     questionText: "Spiegate con le vostre parole in che modo Andrea sorprende Kreshnik.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Non gli fa le solite domande [che si aspettava] (3) gli chiede invece una cosa diversa / chiede cosa fa qui da solo (3m)", marks: 6, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Andrea gli chiede un’altra cosa” 3 marks; “Non gli chiede la stessa cosa” 3 marks; “È molto curioso” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "Non gli fa le solite domande [che si aspettava]", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Andrea gli chiede un’altra cosa” 3 marks; “Non gli chiede la stessa cosa” 3 marks; “È molto curioso” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "gli chiede invece una cosa diversa / chiede cosa fa qui da solo", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2848,7 +2867,8 @@ export const CARDS: SecCard[] = [
     questionText: "Quale, tra le altre incombenze, toccava a Marcovaldo?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(Quella d') innaffiare ogni mattina la pianta (4) in vaso dell'ingresso (1)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “La pianta in vaso dell’ingresso” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "(Quella d') innaffiare ogni mattina la pianta", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “La pianta in vaso dell’ingresso” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "in vaso dell'ingresso", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2917,7 +2937,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Marcovaldo sospirava?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché in quell’arbusto (che ingialliva allampanato tra le pareti aziendali) riconosceva un fratello di sventura", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non si sa se per la pianta o per sé” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Perché in quell’arbusto (che ingialliva allampanato tra le pareti aziendali) riconosceva un fratello di sventura", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Non si sa se per la pianta o per sé” 3 marks.", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2940,7 +2960,8 @@ export const CARDS: SecCard[] = [
     questionText: "Con quale sguardo Marcovaldo scrutava il cielo?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "con quello/lo sguardo dell'agricoltore (3m) che (di giorno in giorno) aspetta la fine della siccità (2m)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Lo sguardo non era più quello del cittadino” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "con quello/lo sguardo dell'agricoltore", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Lo sguardo non era più quello del cittadino” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "che (di giorno in giorno) aspetta la fine della siccità", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3009,7 +3030,8 @@ export const CARDS: SecCard[] = [
     questionText: "Dite con le vostre parole perché Marcovaldo tornava al coperto.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché con la pioggia si ricordava/gli ricordava/gli faceva venire in mente (2) di soffrire di reumatismi / reumatismi/ essere malato (3)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “per i reumatismi/perché era malato 3m per la pioggia” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "Perché con la pioggia si ricordava/gli ricordava/gli faceva venire in mente", marks: 2, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “per i reumatismi/perché era malato 3m per la pioggia” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "di soffrire di reumatismi / reumatismi/ essere malato", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3124,7 +3146,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa ha portato lo zio arciprete a Luisa Roscio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Una (bella) immagine del Cuore di Gesù", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Un quadro religioso/di Gesù” 3 marks; “Un’immagine religiosa” 3 marks; “Quadro / immagine/ Sacro Cuore di Gesù / Cuore di Gesù” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Una (bella) immagine del Cuore di Gesù", marks: 4, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Un quadro religioso/di Gesù” 3 marks; “Un’immagine religiosa” 3 marks; “Quadro / immagine/ Sacro Cuore di Gesù / Cuore di Gesù” 1 mark.", permittedMarks: [0,1,3,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3193,7 +3215,7 @@ export const CARDS: SecCard[] = [
     questionText: "Dite con le vostre parole perché Luisa Roscio decide di vestirsi di nero per sempre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Perché la bambina ha detto che lei è più bella vestita di nero", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché lo ha detto/lo ha chiesto la bambina” 4 marks; “Perché è più bella vestita di nero” 4 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Perché la bambina ha detto che lei è più bella vestita di nero", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché lo ha detto/lo ha chiesto la bambina” 4 marks; “Perché è più bella vestita di nero” 4 marks.", permittedMarks: [0,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3423,7 +3445,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Betta telefona al padre?",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Per capire se (il nonno-il narratore) se la sentiva di occuparsi del figlio mentre lei e suo marito partecipavano a un convegno (di matematici a Cagliari)", marks: 9, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Mentre lei e il marito vanno a Cagliari” 3 marks; “Mentre lei e suo marito erano impegnati” 3 marks; “Mentre lei sta a Cagliari” 2 marks; “Mentre è impegnata” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Per capire se (il nonno-il narratore) se la sentiva di occuparsi del figlio mentre lei e suo marito partecipavano a un convegno (di matematici a Cagliari)", marks: 9, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Mentre lei e il marito vanno a Cagliari” 3 marks; “Mentre lei e suo marito erano impegnati” 3 marks; “Mentre lei sta a Cagliari” 2 marks; “Mentre è impegnata” 2 marks.", permittedMarks: [0,2,3,9] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3469,7 +3491,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché al narratore viene spontaneo rispondere in quella maniera a Betta?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Al mattino si sentiva così indebolito / stanco / fiacco che per rimettersi in piedi doveva raccogliere le forze / fatica a riprendersi", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché faticava a riprendersi dopo l'intervento” 3 marks; “Per la sua situazione di salute” 2 marks; “Sebbene i dottori gli dicessero / dicevano che stava bene” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Al mattino si sentiva così indebolito / stanco / fiacco che per rimettersi in piedi doveva raccogliere le forze / fatica a riprendersi", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Perché faticava a riprendersi dopo l'intervento” 3 marks; “Per la sua situazione di salute” 2 marks; “Sebbene i dottori gli dicessero / dicevano che stava bene” 2 marks.", permittedMarks: [0,2,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3722,7 +3744,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché Marcovaldo comincia a guardare i luoghi con una luce diversa?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Seguendo l'amico soriano, aveva cominciato a guardare i posti come attraverso i tondi occhi d'un gatto", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Li vedeva in una luce diversa scenari di storie gattesche” 3 marks; “Collegamenti praticabili sono da zampe felpate e leggere” 3 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Seguendo l'amico soriano, aveva cominciato a guardare i posti come attraverso i tondi occhi d'un gatto", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Li vedeva in una luce diversa scenari di storie gattesche” 3 marks; “Collegamenti praticabili sono da zampe felpate e leggere” 3 marks.", permittedMarks: [0,3,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3745,7 +3767,8 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa succede quando Marcovaldo giunge alla fine di una intercapedine?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Guardandosi intorno vede che tutti i gatti che l’avevano guidato lì sono spariti / i gatti sono spariti (3) lasciandolo solo (2)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Guardandosi intorno vede che tutti i gatti che l’avevano guidato lì sono spariti / i gatti sono spariti", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "lasciandolo solo", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3791,7 +3814,7 @@ export const CARDS: SecCard[] = [
     questionText: "Cosa sappiamo di quello che Laurana deve dire a Rosello?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "L’incontro col deputato e la storia di quei documenti che Roscio aveva promesso all’uomo politico (a patto che suscitasse scandalo)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Aveva da raccontare novità” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "L’incontro col deputato e la storia di quei documenti che Roscio aveva promesso all’uomo politico (a patto che suscitasse scandalo)", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Aveva da raccontare novità” 2 marks.", permittedMarks: [0,2,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3814,7 +3837,7 @@ export const CARDS: SecCard[] = [
     questionText: "Da cosa sappiamo che Rosello è stupito?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ascoltò il racconto dicendo continuamente «Ma guarda!» e poi cominciò (ad arrovellarcisi sopra) facendo domande", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Ma guarda!” 2 marks; “Era rimasto a bocca aperta” 2 marks; “Sto restando a bocca aperta” 1 mark; “Dalle sue esclamazioni” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Ascoltò il racconto dicendo continuamente «Ma guarda!» e poi cominciò (ad arrovellarcisi sopra) facendo domande", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Ma guarda!” 2 marks; “Era rimasto a bocca aperta” 2 marks; “Sto restando a bocca aperta” 1 mark; “Dalle sue esclamazioni” 1 mark.", permittedMarks: [0,1,2,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3837,7 +3860,7 @@ export const CARDS: SecCard[] = [
     questionText: "Trova l’espressione che vuol dire “fanacht ina thost/remaining speechless”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Restando a bocca aperta", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “A bocca aperta” 4 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "Restando a bocca aperta", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “A bocca aperta” 4 marks.", permittedMarks: [0,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3860,7 +3883,8 @@ export const CARDS: SecCard[] = [
     questionText: "Usando le vostre parole, qual è secondo Laurana una prima spiegazione delle azioni\ndi Roscio?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Il fatto che stesse per attaccare uno del partito di Rosello (3) e voleva coinvolgere", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Rosello stesso” 2 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "Il fatto che stesse per attaccare uno del partito di Rosello", marks: 3, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "voleva coinvolgere Rosello stesso", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3906,7 +3930,7 @@ export const CARDS: SecCard[] = [
     questionText: "Perché la signora Roscio si mette la mano sul cuore?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Per l’ansia di sapere le cose che il professore aveva da raccontare", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Si stupì” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Per l’ansia di sapere le cose che il professore aveva da raccontare", marks: 5, contextNote: "The examination paper prints this question in Italian and heads its page \"Rispondete in italiano alle domande 1, 2, 3, 4\" — it must be answered in Italian. The scheme also pays part marks for a shorter answer: “Si stupì” 1 mark.", permittedMarks: [0,1,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",

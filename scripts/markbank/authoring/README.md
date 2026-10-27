@@ -183,6 +183,33 @@ subject-specific generators.
   the data, the validators and the draft first. 2019 HL Q1(a) ("Any 12 ×
   4marks" over 25 details in three menus) is the one row left as prose: one
   pool, past the 17 options a question may show.
+  Italian answers priced in halves on one line ("Erano stati compagni (1m)
+  di scuola (4m)", "By summer [2] 2022 [1]") are cut at the printed prices by
+  `it_rows.py`, which `it_all.py` applies to every card it builds and which
+  also upgrades an authored `italian.json` in place (`--write`); a shorter
+  answer the scheme prices under the full one, which was a sentence in the
+  row's note, becomes a printed step on a fixed-tariff point row, and a full
+  answer the SEC wrapped onto a second line is joined back from the note
+  (`it_scheme.py` joins it at the source now too).
+  Business rubric cards carry the responses the scheme prints for their part
+  as `rubric.expected` rows (`bus_expected.py`): the lifter reads the card's
+  cited "Possible Responses" / "Support Notes" pages, cuts the block at the
+  part's printed marker, drops the echoed question and the page furniture, and
+  keeps one item per printed response; what it cannot lift (a marker with no
+  response under it, a table the text layer flattened, glyph damage, a block
+  that is a whole question) is listed with its pages in
+  `authored/business-expected-review.json`, never typed in. `--write`
+  rewrites `rubric-authored.json`; a second run changes nothing.
+  Irish reading and literature excerpts are re-cut across the scheme pages
+  they run onto by `irish_excerpts.py` (`--write` upgrades `authored.json`;
+  `irish_cards.py` applies the same pass to every card it builds): a reading
+  question whose "(a)" sits on the page before, or whose "N." and "(a)" are on
+  different lines, and a literature option that `literature_scheme` cut at
+  1,550 characters, each lost their tariff. The literature tariff itself
+  ("Príomhthéama = 2 mharc", "Dhá phointe eolais = 4 mharc + 4 mharc", a band
+  table under "Tréith 1 = 13 mharc") is cut into rows at load by
+  `cards/irish/tariffs.ts`, which also reads the last reading question's
+  composite tariff where `answers.ts` cannot.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

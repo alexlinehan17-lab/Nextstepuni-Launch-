@@ -12,6 +12,7 @@ import {
   suggestRubricGrade,
 } from '../components/MarkBank/SessionScreen';
 import { sessionExerciseCount } from '../components/MarkBank/sessionPlanning';
+import { irishRowScoreId } from '../components/MarkBank/irishScoring';
 import {
   isRubricCard,
   tariffReconciles,
@@ -344,14 +345,13 @@ describe('Irish marking grammar', () => {
     })).toBe(true);
 
     const ordinaryCard = ordinary[0];
-    expect(irishMarks(ordinaryCard, {
-      [irishScoreId('eolas')]: 25,
-      [irishScoreId('gaeilge-deduction')]: 4,
-    })).toBe(21);
-    expect(suggestRubricGrade(ordinaryCard, {
-      [irishScoreId('eolas')]: 25,
-      [irishScoreId('gaeilge-deduction')]: 4,
-    })).toBe('got');
+    // The Eolas tariff is rows now (cards/irish/tariffs.ts): full marks is every row at its top.
+    const eolas = irishRubric(ordinaryCard).criteria.find(criterion => criterion.id === 'eolas')!;
+    const fullEolas = eolas.allocation
+      ? Object.fromEntries(eolas.allocation.parts.flatMap(part => part.rows.map(row => [irishRowScoreId('eolas', part.id, row.id), row.steps ? row.steps[row.steps.length - 1] : 1])))
+      : { [irishScoreId('eolas')]: 25 };
+    expect(irishMarks(ordinaryCard, { ...fullEolas, [irishScoreId('gaeilge-deduction')]: 4 })).toBe(21);
+    expect(suggestRubricGrade(ordinaryCard, { ...fullEolas, [irishScoreId('gaeilge-deduction')]: 4 })).toBe('got');
     expect(irishMarks(ordinaryCard, {
       [irishScoreId('eolas')]: 0,
       [irishScoreId('gaeilge-deduction')]: 4,

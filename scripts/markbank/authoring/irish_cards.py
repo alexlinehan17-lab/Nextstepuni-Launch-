@@ -1221,11 +1221,32 @@ def scheme_text_exports() -> dict[str, str]:
     return exports
 
 
+def recut_excerpts(cards: list[dict]) -> list[dict]:
+    """Every reading and literature card's excerpt re-cut across its pages, as irish_excerpts.py cuts an authored file."""
+    import irish_excerpts
+    for card in cards:
+        if 'Léamhthuiscint' in card['questionRef']:
+            guide = irish_excerpts.recut(card)
+            target = card['criteria'][0]
+        elif irish_excerpts.LITERATURE.search(card['questionRef']):
+            guide = irish_excerpts.literature_recut(card)
+            target = next((criterion for criterion in card['criteria'] if criterion['guidanceKind'] == 'indicative'), None)
+        else:
+            continue
+        if guide and target:
+            target['guidance'] = guide
+    return cards
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     cards = build_corpus()
+    # A reading question that runs onto a second page, and a literature option
+    # cut at 1,550 characters, lose their tariff; irish_excerpts re-cuts both
+    # across the pages from the scheme text this run writes (irish_excerpts.py).
+    cards = recut_excerpts(cards)
     manifest = serialise(cards)
     ledger = json.dumps(census(cards), ensure_ascii=False, indent=2) + '\n'
     schemes = scheme_text_exports()
