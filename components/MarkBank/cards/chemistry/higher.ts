@@ -30129,7 +30129,7 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2013 Higher Level — © State Examinations Commission.",
     id: "chem-2013-hl-q11-c-b-site", topicId: "chem-u3", conceptId: "why-an-irish-chemical-plant-was-sited-where-it-was",
-    section: "B", questionRef: "2013 HL Q11(c)B(iv) — after (iv), the site of an Irish chemical industry",
+    section: "B", questionRef: "2013 HL Q11(c)B(iv) — after (iv), why the process is where it is",
     questionText: "Select one of the following Irish manufacturing industries: ammonia manufacture nitric acid manufacture periclase manufacture Cobh (now closed) Arklow (now closed) Drogheda Give a reason why the process you chose was located at the site mentioned.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -31277,7 +31277,7 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2012 Higher Level — © State Examinations Commission.",
     id: "chem-2012-hl-q9-a-plot", topicId: "chem-3-2", conceptId: "plotting-loss-of-mass-against-time",
-    section: "B", questionRef: "2012 HL Q9(a) — the graph plotted",
+    section: "B", questionRef: "2012 HL Q9(a) — plotting the graph",
     stem: "The loss of mass of a mixture of 50 cm³ of a 2 M solution of hydrochloric acid and excess marble chips was monitored over time and the following data were recorded.",
     questionText: "Plot a graph to show the mass of carbon dioxide produced (loss of mass) versus time.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,

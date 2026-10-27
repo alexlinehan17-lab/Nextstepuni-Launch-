@@ -645,7 +645,7 @@ C.add([k('9', 'a')], 'chem-3-2', 'plotting-loss-of-mass-against-time', [
     lift('r-2', _plot[1][0], 3),
     lift('r-3', _plot[2][0], 3, 'The scheme adds: ' + ' '.join(_plot[2][1])),
     lift('r-4', _plot[3][0], 3, 'The scheme adds: ' + ' '.join(_q9a[1].asides))],
-    qtext=Q9A_PLOT, stem=Q9A_DATA, figure=S + 'q9a', cid='q9-a-plot', ref_suffix='the graph plotted')
+    qtext=Q9A_PLOT, stem=Q9A_DATA, figure=S + 'q9a', cid='q9-a-plot', ref_suffix='plotting the graph')
 print_question('paper-q9a-plot-print')
 C.add([k('9', 'a')], 'chem-3-2', 'instantaneous-rate-from-a-tangent', [
     lift('r-1', _q9a[2].text, 6, 'USE. The scheme adds: ' + ' '.join(_q9a[2].asides) + ' Its graph draws the tangent '

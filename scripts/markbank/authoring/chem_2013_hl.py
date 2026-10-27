@@ -1004,7 +1004,7 @@ C.add([ka('11', 'c', 'iv', 'B')], 'chem-u3', 'why-an-irish-chemical-plant-was-si
              + ' / '.join(_site['ammonia']) + '; "nitric acid:" ' + ' / '.join(_site['nitric acid'])
              + '; "periclase:" ' + ' / '.join(_site['periclase']) + '.', per=4, total=4)],
     total=4, qtext=cut(P.ask(ka('11', 'c', 'iv', 'B')), 'Select one')[1], cid='q11-c-b-site',
-    ref_suffix='after (iv), the site of an Irish chemical industry')
+    ref_suffix='after (iv), why the process is where it is')
 print_question('paper-q11c-b-iv-print')
 
 
