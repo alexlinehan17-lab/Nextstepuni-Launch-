@@ -349,7 +349,7 @@
   },
   "french": {
     "cards": 2120,
-    "contentHash": "b4795dc534fa12ae",
+    "contentHash": "cb31f9d606064fb4",
     "coveragePct": 100.0,
     "covered": 1876,
     "excluded": 0,
@@ -439,7 +439,7 @@
   },
   "irish": {
     "cards": 400,
-    "contentHash": "a49fc80a956e059e",
+    "contentHash": "186eafb2efa5dee5",
     "coveragePct": 100.0,
     "covered": 400,
     "excluded": 0,
@@ -649,7 +649,7 @@
   },
   "politics-and-society": {
     "cards": 623,
-    "contentHash": "dd3d425e264ec2a5",
+    "contentHash": "f7749147bd90da88",
     "coveragePct": 100.0,
     "covered": 623,
     "excluded": 0,

@@ -660,6 +660,10 @@ export interface IrishAnswerRow {
   text: string;
   /** Marks the row earns; 0 when the part's ladder prices the rows instead. */
   marks: number;
+  /** A row the scheme prices in steps rather than whole: "Dhá phointe eolais
+   * = 4 mharc + 4 mharc" places at 0, 4 or 8; "Tréith 1 = 13 mharc" with a
+   * published band table places anywhere from 0 to 13. Including 0 and `marks`. */
+  steps?: number[];
 }
 
 /** One sub-question of the scheme ("1. Cad atá á lorg…? 2 mharc") with its answers. */
@@ -672,6 +676,9 @@ export interface IrishAnswerPart {
   /** "{3 mharc: 2 mharc + 1 mharc}": marks for 1..n right answers. */
   ladder?: number[];
   rows: IrishAnswerRow[];
+  /** "Freagraí samplacha: • …": the scheme's sample points for this
+   * sub-question. Indicative, never a checklist; shown under the rows. */
+  samples?: string[];
 }
 
 export interface IrishAllocation {

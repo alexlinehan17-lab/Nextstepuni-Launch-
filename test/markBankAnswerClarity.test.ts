@@ -53,7 +53,7 @@ import { resolve } from 'node:path';
 import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
 import { businessExpectedLayout } from '../components/MarkBank/businessRubric';
-import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type BusinessRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
+import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type BusinessRubric, type GeographyAllocation, type IrishAllocation, type SecRubricCard } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
 
 type Guided = { rubric?: { answerGuide?: string[]; schemeGuidance?: string[]; criteria?: Array<{ guidance?: string[]; permittedMarks?: number[]; guidanceKind?: string; rowMarks?: number[] }> }; criteria?: Array<{ guidance?: string[]; guidanceKind?: string; rowMarks?: number[] }> };
@@ -192,22 +192,29 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         else expect(max * allocation.count, card.id).toBe(card.totalMarks);
       }
     }
-    expect(structured).toEqual({ listening: 715, reading: 876, cloze: 170 });
+    // Reading 876 → 920 once an opinion list ("Any two of:" over bullets the scheme prices only in its
+    // general rule) became a ladder of the total shared equally, where the ledger permits that step.
+    expect(structured).toEqual({ listening: 715, reading: 920, cloze: 170 });
 
     // What is still a list, by shape. Fix a shape and lower its number here.
     const fallback = FRENCH_READING_CARDS.filter(card => !card.rubric.allocation);
     const shape = (card: typeof fallback[number]) => {
-      if (card.level === 'higher' && /\bQ6\b/.test(card.questionRef)) return 'HL Q6 opinion: points priced in the general scheme, not on the card';
-      if (card.level === 'ordinary' && /\bQ8\b/.test(card.questionRef)) return 'OL Q8 points: priced in the general scheme, not on the card';
+      // 2012 and 2015 Higher Q6: the ledger permits even marks only, so two points at 5 is not a step it allows.
+      if (card.level === 'higher' && /\bQ6\b/.test(card.questionRef) && card.rubric.criteria[0].permittedMarks.every(mark => mark % 2 === 0)) {
+        return /\(Two points/.test(card.questionText) || /^Any two of/m.test((card.rubric.answerGuide ?? []).join('\n'))
+          ? 'HL Q6 opinion: the ledger permits even marks only, so the equal split is not a step'
+          : 'HL Q6 two-part description: no printed count to share the total by';
+      }
       return 'other';
     };
     const byShape: Record<string, string[]> = {};
     for (const card of fallback) (byShape[shape(card)] ??= []).push(card.id);
     expect(Object.fromEntries(Object.entries(byShape).map(([key, ids]) => [key, ids.length]))).toEqual({
-      'HL Q6 opinion: points priced in the general scheme, not on the card': 34,
-      'OL Q8 points: priced in the general scheme, not on the card': 14,
+      'HL Q6 opinion: the ledger permits even marks only, so the equal split is not a step': 3,
+      'HL Q6 two-part description: no printed count to share the total by': 1,
       other: 1,
     });
+    expect(byShape['HL Q6 two-part description: no printed count to share the total by']).toEqual(['fr-2012-hl-reading-a2-q6']);
     // A 2013 line whose bracketed note ends in its own price ("… 4 marks (Minus 1 mark …, e.g. je demande = 3 marks)").
     expect(byShape.other).toEqual(['fr-2013-ol-reading-a4-q3']);
     const pick = (card: Guided) => [card.rubric?.answerGuide ?? []];
@@ -221,48 +228,72 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const exact = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card =>
       card.rubric.system === 'irish' && /Cluastuiscint|Léamhthuiscint/.test(card.questionRef));
     const structured = exact.filter(card => card.rubric.system === 'irish' && card.rubric.criteria[0].allocation);
-    for (const card of structured) {
-      if (card.rubric.system !== 'irish') continue;
-      const criterion = card.rubric.criteria[0];
+    // Every row, prompt, sample and direction is a slice of the scheme's guidance or the
+    // paper's question; a row that carries the answer the scheme printed for it
+    // ("Ainm an fhile: Caitlín Maude") is two slices.
+    const checkAllocation = (card: { id: string; questionText: string }, criterion: { guidance: string[]; maxMarks: number; allocation?: IrishAllocation }) => {
       const allocation = criterion.allocation!;
       const corpus = normalise(criterion.guidance.join(' ') + ' ' + card.questionText);
+      const lifted = (text: string) => corpus.includes(normalise(text)) || text.split(': ').every(piece => corpus.includes(normalise(piece)));
       let total = 0;
       for (const part of allocation.parts) {
-        if (part.prompt) expect(corpus.includes(normalise(part.prompt)), `${card.id}: prompt "${part.prompt.slice(0, 40)}" is not lifted`).toBe(true);
+        if (part.prompt) expect(lifted(part.prompt), `${card.id}: prompt "${part.prompt.slice(0, 40)}" is not lifted`).toBe(true);
         expect(part.rows.length, `${card.id}: sub-question without rows`).toBeGreaterThan(0);
         for (const row of part.rows) {
           expect(row.text.length, `${card.id}: empty row`).toBeGreaterThan(0);
-          expect(corpus.includes(normalise(row.text)), `${card.id}: row "${row.text.slice(0, 40)}" is not lifted`).toBe(true);
+          expect(lifted(row.text), `${card.id}: row "${row.text.slice(0, 40)}" is not lifted`).toBe(true);
           expect(row.marks, card.id).toBeLessThanOrEqual(part.tariff);
+          if (row.steps) {
+            expect(row.steps[0], `${card.id}: steps start at 0`).toBe(0);
+            expect(row.steps.at(-1), `${card.id}: steps end at the row's marks`).toBe(row.marks);
+          }
         }
+        for (const sample of part.samples ?? []) expect(lifted(sample), `${card.id}: sample "${sample.slice(0, 40)}" is not lifted`).toBe(true);
+        // A ladder prices how many are right; tariff rows add up to the sub-question; an answer list
+        // (listening and reading) prices each alternative, so its best row is what counts.
         if (part.ladder) expect(part.ladder.at(-1), card.id).toBe(part.tariff);
+        else if (part.rows.some(row => row.steps) || part.rows.reduce((sum, row) => sum + row.marks, 0) === part.tariff) expect(part.rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows of a sub-question add to its tariff`).toBe(part.tariff);
         else expect(Math.max(...part.rows.map(row => row.marks)), card.id).toBeGreaterThan(0);
         total += part.tariff;
       }
       expect(total, `${card.id}: parts add to ${total}`).toBe(criterion.maxMarks);
       for (const note of allocation.directions) {
-        expect(corpus.includes(normalise(note)), `${card.id}: direction "${note.slice(0, 40)}" is not lifted`).toBe(true);
+        expect(lifted(note), `${card.id}: direction "${note.slice(0, 40)}" is not lifted`).toBe(true);
       }
+    };
+    for (const card of structured) {
+      if (card.rubric.system !== 'irish') continue;
+      checkAllocation(card, card.rubric.criteria[0]);
     }
     expect(exact).toHaveLength(180);
-    expect(structured).toHaveLength(136);
+    // 136 before irish_excerpts.py re-cut the reading excerpts across their pages and
+    // tariffs.ts read the last question's composite tariff.
+    expect(structured).toHaveLength(173);
 
-    // What is still prose, by shape. A reading excerpt irish_cards.py cut
-    // short or started mid-question cannot reconcile; fix the excerpt and
-    // lower its number here.
+    // What is still prose, pinned by id: four reading excerpts whose answers the
+    // scheme prices in a shape answers.ts does not read yet (unpriced bullets under
+    // a ladder, a section total inside the excerpt) and three listening extracts
+    // whose tariff lines the text layer broke. Fix one and take it off this list.
     const fallback = exact.filter(card => card.rubric.system === 'irish' && !card.rubric.criteria[0].allocation);
-    const shape = (card: typeof fallback[number]) => {
-      if (/Ceist 6\b/.test(card.questionRef)) return 'HL Q6 grammar + literary composite tariff';
-      if (/Léamhthuiscint/.test(card.questionRef)) return 'reading excerpt cut short or started mid-question';
-      return 'listening excerpt cut short';
-    };
-    const byShape: Record<string, number> = {};
-    for (const card of fallback) byShape[shape(card)] = (byShape[shape(card)] ?? 0) + 1;
-    expect(byShape).toEqual({
-      'reading excerpt cut short or started mid-question': 31,
-      'HL Q6 grammar + literary composite tariff': 10,
-      'listening excerpt cut short': 3,
-    });
+    expect(fallback.map(card => card.id).sort()).toEqual([
+      'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5', 'irish-2022-hl-p1-listening-a-f1', 'irish-2022-hl-p2-reading-b-q1',
+      'irish-2022-hl-p2-reading-b-q5', 'irish-2023-ol-p1-listening-b-c2', 'irish-2024-ol-p1-listening-b-c1',
+    ]);
+
+    // Literature: the Eolas criterion prices what the student must do ("Príomhthéama = 2 mharc",
+    // "Dhá phointe eolais = 4 mharc + 4 mharc", "Tréith 1 = 13 mharc" under a band table) and
+    // tariffs.ts cuts that into rows and steps; the sample points stay a list under each part.
+    const literature = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card => card.rubric.system === 'irish' && /Prose|Poetry|Literature/.test(card.questionRef));
+    expect(literature).toHaveLength(130);
+    const eolas = literature.map(card => ({ card, criterion: card.rubric.system === 'irish' ? card.rubric.criteria.find(criterion => criterion.guidanceKind === 'indicative')! : undefined! }));
+    expect(eolas.filter(({ criterion }) => criterion.guidance.some(line => /\d+\s*m?h?arc/.test(line)))).toHaveLength(130);
+    const literatureStructured = eolas.filter(({ criterion }) => criterion.allocation);
+    for (const { card, criterion } of literatureStructured) checkAllocation(card, criterion);
+    expect(literatureStructured).toHaveLength(127);
+    // An option whose tariff summary the parser does not read yet, pinned by id.
+    expect(eolas.filter(({ criterion }) => !criterion.allocation).map(({ card }) => card.id).sort()).toEqual([
+      'irish-2022-hl-p2-poetry-3b-a', 'irish-2023-ol-p2-prose-2b-c', 'irish-2025-ol-p2-poetry-3a-a',
+    ]);
     // Every other exact criterion (the 45 Ordinary composition "Tasc" 0/2
     // tariffs) is already a button; the welded ones above are the residue.
     const welded = cardsOf(irish).reduce((count, card) =>
@@ -303,20 +334,17 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       }
     }
     expect(cards).toHaveLength(623);
-    expect(structured).toHaveLength(580);
-    // Split cards whose block carries a sibling's ladder or answers, and
-    // theorist/model pairs the scheme prints as bare names. Fix a card's
-    // block and take it off this list.
+    // 580 before the residue shapes were read: a name the scheme prints bare over a one- or two-mark criterion,
+    // a sibling card's ladder on a split question's shared block, tariff rows beside a ladder, a range the text
+    // layer broke over two lines, a band whose descriptor follows its marks.
+    expect(structured).toHaveLength(615);
+    // What is still a list, pinned by id: a two-line answer with "1 mark + 1 mark" inside it, a one-word answer under a
+    // sibling's "2 marks + 2 marks", three "One fact" items over a two-mark ladder on a four-mark response, an essay whose
+    // second criterion's bands the block does not carry, a sibling card's answer row, a bare "Name" the question also
+    // says, and two tariffs the block does not print.
     expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id).sort()).toEqual([
-      'politics-2018-hl-q1-c', 'politics-2018-hl-q1-e', 'politics-2018-hl-q1-k', 'politics-2018-ol-q1-a', 'politics-2018-ol-q1-b-i',
-      'politics-2018-ol-q1-d', 'politics-2018-ol-q1-e-i', 'politics-2018-ol-q1-e-ii-limitation', 'politics-2018-ol-q1-e-ii-strength',
-      'politics-2018-ol-q1-g-example', 'politics-2018-ol-q1-i-example', 'politics-2018-ol-q1-j-example', 'politics-2018-ol-q1-k-example',
-      'politics-2018-ol-q1-o-i', 'politics-2019-hl-q1-i', 'politics-2019-hl-q1-k', 'politics-2019-ol-q1-e', 'politics-2019-ol-q1-f',
-      'politics-2019-ol-q1-j-example', 'politics-2019-ol-q3-c', 'politics-2020-hl-q1-l', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-d-thinker',
-      'politics-2021-ol-q1-q-iii', 'politics-2022-hl-q1-a', 'politics-2022-hl-q1-c-thinker', 'politics-2022-ol-q1-d-i', 'politics-2022-ol-q1-d-ii',
-      'politics-2022-ol-q1-e', 'politics-2023-hl-q1-h', 'politics-2024-hl-q2-c', 'politics-2024-ol-q1-d-ii', 'politics-2024-ol-q1-d-iii',
-      'politics-2025-hl-q1-o-theory', 'politics-2025-hl-q1-o-thinker', 'politics-2025-ol-q1-d-ii', 'politics-2025-ol-q1-d-iii', 'politics-2025-ol-q3-c',
-      'politics-2026-hl-q1-k-example', 'politics-2026-hl-q2-c', 'politics-2026-ol-q1-d-i', 'politics-2026-ol-q1-k', 'politics-2026-ol-q1-p',
+      'politics-2018-hl-q1-c', 'politics-2018-ol-q1-b-i', 'politics-2018-ol-q1-k-example', 'politics-2018-ol-q1-o-i',
+      'politics-2019-ol-q1-f', 'politics-2019-ol-q3-c', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-q-iii',
     ]);
     // No card hides its answers in a closed box any more: the bullets are a
     // visible list on every card, structured or not.
@@ -635,7 +663,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
  *  number is the priced lines left in the 50 opinion cards above. */
 const BASELINE = {
   frenchReading: 1,
-  irishExactCriteria: 89,
+  irishExactCriteria: 52,
   physicalEducationLines: 15,
 };
 

@@ -47,13 +47,17 @@ export default function IrishAllocationPanel({ criterionId, allocation, scores, 
                   key={id}
                   text={row.text}
                   marks={part.ladder ? undefined : row.marks}
+                  steps={row.steps}
+                  value={row.steps ? scores[id] ?? 0 : undefined}
                   claimed={isClaimed}
-                  tone={!part.ladder && row.marks < part.tariff ? 'partial' : 'full'}
+                  tone={!part.ladder && row.marks < part.tariff && !row.steps ? 'partial' : 'full'}
                   disabled={full && !isClaimed}
                   onToggle={() => onScore(id, isClaimed ? 0 : 1)}
+                  onStep={row.steps ? step => onScore(id, step) : undefined}
                 />
               );
             })}
+            {part.samples && <ClaimDirections title="Freagraí samplacha — sampla, ní seicliosta" notes={part.samples} />}
             <div className="mb-irish-part-total">
               <span>An chuid seo</span>
               <strong>{marksChip(irishPartMarks(criterionId, part, scores))}</strong>
