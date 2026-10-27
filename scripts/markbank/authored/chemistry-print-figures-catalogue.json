@@ -5043,5 +5043,223 @@
   "description": "The marking scheme's own print of its answer to 2015 HL Q11(b), as the State Examinations Commission set it: two boxed routes side by side, some terms shaded. By concentrations: A ⇋ B + C; \"Start: 3.0 mol / L 0 mol / L 0 mol / L\"; \"Equil: (3 – x) (3) x x (3)\"; Kc = (x)² over (3.0–x) = 4 (3); x² + 4x – 12.0 = 0; (x + 6)(x – 2) = 0 / x = –(4) ± √((4)² – 4(1)(–12.0)) over 2; x = 2.0 mol / L (3); ⇒ 5.0 mol / L total; ⇒ 5.0 × 10 = 50 mol (1). By moles: A ⇋ B + C; \"Start: 30 mol 0 mol 0 mol\"; \"Equil: (30 – x) x x\"; \"Equil: ((30 – x) over 10) mol / L (3) x over 10 mol/L x over 10 mol/L (3)\"; Kc = (x over 10)² over ((30–x) over 10) = 4 / (x)² over (30–x) = 40 (3); x² + 40x – 1200 = 0; (x + 60)(x – 20) = 0 / x = –(40) ± √((40)² – 4(1)(–1200)) over 2; x = 20 mol (3); ⇒ 50 mol total (1). Below: \"[Where no other mark awarded allow (3) for Kc = [B][C] over [A].]\"",
   "questionRef": "2015 HL Q11(b)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a stoppered dropping funnel with a tap, the liquid in it labelled \"A\", stands in the neck of a conical flask holding lumps of solid labelled \"B\"; a delivery tube from the flask's side arm runs down into a trough of liquid labelled \"C\" and up into an upturned test tube with bubbles rising in it.",
+  "questionRef": "2014 OL Q1"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's three pieces of equipment side by side: a long graduated tube with a tap at its foot, labelled \"A\"; a long narrow tube with a bulb in its middle, labelled \"B\"; and a bottle with a bent spout from its cap, labelled \"C\".",
+  "questionRef": "2014 OL Q2"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q2a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q2(a): \"A piece of glassware labelled A in the diagram below was filled with a standard solution of hydrochloric acid (HCl) that had a concentration of 0.13 M. This solution was used to find by titration the concentration of a solution of sodium hydroxide (NaOH). Two other pieces of equipment used, B and C, are also shown in the diagram.\", with \"standard solution\" underlined, then \"Explain the underlined term.\"",
+  "questionRef": "2014 OL Q2(a)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's a table of Time (minutes) 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0 against Volume (cm³) 0.0, 13.0, 21.0, 25.0, 27.0, 27.5, 27.5.",
+  "questionRef": "2014 OL Q3"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q3d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q3(d): \"Hydrogen peroxide (H₂O₂) decomposes rapidly in the presence of a suitable catalyst to form water and a colourless gas. The rate of this reaction was investigated by measuring the volume of gas produced at half-minute intervals using a suitable arrangement of apparatus. The results are shown in the table below.\", then a table of Time (minutes) 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0 against Volume (cm³) 0.0, 13.0, 21.0, 25.0, 27.0, 27.5, 27.5, then \"Plot, on graph paper, a graph of volume (y-axis) versus time (x-axis). Estimate, from your graph, the volume of gas produced after 1.25 minutes.\"",
+  "questionRef": "2014 OL Q3(d)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q4a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q4(a): \"How many neutrons are there in an atom of Li?\", the mass number 7 printed above and the atomic number 3 below, to the left of the symbol Li.",
+  "questionRef": "2014 OL Q4(a)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q4d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q4(d): \"The following equation shows the heat of reaction for the formation of benzene:\", the equation 6C(s) + 3H₂(g) → C₆H₆(l) ΔH = 49.1 kJ mol⁻¹ in bold, its state symbols set as subscripts, then \"Is this reaction exothermic or endothermic? Explain your answer.\"",
+  "questionRef": "2014 OL Q4(d)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q4e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's drawing: a burette held upright, a thin dotted stream falling from its tip and curving towards a slanted rod marked with plus signs below it.",
+  "questionRef": "2014 OL Q4(e)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q4k-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's two repeating units, drawn as a chain of four C atoms with bonds left open at both ends: each C has an H above it; below, the first and third C have an H and the second and fourth a Cl.",
+  "questionRef": "2014 OL Q4(k)B"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of four structures: A, a C atom with four H atoms; B, a chain of four C atoms with an H on every free bond; C, a chain of six C atoms with an H on every free bond; D, a chain of five C atoms, the second carrying a CH₃ group above it, with an H on every other free bond.",
+  "questionRef": "2014 OL Q6"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's reaction scheme: a box \"X = CH₃CH₂OH\" with an arrow to a box \"Y = ethanal\", which has an arrow to a box \"Z = CH₃COOH\"; a second arrow from the X box, labelled \"A\", leads to a box \"W = C₂H₄\".",
+  "questionRef": "2014 OL Q8"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q8b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q8(b): \"Study the reaction scheme below and answer the questions that follow.\", the scheme (a box \"X = CH₃CH₂OH\" with an arrow to a box \"Y = ethanal\", which has an arrow to a box \"Z = CH₃COOH\"; a second arrow from the X box, labelled \"A\", leads to a box \"W = C₂H₄\"), then \"Describe, including a labelled diagram, how you would prepare W using reaction A and how you would collect it in test-tubes.\"",
+  "questionRef": "2014 OL Q8(b)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q9b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q9(b): \"The following words that relate to sewage treatment are omitted from the passage below.\", the words \"nitrates\", \"solid\", \"sedimentation\", \"eutrophication\" and \"micro-organisms\" in bold, \"Write in your answer book the omitted word corresponding to each number (1 to 5).\" then \"In primary treatment, sewage is passed through grids and over grit channels to remove 1 material and is then transferred to 2 tanks where suspended solids are allowed to settle. In secondary treatment the sewage undergoes biological oxidation by 3. Tertiary treatment removes 4 and phosphates which could cause 5 in rivers and lakes.\", each number printed in bold on an underlined blank.",
+  "questionRef": "2014 OL Q9(b)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q10a-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q10(a)(iii): \"You are asked to test a white crystalline solid to confirm that it is lithium chloride (LiCl).\", then \"Copy the table into your answer book and complete it with the expected results of the tests.\", then a table headed \"Solid\", \"Flame Test Result\" and \"Chloride Test Observation\", its one row \"LiCl\" with the other two cells empty.",
+  "questionRef": "2014 OL Q10(a)(iii)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q10b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's diagram: a horizontal tube labelled \"glass tube\", plugged at its left end with \"cotton wool soaked in HCl solution\" and at its right with \"cotton wool soaked in NH₃ solution\"; a cloudy band inside it, left of its middle, is labelled \"ring of NH₄Cl\".",
+  "questionRef": "2014 OL Q10(b)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q10c-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equilibrium equation, printed in bold across the page: N₂ + 3H₂ ⇌ 2NH₃.",
+  "questionRef": "2014 OL Q10(c)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q10c-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q10(c)(i): \"The reaction between hydrogen gas and nitrogen gas produces gaseous ammonia, according to the following chemical equilibrium.\" with \"chemical equilibrium\" underlined, then the equation N₂ + 3H₂ ⇌ 2NH₃, then \"Explain the underlined term.\"",
+  "questionRef": "2014 OL Q10(c)(i)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q10c-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q10(c)(ii): \"The reaction between hydrogen gas and nitrogen gas produces gaseous ammonia, according to the following chemical equilibrium.\" with \"chemical equilibrium\" underlined, then the equation N₂ + 3H₂ ⇌ 2NH₃, then \"Write the equilibrium constant (Kc) expression for the reaction.\", the K in bold italic and its c printed as a subscript.",
+  "questionRef": "2014 OL Q10(c)(ii)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q10c-photo.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph, head and shoulders, of a man with a moustache and spectacles, in a dark jacket, white collar and tie.",
+  "questionRef": "2014 OL Q10(c)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q11a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 OL Q11(a): \"Consider the following six terms.\", the terms \"refluxing\", \"fractionation\", \"recrystallisation\", \"distillation\", \"chromatography\" and \"steam distillation\" in bold, \"In your answer book, match any five of the terms above with their corresponding descriptions (A to F) in the table below.\", then a table of six rows: \"A Separation of the coloured components of a mixture using a solvent as the mobile phase and a suitable solid as the stationary phase\", \"B Separation of two liquids on the basis of their different boiling points\", \"C Dissolving impure crystals in the minimum amount of hot solvent and then filtering the mixture after allowing it to cool\", \"D Separation of several substances in crude oil on the basis of difference in boiling points\", \"E Boiling a reaction mixture without loss of material, thus giving time for reaction to occur\" and \"F Extraction of clove oil from cloves (or similar extraction of another oil)\".",
+  "questionRef": "2014 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q11c-b-diamond.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A ball-and-stick model: grey balls, each joined by sticks to up to four others, in a three-dimensional cage.",
+  "questionRef": "2014 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2014-OL-paper-q11c-b-nacl.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A ball-and-stick model of a cubic lattice: large dark balls and smaller grey balls alternating along the edges of a stack of cubes.",
+  "questionRef": "2014 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q3(c), as the State Examinations Commission set it: (c) DRAW: two framed drawings. In the first, a conical flask lying on its side holds a liquid labelled \"H₂O₂\" and, near its neck, a small heap of solid labelled \"MnO₂\"; a delivery tube from its stopper runs down into a trough of water and up under an upturned graduated cylinder. In the second, an upright conical flask holds a liquid labelled \"H₂O₂\" and a small tube labelled \"MnO₂\" leaning inside it; a tube from its stopper leads to a horizontal gas syringe. Then \"suitable diagram (mix and match collection system)\" (6), \"[Graduation marks omitted or dropping funnel with liquid …deduct 3 marks for each]\", \"any two correct labels (apparatus or chemicals)\" (2 × 3) and \"[Accept diagram of reaction in progress or before it commences.]\"",
+  "questionRef": "2014 OL Q3(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q3(d), as the State Examinations Commission set it: (d) PLOT: a graph of Volume (cm³), 0 to 30, against Time (minutes), 0 to 3, on squared paper: crosses at the table's points joined by a smooth curve rising from the origin and levelling off near 27.5, a dashed vertical line from 1.25 minutes up to the curve and a dashed horizontal line from there to the volume axis a little above 20; then \"axes correctly labelled //\", \"axes correctly scaled //\", \"time axis correctly labelled and scaled //\", \"volume axis correctly labelled and scaled\", \"Any two: (2 × 3)\", \"[Accept time or min(utes) & vol(ume) or cm³.]\", \"six points correctly plotted //\", \"smooth curve correctly drawn\" (2 × 3), and ESTIMATE: 23 cm³ [22 – 24 cm³] (6).",
+  "questionRef": "2014 OL Q3(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q4(i), as the State Examinations Commission set it: (i) CALC: 40 % (6); then, in a box: \"relative molecular mass = 1 × 32 + 3 × 16 = 80\" (3) and \"percentage carbon = 32 over 80 × 100 = 40\" (3), the fraction set stacked.",
+  "questionRef": "2014 OL Q4(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q7c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q7(c), as the State Examinations Commission set it: (c) CALC: (i) 2, (ii) 12 (6 + 6); then, in a box: \"(i) pH = – log₁₀0.01\" (3), \"= 2\" (3) and \"(ii) pH = 14 – pOH = 14 – log₁₀0.01 = 14 – 2 = 12\" (6).",
+  "questionRef": "2014 OL Q7(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q8b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q8(b), as the State Examinations Commission set it: (b) DESCRIBE: a drawing of a horizontal test tube with \"ethanol (X) soaked in glass wool\" at its closed end and \"aluminium oxide\" in its middle, heated from below by a Bunsen burner labelled \"heat\"; a delivery tube from its mouth runs down into a trough labelled \"water\" and up into an upturned test tube labelled \"ethene (W)\". Then \"diagram (ethene generation part) without labels\" (3), \"diagram (ethene collection part) without labels\" (3), and \"aluminium oxide (Al₂O₃) / suitable catalyst / dehydrating agent //\", \"state or show how ethanol and glass wool (cotton wool) is used //\", \"valid safety step //\", \"state or show heating of catalyst\" (3 × 3).",
+  "questionRef": "2014 OL Q8(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q10a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q10(a)(iii), as the State Examinations Commission set it: (iii) COPY: the completed table headed \"Solid\", \"Flame Test Result\" and \"Chloride Test Observation\", its row \"LiCl\" with \"Crimson (Red)\" and \"White Precipitate\" in bold; then \"correct flame colour // correct anion test result\" (4 + 3).",
+  "questionRef": "2014 OL Q10(a)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q10b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q10(b), as the State Examinations Commission set it: HOW: (i) O.5 mol // (ii) 3 × 10²³ molecules (2 × 3); then, in a box: \"11.2 over 22.4 = 0.5\" (3) and \"× 6 × 10²³ = 3 × 10²³\" (3), the fraction set stacked.",
+  "questionRef": "2014 OL Q10(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-OL-scheme-q10c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 OL Q10(c)(ii), as the State Examinations Commission set it: WRITE: (ii) the expression [NH₃]² over [N₂][H₂]³, set as a fraction (2 × 3).",
+  "questionRef": "2014 OL Q10(c)(ii)",
+  "solution": true
  }
 ]

@@ -245,6 +245,16 @@ MASKS = {
     # level with the top of the drawings' boxes (y 75); its last row of pixels (869 x 0) whited out,
     # right of the boxes' edge at column 866.
     'chemistry-2016-HL-scheme-q8d.png': [(868, 0, 900, 1)],
+    # 2014 OL Q4(e): the burette stands beside the end of (d)'s first line, "... formation of
+    # benzene:" (paper page 4, x 478-494, y 160; dark pixels 0-25 x 90-102), whited out; the
+    # burette's own pixels start at column 60.
+    'chemistry-2014-OL-paper-q4e.png': [(0, 86, 30, 106)],
+    # 2014 OL Q9(b) and Q11(a): the part's mark, "(20)" and "(25)", prints at the end of a line of
+    # the passage or the instruction (paper page 6, x 526-549, y 259; page 7, x 520-549, y 130),
+    # under the right end of the line above; whited out (dark pixels 880-919 x 264-285 and
+    # 880-902 x 148-169).
+    'chemistry-2014-OL-paper-q9b-print.png': [(876, 258, 920, 288)],
+    'chemistry-2014-OL-paper-q11a-print.png': [(876, 144, 903, 172)],
 }
 
 

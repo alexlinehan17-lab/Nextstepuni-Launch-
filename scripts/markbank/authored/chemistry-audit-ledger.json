@@ -1,6 +1,320 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2014 OL": {
+   "chem-2014-ol-q1-a": {
+    "status": "added",
+    "after": "c153939c200e2db4"
+   },
+   "chem-2014-ol-q1-b-i-iii": {
+    "status": "added",
+    "after": "1e2ab8e2d9a4b6b5"
+   },
+   "chem-2014-ol-q1-c": {
+    "status": "added",
+    "after": "411738d9ce30940c"
+   },
+   "chem-2014-ol-q1-d": {
+    "status": "added",
+    "after": "d32aa96779402ac4"
+   },
+   "chem-2014-ol-q1-e": {
+    "status": "added",
+    "after": "8957e39714a88d28"
+   },
+   "chem-2014-ol-q10-a-i": {
+    "status": "added",
+    "after": "23474109dc1ab8ee"
+   },
+   "chem-2014-ol-q10-a-ii": {
+    "status": "added",
+    "after": "cd356050a6546e9d"
+   },
+   "chem-2014-ol-q10-a-iii": {
+    "status": "added",
+    "after": "fad76fe5ea3e8feb"
+   },
+   "chem-2014-ol-q10-b": {
+    "status": "added",
+    "after": "55e69d2c43c3486f"
+   },
+   "chem-2014-ol-q10-b-boyles-law": {
+    "status": "added",
+    "after": "f18300f224ff5f98"
+   },
+   "chem-2014-ol-q10-b-diffusion": {
+    "status": "added",
+    "after": "4ca40311c77b37f0"
+   },
+   "chem-2014-ol-q10-b-i-ii": {
+    "status": "added",
+    "after": "2fd09796646261e5"
+   },
+   "chem-2014-ol-q10-c-i": {
+    "status": "added",
+    "after": "b9822e3f8c756f21"
+   },
+   "chem-2014-ol-q10-c-ii": {
+    "status": "added",
+    "after": "6aa31f0117f96fb7"
+   },
+   "chem-2014-ol-q10-c-iii": {
+    "status": "added",
+    "after": "627ec6e110123225"
+   },
+   "chem-2014-ol-q10-c-iv": {
+    "status": "added",
+    "after": "8aff16c41d519090"
+   },
+   "chem-2014-ol-q11-a": {
+    "status": "added",
+    "after": "57d878f88ad3d4db"
+   },
+   "chem-2014-ol-q11-b-electrochemical-series": {
+    "status": "added",
+    "after": "36ec30c8ae0bfa6e"
+   },
+   "chem-2014-ol-q11-b-i-ii": {
+    "status": "added",
+    "after": "7e5d24570a2ca163"
+   },
+   "chem-2014-ol-q11-b-iii-v": {
+    "status": "added",
+    "after": "ebdc73c8c07a749d"
+   },
+   "chem-2014-ol-q11-c-a": {
+    "status": "added",
+    "after": "4de6ce4c9d3d765f"
+   },
+   "chem-2014-ol-q11-c-a-i": {
+    "status": "added",
+    "after": "c2ad72a7955ef10a"
+   },
+   "chem-2014-ol-q11-c-a-ii": {
+    "status": "added",
+    "after": "27c5a54981700799"
+   },
+   "chem-2014-ol-q11-c-b-i-ii": {
+    "status": "added",
+    "after": "463a487256ad01d1"
+   },
+   "chem-2014-ol-q11-c-b-iii": {
+    "status": "added",
+    "after": "28c7ce25f7606031"
+   },
+   "chem-2014-ol-q11-c-b-iv": {
+    "status": "added",
+    "after": "701fd2026411782a"
+   },
+   "chem-2014-ol-q11-c-b-v": {
+    "status": "added",
+    "after": "5abb7f234c7a4a98"
+   },
+   "chem-2014-ol-q2-a": {
+    "status": "added",
+    "after": "167d402f6611ade0"
+   },
+   "chem-2014-ol-q2-b": {
+    "status": "added",
+    "after": "fb9a9adc8e022af0"
+   },
+   "chem-2014-ol-q2-c": {
+    "status": "added",
+    "after": "c0ce6e2bc8094602"
+   },
+   "chem-2014-ol-q2-d": {
+    "status": "added",
+    "after": "677525b6abee9f31"
+   },
+   "chem-2014-ol-q2-e": {
+    "status": "added",
+    "after": "adc389af5626937d"
+   },
+   "chem-2014-ol-q2-f": {
+    "status": "added",
+    "after": "5697f02d43701147"
+   },
+   "chem-2014-ol-q2-g-i": {
+    "status": "added",
+    "after": "e1186e839f832c2d"
+   },
+   "chem-2014-ol-q2-g-ii": {
+    "status": "added",
+    "after": "258805b22e74c058"
+   },
+   "chem-2014-ol-q3-a": {
+    "status": "added",
+    "after": "4f543d687cb9231c"
+   },
+   "chem-2014-ol-q3-b": {
+    "status": "added",
+    "after": "4bad637e18f9c780"
+   },
+   "chem-2014-ol-q3-c": {
+    "status": "added",
+    "after": "22741b248c7e5089"
+   },
+   "chem-2014-ol-q3-d": {
+    "status": "added",
+    "after": "b3d4d31d78f1a521"
+   },
+   "chem-2014-ol-q3-e": {
+    "status": "added",
+    "after": "1f6f92647cdc746c"
+   },
+   "chem-2014-ol-q4-a": {
+    "status": "added",
+    "after": "e26226a3dae12d30"
+   },
+   "chem-2014-ol-q4-b": {
+    "status": "added",
+    "after": "ccfcbd250b522e11"
+   },
+   "chem-2014-ol-q4-c": {
+    "status": "added",
+    "after": "2a7b7ed724d78417"
+   },
+   "chem-2014-ol-q4-d": {
+    "status": "added",
+    "after": "0509491cbaef4561"
+   },
+   "chem-2014-ol-q4-e": {
+    "status": "added",
+    "after": "bbee2b036ec4d111"
+   },
+   "chem-2014-ol-q4-f": {
+    "status": "added",
+    "after": "b02f67cc4139288a"
+   },
+   "chem-2014-ol-q4-g": {
+    "status": "added",
+    "after": "da161541943c44b0"
+   },
+   "chem-2014-ol-q4-h": {
+    "status": "added",
+    "after": "63baca544c5a4199"
+   },
+   "chem-2014-ol-q4-i": {
+    "status": "added",
+    "after": "71c7ede380e83bf5"
+   },
+   "chem-2014-ol-q4-j": {
+    "status": "added",
+    "after": "8f4e61c3b4db8e76"
+   },
+   "chem-2014-ol-q4-k-a": {
+    "status": "added",
+    "after": "2f40f1fe8f952f1c"
+   },
+   "chem-2014-ol-q4-k-b": {
+    "status": "added",
+    "after": "286add943436c1d0"
+   },
+   "chem-2014-ol-q5-a": {
+    "status": "added",
+    "after": "8b0cfff39099e422"
+   },
+   "chem-2014-ol-q5-b-i-ii": {
+    "status": "added",
+    "after": "a2253e162b726fef"
+   },
+   "chem-2014-ol-q5-b-noble-gases": {
+    "status": "added",
+    "after": "645c384eac4234e6"
+   },
+   "chem-2014-ol-q5-c-i-ii": {
+    "status": "added",
+    "after": "6f659f4c0ce5beb3"
+   },
+   "chem-2014-ol-q5-d": {
+    "status": "added",
+    "after": "18af4509677c43aa"
+   },
+   "chem-2014-ol-q6-a": {
+    "status": "added",
+    "after": "2b01bb49b9c1a30f"
+   },
+   "chem-2014-ol-q6-b": {
+    "status": "added",
+    "after": "dc33ef6d0fdfd670"
+   },
+   "chem-2014-ol-q6-b-balanced-equation": {
+    "status": "added",
+    "after": "691fb868fc93b570"
+   },
+   "chem-2014-ol-q6-c": {
+    "status": "added",
+    "after": "e6a6d827b935b563"
+   },
+   "chem-2014-ol-q6-d": {
+    "status": "added",
+    "after": "8ce305649f5b4f24"
+   },
+   "chem-2014-ol-q6-d-c-or-d": {
+    "status": "added",
+    "after": "f3c9501132ec6eac"
+   },
+   "chem-2014-ol-q6-d-lead-compounds": {
+    "status": "added",
+    "after": "0574456a48b34f6f"
+   },
+   "chem-2014-ol-q7-a-i-ii": {
+    "status": "added",
+    "after": "3ba49e38eb4ce35c"
+   },
+   "chem-2014-ol-q7-a-neutralisation": {
+    "status": "added",
+    "after": "322445129a1e347c"
+   },
+   "chem-2014-ol-q7-b": {
+    "status": "added",
+    "after": "331ac2f6cd02d664"
+   },
+   "chem-2014-ol-q7-c-i-ii": {
+    "status": "added",
+    "after": "4b87b079df6a8d4a"
+   },
+   "chem-2014-ol-q7-d": {
+    "status": "added",
+    "after": "d2b5c756c3c6b51b"
+   },
+   "chem-2014-ol-q8-a": {
+    "status": "added",
+    "after": "6bf966cf358335df"
+   },
+   "chem-2014-ol-q8-b": {
+    "status": "added",
+    "after": "a41a0f6c7bc6dcda"
+   },
+   "chem-2014-ol-q8-c-i-iii": {
+    "status": "added",
+    "after": "5fbc7b0d000537bd"
+   },
+   "chem-2014-ol-q8-d": {
+    "status": "added",
+    "after": "88274e303eb1579f"
+   },
+   "chem-2014-ol-q9-a": {
+    "status": "added",
+    "after": "436643f2ed38d8e7"
+   },
+   "chem-2014-ol-q9-a-advantage-and-disadvantage": {
+    "status": "added",
+    "after": "62ea33539d8d1734"
+   },
+   "chem-2014-ol-q9-a-limestone-district": {
+    "status": "added",
+    "after": "167d54b5831f0eee"
+   },
+   "chem-2014-ol-q9-a-temporary-and-permanent": {
+    "status": "added",
+    "after": "a86b06cb8af2c980"
+   },
+   "chem-2014-ol-q9-b": {
+    "status": "added",
+    "after": "1cecac35e7c671d3"
+   }
+  },
   "2015 HL": {
    "chem-2015-hl-q1-a": {
     "status": "added",

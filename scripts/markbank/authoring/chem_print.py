@@ -1107,6 +1107,32 @@ class Printed:
                       and abs(l.x0 - 49.6) < 1 and abs(l.y0 - 339.4) < 1]
             assert len(hidden) == 1, hidden
             self.scheme_lines = [l for l in self.scheme_lines if l is not hidden[0]]
+        if (year, lvl) == (2014, 'ol'):
+            # 2014 OL scheme PDF page 15 heads Question 10 "QUESTION 10:" (x 56.6,
+            # y 34.3), a colon after the number and its rubric on the line below
+            # ("Answer any two of the parts (a), (b) and (c).", y 46.7). Neither
+            # QUESTION_HEAD (no colon) nor QUESTION_HEAD_RUBRIC (the rubric on the
+            # head's line) reads it, so Q10's rows fell into Q9(b) and, the next
+            # head "QUESTION 11" then not being the next number, Q11's with them
+            # (Q9(b)(i)-(iii), Q9(c)(i)-(v)). No other 2010-2026 scheme prints a
+            # head of this shape. Read as the head the page prints.
+            head = [l for l in self.scheme_lines if l.page == 15 and l.text == 'QUESTION 10:'
+                    and abs(l.x0 - 56.6) < 1 and abs(l.y0 - 34.3) < 1]
+            assert len(head) == 1, head
+            head[0].text = 'QUESTION 10'
+        if (year, lvl) == (2014, 'hl'):
+            # 2014 HL scheme PDF pages 7 and 10 head Questions 2 and 4 "QUSESTION 2"
+            # and "QUSESTION 4" (x 49.7, y 48.6), an SEC misprint; every other head of
+            # this scheme is spelled "QUESTION". QUESTION_HEAD missed both, so the
+            # scheme never left Question 1: Q2's rows were filed under Q1(a)-(g),
+            # and "QUESTION 3" (not the next number) and every later head with them
+            # (Q1(e)(i)-(ii), Q1(g)-(k) ...). No other 2010-2026 Chemistry scheme
+            # prints the misspelling. Read as the heads the page means.
+            for page, num in ((7, '2'), (10, '4')):
+                head = [l for l in self.scheme_lines if l.page == page and l.text == 'QUSESTION ' + num
+                        and abs(l.x0 - 49.7) < 1 and abs(l.y0 - 48.6) < 1]
+                assert len(head) == 1, head
+                head[0].text = 'QUESTION ' + num
         if figures:
             self.scheme_lines = self._outside_scheme_art(self.scheme_lines)
         # The 2021-2025 schemes print their mark cells in round brackets,
