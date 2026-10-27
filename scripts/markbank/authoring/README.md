@@ -186,6 +186,15 @@ subject-specific generators.
   that is a whole question) is listed with its pages in
   `authored/business-expected-review.json`, never typed in. `--write`
   rewrites `rubric-authored.json`; a second run changes nothing.
+  Where that text reading leaves a Business card for review, stage B reads the
+  cited pages' word positions with PyMuPDF (`bus_expected.py`, the same run):
+  a table's rows become items line by line, a tick names the column header
+  above it, "True"/"False" in the right-hand column names its statement, a
+  numbers row over a letters row pairs them; every word is one the page
+  prints (the gate checks word by word, since the text layer holds a table's
+  words in another order). What neither reading can lift — a tick table whose
+  ticks are drawn, not typed; a marker the page does not print — stays in
+  `authored/business-expected-review.json` with both readings' reasons.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

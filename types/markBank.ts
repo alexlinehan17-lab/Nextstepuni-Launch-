@@ -1078,6 +1078,12 @@ export interface BusinessExpected {
   /** The scheme page the items were read from. */
   page: number;
   items: BusinessExpectedItem[];
+  /**
+   * Read from the page's word positions rather than its text layer (bus_expected.py stage B): a table's rows, a
+   * tick under a column header, "True"/"False" beside a statement. Every word is one the page prints; an item
+   * may join words from one line in the page's own order with " — ".
+   */
+  lifted?: 'geometry';
 }
 
 export interface BusinessRubric {
