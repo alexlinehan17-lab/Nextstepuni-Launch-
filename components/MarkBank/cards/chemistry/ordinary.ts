@@ -27344,7 +27344,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the English scientist, pictured on the right, who isolated the elements sodium and potassium in the early 1800s.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Humphry Davy", marks: 3, contextNote: "The paper prints no mark for this ask; the scheme prices it \"WHO: (3)\" and adds: [Q 11 (c) B can receive a maximum of 25 marks]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Humphry Davy", marks: 3, contextNote: "The paper prints no mark for this ask; the scheme prices it \"WHO: (3)\".", openList: true },
     ],
     figure: {
           "candId": "chemistry-2011-OL-paper-q11c-b",
