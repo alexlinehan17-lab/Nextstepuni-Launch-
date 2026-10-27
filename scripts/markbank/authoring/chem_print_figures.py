@@ -234,6 +234,17 @@ MASKS = {
     # print from x 362 and the marks are whited out (dark pixels 0-27 x 287-309 and 379-401; the
     # photograph's edge is at column 36 or more there).
     'chemistry-2016-OL-paper-q11b.png': [(0, 284, 30, 312), (0, 376, 30, 404)],
+    # 2016 HL Q6: the fractionating column stands beside the end of (a)'s first line, "...shown in
+    # the diagram." (paper page 7, x 326-368, y 57; dark pixels 0-78 x 16-38), whited out; the
+    # column's picture starts at column 94.
+    'chemistry-2016-HL-paper-q6.png': [(0, 12, 84, 42)],
+    # 2016 HL Q6(c): the part's mark "(18)" prints at the end of its last line ("respectively.",
+    # paper page 7, x 519-542, y 330); whited out (dark pixels 856-895 x 186-207 of the stacked print).
+    'chemistry-2016-HL-paper-q6c-calc-print.png': [(850, 182, 902, 212)],
+    # 2016 HL scheme Q8(d): the foot of DRAW's cell "(6)" (scheme page 19, x 519-534, y 61-76) prints
+    # level with the top of the drawings' boxes (y 75); its last row of pixels (869 x 0) whited out,
+    # right of the boxes' edge at column 866.
+    'chemistry-2016-HL-scheme-q8d.png': [(868, 0, 900, 1)],
 }
 
 

@@ -1,6 +1,396 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2016 HL": {
+   "chem-2016-hl-q1-a": {
+    "status": "added",
+    "after": "a41938bde6c7e5bf"
+   },
+   "chem-2016-hl-q1-b": {
+    "status": "added",
+    "after": "975bb71bb90c3177"
+   },
+   "chem-2016-hl-q1-c-i": {
+    "status": "added",
+    "after": "8ab1a70395b99e77"
+   },
+   "chem-2016-hl-q1-c-ii": {
+    "status": "added",
+    "after": "6beb0d3e4b8473c9"
+   },
+   "chem-2016-hl-q1-d-i": {
+    "status": "added",
+    "after": "1fd3351b262a0f5e"
+   },
+   "chem-2016-hl-q1-d-ii": {
+    "status": "added",
+    "after": "e4254661b4f02d46"
+   },
+   "chem-2016-hl-q1-e": {
+    "status": "added",
+    "after": "45ed1428395046da"
+   },
+   "chem-2016-hl-q10-a-i": {
+    "status": "added",
+    "after": "2857824cc7385ee3"
+   },
+   "chem-2016-hl-q10-a-ii": {
+    "status": "added",
+    "after": "dcad4e1720538f69"
+   },
+   "chem-2016-hl-q10-a-iii": {
+    "status": "added",
+    "after": "d13357fd8ffc919a"
+   },
+   "chem-2016-hl-q10-b-balancing": {
+    "status": "added",
+    "after": "b0e71dfd52a3ca32"
+   },
+   "chem-2016-hl-q10-b-i": {
+    "status": "added",
+    "after": "d00750464f5c8d28"
+   },
+   "chem-2016-hl-q10-b-ii": {
+    "status": "added",
+    "after": "255abc0e249b10b1"
+   },
+   "chem-2016-hl-q10-b-iii": {
+    "status": "added",
+    "after": "ff5801fe25584946"
+   },
+   "chem-2016-hl-q10-b-iv": {
+    "status": "added",
+    "after": "514548ef65f65bb2"
+   },
+   "chem-2016-hl-q10-b-oxidation-numbers": {
+    "status": "added",
+    "after": "80a9df1904ebe037"
+   },
+   "chem-2016-hl-q10-c-i": {
+    "status": "added",
+    "after": "379809684ab4638f"
+   },
+   "chem-2016-hl-q10-c-ii": {
+    "status": "added",
+    "after": "245dea727b244440"
+   },
+   "chem-2016-hl-q10-c-iii": {
+    "status": "added",
+    "after": "681d07e800cafdde"
+   },
+   "chem-2016-hl-q11-a-i-excess": {
+    "status": "added",
+    "after": "bfe35f3966d9a46e"
+   },
+   "chem-2016-hl-q11-a-i-mass-unused": {
+    "status": "added",
+    "after": "fc3d3a602d6bd065"
+   },
+   "chem-2016-hl-q11-a-ii": {
+    "status": "added",
+    "after": "b274a0869429e44e"
+   },
+   "chem-2016-hl-q11-a-iii": {
+    "status": "added",
+    "after": "f10241637c080fef"
+   },
+   "chem-2016-hl-q11-b-arsine": {
+    "status": "added",
+    "after": "462a48c6e871ec92"
+   },
+   "chem-2016-hl-q11-b-hydrogen-bonding": {
+    "status": "added",
+    "after": "e9dd29dc7f933520"
+   },
+   "chem-2016-hl-q11-b-i": {
+    "status": "added",
+    "after": "b5ce84a0538eb344"
+   },
+   "chem-2016-hl-q11-b-ii": {
+    "status": "added",
+    "after": "1df1a25089b6767c"
+   },
+   "chem-2016-hl-q11-c-a-i": {
+    "status": "added",
+    "after": "2d505dd671974c05"
+   },
+   "chem-2016-hl-q11-c-a-ii": {
+    "status": "added",
+    "after": "05e34f420fa91dfa"
+   },
+   "chem-2016-hl-q11-c-a-iii": {
+    "status": "added",
+    "after": "9b448b07f42c0e7b"
+   },
+   "chem-2016-hl-q11-c-a-iv": {
+    "status": "added",
+    "after": "ae909e74a30879db"
+   },
+   "chem-2016-hl-q11-c-b-i": {
+    "status": "added",
+    "after": "30abfc2aa2eb9225"
+   },
+   "chem-2016-hl-q11-c-b-ii": {
+    "status": "added",
+    "after": "8c5866b7686bdcb0"
+   },
+   "chem-2016-hl-q11-c-b-iii": {
+    "status": "added",
+    "after": "041009f43f121d4f"
+   },
+   "chem-2016-hl-q11-c-b-iv": {
+    "status": "added",
+    "after": "c925cbabc0a928fa"
+   },
+   "chem-2016-hl-q11-c-b-v": {
+    "status": "added",
+    "after": "fea6f9325a516d65"
+   },
+   "chem-2016-hl-q2-a": {
+    "status": "added",
+    "after": "b2914b46e010fd11"
+   },
+   "chem-2016-hl-q2-b-i": {
+    "status": "added",
+    "after": "e59290219211e5fb"
+   },
+   "chem-2016-hl-q2-b-ii": {
+    "status": "added",
+    "after": "c3c6fcf0ec5516c2"
+   },
+   "chem-2016-hl-q2-b-iii": {
+    "status": "added",
+    "after": "a54cc13439b5ef03"
+   },
+   "chem-2016-hl-q2-c-i": {
+    "status": "added",
+    "after": "8aa9b8003617a947"
+   },
+   "chem-2016-hl-q2-c-ii": {
+    "status": "added",
+    "after": "e87d605427aa5e74"
+   },
+   "chem-2016-hl-q2-c-iii": {
+    "status": "added",
+    "after": "d1acae85261991c3"
+   },
+   "chem-2016-hl-q3-a": {
+    "status": "added",
+    "after": "60331e09db43008b"
+   },
+   "chem-2016-hl-q3-b": {
+    "status": "added",
+    "after": "2dd1e513be4b6558"
+   },
+   "chem-2016-hl-q3-c": {
+    "status": "added",
+    "after": "a69aa04554bfd3d3"
+   },
+   "chem-2016-hl-q3-d-catalysis-type": {
+    "status": "added",
+    "after": "3260aef27f54e372"
+   },
+   "chem-2016-hl-q3-d-catalyst-difference": {
+    "status": "added",
+    "after": "973e5c113d654676"
+   },
+   "chem-2016-hl-q3-d-i-ii": {
+    "status": "added",
+    "after": "0d53816d7fcbd8bb"
+   },
+   "chem-2016-hl-q3-e-i": {
+    "status": "added",
+    "after": "cd66e1a20591fc3a"
+   },
+   "chem-2016-hl-q3-e-ii": {
+    "status": "added",
+    "after": "b20ac8564f667f2c"
+   },
+   "chem-2016-hl-q4-a": {
+    "status": "added",
+    "after": "a654133646728da0"
+   },
+   "chem-2016-hl-q4-b": {
+    "status": "added",
+    "after": "b6b9a51e8224a50e"
+   },
+   "chem-2016-hl-q4-c": {
+    "status": "added",
+    "after": "74b1962f4170af87"
+   },
+   "chem-2016-hl-q4-d": {
+    "status": "added",
+    "after": "d58dc310adc6f15e"
+   },
+   "chem-2016-hl-q4-e": {
+    "status": "added",
+    "after": "65a8c55f5939556a"
+   },
+   "chem-2016-hl-q4-f": {
+    "status": "added",
+    "after": "57be592f1f5f934c"
+   },
+   "chem-2016-hl-q4-g": {
+    "status": "added",
+    "after": "3846f67a18aa9dd9"
+   },
+   "chem-2016-hl-q4-h": {
+    "status": "added",
+    "after": "f824a3ba91ac880d"
+   },
+   "chem-2016-hl-q4-i": {
+    "status": "added",
+    "after": "8df37828b8d9ba51"
+   },
+   "chem-2016-hl-q4-j": {
+    "status": "added",
+    "after": "71054a15deec590f"
+   },
+   "chem-2016-hl-q4-k-a": {
+    "status": "added",
+    "after": "c85e25b3bc442230"
+   },
+   "chem-2016-hl-q4-k-b": {
+    "status": "added",
+    "after": "6b61522d5a471929"
+   },
+   "chem-2016-hl-q5-a-i": {
+    "status": "added",
+    "after": "4d8def1783418301"
+   },
+   "chem-2016-hl-q5-a-ii": {
+    "status": "added",
+    "after": "e7fe44ed691aba90"
+   },
+   "chem-2016-hl-q5-a-iii": {
+    "status": "added",
+    "after": "8e61c96bf29d943f"
+   },
+   "chem-2016-hl-q5-a-iv": {
+    "status": "added",
+    "after": "3be35db8521d8773"
+   },
+   "chem-2016-hl-q5-b": {
+    "status": "added",
+    "after": "e949548951798058"
+   },
+   "chem-2016-hl-q5-c": {
+    "status": "added",
+    "after": "8aa7e822b8025c75"
+   },
+   "chem-2016-hl-q6-a": {
+    "status": "added",
+    "after": "5bedffe0402eaa57"
+   },
+   "chem-2016-hl-q6-b-i": {
+    "status": "added",
+    "after": "ddaf5da559a42470"
+   },
+   "chem-2016-hl-q6-b-ii": {
+    "status": "added",
+    "after": "7d39830781d06ef6"
+   },
+   "chem-2016-hl-q6-c-calculation": {
+    "status": "added",
+    "after": "33d0ca553b73ca3e"
+   },
+   "chem-2016-hl-q6-c-names": {
+    "status": "added",
+    "after": "d5e0839122b4277c"
+   },
+   "chem-2016-hl-q6-d": {
+    "status": "added",
+    "after": "72b188a64444969e"
+   },
+   "chem-2016-hl-q6-e": {
+    "status": "added",
+    "after": "015b1285f54b3d05"
+   },
+   "chem-2016-hl-q7-a": {
+    "status": "added",
+    "after": "f9a7382f0071b871"
+   },
+   "chem-2016-hl-q7-a-i": {
+    "status": "added",
+    "after": "827427ee80cbd5ba"
+   },
+   "chem-2016-hl-q7-a-ii": {
+    "status": "added",
+    "after": "32ed22c2ea2668e0"
+   },
+   "chem-2016-hl-q7-a-industrial-temperature": {
+    "status": "added",
+    "after": "e5252a647a454970"
+   },
+   "chem-2016-hl-q7-b": {
+    "status": "added",
+    "after": "ee8446ff6f3990d3"
+   },
+   "chem-2016-hl-q7-c-kc-expression": {
+    "status": "added",
+    "after": "6a3e70bff4eb2b71"
+   },
+   "chem-2016-hl-q7-c-kc-value": {
+    "status": "added",
+    "after": "ab795a8d6958d54d"
+   },
+   "chem-2016-hl-q8-a": {
+    "status": "added",
+    "after": "4d81f398205882de"
+   },
+   "chem-2016-hl-q8-b": {
+    "status": "added",
+    "after": "0b59fe83721c3933"
+   },
+   "chem-2016-hl-q8-c-mechanism": {
+    "status": "added",
+    "after": "03bb06324f2d6f29"
+   },
+   "chem-2016-hl-q8-c-reaction-type": {
+    "status": "added",
+    "after": "46e0cd9d0cff3eff"
+   },
+   "chem-2016-hl-q8-c-tetraethyllead": {
+    "status": "added",
+    "after": "edef7b1119c148f9"
+   },
+   "chem-2016-hl-q8-d": {
+    "status": "added",
+    "after": "a91f5f6666dd2954"
+   },
+   "chem-2016-hl-q9-a-i": {
+    "status": "added",
+    "after": "2a2afdb6c9f2bac7"
+   },
+   "chem-2016-hl-q9-a-ii": {
+    "status": "added",
+    "after": "b67e0bc16d197a13"
+   },
+   "chem-2016-hl-q9-a-iii": {
+    "status": "added",
+    "after": "59abd76a3e941227"
+   },
+   "chem-2016-hl-q9-a-iv": {
+    "status": "added",
+    "after": "026dcf36f762f1cf"
+   },
+   "chem-2016-hl-q9-b": {
+    "status": "added",
+    "after": "941e351d1b7bfe2f"
+   },
+   "chem-2016-hl-q9-c": {
+    "status": "added",
+    "after": "d5f9d5f9ad821331"
+   },
+   "chem-2016-hl-q9-c-i": {
+    "status": "added",
+    "after": "ef3e66cfe0c2ee5c"
+   },
+   "chem-2016-hl-q9-c-ii": {
+    "status": "added",
+    "after": "33c6bb9bfce9e666"
+   }
+  },
   "2016 OL": {
    "chem-2016-ol-q1-a-i-ii": {
     "status": "added",

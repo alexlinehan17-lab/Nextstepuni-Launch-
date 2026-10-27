@@ -200,6 +200,16 @@ INLINE_MARKER_STATES = re.compile(
     r'(?:(?<![A-Za-z0-9\u2080-\u2089])\s|\s(?!\([gl]\)\s))'
     r'(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+# 2016 HL Chemistry Q6(e) (paper page 7, y 403-417) prints "Draw the molecular
+# structure of (i) octane, (ii) 2,2,4-trimethylpentane, (iii) ethylbenzene."
+# -- three romans inside one sentence under one mark (9), which the census keeps
+# as one ask, as it does this paper's Q4(a), Q4(e), Q7(a) and Q10(b). The digit
+# the marker lookahead admits ("(vi) 90 g of ...") split it at "(ii) 2,2,4-":
+# complete_leading_romans then made an (i) of "octane," and (iii)'s ask was
+# filed inside (ii). A piece opening with a listed text is no part on that
+# paper and is joined back to the piece before it. Gated to the sitting: no
+# other paper's reading may move because of it.
+INLINE_NOT_MARKERS = {('chemistry', 2016, 'hl'): ['(ii) 2,2,4-trimethylpentane, (iii) ethylbenzene.']}
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -915,6 +925,11 @@ class Paper:
                 marker = (INLINE_MARKER_STATES if self.subject in STATE_SYMBOL_SUBJECTS
                           else INLINE_MARKER)
                 pieces = [p.strip() for p in marker.split(text) if p.strip()]
+                # (2016 HL Chemistry Q6(e): a sentence's romans; see INLINE_NOT_MARKERS.)
+                for joined in INLINE_NOT_MARKERS.get((self.subject, self.year, self.level), []):
+                    at = [j for j, p in enumerate(pieces) if j and p.startswith(joined)]
+                    for j in reversed(at):
+                        pieces[j - 1:j + 1] = [pieces[j - 1] + ' ' + pieces[j]]
                 for i, piece in enumerate(pieces):
                     piece = (prefix + piece) if i == 0 else piece
                     if carry:

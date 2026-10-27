@@ -4273,5 +4273,276 @@
   "description": "The marking scheme's own print of its answer to 2016 OL Q11(c)B(ii), as the State Examinations Commission set it: (ii) GIVE: a chain of six C atoms with a bond at either end, an H atom above each C and, below them in turn, H, Cl, H, Cl, H, Cl; then \"four or six (or a higher even number of) carbon atoms in a chain //\", \"single bonds between carbon atoms //\" and \"chlorine to hydrogen ratio 1 : 3\" (3 × 3)",
   "questionRef": "2016 OL Q11(c)B(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rack of five stoppered test tubes labelled A, B, C, D and E: A and B hold no visible liquid, C, D and E hold liquids, E to the highest level and D to the lowest. Beside the rack, two watch glasses of crystalline solid labelled F and G.",
+  "questionRef": "2016 HL Q2"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's a table: \"Time (minutes)\" 0.0, 1.0, 2.0, 3.0, 5.0, 6.5, 8.0, 9.5, 11.0, 12.0; \"Run A\", \"Volume (cm³)\" 0, 25, 41, 54, 72, 78, 81, 82, 82, 82; \"Run B\", \"Volume (cm³)\" 0, 16, 28, 39, 57, 68, 76, 80, 82, 82.",
+  "questionRef": "2016 HL Q3"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q3b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 HL Q3(b): \"In an investigation into the decomposition of a hydrogen peroxide solution, using a manganese(IV) oxide catalyst, the volume of oxygen produced was monitored with time. Two runs were conducted under the same conditions of temperature and pressure, using the same initial volume of the same hydrogen peroxide solution, and the same mass of catalyst from two different suppliers, A and B. The volumes of oxygen collected at a set of times common to both runs are recorded in the table below.\"; a table: \"Time (minutes)\" 0.0, 1.0, 2.0, 3.0, 5.0, 6.5, 8.0, 9.5, 11.0, 12.0; \"Run A\", \"Volume (cm³)\" 0, 25, 41, 54, 72, 78, 81, 82, 82, 82; \"Run B\", \"Volume (cm³)\" 0, 16, 28, 39, 57, 68, 76, 80, 82, 82; then \"(b) On the same sheet of graph paper, using a common set of axes, plot a graph of volume of oxygen produced versus time for each run.\", \"versus\" in italics.",
+  "questionRef": "2016 HL Q3(b)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q3e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table headed \"hydrogen peroxide\" and \"manganese(IV) oxide\", each over two columns, \"GHS*\" and \"Older**\". Under hydrogen peroxide: a flame over a circle in a diamond with a border, and the same symbol on a grey square. Under manganese(IV) oxide: an exclamation mark in a diamond with a border, and a large X on a grey square. Below: \"*New GHS (Globally Harmonised System) pictograms have red borders and black symbols on a white background.\" and \"**Older pictograms with black symbols on amber squares are to be phased out by June 2017.\"",
+  "questionRef": "2016 HL Q3(e)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The structure of cinnamaldehyde: a benzene ring, drawn as a hexagon with a circle inside, bonded to a C carrying an H, which is double-bonded to a C carrying an H, which is bonded to a C that is double-bonded to O and carries an H.",
+  "questionRef": "2016 HL Q4(g)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q4j.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An infrared spectrum: \"Absorbance\" up the left side with an arrow pointing down, \"Frequency\" along the foot with an arrow pointing left; the trace dips broadly in its left half and then drops in many sharp, deep troughs across its right part.",
+  "questionRef": "2016 HL Q4(j)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Energy levels drawn as horizontal lines labelled \"n = 1\" to \"n = 6\" up the left; four arrows run down from n = 3, n = 4, n = 5 and n = 6 to n = 2, and a wavy line runs from each to a line across a dark strip on the right, the lines labelled from top to bottom \"violet\", \"purple\", \"blue/green\" and \"red\".",
+  "questionRef": "2016 HL Q5(a)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A fractionating column: \"crude oil\" enters through a \"furnace\" at the foot on the left, and outlets down the tower are labelled from top to bottom \"refinery gas\", \"light gasoline\", \"naphtha\", \"kerosene\", \"gas oil\" and \"residue\".",
+  "questionRef": "2016 HL Q6"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q6c-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The balanced equation C₈H₁₈ (l) → C₈H₁₀ (l) + 4H₂ (g).",
+  "questionRef": "2016 HL Q6(c)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q6c-calc-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 HL Q6(c): \"Name the oil refining process that converts octane into ethylbenzene according to the following balanced equation.\" and the equation C₈H₁₈ (l) → C₈H₁₀ (l) + 4H₂ (g); then \"Calculate the heat of reaction for the conversion of octane to ethylbenzene above, given that the heats of formation of octane and ethylbenzene are –250.1 and –12.5 kJ mol⁻¹ respectively.\"",
+  "questionRef": "2016 HL Q6(c)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme around \"ethene\", in a shaded box: an arrow labelled \"HCl\" up to \"chloroethane\"; an arrow labelled \"H₂\" across to \"ethane\", and a curved arrow labelled \"Cl₂\" and \"uv\" from ethane back to chloroethane; an arrow labelled \"H₂O\" down to \"A\", and an arrow labelled \"X\" from A up to ethene; an arrow down and across to \"polymer B\"; and an arrow labelled \"H⁺\" and \"HCOOH\" from A down to \"ester C\".",
+  "questionRef": "2016 HL Q8"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q10b-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two equations ClO⁻ + S₂O₃²⁻ + OH⁻ → Cl⁻ + SO₄²⁻ + H⁺ and ClO₃⁻ + Br⁻ + H⁺ → Cl⁻ + Br₂ + H₂O, one above the other.",
+  "questionRef": "2016 HL Q10(b)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q10b-assign-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 HL Q10(b): the equations ClO⁻ + S₂O₃²⁻ + OH⁻ → Cl⁻ + SO₄²⁻ + H⁺ and ClO₃⁻ + Br⁻ + H⁺ → Cl⁻ + Br₂ + H₂O, one above the other; then \"Assign oxidation numbers in the first equation above to identify (iii) the reducing reagent, (iv) the oxidising reagent.\"",
+  "questionRef": "2016 HL Q10(b)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q10c-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 HL Q10(c)(ii): \"(ii) John Joly was an Irish scientist who in 1914 pioneered the treatment of cancer using a radium compound containing radium–226.\" \"Complete the following nuclear equation to show the alpha decay of radium–226.\" and Ra, with mass number 226 and atomic number 88, → ______ + ______.",
+  "questionRef": "2016 HL Q10(c)(ii)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q11a-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The balanced equation 4KNO₃ (s) + 5S (s) → 2K₂O (s) + 2N₂ (g) + 5SO₂ (g).",
+  "questionRef": "2016 HL Q11(a)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q11b-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table: \"Molecular formula\", \"Common name\", \"IUPAC name\", \"Boiling point (°C)\"; NH₃, ammonia, azane, – 33.3; PH₃, phosphine, phosphane, – 87.7; AsH₃, arsine, arsane, – 62.5.",
+  "questionRef": "2016 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2016-HL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cut-away drawing of a Downs cell, labelled \"Cl₂\" at an arrow rising from a cylinder in the lid, \"NaCl\" at an arrow into the lid, \"molten NaCl and CaCl₂ electrolyte\", \"molten Na\" at an arrow out of a pipe on the left and again inside on the right, \"cylindrical steel cathode\", \"steel mesh\" and \"carbon anode\" below; \"–\" at the terminals on both sides and \"+\" under the anode.",
+  "questionRef": "2016 HL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q1c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q1(c)(i), as the State Examinations Commission set it: three boxed routes side by side, separated by \"/\": M = 1.20 × 2 over 40* = 0.06** M (3) and 25×0.06 over 1000 = 0.0015 moles/25 cm³ (3) / 1.20 over 20 = 0.06 g in 25 cm³ (3) and 0.06 over 40* = 0.0015 moles/25 cm³ (3) / 1.20 over 40* = 0.03 moles/500 cm³ (3) and 0.03 over 20 = 0.0015 moles/25 cm³ (3); then \"[*Addition must be shown for error to be treated as slip.]\"",
+  "questionRef": "2016 HL Q1(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q1c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q1(c)(ii), as the State Examinations Commission set it: two boxed routes: 0.0015 moles CH₃COOH (3), 0.0015 ÷ 18.75 = 0.00008 (8 × 10⁻⁵) moles per cm³ (3) / 18.75 × M over 1 = 25 × 0.06 over 1 / 18.75 × M over 1 = 25 × Molarity** over 1, M = 0.08*** M (3), 0.08 over 1000 = 0.00008 (8 × 10⁻⁵) moles per cm³ (3).",
+  "questionRef": "2016 HL Q1(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q2b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q2(b)(ii), as the State Examinations Commission set it: a box of two structures: a benzene ring with HO at one corner, an O bonded to CH₃ at the next and, at the far side, a chain of three carbons ending in a double bond, drawn as lines; and below it a carbon carrying three H atoms bonded to a carbon that is double-bonded to O and bonded to O–H.",
+  "questionRef": "2016 HL Q2(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q3a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q3(a), as the State Examinations Commission set it: five labelled drawings: A, a conical flask with a bent delivery tube through its stopper and a small tube standing tilted inside; B, a flask on its side, stoppered, with a tube; C, a conical flask with a delivery tube and a dark solid in its bottom; X, a \"graduated cylinder\" upturned in a trough of water over a delivery tube; Y, a \"gas syringe\". Lines join \"H₂O₂\" to the liquid and \"MnO₂\" to the solid in A, B and C.",
+  "questionRef": "2016 HL Q3(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q3(b), as the State Examinations Commission set it: a graph, \"Volume (cm³)\" 0 to 90 up the side and \"Time (minutes)\" 0 to 14 along the foot, with two curves of plotted points rising from the origin and levelling off at 82, the upper one steeper, and a straight line touching the upper curve at about 4 minutes; inset, the table of times and volumes: \"Time (minutes)\" 0.0, 1.0, 2.0, 3.0, 5.0, 6.5, 8.0, 9.5, 11.0, 12.0; \"Run A Volume (cm³)\" 0, 25, 41, 54, 72, 78, 81, 82, 82, 82; \"Run B Volume (cm³)\" 0, 16, 28, 39, 57, 68, 76, 80, 82, 82.",
+  "questionRef": "2016 HL Q3(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q3(c), as the State Examinations Commission set it: boxed, \"any two points from a tangent drawn at 4 minutes on curve A\", \"e.g. (6.0, 82) and (1.0, 39)\", 82−39 over 6.0−1.0 = 43 over 5.0 = 8.6 [8.2 – 9.5] cm³ oxygen per minute (6); then a graph, \"Volume (cm³)\" 0 to 90 up the side and \"Time (minutes)\" 0 to 14 along the foot, with two curves of plotted points rising from the origin and levelling off at 82, the upper one steeper, and a straight line touching the upper curve at about 4 minutes; inset, the table of times and volumes: \"Time (minutes)\" 0.0, 1.0, 2.0, 3.0, 5.0, 6.5, 8.0, 9.5, 11.0, 12.0; \"Run A Volume (cm³)\" 0, 25, 41, 54, 72, 78, 81, 82, 82, 82; \"Run B Volume (cm³)\" 0, 16, 28, 39, 57, 68, 76, 80, 82, 82.",
+  "questionRef": "2016 HL Q3(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q5(b), as the State Examinations Commission set it: a table of three methods, priced (3) a row. \"Method 1\": \"clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl)\", \"dip rod in salt and hold salt in hot (blue) part of Bunsen flame\", \"red (crimson) colour is a positive result for lithium\". \"Method 2\": \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", \"dip splint (stick) in salt and hold salt in hot (blue) part of Bunsen flame\", \"red (crimson) colour is a positive result for lithium\". \"Method 3\": \"prepare a solution of the given salt in water and ethanol (propanol)\", \"spray solution onto (into) hot (blue) part of Bunsen flame\", \"red (crimson) colour is a positive result for lithium\".",
+  "questionRef": "2016 HL Q5(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q6(c), as the State Examinations Commission set it: two boxes, the second after \"or\". C₈H₁₈ → 8C + 9H₂, ΔH = 250.1 kJ (3); 8C + 5H₂ → C₈H₁₀, ΔH = –12.5 kJ (3); under a rule, C₈H₁₈ → C₈H₁₀ + 4H₂, ΔH = 237.6 kJ (3). ΔHreaction = ΣΔHf(products) – ΣΔHf(reactants); ΔHreaction = –12.5 (3) – [–250.1] (3), the last term shaded; or ΔHreaction = –12.5 (3) + 250.1 (3); = 237.6 kJ mol⁻¹ (3).",
+  "questionRef": "2016 HL Q6(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q6(e), as the State Examinations Commission set it: a table headed \"(i) octane\", \"(ii) 2,2,4-trimethylpentane\" and \"(iii) ethylbenzene\": a chain of eight C atoms with every H drawn; a chain of five C atoms carrying two CH₃ groups on the second carbon and one on the fourth, with every other bond to H; and a benzene ring bonded to a C carrying two H atoms and CH₃, then \"/\" and a benzene ring bonded to C₂H₅.",
+  "questionRef": "2016 HL Q6(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q7c-kc.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q7(c), as the State Examinations Commission set it: Kc = [SO₃]² over [SO₂]²[O₂].",
+  "questionRef": "2016 HL Q7(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q7c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q7(c), as the State Examinations Commission set it: boxed: \"Initially: moles SO₂ =\" 96 over 64* = 3/2 (1.5) and moles O₂ = 24 over 32* = 3/4 (0.75) (3); \"At equilibrium: moles SO₃ =\" 112 over 80* = 7/5 (1.4) (3); two inner boxes under 2SO₂ + O₂ ⇋ 2SO₃, the first \"Equil mol: 0.1 (3) 0.05 (3) 1.4\", \"Equil M: 0.002 0.001 0.028\", \"Divide by 50. (3)\", the second \"Initial M: 0.03 0.015\", \"Equil M: 0.028\", \"Divide by 50. (3)\", \"Equil M: 0.002 (3) 0.001 (3) 0.028\"; then Kc = (0.028)² over (0.002)²(0.001) = 196000 / 1.96 × 10⁵ (3). \"[*Addition must be shown for error to be treated as slip.]\" \"[Where Kc incorrect, e.g. inverted, allow consequential marks for calculation – up to a maximum of 15 marks.]\" Then two boxed tables under 2SO₂ + O₂ ⇋ 2SO₃. The first: Start (moles) 96 over 64* = 3/2(1.5), 24 over 32** = 3/4 (0.75) (3); Equil (moles) 112 over 80*** = 7/5 (1.4) (3); Equil (moles) (1.5 – 2x), (0.75 – x), 2x = 1.4, x = 0.7; Equil (moles) 0.1, 0.05, 1.4 (2 × 3); Equil (mol/L) 0.1 ÷ 50 = 0.002, 0.05 ÷ 50 = 0.001, 1.4 ÷ 50 = 0.028, Divide by 50. (3); Kc = (0.028)² over (0.002)²(0.001) = 196000 / 1.96 × 10⁵ (3). The second: Start (moles) 96 over 64* = 3 over 2 / 1.5, 24 over 32** = 3 over 4 / 0.75 (3); Equil (moles) 112 over 80*** = 7 over 5 / = 1.4 (3); Start (mol/L) 1.5 ÷ 50 = 0.03, 0.75 ÷ 50 = 0.015, 0 and 1.4 ÷ 50 = 0.028, Divide by 50. (3); Equil (mol/L) (0.03 – 2x), (0.015 – x), 2x = 0.028, x = 0.014; Equil (mol/L) 0.002, 0.001, 0.028 (2 × 3); Kc = (0.028)² over (0.002)²(0.001) = 196000 / 1.96 × 10⁵ (3).",
+  "questionRef": "2016 HL Q7(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q8c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q8(c), as the State Examinations Commission set it: \"DESCRIBE:\" \"initiation:\" \"homolysis (splitting, fission) of chlorine molecule (Cl₂) into free radicals (atoms, Cl•, Cl) by ultraviolet (uv) light /\" Cl₂, an arrow marked \"uv\", 2Cl• / Cl₂, an arrow marked \"uv\", 2Cl (3); \"propagation (1):\" \"chlorine radical (atom, Cl•, Cl) reacts with ethane molecule (C₂H₆) giving hydrogen chloride (HCl) and an ethyl radical (C₂H₅•) /\" Cl• + C₂H₆ → HCl + C₂H₅• / Cl + C₂H₆ → HCl + C₂H₅• (3), \"[Hydrochloric acid not acceptable for HCl and cancellation applies.]\" \"[Where C₂H₅ used instead of C₂H₅• deduct 3 marks but only once in (c).]\"; \"propagation (2):\" \"ethyl radical (C₂H₅•) reacts with chlorine molecule (Cl₂) giving monochloroethane (C₂H₅Cl) and a chlorine radical (atom, Cl•, Cl) /\" C₂H₅• + Cl₂ → C₂H₅Cl + Cl• / C₂H₅• + Cl₂ → C₂H₅Cl + Cl (3); \"chain reaction occurs / propagation steps repeat until one reactant used up / propagation steps repeat until termination reached\" (3), \"[Accept ‘chain reaction occurs’ anywhere in (c).]\"; \"termination:\" \"combination of remaining radicals to form molecules (chlorine, chloroethane, butane) /\" 2Cl• → Cl₂ / 2Cl → Cl₂ / Cl• + C₂H₅• → C₂H₅Cl / Cl + C₂H₅• → C₂H₅Cl / 2C₂H₅• → C₄H₁₀ (3). In two boxes down the left: \"Where a candidate refers in name or in a drawing to methane instead of ethane and/or methyl instead of ethyl and/or ethane instead of butane, deduct 3 marks but only once in (c).\" and \"Where a radical is referred to as an ion or where a diagram shows a radical but the description refers to an ion cancellation applies each time.\"",
+  "questionRef": "2016 HL Q8(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q8d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q8(d), as the State Examinations Commission set it: four boxed structures of ethyl methanoate, each with its C=O group circled: H–C(=O)–O–C–C with every H drawn; the same with the ethyl group's bonds drawn as lines to H; a skeletal form, a C=O line bonded to O and a two-carbon zigzag; and the skeletal C=O and O bonded to a carbon carrying CH₃. Then \"Note some or all of the hydrogens and carbons need not be shown explicitly; -C₂H₅ need not be expanded; allow -Et instead of -C₂H₅; accept HCOOC₂H₅] [NAME and DRAW not linked.]\"",
+  "questionRef": "2016 HL Q8(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q10a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q10(a)(ii), as the State Examinations Commission set it: boxed, pH= –log [H⁺] ⇒[H⁺] = inverse log (–2) = 0.01 (3); 0.01 ÷ 2 (dibasic) = 0.005 M (3); then \"CALCULATE: 5/9 (0.556) M [0.55 – 0.56 M] (6)\" and, boxed, pH= –log [H⁺] ⇒[H⁺] = inverse log (–2) = 0.01; shaded, ⇒ Ka (1.8 × 10⁻⁴) = [H⁺][A⁻] over [HA] ([H⁺]² over [HA], (0.01)² over [HA]) / [HA] = (0.01)² over 1.8 × 10⁻⁴ / [HA] = (0.01)² over Ka / [H⁺] = √Ka[HA] / 0.01 = √1.8 × 10⁻⁴[HA] / [H⁺]² = Ka[HA] / (0.01)² = 1.8 × 10⁻⁴[HA] (3); [HA] = = 5/9 (0.55555) M [0.5556 – 0.56 M] (3); [acid] = [HA] = [HX] = M = Ma.",
+  "questionRef": "2016 HL Q10(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q10b-assign.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q10(b), as the State Examinations Commission set it: the equation ClO⁻ + S₂O₃²⁻ + OH⁻ → Cl⁻ + SO₄²⁻ + H⁺ with \"+1\" under ClO⁻, \"+2\" under S₂O₃²⁻, \"–1\" under Cl⁻ and \"+6\" under SO₄²⁻.",
+  "questionRef": "2016 HL Q10(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q10c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q10(c)(ii), as the State Examinations Commission set it: Rn, with mass number 222 and atomic number 86, \"//\" He, with mass number 4 and atomic number 2.",
+  "questionRef": "2016 HL Q10(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q10c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q10(c)(iii), as the State Examinations Commission set it: four boxed routes, each after \"or\". 1 × 10⁻⁴ × 12.5 over 100 = 1.25 × 10⁻⁵ moles radium–223 left (3); 1.25 × 10⁻⁵ × 6.0 × 10²³ = 7.5 × 10¹⁸ atoms of radium–223 (3). 1.0 × 10⁻⁴ × 6.0 × 10²³ = 6.0 × 10¹⁹ atoms of radium–223 initially (3); 6 × 10¹⁹ × 12.5 over 100 = 7.5 × 10¹⁸ atoms radium–223 left (3). 1 × 10⁻⁴ × 87.5 over 100 = 8.75 × 10⁻⁵ moles radium–223 decayed; 1.0 × 10⁻⁴ – 8.75 × 10⁻⁵ = 1.25 × 10⁻⁵ moles radium–223 left (3); 1.25 × 10⁻⁵ × 6.0 × 10²³ = 7.5 × 10¹⁸ atoms of radium–223 (3). 1.0 × 10⁻⁴ × 6.0 × 10²³ = 6.0 × 10¹⁹ atoms of radium–223 initially (3); 6 × 10¹⁹ × 87.5 over 100 = 5.25 × 10¹⁹ atoms radium–223 decayed; 6.0 × 10¹⁹ – 5.25 × 10¹⁹ = 7.5 × 10¹⁸ atoms radium–223 left (3).",
+  "questionRef": "2016 HL Q10(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q11a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q11(a)(ii), as the State Examinations Commission set it: boxed, 0.2 × 7 over 4 / 0.2 × 2 over 4 + 0.2 × 5 over 4 = 0.35 moles gas (3); 0.35 × 22.4 = 7.84 litres (3).",
+  "questionRef": "2016 HL Q11(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-HL-scheme-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 HL Q11(b), as the State Examinations Commission set it: \"DRAW:\" two dot and cross diagrams of arsine: a circle As overlapping three circles H, each overlap holding a dot and a cross, with a pair of crosses at the top of As; and As with a pair of crosses at its left, joined to an H above, an H to the right and an H below, each by a dot and a cross; \"(6)\". \"PREDICT: pyramidal (trigonal pyramidal) (3)\", \"[No marks for ‘trigonal’ on its own.]\"; five boxed drawings of the molecule, As at the top bonded to three H atoms, each drawing using a wedge or a dashed bond; \"[Diagram insufficient unless a 3d representation using at least one wedge or dash, as shown.]\"",
+  "questionRef": "2016 HL Q11(b)",
+  "solution": true
  }
 ]
