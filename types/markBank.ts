@@ -634,6 +634,33 @@ export type IrishGuidanceKind =
   /** A published quality band such as Cumas/Cruinneas Gaeilge. */
   | 'quality';
 
+/** One answer of an Irish listening or reading scheme, cut from the exact
+ * guidance by cards/irish/answers.ts: the scheme's words before "= 2 mharc". */
+export interface IrishAnswerRow {
+  id: string;
+  text: string;
+  /** Marks the row earns; 0 when the part's ladder prices the rows instead. */
+  marks: number;
+}
+
+/** One sub-question of the scheme ("1. Cad atá á lorg…? 2 mharc") with its answers. */
+export interface IrishAnswerPart {
+  id: string;
+  /** The sub-question as the scheme prints it, with any "(Alt 2)" reference. */
+  prompt?: string;
+  /** The marks the scheme gives this sub-question. */
+  tariff: number;
+  /** "{3 mharc: 2 mharc + 1 mharc}": marks for 1..n right answers. */
+  ladder?: number[];
+  rows: IrishAnswerRow[];
+}
+
+export interface IrishAllocation {
+  parts: IrishAnswerPart[];
+  /** Lifted scheme sentences that are rules, not answers. */
+  directions: string[];
+}
+
 /** One independently placed part of the SEC Irish marking scheme. */
 export interface IrishCriterion {
   id: string;
@@ -645,6 +672,9 @@ export interface IrishCriterion {
   guidanceKind: IrishGuidanceKind;
   /** Verbatim or tightly bounded scheme guidance, never invented content. */
   guidance: string[];
+  /** The exact guidance as claimable rows, where cards/irish/answers.ts could
+   * cut it so the parts add up to the criterion. Absent: prose over a scale. */
+  allocation?: IrishAllocation;
 }
 
 /**

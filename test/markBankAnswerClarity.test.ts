@@ -31,6 +31,8 @@ import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/list
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
 import irish from '../components/MarkBank/cards/irish/authored.json';
+import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import politics from '../components/MarkBank/cards/politics-and-society/authored.json';
 import physicalEducation from '../components/MarkBank/cards/physical-education/reviewed.json';
 import art from '../components/MarkBank/cards/art/authored.json';
@@ -197,10 +199,59 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(FRENCH_CLOZE_CARDS.filter(card => !card.rubric.allocation)).toHaveLength(0);
   });
 
-  it('Irish: exact criteria still weld their answers into one bullet (to convert)', () => {
-    const exact = cardsOf(irish).reduce((count, card) =>
-      count + (card.criteria ?? []).filter(criterion => criterion.guidanceKind === 'exact').length, 0);
-    expect(exact).toBeLessThanOrEqual(BASELINE.irishExactCriteria);
+  it('Irish: listening and reading answers are rows; what is still welded prose is pinned by shape', () => {
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9áéíóú’'-]+/g, '');
+    const exact = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card =>
+      card.rubric.system === 'irish' && /Cluastuiscint|Léamhthuiscint/.test(card.questionRef));
+    const structured = exact.filter(card => card.rubric.system === 'irish' && card.rubric.criteria[0].allocation);
+    for (const card of structured) {
+      if (card.rubric.system !== 'irish') continue;
+      const criterion = card.rubric.criteria[0];
+      const allocation = criterion.allocation!;
+      const corpus = normalise(criterion.guidance.join(' ') + ' ' + card.questionText);
+      let total = 0;
+      for (const part of allocation.parts) {
+        if (part.prompt) expect(corpus.includes(normalise(part.prompt)), `${card.id}: prompt "${part.prompt.slice(0, 40)}" is not lifted`).toBe(true);
+        expect(part.rows.length, `${card.id}: sub-question without rows`).toBeGreaterThan(0);
+        for (const row of part.rows) {
+          expect(row.text.length, `${card.id}: empty row`).toBeGreaterThan(0);
+          expect(corpus.includes(normalise(row.text)), `${card.id}: row "${row.text.slice(0, 40)}" is not lifted`).toBe(true);
+          expect(row.marks, card.id).toBeLessThanOrEqual(part.tariff);
+        }
+        if (part.ladder) expect(part.ladder.at(-1), card.id).toBe(part.tariff);
+        else expect(Math.max(...part.rows.map(row => row.marks)), card.id).toBeGreaterThan(0);
+        total += part.tariff;
+      }
+      expect(total, `${card.id}: parts add to ${total}`).toBe(criterion.maxMarks);
+      for (const note of allocation.directions) {
+        expect(corpus.includes(normalise(note)), `${card.id}: direction "${note.slice(0, 40)}" is not lifted`).toBe(true);
+      }
+    }
+    expect(exact).toHaveLength(180);
+    expect(structured).toHaveLength(136);
+
+    // What is still prose, by shape. A reading excerpt irish_cards.py cut
+    // short or started mid-question cannot reconcile; fix the excerpt and
+    // lower its number here.
+    const fallback = exact.filter(card => card.rubric.system === 'irish' && !card.rubric.criteria[0].allocation);
+    const shape = (card: typeof fallback[number]) => {
+      if (/Ceist 6\b/.test(card.questionRef)) return 'HL Q6 grammar + literary composite tariff';
+      if (/Léamhthuiscint/.test(card.questionRef)) return 'reading excerpt cut short or started mid-question';
+      return 'listening excerpt cut short';
+    };
+    const byShape: Record<string, number> = {};
+    for (const card of fallback) byShape[shape(card)] = (byShape[shape(card)] ?? 0) + 1;
+    expect(byShape).toEqual({
+      'reading excerpt cut short or started mid-question': 31,
+      'HL Q6 grammar + literary composite tariff': 10,
+      'listening excerpt cut short': 3,
+    });
+    // Every other exact criterion (the 45 Ordinary composition "Tasc" 0/2
+    // tariffs) is already a button; the welded ones above are the residue.
+    const welded = cardsOf(irish).reduce((count, card) =>
+      count + (card.criteria ?? []).filter(criterion => criterion.guidanceKind === 'exact').length, 0)
+      - structured.length;
+    expect(welded).toBeLessThanOrEqual(BASELINE.irishExactCriteria);
   });
 
   it('Politics: bullet answers still sit in a closed details box (to convert)', () => {
@@ -228,7 +279,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
  *  number is the priced lines left in the 50 opinion cards above. */
 const BASELINE = {
   frenchReading: 1,
-  irishExactCriteria: 225,
+  irishExactCriteria: 89,
   politicsBulletCards: 215,
   physicalEducationLines: 763,
   artTableCards: 1548,

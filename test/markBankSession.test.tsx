@@ -24,7 +24,7 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
+import { isRubricCard, tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
 import { CARDS as ART_HIGHER } from '@/components/MarkBank/cards/art/higher';
 import { CARDS as IRISH_HIGHER } from '@/components/MarkBank/cards/irish/higher';
 import { CARDS as ECONOMICS_HIGHER } from '@/components/MarkBank/cards/economics/higher';
@@ -515,8 +515,21 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
     const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
-    fireEvent.click(within(firstScheme).getByRole('button', { name: '10' }));
-    fireEvent.click(within(secondScheme).getByRole('button', { name: '8' }));
+    // Each fógra's scheme is cut into sub-questions and rows: claim the full
+    // answers of every sub-question so each extract earns its whole tariff.
+    const claimFullMarks = (scope: HTMLElement, card: SecCard) => {
+      if (!isRubricCard(card) || card.rubric.system !== 'irish') throw new Error('not an Irish card');
+      for (const part of card.rubric.criteria[0].allocation!.parts) {
+        const rows = part.ladder
+          ? part.rows.slice(0, part.ladder.length)
+          : [...part.rows].sort((a, b) => b.marks - a.marks).slice(0, Math.max(1, Math.floor(part.tariff / Math.max(...part.rows.map(row => row.marks)))));
+        for (const row of rows) {
+          fireEvent.click(within(scope).getByRole('button', { name: part.ladder ? row.text : `${row.text} · ${row.marks}m` }));
+        }
+      }
+    };
+    claimFullMarks(firstScheme, listening[0]);
+    claimFullMarks(secondScheme, listening[1]);
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);
