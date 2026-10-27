@@ -128,13 +128,20 @@ C.fixed([k('2', 'c', 'iv')], 'chem-u2', 'melting-point-of-recrystallised-benzoic
 C.ordered([k('3', 'a')], None, None)
 C.fixed([k('3', 'b')], None, None)
 _q3c = P.ask(k('3', 'c'))
+# (c) and (c)(i)-(iii): the only figure is the scheme's graph or working, held back until the
+# reveal, while (c) points at "the table below" whose volumes the graph is plotted from, and the
+# lead-in at the catalyst "as illustrated". The paper's own print is the question: the lead-in with
+# the photograph of the powder beside it, then (c) with its table, down to the part's own ask.
 C.fixed([k('3', 'c')], 'chem-3-2', 'plotting-volume-of-oxygen-against-time',
         figure=S + 'q3c', qtext=_q3c[:_q3c.index(' Use your graph to find')])
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3c-print'
 C.fixed([k('3', 'c', 'i')], None, None, figure=S + 'q3c')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3c-i-print'
 C.route([k('3', 'c', 'ii')], None, None, figure=S + 'q3c',
         fixes={'total volume total time = 78 ÷ 4 = 19.5 cm³ O₂ per minute':
                'total volume ÷ total time = 78 ÷ 4 = 19.5 cm³ O₂ per minute'},
         row_notes={0: FRACTION.format('total volume', 'total time')})
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3c-ii-print'
 # Q3(c)(iii): the tangent (3), then the slope (3), with the criterion for reading
 # the tangent above it and the working in a box below.
 _q3c3 = P.items(k('3', 'c', 'iii'))
@@ -150,6 +157,7 @@ C.add([k('3', 'c', 'iii')], None, None, [
              'awarded for rate within stated range with no tangent drawn or consequentially for '
              'work done on a poor tangent or a tangent placed at an incorrect time.]')],
     figure=S + 'q3c-iii')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3c-iii-print'
 C.fixed([k('3', 'd', 'i')], 'chem-3-2', 'curve-for-half-the-concentration', cid='q3-d')
 C.fixed([k('3', 'd', 'ii')], 'chem-3-2', 'curve-for-more-catalyst')
 
@@ -176,6 +184,11 @@ C.ordered([k('4', 'h', 'i'), k('4', 'h', 'ii')], None, None, cid='q4-h', notes=Q
 C.ordered([k('4', 'i')], None, None, notes=Q4_NOTE)
 C.fixed([k('4', 'j')], None, None, notes=Q4_NOTE)
 C.answer_only([k('4', 'k')], None, None, S + 'q4k', cid='q4-k-fig', notes=Q4_NOTE)
+# Its only figure is the scheme's working, held back until the reveal, while the ask says "The
+# structure of aspirin is shown." and the molar mass the dose is worked from is read off that
+# structure. The paper's own print is the question: (k)'s words, then the structure printed beside
+# them.
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q4k-print'
 # Q4(l)A: after "CO₂ + H₂O → H₂CO₃" the scheme gives the two equations (2 × 3), or
 # the one equation for both steps (6).
 _q4la = P.items(ka('4', 'l', None, 'A'))

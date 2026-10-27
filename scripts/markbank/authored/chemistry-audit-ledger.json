@@ -10683,9 +10683,8 @@
    "chem-2021-ol-q9-a": {
     "status": "corrected",
     "before": "6f03cb55455a5d9a",
-    "after": "12e8d4f22a0c8f90",
+    "after": "d9cab1dde6de08bc",
     "changed": [
-     "stem",
      "rows",
      "figureKey"
     ]
@@ -11293,44 +11292,47 @@
    },
    "chem-2022-hl-q3-c": {
     "status": "added",
-    "after": "d47845ecb275c0c4"
+    "after": "e8c66389fb61e767"
    },
    "chem-2022-hl-q3-c-i": {
     "status": "corrected",
     "before": "ea3f33ba43b11a76",
-    "after": "0813d78662930580",
+    "after": "ff9cf377a6ff556e",
     "changed": [
      "stem",
      "tariffModel",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2022-hl-q3-c-ii": {
     "status": "corrected",
     "before": "fec5be0f9966063b",
-    "after": "089c5aa1eb903f72",
+    "after": "57bc29a2d2af8863",
     "changed": [
      "stem",
      "questionText",
      "tariffModel",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2022-hl-q3-c-iii": {
     "status": "corrected",
     "before": "b5be219b7c7b3ef2",
-    "after": "7ccc4af0207282cd",
+    "after": "39b714bedb00fc74",
     "changed": [
      "stem",
      "questionText",
      "tariffModel",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2022-hl-q3-d": {
@@ -11466,13 +11468,14 @@
    "chem-2022-hl-q4-k-fig": {
     "status": "corrected",
     "before": "185198e7fca515fe",
-    "after": "7ed40442e29e462f",
+    "after": "e54b6212e82bb585",
     "changed": [
      "stem",
      "questionText",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2022-hl-q4-l-a": {
@@ -12286,7 +12289,7 @@
    "chem-2022-ol-q3-a": {
     "status": "corrected",
     "before": "54bac978c0a9a456",
-    "after": "25863fc086aaf94e",
+    "after": "e8880f979406f23e",
     "changed": [
      "questionRef",
      "stem",
@@ -12294,7 +12297,8 @@
      "tariffModel",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2022-ol-q3-b-i": {
@@ -13469,35 +13473,38 @@
    "chem-2023-hl-q3-d-i": {
     "status": "corrected",
     "before": "bb1901886fcf4537",
-    "after": "986528f31fc4e594",
+    "after": "8d12b9e2fa20f0c2",
     "changed": [
      "stem",
      "questionText",
      "rows",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2023-hl-q3-d-ii": {
     "status": "corrected",
     "before": "728b70422976bd55",
-    "after": "ccc694150f2dcf7b",
+    "after": "5c54b7775611aea2",
     "changed": [
      "stem",
      "questionText",
      "rows",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2023-hl-q3-d-iii": {
     "status": "corrected",
     "before": "004eb0a2e110336e",
-    "after": "f4bed7bb8fe310d2",
+    "after": "210b3cecc5645971",
     "changed": [
      "stem",
      "questionText",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2023-hl-q3-e-i": {
@@ -13626,11 +13633,12 @@
    "chem-2023-hl-q4-k-fig": {
     "status": "corrected",
     "before": "e364f6f5fc1b943d",
-    "after": "5bb6fc22f68c5319",
+    "after": "43bf8fcf1e72b752",
     "changed": [
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2023-hl-q4-l-a": {
@@ -14624,7 +14632,7 @@
    "chem-2023-ol-q2-d-iii": {
     "status": "corrected",
     "before": "1f7dc405d1227fe3",
-    "after": "62200b07f0d7708b",
+    "after": "e03c592c9350f998",
     "changed": [
      "stem",
      "questionText",
@@ -15121,7 +15129,7 @@
    "chem-2023-ol-q9-b-i": {
     "status": "corrected",
     "before": "3dae8efde3fb4216",
-    "after": "6a1eed3556781bd0",
+    "after": "1ad98a435784d48a",
     "changed": [
      "section",
      "stem",
@@ -15129,7 +15137,8 @@
      "tariffModel",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2023-ol-q9-b-ii": {
@@ -15146,7 +15155,7 @@
    "chem-2023-ol-q9-c": {
     "status": "corrected",
     "before": "6e0e5a62ba76b875",
-    "after": "08c03ad40885f1ec",
+    "after": "4a69b1ab90884b5c",
     "changed": [
      "section",
      "questionRef",
@@ -15155,7 +15164,8 @@
      "tariffModel",
      "rows",
      "notes",
-     "figureKey"
+     "figureKey",
+     "questionFigureKey"
     ]
    },
    "chem-2023-ol-q9-d": {
@@ -17841,7 +17851,7 @@
    },
    "chem-2025-hl-q2-c-ii": {
     "status": "added",
-    "after": "9c6f54c17c9a11df"
+    "after": "4a75650896701f72"
    },
    "chem-2025-hl-q2-c-iii": {
     "status": "corrected",
@@ -18139,7 +18149,7 @@
    },
    "chem-2025-hl-q5-b-ii": {
     "status": "added",
-    "after": "7eee05d99bc8e6af"
+    "after": "657a1e268707e997"
    },
    "chem-2025-hl-q5-b-iii": {
     "status": "corrected",
@@ -20007,7 +20017,7 @@
    },
    "chem-2026-ol-q2-c-ii": {
     "status": "added",
-    "after": "d9212a1d6301786b"
+    "after": "a8c0b109cfc8803b"
    },
    "chem-2026-ol-q2-c-iii": {
     "status": "added",

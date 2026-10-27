@@ -56,8 +56,9 @@
  },
  {
   "id": "chem-2023-ol-q9-c",
-  "ask": "the time taken until the reaction was complete",
+  "ask": "",
   "answer": "5.5 – 6.0 minute",
+  "figure": true,
   "solution": true
  },
  {

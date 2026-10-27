@@ -125,7 +125,16 @@ C.fixed([k('2', 'c', 'i')], 'chem-4-1', 'indicator-for-carbonate-titration', cid
 C.fixed([k('2', 'c', 'ii')], 'chem-4-1', 'methyl-orange-colour-change-at-end-point', figure=Q2)
 C.fixed([k('2', 'd', 'i')], None, None, figure=Q2)
 C.route([k('2', 'd', 'ii')], None, None, figure=Q2)
-C.answer_only([k('2', 'd', 'iii')], None, None, S + 'q2d-iii')
+# Its only figure is the scheme's working, held back until the reveal, so the lead-in's sentence
+# "Some pieces of apparatus used to carry out the titration are shown below." would point at
+# nothing. Nothing in (d)(iii) depends on the apparatus: the concentration comes from the 25.0 cm³
+# of 0.05 M sodium carbonate, the equation and the titres, which the stem's other sentences print.
+# That sentence is left out of this card's stem.
+_Q2_APPARATUS = 'Some pieces of apparatus used to carry out the titration are shown below.'
+_q2d3_lead = C.context(k('2', 'd', 'iii'))
+assert _q2d3_lead.count(_Q2_APPARATUS) == 1 and _q2d3_lead.endswith('22.5 cm³ 22.4 cm³'), _q2d3_lead
+_before, _after = _q2d3_lead.split(_Q2_APPARATUS)
+C.answer_only([k('2', 'd', 'iii')], None, None, S + 'q2d-iii', stem=_before.strip() + ' ' + _after.strip())
 
 # ── Q3 Estuary water ─────────────────────────────────────────────────────────
 C.ordered([k('3', 'a', 'i')], None, None, figure=S + 'q3a-i')
@@ -227,10 +236,16 @@ C.ordered([k('8', 'd', 'i'), k('8', 'd', 'ii')], 'chem-4-2', 'addition-and-elimi
 # ── Q9 Rate of reaction ──────────────────────────────────────────────────────
 Q9 = 'chemistry-2023-ol-paper-p010-i0'
 C.ordered([k('9', 'a')], None, None, figure=Q9)
+# (b)(i) and (c): the only figure is the scheme's graph, held back until the reveal, while the
+# lead-in points at "The apparatus shown below" and the graph is plotted from the table of masses.
+# The paper's own print is the question: the lead-in, the balances and the table, then the part's
+# own ask ((b)(i) alone; (c) with its three romans, (c)'s mark "(15)" left out).
 C.fixed([k('9', 'b', 'i')], None, None, figure=S + 'q9b-i')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q9b-i-print'
 C.fixed([k('9', 'b', 'ii')], None, None, figure=Q9)
 C.ordered([k('9', 'c', 'i'), k('9', 'c', 'ii'), k('9', 'c', 'iii')], None, None, cid='q9-c',
           figure=S + 'q9b-i')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q9c-print'
 C.ordered([k('9', 'd')], None, None, figure=Q9)
 
 # ── Q10 Any two of (a), (b), (c) ─────────────────────────────────────────────

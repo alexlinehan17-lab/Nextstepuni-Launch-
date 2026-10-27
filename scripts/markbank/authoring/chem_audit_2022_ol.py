@@ -105,6 +105,11 @@ C.add([k('3', 'a', 'i'), k('3', 'a', 'ii'), k('3', 'a', 'iii')], None, None, [
     C.lifted('r-4', 'rotate flask so combine catalyst with solution', None)],
     kind='orderedSplit', notation='[9 + 5 + 2 + 2]', total=18, cid='q3-a', figure=S + 'q3a-iii',
     notes=SPLIT.format('[9 + 5 + 2 + 2]'))
+# Its only figure is the scheme's drawing, held back until the reveal, while the lead-in's last
+# sentence ends "using the apparatus shown below", and (iii) turns on that apparatus (the catalyst
+# added to the flask without losing oxygen through the tubing). The paper's own print is the
+# question: the lead-in with the apparatus, then (a) ((a)'s mark "(18)" left out).
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3a-print'
 C.fixed([k('3', 'b', 'i')], None, None, figure=Q3)
 C.fixed([k('3', 'b', 'ii')], None, None, figure=Q3)
 C.route([k('3', 'b', 'iii')], None, None, figure=Q3)

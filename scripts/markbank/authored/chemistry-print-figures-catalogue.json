@@ -7497,5 +7497,103 @@
   "truncated": false,
   "description": "The paper's own print of 2012 OL Q3(d)(ii): \"In an experiment to measure the heat of reaction (ΔH) for the reaction between hydrochloric acid (HCl) and sodium hydroxide (NaOH), 100 cm³ of 2M HCl were added to 100 cm³ of 2M NaOH in the apparatus shown in the diagram. The rise in temperature was noted and the heat produced was found to be 11.4 kJ. The equation for the reaction is:\", with \"heat of reaction\" underlined, then \"HCl + NaOH → NaCl + H₂O\" in bold; below them the apparatus: a thermometer standing in a polystyrene cup with a lid, the cup holding a liquid, with arrows from the labels \"thermometer\", \"cover\", \"polystyrene cup\" and \"reaction mixture\"; then \"(d) Calculate:\" and \"(ii) how many kilojoules of heat would be produced if 1 mole of HCl reacted fully with NaOH.\"",
   "questionRef": "2012 OL Q3(d)(ii)"
+ },
+ {
+  "file": "chemistry-2022-HL-paper-q3c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2022 HL Q3(c): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\"",
+  "questionRef": "2022 HL Q3(c)"
+ },
+ {
+  "file": "chemistry-2022-HL-paper-q3c-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2022 HL Q3(c)(i): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\" and \"Use your graph to find\", then \"(i) the time taken for this reaction to be complete,\"",
+  "questionRef": "2022 HL Q3(c)(i)"
+ },
+ {
+  "file": "chemistry-2022-HL-paper-q3c-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2022 HL Q3(c)(ii): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\" and \"Use your graph to find\", then \"(ii) the average rate of the reaction over the first 4.0 minutes (in cm³ O₂ per minute at room temperature and pressure),\"",
+  "questionRef": "2022 HL Q3(c)(ii)"
+ },
+ {
+  "file": "chemistry-2022-HL-paper-q3c-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2022 HL Q3(c)(iii): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\" and \"Use your graph to find\", then \"(iii) the instantaneous rate of the reaction at 4.0 minutes (in cm³ O₂ per minute at room temperature and pressure).\"",
+  "questionRef": "2022 HL Q3(c)(iii)"
+ },
+ {
+  "file": "chemistry-2022-HL-paper-q4k-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2022 HL Q4(k): \"The structure of aspirin is shown. Calculate the average daily dose (in mg) when a person took a total of 0.146 moles of ‘low dose’ aspirin over 365 days.\", then the structure printed beside it: a benzene ring drawn as a hexagon with a circle inside; on one ring carbon a \"C\" double-bonded to \"O\" and single-bonded to \"OH\"; on the next ring carbon an \"O\" bonded to a \"C\" that is single-bonded to \"CH₃\" and double-bonded to an \"O\" drawn below it.",
+  "questionRef": "2022 HL Q4(k)"
+ },
+ {
+  "file": "chemistry-2022-OL-paper-q3a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2022 OL Q3(a): \"3. Solutions of hydrogen peroxide (H₂O₂) are unstable and decompose according to the following balanced equation:\" over \"2H₂O₂ → 2H₂O + O₂\" in bold; \"A student measured the rate of decomposition, in the presence of a catalyst, of a hydrogen peroxide solution that had been in storage for some time. The student measured 25 cm³ of the hydrogen peroxide solution into a flask and, having added a small quantity of a suitable catalyst, recorded the volume of oxygen collected at intervals over several minutes using the apparatus shown below.\"; then a drawing: a stoppered conical flask labelled \"H₂O₂ solution and catalyst\", with solid drawn lying at its bottom, a tube labelled \"flexible tubing\" running from its stopper down into a trough of water and up into an upturned graduated cylinder standing in the water, the gas in it labelled \"O₂\", and beside them a digital stopwatch reading \"00:00\" with a \"START/STOP\" button; then \"(a) (i) Identify a suitable catalyst for the decomposition of H₂O₂.\", \"(ii) Describe the appearance of the catalyst.\" and \"(iii) Explain how the catalyst could have been added to the hydrogen peroxide solution in the flask without loss of oxygen gas.\"",
+  "questionRef": "2022 OL Q3(a)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q3d-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2023 HL Q3(d)(i): \"3. A student carried out an experiment to measure the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the following equation.\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; \"In the experiment the student used an expanded foam polystyrene cup with a plastic lid through which a thermometer and a plastic stirrer were inserted, as shown on the right. The student first added 50 cm³ of 1.0 M HCl solution at room temperature to the polystyrene cup and then quickly added 50 cm³ of 1.0 M NaOH solution, also at room temperature, and having lowered the lid stirred the mixture while observing the thermometer. The temperature of the mixture rose rapidly by 6.8 K and then began to fall very slowly.\"; on the right, a drawing of a long thermometer and a bent grey stirrer standing through two holes of a flat lid, raised above a cup with liquid in its foot, both reaching down into the liquid; then \"(d) Calculate\" and \"(i) the number of moles of HCl neutralised in the polystyrene cup,\"",
+  "questionRef": "2023 HL Q3(d)(i)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q3d-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2023 HL Q3(d)(ii): \"3. A student carried out an experiment to measure the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the following equation.\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; \"In the experiment the student used an expanded foam polystyrene cup with a plastic lid through which a thermometer and a plastic stirrer were inserted, as shown on the right. The student first added 50 cm³ of 1.0 M HCl solution at room temperature to the polystyrene cup and then quickly added 50 cm³ of 1.0 M NaOH solution, also at room temperature, and having lowered the lid stirred the mixture while observing the thermometer. The temperature of the mixture rose rapidly by 6.8 K and then began to fall very slowly.\"; on the right, a drawing of a long thermometer and a bent grey stirrer standing through two holes of a flat lid, raised above a cup with liquid in its foot, both reaching down into the liquid; then \"(d) Calculate\" and \"(ii) the heat in kJ produced in the reaction mixture by the neutralisation reaction, assuming the density of the resultant NaCl solution is 1.0 g cm⁻³ and the specific heat capacity of the solution is 4.2 kJ kg⁻¹ K⁻¹,\"",
+  "questionRef": "2023 HL Q3(d)(ii)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q3d-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2023 HL Q3(d)(iii): \"3. A student carried out an experiment to measure the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the following equation.\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; \"In the experiment the student used an expanded foam polystyrene cup with a plastic lid through which a thermometer and a plastic stirrer were inserted, as shown on the right. The student first added 50 cm³ of 1.0 M HCl solution at room temperature to the polystyrene cup and then quickly added 50 cm³ of 1.0 M NaOH solution, also at room temperature, and having lowered the lid stirred the mixture while observing the thermometer. The temperature of the mixture rose rapidly by 6.8 K and then began to fall very slowly.\"; on the right, a drawing of a long thermometer and a bent grey stirrer standing through two holes of a flat lid, raised above a cup with liquid in its foot, both reaching down into the liquid; then \"(d) Calculate\" and \"(iii) the value in kJ mol⁻¹ of ΔH, the heat of reaction for the neutralisation reaction described by the equation above, using the data given.\"",
+  "questionRef": "2023 HL Q3(d)(iii)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q4k-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2023 HL Q4(k): \"Real manuka honey from New Zealand, considered to have exceptional taste, is supplied with certification of authenticity. Correct to one significant figure, calculate the minimum number of molecules of 2-methoxybenzoic acid (Mr = 152) present in the jar containing 250 g of manuka honey shown on the right, certified to contain at least 1 × 10⁻³ g per kg of this substance.\", with, on the right, a photograph of a jar with a dark lid and a dark label reading \"NEW ZEALAND HONEY CO.\" over a white band reading \"MANUKA\" and \"RAW MANUKA HONEY\", and at its foot \"NET WT 8.8OZ (250g)\".",
+  "questionRef": "2023 HL Q4(k)"
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q9b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2023 OL Q9(b)(i): \"9. The apparatus shown below was used to investigate the rate of formation of carbon dioxide gas according to the following balanced equation.\" over \"2HCl + CaCO₃ → CaCl₂ + H₂O + CO₂\" in bold; \"A mass balance was zeroed with a few lumps of solid calcium carbonate, a flask containing excess hydrochloric acid at room temperature, and a cotton wool plug, standing on it. A stopwatch was started when the calcium carbonate was added to the acid and the cotton-wool plug placed in the mouth of the flask. The mass of carbon dioxide gas produced and lost from the flask was measured at one-minute intervals over an 8-minute period using the balance.\"; two drawings of a balance with \"Power\" and \"Tare\" buttons: on the left, captioned \"before\", reading \"0.00 g\", with lumps labelled \"CaCO₃\", a conical flask of liquid labelled \"HCl solution\" and a cotton wool plug standing on it; on the right, captioned \"during\", reading \"-0.26 g\", with the plug in the mouth of the flask and the lumps in the bubbling liquid; then \"A set of results obtained at room temperature in such an investigation is given in the table.\" over a table: \"Time (minutes)\" 0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0; \"Mass CO₂ (grams)\" 0, 0.26, 0.41, 0.50, 0.56, 0.59, 0.60, 0.60, 0.60; then \"(b) (i) Plot a graph (on graph paper) of the mass of CO₂ produced versus time (x-axis).\"",
+  "questionRef": "2023 OL Q9(b)(i)"
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q9c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2023 OL Q9(c): \"9. The apparatus shown below was used to investigate the rate of formation of carbon dioxide gas according to the following balanced equation.\" over \"2HCl + CaCO₃ → CaCl₂ + H₂O + CO₂\" in bold; \"A mass balance was zeroed with a few lumps of solid calcium carbonate, a flask containing excess hydrochloric acid at room temperature, and a cotton wool plug, standing on it. A stopwatch was started when the calcium carbonate was added to the acid and the cotton-wool plug placed in the mouth of the flask. The mass of carbon dioxide gas produced and lost from the flask was measured at one-minute intervals over an 8-minute period using the balance.\"; two drawings of a balance with \"Power\" and \"Tare\" buttons: on the left, captioned \"before\", reading \"0.00 g\", with lumps labelled \"CaCO₃\", a conical flask of liquid labelled \"HCl solution\" and a cotton wool plug standing on it; on the right, captioned \"during\", reading \"-0.26 g\", with the plug in the mouth of the flask and the lumps in the bubbling liquid; then \"A set of results obtained at room temperature in such an investigation is given in the table.\" over a table: \"Time (minutes)\" 0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0; \"Mass CO₂ (grams)\" 0, 0.26, 0.41, 0.50, 0.56, 0.59, 0.60, 0.60, 0.60; then \"(c) From your graph find\", \"(i) the time taken until the reaction was complete,\", \"(ii) the time taken for 0.30 g of CO₂ to be produced and lost from the flask,\" and \"(iii) the mass of CO₂ produced over the first 2.5 minutes.\"",
+  "questionRef": "2023 OL Q9(c)"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q5b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2025 HL Q5(b)(ii): \"(b) An atomic orbital diagram for a bromine atom in its ground state is shown on the right.\"; then the diagram: an upward arrow labelled \"Energy\" and a baseline, with boxes set at heights up the arrow, each labelled below: \"1s\" one box holding an up and a down arrow, at the foot; above it \"2s\" one box with a pair; \"2p\" three boxes, each with a pair; \"3s\" one box with a pair; \"3p\" three boxes, each with a pair; \"4s\" one box with a pair; \"3d\" five boxes, each with a pair; \"4p\" three boxes, two with a pair and one with a single up arrow; and at the top \"5s\" one empty box; then \"(ii) Draw the shape of the atomic orbital of lowest energy in a bromine atom in its ground state.\"",
+  "questionRef": "2025 HL Q5(b)(ii)"
+ },
+ {
+  "file": "chemistry-2026-OL-paper-q2c-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2026 OL Q2(c)(ii): \"2. A student filled the piece of apparatus labelled A, shown on the right, with a solution of 0.2 M hydrochloric acid (HCl) and titrated it against 25 cm³ portions of a sodium hydroxide (NaOH) solution of unknown concentration. An approximate titration was carried out first and then two accurate titrations were carried out.\", with, on the right, a drawing of a long graduated tube with a tap near its narrow foot, labelled \"A\" (the asks of (a) and (b), printed beside it, are whited out); then \"The titration reaction is described by the following balanced chemical equation:\" over \"HCl + NaOH → NaCl + H₂O\" in bold; \"The results of the titration are shown in the table below.\" over a table: \"Approximate titration\" 27.2 cm³, \"First accurate titration\" 26.5 cm³, \"Second accurate titration\" 26.6 cm³; then \"(ii) Calculate the concentration of the NaOH, in moles per litre.\"",
+  "questionRef": "2026 OL Q2(c)(ii)"
  }
 ]

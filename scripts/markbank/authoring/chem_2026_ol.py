@@ -88,6 +88,12 @@ C.fixed([k('2', 'c', 'ii')], 'chem-4-1', 'concentration-in-moles-per-litre', ste
                       'fraction, ÷ standing for its bar.',
                    2: 'The scheme prints this line as (M)(25) over 1 // 5.31 × 10⁻³ over 25, '
                       '× 1000; its own print is shown with the answer.'})
+# Its only figure is the scheme's working, held back until the reveal, while its stem points at the
+# burette "shown on the right" and at "the table below", whose titres the concentration is worked
+# from (the table is a picture on this card's sibling (c)(i), so its numbers are not in the stem).
+# The paper's own print is the question: the opening paragraph with the burette beside it ((a) and
+# (b), printed beside the burette, whited out), the equation and the table, then (c)(ii).
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q2c-ii-print'
 C.fixed([k('2', 'c', 'iii')], 'chem-4-1', 'concentration-in-grams-per-litre', stem=Q2_STEM,
         figure=FIG + 'paper-q2',
         fixes={'0.21 ×40=8.4 −8.5 (g)': '0.21 × 40 = 8.4 − 8.5 (g)'})

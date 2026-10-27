@@ -903,7 +903,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
     id: "chem-2021-ol-q9-a", topicId: "chem-3-2", conceptId: "rate-of-reaction-definition",
     section: "B", questionRef: "2021 OL Q9(a)",
-    stem: "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table.",
     questionText: "What is meant by the rate of a chemical reaction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -4275,6 +4274,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "catalyst initially in neck of flask lying on its side", marks: null, contextNote: "The scheme gives this point and the next as one pair of three, with \"or\" between them: \"catalyst and peroxide initially separated using small test tube // disturb to mix catalyst and solution\", or \"open (replace, insert) stopper // add catalyst quickly.\"; its own print is shown with the answer.", openList: true },
     { id: "r-4", kind: "point", verbatim: "rotate flask so combine catalyst with solution", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-OL-paper-q3a-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q3a-print.png",
+          "srcHash": "f608c4c90747296530ecad96730f4b12",
+          "alt": "The paper's own print of 2022 OL Q3(a): \"3. Solutions of hydrogen peroxide (H₂O₂) are unstable and decompose according to the following balanced equation:\" over \"2H₂O₂ → 2H₂O + O₂\" in bold; \"A student measured the rate of decomposition, in the presence of a catalyst, of a hydrogen peroxide solution that had been in storage for some time. The student measured 25 cm³ of the hydrogen peroxide solution into a flask and, having added a small quantity of a suitable catalyst, recorded the volume of oxygen collected at intervals over several minutes using the apparatus shown below.\"; then a drawing: a stoppered conical flask labelled \"H₂O₂ solution and catalyst\", with solid drawn lying at its bottom, a tube labelled \"flexible tubing\" running from its stopper down into a trough of water and up into an upturned graduated cylinder standing in the water, the gas in it labelled \"O₂\", and beside them a digital stopwatch reading \"00:00\" with a \"START/STOP\" button; then \"(a) (i) Identify a suitable catalyst for the decomposition of H₂O₂.\", \"(ii) Describe the appearance of the catalyst.\" and \"(iii) Explain how the catalyst could have been added to the hydrogen peroxide solution in the flask without loss of oxygen gas.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-OL-scheme-q3a-iii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-scheme-q3a-iii.png",
@@ -6254,7 +6261,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
     id: "chem-2023-ol-q2-d-iii", topicId: "chem-4-1", conceptId: "concentration-of-hcl-from-the-titration",
     section: "A", questionRef: "2023 OL Q2(d)(iii)",
-    stem: "A student titrated 25.0 cm³ portions of a 0.05 M solution of sodium carbonate (Na₂CO₃) with a solution of hydrochloric acid (HCl) of unknown concentration. A burette was used to add the HCl to the Na₂CO₃ solution in a conical flask until an indicator showed that the end point had been reached. This procedure was repeated a number of times. Some pieces of apparatus used to carry out the titration are shown below. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ The volumes of HCl required to neutralise 25.0 cm³ of the 0.05 M sodium carbonate solution are given in the table. Rough titration First accurate titration Second accurate titration 23.1 cm³ 22.5 cm³ 22.4 cm³",
+    stem: "A student titrated 25.0 cm³ portions of a 0.05 M solution of sodium carbonate (Na₂CO₃) with a solution of hydrochloric acid (HCl) of unknown concentration. A burette was used to add the HCl to the Na₂CO₃ solution in a conical flask until an indicator showed that the end point had been reached. This procedure was repeated a number of times. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ The volumes of HCl required to neutralise 25.0 cm³ of the 0.05 M sodium carbonate solution are given in the table. Rough titration First accurate titration Second accurate titration 23.1 cm³ 22.5 cm³ 22.4 cm³",
     questionText: "Calculate the concentration, in moles per litre, of the HCl solution.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -6348,6 +6355,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "7 points other than (0, 0) correctly plotted on graph paper", marks: 3, openList: true },
     { id: "r-5", kind: "point", verbatim: "curve drawn through (very close to) points and origin", marks: 3, contextNote: "The scheme adds: [Points joined by straight lines not acceptable.] [Axes reversed acceptable.]", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q9b-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q9b-i-print.png",
+          "srcHash": "9e2753e464dbbd4d1fbaeb0b11913f97",
+          "alt": "The paper's own print of 2023 OL Q9(b)(i): \"9. The apparatus shown below was used to investigate the rate of formation of carbon dioxide gas according to the following balanced equation.\" over \"2HCl + CaCO₃ → CaCl₂ + H₂O + CO₂\" in bold; \"A mass balance was zeroed with a few lumps of solid calcium carbonate, a flask containing excess hydrochloric acid at room temperature, and a cotton wool plug, standing on it. A stopwatch was started when the calcium carbonate was added to the acid and the cotton-wool plug placed in the mouth of the flask. The mass of carbon dioxide gas produced and lost from the flask was measured at one-minute intervals over an 8-minute period using the balance.\"; two drawings of a balance with \"Power\" and \"Tare\" buttons: on the left, captioned \"before\", reading \"0.00 g\", with lumps labelled \"CaCO₃\", a conical flask of liquid labelled \"HCl solution\" and a cotton wool plug standing on it; on the right, captioned \"during\", reading \"-0.26 g\", with the plug in the mouth of the flask and the lumps in the bubbling liquid; then \"A set of results obtained at room temperature in such an investigation is given in the table.\" over a table: \"Time (minutes)\" 0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0; \"Mass CO₂ (grams)\" 0, 0.26, 0.41, 0.50, 0.56, 0.59, 0.60, 0.60, 0.60; then \"(b) (i) Plot a graph (on graph paper) of the mass of CO₂ produced versus time (x-axis).\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2023-OL-scheme-q9b-i",
           "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-scheme-q9b-i.png",
@@ -6373,6 +6388,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "1.1 – 1.3 minute", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "0.41 – 0.49 g CO₂", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q9c-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q9c-print.png",
+          "srcHash": "f099504d552348f40cc87641c21ba357",
+          "alt": "The paper's own print of 2023 OL Q9(c): \"9. The apparatus shown below was used to investigate the rate of formation of carbon dioxide gas according to the following balanced equation.\" over \"2HCl + CaCO₃ → CaCl₂ + H₂O + CO₂\" in bold; \"A mass balance was zeroed with a few lumps of solid calcium carbonate, a flask containing excess hydrochloric acid at room temperature, and a cotton wool plug, standing on it. A stopwatch was started when the calcium carbonate was added to the acid and the cotton-wool plug placed in the mouth of the flask. The mass of carbon dioxide gas produced and lost from the flask was measured at one-minute intervals over an 8-minute period using the balance.\"; two drawings of a balance with \"Power\" and \"Tare\" buttons: on the left, captioned \"before\", reading \"0.00 g\", with lumps labelled \"CaCO₃\", a conical flask of liquid labelled \"HCl solution\" and a cotton wool plug standing on it; on the right, captioned \"during\", reading \"-0.26 g\", with the plug in the mouth of the flask and the lumps in the bubbling liquid; then \"A set of results obtained at room temperature in such an investigation is given in the table.\" over a table: \"Time (minutes)\" 0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0; \"Mass CO₂ (grams)\" 0, 0.26, 0.41, 0.50, 0.56, 0.59, 0.60, 0.60, 0.60; then \"(c) From your graph find\", \"(i) the time taken until the reaction was complete,\", \"(ii) the time taken for 0.30 g of CO₂ to be produced and lost from the flask,\" and \"(iii) the mass of CO₂ produced over the first 2.5 minutes.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2023-OL-scheme-q9b-i",
           "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-scheme-q9b-i.png",
@@ -6848,6 +6871,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "(M)(25)", marks: 2, contextNote: "The scheme prints this line as (M)(25) over 1 // 5.31 × 10⁻³ over 25, × 1000; its own print is shown with the answer.", openList: true },
     { id: "r-4", kind: "point", verbatim: "= 0.21 (moles per litre)", marks: 2, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2026-OL-paper-q2c-ii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2026-OL-paper-q2c-ii-print.png",
+          "srcHash": "9f8ce701b9dafac09117171e49f4eb12",
+          "alt": "The paper's own print of 2026 OL Q2(c)(ii): \"2. A student filled the piece of apparatus labelled A, shown on the right, with a solution of 0.2 M hydrochloric acid (HCl) and titrated it against 25 cm³ portions of a sodium hydroxide (NaOH) solution of unknown concentration. An approximate titration was carried out first and then two accurate titrations were carried out.\", with, on the right, a drawing of a long graduated tube with a tap near its narrow foot, labelled \"A\" (the asks of (a) and (b), printed beside it, are whited out); then \"The titration reaction is described by the following balanced chemical equation:\" over \"HCl + NaOH → NaCl + H₂O\" in bold; \"The results of the titration are shown in the table below.\" over a table: \"Approximate titration\" 27.2 cm³, \"First accurate titration\" 26.5 cm³, \"Second accurate titration\" 26.6 cm³; then \"(ii) Calculate the concentration of the NaOH, in moles per litre.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2026 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2026-OL-scheme-q2c-ii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2026-OL-scheme-q2c-ii.png",

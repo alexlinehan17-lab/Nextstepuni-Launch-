@@ -218,11 +218,17 @@ print_question('paper-q8e-print')
 Q9 = FIG + 'paper-q9'
 _q9a = P.items(k('9', 'a'))
 assert _q9a[0].cell == '[6]', _q9a
+# Its only figure is the scheme's working, held back until the reveal, so the lead-in's "The
+# apparatus shown below ..." would point at nothing. Nothing in (a) depends on the lead-in: it asks
+# what the rate of a chemical reaction means. The lead-in is left out of this card's stem (left out
+# whole: every sentence after the first runs on from the apparatus and the table it names).
+assert C.context(k('9', 'a')).startswith('The apparatus shown below was used to investigate the rate of '
+                                         'formation of hydrogen gas'), C.context(k('9', 'a'))
 C.add([k('9', 'a')], None, None, [C.lifted(
     'r-1', 'change in concentration per unit time (rate of change of concentration) of one '
            'reactant or product', 6,
     'The scheme also accepts the change in concentration over time written as a fraction; its own '
-    'print is shown with the answer.')], figure=S + 'q9a')
+    'print is shown with the answer.')], figure=S + 'q9a', stem='')
 C.fixed([k('9', 'b', 'i')], None, None, figure=S + 'q9b-i')
 print_question('paper-q9b-i-print')
 C.fixed([k('9', 'b', 'ii')], None, None, figure=Q9)

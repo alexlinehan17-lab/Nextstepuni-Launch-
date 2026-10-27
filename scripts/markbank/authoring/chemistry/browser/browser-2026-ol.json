@@ -25,8 +25,9 @@
  },
  {
   "id": "chem-2026-ol-q2-c-ii",
-  "ask": "in moles per litre",
+  "ask": "",
   "answer": "0.21 (moles per litre)",
+  "figure": true,
   "solution": true
  },
  {

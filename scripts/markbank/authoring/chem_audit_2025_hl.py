@@ -88,7 +88,16 @@ C.menu([('2', 'b', 'ii', None)], None, None, figure=Q2)
 C.fixed([('2', 'b', 'iii', None)], None, None, figure=Q2)
 C.fixed([('2', 'b', 'iv', None)], None, None, figure=Q2)
 C.fixed([('2', 'c', 'i', None)], None, None, figure=Q2)
-C.drawn([('2', 'c', 'ii', None)], 'chem-4-2', 'structure-of-eugenol', S + 'q2c-ii')
+# (c)(ii): its only figure is the scheme's drawing, held back until the reveal, so the lead-in's
+# second sentence "... using apparatus like that shown below." would point at nothing. Nothing in
+# (c)(ii) depends on the apparatus: it asks for the structure of eugenol. That sentence is left out
+# of this card's stem.
+_Q2_LEAD = C.context(('2', 'c', 'ii', None))
+_Q2_APPARATUS = ('Clove oil can be extracted from dried clove buds by steam distillation using apparatus '
+                 'like that shown below.')
+assert _Q2_LEAD == 'Clove oil is an essential oil with a wide number of uses. ' + _Q2_APPARATUS, _Q2_LEAD
+C.drawn([('2', 'c', 'ii', None)], 'chem-4-2', 'structure-of-eugenol', S + 'q2c-ii',
+        stem=_Q2_LEAD[:-len(_Q2_APPARATUS)].strip())
 C.fixed([('2', 'c', 'iii', None)], None, None, figure=Q2)
 C.ordered([('2', 'c', 'iv', None)], None, None, figure=Q2)
 
@@ -125,6 +134,11 @@ for roman in ('i', 'ii', 'iii', 'iv'):
 Q5B = FIG + 'paper-q5b'
 C.fixed([('5', 'b', 'i', None)], None, None, figure=Q5B)
 C.drawn([('5', 'b', 'ii', None)], 'chem-1-2', 'shape-of-an-s-orbital', S + 'q5b-ii')
+# Its only figure is the scheme's drawing, held back until the reveal, while its stem is the one
+# sentence "An atomic orbital diagram for a bromine atom in its ground state is shown on the
+# right.", and the orbital of lowest energy is the one that diagram sets lowest (1s). The paper's
+# own print is the question: (b)'s opening sentence, the diagram, then (ii).
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q5b-ii-print'
 for roman in ('iii', 'iv', 'v'):
     C.fixed([('5', 'b', roman, None)], None, None, figure=Q5B)
 C.ordered([('5', 'c', r, None) for r in ('i', 'ii', 'iii')], None, None, cid='q5-c')

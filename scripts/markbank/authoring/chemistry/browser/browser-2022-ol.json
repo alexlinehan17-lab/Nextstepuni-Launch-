@@ -3,7 +3,7 @@
  {"id": "chem-2022-ol-q1-b", "ask": "was the base added to the conical flask", "answer": "colourless / pale yellow", "figure": true},
  {"id": "chem-2022-ol-q2-b", "ask": "Describe how all the sodium carbonate solution in the beaker was transferred", "answer": "add rinsings of beaker to flask"},
  {"id": "chem-2022-ol-q2-f", "ask": "Calculate the concentration, in moles per litre, of the HCl solution used.", "answer": "0.124 moles HCl per litre", "solution": true},
- {"id": "chem-2022-ol-q3-a", "ask": "Explain how the catalyst could have been added", "answer": "rotate flask so combine catalyst with solution", "solution": true},
+ {"id": "chem-2022-ol-q3-a", "ask": "", "answer": "rotate flask so combine catalyst with solution", "figure": true, "solution": true},
  {"id": "chem-2022-ol-q5-c-i-ii", "ask": "in the main energy levels in an atom of sodium,", "answer": "1 / 3s¹"},
  {"id": "chem-2022-ol-q6-b", "ask": "Give the IUPAC names for compounds A, C and E.", "answer": "E: methylbenzene", "figure": true},
  {"id": "chem-2022-ol-q6-f-i", "ask": "Draw the structural formula for the second member", "answer": "its own print is shown with the answer", "solution": true},

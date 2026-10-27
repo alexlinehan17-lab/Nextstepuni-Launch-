@@ -100,9 +100,17 @@ C.fixed([k('3', 'c', 'i')], 'chem-3-1', 'why-the-temperature-rises-on-neutralisa
         cid='q3-c-fig', figure=Q3)
 C.fixed([k('3', 'c', 'ii')], None, None, figure=Q3)
 C.fixed([k('3', 'c', 'iii')], None, None, figure=Q3)
+# (d)(i)-(iii): the only figure is the scheme's working, held back until the reveal, while the
+# stem points at the cup and thermometer "as shown on the right" and gives the volumes, the
+# concentrations and the temperature rise the answers use. The paper's own print is the question:
+# the lead-in and equation with the cup beside them ((a)-(c), printed beside the cup, whited out),
+# then "(d) Calculate" and the part's own ask.
 C.answer_only([k('3', 'd', 'i')], None, None, S + 'q3d-i')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3d-i-print'
 C.answer_only([k('3', 'd', 'ii')], None, None, S + 'q3d-ii')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3d-ii-print'
 C.route([k('3', 'd', 'iii')], None, None, figure=S + 'q3d-iii')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q3d-iii-print'
 C.fixed([k('3', 'e', 'i')], None, None, figure=Q3)
 C.fixed([k('3', 'e', 'ii')], None, None, figure=Q3)
 
@@ -120,6 +128,10 @@ C.drawn([k('4', 'i')], 'chem-4-2', 'structure-of-glycerol', S + 'q4i',
         notes=Q4_NOTE + ' The scheme\'s print sets out the atoms in place without the lines for their bonds.')
 C.ordered([k('4', 'j', 'i'), k('4', 'j', 'ii')], None, None, cid='q4-j', notes=Q4_NOTE)
 C.answer_only([k('4', 'k')], None, None, S + 'q4k', cid='q4-k-fig', notes=Q4_NOTE)
+# Its only figure is the scheme's working, held back until the reveal, while the ask itself names
+# "the jar containing 250 g of manuka honey shown on the right". The paper's own print is the
+# question: (k)'s words with the photograph of the jar beside them.
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q4k-print'
 C.ordered([ka('4', 'l', None, 'A')], None, None, cid='q4-l-a', notes=Q4_NOTE)
 C.fixed([ka('4', 'l', None, 'B')], None, None, cid='q4-l-b', notes=Q4_NOTE)
 

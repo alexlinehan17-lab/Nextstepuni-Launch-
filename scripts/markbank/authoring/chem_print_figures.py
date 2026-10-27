@@ -90,6 +90,12 @@ CROPS = {
         ('scheme-q6c-i', 'scheme', 11, (110, 378.5, 260, 401)),
         ('scheme-q6d-ii', 'scheme', 11, (109, 531.5, 320, 609)),
         ('scheme-q9a-ii', 'scheme', 14, (108, 178.5, 330, 217)),
+        # Q2(c)(ii): the question's print -- the opening paragraph with the burette
+        # beside it ((a) and (b), printed beside the burette's lower half, whited
+        # out: MASKS), the equation and the table of titres, then (c)(ii) -- as the
+        # card's question picture; the scheme's working is its answer.
+        ('paper-q2c-ii-print', 'paper-panels', 3, ((24, 52, 545, 270), (24, 292, 545, 430),
+                                                  (24, 469, 545, 489))),
     ],
     # 2025 Higher: corrected in place by chem_audit_2025_hl.py. Its paper
     # crops also say which printed words are a picture's labels rather than
@@ -108,6 +114,11 @@ CROPS = {
         ('paper-q8', 'paper', 9, (110, 76, 484, 200)),
         ('paper-q11c-eq', 'paper', 13, (255, 471, 372, 496)),
         ('paper-q11d-b', 'paper', 14, (384, 380, 545, 603)),
+        # Q5(b)(ii): the question's print -- (b)'s opening sentence, the orbital
+        # diagram it points at (the rectangle of paper-q5b), then (ii) -- as the
+        # card's question picture; the scheme's drawing is its answer.
+        ('paper-q5b-ii-print', 'paper-panels', 6, ((52, 224, 297, 271), (298, 228, 545, 568),
+                                                   (80, 295, 297, 342))),
         ('scheme-q2c-ii', 'scheme', 7, (105, 511.5, 200, 614)),
         ('scheme-q4g', 'scheme', 10, (80, 351.5, 320, 403.5)),
         ('scheme-q5b-ii', 'scheme', 11, (105, 365, 145, 396)),
@@ -177,6 +188,22 @@ _load_sitting_crops()
 
 
 MASKS = {
+    # 2026 OL Q2(c)(ii): the print's first panel is the question's opening paragraph with the burette
+    # beside it, down to the burette's foot (paper page 3, y 270), so (a) and (b), printed beside its
+    # lower half, are whited out with their marks "(15)" and "(9)" (x 57-497, y 138-268; dark pixels
+    # 69-977 x 181-449 of the print). The paragraph's pixels end at row 155; the burette's start at
+    # column 999.
+    'chemistry-2026-OL-paper-q2c-ii-print.png': [(60, 170, 990, 455)],
+    # 2023 HL Q3(d)(i)-(iii): each print's first panel is the question's lead-in and equation with the
+    # cup and thermometer beside them, down to the picture's foot (paper page 4, y 523), so (a), (b) and
+    # (c), printed beside the picture's lower half, are whited out with their marks "(5)", "(6)" and
+    # "(9)" (x 85-374, y 309-518; dark pixels 70-658 x 537-969 of each print). The lead-in's pixels
+    # end at row 498; the picture's (its stirrer) start at column 716. (iii)'s print also holds (d)'s
+    # mark "(18)" at the end of its last line (y 633-645; dark pixels 975-1012 x 1092-1113), whited out;
+    # the line above it ends at row 1078.
+    'chemistry-2023-HL-paper-q3d-i-print.png': [(60, 520, 690, 980)],
+    'chemistry-2023-HL-paper-q3d-ii-print.png': [(60, 520, 690, 980)],
+    'chemistry-2023-HL-paper-q3d-iii-print.png': [(60, 520, 690, 980), (965, 1086, 1034, 1123)],
     'chemistry-2026-HL-paper-q4i.png': [(0, 350, 20, 386), (0, 489, 92, 515)],
     # 2012 HL Q11(a)(ii): the plum pudding drawing's label "electron (negative charge)" runs to the
     # right margin, where (ii)'s cell "(2 × 3)" prints beside the drawing (scheme page 16, x 515-546,

@@ -5748,7 +5748,6 @@
   "section": "B",
   "questionRef": "2021 OL Q9(a)",
   "questionText": "What is meant by the rate of a chemical reaction?",
-  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table.",
   "figureKey": "chemistry-2021-OL-scheme-q9a",
   "tariffModel": {
    "kind": "fixed"
@@ -7393,7 +7392,8 @@
     "openList": true,
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2023-HL-paper-q3d-i-print"
  },
  {
   "id": "chem-2023-hl-q3-d-ii",
@@ -7420,7 +7420,8 @@
     "openList": true,
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2023-HL-paper-q3d-ii-print"
  },
  {
   "id": "chem-2023-hl-q3-d-iii",
@@ -7456,7 +7457,8 @@
     "contextNote": "The scheme adds: [–57.1 to –58 kJ mol⁻¹] [–1 if incorrect rounding results in candidate’s final answer lying outside given range, but deduction to be made once only in (d).] [Ignore negative signs used in work in (ii), but final answer in (iii) must be negative.]"
    }
   ],
-  "notes": "The scheme gives the answer, –57.1 to –58 kJ mol⁻¹, priced [6], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer."
+  "notes": "The scheme gives the answer, –57.1 to –58 kJ mol⁻¹, priced [6], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer.",
+  "questionFigureKey": "chemistry-2023-HL-paper-q3d-iii-print"
  },
  {
   "id": "chem-2023-hl-q3-e-i",
@@ -21051,7 +21053,8 @@
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
    }
   ],
-  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\"",
+  "questionFigureKey": "chemistry-2023-HL-paper-q4k-print"
  },
  {
   "id": "chem-2023-ol-q1-a-fig",
@@ -22149,7 +22152,8 @@
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
    }
   ],
-  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\"",
+  "questionFigureKey": "chemistry-2022-HL-paper-q4k-print"
  },
  {
   "id": "chem-2022-hl-q11-c-ii-iv-fig",
@@ -23963,7 +23967,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme prices these points together as [9 + 5 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
+  "notes": "The scheme prices these points together as [9 + 5 + 2 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2022-OL-paper-q3a-print"
  },
  {
   "id": "chem-2022-ol-q3-c",
@@ -27146,7 +27151,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2022-HL-paper-q3c-i-print"
  },
  {
   "id": "chem-2022-hl-q3-c-ii",
@@ -27174,7 +27180,8 @@
     "contextNote": "The scheme prints total volume over total time as a fraction; ÷ stands for its bar."
    }
   ],
-  "notes": "The scheme gives the answer, 19 – 20 cm³ O₂ per minute, priced [3], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer."
+  "notes": "The scheme gives the answer, 19 – 20 cm³ O₂ per minute, priced [3], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer.",
+  "questionFigureKey": "chemistry-2022-HL-paper-q3c-ii-print"
  },
  {
   "id": "chem-2022-hl-q3-c-iii",
@@ -27209,7 +27216,8 @@
     "openList": true,
     "contextNote": "Above it the scheme sets \"any two points from tangent read correctly, e.g. (0, 40) and (8.2, 120) / rise and run correctly read from tangent, e.g. 80 cm³, 8.2 minutes\", and below it the working, 120 − 40 over 8.2 − 0 = 80 over 8.2 = 9.8, priced (3); its own print is shown with the answer. It adds: [Tangent must be drawn for work on instantaneous rate to be awarded full marks.] [Last 3 marks can be awarded for rate within stated range with no tangent drawn or consequentially for work done on a poor tangent or a tangent placed at an incorrect time.]"
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2022-HL-paper-q3c-iii-print"
  },
  {
   "id": "chem-2022-hl-q8-b-iv",
@@ -28788,7 +28796,7 @@
   "section": "A",
   "questionRef": "2023 OL Q2(d)(iii)",
   "questionText": "Calculate the concentration, in moles per litre, of the HCl solution.",
-  "stem": "A student titrated 25.0 cm³ portions of a 0.05 M solution of sodium carbonate (Na₂CO₃) with a solution of hydrochloric acid (HCl) of unknown concentration. A burette was used to add the HCl to the Na₂CO₃ solution in a conical flask until an indicator showed that the end point had been reached. This procedure was repeated a number of times. Some pieces of apparatus used to carry out the titration are shown below. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ The volumes of HCl required to neutralise 25.0 cm³ of the 0.05 M sodium carbonate solution are given in the table. Rough titration First accurate titration Second accurate titration 23.1 cm³ 22.5 cm³ 22.4 cm³",
+  "stem": "A student titrated 25.0 cm³ portions of a 0.05 M solution of sodium carbonate (Na₂CO₃) with a solution of hydrochloric acid (HCl) of unknown concentration. A burette was used to add the HCl to the Na₂CO₃ solution in a conical flask until an indicator showed that the end point had been reached. This procedure was repeated a number of times. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ The volumes of HCl required to neutralise 25.0 cm³ of the 0.05 M sodium carbonate solution are given in the table. Rough titration First accurate titration Second accurate titration 23.1 cm³ 22.5 cm³ 22.4 cm³",
   "figureKey": "chemistry-2023-OL-scheme-q2d-iii",
   "tariffModel": {
    "kind": "fixed"
@@ -28976,7 +28984,8 @@
     "openList": true,
     "contextNote": "The scheme adds: [Points joined by straight lines not acceptable.] [Axes reversed acceptable.]"
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2023-OL-paper-q9b-i-print"
  },
  {
   "id": "chem-2023-ol-q9-c",
@@ -29021,7 +29030,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme prices these points together as [6 + 6 + 3] without saying which point earns which part, so no per-point value is shown."
+  "notes": "The scheme prices these points together as [6 + 6 + 3] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2023-OL-paper-q9c-print"
  },
  {
   "id": "chem-2023-ol-q3-a-ii",
@@ -34945,7 +34955,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2026-OL-paper-q2c-ii-print"
  },
  {
   "id": "chem-2026-ol-q2-c-iii",
@@ -37511,7 +37522,7 @@
   "section": "A",
   "questionRef": "2025 HL Q2(c)(ii)",
   "questionText": "Draw the structure of a molecule of eugenol.",
-  "stem": "Clove oil is an essential oil with a wide number of uses. Clove oil can be extracted from dried clove buds by steam distillation using apparatus like that shown below.",
+  "stem": "Clove oil is an essential oil with a wide number of uses.",
   "figureKey": "chemistry-2025-HL-scheme-q2c-ii",
   "tariffModel": {
    "kind": "fixed"
@@ -37634,7 +37645,8 @@
     "openList": true,
     "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer."
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2025-HL-paper-q5b-ii-print"
  },
  {
   "id": "chem-2025-hl-q7-a-ii",
@@ -42684,7 +42696,8 @@
     "openList": true,
     "contextNote": "The scheme adds: [Pairs of points connected with straight lines do not give a smooth curve.] [Deduct (3) for each of the following: not on graph paper more than one point plotted inaccurately.] [Time versus volume graph acceptable.]"
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2022-HL-paper-q3c-print"
  },
  {
   "id": "chem-2022-hl-q3-d-ii",

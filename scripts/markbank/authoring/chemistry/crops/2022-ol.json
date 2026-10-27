@@ -30,5 +30,6 @@
  ["scheme-q11db-iii", "scheme", 22, [95, 203, 550, 398]],
  ["q11db-iii-table", "scheme-labels", 22, [96, 218, 547, 382]],
  ["scheme-q11db-iv", "scheme", 22, [95, 406, 545, 758]],
- ["q11db-iv-table", "scheme-labels", 22, [100, 422, 540, 725]]
+ ["q11db-iv-table", "scheme-labels", 22, [100, 422, 540, 725]],
+ ["paper-q3a-print", "paper-panels", 4, [[52, 52, 545, 346], [52, 354, 512, 424]]]
 ]

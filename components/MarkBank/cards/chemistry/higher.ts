@@ -2650,6 +2650,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.05 moles", marks: 3, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-HL-paper-q3d-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-q3d-i-print.png",
+          "srcHash": "013384716874c64fd61cc212b97994b4",
+          "alt": "The paper's own print of 2023 HL Q3(d)(i): \"3. A student carried out an experiment to measure the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the following equation.\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; \"In the experiment the student used an expanded foam polystyrene cup with a plastic lid through which a thermometer and a plastic stirrer were inserted, as shown on the right. The student first added 50 cm³ of 1.0 M HCl solution at room temperature to the polystyrene cup and then quickly added 50 cm³ of 1.0 M NaOH solution, also at room temperature, and having lowered the lid stirred the mixture while observing the thermometer. The temperature of the mixture rose rapidly by 6.8 K and then began to fall very slowly.\"; on the right, a drawing of a long thermometer and a bent grey stirrer standing through two holes of a flat lid, raised above a cup with liquid in its foot, both reaching down into the liquid; then \"(d) Calculate\" and \"(i) the number of moles of HCl neutralised in the polystyrene cup,\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2023-HL-scheme-q3d-i",
           "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-scheme-q3d-i.png",
@@ -2673,6 +2681,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "2.856 kJ [2.856 to 2.9 kJ]", marks: 9, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-HL-paper-q3d-ii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-q3d-ii-print.png",
+          "srcHash": "52f90f087d9742661b91fcdac2a26e30",
+          "alt": "The paper's own print of 2023 HL Q3(d)(ii): \"3. A student carried out an experiment to measure the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the following equation.\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; \"In the experiment the student used an expanded foam polystyrene cup with a plastic lid through which a thermometer and a plastic stirrer were inserted, as shown on the right. The student first added 50 cm³ of 1.0 M HCl solution at room temperature to the polystyrene cup and then quickly added 50 cm³ of 1.0 M NaOH solution, also at room temperature, and having lowered the lid stirred the mixture while observing the thermometer. The temperature of the mixture rose rapidly by 6.8 K and then began to fall very slowly.\"; on the right, a drawing of a long thermometer and a bent grey stirrer standing through two holes of a flat lid, raised above a cup with liquid in its foot, both reaching down into the liquid; then \"(d) Calculate\" and \"(ii) the heat in kJ produced in the reaction mixture by the neutralisation reaction, assuming the density of the resultant NaCl solution is 1.0 g cm⁻³ and the specific heat capacity of the solution is 4.2 kJ kg⁻¹ K⁻¹,\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2023-HL-scheme-q3d-ii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-scheme-q3d-ii.png",
@@ -2697,6 +2713,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "2.856 ÷ 0.05 = 57.12 kJ mol⁻¹", marks: 3, openList: true },
     { id: "r-2", kind: "point", verbatim: "∆H = –57.12 kJ mol⁻¹", marks: 3, contextNote: "The scheme adds: [–57.1 to –58 kJ mol⁻¹] [–1 if incorrect rounding results in candidate’s final answer lying outside given range, but deduction to be made once only in (d).] [Ignore negative signs used in work in (ii), but final answer in (iii) must be negative.]", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-HL-paper-q3d-iii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-q3d-iii-print.png",
+          "srcHash": "60290f12f37528e6602dedc5817476ba",
+          "alt": "The paper's own print of 2023 HL Q3(d)(iii): \"3. A student carried out an experiment to measure the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the following equation.\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; \"In the experiment the student used an expanded foam polystyrene cup with a plastic lid through which a thermometer and a plastic stirrer were inserted, as shown on the right. The student first added 50 cm³ of 1.0 M HCl solution at room temperature to the polystyrene cup and then quickly added 50 cm³ of 1.0 M NaOH solution, also at room temperature, and having lowered the lid stirred the mixture while observing the thermometer. The temperature of the mixture rose rapidly by 6.8 K and then began to fall very slowly.\"; on the right, a drawing of a long thermometer and a bent grey stirrer standing through two holes of a flat lid, raised above a cup with liquid in its foot, both reaching down into the liquid; then \"(d) Calculate\" and \"(iii) the value in kJ mol⁻¹ of ΔH, the heat of reaction for the neutralisation reaction described by the equation above, using the data given.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2023-HL-scheme-q3d-iii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-scheme-q3d-iii.png",
@@ -7373,6 +7397,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "1 × 10¹⁸ per jar", marks: 6, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-HL-paper-q4k-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-q4k-print.png",
+          "srcHash": "bd8dc51a2318b85b83973213ed224aec",
+          "alt": "The paper's own print of 2023 HL Q4(k): \"Real manuka honey from New Zealand, considered to have exceptional taste, is supplied with certification of authenticity. Correct to one significant figure, calculate the minimum number of molecules of 2-methoxybenzoic acid (Mr = 152) present in the jar containing 250 g of manuka honey shown on the right, certified to contain at least 1 × 10⁻³ g per kg of this substance.\", with, on the right, a photograph of a jar with a dark lid and a dark label reading \"NEW ZEALAND HONEY CO.\" over a white band reading \"MANUKA\" and \"RAW MANUKA HONEY\", and at its foot \"NET WT 8.8OZ (250g)\".",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2023-HL-scheme-q4k",
           "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-scheme-q4k.png",
@@ -7706,6 +7738,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "72.0 mg", marks: 6, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-HL-paper-q4k-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q4k-print.png",
+          "srcHash": "36a3801b178574ee50214ced3099c15e",
+          "alt": "The paper's own print of 2022 HL Q4(k): \"The structure of aspirin is shown. Calculate the average daily dose (in mg) when a person took a total of 0.146 moles of ‘low dose’ aspirin over 365 days.\", then the structure printed beside it: a benzene ring drawn as a hexagon with a circle inside; on one ring carbon a \"C\" double-bonded to \"O\" and single-bonded to \"OH\"; on the next ring carbon an \"O\" bonded to a \"C\" that is single-bonded to \"CH₃\" and double-bonded to an \"O\" drawn below it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-HL-scheme-q4k",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-scheme-q4k.png",
@@ -8013,6 +8053,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "13 – 14 minutes", marks: 3, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-HL-paper-q3c-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q3c-i-print.png",
+          "srcHash": "ec7425a573e4a9b0099903b8f1a9d066",
+          "alt": "The paper's own print of 2022 HL Q3(c)(i): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\" and \"Use your graph to find\", then \"(i) the time taken for this reaction to be complete,\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-HL-scheme-q3c",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-scheme-q3c.png",
@@ -8036,6 +8084,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "total volume ÷ total time = 78 ÷ 4 = 19.5 cm³ O₂ per minute", marks: 3, contextNote: "The scheme prints total volume over total time as a fraction; ÷ stands for its bar.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-HL-paper-q3c-ii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q3c-ii-print.png",
+          "srcHash": "7a5464ca1eefc427e1b8a890f46e4193",
+          "alt": "The paper's own print of 2022 HL Q3(c)(ii): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\" and \"Use your graph to find\", then \"(ii) the average rate of the reaction over the first 4.0 minutes (in cm³ O₂ per minute at room temperature and pressure),\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-HL-scheme-q3c",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-scheme-q3c.png",
@@ -8060,6 +8116,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "good tangent drawn to plotted curve at 4 minutes", marks: 3, openList: true },
     { id: "r-2", kind: "point", verbatim: "slope = 9.8 cm³ O₂ per minute [8.8 – 12.2] cm³ O₂ per minute", marks: 3, contextNote: "Above it the scheme sets \"any two points from tangent read correctly, e.g. (0, 40) and (8.2, 120) / rise and run correctly read from tangent, e.g. 80 cm³, 8.2 minutes\", and below it the working, 120 − 40 over 8.2 − 0 = 80 over 8.2 = 9.8, priced (3); its own print is shown with the answer. It adds: [Tangent must be drawn for work on instantaneous rate to be awarded full marks.] [Last 3 marks can be awarded for rate within stated range with no tangent drawn or consequentially for work done on a poor tangent or a tangent placed at an incorrect time.]", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-HL-paper-q3c-iii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q3c-iii-print.png",
+          "srcHash": "4e1bf4d7c5f0e8792e0384943c215253",
+          "alt": "The paper's own print of 2022 HL Q3(c)(iii): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\" and \"Use your graph to find\", then \"(iii) the instantaneous rate of the reaction at 4.0 minutes (in cm³ O₂ per minute at room temperature and pressure).\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-HL-scheme-q3c-iii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-scheme-q3c-iii.png",
@@ -11193,7 +11257,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Higher Level — © State Examinations Commission.",
     id: "chem-2025-hl-q2-c-ii", topicId: "chem-4-2", conceptId: "structure-of-eugenol",
     section: "A", questionRef: "2025 HL Q2(c)(ii)",
-    stem: "Clove oil is an essential oil with a wide number of uses. Clove oil can be extracted from dried clove buds by steam distillation using apparatus like that shown below.",
+    stem: "Clove oil is an essential oil with a wide number of uses.",
     questionText: "Draw the structure of a molecule of eugenol.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -11288,6 +11352,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Draw the shape of the atomic orbital of lowest energy in a bromine atom in its ground state.", marks: 3, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2025-HL-paper-q5b-ii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2025-HL-paper-q5b-ii-print.png",
+          "srcHash": "3322d2ff7d9d2916a55f3bd5b5b0fdd5",
+          "alt": "The paper's own print of 2025 HL Q5(b)(ii): \"(b) An atomic orbital diagram for a bromine atom in its ground state is shown on the right.\"; then the diagram: an upward arrow labelled \"Energy\" and a baseline, with boxes set at heights up the arrow, each labelled below: \"1s\" one box holding an up and a down arrow, at the foot; above it \"2s\" one box with a pair; \"2p\" three boxes, each with a pair; \"3s\" one box with a pair; \"3p\" three boxes, each with a pair; \"4s\" one box with a pair; \"3d\" five boxes, each with a pair; \"4p\" three boxes, two with a pair and one with a single up arrow; and at the top \"5s\" one empty box; then \"(ii) Draw the shape of the atomic orbital of lowest energy in a bromine atom in its ground state.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2025 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2025-HL-scheme-q5b-ii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2025-HL-scheme-q5b-ii.png",
@@ -13133,6 +13205,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "careful plotting of points other than (0, 0)", marks: 3, openList: true },
     { id: "r-4", kind: "point", verbatim: "smooth curve of correct shape through origin", marks: 3, contextNote: "The scheme adds: [Pairs of points connected with straight lines do not give a smooth curve.] [Deduct (3) for each of the following: not on graph paper more than one point plotted inaccurately.] [Time versus volume graph acceptable.]", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-HL-paper-q3c-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q3c-print.png",
+          "srcHash": "74798e6c361f1477714c7742a232a029",
+          "alt": "The paper's own print of 2022 HL Q3(c): \"3. The rate of decomposition of a hydrogen peroxide solution using manganese(IV) oxide as a catalyst was investigated. A 25.0 cm³ volume of a hydrogen peroxide solution of suitable concentration decomposed in the presence of 0.5 g manganese(IV) oxide, which was in the form of a fine black powder, as illustrated. The volume of oxygen produced was monitored over time.\", with, on the right, a photograph of a heap of fine dark powder scattered outwards on a white ground; then \"(c) The volumes of oxygen collected at room temperature and pressure over 16 minutes, when the initial temperature of the hydrogen peroxide solution was 24 °C and the mass of catalyst used was 0.5 g, are recorded in the table below.\" over a table: \"Time (minutes)\" 0.0, 1.0, 3.0, 5.0, 8.0, 10.0, 12.0, 14.0, 16.0; \"Volume O₂ (cm³)\" 0, 30, 66, 88, 104, 109, 111, 112, 112; then \"Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-HL-scheme-q3c",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-scheme-q3c.png",
