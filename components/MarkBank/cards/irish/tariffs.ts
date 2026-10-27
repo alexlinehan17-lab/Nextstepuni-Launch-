@@ -117,7 +117,8 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       if (phraseStart >= match.index! + match[1].length) continue; // the price belongs to the opener itself
       // The phrase is the last clause before its price; what was printed before it is a direction.
       const raw = body.slice(phraseStart, match.index! + match[1].length);
-      const boundary = raw.search(/[.:;!?)]\s+(?=[A-ZÁÉÍÓÚ(])(?:[^.:;!?]|\([^)]*\))*$/);
+      // The alternatives are disjoint (a "(" is read by exactly one), so the scan is linear in the clause.
+      const boundary = raw.search(/[.:;!?)]\s+(?=[A-ZÁÉÍÓÚ(])(?:[^.:;!?(]|\([^)]*\)|\((?![^)]*\)))*$/);
       const clause = boundary >= 0 ? raw.slice(boundary).replace(/^[.:;!?)]\s+/, '') : raw;
       if (clause.length < raw.length) directions.push(stripMarker(raw.slice(0, raw.length - clause.length)));
       let phrase = stripMarker(clause);
