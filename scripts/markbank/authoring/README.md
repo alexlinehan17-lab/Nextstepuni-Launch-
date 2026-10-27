@@ -169,6 +169,14 @@ subject-specific generators.
   several placements, so the five-rows-per-task cap and the yearly
   validators' pinned row lists stand; the pass records every changed card in
   its year's review ledger and changes nothing on a second run.
+  Italian answers priced in halves on one line ("Erano stati compagni (1m)
+  di scuola (4m)", "By summer [2] 2022 [1]") are cut at the printed prices by
+  `it_rows.py`, which `it_all.py` applies to every card it builds and which
+  also upgrades an authored `italian.json` in place (`--write`); a shorter
+  answer the scheme prices under the full one, which was a sentence in the
+  row's note, becomes a printed step on a fixed-tariff point row, and a full
+  answer the SEC wrapped onto a second line is joined back from the note
+  (`it_scheme.py` joins it at the source now too).
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

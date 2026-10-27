@@ -43,6 +43,8 @@ import { CARDS as CONSTRUCTION_ORDINARY } from '../components/MarkBank/cards/con
 import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
 import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
+import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
 import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
 
@@ -476,6 +478,46 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         expect(twin.map(row => row.parts ?? null), `${card.id} ← ${source.id}`).toEqual(source.rows.map(row => row.parts ?? null));
       }
     }
+  });
+
+  it('Italian: a price the scheme prints inside an answer is a row, and a shorter answer it prices is a printed step', () => {
+    const cards = [...ITALIAN_HIGHER, ...ITALIAN_ORDINARY].filter(isPointCard);
+    const rows = cards.flatMap(card => card.rows.map(row => ({ card, row })));
+    // "Erano stati compagni (1m) di scuola (4m)", "By summer [2] 2022 [1]" were one row each; it_rows.py cuts them at the printed prices.
+    const inline = /\(\s*\d+\s*m?\s*\)|\[\s*\d+\s*\]/g;
+    expect(rows.filter(({ row }) => row.kind !== 'anyN' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
+    const pieces = rows.filter(({ row }) => /^r-\d+-\d+$/.test(row.id));
+    expect([pieces.length, new Set(pieces.map(({ card }) => card.id)).size]).toEqual([88, 35]);
+    for (const { card, row } of pieces) {
+      expect(row.kind, `${card.id}/${row.id}`).toBe('point');
+      expect(/[\p{L}\p{N}]/u.test(row.verbatim), `${card.id}/${row.id}: "${row.verbatim}"`).toBe(true);
+      expect(row.marks, `${card.id}/${row.id}`).toBeGreaterThan(0);
+    }
+    // The pieces of one row add up to the card: a fixed tariff still reconciles.
+    for (const card of cards.filter(item => item.rows.some(row => /^r-\d+-\d+$/.test(row.id)))) {
+      expect(card.rows.reduce((sum, row) => sum + (row.marks ?? 0), 0), card.id).toBe(card.totalMarks);
+    }
+    // The 2025 HL B2B 2(a) answer the SEC wrapped onto a second line, whose tail the reader had filed as a lesser answer.
+    expect(cards.find(card => card.id === 'it-2025-hl-b2b-2-a')!.rows.map(row => [row.verbatim, row.marks])).toEqual([
+      ['Il fatto che stesse per attaccare uno del partito di Rosello', 3], ['voleva coinvolgere Rosello stesso', 2],
+    ]);
+    // A shorter answer the scheme prices under the full one ("Nata nel 2020 2m") was a sentence in the
+    // row's note; the row now carries that mark as a step, and the note still names the answer.
+    const lesser = 'The scheme also pays part marks for a shorter answer: ';
+    const stepped = rows.filter(({ row }) => row.kind === 'criterion');
+    expect(stepped).toHaveLength(44);
+    for (const { card, row } of stepped) {
+      const where = `${card.id}/${row.id}`;
+      expect(row.permittedMarks![0], where).toBe(0);
+      expect(row.permittedMarks!.at(-1), where).toBe(row.marks);
+      const priced = [...(row.contextNote ?? '').split(lesser)[1].matchAll(/”\s*(\d+)\s*marks?/g)].map(match => Number(match[1])).filter(value => value < row.marks!);
+      expect([...new Set(row.permittedMarks!.slice(1, -1))].sort((a, b) => a - b), where).toEqual([...new Set(priced)].sort((a, b) => a - b));
+    }
+    // What is still a note: a shorter form of a cut answer (which piece?) and shorter forms of any-N
+    // options (the group has no per-option steps). Model one of those and lower its number here.
+    const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
+    expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
+    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([16, 93]);
   });
 
 });
