@@ -29,7 +29,8 @@ type Sitting = { tasks: Task[]; cardCount: number; baseTaskCount: number;
     retained: Array<{ id: string; reason: string }>;
     withdrawn: Record<string, { replacementId: string; reason: string }> };
   sources: Record<string, { sha256: string; pages: number }>;
-  checks: { excluded: Array<{ id: string; reason: string; evidence: string; schemeRows: string[] }> } };
+  checks: { excluded: Array<{ id: string; reason: string; evidence: string; schemeRows: string[] }>;
+    openLeaves?: Array<{ leaf: string; reason: string; evidence: string }> } };
 const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sittings;
 const sitting = sittings['2026-hl'];
 
@@ -1822,9 +1823,20 @@ type FirstCarded = {
   /** Cards whose "the graph" is the one the student draws in an earlier part
    *  (the paper prints none), so no printed figure exists to show. */
   ownDrawing?: string[];
+  /** Printed asks left OPEN (the ledger's OPEN_LEAVES): the scheme prints no
+   *  answer to lift, so the ask is neither carded nor excluded. */
+  openLeaves?: string[];
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
+  '2010-ol': {
+    tasks: 164, cards: 164,
+    sources: { "paper": ['97369eec58626ea8011318460e4f7bda32b61b465aabab420f480e47823d010f', 16], "scheme": ['09e0ceeb579948acbd7584859befa2efb9defc5ab857a27306560cb5130dfdc6', 11] },
+    routes: {  },
+    wholeParts: {  },
+    // Scheme p7 prints Q11(c) (i)-(vi) and then blank rows: no answer for (vii).
+    openLeaves: ['Q11(c)(vii)'],
+  },
   '2011-ol': {
     tasks: 143, cards: 143,
     sources: { "paper": ['f63cdb6415745ec2a23e86a2148aa407728afa5298828fcb69941618ca9ed9c1', 16], "scheme": ['6fcb0417a0b2da9ddb97a69c6dcbdd993f249d17c8d3e430cbc5a3bdbff9e61c', 16] },
@@ -1992,6 +2004,15 @@ describe.each(Object.entries(FIRST_CARDED))('Biology %s — carded from a paper-
       const routes = deck.filter(card => card.questionRef.startsWith(`${year} ${token} ${part} — `));
       expect(routes, part).toHaveLength(pin.routes[part].length);
       expect(new Set(routes.map(card => card.questionText)).size, part).toBe(1);
+    }
+  });
+
+  it('leaves open only the asks its scheme prints no answer for, each with its page evidence', () => {
+    const open = s.checks.openLeaves ?? [];
+    expect(open.map(o => o.leaf)).toEqual(pin.openLeaves ?? []);
+    for (const o of open) {
+      expect(o.evidence, o.leaf).toMatch(/Paper p\d+.*Scheme p\d+/s);
+      expect(deck.some(card => card.questionRef.startsWith(`${year} ${token} ${o.leaf}`)), o.leaf).toBe(false);
     }
   });
 

@@ -164174,5 +164174,5245 @@
   "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2011_ol.py.",
   "year": 2011,
   "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q1-a-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "respiration-in-the-carbon-cycle",
+  "section": "A",
+  "questionRef": "2010 OL Q1(a) — A",
+  "stem": "The diagram shows the carbon cycle.",
+  "questionText": "Name the processes A, B, C, and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = respiration",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own \" / \", each at the ladder's first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q1-carbon",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "respiration",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "photosynthesis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "consumption (eating)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "combustion (burning)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "X",
+    "meaning": "Fossil fuel(s)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q1-a-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "photosynthesis-in-the-carbon-cycle",
+  "section": "A",
+  "questionRef": "2010 OL Q1(a) — B",
+  "stem": "The diagram shows the carbon cycle.",
+  "questionText": "Name the processes A, B, C, and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = photosynthesis",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own \" / \", each at the ladder's first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q1-carbon",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "respiration",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "photosynthesis",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "consumption (eating)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "combustion (burning)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "X",
+    "meaning": "Fossil fuel(s)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q1-a-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "consumption-in-the-carbon-cycle",
+  "section": "A",
+  "questionRef": "2010 OL Q1(a) — C",
+  "stem": "The diagram shows the carbon cycle.",
+  "questionText": "Name the processes A, B, C, and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = consumption (eating)",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own \" / \", each at the ladder's first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q1-carbon",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "respiration",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "photosynthesis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "consumption (eating)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "combustion (burning)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "X",
+    "meaning": "Fossil fuel(s)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q1-a-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "combustion-in-the-carbon-cycle",
+  "section": "A",
+  "questionRef": "2010 OL Q1(a) — D",
+  "stem": "The diagram shows the carbon cycle.",
+  "questionText": "Name the processes A, B, C, and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "D = combustion (burning)",
+    "marks": null,
+    "contextNote": "allow ‘decomposition’, allow ‘assimilation’"
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own \" / \", each at the ladder's first rate. The bracketed \"allow ‘decomposition’, allow ‘assimilation’\" is printed after D's answer, on D's line: the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q1-carbon",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "respiration",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "photosynthesis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "consumption (eating)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "combustion (burning)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "X",
+    "meaning": "Fossil fuel(s)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q1-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "fossil-fuels",
+  "section": "A",
+  "questionRef": "2010 OL Q1(b)",
+  "stem": "The diagram shows the carbon cycle.",
+  "questionText": "Name the substances labelled X.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Fossil fuel(s) or named example(s) of fossil fuel(s)",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q1-carbon",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "respiration",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "photosynthesis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "consumption (eating)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "combustion (burning)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "X",
+    "meaning": "Fossil fuel(s)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q1-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "why-elements-are-recycled",
+  "section": "A",
+  "questionRef": "2010 OL Q1(c)",
+  "questionText": "Why are elements recycled in nature?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Limited supply or words to that affect or reused",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q1-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "decomposers",
+  "section": "A",
+  "questionRef": "2010 OL Q1(d)",
+  "stem": "The diagram shows the carbon cycle.",
+  "questionText": "Name one group of organisms responsible for process 1 in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "bacteria / fungi / microorganisms / earthworms / insects",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "bacteria",
+      "fungi",
+      "microorganisms",
+      "earthworms",
+      "insects"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints this answer after \"e.g.\": an example, an open menu. Cut at the scheme's own \"or\". Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q1-carbon",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "respiration",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "photosynthesis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "consumption (eating)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "combustion (burning)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "X",
+    "meaning": "Fossil fuel(s)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q2-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "cellulose-is-a-carbohydrate",
+  "section": "A",
+  "questionRef": "2010 OL Q2(i)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Cellulose is a protein.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints the answer as the word. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q2-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "iodine-test-for-starch",
+  "section": "A",
+  "questionRef": "2010 OL Q2(ii)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Iodine turns starch to a blue-black colour.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints the answer as the word. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q2-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "what-lipids-are-made-of",
+  "section": "A",
+  "questionRef": "2010 OL Q2(iii)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Lipids are made of amino acids.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints the answer as the word. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q2-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "fat-and-water-soluble-vitamins",
+  "section": "A",
+  "questionRef": "2010 OL Q2(iv)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "All vitamins are fat soluble.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints the answer as the word. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q2-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "eggs-as-a-source-of-fat",
+  "section": "A",
+  "questionRef": "2010 OL Q2(v)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Eggs are a good source of fat in the diet.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints the answer as the word. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q2-vi",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "nitrogen-is-a-major-element",
+  "section": "A",
+  "questionRef": "2010 OL Q2(vi)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Nitrogen is a trace element.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints the answer as the word. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q2-vii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "glucose-is-a-monosaccharide",
+  "section": "A",
+  "questionRef": "2010 OL Q2(vii)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Glucose is a monosaccharide.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. The scheme prints the answer as the word. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q3-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "plant-or-animal-cell",
+  "section": "A",
+  "questionRef": "2010 OL Q3(a)",
+  "stem": "The diagram shows a cell.",
+  "questionText": "Is this a plant cell or an animal cell?\nGive two reasons for the answer given above.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Plant cell",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "cell wall / definite shape / chloroplasts / (large) vacuole",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "cell wall",
+      "definite shape",
+      "chloroplasts",
+      "(large) vacuole"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Three responses of the \"2(7) + 2 + 4(1)\" ladder, each at its first rate: \"Plant cell\", and the two reasons the scheme prints as \"1./2. e.g. cell wall/definite shape/chloroplasts/(large) vacuole (Two points)\", cut at its own solidus, an open menu (its \"e.g.\"), claim two. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q3-cell"
+ },
+ {
+  "id": "bio-2010-ol-q3-b-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "vacuole",
+  "section": "A",
+  "questionRef": "2010 OL Q3(b) — A",
+  "stem": "The diagram shows a cell.",
+  "questionText": "Name the structures labelled A, B and C in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = (Large) vacuole",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own semicolons, each at the ladder's first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q3-cell",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "(Large) vacuole",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "chloroplasts",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "(Cell) membrane",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q3-b-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "chloroplasts",
+  "section": "A",
+  "questionRef": "2010 OL Q3(b) — B",
+  "stem": "The diagram shows a cell.",
+  "questionText": "Name the structures labelled A, B and C in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = chloroplasts",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own semicolons, each at the ladder's first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q3-cell",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "(Large) vacuole",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "chloroplasts",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "(Cell) membrane",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q3-b-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "cell-membrane",
+  "section": "A",
+  "questionRef": "2010 OL Q3(b) — C",
+  "stem": "The diagram shows a cell.",
+  "questionText": "Name the structures labelled A, B and C in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = (Cell) membrane",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own semicolons, each at the ladder's first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q3-cell",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "(Large) vacuole",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "chloroplasts",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "(Cell) membrane",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q3-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "contents-of-the-vacuole",
+  "section": "A",
+  "questionRef": "2010 OL Q3(c)",
+  "stem": "The diagram shows a cell.",
+  "questionText": "Name a substance found in A.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Water or sugar or sap or salt(s) or named gases or protein",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q3-cell",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "(Large) vacuole",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "chloroplasts",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "(Cell) membrane",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q4-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "genotype",
+  "section": "A",
+  "questionRef": "2010 OL Q4(i)",
+  "stem": "Choose each term from the following list and place it in Column A to match a description from Column B. The first one has been completed as an example. Dominant Gamete Gene Mutation Genetics Genotype",
+  "questionText": "The genetic make up of an individual",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Genotype",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. The list of terms (its \"Genetics\" struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2010-ol-q4-table"
+ },
+ {
+  "id": "bio-2010-ol-q4-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "gamete",
+  "section": "A",
+  "questionRef": "2010 OL Q4(ii)",
+  "stem": "Choose each term from the following list and place it in Column A to match a description from Column B. The first one has been completed as an example. Dominant Gamete Gene Mutation Genetics Genotype",
+  "questionText": "A sex cell",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Gamete",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. The list of terms (its \"Genetics\" struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2010-ol-q4-table"
+ },
+ {
+  "id": "bio-2010-ol-q4-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "mutation",
+  "section": "A",
+  "questionRef": "2010 OL Q4(iii)",
+  "stem": "Choose each term from the following list and place it in Column A to match a description from Column B. The first one has been completed as an example. Dominant Gamete Gene Mutation Genetics Genotype",
+  "questionText": "A change in the structure of DNA",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Mutation",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. The list of terms (its \"Genetics\" struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2010-ol-q4-table"
+ },
+ {
+  "id": "bio-2010-ol-q4-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "gene",
+  "section": "A",
+  "questionRef": "2010 OL Q4(iv)",
+  "stem": "Choose each term from the following list and place it in Column A to match a description from Column B. The first one has been completed as an example. Dominant Gamete Gene Mutation Genetics Genotype",
+  "questionText": "A part of DNA with information to make one protein",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Gene",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. The list of terms (its \"Genetics\" struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2010-ol-q4-table"
+ },
+ {
+  "id": "bio-2010-ol-q4-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "dominant",
+  "section": "A",
+  "questionRef": "2010 OL Q4(v)",
+  "stem": "Choose each term from the following list and place it in Column A to match a description from Column B. The first one has been completed as an example. Dominant Gamete Gene Mutation Genetics Genotype",
+  "questionText": "The allele expressed in the heterozygous condition",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Dominant",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. The list of terms (its \"Genetics\" struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2010-ol-q4-table"
+ },
+ {
+  "id": "bio-2010-ol-q5-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "semicircular-canals",
+  "section": "A",
+  "questionRef": "2010 OL Q5(i) — A",
+  "stem": "The diagram shows the external and internal structure of the human ear.",
+  "questionText": "Name the parts labelled A and B.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Semi-circular canals",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Two responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own semicolon. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q5-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canals",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q5-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cochlea",
+  "section": "A",
+  "questionRef": "2010 OL Q5(i) — B",
+  "stem": "The diagram shows the external and internal structure of the human ear.",
+  "questionText": "Name the parts labelled A and B.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Cochlea",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Two responses of the \"2(7) + 2 + 4(1)\" ladder, one per letter, cut at the scheme's own semicolon. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q5-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canals",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q5-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "function-of-the-cochlea",
+  "section": "A",
+  "questionRef": "2010 OL Q5(ii)",
+  "stem": "The diagram shows the external and internal structure of the human ear.",
+  "questionText": "What is the function of B?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hearing",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q5-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canals",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q5-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "eustachian-tube",
+  "section": "A",
+  "questionRef": "2010 OL Q5(iii)",
+  "stem": "The diagram shows the external and internal structure of the human ear.",
+  "questionText": "What is connected to the middle ear by the Eustachian tube?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Throat or Pharynx",
+    "marks": null,
+    "contextNote": "allow ‘back of mouth’"
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. Its bracketed \"allow ‘back of mouth’\" is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q5-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canals",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q5-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "function-of-the-eustachian-tube",
+  "section": "A",
+  "questionRef": "2010 OL Q5(iv)",
+  "stem": "The diagram shows the external and internal structure of the human ear.",
+  "questionText": "What is the function of the Eustachian tube?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To equalise pressure (on the eardrum) or air in or air out or protection",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 2 + 4(1)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q5-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canals",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q5-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "ear-or-eye-disorder",
+  "section": "A",
+  "questionRef": "2010 OL Q5(v)",
+  "questionText": "Name one disorder of the ear or of the eye and give a corrective measure for the disorder you have named.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 2 + 4(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Disorder",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Corrective measure",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Two responses of the \"2(7) + 2 + 4(1)\" ladder, each at its first rate. The scheme prints only \"Disorder:\" and \"Corrective measure:\", each on its own line with no answer after it: a criterion row each, cut at its own colon. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q6-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "epidermis",
+  "section": "A",
+  "questionRef": "2010 OL Q6(i)",
+  "stem": "The diagram below shows the internal structure of a leaf.",
+  "questionText": "Name the one tissue type that is found at both V and Y.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Epi)dermal",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q6-leaf"
+ },
+ {
+  "id": "bio-2010-ol-q6-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "palisade-and-light",
+  "section": "A",
+  "questionRef": "2010 OL Q6(ii)",
+  "stem": "The diagram below shows the internal structure of a leaf.",
+  "questionText": "The cells at W contain many organelles that carry out photosynthesis. Suggest why the cells at W contain more of these organelles than the cells at X.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "W is usually closer to the light",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q6-leaf"
+ },
+ {
+  "id": "bio-2010-ol-q6-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "gases-in-the-leaf",
+  "section": "A",
+  "questionRef": "2010 OL Q6(iii)",
+  "stem": "The diagram below shows the internal structure of a leaf.",
+  "questionText": "In layer X, gases can diffuse throughout the leaf. Name one such gas.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Air or water (vapour) or O2 or CO2 or N2 or chemicals",
+    "marks": null,
+    "contextNote": "in and/or out"
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. Its closing \"in and/or out\", printed after a dash, is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q6-leaf"
+ },
+ {
+  "id": "bio-2010-ol-q6-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "function-of-stomata",
+  "section": "A",
+  "questionRef": "2010 OL Q6(iv)",
+  "stem": "The diagram below shows the internal structure of a leaf.",
+  "questionText": "State one function of the opening at Z.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To allow gas exchange or transpiration or temperature control",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q6-leaf"
+ },
+ {
+  "id": "bio-2010-ol-q6-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "guard-cells",
+  "section": "A",
+  "questionRef": "2010 OL Q6(v)",
+  "stem": "The diagram below shows the internal structure of a leaf.",
+  "questionText": "Name the cells which are responsible for controlling the size of the opening at Z.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Guard cells",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(7) + 3(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q6-leaf"
+ },
+ {
+  "id": "bio-2010-ol-q7-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "where-dna-is-found",
+  "section": "B",
+  "questionRef": "2010 OL Q7(a)(i)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue.",
+  "questionText": "Where in plant cells is DNA found?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Nucleus or chloroplasts or mitochondria",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"5+1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "dna-profiling",
+  "section": "B",
+  "questionRef": "2010 OL Q7(a)(ii)",
+  "questionText": "What is meant by DNA profiling?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Analysing or examining a person’s DNA (to compare patterns with others) or getting or providing, patterns or bands",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"5+1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "chopping-plant-material",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(i)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue.",
+  "questionText": "Give one reason why you first chopped the plant material into very small pieces.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To increase surface area or to burst cells or to break cell walls",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "detergent-in-dna-isolation",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(ii)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue.",
+  "questionText": "Detergent and salt were added to the chopped plant material, which was then heated. Explain why the detergent was used.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To break down cell membranes or to burst cells",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "heating-the-mixture",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(iii)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue. (ii) Detergent and salt were added to the chopped plant material, which was then heated.",
+  "questionText": "How was this mixture heated?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "In a water bath",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "why-the-mixture-is-heated",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(iv)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue. (ii) Detergent and salt were added to the chopped plant material, which was then heated.",
+  "questionText": "Why was this mixture heated?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To inactivate enzymes",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "blending-time",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(v)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue.",
+  "questionText": "Later in the activity the mixture was blended for a maximum of 3 seconds. What would happen to the DNA if the mixture was blended for longer than 3 seconds?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "It would be shredded",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "protease-in-dna-isolation",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(vi)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue.",
+  "questionText": "Protease was then added to the mixture. Why was protease added?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To digest the protein (in the chromosomes)",
+    "marks": null,
+    "contextNote": "allow ‘to unravel DNA’"
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Its bracketed \"allow ‘to unravel DNA’\" is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "dna-in-the-filtrate",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(vii)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue.",
+  "questionText": "The mixture was then filtered. After filtration, where was the DNA of your plant tissue to be found?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "In the filtrate or liquid or solution or test tube",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q7-b-viii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "ice-cold-ethanol",
+  "section": "B",
+  "questionRef": "2010 OL Q7(b)(viii)",
+  "stem": "In one of your laboratory activities you isolated DNA from a plant tissue.",
+  "questionText": "What should you do next to make the DNA visible?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Add freezer-cold ethanol or alcohol",
+    "marks": null,
+    "contextNote": "allow ‘ice-cold ethanol or alcohol’"
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Its bracketed \"allow ‘ice-cold ethanol or alcohol’\" is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme",
+  "section": "B",
+  "questionRef": "2010 OL Q8(a)(i)",
+  "questionText": "What is an enzyme?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "A (biological) catalyst or explained",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"5+1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "ph",
+  "section": "B",
+  "questionRef": "2010 OL Q8(a)(ii)",
+  "questionText": "Explain what is meant by the term pH.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(A measure of) how acidic or alkaline a solution is",
+    "marks": null,
+    "contextNote": "allow ‘neutral or not’"
+   }
+  ],
+  "notes": "One response of the \"5+1\" ladder, carded at its first rate. One definition (\"acidic or alkaline\" is its own wording, not two alternatives); its bracketed \"allow ‘neutral or not’\" is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-used",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(i)",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity.",
+  "questionText": "Name the enzyme you used in this investigation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 4(2) +1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Name of enzyme — amylase or pepsin or catalase",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 4(2) +1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "substrate-of-the-enzyme",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(ii)1",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity. (i) Name the enzyme you used in this investigation.",
+  "questionText": "Name\n1. The substrate of this enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 4(2) +1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching substrate",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Each numbered item a response of the \"2(6) + 4(2) +1\" ladder, read after the scheme's own number. The scheme prices a substrate matching the named enzyme without naming one: a criterion row. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "product-of-the-enzyme",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(ii)2",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity. (i) Name the enzyme you used in this investigation.",
+  "questionText": "Name\n2. The product of this enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 4(2) +1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching product",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prices a product matching the named enzyme without naming one: a criterion row. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "drawing-the-enzyme-apparatus",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(iii)",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity.",
+  "questionText": "Draw a labelled diagram of the apparatus you used in your investigation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram — [minimum of test tube with substance in it]",
+    "marks": 2,
+    "contextNote": "The scheme prints the diagram's band \"2, 0\"."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Label — [one label]",
+    "marks": 1,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prices the drawing on its own beside the part's \"2(6) + 4(2) +1\" ladder: \"Diagram: [minimum of test tube with substance in it]\" banded \"2, 0\" and \"Label: [one label]\" priced \"1\", a criterion row each (the scheme names no label). Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "varying-the-ph",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(iv)",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity.",
+  "questionText": "How did you vary the pH?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 4(2) +1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Add acid or add base or add (different) buffers",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 4(2) +1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "factor-kept-constant",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(v)",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity.",
+  "questionText": "Name one factor you kept constant..",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 4(2) +1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Temperature",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 4(2) +1\" ladder, carded at its first rate. The paper prints the ask with a doubled full stop (\"constant..\"); lifted as printed. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "keeping-the-factor-constant",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(vi)",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity. (v) Name one factor you kept constant..",
+  "questionText": "How did you keep the named factor constant?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 4(2) +1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Water bath",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 4(2) +1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q8-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "graph-of-ph-and-enzyme-activity",
+  "section": "B",
+  "questionRef": "2010 OL Q8(b)(vii)",
+  "stem": "Answer the following questions in relation to your investigation into the effect of pH on the rate of enzyme activity.",
+  "questionText": "Draw a graph, on the axes given below, to show the results of this investigation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 4(2) +1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Graph – any line that is not parallel to x axis and that is not ‘V’ shaped",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "One response of the \"2(6) + 4(2) +1\" ladder, carded at its first rate. The scheme prints what the graph must show, not a graph: a criterion row. The printed axes are the card's figure. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q8-axes"
+ },
+ {
+  "id": "bio-2010-ol-q9-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "organ",
+  "section": "B",
+  "questionRef": "2010 OL Q9(a)(i)",
+  "questionText": "In biology, what is meant by the term organ?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A group of tissues (working together)",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"5+1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q9-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "electron-microscope",
+  "section": "B",
+  "questionRef": "2010 OL Q9(a)(ii)",
+  "questionText": "In school, a light microscope is normally used to examine cells and tissues. Name a more powerful type of microscope that is used to show what cells are made of in much greater detail (cell ultrastructure).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Electron microscope",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"5+1\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q9-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "dicot-plant-used",
+  "section": "B",
+  "questionRef": "2010 OL Q9(b)(i)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "Name the plant that you used.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Any named dicot plant",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. The scheme prices a named dicot without naming one: a criterion row. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q9-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "sectioning-a-stem",
+  "section": "B",
+  "questionRef": "2010 OL Q9(b)(ii)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "How did you make a section of the stem and prepare it for examination?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "cut / scalpel or (backed) blade / thinly / safety point",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "cut",
+      "scalpel or (backed) blade",
+      "thinly",
+      "safety point"
+     ]
+    },
+    "contextNote": "Make section"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "section into water / onto slide / cover slip on / how / stain / how",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "section into water",
+      "onto slide",
+      "cover slip on",
+      "how",
+      "stain",
+      "how"
+     ]
+    },
+    "contextNote": "Prepare for examination The scheme prints \"how\" after \"cover slip on\" and after \"stain\": each a point of its own."
+   }
+  ],
+  "notes": "Four responses of the \"2(6)+6(2)\" ladder, each at its first rate: \"Make section: ... (Two points)\" and \"Prepare for examination: ... (Two points)\", each list cut at the scheme's own solidus, a menu each, claim two; each menu's printed heading is its note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q9-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "examining-the-section",
+  "section": "B",
+  "questionRef": "2010 OL Q9(b)(iii)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "Describe how you examined your section of stem once you had placed the slide on the stage of the microscope.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Light source / low power objective first / look through eyepiece / move to higher objective / coarse focus knob / fine focus knob",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Light source",
+      "low power objective first",
+      "look through eyepiece",
+      "move to higher objective",
+      "coarse focus knob",
+      "fine focus knob"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"2(6)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q9-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "ts-of-a-dicot-stem",
+  "section": "B",
+  "questionRef": "2010 OL Q9(b)(iv)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "Which of the following diagrams, A or B, best represents what was seen on your slide?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. The two printed diagrams are the card's figure. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q9-sections"
+ },
+ {
+  "id": "bio-2010-ol-q10-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "ecosystem",
+  "section": "C",
+  "questionRef": "2010 OL Q10(a)(i)",
+  "stem": "In ecology we study ecosystems, habitats and communities, in which every organism has its own niche.",
+  "questionText": "Explain what is meant by\nan ecosystem",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Organisms/interacting/in their environment",
+    "marks": null,
+    "contextNote": "Any two points for full marks"
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder, carded at its first rate. (i) is one of the ladder's three responses (with (ii) and (iii)); the scheme prints its three points, \"Organisms/interacting/in their environment\", with \"(Any two points for full marks)\": one row, read whole, the direction its note. The card carries the printed lead-in \"Explain what is meant by\" in its question text. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "habitat",
+  "section": "C",
+  "questionRef": "2010 OL Q10(a)(ii)",
+  "stem": "In ecology we study ecosystems, habitats and communities, in which every organism has its own niche.",
+  "questionText": "Explain what is meant by\na habitat",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "The place where an organism lives",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder, carded at its first rate. The card carries the printed lead-in \"Explain what is meant by\" in its question text. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "niche",
+  "section": "C",
+  "questionRef": "2010 OL Q10(a)(iii)",
+  "stem": "In ecology we study ecosystems, habitats and communities, in which every organism has its own niche.",
+  "questionText": "Explain what is meant by\na niche.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "The (functional) role (of an organism) or ‘occupation’ (of an organism)",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder, carded at its first rate. The card carries the printed lead-in \"Explain what is meant by\" in its question text. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "food-chain-from-an-ecosystem",
+  "section": "C",
+  "questionRef": "2010 OL Q10(b)(i)",
+  "questionText": "Name an ecosystem you have studied and construct a simple food chain from that ecosystem.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Name of ecosystem",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Food chain — Must have at least three members and must match named ecosystem.",
+    "marks": null,
+    "contextNote": "N.B.: if chain does not match ecosystem, disallow the point with the lowest mark"
+   }
+  ],
+  "notes": "Four responses of the \"3(5)+6(2)\" ladder, each at its first rate: \"Name of ecosystem: (One point)\" and \"Food chain: Must have at least three members and must match named ecosystem. (Three points)\". The scheme names no ecosystem and no chain: a criterion row each, the chain's row worth its three points; its \"N.B.\" on a chain that does not match is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "trophic-level",
+  "section": "C",
+  "questionRef": "2010 OL Q10(b)(ii)",
+  "questionText": "What is meant by a trophic level?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Feeding (level)",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-b-iii-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "producers",
+  "section": "C",
+  "questionRef": "2010 OL Q10(b)(iii) — A",
+  "questionText": "Name the trophic levels A, B and C in the pyramid of numbers shown below.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = producers",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"3(5)+6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q10-pyramid",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "producers",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "(primary) consumers or herbivores",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "secondary consumers or carnivores or predators",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q10-b-iii-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "primary-consumers",
+  "section": "C",
+  "questionRef": "2010 OL Q10(b)(iii) — B",
+  "questionText": "Name the trophic levels A, B and C in the pyramid of numbers shown below.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "B = (primary) consumers or herbivores",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"3(5)+6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q10-pyramid",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "producers",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "(primary) consumers or herbivores",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "secondary consumers or carnivores or predators",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q10-b-iii-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "secondary-consumers",
+  "section": "C",
+  "questionRef": "2010 OL Q10(b)(iii) — C",
+  "questionText": "Name the trophic levels A, B and C in the pyramid of numbers shown below.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "C = secondary consumers or carnivores or predators",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"3(5)+6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q10-pyramid",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "producers",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "(primary) consumers or herbivores",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "secondary consumers or carnivores or predators",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q10-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "removing-a-trophic-level",
+  "section": "C",
+  "questionRef": "2010 OL Q10(b)(iv)",
+  "questionText": "If all the organisms at C were removed (e.g. by disease) suggest what would happen to the organisms at B?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Their number would) increase",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q10-pyramid",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "producers",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "(primary) consumers or herbivores",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "secondary consumers or carnivores or predators",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q10-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollution-and-conservation",
+  "section": "C",
+  "questionRef": "2010 OL Q10(c)(i)",
+  "stem": "The great pressure put on wildlife by the growing human population has caused many species to become extinct. Habitat destruction, over-exploitation and environmental pollution have been the main causes. There is a clear need for conservation if such a trend is to be halted. Conservation has many practical outcomes from which humans will benefit in future years. (Adapted from Advanced Biology, 3rd Edition, J. Simpkins, J. I. Williams)",
+  "questionText": "Explain the underlined words from the passage.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pollution — Harmful addition to an ecosystem",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Conservation — Management of ecosystems",
+    "marks": null
+   }
+  ],
+  "notes": "Two points (\"(Two points)\"): each printed point its own row, each on the \"2(6)+6(2)\" ladder at its first rate. One per underlined word. The paper marks the words to explain by underlining them in the passage, which the text layer drops: the question is shown as printed. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2010-ol-q10c-passage"
+ },
+ {
+  "id": "bio-2010-ol-q10-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "effect-of-a-pollutant",
+  "section": "C",
+  "questionRef": "2010 OL Q10(c)(ii)",
+  "questionText": "State the effect of any one named pollutant.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named pollutant",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Effect must match named pollutant",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Two responses of the \"2(6)+6(2)\" ladder (\"(Two points)\"), each at its first rate: the scheme prices \"Named pollutant\" and \"Effect must match named pollutant\" without naming either, a criterion row each. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "conservation-in-an-industry",
+  "section": "C",
+  "questionRef": "2010 OL Q10(c)(iii)",
+  "questionText": "Outline one conservation measure carried out by one of the following industries: agriculture or forestry or fisheries.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Outline of one conservation measure",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Two responses of the \"2(6)+6(2)\" ladder (\"(Two points)\"), each at its first rate. The scheme prints no measure, only \"Outline of one conservation measure\": one criterion row worth its two points. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "problem-of-waste-disposal",
+  "section": "C",
+  "questionRef": "2010 OL Q10(c)(iv)",
+  "questionText": "Name one problem associated with waste disposal.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "One problem associated with waste disposal",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. The scheme names no problem: a criterion row. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q10-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "microorganisms-in-waste-management",
+  "section": "C",
+  "questionRef": "2010 OL Q10(c)(v)",
+  "questionText": "State one role of microorganisms in waste management.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To consume waste",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "inherited-characteristic",
+  "section": "C",
+  "questionRef": "2010 OL Q11(a)(i)",
+  "stem": "Many characteristics are passed on to children by their parents.",
+  "questionText": "Give one example of an inherited human characteristic.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "eye colour",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "eye colour"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder, carded at its first rate. The scheme prints this answer after \"e.g.\": an example, an open menu. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "non-inherited-characteristic",
+  "section": "C",
+  "questionRef": "2010 OL Q11(a)(ii)",
+  "stem": "Many characteristics are passed on to children by their parents.",
+  "questionText": "Give one example of a non-inherited human characteristic.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "ability to roller skate",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "ability to roller skate"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder, carded at its first rate. The scheme prints this answer after \"e.g.\": an example, an open menu. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "chromosomes-and-inheritance",
+  "section": "C",
+  "questionRef": "2010 OL Q11(a)(iii)",
+  "stem": "Many characteristics are passed on to children by their parents.",
+  "questionText": "Which structures in sperm and egg nuclei are responsible for biological inheritance?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Chromosomes or genes or DNA",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "recessive-fur-colour",
+  "section": "C",
+  "questionRef": "2010 OL Q11(b)(i)",
+  "stem": "When a pure-breeding black cat was mated with a pure-breeding white cat, all the kittens were black.",
+  "questionText": "Which fur colour, black or white, is recessive in these cats?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "White",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "genotypes-of-parent-cats",
+  "section": "C",
+  "questionRef": "2010 OL Q11(b)(ii)1",
+  "stem": "When a pure-breeding black cat was mated with a pure-breeding white cat, all the kittens were black.",
+  "questionText": "Using capital letters for dominant and lower case letters for recessive, give:\n1. The genotypes of the parent cats.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Black parents): BB",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(White parents): bb",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(Three points)\" over the three genotypes: item 1 two, one per parent, each printed on its own line, each on the \"3(5)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "genotype-of-the-kittens",
+  "section": "C",
+  "questionRef": "2010 OL Q11(b)(ii)2",
+  "stem": "When a pure-breeding black cat was mated with a pure-breeding white cat, all the kittens were black.",
+  "questionText": "Using capital letters for dominant and lower case letters for recessive, give:\n2. The genotype of the kittens.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Kittens): Bb",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Item 2 the third of the three points. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "heterozygous",
+  "section": "C",
+  "questionRef": "2010 OL Q11(b)(iii)",
+  "stem": "When a pure-breeding black cat was mated with a pure-breeding white cat, all the kittens were black.",
+  "questionText": "Is the genotype of the kittens referred to as homozygous or heterozygous?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Heterozygous",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. The scheme stars the term (exact term required). Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "reason-heterozygous",
+  "section": "C",
+  "questionRef": "2010 OL Q11(b)(iv)",
+  "stem": "When a pure-breeding black cat was mated with a pure-breeding white cat, all the kittens were black. (iii) Is the genotype of the kittens referred to as homozygous or heterozygous?",
+  "questionText": "Give a reason for your answer to part (iii).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "One of each type of allele or ‘Bb’",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "gametes-of-the-kittens",
+  "section": "C",
+  "questionRef": "2010 OL Q11(b)(v)",
+  "stem": "When a pure-breeding black cat was mated with a pure-breeding white cat, all the kittens were black.",
+  "questionText": "In relation to fur colour, what will be the genotypes of the gametes that these kittens will produce?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B and b",
+    "marks": null,
+    "contextNote": "both letters must be given for any marks to be awarded"
+   }
+  ],
+  "notes": "Two responses of the \"3(5)+6(2)\" ladder (\"(Two points)\"), each at its first rate. The scheme prints the one answer \"B and b\" with \"[both letters must be given for any marks to be awarded]\": one row worth both points, the direction its note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "alleles",
+  "section": "C",
+  "questionRef": "2010 OL Q11(b)(vi)",
+  "questionText": "What are alleles?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Different forms of the same gene or B,b",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-c-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "thymine-pairs-with-adenine",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(i) — 1",
+  "stem": "The diagram shows a short section of a DNA molecule.",
+  "questionText": "Name the bases numbered 1 and 2 in the diagram above.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Thymine or T",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Two responses of the \"2(6)+6(2)\" ladder, one per numbered base, each read after the scheme's own number. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q11-dna",
+  "labelKey": [
+   {
+    "letter": "1",
+    "meaning": "Thymine or T",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "2",
+    "meaning": "Cytosine or C",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q11-c-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "cytosine-pairs-with-guanine",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(i) — 2",
+  "stem": "The diagram shows a short section of a DNA molecule.",
+  "questionText": "Name the bases numbered 1 and 2 in the diagram above.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cytosine or C",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Two responses of the \"2(6)+6(2)\" ladder, one per numbered base, each read after the scheme's own number. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q11-dna",
+  "labelKey": [
+   {
+    "letter": "1",
+    "meaning": "Thymine or T",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "2",
+    "meaning": "Cytosine or C",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q11-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "site-of-transcription",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(ii)",
+  "questionText": "Protein synthesis involves both transcription and translation. Where in a cell does transcription occur?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Nucleus",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "messenger-rna",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(iii)",
+  "questionText": "What type of RNA is involved in transcription?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Messenger or m (RNA)",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "site-of-translation",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(iv)",
+  "questionText": "In what organelle does translation occur?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Ribosome",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "amino-acids",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(v)",
+  "questionText": "Name the small biomolecules that are joined together to make a protein.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Amino acids",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "protein-folding",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(vi)",
+  "questionText": "What must happen to the newly formed protein before it can begin to work?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "It must fold (into its functional shape)",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "metabolism",
+  "section": "C",
+  "questionRef": "2010 OL Q12(a)(i)",
+  "questionText": "What is meant by metabolism?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(The sum of all) the chemical reactions (in an organism) or catabolism + anabolism",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "why-living-things-need-energy",
+  "section": "C",
+  "questionRef": "2010 OL Q12(a)(ii)",
+  "questionText": "Give two reasons why living things need energy.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "For movement / for heat / for making products / for internal transport",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "For movement",
+      "for heat",
+      "for making products",
+      "for internal transport"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"7+2(1)\" ladder at its first rate. The scheme prints this answer after \"e.g.\": an example, an open menu. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "aerobic-respiration",
+  "section": "C",
+  "questionRef": "2010 OL Q12(b)(i)",
+  "questionText": "Which biological process is represented by the following word equation: glucose + oxygen → carbon dioxide + water + energy?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Aerobic",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "respiration",
+    "marks": null
+   }
+  ],
+  "notes": "Two points (\"(Two points)\"): each printed point its own row, each on the \"3(5)+6(2)\" ladder at its first rate. \"Aerobic/respiration\", cut at the scheme's own solidus. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "sites-of-respiration",
+  "section": "C",
+  "questionRef": "2010 OL Q12(b)(ii)",
+  "stem": "(i) Which biological process is represented by the following word equation: glucose + oxygen → carbon dioxide + water + energy?",
+  "questionText": "The above process occurs in two stages, Stage 1 and Stage 2, that take place in different parts of the cell. Say where in the cell Stage 1 occurs and where in the cell Stage 2 occurs.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Stage 1. Cytoplasm",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Stage 2. Mitochondria",
+    "marks": null
+   }
+  ],
+  "notes": "Two responses of the \"3(5)+6(2)\" ladder, one per stage, each printed on its own line. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "energy-from-aerobic-respiration",
+  "section": "C",
+  "questionRef": "2010 OL Q12(b)(iii)",
+  "stem": "(i) Which biological process is represented by the following word equation: glucose + oxygen → carbon dioxide + water + energy?",
+  "questionText": "Does the whole process release a large amount or a small amount of energy?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Large",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fermentation-word-equation",
+  "section": "C",
+  "questionRef": "2010 OL Q12(b)(iv)",
+  "questionText": "Write a word equation to show what happens when yeast breaks down glucose in the absence of oxygen.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(Glucose →) Ethanol / CO2 / energy",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "(Glucose →) Ethanol",
+      "CO2",
+      "energy"
+     ]
+    },
+    "contextNote": "allow ‘alcohol’"
+   }
+  ],
+  "notes": "Two responses of the \"3(5)+6(2)\" ladder (\"(Two points)\"), each at its first rate, from the three products the scheme prints, \"(Glucose →) Ethanol [allow ‘alcohol’]/ + CO2 /+ energy\", cut at its own solidus and before each printed \"+\": a menu, claim two; the bracketed \"allow ‘alcohol’\" is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "industrial-fermentation",
+  "section": "C",
+  "questionRef": "2010 OL Q12(b)(v)",
+  "stem": "(iv) Write a word equation to show what happens when yeast breaks down glucose in the absence of oxygen.",
+  "questionText": "Give one industrial application of this process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Brewing / bread making",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Brewing",
+      "bread making"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. The scheme prints this answer after \"e.g.\": an example, an open menu. Cut at the scheme's own \"or\". Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "lactic-acid",
+  "section": "C",
+  "questionRef": "2010 OL Q12(b)(vi)",
+  "questionText": "When muscles break down glucose in the absence of oxygen, one main product is produced. Name this product.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Lactic acid",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "drawing-a-photosynthesis-apparatus",
+  "section": "C",
+  "questionRef": "2010 OL Q12(c)(i)",
+  "questionText": "Draw a labelled diagram of the apparatus you used to investigate the effect of light intensity or carbon dioxide concentration on the rate of photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram [test tube + water + plant]",
+    "marks": 3,
+    "contextNote": "The scheme prints the diagram's band \"3,0\"."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Labels [three labels]",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prices the drawing on its own, \"3,0\" for the diagram and \"3(1)\" for three labels, beside the part's ladder: the diagram is one criterion row (its band the row's note), the labels \"Labels [three labels]\" one criterion row worth its three 1s, as the scheme names none. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "varying-light-or-carbon-dioxide",
+  "section": "C",
+  "questionRef": "2010 OL Q12(c)(ii)",
+  "stem": "(i) Draw a labelled diagram of the apparatus you used to investigate the effect of light intensity or carbon dioxide concentration on the rate of photosynthesis.",
+  "questionText": "How did you vary the light intensity or the carbon dioxide concentration?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+3(1)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Vary light: lamp at different distances from plant / Vary CO2 conc.: different concs of NaHCO3 solution",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Vary light: lamp at different distances from plant",
+      "Vary CO2 conc.: different concs of NaHCO3 solution"
+     ]
+    }
+   }
+  ],
+  "notes": "One response of the \"3(5)+3(1)\" ladder, carded at its first rate. The scheme prints a way for each factor, joined by \"OR\": a menu, claim one (the candidate answers for the factor they investigated). Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "measuring-the-rate-of-photosynthesis",
+  "section": "C",
+  "questionRef": "2010 OL Q12(c)(iii)",
+  "stem": "(i) Draw a labelled diagram of the apparatus you used to investigate the effect of light intensity or carbon dioxide concentration on the rate of photosynthesis.",
+  "questionText": "How did you measure the rate of photosynthesis?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+3(1)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Counted number of ) bubbles",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "per unit time",
+    "marks": null
+   }
+  ],
+  "notes": "Two points (\"(Two points)\"): each printed point its own row, each on the \"3(5)+3(1)\" ladder at its first rate. Cut at the scheme's own solidus. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "rate-of-photosynthesis-and-its-factors",
+  "section": "C",
+  "questionRef": "2010 OL Q12(c)(iv)",
+  "stem": "(i) Draw a labelled diagram of the apparatus you used to investigate the effect of light intensity or carbon dioxide concentration on the rate of photosynthesis.",
+  "questionText": "What is the relationship between the rate of photosynthesis and either the light intensity or the carbon dioxide concentration",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+3(1)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "As either light intensity or CO2 conc. increases, the rate of photosynthesis increases.",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+3(1)\" ladder, carded at its first rate. One statement for either factor, read whole (its \"either ... or\" names the factors, not alternative answers). The paper prints the ask without a closing question mark. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q12-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "increasing-crop-yield",
+  "section": "C",
+  "questionRef": "2010 OL Q12(c)(v)",
+  "questionText": "Most Irish tomatoes are grown in greenhouses. State two ways a commercial producer could increase her/his crop yield of tomatoes.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+3(1)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Extra CO2 / increase temperature / growth promotors / increase light / add fertilizer",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Extra CO2",
+      "increase temperature",
+      "growth promotors",
+      "increase light",
+      "add fertilizer"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"3(5)+3(1)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "balanced-diet",
+  "section": "C",
+  "questionRef": "2010 OL Q13(a)(i)",
+  "questionText": "What is meant by a ‘balanced’ diet?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(One which contains) all the food types",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "in correct or suitable or optimum proportions",
+    "marks": null
+   }
+  ],
+  "notes": "Two points (\"(Two points)\"): each printed point its own row, each on the \"7+2(1)\" ladder at its first rate. Cut at the scheme's own solidus. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "autotrophic-and-heterotrophic-nutrition",
+  "section": "C",
+  "questionRef": "2010 OL Q13(a)(ii)",
+  "questionText": "Distinguish between autotrophic nutrition and heterotrophic nutrition.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Autotrophic nutrition: Food synthesised from simple molecules or produces own food / Heterotrohic nutrition: Already synthesised food consumed from other organisms or food from other sources",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Autotrophic nutrition: Food synthesised from simple molecules or produces own food",
+      "Heterotrohic nutrition: Already synthesised food consumed from other organisms or food from other sources"
+     ]
+    },
+    "contextNote": "Either point answered"
+   }
+  ],
+  "notes": "One response of the \"7+2(1)\" ladder: the \"7+2(1)\" makes three responses, (i)'s two points and this one, so the scheme's \"(Either point answered)\" prices either printed explanation for the one response: a menu, claim one, the direction its note. The scheme misspells \"Heterotrohic\"; lifted as printed. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "digestion",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(i)",
+  "questionText": "Explain the word digestion.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "The breaking down of food",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "incisors",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(ii)1",
+  "questionText": "Give one role for each of the following types of teeth:\n1. Incisors",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Cutting (food)",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Each numbered tooth a response of the \"3(5)+6(2)\" ladder, read after the scheme's own number. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "molars",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(ii)2",
+  "questionText": "Give one role for each of the following types of teeth:\n2. Molars.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Chewing / grinding (food)",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Chewing",
+      "grinding (food)"
+     ]
+    }
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. One response: the ladder's count (nine responses for \"3(5)+6(2)\") gives item 2 one point, so \"Chewing/grinding (food)\" is read as two printed alternatives: a menu, claim one. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "peristalsis",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(iii)",
+  "questionText": "Peristalsis begins when food enters the oesophagus. What is meant by peristalsis?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(Muscular) contractions / in the walls of the alimentary canal / to move food",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "(Muscular) contractions",
+      "in the walls of the alimentary canal",
+      "to move food"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"3(5)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "mechanical-digestion-in-the-stomach",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(iv)1",
+  "questionText": "Describe the following changes that happen to food in the stomach:\n1. Mechanical changes",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Churned",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Each numbered change a response of the \"3(5)+6(2)\" ladder. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "chemical-digestion-in-the-stomach",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(iv)2",
+  "questionText": "Describe the following changes that happen to food in the stomach:\n2. Chemical changes.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "pH changes or broken down by acid or broken down by enzymes or proteins → peptides",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Item 2 one point with its printed alternatives. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "stomach-ph",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(v)",
+  "questionText": "What is the pH of the stomach contents?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "0 − 3",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "food-leaving-the-stomach",
+  "section": "C",
+  "questionRef": "2010 OL Q13(b)(vi)",
+  "questionText": "Where does the partially digested food go when it leaves the stomach?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5)+6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Duodenum or small intestine",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(5)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-c-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pancreas-in-digestion",
+  "section": "C",
+  "questionRef": "2010 OL Q13(c)(i)1",
+  "stem": "The liver, the gall bladder and the pancreas all play a part in digestion. Digested food is carried to the liver where it is processed. Undigested food enters the large intestine.",
+  "questionText": "State\n1. One role of the pancreas in digestion.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Pancreas — Makes enzymes or makes neutralising secretion or makes NaHCO3",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Each numbered organ a response of the \"2(6)+6(2)\" ladder, read after the scheme's own number, its organ the row's label. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-c-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "gall-bladder-in-digestion",
+  "section": "C",
+  "questionRef": "2010 OL Q13(c)(i)2",
+  "stem": "The liver, the gall bladder and the pancreas all play a part in digestion. Digested food is carried to the liver where it is processed. Undigested food enters the large intestine.",
+  "questionText": "State\n2. One role of the gall bladder in digestion.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Gall bladder — Stores bile or releases bile",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Each numbered organ a response of the \"2(6)+6(2)\" ladder, read after the scheme's own number, its organ the row's label. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "absorption-of-digested-food",
+  "section": "C",
+  "questionRef": "2010 OL Q13(c)(ii)",
+  "stem": "The liver, the gall bladder and the pancreas all play a part in digestion. Digested food is carried to the liver where it is processed. Undigested food enters the large intestine.",
+  "questionText": "From what part of the digestive system does the digested food enter the blood?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Small intestine or duodenum or jejunum or ileum",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "hepatic-portal-vein",
+  "section": "C",
+  "questionRef": "2010 OL Q13(c)(iii)",
+  "stem": "The liver, the gall bladder and the pancreas all play a part in digestion. Digested food is carried to the liver where it is processed. Undigested food enters the large intestine.",
+  "questionText": "Name the blood vessel that carries the digested food to the liver.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Hepatic) portal vein",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "functions-of-the-liver",
+  "section": "C",
+  "questionRef": "2010 OL Q13(c)(iv)",
+  "stem": "The liver, the gall bladder and the pancreas all play a part in digestion. Digested food is carried to the liver where it is processed. Undigested food enters the large intestine.",
+  "questionText": "State two functions of the liver – other than the processing of digested food.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Heat generation / vitamin storage / iron storage / makes cholesterol / makes bile / deamination of amino acids / detoxification of poisons / makes plasma protein / breaks down blood cells",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Heat generation",
+      "vitamin storage",
+      "iron storage",
+      "makes cholesterol",
+      "makes bile",
+      "deamination of amino acids",
+      "detoxification of poisons",
+      "makes plasma protein",
+      "breaks down blood cells"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"2(6)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q13-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "symbiotic-bacteria-in-the-colon",
+  "section": "C",
+  "questionRef": "2010 OL Q13(c)(v)",
+  "stem": "The liver, the gall bladder and the pancreas all play a part in digestion. Digested food is carried to the liver where it is processed. Undigested food enters the large intestine.",
+  "questionText": "The colon contains many symbiotic bacteria – mostly ‘good’ bacteria. State two benefits we get from these bacteria.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Synthesise vitamins / out-compete pathogens or complement immune system / break down fibre",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Synthesise vitamins",
+      "out-compete pathogens or complement immune system",
+      "break down fibre"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"2(6)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-a-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "prostate-gland",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(i) — A",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name the parts A, B, C and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = prostate",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(6)+6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "prostate",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "urethra",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "testis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "vas deferens or sperm duct",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q14-a-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "urethra",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(i) — B",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name the parts A, B, C and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = urethra",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(6)+6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "prostate",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "urethra",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "testis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "vas deferens or sperm duct",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q14-a-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "testis",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(i) — C",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name the parts A, B, C and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = testis",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(6)+6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "prostate",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "urethra",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "testis",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "vas deferens or sperm duct",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q14-a-i-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "sperm-duct",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(i) — D",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name the parts A, B, C and D.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "D = vas deferens or sperm duct",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Four responses of the \"2(6)+6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "prostate",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "urethra",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "testis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "vas deferens or sperm duct",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q14-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "function-of-the-sperm-duct",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(ii)",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "What is the function of part D?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To carry sperm",
+    "marks": null,
+    "contextNote": "allow ‘to carry semen’"
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Its bracketed \"allow ‘to carry semen’\" is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "prostate",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "urethra",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "testis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "vas deferens or sperm duct",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q14-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "testosterone",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(iii)",
+  "questionText": "Name the principal male sex hormone.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Testosterone",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "male-secondary-sexual-characteristics",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(iv)",
+  "questionText": "Name two male secondary sexual characteristics.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Deep voice / enlarged testes / enlarged penis / facial hair / chest hair / underarm hair / pubic hair / extra sebum / distinctive musculature / increase sex drive",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Deep voice",
+      "enlarged testes",
+      "enlarged penis",
+      "facial hair",
+      "chest hair",
+      "underarm hair",
+      "pubic hair",
+      "extra sebum",
+      "distinctive musculature",
+      "increase sex drive"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"2(6)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-a-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "drawing-a-sperm-cell",
+  "section": "C",
+  "questionRef": "2010 OL Q14(a)(v)",
+  "questionText": "Draw a labelled diagram of a human sperm cell.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram [must have head and tail for 3 marks]",
+    "marks": 3,
+    "contextNote": "The scheme prints the diagram's band \"3, 0\"."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Labels [three labels]",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prices the drawing on its own, \"3, 0\" for the diagram and \"3(1)\" for three labels, beside the part's ladder: the diagram is one criterion row (its band the row's note), the labels \"Labels [three labels]\" one criterion row worth its three 1s, as the scheme names none. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "tissues-of-the-placenta",
+  "section": "C",
+  "questionRef": "2010 OL Q14(b)(i)",
+  "stem": "The diagram shows a foetus in the uterus.",
+  "questionText": "From what tissues is the placenta formed?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Mother’s and child’s",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6)+6(2)\" ladder, carded at its first rate. \"(Single point)\": one row. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-foetus"
+ },
+ {
+  "id": "bio-2010-ol-q14-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "functions-of-the-placenta",
+  "section": "C",
+  "questionRef": "2010 OL Q14(b)(ii)",
+  "stem": "The diagram shows a foetus in the uterus.",
+  "questionText": "Give two functions of the placenta.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "To allow nutrients / O2 / antibodies to pass to child / to allow CO2 out / to allow waste to pass to mother / to synthesise progesterone / to prevent mixing of mother’s and child’s blood / to protect foetus from mother’s blood pressure",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "To allow nutrients",
+      "O2",
+      "antibodies to pass to child",
+      "to allow CO2 out",
+      "to allow waste to pass to mother",
+      "to synthesise progesterone",
+      "to prevent mixing of mother’s and child’s blood",
+      "to protect foetus from mother’s blood pressure"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"3(6)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-foetus"
+ },
+ {
+  "id": "bio-2010-ol-q14-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "birth",
+  "section": "C",
+  "questionRef": "2010 OL Q14(b)(iii)",
+  "stem": "The diagram shows a foetus in the uterus.",
+  "questionText": "Describe the process of birth.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6)+6(2)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Oxytocin increases / progesterone decreases / uterus contracts / waters break / cervix dilates / baby out / usually head first / cord cut / placenta out",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Oxytocin increases",
+      "progesterone decreases",
+      "uterus contracts",
+      "waters break",
+      "cervix dilates",
+      "baby out",
+      "usually head first",
+      "cord cut",
+      "placenta out"
+     ]
+    }
+   }
+  ],
+  "notes": "Three responses (\"(Three points)\") from the printed list, cut at the scheme's own solidus: one menu, claim three, each on the \"3(6)+6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-foetus"
+ },
+ {
+  "id": "bio-2010-ol-q14-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "breastfeeding",
+  "section": "C",
+  "questionRef": "2010 OL Q14(b)(iv)",
+  "questionText": "Give any one biological benefit of breastfeeding.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Ideal nutrient or antibodies or mother-baby bond or reduced infection",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "methods-of-contraception",
+  "section": "C",
+  "questionRef": "2010 OL Q14(b)(v)",
+  "questionText": "List two methods of contraception.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6)+6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Condom / pill / IUD / cap / diaphragm / spermicide / mucus monitoring / sympto-thermal / vasectomy / tubectomy / surgical / chemical / mechanical / natural / rythym / implants",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Condom",
+      "pill",
+      "IUD",
+      "cap",
+      "diaphragm",
+      "spermicide",
+      "mucus monitoring",
+      "sympto-thermal",
+      "vasectomy",
+      "tubectomy",
+      "surgical",
+      "chemical",
+      "mechanical",
+      "natural",
+      "rythym",
+      "implants"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"3(6)+6(2)\" ladder at its first rate. The scheme misspells \"rythym\"; lifted as printed. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "fertilisation-in-plants",
+  "section": "C",
+  "questionRef": "2010 OL Q14(c)(i)",
+  "questionText": "What is meant by fertilisation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +2(3) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Fusion of gametes or formation of zygote",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) +2(3) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-c-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "where-fertilisation-occurs",
+  "section": "C",
+  "questionRef": "2010 OL Q14(c)(ii)1",
+  "questionText": "Name the part of the flower in each case\n1. Where fertilisation occurs",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +2(3) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Embryo sac or ovule or ovary or carpel",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Each numbered item a response of the \"2(6) +2(3) + 6(2)\" ladder, read after the scheme's own number. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-c-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "part-that-becomes-the-fruit",
+  "section": "C",
+  "questionRef": "2010 OL Q14(c)(ii)2",
+  "questionText": "Name the part of the flower in each case\n2. That becomes the fruit.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +2(3) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Carpel or ovary or receptacle",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Each numbered item a response of the \"2(6) +2(3) + 6(2)\" ladder, read after the scheme's own number. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "embryo-and-dispersal",
+  "section": "C",
+  "questionRef": "2010 OL Q14(c)(iii)",
+  "questionText": "Each seed is made up of an embryo, a food store and a seed coat (testa). One function of fruit is to aid dispersal. Explain each of the underlined terms.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +2(3) + 6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Embryo — (part of seed that) becomes the new plant",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Dispersal — spreading of seeds.",
+    "marks": null
+   }
+  ],
+  "notes": "Two points (\"one per term\"): each printed point its own row, each on the \"2(6) +2(3) + 6(2)\" ladder at its first rate. The paper marks the terms by underlining them, which the text layer drops: the question is shown as printed. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2010-ol-q14c-underlined"
+ },
+ {
+  "id": "bio-2010-ol-q14-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "fruit-dispersal",
+  "section": "C",
+  "questionRef": "2010 OL Q14(c)(iv)",
+  "questionText": "By which method is each of the fruits shown above dispersed?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +2(3) + 6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Blackberries — Animals",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Sycamore fruit — Wind",
+    "marks": null
+   }
+  ],
+  "notes": "Two responses of the \"2(6) +2(3) + 6(2)\" ladder, one per fruit, each printed on its own line with the fruit as its label. The two printed pictures are the card's figure. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q14-fruits"
+ },
+ {
+  "id": "bio-2010-ol-q14-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "germination",
+  "section": "C",
+  "questionRef": "2010 OL Q14(c)(v)",
+  "questionText": "What term is given to the growth of an embryo into a plant?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +2(3) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Germination",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) +2(3) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q14-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "conditions-for-germination",
+  "section": "C",
+  "questionRef": "2010 OL Q14(c)(vi)",
+  "stem": "(v) What term is given to the growth of an embryo into a plant?",
+  "questionText": "In order for this growth to be successful, certain environmental conditions must be present. Name any two of these conditions.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +2(3) + 6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Suitable temperature / moisture / O2",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Suitable temperature",
+      "moisture",
+      "O2"
+     ]
+    },
+    "contextNote": "Allow ‘pH’ and allow ‘light’ if light is linked to ‘some seeds’ or specifically named seed"
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"2(6) +2(3) + 6(2)\" ladder at its first rate. Its bracketed direction allowing pH and light is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "root-hairs",
+  "section": "C",
+  "questionRef": "2010 OL Q15(a)(i)",
+  "stem": "Water is vital for the survival of living things. Plants absorb water from the soil.",
+  "questionText": "Through which microscopic structures does water enter a plant from the soil?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Root hairs",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) +6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "osmosis-into-roots",
+  "section": "C",
+  "questionRef": "2010 OL Q15(a)(ii)",
+  "stem": "Water is vital for the survival of living things. Plants absorb water from the soil.",
+  "questionText": "By what process does water enter a plant?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Osmosis",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) +6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "xylem",
+  "section": "C",
+  "questionRef": "2010 OL Q15(a)(iii)",
+  "stem": "Water is vital for the survival of living things. Plants absorb water from the soil.",
+  "questionText": "Name the tissue that water travels through in a plant.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Xylem",
+    "marks": null,
+    "contextNote": "allow dermal or ground or vascular or phloem"
+   }
+  ],
+  "notes": "One response of the \"2(6) +6(2)\" ladder, carded at its first rate. Its bracketed direction is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "drawing-a-xylem-cell",
+  "section": "C",
+  "questionRef": "2010 OL Q15(a)(iv)",
+  "stem": "Water is vital for the survival of living things. Plants absorb water from the soil. (iii) Name the tissue that water travels through in a plant.",
+  "questionText": "Draw a labelled diagram of one cell of the tissue referred to in (iii) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram — [any two valid structures for three marks]",
+    "marks": 3,
+    "contextNote": "The scheme prints the diagram's band \"3, 0\". The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "vessel or tracheid / pits or rings or spirals / lignin / hollow or dead",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "vessel or tracheid",
+      "pits or rings or spirals",
+      "lignin",
+      "hollow or dead"
+     ]
+    },
+    "contextNote": "[allow valid labels for other given tissue] [three labels]"
+   }
+  ],
+  "notes": "The scheme prices the drawing on its own, \"3, 0\" for the diagram and \"3(1)\" for three labels, beside the part's ladder: the diagram is one criterion row (its band the row's note), the labels \"3(1)\" from the four labels the scheme prints, cut at its own solidus, a menu, claim three, its bracketed directions the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-a-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "water-movement-in-xylem",
+  "section": "C",
+  "questionRef": "2010 OL Q15(a)(v)",
+  "stem": "Water is vital for the survival of living things. Plants absorb water from the soil.",
+  "questionText": "Name one process that causes water to move upwards in a plant.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Root pressure or cohesion or adhesion or capillarity or transpiration",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) +6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-a-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "transpiration-at-night",
+  "section": "C",
+  "questionRef": "2010 OL Q15(a)(vi)",
+  "stem": "Water is vital for the survival of living things. Plants absorb water from the soil.",
+  "questionText": "Consider that night has fallen and the plant is in darkness. Suggest what will happen to the amount of water moving through the plant and give a reason for your answer.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Amount of water moving through the plant: decreases",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Reason — photosynthesis stops or stomata close in darkness or night-time is cooler",
+    "marks": null
+   }
+  ],
+  "notes": "Two responses of the \"2(6) +6(2)\" ladder, each \"(One point)\", a row each. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-a-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "plant-defences",
+  "section": "C",
+  "questionRef": "2010 OL Q15(a)(vii)",
+  "stem": "Water is vital for the survival of living things. Plants absorb water from the soil.",
+  "questionText": "State two ways by which plants have adapted to protect themselves.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) +6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Thorns / stings / bad taste / poison / mimicry / cuticle / heat shock proteins",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Thorns",
+      "stings",
+      "bad taste",
+      "poison",
+      "mimicry",
+      "cuticle",
+      "heat shock proteins"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"2(6) +6(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-b-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "scapula",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(i) — A",
+  "stem": "The diagram shows the bones of the human arm.",
+  "questionText": "Name the parts labelled A, B and C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Shoulder blade",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"3(6) + 6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q15-arm",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Shoulder blade",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Humerus",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ulna",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q15-b-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "humerus",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(i) — B",
+  "stem": "The diagram shows the bones of the human arm.",
+  "questionText": "Name the parts labelled A, B and C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Humerus",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"3(6) + 6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q15-arm",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Shoulder blade",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Humerus",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Ulna",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q15-b-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "ulna",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(i) — C",
+  "stem": "The diagram shows the bones of the human arm.",
+  "questionText": "Name the parts labelled A, B and C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Ulna",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Three responses of the \"3(6) + 6(2)\" ladder, one per letter, cut at the scheme's own semicolons. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q15-arm",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Shoulder blade",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Humerus",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ulna",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2010-ol-q15-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "tendons",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(ii)",
+  "questionText": "What structures attach a muscle to a bone?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Tendons",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "biceps",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(iii)",
+  "stem": "The diagram shows the bones of the human arm.",
+  "questionText": "Which upper arm muscle contracts to raise the lower arm?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Biceps",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q15-arm"
+ },
+ {
+  "id": "bio-2010-ol-q15-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "antagonistic-pair",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(iv)",
+  "questionText": "What is meant by the term antagonistic pair in reference to muscles?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Two) muscles that work in opposition to each other",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "elbow-joint",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(v)",
+  "stem": "The diagram shows the bones of the human arm.",
+  "questionText": "Name the type of joint at the elbow.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Hinge or synovial or moveable",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary",
+  "figureKey": "biology-2010-ol-q15-arm"
+ },
+ {
+  "id": "bio-2010-ol-q15-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "functions-of-the-skeleton",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(vi)",
+  "questionText": "Apart from movement, give one other function of the skeleton.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Protection or body support or shape or blood cell production or muscle attachment",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hollow-bird-bones",
+  "section": "C",
+  "questionRef": "2010 OL Q15(b)(vii)",
+  "questionText": "Suggest one reason why the bones of birds are almost hollow.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To be light or to allow flight",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"3(6) + 6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "drawing-rhizopus",
+  "section": "C",
+  "questionRef": "2010 OL Q15(c)(i)",
+  "stem": "Rhizopus is a type of mould often found growing on stale bread.",
+  "questionText": "Draw a diagram of Rhizopus and on it label a hypha, a sporangium and a sporangiophore.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram — [hypha and sporangiophore as minimum]",
+    "marks": 5,
+    "contextNote": "The scheme prints the diagram's band \"5, 3, 0\"."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Labels — hypha",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Labels — sporangium",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Labels — sporangiophore",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices the drawing on its own, \"5, 3, 0\" for the diagram and \"3(1)\" for its three named labels, beside the part's \"2(6) + 5(2)\" ladder: the diagram one criterion row (its band the row's note), each printed label its own row at 1, cut at the scheme's own solidus. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "nutrition-of-rhizopus",
+  "section": "C",
+  "questionRef": "2010 OL Q15(c)(ii)",
+  "stem": "Rhizopus is a type of mould often found growing on stale bread.",
+  "questionText": "Explain how Rhizopus gets its food.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 5(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Secretes enzymes / onto bread / digests / absorbs products",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Secretes enzymes",
+      "onto bread",
+      "digests",
+      "absorbs products"
+     ]
+    }
+   }
+  ],
+  "notes": "Two responses (\"(Two points)\") from the printed list, cut at the scheme's own solidus: one menu, claim two, each on the \"2(6) + 5(2)\" ladder at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "saprophytic-nutrition",
+  "section": "C",
+  "questionRef": "2010 OL Q15(c)(iii)",
+  "stem": "Rhizopus is a type of mould often found growing on stale bread.",
+  "questionText": "What form of heterotrophic nutrition does Rhizopus have?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 5(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Saprophytic",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 5(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "importance-of-saprophytes",
+  "section": "C",
+  "questionRef": "2010 OL Q15(c)(iv)",
+  "stem": "Rhizopus is a type of mould often found growing on stale bread. (iii) What form of heterotrophic nutrition does Rhizopus have?",
+  "questionText": "Outline the importance of this type of nutrition in nature.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 5(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "It breaks down dead organisms or recycling of nutrients or reusing",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 5(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "kingdom-fungi",
+  "section": "C",
+  "questionRef": "2010 OL Q15(c)(v)",
+  "stem": "Rhizopus is a type of mould often found growing on stale bread.",
+  "questionText": "To what kingdom does Rhizopus belong?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 5(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Fungi",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 5(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "harmful-fungi",
+  "section": "C",
+  "questionRef": "2010 OL Q15(c)(vi)",
+  "stem": "Rhizopus is a type of mould often found growing on stale bread. (v) To what kingdom does Rhizopus belong?",
+  "questionText": "Name one economically harmful member of this kingdom.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 5(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Name or effect — Rhizopus or mildew or rusts or smuts or blight or dry rot (fungus) or athlete’s foot (fungus)",
+    "marks": null
+   }
+  ],
+  "notes": "One response of the \"2(6) + 5(2)\" ladder, carded at its first rate. Its printed \"Name or effect\" is the row's label. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q15-c-vii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "wild-mushrooms",
+  "section": "C",
+  "questionRef": "2010 OL Q15(c)(vii)",
+  "stem": "Rhizopus is a type of mould often found growing on stale bread.",
+  "questionText": "Mushrooms also belong to this kingdom. A restaurant owner decides to collect and cook wild mushrooms from a local forest. Suggest one reason why this may not be a good idea.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 5(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Some could be poisonous",
+    "marks": null,
+    "contextNote": "allow ‘would make you sick’"
+   }
+  ],
+  "notes": "One response of the \"2(6) + 5(2)\" ladder, carded at its first rate. Its bracketed \"allow ‘would make you sick’\" is the row's note. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
  }
 ]

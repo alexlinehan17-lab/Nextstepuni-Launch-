@@ -82,6 +82,333 @@
    460
   ]
  },
+ "biology-2010-ol-q1-carbon": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
+  "md5": "5a802101f9e2370a20203452d28370db",
+  "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q1(a) — A",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   140,
+   109,
+   468,
+   302
+  ]
+ },
+ "biology-2010-ol-q10-pyramid": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q10-pyramid.png",
+  "md5": "c1eb1687ed114c242226fc72fea3c1c3",
+  "alt": "A triangle divided by two horizontal lines into three levels, lettered from the base up: A in the widest bottom level, B in the middle level and C in the narrow top level, with the empty apex above C.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q10(b)(iii) — A",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   238,
+   296,
+   360,
+   393
+  ]
+ },
+ "biology-2010-ol-q10c-passage": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q10c-passage.png",
+  "md5": "7dcfdbcdfa35a4b123fdd96617f3d551",
+  "alt": "Question 10(c) as printed: the passage on the pressure the growing human population puts on wildlife, with the words pollution and conservation underlined, its credit line \"(Adapted from Advanced Biology, 3rd Edition, J. Simpkins, J. I. Williams)\", and below it part (i): \"Explain the underlined words from the passage.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q10(c)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   478,
+   562,
+   614
+  ]
+ },
+ "biology-2010-ol-q11-dna": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q11-dna.png",
+  "md5": "6ca80ccb7825130a0f8af9565fc522c5",
+  "alt": "Diagram of a short section of DNA: two side strands, each a chain of pentagons and circles joined by lines, linked across by two rungs. The upper rung is a box numbered 1 joined to a box lettered A, their ends fitting together in a pointed join; the lower rung is a box lettered G joined to a box numbered 2, their ends fitting together in a curved join.",
+  "lettersVisible": [
+   "1",
+   "2",
+   "A",
+   "G"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q11(c)(i) — 1",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   190,
+   443,
+   420,
+   576
+  ]
+ },
+ "biology-2010-ol-q14-foetus": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q14-foetus.png",
+  "md5": "4d95640dcde424a47e54378f3bbb313a",
+  "alt": "Drawing of a foetus curled up head-down inside the womb, its knees drawn up near the top, its umbilical cord coiled beside it and running to a thick speckled layer on the inner wall of the womb at the left; the narrow neck of the womb is at the bottom. No labels are printed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q14(b)(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   380,
+   358,
+   522,
+   499
+  ]
+ },
+ "biology-2010-ol-q14-fruits": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q14-fruits.png",
+  "md5": "2415c93e8794ed1a891c3d839b34476d",
+  "alt": "Two pictures side by side with printed captions: Blackberries, a photograph of three clusters of round, glossy, dark berries with a leaf behind them; and Sycamore fruit, a drawing of fruits hanging in joined pairs on long stalks beneath leaves, each fruit with a long, flat, veined extension.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q14(c)(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   186,
+   628,
+   418,
+   716
+  ]
+ },
+ "biology-2010-ol-q14-male": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q14-male.png",
+  "md5": "73f0114b7d975384944c6b16084c0b33",
+  "alt": "Outline drawing of the human male reproductive system seen from the side: a large rounded sac at the top, a tube from beneath it running down through the penis, an oval body inside a pouch at the bottom, a lumpy structure at the upper right, and a thin tube looping up from the pouch over the top. A points to a rounded body just below the large sac, B to the tube running down inside the penis, C to the oval body inside the pouch, D to the thin tube rising from the pouch.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q14(a)(i) — A",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   165,
+   66,
+   372,
+   228
+  ],
+  "maskedFurniture": [
+   [
+    165,
+    219,
+    283,
+    228
+   ]
+  ]
+ },
+ "biology-2010-ol-q14c-underlined": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q14c-underlined.png",
+  "md5": "5009b286c3d7871bb6949a1c3ea2f848",
+  "alt": "Part (iii) of Question 14(c) as printed: \"Each seed is made up of an embryo, a food store and a seed coat (testa). One function of fruit is to aid dispersal.\", with the words embryo and dispersal underlined, then \"Explain each of the underlined terms.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q14(c)(iii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   105,
+   580,
+   568,
+   632
+  ]
+ },
+ "biology-2010-ol-q15-arm": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q15-arm.png",
+  "md5": "5dd0225f9f13e831aa96da4ee137094a",
+  "alt": "Drawing of the bones of the human arm, from the top of the arm down to the bones of the hand. A points to a broad, flat bone at the top right; B to the single long bone of the upper arm; C to one of the two long bones of the forearm.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q15(b)(i) — A",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   455,
+   308,
+   566,
+   506
+  ]
+ },
+ "biology-2010-ol-q3-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q3-cell.png",
+  "md5": "590eeb2721685b705167ac72562136e0",
+  "alt": "Drawing of a rectangular cell with a thick outer border and a thin line just inside it, its interior dotted. A large, irregular clear space fills the middle; a dark round shaded body sits at the upper right; six oval bodies, each holding small dark granules, lie around the edge. A points to the large clear space, B to two of the granule-filled oval bodies, C to the thin line just inside the border at the upper right.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q3(a)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   120,
+   84,
+   482,
+   210
+  ]
+ },
+ "biology-2010-ol-q4-table": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q4-table.png",
+  "md5": "7dfa8244951d546003a45b7ce7511f1b",
+  "alt": "Question 4 as printed: the instruction, then the list Dominant, Gamete, Gene, Mutation, Genetics (struck through), Genotype above a two-column table. The first row is the worked example, Genetics in Column A beside \"The study of biological inheritance\" in Column B; rows (i) to (v) leave Column A blank beside the descriptions \"The genetic make up of an individual\", \"A sex cell\", \"A change in the structure of DNA\", \"A part of DNA with information to make one protein\" and \"The allele expressed in the heterozygous condition\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q4(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   488,
+   566,
+   736
+  ]
+ },
+ "biology-2010-ol-q5-ear": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q5-ear.png",
+  "md5": "18d182f6dab0916f8ededfb61d00be41",
+  "alt": "Drawing of the human ear in section, with printed labels Ear lobe (the outer ear flap at the left), Middle ear (pointing into a chamber holding small bones in the middle), Eustachian tube (a tube running down from the middle ear) and Auditory nerve (nerve fibres at the right). A points to a set of looped tubes at the upper right; B points to the coiled, snail-shaped structure at the lower right.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q5(i) — A",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   115,
+   64,
+   430,
+   214
+  ]
+ },
+ "biology-2010-ol-q6-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q6-leaf.png",
+  "md5": "5939b66c301b1a9c82f56288c3e49d98",
+  "alt": "Drawing of a section through a leaf, in layers, each marked by a bracket and letter at the right: V, a single row of flat, clear cells along the top; W, a row of tall, column-shaped cells packed with dark granules; X, rounded cells with fewer granules and spaces between them; Y, a row of small, flat cells along the bottom. In the bottom row two small cells with dotted contents sit side by side with a narrow gap between them, and a short bar marked Z lies beneath them. Faint show-through of printed text lies above the drawing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q6(i)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   152,
+   60,
+   340,
+   232
+  ]
+ },
+ "biology-2010-ol-q8-axes": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q8-axes.png",
+  "md5": "f46549f64dff1f000d817709e4d793e0",
+  "alt": "The blank axes printed for the graph: a vertical axis labelled Rate of enzyme activity and a horizontal axis labelled pH, with no scale and no line drawn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q8(b)(vii)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   140,
+   626,
+   368,
+   782
+  ]
+ },
+ "biology-2010-ol-q9-sections": {
+  "src": "/exam-figures/biology/markbank/biology-2010-ol-q9-sections.png",
+  "md5": "d904c6c0ca80bd63c7459278bb632ca3",
+  "alt": "Two circular cross-section drawings side by side. A: a wide circle with a ridged outer band and, at its centre, a small circle holding a four-armed cross shape with a small round body in each gap between the arms. B: a circle with a thick outer rim and a ring of ten small dark patches spaced evenly just inside the rim, its centre empty.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 OL Q9(b)(iv)",
+  "year": 2010,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   128,
+   658,
+   472,
+   764
+  ]
+ },
  "biology-2011-hl-q11biii-question": {
   "src": "/exam-figures/biology/markbank/biology-2011-hl-q11biii-question.png",
   "md5": "4248ad278df5a75c6d984b9c639ed6fd",
