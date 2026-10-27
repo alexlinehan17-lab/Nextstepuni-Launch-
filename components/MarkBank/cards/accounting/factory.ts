@@ -2,6 +2,8 @@
 import type { AccountingRubric, CardSourceMaterial, SecRubricCard } from '../../../../types/markBank';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 import authored from './authored.json';
+import lifted from './rows.json';
+const ROWS = lifted.cards as Record<string, { how: string; rows: AccountingRubric['rows'] }>;
 
 type AuthoredTask = Omit<(typeof authored.cards)[number], 'level' | 'schemeRegions'> & {
   level: 'higher' | 'ordinary';
@@ -41,7 +43,10 @@ const makeCard = (task: AuthoredTask): SecRubricCard => {
       humanReviewedBy: 'Codex visual PDF audit (no human sign-off claimed)',
       humanReviewedAt: task.reviewedAt,
     },
-    rubric: { system: 'accounting', solution, allocationNote: task.allocationNote, taskFocus: task.taskFocus ?? undefined },
+    rubric: {
+      system: 'accounting', solution, allocationNote: task.allocationNote, taskFocus: task.taskFocus ?? undefined,
+      ...(ROWS[task.id] ? { rows: ROWS[task.id].rows } : {}),
+    },
   };
 };
 

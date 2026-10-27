@@ -9,6 +9,7 @@ import authored from '../components/MarkBank/cards/accounting/authored.json';
 import reviewed2025 from '../scripts/markbank/accounting/reviewed/2025-higher.json';
 import SessionScreen, { rubricMarks } from '../components/MarkBank/SessionScreen';
 import { accountingMark } from '../components/MarkBank/AccountingAssessment';
+import { accountingCardsForLevel } from '../components/MarkBank/cards/accounting/factory';
 import { deckSize, loadCards } from '../components/MarkBank/deck';
 import { questionsForTopics } from '../components/PaperTrail/topics';
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
@@ -190,11 +191,22 @@ describe('Accounting source reader and self-assessment', () => {
     fireEvent.click(solutionButton);
     expect(vi.mocked(vaultPdf).mock.calls.at(-1)?.[0]).toContain('%2Fscheme%2F');
     fireEvent.click(screen.getByRole('button', { name: 'Close worked solution' }));
-    const score = screen.getByRole('spinbutton', { name: 'Your marks out of 75' });
-    fireEvent.change(score, { target: { value: '48.5' } });
-    expect(score).toHaveValue(48.5);
+    // The task's scheme lines are rows the student claims (cards/accounting/rows.json); the stepper is gone.
+    const rows = (current[0].rubric as Extract<typeof current[0]['rubric'], { system: 'accounting' }>).rows!;
+    expect(screen.queryByRole('spinbutton', { name: 'Your marks out of 75' })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: `${rows[1].text} · ${rows[1].marks}m` }));
+    expect(screen.getByText(`${rows[1].marks} of 75 marks claimed`, { exact: false })).toBeInTheDocument();
+  });
+
+  it('keeps the half-mark stepper on a task whose rows are in the residue', async () => {
+    const card = [...accountingCardsForLevel('higher'), ...accountingCardsForLevel('ordinary')].find(candidate => candidate.rubric.system === 'accounting' && !candidate.rubric.rows?.length)!;
+    render(<SessionScreen cards={[card]} subjectLabel="Accounting" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal/ }));
+    const score = await screen.findByRole('spinbutton', { name: `Your marks out of ${card.totalMarks}` });
+    fireEvent.change(score, { target: { value: '4.5' } });
+    expect(score).toHaveValue(4.5);
     fireEvent.click(screen.getByRole('button', { name: 'Add half a mark' }));
-    expect(score).toHaveValue(49);
+    expect(score).toHaveValue(5);
   });
 });
 

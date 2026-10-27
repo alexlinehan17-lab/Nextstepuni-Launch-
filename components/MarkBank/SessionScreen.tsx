@@ -85,7 +85,8 @@ import AppliedMathematicsRubricPanel, {
   type AppliedMathematicsScoreId,
 } from './AppliedMathematicsRubricPanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
-import AccountingAssessment, { accountingMark, accountingScoreId } from './AccountingAssessment';
+import AccountingAssessment, { accountingMarks, accountingScoreId } from './AccountingAssessment';
+import type { AccountingScoreId } from './AccountingAssessment';
 import BusinessRubricPanel from './BusinessRubricPanel';
 import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
@@ -337,7 +338,7 @@ export type IrishScoreId = `irish:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
 export { artMarks, artScoreId };
 export type { ArtScoreId };
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId | FrenchScoreId | BusinessScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -494,7 +495,7 @@ export { geographyMarks, geographyScoreId } from './geographyScoring';
 export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
   if (card.rubric.system === 'applied-mathematics') return appliedMathematicsMarks(card, scores);
-  if (card.rubric.system === 'accounting') return accountingMark(card.totalMarks, scores[accountingScoreId]);
+  if (card.rubric.system === 'accounting') return accountingMarks(card as SecRubricCard & { rubric: Extract<SecRubricCard['rubric'], { system: 'accounting' }> }, scores);
   if (card.rubric.system === 'business') return businessMarks(card, scores);
   if (card.rubric.system === 'french') return frenchMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
@@ -1654,7 +1655,8 @@ const RubricPanel: React.FC<{
     return <AccountingAssessment card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'accounting' }>;
     }} score={props.scores[accountingScoreId] ?? 0}
-      onScore={marks => props.onScore(accountingScoreId, marks)} />;
+      onScore={marks => props.onScore(accountingScoreId, marks)}
+      scores={props.scores} onClaim={(id, value) => props.onScore(id, value)} />;
   }
   if (props.card.rubric.system === 'business') {
     return <BusinessRubricPanel card={props.card as SecRubricCard & {
