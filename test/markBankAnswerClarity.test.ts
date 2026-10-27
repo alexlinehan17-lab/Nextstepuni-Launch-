@@ -36,7 +36,7 @@ import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordi
 import politics from '../components/MarkBank/cards/politics-and-society/authored.json';
 import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
 import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
-import physicalEducation from '../components/MarkBank/cards/physical-education/reviewed.json';
+import { REVIEWED_CARDS as PE_CARDS } from '../components/MarkBank/cards/physical-education/factory';
 import art from '../components/MarkBank/cards/art/authored.json';
 import { isRubricCard, type GeographyAllocation } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
@@ -308,11 +308,56 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(cardsOf(politics).filter(card => /^\s*•\s*\S/m.test((card.rubric?.schemeGuidance ?? []).join('\n'))).length).toBeGreaterThan(0);
   });
 
-  it('PE: priced answers and quality ladders still sit in criterion prose (to convert)', () => {
-    // "Accurate description: 4; some accuracy: 2." and "3 × 2 marks. Load: javelin…"
+  it('PE: every criterion’s guidance is bands and rows that reach exactly its permitted marks; the rest is pinned', () => {
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const criteria = PE_CARDS.flatMap(card => card.rubric.criteria.map(criterion => ({ card, criterion })));
+    const structured = criteria.filter(({ criterion }) => criterion.allocation);
+    for (const { card, criterion } of structured) {
+      const allocation = criterion.allocation!;
+      const corpus = normalise(criterion.guidance.join(' ') + ' ' + criterion.label);
+      for (const band of allocation.bands ?? []) {
+        expect(corpus.includes(normalise(band.label)), `${card.id}/${criterion.label}: band "${band.label}" is not lifted`).toBe(true);
+        for (const mark of band.marks) expect(criterion.permittedMarks, `${card.id}/${criterion.label}: band mark ${mark}`).toContain(mark);
+      }
+      for (const row of allocation.rows ?? []) {
+        expect(row.text.length, `${card.id}/${criterion.label}: empty row`).toBeGreaterThan(0);
+        expect(corpus.includes(normalise(row.text)), `${card.id}/${criterion.label}: row "${row.text.slice(0, 40)}" is not lifted`).toBe(true);
+        expect(row.marks, card.id).toBeLessThanOrEqual(criterion.maxMarks);
+      }
+      if (allocation.caption) expect(corpus.includes(normalise(allocation.caption)), `${card.id}/${criterion.label}: caption is not lifted`).toBe(true);
+      for (const note of allocation.notes) expect(corpus.includes(normalise(note)), `${card.id}/${criterion.label}: note is not lifted`).toBe(true);
+      // What the bands and rows can reach is exactly the permitted marks.
+      let sums = new Set<number>([0]);
+      for (const row of allocation.rows ?? []) {
+        const next = new Set(sums);
+        for (const sum of sums) for (const value of row.steps ?? [row.marks]) next.add(sum + value);
+        sums = next;
+      }
+      if (allocation.bands?.length) {
+        const next = new Set(sums);
+        for (const sum of sums) for (const mark of allocation.bands.flatMap(band => band.marks)) next.add(sum + mark);
+        sums = next;
+      }
+      expect([...sums].sort((a, b) => a - b), `${card.id}/${criterion.label}: reachable marks`).toEqual([...criterion.permittedMarks].sort((a, b) => a - b));
+    }
+    expect(criteria).toHaveLength(1269);
+    expect(structured).toHaveLength(1230);
+    // Guidance whose marks the parser cannot reach exactly: counted items at
+    // two possible values ("1 mark, or 2 marks where …, up to 6"), and prose
+    // over several permitted marks. Rewrite the guidance in a readable shape
+    // and take the criterion off this list.
+    expect(criteria.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`).sort()).toEqual([
+      'pe-2020-hl-q11aiii/c1', 'pe-2020-hl-q13a/c1', 'pe-2020-hl-q15ai/c1', 'pe-2020-hl-q15ai/c2', 'pe-2020-hl-q15ai/c3', 'pe-2021-hl-q13b/c2',
+      'pe-2021-hl-q13c/c1', 'pe-2021-hl-q15bii/c1', 'pe-2021-ol-q6/c1', 'pe-2022-hl-q3/c1', 'pe-2022-hl-q3/c2', 'pe-2023-hl-q13d/c1',
+      'pe-2023-hl-q14aii/c1', 'pe-2023-hl-q15bi/c1', 'pe-2023-hl-q16a/c1', 'pe-2023-hl-q17aii/c1', 'pe-2023-hl-q18b/c1', 'pe-2023-hl-q18di/c1',
+      'pe-2023-hl-q1a/c1', 'pe-2023-hl-q4a/c1', 'pe-2023-hl-q8/c1', 'pe-2023-ol-q15b/c1', 'pe-2023-ol-q16c/c1', 'pe-2023-ol-q16c/c2',
+      'pe-2024-hl-q11b/c1', 'pe-2024-hl-q12a/c1', 'pe-2024-hl-q13aii/c1', 'pe-2024-hl-q16ai/c1', 'pe-2024-hl-q5b/c1', 'pe-2024-hl-q9b/c1',
+      'pe-2025-hl-q15b/c1', 'pe-2025-hl-q16ai/c1', 'pe-2025-hl-q16bii/c1', 'pe-2025-hl-q16c/c1', 'pe-2025-hl-q17a/c1', 'pe-2025-hl-q17c/c1',
+      'pe-2025-hl-q18aii/c1', 'pe-2025-hl-q9b/c1', 'pe-2026-hl-q12/c1',
+    ]);
+    // "Accurate description: 4; some accuracy: 2." and "3 × 2 marks. Load: javelin…" still as prose, in those criteria only.
     const PE_PRICED = /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i;
-    const lines = cardsOf(physicalEducation).reduce((count, card) =>
-      count + (card.rubric?.criteria ?? []).flatMap(criterion => criterion.guidance ?? []).filter(line => PE_PRICED.test(line)).length, 0);
+    const lines = criteria.filter(({ criterion }) => !criterion.allocation).flatMap(({ criterion }) => criterion.guidance).filter(line => PE_PRICED.test(line)).length;
     expect(lines).toBeLessThanOrEqual(BASELINE.physicalEducationLines);
   });
 
@@ -328,7 +373,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 const BASELINE = {
   frenchReading: 1,
   irishExactCriteria: 89,
-  physicalEducationLines: 763,
+  physicalEducationLines: 15,
   artTableCards: 1548,
 };
 
@@ -336,7 +381,7 @@ if (process.env.CLARITY_PRINT) {
   const pick = (card: Guided) => [card.rubric?.answerGuide ?? []];
   console.log(JSON.stringify({
     frenchReading: pricedProseLines(FRENCH_READING_CARDS.filter(card => !card.rubric.allocation), pick),
-    physicalEducationLines: cardsOf(physicalEducation).reduce((count, card) =>
-      count + (card.rubric?.criteria ?? []).flatMap(criterion => criterion.guidance ?? []).filter(line => /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i.test(line)).length, 0),
+    physicalEducationLines: PE_CARDS.flatMap(card => card.rubric.criteria).filter(criterion => !criterion.allocation)
+      .flatMap(criterion => criterion.guidance).filter(line => /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i.test(line)).length,
   }));
 }

@@ -145,7 +145,12 @@ subject-specific generators.
   ("Very good explanation · 8 - 10M") is a row the student places themselves
   on, an exact answer is a claimable row, and the scheme's indicative points
   ("Responses may make reference to") are a visible list labelled as such,
-  never a checklist.
+  never a checklist. Physical Education rows come from
+  `components/MarkBank/cards/physical-education/answers.ts`, which cuts each
+  criterion's reviewed guidance sentence ("Good description: 2; fair
+  description: 1.", "Phase named: 1; … good 2, fair 1", "4 marks + 2 marks",
+  "Vector.") into bands and rows whose reachable marks must equal the
+  criterion's permitted marks; write new PE guidance in those shapes.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.
