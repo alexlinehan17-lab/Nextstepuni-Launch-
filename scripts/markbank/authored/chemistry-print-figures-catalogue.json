@@ -6954,5 +6954,226 @@
   "description": "The marking scheme's own print of its answer to 2010 OL Q8(d), as the State Examinations Commission set it: a graph on graph paper, \"Vol. cm³\" up the vertical axis from 0 to 60 in tens and \"Time min.\" along the horizontal axis from 0 to 16 in twos; crosses at 0, 2, 4, 6, 8, 12, 14 and 16 minutes, joined by a curve that rises steeply from the origin and runs level at 55 from 12 minutes.",
   "questionRef": "2010 OL Q8(d)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q2a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2011 HL Q2(a): \"(a) Reflux is a widely used technique in organic chemistry.\" \"Identify an experiment from your course where you refluxed a mixture.\" \"Draw a fully labelled diagram of the reflux apparatus used in this experiment.\", the words \"fully labelled\" underlined; \"What happened to the liquid in the flask during reflux?\" \"How did refluxing this mixture help bring the reaction to completion?\" and its mark \"(30)\".",
+  "questionRef": "2011 HL Q2(a)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "a line drawing of an apparatus, unlabelled: a conical flask holding water, a tall open tube rising out of its stopper, joined by a bent tube to a pear-shaped flask holding plant material; from that flask a sloping condenser with two side tubes leads down into a small beaker.",
+  "questionRef": "2011 HL Q2(b)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "five drawings captioned \"Stage 1 Dissolving\", \"Stage 2 Hot filtration\", \"Stage 3 Crystallisation\", \"Stage 4 Filtration\" and \"Stage 5 Drying\": a conical flask of liquid and solid with a dropper in it, a line from the dropper labelled \"Boiling water\"; a fluted filter paper in a funnel on a conical flask, a line from the paper labelled \"A\"; a conical flask with crystals at the bottom; a flask pouring crystals into a wide funnel with a dashed line across it, sitting on a side-arm flask, a line from the funnel labelled \"B\" and an arrow from the side arm's tube labelled \"to suction\"; and crystals spread on a dish.",
+  "questionRef": "2011 HL Q3"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "an engraved portrait, head and shoulders, of a man with long hair and a long beard, in a jacket; the paper says Mendeleev is \"pictured on the right\".",
+  "questionRef": "2011 HL Q5(b)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q6e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2011 HL Q6(e): \"(e) Steam reforming takes place according to the following balanced equation:\" over, in bold, \"CH₄ (g) + H₂O (g) → CO (g) + 3H₂ (g)\", the state symbols set as subscripts; \"Calculate the heat of this steam reforming reaction given that the heats of formation of methane, steam and carbon monoxide are –74.6, –242 and –111 kJ mol⁻¹ respectively.\" and its mark \"(12)\".",
+  "questionRef": "2011 HL Q6(e)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q9a-write-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2011 HL Q9(a): \"(a) Hydrogen iodide, when placed in a sealed vessel at 700 K, decomposes to form hydrogen gas and iodine vapour. An equilibrium, described by the following balanced equation, is established.\" over, in bold, \"2HI (g) ⇌ H₂ (g) + I₂ (g) ΔH = 10.4 kJ\", the equilibrium arrow drawn as two half-arrows and the state symbols set as subscripts; then \"Write the equilibrium constant (Kc) expression for this reaction.\" and its mark \"(5)\".",
+  "questionRef": "2011 HL Q9(a)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q9a-calc-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2011 HL Q9(a): \"(a) Hydrogen iodide, when placed in a sealed vessel at 700 K, decomposes to form hydrogen gas and iodine vapour. An equilibrium, described by the following balanced equation, is established.\" over, in bold, \"2HI (g) ⇌ H₂ (g) + I₂ (g) ΔH = 10.4 kJ\", the equilibrium arrow drawn as two half-arrows and the state symbols set as subscripts; then \"Calculate the equilibrium concentration of hydrogen gas when 5 moles of hydrogen iodide decompose in a 12 litre vessel at 700 K. The value of Kc at this temperature is 0.0185.\" and its mark \"(18)\".",
+  "questionRef": "2011 HL Q9(a)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q9b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "in bold, \"Co(H₂O)₆²⁺ + 4Cl⁻ ⇌ CoCl₄²⁻ + 6H₂O\", the equilibrium arrow drawn as two half-arrows, with \"pink\" printed under Co(H₂O)₆²⁺ and \"blue\" under CoCl₄²⁻.",
+  "questionRef": "2011 HL Q9(b)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q10a-draw-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2011 HL Q10(a): \"There is a slow exothermic reaction between hydrogen and oxygen gases mixed in a 2:1 ratio at room temperature but the reaction becomes violently rapid if powdered platinum catalyst is added.\" then \"Draw a clearly labelled reaction profile diagram for the reaction with and without the catalyst.\", the word \"and\" underlined, and its mark \"(8)\".",
+  "questionRef": "2011 HL Q10(a)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q10c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "a grey photograph of an old leather shoe seen from above, its lacing running down its middle; the paper says the world's oldest shoe \"is pictured on the right\".",
+  "questionRef": "2011 HL Q10(c)"
+ },
+ {
+  "file": "chemistry-2011-HL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "a black-and-white photograph, head and shoulders, of a smiling man with glasses and short hair, in a jacket and tie; the paper says Roy Plunkett is \"pictured on the right\".",
+  "questionRef": "2011 HL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q1e-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q1(e)(i), as the State Examinations Commission set it: \"0.0322 / 0.032 M\" and its mark \"(9)\"; boxed, \"(25 × X)\" over \"1\" = \"(16.1 × 0.1)\" over \"2\", set as fractions, \"(6)\", then \"X = 0.0322 / 0.032 (3)\".",
+  "questionRef": "2011 HL Q1(e)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q2(a), as the State Examinations Commission set it: a drawing of reflux apparatus: a round-bottomed flask sitting in a heated bath under an upright condenser, with the labels \"Water out\" at an arrow near the top of the condenser, \"Condenser\", \"Water in\" at an arrow near its foot, \"Flask\" and \"Heat\".",
+  "questionRef": "2011 HL Q2(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q4e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q4(e), as the State Examinations Commission set it: \"x = 7\" and its mark \"(6)\"; boxed, \"2.00\" over \"2.10\" = \"120\" over \"18x\" / \"2\" over \"120\" : \"2.1\" over \"18\", set as fractions, \": MgSO₄.xH₂O = 246 / water = 126 (3) => x = 7 (3)\", then \"[Additions must be shown for error to be treated as a slip]\".",
+  "questionRef": "2011 HL Q4(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q5d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q5(d)(ii), as the State Examinations Commission set it: \"WRITE: 1s²2s²2p⁶3s²3p⁶4s²3d⁵ / [Ar]4s²3d⁵ / 1s²2s²2p⁶3s²3p⁶3d⁵4s² / [Ar]3d⁵4s² (6)\" in bold, over an italic note: \"[Accept\" a p with the subscripts x, y and z set under the superscripts 2, 2 and 2, \"for\" p written three times with the subscripts x, y and z and the superscript 2, \"or p⁶; accept subscripts.]\".",
+  "questionRef": "2011 HL Q5(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q6b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q6(b), as the State Examinations Commission set it: a drawing of a column captioned \"FRACTIONATING COLUMN\": \"HOT CRUDE OIL\" entering near its base, trays inside it labelled \"TRAY\" and \"BUBBLE CAP\", arrows out of its side labelled \"OUTLETS\", \"GAS\" leaving at the top and \"RESIDUE\" at the bottom.",
+  "questionRef": "2011 HL Q6(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q6(e), as the State Examinations Commission set it: \"(e) CALC: ΔH = 205.6 kJ mol⁻¹ (12)\"; boxed, \"CH₄ → C + 2H₂ ΔH = 74.6 kJ (3)\", \"C + ½O₂ → CO ΔH = –111 kJ (3)\", \"H₂O → H₂ + ½O₂ ΔH = 242 kJ (3)\" and under a rule \"CH₄ + H₂O → CO + 3H₂ ΔH = 205.6 kJ (3)\"; then \"Equations not required\", \"ΔH(reaction) = ΣΔHf(products) – ΣΔHf(reactants) = – 111 (3) – {– 74.6 (3) – 242 (3)}\", \"or = – 111 (3) + 74.6 (3) + 242 (3)\" and \"= 205.6 kJ (3)\".",
+  "questionRef": "2011 HL Q6(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q7d-def.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q7(d), as the State Examinations Commission set it: \"(d) DEF: minus log (negative log) to base 10 of hydrogen (hydronium) ion concentration /\" over, in bold, \"– log₁₀[H⁺] / – log₁₀[H₃O⁺] / log₁₀\" 1 over [H⁺] \"/ log₁₀\" 1 over [H₃O⁺], set as fractions, and the mark \"(6)\".",
+  "questionRef": "2011 HL Q7(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q7d-calc.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q7(d), as the State Examinations Commission set it: \"CALC: pH = 2.45 (9)\"; boxed, \"Ka =\" [H⁺][A⁻] over [HA] \"/\" [H⁺]² over 0.2, set as fractions, \"= 6.3 × 10⁻⁵ / [H⁺]² = 1.26 × 10⁻⁵ (3)\", \"⇒ [H⁺] = 3.5 × 10⁻³ (3)\" and \"⇒ pH = 2.45 (3)\"; \"or\" two boxes, \"pH = – log₁₀ √Ka[M] = – log₁₀ √[6.3 × 10⁻⁵]. [0.2] pH = 2.45\" and \"[H⁺] = √Ka[M] = √[6.3 × 10⁻⁵]. [0.2] pH = 2.45\", the root signs drawn; then \"CONC: 1.75 × 10⁻³ – 1.77 × 10⁻³ (5)\" and, boxed, \"[H⁺] / inv. log – pH / inv. log – 2.45 = 3.55 × 10⁻³ / 3.5 × 10⁻³ (3)\" and \"⇒ M = 3.55 × 10⁻³ ÷ 2 = 1.77 × 10⁻³ / 1.75 × 10⁻³ (2)\".",
+  "questionRef": "2011 HL Q7(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q8a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q8(a), as the State Examinations Commission set it: \"(a) DESC: initiation: homolysis (splitting) of chlorine molecule (Cl₂) into free radicals (Cl•) by ultraviolet (uv) light / Cl₂ → 2Cl•//\", \"uv\" printed over the arrow; \"propagation: reaction of chlorine radical (Cl•) with methane molecule (CH₄) to give hydrogen chloride (HCl) and a methyl radical (CH₃•) / Cl• + CH₄ → HCl + CH₃• //\", \"reaction of methyl radical (CH₃•) with a chlorine molecule (Cl₂) to give monochloromethane (CH₃Cl) and a chlorine radical (Cl•) / CH₃• + Cl₂ → CH₃Cl + Cl• //\", \"chain reaction occurs //\"; \"termination: combination of remaining radicals to form molecules / Cl• + CH₃• → CH₃Cl / 2Cl• → Cl₂ / CH₃• + CH₃• → C₂H₆\" and \"ANY FOUR: (4 × 3)\".",
+  "questionRef": "2011 HL Q8(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q8a-evidence.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q8(a), as the State Examinations Commission set it: \"STATE: three × [piece of evidence // corresponding explanation] 3 × (2 × 3)\" over a table headed \"PIECE OF EVIDENCE\" and \"CORRESPONDING EXPLANATION*\", seven rows: \"promoted by uv at room temp\", \"effect of uv suggests free radical mech. / photons (uv, hυ) split Cl₂ / energy unable to split C – H / accept does not take place in the dark at room temp.\"; \"for every photon absorbed many chloromethane molecules formed\", \"evidence for chain reaction or propagation\"; \"ethane formed\", \"shows CH₃• present / 2CH₃•→ C₂H₆ [not given from termination above]\"; \"add source of free radicals {tetra-methyl (tetraethyl) lead}\", \"only free radical mech. would be affected / increased rate / ionic addition unaffected / free radicals promote chain reaction\"; \"inhibitors (e.g. oxygen) slow reaction\", \"inhibition sure indicator of chain reaction / inhibitor (O₂) combines with radicals (CH₃•) / inhibitor (O₂) stops chain formation\"; \"no H₂ produced\", \"no H• formed / C – H not split by uv\"; \"HCl produced\", \"shows Cl• produced / proves Cl• attacks CH₄\"; and under it \"*Piece of evidence and explanation must be matched\".",
+  "questionRef": "2011 HL Q8(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q9a-write.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q9(a), as the State Examinations Commission set it: \"(a) WRITE:\" and, in bold, \"[H₂][I₂]\" over \"[HI]²\", set as a fraction, with the mark \"(5)\".",
+  "questionRef": "2011 HL Q9(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q9a-calc.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q9(a), as the State Examinations Commission set it: \"CALC: 0.044 – 0.045 mol l⁻¹ (18)\" over two boxes side by side. The first: \"Let x = number of moles of hydrogen at equilibrium\", \"2HI ⇌ H₂ + I₂\", \"Start: 5 mol 0 mol 0 mol\", \"Equil: (5 – 2x) mol x mol x mol (3)\", x² over [5–2x]² \"= 0.0185 (6)\", \"x = 0.53 – 0.54 mol (6)\" and \"Conc: 0.53 ÷ 12 = 0.044 – 0.045 mol l⁻¹ (3)\". The second: \"Let x = molar conc. of hydrogen at equilibrium\", \"Volume of container = 12 litres\", \"2HI ⇌ H₂ + I₂\", \"Start: 5 mol 0 mol 0 mol\", \"Conc: 0.42 M 0 M 0 M (3)\", \"Equil: (0.42 – 2x) M x M x M (3)\", x² over [0.42–2x]² \"= 0.0185 (6)\" and \"x = 0.044 – 0.045 mol l⁻¹ (6)\".",
+  "questionRef": "2011 HL Q9(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q10a-define.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q10(a), as the State Examinations Commission set it: \"(a) DEFINE: change in concentration per unit time / rate of change of concentration /\" over \"change in concentration\" over \"time\", set as a fraction, and the mark \"(5)\".",
+  "questionRef": "2011 HL Q10(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q10a-draw.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q10(a), as the State Examinations Commission set it: a drawing of two reaction profiles on unlabelled axes: a level line rising to a tall peak labelled \"UNCATALYSED\" and to a lower peak labelled \"CATALYSED\", both falling to a level line below the first.",
+  "questionRef": "2011 HL Q10(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q10c-write.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q10(c), as the State Examinations Commission set it: \"WRITE:\" and, in bold, \"¹⁴₆C → ⁰₋₁e + ¹⁴₇N\", the mass and atomic numbers set above and below each symbol, with the mark \"(2 × 3)\"; under it \"[Accept β for e]\".",
+  "questionRef": "2011 HL Q10(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q11c-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q11(c)A(iii), as the State Examinations Commission set it: \"(iii) DRAW:\" a chain of four carbons drawn in full, \"—C—C—C—C—\", each with an F bonded above and an F below; then \"/ – CF₂ – CF₂ – CF₂ – CF₂ –\" and \"[End bonds not reqd.]\".",
+  "questionRef": "2011 HL Q11(c)A(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q11c-a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q11(c)A(iv), as the State Examinations Commission set it: \"(iv) GIVE: first property // use of first // second property // use of second (4 × 3)\" over a table headed \"PROPERTY\" and \"USE\": \"Inert (unreactive, stable)\", \"Artificial blood vessels / containers / tubing / plumbing tape\"; \"Temperature tolerant\", \"Cooking utensils (or named utensil)\"; \"Hydrophobic (repellent, non-stick)\", \"Cooking utensils (or named utensil) / clothing ( fabric, Gore-Tex)\"; \"Corrosion resistant\", \"Artificial blood vessels / containers / tubing / plumbing tape\"; \"Low friction\", \"Lubrication / bearings / gears\".",
+  "questionRef": "2011 HL Q11(c)A(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-HL-scheme-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 HL Q11(c)B, as the State Examinations Commission set it: \"OUTLINE: decomposition of oxygen molecule into oxygen atoms (radicals) by high-energy ultraviolet (uv) light / O₂ → 2O• //\", \"uv\" printed over the arrow, then \"reaction of oxygen atom (radical) with oxygen molecule forming ozone / O• + O₂ → O₃\" and the mark \"(4 + 3)\".",
+  "questionRef": "2011 HL Q11(c)B",
+  "solution": true
  }
 ]

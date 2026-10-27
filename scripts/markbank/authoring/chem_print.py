@@ -1165,6 +1165,21 @@ def display(t):
     return tidy(t)
 
 
+# 2011 HL: the paper sets three of its heads in one run with their words, as the 2013
+# Higher paper does: "8. Answer the questions below about methane ..." (page 5, x 50, y 620),
+# "10. Answer any two of the parts (a), (b) and (c)." (page 6, x 50, y 379) and "11. Answer
+# any two ..." (page 7, x 50, y 42); its other eight heads stand alone ("9.", page 6, x 50,
+# y 41). Unread, the paper reader found Questions 1-7 only and filed Q8-Q11 under Q7(d)
+# (twenty phantom Q7(d) romans). No other line of the 2011 Higher paper opens with a number,
+# a full stop and words. The sitting joins split_heads' set (OLD_OL_HEADS, above). Its page
+# 7 sets Q11(c)'s choice "Answer either part A or part B." (x 72, y 328), the words
+# PAPER_ALT_LETTERS reads for 2013 HL: unread, B's romans fell on A's (Q11(c)(i) "Identify
+# the monomer ... (4) What are CFC molecules? (3)"). Its alternatives are read as the paper
+# sets them.
+OLD_OL_HEADS.add((2011, 'hl'))
+PAPER_ALT_LETTERS[(2011, 'hl')] = {('11', 'c')}
+
+
 class Printed:
     """One sitting in the printed layout: its paper and its scheme, split into parts."""
 
@@ -1269,6 +1284,18 @@ class Printed:
                         and abs(l.x0 - 49.7) < 1 and abs(l.y0 - 48.6) < 1]
                 assert len(head) == 1, head
                 head[0].text = 'QUESTION ' + num
+        if (year, lvl) == (2011, 'hl'):
+            # 2011 HL scheme PDF pages 3-18 print the running footer "ATAL Chemistry Marking
+            # Scheme 2011" (x 50, y 783), which neither FOOTER nor OLD_OL_FOOTER reads, and
+            # page 8 heads Section B "SECTION B" (x 249, y 36), which HEADER ("Section B")
+            # does not. In a labelled scheme every line is answer: each was filed as an
+            # answer of the part before it (Q1(f)(ii) "ATAL Chemistry Marking Scheme 2011",
+            # Q3(g) "ATAL Chemistry Marking Scheme 2011 SECTION B"). None is marking; dropped.
+            furniture = [l for l in self.scheme_lines if (
+                l.y0 > 775 and l.text == 'ATAL Chemistry Marking Scheme 2011') or (
+                l.page == 8 and l.text == 'SECTION B' and abs(l.y0 - 36.1) < 1)]
+            assert len(furniture) == 17, furniture
+            self.scheme_lines = [l for l in self.scheme_lines if not any(l is f for f in furniture)]
         if (year, lvl) == (2011, 'ol'):
             # 2011 OL scheme PDF pages 3-15 print the running footer "ATGL Chemistry 2011",
             # "Marking Scheme", "Page 3 of 13" as three runs at y 761.5 (x 52, 257, 493-497).

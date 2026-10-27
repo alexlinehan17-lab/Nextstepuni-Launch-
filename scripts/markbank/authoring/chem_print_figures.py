@@ -277,6 +277,11 @@ MASKS = {
     # "dropping funnel and buchner //" (scheme page 5, x 192-333, y 450-463; dark pixels 0-52 x
     # 59-73 of the crop), whited out; the drawing's own pixels start at column 91 in those rows.
     'chemistry-2012-OL-scheme-q1d.png': [(0, 55, 58, 77)],
+    # 2011 HL scheme Q6(b): the fractionating column's labels ("BUBBLE CAP", "HOT CRUDE OIL") stand
+    # left of the end of the answer line "column / heated at bottom of column / heated below trays
+    # //" (scheme page 10, x 113-392, y 112-124); the crop catches its tail "s //" (dark pixels 1-27
+    # x 72-86 of the crop), whited out; the drawing's own pixels in those rows start at column 70.
+    'chemistry-2011-HL-scheme-q6b.png': [(0, 68, 30, 90)],
     # 2013 HL Q2(e): the top of the steam distillation apparatus stands level with the foot of
     # (c)'s mark "(12)" (paper page 3, x 528-557, y 160-172; dark pixels 339-375 x 0-17 of the
     # crop), whited out; the apparatus's own pixels in those rows end at column 58.
