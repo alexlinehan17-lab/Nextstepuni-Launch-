@@ -140,7 +140,12 @@ subject-specific generators.
   which cuts the welded exact guidance at its "= 2 mharc" prices into
   sub-questions and rows; a scheme excerpt that `irish_cards.py` cut short or
   started mid-question cannot reconcile and stays prose, so fix the excerpt,
-  not the parser.
+  not the parser. Politics and Society rows and ladders come from
+  `components/MarkBank/cards/politics-and-society/answers.ts`: a quality band
+  ("Very good explanation · 8 - 10M") is a row the student places themselves
+  on, an exact answer is a claimable row, and the scheme's indicative points
+  ("Responses may make reference to") are a visible list labelled as such,
+  never a checklist.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

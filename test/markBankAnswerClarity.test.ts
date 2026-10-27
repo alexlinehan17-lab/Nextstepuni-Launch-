@@ -34,6 +34,8 @@ import irish from '../components/MarkBank/cards/irish/authored.json';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import politics from '../components/MarkBank/cards/politics-and-society/authored.json';
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
 import physicalEducation from '../components/MarkBank/cards/physical-education/reviewed.json';
 import art from '../components/MarkBank/cards/art/authored.json';
 import { isRubricCard, type GeographyAllocation } from '../types/markBank';
@@ -254,10 +256,56 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(welded).toBeLessThanOrEqual(BASELINE.irishExactCriteria);
   });
 
-  it('Politics: bullet answers still sit in a closed details box (to convert)', () => {
-    const bulleted = cardsOf(politics).filter(card =>
-      /^\s*•\s*\S/m.test((card.rubric?.schemeGuidance ?? []).join('\n'))).length;
-    expect(bulleted).toBeLessThanOrEqual(BASELINE.politicsBulletCards);
+  it('Politics: every card’s scheme is ladders and rows, or a visible list; what is still a list is pinned by id', () => {
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const cards = [...POLITICS_HIGHER, ...POLITICS_ORDINARY].filter(card => card.rubric.system === 'politics');
+    const structured = cards.filter(card => card.rubric.system === 'politics' && card.rubric.allocation);
+    for (const card of structured) {
+      if (card.rubric.system !== 'politics') continue;
+      const { allocation, criteria, schemeGuidance } = card.rubric;
+      const corpus = normalise([...(schemeGuidance ?? []), ...criteria.flatMap(criterion => [criterion.label, ...(criterion.bands ?? []).flatMap(band => [band.label, band.guidance])])].join(' '));
+      let total = 0;
+      for (const part of allocation!.parts) {
+        expect(part.bands || part.rows, `${card.id}: part without bands or rows`).toBeTruthy();
+        if (part.caption) expect(corpus.includes(normalise(part.caption)), `${card.id}: caption "${part.caption.slice(0, 40)}" is not lifted`).toBe(true);
+        for (const band of part.bands ?? []) {
+          expect(corpus.includes(normalise(band.label)), `${card.id}: band "${band.label}" is not lifted`).toBe(true);
+          if (band.descriptor) expect(corpus.includes(normalise(band.descriptor)), `${card.id}: descriptor is not lifted`).toBe(true);
+          for (const mark of band.marks) expect(mark, card.id).toBeLessThanOrEqual(part.max);
+        }
+        if (part.bands) expect(Math.max(...part.bands.flatMap(band => band.marks)), `${card.id}: ladder top`).toBe(part.max);
+        for (const row of part.rows ?? []) {
+          expect(row.text.length, `${card.id}: empty row`).toBeGreaterThan(0);
+          expect(corpus.includes(normalise(row.text)), `${card.id}: row "${row.text.slice(0, 40)}" is not lifted`).toBe(true);
+          expect(row.marks, card.id).toBeLessThanOrEqual(part.max);
+        }
+        if (part.ladder) expect(part.ladder.at(-1), card.id).toBe(part.max);
+        total += part.max;
+      }
+      expect(total, `${card.id}: parts add to ${total}`).toBe(card.totalMarks);
+      for (const line of [...allocation!.examples, ...allocation!.directions]) {
+        expect(corpus.includes(normalise(line)), `${card.id}: "${line.slice(0, 40)}" is not lifted`).toBe(true);
+      }
+    }
+    expect(cards).toHaveLength(623);
+    expect(structured).toHaveLength(580);
+    // Split cards whose block carries a sibling's ladder or answers, and
+    // theorist/model pairs the scheme prints as bare names. Fix a card's
+    // block and take it off this list.
+    expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id).sort()).toEqual([
+      'politics-2018-hl-q1-c', 'politics-2018-hl-q1-e', 'politics-2018-hl-q1-k', 'politics-2018-ol-q1-a', 'politics-2018-ol-q1-b-i',
+      'politics-2018-ol-q1-d', 'politics-2018-ol-q1-e-i', 'politics-2018-ol-q1-e-ii-limitation', 'politics-2018-ol-q1-e-ii-strength',
+      'politics-2018-ol-q1-g-example', 'politics-2018-ol-q1-i-example', 'politics-2018-ol-q1-j-example', 'politics-2018-ol-q1-k-example',
+      'politics-2018-ol-q1-o-i', 'politics-2019-hl-q1-i', 'politics-2019-hl-q1-k', 'politics-2019-ol-q1-e', 'politics-2019-ol-q1-f',
+      'politics-2019-ol-q1-j-example', 'politics-2019-ol-q3-c', 'politics-2020-hl-q1-l', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-d-thinker',
+      'politics-2021-ol-q1-q-iii', 'politics-2022-hl-q1-a', 'politics-2022-hl-q1-c-thinker', 'politics-2022-ol-q1-d-i', 'politics-2022-ol-q1-d-ii',
+      'politics-2022-ol-q1-e', 'politics-2023-hl-q1-h', 'politics-2024-hl-q2-c', 'politics-2024-ol-q1-d-ii', 'politics-2024-ol-q1-d-iii',
+      'politics-2025-hl-q1-o-theory', 'politics-2025-hl-q1-o-thinker', 'politics-2025-ol-q1-d-ii', 'politics-2025-ol-q1-d-iii', 'politics-2025-ol-q3-c',
+      'politics-2026-hl-q1-k-example', 'politics-2026-hl-q2-c', 'politics-2026-ol-q1-d-i', 'politics-2026-ol-q1-k', 'politics-2026-ol-q1-p',
+    ]);
+    // No card hides its answers in a closed box any more: the bullets are a
+    // visible list on every card, structured or not.
+    expect(cardsOf(politics).filter(card => /^\s*•\s*\S/m.test((card.rubric?.schemeGuidance ?? []).join('\n'))).length).toBeGreaterThan(0);
   });
 
   it('PE: priced answers and quality ladders still sit in criterion prose (to convert)', () => {
@@ -280,7 +328,6 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 const BASELINE = {
   frenchReading: 1,
   irishExactCriteria: 89,
-  politicsBulletCards: 215,
   physicalEducationLines: 763,
   artTableCards: 1548,
 };
