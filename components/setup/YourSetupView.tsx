@@ -14,6 +14,7 @@ import PageHeader from '../ui/PageHeader';
 import ThemeArtwork from '../ThemeArtwork';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import { useStudyNotifications } from '../../hooks/useStudyNotifications';
+import { useSettingsContext } from '../../contexts/SettingsContext';
 import type { StudentSubjectProfile, YearGroup } from '../subjectData';
 import type { NorthStar } from '../../types';
 import { canEditExamDate, examDateBounds, examDateProblem, summariseSetup } from './yourSetupModel';
@@ -115,6 +116,9 @@ export default function YourSetupView({
   const mobileAppDesign = useMobileAppDesign();
   const setup = summariseSetup(profile, northStar, yearGroup);
   const notify = useStudyNotifications();
+  // Settings are optional here (tests render the page without a provider).
+  const settingsContext = useSettingsContext();
+  const quizOn = settingsContext?.settings.studyQuiz !== false;
 
   return (
     <KobraScope className="nsu-your-setup">
@@ -229,10 +233,23 @@ export default function YourSetupView({
               </Tabs>
             </Section>
 
+            {settingsContext && (
+              <Section index="06" title="After each session">
+                <h2 id="ys-06" className="ys-value">{quizOn ? 'Quiz on' : 'Quiz off'}</h2>
+                <p className="ys-meta">A few real exam questions on what you just studied, marked by you. Takes about five minutes.</p>
+                <Tabs value={quizOn ? 'on' : 'off'} onValueChange={value => settingsContext.updateSetting('studyQuiz', value === 'on')}>
+                  <TabsList aria-label="End-of-session quiz">
+                    <TabsTrigger value="off">Off</TabsTrigger>
+                    <TabsTrigger value="on">On</TabsTrigger>
+                  </TabsList>
+                </Tabs>
+              </Section>
+            )}
+
             {/* Only where this device can show one (not iPhone or iPad Safari). */}
             {notify.available && (
-              <Section index="06" title="Notifications">
-                <h2 id="ys-06" className="ys-value">{notify.enabled ? 'On' : 'Off'}</h2>
+              <Section index="07" title="Notifications">
+                <h2 id="ys-07" className="ys-value">{notify.enabled ? 'On' : 'Off'}</h2>
                 <p className="ys-meta">One notification when your study time is up, so you can work in another app while the timer runs.</p>
                 <Tabs value={notify.enabled ? 'on' : 'off'} onValueChange={value => { if (value === 'on') void notify.turnOn(); else notify.turnOff(); }}>
                   <TabsList aria-label="Study timer notifications">
