@@ -15,6 +15,7 @@ import type {
 } from '../../../../types/markBank';
 import authored from './authored.json';
 import { irishAnswersFor } from './answers';
+import { irishTariffsFor } from './tariffs';
 
 type IrishLevel = 'higher' | 'ordinary';
 
@@ -44,11 +45,27 @@ const DATA = authored.cards as AuthoredIrishCard[];
  *  into rows where the parts add up to the criterion (cards/irish/answers.ts). */
 const EXACT_ANSWER_CARD = /Cluastuiscint|Léamhthuiscint/;
 
+/** Literature cards price what the student must do rather than list answers;
+ *  their Eolas tariff is cut into rows by cards/irish/tariffs.ts, as is the last
+ *  reading question's composite tariff when the answer cutter cannot read it. */
+const LITERATURE_CARD = /Prose|Poetry|Literature/;
+const COMPOSITE_READING = /Léamhthuiscint .* Ceist 6/;
+const PRICED = /\d+\s*m?h?arc\b/;
+
+const allocationFor = (card: AuthoredIrishCard, criterion: AuthoredIrishCard['criteria'][number]) => {
+  const source = { id: card.id, totalMarks: criterion.maxMarks, questionRef: card.questionRef, questionText: card.questionText, guidance: criterion.guidance };
+  if (criterion.guidanceKind === 'exact' && EXACT_ANSWER_CARD.test(card.questionRef)) {
+    return irishAnswersFor(source) ?? (COMPOSITE_READING.test(card.questionRef) ? irishTariffsFor(source) : undefined);
+  }
+  if (criterion.guidanceKind === 'indicative' && LITERATURE_CARD.test(card.questionRef) && criterion.guidance.some(line => PRICED.test(line))) {
+    return irishTariffsFor(source);
+  }
+  return undefined;
+};
+
 const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
-    const allocation = criterion.guidanceKind === 'exact' && EXACT_ANSWER_CARD.test(card.questionRef)
-      ? irishAnswersFor({ id: card.id, totalMarks: criterion.maxMarks, questionRef: card.questionRef, questionText: card.questionText, guidance: criterion.guidance })
-      : undefined;
+    const allocation = allocationFor(card, criterion);
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],
