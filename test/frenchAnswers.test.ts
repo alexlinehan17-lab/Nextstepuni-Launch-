@@ -134,10 +134,21 @@ describe('French scheme lines become claimable rows', () => {
     expect(frenchMarks(card, { [frenchRowScoreId('r1')]: 1 })).toBe(0);
   });
 
-  it('leaves opinion questions alone: their points are priced in the general scheme, not on the card', () => {
-    expect(parseFrenchAnswers(frenchAnswerSource(byId('fr-2026-hl-reading-a1-q6')))).toEqual({ ok: false, reason: 'unpriced bullets' });
-    expect(byId('fr-2026-hl-reading-a1-q6').rubric.allocation).toBeUndefined();
-    expect(byId('fr-2026-ol-reading-a3-q8').rubric.allocation).toBeUndefined();
+  it('prices an opinion question’s accepted points as the total shared equally, placed at the partial mark where the scheme gives one', () => {
+    // "Any two of:" over the points the scheme accepts, priced only in its general rule: 10 marks is two points at 5.
+    const higher = allocationOf('fr-2026-hl-reading-a1-q6');
+    expect(higher.count).toBe(2);
+    expect(higher.ladder).toBeUndefined();
+    expect(higher.rows.every(row => row.marks === 5 && !row.steps)).toBe(true);
+    expect([...new Set(higher.rows.map(row => row.part))]).toEqual(['Agree:', 'Disagree:']);
+    // Ordinary Q8: 8 marks is two points at 4, each placed at 2 where the answer is partially correct.
+    const ordinary = allocationOf('fr-2026-ol-reading-a3-q8');
+    expect(ordinary.count).toBe(2);
+    expect(ordinary.rows.every(row => row.marks === 4 && row.steps?.join() === '2,4')).toBe(true);
+    expect(ordinary.directions.some(note => /Award 2 marks if answer is partially correct/i.test(note))).toBe(true);
+    expect(frenchAllocationMarks(8, ordinary, { [frenchRowScoreId('r1')]: 4, [frenchRowScoreId('r2')]: 2 })).toBe(6);
+    // 2015 Higher Q6: the ledger permits even marks only, so two points at 5 is not a step it allows.
+    expect(parseFrenchAnswers(frenchAnswerSource(byId('fr-2015-hl-reading-a1-q6')))).toEqual({ ok: false, reason: 'opinion points at 5 each are not a permitted mark' });
   });
 });
 

@@ -189,22 +189,29 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         else expect(max * allocation.count, card.id).toBe(card.totalMarks);
       }
     }
-    expect(structured).toEqual({ listening: 715, reading: 876, cloze: 170 });
+    // Reading 876 → 920 once an opinion list ("Any two of:" over bullets the scheme prices only in its
+    // general rule) became a ladder of the total shared equally, where the ledger permits that step.
+    expect(structured).toEqual({ listening: 715, reading: 920, cloze: 170 });
 
     // What is still a list, by shape. Fix a shape and lower its number here.
     const fallback = FRENCH_READING_CARDS.filter(card => !card.rubric.allocation);
     const shape = (card: typeof fallback[number]) => {
-      if (card.level === 'higher' && /\bQ6\b/.test(card.questionRef)) return 'HL Q6 opinion: points priced in the general scheme, not on the card';
-      if (card.level === 'ordinary' && /\bQ8\b/.test(card.questionRef)) return 'OL Q8 points: priced in the general scheme, not on the card';
+      // 2012 and 2015 Higher Q6: the ledger permits even marks only, so two points at 5 is not a step it allows.
+      if (card.level === 'higher' && /\bQ6\b/.test(card.questionRef) && card.rubric.criteria[0].permittedMarks.every(mark => mark % 2 === 0)) {
+        return /\(Two points/.test(card.questionText) || /^Any two of/m.test((card.rubric.answerGuide ?? []).join('\n'))
+          ? 'HL Q6 opinion: the ledger permits even marks only, so the equal split is not a step'
+          : 'HL Q6 two-part description: no printed count to share the total by';
+      }
       return 'other';
     };
     const byShape: Record<string, string[]> = {};
     for (const card of fallback) (byShape[shape(card)] ??= []).push(card.id);
     expect(Object.fromEntries(Object.entries(byShape).map(([key, ids]) => [key, ids.length]))).toEqual({
-      'HL Q6 opinion: points priced in the general scheme, not on the card': 34,
-      'OL Q8 points: priced in the general scheme, not on the card': 14,
+      'HL Q6 opinion: the ledger permits even marks only, so the equal split is not a step': 3,
+      'HL Q6 two-part description: no printed count to share the total by': 1,
       other: 1,
     });
+    expect(byShape['HL Q6 two-part description: no printed count to share the total by']).toEqual(['fr-2012-hl-reading-a2-q6']);
     // A 2013 line whose bracketed note ends in its own price ("… 4 marks (Minus 1 mark …, e.g. je demande = 3 marks)").
     expect(byShape.other).toEqual(['fr-2013-ol-reading-a4-q3']);
     const pick = (card: Guided) => [card.rubric?.answerGuide ?? []];
