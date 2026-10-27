@@ -69,7 +69,8 @@ const INNER_PROMPT = /\s(?=(?:(?:\([b-d]\)\s|\((?:i|ii|iii|iv)\)\s|(?:An (?:Dara
 const NEXT_QUESTION = /(?:^|\s)(\d+)\.\s+(?:\(a\)\s+)?[A-ZÁÉÍÓÚ]/g;
 /** Where the lifted excerpt runs on into the scheme's next section, and the rule it ends with. */
 const LEAK = /\s(?=(?:Eolas\s*\(\d+\)|Móriomlán|Iomlán\b|Freagair do rogha|I gcás A, B|\d+ Roinn ar an bpáipéar|An Mharcáil:|Cuid [ABC]\s*\(\d+|Léirigh na marcanna|Don Scrúdaitheoir|Na hIomláin|CEIST \d+ \(A \+ B\)|LÉAMHTHUISCINT - \d+ marc))/;
-const LANGUAGE_RULE = /\bBainfear ó \d+ go \d+ ar chaighdeán na Gaeilge\.?/;
+/** The language deduction the scheme prints beside the answers: Higher as a sentence, Ordinary in square brackets. */
+const LANGUAGE_RULE = /\bBainfear ó \d+ go \d+ ar chaighdeán na Gaeilge\.?|\[Gaeilge lochtach:[^\]]*\]/;
 const BULLET = '';
 
 const tidy = (value: string) => value.replace(/\s+/g, ' ').replace(/^[\s;,.•]+|[\s;,]+$/g, '').trim();

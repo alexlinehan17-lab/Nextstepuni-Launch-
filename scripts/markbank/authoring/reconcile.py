@@ -714,6 +714,9 @@ def content_hash(subject):
         if subject == 'art':
             # The rows and parts a student places marks on are cut from the printed table at load.
             names += ['answers.ts']
+        if subject == 'irish':
+            # Listening/reading answers and literature tariffs are cut into rows at load.
+            names += ['answers.ts', 'tariffs.ts']
         if subject == 'accounting':
             # The priced lines a student claims are lifted from the scheme PDF (acc_rows.py).
             names += ['rows.json']
