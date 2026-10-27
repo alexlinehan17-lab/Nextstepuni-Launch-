@@ -24,6 +24,9 @@
  * Geography card carries one criterion per published allocation line; each is
  * cut into rows on its own (tryParseGeographyCriterionAllocation).
  */
+import { REVIEWED_CARDS as APPLIED_MATHS_REVIEWED } from '../components/MarkBank/cards/applied-maths/reviewed';
+import type { AppliedMathematicsRubric } from '../types/markBank';
+import appliedMathsResidue from '../scripts/markbank/authored/applied-maths-steps-residue.json';
 import { describe, expect, it } from 'vitest';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
@@ -474,6 +477,42 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+  });
+
+  it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
+    const cards = APPLIED_MATHS_REVIEWED.filter((card): card is SecRubricCard & { rubric: AppliedMathematicsRubric } => card.kind === 'rubric' && card.rubric.system === 'applied-mathematics');
+    expect(cards).toHaveLength(1486);
+    const residue = new Set(appliedMathsResidue.cards.map(card => card.id));
+    let cut = 0, scaleOnly = 0;
+    for (const card of cards) {
+      const steps = card.rubric.allocations.filter(item => item.label.startsWith('Published step'));
+      if (!steps.length) { scaleOnly += 1; continue; }
+      if (residue.has(card.id)) {
+        expect(steps.some(item => item.region), `${card.id}: in the residue yet cut`).toBe(false);
+        continue;
+      }
+      cut += 1;
+      const pages = card.rubric.solution.pages;
+      const regions = card.rubric.solution.regions ?? [];
+      let last: { p: number; bottom: number } | null = null;
+      for (const item of steps) {
+        expect(item.region, `${card.id}/${item.id}: no region`).toBeDefined();
+        const { p, r } = item.region!;
+        const index = pages.indexOf(p);
+        expect(index, `${card.id}/${item.id}: page ${p} is not a solution page`).toBeGreaterThanOrEqual(0);
+        const whole = regions[index] as [number, number, number, number] | undefined;
+        // Inside the solution's own region, at least a line tall, and in reading order.
+        if (whole) {
+          expect(r[0] >= whole[0] - 1e-6 && r[2] <= whole[2] + 1e-6 && r[1] >= whole[1] - 1e-6 && r[3] <= whole[3] + 1e-6, `${card.id}/${item.id}: outside the solution`).toBe(true);
+        }
+        expect(r[3] - r[1], `${card.id}/${item.id}: thinner than a line`).toBeGreaterThanOrEqual(0.012);
+        if (last && last.p === p) expect(r[1], `${card.id}/${item.id}: out of order`).toBeGreaterThanOrEqual(last.bottom - 0.01);
+        last = { p, bottom: r[3] };
+      }
+    }
+    // 1,328 cut, 52 priced by a scale over the whole solution, 106 in the residue (2026-10-27).
+    expect([cut, scaleOnly, residue.size]).toEqual([1328, 52, 106]);
+    for (const card of appliedMathsResidue.cards) expect(card.reason.length, card.id).toBeGreaterThan(0);
   });
 
   it('Construction: a criterion row priced in named components carries them as parts the student places separately', () => {
