@@ -1,21 +1,26 @@
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
+ *
+ * Settings, on Kobra (approved review, 25 Oct 2026): one paper panel in the
+ * runtime's Dialog, sections divided by hairline rules, Switch rows for the
+ * preferences and outline Button rows for everything that goes somewhere
+ * (settings-modal.css). The Light / Dark picker is the one the app already
+ * had, kept on purpose (Alex, 25 Oct): two miniatures of the app, an ink
+ * border and a check on the chosen one.
  */
 
-import React, { useState, useEffect, useRef } from 'react';
-import { createPortal } from 'react-dom';
-import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
+import React, { useEffect, useRef, useState, useId } from 'react';
 import { X, Check, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
-import { useModal } from '../hooks/useModal';
+import KobraScope, { Button, Dialog, DialogContent, DialogHeader, DialogTitle, Switch } from './approved-ui-runtime';
 import { useStudyNotifications } from '../hooks/useStudyNotifications';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
 import { AVATAR_SEEDS, nextYearAction, yearGroupLabel, yearGroupToCurriculumLevel } from '../utils/authUtils';
-import { getAvatarName } from '../data/personalStarCrew';
+import { getAvatarName, getPersonalStarCrew } from '../data/personalStarCrew';
 import { type YearGroup } from './subjectData';
-import Avatar from './Avatar';
+import CrewIllustration from './CrewIllustration';
+import './settings-modal.css';
 
 import { type UserSettings } from '../types';
 
@@ -40,6 +45,22 @@ interface SettingsModalProps {
   onLogout?: () => void;
 }
 
+/** A row that goes somewhere: a Kobra outline Button drawn as a hairline row. */
+function RowButton({ icon, label, detail, onClick }: {
+  icon: React.ReactNode; label: string; detail?: string; onClick: () => void;
+}) {
+  return (
+    <Button variant="outline" className="st-row-button" onClick={onClick}>
+      <span className="st-row-icon" aria-hidden="true">{icon}</span>
+      <span className="st-row-text">
+        <span className="st-label">{label}</span>
+        {detail && <> <span className="st-detail">{detail}</span></>}
+      </span>
+      <ChevronRight aria-hidden="true" className="st-chevron" />
+    </Button>
+  );
+}
+
 const SettingsModal: React.FC<SettingsModalProps> = ({
   isOpen, onClose, settings, updateSetting,
   userName, userSchool, userYearGroup, hasStudyProfile = true, hasNorthStar = true,
@@ -52,9 +73,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
   const [dataRightsOpen, setDataRightsOpen] = useState(false);
   const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const dialogRef = useRef<HTMLDivElement>(null);
-  useModal(isOpen, onClose, dialogRef);
   const notify = useStudyNotifications();
+  const id = useId();
 
   useEffect(() => {
     return () => {
@@ -73,417 +93,285 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
         .replace(/\b\w/g, character => character.toUpperCase())
     : '';
 
-  return createPortal(
+  // The legal reader and the delete-account flow open above this dialog and
+  // own Escape and their backdrop while they are up. The Kobra Dialog hears
+  // that Escape first, so it stands aside and lets the key reach them.
+  const nestedOpen = legalDoc !== null || dataRightsOpen;
+
+  return (
     <>
-    <AnimatePresence>
-      {isOpen && (
-        <MotionDiv
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="theme-compat fixed inset-0 bg-[#1A1A1A]/55 flex items-end sm:items-center justify-center z-[200] p-0 sm:p-4"
-          onClick={onClose}
-        >
-          <MotionDiv
-            ref={dialogRef}
-            initial={{ scale: 0.96, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.96, opacity: 0 }}
-            transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="settings-dialog-title"
-            tabIndex={-1}
-            className="relative bg-white dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
-            onClick={(e: React.MouseEvent) => e.stopPropagation()}
-          >
-            {/* Header */}
-            <div className="sticky top-0 z-20 flex items-center justify-between border-b border-[#DDD8D2] bg-white/95 p-6 pb-4 backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/95">
-              <h2 id="settings-dialog-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
-                Settings
-              </h2>
-              <div className="flex items-center gap-3">
-                <AnimatePresence>
-                  {showSaved && (
-                    <MotionDiv
-                      initial={{ opacity: 0, x: 10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: 10 }}
-                      className="flex items-center gap-1 text-emerald-500 text-xs font-medium"
-                    >
-                      <Check size={14} />
-                      Saved!
-                    </MotionDiv>
-                  )}
-                </AnimatePresence>
-                <button
-                  onClick={onClose}
-                  aria-label="Close"
-                  className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#CFC9C2] bg-white text-[#6F6861] transition-colors hover:border-[#383838] hover:text-[#1A1A1A] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
-                >
-                  <X size={18} />
-                </button>
-              </div>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(open, details) => {
+        if (open) return;
+        if (nestedOpen) { details.cancel(); details.allowPropagation(); return; }
+        onClose();
+      }}
+    >
+      <DialogContent size="sm" showCloseButton={false} className="nsu-settings nsu-paper-card">
+        {/* The dialog portals out of any page scope, so it carries its own. */}
+        <KobraScope className="st-scope">
+          <DialogHeader className="st-head">
+            <DialogTitle id="settings-dialog-title" className="st-title">Settings</DialogTitle>
+            <div className="st-head-end">
+              <p className="st-saved" role="status" aria-live="polite">
+                {showSaved && <span><Check aria-hidden="true" />Saved!</span>}
+              </p>
+              <Button variant="outline" size="icon" className="st-close" aria-label="Close" onClick={onClose}>
+                <X aria-hidden="true" />
+              </Button>
             </div>
+          </DialogHeader>
 
-            <div className="p-6 space-y-6">
-              {/* Account */}
-              {(userName || userSchool) && (
-                <section>
-                  <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                    Account
-                  </h3>
-                  <div className="p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06]">
-                    {userName && <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{userName}</p>}
-                    {userSchool && <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">School · {schoolLabel}</p>}
+          <div className="st-body">
+            {/* Account */}
+            {(userName || userSchool) && (
+              <section className="st-group">
+                <h3 className="st-eyebrow">Account</h3>
+                <div className="st-identity">
+                  {getPersonalStarCrew(settings.avatar) && <CrewIllustration character={settings.avatar} className="st-identity-art" />}
+                  <div className="st-row-text">
+                    {userName && <p className="st-label">{userName}</p>}
+                    {userSchool && <p className="st-detail">School · {schoolLabel}</p>}
                   </div>
-                </section>
-              )}
-
-              {(!hasStudyProfile || !userYearGroup) && onStartProfileSetup && (
-                <section className="rounded-2xl border-[1.5px] border-[#383838] bg-[#FDF1E8] p-4 shadow-[3px_3px_0_0_#383838] dark:bg-orange-950/20">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#B94712] dark:text-orange-300">Personalise your app</p>
-                  <h3 className="mt-1 font-serif text-lg font-semibold text-[#1A1A1A] dark:text-white">Finish your study profile.</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">Add your year and subjects to unlock tailored sessions, recommendations and exam tools.</p>
-                  <button
-                    type="button"
-                    onClick={() => { onClose(); onStartProfileSetup(); }}
-                    className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border-[1.5px] border-[#1A1A1A] bg-[#F26B1F] px-4 text-sm font-semibold text-white shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
-                  >
-                    Set up my profile
-                    <ArrowRight size={15} aria-hidden="true" />
-                  </button>
-                </section>
-              )}
-
-              {/* Avatar */}
-              <section>
-                <div className="mb-3 flex items-center justify-between">
-                  <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                    Your Star Crew character
-                  </h3>
-                </div>
-                <div className="grid grid-cols-4 gap-2.5">
-                  {AVATAR_SEEDS.map(seed => (
-                    <button
-                      key={seed}
-                      aria-label={`Select ${getAvatarName(seed)} avatar`}
-                      aria-pressed={settings.avatar === seed}
-                      title={getAvatarName(seed)}
-                      onClick={() => {
-                        updateSetting('avatar', seed);
-                        flash();
-                      }}
-                      className={`rounded-full aspect-square p-1.5 bg-white transition-all ${
-                        settings.avatar === seed
-                          ? 'ring-2 ring-[#F26B1F]'
-                          : 'ring-1 ring-zinc-200 hover:ring-zinc-400'
-                      }`}
-                    >
-                      <Avatar seed={seed} alt="" className="w-full h-full" />
-                    </button>
-                  ))}
                 </div>
               </section>
+            )}
 
-              {/* Preferences */}
-              <section>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Preferences
-                </h3>
-                <div className="space-y-2">
-                  {/* Appearance — two miniatures of the app itself, pick one.
-                      A preview says what a "Dark Mode" label can't. */}
-                  <div role="group" aria-label="Appearance" className="grid grid-cols-2 gap-2.5">
-                    {[{ dark: false, label: 'Light' }, { dark: true, label: 'Dark (Beta)' }].map(opt => {
-                      const active = settings.darkMode === opt.dark;
-                      return (
-                        <button
-                          key={opt.label}
-                          aria-pressed={active}
-                          onClick={() => {
-                            if (!active) { updateSetting('darkMode', opt.dark); flash(); }
-                          }}
-                          className={`rounded-xl border-[1.5px] p-2 text-left transition-colors ${
-                            active
-                              ? 'border-[#1A1A1A] dark:border-white'
-                              : 'border-zinc-200 hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-500'
-                          }`}
-                        >
-                          <div
-                            className="flex h-16 overflow-hidden rounded-lg border"
-                            style={{ backgroundColor: opt.dark ? '#151515' : '#ffffff', borderColor: opt.dark ? '#3f3f46' : '#e4e4e7' }}
-                            aria-hidden="true"
-                          >
-                            <div
-                              className="w-4 shrink-0"
-                              style={{
-                                backgroundColor: opt.dark ? '#18181b' : '#ffffff',
-                                borderRight: opt.dark ? '1px solid #3f3f46' : '1.5px solid #383838',
-                              }}
-                            />
-                            <div className="flex-1 space-y-1.5 p-2">
-                              <div className="h-1.5 w-10 rounded-full" style={{ backgroundColor: opt.dark ? '#f4f4f5' : '#1A1A1A' }} />
-                              <div className="h-1 w-14 rounded-full" style={{ backgroundColor: opt.dark ? '#52525b' : '#d6d3d1' }} />
-                              <div className="h-1 w-11 rounded-full" style={{ backgroundColor: opt.dark ? '#3f3f46' : '#e7e5e4' }} />
-                              <div className="h-1 w-7 rounded-full" style={{ backgroundColor: 'rgba(242,107,31,0.55)' }} />
-                            </div>
-                          </div>
-                          <div className="mt-1.5 flex items-center justify-between px-0.5">
-                            <span className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">{opt.label}</span>
-                            {active && <Check size={13} strokeWidth={2.6} className="text-[#1A1A1A] dark:text-white" />}
-                          </div>
-                        </button>
-                      );
-                    })}
-                  </div>
+            {(!hasStudyProfile || !userYearGroup) && onStartProfileSetup && (
+              <section className="st-group">
+                <div className="st-prompt">
+                  <p className="st-kicker">Personalise your app</p>
+                  <h3 className="st-prompt-title">Finish your study profile.</h3>
+                  <p className="st-prompt-copy">Add your year and subjects to unlock tailored sessions, recommendations and exam tools.</p>
+                  <Button className="st-primary" onClick={() => { onClose(); onStartProfileSetup(); }}>
+                    Set up my profile
+                    <ArrowRight aria-hidden="true" />
+                  </Button>
+                </div>
+              </section>
+            )}
 
-                  {/* Essentials mode toggle. Junior Cycle is always on (locked);
-                      senior students can toggle it. */}
+            {/* Avatar: eight hairline tiles, an ink ring and a filled marker on
+                the chosen one. They stay pressable buttons (journeyWelcome test). */}
+            <section className="st-group">
+              <h3 id={`${id}-crew`} className="st-eyebrow">Your Star Crew character</h3>
+              <div className="st-crew" role="group" aria-labelledby={`${id}-crew`}>
+                {AVATAR_SEEDS.map(seed => (
                   <button
-                    role="switch"
-                    aria-checked={isJunior || settings.essentialsMode}
-                    aria-label={isJunior ? 'Essentials Mode is always on for Junior Cycle' : 'Use Essentials Mode'}
+                    key={seed}
+                    type="button"
+                    aria-label={`Select ${getAvatarName(seed)} avatar`}
+                    aria-pressed={settings.avatar === seed}
+                    title={getAvatarName(seed)}
                     onClick={() => {
+                      updateSetting('avatar', seed);
+                      flash();
+                    }}
+                    className="st-crew-option"
+                  >
+                    <span className="st-crew-mark" aria-hidden="true" />
+                    <CrewIllustration character={seed} className="st-crew-art" />
+                    <span className="st-crew-name">{getAvatarName(seed).replace(/^The /, '')}</span>
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            {/* Preferences */}
+            <section className="st-group">
+              <h3 className="st-eyebrow">Preferences</h3>
+              <div className="st-rows">
+                {/* Appearance — two miniatures of the app itself, pick one.
+                    A preview says what a "Dark Mode" label can't. */}
+                <div role="group" aria-label="Appearance" className="st-theme">
+                  {[{ dark: false, label: 'Light' }, { dark: true, label: 'Dark (Beta)' }].map(opt => {
+                    const active = settings.darkMode === opt.dark;
+                    return (
+                      <button
+                        key={opt.label}
+                        type="button"
+                        aria-pressed={active}
+                        onClick={() => {
+                          if (!active) { updateSetting('darkMode', opt.dark); flash(); }
+                        }}
+                        className="st-theme-option"
+                      >
+                        <span className="st-theme-preview" data-dark={opt.dark || undefined} aria-hidden="true">
+                          <span className="st-theme-rail" />
+                          <span className="st-theme-lines"><i /><i /><i /><i /></span>
+                        </span>
+                        <span className="st-theme-name">
+                          {opt.label}
+                          {active && <Check size={13} strokeWidth={2.6} aria-hidden="true" />}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Essentials mode toggle. Junior Cycle is always on (locked);
+                    senior students can toggle it. */}
+                <label className="st-row st-switch-row" data-locked={isJunior || undefined}>
+                  <span className="st-row-text">
+                    <span className="st-label">Essentials Mode</span>
+                    <span id={`${id}-essentials`} className="st-detail">
+                      {isJunior ? 'Always on for Junior Cycle — shorter modules with simpler language' : 'Shorter modules with simpler language'}
+                    </span>
+                  </span>
+                  <Switch
+                    checked={isJunior || settings.essentialsMode}
+                    aria-label={isJunior ? 'Essentials Mode is always on for Junior Cycle' : 'Use Essentials Mode'}
+                    aria-describedby={`${id}-essentials`}
+                    disabled={isJunior}
+                    onCheckedChange={() => {
                       if (isJunior) return;
                       updateSetting('essentialsMode', !settings.essentialsMode);
                       flash();
                     }}
-                    disabled={isJunior}
-                    className={`w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] transition-all ${isJunior ? 'cursor-default' : 'hover:ring-zinc-300 dark:hover:ring-white/[0.15]'}`}
-                  >
-                    <div className="flex-1 text-left">
-                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Essentials Mode</p>
-                      <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">
-                        {isJunior ? 'Always on for Junior Cycle — shorter modules with simpler language' : 'Shorter modules with simpler language'}
-                      </p>
-                    </div>
-                    <div className={`relative w-10 h-6 rounded-full transition-colors ${
-                      (isJunior || settings.essentialsMode) ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
-                    }`}>
-                      <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
-                        (isJunior || settings.essentialsMode) ? 'translate-x-[18px]' : 'translate-x-0.5'
-                      }`} />
-                    </div>
-                  </button>
+                  />
+                </label>
 
-                  {/* Study timer notification. Hidden where this device cannot
-                      show one (iPhone and iPad Safari tabs). */}
-                  {notify.available && (
-                    <div>
-                      <button
-                        role="switch"
-                        aria-checked={notify.enabled}
+                {/* Study timer notification. Hidden where this device cannot
+                    show one (iPhone and iPad Safari tabs). */}
+                {notify.available && (
+                  <div>
+                    <label className="st-row st-switch-row">
+                      <span className="st-row-text">
+                        <span className="st-label">Study timer notifications</span>
+                        <span id={`${id}-notify`} className="st-detail">One notification when your study time is up</span>
+                      </span>
+                      <Switch
+                        checked={notify.enabled}
                         aria-label="Notify me when my study time is up"
-                        onClick={() => {
+                        aria-describedby={`${id}-notify`}
+                        onCheckedChange={() => {
                           if (notify.enabled) { notify.turnOff(); flash(); }
                           else void notify.turnOn().then(permission => { if (permission === 'granted') flash(); });
                         }}
-                        className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] transition-all hover:ring-zinc-300 dark:hover:ring-white/[0.15]"
-                      >
-                        <div className="flex-1 text-left">
-                          <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Study timer notifications</p>
-                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">One notification when your study time is up</p>
-                        </div>
-                        <div className={`relative w-10 h-6 rounded-full transition-colors ${
-                          notify.enabled ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
-                        }`}>
-                          <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
-                            notify.enabled ? 'translate-x-[18px]' : 'translate-x-0.5'
-                          }`} />
-                        </div>
-                      </button>
-                      {notify.blocked && (
-                        <p role="status" className="mt-1.5 px-1 text-[11px] leading-snug text-zinc-600 dark:text-zinc-300">{notify.hint}</p>
-                      )}
-                    </div>
-                  )}
+                      />
+                    </label>
+                    {notify.blocked && (
+                      <p role="status" className="st-hint">{notify.hint}</p>
+                    )}
+                  </div>
+                )}
+              </div>
+            </section>
 
-                </div>
-              </section>
+            {/* School Year (Phase 8) — forward-progression action.
+                Renders for any logged-in student. If userYearGroup is
+                unknown (legacy account, pre-Phase-8), we still surface
+                the section with an empty-state CTA so the flow is
+                discoverable instead of silently hidden. */}
+            {onAdvanceYear && (() => {
+              const action = userYearGroup ? nextYearAction(userYearGroup) : null;
+              const isGraduated = userYearGroup === 'graduated';
+              return (
+                <section className="st-group">
+                  <h3 className="st-eyebrow">School Year</h3>
+                  <div className="st-row st-year">
+                    <span className="st-year-text">
+                      <GraduationCap aria-hidden="true" />
+                      <span className="st-label">
+                        {!userYearGroup
+                          ? "We don't have your school year on file."
+                          : isGraduated
+                            ? "You've completed your Leaving Cert."
+                            : `You're in ${yearGroupLabel(userYearGroup)}.`}
+                      </span>
+                    </span>
+                    {!action && onStartProfileSetup ? (
+                      <Button variant="outline" className="nsu-ink-outline st-action" onClick={() => { onClose(); onStartProfileSetup(); }}>
+                        Add my school year
+                      </Button>
+                    ) : !action || action.kind === 'terminal' ? (
+                      <p className="st-terminal">
+                        {action?.label ?? 'Set your school year so we can tune content to where you are.'}
+                      </p>
+                    ) : (
+                      <Button variant="outline" className="nsu-ink-outline st-action" onClick={() => { onClose(); onAdvanceYear(); }}>
+                        {action.label}
+                        <ArrowRight aria-hidden="true" />
+                      </Button>
+                    )}
+                  </div>
+                </section>
+              );
+            })()}
 
-              {/* School Year (Phase 8) — forward-progression action.
-                  Renders for any logged-in student. If userYearGroup is
-                  unknown (legacy account, pre-Phase-8), we still surface
-                  the section with an empty-state CTA so the flow is
-                  discoverable instead of silently hidden. */}
-              {onAdvanceYear && (() => {
-                const action = userYearGroup ? nextYearAction(userYearGroup) : null;
-                const isGraduated = userYearGroup === 'graduated';
-                return (
-                  <section>
-                    <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                      School Year
-                    </h3>
-                    <div className="rounded-2xl p-4 bg-zinc-50 dark:bg-white/[0.04] border border-zinc-200/60 dark:border-white/[0.06]">
-                      <div className="flex items-center gap-3 mb-3">
-                        <GraduationCap size={18} className="text-zinc-400" />
-                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">
-                          {!userYearGroup
-                            ? "We don't have your school year on file."
-                            : isGraduated
-                              ? "You've completed your Leaving Cert."
-                              : `You're in ${yearGroupLabel(userYearGroup)}.`}
-                        </p>
-                      </div>
-                      {!action && onStartProfileSetup ? (
-                        <button
-                          type="button"
-                          onClick={() => { onClose(); onStartProfileSetup(); }}
-                          className="w-full rounded-xl border-[1.5px] border-[#1A1A1A] bg-white px-4 py-3 text-sm font-semibold text-[#1A1A1A] shadow-[2px_2px_0_0_#1A1A1A] dark:bg-zinc-800 dark:text-white"
-                        >
-                          Add my school year
-                        </button>
-                      ) : !action || action.kind === 'terminal' ? (
-                        <p className="text-xs text-zinc-500 dark:text-zinc-400 italic">
-                          {action?.label ?? 'Set your school year so we can tune content to where you are.'}
-                        </p>
-                      ) : (
-                        <button
-                          onClick={() => { onClose(); onAdvanceYear(); }}
-                          className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl border-2 border-[#1A1A1A] bg-[#F26B1F] text-white font-sans font-bold text-sm transition-all duration-150 -translate-x-0 -translate-y-0 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A]"
-                        >
-                          {action.label}
-                          <ArrowRight size={14} />
-                        </button>
-                      )}
-                    </div>
-                  </section>
-                );
-              })()}
+            {/* Legal — Privacy Notice + Terms (audit 2026-06-01, B4) */}
+            <section className="st-group">
+              <h3 className="st-eyebrow">Legal</h3>
+              {/* Non-affiliation disclaimer, shown without opening a document.
+                  Google Play's Misleading Claims policy requires any app
+                  carrying government information to state plainly that it does
+                  not represent the government entity, and to be easy to see —
+                  the full source list lives in Terms of Use. */}
+              <p className="st-note">
+                NextStepUni is an independent study app. It is not affiliated with or
+                endorsed by the State Examinations Commission, the Department of Education,
+                the CAO, SUSI, or any other government body. See{' '}
+                <Button variant="link" className="st-inline-link" onClick={() => setLegalDoc('terms')}>
+                  Terms of Use
+                </Button>{' '}
+                for the official sources we draw on.
+              </p>
+              <div className="st-rows">
+                <RowButton icon={<ShieldCheck />} label="Privacy Notice" onClick={() => setLegalDoc('privacy')} />
+                <RowButton icon={<FileText />} label="Terms of Use" onClick={() => setLegalDoc('terms')} />
+              </div>
+            </section>
 
-              {/* Actions */}
-              {/* Legal — Privacy Notice + Terms (audit 2026-06-01, B4) */}
-              <section>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Legal
-                </h3>
-                {/* Non-affiliation disclaimer, shown without opening a document.
-                    Google Play's Misleading Claims policy requires any app
-                    carrying government information to state plainly that it does
-                    not represent the government entity, and to be easy to see —
-                    the full source list lives in Terms of Use. */}
-                <p className="text-xs text-zinc-500 dark:text-zinc-400 mb-3 leading-relaxed">
-                  NextStepUni is an independent study app. It is not affiliated with or
-                  endorsed by the State Examinations Commission, the Department of Education,
-                  the CAO, SUSI, or any other government body. See{' '}
-                  <button
-                    onClick={() => setLegalDoc('terms')}
-                    className="underline font-medium text-zinc-600 dark:text-zinc-300"
-                  >
-                    Terms of Use
-                  </button>{' '}
-                  for the official sources we draw on.
-                </p>
-                <div className="space-y-1">
-                  <button
-                    onClick={() => setLegalDoc('privacy')}
-                    className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
-                  >
-                    <div className="flex items-center gap-3">
-                      <ShieldCheck size={16} className="text-zinc-400" />
-                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Privacy Notice</p>
-                    </div>
-                    <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
-                  </button>
-                  <button
-                    onClick={() => setLegalDoc('terms')}
-                    className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
-                  >
-                    <div className="flex items-center gap-3">
-                      <FileText size={16} className="text-zinc-400" />
-                      <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Terms of Use</p>
-                    </div>
-                    <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
-                  </button>
-                </div>
-              </section>
+            {/* Account — its own section on purpose.
+                App Review rejected 1.0 (1) under Guideline 5.1.1(v) saying the
+                app had no way to delete an account. It did: this button, then
+                "Delete my account". But it was labelled "Download or delete my
+                data", sat third in the LEGAL list under Privacy Notice and
+                Terms, and wore a database icon — so it read as a GDPR export
+                control and a reviewer scanning for the words "Delete Account"
+                went straight past it. The feature was never the problem; the
+                wording was. Keep "Delete Account" in this label. */}
+            <section className="st-group">
+              <h3 className="st-eyebrow">Account</h3>
+              <RowButton
+                icon={<Trash2 />}
+                label="Delete Account"
+                detail="Permanently erase your account, or download your data first."
+                onClick={() => setDataRightsOpen(true)}
+              />
+            </section>
 
-              {/* Account — its own section on purpose.
-                  App Review rejected 1.0 (1) under Guideline 5.1.1(v) saying the
-                  app had no way to delete an account. It did: this button, then
-                  "Delete my account". But it was labelled "Download or delete my
-                  data", sat third in the LEGAL list under Privacy Notice and
-                  Terms, and wore a database icon — so it read as a GDPR export
-                  control and a reviewer scanning for the words "Delete Account"
-                  went straight past it. The feature was never the problem; the
-                  wording was. Keep "Delete Account" in this label. */}
-              <section>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Account
-                </h3>
-                <div className="space-y-1">
-                  <button
-                    onClick={() => setDataRightsOpen(true)}
-                    className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
-                  >
-                    <div className="flex items-center gap-3">
-                      <Trash2 size={16} className="text-rose-500" />
-                      <div className="text-left">
-                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Delete Account</p>
-                        <p className="text-[12px] text-zinc-500">Permanently erase your account, or download your data first.</p>
-                      </div>
-                    </div>
-                    <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
-                  </button>
-                </div>
-              </section>
-
-              <section>
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3">
-                  Actions
-                </h3>
-                <div className="space-y-1">
+            <section className="st-group">
+              <h3 className="st-eyebrow">Actions</h3>
+              {(onChangeSubjects || onResetNorthStar) && (
+                <div className="st-rows">
                   {onChangeSubjects && (
-                    <button
-                      onClick={() => { onClose(); onChangeSubjects(); }}
-                      className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
-                    >
-                      <div className="flex items-center gap-3">
-                        <RefreshCw size={16} className="text-zinc-400" />
-                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Change Subjects</p>
-                      </div>
-                      <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
-                    </button>
+                    <RowButton icon={<RefreshCw />} label="Change Subjects" onClick={() => { onClose(); onChangeSubjects(); }} />
                   )}
                   {onResetNorthStar && (
-                    <button
-                      onClick={() => { onClose(); onResetNorthStar(); }}
-                      className="w-full flex items-center justify-between p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
-                    >
-                      <div className="flex items-center gap-3">
-                        <Compass size={16} className="text-zinc-400" />
-                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{hasNorthStar ? 'Edit North Star' : 'Set North Star'}</p>
-                      </div>
-                      <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
-                    </button>
-                  )}
-                  {onLogout && (
-                    <button
-                      onClick={() => { onClose(); onLogout(); }}
-                      className="w-full flex items-center p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-white/[0.04] transition-colors"
-                    >
-                      <div className="flex items-center gap-3">
-                        <LogOut size={16} className="text-rose-500" />
-                        <p className="text-sm font-medium text-rose-500">Sign Out</p>
-                      </div>
-                    </button>
+                    <RowButton icon={<Compass />} label={hasNorthStar ? 'Edit North Star' : 'Set North Star'} onClick={() => { onClose(); onResetNorthStar(); }} />
                   )}
                 </div>
-              </section>
-            </div>
-          </MotionDiv>
-        </MotionDiv>
-      )}
-    </AnimatePresence>
+              )}
+              {onLogout && (
+                <Button variant="ghost" className="st-quiet" onClick={() => { onClose(); onLogout(); }}>
+                  <LogOut aria-hidden="true" />
+                  Sign Out
+                </Button>
+              )}
+            </section>
+          </div>
+        </KobraScope>
+      </DialogContent>
+    </Dialog>
     <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} onDocumentChange={setLegalDoc} />
     <DataRightsModal
       open={dataRightsOpen}
       onClose={() => setDataRightsOpen(false)}
       onAccountDeleted={() => { setDataRightsOpen(false); onClose(); onLogout?.(); }}
     />
-    </>,
-    document.body
+    </>
   );
 };
 
