@@ -263,7 +263,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'french') {
       // Same files and order as reconcile.py's content hash, listening included.
-      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json']) {
+      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
