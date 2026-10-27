@@ -6356,5 +6356,157 @@
   "description": "The marking scheme's own print of its answer to 2013 HL Q11(b), as the State Examinations Commission set it: \"CALCULATE: 11.28 (11.3) (12)\"; boxed, \"7 g of NH₄OH = 7 ÷ 35 = 0.2 mol ⇒ 0.2 M NH₄OH (3)\"; then two routes, each boxed: \"[OH⁻] =\" the square root of \"1.8 × 10⁻⁵ × 0.2\" \"/ 1.9 × 10⁻³ (3)\", \"pOH = – log 1.9 × 10⁻³ = 2.72 (2.7) (3)\", \"pH = 14 – 2.72 (2.7) = 11.28 (11.3) (3)\"; and \"[OH⁻] =\" the same square root \"/ 1.9 × 10⁻³ (3)\", \"[H⁺] =\" 1 × 10⁻¹⁴ over that square root \"/\" 1 × 10⁻¹⁴ over 1.9 × 10⁻³ \"/ 5.3 × 10⁻¹² (3)\", \"pH = – log 5.3 × 10⁻¹² = 11.28 (11.3) (3)\".",
   "questionRef": "2013 HL Q11(b)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q1a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's Figure A, a round-bottomed flask holding a liquid, set in a dark heater with a lead, a thermometer in a still head above it and a condenser with two side arms, labelled \"Z\", sloping down to the right to a small beaker, labelled \"X\"; beneath it the caption \"Figure A\".",
+  "questionRef": "2011 OL Q1(a)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's Figure B, a round-bottomed flask holding a liquid, set in a dark heater with a lead, a condenser with two side arms, labelled \"Z\", fitted upright in its neck; beneath it the caption \"Figure B\".",
+  "questionRef": "2011 OL Q1(b)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's two figures, one above the other: Figure A, a round-bottomed flask holding a liquid, set in a dark heater with a lead, a thermometer in a still head above it and a condenser with two side arms, labelled \"Z\", sloping down to the right to a small beaker, labelled \"X\", captioned \"Figure A\"; and Figure B, a round-bottomed flask holding a liquid, set in a dark heater with a lead, a condenser with two side arms, labelled \"Z\", fitted upright in its neck, captioned \"Figure B\".",
+  "questionRef": "2011 OL Q1(c)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equipment: a stoppered volumetric flask printed \"1000 cm³\", labelled \"A\"; a pipette with a bulb, labelled \"B\"; a graduated burette with a tap, labelled \"C\"; and a wash bottle with a bent nozzle, labelled \"D\".",
+  "questionRef": "2011 OL Q2"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table in two rows: \"Time minutes\" over 0, 2, 4, 6, 8, 10, 12, 13; \"Volume of oxygen gas produced cm³\" over 0, 40, 60, 70, 75, 77, 78, 78; the headings in bold, \"Time\" and \"Volume of oxygen gas produced\" underlined.",
+  "questionRef": "2011 OL Q3(c)(i)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q4f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white portrait, head and shoulders, of a man with long curling hair falling to his shoulders, a white lace collar at his neck.",
+  "questionRef": "2011 OL Q4(f)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q4g-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2011 OL Q4(g): \"(g) Write the equilibrium constant (Kc) expression for the equilibrium:\", the K in bold italic and its c a subscript, then \"N₂ + 3H₂ ⇌ 2NH₃\" in bold, the ⇌ drawn as two half-headed arrows.",
+  "questionRef": "2011 OL Q4(g)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph, head and shoulders, of a man with short dark hair, round glasses and a moustache, in a jacket, waistcoat, collar and tie.",
+  "questionRef": "2011 OL Q5(b)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q6d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a dropping funnel with a tap, its liquid labelled \"liquid Y\", in the stopper of a conical flask with a small heap on its floor labelled \"solid X\"; a delivery tube from the flask's side arm runs down into a trough of water and up into an upturned test tube standing in it, with bubbles in it.",
+  "questionRef": "2011 OL Q6(d)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's reaction scheme in bold: CH₂CH₂ → CH₃CH₂OH → CH₃CHO → CH₃COOH, a long arrow between each, with \"W\", \"X\", \"Y\" and \"Z\" beneath them in turn.",
+  "questionRef": "2011 OL Q8"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q9a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2011 OL Q9(a): \"The treatment of drinking water for an urban supply consists of a number of stages. The main stages are listed below.\", then in bold \"chlorination\", \"filtration\", \"flocculation\", \"fluoridation\", \"pH adjustment\" and \"sedimentation\", then \"Write in your answer book the omitted words corresponding to each of the numbers 1 to 6.\", then \"Harmful bacteria are killed by 1 . Large beds of sand are used in the 2 stage. If the water is too acidic, lime is added in the 3 stage. The 4 of the water is done to help prevent tooth decay. The 5 stage involves the addition of chemicals that encourage finely suspended material to clump together and sink. Large 6 tanks are used in this stage.\", each number in bold on an underlined blank.",
+  "questionRef": "2011 OL Q9(a)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q10c-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation in bold: Mg + Cl₂ → MgCl₂, a long arrow before the product.",
+  "questionRef": "2011 OL Q10(c)(iii)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph, head and shoulders, of a woman with dark hair pinned up, in a dark high-necked dress, her hand raised to her cheek.",
+  "questionRef": "2011 OL Q11(a)(ii)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q11b-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation in bold: 2Al + 6HCl → 2AlCl₃ + 3H₂, a long arrow before the products.",
+  "questionRef": "2011 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph, head and shoulders, of a heavy-set man with a moustache and receding hair, in a dark jacket, waistcoat, white collar and bow tie.",
+  "questionRef": "2011 OL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2011-OL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A dark portrait, head and shoulders, of a young man with dark curling hair, in a dark coat with a high white collar and neckcloth.",
+  "questionRef": "2011 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2011-OL-scheme-q2f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 OL Q2(f), as the State Examinations Commission set it: a table of nine indicators and their colour changes, the colours in bold: \"methyl orange\", \"orange (yellow) to red (accept peach)\"; \"Methyl red\", \"yellow to red\"; \"phenolphthalein\", \"pink (purple, violet, red) to colourless\"; \"thymolphthalein\", \"blue to colourless\"; \"thymol blue\", \"blue to yellow\"; \"cresol purple\", \"purple (pink, violet) to yellow\"; \"neutral red\", \"yellow-brown (yellow, brown) to red\"; \"phenol red\", \"red to yellow\"; \"bromothymol blue\", \"blue to yellow\".",
+  "questionRef": "2011 OL Q2(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-OL-scheme-q2h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 OL Q2(h), as the State Examinations Commission set it: in a box, the fraction 22.7 x M over 2 (3) = the fraction 25.0 x 0.05 over 1 (3), then \"M = 0.11 (3)\", each M in italic.",
+  "questionRef": "2011 OL Q2(h)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-OL-scheme-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 OL Q4(g), as the State Examinations Commission set it: the expression [NH₃]² over [N₂].[H₂]³, set as a fraction in bold.",
+  "questionRef": "2011 OL Q4(g)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-OL-scheme-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 OL Q4(i), as the State Examinations Commission set it: in a box, the fraction 28 over 80 (3), then \"× 100\" (3).",
+  "questionRef": "2011 OL Q4(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2011-OL-scheme-q10b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2011 OL Q10(b)(ii), as the State Examinations Commission set it: a table headed \"Chromatography\", two columns of six rows: \"Saturate tank\", \"Application of sample to plate\", \"Where/how application is made (i.e. spot)\", \"Arrangement with eluent – in tank\", \"Elution\", \"Separation observed\"; and \"Prepare column (flush with solvent or water)\", \"Application of sample to column\", \"Where/how application is made (i.e. at top)\", \"Arrangement with eluent – addition to column\", \"Elution\", \"Separation observed\".",
+  "questionRef": "2011 OL Q10(b)(ii)",
+  "solution": true
  }
 ]

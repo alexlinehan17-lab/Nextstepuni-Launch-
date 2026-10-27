@@ -340,6 +340,16 @@ QNUM_TEXT = re.compile(r'^(\d{1,2})\.\s+(\S.*)$')
 # The same sittings' schemes print the running footer "Chemistry ATGL 2013" (2013 OL
 # scheme, every page, y 789), dropped for them in Printed.
 OLD_OL_FOOTER = re.compile(r'^Chemistry ATGL 20\d\d$')
+# 2011 OL: the paper sets its heads the same way, "1. The two arrangements of apparatus
+# ..." (page 2, x 50, y 100), "2. A 0.05 M standard solution ..." and "3. A student
+# ..." (page 3), "4. Answer eight ..." (page 4), "6. Hydrogen ..." and "8. Answer the
+# questions ..." (page 5), "10." and "11. Answer any two ..." (pages 6-7); unread, the
+# paper reader found no question at all (its "5. (a)", "7. (a)" and "9. (a)" are
+# QNUM_LETTER's). No other line of the 2011 Ordinary paper at x < 70 opens with a
+# number and a full stop. The sitting joins split_heads' set. (Its scheme's footer
+# reads "ATGL Chemistry 2011", which OLD_OL_FOOTER does not match; dropped in Printed,
+# gated to 2011 OL.)
+OLD_OL_HEADS.add((2011, 'ol'))
 
 
 def split_heads(lines, year, lvl):
@@ -1218,6 +1228,16 @@ class Printed:
                         and abs(l.x0 - 49.7) < 1 and abs(l.y0 - 48.6) < 1]
                 assert len(head) == 1, head
                 head[0].text = 'QUESTION ' + num
+        if (year, lvl) == (2011, 'ol'):
+            # 2011 OL scheme PDF pages 3-15 print the running footer "ATGL Chemistry 2011",
+            # "Marking Scheme", "Page 3 of 13" as three runs at y 761.5 (x 52, 257, 493-497).
+            # FOOTER reads the last two only below y 765, and OLD_OL_FOOTER reads the 2013
+            # wording ("Chemistry ATGL 2013"); in a labelled scheme every line is answer, so
+            # all three were filed as an answer of each page's last part ("to prevent
+            # bumping ... ATGL Chemistry 2011 Marking Scheme Page 3 of 13", Q1(d)). Dropped.
+            foot = re.compile(r'^(ATGL Chemistry 2011|Marking Scheme|Page \d{1,2} of 13)$')
+            assert sum(1 for l in self.scheme_lines if l.y0 > 755 and foot.match(l.text)) == 39
+            self.scheme_lines = [l for l in self.scheme_lines if not (l.y0 > 755 and foot.match(l.text))]
         if (year, lvl) in OLD_OL_HEADS:
             # 2013 OL: the scheme's running footer "Chemistry ATGL 2013" (every page,
             # x 64, y 789; also the 2011 and 2012 Ordinary schemes', and no carded
