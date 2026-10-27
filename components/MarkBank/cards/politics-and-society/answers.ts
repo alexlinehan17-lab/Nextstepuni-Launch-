@@ -37,6 +37,14 @@
  *   Turkey / Uganda under 3 marks + 2 marks                           rows priced by order
  *   Both nationalities must be named 1M · Name (2M)                   a priced condition / tariff
  *   Note: If the first point is awarded 2M or less…                  a direction
+ *   (c) (i) One fact 2 marks · (c) (ii) One fact 1 mark              one criterion priced in sub-tariff headings
+ *   One supranational body named 2 marks / Valid explanation 3 marks   (corrections.ts restores a lost price)
+ *   The European Court … is responsible for ensuring 1 mark + 1 mark  an answer sentence with its split tariff
+ *   Quantitative data  (under "qualitative or quantitative data?")   the alternative the question offers
+ *   Use of documents to support evaluation                           a criterion's label heading its ladder
+ *   Name  (bare, over a two-mark Name)                               the tariff as the row
+ *   Answer: 71.5%… / … 2 marks + 2 marks / Two observations… / 2 marks + 2 marks
+ *                                           a sibling's answer and tariff before the card's own ask
  */
 
 import type { PoliticsAllocation, PoliticsAnswerRow, PoliticsBand, PoliticsCriterion, PoliticsPart, PoliticsRubric, SecRubricCard } from '../../../../types/markBank';
@@ -91,9 +99,10 @@ const tidy = (value: string) => value.replace(/\s+/g, ' ').trim();
 
 type Token =
   | { kind: 'band'; label: string; marks: number[]; descriptor?: string; caption?: string }
-  | { kind: 'alloc'; terms: number[] }
+  | { kind: 'alloc'; terms: number[]; inline?: boolean }
   | { kind: 'times'; count: number; each: number }
   | { kind: 'section'; label: string; max?: number }
+  | { kind: 'priced'; label: string; max: number; line: string }
   | { kind: 'bullet'; text: string }
   | { kind: 'row'; text: string; marks?: number }
   | { kind: 'note'; text: string }
@@ -107,6 +116,11 @@ function tokenise(lines: string[], labels: string[]): Token[] {
     const key = normalise(line);
     if (!key) return undefined;
     if (labels.some(label => normalise(label) === key)) return line;
+    // "Use of documents to support evaluation" opens the Use of documents criterion: a label of two or more words
+    // with the scheme's own words after it, and no price on the line.
+    const headed = labels.find(label => label.trim().split(/\s+/).length >= 2 && line.toLowerCase().startsWith(label.toLowerCase())
+      && /^\s+[a-z]/.test(line.slice(label.length)) && !/\d\s*M\b|\d+\s*marks?\b/i.test(line));
+    if (headed) return headed;
     // "Authorship" names the group "Authorship: first point", "Authorship: second point".
     const group = labels.filter(label => normalise(label).startsWith(key) && /[:(]/.test(label));
     return group.length >= 2 ? line : undefined;
@@ -123,6 +137,16 @@ function tokenise(lines: string[], labels: string[]): Token[] {
     if (LEAD.test(line)) { tokens.push({ kind: 'lead' }); continue; }
     const sub = SUB_ALLOC.exec(line);
     if (sub && !QUALITY.test(line)) { tokens.push({ kind: 'section', label: tidy(sub[1]), max: Number(sub[2]) }); continue; }
+    // "(c) (i) One fact 2 marks", "Valid explanation of the role 3 marks": a sub-part's heading with its price read
+    // across the baseline from the scheme's margin column (corrections.ts restores the ones the block lost).
+    // The same shape also prints a question with its whole price ("Is it important to vote in an election? 10 marks")
+    // on a shared block; parsePoliticsAnswers keeps those as the text they were and opens a sub-part only when the
+    // card's one criterion is priced in these headings.
+    const headedPrice = /^(?:\([a-z]\)\s*)?(?:\((?:i{1,3}|iv|v)\)\s*)?([A-Za-z].*?)\s+(\d+)\s*marks?$/i.exec(line);
+    if (headedPrice && !/[+()]|\b[x×]\b|\d\s*marks?\b/i.test(headedPrice[1]) && !QUALITY.test(headedPrice[1]) && !ALLOC_SUM.test(line) && !ALLOC_TIMES.test(line)) {
+      tokens.push({ kind: 'priced', label: tidy(headedPrice[1]), max: Number(headedPrice[2]), line });
+      continue;
+    }
     const section = labelOf(line);
     if (section) { tokens.push({ kind: 'section', label: section }); continue; }
     const times = ALLOC_TIMES.exec(line);
@@ -139,7 +163,9 @@ function tokenise(lines: string[], labels: string[]): Token[] {
       const terms = [...sum[0].matchAll(/\d+/g)].map(m => Number(m[0]));
       const head = tidy(line.slice(0, sum.index));
       if (head) tokens.push({ kind: 'text', text: head });
-      tokens.push({ kind: 'alloc', terms });
+      // "The European Court of Human Rights is responsible for ensuring 1 mark + 1 mark": a tariff printed inside
+      // a sentence of eight words or more, not a count of what is asked ("Two reasons for why … 2 marks + 2 marks").
+      tokens.push({ kind: 'alloc', terms, ...(head && head.split(/\s+/).length >= 8 && !COUNT_PHRASE.test(head) && !head.endsWith('?') ? { inline: true } : {}) });
       continue;
     }
     const quality = QUALITY.exec(line);
@@ -247,6 +273,7 @@ interface Region {
   bullets: string[];
   captions: string[];
   alloc?: number[];
+  allocInline?: boolean;
   times?: { count: number; each: number };
 }
 
@@ -269,7 +296,14 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
 
   const lines = source.schemeGuidance.flatMap(block => block.split('\n')).map(tidy).filter(Boolean);
   if (lines.length === 0) return { ok: false, reason: 'no scheme block' };
-  const tokens = tokenise(lines, criteria.map(criterion => criterion.label));
+  const read = tokenise(lines, criteria.map(criterion => criterion.label));
+  // Headings priced in the margin open sub-parts only when they price the card's one criterion between them
+  // ("(c) (i) One fact 2 marks", "(c) (ii) One fact 1 mark", "(c) (iii) One fact 1 mark" on a four-mark response);
+  // otherwise they are the lines they were (a sibling's question with its total on a shared block).
+  const pricedHeads = read.filter((token): token is Extract<Token, { kind: 'priced' }> => token.kind === 'priced');
+  const subTariffs = criteria.length === 1 && pricedHeads.length >= 2 && pricedHeads.reduce((sum, token) => sum + token.max, 0) === criteria[0].maxMarks
+    && pricedHeads.every(token => !normalise(source.questionText).includes(normalise(token.label)));
+  const tokens: Token[] = read.map(token => token.kind !== 'priced' ? token : subTariffs ? { kind: 'section', label: token.label, max: token.max } : { kind: 'text', text: token.line });
 
   // Regions: a section label or a sub-allocation opens the next criterion's
   // region (two labels in a row name a group); bands, rows and bullets before
@@ -281,8 +315,21 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
   let region = regions[0];
   let leadOpen = false;
   let lastText: string | undefined;
+  let allocAfterCaption = false;
+  /** One of the alternatives the question itself offers ("qualitative or quantitative data?"). */
+  const offered = (text: string) => {
+    const first = words(text)[0];
+    return criteria.length === 1 && criteria[0].maxMarks <= 2 && first !== undefined && text.split(/\s+/).length <= 3
+      && new RegExp(`\\b${first}\\b\\s+or\\b|\\bor\\s+${first}\\b`, 'i').test(source.questionText);
+  };
+  /** The card's own ask in the scheme's words: most of the line's words are the question's. */
+  const echoesQuestion = (text: string) => {
+    const own = words(text); const asked = new Set(words(source.questionText));
+    const shared = own.filter(word => asked.has(word));
+    return own.length >= 3 && shared.length >= 3 && shared.length >= own.length * 0.6;
+  };
   const empty = (r: Region) => !r.bands.length && !r.rows.length && !r.bullets.length;
-  for (const token of tokens) {
+  for (const [tokenIndex, token] of tokens.entries()) {
     switch (token.kind) {
       case 'section':
         if (empty(region) && region.labels.length && region.max === undefined && token.max === undefined) {
@@ -304,15 +351,29 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
         region.bands.push({ ...token, ...(lastText ? { caption: lastText } : {}) });
         leadOpen = false;
         break;
-      case 'alloc': region.alloc = token.terms; break;
+      case 'alloc': region.alloc = token.terms; region.allocInline = token.inline; allocAfterCaption = Boolean(token.inline) && lastText !== undefined; break;
       case 'times': region.times = { count: token.count, each: token.each }; break;
       case 'bullet': if (leadOpen || region.rows.length === 0) region.bullets.push(token.text); else region.rows.push({ text: token.text }); break;
       case 'row': region.rows.push({ text: token.text, marks: token.marks }); lastText = undefined; break;
       case 'note': directions.push(token.text); break;
       case 'lead': leadOpen = true; break;
       case 'text': {
-        // The scheme restating the question is not a caption; a short statement of what is asked is.
+        // "…is responsible for ensuring 1 mark + 1 mark" / "the implementation of…": the sentence the tariff
+        // interrupted goes on under it.
+        if (allocAfterCaption && /^[a-z]/.test(token.text) && region.captions.length) { region.captions.push(token.text); allocAfterCaption = false; break; }
+        allocAfterCaption = false;
+        // The card's own ask restated after a sibling's answer and tariff on a shared block ("Answer: 71.5%…" /
+        // "One advantage and one disadvantage… 2 marks + 2 marks" / "Two observations about the presentation of
+        // data in the graphic." / "2 marks + 2 marks"): what came before is the siblings', and the block starts here.
+        if (regions.length === 1 && !region.labels.length && !region.bands.length && (region.rows.length || region.alloc) && echoesQuestion(token.text) && tokens[tokenIndex + 1]?.kind === 'alloc') {
+          directions.push(...region.rows.map(row => row.text), ...region.captions);
+          region = { labels: [], bands: [], rows: [], bullets: [], captions: [] };
+          regions.splice(0, 1, region);
+        }
+        // The scheme restating the question is not a caption; a short statement of what is asked is. The answer
+        // to a question that offers it ("qualitative or quantitative data?" / "Quantitative data") is.
         if (criteria.some(criterion => normalise(criterion.label) === normalise(token.text))) { directions.push(token.text); break; }
+        if (offered(token.text)) { region.rows.push({ text: token.text }); break; }
         if (question.includes(normalise(token.text))) break;
         if (token.text.endsWith('?')) break;
         if (region.bands.length || region.rows.length) { directions.push(token.text); break; }
@@ -338,6 +399,45 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
   const claimedLater = (from: number) => new Set(regions.slice(from + 1).flatMap(later => later.labels.map(normalise)));
   const matches = (label: string, criterion: PoliticsCriterion) =>
     normalise(criterion.label) === normalise(label) || (normalise(criterion.label).startsWith(normalise(label)) && /[:(]/.test(criterion.label));
+
+  // A single criterion priced in printed sub-tariffs ("(c) (i) One fact 2 marks … (c) (ii) One fact 1 mark …",
+  // "One supranational body named 2 marks / Valid explanation of the role 3 marks"): one part per sub-tariff. A
+  // sub-part whose price a printed ladder tops is placed on that ladder and its fact is an indicative point; one
+  // with a printed answer claims it; one with neither carries its heading as the tariff. Any other ladder is a rule.
+  const priced = regions.filter(current => current.max !== undefined && current.labels.length);
+  const bandsOnly = (current: Region) => !current.labels.length && !current.rows.length && !current.bullets.length && !current.captions.length && !current.alloc;
+  if (criteria.length === 1 && priced.length >= 2 && priced.reduce((sum, current) => sum + current.max!, 0) === criteria[0].maxMarks
+      && regions.every(current => priced.includes(current) || bandsOnly(current))) {
+    const criterion = criteria[0];
+    const strays = regions.flatMap(current => ladderSets(current.bands).flatMap(set => set.ladders).filter(ladder => ladderMax(ladder) !== current.max));
+    for (const current of priced) {
+      const own = ladderSets(current.bands).flatMap(set => set.ladders).find(ladder => ladderMax(ladder) === current.max)
+        ?? (priced.filter(other => other.max === current.max).length === 1 && strays.filter(ladder => ladderMax(ladder) === current.max).length === 1
+          ? strays.splice(strays.findIndex(ladder => ladderMax(ladder) === current.max), 1)[0] : undefined);
+      const heading = current.labels[0];
+      // A fact the text layer wrapped: a line starting lower-case continues the one before it.
+      const joined: string[] = [];
+      for (const text of current.captions) {
+        if (joined.length && /^[a-z]/.test(text)) joined[joined.length - 1] = `${joined[joined.length - 1]} ${text}`;
+        else joined.push(text);
+      }
+      examples.push(...current.bullets, ...joined.filter(text => /^Example:/i.test(text)));
+      const facts = joined.filter(text => !/^Example:/i.test(text) && text.split(/\s+/).length >= 3);
+      if (own) {
+        const problem = checkLadder(own, criterion, current.max!);
+        if (problem) return { ok: false, reason: problem };
+        push({ label: criterion.label, caption: heading, max: current.max!, bands: own.map(band => ({ ...band, marks: [...band.marks] })) });
+        examples.push(...facts);
+        continue;
+      }
+      const answers = current.rows.length ? current.rows.map(row => row.text) : facts;
+      if (answers.length) push({ label: criterion.label, caption: heading, max: current.max!, rows: answers.map((text, index) => ({ id: `r${index + 1}`, text, marks: current.max! })), count: 1 });
+      else push({ label: criterion.label, max: current.max!, rows: [{ id: 'r1', text: heading, marks: current.max!, tariffOnly: true }], count: 1 });
+    }
+    for (const ladder of strays) directions.push(...ladder.flatMap(band => [band.label, ...(band.descriptor ? [band.descriptor] : [])]));
+    take(criterion);
+    regions.length = 0;
+  }
 
   for (const [regionIndex, current] of regions.entries()) {
     let scoped: PoliticsCriterion[] | undefined;
@@ -387,7 +487,11 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
       const distinct = new Set(targets);
       const ordinal = targets.every(target => target && ORDINAL[target.label.toLowerCase().split(/\s+/)[0]] !== undefined);
       const tariffText = caption && !(sets.length && caption === current.captions[current.captions.length - 1]) ? caption : undefined;
-      if (targets.every(Boolean) && distinct.size === targets.length && targets.every(target => target!.maxMarks <= (ordinal ? 5 : 3)) && (sets.length === 0 || !targets.some(target => sets.flatMap(set => set.ladders.map(ladderMax)).includes(target!.maxMarks)))) {
+      // A ladder captioned with another pending criterion's words ("Valid description" over Description 5M) is
+      // spoken for, so terms of its size still price their own criteria ("5 marks + 5 marks" for the two pieces).
+      const spokenFor = sets.every(set => set.caption && pool.some(candidate => !chosen.includes(candidate)
+        && set.ladders.some(ladder => ladderMax(ladder) === candidate.maxMarks) && words(set.caption).some(word => normalise(candidate.label).includes(word))));
+      if (targets.every(Boolean) && distinct.size === targets.length && targets.every(target => target!.maxMarks <= (ordinal ? 5 : 3)) && (sets.length === 0 || spokenFor || !targets.some(target => sets.flatMap(set => set.ladders.map(ladderMax)).includes(target!.maxMarks)))) {
         for (const target of targets) {
           push({ label: target!.label, max: target!.maxMarks, rows: [{ id: 'r1', text: tariffText ?? target!.label, marks: target!.maxMarks, tariffOnly: true }], count: 1 });
           take(target!);
@@ -396,11 +500,26 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
         if (caption) current.captions.shift();
       }
     }
+    // An answer sentence carrying its own split tariff ("The European Court of Human Rights is responsible for
+    // ensuring 1 mark + 1 mark" / "the implementation of the European Convention…"): the sentence is the band a
+    // student places the printed marks on, its wrapped remainder the descriptor.
+    if (current.alloc && current.allocInline && criteria.length === 1 && pending.includes(criteria[0]) && current.alloc.reduce((a, b) => a + b, 0) === criteria[0].maxMarks
+        && current.captions.length && !current.rows.length && !current.bullets.length
+        && !sets.some(set => set.ladders.some(ladder => ladderMax(ladder) === criteria[0].maxMarks || current.alloc!.includes(ladderMax(ladder))))) {
+      const [head, next] = current.captions;
+      if (head.split(/\s+/).length >= 8 && !COUNT_PHRASE.test(head) && !head.endsWith('?')) {
+        const descriptor = next && /^[a-z]/.test(next) ? next : undefined;
+        push({ label: criteria[0].label, max: criteria[0].maxMarks, bands: [{ label: head, marks: cumulative(current.alloc), ...(descriptor ? { descriptor } : {}) }] });
+        take(criteria[0]);
+        current.captions.splice(0, descriptor ? 2 : 1);
+        current.alloc = undefined;
+      }
+    }
     // Scheme words printed as a name-kind criterion's answer ("Paulo Freire" over Thinker 1M,
     // "Kathleen Lynch, Sylvia Walby..." over Thinker 2M): a row at the criterion's mark.
     if (criteria.length === 1 && criteria[0].maxMarks <= 2 && pending.includes(criteria[0]) && current.captions.length && !current.rows.length && !current.bullets.length) {
       const answer = current.captions[0];
-      if (answer.split(/\s+/).length <= 4 && !PROMPT_LIKE.test(answer) && !COUNT_PHRASE.test(answer) && !question.includes(normalise(answer)) && !(sets.length && current.captions.length === 1)) {
+      if (answer.split(/\s+/).length <= 4 && !PROMPT_LIKE.test(answer) && !COUNT_PHRASE.test(answer) && (!question.includes(normalise(answer)) || offered(answer)) && !(sets.length && current.captions.length === 1)) {
         push({ label: criteria[0].label, max: criteria[0].maxMarks, rows: [{ id: 'r1', text: answer, marks: criteria[0].maxMarks }], count: 1 });
         take(criteria[0]);
         current.captions.shift();
@@ -542,7 +661,9 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
     const pool = candidates();
     if (items.length === 0) {
       // A sub-allocation with nothing printed under it ("Name (2M)"): the tariff is the row.
-      if (scoped && current.max !== undefined && pool.length) {
+      // A sub-allocation with nothing printed under it ("Name (2M)"), or a bare "Name" over a one- or two-mark
+      // name the scheme prints no answer for: the tariff is the row.
+      if (scoped && pool.length && (current.max !== undefined || (pool[0].maxMarks <= 2 && NAME_KIND.test(pool[0].label) && current.labels.length === 1))) {
         const criterion = pool[0];
         push({ label: criterion.label, ...(caption ? { caption } : {}), max: criterion.maxMarks, rows: [{ id: 'r1', text: current.labels[0], marks: criterion.maxMarks, tariffOnly: true }], count: 1 });
         take(criterion);

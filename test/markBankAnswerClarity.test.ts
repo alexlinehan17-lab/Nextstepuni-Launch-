@@ -338,18 +338,14 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       }
     }
     expect(cards).toHaveLength(623);
-    // 580 before the residue shapes were read: a name the scheme prints bare over a one- or two-mark criterion,
-    // a sibling card's ladder on a split question's shared block, tariff rows beside a ladder, a range the text
-    // layer broke over two lines, a band whose descriptor follows its marks.
-    expect(structured).toHaveLength(615);
-    // What is still a list, pinned by id: a two-line answer with "1 mark + 1 mark" inside it, a one-word answer under a
-    // sibling's "2 marks + 2 marks", three "One fact" items over a two-mark ladder on a four-mark response, an essay whose
-    // second criterion's bands the block does not carry, a sibling card's answer row, a bare "Name" the question also
-    // says, and two tariffs the block does not print.
-    expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id).sort()).toEqual([
-      'politics-2018-hl-q1-c', 'politics-2018-ol-q1-b-i', 'politics-2018-ol-q1-k-example', 'politics-2018-ol-q1-o-i',
-      'politics-2019-ol-q1-f', 'politics-2019-ol-q3-c', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-q-iii',
-    ]);
+    // 580 before the residue shapes were read (2026-10-27 #291), 615 after them; the last eight (a two-line answer with
+    // "1 mark + 1 mark" inside it, a one-word answer under a sibling's "2 marks + 2 marks", three "One fact" items
+    // priced 2 + 1 + 1 in the scheme's margin, an essay whose second criterion's label heads its ladder, a sibling
+    // card's answer row, a bare "Name", and two sub-tariffs the block had lost) are read since the same day: every
+    // card is ladders and rows. cards/politics-and-society/corrections.ts restores the two margin prices the block
+    // lost, from the scheme PDF, and test/politicsAnswers.test.tsx pins each shape.
+    expect(structured).toHaveLength(623);
+    expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id)).toEqual([]);
     // No card hides its answers in a closed box any more: the bullets are a
     // visible list on every card, structured or not.
     expect(cardsOf(politics).filter(card => /^\s*•\s*\S/m.test((card.rubric?.schemeGuidance ?? []).join('\n'))).length).toBeGreaterThan(0);
