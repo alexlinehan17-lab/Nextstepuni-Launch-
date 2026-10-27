@@ -7175,5 +7175,264 @@
   "description": "The marking scheme's own print of its answer to 2011 HL Q11(c)B, as the State Examinations Commission set it: \"OUTLINE: decomposition of oxygen molecule into oxygen atoms (radicals) by high-energy ultraviolet (uv) light / O₂ → 2O• //\", \"uv\" printed over the arrow, then \"reaction of oxygen atom (radical) with oxygen molecule forming ozone / O• + O₂ → O₃\" and the mark \"(4 + 3)\".",
   "questionRef": "2011 HL Q11(c)B",
   "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q1-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The titration equation in bold, \"M²⁺ + H₂Y²⁻ → MY²⁻ + 2H⁺\", its arrow drawn.",
+  "questionRef": "2010 HL Q1"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q2-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The soap-making equation: the balanced equation in bold: glyceryl tristearate drawn as \"C₁₇H₃₅COOCH₂\", \"C₁₇H₃₅COOCH\" and \"C₁₇H₃₅COOCH₂\" one above another joined by short vertical bonds, \"+ 3NaOH\", a drawn arrow, \"3C₁₇H₃₅COONa\", \"+\", and glycerol drawn as \"HOCH₂\", \"HOCH\" and \"HOCH₂\" joined the same way; under them, in plain type, \"glyceryl tristearate\", \"sodium stearate\" and \"glycerol\".",
+  "questionRef": "2010 HL Q2"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of the reflux apparatus: a vertical condenser with a side tube near its top and another near its foot, standing in a round-bottomed flask; the flask sits in a bath of water on a hotplate with two round dials; a label, \"NaOH, ethanol, fat\", in bold, with an arrow pointing into the flask.",
+  "questionRef": "2010 HL Q2"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q2c-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q2(c)(i): \"To prepare soap, a student refluxed 8.9 g of glyceryl tristearate (obtained from animal fat), 2 g of sodium hydroxide pellets and 30 cm³ of ethanol, together with a few anti-bumping granules, using the apparatus shown on the right. At the end of the experiment 7.0 g of pure, dry soap were isolated. The balanced equation for the reaction is as follows:\" over the balanced equation in bold: glyceryl tristearate drawn as \"C₁₇H₃₅COOCH₂\", \"C₁₇H₃₅COOCH\" and \"C₁₇H₃₅COOCH₂\" one above another joined by short vertical bonds, \"+ 3NaOH\", a drawn arrow, \"3C₁₇H₃₅COONa\", \"+\", and glycerol drawn as \"HOCH₂\", \"HOCH\" and \"HOCH₂\" joined the same way; under them, in plain type, \"glyceryl tristearate\", \"sodium stearate\" and \"glycerol\"; below them the reflux apparatus the lead-in says is \"shown on the right\": a vertical condenser standing in a round-bottomed flask in a water bath on a hotplate with two dials, labelled \"NaOH, ethanol, fat\"; then \"(c) (i) Describe, with the aid of labelled diagrams, how the ethanol was removed after the reflux stage.\"",
+  "questionRef": "2010 HL Q2(c)(i)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q2d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q2(d): \"To prepare soap, a student refluxed 8.9 g of glyceryl tristearate (obtained from animal fat), 2 g of sodium hydroxide pellets and 30 cm³ of ethanol, together with a few anti-bumping granules, using the apparatus shown on the right. At the end of the experiment 7.0 g of pure, dry soap were isolated. The balanced equation for the reaction is as follows:\" over the balanced equation in bold: glyceryl tristearate drawn as \"C₁₇H₃₅COOCH₂\", \"C₁₇H₃₅COOCH\" and \"C₁₇H₃₅COOCH₂\" one above another joined by short vertical bonds, \"+ 3NaOH\", a drawn arrow, \"3C₁₇H₃₅COONa\", \"+\", and glycerol drawn as \"HOCH₂\", \"HOCH\" and \"HOCH₂\" joined the same way; under them, in plain type, \"glyceryl tristearate\", \"sodium stearate\" and \"glycerol\"; then \"(d) Given that the sodium hydroxide was in excess, calculate the percentage yield of soap (sodium stearate).\" and its mark \"(12)\".",
+  "questionRef": "2010 HL Q2(d)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The results table: a table of three rows and six columns of values: \"Concentration Na₂S₂O₃ (M)\" 0.20, 0.16, 0.12, 0.08, 0.04, 0.02; \"Reaction time (min)\" 1.14, 1.43, 1.89, 2.94, 5.88, 11.11; \"1/t (min⁻¹)\" 0.88, 0.70, 0.53, 0.34, 0.17, 0.09; the row headings in bold.",
+  "questionRef": "2010 HL Q3"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q3d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q3(d): \"A stopwatch was started when 50 cm³ of a 0.20 M sodium thiosulfate solution was poured into a conical flask containing 10 cm³ of 1.0 M HCl solution. The conical flask was put standing on top of a black cross marked on white paper. The time for the cross to become obscured by the precipitate produced in the reaction was measured. The reciprocal of this reaction time (1/t) was taken as a measure of the initial rate of the chemical reaction.\" and \"The stock 0.20 M solution of sodium thiosulfate was then diluted with deionised water to produce 50 cm³ each of 0.16 M, 0.12 M, 0.08 M, 0.04 M and 0.02 M solutions in turn. The times taken for these solutions to react with 10 cm³ of the 1.0 M HCl solution were also measured in identical conical flasks as described above. All six reactions were carried out at 20 ºC and the results are given in the table.\" over a table of three rows and six columns of values: \"Concentration Na₂S₂O₃ (M)\" 0.20, 0.16, 0.12, 0.08, 0.04, 0.02; \"Reaction time (min)\" 1.14, 1.43, 1.89, 2.94, 5.88, 11.11; \"1/t (min⁻¹)\" 0.88, 0.70, 0.53, 0.34, 0.17, 0.09; the row headings in bold; then \"(d) Plot a graph of reaction rate (1/t) versus concentration of sodium thiosulfate.\" and \"What conclusion can be drawn from the graph about the relationship between the rate of the reaction and the concentration of the sodium thiosulfate?\" with its mark \"(18)\", \"versus\" in italics.",
+  "questionRef": "2010 HL Q3(d)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white head-and-shoulders photograph of a man with swept-back hair, in a jacket, shirt and tie: the picture the paper places beside \"proposed in 1913 by Bohr, pictured on the right\".",
+  "questionRef": "2010 HL Q5(c)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three compounds in a column, each followed by its letter in bold, underlined: \"CH₃(CH₂)₅CH₃\" X; a hexagon, Y; and a hexagon with a circle drawn inside it and a bond to \"CH₃\", Z.",
+  "questionRef": "2010 HL Q6"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q6e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q6(e): \"(e) In order to increase its octane rating, compound X is converted to compound Z in oil refineries by the following reforming (dehydrocyclisation) process:\" over the equation in bold, \"C₇H₁₆ (l) → C₇H₈ (l) + 4H₂ (g)\", the state symbols set as subscripts; then \"Calculate the heat change for this reaction given that the heats of formation of C₇H₁₆ (l), and C₇H₈ (l) are –224.2 and 12.4 kJ mol⁻¹, respectively.\" and \"State one important industrial use for the hydrogen produced in this reaction.\" with its mark \"(12)\"; X and Z bold and underlined, the formulas and \"one\" in bold.",
+  "questionRef": "2010 HL Q6(e)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q7-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The decomposition of phosphorus(V) chloride: the equilibrium in bold, \"PCl₅ (g) ⇌ PCl₃ (g) + Cl₂ (g)\", the state symbols set as subscripts and the arrow drawn as two half-arrows.",
+  "questionRef": "2010 HL Q7"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q7a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q7(a): \"Phosphorus(V) chloride decomposes into phosphorus(III) chloride and chlorine at a temperature of 500 K according to the following balanced equation.\" over the equilibrium in bold, \"PCl₅ (g) ⇌ PCl₃ (g) + Cl₂ (g)\", the state symbols set as subscripts and the arrow drawn as two half-arrows; then \"(a) This is a reversible reaction and a dynamic equilibrium is reached.\" and \"Explain the underlined terms. Why is the equilibrium described as dynamic?\" with its mark \"(11)\"; \"reversible reaction\" and \"equilibrium\" underlined, the last \"dynamic\" in italics.",
+  "questionRef": "2010 HL Q7(a)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q7c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q7(c): \"Phosphorus(V) chloride decomposes into phosphorus(III) chloride and chlorine at a temperature of 500 K according to the following balanced equation.\" over the equilibrium in bold, \"PCl₅ (g) ⇌ PCl₃ (g) + Cl₂ (g)\", the state symbols set as subscripts and the arrow drawn as two half-arrows; then \"(c) When 208.50 g of phosphorus(V) chloride is heated in a 100 litre container at a temperature of 500 K equilibrium is established with 53.25 g of chlorine gas present in the container.\" and \"Calculate the value of the equilibrium constant (Kc) for the reaction at 500 K.\" with its mark \"(12)\", Kc in bold italics.",
+  "questionRef": "2010 HL Q7(c)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q8a-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The dissociation of methyl orange in bold, \"HX ⇌ H⁺ + X⁻\", the arrow drawn as two half-arrows.",
+  "questionRef": "2010 HL Q8(a)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The reaction scheme Q9 asks about: a reaction scheme: \"C₂H₅OH\" with an arrow labelled \"X\" to \"C₂H₄\"; from \"C₂H₄\", an arrow labelled \"W\" to \"PVC\", an arrow labelled \"Y\" to \"C₂H₅Cl\" and an arrow labelled \"V\" down to \"C₂H₆\"; and from \"C₂H₆\" an arrow labelled \"Z\" to \"C₂H₅Cl\"; the formulas and letters in bold.",
+  "questionRef": "2010 HL Q9"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q9c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q9(c): \"Study the reaction scheme and answer the questions that follow.\" over a reaction scheme: \"C₂H₅OH\" with an arrow labelled \"X\" to \"C₂H₄\"; from \"C₂H₄\", an arrow labelled \"W\" to \"PVC\", an arrow labelled \"Y\" to \"C₂H₅Cl\" and an arrow labelled \"V\" down to \"C₂H₆\"; and from \"C₂H₆\" an arrow labelled \"Z\" to \"C₂H₅Cl\"; the formulas and letters in bold; then \"(c) Describe the mechanism of reaction Y.\" and its mark \"(12)\", the Y in bold.",
+  "questionRef": "2010 HL Q9(c)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q9e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q9(e): \"Study the reaction scheme and answer the questions that follow.\" over a reaction scheme: \"C₂H₅OH\" with an arrow labelled \"X\" to \"C₂H₄\"; from \"C₂H₄\", an arrow labelled \"W\" to \"PVC\", an arrow labelled \"Y\" to \"C₂H₅Cl\" and an arrow labelled \"V\" down to \"C₂H₆\"; and from \"C₂H₆\" an arrow labelled \"Z\" to \"C₂H₅Cl\"; the formulas and letters in bold; then \"(e) Draw a labelled diagram to show how conversion X could be carried out in the school laboratory.\" and its mark \"(9)\", the X in bold.",
+  "questionRef": "2010 HL Q9(e)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q9f-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2010 HL Q9(f): \"Study the reaction scheme and answer the questions that follow.\" over a reaction scheme: \"C₂H₅OH\" with an arrow labelled \"X\" to \"C₂H₄\"; from \"C₂H₄\", an arrow labelled \"W\" to \"PVC\", an arrow labelled \"Y\" to \"C₂H₅Cl\" and an arrow labelled \"V\" down to \"C₂H₆\"; and from \"C₂H₆\" an arrow labelled \"Z\" to \"C₂H₅Cl\"; the formulas and letters in bold; then \"(f) Conversion W involves a three-step synthesis. Draw the structures of the two organic intermediates in this synthesis.\" and its mark \"(6)\", the W in bold.",
+  "questionRef": "2010 HL Q9(f)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of the electrolysis apparatus: two upright tubes, each closed at the top by a tap, joined near the foot by a cross-tube to a central tube with a funnel-shaped reservoir at its top; the liquid shaded grey; an electrode at the foot of each side tube, labelled \"A\" on the left and \"B\" on the right, both wired to a battery drawn below.",
+  "questionRef": "2010 HL Q11(a)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q11b-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The nuclear equation in bold: \"Am\" with mass number 241 above and atomic number 95 below, an arrow, \"Np\" with an italic A above and an italic Z below, \"+\", \"He\" with 4 above and 2 below, \"+\", \"energy\".",
+  "questionRef": "2010 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2010-HL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A ball-and-stick drawing of a round cage of grey balls joined by rods into pentagons and hexagons: the \"football shaped\" cluster of carbon atoms the paper calls buckminsterfullerene.",
+  "questionRef": "2010 HL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q2c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q2(c)(i), as the State Examinations Commission set it: a drawing of distillation apparatus: a round-bottomed flask on a heat source, holding a grey mixture, with a thermometer in a stopper at its neck and a sloping condenser from its side arm running down to a test tube; its labels read \"thermometer\", \"reaction mixture\", \"anti-bumping granules\", \"heat source\", \"condenser\" and \"ethanol\".",
+  "questionRef": "2010 HL Q2(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q2(d), as the State Examinations Commission set it: a box of four calculations in two columns and two rows, each line closed by \"(3)\": top left \"8.9 ÷ 890* = 0.01 mol glyceryl tri.\", \"x 3 = 0.03 mol soap (th. yield)\", \"0.03 x 306* = 9.18 g soap (th. yield)\", \"7\" over \"9.18\" \"x 100 = 76 – 77 %\"; top right \"8.9 ÷ 890* = 0.01 mol glyceryl tri.\", \"7.0 ÷ 306* = 0.023 mol soap (act. yield)\", \"0.023 ÷ 3 = 0.0076/0.0077 mol gly. t. reqd.\", \"0.0076/0.0077\" over \"0.01\" \"= 76 – 77 %\"; bottom left \"8.9 ÷ 890* = 0.01 mol glyceryl tri.\", \"x 3 = 0.03 mol soap (th. yield)\", \"7.0 ÷ 306* = 0.023 mol soap (act. yield)\", \"0.023\" over \"0.03\" \"x 100 = 76 – 77 %\"; bottom right \"7.0 ÷ 306* = 0.023 mol soap (act. yield)\", \"0.023 ÷ 3 = 0.0076/0.0077 mol gly. t. reqd.\", \"0.0076/0.0077 x 890* = 6.82 g gly. t. reqd.\", \"6.82\" over \"8.9\" \"x 100 = 76 – 77 %\"; under them, in italics, \"[*Addition must be shown for error to be treated as a slip (apply only once); consequential marking applies]\".",
+  "questionRef": "2010 HL Q2(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q3(d), as the State Examinations Commission set it: a graph on graph paper: \"Rate\" (underlined) over \"min⁻¹\" up the side, marked 0.20, 0.40, 0.60, 0.80 and 1.00, and \"Concentration /(M)\" along the foot, marked 0.04 to 0.20, \"0\" at the origin; six crosses with a straight line drawn through them from the origin; dashed lines with arrowheads from the line down to 0.10 on the concentration axis and across to the rate axis.",
+  "questionRef": "2010 HL Q3(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q4j.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q4(j), as the State Examinations Commission set it: three structures side by side, \"//\" between them: \"HC\" with a double bond up to \"O\" and a bond down to \"OCH₂CH₃\"; \"CH₃C\" with a double bond up to \"O\" and a bond down to \"OCH₃\"; \"CH₃CH₂C\" with a double bond up to \"O\" and a bond down to \"OH\".",
+  "questionRef": "2010 HL Q4(j)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q5e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q5(e), as the State Examinations Commission set it: three drawings of a dumbbell (figure-of-eight) shape: one alone, one with a horizontal axis through it, and one with a horizontal and a vertical axis and a third line slanting through its centre.",
+  "questionRef": "2010 HL Q5(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q6(e), as the State Examinations Commission set it: boxed, \"C₇H₁₆ → 7C + 8H₂ ΔH = 224.2 kJ mol⁻¹ (3)\", \"7C + 4H₂ → C₇H₈ ΔH = 12.4 kJ mol⁻¹ (3)\", a rule, then \"C₇H₁₆ → C₇H₈ + 4H₂ ΔH = 236.6 kJ mol⁻¹ (3)\"; \"or\" in italics; and boxed, \"ΣΔHf(products) – ΣΔHf(reactants) = ΔH(reaction)\", \"12.4 (3) – (– 224.2) (3) = 236.6 (3)\" and \"OR 12.4 (3) + 224.2 (3) = 236.6 (3)\", the f, products, reactants and reaction set as subscripts.",
+  "questionRef": "2010 HL Q6(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q7c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q7(c), as the State Examinations Commission set it: boxed, \"Conversion to moles:\" \"208.5\" over \"208.5*\" \"= 1\" and \"53.25\" over \"71*\" \"= 0.75\"; a table headed \"PCl₅\", \"PCl₃\" and \"Cl₂\": \"Initially 1* mole 0 moles 0 moles (3)\"; \"Next step\" in three rows, \"1 – x\", \"x\", \"x /\"; \"0.25 moles\", \"0.75 moles\", \"0.75* moles /\"; \"0.01* mol\", \"0 moles\", \"0 moles (3)\"; \"At Equil. 0.0025 moles / l 0.0075 moles / l 0.0075* moles / l (3)\"; \"[0.0075] . [0.0075]\" over \"[0.0025]\" \"= 0.0225 (3)\"; and, in italics, \"*Addition must be shown for error to be treated as a slip (apply only once); consequential marking applies.\"",
+  "questionRef": "2010 HL Q7(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q8c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q8(c)(ii), as the State Examinations Commission set it: boxed, \"[H⁺]²/0.004 = 3.5 x 10⁻⁴ / [H⁺]² = 1.4 x 10⁻⁶ / [H⁺] = 1.18 x 10⁻³ (3)\" and \"pH = – log1.18 x 10⁻³ = 2.9 (3)\"; \"OR\"; \"pH = – log √(Ka x M) / pH = – log √(3.5 x 10⁻⁴ x 0.004) (3)\" and \"pH = 2.9 (3)\".",
+  "questionRef": "2010 HL Q8(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q8c-curve.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q8(c), as the State Examinations Commission set it: a pH curve on graph paper: \"pH\" up the side marked 0, 7 and 14, and \"Volume / cm³ NaOH\" along the foot marked 0, 25 and 50; the curve rises slowly from low on the pH axis, climbs steeply at about 25, where a dashed line runs down to the axis, then levels off near the top; beside it \"Curve does not have to be drawn on graph paper.\", the \"not\" underlined.",
+  "questionRef": "2010 HL Q8(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q9(c), as the State Examinations Commission set it: a structure: a carbon bonded to three H atoms and to a second carbon marked \"+\", which is bonded to two H atoms.",
+  "questionRef": "2010 HL Q9(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q9e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q9(e), as the State Examinations Commission set it: a drawing of the apparatus: a test tube held level, a plug at its closed end labelled \"Ethanol and glass wool\" and solid along its middle labelled \"Aluminium oxide\", heated by a Bunsen burner on a stand; a delivery tube from its stopper running down into a trough of water and up into an upturned test tube; the trough and collecting tube inside a dashed box.",
+  "questionRef": "2010 HL Q9(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q9f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q9(f), as the State Examinations Commission set it: two structures, \"//\" between them: two carbons joined in a chain with an H at each end, a Cl above each carbon and an H below each; and two carbons joined by a double bond, the left carrying two H atoms and the right a Cl and an H.",
+  "questionRef": "2010 HL Q9(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q10c-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q10(c)(iv), as the State Examinations Commission set it: a structure: a carbon bonded to three H atoms and to a second carbon, which is double-bonded to an O and bonded to \"OH\".",
+  "questionRef": "2010 HL Q10(c)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2010-HL-scheme-q11c-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2010 HL Q11(c)B(ii), as the State Examinations Commission set it: a drawing of a tall rectangular column with dashed plates across it, labelled \"fractionating column\"; \"compressed air (liquid air)\" with an arrow into its side; \"nitrogen\" with an arrow out at the top and \"oxygen\" with an arrow out at the foot.",
+  "questionRef": "2010 HL Q11(c)B(ii)",
+  "solution": true
  }
 ]

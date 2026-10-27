@@ -376,6 +376,14 @@ def split_heads(lines, year, lvl):
 # under Q3(k) and a phantom Q3(l). The sitting joins split_heads' set: no other line of the
 # 2012 Higher paper at x < 70 opens with a number, a full stop and words.
 OLD_OL_HEADS.add((2012, 'hl'))
+# 2010 HL: the paper sets one head in one run with its words, as 2012 HL does: "4. Answer eight
+# of the following items (a), (b), (c), etc." (page 4, x 50, y 81); its other heads stand alone
+# ("3.", page 3, x 50, y 394) or are QNUM_LETTER's ("5. (a) State two ...", page 4, x 50, y 492).
+# Unread, the paper reader found Questions 1-3 only: Q4(a)-(f) were read as words of Q3(f),
+# Q4(g)-(k) as Q3(g)-(k), and Questions 5-11 fell under Q3(k), Q11(c)'s romans filed eight times
+# over as a "Q3(k)B". The sitting joins split_heads' set: no other line of the 2010 Higher paper
+# at x < 70 opens with a number, a full stop and words.
+OLD_OL_HEADS.add((2010, 'hl'))
 
 
 # Parts the paper numbers wrongly, as (the key read, the marker printed).
@@ -1213,6 +1221,18 @@ class Printed:
                       and abs(l.x0 - 49.6) < 1 and abs(l.y0 - 339.4) < 1]
             assert len(hidden) == 1, hidden
             self.scheme_lines = [l for l in self.scheme_lines if l is not hidden[0]]
+        if (year, lvl) == (2010, 'hl'):
+            # 2010 HL scheme PDF pages 3-16 print the running footer "page 1 of 14" ... "page 14
+            # of 14" (x 244-247, y 793) in lower case, which FOOTER ("Page 3 of 16") does not
+            # read, and page 8 heads Section B "SECTION B" (x 245, y 58), which HEADER ("Section
+            # B") does not. In a labelled scheme every line is answer: each was filed as an
+            # answer of the part before it (Q1(f) "page 3 of 14", Q3(f) "page 5 of 14 SECTION
+            # B", Q11(c)B(iv) "page 14 of 14"). None is marking; dropped.
+            furniture = [l for l in self.scheme_lines if (l.y0 > 785 and re.match(
+                r'^page \d{1,2} of 14$', l.text)) or (l.page == 8 and l.text == 'SECTION B')]
+            assert [l.text for l in furniture] == [f'page {n} of 14' for n in range(1, 6)] + [
+                'SECTION B'] + [f'page {n} of 14' for n in range(6, 15)], furniture
+            self.scheme_lines = [l for l in self.scheme_lines if not any(l is f for f in furniture)]
         if (year, lvl) == (2013, 'hl'):
             # 2013 HL scheme PDF page 3 (the Introduction) numbers its six notes "1."-"6."
             # at x 50 (y 136-467) in roman type; every other scheme sets them in bold,
