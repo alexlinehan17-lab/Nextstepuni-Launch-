@@ -36,6 +36,9 @@
  *   Any two of the following, award 5 Marks /
  *   Any one of the following, award 3 Marks          a ladder by how many are right
  *   Two correct answers needed for 8 marks (7+1)     the 2010–2015 Ordinary ladder (a rule line)
+ *   Any two of: / Agree: / • … / Disagree: / • …      an opinion question's accepted points, priced only
+ *                                                   in the general rule: the total shared equally per
+ *                                                   point, placed at "Award 2 marks if partially correct"
  *   ➢ Incorrect year = -1 Mark              a deduction the student can apply
  *   ➢ If more than one answer offered = 0 Marks      a priced condition
  *   One correct day plus one incorrect day = 1 Mark  the same, unmarked
@@ -104,6 +107,8 @@ const cumulative = (terms: number[]) => terms.map((_, index) => terms.slice(0, i
 interface Draft {
   text: string;
   marks?: number;
+  /** A row placed at one of several printed values (an opinion point at its partial or full mark). */
+  steps?: number[];
   partial?: boolean;
   part?: string;
   /** Alternatives inherit a price only within a run of the same kind. */
@@ -169,6 +174,14 @@ export function parseFrenchAnswers(source: FrenchAnswerSource): FrenchAnswerResu
       if (FURNITURE.test(bare)) {
         const count = COUNT_HEADER.exec(bare);
         if (count) headerCount = NUMBER_WORDS[(count[1] ?? count[2]).toLowerCase()];
+        continue;
+      }
+      // "Any two of: YES:" — the count header with the first part heading on its line.
+      const headed = /^((?:any\s+)?(?:one|two|three|four)\s+of\s*:)\s*([A-Z][^:]{0,40}:)$/i.exec(bare);
+      if (headed && FURNITURE.test(headed[1])) {
+        const count = COUNT_HEADER.exec(headed[1]);
+        if (count) headerCount = NUMBER_WORDS[(count[1] ?? count[2]).toLowerCase()];
+        part = headed[2];
         continue;
       }
       if (!priced && (PART.test(bare) || PART_WORD.test(bare))) { part = bare; continue; }
@@ -255,6 +268,21 @@ export function parseFrenchAnswers(source: FrenchAnswerSource): FrenchAnswerResu
       ladder = steps as number[];
     }
     unpriced.forEach(draft => { draft.marks = 0; });
+  } else if (unpriced.length > 0 && unpriced.length === answers.filter(draft => draft.kind !== 'condition').length && perRow === undefined && !stroke
+    && (headerCount ?? (TWO_ASKED.test(source.questionText) ? 2 : undefined)) !== undefined) {
+    // "Award 2 marks if answer is partially correct" beside an opinion list is the partial-credit rule, not a row.
+    for (const condition of answers.filter(draft => draft.kind === 'condition')) { directions.push(condition.text); drafts.splice(drafts.indexOf(condition), 1); }
+    // An opinion question ("Do you agree? … Two points"): the scheme lists the points it will accept
+    // under "Any two of:" and prices them only in its general rule, so each point is the total shared
+    // equally — taken only where the ledger permits that step, never typed otherwise. "Award 2 marks
+    // if answer is partially correct" makes each point a row placed at 2 or at its full mark.
+    const asked = headerCount ?? 2;
+    const per = source.totalMarks / asked;
+    if (!Number.isInteger(per) || !source.permittedMarks.includes(per)) return { ok: false, reason: `opinion points at ${per} each are not a permitted mark` };
+    const partialRule = directions.map(note => /\bAward (\d+) marks? if answer is partially correct/i.exec(note)).find(Boolean);
+    const partial = partialRule ? Number(partialRule[1]) : undefined;
+    headerCount = asked;
+    unpriced.forEach(draft => { draft.marks = per; if (partial !== undefined && partial < per && source.permittedMarks.includes(partial)) draft.steps = [partial, per]; });
   } else if (unpriced.length > 0) {
     if (perRow !== undefined) {
       unpriced.forEach(draft => { draft.marks = perRow; });
@@ -300,6 +328,7 @@ export function parseFrenchAnswers(source: FrenchAnswerSource): FrenchAnswerResu
     id: `r${index + 1}`,
     text: draft.text,
     marks: draft.marks ?? 0,
+    ...(draft.steps ? { steps: draft.steps } : {}),
     ...(draft.partial ? { partial: true } : {}),
     ...(draft.part ? { part: draft.part } : {}),
   }));

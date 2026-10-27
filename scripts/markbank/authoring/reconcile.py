@@ -727,7 +727,8 @@ def content_hash(subject):
         for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject == 'french':
-        for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json'):
+        # answers.ts cuts the lifted answer lines into rows at load.
+        for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 

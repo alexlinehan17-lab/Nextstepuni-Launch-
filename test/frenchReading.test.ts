@@ -8,7 +8,7 @@ import { tariffReconciles } from '../types/markBank';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { topicsForPaper, browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { paperRegionFor } from '../components/PaperTrail/paperRegion';
-import { frenchMarks } from '../components/MarkBank/frenchRubric';
+import { frenchMarks, frenchRowScoreId } from '../components/MarkBank/frenchRubric';
 
 const byId = (suffix: string) => cards.find(card => card.id === `fr-2026-${suffix}`)!;
 const legacy = (suffix: string) => cards.find(card => card.id === `fr-2025-${suffix}`)!;
@@ -678,7 +678,8 @@ describe('visually reviewed French reading tasks', () => {
       expect(card.rubric.taskRequirements).toContain('Penalise extraneous material to a maximum of 2 marks.');
       expect(card.rubric.answerGuide![0]).toMatch(/Award 2 marks if answer is partially correct/i);
       expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8]);
-      expect(frenchMarks(card, { 'french:response': 7 })).toBe(7);
+      // The points are rows now: one at its full mark and one at the partial mark the scheme prints.
+      expect(frenchMarks(card, { [frenchRowScoreId('r1')]: 4, [frenchRowScoreId('r2')]: 2 })).toBe(6);
     }
   });
 
