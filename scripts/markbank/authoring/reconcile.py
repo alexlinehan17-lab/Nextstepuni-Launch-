@@ -711,9 +711,12 @@ def content_hash(subject):
         if subject == 'geography':
             # The claimable rows a student sees are cut from the lines at load.
             names += ['allocation.ts']
-        if subject == 'art':
+        if subject in ('art', 'politics-and-society'):
             # The rows and parts a student places marks on are cut from the printed table at load.
             names += ['answers.ts']
+        if subject == 'irish':
+            # Listening/reading answers and literature tariffs are cut into rows at load.
+            names += ['answers.ts', 'tariffs.ts']
         for name in names:
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject in ('physical-education', 'applied-maths'):
@@ -725,7 +728,8 @@ def content_hash(subject):
         for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject == 'french':
-        for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json'):
+        # answers.ts cuts the lifted answer lines into rows at load.
+        for name in ('writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
