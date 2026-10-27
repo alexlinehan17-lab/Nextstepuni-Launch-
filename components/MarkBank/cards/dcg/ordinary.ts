@@ -2630,7 +2630,10 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the outline of the arbor bench.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2023-ol-b3c-r1", kind: "anyN", verbatim: "Projections from elevation (2) and plan (2)", marks: 13, contextNote: "The scheme prices this drawing step by step: 4, 3, 2, 4 — 13 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Projections from elevation (2) and plan (2)","Axonometric projection of front surface","Axonometric projection side surface","Axonometric projection of roof"],"perOptionSteps":[4,3,2,4]} },
+    { id: "dcg-2023-ol-b3c-r1", kind: "criterion", verbatim: "Projections from elevation (2) and plan (2)", marks: 4, permittedMarks: [0,1,2,3,4], parts: [{"id":"elevation","verbatim":"elevation","marks":2,"permittedMarks":[0,1,2]},{"id":"plan","verbatim":"plan","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "dcg-2023-ol-b3c-r2", kind: "criterion", verbatim: "Axonometric projection of front surface", marks: 3, permittedMarks: [0,1,2,3] },
+    { id: "dcg-2023-ol-b3c-r3", kind: "criterion", verbatim: "Axonometric projection side surface", marks: 2, permittedMarks: [0,1,2] },
+    { id: "dcg-2023-ol-b3c-r4", kind: "criterion", verbatim: "Axonometric projection of roof", marks: 4, permittedMarks: [0,1,2,3,4] },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q3-art",

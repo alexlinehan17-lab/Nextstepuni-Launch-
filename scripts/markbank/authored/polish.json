@@ -7073,14 +7073,23 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 2,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "2 marks 2 marks",
-    "marks": 2,
-    "contextNote": "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "1. 2. 3. 4. C D A B - 2 marks 2 marks 2 marks. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "D",
+      "A",
+      "B"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints the tariff as '1 × 2 marks, priced line by line'; the paper prints this ask on page 11 of the question booklet. Paper/scheme wording agreement 1.00.",
@@ -7471,14 +7480,23 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 3,
+  "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "3 marks 3 marks",
-    "marks": 3,
-    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "1. 2. 3. 4. C A D B - 3 marks 3 marks 3 marks. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "A",
+      "D",
+      "B"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints the tariff as '1 × 3 marks, priced line by line'; the paper prints this ask on page 14 of the question booklet. Paper/scheme wording agreement 1.00.",
@@ -9821,14 +9839,23 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 2,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "2 marks 2 marks",
-    "marks": 2,
-    "contextNote": "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language."
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts in full",
+    "marks": null,
+    "contextNote": "1. 2. 3. 4. b) a) d) c) - 2 marks 2 marks 2 marks. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "a)",
+      "d)",
+      "c)"
+     ]
+    }
    }
   ],
   "notes": "The scheme prints the tariff as '1 × 2 marks, priced line by line'; the paper prints this ask on page 14 of the question booklet. Paper/scheme wording agreement 1.00.",

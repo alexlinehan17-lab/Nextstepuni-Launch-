@@ -24,6 +24,13 @@
  * Geography card carries one criterion per published allocation line; each is
  * cut into rows on its own (tryParseGeographyCriterionAllocation).
  */
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
+import type { AccountingRubric } from '../types/markBank';
+import accountingResidue from '../scripts/markbank/authored/accounting-rows-residue.json';
+import { REVIEWED_CARDS as APPLIED_MATHS_REVIEWED } from '../components/MarkBank/cards/applied-maths/reviewed';
+import type { AppliedMathematicsRubric } from '../types/markBank';
+import appliedMathsResidue from '../scripts/markbank/authored/applied-maths-steps-residue.json';
 import { describe, expect, it } from 'vitest';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
@@ -466,8 +473,75 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
     expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(59);
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options)).toEqual([['Liverpool', 'Manchester', 'Birmingham', 'Leeds']]);
-    expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks])).toEqual([['Clonmel prison', 6, [0, 3, 6]]]);
+    // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
+    expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
+      ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
+      ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
+      ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
+      ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
+    ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+  });
+
+  it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
+    const cards = [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].filter((card): card is SecRubricCard & { rubric: AccountingRubric } => card.kind === 'rubric' && card.rubric.system === 'accounting');
+    expect(cards).toHaveLength(1365);
+    const structured = cards.filter(card => card.rubric.rows?.length);
+    for (const card of structured) {
+      const rows = card.rubric.rows!;
+      expect(new Set(rows.map(row => row.id)).size, `${card.id}: row ids`).toBe(rows.length);
+      for (const row of rows) {
+        expect(row.text.trim().length, `${card.id}/${row.id}: empty row`).toBeGreaterThan(0);
+        expect(/[A-Za-z0-9]/.test(row.text), `${card.id}/${row.id}: "${row.text}" names nothing`).toBe(true);
+        expect(row.marks, `${card.id}/${row.id}: marks`).toBeGreaterThan(0);
+        expect(Number.isInteger(row.page) && row.page > 0, `${card.id}/${row.id}: page`).toBe(true);
+      }
+      // The rows are the task: they add up to its total exactly.
+      expect(rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows add up`).toBe(card.totalMarks);
+    }
+    // 1,212 of 1,365 tasks (2026-10-27, residue wave): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
+    expect(structured).toHaveLength(1212);
+    const residue = cards.filter(card => !card.rubric.rows?.length).map(card => card.id).sort();
+    expect(residue).toEqual(accountingResidue.tasks.map(task => task.id).sort());
+    for (const task of accountingResidue.tasks) expect(task.reason.length, task.id).toBeGreaterThan(0);
+    // A part the scheme prices only through its section total is one flagged block row; pinned so it cannot grow unnoticed.
+    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2010-ol-q5(a)(iv)", "acc-2010-ol-q5(b)(iv)", "acc-2011-ol-q5(d)", "acc-2012-ol-q8(f)", "acc-2016-ol-q5(d)", "acc-2017-ol-q5(d)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-ol-q8(g)", "acc-2025-hl-q9(a)", "acc-2025-hl-q9(b)", "acc-2025-hl-q9(c)"]);
+  });
+
+  it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
+    const cards = APPLIED_MATHS_REVIEWED.filter((card): card is SecRubricCard & { rubric: AppliedMathematicsRubric } => card.kind === 'rubric' && card.rubric.system === 'applied-mathematics');
+    expect(cards).toHaveLength(1486);
+    const residue = new Set(appliedMathsResidue.cards.map(card => card.id));
+    let cut = 0, scaleOnly = 0;
+    for (const card of cards) {
+      const steps = card.rubric.allocations.filter(item => item.label.startsWith('Published step'));
+      if (!steps.length) { scaleOnly += 1; continue; }
+      if (residue.has(card.id)) {
+        expect(steps.some(item => item.region), `${card.id}: in the residue yet cut`).toBe(false);
+        continue;
+      }
+      cut += 1;
+      const pages = card.rubric.solution.pages;
+      const regions = card.rubric.solution.regions ?? [];
+      let last: { p: number; bottom: number } | null = null;
+      for (const item of steps) {
+        expect(item.region, `${card.id}/${item.id}: no region`).toBeDefined();
+        const { p, r } = item.region!;
+        const index = pages.indexOf(p);
+        expect(index, `${card.id}/${item.id}: page ${p} is not a solution page`).toBeGreaterThanOrEqual(0);
+        const whole = regions[index] as [number, number, number, number] | undefined;
+        // Inside the solution's own region, at least a line tall, and in reading order.
+        if (whole) {
+          expect(r[0] >= whole[0] - 1e-6 && r[2] <= whole[2] + 1e-6 && r[1] >= whole[1] - 1e-6 && r[3] <= whole[3] + 1e-6, `${card.id}/${item.id}: outside the solution`).toBe(true);
+        }
+        expect(r[3] - r[1], `${card.id}/${item.id}: thinner than a line`).toBeGreaterThanOrEqual(0.012);
+        if (last && last.p === p) expect(r[1], `${card.id}/${item.id}: out of order`).toBeGreaterThanOrEqual(last.bottom - 0.01);
+        last = { p, bottom: r[3] };
+      }
+    }
+    // 1,347 cut, 52 priced by a scale over the whole solution, 87 in the residue (2026-10-27, residue wave).
+    expect([cut, scaleOnly, residue.size]).toEqual([1347, 52, 87]);
+    for (const card of appliedMathsResidue.cards) expect(card.reason.length, card.id).toBeGreaterThan(0);
   });
 
   it('Construction: a criterion row priced in named components carries them as parts the student places separately', () => {
@@ -604,7 +678,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       return schemes.get(key)!;
     };
     const lifted = cards.filter(card => card.rubric.expected);
-    expect(lifted).toHaveLength(1767);
+    // 1,767 from the text layer (stage A) + 143 from the page's geometry (stage B: tables, ticks, True/False columns).
+    expect(lifted).toHaveLength(1910);
+    expect(lifted.filter(card => card.rubric.expected!.lifted === 'geometry')).toHaveLength(143);
     for (const card of lifted) {
       const corpus = schemeText(card.year, card.level);
       const expected = card.rubric.expected!;
@@ -613,29 +689,66 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       for (const item of expected.items) {
         expect(item.text.trim().length, `${card.id}/${item.id}`).toBeGreaterThan(0);
         for (const piece of [item.text, ...(item.detail ?? [])]) {
-          expect(corpus.includes(normalise(piece)), `${card.id}/${item.id}: "${piece.slice(0, 50)}" is not lifted from the ${card.year} scheme`).toBe(true);
+          if (expected.lifted === 'geometry') {
+            // A row rebuilt from word positions: the text layer may hold its words in another order, but it holds every one.
+            for (const word of piece.split(/\s+|\s—\s/)) {
+              const token = normalise(word);
+              if (token) expect(corpus.includes(token), `${card.id}/${item.id}: "${word}" is not a word the ${card.year} scheme prints`).toBe(true);
+            }
+          } else {
+            expect(corpus.includes(normalise(piece)), `${card.id}/${item.id}: "${piece.slice(0, 50)}" is not lifted from the ${card.year} scheme`).toBe(true);
+          }
         }
       }
     }
     // A row sits under the response it names, or in one pool the responses draw from.
     const layouts = lifted.map(card => businessExpectedLayout(card.rubric)!.kind);
-    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([221, 1546]);
-    // What bus_expected.py could not lift, by reason, each with the pages it looked at. Fix a shape and lower its number here.
+    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([242, 1668]);
+    // What bus_expected.py could not lift — the text-layer reason, then the geometry reading's — each with the pages it looked at.
+    // Fix a shape and lower its number here.
     const review = JSON.parse(readFileSync(resolve(__dirname, '..', 'scripts', 'markbank', 'authored', 'business-expected-review.json'), 'utf8')) as Array<{ id: string; reason: string; schemePages: number[] }>;
     const reasons: Record<string, number> = {};
     for (const entry of review) reasons[entry.reason] = (reasons[entry.reason] ?? 0) + 1;
     expect(reasons).toEqual({
-      'an item is not one slice of the page text: a table or diagram the text layer reordered': 5,
-      'part marker': 24,
-      'roman marker': 22,
-      's1 marker': 6,
-      's1 part marker': 6,
-      'table layout lost in the text layer': 59,
-      'text layer glyph damage on the cited page': 27,
-      'the scheme prints the marker and the question but no response under it on the cited page': 30,
-      'tiny block': 1,
-      'unbounded block over 3000 characters: a whole question, not this part': 14,
-      'workings table flattened by the text layer': 24,
+      "an item is not one slice of the page text: a table or diagram the text layer reordered; geometry: no readable response": 1,
+      "an item is not one slice of the page text: a table or diagram the text layer reordered; geometry: no response under the marker": 1,
+      "part marker; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
+      "roman marker; geometry: roman marker not found": 3,
+      "roman marker; geometry: the marker found opens another part": 3,
+      "roman marker; geometry: word not in the scheme text: 10(5+5)": 1,
+      "s1 marker; geometry: no readable response": 1,
+      "s1 part marker; geometry: the marker found opens another part": 2,
+      "table layout lost in the text layer; geometry: no readable response": 1,
+      "table layout lost in the text layer; geometry: no response under the marker": 4,
+      "table layout lost in the text layer; geometry: part marker not found": 1,
+      "table layout lost in the text layer; geometry: q marker not found": 3,
+      "table layout lost in the text layer; geometry: roman marker not found": 3,
+      "table layout lost in the text layer; geometry: text layer glyph damage on the page": 5,
+      "table layout lost in the text layer; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
+      "table layout lost in the text layer; geometry: the marker found opens another part": 2,
+      "table layout lost in the text layer; geometry: word not in the scheme text: (4+3+2+1)": 1,
+      "table layout lost in the text layer; geometry: word not in the scheme text: 3+3+2+2": 1,
+      "text layer glyph damage on the cited page; geometry: block over 3000 characters": 1,
+      "text layer glyph damage on the cited page; geometry: no readable response": 1,
+      "text layer glyph damage on the cited page; geometry: no response under the marker": 5,
+      "text layer glyph damage on the cited page; geometry: q marker not found": 1,
+      "text layer glyph damage on the cited page; geometry: roman marker not found": 3,
+      "text layer glyph damage on the cited page; geometry: text layer glyph damage on the page": 2,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: no readable response": 1,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: no response under the marker": 5,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: q marker not found": 3,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: word not in the scheme text: (5+5)": 1,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: word not in the scheme text: 2+2+2+2+2": 1,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: word not in the scheme text: 3+3+2+2": 1,
+      "tiny block; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
+      "unbounded block over 3000 characters: a whole question, not this part; geometry: block over 3000 characters": 2,
+      "unbounded block over 3000 characters: a whole question, not this part; geometry: no response under the marker": 1,
+      "workings table flattened by the text layer; geometry: part marker not found": 1,
+      "workings table flattened by the text layer; geometry: q marker not found": 1,
+      "workings table flattened by the text layer; geometry: roman marker not found": 2,
+      "workings table flattened by the text layer; geometry: text layer glyph damage on the page": 5,
+      "workings table flattened by the text layer; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
+      "workings table flattened by the text layer; geometry: word not in the scheme text: (15m+5m)": 1,
     });
     const ids = new Set(cards.map(card => card.id));
     for (const entry of review) {
