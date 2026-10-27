@@ -226,7 +226,7 @@ class Src:
         return hits[0]
 
     def select(self, page, start, end=None, after=None, before=None, nth=1, lo=0, end_nth=1,
-               skip_marks=False):
+               skip_marks=False, wordbreak=False):
         """The printed text from `start` to `end` on one page.
 
         Returns (text, meta) where meta records the line span and whether the
@@ -278,6 +278,12 @@ class Src:
                             # "wall) or ...") is not part of the answer.
                             mid = [m for m in mid if not re.fullmatch(r'\d{1,2}(?:\(\d\))?|\d,\d|\d\+\d', m)]
                         seg = [L[i][off:]] + mid + [L[j][:k + len(end)]]
+                    if wordbreak:
+                        a, b = (x.strip() for x in seg) if len(seg) == 2 else ('', '')
+                        if not (a[-1:].isalpha() and b[:1].isalpha()):
+                            raise LookupError(f'{self.label} p{page}: wordbreak needs two printed lines broken '
+                                              f'between letters; got {seg!r}')
+                        return a + b, {**meta, 'lines': [i, j]}
                     return join_lines(seg), {**meta, 'lines': [i, j]}
                 k = L[j].find(end, k + 1)
         raise LookupError(f'{self.label} p{page}: end {end!r} closes no printed line after '
@@ -348,16 +354,20 @@ def SQ(page, start, end=None, after=None, nth=1, paired=None, bare=False, path=N
             **({'path': list(path)} if path else {}), **({'welded': True} if welded else {})}
 
 
-def S(start, end=None, page=None, after=None, before=None, nth=1, skip_marks=False, piece=None, psep=None):
+def S(start, end=None, page=None, after=None, before=None, nth=1, skip_marks=False, piece=None, psep=None,
+      wordbreak=False):
     """A slice of the SCHEME (page defaults to the task's scheme page, and the
     search starts after the task's own reprinted question). `skip_marks`
     leaves out a mark cell printed on its own line inside the answer. `piece`
     keeps one entry of a printed list cut at the scheme's own separator
     ("A = Larynx/ B = Trachea/ ..." piece 2 is "B = Trachea"); a list of
-    pieces with a list of separators (`psep`) cuts again inside it."""
+    pieces with a list of separators (`psep`) cuts again inside it. `wordbreak`
+    joins a selection of exactly two printed lines with no space, for a word the
+    scheme breaks across the lines of a narrow cell with no hyphen (2010 Higher
+    p12 sets "1. Chlorophy" over "ll"): the break must fall between two letters."""
     return {'src': 'scheme', 'page': page, 'start': start, 'end': end,
             'after': after, 'before': before, 'nth': nth, **({'skip_marks': True} if skip_marks else {}),
-            **({'piece': piece, 'psep': psep} if piece else {})}
+            **({'piece': piece, 'psep': psep} if piece else {}), **({'wordbreak': True} if wordbreak else {})}
 
 
 def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False,

@@ -113,7 +113,8 @@ class Lifter:
                            and not sel.get('after')) else 0
         text, meta = src.select(page, sel['start'], sel.get('end'), after=sel.get('after'),
                                 before=sel.get('before'), nth=sel.get('nth', 1), lo=lo,
-                                end_nth=sel.get('end_nth', 1), skip_marks=sel.get('skip_marks', False))
+                                end_nth=sel.get('end_nth', 1), skip_marks=sel.get('skip_marks', False),
+                                wordbreak=sel.get('wordbreak', False))
         self.used[doc].add(page)
         if sel.get('piece'):
             pieces = sel['piece'] if isinstance(sel['piece'], list) else [sel['piece']]
