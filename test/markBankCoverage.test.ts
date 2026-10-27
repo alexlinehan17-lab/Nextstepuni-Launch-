@@ -240,7 +240,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
       const names = subject === 'english'
         ? ['factory.ts', 'authored.json', 'published-higher.json', 'published-ordinary.json']
         : subject === 'geography' ? ['factory.ts', 'authored.json', 'allocation.ts']
-          : subject === 'art' || subject === 'politics-and-society' ? ['factory.ts', 'authored.json', 'answers.ts']
+          : subject === 'art' ? ['factory.ts', 'authored.json', 'answers.ts']
+            : subject === 'politics-and-society' ? ['factory.ts', 'authored.json', 'answers.ts', 'corrections.ts', 'corrections.json']
             : subject === 'irish' ? ['factory.ts', 'authored.json', 'answers.ts', 'tariffs.ts']
               : ['factory.ts', 'authored.json'];
       for (const name of names) {

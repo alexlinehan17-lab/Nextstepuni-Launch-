@@ -145,7 +145,11 @@ subject-specific generators.
   ("Very good explanation · 8 - 10M") is a row the student places themselves
   on, an exact answer is a claimable row, and the scheme's indicative points
   ("Responses may make reference to") are a visible list labelled as such,
-  never a checklist. Physical Education rows come from
+  never a checklist; a sub-part priced in the scheme's margin ("(c) (i) One
+  fact 2 marks") is a part of its own, and `corrections.ts` restores, from the
+  scheme PDF with its page named, a price line the lifted block lost (the text
+  layer gives a margin price its own line, which `politics_author.readable()`
+  drops). Physical Education rows come from
   `components/MarkBank/cards/physical-education/answers.ts`, which cuts each
   criterion's reviewed guidance sentence ("Good description: 2; fair
   description: 1.", "Phase named: 1; … good 2, fair 1", "4 marks + 2 marks",
