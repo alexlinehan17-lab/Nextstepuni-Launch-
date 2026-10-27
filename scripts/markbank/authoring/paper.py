@@ -373,6 +373,19 @@ _RULED_HEAD = re.compile(r'\s*_{3,}\s*(?=\d{1,2}\.\s+[A-Z(])')
 # 3, 4, 6, 7, 8, 9, 10, 11]"). The head is split off where the page prints it.
 # Gated to the sitting: no other paper's reading may move because of it.
 DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small part']}
+# 2012 HL Chemistry (paper page 5) sets the three conversions Q6(a) asks about in a
+# column right of its words: "(i) C6H14 (l) -> 4H2 (g) + [benzene] (l)", "(ii) C14H30 (l)
+# -> ... + X (g)", "(iii) CH3(CH2)6CH3 (l) -> [2,2,4-trimethylpentane, drawn] (l)" (x 257-538,
+# y 49-152). Its text block opens at y 23.8, above the "6." head (y 49.3), so it was read
+# first and its romans were filed under Question 5: the census counted Q5(e)(i)-(iii) holding
+# the equations and lost Q5(e) itself ("Boron trichloride (BCl3) is a colourless gas. Would
+# you expect (i) the B-Cl bonds, (ii) the BCl3 molecules, to be polar or non-polar? Justify
+# your answers." (9)). The romans number a figure's equations, which Q6(a) asks about in one
+# sentence ("For each conversion, (i) to (iii), name the process involved." (8)): no ask is
+# printed there, and the block is left out as a figure's. Gated to the sitting.
+FIGURE_BLOCKS = {('chemistry', 2012, 'hl'): [
+    '(i) C6H14 (l) → 4H2 (g) + (l) (ii) C14H30 (l) → C7H16 (l) + C3H6 (g) + X (g) '
+    '(iii) CH3(CH2)6CH3 (l) → (l)']}
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
@@ -922,6 +935,8 @@ class Paper:
         carry = ''
         for path in self.files:
             for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
+              if block in FIGURE_BLOCKS.get((self.subject, self.year, self.level), ()):
+                  continue           # (2012 HL Chemistry: a figure's numbered equations; see FIGURE_BLOCKS.)
               if self.subject in RULED_HEADS:
                   block = _RULED_HEAD.sub(' ', block)
               # A choice question prints its alternative welded on after a

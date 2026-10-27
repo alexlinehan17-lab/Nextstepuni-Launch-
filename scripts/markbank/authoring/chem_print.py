@@ -369,6 +369,14 @@ def split_heads(lines, year, lvl):
             out.append(l)
     return out
 
+# 2012 HL: the paper sets one head in one run with its words, "4. Answer eight of the
+# following items (a), (b), (c), etc." (page 4, x 43, y 90); its other ten heads stand
+# alone ("5.", page 4, x 43, y 472). Unread, the paper reader found Questions 1-3 only:
+# Q4(a)-(e) were read as words of Q3(e), Q4(f)-(k) as Q3(f)-(k), and Questions 5-11 fell
+# under Q3(k) and a phantom Q3(l). The sitting joins split_heads' set: no other line of the
+# 2012 Higher paper at x < 70 opens with a number, a full stop and words.
+OLD_OL_HEADS.add((2012, 'hl'))
+
 
 # Parts the paper numbers wrongly, as (the key read, the marker printed).
 MISPRINTED = []
@@ -1156,6 +1164,16 @@ class Printed:
         self.scheme_path = os.path.join(SCHEMES, f'{year}-{lvl}.pdf')
         # (2013 OL: a head set in one run with its words, split_heads.)
         self.paper_lines = split_heads(read_lines(self.paper_path), year, lvl)
+        if (year, lvl) == (2012, 'hl'):
+            # 2012 HL paper page 5 sets the state symbol "(l)" of the product Q6(a)(iii) draws in
+            # full (2,2,4-trimethylpentane) as a run of its own after the structure's last "H"
+            # (x 509, y 140). Read alone it is a letter marker: it opened a phantom Q6(l) after
+            # (b), which took (b)'s second ask, (c), (d) and (e) with it. A state symbol, not a
+            # part: dropped. No other line of the paper reads "(l)" alone.
+            sym = [l for l in self.paper_lines if l.text == '(l)']
+            assert len(sym) == 1 and sym[0].page == 5 and abs(sym[0].x0 - 508.9) < 1 \
+                and abs(sym[0].y0 - 139.6) < 1, sym
+            self.paper_lines = [l for l in self.paper_lines if l is not sym[0]]
         self.figures = figures
         if figures:
             self.paper_lines = self._outside_figures(self.paper_lines)
@@ -1215,6 +1233,19 @@ class Printed:
             foot = re.compile(r'^Chemistry ATGL 2012 Marking Scheme Page \d{1,2}of 15$')
             assert sum(1 for l in self.scheme_lines if foot.match(l.text) and l.y0 > 760) == 15
             self.scheme_lines = [l for l in self.scheme_lines if not (l.y0 > 760 and foot.match(l.text))]
+        if (year, lvl) == (2012, 'hl'):
+            # 2012 HL scheme PDF pages 3-17 print the running footer "ATAL Chemistry 2012 –
+            # Marking Scheme Page 3 of 15" as one run (x 65, y 731), which FOOTER does not read
+            # (it drops runs below y 765 only); page 8 heads Section B "SECTION B" (x 234, y 44)
+            # and page 17 opens "Question 11 continued/" (x 65, y 69). In a labelled scheme every
+            # line is answer: each was filed as an answer of the part before it ("... Treat
+            # answers not given to two decimal places as slips. ATAL Chemistry 2012 – Marking
+            # Scheme Page 3 of 15", Q1(e)(ii)). None is marking; dropped.
+            foot = re.compile(r'^ATAL Chemistry 2012 – Marking Scheme Page \d{1,2} of 15$')
+            furniture = [l for l in self.scheme_lines if (l.y0 > 725 and foot.match(l.text)) or (
+                l.page == 8 and l.text == 'SECTION B') or (l.page == 17 and l.text == 'Question 11 continued/')]
+            assert len(furniture) == 17, furniture
+            self.scheme_lines = [l for l in self.scheme_lines if not any(l is f for f in furniture)]
         if (year, lvl) == (2014, 'hl'):
             # 2014 HL scheme PDF pages 7 and 10 head Questions 2 and 4 "QUSESTION 2"
             # and "QUSESTION 4" (x 49.7, y 48.6), an SEC misprint; every other head of

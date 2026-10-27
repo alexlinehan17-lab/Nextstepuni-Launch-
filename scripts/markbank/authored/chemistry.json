@@ -103309,5 +103309,3418 @@
     "contextNote": "The scheme adds: [Q 11 (c) B can receive a maximum of 25 marks] For \"How does galvanising protect iron from corrosion?\""
    }
   ]
+ },
+ {
+  "id": "chem-2012-hl-q1-a",
+  "topicId": "chem-4-1",
+  "conceptId": "a-primary-standard",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(a)",
+  "questionText": "Explain the underlined term.",
+  "stem": "A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 2]"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "can be dissolved (used) to make up a solution of exact (known) concentration / no need to standardise by titration (can be made up directly)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prices its two points \"ANY TWO: (3 + 2)\"."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pure / stable / anhydrous (not hydrated) / no water loss (no efflorescence) / not deliquescent (not hygroscopic ) / does not sublime / high formula (molecular, molar) mass (Mr)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2012-HL-paper-q1a-print"
+ },
+ {
+  "id": "chem-2012-hl-q1-b-describe",
+  "topicId": "chem-4-1",
+  "conceptId": "making-up-a-primary-standard-solution",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(b) — making up the solution",
+  "questionText": "Describe how the student should have prepared 500 cm³ of the 0.05 M primary standard solution from a known mass of pure anhydrous sodium carbonate, supplied on a clock glass.",
+  "stem": "A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rinse (wash) from clock glass into beaker and dissolve",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points \"ANY FOUR: (4 × 3)\", one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pour (add) using funnel (glass rod) into 500 cm³ volumetric flask and add rinsings of beaker",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "add deionised* water until bottom of meniscus on (level with) mark / read at eye level",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: *[Accept if “deionised water” appears elsewhere in candidate’s description.]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "stopper and invert (not “shake”) several times",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q1-b-mass",
+  "topicId": "chem-4-1",
+  "conceptId": "mass-of-sodium-carbonate-for-a-standard-solution",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(b) — mass of sodium carbonate",
+  "questionText": "Calculate the exact mass of anhydrous sodium carbonate (Na₂CO₃) required to prepare this solution.",
+  "stem": "Describe how the student should have prepared 500 cm³ of the 0.05 M primary standard solution from a known mass of pure anhydrous sodium carbonate, supplied on a clock glass.",
+  "figureKey": "chemistry-2012-HL-scheme-q1b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "500 × 0.05 × 106* ÷ 1000",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "CALC: the scheme gives the answer, 2.65 g, priced (6), then two steps (3) each, in a box. The scheme prints 500 × 0.05 × 106* over 1000 as a fraction; ÷ stands for its bar. It adds: \"* Addition must be shown for error to be treated as a slip.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "= 2.65",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q1-c-i",
+  "topicId": "chem-4-1",
+  "conceptId": "adjusting-a-burette-to-the-zero-mark",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(c)(i)",
+  "questionText": "Describe how the liquid level in the burette was adjusted to the zero mark.",
+  "stem": "A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "fill above mark and adjust with tap / fill to below mark and add dropwise",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q1-c-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "why-a-pipette-filler-is-used",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(c)(ii)",
+  "questionText": "Why was a pipette filler used to fill the pipette with 25.0 cm³ of the sodium carbonate solution?",
+  "stem": "A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "safety / avoid solution getting into mouth / hygiene",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q1-d",
+  "topicId": "chem-4-1",
+  "conceptId": "indicator-for-hydrochloric-acid-and-sodium-carbonate",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(d)",
+  "questionText": "Name a suitable indicator for this titration. State the colour change observed at the end point.",
+  "stem": "A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.",
+  "figureKey": "chemistry-2012-HL-scheme-q1d",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Methyl orange",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "NAME: \"indicator\" (3), one of those in the scheme's table, shown with the answer.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Methyl orange",
+      "Methyl red",
+      "Methyl yellow",
+      "Bromophenol blue",
+      "Bromocresol green"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Orange (yellow)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "CHANGE: \"colour before // colour after\" (2 × 3): the colour before, (3), of the indicator named, as the scheme's table gives it. The scheme adds: [Linked marks - suitable indicator is a requirement for award of marks for matched colours]",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Orange (yellow)",
+      "Yellow",
+      "Blue (purple, violet)",
+      "Blue"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Red (pink)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the colour after, (3), of the same indicator.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Red (pink)",
+      "Yellow"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q1-e-i",
+  "topicId": "chem-4-1",
+  "conceptId": "concentration-of-hydrochloric-acid-in-moles-per-litre",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(e)(i)",
+  "questionText": "Calculate, correct to two decimal places, the concentration of the hydrochloric acid solution in (i) moles per litre, (ii) grams per litre.",
+  "stem": "A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.",
+  "figureKey": "chemistry-2012-HL-scheme-q1e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.12 M",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "For (i). The scheme prices the answer (9) and works it in a box: 20.8 × MHCl over 2 = 25 × 0.05 over 1, set as fractions, (6), then MHCl = 0.12 (3); its own print is shown with the answer."
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q1e-print"
+ },
+ {
+  "id": "chem-2012-hl-q1-e-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "concentration-of-hydrochloric-acid-in-grams-per-litre",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q1(e)(ii)",
+  "questionText": "Calculate, correct to two decimal places, the concentration of the hydrochloric acid solution in (i) moles per litre, (ii) grams per litre.",
+  "stem": "A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.",
+  "figureKey": "chemistry-2012-HL-scheme-q1e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4.38 / 4.39 g l⁻¹",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii). The scheme gives the answer, priced (3), and the one step that earns it: \"0.12 × 36.5* = 4.38\" (3). It adds: \"* Addition must be shown for error to be treated as a slip.\" \"NOTE: Treat answers not given to two decimal places as slips.\""
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q1e-print"
+ },
+ {
+  "id": "chem-2012-hl-q2-a",
+  "topicId": "chem-4-2",
+  "conceptId": "apparatus-for-preparing-ethene-from-ethanol",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q2(a)",
+  "questionText": "Draw a labelled diagram showing the arrangement of apparatus and the reagents used in the preparation and collection of the ethene.",
+  "stem": "Ethene gas can be prepared from ethanol in a school laboratory.",
+  "figureKey": "chemistry-2012-HL-scheme-q2a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ethanol on glass wool (or other suitable material) positioned correctly",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices four points of the diagram (3), (3), (3) and (2) and draws the apparatus beside them, shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "aluminium oxide",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "heated",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "collection arrangement / collection over water / using trough",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme adds: \"No diagram: – 3\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q2-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "when-suck-back-happens",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q2(b)(i)",
+  "questionText": "At what stage in the procedure is a ‘suck-back’ most likely to occur?",
+  "stem": "Ethene gas can be prepared from ethanol in a school laboratory. It is important to be aware of the possibility of a ‘suck-back’ occurring when carrying out this procedure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "when heat is removed (stopped, interrupted) / at the end",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q2-b-ii",
+  "topicId": "chem-u2",
+  "conceptId": "what-a-suck-back-can-do",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q2(b)(ii)",
+  "questionText": "Give one possible consequence of a ‘suck-back’ occurring.",
+  "stem": "Ethene gas can be prepared from ethanol in a school laboratory. It is important to be aware of the possibility of a ‘suck-back’ occurring when carrying out this procedure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cold water sucked into test tube / test tube cracks / fire / explosion / injury due to broken glass",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q2-b-iii",
+  "topicId": "chem-u2",
+  "conceptId": "avoiding-suck-back",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q2(b)(iii)",
+  "questionText": "How could a ‘suck-back’ be avoided?",
+  "stem": "Ethene gas can be prepared from ethanol in a school laboratory. It is important to be aware of the possibility of a ‘suck-back’ occurring when carrying out this procedure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "remove delivery tube from water before removing heat / loosen stopper before removing heat",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q2-c",
+  "topicId": "chem-2-4",
+  "conceptId": "testing-ethene-for-unsaturation",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q2(c)",
+  "questionText": "Describe how you could test the gas produced for unsaturation.",
+  "stem": "Ethene gas can be prepared from ethanol in a school laboratory.",
+  "figureKey": "chemistry-2012-HL-scheme-q2c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Bromine (Br₂) water (soln)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "TEST: \"reagent used\" (3), one of the two in the scheme's table, shown with the answer. The scheme adds: *For “manganate(VII)” accept “permanganate,” “KMnO₄,” and “MnO₄⁻.”",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Bromine (Br₂) water (soln)",
+      "Acidified manganate(VII)* solution"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "bubble through (shake with)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any two of these, (3) each: \"bubble through (shake with) // colour before // colour after ANY TWO: (2 × 3)\". The colour before is the reagent's own, red (orange, yellow, brown) for bromine water and purple (violet, pink) for acidified manganate(VII); the colour after is colourless for both. The scheme adds: [not “clear”] [Allow 3 marks for decolourise]",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "bubble through (shake with)",
+      "Red (orange, yellow, brown)",
+      "Purple (violet, pink)",
+      "to colourless"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q2-d",
+  "topicId": "chem-4-2",
+  "conceptId": "equation-for-dehydrating-ethanol",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q2(d)",
+  "questionText": "Write a balanced equation for the preparation of ethene from ethanol.",
+  "stem": "Ethene gas can be prepared from ethanol in a school laboratory.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₂H₅OH → C₂H₄ + H₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept with Al₂O₃ over arrow or written on both sides of equation.] [Allow for 3 marks C₂H₅OH → C₂H₄]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q2-e",
+  "topicId": "chem-1-4",
+  "conceptId": "test-tubes-of-ethene-from-ethanol-at-60-percent-yield",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q2(e)",
+  "questionText": "When ethanol is converted to ethene by this method, a 60% yield can be expected. Assuming this percentage yield, what is the maximum number of 75 cm³ test tubes of ethene gas that could be collected at room temperature and pressure when 2.4 cm³ of ethanol, density 0.8 g cm⁻³, react?",
+  "stem": "Ethene gas can be prepared from ethanol in a school laboratory.",
+  "figureKey": "chemistry-2012-HL-scheme-q2e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2.4 × 0.8 = 1.92 g ethanol",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme gives the answer, 8 test tubes, priced (15), then five steps (3) each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1.92 ÷ 46* = 0.042 (0.0417) mol ethanol = 0.042 (0.0417) mol ethene",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: \"* Addition must be shown for error to be treated as a slip.\""
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "0.042 (0.0417) × 24000 = 1008 (1002) cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One of these, (3): the volume of ethene in theory, or the moles at 60%, as the scheme's two routes set them side by side.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "0.042 (0.0417) × 24000 = 1008 (1002) cm³",
+      "60% of 0.042 (0,0417) = 0.0252 (0.025)"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "60% of 1008 (1002) = 605 (601) cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the next step of that same route, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "60% of 1008 (1002) = 605 (601) cm³",
+      "0.0252 (0.025) × 24000 = 605 (600) cm³"
+     ]
+    }
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "605 (601 / 600) ÷ 75 = 8 test tubes of ethene",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: \"Note: Use of 22.4 litres as molar volume loses 3.\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q3-a",
+  "topicId": "chem-2-3",
+  "conceptId": "a-volatile-liquid-for-the-experiment",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q3(a)",
+  "questionText": "Give an example of a liquid suitable for use in this experiment.",
+  "stem": "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
+  "figureKey": "chemistry-2012-HL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "propanone (acetone) (56 °C) / propanal (49 °C) / methanol (65 °C) / trichloro- methane {chloroform} (61 °C) / hexane (69 °C) / other suitable liquid",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept ethanol (78 °C), ethyl ethanoate (77 °C), cyclohexane (81 °C).] The scheme adds: [Accept formula]."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q3-b-i",
+  "topicId": "chem-2-3",
+  "conceptId": "finding-the-mass-of-the-vapour",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q3(b)(i)",
+  "questionText": "Describe how (i) the mass, (ii) the volume, of the vapour is determined.",
+  "stem": "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
+  "figureKey": "chemistry-2012-HL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "weigh flask + fittings",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (i). One of these, (3): the first for \"Apparatus A*\", the second, after \"or\", for \"Apparatus B*\"; the scheme prices the three points of each (3 × 3), one each.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "weigh flask + fittings",
+      "weigh small syringe + contents"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "heat until all liquid gone (until vaporised) , cool, dry and reweigh",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the next point for that same apparatus, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "heat until all liquid gone (until vaporised) , cool, dry and reweigh",
+      "inject liquid and reweigh"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "mass is difference (find difference)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The same third point for either apparatus."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q3-b-ii",
+  "topicId": "chem-2-3",
+  "conceptId": "finding-the-volume-of-the-vapour",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q3(b)(ii)",
+  "questionText": "Describe how (i) the mass, (ii) the volume, of the vapour is determined.",
+  "stem": "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
+  "figureKey": "chemistry-2012-HL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "fill flask with water and empty into measuring (graduated) cylinder",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "For (ii). One of these, (6): the first for \"Apparatus A*\", the second, after \"or\", for \"Apparatus B*\".",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "fill flask with water and empty into measuring (graduated) cylinder",
+      "read volume from scale of gas syringe / find diff. between initial and final readings"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q3-c",
+  "topicId": "chem-2-3",
+  "conceptId": "why-the-vapour-is-at-atmospheric-pressure",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q3(c)",
+  "questionText": "Explain why the pressure of the vapour is the same as atmospheric pressure.",
+  "stem": "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
+  "figureKey": "chemistry-2012-HL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "the pinhole (in apparatus A*) means",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One of these, (3), for the apparatus used; the scheme sets the second after \"or\" and prices the two points of each (2 × 3), one each.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "the pinhole (in apparatus A*) means",
+      "the plunger (in apparatus B*) is free to move (moves)"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "vapour exposed to (in contact with) the air (atmosphere) / vessel is open to atmosphere",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the second point for that same apparatus, (3). The scheme adds: \"N.B. Marks to be awarded for either A or B and not for a mixture; if the candidate gives answers for both methods, mark them separately and award the marks for the better of the two.\"",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "vapour exposed to (in contact with) the air (atmosphere) / vessel is open to atmosphere",
+      "until vapour pressure reaches atmospheric pressure (until pressure is equal inside and outside) / plunger stops when pressure equalises"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q3-d",
+  "topicId": "chem-2-3",
+  "conceptId": "moles-and-relative-molecular-mass-of-the-vapour",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q3(d)",
+  "questionText": "The vapour of 0.63 g of a pure liquid occupies a volume of 330 cm³ at a temperature of 100 °C and at a pressure of 101 kPa. Calculate the number of moles of vapour and hence calculate the relative molecular mass of the volatile liquid.",
+  "stem": "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
+  "figureKey": "chemistry-2012-HL-scheme-q3d",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "equation of state (correct)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "MOL: the scheme gives the answer, \"0.01076 [Allow 0.01 to 0.011 mol]\", priced (9), then three steps (3) each; or, after \"or\", Vroom over 293* = 330 over 373, set as fractions, (3), \"*similar method at s.t.p.\""
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "101 × 10³× 330 × 10⁻⁶ ÷ 8.3 × 373",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One of these, (3), by the route used. The scheme prints 101 × 10³ × 330 × 10⁻⁶ over 8.3 × 373 as a fraction; ÷ stands for its bar.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "101 × 10³× 330 × 10⁻⁶ ÷ 8.3 × 373",
+      "Vroom = 259 cm³"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "= 0.01076 to 0.011",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the moles by that same route, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "= 0.01076 to 0.011",
+      "259 ÷ 24000 = 0.0108"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "0.63 ÷ 0.01076 to 0.011",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Mr: the scheme gives the answer, \"57 to 63\", priced (6), then two steps (3) each."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "= 57 to 63",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q3-e",
+  "topicId": "chem-2-3",
+  "conceptId": "limits-of-the-method-and-the-mass-spectrometer",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2012 HL Q3(e)",
+  "questionText": "Why is this method unsuitable for liquids that are non-volatile? What modern instrumental technique could be used as a more accurate method to measure the relative molecular masses of volatile and non-volatile liquids as well as of solid and gaseous substances?",
+  "stem": "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
+  "figureKey": "chemistry-2012-HL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "do not vaporise easily / boiling points too high / boiling points too near (higher than) boiling point of water / boiling points too near (higher than) 100 °C (373 K) / have to vaporise below 100 °C",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WHY."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "mass spectrometer",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "WHAT."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q4-a",
+  "topicId": "chem-1-2",
+  "conceptId": "sublevels-and-orbitals-occupied-in-argon",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(a)",
+  "questionText": "State the number of (i) sub-levels (subshells), (ii) orbitals, occupied by electrons in an argon atom in its ground state.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) 5",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) 9",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-b",
+  "topicId": "chem-1-2",
+  "conceptId": "beta-decay-of-iodine-131",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(b)",
+  "questionText": "Write a balanced nuclear reaction for the beta particle decay of iodine-131. [See formulae and tables booklet, page 79.]",
+  "figureKey": "chemistry-2012-HL-scheme-q4b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Write a balanced nuclear reaction for the beta particle decay of iodine-131. [See formulae and tables booklet, page 79.]",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [Marks may be awarded if all numbers are inverted]",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-c",
+  "topicId": "chem-1-2",
+  "conceptId": "relative-atomic-mass",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(c)",
+  "questionText": "Define relative atomic mass.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "average mass of atom(s) of element / average of isotopes taking abundances into account",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "relative to (based on) ¹/₁₂ the mass of a carbon-12 atom",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-d",
+  "topicId": "chem-2-1",
+  "conceptId": "sigma-and-pi-bonds-distinguished",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(d)",
+  "questionText": "Distinguish between sigma (σ) and pi (π) covalent bonding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sigma: head-on (end-on) overlap of orbitals",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pi: lateral (sideways) overlap of p-orbitals",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Marks can be got from clear diagrams. Allow only 3 if “orbitals” omitted from statements or not labelled in diagrams.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-e",
+  "topicId": "chem-3-5",
+  "conceptId": "balancing-copper-and-nitric-acid-by-oxidation-numbers",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(e)",
+  "questionText": "Using oxidation numbers, or otherwise, balance the following equation.",
+  "figureKey": "chemistry-2012-HL-paper-q4e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cu + 2NO₃⁻ + 4H⁺ → Cu²⁺ + 2NO₂ + 2H₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-f",
+  "topicId": "chem-2-3",
+  "conceptId": "avogadros-law",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(f)",
+  "questionText": "State Avogadro’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "equal (same) volumes of gases contain equal (same) numbers of molecules {moles, particles, atoms (for noble gases)}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "under same (not “all”) conditions (temp. and pressure) (not “at s.t.p.”)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for ‘molar volume at s.t.p. = 22.4 litres’]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-g",
+  "topicId": "chem-3-2",
+  "conceptId": "why-rate-rises-with-temperature",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(g)",
+  "questionText": "Why does raising the temperature generally increase the rates of chemical reactions?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "more collisions (particles, molecules, reactants) reach activation energy / more collisions are effective",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow 3 marks for ‘increase in number (or energy) of collisions’]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-h",
+  "topicId": "chem-3-5",
+  "conceptId": "products-at-the-cathode-in-sodium-sulfate-electrolysis",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(h)",
+  "questionText": "Name (i) the gas, (ii) the ion, formed at the negative electrode when aqueous sodium sulfate solution is electrolysed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) hydrogen",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) hydroxyl (hydroxide, OH⁻) ions",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-i",
+  "topicId": "chem-3-1",
+  "conceptId": "definition-of-bond-energy",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(i)",
+  "questionText": "Define bond energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "average energy required to break a bond (to break 1 mole of bonds) and to separate the atoms {into separate (single) atoms or in the gaseous state}",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-j",
+  "topicId": "chem-4-3",
+  "conceptId": "secondary-sewage-treatment",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(j)",
+  "questionText": "What happens during the secondary treatment of sewage?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "biological (biochemical, by micro-organisms, by bacteria, by activated sludge)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "oxidation (decomposition, digestion, breakdown) of sewage",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-k-a",
+  "topicId": "chem-4-2",
+  "conceptId": "low-and-high-density-polyethene",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(k)A",
+  "questionText": "What is the structural difference between low density poly(ethene) and high density poly(ethene)?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Low: have branching causing space(s) between chains",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "High: very little (no) branching, chains closer (little space between chains)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow shorter chains for low and longer chains for high]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q4-k-b",
+  "topicId": "chem-4-3",
+  "conceptId": "scrubbing-acidic-waste-gases",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q4(k)B",
+  "questionText": "What happens in the scrubbing of waste acidic gases in industry?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "lime (CaO) / limestone (CaCO₃)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "reacts with (removes) waste acidic gases",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Can be shown by equation]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2012-hl-q5-a",
+  "topicId": "chem-1-2",
+  "conceptId": "electron-configuration-of-oxygen-in-orbitals",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q5(a)",
+  "questionText": "Write the electron configuration (s, p) of an oxygen atom showing the arrangement of electrons in atomic orbitals.",
+  "figureKey": "chemistry-2012-HL-scheme-q5a",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 2]"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1s²2s²",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prices its two points (3 + 2)."
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "2px²2py¹2pz¹",
+    "marks": null,
+    "openList": true,
+    "contextNote": "One of these: the scheme sets the second as \"2p⁴ and\" the three 2p orbitals drawn as boxes, two arrows in the first, one in each of the others; its own print is shown with the answer. It adds that subscripts are accepted, and: \"The electron pair can be in any one of the p orbitals. Lines or dots will do in place of arrows in the boxes.\"",
+    "group": {
+     "claimMax": 1,
+     "options": [
+      "2px²2py¹2pz¹",
+      "2p⁴"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2012-hl-q5-b",
+  "topicId": "chem-1-3",
+  "conceptId": "atomic-radius-and-its-trend-across-a-period",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q5(b)",
+  "questionText": "Define atomic radius (covalent radius). State and explain the trend in atomic radii (covalent radii) across the second period of the periodic table of the elements.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "half internuclear distance (half distance between the centres of the atoms) in a single homonuclear bond (of singly-bonded atoms of the same element)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "DEFINE."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "decrease in atomic radius",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "STATE."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "increase in effective nuclear charge (number of protons)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "EXPLAIN."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q5-c",
+  "topicId": "chem-1-3",
+  "conceptId": "why-electronegativity-rises-across-a-period",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q5(c)",
+  "questionText": "Give one reason why electronegativity values exhibit a general increase across the second period of the periodic table.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "increase in nuclear charge (number of protons) / decrease in atomic radius",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q5-d-i",
+  "topicId": "chem-2-1",
+  "conceptId": "bonding-in-phosphine-and-the-other-hydrides",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q5(d)(i)",
+  "questionText": "State how the bonding in PH₃ differs from the bonding in the other three hydrides. What is the reason for this difference in bonding?",
+  "stem": "Consider the following hydrides of some of the elements from the second and third periods of the periodic table: H₂O NH₃ PH₃ HCl",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "PH₃ virtually non-polar (pure covalent) but the other three are polar covalent",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "STATE."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "tiny (no) electronegativity difference in PH₃ (between P and H) but much bigger electronegativity differences in the other three.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WHAT."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q5-d-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "hydrides-that-hydrogen-bond",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q5(d)(ii)",
+  "questionText": "From these four hydrides, identify the hydride or hydrides in which hydrogen bonding occurs between the molecules. Give one property that is affected by the presence of intermolecular hydrogen bonding in the hydride or hydrides you have identified.",
+  "stem": "Consider the following hydrides of some of the elements from the second and third periods of the periodic table: H₂O NH₃ PH₃ HCl",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "H₂O",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "FROM. The scheme prices these points (2 × 3), one each, and adds: [Award 6 marks if H₂O, NH₃ and HCl offered]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "NH₃",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "melting point / boiling point / surface tension / capillarity / specific heat / latent heat of fusion / latent heat of vaporisation / density / solubility in water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "GIVE."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q5-d-iii",
+  "topicId": "chem-2-2",
+  "conceptId": "shape-of-the-phosphine-molecule",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q5(d)(iii)",
+  "questionText": "State the shape of the PH₃ molecule and explain using electron-pair repulsion theory how this shape arises.",
+  "stem": "Consider the following hydrides of some of the elements from the second and third periods of the periodic table: H₂O NH₃ PH₃ HCl",
+  "figureKey": "chemistry-2012-HL-scheme-q5d-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pyramidal",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "SHAPE."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "repulsion between four electron pairs (e.p.), one a lone pair (l.p.) / repulsion between three bonds (bond pairs, b.p.) and a (one) lone pair (l.p.)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "EXPL. After the first wording's \"/\" the scheme draws the PH₃ molecule, its lone pair on the P; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q5-e",
+  "topicId": "chem-2-2",
+  "conceptId": "polar-bonds-in-a-non-polar-molecule",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q5(e)",
+  "questionText": "Boron trichloride (BCl₃) is a colourless gas. Would you expect (i) the B–Cl bonds, (ii) the BCl₃ molecules, to be polar or non-polar? Justify your answers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) B – Cl bond: polar",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WOULD. The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) BCl₃ molecule: non-polar",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "unequal sharing of electrons (el. neg. difference) between B and Cl (polarity of bonds) cancels due to symmetry of molecule(s) / centres of positive and negative charge coincide",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "JUSTIFY."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q6-a",
+  "topicId": "chem-2-4",
+  "conceptId": "reforming-cracking-and-isomerisation",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q6(a)",
+  "questionText": "Several processes are used in oil refining to convert less useful hydrocarbons into more useful ones. For each conversion, (i) to (iii), name the process involved.",
+  "figureKey": "chemistry-2012-HL-paper-q6",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 3 + 2]"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) dehydrocyclisation (cyclodehydrogenation) / reforming",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prices these points (3 + 3 + 2)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) catalytic cracking",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(iii) isomerisation / reforming",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 3 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2012-hl-q6-b",
+  "topicId": "chem-2-4",
+  "conceptId": "a-hydrocarbon-for-x-and-isooctane",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q6(b)",
+  "questionText": "Name a hydrocarbon that X could be and draw its structural formula. Name the product of process (iii) and state its octane number.",
+  "figureKey": "chemistry-2012-HL-scheme-q6b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "but-1-ene (1-butene)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "HYDROCARBON: one of these, (3): the scheme also accepts cyclobutane and methylcyclopropane, drawing each structure twice.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "but-1-ene (1-butene)",
+      "but-2-ene (2-butene)",
+      "2-methylpropene",
+      "cyclobutane",
+      "methylcyclopropane"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "CH₂ =CHCH₂CH₃",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "STRUCTURE: one of these, (3), for the hydrocarbon named; the scheme sets the third as \"CH₃C=CH₂\" with a CH₃ drawn under its second carbon, then \"[(CH₃)₂C=CH₂]\", and draws each as a skeleton, shown with the answer. It adds: [Name and formula must match. If the formula is fully expanded the H atoms may be omitted.]",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "CH₂ =CHCH₂CH₃",
+      "CH₃CH=CHCH₃",
+      "(CH₃)₂C=CH₂"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2,2,4-trimethylpentane / isooctane",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "PRODUCT."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "100",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "OCTANE NUMBER."
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q6b-print"
+ },
+ {
+  "id": "chem-2012-hl-q6-c",
+  "topicId": "chem-2-4",
+  "conceptId": "mtbe-and-leaded-petrol",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q6(c)",
+  "questionText": "Explain why the substance MTBE (methyl tert-butyl ether) is sometimes added to motor fuel. Name the substance previously added to motor fuel for the same purpose and state why its use was discontinued.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "increase octane number / prevent auto-ignition (pre-ignition, early ignition, ignition before spark, knocking, pinking)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "EXPLAIN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "lead compounds e.g. tetraethyl lead",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow benzene] NAME."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "toxic (poisonous, health hazard to living things) / poisons (damages) catalytic converters / pollutes the environment",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "STATE. The scheme adds: \"NAME & STATE are unlinked.\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q6-d",
+  "topicId": "chem-3-1",
+  "conceptId": "heat-of-combustion-and-the-bomb-calorimeter",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q6(d)",
+  "questionText": "Define heat of combustion. Name the laboratory apparatus used to measure the heats of combustion of fuels and foodstuffs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "energy released (heat change) when 1 mole of a substance",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. DEFINE."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "is burned (reacts) completely in oxygen / is burned (reacts) in excess oxygen",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "bomb calorimeter",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "NAME."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q6-e",
+  "topicId": "chem-3-1",
+  "conceptId": "heat-of-formation-of-isooctane",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q6(e)",
+  "questionText": "Calculate the heat of formation of the hydrocarbon (C₈H₁₈) produced in process (iii), given that its heat of combustion value has been measured to be –5502 kJ mol⁻¹ and that the heats of formation of carbon dioxide and water are –394 and –286 kJ mol⁻¹, respectively.",
+  "figureKey": "chemistry-2012-HL-scheme-q6e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "8CO₂ + 9H₂O → C₈H₁₈ + 12½O₂ ΔH = 5502 kJ",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme gives the answer as \"– 224 kJ mol⁻¹\" (12). After \"Equations not required\" it works it from the sums of heats of formation instead, pricing each term (3), and adds \"[+224 merits 3 marks only]\"; its own print of both is shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "8C + 8O₂ → 8CO₂ ΔH = – 3152 kJ",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "9H₂ + 4½O₂ → 9H₂O ΔH = – 2574 kJ",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "8C + 9H₂ → C₈H₁₈ ΔH = – 224 kJ",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, – 224 kJ mol⁻¹, priced [12], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer. After \"Equations not required\" the scheme works it from the sums of heats of formation instead, pricing each term it uses (3)."
+ },
+ {
+  "id": "chem-2012-hl-q7-a-hardness",
+  "topicId": "chem-4-3",
+  "conceptId": "causes-of-hardness-and-soap-scum",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q7(a) — cause and soap",
+  "questionText": "Explain how hard water is caused and how it wastes soap.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "dissolution of calcium ions / calcium hydrogencarbonate / calcium sulfate / calcium chloride / other soluble calcium salt /magnesium ions / magnesium hydrogencarbonate / magnesium sulfate / magnesium chloride / other soluble magnesium salt",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "CAUSE. The scheme adds: [Accept formulas]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "soap used up in react with Ca and Mg ions to give scum",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WASTE. The scheme adds: [Could be shown by an equation e.g. 2RCOO⁻ + Ca²⁺ → (RCOO)₂Ca]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q7-a-ion-exchange",
+  "topicId": "chem-4-3",
+  "conceptId": "deionising-water-by-ion-exchange",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q7(a) — ion exchange",
+  "questionText": "How can hard water be softened by ion exchange so that it is suitable for use as deionised water in the laboratory?",
+  "stem": "Explain how hard water is caused and how it wastes soap.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 2]"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pass through resin to replace positive ions (named + ion) with hydrogen ions (H⁺)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "DE-ION. The scheme prices its two points (3 + 2)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "and negative ions (named – ion) with hydroxyl (hydroxide) ions (OH⁻)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2012-hl-q7-b-purposes",
+  "topicId": "chem-4-3",
+  "conceptId": "why-each-substance-is-added-in-water-treatment",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b) — the purpose of each",
+  "questionText": "In water treatment, what is the purpose of adding each of the following: (i) a flocculating agent, (ii) chlorine, (iii) a fluorine-containing compound, (iv) calcium hydroxide, (v) sulfuric acid?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) clumping (coagulating, joining together) of fine particles (solids)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "PURPOSE. The scheme prices these points (5 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) kills pathogens {harmful bacteria (micro-organisms)} / sterilises",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(iii) prevents tooth decay / strengthens enamel",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(iv) raises pH",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "(v) lowers pH",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q7-b-excess",
+  "topicId": "chem-4-3",
+  "conceptId": "too-much-of-a-water-treatment-chemical",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b) — in excess",
+  "questionText": "State the problem that would arise when each of any two of these substances is added in excessive quantity.",
+  "stem": "In water treatment, what is the purpose of adding each of the following: (i) a flocculating agent, (ii) chlorine, (iii) a fluorine-containing compound, (iv) calcium hydroxide, (v) sulfuric acid?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) slight danger to health / acidification / corrosion / affects taste / tooth decay",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "STATE: any two of these, (3) each: \"ANY TWO: (2 × 3)\"; each is the problem for the substance its roman numbers.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "(i) slight danger to health / acidification / corrosion / affects taste / tooth decay",
+      "(ii) toxic (poisonous) / odour of chlorine / taste of chlorine",
+      "(iii) toxic (poisonous) / stains (mottles) teeth",
+      "(iv) pH too high (too basic) / causes hardness / affects taste",
+      "(v) pH too low (too acidic) / corrosion / tooth decay"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q7-c",
+  "topicId": "chem-4-3",
+  "conceptId": "heavy-metal-ions-in-water",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q7(c)",
+  "questionText": "Why is water pollution by heavy metal ions, e.g. Hg²⁺ or Pb²⁺, a cause of concern? Name an instrumental technique that could be used to detect and measure the concentration of a heavy metal ion in a water sample. Explain how Hg²⁺ or Pb²⁺ ions can be removed from a water supply.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "danger to health (toxic, poisonous) / may cause foetal abnormalities / minamata disease",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "CONCERN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "atomic absorption spectroscopy (atomic absorption spectrometry)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow 3 marks for AAS] NAME."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "precipitation / coagulation / complexation / adsorption / absorption / reverse osmosis / ion exchange / deionising",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "EXPLAIN."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q7-d",
+  "topicId": "chem-4-3",
+  "conceptId": "test-for-chloride-ion-in-water",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q7(d)",
+  "questionText": "Describe a test for the presence of chloride ion (Cl⁻) in water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "add silver nitrate (AgNO₃) and dilute nitric acid",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "white precipitate (ppt) formed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [white ppt linked to correct reagent]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q8-a-i",
+  "topicId": "chem-4-2",
+  "conceptId": "naming-alcohol-a",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q8(a)(i)",
+  "questionText": "Give the systematic (IUPAC) name for (i) the alcohol A, (ii) the ester B.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2012-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "propan-2-ol / 2-propanol",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow 3 marks for ‘propanol’] For (i)."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q8-a-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "naming-ester-b",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q8(a)(ii)",
+  "questionText": "Give the systematic (IUPAC) name for (i) the alcohol A, (ii) the ester B.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2012-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "propyl methanoate",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii)."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q8-b",
+  "topicId": "chem-4-2",
+  "conceptId": "structural-isomers-and-primary-and-secondary-alcohols",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)",
+  "questionText": "Alcohol A and propan-1-ol are structural isomers. Explain the underlined term. What is the structural difference between a primary alcohol and a secondary alcohol? Identify another pair of structural isomers from the reaction scheme.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "compounds with the same molecular formula",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. EXPLAIN."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "but having different structures (different structural formulas) / arranged differently in space",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "primary: RCH₂OH / contains CH₂OH / one carbon attached to OH carbon / at least two Hs attached to OH carbon / OH on end carbon",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. WHAT."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "secondary: RCHOHR¹ / contains CHOH / two carbons attached to OH carbon / only one hydrogen attached to OH carbon",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "propanal and propanone",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "IDENTIFY."
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q8b-print"
+ },
+ {
+  "id": "chem-2012-hl-q8-c",
+  "topicId": "chem-2-2",
+  "conceptId": "a-compound-whose-carbons-are-all-tetrahedral",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q8(c)",
+  "questionText": "Identify a compound in the scheme whose carbon atoms are all in tetrahedral geometry.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2012-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A / alcohol A / propan-2-ol / propan-1-ol",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ’propanol’]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q8-d",
+  "topicId": "chem-4-2",
+  "conceptId": "reducing-propanal-and-propanone",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q8(d)",
+  "questionText": "Name the reagent and catalyst used to bring about the conversions labelled R.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "labelKey": [
+   {
+    "letter": "R",
+    "meaning": "reagent: hydrogen // catalyst: nickel / palladium / platinum",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "reagent: hydrogen",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "catalyst: nickel / palladium / platinum",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept lithium aluminium hydride and sodium borohydride for 3 only. Accept formulas.]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q8d-print"
+ },
+ {
+  "id": "chem-2012-hl-q8-e",
+  "topicId": "chem-4-2",
+  "conceptId": "fehlings-test-on-propanal",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q8(e)",
+  "questionText": "Propanal is oxidised by Fehling’s reagent. Describe how this reaction is carried out. Why does propanone not react with Fehling’s reagent?",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2012-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "mix (add) equal amounts of Fehling’s A (1) and Fehling’s B (2) in a test tube",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "DESC: any three of these, (3) each: \"ANY THREE: (3 × 3)\".",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "mix (add) equal amounts of Fehling’s A (1) and Fehling’s B (2) in a test tube",
+      "add a small amount of propanal",
+      "heat / warm / place in water bath (may be got from a diagram)",
+      "note any change / red precipitate (ppt) formed / copper(I) oxide (Cu₂O) formed / blue colour changes"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "propanone not easily oxidised / not oxidised by Fehling’s reagent / poor reducing agent / Fehling’s reagent a very weak oxidising agent (too weak an oxidising agent)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WHY."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q8-f",
+  "topicId": "chem-4-2",
+  "conceptId": "the-compound-with-a-fruity-odour",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q8(f)",
+  "questionText": "Which compound in the scheme would you expect to have a fruity odour?",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2012-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B / ester / ester B / propyl methanoate / HCOOC₃H₇",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept the ester given as answer in (a) (ii) even if incorrect.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q9-a-define",
+  "topicId": "chem-3-2",
+  "conceptId": "rate-of-reaction",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q9(a) — rate of reaction defined",
+  "questionText": "Define rate of reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "change in concentration per unit time / rate of change of concentration / change in concentration ÷ time",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme prints \"change in concentration\" over \"time\" as a fraction; ÷ stands for its bar."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q9-a-plot",
+  "topicId": "chem-3-2",
+  "conceptId": "plotting-loss-of-mass-against-time",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q9(a) — the graph plotted",
+  "questionText": "Plot a graph to show the mass of carbon dioxide produced (loss of mass) versus time.",
+  "stem": "The loss of mass of a mixture of 50 cm³ of a 2 M solution of hydrochloric acid and excess marble chips was monitored over time and the following data were recorded.",
+  "figureKey": "chemistry-2012-HL-scheme-q9a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes correctly labelled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme opens \"See graph below.\" and prices these points (4 × 3), one each. It adds: [Accept “time” or “s”; “mass” or “g”]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "axes correctly scaled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "points correctly plotted",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Assume (0,0) correctly plotted]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "curve accurately drawn from origin",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Note: if graph paper is not used, accuracy must be checked with a ruler.]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q9a-plot-print"
+ },
+ {
+  "id": "chem-2012-hl-q9-a-use",
+  "topicId": "chem-3-2",
+  "conceptId": "instantaneous-rate-from-a-tangent",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q9(a) — rate at 60 seconds",
+  "questionText": "Use your graph to find the instantaneous rate of the reaction at 60 seconds in terms of g/s carbon dioxide produced.",
+  "stem": "The loss of mass of a mixture of 50 cm³ of a 2 M solution of hydrochloric acid and excess marble chips was monitored over time and the following data were recorded.",
+  "figureKey": "chemistry-2012-HL-scheme-q9a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2.0 × 10⁻³to 3 × 10⁻³g/s",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "USE. The scheme adds: [Allow 3 marks for tangent] Its graph draws the tangent at 60 seconds and works the rate in a box, shown with the answer."
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q9a-use-print"
+ },
+ {
+  "id": "chem-2012-hl-q9-a-mark",
+  "topicId": "chem-3-2",
+  "conceptId": "the-curve-for-half-the-acid-concentration",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q9(a) — the 1 M curve",
+  "questionText": "Mark clearly on your graph the curve you would expect to obtain if the reaction were repeated using 50 cm³ of a 1 M solution of hydrochloric acid. Justify the shape and position of this curve relative to the graph you have plotted.",
+  "stem": "The loss of mass of a mixture of 50 cm³ of a 2 M solution of hydrochloric acid and excess marble chips was monitored over time and the following data were recorded.",
+  "figureKey": "chemistry-2012-HL-scheme-q9a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rises to half the height",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "MARK: the scheme opens \"See graph below. curve drawn with the following:\" and prices these points (2 × 3), one each; its graph draws the 1 M curve, shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "less steep at the start / levels off later",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "less steep at the start due to lower concentration of HCl",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "JUSTIFY: any one of these, (3): \"ANY ONE: (3)\". The scheme adds: [It must correspond with the relevant feature of the curve.]",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "less steep at the start due to lower concentration of HCl",
+      "levels of later as reaction slower due to lower concentration of HCl",
+      "rises to half the height due to HCl concentration being halved (amount of HCl present is halved)"
+     ]
+    }
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q9a-mark-print"
+ },
+ {
+  "id": "chem-2012-hl-q9-b-type",
+  "topicId": "chem-3-2",
+  "conceptId": "homogeneous-catalysis",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b) — type of catalysis",
+  "questionText": "What type of catalysis is involved in this reaction?",
+  "stem": "When hydrogen peroxide is added to a warm solution of potassium sodium tartrate, a slow reaction occurs in which tartrate ions are oxidised to carbon dioxide and water. If cobalt(II) ions (Co²⁺) are added as a catalyst, a big increase in the reaction rate is observed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "homogeneous",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "TYPE."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q9-b-colours",
+  "topicId": "chem-3-2",
+  "conceptId": "colour-changes-with-cobalt-ii-catalyst",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b) — colour changes",
+  "questionText": "What colour changes are observed when Co²⁺ ions catalyse the reaction?",
+  "stem": "When hydrogen peroxide is added to a warm solution of potassium sodium tartrate, a slow reaction occurs in which tartrate ions are oxidised to carbon dioxide and water. If cobalt(II) ions (Co²⁺) are added as a catalyst, a big increase in the reaction rate is observed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pink to green back to pink",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "COLOURS."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q9-b-significance",
+  "topicId": "chem-3-2",
+  "conceptId": "an-intermediate-in-homogeneous-catalysis",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b) — significance of the colours",
+  "questionText": "Explain the significance of the colour changes.",
+  "stem": "When hydrogen peroxide is added to a warm solution of potassium sodium tartrate, a slow reaction occurs in which tartrate ions are oxidised to carbon dioxide and water. If cobalt(II) ions (Co²⁺) are added as a catalyst, a big increase in the reaction rate is observed. What colour changes are observed when Co²⁺ ions catalyse the reaction?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pink at start is colour of catalyst (Co²⁺) solution",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "EXPLAIN. The scheme prices these points (3 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "green due to formation of intermediate (complex)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "pink at end as catalyst (Co²⁺) restored (released, reformed)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Clearly link colour to catalyst // colour to intermediate // and colour to restoration of catalyst for (3 × 3)]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q10-a-i",
+  "topicId": "chem-4-2",
+  "conceptId": "why-alkenes-are-more-reactive-than-alkanes",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(a)(i)",
+  "questionText": "Account for the greater reactivity of alkenes compared to alkanes.",
+  "stem": "In general, alkenes are more reactive than alkanes. Alkenes undergo addition reactions and alkanes undergo substitution reactions.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "presence of double bond (unsaturation)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "which is electron rich / which can donate electrons / which is a nucleophile / pi bond weak (pi bond more easily broken) / high electron density",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2012-hl-q10-a-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "mechanism-of-adding-bromine-to-ethene",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(a)(ii)",
+  "questionText": "Describe the mechanism of the addition of bromine (Br₂) to ethene. State one piece of evidence to support the mechanism you have described.",
+  "stem": "In general, alkenes are more reactive than alkanes. Alkenes undergo addition reactions and alkanes undergo substitution reactions.",
+  "figureKey": "chemistry-2012-HL-scheme-q10a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "polarisation of Br₂ / Brδ+– Brδ–under influence of double bond",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [4 × 3], one each. MECHANISM."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "followed by heterolytic fission / splitting into ions / Br⁺&(+) Br⁻",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "addition of bromonium ion (Br⁺) across (to) the double bond / addition of Br⁺ forming bridged intermediate (cyclic bromonium ion)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Obtainable from correct diagram. Accept localised carbonium ion. Also accept cyclic bromonium ion with poitive charge on the Br] The scheme draws the bridged (cyclic) bromonium ion and the carbonium ion beside this point, shown with the answer."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "attack (addition) of bromide ion (Br⁻) to bridged intermediate / attack (addition) of bromide ion (Br⁻) to cyclic Br⁺ / attack (addition) of bromide ion (Br⁻) to carbonium ion (C⁺)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [The information in this point may also be got from a suitable diagram (equation).]"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "when named nucleophiles (anions, negative ions) present (alternative nucleophile source {e.g. Cl⁻ or NaCl (HCl); OH⁻ or H₂O}) and an identified matched product",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [May be got from example e.g. 2-bromoethanol if (bromine) water is present. Structural formulas accepted.] STATE."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q10-b-acid",
+  "topicId": "chem-3-4",
+  "conceptId": "bronsted-lowry-acid-and-conjugate-pair",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(b) — acid and conjugate pair",
+  "questionText": "Define an acid in terms of the Brønsted-Lowry theory. What is a conjugate pair?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "proton (hydrogen ion, H⁺) donor",
+    "marks": null,
+    "openList": true,
+    "contextNote": "DEFINE. The scheme prices its two points (4 + 3)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "acid and base that differ by a proton (hydrogen ion, H⁺)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "WHAT."
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2012-hl-q10-b-colour",
+  "topicId": "chem-3-4",
+  "conceptId": "indicator-colour-in-sodium-hydroxide",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(b) — colour in NaOH",
+  "questionText": "State and explain the colour observed when a few drops of a solution of the indicator are added to a 0.5 M NaOH solution.",
+  "stem": "A certain water soluble acid-base indicator represented by HIn is a weak acid which dissociates as follows in water.",
+  "figureKey": "chemistry-2012-HL-paper-q10b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "purple",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "STATE. The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "hydroxyl (hydroxide) ions (OH⁻) remove hydrogen ions (H⁺) causing the reaction (equilibrium) to shift forward (to the right)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "EXPLAIN."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q10-b-i",
+  "topicId": "chem-3-4",
+  "conceptId": "ph-of-0-5-m-sodium-hydroxide",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(b)(i)",
+  "questionText": "Calculate the pH of (i) the 0.5 M NaOH solution, (ii) a 0.1 M solution of the indicator, given that its Ka value is 2.0 × 10⁻⁵.",
+  "stem": "A certain water soluble acid-base indicator represented by HIn is a weak acid which dissociates as follows in water.",
+  "figureKey": "chemistry-2012-HL-scheme-q10b-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "pOH = – log 0.5 = 0.3",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (i). The scheme gives the answer, \"pH =13.7\", priced (6), then two routes side by side, two steps (3) each: one of these, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "pOH = – log 0.5 = 0.3",
+      "[H⁺] = 10⁻¹⁴÷ 0.5 = 2 × 10⁻¹⁴"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "pH = 14 – 0.3 = 13.7",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the pH by that same route, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "pH = 14 – 0.3 = 13.7",
+      "pH = – log 2 × 10⁻¹⁴ = 13.7"
+     ]
+    }
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q10b-calc-print"
+ },
+ {
+  "id": "chem-2012-hl-q10-b-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "ph-of-a-weak-acid-indicator",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(b)(ii)",
+  "questionText": "Calculate the pH of (i) the 0.5 M NaOH solution, (ii) a 0.1 M solution of the indicator, given that its Ka value is 2.0 × 10⁻⁵.",
+  "stem": "A certain water soluble acid-base indicator represented by HIn is a weak acid which dissociates as follows in water.",
+  "figureKey": "chemistry-2012-HL-scheme-q10b-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "pH =– log√2.0 × 10⁻⁵× 0.1",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii). The scheme gives the answer, \"pH =2.85\", priced (6), then two routes side by side, two steps (3) each, a root sign drawn over \"2.0 × 10⁻⁵ × 0.1\": one of these, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "pH =– log√2.0 × 10⁻⁵× 0.1",
+      "[H⁺] = √2.0 × 10⁻⁵× 0.1"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "= 2.85",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the pH by that same route, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "= 2.85",
+      "pH = - log [H⁺] = 2.85"
+     ]
+    }
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q10b-calc-print"
+ },
+ {
+  "id": "chem-2012-hl-q10-c-i",
+  "topicId": "chem-3-5",
+  "conceptId": "the-substance-oxidised-in-cleaning-silver",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(c)(i)",
+  "questionText": "What substance was oxidised in this cleaning process?",
+  "stem": "A bracelet, originally made of pure silver, became tarnished over time with black silver sulfide (Ag₂S) forming on the surface. The bracelet was cleaned by converting the silver sulfide back to metallic silver using aluminium in the following reaction. The mass of the bracelet decreased by 0.0096 g in the cleaning process.",
+  "figureKey": "chemistry-2012-HL-paper-q10c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "aluminium / Al",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q10-c-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "moles-of-sulfur-removed-from-the-bracelet",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(c)(ii)",
+  "questionText": "How many moles of sulfur (S) were removed from the bracelet when the silver sulfide (Ag₂S) was converted to aluminium sulphide (Al₂S₃)?",
+  "stem": "A bracelet, originally made of pure silver, became tarnished over time with black silver sulfide (Ag₂S) forming on the surface. The bracelet was cleaned by converting the silver sulfide back to metallic silver using aluminium in the following reaction. The mass of the bracelet decreased by 0.0096 g in the cleaning process.",
+  "figureKey": "chemistry-2012-HL-paper-q10c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.0096 ÷ 32",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme gives the answer, \"0.0003 mol sulfur\", priced (6), then two steps (3) each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "= 0.0003",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q10-c-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-aluminium-used-to-clean-the-bracelet",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(c)(iii)",
+  "questionText": "What mass of aluminium was used in the reaction?",
+  "stem": "A bracelet, originally made of pure silver, became tarnished over time with black silver sulfide (Ag₂S) forming on the surface. The bracelet was cleaned by converting the silver sulfide back to metallic silver using aluminium in the following reaction. The mass of the bracelet decreased by 0.0096 g in the cleaning process.",
+  "figureKey": "chemistry-2012-HL-paper-q10c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.0003 mol S ≡ 0.0003 mol Ag₂S",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme gives the answer, \"0.0054 g aluminium\", priced (9), then three steps (3) each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "≡0.0002 mol Al",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "= 0.0054 g Al",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q10-c-iv",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-lost-by-polishing-off-the-silver-sulfide",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q10(c)(iv)",
+  "questionText": "What would the loss in mass of the tarnished bracelet have been if it had been cleaned by the alternative method of removing all of the silver sulfide by polishing?",
+  "stem": "A bracelet, originally made of pure silver, became tarnished over time with black silver sulfide (Ag₂S) forming on the surface. The bracelet was cleaned by converting the silver sulfide back to metallic silver using aluminium in the following reaction. The mass of the bracelet decreased by 0.0096 g in the cleaning process.",
+  "figureKey": "chemistry-2012-HL-paper-q10c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.0003 mol S ≡ 0.0003 mol Ag₂S",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme gives the answer, \"0.0744 g lost\", priced (6), then two steps (3) each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "× 248* = 0.0744",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: \"* Addition must be shown for error to be treated as a slip.\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-a-i",
+  "topicId": "chem-1-2",
+  "conceptId": "what-an-alpha-particle-is",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(a)(i)",
+  "questionText": "What are alpha particles?",
+  "stem": "In 1909 Rutherford bombarded a very thin sheet of gold foil with alpha particles, most of which passed straight through it undeflected. Some alpha particles, however, were deflected at large angles and a very small number were reflected back along their original paths. The first of these observations was not inconsistent with the ‘plum pudding’ model of the atom that had been proposed by Thomson in 1904, but Rutherford had to formulate a new model of atomic structure to account for the other two observations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "helium nuclei (-eus) / He²⁺ / particle having two protons and two neutrons",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-a-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "thomsons-plum-pudding-model",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(a)(ii)",
+  "questionText": "Describe the structure of Thomson’s ‘plum pudding’ model of the atom.",
+  "stem": "In 1909 Rutherford bombarded a very thin sheet of gold foil with alpha particles, most of which passed straight through it undeflected. Some alpha particles, however, were deflected at large angles and a very small number were reflected back along their original paths. The first of these observations was not inconsistent with the ‘plum pudding’ model of the atom that had been proposed by Thomson in 1904, but Rutherford had to formulate a new model of atomic structure to account for the other two observations.",
+  "figureKey": "chemistry-2012-HL-scheme-q11a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sphere (ball) with positive (+) charge spread out over it",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. The scheme draws the model beside its points, its labels \"electron (negative charge)\" and \"+ charge\", shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "with electrons embedded (scattered, dotted, placed at random) in it",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Marks can be got from a labelled diagram. The words “electron(s)/ negative charges” and “positive (+)” required in description or diagram. Dots(es) may be used for electrons.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-a-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "why-alpha-particles-were-deflected",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(a)(iii)",
+  "questionText": "Explain why some alpha particles were deflected at large angles as they passed through the gold foil.",
+  "stem": "In 1909 Rutherford bombarded a very thin sheet of gold foil with alpha particles, most of which passed straight through it undeflected. Some alpha particles, however, were deflected at large angles and a very small number were reflected back along their original paths. The first of these observations was not inconsistent with the ‘plum pudding’ model of the atom that had been proposed by Thomson in 1904, but Rutherford had to formulate a new model of atomic structure to account for the other two observations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "repelled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "when passing near (by) nucleus {near (by) positive (+) core (centre)}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [The two 3s could be got from a suitable diagram.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-a-iv",
+  "topicId": "chem-1-2",
+  "conceptId": "why-few-alpha-particles-bounced-back",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(a)(iv)",
+  "questionText": "Why were some alpha particles reflected back along their original paths? Why did this happen to only a very small number of alpha particles?",
+  "stem": "In 1909 Rutherford bombarded a very thin sheet of gold foil with alpha particles, most of which passed straight through it undeflected. Some alpha particles, however, were deflected at large angles and a very small number were reflected back along their original paths. The first of these observations was not inconsistent with the ‘plum pudding’ model of the atom that had been proposed by Thomson in 1904, but Rutherford had to formulate a new model of atomic structure to account for the other two observations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "collided with nucleus {positive (+) core (centre)}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. SOME."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "nucleus {positive (+) core (centre)} very small / most (almost all) of atom’s mass concentrated in nucleus {positive (+) core (centre)} / most (almost all) of atom is empty space",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "SMALL."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-a-v",
+  "topicId": "chem-1-2",
+  "conceptId": "rutherfords-nuclear-model-of-the-atom",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(a)(v)",
+  "questionText": "Draw a labelled diagram to show the new structure of the atom proposed by Rutherford.",
+  "stem": "In 1909 Rutherford bombarded a very thin sheet of gold foil with alpha particles, most of which passed straight through it undeflected. Some alpha particles, however, were deflected at large angles and a very small number were reflected back along their original paths. The first of these observations was not inconsistent with the ‘plum pudding’ model of the atom that had been proposed by Thomson in 1904, but Rutherford had to formulate a new model of atomic structure to account for the other two observations.",
+  "figureKey": "chemistry-2012-HL-scheme-q11a-v",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nucleus {central mass (core) shown and labelled with one (or more) shell(s) of electrons (or electron cloud) shown and labelled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "DRAW. The scheme draws the atom beside this, its labels \"electron (shell, cloud)\" and \"nucleus\", shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-b-expression",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-expression-for-triiodide",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(b) — Kc expression",
+  "questionText": "Write the equilibrium constant (Kc) expression for this equilibrium reaction.",
+  "stem": "Consider the following room temperature equilibrium reaction used to dissolve iodine (I₂) crystals in an aqueous solution of iodide ions (I⁻). When 0.0800 moles of iodine crystals and 0.2400 moles of iodide ions were added to deionised water and made up to a litre of solution, 0.0793 moles of triiodide ions (I₃⁻) were present at equilibrium.",
+  "figureKey": "chemistry-2012-HL-scheme-q11b-write",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[I₃⁻] ÷ [I₂][I⁻]",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prints [I₃⁻] over [I₂][I⁻] as a fraction; ÷ stands for its bar."
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q11b-write-print"
+ },
+ {
+  "id": "chem-2012-hl-q11-b-calculation",
+  "topicId": "chem-3-3",
+  "conceptId": "calculating-kc-for-triiodide",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(b) — Kc calculated",
+  "questionText": "Calculate the value of the equilibrium constant (Kc) for the reaction at room temperature.",
+  "stem": "Write the equilibrium constant (Kc) expression for this equilibrium reaction.",
+  "figureKey": "chemistry-2012-HL-scheme-q11b-calc",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.0007 M",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme gives the answer, \"704.95 / 705 M⁻¹\", priced (12), then sets out a table, its row \"Equil 0.0007 M (3) 0.1607 M (3) 0.0793 M\": the equilibrium value under I₂, (3)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.1607 M",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The equilibrium value under I⁻, (3)."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.0793 ÷ 0.0007 × 0.1607",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 0.0793 over 0.0007 × 0.1607 as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "= 704.95 / 705",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "questionFigureKey": "chemistry-2012-HL-paper-q11b-calc-print"
+ },
+ {
+  "id": "chem-2012-hl-q11-b-starch",
+  "topicId": "chem-3-3",
+  "conceptId": "removing-iodine-from-the-triiodide-equilibrium",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(b) — adding starch",
+  "questionText": "State and explain the effect on the equilibrium concentration of triiodide ions of adding a substance that reacts with iodine, e.g. starch.",
+  "stem": "Consider the following room temperature equilibrium reaction used to dissolve iodine (I₂) crystals in an aqueous solution of iodide ions (I⁻). When 0.0800 moles of iodine crystals and 0.2400 moles of iodide ions were added to deionised water and made up to a litre of solution, 0.0793 moles of triiodide ions (I₃⁻) were present at equilibrium.",
+  "figureKey": "chemistry-2012-HL-paper-q11b",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "concentration of triiodide ions decreases",
+    "marks": null,
+    "openList": true,
+    "contextNote": "STATE. The scheme prices its two points (4 + 3)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "reaction shifts backward (reverse, to the left) to restore (increase) iodine conc.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "EXPLAIN. The scheme adds: [Linked responses]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2012-hl-q11-c-a-i",
+  "topicId": "chem-u3",
+  "conceptId": "producing-alumina-from-bauxite",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(c)A(i)",
+  "questionText": "Describe the chemical processes used to produce pure alumina from bauxite.",
+  "stem": "Bauxite from Africa is transported to Aughinish in Co. Limerick, where it is converted to pure alumina (Al₂O₃). The alumina is then shipped to Russia where aluminium metal is produced from it by electrolysis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "heating (digestion) of the bauxite with sodium hydroxide (NaOH)",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "\"ANY FOUR: (4 × 3)\".",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "heating (digestion) of the bauxite with sodium hydroxide (NaOH)",
+      "to produce soluble sodium aluminate (NaAlO₂)",
+      "seeding with crystals of aluminium oxide trihydrate (Al₂O₃.3H₂O)",
+      "precipitation of aluminium oxide trihydrate (Al₂O₃.3H₂O) / conversion of sodium aluminate (NaAlO₂) to aluminium oxide trihydrate (Al₂O₃.3H₂O)",
+      "heating to remove water from Al₂O₃.3H₂O"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-c-a-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "the-cell-for-extracting-aluminium",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(c)A(ii)",
+  "questionText": "Draw a labelled diagram of the electrolytic cell used to produce aluminium metal from alumina.",
+  "stem": "Bauxite from Africa is transported to Aughinish in Co. Limerick, where it is converted to pure alumina (Al₂O₃). The alumina is then shipped to Russia where aluminium metal is produced from it by electrolysis.",
+  "figureKey": "chemistry-2012-HL-scheme-q11c-a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "graphite anode(s) labelled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3], one each. The scheme draws the cell beside these points, its labels \"graphite anodes\", \"graphite cathode\" and \"molten alumina and cryolite\", shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "graphite cathode labelled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "molten alumina and cryolite labelled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [No diagram: – 3]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-c-a-iii",
+  "topicId": "chem-u3",
+  "conceptId": "why-recycle-aluminium",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(c)A(iii)",
+  "questionText": "Explain why the recycling of aluminium is environmentally desirable.",
+  "stem": "Bauxite from Africa is transported to Aughinish in Co. Limerick, where it is converted to pure alumina (Al₂O₃). The alumina is then shipped to Russia where aluminium metal is produced from it by electrolysis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "saves energy / cheaper / avoids litter / prevents loss of aluminium / conserves natural resources",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-c-b-i",
+  "topicId": "chem-u3",
+  "conceptId": "uses-of-nitrogen",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(c)B(i)",
+  "questionText": "Give one major commercial use for nitrogen gas.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "in flushing (purging) oil tanks / as inert atmosphere / in preserving food / in keeping food fresh / in packaging food (crisps) / over gas (oil, flammables) in tankers (being transported) / in glass production / in semiconductor (micro- chip) production / to dilute atmospheric oxygen / production of ammonia (urea, nitric acid, fertilisers)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-c-b-ii",
+  "topicId": "chem-2-1",
+  "conceptId": "why-nitrogen-is-unreactive",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(c)B(ii)",
+  "questionText": "Explain why nitrogen gas is chemically inert.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "high energy (strong, difficult to break) bond",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "\"ANY TWO: (2 × 3)\".",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "high energy (strong, difficult to break) bond",
+      "non-polar",
+      "triple bond"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-c-b-iii",
+  "topicId": "chem-4-3",
+  "conceptId": "nitrogen-fixation",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(c)B(iii)",
+  "questionText": "What is meant by the fixation of nitrogen gas in the atmosphere?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "conversion of atmospheric nitrogen",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to useful (chemically reactive) compounds",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2012-hl-q11-c-b-iv",
+  "topicId": "chem-4-3",
+  "conceptId": "fixing-nitrogen-by-lightning",
+  "level": "higher",
+  "year": 2012,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2012 HL Q11(c)B(iv)",
+  "questionText": "Describe how atmospheric nitrogen gas is fixed by lightning.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "lightning supplies the high temp {extreme heat (energy)} required for N₂ to combust",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme adds: [Equations need not be balanced.] \"ANY THREE: (3 × 3)\".",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "lightning supplies the high temp {extreme heat (energy)} required for N₂ to combust",
+      "nitrogen combines with oxygen to produce nitrogen(II) oxide (NO, nitric oxide, nitrogen monoxide) / N₂ + O₂ → 2NO",
+      "NO combines with oxygen to give nitrogen(IV) oxide (NO₂, nitrogen dioxide) / NO + ½O₂ → NO₂ / ½N₂ + O₂ → NO₂ / N₂ + 2O₂ → 2NO₂",
+      "NO₂ combines with moisture (H₂O) to give nitrite (nitrate) / 2NO₂ + H₂O → HNO₂ + HNO₃"
+     ]
+    }
+   }
+  ]
  }
 ]

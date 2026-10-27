@@ -6508,5 +6508,299 @@
   "description": "The marking scheme's own print of its answer to 2011 OL Q10(b)(ii), as the State Examinations Commission set it: a table headed \"Chromatography\", two columns of six rows: \"Saturate tank\", \"Application of sample to plate\", \"Where/how application is made (i.e. spot)\", \"Arrangement with eluent – in tank\", \"Elution\", \"Separation observed\"; and \"Prepare column (flush with solvent or water)\", \"Application of sample to column\", \"Where/how application is made (i.e. at top)\", \"Arrangement with eluent – addition to column\", \"Elution\", \"Separation observed\".",
   "questionRef": "2011 OL Q10(b)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q1a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q1(a): \"A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.\", the words \"primary standard\" underlined; \"The balanced equation for the titration reaction was:\" and, in bold, \"2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂\", its arrow drawn; then \"(a) Explain the underlined term.\" and its mark \"(5)\".",
+  "questionRef": "2012 HL Q1(a)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q1e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q1(e): \"A student determined the concentration of a hydrochloric acid solution by titration with 25.0 cm³ portions of a 0.05 M primary standard solution of anhydrous sodium carbonate. The portions of sodium carbonate solution were measured into a conical flask using a 25 cm³ pipette. The hydrochloric acid solution was added from a burette. The mean titre was 20.8 cm³.\", the words \"primary standard\" underlined; \"The balanced equation for the titration reaction was:\" and, in bold, \"2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂\", its arrow drawn; then \"(e) Calculate, correct to two decimal places, the concentration of the hydrochloric acid solution in (i) moles per litre, (ii) grams per litre.\" and its mark \"(12)\".",
+  "questionRef": "2012 HL Q1(e)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two labelled drawings. \"Apparatus A\": a conical flask standing in a beaker of water on a hotplate with two dials, a thermometer in the water, the flask's neck covered with foil held by a band; its labels read \"pinhole\", \"rubber band\", \"aluminium foil\", \"vapour\", \"boiling water\", \"thermometer\" and \"hotplate\". \"Apparatus B\": a gas syringe lying in a box, its plunger out to the left, a thermometer lying across the top of the box, and a small syringe pushed through a seal at the gas syringe's right-hand end; its labels read \"thermometer\", \"gas syringe\", \"oven\", \"vapour\", \"rubber seal\", \"plunger\" and \"small syringe\".",
+  "questionRef": "2012 HL Q3"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q4e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The equation to be balanced, in bold: \"Cu + NO₃⁻ + H⁺ → Cu²⁺ + NO₂ + H₂O\", its arrow drawn.",
+  "questionRef": "2012 HL Q4(e)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The conversions Q6 asks about: three numbered equations in bold: \"(i) C₆H₁₄ (l) → 4H₂ (g) +\" a benzene ring, drawn as a hexagon with a circle inside it, \"(l)\"; \"(ii) C₁₄H₃₀ (l) → C₇H₁₆ (l) + C₃H₆ (g) + X (g)\", the X underlined; and \"(iii) CH₃(CH₂)₆CH₃ (l) →\" a structure drawn in full, a chain of five carbons with an H at each end, the second carbon carrying CH₃ above and below, the fourth CH₃ above and H below, the first, third and fifth H above and below, then \"(l)\"; the state symbols set as subscripts.",
+  "questionRef": "2012 HL Q6(a)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q6b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q6(b): three numbered equations in bold: \"(i) C₆H₁₄ (l) → 4H₂ (g) +\" a benzene ring, drawn as a hexagon with a circle inside it, \"(l)\"; \"(ii) C₁₄H₃₀ (l) → C₇H₁₆ (l) + C₃H₆ (g) + X (g)\", the X underlined; and \"(iii) CH₃(CH₂)₆CH₃ (l) →\" a structure drawn in full, a chain of five carbons with an H at each end, the second carbon carrying CH₃ above and below, the fourth CH₃ above and H below, the first, third and fifth H above and below, then \"(l)\"; the state symbols set as subscripts; then \"(b) Name a hydrocarbon that X could be and draw its structural formula. Name the product of process (iii) and state its octane number.\" with its mark \"(12)\", the X bold and underlined.",
+  "questionRef": "2012 HL Q6(b)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The reaction scheme Q8 asks about: a reaction scheme of boxes and arrows: \"Propanone\" with an arrow labelled \"R\" up to \"Alcohol A\"; \"Propanoic acid\" with an arrow labelled \"R\" to \"Propanal\", and \"Propanal\" with an arrow labelled \"R\" to \"Propan-1-ol\"; \"Propan-1-ol\" with an arrow down and across to \"Ester B\", and \"Methanoic acid\" with an arrow to \"Ester B\"; the letters A and B bold and underlined, the R labels bold.",
+  "questionRef": "2012 HL Q8"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q8b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q8(b): \"Study the reaction scheme and answer the questions that follow.\" over a reaction scheme of boxes and arrows: \"Propanone\" with an arrow labelled \"R\" up to \"Alcohol A\"; \"Propanoic acid\" with an arrow labelled \"R\" to \"Propanal\", and \"Propanal\" with an arrow labelled \"R\" to \"Propan-1-ol\"; \"Propan-1-ol\" with an arrow down and across to \"Ester B\", and \"Methanoic acid\" with an arrow to \"Ester B\"; the letters A and B bold and underlined, the R labels bold; then \"(b) Alcohol A and propan-1-ol are structural isomers. Explain the underlined term. What is the structural difference between a primary alcohol and a secondary alcohol? Identify another pair of structural isomers from the reaction scheme.\" with \"structural isomers\" underlined and the mark \"(18)\".",
+  "questionRef": "2012 HL Q8(b)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q8d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q8(d): \"Study the reaction scheme and answer the questions that follow.\" over a reaction scheme of boxes and arrows: \"Propanone\" with an arrow labelled \"R\" up to \"Alcohol A\"; \"Propanoic acid\" with an arrow labelled \"R\" to \"Propanal\", and \"Propanal\" with an arrow labelled \"R\" to \"Propan-1-ol\"; \"Propan-1-ol\" with an arrow down and across to \"Ester B\", and \"Methanoic acid\" with an arrow to \"Ester B\"; the letters A and B bold and underlined, the R labels bold; then \"(d) Name the reagent and catalyst used to bring about the conversions labelled R.\" and its mark \"(6)\".",
+  "questionRef": "2012 HL Q8(d)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q9a-plot-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q9(a): \"The loss of mass of a mixture of 50 cm³ of a 2 M solution of hydrochloric acid and excess marble chips was monitored over time and the following data were recorded.\" over a table of two rows, \"Loss of mass / g 0.00 0.10 0.18 0.29 0.35 0.39 0.41 0.41\" and \"Time / s 0 20 40 80 120 160 220 240\"; then \"Plot a graph to show the mass of carbon dioxide produced (loss of mass) versus time.\" and its mark \"(12)\", \"versus\" in italics.",
+  "questionRef": "2012 HL Q9(a)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q9a-use-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q9(a): \"The loss of mass of a mixture of 50 cm³ of a 2 M solution of hydrochloric acid and excess marble chips was monitored over time and the following data were recorded.\" over a table of two rows, \"Loss of mass / g 0.00 0.10 0.18 0.29 0.35 0.39 0.41 0.41\" and \"Time / s 0 20 40 80 120 160 220 240\"; then \"Use your graph to find the instantaneous rate of the reaction at 60 seconds in terms of g/s carbon dioxide produced.\" and its mark \"(6)\".",
+  "questionRef": "2012 HL Q9(a)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q9a-mark-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q9(a): \"The loss of mass of a mixture of 50 cm³ of a 2 M solution of hydrochloric acid and excess marble chips was monitored over time and the following data were recorded.\" over a table of two rows, \"Loss of mass / g 0.00 0.10 0.18 0.29 0.35 0.39 0.41 0.41\" and \"Time / s 0 20 40 80 120 160 220 240\"; then \"Mark clearly on your graph the curve you would expect to obtain if the reaction were repeated using 50 cm³ of a 1 M solution of hydrochloric acid. Justify the shape and position of this curve relative to the graph you have plotted.\" and its mark \"(9)\".",
+  "questionRef": "2012 HL Q9(a)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q10b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The indicator's equilibrium: \"HIn ⇋ H⁺ + In⁻\" in bold, the equilibrium arrow drawn as two half-arrows, with \"green\" under HIn and \"purple\" under In⁻.",
+  "questionRef": "2012 HL Q10(b)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q10b-calc-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q10(b): \"A certain water soluble acid-base indicator represented by HIn is a weak acid which dissociates as follows in water.\" over \"HIn ⇋ H⁺ + In⁻\" in bold, the equilibrium arrow drawn as two half-arrows, with \"green\" under HIn and \"purple\" under In⁻; then \"Calculate the pH of (i) the 0.5 M NaOH solution, (ii) a 0.1 M solution of the indicator, given that its Ka value is 2.0 × 10⁻⁵.\" and its mark \"(12)\".",
+  "questionRef": "2012 HL Q10(b)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q10c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The cleaning reaction, in bold: \"3Ag₂S + 2Al → 6Ag + Al₂S₃\", its arrow drawn.",
+  "questionRef": "2012 HL Q10(c)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The equilibrium, in bold: \"I₂ (aq) + I⁻ (aq) ⇋ I₃⁻ (aq)\", the state symbols set as subscripts and the arrow drawn as two half-arrows.",
+  "questionRef": "2012 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q11b-write-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q11(b): \"(b) Consider the following room temperature equilibrium reaction used to dissolve iodine (I₂) crystals in an aqueous solution of iodide ions (I⁻).\" over \"I₂ (aq) + I⁻ (aq) ⇋ I₃⁻ (aq)\" in bold, the state symbols as subscripts; \"When 0.0800 moles of iodine crystals and 0.2400 moles of iodide ions were added to deionised water and made up to a litre of solution, 0.0793 moles of triiodide ions (I₃⁻) were present at equilibrium.\" Then \"Write the equilibrium constant (Kc) expression for this equilibrium reaction.\" and its mark \"(6)\".",
+  "questionRef": "2012 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2012-HL-paper-q11b-calc-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 HL Q11(b): \"(b) Consider the following room temperature equilibrium reaction used to dissolve iodine (I₂) crystals in an aqueous solution of iodide ions (I⁻).\" over \"I₂ (aq) + I⁻ (aq) ⇋ I₃⁻ (aq)\" in bold, the state symbols as subscripts; \"When 0.0800 moles of iodine crystals and 0.2400 moles of iodide ions were added to deionised water and made up to a litre of solution, 0.0793 moles of triiodide ions (I₃⁻) were present at equilibrium.\" Then \"Calculate the value of the equilibrium constant (Kc) for the reaction at room temperature.\" and its mark \"(12)\".",
+  "questionRef": "2012 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q1(b), as the State Examinations Commission set it: \"2.65 g (6)\"; boxed, \"500 × 0.05 × 106*\" over \"1000\" as a fraction, \"(3) = 2.65 (3)\"; then \"* Addition must be shown for error to be treated as a slip.\"",
+  "questionRef": "2012 HL Q1(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q1d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q1(d), as the State Examinations Commission set it: a table of three columns, \"Indicator\", \"Colour before\" and \"Colour after\": \"Methyl orange\", \"Orange (yellow)\", \"Red (pink)\"; \"Methyl red\", \"Yellow\", \"Red (pink)\"; \"Methyl yellow\", \"Yellow\", \"Red (pink)\"; \"Bromophenol blue\", \"Blue (purple, violet)\", \"Yellow\"; \"Bromocresol green\", \"Blue\", \"Yellow\".",
+  "questionRef": "2012 HL Q1(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q1e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q1(e), as the State Examinations Commission set it: \"(i) 0.12 M (9)\"; boxed, \"20.8 × M\" with \"HCl\" as a subscript, over \"2\", \"=\", \"25 × 0.05\" over \"1\", as fractions, \"(6)\", then \"M\" with subscript \"HCl\" \"= 0.12 (3)\"; \"(ii) 4.38 / 4.39 g l⁻¹ (3)\"; boxed, \"0.12 × 36.5* = 4.38 (3)\".",
+  "questionRef": "2012 HL Q1(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q2(a), as the State Examinations Commission set it: a drawing of the apparatus: a test tube held level, a plug of glass wool at its closed end and a small heap of solid along its middle, a Bunsen burner on a stand beneath the solid, and a delivery tube from its mouth running down into a trough of water and up into an upturned test tube standing in the trough; its labels read \"glass wool with ethanol\", \"aluminium oxide (Al₂O₃)\", \"ethene\" and \"water\".",
+  "questionRef": "2012 HL Q2(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q2(c), as the State Examinations Commission set it: a table of two columns, \"Reagent used\" and \"Colours\": \"Bromine (Br₂) water (soln) (3)\" beside \"Red (orange, yellow, brown) (3)\", \"to colourless[not “clear”] (3)\" and \"[Allow 3 marks for decolourise]\"; \"Acidified manganate(VII)* solution (3)\" beside \"Purple (violet, pink) (3)\", \"to colourless [not “clear”] (3)\" and \"[Allow 3 marks for decolourise]\"; under it \"*For “manganate(VII)” accept “permanganate,” “KMnO₄,” and “MnO₄⁻.”\"",
+  "questionRef": "2012 HL Q2(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q2e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q2(e), as the State Examinations Commission set it: \"(e) NUMBER: 8 test tubes (15)\"; boxed, \"2.4 × 0.8 = 1.92 g ethanol (3)\" and \"1.92 ÷ 46* = 0.042 (0.0417) mol ethanol = 0.042 (0.0417) mol ethene (3)\"; two boxes side by side, \"0.042 (0.0417) × 24000 = 1008 (1002) cm³ (3)\" over \"60% of 1008 (1002) = 605 (601) cm³ (3)\", and \"60% of 0.042 (0,0417) = 0.0252 (0.025) (3)\" over \"0.0252 (0.025) × 24000 = 605 (600) cm³ (3)\"; \"605 (601 / 600) ÷ 75 = 8 test tubes of ethene (3)\"; under the box \"* Addition must be shown for error to be treated as a slip.\" and \"Note: Use of 22.4 litres as molar volume loses 3.\"",
+  "questionRef": "2012 HL Q2(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q3(d), as the State Examinations Commission set it: \"MOL: 0.01076 [Allow 0.01 to 0.011 mol] (9)\"; two boxes side by side with \"or\" between them: \"equation of state (correct) (3)\", \"101 × 10³ × 330 × 10⁻⁶\" over \"8.3 × 373\" \"(3)\", \"= 0.01076 to 0.011 (3)\"; and \"Vroom\" over \"293*\" \"=\" \"330\" over \"373\" \"(3)\", \"Vroom = 259 cm³ (3)\", \"259 ÷ 24000 = 0.0108 (3)\", under it \"*similar method at s.t.p.\"; then \"Mr : 57 to 63 (6)\" and, boxed, \"0.63 ÷ 0.01076 to 0.011 (3)\", \"= 57 to 63 (3)\".",
+  "questionRef": "2012 HL Q3(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q4(b), as the State Examinations Commission set it: the nuclear equation in bold: I with mass number 131 above and atomic number 53 below, an arrow, Xe with 131 above and 54 below, \"+\", e with 0 above and –1 below, and \"( β)\" with 0 above and –1 below.",
+  "questionRef": "2012 HL Q4(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q5(a), as the State Examinations Commission set it: \"1s²2s² // 2px²2py¹2pz¹ /\" over \"1s²2s² // 2p⁴ and\" three boxes in a row, the first holding an up and a down arrow, the second and third one up arrow each; \"(3 + 2)\"; \"[Accept with subscripts, also 2p\" with x, y and z as subscripts and 2, 1 and 1 as superscripts, \". The electron pair can be in any one of the p orbitals. Lines or dots will do in place of arrows in the boxes.]\"",
+  "questionRef": "2012 HL Q5(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q5d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q5(d)(iii), as the State Examinations Commission set it: \"SHAPE: pyramidal (3)\"; \"EXPL: repulsion between four electron pairs (e.p.), one a lone pair (l.p.) /\" beside a drawing of a P atom with two dots above it, bonded to three H atoms below it; \"repulsion between three bonds (bond pairs, b.p.) and a (one) lone pair (l.p.) (3)\".",
+  "questionRef": "2012 HL Q5(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q6b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q6(b), as the State Examinations Commission set it: \"STRUCTURE: CH₂ =CHCH₂CH₃ / CH₃CH=CHCH₃ / CH₃C=CH₂ [(CH₃)₂C=CH₂]\", a \"CH₃\" set under the second carbon of CH₃C=CH₂ and joined to it by a line; four skeletal drawings, \"/\" between the first and second, \"or\" between the second and third, \"/\" between the third and fourth, and \"(3)\"; \"Accept cyclobutane (\" a square of four CH₂ groups \"/\" a square \") & methylcyclopropane (\" a triangle of CH₂ groups and a CH carrying CH₃ \"/\" a triangle with a line off one corner \")\"; \"[Name and formula must match. If the formula is fully expanded the H atoms may be omitted.]\"",
+  "questionRef": "2012 HL Q6(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q6(e), as the State Examinations Commission set it: boxed, \"8CO₂ + 9H₂O → C₈H₁₈ + 12½O₂ ΔH = 5502 kJ (3)\", \"8C + 8O₂ → 8CO₂ ΔH =– 3152 kJ (3)\", \"9H₂ + 4½O₂ → 9H₂O ΔH =– 2574 kJ (3)\", a rule, \"8C + 9H₂ → C₈H₁₈ ΔH = – 224 kJ (3)\" and \"Equations not required\"; under a heavy rule, \"ΔH(combustion) = ΣΔHf(products) – ΣΔHf(reactants)\", \"= ΣΔHf(products) – {– 3152 (3) – 2574 (3)} = 5502 (3)\", \"or = ΣΔHf(products) + 3152 (3) + 2574 (3) = 5502 (3)\", \"or = 5502 (3) – 3152 (3) – 2574 (3) = – 224 kJ (3)\"; under the box \"[+224 merits 3 marks only]\".",
+  "questionRef": "2012 HL Q6(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q9a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q9(a), as the State Examinations Commission set it: a hand-drawn graph on graph paper (the scheme prints it on its side; shown upright), headed \"Question 9 (a): Graph\": \"LOSS of MASS (g)\" up the side from 0 to 0.45 and \"TIME (s)\" along the foot from 0 to 350; plotted points joined by a curve from the origin, labelled \"2 M curve\", rising steeply and levelling off at about 0.41 from 220 s; a straight line drawn against the curve near 60 s; a box \"Instantaneous rate =\" 0.35 - 0.13 over 100 - 20 \"= 0.00275 g/s\"; and a dashed curve, labelled \"1M curve\", rising more slowly from the origin to level off at about 0.2.",
+  "questionRef": "2012 HL Q9(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q10a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q10(a)(ii), as the State Examinations Commission set it: two drawings in boxes side by side: two carbons joined to each other and both to a Br, making a triangle, a \"+\" beside the Br and two lines off each carbon; and two carbons joined, the upper carrying a Br and the lower a \"+\", with lines off each.",
+  "questionRef": "2012 HL Q10(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q10b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q10(b)(i), as the State Examinations Commission set it: \"(i) pH =13.7 (6)\"; two boxes side by side: \"pOH = – log 0.5 = 0.3 (3)\" over \"pH = 14 – 0.3 = 13.7 (3)\"; and \"[H⁺] = 10⁻¹⁴ ÷ 0.5 = 2 × 10⁻¹⁴ (3)\" over \"pH = – log 2 × 10⁻¹⁴ = 13.7 (3)\".",
+  "questionRef": "2012 HL Q10(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q10b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q10(b)(ii), as the State Examinations Commission set it: \"(ii) pH =2.85 (6)\"; two boxes side by side: \"pH =– log√2.0 × 10⁻⁵ × 0.1 (3)\", the root sign drawn over \"2.0 × 10⁻⁵ × 0.1\", over \"= 2.85 (3)\"; and \"[H⁺] = √2.0 × 10⁻⁵ × 0.1 (3)\" over \"pH = - log [H⁺] = 2.85 (3)\".",
+  "questionRef": "2012 HL Q10(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q11a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q11(a)(ii), as the State Examinations Commission set it: a drawing of a grey disc holding seven small circles, each with a minus sign in it; one label, \"electron (negative charge)\", points to a small circle and another, \"+ charge\", to the disc.",
+  "questionRef": "2012 HL Q11(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q11a-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q11(a)(v), as the State Examinations Commission set it: a drawing of a large circle with a dot at its centre; one label, \"electron (shell, cloud)\", points to the circle and another, \"nucleus\", to the dot.",
+  "questionRef": "2012 HL Q11(a)(v)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q11b-write.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q11(b), as the State Examinations Commission set it: \"[I₃⁻]\" over \"[I₂][I⁻]\", set as a fraction in bold: the expression WRITE asks for.",
+  "questionRef": "2012 HL Q11(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q11b-calc.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q11(b), as the State Examinations Commission set it: boxed, \"I₂ + I⁻ ⇌ I₃⁻\", the arrows drawn; \"Start 0.0800 M 0.2400 M 0.0000 M\"; \"Equil 0.0007 M (3) 0.1607 M (3) 0.0793 M\"; then \"0.0793\" over \"0.0007 × 0.1607\" as a fraction, \"(3) = 704.95 / 705 (3)\".",
+  "questionRef": "2012 HL Q11(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-HL-scheme-q11c-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 HL Q11(c)A(ii), as the State Examinations Commission set it: a drawing of an electrolytic cell: a tank lined in black holding a grey liquid, and three black rods hanging into the liquid from a bar above; labels \"graphite anodes\" pointing to the rods, \"graphite cathode\" pointing to the lining and \"molten alumina and cryolite\" pointing to the liquid.",
+  "questionRef": "2012 HL Q11(c)A(ii)",
+  "solution": true
  }
 ]

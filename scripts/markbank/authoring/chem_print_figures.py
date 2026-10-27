@@ -178,6 +178,11 @@ _load_sitting_crops()
 
 MASKS = {
     'chemistry-2026-HL-paper-q4i.png': [(0, 350, 20, 386), (0, 489, 92, 515)],
+    # 2012 HL Q11(a)(ii): the plum pudding drawing's label "electron (negative charge)" runs to the
+    # right margin, where (ii)'s cell "(2 × 3)" prints beside the drawing (scheme page 16, x 515-546,
+    # y 126-139; pixels 271-335 x 95-123 of the crop), whited out; the drawing's own pixels in those rows
+    # end at column 159.
+    'chemistry-2012-HL-scheme-q11a-ii.png': [(266, 92, 342, 126)],
     # 2021 HL scheme Q8(b): (i)'s drawing of propanone, on the right, prints
     # level with the top of (ii)'s drawing on the left, so each crop whites out
     # the other part's corner (pixel boxes at DPI, from the page's drawing boxes).
@@ -284,6 +289,11 @@ MASKS = {
 }
 
 
+# Crops the SEC printed on their side, turned upright: name -> degrees clockwise. 2012 HL scheme
+# PDF page 14 prints Question 9(a)'s graph as a sideways scan (its title "Question 9 (a): Graph"
+# and the axis labels run bottom to top), unreadable on a phone as printed.
+ROTATE = {'chemistry-2012-HL-scheme-q9a.png': 90}
+
 def out_dir(year, lvl):
     # bind-figures.mjs resolves a crop as exam-papers/<subject>/figures/<year>-<level>/.
     return os.path.join(ROOT, 'exam-papers', 'chemistry', 'figures', f'{year}-{lvl}')
@@ -336,6 +346,15 @@ def render(year, lvl, source, page, rect):
         # A clipped pixmap keeps the page's pixel origin: boxes are crop-relative.
         x0, y0, x1, y1 = box
         pix.set_rect(fitz.IRect(x0 + pix.x, y0 + pix.y, x1 + pix.x, y1 + pix.y), (255,) * pix.n)
+    turn = ROTATE.get(name(year, lvl, suffix_of[(source, page, rect)]))
+    if turn:
+        # A scan the SEC printed on its side, turned upright (degrees clockwise; ROTATE, first for 2012 HL).
+        import io
+        from PIL import Image
+        im = Image.open(io.BytesIO(pix.tobytes('png'))).rotate(-turn, expand=True)
+        buf = io.BytesIO()
+        im.save(buf, format='PNG')
+        return buf.getvalue()
     return pix.tobytes('png')
 
 
