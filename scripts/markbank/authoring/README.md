@@ -206,6 +206,15 @@ subject-specific generators.
   table under "Tréith 1 = 13 mharc") is cut into rows at load by
   `cards/irish/tariffs.ts`, which also reads the last reading question's
   composite tariff where `answers.ts` cannot.
+  Where that text reading leaves a Business card for review, stage B reads the
+  cited pages' word positions with PyMuPDF (`bus_expected.py`, the same run):
+  a table's rows become items line by line, a tick names the column header
+  above it, "True"/"False" in the right-hand column names its statement, a
+  numbers row over a letters row pairs them; every word is one the page
+  prints (the gate checks word by word, since the text layer holds a table's
+  words in another order). What neither reading can lift — a tick table whose
+  ticks are drawn, not typed; a marker the page does not print — stays in
+  `authored/business-expected-review.json` with both readings' reasons.
   Accounting tasks carry the scheme's priced lines as rows (`acc_rows.py`,
   `cards/accounting/rows.json`): the scheme PDF is read as word lines with
   PyMuPDF and every bracketed mark becomes a row — the figure before it and
