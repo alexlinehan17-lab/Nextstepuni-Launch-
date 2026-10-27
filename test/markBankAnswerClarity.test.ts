@@ -381,20 +381,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       expect([...sums].sort((a, b) => a - b), `${card.id}/${criterion.label}: reachable marks`).toEqual([...criterion.permittedMarks].sort((a, b) => a - b));
     }
     expect(criteria).toHaveLength(1269);
-    expect(structured).toHaveLength(1230);
-    // Guidance whose marks the parser cannot reach exactly: counted items at
-    // two possible values ("1 mark, or 2 marks where …, up to 6"), and prose
-    // over several permitted marks. Rewrite the guidance in a readable shape
-    // and take the criterion off this list.
-    expect(criteria.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`).sort()).toEqual([
-      'pe-2020-hl-q11aiii/c1', 'pe-2020-hl-q13a/c1', 'pe-2020-hl-q15ai/c1', 'pe-2020-hl-q15ai/c2', 'pe-2020-hl-q15ai/c3', 'pe-2021-hl-q13b/c2',
-      'pe-2021-hl-q13c/c1', 'pe-2021-hl-q15bii/c1', 'pe-2021-ol-q6/c1', 'pe-2022-hl-q3/c1', 'pe-2022-hl-q3/c2', 'pe-2023-hl-q13d/c1',
-      'pe-2023-hl-q14aii/c1', 'pe-2023-hl-q15bi/c1', 'pe-2023-hl-q16a/c1', 'pe-2023-hl-q17aii/c1', 'pe-2023-hl-q18b/c1', 'pe-2023-hl-q18di/c1',
-      'pe-2023-hl-q1a/c1', 'pe-2023-hl-q4a/c1', 'pe-2023-hl-q8/c1', 'pe-2023-ol-q15b/c1', 'pe-2023-ol-q16c/c1', 'pe-2023-ol-q16c/c2',
-      'pe-2024-hl-q11b/c1', 'pe-2024-hl-q12a/c1', 'pe-2024-hl-q13aii/c1', 'pe-2024-hl-q16ai/c1', 'pe-2024-hl-q5b/c1', 'pe-2024-hl-q9b/c1',
-      'pe-2025-hl-q15b/c1', 'pe-2025-hl-q16ai/c1', 'pe-2025-hl-q16bii/c1', 'pe-2025-hl-q16c/c1', 'pe-2025-hl-q17a/c1', 'pe-2025-hl-q17c/c1',
-      'pe-2025-hl-q18aii/c1', 'pe-2025-hl-q9b/c1', 'pe-2026-hl-q12/c1',
-    ]);
+    // 1230 before the residue shapes were read: "one mark per …" counted rows and rows per listed name, labels priced
+    // without a colon, an extra "+1" as a step, ordinal responses as one counted row, and a ladder outranking a
+    // printed breakdown that is not the criterion.
+    expect(structured).toHaveLength(1269);
+    expect(criteria.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`)).toEqual([]);
     // "Accurate description: 4; some accuracy: 2." and "3 × 2 marks. Load: javelin…" still as prose, in those criteria only.
     const PE_PRICED = /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i;
     const lines = criteria.filter(({ criterion }) => !criterion.allocation).flatMap(({ criterion }) => criterion.guidance).filter(line => PE_PRICED.test(line)).length;
@@ -625,7 +616,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 const BASELINE = {
   frenchReading: 1,
   irishExactCriteria: 52,
-  physicalEducationLines: 15,
+  physicalEducationLines: 0,
 };
 
 if (process.env.CLARITY_PRINT) {
