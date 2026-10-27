@@ -56546,7 +56546,8 @@
     "verbatim": "average amount of energy involved to break (form) bonds (a bond) / average amount of energy involved to break (form) 1 mole of bonds average amount of energy stored in a mole of a bond (bonds)",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"average amount of bond dissociation energies for all bonds // of the same type in a chemical species in the gaseous state (phase)\" (2 × 3)."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each. It sets a second definition after \"or\", the last two rows: the examiner marks one definition or the other, not a mix of the two.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -56554,7 +56555,26 @@
     "verbatim": "of a particular (same) type in a chemical species in the gaseous state (phase) / of a particular (same) type in a chemical species into separate (single) atoms / of a particular (same) type in a chemical species into gaseous atoms",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "average amount of bond dissociation energies for all bonds",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, after \"or\": this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "of the same type in a chemical species in the gaseous state (phase)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ],
   "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -56580,7 +56600,8 @@
     "verbatim": "components have different attractions (affinities, interactions, solubilities) for (in) / components differentially partitioned (dissolved) between",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"mobile phase carrying the mixture through (in contact with) stationary phase // components selectively (differently) adsorbed (retained) by stationary phase / components pass (move, elute) through (on, along) stationary phase at different speeds (rates)\" (2 × 3)."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each. It sets a second answer after \"or\", the last two rows: the examiner marks one answer or the other, not a mix of the two.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -56588,7 +56609,26 @@
     "verbatim": "stationary and mobile phases",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "mobile phase carrying the mixture through (in contact with) stationary phase",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, after \"or\": this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "components selectively (differently) adsorbed (retained) by stationary phase / components pass (move, elute) through (on, along) stationary phase at different speeds (rates)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ],
   "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -69257,19 +69297,19 @@
    {
     "id": "r-2",
     "kind": "anyN",
-    "verbatim": "avoid suckback into hot test-tube/ avoid flying glass (chemical splash)",
+    "verbatim": "avoid suckback into hot test-tube/ avoid flying glass (chemical splash) / avoid test-tube (apparatus) cracking",
     "marks": 6,
     "openList": true,
-    "contextNote": "EXPLAIN: the explanation the scheme's table sets beside each precaution stated, (3) each: \"ANY TWO LINKED EXPLANATIONS: (2 × 3)\". The table also sets \"avoid burns (cuts from flying glass, contact with chemicals)\" beside eye-protection and beside gloves or tongs; its own print of the table is shown with the answer. It adds: [Correct, linked, specific, chemical hazard, e.g. ‘glass wool irritating’ acceptable.]",
+    "contextNote": "EXPLAIN: the explanation the scheme's table sets beside each precaution stated, (3) each: \"ANY TWO LINKED EXPLANATIONS: (2 × 3)\". The table sets \"avoid burns (cuts from flying glass, contact with chemicals)\" beside both eye-protection and gloves or tongs; its own print of the table is shown with the answer. It adds: [Correct, linked, specific, chemical hazard, e.g. ‘glass wool irritating’ acceptable.]",
     "group": {
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "avoid suckback into hot test-tube/ avoid flying glass (chemical splash)",
-      "avoid test-tube (apparatus) cracking",
+      "avoid suckback into hot test-tube/ avoid flying glass (chemical splash) / avoid test-tube (apparatus) cracking",
       "ethanol (ethene, stopper) flammable /avoid fumes from burning stopper",
       "avoid test-tube cracking / avoid fire (burns)",
       "avoid burns (contact with chemicals)",
+      "avoid burns (cuts from flying glass, contact with chemicals)",
       "avoid contact with chemicals"
      ]
     }
@@ -79140,11 +79180,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "methyl orange",
     "marks": 3,
     "openList": true,
-    "contextNote": "For the indicator. Or \"phenolphthalein\"."
+    "contextNote": "For the indicator: either of these, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "methyl orange",
+      "phenolphthalein"
+     ]
+    }
    },
    {
     "id": "r-2",
@@ -79152,7 +79200,8 @@
     "verbatim": "yellow (orange)",
     "marks": 3,
     "openList": true,
-    "contextNote": "For the colour change. The scheme prices the two colours (2 × 3), one each, and sets them under the indicators in two columns: for phenolphthalein, \"pink (accept purple, violet)\"."
+    "contextNote": "For the colour change. The scheme prices the two colours (2 × 3), one each, and sets them in two columns under the indicators: this row and the next under methyl orange, the last two under phenolphthalein. The examiner takes the colours of one column, not a mix of the two.",
+    "route": "a"
    },
    {
     "id": "r-3",
@@ -79160,7 +79209,26 @@
     "verbatim": "red (pink, peach)",
     "marks": 3,
     "openList": true,
-    "contextNote": "For phenolphthalein, \"colourless\". The scheme adds: [Marks may be given for correct colours of an incorrect indicator. Allow (3) for correct colours reversed (and matching a named indicator). (9) marks only available for correct indicator and correct colours in correct order.]"
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "pink (accept purple, violet)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or, under phenolphthalein, this row and the next.",
+    "route": "b"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "colourless",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Marks may be given for correct colours of an incorrect indicator. Allow (3) for correct colours reversed (and matching a named indicator). (9) marks only available for correct indicator and correct colours in correct order.]",
+    "route": "b"
    }
   ]
  },
@@ -80008,7 +80076,8 @@
     "verbatim": "attraction between the ions of the crystal",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each. It prints them with a second column beside them: \"attraction between the ions of the crystal // ionic compounds /\" over \"and polar (partially charged) water molecules // dissolve in water\"."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each. It prints them with a second column beside them, \"attraction between the ions of the crystal // ionic compounds /\" over \"and polar (partially charged) water molecules // dissolve in water\": that column is the last two rows. The examiner takes the points of one column, not a mix of the two.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -80016,7 +80085,26 @@
     "verbatim": "and polar (partially charged) water molecules",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme adds: [Allow (3) marks for ‘like dissolves like’.]"
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ionic compounds",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or, from the second column, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "dissolve in water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) marks for ‘like dissolves like’.]",
+    "route": "b"
    }
   ]
  },

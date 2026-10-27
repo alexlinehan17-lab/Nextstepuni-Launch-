@@ -193,27 +193,24 @@ assert 'test- tube' in _q2t[3][0], _q2t[3]
 _states = [s.replace('test- tube', 'test-tube').rstrip('/ ') for s, _e in _q2t[1:]]
 _lab = [raw(7, 384, 399, 380), raw(7, 397, 413, 380)]
 assert _lab == ['ANY TWO STATED PRECAUTIONS: (2 × 3)', 'ANY TWO LINKED EXPLANATIONS: (2 × 3)'], _lab
-# The explanation column: a cell the gate reads whole is an option; the first
-# row's three alternatives are set over three lines the text layer reads apart
-# from one another ("avoid suckback into hot" / "test-tube/ avoid flying glass
-# (chemical splash) /" / "avoid test-tube (apparatus) cracking"), so they are
-# offered alternative by alternative; the cell beside eye-protection and gloves
-# is set across the precautions beside it and is quoted in the note.
+# The explanation column: every cell is an option, read whole. The first row's
+# cell and the cell beside eye-protection and gloves are set over lines the flat
+# extraction reads apart from the precautions beside them; the scheme's table
+# cells, appended to its extraction by append-scheme-tables.py (read out of
+# their own cells by PyMuPDF), are where the gate finds them. The cell beside
+# eye-protection is printed again beside gloves: offered once.
 _expl = [e for _s, e in _q2t[1:]]
 assert _expl[0] == ('avoid suckback into hot test-tube/ avoid flying glass (chemical splash) / avoid test-tube '
                     '(apparatus) cracking'), _expl[0]
 assert _expl[4] == _expl[5] == 'avoid burns (cuts from flying glass, contact with chemicals)', _expl[4:6]
-assert not P.traceable(_expl[0]) and not P.traceable(_expl[4]), _expl
-_opts = ['avoid suckback into hot test-tube/ avoid flying glass (chemical splash)',
-         'avoid test-tube (apparatus) cracking'] + [_expl[i] for i in (1, 2, 3, 6)]
-assert _expl[0].startswith(_opts[0]) and _expl[0].endswith(_opts[1]), _opts
+_opts = [_expl[i] for i in (0, 1, 2, 3, 4, 6)]
 _corr = raw(7, 772, 789)
 assert _corr.startswith('[Correct, linked, specific'), _corr
 C.add([k('2', 'b', 'ii')], 'chem-u2', 'safety-in-preparing-ethene', [
     menu_row('r-1', _states, 2, 'STATE: any two precautions, (3) each: "' + _lab[0] + '".', per=3, total=6),
     menu_row('r-2', _opts, 2, 'EXPLAIN: the explanation the scheme\'s table sets beside each precaution '
-             'stated, (3) each: "' + _lab[1] + '". The table also sets "' + _expl[4] + '" beside '
-             'eye-protection and beside gloves or tongs; its own print of the table is shown with the answer. '
+             'stated, (3) each: "' + _lab[1] + '". The table sets "' + _expl[4] + '" beside both '
+             'eye-protection and gloves or tongs; its own print of the table is shown with the answer. '
              'It adds: ' + _corr, per=3, total=6)],
     total=12, figure=S + 'q2b-ii')
 C.fixed([k('2', 'c', 'i')], 'chem-2-4', 'combustion-of-ethene-and-ethyne-compared')

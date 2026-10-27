@@ -6,6 +6,7 @@
  {"id": "chem-2019-hl-q3-a", "ask": "", "answer": "rubber seal (septum, self-sealing cap)", "figure": true, "solution": true},
  {"id": "chem-2019-hl-q3-b-i-ii", "ask": "why the pressure of the vapour at the end of the heating stage", "answer": "plunger of gas (large) syringe free to move", "figure": true},
  {"id": "chem-2019-hl-q4-e", "ask": "Give two differences between a sigma and a pi covalent bond.", "answer": "do not determine shape of molecule", "solution": true},
+ {"id": "chem-2019-hl-q4-g", "ask": "Define bond energy.", "answer": "average amount of bond dissociation energies for all bonds"},
  {"id": "chem-2019-hl-q4-i", "ask": "", "answer": "4.86 × 10⁻⁴ × 206 = 0.100 g ⇒ 100.116 mg", "figure": true, "solution": true},
  {"id": "chem-2019-hl-q4-k-b", "ask": "Draw two repeating units of the polymer poly(propene).", "answer": "end bonds need not be shown", "solution": true},
  {"id": "chem-2019-hl-q6-a-i-iv", "ask": "Give the systematic IUPAC names for A, B and C.", "answer": "C: 2,2-dimethylpropane", "figure": true},

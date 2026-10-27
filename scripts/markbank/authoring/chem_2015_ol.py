@@ -47,6 +47,14 @@ SPLIT = ('The scheme prices these points together as {} without saying which poi
 DRAWN = 'The scheme answers this with a drawing; its own print is shown with the answer.'
 
 
+def routed(row, route):
+    """A row on one side of the scheme's // columns: a student who claims a row of
+    one route has the other route's rows locked (the session's mutually exclusive
+    routes), so both columns are claimable and never mixed."""
+    row['route'] = route
+    return row
+
+
 def k(*parts):
     q, letter, roman = (list(parts) + [None, None, None])[:3]
     return (q, letter, roman, None)
@@ -178,12 +186,21 @@ _first, _second = ([x.strip() for x in r.text.split('//')] for r in _q2g[1].rows
 assert _ind == ['methyl orange', 'phenolphthalein'] and _first[0] == 'yellow (orange)' \
     and _second == ['red (pink, peach)', 'colourless'], (_ind, _first, _second)
 _q2g_aside = traced(_q2g[2].text + ' (3) ' + _q2g[3].text)
+# The indicator is either of two (3); the colours are two columns under them,
+# (2 × 3): each column a route, so a student claims the colours of the column
+# they gave and the other column locks. The indicator stays outside the routes:
+# the scheme gives marks "for correct colours of an incorrect indicator".
+_inds = [C.lifted('x', t, None)['verbatim'] for t in _ind]
 C.add([k('2', 'g')], 'chem-4-1', 'indicator-and-colour-change-for-a-carbonate-titration', [
-    C.lifted('r-1', _ind[0], 3, f'For the indicator. Or "{traced(_ind[1])}".'),
-    C.lifted('r-2', _first[0], 3, 'For the colour change. The scheme prices the two colours (2 × 3), one each, '
-             f'and sets them under the indicators in two columns: for phenolphthalein, "{traced(_first[1])}".'),
-    C.lifted('r-3', _second[0], 3, f'For phenolphthalein, "{traced(_second[1])}". The scheme adds: {_q2g_aside}')],
-    stem=Q2_TITRATION)
+    anyN('r-1', _inds[0], 3, 1, 3, _inds, 'For the indicator: either of these, (3).'),
+    routed(C.lifted('r-2', _first[0], 3, 'For the colour change. The scheme prices the two colours (2 × 3), one '
+                    'each, and sets them in two columns under the indicators: this row and the next under methyl '
+                    'orange, the last two under phenolphthalein. The examiner takes the colours of one column, not '
+                    'a mix of the two.'), 'a'),
+    routed(C.lifted('r-3', _second[0], 3), 'a'),
+    routed(C.lifted('r-4', _first[1], 3, 'Or, under phenolphthalein, this row and the next.'), 'b'),
+    routed(C.lifted('r-5', _second[1], 3, f'The scheme adds: {_q2g_aside}'), 'b')],
+    total=9, stem=Q2_TITRATION)
 # (h): the answer (9) and the working that earns it, a box of stacked
 # fractions the text layer cannot read (its digits come through as glyphs).
 assert cells(k('2', 'h'))[0] == '[9]', P.items(k('2', 'h'))
@@ -299,11 +316,16 @@ _top, _bottom = ([x.strip().rstrip('/').strip() for x in r.text.split('//')] for
 assert _top == ['attraction between the ions of the crystal', 'ionic compounds'] \
     and _bottom == ['and polar (partially charged) water molecules', 'dissolve in water'], (_top, _bottom)
 _explain = f'{Q5_STEM} Explain why'
+# Each column is a route: a student claims the two points of the column they
+# gave and the other column locks.
 C.add([k('5', 'e', 'i')], 'chem-2-2', 'why-sodium-chloride-dissolves-in-water', [
-    C.lifted('r-1', _top[0], 3, 'The scheme prices this point and the next (2 × 3), one each. It prints them with '
-             f'a second column beside them: "{traced(_top[0] + " // " + _top[1])} /" over "{traced(_bottom[0])} // '
-             f'{traced(_bottom[1])}".'),
-    C.lifted('r-2', _bottom[0], 3, adds(_q5e1[0].asides))], stem=_explain, figure=Q5)
+    routed(C.lifted('r-1', _top[0], 3, 'The scheme prices this point and the next (2 × 3), one each. It prints '
+                    f'them with a second column beside them, "{traced(_top[0] + " // " + _top[1])} /" over '
+                    f'"{traced(_bottom[0])} // {traced(_bottom[1])}": that column is the last two rows. The examiner '
+                    'takes the points of one column, not a mix of the two.'), 'a'),
+    routed(C.lifted('r-2', _bottom[0], 3), 'a'),
+    routed(C.lifted('r-3', _top[1], 3, 'Or, from the second column, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _bottom[1], 3, adds(_q5e1[0].asides)), 'b')], total=6, stem=_explain, figure=Q5)
 C.fixed([k('5', 'e', 'ii')], 'chem-2-1', 'why-sodium-chloride-solution-conducts', stem=_explain, figure=Q5)
 
 # ── Q6 Five hydrocarbons ─────────────────────────────────────────────────────

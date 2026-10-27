@@ -2,7 +2,7 @@
  {"id": "chem-2017-hl-q1-a-i", "ask": "", "answer": "solution of known concentration (molarity)", "figure": true},
  {"id": "chem-2017-hl-q1-c", "ask": "Describe fully the procedure used during the titrations", "answer": "read top of meniscus"},
  {"id": "chem-2017-hl-q1-d-i", "ask": "the number of moles of Fe²⁺ ion in a 25.0 cm³ portion", "answer": "0.00225 (2.25 × 10⁻³) moles", "solution": true},
- {"id": "chem-2017-hl-q2-b-ii", "ask": "State and explain two safety precautions", "answer": "keep long hair tied back", "solution": true},
+ {"id": "chem-2017-hl-q2-b-ii", "ask": "State and explain two safety precautions", "answer": "avoid burns (cuts from flying glass, contact with chemicals)", "solution": true},
  {"id": "chem-2017-hl-q2-e", "ask": "Calculate the maximum theoretical number of ethyne molecules", "answer": "3.2 ÷ 64∗ = 0.05 moles calcium carbide", "figure": true},
  {"id": "chem-2017-hl-q3-b", "ask": "Describe a method you could use to determine when the same mass of sulfur", "answer": "light meter reading", "figure": true},
  {"id": "chem-2017-hl-q3-d-ii", "ask": "", "answer": "five points plotted correctly", "figure": true, "solution": true},

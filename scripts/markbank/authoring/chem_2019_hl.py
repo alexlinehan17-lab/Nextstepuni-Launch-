@@ -80,6 +80,14 @@ def lift(rid, text, marks, note=''):
     return C.lifted(rid, display(text).strip(), marks, note)
 
 
+def routed(row, route):
+    """A row on one side of the scheme's "or": a student who claims a row of one
+    route has the other route's rows locked (the session's mutually exclusive
+    routes), so two alternative answers are both claimable and never mixed."""
+    row['route'] = route
+    return row
+
+
 def menu_row(rid, options, claim, note, per=None, steps=None, total=None):
     """An "any N" row: options lifted from the scheme, each refused unless the gate finds it."""
     opts = [C.lifted('x', display(o).strip(), None)['verbatim'] for o in options]
@@ -336,17 +344,27 @@ assert [it.cell for it in _q4g] == ['[2 × 3]'], _q4g
 _p = _q4g[0].points()
 assert len(_p) == 3, _p
 _cut = _p[1].index(' average amount of bond dissociation energies')
+# Two definitions, the second after "or", each two points (2 × 3): two routes, so
+# a student claims the points of the definition they gave and the other's lock.
 C.add([k('4', 'g')], 'chem-3-1', 'definition-of-bond-energy', [
-    lift('r-1', _p[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
-         'pair "' + _p[1][_cut:].strip() + ' // ' + _p[2] + '" (2 × 3).'),
-    lift('r-2', _p[1][:_cut], 3)], notes=Q4_NOTE)
+    routed(lift('r-1', _p[0], 3, 'The scheme prices this point and the next (2 × 3), one each. It sets a '
+                'second definition after "or", the last two rows: the examiner marks one definition or the '
+                'other, not a mix of the two.'), 'a'),
+    routed(lift('r-2', _p[1][:_cut], 3), 'a'),
+    routed(lift('r-3', _p[1][_cut:], 3, 'Or instead, after "or": this point and the next (2 × 3), one each.'), 'b'),
+    routed(lift('r-4', _p[2], 3), 'b')], total=6, notes=Q4_NOTE)
 _q4h = P.items(k('4', 'h'))
 assert [it.cell for it in _q4h] == ['[2 × 3]', '[2 × 3]'], _q4h
 _p, _o = _q4h[0].points(), _q4h[1].points()
+# Two statements of the principle, the second after "or", each two points
+# (2 × 3): two routes, as (g).
 C.add([k('4', 'h')], 'chem-4-2', 'principle-of-chromatography', [
-    lift('r-1', _p[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
-         'pair "' + _o[0] + ' // ' + _o[1] + '" (2 × 3).'),
-    lift('r-2', _p[1], 3)], notes=Q4_NOTE)
+    routed(lift('r-1', _p[0], 3, 'The scheme prices this point and the next (2 × 3), one each. It sets a '
+                'second answer after "or", the last two rows: the examiner marks one answer or the other, not '
+                'a mix of the two.'), 'a'),
+    routed(lift('r-2', _p[1], 3), 'a'),
+    routed(lift('r-3', _o[0], 3, 'Or instead, after "or": this point and the next (2 × 3), one each.'), 'b'),
+    routed(lift('r-4', _o[1], 3), 'b')], total=6, notes=Q4_NOTE)
 # (i): the answer (6), then its working, (2 x 3): the Mr, then n = m over Mr.
 _q4i = P.items(k('4', 'i'))
 assert [it.cell for it in _q4i] == ['[6]', '[2 × 3]'], _q4i

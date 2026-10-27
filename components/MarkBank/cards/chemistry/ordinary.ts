@@ -19911,9 +19911,11 @@ export const CARDS: SecCard[] = [
     questionText: "Name a suitable indicator for this titration. State the colour change of the indicator at the end point.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "methyl orange", marks: 3, contextNote: "For the indicator. Or \"phenolphthalein\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "yellow (orange)", marks: 3, contextNote: "For the colour change. The scheme prices the two colours (2 × 3), one each, and sets them under the indicators in two columns: for phenolphthalein, \"pink (accept purple, violet)\".", openList: true },
-    { id: "r-3", kind: "point", verbatim: "red (pink, peach)", marks: 3, contextNote: "For phenolphthalein, \"colourless\". The scheme adds: [Marks may be given for correct colours of an incorrect indicator. Allow (3) for correct colours reversed (and matching a named indicator). (9) marks only available for correct indicator and correct colours in correct order.]", openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "methyl orange", marks: 3, contextNote: "For the indicator: either of these, (3).", openList: true, group: {"claimMax":1,"perOption":3,"options":["methyl orange","phenolphthalein"]} },
+    { id: "r-2", kind: "point", verbatim: "yellow (orange)", marks: 3, contextNote: "For the colour change. The scheme prices the two colours (2 × 3), one each, and sets them in two columns under the indicators: this row and the next under methyl orange, the last two under phenolphthalein. The examiner takes the colours of one column, not a mix of the two.", openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "red (pink, peach)", marks: 3, openList: true, route: "a" },
+    { id: "r-4", kind: "point", verbatim: "pink (accept purple, violet)", marks: 3, contextNote: "Or, under phenolphthalein, this row and the next.", openList: true, route: "b" },
+    { id: "r-5", kind: "point", verbatim: "colourless", marks: 3, contextNote: "The scheme adds: [Marks may be given for correct colours of an incorrect indicator. Allow (3) for correct colours reversed (and matching a named indicator). (9) marks only available for correct indicator and correct colours in correct order.]", openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -20355,8 +20357,10 @@ export const CARDS: SecCard[] = [
     questionText: "sodium chloride can be dissolved in water,",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "attraction between the ions of the crystal", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each. It prints them with a second column beside them: \"attraction between the ions of the crystal // ionic compounds /\" over \"and polar (partially charged) water molecules // dissolve in water\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "and polar (partially charged) water molecules", marks: 3, contextNote: "The scheme adds: [Allow (3) marks for ‘like dissolves like’.]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "attraction between the ions of the crystal", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each. It prints them with a second column beside them, \"attraction between the ions of the crystal // ionic compounds /\" over \"and polar (partially charged) water molecules // dissolve in water\": that column is the last two rows. The examiner takes the points of one column, not a mix of the two.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "and polar (partially charged) water molecules", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "ionic compounds", marks: 3, contextNote: "Or, from the second column, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "dissolve in water", marks: 3, contextNote: "The scheme adds: [Allow (3) marks for ‘like dissolves like’.]", openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2015-OL-paper-q5",

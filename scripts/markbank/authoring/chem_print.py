@@ -37,7 +37,32 @@ import fitz
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from chem_scheme import _script_text  # noqa: E402
-from markbank_authoring import anyN, make_audit, make_card, make_emit, point, tidy  # noqa: E402
+from markbank_authoring import anyN, make_audit as _make_audit, make_card, make_emit, point, tidy  # noqa: E402
+
+
+def make_audit(max_options, *args, **kwargs):
+    """markbank_authoring.make_audit, reading a card's mutually exclusive routes
+    the way build-deck.mjs's tariffFault and the session do: rows sharing a
+    `route` are one side of the scheme's "or" (or its //), a student takes one
+    side and the others are locked, so each route WITH the rows common to all
+    must make the tariff alone. A card with no route is audited exactly as
+    before (markbank_authoring's sum of every row would count both sides)."""
+    base = _make_audit(max_options, *args, **kwargs)
+
+    def audit(cards):
+        plain, problems = [], []
+        for c in cards:
+            routes = sorted({r['route'] for r in c['rows'] if r.get('route')})
+            if not routes:
+                plain.append(c)
+                continue
+            if len(routes) < 2:
+                problems.append(f"{c['id']}: one route ({routes[0]}) is no choice")
+            for rt in routes:
+                shadow = dict(c, rows=[r for r in c['rows'] if r.get('route') in (None, rt)])
+                problems += [f'{p} (route {rt})' for p in base([shadow])]
+        return base(plain) + problems
+    return audit
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
