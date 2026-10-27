@@ -1037,6 +1037,13 @@ export interface AppliedMathematicsRubric {
     label: string;
     credit: number[];
     guidance?: string;
+    /**
+     * The printed lines this step prices, as a crop of the scheme page (scripts/markbank/authoring/am_steps.py):
+     * from the step before it to its own margin mark. The equation-editor text layer cannot be read as words,
+     * so the step's content is shown, not transcribed. Absent on a card whose steps could not be cut
+     * (scripts/markbank/authored/applied-maths-steps-residue.json) and on a scale that prices the whole solution.
+     */
+    region?: { p: number; r: [number, number, number, number] };
   }>;
   markingGuideNote: string;
 }
