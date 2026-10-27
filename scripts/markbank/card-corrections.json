@@ -26,24 +26,6 @@
   }
  },
  "biology": {
-  "bio-2024-hl-q12-b-i": {
-   "reason": "The printed task asks the student to copy and extend the prey-population graph; the same inspected official graph is shared by every sibling that depends on it.",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
-  "bio-2024-hl-q12-b-ii": {
-   "reason": "The explanation concerns the predator line the student draws over the supplied prey graph, so the inspected official graph must remain visible as question context.",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
-  "bio-2024-hl-q12-b-iii": {
-   "reason": "Time X exists only on the supplied prey graph; attach the same inspected official graph used by the rest of Q12(b).",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
   "bio-2025-ol-q11-c-i": {
    "reason": "Q11(c) is printed in the Section C booklet; its earlier Section A tag pointed the source reader at the wrong paper component.",
    "set": {
@@ -68,47 +50,120 @@
     "section": "C"
    }
   },
-  "bio-2022-ol-q6-a": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q3-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q3-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q3-a"
   },
-  "bio-2022-ol-q6-b": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q4-ab-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q4-ab, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q4-ab"
   },
-  "bio-2022-ol-q6-c": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q5-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q5-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q5-a"
   },
-  "bio-2022-ol-q6-d": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q5-b-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q5-b, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q5-b"
   },
-  "bio-2022-ol-q6-e": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q6-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-a"
   },
-  "bio-2022-ol-q6-f": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q6-b-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-b, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-b"
   },
-  "bio-2022-ol-q6-g": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q6-c-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-c, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-c"
+  },
+  "bio-2025-hl-q11-b-iv-vi-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q11-b-iv-vi, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q11-b-iv-vi"
+  },
+  "bio-2025-hl-q14-c-i-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q14-c-neuron-id, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q14-c-neuron-id"
+  },
+  "bio-2025-hl-q16-a-iv-1-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q16-a-iv-1, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q16-a-iv-1"
+  },
+  "bio-2025-hl-q16-c-iii-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q16-c-iii, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q16-c-iii"
+  },
+  "bio-2025-hl-q17-a-i-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q17-a-i, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q17-a-i"
+  },
+  "bio-2025-ol-q16-ciii-fig": {
+   "reason": "A shipped duplicate: \"Q16(c)(iii)-(iv)\" carded the two parts bio-2025-ol-q16-c-iii and bio-2025-ol-q16-c-iv already card separately. Withdrawn with a progress alias to bio-2025-ol-q16-c-iii, which carries its first part.",
+   "drop": true,
+   "replacementId": "bio-2025-ol-q16-c-iii"
+  },
+  "bio-2024-hl-q8-b2": {
+   "reason": "The second half of Q8(b), one printed task the old cards cut in two (\"[1 of 2]\", \"[2 of 2]\"). Withdrawn with a progress alias to bio-2024-hl-q8-b1, which now carries the whole task.",
+   "drop": true,
+   "replacementId": "bio-2024-hl-q8-b1"
+  },
+  "bio-2023-hl-q14-b-ii-fig": {
+   "reason": "Never shipped: a figure twin of bio-2023-hl-q14-b-ii, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2023-hl-q14-b-ii"
+  },
+  "bio-2023-ol-q16b-ii-v-fig": {
+   "reason": "Never shipped: a figure twin of bio-2023-ol-q16b-ii-v, which carries Q16(b)(ii) with its figure.",
+   "drop": true,
+   "replacementId": "bio-2023-ol-q16b-ii-v"
+  },
+  "bio-2022-hl-q17-d-ii": {
+   "reason": "Never shipped: the explanation half of Q17(d)(ii), which bio-2022-hl-q17-d-ii-fig carries whole with its diagram.",
+   "drop": true,
+   "replacementId": "bio-2022-hl-q17-d-ii-fig"
+  },
+  "bio-2022-hl-q16-b-iii-fig": {
+   "reason": "Never shipped: a figure twin of bio-2022-hl-q16-b-iii, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2022-hl-q16-b-iii"
+  },
+  "bio-2022-ol-q16-a-ii-fig": {
+   "reason": "Never shipped: a figure twin of bio-2022-ol-q16-a-ii, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2022-ol-q16-a-ii"
+  },
+  "bio-2021-ol-q14-b-iv-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q14-b-iv, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q14-b-iv"
+  },
+  "bio-2021-ol-q15-b-v-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q15-b-v, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q15-b-v"
+  },
+  "bio-2021-ol-q15-b-vi-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q15-b-vi, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q15-b-vi"
+  },
+  "bio-2021-ol-q16d-iv-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q16d-iv, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q16d-iv"
   }
  },
  "physics": {

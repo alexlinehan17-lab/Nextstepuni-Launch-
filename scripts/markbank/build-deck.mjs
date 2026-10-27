@@ -1172,6 +1172,33 @@ function tariffFault(c) {
  */
 const TARIFF_PROSE = /\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i;
 
+/**
+ * A row that states neither an answer nor an honest criterion.
+ *
+ * A row DECLARED `criterion` is the scheme pricing a judgement -- "Safety
+ * precaution described", "Any correct vitamin deficiency to match named
+ * vitamin" -- and the type reserves the kind for exactly that. Dropping the
+ * card for carrying one either loses the printed task or ships it with part of
+ * its published tariff missing, which the paper-by-paper audits forbid. Such a
+ * row is still refused when it is empty, or when it is a tariff written where
+ * the criterion should be AND the content-free test refuses it too. The second
+ * condition keeps the exemption from ever being stricter than the rule before
+ * it: Construction Studies ships criterion rows that print the scheme's own
+ * "Any 7 of the above details (5 marks each)", which the content-free test
+ * passes, and refusing every TARIFF_PROSE criterion dropped 125 of its cards on
+ * a rebuild. Biology holds its own criterion rows to TARIFF_PROSE alone, in
+ * test/markBankBiologyReview.test.ts. Every other kind is held to the
+ * content-free test as before.
+ */
+function contentFreeRow(r) {
+  if (r.kind === 'anyN') return false;
+  if (r.kind === 'criterion') {
+    const text = String(r.verbatim ?? '');
+    return !text.trim() || (TARIFF_PROSE.test(text) && isContentFreeRow(text));
+  }
+  return isContentFreeRow(r.verbatim);
+}
+
 /** Faults in a bounded pick-list that arithmetic can settle without an agent. */
 function groupFault(c) {
   for (const r of c.rows) {
@@ -1257,7 +1284,7 @@ function answerVariantsFault(card) {
       if (!ROW_KINDS.has(row.kind)) {
         return `answer variant "${variant.id}" row "${row.id}" has invalid kind "${row.kind}"`;
       }
-      if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
+      if (contentFreeRow(row)) {
         return `answer variant "${variant.id}" contains content-free row "${row.verbatim}"`;
       }
     }
@@ -1348,7 +1375,7 @@ for (const c of cards) {
     }
   }
 
-  const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFreeRow(r.verbatim));
+  const contentFree = c.rows.filter(contentFreeRow);
   if (contentFree.length) {
     dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
     continue;
@@ -1471,7 +1498,16 @@ for (const c of cards) {
   for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
-      if (!claimMatches(scheme, claim)) untraceable.push(claim);
+      // A menu option that pairs a label with its value ("thoracic — 12") was
+      // read from a scheme TABLE, names in one row and numbers in the next
+      // (2017 HL Biology Q15(b)(i)), so the two are never adjacent in the text
+      // layer. It traces when each half does; a whole option still traces as
+      // it always did.
+      const halves = r.kind === 'anyN' ? String(claim).split(/\s—\s/) : [];
+      if (!claimMatches(scheme, claim)
+        && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
+        untraceable.push(claim);
+      }
     }
   }
   if (untraceable.length) {
