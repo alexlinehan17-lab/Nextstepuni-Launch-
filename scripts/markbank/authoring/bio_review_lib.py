@@ -134,6 +134,11 @@ def _norm(line):
     return re.sub(r'\s+', ' ', line).strip()
 
 
+from paper import STRIP_SET_PAGES, strip_set_lines  # noqa: E402
+_STRIP_SET = {name: pages for (subject, _y, _l), files in STRIP_SET_PAGES.items() if subject == 'biology'
+              for name, pages in files.items()}
+
+
 class Src:
     """One SEC PDF read as printed lines, page by page (1-based pages)."""
 
@@ -144,7 +149,13 @@ class Src:
         self.bytes = os.path.getsize(path)
         self.pages = self.doc.page_count
         self.lines = {}
+        strips = _STRIP_SET.get(os.path.basename(path), ())
         for i, page in enumerate(self.doc):
+            if i + 1 in strips:
+                # Text layer set in overlapping strips (paper.STRIP_SET_PAGES):
+                # read the rebuilt lines.
+                self.lines[i + 1] = [n for n in (_norm(t) for _, t in strip_set_lines(page)) if n]
+                continue
             self.lines[i + 1] = [n for n in (_norm(l) for l in _page_lines(page)) if n]
 
     def page_text(self, page):

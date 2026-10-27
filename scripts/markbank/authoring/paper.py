@@ -526,10 +526,57 @@ def _unweld(block, anchors):
     return [block]
 
 
-def _blocks(path, subject=None):
-    """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
+# Pages whose text layer is set in overlapping vertical strips: every printed
+# line is stored as several pieces, and the glyph at each strip edge is set
+# twice at the same place ("Namme the liquidd part of thee blood."), so no
+# block holds a whole line. 2011 OL Biology pages 11-13 (Questions 13-15; the
+# pages render cleanly and the scheme reads normally). Keyed (subject, year,
+# level) -> {file name: pages}; strip_set_lines() reads those pages instead.
+STRIP_SET_PAGES = {
+    ('biology', 2011, 'ol'): {'2011-ol-paper.pdf': (11, 12, 13)},
+}
+
+
+def strip_set_lines(page):
+    """A strip-set page's printed lines as (baseline, text), top to bottom.
+
+    Every glyph is pooled from every strip, grouped into lines by baseline and
+    read left to right. A glyph set again at the same place, the same
+    character within 1pt, is a strip edge and kept once: on 2011 OL pp11-13
+    those repeats sit 0.00-0.06pt apart, a printed double letter ("ll", "ee")
+    3.3pt or more. A gap wider than 1.5pt between glyphs is a word space."""
+    rows = collections.defaultdict(list)
+    for b in page.get_text('rawdict')['blocks']:
+        for ln in b.get('lines', []):
+            for sp in ln['spans']:
+                for ch in sp['chars']:
+                    rows[round(round(ch['origin'][1], 1))].append((ch['bbox'][0], ch['bbox'][2], ch['c']))
+    out = []
+    for y in sorted(rows):
+        kept = []
+        for x0, x1, c in sorted(rows[y]):
+            if kept and c == kept[-1][2] and abs(x0 - kept[-1][0]) < 1.0:
+                continue
+            kept.append((x0, x1, c))
+        text, last = '', None
+        for x0, x1, c in kept:
+            if last is not None and x0 - last > 1.5 and not text.endswith(' ') and c != ' ':
+                text += ' '
+            text += c
+            last = x1
+        text = ' '.join(text.split())
+        if text:
+            out.append((y, text))
+    return out
+
+
+def _blocks(path, subject=None, strip_pages=()):
+    """Every non-empty text block, in page then top-to-bottom, left-to-right order.
+    A strip-set page (STRIP_SET_PAGES) gives one block per rebuilt line."""
     with pymupdf.open(path) as doc:
-        pages = [sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
+        pages = [[(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n]))]
+                 if n + 1 in strip_pages else
+                 sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]
     if subject in GUTTER_MARKERS:
         pages = [_join_gutter_markers(p) for p in pages]
@@ -1024,7 +1071,9 @@ class Paper:
         welded = WELDED_HEADS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None)
+            blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None,
+                             strip_pages=STRIP_SET_PAGES.get((self.subject, self.year, self.level), {})
+                             .get(os.path.basename(path), ()))
             if welded:
                 blocks = [piece for block in blocks for piece in _unweld(block, welded)]
             for block in blocks:
