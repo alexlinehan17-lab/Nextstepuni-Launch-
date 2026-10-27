@@ -663,7 +663,8 @@ def build(ledger, year, level):
             # {'steps': [...], 'fixed': {mark: count}} names those units; a
             # question may hold two ladders, keyed (qn, 'letters'); and
             # 'responses' allows more carded responses than steps, as in a
-            # best-five-of-six question.
+            # best-five-of-six question, or fewer where a response's ask is
+            # left open (OPEN_LEAVES).
             # A part under no ladder (a whole-part card, 2019 Ordinary Q7(b)
             # beside Q7(a)'s "4 + 2") adds its own total to the ladders'.
             ladder_total = free_q.get(qn, 0)
@@ -716,7 +717,23 @@ def build(ledger, year, level):
         if not hit:
             problems.append(f'{t["key"]}: {t["ref"]} is no census leaf')
         claimed.update(hit)
-    for leaf in sorted(leaves - claimed, key=str):
+    # A census leaf left OPEN: the paper prints the ask and the scheme prints
+    # nothing for it to lift (2010 Ordinary Q11(c)(vii): scheme p7's Q11(c)
+    # block stops at (vi), then blank rows). It is neither carded nor
+    # excluded: it stays open for reconcile.py to report, with its reason and
+    # page evidence recorded in the audit.
+    open_leaves = getattr(ledger, 'OPEN_LEAVES', {})
+    open_list = []
+    for leaf, why in sorted(open_leaves.items(), key=lambda kv: str(kv[0])):
+        if leaf not in leaves:
+            problems.append(f'OPEN_LEAVES {leaf} is no census leaf')
+        elif leaf in claimed:
+            problems.append(f'OPEN_LEAVES {leaf} is claimed by a task')
+        elif not (why.get('reason') and why.get('evidence')):
+            problems.append(f'OPEN_LEAVES {leaf} needs its reason and its page evidence')
+        open_list.append({'leaf': f'Q{leaf[0]}' + ''.join(f'({x})' for x in leaf[1:] if x),
+                          'reason': why.get('reason'), 'evidence': why.get('evidence')})
+    for leaf in sorted(leaves - claimed - set(open_leaves), key=str):
         problems.append(f'census leaf {leaf} has no task')
 
     # --- figure keys -----------------------------------------------------
@@ -805,6 +822,7 @@ def build(ledger, year, level):
         'tickChecksumsMatched': len(ledger.CHECKSUMS),
         **({'layoutChecks': layout} if layout else {}),
         'excluded': excluded,
+        **({'openLeaves': open_list} if open_list else {}),
     }
     return lifter, cards, audit_tasks, checks
 
@@ -1088,6 +1106,8 @@ def main():
           + (' (written)' if args.write else ' (check only)'))
     for h in checks['excluded']:
         print(f'  EXCLUDED {h["questionRef"]}: {h["reason"]}')
+    for h in checks.get('openLeaves', []):
+        print(f'  OPEN {h["leaf"]}: {h["reason"]}')
     # Leave without interpreter teardown: PyMuPDF 1.26 on this machine
     # intermittently segfaults freeing its documents at exit, which would turn
     # a finished run's status into 139 after all its work is done.
