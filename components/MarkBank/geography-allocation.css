@@ -1,69 +1,34 @@
-/* Geography allocation rows — the same recipe as a science card's marking
-   points (SessionScreen MarkRowView): a full-width button, a square check,
-   the answer, a marks chip. Mint means claimed; nothing is tinted before the
-   student touches it. */
+/* Geography allocation: the parts of the reveal that are Geography's own. The
+   rows, chips, part headings and directions come from claim-rows.css. */
 .mb-geo-alloc { display: grid; gap: 14px; }
-
 .mb-geo-group { display: grid; gap: 7px; }
-.mb-geo-prompt { margin: 2px 0 1px; font: 600 13.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); display: flex; gap: 8px; align-items: baseline; }
-.mb-geo-part { flex: none; font: 700 11px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); }
-
 .mb-geo-unit { display: grid; gap: 7px; }
 .mb-geo-unit-label { font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--mb-label); margin-top: 4px; }
 
-.mb-geo-row,
+/* An SRP counter sits in the same frame as a row: minus, count, plus, and the
+   marks those SRPs are worth. */
 .mb-geo-srp {
-  width: 100%; text-align: left; display: grid; gap: 10px; align-items: start;
+  width: 100%; text-align: left; display: grid; gap: 10px; align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   padding: 11px 12px; border-radius: 12px;
   border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
   font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
   transition: background 160ms, border-color 160ms;
 }
-button.mb-geo-row { grid-template-columns: 20px minmax(0, 1fr) auto; cursor: pointer; }
-/* A row with many steps ("6 items illustrated", 1m–12m) keeps room for its words. */
-.mb-geo-row--stepped { grid-template-columns: minmax(9em, 1fr) auto; }
-.mb-geo-srp { grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; }
-.mb-geo-row[data-claimed="true"],
 .mb-geo-srp[data-claimed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }
-
-.mb-geo-check {
-  width: 18px; height: 18px; border-radius: 5px; margin-top: 1px; flex: none;
-  border: 1.5px solid var(--mb-border); display: inline-flex; align-items: center; justify-content: center; color: #fff;
-}
-.mb-geo-row[data-claimed="true"] .mb-geo-check { border-color: var(--mb-success); background: var(--mb-success); }
-
-.mb-geo-row-text { min-width: 0; overflow-wrap: anywhere; display: grid; gap: 3px; }
-.mb-geo-row-text small { font: 400 11.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
-
-.mb-geo-chip {
-  font: 700 10.5px/1.7 'Roboto Mono', ui-monospace, monospace; border-radius: 6px; padding: 0 6px; white-space: nowrap;
-  font-variant-numeric: tabular-nums; background: var(--mb-raised); color: var(--mb-muted); align-self: start;
-}
-[data-claimed="true"] > .mb-geo-chip { background: var(--mb-success-tint); color: var(--mb-success-text); }
-
-.mb-geo-steps { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
-.mb-geo-steps button,
-.mb-geo-counter button {
-  min-width: 34px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
-  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
-  font: 700 11px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
-}
-.mb-geo-steps button[aria-pressed="true"] { border-color: var(--mb-success); background: var(--mb-success); color: #fff; }
 .mb-geo-counter { display: inline-flex; align-items: center; gap: 4px; }
-.mb-geo-counter button { min-width: 32px; font-size: 15px; }
+.mb-geo-counter button {
+  min-width: 32px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
+  font: 700 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
+}
 .mb-geo-counter button:disabled { opacity: .4; cursor: default; }
 .mb-geo-counter output { min-width: 26px; text-align: center; font: 750 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; color: var(--mb-ink); }
 
 .mb-geo-pool { margin: 0; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
 
-.mb-geo-directions { padding: 11px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
-.mb-geo-directions strong { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }
-.mb-geo-directions ul { margin: 6px 0 0; padding-left: 17px; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); display: grid; gap: 3px; }
-
 @media (max-width: 480px) {
-  .mb-geo-row--stepped { grid-template-columns: 1fr; }
-  .mb-geo-steps { justify-content: flex-start; }
   .mb-geo-srp { grid-template-columns: minmax(0, 1fr) auto; }
-  .mb-geo-srp .mb-geo-chip { grid-column: 2; grid-row: 1; }
+  .mb-geo-srp .mb-claim-chip { grid-column: 2; grid-row: 1; }
   .mb-geo-srp .mb-geo-counter { grid-column: 1 / -1; }
 }

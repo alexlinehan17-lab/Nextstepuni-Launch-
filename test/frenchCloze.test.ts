@@ -59,8 +59,10 @@ describe('French gap-level practice', () => {
         expect(card.totalMarks).toBe(3);
         expect(card.rubric.criteria[0].permittedMarks).toEqual([0, 2, 3]);
         expect(tariffReconciles(card)).toBe(true);
-        expect(frenchMarks(card, { 'french:response': 2 })).toBe(2);
-        expect(frenchMarks(card, { 'french:response': 1 })).toBe(0);
+        // The gap is one stepped row: 3, or 2 after the printed deduction; nothing else is a value.
+        expect(card.rubric.allocation?.rows.map(row => row.steps)).toEqual([[3, 2]]);
+        expect(frenchMarks(card, { 'french:row:r1': 2 })).toBe(2);
+        expect(frenchMarks(card, { 'french:row:r1': 1 })).toBe(0);
       });
       expect(group.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(30);
     }

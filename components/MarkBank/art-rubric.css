@@ -1,0 +1,59 @@
+/* The revealed side of an Art card (ArtRubricPanel.tsx): the task check, then
+   each component's printed rows as placements (claim-rows.css), or a 2023+
+   criterion's descriptor bands with their marks. */
+.mb-art-rubric { color: var(--mb-ink); font: 400 13px/1.55 var(--font-sans, 'DM Sans', sans-serif); }
+.mb-art-rubric .mb-art-eyebrow { margin: 0; font-size: 9.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--mb-label); }
+.mb-art-rubric .mb-art-heading { font: 600 17px/1.3 var(--font-serif, 'Source Serif 4', Georgia, serif); margin: 5px 0 12px; }
+
+/* Task check: what the printed task asked for; no marks added here. */
+.mb-art-check { margin: 0 0 16px; padding: 0 0 15px; border-bottom: 1px solid var(--mb-border); }
+.mb-art-check-list { display: grid; gap: 7px; }
+.mb-art-requirement {
+  display: grid; grid-template-columns: 24px 1fr; gap: 9px; align-items: start; width: 100%; padding: 10px 11px; text-align: left;
+  border-radius: 10px; border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
+  font: 500 12.5px/1.45 'DM Sans', system-ui, sans-serif; cursor: pointer;
+}
+.mb-art-requirement[aria-pressed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }
+.mb-art-requirement .mb-art-tick { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 6px; border: 1.5px solid var(--mb-border); color: #fff; }
+.mb-art-requirement[aria-pressed="true"] .mb-art-tick { border-color: var(--mb-success); background: var(--mb-success); }
+.mb-art-requirement .mb-art-tick::after { content: ''; width: 6px; height: 10px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translate(-1px, -1px); opacity: 0; }
+.mb-art-requirement[aria-pressed="true"] .mb-art-tick::after { opacity: 1; }
+
+/* Each component: its name and running total, then its rows. */
+.mb-art-criteria { display: grid; gap: 10px; }
+.mb-art-criterion { padding: 11px; border-radius: 11px; border: 1px solid var(--mb-border); display: grid; gap: 7px; }
+.mb-art-criterion-title { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.mb-art-criterion-title strong { font: 650 13px/1.3 'DM Sans', system-ui, sans-serif; }
+.mb-art-row { display: grid; gap: 6px; }
+.mb-art-row .mb-claim-part { margin: 2px 0 0; }
+.mb-art-note { margin: 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-art-guidance { margin: 0; display: grid; gap: 4px; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-art-guidance li { display: flex; justify-content: space-between; gap: 10px; }
+
+/* A row above 15 marks: a slider with its mark beside it, in the same frame as a stepped row. */
+.mb-art-slider .mb-art-slider-control { display: grid; grid-template-columns: minmax(120px, 1fr) auto auto; gap: 8px; align-items: center; min-width: 200px; }
+.mb-art-slider input[type="range"] { width: 100%; margin: 0; accent-color: var(--mb-ink); }
+.mb-art-slider[data-claimed="true"] input[type="range"] { accent-color: var(--mb-success); }
+.mb-art-slider strong { font: 700 13px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-art-slider .mb-art-slider-control > span { font: 600 10.5px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); white-space: nowrap; }
+@media (max-width: 480px) { .mb-art-slider .mb-art-slider-control { min-width: 0; } }
+
+/* 2023+ descriptor bands: each band's published bullets over its marks. */
+.mb-art-bands { display: grid; gap: 7px; }
+.mb-art-band { padding: 9px 10px; border-radius: 10px; border: 1.5px solid var(--mb-border); }
+.mb-art-band[data-selected="true"] { border-color: var(--mb-ink); background: var(--mb-raised); }
+.mb-art-band-title { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.mb-art-band-title strong { font: 750 9.5px/1.3 'DM Sans', system-ui, sans-serif; letter-spacing: .09em; text-transform: uppercase; color: var(--mb-ink-2); }
+.mb-art-band-title span { font: 700 9.5px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); }
+.mb-art-band p { margin: 6px 0 0; color: var(--mb-muted); font: 400 11px/1.45 'DM Sans', system-ui, sans-serif; }
+.mb-art-band ul { list-style: disc; margin: 6px 0 8px; padding-left: 16px; color: var(--mb-muted); font: 400 11px/1.45 'DM Sans', system-ui, sans-serif; }
+
+.mb-art-total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 12px; padding: 12px; border-radius: 11px; background: var(--mb-raised); }
+.mb-art-total span { font: 600 12px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); }
+.mb-art-total strong { font: 700 17px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.mb-art-scheme-note { margin-top: 12px; padding: 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
+.mb-art-scheme-note strong, .mb-art-practice .mb-art-eyebrow { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }
+.mb-art-scheme-note p { margin: 5px 0 0; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-art-practice { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--mb-border); }
+.mb-art-practice p { margin: 4px 0 8px; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-art-practice ul { list-style: disc; margin: 0; padding-left: 17px; color: var(--mb-ink-2); font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; }

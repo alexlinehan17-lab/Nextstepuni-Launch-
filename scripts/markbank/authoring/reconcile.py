@@ -711,6 +711,9 @@ def content_hash(subject):
         if subject == 'geography':
             # The claimable rows a student sees are cut from the lines at load.
             names += ['allocation.ts']
+        if subject == 'art':
+            # The rows and parts a student places marks on are cut from the printed table at load.
+            names += ['answers.ts']
         for name in names:
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject in ('physical-education', 'applied-maths'):

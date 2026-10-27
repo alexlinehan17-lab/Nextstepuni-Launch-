@@ -417,6 +417,38 @@
               12,
               13,
               14
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 7,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 7,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              }
             ]
           },
           {
@@ -541,6 +573,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -560,6 +619,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -768,6 +854,38 @@
               12,
               13,
               14
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 7,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 7,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              }
             ]
           },
           {
@@ -815,6 +933,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -834,6 +979,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2718,6 +2890,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 7,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -2910,6 +3113,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 7,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -5308,12 +5542,15 @@
     {
       "cardId": "cons-2022-ol-q2-b",
       "priorSha256": "2a264299a133bd38eba1b346b9204ca4cdf73fc28ba853ac27fb6e0e6b4454e7",
-      "correctedSha256": "b86f24256c675603fb0f4ee170fad9a33965be7efbb1f40675d47f0f135e1714",
+      "correctedSha256": "0a68a07cbce0a71ac484acac2b90fafbeb2d1c65805743935afb43490e791aea",
       "priorTotalMarks": 18,
       "correctedTotalMarks": 18,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Split into the printed tank and pipework rows (note & sketch 5 + 4 each); tariff unchanged (18)."
+      "reason": "Question wording lifted from the paper. Split into the printed tank and pipework rows (note & sketch 5 + 4 each); tariff unchanged (18).",
+      "supersededSha256": [
+        "b86f24256c675603fb0f4ee170fad9a33965be7efbb1f40675d47f0f135e1714"
+      ]
     },
     {
       "cardId": "cons-2022-ol-q2-c",
@@ -5408,12 +5645,15 @@
     {
       "cardId": "cons-2022-ol-q6-c",
       "priorSha256": "d2c6fdd5a3cb50893ffc7e01644cc1d2855c1b71c1058bfaa0434711654a8144",
-      "correctedSha256": "ed4b0ea49a3e5d8a764f7ee9a954307e43f3901f7c9cb0a98722090520435c26",
+      "correctedSha256": "ee6d821a994850fbdb616654a0567e1904d1e8a3b06c1ae436bdf296ae0b457c",
       "priorTotalMarks": 13,
       "correctedTotalMarks": 13,
       "priorTopicId": "cons-9-4",
       "correctedTopicId": "cons-1-8",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed note & sketch row (7 + 6); tariff unchanged (13)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed note & sketch row (7 + 6); tariff unchanged (13).",
+      "supersededSha256": [
+        "ed4b0ea49a3e5d8a764f7ee9a954307e43f3901f7c9cb0a98722090520435c26"
+      ]
     },
     {
       "cardId": "cons-2022-ol-q7-a",
@@ -5806,5 +6046,25 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2022-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2022-ordinary/prior-2022-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2022-ordinary/prior-2022-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2022-ol-q2-a",
+      "priorSha256": "a0449a0f7be9b03a9d117068a595d1a9747fa3aae5274b5da80dee57f90fd6a4",
+      "correctedSha256": "6807444d28986d0e14650c05a98be1e60c29e8b74725c6fd1e545bb033bf24a7",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2022-ol-q2-complete",
+      "priorSha256": "cc7fbdb4794a9ab309187340e270a4ae7f45765f74d3800ac0c2f11c572e0917",
+      "correctedSha256": "dc393944ceaaadb22bdacce8cbee4269663abb40cb57d41664f304f020fcff91",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2022-ol-q6-complete",
+      "priorSha256": "5a11e905dac4c1947a363e05d1bf18eae315a1226afab982272bf4e816736586",
+      "correctedSha256": "799e4607bf6741d2dd98303b04aa7e80a5d65c46f37e2c192e83fddf160c7827",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    }
+  ]
 }

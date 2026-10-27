@@ -88,6 +88,16 @@ export type RowKind =
    *  of the question — each asterisked item stands or falls alone. */
   | 'gate';
 
+/** One priced component of a criterion row; see `MarkRow.parts`. */
+export interface MarkRowPart {
+  id: string;
+  /** The component as the scheme prints it: "point", "discussion", "Scale". */
+  verbatim: string;
+  marks: number;
+  /** Including zero and the part's maximum; the printed ladder where the scheme gives one. */
+  permittedMarks: number[];
+}
+
 export interface MarkRow {
   id: string;
   kind: RowKind;
@@ -114,6 +124,15 @@ export interface MarkRow {
    * and its maximum. A diagram marked6/3/0 must not become a binary6-mark tick.
    * Only fixed-tariff criterion rows may use these; never inferred. */
   permittedMarks?: number[];
+  /**
+   * The named components a criterion row is priced in — "Design feature 1
+   * (2 for point, 4 for discussion)" — each placed on its own marks, so a
+   * student who had the point but not the discussion can say so. The row's
+   * claim is the parts' sum. Only a fixed-tariff criterion row carries parts,
+   * their marks add up to the row's, and every part is the scheme's own word
+   * (cards/construction-studies: construction_rows.py).
+   */
+  parts?: MarkRowPart[];
   /** Alternatives the scheme prints explicitly. */
   accepts?: string[];
   /**
@@ -634,6 +653,33 @@ export type IrishGuidanceKind =
   /** A published quality band such as Cumas/Cruinneas Gaeilge. */
   | 'quality';
 
+/** One answer of an Irish listening or reading scheme, cut from the exact
+ * guidance by cards/irish/answers.ts: the scheme's words before "= 2 mharc". */
+export interface IrishAnswerRow {
+  id: string;
+  text: string;
+  /** Marks the row earns; 0 when the part's ladder prices the rows instead. */
+  marks: number;
+}
+
+/** One sub-question of the scheme ("1. Cad atá á lorg…? 2 mharc") with its answers. */
+export interface IrishAnswerPart {
+  id: string;
+  /** The sub-question as the scheme prints it, with any "(Alt 2)" reference. */
+  prompt?: string;
+  /** The marks the scheme gives this sub-question. */
+  tariff: number;
+  /** "{3 mharc: 2 mharc + 1 mharc}": marks for 1..n right answers. */
+  ladder?: number[];
+  rows: IrishAnswerRow[];
+}
+
+export interface IrishAllocation {
+  parts: IrishAnswerPart[];
+  /** Lifted scheme sentences that are rules, not answers. */
+  directions: string[];
+}
+
 /** One independently placed part of the SEC Irish marking scheme. */
 export interface IrishCriterion {
   id: string;
@@ -645,6 +691,9 @@ export interface IrishCriterion {
   guidanceKind: IrishGuidanceKind;
   /** Verbatim or tightly bounded scheme guidance, never invented content. */
   guidance: string[];
+  /** The exact guidance as claimable rows, where cards/irish/answers.ts could
+   * cut it so the parts add up to the criterion. Absent: prose over a scale. */
+  allocation?: IrishAllocation;
 }
 
 /**
@@ -698,6 +747,38 @@ export interface ArtCriterion {
   rowNotes?: string[];
   /** Absent where the SEC printed an allocation but no descriptor bands. */
   bands?: ArtBand[];
+  /**
+   * 2021–2022 schemes: the printed rows cut into what the scheme prices
+   * (cards/art/answers.ts), so the student places marks on each row or on
+   * the parts its Notes cell splits it into, never on the component as a
+   * whole. Absent on 2023+ descriptor criteria.
+   */
+  allocation?: ArtAllocation;
+}
+
+/** One priced part of an Art row: "name · 5m" from "5 for name, 10 for description". */
+export interface ArtAllocationPart {
+  id: string;
+  /** The note's own phrase, or the row's words for a remainder the note leaves unlabelled. */
+  text: string;
+  marks: number;
+  /** "1st" / "2nd" where the note prices the same word twice ("names (3/2)"). */
+  tag?: string;
+}
+
+/** One printed row of an Art component with the Marks cell beside it. */
+export interface ArtAllocationRow {
+  id: string;
+  text: string;
+  marks: number;
+  /** The Notes cell's split of the row's marks; the parts add up to `marks`. */
+  parts?: ArtAllocationPart[];
+  /** A Notes cell that prices nothing by itself ("Max 3 for partially correct name."). */
+  note?: string;
+}
+
+export interface ArtAllocation {
+  rows: ArtAllocationRow[];
 }
 
 export interface ArtRubric {
@@ -855,12 +936,59 @@ export interface PoliticsCriterion {
   bands?: Array<{ label: string; marks: number[]; guidance: string }>;
 }
 
+/** One quality band of a Politics ladder as the scheme prints it:
+ * "Very good explanation" at 8–10M, with its descriptor where printed. */
+export interface PoliticsBand {
+  label: string;
+  marks: number[];
+  descriptor?: string;
+}
+
+export interface PoliticsAnswerRow {
+  id: string;
+  text: string;
+  marks: number;
+  /** The scheme prices this answer without printing one: the row shows the
+   * criterion's own words and the reveal says any correct answer scores. */
+  tariffOnly?: boolean;
+}
+
+/** One independently priced part of a Politics answer, cut from the lifted
+ * scheme block by cards/politics-and-society/answers.ts: a quality ladder the
+ * student places themselves on, or exact answers they claim. */
+export interface PoliticsPart {
+  id: string;
+  /** The criterion this part scores. */
+  label: string;
+  /** The scheme's own words for what the part asks ("Two valid actions"). */
+  caption?: string;
+  max: number;
+  bands?: PoliticsBand[];
+  rows?: PoliticsAnswerRow[];
+  /** How many rows count when the part is a list of exact answers. */
+  count?: number;
+  /** "3 marks + 2 marks" over a list of answers: marks for 1..count rows claimed. */
+  ladder?: number[];
+}
+
+export interface PoliticsAllocation {
+  parts: PoliticsPart[];
+  /** The scheme's indicative points ("Responses may make reference to"), shown as a list; never a checklist. */
+  examples: string[];
+  /** Lifted scheme sentences that are rules, not answers. */
+  directions: string[];
+}
+
 export interface PoliticsRubric {
   system: 'politics';
   taskRequirements: string[];
   criteria: PoliticsCriterion[];
   /** Shared published guidance, shown once even when several criteria apply. */
   schemeGuidance?: string[];
+  /** The guidance and bands as placeable ladders and claimable rows, where
+   * cards/politics-and-society/answers.ts could cut them so the parts add up
+   * to the card. Absent: the lines show as a list over mark buttons. */
+  allocation?: PoliticsAllocation;
   markingGuideNote: string;
   /** Exact scheme pages remain available after reveal, including grade grids. */
   schemePages: number[];
@@ -870,6 +998,19 @@ export interface PoliticsRubric {
 /** PE mixes exact allocations, descending tariffs and quality bands. The
  * original scheme remains available after reveal, including answer diagrams
  * and tick tables which must not be flattened into a guessed text answer. */
+/** One PE criterion's reviewed guidance cut into what the scheme prices
+ * (cards/physical-education/answers.ts): quality bands the student places
+ * themselves on ("Good description: 2; fair description: 1."), and rows they
+ * claim ("Vector.", "Phase named: 1", "4 marks + 2 marks" as steps). */
+export interface PhysicalEducationAllocation {
+  /** The guidance's own statement of what is asked, where it has one. */
+  caption?: string;
+  bands?: Array<{ label: string; marks: number[] }>;
+  rows?: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
+  /** The rest of the guidance: accept/do-not-accept rules, scheme examples. */
+  notes: string[];
+}
+
 export interface PhysicalEducationRubric {
   system: 'physical-education';
   taskRequirements: string[];
@@ -879,6 +1020,7 @@ export interface PhysicalEducationRubric {
     maxMarks: number;
     permittedMarks: number[];
     guidance: string[];
+    allocation?: PhysicalEducationAllocation;
   }>;
   schemeMaterial: CardSourceMaterial & { kind: 'marking-scheme' };
   markingGuideNote: string;
@@ -920,6 +1062,24 @@ export interface BusinessAllocation {
   requiresAnyOf?: string[];
 }
 
+/** One response the SEC's scheme prints for a Business part — a bullet, a
+ * numbered line or a heading with the prose under it — lifted from the cited
+ * "Possible Responses" / "Support Notes" page by bus_expected.py. The scheme
+ * calls these a sample, never an exhaustive list, so a row is what the scheme
+ * printed, not the only answer that scores. */
+export interface BusinessExpectedItem {
+  id: string;
+  text: string;
+  /** The lines the scheme prints under a heading: the explanation and its case link. */
+  detail?: string[];
+}
+
+export interface BusinessExpected {
+  /** The scheme page the items were read from. */
+  page: number;
+  items: BusinessExpectedItem[];
+}
+
 export interface BusinessRubric {
   system: 'business';
   taskRequirements: string[];
@@ -929,6 +1089,10 @@ export interface BusinessRubric {
     label: string;
     allocations: BusinessAllocation[];
   }>;
+  /** The scheme's printed responses for this part, as rows the student can
+   * claim; absent where bus_expected.py could not lift them (listed in
+   * scripts/markbank/authored/business-expected-review.json). */
+  expected?: BusinessExpected;
   /** Exact official support notes, shown only after the scheme is revealed. */
   schemeFileid: string;
   schemePages: number[];
@@ -948,11 +1112,49 @@ export interface FrenchCriterion {
   requiresAttempt?: boolean;
 }
 
+/** One answer of a French listening, reading or cloze scheme, cut from a
+ * lifted `answerGuide` line by cards/french/answers.ts. The text is the
+ * scheme's own words without the list marker and the price. */
+export interface FrenchAnswerRow {
+  id: string;
+  text: string;
+  /** Marks the row earns when claimed; negative for a printed deduction
+   * ("➢ Incorrect year = -1 Mark"); 0 for an answer the scheme prices at 0. */
+  marks: number;
+  /** A row the student places at one of several printed values (cloze: 3, or
+   * 2 after the scheme's careless-transcription deduction). */
+  steps?: number[];
+  /** A dash or asterisk line: the scheme's partial-credit alternative. */
+  partial?: boolean;
+  /** The sub-part heading the scheme prints over this row ("(a)", "(ii) Restaurant"). */
+  part?: string;
+}
+
+/** A French card's scheme cut into claimable rows. */
+export interface FrenchAllocation {
+  /** How many answers the task asks for: at most this many positive rows count. */
+  count: number;
+  rows: FrenchAnswerRow[];
+  /** A list the scheme prices by how many are right ("Any two of the following,
+   * award 5 Marks / Any one … 3 Marks"; "Two correct answers needed for 8 marks
+   * (7+1)"): marks for 1..count ticked rows. The rows then carry no price. */
+  ladder?: number[];
+  /** The aural rule printed for named tasks: where less than full marks is
+   * achieved in either segment, the higher mark is awarded to each segment. */
+  scoring?: 'higher-segment-both';
+  /** Lifted scheme lines that are not answers: acceptances, conventions, notes. */
+  directions: string[];
+}
+
 export interface FrenchRubric {
   system: 'french';
   taskRequirements: string[];
   /** Complete accepted answers, partial-credit ladder and question-specific rules. */
   answerGuide?: string[];
+  /** The answerGuide as claimable rows, where cards/french/answers.ts could cut
+   * it so the rows reconcile with the printed total. Absent: the lines show as
+   * a list and the response is placed on the permitted marks. */
+  allocation?: FrenchAllocation;
   criteria: FrenchCriterion[];
   markingGuideNote: string;
   /** NextStepUni's own practice guidance. Never SEC text: rendered apart from
@@ -1183,6 +1385,20 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
     : g.claimMax * g.perOption;
 }
 
+/** A criterion row's parts add up to its marks, with ids of their own and steps from 0 to each part's marks. */
+export function rowPartsReconcile(row: MarkRow): boolean {
+  const parts = row.parts;
+  if (!parts || !row.permittedMarks || row.kind !== 'criterion' || row.marks === null) return false;
+  if (parts.length < 2 || new Set(parts.map(part => part.id)).size !== parts.length) return false;
+  if (parts.reduce((sum, part) => sum + part.marks, 0) !== row.marks) return false;
+  return parts.every(part => part.id && part.verbatim.trim()
+    && Number.isInteger(part.marks) && part.marks > 0
+    && part.permittedMarks.length >= 2
+    && part.permittedMarks[0] === 0
+    && part.permittedMarks.at(-1) === part.marks
+    && part.permittedMarks.every((mark, index, steps) => Number.isInteger(mark) && mark >= 0 && (index === 0 || mark > steps[index - 1])));
+}
+
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
     if (card.rubric.system === 'politics') {
@@ -1302,7 +1518,7 @@ export function tariffReconciles(card: SecCard): boolean {
         });
     }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
-      const criteria: PhysicalEducationRubric['criteria'] = card.rubric.criteria;
+      const criteria: Array<{ id: string; maxMarks: number; permittedMarks: number[] }> = card.rubric.criteria;
       // A printed remainder the scheme prices on no line is declared, never derived.
       const unpriced = card.rubric.system === 'geography' ? card.rubric.unpricedMarks ?? 0 : 0;
       return criteria.length > 0
@@ -1374,6 +1590,8 @@ export function tariffReconciles(card: SecCard): boolean {
     || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
       || mark < 0 || (index > 0 && mark <= steps[index - 1]))
   ))) return false;
+  // Parts are a criterion row's own split: they add up to it, each on printed steps.
+  if (rows.some(row => row.parts && !rowPartsReconcile(row))) return false;
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   // The scheme never printed a split, so a row carrying its own marks is a
   // value the card invented — the tariff lives on the question alone.

@@ -130,7 +130,62 @@ subject-specific generators.
   answer scores; it never carries an example the scheme did not print. A point
   row that is only a tariff ("Phase named") or that welds several priced
   answers into one string is the same defect. `test/markBankAnswerClarity.test.ts`
-  counts these per subject and must only ever fall.
+  counts these per subject and must only ever fall. Geography rows come from
+  `components/MarkBank/cards/geography/allocation.ts`; French listening,
+  reading and cloze rows from `components/MarkBank/cards/french/answers.ts`,
+  which cuts the lifted `answerGuide` lines at load time (the JSON stays the
+  lifted scheme text). A French card the parser cannot reconcile shows its
+  lines as a list, never as paragraphs, over mark buttons. Irish listening
+  and reading rows come from `components/MarkBank/cards/irish/answers.ts`,
+  which cuts the welded exact guidance at its "= 2 mharc" prices into
+  sub-questions and rows; a scheme excerpt that `irish_cards.py` cut short or
+  started mid-question cannot reconcile and stays prose, so fix the excerpt,
+  not the parser. Politics and Society rows and ladders come from
+  `components/MarkBank/cards/politics-and-society/answers.ts`: a quality band
+  ("Very good explanation · 8 - 10M") is a row the student places themselves
+  on, an exact answer is a claimable row, and the scheme's indicative points
+  ("Responses may make reference to") are a visible list labelled as such,
+  never a checklist. Physical Education rows come from
+  `components/MarkBank/cards/physical-education/answers.ts`, which cuts each
+  criterion's reviewed guidance sentence ("Good description: 2; fair
+  description: 1.", "Phase named: 1; … good 2, fair 1", "4 marks + 2 marks",
+  "Vector.") into bands and rows whose reachable marks must equal the
+  criterion's permitted marks; write new PE guidance in those shapes. Art
+  2010–2022 components come from `components/MarkBank/cards/art/answers.ts`,
+  which makes each printed row a placement at its Marks cell and cuts a
+  Notes cell that splits the row ("5 for name, 10 for description &
+  discussion", "5 for names (3/2)", "10/10/10" beside printed headings,
+  "2 x 5 for functions", "Location - 5 Function - 5") into parts that add
+  up to the row; a cell that prices nothing stays a note under the row.
+  History Ordinary Level answer lines priced in halves ("Sods (3M) and
+  saplings (3M)") are cut at the printed prices by `hist_rows.py`, which
+  `hist_all.py` applies to every card it builds and which also upgrades an
+  authored `history.json` in place (`--write`); a price that is the whole
+  with partials after it becomes one row with printed steps, "Any TWO: …
+  (3M + 3M)" an any-two group, and a "5M + 5M Max =" fragment the row's note.
+  Construction Studies criterion rows priced in named components ("Design
+  feature 1 (2 for point, 4 for discussion)", "Scale - 4 marks Drafting - 4
+  marks") carry them as `parts` of the row (`construction_rows.py`): one row,
+  several placements, so the five-rows-per-task cap and the yearly
+  validators' pinned row lists stand; the pass records every changed card in
+  its year's review ledger and changes nothing on a second run.
+  Italian answers priced in halves on one line ("Erano stati compagni (1m)
+  di scuola (4m)", "By summer [2] 2022 [1]") are cut at the printed prices by
+  `it_rows.py`, which `it_all.py` applies to every card it builds and which
+  also upgrades an authored `italian.json` in place (`--write`); a shorter
+  answer the scheme prices under the full one, which was a sentence in the
+  row's note, becomes a printed step on a fixed-tariff point row, and a full
+  answer the SEC wrapped onto a second line is joined back from the note
+  (`it_scheme.py` joins it at the source now too).
+  Business rubric cards carry the responses the scheme prints for their part
+  as `rubric.expected` rows (`bus_expected.py`): the lifter reads the card's
+  cited "Possible Responses" / "Support Notes" pages, cuts the block at the
+  part's printed marker, drops the echoed question and the page furniture, and
+  keeps one item per printed response; what it cannot lift (a marker with no
+  response under it, a table the text layer flattened, glyph damage, a block
+  that is a whole question) is listed with its pages in
+  `authored/business-expected-review.json`, never typed in. `--write`
+  rewrites `rubric-authored.json`; a second run changes nothing.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

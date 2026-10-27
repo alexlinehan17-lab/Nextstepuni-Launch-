@@ -79,7 +79,7 @@
   },
   "art": {
     "cards": 1756,
-    "contentHash": "3e0bca2a13c21b10",
+    "contentHash": "836c645d0f080984",
     "coveragePct": 100.0,
     "covered": 1756,
     "excluded": 0,
@@ -124,7 +124,7 @@
   },
   "business": {
     "cards": 1988,
-    "contentHash": "7c0615dd06aa22c5",
+    "contentHash": "dfc2d964027df2b9",
     "coveragePct": 100.0,
     "covered": 2173,
     "excluded": 0,
@@ -184,7 +184,7 @@
   },
   "construction-studies": {
     "cards": 1261,
-    "contentHash": "c7c3457b2124c48f",
+    "contentHash": "28a676c9c75243b9",
     "coveragePct": 100.0,
     "covered": 845,
     "excluded": 0,
@@ -349,7 +349,7 @@
   },
   "french": {
     "cards": 2120,
-    "contentHash": "a7a8010971e6b388",
+    "contentHash": "b4795dc534fa12ae",
     "coveragePct": 100.0,
     "covered": 1876,
     "excluded": 0,
@@ -394,7 +394,7 @@
   },
   "history": {
     "cards": 749,
-    "contentHash": "909b88426ea7203d",
+    "contentHash": "901dd2aaeefddd91",
     "coveragePct": 100.0,
     "covered": 749,
     "excluded": 681,
@@ -439,7 +439,7 @@
   },
   "irish": {
     "cards": 400,
-    "contentHash": "0f7f4953e350117f",
+    "contentHash": "a49fc80a956e059e",
     "coveragePct": 100.0,
     "covered": 400,
     "excluded": 0,
@@ -454,7 +454,7 @@
   },
   "italian": {
     "cards": 350,
-    "contentHash": "08a7a5134bfce00f",
+    "contentHash": "7df0d826a57f097d",
     "coveragePct": 100.0,
     "covered": 380,
     "excluded": 325,
@@ -604,7 +604,7 @@
   },
   "physical-education": {
     "cards": 772,
-    "contentHash": "bf37bb69743b0e63",
+    "contentHash": "8322cd3f51a576a8",
     "coveragePct": 100.0,
     "covered": 741,
     "excluded": 0,
@@ -649,7 +649,7 @@
   },
   "politics-and-society": {
     "cards": 623,
-    "contentHash": "a3a2d3048487e17b",
+    "contentHash": "dd3d425e264ec2a5",
     "coveragePct": 100.0,
     "covered": 623,
     "excluded": 0,

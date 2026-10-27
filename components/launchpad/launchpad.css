@@ -1064,30 +1064,6 @@
   line-height: 1.5;
   color: var(--ink-secondary, #666);
 }
-.pt-mode-dot {
-  width: 7px;
-  height: 7px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  display: block;
-  flex: none;
-}
-.pt-mode-dot.is-on {
-  background: currentColor;
-}
-.pt-document-toggle {
-  background: transparent !important;
-  border-radius: 9px !important;
-}
-.pt-document-toggle button {
-  border-radius: 6px !important;
-  min-height: 36px;
-}
-.pt-document-toggle button[aria-selected='true'] {
-  background: #1a1a1a !important;
-  color: #fff !important;
-  box-shadow: none !important;
-}
 .lp-compass .lp-masthead {
   margin: 0;
 }
@@ -1323,12 +1299,6 @@
   .lp-study-card .lp-button {
     padding: 12px 14px;
   }
-}
-
-.pt-document-toggle button[aria-selected='true'] > span[aria-hidden='true'] {
-  background: #1a1a1a !important;
-  border-color: #1a1a1a !important;
-  box-shadow: none !important;
 }
 
 .lp-planner-agenda > .overflow-x-auto > div {
