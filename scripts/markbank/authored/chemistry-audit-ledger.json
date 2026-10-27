@@ -13033,10 +13033,9 @@
    "chem-2023-hl-q11-a-i": {
     "status": "corrected",
     "before": "2764eadc3888576c",
-    "after": "8719e367c269a56b",
+    "after": "85fefce80a2a36b6",
     "changed": [
      "questionText",
-     "tariffModel",
      "rows",
      "notes",
      "figureKey"
@@ -14657,13 +14656,11 @@
    "chem-2023-ol-q3-a-ii": {
     "status": "corrected",
     "before": "47354ee427681396",
-    "after": "1b16c575067bc8c8",
+    "after": "228b34c20af1ea06",
     "changed": [
      "stem",
-     "tariffModel",
      "totalMarks",
-     "rows",
-     "notes"
+     "rows"
     ]
    },
    "chem-2023-ol-q3-a-iii-iv": {

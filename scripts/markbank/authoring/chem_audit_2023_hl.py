@@ -30,7 +30,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS  # noqa: E402
+from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, routed  # noqa: E402
 
 P = Printed(2023, 'hl', figures=True)
 C = Cards(P)
@@ -258,7 +258,22 @@ C.fixed([k('10', 'c', 'iv')], None, None)
 C.fixed([k('10', 'c', 'v')], None, None)
 
 # ── Q11 Any two of (a), (b), (c), (d) ────────────────────────────────────────
-C.ordered([k('11', 'a', 'i')], None, None, figure=S + 'q11a-i')
+# (a)(i): two statements of the law, "or" between them, each two points (2 × 3), one
+# each (scheme PDF page 23): each statement a route, so the four points are never
+# claimed as any two of four. The second's equation is set as fractions in the 2023
+# equation font, which the text layer reads with doubled subscripts.
+_q11a1 = P.items(k('11', 'a', 'i'))
+assert [it.cell for it in _q11a1] == ['[2 × 3]'], _q11a1
+_ch = _q11a1[0].points()
+assert _ch == ['volume (V) of a fixed mass of gas at constant pressure', 'proportional (∝) to temperature (T) in kelvins',
+               'for a fixed mass of gas at constant pressure', 'V T = constant (k) / V₁₁ T₁₁ = V₂₂ T₂₂'], _ch
+C.add([k('11', 'a', 'i')], None, None, [
+    routed(C.lifted('r-1', _ch[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead, after '
+                    '"or", the last two rows. The examiner marks one statement or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _ch[1], 3), 'a'),
+    routed(C.lifted('r-3', _ch[2], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _ch[3], 3, 'The scheme sets V over T, V₁ over T₁ and V₂ over T₂ as fractions; its own print '
+                    'is shown with the answer.'), 'b')], total=6, figure=S + 'q11a-i')
 C.fixed([k('11', 'a', 'ii')], None, None)
 C.ordered([k('11', 'a', 'iii')], None, None)
 C.answer_only([k('11', 'a', 'iv')], None, None, S + 'q11a-iv')

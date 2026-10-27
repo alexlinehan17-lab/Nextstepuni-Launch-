@@ -9164,8 +9164,7 @@
   "questionText": "State Charles’s law.",
   "figureKey": "chemistry-2023-HL-scheme-q11a-i",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[2 × 3]"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
@@ -9173,36 +9172,39 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "volume (V) of a fixed mass of gas at constant pressure",
-    "marks": null,
+    "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead, after \"or\", the last two rows. The examiner marks one statement or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "proportional (∝) to temperature (T) in kelvins",
-    "marks": null,
+    "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "for a fixed mass of gas at constant pressure",
-    "marks": null,
+    "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "V T = constant (k) / V₁₁ T₁₁ = V₂₂ T₂₂",
-    "marks": null,
+    "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "The scheme sets V over T, V₁ over T₁ and V₂ over T₂ as fractions; its own print is shown with the answer.",
+    "route": "b"
    }
-  ],
-  "notes": "The scheme prices these points together as [2 × 3] without saying which point earns which part, so no per-point value is shown."
+  ]
  },
  {
   "id": "chem-2023-hl-q11-a-iii",
@@ -29195,61 +29197,35 @@
   "questionText": "Describe how the concentration of dissolved solids could then have been determined.",
   "stem": "The water in a river estuary is a mixture of seawater and freshwater. In 2022 the quality of the water in Irish estuaries was in decline as reported by the Environmental Protection Agency. Increasing concentrations of nitrate ion in the estuary waters are the main issue. The quality of the water from an Irish estuary was analysed in a school laboratory.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[6 + 3]"
+   "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "evaporate to dryness",
-    "marks": null,
+    "marks": 9,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "known (stated) volume",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "filtered water",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "in beaker (evaporating basin, etc)",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "find mass residue / weigh residue",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "calculate the concentration",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "Any two of these, the first (6) and the second (3): the scheme lists six points and prices the part (6 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "evaporate to dryness",
+      "known (stated) volume",
+      "filtered water",
+      "in beaker (evaporating basin, etc)",
+      "find mass residue / weigh residue",
+      "calculate the concentration"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
    }
-  ],
-  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
+  ]
  },
  {
   "id": "chem-2024-hl-q3-b-i",

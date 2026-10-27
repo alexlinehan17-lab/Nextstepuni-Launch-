@@ -6421,14 +6421,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q3(a)(ii)",
     stem: "The water in a river estuary is a mixture of seawater and freshwater. In 2022 the quality of the water in Irish estuaries was in decline as reported by the Environmental Protection Agency. Increasing concentrations of nitrate ion in the estuary waters are the main issue. The quality of the water from an Irish estuary was analysed in a school laboratory.",
     questionText: "Describe how the concentration of dissolved solids could then have been determined.",
-    tariffModel: {"kind":"orderedSplit","notation":"[6 + 3]"}, totalMarks: 9,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "evaporate to dryness", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "known (stated) volume", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "filtered water", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "in beaker (evaporating basin, etc)", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "find mass residue / weigh residue", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "calculate the concentration", marks: null, openList: true },
+    { id: "r-1", kind: "anyN", verbatim: "evaporate to dryness", marks: 9, contextNote: "Any two of these, the first (6) and the second (3): the scheme lists six points and prices the part (6 + 3).", openList: true, group: {"claimMax":2,"perOption":6,"options":["evaporate to dryness","known (stated) volume","filtered water","in beaker (evaporating basin, etc)","find mass residue / weigh residue","calculate the concentration"],"perOptionSteps":[6,3]} },
     ],
   } as SecCard,
   {

@@ -83,5 +83,10 @@
   "ask": "write in your answerbook the omitted term",
   "answer": "D refinery gas",
   "figure": true
+ },
+ {
+  "id": "chem-2023-ol-q3-a-ii",
+  "ask": "concentration of dissolved solids",
+  "answer": "find mass residue"
  }
 ]

@@ -24,7 +24,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from chem_print import routed  # noqa: E402
-from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, point  # noqa: E402
+from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, anyN, point  # noqa: E402
 
 P = Printed(2023, 'ol', figures=True)
 C = Cards(P)
@@ -139,7 +139,15 @@ C.answer_only([k('2', 'd', 'iii')], None, None, S + 'q2d-iii', stem=_before.stri
 
 # ── Q3 Estuary water ─────────────────────────────────────────────────────────
 C.ordered([k('3', 'a', 'i')], None, None, figure=S + 'q3a-i')
-C.ordered([k('3', 'a', 'ii')], None, None)
+# (a)(ii): six points priced (6 + 3) (scheme PDF page 8): a cell pricing fewer points
+# than it lists is a choice, any two of the six, the first (6) and the second (3).
+_q3a2 = P.items(k('3', 'a', 'ii'))
+assert [it.cell for it in _q3a2] == ['[6 + 3]'], _q3a2
+_diss = [C.lifted('x', t, None)['verbatim'] for t in _q3a2[0].points()]
+assert len(_diss) == 6 and _diss[0] == 'evaporate to dryness', _diss
+C.add([k('3', 'a', 'ii')], None, None, [anyN(
+    'r-1', _diss[0], 9, 2, 6, _diss, 'Any two of these, the first (6) and the second (3): the scheme lists six '
+    'points and prices the part (6 + 3).', steps=[6, 3])], total=9)
 C.route([k('3', 'a', 'iii')], 'chem-4-3', 'suspended-solids-in-grams-per-litre', cid='q3-a-iii-iv')
 C.route([k('3', 'a', 'iv')], 'chem-4-3', 'suspended-solids-in-mg-per-litre')
 C.ordered([k('3', 'b', r) for r in ('i', 'ii', 'iii', 'iv', 'v')], 'chem-4-3',

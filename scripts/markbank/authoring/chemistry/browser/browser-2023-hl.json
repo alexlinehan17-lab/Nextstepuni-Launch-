@@ -75,5 +75,11 @@
   "ask": "What is the main economic consideration when locating the plant",
   "answer": "availability of cheap electricity",
   "figure": true
+ },
+ {
+  "id": "chem-2023-hl-q11-a-i",
+  "ask": "State Charles",
+  "answer": "for a fixed mass of gas at constant pressure",
+  "solution": true
  }
 ]

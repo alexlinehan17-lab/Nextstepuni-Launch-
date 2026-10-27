@@ -3679,12 +3679,12 @@ export const CARDS: SecCard[] = [
     id: "chem-2023-hl-q11-a-i", topicId: "chem-2-3", conceptId: "charles-law-statement",
     section: "B", questionRef: "2023 HL Q11(a)(i)",
     questionText: "State Charles’s law.",
-    tariffModel: {"kind":"orderedSplit","notation":"[2 × 3]"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "volume (V) of a fixed mass of gas at constant pressure", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "proportional (∝) to temperature (T) in kelvins", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "for a fixed mass of gas at constant pressure", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "V T = constant (k) / V₁₁ T₁₁ = V₂₂ T₂₂", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "volume (V) of a fixed mass of gas at constant pressure", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead, after \"or\", the last two rows. The examiner marks one statement or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "proportional (∝) to temperature (T) in kelvins", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "for a fixed mass of gas at constant pressure", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "V T = constant (k) / V₁₁ T₁₁ = V₂₂ T₂₂", marks: 3, contextNote: "The scheme sets V over T, V₁ over T₁ and V₂ over T₂ as fractions; its own print is shown with the answer.", openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2023-HL-scheme-q11a-i",
