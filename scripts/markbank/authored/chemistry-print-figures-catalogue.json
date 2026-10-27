@@ -5801,5 +5801,274 @@
   "description": "The marking scheme's own print of its answer to 2013 OL Q8(d), as the State Examinations Commission set it: a drawing of the apparatus: a horizontal test tube, its closed end at the left labelled \"glass wool\" with an arrow from \"X\" pointing at it, a small heap in its middle labelled \"aluminium oxide\", heated from below by a burner labelled \"Bunsen\"; a tube labelled \"delivery tube\" runs from its stoppered mouth down into a trough labelled \"trough\", holding \"water\", and up into an upturned tube labelled \"test tube\", with \"Z\" at its top.",
   "questionRef": "2013 OL Q8(d)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus for preparing ethene: a horizontal test tube over a Bunsen burner, glass wool at its closed end labelled \"glass wool soaked in liquid X\" and a small heap in its middle labelled \"solid Y\"; a delivery tube from its stoppered mouth runs down into a trough of water and up into an upturned test tube with bubbles in it, labelled \"ethene\".",
+  "questionRef": "2012 OL Q1"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's glassware: a pipette with a bulb printed \"25\", labelled \"A\", with a round filler on its top labelled \"C\"; and beside it a burette with a tap, filled about half way, labelled \"B\".",
+  "questionRef": "2012 OL Q2"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a thermometer standing in a polystyrene cup with a lid, the cup holding a liquid; arrows from the labels \"thermometer\", \"cover\", \"polystyrene cup\" and \"reaction mixture\".",
+  "questionRef": "2012 OL Q3"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q3a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q3(a): \"In an experiment to measure the heat of reaction (ΔH) for the reaction between hydrochloric acid (HCl) and sodium hydroxide (NaOH), 100 cm³ of 2M HCl were added to 100 cm³ of 2M NaOH in the apparatus shown in the diagram. The rise in temperature was noted and the heat produced was found to be 11.4 kJ. The equation for the reaction is:\", with \"heat of reaction\" underlined, then \"HCl + NaOH → NaCl + H₂O\" in bold, then \"Explain the underlined term.\"",
+  "questionRef": "2012 OL Q3(a)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q3e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's hazard symbol in a square frame: two test tubes pouring drops of liquid, one onto a flat surface and one onto a hand.",
+  "questionRef": "2012 OL Q3(e)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's drawing of an atom: a dot at the centre, labelled \"nucleus\", inside two circles around it; two dots on the inner circle and five on the outer; lines from both circles to the label \"shells\".",
+  "questionRef": "2012 OL Q4(b)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's drawing: a burette with a tap, a dotted stream falling from its tip into a beaker, an arrow from the label \"stream of water\" pointing at it; beside the stream a thick black rod set at a slant, an arrow from the label \"charged rod\" pointing at it.",
+  "questionRef": "2012 OL Q4(g)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q4k-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two black-and-white photographs side by side, head and shoulders: on the left an older, balding man with a moustache, in a suit and tie; on the right a younger man with dark hair, in a jacket, shirt and tie.",
+  "questionRef": "2012 OL Q4(k)B"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q5b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q5(b): \"Atoms are made up of the subatomic particles protons, neutrons and electrons.\", \"Copy the following table into your answer book and fill in the missing information.\", then a table headed \"PARTICLE\", \"RELATIVE MASS\", \"RELATIVE CHARGE\" and \"LOCATION\" with three rows: the first blank but for \"–1\" under relative charge; the second blank but for \"1\" under relative mass and \"0\" under relative charge; the third \"proton\", two blanks, then \"nucleus\".",
+  "questionRef": "2012 OL Q5(b)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q5e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph, head and shoulders, of a man with short dark hair and a moustache, in a jacket, waistcoat, collar and tie.",
+  "questionRef": "2012 OL Q5(e)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q8a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q8(a): \"Alkanes, alcohols and carboxylic acids are homologous series studied in organic chemistry.\", with \"homologous series\" in italic and underlined, then \"Explain the underlined term.\"",
+  "questionRef": "2012 OL Q8(a)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q10a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a stoppered conical flask holding a liquid labelled \"X\" over a dark layer labelled \"MnO₂\"; a delivery tube from its stopper runs down into a trough labelled \"water\" and up into an upturned graduated cylinder labelled \"oxygen\".",
+  "questionRef": "2012 OL Q10(a)(i)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q10a-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q10(a)(ii): \"The volume of oxygen liberated from liquid X in the presence of manganese(IV) oxide (MnO₂) as catalyst was measured at one-minute intervals using the apparatus shown in the diagram. The results obtained are shown in the following table.\", X and MnO₂ in bold, then the table: \"Time (min)\" 0, 1, 2, 3, 4, 5, 6, 7 over \"Volume of oxygen (cm³)\" 0, 36, 54, 64, 69, 71, 72, 72, then \"(ii) Plot, on graph paper, a graph of volume (y-axis) versus time (x-axis).\"",
+  "questionRef": "2012 OL Q10(a)(ii)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q10a-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q10(a)(iii): \"The volume of oxygen liberated from liquid X in the presence of manganese(IV) oxide (MnO₂) as catalyst was measured at one-minute intervals using the apparatus shown in the diagram. The results obtained are shown in the following table.\", X and MnO₂ in bold, then the table: \"Time (min)\" 0, 1, 2, 3, 4, 5, 6, 7 over \"Volume of oxygen (cm³)\" 0, 36, 54, 64, 69, 71, 72, 72, then \"(iii) From your graph estimate the volume of gas liberated after 2.5 minutes.\"",
+  "questionRef": "2012 OL Q10(a)(iii)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q10c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q10(c): \"The following scientists all played a part in the development of our knowledge of elements.\", the names \"Boyle\", \"Mendeleev\", \"Moseley\", \"The Greeks\" and \"Davy\" in bold, \"Write in your answer book the name corresponding to each of the numbers from 1 to 5 in the statements below.\", then \"It was thought by 1 that matter was made up of four elements: earth, air, fire and water. In the 17th century 2 defined an element as a simple substance that cannot be split into simpler substances. Early in the 19th century the elements, sodium and potassium, were isolated by 3 . Later in the 19th century the known elements were arranged in a table by 4 . In the 20th century the table of the elements was modernised as a result of the discovery of atomic number by 5 .\", each number printed in bold on an underlined blank.",
+  "questionRef": "2012 OL Q10(c)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a conical flask labelled \"boiling water\" with a tall straight tube through its stopper, labelled \"Y\"; a tube from the flask leads to a pear-shaped flask holding a solid, from which a condenser labelled \"X\" slopes down to the right to a small beaker; two rubber tubes hang from the condenser's side arms, labelled \"tube B\" and \"tube A\".",
+  "questionRef": "2012 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q11b-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation in bold: 2SO₂ + O₂ ⇌ 2SO₃, then ΔH = – 196 kJ, the H in italic.",
+  "questionRef": "2012 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q11b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q11(b)(ii): \"A stage in the manufacture of sulfuric acid involves the following equilibrium:\", then the equation 2SO₂ + O₂ ⇌ 2SO₃ ΔH = – 196 kJ in bold, then \"(ii) Write the equilibrium constant (Kc) expression for the above reaction.\", the K in bold italic and its c a subscript.",
+  "questionRef": "2012 OL Q11(b)(ii)"
+ },
+ {
+  "file": "chemistry-2012-OL-paper-q11c-b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2012 OL Q11(c)B(i): \"Copy the table below into your answer book and use it to compare the properties of metals and non-metals under the headings given.\", then a table headed \"PROPERTY\", \"METALS\" and \"NON-METALS\", its rows \"Hardness\", \"Lustre\", \"Conduction of heat\", \"Conduction of electricity\" and \"Ductility\", the metals and non-metals columns blank.",
+  "questionRef": "2012 OL Q11(c)B(i)"
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q1d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q1(d), as the State Examinations Commission set it: a drawing of the apparatus: a dropping funnel in the stopper of a conical flask, an arrow from the label \"water\" pointing at the funnel's liquid and one from the label \"CaC₂\" at the solid on the flask's floor; a delivery tube from the flask's side arm runs down into a trough and up into an upturned test tube with bubbles in it, an arrow from a second label \"water\" pointing at the trough's water.",
+  "questionRef": "2012 OL Q1(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q2e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q2(e), as the State Examinations Commission set it: a table of nine indicators and their colour changes: \"methyl orange\", \"orange (yellow) to red (accept pink, peach)\"; \"methyl red\", \"yellow to red (accept pink)\"; \"phenolphthalein\", \"pink (purple, violet, red) to colourless\"; \"bromothymol blue\", \"blue to yellow\"; \"cresol purple\", \"purple (pink, violet) to yellow\"; \"neutral red\", \"yellow-brown (yellow, brown) to red\"; \"phenol red\", \"red to yellow\"; \"bromothymol blue\", \"blue to yellow\"; \"thymolphthalein\", \"blue to colourless\".",
+  "questionRef": "2012 OL Q2(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q2f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q2(f), as the State Examinations Commission set it: in a box, \"25 × M (3) = 20 × 0.08 (3)\", the M with \"NaOH\" as its subscript; then \"M = 0.064 (3)\", the M again subscripted \"NaOH\".",
+  "questionRef": "2012 OL Q2(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q3d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q3(d)(i), as the State Examinations Commission set it: in a box, the fraction 100 over 1000, times 2, or the fraction 2 over 10 (6); then \"= 0.2\" (3).",
+  "questionRef": "2012 OL Q3(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q3(d)(ii), as the State Examinations Commission set it: in a box, the fraction 11.4 over 0.2, or \"11.4 × 5\" (3); then \"= 57\" (3).",
+  "questionRef": "2012 OL Q3(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q4h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q4(h), as the State Examinations Commission set it: a drawing of the ammonia molecule: an N at the top bonded to three H atoms, one bond drawn hashed, one as a solid wedge and one as a plain line.",
+  "questionRef": "2012 OL Q4(h)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q5(b), as the State Examinations Commission set it: the completed table headed \"PARTICLE\", \"RELATIVE MASS\", \"RELATIVE CHARGE\" and \"LOCATION\": \"electron (3)\", \"0.0005 to 0.00056* (3)\", \"–1\", \"cloud / shell(s) / outside nucleus (3)\"; \"neutron (3)\", \"1\", \"0\", \"nucleus (3)\"; \"proton\", \"1 (3)\", \"1 / +1 / + (3)\", \"nucleus\"; then beneath it \"* 1/2000 to 1/1800 [Accept “negligible”]\", each fraction set with a raised numerator and a lowered denominator.",
+  "questionRef": "2012 OL Q5(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q6c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q6(c)(ii), as the State Examinations Commission set it: WRITE: \"CH₃CH₂CH₂CH₂CH₂CH₂CH₃ / CH₃(CH₂)₅CH₃ /\"; then a chain of seven Cs joined by single bonds, a bond drawn up and down from each, \"/\", and a zigzag line drawing; then \"CH₃CCH₂CHCH₃\" with CH₃ groups drawn bonded above and below its second carbon and above its fourth, \"/\", a branched line drawing, and \"//\".",
+  "questionRef": "2012 OL Q6(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q6d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q6(d)(i), as the State Examinations Commission set it: DRAW: three drawings separated by solidi: a hexagon with a circle inside it, then two hexagons each with three of its sides doubled by a line inside.",
+  "questionRef": "2012 OL Q6(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q7a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q7(a)(i), as the State Examinations Commission set it: in a box of two columns: \"pOH = – log 0.01 / = 2 (3)\" over \"pH = 14 – 2 / = 12 (3)\"; and \"[H⁺] = 10⁻¹⁴ ÷ 0.01 = 10⁻¹² (3)\" over \"pH = – log 10⁻¹² = 12 (3)\".",
+  "questionRef": "2012 OL Q7(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q8b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q8(b), as the State Examinations Commission set it: a box headed \"Examples\": \"alkane: propane // CH₃CH₂CH₃ /\", a chain of three Cs joined by single bonds with a bond drawn up and down from each, \"/\", and a line drawing; \"alcohol: ethanol // C₂H₅OH / CH₃CH₂OH /\", a displayed formula of two Cs ending in OH, and a line drawing ending in \"OH\"; \"acids: ethanoic acid // CH₃COOH /\", a displayed formula whose second C carries an O and an OH, \"/\", and a line drawing with an O and an OH.",
+  "questionRef": "2012 OL Q8(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q8c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q8(c), as the State Examinations Commission set it: a box headed \"Uses:\": \"methane: fuel / cooking / heating / electricity generation / hydrogen prod.\", \"ethane: prod. of ethene / prod. of chloroethene (vinyl chloride) / prod. of ethanoic (acetic) acid\", \"propane: fuel / LPG / cooking / heating\", \"butane: fuel / LPG / cooking / heating / cigarette lighters //\", \"methanol: fuel / solvent / denaturing agent (methylated spirit) / antifreeze / camping stoves / fuel cells\", \"ethanol: drinks / fuel / solvent / antiseptic / disinfectant / preservative / spirit lamps / production of esters (halides) //\", \"methanoic acid: preservative / silage-making / tanning / dyeing / cleaning fluid\", \"ethanoic acid: preserving / pickling / flavouring / cellulose acetate\", then \"[The uses must match the two compounds named in (b)]\" and \"(2 × 3)\".",
+  "questionRef": "2012 OL Q8(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q10a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q10(a), as the State Examinations Commission set it: a hand-drawn graph on squared paper, printed turned on its side and titled \"Graph: Question 10 (a)\": volume in cm cubed, 0 to 80, against \"Time (minutes)\", 0 to 7; eight points joined by a curve that rises steeply and levels off near 72; dashed lines from 2.5 on the time axis up to the curve and across to 60 on the volume axis, and a box \"Volume at 2.5 minutes = 60 cc\".",
+  "questionRef": "2012 OL Q10(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q10b-percentage.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q10(b), as the State Examinations Commission set it: in a box, the fraction 12 over 180 (3) // × 100 (3) / = 6.6 to 6.7 (3).",
+  "questionRef": "2012 OL Q10(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q10b-moles.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q10(b), as the State Examinations Commission set it: in a box, the fraction 9 over 180 (3) = 0.05 (3).",
+  "questionRef": "2012 OL Q10(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q11b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q11(b)(ii), as the State Examinations Commission set it: the expression [SO₃]² over [SO₂]²[O₂], set as a fraction.",
+  "questionRef": "2012 OL Q11(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2012-OL-scheme-q11c-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2012 OL Q11(c)B(i), as the State Examinations Commission set it: the completed table headed \"PROPERTY\", \"METALS\" and \"NON-METALS\": \"Hardness\", \"hard /\", \"soft //\"; \"Lustre\", \"yes /\", \"no //\"; \"Conduction of heat\", \"yes /\", \"no //\"; \"Conduction of electricity\", \"yes /\", \"no //\"; \"Ductility\", \"yes /\", \"no //\".",
+  "questionRef": "2012 OL Q11(c)B(i)",
+  "solution": true
  }
 ]

@@ -1155,6 +1155,23 @@ class Printed:
                     and abs(l.x0 - 56.6) < 1 and abs(l.y0 - 34.3) < 1]
             assert len(head) == 1, head
             head[0].text = 'QUESTION 10'
+        if (year, lvl) == (2012, 'ol'):
+            # 2012 OL scheme PDF page 8 prints Question 4's answers under "SECTION B"
+            # (x 262, y 91.5) and the rubric "Eight items to be answered. ..." with no
+            # "QUESTION 4" head; page 9 opens "QUESTION 5". Unread, Q4's items (a)-(k)
+            # fell into Q3(e)-(k) and, "QUESTION 5" then not being the next number,
+            # every later question with them. Section B opens with Question 4 on the
+            # paper (page 4, "4. Answer eight of the following items"): read as its head.
+            head = [l for l in self.scheme_lines if l.page == 8 and l.text == 'SECTION B'
+                    and abs(l.x0 - 262.0) < 1 and abs(l.y0 - 91.5) < 1]
+            assert len(head) == 1, head
+            head[0].text = 'QUESTION 4'
+            # Its running footer "Chemistry ATGL 2012 Marking Scheme Page 3of 15" (one run,
+            # PDF pages 3-17, x 85.4, y 764.3) is not one FOOTER reads, and in a labelled
+            # scheme every line is answer: it was filed as an answer of each page's last part.
+            foot = re.compile(r'^Chemistry ATGL 2012 Marking Scheme Page \d{1,2}of 15$')
+            assert sum(1 for l in self.scheme_lines if foot.match(l.text) and l.y0 > 760) == 15
+            self.scheme_lines = [l for l in self.scheme_lines if not (l.y0 > 760 and foot.match(l.text))]
         if (year, lvl) == (2014, 'hl'):
             # 2014 HL scheme PDF pages 7 and 10 head Questions 2 and 4 "QUSESTION 2"
             # and "QUSESTION 4" (x 49.7, y 48.6), an SEC misprint; every other head of

@@ -268,6 +268,10 @@ MASKS = {
     # water." (paper page 4, x 404-423, y 303-312; dark pixels 0-20 x 232-240), whited out; the
     # flask's base and B's pointer start at column 52 there.
     'chemistry-2013-OL-paper-q4f.png': [(0, 230, 24, 241)],
+    # 2012 OL scheme Q1(d): the drawing's dropping funnel stands beside the end of the answer line
+    # "dropping funnel and buchner //" (scheme page 5, x 192-333, y 450-463; dark pixels 0-52 x
+    # 59-73 of the crop), whited out; the drawing's own pixels start at column 91 in those rows.
+    'chemistry-2012-OL-scheme-q1d.png': [(0, 55, 58, 77)],
 }
 
 

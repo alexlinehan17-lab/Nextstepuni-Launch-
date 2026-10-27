@@ -1,6 +1,332 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2012 OL": {
+   "chem-2012-ol-q1-a": {
+    "status": "added",
+    "after": "7b1d132574c0cd6b"
+   },
+   "chem-2012-ol-q1-b": {
+    "status": "added",
+    "after": "eb1995cad3d749e6"
+   },
+   "chem-2012-ol-q1-c": {
+    "status": "added",
+    "after": "35f4e978e06d3436"
+   },
+   "chem-2012-ol-q1-d": {
+    "status": "added",
+    "after": "5f39cfe1460c8f35"
+   },
+   "chem-2012-ol-q1-e": {
+    "status": "added",
+    "after": "538781c25730fa4d"
+   },
+   "chem-2012-ol-q10-a-i": {
+    "status": "added",
+    "after": "2b861d8dddcd0804"
+   },
+   "chem-2012-ol-q10-a-ii": {
+    "status": "added",
+    "after": "1e9485f23b5bf7f5"
+   },
+   "chem-2012-ol-q10-a-iii": {
+    "status": "added",
+    "after": "7886aad460e546eb"
+   },
+   "chem-2012-ol-q10-b": {
+    "status": "added",
+    "after": "e0f75096447a6dc4"
+   },
+   "chem-2012-ol-q10-b-moles-of-glucose": {
+    "status": "added",
+    "after": "c9afc9c12f6d0191"
+   },
+   "chem-2012-ol-q10-b-mr-of-glucose": {
+    "status": "added",
+    "after": "76cc4cba7c1977d7"
+   },
+   "chem-2012-ol-q10-b-percentage-of-hydrogen": {
+    "status": "added",
+    "after": "38f6fa12c272d595"
+   },
+   "chem-2012-ol-q10-c": {
+    "status": "added",
+    "after": "bd0f5221fda2b480"
+   },
+   "chem-2012-ol-q11-a-i": {
+    "status": "added",
+    "after": "91384b63434076f2"
+   },
+   "chem-2012-ol-q11-a-ii": {
+    "status": "added",
+    "after": "06ae2f524e93e710"
+   },
+   "chem-2012-ol-q11-a-iii": {
+    "status": "added",
+    "after": "994aec94f0ca63db"
+   },
+   "chem-2012-ol-q11-a-iv": {
+    "status": "added",
+    "after": "677a620960d06aa3"
+   },
+   "chem-2012-ol-q11-a-v": {
+    "status": "added",
+    "after": "fd8f58f658421fe4"
+   },
+   "chem-2012-ol-q11-b-i": {
+    "status": "added",
+    "after": "36ce45d87df18fe7"
+   },
+   "chem-2012-ol-q11-b-ii": {
+    "status": "added",
+    "after": "b33702183eca345e"
+   },
+   "chem-2012-ol-q11-b-iii": {
+    "status": "added",
+    "after": "17b3e7ba6b59ca43"
+   },
+   "chem-2012-ol-q11-b-iii-explain": {
+    "status": "added",
+    "after": "dd54ce30bd820b74"
+   },
+   "chem-2012-ol-q11-c-a-i": {
+    "status": "added",
+    "after": "80aa57efcb05a829"
+   },
+   "chem-2012-ol-q11-c-a-ii": {
+    "status": "added",
+    "after": "b7896137dae5f470"
+   },
+   "chem-2012-ol-q11-c-a-iii": {
+    "status": "added",
+    "after": "3e1d30de277c438a"
+   },
+   "chem-2012-ol-q11-c-a-iv": {
+    "status": "added",
+    "after": "8f81c51fabc3199e"
+   },
+   "chem-2012-ol-q11-c-b-i": {
+    "status": "added",
+    "after": "b7d70089f0b6f865"
+   },
+   "chem-2012-ol-q11-c-b-ii": {
+    "status": "added",
+    "after": "b332b18a35c34526"
+   },
+   "chem-2012-ol-q2-a": {
+    "status": "added",
+    "after": "23e6c8e12d8afeae"
+   },
+   "chem-2012-ol-q2-a-why-c": {
+    "status": "added",
+    "after": "df7a3a214b7cb868"
+   },
+   "chem-2012-ol-q2-b": {
+    "status": "added",
+    "after": "15bb42f6a2706542"
+   },
+   "chem-2012-ol-q2-c": {
+    "status": "added",
+    "after": "d8bb081818d70f50"
+   },
+   "chem-2012-ol-q2-d": {
+    "status": "added",
+    "after": "dbfcf02ce00a48c6"
+   },
+   "chem-2012-ol-q2-e": {
+    "status": "added",
+    "after": "08d39e6dc4dfc0cb"
+   },
+   "chem-2012-ol-q2-f": {
+    "status": "added",
+    "after": "28d5a5caf68c02d6"
+   },
+   "chem-2012-ol-q3-a": {
+    "status": "added",
+    "after": "8f8457ebb5b058c4"
+   },
+   "chem-2012-ol-q3-b": {
+    "status": "added",
+    "after": "2e6d7c1aaf975df6"
+   },
+   "chem-2012-ol-q3-c": {
+    "status": "added",
+    "after": "bf954aade23ee330"
+   },
+   "chem-2012-ol-q3-d-heat-of-reaction": {
+    "status": "added",
+    "after": "d8bc028cb61f3875"
+   },
+   "chem-2012-ol-q3-d-i": {
+    "status": "added",
+    "after": "5c977628c698cf57"
+   },
+   "chem-2012-ol-q3-d-ii": {
+    "status": "added",
+    "after": "0fbf053d00d4703d"
+   },
+   "chem-2012-ol-q3-e": {
+    "status": "added",
+    "after": "ca7afedae7b64260"
+   },
+   "chem-2012-ol-q4-a": {
+    "status": "added",
+    "after": "c335620a8e1276ca"
+   },
+   "chem-2012-ol-q4-b": {
+    "status": "added",
+    "after": "2350859a3b3d3aa5"
+   },
+   "chem-2012-ol-q4-c": {
+    "status": "added",
+    "after": "c53415f6edf38b59"
+   },
+   "chem-2012-ol-q4-d": {
+    "status": "added",
+    "after": "74481f51d081e4df"
+   },
+   "chem-2012-ol-q4-e": {
+    "status": "added",
+    "after": "10545e660d041bac"
+   },
+   "chem-2012-ol-q4-f": {
+    "status": "added",
+    "after": "ff237700ecbec7a4"
+   },
+   "chem-2012-ol-q4-g": {
+    "status": "added",
+    "after": "41b6a75ffdf4831c"
+   },
+   "chem-2012-ol-q4-h": {
+    "status": "added",
+    "after": "acf15ea3f442276c"
+   },
+   "chem-2012-ol-q4-i": {
+    "status": "added",
+    "after": "b0cb8aba3f12b269"
+   },
+   "chem-2012-ol-q4-j": {
+    "status": "added",
+    "after": "406c1dcdf0ea7793"
+   },
+   "chem-2012-ol-q4-k-a": {
+    "status": "added",
+    "after": "76d7773e1126e4f5"
+   },
+   "chem-2012-ol-q4-k-b": {
+    "status": "added",
+    "after": "6ab88e769a1e6d9e"
+   },
+   "chem-2012-ol-q5-a": {
+    "status": "added",
+    "after": "a972c43f139e311b"
+   },
+   "chem-2012-ol-q5-b": {
+    "status": "added",
+    "after": "5d18a19b04d436b5"
+   },
+   "chem-2012-ol-q5-c": {
+    "status": "added",
+    "after": "31aa55742ce82f7e"
+   },
+   "chem-2012-ol-q5-d": {
+    "status": "added",
+    "after": "3adb70e1146a65ec"
+   },
+   "chem-2012-ol-q5-e": {
+    "status": "added",
+    "after": "ede7048350098cb9"
+   },
+   "chem-2012-ol-q6-a": {
+    "status": "added",
+    "after": "8bb8ef91c419c4d3"
+   },
+   "chem-2012-ol-q6-b": {
+    "status": "added",
+    "after": "345769bcdf7bfc6e"
+   },
+   "chem-2012-ol-q6-c-i-iii": {
+    "status": "added",
+    "after": "fdc39ee4b12cb79e"
+   },
+   "chem-2012-ol-q6-d-i-ii": {
+    "status": "added",
+    "after": "b10292c1f3704f9e"
+   },
+   "chem-2012-ol-q7-a": {
+    "status": "added",
+    "after": "60ad077d026ca3bd"
+   },
+   "chem-2012-ol-q7-a-i": {
+    "status": "added",
+    "after": "b4749ed5437c6ac9"
+   },
+   "chem-2012-ol-q7-a-ii": {
+    "status": "added",
+    "after": "79b854bf05938b36"
+   },
+   "chem-2012-ol-q7-b-i-ii": {
+    "status": "added",
+    "after": "897783db72421d8f"
+   },
+   "chem-2012-ol-q7-c": {
+    "status": "added",
+    "after": "0ab204de99406327"
+   },
+   "chem-2012-ol-q7-d-i": {
+    "status": "added",
+    "after": "07156d08d01fd486"
+   },
+   "chem-2012-ol-q7-d-ii": {
+    "status": "added",
+    "after": "3f5bd22d99c5101a"
+   },
+   "chem-2012-ol-q7-d-iii": {
+    "status": "added",
+    "after": "33c931d651e5cbed"
+   },
+   "chem-2012-ol-q8-a": {
+    "status": "added",
+    "after": "dc8322455ccfeb48"
+   },
+   "chem-2012-ol-q8-b": {
+    "status": "added",
+    "after": "deabf1805fea06ab"
+   },
+   "chem-2012-ol-q8-c": {
+    "status": "added",
+    "after": "bcefc9ac1a9da485"
+   },
+   "chem-2012-ol-q8-d": {
+    "status": "added",
+    "after": "3dfa7a579870bb85"
+   },
+   "chem-2012-ol-q8-e": {
+    "status": "added",
+    "after": "9abddb015e096302"
+   },
+   "chem-2012-ol-q9-a": {
+    "status": "added",
+    "after": "1f953e91a2fa4b83"
+   },
+   "chem-2012-ol-q9-b": {
+    "status": "added",
+    "after": "cf974883f400b572"
+   },
+   "chem-2012-ol-q9-c": {
+    "status": "added",
+    "after": "c318cc2626daa060"
+   },
+   "chem-2012-ol-q9-d": {
+    "status": "added",
+    "after": "d5c34743679de64e"
+   },
+   "chem-2012-ol-q9-e": {
+    "status": "added",
+    "after": "a6edfebc1f864e43"
+   }
+  },
   "2013 OL": {
    "chem-2013-ol-q1-a": {
     "status": "added",

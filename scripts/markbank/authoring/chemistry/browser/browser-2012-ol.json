@@ -1,0 +1,20 @@
+[
+ {"id": "chem-2012-ol-q1-a", "ask": "Identify: (i) liquid X, (ii) solid Y.", "answer": "aluminium oxide / alumina / Al₂O₃", "figure": true},
+ {"id": "chem-2012-ol-q1-d", "ask": "Draw a labelled diagram for the preparation and collection of ethyne gas", "answer": "water in funnel", "solution": true},
+ {"id": "chem-2012-ol-q2-e", "ask": "Name a suitable indicator for this titration", "answer": "phenolphthalein", "solution": true},
+ {"id": "chem-2012-ol-q2-f", "ask": "Calculate the concentration of the sodium hydroxide solution", "answer": "0.064 moles per litre", "solution": true},
+ {"id": "chem-2012-ol-q3-a", "ask": "", "answer": "react(s) completely / neutralise(s) completely", "figure": true},
+ {"id": "chem-2012-ol-q3-d-heat-of-reaction", "ask": "What is the heat of reaction (ΔH) for this reaction?", "answer": "– 57 kJ mol⁻¹", "figure": true},
+ {"id": "chem-2012-ol-q4-k-b", "ask": "Give their surname.", "answer": "Bragg", "figure": true},
+ {"id": "chem-2012-ol-q5-b", "ask": "", "answer": "cloud / shell(s) / outside nucleus", "figure": true, "solution": true},
+ {"id": "chem-2012-ol-q6-c-i-iii", "ask": "Write the structural formula of either one of the reference hydrocarbons.", "answer": "2,2,4-trimethylpentane: 100", "solution": true},
+ {"id": "chem-2012-ol-q6-d-i-ii", "ask": "What health concern is associated with the presence of benzene in fuels?", "answer": "carcinogenic", "solution": true},
+ {"id": "chem-2012-ol-q7-a-i", "ask": "a 0.01 M sodium hydroxide (NaOH) solution", "answer": "pOH = – log 0.01 / = 2", "solution": true},
+ {"id": "chem-2012-ol-q8-a", "ask": "", "answer": "same functional group", "figure": true},
+ {"id": "chem-2012-ol-q10-a-ii", "ask": "", "answer": "six points correctly plotted", "figure": true, "solution": true},
+ {"id": "chem-2012-ol-q10-b-moles-of-glucose", "ask": "How many moles are there in 9 grams of glucose?", "answer": "0.05 mol", "solution": true},
+ {"id": "chem-2012-ol-q10-c", "ask": "", "answer": "4: Mendeleev", "figure": true},
+ {"id": "chem-2012-ol-q11-b-ii", "ask": "", "answer": "notation its text cannot carry", "figure": true, "solution": true},
+ {"id": "chem-2012-ol-q11-b-iii", "ask": "State Le Châtelier’s principle.", "answer": "it tends to minimise (oppose, relieve) the disturbance (stress)", "figure": true},
+ {"id": "chem-2012-ol-q11-c-b-i", "ask": "", "answer": "Conduction of heat yes / no", "figure": true, "solution": true}
+]
