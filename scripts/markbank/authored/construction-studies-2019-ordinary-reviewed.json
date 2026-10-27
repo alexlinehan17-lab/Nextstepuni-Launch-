@@ -4347,6 +4347,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -4626,6 +4656,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -5994,12 +6054,15 @@
     {
       "cardId": "cons-2019-ol-q9-b",
       "priorSha256": "95e9b7ad1ccf3233da0f4ccfa706b5b94a7854c8c52cb24ff3f076c00626d595",
-      "correctedSha256": "229b7b4c515ef4b7c4ea790fc738b5e7bfbb8cb116370acbeb35bf82508d9367",
+      "correctedSha256": "1727a60b0c0991d3096ae16fc42ba24691f83e5d3293dfbc565950fd2b985ecf",
       "priorTotalMarks": 12,
       "correctedTotalMarks": 20,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-3-5",
-      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketches band (8/6/4) to the modification notes and sketches (6 + 6): 12 → 20."
+      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketches band (8/6/4) to the modification notes and sketches (6 + 6): 12 → 20.",
+      "supersededSha256": [
+        "229b7b4c515ef4b7c4ea790fc738b5e7bfbb8cb116370acbeb35bf82508d9367"
+      ]
     },
     {
       "cardId": "cons-2019-ol-q9-c",
@@ -6284,5 +6347,13 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2019-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2019-ordinary/prior-2019-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2019-ordinary/prior-2019-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2019-ol-q9-complete",
+      "priorSha256": "af804f87b22021e1d3a9110fcf64b12eec061acaa92a8a6a2096a2b6dd7f9de6",
+      "correctedSha256": "4a25ab992938cddc855a291f99d3b697eb8baeac9bc17e2121ddc7e5aef6d345",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    }
+  ]
 }

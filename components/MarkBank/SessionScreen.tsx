@@ -54,6 +54,7 @@ import {
   type IrishCriterion,
   type LabelKey,
   type MarkRow,
+  type MarkRowPart,
   type PclmCapRule,
   type PclmCriterionId,
   type PclmRubric,
@@ -162,6 +163,16 @@ export const criterionMarksClaimed = (row: MarkRow, claim: RowClaim) => {
   if (claim === 'yes') return row.marks ?? 0;
   return typeof claim === 'number' && row.permittedMarks.includes(claim) ? claim : 0;
 };
+
+/** A part's claim lives under its row's id, so a row's claims travel together. */
+export const partClaimId = (rowId: string, partId: string) => `${rowId}:${partId}`;
+const partMarksClaimed = (part: MarkRowPart, claim: RowClaim) => {
+  if (claim === 'yes') return part.marks;
+  return typeof claim === 'number' && part.permittedMarks.includes(claim) ? claim : 0;
+};
+/** A row priced in named components scores what was placed on each part, never above the row. */
+export const partsMarksClaimed = (row: MarkRow, id: string, claims: Record<string, RowClaim>) =>
+  Math.min(row.marks ?? 0, (row.parts ?? []).reduce((sum, part) => sum + partMarksClaimed(part, claims[partClaimId(id, part.id)] ?? 'no'), 0));
 
 export interface SessionCardResult {
   cardId: string;
@@ -275,6 +286,7 @@ export function marksClaimed(
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + claimedMarks(r.group, chosen);
     }
+    if (r.parts) return n + partsMarksClaimed(r, id, claims);
     if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no');
     return isClaimed(claims, id) ? n + rowMarks(r) : n;
   }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') : 0);
@@ -574,10 +586,50 @@ const MarkRowView: React.FC<{
   /** Options already claimed in a SIBLING menu on this card. */
   takenElsewhere?: ReadonlySet<string>;
   wholeResponse?: boolean;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse }) => {
+  /** The claims on a row's parts, by part id; only a row with parts has them. */
+  partClaims?: Record<string, RowClaim>;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
+
+  if (row.permittedMarks && row.parts) {
+    // "Design feature 1 (2 for point, 4 for discussion)": each named component
+    // is placed on its own marks and the row scores their sum.
+    const placed = row.parts.reduce((sum, part) => sum + partMarksClaimed(part, partClaims?.[part.id] ?? 'no'), 0);
+    return (
+      <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+          <span style={{ font: `700 10.5px/1.7 ${MONO}`, color: placed > 0 ? SUCCESS_TEXT : MUTED, whiteSpace: 'nowrap' }}>{placed}m of {row.marks}m</span>
+        </div>
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
+          {row.parts.map(part => {
+            const selected = partMarksClaimed(part, partClaims?.[part.id] ?? 'no');
+            return (
+              <div key={part.id} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8 }}>
+                <span style={{ minWidth: 96, color: selected > 0 ? SUCCESS_TEXT : INK_2, font: `500 13px/1.4 ${SANS}` }}>{part.verbatim}</span>
+                <div role="group" aria-label={`Marks for ${part.verbatim} · ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                  {part.permittedMarks.map(mark => (
+                    <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
+                      aria-label={`Award ${mark} marks for ${part.verbatim} · ${row.verbatim}`}
+                      onClick={() => onClaim(partClaimId(id, part.id), mark)}
+                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? SUCCESS : MUTED_BORDER}`,
+                        background: selected === mark ? SUCCESS : 'var(--mb-paper)',
+                        color: selected === mark ? '#fff' : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
+                      {mark}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        {blocked && blockedReason ? <p>{blockedReason}</p> : null}
+      </section>
+    );
+  }
 
   if (row.permittedMarks) {
     const selected = criterionMarksClaimed(row, claim);
@@ -2256,7 +2308,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const rowClaims = useMemo(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return {};
     const out: Record<string, RowClaim> = {};
-    assessmentCard.rows.forEach((r, i) => { out[rowId(r, i)] = claimOf(rowId(r, i)); });
+    assessmentCard.rows.forEach((r, i) => {
+      out[rowId(r, i)] = claimOf(rowId(r, i));
+      for (const part of r.parts ?? []) out[partClaimId(rowId(r, i), part.id)] = claimOf(partClaimId(rowId(r, i), part.id));
+    });
     if (assessmentCard.questionBonus) out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
     return out;
   }, [assessmentCard, claimOf]);
@@ -2283,6 +2338,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         if (r.route && route && r.route !== route) return false;
         // An anyN group is partially claimable, so it is never simply "unclaimed".
         if (r.kind === 'anyN') return false;
+        if (r.parts) return partsMarksClaimed(r, rowId(r, i), rowClaims) === 0;
         return (rowClaims[rowId(r, i)] ?? 'no') === 'no';
       })
       // The scheme's own wording, minus any "Label — " prefix the card carries.
@@ -3006,6 +3062,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             reduced={reduced}
                             picks={picks[id] ?? []}
                             takenElsewhere={takenByRow[id]}
+                            partClaims={row.parts ? Object.fromEntries(row.parts.map(part => [part.id, rowClaims[partClaimId(id, part.id)] ?? 'no'])) : undefined}
                             onClaim={setClaim}
                             onPick={togglePick}
                           />

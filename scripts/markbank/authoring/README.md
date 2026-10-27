@@ -163,6 +163,12 @@ subject-specific generators.
   authored `history.json` in place (`--write`); a price that is the whole
   with partials after it becomes one row with printed steps, "Any TWO: …
   (3M + 3M)" an any-two group, and a "5M + 5M Max =" fragment the row's note.
+  Construction Studies criterion rows priced in named components ("Design
+  feature 1 (2 for point, 4 for discussion)", "Scale - 4 marks Drafting - 4
+  marks") carry them as `parts` of the row (`construction_rows.py`): one row,
+  several placements, so the five-rows-per-task cap and the yearly
+  validators' pinned row lists stand; the pass records every changed card in
+  its year's review ledger and changes nothing on a second run.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.
