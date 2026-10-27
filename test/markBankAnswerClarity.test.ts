@@ -38,10 +38,12 @@ import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-
 import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
 import { REVIEWED_CARDS as PE_CARDS } from '../components/MarkBank/cards/physical-education/factory';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as CONSTRUCTION_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
+import { CARDS as CONSTRUCTION_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
 import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
-import { isPointCard, isRubricCard, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
+import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
 
 type Guided = { rubric?: { answerGuide?: string[]; schemeGuidance?: string[]; criteria?: Array<{ guidance?: string[]; permittedMarks?: number[]; guidanceKind?: string; rowMarks?: number[] }> }; criteria?: Array<{ guidance?: string[]; guidanceKind?: string; rowMarks?: number[] }> };
@@ -440,6 +442,39 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options)).toEqual([['Liverpool', 'Manchester', 'Birmingham', 'Leeds']]);
     expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks])).toEqual([['Clonmel prison', 6, [0, 3, 6]]]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+  });
+
+  it('Construction: a criterion row priced in named components carries them as parts the student places separately', () => {
+    const cards = [...CONSTRUCTION_HIGHER, ...CONSTRUCTION_ORDINARY].filter(isPointCard);
+    const rows = cards.flatMap(card => card.rows.map(row => ({ card, row })));
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    // "Design feature 1 (2 for point, 4 for discussion)" offered one strip for six marks (construction_rows.py).
+    const priced = /\b(\d+)\s*(?:marks?\s*)?for\s+[a-z]+\s*,\s*(\d+)\s*(?:marks?\s*)?for\s+[a-z]+|\(\s*[a-z]+\s+\d+\s*marks?\s*,\s*[a-z]+\s+\d+\s*marks?\s*\)|^Scale\s*[-–:]?\s*\d+\s*marks?.*Drafting/i;
+    const unsplit = rows.filter(({ row }) => row.kind === 'criterion' && priced.test(row.verbatim) && !row.parts);
+    // 2010 HL Q3(a) prices three details at note 4 + sketch 4 each, 24 in all: no two-part split adds up to the row.
+    expect(unsplit.map(({ card, row }) => `${card.id}/${row.id}: ${row.verbatim}`)).toEqual([
+      'cons-2010-hl-q3-a/internal: Internal Insulation System (note 4 marks, sketch 4 marks)',
+      'cons-2010-hl-q3-a/external: External Insulation System (note 4 marks, sketch 4 marks)',
+      'cons-2010-hl-q3-complete/a-internal: Internal Insulation System (note 4 marks, sketch 4 marks)',
+      'cons-2010-hl-q3-complete/a-external: External Insulation System (note 4 marks, sketch 4 marks)',
+    ]);
+    const withParts = rows.filter(({ row }) => row.parts);
+    expect(withParts).toHaveLength(664);
+    for (const { card, row } of withParts) {
+      expect(rowPartsReconcile(row), `${card.id}/${row.id}`).toBe(true);
+      // Every part is a word the row prints, and the row's own text, marks and steps are untouched.
+      for (const part of row.parts!) expect(normalise(row.verbatim).includes(normalise(part.verbatim)), `${card.id}/${row.id}/${part.id}`).toBe(true);
+      expect(row.permittedMarks![0]).toBe(0);
+      expect(row.permittedMarks!.at(-1)).toBe(row.marks);
+    }
+    // Complete-question cards mirror their tasks' parts under their own row ids.
+    for (const card of cards.filter(item => item.taskGroups?.length)) {
+      for (const group of card.taskGroups!) {
+        const source = cards.find(item => item.id === group.sourceCardId)!;
+        const twin = group.rowIds.map(id => card.rows.find(row => row.id === id)!);
+        expect(twin.map(row => row.parts ?? null), `${card.id} ← ${source.id}`).toEqual(source.rows.map(row => row.parts ?? null));
+      }
+    }
   });
 
 });

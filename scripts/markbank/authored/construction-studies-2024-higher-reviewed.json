@@ -123,6 +123,32 @@
               4,
               6,
               8
+            ],
+            "parts": [
+              {
+                "id": "scale",
+                "verbatim": "Scale",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "drafting",
+                "verbatim": "Drafting",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -392,6 +418,32 @@
               4,
               6,
               8
+            ],
+            "parts": [
+              {
+                "id": "scale",
+                "verbatim": "Scale",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "drafting",
+                "verbatim": "Drafting",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -821,6 +873,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -834,6 +907,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -847,6 +941,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -860,6 +975,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -873,6 +1009,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -1093,6 +1250,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1106,6 +1284,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1119,6 +1318,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1132,6 +1352,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1145,6 +1386,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -1591,6 +1853,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -1606,6 +1891,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -1830,6 +2138,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -1845,6 +2176,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -1985,6 +2339,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2001,6 +2379,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2017,6 +2419,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -2117,6 +2543,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2133,6 +2583,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2149,6 +2623,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -2413,6 +2911,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2429,6 +2951,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2445,6 +2991,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2461,6 +3031,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2477,6 +3071,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2493,6 +3111,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2983,6 +3625,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -2996,6 +3659,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -3088,6 +3772,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3101,6 +3806,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -3193,6 +3919,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3206,6 +3953,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3219,6 +3987,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3232,6 +4021,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -3462,6 +4272,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3475,6 +4306,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3488,6 +4340,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3501,6 +4374,27 @@
               1,
               2,
               3
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -3908,6 +4802,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3923,6 +4840,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -4122,6 +5062,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -4137,6 +5100,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -4345,6 +5331,32 @@
               4,
               6,
               8
+            ],
+            "parts": [
+              {
+                "id": "scale",
+                "verbatim": "Scale",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "drafting",
+                "verbatim": "Drafting",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -4614,6 +5626,32 @@
               4,
               6,
               8
+            ],
+            "parts": [
+              {
+                "id": "scale",
+                "verbatim": "Scale",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "drafting",
+                "verbatim": "Drafting",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -5001,6 +6039,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5015,6 +6075,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5029,6 +6111,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5043,6 +6147,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -5223,6 +6349,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5237,6 +6385,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5251,6 +6421,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5265,6 +6457,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -6629,6 +7843,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -6645,6 +7883,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -6830,6 +8092,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -6846,6 +8132,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -6988,6 +8298,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7008,6 +8346,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7028,6 +8394,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -7127,6 +8521,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7147,6 +8569,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7167,6 +8617,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -7266,6 +8744,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7286,6 +8792,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7306,6 +8840,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7326,6 +8888,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7346,6 +8936,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -7366,6 +8984,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "point",
+                "verbatim": "point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -8698,12 +10344,15 @@
     {
       "cardId": "cons-2024-hl-q1-a",
       "priorSha256": "83335bbe283854d74b618fd82fb65961c618d5138e5237115fb3168c14087f3c",
-      "correctedSha256": "34caf5113ae0d36c60e0b8ad6c3e5bb0d8a26d0890c301db8250f5a94d5d9e3b",
+      "correctedSha256": "7767be9141e254d5081e28b6f4d875763ed216f37727579274c9e9325309ae1d",
       "priorTotalMarks": 48,
       "correctedTotalMarks": 56,
       "priorTopicId": "cons-3-2",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Rows rebuilt to the printed table with the scale and drafting allowance (8, banded 8/6/4) it prints: 48 → 56. Wording lifted from the paper."
+      "reason": "Question wording lifted from the paper. Rows rebuilt to the printed table with the scale and drafting allowance (8, banded 8/6/4) it prints: 48 → 56. Wording lifted from the paper.",
+      "supersededSha256": [
+        "34caf5113ae0d36c60e0b8ad6c3e5bb0d8a26d0890c301db8250f5a94d5d9e3b"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q1-b",
@@ -8738,52 +10387,67 @@
     {
       "cardId": "cons-2024-hl-q3-c",
       "priorSha256": "3122907c2b98135f1dfae8ffc69ec67720446cc606bb46eeaa7595631ad507e3",
-      "correctedSha256": "11e88e20f6193578b4d636bc5e9fd34a73cd6ea9b522c4d379ed3d7dbbf7366b",
+      "correctedSha256": "734411653b9dc75ab0c64e385ec41dc3017f5298bf16b52bed78a73a7f868ca9",
       "priorTotalMarks": 10,
       "correctedTotalMarks": 10,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-1-1",
-      "reason": "Question wording lifted from the paper. Split into the two printed advantages (2 for point + 3 for discussion); tariff unchanged (10)."
+      "reason": "Question wording lifted from the paper. Split into the two printed advantages (2 for point + 3 for discussion); tariff unchanged (10).",
+      "supersededSha256": [
+        "11e88e20f6193578b4d636bc5e9fd34a73cd6ea9b522c4d379ed3d7dbbf7366b"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q4-a",
       "priorSha256": "7653c1da7241d800b8898ccf35e684da2ed49549e9af27001c129a0e5e2390b3",
-      "correctedSha256": "0ec2fe700d46793f8aa22368ead6632fdbd15b98bc53c2f43bbc1a59e4bb3eb7",
+      "correctedSha256": "c5fd4e37782556cb1e827bf47e68a51a7efef6114cad6bbbb0781d53d7934fd6",
       "priorTotalMarks": 18,
       "correctedTotalMarks": 18,
       "priorTopicId": "cons-1-2",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Split into the three printed reasons (2 for point + 4 for discussion); tariff unchanged (18)."
+      "reason": "Question wording lifted from the paper. Split into the three printed reasons (2 for point + 4 for discussion); tariff unchanged (18).",
+      "supersededSha256": [
+        "0ec2fe700d46793f8aa22368ead6632fdbd15b98bc53c2f43bbc1a59e4bb3eb7"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q4-b",
       "priorSha256": "17531006fc14c7673bb2d21787e2e675d4841e78e0c8e411205c6654d994911c",
-      "correctedSha256": "4c9b6581464e60deda19f44bbb8f11ce2f0dea8729be6a0b80f833e77af81c09",
+      "correctedSha256": "359e8af40612c7f6993e319fdd622acddc4f3ca4640ee2cc55adee172d73001e",
       "priorTotalMarks": 18,
       "correctedTotalMarks": 18,
       "priorTopicId": "cons-1-3",
       "correctedTopicId": "cons-1-3",
-      "reason": "Question wording lifted from the paper. Replaces a pool of thirteen scheme bullets from both sites with the three printed considerations, marked alike for either site; tariff unchanged (18)."
+      "reason": "Question wording lifted from the paper. Replaces a pool of thirteen scheme bullets from both sites with the three printed considerations, marked alike for either site; tariff unchanged (18).",
+      "supersededSha256": [
+        "4c9b6581464e60deda19f44bbb8f11ce2f0dea8729be6a0b80f833e77af81c09"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q5-c-advantages",
       "priorSha256": "db774ec62642af67a654f2d1e3b8b2e379c70bddda503e8a5c4a95a2e5317aec",
-      "correctedSha256": "cad51922a4ff872652184f76a793aaeb1b5415c8ac754528ca4b2454a27f2b3c",
+      "correctedSha256": "f161d94bedec600188aa10982da345647428012f4099cae27ecc64c3ddab764d",
       "priorTotalMarks": 6,
       "correctedTotalMarks": 6,
       "priorTopicId": "cons-5-3",
       "correctedTopicId": "cons-5-3",
-      "reason": "Question wording lifted from the paper. Split into the two printed advantages (1 for point + 2 for discussion); tariff unchanged (6)."
+      "reason": "Question wording lifted from the paper. Split into the two printed advantages (1 for point + 2 for discussion); tariff unchanged (6).",
+      "supersededSha256": [
+        "cad51922a4ff872652184f76a793aaeb1b5415c8ac754528ca4b2454a27f2b3c"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q5-c-disadvantages",
       "priorSha256": "05b418adea45c787bc53ad20dea18e0739313ae50e4144ea7621a37dcf5966cb",
-      "correctedSha256": "4656d8766871c85d07a42485b03a456d4bd03052276af723c39f47efadbbaec3",
+      "correctedSha256": "dc03069cb8006deb0653234a82cebd7901c7fbd8be0f17f8f2314cfb4d76d52f",
       "priorTotalMarks": 6,
       "correctedTotalMarks": 6,
       "priorTopicId": "cons-5-3",
       "correctedTopicId": "cons-5-3",
-      "reason": "Question wording lifted from the paper. Split into the two printed disadvantages (1 for point + 2 for discussion); tariff unchanged (6)."
+      "reason": "Question wording lifted from the paper. Split into the two printed disadvantages (1 for point + 2 for discussion); tariff unchanged (6).",
+      "supersededSha256": [
+        "4656d8766871c85d07a42485b03a456d4bd03052276af723c39f47efadbbaec3"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q6-a",
@@ -8808,22 +10472,28 @@
     {
       "cardId": "cons-2024-hl-q6-c",
       "priorSha256": "48ecac9a653b0cc4e21cc462d51d26893497db9be51476182c29a70715c8f52a",
-      "correctedSha256": "5e0c01cb1c10d7712ca6ecf5d80342fc798a9e8fef8cae82aea47b0604260106",
+      "correctedSha256": "65bf3b5df6d9322272356b157e6f3cb248b3bc250e0ea23cd323c7f449925618",
       "priorTotalMarks": 10,
       "correctedTotalMarks": 10,
       "priorTopicId": "cons-6-3",
       "correctedTopicId": "cons-6-3",
-      "reason": "Question wording lifted from the paper. Split into the two printed advantages (2 for point + 3 for discussion); tariff unchanged (10)."
+      "reason": "Question wording lifted from the paper. Split into the two printed advantages (2 for point + 3 for discussion); tariff unchanged (10).",
+      "supersededSha256": [
+        "5e0c01cb1c10d7712ca6ecf5d80342fc798a9e8fef8cae82aea47b0604260106"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q7-a",
       "priorSha256": "dec8f7a0aac113a26fdaa9cf70543ac6a1c31427d80d2d413fe30fab145ebbbc",
-      "correctedSha256": "095b18d14b76a863aedef4814c9e3dfc5b721d9cb459a8d7cfd783901ec08889",
+      "correctedSha256": "f3e235b3bb3fb148f0d0caa529bf829b07e5fee8306eff078cffc74147e1977a",
       "priorTotalMarks": 48,
       "correctedTotalMarks": 56,
       "priorTopicId": "cons-4-3",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Rows rebuilt to the printed table with the scale and drafting allowance (8, banded 8/6/4): 48 → 56."
+      "reason": "Question wording lifted from the paper. Rows rebuilt to the printed table with the scale and drafting allowance (8, banded 8/6/4): 48 → 56.",
+      "supersededSha256": [
+        "095b18d14b76a863aedef4814c9e3dfc5b721d9cb459a8d7cfd783901ec08889"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q7-b",
@@ -8858,12 +10528,15 @@
     {
       "cardId": "cons-2024-hl-q8-c",
       "priorSha256": "b650bfcd3c72477512508fd1d90279222f30670219bb75465fb67bb9c3001af1",
-      "correctedSha256": "ccb35cb588ea0a31da0e793119729b8e1dcce47b53c375a5f5cdf9f11e410e8a",
+      "correctedSha256": "bc5035801d51df3291a6a206e35c92c943f19a80d6ec84047b195d8c8483ec5b",
       "priorTotalMarks": 16,
       "correctedTotalMarks": 16,
       "priorTopicId": "cons-5-3",
       "correctedTopicId": "cons-5-3",
-      "reason": "Question wording lifted from the paper. Split into the two printed advantages and two disadvantages (1 for point + 3 for discussion); tariff unchanged (16)."
+      "reason": "Question wording lifted from the paper. Split into the two printed advantages and two disadvantages (1 for point + 3 for discussion); tariff unchanged (16).",
+      "supersededSha256": [
+        "ccb35cb588ea0a31da0e793119729b8e1dcce47b53c375a5f5cdf9f11e410e8a"
+      ]
     },
     {
       "cardId": "cons-2024-hl-q9-c",
@@ -8908,12 +10581,15 @@
     {
       "cardId": "cons-2024-hl-q10-c",
       "priorSha256": "ec5225848e7c4cebf6698f123f582244165e5bb3d4dde04fa24b6ae9004014cf",
-      "correctedSha256": "0bc499ccb23a7886b986ce2675f2ea22b6d0f846a6eaaa6f0c1b543acdfb624a",
+      "correctedSha256": "5b2f08a88e98649df252c48b0f39acaace8961787f0ba1fa1a5e15bb71d31cde",
       "priorTotalMarks": 12,
       "correctedTotalMarks": 12,
       "priorTopicId": "cons-1-4",
       "correctedTopicId": "cons-6-5",
-      "reason": "Question wording lifted from the paper. Split into the two printed advantages (2 for point + 4 for discussion); tariff unchanged (12); filed under passive design."
+      "reason": "Question wording lifted from the paper. Split into the two printed advantages (2 for point + 4 for discussion); tariff unchanged (12); filed under passive design.",
+      "supersededSha256": [
+        "0bc499ccb23a7886b986ce2675f2ea22b6d0f846a6eaaa6f0c1b543acdfb624a"
+      ]
     }
   ],
   "selectionLedger": {
@@ -9173,6 +10849,92 @@
       "file": "scripts/markbank/card-source-bindings.json",
       "cardId": "cons-2024-hl-q8-a",
       "reason": "The pre-audit binding attached page 6 as an official-page source and stripped the stem. The reviewed card carries its own lifted stem and Question 8 source material (pages 1 and 6), so the build-time override is retired rather than allowed to replace reviewed content."
+    }
+  ],
+  "revisions": [
+    {
+      "cardId": "cons-2024-hl-q1-complete",
+      "priorSha256": "82c50edddc0e24fed70b9228fb1a33ee85af52c4673c1b1e808676672fc5979e",
+      "correctedSha256": "4ea4fa806c6da0b8ccd34bfbea6400f9758ef1ebda5e54b485776f3fabc80ce1",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q2-c",
+      "priorSha256": "0573b3a28816a4b699fc188bd2bc6a215d044bdbe669d03d8a8c1620f694fff3",
+      "correctedSha256": "0499c5b84c2b217a65b332ded81e6bbb4c269e23a555ab8ab659d2a742c12c8d",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q2-complete",
+      "priorSha256": "d9910e6210c4de558dbca5f0098ea998f0bf4d5c38beeeaba6024462176b00ea",
+      "correctedSha256": "16b80394bee6c9ae7c30fa11a898919848b24d98db64cc353dde45050ca1d4dd",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q3-complete",
+      "priorSha256": "575d952c712af5ce5abfcefcf6961343e84fa72c623aacece00a9dc173a75419",
+      "correctedSha256": "18d4db011127bfc907a5a8d34556e8fe621d6a16ad0542fc00379d8331dbfe3a",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q4-complete",
+      "priorSha256": "49675af22dc87db754ee2909c2203c816c598ef5678ef67425a8aab4c7865d56",
+      "correctedSha256": "65cf6a7d9f91292c1f2c3483cd40160a7156a142d07c83c4664c3ac1fed958fe",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q5-c",
+      "priorSha256": "62284736750dba9bde079a7f7e26f30d02f31339d61adae087c93962dd47a1f2",
+      "correctedSha256": "8c1d9ad4499afea92115a742c2579699e255a078ce6d4ba0565ec23e4a7a0a90",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q5-complete",
+      "priorSha256": "16231af15e0f1d2ebf3d444073179cfc8ad36e183489091cf76d9e5b670ea874",
+      "correctedSha256": "3ee65cacbe729644d04ff42defee03a9477fd830363badf4405e57a4e7b1c6e7",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q6-complete",
+      "priorSha256": "827f26b559203a8999767343ea34ea13e693203a56bac1ae4312d7de64a8e068",
+      "correctedSha256": "1a3cc06d009b1647ab86aae5b226ea585646e347c8c2df174752e04abbcb0b86",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q7-complete",
+      "priorSha256": "c6ee702f3c224fdcd359f09843a23e6d075adc57dc9e64b9a752fac3b415af66",
+      "correctedSha256": "b2c8df03399d99f522f7d09d54786f14ec2e0efd4dce37bbef32846a38111024",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q8-complete",
+      "priorSha256": "2d45a0c3808be8b83e0c8cc8aa5536b275c5c926e6d8591c587f33fe7c8d8eec",
+      "correctedSha256": "17d276b1fc6fcf6ea53acb6df306fad62acc3da661da9a948c0188a7f8e3690c",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q10-complete",
+      "priorSha256": "d8145fb0e2f766dabd9b559f437df626eb317aa08fc48bdd2ba415ff2bf6f20c",
+      "correctedSha256": "8ccf176765dcacb70cfdab0e33d03699499079173d7e6bbc0c47119d22f6d264",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q10-alt-a",
+      "priorSha256": "73dbdf236091c90db8cbf51a241c544cc7317b23c35da7404fbb5fadbb48c81f",
+      "correctedSha256": "f47251857b99199bf1f2f08c6f42ea857ff959780dbaa8bfaa82b1ea49a915cf",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q10-alt-b",
+      "priorSha256": "1e8e6b1549bb9154700a518a9389fbcce301903e58bb5f410fb9e8607679a31d",
+      "correctedSha256": "459a1d6d951008caeb10b4482b7f37e8331c294d4f5bbdb01025b2560381d1af",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-hl-q10-alt-complete",
+      "priorSha256": "39b7bc88ce431f9b8947f3bc04c5142c2b61d44074b485ab63b7ea0884595f34",
+      "correctedSha256": "b14256e77cd59e5f3fd586c8c86b84bb10bd3cbf4fa2f20f79603bc48089c45f",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
     }
   ]
 }

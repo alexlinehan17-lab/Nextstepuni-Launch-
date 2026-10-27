@@ -88,6 +88,16 @@ export type RowKind =
    *  of the question — each asterisked item stands or falls alone. */
   | 'gate';
 
+/** One priced component of a criterion row; see `MarkRow.parts`. */
+export interface MarkRowPart {
+  id: string;
+  /** The component as the scheme prints it: "point", "discussion", "Scale". */
+  verbatim: string;
+  marks: number;
+  /** Including zero and the part's maximum; the printed ladder where the scheme gives one. */
+  permittedMarks: number[];
+}
+
 export interface MarkRow {
   id: string;
   kind: RowKind;
@@ -114,6 +124,15 @@ export interface MarkRow {
    * and its maximum. A diagram marked6/3/0 must not become a binary6-mark tick.
    * Only fixed-tariff criterion rows may use these; never inferred. */
   permittedMarks?: number[];
+  /**
+   * The named components a criterion row is priced in — "Design feature 1
+   * (2 for point, 4 for discussion)" — each placed on its own marks, so a
+   * student who had the point but not the discussion can say so. The row's
+   * claim is the parts' sum. Only a fixed-tariff criterion row carries parts,
+   * their marks add up to the row's, and every part is the scheme's own word
+   * (cards/construction-studies: construction_rows.py).
+   */
+  parts?: MarkRowPart[];
   /** Alternatives the scheme prints explicitly. */
   accepts?: string[];
   /**
@@ -1344,6 +1363,20 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
     : g.claimMax * g.perOption;
 }
 
+/** A criterion row's parts add up to its marks, with ids of their own and steps from 0 to each part's marks. */
+export function rowPartsReconcile(row: MarkRow): boolean {
+  const parts = row.parts;
+  if (!parts || !row.permittedMarks || row.kind !== 'criterion' || row.marks === null) return false;
+  if (parts.length < 2 || new Set(parts.map(part => part.id)).size !== parts.length) return false;
+  if (parts.reduce((sum, part) => sum + part.marks, 0) !== row.marks) return false;
+  return parts.every(part => part.id && part.verbatim.trim()
+    && Number.isInteger(part.marks) && part.marks > 0
+    && part.permittedMarks.length >= 2
+    && part.permittedMarks[0] === 0
+    && part.permittedMarks.at(-1) === part.marks
+    && part.permittedMarks.every((mark, index, steps) => Number.isInteger(mark) && mark >= 0 && (index === 0 || mark > steps[index - 1])));
+}
+
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
     if (card.rubric.system === 'politics') {
@@ -1535,6 +1568,8 @@ export function tariffReconciles(card: SecCard): boolean {
     || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
       || mark < 0 || (index > 0 && mark <= steps[index - 1]))
   ))) return false;
+  // Parts are a criterion row's own split: they add up to it, each on printed steps.
+  if (rows.some(row => row.parts && !rowPartsReconcile(row))) return false;
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   // The scheme never printed a split, so a row carrying its own marks is a
   // value the card invented — the tariff lives on the question alone.
