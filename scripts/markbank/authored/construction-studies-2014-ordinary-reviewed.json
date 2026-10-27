@@ -36,22 +36,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details ( 4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: external render 19 mm; external leaf solid block 100 mm; 150 mm full-fill cavity insulation; cavity ties; internal leaf solid block 100 mm; internal plaster 15 mm; skirting board; floating tongued and grooved hardwood floor; acoustic or adhesive layer for fixing the floor boards; plywood deck 20 mm; adhesive tape to the wall and plywood; floor joists 225 × 40 mm; plasterboard taped to the wall and plaster skim.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details ( 4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: external render 19 mm; external leaf solid block 100 mm; 150 mm full-fill cavity insulation; cavity ties; internal leaf solid block 100 mm; internal plaster 15 mm; skirting board; floating tongued and grooved hardwood floor; acoustic or adhesive layer for fixing the floor boards; plywood deck 20 mm; adhesive tape to the wall and plywood; floor joists 225 × 40 mm; plasterboard taped to the wall and plaster skim.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "External render – 19 mm",
+                "150 cavity full fill insulation",
+                "Cavity ties",
+                "Internal leaf solid block – 100 mm",
+                "Internal plaster – 15 mm",
+                "Skirting board",
+                "Floating tongued and grooved hardwood floor",
+                "Acoustic layer or adhesive layer for fixing floor boards",
+                "Plywood deck – 20 mm",
+                "Adhesive tape to wall and plywood",
+                "Floor joists 225 × 40 mm",
+                "Plaster skim"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -257,22 +263,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details ( 4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: external render 19 mm; external leaf solid block 100 mm; 150 mm full-fill cavity insulation; cavity ties; internal leaf solid block 100 mm; internal plaster 15 mm; skirting board; floating tongued and grooved hardwood floor; acoustic or adhesive layer for fixing the floor boards; plywood deck 20 mm; adhesive tape to the wall and plywood; floor joists 225 × 40 mm; plasterboard taped to the wall and plaster skim.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details ( 4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: external render 19 mm; external leaf solid block 100 mm; 150 mm full-fill cavity insulation; cavity ties; internal leaf solid block 100 mm; internal plaster 15 mm; skirting board; floating tongued and grooved hardwood floor; acoustic or adhesive layer for fixing the floor boards; plywood deck 20 mm; adhesive tape to the wall and plywood; floor joists 225 × 40 mm; plasterboard taped to the wall and plaster skim.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "External render – 19 mm",
+                "150 cavity full fill insulation",
+                "Cavity ties",
+                "Internal leaf solid block – 100 mm",
+                "Internal plaster – 15 mm",
+                "Skirting board",
+                "Floating tongued and grooved hardwood floor",
+                "Acoustic layer or adhesive layer for fixing floor boards",
+                "Plywood deck – 20 mm",
+                "Adhesive tape to wall and plywood",
+                "Floor joists 225 × 40 mm",
+                "Plaster skim"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1037,22 +1049,32 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: rising main; cold water storage tank and ball valve; overflow; cold feed from storage to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; supply to the sink. Primary circulation: supply to the expansion tank; expansion tank and ball valve; overflow; cold water feed and primary return; wood burning stove and back boiler; expansion pipe and primary flow; valves; insulation to the storage tank and pipework; labelling.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: rising main; cold water storage tank and ball valve; overflow; cold feed from storage to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; supply to the sink. Primary circulation: supply to the expansion tank; expansion tank and ball valve; overflow; cold water feed and primary return; wood burning stove and back boiler; expansion pipe and primary flow; valves; insulation to the storage tank and pipework; labelling.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Rising main",
+                "Cold water storage tank and ball valve",
+                "Overflow",
+                "Cold feed from storage to indirect hot water cylinder",
+                "Indirect hot water cylinder",
+                "Expansion pipe from cylinder",
+                "Supply to sink",
+                "Supply to expansion tank",
+                "Expansion tank and ball valve",
+                "Overflow",
+                "Cold water feed and primary return",
+                "Wood burning stove / back boiler",
+                "Expansion pipe and primary flow",
+                "Valves",
+                "Insulation to water storage tank and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1249,22 +1271,32 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: rising main; cold water storage tank and ball valve; overflow; cold feed from storage to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; supply to the sink. Primary circulation: supply to the expansion tank; expansion tank and ball valve; overflow; cold water feed and primary return; wood burning stove and back boiler; expansion pipe and primary flow; valves; insulation to the storage tank and pipework; labelling.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: rising main; cold water storage tank and ball valve; overflow; cold feed from storage to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; supply to the sink. Primary circulation: supply to the expansion tank; expansion tank and ball valve; overflow; cold water feed and primary return; wood burning stove and back boiler; expansion pipe and primary flow; valves; insulation to the storage tank and pipework; labelling.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Rising main",
+                "Cold water storage tank and ball valve",
+                "Overflow",
+                "Cold feed from storage to indirect hot water cylinder",
+                "Indirect hot water cylinder",
+                "Expansion pipe from cylinder",
+                "Supply to sink",
+                "Supply to expansion tank",
+                "Expansion tank and ball valve",
+                "Overflow",
+                "Cold water feed and primary return",
+                "Wood burning stove / back boiler",
+                "Expansion pipe and primary flow",
+                "Valves",
+                "Insulation to water storage tank and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -2045,19 +2077,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 6 of the above details (6 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: ridge tile; ridge vent; ridge board 300 × 32 mm; tiles; battens 50 × 30 mm; vapour barrier or vapour diffusion membrane; rafters 200 × 50 mm; collar tie 150–200 × 50 mm; insulation; plasterboard; labelling.",
-            "permittedMarks": [
-              0,
-              6,
-              12,
-              18,
-              24,
-              30,
-              36
-            ]
+            "contextNote": "Any 6 of the above details (6 marks each). Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: ridge tile; ridge vent; ridge board 300 × 32 mm; tiles; battens 50 × 30 mm; vapour barrier or vapour diffusion membrane; rafters 200 × 50 mm; collar tie 150–200 × 50 mm; insulation; plasterboard; labelling.",
+            "group": {
+              "claimMax": 6,
+              "perOption": 6,
+              "options": [
+                "Ridge tile",
+                "Ridge vent",
+                "Ridge board – 300 mm × 32 mm",
+                "Tiles",
+                "Battens – 50 mm × 30 mm",
+                "Vapour barrier/vapour diffusion membrane",
+                "Rafters – 200 mm × 50 mm",
+                "Collar tie – 150 - 200 mm × 50 mm",
+                "Insulation",
+                "Plasterboard",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2264,19 +2304,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 6 of the above details (6 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: ridge tile; ridge vent; ridge board 300 × 32 mm; tiles; battens 50 × 30 mm; vapour barrier or vapour diffusion membrane; rafters 200 × 50 mm; collar tie 150–200 × 50 mm; insulation; plasterboard; labelling.",
-            "permittedMarks": [
-              0,
-              6,
-              12,
-              18,
-              24,
-              30,
-              36
-            ]
+            "contextNote": "Any 6 of the above details (6 marks each). Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: ridge tile; ridge vent; ridge board 300 × 32 mm; tiles; battens 50 × 30 mm; vapour barrier or vapour diffusion membrane; rafters 200 × 50 mm; collar tie 150–200 × 50 mm; insulation; plasterboard; labelling.",
+            "group": {
+              "claimMax": 6,
+              "perOption": 6,
+              "options": [
+                "Ridge tile",
+                "Ridge vent",
+                "Ridge board – 300 mm × 32 mm",
+                "Tiles",
+                "Battens – 50 mm × 30 mm",
+                "Vapour barrier/vapour diffusion membrane",
+                "Rafters – 200 mm × 50 mm",
+                "Collar tie – 150 - 200 mm × 50 mm",
+                "Insulation",
+                "Plasterboard",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -5761,5 +5809,43 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2014-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2014-ordinary/prior-2014-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2014-ordinary/prior-2014-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2014-ol-q1-a",
+      "priorSha256": "fb7659e378659703952a6c9364173675fe7c2d001224108165db941cf4be2318",
+      "correctedSha256": "4b6a1e773c7fc0b4f4d18271cd1ab7da0e103ab0e9253d2c8ae35347221c4986",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2014-ol-q1-complete",
+      "priorSha256": "a6a46e5d12257fea256d469933ccb39626b1abcd179ee331d79c0b6ef57ab90b",
+      "correctedSha256": "0eeebecdd9aa0b91a2d61111af4599478615a7d916101f6191ce6e2c217d5056",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2014-ol-q3-a",
+      "priorSha256": "d8d8b3eaf5afcbde8c585451b6426f79c73c9eaa82b273581e4ba4dd7bd64f9d",
+      "correctedSha256": "b60408fd7db6ec5fd65ca6cc7cd52dcefe997062ec664db1208a34e56461de57",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2014-ol-q3-complete",
+      "priorSha256": "9578813f9e46173215cab3e928e761cc2b81f4fefe64f4c3432bae19fc88f42d",
+      "correctedSha256": "942635062af0e62bfd99227908c23542318a23cf259fae39ffa4cf23eeee06d3",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2014-ol-q5-a",
+      "priorSha256": "2d7caad312f7c800b373765d4b257580acb0ece1d1b8fef1dfb54fd2b1372f07",
+      "correctedSha256": "95d7de4b4b71dc83c26beb037f14026ce5c56bc54bb4a2f260a17f91cda63c8d",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2014-ol-q5-complete",
+      "priorSha256": "2200957957676cd598e10ccaff195798330d383f70ef81588229ca57b7836aff",
+      "correctedSha256": "432bc4df4539a3a5dda6abf3f248498506e518b6d03366e5abc1fd0b71ae6270",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    }
+  ]
 }

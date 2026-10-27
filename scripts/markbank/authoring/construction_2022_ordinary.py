@@ -21,24 +21,25 @@ LEGACY = {'q1-a', 'q1-b', 'q2-b', 'q2-c', 'q3-a', 'q3-b', 'q3-c', 'q4-a', 'q4-c'
 CONSOLIDATED = {f'q8-None-{t}': Q8 for t in ['fascia-board', 'airtight-tape', 'wind-turbine', 'septic-tank', 'dovetail-joint', 'wall-tie',
                                             'cordless-jigsaw', 'underfloor-heating']}
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["Concrete block inner leaf with 15 mm internal plaster", "Full fill cavity insulation 200 mm", "Concrete block outer leaf with 19 mm render", "Wall ties", "Concrete lintels", "Stepped DPC", "Airtight tape", "Cavity closer", "Thermally broken door frame", "Insulated external door"]), 'q3-b': ('items', 6, 4, ["Sketch .", "Pipework to collect water from roof", "Pipework from roof to storage tank", "Filters and overflow pipe", "Pipework from underground storage to attic storage", "Filters"]), 'q5-a': ('details', 7, 5, ["String 250 mm × 50 mm", "Tread 250 mm × 25 mm", "Riser 170 mm × 20 mm", "Joint between tread and riser", "Nosing – 16 mm minimum", "Vertical wedge", "Horizontal wedge", "Glue blocks 60 mm × 60 mm", "Pitch line (max 42⁰)"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 TAILS = {'8': 'front porch to their house.'}
 LEDGER = [(1, 'Answer any'), (4, 'any five')]
 GAPS = {Q8: {'cons-10-1', 'cons-10-4', 'cons-9-2'}}
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 4, r(4)), ('presentation', 8, BAND8)],
+    'q1-a': [('details', 35, None), ('dimensions', 4, r(4)), ('presentation', 8, BAND8)],
     'q1-b': [('closer', 3, [0, 3])],
     'q2-a': [('method', 14, r(14)), ('type', 4, r(4)), ('thickness', 4, r(4))],
     'q2-b': [('tank', 9, r(9)), ('pipework', 9, r(9))],
     'q2-c': [('advantage-1', 5, r(5)), ('advantage-2', 5, r(5))],
     'q3-a': [(k, 4, r(4)) for k in ['sketch', 'collection', 'to-tank', 'filters']],
-    'q3-b': [('items', 24, list(range(0, 25, 4))), ('sketch', 4, r(4))],
+    'q3-b': [('items', 24, None), ('sketch', 4, r(4))],
     'q3-c': [('advantage', 6, r(6))],
     'q4-a': [('items', 20, r(20)), ('note', 4, r(4)), ('presentation', 6, BAND6)],
     'q4-b': [('advantage', 5, r(5)), ('disadvantage', 5, r(5))],
     'q4-c': [('reason-1', 5, r(5)), ('reason-2', 5, r(5))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
+    'q5-a': [('details', 35, None), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
     'q5-b': [('creaking', 4, [0, 4])],
     'q6-a': [(f'sign-{i}', 9, r(9)) for i in (1, 2, 3)],
     'q6-b': [('risk-1', 5, r(5)), ('risk-2', 5, r(5))],

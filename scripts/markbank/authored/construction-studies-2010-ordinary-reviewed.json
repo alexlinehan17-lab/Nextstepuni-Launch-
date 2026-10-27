@@ -36,20 +36,31 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm render and 13 mm plaster; 100 mm outer leaf; DPC; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; 120 × 20 mm skirting; 20 mm quarry tiles sealed at the wall; 150 mm concrete floor; 150 mm floor insulation; DPM or radon barrier; hardcore and sand blinding; concrete fill or foundation blocks; reinforced concrete foundation.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm render and 13 mm plaster; 100 mm outer leaf; DPC; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; 120 × 20 mm skirting; 20 mm quarry tiles sealed at the wall; 150 mm concrete floor; 150 mm floor insulation; DPM or radon barrier; hardcore and sand blinding; concrete fill or foundation blocks; reinforced concrete foundation.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "19 mm external render and 13 mm internal plaster",
+                "100 mm concrete block outer leaf",
+                "D.P.C",
+                "50 mm residual cavity",
+                "Wall tie",
+                "100 mm thermal insulation",
+                "100mm concrete block inner leaf",
+                "Skirting board 120 x 20 mm",
+                "20 mm quarry tiles with seal between wall and floor",
+                "150 mm concrete floor",
+                "150 mm floor insulation",
+                "D.P.M. /radon barrier",
+                "Hardcore and sand blinding",
+                "Concrete fill / foundation blocks",
+                "Reinforced concrete foundation"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -252,20 +263,31 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm render and 13 mm plaster; 100 mm outer leaf; DPC; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; 120 × 20 mm skirting; 20 mm quarry tiles sealed at the wall; 150 mm concrete floor; 150 mm floor insulation; DPM or radon barrier; hardcore and sand blinding; concrete fill or foundation blocks; reinforced concrete foundation.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm render and 13 mm plaster; 100 mm outer leaf; DPC; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; 120 × 20 mm skirting; 20 mm quarry tiles sealed at the wall; 150 mm concrete floor; 150 mm floor insulation; DPM or radon barrier; hardcore and sand blinding; concrete fill or foundation blocks; reinforced concrete foundation.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "19 mm external render and 13 mm internal plaster",
+                "100 mm concrete block outer leaf",
+                "D.P.C",
+                "50 mm residual cavity",
+                "Wall tie",
+                "100 mm thermal insulation",
+                "100mm concrete block inner leaf",
+                "Skirting board 120 x 20 mm",
+                "20 mm quarry tiles with seal between wall and floor",
+                "150 mm concrete floor",
+                "150 mm floor insulation",
+                "D.P.M. /radon barrier",
+                "Hardcore and sand blinding",
+                "Concrete fill / foundation blocks",
+                "Reinforced concrete foundation"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1114,22 +1136,29 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: 15 mm rising main with stop valve; insulated storage tank and ballvalve; 22 mm overflow; 22 mm insulated cold feed to the cylinder; insulated indirect cylinder; 22 mm insulated expansion pipe; 22 mm hot water supply. Primary circulation: 15 mm supply to the expansion tank; insulated expansion tank with ballvalve; 22 mm overflow; 22 mm insulated cold feed; 28 mm primary return; stove and back boiler; 28 mm primary flow; 22 mm insulated expansion pipe; valves.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: 15 mm rising main with stop valve; insulated storage tank and ballvalve; 22 mm overflow; 22 mm insulated cold feed to the cylinder; insulated indirect cylinder; 22 mm insulated expansion pipe; 22 mm hot water supply. Primary circulation: 15 mm supply to the expansion tank; insulated expansion tank with ballvalve; 22 mm overflow; 22 mm insulated cold feed; 28 mm primary return; stove and back boiler; 28 mm primary flow; 22 mm insulated expansion pipe; valves.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "15 mm rising main with stop valve",
+                "Insulated storage tank and ballvalve",
+                "22 mm overflow",
+                "22 mm cold feed with insulation from storage tank to hot water cylinder",
+                "Insulated indirect hot water cylinder",
+                "22 mm hot water supply",
+                "Insulated expansion tank with ballvalve",
+                "22 mm cold feed with insulation from expansion tank",
+                "28 mm primary return",
+                "Wood burning stove / back boiler",
+                "28 mm primary flow",
+                "22 mm expansion pipe with insulation",
+                "Valves"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1331,22 +1360,29 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: 15 mm rising main with stop valve; insulated storage tank and ballvalve; 22 mm overflow; 22 mm insulated cold feed to the cylinder; insulated indirect cylinder; 22 mm insulated expansion pipe; 22 mm hot water supply. Primary circulation: 15 mm supply to the expansion tank; insulated expansion tank with ballvalve; 22 mm overflow; 22 mm insulated cold feed; 28 mm primary return; stove and back boiler; 28 mm primary flow; 22 mm insulated expansion pipe; valves.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Secondary circulation: 15 mm rising main with stop valve; insulated storage tank and ballvalve; 22 mm overflow; 22 mm insulated cold feed to the cylinder; insulated indirect cylinder; 22 mm insulated expansion pipe; 22 mm hot water supply. Primary circulation: 15 mm supply to the expansion tank; insulated expansion tank with ballvalve; 22 mm overflow; 22 mm insulated cold feed; 28 mm primary return; stove and back boiler; 28 mm primary flow; 22 mm insulated expansion pipe; valves.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "15 mm rising main with stop valve",
+                "Insulated storage tank and ballvalve",
+                "22 mm overflow",
+                "22 mm cold feed with insulation from storage tank to hot water cylinder",
+                "Insulated indirect hot water cylinder",
+                "22 mm hot water supply",
+                "Insulated expansion tank with ballvalve",
+                "22 mm cold feed with insulation from expansion tank",
+                "28 mm primary return",
+                "Wood burning stove / back boiler",
+                "28 mm primary flow",
+                "22 mm expansion pipe with insulation",
+                "Valves"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -2195,22 +2231,26 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: plasterboard ceiling; 225 × 50 mm joists; tongued and grooved floor; door saddle; 120 × 20 mm skirting each side; 70 × 20 mm architrave each side; the internal door; 110 × 44 mm door frame.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: plasterboard ceiling; 225 × 50 mm joists; tongued and grooved floor; door saddle; 120 × 20 mm skirting each side; 70 × 20 mm architrave each side; the internal door; 110 × 44 mm door frame.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Plasterboard ceiling",
+                "225 x 50 mm ceiling joists",
+                "Tongued and grooved floor",
+                "Door saddle",
+                "120 x 20 mm skirting board",
+                "70 x 20 mm architrave",
+                "Internal door",
+                "110 x 44 mm door frame",
+                "70 x 20 mm architrave",
+                "120 x 20 mm skirting board"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -2402,22 +2442,26 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: plasterboard ceiling; 225 × 50 mm joists; tongued and grooved floor; door saddle; 120 × 20 mm skirting each side; 70 × 20 mm architrave each side; the internal door; 110 × 44 mm door frame.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: plasterboard ceiling; 225 × 50 mm joists; tongued and grooved floor; door saddle; 120 × 20 mm skirting each side; 70 × 20 mm architrave each side; the internal door; 110 × 44 mm door frame.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Plasterboard ceiling",
+                "225 x 50 mm ceiling joists",
+                "Tongued and grooved floor",
+                "Door saddle",
+                "120 x 20 mm skirting board",
+                "70 x 20 mm architrave",
+                "Internal door",
+                "110 x 44 mm door frame",
+                "70 x 20 mm architrave",
+                "120 x 20 mm skirting board"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -5596,5 +5640,43 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2010-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2010-ordinary/prior-2010-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2010-ordinary/prior-2010-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2010-ol-q1-a",
+      "priorSha256": "400585e9fc279cfc69e9eb148246c91e135295a56ba9bbb5fa820b0f18314899",
+      "correctedSha256": "c457416d5a28f9c8a696b947461130f2aef3adf4d2979c75c462876b9145a6f9",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2010-ol-q1-complete",
+      "priorSha256": "c729b26ba55bb230d72efa0254974611671996d0899befa44e3352f3ca9546ae",
+      "correctedSha256": "afb3f9276aae0fe55a484ceae06f2f09b33afb39430c293d25614a47c92a50f3",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2010-ol-q3-a",
+      "priorSha256": "f76b7afaec47f28cfe8733403e5474bb42ea63f2eaa176ee0714b1821826ffaf",
+      "correctedSha256": "9fa4b5690b5c2b3c929618a3065469b9bc3484b89688216e45da212c615e7c02",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2010-ol-q3-complete",
+      "priorSha256": "2ddbdb0913d8eb03157ae7eaee28d15cc19261a4f7868de9f52c78a09ece47f7",
+      "correctedSha256": "63c231aadd73963f6003d53505ad4e88364acbef4b39eaaa2de80ba6083aea18",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2010-ol-q5-a",
+      "priorSha256": "3aff5c7d3a5b3f07ffce98d8a2077fe061bede873774e9f5be1eb513d149fa94",
+      "correctedSha256": "a5e1c6596ef52609d5c2f93027dcd6a8c997feb9cb04d8489297889b108c8150",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2010-ol-q5-complete",
+      "priorSha256": "1600e65c70ef55011951cf74b1a5c6202b2696e6bb5ec8a854536e78aa3f32de",
+      "correctedSha256": "6c304e91136334dbbb863b4ac8175864be1611ec388f025cf54089db0de54a59",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    }
+  ]
 }

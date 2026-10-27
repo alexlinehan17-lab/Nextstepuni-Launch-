@@ -34,22 +34,31 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Published examples include ridge board; concrete tiles; battens; overlapped/taped breather membrane; rafters; roof insulation; ceiling joists; insulated plasterboard; wallplate; internal plaster; inner block leaf; full-fill cavity insulation; outer block leaf; external plaster; soffit/fascia; eaves gutter. Preserve the printed 200×40 mm rafters/ceiling joists, 400 mm wall and 200 mm cavity. The source does not divide these 4-mark details into drawing3/annotation1; do not import that Higher-level allocation. The full indicative menu is not mandatory.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Published examples include ridge board; concrete tiles; battens; overlapped/taped breather membrane; rafters; roof insulation; ceiling joists; insulated plasterboard; wallplate; internal plaster; inner block leaf; full-fill cavity insulation; outer block leaf; external plaster; soffit/fascia; eaves gutter. Preserve the printed 200×40 mm rafters/ceiling joists, 400 mm wall and 200 mm cavity. The source does not divide these 4-mark details into drawing3/annotation1; do not import that Higher-level allocation. The full indicative menu is not mandatory.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Ridge board 250 mm × 35 mm",
+                "Concrete tiles",
+                "Softwood battens - typical 44 mm × 35 mm",
+                "Breather membrane overlapped and taped",
+                "Rafters 200 mm × 40 mm",
+                "Roof insulation to comply with current Building Regulations",
+                "Ceiling joist 200 mm × 40 mm",
+                "Insulated plasterboard with skim coat",
+                "100 mm × 75 mm wallplate",
+                "Internal plaster",
+                "Concrete block inner leaf – 100 mm",
+                "Full-fill insulated cavity 200 mm",
+                "Concrete block outer leaf – 100 mm",
+                "Soffit 12 mm and fascia 25 mm",
+                "Eaves gutter 100 mm"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -215,22 +224,31 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Published examples include ridge board; concrete tiles; battens; overlapped/taped breather membrane; rafters; roof insulation; ceiling joists; insulated plasterboard; wallplate; internal plaster; inner block leaf; full-fill cavity insulation; outer block leaf; external plaster; soffit/fascia; eaves gutter. Preserve the printed 200×40 mm rafters/ceiling joists, 400 mm wall and 200 mm cavity. The source does not divide these 4-mark details into drawing3/annotation1; do not import that Higher-level allocation. The full indicative menu is not mandatory.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Published examples include ridge board; concrete tiles; battens; overlapped/taped breather membrane; rafters; roof insulation; ceiling joists; insulated plasterboard; wallplate; internal plaster; inner block leaf; full-fill cavity insulation; outer block leaf; external plaster; soffit/fascia; eaves gutter. Preserve the printed 200×40 mm rafters/ceiling joists, 400 mm wall and 200 mm cavity. The source does not divide these 4-mark details into drawing3/annotation1; do not import that Higher-level allocation. The full indicative menu is not mandatory.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Ridge board 250 mm × 35 mm",
+                "Concrete tiles",
+                "Softwood battens - typical 44 mm × 35 mm",
+                "Breather membrane overlapped and taped",
+                "Rafters 200 mm × 40 mm",
+                "Roof insulation to comply with current Building Regulations",
+                "Ceiling joist 200 mm × 40 mm",
+                "Insulated plasterboard with skim coat",
+                "100 mm × 75 mm wallplate",
+                "Internal plaster",
+                "Concrete block inner leaf – 100 mm",
+                "Full-fill insulated cavity 200 mm",
+                "Concrete block outer leaf – 100 mm",
+                "Soffit 12 mm and fascia 25 mm",
+                "Eaves gutter 100 mm"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -929,21 +947,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 32,
-            "contextNote": "Credit the best EIGHT correct details at 4 marks each, capped at 32. Marked details: rising main (typically 15 mm with stop valve); cold water storage tank; overflow (22 mm minimum); cold supply from the storage tank to the hot water cylinder (22 mm); hot water cylinder (pre-insulated); expansion pipe from the cylinder (22 mm); hot water supply to the mixer-shower (22 mm); cold water supply to the mixer-shower (22 mm); cold water supply to the toilet cistern (15 mm); valves; insulation to the storage tank and pipework; labelling. Hot and cold supplies to the shower and a cold supply to the toilet are all required.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32
-            ]
+            "contextNote": "Any 8 of the above details (4 marks each). Credit the best EIGHT correct details at 4 marks each, capped at 32. Marked details: rising main (typically 15 mm with stop valve); cold water storage tank; overflow (22 mm minimum); cold supply from the storage tank to the hot water cylinder (22 mm); hot water cylinder (pre-insulated); expansion pipe from the cylinder (22 mm); hot water supply to the mixer-shower (22 mm); cold water supply to the mixer-shower (22 mm); cold water supply to the toilet cistern (15 mm); valves; insulation to the storage tank and pipework; labelling. Hot and cold supplies to the shower and a cold supply to the toilet are all required.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 4,
+              "options": [
+                "Rising mains",
+                "Cold water storage tank",
+                "Overflow",
+                "Cold supply to hot water cylinder",
+                "Hot water cylinder",
+                "Expansion pipe from cylinder",
+                "Hot water supply to mixer shower",
+                "Cold water supply to mixer shower",
+                "Cold water supply to toilet cistern",
+                "Valves",
+                "Insulation to water storage tank and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "sketch",
@@ -1112,21 +1137,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 32,
-            "contextNote": "Credit the best EIGHT correct details at 4 marks each, capped at 32. Marked details: rising main (typically 15 mm with stop valve); cold water storage tank; overflow (22 mm minimum); cold supply from the storage tank to the hot water cylinder (22 mm); hot water cylinder (pre-insulated); expansion pipe from the cylinder (22 mm); hot water supply to the mixer-shower (22 mm); cold water supply to the mixer-shower (22 mm); cold water supply to the toilet cistern (15 mm); valves; insulation to the storage tank and pipework; labelling. Hot and cold supplies to the shower and a cold supply to the toilet are all required.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32
-            ]
+            "contextNote": "Any 8 of the above details (4 marks each). Credit the best EIGHT correct details at 4 marks each, capped at 32. Marked details: rising main (typically 15 mm with stop valve); cold water storage tank; overflow (22 mm minimum); cold supply from the storage tank to the hot water cylinder (22 mm); hot water cylinder (pre-insulated); expansion pipe from the cylinder (22 mm); hot water supply to the mixer-shower (22 mm); cold water supply to the mixer-shower (22 mm); cold water supply to the toilet cistern (15 mm); valves; insulation to the storage tank and pipework; labelling. Hot and cold supplies to the shower and a cold supply to the toilet are all required.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 4,
+              "options": [
+                "Rising mains",
+                "Cold water storage tank",
+                "Overflow",
+                "Cold supply to hot water cylinder",
+                "Hot water cylinder",
+                "Expansion pipe from cylinder",
+                "Hot water supply to mixer shower",
+                "Cold water supply to mixer shower",
+                "Cold water supply to toilet cistern",
+                "Valves",
+                "Insulation to water storage tank and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "a-sketch",
@@ -2116,20 +2148,30 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details ( 5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); 50 mm ventilated cavity; breather membrane and racking board (OSB/plywood); 200 mm timber stud; 12.5 mm plasterboard; skirting board; concrete slab and 20 mm quarry tiles; floor insulation (200–300 mm) with vertical edge insulation; radon barrier/DPM and damp proof course (DPC); hardcore and sand blinding; cavity fill and concrete insulation blocks; reinforced concrete foundation; footpath and hardcore. Keep the printed 100 mm outer leaf, 50 mm cavity, 200 mm timber-frame inner leaf and 20 mm quarry tiles.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details ( 5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); 50 mm ventilated cavity; breather membrane and racking board (OSB/plywood); 200 mm timber stud; 12.5 mm plasterboard; skirting board; concrete slab and 20 mm quarry tiles; floor insulation (200–300 mm) with vertical edge insulation; radon barrier/DPM and damp proof course (DPC); hardcore and sand blinding; cavity fill and concrete insulation blocks; reinforced concrete foundation; footpath and hardcore. Keep the printed 100 mm outer leaf, 50 mm cavity, 200 mm timber-frame inner leaf and 20 mm quarry tiles.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External render – 19 mm",
+                "Concrete block outer leaf - 100 mm",
+                "50 mm ventilated cavity",
+                "Breather membrane and racking board, OSB/Plywood",
+                "200 mm timber stud",
+                "12.5 mm plasterboard",
+                "Skirting board",
+                "Concrete slab and 20 mm quarry tiles",
+                "Floor insulation, 200 – 300 mm, with vertical insulation",
+                "Radon barrier/DPM and Damp proof course (DPC)",
+                "Hardcore and sand blinding",
+                "Cavity fill and concrete insulation blocks",
+                "Reinforced concrete foundation",
+                "Footpath and hardcore"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2295,20 +2337,30 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details ( 5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); 50 mm ventilated cavity; breather membrane and racking board (OSB/plywood); 200 mm timber stud; 12.5 mm plasterboard; skirting board; concrete slab and 20 mm quarry tiles; floor insulation (200–300 mm) with vertical edge insulation; radon barrier/DPM and damp proof course (DPC); hardcore and sand blinding; cavity fill and concrete insulation blocks; reinforced concrete foundation; footpath and hardcore. Keep the printed 100 mm outer leaf, 50 mm cavity, 200 mm timber-frame inner leaf and 20 mm quarry tiles.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details ( 5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); 50 mm ventilated cavity; breather membrane and racking board (OSB/plywood); 200 mm timber stud; 12.5 mm plasterboard; skirting board; concrete slab and 20 mm quarry tiles; floor insulation (200–300 mm) with vertical edge insulation; radon barrier/DPM and damp proof course (DPC); hardcore and sand blinding; cavity fill and concrete insulation blocks; reinforced concrete foundation; footpath and hardcore. Keep the printed 100 mm outer leaf, 50 mm cavity, 200 mm timber-frame inner leaf and 20 mm quarry tiles.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External render – 19 mm",
+                "Concrete block outer leaf - 100 mm",
+                "50 mm ventilated cavity",
+                "Breather membrane and racking board, OSB/Plywood",
+                "200 mm timber stud",
+                "12.5 mm plasterboard",
+                "Skirting board",
+                "Concrete slab and 20 mm quarry tiles",
+                "Floor insulation, 200 – 300 mm, with vertical insulation",
+                "Radon barrier/DPM and Damp proof course (DPC)",
+                "Hardcore and sand blinding",
+                "Cavity fill and concrete insulation blocks",
+                "Reinforced concrete foundation",
+                "Footpath and hardcore"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -6834,6 +6886,42 @@
       "priorSha256": "89a9f37a7f4467ffe818f6a58855d1edd5f0fb6a253247f716e476049d6bcd15",
       "correctedSha256": "22bed4f6964b9010c4a7c3d91d4708e0370b829e9846b36548ec0af632e2d5d2",
       "reason": "Solution figure restored: a printed choice is one card, so its solution figure is now one composite of every item's scheme notes and sketches, shown only after reveal (the per-item crops left with the withdrawn per-item cards). Rows, tariff and topics unchanged."
+    },
+    {
+      "cardId": "cons-2015-ol-q1-a",
+      "priorSha256": "f2fd17ad7ace98ae8ad981f4644234b29d92fbc827ce691e4c54a91a685de637",
+      "correctedSha256": "75746e3c6d74a6bc8e1c3c4c8884b716debe959cf4c77adf4bcc81b7f98469c4",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2015-ol-q1-complete",
+      "priorSha256": "88c68b85517a472cd8e0bddc0fcf127e18cb714e81b9491f28abfa4be5e52a46",
+      "correctedSha256": "48ffcdb6ff727cf9b32e286ee746445fafb05735cc02bdbc4552fa78f83f3e7e",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2015-ol-q3-a",
+      "priorSha256": "783a4076046a1814a6c4574b96aae1dc9524b779a9fc45bc4fe9fa583ad6c9cf",
+      "correctedSha256": "2c14133d85de0b53561aef98a8af7cab9c6d96603ec195883ef74fde2f709a47",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2015-ol-q3-complete",
+      "priorSha256": "d2cfd634eceffe0ba0330601d44e80b776cf1554d0927221d79e33f11821d8b2",
+      "correctedSha256": "a41551486368831cc9cb21b0f7064db2ba6d992ecf7c1aa4ca1401d2ba7743ab",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2015-ol-q5-a",
+      "priorSha256": "b1de800d364dd5fef7b01e40bf9106fa79b833a1e89d6ceff742d8df6c50e135",
+      "correctedSha256": "f10b03b9ba0a4d062bcbfca8fda3b2c848b69111bb0dbc667a1a2ae78744ead8",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2015-ol-q5-complete",
+      "priorSha256": "ed4c381c9aa8e7da897b2c58da5dec9a7adf496d573dceb8c9c803b425da0528",
+      "correctedSha256": "7d0e50d9efaa8bae3518dd3a05c4c0628babb3d23d9cf7fe35374ff3c53af8d0",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

@@ -35,20 +35,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Wallplate 100 mm x 75 mm",
+                "Prefabricated roof truss",
+                "Insulation and airtight membrane",
+                "Plasterboard with skim coat",
+                "Fascia, soffit & gutter",
+                "Ventilation",
+                "Breather membrane",
+                "Slates and battens"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -241,20 +249,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Wallplate 100 mm x 75 mm",
+                "Prefabricated roof truss",
+                "Insulation and airtight membrane",
+                "Plasterboard with skim coat",
+                "Fascia, soffit & gutter",
+                "Ventilation",
+                "Breather membrane",
+                "Slates and battens"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1033,21 +1049,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Insulated storage tank",
+                "Overflow",
+                "Cylinder",
+                "Cold feed to cylinder",
+                "Expansion pipe",
+                "Bathroom fixtures",
+                "Cold feed to toilet cistern",
+                "Hot and cold feed to wash basin",
+                "Hot and cold feed to mixer shower",
+                "Valves",
+                "Labels"
+              ]
+            }
           }
         ],
         "questionFigureKey": "construction-studies-2024-OL-q3-original",
@@ -1233,21 +1256,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Insulated storage tank",
+                "Overflow",
+                "Cylinder",
+                "Cold feed to cylinder",
+                "Expansion pipe",
+                "Bathroom fixtures",
+                "Cold feed to toilet cistern",
+                "Hot and cold feed to wash basin",
+                "Hot and cold feed to mixer shower",
+                "Valves",
+                "Labels"
+              ]
+            }
           },
           {
             "id": "b-feature-1",
@@ -2133,21 +2163,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Concrete cill",
+                "Drip/throating",
+                "DPC",
+                "Thermal broken window frame",
+                "Triple glazing",
+                "Airtightness",
+                "Window board"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -2327,21 +2363,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Concrete cill",
+                "Drip/throating",
+                "DPC",
+                "Thermal broken window frame",
+                "Triple glazing",
+                "Airtightness",
+                "Window board"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -5575,12 +5617,15 @@
     {
       "cardId": "cons-2024-ol-q1-a",
       "priorSha256": "9337f17900a539d31dd80de9ff050ca542a329aceca23d7dfd0b974a01ac40e1",
-      "correctedSha256": "dc7ddfa8c0fd2ac680272cef204160a89d90f9e5566ba926cf103b71d1beca25",
+      "correctedSha256": "f55c180f6e70a861716c337d74dc578e32ffed6e744736736f72e209a535351d",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-3-2",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46."
+      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46.",
+      "supersededSha256": [
+        "dc7ddfa8c0fd2ac680272cef204160a89d90f9e5566ba926cf103b71d1beca25"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q1-b",
@@ -5615,12 +5660,15 @@
     {
       "cardId": "cons-2024-ol-q3-a",
       "priorSha256": "9ffce8cee04858a9be3cb3d7bf9738e299550793bbb0ae627fc3932fe4e43055",
-      "correctedSha256": "35417fbd47b9772117bb9350e9a96ced118c6e8f0be94f0bc6d7be1bf409f6da",
+      "correctedSha256": "75d24a4cccc68d1a43a88e49325d6ce21fc4d54d53dedd35b2b8f3f40aff6ba8",
       "priorTotalMarks": 40,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed best-eight row (8 × 5); total unchanged (40)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed best-eight row (8 × 5); total unchanged (40).",
+      "supersededSha256": [
+        "35417fbd47b9772117bb9350e9a96ced118c6e8f0be94f0bc6d7be1bf409f6da"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q3-b",
@@ -6086,6 +6134,30 @@
       "priorSha256": "d4f8a007d20da821522d0bbce1788f084c22ec4d8cd20bbc327dd78afb20069a",
       "correctedSha256": "0184cf4386a2d3c4caf5732af2dbdacb37c36fc9deb3149b4bcfe6cab07fad31",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q1-complete",
+      "priorSha256": "df55ee9abd9f200121714015ecd97455331f6b30ea5e1bd798bba1893a784663",
+      "correctedSha256": "a76c1109440780bda83564be1075293ccac4467cb5e950802d664dfd70912cdc",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q3-complete",
+      "priorSha256": "4a95c5bf027c4db3882763f54d396172ec44d9b55393824711a6208e71e78aea",
+      "correctedSha256": "c5e08d9b53437dc9917bbae3d3b43824f8f430ee23aeac7f0f56cc0a9c2870d8",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q5-a",
+      "priorSha256": "0b8b272e7519b890a129908c55920d750064f603bd4d171532fd1218bf0aecb9",
+      "correctedSha256": "078bc1a3895623d3f9e039662d30fed87cbd66eab256c226bff1ef284e036b41",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q5-complete",
+      "priorSha256": "a46d517d8231de15cf166ae2663be2017e6412caf22f0112367df25db0116c48",
+      "correctedSha256": "667cc9f37f02d60c29e92e0c4c58fc457d2f5ba138a70a35074575b66e6db42c",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

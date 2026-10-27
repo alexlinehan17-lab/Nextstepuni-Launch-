@@ -17,23 +17,24 @@ Q8 = 'q8-terms'
 TERMS = ['Concrete lintel', 'Mortice and tenon joint', 'Energy rating', 'Door saddle', 'Quarter sawing', 'Ridge board', 'Triple glazing', 'Window cill', 'Vapour barrier']
 LEGACY = set()
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["19 mm external render and 13 mm internal plaster", "100 mm concrete block outer leaf", "D.P.C", "50 mm residual cavity", "Wall tie", "100 mm thermal insulation", "100mm concrete block inner leaf", "Skirting board 120 x 20 mm", "20 mm quarry tiles with seal between wall and floor", "150 mm concrete floor", "150 mm floor insulation", "D.P.M. /radon barrier", "Hardcore and sand blinding", "Concrete fill / foundation blocks", "Reinforced concrete foundation"]), 'q3-a': ('details', 9, 4, ["15 mm rising main with stop valve", "Insulated storage tank and ballvalve", "22 mm overflow", "22 mm cold feed with insulation from storage tank to hot water cylinder", "Insulated indirect hot water cylinder", "22 mm hot water supply", "Insulated expansion tank with ballvalve", "22 mm cold feed with insulation from expansion tank", "28 mm primary return", "Wood burning stove / back boiler", "28 mm primary flow", "22 mm expansion pipe with insulation", "Valves"]), 'q5-a': ('details', 9, 4, ["Plasterboard ceiling", "225 x 50 mm ceiling joists", "Tongued and grooved floor", "Door saddle", "120 x 20 mm skirting board", "70 x 20 mm architrave", "Internal door", "110 x 44 mm door frame", "70 x 20 mm architrave", "120 x 20 mm skirting board"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 LEDGER = [(1, 'Answer Question'), (3, 'any five'), (3, 'one of'), (3, 'one of')]
 TAILS = {'8': ('repainting a window frame in one of the houses.', 'any five of the following:')}  # Q8's bullets follow Q9 in the text layer
 GAPS = {Q8: {'cons-10-1', 'cons-10-4'}}
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 4, r(4)), ('presentation', 8, r(8))],
+    'q1-a': [('details', 35, None), ('dimensions', 4, r(4)), ('presentation', 8, r(8))],
     'q1-b': [('cold-bridge', 3, r(3))],
     'q2-a': [('description-1', 4, r(4)), ('description-2', 4, r(4)), ('insulation', 4, r(4)), ('detail', 4, r(4)), ('presentation', 5, r(5))],
     'q2-b': [('advantage', 4, r(4)), ('disadvantage', 4, r(4))],
     'q2-c': [('detail-1', 4, r(4)), ('detail-2', 4, r(4)), ('insulation', 4, r(4)), ('thickness', 4, r(4)), ('presentation', 5, r(5))],
-    'q3-a': [('details', 36, list(range(0, 37, 4))), ('presentation', 6, r(6))],
+    'q3-a': [('details', 36, None), ('presentation', 6, r(6))],
     'q3-b': [('advantage-1', 4, r(4)), ('advantage-2', 4, r(4))],
     'q4-a': [('description-1', 3, r(3)), ('description-2', 3, r(3)), ('sketch', 4, r(4)), ('presentation', 5, r(5))],
     'q4-b': [('description-1', 3, r(3)), ('description-2', 3, r(3)), ('sketch', 4, r(4)), ('presentation', 5, r(5))],
     'q4-c': [('hinge', 5, r(5)), ('detail-1', 3, r(3)), ('detail-2', 3, r(3)), ('sketch', 4, r(4)), ('presentation', 5, r(5))],
-    'q5-a': [('details', 36, list(range(0, 37, 4))), ('presentation', 8, r(8))],
+    'q5-a': [('details', 36, None), ('presentation', 8, r(8))],
     'q5-b': [('sound', 6, r(6))],
     'q6-a': [(k, 14, r(14)) for k in ['ladder', 'veneer', 'jigsaw']],
     'q6-b': [('precaution-1', 2, r(2)), ('precaution-2', 2, r(2)), ('presentation', 4, r(4))],

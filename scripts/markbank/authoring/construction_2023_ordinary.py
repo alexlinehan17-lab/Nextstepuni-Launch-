@@ -50,18 +50,20 @@ def r(n):
     return list(range(n + 1))
 
 
+CHOICES = {}
+CHOICES.update({'q1-a': ('details', 7, 5, ["Concrete block outer leaf with internal plaster", "Full fill cavity with wall tie", "Concrete block inner leaf with render", "Joist hanger", "Ceiling joist", "Airtight tape", "Plasterboard", "Plywood decking", "Tongue & groove flooring", "Skirting board"]), 'q3-a': ('details', 8, 5, ["Solar collector", "Cold feed to collector", "Hot return to cylinder", "Cylinder", "Circulation pump", "Solar expansion vessel", "Storage tank", "Cold feed to cylinder", "Expansion pipe", "Hot water to shower and shower unit", "Valves"]), 'q5-a': ('details', 8, 5, ["Concrete block outer leaf with external render", "Full fill insulated cavity with wall tie", "Concrete block inner leaf with internal plaster", "Wall plate with cavity closer", "Waterproof membrane", "Insulation", "Plywood decking with breather membrane", "Firring piece", "Insulated ceiling joist", "Insulated plasterboard ceiling with airtight membrane", "Fascia and soffit", "Gutter"])})  # drawing details as option groups (construction_choices.py)
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 4, r(4)), ('presentation', 8, BAND8)],
+    'q1-a': [('details', 35, None), ('dimensions', 4, r(4)), ('presentation', 8, BAND8)],
     'q1-b': [('wall-tie', 3, [0, 3])],
     'q2-a': [('reason-1', 6, r(6)), ('reason-2', 6, r(6))],
     'q2-b': [('method', 16, r(16)), ('type', 4, r(4)), ('thickness', 4, r(4))],
     'q2-c': [('upgrade', 14, r(14))],
-    'q3-a': [('details', 40, list(range(0, 41, 5)))],
+    'q3-a': [('details', 40, None)],
     'q3-b': [('consideration-1', 5, r(5)), ('consideration-2', 5, r(5))],
     'q4-a': [('advantage-1', 4, r(4)), ('advantage-2', 4, r(4))],
     'q4-b': [(k, 6, r(6)) for k in ['wall', 'wallplate', 'rafter', 'nail-plate', 'truss-clip']],
     'q4-c': [('material', 4, r(4)), ('reason-1', 4, r(4)), ('reason-2', 4, r(4))],
-    'q5-a': [('details', 40, list(range(0, 41, 5))), ('presentation', 6, BAND6)],
+    'q5-a': [('details', 40, None), ('presentation', 6, BAND6)],
     'q5-b': [('closer', 4, [0, 4])],
     'q6-a': [(k, 4, r(4)) for k in ['jigsaw-1', 'jigsaw-2', 'epoxy-1', 'epoxy-2']],
     'q6-b': [(f'precaution-{i}', 8, r(8)) for i in (1, 2, 3)],

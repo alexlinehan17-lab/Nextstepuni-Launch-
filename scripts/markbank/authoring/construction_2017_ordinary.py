@@ -22,24 +22,25 @@ LEGACY = {'q1-a', 'q1-b', 'q2-a', 'q2-b', 'q3-a', 'q3-b', 'q4-b', 'q5-a', 'q5-b'
 CONSOLIDATED = {f'q8-None-{t}': Q8 for t in ['box-dovetail-joint', 'purlin', 'damp-proof-course', 'ball-valve', 'energy-rating', 'wind-turbine',
                                             'joist-hanger', 'service-cavity']}
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["19 mm external render", "200 mm Full-fill cavity insulation", "100mm concrete block inner leaf", "18 mm plywood with airtightness seal to wall and doorframe", "Insulated plasterboard with skim coat", "Proprietary cavity closer", "150 mm × 70 mm door frame", "90 mm door top rail and insulation", "12 mm vertical sheeting to both sides of the door"]), 'q3-a': ('items', 7, 4, ["15 mm rising main,", "Cold water storage tank and overflow pipe", "22 mm cold water supply to hot water cylinder", "Hot water cylinder", "22 mm expansion pipe from hot water cylinder", "Hot water supply to kitchen sink", "Solar panel", "Pipework from solar panel to cylinder", "Expansion vessel", "All necessary valves"]), 'q5-a': ('details', 9, 4, ["Reinforced concrete window cill", "Damp proof course (dpc) wrapped around window cill", "19 mm external render", "100 mm concrete block outer leaf", "Wall tie", "Full-fill cavity insulation", "Proprietary cavity closer", "100 mm concrete block inner leaf", "15 mm internal plaster with skim coat", "Window board", "Triple glazing with low e glass"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 LEDGER = [(1, 'Answer Question'), (4, 'any five'), (4, 'or')]
 GAPS = {'q2-c': {'cons-4-1'}, Q8: {'cons-4-4', 'cons-10-1', 'cons-10-4'}}
 RETIRED = [('card-source-bindings.json', 'q3-a'), ('card-corrections.json', 'q6-b'), ('card-corrections.json', 'q9-c')]
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3))],
+    'q1-a': [('details', 35, None), ('dimensions', 3, r(3))],
     'q1-b': [('dpc', 4, [0, 4]), ('presentation', 8, BAND8)],
     'q2-a': [('sketch', 10, r(10)), ('presentation', 8, BAND8), ('notes', 8, r(8)), ('type-thickness', 4, r(4))],
     'q2-b': [('advantage-1', 6, r(6)), ('advantage-2', 6, r(6))],
     'q2-c': [('presentation', 8, BAND8)],
-    'q3-a': [('items', 28, list(range(0, 29, 4))), ('presentation', 8, BAND8)],
+    'q3-a': [('items', 28, None), ('presentation', 8, BAND8)],
     'q3-b': [('advantage-1', 4, r(4)), ('advantage-2', 4, r(4))],
     'q3-c': [('presentation', 6, BAND6)],
     'q4-a': [('sketch', 4, r(4)), ('presentation', 8, BAND8), ('detail-1', 6, r(6)), ('detail-2', 6, r(6))],
     'q4-b': [('reason-1', 5, r(5)), ('reason-2', 5, r(5))],
     'q4-c': [('use-1', 5, r(5)), ('use-2', 5, r(5)), ('reason-1', 3, r(3)), ('reason-2', 3, r(3))],
-    'q5-a': [('details', 36, list(range(0, 37, 4))), ('dimensions', 3, r(3))],
+    'q5-a': [('details', 36, None), ('dimensions', 3, r(3))],
     'q5-b': [('cold-bridge', 3, [0, 3]), ('presentation', 8, BAND8)],
     'q6-a': [('reason-1', 5, r(5)), ('reason-2', 5, r(5))],
     'q6-b': [(f'item-{i}', 10, r(10)) for i in (1, 2, 3)],

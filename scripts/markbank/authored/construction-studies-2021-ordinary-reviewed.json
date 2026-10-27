@@ -36,20 +36,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: slates on 50 × 30 mm battens; breather membrane; rafters 200 × 50 mm; ceiling joists with insulation between; insulated plasterboard with skim; wallplate 100 × 75 mm; airtight membrane and tape; ventilation; tilting fillet, fascia, soffit and gutter; block inner leaf; 200 mm full-fill cavity with ties and cavity closer; block outer leaf; 13 mm plaster and 19 mm render.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: slates on 50 × 30 mm battens; breather membrane; rafters 200 × 50 mm; ceiling joists with insulation between; insulated plasterboard with skim; wallplate 100 × 75 mm; airtight membrane and tape; ventilation; tilting fillet, fascia, soffit and gutter; block inner leaf; 200 mm full-fill cavity with ties and cavity closer; block outer leaf; 13 mm plaster and 19 mm render.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Breather membrane",
+                "Rafters 200 mm × 50 mm",
+                "Ceiling joist with insulation between joists",
+                "Insulated plasterboard with skim coat",
+                "Wallplate 100 mm × 75 mm",
+                "Airtight membrane and tape",
+                "Ventilation",
+                "Tilting fillet, fascia, soffit and eaves gutter",
+                "Concrete block inner leaf",
+                "Concrete block outer leaf",
+                "13 mm internal plaster and 19 mm render"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -245,20 +252,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: slates on 50 × 30 mm battens; breather membrane; rafters 200 × 50 mm; ceiling joists with insulation between; insulated plasterboard with skim; wallplate 100 × 75 mm; airtight membrane and tape; ventilation; tilting fillet, fascia, soffit and gutter; block inner leaf; 200 mm full-fill cavity with ties and cavity closer; block outer leaf; 13 mm plaster and 19 mm render.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: slates on 50 × 30 mm battens; breather membrane; rafters 200 × 50 mm; ceiling joists with insulation between; insulated plasterboard with skim; wallplate 100 × 75 mm; airtight membrane and tape; ventilation; tilting fillet, fascia, soffit and gutter; block inner leaf; 200 mm full-fill cavity with ties and cavity closer; block outer leaf; 13 mm plaster and 19 mm render.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Breather membrane",
+                "Rafters 200 mm × 50 mm",
+                "Ceiling joist with insulation between joists",
+                "Insulated plasterboard with skim coat",
+                "Wallplate 100 mm × 75 mm",
+                "Airtight membrane and tape",
+                "Ventilation",
+                "Tilting fillet, fascia, soffit and eaves gutter",
+                "Concrete block inner leaf",
+                "Concrete block outer leaf",
+                "13 mm internal plaster and 19 mm render"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1064,21 +1078,28 @@
         "rows": [
           {
             "id": "items",
-            "kind": "criterion",
-            "verbatim": "Any 8 × 4 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 32,
-            "contextNote": "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Marked items: mains water supply; water meter; 15 mm rising main; kitchen sink; connection to the sink; ball valve; cold water storage tank; insulation around the tank; 28 mm overflow; pipe insulation; valves; annotation.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32
-            ]
+            "contextNote": "Any 8 × 4 marks. Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Marked items: mains water supply; water meter; 15 mm rising main; kitchen sink; connection to the sink; ball valve; cold water storage tank; insulation around the tank; 28 mm overflow; pipe insulation; valves; annotation.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 4,
+              "options": [
+                "Mains water supply",
+                "Water meter",
+                "15 mm rising main",
+                "Kitchen sink",
+                "Connection to kitchen sink",
+                "Ball-valve",
+                "Cold water storage tank",
+                "Insulation around storage tank",
+                "28 mm overflow",
+                "Pipe insulation",
+                "Valves / pumps",
+                "Annotation"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1279,21 +1300,28 @@
         "rows": [
           {
             "id": "a-items",
-            "kind": "criterion",
-            "verbatim": "Any 8 × 4 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 32,
-            "contextNote": "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Marked items: mains water supply; water meter; 15 mm rising main; kitchen sink; connection to the sink; ball valve; cold water storage tank; insulation around the tank; 28 mm overflow; pipe insulation; valves; annotation.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32
-            ]
+            "contextNote": "Any 8 × 4 marks. Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Marked items: mains water supply; water meter; 15 mm rising main; kitchen sink; connection to the sink; ball valve; cold water storage tank; insulation around the tank; 28 mm overflow; pipe insulation; valves; annotation.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 4,
+              "options": [
+                "Mains water supply",
+                "Water meter",
+                "15 mm rising main",
+                "Kitchen sink",
+                "Connection to kitchen sink",
+                "Ball-valve",
+                "Cold water storage tank",
+                "Insulation around storage tank",
+                "28 mm overflow",
+                "Pipe insulation",
+                "Valves / pumps",
+                "Annotation"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -2118,20 +2146,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: block outer leaf; full-fill insulated cavity; wall ties; block inner leaf; 13 mm plaster and 19 mm render; cavity closer; DPC; precast concrete cill with throating/drip; window board; airtight tape; window frame 120 × 80 mm; triple glazing.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: block outer leaf; full-fill insulated cavity; wall ties; block inner leaf; 13 mm plaster and 19 mm render; cavity closer; DPC; precast concrete cill with throating/drip; window board; airtight tape; window frame 120 × 80 mm; triple glazing.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf",
+                "Full filled insulated cavity",
+                "Wall ties",
+                "Concrete block inner leaf",
+                "13 mm internal plaster and 19 mm external render",
+                "Cavity closer",
+                "DPC",
+                "Precast concrete window cill with throating / drip",
+                "Window board",
+                "Airtight tape",
+                "Window frame 120 mm × 80 mm",
+                "Triple glazing"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2326,20 +2362,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: block outer leaf; full-fill insulated cavity; wall ties; block inner leaf; 13 mm plaster and 19 mm render; cavity closer; DPC; precast concrete cill with throating/drip; window board; airtight tape; window frame 120 × 80 mm; triple glazing.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: block outer leaf; full-fill insulated cavity; wall ties; block inner leaf; 13 mm plaster and 19 mm render; cavity closer; DPC; precast concrete cill with throating/drip; window board; airtight tape; window frame 120 × 80 mm; triple glazing.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf",
+                "Full filled insulated cavity",
+                "Wall ties",
+                "Concrete block inner leaf",
+                "13 mm internal plaster and 19 mm external render",
+                "Cavity closer",
+                "DPC",
+                "Precast concrete window cill with throating / drip",
+                "Window board",
+                "Airtight tape",
+                "Window frame 120 mm × 80 mm",
+                "Triple glazing"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -5658,12 +5702,15 @@
     {
       "cardId": "cons-2021-ol-q1-a",
       "priorSha256": "613724b4609cfaa66fcda56fec6d8b1fb958dc69aa923d415d8bd32b2300aa43",
-      "correctedSha256": "ed81c9007058837b7e8b82acf314ec61d052d72d754923232b5226225ca8100f",
+      "correctedSha256": "4a2ddb909ab45647cb94ac8c4bad254b4cb1e13f414b95c5bfd952f8faf1044f",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 47,
       "priorTopicId": "cons-3-9",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47."
+      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47.",
+      "supersededSha256": [
+        "ed81c9007058837b7e8b82acf314ec61d052d72d754923232b5226225ca8100f"
+      ]
     },
     {
       "cardId": "cons-2021-ol-q1-b",
@@ -5688,12 +5735,15 @@
     {
       "cardId": "cons-2021-ol-q3-a",
       "priorSha256": "ee848c69c6945a91b99f75b980c99dc83dcf3bca289731ec8683b2698547fafa",
-      "correctedSha256": "d3986a469f112ea324ea42534cf682a2cb7a5f7a4a4ffa39e42f97d5a52a02fd",
+      "correctedSha256": "5fc686078e3fe27bf432fa98acdfe94fcbadb1e712c6e01c26fb95bba452e62d",
       "priorTotalMarks": 32,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketch band (8/6/4) to the best-eight items: 32 → 40."
+      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketch band (8/6/4) to the best-eight items: 32 → 40.",
+      "supersededSha256": [
+        "d3986a469f112ea324ea42534cf682a2cb7a5f7a4a4ffa39e42f97d5a52a02fd"
+      ]
     },
     {
       "cardId": "cons-2021-ol-q3-b",
@@ -5731,12 +5781,15 @@
     {
       "cardId": "cons-2021-ol-q5-a",
       "priorSha256": "14cc2e56fc3f88b1fbc48973b52e51092ecc11797967f594566f12f9d232b864",
-      "correctedSha256": "acadea97c559b923a7d7a051b07b792d851877a424dc7177a5a9095d32415a6b",
+      "correctedSha256": "f6beff59f37879fdd9a4d98a4d223fe916e2eea6ef71a28d289c93d998748f58",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-3-6",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46."
+      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46.",
+      "supersededSha256": [
+        "acadea97c559b923a7d7a051b07b792d851877a424dc7177a5a9095d32415a6b"
+      ]
     },
     {
       "cardId": "cons-2021-ol-q5-b",
@@ -6184,6 +6237,24 @@
       "priorSha256": "9a5db56fbf26741f9957ea35556a4679759fdf34c8ed02e066e11661eccf3658",
       "correctedSha256": "eaf0fc96ae08a004d648c5ea72f924611d2a356070cecda20257f939e7042d0d",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2021-ol-q1-complete",
+      "priorSha256": "6d06a6d3fba803de51778ec768391746536306a69b447350434fcfb4d0e502f8",
+      "correctedSha256": "d8a4383e8a7dad403bdc962c94c545f5b558c755d904d4405bd686d3a88a9c5f",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2021-ol-q3-complete",
+      "priorSha256": "14251612b2e73a960651151917cacd2951081f6ce00eec3a7178af5dec6ab9ac",
+      "correctedSha256": "17227e096fa4fcfab341a637ea93d94f1de6896957ad4f8b57d1439f5dad3209",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2021-ol-q5-complete",
+      "priorSha256": "17c2415036623065deadb8695274bc383cb29f51d608becf8b685b58b3f48193",
+      "correctedSha256": "6efbaab13bd354e0d32b3b1f5cef1f2bf245ec33fb0deffddbf5f736a8eb57fb",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }
