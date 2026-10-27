@@ -539,8 +539,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         last = { p, bottom: r[3] };
       }
     }
-    // 1,328 cut, 52 priced by a scale over the whole solution, 106 in the residue (2026-10-27).
-    expect([cut, scaleOnly, residue.size]).toEqual([1328, 52, 106]);
+    // 1,347 cut, 52 priced by a scale over the whole solution, 87 in the residue (2026-10-27, residue wave).
+    expect([cut, scaleOnly, residue.size]).toEqual([1347, 52, 87]);
     for (const card of appliedMathsResidue.cards) expect(card.reason.length, card.id).toBeGreaterThan(0);
   });
 
