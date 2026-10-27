@@ -440,7 +440,13 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
     expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(59);
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options)).toEqual([['Liverpool', 'Manchester', 'Birmingham', 'Leeds']]);
-    expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks])).toEqual([['Clonmel prison', 6, [0, 3, 6]]]);
+    // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
+    expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
+      ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
+      ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
+      ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
+      ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
+    ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
   });
 

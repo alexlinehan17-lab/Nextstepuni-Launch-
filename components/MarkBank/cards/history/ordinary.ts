@@ -5434,7 +5434,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did the United Irishmen wear in their hats?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Green ribbons (ribbons = 3m)", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Green ribbons", marks: 6, contextNote: "ribbons = 3m", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13509,7 +13509,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Belfast experience in April-May, 1941?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Massive German air raids (air raids alone = 3m)", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Massive German air raids", marks: 6, contextNote: "air raids alone = 3m", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13845,7 +13845,7 @@ export const CARDS: SecCard[] = [
     questionText: "What arrangement was already in place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The original six members had access to Irish, British and Danish fisheries (access to Irish fisheries alone = 3m)", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "The original six members had access to Irish, British and Danish fisheries", marks: 6, contextNote: "access to Irish fisheries alone = 3m", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",

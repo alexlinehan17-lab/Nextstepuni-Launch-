@@ -6870,11 +6870,28 @@
   "rows": [
    {
     "id": "r-labels",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "1 mark per label = 11 marks Price Quantity P1 Q1 C1 E D/AR MR MC AC SNP",
     "marks": 11,
     "openList": true,
-    "contextNote": "The diagram, 1 mark for each of the 11 labels: the two axes, P1, Q1, C1, E, D/AR, MR, MC, AC and the supernormal profit area. The official diagram is shown in the figure."
+    "contextNote": "The diagram, 1 mark for each of the 11 labels: the two axes, P1, Q1, C1, E, D/AR, MR, MC, AC and the supernormal profit area. The official diagram is shown in the figure.",
+    "group": {
+     "claimMax": 11,
+     "perOption": 1,
+     "options": [
+      "Price",
+      "Quantity",
+      "P1",
+      "Q1",
+      "C1",
+      "E",
+      "D/AR",
+      "MR",
+      "MC",
+      "AC",
+      "SNP"
+     ]
+    }
    },
    {
     "id": "r-explanation",
@@ -15685,11 +15702,104 @@
   "rows": [
    {
     "id": "r-total",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "€27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million",
     "marks": 16,
     "openList": true,
-    "contextNote": "Add all six slices, including the €2m and €7m ones: €27.5m + €14m + €17m + €27.5m + €2m + €7m = €95 million. Six figures at 2 marks and the answer 4. Deduct 1 each for omission of € and million."
+    "contextNote": "Add all six slices, including the €2m and €7m ones: €27.5m + €14m + €17m + €27.5m + €2m + €7m = €95 million. Six figures at 2 marks and the answer 4. Deduct 1 each for omission of € and million.",
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "parts": [
+     {
+      "id": "f1",
+      "verbatim": "€27.5m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "f2",
+      "verbatim": "€14m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "f3",
+      "verbatim": "€17m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "f4",
+      "verbatim": "€27.5m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "f5",
+      "verbatim": "€2m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "f6",
+      "verbatim": "€7m",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "answer",
+      "verbatim": "€ 95 million",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    ]
    }
   ],
   "notes": ""
@@ -16101,11 +16211,20 @@
   "rows": [
    {
     "id": "r-income",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Y = C + I + G + (X-M) Y = €700m+ €200m + €400m + €300m - €200m Y = €1,400m",
     "marks": 18,
     "openList": true,
-    "contextNote": "Y = C + I + G + (X − M) = €700m + €200m + €400m + €300m − €200m = €1,400m. Imports are subtracted. Six steps at 3 marks; deduct 1 each for omission of € and million."
+    "contextNote": "Y = C + I + G + (X − M) = €700m + €200m + €400m + €300m − €200m = €1,400m. Imports are subtracted. Six steps at 3 marks; deduct 1 each for omission of € and million.",
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9,
+     12,
+     15,
+     18
+    ]
    }
   ],
   "notes": ""
@@ -16134,11 +16253,17 @@
   "rows": [
    {
     "id": "r-trade",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Balance of Trade: Exports – Imports €300m – €200m = €100m",
     "marks": 9,
     "openList": true,
-    "contextNote": "Balance of trade = exports − imports = €300m − €200m = €100m. Consumption, investment and government spending play no part. Three steps at 3 marks; deduct 1 each for omission of € and million."
+    "contextNote": "Balance of trade = exports − imports = €300m − €200m = €100m. Consumption, investment and government spending play no part. Three steps at 3 marks; deduct 1 each for omission of € and million.",
+    "permittedMarks": [
+     0,
+     3,
+     6,
+     9
+    ]
    }
   ],
   "notes": ""
