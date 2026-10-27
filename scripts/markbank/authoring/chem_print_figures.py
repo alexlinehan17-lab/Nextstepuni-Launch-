@@ -272,6 +272,15 @@ MASKS = {
     # "dropping funnel and buchner //" (scheme page 5, x 192-333, y 450-463; dark pixels 0-52 x
     # 59-73 of the crop), whited out; the drawing's own pixels start at column 91 in those rows.
     'chemistry-2012-OL-scheme-q1d.png': [(0, 55, 58, 77)],
+    # 2013 HL Q2(e): the top of the steam distillation apparatus stands level with the foot of
+    # (c)'s mark "(12)" (paper page 3, x 528-557, y 160-172; dark pixels 339-375 x 0-17 of the
+    # crop), whited out; the apparatus's own pixels in those rows end at column 58.
+    'chemistry-2013-HL-paper-q2e.png': [(334, 0, 380, 19)],
+    # 2013 HL Q11(a)(iii): the graph's panel ends level with (i)'s line "(i) Name the elements
+    # labelled B and P in the graph." (paper page 7, x 93-345, y 223-236; dark pixels 11-522 x
+    # 326-346 of the stacked print), whited out; the graph's letters end at row 317 and its
+    # "Element" label starts at column 836.
+    'chemistry-2013-HL-paper-q11a-iii-print.png': [(0, 320, 545, 347)],
 }
 
 

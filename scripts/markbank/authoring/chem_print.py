@@ -363,6 +363,24 @@ def split_heads(lines, year, lvl):
 # Parts the paper numbers wrongly, as (the key read, the marker printed).
 MISPRINTED = []
 
+# 2013 HL: the paper sets three of its heads in one run with their words, as the 2013
+# Ordinary paper sets all of its own: "8. Study the reaction scheme and answer the
+# questions that follow." (page 5, x 50, y 600), "10. Answer any two of the parts (a), (b)
+# and (c)." (page 6, x 50, y 376) and "11. Answer any two ..." (page 7, x 50, y 42).
+# Unread, the paper reader found Questions 1-7 only and filed Q8-Q11 under Q7(e). The
+# sitting joins split_heads' set: no other line of the 2013 Higher paper at x < 70 opens
+# with a number and a full stop. (Its scheme's footer reads "Chemistry ATAL 2013", which
+# the Ordinary footer rule does not match; it is dropped in Printed, gated to 2013 HL.)
+OLD_OL_HEADS.add((2013, 'hl'))
+# 2013 HL paper page 7 sets Q11(c)'s choice as "Answer either part A or part B." (x 72,
+# y 406). CHOICE_AB reads "Answer part A or part B.", so the bold "A" (x 87, y 425) and "B"
+# (x 88, y 623) were read as words of Q11(c) and B's romans fell on A's: the census counted
+# five asks, Q11(c)(i) "What is meant by electrolysis? (4) Distinguish between the terms
+# feedstock ...", where the page prints nine. The letters listed are read as alternatives
+# in the paper (segments' alt_letters). The 2011 Higher paper prints the same words, and
+# joins by its own audit.
+PAPER_ALT_LETTERS = {(2013, 'hl'): {('11', 'c')}}
+
 
 # ── the labelled ("cue") scheme layout, 2010-2023 ───────────────────────────
 # "QUESTION 2" heads a question; the letter, roman and the examiner's cue in
@@ -1142,6 +1160,21 @@ class Printed:
                       and abs(l.x0 - 49.6) < 1 and abs(l.y0 - 339.4) < 1]
             assert len(hidden) == 1, hidden
             self.scheme_lines = [l for l in self.scheme_lines if l is not hidden[0]]
+        if (year, lvl) == (2013, 'hl'):
+            # 2013 HL scheme PDF page 3 (the Introduction) numbers its six notes "1."-"6."
+            # at x 50 (y 136-467) in roman type; every other scheme sets them in bold,
+            # which the reader passes over. Read as heads they opened Q1-Q6 before the
+            # scheme's own "QUESTION 1" (page 5), which was then not the next number:
+            # the rows of Questions 1-6 were all filed under Q6, and paper Q1-Q5 had no
+            # scheme part. The notes are not marking; their numbers are dropped. The
+            # running footer "Chemistry ATAL 2013" (every page, x 50, y 796) is not one
+            # FOOTER reads, and in a labelled scheme every line is answer: it was filed
+            # as an answer of each page's last part. Dropped too.
+            notes = [l for l in self.scheme_lines if l.page == 3 and abs(l.x0 - 50) < 1
+                     and not l.bold and QNUM.match(l.text)]
+            assert [l.text for l in notes] == ['1.', '2.', '3.', '4.', '5.', '6.'], notes
+            self.scheme_lines = [l for l in self.scheme_lines if l not in notes and not (
+                l.y0 > 765 and l.text == 'Chemistry ATAL 2013')]
         if (year, lvl) == (2014, 'ol'):
             # 2014 OL scheme PDF page 15 heads Question 10 "QUESTION 10:" (x 56.6,
             # y 34.3), a colon after the number and its rubric on the line below
@@ -1228,7 +1261,10 @@ class Printed:
                              as_cell(m.group(1)), True)
             lines.append(l)
         self.scheme_lines = lines
-        self.pseg, self.marks = segments(self.paper_lines, answers=False)
+        # (2013 HL: Q11(c)'s alternatives under "Answer either part A or part B.",
+        # PAPER_ALT_LETTERS.)
+        self.pseg, self.marks = segments(self.paper_lines, answers=False,
+                                         alt_letters=PAPER_ALT_LETTERS.get((year, lvl), ()))
         alt_letters = {s.key[:2] for s in self.pseg if s.key[3]}
         self.cue = is_cue_scheme(self.scheme_lines)
         if self.cue:

@@ -796,8 +796,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(21_290);
-    // 19,328 + 1996 - 34, the Chemistry audit: 125 + 83 new cards for the 2026
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(21_381);
+    // 19,328 + 2087 - 34, the Chemistry audit: 125 + 83 new cards for the 2026
     // Higher and Ordinary papers, 41 for 2025 Higher parts the pre-audit deck
     // had joined or missed (one of them, chem-2025-hl-q10-c-i-total, a
     // pre-audit id the base build never shipped), 18 for 2025 Ordinary, 29
@@ -882,7 +882,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    // 9,768 + the Chemistry audit: 1750 new ids (2026 Higher 125, 2026
+    // 9,768 + the Chemistry audit: 1841 new ids (2026 Higher 125, 2026
     // Ordinary 83, 2025 Higher 41, one of them a pre-audit id the base build
     // never shipped, 2025 Ordinary 18, 2024 Higher 29, 2024 Ordinary 22, 2023
     // Higher 23, 2023 Ordinary 27, 2022 Higher 49, 2022 Ordinary 21, 2021
@@ -891,9 +891,9 @@ describe('Mark Bank card preservation', () => {
     // (net 0) and eighteen never-built pre-audit ids aliased (+18).
     // FRESH, carded 2019 back (no card existed): 2019 Higher 101, 2019 Ordinary 105, 2018 Higher
     // 113, 2018 Ordinary 94, 2017 Higher 96, 2017 Ordinary 100, 2016 Higher 97, 2016 Ordinary 88,
-    // 2015 Higher 96, 2015 Ordinary 86, 2014 Higher 96, 2014 Ordinary 78, 2013 Ordinary 81, 2012
-    // Ordinary 81.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_782);
+    // 2015 Higher 96, 2015 Ordinary 86, 2014 Higher 96, 2014 Ordinary 78, 2013 Higher 91, 2013
+    // Ordinary 81, 2012 Ordinary 81.
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_873);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -914,10 +914,10 @@ describe('Mark Bank card preservation', () => {
       .filter(record => record.status === status).length;
     // Every audited sitting's additions and withdrawals, pinned.
     expect(Object.keys(chemistryLedger.papers).sort())
-      .toEqual(['2012 OL', '2013 OL', '2014 HL', '2014 OL', '2015 HL', '2015 OL', '2016 HL',
-        '2016 OL', '2017 HL', '2017 OL', '2018 HL', '2018 OL', '2019 HL', '2019 OL', '2020 HL',
-        '2020 OL', '2021 HL', '2021 OL', '2022 HL', '2022 OL', '2023 HL', '2023 OL', '2024 HL',
-        '2024 OL', '2025 HL', '2025 OL', '2026 HL', '2026 OL']);
+      .toEqual(['2012 OL', '2013 HL', '2013 OL', '2014 HL', '2014 OL', '2015 HL', '2015 OL',
+        '2016 HL', '2016 OL', '2017 HL', '2017 OL', '2018 HL', '2018 OL', '2019 HL', '2019 OL',
+        '2020 HL', '2020 OL', '2021 HL', '2021 OL', '2022 HL', '2022 OL', '2023 HL', '2023 OL',
+        '2024 HL', '2024 OL', '2025 HL', '2025 OL', '2026 HL', '2026 OL']);
     expect([count('2026 HL', 'added'), count('2026 OL', 'added'), count('2025 HL', 'added'),
       count('2025 OL', 'added'), count('2024 HL', 'added'), count('2024 OL', 'added'),
       count('2023 HL', 'added'), count('2023 OL', 'added'), count('2022 HL', 'added'),
@@ -927,8 +927,8 @@ describe('Mark Bank card preservation', () => {
       count('2017 OL', 'added'), count('2017 HL', 'added'), count('2016 OL', 'added'),
       count('2016 HL', 'added'), count('2015 OL', 'added'), count('2015 HL', 'added'),
       count('2014 OL', 'added'), count('2014 HL', 'added'), count('2013 OL', 'added'),
-      count('2012 OL', 'added')])
-      .toEqual([125, 83, 41, 18, 29, 22, 23, 27, 49, 21, 21, 11, 116, 98, 105, 101, 94, 113, 100, 96, 88, 97, 86, 96, 78, 96, 81, 81]);
+      count('2012 OL', 'added'), count('2013 HL', 'added')])
+      .toEqual([125, 83, 41, 18, 29, 22, 23, 27, 49, 21, 21, 11, 116, 98, 105, 101, 94, 113, 100, 96, 88, 97, 86, 96, 78, 96, 81, 81, 91]);
     expect([count('2025 HL', 'corrected') + count('2025 HL', 'unchanged'),
       count('2025 HL', 'withdrawn')]).toEqual([103, 1]);
     expect([count('2025 OL', 'corrected') + count('2025 OL', 'unchanged'),
@@ -981,6 +981,8 @@ describe('Mark Bank card preservation', () => {
       count('2013 OL', 'withdrawn')]).toEqual([0, 0]);
     expect([count('2012 OL', 'corrected') + count('2012 OL', 'unchanged'),
       count('2012 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2013 HL', 'corrected') + count('2013 HL', 'unchanged'),
+      count('2013 HL', 'withdrawn')]).toEqual([0, 0]);
     // Every id the ledger keeps or adds is live, under its sitting's prefix.
     for (const [paper, records] of Object.entries(chemistryLedger.papers)) {
       const [year, level] = paper.split(' ');

@@ -873,6 +873,11 @@ def chemistry_choice_parts(year, level, parts, texts):
     segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
                                   answers=False)
     choice = {}
+    if (year, lvl) in chem_print.PAPER_ALT_LETTERS:
+        # (2013 HL prints Q11(c)'s choice "Answer either part A or part B.": its
+        # alternatives are read as chem_print.Printed reads them, PAPER_ALT_LETTERS.)
+        segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
+                                      answers=False, alt_letters=chem_print.PAPER_ALT_LETTERS[(year, lvl)])
     for sg in segs:
         q, letter, roman, alt = sg.key
         if alt:

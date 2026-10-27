@@ -6070,5 +6070,291 @@
   "description": "The marking scheme's own print of its answer to 2012 OL Q11(c)B(i), as the State Examinations Commission set it: the completed table headed \"PROPERTY\", \"METALS\" and \"NON-METALS\": \"Hardness\", \"hard /\", \"soft //\"; \"Lustre\", \"yes /\", \"no //\"; \"Conduction of heat\", \"yes /\", \"no //\"; \"Conduction of electricity\", \"yes /\", \"no //\"; \"Ductility\", \"yes /\", \"no //\".",
   "questionRef": "2012 OL Q11(c)B(i)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of a glass bottle with a stopper in its neck, a dropper with a rubber bulb pushed down through the stopper into the bottle, and a second stopper lying on its side beside the bottle.",
+  "questionRef": "2013 HL Q1"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q2e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of a steam distillation apparatus: a conical flask of water with a long safety tube in it, heated by a Bunsen burner below and to the left, its steam tube leading into a round-bottomed flask of plant material, which feeds a sloping condenser draining into a small conical flask; two arrows by the condenser's side tubes and the words \"Arrows show direction of water flow.\"",
+  "questionRef": "2013 HL Q2(e)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An Irish postage stamp: \"Éire\" and \"55c\" across the top; on the left a portrait of Robert Boyle over \"COTHROM 350 BLIAIN DHLÍ BOYLE\"; on the right a graph with \"V\" up the side and \"P\" along the foot, a curve falling from top left to bottom right, \"PV=k\" beside it, over \"350TH ANNIVERSARY OF BOYLE'S LAW\".",
+  "questionRef": "2013 HL Q5(a)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q5c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q5(c): \"(c) Further research and scientific discoveries, including Heisenberg’s uncertainty principle (1927), led to significant modification of Bohr’s original atomic structure theory of 1913. Explain the underlined term. Give one other factor that also contributed to the need for modification of Bohr’s 1913 theory. These modifications included the introduction of the idea of atomic orbitals. What is an atomic orbital? (15)\", the words \"uncertainty principle\" underlined.",
+  "questionRef": "2013 HL Q5(c)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q6b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two structural formulas, one above the other: a straight chain of five carbons, H–C–C–C–C–C–H, with an H above and below each carbon, labelled \"A\"; and a chain of four carbons, H–C–C–C–C–H, with an H above and below each carbon except the second, which carries \"CH₃\" above it, labelled \"B\".",
+  "questionRef": "2013 HL Q6(b)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q6b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q6(b)(ii): \"(b) Compound A is obtained from the fractional distillation of crude oil and is converted to compound B by isomerisation.\"; \"(ii) Explain the term isomerisation. Draw the structural formula of another isomer of A and B.\"; then the two structures, a straight chain of five carbons, H–C–C–C–C–C–H, with an H above and below each carbon, labelled \"A\", and a chain of four carbons, H–C–C–C–C–H, with an H above and below each carbon except the second, which carries \"CH₃\" above it, labelled \"B\".",
+  "questionRef": "2013 HL Q6(b)(ii)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q6c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q6(c): \"(c) Ethyne is produced from calcium carbide and water according to the following balanced equation:\"; \"CaC₂(s) + 2H₂O(l) → C₂H₂(g) + Ca(OH)₂(s)\" in bold, the state symbols set as subscripts; \"Calculate the heat change for this reaction given that the heats of formation of calcium carbide, water, ethyne and calcium hydroxide are –59.8, –285.8, 227.4 and –985.2 kJ mol⁻¹ respectively. (15)\"",
+  "questionRef": "2013 HL Q6(c)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's a reaction scheme of boxes and arrows: \"C₂H₄\" with an arrow \"X\" to \"C₂H₆\", an arrow \"Z\" to \"CH₃CH₂Cl\" and an arrow \"W\" to \"CH₂ClCH₂Cl\"; \"C₂H₆\" with an arrow \"Y\" to \"CH₃CH₂Cl\"; \"CH₂ClCH₂Cl\" with an arrow \"– HCl\" down to \"A\"; and \"A\" with an arrow \"polymerisation\" to \"PVC\".",
+  "questionRef": "2013 HL Q8"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q8a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q8(a): \"Study the reaction scheme and answer the questions that follow.\"; \"(a) Ethane and ethene belong to the homologous series of alkanes and alkenes, respectively. Explain the underlined term. What type of reaction was involved in conversion X? How does the geometry around the carbon atoms change as a result of conversion X? (15)\", the words \"homologous series\" underlined; then a reaction scheme of boxes and arrows: \"C₂H₄\" with an arrow \"X\" to \"C₂H₆\", an arrow \"Z\" to \"CH₃CH₂Cl\" and an arrow \"W\" to \"CH₂ClCH₂Cl\"; \"C₂H₆\" with an arrow \"Y\" to \"CH₃CH₂Cl\"; \"CH₂ClCH₂Cl\" with an arrow \"– HCl\" down to \"A\"; and \"A\" with an arrow \"polymerisation\" to \"PVC\".",
+  "questionRef": "2013 HL Q8(a)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q8c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q8(c): \"Study the reaction scheme and answer the questions that follow.\"; \"(c) Describe the mechanism of reaction W. (12)\"; then a reaction scheme of boxes and arrows: \"C₂H₄\" with an arrow \"X\" to \"C₂H₆\", an arrow \"Z\" to \"CH₃CH₂Cl\" and an arrow \"W\" to \"CH₂ClCH₂Cl\"; \"C₂H₆\" with an arrow \"Y\" to \"CH₃CH₂Cl\"; \"CH₂ClCH₂Cl\" with an arrow \"– HCl\" down to \"A\"; and \"A\" with an arrow \"polymerisation\" to \"PVC\".",
+  "questionRef": "2013 HL Q8(c)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q8d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q8(d): \"Study the reaction scheme and answer the questions that follow.\"; \"(d) Draw the structure of A and give its name. (9)\"; then a reaction scheme of boxes and arrows: \"C₂H₄\" with an arrow \"X\" to \"C₂H₆\", an arrow \"Z\" to \"CH₃CH₂Cl\" and an arrow \"W\" to \"CH₂ClCH₂Cl\"; \"C₂H₆\" with an arrow \"Y\" to \"CH₃CH₂Cl\"; \"CH₂ClCH₂Cl\" with an arrow \"– HCl\" down to \"A\"; and \"A\" with an arrow \"polymerisation\" to \"PVC\".",
+  "questionRef": "2013 HL Q8(d)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q9b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's the equation \"Fe³⁺(aq) + CNS⁻(aq) ⇌ Fe(CNS)²⁺(aq)\" in bold, the state symbols set as subscripts, with \"yellow\" under Fe³⁺ and \"red\" under Fe(CNS)²⁺, an equilibrium arrow between the two sides.",
+  "questionRef": "2013 HL Q9(b)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q9c-write-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q9(c): the equation \"Fe³⁺(aq) + CNS⁻(aq) ⇌ Fe(CNS)²⁺(aq)\" in bold, the state symbols set as subscripts, with \"yellow\" under Fe³⁺ and \"red\" under Fe(CNS)²⁺; then \"(c) Write the equilibrium constant (Kc) expression for this reaction. (6)\"",
+  "questionRef": "2013 HL Q9(c)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q9c-calc-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q9(c): the equation \"Fe³⁺(aq) + CNS⁻(aq) ⇌ Fe(CNS)²⁺(aq)\" in bold, the state symbols set as subscripts, with \"yellow\" under Fe³⁺ and \"red\" under Fe(CNS)²⁺; then \"A mixture of 1.0 × 10⁻³ moles each of iron(III) chloride and potassium thiocyanate was allowed to come to equilibrium in 1 litre of solution at room temperature according to the equation above. It was found that 1.1 × 10⁻⁴ moles Fe(CNS)²⁺ were present in the solution at equilibrium. Calculate the value of the equilibrium constant (Kc) for the reaction. (12)\"",
+  "questionRef": "2013 HL Q9(c)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's a line graph, \"1st Ionisation Energy kJ/mol\" up the side and \"Element\" along the foot, its 31 points lettered \"A\" to \"Z\" then \"AA\" to \"EE\"; the line rises from A to a peak at B, drops to C, climbs in steps to a peak at J, drops to K, climbs to a peak at R, drops to S, and runs nearly level from S to EE with a small rise at DD; a horizontal arrow from the point at D points to the side axis, marked \"x\".",
+  "questionRef": "2013 HL Q11(a)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q11a-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q11(a)(iii): \"The graph shows the first ionisation energy values, displayed in order of increasing atomic number, for the first 31 elements of the periodic table. Refer to the table of first ionisation energy values on page 80 of the formulae and tables booklet.\"; then a line graph, \"1st Ionisation Energy kJ/mol\" up the side and \"Element\" along the foot, its 31 points lettered \"A\" to \"Z\" then \"AA\" to \"EE\"; the line rises from A to a peak at B, drops to C, climbs in steps to a peak at J, drops to K, climbs to a peak at R, drops to S, and runs nearly level from S to EE with a small rise at DD; a horizontal arrow from the point at D points to the side axis, marked \"x\"; then \"(iii) Explain why the first ionisation energy value of the element labelled H is lower than that of the element labelled G. (6)\"",
+  "questionRef": "2013 HL Q11(a)(iii)"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of the electrolysis of molten lead bromide: a battery of cells at the top, wired through an ammeter, a circle marked \"A\", to two rods dipping into a dish of grey melt, the melt labelled \"PbBr₂\" with an arrow; a Bunsen burner flame heats the dish from below.",
+  "questionRef": "2013 HL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2013-HL-paper-q11c-b-iv-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 HL Q11(c)B, after (iv): \"Select one of the following Irish manufacturing industries:\"; three columns, \"ammonia manufacture\" over \"Cobh (now closed)\", \"nitric acid manufacture\" over \"Arklow (now closed)\" and \"periclase manufacture\" over \"Drogheda\", in bold; then \"Give a reason why the process you chose was located at the site mentioned.\"",
+  "questionRef": "2013 HL Q11(c)B(iv)"
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q1f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q1(f), as the State Examinations Commission set it: \"0.00047 mol l⁻¹ [0.00047 gets (6) even if when rounded up to 0.0005.] (6)\"; boxed, 200 × x over 1 = 9.4 × 0.02 over 2 (3) and \"x = 0.00047 (3)\"; beside the box \"[No marks for formula alone.]\"; below it \"[If 0.0005 is used in the following calculations (–1)]\".",
+  "questionRef": "2013 HL Q1(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q2(c), as the State Examinations Commission set it: \"DESCRIBE:\" then three methods, each beside its labelled drawing. \"Paper chromatography [Lid not required in diagram.]\", a tank holding a strip labelled \"paper\", a dot labelled \"mixture\" near its foot and a layer labelled \"solvent\"; \"apply mixture using dropper (capillary tube) / spot on paper // slightly (just, c.2 cm) above (below if solvent at top) eluent* // in tank (beaker, other suitable container) with eluent* // elution described / solvent moves up** (down) separating components\", \"[The elution stage must be described but separation may be shown. The elution stage may be shown on a second diagram which shows the solvent front and the separation.]\", \"(4 × 3)\"; \"or\"; \"Thin-layer chromatography [Lid not required in diagram.]\", a tank holding a slanting plate labelled \"plate\", a dot labelled \"mixture\" and a layer labelled \"solvent\", with the same four points for a plate, \"(4 × 3)\"; \"[**Accept “soaks up” or “absorbs” for “moves up”.]\"; \"or\"; \"Column chromatography\", a column labelled \"solvent with mixture\", \"powder\" and \"glass wool\" over a beaker; \"dissolve mixture in eluent* // add to column /add mixture to column // add eluent* (2 × 3)\", \"continue to add eluent* so that it flows through column // separation of components occurs / bands shown on diagram (2 × 3)\", \"[* Accept “mobile phase,” “solvent” or “named solvent” for “eluent” .]\", \"[If there is no diagram, or if the diagram does not have at least one label, deduct 3 marks, but only if at least 3 marks have been awarded.]\"",
+  "questionRef": "2013 HL Q2(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q3e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q3(e), as the State Examinations Commission set it: \"0.075 mol HCl (3)\"; boxed, 75 × 1 over 1000 \"= 0.075 (3)\"; \"4.347 (4.35) kJ (9)\"; boxed, \"Mass: 75 + 75 = 150 cm³ / = 150 g / = 0.15 kg (3)\", \"Temp rise: 20.9 –\" (15.0+13.0) over 2 \"= 6.9 K (3)\", \"Heat prod: 0.15* × 4.2** × 6.9 = 4.347 (4.35) kJ (3)\"; \"[* Number must be <1 to be accepted as kg for consequential marking.]\", \"[Unit (kg) not required but ** where 4200 used, the answer must include the unit joule (J)]\"; \"– 57.96 ( – 58) kJ (6)\"; boxed, 4.347 over 0.075 \"= – (3) 57.96 (3)\".",
+  "questionRef": "2013 HL Q3(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q3f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q3(f), as the State Examinations Commission set it: \"IDENTIFY: corrosive / burns skin / damages eyes (6)\", \"[Accept harmful, irritant, causes rash or itch, etc]\", \"[Do not accept “caustic” or “toxic” but these do not cancel correct answers.]\"; \"DESCRIBE:\" a square symbol of liquid dripping from two test tubes onto a surface and onto a hand, \"/ test tube(s) dripping (pouring) onto surface /\", a square symbol of a black cross, \"/ cross\"; \"[IDENTIFY & DESCRIBE unlinked] (3)\"; \"WHAT: very small temperature rise (change) / small heat change / hard to measure temperature rise (heat change) accurately / greater percentage error (3)\", \"[Do not accept “heat of reaction is smaller.”]\".",
+  "questionRef": "2013 HL Q3(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q4a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q4(a), as the State Examinations Commission set it: \"WRITE: 1s²2s²2p⁶ // 3s²3p⁶3d¹⁰4s² / 3s²3p⁶4s²3d¹⁰ (2 × 3)\"; \"[Accept px²py²pz² for p⁶. Allow with subscripts.]\", x, y and z set as subscripts; \"[Allow (3) for p\" with subscripts x, y and z each carrying a superscript 2 \"but otherwise correct][Allow Ar instead of 1s²2s²2p⁶3s²3p⁶.]\".",
+  "questionRef": "2013 HL Q4(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q4e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q4(e), as the State Examinations Commission set it: \"WHEN: CuO (6)\"; boxed, \"mass of copper = 1.27 g; mass of oxygen = 1.59 – 1.27 = 0.32\", 1.27 over 63.5 \"= 0.02;\" 0.32 over 16 \"= 0.02 (3)\", \"⇒ empirical formula = CuO (3)\".",
+  "questionRef": "2013 HL Q4(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q4h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q4(h), as the State Examinations Commission set it: \"STATE: volume varies directly with kelvin (absolute) temperature /\" V over T* \"= k /\" V₁ over T₁ = V₂ over T₂ \"/ V ∝ T / gas expands by ¹/₂₇₃ of volume at 0 °C for every °C rise in temp // for a definite mass of gas at constant pressure [*Capital T essential in formulas.] (2 × 3)\".",
+  "questionRef": "2013 HL Q4(h)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q6b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q6(b)(ii), as the State Examinations Commission set it: \"EXPLAIN: changing to different structure(s) {structural formula(s)} / different arrangement of atoms / changing straight to branched and vice versa / changing branched to more branched and vice versa / hydrocarbons becoming branched [Do not accept “hydrocarbons becoming straight”.] // that have the same molecular* formula / same atoms [* Not “chemical”.] (2 × 3)\"; \"DRAW: C(CH₃)₄ // (CH₃)₃C(CH₃) // (CH₃)₂C(CH₃)₂ //\", then three drawings separated by \"//\": a carbon with CH₃ above, below, left (H₃C) and right; the same with every H drawn; and a skeletal formula of four lines from one point, one wedged and one hashed; beside them \"In the fully expanded formula the hydrogen atoms may be omitted. The diagram on the right requires some indication of non-planarity.\"; \"(3)\".",
+  "questionRef": "2013 HL Q6(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q6(c), as the State Examinations Commission set it: \"(c) CALCULATE: – 126.4 kJ (15)\"; boxed, five equations, each \"(3)\": \"CaC₂ → Ca + 2C ΔH = 59.8 kJ\", \"2H₂O → 2H₂ + O₂ ΔH = 571.6 kJ\", \"2C + H₂ → C₂H₂ ΔH = 227.4 kJ\", \"Ca + O₂ + H₂ → Ca(OH)₂ ΔH = – 985.2 kJ\", and under a line \"CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂ ΔH = –126.4 kJ\"; \"Equations not required. [Award (3) for 126.4 (+126.4) unless it can be seen to merit more.]\"; boxed below, \"ΔH(reaction) = ΣΔHf(products) – ΣΔHf(reactants) = 227.4 (3) – 985.2 (3) – { – 59.8 (3) – 2 × 285.8 (3)}\", \"or = 227.4 (3) – 985.2 (3) + 59.8 (3) + 571.6 (3)\", \"= – 126.4 kJ (3)\".",
+  "questionRef": "2013 HL Q6(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q7a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q7(a), as the State Examinations Commission set it: \"DEFINE: change in concentration per unit time / rate of change of concentration /\" then \"change in concentration\" over \"time\" as a fraction, in bold; \"(5)\".",
+  "questionRef": "2013 HL Q7(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q7d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q7(d), as the State Examinations Commission set it: \"DESCRIBE: repeat the above procedure for each of the given solutions // find the reciprocals of the times (find the ¹/t values) to get the rates / plot ¹/t against concentration // dividing rates by corresponding thiosulfate concentrations (or vice versa) gives a constant /\" \"rate\" over \"conc\" \"= k /\" \"conc\" over \"rate\" \"= k /\" \"plot of rate against concentration gives a straight line through the origin (0, 0) (3 × 3)\", \"[Marks obtainable from a correct sketch graph with axes labelled.]\".",
+  "questionRef": "2013 HL Q7(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q7e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q7(e), as the State Examinations Commission set it: \"DRAW:\" a reaction profile: a level line rising into a tall hump and falling to a lower level line; a double-headed arrow from a dashed line at the first level up to the top of the hump labelled \"E_A\", and a double-headed arrow between the dashed line and the lower level labelled \"ΔH\"; beside it \"exothermic reaction shown // (i) activation energy (E_A) // (ii) heat of reaction (ΔH) (3 × 3)\", \"The marks for (i) and (ii) may be given for an endothermic reaction diagram.\"",
+  "questionRef": "2013 HL Q7(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q8c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q8(c), as the State Examinations Commission set it: \"DESCRIBE: polarisation of chlorine molecule by double bond / (Clδ+–*Clδ–) // [*Line essential]\", \"followed by heterolytic fission of chlorine molecule (Cl₂) / Cl₂ → Cl⁺ +*Cl⁻ /\", \"[* Bond must not be shown.]\", \"addition (attraction, bonding) of Cl⁺ (Clδ+– Clδ–) to the double bond //\", \"[Do not accept addition of Clδ+; on a diagram Clδ+– Clδ– must be oriented correctly.]\", \"forming a localised carbonium ion* (carbocation*) [*Accept positive carbon (C⁺).] (chloronium ion) /\", then two drawings separated by \"/\" and followed by \"//\": a carbocation, H–C–C with Cl below the first carbon, + on the second and H atoms around; and a three-membered ring of two carbons and a Cl with + inside; \"addition of chloride ion (Cl⁻) to the intermediate (named intermediate) to give 1,2-dichloroethane ANY FOUR: (4 × 3)\"; \"[In each step, an incorrect point cancels a correct point e.g. one incorrect, one correct (0), one incorrect, two correct (3), two incorrect, two correct (0).]\"; \"[Points may be got from suitable diagrams. Where appropriate, allow correct use of curly arrows, e.g\" a drawing of curly arrows from a C=C double bond to Cl–Cl and on to a carbocation and Cl⁻, each step marked \"(3)\", \"]\"; \"[If addition of HCl is described, award (3) for carbonium ion (not chloronium ion – but do not cancel). Award (3) for addition of chloride ion to carbonium ion.]\"",
+  "questionRef": "2013 HL Q8(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q8d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q8(d), as the State Examinations Commission set it: \"DRAW: CH₂ = CHCl /\" beside a drawing of two carbons joined by a double bond, the first carrying two H atoms and the second an H and a Cl, \"(6)\"; \"NAME: 1-chloroethene / chloroethylene / monochloroethene / monochloroethylene / vinyl chloride (3)\".",
+  "questionRef": "2013 HL Q8(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q8e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q8(e), as the State Examinations Commission set it: \"DRAW:\" a chain of four carbons with open bonds at each end, H above the first and third and Cl above the second and fourth, H below each; \"/ – CH₂ – CHCl – CH₂ – CHCl – (5)\"; \"[Accept if formula in brackets with subscript n outside.]\", \"[End bonds not required.]\".",
+  "questionRef": "2013 HL Q8(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q9c-write.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q9(c), as the State Examinations Commission set it: \"WRITE:\" \"[Fe(CNS)²⁺]\" over \"[Fe³⁺][CNS⁻]\" as a fraction, in bold; beside it \"[Accept FeCNS²⁺ for Fe(CNS)²⁺.]\" and \"[Expression inverted (0).]\"; \"(6)\".",
+  "questionRef": "2013 HL Q9(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q9(c), as the State Examinations Commission set it: \"CALCULATE: 138.87 (138.9, 139) M⁻¹ (12)\"; boxed, a table under \"Fe³⁺ + CNS⁻ ⇋ Fe(CNS)²⁺\": \"Start (M) 1.0 × 10⁻³ 1.0 × 10⁻³ 0\", \"Equil (M) 8.9 × 10⁻⁴ (3) Ms the same (3) 1.1 × 10⁻⁴ mol\"; then \"Kc =\" 1.1 × 10⁻⁴ over (8.9 × 10⁻⁴)², \"[Accept correct use of an incorrect Kc expression from (c) WRITE.] (3)\", \"= 138.87 (138.9, 139) (3)\".",
+  "questionRef": "2013 HL Q9(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q10b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q10(b)(ii), as the State Examinations Commission set it: \"(ii) WHAT: 432 g (9)\"; boxed, \"1008 g Fe ÷ 56 = 18 mol (3) ≡ 16 mol Al (3) × 27 = 432 g (3)\"; \"WHAT: 816 g (4)\"; boxed, \"16 mol Al ≡ 8 mol Al₂O₃ (2) × 102 = 816 g (2)\"; in the margin \"Marks may be awarded to candidates for use of correct ratio of masses based on Mr.\"",
+  "questionRef": "2013 HL Q10(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q11a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q11(a)(iii), as the State Examinations Commission set it: \"(iii) EXPLAIN: a half-full p sublevel has associated stability / paired electrons in a p orbital unstable //\"; \"H (oxygen) has lower first ionisation energy (loses electron more easily) because it has a less stable electron configuration than G / is one electron above (away from) stability / 2px²2py¹2pz¹ or 2p⁴ or 2p\" and three orbital boxes holding \"↓↑\", \"↓\" and \"↓\", \"/ loss of electron from H gives half-full 2p\"; \"G (nitrogen) has higher first ionisation energy (loses electron less easily) because it has a more stable electron configuration than H / 2px¹2py¹2pz¹ or 2p³ or 2p\" and three orbital boxes each holding \"↓\", \"/ half-full 2p-sublevel /\"; \"(2 × 3)\".",
+  "questionRef": "2013 HL Q11(a)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-HL-scheme-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 HL Q11(b), as the State Examinations Commission set it: \"CALCULATE: 11.28 (11.3) (12)\"; boxed, \"7 g of NH₄OH = 7 ÷ 35 = 0.2 mol ⇒ 0.2 M NH₄OH (3)\"; then two routes, each boxed: \"[OH⁻] =\" the square root of \"1.8 × 10⁻⁵ × 0.2\" \"/ 1.9 × 10⁻³ (3)\", \"pOH = – log 1.9 × 10⁻³ = 2.72 (2.7) (3)\", \"pH = 14 – 2.72 (2.7) = 11.28 (11.3) (3)\"; and \"[OH⁻] =\" the same square root \"/ 1.9 × 10⁻³ (3)\", \"[H⁺] =\" 1 × 10⁻¹⁴ over that square root \"/\" 1 × 10⁻¹⁴ over 1.9 × 10⁻³ \"/ 5.3 × 10⁻¹² (3)\", \"pH = – log 5.3 × 10⁻¹² = 11.28 (11.3) (3)\".",
+  "questionRef": "2013 HL Q11(b)",
+  "solution": true
  }
 ]
