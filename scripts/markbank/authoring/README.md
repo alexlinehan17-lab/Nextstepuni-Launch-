@@ -177,6 +177,15 @@ subject-specific generators.
   row's note, becomes a printed step on a fixed-tariff point row, and a full
   answer the SEC wrapped onto a second line is joined back from the note
   (`it_scheme.py` joins it at the source now too).
+  Business rubric cards carry the responses the scheme prints for their part
+  as `rubric.expected` rows (`bus_expected.py`): the lifter reads the card's
+  cited "Possible Responses" / "Support Notes" pages, cuts the block at the
+  part's printed marker, drops the echoed question and the page furniture, and
+  keeps one item per printed response; what it cannot lift (a marker with no
+  response under it, a table the text layer flattened, glyph damage, a block
+  that is a whole question) is listed with its pages in
+  `authored/business-expected-review.json`, never typed in. `--write`
+  rewrites `rubric-authored.json`; a second run changes nothing.
   Accounting tasks carry the scheme's priced lines as rows (`acc_rows.py`,
   `cards/accounting/rows.json`): the scheme PDF is read as word lines with
   PyMuPDF and every bracketed mark becomes a row — the figure before it and

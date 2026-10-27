@@ -1085,6 +1085,24 @@ export interface BusinessAllocation {
   requiresAnyOf?: string[];
 }
 
+/** One response the SEC's scheme prints for a Business part — a bullet, a
+ * numbered line or a heading with the prose under it — lifted from the cited
+ * "Possible Responses" / "Support Notes" page by bus_expected.py. The scheme
+ * calls these a sample, never an exhaustive list, so a row is what the scheme
+ * printed, not the only answer that scores. */
+export interface BusinessExpectedItem {
+  id: string;
+  text: string;
+  /** The lines the scheme prints under a heading: the explanation and its case link. */
+  detail?: string[];
+}
+
+export interface BusinessExpected {
+  /** The scheme page the items were read from. */
+  page: number;
+  items: BusinessExpectedItem[];
+}
+
 export interface BusinessRubric {
   system: 'business';
   taskRequirements: string[];
@@ -1094,6 +1112,10 @@ export interface BusinessRubric {
     label: string;
     allocations: BusinessAllocation[];
   }>;
+  /** The scheme's printed responses for this part, as rows the student can
+   * claim; absent where bus_expected.py could not lift them (listed in
+   * scripts/markbank/authored/business-expected-review.json). */
+  expected?: BusinessExpected;
   /** Exact official support notes, shown only after the scheme is revealed. */
   schemeFileid: string;
   schemePages: number[];

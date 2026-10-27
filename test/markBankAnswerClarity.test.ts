@@ -49,7 +49,12 @@ import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
-import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
+import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { businessExpectedLayout } from '../components/MarkBank/businessRubric';
+import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type BusinessRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
 
 type Guided = { rubric?: { answerGuide?: string[]; schemeGuidance?: string[]; criteria?: Array<{ guidance?: string[]; permittedMarks?: number[]; guidanceKind?: string; rowMarks?: number[] }> }; criteria?: Array<{ guidance?: string[]; guidanceKind?: string; rowMarks?: number[] }> };
@@ -547,6 +552,70 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
     expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
     expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([16, 93]);
+  });
+
+  it('Business: the responses the scheme prints for a part are rows on the card, each lifted from the cited scheme page', () => {
+    const cards = [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY].filter((card): card is SecRubricCard & { rubric: BusinessRubric } => isRubricCard(card) && card.rubric.system === 'business');
+    expect(cards).toHaveLength(1988);
+    const normalise = (value: string) => value.normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const schemes = new Map<string, string>();
+    // The scheme markdown as bus_expected.py reads it: no page heads, running footers, "(20 marks)" cells or marks column.
+    const FOOT = /^\s*(?:Page \d+ of \d+|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|LC Business \d{4} \((?:OL|HL)\)|Leaving Certificate\b.*|\d{1,2}\s*marks?|⟨\d+⟩|\d{1,2})\s*$/;
+    const INLINE_FOOT = /\s*(?:LC Business \d{4} \((?:OL|HL)\)|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|Page \d+ of \d+|Leaving Certificate(?: \d{4})?\s*[–-]\s*(?:Higher|Ordinary) Level(?: \d{4})?)\s*(?:⟨\d{1,2}⟩)?\s*/g;
+    const schemeText = (year: number, level: string) => {
+      const key = `${year}-${level === 'higher' ? 'hl' : 'ol'}`;
+      if (!schemes.has(key)) {
+        const lines = readFileSync(resolve(__dirname, '..', 'examiner-reports', 'business', 'schemes', `${key}.md`), 'utf8')
+          .replace(/\u00a0/g, ' ').split('\n')
+          .filter(line => !/^## Page \d+\s*$/.test(line))
+          .map(line => line.replace(INLINE_FOOT, ' ').replace(/\s*⟨[^⟩]*⟩/g, '').replace(/\s*\(\s*\d{1,3}\s*marks?\s*\)/g, '').trim())
+          .filter(line => line && !FOOT.test(line));
+        schemes.set(key, normalise(lines.join(' ')));
+      }
+      return schemes.get(key)!;
+    };
+    const lifted = cards.filter(card => card.rubric.expected);
+    expect(lifted).toHaveLength(1767);
+    for (const card of lifted) {
+      const corpus = schemeText(card.year, card.level);
+      const expected = card.rubric.expected!;
+      expect(expected.page, card.id).toBeGreaterThan(0);
+      expect(expected.items.length, card.id).toBeGreaterThan(0);
+      for (const item of expected.items) {
+        expect(item.text.trim().length, `${card.id}/${item.id}`).toBeGreaterThan(0);
+        for (const piece of [item.text, ...(item.detail ?? [])]) {
+          expect(corpus.includes(normalise(piece)), `${card.id}/${item.id}: "${piece.slice(0, 50)}" is not lifted from the ${card.year} scheme`).toBe(true);
+        }
+      }
+    }
+    // A row sits under the response it names, or in one pool the responses draw from.
+    const layouts = lifted.map(card => businessExpectedLayout(card.rubric)!.kind);
+    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([221, 1546]);
+    // What bus_expected.py could not lift, by reason, each with the pages it looked at. Fix a shape and lower its number here.
+    const review = JSON.parse(readFileSync(resolve(__dirname, '..', 'scripts', 'markbank', 'authored', 'business-expected-review.json'), 'utf8')) as Array<{ id: string; reason: string; schemePages: number[] }>;
+    const reasons: Record<string, number> = {};
+    for (const entry of review) reasons[entry.reason] = (reasons[entry.reason] ?? 0) + 1;
+    expect(reasons).toEqual({
+      'an item is not one slice of the page text: a table or diagram the text layer reordered': 5,
+      'part marker': 24,
+      'roman marker': 22,
+      's1 marker': 6,
+      's1 part marker': 6,
+      'table layout lost in the text layer': 59,
+      'text layer glyph damage on the cited page': 27,
+      'the scheme prints the marker and the question but no response under it on the cited page': 30,
+      'tiny block': 1,
+      'unbounded block over 3000 characters: a whole question, not this part': 14,
+      'workings table flattened by the text layer': 24,
+    });
+    const ids = new Set(cards.map(card => card.id));
+    for (const entry of review) {
+      expect(ids.has(entry.id), entry.id).toBe(true);
+      expect(entry.schemePages.length, entry.id).toBeGreaterThan(0);
+    }
+    const reviewed = new Set(review.map(entry => entry.id));
+    // Every card either carries its rows or is on the review list; the three route-pool expansions share their template's data.
+    expect(cards.filter(card => !card.rubric.expected && !reviewed.has(card.id)).length).toBe(3);
   });
 
 });
