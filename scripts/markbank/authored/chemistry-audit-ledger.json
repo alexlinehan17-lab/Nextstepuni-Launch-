@@ -1,6 +1,360 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2016 OL": {
+   "chem-2016-ol-q1-a-i-ii": {
+    "status": "added",
+    "after": "a5380e7ae95fa762"
+   },
+   "chem-2016-ol-q1-a-iii": {
+    "status": "added",
+    "after": "ae2b9c7505649712"
+   },
+   "chem-2016-ol-q1-a-iv": {
+    "status": "added",
+    "after": "e34d06f3906266c5"
+   },
+   "chem-2016-ol-q1-a-v": {
+    "status": "added",
+    "after": "5d895e46a26eb90a"
+   },
+   "chem-2016-ol-q1-b-i": {
+    "status": "added",
+    "after": "95ce84b95ab12ea1"
+   },
+   "chem-2016-ol-q1-b-ii": {
+    "status": "added",
+    "after": "6ebf94dcc31ab291"
+   },
+   "chem-2016-ol-q1-b-iii": {
+    "status": "added",
+    "after": "8802c6a59cc0a676"
+   },
+   "chem-2016-ol-q10-a": {
+    "status": "added",
+    "after": "6fc92a9706ec3932"
+   },
+   "chem-2016-ol-q10-a-i": {
+    "status": "added",
+    "after": "33b4cfc57ac66bed"
+   },
+   "chem-2016-ol-q10-a-ii": {
+    "status": "added",
+    "after": "63045269873d77c5"
+   },
+   "chem-2016-ol-q10-a-result": {
+    "status": "added",
+    "after": "71bced77060a5bd0"
+   },
+   "chem-2016-ol-q10-b": {
+    "status": "added",
+    "after": "2029474f1ad618dd"
+   },
+   "chem-2016-ol-q10-b-higher-ph": {
+    "status": "added",
+    "after": "9a04807d0c8da1bd"
+   },
+   "chem-2016-ol-q10-b-ph": {
+    "status": "added",
+    "after": "0d1e23f812904436"
+   },
+   "chem-2016-ol-q10-b-ph-of-nitric-acid": {
+    "status": "added",
+    "after": "c1d547a96cc98142"
+   },
+   "chem-2016-ol-q10-c": {
+    "status": "added",
+    "after": "8d76abc65c4fa541"
+   },
+   "chem-2016-ol-q10-c-shape-and-solubility": {
+    "status": "added",
+    "after": "5c2dc0c5a3cbbc54"
+   },
+   "chem-2016-ol-q11-a-i": {
+    "status": "added",
+    "after": "3dab111450d6d4df"
+   },
+   "chem-2016-ol-q11-a-ii": {
+    "status": "added",
+    "after": "5db521379222838d"
+   },
+   "chem-2016-ol-q11-a-iii": {
+    "status": "added",
+    "after": "78c8e2547e79ae04"
+   },
+   "chem-2016-ol-q11-a-iv": {
+    "status": "added",
+    "after": "08ecd3c5f94949b9"
+   },
+   "chem-2016-ol-q11-b-i": {
+    "status": "added",
+    "after": "b8ab6dfbf8b61ef7"
+   },
+   "chem-2016-ol-q11-b-ii": {
+    "status": "added",
+    "after": "b2b18e5f693927aa"
+   },
+   "chem-2016-ol-q11-b-iii": {
+    "status": "added",
+    "after": "5136e212d59b348d"
+   },
+   "chem-2016-ol-q11-c-a-i": {
+    "status": "added",
+    "after": "e38cb32936e41a4c"
+   },
+   "chem-2016-ol-q11-c-a-ii": {
+    "status": "added",
+    "after": "ae1de1fe08f533e4"
+   },
+   "chem-2016-ol-q11-c-a-iii": {
+    "status": "added",
+    "after": "efc7ecfa6c143dcd"
+   },
+   "chem-2016-ol-q11-c-a-iv": {
+    "status": "added",
+    "after": "96cbf8858e72dbfa"
+   },
+   "chem-2016-ol-q11-c-b-i": {
+    "status": "added",
+    "after": "0d78acd70067b760"
+   },
+   "chem-2016-ol-q11-c-b-ii": {
+    "status": "added",
+    "after": "4286018816e1b39f"
+   },
+   "chem-2016-ol-q11-c-b-iii": {
+    "status": "added",
+    "after": "f506b400659c1a3b"
+   },
+   "chem-2016-ol-q11-c-b-iv": {
+    "status": "added",
+    "after": "847b8306243d84b9"
+   },
+   "chem-2016-ol-q2-a": {
+    "status": "added",
+    "after": "56806e6f0f24ea76"
+   },
+   "chem-2016-ol-q2-b": {
+    "status": "added",
+    "after": "8c986cef19fc0575"
+   },
+   "chem-2016-ol-q2-c-i": {
+    "status": "added",
+    "after": "a3e6aca16ff1a914"
+   },
+   "chem-2016-ol-q2-c-ii": {
+    "status": "added",
+    "after": "072f3a8ebef28f29"
+   },
+   "chem-2016-ol-q2-d-i": {
+    "status": "added",
+    "after": "e769e208ca4e434b"
+   },
+   "chem-2016-ol-q2-d-ii": {
+    "status": "added",
+    "after": "46c13e82a275d221"
+   },
+   "chem-2016-ol-q2-e": {
+    "status": "added",
+    "after": "e406d35e0a9dcf3e"
+   },
+   "chem-2016-ol-q2-f": {
+    "status": "added",
+    "after": "06a374062d5fcbbd"
+   },
+   "chem-2016-ol-q3-a": {
+    "status": "added",
+    "after": "6fbc4ed37c6173e9"
+   },
+   "chem-2016-ol-q3-b": {
+    "status": "added",
+    "after": "44b592dd1a1bac4a"
+   },
+   "chem-2016-ol-q3-c": {
+    "status": "added",
+    "after": "f21d5e36af3e31a0"
+   },
+   "chem-2016-ol-q3-d": {
+    "status": "added",
+    "after": "4c6082db7a95fc9c"
+   },
+   "chem-2016-ol-q3-e": {
+    "status": "added",
+    "after": "977f6f4472bc58b5"
+   },
+   "chem-2016-ol-q4-a": {
+    "status": "added",
+    "after": "99797720aa3e66ca"
+   },
+   "chem-2016-ol-q4-b": {
+    "status": "added",
+    "after": "fd5ee4f75a0ad134"
+   },
+   "chem-2016-ol-q4-c": {
+    "status": "added",
+    "after": "504175d88055c514"
+   },
+   "chem-2016-ol-q4-d": {
+    "status": "added",
+    "after": "f1244f390103a918"
+   },
+   "chem-2016-ol-q4-e": {
+    "status": "added",
+    "after": "65aa8b7ca6cf849a"
+   },
+   "chem-2016-ol-q4-f": {
+    "status": "added",
+    "after": "5d35aeadc15122a9"
+   },
+   "chem-2016-ol-q4-g": {
+    "status": "added",
+    "after": "7b39c10c5a3d9b37"
+   },
+   "chem-2016-ol-q4-h": {
+    "status": "added",
+    "after": "2922ce93a70e8ef8"
+   },
+   "chem-2016-ol-q4-i": {
+    "status": "added",
+    "after": "09bcd515208f652a"
+   },
+   "chem-2016-ol-q4-j": {
+    "status": "added",
+    "after": "f0e5386ad5d4d7f8"
+   },
+   "chem-2016-ol-q4-k-a": {
+    "status": "added",
+    "after": "a67c7aa7a7f8517a"
+   },
+   "chem-2016-ol-q4-k-b": {
+    "status": "added",
+    "after": "e6067fd9864e4b92"
+   },
+   "chem-2016-ol-q5-a": {
+    "status": "added",
+    "after": "6d5cc3bd179527fc"
+   },
+   "chem-2016-ol-q5-b-i": {
+    "status": "added",
+    "after": "21f44c4da5484c5e"
+   },
+   "chem-2016-ol-q5-b-ii": {
+    "status": "added",
+    "after": "74acb2cd3465bcf6"
+   },
+   "chem-2016-ol-q5-b-iii": {
+    "status": "added",
+    "after": "af1ba2cad49cc927"
+   },
+   "chem-2016-ol-q5-b-iv": {
+    "status": "added",
+    "after": "350dcb99eeaa9962"
+   },
+   "chem-2016-ol-q5-b-v": {
+    "status": "added",
+    "after": "5f4ed090576f904c"
+   },
+   "chem-2016-ol-q5-c": {
+    "status": "added",
+    "after": "bf6eab1446ba8c77"
+   },
+   "chem-2016-ol-q6-a": {
+    "status": "added",
+    "after": "4a72b871593e3f57"
+   },
+   "chem-2016-ol-q6-b-i": {
+    "status": "added",
+    "after": "36e282b71263c5f3"
+   },
+   "chem-2016-ol-q6-b-ii": {
+    "status": "added",
+    "after": "67cf19193364bcb9"
+   },
+   "chem-2016-ol-q6-b-iii": {
+    "status": "added",
+    "after": "484d1e78adce1f32"
+   },
+   "chem-2016-ol-q6-c-i": {
+    "status": "added",
+    "after": "8bc5d00f316b29c8"
+   },
+   "chem-2016-ol-q6-c-ii": {
+    "status": "added",
+    "after": "67c99afbd7b4a0df"
+   },
+   "chem-2016-ol-q6-d-i": {
+    "status": "added",
+    "after": "92a05e88a2dd6856"
+   },
+   "chem-2016-ol-q6-d-ii": {
+    "status": "added",
+    "after": "2d83a8ac92c3961d"
+   },
+   "chem-2016-ol-q7-a": {
+    "status": "added",
+    "after": "a3f541ae0eae0626"
+   },
+   "chem-2016-ol-q7-b-i-ii": {
+    "status": "added",
+    "after": "e92ef0bed60c5bee"
+   },
+   "chem-2016-ol-q7-b-iii": {
+    "status": "added",
+    "after": "83481daff169385d"
+   },
+   "chem-2016-ol-q7-c-i": {
+    "status": "added",
+    "after": "17fbba4299315731"
+   },
+   "chem-2016-ol-q7-c-ii": {
+    "status": "added",
+    "after": "6bce3b6dabbe40e1"
+   },
+   "chem-2016-ol-q7-c-iii": {
+    "status": "added",
+    "after": "62aa4301909e3e1a"
+   },
+   "chem-2016-ol-q7-c-iv": {
+    "status": "added",
+    "after": "2640fb86440efb35"
+   },
+   "chem-2016-ol-q8-a": {
+    "status": "added",
+    "after": "435c0ef34d9a444f"
+   },
+   "chem-2016-ol-q8-b": {
+    "status": "added",
+    "after": "8157b94d5b76602d"
+   },
+   "chem-2016-ol-q8-c": {
+    "status": "added",
+    "after": "b4ea4fd043ed6af6"
+   },
+   "chem-2016-ol-q8-d-i-ii": {
+    "status": "added",
+    "after": "2f2217f327079b32"
+   },
+   "chem-2016-ol-q9-a": {
+    "status": "added",
+    "after": "b7969a6369955540"
+   },
+   "chem-2016-ol-q9-b-i": {
+    "status": "added",
+    "after": "1fc6447e55fbab0c"
+   },
+   "chem-2016-ol-q9-b-ii": {
+    "status": "added",
+    "after": "0b7cc37652173f89"
+   },
+   "chem-2016-ol-q9-b-iii": {
+    "status": "added",
+    "after": "dd8277e1d666927f"
+   },
+   "chem-2016-ol-q9-b-iv": {
+    "status": "added",
+    "after": "4f14f9f5a18a4d7f"
+   }
+  },
   "2017 HL": {
    "chem-2017-hl-q1-a-i": {
     "status": "added",

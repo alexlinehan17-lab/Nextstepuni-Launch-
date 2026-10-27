@@ -1,0 +1,18 @@
+[
+ {"id": "chem-2016-ol-q1-a-i-ii", "ask": "Identify liquid A held by glass wool", "answer": "aluminium oxide / Al₂O₃", "figure": true},
+ {"id": "chem-2016-ol-q2-a", "ask": "", "answer": "sufficient acid (solution from burette)", "figure": true, "solution": true},
+ {"id": "chem-2016-ol-q2-d-i", "ask": "in moles per litre", "answer": "0.09 mol l⁻¹", "solution": true},
+ {"id": "chem-2016-ol-q2-d-ii", "ask": "in grams per litre", "answer": "0.09 × 40 = 3.6 g l⁻¹"},
+ {"id": "chem-2016-ol-q3-c", "ask": "", "answer": "six points correctly plotted", "figure": true, "solution": true},
+ {"id": "chem-2016-ol-q4-j", "ask": "", "answer": "After a solidus the scheme draws the ring", "figure": true, "solution": true},
+ {"id": "chem-2016-ol-q4-k-a", "ask": "Give two physical properties shared by all metals.", "answer": "malleability"},
+ {"id": "chem-2016-ol-q4-k-b", "ask": "Select the town nearest the factory", "answer": "ARKLOW: nitric acid", "figure": true},
+ {"id": "chem-2016-ol-q5-b-iii", "ask": "", "answer": "notation its text cannot carry", "figure": true, "solution": true},
+ {"id": "chem-2016-ol-q8-a", "ask": "Draw the structure of each of the three compounds", "answer": "The scheme prices the asterisk (2)", "solution": true},
+ {"id": "chem-2016-ol-q9-a", "ask": "", "answer": "a flocculating agent", "figure": true},
+ {"id": "chem-2016-ol-q10-a", "ask": "Describe with the aid of labelled diagrams an experiment", "answer": "spotting on paper"},
+ {"id": "chem-2016-ol-q10-b-ph-of-nitric-acid", "ask": "Calculate the pH of a 0.2 M solution", "answer": "pH = – log 0.2", "figure": true},
+ {"id": "chem-2016-ol-q11-a-iii", "ask": "", "answer": "notation its text cannot carry", "figure": true, "solution": true},
+ {"id": "chem-2016-ol-q11-b-iii", "ask": "how many moles of iron are present?", "answer": "0.25 moles Fe₂O₃", "solution": true},
+ {"id": "chem-2016-ol-q11-c-b-ii", "ask": "", "answer": "single bonds between carbon atoms", "figure": true, "solution": true}
+]

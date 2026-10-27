@@ -3988,5 +3988,290 @@
   "description": "The marking scheme's own print of its answer to 2017 HL Q11(c)B(i), as the State Examinations Commission set it: three ethene molecules, each H₂C=CH₂ drawn with its H atoms, joined by \"+\" and an arrow, \"/\" a box of one ethene molecule headed \"3\" (6); and a chain of six carbon atoms joined by single bonds, each carrying two H atoms, with open bonds at its ends (4).",
   "questionRef": "2017 HL Q11(c)B(i)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q1a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus for preparing ethene: a horizontal test tube with a plug at its closed end labelled \"liquid A and glass wool\" and a small heap in its middle labelled \"solid B\", heated by a Bunsen burner below; a stopper and delivery tube lead from its mouth down into a trough of \"water\" and up into an upturned test tube labelled \"ethene\".",
+  "questionRef": "2016 OL Q1(a)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus for preparing ethyne: a dropping funnel labelled \"water\", with a tap, above a stoppered conical flask holding lumps labelled \"solid X\"; a delivery tube leads from the flask's side arm into a trough of \"water\" and up into an upturned test tube labelled \"ethyne\", with bubbles in it.",
+  "questionRef": "2016 OL Q1(b)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's glassware: a burette labelled \"A\", clamped to a retort stand, its tap at the foot; beside it a pipette labelled \"B\"; below the burette a \"conical flask\".",
+  "questionRef": "2016 OL Q2"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q2a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q2(a): \"The concentration of a sodium hydroxide (NaOH) solution was found by titration with a 0.10 M hydrochloric acid (HCl) solution using an indicator to identify the end point.\" with \"end point\" underlined, then \"(a) Explain the underlined term.\"",
+  "questionRef": "2016 OL Q2(a)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a conical flask lying on its side, labelled \"conical flask\", holding \"H₂O₂\" in its base and a small heap labelled \"catalyst\" in its neck, a curved arrow beside it; a stopper and \"plastic tubing\" lead down into a trough of \"water\" and up into an upturned \"graduated cylinder\".",
+  "questionRef": "2016 OL Q3"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of Time (minutes) 0, 2, 4, 6, 8, 10, 12 against Volume (cm³) 0, 50, 69, 75, 78, 79, 79.",
+  "questionRef": "2016 OL Q3"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q3c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q3(c): \"The results obtained are shown in the following table.\", the table of Time (minutes) 0, 2, 4, 6, 8, 10, 12 against Volume (cm³) 0, 50, 69, 75, 78, 79, 79, then \"(c) On graph paper, plot a graph of the volume (y-axis) against time (x-axis).\"",
+  "questionRef": "2016 OL Q3(c)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q4e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a round-bottomed flask on a tripod over a Bunsen burner, \"A\" pointing to the liquid in it; a vertical condenser stands above the flask with \"water in\" at its lower side arm and \"water out\" at its upper.",
+  "questionRef": "2016 OL Q4(e)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q4j-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q4(j): \"(j) Each molecule shown below has six carbon atoms.\", a table headed \"hexane\", \"cyclohexane\" and \"benzene\": hexane drawn as a chain of six C atoms, each with an H atom above and below it and an H atom at either end of the chain; cyclohexane as a hexagon; benzene as a hexagon with a circle inside it; then \"Which molecule is aromatic?\"",
+  "questionRef": "2016 OL Q4(j)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q4k-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An outline map of Ireland with three places on its coast marked \"Drogheda\", \"Arklow\" and \"Cobh\".",
+  "questionRef": "2016 OL Q4(k)B"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black and white photograph of an old man with long white hair and a long white beard.",
+  "questionRef": "2016 OL Q5(a)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's diagrams: three atoms, each a grey nucleus inside two circles with crosses on the circles, labelled \"X\", \"Y\" and \"Z\": X has two crosses on the inner circle and five on the outer, Y two and six, Z two and seven.",
+  "questionRef": "2016 OL Q5(b)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q5b-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q5(b)(iii): \"(b) The diagrams below represent neutral atoms of elements X, Y and Z from the second period of the periodic table. Each cross represents an electron.\", three atoms, each a grey nucleus inside two circles with crosses on the circles, labelled \"X\", \"Y\" and \"Z\": X has two crosses on the inner circle and five on the outer, Y two and six, Z two and seven, then \"(iii) Draw a similar diagram to show the arrangement of electrons in an atom of neon.\"",
+  "questionRef": "2016 OL Q5(b)(iii)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's fractionating column: \"crude oil\" enters through a heated pipe at its lower left; pipes on its right carry off, from the top down, \"refinery gas\", \"light gasoline\", \"naphtha\", \"X\" and \"gas oil\", and \"residue\" leaves at its base.",
+  "questionRef": "2016 OL Q6"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q7c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a glass \"trough\" of \"water\", with \"tweezers\" holding a small piece of \"sodium\" above it.",
+  "questionRef": "2016 OL Q7(c)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's scheme: a box \"C₂H₆\" labelled \"A\" with an arrow marked \"X\" to a box \"C₂H₅Cl\" labelled \"chloroethane\"; a box \"C₂H₅OH\" labelled \"B\" with an arrow marked \"Y\" to a box \"CH₃COOH\" labelled \"C\".",
+  "questionRef": "2016 OL Q8"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q9a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q9(a): \"(a) The following words or phrases are omitted from the passage below:\", the words \"lime\", \"sand and gravel\", \"fluorine\", \"chlorine\", \"plastic\" and \"a flocculating agent\" in two rows, \"Write in your answerbook the word or phrase corresponding to each number 1 to 6.\" then \"In the treatment of a water supply to make it suitable for drinking, 1 is added and the water is allowed to 'settle'. Any suspended matter remaining in the water is then removed by filtration through a bed of 2 . To disinfect the water 3 is added. A compound of 4 may also be added to prevent tooth decay and where the the pH of the water is too low 5 is added. In the Irish public water system, any pipework made of lead is being replaced by 6 .\", each number printed on an underlined blank.",
+  "questionRef": "2016 OL Q9(a)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q9b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a stoppered test tube held at a slant, holding \"dilute HCl\" with \"scale\" at its bottom and \"bubbles of X\" rising; a delivery tube leads from it over into a second test tube of \"limewater\".",
+  "questionRef": "2016 OL Q9(b)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q9b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q9(b)(i): \"(b) A student scraped a solid scale from the element of an electric kettle that had been used in a district with hard water and brought some of it to school for analysis.\" with \"hard water\" underlined, then \"(i) Explain the underlined term.\"",
+  "questionRef": "2016 OL Q9(b)(i)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q10b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two stoppered reagent bottles, each with a diamond-shaped hazard pictogram showing liquid dripping onto a surface and onto a hand, labelled \"HNO₃\" and \"H₂SO₄\".",
+  "questionRef": "2016 OL Q10(b)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation: H₂ + I₂ ⇌ 2HI, with \"colourless\", \"purple\" and \"colourless\" printed under H₂, I₂ and 2HI.",
+  "questionRef": "2016 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q11a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q11(a)(i): \"(a) Equal volumes of hydrogen gas and iodine vapour are mixed in a container. When chemical equilibrium is reached at a certain temperature some hydrogen iodide gas has been formed according to the following balanced equation:\" with \"chemical equilibrium\" underlined, then the equation H₂ + I₂ ⇌ 2HI with \"colourless\", \"purple\" and \"colourless\" printed under H₂, I₂ and 2HI, then \"(i) Explain the underlined term.\"",
+  "questionRef": "2016 OL Q11(a)(i)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q11a-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q11(a)(iii): \"(a) Equal volumes of hydrogen gas and iodine vapour are mixed in a container. When chemical equilibrium is reached at a certain temperature some hydrogen iodide gas has been formed according to the following balanced equation:\" with \"chemical equilibrium\" underlined, then the equation H₂ + I₂ ⇌ 2HI with \"colourless\", \"purple\" and \"colourless\" printed under H₂, I₂ and 2HI, then \"(iii) Write the equilibrium constant (Kc) expression for this reaction.\", the c of Kc printed as a subscript.",
+  "questionRef": "2016 OL Q11(a)(iii)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a hand-warmer packet, tilted, printed \"HOTSpot\", \"Chemical Heat\", \"Hand Warmer\", \"Fast\", \"Up to 10 hours of heat\", \"Easy to use\", \"Safe\", \"Contains iron powder\" and \"Keep sachet sealed until ready to use\", with a picture of a hand on it.",
+  "questionRef": "2016 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's fermentation vessel: a closed tank of liquid with pipes labelled \"grape juice\" and \"yeast\" entering through its lid, a \"motor\" on the lid turning a shaft down to a paddle \"stirrer\", a pipe at the top right releasing \"CO₂\", and a tap at its base from which \"wine\" is let out.",
+  "questionRef": "2016 OL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q11c-a-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q11(c)A(ii): \"A\", then \"Wine-making is an example of a batch process. The picture shows a fermentation reaction vessel used in wine making. It contains grape juice and yeast. This mixture is kept at a temperature of about 20 °C for about 10 days. Ethanol is then present in the mixture and carbon dioxide gas, the co-product, has bubbled away. The liquid (wine) is then pumped out at the bottom of the reactor to the next stage of the process.\" with \"batch process\" in italics and \"co-product\" underlined, then \"(ii) Explain the underlined term.\"",
+  "questionRef": "2016 OL Q11(c)A(ii)"
+ },
+ {
+  "file": "chemistry-2016-OL-paper-q11c-b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2016 OL Q11(c)B(ii): \"Poly(ethene) is formed from ethene in an addition polymerisation reaction as shown.\" and, in a box, three ethene molecules, each two C atoms joined by a double bond with two H atoms on each, joined by \"+\" signs, an arrow, and in brackets a chain of six C atoms with an H atom above and below each, over \"many ethenes → poly(ethene)\"; then \"(ii) Copy and complete the similar addition polymerisation reaction below to give the structure of poly(chloroethene).\" and, in a box, three chloroethene molecules, each two C atoms joined by a double bond carrying three H atoms and one Cl atom, joined by \"+\" signs, an arrow and \"?\", over \"many chloroethenes → poly(chloroethene)\".",
+  "questionRef": "2016 OL Q11(c)B(ii)"
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q2(a), as the State Examinations Commission set it: (a) EXPLAIN: \"sufficient acid (solution from burette) has been added to exactly react with the base (solution in conical flask) / when indicator just changes from one colour to the other / base (solution in conical flask) just used up / equal number of moles of hydrochloric acid (HCl) and sodium hydroxide (NaOH) reacted\" (5), with \"exactly\", each \"just\" and \"hydrochloric acid (HCl) and sodium hydroxide (NaOH)\" underlined; then \"[Allow 3 marks if underlined words omitted from statements above.]\"",
+  "questionRef": "2016 OL Q2(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q2d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q2(d)(i), as the State Examinations Commission set it: (d) CALCULATE: (i) 0.09 mol l⁻¹ (9); then, in a box: 25 × M over 1 = (3); 22.5 × 0.10 over 1 (3); M = 0.09 mol l⁻¹ (3); then \"[Award (3) for V₁M₁ over n₁ , V₂M₂ over n₂ if no marks given for CALCULATE: (i) above.]\"",
+  "questionRef": "2016 OL Q2(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q3(c), as the State Examinations Commission set it: (c) PLOT: a graph of Volume (cm3), 0 to 90, against Time (minutes), 0 to 14: a solid curve through points at 0, 2, 4, 6, 8, 10 and 12 minutes that rises steeply from the origin and levels off near 80, a dotted curve below it that rises less steeply and nears it by 12 minutes, a dashed curve below that levelling off near 70, and a vertical line from about 3 minutes up to the solid curve; then \"axes correctly labelled with quantity or unit\" (3), \"axes correctly scaled\" (3), \"six points correctly plotted\" (6), \"smooth curve correctly drawn through points and (0, 0)\" (3) and \"[Allow (3) for 5 points correctly plotted.]\"",
+  "questionRef": "2016 OL Q3(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q3e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q3(e), as the State Examinations Commission set it: the graph it prints with (c), a graph of Volume (cm3), 0 to 90, against Time (minutes), 0 to 14: a solid curve through points at 0, 2, 4, 6, 8, 10 and 12 minutes that rises steeply from the origin and levels off near 80, a dotted curve below it that rises less steeply and nears it by 12 minutes, a dashed curve below that levelling off near 70, and a vertical line from about 3 minutes up to the solid curve.",
+  "questionRef": "2016 OL Q3(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q4j.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q4(j), as the State Examinations Commission set it: (j) WHICH: benzene / and a drawing of a hexagon with a circle inside it (6)",
+  "questionRef": "2016 OL Q4(j)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q5b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q5(b)(iii), as the State Examinations Commission set it: (iii) DRAW: a drawing of an atom: a grey nucleus inside two circles, two crosses on the inner circle and eight on the outer, set in pairs (3)",
+  "questionRef": "2016 OL Q5(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q6b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q6(b)(ii), as the State Examinations Commission set it: (ii) DRAW: CH₃CH₂CH₃ / CH₃CH₂CH₂CH₃ / then two structures separated by \"/\": three C atoms in a row and four C atoms in a row, each C with an H atom above and below it and an H atom at either end of the chain (3)",
+  "questionRef": "2016 OL Q6(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q8a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q8(a), as the State Examinations Commission set it: (a) DRAW: three boxed structures. A: two C atoms joined, each with an H atom above and below it and an H atom at either end. B: two C atoms joined, each with an H atom above and below it, an H atom on the left end and OH on the right. C: a C atom with H atoms above, below and to its left, joined to a second C atom marked with an asterisk, which carries an O atom by a double bond and an OH. ((2 × 6) + 3); then MARK: * (2)",
+  "questionRef": "2016 OL Q8(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q10c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q10(c), as the State Examinations Commission set it: (c) WHAT: covalent / single / sigma (4); DRAW: two drawings of methane separated by \"/\": a C atom drawn as two circles, two crosses on the inner circle and four on the outer, its outer circle overlapping the circles of four H atoms, each H holding a dot beside one of the C atom's crosses; and C with an H above, below, left and right of it and a dot and a cross between it and each H. Then \"4 valence carbon electrons //\", \"4 hydrogen electrons //\", \"four bond pairs\" (3 × 3) and \"[Diagram essential.][Non-valence electrons not required.]\"",
+  "questionRef": "2016 OL Q10(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q11a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q11(a)(iii), as the State Examinations Commission set it: (iii) WRITE: Kc = [HI]² over [H₂][I₂] (6)",
+  "questionRef": "2016 OL Q11(a)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q11b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q11(b)(iii), as the State Examinations Commission set it: (iii) HOW MANY: 0.5 moles Fe (6); then, in a box: Aᵣ = 56 (3); n = m over Aᵣ = 28 over 56 = 0.5 moles (3). HOW MANY: 0.25 moles Fe₂O₃ (6); then, in a box: Fe : Fe₂O₃ = 4 : 2 / 2 : 1 / 0.5 ÷ 2 (3); = 0.25 moles Fe₂O₃ (3).",
+  "questionRef": "2016 OL Q11(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2016-OL-scheme-q11c-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2016 OL Q11(c)B(ii), as the State Examinations Commission set it: (ii) GIVE: a chain of six C atoms with a bond at either end, an H atom above each C and, below them in turn, H, Cl, H, Cl, H, Cl; then \"four or six (or a higher even number of) carbon atoms in a chain //\", \"single bonds between carbon atoms //\" and \"chlorine to hydrogen ratio 1 : 3\" (3 × 3)",
+  "questionRef": "2016 OL Q11(c)B(ii)",
+  "solution": true
  }
 ]

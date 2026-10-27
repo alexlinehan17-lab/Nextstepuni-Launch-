@@ -278,6 +278,11 @@ LETTER_ALT = re.compile(r'^\(([a-l])\)\s*([AB])$')
 LEAD_MARKER = re.compile(r'^(\([a-l]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\))\s+(.+)$')
 # An alternative's letter set in the same run as its reprint: "A Identify ...".
 ALT_LEAD = re.compile(r'^([AB])\s+(\S.*)$')
+# A question's number set in one run with its first letter: 2016 OL paper page 7
+# prints "7. (a)" as one run (x 57, y 453), so no "7." head was read and Questions
+# 7-11 fell into Q6(d)(ii) -- Q11(c)'s A and B became "Q6(d)A/B". The 2010-2013
+# papers print the same run ("9. (a)", "5. (a) State two ..."); no carded sitting does.
+QNUM_LETTER = re.compile(r'^(\d{1,2})\.\s+(\([a-l]\)(?:\s+\S.*)?)$')
 
 
 def _split_markers(lines):
@@ -286,6 +291,12 @@ def _split_markers(lines):
     alt_letter = None
     for l in lines:
         t = l.text
+        qn = QNUM_LETTER.match(t)
+        if qn and l.x0 < 70:
+            # (2016 OL: "7. (a)" read as the head "7." and the letter "(a)".)
+            yield Line(l.page, (l.x0, l.y0, l.x0 + 12, l.y1), qn.group(1) + '.', l.bold, l.math)
+            l = Line(l.page, (l.x0 + 21, l.y0, l.x1, l.y1), qn.group(2), l.bold, l.math)
+            t = l.text
         both = LETTER_ALT.match(t)
         if both and l.x0 < 100:
             # The 2025 Higher scheme sets "(d)A" as one run, and "(d)B" again
@@ -544,6 +555,27 @@ class Seg:
         return f'<Seg {self.key} {self.marker!r}>'
 
 
+def _bare_choice(l, cur, queue):
+    """2016 OL paper page 5: Q4(k) sets its alternatives as a bold "A" (x 113,
+    y 626) and a bold "B" (x 113, y 665) with a bold "or" between them, and no
+    "Answer part A or part B." above -- every other 2010-2026 paper prints that
+    line -- so the choice went unread and the census counted one Q4(k). A bold
+    "A" that opens its letter, followed before the next marker by a bold "or"
+    and a bold "B" at the A's own indent, is that choice."""
+    if l.text != 'A' or not l.bold or cur is None or not cur.key[1] or cur.key[2] \
+            or cur.key[3] or cur.text:
+        return False
+    seen_or = False
+    for m in queue:
+        if LETTER.match(m.text) or ROMAN.match(m.text) or QNUM.match(m.text):
+            return False
+        if m.bold and m.text == 'or':
+            seen_or = True
+        elif seen_or and m.bold and m.text == 'B' and abs(m.x0 - l.x0) < 3:
+            return True
+    return False
+
+
 def joined(lines):
     return tidy(' '.join(l.text for l in lines))
 
@@ -563,6 +595,7 @@ def segments(lines, first_q='1', answers=True, alt_letters=(), cue=False):
     Returns (ordered list of Seg, {(q, letter, None, None): printed marks}).
     """
     segs, marks = [], {}
+    bare = set()                       # letters whose A/B choice prints no rubric (2016 OL)
     q = letter = roman = alt = None
     letter_x = None
     cur = None
@@ -618,7 +651,11 @@ def segments(lines, first_q='1', answers=True, alt_letters=(), cue=False):
                 and (q, nxt_letter) in alt_letters:
             letter, roman, alt = nxt_letter, None, None
             segs.append(Seg((q, letter, None, None), f'({letter})'))
-        if am and l.x0 < 150 and (t.startswith('(') or (q, letter) in alt_letters or any(
+        if am and not answers and (_bare_choice(l, cur, queue) or (
+                am.group(1) == 'B' and (q, letter) in bare and alt == 'A')):
+            bare.add((q, letter))          # 2016 OL Q4(k): see _bare_choice
+        if am and l.x0 < 150 and (t.startswith('(') or (q, letter) in alt_letters or (
+                not answers and (q, letter) in bare) or any(
                 CHOICE_AB.search(joined(sg.text))
                 for sg in segs if sg.key[:2] == (q, letter))):
             alt, roman = am.group(1), None

@@ -218,6 +218,22 @@ MASKS = {
     # temperature T.", paper page 7, y 623), under the end of the line above ("of the", dark to
     # x 909); whited out (dark pixels at 917-953 x 261-281 of the stacked print).
     'chemistry-2017-HL-paper-q7c-print.png': [(914, 257, 958, 285)],
+    # 2016 OL Q6: the column's crop holds the ")" of (a)'s mark "(5)" (paper page 7, x 319-336,
+    # y 104; dark pixels 0-3 x 92-109), whited out; "crude" starts at column 8, row 258.
+    'chemistry-2016-OL-paper-q6.png': [(0, 88, 8, 113)],
+    # 2016 OL Q7(c): the photograph's crop holds the foot of (c)'s first line, "... held with
+    # tweezers and about to" (page 7, y 608; dark pixels 0-302 x 3-19), whited out; the "sodium"
+    # label starts at column 386.
+    'chemistry-2016-OL-paper-q7c.png': [(0, 0, 330, 21)],
+    # 2016 OL Q9(b): the apparatus stands beside the ends of (b)(ii)'s and (b)(iii)'s lines,
+    # "hardness?" and "build-up" (page 8, y 599 and 616; dark pixels 0-63 x 35-92), whited out;
+    # the test tube's stopper starts at column 165.
+    'chemistry-2016-OL-paper-q9b.png': [(0, 30, 70, 95)],
+    # 2016 OL Q11(b): the hand warmer's photograph is tilted and its corner reaches left of the
+    # marks "(4)" and "(9)" of (b)(i) and (b)(ii) (page 10, x 362-379), so the crop is a one-panel
+    # print from x 362 and the marks are whited out (dark pixels 0-27 x 287-309 and 379-401; the
+    # photograph's edge is at column 36 or more there).
+    'chemistry-2016-OL-paper-q11b.png': [(0, 284, 30, 312), (0, 376, 30, 404)],
 }
 
 
