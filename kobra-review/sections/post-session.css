@@ -1,0 +1,219 @@
+/* Kobra review · 01 After a study session (dev only, 24 Oct 2026).
+   Three paper cards on the white canvas, in the study room's idiom: hairline
+   rows, ink selection (an ink ring on the row and a filled ink marker), serif
+   titles and numerals, orange only for kickers and the points. Tokens only, so
+   the cards follow `.dark` on <html>. Every class is scoped under .kr-ps; the
+   runtime's utilities sit at (0,2,0), so three-part selectors win without
+   !important. */
+
+/* Three steps side by side when there is room, stacked otherwise. The grid is
+   a container so the debrief row can query the width it actually has. */
+.kr-ps .kr-ps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 20px;
+  align-items: start;
+  container-type: inline-size;
+}
+.kr-ps .kr-ps-card {
+  container-type: inline-size;
+  min-width: 0;
+  padding: 24px;
+  border-radius: 20px;
+  color: var(--foreground);
+  font: 400 15px/1.55 'DM Sans', sans-serif;
+}
+
+/* Card head: the step eyebrow, and the subject chip on step one. */
+.kr-ps .kr-ps-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.kr-ps .kr-ps-step,
+.kr-ps .kr-ps-kicker,
+.kr-ps .kr-ps-eyebrow,
+.kr-ps .kr-ps-group-label {
+  margin: 0;
+  font: 500 11px/1.6 'DM Sans', sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.kr-ps .kr-ps-kicker { color: var(--nsu-orange); }
+.kr-ps .kr-ps-subject {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--border); border-radius: 12px;
+  background: var(--background);
+  font: 500 13px/1.2 'DM Sans', sans-serif;
+}
+.kr-ps .kr-ps-subject-dot { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--kr-ps-subject); }
+
+/* Title block. Headings take focus as the flow moves on; no ring for sighted users. */
+.kr-ps .kr-ps-title {
+  margin: 8px 0 0;
+  font: 500 clamp(28px, 1.6vw + 18px, 36px)/1.1 var(--nsu-serif);
+  letter-spacing: -.03em;
+}
+.kr-ps .kr-ps-title:focus { outline: none; }
+/* Clear the review page's sticky top bar when a step heading takes focus. */
+.kr-ps .kr-ps-title,
+.kr-ps .kr-ps-points { scroll-margin-top: 96px; }
+.kr-ps .kr-ps-lede { margin: 10px 0 0; max-width: 46ch; font-size: 15px; line-height: 1.6; color: var(--muted-foreground); }
+.kr-ps .kr-ps-detail { margin: 4px 0 0; font-size: 13px; line-height: 1.5; color: var(--muted-foreground); }
+
+/* Session stats: a hairline strip of serif numerals, not boxed tiles. */
+.kr-ps .kr-ps-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 22px 0 0; border-block: 1px solid var(--border); }
+.kr-ps .kr-ps-stats > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 6px; min-width: 0; padding: 14px 12px; }
+.kr-ps .kr-ps-stats > div:first-child { padding-left: 0; }
+.kr-ps .kr-ps-stats > div + div { border-left: 1px solid var(--border); }
+.kr-ps .kr-ps-stats dt { font-size: 13px; line-height: 1.3; color: var(--muted-foreground); }
+.kr-ps .kr-ps-stats dd { margin: 0; font: 500 30px/1 var(--nsu-serif); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.kr-ps .kr-ps-accent { color: var(--nsu-orange); }
+
+/* Strategy groups: Checkbox rows on hairlines. */
+.kr-ps .kr-ps-group { min-width: 0; margin: 22px 0 0; padding: 0; border: 0; }
+.kr-ps .kr-ps-group-label { padding: 0; margin-bottom: 10px; }
+.kr-ps .kr-ps-choices { display: grid; gap: 8px; }
+@container (min-width: 540px) {
+  .kr-ps .kr-ps-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* One row look for strategies and confidence: hairline at rest, ink when chosen. */
+.kr-ps .kr-ps-choice,
+.kr-ps .kr-ps-feel-option {
+  display: flex; align-items: center; gap: 12px;
+  min-width: 0; min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid var(--border); border-radius: 12px;
+  background: var(--background); color: var(--foreground);
+  font: 500 15px/1.3 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.kr-ps .kr-ps-choice:hover,
+.kr-ps .kr-ps-feel-option:hover { border-color: var(--foreground); }
+.kr-ps .kr-ps-choice[data-checked],
+.kr-ps .kr-ps-feel-option[data-checked] { border-color: var(--foreground); box-shadow: inset 0 0 0 1px var(--foreground); }
+.kr-ps .kr-ps-choice:has(:focus-visible),
+.kr-ps .kr-ps-feel-option:has(:focus-visible) { outline: 2px solid var(--nsu-orange); outline-offset: 2px; }
+/* Auto-tracked: chosen for the student, so it keeps the full ink face and is not dimmed. */
+.kr-ps .kr-ps-choice[data-locked] { cursor: default; }
+.kr-ps .kr-ps-choice-label { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.kr-ps .kr-ps-tracked { flex: none; font: 500 11px/1 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground); }
+
+/* The runtime's markers, sized up and given an ink edge so they read as controls before hover. */
+.kr-ps .kr-ps-choice [data-slot='checkbox'] { width: 20px; height: 20px; border: 1.5px solid var(--foreground); border-radius: 6px; }
+.kr-ps .kr-ps-choice [data-slot='checkbox'] svg { width: 13px; height: 13px; }
+.kr-ps .kr-ps-feel-option [data-slot='radio-group-item'] { width: 20px; height: 20px; border: 1.5px solid var(--foreground); }
+.kr-ps .kr-ps-feel-option [data-slot='radio-group-indicator'] { inset: 3.5px; }
+
+/* Actions: an ink primary, then quiet underlined ghosts. */
+.kr-ps .kr-ps-actions { display: grid; justify-items: center; gap: 10px; margin-top: 24px; }
+/* height: auto undoes the runtime's fixed h-8 so a wrapped label grows the button. */
+.kr-ps .kr-ps-primary {
+  width: 100%; height: auto; min-height: 48px; padding: 10px 18px;
+  border-radius: 12px;
+  font: 500 15px/1.25 'DM Sans', sans-serif;
+  white-space: normal;
+}
+.kr-ps .kr-ps-primary svg { width: 18px; height: 18px; }
+.kr-ps .kr-ps-quiet {
+  height: auto; min-height: 44px; padding: 8px 12px;
+  border-radius: 12px;
+  color: var(--muted-foreground);
+  font: 500 14px/1.25 'DM Sans', sans-serif;
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+}
+.kr-ps .kr-ps-quiet:hover { color: var(--foreground); }
+.kr-ps .kr-ps-bonus { margin: 0; font-size: 13px; color: var(--muted-foreground); animation: kr-ps-fade 300ms ease both; }
+.kr-ps .kr-ps-bonus em { font: normal 500 15px/1 var(--nsu-serif); color: var(--nsu-orange); }
+@keyframes kr-ps-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Debrief form. */
+.kr-ps .kr-ps-form { margin-top: 22px; }
+.kr-ps .kr-ps-fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.kr-ps .kr-ps-legend { padding: 0; margin: 0 0 12px; font: 600 15px/1.4 'DM Sans', sans-serif; }
+
+/* Mode toggle: the house selection bar on Kobra Tabs, a tray with an ink-edged active pill. */
+.kr-ps .kr-ps-modes [data-slot='tabs-list'] {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px;
+  width: 100%; height: auto; padding: 4px;
+  border: 1px solid var(--border); border-radius: 12px;
+}
+.kr-ps .kr-ps-modes [data-slot='tabs-trigger'] {
+  flex-direction: column; align-items: flex-start; justify-content: center; gap: 3px;
+  height: auto; min-height: 54px; padding: 8px 12px;
+  border-radius: 9px;
+  font: 500 15px/1.25 'DM Sans', sans-serif;
+  text-align: left; white-space: normal;
+}
+.kr-ps .kr-ps-modes [data-slot='tabs-trigger'] small { font: 400 13px/1.2 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-ps .kr-ps-modes [data-slot='tabs-trigger'][data-active] {
+  border-color: var(--outline-strong);
+  background: var(--background);
+  color: var(--foreground);
+  box-shadow: none;
+}
+.kr-ps .kr-ps-modes [data-slot='tabs-trigger'][data-active] small { color: var(--foreground); }
+
+/* Confidence: a list of rows in a narrow card, a five-step scale in a wide one. */
+.kr-ps .kr-ps-question { margin: 22px 0 12px; font: 500 15px/1.45 'DM Sans', sans-serif; }
+.kr-ps .kr-ps-feel { display: grid; gap: 8px; }
+@container (min-width: 500px) {
+  .kr-ps .kr-ps-feel { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .kr-ps .kr-ps-feel-option { flex-direction: column; justify-content: center; gap: 10px; min-height: 80px; padding: 12px 6px; text-align: center; }
+}
+
+/* Reflection: a native textarea (the runtime has no Textarea yet), drawn to match Kobra's Input. */
+.kr-ps .kr-ps-field { display: grid; gap: 8px; margin-top: 22px; }
+.kr-ps .kr-ps-field label { font: 500 15px/1.45 'DM Sans', sans-serif; }
+.kr-ps .kr-ps-textarea {
+  display: block; width: 100%; min-height: 104px;
+  padding: 12px 14px;
+  border: 1px solid var(--border); border-radius: 12px;
+  background: transparent; color: var(--foreground);
+  font: 400 15px/1.6 'DM Sans', sans-serif;
+  resize: vertical;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.kr-ps .kr-ps-textarea::placeholder { color: var(--muted-foreground); opacity: 1; }
+.kr-ps .kr-ps-textarea:hover { border-color: color-mix(in srgb, var(--foreground) 40%, var(--border)); }
+.kr-ps .kr-ps-textarea:focus { outline: none; border-color: var(--foreground); box-shadow: inset 0 0 0 .5px var(--foreground); }
+.kr-ps .kr-ps-textarea:disabled { cursor: not-allowed; opacity: .5; }
+.dark .kr-ps .kr-ps-textarea { border-color: color-mix(in srgb, var(--foreground) 15%, transparent); background: color-mix(in srgb, var(--foreground) 4%, transparent); }
+.dark .kr-ps .kr-ps-textarea:focus { border-color: var(--foreground); }
+.kr-ps .kr-ps-help { margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted-foreground); }
+.kr-ps .kr-ps-note { margin: 4px 0 0; max-width: 44ch; font-size: 13px; line-height: 1.6; color: var(--muted-foreground); text-align: center; }
+
+/* The debrief and the current study receipt (study-crew.css, untouched): side
+   by side as on the live screen when the row is wide enough, stacked otherwise.
+   The receipt keeps its own paper, zigzag edges, shadow and tilt; the slot only
+   caps its width at the live screen's and leaves room for the tilt. */
+.kr-ps .kr-ps-debrief { display: grid; gap: 24px; align-items: start; min-width: 0; color: var(--foreground); font: 400 15px/1.55 'DM Sans', sans-serif; }
+@container (min-width: 760px) {
+  .kr-ps .kr-ps-debrief { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+}
+.kr-ps .kr-ps-debrief .study-receipt { width: calc(100% - 24px); max-width: 440px; margin: 16px auto 12px; }
+
+/* Crew artwork, sized for a card (the global rule draws it at 180px). */
+.kr-ps .kr-ps-art { display: block; flex: none; line-height: 0; }
+.kr-ps .kr-ps-art-lg .crew-illustration,
+.kr-ps .kr-ps-art-lg .crew-original { width: 112px; height: 112px; }
+
+/* Saved: the points as the one big serif number. */
+.kr-ps .kr-ps-saved-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.kr-ps .kr-ps-saved-top > div { min-width: 0; }
+.kr-ps .kr-ps-points { margin: 10px 0 0; font: 500 clamp(56px, 3vw + 40px, 72px)/1 var(--nsu-serif); letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+.kr-ps .kr-ps-points:focus { outline: none; }
+.kr-ps .kr-ps-points em { font-style: normal; color: var(--nsu-orange); }
+.kr-ps .kr-ps-points small { margin-left: 4px; font: 500 15px/1 'DM Sans', sans-serif; letter-spacing: 0; color: var(--muted-foreground); }
+
+@media (max-width: 560px) {
+  .kr-ps .kr-ps-card { padding: 20px; }
+  /* 16px stops iOS zooming into the field. */
+  .kr-ps .kr-ps-textarea { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kr-ps .kr-ps-choice,
+  .kr-ps .kr-ps-feel-option,
+  .kr-ps .kr-ps-textarea { transition: none; }
+  .kr-ps .kr-ps-bonus { animation: none; }
+}

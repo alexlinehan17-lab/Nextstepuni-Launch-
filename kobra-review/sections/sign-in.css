@@ -1,0 +1,427 @@
+/* Sign up and sign in on Kobra (review section 06). The account card as a
+   paper card on the white canvas: 1px hairlines, radius 12 for rows and
+   inputs and 20 for the card, DM Sans controls, a serif title, ink for the
+   primary action and orange (with dark ink on it) for ordinary selection.
+   No shadows, gradients or tints. Floating layers are portalled out of the
+   section, so their rules are scoped by their own class names. */
+
+.kr-si,
+.kr-si-popover,
+.kr-si-select-menu,
+.kr-si-dialog {
+  --kr-si-on-orange: var(--foreground);
+  --kr-si-edge: var(--outline-soft);
+  --kr-si-ink-edge: color-mix(in srgb, var(--foreground) 55%, transparent);
+  --field-focus-color: var(--foreground);
+  --field-focus-width: 1px;
+}
+.dark .kr-si,
+.dark .kr-si-popover,
+.dark .kr-si-select-menu,
+.dark .kr-si-dialog { --kr-si-on-orange: var(--background); }
+
+.kr-si {
+  container-type: inline-size;
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  color: var(--foreground);
+  font: 500 15px/1.55 'DM Sans', sans-serif;
+}
+.kr-si :is(input, button) { font-family: inherit; }
+.kr-si :is(a, [data-slot=button]):focus-visible { outline: 2px solid var(--nsu-orange); outline-offset: 2px; }
+
+/* The wordmark line, as the live page has it. */
+.kr-si .kr-si-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.kr-si .kr-si-wordmark { font: 700 26px/1 'DM Sans', sans-serif; letter-spacing: -.045em; }
+.kr-si .kr-si-wordmark > span { color: var(--nsu-orange); }
+.kr-si .kr-si-bar-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.kr-si .kr-si-bar [data-slot=button] { gap: 7px; padding-inline: 12px; font: 500 14px/1 'DM Sans', sans-serif; }
+.kr-si .kr-si-bar [data-slot=button] svg { width: 15px; height: 15px; }
+
+/* The card. The paper card's own lift is dropped for a hairline. */
+.kr-si .kr-si-card.nsu-paper-card {
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+/* Buttons: Kobra variants; ink face for the primary, ink outline for the rest. */
+.kr-si [data-slot=button] { border-radius: 12px; }
+.kr-si .kr-si-primary {
+  min-height: 48px;
+  padding-inline: 18px;
+  justify-content: space-between;
+  gap: 16px;
+  font: 500 15px/1 'DM Sans', sans-serif;
+}
+.kr-si .kr-si-primary svg { width: 17px; height: 17px; }
+.kr-si .kr-si-back { min-height: 48px; padding-inline: 16px; gap: 8px; font: 500 15px/1 'DM Sans', sans-serif; }
+.kr-si .kr-si-back svg { width: 16px; height: 16px; }
+.kr-si .kr-si-actions { display: flex; align-items: stretch; gap: 10px; margin-top: 24px; }
+.kr-si .kr-si-actions > .kr-si-primary { flex: 1; }
+
+/* Create account / Log in: the selected tab takes the orange face. */
+/* The runtime's Tabs root lays the list and the panel out in a row unless it is
+   told otherwise; the account card wants the list above the form. */
+.kr-si .kr-si-tabs { display: flex; flex-direction: column; gap: 0; }
+.kr-si .kr-si-tabs [data-slot=tabs-content] { width: 100%; min-width: 0; }
+.kr-si .kr-si-tabs [data-slot=tabs-list] {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-bottom: 26px;
+  padding: 4px;
+  gap: 4px;
+  border: 1px solid var(--kr-si-edge);
+  border-radius: 12px;
+  background: transparent;
+}
+.kr-si .kr-si-tabs [data-slot=tabs-trigger] {
+  height: auto;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 9px;
+  color: var(--muted-foreground);
+  font: 500 15px/1 'DM Sans', sans-serif;
+  cursor: pointer;
+}
+.kr-si .kr-si-tabs [data-slot=tabs-trigger]:hover { color: var(--foreground); background: color-mix(in srgb, var(--foreground) 6%, transparent); }
+.kr-si .kr-si-tabs [data-slot=tabs-trigger][data-active] {
+  background: var(--nsu-orange);
+  color: var(--kr-si-on-orange);
+  box-shadow: none;
+}
+.kr-si .kr-si-tabs [data-slot=tabs-trigger]:focus-visible { outline: 2px solid var(--nsu-orange); outline-offset: 2px; }
+.kr-si .kr-si-tabs [data-slot=tabs-content] { font-size: 15px; }
+
+/* Each view slides in a little, as the live card does. */
+.kr-si .kr-si-view { min-width: 0; animation: kr-si-enter 240ms cubic-bezier(.22, 1, .36, 1); }
+@keyframes kr-si-enter { from { opacity: 0; transform: translateX(8px); } to { opacity: 1; transform: none; } }
+
+/* Step line: a serif numeral eyebrow and four segments with outlined tracks. */
+.kr-si .kr-si-steprow { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.kr-si .kr-si-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--muted-foreground);
+  font: 500 11px/1.6 'DM Sans', sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.kr-si .kr-si-eyebrow > span {
+  padding-right: 10px;
+  border-right: 1px solid var(--border);
+  color: var(--foreground);
+  font: 500 13px/1 var(--nsu-serif);
+  letter-spacing: 0;
+}
+.kr-si .kr-si-eyebrow > svg { width: 15px; height: 15px; color: var(--foreground); }
+.kr-si .kr-si-context { margin-bottom: 14px; }
+.kr-si .kr-si-steps { display: flex; gap: 4px; }
+.kr-si .kr-si-steps i { width: 22px; height: 6px; border: 1px solid var(--kr-si-ink-edge); border-radius: 3px; }
+.kr-si .kr-si-steps i[data-state] { border-color: var(--nsu-orange); background: var(--nsu-orange); }
+
+.kr-si .kr-si-heading { margin-bottom: 22px; }
+.kr-si .kr-si-heading h2 {
+  margin: 0;
+  font: 500 32px/1.1 var(--nsu-serif);
+  letter-spacing: -.02em;
+  outline: none;
+}
+.kr-si .kr-si-heading p { margin: 10px 0 0; color: var(--muted-foreground); font: 400 15px/1.55 'DM Sans', sans-serif; }
+
+/* What the student has told us so far, carried down the steps. */
+.kr-si .kr-si-carry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 10px 14px 10px 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.kr-si .kr-si-initial {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--kr-si-ink-edge);
+  border-radius: 50%;
+  font: 500 15px/1 var(--nsu-serif);
+}
+.kr-si .kr-si-carry > span:nth-child(2) { display: grid; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.kr-si .kr-si-carry small { color: var(--muted-foreground); font: 400 13px/1.4 'DM Sans', sans-serif; }
+.kr-si .kr-si-carry > svg { flex: none; width: 16px; height: 16px; }
+
+/* Fields. */
+.kr-si .kr-si-fields { display: grid; gap: 18px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.kr-si .kr-si-field { display: grid; gap: 8px; min-width: 0; }
+.kr-si .kr-si-label-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.kr-si .kr-si-label-row > label,
+.kr-si .kr-si-label { color: var(--foreground); font: 500 14px/1.4 'DM Sans', sans-serif; }
+.kr-si .kr-si-detail { margin: 0; color: var(--muted-foreground); font: 400 13px/1.5 'DM Sans', sans-serif; }
+.kr-si .kr-si-field-error { margin: 0; color: var(--foreground); font: 500 13px/1.5 'DM Sans', sans-serif; }
+.kr-si .kr-si-error { margin: 18px 0 0; color: var(--foreground); font: 500 14px/1.5 'DM Sans', sans-serif; }
+.kr-si .kr-si-note { margin: 16px 0 0; color: var(--muted-foreground); font: 400 13px/1.5 'DM Sans', sans-serif; }
+.kr-si .kr-si-note:empty { margin: 0; }
+
+.kr-si [data-slot=input] {
+  height: 48px;
+  padding: 0 14px;
+  border-radius: 12px;
+  color: var(--foreground);
+  font: 500 15px/1 'DM Sans', sans-serif;
+}
+.kr-si [data-slot=input]::placeholder { color: var(--muted-foreground); font-weight: 400; }
+.kr-si :is([data-slot=input], [data-slot=select-trigger]):not([aria-invalid=true]) { border-color: var(--kr-si-edge); }
+.kr-si :is([data-slot=input], [data-slot=select-trigger]):not([aria-invalid=true]):hover { border-color: var(--kr-si-ink-edge); }
+.kr-si :is([data-slot=input], [data-slot=select-trigger]):not([aria-invalid=true]):focus-visible { border-color: var(--field-focus-color); }
+
+/* Password: the reveal toggle sits inside the field's frame. */
+.kr-si .kr-si-password { position: relative; }
+.kr-si .kr-si-password [data-slot=input] { padding-right: 52px; }
+.kr-si .kr-si-reveal { position: absolute; top: 4px; right: 4px; width: 40px; height: 40px; border-radius: 9px; color: var(--foreground); }
+.kr-si .kr-si-reveal svg { width: 18px; height: 18px; }
+.kr-si .kr-si-rule { display: flex; align-items: center; gap: 6px; margin: 0; color: var(--muted-foreground); font: 400 13px/1.5 'DM Sans', sans-serif; }
+.kr-si .kr-si-rule[data-valid] { color: var(--foreground); }
+.kr-si .kr-si-rule svg { flex: none; width: 14px; height: 14px; }
+
+.kr-si .kr-si-forgot-row { display: flex; justify-content: flex-end; margin-top: -8px; }
+.kr-si .kr-si-quiet {
+  min-height: 36px;
+  padding-inline: 8px;
+  color: var(--foreground);
+  font: 500 14px/1 'DM Sans', sans-serif;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--kr-si-ink-edge);
+  text-underline-offset: 4px;
+}
+.kr-si .kr-si-quiet:hover { text-decoration-color: currentColor; }
+
+/* School: a Kobra Select with the live picker's caption and value. */
+.kr-si .kr-si-select[data-slot=select-trigger] {
+  width: 100%;
+  height: auto;
+  min-height: 56px;
+  padding: 8px 12px 8px 14px;
+  border-radius: 12px;
+  font: 500 15px/1.3 'DM Sans', sans-serif;
+}
+.kr-si .kr-si-select-text { display: grid; flex: 1; gap: 2px; min-width: 0; text-align: left; }
+.kr-si .kr-si-select-text small { color: var(--muted-foreground); font: 400 12px/1.3 'DM Sans', sans-serif; }
+.nsu-kobra .kr-si-select-menu[data-slot=select-content] {
+  padding: 6px;
+  border: 1px solid var(--outline-strong);
+  border-radius: 14px;
+  box-shadow: none;
+}
+.nsu-kobra .kr-si-select-menu [data-slot=select-item] {
+  min-height: 48px;
+  padding: 8px 32px 8px 10px;
+  border-radius: 9px;
+  font: 500 15px/1.3 'DM Sans', sans-serif;
+  cursor: pointer;
+}
+.nsu-kobra .kr-si-select-menu [data-slot=select-item][data-selected] { background: var(--nsu-orange); color: var(--kr-si-on-orange); }
+.kr-si-select-item { display: grid; gap: 2px; }
+.kr-si-select-item small { color: var(--muted-foreground); font: 400 12px/1.3 'DM Sans', sans-serif; white-space: normal; }
+.nsu-kobra .kr-si-select-menu [data-selected] .kr-si-select-item small { color: inherit; }
+
+/* Join code: three groups of four single-character Inputs. */
+.kr-si .kr-si-code { display: flex; align-items: center; min-width: 0; }
+.kr-si .kr-si-code-set { display: flex; flex: 1 1 0; align-items: center; min-width: 0; }
+.kr-si .kr-si-code-dash { flex: none; width: 10px; height: 1.5px; margin: 0 7px; border-radius: 1px; background: var(--muted-foreground); }
+.kr-si .kr-si-code-cells { display: flex; flex: 1 1 0; min-width: 0; }
+.kr-si .kr-si-code-cell[data-slot=input] {
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
+  height: 52px;
+  margin-left: -1px;
+  padding: 0;
+  border-radius: 0;
+  font: 500 18px/1 'DM Sans', sans-serif;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  text-transform: uppercase;
+}
+.kr-si .kr-si-code-cell[data-slot=input]:first-child { margin-left: 0; border-radius: 12px 0 0 12px; }
+.kr-si .kr-si-code-cell[data-slot=input]:last-child { border-radius: 0 12px 12px 0; }
+.kr-si .kr-si-code-cell[data-slot=input]:is(:hover, :focus) { position: relative; z-index: 1; }
+.kr-si .kr-si-code-cell[data-slot=input]:focus { border-color: var(--field-focus-color); }
+.kr-si .kr-si-help.nsu-ink-outline {
+  justify-self: start;
+  min-height: 36px;
+  margin-top: 2px;
+  padding-inline: 12px;
+  gap: 7px;
+  font: 500 13px/1 'DM Sans', sans-serif;
+}
+.kr-si .kr-si-help svg { width: 15px; height: 15px; }
+
+/* Entry help, as a Popover beside the field it explains. */
+.nsu-kobra .kr-si-popover[data-slot=popover-content] {
+  width: min(340px, calc(100vw - 32px));
+  padding: 18px;
+  border: 1px solid var(--outline-strong);
+  border-radius: 16px;
+  box-shadow: none;
+}
+.kr-si-pop { display: grid; gap: 10px; color: var(--foreground); font: 400 14px/1.55 'DM Sans', sans-serif; }
+.kr-si-pop h3 { margin: 0; font: 500 21px/1.2 var(--nsu-serif); letter-spacing: -.02em; }
+.kr-si-pop p { margin: 0; color: var(--muted-foreground); }
+.kr-si-pop .kr-si-pop-close { justify-self: start; min-height: 40px; margin-top: 6px; padding-inline: 14px; border-radius: 12px; font: 500 14px/1 'DM Sans', sans-serif; }
+
+/* Star Crew: a RadioGroup of hairline tiles; the chosen one takes an orange name band. */
+.kr-si .kr-si-crew[data-slot=radio-group] { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.kr-si .kr-si-crew-item {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding-top: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 150ms ease;
+}
+.kr-si .kr-si-crew-item:hover { border-color: var(--kr-si-ink-edge); }
+.kr-si .kr-si-crew-illustration.star-crew-avatar { width: 64px; height: 64px; border: 0; border-radius: 0; background: transparent; }
+.kr-si .kr-si-crew-name {
+  align-self: stretch;
+  justify-self: stretch;
+  padding: 7px 4px 8px;
+  border-top: 1px solid var(--border);
+  font: 500 13px/1.2 'DM Sans', sans-serif;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.kr-si .kr-si-crew-item [data-slot=radio-group-item] { position: absolute; top: 8px; right: 8px; }
+.kr-si .kr-si-crew-item[data-selected] { border-color: var(--nsu-orange); box-shadow: inset 0 0 0 1px var(--nsu-orange); }
+.kr-si .kr-si-crew-item[data-selected] .kr-si-crew-name { border-top-color: var(--nsu-orange); background: var(--nsu-orange); color: var(--kr-si-on-orange); }
+.kr-si .kr-si-crew-item:has(:focus-visible),
+.kr-si .kr-si-role:has(:focus-visible) { outline: 2px solid var(--nsu-orange); outline-offset: 2px; }
+.kr-si .kr-si-crew-pick { margin-top: 2px; }
+.kr-si .kr-si-crew-pick strong { margin-right: 6px; color: var(--foreground); font-weight: 500; }
+
+/* Radio items: an ink ring; checked is an orange ring with Kobra's own dot in orange. */
+.kr-si [data-slot=radio-group-item] { width: 18px; height: 18px; border: 1.5px solid var(--kr-si-ink-edge); background: transparent; }
+.kr-si [data-slot=radio-group-item][data-checked] { --primary: var(--nsu-orange); border-color: var(--nsu-orange); }
+
+/* School role: two rows; the chosen row takes the orange face and an ink dot. */
+.kr-si .kr-si-roles[data-slot=radio-group] { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.kr-si .kr-si-role {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 52px;
+  padding: 10px 14px;
+  border: 1px solid var(--kr-si-edge);
+  border-radius: 12px;
+  font: 500 15px/1.25 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.kr-si .kr-si-role:hover { border-color: var(--kr-si-ink-edge); }
+.kr-si .kr-si-role[data-selected] { border-color: var(--nsu-orange); background: var(--nsu-orange); color: var(--kr-si-on-orange); }
+.kr-si .kr-si-role[data-selected] [data-slot=radio-group-item] { --primary: var(--kr-si-on-orange); border-color: var(--kr-si-on-orange); }
+.kr-si .kr-si-role-name { min-width: 0; }
+
+/* Consent: a Kobra Checkbox whose checked face is orange with an ink tick. */
+.kr-si .kr-si-consent { display: grid; gap: 10px; padding-top: 18px; border-top: 1px solid var(--border); }
+.kr-si .kr-si-consent-row { display: flex; align-items: flex-start; gap: 12px; font: 500 15px/1.5 'DM Sans', sans-serif; cursor: pointer; }
+.kr-si .kr-si-checkbox[data-slot=checkbox] {
+  --primary: var(--nsu-orange);
+  --primary-foreground: var(--kr-si-on-orange);
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  border: 1.5px solid var(--kr-si-ink-edge);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.kr-si .kr-si-checkbox[data-slot=checkbox][data-checked] { border-color: var(--nsu-orange); }
+.kr-si .kr-si-checkbox svg { width: 14px; height: 14px; }
+.kr-si .kr-si-consent > .kr-si-detail { padding-left: 32px; }
+.kr-si :is(.kr-si-consent, .kr-si-legal) a { color: var(--foreground); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.kr-si :is(.kr-si-consent, .kr-si-legal) a:hover { text-decoration-color: var(--nsu-orange); }
+
+.kr-si .kr-si-key { margin: 12px 0 0; color: var(--muted-foreground); font: 400 12px/1.5 'DM Sans', sans-serif; text-align: right; }
+.kr-si .kr-si-key kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  padding: 0 4px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--foreground);
+  font: 500 11px/1 'DM Sans', sans-serif;
+}
+
+/* Providers below an "or" hairline, as outline Buttons. */
+.kr-si .kr-si-providers { display: grid; gap: 10px; margin-top: 22px; }
+.kr-si .kr-si-divider { display: flex; align-items: center; gap: 12px; margin: 0 0 4px; color: var(--muted-foreground); font: 400 13px/1 'DM Sans', sans-serif; }
+.kr-si .kr-si-divider::before,
+.kr-si .kr-si-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.kr-si .kr-si-provider { width: 100%; min-height: 48px; gap: 10px; font: 500 15px/1 'DM Sans', sans-serif; }
+.kr-si .kr-si-provider svg { width: 18px; height: 18px; }
+
+.kr-si .kr-si-stack { display: grid; justify-items: start; gap: 10px; }
+.kr-si .kr-si-wide { width: 100%; min-height: 48px; font: 500 15px/1 'DM Sans', sans-serif; }
+
+.kr-si .kr-si-legal { display: flex; justify-content: center; gap: 20px; font: 500 13px/1.5 'DM Sans', sans-serif; }
+.kr-si .kr-si-legal a { color: var(--muted-foreground); }
+.kr-si .kr-si-legal a:hover { color: var(--foreground); }
+.kr-si .kr-si-review {
+  margin: 0;
+  color: var(--muted-foreground);
+  font: 500 11px/1.6 'DM Sans', sans-serif;
+  letter-spacing: .13em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.kr-si .kr-si-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* "Still waiting?" as a Kobra Dialog, on a hairline instead of a shadow. */
+.nsu-kobra .kr-si-dialog[data-slot=dialog-content] { border: 1px solid var(--outline-strong); border-radius: 20px; box-shadow: none; }
+.kr-si-dialog-body { display: grid; gap: 12px; color: var(--foreground); font: 400 14px/1.55 'DM Sans', sans-serif; }
+.kr-si-dialog-body [data-slot=dialog-title] { font: 500 26px/1.15 var(--nsu-serif); letter-spacing: -.02em; }
+.kr-si-dialog-body [data-slot=dialog-description],
+.kr-si-dialog-body > p { margin: 0; color: var(--muted-foreground); font: 400 14px/1.55 'DM Sans', sans-serif; }
+.kr-si-dialog-body [data-slot=dialog-footer] { margin-top: 8px; }
+.kr-si-dialog-body [data-slot=button] { min-height: 44px; padding-inline: 16px; border-radius: 12px; font: 500 14px/1 'DM Sans', sans-serif; }
+
+/* Narrow: phone width inside the review frame or on its own. */
+@container (max-width: 460px) {
+  .kr-si .kr-si-card.nsu-paper-card { padding: 20px; }
+  .kr-si .kr-si-heading h2 { font-size: 28px; }
+  .kr-si .kr-si-crew[data-slot=radio-group] { gap: 6px; }
+  .kr-si .kr-si-crew-illustration.star-crew-avatar { width: 50px; height: 50px; }
+  .kr-si .kr-si-crew-item [data-slot=radio-group-item] { top: 6px; right: 6px; width: 16px; height: 16px; }
+  .kr-si .kr-si-code-cell[data-slot=input] { height: 46px; font-size: 16px; }
+  .kr-si .kr-si-code-dash { width: 6px; margin: 0 4px; }
+  .kr-si .kr-si-roles[data-slot=radio-group] { grid-template-columns: minmax(0, 1fr); }
+  .kr-si .kr-si-actions > .kr-si-back { padding-inline: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-si .kr-si-view { animation: none; }
+  .kr-si :is(.kr-si-crew-item, .kr-si-role) { transition: none; }
+}

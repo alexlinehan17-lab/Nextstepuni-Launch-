@@ -1,0 +1,290 @@
+/* Mark Bank session on Kobra (review AFTER, 27 Oct).
+   One hairline paper: header, question beside the scheme, one rail. Reveal is
+   the one ink-faced primary Button; everything else is outline. Mint is
+   correctness only (a claimed point, all marks claimed); ink marks the active
+   item in a bar (the route pill, the chosen grade, a chosen mark value); the
+   orange underline is the paper's command clause. No shadows, no !important.
+   Layout follows the paper's own width (container queries). */
+
+.kr-mbs {
+  container: kr-mbs / inline-size;
+  --kr-mbs-ring: color-mix(in srgb, var(--nsu-orange) 22%, transparent);
+  display: grid;
+  gap: 28px;
+  min-width: 0;
+  color: var(--foreground);
+  font: 400 15px/1.55 'DM Sans', sans-serif;
+}
+.kr-mbs h2, .kr-mbs h3, .kr-mbs p { margin: 0; }
+
+.kr-mbs .kr-mbs-eyebrow,
+.kr-mbs .kr-mbs-kicker {
+  display: block;
+  font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.kr-mbs .kr-mbs-muted { color: var(--muted-foreground); }
+
+/* Review control: which moment of the card the paper shows. Kept apart by a dashed rule. */
+.kr-mbs .kr-mbs-preview {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
+  padding-bottom: 16px; border-bottom: 1px dashed var(--outline-soft);
+}
+
+/* Kobra Tabs, house face: a soft tray, the chosen tab a white face with an ink edge. */
+.kr-mbs [data-slot=tabs] { gap: 0; }
+.kr-mbs [data-slot=tabs] > [data-slot=tabs-list] {
+  height: 44px; padding: 4px; gap: 4px;
+  border: 1px solid var(--outline-soft); border-radius: 12px;
+}
+.kr-mbs [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger] {
+  flex: none; min-width: 0; padding: 0 16px;
+  border: 1px solid transparent; border-radius: 9px;
+  font: 500 15px/1 'DM Sans', sans-serif; color: var(--muted-foreground);
+}
+.kr-mbs [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger]:hover { color: var(--foreground); }
+.kr-mbs [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger][aria-selected=true] {
+  background: var(--background); color: var(--foreground);
+  border-color: var(--outline-strong); box-shadow: none;
+}
+.kr-mbs .kr-mbs-preview [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger] { padding-inline: 14px; font-size: 14px; }
+
+/* Outline Buttons: one height, one radius. */
+.kr-mbs [data-slot=button] { border-radius: 12px; font: 500 14px/1 'DM Sans', sans-serif; gap: 8px; }
+.kr-mbs [data-slot=button]:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--kr-mbs-ring); }
+.kr-mbs [data-slot=button] svg { width: 16px; height: 16px; }
+
+/* ── The paper ─────────────────────────────────────────────────────────── */
+.kr-mbs .kr-mbs-paper {
+  container: kr-mbs-paper / inline-size;
+  min-width: 0;
+  border: 1px solid var(--border); border-radius: 24px;
+  background: var(--background);
+  /* clip, not hidden: hidden would make the paper a scroller and stop the rail sticking. */
+  overflow: clip;
+}
+
+.kr-mbs .kr-mbs-head {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 16px 24px;
+  padding: 26px 28px 22px; border-bottom: 1px solid var(--border);
+}
+.kr-mbs .kr-mbs-head-copy { min-width: 0; }
+.kr-mbs .kr-mbs-title { margin-top: 10px; font: 500 32px/1.13 var(--nsu-serif); letter-spacing: -.02em; }
+.kr-mbs .kr-mbs-desc { margin-top: 10px; font-size: 13px; color: var(--muted-foreground); }
+.kr-mbs .kr-mbs-head-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.kr-mbs .kr-mbs-head-actions [data-slot=button] { min-height: 40px; height: 40px; padding-inline: 14px; }
+.kr-mbs .kr-mbs-head-actions .kr-mbs-close { width: 40px; padding: 0; }
+
+.kr-mbs .kr-mbs-workspace {
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px;
+  padding: 26px 28px 28px; align-items: start;
+}
+.kr-mbs .kr-mbs-question-pane, .kr-mbs .kr-mbs-scheme-pane { min-width: 0; }
+.kr-mbs .kr-mbs-scheme-pane { padding-top: 24px; border-top: 1px solid var(--border); }
+
+/* The question. */
+.kr-mbs .kr-mbs-meta {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  font: 500 10.5px/1.5 'DM Sans', sans-serif; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.kr-mbs .kr-mbs-total {
+  flex-shrink: 0; padding: 5px 8px; border-radius: 6px;
+  background: var(--foreground); color: var(--background);
+  font: 600 12px/1 'DM Sans', sans-serif; letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums;
+}
+.kr-mbs .kr-mbs-stem { margin-top: 12px; font-size: 14.5px; line-height: 1.6; color: var(--muted-foreground); white-space: pre-line; }
+.kr-mbs .kr-mbs-question { margin-top: 12px; font: 500 22px/1.5 var(--nsu-serif); color: var(--foreground); white-space: pre-line; }
+.kr-mbs .kr-mbs-part { display: grid; grid-template-columns: 34px minmax(0, 1fr); column-gap: 12px; margin-bottom: 10px; }
+.kr-mbs .kr-mbs-part-nested { grid-template-columns: 30px minmax(0, 1fr); margin: 8px 0 0; }
+.kr-mbs .kr-mbs-part-label { font: 500 15px/1.95 'DM Sans', sans-serif; color: var(--muted-foreground); }
+/* The command clause: the paper's own orange rule, drawn per line. */
+.kr-mbs .kr-mbs-command {
+  text-decoration-line: underline; text-decoration-color: var(--nsu-orange);
+  text-decoration-thickness: 2.5px; text-underline-offset: .28em; text-decoration-skip-ink: none;
+}
+.kr-mbs .kr-mbs-paper-link {
+  display: inline-flex; margin-top: 18px;
+  font: 400 14px/1.5 'DM Sans', sans-serif; color: var(--foreground);
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.kr-mbs .kr-mbs-paper-link:focus-visible { outline: none; border-radius: 4px; box-shadow: 0 0 0 3px var(--kr-mbs-ring); }
+
+/* The source page: an outline Button shaped as a hairline row. */
+.kr-mbs .kr-mbs-source[data-slot=button] {
+  display: flex; justify-content: space-between; align-items: center; gap: 14px;
+  width: 100%; height: auto; min-height: 64px; margin-top: 16px; padding: 12px 14px 12px 16px;
+  text-align: left; white-space: normal;
+}
+.kr-mbs .kr-mbs-source-copy { display: grid; gap: 3px; min-width: 0; }
+.kr-mbs .kr-mbs-source-label { font: 500 10.5px/1.4 'DM Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-foreground); }
+.kr-mbs .kr-mbs-source-copy strong { font: 600 15px/1.35 'DM Sans', sans-serif; }
+.kr-mbs .kr-mbs-source-copy small { font: 400 12px/1.4 'DM Sans', sans-serif; color: var(--muted-foreground); }
+
+/* The answer route: a hairline box, the routes as the house pill. */
+.kr-mbs .kr-mbs-route { margin-top: 18px; padding: 16px; border: 1px solid var(--border); border-radius: 14px; }
+.kr-mbs .kr-mbs-route-copy { margin: 6px 0 12px; font-size: 13.5px; line-height: 1.5; color: var(--muted-foreground); }
+.kr-mbs .kr-mbs-route [data-slot=tabs] > [data-slot=tabs-list] { max-width: 100%; overflow-x: auto; }
+
+/* The scheme side. */
+.kr-mbs .kr-mbs-draft .kr-mbs-eyebrow { margin-bottom: 12px; }
+.kr-mbs [data-slot=textarea] {
+  min-height: 150px; padding: 14px 16px; resize: vertical;
+  border: 1px solid var(--outline-soft); border-radius: 12px; background: transparent;
+  font: 400 15px/1.7 'DM Sans', sans-serif; color: var(--foreground);
+}
+.kr-mbs [data-slot=textarea]:hover { border-color: var(--outline-strong); }
+.kr-mbs [data-slot=textarea]:focus-visible { outline: none; border-color: var(--outline-strong); box-shadow: 0 0 0 3px var(--kr-mbs-ring); }
+
+.kr-mbs .kr-mbs-waysin { display: grid; justify-items: start; gap: 8px; margin-top: 24px; }
+.kr-mbs .kr-mbs-waysin h3 { font: 500 21px/1.3 var(--nsu-serif); letter-spacing: -.01em; }
+.kr-mbs .kr-mbs-waysin p { margin-bottom: 6px; font-size: 13.5px; color: var(--muted-foreground); }
+.kr-mbs .kr-mbs-waysin [data-slot=button] { min-height: 44px; padding-inline: 18px; }
+
+.kr-mbs .kr-mbs-scheme { margin-top: 24px; }
+.kr-mbs .kr-mbs-scheme-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.kr-mbs .kr-mbs-all[data-slot=button] { min-height: 36px; height: 36px; padding-inline: 12px; font-size: 13px; }
+.kr-mbs .kr-mbs-instruction { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+.kr-mbs .kr-mbs-instruction-title { font: 600 19px/1.3 var(--nsu-serif); letter-spacing: -.01em; }
+.kr-mbs .kr-mbs-instruction p + p { margin-top: 5px; font-size: 13px; line-height: 1.5; color: var(--muted-foreground); }
+
+/* A marking point: a Kobra Checkbox row. Unclaimed is neutral; claimed is mint, dark text on the light fill. */
+.kr-mbs .kr-mbs-rows { display: grid; gap: 8px; }
+.kr-mbs .kr-mbs-row {
+  display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 12px; align-items: start;
+  padding: 12px 14px; border: 1px solid var(--outline-soft); border-radius: 12px;
+  background: var(--background); color: var(--foreground);
+  font: 500 15px/1.45 'DM Sans', sans-serif; cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+.kr-mbs .kr-mbs-row:hover { border-color: var(--outline-strong); }
+.kr-mbs .kr-mbs-row:has(:focus-visible) { box-shadow: 0 0 0 3px var(--kr-mbs-ring); }
+.kr-mbs .kr-mbs-row [data-slot=checkbox] {
+  width: 20px; height: 20px; margin-top: 1px;
+  border: 1.5px solid var(--outline-strong); border-radius: 6px; background: var(--background);
+}
+.kr-mbs .kr-mbs-row-copy { display: grid; gap: 3px; min-width: 0; overflow-wrap: anywhere; }
+.kr-mbs .kr-mbs-row-accepts { color: var(--muted-foreground); }
+.kr-mbs .kr-mbs-row-note { font: 400 13px/1.45 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-mbs .kr-mbs-chip {
+  padding: 4px 7px; border: 1px solid var(--outline-soft); border-radius: 6px;
+  font: 600 12px/1 'DM Sans', sans-serif; font-variant-numeric: tabular-nums; color: var(--muted-foreground); white-space: nowrap;
+}
+.kr-mbs .kr-mbs-row[data-claimed] { border-color: var(--success); background: var(--success-tint); color: var(--success-tint-ink); }
+.kr-mbs .kr-mbs-row[data-claimed] .kr-mbs-row-note,
+.kr-mbs .kr-mbs-row[data-claimed] .kr-mbs-row-accepts { color: var(--success-tint-ink); }
+.kr-mbs .kr-mbs-row[data-claimed] [data-slot=checkbox] { border-color: var(--success); background: var(--success); color: var(--background); }
+.kr-mbs .kr-mbs-row[data-claimed] .kr-mbs-chip { border-color: var(--success); color: var(--success-tint-ink); }
+.kr-mbs .kr-mbs-citation { margin-top: 14px; font-size: 11.5px; line-height: 1.5; color: var(--muted-foreground); }
+
+/* ── The rail ──────────────────────────────────────────────────────────── */
+.kr-mbs .kr-mbs-rail {
+  position: sticky; bottom: 0; z-index: 2;
+  display: grid; gap: 10px;
+  padding: 14px 28px 18px; border-top: 1px solid var(--border); background: var(--background);
+}
+.kr-mbs .kr-mbs-whisper { font: 500 14px/1.45 'DM Sans', sans-serif; color: var(--foreground); }
+.kr-mbs .kr-mbs-reveal[data-slot=button] { width: 100%; min-height: 50px; font-size: 15px; }
+.kr-mbs .kr-mbs-tally {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 12px;
+  padding: 9px 12px; border: 1px solid var(--border); border-radius: 10px;
+  font: 500 13px/1.5 'DM Sans', sans-serif; color: var(--foreground);
+}
+.kr-mbs .kr-mbs-tally-text strong { font-weight: 700; font-variant-numeric: tabular-nums; }
+.kr-mbs .kr-mbs-tally-done { font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+.kr-mbs .kr-mbs-score { white-space: nowrap; font: 500 13px/1.5 'DM Sans', sans-serif; color: var(--muted-foreground); font-variant-numeric: tabular-nums; }
+.kr-mbs .kr-mbs-score b { font: 500 18px/1 var(--nsu-serif); color: var(--foreground); }
+.kr-mbs .kr-mbs-tally[data-complete] { border-color: var(--success); background: var(--success-tint); color: var(--success-tint-ink); }
+.kr-mbs .kr-mbs-tally[data-complete] .kr-mbs-score,
+.kr-mbs .kr-mbs-tally[data-complete] .kr-mbs-score b { color: var(--success-tint-ink); }
+.kr-mbs .kr-mbs-guidance { font-size: 13px; line-height: 1.5; color: var(--foreground); }
+.kr-mbs .kr-mbs-guidance em { color: var(--muted-foreground); }
+
+/* The three grades: one Kobra ToggleGroup. Suggested = ink ring; chosen = ink face. */
+.kr-mbs .kr-mbs-grades[data-slot=toggle-group] {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 168px)); gap: 8px; width: 100%;
+}
+.kr-mbs .kr-mbs-grades > [data-slot=toggle-group-item] {
+  height: 46px; min-width: 0; padding: 0 8px;
+  border: 1px solid var(--outline-soft); border-radius: 12px; background: var(--background); color: var(--foreground);
+  font: 500 15px/1 'DM Sans', sans-serif;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+.kr-mbs .kr-mbs-grades > [data-slot=toggle-group-item]:hover { border-color: var(--foreground); background: var(--background); }
+.kr-mbs .kr-mbs-grades > [data-slot=toggle-group-item][data-suggested] { border-color: var(--foreground); box-shadow: inset 0 0 0 1px var(--foreground); font-weight: 600; }
+.kr-mbs .kr-mbs-grades > [data-slot=toggle-group-item][aria-pressed=true] {
+  border-color: var(--foreground); background: var(--foreground); color: var(--background); box-shadow: none;
+}
+.kr-mbs .kr-mbs-grades > [data-slot=toggle-group-item]:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--kr-mbs-ring); }
+
+/* ── A criterion priced 0 to 4: the same ToggleGroup for the mark value ── */
+.kr-mbs .kr-mbs-aside { display: grid; gap: 12px; padding-top: 20px; border-top: 1px dashed var(--outline-soft); }
+.kr-mbs .kr-mbs-criteria { padding: 22px 24px; border: 1px solid var(--border); border-radius: 20px; }
+.kr-mbs .kr-mbs-criteria-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.kr-mbs .kr-mbs-criterion { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.kr-mbs .kr-mbs-criterion > strong { display: block; font: 600 15px/1.45 'DM Sans', sans-serif; }
+.kr-mbs .kr-mbs-criterion > p { margin: 4px 0 12px; font-size: 13px; line-height: 1.5; color: var(--muted-foreground); }
+.kr-mbs .kr-mbs-marks[data-slot=toggle-group] { display: flex; flex-wrap: wrap; gap: 6px; }
+.kr-mbs .kr-mbs-marks > [data-slot=toggle-group-item] {
+  width: 44px; height: 44px; min-width: 44px; padding: 0;
+  border: 1px solid var(--outline-soft); border-radius: 10px; background: var(--background); color: var(--foreground);
+  font: 500 15px/1 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
+}
+.kr-mbs .kr-mbs-marks > [data-slot=toggle-group-item]:hover { border-color: var(--foreground); background: var(--background); }
+.kr-mbs .kr-mbs-marks > [data-slot=toggle-group-item][aria-pressed=true] { border-color: var(--foreground); background: var(--foreground); color: var(--background); }
+.kr-mbs .kr-mbs-marks > [data-slot=toggle-group-item]:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--kr-mbs-ring); }
+.kr-mbs .kr-mbs-criteria .kr-mbs-guidance { margin-top: 14px; }
+
+/* ── Dialogs: the runtime Dialog, drawn as a hairline paper ────────────── */
+/* The runtime scrim blurs the page behind; the house language has no blur. */
+.nsu-kobra:has(> :is(.kr-mbs-dialog, .kr-mbs-full)) > [data-slot=dialog-overlay] { -webkit-backdrop-filter: none; backdrop-filter: none; }
+.nsu-kobra .kr-mbs-dialog[data-slot=dialog-content] {
+  padding: 24px; border: 1px solid var(--border); border-radius: 20px; box-shadow: none;
+}
+.kr-mbs.kr-mbs-in-dialog { gap: 14px; }
+.kr-mbs .kr-mbs-dialog-title { margin: 4px 0 2px; font: 600 24px/1.2 var(--nsu-serif); letter-spacing: -.02em; color: var(--foreground); }
+.kr-mbs [data-slot=dialog-description] { font-size: 14px; line-height: 1.55; }
+.kr-mbs .kr-mbs-dialog-actions { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-top: 4px; }
+.kr-mbs .kr-mbs-dialog-actions .kr-mbs-paper-link { margin-top: 0; }
+.kr-mbs .kr-mbs-dialog-actions [data-slot=button] { min-height: 44px; padding-inline: 18px; }
+.kr-mbs .kr-mbs-dialog-stack { flex-direction: column; align-items: stretch; }
+.kr-mbs .kr-mbs-dialog-stack [data-slot=button] { width: 100%; min-height: 46px; font-size: 15px; }
+
+/* Expand: the same live paper, full screen, in the runtime Dialog. */
+.nsu-kobra .kr-mbs-full[data-slot=dialog-content] {
+  top: 0; left: 0; translate: none;
+  display: block; width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh;
+  padding: 0; border: 0; border-radius: 0; box-shadow: none; overflow: hidden;
+  background: var(--background);
+}
+.kr-mbs.kr-mbs-in-full { display: block; height: 100%; }
+.kr-mbs .kr-mbs-paper[data-expanded] { display: flex; flex-direction: column; height: 100%; border: 0; border-radius: 0; }
+.kr-mbs .kr-mbs-paper[data-expanded] .kr-mbs-workspace { flex: 1; min-height: 0; overflow-y: auto; }
+.kr-mbs .kr-mbs-paper[data-expanded] .kr-mbs-rail { position: static; }
+.kr-mbs .kr-mbs-paper[data-expanded] :is(.kr-mbs-head, .kr-mbs-workspace, .kr-mbs-rail) {
+  padding-inline: max(28px, calc((100% - 1320px) / 2));
+}
+
+/* Width steps, measured on the paper itself. */
+@container kr-mbs-paper (min-width: 820px) {
+  .kr-mbs .kr-mbs-workspace { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; }
+  .kr-mbs .kr-mbs-scheme-pane { padding: 0 0 0 32px; border-top: 0; border-left: 1px solid var(--border); }
+}
+@container kr-mbs-paper (max-width: 560px) {
+  .kr-mbs .kr-mbs-head { flex-wrap: wrap; padding: 22px 20px 18px; }
+  .kr-mbs .kr-mbs-head-actions { margin-left: auto; }
+  .kr-mbs .kr-mbs-title { font-size: 28px; }
+  .kr-mbs .kr-mbs-workspace { padding: 22px 20px 24px; }
+  .kr-mbs .kr-mbs-question { font-size: 20px; }
+  .kr-mbs .kr-mbs-rail { padding: 12px 16px 16px; }
+  .kr-mbs .kr-mbs-grades[data-slot=toggle-group] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .kr-mbs .kr-mbs-route { padding: 14px 12px; }
+  .kr-mbs .kr-mbs-route [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger] { padding-inline: 12px; }
+}
+@container kr-mbs (max-width: 560px) {
+  .kr-mbs .kr-mbs-criteria { padding: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-mbs .kr-mbs-row, .kr-mbs .kr-mbs-grades > [data-slot=toggle-group-item] { transition: none; }
+}

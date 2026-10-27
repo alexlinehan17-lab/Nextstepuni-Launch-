@@ -1,0 +1,104 @@
+/* The email-link pages on Kobra (review section 08): Kobra Cards with a
+   hairline edge on the white canvas (the warm-brown greys, the pink problem
+   tint and the card shadow are gone), Kobra Input and Button, the house
+   fonts. The primary action is the runtime's ink face; a confirmed outcome
+   wears a mint mark with dark ink; the length rule is ink while short and
+   mint once it fits. Errors are the runtime Alert as a hairline row with an
+   ink mark. No orange anywhere: nothing here is a selection. */
+
+.kr-el {
+  --kr-el-edge: var(--outline-soft);
+  --kr-el-ink-edge: color-mix(in srgb, var(--foreground) 55%, transparent);
+  --field-focus-color: var(--foreground);
+  --field-focus-width: 1px;
+  display: grid;
+  gap: 28px;
+  min-width: 0;
+  color: var(--foreground);
+  font: 400 15px/1.55 'DM Sans', sans-serif;
+}
+.kr-el :where(p, h2) { margin: 0; }
+.kr-el :is(input, button) { font-family: inherit; }
+.kr-el [data-slot=button]:focus-visible { outline: 2px solid var(--foreground); outline-offset: 2px; }
+
+.kr-el .kr-el-screen { display: grid; gap: 10px; justify-items: center; min-width: 0; }
+.kr-el .kr-el-caption {
+  justify-self: stretch; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+  font: 500 11px/1.5 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+/* AuthActionCard: a hairline paper card, no lift. */
+.kr-el .kr-el-card[data-slot=card] {
+  width: 100%; max-width: 448px; padding: 0; gap: 0;
+  border: 1px solid var(--border); border-radius: 20px; box-shadow: none;
+  background: var(--background); color: var(--foreground);
+}
+.kr-el .kr-el-content[data-slot=card-content] { padding: 32px; }
+.kr-el .kr-el-kicker {
+  margin-bottom: 16px;
+  font: 600 10.5px/1.4 'DM Sans', sans-serif; letter-spacing: .2em;
+  color: var(--muted-foreground);
+}
+.kr-el .kr-el-title { font: 600 26px/1.15 var(--nsu-serif); letter-spacing: -.02em; color: var(--foreground); }
+.kr-el .kr-el-body { margin-top: 6px; font: 400 14.5px/1.55 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-el .kr-el-for > span { font-weight: 500; color: var(--foreground); overflow-wrap: anywhere; }
+.kr-el .kr-el-lede, .kr-el .kr-el-for { margin-bottom: 24px; }
+
+/* A link that worked: the mint mark, dark ink on the light fill. */
+.kr-el .kr-el-success { display: grid; justify-items: center; text-align: center; }
+.kr-el .kr-el-done-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; margin-bottom: 16px; border-radius: 999px;
+  background: var(--success-tint); color: var(--success-tint-ink);
+}
+.kr-el .kr-el-done-mark svg { width: 24px; height: 24px; stroke-width: 2.4; }
+.kr-el .kr-el-success .kr-el-body { margin-bottom: 24px; }
+
+/* Fields. */
+.kr-el .kr-el-form { display: grid; gap: 16px; }
+.kr-el .kr-el-field { display: grid; gap: 8px; min-width: 0; }
+.kr-el .kr-el-label { font: 500 14px/1.4 'DM Sans', sans-serif; color: var(--foreground); }
+.kr-el [data-slot=input] {
+  height: 48px; padding: 0 52px 0 14px; border-radius: 12px;
+  color: var(--foreground); font: 500 15px/1 'DM Sans', sans-serif;
+}
+.kr-el [data-slot=input]::placeholder { color: var(--muted-foreground); font-weight: 400; }
+.kr-el [data-slot=input]:not([aria-invalid=true]) { border-color: var(--kr-el-edge); }
+.kr-el [data-slot=input]:not([aria-invalid=true]):hover { border-color: var(--kr-el-ink-edge); }
+.kr-el [data-slot=input]:not([aria-invalid=true]):focus-visible { border-color: var(--field-focus-color); }
+.kr-el .kr-el-password { position: relative; }
+.kr-el .kr-el-reveal { position: absolute; top: 4px; right: 4px; width: 40px; height: 40px; border-radius: 9px; color: var(--foreground); }
+.kr-el .kr-el-reveal svg { width: 18px; height: 18px; }
+
+/* The length rule: ink while short, mint once long enough. */
+.kr-el .kr-el-rule { display: flex; align-items: center; gap: 6px; font: 500 13px/1.5 'DM Sans', sans-serif; color: var(--foreground); }
+.kr-el .kr-el-rule[data-valid] { color: var(--success-tint-ink); }
+.kr-el .kr-el-rule-mark {
+  display: inline-flex; align-items: center; justify-content: center; flex: none;
+  width: 18px; height: 18px; border-radius: 999px;
+  background: var(--success-tint); color: var(--success-tint-ink);
+}
+.kr-el .kr-el-rule-mark svg { width: 12px; height: 12px; stroke-width: 2.6; }
+
+/* A failed submit: the runtime Alert as the house hairline row. */
+.kr-el .kr-el-alert[data-slot=alert] {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 16px 12px 14px;
+  border: 1px solid var(--outline-strong); border-radius: 12px;
+  background: var(--background); color: var(--foreground);
+}
+.kr-el .kr-el-alert [data-slot=alert-mark] { width: 22px; height: 22px; padding: 0; background: transparent; color: var(--foreground); }
+.kr-el .kr-el-alert [data-slot=alert-description] { font: 400 14px/1.5 'DM Sans', sans-serif; color: var(--foreground); }
+
+/* The primary action: the runtime's ink face, full width. */
+.kr-el .kr-el-primary {
+  width: 100%; height: auto; min-height: 48px; padding: 10px 18px;
+  border-radius: 12px; white-space: normal;
+  font: 500 15px/1.25 'DM Sans', sans-serif;
+}
+
+@container (max-width: 420px) {
+  .kr-el .kr-el-content[data-slot=card-content] { padding: 24px 20px; }
+}
+.kr-el { container-type: inline-size; }

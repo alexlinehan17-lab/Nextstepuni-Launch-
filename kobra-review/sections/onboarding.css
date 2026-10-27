@@ -1,0 +1,371 @@
+/* Onboarding on Kobra (review AFTER, 27 Oct 2026). Class prefix kr-ob-.
+   The flow keeps its three surfaces: paper (the theme's own canvas and ink, so
+   it reads in Light and Dark), the full-orange welcome / North Star / schedule
+   steps (kept as they are; whether they stay is Alex's open decision), and the
+   summary, which previews the appearance the student picks there.
+   One selected treatment: on paper a chosen card is the orange face with dark
+   text and a chosen list row takes the ink ring; on orange, where an orange
+   face cannot show, the chosen card is the ink face. No shadows, no tints. */
+
+.kr-ob {
+  container: kr-ob / inline-size;
+  /* The house ink on an orange face (approved-ui-theme .nsu-success-mark); the same in both themes. */
+  --kr-ob-on-orange: #25241f;
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  color: var(--foreground);
+  font: 400 15px/1.5 'DM Sans', sans-serif;
+}
+.kr-ob p, .kr-ob h1, .kr-ob h2, .kr-ob dl, .kr-ob dd { margin: 0; }
+
+/* Review control, kept apart from the screen by a dashed rule. */
+.kr-ob .kr-ob-preview {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px;
+  padding-bottom: 14px; border-bottom: 1px dashed var(--outline-soft);
+}
+.kr-ob .kr-ob-preview-label { font: 500 13px/1.4 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-ob .kr-ob-preview-select[data-slot=select-trigger] {
+  min-width: 200px; height: 40px; padding: 0 12px;
+  border-color: var(--outline-soft); border-radius: 10px; background: var(--background);
+  font: 500 14px/1 'DM Sans', sans-serif; color: var(--foreground);
+}
+.kr-ob .kr-ob-preview-select[data-slot=select-trigger]:hover { border-color: var(--outline-strong); }
+
+/* ── The device: one screen of the flow, header and footer pinned like the app. ── */
+.kr-ob .kr-ob-device {
+  --kr-ob-bg: var(--background);
+  --kr-ob-ink: var(--foreground);
+  --kr-ob-muted: var(--muted-foreground);
+  --kr-ob-line: var(--border);
+  /* AppearanceChoice (reused as it is) reads the flow's own variables. */
+  --setup-bg: var(--kr-ob-bg);
+  --setup-ink: var(--kr-ob-ink);
+  --setup-muted: var(--kr-ob-muted);
+  --setup-line: var(--outline-soft);
+  position: relative;
+  display: flex; flex-direction: column;
+  height: 760px; min-width: 0; overflow: hidden;
+  border: 1px solid var(--border); border-radius: 16px;
+  background: var(--kr-ob-bg); color: var(--kr-ob-ink);
+  transition: background 200ms ease;
+}
+.kr-ob .kr-ob-device[data-surface=orange] {
+  --kr-ob-bg: var(--nsu-orange);
+  --kr-ob-ink: var(--kr-ob-on-orange);
+  --kr-ob-muted: #482c1e;
+  --kr-ob-line: color-mix(in srgb, var(--kr-ob-on-orange) 32%, var(--nsu-orange));
+  border-color: var(--nsu-orange);
+}
+/* The summary shows the chosen appearance, whatever the page theme. These are
+   the runtime's own Light and Dark token values (approved-ui-runtime.css,
+   .nsu-kobra and .dark .nsu-kobra) re-pointed for this one surface. */
+.kr-ob .kr-ob-device[data-step=summary][data-surface=paper] {
+  --background: oklch(100% 0 0); --foreground: oklch(14.5% 0 0);
+  --muted: oklch(97% 0 0); --muted-foreground: oklch(55.6% 0 0);
+  --border: oklch(92.2% 0 0); --input: oklch(92.2% 0 0);
+  --primary: oklch(20.5% 0 0); --primary-foreground: oklch(98.5% 0 0);
+  --outline-strong: #383838; --outline-soft: #D4D4D8;
+  color-scheme: light;
+}
+.kr-ob .kr-ob-device[data-step=summary][data-surface=ink] {
+  --background: oklch(14.5% 0 0); --foreground: oklch(98.5% 0 0);
+  --muted: oklch(26.9% 0 0); --muted-foreground: oklch(70.8% 0 0);
+  --border: oklch(100% 0 0 / .1); --input: oklch(100% 0 0 / .15);
+  --primary: oklch(92.2% 0 0); --primary-foreground: oklch(20.5% 0 0);
+  --outline-strong: #A8A29E; --outline-soft: #494541;
+  border-color: var(--outline-soft);
+  color-scheme: dark;
+}
+
+.kr-ob .kr-ob-scroller { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.kr-ob .kr-ob-shell { max-width: 530px; margin: 0 auto; padding: 20px 24px 12px; }
+.kr-ob .kr-ob-brand {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px;
+  font: 800 19px/1 'DM Sans', sans-serif; letter-spacing: -.6px;
+}
+.kr-ob .kr-ob-tools { display: flex; align-items: center; gap: 16px; }
+.kr-ob .kr-ob-stage { font: 500 12px/1 'DM Sans', sans-serif; letter-spacing: .08em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.kr-ob .kr-ob-sound[data-slot=button] { min-height: 40px; padding: 0 12px; gap: 7px; border-radius: 10px; font: 500 12px/1 'DM Sans', sans-serif; color: var(--kr-ob-ink); }
+.kr-ob .kr-ob-sound svg { width: 16px; height: 16px; }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-sound::before { background: transparent; border-color: var(--kr-ob-ink); }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-sound:hover::before { background: color-mix(in srgb, var(--kr-ob-on-orange) 8%, var(--nsu-orange)); }
+
+/* Kobra Progress: an outlined track and an ink fill (the step, not a selection). */
+.kr-ob .kr-ob-progress[data-slot=progress] { display: block; margin-bottom: 26px; }
+.kr-ob .kr-ob-progress [data-slot=progress-track] {
+  height: 8px; border: 1px solid var(--kr-ob-ink); border-radius: 999px; background: transparent;
+}
+.kr-ob .kr-ob-progress [data-slot=progress-indicator] { border-radius: 999px; background: var(--kr-ob-ink); }
+
+.kr-ob .kr-ob-content { min-width: 0; animation: kr-ob-enter 240ms ease-out; }
+@keyframes kr-ob-enter { from { opacity: .5; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.kr-ob .kr-ob-eyebrow, .kr-ob .kr-ob-label {
+  display: block; margin: 0 0 10px;
+  font: 600 11px/1.5 'DM Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--kr-ob-muted);
+}
+/* Titles: serif on the paper steps (house type); the orange steps keep their
+   poster type, as they are. */
+.kr-ob .kr-ob-title {
+  margin: 0 0 18px; overflow-wrap: anywhere;
+  font: 500 clamp(34px, 8cqi, 44px)/1.06 var(--nsu-serif); letter-spacing: -.03em;
+}
+.kr-ob .kr-ob-title:focus { outline: none; }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-title {
+  font: 800 clamp(36px, 9cqi, 50px)/1.01 'DM Sans', sans-serif; letter-spacing: -1.8px; text-transform: uppercase;
+}
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-welcome-title { font-size: clamp(52px, 13cqi, 70px); line-height: .96; letter-spacing: -2.8px; }
+.kr-ob .kr-ob-description { margin: 0 0 18px; font-size: 14px; line-height: 1.6; color: var(--kr-ob-muted); }
+.kr-ob .kr-ob-lead { margin: 0 0 18px; font-size: 17px; line-height: 1.5; color: var(--kr-ob-muted); }
+.kr-ob .kr-ob-art { display: block; object-fit: contain; }
+.kr-ob .kr-ob-welcome-art { width: 100%; height: 200px; margin: 16px 0 22px; }
+.kr-ob .kr-ob-fieldset { min-width: 0; margin: 0 0 20px; padding: 0; border: 0; }
+.kr-ob .kr-ob-field { display: grid; gap: 0; margin: 16px 0; min-width: 0; }
+.kr-ob .kr-ob-hint { margin-top: 8px; font-size: 13px; color: var(--kr-ob-muted); }
+
+/* ── Choice cards: Kobra ToggleGroup items. Paper: white face, hairline; chosen
+   is the orange face with dark text. Orange: white face; chosen is ink. ── */
+.kr-ob .kr-ob-cards[data-slot=toggle-group] { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; width: 100%; }
+.kr-ob .kr-ob-years[data-slot=toggle-group] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.kr-ob .kr-ob-years[data-slot=toggle-group][data-count='2'] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.kr-ob .kr-ob-levels[data-slot=toggle-group] { display: flex; }
+.kr-ob .kr-ob-card[data-slot=toggle-group-item] {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 8px;
+  height: auto; min-height: 56px; min-width: 0; width: 100%; padding: 14px;
+  border: 1px solid var(--outline-soft); border-radius: 12px; background: var(--background); color: var(--foreground);
+  font: 600 14px/1.25 'DM Sans', sans-serif; text-align: left; white-space: normal;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+.kr-ob .kr-ob-card[data-slot=toggle-group-item]:hover { border-color: var(--outline-strong); background: var(--background); }
+.kr-ob .kr-ob-card[data-slot=toggle-group-item][aria-pressed=true] {
+  border-color: var(--nsu-orange); background: var(--nsu-orange); color: var(--kr-ob-on-orange);
+}
+.kr-ob .kr-ob-card[data-slot=toggle-group-item]:focus-visible { outline: 2px solid var(--foreground); outline-offset: 2px; }
+.kr-ob .kr-ob-year[data-slot=toggle-group-item] { min-height: 80px; }
+.kr-ob .kr-ob-year strong { font: 700 27px/1 'DM Sans', sans-serif; letter-spacing: -1px; }
+.kr-ob .kr-ob-year span { font-size: 11px; font-weight: 500; }
+.kr-ob .kr-ob-level[data-slot=toggle-group-item] { align-items: center; flex: 1; min-height: 46px; padding: 10px 12px; }
+
+/* On the orange steps the cards are white faces with ink text; chosen = ink face. */
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-card[data-slot=toggle-group-item] {
+  border-color: transparent; background: #fff; color: var(--kr-ob-on-orange);
+}
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-card[data-slot=toggle-group-item]:hover { border-color: var(--kr-ob-on-orange); }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-card[data-slot=toggle-group-item][aria-pressed=true] {
+  border-color: var(--kr-ob-on-orange); background: var(--kr-ob-on-orange); color: #fff;
+}
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-card:focus-visible { outline-color: var(--kr-ob-on-orange); }
+.kr-ob .kr-ob-motivation[data-slot=toggle-group-item] { min-height: 74px; gap: 7px; padding: 12px; font-size: 13px; }
+.kr-ob .kr-ob-card-number { font-size: 10px; font-weight: 500; letter-spacing: .08em; opacity: .7; }
+
+.kr-ob .kr-ob-motivation-art { position: relative; height: 130px; margin: 6px 0 16px; }
+.kr-ob .kr-ob-motivation-art img { width: 100%; height: 100%; max-width: 245px; margin: auto; }
+.kr-ob .kr-ob-art-label {
+  position: absolute; right: 7px; bottom: 1px; max-width: 195px; padding: 6px 10px;
+  background: #fff; color: var(--kr-ob-on-orange); font-size: 11px; font-weight: 500; line-height: 1.3; transform: rotate(-5deg);
+}
+.kr-ob .kr-ob-selected-description { min-height: 34px; margin: 12px 0 0; }
+
+/* ── The house pill: Kobra Tabs as a grey tray, the chosen tab a white face with
+   an ink edge. It wraps rather than hiding categories off the edge. ── */
+.kr-ob .kr-ob-tabs[data-slot=tabs] { gap: 0; }
+.kr-ob .kr-ob-tabs > [data-slot=tabs-list] {
+  display: flex; flex-wrap: wrap; justify-content: flex-start; width: 100%; height: auto; padding: 4px; gap: 4px;
+  border: 1px solid var(--outline-soft); border-radius: 12px; background: var(--muted);
+}
+.kr-ob .kr-ob-tabs > [data-slot=tabs-list] > [data-slot=tabs-trigger] {
+  flex: 0 1 auto; min-width: 0; height: 36px; padding: 0 12px;
+  border: 1px solid transparent; border-radius: 9px;
+  font: 500 14px/1 'DM Sans', sans-serif; color: var(--muted-foreground);
+}
+.kr-ob .kr-ob-tabs > [data-slot=tabs-list] > [data-slot=tabs-trigger]:hover { color: var(--foreground); }
+.kr-ob .kr-ob-tabs > [data-slot=tabs-list] > [data-slot=tabs-trigger][aria-selected=true] {
+  background: var(--background); color: var(--foreground); border-color: var(--outline-strong); box-shadow: none;
+}
+
+/* Inputs: Kobra Input on the hairline. */
+.kr-ob .kr-ob-input[data-slot=input] {
+  height: 48px; padding: 0 14px;
+  border-color: var(--outline-soft); border-radius: 12px; background: var(--background); color: var(--foreground);
+  font: 500 16px/1 'DM Sans', sans-serif;
+}
+.kr-ob .kr-ob-input[data-slot=input]:hover { border-color: var(--outline-strong); }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-input[data-slot=input] { border-color: var(--kr-ob-on-orange); background: #fff; color: var(--kr-ob-on-orange); color-scheme: light; }
+
+/* Removable chips: Kobra outline Buttons. */
+.kr-ob .kr-ob-tray { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0; }
+.kr-ob .kr-ob-chip[data-slot=button] { height: 36px; min-height: 36px; padding: 0 10px 0 12px; gap: 6px; border-radius: 999px; font: 500 13px/1 'DM Sans', sans-serif; }
+.kr-ob .kr-ob-chip svg { width: 13px; height: 13px; }
+
+/* ── List rows: hairline rows; a chosen row takes the ink ring. ── */
+.kr-ob .kr-ob-list { display: grid; gap: 8px; margin: 14px 0; }
+.kr-ob .kr-ob-row {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px;
+  width: 100%; min-height: 72px; padding: 12px 14px; text-align: left;
+  border: 1px solid var(--outline-soft); border-radius: 12px; background: var(--background); color: var(--foreground);
+  font: 600 15px/1.35 'DM Sans', sans-serif; cursor: pointer;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.kr-ob .kr-ob-row:hover { border-color: var(--outline-strong); }
+.kr-ob .kr-ob-row[aria-pressed=true],
+.kr-ob .kr-ob-row[data-checked] { border-color: var(--foreground); box-shadow: inset 0 0 0 1px var(--foreground); }
+.kr-ob .kr-ob-row:focus-visible, .kr-ob .kr-ob-row:has(:focus-visible) { outline: 2px solid var(--foreground); outline-offset: 2px; }
+.kr-ob .kr-ob-row:disabled { opacity: .45; cursor: not-allowed; }
+.kr-ob .kr-ob-row-name { min-width: 0; overflow-wrap: anywhere; }
+.kr-ob .kr-ob-vision img { width: 60px; height: 60px; object-fit: contain; }
+.kr-ob .kr-ob-tick {
+  display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px;
+  border: 1.5px solid var(--outline-strong); border-radius: 5px; color: var(--background);
+}
+.kr-ob .kr-ob-row[aria-pressed=true] .kr-ob-tick { border-color: var(--foreground); background: var(--foreground); }
+.kr-ob .kr-ob-tick svg { width: 14px; height: 14px; stroke-width: 3; }
+.kr-ob .kr-ob-subject { grid-template-columns: auto minmax(0, 1fr) auto auto; }
+.kr-ob .kr-ob-subject .subject-avatar { width: 48px; height: 48px; }
+.kr-ob .kr-ob-subject-state { font-size: 12px; font-weight: 500; color: var(--muted-foreground); }
+.kr-ob .kr-ob-subject[data-checked] .kr-ob-subject-state { color: var(--foreground); }
+/* Kobra Checkbox, square, with an ink fill when ticked. */
+.kr-ob [data-slot=checkbox] { width: 20px; height: 20px; border: 1.5px solid var(--outline-strong); border-radius: 5px; background: var(--background); }
+.kr-ob [data-slot=checkbox][data-checked] { border-color: var(--foreground); background: var(--foreground); color: var(--background); }
+.kr-ob .kr-ob-device[data-surface=orange] [data-slot=checkbox] { border-color: var(--kr-ob-on-orange); background: #fff; }
+.kr-ob .kr-ob-device[data-surface=orange] [data-slot=checkbox][data-checked] { background: var(--kr-ob-on-orange); color: #fff; }
+
+.kr-ob .kr-ob-subject-hero {
+  display: flex; align-items: center; gap: 22px; margin: 18px 0; padding-bottom: 18px; border-bottom: 1px solid var(--border);
+}
+.kr-ob .kr-ob-subject-hero img { width: 120px; height: 90px; }
+.kr-ob .kr-ob-subject-hero strong { display: block; font: 500 52px/1 var(--nsu-serif); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.kr-ob .kr-ob-subject-hero p { margin-top: 4px; font-size: 13px; color: var(--kr-ob-muted); }
+.kr-ob .kr-ob-subject-hero[data-compact=true] { gap: 14px; margin: 12px 0; padding-bottom: 12px; }
+.kr-ob .kr-ob-subject-hero[data-compact=true] img { width: 64px; height: 54px; }
+.kr-ob .kr-ob-subject-hero[data-compact=true] strong { font-size: 32px; }
+
+/* Text links: Kobra link Buttons in ink. */
+.kr-ob .kr-ob-link[data-slot=button] {
+  display: inline; height: auto; padding: 0; vertical-align: baseline;
+  font: 600 14px/1.5 'DM Sans', sans-serif; color: var(--kr-ob-ink);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+}
+.kr-ob .kr-ob-defer[data-slot=button] { display: inline-flex; min-height: 44px; margin: 10px 0 4px; }
+
+/* ── Grades ── */
+.kr-ob .nsu-points-guide { margin: 4px 0 6px; }
+.kr-ob .kr-ob-grade-graphic { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 22px 0 10px; }
+.kr-ob .kr-ob-grade-column { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.kr-ob .kr-ob-grade-rail {
+  position: relative; width: 44px; height: 120px; overflow: hidden;
+  border: 1px solid var(--outline-strong); border-radius: 8px; background: var(--background);
+}
+.kr-ob .kr-ob-grade-rail span { position: absolute; bottom: 0; left: 0; width: 100%; background: var(--foreground); transition: height 300ms ease-out; }
+.kr-ob .kr-ob-grade-rail [data-target=true] { background: var(--nsu-orange); }
+.kr-ob .kr-ob-grade-column strong { min-height: 28px; font: 500 22px/1.3 var(--nsu-serif); }
+.kr-ob .kr-ob-grades[data-slot=toggle-group] {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; width: 100%;
+}
+.kr-ob .kr-ob-grade[data-slot=toggle-group-item] {
+  height: 44px; min-width: 0; padding: 0 6px;
+  border: 1px solid var(--outline-soft); border-radius: 10px; background: var(--background); color: var(--foreground);
+  font: 600 14px/1 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
+}
+.kr-ob .kr-ob-grade[data-slot=toggle-group-item]:hover { border-color: var(--outline-strong); background: var(--background); }
+.kr-ob .kr-ob-grade[data-slot=toggle-group-item][aria-pressed=true] { border-color: var(--nsu-orange); background: var(--nsu-orange); color: var(--kr-ob-on-orange); }
+.kr-ob .kr-ob-grade[data-slot=toggle-group-item]:disabled { opacity: .4; cursor: not-allowed; }
+.kr-ob .kr-ob-grade[data-slot=toggle-group-item]:focus-visible { outline: 2px solid var(--foreground); outline-offset: 2px; }
+.kr-ob .kr-ob-grade-later[data-slot=toggle-group-item] { grid-column: 1 / -1; }
+
+/* ── Schedule (orange) ── */
+.kr-ob .kr-ob-date[data-slot=input] { font-size: 16px; }
+.kr-ob .kr-ob-countdown { display: flex; align-items: flex-end; gap: 15px; margin: 22px 0; }
+.kr-ob .kr-ob-countdown strong { font: 800 78px/.9 'DM Sans', sans-serif; letter-spacing: -4px; font-variant-numeric: tabular-nums; }
+.kr-ob .kr-ob-countdown span { font: 600 13px/1.4 'DM Sans', sans-serif; letter-spacing: .05em; text-transform: uppercase; }
+.kr-ob .kr-ob-confirm {
+  display: flex; align-items: center; gap: 12px; min-height: 52px; margin-bottom: 20px; padding: 0 14px;
+  border: 1px solid var(--kr-ob-ink); border-radius: 12px; font-size: 14px; font-weight: 500; cursor: pointer;
+}
+.kr-ob .kr-ob-confirm:has([data-checked]) { box-shadow: inset 0 0 0 1px var(--kr-ob-ink); }
+.kr-ob .kr-ob-week-field { margin-top: 26px; }
+.kr-ob .kr-ob-week[data-slot=toggle-group] { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; width: 100%; margin-top: 16px; }
+.kr-ob .kr-ob-day[data-slot=toggle-group-item] {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+  height: auto; min-height: 70px; min-width: 0; padding: 10px 4px;
+  border: 1px solid transparent; border-radius: 10px; background: #fff; color: var(--kr-ob-on-orange);
+  font: 600 14px/1 'DM Sans', sans-serif;
+}
+.kr-ob .kr-ob-day[data-slot=toggle-group-item]:hover { border-color: var(--kr-ob-on-orange); background: #fff; }
+.kr-ob .kr-ob-day[data-slot=toggle-group-item][aria-pressed=true] { border-color: var(--kr-ob-on-orange); background: var(--kr-ob-on-orange); color: #fff; }
+.kr-ob .kr-ob-day[data-slot=toggle-group-item]:focus-visible { outline: 2px solid var(--kr-ob-on-orange); outline-offset: 2px; }
+.kr-ob .kr-ob-day-state { font-size: 12px; font-weight: 400; }
+.kr-ob .kr-ob-count { margin-top: 18px; }
+
+/* ── Summary ── */
+.kr-ob .kr-ob-points { margin: 22px 0; }
+.kr-ob .setup-points-number {
+  display: block; margin-bottom: 10px;
+  font: 500 88px/1 var(--nsu-serif); letter-spacing: -.04em; font-variant-numeric: tabular-nums; color: var(--foreground);
+}
+.kr-ob .kr-ob-review { padding: 22px 0; border-top: 1px solid var(--border); }
+.kr-ob .kr-ob-review-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.kr-ob .kr-ob-review-heading h2 { font: 500 21px/1.3 var(--nsu-serif); letter-spacing: -.01em; }
+.kr-ob .kr-ob-review-heading .kr-ob-link[data-slot=button] { flex-shrink: 0; font-size: 13px; }
+.kr-ob .kr-ob-review-subject {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 12px 0; border-bottom: 1px solid var(--border); font: 500 15px/1.4 'DM Sans', sans-serif;
+}
+.kr-ob .kr-ob-review-subject small { display: block; margin-top: 3px; font-size: 13px; font-weight: 400; color: var(--muted-foreground); }
+.kr-ob .kr-ob-review-details { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.kr-ob .kr-ob-review-details > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.kr-ob .kr-ob-review-details dt { margin-bottom: 5px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted-foreground); }
+.kr-ob .kr-ob-review-details dd { font-size: 15px; line-height: 1.5; }
+.kr-ob .kr-ob-statement { margin-bottom: 10px; font: 500 24px/1.15 var(--nsu-serif); letter-spacing: -.02em; }
+.kr-ob .kr-ob-appearance .setup-appearance { margin: 0 0 18px; padding: 24px 0 4px; border-top: 1px solid var(--border); }
+
+/* ── Footer: the primary action. Ink face on paper and orange, orange face on the
+   dark summary, as today. ── */
+.kr-ob .kr-ob-footer { flex-shrink: 0; width: 100%; max-width: 530px; margin: 0 auto; padding: 10px 24px 12px; background: var(--kr-ob-bg); }
+.kr-ob .kr-ob-validation { margin: 0 0 10px; font-size: 13px; line-height: 1.5; color: var(--kr-ob-muted); }
+.kr-ob .kr-ob-validation:empty { display: none; }
+.kr-ob .kr-ob-continue[data-slot=button] {
+  display: flex; justify-content: space-between; width: 100%; height: auto; min-height: 56px; padding: 14px 18px; gap: 12px;
+  border-radius: 12px; font: 600 16px/1.3 'DM Sans', sans-serif;
+}
+.kr-ob .kr-ob-continue svg { width: 22px; height: 22px; color: var(--nsu-orange); }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-continue[data-slot=button] { color: #fff; }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-continue::before { background: var(--kr-ob-on-orange); }
+.kr-ob .kr-ob-device[data-surface=ink] .kr-ob-continue[data-slot=button] { color: var(--kr-ob-on-orange); }
+.kr-ob .kr-ob-device[data-surface=ink] .kr-ob-continue::before { background: var(--nsu-orange); }
+.kr-ob .kr-ob-device[data-surface=ink] .kr-ob-continue svg { color: var(--kr-ob-on-orange); }
+.kr-ob .kr-ob-continue[data-slot=button]:disabled { opacity: .5; }
+.kr-ob .kr-ob-footer-links {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 6px;
+  font-size: 11px; line-height: 1.4; color: var(--kr-ob-muted);
+}
+.kr-ob .kr-ob-footer-links > span { text-align: right; }
+.kr-ob .kr-ob-back[data-slot=button] { min-height: 44px; margin-left: -10px; padding: 0 10px; gap: 6px; font: 500 13px/1 'DM Sans', sans-serif; color: var(--kr-ob-ink); }
+.kr-ob .kr-ob-back svg { width: 15px; height: 15px; }
+.kr-ob .kr-ob-device[data-surface=orange] .kr-ob-back:hover::before { background: color-mix(in srgb, var(--kr-ob-on-orange) 8%, var(--nsu-orange)); }
+
+/* ── The Kobra Dialog: a hairline edge instead of a cast shadow. ── */
+.kr-ob-dialog[data-slot=dialog-content] { border: 1px solid var(--border); border-radius: 18px; box-shadow: none; }
+.nsu-kobra.kr-ob-portal { display: grid; gap: 18px; background: transparent; }
+.kr-ob-portal .kr-ob-dialog-title { font: 500 24px/1.2 var(--nsu-serif); letter-spacing: -.02em; }
+.kr-ob-portal .kr-ob-dialog-text { margin-top: 8px; font: 400 15px/1.6 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-ob-portal .kr-ob-dialog-actions { display: grid; gap: 10px; }
+.kr-ob-portal .kr-ob-dialog-actions [data-slot=button] {
+  width: 100%; height: auto; min-height: 50px; padding: 12px 16px; border-radius: 12px; white-space: normal;
+  font: 600 15px/1.3 'DM Sans', sans-serif;
+}
+
+@container kr-ob (max-width: 420px) {
+  .kr-ob .kr-ob-shell, .kr-ob .kr-ob-footer { padding-inline: 18px; }
+  .kr-ob .kr-ob-sound span { display: none; }
+  .kr-ob .kr-ob-sound[data-slot=button] { padding: 0 10px; }
+  .kr-ob .kr-ob-preview-select[data-slot=select-trigger] { min-width: 0; width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-ob .kr-ob-content { animation: none; }
+  .kr-ob .kr-ob-device, .kr-ob .kr-ob-card, .kr-ob .kr-ob-row, .kr-ob .kr-ob-grade-rail span { transition: none; }
+}
+
+/* The dialog's backdrop dims without blurring the page behind it. */
+.nsu-kobra:has(> .kr-ob-dialog) > [data-slot=dialog-overlay] { backdrop-filter: none; -webkit-backdrop-filter: none; }

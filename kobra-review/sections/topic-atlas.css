@@ -1,0 +1,244 @@
+/* Topic Atlas on Kobra (review AFTER, 27 Oct 2026). Class prefix kr-ta-.
+   White canvas, 1px hairlines, serif titles and numerals, every colour a theme
+   token so the topic names read in Light and Dark. The year strips keep the
+   Atlas's warmth as data (orange at partial strength for a year it was asked).
+   Selection: pill Tabs (ink-edged white face), the chosen year takes the ink
+   ring, a topic row under the pointer takes the ink edge. No shadows, no tints. */
+
+.kr-ta {
+  container: kr-ta / inline-size;
+  --kr-ta-ring: color-mix(in srgb, var(--nsu-orange) 26%, transparent);
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+  color: var(--foreground);
+  font: 400 15px/1.55 'DM Sans', sans-serif;
+}
+.kr-ta p, .kr-ta h1, .kr-ta h2, .kr-ta h3, .kr-ta dl, .kr-ta dd, .kr-ta ol { margin: 0; }
+.kr-ta .kr-ta-muted { font-size: 13.5px; line-height: 1.6; color: var(--muted-foreground); }
+.kr-ta .kr-ta-eyebrow, .kr-ta .kr-ta-preview-bar > span {
+  font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground);
+}
+.kr-ta .kr-ta-preview-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--outline-soft); }
+
+/* House pill: Kobra Tabs as a grey tray; the chosen tab is a white face with an ink edge. */
+.kr-ta .kr-ta-tabs[data-slot=tabs] { gap: 0; }
+.kr-ta .kr-ta-tabs > [data-slot=tabs-list] {
+  display: flex; flex-wrap: wrap; height: auto; padding: 3px; gap: 3px;
+  border: 1px solid var(--outline-soft); border-radius: 11px; background: var(--muted);
+}
+.kr-ta .kr-ta-tabs > [data-slot=tabs-list] > [data-slot=tabs-trigger] {
+  flex: 0 1 auto; height: 34px; padding: 0 12px;
+  border: 1px solid transparent; border-radius: 8px;
+  font: 500 13.5px/1 'DM Sans', sans-serif; color: var(--muted-foreground); font-variant-numeric: tabular-nums;
+}
+.kr-ta .kr-ta-tabs > [data-slot=tabs-list] > [data-slot=tabs-trigger]:hover { color: var(--foreground); }
+.kr-ta .kr-ta-tabs > [data-slot=tabs-list] > [data-slot=tabs-trigger][aria-selected=true] {
+  background: var(--background); color: var(--foreground); border-color: var(--outline-strong); box-shadow: none;
+}
+
+/* Kobra Select on the hairline. */
+.kr-ta .kr-ta-select[data-slot=select-trigger] {
+  height: 40px; padding: 0 12px 0 14px; gap: 10px;
+  border-color: var(--outline-soft); border-radius: 11px; background: var(--background);
+  font: 500 14px/1 'DM Sans', sans-serif; color: var(--foreground);
+}
+.kr-ta .kr-ta-select[data-slot=select-trigger]:hover { border-color: var(--outline-strong); }
+.kr-ta .kr-ta-subject[data-slot=select-trigger] { width: 100%; max-width: 300px; height: 46px; font-size: 15px; }
+.kr-ta .kr-ta-year[data-slot=select-trigger] { min-width: 120px; }
+/* A chosen year is ordinary list selection: the ink ring. */
+.kr-ta .kr-ta-year[data-slot=select-trigger][data-chosen] { border-color: var(--foreground); box-shadow: inset 0 0 0 1px var(--foreground); }
+
+/* Small outline actions (Export, Share, Full paper) and icon buttons. */
+.kr-ta .kr-ta-small[data-slot=button] { height: 36px; min-height: 36px; padding: 0 12px; gap: 6px; border-radius: 10px; font: 500 13px/1 'DM Sans', sans-serif; }
+.kr-ta .kr-ta-small svg { width: 14px; height: 14px; }
+.kr-ta .kr-ta-icon[data-slot=button] { width: 36px; height: 36px; min-height: 36px; border-radius: 10px; }
+.kr-ta .kr-ta-icon svg { width: 15px; height: 15px; }
+.kr-ta .kr-ta-icon[aria-pressed=true]::before { background: var(--foreground); border-color: var(--foreground); }
+.kr-ta .kr-ta-icon[aria-pressed=true] { color: var(--background); }
+.kr-ta .kr-ta-link[data-slot=button] {
+  display: inline; height: auto; padding: 0; vertical-align: baseline;
+  font: 600 13.5px/1.5 'DM Sans', sans-serif; color: var(--foreground);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+}
+
+/* ── Level 1: the topic map ── */
+.kr-ta .kr-ta-map { display: grid; gap: 0; min-width: 0; }
+.kr-ta .kr-ta-masthead {
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 20px;
+  padding-bottom: 22px; border-bottom: 1px solid var(--border);
+}
+.kr-ta .kr-ta-kicker { font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--nsu-orange); }
+.kr-ta .kr-ta-title { margin-top: 8px; font: 500 clamp(34px, 6cqi, 44px)/1.06 var(--nsu-serif); letter-spacing: -.035em; }
+.kr-ta .kr-ta-lede { margin-top: 10px; max-width: 46ch; color: var(--muted-foreground); }
+.kr-ta .kr-ta-art { width: 92px; height: 92px; flex-shrink: 0; object-fit: contain; }
+.kr-ta .kr-ta-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; padding: 20px 0; }
+
+.kr-ta .kr-ta-workspace { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: start; }
+.kr-ta .kr-ta-workspace > section { min-width: 0; }
+.kr-ta .kr-ta-toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+  padding-bottom: 14px; border-bottom: 1px solid var(--border);
+}
+.kr-ta .kr-ta-spacer { flex: 1; }
+.kr-ta .kr-ta-search { position: relative; display: flex; align-items: center; width: 100%; max-width: 260px; }
+.kr-ta .kr-ta-search [data-slot=input] {
+  height: 40px; padding: 0 38px 0 36px;
+  border-color: var(--outline-soft); border-radius: 11px; background: var(--background);
+  font: 500 14px/1 'DM Sans', sans-serif; color: var(--foreground);
+}
+.kr-ta .kr-ta-search [data-slot=input]:hover { border-color: var(--outline-strong); }
+.kr-ta .kr-ta-search-icon { position: absolute; left: 12px; width: 15px; height: 15px; color: var(--muted-foreground); pointer-events: none; }
+.kr-ta .kr-ta-search .kr-ta-search-clear[data-slot=button] { position: absolute; right: 4px; }
+.kr-ta .kr-ta-empty { padding: 16px 0; }
+
+.kr-ta .kr-ta-strand { margin-top: 26px; }
+.kr-ta .kr-ta-strand-head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.kr-ta .kr-ta-strand-head h3 {
+  flex-shrink: 1; min-width: 0;
+  font: 500 11px/1.5 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground);
+}
+.kr-ta .kr-ta-rule { flex: 1; min-width: 16px; height: 1px; background: var(--border); }
+.kr-ta .kr-ta-strand-head > span:last-child { flex-shrink: 0; font: 500 12px/1 'DM Sans', sans-serif; color: var(--muted-foreground); font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-rows { display: grid; gap: 8px; }
+.kr-ta .kr-ta-row {
+  display: grid; grid-template-columns: 26px minmax(0, 1fr) auto auto; align-items: center; gap: 14px;
+  width: 100%; min-height: 60px; padding: 12px 16px; text-align: left;
+  border: 1px solid var(--border); border-radius: 12px; background: var(--background); color: var(--foreground);
+  cursor: pointer; transition: border-color 150ms ease;
+}
+.kr-ta .kr-ta-row:hover, .kr-ta .kr-ta-row[aria-current=true] { border-color: var(--outline-strong); }
+.kr-ta .kr-ta-row:focus-visible { outline: none; border-color: var(--foreground); box-shadow: 0 0 0 3px var(--kr-ta-ring); }
+.kr-ta .kr-ta-serial { font: 500 13px/1 var(--nsu-serif); color: var(--muted-foreground); text-align: right; font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-row-copy { display: grid; gap: 3px; min-width: 0; }
+.kr-ta .kr-ta-row-title { font: 400 16px/1.35 var(--nsu-serif); color: var(--foreground); }
+.kr-ta .kr-ta-row-meta { display: none; font-size: 12px; color: var(--muted-foreground); font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-row-count { min-width: 28px; text-align: right; font: 500 13px/1 'DM Sans', sans-serif; color: var(--muted-foreground); font-variant-numeric: tabular-nums; }
+/* The year strip: one bar per tagged year, orange where the topic was asked. */
+.kr-ta .kr-ta-strip { display: flex; align-items: center; gap: 2px; }
+.kr-ta .kr-ta-strip > span { width: 4.5px; height: 14px; border-radius: 2px; background: var(--border); }
+.kr-ta .kr-ta-strip > span[data-asked] { background: color-mix(in srgb, var(--nsu-orange) 72%, transparent); }
+.kr-ta .kr-ta-note { margin-top: 18px; font-size: 12.5px; }
+
+.kr-ta .kr-ta-preview { display: none; padding: 22px; border: 1px solid var(--border); border-radius: 16px; }
+.kr-ta .kr-ta-preview-title { margin: 8px 0 6px; font: 500 24px/1.2 var(--nsu-serif); letter-spacing: -.02em; }
+.kr-ta .kr-ta-preview-body { margin-top: 14px; }
+.kr-ta .kr-ta-explore[data-slot=button] {
+  width: 100%; height: auto; min-height: 46px; margin-top: 18px; padding: 0 16px; justify-content: space-between;
+  border-radius: 12px; font: 500 15px/1 'DM Sans', sans-serif;
+}
+.kr-ta .kr-ta-explore svg { width: 16px; height: 16px; }
+
+/* ── Level 2: one topic's feed ── */
+.kr-ta .kr-ta-feed { display: grid; gap: 0; min-width: 0; max-width: 720px; }
+.kr-ta .kr-ta-back[data-slot=button] {
+  justify-self: start; height: 40px; margin: 0 0 14px -10px; padding: 0 10px; gap: 6px;
+  font: 500 14px/1 'DM Sans', sans-serif; color: var(--foreground);
+}
+.kr-ta .kr-ta-back svg { width: 15px; height: 15px; }
+.kr-ta .kr-ta-topic-title { margin: 6px 0 12px; font: 500 30px/1.15 var(--nsu-serif); letter-spacing: -.03em; outline: none; }
+.kr-ta .kr-ta-stats { display: flex; margin-bottom: 18px; }
+.kr-ta .kr-ta-stats > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 4px; padding: 0 20px; border-left: 1px solid var(--border); }
+.kr-ta .kr-ta-stats > div:first-child { padding-left: 0; border-left: 0; }
+.kr-ta .kr-ta-stats dd { font: 500 20px/1.1 var(--nsu-serif); font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-stats dt { font: 500 10.5px/1.4 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground); }
+.kr-ta .kr-ta-filtered { margin-bottom: 18px; font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-cards { display: grid; gap: 18px; padding-top: 22px; }
+
+.kr-ta .kr-ta-card { min-width: 0; overflow: hidden; border: 1px solid var(--outline-strong); border-radius: 16px; background: var(--background); }
+.kr-ta .kr-ta-card-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px 10px 16px; border-bottom: 1px solid var(--border); }
+.kr-ta .kr-ta-card-year { flex-shrink: 0; font: 600 20px/1 var(--nsu-serif); font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-card-meta { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; color: var(--muted-foreground); }
+/* The crop is the printed page: it stays paper-white in both themes. */
+.kr-ta .kr-ta-crop { padding: 12px 12px 6px; background: #fff; color-scheme: light; }
+.kr-ta .kr-ta-crop-scheme { margin-top: 8px; padding: 8px; border: 1px solid var(--border); border-radius: 10px; }
+.kr-ta .kr-ta-fallback[data-slot=button] {
+  display: block; width: 100%; height: auto; padding: 14px 16px; border-radius: 0; text-align: left; white-space: normal;
+  font: 400 13.5px/1.5 'DM Sans', sans-serif; color: var(--muted-foreground);
+}
+.kr-ta .kr-ta-fallback span { font-weight: 600; color: var(--foreground); text-decoration: underline; text-underline-offset: 3px; }
+.kr-ta .kr-ta-card-skeleton { display: grid; gap: 10px; padding: 22px 16px; }
+
+/* Skeleton: purchased but not compiled into the runtime (needs compiling). A
+   quiet block with Kobra's own sweep colour and duration. */
+.kr-ta .kr-ta-bone {
+  position: relative; display: block; overflow: hidden; width: 82%; height: 12px; border-radius: 6px;
+  background: var(--muted);
+}
+.kr-ta .kr-ta-bone::after {
+  content: ""; position: absolute; inset: 0 auto 0 0; width: 40%;
+  background: var(--skeleton-sweep, color-mix(in srgb, var(--foreground) 6%, transparent));
+  transform: translateX(-120%);
+  animation: kr-ta-sweep var(--skeleton-shimmer-duration, 1.6s) ease-in-out infinite;
+}
+@keyframes kr-ta-sweep { to { transform: translateX(320%); } }
+.kr-ta .kr-ta-bone-mid { width: 64%; }
+.kr-ta .kr-ta-bone-short { width: 38%; }
+.kr-ta .kr-ta-bone-select { width: 100%; max-width: 300px; height: 46px; border-radius: 11px; }
+.kr-ta .kr-ta-bone-tabs { width: 260px; height: 40px; border-radius: 11px; }
+.kr-ta .kr-ta-bone-serial { width: 18px; height: 12px; }
+.kr-ta .kr-ta-bone-count { width: 22px; }
+.kr-ta .kr-ta-bone-strip { width: 110px; height: 14px; border-radius: 3px; }
+.kr-ta .kr-ta-row-bone { cursor: default; }
+.kr-ta .kr-ta-row-bone:hover { border-color: var(--border); }
+
+/* The marks lens and the scheme reveal: hairline disclosures. Kobra's
+   Accordion is not compiled into the runtime (needs compiling); this is drawn
+   to its shape, a ruled trigger row and a body that opens and closes. */
+.kr-ta .kr-ta-lens { border-top: 1px solid var(--border); }
+.kr-ta .kr-ta-disclosure {
+  display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 46px; padding: 0 16px;
+  border: 0; border-radius: 0; background: transparent; color: var(--foreground);
+  font: 600 13.5px/1 'DM Sans', sans-serif; cursor: pointer;
+}
+.kr-ta .kr-ta-disclosure:hover { background: var(--muted); }
+.kr-ta .kr-ta-disclosure:focus-visible { outline: 2px solid var(--foreground); outline-offset: -2px; }
+.kr-ta .kr-ta-disclosure svg { width: 15px; height: 15px; }
+.kr-ta .kr-ta-disclosure .kr-ta-chevron { transition: transform 200ms ease; }
+.kr-ta .kr-ta-lens[data-open] > .kr-ta-disclosure .kr-ta-chevron { transform: rotate(180deg); }
+.kr-ta .kr-ta-open-beside[data-slot=button] { height: auto; border-top: 1px solid var(--border); }
+.kr-ta .kr-ta-lens-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 220ms ease; }
+.kr-ta .kr-ta-lens[data-open] > .kr-ta-lens-body { grid-template-rows: 1fr; }
+.kr-ta .kr-ta-lens-inner { min-height: 0; overflow: hidden; }
+.kr-ta .kr-ta-lens[data-open] .kr-ta-lens-inner { padding: 4px 16px 16px; }
+.kr-ta .kr-ta-lens-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 8px 0 12px; }
+.kr-ta .kr-ta-lens-headline { font: italic 400 14px/1.5 var(--nsu-serif); color: var(--foreground); }
+.kr-ta .kr-ta-lens-total { flex-shrink: 0; font: 500 16px/1.2 var(--nsu-serif); font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-lens-parts { display: grid; padding: 0; list-style: none; border-top: 1px solid var(--border); }
+.kr-ta .kr-ta-lens-part { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.kr-ta .kr-ta-lens-copy { display: grid; gap: 3px; min-width: 0; }
+.kr-ta .kr-ta-lens-task { font: 600 13.5px/1.45 'DM Sans', sans-serif; }
+.kr-ta .kr-ta-lens-task b { margin-right: 8px; font: 500 11px/1 'DM Sans', sans-serif; letter-spacing: .08em; color: var(--muted-foreground); }
+.kr-ta .kr-ta-lens-notation { font: 600 12.5px/1.4 'DM Sans', sans-serif; font-variant-numeric: tabular-nums; }
+.kr-ta .kr-ta-lens-decoded { font-size: 13px; line-height: 1.5; color: var(--muted-foreground); }
+.kr-ta .kr-ta-lens-marks { font: 500 22px/1 var(--nsu-serif); font-variant-numeric: tabular-nums; text-align: right; }
+.kr-ta .kr-ta-lens-marks small { margin-left: 2px; font: 500 11px/1 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-ta .kr-ta-lens-pitfall { margin-top: 12px; padding: 12px 14px; border: 1px solid var(--outline-strong); border-radius: 12px; font: italic 400 13.5px/1.5 var(--nsu-serif); }
+.kr-ta .kr-ta-lens-cite { margin-top: 4px; font: 400 11.5px/1.4 'DM Sans', sans-serif; font-style: normal; color: var(--muted-foreground); }
+.kr-ta .kr-ta-lens-source { margin-top: 12px; font: 500 10.5px/1.5 'DM Sans', sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-foreground); }
+.kr-ta .kr-ta-scheme { padding: 4px 12px 12px; }
+.kr-ta .kr-ta-scheme > .kr-ta-lens-source { margin-top: 4px; }
+.kr-ta .kr-ta-scheme-note { margin-top: 8px; font-size: 13.5px; line-height: 1.6; }
+
+/* Width steps, measured on the section itself. */
+@container kr-ta (min-width: 820px) {
+  .kr-ta .kr-ta-workspace { grid-template-columns: minmax(0, 1.5fr) minmax(240px, 1fr); }
+  .kr-ta .kr-ta-preview { display: block; position: sticky; top: 90px; }
+}
+@container kr-ta (max-width: 560px) {
+  .kr-ta .kr-ta-art { display: none; }
+  .kr-ta .kr-ta-strip { display: none; }
+  .kr-ta .kr-ta-row { grid-template-columns: 24px minmax(0, 1fr) auto; padding: 12px 14px; }
+  .kr-ta .kr-ta-row-meta { display: block; }
+  .kr-ta .kr-ta-search { max-width: none; }
+  .kr-ta .kr-ta-subject[data-slot=select-trigger] { max-width: none; }
+  .kr-ta .kr-ta-stats > div { padding: 0 14px; }
+  .kr-ta .kr-ta-card-head { flex-wrap: wrap; row-gap: 6px; }
+  .kr-ta .kr-ta-card-year { margin-right: auto; }
+  .kr-ta .kr-ta-card-meta { order: 3; flex-basis: 100%; white-space: normal; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-ta .kr-ta-bone::after { display: none; animation: none; }
+  .kr-ta .kr-ta-row, .kr-ta .kr-ta-lens-body, .kr-ta .kr-ta-disclosure .kr-ta-chevron { transition: none; }
+}

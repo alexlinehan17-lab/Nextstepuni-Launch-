@@ -1,0 +1,219 @@
+/* Legal reader and consent gate on Kobra (review section 05). Hairline cards
+   on the white canvas, the house fonts only (Source Serif 4 titles, DM Sans for
+   everything else), Kobra tokens for every colour. Privacy / Terms is the
+   house pill; the active contents row and a ticked agreement row wear an ink
+   ring; the Checkbox is the runtime's square ink one. No shadows, no blur, no
+   tints. The dialog portals out of the section, so its rules are scoped by
+   its own class names. */
+
+.kr-lg {
+  --kr-lg-edge: color-mix(in srgb, var(--foreground) 25%, transparent);
+  --kr-lg-ink-edge: color-mix(in srgb, var(--foreground) 55%, transparent);
+  container-type: inline-size;
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+  color: var(--foreground);
+  font: 400 15px/1.6 'DM Sans', sans-serif;
+}
+.kr-lg :where(p, h2, h3, ol, ul, dl, dd) { margin: 0; }
+.kr-lg :is(a, summary, [data-slot=button]):focus-visible { outline: 2px solid var(--foreground); outline-offset: 2px; }
+
+.kr-lg-toolbar { display: flex; }
+.kr-lg .kr-lg-action { min-height: 44px; padding-inline: 16px; gap: 8px; font: 500 15px/1 'DM Sans', sans-serif; }
+.kr-lg .kr-lg-action svg { width: 16px; height: 16px; }
+
+.kr-lg .kr-lg-card { min-width: 0; border: 1px solid var(--border); border-radius: 20px; background: var(--background); overflow: hidden; }
+
+/* ── The reader ── */
+.kr-lg-reader { container-type: inline-size; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.kr-lg-inline .kr-lg-reader { height: 640px; }
+.kr-lg .kr-lg-masthead {
+  flex: none; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 64px; padding: 0 24px; border-bottom: 1px solid var(--border);
+}
+.kr-lg .kr-lg-wordmark { font: 700 22px/1 'DM Sans', sans-serif; letter-spacing: -.03em; color: var(--foreground); }
+.kr-lg .kr-lg-close { width: 40px; height: 40px; border-radius: 999px; color: var(--foreground); }
+.kr-lg .kr-lg-close svg { width: 18px; height: 18px; }
+.kr-lg .kr-lg-scroll {
+  flex: 1 1 auto; min-height: 0; padding: 0 24px;
+  overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin;
+}
+.kr-lg .kr-lg-hero { padding: 24px 0 28px; }
+
+/* Privacy / Terms: Kobra Tabs as the house pill, a soft tray, the chosen
+   document on the page face with an ink edge. */
+.kr-lg .kr-lg-tabs[data-slot=tabs] { gap: 0; }
+.kr-lg .kr-lg-tabs [data-slot=tabs-list] {
+  height: 44px; padding: 4px; gap: 4px;
+  border: 1px solid var(--outline-soft); border-radius: 12px;
+}
+.kr-lg .kr-lg-tabs [data-slot=tabs-trigger] {
+  min-width: 0; height: 100%; padding: 0 16px;
+  border: 1px solid transparent; border-radius: 9px;
+  font: 500 15px/1 'DM Sans', sans-serif; color: var(--muted-foreground); cursor: pointer;
+}
+.kr-lg .kr-lg-tabs [data-slot=tabs-trigger]:hover { color: var(--foreground); }
+.kr-lg .kr-lg-tabs [data-slot=tabs-trigger][aria-selected=true] {
+  background: var(--background); color: var(--foreground);
+  border-color: var(--outline-strong); box-shadow: none;
+}
+
+.kr-lg .kr-lg-title { margin-top: 22px; font: 600 40px/1.08 var(--nsu-serif); letter-spacing: -.03em; color: var(--foreground); }
+.kr-lg :is(.kr-lg-title, .kr-lg-gate-title) > span { color: var(--nsu-orange); }
+.kr-lg .kr-lg-meta { display: flex; flex-wrap: wrap; gap: 14px 48px; margin-top: 18px; }
+.kr-lg .kr-lg-meta div { display: grid; gap: 4px; }
+.kr-lg .kr-lg-meta dd { font: 500 14px/1.4 'DM Sans', sans-serif; }
+.kr-lg .kr-lg-label {
+  font: 500 11px/1.5 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.kr-lg .kr-lg-draft { margin-top: 16px; font-size: 13px; line-height: 1.6; color: var(--muted-foreground); }
+
+/* Contents: a list on wide readers, a hairline disclosure on narrow ones. */
+.kr-lg .kr-lg-layout {
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px;
+  padding-top: 24px; border-top: 1px solid var(--border);
+}
+.kr-lg .kr-lg-contents-wide { display: none; }
+.kr-lg .kr-lg-contents-list { display: grid; gap: 2px; margin-top: 10px; padding: 0; list-style: none; }
+.kr-lg .kr-lg-contents-list a {
+  display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 8px;
+  padding: 7px 10px; border: 1px solid transparent; border-radius: 10px;
+  font: 400 13.5px/1.4 'DM Sans', sans-serif; color: var(--muted-foreground); text-decoration: none;
+  transition: border-color 150ms ease, color 150ms ease;
+}
+.kr-lg .kr-lg-contents-list a > span:first-child { font-size: 12px; font-variant-numeric: tabular-nums; }
+.kr-lg .kr-lg-contents-list a:hover { color: var(--foreground); border-color: var(--border); }
+.kr-lg .kr-lg-contents-list a[aria-current=location] {
+  color: var(--foreground); font-weight: 500;
+  border-color: var(--outline-strong); background: var(--background);
+}
+/* The Kobra Accordion needs compiling into the runtime; until then a <details>
+   drawn as an outline row that opens to the list. */
+.kr-lg .kr-lg-jump { border: 1px solid var(--kr-lg-edge); border-radius: 12px; background: var(--background); }
+.kr-lg .kr-lg-jump > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 48px; padding: 0 14px; list-style: none; cursor: pointer;
+  font: 500 15px/1.3 'DM Sans', sans-serif; color: var(--foreground);
+}
+.kr-lg .kr-lg-jump > summary::-webkit-details-marker { display: none; }
+.kr-lg .kr-lg-jump > summary svg { width: 16px; height: 16px; flex: none; transition: rotate 150ms ease; }
+.kr-lg .kr-lg-jump:hover { border-color: var(--kr-lg-ink-edge); }
+.kr-lg .kr-lg-jump[open] > summary { border-bottom: 1px solid var(--border); }
+.kr-lg .kr-lg-jump[open] > summary svg { rotate: 180deg; }
+.kr-lg .kr-lg-jump nav { padding: 2px 6px 8px; }
+
+.kr-lg .kr-lg-sections { min-width: 0; }
+.kr-lg .kr-lg-section { padding-bottom: 28px; }
+.kr-lg .kr-lg-section + .kr-lg-section { padding-top: 28px; border-top: 1px solid var(--border); }
+.kr-lg .kr-lg-section-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px; }
+.kr-lg .kr-lg-section-number { flex: 0 0 24px; font: 500 12px/1.5 'DM Sans', sans-serif; font-variant-numeric: tabular-nums; color: var(--muted-foreground); }
+.kr-lg .kr-lg-section h3 { font: 500 24px/1.2 var(--nsu-serif); letter-spacing: -.02em; color: var(--foreground); }
+.kr-lg .kr-lg-section h3:focus { outline: none; }
+.kr-lg .kr-lg-section h3:focus-visible { outline: 2px solid var(--foreground); outline-offset: 6px; border-radius: 2px; }
+.kr-lg .kr-lg-copy { padding-left: 36px; font: 400 15px/1.7 'DM Sans', sans-serif; color: var(--foreground); overflow-wrap: anywhere; }
+.kr-lg .kr-lg-copy > * + * { margin-top: 12px; }
+.kr-lg .kr-lg-copy ul { padding-left: 18px; list-style: disc; }
+.kr-lg .kr-lg-copy li + li { margin-top: 10px; }
+.kr-lg .kr-lg-copy li::marker { color: var(--muted-foreground); }
+.kr-lg :is(.kr-lg-copy, .kr-lg-footer, .kr-lg-note) a {
+  color: var(--foreground); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+}
+.kr-lg :is(.kr-lg-copy, .kr-lg-footer, .kr-lg-note) a:hover { text-decoration-thickness: 2px; }
+
+.kr-lg .kr-lg-footer {
+  display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px;
+  margin-top: 4px; padding: 20px 0 28px; border-top: 1px solid var(--border);
+}
+.kr-lg .kr-lg-footer p { font-size: 13px; line-height: 1.7; color: var(--muted-foreground); }
+.kr-lg .kr-lg-footer .kr-lg-full { display: inline-flex; align-items: center; gap: 4px; font: 500 13px/1.4 'DM Sans', sans-serif; }
+.kr-lg .kr-lg-full svg { width: 14px; height: 14px; }
+
+@container (min-width: 760px) {
+  .kr-lg .kr-lg-layout { grid-template-columns: 200px minmax(0, 1fr); gap: 40px; }
+  .kr-lg .kr-lg-contents-wide { display: block; position: sticky; top: 16px; align-self: start; max-height: 560px; overflow-y: auto; scrollbar-width: thin; }
+  .kr-lg .kr-lg-jump { display: none; }
+  .kr-lg .kr-lg-title { font-size: 48px; }
+}
+
+/* ── The gate ── */
+.kr-lg .kr-lg-gate { max-width: 650px; padding: 28px; }
+.kr-lg .kr-lg-gate-label { margin-top: 28px; }
+.kr-lg .kr-lg-gate-title { margin-top: 10px; font: 600 40px/1.08 var(--nsu-serif); letter-spacing: -.03em; color: var(--foreground); }
+.kr-lg .kr-lg-gate-lede { margin-top: 12px; font: 400 16px/1.6 'DM Sans', sans-serif; color: var(--muted-foreground); }
+
+.kr-lg .kr-lg-documents { display: grid; gap: 8px; margin: 24px 0; }
+.kr-lg .kr-lg-doc-row {
+  width: 100%; height: auto; min-height: 56px; padding: 12px 14px 12px 16px; gap: 12px;
+  justify-content: space-between; border-radius: 12px; text-align: left; white-space: normal;
+  font: 500 16px/1.4 'DM Sans', sans-serif;
+}
+.kr-lg .kr-lg-doc-row svg { width: 18px; height: 18px; flex: none; }
+
+.kr-lg .kr-lg-form { display: grid; gap: 10px; }
+.kr-lg .kr-lg-check {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--background);
+  font: 400 15px/1.5 'DM Sans', sans-serif; color: var(--foreground); cursor: pointer;
+  transition: border-color 150ms ease;
+}
+.kr-lg .kr-lg-check:hover { border-color: var(--kr-lg-ink-edge); }
+/* Ticked: the row takes an ink ring around the ink box. */
+.kr-lg .kr-lg-check[data-checked] { border-color: var(--outline-strong); box-shadow: inset 0 0 0 1px var(--outline-strong); }
+.kr-lg .kr-lg-check:has(:focus-visible) { outline: 2px solid var(--foreground); outline-offset: 2px; }
+.kr-lg .kr-lg-check [data-slot=checkbox] {
+  width: 20px; height: 20px; margin-top: 1px; flex: none;
+  border: 1.5px solid var(--kr-lg-ink-edge); border-radius: 5px;
+}
+.kr-lg .kr-lg-check [data-slot=checkbox][data-checked] { border-color: var(--primary); }
+.kr-lg .kr-lg-check [data-slot=checkbox] svg { width: 13px; height: 13px; }
+
+.kr-lg .kr-lg-note { font-size: 13px; line-height: 1.6; color: var(--muted-foreground); }
+.kr-lg .kr-lg-form .kr-lg-note { margin-top: 4px; }
+.kr-lg .kr-lg-continue {
+  width: 100%; height: auto; min-height: 52px; margin-top: 10px; padding: 12px 18px; gap: 16px;
+  justify-content: space-between; border-radius: 12px; white-space: normal;
+  font: 500 16px/1.25 'DM Sans', sans-serif;
+}
+.kr-lg .kr-lg-continue svg { width: 18px; height: 18px; }
+
+.kr-lg .kr-lg-exit {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border);
+}
+.kr-lg .kr-lg-quiet {
+  min-height: 44px; margin-left: -10px; padding-inline: 10px;
+  font: 500 15px/1 'DM Sans', sans-serif; color: var(--foreground);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+}
+.kr-lg .kr-lg-quiet-link {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font: 500 15px/1 'DM Sans', sans-serif; color: var(--foreground);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+}
+.kr-lg .kr-lg-gate > .kr-lg-note:last-child { margin-top: 8px; }
+
+@container (max-width: 480px) {
+  .kr-lg .kr-lg-gate { padding: 20px; }
+  .kr-lg .kr-lg-masthead { padding: 0 18px; }
+  .kr-lg .kr-lg-scroll { padding: 0 18px; }
+  .kr-lg :is(.kr-lg-title, .kr-lg-gate-title) { font-size: 34px; }
+  .kr-lg .kr-lg-copy { padding-left: 0; }
+  .kr-lg .kr-lg-section-head { gap: 10px; }
+}
+
+/* ── The same reader in the runtime Dialog: a hairline edge, no cast shadow,
+   no blur behind it. ── */
+.nsu-kobra .kr-lg-dialog[data-slot=dialog-content] {
+  display: flex; flex-direction: column; gap: 0; padding: 0; overflow: hidden;
+  height: min(860px, calc(100dvh - 32px));
+  border: 1px solid var(--border); border-radius: 20px; box-shadow: none;
+}
+.nsu-kobra:has(> .kr-lg-dialog) > [data-slot=dialog-overlay] { -webkit-backdrop-filter: none; backdrop-filter: none; }
+.kr-lg.kr-lg-portal { display: flex; flex: 1 1 auto; flex-direction: column; gap: 0; min-height: 0; }
+.kr-lg.kr-lg-portal .kr-lg-reader { flex: 1 1 auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-lg .kr-lg-contents-list a, .kr-lg .kr-lg-check, .kr-lg .kr-lg-jump > summary svg { transition: none; }
+}
