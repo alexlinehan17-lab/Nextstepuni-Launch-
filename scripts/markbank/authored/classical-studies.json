@@ -22459,81 +22459,78 @@
   "questionRef": "2023 HL Q1(b)",
   "questionText": "Give an account of any two myths included in the sculptures on this temple. Name of Myth 1: Location on temple: Account: Name of Myth 2: Location on temple: Account:",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 16,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Name of myth1: 2 marks. Location on temple",
-    "marks": null
+    "verbatim": "Name of myth1",
+    "marks": 2,
+    "accepts": [
+     "Birth of Athena",
+     "Contest of Poseidon and Athena",
+     "Battle of Lapiths and Centaurs",
+     "Amazonomachy",
+     "Gigantomachy",
+     "Trojan War"
+    ]
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Account of myth1: 6 marks. [Full 6 marks, Partial 2-5 marks]",
-    "marks": null
+    "verbatim": "Location on temple",
+    "marks": 1
    },
    {
     "id": "r-3",
-    "kind": "point",
-    "verbatim": "Name of myth2: 2 marks. Location on temple",
-    "marks": null
+    "kind": "criterion",
+    "verbatim": "Account of myth1",
+    "marks": 6,
+    "contextNote": "Full 6 marks, Partial 2-5 marks. NB: Repetition of name without elaboration not awarded any marks in the account",
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Account of myth2: 4 marks. [Full 4 marks, Partial 1-3 marks]",
-    "marks": null
+    "verbatim": "Name of myth2",
+    "marks": 2,
+    "accepts": [
+     "Birth of Athena",
+     "Contest of Poseidon and Athena",
+     "Battle of Lapiths and Centaurs",
+     "Amazonomachy",
+     "Gigantomachy",
+     "Trojan War"
+    ]
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "NB: Repetition of name without elaboration not awarded any marks in the account",
-    "marks": null
+    "verbatim": "Location on temple",
+    "marks": 1
    },
    {
     "id": "r-6",
-    "kind": "point",
-    "verbatim": "List of correct myths",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Birth of Athena",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Contest of Poseidon and Athena",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Battle of Lapiths and Centaurs",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Amazonomachy",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Gigantomachy",
-    "marks": null
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Trojan War",
-    "marks": null
+    "kind": "criterion",
+    "verbatim": "Account of myth2",
+    "marks": 4,
+    "contextNote": "Full 4 marks, Partial 1-3 marks. NB: Repetition of name without elaboration not awarded any marks in the account",
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
    }
   ],
   "notes": "The scheme prints 'Name of myth1: 2 marks. Location on temple 1 mark. 9' for this ask.",
@@ -23700,30 +23697,23 @@
   "questionRef": "2023 HL Q8(b)",
   "questionText": "Discuss two ways in which Horace’s views on living well compare to your own views.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Clear expression of Horace’s views and statement of own views supported by",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "reference to Horace’s poems and/or",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "explanation of own beliefs i.e. 2 x (2 marks for clear expression + 2 marks for expansion / evidence )",
-    "marks": null,
-    "openList": true
+    "kind": "criterion",
+    "verbatim": "Clear expression of Horace’s views and statement of own views supported by expansion /evidence",
+    "marks": 8,
+    "contextNote": "Two points of comparison, 4 marks for each, such as: reference to Horace’s poems and/or explanation of own beliefs i.e. 2 x (2 marks for clear expression + 2 marks for expansion / evidence)",
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ]
    }
   ],
   "notes": "The scheme prints 'Two points of comparison, 4 marks for each. 8' for this ask.",
@@ -23798,8 +23788,108 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "• 2 marks for the point, 2 marks for example, 3 marks for analysis",
-    "marks": 16
+    "verbatim": "explanation of Augustan propaganda",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "each point, with example from passage",
+    "marks": 7,
+    "contextNote": "1-7 marks for each point, with example from passage",
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "parts": [
+     {
+      "id": "point",
+      "verbatim": "point",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "example",
+      "verbatim": "example",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "analysis",
+      "verbatim": "analysis",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "each point, with example from passage",
+    "marks": 7,
+    "contextNote": "1-7 marks for each point, with example from passage",
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "parts": [
+     {
+      "id": "point",
+      "verbatim": "point",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "example",
+      "verbatim": "example",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "analysis",
+      "verbatim": "analysis",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ]
    }
   ],
   "notes": "",
@@ -26134,8 +26224,30 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "name of god/goddess, 2 marks name of text, 6 marks role (1-3 general comment; 4-6 specific role in text)",
-    "marks": 10
+    "verbatim": "name of god/goddess",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "name of text",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "role",
+    "marks": 6,
+    "contextNote": "1-3 general comment; 4-6 specific role in text",
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
    }
   ],
   "notes": "The scheme prints '10 marks, 2 marks name of god/goddess, 2 marks name of text, 6 marks role (1-3' for this ask.",
@@ -27578,23 +27690,30 @@
   "questionRef": "2025 OL Q10(c)",
   "questionText": "Name a theme or message in your chosen extract and explain why it is important in the play. Theme/ Message: Importance:",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(3+5) 3 marks for any valid theme or message 2-5 marks for importance",
-    "marks": null,
-    "openList": true
+    "verbatim": "any valid theme or message",
+    "marks": 3,
+    "contextNote": "Indicative Material: suffering, isolation, pain, betrayal"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "suffering, isolation, pain, betrayal; importance for plot to develop, understand character(s)",
-    "marks": null,
-    "openList": true
+    "kind": "criterion",
+    "verbatim": "importance",
+    "marks": 5,
+    "contextNote": "5 marks: partial/full 2 marks: very basic/ basic. Indicative Material: importance for plot to develop, understand character(s)",
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ]
    }
   ],
   "notes": "The scheme prints '8 marks (3+5)' for this ask. Partial credit: 5 marks: partial/full 2 marks: very basic/ basic",

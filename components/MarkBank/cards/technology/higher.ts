@@ -550,14 +550,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 HL Section C Q1(a)",
     stem: "• Farming production • Food preservation • Packaging.",
     questionText: "The use of control systems in the food industry seeks to improve quality and affordability. Describe, with one example in each case, a technological innovation which has improved each of the following:",
-    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 3 + 3)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 4 + 3 + 3)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(a) - 10 marks, (b) - 16 marks, (c) OR (d) - 14 marks", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "The use of control systems in the food industry seeks to improve quality and affordability.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Describe, with one example in each case, a technological innovation which has improved each of the following:", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Farming production – specialised automated machinery, drone technology for assessing crop condition, genetically modified foods (GMO) to improve food quality, etc.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Food preservation – freezing and refrigeration for transport and storage, sterilisation techniques, hydration of foods, etc.", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "Packaging – vacuum packing for freshness, anti-microbial packaging to suppress bacteria, etc.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Farming production – specialised automated machinery, drone technology for assessing crop condition, genetically modified foods (GMO) to improve food quality, etc.", marks: 4, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Food preservation – freezing and refrigeration for transport and storage, sterilisation techniques, hydration of foods, etc.", marks: 3, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Packaging – vacuum packing for freshness, anti-microbial packaging to suppress bacteria, etc.", marks: 3, openList: true },
     ],
   } as SecCard,
   {

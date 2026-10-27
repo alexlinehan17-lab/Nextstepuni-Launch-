@@ -3656,6 +3656,34 @@
               4,
               6,
               10
+            ],
+            "parts": [
+              {
+                "id": "relevant-point",
+                "verbatim": "relevant point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -3884,6 +3912,34 @@
               4,
               6,
               10
+            ],
+            "parts": [
+              {
+                "id": "relevant-point",
+                "verbatim": "relevant point",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -8724,12 +8780,15 @@
     {
       "cardId": "cons-2015-hl-q6-c",
       "priorSha256": "21c6004044929cf4f8d9dd5aea4b93a603e9b18d83b8abed471ace584e7a1ffe",
-      "correctedSha256": "1cc2a3ff2ab78e8b8e4392ec0ea9c8f8bd82866a4a41340f35da1e1ac808ff94",
+      "correctedSha256": "ab466104cf33074a7515a51f8d0a1f86aed04693f6f62c782b00a087de04ded8",
       "priorTotalMarks": 10,
       "correctedTotalMarks": 10,
       "priorTopicId": "cons-1-2",
       "correctedTopicId": "cons-1-2",
-      "reason": "Stem and question text lifted verbatim from the paper, replacing the earlier authored paraphrase; rows and tariff unchanged (10)."
+      "reason": "Stem and question text lifted verbatim from the paper, replacing the earlier authored paraphrase; rows and tariff unchanged (10).",
+      "supersededSha256": [
+        "1cc2a3ff2ab78e8b8e4392ec0ea9c8f8bd82866a4a41340f35da1e1ac808ff94"
+      ]
     },
     {
       "cardId": "cons-2015-hl-q7-a",
@@ -9651,8 +9710,11 @@
     {
       "cardId": "cons-2015-hl-q6-complete",
       "priorSha256": "8eb07e249dfc3e0cf47f912edd7642492cd0764235ffd7dc1cf65091e633a093",
-      "correctedSha256": "e1698ed41a9603397e9981f3a1004d42aebc188446af48d4f81d489dcf88770c",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "8a709323e9327d1f6d7f4be1d84cc7ab8628dab9957322484739e22bfc3ec297",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "e1698ed41a9603397e9981f3a1004d42aebc188446af48d4f81d489dcf88770c"
+      ]
     }
   ]
 }

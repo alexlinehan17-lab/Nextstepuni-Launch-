@@ -411,6 +411,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "inner-leaf",
+                "verbatim": "inner leaf",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "insulation",
+                "verbatim": "insulation",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -752,6 +780,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "inner-leaf",
+                "verbatim": "inner leaf",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "insulation",
+                "verbatim": "insulation",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -5415,12 +5471,15 @@
     {
       "cardId": "cons-2017-ol-q2-a",
       "priorSha256": "338e8c26716af2bcee8feff6787cb2cbfaedab5ac3aafd21da0395106ccf095d",
-      "correctedSha256": "32d9167d031aa2297b99adac5c8744e4e3e69900c76b10b7ce986d58cbd496e3",
+      "correctedSha256": "f81f403aa51b52bee5091e0791c4f0fb09318dacbb43dffe0fa5776d59bdc903",
       "priorTotalMarks": 5,
       "correctedTotalMarks": 30,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-6-2",
-      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — sketches (inner leaf 5, insulation 5, quality 8/6/4) and notes (two details 4 each, type and thickness 4): 5 → 30."
+      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — sketches (inner leaf 5, insulation 5, quality 8/6/4) and notes (two details 4 each, type and thickness 4): 5 → 30.",
+      "supersededSha256": [
+        "32d9167d031aa2297b99adac5c8744e4e3e69900c76b10b7ce986d58cbd496e3"
+      ]
     },
     {
       "cardId": "cons-2017-ol-q2-b",
@@ -5995,5 +6054,13 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2017-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2017-ordinary/prior-2017-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2017-ordinary/prior-2017-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2017-ol-q2-complete",
+      "priorSha256": "ea6af77efc24c78e84361af870277c4580bebca8a40931ebf3dfc6cf228226d2",
+      "correctedSha256": "71305b8eba627066c12b81d25d08026b5bb44806c1de40d924eb85a9674de71f",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    }
+  ]
 }

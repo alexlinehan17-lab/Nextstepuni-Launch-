@@ -5036,7 +5036,9 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly explain the role of another god / goddess in any text you studied on your course. Name of god / goddess: Name of text: Role of god / goddess in text:",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "name of god/goddess, 2 marks name of text, 6 marks role (1-3 general comment; 4-6 specific role in text)", marks: 10 },
+    { id: "r-1", kind: "point", verbatim: "name of god/goddess", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "name of text", marks: 2 },
+    { id: "r-3", kind: "criterion", verbatim: "role", marks: 6, contextNote: "1-3 general comment; 4-6 specific role in text", permittedMarks: [0,1,2,3,4,5,6] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -5512,10 +5514,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q10(c)",
     stem: "Extract A is from Euripides’ Medea. Extract B is from Sophocles’ Philoctetes. Answer the questions about either Extract A or Extract B. Tick the box to indicate which extract you have chosen. Extract A: Euripides’ Medea This blow that has fallen on me was not to be expected. It has crushed my heart. Life has no pleasure left, dear friends. I want to die. Jason was my whole life; he knows that well. Now he has proved himself the most contemptible of men. Extract B: Sophocles’ Philoctetes Do not be frightened and shrink Away because of my wild appearance. No, Pity a miserable wretch – alone, aba",
     questionText: "Name a theme or message in your chosen extract and explain why it is important in the play. Theme/ Message: Importance:",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(3+5) 3 marks for any valid theme or message 2-5 marks for importance", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "suffering, isolation, pain, betrayal; importance for plot to develop, understand character(s)", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "any valid theme or message", marks: 3, contextNote: "Indicative Material: suffering, isolation, pain, betrayal" },
+    { id: "r-2", kind: "criterion", verbatim: "importance", marks: 5, contextNote: "5 marks: partial/full 2 marks: very basic/ basic. Indicative Material: importance for plot to develop, understand character(s)", permittedMarks: [0,2,3,4,5] },
     ],
     sourceMaterial: {
           "kind": "source-text",
