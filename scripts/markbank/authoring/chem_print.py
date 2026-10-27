@@ -326,6 +326,40 @@ def _split_markers(lines):
         yield l if t == l.text else Line(l.page, (l.x0 + 28, l.y0, l.x1, l.y1), t, l.bold, l.math)
 
 
+# A question's number set in one run with the first words of its lead-in: the
+# 2013 OL paper prints "1. A sample of soap was prepared ..." (page 2, x 50, y 108),
+# "2. A group of students ..." (page 3), "4. Answer eight ...", "6. Alkanes and
+# alkenes ...", "8. Answer the questions ..." and "10."/"11. Answer any two ..."
+# (pages 4-7) as one run each. QNUM wants the number alone and QNUM_LETTER a letter
+# after it, so no "1." head was read and the paper reader found no question at all
+# (its scheme, headed "QUESTION 1" ..., read all eleven). Read as the head and its
+# words, the way the page prints them, for the sittings listed: 2013 OL. (The 2010
+# and 2011 Ordinary papers print the same run; each joins by its own audit.)
+OLD_OL_HEADS = {(2013, 'ol')}
+QNUM_TEXT = re.compile(r'^(\d{1,2})\.\s+(\S.*)$')
+# The same sittings' schemes print the running footer "Chemistry ATGL 2013" (2013 OL
+# scheme, every page, y 789), dropped for them in Printed.
+OLD_OL_FOOTER = re.compile(r'^Chemistry ATGL 20\d\d$')
+
+
+def split_heads(lines, year, lvl):
+    """The paper's lines with a head set in one run with its words ("1. A sample
+    ...") read as the head "1." and the words, for (year, lvl) in OLD_OL_HEADS
+    (2013 OL); every other sitting's lines are returned as they are."""
+    if (year, lvl) not in OLD_OL_HEADS:
+        return lines
+    out = []
+    for l in lines:
+        m = QNUM_TEXT.match(l.text)
+        if m and l.x0 < 70 and not QNUM_LETTER.match(l.text):
+            # (2013 OL: the words start at the lead-in's indent, x 72.)
+            out.append(Line(l.page, (l.x0, l.y0, l.x0 + 12, l.y1), m.group(1) + '.', l.bold, l.math))
+            out.append(Line(l.page, (l.x0 + 22, l.y0, l.x1, l.y1), m.group(2), l.bold, l.math))
+        else:
+            out.append(l)
+    return out
+
+
 # Parts the paper numbers wrongly, as (the key read, the marker printed).
 MISPRINTED = []
 
@@ -1092,7 +1126,8 @@ class Printed:
         self.year, self.lvl = year, lvl
         self.paper_path = os.path.join(PAPERS, f'{year}-{lvl}-paper.pdf')
         self.scheme_path = os.path.join(SCHEMES, f'{year}-{lvl}.pdf')
-        self.paper_lines = read_lines(self.paper_path)
+        # (2013 OL: a head set in one run with its words, split_heads.)
+        self.paper_lines = split_heads(read_lines(self.paper_path), year, lvl)
         self.figures = figures
         if figures:
             self.paper_lines = self._outside_figures(self.paper_lines)
@@ -1133,6 +1168,24 @@ class Printed:
                         and abs(l.x0 - 49.7) < 1 and abs(l.y0 - 48.6) < 1]
                 assert len(head) == 1, head
                 head[0].text = 'QUESTION ' + num
+        if (year, lvl) in OLD_OL_HEADS:
+            # 2013 OL: the scheme's running footer "Chemistry ATGL 2013" (every page,
+            # x 64, y 789; also the 2011 and 2012 Ordinary schemes', and no carded
+            # sitting's) is not one FOOTER reads, and in a labelled scheme every
+            # line is answer: it was filed as an answer of each page's last part.
+            self.scheme_lines = [l for l in self.scheme_lines
+                                 if not (l.y0 > 765 and OLD_OL_FOOTER.match(l.text))]
+        if (year, lvl) == (2013, 'ol'):
+            # 2013 OL scheme PDF page 5 sets Question 2's last answer under the cue
+            # "FIND:" (x 85, y 477) with no "(f)": every other letter of the page
+            # opens its row with its marker ("(e) OUTL:", x 64, y 327). The paper
+            # prints (f) "Find, correct to two decimal places, ..." with (i) and
+            # (ii); unread, the scheme filed its (i) and (ii) under (e). Read with
+            # the letter the paper prints.
+            find = [l for l in self.scheme_lines if l.page == 5 and l.text == 'FIND:'
+                    and abs(l.x0 - 85) < 1 and abs(l.y0 - 477) < 1]
+            assert len(find) == 1, find
+            find[0].text = '(f) FIND:'
         if figures:
             self.scheme_lines = self._outside_scheme_art(self.scheme_lines)
         # The 2021-2025 schemes print their mark cells in round brackets,

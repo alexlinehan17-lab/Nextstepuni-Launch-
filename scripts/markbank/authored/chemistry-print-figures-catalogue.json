@@ -5589,5 +5589,217 @@
   "description": "The marking scheme's own print of its answer to 2014 HL Q10(a)(iii), as the State Examinations Commission set it: a table, \"CH₃COOC₂H₅\" beside the structure H₃C–C(=O)–O–CH₂–CH₃; \"[In the fully-expanded form the Hs need not be shown.]\"; \"(6)\"; then \"carbonyl carbon /\" beside the same structure with a box drawn around the C of the C=O, \"[May be indicated by arrow, colouring, asterisk, etc.] (3)\"; \"[Accept correct planar carbon in an incorrect structure.]\"",
   "questionRef": "2014 HL Q10(a)(iii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's distillation apparatus, unlabelled: a round-bottomed flask sitting in a dark tapered container with a cable from its side, a still-head on the flask's neck holding a thermometer upright; from the still-head's side arm a condenser with two small side tubes slopes down to the right and ends in a bent tube dipping into a beaker.",
+  "questionRef": "2013 OL Q1"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q1b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q1(b): \"A sample of soap was prepared in the school laboratory by the reaction between two substances, X and Y. Suitable amounts of these substances, and a material to ensure smooth boiling, were placed in a flask together with some ethanol, and the mixture was refluxed for about 30 minutes. The apparatus was then rearranged for distillation as shown in the diagram below. At the end of the distillation process, a small amount of hot water was added to the flask to help wash the contents into a beaker containing brine. The soap appeared as a precipitate which was then separated from the brine. Finally the soap was washed with ice-cold water.\", X and Y in bold, then the apparatus, unlabelled (a round-bottomed flask sitting in a dark tapered container with a cable from its side, a still-head on the flask's neck holding a thermometer upright; from the still-head's side arm a condenser with two small side tubes slopes down to the right and ends in a bent tube dipping into a beaker), then \"Copy the distillation diagram into your answer book and label it fully.\"",
+  "questionRef": "2013 OL Q1(b)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's two pieces of glassware side by side: a beaker with a spout and graduation marks, labelled \"A\"; and a tall stoppered flask with a long narrow neck, a line marked across the neck and a wide bulb printed \"500 cm³\", labelled \"B\".",
+  "questionRef": "2013 OL Q2"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q2a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q2(a): \"A group of students prepared 500 cm³ of a 0.05 M standard solution of sodium carbonate, using anhydrous sodium carbonate (Na₂CO₃) which is a primary standard. The required mass of the carbonate was weighed accurately on a clock glass. It was then dissolved in deionised water in beaker A. The solution was transferred to flask B and made up accurately to the 500 cm³ mark with deionised water.\", with \"standard solution\" underlined, then \"Explain the underlined term.\"",
+  "questionRef": "2013 OL Q2(a)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q3a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's three clock glasses side by side, each holding a small heap of powder, labelled in bold \"sodium nitrate\", \"potassium chloride\" and \"copper(II) sulfate\".",
+  "questionRef": "2013 OL Q3(a)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's drawing: a beaker with graduation marks, most of the way full of a liquid labelled \"Cu²⁺(aq)\", a mottled rod standing upright in it and rising above its rim, labelled \"Zn\".",
+  "questionRef": "2013 OL Q3(b)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's drawing: two overlapping circles of the same size, a dot at each centre, the centres joined by a double-headed arrow; a thin line runs from the arrow up and to the right to the label \"D\".",
+  "questionRef": "2013 OL Q4(b)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q4f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a dropping funnel with a tap, its liquid labelled \"A\", stands in the stopper of a conical flask holding lumps of solid labelled \"B\"; a delivery tube from the flask's side arm runs down into a trough of liquid and up into an upturned test tube with bubbles in it.",
+  "questionRef": "2013 OL Q4(f)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q4i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q4(i): \"Write the equilibrium constant (Kc) expression for the following reaction:\", the K in bold italic and its c a subscript, then the equation N₂ + 3H₂ ⇌ 2NH₃ in bold.",
+  "questionRef": "2013 OL Q4(i)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph, head and shoulders, of a man with long hair and a long beard, in a dark coat.",
+  "questionRef": "2013 OL Q5(b)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q5c-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q5(c)(i): \"Carbon–14 is a radioactive isotope of carbon. It is a beta-particle (β-particle) emitter and has a half-life of about 5700 years.\", with \"radioactive\" underlined, then \"Explain the underlined term.\"",
+  "questionRef": "2013 OL Q5(c)(i)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q6b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a grey gas cylinder with a valve and a handle at its top, the letters \"LPG\" printed on its side.",
+  "questionRef": "2013 OL Q6(b)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q6d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's structure: a hexagon with a circle drawn inside it, a line from one of its corners to \"CH₃\".",
+  "questionRef": "2013 OL Q6(d)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q7a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph, head and shoulders, of a heavy-set man with a moustache, in a dark jacket, a white shirt and a bow tie.",
+  "questionRef": "2013 OL Q7(a)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's reaction scheme: a box \"CH₃CH₂OH\" over \"X\", from which one arrow, labelled \"A\", leads to a box \"CH₃CHO\" over \"Y\" and another, labelled \"B\", to a box \"C₂H₄\" over \"Z\".",
+  "questionRef": "2013 OL Q8"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q8b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q8(b): \"Answer the questions below with reference to the compounds X, Y and Z in the following reaction scheme.\", then the scheme (a box \"CH₃CH₂OH\" over \"X\", from which one arrow, labelled \"A\", leads to a box \"CH₃CHO\" over \"Y\" and another, labelled \"B\", to a box \"C₂H₄\" over \"Z\"), then \"Which one of the compounds, X, Y or Z, contains only one planar carbon atom? Draw the full structural formula of this compound and indicate clearly the carbon atom that is in planar geometry.\", \"one\" in bold and \"full\" in italic.",
+  "questionRef": "2013 OL Q8(b)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q8d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q8(d): \"Answer the questions below with reference to the compounds X, Y and Z in the following reaction scheme.\", then the scheme (a box \"CH₃CH₂OH\" over \"X\", from which one arrow, labelled \"A\", leads to a box \"CH₃CHO\" over \"Y\" and another, labelled \"B\", to a box \"C₂H₄\" over \"Z\"), then \"Draw a clearly labelled diagram to show how you would obtain a sample of compound Z from compound X by reaction B in a school laboratory.\"",
+  "questionRef": "2013 OL Q8(d)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q9d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's two conical flasks side by side, each about half full of liquid: the first, labelled \"A\", with a solid black block on its floor; the second, labelled \"B\", with a scattered heap of powder on its floor.",
+  "questionRef": "2013 OL Q9(d)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q11a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q11(a): \"The following names are omitted from the passage below, which outlines the history of the development of our knowledge about atoms.\", the names \"Thomson\", \"Rutherford\", \"Dalton\", \"Moseley\" and \"Bohr\" in bold, \"Write in your answer book the name corresponding to each number, 1 to 5.\", then \"In ancient Greece, Leucippus and his pupil, Democritus, said that matter is made up of atoms. About two centuries ago 1 described atoms as tiny, indivisible particles. Almost a century later, 2 discovered the electron. A few years after that 3 carried out the experiment, involving the scattering of alpha particles by gold foil, that resulted in the discovery of the nucleus. Later 4 developed a theory restricting electrons in atoms to energy levels. In the early 1900s 5 discovered that the atoms of each element have a characteristic positive nuclear charge now called the atomic number.\", each number printed in bold on an underlined blank.",
+  "questionRef": "2013 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2013-OL-paper-q11c-b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2013 OL Q11(c)B(i): \"Iron and copper are examples of transition elements. Iron is above copper in the electrochemical series.\", with \"electrochemical series\" underlined, then \"Explain the underlined term.\"",
+  "questionRef": "2013 OL Q11(c)B(i)"
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q1(b), as the State Examinations Commission set it: a drawing of the distillation apparatus with its parts labelled \"thermometer\", \"still-head\", \"water out\", \"condenser\", \"adaptor\", \"reaction mixture\", \"flask\", \"water in\", \"heater\", \"beaker\", \"antibumping granules\" and \"distillate (ethanol)\", arrows from \"reaction mixture\" and \"antibumping granules\" pointing into the flask.",
+  "questionRef": "2013 OL Q1(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q2f-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q2(f)(i), as the State Examinations Commission set it: in a box, the equation 17.85 × M over 2 = 25.0 × 0.05 over 1, each side set as a fraction, (6); then M = 0.14 (3).",
+  "questionRef": "2013 OL Q2(f)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q4(g), as the State Examinations Commission set it: (i) linear / straight / H – Cl // (ii) v-shaped / bent / angular, beside a drawing of a bent molecule, an O at its apex bonded to an H on each side.",
+  "questionRef": "2013 OL Q4(g)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q4(i), as the State Examinations Commission set it: the expression [NH₃]² over [N₂][H₂]³, set as a fraction.",
+  "questionRef": "2013 OL Q4(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q5d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q5(d), as the State Examinations Commission set it: a drawing of two circles around a central dot, two crosses on the inner circle and four on the outer.",
+  "questionRef": "2013 OL Q5(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q6(c), as the State Examinations Commission set it: DRAW: three forms side by side, separated by solidi: \"– C – C = C\", single bonds drawn up and down from the first C and up from the second, two bonds drawn at angles from the third; then \"CH₃CH=CH₂\"; then a line drawing, a single line rising to a point and a double line falling from it.",
+  "questionRef": "2013 OL Q6(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q7c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q7(c)(i), as the State Examinations Commission set it: in a box, the fraction 0.015×1000 over 100 = 0.15 g/l (3), then the fraction 0.17×1000 over 100 = 1.7 g/l (3).",
+  "questionRef": "2013 OL Q7(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q8b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q8(b), as the State Examinations Commission set it: DRAW: \"– C – C* = O\", single bonds drawn up and down from the first C and up from the second C, which is marked with an asterisk.",
+  "questionRef": "2013 OL Q8(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2013-OL-scheme-q8d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2013 OL Q8(d), as the State Examinations Commission set it: a drawing of the apparatus: a horizontal test tube, its closed end at the left labelled \"glass wool\" with an arrow from \"X\" pointing at it, a small heap in its middle labelled \"aluminium oxide\", heated from below by a burner labelled \"Bunsen\"; a tube labelled \"delivery tube\" runs from its stoppered mouth down into a trough labelled \"trough\", holding \"water\", and up into an upturned tube labelled \"test tube\", with \"Z\" at its top.",
+  "questionRef": "2013 OL Q8(d)",
+  "solution": true
  }
 ]

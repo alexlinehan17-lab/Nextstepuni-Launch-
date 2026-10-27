@@ -868,7 +868,10 @@ def chemistry_choice_parts(year, level, parts, texts):
     import chem_print
     lvl = 'hl' if level in ('higher', 'hl') else 'ol'
     path = os.path.join(PP.papers_dir('chemistry'), f'{year}-{lvl}-paper.pdf')
-    segs, _ = chem_print.segments(chem_print.read_lines(path), answers=False)
+    # (2013 OL sets each head in one run with its words: chem_print.split_heads,
+    # gated to the sittings in chem_print.OLD_OL_HEADS; every other paper as read.)
+    segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
+                                  answers=False)
     choice = {}
     for sg in segs:
         q, letter, roman, alt = sg.key

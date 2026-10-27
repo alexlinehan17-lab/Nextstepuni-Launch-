@@ -1,6 +1,332 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2013 OL": {
+   "chem-2013-ol-q1-a": {
+    "status": "added",
+    "after": "9ac2433a3a26d49d"
+   },
+   "chem-2013-ol-q1-b": {
+    "status": "added",
+    "after": "2744e2c9c884bfa1"
+   },
+   "chem-2013-ol-q1-c": {
+    "status": "added",
+    "after": "180e24f78bdd1520"
+   },
+   "chem-2013-ol-q1-d": {
+    "status": "added",
+    "after": "c03f3650ea192bde"
+   },
+   "chem-2013-ol-q1-e": {
+    "status": "added",
+    "after": "9276238e7f049e6b"
+   },
+   "chem-2013-ol-q1-f": {
+    "status": "added",
+    "after": "d59ebe559d1a1709"
+   },
+   "chem-2013-ol-q10-a": {
+    "status": "added",
+    "after": "267c44a627bb3263"
+   },
+   "chem-2013-ol-q10-a-bonding": {
+    "status": "added",
+    "after": "55892a35212dc516"
+   },
+   "chem-2013-ol-q10-a-i-ii": {
+    "status": "added",
+    "after": "aec579317209297e"
+   },
+   "chem-2013-ol-q10-b-i": {
+    "status": "added",
+    "after": "59f08b9c89e83824"
+   },
+   "chem-2013-ol-q10-b-ii": {
+    "status": "added",
+    "after": "e68b6cb290813240"
+   },
+   "chem-2013-ol-q10-b-iii": {
+    "status": "added",
+    "after": "b3495009d81d820f"
+   },
+   "chem-2013-ol-q10-b-iii-molecules": {
+    "status": "added",
+    "after": "79690f97a61463c9"
+   },
+   "chem-2013-ol-q10-c-i": {
+    "status": "added",
+    "after": "885ee67e4fa773bd"
+   },
+   "chem-2013-ol-q10-c-ii": {
+    "status": "added",
+    "after": "1511f6eca0e85b18"
+   },
+   "chem-2013-ol-q10-c-iii": {
+    "status": "added",
+    "after": "42207f1700e6f18f"
+   },
+   "chem-2013-ol-q11-a": {
+    "status": "added",
+    "after": "54decaf7c4f0fd92"
+   },
+   "chem-2013-ol-q11-b-filtering": {
+    "status": "added",
+    "after": "e5c81591d4ee3f22"
+   },
+   "chem-2013-ol-q11-b-i-v": {
+    "status": "added",
+    "after": "17632b568f527a37"
+   },
+   "chem-2013-ol-q11-b-nitrates": {
+    "status": "added",
+    "after": "1ce0c765e043ee19"
+   },
+   "chem-2013-ol-q11-c-a-i": {
+    "status": "added",
+    "after": "235a38623758d082"
+   },
+   "chem-2013-ol-q11-c-a-ii": {
+    "status": "added",
+    "after": "06a1d48b99480944"
+   },
+   "chem-2013-ol-q11-c-a-ii-use": {
+    "status": "added",
+    "after": "a944df7616dfe94f"
+   },
+   "chem-2013-ol-q11-c-a-iii": {
+    "status": "added",
+    "after": "e293645aa8694226"
+   },
+   "chem-2013-ol-q11-c-b-i": {
+    "status": "added",
+    "after": "a3f53bd8a8edc20b"
+   },
+   "chem-2013-ol-q11-c-b-ii": {
+    "status": "added",
+    "after": "4632e10b1be3cc7d"
+   },
+   "chem-2013-ol-q11-c-b-iii": {
+    "status": "added",
+    "after": "5dfc2c37f1ede7dd"
+   },
+   "chem-2013-ol-q11-c-b-iv": {
+    "status": "added",
+    "after": "074c9b0c97c1932d"
+   },
+   "chem-2013-ol-q2-a": {
+    "status": "added",
+    "after": "c6d7fea667b7aa6a"
+   },
+   "chem-2013-ol-q2-b": {
+    "status": "added",
+    "after": "cba5c90a0bb82939"
+   },
+   "chem-2013-ol-q2-c": {
+    "status": "added",
+    "after": "0c6d4e42e4713cbb"
+   },
+   "chem-2013-ol-q2-d": {
+    "status": "added",
+    "after": "4e71b43be4c13e7d"
+   },
+   "chem-2013-ol-q2-e": {
+    "status": "added",
+    "after": "ca66ae054f1f0855"
+   },
+   "chem-2013-ol-q2-f-i": {
+    "status": "added",
+    "after": "5ee1a06c6bd4c794"
+   },
+   "chem-2013-ol-q2-f-ii": {
+    "status": "added",
+    "after": "1bb58b5163cbc5fb"
+   },
+   "chem-2013-ol-q3-a": {
+    "status": "added",
+    "after": "ff22a5dc95eeafe1"
+   },
+   "chem-2013-ol-q3-a-flame-colours": {
+    "status": "added",
+    "after": "ff2c5df539d00944"
+   },
+   "chem-2013-ol-q3-b-i-ii": {
+    "status": "added",
+    "after": "fa90080e18057186"
+   },
+   "chem-2013-ol-q3-c-i": {
+    "status": "added",
+    "after": "10bb68e6274b3d06"
+   },
+   "chem-2013-ol-q3-c-ii": {
+    "status": "added",
+    "after": "cbe97cb8340efe61"
+   },
+   "chem-2013-ol-q4-a": {
+    "status": "added",
+    "after": "75ab86dae80d6787"
+   },
+   "chem-2013-ol-q4-b": {
+    "status": "added",
+    "after": "12c0a93d07a29a72"
+   },
+   "chem-2013-ol-q4-c": {
+    "status": "added",
+    "after": "c5c1ffd9e14a0abf"
+   },
+   "chem-2013-ol-q4-d": {
+    "status": "added",
+    "after": "5b11c3df3be42fe3"
+   },
+   "chem-2013-ol-q4-e": {
+    "status": "added",
+    "after": "ce553c06064775b1"
+   },
+   "chem-2013-ol-q4-f": {
+    "status": "added",
+    "after": "f0d1a99b2a29473f"
+   },
+   "chem-2013-ol-q4-g": {
+    "status": "added",
+    "after": "f733fe929515c62f"
+   },
+   "chem-2013-ol-q4-h": {
+    "status": "added",
+    "after": "3b9e2909be8dfe01"
+   },
+   "chem-2013-ol-q4-i": {
+    "status": "added",
+    "after": "3386ce475d5deb60"
+   },
+   "chem-2013-ol-q4-j": {
+    "status": "added",
+    "after": "21bfadfe874142a1"
+   },
+   "chem-2013-ol-q4-k-a": {
+    "status": "added",
+    "after": "5db56381dfb250cd"
+   },
+   "chem-2013-ol-q4-k-b": {
+    "status": "added",
+    "after": "3337944f155168cf"
+   },
+   "chem-2013-ol-q5-a": {
+    "status": "added",
+    "after": "ac30092dc1607a36"
+   },
+   "chem-2013-ol-q5-a-the-reason": {
+    "status": "added",
+    "after": "e37f4d894e539dc8"
+   },
+   "chem-2013-ol-q5-b-i-ii": {
+    "status": "added",
+    "after": "c8fad1b7a11e374e"
+   },
+   "chem-2013-ol-q5-c-i": {
+    "status": "added",
+    "after": "a050f1be51b07da1"
+   },
+   "chem-2013-ol-q5-c-ii": {
+    "status": "added",
+    "after": "6d198008ed10d978"
+   },
+   "chem-2013-ol-q5-c-iii": {
+    "status": "added",
+    "after": "a5b37ab898d3679c"
+   },
+   "chem-2013-ol-q5-c-iv": {
+    "status": "added",
+    "after": "8fb858f560a0bd86"
+   },
+   "chem-2013-ol-q5-d": {
+    "status": "added",
+    "after": "f0ba904e165fd7d1"
+   },
+   "chem-2013-ol-q6-a": {
+    "status": "added",
+    "after": "31a73584f372b9e7"
+   },
+   "chem-2013-ol-q6-b-i-iv": {
+    "status": "added",
+    "after": "bdab03aa5eb49355"
+   },
+   "chem-2013-ol-q6-c": {
+    "status": "added",
+    "after": "137dcdb23eceaee7"
+   },
+   "chem-2013-ol-q6-d": {
+    "status": "added",
+    "after": "6751dab904b11af9"
+   },
+   "chem-2013-ol-q7-a-gastric-juice": {
+    "status": "added",
+    "after": "2a6c64cc5c969c7d"
+   },
+   "chem-2013-ol-q7-a-i-ii": {
+    "status": "added",
+    "after": "5d893f4d948fe2ac"
+   },
+   "chem-2013-ol-q7-a-neutralisation": {
+    "status": "added",
+    "after": "e41858125a20e0b9"
+   },
+   "chem-2013-ol-q7-b": {
+    "status": "added",
+    "after": "d501112ed61c61a9"
+   },
+   "chem-2013-ol-q7-c-i": {
+    "status": "added",
+    "after": "58bfa48e73523be7"
+   },
+   "chem-2013-ol-q7-c-ii": {
+    "status": "added",
+    "after": "be563b8e11055072"
+   },
+   "chem-2013-ol-q8-a": {
+    "status": "added",
+    "after": "a1d1e4717e56d59c"
+   },
+   "chem-2013-ol-q8-b": {
+    "status": "added",
+    "after": "9e6bacbb4eeda25c"
+   },
+   "chem-2013-ol-q8-c": {
+    "status": "added",
+    "after": "4ad6d27df13ed280"
+   },
+   "chem-2013-ol-q8-d": {
+    "status": "added",
+    "after": "639c932b9c0ee9e4"
+   },
+   "chem-2013-ol-q9-a-i": {
+    "status": "added",
+    "after": "a6fd1dbad78d4f98"
+   },
+   "chem-2013-ol-q9-a-ii": {
+    "status": "added",
+    "after": "692a11dbb38bfccd"
+   },
+   "chem-2013-ol-q9-b": {
+    "status": "added",
+    "after": "a639f7788a10bb8c"
+   },
+   "chem-2013-ol-q9-c": {
+    "status": "added",
+    "after": "9528d3bb23d36aff"
+   },
+   "chem-2013-ol-q9-d-i": {
+    "status": "added",
+    "after": "af04bd86df4063f8"
+   },
+   "chem-2013-ol-q9-d-ii": {
+    "status": "added",
+    "after": "fd4db4b68c2b27b4"
+   },
+   "chem-2013-ol-q9-e": {
+    "status": "added",
+    "after": "6c9ed1862774f515"
+   }
+  },
   "2014 HL": {
    "chem-2014-hl-q1-a": {
     "status": "added",

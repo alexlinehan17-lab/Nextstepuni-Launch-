@@ -259,6 +259,15 @@ MASKS = {
     # the graphite drawing's first atoms already show at its right (x 493-518; dark pixels 844-895
     # x 92-94 of the first panel), below and right of the lead-in's words; whited out.
     'chemistry-2014-HL-paper-q11c-b-i-print.png': [(840, 88, 900, 95)],
+    # 2013 OL Q4(b): the two atoms stand beside the end of (a)'s line, "... vibrate about fixed
+    # positions?" (paper page 4, x 415-501, y 95-108; dark pixels 2-172 x 17-38), and the ends of
+    # (b)'s own lines "of" and "is" (x 415-431, y 115-142; dark pixels 1-22 x 58-74 and 3-17 x
+    # 87-103), whited out; the left circle's edge starts at column 32 there.
+    'chemistry-2013-OL-paper-q4b.png': [(0, 15, 176, 41), (0, 56, 24, 76), (0, 86, 20, 105)],
+    # 2013 OL Q4(f): the ethyne apparatus stands beside the end of (h)'s line, "... hardness of
+    # water." (paper page 4, x 404-423, y 303-312; dark pixels 0-20 x 232-240), whited out; the
+    # flask's base and B's pointer start at column 52 there.
+    'chemistry-2013-OL-paper-q4f.png': [(0, 230, 24, 241)],
 }
 
 
