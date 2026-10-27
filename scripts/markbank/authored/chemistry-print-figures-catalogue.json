@@ -4544,5 +4544,239 @@
   "description": "The marking scheme's own print of its answer to 2016 HL Q11(b), as the State Examinations Commission set it: \"DRAW:\" two dot and cross diagrams of arsine: a circle As overlapping three circles H, each overlap holding a dot and a cross, with a pair of crosses at the top of As; and As with a pair of crosses at its left, joined to an H above, an H to the right and an H below, each by a dot and a cross; \"(6)\". \"PREDICT: pyramidal (trigonal pyramidal) (3)\", \"[No marks for ‘trigonal’ on its own.]\"; five boxed drawings of the molecule, As at the top bonded to three H atoms, each drawing using a wedge or a dashed bond; \"[Diagram insufficient unless a 3d representation using at least one wedge or dash, as shown.]\"",
   "questionRef": "2016 HL Q11(b)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q1a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's steam distillation apparatus: a stoppered conical flask of water with a long tube standing through its stopper, heated by a Bunsen burner; a tube from its neck leads into a stoppered pear-shaped flask holding small dark pieces, and from that flask's neck a condenser, labelled \"A\", slopes down to the right to a small beaker labelled \"B\". The condenser has two side arms on its underside, the one nearer its upper end labelled \"X\" and the one nearer its lower end labelled \"Y\".",
+  "questionRef": "2015 OL Q1(a)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A stoppered separating funnel held in a ring on a retort stand, holding two liquid layers: the lighter grey top layer labelled \"upper layer\", the darker grey bottom layer labelled \"lower layer\". Its tap is closed and its stem points down into a conical flask standing on the stand's base.",
+  "questionRef": "2015 OL Q1(b)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's diagram: a stoppered volumetric flask with a line across its neck labelled \"L\" by an arrow, \"F\" printed beside its bulb and \"500 cm³\" on the bulb.",
+  "questionRef": "2015 OL Q2"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q2c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q2(c): \"A solution of sodium carbonate was prepared by dissolving a known mass of anhydrous sodium carbonate (Na₂CO₃) in deionised water in a beaker and transferring it to F a 500 cm³ flask like that shown in the diagram.\", then \"(c) Sketch flask F in your answer book and show clearly the surface of the solution near line L when the flask is filled to exactly 500 cm³.\", then the diagram: a stoppered volumetric flask with a line across its neck labelled \"L\" by an arrow, \"F\" printed beside its bulb and \"500 cm³\" on the bulb.",
+  "questionRef": "2015 OL Q2(c)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A test tube holding two layers: a clear upper layer labelled \"U\" and a lower layer at the bottom labelled \"L\", with a dark ring between them labelled \"R\".",
+  "questionRef": "2015 OL Q3(b)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q5.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of a cubic lattice: large dark balls and smaller grey balls alternating along thin connecting lines.",
+  "questionRef": "2015 OL Q5"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of five compounds: A CH₄, B C₂H₂, C C₃H₆, D C₃H₈, E C₆H₅CH₃.",
+  "questionRef": "2015 OL Q6"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of five compounds, A CH₄, B C₂H₂, C C₃H₆, D C₃H₈, E C₆H₅CH₃, and below it a photograph of a worker in a hard hat and protective clothing cutting metal in a shower of sparks.",
+  "questionRef": "2015 OL Q6(c)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's reaction scheme: a shaded box \"CH₃CH₂OH ethanol\" in the middle, an arrow to the left to a box \"W = C₂H₄\" and an arrow to the right to a box \"X = CH₃CHO\".",
+  "questionRef": "2015 OL Q8"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q8a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q8(a): \"Study the reaction scheme below and answer the questions that follow.\", the scheme (a shaded box \"CH₃CH₂OH ethanol\" in the middle, an arrow to the left to a box \"W = C₂H₄\" and an arrow to the right to a box \"X = CH₃CHO\"), then \"(a) Give the IUPAC name for W and draw its molecular structure.\"",
+  "questionRef": "2015 OL Q8(a)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q8b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a horizontal test tube with a plug labelled \"ethanol\" at its closed end and a small heap labelled \"C\" in its middle, heated below by a Bunsen burner; a delivery tube from its mouth runs down into a trough of water and up into an upturned test tube labelled \"W\", with bubbles in it.",
+  "questionRef": "2015 OL Q8(b)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a stoppered conical flask with a small tube labelled \"HCl\" leaning inside it and pieces at its bottom labelled \"seashells\"; a tube from the stopper, labelled \"CO₂\", leads to a horizontal \"gas syringe\".",
+  "questionRef": "2015 OL Q9"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q9-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's a table of Time (minutes) 0, 1, 2, 3, 4, 5, 6, 7, 8 against Volume (cm³) 0, 21, 36, 46, 53, 57, 59, 60, 60.",
+  "questionRef": "2015 OL Q9"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q9b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q9(b): \"The rate of production of carbon dioxide from the reaction between hydrochloric acid solution (HCl) and the calcium carbonate (CaCO₃) in broken seashells was investigated. Using the apparatus shown, the acid was poured onto the seashells to start the reaction. The volume of gas collected was measured at one minute intervals using a gas syringe and the results are given in the table below.\", beside it the apparatus (a stoppered conical flask with a small tube labelled \"HCl\" leaning inside it and pieces at its bottom labelled \"seashells\"; a tube from the stopper, labelled \"CO₂\", leads to a horizontal \"gas syringe\"), then a table of Time (minutes) 0, 1, 2, 3, 4, 5, 6, 7, 8 against Volume (cm³) 0, 21, 36, 46, 53, 57, 59, 60, 60, then \"(b) Plot, on graph paper, a graph of volume (y-axis) against time (x-axis).\"",
+  "questionRef": "2015 OL Q9(b)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q10a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q10(a): \"(a) Copy and complete the table.\" and a table headed \"Isotope\", \"Atomic Number\", \"Mass Number\" and \"Number of Neutrons\", its two rows the isotopes ¹⁰₅B and ¹¹₅B, their other cells empty.",
+  "questionRef": "2015 OL Q10(a)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q10a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q10(a)(i): \"(i) Some elements have radioactive isotopes. Define the underlined term.\" with \"radioactive\" underlined.",
+  "questionRef": "2015 OL Q10(a)(i)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q10c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a glowing tube bent into the letters \"Ne\" against a dark background.",
+  "questionRef": "2015 OL Q10(c)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q11a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q11(a): \"(a) The following words are omitted from the passage below.\", the words \"zinc\", \"gained\", \"lost\", \"oxidised\", \"reduced\" and \"redox\" in bold, \"Write in your answer book the omitted word corresponding to each number (1 to 6).\" then \"In a 1 reaction electrons are transferred from one substance to another. When electrons are 2 the substance is said to be oxidised and when electrons are 3 the substance is reduced. In the reaction Zn + CuSO₄ → ZnSO₄ + Cu the copper ions are 4 and 5 acts as the reducing agent. Therefore zinc is more easily 6 than copper.\", each number printed on an underlined blank.",
+  "questionRef": "2015 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q11b-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's balanced equilibrium equation, printed in bold across the page: N₂ + 3H₂ ⇌ 2NH₃.",
+  "questionRef": "2015 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q11b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q11(b): \"(b) A chemical equilibrium between nitrogen gas, hydrogen gas and ammonia gas is set up at a certain temperature and pressure according to the following balanced equation.\" with \"chemical equilibrium\" underlined, then the equation N₂ + 3H₂ ⇌ 2NH₃, then \"Explain the underlined term.\"",
+  "questionRef": "2015 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q11b-kc-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 OL Q11(b): \"(b) A chemical equilibrium between nitrogen gas, hydrogen gas and ammonia gas is set up at a certain temperature and pressure according to the following balanced equation.\" with \"chemical equilibrium\" underlined, then the equation N₂ + 3H₂ ⇌ 2NH₃, then \"Write the equilibrium constant (Kc) expression for this reaction.\", the K in bold italic and its c printed as a subscript.",
+  "questionRef": "2015 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2015-OL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's blast furnace: a tall furnace labelled \"blast furnace\", fed at its top by an inclined conveyor, its top labelled \"charge\"; arrows rise inside it; a pipe on its right labelled \"hot air\"; at its base an outlet on the left labelled \"molten iron\" and an outlet on the right labelled \"X\".",
+  "questionRef": "2015 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q1(b)(i), as the State Examinations Commission set it: (b) (i) DRAW: three structures separated by \"/\": a hexagon of bonds with two H atoms at each corner; a ring of six C atoms, each carrying two H atoms; and a plain hexagon (6); then \"[Allow (3) for benzene or for a correct cyclohexane structure with aromaticity incorrectly indicated.]\"",
+  "questionRef": "2015 OL Q1(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q2(c), as the State Examinations Commission set it: (c) SKETCH: \"curved meniscus //\", \"bottom of meniscus touching L\" (2 × 3) and \"[in a sketch]\", beside them a circled close-up of the flask's neck: the liquid's surface curved down into a U whose bottom sits on a line labelled \"L\".",
+  "questionRef": "2015 OL Q2(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q2h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q2(h), as the State Examinations Commission set it: (h) FIND: 0.1(1) mol l⁻¹ (9); then, in a box: 25 × 0.05 over 1 = (3); 22.7 × M over 2 (3); M = 0.1(1) mol l⁻¹ (3).",
+  "questionRef": "2015 OL Q2(h)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q5(b), as the State Examinations Commission set it: (b) DRAW: an atom drawn as a black nucleus inside three circles, two dots on the inner circle, eight on the middle circle and one on the outer (6); \"[Allow (3) for two correctly filled inner shells.] [Allow (3) marks for 2, 8, 1.]\"; then EXPLAIN: loses an electron (3).",
+  "questionRef": "2015 OL Q5(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q5(c), as the State Examinations Commission set it: (c) DRAW: an atom drawn as a black nucleus inside three circles, two dots on the inner circle, eight on the middle circle and seven on the outer; \"[Allow (3) marks for 2, 8, 7.]\" (6); then EXPLAIN: gains an electron (3).",
+  "questionRef": "2015 OL Q5(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q8a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q8(a), as the State Examinations Commission set it: (a) GIVE: ethene; DRAW: two C atoms joined by a double bond, each carrying two H atoms (5 + 3).",
+  "questionRef": "2015 OL Q8(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q9b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q9(b), as the State Examinations Commission set it: (b) PLOT: a graph of Volume (cm³), 0 to 70, against Time (minutes), 0 to 10: a smooth curve through diamond-marked points at 0 to 8 minutes, rising from the origin and levelling off at 60, with a vertical line from between 3 and 4 minutes up to the curve and a horizontal line from there to the volume axis just below 50; then \"axes correctly labelled\" (3), \"axes correctly scaled\" (3), \"at least seven points correctly plotted\" (6), \"smooth curve correctly drawn through points and (0, 0)\" (3) and \"[Allow (3) for 5 points correctly plotted.]\"",
+  "questionRef": "2015 OL Q9(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q10a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q10(a), as the State Examinations Commission set it: (a) COPY: (3 × 4) + (3 × 1), and the completed table headed \"Atoms\", \"Atomic Number\", \"Mass Number\" and \"Number of Neutrons\": ¹⁰₅B with 5, 10 and 5; ¹¹₅B with 5, 11 and 6.",
+  "questionRef": "2015 OL Q10(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q10c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q10(c)(ii), as the State Examinations Commission set it: (ii) HOW: 0.25 moles (6); then, in a box: 5 over 20 = (3); 0.25 mol / ¼ mol (3).",
+  "questionRef": "2015 OL Q10(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-OL-scheme-q11b-kc.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 OL Q11(b), as the State Examinations Commission set it: WRITE: Kc = [NH₃]² over [N₂][H₂]³, the fraction set on a grey ground (6).",
+  "questionRef": "2015 OL Q11(b)",
+  "solution": true
  }
 ]

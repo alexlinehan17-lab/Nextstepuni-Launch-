@@ -363,6 +363,16 @@ TRAILING_OR = {'engineering'}
 # shape, and their readings must not move because of a Chemistry fix.
 RULED_HEADS = {'chemistry'}
 _RULED_HEAD = re.compile(r'\s*_{3,}\s*(?=\d{1,2}\.\s+[A-Z(])')
+# 2015 OL Chemistry (paper page 4) closes Question 4 with a rule DRAWN as a
+# vector line (y 504, x 218-395), not typed as "____", and the text layer sets
+# the next head in the same block as Q4(k)B's word list: "... calcium gold
+# mercury sodium 5. The diagram shows a small part of a sodium chloride (NaCl)
+# crystal ...". With no closed sentence before the "5." (INLINE_QHEAD) and no
+# underscores to drop (_RULED_HEAD), Question 5 was invisible and its six asks
+# were filed under Question 4 (census flag "question-gap: questions found [1, 2,
+# 3, 4, 6, 7, 8, 9, 10, 11]"). The head is split off where the page prints it.
+# Gated to the sitting: no other paper's reading may move because of it.
+DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small part']}
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
@@ -905,6 +915,10 @@ class Paper:
         Agricultural Science lost the parts underneath every ruled answer box.
         """
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
+        # (2015 OL Chemistry: a head set after a drawn rule; see DRAWN_RULE_HEADS.)
+        split_at = '\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])' + ''.join(
+            '|\\s+(?=' + re.escape(h) + ')'
+            for h in DRAWN_RULE_HEADS.get((self.subject, self.year, self.level), []))
         carry = ''
         for path in self.files:
             for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
@@ -913,7 +927,7 @@ class Paper:
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
-              for text in re.split('\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])', block):
+              for text in re.split(split_at, block):
                for text in INLINE_QHEAD.split(text):
                 text = text.strip()
                 if not text:
