@@ -186,6 +186,16 @@ subject-specific generators.
   that is a whole question) is listed with its pages in
   `authored/business-expected-review.json`, never typed in. `--write`
   rewrites `rubric-authored.json`; a second run changes nothing.
+  Irish reading and literature excerpts are re-cut across the scheme pages
+  they run onto by `irish_excerpts.py` (`--write` upgrades `authored.json`;
+  `irish_cards.py` applies the same pass to every card it builds): a reading
+  question whose "(a)" sits on the page before, or whose "N." and "(a)" are on
+  different lines, and a literature option that `literature_scheme` cut at
+  1,550 characters, each lost their tariff. The literature tariff itself
+  ("Príomhthéama = 2 mharc", "Dhá phointe eolais = 4 mharc + 4 mharc", a band
+  table under "Tréith 1 = 13 mharc") is cut into rows at load by
+  `cards/irish/tariffs.ts`, which also reads the last reading question's
+  composite tariff where `answers.ts` cannot.
   Where that text reading leaves a Business card for review, stage B reads the
   cited pages' word positions with PyMuPDF (`bus_expected.py`, the same run):
   a table's rows become items line by line, a tick names the column header
