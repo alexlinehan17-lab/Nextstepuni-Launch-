@@ -207,7 +207,10 @@ _opts = [_expl[i] for i in (0, 1, 2, 3, 4, 6)]
 _corr = raw(7, 772, 789)
 assert _corr.startswith('[Correct, linked, specific'), _corr
 C.add([k('2', 'b', 'ii')], 'chem-u2', 'safety-in-preparing-ethene', [
-    menu_row('r-1', _states, 2, 'STATE: any two precautions, (3) each: "' + _lab[0] + '".', per=3, total=6),
+    # The table links each explanation to its precaution; seven linked pairs routed would be
+    # fourteen rows (cap five), so the link is a direction on the rows.
+    menu_row('r-1', _states, 2, 'Claim two precautions here and, in the next row, the explanation the table sets '
+             'beside each of those same two. STATE: any two precautions, (3) each: "' + _lab[0] + '".', per=3, total=6),
     menu_row('r-2', _opts, 2, 'EXPLAIN: the explanation the scheme\'s table sets beside each precaution '
              'stated, (3) each: "' + _lab[1] + '". The table sets "' + _expl[4] + '" beside both '
              'eye-protection and gloves or tongs; its own print of the table is shown with the answer. '

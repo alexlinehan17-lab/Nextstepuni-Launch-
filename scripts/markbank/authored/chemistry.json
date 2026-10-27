@@ -69642,7 +69642,7 @@
     "verbatim": "remove delivery tube from water (loosen test-tube stopper) before removing heat at end",
     "marks": 6,
     "openList": true,
-    "contextNote": "STATE: any two precautions, (3) each: \"ANY TWO STATED PRECAUTIONS: (2 × 3)\".",
+    "contextNote": "Claim two precautions here and, in the next row, the explanation the table sets beside each of those same two. STATE: any two precautions, (3) each: \"ANY TWO STATED PRECAUTIONS: (2 × 3)\".",
     "group": {
      "claimMax": 2,
      "perOption": 3,
