@@ -1,7 +1,7 @@
 [
  {"id": "chem-2020-ol-q1-a-ii", "ask": "What change is observed when the gas bubbled", "answer": "solution decolourises", "figure": true},
  {"id": "chem-2020-ol-q1-d", "ask": "match each substance A, B, C and D", "answer": "B: clove oil", "figure": true},
- {"id": "chem-2020-ol-q2-d-iv", "ask": "Calculate, in moles per litre, the concentration of the HCl solution.", "answer": "0.09 moles per litre", "solution": true},
+ {"id": "chem-2020-ol-q2-d-iv", "ask": "", "answer": "0.09 moles per litre", "figure": true, "solution": true},
  {"id": "chem-2020-ol-q3-d", "ask": "", "answer": "smooth curve correctly drawn through points and (0, 0)", "figure": true, "solution": true},
  {"id": "chem-2020-ol-q3-b-i", "ask": "What chemical hazard is indicated by this pictogram?", "answer": "oxidising agent (reagent)", "figure": true},
  {"id": "chem-2020-ol-q4-i", "ask": "Calculate the percentage by mass", "answer": "% Si = 28 ÷ 60 × 100 = 47%"},

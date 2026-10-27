@@ -238,11 +238,18 @@ _q3c2 = P.items(k('3', 'c', 'ii'))
 assert [it.cell for it in _q3c2] == ['[2 × 3]'], _q3c2
 _p = _q3c2[0].points()
 assert _p == ['/ liquid pouring from test-tube(s)', 'onto hand (object, metal)'], _p
+# Its only figure is the scheme's pictogram, held back until the reveal, so the lead-in's "the
+# cardboard cup ... in the diagram" would point at nothing. Nothing in (c)(ii) depends on the
+# lead-in: the ask names the solution it is about (1.0 M NaOH). The lead-in is left out of this
+# card's stem (left out whole: without its first sentence the next reads "also at room
+# temperature" of an acid it no longer names).
+assert C.context(k('3', 'c', 'ii')).startswith('The cardboard cup with plastic lid in the diagram contained'), \
+    C.context(k('3', 'c', 'ii'))
 C.add([k('3', 'c', 'ii')], 'chem-u2', 'hazard-pictogram-for-sodium-hydroxide', [
     lift('r-1', _p[0][2:], 3, 'The scheme prices this point and the next (2 × 3), one each. It accepts '
          'instead the pictogram itself, drawn, which it prints before "/"; its own print is shown with the '
          'answer.'),
-    lift('r-2', _p[1], 3, 'The scheme adds: ' + ' '.join(_q3c2[0].asides))], figure=S + 'q3c-ii')
+    lift('r-2', _p[1], 3, 'The scheme adds: ' + ' '.join(_q3c2[0].asides))], figure=S + 'q3c-ii', stem='')
 C.route([k('3', 'd', 'i')], 'chem-1-4', 'moles-of-acid-neutralised',
         fixes={'ܯ= 150 × 1.0 1000 = 0.15 moles': '150 × 1.0 ÷ 1000 = 0.15 moles'},
         row_notes={0: FRACTION.format('150 × 1.0', '1000')})
@@ -262,6 +269,12 @@ C.add([k('3', 'd', 'ii')], 'chem-3-1', 'heat-produced-from-mass-heat-capacity-an
           'are its first route, and its own print of every route is shown with the answer.')
 shown('The scheme gives the answer as "' + display(_q3d2[0].text) + '" (9), and accepts two other routes; '
       'its own print of every route is shown with the answer.')
+# (d)(ii), (d)(iii) and (e): the only figure is the scheme's working or table, held back until the
+# reveal, while the stem points at the cup "in the diagram" and gives the volumes, the
+# concentrations and the temperature rise the answers use. The paper's own print is the question:
+# the lead-in and equation with the photograph of the cup beside them ((a)-(c)(i), printed beside
+# the photograph's lower half, whited out), then "(d) Calculate" and the part's own ask.
+print_question('paper-q3d-ii-print')
 _q3d3 = P.items(k('3', 'd', 'iii'))
 assert _q3d3[0].cell == '[6]', _q3d3
 _st = [raw(9, 703, 718, 55, 270), raw(9, 717, 732, 55, 270)]
@@ -274,6 +287,7 @@ C.add([k('3', 'd', 'iii')], 'chem-3-1', 'heat-of-neutralisation-per-mole', [
           'the answer.')
 shown('The scheme gives the answer as "' + display(_q3d3[0].text) + '" (6), and accepts the same in '
       'joules; its own print of both routes is shown with the answer.')
+print_question('paper-q3d-iii-print')
 # (e): one line of the scheme's table, STATE (3) and EXPLAIN (3), linked.
 _q3e = table_lines(10, (100, 95, 520, 660), 250)
 assert _q3e[0] == ('STATE (3)', 'EXPLAIN (3)') and len(_q3e) == 13, _q3e
@@ -287,6 +301,7 @@ C.add([k('3', 'e')], 'chem-u2', 'improving-the-accuracy-of-the-heat-of-neutralis
              'And the explanation the table gives on that same line (EXPLAIN), (3). The scheme adds: ' + _lnk
              + ' Its own print of the table is shown with the answer.', per=3, total=3)],
     total=6, figure=S + 'q3e')
+print_question('paper-q3e-print')
 
 # ── Q4 Eight of eleven short items ───────────────────────────────────────────
 C.fixed([k('4', 'a')], 'chem-1-2', 'purpose-of-millikans-oil-drop-experiment', notes=Q4_NOTE)

@@ -215,6 +215,16 @@ _indicators = [display(l.text) for l in raw_lines(6, (130, 420, 230, 540))]
 assert _indicators == ['methyl orange', 'Methyl red', 'phenolphthalein', 'thymolphthalein', 'thymol blue',
                        'cresol purple', 'neutral red', 'phenol red', 'bromothymol blue'], _indicators
 _colour = split_points(_q2f[1].text)
+# (f) and (h): the only figure is the scheme's table or working, held back until the reveal, so
+# the lead-in's last sentence "Some of the pieces of equipment used are shown on the right."
+# would point at nothing. Nothing in either depends on the equipment: (f) asks for an indicator
+# and its colour change, and (h) prints its own equation and volumes. That sentence is left out
+# of their stems.
+_lead2 = C.context(k('2', 'f'))
+_EQUIP = 'Some of the pieces of equipment used are shown on the right.'
+assert _lead2.endswith(' ' + _EQUIP) and C.context(k('2', 'h')) == _lead2, _lead2
+Q2_NO_EQUIP = cut(_lead2, None, _EQUIP)
+assert Q2_NO_EQUIP.endswith('the concentration of a given hydrochloric acid (HCl) solution.'), Q2_NO_EQUIP
 C.add([k('2', 'f')], 'chem-4-1', 'indicator-and-colour-change-for-a-titration', [
     anyN('r-1', options(_indicators)[0], 3, 1, 3, options(_indicators),
          'For the indicator, any one of these: the scheme prices "' + traced(_q2f[0].text) + '" (3) and tables these '
@@ -222,7 +232,7 @@ C.add([k('2', 'f')], 'chem-4-1', 'indicator-and-colour-change-for-a-titration', 
     lift('r-2', _colour[0], 3, 'For the colour change: the scheme prices "' + traced(_q2f[1].text) + '" (2 × 3), '
          'one each, and tables each indicator\'s colour before and after the end point, shown with the answer. '
          + adds(_q2f[1].asides)),
-    lift('r-3', _colour[1], 3, adds(_q2f[2].asides))], total=9, figure=S + 'q2f')
+    lift('r-3', _colour[1], 3, adds(_q2f[2].asides))], total=9, figure=S + 'q2f', stem=Q2_NO_EQUIP)
 C.fixed([k('2', 'g')], 'chem-4-1', 'the-white-tile', figure=Q2)
 # (h): the answer (9), "CALC.:" before it, then its working in a box of stacked
 # fractions the text layer cannot order, (3) a step: the scheme's print of the
@@ -230,7 +240,7 @@ C.fixed([k('2', 'g')], 'chem-4-1', 'the-white-tile', figure=Q2)
 _q2h = P.items(k('2', 'h'))
 assert [it.cell for it in _q2h] == ['[9]', '[3]', '[3]', '[3]'] and _q2h[0].text == 'CALC.: 0.11 M', _q2h
 C.answer_only([k('2', 'h')], 'chem-4-1', 'concentration-of-hydrochloric-acid-in-moles-per-litre', S + 'q2h',
-              fixes={'CALC.: 0.11 M': '0.11 M'}, notes=adds(_q2h[3].asides))
+              fixes={'CALC.: 0.11 M': '0.11 M'}, notes=adds(_q2h[3].asides), stem=Q2_NO_EQUIP)
 
 # ── Q3 The rate of decomposition of hydrogen peroxide ────────────────────────
 Q3C = FIG + 'paper-q3c'

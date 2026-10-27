@@ -48479,7 +48479,6 @@
   "section": "B",
   "questionRef": "2020 HL Q11(a)(ii)",
   "questionText": "Hydrogen bonding accounts for the significantly higher boiling point of water compared to that of methane despite their similar relative molecular masses. Describe, with the aid of a diagram, how hydrogen bonding arises between water molecules.",
-  "stem": "Consider the data shown below for a number of simple hydrides.",
   "figureKey": "chemistry-2020-HL-scheme-q11a-ii",
   "tariffModel": {
    "kind": "fixed"
@@ -49542,7 +49541,8 @@
     "openList": true,
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2020-OL-paper-q2d-iv-print"
  },
  {
   "id": "chem-2020-ol-q3-a-i",
@@ -62789,7 +62789,6 @@
   "section": "A",
   "questionRef": "2018 HL Q3(c)(ii)",
   "questionText": "Draw or describe the hazard warning pictogram that should be displayed on a container used to store 1.0 M NaOH.",
-  "stem": "The cardboard cup with plastic lid in the diagram contained 150 cm³ of 1.0 M hydrochloric acid solution at room temperature. A volume of 160 cm³ of 1.0 M sodium hydroxide solution – also at room temperature – was added quickly and the mixture was stirred. The temperature of the mixture rose rapidly by 6.4 K and then began to fall gradually. The equation for the neutralisation reaction that took place is: HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)",
   "figureKey": "chemistry-2018-HL-scheme-q3c-ii",
   "tariffModel": {
    "kind": "fixed"
@@ -62884,7 +62883,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme gives the answer, 8.3328 kJ [8.3 to 8.333 kJ] / = 8332.8 joules [8300 to 8333 J], priced (9), then three boxed routes (in kJ with the mass in kg, in kJ with the heat capacity per gram, or in joules); the steps here are its first route, and its own print of every route is shown with the answer."
+  "notes": "The scheme gives the answer, 8.3328 kJ [8.3 to 8.333 kJ] / = 8332.8 joules [8300 to 8333 J], priced (9), then three boxed routes (in kJ with the mass in kg, in kJ with the heat capacity per gram, or in joules); the steps here are its first route, and its own print of every route is shown with the answer.",
+  "questionFigureKey": "chemistry-2018-HL-paper-q3d-ii-print"
  },
  {
   "id": "chem-2018-hl-q3-d-iii",
@@ -62920,7 +62920,8 @@
     "contextNote": "The scheme adds: [1 mark to be deducted for incorrect rounding off resulting in candidate’s final answer lying outside given range but deduction to be made once only in (d).] [Ignore negative signs used in work in (ii) but final answer in (iii) must be negative.]"
    }
   ],
-  "notes": "The scheme gives the answer, [–55.6 to –55.55 kJ mol⁻¹] or [–55,600 to –55,550 J mol⁻¹], priced (6), then two boxed routes, in kJ or in joules; the steps here are its first route, and its own print of both is shown with the answer."
+  "notes": "The scheme gives the answer, [–55.6 to –55.55 kJ mol⁻¹] or [–55,600 to –55,550 J mol⁻¹], priced (6), then two boxed routes, in kJ or in joules; the steps here are its first route, and its own print of both is shown with the answer.",
+  "questionFigureKey": "chemistry-2018-HL-paper-q3d-iii-print"
  },
  {
   "id": "chem-2018-hl-q3-e",
@@ -62991,7 +62992,8 @@
      ]
     }
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2018-HL-paper-q3e-print"
  },
  {
   "id": "chem-2018-hl-q4-a",
@@ -67279,7 +67281,7 @@
   "section": "B",
   "questionRef": "2017 OL Q6(c) — another member and its structure",
   "questionText": "Name one other member of this series and draw the structure of one of its molecules.",
-  "stem": "The diagram shows a butane (C₄H₁₀) gas lighter being used to ignite methane (CH₄) gas in a Bunsen burner. To which homologous series do both methane and butane belong?",
+  "stem": "To which homologous series do both methane and butane belong?",
   "figureKey": "chemistry-2017-OL-scheme-q6c",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -67529,7 +67531,6 @@
   "section": "B",
   "questionRef": "2017 OL Q8(a)",
   "questionText": "Draw the structure of an ethanol molecule. Circle its functional group. Explain why ethanol is very soluble in water.",
-  "stem": "Ethanol is broken down in the human body as shown in the scheme on the right.",
   "figureKey": "chemistry-2017-OL-scheme-q8a",
   "tariffModel": {
    "kind": "fixed"
@@ -73602,7 +73603,7 @@
   "section": "B",
   "questionRef": "2016 OL Q6(b)(ii)",
   "questionText": "Draw the structural formula of one of these compounds.",
-  "stem": "In an oil refinery a fractionating column like that shown separates crude oil into different useful hydrocarbon fractions. Liquid petroleum gas (LPG) is obtained from refinery gas.",
+  "stem": "Liquid petroleum gas (LPG) is obtained from refinery gas.",
   "figureKey": "chemistry-2016-OL-scheme-q6b-ii",
   "tariffModel": {
    "kind": "fixed"
@@ -74844,7 +74845,7 @@
   "section": "B",
   "questionRef": "2016 OL Q11(b)(iii)",
   "questionText": "If a pouch contains 28 g of iron, how many moles of iron are present? How many moles of iron oxide (Fe₂O₃) are produced when all of the iron in this pouch reacts?",
-  "stem": "The type of disposable hand warmer shown uses a chemical reaction of iron to generate heat. When the outer packaging is removed, oxygen from the air enters the porous inner pouch and reacts rapidly with the iron powder inside according to the following balanced equation: 4Fe + 3O₂ → 2Fe₂O₃",
+  "stem": "When the outer packaging is removed, oxygen from the air enters the porous inner pouch and reacts rapidly with the iron powder inside according to the following balanced equation: 4Fe + 3O₂ → 2Fe₂O₃",
   "figureKey": "chemistry-2016-OL-scheme-q11b-iii",
   "tariffModel": {
    "kind": "fixed"
@@ -75520,7 +75521,7 @@
   "section": "A",
   "questionRef": "2016 HL Q2(b)(ii)",
   "questionText": "Some water was added to liquids C and E and the test-tubes were stoppered and shaken vigorously. After the test-tubes were allowed to stand, a white emulsion was observed in the test-tube containing C and a colourless solution in the test-tube containing E. Identify C and E. A small volume of cyclohexane was then added to the test-tube containing C. The test-tube was stoppered and again shaken vigorously and the stopper loosened. What was observed after the test-tube was again allowed to stand?",
-  "stem": "The two test-tubes on the left in the diagram contain pure samples of A and B, different gaseous hydrocarbons, one of which is unsaturated. The pure liquids C, D and E in the other test-tubes are samples of ethanal, ethanoic acid and eugenol, but not necessarily in that order. The crystalline solids F and G are two different benzoic acid samples.",
+  "stem": "The pure liquids C, D and E in the other test-tubes are samples of ethanal, ethanoic acid and eugenol, but not necessarily in that order. The crystalline solids F and G are two different benzoic acid samples.",
   "figureKey": "chemistry-2016-HL-scheme-q2b-ii",
   "tariffModel": {
    "kind": "fixed"
@@ -75687,7 +75688,7 @@
   "section": "A",
   "questionRef": "2016 HL Q3(a)",
   "questionText": "Draw a labelled diagram of an apparatus that could have been used in either run of this investigation.",
-  "stem": "In an investigation into the decomposition of a hydrogen peroxide solution, using a manganese(IV) oxide catalyst, the volume of oxygen produced was monitored with time. Two runs were conducted under the same conditions of temperature and pressure, using the same initial volume of the same hydrogen peroxide solution, and the same mass of catalyst from two different suppliers, A and B. The volumes of oxygen collected at a set of times common to both runs are recorded in the table below.",
+  "stem": "In an investigation into the decomposition of a hydrogen peroxide solution, using a manganese(IV) oxide catalyst, the volume of oxygen produced was monitored with time. Two runs were conducted under the same conditions of temperature and pressure, using the same initial volume of the same hydrogen peroxide solution, and the same mass of catalyst from two different suppliers, A and B.",
   "figureKey": "chemistry-2016-HL-scheme-q3a",
   "tariffModel": {
    "kind": "fixed"
@@ -75802,7 +75803,8 @@
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. The scheme works it from any two points on a tangent drawn at 4 minutes on curve A, and adds: [Deduct 1 mark if tangent correctly drawn at 4 minutes on curve B.]"
    }
   ],
-  "notes": "The scheme boxes the working, any two points from a tangent drawn at 4 minutes on curve A, worked to 8.6 [8.2 – 9.5] cm³ oxygen per minute, priced (6)."
+  "notes": "The scheme boxes the working, any two points from a tangent drawn at 4 minutes on curve A, worked to 8.6 [8.2 – 9.5] cm³ oxygen per minute, priced (6).",
+  "questionFigureKey": "chemistry-2016-HL-paper-q3c-print"
  },
  {
   "id": "chem-2016-hl-q3-d-i-ii",
@@ -82123,7 +82125,8 @@
     }
    }
   ],
-  "notes": "The scheme gives the answer, 58% [57.69 – 58%], priced (12), then two routes of four steps (3) each."
+  "notes": "The scheme gives the answer, 58% [57.69 – 58%], priced (12), then two routes of four steps (3) each.",
+  "questionFigureKey": "chemistry-2015-HL-paper-q2d-print"
  },
  {
   "id": "chem-2015-hl-q3-a",
@@ -94347,7 +94350,8 @@
     }
    }
   ],
-  "notes": "The scheme draws the labelled apparatus; its own print is shown with the answer."
+  "notes": "The scheme draws the labelled apparatus; its own print is shown with the answer.",
+  "questionFigureKey": "chemistry-2012-OL-paper-q1d-print"
  },
  {
   "id": "chem-2012-ol-q1-e",
@@ -94780,7 +94784,8 @@
     "openList": true,
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2012-OL-paper-q3d-i-print"
  },
  {
   "id": "chem-2012-ol-q3-d-ii",
@@ -94807,7 +94812,8 @@
     "openList": true,
     "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2012-OL-paper-q3d-ii-print"
  },
  {
   "id": "chem-2012-ol-q3-d-heat-of-reaction",
@@ -97229,7 +97235,7 @@
   "section": "A",
   "questionRef": "2013 HL Q1(f)",
   "questionText": "Calculate the concentration of iodine (I₂) in the sample bottle in moles per litre.",
-  "stem": "In an experiment to measure the dissolved oxygen content of a river water sample, a small amount of a concentrated solution of compound A, followed by a small amount of a concentrated solution of alkaline potassium iodide (KOH/KI), were added to a bottle filled with the river water. These additions were made using the method shown in the diagram, avoiding the addition of bubbles of air. After both additions the stopper was replaced carefully and the bottle was inverted several times to ensure thorough mixing of the contents. A brown precipitate was observed at this stage. About 1 cm³ of concentrated sulfuric acid (H₂SO₄) was then added, allowing the acid to run down the inside wall of the bottle. Again the bottle was stoppered and inverted several times to ensure thorough mixing. After the three additions, the thoroughly mixed contents of the sample bottle were titrated in 200 cm³ portions with a 0.02 M solution of sodium thiosulfate (Na₂S₂O₃). The average titre was 9.4 cm³. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
+  "stem": "In an experiment to measure the dissolved oxygen content of a river water sample, a small amount of a concentrated solution of compound A, followed by a small amount of a concentrated solution of alkaline potassium iodide (KOH/KI), were added to a bottle filled with the river water. After both additions the stopper was replaced carefully and the bottle was inverted several times to ensure thorough mixing of the contents. A brown precipitate was observed at this stage. About 1 cm³ of concentrated sulfuric acid (H₂SO₄) was then added, allowing the acid to run down the inside wall of the bottle. Again the bottle was stoppered and inverted several times to ensure thorough mixing. After the three additions, the thoroughly mixed contents of the sample bottle were titrated in 200 cm³ portions with a 0.02 M solution of sodium thiosulfate (Na₂S₂O₃). The average titre was 9.4 cm³. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
   "figureKey": "chemistry-2013-HL-scheme-q1f",
   "tariffModel": {
    "kind": "fixed"
@@ -100907,7 +100913,7 @@
   "section": "A",
   "questionRef": "2011 OL Q2(f)",
   "questionText": "Name a suitable indicator for this titration. State the colour change at the end point.",
-  "stem": "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution. Some of the pieces of equipment used are shown on the right.",
+  "stem": "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution.",
   "figureKey": "chemistry-2011-OL-scheme-q2f",
   "tariffModel": {
    "kind": "fixed"
@@ -100992,7 +100998,7 @@
   "section": "A",
   "questionRef": "2011 OL Q2(h)",
   "questionText": "A number of accurate titrations were carried out. The balanced equation for the titration reaction is: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂ It was found that, on average, 25.0 cm³ of the 0.05 M sodium carbonate (Na₂CO₃) solution were neutralised by 22.7 cm³ of the hydrochloric acid (HCl) solution. Calculate the concentration of the hydrochloric acid solution in moles per litre.",
-  "stem": "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution. Some of the pieces of equipment used are shown on the right.",
+  "stem": "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution.",
   "figureKey": "chemistry-2011-OL-scheme-q2h",
   "tariffModel": {
    "kind": "fixed"
@@ -104077,7 +104083,6 @@
   "section": "A",
   "questionRef": "2012 HL Q3(d)",
   "questionText": "The vapour of 0.63 g of a pure liquid occupies a volume of 330 cm³ at a temperature of 100 °C and at a pressure of 101 kPa. Calculate the number of moles of vapour and hence calculate the relative molecular mass of the volatile liquid.",
-  "stem": "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
   "figureKey": "chemistry-2012-HL-scheme-q3d",
   "tariffModel": {
    "kind": "fixed"

@@ -190,8 +190,15 @@ assert Q1F_IODINE == 'Calculate the concentration of iodine (I₂) in the sample
 assert Q1F_LEAD.endswith('Calculate the concentration of dissolved oxygen in the river water sample'), Q1F_LEAD
 _q1f = P.items(k('1', 'f'))
 assert [it.cell for it in _q1f] == ['[6]', '[3]', '[3]'] and display(_q1f[2].text) == 'x = 0.00047', _q1f
+# Its only figure is the scheme's working, held back until the reveal, so the stem's sentence on
+# "the method shown in the diagram" would point at nothing. Nothing in (f) depends on it: the
+# iodine comes from the titre, the thiosulfate's concentration and the equation, which the
+# stem's other sentences print. That sentence is left out of this card's stem.
+_DIAG = 'These additions were made using the method shown in the diagram, avoiding the addition of bubbles of air.'
+assert Q1_LATER.count(_DIAG) == 1, Q1_LATER
+_before, _after = Q1_LATER.split(_DIAG)
 C.answer_only([k('1', 'f')], 'chem-4-1', 'iodine-concentration-from-the-thiosulfate-titre', S + 'q1f',
-              qtext=Q1F_IODINE, stem=Q1_LATER)
+              qtext=Q1F_IODINE, stem=_before.strip() + ' ' + _after.strip())
 shown('The scheme works it in a box, the titration formula set as fractions (3) and x = 0.00047 (3), and adds: '
       + ' '.join(_q1f[1].asides + _q1f[2].asides))
 # (i)-(iii) complete one sentence, on lines of their own (page 2, y 523-607);

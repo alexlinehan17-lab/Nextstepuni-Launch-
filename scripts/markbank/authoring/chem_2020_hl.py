@@ -343,7 +343,13 @@ C.route([k('10', 'c', 'iii')], 'chem-1-4', 'volume-of-water-used-up')
 # ── Q11 Any two of (a), (b), (c) ─────────────────────────────────────────────
 Q11A = FIG + 'paper-q11a-table'
 C.fixed([k('11', 'a', 'i')], 'chem-2-1', 'definition-of-electronegativity', figure=Q11A)
-C.fixed([k('11', 'a', 'ii')], 'chem-2-2', 'hydrogen-bonding-in-water', figure=S + 'q11a-ii',
+# (ii): its only figure is the scheme's drawing, held back until the reveal, so the letter's
+# lead-in "Consider the data shown below ..." would point at nothing. Nothing in (ii) depends
+# on the table: the ask states the boiling-point contrast itself and asks how hydrogen bonding
+# arises between water molecules. The lead-in is left out of this card's stem.
+assert C.context(k('11', 'a', 'ii')) == 'Consider the data shown below for a number of simple hydrides.', \
+    C.context(k('11', 'a', 'ii'))
+C.fixed([k('11', 'a', 'ii')], 'chem-2-2', 'hydrogen-bonding-in-water', figure=S + 'q11a-ii', stem='',
         row_notes={0: 'The scheme draws the molecules; its own print is shown with the answer.'})
 C.fixed([k('11', 'a', 'iii')], 'chem-2-2', 'why-only-water-hydrogen-bonds', figure=Q11A)
 C.fixed([k('11', 'a', 'iv')], 'chem-2-2', 'boiling-points-of-the-hydrides', figure=Q11A)

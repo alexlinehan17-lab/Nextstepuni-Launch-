@@ -153,6 +153,10 @@ C.menu([k('1', 'd')], 'chem-u2', 'preparing-and-collecting-ethyne', figure=S + '
        note='Any three of these, the first (6), the others (3): the scheme lists four points and prices them "'
             + traced('ANY THREE: (6 + 2 × 3)') + '".',
        notes='The scheme draws the labelled apparatus; its own print is shown with the answer.')
+# "Indicate clearly on the diagram the names or formulas ..." means the student's own diagram,
+# but its only figure is the scheme's drawing, held back until the reveal: the paper's own print
+# of (d) is the question, so that no wording of the card reads as pointing at a figure it lacks.
+print_question('paper-q1d-print')
 assert cells(k('1', 'e')) == ['[6 + 2 × 3]'], P.items(k('1', 'e'))
 C.ordered([k('1', 'e')], 'chem-2-4', 'unsaturation-and-a-test-for-it',
           row_notes={0: 'For "Explain what is meant by saying that ethene and ethyne are unsaturated compounds."',
@@ -232,12 +236,18 @@ C.fixed([k('3', 'c')], 'chem-3-1', 'minimising-heat-loss-in-the-polystyrene-cup'
 # fractions in a box (scheme PDF page 7), shown with the answer.
 assert cells(k('3', 'd', 'i')) == ['[9]', '[6]', '[3]'], P.items(k('3', 'd', 'i'))
 C.answer_only([k('3', 'd', 'i')], 'chem-3-1', 'moles-of-hydrochloric-acid', S + 'q3d-i')
+# (i) and (ii): the only figure is the scheme's working, held back until the reveal, while the
+# stem points at "the apparatus shown in the diagram" and gives the volumes, the concentrations
+# and the heat (11.4 kJ) that (ii) is worked from. The paper's own print is the question: the
+# lead-in and equation, the apparatus beside them, then "(d) Calculate:" and the part's own ask.
+print_question('paper-q3d-i-print')
 _q3d2_ask = P.ask(k('3', 'd', 'ii'))
 _q3d2 = P.items(k('3', 'd', 'ii'))
 assert [it.cell for it in _q3d2] == ['[6]', '[3]', '[3]', '[3]'] \
     and display(_q3d2[3].text) == 'ΔH – 57 kJ mol⁻¹', _q3d2
 C.answer_only([k('3', 'd', 'ii')], 'chem-3-1', 'heat-produced-per-mole-of-hydrochloric-acid', S + 'q3d-ii',
               qtext=cut(_q3d2_ask, None, 'What is the heat'))
+print_question('paper-q3d-ii-print')
 # Then, set after (ii) under the letter's one mark (18), the heat of reaction:
 # the scheme sets it under "ΔH" (3).
 C.add([k('3', 'd')], 'chem-3-1', 'heat-of-reaction-of-hydrochloric-acid-and-sodium-hydroxide', [

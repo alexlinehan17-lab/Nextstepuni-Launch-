@@ -351,6 +351,13 @@ assert _r1 == ['equation of state (correct) (3)', '101 × 10³× 330 × 10⁻⁶
 _mr = [raw(7, 606, 623, 140), raw(7, 630, 647, 140)]
 _stp = traced(raw(7, 571, 588, 320))
 assert _mr == ['0.63 ÷ 0.01076 to 0.011 (3)', '= 57 to 63 (3)'] and _stp == '*similar method at s.t.p.', (_mr, _stp)
+# Its only figure is the scheme's working, held back until the reveal, so the question's
+# lead-in "... either apparatus A or apparatus B shown below." would point at nothing. Nothing
+# in (d) depends on the apparatus: it prints the mass, volume, temperature and pressure the
+# moles and the relative molecular mass are worked from. The lead-in is left out of its stem.
+assert C.context(k('3', 'd')) == ('The relative molecular mass of a volatile liquid can be found by means of a '
+                                  'procedure involving the use of either apparatus A or apparatus B shown below.'), \
+    C.context(k('3', 'd'))
 C.add([k('3', 'd')], 'chem-2-3', 'moles-and-relative-molecular-mass-of-the-vapour', [
     lift('r-1', 'equation of state (correct)', 3, 'MOL: the scheme gives the answer, "0.01076 [Allow 0.01 to 0.011 '
          'mol]", priced (9), then three steps (3) each; or, after "or", Vroom over 293* = 330 over 373, set as '
@@ -361,7 +368,7 @@ C.add([k('3', 'd')], 'chem-2-3', 'moles-and-relative-molecular-mass-of-the-vapou
              per=3, total=3),
     lift('r-4', '0.63 ÷ 0.01076 to 0.011', 3, 'Mr: the scheme gives the answer, "57 to 63", priced (6), then two '
          'steps (3) each.'),
-    lift('r-5', '= 57 to 63', 3)], total=15, figure=S + 'q3d')
+    lift('r-5', '= 57 to 63', 3)], total=15, figure=S + 'q3d', stem='')
 C.fixed([k('3', 'e')], 'chem-2-3', 'limits-of-the-method-and-the-mass-spectrometer', figure=Q3,
         row_notes={0: 'WHY.', 1: 'WHAT.'})
 

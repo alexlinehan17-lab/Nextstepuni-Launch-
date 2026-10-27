@@ -96,6 +96,13 @@ C.fixed([k('2', 'd', 'i')], 'chem-4-1', 'why-a-further-titration', figure=Q2T)
 C.fixed([k('2', 'd', 'ii')], 'chem-4-1', 'choosing-concordant-titres', figure=Q2T)
 C.fixed([k('2', 'd', 'iii')], 'chem-4-1', 'average-titre', figure=Q2T)
 C.answer_only([k('2', 'd', 'iv')], 'chem-4-1', 'concentration-of-hydrochloric-acid', S + 'q2d-iv')
+# Its only figure is the scheme's working, held back until the reveal, while its stem points at
+# the photograph, the flask "shown in the diagram" and "the table below", and the volume of
+# sodium carbonate titrated (25.0 cm³) is printed only in the paragraph before (b). The paper's
+# own print is the question: the opening paragraph with the photograph and the flask beside it
+# ((a)'s asks and mark whited out), the paragraph on the titrations, the equation and the table,
+# then (iv).
+print_question('paper-q2d-iv-print')
 
 # ── Q3 The decomposition of hydrogen peroxide ────────────────────────────────
 Q3 = FIG + 'paper-q3'

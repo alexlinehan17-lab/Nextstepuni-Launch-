@@ -243,6 +243,10 @@ C.add([k('2', 'd')], 'chem-1-4', 'percentage-yield-of-benzoic-acid', [
     notes='The scheme gives the answer, 58% [57.69 – 58%], priced (12), then two routes of four steps (3) each.')
 shown('The scheme gives the answer as "58% [57.69 – 58%]" (12); its own print of both routes is shown with the '
       'answer.')
+# Its only figure is the scheme's working, held back until the reveal, while its stem points at
+# "the reaction scheme below", whose structures give the two molar masses the yield is worked
+# from: the paper's own print (the lead-in and the reaction scheme, then (d)) is the question.
+print_question('paper-q2d-print')
 
 # ── Q3 Swimming-pool water ───────────────────────────────────────────────────
 Q3T = FIG + 'paper-q3-table'

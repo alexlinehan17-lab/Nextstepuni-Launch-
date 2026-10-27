@@ -240,8 +240,17 @@ C.fixed([k('2', 'b', 'i')], 'chem-4-2', 'ethanal-and-its-easy-oxidation', figure
 # the two structures (scheme page 7, x 391-481, y 363-463); WHAT (3).
 _q2b2 = P.items(k('2', 'b', 'ii'))
 assert [it.cell for it in _q2b2] == ['[2 × 3]', '[3]'] and display(_q2b2[0].text).endswith('(CH₃COOH) /'), _q2b2
+# Its only figure is the scheme's box of structures, held back until the reveal, so the
+# question's opening sentence "The two test-tubes on the left in the diagram ..." would point at
+# nothing. Nothing in (b)(ii) depends on the diagram or on that sentence (A and B, the gases): it
+# turns on what C and E may be, which the sentence after it names. The opening sentence is left
+# out of this card's stem.
+_lead2 = C.context(k('2', 'b', 'ii'))
+_ab = ('The two test-tubes on the left in the diagram contain pure samples of A and B, different gaseous '
+       'hydrocarbons, one of which is unsaturated.')
+assert _lead2.startswith(_ab + ' The pure liquids C, D and E'), _lead2
 C.fixed([k('2', 'b', 'ii')], 'chem-4-2', 'eugenol-and-ethanoic-acid-with-water-and-cyclohexane',
-        figure=S + 'q2b-ii',
+        figure=S + 'q2b-ii', stem=_lead2[len(_ab):].strip(),
         row_notes={0: 'IDENTIFY. The scheme sets the structures of eugenol and ethanoic acid in a box beside these '
                       'two answers, after "/"; its own print is shown with the answer.', 2: 'WHAT.'})
 C.fixed([k('2', 'b', 'iii')], 'chem-4-2', 'ethanoic-acid-and-magnesium', figure=Q2)
@@ -263,10 +272,17 @@ assert _p1 == ('both reactants in flask (reaction vessel), e.g. A, B or C below,
 assert _p1x == '[hydrogen peroxide added from dropping funnel not acceptable] //', _p1x
 assert _p2 == 'flask connected to graduated container, e.g. X or Y below, for oxygen collection /', _p2
 assert _p2x == '[graduations marked or collecting graduated container labelled]', _p2x
+# Its only figure is the scheme's drawings, held back until the reveal, so the lead-in's last
+# sentence "... are recorded in the table below." would point at nothing. Nothing in (a) depends
+# on the table: it asks for an apparatus for either run. That sentence is left out of its stem.
+_lead3 = C.context(k('3', 'a'))
+_lead3_table, _ = cut(_lead3, 'The volumes of oxygen collected')
+assert _lead3.endswith('The volumes of oxygen collected at a set of times common to both runs are recorded in '
+                       'the table below.') and _lead3_table.endswith('from two different suppliers, A and B.'), _lead3
 C.add([k('3', 'a')], 'chem-u2', 'apparatus-for-collecting-oxygen-from-hydrogen-peroxide', [
     lift('r-1', _p1, 4, 'The scheme prices its two points (4 + 4), and adds: ' + _p1x[:-len(' //')]
          + ' Its own drawings are shown with the answer.'),
-    lift('r-2', _p2.rstrip('/ '), 4, 'The scheme adds, after "/": ' + _p2x)], figure=S + 'q3a')
+    lift('r-2', _p2.rstrip('/ '), 4, 'The scheme adds, after "/": ' + _p2x)], figure=S + 'q3a', stem=_lead3_table)
 # (b): the axes (3) and scales (3), the two curves (6 + 3), the same volume (3).
 _q3b = P.items(k('3', 'b'))
 assert [it.cell for it in _q3b][:3] == ['[3]', '[6 + 3]', '[3]'], _q3b
@@ -294,6 +310,10 @@ C.answer_only([k('3', 'c')], 'chem-3-2', 'instantaneous-rate-from-a-tangent', S 
                     'worked to 8.6 [8.2 – 9.5] cm³ oxygen per minute, priced (6).')
 shown('The scheme works it from any two points on a tangent drawn at 4 minutes on curve A, and adds: '
       + _q3c[1].asides[0])
+# Its only figure is the scheme's working, held back until the reveal, while the rate is read off
+# the graph of the table's volumes "recorded in the table below": the paper's own print (the
+# lead-in and table, then (c)) is the question.
+print_question('paper-q3c-print')
 # (d)(i)-(ii): one cell (2 x 3), one each; WHAT and SUGGEST, set unnumbered after
 # (ii) under (12), are a card each.
 _q3d = [P.items(k('3', 'd', r)) for r in ('i', 'ii')]

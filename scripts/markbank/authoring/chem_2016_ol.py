@@ -252,7 +252,17 @@ C.ordered([k('6', 'b', 'i')], 'chem-2-4', 'components-of-lpg', figure=Q6)
 # the scheme's picture, 'scheme-labels').
 assert [(it.cell, it.text) for it in P.items(k('6', 'b', 'ii'))] == [('[3]', 'CH₃CH₂CH₃ / CH₃CH₂CH₂CH₃ /')], \
     P.items(k('6', 'b', 'ii'))
+# Its only figure is the scheme's drawing, held back until the reveal, so the question's opening
+# sentence "... a fractionating column like that shown ..." would point at nothing. Nothing in
+# (b)(ii) depends on the column: it asks for the structure of a component of LPG, which (b)'s own
+# lead-in names. The opening sentence is left out of this card's stem.
+_lead6b = C.context(k('6', 'b', 'ii'))
+_open6 = 'In an oil refinery a fractionating column like that shown separates crude oil into different useful ' \
+    'hydrocarbon fractions.'
+assert _lead6b.startswith(_open6 + ' ') and cut(_lead6b, 'Liquid petroleum gas') == \
+    'Liquid petroleum gas (LPG) is obtained from refinery gas.', _lead6b
 C.fixed([k('6', 'b', 'ii')], 'chem-2-4', 'structural-formula-of-propane-or-butane', figure=S + 'q6b-ii',
+        stem=cut(_lead6b, 'Liquid petroleum gas'),
         row_notes={0: 'After a solidus the scheme draws both structures; its own print is shown with the answer.'})
 C.fixed([k('6', 'b', 'iii')], 'chem-2-4', 'why-mercaptans-are-added-to-lpg', figure=Q6)
 # (c): the paper numbers (i) and (ii); the scheme prints their answers under
@@ -475,12 +485,19 @@ assert [it.cell for it in _q11b3] == ['[6]', '[3]', '[3]', '[6]', '[3]', '[3]'],
 _iii = P.ask(k('11', 'b', 'iii'))
 _mfe = cut(_iii, None, 'How many moles of iron oxide')
 _mox = cut(_iii, 'How many moles of iron oxide')
+# Its only figure is the scheme's working, held back until the reveal, so (b)'s opening sentence
+# "The type of disposable hand warmer shown ..." would point at nothing. Nothing in (iii) depends
+# on the photograph or on that sentence: the moles come from the 28 g of iron and the equation,
+# which the sentence after it prints. The opening sentence is left out of this card's stem.
+_lead11b = C.context(k('11', 'b', 'iii'))
+assert _lead11b.startswith('The type of disposable hand warmer shown uses a chemical reaction of iron to generate '
+                           'heat. When the outer packaging') and _lead11b.endswith('4Fe + 3O₂ → 2Fe₂O₃'), _lead11b
 C.add([k('11', 'b', 'iii')], 'chem-1-4', 'moles-of-iron-and-of-iron-oxide', [
     C.lifted('r-1', _q11b3[0].text, 6, f'For "{_mfe}" The scheme sets out the working that earns it in a box, '
              '(3) + (3).'),
     C.lifted('r-2', display(_q11b3[3].text), 6, f'For "{_mox}" The scheme sets out the working that earns it in '
              'a box, (3) + (3).')],
-    figure=S + 'q11b-iii',
+    figure=S + 'q11b-iii', stem=cut(_lead11b, 'When the outer packaging'),
     notes='The scheme prices each answer and boxes the working beneath it; its own print of the working is '
           'shown with the answer.')
 # (c)A: wine-making as a batch process.

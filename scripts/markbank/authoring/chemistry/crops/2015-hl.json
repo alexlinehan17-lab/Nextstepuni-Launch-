@@ -1,5 +1,6 @@
 [
  ["paper-q2", "paper", 3, [140, 106, 464, 326]],
+ ["paper-q2d-print", "paper-panels", 3, [[80, 52, 545, 332], [80, 594, 512, 657]]],
  ["paper-q3-table", "paper", 4, [110, 94, 516, 254]],
  ["paper-q3b-print", "paper-panels", 4, [[80, 54, 530, 255], [80, 306, 505, 326]]],
  ["q4g-aspirin", "labels", 5, [428, 330, 548, 416]],

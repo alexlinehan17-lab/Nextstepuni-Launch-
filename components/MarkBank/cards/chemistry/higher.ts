@@ -16053,7 +16053,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2020 Higher Level — © State Examinations Commission.",
     id: "chem-2020-hl-q11-a-ii", topicId: "chem-2-2", conceptId: "hydrogen-bonding-in-water",
     section: "B", questionRef: "2020 HL Q11(a)(ii)",
-    stem: "Consider the data shown below for a number of simple hydrides.",
     questionText: "Hydrogen bonding accounts for the significantly higher boiling point of water compared to that of methane despite their similar relative molecular masses. Describe, with the aid of a diagram, how hydrogen bonding arises between water molecules.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -18897,7 +18896,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2018 Higher Level — © State Examinations Commission.",
     id: "chem-2018-hl-q3-c-ii", topicId: "chem-u2", conceptId: "hazard-pictogram-for-sodium-hydroxide",
     section: "A", questionRef: "2018 HL Q3(c)(ii)",
-    stem: "The cardboard cup with plastic lid in the diagram contained 150 cm³ of 1.0 M hydrochloric acid solution at room temperature. A volume of 160 cm³ of 1.0 M sodium hydroxide solution – also at room temperature – was added quickly and the mixture was stirred. The temperature of the mixture rose rapidly by 6.4 K and then began to fall gradually. The equation for the neutralisation reaction that took place is: HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)",
     questionText: "Draw or describe the hazard warning pictogram that should be displayed on a container used to store 1.0 M NaOH.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -18951,6 +18949,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "H = mcΔT (mcΔθ) / H = 0.31 × 4.2 × 6.4", marks: 3, openList: true },
     { id: "r-3", kind: "point", verbatim: "= 8.3328 kJ [8.3 to 8.333 kJ]", marks: 3, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2018-HL-paper-q3d-ii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2018-HL-paper-q3d-ii-print.png",
+          "srcHash": "8bc5cda1ed4d9c75e5f304e301a4749e",
+          "alt": "The paper's own print of 2018 HL Q3(d)(ii): \"3. The cardboard cup with plastic lid in the diagram contained 150 cm³ of 1.0 M hydrochloric acid solution at room temperature. A volume of 160 cm³ of 1.0 M sodium hydroxide solution – also at room temperature – was added quickly and the mixture was stirred. The temperature of the mixture rose rapidly by 6.4 K and then began to fall gradually.\" and \"The equation for the neutralisation reaction that took place is:\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; on the right, a photograph of a dark cardboard cup printed with a white steaming-cup design, a white plastic lid on it, and a thermometer standing up through the lid; then \"(d) Calculate\" and \"(ii) the heat produced by the reaction mixture that had a total mass of 310 g, taking the specific heat capacity of the mixture as that of water, 4.2 kJ kg⁻¹ K⁻¹,\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2018 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2018-HL-scheme-q3d-ii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2018-HL-scheme-q3d-ii.png",
@@ -18975,6 +18981,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "8.3328 ÷ 0.15 = 55.55 to 55.6 kJ mol⁻¹", marks: 3, contextNote: "The scheme gives the answer as \"[–55.6 to –55.55 kJ mol⁻¹] or [–55,600 to –55,550 J mol⁻¹]\" (6), and accepts the same in joules; its own print of both routes is shown with the answer.", openList: true },
     { id: "r-2", kind: "point", verbatim: "ΔH = –55.6 kJ mol⁻¹ [–55.6 to –55.55 kJ mol⁻¹]", marks: 3, contextNote: "The scheme adds: [1 mark to be deducted for incorrect rounding off resulting in candidate’s final answer lying outside given range but deduction to be made once only in (d).] [Ignore negative signs used in work in (ii) but final answer in (iii) must be negative.]", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2018-HL-paper-q3d-iii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2018-HL-paper-q3d-iii-print.png",
+          "srcHash": "12b14e3e26ce8e8f09290be39ac720f0",
+          "alt": "The paper's own print of 2018 HL Q3(d)(iii): \"3. The cardboard cup with plastic lid in the diagram contained 150 cm³ of 1.0 M hydrochloric acid solution at room temperature. A volume of 160 cm³ of 1.0 M sodium hydroxide solution – also at room temperature – was added quickly and the mixture was stirred. The temperature of the mixture rose rapidly by 6.4 K and then began to fall gradually.\" and \"The equation for the neutralisation reaction that took place is:\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; on the right, a photograph of a dark cardboard cup printed with a white steaming-cup design, a white plastic lid on it, and a thermometer standing up through the lid; then \"(d) Calculate\" and \"(iii) to one decimal place, the heat of reaction (ΔH) for the neutralisation of hydrochloric acid by sodium hydroxide according to the equation above.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2018 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2018-HL-scheme-q3d-iii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2018-HL-scheme-q3d-iii.png",
@@ -18999,6 +19013,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "anyN", verbatim: "use more insulation / wrap in cotton wool", marks: 3, contextNote: "One modification, a line of the scheme's table (STATE), (3).", openList: true, group: {"claimMax":1,"perOption":3,"options":["use more insulation / wrap in cotton wool","use polystyrene (plastic) cup","acid and base 3 K below room temperature initially","use greater volumes of acid and base","use acid and base with greater concentrations","use specific heat capacity of solution in calculations","allow for specific heat capacity of material of container","repeat several times and average","measure volumes with pipette (burette)* assuming the readings given are read correct to 1 cm³","use thermometer** with low heat capacity / allow for specific heat capacity of material of thermometer","use more sensitive (accurate) thermometer","graph temperature fall after mixing versus time and extrapolate to get temperature at time of mixing"]} },
     { id: "r-2", kind: "anyN", verbatim: "use more insulation / wrap in cotton wool — gives more accurate temperature rise (change) / stops (reduces) heat loss to surroundings / more accurate result for heat produced in cup", marks: 3, contextNote: "And the explanation the table gives on that same line (EXPLAIN), (3). The scheme adds: [SUGGEST and EXPLAIN are linked.] [*Do not allow ‘add using pipette (burette)’.] [**Do not allow ‘use digital thermometer’ as a precaution.] [Do not allow ‘use same quantity (number of moles, volume) of acid and base’.] Its own print of the table is shown with the answer.", openList: true, group: {"claimMax":1,"perOption":3,"options":["use more insulation / wrap in cotton wool — gives more accurate temperature rise (change) / stops (reduces) heat loss to surroundings / more accurate result for heat produced in cup","use polystyrene (plastic) cup — gives more accurate temperature rise (change) / stops (reduces) heat loss to surroundings / more accurate result for heat produced in cup / better insulation than cardboard","acid and base 3 K below room temperature initially — heat gain from surroundings and heat lost to surroundings cancel / gives more accurate temperature rise (change) / more accurate result for heat produced in cup","use greater volumes of acid and base — smaller error in total mass / gives more accurate temperature rise (change) / greater temperature rise (change) / more accurate result for heat produced in cup","use acid and base with greater concentrations — greater temperature rise (change) / more accurate result for temperature (heat produced) in cup","use specific heat capacity of solution in calculations — more accurate result for heat produced in cup","allow for specific heat capacity of material of container — more accurate result for heat produced in cup","repeat several times and average — result statistically more accurate / more accurate result for heat produced in cup / gives more accurate temperature rise (change)","measure volumes with pipette (burette)* assuming the readings given are read correct to 1 cm³ — reduce error in volumes to 0.1 cm³","use thermometer** with low heat capacity / allow for specific heat capacity of material of thermometer — gives more accurate temperature rise (change) / gives more accurate highest temperature / more accurate result for heat produced in cup","use more sensitive (accurate) thermometer — more accurate result for temperature (heat produced) in cup / more accurate result for heat produced in cup","graph temperature fall after mixing versus time and extrapolate to get temperature at time of mixing — gives more accurate temperature rise (highest temperature) / more accurate result for heat produced in cup"]} },
     ],
+    questionFigure: {
+          "candId": "chemistry-2018-HL-paper-q3e-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2018-HL-paper-q3e-print.png",
+          "srcHash": "179969d00e0b018d81bb02b4ce2c4fdc",
+          "alt": "The paper's own print of 2018 HL Q3(e): \"3. The cardboard cup with plastic lid in the diagram contained 150 cm³ of 1.0 M hydrochloric acid solution at room temperature. A volume of 160 cm³ of 1.0 M sodium hydroxide solution – also at room temperature – was added quickly and the mixture was stirred. The temperature of the mixture rose rapidly by 6.4 K and then began to fall gradually.\" and \"The equation for the neutralisation reaction that took place is:\" over \"HCl (aq) + NaOH (aq) → NaCl (aq) + H₂O (l)\", the formulae in bold and the state symbols small and in italics; on the right, a photograph of a dark cardboard cup printed with a white steaming-cup design, a white plastic lid on it, and a thermometer standing up through the lid; then \"(e) The result obtained in this experiment was about 3% below the expected value. State and explain a modification to the method described that would give a more accurate result.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2018 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2018-HL-scheme-q3e",
           "src": "/exam-figures/chemistry/markbank/chemistry-2018-HL-scheme-q3e.png",
@@ -22698,7 +22720,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2016 Higher Level — © State Examinations Commission.",
     id: "chem-2016-hl-q2-b-ii", topicId: "chem-4-2", conceptId: "eugenol-and-ethanoic-acid-with-water-and-cyclohexane",
     section: "A", questionRef: "2016 HL Q2(b)(ii)",
-    stem: "The two test-tubes on the left in the diagram contain pure samples of A and B, different gaseous hydrocarbons, one of which is unsaturated. The pure liquids C, D and E in the other test-tubes are samples of ethanal, ethanoic acid and eugenol, but not necessarily in that order. The crystalline solids F and G are two different benzoic acid samples.",
+    stem: "The pure liquids C, D and E in the other test-tubes are samples of ethanal, ethanoic acid and eugenol, but not necessarily in that order. The crystalline solids F and G are two different benzoic acid samples.",
     questionText: "Some water was added to liquids C and E and the test-tubes were stoppered and shaken vigorously. After the test-tubes were allowed to stand, a white emulsion was observed in the test-tube containing C and a colourless solution in the test-tube containing E. Identify C and E. A small volume of cyclohexane was then added to the test-tube containing C. The test-tube was stoppered and again shaken vigorously and the stopper loosened. What was observed after the test-tube was again allowed to stand?",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -22813,7 +22835,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2016 Higher Level — © State Examinations Commission.",
     id: "chem-2016-hl-q3-a", topicId: "chem-u2", conceptId: "apparatus-for-collecting-oxygen-from-hydrogen-peroxide",
     section: "A", questionRef: "2016 HL Q3(a)",
-    stem: "In an investigation into the decomposition of a hydrogen peroxide solution, using a manganese(IV) oxide catalyst, the volume of oxygen produced was monitored with time. Two runs were conducted under the same conditions of temperature and pressure, using the same initial volume of the same hydrogen peroxide solution, and the same mass of catalyst from two different suppliers, A and B. The volumes of oxygen collected at a set of times common to both runs are recorded in the table below.",
+    stem: "In an investigation into the decomposition of a hydrogen peroxide solution, using a manganese(IV) oxide catalyst, the volume of oxygen produced was monitored with time. Two runs were conducted under the same conditions of temperature and pressure, using the same initial volume of the same hydrogen peroxide solution, and the same mass of catalyst from two different suppliers, A and B.",
     questionText: "Draw a labelled diagram of an apparatus that could have been used in either run of this investigation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -22877,6 +22899,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "8.2 – 9.5 cm³ oxygen per minute", marks: 6, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. The scheme works it from any two points on a tangent drawn at 4 minutes on curve A, and adds: [Deduct 1 mark if tangent correctly drawn at 4 minutes on curve B.]", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2016-HL-paper-q3c-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2016-HL-paper-q3c-print.png",
+          "srcHash": "cce1aba37c3fab5f5fe6c548391c51a3",
+          "alt": "The paper's own print of 2016 HL Q3(c): \"In an investigation into the decomposition of a hydrogen peroxide solution, using a manganese(IV) oxide catalyst, the volume of oxygen produced was monitored with time. Two runs were conducted under the same conditions of temperature and pressure, using the same initial volume of the same hydrogen peroxide solution, and the same mass of catalyst from two different suppliers, A and B. The volumes of oxygen collected at a set of times common to both runs are recorded in the table below.\"; a table: \"Time (minutes)\" 0.0, 1.0, 2.0, 3.0, 5.0, 6.5, 8.0, 9.5, 11.0, 12.0; \"Run A\", \"Volume (cm³)\" 0, 25, 41, 54, 72, 78, 81, 82, 82, 82; \"Run B\", \"Volume (cm³)\" 0, 16, 28, 39, 57, 68, 76, 80, 82, 82; then \"(c) Calculate the instantaneous rate of reaction (in cm³ O₂ per minute) for run A at 4.0 minutes.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2016 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2016-HL-scheme-q3c",
           "src": "/exam-figures/chemistry/markbank/chemistry-2016-HL-scheme-q3c.png",
@@ -24733,6 +24763,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "anyN", verbatim: "0.026 × 122** = 3.172 g", marks: 3, contextNote: "The third step of the route used, (3): the theoretical mass of benzoic acid, or (the second route) the moles of benzoic acid obtained. The scheme prints 1.83 over 122∗∗ as a fraction; ÷ stands for its bar.", openList: true, group: {"claimMax":1,"perOption":3,"options":["0.026 × 122** = 3.172 g","1.83 ÷ 122∗∗ = 0.015 moles"]} },
     { id: "r-4", kind: "anyN", verbatim: "1.83 ÷ 3.172 × 100 = 58% [57.69 – 58%]", marks: 3, contextNote: "And the last step of that same route, (3). The scheme prints 1.83 over 3.172, and 0.015 over 0.026, as fractions; ÷ stands for each bar. It adds: [*Addition must be shown for error to be treated as slip.] [**Addition must be shown for error to be treated as slip.] [1 mark to be deducted for incorrect rounding off resulting in candidate’s final numerical answer lying outside given values or given range but deduction to be made once only.]", openList: true, group: {"claimMax":1,"perOption":3,"options":["1.83 ÷ 3.172 × 100 = 58% [57.69 – 58%]","0.015 ÷ 0.026 × 100 = 58% [57.69 – 58%]"]} },
     ],
+    questionFigure: {
+          "candId": "chemistry-2015-HL-paper-q2d-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2015-HL-paper-q2d-print.png",
+          "srcHash": "e7504bfead0381675bb9c2059bccb0a6",
+          "alt": "The paper's own print of 2015 HL Q2(d): \"One molecule of phenylmethanol (benzyl alcohol) can be oxidised to one molecule of benzoic acid by potassium manganate(VII) in basic conditions as shown in the reaction scheme below.\"; then a boxed reaction scheme. Top row: a benzene ring bonded to a C carrying two H atoms and an O–H, an arrow labelled \"MnO₄⁻ / base\" to a benzene ring bonded to a C that is double-bonded to O and bonded to O⁻, with \"Na⁺\". Middle row: the same sodium salt, an arrow labelled \"A\" to a benzene ring bonded to a C that is double-bonded to O and bonded to \"OH\". Bottom: \"MnO₄⁻\" with an arrow to \"MnO₂\", and \"MnO₂\" with an arrow labelled \"B\" to \"Mn²⁺\". Then \"(d) A student oxidised 2.7 cm³ of phenylmethanol (density 1.04 g cm⁻³) and obtained 1.83 g of benzoic acid after recrystallisation. Assuming that phenylmethanol was the limiting reactant, calculate the percentage yield of benzoic acid.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2015 Higher Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2015-HL-scheme-q2d",
           "src": "/exam-figures/chemistry/markbank/chemistry-2015-HL-scheme-q2d.png",
@@ -28356,7 +28394,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2013 Higher Level — © State Examinations Commission.",
     id: "chem-2013-hl-q1-f", topicId: "chem-4-1", conceptId: "iodine-concentration-from-the-thiosulfate-titre",
     section: "A", questionRef: "2013 HL Q1(f)",
-    stem: "In an experiment to measure the dissolved oxygen content of a river water sample, a small amount of a concentrated solution of compound A, followed by a small amount of a concentrated solution of alkaline potassium iodide (KOH/KI), were added to a bottle filled with the river water. These additions were made using the method shown in the diagram, avoiding the addition of bubbles of air. After both additions the stopper was replaced carefully and the bottle was inverted several times to ensure thorough mixing of the contents. A brown precipitate was observed at this stage. About 1 cm³ of concentrated sulfuric acid (H₂SO₄) was then added, allowing the acid to run down the inside wall of the bottle. Again the bottle was stoppered and inverted several times to ensure thorough mixing. After the three additions, the thoroughly mixed contents of the sample bottle were titrated in 200 cm³ portions with a 0.02 M solution of sodium thiosulfate (Na₂S₂O₃). The average titre was 9.4 cm³. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
+    stem: "In an experiment to measure the dissolved oxygen content of a river water sample, a small amount of a concentrated solution of compound A, followed by a small amount of a concentrated solution of alkaline potassium iodide (KOH/KI), were added to a bottle filled with the river water. After both additions the stopper was replaced carefully and the bottle was inverted several times to ensure thorough mixing of the contents. A brown precipitate was observed at this stage. About 1 cm³ of concentrated sulfuric acid (H₂SO₄) was then added, allowing the acid to run down the inside wall of the bottle. Again the bottle was stoppered and inverted several times to ensure thorough mixing. After the three additions, the thoroughly mixed contents of the sample bottle were titrated in 200 cm³ portions with a 0.02 M solution of sodium thiosulfate (Na₂S₂O₃). The average titre was 9.4 cm³. The balanced equation for the titration reaction is: 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻",
     questionText: "Calculate the concentration of iodine (I₂) in the sample bottle in moles per litre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -30418,7 +30456,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2012 Higher Level — © State Examinations Commission.",
     id: "chem-2012-hl-q3-d", topicId: "chem-2-3", conceptId: "moles-and-relative-molecular-mass-of-the-vapour",
     section: "A", questionRef: "2012 HL Q3(d)",
-    stem: "The relative molecular mass of a volatile liquid can be found by means of a procedure involving the use of either apparatus A or apparatus B shown below.",
     questionText: "The vapour of 0.63 g of a pure liquid occupies a volume of 330 cm³ at a temperature of 100 °C and at a pressure of 101 kPa. Calculate the number of moles of vapour and hence calculate the relative molecular mass of the volatile liquid.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [

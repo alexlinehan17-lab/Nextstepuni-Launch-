@@ -10486,6 +10486,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.09 moles per litre", marks: 9, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2020-OL-paper-q2d-iv-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2020-OL-paper-q2d-iv-print.png",
+          "srcHash": "6251db39eee53e99a12f3aca8fccd2c6",
+          "alt": "The paper's own print of 2020 OL Q2(d)(iv): \"2. To prepare a litre of 0.05 M sodium carbonate solution, a student measured accurately a certain mass of solid anhydrous sodium carbonate (Na₂CO₃) in a plastic weighing boat A like that shown in the photograph. The student then dissolved the solid in deionised water in a beaker, transferred this solution to flask B, shown in the diagram, and made the solution in B carefully up to the mark with deionised water. B was then stoppered and inverted several times.\", with, on the right, a photograph of a white plastic weighing boat with a little powder in it, labelled \"A\", and below it a drawing of a stoppered flask with a long narrow neck and a round base, labelled \"B\"; then \"The student then used the sodium carbonate solution in flask B to find the concentration of a hydrochloric acid (HCl) solution by titration.\" and \"One rough titration and three further titrations were carried out. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask using a pipette. A suitable indicator was added and then just enough of the hydrochloric acid solution was added to the conical flask to neutralise the sodium carbonate.\"; then \"The equation for the titration reaction is:\" over \"2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂\" in bold, and \"The table below shows the titration results, i.e. the volumes of HCl solution added.\" over a table: \"Titration 1 (Rough Titration)\" 28.3 cm³, \"Titration 2\" 27.7 cm³, \"Titration 3\" 28.1 cm³, \"Titration 4\" 27.8 cm³; then \"(iv) Calculate, in moles per litre, the concentration of the HCl solution.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2020 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2020-OL-scheme-q2d-iv",
           "src": "/exam-figures/chemistry/markbank/chemistry-2020-OL-scheme-q2d-iv.png",
@@ -16812,7 +16820,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2017 Ordinary Level — © State Examinations Commission.",
     id: "chem-2017-ol-q6-c-another-alkane", topicId: "chem-2-4", conceptId: "another-alkane-and-its-structure",
     section: "B", questionRef: "2017 OL Q6(c) — another member and its structure",
-    stem: "The diagram shows a butane (C₄H₁₀) gas lighter being used to ignite methane (CH₄) gas in a Bunsen burner. To which homologous series do both methane and butane belong?",
+    stem: "To which homologous series do both methane and butane belong?",
     questionText: "Name one other member of this series and draw the structure of one of its molecules.",
     tariffModel: {"kind":"orderedSplit","notation":"[6 + 3]"}, totalMarks: 9,
     rows: [
@@ -16952,7 +16960,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2017 Ordinary Level — © State Examinations Commission.",
     id: "chem-2017-ol-q8-a", topicId: "chem-4-2", conceptId: "structure-and-solubility-of-ethanol",
     section: "B", questionRef: "2017 OL Q8(a)",
-    stem: "Ethanol is broken down in the human body as shown in the scheme on the right.",
     questionText: "Draw the structure of an ethanol molecule. Circle its functional group. Explain why ethanol is very soluble in water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 17,
     rows: [
@@ -18653,7 +18660,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2016 Ordinary Level — © State Examinations Commission.",
     id: "chem-2016-ol-q6-b-ii", topicId: "chem-2-4", conceptId: "structural-formula-of-propane-or-butane",
     section: "B", questionRef: "2016 OL Q6(b)(ii)",
-    stem: "In an oil refinery a fractionating column like that shown separates crude oil into different useful hydrocarbon fractions. Liquid petroleum gas (LPG) is obtained from refinery gas.",
+    stem: "Liquid petroleum gas (LPG) is obtained from refinery gas.",
     questionText: "Draw the structural formula of one of these compounds.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -19422,7 +19429,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2016 Ordinary Level — © State Examinations Commission.",
     id: "chem-2016-ol-q11-b-iii", topicId: "chem-1-4", conceptId: "moles-of-iron-and-of-iron-oxide",
     section: "B", questionRef: "2016 OL Q11(b)(iii)",
-    stem: "The type of disposable hand warmer shown uses a chemical reaction of iron to generate heat. When the outer packaging is removed, oxygen from the air enters the porous inner pouch and reacts rapidly with the iron powder inside according to the following balanced equation: 4Fe + 3O₂ → 2Fe₂O₃",
+    stem: "When the outer packaging is removed, oxygen from the air enters the porous inner pouch and reacts rapidly with the iron powder inside according to the following balanced equation: 4Fe + 3O₂ → 2Fe₂O₃",
     questionText: "If a pouch contains 28 g of iron, how many moles of iron are present? How many moles of iron oxide (Fe₂O₃) are produced when all of the iron in this pouch reacts?",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
@@ -24338,6 +24345,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "dropping funnel and buchner", marks: 12, contextNote: "The scheme adds: [Absence of diagram lose 3 marks] Any three of these, the first (6), the others (3): the scheme lists four points and prices them \"ANY THREE: (6 + 2 × 3)\".", openList: true, group: {"claimMax":3,"perOption":6,"options":["dropping funnel and buchner","collection over water","calcium(II) dicarbide / calcium dicarbide / calcium carbide / CaC₂ in flask","water in funnel"],"perOptionSteps":[6,3,3]} },
     ],
+    questionFigure: {
+          "candId": "chemistry-2012-OL-paper-q1d-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2012-OL-paper-q1d-print.png",
+          "srcHash": "e16e66e02c3442ff60f039fd064efa62",
+          "alt": "The paper's own print of 2012 OL Q1(d): \"(d) Draw a labelled diagram for the preparation and collection of ethyne gas in the school laboratory. Indicate clearly on the diagram the names or formulas of the substances used in the preparation.\", \"or\" in italics.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2012 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2012-OL-scheme-q1d",
           "src": "/exam-figures/chemistry/markbank/chemistry-2012-OL-scheme-q1d.png",
@@ -24599,6 +24614,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.2 moles", marks: 9, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2012-OL-paper-q3d-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2012-OL-paper-q3d-i-print.png",
+          "srcHash": "b9973200a619d7f5d245b3c36053c26f",
+          "alt": "The paper's own print of 2012 OL Q3(d)(i): \"In an experiment to measure the heat of reaction (ΔH) for the reaction between hydrochloric acid (HCl) and sodium hydroxide (NaOH), 100 cm³ of 2M HCl were added to 100 cm³ of 2M NaOH in the apparatus shown in the diagram. The rise in temperature was noted and the heat produced was found to be 11.4 kJ. The equation for the reaction is:\", with \"heat of reaction\" underlined, then \"HCl + NaOH → NaCl + H₂O\" in bold; below them the apparatus: a thermometer standing in a polystyrene cup with a lid, the cup holding a liquid, with arrows from the labels \"thermometer\", \"cover\", \"polystyrene cup\" and \"reaction mixture\"; then \"(d) Calculate:\" and \"(i) the number of moles of HCl in 100 cm³ of 2M HCl,\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2012 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2012-OL-scheme-q3d-i",
           "src": "/exam-figures/chemistry/markbank/chemistry-2012-OL-scheme-q3d-i.png",
@@ -24622,6 +24645,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "57 kJ mol⁻¹", marks: 6, contextNote: "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer.", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2012-OL-paper-q3d-ii-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2012-OL-paper-q3d-ii-print.png",
+          "srcHash": "13ca6d1015c20087b88ed9c473160d99",
+          "alt": "The paper's own print of 2012 OL Q3(d)(ii): \"In an experiment to measure the heat of reaction (ΔH) for the reaction between hydrochloric acid (HCl) and sodium hydroxide (NaOH), 100 cm³ of 2M HCl were added to 100 cm³ of 2M NaOH in the apparatus shown in the diagram. The rise in temperature was noted and the heat produced was found to be 11.4 kJ. The equation for the reaction is:\", with \"heat of reaction\" underlined, then \"HCl + NaOH → NaCl + H₂O\" in bold; below them the apparatus: a thermometer standing in a polystyrene cup with a lid, the cup holding a liquid, with arrows from the labels \"thermometer\", \"cover\", \"polystyrene cup\" and \"reaction mixture\"; then \"(d) Calculate:\" and \"(ii) how many kilojoules of heat would be produced if 1 mole of HCl reacted fully with NaOH.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2012 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2012-OL-scheme-q3d-ii",
           "src": "/exam-figures/chemistry/markbank/chemistry-2012-OL-scheme-q3d-ii.png",
@@ -26075,7 +26106,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2011 Ordinary Level — © State Examinations Commission.",
     id: "chem-2011-ol-q2-f", topicId: "chem-4-1", conceptId: "indicator-and-colour-change-for-a-titration",
     section: "A", questionRef: "2011 OL Q2(f)",
-    stem: "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution. Some of the pieces of equipment used are shown on the right.",
+    stem: "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution.",
     questionText: "Name a suitable indicator for this titration. State the colour change at the end point.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -26122,7 +26153,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2011 Ordinary Level — © State Examinations Commission.",
     id: "chem-2011-ol-q2-h", topicId: "chem-4-1", conceptId: "concentration-of-hydrochloric-acid-in-moles-per-litre",
     section: "A", questionRef: "2011 OL Q2(h)",
-    stem: "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution. Some of the pieces of equipment used are shown on the right.",
+    stem: "A 0.05 M standard solution of sodium carbonate was made up by weighing out x grams of anhydrous sodium carbonate (Na₂CO₃), dissolving it in deionised water, and making the solution carefully up to the mark in a suitable 1 litre flask. This solution was then used to find, by titration, the concentration of a given hydrochloric acid (HCl) solution.",
     questionText: "A number of accurate titrations were carried out. The balanced equation for the titration reaction is: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂ It was found that, on average, 25.0 cm³ of the 0.05 M sodium carbonate (Na₂CO₃) solution were neutralised by 22.7 cm³ of the hydrochloric acid (HCl) solution. Calculate the concentration of the hydrochloric acid solution in moles per litre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [

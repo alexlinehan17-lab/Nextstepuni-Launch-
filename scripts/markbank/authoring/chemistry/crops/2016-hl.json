@@ -3,6 +3,7 @@
  ["paper-q3-table", "paper", 4, [83, 149, 519, 236]],
  ["paper-q3e", "paper", 4, [192, 538, 444, 660]],
  ["paper-q3b-print", "paper-panels", 4, [[80, 52, 545, 236], [80, 300, 516, 333]]],
+ ["paper-q3c-print", "paper-panels", 4, [[80, 52, 545, 236], [80, 340, 516, 375]]],
  ["paper-q4g", "paper", 5, [404, 370, 542, 458]],
  ["paper-q4j", "paper-image", 5, [228, 512, 422, 640]],
  ["paper-q5a", "paper", 6, [212, 92, 402, 245]],

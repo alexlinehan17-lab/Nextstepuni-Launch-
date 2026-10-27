@@ -1,6 +1,6 @@
 [
  {"id": "chem-2012-ol-q1-a", "ask": "Identify: (i) liquid X, (ii) solid Y.", "answer": "aluminium oxide / alumina / Al₂O₃", "figure": true},
- {"id": "chem-2012-ol-q1-d", "ask": "Draw a labelled diagram for the preparation and collection of ethyne gas", "answer": "water in funnel", "solution": true},
+ {"id": "chem-2012-ol-q1-d", "ask": "", "answer": "water in funnel", "figure": true, "solution": true},
  {"id": "chem-2012-ol-q2-e", "ask": "Name a suitable indicator for this titration", "answer": "phenolphthalein", "solution": true},
  {"id": "chem-2012-ol-q2-f", "ask": "Calculate the concentration of the sodium hydroxide solution", "answer": "0.064 moles per litre", "solution": true},
  {"id": "chem-2012-ol-q3-a", "ask": "", "answer": "react(s) completely / neutralise(s) completely", "figure": true},

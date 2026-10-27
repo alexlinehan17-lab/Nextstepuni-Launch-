@@ -232,13 +232,20 @@ _series = cut(P.ask(k('6', 'c')), None, 'Name one other')
 _member = cut(P.ask(k('6', 'c')), 'Name one other')
 C.add([k('6', 'c')], 'chem-2-4', 'homologous-series-of-methane-and-butane', [
     C.lifted('r-1', _q6c[0].text, 6)], qtext=_series, figure=Q6)
+# This card's only figure is the scheme's drawing, held back until the reveal, so the question's
+# opening sentence "The diagram shows a butane (C4H10) gas lighter ..." would point at nothing.
+# Nothing in it depends on the diagram: "this series" is the one the series sentence names, and
+# that sentence names methane and butane itself. The opening sentence is left out of its stem.
+_lead6 = C.context(k('6', 'c'))
+assert _lead6 == 'The diagram shows a butane (C₄H₁₀) gas lighter being used to ignite methane (CH₄) gas in a ' \
+    'Bunsen burner.', _lead6
 C.add([k('6', 'c')], 'chem-2-4', 'another-alkane-and-its-structure', [
     C.lifted('r-1', _q6c_pts[0], None, 'For "Name one other member of this series".'),
     C.lifted('r-2', _q6c_pts[1], None, 'For "draw the structure of one of its molecules". The scheme draws the '
              'structures too; its own print is shown with the answer. The scheme adds: '
              + traced(_q6c[2].text))],
     kind='orderedSplit', notation='[6 + 3]', total=9, notes=SPLIT.format('[6 + 3]'), figure=S + 'q6c',
-    qtext=_member, stem=C.context(k('6', 'c')) + ' ' + _series, cid='q6-c-another-alkane',
+    qtext=_member, stem=_series, cid='q6-c-another-alkane',
     ref_suffix='another member and its structure')
 C.fixed([k('6', 'd')], 'chem-2-4', 'fractional-distillation-of-crude-oil', figure=Q6)
 # (e): the definition (6), then "ANY ONE: (6)" of the ways to raise the octane
@@ -316,10 +323,16 @@ assert [(it.cell, it.text) for it in _q8a][:2] == [('[5]', ''), ('[6]', 'circle 
 assert [it.cell for it in _q8a] == ['[5]', '[6]', '[6]', None], _q8a
 _q8a_ask = P.ask(k('8', 'a'))
 _draw8 = cut(_q8a_ask, None, 'Circle its')
+# Its only figure is the scheme's drawing, held back until the reveal, so the question's
+# lead-in "... as shown in the scheme on the right." would point at nothing. Nothing in (a)
+# depends on the reaction scheme: it asks for ethanol's structure, its functional group and why
+# it dissolves in water. The lead-in is left out of this card's stem.
+assert C.context(k('8', 'a')) == 'Ethanol is broken down in the human body as shown in the scheme on the right.', \
+    C.context(k('8', 'a'))
 C.add([k('8', 'a')], 'chem-4-2', 'structure-and-solubility-of-ethanol', [
     C.mark_ask(point('r-1', _draw8, 5, DRAWN + ' ' + adds(_q8a[0].asides))),
     C.lifted('r-2', _q8a[1].text, 6, adds(_q8a[1].asides)),
-    C.lifted('r-3', _q8a[2].text, 6, 'The scheme adds: ' + traced(_q8a[3].text))], figure=S + 'q8a')
+    C.lifted('r-3', _q8a[2].text, 6, 'The scheme adds: ' + traced(_q8a[3].text))], figure=S + 'q8a', stem='')
 C.fixed([k('8', 'b')], 'chem-4-2', 'homologous-series-of-ethanal', figure=Q8)
 assert cells(k('8', 'c', 'iii')) == ['[6 + 6 + 3]'], P.items(k('8', 'c', 'iii'))
 C.ordered([k('8', 'c', r) for r in ('i', 'ii', 'iii')], 'chem-4-2', 'ethanol-ethanal-and-ethanoic-acid',

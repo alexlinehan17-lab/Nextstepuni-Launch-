@@ -198,6 +198,11 @@ MASKS = {
     # 2020 OL Q1(a): the test tube stands beside the end of "through", the question's mark "(17)" and
     # the words "distinctive flame." of (b)'s lead-in.
     'chemistry-2020-OL-paper-q1a.png': [(0, 249, 28, 278), (104, 323, 149, 351), (0, 385, 132, 413)],
+    # 2020 OL Q2(d)(iv): the print's first panel runs from the question's opening paragraph to the
+    # paragraph before (b), so that the photograph and the flask stand beside them as printed; (a)'s
+    # two asks and its mark "(14)" between them (paper page 3, x 85-428, y 191-238; dark pixels
+    # 71-776 x 285-380) are whited out. The flask's own pixels in those rows start at column 903.
+    'chemistry-2020-OL-paper-q2d-iv-print.png': [(60, 270, 800, 400)],
     # 2019 OL Q6(e): the print of (e) starts at the top of its apparatus, level with the foot of
     # (d)(ii)'s line "(ii) is carcinogenic? (9)", and holds (e)'s mark "(9)"; both whited out.
     'chemistry-2019-OL-paper-q6e-print.png': [(60, 0, 668, 23), (630, 191, 669, 218)],
@@ -219,6 +224,14 @@ MASKS = {
     # the line above ("temperature", dark to x 912, y 280-299); whited out (dark pixels at 917-931
     # x 310-332, the panel's right edge cutting the mark after "(1").
     'chemistry-2018-HL-paper-q9d-print.png': [(914, 304, 932, 337)],
+    # 2018 HL Q3(d)(ii), (d)(iii) and (e): each print's first panel is the question's lead-in and
+    # equation with the photograph of the cup beside them, down to the photograph's foot (paper page
+    # 4, y 412), so (a), (b) and (c)(i), printed beside the photograph's lower half, are whited out
+    # with their marks "(5)" and "(9)" (x 85-435, y 221-418; dark pixels 70-790 x 353-750 of each
+    # print). The equation's pixels end at row 314; the photograph's start at column 824.
+    'chemistry-2018-HL-paper-q3d-ii-print.png': [(60, 340, 810, 751)],
+    'chemistry-2018-HL-paper-q3d-iii-print.png': [(60, 340, 810, 751)],
+    'chemistry-2018-HL-paper-q3e-print.png': [(60, 340, 810, 751)],
     # 2017 HL Q7(c): the part's mark "(18)" prints at the end of its last line ("gases at
     # temperature T.", paper page 7, y 623), under the end of the line above ("of the", dark to
     # x 909); whited out (dark pixels at 917-953 x 261-281 of the stacked print).
