@@ -177,6 +177,16 @@ subject-specific generators.
   row's note, becomes a printed step on a fixed-tariff point row, and a full
   answer the SEC wrapped onto a second line is joined back from the note
   (`it_scheme.py` joins it at the source now too).
+  Applied Mathematics cards price their solution in "Published step N"
+  allocations beside a crop of the whole solution; `am_steps.py` cuts each
+  step's own lines from the scheme page (the band from the step before it to
+  its margin mark — "5" in the margin on the 2010–2017 schemes, "(5)" right
+  of the working from 2018) and writes the crop region into the allocation
+  (`reviewed.json`), so the step shows its content; the equation-editor text
+  layer is fragments, never words, so nothing is transcribed. A card whose
+  margin marks do not match its steps in number and value keeps the whole
+  crop and is listed with its reason in
+  `authored/applied-maths-steps-residue.json`.
   Business rubric cards carry the responses the scheme prints for their part
   as `rubric.expected` rows (`bus_expected.py`): the lifter reads the card's
   cited "Possible Responses" / "Support Notes" pages, cuts the block at the

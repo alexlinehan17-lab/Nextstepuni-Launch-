@@ -647,6 +647,44 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "name",
+                "verbatim": "Name",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "sketch-and-note",
+                "verbatim": "sketch and note",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "typical-dimensions",
+                "verbatim": "typical dimensions",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -1029,6 +1067,44 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "name",
+                "verbatim": "Name",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "sketch-and-note",
+                "verbatim": "sketch and note",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "typical-dimensions",
+                "verbatim": "typical dimensions",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -8641,8 +8717,11 @@
     {
       "cardId": "cons-2011-hl-q2-complete",
       "priorSha256": "0e52c122543af07f588aa25e9ea1bd03bc8d2cf49c1a4afc0d428af2e72285aa",
-      "correctedSha256": "7607dc715073e39ab65a32ef01e1e2b5f76e21a334ba9fe4a1cda9239682ed4e",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "acc957cf586bc743b8484fb32e513062e60bf516417189ec3e96de9567920601",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "7607dc715073e39ab65a32ef01e1e2b5f76e21a334ba9fe4a1cda9239682ed4e"
+      ]
     },
     {
       "cardId": "cons-2011-hl-q3-a",
@@ -8690,6 +8769,12 @@
       "cardId": "cons-2011-hl-q10-complete",
       "priorSha256": "0845099de4b52f76f283861c7ce61e71279eabaef7908f58cca687d7bb280280",
       "correctedSha256": "bc1b5bdcaf9c90acd70bfbedb8389d1b9cce17ceac23b952c182db76e961a56b",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2011-hl-q2-b",
+      "priorSha256": "ed0207c23d3318195ea7293dcbf36ac6b7154c54cdf87e391631a7be9395d6db",
+      "correctedSha256": "1e2d0d3b8ba8ecbc33aed656c85bef1d0749bfc7ac572b2359154321da9b5ea7",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
     }
   ]

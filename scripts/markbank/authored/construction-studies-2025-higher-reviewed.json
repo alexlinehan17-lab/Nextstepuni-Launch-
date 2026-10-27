@@ -3533,6 +3533,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "advantage-1",
+                "verbatim": "Advantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "disadvantage-1",
+                "verbatim": "disadvantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3549,6 +3573,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "advantage-1",
+                "verbatim": "Advantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "disadvantage-1",
+                "verbatim": "disadvantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -3834,6 +3882,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "advantage-1",
+                "verbatim": "Advantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "disadvantage-1",
+                "verbatim": "disadvantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3850,6 +3922,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "advantage-1",
+                "verbatim": "Advantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "disadvantage-1",
+                "verbatim": "disadvantage 1",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -7185,6 +7281,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "distribution-board",
+                "verbatim": "distribution board",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "annotated",
+                "verbatim": "annotated",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -7200,6 +7319,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "single-switch",
+                "verbatim": "single switch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "annotated",
+                "verbatim": "annotated",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -7215,6 +7357,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "light-points",
+                "verbatim": "light points",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "annotated",
+                "verbatim": "annotated",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -7698,6 +7863,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "distribution-board",
+                "verbatim": "distribution board",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "annotated",
+                "verbatim": "annotated",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -7713,6 +7901,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "single-switch",
+                "verbatim": "single switch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "annotated",
+                "verbatim": "annotated",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -7728,6 +7939,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "light-points",
+                "verbatim": "light points",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "annotated",
+                "verbatim": "annotated",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -11155,14 +11389,15 @@
     {
       "cardId": "cons-2025-hl-q9-a",
       "priorSha256": "78fe47cfebc3794de948d7519e601d1d1fcc21f0dda44c8d594abda6dfe10f15",
-      "correctedSha256": "431a40be007e8ed3a3f6097c59b31bc0fa055c1e75a9d7fbe09bdfd1e0341f80",
+      "correctedSha256": "d29c3c7d4c6c60117396774b19cbe0a78e228a14335804713a9dacc188f57002",
       "priorTotalMarks": 30,
       "correctedTotalMarks": 34,
       "priorTopicId": "cons-5-8",
       "correctedTopicId": "cons-5-8",
       "reason": "Adds the cable size (1) and colour (3) row printed in the table: 30 → 34; the six drawn items keep 5 each.",
       "supersededSha256": [
-        "4d36e012225fb1f10761bcf5e9933fff719fbbd5f91f1646dcabd97115d59b1c"
+        "4d36e012225fb1f10761bcf5e9933fff719fbbd5f91f1646dcabd97115d59b1c",
+        "431a40be007e8ed3a3f6097c59b31bc0fa055c1e75a9d7fbe09bdfd1e0341f80"
       ]
     },
     {
@@ -11756,10 +11991,11 @@
     {
       "cardId": "cons-2025-hl-q9-complete",
       "priorSha256": "26a49e722d96e19d7d6d2069a0e9b761ca09695d534e30080b006829a6c3340e",
-      "correctedSha256": "39d5870f560d1676b992ab56702ef5427247993d5d91cf3cad851dcebc341e0c",
+      "correctedSha256": "1880bfc8e39b4573054de2a6319822d77e307f56a30ae3976bfcae8b2bf066b9",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
       "supersededSha256": [
-        "748124e5887ba1fccaf6189307a5185e65c1003e37661c3e2ffcd09f116a1c71"
+        "748124e5887ba1fccaf6189307a5185e65c1003e37661c3e2ffcd09f116a1c71",
+        "39d5870f560d1676b992ab56702ef5427247993d5d91cf3cad851dcebc341e0c"
       ]
     },
     {
@@ -11783,8 +12019,11 @@
     {
       "cardId": "cons-2025-hl-q4-complete",
       "priorSha256": "94033407254bf9fb1c6f39d637f348c8b79acb9afad6f85dd98a38927e44b017",
-      "correctedSha256": "0cae7c73e9fa11ff2a004cddcd3abb535d7f23e388ee0f9092694318f0331823",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "a5cd11ace226b006c9823465871d2bbe0cc1a3f14762203a7a3c62da34578ed7",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "0cae7c73e9fa11ff2a004cddcd3abb535d7f23e388ee0f9092694318f0331823"
+      ]
     },
     {
       "cardId": "cons-2025-hl-q6-a",
@@ -11796,6 +12035,12 @@
       "cardId": "cons-2025-hl-q9-b",
       "priorSha256": "b2e2fa2b9ca84c1f4d05a0266a798ce33d2e9e4be3cd65fe7027bac69deee21f",
       "correctedSha256": "c4bed9486d2569b6aee83db1b8abae6eb870898ddc4b4e19906e3e56bb0c42e9",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2025-hl-q4-c",
+      "priorSha256": "8752f45440295813274c18662175520e9209a57ad14db7505700640a0802e733",
+      "correctedSha256": "9160bbb927676891b469f4d53c0258b35a9853caa182e8fe4170fae124feea04",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
     }
   ]

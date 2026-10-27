@@ -46,7 +46,7 @@
   },
   "applied-maths": {
     "cards": 1486,
-    "contentHash": "bc780565ef245c6e",
+    "contentHash": "efa758bdbbd41db4",
     "coveragePct": 100.0,
     "covered": 1486,
     "excluded": 0,
@@ -154,7 +154,7 @@
   },
   "classical-studies": {
     "cards": 516,
-    "contentHash": "b250413da7390841",
+    "contentHash": "5329cf932e3d9e7c",
     "coveragePct": 100.0,
     "covered": 525,
     "excluded": 115,
@@ -184,7 +184,7 @@
   },
   "construction-studies": {
     "cards": 1261,
-    "contentHash": "28a676c9c75243b9",
+    "contentHash": "2b13a68d3c21ded1",
     "coveragePct": 100.0,
     "covered": 845,
     "excluded": 0,
@@ -244,7 +244,7 @@
   },
   "dcg": {
     "cards": 545,
-    "contentHash": "330a87ec1f7a8dc2",
+    "contentHash": "36de9f64f1b6b8b9",
     "coveragePct": 100.0,
     "covered": 478,
     "excluded": 0,
@@ -274,7 +274,7 @@
   },
   "economics": {
     "cards": 853,
-    "contentHash": "647ee54911f64391",
+    "contentHash": "71508a355e28403e",
     "coveragePct": 100.0,
     "covered": 792,
     "excluded": 1,
@@ -349,7 +349,7 @@
   },
   "french": {
     "cards": 2120,
-    "contentHash": "b4795dc534fa12ae",
+    "contentHash": "cb31f9d606064fb4",
     "coveragePct": 100.0,
     "covered": 1876,
     "excluded": 0,
@@ -379,7 +379,7 @@
   },
   "german": {
     "cards": 264,
-    "contentHash": "4774172e3a845918",
+    "contentHash": "4cfabcd723419e57",
     "coveragePct": 100.0,
     "covered": 264,
     "excluded": 276,
@@ -394,7 +394,7 @@
   },
   "history": {
     "cards": 749,
-    "contentHash": "901dd2aaeefddd91",
+    "contentHash": "5a5803ac3a0f3bfe",
     "coveragePct": 100.0,
     "covered": 749,
     "excluded": 681,
@@ -514,7 +514,7 @@
   },
   "lcvp": {
     "cards": 314,
-    "contentHash": "fefb46868385d474",
+    "contentHash": "6a646d6cb0a40740",
     "coveragePct": 91.2,
     "covered": 320,
     "excluded": 13,
@@ -604,7 +604,7 @@
   },
   "physical-education": {
     "cards": 772,
-    "contentHash": "8322cd3f51a576a8",
+    "contentHash": "751f4b855c8fbccc",
     "coveragePct": 100.0,
     "covered": 741,
     "excluded": 0,
@@ -634,7 +634,7 @@
   },
   "polish": {
     "cards": 237,
-    "contentHash": "ee0fcaa5b051e1cf",
+    "contentHash": "408ba0b39d9d0167",
     "coveragePct": 100.0,
     "covered": 243,
     "excluded": 310,
@@ -649,7 +649,7 @@
   },
   "politics-and-society": {
     "cards": 623,
-    "contentHash": "dd3d425e264ec2a5",
+    "contentHash": "f7749147bd90da88",
     "coveragePct": 100.0,
     "covered": 623,
     "excluded": 0,
@@ -784,7 +784,7 @@
   },
   "technology": {
     "cards": 716,
-    "contentHash": "d40c6ffeeb1717dd",
+    "contentHash": "cc6efd057ee0ffa6",
     "coveragePct": 92.1,
     "covered": 721,
     "excluded": 46,

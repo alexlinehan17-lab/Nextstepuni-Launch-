@@ -3167,6 +3167,44 @@
           10,
           11,
           12
+        ],
+        "parts": [
+          {
+            "id": "tank",
+            "verbatim": "tank",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "free-of-insulation",
+            "verbatim": "free of insulation",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "top-and-sides",
+            "verbatim": "top and sides",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -3185,6 +3223,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "expansion-pipe",
+            "verbatim": "expansion pipe",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "other-exposed-pipes",
+            "verbatim": "other exposed pipes",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -3700,6 +3764,40 @@
           14,
           15,
           16
+        ],
+        "parts": [
+          {
+            "id": "note-annotation",
+            "verbatim": "Note/annotation",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": "sketches",
+            "verbatim": "sketches",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
         ]
       },
       {
@@ -3726,6 +3824,40 @@
           14,
           15,
           16
+        ],
+        "parts": [
+          {
+            "id": "note-annotation",
+            "verbatim": "Note/annotation",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": "sketches",
+            "verbatim": "sketches",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
         ]
       }
     ],
@@ -3854,6 +3986,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "environmental-consideration",
+            "verbatim": "environmental consideration",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "ease-of-construction",
+            "verbatim": "ease of construction",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -3870,6 +4026,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "environmental-consideration",
+            "verbatim": "environmental consideration",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "ease-of-construction",
+            "verbatim": "ease of construction",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -3918,6 +4098,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "formula-u-1-r",
+            "verbatim": "formula U = 1/R",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "required-resistance",
+            "verbatim": "required resistance",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -5546,6 +5750,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "inner-leaf",
+            "verbatim": "inner leaf",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "insulation",
+            "verbatim": "insulation",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
         ]
       },
       {
@@ -14327,6 +14559,28 @@
           2,
           3,
           4
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -14341,6 +14595,28 @@
           2,
           3,
           4
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -14355,6 +14631,28 @@
           2,
           3,
           4
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -18051,6 +18349,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -18067,6 +18389,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -18083,6 +18429,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -22532,6 +22902,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -22548,6 +22942,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -22564,6 +22982,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -22580,6 +23022,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -23014,6 +23480,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -23033,6 +23526,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -23052,6 +23572,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -27106,6 +27653,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -27122,6 +27693,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -27138,6 +27733,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -27154,6 +27773,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -27526,6 +28169,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -31765,6 +32435,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -31780,6 +32473,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -31795,6 +32511,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -31810,6 +32549,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       }
     ],
@@ -35340,6 +36102,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -35355,6 +36140,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -35370,6 +36178,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -35385,6 +36216,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       }
     ],
@@ -35756,6 +36610,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "item",
+            "verbatim": "Item",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -37176,6 +38056,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "distribution-board",
+            "verbatim": "distribution board",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "annotated",
+            "verbatim": "annotated",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -37191,6 +38094,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "single-switch",
+            "verbatim": "single switch",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "annotated",
+            "verbatim": "annotated",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -37206,6 +38132,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "light-points",
+            "verbatim": "light points",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "annotated",
+            "verbatim": "annotated",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -38673,6 +39622,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -38688,6 +39660,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -38703,6 +39698,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -38718,6 +39736,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       }
     ],
@@ -39184,6 +40225,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -39202,6 +40269,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -39220,6 +40313,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -41116,6 +42235,34 @@
           4,
           6,
           10
+        ],
+        "parts": [
+          {
+            "id": "relevant-point",
+            "verbatim": "relevant point",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "discussion",
+            "verbatim": "discussion",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
         ]
       }
     ],
@@ -54215,6 +55362,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -54230,6 +55400,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -54245,6 +55438,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -54260,6 +55476,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       }
     ],
@@ -54418,6 +55657,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -54433,6 +55695,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -54448,6 +55733,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -54463,6 +55771,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -56240,6 +57571,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "advantage-1",
+            "verbatim": "Advantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "disadvantage-1",
+            "verbatim": "disadvantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -56256,6 +57611,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "advantage-1",
+            "verbatim": "Advantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "disadvantage-1",
+            "verbatim": "disadvantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -56473,6 +57852,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "advantage-1",
+            "verbatim": "Advantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "disadvantage-1",
+            "verbatim": "disadvantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -56489,6 +57892,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "advantage-1",
+            "verbatim": "Advantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "disadvantage-1",
+            "verbatim": "disadvantage 1",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -58237,6 +59664,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "distribution-board",
+            "verbatim": "distribution board",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "annotated",
+            "verbatim": "annotated",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -58252,6 +59702,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "single-switch",
+            "verbatim": "single switch",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "annotated",
+            "verbatim": "annotated",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -58267,6 +59740,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "light-points",
+            "verbatim": "light points",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "annotated",
+            "verbatim": "annotated",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -60106,6 +61602,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -60156,6 +61678,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -60206,6 +61754,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -60256,6 +61830,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -60274,6 +61874,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -60292,6 +61918,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -60559,6 +62211,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -60574,6 +62249,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -60589,6 +62287,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -60604,6 +62325,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -63165,6 +64909,34 @@
           4,
           6,
           10
+        ],
+        "parts": [
+          {
+            "id": "relevant-point",
+            "verbatim": "relevant point",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "discussion",
+            "verbatim": "discussion",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
         ]
       }
     ],
@@ -69525,6 +71297,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "item",
+            "verbatim": "Item",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -69793,6 +71591,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -69808,6 +71629,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -69823,6 +71667,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -69838,6 +71705,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -76530,6 +78420,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -76545,6 +78458,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -76560,6 +78496,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -76575,6 +78534,29 @@
           3,
           4,
           5
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 2,
+            "permittedMarks": [
+              0,
+              1,
+              2
+            ]
+          }
         ]
       },
       {
@@ -82311,6 +84293,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -82556,6 +84565,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -82572,6 +84605,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -82588,6 +84645,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -82604,6 +84685,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -88264,6 +90369,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -88283,6 +90415,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -88302,6 +90461,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "sign",
+            "verbatim": "Sign",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "specific-reason",
+            "verbatim": "specific reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -88595,6 +90781,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -88611,6 +90821,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -88627,6 +90861,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -88643,6 +90901,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -94481,6 +96763,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -94497,6 +96803,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -94513,6 +96843,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -100337,6 +102691,28 @@
           2,
           3,
           4
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -100351,6 +102727,28 @@
           2,
           3,
           4
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -100365,6 +102763,28 @@
           2,
           3,
           4
+        ],
+        "parts": [
+          {
+            "id": "location",
+            "verbatim": "Location",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "reason",
+            "verbatim": "reason",
+            "marks": 1,
+            "permittedMarks": [
+              0,
+              1
+            ]
+          }
         ]
       },
       {
@@ -104323,6 +106743,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -104343,6 +106791,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -104363,6 +106839,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       }
     ],
@@ -104415,6 +106919,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       }
     ],
@@ -104497,6 +107029,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -104517,6 +107077,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -104537,6 +107125,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -104557,6 +107173,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       }
     ],
@@ -106036,6 +108680,40 @@
           14,
           15,
           16
+        ],
+        "parts": [
+          {
+            "id": "note-annotation",
+            "verbatim": "Note/annotation",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": "sketches",
+            "verbatim": "sketches",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
         ]
       },
       {
@@ -106062,6 +108740,40 @@
           14,
           15,
           16
+        ],
+        "parts": [
+          {
+            "id": "note-annotation",
+            "verbatim": "Note/annotation",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": "sketches",
+            "verbatim": "sketches",
+            "marks": 8,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          }
         ]
       },
       {
@@ -106337,6 +109049,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "environmental-consideration",
+            "verbatim": "environmental consideration",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "ease-of-construction",
+            "verbatim": "ease of construction",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -106353,6 +109089,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "environmental-consideration",
+            "verbatim": "environmental consideration",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "ease-of-construction",
+            "verbatim": "ease of construction",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       }
     ],
@@ -106568,6 +109328,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "formula-u-1-r",
+            "verbatim": "formula U = 1/R",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "required-resistance",
+            "verbatim": "required resistance",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -109042,6 +111826,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "inner-leaf",
+            "verbatim": "inner leaf",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "insulation",
+            "verbatim": "insulation",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
         ]
       },
       {
@@ -113948,6 +116760,44 @@
           10,
           11,
           12
+        ],
+        "parts": [
+          {
+            "id": "tank",
+            "verbatim": "tank",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "free-of-insulation",
+            "verbatim": "free of insulation",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "top-and-sides",
+            "verbatim": "top and sides",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -113966,6 +116816,32 @@
           6,
           7,
           8
+        ],
+        "parts": [
+          {
+            "id": "expansion-pipe",
+            "verbatim": "expansion pipe",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "other-exposed-pipes",
+            "verbatim": "other exposed pipes",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -129769,6 +132645,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -129788,6 +132691,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -129807,6 +132737,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -129826,6 +132783,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       }
     ],
@@ -129948,6 +132932,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -129967,6 +132978,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -129986,6 +133024,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -130005,6 +133070,33 @@
           7,
           8,
           9
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 5,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -137009,6 +140101,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "type",
+            "verbatim": "Type",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "thickness",
+            "verbatim": "thickness",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -137193,6 +140309,30 @@
           4,
           5,
           6
+        ],
+        "parts": [
+          {
+            "id": "type",
+            "verbatim": "Type",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "thickness",
+            "verbatim": "thickness",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -137601,6 +140741,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -137621,6 +140789,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -137641,6 +140837,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -137661,6 +140885,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       }
     ],
@@ -137775,6 +141027,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -137795,6 +141075,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -137815,6 +141123,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -137835,6 +141171,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "primary-communication",
+            "verbatim": "Primary communication",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "other-communication",
+            "verbatim": "other communication",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -139725,6 +143089,44 @@
           10,
           11,
           12
+        ],
+        "parts": [
+          {
+            "id": "name",
+            "verbatim": "Name",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "sketch-and-note",
+            "verbatim": "sketch and note",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "typical-dimensions",
+            "verbatim": "typical dimensions",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -140007,6 +143409,44 @@
           10,
           11,
           12
+        ],
+        "parts": [
+          {
+            "id": "name",
+            "verbatim": "Name",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "sketch-and-note",
+            "verbatim": "sketch and note",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "typical-dimensions",
+            "verbatim": "typical dimensions",
+            "marks": 3,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
         ]
       },
       {
@@ -144561,6 +148001,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "valid-description",
+            "verbatim": "valid description",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "type-of-insulation",
+            "verbatim": "type of insulation",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -144601,6 +148069,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "valid-description",
+            "verbatim": "valid description",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "type-of-insulation",
+            "verbatim": "type of insulation",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -144735,6 +148231,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "valid-description",
+            "verbatim": "valid description",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "type-of-insulation",
+            "verbatim": "type of insulation",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {
@@ -144775,6 +148299,34 @@
           8,
           9,
           10
+        ],
+        "parts": [
+          {
+            "id": "valid-description",
+            "verbatim": "valid description",
+            "marks": 6,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "type-of-insulation",
+            "verbatim": "type of insulation",
+            "marks": 4,
+            "permittedMarks": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         ]
       },
       {

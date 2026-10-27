@@ -390,6 +390,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "valid-description",
+                "verbatim": "valid description",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "type-of-insulation",
+                "verbatim": "type of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -430,6 +458,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "valid-description",
+                "verbatim": "valid description",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "type-of-insulation",
+                "verbatim": "type of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -664,6 +720,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "valid-description",
+                "verbatim": "valid description",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "type-of-insulation",
+                "verbatim": "type of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -704,6 +788,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "valid-description",
+                "verbatim": "valid description",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "type-of-insulation",
+                "verbatim": "type of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -5261,5 +5373,19 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2011-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2011-ordinary/prior-2011-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2011-ordinary/prior-2011-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2011-ol-q2-a",
+      "priorSha256": "b2a7c586293fc7fbbd160dc07c01a3c2abeb65923fd2ee491499ff7f30772fce",
+      "correctedSha256": "930e904993edcfd858b7797be272509d21dd1a06a7adbbc54af5d51115278ed7",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q2-complete",
+      "priorSha256": "afc4122f3f4238902fb6cd6685ca7f051a26afd25a7012e13901c62ed786a77d",
+      "correctedSha256": "97fb91cc95984d9fdcbb94e39472798c94c9626b2a5f476780620cd153975063",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    }
+  ]
 }

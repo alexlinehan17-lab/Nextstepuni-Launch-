@@ -39,6 +39,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from construction_corrections import card_hash  # noqa: E402
+import construction_paper as cp  # noqa: E402
 
 R = Path(__file__).resolve().parents[3]
 AUTHORED = R / 'scripts/markbank/authored'
@@ -68,6 +69,16 @@ SHAPES = (FOR_PAIR, NAMED_PAIR, SCALE, TRIPLE, NOTE_SKETCH, SPEC, BRACKETED, MAR
 # "For this distinct design feature, award notes 4 and a relevant freehand sketch 4".
 NOTE_PAIR = re.compile(r'\b(?P<an>notes?|points?|sketch(?:es)?|discussion)\s*(?P<a>\d+)\s*(?:marks?)?\s*(?:and|,|&|\+)\s*(?:a\s+relevant\s+freehand\s+|a\s+)?(?P<bn>notes?|sketch(?:es)?|discussion|points?)\s*(?P<b>\d+)\b', re.I)
 EXAMPLES = re.compile(r'\b(?:Such as|Menu|e\.g\.|For example)\b', re.I)
+# The note's first sentence prices two components by name, bracketed or bare, before its examples:
+# "The distribution board drawn (4) and annotated (1)", "Advantage 1 (3) and disadvantage 1 (3) of …",
+# "Sketches showing the inner leaf (5) and its insulation (5)", "Type 3 and thickness 3",
+# "The flashing (DPC) at the window head 2 and the insulation above the window head 2".
+NOTE_BRACKETED = re.compile(r'^(?:The\s+|Both\s+)?(?P<an>[A-Za-z][^()]*?)\s*\(\s*(?P<a>\d+)\s*\)\s*(?:and|\+|,)\s*(?:the\s+|a\s+|its\s+)?(?P<bn>[A-Za-z][^()]*?)\s*\(\s*(?P<b>\d+)\s*\)', re.I)
+NOTE_BARE = re.compile(r'^(?:The\s+)?(?P<an>[A-Za-z].+?)\s+(?P<a>\d+)\s+and\s+(?:the\s+|a\s+|its\s+)?(?P<bn>[A-Za-z].+?)\s+(?P<b>\d+)\s*[.,;]?$')
+# "Award 4 marks for a relevant point and 6 for its developed discussion, total 10."
+NOTE_FOR = re.compile(r'\b(?P<a>\d+)\s*(?:marks?\s*)?for\s+(?:a\s+|an\s+|the\s+|its\s+)?(?P<an>[a-z][a-z -]*?)\s+and\s+(?P<b>\d+)\s*(?:marks?\s*)?for\s+(?:a\s+|an\s+|the\s+|its\s+)?(?P<bn>[a-z][a-z -]*?)(?=\s*[,.;]|$)', re.I)
+# "Correct tabulation 2, wood 3, insulation 3, external and internal surfaces 2, total resistance 2, U-value 3 (1 for the formula)."
+NOTE_LIST_ITEM = re.compile(r'^(?P<n>[A-Za-z][^,]*?)\s+(?P<m>\d+)(?:\s*\([^)]*\))?\.?$')
 # "each excellent 4, good 3, fair 2": the ladder every component is placed on.
 LADDER = re.compile(r'each\s+excellent\s+(\d+)\s*,\s*good\s+(\d+)\s*,\s*fair\s+(\d+)', re.I)
 
@@ -76,7 +87,72 @@ def slug(word):
     return re.sub(r'[^a-z0-9]+', '-', word.lower()).strip('-')
 
 
-def components(row):
+STOP = {'with', 'from', 'that', 'this', 'into', 'each', 'other', 'their', 'very', 'than', 'then', 'when', 'where', 'which', 'also', 'kept'}
+FUNCTION = {'and', 'or', 'of', 'the', 'a', 'an', 'on', 'in', 'to', 'its', 'for', 'with', 'at', 'by', 'from'}
+# A participle after the noun it qualifies ("distribution board drawn") is not the phrase's head.
+PARTICIPLE = {'drawn', 'annotated', 'shown', 'named', 'sketched', 'labelled', 'identified', 'located', 'justified', 'stated',
+              'described', 'explained', 'selected', 'listed', 'given', 'outlined', 'discussed'}
+
+
+def head(tokens):
+    """The phrase's head word: its last alphabetic token, skipping a trailing participle and any formula or units."""
+    alpha = [t for t in tokens if re.fullmatch(r'[A-Za-z][A-Za-z-]{2,}', t)]
+    while len(alpha) > 1 and alpha[-1].lower() in PARTICIPLE:
+        alpha.pop()
+    return alpha[-1].lower() if alpha else None
+
+
+def lift(words, scheme):
+    """The longest run of the phrase's words the scheme prints, or None.
+
+    A note may paraphrase the scheme's table ("its supports kept free of insulation" for "Tank supports free of
+    insulation"); the part keeps only words the scheme prints (construction_paper.validate asserts this). The run
+    must keep the phrase's head word, hold a content word, neither start nor end on a function word, and be two
+    words or more unless the phrase itself was; a phrase
+    whose head the scheme does not print ("external and internal surfaces" for "External surface / Internal
+    surface") leaves its row alone. Nothing is added."""
+    tokens = words.split()
+    if cp.normalise(words) in scheme:
+        return words
+    top = head(tokens)
+    # A single word is a weak match against a whole scheme ("surfaces" is printed somewhere in every paper):
+    # only a phrase of one or two words may shrink to one.
+    for size in range(len(tokens) - 1, 1 if len(tokens) > 2 else 0, -1):
+        for start in range(0, len(tokens) - size + 1):
+            run = tokens[start:start + size]
+            if run[0].lower() in FUNCTION or run[-1].lower() in FUNCTION:
+                continue
+            if top not in [t.lower() for t in run]:
+                continue
+            content = [t for t in run if len(re.sub(r'[^A-Za-z]', '', t)) >= 4 and t.lower() not in STOP]
+            span = ' '.join(run)
+            if content and cp.normalise(span) in scheme:
+                return span
+    return None
+
+
+def scheme_text(path):
+    """The normalised scheme text for a reviewed-paper file, construction_paper's way."""
+    year, level = re.search(r'construction-studies-(\d{4})-(higher|ordinary)-reviewed', path.name).groups()
+    _, S = cp.sources(int(year), level)
+    return cp.normalise(' '.join(cp.page_text(S, p) for p in range(1, cp.page_count(S) + 1)))
+
+
+def components(row, scheme=None):
+    """[(printed word, marks)] the row prices by name, or None. With a scheme, every word is one it prints."""
+    found = _components(row)
+    if not found or scheme is None:
+        return found
+    lifted = [(lift(word, scheme), marks) for word, marks in found]
+    if any(word is None for word, _ in lifted) or len({slug(word) for word, _ in lifted}) != len(lifted):
+        print(f"  left alone {row['id']}: {found}", file=sys.stderr)
+        return None
+    if lifted != found:
+        print(f"  lifted {row['id']}: {found} -> {lifted}", file=sys.stderr)
+    return lifted
+
+
+def _components(row):
     """[(printed word, marks)] the row prices by name, or None."""
     text = ' '.join(row['verbatim'].split())
     for shape in SHAPES:
@@ -98,6 +174,34 @@ def components(row):
         found = [(m.group('an'), int(m.group('a'))), (m.group('bn'), int(m.group('b')))]
         if sum(marks for _, marks in found) == row['marks'] and len({slug(word) for word, _ in found}) == 2:
             return found
+    return note_components(allocation.strip(), row['marks'])
+
+
+def phrase(words):
+    """The component as the note names it: after any lead-in ("For the first wall selected in (b): …") and
+    without a leading article or conjunction, so "The tank" is the part "tank"."""
+    words = words.rsplit(':', 1)[-1].strip()
+    return re.sub(r'^(?:the|a|an|both|and|its)\s+', '', words, flags=re.I).strip()
+
+
+def note_components(allocation, marks):
+    """[(printed phrase, marks)] the note's first sentence prices by name, summing to the row, or None."""
+    sentence = re.split(r'(?<=[a-z)])\.\s', allocation, 1)[0].strip()
+    for shape in (NOTE_BRACKETED, NOTE_FOR, NOTE_BARE):
+        m = shape.search(sentence)
+        if not m:
+            continue
+        found = [(phrase(m.group('an')), int(m.group('a'))), (phrase(m.group('bn')), int(m.group('b')))]
+        if sum(x for _, x in found) == marks and len({slug(w) for w, _ in found}) == 2 and all(w for w, _ in found):
+            return found
+        return None
+    pieces = [piece.strip() for piece in sentence.rstrip('.').split(',')]
+    if len(pieces) >= 3:
+        items = [NOTE_LIST_ITEM.match(piece) for piece in pieces]
+        if all(items):
+            found = [(phrase(m.group('n')), int(m.group('m'))) for m in items]
+            if sum(x for _, x in found) == marks and len({slug(w) for w, _ in found}) == len(found):
+                return found
     return None
 
 
@@ -110,11 +214,11 @@ def steps_for(marks, note):
     return list(range(marks + 1))
 
 
-def with_parts(row):
+def with_parts(row, scheme=None):
     """The row with its parts, or the row itself when it prices no components."""
     if row.get('kind') != 'criterion' or row.get('parts') or not row.get('permittedMarks'):
         return row
-    found = components(row)
+    found = components(row, scheme)
     if not found:
         return row
     row['parts'] = [{'id': slug(word), 'verbatim': word, 'marks': marks, 'permittedMarks': steps_for(marks, row.get('contextNote'))}
@@ -145,11 +249,12 @@ def main():
         review = json.loads(path.read_text())
         cards = {t['card']['id']: t['card'] for t in review['tasks']}
         before = {cid: card_hash(c) for cid, c in cards.items()}
+        scheme = scheme_text(path)
         for card in cards.values():
             if 'taskGroups' in card:
                 continue
             for row in card['rows']:
-                with_parts(row)
+                with_parts(row, scheme)
         # A complete-question card mirrors its tasks' rows, parts included, under its own prefixes.
         for card in cards.values():
             for group in card.get('taskGroups', []):

@@ -118,6 +118,12 @@ export interface UserSettings {
    * separate and lives with the operating system or browser.
    */
   notifications?: NotificationPreferences;
+  /**
+   * A short recall quiz after each saved study session, built from Mark Bank
+   * questions on what was just studied (student feedback, 16 and 23 Oct 2026).
+   * Absent means on: the student turns it off, not on.
+   */
+  studyQuiz?: boolean;
 }
 
 /** One switch per kind of notification. Absent: not asked yet. */
