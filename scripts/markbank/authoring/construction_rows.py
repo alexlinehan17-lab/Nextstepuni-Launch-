@@ -16,10 +16,13 @@ is their sum. The row's id, text, marks and steps stay as the paper
 validators pin them.
 
 The pass adds no words. Each part is the component as the row prints it
-("point", "discussion", "Scale", "identify"), its marks are the printed
-price, and its steps are the ladder the row's note prints for it ("each
-excellent 4, good 3, fair 2") or every mark up to its price. A row whose
-prices do not add up to it is left alone.
+("point", "discussion", "Scale", "identify") — or, where the row's text
+names the item alone and its note carries the scheme's split before its
+examples ("Guideline 1" / "Notes 6 and sketches 6. Such as: …"), the
+component as the note prints it — its marks are the printed price, and its
+steps are the ladder the row's note prints for it ("each excellent 4, good
+3, fair 2") or every mark up to its price. A row whose prices do not add
+up to it is left alone.
 
 Every card it changes is recorded the way the Construction review ledger
 requires (construction_corrections.py): a card corrected in place keeps its
@@ -60,6 +63,11 @@ BRACKETED = re.compile(r'^(?P<an>[A-Za-z][A-Za-z ]*?)\s*\(\s*(?P<a>\d+)\s*\)\s*(
 # "Discussion (point 1) - 2 marks for point, 4 marks for discussion"
 MARKS_FOR = re.compile(r'^(?P<head>.+?\(point\s*\d+\))\s*-\s*(?P<a>\d+)\s*marks?\s*for\s*(?P<an>point),\s*(?P<b>\d+)\s*marks?\s*for\s*(?P<bn>discussion)\s*$', re.I)
 SHAPES = (FOR_PAIR, NAMED_PAIR, SCALE, TRIPLE, NOTE_SKETCH, SPEC, BRACKETED, MARKS_FOR)
+# A row whose text names the item alone ("Guideline 1", "Safety training") and whose note carries the
+# scheme's split before its examples: "Notes 6 and sketches 6. Such as: …", "Point 2 and discussion 4. Such as: …",
+# "For this distinct design feature, award notes 4 and a relevant freehand sketch 4".
+NOTE_PAIR = re.compile(r'\b(?P<an>notes?|points?|sketch(?:es)?|discussion)\s*(?P<a>\d+)\s*(?:marks?)?\s*(?:and|,|&|\+)\s*(?:a\s+relevant\s+freehand\s+|a\s+)?(?P<bn>notes?|sketch(?:es)?|discussion|points?)\s*(?P<b>\d+)\b', re.I)
+EXAMPLES = re.compile(r'\b(?:Such as|Menu|e\.g\.|For example)\b', re.I)
 # "each excellent 4, good 3, fair 2": the ladder every component is placed on.
 LADDER = re.compile(r'each\s+excellent\s+(\d+)\s*,\s*good\s+(\d+)\s*,\s*fair\s+(\d+)', re.I)
 
@@ -84,6 +92,12 @@ def components(row):
         if len({slug(word) for word, _ in found}) != len(found):
             return None
         return found
+    allocation = EXAMPLES.split(row.get('contextNote') or '', 1)[0]
+    m = NOTE_PAIR.search(allocation)
+    if m:
+        found = [(m.group('an'), int(m.group('a'))), (m.group('bn'), int(m.group('b')))]
+        if sum(marks for _, marks in found) == row['marks'] and len({slug(word) for word, _ in found}) == 2:
+            return found
     return None
 
 

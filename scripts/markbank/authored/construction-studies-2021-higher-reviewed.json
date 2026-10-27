@@ -3458,6 +3458,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -3563,6 +3589,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -3668,6 +3720,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -3773,6 +3851,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -3791,6 +3895,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -3809,6 +3939,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -4210,6 +4366,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -4228,6 +4410,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -4246,6 +4454,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -5122,6 +5356,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -5269,6 +5531,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -5556,6 +5846,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -5616,6 +5934,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -6518,6 +6864,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -6846,6 +7220,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "discussion",
+                "verbatim": "discussion",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -8255,6 +8657,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -8277,6 +8709,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           }
         ],
@@ -8380,6 +8842,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -8665,6 +9151,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -8687,6 +9203,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -8703,6 +9249,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -11125,32 +11695,41 @@
     {
       "cardId": "cons-2021-hl-q4-a-availability-of-services",
       "priorSha256": "d68a12d35335a0cb25e608f071383566af94499846e5f47d1f7c830362254b6b",
-      "correctedSha256": "3dcc00a0b2e88f548414f9bff425db89b8c03a38bbeb434100ad6e7671f84313",
+      "correctedSha256": "b55977409e038e3bf8aea33afbcad80a5744945c3ca5ce83566f7494d09afbf5",
       "priorTotalMarks": 8,
       "correctedTotalMarks": 8,
       "priorTopicId": "cons-1-3",
       "correctedTopicId": "cons-1-3",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed factor row (notes 4 + sketches 4); tariff unchanged (8)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed factor row (notes 4 + sketches 4); tariff unchanged (8).",
+      "supersededSha256": [
+        "3dcc00a0b2e88f548414f9bff425db89b8c03a38bbeb434100ad6e7671f84313"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q4-a-existing-trees-and-hedgerows",
       "priorSha256": "97319dba9dcf7c802b66c838d77af86b81a4a17ecae1318ed44dd3f5ca6e093c",
-      "correctedSha256": "9d5c2ce26b89699564d9e1733eeeb9038b546b10c33a7ea5e8a2c18ea88be503",
+      "correctedSha256": "2e5125f01660a42a2467fa179be83b20c93c45e0a5fec0caeedc2283d3a3a4cc",
       "priorTotalMarks": 8,
       "correctedTotalMarks": 8,
       "priorTopicId": "cons-1-3",
       "correctedTopicId": "cons-1-3",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed factor row (notes 4 + sketches 4); tariff unchanged (8)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed factor row (notes 4 + sketches 4); tariff unchanged (8).",
+      "supersededSha256": [
+        "9d5c2ce26b89699564d9e1733eeeb9038b546b10c33a7ea5e8a2c18ea88be503"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q4-a-site-topography",
       "priorSha256": "b09f93749961b61f00c06d17ba98a72ce092d28424731016f2ac252bdd82f9a9",
-      "correctedSha256": "0365edf313124002d6f209255edb06feec6e8ac032deea4f212b8a06d44e366d",
+      "correctedSha256": "915a55e02c5ec7b56a4d7de3a94d7a4b0be41e8d7db8fee9e365b6999de7571c",
       "priorTotalMarks": 8,
       "correctedTotalMarks": 8,
       "priorTopicId": "cons-1-3",
       "correctedTopicId": "cons-1-3",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed factor row (notes 4 + sketches 4); tariff unchanged (8)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed factor row (notes 4 + sketches 4); tariff unchanged (8).",
+      "supersededSha256": [
+        "0365edf313124002d6f209255edb06feec6e8ac032deea4f212b8a06d44e366d"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q4-b",
@@ -11185,22 +11764,28 @@
     {
       "cardId": "cons-2021-hl-q6-a",
       "priorSha256": "aaaf92fee97a3cfc14c8044be2cc87713f74a2ccd4c5c44841c45234a59d2845",
-      "correctedSha256": "37c29879e3fc1e272b2a1593117019c3cde60cc18bc18e3e987f715cd0d34338",
+      "correctedSha256": "67fb16fd496e8ff9dec28af1fc33d705c4d01f3bbf1aef15b510034e3b754e27",
       "priorTotalMarks": 30,
       "correctedTotalMarks": 30,
       "priorTopicId": "cons-6-3",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Split into three design features, each notes 5 + sketches 5; tariff unchanged (30)."
+      "reason": "Question wording lifted from the paper. Split into three design features, each notes 5 + sketches 5; tariff unchanged (30).",
+      "supersededSha256": [
+        "37c29879e3fc1e272b2a1593117019c3cde60cc18bc18e3e987f715cd0d34338"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q6-b",
       "priorSha256": "038451e1026f1e29da83f5526d8147d795afbcbebbd68b1640835ced94d80204",
-      "correctedSha256": "e1e04163645193214271e209e1d89bb33d228b9c90d7f675013b8fa564f29c90",
+      "correctedSha256": "5480cafb40f9dab11a8a5db46cbd19fac3ee7ffda19216e3685c7eebc5ecf1ca",
       "priorTotalMarks": 20,
       "correctedTotalMarks": 20,
       "priorTopicId": "cons-6-3",
       "correctedTopicId": "cons-6-3",
-      "reason": "Question wording lifted from the paper. Split into two added features, each notes 5 + sketches 5; tariff unchanged (20)."
+      "reason": "Question wording lifted from the paper. Split into two added features, each notes 5 + sketches 5; tariff unchanged (20).",
+      "supersededSha256": [
+        "e1e04163645193214271e209e1d89bb33d228b9c90d7f675013b8fa564f29c90"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q6-c",
@@ -11251,12 +11836,15 @@
     {
       "cardId": "cons-2021-hl-q8-b",
       "priorSha256": "9828c9c896150ec3bbf1ced252119163d184dc3cddf6753738df0c8cb949ee6e",
-      "correctedSha256": "7d916ad28e41a5cbdac5f08730764ebfb5b3bb843cb15d42eb8e5cbe70e3db71",
+      "correctedSha256": "434f01935ce0328f7e3707bab4572fc0841f7b5db4a6482c2d70b09f5a781f63",
       "priorTotalMarks": 20,
       "correctedTotalMarks": 20,
       "priorTopicId": "cons-5-3",
       "correctedTopicId": "cons-5-3",
-      "reason": "Question wording lifted from the paper. Split into two features, each notes/discussion 5 + sketches 5; tariff unchanged (20)."
+      "reason": "Question wording lifted from the paper. Split into two features, each notes/discussion 5 + sketches 5; tariff unchanged (20).",
+      "supersededSha256": [
+        "7d916ad28e41a5cbdac5f08730764ebfb5b3bb843cb15d42eb8e5cbe70e3db71"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q8-c",
@@ -11326,22 +11914,28 @@
     {
       "cardId": "cons-2021-hl-q10-b",
       "priorSha256": "719b758589f2519a9a46d4bd9cca35b574ebf194ea1cc9584490fd885a3f3152",
-      "correctedSha256": "0f98683a2c777707dc889b9db12b89de97db56149b50e3d052023974ab991762",
+      "correctedSha256": "ca28c519ac15586b46c1b67b45d1fedbe52c608c0e0567dc48ad0dfe6fd4204a",
       "priorTotalMarks": 24,
       "correctedTotalMarks": 24,
       "priorTopicId": "cons-6-4",
       "correctedTopicId": "cons-6-4",
-      "reason": "Question wording lifted from the paper. Split into two methods, each notes 6 + sketches 6; tariff unchanged (24)."
+      "reason": "Question wording lifted from the paper. Split into two methods, each notes 6 + sketches 6; tariff unchanged (24).",
+      "supersededSha256": [
+        "0f98683a2c777707dc889b9db12b89de97db56149b50e3d052023974ab991762"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q10-c",
       "priorSha256": "b6d77d64e57b478ad48506c322696c877441dc3564c2eb2e7267f6f071c39302",
-      "correctedSha256": "0b6fba461ff78453d0187d3ffdd7528e99c30f2e4ae7afd3b3458b126dbf3c6f",
+      "correctedSha256": "84ef6440171d75ef9ddaa295ece639bb5d9e630b93e5352a1d608a67a2fc7960",
       "priorTotalMarks": 12,
       "correctedTotalMarks": 12,
       "priorTopicId": "cons-6-4",
       "correctedTopicId": "cons-1-1",
-      "reason": "Question wording lifted from the paper. Split into two features, each notes 3 + sketches 3; tariff unchanged (12)."
+      "reason": "Question wording lifted from the paper. Split into two features, each notes 3 + sketches 3; tariff unchanged (12).",
+      "supersededSha256": [
+        "0b6fba461ff78453d0187d3ffdd7528e99c30f2e4ae7afd3b3458b126dbf3c6f"
+      ]
     }
   ],
   "selectionLedger": {
@@ -11613,8 +12207,11 @@
     {
       "cardId": "cons-2021-hl-q6-complete",
       "priorSha256": "dd03c10460675bb53865053f866051c2a9d6309e48726eb17559c56283c7007d",
-      "correctedSha256": "def1bc917cf7b59d929abeae324f1a33e4889812db4674e733c8f96d5e6b9870",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "9fe47803b4f595cb31fc59bdb1b29c0015e4e4b9e6764c8d9ab2d27d7b060686",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "def1bc917cf7b59d929abeae324f1a33e4889812db4674e733c8f96d5e6b9870"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q7-complete",
@@ -11625,8 +12222,11 @@
     {
       "cardId": "cons-2021-hl-q8-complete",
       "priorSha256": "070642f832b6ab75015fc541bf5c9a0138a8d082a2725d046569142a8fd9737a",
-      "correctedSha256": "842f463184c93366594afd4aa53dd4939121402947bc4735e3291f29e017c258",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "03533ed784d6d0e4452807b827289a281efea60686de6d7b77629599fc6cd677",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "842f463184c93366594afd4aa53dd4939121402947bc4735e3291f29e017c258"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q9-complete",
@@ -11637,8 +12237,11 @@
     {
       "cardId": "cons-2021-hl-q10-complete",
       "priorSha256": "c2ca35680ae47a4cfee7b88437c557db7c978fbac1dcb8c1bb6cef69f82d847e",
-      "correctedSha256": "b779bbcbd3e430cc7ad65eade7626f3f2ca103da0e4ebea5cda0cbcdc22a4ffa",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "798b9cf4c7619422fdf99f2e6216e8c0b0c9f0fb144f1f59c1f556931cee1559",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "b779bbcbd3e430cc7ad65eade7626f3f2ca103da0e4ebea5cda0cbcdc22a4ffa"
+      ]
     },
     {
       "cardId": "cons-2021-hl-q10-alt-a",
@@ -11656,6 +12259,18 @@
       "cardId": "cons-2021-hl-q10-alt-complete",
       "priorSha256": "7732595b4a738bc9d636a0666bb3ba51e6296d1000dd73ffe9a4d7ab2a7fa5c1",
       "correctedSha256": "925dda6c41aa7608a21b08b5453c2c3d50741d28053a754dcef3455d1663cc76",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2021-hl-q4-a",
+      "priorSha256": "c0e54e1b4f754652580899f7c61420228d781718ff3fd743c4bc65933ad510e7",
+      "correctedSha256": "4e8459ea0341c4ea18ce2d6e6fa1367676446d01a128773bfb3a5861b3719122",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2021-hl-q4-complete",
+      "priorSha256": "1b6e5644848aba7c4c04fcc9d72c5e2b041e9eb307e57537155a9f8f6806b472",
+      "correctedSha256": "b601911854d1add22c0d9ab7da2c08d164e8ad314bb0bb6c48fbcdb07325f0cc",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
     }
   ]
