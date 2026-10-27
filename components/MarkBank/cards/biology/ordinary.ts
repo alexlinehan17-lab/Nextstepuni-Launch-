@@ -40685,7 +40685,7 @@ export const CARDS: SecCard[] = [
     questionText: "A solution used to test for the presence of glucose is",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r1", kind: "anyN", verbatim: "Benedict‟s (solution) / Fehling‟s (solution)", marks: null, group: {"claimMax":1,"perOption":4,"options":["Benedict‟s (solution)","Fehling‟s (solution)"]} },
+    { id: "r1", kind: "anyN", verbatim: "Benedict’s (solution) / Fehling’s (solution)", marks: null, group: {"claimMax":1,"perOption":4,"options":["Benedict’s (solution)","Fehling’s (solution)"]} },
     ],
   } as SecCard,
   {
@@ -41327,7 +41327,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the site in the kidney where filtration takes place",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
-    { id: "r1", kind: "anyN", verbatim: "Cortex / Bowman‟s capsule / glomerulus / „A‟ if correctly named in (a)", marks: null, group: {"claimMax":1,"perOption":3,"options":["Cortex","Bowman‟s capsule","glomerulus","„A‟ if correctly named in (a)"]} },
+    { id: "r1", kind: "anyN", verbatim: "Cortex / Bowman’s capsule / glomerulus / ‘A’ if correctly named in (a)", marks: null, group: {"claimMax":1,"perOption":3,"options":["Cortex","Bowman’s capsule","glomerulus","‘A’ if correctly named in (a)"]} },
     ],
     figure: {
           "candId": "biology-2013-ol-q6-kidney",
@@ -41915,7 +41915,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the following terms as used in ecology:\nNiche.",
     tariffModel: {"kind":"orderedSplit","notation":"7 + 2(1)"}, totalMarks: 7,
     rows: [
-    { id: "r1", kind: "alt", verbatim: "Role or „occupation‟ of organism (in its habitat)", marks: null },
+    { id: "r1", kind: "alt", verbatim: "Role or ‘occupation’ of organism (in its habitat)", marks: null },
     ],
   } as SecCard,
   {
@@ -41956,7 +41956,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why are greenhouse gases so called?",
     tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
     rows: [
-    { id: "r1", kind: "point", verbatim: "They traps some of sun‟s heat (inside the atmosphere)", marks: null },
+    { id: "r1", kind: "point", verbatim: "They traps some of sun’s heat (inside the atmosphere)", marks: null },
     ],
   } as SecCard,
   {
@@ -42270,7 +42270,7 @@ export const CARDS: SecCard[] = [
     questionText: "Many babies are breast fed after birth. Give two biological benefits of breastfeeding.",
     tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 10,
     rows: [
-    { id: "r1", kind: "anyN", verbatim: "Benefit for baby: mother-baby bonding / antibodies in milk / laxative in milk / mother‟s milk encourages growth of mutualistic bacteria in large intestine / milk sterile / milk at body temperature / Benefit for mother: bonding / uterus recovers faster / natural contraceptive / reduces risk of breast cancer", marks: null, group: {"claimMax":2,"perOption":5,"options":["Benefit for baby: mother-baby bonding","antibodies in milk","laxative in milk","mother‟s milk encourages growth of mutualistic bacteria in large intestine","milk sterile","milk at body temperature","Benefit for mother: bonding","uterus recovers faster","natural contraceptive","reduces risk of breast cancer"]} },
+    { id: "r1", kind: "anyN", verbatim: "Benefit for baby: mother-baby bonding / antibodies in milk / laxative in milk / mother’s milk encourages growth of mutualistic bacteria in large intestine / milk sterile / milk at body temperature / Benefit for mother: bonding / uterus recovers faster / natural contraceptive / reduces risk of breast cancer", marks: null, group: {"claimMax":2,"perOption":5,"options":["Benefit for baby: mother-baby bonding","antibodies in milk","laxative in milk","mother’s milk encourages growth of mutualistic bacteria in large intestine","milk sterile","milk at body temperature","Benefit for mother: bonding","uterus recovers faster","natural contraceptive","reduces risk of breast cancer"]} },
     ],
   } as SecCard,
   {
@@ -42916,7 +42916,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mention two ways to maintain a healthy heart.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "anyN", verbatim: "eat less fat / exercise regularly / avoid excess stress / eat less salt / don‟t smoke", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["eat less fat","exercise regularly","avoid excess stress","eat less salt","don‟t smoke"]} },
+    { id: "r1", kind: "anyN", verbatim: "eat less fat / exercise regularly / avoid excess stress / eat less salt / don’t smoke", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["eat less fat","exercise regularly","avoid excess stress","eat less salt","don’t smoke"]} },
     ],
   } as SecCard,
   {
@@ -43535,7 +43535,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r1", kind: "point", verbatim: "(a) (i) — Tuna", marks: null },
     { id: "r2", kind: "point", verbatim: "(ii) — Crisps", marks: null },
-    { id: "r3", kind: "point", verbatim: "(ii) — “Butter” (on bread)", marks: null, contextNote: "not „spread‟" },
+    { id: "r3", kind: "point", verbatim: "(ii) — “Butter” (on bread)", marks: null, contextNote: "not ‘spread’" },
     { id: "r4", kind: "alt", verbatim: "(b) (i) — B or C", marks: null },
     { id: "r5", kind: "alt", verbatim: "(ii) — Bread or Sweetcorn", marks: null },
     { id: "r6", kind: "point", verbatim: "(ii) — Apple", marks: null },

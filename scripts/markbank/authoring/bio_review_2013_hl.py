@@ -360,8 +360,8 @@ TASKS = [
       [pt(S('X'), 3), pt(S('Dog', 'correct reference to graph'), 3)], 'bio-2-4', 'endotherm-plot',
       at(6, '3.', '(a)'), 6, stem=[Q3], fig='q3-graph',
       decision='The plot and its explanation are two responses on the "6(3) + (2)" ladder, as the paper\'s two '
-               'answer lines ask. The text layer sets the apostrophe of the scheme\'s "Dog\'s" as U+201F; lifted '
-               'as the text layer reads it.'),
+               'answer lines ask. The text layer sets the apostrophe of the scheme\'s "Dog\'s" as U+201F, a font '
+               'artefact read as the apostrophe printed (U+2019).'),
 ] + [
     T(f'3{x}', f'Q3({x})', 'A', q, [pt(S(*ans), 3)], 'bio-2-4', concept, sq, 3, stem=[Q3], fig='q3-graph',
       decision=ladder(3, '6(3) + (2)') + ' Seven responses.')

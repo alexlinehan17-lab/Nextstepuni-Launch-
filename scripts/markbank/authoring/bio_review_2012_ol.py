@@ -62,7 +62,8 @@ L.2(1)", Q14(a)(iv) "D. 5,2,0 L. 3(1)" and Q14(c)(vii) "D. 5,2,0 L. 2(1)"; each
 ladder names their units as fixed and their cards keep their own marks.
 
 The scheme's text layer reads its single quotes as U+201E and U+201F
-(Q1(a)(ii) "[not „spread‟]"); lifted as read.
+(Q1(a)(ii) "[not ‘spread’]"), a font artefact: bio_review_lib reads
+them as the single quotes printed (U+2018, U+2019).
 
 The census reader lost Question 4 (paper.py WELDED_HEADS, gated to this
 sitting): p3's Q3(g) row "An organ is a group of systems." ends in its circle
@@ -333,7 +334,7 @@ Q15CI = ask(13, 'Name the parts labelled A, B and C.')
 # Section A heads, read with `after=` so a row and its part marker are found
 # under their own question (scheme p5).
 H1, H2, H3, H4, H5, H6 = '1.', '2.', '3.', '4.', '3(2) + 2(7)', '6.'
-CRISPS = 'Crisps / “Butter” (on bread) [not „spread‟]'
+CRISPS = 'Crisps / “Butter” (on bread) [not ‘spread’]'
 BREAD = 'Bread or Sweetcorn / Apple'
 PROTEIN = 'Keratin / Myosin / Collagen'
 FAT = ('Energy (storage) / Insulation / Cell', 'vitamins/Protection')
@@ -452,7 +453,7 @@ TASKS = [
        pt(S('Metabolism', after=H1), 0, label=S('(e)', after=H1))],
       'bio-1-2', 'food-and-nutrients', at(5, '1.', '(a)', why=WHOLE_ANCHOR), 20, stem=[Q1], tariff='questionTotal',
       decision=WHOLE_A.format(q=1, notation='2(1) + 3(2) + 2(6)', n='seven', low=1, high=6)
-      + ' (a)(ii)\'s bracketed "[not „spread‟]" is its butter row\'s note.'),
+      + ' (a)(ii)\'s bracketed "[not ‘spread’]" is its butter row\'s note.'),
     T('2', 'Q2', 'A',
       [M('(a)', 2), ask(2, 'Name the parts labelled A, B, C and D.'),
        M('(b)', 2, br=True), ask(2, 'State:'), ask(2, 'one function of part A.', br=True),

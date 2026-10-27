@@ -207009,7 +207009,7 @@
      "sourcePages": null,
      "pairingScore": 1.0,
      "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
-     "decision": "The plot and its explanation are two responses on the \"6(3) + (2)\" ladder, as the paper's two answer lines ask. The text layer sets the apostrophe of the scheme's \"Dog's\" as U+201F; lifted as the text layer reads it.",
+     "decision": "The plot and its explanation are two responses on the \"6(3) + (2)\" ladder, as the paper's two answer lines ask. The text layer sets the apostrophe of the scheme's \"Dog's\" as U+201F, a font artefact read as the apostrophe printed (U+2019).",
      "notes": null
     },
     {
@@ -220516,7 +220516,7 @@
      "sourcePages": null,
      "pairingScore": 0.0,
      "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
-     "decision": "A numbered list the scheme prices entry by entry: one card per entry. The text layer reads the quotation marks around \"how it fits\" as a low and a raised double comma; lifted as read.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. The text layer reads the quotation marks around \"how it fits\" as a low and a raised double comma, a font artefact read as the single quotes printed.",
      "notes": null
     },
     {
@@ -221469,7 +221469,7 @@
      "sourcePages": null,
      "pairingScore": 0.0,
      "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
-     "decision": "The cause (item 1) and the treatment (item 2) are priced \"3\" each, for whichever disorder the candidate chose: the scheme prints Parkinson's disease OR paralysis for each, answer variants of one task. The text layer reads the apostrophe of \"Parkinson‟s\" as a raised double comma; lifted as read.",
+     "decision": "The cause (item 1) and the treatment (item 2) are priced \"3\" each, for whichever disorder the candidate chose: the scheme prints Parkinson's disease OR paralysis for each, answer variants of one task. The text layer reads the apostrophe of \"Parkinson’s\" as a raised double comma, a font artefact read as the apostrophe printed.",
      "notes": null
     },
     {
@@ -223295,7 +223295,7 @@
      "sourcePages": null,
      "pairingScore": 1.0,
      "pairedBy": "The scheme prints no reprint of any question: a whole question is anchored on its first part's marker under the question's number.",
-     "decision": "The scheme prints Q1 as \"2(1) + 3(2) + 2(6)\" over its seven points (p5). Read as the conventions page (p4, rule 4) defines an ordered split, the first correct answers would earn 1 and the last 6: the notation leads with its smallest rate, where every Section B and C ladder of this scheme leads with its largest, and no reading prices each printed answer on its own. So the whole question is one card at the Section A rubric's 20 (\"Each question carries 20 marks\"), every row unpriced (the coordinator's whole-part rule, as 2013 Higher Q5 and Q6); no response is carded at the first rate and no reordering is derived. Each row carries the scheme's own printed part marker or label. Brought to the coordinator. (a)(ii)'s bracketed \"[not „spread‟]\" is its butter row's note.",
+     "decision": "The scheme prints Q1 as \"2(1) + 3(2) + 2(6)\" over its seven points (p5). Read as the conventions page (p4, rule 4) defines an ordered split, the first correct answers would earn 1 and the last 6: the notation leads with its smallest rate, where every Section B and C ladder of this scheme leads with its largest, and no reading prices each printed answer on its own. So the whole question is one card at the Section A rubric's 20 (\"Each question carries 20 marks\"), every row unpriced (the coordinator's whole-part rule, as 2013 Higher Q5 and Q6); no response is carded at the first rate and no reordering is derived. Each row carries the scheme's own printed part marker or label. Brought to the coordinator. (a)(ii)'s bracketed \"[not ‘spread’]\" is its butter row's note.",
      "notes": null
     },
     {

@@ -614,10 +614,10 @@ TASKS = [
          'positive-impact-of-exotics')]
 ] + [
     T('11bv1', 'Q11(b)(v)1', 'C', item(9, 1, 'Explain the term niche in this context.', 'vacant niche.'),
-      [pt(S('Role of organism (in an ecosystem) or explained e.g.', 'how it fits‟'), 3)], 'bio-3-1', 'niche',
+      [pt(S('Role of organism (in an ecosystem) or explained e.g.', 'how it fits’'), 3)], 'bio-3-1', 'niche',
       at(11, '11.', '(b)', '(v)', why=ITEM_ROMAN), 3, stem=[Q11BV],
       decision=EACH_ITEM + ' The text layer reads the quotation marks around "how it fits" as a low and a raised '
-               'double comma; lifted as read.'),
+               'double comma, a font artefact read as the single quotes printed.'),
     T('11bv23', 'Q11(b)(v)', 'C', [item(9, 2, 'Do you agree with the above statement?', 'vacant niche.'),
                                    item(9, 3, 'Explain your answer.', 'vacant niche.')],
       [pt(S('Yes, because it is adapted (or is suited) or explained'), 6, note_sel=S('6, 0'),
@@ -747,14 +747,14 @@ TASKS = [
       [ask(11, 'In the case of either paralysis or Parkinson’s disease state:'),
        Q(11, '1.', 'a possible cause, other than accident;', after='In the case of either', br=True),
        Q(11, '2.', 'a method of treatment.', after='In the case of either', br=True)],
-      [pt(S('Parkinson‟s – lack of dopamine or genetic or toxins'), 3, label=S('Cause:')),
-       pt(S('Parkinson‟s - levodopa or drugs that mimic dopamine', 'or physiotherapy or exercise OR', piece=1,
+      [pt(S('Parkinson’s – lack of dopamine or genetic or toxins'), 3, label=S('Cause:')),
+       pt(S('Parkinson’s - levodopa or drugs that mimic dopamine', 'or physiotherapy or exercise OR', piece=1,
             psep=' OR'), 3, label=S('Treatment:'))],
       'bio-2-4', 'parkinsons-or-paralysis', at(13, '13.', '(c)', '(iii)'), 6,
       decision='The cause (item 1) and the treatment (item 2) are priced "3" each, for whichever disorder the '
                'candidate chose: the scheme prints Parkinson\'s disease OR paralysis for each, answer variants of '
-               'one task. The text layer reads the apostrophe of "Parkinson‟s" as a raised double comma; lifted as '
-               'read.'),
+               'one task. The text layer reads the apostrophe of "Parkinson’s" as a raised double comma, a '
+               'font artefact read as the apostrophe printed.'),
 ] + [
     T(f'14ai{n}', f'Q14(a)(i){n}', 'C', [Q14AI, item(12, n, word, 'Give a brief account of the role of each')],
       [pt(S(ans), 3)], 'bio-2-5', concept, at(14, '14.', '(a)', '(i)', why=ITEM_ROMAN), 3,
@@ -911,8 +911,8 @@ ANSWER_VARIANTS = {
     ],
     '13ciii': [
         ('parkinsons', 'Parkinson’s disease',
-         [pt(S('Parkinson‟s – lack of dopamine or genetic or toxins'), 3, label=S('Cause:')),
-          pt(S('Parkinson‟s - levodopa or drugs that mimic dopamine', 'or physiotherapy or exercise OR', piece=1,
+         [pt(S('Parkinson’s – lack of dopamine or genetic or toxins'), 3, label=S('Cause:')),
+          pt(S('Parkinson’s - levodopa or drugs that mimic dopamine', 'or physiotherapy or exercise OR', piece=1,
                psep=' OR'), 3, label=S('Treatment:'))]),
         ('paralysis', 'Paralysis',
          [pt(S('Paralysis – damage to spinal cord'), 3, label=S('Cause:')),

@@ -89,6 +89,14 @@ def _decode_symbol(ch, font):
     # '\u25a1' (hyphae)" (rendered and looked at). It reads as the box printed.
     if o == 0:
         return '\u25a1'
+    # The 2012 and 2013 schemes' Times New Roman and Arial subsets map the
+    # single quotes, glyph ids 181 and 182, to U+201E and U+201F; every other
+    # Biology scheme reads the same ids as U+2018 and U+2019, and the page
+    # prints ‘ and ’ ("Dog’s", "‘occupation’": cropped and looked at). A font
+    # artefact, not exam wording: read as the quotes printed. No other
+    # Biology paper or scheme carries either character.
+    if o in (0x201E, 0x201F) and font in ('Times#20New#20Roman', 'Arial'):
+        return '\u2018' if o == 0x201E else '\u2019'
     if 'Wingdings' in font and 'Wingdings2' not in font.replace(' ', ''):
         if 0xF081 <= o <= 0xF08A:
             return chr(0x2460 + o - 0xF081)

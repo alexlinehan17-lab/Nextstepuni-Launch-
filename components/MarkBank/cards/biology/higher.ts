@@ -35860,7 +35860,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + (2)"}, totalMarks: 6,
     rows: [
     { id: "r1", kind: "point", verbatim: "X", marks: null },
-    { id: "r2", kind: "alt", verbatim: "Dog‟s body temperature is (relatively) stable or correct reference to graph", marks: null },
+    { id: "r2", kind: "alt", verbatim: "Dog’s body temperature is (relatively) stable or correct reference to graph", marks: null },
     ],
     figure: {
           "candId": "biology-2013-hl-q3-graph",
@@ -39237,7 +39237,7 @@ export const CARDS: SecCard[] = [
     questionText: "1. Explain the term niche in this context.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r1", kind: "alt", verbatim: "Role of organism (in an ecosystem) or explained e.g. „how it fits‟", marks: 3 },
+    { id: "r1", kind: "alt", verbatim: "Role of organism (in an ecosystem) or explained e.g. ‘how it fits’", marks: 3 },
     ],
   } as SecCard,
   {
@@ -39710,8 +39710,8 @@ export const CARDS: SecCard[] = [
     questionText: "In the case of either paralysis or Parkinson’s disease state:\n1. a possible cause, other than accident;\n2. a method of treatment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "alt", verbatim: "Cause — Parkinson‟s – lack of dopamine or genetic or toxins", marks: 3 },
-    { id: "r2", kind: "alt", verbatim: "Treatment — Parkinson‟s - levodopa or drugs that mimic dopamine or physiotherapy or exercise", marks: 3 },
+    { id: "r1", kind: "alt", verbatim: "Cause — Parkinson’s – lack of dopamine or genetic or toxins", marks: 3 },
+    { id: "r2", kind: "alt", verbatim: "Treatment — Parkinson’s - levodopa or drugs that mimic dopamine or physiotherapy or exercise", marks: 3 },
     ],
     answerVariants: [
           {
@@ -39721,13 +39721,13 @@ export const CARDS: SecCard[] = [
                       {
                             "id": "r1",
                             "kind": "alt",
-                            "verbatim": "Cause — Parkinson‟s – lack of dopamine or genetic or toxins",
+                            "verbatim": "Cause — Parkinson’s – lack of dopamine or genetic or toxins",
                             "marks": 3
                       },
                       {
                             "id": "r2",
                             "kind": "alt",
-                            "verbatim": "Treatment — Parkinson‟s - levodopa or drugs that mimic dopamine or physiotherapy or exercise",
+                            "verbatim": "Treatment — Parkinson’s - levodopa or drugs that mimic dopamine or physiotherapy or exercise",
                             "marks": 3
                       }
                 ]
