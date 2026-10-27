@@ -441,6 +441,44 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "tank",
+                "verbatim": "tank",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "free-of-insulation",
+                "verbatim": "free of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "top-and-sides",
+                "verbatim": "top and sides",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -459,6 +497,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "expansion-pipe",
+                "verbatim": "expansion pipe",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "other-exposed-pipes",
+                "verbatim": "other exposed pipes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -700,6 +764,44 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "tank",
+                "verbatim": "tank",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "free-of-insulation",
+                "verbatim": "free of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "top-and-sides",
+                "verbatim": "top and sides",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -718,6 +820,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "expansion-pipe",
+                "verbatim": "expansion pipe",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "other-exposed-pipes",
+                "verbatim": "other exposed pipes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -4950,12 +5078,15 @@
     {
       "cardId": "cons-2016-ol-q2-a",
       "priorSha256": "cfe3f8ea1c03c18ac1cab3c9e18b298fe07b706f1d89b8208cb8e61abe649bb4",
-      "correctedSha256": "a7ab82a129c8a8b1e98208e4edbef6503dd42a9002c2ee710519d094ccd9af5f",
+      "correctedSha256": "44c138819a077fc5fd0104ad896426a01301f3dd83055b10a8c9b81b35301423",
       "priorTotalMarks": 32,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-3-9",
-      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — attic 12, tank 12, pipes 8 and quality of sketches (8/6/4): 32 → 40."
+      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — attic 12, tank 12, pipes 8 and quality of sketches (8/6/4): 32 → 40.",
+      "supersededSha256": [
+        "a7ab82a129c8a8b1e98208e4edbef6503dd42a9002c2ee710519d094ccd9af5f"
+      ]
     },
     {
       "cardId": "cons-2016-ol-q2-b",
@@ -5448,5 +5579,13 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2016-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2016-ordinary/prior-2016-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2016-ordinary/prior-2016-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2016-ol-q2-complete",
+      "priorSha256": "e1e1939dae781c609d933c16861d1517a46fd89f7da8971ae87a7da673865fa1",
+      "correctedSha256": "58c05be138c49b4d21a1ca338bd2fae9c4cbd169c6559790a55c584062d25807",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    }
+  ]
 }
