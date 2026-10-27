@@ -157,6 +157,12 @@ subject-specific generators.
   discussion", "5 for names (3/2)", "10/10/10" beside printed headings,
   "2 x 5 for functions", "Location - 5 Function - 5") into parts that add
   up to the row; a cell that prices nothing stays a note under the row.
+  History Ordinary Level answer lines priced in halves ("Sods (3M) and
+  saplings (3M)") are cut at the printed prices by `hist_rows.py`, which
+  `hist_all.py` applies to every card it builds and which also upgrades an
+  authored `history.json` in place (`--write`); a price that is the whole
+  with partials after it becomes one row with printed steps, "Any TWO: …
+  (3M + 3M)" an any-two group, and a "5M + 5M Max =" fragment the row's note.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.
