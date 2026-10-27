@@ -55868,7 +55868,7 @@
     "verbatim": "add (mix) Tollens’ (ammoniacal silver nitrate, Ag(I), Ag⁺) reagent to (with) ethanal",
     "marks": null,
     "openList": true,
-    "contextNote": "One test, its reagent: the scheme sets four, Tollens' first, Fehling's after \"or\", and acidified permanganate and acidified dichromate each after \"or allow\".",
+    "contextNote": "Claim the reagent and the result of one test, not the reagent of one and the result of another. One test, its reagent: the scheme sets four, Tollens' first, Fehling's after \"or\", and acidified permanganate and acidified dichromate each after \"or allow\".",
     "group": {
      "claimMax": 1,
      "options": [
@@ -57979,7 +57979,7 @@
     "verbatim": "increase concentration (pressure) of reactants",
     "marks": 8,
     "openList": true,
-    "contextNote": "Any two ways (STATE), each (4); the scheme sets the third after \"or allow\". It adds: [Allow add heat.]",
+    "contextNote": "Claim two ways here and, in the next row, the explanation of each of those same two ways. Any two ways (STATE), each (4); the scheme sets the third after \"or allow\". It adds: [Allow add heat.]",
     "group": {
      "claimMax": 2,
      "perOption": 4,
@@ -71590,7 +71590,7 @@
     "verbatim": "double bond in ethene breaks with H⁺ adding to (with H⁺ forming a bond with) one carbon atom giving carbononium ion (carbocation, C⁺, intermediate) / double bond breaks and new C-H bond formed with H⁺, giving carbonium ion (carbocation, C⁺, intermediate)",
     "marks": 3,
     "openList": true,
-    "contextNote": "The second step, as that same description sets it (3). The third description prices this step and the last together, (6): claim it here and again below.",
+    "contextNote": "The second step, as that same description sets it (3). The third description sets this step and the last as one line, its third option here, priced together (6): it can be claimed once, here, for (3), so a student who gave it adds the other (3) for the last step.",
     "group": {
      "claimMax": 1,
      "perOption": 3,
@@ -71603,19 +71603,11 @@
    },
    {
     "id": "r-5",
-    "kind": "anyN",
+    "kind": "point",
     "verbatim": "addition of Cl⁻ to carbonium ion (carbocation, C⁺, intermediate) gives product (chloroethane)",
     "marks": 3,
     "openList": true,
-    "contextNote": "The last step (3); the first two descriptions set it in the same words. The scheme adds: [Allow cyclic carbocation.] [Marks available for diagrams, allow correct use of curly arrows (but not half-arrows (fishhooks).] [Deduct (3) marks for each of the following errors: H⁺—Cl⁻, addition of Clδ– instead of Cl⁻ in third step, each reference to radicals, reference to Cl⁻ adding first and H⁺ adding in third step.]",
-    "group": {
-     "claimMax": 1,
-     "perOption": 3,
-     "options": [
-      "addition of Cl⁻ to carbonium ion (carbocation, C⁺, intermediate) gives product (chloroethane)",
-      "double bond breaks with H⁺ adding to ethene and simultaneous (followed very rapidly by) breaking of bond in nearby HCl molecule to then allow addition of Cl⁻ giving product (chloroethane) and regenerating a H⁺"
-     ]
-    }
+    "contextNote": "The last step (3), in the words the first two descriptions both set (the third description's is in its line above). The scheme adds: [Allow cyclic carbocation.] [Marks available for diagrams, allow correct use of curly arrows (but not half-arrows (fishhooks).] [Deduct (3) marks for each of the following errors: H⁺—Cl⁻, addition of Clδ– instead of Cl⁻ in third step, each reference to radicals, reference to Cl⁻ adding first and H⁺ adding in third step.]"
    }
   ]
  },
@@ -82386,7 +82378,7 @@
     "verbatim": "add reagent (tablet, sachet) to sample in suitable container (compartment of comparator)",
     "marks": 9,
     "openList": true,
-    "contextNote": "DESCRIBE: any three steps of the one method used, (3) each: \"ANY THREE: (3 × 3)\". The scheme sets the comparator's four steps (the first four here) beside the colorimeter's (the last four) in a table, shown with the answer. It adds: [Marks available for description where method incorrectly named.]",
+    "contextNote": "Claim three steps of one method, the comparator's or the colorimeter's, not a mix of the two. DESCRIBE: any three steps of the one method used, (3) each: \"ANY THREE: (3 × 3)\". The scheme sets the comparator's four steps (the first four here) beside the colorimeter's (the last four) in a table, shown with the answer. It adds: [Marks available for description where method incorrectly named.]",
     "group": {
      "claimMax": 3,
      "perOption": 3,
@@ -89338,7 +89330,7 @@
     "verbatim": "there are three groups of ionisations (electrons, points) with gradual (small) energy differences between them because they involve electrons in the same energy level (shell)",
     "marks": 6,
     "openList": true,
-    "contextNote": "EXPLAIN: two points, (3) each: the first two together, or, after \"or\", any two of the last three (\"ANY TWO: (2 × 3)\"). The scheme adds: [Responses here must make sense and not just contain the correct phrases – beware of incorrect use of sublevel and orbital.]",
+    "contextNote": "Claim the points of one explanation, the first two together or two of the last three, not a mix. EXPLAIN: two points, (3) each: the first two together, or, after \"or\", any two of the last three (\"ANY TWO: (2 × 3)\"). The scheme adds: [Responses here must make sense and not just contain the correct phrases – beware of incorrect use of sublevel and orbital.]",
     "group": {
      "claimMax": 2,
      "perOption": 3,
@@ -93824,7 +93816,7 @@
     "verbatim": "apply mixture using dropper (capillary tube) / spotting on paper",
     "marks": 12,
     "openList": true,
-    "contextNote": "Any three of these, the first (6), the others (3), from the method used: the scheme lists four points for paper chromatography (the first four here), four for thin-layer chromatography (the next four) and four for column chromatography (the rest; under its third, \"add eluent**\", it prints \"continue to add eluent** so that it flows through column\" with no solidus between), and prices each method \"ANY THREE: (6 + 3 + 3)\". The scheme adds: \"* The eluent** can be at the top of the tank and move down the paper.\" \"** For eluent accept mobile phase or solvent or named solvent, e.g. water.\" [Marks can be awarded for labelled diagram, and least one label being present.]",
+    "contextNote": "Claim three points of one method, paper, thin-layer or column chromatography, not a mix. Any three of these, the first (6), the others (3), from the method used: the scheme lists four points for paper chromatography (the first four here), four for thin-layer chromatography (the next four) and four for column chromatography (the rest; under its third, \"add eluent**\", it prints \"continue to add eluent** so that it flows through column\" with no solidus between), and prices each method \"ANY THREE: (6 + 3 + 3)\". The scheme adds: \"* The eluent** can be at the top of the tank and move down the paper.\" \"** For eluent accept mobile phase or solvent or named solvent, e.g. water.\" [Marks can be awarded for labelled diagram, and least one label being present.]",
     "group": {
      "claimMax": 3,
      "perOption": 6,
@@ -97606,7 +97598,7 @@
     "verbatim": "apply mixture using dropper (capillary tube) / spot on paper",
     "marks": 12,
     "openList": true,
-    "contextNote": "DESCRIBE: four points of the one method used, (3) each. Paper chromatography is points 1-4 (4 × 3); thin-layer chromatography points 5-7, with point 3 as its third (4 × 3); column chromatography points 8-12, two of points 8-10 (2 × 3) and points 11-12 (2 × 3). The scheme draws each method, labelled; its own print is shown with the answer. It adds: [Lid not required in diagram.] [The elution stage must be described but separation may be shown. The elution stage may be shown on a second diagram which shows the solvent front and the separation.] [**Accept “soaks up” or “absorbs” for “moves up”.] [* Accept “mobile phase,” “solvent” or “named solvent” for “eluent” .] [If there is no diagram, or if the diagram does not have at least one label, deduct 3 marks, but only if at least 3 marks have been awarded.]",
+    "contextNote": "Claim four points of one method, paper, thin-layer or column chromatography, not a mix. DESCRIBE: four points of the one method used, (3) each. Paper chromatography is points 1-4 (4 × 3); thin-layer chromatography points 5-7, with point 3 as its third (4 × 3); column chromatography points 8-12, two of points 8-10 (2 × 3) and points 11-12 (2 × 3). The scheme draws each method, labelled; its own print is shown with the answer. It adds: [Lid not required in diagram.] [The elution stage must be described but separation may be shown. The elution stage may be shown on a second diagram which shows the solvent front and the separation.] [**Accept “soaks up” or “absorbs” for “moves up”.] [* Accept “mobile phase,” “solvent” or “named solvent” for “eluent” .] [If there is no diagram, or if the diagram does not have at least one label, deduct 3 marks, but only if at least 3 marks have been awarded.]",
     "group": {
      "claimMax": 4,
      "perOption": 3,
@@ -102653,7 +102645,7 @@
     "verbatim": "primary: screening / passing through a grid / use of grit channels / settling",
     "marks": 8,
     "openList": true,
-    "contextNote": "For the processes of any two stages, (4) each: the scheme prices each stage's process and its effect \"Any two 2 × (4 + 3)\". The scheme adds: [* settling can only be used once]",
+    "contextNote": "Claim the processes of two stages here and, in the next row, the effects of those same two stages. For the processes of any two stages, (4) each: the scheme prices each stage's process and its effect \"Any two 2 × (4 + 3)\". The scheme adds: [* settling can only be used once]",
     "group": {
      "claimMax": 2,
      "perOption": 4,
@@ -103887,7 +103879,7 @@
     "verbatim": "bubble through (shake with)",
     "marks": 6,
     "openList": true,
-    "contextNote": "Any two of these, (3) each: \"bubble through (shake with) // colour before // colour after ANY TWO: (2 × 3)\". The colour before is the reagent's own, red (orange, yellow, brown) for bromine water and purple (violet, pink) for acidified manganate(VII); the colour after is colourless for both. The scheme adds: [not “clear”] [Allow 3 marks for decolourise]",
+    "contextNote": "Claim the colour before of the reagent claimed above, not the other reagent's. Any two of these, (3) each: \"bubble through (shake with) // colour before // colour after ANY TWO: (2 × 3)\". The colour before is the reagent's own, red (orange, yellow, brown) for bromine water and purple (violet, pink) for acidified manganate(VII); the colour after is colourless for both. The scheme adds: [not “clear”] [Allow 3 marks for decolourise]",
     "group": {
      "claimMax": 2,
      "perOption": 3,
@@ -108797,35 +108789,39 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
+    "kind": "point",
     "verbatim": "A flocculating agent is added (e.g. aluminium sulfate)",
     "marks": 6,
     "openList": true,
-    "contextNote": "For how it is carried out: the first point of the process explained, flocculation's or fluoridation's. The scheme prices either process (2 × 6), one each, and prints \"or\" between them.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 6,
-     "options": [
-      "A flocculating agent is added (e.g. aluminium sulfate)",
-      "A fluoridating agent is added (e.g. sodium fluoride or antimony hexafluoride)"
-     ]
-    }
+    "contextNote": "Flocculation, how it is carried out. The scheme prices either process (2 × 6), one each, and prints \"or\" between them: flocculation is this row and the next, fluoridation the last two. The examiner marks the process explained, not a mix of the two.",
+    "route": "a"
    },
    {
     "id": "r-2",
-    "kind": "anyN",
+    "kind": "point",
     "verbatim": "Removes finely suspended / reference to formation of clumps (flocs) or settling",
     "marks": 6,
     "openList": true,
-    "contextNote": "For why: the second point of the same process.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 6,
-     "options": [
-      "Removes finely suspended / reference to formation of clumps (flocs) or settling",
-      "Prevention of tooth decay"
-     ]
-    }
+    "contextNote": "Flocculation, why.",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A fluoridating agent is added (e.g. sodium fluoride or antimony hexafluoride)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Or fluoridation, how it is carried out.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Prevention of tooth decay",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Fluoridation, why.",
+    "route": "b"
    }
   ]
  },

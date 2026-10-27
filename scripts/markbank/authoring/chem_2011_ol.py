@@ -473,7 +473,8 @@ _effect = options([_r9[1], _r9[4], less_any(_r9[7], ' Any two 2 ×')])
 assert [p.split(':')[0] for p in _process] == ['primary', 'secondary', 'tertiary'], _process
 _any9 = traced('Any two 2 × (4 + 3)')
 C.add([k('9', 'b')], 'chem-4-3', 'stages-of-sewage-treatment', [
-    anyN('r-1', _process[0], 8, 2, 4, _process, 'For the processes of any two stages, (4) each: the scheme prices '
+    anyN('r-1', _process[0], 8, 2, 4, _process, 'Claim the processes of two stages here and, in the next row, the '
+         'effects of those same two stages. For the processes of any two stages, (4) each: the scheme prices '
          'each stage\'s process and its effect "' + _any9 + '". The scheme adds: ' + _q9b[1].text),
     anyN('r-2', _effect[0], 6, 2, 3, _effect, 'For the effects of the same two stages, (3) each, in the scheme\'s '
          'order: primary, secondary, tertiary.')], total=14)

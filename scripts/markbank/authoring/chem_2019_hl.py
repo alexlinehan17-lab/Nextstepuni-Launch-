@@ -197,7 +197,10 @@ assert [it.cell for it in _q2b] == ['[6 + 3]', '[6 + 3]'], _q2b
 _t, _u = _q2b[0].points(), _q2b[1].points()
 assert len(_t) == 4 and _u[0] == 'or allow' and _u[3] == 'or allow' and len(_u) == 6, (_t, _u)
 C.add([k('2', 'b')], 'chem-4-2', 'test-showing-ethanal-is-easily-oxidised', [
+    # No pairing mechanism fits (four tests, a reagent and a result each, is eight
+    # rows): the pairing is a direction on the row.
     menu_row('r-1', [_t[0], _t[2], _u[1], _u[4]], 1,
+             'Claim the reagent and the result of one test, not the reagent of one and the result of another. '
              'One test, its reagent: the scheme sets four, Tollens\' first, Fehling\'s after "or", and '
              'acidified permanganate and acidified dichromate each after "or allow".'),
     menu_row('r-2', [_t[1], _t[3], _u[2], _u[5]], 1, 'And the result of that same test, in the same order.')],
@@ -604,6 +607,7 @@ C.add([k('9', 'd')], 'chem-3-2', 'activation-energy-and-raising-the-rate', [
          + ' '.join(_q9d[1].asides)),
     lift('r-2', _p[1], 3),
     menu_row('r-3', [_p[4], _q9d[3].text, _w[1]], 2,
+             'Claim two ways here and, in the next row, the explanation of each of those same two ways. '
              'Any two ways (STATE), each (4); the scheme sets the third after "or allow". It adds: '
              + ' '.join(_q9d[3].asides), per=4, total=8),
     menu_row('r-4', [_q9d[2].text, _q9d[4].text, _q9d[6].text], 2,

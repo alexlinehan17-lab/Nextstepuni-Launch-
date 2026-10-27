@@ -601,6 +601,7 @@ _footnote2 = _q10c3[3].text
 assert _footnote2 == '** For eluent accept mobile phase or solvent or named solvent, e.g. water.', _footnote2
 C.add([k('10', 'c', 'iii')], 'chem-u2', 'separating-indicators-by-chromatography', [anyN(
     'r-1', _chrom[0], 12, 3, 6, _chrom,
+    'Claim three points of one method, paper, thin-layer or column chromatography, not a mix. '
     'Any three of these, the first (6), the others (3), from the method used: the scheme lists four points for '
     'paper chromatography (the first four here), four for thin-layer chromatography (the next four) and four for '
     'column chromatography (the rest; under its third, "add eluent**", it prints "' + traced(_continue)

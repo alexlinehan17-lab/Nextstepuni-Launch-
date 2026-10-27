@@ -613,11 +613,15 @@ C.add([k('10', 'c', 'i')], 'chem-4-2', 'ionic-addition-of-hydrogen-chloride-to-e
              'DESCRIBE, "(3 × 3)": the first step of the one description given. The scheme sets three, the '
              'second and third each after "or", each with its diagrams, which earn the same marks; its own '
              'print is shown with the answer.', per=3, total=3),
+    # The third description sets its second and last steps as one line priced (6). It is
+    # offered once, in the second step's menu, so no line can be claimed twice; the card
+    # can count it (3), and the row note says the scheme's other (3) is the student's to add.
     menu_row('r-4', [_a2, _b2_[:-len(' //')], _c23], 1,
-             'The second step, as that same description sets it (3). The third description prices this step '
-             'and the last together, (6): claim it here and again below.', per=3, total=3),
-    menu_row('r-5', [_a3, _c23], 1, 'The last step (3); the first two descriptions set it in the same words. The '
-             'scheme adds: ' + _adds, per=3, total=3)], total=13, figure=S + 'q10c-i')
+             'The second step, as that same description sets it (3). The third description sets this step '
+             'and the last as one line, its third option here, priced together (6): it can be claimed once, '
+             'here, for (3), so a student who gave it adds the other (3) for the last step.', per=3, total=3),
+    lift('r-5', _a3, 3, 'The last step (3), in the words the first two descriptions both set (the third '
+         'description\'s is in its line above). The scheme adds: ' + _adds)], total=13, figure=S + 'q10c-i')
 C.fixed([k('10', 'c', 'ii')], 'chem-2-2', 'geometry-around-carbon-in-ethene-and-chloroethane')
 C.fixed([k('10', 'c', 'iii')], 'chem-4-2', 'chloroethane-from-ethane')
 

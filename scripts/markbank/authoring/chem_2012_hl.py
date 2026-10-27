@@ -274,6 +274,7 @@ C.add([k('2', 'c')], 'chem-2-4', 'testing-ethene-for-unsaturation', [
     menu_row('r-1', [_br[:-len(' (3)')], _mn[:-len(' (3)')]], 1, 'TEST: "reagent used" (3), one of the two in the '
              'scheme\'s table, shown with the answer. The scheme adds: ' + _star, per=3, total=3),
     menu_row('r-2', ['bubble through (shake with)', _red[:-len(' (3)')], _purple[:-len(' (3)')], 'to colourless'], 2,
+             'Claim the colour before of the reagent claimed above, not the other reagent\'s. '
              'Any two of these, (3) each: "bubble through (shake with) // colour before // colour after ' + _anytwo
              + '". The colour before is the reagent\'s own, red (orange, yellow, brown) for bromine water and purple '
              '(violet, pink) for acidified manganate(VII); the colour after is colourless for both. The scheme adds: '

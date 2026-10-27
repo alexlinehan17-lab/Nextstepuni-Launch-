@@ -285,7 +285,8 @@ _soak, _mob = traced(raw(6, 741, 758, 165)), traced(raw(7, 160, 177, 165))
 _nodia = traced(raw(7, 197, 227, 165))
 assert _elu.startswith('[The elution stage') and _nodia.startswith('[If there is no diagram'), (_elu, _nodia)
 C.add([k('2', 'c')], 'chem-u2', 'separating-indicators-by-chromatography', [
-    menu_row('r-1', _chrom, 4, 'DESCRIBE: four points of the one method used, (3) each. Paper chromatography is '
+    menu_row('r-1', _chrom, 4, 'Claim four points of one method, paper, thin-layer or column chromatography, not '
+             'a mix. DESCRIBE: four points of the one method used, (3) each. Paper chromatography is '
              'points 1-4 (4 × 3); thin-layer chromatography points 5-7, with point 3 as its third (4 × 3); column '
              'chromatography points 8-12, two of points 8-10 (2 × 3) and points 11-12 (2 × 3). The scheme draws each '
              'method, labelled; its own print is shown with the answer. It adds: '

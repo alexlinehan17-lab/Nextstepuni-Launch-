@@ -421,7 +421,8 @@ assert len(_e1) == 2 and len(_e2) == 3 and raw(13, 325, 343) == 'or', (_e1, _e2)
 _any2 = raw(13, 489, 507, 430)
 assert _any2 == 'ANY TWO: (2 × 3)', _any2
 C.add([k('5', 'c')], 'chem-1-2', 'ionisation-energies-as-evidence-for-energy-levels', [
-    menu_row('r-1', _e1 + _e2, 2, 'EXPLAIN: two points, (3) each: the first two together, or, after "or", any two of '
+    menu_row('r-1', _e1 + _e2, 2, 'Claim the points of one explanation, the first two together or two of the last '
+             'three, not a mix. EXPLAIN: two points, (3) each: the first two together, or, after "or", any two of '
              'the last three ("' + _any2 + '"). The scheme adds: ' + _q5c[1].asides[1], per=3, total=6),
     lift('r-2', _q5c[2].text, 3, 'OTHER.')], total=9, figure=FIG + 'paper-q5c')
 

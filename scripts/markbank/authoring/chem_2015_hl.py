@@ -295,7 +295,8 @@ _incor = raw(6, 596, 612, 130, 440)
 assert _any3 == 'ANY THREE: (3 × 3)' and _incor == '[Marks available for description where method incorrectly named.]'
 C.add([k('3', 'd')], 'chem-4-3', 'estimating-free-chlorine-with-a-comparator-or-colorimeter', [
     lift('r-1', _q3d[0].text, 6, 'IDENTIFY.'),
-    menu_row('r-2', _comp + _col, 3, 'DESCRIBE: any three steps of the one method used, (3) each: "' + _any3
+    menu_row('r-2', _comp + _col, 3, 'Claim three steps of one method, the comparator\'s or the colorimeter\'s, '
+             'not a mix of the two. DESCRIBE: any three steps of the one method used, (3) each: "' + _any3
              + '". The scheme sets the comparator\'s four steps (the first four here) beside the colorimeter\'s '
              '(the last four) in a table, shown with the answer. It adds: ' + _incor, per=3, total=9)],
     total=15, figure=S + 'q3d')

@@ -99,6 +99,14 @@ def lift(rid, text, marks, note=''):
     return C.lifted(rid, display(text).strip(), marks, note)
 
 
+def routed(row, route):
+    """A row on one side of the scheme's "or": a student who claims a row of one
+    route has the other route's rows locked (the session's mutually exclusive
+    routes), so the two answers are both claimable and never mixed."""
+    row['route'] = route
+    return row
+
+
 def bare(text):
     """An answer less the double solidus the scheme sets after it."""
     assert text.endswith('//'), text
@@ -569,17 +577,22 @@ C.add([k('9', 'a')], 'chem-4-3', 'harm-from-acidic-drinking-water', [lift('r-1',
       ref_suffix='after (ii), a pH too low')
 # Then flocculation or fluoridation, "how and why": the scheme prices either
 # process (2 × 6), printing "or" between them (scheme PDF page 13); its two points
-# are the process's how and why. One menu for each point, from the process the
-# student explains.
+# are the process's how and why. Each process is a route, its how and its why a
+# row each: a student claims the two points of the process they explained, and
+# the other process's rows lock, so a how of one is never paired with a why of
+# the other.
 _floc = [r.text for r in _q9a2[2].rows]
 _fluor = [r.text for r in _q9a2[3].rows]
 assert len(_floc) == 3 and len(_fluor) == 3, (_floc, _fluor)
 _how = options([bare(uncue(_floc[0], 'Flocculation:')), bare(uncue(_fluor[0], 'Fluoridation:') + ' ' + _fluor[1])])
 _why = options([f'{_floc[1]} {_floc[2]}', _fluor[2]])
 C.add([k('9', 'a')], 'chem-4-3', 'flocculation-and-fluoridation', [
-    menu('r-1', _how, 1, 6, 'For how it is carried out: the first point of the process explained, flocculation\'s '
-         'or fluoridation\'s. The scheme prices either process (2 × 6), one each, and prints "or" between them.'),
-    menu('r-2', _why, 1, 6, 'For why: the second point of the same process.')],
+    routed(lift('r-1', _how[0], 6, 'Flocculation, how it is carried out. The scheme prices either process (2 × 6), '
+                'one each, and prints "or" between them: flocculation is this row and the next, fluoridation the '
+                'last two. The examiner marks the process explained, not a mix of the two.'), 'a'),
+    routed(lift('r-2', _why[0], 6, 'Flocculation, why.'), 'a'),
+    routed(lift('r-3', _how[1], 6, 'Or fluoridation, how it is carried out.'), 'b'),
+    routed(lift('r-4', _why[1], 6, 'Fluoridation, why.'), 'b')],
     total=12, qtext=cut(Q9A, 'Flocculation'), stem='', cid='q9-a-flocculation-or-fluoridation',
     ref_suffix='after (ii), flocculation or fluoridation')
 # (b): four blanks priced "[9 + 6 + (2 × 3)]" without saying which earns which;

@@ -14,6 +14,7 @@
  {"id": "chem-2017-hl-q9-b-i-ii", "ask": "of 0.10 M hydrochloric acid and 0.10 M sulfuric acid", "answer": "HCOOH weaker than HCl", "solution": true},
  {"id": "chem-2017-hl-q10-a", "ask": "Draw a large, clearly-labelled diagram of an apparatus", "answer": "vapour in gas syringe", "solution": true},
  {"id": "chem-2017-hl-q10-a-i", "ask": "Calculate the number of moles of vapour present.", "answer": "an equation font its text cannot carry", "solution": true},
+ {"id": "chem-2017-hl-q10-c-i", "ask": "Name and describe the mechanism for this reaction.", "answer": "addition of Cl⁻ to carbonium ion", "solution": true},
  {"id": "chem-2017-hl-q11-a-i", "ask": "", "answer": "3.81 ÷ 63.5 = 0.06 moles Cu", "figure": true, "solution": true},
  {"id": "chem-2017-hl-q11-b-after-iii", "ask": "Use electron pair repulsion theory to predict the shape", "answer": "trigonal (triangular) planar"},
  {"id": "chem-2017-hl-q11-c-a-iii", "ask": "Explain how the air intake is liquefied", "answer": "and allowed to expand", "figure": true}
