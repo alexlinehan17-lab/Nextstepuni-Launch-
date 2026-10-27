@@ -84,8 +84,8 @@
  },
  "biology-2010-ol-q1-carbon": {
   "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
-  "md5": "5a802101f9e2370a20203452d28370db",
-  "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+  "md5": "f143cc4daf82e9902647d77ffa2a02a3",
+  "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.",
   "lettersVisible": [
    "A",
    "B",
@@ -105,6 +105,15 @@
    109,
    468,
    302
+  ],
+  "maskedShowThrough": [
+   [
+    152.4,
+    147.72,
+    360.96,
+    296.94,
+    200
+   ]
   ]
  },
  "biology-2010-ol-q10-pyramid": {

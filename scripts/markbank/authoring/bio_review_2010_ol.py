@@ -59,8 +59,10 @@ It misspells "Heterotrohic nutrition" (Q13(a)(ii)), "rythym" (Q14(b)(v)) and
 line, so it is D's note, as printed. The paper's Q1 carbon-cycle picture
 carries a faint show-through of other printed text inside its scanned image,
 behind the lower half of the drawing (partly legible at 6x zoom: "...
-Photosynthesis ...", "... Combustion ...", "... Oxygen ..."); it is the SEC's
-own print and is cropped as printed, not masked (brought to the coordinator).
+Photosynthesis ...", "... Combustion ...", "... Oxygen ..."). The review
+cropped it as printed; on 2026-10-27 the show-through was masked (FIGURES:
+pixels lighter than grey 200 inside the scanned picture whitened, every
+printed stroke kept).
 
 The census reader finds all 145 printed asks, keyed as the paper prints them
 (Q2 and Q4-Q6 by roman alone); no paper.py entry was needed. 144 are claimed
@@ -1079,8 +1081,13 @@ FIGURES = {
         'Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal '
         'carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side '
         'from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to '
-        'Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, '
-        'mostly illegible show-through of printed text lies behind the drawing.', False),
+        'Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.', False,
+        # The scanned picture (page rect 152.4, 147.72 to 360.96, 296.94) carries the SEC scan's faint show-through
+        # of other printed text behind the drawing's lower half, legible when enlarged and reading answer words
+        # ("Photosynthesis", "Combustion", "Respiration", "Oxygen"). Masked 2026-10-27: inside the picture, pixels
+        # lighter than grey 200 are whitened (the show-through measures lighter; every printed stroke is black),
+        # which leaves no non-white pixel more than 3 px from a stroke darker than 100 and the drawing intact.
+        [(152.4, 147.72, 360.96, 296.94, 200)]),
     'q3-cell': ('paper', 3, (120, 84, 482, 210), SEC, ['A', 'B', 'C'],
         'Drawing of a rectangular cell with a thick outer border and a thin line just inside it, its interior dotted. '
         'A large, irregular clear space fills the middle; a dark round shaded body sits at the upper right; six oval '

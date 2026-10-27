@@ -48162,8 +48162,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2010-ol-q1-carbon",
           "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
-          "srcHash": "5a802101f9e2370a20203452d28370db",
-          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+          "srcHash": "f143cc4daf82e9902647d77ffa2a02a3",
+          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.",
           "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -48191,8 +48191,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2010-ol-q1-carbon",
           "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
-          "srcHash": "5a802101f9e2370a20203452d28370db",
-          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+          "srcHash": "f143cc4daf82e9902647d77ffa2a02a3",
+          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.",
           "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -48220,8 +48220,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2010-ol-q1-carbon",
           "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
-          "srcHash": "5a802101f9e2370a20203452d28370db",
-          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+          "srcHash": "f143cc4daf82e9902647d77ffa2a02a3",
+          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.",
           "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -48249,8 +48249,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2010-ol-q1-carbon",
           "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
-          "srcHash": "5a802101f9e2370a20203452d28370db",
-          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+          "srcHash": "f143cc4daf82e9902647d77ffa2a02a3",
+          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.",
           "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -48278,8 +48278,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2010-ol-q1-carbon",
           "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
-          "srcHash": "5a802101f9e2370a20203452d28370db",
-          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+          "srcHash": "f143cc4daf82e9902647d77ffa2a02a3",
+          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.",
           "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": [
                 "A",
@@ -48320,8 +48320,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "biology-2010-ol-q1-carbon",
           "src": "/exam-figures/biology/markbank/biology-2010-ol-q1-carbon.png",
-          "srcHash": "5a802101f9e2370a20203452d28370db",
-          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D. Faint, mostly illegible show-through of printed text lies behind the drawing.",
+          "srcHash": "f143cc4daf82e9902647d77ffa2a02a3",
+          "alt": "Diagram of the carbon cycle. CO2 at the top; Humus, Plant carbohydrate and Dead organisms across the middle; Animal carbohydrate at the bottom; an empty box labelled X at the top right. Arrows: one curving down from CO2 to Plant carbohydrate, labelled B; one curving back up from Plant carbohydrate to CO2, labelled A; one up from Humus to CO2; one from Plant carbohydrate left to Humus; one curving down from Plant carbohydrate to Animal carbohydrate, labelled C; one up from Animal carbohydrate to Humus, labelled 1; a long arc up the left side from Animal carbohydrate to CO2, also labelled A; one each from Plant carbohydrate and Animal carbohydrate to Dead organisms; one up from Dead organisms to the box X; and one from X back to CO2, labelled D.",
           "attribution": "SEC Leaving Certificate Biology 2010 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": [
                 "A",

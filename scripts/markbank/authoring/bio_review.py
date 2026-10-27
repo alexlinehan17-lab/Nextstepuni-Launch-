@@ -879,14 +879,31 @@ def figures(ledger, lifter, year, level, write):
         zoom = 4 if clip.height < 60 else 3
         pix = pg.get_pixmap(matrix=fitz.Matrix(zoom, zoom), clip=clip)
         for m in masks:
-            mr = fitz.Rect(*m) & clip
+            mr = fitz.Rect(*m[:4]) & clip
             if mr.is_empty:
                 raise Refusal(f'{key}: mask {m} is outside the crop')
             # A clipped pixmap keeps page coordinates: its irect starts at the
             # clip's own origin, not at (0, 0).
             ir = fitz.IRect(round(mr.x0 * zoom), round(mr.y0 * zoom),
                             round(mr.x1 * zoom), round(mr.y1 * zoom)) & pix.irect
-            pix.set_rect(ir, (255, 255, 255))
+            if len(m) == 4:
+                pix.set_rect(ir, (255, 255, 255))
+                continue
+            # A fifth value is a grey level: a SHOW-THROUGH mask. Inside the
+            # rectangle only pixels lighter than it are whitened, so the
+            # scan's faint reverse-side print goes and every printed stroke
+            # darker than it stays (2010 Ordinary Q1's carbon cycle, whose
+            # show-through reads answer words behind the drawing).
+            cut = m[4]
+            if not (pix.n == 3 and not pix.alpha and 0 < cut < 255):
+                raise Refusal(f'{key}: show-through mask {m} needs an RGB crop and a grey level 1-254')
+            buf, stride = pix.samples_mv, pix.stride
+            for y in range(ir.y0 - pix.y, ir.y1 - pix.y):
+                row = y * stride
+                for x in range(ir.x0 - pix.x, ir.x1 - pix.x):
+                    i = row + 3 * x
+                    if buf[i] + buf[i + 1] + buf[i + 2] > 3 * cut:
+                        buf[i:i + 3] = b'\xff\xff\xff'
         png = pix.tobytes('png')
         rel = f'/exam-figures/biology/markbank/{key}.png'
         level_name = 'Higher' if level == 'hl' else 'Ordinary'
@@ -899,8 +916,10 @@ def figures(ledger, lifter, year, level, write):
                  'year': year, 'level': level_word(level), 'attribution': attribution,
                  'sourceDocument': ledger.SOURCES[doc]['fileid'], 'sourcePage': page,
                  'sourceRect': list(rect)}
-        if masks:
-            entry['maskedFurniture'] = [list(m) for m in masks]
+        if any(len(m) == 4 for m in masks):
+            entry['maskedFurniture'] = [list(m) for m in masks if len(m) == 4]
+        if any(len(m) == 5 for m in masks):
+            entry['maskedShowThrough'] = [list(m) for m in masks if len(m) == 5]
         if solution:
             entry['solution'] = True
         out[key] = entry
