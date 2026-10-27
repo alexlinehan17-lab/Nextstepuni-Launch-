@@ -4778,5 +4778,270 @@
   "description": "The marking scheme's own print of its answer to 2015 OL Q11(b), as the State Examinations Commission set it: WRITE: Kc = [NH₃]² over [N₂][H₂]³, the fraction set on a grey ground (6).",
   "questionRef": "2015 OL Q11(b)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A boxed reaction scheme. Top row: a benzene ring bonded to a C carrying two H atoms and an O–H, an arrow labelled \"MnO₄⁻ / base\" to a benzene ring bonded to a C that is double-bonded to O and bonded to O⁻, with \"Na⁺\". Middle row: the same sodium salt, an arrow labelled \"A\" to a benzene ring bonded to a C that is double-bonded to O and bonded to \"OH\". Bottom: \"MnO₄⁻\" with an arrow to \"MnO₂\", and \"MnO₂\" with an arrow labelled \"B\" to \"Mn²⁺\".",
+  "questionRef": "2015 HL Q2"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table: \"Sample / Pool\" A, B, C, D; \"Suspended solids (p.p.m.)\" 350, 500, 650, 420; \"Dissolved solids (p.p.m.)\" 1280, 1400, 1290, 1360; \"Total hardness (p.p.m. CaCO₃)\" 215, 210, 220, 212; \"Free chlorine (p.p.m.)\" 0.1, 1.2, 2.5, 7.0; \"pH\" 7.2, 7.3, 7.2, 7.3; \"Suitable for swimming?\" No, Yes, Yes, No.",
+  "questionRef": "2015 HL Q3"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q3b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 HL Q3(b): \"The quality of water samples from swimming-pools A, B, C and D was assessed. The results of the tests carried out are summarised in the table.\"; the table: \"Sample / Pool\" A, B, C, D; \"Suspended solids (p.p.m.)\" 350, 500, 650, 420; \"Dissolved solids (p.p.m.)\" 1280, 1400, 1290, 1360; \"Total hardness (p.p.m. CaCO₃)\" 215, 210, 220, 212; \"Free chlorine (p.p.m.)\" 0.1, 1.2, 2.5, 7.0; \"pH\" 7.2, 7.3, 7.2, 7.3; \"Suitable for swimming?\" No, Yes, Yes, No; then \"(b) Calculate the mass in grams of dissolved solids in 250 cm³ of sample B.\"",
+  "questionRef": "2015 HL Q3(b)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q4g-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 HL Q4(g): \"(g) Copy the structure of the aspirin molecule shown into your answer book. (i) Draw a circle around the carboxylic acid group. (ii) Draw a rectangle around the carbonyl part of the ester group.\", \"circle\" and \"rectangle\" in bold; beside it, the structure of aspirin: a benzene ring bonded to a C that is double-bonded to O and bonded to OH and, at the next corner, to an O bonded to a C that is double-bonded to O and bonded to CH₃.",
+  "questionRef": "2015 HL Q4(g)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A vacuum tube: a rounded glass tube with a plate marked \"–\" at the left, labelled \"cathode\", and a plate marked \"+\" at the right, labelled \"anode\"; dotted arrows run from the cathode to the anode, labelled \"cathode rays\"; a small wheel with vanes stands on a rail in the middle of the tube, labelled \"paddle wheel\".",
+  "questionRef": "2015 HL Q5(a)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A conical flask with a little liquid at the bottom, labelled \"warm methanol\"; a coiled wire labelled \"Pt\" hangs down into the flask, above the liquid, from a strip of \"cardboard\" laid across the neck.",
+  "questionRef": "2015 HL Q7"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme of three boxes in a row: \"C₃H₆\" over \"A\"; an arrow labelled \"X\" from it to the shaded middle box, \"CH₃CHOHCH₃\" over \"B\"; and \"CH₃COCH₃\" over \"C\", with an arrow labelled \"Y\" from it to the middle box.",
+  "questionRef": "2015 HL Q8"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The titration apparatus and the table of readings: a burette labelled \"NaOH\" over a beaker labelled \"ethanoic acid\", a probe in the beaker wired to a \"pH meter\" reading \"10.00\"; below it, a table: \"Volume NaOH (cm³)\" 0.0, 2.0, 5.0, 10.0, 15.0, 17.5, 19.0, 19.5, 19.8, 20.0, 20.2, 20.5, 22.0, 25.5, 30.0, 40.0 against \"pH\" 3.3, 4.1, 4.5, 4.8, 5.1, 5.6, 6.2, 6.6, 7.0, 8.9, 10.7, 11.1, 11.6, 12.1, 12.3, 12.4.",
+  "questionRef": "2015 HL Q9"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q9c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 HL Q9(c): \"A sodium hydroxide solution was titrated with a solution of ethanoic acid using the apparatus shown on the right. A number of pH readings, together with the corresponding volumes of sodium hydroxide solution added, are shown in the table.\" and \"(c) Graph the pH curve for the titration.\"; then a burette labelled \"NaOH\" over a beaker labelled \"ethanoic acid\", a probe in the beaker wired to a \"pH meter\" reading \"10.00\"; below it, a table: \"Volume NaOH (cm³)\" 0.0, 2.0, 5.0, 10.0, 15.0, 17.5, 19.0, 19.5, 19.8, 20.0, 20.2, 20.5, 22.0, 25.5, 30.0, 40.0 against \"pH\" 3.3, 4.1, 4.5, 4.8, 5.1, 5.6, 6.2, 6.6, 7.0, 8.9, 10.7, 11.1, 11.6, 12.1, 12.3, 12.4.",
+  "questionRef": "2015 HL Q9(c)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q9d-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 HL Q9(d)(i): \"A sodium hydroxide solution was titrated with a solution of ethanoic acid using the apparatus shown on the right. A number of pH readings, together with the corresponding volumes of sodium hydroxide solution added, are shown in the table.\" and \"(d) (i) Calculate the initial concentration of ethanoic acid (Ka = 1.8 × 10⁻⁵) in the beaker.\"; then a burette labelled \"NaOH\" over a beaker labelled \"ethanoic acid\", a probe in the beaker wired to a \"pH meter\" reading \"10.00\"; below it, a table: \"Volume NaOH (cm³)\" 0.0, 2.0, 5.0, 10.0, 15.0, 17.5, 19.0, 19.5, 19.8, 20.0, 20.2, 20.5, 22.0, 25.5, 30.0, 40.0 against \"pH\" 3.3, 4.1, 4.5, 4.8, 5.1, 5.6, 6.2, 6.6, 7.0, 8.9, 10.7, 11.1, 11.6, 12.1, 12.3, 12.4.",
+  "questionRef": "2015 HL Q9(d)(i)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q10a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The Kekulé structure of benzene: a hexagon with a double bond drawn on every second side.",
+  "questionRef": "2015 HL Q10(a)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two pictures, one above the other: the equation A(g) ⇌ B(g) + C(g), the state symbols set as subscripts; and a graph, \"Kc\" up the side and \"T\" along the foot, with a curve that starts just above the foot, rises slowly and then steeply.",
+  "questionRef": "2015 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q11b-calc-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 HL Q11(b): \"(b) Gas A is in equilibrium with gases B and C according to the following equation.\"; the equation A(g) ⇌ B(g) + C(g), the state symbols set as subscripts; \"The equilibrium constant (Kc) value at 15 °C for the dissociation reaction is 4.0.\" \"A rigid 10 litre container was filled with 30 moles of gas A and stored at 15 °C.\" \"Calculate the number of gaseous moles at equilibrium in the container.\"",
+  "questionRef": "2015 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q11c-a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2015 HL Q11(c)A(i): \"A\"; \"‘Ireland is facing significant challenges in meeting its EU future emissions targets for greenhouse gases under the EU Climate and Energy package for 2020.’ (www.epa.ie)\", the words \"greenhouse gases\" underlined; then \"(i) Explain the underlined term.\"",
+  "questionRef": "2015 HL Q11(c)A(i)"
+ },
+ {
+  "file": "chemistry-2015-HL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A blast furnace in section: a tall, tapering furnace fed at the top by a conveyor, the top labelled \"charge\" and the lining \"refractory\"; arrows rise through the furnace from a pipe near the foot labelled \"hot air\"; at the foot, two outlets pour into wagons, labelled \"molten iron\" on the left and \"molten slag\" on the right.",
+  "questionRef": "2015 HL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q1d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q1(d)(i), as the State Examinations Commission set it: three boxed routes side by side, separated by \"/\": M = 6.35 × 2 over 254* = 0.05 = 0.05 M (3) and 25×0.05 over 1000 = 0.00125 moles (3) / 6.35 over 20 = 0.3175 g in 25 cm³ (3) and 0.3175 over 254* = 0.00125 moles (3) / 6.35 over 254* = 0.025 moles (3) and 0.025 over 20 = 0.00125 moles (3).",
+  "questionRef": "2015 HL Q1(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q1d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q1(d)(iii), as the State Examinations Commission set it: two boxed routes separated by \"/\": 0.0025 over 17.85 = 0.000140 = 0.000140 moles / cm³ (3) and 0.000140 × 1000 = 0.140 = 0.140 M (3) / 17.85 × M over 2 = 25 × 0.05 over 1 (3) and M = 0.140 = 0.140 M (3).",
+  "questionRef": "2015 HL Q1(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q2(d), as the State Examinations Commission set it: two boxed routes side by side: 2.7 × 1.04 = 2.808 g (3); 2.808 over 108* = 0.026 moles (3); 0.026 × 122** = 3.172 g (3); 1.83 over 3.172 × 100 = 58% [57.69 – 58%] (3); and 2.7 × 1.04 = 2.808 g (3); 2.808 over 108* = 0.026 moles (3); 1.83 over 122** = 0.015 moles (3); 0.015 over 0.026 × 100 = 58% [57.69 – 58%] (3).",
+  "questionRef": "2015 HL Q2(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q3(b), as the State Examinations Commission set it: two boxed routes side by side, separated by \"/\": 1400 ppm = 1400 mg / L = 1.4 g / L (3) and 1.4 ÷ 4 = 0.35 g / 250 cm³ (3) / 1400 ppm = 1400 mg / L ⇒ 350 mg / 250 cm³ (3) and 350 ÷ 1000 = 0.35 g / 250 cm³ (3).",
+  "questionRef": "2015 HL Q3(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q3(c), as the State Examinations Commission set it: the equation Ca(HCO₃)₂ (aq) → / → CaCO₃↓ + H₂O + CO₂, the word \"boiling\" set over each arrow and \"Ca(HCO₃)₂ (aq)\" and \"CaCO₃↓\" shaded.",
+  "questionRef": "2015 HL Q3(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q3(d), as the State Examinations Commission set it: a table of two methods, each step priced (3). \"Comparator\": \"add reagent (tablet, sachet) to sample in suitable container (compartment of comparator)\"; \"stir (dissolve, mix, allow time, wait) for colour to develop\"; \"compare colour with chart (disc, card, comparator display)\"; \"read (match, get, note) concentration (ppm) of free chlorine (by reference to) chart (disc, card, comparator display)\". \"Colorimeter\": \"prepare a number of standard solutions of reagent\"; \"take (note) colorimeter readings (absorbances, transmittances, colour intensities)\"; \"plot graph of concentration versus reading (absorbance, transmittance, colour intensity)\"; \"read (get, note) concentration (ppm) of sample from graph (curve) using sample absorbance\".",
+  "questionRef": "2015 HL Q3(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q4c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q4(c), as the State Examinations Commission set it: \"a neutron changes into a proton / ¹₀n → ¹₁p //\", the n and the p each with a mass number over an atomic number, and \"and an electron (+ e⁻) that is emitted\".",
+  "questionRef": "2015 HL Q4(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q4e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q4(e), as the State Examinations Commission set it: boxed: 19.05 over 63.5 = 0.300 = 0.3 moles; 1.4 over 14 = = 0.10 = 0.1 moles / => 3 : 1 (3); => Cu₃N (3).",
+  "questionRef": "2015 HL Q4(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q4(g), as the State Examinations Commission set it: the structure of aspirin with its marks drawn on: a benzene ring bonded to a C that is double-bonded to O and bonded to OH, the C, O and OH inside a drawn circle; at the next corner, an O bonded to a C that is double-bonded to an O below it and bonded to CH₃, that C and the O below it inside a drawn rectangle.",
+  "questionRef": "2015 HL Q4(g)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q4j.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q4(j), as the State Examinations Commission set it: three boxed routes, each after \"or\". Shaded, 1.85 × 10⁵ × 6.50 × 10⁻⁵ = n × 8.3 × 293 / n = 1.85 × 10⁵ × 6.50 × 10⁻⁵ over 8.3 × 293 (3); = 0.005 (5 × 10⁻³) (3). P₁V₁ over T₁ = P₂V₂ over T₂ * => 1.85 × 10⁵ × 6.50 × 10⁻⁵ over 293 = 1.01 × 10⁵ × V₂ over 273 => V₂ = 1.11 × 10⁻⁴ m³ (3); 1.11 × 10⁻⁴ over 22.4 × 10⁻³ = 0.005 (5 × 10⁻³) \"[*Using standard T & P and molar volume at s.t.p.]\" (3). P₁V₁ = P₂V₂** => 1.85 × 10⁵ × 6.50 × 10⁻⁵ = 1.01 × 10⁵ × V₂ => V₂ = 1.19 × 10⁻⁴ m³ (3); 1.19 × 10⁻⁴ over 24.0 × 10⁻³ = 0.005 (5 × 10⁻³) \"[**Using room T & P and molar volume at room temperature.]\" (3).",
+  "questionRef": "2015 HL Q4(j)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q6(e), as the State Examinations Commission set it: two boxed routes, the second after \"or\": 2C + 2O₂ → 2CO₂ ΔH = – 787.0 kJ (3); 3H₂ + 1½O₂ → 3H₂O ΔH = – 857.4 kJ (3); 2CO₂ + 3H₂O → C₂H₅OH + 3O₂ ΔH = 1370.7 kJ (3); under a line, 2C + 3H₂ + ½O₂ → C₂H₅OH ΔH = – 273.7 kJ mol⁻¹ (3). ΣΔHc = ΣΔHf(products) – ΣΔHf(reactants); – 1370.7 = 2(–393.5) + 3(–285.8) – ΔHf(ethanol); ΔHf(ethanol) = 1370.7 (3) – 787.0 (3) – 857.4 (3); = – 273.7 kJ mol⁻¹ (3).",
+  "questionRef": "2015 HL Q6(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q7e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q7(e), as the State Examinations Commission set it: a reaction profile: \"energy\" up the side and \"time / reaction progress\" along the foot; a curve runs level, rises to a tall, narrow peak and falls to a lower level; an arrow from the first level up to the peak is labelled \"EA\", and an arrow between the two levels, each marked by a dotted line, is labelled \"ΔH\".",
+  "questionRef": "2015 HL Q7(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q8d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q8(d), as the State Examinations Commission set it: \"isomer:\" and a box: H–C–C–C–O–H with an H above and below each carbon; \"//\"; \"aldehyde:\" and a box: H–C–C–C with an H above and below each of the first two carbons, the third C double-bonded to O and bonded to H.",
+  "questionRef": "2015 HL Q8(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q9(c), as the State Examinations Commission set it: a graph on graph paper, \"pH\" 0 to 13 up the side and \"Volume NaOH (cm³)\" 0 to 40 along the foot: plotted crosses joined by a curve rising from 3.3 at 0, flattening near 5 by 15, rising steeply at 20, where a dashed line drops to the axis, and levelling off near 12.4 by 40.",
+  "questionRef": "2015 HL Q9(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q9d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q9(d)(i), as the State Examinations Commission set it: two boxed routes, the second after \"or\". Each opens, shaded, with [H⁺] = √Ka[CH₃COOH] / inverse log (–3.3) / 5.01 × 10⁻⁴ / –log√Ka[CH₃COOH] = 3.3 / log√Ka[CH₃COOH] = – 3.3 (6). The first: Ka = [CH₃COO⁻][H⁺] over [CH₃COOH] / [H⁺]² over [CH₃COOH] / 1.8 × 10⁻⁵ = [5.01 × 10⁻⁴]² over [CH₃COOH]; [CH₃COOH] = 0.014 M [0.0139 – 0.014 M] (3). The second: Ka[CH₃COOH] / 1.8 × 10⁻⁵ × [CH₃COOH] = (5.01 × 10⁻⁴)²; [CH₃COOH] = (5.01 × 10⁻⁴)² over 1.8 × 10⁻⁵ = 2.51 × 10⁻⁷ over 1.8 × 10⁻⁵ = 0.014 [0.0139 – 0.014 M] (3). Each ends \"Take [acid] or [HA] or M to be [CH₃COOH] and [A⁻] to be [CH₃COO⁻]\".",
+  "questionRef": "2015 HL Q9(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q10b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q10(b)(i), as the State Examinations Commission set it: a labelled diagram: a beaker of \"copper(II) sulfate\" holding two electrodes wired to a \"battery\"; the shaded lump on the left labelled \"impure copper, positive electrode, anode, +\" and the thin plate on the right \"pure copper, negative electrode, cathode, –\".",
+  "questionRef": "2015 HL Q10(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q10c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q10(c)(ii), as the State Examinations Commission set it: two boxed routes, separated by \"or\": 7.6 over 76* = 0.10 = 0.10 mol Mg₂Si (3) and 0.10 mol Mg₂Si → 0.40 = 0.4 mol Mg (3) / 4 × 24 × 7.6 over 76* = 9.6 g Mg (3) and 9.6 ÷ 24 = 0.4 mol Mg (3).",
+  "questionRef": "2015 HL Q10(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q10c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q10(c)(iii), as the State Examinations Commission set it: boxed, 0.10 mol Mg₂Si → 0.40 = 0.4 mol HCl (3), \"or\", boxed, 4 × 36.5 over 76* × 7.6 = 14.6 ÷ 36.5 = 0.4 mol HCl (3); then \"WHAT: 19 g MgCl₂ (6)\"; boxed, 0.10 mol Mg₂Si → 2 × 0.10 = 0.2 mol MgCl₂ (3) and 95** × 0.20 = 19 g MgCl₂ (3), \"or\", boxed, 76*g Mg₂Si → 2 × 95** / 190 g MgCl₂ (3) and 7.6 g Mg₂Si → 190 ÷ 10 = 19 g MgCl₂ (3).",
+  "questionRef": "2015 HL Q10(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q10c-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q10(c)(iv), as the State Examinations Commission set it: boxed, 0.10 mol Mg₂Si → 0.10 mol SiH₄ → 2 × 0.10 = 0.2 mol O₂ (2) and 0.20 × 24 = 4.8 litres (2); \"or\"; boxed, 76*g Mg₂Si → 2 × 24 / 48 L O₂ (2) and 7.6 g Mg₂Si → 48 over 76* × 7.6 = 4.8 L O₂ (2).",
+  "questionRef": "2015 HL Q10(c)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2015-HL-scheme-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2015 HL Q11(b), as the State Examinations Commission set it: two boxed routes side by side, some terms shaded. By concentrations: A ⇋ B + C; \"Start: 3.0 mol / L 0 mol / L 0 mol / L\"; \"Equil: (3 – x) (3) x x (3)\"; Kc = (x)² over (3.0–x) = 4 (3); x² + 4x – 12.0 = 0; (x + 6)(x – 2) = 0 / x = –(4) ± √((4)² – 4(1)(–12.0)) over 2; x = 2.0 mol / L (3); ⇒ 5.0 mol / L total; ⇒ 5.0 × 10 = 50 mol (1). By moles: A ⇋ B + C; \"Start: 30 mol 0 mol 0 mol\"; \"Equil: (30 – x) x x\"; \"Equil: ((30 – x) over 10) mol / L (3) x over 10 mol/L x over 10 mol/L (3)\"; Kc = (x over 10)² over ((30–x) over 10) = 4 / (x)² over (30–x) = 40 (3); x² + 40x – 1200 = 0; (x + 60)(x – 20) = 0 / x = –(40) ± √((40)² – 4(1)(–1200)) over 2; x = 20 mol (3); ⇒ 50 mol total (1). Below: \"[Where no other mark awarded allow (3) for Kc = [B][C] over [A].]\"",
+  "questionRef": "2015 HL Q11(b)",
+  "solution": true
  }
 ]

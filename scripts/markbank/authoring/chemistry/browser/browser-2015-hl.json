@@ -1,0 +1,21 @@
+[
+ {"id": "chem-2015-hl-q1-b", "ask": "Describe the procedure for measuring 25.0 cm³", "answer": "fill using pipette filler until bottom of meniscus is on mark"},
+ {"id": "chem-2015-hl-q1-d-i", "ask": "the number of moles of iodine in each 25.0 cm³ portion", "answer": "0.00125 (1.25 × 10⁻³) moles", "solution": true},
+ {"id": "chem-2015-hl-q2-b-oxidation-numbers", "ask": "State the changes in the oxidation number of manganese", "answer": "Mn⁷⁺ to 4", "figure": true},
+ {"id": "chem-2015-hl-q2-d", "ask": "calculate the percentage yield of benzoic acid", "answer": "0.026 × 122** = 3.172 g", "solution": true},
+ {"id": "chem-2015-hl-q3-b", "ask": "", "answer": "1400 ppm = 1400 mg / L = 1.4 g / L", "figure": true, "solution": true},
+ {"id": "chem-2015-hl-q3-d", "ask": "Describe how a comparator or a colorimeter", "answer": "plot graph of concentration versus reading", "solution": true},
+ {"id": "chem-2015-hl-q4-g-i-ii", "ask": "", "answer": "RECTANGLE: carbonyl", "figure": true, "solution": true},
+ {"id": "chem-2015-hl-q4-h-i-ii", "ask": "in the same group as magnesium but with smaller atoms", "answer": "beryllium (Be)"},
+ {"id": "chem-2015-hl-q4-k-b", "ask": "What are the second and fifth stages?", "answer": "re-extrusion (re-moulding)"},
+ {"id": "chem-2015-hl-q7-e-reaction-profile", "ask": "Sketch a reaction profile diagram", "answer": "suitable curve with energy of reactants greater than energy of products", "solution": true},
+ {"id": "chem-2015-hl-q8-c", "ask": "Identify the bonds broken and the bonds formed in conversion Y.", "answer": "broken: C to O pi (π) bond", "figure": true},
+ {"id": "chem-2015-hl-q8-d", "ask": "draw their full structural formulae", "answer": "lithium aluminium hydride", "solution": true},
+ {"id": "chem-2015-hl-q9-c", "ask": "", "answer": "careful plotting of vertical part", "figure": true, "solution": true},
+ {"id": "chem-2015-hl-q10-b-i", "ask": "Explain with the aid of a clearly-labelled diagram", "answer": "pure copper acts as (is attached to) cathode (negative electrode)", "solution": true},
+ {"id": "chem-2015-hl-q10-c-iii", "ask": "What mass of magnesium chloride is produced?", "answer": "95** × 0.20 = 19 g MgCl₂", "solution": true},
+ {"id": "chem-2015-hl-q11-b-calculation", "ask": "", "answer": "50 mol", "figure": true, "solution": true},
+ {"id": "chem-2015-hl-q11-b-endothermic", "ask": "Deduce whether the dissociation of gas A is exothermic or endothermic.", "answer": "Kc increases with temperature", "figure": true},
+ {"id": "chem-2015-hl-q11-c-a-i", "ask": "", "answer": "gases that absorb heat", "figure": true},
+ {"id": "chem-2015-hl-q11-c-b-ii", "ask": "Write a balanced equation for the reduction of iron(III) oxide", "answer": "2Fe₂O₃ + 3C → 4Fe + 3CO₂", "figure": true}
+]
