@@ -105,6 +105,9 @@ def page_lines(year,fid,p):
     out=[]
     for k in sorted(rows):
         ws=sorted(rows[k], key=lambda w:w[0])
+        # the 2024+ schemes price a line as "(10)" at its end: a mark, not a bracketed figure
+        if len(ws)>=2 and re.fullmatch(r'\(\d{1,2}\)', ws[-1][3]) and int(ws[-1][3][1:-1])<=50 and ws[-1][0]/W>=0.4:
+            x0,y0,x1,t=ws[-1]; ws[-1]=(x0,y0,x1,f'[{t[1:-1]}]')
         if len(ws)==1 and re.fullmatch(r'\d{1,3}', ws[0][3]) and ws[0][0]/W>=0.75:
             ws=[(ws[0][0],ws[0][1],ws[0][2],f'<box {ws[0][3]}>')]
         out.append({'p':p,'y':ws[0][1],'yf':ws[0][1]/H,'xf':ws[0][0]/W,'ws':ws,'W':W})
@@ -112,38 +115,76 @@ def page_lines(year,fid,p):
     page_cache[key]=out; return out
 BOX=re.compile(r'^<box (\d+)>$')
 TITLE=re.compile(r'^(?:\d{1,2}\.|QUESTION|Question|Q\.?\d)', re.I)
-LETTERS=re.compile(r'[A-Za-z]{3}')
-def figure_near(lines, i, x, span=1):
-    """A figure within 45pt of x on the line before or after line i."""
-    for j in (i-1, i+1, i-2, i+2):
+TITLE_PHRASE=re.compile(r'\b(?:Account|Balance Sheet|Statement|for the year|as at|Budget|Cash Flow|Schedule)\b', re.I)
+def header_of(lines):
+    """A grid's column headings: the run of word-only lines (to four) just above its first figures or marks line,
+    their words clustered by x into columns ("Fixed Assets" over "Equip" is one column)."""
+    first=next((i for i,l in enumerate(lines) if any(MARK.match(t) or FIG.match(t) for *_,t in l['ws'])), None)
+    if first is None: return None
+    head=[]
+    for j in range(first-1, max(-1, first-5), -1):
+        l=lines[j]
+        if not any(LETTERS.search(t) for *_,t in l['ws']) or TITLE.match(l['ws'][0][3]) or BOX.match(l['ws'][0][3]): break
+        head.insert(0, l)
+    toks=sorted([(x0,l['y'],x1,t) for l in head for x0,_,x1,t in l['ws'] if LETTERS.search(t)], key=lambda w:w[0])
+    cols=[]; cur=[]
+    for x0,y,x1,t in toks:
+        if cur and x0-max(c[2] for c in cur)>0.02*lines[0]['W']: cols.append(cur); cur=[]
+        cur.append((x0,y,x1,t))
+    if cur: cols.append(cur)
+    cols=[c for c in cols if len(c)>=1]
+    if len(cols)<3: return None
+    return [((min(c[0] for c in col)+max(c[2] for c in col))/2, ' '.join(t for _,_,_,t in sorted(col, key=lambda w:(round(w[1]),w[0])))) for col in cols]
+def row_label(lines, i):
+    """A grid row's own label: the leftmost word on the figures line, or on the line beside it ("December")."""
+    for j in (i, i+1, i-1, i+2, i-2):
         if 0<=j<len(lines):
-            cand=[(abs(px0-x),t) for px0,py0,px1,t in lines[j]['ws'] if FIG.match(t) and abs(px0-x)<45]
-            if cand: return min(cand)[1], j
-    return None, None
+            left=[t for x0,_,_,t in lines[j]['ws'] if x0/lines[j]['W']<0.25 and (LETTERS.search(t) or (re.fullmatch(r'\d{1,2}', t) and x0/lines[j]['W']<0.12)) and not MARK.match(t)]
+            if any(LETTERS.search(t) for t in left): return ' '.join(left[:3])
+    return ''
+LETTERS=re.compile(r'[A-Za-z]{3}')
+def figure_near(lines, i, x, span=4):
+    """The figure under or over a mark: of the lines up to four away with a figure within 45pt of x, the nearest by y."""
+    best=None
+    for j in range(max(0,i-span), min(len(lines),i+span+1)):
+        if j==i: continue
+        cand=[(abs(px0-x),t) for px0,py0,px1,t in lines[j]['ws'] if FIG.match(t) and abs(px0-x)<45]
+        if cand:
+            score=(abs(lines[j]['y']-lines[i]['y']), min(cand)[0])
+            if best is None or score<best[0]: best=(score, min(cand)[1], j)
+    return (best[1], best[2]) if best else (None, None)
 def column_heading(lines, i, x):
     """The nearest earlier line with a word near x that is not a figure or mark: a grid's column heading."""
     for j in range(i-1, max(-1, i-14), -1):
         words=[t for px0,py0,px1,t in lines[j]['ws'] if abs(px0-x)<60 and LETTERS.search(t) and not MARK.match(t) and not BOX.match(t)]
         if words: return ' '.join(words)
     return ''
-def rows_of(lines, totals):
+def rows_of(lines, totals, grid_mode=False):
     """Rows from lines: each [N] with the figure before it and its label; a mark with no figure (a theory part)
     takes the unpriced lines after it as its text; a boxed total with no marks after it prices a block."""
     rows=[]; qtotal=sum(totals)
     sums={sum(totals[i:j]) for i in range(len(totals)) for j in range(i+2,len(totals)+1)}
     pending_box=None
+    grids={}
+    if grid_mode:
+        for p in {l['p'] for l in lines}: grids[p]=header_of([l for l in lines if l['p']==p])
     def flush_box():
         nonlocal pending_box
         if pending_box and pending_box[2]:
             n,p,texts,y=pending_box
-            rows.append({'text':' '.join(texts)[:400],'figure':None,'marks':n,'p':p,'y':y,'block':True})
+            body=[t for t in texts if not re.fullmatch(r'(?:\(?[a-z]{1,4}\)\s*)+', t.strip())]
+            if sum(ch.isalpha() for ch in ' '.join(body))>=10:   # a block of points, not a bare heading under a section total
+                rows.append({'text':' '.join(texts)[:400],'figure':None,'marks':n,'p':p,'y':y,'block':True})
         pending_box=None
     for i,line in enumerate(lines):
         ws=line['ws']; texts=[t for *_,t in ws]
         boxed=[int(BOX.match(t).group(1)) for t in texts if BOX.match(t)]
         marks=[(k,int(MARK.match(t).group(1))) for k,t in enumerate(texts) if MARK.match(t)]
+        grid=grids.get(line['p']) if grid_mode else None
         if TITLE.match(texts[0]) and line['xf']<0.2 and marks and all(n>=10 for _,n in marks):
             marks=[]   # the question title carries its total in brackets ("1. Final Accounts … [80]")
+        if len(marks)==1 and marks[0][1] in totals and HEAD.match(texts[0]) and line['xf']<0.3 and TITLE_PHRASE.search(' '.join(texts)):
+            marks=[]   # a part heading carrying the part's total: "(b) Balance Sheet of … [40]"
         if boxed and not marks:
             flush_box(); pending_box=(boxed[0], line['p'], [], round(line['y']))
             rest=[t for t in texts if not BOX.match(t)]
@@ -153,32 +194,71 @@ def rows_of(lines, totals):
             if pending_box: pending_box[2].append(' '.join(texts))
             continue
         pending_box=None
-        only_marks=all(MARK.match(t) or BOX.match(t) for t in texts)
+        # a marks line: every token a mark, or a grid's marks row that also carries the row's total figure
+        only_marks=all(MARK.match(t) or BOX.match(t) for t in texts) or (len(marks)>=2 and (MARK.match(texts[0]) or BOX.match(texts[0])) and len(marks)>=0.6*len(texts))
         if len(marks)==1:
             n=marks[0][1]; others=[t for t in texts if not MARK.match(t)]
             # a section total: the sum of two or more parts, printed alone or on a part heading
             if n in sums and (only_marks or (len(others)==1 and HEAD.match(others[0]))): continue
             if only_marks and n>=10 and n==qtotal: continue
+            if only_marks and (n>=10 or ws[0][0]/line['W']>=0.75) and (n in totals or n in sums or n==qtotal):
+                # a section total at the right margin with no square drawn (Ordinary): priced lines follow it;
+                # a theory part's own mark at the right has only unpriced lines after it
+                priced_after=False; headings=0
+                for j in range(i+1, min(len(lines), i+16)):
+                    nt=[t for *_,t in lines[j]['ws']]
+                    if (HEAD.match(nt[0]) and HEAD.match(nt[0]).group(1) not in ROMAN and lines[j]['xf']<0.3) or TITLE.match(nt[0]):
+                        headings+=1
+                        if headings>1 or j>i+2: break   # the section's own heading may follow its total; the next section ends the look
+                        continue
+                    if BOX.match(nt[0]): break
+                    if any(MARK.match(t) for t in nt): priced_after=True; break
+                if priced_after: continue
         label=[]
         for k,(x0,y0,x1,t) in enumerate(ws):
             if MARK.match(t) or BOX.match(t): break
             if FIG.match(t) and k>0: break
             label.append(t)
-        for k,n in marks:
+        for mi,(k,n) in enumerate(marks):
             fig=None; lab=label; theory=False
             if not only_marks:
                 for j in range(k-1,-1,-1):
                     if FIG.match(texts[j]): fig=texts[j]; break
                     if MARK.match(texts[j]): break
+                if fig is not None and grid_mode and abs(ws[k][0]-ws[texts.index(fig)][0])>45:
+                    fig=None   # in a grid a figure further left belongs to another column: look above and below instead
+                if fig is None and grid_mode:
+                    near,j=figure_near(lines,i,ws[k][0])
+                    if near is not None:
+                        col=min(grid, key=lambda h: abs(h[0]-ws[k][0]))[1] if grid else ''
+                        lab=[w for w in (row_label(lines, j), col) if w]; fig=near
+                elif fig is None and k==0 and any(FIG.match(t) for t in texts):
+                    fig=' '.join(t for t in texts if FIG.match(t)); lab=[]   # the balancing totals' mark at the far left
+                if fig is not None and fig in texts[:k]:
+                    # a ledger line prices both sides: a mark's label is the words between the figure before its own and its figure
+                    f=max(j for j in range(k) if texts[j]==fig); seg=[]
+                    for j in range(f-1, -1, -1):
+                        if FIG.match(texts[j]) or MARK.match(texts[j]) or BOX.match(texts[j]): break
+                        seg.insert(0, texts[j])
+                    if seg: lab=seg
                 if fig is None and len(marks)==1: theory=True
             else:
                 x=ws[k][0]; fig,j=figure_near(lines,i,x)
                 lab=[]
-                if fig is not None:
+                if grid_mode and (fig is not None or grid):
+                    # a tabular statement: the row's label and the column's heading name the figure
+                    col=min(grid, key=lambda h: abs(h[0]-x))[1] if grid else ''
+                    lab=[w for w in (row_label(lines, j if fig is not None else i), col) if w]
+                elif fig is not None:
                     lab=[t for px0,py0,px1,t in lines[j]['ws'] if not FIG.match(t) and not MARK.match(t) and not BOX.match(t) and LETTERS.search(t)]
                     if not lab:
                         head=column_heading(lines, i, x)
                         lab=[head] if head else []
+                elif len(marks)==1:
+                    # the account title's own mark, printed under the title: "Provision for Depreciation Account" then "[1]"
+                    for j in range(i-1, max(-1,i-3), -1):
+                        words=[t for *_,t in lines[j]['ws'] if LETTERS.search(t) and not MARK.match(t) and not BOX.match(t)]
+                        if words and not any(FIG.match(t) for *_,t in lines[j]['ws']): lab=words; break
             if fig is not None and not any(LETTERS.search(t) for t in lab):
                 head=column_heading(lines, i, ws[k][0])
                 if head: lab=[head]
@@ -228,15 +308,31 @@ for key,cs in groups.items():
         for r in c['schemeRegions']: owners[(key[0],key[2],r['p'])].add(key[3])
 qnum=lambda k: int(re.match(r'\d+',k).group(0))
 stats=collections.Counter(); per=collections.defaultdict(lambda:[0,0]); out={}; bad=[]; heads_cache={}; scales=collections.Counter(); gridcards=[]
-def solve(cs, lines, totals, scale):
-    """Resolve every card of a question at a printed-marks scale (1, or 2 for Ordinary schemes that print doubled marks)."""
-    allrows=rows_of(lines, [t*scale for t in totals]); resolved={}; used=set(); how={}
+def solve(cs, lines, totals, scale, grid_mode=False):
+    """Resolve every card of a question; grid_mode names a tabular statement's figures by row label and column heading."""
+    allrows=rows_of(lines, [t*scale for t in totals], grid_mode); resolved={}; used=set(); how={}
     for c,tp in cs:
         seg=heading_span(lines, tp)
         if not seg: continue
-        rows=rows_of(lines[seg[0]:seg[1]], [t*scale for t in totals])
+        rows=rows_of(lines[seg[0]:seg[1]], [t*scale for t in totals], grid_mode)
         if rows and sum(r['marks'] for r in rows)==c['totalMarks']*scale and not tp['split']:
             resolved[c['id']]=rows; how[c['id']]='heading'; used.update((r['p'],r['y'],r['marks'],r['text']) for r in rows)
+    # split cards ("2(a)-cash-flow", "2(a)-net-debt"): the parent's heading span shared out in the cards' order
+    parents=collections.defaultdict(list)
+    for c,tp in cs:
+        if tp['split'] and c['id'] not in resolved: parents[(tp['letter'],tp['roman'])].append((c,tp))
+    for pk,kids in parents.items():
+        seg=heading_span(lines, kids[0][1])
+        if not seg: continue
+        prow=rows_of(lines[seg[0]:seg[1]], [t*scale for t in totals]); q=0; take_all={}
+        for c,tp in kids:
+            need=c['totalMarks']*scale; got=0; take=[]
+            while q<len(prow) and got<need: take.append(prow[q]); got+=prow[q]['marks']; q+=1
+            if got!=need: take_all=None; break
+            take_all[c['id']]=take
+        if take_all and q==len(prow):
+            for cid,take in take_all.items():
+                resolved[cid]=take; how[cid]='heading'; used.update((r['p'],r['y'],r['marks'],r['text']) for r in take)
     pool=[r for r in allrows if (r['p'],r['y'],r['marks'],r['text']) not in used]
     pos=0; ok=True
     for c,tp in cs:
@@ -249,7 +345,7 @@ def solve(cs, lines, totals, scale):
                 span=lines[seg[0]:seg[1]]; text=' '.join(t for l in span for *_,t in l['ws'] if not BOX.match(t))[:400]
                 resolved[c['id']]=[{'text':text,'figure':None,'marks':need,'p':span[0]['p'],'y':round(span[0]['y']),'block':True,'inferred':True}]; how[c['id']]='inferred'
                 continue
-            ok=False; break
+            ok=False; pos-=len(take); break
         resolved[c['id']]=take; how[c['id']]='partition'
     leftover=len(pool)-pos if ok else None
     return ok, resolved, how, leftover, allrows
@@ -262,6 +358,7 @@ for key,cs in groups.items():
     for p in pages:
         ls=page_lines(year,fid,p)
         lo=have.get(qn); hi=have.get(qn+1)
+        if len(owners[(year,fid,p)])<=1: lo=hi=None   # a page only this question cites is never cut
         nmarks=lambda L: sum(1 for l in L for *_,t in l['ws'] if MARK.match(t))
         if lo and lo[0]==p:
             cut=[l for l in ls if l['yf']>=lo[1]-0.002]
@@ -275,6 +372,12 @@ for key,cs in groups.items():
     result=None
     for scale in (1,):
         ok,resolved,how,leftover,allrows=solve(cs,lines,totals,scale)
+        unlabelled=any(r['text']=='(unlabelled)' or not re.search(r'[A-Za-z0-9]', r['text']) for rws in resolved.values() for r in rws)
+        if not ok or unlabelled:
+            ok2,resolved2,how2,leftover2,allrows2=solve(cs,lines,totals,scale,grid_mode=True)
+            bad2=any(r['text']=='(unlabelled)' or not re.search(r'[A-Za-z0-9]', r['text']) for rws in resolved2.values() for r in rws)
+            if (ok2 and not bad2) or (len(resolved2)>len(resolved) and not bad2) or (unlabelled and not bad2 and len(resolved2)>=len(resolved)):
+                ok,resolved,how,leftover,allrows=ok2,resolved2,{k:'grid' for k in how2},leftover2,allrows2
         if ok: result=(scale,resolved,how,leftover); break
         if result is None or len(resolved)>len(result[1]): result=(scale,resolved,how,leftover) if not ok else result
     scale,resolved,how,leftover=result
