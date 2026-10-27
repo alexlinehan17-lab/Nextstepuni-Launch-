@@ -197,6 +197,14 @@ MISPRINTS = {
         ('(b) Answer the following questions in relation to an investigation you carried out into fermentation',
          lambda t: '(c)' + t[3:]),
     ],
+    # 2011 OL pages 12 and 13 print the heads of Questions 14 and 15 as "14.
+    # Answer any two of (a), (b), (c) (30, 30)" with no full stop after "(c)"
+    # (rendered and looked at), so the reader splits off "(c) (30, 30)" as the
+    # opening of a part (c); the real (a) and (b) then read as letters going
+    # backwards and were lost. The "(c)" of the head's own list is not a part.
+    ('biology', 2011, 'ol'): [
+        ('(c) (30, 30)', lambda t: t[len('(c) '):]),
+    ],
 }
 # A question head the text layer welds onto the END of the block before it,
 # with no closed sentence between them for INLINE_QHEAD to split at: 2020 OL

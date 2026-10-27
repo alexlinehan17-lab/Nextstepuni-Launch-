@@ -303,6 +303,11 @@ const decks = [
    * never carded before, is carded from a paper-by-paper review
    * (bio_review_2012_ol.py): 131 tasks, 131 cards; Section A's six questions
    * are each one whole-question card at 20. Every earlier id is unchanged. */
+  /* 2026-10-27: biology ordinary 2526 -> 2669. The 2011 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2011_ol.py): 143 tasks, 143 cards; Question 11's three parts
+   * are each one whole-part card at the paper's printed part total. Every
+   * earlier id is unchanged. */
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
@@ -1810,12 +1815,12 @@ describe('Mark Bank card preservation', () => {
     // The live decks, pinned whole (their history is beside the frozen pins).
     expect(BIO_HIGHER).toHaveLength(2705);
     expect(identityHash(BIO_HIGHER)).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
-    expect(BIO_ORDINARY).toHaveLength(2526);
-    expect(identityHash(BIO_ORDINARY)).toBe('ad81e92de20e3f9cf2e57a63060e02e8123ca731ad5a21b4af3db35b90e0fe07');
-    expect(biologyAdditionIds.size).toBe(2705 + 2526 - (673 - 1) - (686 - 1));
+    expect(BIO_ORDINARY).toHaveLength(2669);
+    expect(identityHash(BIO_ORDINARY)).toBe('6843892115b3f34b224126d7bc2746cd5ffd473fb2f08e013a6467305bc4277d');
+    expect(biologyAdditionIds.size).toBe(2705 + 2669 - (673 - 1) - (686 - 1));
     // The sittings before 2021 had no Biology cards: everything they carry is new.
     expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(1627);
-    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1434);
+    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1577);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
     expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(187);
   });

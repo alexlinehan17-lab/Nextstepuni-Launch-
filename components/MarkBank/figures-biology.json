@@ -230,6 +230,288 @@
    345
   ]
  },
+ "biology-2011-ol-q10-profile": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q10-profile.png",
+  "md5": "2b98b976ddfaec6471a83667b58770af",
+  "alt": "Five columns of bands under the underlined headings Crime Scene, Victim, Suspect A, Suspect B and Suspect C, each band a thick black bar or a thin line, single or double. Reading down eight levels: 1, a thick bar in Crime Scene only; 2, a thin single line in Crime Scene and Suspect B; 3, a thin double line in Suspect A and Suspect C; 4, a thick bar in Crime Scene and Suspect B; 5, a thick bar in Suspect A; 6, a thick bar in Crime Scene, Victim and Suspect C; 7, a thin double line in Crime Scene, Suspect A and Suspect B; 8, a thick bar in Crime Scene and Suspect B.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q10(c)(v)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   62,
+   482,
+   560,
+   766
+  ]
+ },
+ "biology-2011-ol-q11-web": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q11-web.png",
+  "md5": "f749ea61c277da205598d60657625ca8",
+  "alt": "A food web of nine boxed names joined by arrows: Oaktree to Caterpillar and to Mouse; Blackberry to Thrush, to Mouse and to Greenfly; Caterpillar to Thrush; Thrush to Hawk; Mouse to Hawk; Greenfly to Spider and to Ladybird; Ladybird to Spider.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q11(b)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   150,
+   148,
+   480,
+   322
+  ]
+ },
+ "biology-2011-ol-q12-apparatus": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q12-apparatus.png",
+  "md5": "56a81f3d0ed028f1e66258c26bc03dfd",
+  "alt": "Apparatus as drawn: a bulb in a reflector at the left, labelled Strong light source, at one end of a ruler labelled Metre stick; an arrow labelled Set distance runs from the bulb to a test tube standing in a beaker. The beaker is labelled Water bath at 25°C and holds a thermometer, labelled Thermometer; the test tube holds a coiled plant labelled Pondweed, its stem labelled Cut stem, in liquid labelled Varied NaHCO3 soln.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q12(b)(iii)1",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   140,
+   252,
+   480,
+   472
+  ]
+ },
+ "biology-2011-ol-q13-breathing": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q13-breathing.png",
+  "md5": "eaa3b475ca7a71225b2db9cca7d9c632",
+  "alt": "Drawing of the chest: a ringed tube running down from a structure at the top labelled Larynx, dividing into branches that enter the lungs, with ribs at the left and a lung opened to show its branching airways at the right. B points to the ringed tube in the neck; A points to the point just below where the tube divides, at the entrance to the right-hand lung.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q13(c)(i) — A",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   215,
+   478,
+   450,
+   690
+  ]
+ },
+ "biology-2011-ol-q13-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q13-heart.png",
+  "md5": "582fbb08cb7fb0322753b0648e360acc",
+  "alt": "Drawing of the heart in section: chambers within a thick speckled wall, upper and lower, with vessels rising from the top. A points to a vessel arching over the top at the right; a pointer printed Bicuspid valve points between the upper and lower chambers on the right; C points into the lower chamber on the left; B points into the lower chamber on the right.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q13(b)(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   195,
+   104,
+   440,
+   330
+  ]
+ },
+ "biology-2011-ol-q14-endocrine": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q14-endocrine.png",
+  "md5": "6aadd5b81a164b520d52ed1a98909775",
+  "alt": "Outline of a human body from the head to the hips showing some organs: a small butterfly-shaped gland in the neck, the stomach and a long gland beneath it, and two kidneys, each with a small gland on its top. A points to the gland in the neck; B has two pointers, one to the small gland on top of each kidney.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q14(b)(i) — A",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   438,
+   234,
+   590,
+   437
+  ]
+ },
+ "biology-2011-ol-q14-urinary": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q14-urinary.png",
+  "md5": "c96361829068915a088922b5dd178b19",
+  "alt": "Drawing of the lower trunk: two bean-shaped organs, each with a small cap on top, joined by vessels to two large central vessels; a narrow tube runs down from each bean-shaped organ to a round sac at the bottom. A points to the right-hand bean-shaped organ, B to the narrow tube leaving it, C to the round sac.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q14(c)(iii) — A",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   422,
+   464,
+   590,
+   632
+  ]
+ },
+ "biology-2011-ol-q15-root": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q15-root.png",
+  "md5": "9fbd3dfa3a5f6995ca45496fd453ed2c",
+  "alt": "Diagram of a root in transverse section: a large circle with an inner circle at its centre holding a dark four-armed cross with a small grey round body between each pair of arms; long thin threads grow out from the outer edge. A points to one of the small grey round bodies, B to the dark cross, C to one of the thin threads.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q15(b)(i) — A",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   230,
+   200,
+   420,
+   304
+  ]
+ },
+ "biology-2011-ol-q15-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q15-virus.png",
+  "md5": "9d0ad2db741614cdbce0be95dabd85f8",
+  "alt": "Drawing of a virus: a many-sided head containing a coiled strand, on a ringed hollow tail ending in a flat base plate with six long jointed legs. A points to the coiled strand inside the head; B points to the outer surface of the head.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q15(c)(i) — A",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   215,
+   490,
+   360,
+   658
+  ]
+ },
+ "biology-2011-ol-q3-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q3-cell.png",
+  "md5": "4e96e00d7eaa6cab781f2b93ba682f5f",
+  "alt": "Drawing of a dividing cell: an oval outline with a small star-shaped body at its top pole and another at its bottom pole, fine lines fanning from each pole towards the middle, and two rows of dark curved bodies across the middle, the upper row arched upwards and the lower row arched downwards. A points to a dark curved body at the right end of the upper row; B points to one of the fine lines in the lower half.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q3(a)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   200,
+   44,
+   378,
+   156
+  ]
+ },
+ "biology-2011-ol-q5-table": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q5-table.png",
+  "md5": "de79f837b99401bdc03b6490353c5e45",
+  "alt": "Question 5 as printed: the instruction, then the list Alcohol, Oxygen, Water, Mitochondria, Lactic acid, Large (struck through) above a two-column table. Column A lists \"The amount of energy released in aerobic respiration.\" (answered Large in Column B as the example) and parts (i) to (v); Column B is blank beside them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q5(i)",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   25,
+   552,
+   292
+  ]
+ },
+ "biology-2011-ol-q6-eye": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q6-eye.png",
+  "md5": "5c889b994f250301d03a50ad9d604089",
+  "alt": "Drawing of an eye in vertical section: a round eyeball with a layered wall, the front at the left, where a clear oval body is held between two small dark blocks; a speckled band lines the inside of the back wall; a bundle of fibres leaves the back of the eye at the lower right. A points to the bundle of fibres, B to the speckled band at the upper right of the back wall, C to the clear oval body at the front.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q6(a) — A",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   190,
+   330,
+   390,
+   458
+  ]
+ },
+ "biology-2011-ol-q9-microscope": {
+  "src": "/exam-figures/biology/markbank/biology-2011-ol-q9-microscope.png",
+  "md5": "d144e49caa3fc187360dabf438cae13d",
+  "alt": "Line drawing of a light microscope seen from the side: a curved arm on a heavy base, a vertical tube with a short cylinder at its top, a rotating head carrying lenses below the tube, a flat horizontal plate with a clip below that, and further parts under the plate. A points to the short cylinder at the top of the tube; a pointer printed Objective lens points to the lens just above the plate; B points to the flat horizontal plate.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 OL Q9(a) — A",
+  "year": 2011,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2011 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   418,
+   18,
+   592,
+   168
+  ]
+ },
  "biology-2012-hl-q12a-organelles": {
   "src": "/exam-figures/biology/markbank/biology-2012-hl-q12a-organelles.png",
   "md5": "f54517ec403ca05b9ec2d6894b1e3166",
