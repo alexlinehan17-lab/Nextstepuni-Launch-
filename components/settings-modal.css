@@ -1,0 +1,260 @@
+/* Settings on Kobra (approved review, 25 Oct 2026): the runtime's Dialog drawn
+   as one paper card. A fixed header (title, the save note, Close) over a
+   scrolling body of sections divided by hairline rules; rows are 12px
+   hairline boxes and every control is a Kobra primitive. As the approved
+   section draws it, the chosen character wears an orange ring, an orange
+   marker and an orange name strip, and a switch that is on an orange track;
+   the save note stays ink (orange is never success).
+   Every rule is scoped `.nsu-settings` (the dialog popup carries the class,
+   so the panel's rules never reach the page). The runtime's utilities sit at
+   (0,1,0) to (0,3,0), so these selectors win on specificity alone. */
+
+/* ── The dialog: a paper card that never outgrows the screen or its notch ── */
+.nsu-kobra .nsu-settings[data-slot=dialog-content] {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  max-height: calc(100dvh - 32px - var(--sat, 0px) - var(--sab, 0px));
+  margin-top: calc((var(--sat, 0px) - var(--sab, 0px)) / 2);
+  color: var(--foreground);
+  font: 500 15px/1.5 'DM Sans', sans-serif;
+}
+.nsu-settings .st-scope { display: flex; flex: 1 1 auto; flex-direction: column; min-height: 0; }
+
+/* Header: serif title, the save confirmation in ink (orange is never success). */
+.nsu-settings .st-head {
+  flex: none;
+  flex-direction: row; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 20px 20px 16px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.nsu-settings .st-title {
+  margin: 0;
+  font: 600 28px/1.1 var(--nsu-serif); letter-spacing: -.03em; color: var(--foreground);
+}
+.nsu-settings .st-head-end { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.nsu-settings .st-saved {
+  display: inline-flex; align-items: center; width: auto; min-height: 20px; margin: 0;
+  font: 500 13px/1 'DM Sans', sans-serif; color: var(--muted-foreground);
+}
+.nsu-settings .st-saved > span { display: inline-flex; align-items: center; gap: 6px; animation: st-arrive 200ms cubic-bezier(.16, 1, .3, 1) both; }
+.nsu-settings .st-saved svg { width: 14px; height: 14px; color: var(--foreground); }
+/* Close: a round hairline button, clearly a control before hover. */
+.nsu-settings .st-close {
+  --border: var(--outline-soft);
+  --input: var(--outline-soft);
+  width: 40px; height: 40px;
+  border-radius: 999px;
+  color: var(--foreground);
+}
+.nsu-settings .st-close svg { width: 18px; height: 18px; }
+
+/* Body: the part that scrolls. */
+.nsu-settings .st-body {
+  flex: 1 1 auto; min-height: 0;
+  overflow-y: auto; overscroll-behavior: contain;
+  padding: 0 24px 24px;
+  container-type: inline-size;
+}
+
+/* ── Sections ── */
+.nsu-settings .st-group { padding: 20px 0; border-bottom: 1px solid var(--border); }
+.nsu-settings .st-group:last-child { padding-bottom: 0; border-bottom: 0; }
+.nsu-settings .st-eyebrow {
+  margin: 0 0 12px;
+  font: 500 11px/1.5 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.nsu-settings .st-label { display: block; margin: 0; font: 500 15px/1.4 'DM Sans', sans-serif; color: var(--foreground); }
+.nsu-settings .st-detail { display: block; margin: 2px 0 0; font: 400 13px/1.45 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.nsu-settings .st-row-text { flex: 1; min-width: 0; text-align: left; }
+
+/* ── Rows ── */
+.nsu-settings .st-rows { display: grid; gap: 8px; }
+.nsu-settings .st-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  min-height: 56px; margin: 0; padding: 12px 14px;
+  border: 1px solid var(--border); border-radius: 12px; background: transparent;
+}
+.nsu-settings .st-switch-row { cursor: pointer; transition: border-color 150ms ease; }
+.nsu-settings .st-switch-row:hover { border-color: var(--outline-strong); }
+.nsu-settings .st-switch-row:has(:focus-visible) { border-color: var(--foreground); outline: 2px solid var(--nsu-orange); outline-offset: 2px; }
+/* The row carries the focus outline; one indicator, not two. */
+.nsu-settings .st-switch-row [data-slot=switch]:focus-visible { border-color: transparent; outline: none; box-shadow: none; }
+/* Off still reads as a control: the track keeps a soft edge. */
+.nsu-settings .st-switch-row [data-slot=switch][data-on=false] { border-color: var(--outline-soft); }
+/* A switch that is on wears orange, as the approved section has it. */
+.nsu-settings .st-switch-row [data-slot=switch][data-on=true] { background: var(--nsu-orange); }
+/* Junior Cycle: locked on for the student, so it keeps the full orange face, undimmed. */
+.nsu-settings .st-switch-row[data-locked] { cursor: default; }
+.nsu-settings .st-switch-row[data-locked]:hover { border-color: var(--border); }
+.nsu-settings .st-switch-row[data-locked] [data-slot=switch] { opacity: 1; cursor: default; }
+.nsu-settings .st-hint { margin: 8px 4px 0; font: 400 13px/1.5 'DM Sans', sans-serif; color: var(--foreground); }
+
+/* Account identity: the chosen crew character beside the name. */
+.nsu-settings .st-identity { display: flex; align-items: center; gap: 14px; }
+.nsu-settings .st-identity-art.crew-illustration { width: 48px; height: 48px; flex-shrink: 0; }
+
+/* Finish your profile: a hairline box with the screen's one orange kicker. */
+.nsu-settings .st-prompt { padding: 16px; border: 1px solid var(--outline-soft); border-radius: 12px; }
+.nsu-settings .st-kicker {
+  margin: 0;
+  font: 500 11px/1.5 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--nsu-orange);
+}
+.nsu-settings .st-prompt-title { margin: 6px 0 0; font: 500 20px/1.25 var(--nsu-serif); letter-spacing: -.02em; color: var(--foreground); }
+.nsu-settings .st-prompt-copy { margin: 6px 0 0; font: 400 14px/1.55 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.nsu-settings .st-prompt .st-primary { margin-top: 14px; }
+
+/* ── Star Crew: eight hairline tiles that stay pressable buttons. Chosen = an
+   orange ring, the round marker filled orange, and the name strip filled
+   orange with dark ink in both themes (the Mark Bank practice-size face). ── */
+.nsu-settings .st-crew { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.nsu-settings .st-crew-option {
+  position: relative; display: flex; flex-direction: column; align-items: center;
+  min-width: 0; margin: 0; padding: 0; overflow: hidden;
+  border: 1px solid var(--border); border-radius: 12px; background: transparent;
+  color: var(--foreground); font: inherit; cursor: pointer;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.nsu-settings .st-crew-option:hover { border-color: var(--outline-strong); }
+.nsu-settings .st-crew-option:focus-visible { outline: 2px solid var(--nsu-orange); outline-offset: 2px; }
+.nsu-settings .st-crew-option[aria-pressed=true] { border-color: var(--nsu-orange); box-shadow: inset 0 0 0 1px var(--nsu-orange); }
+.nsu-settings .st-crew-art.crew-illustration { width: 60px; height: 60px; margin: 16px 0 10px; }
+.nsu-settings .st-crew-name {
+  align-self: stretch; padding: 7px 4px;
+  border-top: 1px solid var(--border);
+  font: 500 13px/1.2 'DM Sans', sans-serif; text-align: center; color: var(--foreground);
+  overflow-wrap: anywhere;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.nsu-settings .st-crew-option[aria-pressed=true] .st-crew-name {
+  border-top-color: var(--nsu-orange); background: var(--nsu-orange); color: var(--foreground); font-weight: 600;
+}
+.dark .nsu-settings .st-crew-option[aria-pressed=true] .st-crew-name { color: var(--background); }
+/* The marker: drawn like the runtime's radio item, a ring that fills with
+   an orange face and a canvas dot when chosen. */
+.nsu-settings .st-crew-mark {
+  position: absolute; top: 7px; right: 7px;
+  display: grid; place-items: center;
+  width: 16px; height: 16px;
+  border: 1.5px solid var(--outline-strong); border-radius: 50%; background: var(--background);
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.nsu-settings .st-crew-option[aria-pressed=true] .st-crew-mark { border-color: var(--nsu-orange); background: var(--nsu-orange); }
+.nsu-settings .st-crew-option[aria-pressed=true] .st-crew-mark::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--background); }
+
+/* ── Appearance: the current picker, kept as it was (Alex, 25 Oct). Two
+   miniatures of the app; the chosen card wears a 1.5px ink border and a check.
+   The frame, label and check are tokens. The miniatures keep their fixed
+   colours, the same values the picker always drew, because each one depicts
+   a single theme and must look like it whichever theme is showing. ── */
+.nsu-settings .st-theme { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.nsu-settings .st-theme-option {
+  display: block; width: 100%; min-width: 0; margin: 0; padding: 8px;
+  border: 1.5px solid var(--border); border-radius: 12px; background: transparent;
+  color: var(--foreground); font: inherit; text-align: left; cursor: pointer;
+  transition: border-color 150ms ease;
+}
+.nsu-settings .st-theme-option:hover { border-color: color-mix(in srgb, var(--foreground) 40%, var(--border)); }
+.nsu-settings .st-theme-option[aria-pressed=true] { border-color: var(--foreground); }
+.nsu-settings .st-theme-option:focus-visible { outline: 2px solid var(--nsu-orange); outline-offset: 2px; }
+.nsu-settings .st-theme-preview {
+  --st-mini-paper: #ffffff; --st-mini-edge: #e4e4e7; --st-mini-rail: #ffffff; --st-mini-rail-edge: 1.5px solid #383838;
+  --st-mini-ink: #1a1a1a; --st-mini-line: #d6d3d1; --st-mini-line-soft: #e7e5e4;
+  display: flex; height: 64px; overflow: hidden;
+  border: 1px solid var(--st-mini-edge); border-radius: 8px; background: var(--st-mini-paper);
+}
+.nsu-settings .st-theme-preview[data-dark] {
+  --st-mini-paper: #151515; --st-mini-edge: #3f3f46; --st-mini-rail: #18181b; --st-mini-rail-edge: 1px solid #3f3f46;
+  --st-mini-ink: #f4f4f5; --st-mini-line: #52525b; --st-mini-line-soft: #3f3f46;
+}
+.nsu-settings .st-theme-rail { flex: none; width: 16px; background: var(--st-mini-rail); border-right: var(--st-mini-rail-edge); }
+.nsu-settings .st-theme-lines { display: grid; flex: 1; align-content: start; gap: 6px; padding: 8px; }
+.nsu-settings .st-theme-lines i { display: block; height: 4px; border-radius: 999px; }
+.nsu-settings .st-theme-lines i:nth-child(1) { height: 6px; width: 40px; background: var(--st-mini-ink); }
+.nsu-settings .st-theme-lines i:nth-child(2) { width: 56px; background: var(--st-mini-line); }
+.nsu-settings .st-theme-lines i:nth-child(3) { width: 44px; background: var(--st-mini-line-soft); }
+.nsu-settings .st-theme-lines i:nth-child(4) { width: 28px; background: rgba(242, 107, 31, .55); }
+.nsu-settings .st-theme-name {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  margin-top: 6px; padding-inline: 2px;
+  font: 600 12px/16px 'DM Sans', sans-serif; color: var(--foreground);
+}
+.nsu-settings .st-theme-name svg { flex-shrink: 0; color: var(--foreground); }
+
+/* ── School year: the forward step as an ink outline button ── */
+.nsu-settings .st-year { flex-wrap: wrap; gap: 12px 14px; }
+.nsu-settings .st-year-text { display: inline-flex; align-items: center; gap: 10px; min-width: 0; }
+.nsu-settings .st-year-text svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--muted-foreground); }
+.nsu-settings .st-terminal { margin: 0; font: italic 400 14px/1.5 var(--nsu-serif); color: var(--muted-foreground); }
+
+/* ── Buttons ── */
+.nsu-settings .st-action,
+.nsu-settings .st-primary {
+  height: auto; min-height: 44px; padding: 10px 16px; gap: 8px;
+  border-radius: 12px;
+  font: 500 15px/1.25 'DM Sans', sans-serif;
+  white-space: normal;
+}
+.nsu-settings .st-action svg,
+.nsu-settings .st-primary svg { width: 16px; height: 16px; }
+
+/* A row that goes somewhere: the outline Button as a hairline row. height:
+   auto undoes the runtime's fixed h-8 so a two-line row grows the button. */
+.nsu-settings .st-row-button {
+  display: flex; width: 100%; height: auto; min-height: 56px; padding: 12px 14px; gap: 12px;
+  justify-content: flex-start; text-align: left; white-space: normal;
+  border-radius: 12px;
+  color: var(--foreground);
+  font: 500 15px/1.4 'DM Sans', sans-serif;
+}
+.nsu-settings .st-row-button .st-row-icon { display: inline-flex; color: var(--muted-foreground); }
+.nsu-settings .st-row-button .st-row-icon svg,
+.nsu-settings .st-row-button .st-chevron { width: 16px; height: 16px; }
+.nsu-settings .st-row-button .st-chevron { margin-left: auto; color: var(--muted-foreground); }
+
+.nsu-settings .st-note { margin: 0 0 12px; font: 400 13px/1.6 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.nsu-settings .st-inline-link {
+  display: inline; height: auto; min-height: 0; padding: 0; vertical-align: baseline;
+  font: inherit; font-weight: 600; color: var(--foreground);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+}
+
+.nsu-settings .st-quiet {
+  height: auto; min-height: 44px; margin: 0 0 0 -10px; padding: 8px 10px; gap: 8px;
+  color: var(--foreground);
+  font: 500 15px/1 'DM Sans', sans-serif;
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+}
+.nsu-settings .st-rows + .st-quiet { margin-top: 12px; }
+.nsu-settings .st-quiet svg { width: 16px; height: 16px; }
+
+@keyframes st-arrive { from { opacity: 0; transform: translateX(6px); } }
+
+/* ── Phones ── */
+@media (max-width: 480px) {
+  .nsu-settings .st-head { padding: 16px 14px 14px 18px; }
+  .nsu-settings .st-title { font-size: 26px; }
+  .nsu-settings .st-body { padding: 0 18px 20px; }
+}
+@container (max-width: 360px) {
+  .nsu-settings .st-crew { gap: 6px; }
+  .nsu-settings .st-crew-art.crew-illustration { width: 44px; height: 44px; margin: 14px 0 8px; }
+  .nsu-settings .st-crew-name { padding-inline: 2px; font-size: 11px; }
+  .nsu-settings .st-crew-mark { top: 5px; right: 5px; width: 14px; height: 14px; }
+  .nsu-settings .st-crew-option[aria-pressed=true] .st-crew-mark::after { width: 5px; height: 5px; }
+  .nsu-settings .st-year .st-action { flex: 1 1 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nsu-settings .st-saved > span { animation: none; }
+  .nsu-settings .st-switch-row,
+  .nsu-settings .st-crew-option,
+  .nsu-settings .st-crew-name,
+  .nsu-settings .st-crew-mark,
+  .nsu-settings .st-theme-option { transition: none; }
+}
