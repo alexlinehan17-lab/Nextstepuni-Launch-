@@ -311,7 +311,8 @@ const decks = [
   /* 2026-10-27: biology ordinary 2669 -> 2833. The 2010 Ordinary sitting,
    * never carded before, is carded from a paper-by-paper review
    * (bio_review_2010_ol.py): 164 tasks, 164 cards; Q11(c)(vii) is left open
-   * (its scheme prints no answer). Every earlier id is unchanged. */
+   * (its scheme prints no answer; excluded with that page evidence on
+   * 2026-10-27, no card). Every earlier id is unchanged. */
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.

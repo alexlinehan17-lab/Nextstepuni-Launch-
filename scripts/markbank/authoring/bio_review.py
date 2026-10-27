@@ -664,7 +664,8 @@ def build(ledger, year, level):
             # question may hold two ladders, keyed (qn, 'letters'); and
             # 'responses' allows more carded responses than steps, as in a
             # best-five-of-six question, or fewer where a response's ask is
-            # left open (OPEN_LEAVES).
+            # left open or excluded without a task (OPEN_LEAVES,
+            # EXCLUDED_LEAVES).
             # A part under no ladder (a whole-part card, 2019 Ordinary Q7(b)
             # beside Q7(a)'s "4 + 2") adds its own total to the ladders'.
             ladder_total = free_q.get(qn, 0)
@@ -733,7 +734,35 @@ def build(ledger, year, level):
             problems.append(f'OPEN_LEAVES {leaf} needs its reason and its page evidence')
         open_list.append({'leaf': f'Q{leaf[0]}' + ''.join(f'({x})' for x in leaf[1:] if x),
                           'reason': why.get('reason'), 'evidence': why.get('evidence')})
-    for leaf in sorted(leaves - claimed - set(open_leaves), key=str):
+    # A census leaf EXCLUDED without a task: the same case as an open leaf
+    # (the scheme prints nothing to lift, so there are no scheme rows to
+    # price), recorded as an exclusion once that is decided (2010 Ordinary
+    # Q11(c)(vii), 2026-10-27). reconcile.py counts exclusions from
+    # exclusions/biology.json, so the same ref, reason and evidence must
+    # stand there: the ledger and the coverage count cannot drift apart.
+    excl_leaves = getattr(ledger, 'EXCLUDED_LEAVES', {})
+    excl_list = []
+    if excl_leaves:
+        excl_path = os.path.join(HERE, 'exclusions', 'biology.json')
+        excl_file = json.load(open(excl_path, encoding='utf-8')) if os.path.exists(excl_path) else []
+    for leaf, why in sorted(excl_leaves.items(), key=lambda kv: str(kv[0])):
+        label = f'Q{leaf[0]}' + ''.join(f'({x})' for x in leaf[1:] if x)
+        if leaf not in leaves:
+            problems.append(f'EXCLUDED_LEAVES {leaf} is no census leaf')
+        elif leaf in claimed:
+            problems.append(f'EXCLUDED_LEAVES {leaf} is claimed by a task')
+        elif leaf in open_leaves:
+            problems.append(f'EXCLUDED_LEAVES {leaf} is also in OPEN_LEAVES')
+        elif not (why.get('reason') and why.get('evidence')):
+            problems.append(f'EXCLUDED_LEAVES {leaf} needs its reason and its page evidence')
+        ref = f'{year} {level.upper()} {label}'
+        entry = [e for e in excl_file if e.get('ref') == ref]
+        if len(entry) != 1 or entry[0].get('reason') != why.get('reason') \
+                or entry[0].get('evidence') != why.get('evidence'):
+            problems.append(f'EXCLUDED_LEAVES {leaf}: exclusions/biology.json needs one entry "{ref}" '
+                            'with this reason and evidence')
+        excl_list.append({'leaf': label, 'reason': why.get('reason'), 'evidence': why.get('evidence')})
+    for leaf in sorted(leaves - claimed - set(open_leaves) - set(excl_leaves), key=str):
         problems.append(f'census leaf {leaf} has no task')
 
     # --- figure keys -----------------------------------------------------
@@ -823,6 +852,7 @@ def build(ledger, year, level):
         **({'layoutChecks': layout} if layout else {}),
         'excluded': excluded,
         **({'openLeaves': open_list} if open_list else {}),
+        **({'excludedLeaves': excl_list} if excl_list else {}),
     }
     return lifter, cards, audit_tasks, checks
 
@@ -1108,6 +1138,8 @@ def main():
         print(f'  EXCLUDED {h["questionRef"]}: {h["reason"]}')
     for h in checks.get('openLeaves', []):
         print(f'  OPEN {h["leaf"]}: {h["reason"]}')
+    for h in checks.get('excludedLeaves', []):
+        print(f'  EXCLUDED {h["leaf"]} (no task): {h["reason"]}')
     # Leave without interpreter teardown: PyMuPDF 1.26 on this machine
     # intermittently segfaults freeing its documents at exit, which would turn
     # a finished run's status into 139 after all its work is done.

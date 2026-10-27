@@ -45,11 +45,12 @@ keep their own marks. No part needs a whole-part (questionTotal) card.
 Q11(c)(vii) ("Give one function of proteins in living organisms.", paper p10)
 has no answer in the scheme: its Q11(c) block (scheme p7) prints (i) to (vi)
 and then blank table rows. Nothing can be lifted for it, so it is not in
-TASKS and is not excluded: OPEN_LEAVES leaves the census leaf (11, 'c',
-'vii') open, with its page evidence, and reconcile.py reports it OPEN for
-Alex to decide. The ladder "2(6)+6(2)" has eight steps for (i)'s two bases
-and (ii)-(vii); seven of those responses are carded, which LADDERS records
-as 'responses': 7.
+TASKS. The review left the census leaf (11, 'c', 'vii') OPEN with its page
+evidence (ca320bf8a); on 2026-10-27 it was decided to exclude it, with that
+evidence: EXCLUDED_LEAVES records it, and the same entry stands in
+exclusions/biology.json, which reconcile.py counts. The ladder "2(6)+6(2)"
+has eight steps for (i)'s two bases and (ii)-(vii); seven of those responses
+are carded, which LADDERS records as 'responses': 7.
 
 The scheme's text layer reads its single quotes as U+2018/U+2019, as printed.
 It misspells "Heterotrohic nutrition" (Q13(a)(ii)), "rythym" (Q14(b)(v)) and
@@ -63,7 +64,7 @@ own print and is cropped as printed, not masked (brought to the coordinator).
 
 The census reader finds all 145 printed asks, keyed as the paper prints them
 (Q2 and Q4-Q6 by roman alone); no paper.py entry was needed. 144 are claimed
-here; (11, 'c', 'vii') is the one left open (above).
+here; (11, 'c', 'vii') is the one excluded (above).
 """
 from bio_review_lib import Q, SQ, S, M, pt, anyn, T, L
 
@@ -202,10 +203,11 @@ ROUTES = {}
 
 # Left OPEN, neither carded nor excluded (the coordinator's rule: an ask the
 # scheme prints no answer for stays open, with its page evidence, for Alex).
-OPEN_LEAVES = {
+EXCLUDED_LEAVES = {
     (11, 'c', 'vii'): {
-        'reason': 'The scheme prints no answer for this ask, so nothing can be lifted; '
-                  'no answer is written and no exclusion is recorded.',
+        'reason': 'The scheme prints no answer for this ask, so nothing can be lifted and no answer is written. '
+                  'Left OPEN by the review (ca320bf8a); excluded with this page evidence on 2026-10-27 '
+                  '(a decision Alex delegated to the coordinator).',
         'evidence': 'Paper p10 prints "(vii) Give one function of proteins in living organisms." '
                     'as the last ask of Q11(c), "(24)". Scheme p7 (printed page 6) prints Q11(c) '
                     '(i) "1. Thymine or T" / "2. Cytosine or C" to (vi) "It must fold (into its '

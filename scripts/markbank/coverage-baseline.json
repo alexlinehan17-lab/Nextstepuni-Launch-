@@ -97,9 +97,9 @@
     "contentHash": "e29d96cfc8c448e2",
     "coveragePct": 100.0,
     "covered": 4927,
-    "excluded": 0,
+    "excluded": 1,
     "leaves": 4928,
-    "open": 1,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 50,

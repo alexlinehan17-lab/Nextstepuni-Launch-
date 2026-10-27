@@ -14,6 +14,7 @@ import { describe, expect, it } from 'vitest';
 import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
 import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
 import audit from '../scripts/markbank/authored/biology-review-audit.json';
+import exclusions from '../scripts/markbank/authoring/exclusions/biology.json';
 import { createHash } from 'node:crypto';
 import { tariffReconciles } from '../types/markBank';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
@@ -30,7 +31,8 @@ type Sitting = { tasks: Task[]; cardCount: number; baseTaskCount: number;
     withdrawn: Record<string, { replacementId: string; reason: string }> };
   sources: Record<string, { sha256: string; pages: number }>;
   checks: { excluded: Array<{ id: string; reason: string; evidence: string; schemeRows: string[] }>;
-    openLeaves?: Array<{ leaf: string; reason: string; evidence: string }> } };
+    openLeaves?: Array<{ leaf: string; reason: string; evidence: string }>;
+    excludedLeaves?: Array<{ leaf: string; reason: string; evidence: string }> } };
 const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sittings;
 const sitting = sittings['2026-hl'];
 
@@ -1826,6 +1828,10 @@ type FirstCarded = {
   /** Printed asks left OPEN (the ledger's OPEN_LEAVES): the scheme prints no
    *  answer to lift, so the ask is neither carded nor excluded. */
   openLeaves?: string[];
+  /** Printed asks EXCLUDED without a task (the ledger's EXCLUDED_LEAVES): the
+   *  scheme prints no answer to lift, and the exclusion is decided and
+   *  recorded in exclusions/biology.json with the same page evidence. */
+  excludedLeaves?: string[];
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
@@ -1835,7 +1841,8 @@ const FIRST_CARDED: Record<string, FirstCarded> = {
     routes: {  },
     wholeParts: {  },
     // Scheme p7 prints Q11(c) (i)-(vi) and then blank rows: no answer for (vii).
-    openLeaves: ['Q11(c)(vii)'],
+    // Left open by the review, excluded with that evidence on 2026-10-27.
+    excludedLeaves: ['Q11(c)(vii)'],
   },
   '2011-ol': {
     tasks: 143, cards: 143,
@@ -2013,6 +2020,17 @@ describe.each(Object.entries(FIRST_CARDED))('Biology %s — carded from a paper-
     for (const o of open) {
       expect(o.evidence, o.leaf).toMatch(/Paper p\d+.*Scheme p\d+/s);
       expect(deck.some(card => card.questionRef.startsWith(`${year} ${token} ${o.leaf}`)), o.leaf).toBe(false);
+    }
+  });
+
+  it('excludes without a task only the asks its scheme prints no answer for, each in exclusions/biology.json', () => {
+    const excludedLeaves = s.checks.excludedLeaves ?? [];
+    expect(excludedLeaves.map(o => o.leaf)).toEqual(pin.excludedLeaves ?? []);
+    for (const o of excludedLeaves) {
+      expect(o.evidence, o.leaf).toMatch(/Paper p\d+.*Scheme p\d+/s);
+      expect(deck.some(card => card.questionRef.startsWith(`${year} ${token} ${o.leaf}`)), o.leaf).toBe(false);
+      expect(exclusions.filter(e => e.ref === `${year} ${token} ${o.leaf}`), o.leaf)
+        .toEqual([{ ref: `${year} ${token} ${o.leaf}`, reason: o.reason, evidence: o.evidence }]);
     }
   });
 
