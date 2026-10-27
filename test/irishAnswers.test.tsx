@@ -75,15 +75,15 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
     expect(allocation.parts.flatMap(part => part.rows).some(row => /Roinn ar an bpáipéar/.test(row.text))).toBe(false);
   });
 
-  it('leaves alone an excerpt that starts mid-question, and the Q6 composite tariff', () => {
-    const card = byId('irish-2022-hl-p2-reading-a-q2');
+  it('leaves alone an excerpt whose bullets the ladder prices unpriced; the Q6 composite tariff is read by tariffs.ts', () => {
+    // irish-2022-hl-p2-reading-a-q2 started mid-question until irish_excerpts.py re-cut it across its pages.
+    const card = byId('irish-2021-ol-p2-reading-a-q2');
     if (card.rubric.system !== 'irish') throw new Error('not irish');
     expect(card.rubric.criteria[0].allocation).toBeUndefined();
-    expect(parseIrishAnswers({ id: card.id, totalMarks: 7, questionRef: card.questionRef, questionText: card.questionText, guidance: card.rubric.criteria[0].guidance }))
-      .toEqual({ ok: false, reason: 'tariffs add to 2, criterion is 7' });
+    expect(parseIrishAnswers({ id: card.id, totalMarks: 10, questionRef: card.questionRef, questionText: card.questionText, guidance: card.rubric.criteria[0].guidance }).ok).toBe(false);
     const q6 = byId('irish-2021-hl-p2-reading-a-q6');
     if (q6.rubric.system !== 'irish') throw new Error('not irish');
-    expect(q6.rubric.criteria[0].allocation).toBeUndefined();
+    expect(q6.rubric.criteria[0].allocation?.parts.map(part => part.tariff)).toEqual([3, 12]);
   });
 });
 
