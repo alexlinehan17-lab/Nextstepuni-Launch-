@@ -24,6 +24,10 @@
  * Geography card carries one criterion per published allocation line; each is
  * cut into rows on its own (tryParseGeographyCriterionAllocation).
  */
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
+import type { AccountingRubric } from '../types/markBank';
+import accountingResidue from '../scripts/markbank/authored/accounting-rows-residue.json';
 import { REVIEWED_CARDS as APPLIED_MATHS_REVIEWED } from '../components/MarkBank/cards/applied-maths/reviewed';
 import type { AppliedMathematicsRubric } from '../types/markBank';
 import appliedMathsResidue from '../scripts/markbank/authored/applied-maths-steps-residue.json';
@@ -477,6 +481,31 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+  });
+
+  it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
+    const cards = [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].filter((card): card is SecRubricCard & { rubric: AccountingRubric } => card.kind === 'rubric' && card.rubric.system === 'accounting');
+    expect(cards).toHaveLength(1365);
+    const structured = cards.filter(card => card.rubric.rows?.length);
+    for (const card of structured) {
+      const rows = card.rubric.rows!;
+      expect(new Set(rows.map(row => row.id)).size, `${card.id}: row ids`).toBe(rows.length);
+      for (const row of rows) {
+        expect(row.text.trim().length, `${card.id}/${row.id}: empty row`).toBeGreaterThan(0);
+        expect(/[A-Za-z0-9]/.test(row.text), `${card.id}/${row.id}: "${row.text}" names nothing`).toBe(true);
+        expect(row.marks, `${card.id}/${row.id}: marks`).toBeGreaterThan(0);
+        expect(Number.isInteger(row.page) && row.page > 0, `${card.id}/${row.id}: page`).toBe(true);
+      }
+      // The rows are the task: they add up to its total exactly.
+      expect(rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows add up`).toBe(card.totalMarks);
+    }
+    // 1,080 of 1,365 tasks (2026-10-27): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
+    expect(structured).toHaveLength(1080);
+    const residue = cards.filter(card => !card.rubric.rows?.length).map(card => card.id).sort();
+    expect(residue).toEqual(accountingResidue.tasks.map(task => task.id).sort());
+    for (const task of accountingResidue.tasks) expect(task.reason.length, task.id).toBeGreaterThan(0);
+    // A part the scheme prices only through its section total is one flagged block row; pinned so it cannot grow unnoticed.
+    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2022-ol-q6(a)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-ol-q6(a)", "acc-2024-ol-q6(b)", "acc-2024-ol-q6(c)", "acc-2024-ol-q8(g)", "acc-2024-ol-q9(b)"]);
   });
 
   it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {

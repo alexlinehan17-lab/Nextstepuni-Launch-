@@ -206,6 +206,21 @@ subject-specific generators.
   table under "Tréith 1 = 13 mharc") is cut into rows at load by
   `cards/irish/tariffs.ts`, which also reads the last reading question's
   composite tariff where `answers.ts` cannot.
+  Accounting tasks carry the scheme's priced lines as rows (`acc_rows.py`,
+  `cards/accounting/rows.json`): the scheme PDF is read as word lines with
+  PyMuPDF and every bracketed mark becomes a row — the figure before it and
+  the words that label the line, a mark on its own line taking the figure
+  above or below it at the same x, a theory part the unpriced lines after
+  its mark, a boxed section no mark follows a block of points; section
+  totals (drawn squares, the title's bracketed total, a lone sum of two or
+  more parts) are never rows. A task's rows are its heading span when they
+  add up to its total, else the question's rows shared out to its tasks in
+  paper order; a task they cannot be made to fit, or a grid the geometry
+  cannot label, keeps its crop and stepper and is listed with its reason in
+  `authored/accounting-rows-residue.json`. The 2022 schemes embed subset
+  fonts with no ToUnicode map; `acc_glyphs_2022.py` derives
+  `glyphmap-accounting-2022.json` from word evidence (never hand-typed) and
+  `acc_rows.py` reads those pages glyph by glyph through it.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

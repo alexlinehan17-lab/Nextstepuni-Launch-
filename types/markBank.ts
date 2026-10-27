@@ -1064,6 +1064,29 @@ export interface AccountingRubric {
   allocationNote: string;
   /** A separately priced output within a shared printed instruction. */
   taskFocus?: string;
+  /**
+   * The figures the scheme prices, as rows the student claims (cards/accounting/rows.json, lifted from the
+   * scheme PDF by scripts/markbank/authoring/acc_rows.py). They add up to the task's total. Absent on a task
+   * whose rows could not be lifted (scripts/markbank/authored/accounting-rows-residue.json), which keeps
+   * the crop and the half-mark stepper.
+   */
+  rows?: AccountingRow[];
+}
+
+/** One priced line of an Accounting solution: "Purchases W2 1,126,000" for 9 marks. */
+export interface AccountingRow {
+  id: string;
+  /** The scheme's words for the line, figure included. */
+  text: string;
+  marks: number;
+  /** The figure the marks sit beside, when the row is one. */
+  figure?: string;
+  /** The scheme page the row is printed on. */
+  page: number;
+  /** A theory part or a boxed section priced as one block of points. */
+  block?: boolean;
+  /** A part the scheme prices only through its section total: its span prints no mark of its own. */
+  inferred?: boolean;
 }
 
 /** A published Business allocation within one response, e.g. Name/Explain/Link. */
