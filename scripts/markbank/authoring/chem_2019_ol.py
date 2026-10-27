@@ -25,7 +25,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, display, joined  # noqa: E402
+from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, display, joined, anyN  # noqa: E402
 
 P = Printed(2019, 'ol', figures=True)
 C = Cards(P)
@@ -198,9 +198,15 @@ C.fixed([k('5', 'e')], 'chem-1-3', 'why-mendeleev-left-out-the-noble-gases')
 # ── Q6 Hydrocarbons ──────────────────────────────────────────────────────────
 Q6 = FIG + 'paper-q6'
 C.fixed([k('6', 'a')], 'chem-2-4', 'alkanes', figure=Q6)
-# (b): four names priced together "(3 × 4)".
-assert cells(k('6', 'b')) == ['[3 × 4]'], P.items(k('6', 'b'))
-C.ordered([k('6', 'b')], 'chem-2-4', 'iupac-names-of-four-hydrocarbons', figure=Q6)
+# (b): four names priced "(3 × 4)": a cell pricing fewer points than the
+# scheme lists is a choice, any three of the four, four each.
+_q6b = P.items(k('6', 'b'))
+assert [it.cell for it in _q6b] == ['[3 × 4]'], _q6b
+_names = [C.lifted('x', t, None)['verbatim'] for t in _q6b[0].points()]
+assert _names == ['A: methane', 'B: ethene', 'C: butane', 'D: benzene'], _names
+C.add([k('6', 'b')], 'chem-2-4', 'iupac-names-of-four-hydrocarbons', [anyN(
+    'r-1', _names[0], 12, 3, 4, _names, 'Any three of these: the scheme lists four names and prices the part '
+    '(3 × 4).')], total=12, figure=Q6)
 C.ordered([k('6', 'c', r) for r in ('i', 'ii', 'iii')], 'chem-2-4', 'liquefied-petroleum-gas',
           figure=FIG + 'paper-q6c')
 C.ordered([k('6', 'd', 'i'), k('6', 'd', 'ii')], 'chem-2-4', 'methane-from-dumps-and-carcinogenic-benzene',

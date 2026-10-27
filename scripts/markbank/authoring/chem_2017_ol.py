@@ -254,11 +254,17 @@ C.add([k('6', 'e')], 'chem-2-4', 'octane-number', [
          + traced('ANY ONE: (6)') + '".')], total=12, figure=Q6)
 
 # ── Q7 Ionic bonding, a flame test and the chloride test ─────────────────────
-# (a): six words, the cell labelled "FIRST FIVE:", the passage the paper's print.
-assert cells(k('7', 'a')) == ['[6 + 4 × 5]'], P.items(k('7', 'a'))
-C.ordered([k('7', 'a')], 'chem-2-1', 'ionic-bonding-in-sodium-chloride',
-          notes='The scheme sets the cell as "' + traced('FIRST FIVE: (6 + 4 × 5)') + '": six blanks, '
-                'the first five answers marked.')
+# (a): six words, the cell labelled "FIRST FIVE:" (6 + 4 × 5): any five of the
+# six, the first (6) and four more (5) each, each answer numbered by its blank;
+# the passage the paper's print.
+_q7a = P.items(k('7', 'a'))
+assert [it.cell for it in _q7a] == ['[6 + 4 × 5]'], _q7a
+_blanks7 = [C.lifted('x', t, None)['verbatim'] for t in _q7a[0].points()]
+assert len(_blanks7) == 6 and _blanks7[0] == '1 electrons', _blanks7
+C.add([k('7', 'a')], 'chem-2-1', 'ionic-bonding-in-sodium-chloride', [anyN(
+    'r-1', _blanks7[0], 26, 5, 6, _blanks7, 'Any five of these, the first (6) and the others (5) each: the scheme '
+    'sets the cell as "' + traced('FIRST FIVE: (6 + 4 × 5)') + '": six blanks, the first five answers marked.',
+    steps=[6, 5, 5, 5, 5])], total=26)
 print_question('paper-q7a-print')
 # (b)(i): three methods set out as a table, each in three steps priced (4); the
 # text layer reads the table across its columns, so each cell is read from the

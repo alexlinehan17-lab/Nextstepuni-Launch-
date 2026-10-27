@@ -53682,45 +53682,29 @@
   "stem": "Consider hydrocarbons A, B, C and D and answer the questions that follow.",
   "figureKey": "chemistry-2019-OL-paper-q6",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[3 × 4]"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "A: methane",
-    "marks": null,
+    "marks": 12,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "B: ethene",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "C: butane",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "D: benzene",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "Any three of these: the scheme lists four names and prices the part (3 × 4).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "A: methane",
+      "B: ethene",
+      "C: butane",
+      "D: benzene"
+     ]
+    }
    }
-  ],
-  "notes": "The scheme prices these points together as [3 × 4] without saying which point earns which part, so no per-point value is shown."
+  ]
  },
  {
   "id": "chem-2019-ol-q6-c-i-iii",
@@ -67408,61 +67392,38 @@
   "questionRef": "2017 OL Q7(a)",
   "questionText": "The following words or phrases are omitted from the passage below. ionic negatively‐charged electrons crystal lattice positively‐charged molecules Write in your answer book the omitted word or phrase corresponding to each of the numbers (1 to 6).",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[6 + 4 × 5]"
+   "kind": "fixed"
   },
   "totalMarks": 26,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "1 electrons",
-    "marks": null,
+    "marks": 26,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "2 positively-charged",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "3 negatively-charged",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "4 ionic",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "5 molecules",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "6 crystal lattice",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "Any five of these, the first (6) and the others (5) each: the scheme sets the cell as \"FIRST FIVE: (6 + 4 × 5)\": six blanks, the first five answers marked.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 6,
+     "options": [
+      "1 electrons",
+      "2 positively-charged",
+      "3 negatively-charged",
+      "4 ionic",
+      "5 molecules",
+      "6 crystal lattice"
+     ],
+     "perOptionSteps": [
+      6,
+      5,
+      5,
+      5,
+      5
+     ]
+    }
    }
   ],
-  "notes": "The scheme prices these points together as [6 + 4 × 5] without saying which point earns which part, so no per-point value is shown. The scheme sets the cell as \"FIRST FIVE: (6 + 4 × 5)\": six blanks, the first five answers marked.",
   "questionFigureKey": "chemistry-2017-OL-paper-q7a-print"
  },
  {
@@ -72732,53 +72693,30 @@
   "questionText": "Describe with the aid of a labelled diagram how to then obtain a pure, dry sample of the sodium chloride (NaCl) product of this reaction.",
   "stem": "The concentration of a sodium hydroxide (NaOH) solution was found by titration with a 0.10 M hydrochloric acid (HCl) solution using an indicator to identify the end point. It was found that exactly 25 cm³ of the sodium hydroxide solution required, on average, 22.5 cm³ of the 0.10 M hydrochloric acid solution for neutralisation. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[3 × 3]"
+   "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "repeat omitting indicator",
-    "marks": null,
+    "marks": 9,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "22.5 cm³ acid (HCl) to 25 cm³ base (NaOH)",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "in a conical flask (beaker, evaporating basin, evaporating dish)",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "heat (evaporate water, boil water) / leave to evaporate over time",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "until crystals form / to dryness / filter to get dry sample",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "Any three of these: the scheme lists five points and prices the part (3 × 3). The scheme adds: [Allow marks for good diagram(s).][Deduct 3 where there is no diagram.]",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "repeat omitting indicator",
+      "22.5 cm³ acid (HCl) to 25 cm³ base (NaOH)",
+      "in a conical flask (beaker, evaporating basin, evaporating dish)",
+      "heat (evaporate water, boil water) / leave to evaporate over time",
+      "until crystals form / to dryness / filter to get dry sample"
+     ]
+    }
    }
-  ],
-  "notes": "The scheme prices these points together as [3 × 3] without saying which point earns which part, so no per-point value is shown. The scheme lists five points and prices the part (3 × 3). The scheme adds: [Allow marks for good diagram(s).][Deduct 3 where there is no diagram.]"
+  ]
  },
  {
   "id": "chem-2016-ol-q2-f",
@@ -74198,61 +74136,31 @@
   "questionRef": "2016 OL Q9(a)",
   "questionText": "The following words or phrases are omitted from the passage below: lime sand and gravel fluorine chlorine plastic a flocculating agent Write in your answerbook the word or phrase corresponding to each number 1 to 6. In the treatment of a water supply to make it suitable for drinking, 1 is added and the water is allowed to ‘settle’. Any suspended matter remaining in the water is then removed by filtration through a bed of 2 . To disinfect the water 3 is added. A compound of 4 may also be added to prevent tooth decay and where the the pH of the water is too low 5 is added. In the Irish public water system, any pipework made of lead is being replaced by 6 .",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[5 × 5]"
+   "kind": "fixed"
   },
   "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "1 a flocculating agent",
-    "marks": null,
+    "marks": 25,
     "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "2 sand and gravel",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "3 chlorine",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "4 fluorine",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "5 lime",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "6 plastic",
-    "marks": null,
-    "openList": true,
-    "contextNote": ""
+    "contextNote": "Any five of these: the scheme sets the cell as \"FIRST FIVE: (5 × 5)\": six blanks, the first five answers marked.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 5,
+     "options": [
+      "1 a flocculating agent",
+      "2 sand and gravel",
+      "3 chlorine",
+      "4 fluorine",
+      "5 lime",
+      "6 plastic"
+     ]
+    }
    }
   ],
-  "notes": "The scheme prices these points together as [5 × 5] without saying which point earns which part, so no per-point value is shown. The scheme sets the cell as \"FIRST FIVE: (5 × 5)\": six blanks, the first five answers marked.",
   "questionFigureKey": "chemistry-2016-OL-paper-q9a-print"
  },
  {
@@ -74388,45 +74296,35 @@
   "questionRef": "2016 OL Q10(a)",
   "questionText": "Describe with the aid of labelled diagrams an experiment you carried out to separate a mixture of three indicators using chromatography.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[6 + 3 + 3]"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "apply mixture using dropper (capillary tube) / spotting on paper",
-    "marks": null,
+    "marks": 12,
     "openList": true,
-    "contextNote": "By paper chromatography. Or by thin-layer chromatography, \"apply mixture using dropper (capillary tube) / spotting on plate\"; or by column chromatography, \"dissolve mixture in small volume of eluent** / add mixture to column\"."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "about 2 cm (slightly, just) above (below*) eluent**",
-    "marks": null,
-    "openList": true,
-    "contextNote": "By paper chromatography. Or by thin-layer chromatography, \"about 2 cm (slightly, just) above eluent**\"; or by column chromatography, \"add mixture to column / add eluent\"."
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "place paper in tank (beaker, other suitable container)",
-    "marks": null,
-    "openList": true,
-    "contextNote": "By paper chromatography. Or by thin-layer chromatography, \"place plate in tank (beaker, other suitable container)\"; or by column chromatography, \"keep adding eluent\"."
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "allow solvent to reach end of paper / allow time for separation",
-    "marks": null,
-    "openList": true,
-    "contextNote": "By paper chromatography. Or by thin-layer chromatography, \"allow solvent to reach end of plate / allow time for separation\"; or by column chromatography, \"allow components to reach end of column in turn / allow time for separation\"."
+    "contextNote": "Any three of these, the first (6), then (3) and (3): by paper chromatography, the scheme listing four points and pricing the part (6 + 3 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "apply mixture using dropper (capillary tube) / spotting on paper",
+      "about 2 cm (slightly, just) above (below*) eluent**",
+      "place paper in tank (beaker, other suitable container)",
+      "allow solvent to reach end of paper / allow time for separation"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    }
    }
   ],
-  "notes": "The scheme prices these points together as [6 + 3 + 3] without saying which point earns which part, so no per-point value is shown. The scheme sets out three methods -- paper, thin-layer and column chromatography -- each in four points priced (6 + 3 + 3); the rows here are paper chromatography, the others in the row notes. The scheme adds: [*In paper chromatography the solvent reservoir could be higher than the paper in which case the mobile phase moves down the paper.] [For eluent** allow mobile phase, solvent or named solvent, e.g. water.] [One diagram is sufficient; award maximum (9) marks if no diagram given.]"
+  "notes": "The scheme sets out three methods -- paper, thin-layer and column chromatography -- each in four points priced (6 + 3 + 3); the options here are paper chromatography's. By thin-layer chromatography: \"apply mixture using dropper (capillary tube) / spotting on plate\"; \"about 2 cm (slightly, just) above eluent**\"; \"place plate in tank (beaker, other suitable container)\"; \"allow solvent to reach end of plate / allow time for separation\". By column chromatography: \"dissolve mixture in small volume of eluent** / add mixture to column\"; \"add mixture to column / add eluent\"; \"keep adding eluent\"; \"allow components to reach end of column in turn / allow time for separation\". The scheme adds: [*In paper chromatography the solvent reservoir could be higher than the paper in which case the mobile phase moves down the paper.] [For eluent** allow mobile phase, solvent or named solvent, e.g. water.] [One diagram is sufficient; award maximum (9) marks if no diagram given.]"
  },
  {
   "id": "chem-2016-ol-q10-a-i",

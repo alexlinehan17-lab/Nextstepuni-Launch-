@@ -136,19 +136,18 @@ _q2d2 = P.items(k('2', 'd', 'ii'))
 assert [it.cell for it in _q2d2] == ['[6]', '[3]', '[3]', None], _q2d2
 C.route([k('2', 'd', 'ii')], 'chem-4-1', 'concentration-of-sodium-hydroxide-in-grams-per-litre',
         notes='The scheme adds: ' + traced(_q2d2[3].text) + ' ' + ' '.join(_q2d2[3].asides))
-# (e): five points priced (3 × 3); the two asides under them print on one row,
-# which the reader keeps as one line of words.
+# (e): five points priced (3 × 3): a cell pricing fewer points than the scheme
+# lists is a choice, any three of the five, three each. The two asides under
+# them print on one row, which the reader keeps as one line of words.
 _q2e = P.items(k('2', 'e'))
 assert [it.cell for it in _q2e] == ['[3 × 3]', None], _q2e
-_salt = _q2e[0].points()
+_salt = [C.lifted('x', t, None)['verbatim'] for t in _q2e[0].points()]
 assert len(_salt) == 5, _salt
 _diag = _q2e[1].text
 assert _diag == '[Allow marks for good diagram(s).][Deduct 3 where there is no diagram.]', _diag
-C.add([k('2', 'e')], 'chem-u2', 'obtaining-a-pure-dry-sample-of-sodium-chloride',
-      [C.lifted(f'r-{i + 1}', p, None) for i, p in enumerate(_salt)],
-      kind='orderedSplit', notation='[3 × 3]', total=9,
-      notes=SPLIT.format('[3 × 3]') + ' The scheme lists five points and prices the part (3 × 3). The scheme '
-            'adds: ' + traced(_diag))
+C.add([k('2', 'e')], 'chem-u2', 'obtaining-a-pure-dry-sample-of-sodium-chloride', [anyN(
+    'r-1', _salt[0], 9, 3, 3, _salt, 'Any three of these: the scheme lists five points and prices the part '
+    '(3 × 3). The scheme adds: ' + traced(_diag))], total=9)
 C.fixed([k('2', 'f')], 'chem-1-2', 'flame-colour-of-sodium')
 
 # ── Q3 The decomposition of hydrogen peroxide ────────────────────────────────
@@ -317,11 +316,15 @@ C.ordered([k('8', 'd', 'i'), k('8', 'd', 'ii')], 'chem-4-2', 'classifying-conver
           row_notes={0: 'For (i).', 1: 'For (ii).', 2: 'For "What other condition is required for this reaction?"'})
 
 # ── Q9 Water treatment and hard water ────────────────────────────────────────
-# (a): six blanks, the cell labelled "FIRST FIVE:", the passage the paper's print.
-assert cells(k('9', 'a')) == ['[5 × 5]'], P.items(k('9', 'a'))
-C.ordered([k('9', 'a')], 'chem-4-3', 'treating-a-water-supply',
-          notes='The scheme sets the cell as "' + traced('FIRST FIVE: (5 × 5)') + '": six blanks, '
-                'the first five answers marked.')
+# (a): six blanks, the cell labelled "FIRST FIVE:" (5 × 5): any five of the
+# six, five each, each answer numbered by its blank; the passage the paper's print.
+_q9a = P.items(k('9', 'a'))
+assert [it.cell for it in _q9a] == ['[5 × 5]'], _q9a
+_blanks9 = [C.lifted('x', t, None)['verbatim'] for t in _q9a[0].points()]
+assert len(_blanks9) == 6 and _blanks9[0] == '1 a flocculating agent', _blanks9
+C.add([k('9', 'a')], 'chem-4-3', 'treating-a-water-supply', [anyN(
+    'r-1', _blanks9[0], 25, 5, 5, _blanks9, 'Any five of these: the scheme sets the cell as "'
+    + traced('FIRST FIVE: (5 × 5)') + '": six blanks, the first five answers marked.')], total=25)
 print_question('paper-q9a-print')
 # (b)(i): the paper underlines "hard water".
 C.fixed([k('9', 'b', 'i')], 'chem-4-3', 'hard-water')
@@ -346,14 +349,18 @@ assert [m[0] for m in _meth] == ['paper chromatography', 'thin-layer chromatogra
     and all(len(m) == 5 for m in _meth), _meth
 _q10a_asides = [traced(a) for a in _q10a_its[2].asides]
 assert len(_q10a_asides) == 3, _q10a_asides
-C.add([k('10', 'a')], 'chem-u2', 'separating-indicators-by-chromatography', [
-    C.lifted(f'r-{i}', _meth[0][i], None, f'By paper chromatography. Or by thin-layer chromatography, '
-             f'"{traced(_meth[1][i])}"; or by column chromatography, "{traced(_meth[2][i])}".')
-    for i in range(1, 5)],
-    kind='orderedSplit', notation='[6 + 3 + 3]', total=12, qtext=_experiment,
-    notes=SPLIT.format('[6 + 3 + 3]') + ' The scheme sets out three methods -- paper, thin-layer and column '
-          'chromatography -- each in four points priced (6 + 3 + 3); the rows here are paper chromatography, '
-          'the others in the row notes. The scheme adds: ' + ' '.join(_q10a_asides))
+# The cell prices three of each method's four points, (6 + 3 + 3): a choice,
+# any three, the first (6), then (3) and (3).
+_paper = [C.lifted('x', _meth[0][i], None)['verbatim'] for i in range(1, 5)]
+C.add([k('10', 'a')], 'chem-u2', 'separating-indicators-by-chromatography', [anyN(
+    'r-1', _paper[0], 12, 3, 6, _paper, 'Any three of these, the first (6), then (3) and (3): by paper '
+    'chromatography, the scheme listing four points and pricing the part (6 + 3 + 3).', steps=[6, 3, 3])],
+    total=12, qtext=_experiment,
+    notes='The scheme sets out three methods -- paper, thin-layer and column chromatography -- each in four '
+          'points priced (6 + 3 + 3); the options here are paper chromatography\'s. By thin-layer '
+          'chromatography: ' + '; '.join(f'"{traced(_meth[1][i])}"' for i in range(1, 5)) + '. By column '
+          'chromatography: ' + '; '.join(f'"{traced(_meth[2][i])}"' for i in range(1, 5)) + '. The scheme adds: '
+          + ' '.join(_q10a_asides))
 assert cells(k('10', 'a', 'i')) == ['[3]'], P.items(k('10', 'a', 'i'))
 C.fixed([k('10', 'a', 'i')], 'chem-u2', 'the-mobile-phase', qtext=_identify, stem=_experiment,
         row_notes={0: 'For (i).'})
