@@ -426,11 +426,11 @@ def marker_kind(ws, info):
         if rest and re.match(r'^\((i|ii|iii|iv|v|vi)\)$', rest[0]): return ('roman', rest[0].strip('()'), None, int(m.group(1)))
         return ('q', int(m.group(1))) if x<0.15 else None
     m=re.match(r'^\(?([A-Ea-e])\)?$', t0)
-    if m and (len(t0)>1 or (len(toks)>1 and toks[1][:1].isupper()) or (len(toks)>1 and re.match(r'^\((i|ii|iii|iv|v|vi)\)$', toks[1]))):
+    if m and (len(t0)>1 or (len(toks)>1 and toks[1][:1].isupper()) or (len(toks)>1 and re.match(r'^\(?(i|ii|iii|iv|v|vi)\)?$', toks[1]))):
         if len(toks)>1 and re.match(r'^\(?(i|ii|iii|iv|v|vi)\)?$', toks[1]): return ('roman', toks[1].strip('()'), m.group(1).upper(), None)
         return ('part', m.group(1).upper(), None)
     m=re.match(r'^\(?(i|ii|iii|iv|v|vi)\)?$', t0)
-    if m and x<0.2: return ('roman', m.group(1), None, None)
+    if m and x<0.35: return ('roman', m.group(1), None, None)
     return None
 def block_for(card):
     info=parse_ref(card['questionRef'])
@@ -464,6 +464,9 @@ def block_for(card):
             t=item_text(lines[j]['ws'], strip_marker=True); n=norm(t)
             if len(n)>=25 and not echoes(t, qn) and any(cid!=card['id'] and n[:25] in sq for cid,sq in SIBLINGS[(card['year'],card['level'])]): end=j; break
     block=lines[start:end]
+    first=item_text(block[0]['ws'], strip_marker=True); fn=norm(first)
+    if len(fn)>=25 and not echoes(first, qn) and any(cid!=card['id'] and fn[:25] in sq for cid,sq in SIBLINGS[(card['year'],card['level'])]):
+        return None, 'the marker found opens another part'
     # a sub-part listed first and answered after: its marker printed a second time opens the responses
     if want_level=='roman' and len(block)<=2:
         later=[j for j in range(end, len(lines)) if (marker_kind(lines[j]['ws'], info) or (None,))[0]=='roman' and marker_kind(lines[j]['ws'], info)[1]==roman]
@@ -507,7 +510,7 @@ def expected_geo(card):
         if k+1<len(texts) and texts[k+1][1][:1].islower(): return asks((t+' '+texts[k+1][1]).rstrip()+'.') or asks(t.rstrip()+'.')
         return False
     cap=1 if any(tok.rstrip('.').lower() in ('true','false') and x0>0.65 for l,t in texts for x0,_,_,tok in l['ws']) else 2
-    while texts and popped<cap and id(texts[0][0]) not in headers and (echoes(texts[0][1], qn) or asks_wrapped(0)):
+    while texts and popped<cap and id(texts[0][0]) not in headers and not re.search(r'\b[A-Z]{4,}\b', texts[0][1]) and (echoes(texts[0][1], qn) or asks_wrapped(0)):
         echo=texts.pop(0)[1]; popped+=1
         while texts and texts[0][1][:1].islower() and not re.search(r'[.?!:]$', echo): echo=texts.pop(0)[1]
     if not texts: return None,'no response under the marker'
@@ -552,7 +555,16 @@ def expected_geo(card):
         figs=sum(1 for *_,tok in l['ws'] if re.fullmatch(r'[€(]?\d[\d,.]*%?\)?', tok) and len(re.sub(r'\D','',tok))>=2)
         if figs>=1 and len(l['ws'])<=9: items.append({'text': t, 'detail': [], 'geo': 'table'}); continue
         if t.strip(): items.append({'text': t, 'detail': []})
-    if header is not None and not any(it.get('geo')=='tick' for it in items): return None, 'tick table: the ticks are not in the text layer'
+    # a drawn answer: a chart or graph plotted on the page (small drawn glyphs, few printed lines) is not a list of rows
+    try:
+        pg=doc(card['year'], card['rubric']['schemeFileid'])[page-1]
+        glyphs=sum(1 for d in pg.get_drawings() if d.get('rect') is not None and 3<d['rect'].width<20 and 3<d['rect'].height<20)
+    except Exception:
+        glyphs=0
+    texty=[it for it in items if it.get('geo') not in ('header',) and it['text']!=BOUNDARY and sum(ch.isalpha() for ch in it['text'])>=8]
+    if glyphs>=5 and len(texty)<3: return None, 'the answer is a drawing: a chart or graph plotted on the page'
+    if header is not None and not any(it.get('geo')=='tick' for it in items):
+        items=[it for it in items if it.get('geo')!='header']   # a header line with no ticks under it was just a line of short words
     # join continuation lines and split bulleted items as stage A does; tick rows stay whole
     out=[]; run=[]
     def flush_run():
@@ -570,8 +582,9 @@ def expected_geo(card):
     while out and out[0]['text'][:1].islower(): out.pop(0)
     out=[{'id':f'e{n}', **{k:v for k,v in o.items() if k!='id'}} for n,o in enumerate(out,1)]
     joined=' '.join(o['text']+' '+' '.join(o.get('detail',[])) for o in out)
-    letters=sum(ch.isalpha() for ch in joined)
-    if not out or letters<10: return None,'no readable response'
+    letters=sum(ch.isalpha() for ch in joined); digits=sum(ch.isdigit() for ch in joined)
+    pairs=sum(1 for o in out if ' — ' in o['text'])
+    if not out or (letters<10 and digits<6 and pairs<3): return None,'no readable response'
     # a page whose text layer dropped or shifted letters ("xplain", "Wz") is not readable either
     if MANGLED.search(joined) or re.search(r'\bxplain|:ob|Wz|h\^|\b[A-Za-z]*[\^|]\w', joined): return None,'text layer glyph damage on the page'
     if len(joined)>MAX_BLOCK: return None,'block over 3000 characters'
