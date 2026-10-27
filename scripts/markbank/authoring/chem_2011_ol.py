@@ -623,18 +623,21 @@ _cap = traced('[Q 11 (c) B can receive a maximum of 25 marks]')
 assert [(it.cell, it.text) for it in P.items(ka('11', 'c', None, 'B'))] == [('[3]', 'Humphry Davy')]
 # The card model has no cap below the sum of a card's rows, nor across cards, so the
 # cap is a direction on each of B's four cards: their tariffs add to 3 + 7 + 6 + 12 = 28.
+# On a row note, which ships (a card's own notes never reach the student).
 _B_CAP = ('The scheme caps Q11(c)B: "' + _cap + '". Its four asks are priced 3 + 7 + 6 + 12 = 28 against the '
           "paper's 25, so across them a student counts at most 25.")
 C.fixed([ka('11', 'c', None, 'B')], 'chem-3-5', 'humphry-davy', figure=Q11CB, stem='', ref_suffix='the scientist',
-        row_notes={0: 'The paper prints no mark for this ask; the scheme prices it "' + traced('WHO: (3)') + '".'},
-        notes=_B_CAP)
-C.fixed([ka('11', 'c', 'i', 'B')], 'chem-3-5', 'isolating-sodium-by-electrolysis', figure=Q11CB, notes=_B_CAP)
+        row_notes={0: 'The paper prints no mark for this ask; the scheme prices it "' + traced('WHO: (3)') + '". '
+                      + _B_CAP})
+C.fixed([ka('11', 'c', 'i', 'B')], 'chem-3-5', 'isolating-sodium-by-electrolysis', figure=Q11CB,
+        row_notes={0: _B_CAP})
 C.fixed([ka('11', 'c', 'ii', 'B')], 'chem-3-5', 'why-sodium-is-not-extracted-in-a-blast-furnace', figure=Q11CB,
-        notes=_B_CAP)
+        row_notes={0: _B_CAP})
 _cb3 = P.items(ka('11', 'c', 'iii', 'B'))
 assert [(it.cell, it.asides) for it in _cb3] == [('[6]', []), ('[6]', [_cap])], _cb3
-C.fixed([ka('11', 'c', 'iii', 'B')], 'chem-3-5', 'galvanising-iron', figure=Q11CB, notes=_B_CAP,
-        row_notes={0: 'For "How is iron galvanised?"', 1: 'For "How does galvanising protect iron from corrosion?"'})
+C.fixed([ka('11', 'c', 'iii', 'B')], 'chem-3-5', 'galvanising-iron', figure=Q11CB,
+        row_notes={0: 'For "How is iron galvanised?" ' + _B_CAP,
+                   1: 'For "How does galvanising protect iron from corrosion?"'})
 
 
 # ── excluded ─────────────────────────────────────────────────────────────────

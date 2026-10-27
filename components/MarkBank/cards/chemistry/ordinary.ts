@@ -27344,7 +27344,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the English scientist, pictured on the right, who isolated the elements sodium and potassium in the early 1800s.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Humphry Davy", marks: 3, contextNote: "The paper prints no mark for this ask; the scheme prices it \"WHO: (3)\".", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Humphry Davy", marks: 3, contextNote: "The paper prints no mark for this ask; the scheme prices it \"WHO: (3)\". The scheme caps Q11(c)B: \"[Q 11 (c) B can receive a maximum of 25 marks]\". Its four asks are priced 3 + 7 + 6 + 12 = 28 against the paper's 25, so across them a student counts at most 25.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2011-OL-paper-q11c-b",
@@ -27366,7 +27366,7 @@ export const CARDS: SecCard[] = [
     questionText: "What technique did he use to isolate sodium and potassium?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "electrolysis", marks: 7, openList: true },
+    { id: "r-1", kind: "point", verbatim: "electrolysis", marks: 7, contextNote: "The scheme caps Q11(c)B: \"[Q 11 (c) B can receive a maximum of 25 marks]\". Its four asks are priced 3 + 7 + 6 + 12 = 28 against the paper's 25, so across them a student counts at most 25.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2011-OL-paper-q11c-b",
@@ -27388,7 +27388,7 @@ export const CARDS: SecCard[] = [
     questionText: "Iron can be isolated from its ores in a blast furnace. Explain why sodium cannot be extracted in a similar way.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sodium too reactive/ stable salts", marks: 6, openList: true },
+    { id: "r-1", kind: "point", verbatim: "sodium too reactive/ stable salts", marks: 6, contextNote: "The scheme caps Q11(c)B: \"[Q 11 (c) B can receive a maximum of 25 marks]\". Its four asks are priced 3 + 7 + 6 + 12 = 28 against the paper's 25, so across them a student counts at most 25.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2011-OL-paper-q11c-b",
@@ -27410,7 +27410,7 @@ export const CARDS: SecCard[] = [
     questionText: "How is iron galvanised? How does galvanising protect iron from corrosion?",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "coated with zinc / dipped in molten zinc", marks: 6, contextNote: "For \"How is iron galvanised?\"", openList: true },
+    { id: "r-1", kind: "point", verbatim: "coated with zinc / dipped in molten zinc", marks: 6, contextNote: "For \"How is iron galvanised?\" The scheme caps Q11(c)B: \"[Q 11 (c) B can receive a maximum of 25 marks]\". Its four asks are priced 3 + 7 + 6 + 12 = 28 against the paper's 25, so across them a student counts at most 25.", openList: true },
     { id: "r-2", kind: "point", verbatim: "excludes air (water) / zinc preferentially oxidised / cathodic protection / zinc serves as sacrificial metal", marks: 6, contextNote: "The scheme adds: [Q 11 (c) B can receive a maximum of 25 marks] For \"How does galvanising protect iron from corrosion?\"", openList: true },
     ],
     figure: {
