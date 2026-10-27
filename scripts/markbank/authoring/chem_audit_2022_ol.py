@@ -21,6 +21,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, anyN, point  # noqa: E402
 
 P = Printed(2022, 'ol', figures=True)
@@ -97,12 +98,14 @@ assert [it.cell for it in _q3a[2]] == ['[9 + 5 + 2 + 2]'], _q3a
 C.add([k('3', 'a', 'i'), k('3', 'a', 'ii'), k('3', 'a', 'iii')], None, None, [
     C.lifted('r-1', _q3a[0][0].text, None, 'The scheme adds: [Apply (–2) for manganese oxide.]'),
     C.lifted('r-2', _q3a[1][0].text, None),
-    C.lifted('r-3', 'catalyst initially in neck of flask lying on its side', None,
-             'The scheme gives this point and the next as one pair of three, with "or" between '
-             'them: "catalyst and peroxide initially separated using small test tube // disturb '
-             'to mix catalyst and solution", or "open (replace, insert) stopper // add catalyst '
-             'quickly."; its own print is shown with the answer.'),
-    C.lifted('r-4', 'rotate flask so combine catalyst with solution', None)],
+    # Three pairs for (iii), "or" between them, priced together: each point accepts its
+    # counterparts in the other pairs (an unpriced card cannot take routes).
+    C.accepting(C.lifted('r-3', 'catalyst initially in neck of flask lying on its side', None,
+                         'The scheme gives this point and the next as one of three pairs, with "or" between them; '
+                         'claim both points from the same pair. Its own print is shown with the answer.'),
+                'catalyst and peroxide initially separated using small test tube', 'open (replace, insert) stopper'),
+    C.accepting(C.lifted('r-4', 'rotate flask so combine catalyst with solution', None),
+                'disturb to mix catalyst and solution', 'add catalyst quickly')],
     kind='orderedSplit', notation='[9 + 5 + 2 + 2]', total=18, cid='q3-a', figure=S + 'q3a-iii',
     notes=SPLIT.format('[9 + 5 + 2 + 2]'))
 # Its only figure is the scheme's drawing, held back until the reveal, while the lead-in's last
@@ -285,11 +288,15 @@ Q10B = P.rearranged(C.context(k('10', 'b', 'i')), 'N2O4 (g) ⇌ 2NO2 (g)', 'N₂
 # (i): two pairs of points with "or" between them, priced (2 × 3).
 _q10b1 = P.items(k('10', 'b', 'i'))
 assert [it.cell for it in _q10b1] == ['[2 × 3]'], _q10b1
+# Two pairs, the second after "or", each (2 × 3): each a route.
 C.add([k('10', 'b', 'i')], None, None, [
-    C.lifted('r-1', 'state where forward and reverse reactions', 3,
-             'The scheme prices this point and the next (2 × 3), one each, or instead the pair '
-             '"state where concentrations of reactants and products // are constant".'),
-    C.lifted('r-2', 'have equal rates', 3)], stem=Q10B)
+    routed(C.lifted('r-1', 'state where forward and reverse reactions', 3,
+                    'The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. '
+                    'The examiner marks one pair or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', 'have equal rates', 3), 'a'),
+    routed(C.lifted('r-3', 'state where concentrations of reactants and products', 3,
+                    'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', 'are constant', 3), 'b')], total=6, stem=Q10B)
 # (ii): one point (2); below it the text layer reads (iii)'s Kc numerator.
 _q10b2 = P.items(k('10', 'b', 'ii'))
 assert [it.cell for it in _q10b2] == ['[2]', None], _q10b2

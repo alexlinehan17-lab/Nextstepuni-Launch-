@@ -2430,7 +2430,8 @@
     "verbatim": "half the internuclear distance (half the distance between the nuclei {centres}) of two atoms of same element (two identical atoms)",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"half the internuclear distance between two atoms // joined by a single homonuclear bond\"."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -2438,7 +2439,26 @@
     "verbatim": "joined by a single covalent bond",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "half the internuclear distance between two atoms",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "joined by a single homonuclear bond",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -2832,7 +2852,26 @@
     "verbatim": "greater the tendency of an acid to donate protons (more the acid tends to dissociate into ions) the stronger it is / less the tendency of an acid to donate protons (less the acid tends to dissociate into ions) the weaker it is",
     "marks": 6,
     "openList": true,
-    "contextNote": "Or instead, (2 × 3), \"strong acid: is a good proton (H⁺) donor / has a weak conjugate base / fully dissociated / has large (complete) degree of dissociation into ions / K_(a) value large // weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly* dissociated / K_(a) value small\". The scheme adds: [*Accept weak acid only partly dissociated.]"
+    "contextNote": "Or instead the last two rows, (2 × 3), one each. The examiner marks one or the other, not a mix.",
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "strong acid: is a good proton (H⁺) donor / has a weak conjugate base / fully dissociated / has large (complete) degree of dissociation into ions / K_(a) value large",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly* dissociated / K_(a) value small",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [*Accept weak acid only partly dissociated.]",
+    "route": "b"
    }
   ]
  },
@@ -6070,7 +6109,10 @@
     "verbatim": "state where forward and reverse reactions",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead the pair \"state where concentrations of reactants and products // are constant\"."
+    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead the pair after \"or\". Claim both points from the same pair.",
+    "accepts": [
+     "state where concentrations of reactants and products"
+    ]
    },
    {
     "id": "r-2",
@@ -6078,7 +6120,10 @@
     "verbatim": "have equal rates",
     "marks": null,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "accepts": [
+     "are constant"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
@@ -6986,7 +7031,10 @@
     "verbatim": "iron(II) sulfate (FeSO₄, ammonium iron(II) sulfate) / (C₆H₅)₂NH (diphenylamine) and NH₄Cl (ammonium chloride) / copper (Cu)",
     "marks": null,
     "openList": true,
-    "contextNote": "Or instead the pair \"sodium hydroxide (NaOH) solution // aluminium (Al) / copper (Cu) / zinc (Zn)\"."
+    "contextNote": "Or instead the pair after \"or\". Claim both reagents from the same pair.",
+    "accepts": [
+     "sodium hydroxide (NaOH) solution"
+    ]
    },
    {
     "id": "r-2",
@@ -6994,7 +7042,10 @@
     "verbatim": "concentrated sulfuric acid (H₂SO₄)",
     "marks": null,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "accepts": [
+     "aluminium (Al) / copper (Cu) / zinc (Zn)"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -7117,7 +7168,8 @@
     "verbatim": "H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ / H₂CO₃ + H₂O ⇌ (→) HCO₃⁻ + H₃O⁺",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme sets \"CO₂ + H₂O → H₂CO₃\" above the two equations and prices them (2 × 3), one each."
+    "contextNote": "The scheme sets \"CO₂ + H₂O → H₂CO₃\" above the two equations and prices them (2 × 3), one each, or instead the one equation in the last row (6). The examiner marks one or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -7125,7 +7177,17 @@
     "verbatim": "HCO₃⁻ ⇌ (→) CO₃²⁻ + H⁺ / HCO₃⁻ + H₂O ⇌ (→) CO₃²⁻ + H₃O⁺",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or instead the one equation \"H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ ⇌ (→) CO₃²⁻ + 2H⁺\", priced (6). The scheme adds: [Allow 2H₂CO₃ ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H⁺ or 2H₂CO₃ + 3H₂O ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H₃O⁺]"
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ ⇌ (→) CO₃²⁻ + 2H⁺",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Or instead the one equation, (6). The scheme adds: [Allow 2H₂CO₃ ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H⁺ or 2H₂CO₃ + 3H₂O ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H₃O⁺]",
+    "route": "b"
    }
   ],
   "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -12306,7 +12368,8 @@
     "verbatim": "chemical equilibrium: forward and reverse reactions",
     "marks": 2,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 2), one each, or instead the pair \"concentrations of reactants and products // are constant\"."
+    "contextNote": "The scheme prices this point and the next (2 × 2), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-3",
@@ -12314,7 +12377,26 @@
     "verbatim": "have equal rates",
     "marks": 2,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "concentrations of reactants and products",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 2), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "are constant",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -12661,7 +12743,8 @@
     "verbatim": "minimum combined energy of colliding particles (molecules)",
     "marks": 2,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 2), one each, or instead the pair \"minimum combined energy of particles (molecules) // for (of) effective collisions\"."
+    "contextNote": "The scheme prices this point and the next (2 × 2), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -12669,7 +12752,26 @@
     "verbatim": "for reaction to take place between them",
     "marks": 2,
     "openList": true,
-    "contextNote": "The scheme adds: [At least one mention of collisions or colliding is essential for full marks.]"
+    "contextNote": "The scheme adds: [At least one mention of collisions or colliding is essential for full marks.]",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "minimum combined energy of particles (molecules)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 2), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "for (of) effective collisions",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -23956,7 +24058,11 @@
     "verbatim": "catalyst initially in neck of flask lying on its side",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme gives this point and the next as one pair of three, with \"or\" between them: \"catalyst and peroxide initially separated using small test tube // disturb to mix catalyst and solution\", or \"open (replace, insert) stopper // add catalyst quickly.\"; its own print is shown with the answer."
+    "contextNote": "The scheme gives this point and the next as one of three pairs, with \"or\" between them; claim both points from the same pair. Its own print is shown with the answer.",
+    "accepts": [
+     "catalyst and peroxide initially separated using small test tube",
+     "open (replace, insert) stopper"
+    ]
    },
    {
     "id": "r-4",
@@ -23964,7 +24070,11 @@
     "verbatim": "rotate flask so combine catalyst with solution",
     "marks": null,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "accepts": [
+     "disturb to mix catalyst and solution",
+     "add catalyst quickly"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [9 + 5 + 2 + 2] without saying which point earns which part, so no per-point value is shown.",
@@ -24997,7 +25107,8 @@
     "verbatim": "state where forward and reverse reactions",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"state where concentrations of reactants and products // are constant\"."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -25005,7 +25116,26 @@
     "verbatim": "have equal rates",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "state where concentrations of reactants and products",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "are constant",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -26669,7 +26799,8 @@
     "verbatim": "diagram showing beryllium ion with no electrons in outer shell",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme draws the ions with their electron shells, or writes Be²⁺ beside O²⁻ with its eight outer electrons as dots; its own print is shown with the answer. It prices this point and the next (2 × 3), one each, or instead the pair \"outer two electrons transferred from beryllium atom / Be²⁺ // to an (one) oxygen atom / O²⁻\" (2 × 3)."
+    "contextNote": "The scheme draws the ions with their electron shells, or writes Be²⁺ beside O²⁻ with its eight outer electrons as dots; its own print is shown with the answer. It prices this point and the next (2 × 3), one each, or instead the last two rows (2 × 3). The examiner marks one pair or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -26677,7 +26808,26 @@
     "verbatim": "and showing oxygen ion with 8 electrons in outer shell",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme adds: [Diagram not essential.]"
+    "contextNote": "The scheme adds: [Diagram not essential.]",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "outer two electrons transferred from beryllium atom / Be²⁺",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "to an (one) oxygen atom / O²⁻",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -46017,7 +46167,8 @@
     "verbatim": "stand (put) flask on cross (print, mark) / cross (print, mark) under flask",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"set up smart-phone lux-meter app next to flask // record (note, measure, take) time for mixture to reach certain opacity using lux-meter\" (2 × 3)."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows (2 × 3). The examiner marks one pair or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -46025,7 +46176,26 @@
     "verbatim": "record (note, measure, take) time for cross (print, mark) to become obscured (invisible)",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "set up smart-phone lux-meter app next to flask",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "record (note, measure, take) time for mixture to reach certain opacity using lux-meter",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -46777,7 +46947,8 @@
     "verbatim": "space (volume, region) around nucleus of an atom",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"approximate solution // to (of) a Schrödinger (wave) equation for an electron in an atom\". It adds: [‘Area’ around nucleus not acceptable.]"
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix. It adds: [‘Area’ around nucleus not acceptable.]",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -46785,7 +46956,26 @@
     "verbatim": "where there is a relatively high probability (possibility) of finding an electron / where an electron is likely to be found",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "approximate solution",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "to (of) a Schrödinger (wave) equation for an electron in an atom",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -47235,7 +47425,26 @@
     "verbatim": "greater the tendency of an acid to donate protons (more the acid tends to dissociate into ions) the stronger it is / less the tendency of an acid to donate protons (less the acid tends to dissociate into ions) the weaker it is",
     "marks": 4,
     "openList": true,
-    "contextNote": "Or instead, (2 × 2), \"strong acid: is a good proton (H⁺) donor / has a weak conjugate base / has large (complete) degree of dissociation into ions / K_(a) value large // weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly (only partly) dissociated / K_(a) value small\"."
+    "contextNote": "Or instead the last two rows, (2 × 2), one each. The examiner marks one or the other, not a mix.",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "strong acid: is a good proton (H⁺) donor / has a weak conjugate base / has large (complete) degree of dissociation into ions / K_(a) value large",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 2), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly (only partly) dissociated / K_(a) value small",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -47600,7 +47809,8 @@
     "verbatim": "hydrogen (H₂)",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead (6) for \"LiAlH₄ / NaBH₄\". It adds: [Accept any order of answering.]"
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the last row (6). The examiner marks one or the other, not a mix. It adds: [Accept any order of answering.]",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -47608,7 +47818,17 @@
     "verbatim": "nickel (Ni) / platinum (Pt) / palladium (Pd) / copper (Cu) / rhodium (Rh) / ruthenium (Ru)",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "LiAlH₄ / NaBH₄",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Or instead, (6).",
+    "route": "b"
    }
   ]
  },
@@ -47806,7 +48026,10 @@
     "verbatim": "attraction of Cl⁺ to double bond / interaction of Cl⁺ with double bond / or attraction of positive end of Clδ+—Clδ– (polarised Cl₂ molecule) to double bond / positive end of Clδ+—Clδ– (polarised Cl₂ molecule) interacts with double bond",
     "marks": null,
     "openList": true,
-    "contextNote": "Or instead: \"breaking of double bond in ethene and polarised bond in chlorine (Cl₂)\"."
+    "contextNote": "",
+    "accepts": [
+     "breaking of double bond in ethene and polarised bond in chlorine (Cl₂)"
+    ]
    },
    {
     "id": "r-3",
@@ -50694,7 +50917,8 @@
     "verbatim": "gives hydroxyl (hydroxide) ions (OH⁻)",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead (6) for \"proton (hydrogen ion, H⁺) acceptor\". It adds: [Allow 3 for either ‘reacts with acid to form salt and water’ or for ‘substance with pH above 7’]"
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the last row (6). The examiner marks one or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -50702,7 +50926,17 @@
     "verbatim": "in aqueous solution (water)",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "proton (hydrogen ion, H⁺) acceptor",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Or instead, (6). The scheme adds: [Allow 3 for either ‘reacts with acid to form salt and water’ or for ‘substance with pH above 7’]",
+    "route": "b"
    }
   ]
  },
@@ -50776,7 +51010,8 @@
     "verbatim": "lathers poorly / forms scum",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"contains dissolved // calcium (Ca, magnesium, Mg) ions / Ca²⁺ (Mg²⁺)\"."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -50784,7 +51019,26 @@
     "verbatim": "with soap",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "contains dissolved",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "calcium (Ca, magnesium, Mg) ions / Ca²⁺ (Mg²⁺)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -51663,7 +51917,10 @@
     "verbatim": "0.6 moles O₂",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or its working, \"0.1 moles glucose ⇒ 0.6 moles O₂\" (3)."
+    "contextNote": "Or its working, (3).",
+    "accepts": [
+     "0.1 moles glucose ⇒ 0.6 moles O₂"
+    ]
    },
    {
     "id": "r-3",
@@ -51671,7 +51928,10 @@
     "verbatim": "13.44 litres O₂",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or its working, \"0.6 × 22.4 = 13.44 litres O₂\" (3)."
+    "contextNote": "Or its working, (3).",
+    "accepts": [
+     "0.6 × 22.4 = 13.44 litres O₂"
+    ]
    }
   ]
  },
@@ -51878,7 +52138,10 @@
     "verbatim": "state where forward and reverse reactions",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead the pair \"state where concentrations of reactants and products // is constant\"."
+    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead the pair after \"or\". Claim both points from the same pair.",
+    "accepts": [
+     "state where concentrations of reactants and products"
+    ]
    },
    {
     "id": "r-2",
@@ -51886,7 +52149,10 @@
     "verbatim": "have equal rates",
     "marks": null,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "accepts": [
+     "is constant"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown.",
@@ -52827,7 +53093,11 @@
     "verbatim": "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl) / clean platinum wire",
     "marks": 3,
     "openList": true,
-    "contextNote": "Method 1. Or Method 2, \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", or Method 3, \"prepare a solution of the salt in water and ethanol (propanol)\"."
+    "contextNote": "Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3.",
+    "accepts": [
+     "soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)",
+     "prepare a solution of the salt in water and ethanol (propanol)"
+    ]
    },
    {
     "id": "r-2",
@@ -52835,7 +53105,11 @@
     "verbatim": "dip rod in salt",
     "marks": 3,
     "openList": true,
-    "contextNote": "Method 1. Or Method 2, \"dip splint (stick) in salt\", or Method 3, \"spray solution\"."
+    "contextNote": "Method 1, then Methods 2 and 3, of the same method as above.",
+    "accepts": [
+     "dip splint (stick) in salt",
+     "spray solution"
+    ]
    },
    {
     "id": "r-3",
@@ -52843,7 +53117,10 @@
     "verbatim": "hold salt in (over) hot (blue) part of flame (Bunsen) / observe colour of flame",
     "marks": 3,
     "openList": true,
-    "contextNote": "Method 1. Or Method 2, \"hold salt in (over) hot (blue) part of flame (Bunsen) / observe colour of flame\", or Method 3, \"onto (into) hot (blue) part of flame (Bunsen) / observe colour of flame\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]"
+    "contextNote": "Method 1, then Methods 2 and 3, of the same method as above. The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]",
+    "accepts": [
+     "onto (into) hot (blue) part of flame (Bunsen) / observe colour of flame"
+    ]
    }
   ],
   "notes": "The scheme sets out three methods in a table, each in three steps priced (3) each, (3 × 3) in all; the rows here are Method 1, and its own print of all three is shown with the answer.",
@@ -54649,7 +54926,10 @@
     "verbatim": "state where forward and reverse reactions",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair \"state where concentrations of reactants and products // is constant\"."
+    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair after \"or\". Claim both points from the same pair.",
+    "accepts": [
+     "state where concentrations of reactants and products"
+    ]
    },
    {
     "id": "r-2",
@@ -54657,7 +54937,10 @@
     "verbatim": "have equal rates",
     "marks": null,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "accepts": [
+     "is constant"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown.",
@@ -54833,7 +55116,10 @@
     "verbatim": "0.05 moles H₂",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or its working, \"0.1 moles Ag ⇒ 0.05 moles H₂\" (3)."
+    "contextNote": "Or its working, (3).",
+    "accepts": [
+     "0.1 moles Ag ⇒ 0.05 moles H₂"
+    ]
    },
    {
     "id": "r-3",
@@ -54841,7 +55127,10 @@
     "verbatim": "1.12 litres H₂",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or its working, \"0.05 × 22.4 = 1.12 litres H₂\" (3)."
+    "contextNote": "Or its working, (3).",
+    "accepts": [
+     "0.05 × 22.4 = 1.12 litres H₂"
+    ]
    }
   ]
  },
@@ -57963,7 +58252,10 @@
     "verbatim": "minimum combined energy of colliding particles (molecules)",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next \"TWO PARTS : (2 × 3)\", one each, or instead the pair \"minimum combined energy of particles (molecules) // for effective collisions\". It adds: [At least one mention of collisions or colliding is essential.]"
+    "contextNote": "The scheme prices this point and the next \"TWO PARTS : (2 × 3)\", one each, or instead the pair after \"or\". Claim both points from the same pair. It adds: [At least one mention of collisions or colliding is essential.]",
+    "accepts": [
+     "minimum combined energy of particles (molecules)"
+    ]
    },
    {
     "id": "r-2",
@@ -57971,7 +58263,10 @@
     "verbatim": "for reaction to take place between them",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "accepts": [
+     "for effective collisions"
+    ]
    },
    {
     "id": "r-3",
@@ -59556,7 +59851,10 @@
     "verbatim": "graduated cylinder (burette) inverted over water – X",
     "marks": null,
     "openList": true,
-    "contextNote": "For (ii). Or \"graduated gas syringe – Y\". The scheme adds: [Label necessary unless graduations clearly marked.] [Allow flask upright; allow gas collection proceeding.]"
+    "contextNote": "For (ii). The scheme adds: [Label necessary unless graduations clearly marked.] [Allow flask upright; allow gas collection proceeding.]",
+    "accepts": [
+     "graduated gas syringe – Y"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown. A, B, X and Y name the scheme's own drawings, shown with the answer.",
@@ -59959,7 +60257,8 @@
     "verbatim": "0.11 × 2 = 0.22 g per litre",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or, by the scheme's second route, \"0.11 × 1000 = 110 mg per 500 cm³\" (3)."
+    "contextNote": "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -59967,7 +60266,26 @@
     "verbatim": "0.22 × 1000 = 220 ppm (mg l⁻¹)",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or, by the second route, \"110 × 2 = 220 ppm (mg l⁻¹)\" (3)."
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.11 × 1000 = 110 mg per 500 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or by the scheme's second route, this step and the next.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "110 × 2 = 220 ppm (mg l⁻¹)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ],
   "notes": "The scheme gives the answer, 220 ppm (mg l⁻¹), priced (6), then the working that earns it in two boxed routes, step by step; the steps here are its first route. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -60549,7 +60867,10 @@
     "verbatim": "calcium hydrogencarbonate / calcium bicarbonate / (Ca(HCO₃)₂",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or \"magnesium hydrogencarbonate / magnesium bicarbonate / (Mg(HCO₃)₂\"."
+    "contextNote": "",
+    "accepts": [
+     "magnesium hydrogencarbonate / magnesium bicarbonate / (Mg(HCO₃)₂"
+    ]
    }
   ]
  },
@@ -60825,7 +61146,10 @@
     "verbatim": "blue changes",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next together (6 + 3), or instead, (6 + 3), the pair \"brick red (orange) // precipitate formed\"."
+    "contextNote": "The scheme prices this point and the next together (6 + 3), or instead, (6 + 3), the pair after \"or\". Claim both points from the same pair.",
+    "accepts": [
+     "brick red (orange)"
+    ]
    },
    {
     "id": "r-2",
@@ -60833,7 +61157,10 @@
     "verbatim": "to brick red (orange) precipitate",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme adds: [Allow (3) for colours reversed.]"
+    "contextNote": "The scheme adds: [Allow (3) for colours reversed.]",
+    "accepts": [
+     "precipitate formed"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
@@ -60973,7 +61300,11 @@
     "verbatim": "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl)",
     "marks": 6,
     "openList": true,
-    "contextNote": "Method 1. Or Method 2, \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", or Method 3, \"prepare a solution of the salt in water and ethanol (propanol)\"."
+    "contextNote": "Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3.",
+    "accepts": [
+     "soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)",
+     "prepare a solution of the salt in water and ethanol (propanol)"
+    ]
    },
    {
     "id": "r-2",
@@ -60981,7 +61312,11 @@
     "verbatim": "dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)",
     "marks": 5,
     "openList": true,
-    "contextNote": "Method 1. Or Method 2, \"dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", or Method 3, \"spray solution onto (into) hot (blue) part of flame (Bunsen)\"."
+    "contextNote": "Method 1, then Methods 2 and 3, of the same method as above.",
+    "accepts": [
+     "dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)",
+     "spray solution onto (into) hot (blue) part of flame (Bunsen)"
+    ]
    },
    {
     "id": "r-3",
@@ -60989,7 +61324,8 @@
     "verbatim": "observe colour of flame",
     "marks": 1,
     "openList": true,
-    "contextNote": "Method 1. Or Method 2, \"observe colour of flame\", or Method 3, \"observe colour of flame\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]"
+    "contextNote": "Method 1, then Methods 2 and 3, of the same method as above. The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]",
+    "accepts": []
    }
   ],
   "notes": "The scheme sets out three methods in a table, each in three steps priced (6), (5) and (1), (6 + 5 + 1) in all; the rows here are Method 1, and its own print of all three is shown with the answer."
@@ -66880,7 +67216,8 @@
     "verbatim": "0.016 × 10 = 0.16 g per litre",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or, by the scheme's second route, \"0.016 × 1000 = 16 mg per 100 cm³\" (3)."
+    "contextNote": "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -66888,7 +67225,26 @@
     "verbatim": "0.16 × 1000 = 160 ppm (mg l⁻¹)",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or, by the second route, \"16 × 10 = 160 ppm (mg l⁻¹)\" (3)."
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.016 × 1000 = 16 mg per 100 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or by the scheme's second route, this step and the next.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "16 × 10 = 160 ppm (mg l⁻¹)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ],
   "notes": "The scheme gives the answer, 160 ppm (mg l⁻¹), priced (6), then the working that earns it in two boxed routes, step by step; the steps here are its first route. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -67503,7 +67859,11 @@
     "verbatim": "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid",
     "marks": 4,
     "openList": true,
-    "contextNote": "Method 1; the scheme's cell ends \"(HCl)\". Or Method 2, \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", or Method 3, \"prepare a solution of the salt in water and ethanol (propanol)\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.]"
+    "contextNote": "Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3; the scheme's Method 1 cell ends \"(HCl)\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.]",
+    "accepts": [
+     "soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)",
+     "prepare a solution of the salt in water and ethanol (propanol)"
+    ]
    },
    {
     "id": "r-2",
@@ -67511,7 +67871,11 @@
     "verbatim": "dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)",
     "marks": 4,
     "openList": true,
-    "contextNote": "Method 1. Or Method 2, \"dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", or Method 3, \"spray solution onto (into) hot (blue) part of flame (Bunsen)\"."
+    "contextNote": "Method 1, then Methods 2 and 3, of the same method as above.",
+    "accepts": [
+     "dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)",
+     "spray solution onto (into) hot (blue) part of flame (Bunsen)"
+    ]
    },
    {
     "id": "r-3",
@@ -67712,7 +68076,10 @@
     "verbatim": "potassium permanganate {manganate(VII)} / KMnO₄ /MnO₄⁻",
     "marks": 6,
     "openList": true,
-    "contextNote": "Or \"sodium (potassium) dichromate / Na₂Cr₂O₇ / Cr₂O₇²⁻, etc\"."
+    "contextNote": "",
+    "accepts": [
+     "sodium (potassium) dichromate / Na₂Cr₂O₇ / Cr₂O₇²⁻, etc"
+    ]
    }
   ]
  },
@@ -68280,7 +68647,8 @@
     "verbatim": "reactants and products in a chemical reaction",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each; or instead, (2 × 3), the pair \"matter cannot be created or destroyed // in a chemical reaction / but can be changed from one (form) substance into another\"."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each; or instead, (2 × 3), the last two rows. The examiner marks one statement or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -68288,7 +68656,26 @@
     "verbatim": "have constant mass",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "matter cannot be created or destroyed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "in a chemical reaction / but can be changed from one (form) substance into another",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ]
  },
@@ -70579,7 +70966,10 @@
     "verbatim": "[(–9.3) + (–178.4) + (20.0)] kJ",
     "marks": 3,
     "openList": true,
-    "contextNote": "CALCULATE: ΔH cracking = ΣΔH formation products – ΣΔH formation reactants; the products' heats of formation first, or added up, \"–167.7 kJ\" (3)."
+    "contextNote": "CALCULATE: ΔH cracking = ΣΔH formation products – ΣΔH formation reactants; the products' heats of formation first, or added up (3).",
+    "accepts": [
+     "–167.7 kJ"
+    ]
    },
    {
     "id": "r-4",
@@ -70587,7 +70977,10 @@
     "verbatim": "– (– 350.9) kJ",
     "marks": 3,
     "openList": true,
-    "contextNote": "Then the reactant's, subtracted, or written \"+ 350.9 kJ\" (3)."
+    "contextNote": "Then the reactant's, subtracted, or written added (3).",
+    "accepts": [
+     "+ 350.9 kJ"
+    ]
    },
    {
     "id": "r-5",
@@ -72626,7 +73019,8 @@
     "verbatim": "rinse with deionised (distilled, pure) water",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each; or instead, (6), \"rinse clean burette with solution it will contain (acid, hydrochloric acid, HCl)\"."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each; or instead the last row (6). The examiner marks one or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -72634,7 +73028,17 @@
     "verbatim": "rinse with solution it will contain (acid, hydrochloric acid, HCl)",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "rinse clean burette with solution it will contain (acid, hydrochloric acid, HCl)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Or instead, (6).",
+    "route": "b"
    }
   ]
  },
@@ -73100,7 +73504,26 @@
     "verbatim": "reflux",
     "marks": 6,
     "openList": true,
-    "contextNote": "Or instead, (2 × 3), one each, \"vapours rise up (evaporates)\" and \"condense (cool) / fall back into flask\"."
+    "contextNote": "Or instead the last two rows, (2 × 3), one each. The examiner marks one or the other, not a mix.",
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "vapours rise up (evaporates)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or instead, this point and the next (2 × 3), one each.",
+    "route": "b"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "condense (cool) / fall back into flask",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ],
   "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -73126,7 +73549,8 @@
     "verbatim": "volume inversely",
     "marks": 3,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next (2 × 3), one each; or instead, (6), \"P₁V₁ = constant (k) / P₁V₁ = P₂V₂\" or \"P ∝ 1/V\", which the scheme sets as a fraction."
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each; or instead the last row (6). The examiner marks one or the other, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -73134,7 +73558,20 @@
     "verbatim": "proportional to pressure",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "P₁V₁ = constant (k) / P₁V₁ = P₂V₂",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Or instead, (6); the scheme sets P ∝ 1/V as a fraction.",
+    "accepts": [
+     "P ∝ 1/V"
+    ],
+    "route": "b"
    }
   ],
   "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
@@ -74711,7 +75148,10 @@
     "verbatim": "forward and reverse reactions",
     "marks": null,
     "openList": true,
-    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair \"concentrations of reactants and products // constant\"."
+    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair after \"or\". Claim both points from the same pair.",
+    "accepts": [
+     "concentrations of reactants and products"
+    ]
    },
    {
     "id": "r-2",
@@ -74719,7 +75159,10 @@
     "verbatim": "have equal rates",
     "marks": null,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "",
+    "accepts": [
+     "constant"
+    ]
    }
   ],
   "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown.",
@@ -79089,7 +79532,8 @@
     "verbatim": "106 × 0.05 = 5.3 g / l",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or, by the scheme's second route, \"106 ÷ 2 = 53 g\" (3)."
+    "contextNote": "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-3",
@@ -79097,7 +79541,26 @@
     "verbatim": "5.3 ÷ 2 = 2.65 g / 500 cm³",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or, by the second route, \"53 × 0.05 = 2.65 g / 500 cm³\" (3)."
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "106 ÷ 2 = 53 g",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or by the scheme's second route, this step and the next.",
+    "route": "b"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "53 × 0.05 = 2.65 g / 500 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ],
   "notes": "The scheme gives the answer, 2.65 g, priced (9), then the working that earns it in two boxed routes, step by step; the steps here are its first route."
@@ -95712,7 +96175,8 @@
     "verbatim": "pOH = – log 0.01 / = 2",
     "marks": 3,
     "openList": true,
-    "contextNote": ""
+    "contextNote": "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.",
+    "route": "a"
    },
    {
     "id": "r-2",
@@ -95720,7 +96184,26 @@
     "verbatim": "pH = 14 – 2 / = 12",
     "marks": 3,
     "openList": true,
-    "contextNote": "Or by the scheme's second route: \"[H⁺] = 10⁻¹⁴ ÷ 0.01 = 10⁻¹²\" (3), then \"pH = – log 10⁻¹² = 12\" (3)."
+    "contextNote": "",
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "[H⁺] = 10⁻¹⁴ ÷ 0.01 = 10⁻¹²",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or by the scheme's second route, this step and the next.",
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "pH = – log 10⁻¹² = 12",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "route": "b"
    }
   ],
   "notes": "The scheme gives the answer, 12, priced (6), then the working that earns it, step by step; the steps here are its first route, and its own print of both routes is shown with the answer."

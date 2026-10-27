@@ -21,6 +21,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, anyN, display, point  # noqa: E402
 
 P = Printed(2021, 'hl', figures=True)
@@ -195,10 +196,15 @@ C.fixed([k('5', 'b', 'i')], None, None, figure=Q5)
 _q5b2 = P.items(k('5', 'b', 'ii'))
 assert [it.cell for it in _q5b2] == ['[2 × 3]', '[2 × 3]'], _q5b2
 _p1 = _q5b2[0].points()
+# Two pairs, the second after "or", each (2 × 3): each a route.
+_p2 = _q5b2[1].points()
+assert len(_p2) == 2, _p2
 C.add([k('5', 'b', 'ii')], None, None, [
-    C.lifted('r-1', _p1[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or '
-                              'instead the pair "' + _q5b2[1].text + '".'),
-    C.lifted('r-2', _p1[1], 3)], figure=Q5)
+    routed(C.lifted('r-1', _p1[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
+                    'last two rows. The examiner marks one pair or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _p1[1], 3), 'a'),
+    routed(C.lifted('r-3', _p2[0], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _p2[1], 3), 'b')], total=6, figure=Q5)
 C.fixed([k('5', 'b', 'iii')], 'chem-1-3', 'covalent-radius-of-chlorine-from-bond-length',
         cid='q5-b-iii-v', figure=Q5)
 C.fixed([k('5', 'b', 'iv')], 'chem-1-3', 'why-atomic-radius-falls-across-period-3', figure=Q5)
@@ -237,10 +243,15 @@ C.fixed([k('7', 'a', 'iv')], None, None, stem='')
 # (b): one answer (6), or two points (2 × 3).
 _q7b = P.items(k('7', 'b'))
 assert [it.cell for it in _q7b] == ['[6]', '[2 × 3]'], _q7b
+# The point (6), or instead strong and weak acids defined (2 × 3): each a route.
+_sw = [x.strip() for x in _q7b[1].text.split('//')]
+assert len(_sw) == 2 and _sw[0].startswith('strong acid') and _sw[1].startswith('weak acid'), _sw
 C.add([k('7', 'b')], None, None, [
-    C.lifted('r-1', _q7b[0].text, 6,
-             'Or instead, (2 × 3), "' + _q7b[1].text + '". The scheme adds: [*Accept weak acid '
-             'only partly dissociated.]')])
+    routed(C.lifted('r-1', _q7b[0].text, 6, 'Or instead the last two rows, (2 × 3), one each. The examiner marks one '
+                    'or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _sw[0], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-3', _sw[1], 3, 'The scheme adds: [*Accept weak acid only partly dissociated.]'), 'b')],
+    total=6)
 # (c): the equation (3 + 3); below it the text layer reads (d)(i)'s answer,
 # which is carded there.
 _q7c = P.items(k('7', 'c'))

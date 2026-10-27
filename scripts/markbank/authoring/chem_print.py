@@ -40,6 +40,16 @@ from chem_scheme import _script_text  # noqa: E402
 from markbank_authoring import anyN, make_audit as _make_audit, make_card, make_emit, point, tidy  # noqa: E402
 
 
+def routed(row, route):
+    """A row on one side of the scheme's "or" (or its //): a student who claims a
+    row of one route has the other route's rows locked (the session's mutually
+    exclusive routes), so every alternative is claimable and none is mixed. Point
+    rows of a fixed card only: the session neither commits a route from an any-N
+    pick nor grades an unpriced card whose rows cannot all be claimed."""
+    row['route'] = route
+    return row
+
+
 def make_audit(max_options, *args, **kwargs):
     """markbank_authoring.make_audit, reading a card's mutually exclusive routes
     the way build-deck.mjs's tariffFault and the session do: rows sharing a
@@ -2271,6 +2281,16 @@ class Cards:
             'shown with the answer.', _asides_note(inline + its[0].asides)] if x)
         return self.add([key], topic, concept, [point('r-1', text, total, note)], total=total,
                         figure=figure, **kw)
+
+    def accepting(self, row, *alts):
+        """A row that also takes the scheme's own alternatives for the same point
+        (`accepts`, shown "X or Y" on the one row). The build does not trace
+        `accepts`, so each is refused here unless the gate finds it."""
+        for a in alts:
+            if not self.P.traceable(a):
+                raise Refused(f'"{a}" is not in the {self.P.year} {self.P.lvl} scheme')
+        row['accepts'] = list(row.get('accepts', [])) + list(alts)
+        return row
 
     def lifted(self, rid, text, marks, note=''):
         """A row whose text the reader could not assemble on its own (a line

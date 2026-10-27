@@ -19,6 +19,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, anyN, display, point  # noqa: E402
 
 P = Printed(2020, 'ol', figures=True)
@@ -197,9 +198,11 @@ _q7a = P.items(k('7', 'a'))
 assert [it.cell for it in _q7a] == ['[2 × 3]', '[6]'], _q7a
 _pa = _q7a[0].points()
 C.add([k('7', 'a')], 'chem-3-4', 'definition-of-a-base', [
-    C.lifted('r-1', _pa[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or '
-             'instead (6) for "' + _q7a[1].text + '". It adds: ' + ' '.join(_q7a[1].asides)),
-    C.lifted('r-2', _pa[1], 3)])
+    routed(C.lifted('r-1', _pa[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
+                    'last row (6). The examiner marks one or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _pa[1], 3), 'a'),
+    routed(C.lifted('r-3', _q7a[1].text, 6, 'Or instead, (6). The scheme adds: ' + ' '.join(_q7a[1].asides)), 'b')],
+    total=6)
 _q7b = P.items(k('7', 'b'))
 assert [it.cell for it in _q7b] == ['[2 × 3]', '[6]', '[3]', '[3]'], _q7b
 _pb = _q7b[0].points()
@@ -215,10 +218,14 @@ _t = _q7c[0].text
 _cut = _t.index(' contains dissolved')
 _pc = [x.strip() for x in _t[:_cut].split('//')]
 assert len(_pc) == 2, _pc
+_pd = [x.strip() for x in _t[_cut:].split('//')]
+assert len(_pd) == 2, _pd
 C.add([k('7', 'c')], 'chem-4-3', 'what-hard-water-is', [
-    C.lifted('r-1', _pc[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or '
-             'instead the pair "' + _t[_cut:].strip() + '".'),
-    C.lifted('r-2', _pc[1], 3)])
+    routed(C.lifted('r-1', _pc[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
+                    'last two rows. The examiner marks one pair or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _pc[1], 3), 'a'),
+    routed(C.lifted('r-3', _pd[0], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _pd[1], 3), 'b')], total=6)
 for r, concept, topic in (('i', 'acidic-or-basic-from-ph', 'chem-3-4'),
                           ('ii', 'label-evidence-of-hardness', 'chem-4-3'),
                           ('iii', 'label-evidence-of-temporary-hardness', 'chem-4-3'),
@@ -302,8 +309,8 @@ _q10c2 = P.items(k('10', 'c', 'ii'))
 assert [it.cell for it in _q10c2] == ['[3]', '[3]', '[3]', '[3]', '[3]'], _q10c2
 C.add([k('10', 'c', 'ii')], 'chem-1-4', 'moles-and-volume-of-oxygen', [
     C.lifted('r-1', _q10c2[0].text, 3),
-    C.lifted('r-2', _q10c2[1].text, 3, 'Or its working, "' + display(_q10c2[2].text) + '" (3).'),
-    C.lifted('r-3', _q10c2[3].text, 3, 'Or its working, "' + display(_q10c2[4].text) + '" (3).')])
+    C.accepting(C.lifted('r-2', _q10c2[1].text, 3, 'Or its working, (3).'), display(_q10c2[2].text)),
+    C.accepting(C.lifted('r-3', _q10c2[3].text, 3, 'Or its working, (3).'), display(_q10c2[4].text))])
 C.route([k('10', 'c', 'iii')], 'chem-1-4', 'mass-of-carbon-dioxide-used')
 
 # ── Q11 Any two of (a), (b), (c) ─────────────────────────────────────────────
@@ -313,10 +320,14 @@ C.fixed([k('11', 'a', 'ii')], 'chem-2-1', 'definition-of-electronegativity')
 C.fixed([k('11', 'a', 'iii')], 'chem-2-1', 'polarity-of-bonds-in-ammonia')
 C.fixed([k('11', 'a', 'iv')], 'chem-2-2', 'solubility-of-ammonia')
 _pp, _second = pair_or(k('11', 'b', 'i'))
+# Two pairs, the second after "or", priced together (4 + 3): each point accepts its
+# counterpart in the other pair (an unpriced card cannot take routes).
+_pp2 = [x.strip() for x in _second.split('//')]
+assert len(_pp2) == 2, _pp2
 C.add([k('11', 'b', 'i')], 'chem-3-3', 'definition-of-chemical-equilibrium', [
-    C.lifted('r-1', _pp[0], None, 'The scheme prices this point and the next together (4 + 3), or '
-             'instead the pair "' + _second + '".'),
-    C.lifted('r-2', _pp[1], None)],
+    C.accepting(C.lifted('r-1', _pp[0], None, 'The scheme prices this point and the next together (4 + 3), or '
+                         'instead the pair after "or". Claim both points from the same pair.'), _pp2[0]),
+    C.accepting(C.lifted('r-2', _pp[1], None), _pp2[1])],
     kind='orderedSplit', notation='[4 + 3]', total=7, notes=SPLIT.format('[4 + 3]'))
 print_question('paper-q11b-i-print')
 C.drawn([k('11', 'b', 'ii')], 'chem-3-3', 'kc-expression-for-steam-reforming', S + 'q11b-ii')

@@ -23,6 +23,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, point  # noqa: E402
 
 P = Printed(2023, 'ol', figures=True)
@@ -294,10 +295,14 @@ _q11b1 = P.items(k('11', 'b', 'i'))
 assert [it.cell for it in _q11b1] == ['[3]', '[2 × 2]', None], _q11b1
 C.add([k('11', 'b', 'i')], None, None, [
     C.lifted('r-1', _q11b1[0].text, 3),
-    C.lifted('r-2', 'chemical equilibrium: forward and reverse reactions', 2,
-             'The scheme prices this point and the next (2 × 2), one each, or instead the pair '
-             '"concentrations of reactants and products // are constant".'),
-    C.lifted('r-3', 'have equal rates', 2)], stem=Q11B)
+    # Two pairs, the second after "or", each (2 × 2): each a route.
+    routed(C.lifted('r-2', 'chemical equilibrium: forward and reverse reactions', 2,
+                    'The scheme prices this point and the next (2 × 2), one each, or instead the last two rows. '
+                    'The examiner marks one pair or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-3', 'have equal rates', 2), 'a'),
+    routed(C.lifted('r-4', 'concentrations of reactants and products', 2,
+                    'Or instead, this point and the next (2 × 2), one each.'), 'b'),
+    routed(C.lifted('r-5', 'are constant', 2), 'b')], total=7, stem=Q11B)
 C.drawn([k('11', 'b', 'ii')], None, None, S + 'q11b-ii', stem=Q11B)
 C.fixed([k('11', 'b', 'iii')], None, None, stem=Q11B)
 C.fixed([k('11', 'b', 'iv')], 'chem-3-3', 'why-the-haber-process-avoids-very-high-pressure',

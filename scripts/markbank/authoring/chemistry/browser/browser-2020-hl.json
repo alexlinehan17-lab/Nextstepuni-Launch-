@@ -14,5 +14,6 @@
  {"id": "chem-2020-hl-q9-c", "ask": "Calculate the number of moles of carbon monoxide", "answer": "2.097 – 2.1 moles carbon monoxide", "solution": true},
  {"id": "chem-2020-hl-q10-b-iii", "ask": "Assign oxidation numbers", "answer": "cobalt / Co", "solution": true},
  {"id": "chem-2020-hl-q11-a-v", "ask": "CH₄ is almost completely insoluble in water", "answer": "methane (CH₄) molecule non-polar", "figure": true},
- {"id": "chem-2020-hl-q11-c-b-iv", "ask": "What is meant by anodising aluminium?", "answer": "creating (thickening) layer of aluminium oxide", "figure": true}
+ {"id": "chem-2020-hl-q11-c-b-iv", "ask": "What is meant by anodising aluminium?", "answer": "creating (thickening) layer of aluminium oxide", "figure": true},
+ {"id": "chem-2020-hl-q7-a", "ask": "Brønsted", "answer": "weak acid: is a poor proton"}
 ]

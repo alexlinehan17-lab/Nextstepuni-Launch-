@@ -24,6 +24,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, anyN, point  # noqa: E402
 
 P = Printed(2022, 'hl', figures=True)
@@ -171,12 +172,15 @@ C.answer_only([k('4', 'f')], None, None, S + 'q4f', notes=Q4_NOTE)
 # Q4(g): two pairs of reagents with "or" between them, priced [4 + 2].
 _q4g = P.items(k('4', 'g'))
 assert [it.cell for it in _q4g] == ['[4 + 2]'], _q4g
+# Two pairs of reagents, the second after "or", priced together [4 + 2]: each reagent
+# accepts its counterpart in the other pair (an unpriced card cannot take routes).
 C.add([k('4', 'g')], None, None, [
-    C.lifted('r-1', 'iron(II) sulfate (FeSO₄, ammonium iron(II) sulfate) / (C₆H₅)₂NH '
-                    '(diphenylamine) and NH₄Cl (ammonium chloride) / copper (Cu)', None,
-             'Or instead the pair "sodium hydroxide (NaOH) solution // aluminium (Al) / copper '
-             '(Cu) / zinc (Zn)".'),
-    C.lifted('r-2', 'concentrated sulfuric acid (H₂SO₄)', None)],
+    C.accepting(C.lifted('r-1', 'iron(II) sulfate (FeSO₄, ammonium iron(II) sulfate) / (C₆H₅)₂NH '
+                         '(diphenylamine) and NH₄Cl (ammonium chloride) / copper (Cu)', None,
+                         'Or instead the pair after "or". Claim both reagents from the same pair.'),
+                'sodium hydroxide (NaOH) solution'),
+    C.accepting(C.lifted('r-2', 'concentrated sulfuric acid (H₂SO₄)', None),
+                'aluminium (Al) / copper (Cu) / zinc (Zn)')],
     kind='orderedSplit', notation='[4 + 2]', total=6,
     notes='The scheme prices these points together as [4 + 2] without saying which point earns '
           'which part, so no per-point value is shown. ' + Q4_NOTE)
@@ -193,15 +197,17 @@ C.cards[-1]['questionFigureKey'] = FIG + 'paper-q4k-print'
 # the one equation for both steps (6).
 _q4la = P.items(ka('4', 'l', None, 'A'))
 assert [it.cell for it in _q4la][:2] == ['[2 × 3]', '[6]'], _q4la
+# Two equations (2 × 3), or instead the one equation (6): each a route.
 C.add([ka('4', 'l', None, 'A')], None, None, [
-    C.lifted('r-1', 'H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ / H₂CO₃ + H₂O ⇌ (→) HCO₃⁻ + H₃O⁺', 3,
-             'The scheme sets "CO₂ + H₂O → H₂CO₃" above the two equations and prices them '
-             '(2 × 3), one each.'),
-    C.lifted('r-2', 'HCO₃⁻ ⇌ (→) CO₃²⁻ + H⁺ / HCO₃⁻ + H₂O ⇌ (→) CO₃²⁻ + H₃O⁺', 3,
-             'Or instead the one equation "H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ ⇌ (→) CO₃²⁻ + 2H⁺", priced '
-             '(6). The scheme adds: [Allow 2H₂CO₃ ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H⁺ or 2H₂CO₃ + 3H₂O ⇌ '
-             '(→) HCO₃⁻ + CO₃²⁻ + 3H₃O⁺]')],
-    cid='q4-l-a', notes=Q4_NOTE)
+    routed(C.lifted('r-1', 'H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ / H₂CO₃ + H₂O ⇌ (→) HCO₃⁻ + H₃O⁺', 3,
+                    'The scheme sets "CO₂ + H₂O → H₂CO₃" above the two equations and prices them '
+                    '(2 × 3), one each, or instead the one equation in the last row (6). The examiner marks one '
+                    'or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', 'HCO₃⁻ ⇌ (→) CO₃²⁻ + H⁺ / HCO₃⁻ + H₂O ⇌ (→) CO₃²⁻ + H₃O⁺', 3), 'a'),
+    routed(C.lifted('r-3', 'H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ ⇌ (→) CO₃²⁻ + 2H⁺', 6,
+                    'Or instead the one equation, (6). The scheme adds: [Allow 2H₂CO₃ ⇌ (→) HCO₃⁻ + CO₃²⁻ + '
+                    '3H⁺ or 2H₂CO₃ + 3H₂O ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H₃O⁺]'), 'b')],
+    total=6, cid='q4-l-a', notes=Q4_NOTE)
 C.fixed([ka('4', 'l', None, 'B')], None, None, cid='q4-l-b', notes=Q4_NOTE)
 
 # ── Q5 Atomic structure ──────────────────────────────────────────────────────
@@ -394,15 +400,18 @@ Q11C = FIG + 'paper-p13-i0'
 # Q11(c)(i): two pairs of points with "or" between them, priced (2 × 2).
 _q11c1 = P.items(k('11', 'c', 'i'))
 assert [it.cell for it in _q11c1] == ['[2 × 2]'], _q11c1
+# Two pairs, the second after "or", each (2 × 2): each a route.
 C.add([k('11', 'c', 'i')], None, None, [
-    C.lifted('r-1', 'minimum combined energy of colliding particles (molecules)', 2,
-             'The scheme prices this point and the next (2 × 2), one each, or instead the pair '
-             '"minimum combined energy of particles (molecules) // for (of) effective '
-             'collisions".'),
-    C.lifted('r-2', 'for reaction to take place between them', 2,
-             'The scheme adds: [At least one mention of collisions or colliding is essential for '
-             'full marks.]')],
-    figure=Q11C)
+    routed(C.lifted('r-1', 'minimum combined energy of colliding particles (molecules)', 2,
+                    'The scheme prices this point and the next (2 × 2), one each, or instead the last two rows. '
+                    'The examiner marks one pair or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', 'for reaction to take place between them', 2,
+                    'The scheme adds: [At least one mention of collisions or colliding is essential for '
+                    'full marks.]'), 'a'),
+    routed(C.lifted('r-3', 'minimum combined energy of particles (molecules)', 2,
+                    'Or instead, this point and the next (2 × 2), one each.'), 'b'),
+    routed(C.lifted('r-4', 'for (of) effective collisions', 2), 'b')],
+    total=4, figure=Q11C)
 C.fixed([k('11', 'c', 'ii')], 'chem-3-2', 'activation-energy-from-a-reaction-profile', figure=Q11C)
 C.fixed([k('11', 'c', 'iii')], 'chem-3-2', 'how-much-the-catalyst-lowers-ea', figure=Q11C)
 C.fixed([k('11', 'c', 'iv')], 'chem-3-2', 'heat-of-the-reverse-reaction', figure=Q11C)

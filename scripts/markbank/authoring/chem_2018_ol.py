@@ -31,6 +31,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import (Cards, Printed, Refused, make_audit, MAX_OPTIONS, display, joined,  # noqa: E402
                         read_lines, anyN, point)
 
@@ -159,8 +160,8 @@ _gas = _q3c[1][0].text.split(' / ')
 assert len(_gas) == 2, _gas
 C.add([k('3', 'c', 'i'), k('3', 'c', 'ii')], 'chem-u2', 'placing-the-catalyst-and-collecting-the-oxygen', [
     C.lifted('r-1', _q3c[0][0].text, None, 'For (i). The scheme adds: ' + ' '.join(_q3c[0][0].asides)),
-    C.lifted('r-2', _gas[0], None, 'For (ii). Or "' + traced(_gas[1]) + '". The scheme adds: '
-             + ' '.join(_q3c[1][0].asides))],
+    C.accepting(C.lifted('r-2', _gas[0], None, 'For (ii). The scheme adds: ' + ' '.join(_q3c[1][0].asides)),
+                _gas[1])],
     kind='orderedSplit', notation='[6 + 3]', total=9, figure=S + 'q3c',
     notes=SPLIT.format('[6 + 3]') + ' A, B, X and Y name the scheme\'s own drawings, shown with the answer.',
     stem=q3_stem(k('3', 'c', 'i')))
@@ -192,9 +193,12 @@ assert [it.cell for it in _q4i] == ['[6]', '[3]', '[3]', '[3]', '[3]'] and _q4i[
 _first = _q4i[1].text.split(' / ')
 assert len(_first) == 2, _first
 C.add([k('4', 'i')], 'chem-1-4', 'concentration-in-parts-per-million', [
-    C.lifted('r-1', _first[0], 3, 'Or, by the scheme\'s second route, "' + traced(_first[1]) + '" (3).'),
-    C.lifted('r-2', _q4i[3].text, 3, 'Or, by the second route, "' + traced(_q4i[4].text) + '" (3).')],
-    notes='The scheme gives the answer, ' + _q4i[0].text + ', priced (6), then the working that earns '
+    routed(C.lifted('r-1', _first[0], 3, 'The scheme\'s first route, this step and the next; its second route is the '
+                    'last two rows. The examiner marks one route, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _q4i[3].text, 3), 'a'),
+    routed(C.lifted('r-3', _first[1], 3, 'Or by the scheme\'s second route, this step and the next.'), 'b'),
+    routed(C.lifted('r-4', _q4i[4].text, 3), 'b')],
+    total=6, notes='The scheme gives the answer, ' + _q4i[0].text + ', priced (6), then the working that earns '
           'it in two boxed routes, step by step; the steps here are its first route. ' + Q4_NOTE)
 C.fixed([k('4', 'j')], 'chem-1-2', 'beta-decay', notes=Q4_NOTE)
 C.fixed([ka('4', 'k', None, 'A')], 'chem-1-1', 'buckminsterfullerene', notes=Q4_NOTE,
@@ -249,7 +253,7 @@ assert len(_salts) == 2, _salts
 _salts[1] = 'magnesium hydrogencarbonate' + _salts[1]
 C.add([k('7', 'a', 'ii')], 'chem-4-3', 'temporary-hardness-and-its-cause', [
     C.lifted('r-1', _q7a2[0].text, 3),
-    C.lifted('r-2', _salts[0], 3, 'Or "' + traced(_salts[1]) + '".')])
+    C.accepting(C.lifted('r-2', _salts[0], 3), _salts[1])])
 C.fixed([k('7', 'a', 'iii')], 'chem-4-3', 'a-problem-caused-by-hard-water')
 C.fixed([k('7', 'a', 'iv')], 'chem-4-3', 'an-advantage-of-hard-water')
 assert cells(k('7', 'b', 'v')) == ['[8 + (2 × 6) + (2 × 3)]'], P.items(k('7', 'b', 'v'))
@@ -271,10 +275,14 @@ _q8e = P.items(k('8', 'e'))
 assert [it.cell for it in _q8e] == ['[6 + 3]', '[6 + 3]'], _q8e
 _pe = _q8e[0].points()
 assert len(_pe) == 2, _pe
+# Two pairs, the second after "or", priced together (6 + 3): each point accepts its
+# counterpart in the other pair (an unpriced card cannot take routes).
+_pe2 = [x.strip() for x in _q8e[1].text.split('//')]
+assert len(_pe2) == 2, _pe2
 C.add([k('8', 'e')], 'chem-4-2', 'fehlings-test-on-ethanal', [
-    C.lifted('r-1', _pe[0], None, 'The scheme prices this point and the next together (6 + 3), or '
-             'instead, (6 + 3), the pair "' + traced(_q8e[1].text) + '".'),
-    C.lifted('r-2', _pe[1], None, 'The scheme adds: ' + ' '.join(_q8e[0].asides))],
+    C.accepting(C.lifted('r-1', _pe[0], None, 'The scheme prices this point and the next together (6 + 3), or '
+                         'instead, (6 + 3), the pair after "or". Claim both points from the same pair.'), _pe2[0]),
+    C.accepting(C.lifted('r-2', _pe[1], None, 'The scheme adds: ' + ' '.join(_q8e[0].asides)), _pe2[1])],
     kind='orderedSplit', notation='[6 + 3]', total=9, notes=SPLIT.format('[6 + 3]'), figure=Q8)
 C.fixed([k('8', 'f')], 'chem-4-2', 'a-use-of-ethanoic-acid-in-food', figure=Q8)
 
@@ -314,9 +322,13 @@ assert len(_q9c_asides) == 2 and all(a.endswith(']') for a in _q9c_asides), _q9c
 # "the white salt" of (c) is the one (b) introduces: (b)'s lead is (c)'s stem.
 Q9B = P.ask(k('9', 'b'))
 C.add([k('9', 'c', 'i')], 'chem-u2', 'flame-test-procedure', [
-    C.lifted(f'r-{i + 1}', _methods[0][i], m,
-             f'Method 1. Or Method 2, "{_methods[1][i]}", or Method 3, "{_methods[2][i]}".'
-             + (' The scheme adds: ' + ' '.join(_q9c_asides) if i == 2 else ''))
+    # Each step one row accepting the other methods' (three methods' steps routed would pass
+    # the row cap); the last step reads the same in all three.
+    C.accepting(C.lifted(f'r-{i + 1}', _methods[0][i], m,
+                         ('Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3.'
+                          if i == 0 else 'Method 1, then Methods 2 and 3, of the same method as above.')
+                         + (' The scheme adds: ' + ' '.join(_q9c_asides) if i == 2 else '')),
+                *dict.fromkeys(x for x in (_methods[1][i], _methods[2][i]) if x != _methods[0][i]))
     for i, m in enumerate((6, 5, 1))],
     figure=S + 'q9c-i', stem=Q9B,
     notes='The scheme sets out three methods in a table, each in three steps priced (6), (5) and (1), '

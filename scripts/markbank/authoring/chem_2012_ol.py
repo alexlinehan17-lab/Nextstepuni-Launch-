@@ -34,6 +34,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import (Cards, Printed, Refused, make_audit, MAX_OPTIONS, display, joined,  # noqa: E402
                         read_lines, anyN, point)
 
@@ -390,11 +391,15 @@ _q7a1 = P.items(k('7', 'a', 'i'))
 assert [(it.cell, display(it.text)) for it in _q7a1] == [
     ('[6]', '12'), ('[3]', 'pOH = – log 0.01 / = 2'), ('[3]', '[H⁺] = 10⁻¹⁴ ÷ 0.01 = 10⁻¹²'),
     ('[3]', 'pH = 14 – 2 / = 12'), ('[3]', 'pH = – log 10⁻¹² = 12')], _q7a1
+# Two routes, each two steps (3) each: each a route, so a student claims the steps of
+# the route they took and the other's lock.
 C.add([k('7', 'a', 'i')], 'chem-3-4', 'ph-of-a-sodium-hydroxide-solution', [
-    lift('r-1', _q7a1[1].text, 3),
-    lift('r-2', _q7a1[3].text, 3, 'Or by the scheme\'s second route: "' + traced(display(_q7a1[2].text))
-         + '" (3), then "' + traced(display(_q7a1[4].text)) + '" (3).')],
-    stem=Q7A_LEAD, figure=S + 'q7a-i',
+    routed(lift('r-1', _q7a1[1].text, 3, 'The scheme\'s first route, this step and the next; its second route '
+                'is the last two rows. The examiner marks one route, not a mix.'), 'a'),
+    routed(lift('r-2', _q7a1[3].text, 3), 'a'),
+    routed(lift('r-3', display(_q7a1[2].text), 3, 'Or by the scheme\'s second route, this step and the next.'), 'b'),
+    routed(lift('r-4', display(_q7a1[4].text), 3), 'b')],
+    total=6, stem=Q7A_LEAD, figure=S + 'q7a-i',
     notes='The scheme gives the answer, 12, priced (6), then the working that earns it, step by step; the steps here '
           'are its first route, and its own print of both routes is shown with the answer.')
 assert cells(k('7', 'a', 'ii')) == ['[6]', '[3]', '[3]'], P.items(k('7', 'a', 'ii'))

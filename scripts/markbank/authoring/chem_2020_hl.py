@@ -20,6 +20,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, anyN, display, point  # noqa: E402
 
 P = Printed(2020, 'hl', figures=True)
@@ -112,10 +113,15 @@ C.fixed([k('3', 'b', 'i')], 'chem-3-2', 'precipitate-in-the-thiosulfate-reaction
 _q3b2 = P.items(k('3', 'b', 'ii'))
 assert [it.cell for it in _q3b2] == ['[2 × 3]', '[2 × 3]'], _q3b2
 _p = _q3b2[0].points()
+# Two pairs, the second after "or", each (2 × 3): each a route.
+_p2 = _q3b2[1].points()
+assert len(_p2) == 2, _p2
 C.add([k('3', 'b', 'ii')], 'chem-3-2', 'timing-the-reaction-by-the-cross', [
-    C.lifted('r-1', _p[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or '
-             'instead the pair "' + _q3b2[1].text + '" (2 × 3).'),
-    C.lifted('r-2', _p[1], 3)], figure=Q3T)
+    routed(C.lifted('r-1', _p[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
+                    'last two rows (2 × 3). The examiner marks one pair or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _p[1], 3), 'a'),
+    routed(C.lifted('r-3', _p2[0], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _p2[1], 3), 'b')], total=6, figure=Q3T)
 # (c): the six missing rates, one mark each, in the order of Runs 2 to 7.
 _q3c = P.items(k('3', 'c'))
 assert [it.cell for it in _q3c] == ['[6 × 1]', None], _q3c
@@ -193,10 +199,15 @@ _t = _q5c2[0].text
 _cut = _t.index(' approximate solution')
 _pp = [x.strip() for x in _t[:_cut].split('//')]
 assert len(_pp) == 2, _pp
+_pq = [x.strip() for x in _t[_cut:].split('//')]
+assert len(_pq) == 2, _pq
 C.add([k('5', 'c', 'ii')], 'chem-1-2', 'definition-of-an-atomic-orbital', [
-    C.lifted('r-1', _pp[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or '
-             'instead the pair "' + _t[_cut:].strip() + '". It adds: ' + ' '.join(_q5c2[0].asides)),
-    C.lifted('r-2', _pp[1], 3)], figure=Q5)
+    routed(C.lifted('r-1', _pp[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
+                    'last two rows. The examiner marks one pair or the other, not a mix. It adds: '
+                    + ' '.join(_q5c2[0].asides)), 'a'),
+    routed(C.lifted('r-2', _pp[1], 3), 'a'),
+    routed(C.lifted('r-3', _pq[0], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _pq[1], 3), 'b')], total=6, figure=Q5)
 C.fixed([k('5', 'c', 'iii')], 'chem-1-2', 'orbitals-in-the-second-energy-level', figure=Q5)
 C.fixed([k('5', 'c', 'iv')], 'chem-1-2', 'electrons-in-the-third-energy-level', figure=Q5)
 _q5d = P.ask(k('5', 'd'))
@@ -229,9 +240,15 @@ C.add([k('6', 'd', 'ii')], 'chem-3-1', 'heat-of-combustion-of-propane', [
 Q7T = FIG + 'paper-q7-table'
 _q7a = P.items(k('7', 'a'))
 assert [it.cell for it in _q7a] == ['[4]', '[4]', '[2 × 2]'], _q7a
+# The second point (4), or instead strong and weak acids defined (2 × 2): each a route.
+_sw = [x.strip() for x in _q7a[2].text.split('//')]
+assert len(_sw) == 2 and _sw[0].startswith('strong acid') and _sw[1].startswith('weak acid'), _sw
 C.add([k('7', 'a')], 'chem-3-4', 'bronsted-lowry-acids-strong-and-weak', [
     C.lifted('r-1', _q7a[0].text, 4),
-    C.lifted('r-2', _q7a[1].text, 4, 'Or instead, (2 × 2), "' + _q7a[2].text + '".')])
+    routed(C.lifted('r-2', _q7a[1].text, 4, 'Or instead the last two rows, (2 × 2), one each. The examiner marks one '
+                    'or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-3', _sw[0], 2, 'Or instead, this point and the next (2 × 2), one each.'), 'b'),
+    routed(C.lifted('r-4', _sw[1], 2), 'b')], total=8)
 _q7b = P.ask(k('7', 'b'))
 for r, concept, text in (('i', 'conjugate-acid-of-hydrogensulfate', 'H₂SO₄'),
                          ('ii', 'conjugate-base-of-hydrogensulfate', 'SO₄²⁻')):
@@ -268,9 +285,11 @@ _q8b1 = P.items(k('8', 'b', 'i'))
 assert [it.cell for it in _q8b1] == ['[2 × 3]', '[6]'], _q8b1
 _pb = _q8b1[0].points()
 C.add([k('8', 'b', 'i')], 'chem-4-2', 'reducing-ethanal', [
-    C.lifted('r-1', _pb[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or '
-             'instead (6) for "' + _q8b1[1].text + '". It adds: ' + ' '.join(_q8b1[0].asides)),
-    C.lifted('r-2', _pb[1], 3)], figure=Q8)
+    routed(C.lifted('r-1', _pb[0], 3, 'The scheme prices this point and the next (2 × 3), one each, or instead the '
+                    'last row (6). The examiner marks one or the other, not a mix. It adds: '
+                    + ' '.join(_q8b1[0].asides)), 'a'),
+    routed(C.lifted('r-2', _pb[1], 3), 'a'),
+    routed(C.lifted('r-3', _q8b1[1].text, 6, 'Or instead, (6).'), 'b')], total=6, figure=Q8)
 C.fixed([k('8', 'b', 'ii')], 'chem-4-2', 'bonds-formed-in-reducing-ethanal', figure=S + 'q8b-ii',
         row_notes={0: 'The scheme draws ethanol with these bonds boxed; its own print is shown with '
                       'the answer.'})
@@ -296,8 +315,7 @@ _m4 = ('addition of Cl⁻ to carbonium ion (carbocation, C⁺, intermediate, bri
 C.add([k('8', 'e')], 'chem-4-2', 'ionic-addition-of-chlorine-to-ethene', [
     C.lifted('r-1', _m1, None, 'The scheme adds: [bond (line) essential in Clδ+—Clδ– ][bond (line) '
              'must not be shown between Cl⁺ and Cl⁻]'),
-    C.lifted('r-2', _m2, None, 'Or instead: "breaking of double bond in ethene and polarised bond in '
-             'chlorine (Cl₂)".'),
+    C.accepting(C.lifted('r-2', _m2, None), 'breaking of double bond in ethene and polarised bond in chlorine (Cl₂)'),
     C.lifted('r-3', _m3, None, 'The scheme draws the steps; its own print is shown with the answer.'),
     C.lifted('r-4', _m4, None, 'The scheme adds: [Hs need not be shown explicitly]')],
     kind='orderedSplit', notation='[3 + 3 + 3 + 2]', total=11, figure=S + 'q8e',

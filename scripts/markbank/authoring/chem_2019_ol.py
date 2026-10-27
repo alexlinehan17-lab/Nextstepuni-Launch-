@@ -128,9 +128,13 @@ _q3d_asides = ['*[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum
 for t in _m2 + _m3 + _q3d_asides:
     traced(t)
 C.add([k('3', 'd', 'i')], 'chem-u2', 'flame-test-procedure', [
-    C.lifted(f'r-{i + 1}', _m1[i], 3,
-             f'Method 1. Or Method 2, "{_m2[i]}", or Method 3, "{_m3[i]}".'
-             + (' The scheme adds: ' + ' '.join(_q3d_asides) if i == 2 else ''))
+    # Each step one row accepting the other methods' (three methods' steps routed would
+    # pass the row cap).
+    C.accepting(C.lifted(f'r-{i + 1}', _m1[i], 3,
+                         ('Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3.'
+                          if i == 0 else 'Method 1, then Methods 2 and 3, of the same method as above.')
+                         + (' The scheme adds: ' + ' '.join(_q3d_asides) if i == 2 else '')),
+                *dict.fromkeys(x for x in (_m2[i], _m3[i]) if x != _m1[i]))
     for i in range(3)],
     figure=S + 'q3d-i',
     notes='The scheme sets out three methods in a table, each in three steps priced (3) each, '
@@ -276,10 +280,14 @@ _q10b1 = P.items(k('10', 'b', 'i'))
 assert [it.cell for it in _q10b1] == ['[4 + 3]', '[4 + 3]'], _q10b1
 _pp = _q10b1[0].points()
 assert len(_pp) == 2, _pp
+# Two pairs, the second after "or", priced together (4 + 3): each point accepts its
+# counterpart in the other pair (an unpriced card cannot take routes).
+_pp2 = _q10b1[1].points()
+assert len(_pp2) == 2, _pp2
 C.add([k('10', 'b', 'i')], 'chem-3-3', 'definition-of-chemical-equilibrium', [
-    C.lifted('r-1', _pp[0], None, 'The scheme prices this point and the next together (4 + 3), or '
-             'instead, (4 + 3), the pair "' + _q10b1[1].text + '".'),
-    C.lifted('r-2', _pp[1], None)],
+    C.accepting(C.lifted('r-1', _pp[0], None, 'The scheme prices this point and the next together (4 + 3), or '
+                         'instead, (4 + 3), the pair after "or". Claim both points from the same pair.'), _pp2[0]),
+    C.accepting(C.lifted('r-2', _pp[1], None), _pp2[1])],
     kind='orderedSplit', notation='[4 + 3]', total=7, notes=SPLIT.format('[4 + 3]'))
 print_question('paper-q10b-i-print')
 C.fixed([k('10', 'b', 'ii')], 'chem-3-1', 'exothermic-from-negative-delta-h')
@@ -298,8 +306,8 @@ _q10c2 = P.items(k('10', 'c', 'ii'))
 assert [it.cell for it in _q10c2] == ['[3]'] * 5, _q10c2
 C.add([k('10', 'c', 'ii')], 'chem-1-4', 'moles-and-volume-of-hydrogen', [
     C.lifted('r-1', _q10c2[0].text, 3),
-    C.lifted('r-2', _q10c2[1].text, 3, 'Or its working, "' + display(_q10c2[2].text) + '" (3).'),
-    C.lifted('r-3', _q10c2[3].text, 3, 'Or its working, "' + display(_q10c2[4].text) + '" (3).')])
+    C.accepting(C.lifted('r-2', _q10c2[1].text, 3, 'Or its working, (3).'), display(_q10c2[2].text)),
+    C.accepting(C.lifted('r-3', _q10c2[3].text, 3, 'Or its working, (3).'), display(_q10c2[4].text))])
 C.route([k('10', 'c', 'iii')], 'chem-1-4', 'mass-of-silver-sulfide')
 
 # ── Q11 Any two of (a), (b), (c) ─────────────────────────────────────────────

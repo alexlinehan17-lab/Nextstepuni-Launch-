@@ -384,9 +384,11 @@ assert len(_fin) == 2 and _fin[0].startswith('[Final Answer'), _q6e[-1]
 C.add([k('6', 'e')], 'chem-3-1', 'hess-law-and-the-heat-of-cracking', [
     lift('r-1', _h[0], 3, 'STATE. The scheme prices this point and the next (2 × 3), one each.'),
     lift('r-2', _h[1], 3),
-    lift('r-3', _s1, 3, 'CALCULATE: ΔH cracking = ΣΔH formation products – ΣΔH formation reactants; the '
-         'products\' heats of formation first, or added up, "–167.7 kJ" (3).'),
-    lift('r-4', _s2, 3, 'Then the reactant\'s, subtracted, or written "+ 350.9 kJ" (3).'),
+    # The scheme's three boxed routes write each step one of two ways: each step a row that
+    # accepts the other way (_alt2, _alt3).
+    C.accepting(lift('r-3', _s1, 3, 'CALCULATE: ΔH cracking = ΣΔH formation products – ΣΔH formation reactants; '
+                     'the products\' heats of formation first, or added up (3).'), '–167.7 kJ'),
+    C.accepting(lift('r-4', _s2, 3, 'Then the reactant\'s, subtracted, or written added (3).'), '+ 350.9 kJ'),
     lift('r-5', '183.2 kJ', 3, 'The scheme gives the answer, 183.2 kJ, priced (9) with its working, and accepts '
          'two other routes, adding equations; its own print of every route is shown with the answer. It adds: '
          + ' '.join(_fin))], figure=S + 'q6e')

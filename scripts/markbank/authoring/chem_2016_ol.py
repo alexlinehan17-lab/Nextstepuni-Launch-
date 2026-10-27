@@ -32,6 +32,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import (Cards, Printed, Refused, make_audit, MAX_OPTIONS, display, joined,  # noqa: E402
                         read_lines, anyN, point)
 
@@ -122,10 +123,12 @@ _q2c1 = P.items(k('2', 'c', 'i'))
 assert [it.cell for it in _q2c1] == ['[2 × 3]', '[6]'], _q2c1
 _rinse = _q2c1[0].points()
 assert len(_rinse) == 2, _rinse
+# Two points (2 × 3), or instead one (6): each a route.
 C.add([k('2', 'c', 'i')], 'chem-4-1', 'rinsing-the-burette', [
-    C.lifted('r-1', _rinse[0], 3, 'The scheme prices this point and the next (2 × 3), one each; or instead, (6), "'
-             + traced(_q2c1[1].text) + '".'),
-    C.lifted('r-2', _rinse[1], 3)], figure=Q2)
+    routed(C.lifted('r-1', _rinse[0], 3, 'The scheme prices this point and the next (2 × 3), one each; or instead the '
+                    'last row (6). The examiner marks one or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _rinse[1], 3), 'a'),
+    routed(C.lifted('r-3', _q2c1[1].text, 6, 'Or instead, (6).'), 'b')], total=6, figure=Q2)
 C.fixed([k('2', 'c', 'ii')], 'chem-4-1', 'naming-the-pipette', figure=Q2)
 # (d)(i): the answer (9) and the working that earns it, a box of stacked
 # fractions the text layer cannot order.
@@ -185,9 +188,12 @@ _q4e = P.items(k('4', 'e'))
 assert [it.cell for it in _q4e] == ['[6]', '[2 × 3]'], _q4e
 _vap = _q4e[1].points()
 assert len(_vap) == 2, _vap
+# The name (6), or instead two points (2 × 3): each a route.
 C.add([k('4', 'e')], 'chem-u2', 'reflux', [
-    C.lifted('r-1', _q4e[0].text, 6, 'Or instead, (2 × 3), one each, "' + traced(_vap[0]) + '" and "'
-             + traced(_vap[1]) + '".')], notes=Q4_NOTE, figure=FIG + 'paper-q4e')
+    routed(C.lifted('r-1', _q4e[0].text, 6, 'Or instead the last two rows, (2 × 3), one each. The examiner marks one '
+                    'or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _vap[0], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-3', _vap[1], 3), 'b')], total=6, notes=Q4_NOTE, figure=FIG + 'paper-q4e')
 # (f): a pair (2 × 3), or instead the law as an equation (6), its proportion set
 # as a fraction the text layer cannot order.
 _q4f = P.items(k('4', 'f'))
@@ -196,11 +202,14 @@ _boyle = _q4f[0].points()
 assert len(_boyle) == 2, _boyle
 _eqn = _q4f[1].text
 assert _eqn.startswith('P₁V₁ = constant (k) / P₁V₁ = P₂V₂ / P'), _eqn
+# Two points (2 × 3), or instead the law as an equation (6): each a route.
 C.add([k('4', 'f')], 'chem-2-3', 'boyles-law', [
-    C.lifted('r-1', _boyle[0], 3, 'The scheme prices this point and the next (2 × 3), one each; or instead, (6), "'
-             + traced('P₁V₁ = constant (k) / P₁V₁ = P₂V₂') + '" or "' + traced('P ∝ 1/V')
-             + '", which the scheme sets as a fraction.'),
-    C.lifted('r-2', _boyle[1], 3)], notes=Q4_NOTE)
+    routed(C.lifted('r-1', _boyle[0], 3, 'The scheme prices this point and the next (2 × 3), one each; or instead the '
+                    'last row (6). The examiner marks one or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _boyle[1], 3), 'a'),
+    routed(C.accepting(C.lifted('r-3', 'P₁V₁ = constant (k) / P₁V₁ = P₂V₂', 6,
+                                'Or instead, (6); the scheme sets P ∝ 1/V as a fraction.'), 'P ∝ 1/V'), 'b')],
+    total=6, notes=Q4_NOTE)
 C.route([k('4', 'g')], 'chem-1-4', 'molar-volume-of-helium', notes=Q4_NOTE)
 C.fixed([k('4', 'h')], 'chem-1-2', 'half-life', notes=Q4_NOTE)
 C.fixed([k('4', 'i')], 'chem-4-3', 'removing-nitrates-and-phosphates-from-sewage', notes=Q4_NOTE)
@@ -452,10 +461,13 @@ _q11a1 = P.items(k('11', 'a', 'i'))
 assert [it.cell for it in _q11a1] == ['[4 + 3]', '[4 + 3]'], _q11a1
 _rates, _conc = _q11a1[0].points(), _q11a1[1].points()
 assert len(_rates) == 2 and len(_conc) == 2, (_rates, _conc)
+# Two pairs, the second after "or", priced together (4 + 3): an unpriced card cannot
+# take routes (the session grades it on every row claimed), so each point accepts its
+# counterpart in the other pair, and the row says to keep to one pair.
 C.add([k('11', 'a', 'i')], 'chem-3-3', 'definition-of-chemical-equilibrium', [
-    C.lifted('r-1', _rates[0], None, 'The scheme prices this point and the next together (4 + 3), or instead, '
-             '(4 + 3), the pair "' + traced(_conc[0] + ' // ' + _conc[1]) + '".'),
-    C.lifted('r-2', _rates[1], None)],
+    C.accepting(C.lifted('r-1', _rates[0], None, 'The scheme prices this point and the next together (4 + 3), or '
+                         'instead, (4 + 3), the pair after "or". Claim both points from the same pair.'), _conc[0]),
+    C.accepting(C.lifted('r-2', _rates[1], None), _conc[1])],
     kind='orderedSplit', notation='[4 + 3]', total=7, notes=SPLIT.format('[4 + 3]'))
 print_question('paper-q11a-i-print')
 assert cells(k('11', 'a', 'ii')) == ['[3]'], P.items(k('11', 'a', 'ii'))

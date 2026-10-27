@@ -1101,8 +1101,8 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by a chemical equilibrium?",
     tariffModel: {"kind":"orderedSplit","notation":"[4 + 3]"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: null, contextNote: "The scheme prices this point and the next together (4 + 3), or instead the pair \"state where concentrations of reactants and products // are constant\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: null, accepts: ["state where concentrations of reactants and products"], contextNote: "The scheme prices this point and the next together (4 + 3), or instead the pair after \"or\". Claim both points from the same pair.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, accepts: ["are constant"], openList: true },
     ],
   } as SecCard,
   {
@@ -2141,8 +2141,10 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "point", verbatim: "reversible reaction: products change back into reactants / simultaneous forward and reverse reactions / reaction does not go to completion (goes both ways)", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "chemical equilibrium: forward and reverse reactions", marks: 2, contextNote: "The scheme prices this point and the next (2 × 2), one each, or instead the pair \"concentrations of reactants and products // are constant\".", openList: true },
-    { id: "r-3", kind: "point", verbatim: "have equal rates", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "chemical equilibrium: forward and reverse reactions", marks: 2, contextNote: "The scheme prices this point and the next (2 × 2), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "have equal rates", marks: 2, openList: true, route: "a" },
+    { id: "r-4", kind: "point", verbatim: "concentrations of reactants and products", marks: 2, contextNote: "Or instead, this point and the next (2 × 2), one each.", openList: true, route: "b" },
+    { id: "r-5", kind: "point", verbatim: "are constant", marks: 2, openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -4271,8 +4273,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "manganese(IV) oxide (manganese dioxide, MnO₂) / celery / liver, etc", marks: null, contextNote: "The scheme adds: [Apply (–2) for manganese oxide.]", openList: true },
     { id: "r-2", kind: "point", verbatim: "black (brown) / powder / pellets (grains) / small pieces of stalks (stems) / small meaty (minced, red, bloody) pieces, etc", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "catalyst initially in neck of flask lying on its side", marks: null, contextNote: "The scheme gives this point and the next as one pair of three, with \"or\" between them: \"catalyst and peroxide initially separated using small test tube // disturb to mix catalyst and solution\", or \"open (replace, insert) stopper // add catalyst quickly.\"; its own print is shown with the answer.", openList: true },
-    { id: "r-4", kind: "point", verbatim: "rotate flask so combine catalyst with solution", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "catalyst initially in neck of flask lying on its side", marks: null, accepts: ["catalyst and peroxide initially separated using small test tube","open (replace, insert) stopper"], contextNote: "The scheme gives this point and the next as one of three pairs, with \"or\" between them; claim both points from the same pair. Its own print is shown with the answer.", openList: true },
+    { id: "r-4", kind: "point", verbatim: "rotate flask so combine catalyst with solution", marks: null, accepts: ["disturb to mix catalyst and solution","add catalyst quickly"], openList: true },
     ],
     questionFigure: {
           "candId": "chemistry-2022-OL-paper-q3a-print",
@@ -4791,8 +4793,10 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"state where concentrations of reactants and products // are constant\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "state where concentrations of reactants and products", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "are constant", marks: 3, openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -5526,8 +5530,10 @@ export const CARDS: SecCard[] = [
     questionText: "Using a dot and cross diagram, or otherwise, show how the bonding in BeO arises.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diagram showing beryllium ion with no electrons in outer shell", marks: 3, contextNote: "The scheme draws the ions with their electron shells, or writes Be²⁺ beside O²⁻ with its eight outer electrons as dots; its own print is shown with the answer. It prices this point and the next (2 × 3), one each, or instead the pair \"outer two electrons transferred from beryllium atom / Be²⁺ // to an (one) oxygen atom / O²⁻\" (2 × 3).", openList: true },
-    { id: "r-2", kind: "point", verbatim: "and showing oxygen ion with 8 electrons in outer shell", marks: 3, contextNote: "The scheme adds: [Diagram not essential.]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "diagram showing beryllium ion with no electrons in outer shell", marks: 3, contextNote: "The scheme draws the ions with their electron shells, or writes Be²⁺ beside O²⁻ with its eight outer electrons as dots; its own print is shown with the answer. It prices this point and the next (2 × 3), one each, or instead the last two rows (2 × 3). The examiner marks one pair or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "and showing oxygen ion with 8 electrons in outer shell", marks: 3, contextNote: "The scheme adds: [Diagram not essential.]", openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "outer two electrons transferred from beryllium atom / Be²⁺", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "to an (one) oxygen atom / O²⁻", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2021-OL-scheme-q5c-iii",
@@ -11222,8 +11228,9 @@ export const CARDS: SecCard[] = [
     questionText: "What is a base?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "gives hydroxyl (hydroxide) ions (OH⁻)", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead (6) for \"proton (hydrogen ion, H⁺) acceptor\". It adds: [Allow 3 for either ‘reacts with acid to form salt and water’ or for ‘substance with pH above 7’]", openList: true },
-    { id: "r-2", kind: "point", verbatim: "in aqueous solution (water)", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "gives hydroxyl (hydroxide) ions (OH⁻)", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the last row (6). The examiner marks one or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "in aqueous solution (water)", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "proton (hydrogen ion, H⁺) acceptor", marks: 6, contextNote: "Or instead, (6). The scheme adds: [Allow 3 for either ‘reacts with acid to form salt and water’ or for ‘substance with pH above 7’]", openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -11252,8 +11259,10 @@ export const CARDS: SecCard[] = [
     questionText: "What is hard water?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lathers poorly / forms scum", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"contains dissolved // calcium (Ca, magnesium, Mg) ions / Ca²⁺ (Mg²⁺)\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "with soap", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "lathers poorly / forms scum", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "with soap", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "contains dissolved", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "calcium (Ca, magnesium, Mg) ions / Ca²⁺ (Mg²⁺)", marks: 3, openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -11791,8 +11800,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "1:6 / 1 to 6 / one glucose for six O₂ / six O₂ for (to) one glucose", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "0.6 moles O₂", marks: 3, contextNote: "Or its working, \"0.1 moles glucose ⇒ 0.6 moles O₂\" (3).", openList: true },
-    { id: "r-3", kind: "point", verbatim: "13.44 litres O₂", marks: 3, contextNote: "Or its working, \"0.6 × 22.4 = 13.44 litres O₂\" (3).", openList: true },
+    { id: "r-2", kind: "point", verbatim: "0.6 moles O₂", marks: 3, accepts: ["0.1 moles glucose ⇒ 0.6 moles O₂"], contextNote: "Or its working, (3).", openList: true },
+    { id: "r-3", kind: "point", verbatim: "13.44 litres O₂", marks: 3, accepts: ["0.6 × 22.4 = 13.44 litres O₂"], contextNote: "Or its working, (3).", openList: true },
     ],
   } as SecCard,
   {
@@ -11891,8 +11900,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"orderedSplit","notation":"[4 + 3]"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: null, contextNote: "The scheme prices this point and the next together (4 + 3), or instead the pair \"state where concentrations of reactants and products // is constant\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: null, accepts: ["state where concentrations of reactants and products"], contextNote: "The scheme prices this point and the next together (4 + 3), or instead the pair after \"or\". Claim both points from the same pair.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, accepts: ["is constant"], openList: true },
     ],
     questionFigure: {
           "candId": "chemistry-2020-OL-paper-q11b-i-print",
@@ -12518,9 +12527,9 @@ export const CARDS: SecCard[] = [
     questionText: "Describe a procedure for carrying out a flame test on the solid residue left in A or in B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl) / clean platinum wire", marks: 3, contextNote: "Method 1. Or Method 2, \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", or Method 3, \"prepare a solution of the salt in water and ethanol (propanol)\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "dip rod in salt", marks: 3, contextNote: "Method 1. Or Method 2, \"dip splint (stick) in salt\", or Method 3, \"spray solution\".", openList: true },
-    { id: "r-3", kind: "point", verbatim: "hold salt in (over) hot (blue) part of flame (Bunsen) / observe colour of flame", marks: 3, contextNote: "Method 1. Or Method 2, \"hold salt in (over) hot (blue) part of flame (Bunsen) / observe colour of flame\", or Method 3, \"onto (into) hot (blue) part of flame (Bunsen) / observe colour of flame\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl) / clean platinum wire", marks: 3, accepts: ["soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)","prepare a solution of the salt in water and ethanol (propanol)"], contextNote: "Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "dip rod in salt", marks: 3, accepts: ["dip splint (stick) in salt","spray solution"], contextNote: "Method 1, then Methods 2 and 3, of the same method as above.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "hold salt in (over) hot (blue) part of flame (Bunsen) / observe colour of flame", marks: 3, accepts: ["onto (into) hot (blue) part of flame (Bunsen) / observe colour of flame"], contextNote: "Method 1, then Methods 2 and 3, of the same method as above. The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]", openList: true },
     ],
     questionFigure: {
           "candId": "chemistry-2019-OL-paper-q3d-i-print",
@@ -13614,8 +13623,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"orderedSplit","notation":"[4 + 3]"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: null, contextNote: "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair \"state where concentrations of reactants and products // is constant\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "state where forward and reverse reactions", marks: null, accepts: ["state where concentrations of reactants and products"], contextNote: "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair after \"or\". Claim both points from the same pair.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, accepts: ["is constant"], openList: true },
     ],
     questionFigure: {
           "candId": "chemistry-2019-OL-paper-q10b-i-print",
@@ -13724,8 +13733,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "2:1 / 2 to 1 / two silver for one H₂ / one H₂ for (to) two silver", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "0.05 moles H₂", marks: 3, contextNote: "Or its working, \"0.1 moles Ag ⇒ 0.05 moles H₂\" (3).", openList: true },
-    { id: "r-3", kind: "point", verbatim: "1.12 litres H₂", marks: 3, contextNote: "Or its working, \"0.05 × 22.4 = 1.12 litres H₂\" (3).", openList: true },
+    { id: "r-2", kind: "point", verbatim: "0.05 moles H₂", marks: 3, accepts: ["0.1 moles Ag ⇒ 0.05 moles H₂"], contextNote: "Or its working, (3).", openList: true },
+    { id: "r-3", kind: "point", verbatim: "1.12 litres H₂", marks: 3, accepts: ["0.05 × 22.4 = 1.12 litres H₂"], contextNote: "Or its working, (3).", openList: true },
     ],
   } as SecCard,
   {
@@ -14543,7 +14552,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"[6 + 3]"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "neck of flask – B / in small test-tube inside flask – A", marks: null, contextNote: "For (i). The scheme adds: [Catalyst must be labelled.]", openList: true },
-    { id: "r-2", kind: "point", verbatim: "graduated cylinder (burette) inverted over water – X", marks: null, contextNote: "For (ii). Or \"graduated gas syringe – Y\". The scheme adds: [Label necessary unless graduations clearly marked.] [Allow flask upright; allow gas collection proceeding.]", openList: true },
+    { id: "r-2", kind: "point", verbatim: "graduated cylinder (burette) inverted over water – X", marks: null, accepts: ["graduated gas syringe – Y"], contextNote: "For (ii). The scheme adds: [Label necessary unless graduations clearly marked.] [Allow flask upright; allow gas collection proceeding.]", openList: true },
     ],
     questionFigure: {
           "candId": "chemistry-2018-OL-paper-q3c-print",
@@ -14790,8 +14799,10 @@ export const CARDS: SecCard[] = [
     questionText: "A 500 cm³ sample of swimming pool water contained 0.11 g of dissolved solids. Express this concentration in parts per million (p.p.m. or mg per litre).",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.11 × 2 = 0.22 g per litre", marks: 3, contextNote: "Or, by the scheme's second route, \"0.11 × 1000 = 110 mg per 500 cm³\" (3).", openList: true },
-    { id: "r-2", kind: "point", verbatim: "0.22 × 1000 = 220 ppm (mg l⁻¹)", marks: 3, contextNote: "Or, by the second route, \"110 × 2 = 220 ppm (mg l⁻¹)\" (3).", openList: true },
+    { id: "r-1", kind: "point", verbatim: "0.11 × 2 = 0.22 g per litre", marks: 3, contextNote: "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "0.22 × 1000 = 220 ppm (mg l⁻¹)", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "0.11 × 1000 = 110 mg per 500 cm³", marks: 3, contextNote: "Or by the scheme's second route, this step and the next.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "110 × 2 = 220 ppm (mg l⁻¹)", marks: 3, openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -15151,7 +15162,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "temporary", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "calcium hydrogencarbonate / calcium bicarbonate / (Ca(HCO₃)₂", marks: 3, contextNote: "Or \"magnesium hydrogencarbonate / magnesium bicarbonate / (Mg(HCO₃)₂\".", openList: true },
+    { id: "r-2", kind: "point", verbatim: "calcium hydrogencarbonate / calcium bicarbonate / (Ca(HCO₃)₂", marks: 3, accepts: ["magnesium hydrogencarbonate / magnesium bicarbonate / (Mg(HCO₃)₂"], openList: true },
     ],
   } as SecCard,
   {
@@ -15301,8 +15312,8 @@ export const CARDS: SecCard[] = [
     questionText: "Describe what is observed when X reacts with Fehling’s reagent.",
     tariffModel: {"kind":"orderedSplit","notation":"[6 + 3]"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "blue changes", marks: null, contextNote: "The scheme prices this point and the next together (6 + 3), or instead, (6 + 3), the pair \"brick red (orange) // precipitate formed\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "to brick red (orange) precipitate", marks: null, contextNote: "The scheme adds: [Allow (3) for colours reversed.]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "blue changes", marks: null, accepts: ["brick red (orange)"], contextNote: "The scheme prices this point and the next together (6 + 3), or instead, (6 + 3), the pair after \"or\". Claim both points from the same pair.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "to brick red (orange) precipitate", marks: null, accepts: ["precipitate formed"], contextNote: "The scheme adds: [Allow (3) for colours reversed.]", openList: true },
     ],
     figure: {
           "candId": "chemistry-2018-OL-paper-q8",
@@ -15388,9 +15399,9 @@ export const CARDS: SecCard[] = [
     questionText: "Describe a procedure for carrying out a flame test on the white salt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl)", marks: 6, contextNote: "Method 1. Or Method 2, \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", or Method 3, \"prepare a solution of the salt in water and ethanol (propanol)\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)", marks: 5, contextNote: "Method 1. Or Method 2, \"dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", or Method 3, \"spray solution onto (into) hot (blue) part of flame (Bunsen)\".", openList: true },
-    { id: "r-3", kind: "point", verbatim: "observe colour of flame", marks: 1, contextNote: "Method 1. Or Method 2, \"observe colour of flame\", or Method 3, \"observe colour of flame\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl)", marks: 6, accepts: ["soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)","prepare a solution of the salt in water and ethanol (propanol)"], contextNote: "Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)", marks: 5, accepts: ["dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)","spray solution onto (into) hot (blue) part of flame (Bunsen)"], contextNote: "Method 1, then Methods 2 and 3, of the same method as above.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "observe colour of flame", marks: 1, contextNote: "Method 1, then Methods 2 and 3, of the same method as above. The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]", openList: true },
     ],
     figure: {
           "candId": "chemistry-2018-OL-scheme-q9c-i",
@@ -16588,8 +16599,10 @@ export const CARDS: SecCard[] = [
     questionText: "A 100 cm³ sample of lake water contained 0.016 g of suspended solids. Express this concentration in parts per million (p.p.m. or mg per litre).",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.016 × 10 = 0.16 g per litre", marks: 3, contextNote: "Or, by the scheme's second route, \"0.016 × 1000 = 16 mg per 100 cm³\" (3).", openList: true },
-    { id: "r-2", kind: "point", verbatim: "0.16 × 1000 = 160 ppm (mg l⁻¹)", marks: 3, contextNote: "Or, by the second route, \"16 × 10 = 160 ppm (mg l⁻¹)\" (3).", openList: true },
+    { id: "r-1", kind: "point", verbatim: "0.016 × 10 = 0.16 g per litre", marks: 3, contextNote: "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "0.16 × 1000 = 160 ppm (mg l⁻¹)", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "0.016 × 1000 = 16 mg per 100 cm³", marks: 3, contextNote: "Or by the scheme's second route, this step and the next.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "16 × 10 = 160 ppm (mg l⁻¹)", marks: 3, openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -16944,8 +16957,8 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the procedure for carrying out a flame test on a salt.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid", marks: 4, contextNote: "Method 1; the scheme's cell ends \"(HCl)\". Or Method 2, \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", or Method 3, \"prepare a solution of the salt in water and ethanol (propanol)\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.]", openList: true },
-    { id: "r-2", kind: "point", verbatim: "dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)", marks: 4, contextNote: "Method 1. Or Method 2, \"dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", or Method 3, \"spray solution onto (into) hot (blue) part of flame (Bunsen)\".", openList: true },
+    { id: "r-1", kind: "point", verbatim: "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid", marks: 4, accepts: ["soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)","prepare a solution of the salt in water and ethanol (propanol)"], contextNote: "Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and 3; the scheme's Method 1 cell ends \"(HCl)\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.]", openList: true },
+    { id: "r-2", kind: "point", verbatim: "dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)", marks: 4, accepts: ["dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)","spray solution onto (into) hot (blue) part of flame (Bunsen)"], contextNote: "Method 1, then Methods 2 and 3, of the same method as above.", openList: true },
     { id: "r-3", kind: "point", verbatim: "observe colour of flame", marks: 4, contextNote: "Each method's last step. The scheme adds: [Allow ‘record result’ for ‘observe colour of flame’ where clear reference to what kind of observation is made is in response.]", openList: true },
     ],
     figure: {
@@ -17065,7 +17078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name or give the formula of a reagent that could be used to oxidise a sample of ethanol in the school laboratory.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "potassium permanganate {manganate(VII)} / KMnO₄ /MnO₄⁻", marks: 6, contextNote: "Or \"sodium (potassium) dichromate / Na₂Cr₂O₇ / Cr₂O₇²⁻, etc\".", openList: true },
+    { id: "r-1", kind: "point", verbatim: "potassium permanganate {manganate(VII)} / KMnO₄ /MnO₄⁻", marks: 6, accepts: ["sodium (potassium) dichromate / Na₂Cr₂O₇ / Cr₂O₇²⁻, etc"], openList: true },
     ],
     figure: {
           "candId": "chemistry-2017-OL-paper-q8",
@@ -17425,8 +17438,10 @@ export const CARDS: SecCard[] = [
     questionText: "State the law of conservation of mass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "reactants and products in a chemical reaction", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each; or instead, (2 × 3), the pair \"matter cannot be created or destroyed // in a chemical reaction / but can be changed from one (form) substance into another\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "have constant mass", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "reactants and products in a chemical reaction", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each; or instead, (2 × 3), the last two rows. The examiner marks one statement or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "have constant mass", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "matter cannot be created or destroyed", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "in a chemical reaction / but can be changed from one (form) substance into another", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2017-OL-paper-q10c",
@@ -18053,8 +18068,9 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the procedure for rinsing A for use in the titration.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rinse with deionised (distilled, pure) water", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each; or instead, (6), \"rinse clean burette with solution it will contain (acid, hydrochloric acid, HCl)\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "rinse with solution it will contain (acid, hydrochloric acid, HCl)", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "rinse with deionised (distilled, pure) water", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each; or instead the last row (6). The examiner marks one or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "rinse with solution it will contain (acid, hydrochloric acid, HCl)", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "rinse clean burette with solution it will contain (acid, hydrochloric acid, HCl)", marks: 6, contextNote: "Or instead, (6).", openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2016-OL-paper-q2",
@@ -18341,7 +18357,9 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what happens when liquid A in the apparatus shown on the right begins to boil.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "reflux", marks: 6, contextNote: "Or instead, (2 × 3), one each, \"vapours rise up (evaporates)\" and \"condense (cool) / fall back into flask\".", openList: true },
+    { id: "r-1", kind: "point", verbatim: "reflux", marks: 6, contextNote: "Or instead the last two rows, (2 × 3), one each. The examiner marks one or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "vapours rise up (evaporates)", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-3", kind: "point", verbatim: "condense (cool) / fall back into flask", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2016-OL-paper-q4e",
@@ -18362,8 +18380,9 @@ export const CARDS: SecCard[] = [
     questionText: "According to Boyle’s law, what is the relationship between the volume of a certain mass of gas and its pressure at a constant temperature?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "volume inversely", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each; or instead, (6), \"P₁V₁ = constant (k) / P₁V₁ = P₂V₂\" or \"P ∝ 1/V\", which the scheme sets as a fraction.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "proportional to pressure", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "volume inversely", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each; or instead the last row (6). The examiner marks one or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "proportional to pressure", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "P₁V₁ = constant (k) / P₁V₁ = P₂V₂", marks: 6, accepts: ["P ∝ 1/V"], contextNote: "Or instead, (6); the scheme sets P ∝ 1/V as a fraction.", openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -19320,8 +19339,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the underlined term.",
     tariffModel: {"kind":"orderedSplit","notation":"[4 + 3]"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "forward and reverse reactions", marks: null, contextNote: "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair \"concentrations of reactants and products // constant\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "forward and reverse reactions", marks: null, accepts: ["concentrations of reactants and products"], contextNote: "The scheme prices this point and the next together (4 + 3), or instead, (4 + 3), the pair after \"or\". Claim both points from the same pair.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "have equal rates", marks: null, accepts: ["constant"], openList: true },
     ],
     questionFigure: {
           "candId": "chemistry-2016-OL-paper-q11a-i-print",
@@ -19860,8 +19879,10 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mr = 106", marks: 3, contextNote: "Both of the scheme's routes open with this step.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "106 × 0.05 = 5.3 g / l", marks: 3, contextNote: "Or, by the scheme's second route, \"106 ÷ 2 = 53 g\" (3).", openList: true },
-    { id: "r-3", kind: "point", verbatim: "5.3 ÷ 2 = 2.65 g / 500 cm³", marks: 3, contextNote: "Or, by the second route, \"53 × 0.05 = 2.65 g / 500 cm³\" (3).", openList: true },
+    { id: "r-2", kind: "point", verbatim: "106 × 0.05 = 5.3 g / l", marks: 3, contextNote: "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.", openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "5.3 ÷ 2 = 2.65 g / 500 cm³", marks: 3, openList: true, route: "a" },
+    { id: "r-4", kind: "point", verbatim: "106 ÷ 2 = 53 g", marks: 3, contextNote: "Or by the scheme's second route, this step and the next.", openList: true, route: "b" },
+    { id: "r-5", kind: "point", verbatim: "53 × 0.05 = 2.65 g / 500 cm³", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2015-OL-paper-q2",
@@ -25131,8 +25152,10 @@ export const CARDS: SecCard[] = [
     questionText: "a 0.01 M sodium hydroxide (NaOH) solution,",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "pOH = – log 0.01 / = 2", marks: 3, openList: true },
-    { id: "r-2", kind: "point", verbatim: "pH = 14 – 2 / = 12", marks: 3, contextNote: "Or by the scheme's second route: \"[H⁺] = 10⁻¹⁴ ÷ 0.01 = 10⁻¹²\" (3), then \"pH = – log 10⁻¹² = 12\" (3).", openList: true },
+    { id: "r-1", kind: "point", verbatim: "pOH = – log 0.01 / = 2", marks: 3, contextNote: "The scheme's first route, this step and the next; its second route is the last two rows. The examiner marks one route, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "pH = 14 – 2 / = 12", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "[H⁺] = 10⁻¹⁴ ÷ 0.01 = 10⁻¹²", marks: 3, contextNote: "Or by the scheme's second route, this step and the next.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "pH = – log 10⁻¹² = 12", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2012-OL-scheme-q7a-i",

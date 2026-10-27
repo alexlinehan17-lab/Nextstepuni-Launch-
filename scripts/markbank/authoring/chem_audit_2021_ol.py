@@ -24,6 +24,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import Cards, Printed, Refused, make_audit, MAX_OPTIONS, anyN, display, point  # noqa: E402
 
 P = Printed(2021, 'ol', figures=True)
@@ -164,14 +165,19 @@ _q5c3 = P.items(k('5', 'c', 'iii'))
 assert [it.cell for it in _q5c3] == ['[2 × 3]', '[2 × 3]'], _q5c3
 _p1 = _q5c3[0].points()
 assert len(_p1) == 2, _p1
+# The diagram's two points (2 × 3), or instead the pair after "or" (2 × 3): each a route.
+_p2 = _q5c3[1].points()
+assert _p2 == ['outer two electrons transferred from beryllium atom / Be²⁺', 'to an (one) oxygen atom / O²⁻'], _p2
 C.add([k('5', 'c', 'iii')], None, None, [
-    C.lifted('r-1', _p1[0], 3,
-             'The scheme draws the ions with their electron shells, or writes Be²⁺ beside O²⁻ with '
-             'its eight outer electrons as dots; its own print is shown with the answer. It prices '
-             'this point and the next (2 × 3), one each, or instead the pair "outer two electrons '
-             'transferred from beryllium atom / Be²⁺ // to an (one) oxygen atom / O²⁻" (2 × 3).'),
-    C.lifted('r-2', _p1[1], 3, 'The scheme adds: ' + ' '.join(_q5c3[1].asides))],
-    figure=S + 'q5c-iii')
+    routed(C.lifted('r-1', _p1[0], 3,
+                    'The scheme draws the ions with their electron shells, or writes Be²⁺ beside O²⁻ with '
+                    'its eight outer electrons as dots; its own print is shown with the answer. It prices '
+                    'this point and the next (2 × 3), one each, or instead the last two rows (2 × 3). The examiner '
+                    'marks one pair or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _p1[1], 3, 'The scheme adds: ' + ' '.join(_q5c3[1].asides)), 'a'),
+    routed(C.lifted('r-3', _p2[0], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _p2[1], 3), 'b')],
+    total=6, figure=S + 'q5c-iii')
 C.fixed([k('5', 'd', 'i')], None, None)
 print_question('paper-q5d-i-print')
 C.fixed([k('5', 'd', 'ii')], None, None, figure=S + 'q5d-ii',
@@ -294,10 +300,13 @@ Q11B = P.rearranged(C.context(k('11', 'b', 'i')), 'H2CO3 (aq) + CO32– (aq) ⇌
 _q11b1 = P.items(k('11', 'b', 'i'))
 assert [it.cell for it in _q11b1] == ['[4 + 3]', None], _q11b1
 C.add([k('11', 'b', 'i')], None, None, [
-    C.lifted('r-1', 'state where forward and reverse reactions', None,
-             'The scheme prices this point and the next together (4 + 3), or instead the pair '
-             '"state where concentrations of reactants and products // are constant".'),
-    C.lifted('r-2', 'have equal rates', None)],
+    # Two pairs, the second after "or", priced together (4 + 3): each point accepts its
+    # counterpart in the other pair (an unpriced card cannot take routes).
+    C.accepting(C.lifted('r-1', 'state where forward and reverse reactions', None,
+                         'The scheme prices this point and the next together (4 + 3), or instead the pair after '
+                         '"or". Claim both points from the same pair.'),
+                'state where concentrations of reactants and products'),
+    C.accepting(C.lifted('r-2', 'have equal rates', None), 'are constant')],
     kind='orderedSplit', notation='[4 + 3]', total=7, stem=Q11B, notes=SPLIT.format('[4 + 3]'))
 C.drawn([k('11', 'b', 'ii')], None, None, S + 'q11b-ii', stem=Q11B)
 C.fixed([k('11', 'b', 'iii')], None, None, stem=Q11B)

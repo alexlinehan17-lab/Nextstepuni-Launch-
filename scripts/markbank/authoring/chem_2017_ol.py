@@ -29,6 +29,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chem_print import routed  # noqa: E402
 from chem_print import (Cards, Printed, Refused, make_audit, MAX_OPTIONS, display, joined,  # noqa: E402
                         read_lines, anyN, point)
 
@@ -163,9 +164,12 @@ _q4i = P.items(k('4', 'i'))
 assert [it.cell for it in _q4i] == ['[6]', '[3]', '[3]', '[3]', '[3]'], _q4i
 assert _q4i[1].text.startswith('0.016 × 10 ') and _q4i[3].text.startswith('0.16 × 1000 '), _q4i
 C.add([k('4', 'i')], 'chem-1-4', 'concentration-in-parts-per-million', [
-    C.lifted('r-1', _q4i[1].text, 3, 'Or, by the scheme\'s second route, "' + traced(_q4i[2].text) + '" (3).'),
-    C.lifted('r-2', _q4i[3].text, 3, 'Or, by the second route, "' + traced(_q4i[4].text) + '" (3).')],
-    notes='The scheme gives the answer, ' + display(_q4i[0].text) + ', priced (6), then the working that '
+    routed(C.lifted('r-1', _q4i[1].text, 3, 'The scheme\'s first route, this step and the next; its second route is '
+                    'the last two rows. The examiner marks one route, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _q4i[3].text, 3), 'a'),
+    routed(C.lifted('r-3', _q4i[2].text, 3, 'Or by the scheme\'s second route, this step and the next.'), 'b'),
+    routed(C.lifted('r-4', _q4i[4].text, 3), 'b')],
+    total=6, notes='The scheme gives the answer, ' + display(_q4i[0].text) + ', priced (6), then the working that '
           'earns it in two boxed routes, step by step; the steps here are its first route. ' + Q4_NOTE)
 assert cells(k('4', 'j')) == ['[2 × 3]'], P.items(k('4', 'j'))
 C.fixed([k('4', 'j')], 'chem-3-5', 'products-of-electrolysing-acidified-water', notes=Q4_NOTE)
@@ -301,11 +305,14 @@ _m1 = traced(_m1[:-len(' (HCl)')])
 _q7b_asides = [traced(l.text) if l.text.endswith(']') else l.text for l in _lines11 if 428 <= l.y0 < 486]
 assert len(_q7b_asides) == 4 and _q7b_asides[0].startswith('*[Allow'), _q7b_asides
 _record = traced(_q7b_asides[1] + ' ' + _q7b_asides[2])
+# Three methods, each in steps priced (4): the step of each method is one row that
+# accepts the other methods' (routing three methods' steps would pass the row cap).
 C.add([k('7', 'b', 'i')], 'chem-u2', 'flame-test-procedure', [
-    C.lifted('r-1', _m1, 4, f'Method 1; the scheme\'s cell ends "(HCl)". Or Method 2, "{_methods[1][0]}", or '
-             f'Method 3, "{_methods[2][0]}". The scheme adds: ' + _q7b_asides[0]),
-    C.lifted('r-2', _methods[0][1], 4, f'Method 1. Or Method 2, "{_methods[1][1]}", or Method 3, '
-             f'"{_methods[2][1]}".'),
+    C.accepting(C.lifted('r-1', _m1, 4, 'Claim the steps of one method, not a mix: Method 1 first, then Methods 2 and '
+                         '3; the scheme\'s Method 1 cell ends "(HCl)". The scheme adds: ' + _q7b_asides[0]),
+                _methods[1][0], _methods[2][0]),
+    C.accepting(C.lifted('r-2', _methods[0][1], 4, 'Method 1, then Methods 2 and 3, of the same method as above.'),
+                _methods[1][1], _methods[2][1]),
     C.lifted('r-3', _methods[0][2], 4, f'Each method\'s last step. The scheme adds: {_record}')],
     figure=S + 'q7b-i', stem='',
     notes='The scheme sets out three methods in a table, each in three steps priced (4), (3 × 4) in all; '
@@ -344,7 +351,7 @@ assert [it.cell for it in _q8d] == ['[6]'] and len(_q8d[0].rows) == 2, _q8d
 _reagents = [display(r.text).rstrip('/ ') for r in _q8d[0].rows]
 assert _reagents[0].startswith('potassium permanganate') and _reagents[1].startswith('sodium'), _reagents
 C.add([k('8', 'd')], 'chem-4-2', 'oxidising-ethanol', [
-    C.lifted('r-1', _reagents[0], 6, 'Or "' + traced(_reagents[1]) + '".')], figure=Q8)
+    C.accepting(C.lifted('r-1', _reagents[0], 6), _reagents[1])], figure=Q8)
 C.fixed([k('8', 'e')], 'chem-u2', 'detecting-ethanol-in-blood', figure=Q8)
 
 # ── Q9 The decomposition of hydrogen peroxide by liver ───────────────────────
@@ -396,10 +403,13 @@ _q10c1 = P.items(k('10', 'c', 'i'))
 assert [it.cell for it in _q10c1] == ['[2 × 3]'], _q10c1
 _law = _q10c1[0].points()
 assert len(_law) == 4, _law
+# Two statements of the law, the second after "or", each two points (2 × 3): each a route.
 C.add([k('10', 'c', 'i')], 'chem-1-4', 'law-of-conservation-of-mass', [
-    C.lifted('r-1', _law[0], 3, 'The scheme prices this point and the next (2 × 3), one each; or instead, '
-             '(2 × 3), the pair "' + traced(_law[2] + ' // ' + _law[3]) + '".'),
-    C.lifted('r-2', _law[1], 3)], figure=Q10C)
+    routed(C.lifted('r-1', _law[0], 3, 'The scheme prices this point and the next (2 × 3), one each; or instead, '
+                    '(2 × 3), the last two rows. The examiner marks one statement or the other, not a mix.'), 'a'),
+    routed(C.lifted('r-2', _law[1], 3), 'a'),
+    routed(C.lifted('r-3', _law[2], 3, 'Or instead, this point and the next (2 × 3), one each.'), 'b'),
+    routed(C.lifted('r-4', _law[3], 3), 'b')], total=6, figure=Q10C)
 C.fixed([k('10', 'c', 'ii')], 'chem-1-4', 'molar-mass-of-sodium-azide', figure=Q10C)
 assert cells(k('10', 'c', 'iii')) == ['[6]', '[6]'], P.items(k('10', 'c', 'iii'))
 C.answer_only([k('10', 'c', 'iii')], 'chem-1-4', 'moles-of-sodium-azide', S + 'q10c-iii')

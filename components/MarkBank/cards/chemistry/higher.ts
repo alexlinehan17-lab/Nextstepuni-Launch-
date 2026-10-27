@@ -869,8 +869,10 @@ export const CARDS: SecCard[] = [
     questionText: "How is atomic (covalent) radius defined?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "half the internuclear distance (half the distance between the nuclei {centres}) of two atoms of same element (two identical atoms)", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"half the internuclear distance between two atoms // joined by a single homonuclear bond\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "joined by a single covalent bond", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "half the internuclear distance (half the distance between the nuclei {centres}) of two atoms of same element (two identical atoms)", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "joined by a single covalent bond", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "half the internuclear distance between two atoms", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "joined by a single homonuclear bond", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2021-HL-paper-p07-i0",
@@ -1101,7 +1103,9 @@ export const CARDS: SecCard[] = [
     questionText: "Distinguish between a strong acid and a weak acid.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "greater the tendency of an acid to donate protons (more the acid tends to dissociate into ions) the stronger it is / less the tendency of an acid to donate protons (less the acid tends to dissociate into ions) the weaker it is", marks: 6, contextNote: "Or instead, (2 × 3), \"strong acid: is a good proton (H⁺) donor / has a weak conjugate base / fully dissociated / has large (complete) degree of dissociation into ions / K_(a) value large // weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly* dissociated / K_(a) value small\". The scheme adds: [*Accept weak acid only partly dissociated.]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "greater the tendency of an acid to donate protons (more the acid tends to dissociate into ions) the stronger it is / less the tendency of an acid to donate protons (less the acid tends to dissociate into ions) the weaker it is", marks: 6, contextNote: "Or instead the last two rows, (2 × 3), one each. The examiner marks one or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "strong acid: is a good proton (H⁺) donor / has a weak conjugate base / fully dissociated / has large (complete) degree of dissociation into ions / K_(a) value large", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-3", kind: "point", verbatim: "weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly* dissociated / K_(a) value small", marks: 3, contextNote: "The scheme adds: [*Accept weak acid only partly dissociated.]", openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -2472,8 +2476,8 @@ export const CARDS: SecCard[] = [
     questionText: "What reagents are used to confirm the presence of nitrate ions in an aqueous solution?",
     tariffModel: {"kind":"orderedSplit","notation":"[4 + 2]"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "iron(II) sulfate (FeSO₄, ammonium iron(II) sulfate) / (C₆H₅)₂NH (diphenylamine) and NH₄Cl (ammonium chloride) / copper (Cu)", marks: null, contextNote: "Or instead the pair \"sodium hydroxide (NaOH) solution // aluminium (Al) / copper (Cu) / zinc (Zn)\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "concentrated sulfuric acid (H₂SO₄)", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "iron(II) sulfate (FeSO₄, ammonium iron(II) sulfate) / (C₆H₅)₂NH (diphenylamine) and NH₄Cl (ammonium chloride) / copper (Cu)", marks: null, accepts: ["sodium hydroxide (NaOH) solution"], contextNote: "Or instead the pair after \"or\". Claim both reagents from the same pair.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "concentrated sulfuric acid (H₂SO₄)", marks: null, accepts: ["aluminium (Al) / copper (Cu) / zinc (Zn)"], openList: true },
     ],
   } as SecCard,
   {
@@ -2528,8 +2532,9 @@ export const CARDS: SecCard[] = [
     questionText: "Write balanced equations to show the dissociation of carbonic acid in water to form first hydrogencarbonate ions and then carbonate ions.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ / H₂CO₃ + H₂O ⇌ (→) HCO₃⁻ + H₃O⁺", marks: 3, contextNote: "The scheme sets \"CO₂ + H₂O → H₂CO₃\" above the two equations and prices them (2 × 3), one each.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "HCO₃⁻ ⇌ (→) CO₃²⁻ + H⁺ / HCO₃⁻ + H₂O ⇌ (→) CO₃²⁻ + H₃O⁺", marks: 3, contextNote: "Or instead the one equation \"H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ ⇌ (→) CO₃²⁻ + 2H⁺\", priced (6). The scheme adds: [Allow 2H₂CO₃ ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H⁺ or 2H₂CO₃ + 3H₂O ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H₃O⁺]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ / H₂CO₃ + H₂O ⇌ (→) HCO₃⁻ + H₃O⁺", marks: 3, contextNote: "The scheme sets \"CO₂ + H₂O → H₂CO₃\" above the two equations and prices them (2 × 3), one each, or instead the one equation in the last row (6). The examiner marks one or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "HCO₃⁻ ⇌ (→) CO₃²⁻ + H⁺ / HCO₃⁻ + H₂O ⇌ (→) CO₃²⁻ + H₃O⁺", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "H₂CO₃ ⇌ (→) HCO₃⁻ + H⁺ ⇌ (→) CO₃²⁻ + 2H⁺", marks: 6, contextNote: "Or instead the one equation, (6). The scheme adds: [Allow 2H₂CO₃ ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H⁺ or 2H₂CO₃ + 3H₂O ⇌ (→) HCO₃⁻ + CO₃²⁻ + 3H₃O⁺]", openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -4296,8 +4301,10 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the term activation energy (Ea).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "minimum combined energy of colliding particles (molecules)", marks: 2, contextNote: "The scheme prices this point and the next (2 × 2), one each, or instead the pair \"minimum combined energy of particles (molecules) // for (of) effective collisions\".", openList: true },
-    { id: "r-2", kind: "point", verbatim: "for reaction to take place between them", marks: 2, contextNote: "The scheme adds: [At least one mention of collisions or colliding is essential for full marks.]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "minimum combined energy of colliding particles (molecules)", marks: 2, contextNote: "The scheme prices this point and the next (2 × 2), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "for reaction to take place between them", marks: 2, contextNote: "The scheme adds: [At least one mention of collisions or colliding is essential for full marks.]", openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "minimum combined energy of particles (molecules)", marks: 2, contextNote: "Or instead, this point and the next (2 × 2), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "for (of) effective collisions", marks: 2, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2022-HL-paper-p13-i0",
@@ -14590,8 +14597,10 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how this observation was used to obtain the reaction times.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "stand (put) flask on cross (print, mark) / cross (print, mark) under flask", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"set up smart-phone lux-meter app next to flask // record (note, measure, take) time for mixture to reach certain opacity using lux-meter\" (2 × 3).", openList: true },
-    { id: "r-2", kind: "point", verbatim: "record (note, measure, take) time for cross (print, mark) to become obscured (invisible)", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "stand (put) flask on cross (print, mark) / cross (print, mark) under flask", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows (2 × 3). The examiner marks one pair or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "record (note, measure, take) time for cross (print, mark) to become obscured (invisible)", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "set up smart-phone lux-meter app next to flask", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "record (note, measure, take) time for mixture to reach certain opacity using lux-meter", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2020-HL-paper-q3-table",
@@ -15092,8 +15101,10 @@ export const CARDS: SecCard[] = [
     questionText: "What is an atomic orbital?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "space (volume, region) around nucleus of an atom", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"approximate solution // to (of) a Schrödinger (wave) equation for an electron in an atom\". It adds: [‘Area’ around nucleus not acceptable.]", openList: true },
-    { id: "r-2", kind: "point", verbatim: "where there is a relatively high probability (possibility) of finding an electron / where an electron is likely to be found", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "space (volume, region) around nucleus of an atom", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the last two rows. The examiner marks one pair or the other, not a mix. It adds: [‘Area’ around nucleus not acceptable.]", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "where there is a relatively high probability (possibility) of finding an electron / where an electron is likely to be found", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "approximate solution", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "to (of) a Schrödinger (wave) equation for an electron in an atom", marks: 3, openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2020-HL-paper-q5",
@@ -15363,7 +15374,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "proton (H⁺) donor", marks: 4, openList: true },
-    { id: "r-2", kind: "point", verbatim: "greater the tendency of an acid to donate protons (more the acid tends to dissociate into ions) the stronger it is / less the tendency of an acid to donate protons (less the acid tends to dissociate into ions) the weaker it is", marks: 4, contextNote: "Or instead, (2 × 2), \"strong acid: is a good proton (H⁺) donor / has a weak conjugate base / has large (complete) degree of dissociation into ions / K_(a) value large // weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly (only partly) dissociated / K_(a) value small\".", openList: true },
+    { id: "r-2", kind: "point", verbatim: "greater the tendency of an acid to donate protons (more the acid tends to dissociate into ions) the stronger it is / less the tendency of an acid to donate protons (less the acid tends to dissociate into ions) the weaker it is", marks: 4, contextNote: "Or instead the last two rows, (2 × 2), one each. The examiner marks one or the other, not a mix.", openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "strong acid: is a good proton (H⁺) donor / has a weak conjugate base / has large (complete) degree of dissociation into ions / K_(a) value large", marks: 2, contextNote: "Or instead, this point and the next (2 × 2), one each.", openList: true, route: "b" },
+    { id: "r-4", kind: "point", verbatim: "weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly (only partly) dissociated / K_(a) value small", marks: 2, openList: true, route: "b" },
     ],
   } as SecCard,
   {
@@ -15588,8 +15601,9 @@ export const CARDS: SecCard[] = [
     questionText: "What reagent and catalyst can be used in conversion 1?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hydrogen (H₂)", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead (6) for \"LiAlH₄ / NaBH₄\". It adds: [Accept any order of answering.]", openList: true },
-    { id: "r-2", kind: "point", verbatim: "nickel (Ni) / platinum (Pt) / palladium (Pd) / copper (Cu) / rhodium (Rh) / ruthenium (Ru)", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "hydrogen (H₂)", marks: 3, contextNote: "The scheme prices this point and the next (2 × 3), one each, or instead the last row (6). The examiner marks one or the other, not a mix. It adds: [Accept any order of answering.]", openList: true, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "nickel (Ni) / platinum (Pt) / palladium (Pd) / copper (Cu) / rhodium (Rh) / ruthenium (Ru)", marks: 3, openList: true, route: "a" },
+    { id: "r-3", kind: "point", verbatim: "LiAlH₄ / NaBH₄", marks: 6, contextNote: "Or instead, (6).", openList: true, route: "b" },
     ],
     figure: {
           "candId": "chemistry-2020-HL-paper-q8",
@@ -15736,7 +15750,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"[3 + 3 + 3 + 2]"}, totalMarks: 11,
     rows: [
     { id: "r-1", kind: "point", verbatim: "chlorine (Cl₂) undergoes heterolytic fission / Cl₂ → Cl⁺ + Cl⁻ / Clδ+—Clδ– → Cl⁺ + Cl⁻ or chlorine (Cl₂) polarised approaching double bond / Cl₂ → Clδ+—Clδ–", marks: null, contextNote: "The scheme adds: [bond (line) essential in Clδ+—Clδ– ][bond (line) must not be shown between Cl⁺ and Cl⁻]", openList: true },
-    { id: "r-2", kind: "point", verbatim: "attraction of Cl⁺ to double bond / interaction of Cl⁺ with double bond / or attraction of positive end of Clδ+—Clδ– (polarised Cl₂ molecule) to double bond / positive end of Clδ+—Clδ– (polarised Cl₂ molecule) interacts with double bond", marks: null, contextNote: "Or instead: \"breaking of double bond in ethene and polarised bond in chlorine (Cl₂)\".", openList: true },
+    { id: "r-2", kind: "point", verbatim: "attraction of Cl⁺ to double bond / interaction of Cl⁺ with double bond / or attraction of positive end of Clδ+—Clδ– (polarised Cl₂ molecule) to double bond / positive end of Clδ+—Clδ– (polarised Cl₂ molecule) interacts with double bond", marks: null, accepts: ["breaking of double bond in ethene and polarised bond in chlorine (Cl₂)"], openList: true },
     { id: "r-3", kind: "point", verbatim: "carbononium ion (carbocation, C⁺, positively-charged intermediate, bridged chloronium ion) formed", marks: null, contextNote: "The scheme draws the steps; its own print is shown with the answer.", openList: true },
     { id: "r-4", kind: "point", verbatim: "addition of Cl⁻ to carbonium ion (carbocation, C⁺, intermediate, bridged chloronium ion) gives product (1,2-dichloroethane)", marks: null, contextNote: "The scheme adds: [Hs need not be shown explicitly]", openList: true },
     ],
@@ -17904,8 +17918,8 @@ export const CARDS: SecCard[] = [
     questionText: "Without X this reaction has a large activation energy. Explain the underlined term. State and explain two ways of increasing the rate of this reaction, other than by using a catalyst.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "minimum combined energy of colliding particles (molecules)", marks: 3, contextNote: "The scheme prices this point and the next \"TWO PARTS : (2 × 3)\", one each, or instead the pair \"minimum combined energy of particles (molecules) // for effective collisions\". It adds: [At least one mention of collisions or colliding is essential.]", openList: true },
-    { id: "r-2", kind: "point", verbatim: "for reaction to take place between them", marks: 3, openList: true },
+    { id: "r-1", kind: "point", verbatim: "minimum combined energy of colliding particles (molecules)", marks: 3, accepts: ["minimum combined energy of particles (molecules)"], contextNote: "The scheme prices this point and the next \"TWO PARTS : (2 × 3)\", one each, or instead the pair after \"or\". Claim both points from the same pair. It adds: [At least one mention of collisions or colliding is essential.]", openList: true },
+    { id: "r-2", kind: "point", verbatim: "for reaction to take place between them", marks: 3, accepts: ["for effective collisions"], openList: true },
     { id: "r-3", kind: "anyN", verbatim: "increase concentration (pressure) of reactants", marks: 8, contextNote: "Claim two ways here and, in the next row, the explanation of each of those same two ways. Any two ways (STATE), each (4); the scheme sets the third after \"or allow\". It adds: [Allow add heat.]", openList: true, group: {"claimMax":2,"perOption":4,"options":["increase concentration (pressure) of reactants","increase temperature","decrease particle size of reactants"]} },
     { id: "r-4", kind: "anyN", verbatim: "reactants (reactant molecules) closer together / more reactant particles (molecules) per unit volume / greater frequency of collisions between reactants", marks: 4, contextNote: "And the explanation of each way stated (EXPLAIN), each (2), in the same order. The scheme adds: [Allow ‘more collisions’ for ‘greater frequency of collisions’.] [STATE and EXPLAIN linked] [‘greater frequency of collisions between reactants’ need only be mentioned once]", openList: true, group: {"claimMax":2,"perOption":2,"options":["reactants (reactant molecules) closer together / more reactant particles (molecules) per unit volume / greater frequency of collisions between reactants","reactants (reactant molecules) move faster (have more energy) / greater frequency of collisions between reactants / more collisions reach (have) activation energy (EA)","surface area greater / more contact between reactant and catalyst"]} },
     ],
@@ -21539,8 +21553,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "heat change for a reaction", marks: 3, contextNote: "STATE. The scheme prices this point and the next (2 × 3), one each.", openList: true },
     { id: "r-2", kind: "point", verbatim: "depends only on initial and final states / is same whether reaction takes place in one or more stages / is independent of path taken / is sum of heat changes for all stages", marks: 3, openList: true },
-    { id: "r-3", kind: "point", verbatim: "[(–9.3) + (–178.4) + (20.0)] kJ", marks: 3, contextNote: "CALCULATE: ΔH cracking = ΣΔH formation products – ΣΔH formation reactants; the products' heats of formation first, or added up, \"–167.7 kJ\" (3).", openList: true },
-    { id: "r-4", kind: "point", verbatim: "– (– 350.9) kJ", marks: 3, contextNote: "Then the reactant's, subtracted, or written \"+ 350.9 kJ\" (3).", openList: true },
+    { id: "r-3", kind: "point", verbatim: "[(–9.3) + (–178.4) + (20.0)] kJ", marks: 3, accepts: ["–167.7 kJ"], contextNote: "CALCULATE: ΔH cracking = ΣΔH formation products – ΣΔH formation reactants; the products' heats of formation first, or added up (3).", openList: true },
+    { id: "r-4", kind: "point", verbatim: "– (– 350.9) kJ", marks: 3, accepts: ["+ 350.9 kJ"], contextNote: "Then the reactant's, subtracted, or written added (3).", openList: true },
     { id: "r-5", kind: "point", verbatim: "183.2 kJ", marks: 3, contextNote: "The scheme gives the answer, 183.2 kJ, priced (9) with its working, and accepts two other routes, adding equations; its own print of every route is shown with the answer. It adds: [Final Answer C₄H₈ + C₅H₁₂ + C₃H₆ → C₁₂H₂₆ ΔH = –183.2 kJ is worth (6) marks.] [Equations not essential, however final answer –183.2 kJ is worth only (3) marks if not accompanied by an equation or if accompanied by an equation other than that for cracking in reverse.]", openList: true },
     ],
     questionFigure: {

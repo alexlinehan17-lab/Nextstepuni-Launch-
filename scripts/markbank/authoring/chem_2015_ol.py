@@ -160,9 +160,12 @@ _r2b = '106 ÷ 2 = 53 g'
 assert _q2e[4].text == f'{_r1c} {_r2b}', _q2e[4]
 C.add([k('2', 'e')], 'chem-4-1', 'mass-of-sodium-carbonate-for-a-standard-solution', [
     C.lifted('r-1', _mr, 3, 'Both of the scheme\'s routes open with this step.'),
-    C.lifted('r-2', _q2e[3].text, 3, f'Or, by the scheme\'s second route, "{traced(_r2b)}" (3).'),
-    C.lifted('r-3', _r1c, 3, f'Or, by the second route, "{traced(_q2e[5].text)}" (3).')],
-    notes='The scheme gives the answer, ' + display(_q2e[0].text) + ', priced (9), then the working that '
+    routed(C.lifted('r-2', _q2e[3].text, 3, 'The scheme\'s first route, this step and the next; its second route '
+                    'is the last two rows. The examiner marks one route, not a mix.'), 'a'),
+    routed(C.lifted('r-3', _r1c, 3), 'a'),
+    routed(C.lifted('r-4', _r2b, 3, 'Or by the scheme\'s second route, this step and the next.'), 'b'),
+    routed(C.lifted('r-5', _q2e[5].text, 3), 'b')],
+    total=9, notes='The scheme gives the answer, ' + display(_q2e[0].text) + ', priced (9), then the working that '
           'earns it in two boxed routes, step by step; the steps here are its first route.', figure=Q2)
 # (f)-(h): the sentence printed after (e) -- the titration and its equation --
 # is their lead-in. (The question's opening sentence, which points at the

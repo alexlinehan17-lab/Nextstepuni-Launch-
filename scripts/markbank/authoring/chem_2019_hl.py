@@ -603,9 +603,12 @@ assert _w[0] == 'or allow', _w
 _two = raw(21, 648, 661)
 assert _two == 'TWO PARTS : (2 × 3)', _two
 C.add([k('9', 'd')], 'chem-3-2', 'activation-energy-and-raising-the-rate', [
-    lift('r-1', _p[0], 3, 'The scheme prices this point and the next "' + _two + '", one each, or instead the pair "' + _p[2] + ' // ' + _p[3][:-len(' (2 × 3)')] + '". It adds: '
-         + ' '.join(_q9d[1].asides)),
-    lift('r-2', _p[1], 3),
+    # The definition's second pair, after "or": routed it would make six rows (cap five), so
+    # each point accepts its counterpart and the row says to keep to one pair.
+    C.accepting(lift('r-1', _p[0], 3, 'The scheme prices this point and the next "' + _two + '", one each, or '
+                     'instead the pair after "or". Claim both points from the same pair. It adds: '
+                     + ' '.join(_q9d[1].asides)), _p[2]),
+    C.accepting(lift('r-2', _p[1], 3), _p[3][:-len(' (2 × 3)')]),
     menu_row('r-3', [_p[4], _q9d[3].text, _w[1]], 2,
              'Claim two ways here and, in the next row, the explanation of each of those same two ways. '
              'Any two ways (STATE), each (4); the scheme sets the third after "or allow". It adds: '

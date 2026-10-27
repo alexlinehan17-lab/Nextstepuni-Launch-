@@ -16,5 +16,6 @@
  {"id": "chem-2017-ol-q10-c-i", "ask": "State the law of conservation of mass.", "answer": "have constant mass", "figure": true},
  {"id": "chem-2017-ol-q11-a-ii", "ask": "", "answer": "numerator only correct", "figure": true, "solution": true},
  {"id": "chem-2017-ol-q11-b-ph-of-hcl", "ask": "Calculate the pH of 0.3 M hydrochloric acid", "answer": "pH = – log 0.3", "figure": true},
- {"id": "chem-2017-ol-q11-c-a-greenhouse-effect", "ask": "Give one way that human activities", "answer": "deforestation"}
+ {"id": "chem-2017-ol-q11-c-a-greenhouse-effect", "ask": "Give one way that human activities", "answer": "deforestation"},
+ {"id": "chem-2017-ol-q8-d", "ask": "Name or give the formula of a reagent", "answer": "sodium (potassium) dichromate", "figure": true}
 ]
