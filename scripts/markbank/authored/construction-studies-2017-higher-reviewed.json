@@ -1297,6 +1297,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note-annotation",
+                "verbatim": "Note/annotation",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           },
           {
@@ -1323,6 +1357,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note-annotation",
+                "verbatim": "Note/annotation",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           }
         ],
@@ -1711,6 +1779,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note-annotation",
+                "verbatim": "Note/annotation",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           },
           {
@@ -1737,6 +1839,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note-annotation",
+                "verbatim": "Note/annotation",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           },
           {
@@ -2241,6 +2377,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "environmental-consideration",
+                "verbatim": "environmental consideration",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "ease-of-construction",
+                "verbatim": "ease of construction",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -2257,6 +2417,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "environmental-consideration",
+                "verbatim": "environmental consideration",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "ease-of-construction",
+                "verbatim": "ease of construction",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -2456,6 +2640,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "environmental-consideration",
+                "verbatim": "environmental consideration",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "ease-of-construction",
+                "verbatim": "ease of construction",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -2472,6 +2680,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "environmental-consideration",
+                "verbatim": "environmental consideration",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "ease-of-construction",
+                "verbatim": "ease of construction",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -2739,6 +2971,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "formula-u-1-r",
+                "verbatim": "formula U = 1/R",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "required-resistance",
+                "verbatim": "required resistance",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3089,6 +3345,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "formula-u-1-r",
+                "verbatim": "formula U = 1/R",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "required-resistance",
+                "verbatim": "required resistance",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -9257,12 +9537,15 @@
     {
       "cardId": "cons-2017-hl-q3-a",
       "priorSha256": "420ca8fa831a7bb228b00fcde90e085cf188ee2e3b5daa364c0c7b2871ee45c7",
-      "correctedSha256": "f67b2d22a1522a34c7334df5176cdaedfc21814a17276ef598481d17823a80de",
+      "correctedSha256": "86c937bdb3cd968f013bb16bca035c1d42f2301e8521c756ff1a936b5017155c",
       "priorTotalMarks": 32,
       "correctedTotalMarks": 32,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Split into the two printed requirements, optimising daylight and open plan (note 8 + sketches 8 each); tariff unchanged (32)."
+      "reason": "Question wording lifted from the paper. Split into the two printed requirements, optimising daylight and open plan (note 8 + sketches 8 each); tariff unchanged (32).",
+      "supersededSha256": [
+        "f67b2d22a1522a34c7334df5176cdaedfc21814a17276ef598481d17823a80de"
+      ]
     },
     {
       "cardId": "cons-2017-hl-q3-b",
@@ -9313,22 +9596,28 @@
     {
       "cardId": "cons-2017-hl-q4-c",
       "priorSha256": "05a07cb3cc38dce85ec4dfe7b0028d12e114443e3d36a5743a0a3fefbbec4dc8",
-      "correctedSha256": "1ae4077fe99d78f6f6ac6cd539f5c0c743968a757a34e29876192049c48a5d81",
+      "correctedSha256": "1ef9846296039324e4ae0e8796548df59a4bf378a2e1e5bc5fc9129e5cf4dc68",
       "priorTotalMarks": 12,
       "correctedTotalMarks": 12,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-3-3",
-      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — each selected wall type, environmental consideration 3 and ease of construction 3; tariff unchanged (12)."
+      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — each selected wall type, environmental consideration 3 and ease of construction 3; tariff unchanged (12).",
+      "supersededSha256": [
+        "1ae4077fe99d78f6f6ac6cd539f5c0c743968a757a34e29876192049c48a5d81"
+      ]
     },
     {
       "cardId": "cons-2017-hl-q5-b",
       "priorSha256": "3c7b17c67182afefcc1a2cf37f7dbe395257bf2e011bb9eb58c3149f31fdc7d1",
-      "correctedSha256": "a6ab795ecbbf3368b3895ed74da73991951b24d1edefaa4672a22ed3870783b3",
+      "correctedSha256": "87ddb82f70476fa5f096b3e3227773ace107df93c6441642075a1d86246bfd81",
       "priorTotalMarks": 18,
       "correctedTotalMarks": 18,
       "priorTopicId": "cons-6-1",
       "correctedTopicId": "cons-6-1",
-      "reason": "Question wording lifted from the paper. Reshaped to the six printed calculation steps (3 each) with the scheme’s worked answer (204.08 mm); tariff unchanged (18)."
+      "reason": "Question wording lifted from the paper. Reshaped to the six printed calculation steps (3 each) with the scheme’s worked answer (204.08 mm); tariff unchanged (18).",
+      "supersededSha256": [
+        "a6ab795ecbbf3368b3895ed74da73991951b24d1edefaa4672a22ed3870783b3"
+      ]
     },
     {
       "cardId": "cons-2017-hl-q5-c",
@@ -10503,14 +10792,20 @@
     {
       "cardId": "cons-2017-hl-q3-complete",
       "priorSha256": "e5ea13c78d573b84419aed8d7d94252f2d222a05999e5a24344989a37ba4c2bd",
-      "correctedSha256": "536334aef6fd2aa08db0a4c60940390d49b0c8a30cc39195ed618915cf26dfc7",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "ac322bd074c1ca27fe82e9272d0528eb17dcb551e0d23d37b50f236837038e2a",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "536334aef6fd2aa08db0a4c60940390d49b0c8a30cc39195ed618915cf26dfc7"
+      ]
     },
     {
       "cardId": "cons-2017-hl-q4-complete",
       "priorSha256": "1883f95093d0660410967edd8369cbcc649ef1ee4cbdce0e5ff34f9d6e1e01c7",
-      "correctedSha256": "36beeb8f9d958e7493270ff77befbd2c24cd15cf0cfefecffc15ac30ba45df51",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "3ab3c067dce5b34460460402ed66007cd8cd2b27370c2fc75aad1ac5fcfffa8a",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "36beeb8f9d958e7493270ff77befbd2c24cd15cf0cfefecffc15ac30ba45df51"
+      ]
     },
     {
       "cardId": "cons-2017-hl-q6-complete",
@@ -10528,6 +10823,12 @@
       "cardId": "cons-2017-hl-q9-complete",
       "priorSha256": "74d525996056e1cb8811a07767d350676ed7dac48fe194c94875232c348be8fc",
       "correctedSha256": "1affca341234d273c4fdcba6a989070b15ed181f8317ab398c9160c87bb2230a",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2017-hl-q5-complete",
+      "priorSha256": "89b84a2f6d313bbcda29de40d633d1865882a4702a69792183e8cc8752a48432",
+      "correctedSha256": "d54e6b9ea9555e70abd8362229bfcc4c37d844050dfaf77633f5fa78afd7893c",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
     }
   ]

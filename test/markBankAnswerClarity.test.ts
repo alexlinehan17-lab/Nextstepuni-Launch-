@@ -485,8 +485,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       'cons-2010-hl-q3-complete/a-external: External Insulation System (note 4 marks, sketch 4 marks)',
     ]);
     const withParts = rows.filter(({ row }) => row.parts);
-    // 1,145 rows: 664 priced in the row's own text, 481 priced in its note ("Notes 6 and sketches 6. Such as: …").
-    expect(withParts).toHaveLength(1145);
+    // 1,284 rows: 664 priced in the row's own text, 620 priced in its note ("Notes 6 and sketches 6. Such as: …",
+    // "Location 3 and reason 2", "The distribution board drawn (4) and annotated (1)", "Correct tabulation 2, wood 3, …").
+    // Every part is the scheme's own words (construction_paper.validate); a note that paraphrases the scheme's table
+    // keeps only the words it prints, and a row whose head word the scheme does not print stays unsplit.
+    expect(withParts).toHaveLength(1284);
     for (const { card, row } of withParts) {
       expect(rowPartsReconcile(row), `${card.id}/${row.id}`).toBe(true);
       // Every part is a word the row or its note prints, and the row's own text, marks and steps are untouched.
