@@ -499,13 +499,13 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       // The rows are the task: they add up to its total exactly.
       expect(rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows add up`).toBe(card.totalMarks);
     }
-    // 1,080 of 1,365 tasks (2026-10-27): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
-    expect(structured).toHaveLength(1080);
+    // 1,212 of 1,365 tasks (2026-10-27, residue wave): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
+    expect(structured).toHaveLength(1212);
     const residue = cards.filter(card => !card.rubric.rows?.length).map(card => card.id).sort();
     expect(residue).toEqual(accountingResidue.tasks.map(task => task.id).sort());
     for (const task of accountingResidue.tasks) expect(task.reason.length, task.id).toBeGreaterThan(0);
     // A part the scheme prices only through its section total is one flagged block row; pinned so it cannot grow unnoticed.
-    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2022-ol-q6(a)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-ol-q6(a)", "acc-2024-ol-q6(b)", "acc-2024-ol-q6(c)", "acc-2024-ol-q8(g)", "acc-2024-ol-q9(b)"]);
+    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2010-ol-q5(a)(iv)", "acc-2010-ol-q5(b)(iv)", "acc-2011-ol-q5(d)", "acc-2012-ol-q8(f)", "acc-2016-ol-q5(d)", "acc-2017-ol-q5(d)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-ol-q8(g)", "acc-2025-hl-q9(a)", "acc-2025-hl-q9(b)", "acc-2025-hl-q9(c)"]);
   });
 
   it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
