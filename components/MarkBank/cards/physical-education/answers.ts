@@ -55,7 +55,8 @@ const COUNTED = /\(?((?:\d+\s*(?:marks?)?\s*\+\s*)+\d+(?:\s*marks?)?)\)?/i;
 const GENERIC_HEAD = /^(?:published\s+descending\s+allocation|\d+\s*marks?|allocation)$/i;
 const RANGES_FOR = /(\d+)\s*[–-]\s*(\d+)\s+for\s+([^;.]+)/g;
 const TIMES = /(\d+)\s*[×x]\s*(\d+)\s*marks?\.?/i;
-const RANGES_ONLY = /descriptors?:\s*((?:\d+\s*[–-]\s*\d+\s*,?\s*)+)(?!\s*for\b)(?:;\s*([^.]*?):\s*0)?\.?/i;
+// The ranges are comma-separated, so each is read once (no exponential backtracking over "0-0 0-0 …").
+const RANGES_ONLY = /descriptors?:\s*(\d+\s*[–-]\s*\d+(?:\s*,\s*\d+\s*[–-]\s*\d+)*)(?!\s*for\b)(?:;\s*([^.]*?):\s*0)?\.?/i;
 const KEYED = /([A-Za-z][^:;.]{0,40}):\s*([^;.]+)/g;
 /** "One mark per correctly named plane", "Four tests …: one mark each", "One mark each: power, speed, …". */
 const PER_ITEM = /\b(?:one|1)\s+mark\s+(?:per|for\s+each|each)\b/i;
