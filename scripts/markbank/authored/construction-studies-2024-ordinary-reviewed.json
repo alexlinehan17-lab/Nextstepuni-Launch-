@@ -35,20 +35,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Wallplate 100 mm x 75 mm",
+                "Prefabricated roof truss",
+                "Insulation and airtight membrane",
+                "Plasterboard with skim coat",
+                "Fascia, soffit & gutter",
+                "Ventilation",
+                "Breather membrane",
+                "Slates and battens"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -241,20 +249,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with external render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; wallplate 100 mm × 75 mm; prefabricated roof truss; insulation and airtight membrane; plasterboard with skim coat; fascia, soffit and gutter; ventilation; breather membrane; slates and battens. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, a tilting fillet and 50 × 30 mm battens.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Wallplate 100 mm x 75 mm",
+                "Prefabricated roof truss",
+                "Insulation and airtight membrane",
+                "Plasterboard with skim coat",
+                "Fascia, soffit & gutter",
+                "Ventilation",
+                "Breather membrane",
+                "Slates and battens"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -521,6 +537,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           },
           {
@@ -793,6 +843,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           },
           {
@@ -965,21 +1049,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Insulated storage tank",
+                "Overflow",
+                "Cylinder",
+                "Cold feed to cylinder",
+                "Expansion pipe",
+                "Bathroom fixtures",
+                "Cold feed to toilet cistern",
+                "Hot and cold feed to wash basin",
+                "Hot and cold feed to mixer shower",
+                "Valves",
+                "Labels"
+              ]
+            }
           }
         ],
         "questionFigureKey": "construction-studies-2024-OL-q3-original",
@@ -1165,21 +1256,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: rising main; insulated storage tank; overflow; cylinder; cold feed to cylinder; expansion pipe; bathroom fixtures; cold feed to toilet cistern; hot and cold feed to wash basin; hot and cold feed to mixer shower; valves; labels. Typical sizes: 15 mm rising main, 250 l cylinder, Ø22 mm cold feed to the cylinder, Ø28 mm expansion pipe, Ø15 mm feeds to the cistern, basin and shower.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Insulated storage tank",
+                "Overflow",
+                "Cylinder",
+                "Cold feed to cylinder",
+                "Expansion pipe",
+                "Bathroom fixtures",
+                "Cold feed to toilet cistern",
+                "Hot and cold feed to wash basin",
+                "Hot and cold feed to mixer shower",
+                "Valves",
+                "Labels"
+              ]
+            }
           },
           {
             "id": "b-feature-1",
@@ -1428,6 +1526,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "note",
+                "verbatim": "note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1444,6 +1566,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "note",
+                "verbatim": "note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1460,6 +1606,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "note",
+                "verbatim": "note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1717,6 +1887,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "note",
+                "verbatim": "note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1733,6 +1927,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "note",
+                "verbatim": "note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1749,6 +1967,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "note",
+                "verbatim": "note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -1921,21 +2163,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Concrete cill",
+                "Drip/throating",
+                "DPC",
+                "Thermal broken window frame",
+                "Triple glazing",
+                "Airtightness",
+                "Window board"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -2115,21 +2363,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; cavity closer; concrete cill; drip/throating; DPC; thermally broken window frame; triple glazing; airtightness; window board. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster and a 120 × 80 mm frame.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Cavity closer",
+                "Concrete cill",
+                "Drip/throating",
+                "DPC",
+                "Thermal broken window frame",
+                "Triple glazing",
+                "Airtightness",
+                "Window board"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -2374,6 +2628,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "item",
+                "verbatim": "Item",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "specific-reason",
+                "verbatim": "specific reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -2646,6 +2926,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "item",
+                "verbatim": "Item",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "specific-reason",
+                "verbatim": "specific reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -2963,6 +3269,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -2978,6 +3307,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -2993,6 +3345,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3008,6 +3383,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -3272,6 +3670,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3287,6 +3708,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3302,6 +3746,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3317,6 +3784,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3712,6 +4202,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "notes",
+                "verbatim": "notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -3735,6 +4256,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "notes",
+                "verbatim": "notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           }
         ],
@@ -3971,6 +4523,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "notes",
+                "verbatim": "notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -3994,6 +4577,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "sketch",
+                "verbatim": "Sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "notes",
+                "verbatim": "notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              }
             ]
           },
           {
@@ -5003,12 +5617,15 @@
     {
       "cardId": "cons-2024-ol-q1-a",
       "priorSha256": "9337f17900a539d31dd80de9ff050ca542a329aceca23d7dfd0b974a01ac40e1",
-      "correctedSha256": "dc7ddfa8c0fd2ac680272cef204160a89d90f9e5566ba926cf103b71d1beca25",
+      "correctedSha256": "f55c180f6e70a861716c337d74dc578e32ffed6e744736736f72e209a535351d",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-3-2",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46."
+      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46.",
+      "supersededSha256": [
+        "dc7ddfa8c0fd2ac680272cef204160a89d90f9e5566ba926cf103b71d1beca25"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q1-b",
@@ -5043,12 +5660,15 @@
     {
       "cardId": "cons-2024-ol-q3-a",
       "priorSha256": "9ffce8cee04858a9be3cb3d7bf9738e299550793bbb0ae627fc3932fe4e43055",
-      "correctedSha256": "35417fbd47b9772117bb9350e9a96ced118c6e8f0be94f0bc6d7be1bf409f6da",
+      "correctedSha256": "75d24a4cccc68d1a43a88e49325d6ce21fc4d54d53dedd35b2b8f3f40aff6ba8",
       "priorTotalMarks": 40,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed best-eight row (8 × 5); total unchanged (40)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed best-eight row (8 × 5); total unchanged (40).",
+      "supersededSha256": [
+        "35417fbd47b9772117bb9350e9a96ced118c6e8f0be94f0bc6d7be1bf409f6da"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q3-b",
@@ -5073,12 +5693,15 @@
     {
       "cardId": "cons-2024-ol-q4-b",
       "priorSha256": "0bbf6c6e768d8e32f9fb461c2bd371e72ebc2e71dfd822d34b0f9dd16a8b9d06",
-      "correctedSha256": "f0a1bb7056573cb05058d11f43f79930835b1edb430e318d06c7cbb889026e69",
+      "correctedSha256": "39a160169e4f29123787395b7aa0a5a0ce12a41f73f6aab99900a0ec5831ad9a",
       "priorTotalMarks": 24,
       "correctedTotalMarks": 24,
       "priorTopicId": "cons-2-4",
       "correctedTopicId": "cons-2-4",
-      "reason": "Question wording lifted from the paper. Split into the four printed sketch-and-note rows (strip foundation, reinforcement, wall position, dimensions); total unchanged (24)."
+      "reason": "Question wording lifted from the paper. Split into the four printed sketch-and-note rows (strip foundation, reinforcement, wall position, dimensions); total unchanged (24).",
+      "supersededSha256": [
+        "f0a1bb7056573cb05058d11f43f79930835b1edb430e318d06c7cbb889026e69"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q5-b",
@@ -5103,12 +5726,15 @@
     {
       "cardId": "cons-2024-ol-q6-b",
       "priorSha256": "4dc7c9ac4e54231b5476f75ba764f13693430ff592603288dfbb8bc68b62515b",
-      "correctedSha256": "38339e0219d0fe3c93b16a368c8172ea798c77dea0268e799acb33917d0a9383",
+      "correctedSha256": "f87f927321fa56f3155a6b178bcdc5d47c2574bd3b5861a0f132ccd105b6a403",
       "priorTotalMarks": 24,
       "correctedTotalMarks": 24,
       "priorTopicId": "cons-1-8",
       "correctedTopicId": "cons-1-8",
-      "reason": "Question wording lifted from the paper. Split into three PPE items, each item 5 + specific reason 3; total unchanged (24)."
+      "reason": "Question wording lifted from the paper. Split into three PPE items, each item 5 + specific reason 3; total unchanged (24).",
+      "supersededSha256": [
+        "38339e0219d0fe3c93b16a368c8172ea798c77dea0268e799acb33917d0a9383"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q6-c",
@@ -5133,12 +5759,15 @@
     {
       "cardId": "cons-2024-ol-q7-b",
       "priorSha256": "052f8361442f8e5da3dc536c2d5a8bfd9d3d0d7f4b88f382ebd4aba22f83c5d5",
-      "correctedSha256": "911f2795db75c59f68db9b35d38e8532237b8daff82af8ab89b0aea08ec115b8",
+      "correctedSha256": "26c8824d84b58a898ab9d098fa7f17bd2ff6af9ce2af6b7b8153c8d03e3408df",
       "priorTotalMarks": 20,
       "correctedTotalMarks": 28,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Adds the printed sketch (8) to the four location-and-reason rows (3 + 2 each): 20 → 28."
+      "reason": "Question wording lifted from the paper. Adds the printed sketch (8) to the four location-and-reason rows (3 + 2 each): 20 → 28.",
+      "supersededSha256": [
+        "911f2795db75c59f68db9b35d38e8532237b8daff82af8ab89b0aea08ec115b8"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q8-None-site-planning-notice",
@@ -5153,12 +5782,15 @@
     {
       "cardId": "cons-2024-ol-q9-b",
       "priorSha256": "030aa7558d48cba05944a2baa1de6d0eb79df2cd4ec983e77f8d27f4f785aedb",
-      "correctedSha256": "83a458482c9460d707e665b4e0631305ca9f99b3c1c8ec1164329d139cfcf993",
+      "correctedSha256": "f8465dd2fb203cb824392cbd81b6262fde20fe1f337807faa54032799f905642",
       "priorTotalMarks": 26,
       "correctedTotalMarks": 26,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-3-5",
-      "reason": "Question wording lifted from the paper. Split into the two printed modifications (sketch 8 + notes 5 each); total unchanged (26)."
+      "reason": "Question wording lifted from the paper. Split into the two printed modifications (sketch 8 + notes 5 each); total unchanged (26).",
+      "supersededSha256": [
+        "83a458482c9460d707e665b4e0631305ca9f99b3c1c8ec1164329d139cfcf993"
+      ]
     },
     {
       "cardId": "cons-2024-ol-q9-c",
@@ -5465,5 +6097,67 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2024-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2024-ordinary/prior-2024-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2024-ordinary/prior-2024-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2024-ol-q2-b",
+      "priorSha256": "5ab1982a68315b0806117d732e85aaca99ff48a595151f39b6de2bbea3ebe809",
+      "correctedSha256": "6c1443c0412ab838f1a7dd5764edfb21b2e9ccf8cbc910e66c2051046eb37562",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q2-complete",
+      "priorSha256": "9039065aef2d11cb6b57e7a4609477ee781c1cbbe7b44663d6925583406b7ae1",
+      "correctedSha256": "c2b7f218e50b1918bb93c5f41e62f312cc4c647e49aa0e47fa7000e3cb23120f",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q4-complete",
+      "priorSha256": "7afdcd524050fc1203dcbd8783025d3b9f9cd2fd176f9622c665387d8fe56e64",
+      "correctedSha256": "4115a2b926b8e8ec8c0494b50f1eb0ad5b98f6a672167d7576215b28892ba8cd",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q9-complete",
+      "priorSha256": "e935b8a6ee3d974e248e2b00679e0c2312ef275c0f00f2fc2b71b4a197b8e518",
+      "correctedSha256": "d11a6f01f91b48df273d49a0b1e0168f8ce2521584ece999e72403527311d3fd",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q6-complete",
+      "priorSha256": "2a440ae86b2b8b950261dca819740e52886a515ef42f8d83e1f44dabbcc1b02d",
+      "correctedSha256": "b6c94b05ba39f56d754d0700617514e6bd882feaea94bd0d227a89831bf93666",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q7-complete",
+      "priorSha256": "d4f8a007d20da821522d0bbce1788f084c22ec4d8cd20bbc327dd78afb20069a",
+      "correctedSha256": "0184cf4386a2d3c4caf5732af2dbdacb37c36fc9deb3149b4bcfe6cab07fad31",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q1-complete",
+      "priorSha256": "df55ee9abd9f200121714015ecd97455331f6b30ea5e1bd798bba1893a784663",
+      "correctedSha256": "a76c1109440780bda83564be1075293ccac4467cb5e950802d664dfd70912cdc",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q3-complete",
+      "priorSha256": "4a95c5bf027c4db3882763f54d396172ec44d9b55393824711a6208e71e78aea",
+      "correctedSha256": "c5e08d9b53437dc9917bbae3d3b43824f8f430ee23aeac7f0f56cc0a9c2870d8",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q5-a",
+      "priorSha256": "0b8b272e7519b890a129908c55920d750064f603bd4d171532fd1218bf0aecb9",
+      "correctedSha256": "078bc1a3895623d3f9e039662d30fed87cbd66eab256c226bff1ef284e036b41",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2024-ol-q5-complete",
+      "priorSha256": "a46d517d8231de15cf166ae2663be2017e6412caf22f0112367df25db0116c48",
+      "correctedSha256": "667cc9f37f02d60c29e92e0c4c58fc457d2f5ba138a70a35074575b66e6db42c",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    }
+  ]
 }

@@ -1424,8 +1424,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Quaker relief agencies (3M) and Presentation nuns (3M)",
-    "marks": 6
+    "verbatim": "Quaker relief agencies",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Presentation nuns",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -1564,8 +1570,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "In the South (3M) and in the West (3M)",
-    "marks": 6
+    "verbatim": "In the South",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in the West",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -1634,8 +1646,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Yes (3M), he will go with them “to the end” (3M)",
-    "marks": 6
+    "verbatim": "Yes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "he will go with them “to the end”",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -1774,8 +1792,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "No (3M), they shall die “cheerfully/proudly” (3M)",
-    "marks": 6
+    "verbatim": "No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "they shall die “cheerfully/proudly”",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -1879,8 +1903,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Small (3M) and not very nice (3M)",
-    "marks": 6
+    "verbatim": "Small",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "not very nice",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -2159,8 +2189,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "They ran (3M) with their guns ready to fire (3M)",
-    "marks": 6
+    "verbatim": "They ran",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "their guns ready to fire",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -2509,8 +2545,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A new constitution (3M) and a parliament (3M)",
-    "marks": 6
+    "verbatim": "A new constitution",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a parliament",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -2544,8 +2586,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Generally, NO (3M). ONE valid explanation (3M)",
-    "marks": 6
+    "verbatim": "Generally, NO",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ONE valid explanation",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -2789,8 +2837,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "In factories (3M) and schools (3M)",
-    "marks": 6
+    "verbatim": "In factories",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "schools",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -3173,9 +3227,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any TWO: Liverpool, Manchester, Birmingham, and/or Leeds (3M + 3M)",
-    "marks": 6
+    "kind": "anyN",
+    "verbatim": "Any TWO",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Liverpool",
+      "Manchester",
+      "Birmingham",
+      "Leeds"
+     ]
+    }
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -3209,8 +3273,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "No (3M), there was another “outburst” in Brixton (3M)",
-    "marks": 6
+    "verbatim": "No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "there was another “outburst” in Brixton",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -4052,8 +4122,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Sods (3M) and saplings (3M)",
-    "marks": 6
+    "verbatim": "Sods",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "saplings",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -4367,8 +4443,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The Huguenots (3M), from France (3M)",
-    "marks": 6
+    "verbatim": "The Huguenots",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "from France",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -4402,8 +4484,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Tipperary (3M), 1761 (3M)",
-    "marks": 6
+    "verbatim": "Tipperary",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1761",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -4437,8 +4525,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Landlords (3M) and graziers (3M)",
-    "marks": 6
+    "verbatim": "Landlords",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "graziers",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -4577,8 +4671,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "They were well built (3M) and slated (3M)",
-    "marks": 6
+    "verbatim": "They were well built",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "slated",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -4929,8 +5029,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Nobles (3M) and governors of the provinces (3M)",
-    "marks": 6
+    "verbatim": "Nobles",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "governors of the provinces",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -5104,8 +5210,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Gentlemen (3M) and merchants (3M)",
-    "marks": 6
+    "verbatim": "Gentlemen",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "merchants",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -5139,8 +5251,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Priests (3M) and peasants (3M)",
-    "marks": 6
+    "verbatim": "Priests",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "peasants",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -5349,8 +5467,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Cocoa (3M) and sugar (3M)",
-    "marks": 6
+    "verbatim": "Cocoa",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "sugar",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -6705,8 +6829,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Documents (4m) and maps (4m)",
-    "marks": 8
+    "verbatim": "Documents",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "maps",
+    "marks": 4
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
@@ -7236,8 +7366,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "James (3m) and Percy (3m)",
-    "marks": 6
+    "verbatim": "James",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Percy",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -7341,8 +7477,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Downing Street/London (3m), 11 October 1921 (3m)",
-    "marks": 6
+    "verbatim": "Downing Street/London",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "11 October 1921",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -7551,8 +7693,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Native games (3m) and dances (3m)",
-    "marks": 6
+    "verbatim": "Native games",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "dances",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -7586,8 +7734,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Venison (3m) and wild rice (3m)",
-    "marks": 6
+    "verbatim": "Venison",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "wild rice",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -7866,8 +8020,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Total workforce was 1,800 (3m) including 500 children (3m)",
-    "marks": 6
+    "verbatim": "Total workforce was 1,800",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "including 500 children",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -7936,8 +8096,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Singing (3m) and dancing (3m)",
-    "marks": 6
+    "verbatim": "Singing",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "dancing",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -8566,8 +8732,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Young people (3m) and police (3m)",
-    "marks": 6
+    "verbatim": "Young people",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "police",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -9021,8 +9193,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Cards (4M) and dice (4M)",
-    "marks": 8
+    "verbatim": "Cards",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "dice",
+    "marks": 4
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '8M' for this ask.",
@@ -9723,8 +9901,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "MacCarthys (3m) and Barrys (3m)",
-    "marks": 6
+    "verbatim": "MacCarthys",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Barrys",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -9828,8 +10012,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The family were farmers (3m) and blacksmiths (3m)",
-    "marks": 6
+    "verbatim": "The family were farmers",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "blacksmiths",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -10037,9 +10227,15 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Green ribbons (ribbons = 3m)",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Green ribbons",
+    "marks": 6,
+    "contextNote": "ribbons = 3m",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -10248,8 +10444,15 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "French (3m) and Latin (3m) [a little Italian (3m)]",
-    "marks": 6
+    "verbatim": "French",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Latin",
+    "marks": 3,
+    "contextNote": "[a little Italian (3m)]"
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -10283,8 +10486,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Lute (3m) and harpsichord (3m)",
-    "marks": 6
+    "verbatim": "Lute",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "harpsichord",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -10598,8 +10807,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Seized the English trading post at Amboina (3m) and killed most of the Englishmen there (3m)",
-    "marks": 6
+    "verbatim": "Seized the English trading post at Amboina",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "killed most of the Englishmen there",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -12359,8 +12574,9 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Identification of doc B and quote from doc B required. 5M + 5M Max =",
-    "marks": null
+    "verbatim": "Identification of doc B and quote from doc B required.",
+    "marks": null,
+    "contextNote": "5M + 5M Max = 10M"
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
@@ -12487,8 +12703,9 @@
    {
     "id": "r-7",
     "kind": "point",
-    "verbatim": "Primary/secondary and a valid reason 5M + 5M Max =",
-    "marks": null
+    "verbatim": "Primary/secondary and a valid reason",
+    "marks": null,
+    "contextNote": "5M + 5M Max = 10M"
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
@@ -12697,8 +12914,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Flags (3m) and triumphal arches (3m)",
-    "marks": 6
+    "verbatim": "Flags",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "triumphal arches",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -13047,8 +13270,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Shops (3m) and tenements (3m)",
-    "marks": 6
+    "verbatim": "Shops",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "tenements",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -13468,8 +13697,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "He built an aqueduct (3m) and a huge reservoir (3m)",
-    "marks": 6
+    "verbatim": "He built an aqueduct",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a huge reservoir",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -13749,8 +13984,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "In Munich (3m) in November 1921 (3m)",
-    "marks": 6
+    "verbatim": "In Munich",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in November 1921",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -14134,8 +14375,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Patrice Lumumba/the Prime Minister (3m) by rivals (3m)",
-    "marks": 6
+    "verbatim": "Patrice Lumumba/the Prime Minister",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "by rivals",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -14659,8 +14906,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Food (4m) and accommodation (4m) for the soldiers",
-    "marks": 8
+    "verbatim": "Food",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "accommodation for the soldiers",
+    "marks": 4
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '8M' for this ask.",
@@ -15011,8 +15264,9 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Secondary source and a valid explanation 5M + 5M Max =",
-    "marks": null
+    "verbatim": "Secondary source and a valid explanation",
+    "marks": null,
+    "contextNote": "5M + 5M Max = 10M"
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
@@ -15151,8 +15405,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The loss of his goods (3m) and imprisonment (3m)",
-    "marks": 6
+    "verbatim": "The loss of his goods",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "imprisonment",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -15221,8 +15481,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "In Waterford (3m), in 1588 (3m)",
-    "marks": 6
+    "verbatim": "In Waterford",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in 1588",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -15921,8 +16187,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "King Ferdinand (3m) and Queen Isabella (3m)",
-    "marks": 6
+    "verbatim": "King Ferdinand",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Queen Isabella",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -16061,8 +16333,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Success/failure (3m) and ONE valid reason (3m)",
-    "marks": 6
+    "verbatim": "Success/failure",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ONE valid reason",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -16201,8 +16479,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "They lost 16 ships (3m) and 5,000 men (3m)",
-    "marks": 6
+    "verbatim": "They lost 16 ships",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "5,000 men",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -16551,8 +16835,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "No (3m), it was a drink reserved for the well-off (3m)",
-    "marks": 6
+    "verbatim": "No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "it was a drink reserved for the well-off",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -16971,8 +17261,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "English point-of-view (3m) and one reason (3m)",
-    "marks": 6
+    "verbatim": "English point-of-view",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "one reason",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -18414,8 +18710,9 @@
    {
     "id": "r-10",
     "kind": "point",
-    "verbatim": "Primary/secondary and a valid reason 5M + 5M Max =",
-    "marks": null
+    "verbatim": "Primary/secondary and a valid reason",
+    "marks": null,
+    "contextNote": "5M + 5M Max = 10M"
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
@@ -19127,8 +19424,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "No (3M), there were barriers raised against them (3M)",
-    "marks": 6
+    "verbatim": "No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "there were barriers raised against them",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -19407,8 +19710,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The Taoiseach (3M), Jack Lynch (3M)",
-    "marks": 6
+    "verbatim": "The Taoiseach",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Jack Lynch",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -19792,8 +20101,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Armour (3M) and armaments (3M) industries",
-    "marks": 6
+    "verbatim": "Armour",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "armaments industries",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -20177,8 +20492,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Muslims and Hindus (3M), in the streets/in Calcutta (3M)",
-    "marks": 6
+    "verbatim": "Muslims and Hindus",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in the streets/in Calcutta",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -20909,8 +21230,9 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Secondary source and a valid explanation 5M + 5M Max =",
-    "marks": null
+    "verbatim": "Secondary source and a valid explanation",
+    "marks": null,
+    "contextNote": "5M + 5M Max = 10M"
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
@@ -21067,8 +21389,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Yes or no (3m) with a valid reason (3m)",
-    "marks": 6
+    "verbatim": "Yes or no",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a valid reason",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -22117,8 +22445,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Spices (3m) and sugar (3m)",
-    "marks": 6
+    "verbatim": "Spices",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "sugar",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -22467,8 +22801,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Naples (3m) and Rome (3m)",
-    "marks": 6
+    "verbatim": "Naples",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Rome",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -22572,8 +22912,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The welfare of her subjects (3m) and the glory of her empire (3m)",
-    "marks": 6
+    "verbatim": "The welfare of her subjects",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "the glory of her empire",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -22607,8 +22953,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "No (3m), she took on too many projects at once (3m)",
-    "marks": 6
+    "verbatim": "No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "she took on too many projects at once",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -24252,8 +24604,9 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Doc A and a valid reason 5M + 5M Max =",
-    "marks": null
+    "verbatim": "Doc A and a valid reason",
+    "marks": null,
+    "contextNote": "5M + 5M Max = 10M"
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
@@ -24827,9 +25180,15 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Massive German air raids (air raids alone = 3m)",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Massive German air raids",
+    "marks": 6,
+    "contextNote": "air raids alone = 3m",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -25319,9 +25678,15 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "The original six members had access to Irish, British and Danish fisheries (access to Irish fisheries alone = 3m)",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "The original six members had access to Irish, British and Danish fisheries",
+    "marks": 6,
+    "contextNote": "access to Irish fisheries alone = 3m",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -25741,8 +26106,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "No (3m), and explanation (3m)",
-    "marks": 6
+    "verbatim": "No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "explanation",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -26406,8 +26777,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Yes or No (3m), plus reason (3m)",
-    "marks": 6
+    "verbatim": "Yes or No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "reason",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -26781,8 +27158,9 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Secondary source and a valid explanation 5M + 5M Max =",
-    "marks": null
+    "verbatim": "Secondary source and a valid explanation",
+    "marks": null,
+    "contextNote": "5M + 5M Max = 10M"
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
@@ -27581,9 +27959,15 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Clonmel prison (6m), Clonmel only (3m), prison only (3m)",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Clonmel prison",
+    "marks": 6,
+    "contextNote": "Clonmel only (3m), prison only (3m)",
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ]
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -28562,8 +28946,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Boarded the tea ships (3m) and threw the cargoes into the harbour (3m)",
-    "marks": 6
+    "verbatim": "Boarded the tea ships",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "threw the cargoes into the harbour",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -28632,8 +29022,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A prison (3m) in Paris (3m)",
-    "marks": 6
+    "verbatim": "A prison",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in Paris",
+    "marks": 3
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",

@@ -1,0 +1,16 @@
+{
+ "Wingdings": {
+  "190": {
+   "char": "➢",
+   "sightings": {
+    "U+27A2": 251,
+    "U+F0D8": 3605
+   },
+   "repairs": [
+    "paper-trail-corpus/markingschemes/2014/LC005ALP000EV.pdf",
+    "paper-trail-corpus/markingschemes/2014/LC005GLP000EV.pdf",
+    "paper-trail-corpus/markingschemes/2016/LC005GLP000EV.pdf"
+   ]
+  }
+ }
+}

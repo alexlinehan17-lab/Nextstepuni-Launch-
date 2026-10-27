@@ -5,8 +5,10 @@
  * Geography scoring. A criterion is placed either as one number (the prose
  * fallback's mark control) or, when the scheme has been cut into rows
  * (cards/geography/allocation.ts), row by row: each claimed answer carries its
- * own marks, each SRP part its count. The criterion's total is the sum, capped
- * at the printed maximum, so a student can never place above the paper.
+ * own marks, each SRP part its count. Where the scheme prices a criterion one
+ * of several ways (two routes, a band table, one printed answer or another) the
+ * student picks one option and only that option scores. The criterion's total
+ * is capped at the printed maximum, so a student can never place above the paper.
  */
 
 import type { GeographyAllocation, GeographyCriterion, SecRubricCard } from '../../types/markBank';
@@ -25,6 +27,16 @@ export const geographyRowScoreId = (criterionId: string, rowId: string, unit?: n
 /** An SRP part's claim: how many SRPs the student counted. */
 export const geographySrpScoreId = (criterionId: string, srpId: string, unit?: number): GeographyScoreId =>
   `geography:${criterionId}:srp:${srpId}${unit ? `:u${unit}` : ''}`;
+
+/** A choice's claim: the 1-based option the student picked (a route, a band
+ *  or one of two printed answers); 0 or absent is none. */
+export const geographyChoiceScoreId = (criterionId: string): GeographyScoreId =>
+  `geography:${criterionId}:choice`;
+
+/** The criterion id an option's own rows are scored under, so a route's rows
+ *  never share a score with the other route's. */
+export const geographyOptionCriterionId = (criterionId: string, optionId: string) =>
+  `${criterionId}:${optionId}`;
 
 const units = (count: number | undefined) =>
   count ? Array.from({ length: count }, (_, index) => index + 1) : [undefined];
@@ -46,6 +58,18 @@ export function geographyPooledSrps(criterion: GeographyCriterion, allocation: G
 export function geographyAllocationMarks(criterion: GeographyCriterion, scores: GeographyScores): number {
   const allocation = criterion.allocation;
   if (!allocation) return Math.max(0, Math.min(criterion.maxMarks, scores[geographyScoreId(criterion.id)] ?? 0));
+  if (allocation.choice) {
+    const picked = allocation.choice.options[(scores[geographyChoiceScoreId(criterion.id)] ?? 0) - 1];
+    if (!picked) return 0;
+    const value = picked.allocation
+      ? geographyAllocationMarks({
+        ...criterion,
+        id: geographyOptionCriterionId(criterion.id, picked.id),
+        allocation: picked.allocation,
+      }, scores)
+      : picked.marks ?? 0;
+    return Math.max(0, Math.min(criterion.maxMarks, value));
+  }
   let total = 0;
   for (const group of allocation.groups) {
     for (const unit of units(group.repeat?.count)) {

@@ -2012,9 +2012,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q2(d)",
     stem: "Zadanie 2: Tekst 2",
     questionText: "Połącz nazwiska 2 – 4 z dziedzinami oznaczonymi A – D. Odpowiedzi wpisz do tabeli poniżej, zgodnie z przykładem. (części: 2, 3, 4)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2 marks 2 marks", marks: 2, contextNote: "The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "1. 2. 3. 4. C D A B - 2 marks 2 marks 2 marks. The examination prints this question in Polish and it is answered in POLISH. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["D","A","B"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2237,9 +2237,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q3(f)",
     stem: "Zadanie 3: Tekst 3",
     questionText: "According to the example below, match names 2 – 4 with the statements A – D. (sections: 4, 5, 6)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "3 marks 3 marks", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "1. 2. 3. 4. C A D B - 3 marks 3 marks 3 marks. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":3,"options":["A","D","B"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2987,9 +2987,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Section A Q3(f)",
     stem: "Zadanie 3: Tekst 3",
     questionText: "According to the example below, match columns A and B. (section 5) A B Example: a) a teacher. 1. The most important thing for Jan Miodek is 2. Jan Miodek’s mother was b) health. 3. Jan Miodek is happy about his c) boring. 4. Jan Miodek says monotonous speaking is d) genes.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2 marks 2 marks", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language." },
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts in full", marks: null, contextNote: "1. 2. 3. 4. b) a) d) c) - 2 marks 2 marks 2 marks. The examination prints this question in English and it is answered in English or in Irish, not in Polish. The scheme awards half marks for an answer given in the wrong language.", group: {"claimMax":3,"perOption":2,"options":["a)","d)","c)"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",

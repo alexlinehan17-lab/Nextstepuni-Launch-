@@ -16,6 +16,7 @@
  *    worse than none — these files ship to the live app on push to main.
  */
 
+import { questionLabel } from '../components/PaperTrail/topics';
 import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
 import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 import { existsSync, readdirSync, readFileSync } from 'fs';
@@ -303,5 +304,22 @@ describe('public/paper-anchors — committed pilot sidecars', () => {
       }
     }
     expect(broken, broken.join('\n')).toEqual([]);
+  });
+});
+
+describe('questionLabel', () => {
+  it('names a shared 2010-2019 Geography booklet\'s Part One question by its printed address', () => {
+    // Part One files as n = 1000 + its printed number; Part Two keeps n.
+    expect(questionLabel({ subjectId: 'geography', fileid: 'LC005GLP000EV.pdf', n: '1004' }))
+      .toBe('Part One · Question 4');
+    expect(questionLabel({ subjectId: 'geography', fileid: 'LC005ALP000EV.pdf', n: '1012' }, { short: true }))
+      .toBe('Part One Q12');
+    expect(questionLabel({ subjectId: 'geography', fileid: 'LC005GLP000IV.pdf', n: '1004' }))
+      .toBe('Cuid a hAon · Ceist 4');
+    expect(questionLabel({ subjectId: 'geography', fileid: 'LC005GLP000EV.pdf', n: '4' })).toBe('Question 4');
+    // Two-booklet Geography and every other subject keep the plain form.
+    expect(questionLabel({ subjectId: 'geography', fileid: 'LC005GLP042EV.pdf', n: '4' }, { short: true })).toBe('Q4');
+    expect(questionLabel({ subjectId: 'agricultural-science', fileid: 'LC024GLP000EV.pdf', n: '1001' }))
+      .toBe('Question 1001');
   });
 });

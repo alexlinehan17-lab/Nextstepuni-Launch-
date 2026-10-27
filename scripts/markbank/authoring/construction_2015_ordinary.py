@@ -36,20 +36,22 @@ TERM_HEADINGS = ['Box dovetail joint', 'Triple glazing', 'Solar panel', 'Cordles
                  'Natural seasoning', 'Concrete lintel', 'Radon barrier']
 
 # Leaf tasks: id -> [(row id, marks, permitted steps)] exactly as the scheme mark tables print them.
+CHOICES = {}
+CHOICES.update({'q1-a': ('details', 9, 4, ["Ridge board 250 mm × 35 mm", "Concrete tiles", "Softwood battens - typical 44 mm × 35 mm", "Breather membrane overlapped and taped", "Rafters 200 mm × 40 mm", "Roof insulation to comply with current Building Regulations", "Ceiling joist 200 mm × 40 mm", "Insulated plasterboard with skim coat", "100 mm × 75 mm wallplate", "Internal plaster", "Concrete block inner leaf – 100 mm", "Full-fill insulated cavity 200 mm", "Concrete block outer leaf – 100 mm", "Soffit 12 mm and fascia 25 mm", "Eaves gutter 100 mm"]), 'q3-a': ('details', 8, 4, ["Rising mains", "Cold water storage tank", "Overflow", "Cold supply to hot water cylinder", "Hot water cylinder", "Expansion pipe from cylinder", "Hot water supply to mixer shower", "Cold water supply to mixer shower", "Cold water supply to toilet cistern", "Valves", "Insulation to water storage tank and pipework", "Labelling"]), 'q5-a': ('details', 7, 5, ["External render – 19 mm", "Concrete block outer leaf - 100 mm", "50 mm ventilated cavity", "Breather membrane and racking board, OSB/Plywood", "200 mm timber stud", "12.5 mm plasterboard", "Skirting board", "Concrete slab and 20 mm quarry tiles", "Floor insulation, 200 – 300 mm, with vertical insulation", "Radon barrier/DPM and Damp proof course (DPC)", "Hardcore and sand blinding", "Cavity fill and concrete insulation blocks", "Reinforced concrete foundation", "Footpath and hardcore"])})  # drawing details as option groups (construction_choices.py)
 LEAF = {
-    'q1-a': [('details', 36, list(range(0, 37, 4))), ('dimensions', 4, [0, 4])],
+    'q1-a': [('details', 36, None), ('dimensions', 4, [0, 4])],
     'q1-b': [('fixing', 2, [0, 2])],
     'q2-a-cavity-fill': [('notes', 12, [0, 4, 8, 12]), ('sketches', 8, BAND8)],
     'q2-a-external-insulation': [('notes', 12, [0, 4, 8, 12]), ('sketches', 8, BAND8)],
     'q2-b': [('advantages', 10, [0, 5, 10])],
-    'q3-a': [('details', 32, list(range(0, 33, 4))), ('sketch', 8, BAND8)],
+    'q3-a': [('details', 32, None), ('sketch', 8, BAND8)],
     'q3-b': [('methods', 10, [0, 5, 10])],
     'q4-a': [('site', 3, [0, 3]), ('entrance', 3, [0, 3]), ('driveway', 3, [0, 3]), ('septic', 3, [0, 3]), ('sketch', 8, BAND8)],
     'q4-b-entrance': [('reason', 4, [0, 4])],
     'q4-b-driveway': [('reason', 4, [0, 4])],
     'q4-b-septic-tank': [('reason', 4, [0, 4])],
     'q4-c': [('types', 4, [0, 2, 4]), ('sketch', 8, BAND8), ('advantages', 6, [0, 3, 6])],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 4, [0, 4])],
+    'q5-a': [('details', 35, None), ('dimensions', 4, [0, 4])],
     'q5-b': [('insulation', 3, [0, 3])],
     'q6-a-hand': [('sign', 8, BAND8)], 'q6-a-ear': [('sign', 8, BAND8)], 'q6-a-eye': [('sign', 8, BAND8)],
     'q6-b-hand': [('activity', 4, [0, 4])], 'q6-b-ear': [('activity', 4, [0, 4])], 'q6-b-eye': [('activity', 4, [0, 4])],

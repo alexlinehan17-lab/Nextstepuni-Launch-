@@ -122,5 +122,32 @@
   "components/ui/progress": [
     "Progress",
     "ProgressLabel"
+  ],
+  "components/ui/textarea": [
+    "Textarea"
+  ],
+  "components/ui/kbd": [
+    "Kbd",
+    "KbdGroup"
+  ],
+  "components/ui/input-group": [
+    "InputGroup",
+    "InputGroupAddon",
+    "InputGroupButton",
+    "InputGroupText",
+    "InputGroupInput",
+    "InputGroupTextarea"
+  ],
+  "components/ui/spinner": [
+    "Spinner"
+  ],
+  "components/ui/alert": [
+    "Alert",
+    "AlertTitle",
+    "AlertDescription",
+    "AlertAction"
+  ],
+  "components/ui/toggle": [
+    "Toggle"
   ]
 }

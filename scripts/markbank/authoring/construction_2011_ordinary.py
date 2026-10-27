@@ -20,26 +20,27 @@ Q8 = 'q8-terms'
 TERMS = ['Fascia', 'Strip foundation', 'Thermostatic valve', 'Window board', 'Butt hinge', 'Rafter', 'Solar panel', 'Wall tie', 'Radon barrier']
 LEGACY = set()
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 6, ["External plaster 15 mm", "Concrete block outer leaf 100 mm", "Residual cavity 50 mm", "Thermal insulation 100 mm", "Concrete block inner leaf 100 mm", "Internal plaster 15 mm", "Pre-stressed concrete lintels 100 × 70 mm", "Window head 150 × 80 mm", "Triple glazing low e glass", "Typical dimensions"]), 'q3-a': ('details', 7, 5, ["Rising main", "Ballvalve", "Cold water storage tank", "Overflow", "Cold feed from storage to indirect hot water cylinder", "Indirect hot water cylinder", "Expansion pipe from indirect hot water cylinder", "Hot water supply to appliances", "Cold water supply from storage tank to appliances", "Valves", "Insulation to storage tank, cylinder and pipework", "Labelling"]), 'q5-a': ('details', 7, 5, ["String 250 × 44 mm", "Treads 2R + G between 550 mm and 700 mm. Going minimum 220 mm.", "Nosing 16 mm minimum", "Risers 2R + G between 550 mm and 700 mm. Maximum 220 mm.", "Glue blocks", "Joint between tread and riser", "Pitch line", "Bottom three steps"]), 'q7-a': ('sketch', 3, 5, ["Valid detail one", "Valid detail two", "Underground rainwater storage tank, 2500 to 6500 litres", "Pump with power supply, 12 mm suction pipe and floating filter", "Rainwater pipe 12 mm to system control panel and tank in the attic", "System control panel", "Mains water top-up pipe to control panel and to tank in the attic 12 mm", "Tank in the attic 230 litres min, ball valve and overflow pipe 22 mm", "Labels to diagram", "Typical sizes of components"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 MARKED_ALIKE = {'7b': dict(options=['toilet', 'washing machine'], cardId='cons-2011-ol-q7-b')}
 LEDGER = [(1, 'Answer Question'), (3, 'one of'), (3, 'any five')]
 GAPS = {'q4-a': {'cons-10-2'}, 'q5-a': {'cons-4-4', 'cons-10-1'}, 'q5-b': {'cons-4-4', 'cons-10-1'}, 'q9-b': {'cons-10-1', 'cons-10-4'}}
 LEAF = {
-    'q1-a': [('details', 42, list(range(0, 43, 6)))],
+    'q1-a': [('details', 42, None)],
     'q1-b': [('flashing', 4, r(4)), ('presentation', 4, BAND4)],
     'q2-a': [(k, 10, r(10)) for k in ['cavity-notes', 'cavity-sketch', 'internal-notes', 'internal-sketch']],
     'q2-b': [('cavity', 5, r(5)), ('internal', 5, r(5))],
-    'q3-a': [('details', 35, list(range(0, 36, 5))), ('presentation', 6, r(6))],
+    'q3-a': [('details', 35, None), ('presentation', 6, r(6))],
     'q3-b': [('advantage-1', 5, r(5)), ('advantage-2', 4, r(4))],
     'q4-a': [('description-1', 4, r(4)), ('description-2', 4, r(4)), ('presentation', 6, r(6)), ('detail', 4, r(4))],
     'q4-b': [('description-1', 4, r(4)), ('description-2', 4, r(4)), ('sketch', 10, r(10)), ('wood', 2, r(2)), ('reasons', 4, r(4))],
     'q4-c': [('advantage-1', 4, r(4)), ('advantage-2', 4, r(4))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('sizes', 5, r(5))],
+    'q5-a': [('details', 35, None), ('sizes', 5, r(5))],
     'q5-b': [('detail', 4, r(4)), ('presentation', 6, r(6))],
     'q6-a': [('cill', 15, r(15)), ('height', 15, r(15))],
     'q6-b': [('precaution-1', 5, r(5)), ('precaution-2', 5, r(5)), ('reasons', 5, r(5)), ('presentation', 5, BAND5)],
-    'q7-a': [('detail-1', 5, r(5)), ('detail-2', 5, r(5)), ('sketch', 15, list(range(0, 16, 5))), ('presentation', 6, r(6))],
+    'q7-a': [('detail-1', 5, r(5)), ('detail-2', 5, r(5)), ('sketch', 15, None), ('presentation', 6, r(6))],
     'q7-b': [('note', 5, r(5)), ('presentation', 6, r(6)), ('annotation', 4, r(4))],
     'q7-c': [('reason', 4, r(4))],
     Q8: [('terms', 50, None)],

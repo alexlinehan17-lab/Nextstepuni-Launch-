@@ -24,6 +24,43 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
+# Subjects generated straight into their deck keep no
+# scripts/markbank/authored/<subject>.json: lint the deck's own card file
+# (`{"cards": [...]}`), or the run would print "clean" without reading a card.
+DECKS = os.path.join(HERE, '..', '..', '..', 'components', 'MarkBank', 'cards')
+DECK_CARDS = {
+    'geography': os.path.join(DECKS, 'geography', 'authored.json'),
+}
+
+
+def english_deck_cards():
+    """The English cards the app serves, assembled as factory.ts does.
+
+    English keeps two card files per level: the reviewed full-corpus
+    manifests (published-{higher,ordinary}.json, written by
+    english_publish.py) and the legacy 2021-2025 cards (authored.json). A
+    legacy card is served only while no bridge has retired it, so reading
+    authored.json alone linted 650 cards the app no longer shows and none of
+    the 2,685 it does.
+    """
+    root = os.path.join(DECKS, 'english')
+    cards, bridged = [], set()
+    for level in ('higher', 'ordinary'):
+        with open(os.path.join(root, f'published-{level}.json')) as fh:
+            manifest = json.load(fh)
+        if len(manifest['cards']) != manifest['cardCount']:
+            raise SystemExit(f'cardlint: english {level} manifest count is stale')
+        cards += manifest['cards']
+        bridged |= set(manifest['bridgedLegacyIds'])
+    with open(os.path.join(root, 'authored.json')) as fh:
+        legacy = [c for c in json.load(fh)['cards'] if c['id'] not in bridged]
+    return legacy + cards
+
+
+# A deck whose served cards span several files is read by its own loader.
+DECK_LOADERS = {
+    'english': english_deck_cards,
+}
 
 SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
             'arabic', 'art', 'biology', 'bulgarian', 'business', 'chemistry',
@@ -68,12 +105,25 @@ SCHEME_LEAK_BY_SUBJECT = {'economics': re.compile(_LEAK_CORE)}
 PICTORIAL = r'(?:diagram|figure|extract|photograph|photo|sketch|drawing)'
 DESCRIBABLE = r'(?:apparatus|circuit|arrangement|set-?up|image|graph|table|chart|curve|pattern|map)'
 LOCATIVE = r'(?:below|above|opposite|shown|overleaf|on the (?:right|left))'
-FIG_REF = re.compile(
-    r'\bshown\b'
-    rf'|\b(?:the|this|following|above) {PICTORIAL}\b'
+_FIG_REF_CORE = (
+    rf'\b(?:the|this|following|above) {PICTORIAL}\b'
     rf'|\b{PICTORIAL} {LOCATIVE}\b'
     rf'|\b(?:the|this) {DESCRIBABLE} {LOCATIVE}\b'
-    r'|\bin the extract\b|\baccompanying\b|\bgiven diagram\b', re.I)
+    r'|\bin the extract\b|\baccompanying\b|\bgiven diagram\b')
+FIG_REF = re.compile(r'\bshown\b|' + _FIG_REF_CORE, re.I)
+# English questions use "shown" as an ordinary verb: "Love can be shown in
+# many different ways", "the kindness or lack of kindness shown". Measured
+# over all 2,685 served English cards, the word occurs on three cards, every
+# one of them that verb, and none of them points at the page; the English
+# references to printed matter are "the extract", "the photograph above" and
+# the like, which the shared alternatives still catch. So for English a bare
+# "shown" counts only when it points somewhere ("shown below", "shown on
+# page 6"), rather than weakening the rule for every deck.
+FIG_REF_BY_SUBJECT = {
+    'english': re.compile(
+        r'\bshown (?:below|above|opposite|overleaf|on (?:the )?(?:page|right|left))\b|'
+        + _FIG_REF_CORE, re.I),
+}
 # A stimulus the PAPER never prints, so no crop could ever satisfy the
 # reference. LCVP's Section A is answered from a DVD played in the examination
 # hall: the paper prints the theme in words — "You will be shown a DVD about
@@ -148,12 +198,27 @@ REVIEWED = (json.load(open(REVIEWED_PATH))
             if os.path.exists(REVIEWED_PATH) else {})
 
 
-def lint(subject):
-    path = os.path.join(AUTHORED, f'{subject}.json')
+def load_cards(subject):
+    """(cards, is_deck) for one subject; [] when it has no authored file."""
+    if subject in DECK_LOADERS:
+        return DECK_LOADERS[subject](), True
+    deck = subject in DECK_CARDS
+    path = DECK_CARDS[subject] if deck else os.path.join(AUTHORED, f'{subject}.json')
     if not os.path.exists(path):
-        return []
+        if deck:
+            raise SystemExit(f'cardlint: {subject} deck file missing: {path}')
+        return [], False
     with open(path) as fh:
         cards = json.load(fh)
+    return (cards['cards'] if deck else cards), deck
+
+
+READ_COUNTS = {}
+
+
+def lint(subject):
+    cards, deck = load_cards(subject)
+    READ_COUNTS[subject] = len(cards)
     # The bindings file is where an OFFICIAL SOURCE page is declared; the
     # `sourceMaterial` field only appears once build-deck.mjs has resolved it
     # against the Paper Trail index. Reading the authored JSON alone therefore
@@ -175,14 +240,18 @@ def lint(subject):
         # only crops flagged every LCVP case-study card, each of which already
         # carries the case study's own pages.
         has_fig = bool(c.get('figureKey') or c.get('questionFigureKey')
-                       or c.get('sourceMaterial') or c['id'] in bound)
+                       or c.get('sourceMaterial') or c['id'] in bound
+                       # A deck card binds its crop directly; a solution crop
+                       # is the answer, never the question's artwork.
+                       or (deck and (c.get('questionFigure') or (
+                           c.get('figure') and not c['figure'].get('solution')))))
         leak = SCHEME_LEAK_BY_SUBJECT.get(subject, SCHEME_LEAK)
         for field, text in (('stem', stem), ('questionText', qtext)):
             if leak.search(text):
                 flags.append((subject, c['id'], 'scheme-leak',
                               f'{field}: {text[:90]}'))
         joined = f'{stem} {qtext}'
-        m = FIG_REF.search(joined)
+        m = FIG_REF_BY_SUBJECT.get(subject, FIG_REF).search(joined)
         table_only = bool(m) and re.search(
             r'(?:table|chart|graph)\b', m.group(0), re.I) and INLINE_TABLE.search(joined)
         unprintable = UNPRINTABLE_STIMULUS.get(subject)
@@ -195,8 +264,11 @@ def lint(subject):
             flags.append((subject, c['id'], 'label-junk', stem[:90]))
         lettered = (NAMES_LETTERS.search(qtext)
                     and not INVITES_DRAWING.search(qtext))
-        if lettered and c['id'] not in REVIEWED and not (
-                has_fig and c.get('labelKey')):
+        # A rubric card (Geography) decodes its letters in the scheme's own
+        # rows, shown with the marking; it needs the printed page or crop that
+        # shows the student the letters, not a label key over a figure.
+        decoded = c.get('labelKey') or (deck and c.get('criteria'))
+        if lettered and c['id'] not in REVIEWED and not (has_fig and decoded):
             flags.append((subject, c['id'], 'undecoded-letters',
                           qtext.strip()[:90]))
     return flags
@@ -212,6 +284,10 @@ def main():
             print(f'== {s}: {len(flags)} flag(s)')
             for _, cid, cls, note in flags:
                 print(f'  {cls:<13} {cid}: {note}')
+    # Name what was read: a subject whose cards live outside the file this
+    # script opens reports zero here instead of a silent "clean".
+    print(f'read {sum(READ_COUNTS.values())} cards: '
+          + ', '.join(f'{s} {READ_COUNTS[s]}' for s in subjects))
     if not total:
         print('clean')
     sys.exit(1 if total else 0)

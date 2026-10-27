@@ -68,6 +68,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 from hist_paper import HistPaper, FIELDS                      # noqa: E402
 from hist_scheme import HistScheme, GRID_WORDS                # noqa: E402
 from hist_topics import topic_for, concept_for, TITLES        # noqa: E402
+from hist_rows import split_priced                           # noqa: E402
 from align import bag, score                                  # noqa: E402
 
 YEARS = (2021, 2022, 2023, 2024, 2025)
@@ -346,7 +347,10 @@ def build():
                         'The documents' if unit == '1' else 'The extract',
                         'OFFICIAL DOCUMENTS' if unit == '1'
                         else 'OFFICIAL EXTRACT')
-                    cards.append(card)
+                    # The marks the SEC prints inside a Part A line ("Sods
+                    # (3M) and saplings (3M)") are rows, not one claim
+                    # (hist_rows.py).
+                    cards.append(split_priced(card))
     return (cards, exclusions, refused, examples, title_pairs, tariff_checks,
             extra_topic_checks, title_variants)
 

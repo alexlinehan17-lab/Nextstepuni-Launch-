@@ -202,7 +202,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:Cluastuiscint Cuid [ABC] · .+|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6]|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\))$/.test(ref);
         }
         if (subject === 'geography') {
-          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?: · .+)?$/.test(ref);
+          // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
+          // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
+          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?$/.test(ref);
         }
         const core = ref.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
@@ -234,16 +236,22 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'english' || subject === 'irish' || subject === 'art'
       || subject === 'geography' || subject === 'politics-and-society' || subject === 'accounting') {
+      // Geography's claimable rows are cut from its lines at load (allocation.ts); Art's from its printed table (answers.ts).
       const names = subject === 'english'
         ? ['factory.ts', 'authored.json', 'published-higher.json', 'published-ordinary.json']
-        : ['factory.ts', 'authored.json'];
+        : subject === 'geography' ? ['factory.ts', 'authored.json', 'allocation.ts']
+          : subject === 'art' || subject === 'politics-and-society' ? ['factory.ts', 'authored.json', 'answers.ts']
+            : subject === 'irish' ? ['factory.ts', 'authored.json', 'answers.ts', 'tariffs.ts']
+            : subject === 'accounting' ? ['factory.ts', 'authored.json', 'rows.json']
+            : ['factory.ts', 'authored.json'];
       for (const name of names) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
     }
     if (subject === 'physical-education' || subject === 'applied-maths') {
-      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json'] : ['reviewed.ts', 'reviewed.json']) {
+      // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
+      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
@@ -257,7 +265,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'french') {
       // Same files and order as reconcile.py's content hash, listening included.
-      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json']) {
+      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

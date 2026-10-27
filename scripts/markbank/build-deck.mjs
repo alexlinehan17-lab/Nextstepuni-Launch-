@@ -1120,6 +1120,16 @@ function tariffFault(c) {
     || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
       || mark < 0 || (index > 0 && mark <= steps[index - 1]))
   ))) return 'invalid published criterion mark steps';
+  // A criterion row's parts (types/markBank.ts rowPartsReconcile) add up to it, each on printed steps.
+  if (c.rows.some(row => row.parts && (
+    !row.permittedMarks || row.kind !== 'criterion' || !Array.isArray(row.parts) || row.parts.length < 2
+    || new Set(row.parts.map(part => part.id)).size !== row.parts.length
+    || row.parts.reduce((sum, part) => sum + part.marks, 0) !== row.marks
+    || row.parts.some(part => !part.id || !String(part.verbatim ?? '').trim() || !Number.isInteger(part.marks) || part.marks <= 0
+      || !Array.isArray(part.permittedMarks) || part.permittedMarks.length < 2 || part.permittedMarks[0] !== 0
+      || part.permittedMarks.at(-1) !== part.marks
+      || part.permittedMarks.some((mark, index, steps) => !Number.isInteger(mark) || mark < 0 || (index > 0 && mark <= steps[index - 1])))
+  ))) return 'invalid criterion row parts';
   if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
     return c.rows.every(r => r.marks === null || r.marks === undefined)
       ? null : `a ${t.kind} tariff cannot give rows their own marks`;
@@ -1556,6 +1566,7 @@ for (const c of cards) {
     if (r.accepts?.length) parts.push(`accepts: ${JSON.stringify(r.accepts)}`);
     if (r.contextNote) parts.push(`contextNote: ${q(r.contextNote)}`);
     if (r.permittedMarks) parts.push(`permittedMarks: ${JSON.stringify(r.permittedMarks)}`);
+    if (r.parts) parts.push(`parts: ${JSON.stringify(r.parts)}`);
     if (r.openList) parts.push('openList: true');
     if (r.exactTermRequired) parts.push('exactTermRequired: true');
     if (r.route) parts.push(`route: ${q(r.route)}`);

@@ -202,7 +202,9 @@ export const CARDS: SecCard[] = [
     questionText: "In what way has it become easier to buy\nItalian products from abroad?\n(Par. 1)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "People can now shop from a virtual/online [2] supermarket [1] which has over 10,000 - products listed (in one place)/ and have their groceries delivered to their home [1]", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “MammaPack (is a supermarket that) sells a large selection of products” 2 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "People can now shop from a virtual/online", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “MammaPack (is a supermarket that) sells a large selection of products” 2 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "supermarket", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "which has over 10,000 - products listed (in one place)/ and have their groceries delivered to their home", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -225,7 +227,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who are the founders of MammaPack?\nGive two details about them.\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Founders: Romolo Ganzerli and Flavio Nappi", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They started the business for cultural reasons” 2 marks; “They started the business out of economic necessity” 2 marks; “Romolo emigrated to Ginevra in 2008” 2 marks; “Flavio emigrated to Parigi in 2010” 2 marks; “Romolo emigrated in 2008” 1 mark; “Flavio emigrated in 2010” 1 mark. The scheme lists 1 further lesser answer(s) for this ask." },
+    { id: "r-1", kind: "criterion", verbatim: "Founders: Romolo Ganzerli and Flavio Nappi", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They started the business for cultural reasons” 2 marks; “They started the business out of economic necessity” 2 marks; “Romolo emigrated to Ginevra in 2008” 2 marks; “Flavio emigrated to Parigi in 2010” 2 marks; “Romolo emigrated in 2008” 1 mark; “Flavio emigrated in 2010” 1 mark. The scheme lists 1 further lesser answer(s) for this ask.", permittedMarks: [0,1,2,4] },
     { id: "r-2", kind: "anyN", verbatim: "Details: Two of: — the answers the scheme accepts", marks: null, contextNote: "The scheme prices this half of the ask separately, under the heading “Details: Two of:”.", group: {"claimMax":2,"perOption":3,"options":["They are Italian","They are young","They are Neapolitan","Romolo emigrated to Geneva in 2008","Flavio emigrated to Paris in 2010","They started the business for cultural reasons and economic necessity"]} },
     ],
     sourceMaterial: {
@@ -295,7 +297,8 @@ export const CARDS: SecCard[] = [
     questionText: "What does the article say about European\ndeliveries?\n(Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "On average deliveries arrive within three days (3) In general, not more than five days (1).", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "On average deliveries arrive within three days", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "In general, not more than five days", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -807,7 +810,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify the theme of the video clip.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Summer holidays", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Summer/ Holiday/ Vacation” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Summer holidays", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Summer/ Holiday/ Vacation” 1 mark.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -968,7 +971,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where was Emanuele born?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He was born in Salerno", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He was born in Italy” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "He was born in Salerno", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “He was born in Italy” 1 mark.", permittedMarks: [0,1,3] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1106,7 +1109,8 @@ export const CARDS: SecCard[] = [
     questionText: "When is it hoped that the cycle\nroute would be finished?\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "By summer [2] 2022 [1]", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "By summer", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "2022", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1152,7 +1156,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the best way to access the\nfirst 2 km of the route?\n(Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Leave the car in one of the car parks, and walk/cycle (from there)", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “By car” 1 mark; “From (the town of) Limone” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Leave the car in one of the car parks, and walk/cycle (from there)", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “By car” 1 mark; “From (the town of) Limone” 1 mark.", permittedMarks: [0,1,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1198,7 +1202,11 @@ export const CARDS: SecCard[] = [
     questionText: "Why is LED lighting a positive addition?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It enables the cycle path to be used [1] safely [1] by cyclists [1] and pedestrians [1] at night [2]", marks: 6, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It illuminates the cycle path/users” 2 marks." },
+    { id: "r-1-1", kind: "point", verbatim: "It enables the cycle path to be used", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It illuminates the cycle path/users” 2 marks." },
+    { id: "r-1-2", kind: "point", verbatim: "safely", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "by cyclists", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "pedestrians", marks: 1 },
+    { id: "r-1-5", kind: "point", verbatim: "at night", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1244,7 +1252,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the first advertisement, who does\nthe Wellness Centre wish to hire?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Experienced (yoga) instructors", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Someone with English/ Someone who can work flexible hours/ Someone with great interpersonal skills” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Experienced (yoga) instructors", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Someone with English/ Someone who can work flexible hours/ Someone with great interpersonal skills” 1 mark.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1267,7 +1275,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why is it important to be able to\nspeak English?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Because the centre has a lot of foreign clients", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To speak with some customers (in English” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Because the centre has a lot of foreign clients", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “To speak with some customers (in English” 1 mark.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1336,7 +1344,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where is Martina from?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Turin", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Italy” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Turin", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Italy” 1 mark.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1428,7 +1436,10 @@ export const CARDS: SecCard[] = [
     questionText: "Describe what is planned for 13.30.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Arrival/stopover [1] on Volcano island [1] where it will be possible to go for a swim [2]. Lunch will be available on board, in the restaurant [2].", marks: 6, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Lunch/ Trip to the restaurant” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "Arrival/stopover", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Lunch/ Trip to the restaurant” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "on Volcano island", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "where it will be possible to go for a swim", marks: 2 },
+    { id: "r-1-4", kind: "point", verbatim: "Lunch will be available on board, in the restaurant", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1451,7 +1462,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who is charged €25 per ticket?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Children under the age of twelve, adults over 65 years", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Children / Elderly” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Children under the age of twelve, adults over 65 years", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Children / Elderly” 1 mark.", permittedMarks: [0,1,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1474,7 +1485,8 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the attraction which is\nbeing advertised in offer A?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Secret/beautiful [1] garden [1]", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Nature” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "Secret/beautiful", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Nature” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "garden", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1520,7 +1532,10 @@ export const CARDS: SecCard[] = [
     questionText: "In B, when will the course take place?\nGive full details",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The first week of [1] August [1], every morning [1] from nine to twelve [1]", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "The first week of", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "August", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "every morning", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "from nine to twelve", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1612,7 +1627,9 @@ export const CARDS: SecCard[] = [
     questionText: "What is the special offer being\nadvertised?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Up to [1] 50% discount off [1] cinema/tickets [1]", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "Up to", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "50% discount off", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "cinema/tickets", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1635,7 +1652,9 @@ export const CARDS: SecCard[] = [
     questionText: "When is it possible to avail of the special\noffer? Give full details",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The offer is valid every Wednesday [1] from (the 10th of) October [1] until (the end of) March [1]", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "The offer is valid every Wednesday", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "from (the 10th of) October", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "until (the end of) March", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1894,7 +1913,7 @@ export const CARDS: SecCard[] = [
     questionText: "Who were the first clients of\nArmadio Verde?\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The mammies/mothers", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Eleonora/ Davide” 1 mark; “Their friends” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "The mammies/mothers", marks: 3, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Eleonora/ Davide” 1 mark; “Their friends” 1 mark.", permittedMarks: [0,1,3] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1986,8 +2005,10 @@ export const CARDS: SecCard[] = [
     questionText: "What does the term Greenchic mean for\nthose in Armadio Verde?\nGive two details.\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Green sustainability (2) for the planet/people (2)", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Recycle” 1 mark." },
-    { id: "r-2", kind: "point", verbatim: "Chic to have good taste (2), feeling good about oneself/(the wellbeing of) others (2)", marks: 4 },
+    { id: "r-1-1", kind: "point", verbatim: "Green sustainability", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Recycle” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "for the planet/people", marks: 2 },
+    { id: "r-2-1", kind: "point", verbatim: "Chic to have good taste", marks: 2 },
+    { id: "r-2-2", kind: "point", verbatim: "feeling good about oneself/(the wellbeing of) others", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2033,7 +2054,10 @@ export const CARDS: SecCard[] = [
     questionText: "When is Rita available to work?\nGive full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "She is available in the evenings (1) during the week (1) and all day (1) at the weekend (1)", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is flexible/frequently available” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "She is available in the evenings", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “She is flexible/frequently available” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "during the week", marks: 1 },
+    { id: "r-1-3", kind: "point", verbatim: "all day", marks: 1 },
+    { id: "r-1-4", kind: "point", verbatim: "at the weekend", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2056,7 +2080,7 @@ export const CARDS: SecCard[] = [
     questionText: "What job is advertised in the\nsecond advertisement?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Minibus Driver/Guide", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Tour-guide” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Minibus Driver/Guide", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Tour-guide” 1 mark.", permittedMarks: [0,1,2] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2194,7 +2218,8 @@ export const CARDS: SecCard[] = [
     questionText: "Is seating available?\nGive full details.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "There is seating available (1) for ten people (1)", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "There is seating available", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "for ten people", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2217,7 +2242,8 @@ export const CARDS: SecCard[] = [
     questionText: "What details are given about Kikky’s\nopening hours?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It opens every day (1) for both lunch/dinner (1)", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-1", kind: "point", verbatim: "It opens every day", marks: 1, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian." },
+    { id: "r-1-2", kind: "point", verbatim: "for both lunch/dinner", marks: 1 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2798,7 +2824,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the two Italian regions\nmentioned that have the best\naccessible beaches.\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Emilia-Romagna and Veneto /", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Venice” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "Emilia-Romagna and Veneto /", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Venice” 1 mark.", permittedMarks: [0,1,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2821,7 +2847,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is impressive about the beach\naccessibility in Campomarino? (Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The beach has all the necessary services and groups of volunteers who/that assist people (with disabilities)", marks: 6, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They help/assist/ look after +/_ extra information” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "The beach has all the necessary services and groups of volunteers who/that assist people (with disabilities)", marks: 6, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “They help/assist/ look after +/_ extra information” 1 mark.", permittedMarks: [0,1,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2844,7 +2870,7 @@ export const CARDS: SecCard[] = [
     questionText: "By law, what is every Council in Puglia\nrequired to have by next summer?\n(Par. 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "At least one accessible beach", marks: 6, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Accessible (+/- extra information” 2 marks." },
+    { id: "r-1", kind: "criterion", verbatim: "At least one accessible beach", marks: 6, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Accessible (+/- extra information” 2 marks.", permittedMarks: [0,2,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3586,7 +3612,9 @@ export const CARDS: SecCard[] = [
     questionText: "Why was the colour yellow chosen as\npart of the name Occhio al Giallo?\n(Par. 2)",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It is the colour that a person with a visual impairment recognises best (because it provides good colour contrast) (2) It is a vital/energetic/key colour (2). It is NoisyVision’s (campaign) colour (2)", marks: 6, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is easier to see” 1 mark; “To recognise (raise awareness) people with disabilities” 1 mark." },
+    { id: "r-1-1", kind: "point", verbatim: "It is the colour that a person with a visual impairment recognises best (because it provides good colour contrast)", marks: 2, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “It is easier to see” 1 mark; “To recognise (raise awareness) people with disabilities” 1 mark." },
+    { id: "r-1-2", kind: "point", verbatim: "It is a vital/energetic/key colour", marks: 2 },
+    { id: "r-1-3", kind: "point", verbatim: "It is NoisyVision’s (campaign) colour", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4092,7 +4120,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain how you can participate in this\nprogramme.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "By sending the form (register) by email to info@comunediperaeo.it", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Email your details/make an application by email” 3 marks; “Fill in” 1 mark; “With your photos” 1 mark." },
+    { id: "r-1", kind: "criterion", verbatim: "By sending the form (register) by email to info@comunediperaeo.it", marks: 4, contextNote: "The examination paper prints this question in Irish and in English and directs that it be answered in one of those, not in Italian. The scheme also pays part marks for a shorter answer: “Email your details/make an application by email” 3 marks; “Fill in” 1 mark; “With your photos” 1 mark.", permittedMarks: [0,1,3,4] },
     ],
     sourceMaterial: {
           "kind": "source-text",

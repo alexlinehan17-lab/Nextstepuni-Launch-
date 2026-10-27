@@ -357,6 +357,12 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
             assert normalise(row['verbatim']) in scheme, (key, row['verbatim'])
             steps = row['permittedMarks']
             assert steps[0] == 0 and steps[-1] == row['marks'] and steps == sorted(set(steps)), (key, row['id'])
+            # The named components a row is priced in (construction_rows.py): the scheme's own words, adding up to the row.
+            for part in row.get('parts', []):
+                assert normalise(part['verbatim']) in scheme and part['marks'] > 0, (key, row['id'], part['id'])
+                assert part['permittedMarks'][0] == 0 and part['permittedMarks'][-1] == part['marks'] and part['permittedMarks'] == sorted(set(part['permittedMarks'])), (key, row['id'], part['id'])
+            if row.get('parts'):
+                assert len(row['parts']) >= 2 and len({p['id'] for p in row['parts']}) == len(row['parts']) and sum(p['marks'] for p in row['parts']) == row['marks'], (key, row['id'])
         assert 'questionBonus' not in c and c['totalMarks'] == sum(row['marks'] for row in c['rows']) == m.TOTALS[key], key
         if key in m.LEAF:
             assert [(row['id'], row['marks'], row.get('permittedMarks')) for row in c['rows']] == m.LEAF[key], key

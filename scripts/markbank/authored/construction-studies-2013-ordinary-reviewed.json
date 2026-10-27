@@ -36,20 +36,30 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details ( 5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; plywood decking 25 mm; 50 × 50 mm counter battens on a firring piece; roof/ceiling joists 200 × 50 mm; at least 150 mm insulation; 12.5 mm insulated foil-backed plasterboard and skim; an airtightness seal taped to the masonry; a 100 × 75 mm wallplate with straps; a cavity barrier or non-combustible tile or slate; 15 mm internal plaster; 100 mm inner leaf; cavity insulation; 100 mm outer leaf; 19 mm render; fascia and soffit.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details ( 5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; plywood decking 25 mm; 50 × 50 mm counter battens on a firring piece; roof/ceiling joists 200 × 50 mm; at least 150 mm insulation; 12.5 mm insulated foil-backed plasterboard and skim; an airtightness seal taped to the masonry; a 100 × 75 mm wallplate with straps; a cavity barrier or non-combustible tile or slate; 15 mm internal plaster; 100 mm inner leaf; cavity insulation; 100 mm outer leaf; 19 mm render; fascia and soffit.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Weatherproofing - 3 layers of bituminous felt",
+                "Plywood decking 25 mm",
+                "Roof /ceiling joist 200 mm × 50 mm",
+                "Thermal insulation min 150 mm",
+                "12.5 insulated foil-backed plasterboard with skim coat",
+                "Air tightness seal taped to masonry",
+                "Wallplate, 100 × 75 mm, with wallplate straps",
+                "Proprietary cavity barrier / non combustible tile or slate",
+                "Internal plaster 15 mm",
+                "Concrete block inner leaf 100 mm",
+                "Wall insulation / cavity / full fill cavity",
+                "Concrete block outer leaf 100 mm",
+                "External render 19 mm",
+                "Fascia and soffit"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -257,20 +267,30 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details ( 5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; plywood decking 25 mm; 50 × 50 mm counter battens on a firring piece; roof/ceiling joists 200 × 50 mm; at least 150 mm insulation; 12.5 mm insulated foil-backed plasterboard and skim; an airtightness seal taped to the masonry; a 100 × 75 mm wallplate with straps; a cavity barrier or non-combustible tile or slate; 15 mm internal plaster; 100 mm inner leaf; cavity insulation; 100 mm outer leaf; 19 mm render; fascia and soffit.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details ( 5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; plywood decking 25 mm; 50 × 50 mm counter battens on a firring piece; roof/ceiling joists 200 × 50 mm; at least 150 mm insulation; 12.5 mm insulated foil-backed plasterboard and skim; an airtightness seal taped to the masonry; a 100 × 75 mm wallplate with straps; a cavity barrier or non-combustible tile or slate; 15 mm internal plaster; 100 mm inner leaf; cavity insulation; 100 mm outer leaf; 19 mm render; fascia and soffit.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Weatherproofing - 3 layers of bituminous felt",
+                "Plywood decking 25 mm",
+                "Roof /ceiling joist 200 mm × 50 mm",
+                "Thermal insulation min 150 mm",
+                "12.5 insulated foil-backed plasterboard with skim coat",
+                "Air tightness seal taped to masonry",
+                "Wallplate, 100 × 75 mm, with wallplate straps",
+                "Proprietary cavity barrier / non combustible tile or slate",
+                "Internal plaster 15 mm",
+                "Concrete block inner leaf 100 mm",
+                "Wall insulation / cavity / full fill cavity",
+                "Concrete block outer leaf 100 mm",
+                "External render 19 mm",
+                "Fascia and soffit"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -884,20 +904,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed from the storage tank to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; hot water supply to the appliances; cold water supply from the storage tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed from the storage tank to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; hot water supply to the appliances; cold water supply from the storage tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Ballvalve",
+                "Cold water storage tank",
+                "Overflow",
+                "Cold feed from storage to indirect hot water cylinder",
+                "Indirect hot water cylinder",
+                "Expansion pipe from indirect hot water cylinder",
+                "Hot water supply to appliances",
+                "Cold water supply from storage tank to appliances",
+                "Insulation to storage tank, cylinder and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1095,20 +1122,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed from the storage tank to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; hot water supply to the appliances; cold water supply from the storage tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed from the storage tank to the indirect cylinder; indirect hot water cylinder; expansion pipe from the cylinder; hot water supply to the appliances; cold water supply from the storage tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Ballvalve",
+                "Cold water storage tank",
+                "Overflow",
+                "Cold feed from storage to indirect hot water cylinder",
+                "Indirect hot water cylinder",
+                "Expansion pipe from indirect hot water cylinder",
+                "Hot water supply to appliances",
+                "Cold water supply from storage tank to appliances",
+                "Insulation to storage tank, cylinder and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -1264,6 +1298,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1283,6 +1344,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1302,6 +1390,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1321,6 +1436,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -1543,6 +1685,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1562,6 +1731,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1581,6 +1777,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1600,6 +1823,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1748,19 +1998,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 6 of the above details ( 6 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 36,
-            "contextNote": "Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: stud partition 100 × 50 mm; insulation between the studs; 12.5 mm plasterboard; 120 × 20 mm skirting; floating tongued and grooved oak floor; bubble underlay or matting; 18–25 mm plywood; 200 × 50 mm joists; at least 150 mm insulation between the joists; plasterboard, plaster and vapour barrier; 15 mm plaster; 215 mm solid block wall.",
-            "permittedMarks": [
-              0,
-              6,
-              12,
-              18,
-              24,
-              30,
-              36
-            ]
+            "contextNote": "Any 6 of the above details ( 6 marks each). Credit the best SIX acceptable details at 6 marks each, capped at 36. Marked details: stud partition 100 × 50 mm; insulation between the studs; 12.5 mm plasterboard; 120 × 20 mm skirting; floating tongued and grooved oak floor; bubble underlay or matting; 18–25 mm plywood; 200 × 50 mm joists; at least 150 mm insulation between the joists; plasterboard, plaster and vapour barrier; 15 mm plaster; 215 mm solid block wall.",
+            "group": {
+              "claimMax": 6,
+              "perOption": 6,
+              "options": [
+                "Stud partition 100 mm × 50 mm",
+                "Insulation between studs",
+                "Plasterboard to the partition 12.5 mm",
+                "Skirting boards 120 mm × 20 mm",
+                "Floating tongued and grooved oak timber floor",
+                "Polyethylene bubble underlay or proprietary matting",
+                "Plywood 18 mm - 25 mm",
+                "Joists 200 mm × 50 mm",
+                "Insulation between joists minimum 150 mm",
+                "Plasterboard, plaster and vapour barrier",
+                "Plaster 15 mm",
+                "Solid block wall 215 mm"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -4894,5 +5153,49 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2013-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2013-ordinary/prior-2013-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2013-ordinary/prior-2013-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2013-ol-q4-a",
+      "priorSha256": "2cb0b7c17fc505d6a92541a3409659532a14c3edee6c100b2698e3cb73ed8b69",
+      "correctedSha256": "569c68dcfce53d5a091f0e691c1f9542c7c2311d5fbad2e21793e3d75b6d4b07",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2013-ol-q4-complete",
+      "priorSha256": "e85bef63acb9889eb283fabaa9892a9d794035c54dcf2b6101b73e26aef6afe1",
+      "correctedSha256": "0c86ec477bc5f2ce58540ebf7926ba9b1e7f9d33704f17798ab0d4ee9c8ddf3a",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2013-ol-q1-a",
+      "priorSha256": "c033833f4d6f0fcb99ea65c79aa92a378a83e51942a512d1c1162c4fa50fad62",
+      "correctedSha256": "56ea529b896cdf856865c72713c0fd516cd3c2ef23754e04037454b9714ce3ed",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2013-ol-q1-complete",
+      "priorSha256": "d61406ef0ada91c2ec9053cadc24eb1476b44fc8774c976f03a35f011622fd07",
+      "correctedSha256": "b8b0ae4c009a863465d68b2355208077a642e876842a0c2129e49396af17dfe2",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2013-ol-q3-a",
+      "priorSha256": "080c84abcd07db301064705d18329f277d1996a550999ef3772ee8baea1bfcbe",
+      "correctedSha256": "65f4ab79d4a111e353c7cd4ad2f8a3049d3c9923991589bcca64419f767fb668",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2013-ol-q3-complete",
+      "priorSha256": "cec28315a2578ce2f2ffd569e865ef7fcdac90ee07b529ae1fba1d311339544a",
+      "correctedSha256": "ec8f2d745f417d32cf7bb2381fa2a8565b1844cf4e0c0c5890a45c59fff8b13a",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2013-ol-q5-section",
+      "priorSha256": "48285cccb5e84d0ee7f3ac069f71da9cff8532e090be2bd23693808751b21ee0",
+      "correctedSha256": "66789934f18ab047d2417b0cf8d8f0c614060a8d2be5a4f1837294938457deac",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    }
+  ]
 }

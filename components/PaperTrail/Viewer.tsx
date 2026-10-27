@@ -25,6 +25,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
   ArrowLeft,
+  ArrowUpRight,
   BookOpen,
   ChevronLeft,
   ChevronRight,
@@ -47,13 +48,30 @@ import {
   ZoomOut,
 } from 'lucide-react';
 import { MotionDiv } from '../Motion';
-import HorizontalTabs from '../ui/HorizontalTabs';
+import KobraScope, {
+  Alert,
+  AlertDescription,
+  Button,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  Progress,
+  ProgressLabel,
+  Spinner,
+  Switch,
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  Toasts,
+  toast,
+} from '../approved-ui-runtime';
 import { prettyBytes } from './storage';
 import { fetchPdfCached } from './pdfCache';
 import { clearLoopPlace, loadLoopPlace, saveLoopPlace } from './loopResume';
 import { composeReceipt, downloadReceipt, type LoopReceiptStats } from './receipt';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
-import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
+import { frequencyFor, questionLabel, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
 import { markerLicence, type MarkerLicence } from './trust';
 import { loadCalibration, paceScale } from './wpmStore';
@@ -74,12 +92,10 @@ import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
 import { frenchAudioForPaper } from './frenchAudio';
 import FrenchPaperAudio from './FrenchPaperAudio';
+// The chrome (top bar, Tools menu, page bar, status toasts) is Kobra; see the file.
+import './viewer-chrome.css';
 
-/** The viewer's square ink buttons (option E): hairline, offset shadow, orange when on. */
-const E_BUTTON = 'inline-flex items-center gap-1.5 h-[34px] px-3 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold transition-[transform,box-shadow,background-color,color] duration-150 shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none';
-const E_BUTTON_OFF = 'bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100';
-const E_BUTTON_ON = 'bg-[#F26B1F] text-white';
-/** Compact square sibling of E_BUTTON for the scheme's step and text-size controls. */
+/** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
 const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
 
 // Sleek glide shared with the GC dashboard student-view tray.
@@ -225,7 +241,7 @@ const Viewer: React.FC<ViewerProps> = ({
   const schemePrefetched = useRef(false);
 
   // ── on-paper study tools (live text-layer overlays) ──
-  const [toolsOpen, setToolsOpen] = useState(false); // tools menu popover
+  const [toolsOpen, setToolsOpen] = useState(false); // Tools menu (a controlled Kobra DropdownMenu)
   const [paceOn, setPaceOn] = useState(false); // time-budget chips
   const [decodeOn, setDecodeOn] = useState(false); // command-word highlighting
   const [markingOpen, setMarkingOpen] = useState(false); // "how it's marked" card
@@ -892,17 +908,6 @@ const Viewer: React.FC<ViewerProps> = ({
     setExaminerOpen(false);
   }, [side]);
 
-  // Close the tools menu on outside tap.
-  useEffect(() => {
-    if (!toolsOpen) return;
-    const onDown = (e: PointerEvent) => {
-      const t = e.target as HTMLElement;
-      if (!t.closest('[data-tools-anchor]')) setToolsOpen(false);
-    };
-    window.addEventListener('pointerdown', onDown);
-    return () => window.removeEventListener('pointerdown', onDown);
-  }, [toolsOpen]);
-
   // Dialog behaviour: focus, Escape, Tab trap; resize/rotation re-render.
   useEffect(() => {
     headerRef.current?.focus();
@@ -1153,6 +1158,23 @@ const Viewer: React.FC<ViewerProps> = ({
               />
   ) : null;
 
+  // Answers map fetch status (chips appear once ready), as a runtime toast.
+  useStatusToast(
+    'pt-viewer-question-tools',
+    (answersOn || topicsOn) && side === 'paper' && answerState !== 'idle'
+      ? answerState === 'loading'
+        ? { message: 'Loading question tools…', state: 'pending' }
+        : { message: 'Couldn’t load question tools — try again later.', state: 'error' }
+      : null,
+  );
+  // Text-scan status while the overlay tools read the paper.
+  useStatusToast(
+    'pt-viewer-text-scan',
+    side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens
+      ? { message: 'Reading the paper…', state: 'pending' }
+      : null,
+  );
+
   // ── render ──
   return createPortal(
     <div
@@ -1163,191 +1185,176 @@ const Viewer: React.FC<ViewerProps> = ({
       aria-modal="true"
       aria-label={`${title} — document viewer`}
     >
-      {/* Header */}
-      <div
-        ref={headerRef}
-        tabIndex={-1}
-        className="shrink-0 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 outline-none"
-        style={{
-          paddingTop: 'calc(8px + var(--sat, 0px))',
-          paddingBottom: 8,
-          paddingLeft: 'calc(12px + var(--sal, 0px))',
-          paddingRight: 'calc(12px + var(--sar, 0px))',
-        }}
-      >
-        <div className="flex flex-wrap items-center gap-2 max-w-3xl mx-auto">
-          <button
-            onClick={() => onCloseRef.current()}
-            aria-label="Close viewer"
-            className="p-2 -ml-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-          >
-            <ArrowLeft size={19} />
-          </button>
-          <div className="flex-1 min-w-0">
-            <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">{title}</p>
-            {subtitle && <p className="text-[11px] truncate text-zinc-500">{subtitle}</p>}
-          </div>
-          <div className="order-last flex w-full min-w-0 items-center justify-end gap-1.5 sm:order-none sm:w-auto sm:gap-2">
-          {scheme && (
-            <HorizontalTabs
-              variant="pill"
-              size="sm"
-              label="Paper or marking scheme"
-              className="pt-document-toggle shrink-0"
-              value={side}
-              onChange={next => setSide(next as Side)}
-              options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]}
-            />
-          )}
-          {/* Answers — the flagship per-question marking-scheme reveal. A
-              standalone one-tap toggle (not buried in the Tools menu), shown
-              whenever this paper has a verified answer map. */}
-          {side === 'paper' && answersUrl && (
-            <button
-              onClick={toggleAnswers}
-              aria-pressed={answersOn}
-              aria-label="Show the marking scheme beside each question"
-              className={`${E_BUTTON} ${answersOn ? E_BUTTON_ON : E_BUTTON_OFF}`}
+      {/* Header: Kobra chrome (viewer-chrome.css). */}
+      <KobraScope className="nsu-paper-viewer">
+        <div ref={headerRef} tabIndex={-1} className="pvc-top">
+          <div className="pvc-bar">
+            <Button
+              variant="outline"
+              size="icon"
+              className="nsu-ink-outline pvc-icon"
+              onClick={() => onCloseRef.current()}
+              aria-label="Close viewer"
             >
-              <span className={`pt-mode-dot ${answersOn ? 'is-on' : ''}`} aria-hidden="true" /><span>Answers</span>
-            </button>
-          )}
-          {side === 'paper' && (
-            <div className="relative" data-tools-anchor>
-              <button
-                onClick={() => setToolsOpen(o => !o)}
-                aria-expanded={toolsOpen}
-                aria-label="Study tools for this paper"
-                className={`${E_BUTTON} ${activeToolCount > 0 ? E_BUTTON_ON : E_BUTTON_OFF}`}
-              >
-                <SlidersHorizontal size={14} className="min-[360px]:hidden" /><span className="hidden min-[360px]:inline">Tools</span>
-                {activeToolCount > 0 && (
-                  <span className="ml-0.5 min-w-[16px] h-4 px-1 inline-flex items-center justify-center rounded-full bg-white/25 text-[10px] tabular-nums">
-                    {activeToolCount}
-                  </span>
-                )}
-              </button>
-              <AnimatePresence>
-                {toolsOpen && (
-                  <MotionDiv
-                    key="tools-menu"
-                    initial={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
-                    transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
-                    role="menu"
-                    className="absolute right-0 mt-2 w-64 z-[70] rounded-md bg-white dark:bg-zinc-900 border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 shadow-[3px_3px_0_#1A1A1A] dark:shadow-[3px_3px_0_#E4E4E7] overflow-hidden"
-                    style={{ transformOrigin: 'top right' }}
-                  >
-                    <p className="px-3.5 pt-3 pb-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
-                      Study tools
-                    </p>
-                    {answersUrl && (
-                      <ToolRow
-                        icon={<BookOpenCheck size={15} />}
-                        title="Answers"
-                        sub="Marking scheme beside each question"
-                        on={answersOn}
-                        onClick={() => {
-                          toggleAnswers();
-                          setToolsOpen(false);
-                        }}
-                      />
-                    )}
-                    {answersUrl && storageNs && (
-                      <ToolRow
-                        icon={<ListChecks size={15} />}
-                        title="Triage"
-                        sub="Rate each question before you start"
-                        busy={answerState === 'loading'}
-                        onClick={openTriage}
-                      />
-                    )}
-                    {answersUrl && scheme && storageNs && (
-                      <ToolRow
-                        icon={<PenLine size={15} />}
-                        title="Self-mark"
-                        sub="Score yourself against the scheme"
-                        on={selfMarkOn}
-                        busy={selfMarkOn && answerState === 'loading'}
-                        onClick={toggleSelfMark}
-                      />
-                    )}
-                    {answersUrl && scheme && storageNs && (
-                      <ToolRow
-                        icon={<Repeat2 size={15} />}
-                        title="The Full Loop"
-                        sub="Work the paper question by question — attempt, reveal, mark"
-                        on={!!loop}
-                        busy={!!loop && answerState === 'loading'}
-                        onClick={startLoop}
-                      />
-                    )}
-                    <ToolRow
-                      icon={<Highlighter size={15} />}
-                      title="Command words"
-                      sub="Decode what each question demands"
-                      on={decodeOn}
-                      busy={decodeOn && scanState === 'loading'}
-                      onClick={() => toggleTool('decode')}
-                    />
-                    {timing && (
-                      <ToolRow
-                        icon={<Play size={15} />}
-                        title="Exam mode"
-                        sub={`Clock set to ${timing.totalMinutes} min`}
-                        on={examOn}
-                        onClick={() => {
-                          setExamOn(v => {
-                            const next = !v;
-                            setRunning(next);
-                            if (next) setElapsed(0);
-                            return next;
-                          });
-                          setToolsOpen(false);
-                        }}
-                      />
-                    )}
-                    {topics && (
-                      <ToolRow
-                        icon={<TrendingUp size={15} />}
-                        title="Topics & frequency"
-                        sub="How often each topic comes up + drill it across years"
-                        on={topicsOn}
-                        busy={topicsOn && answerState === 'loading'}
-                        onClick={toggleTopics}
-                      />
-                    )}
-                    {formulae && (
-                      <ToolRow
-                        icon={<BookOpen size={15} />}
-                        title="Formulae & Tables"
-                        sub="Jump to the booklet section"
-                        onClick={openFormulae}
-                      />
-                    )}
-                    {scanState === 'error' && (
-                      <p className="px-3.5 py-2 text-[11px] text-zinc-500">
-                        Couldn’t read this paper’s text layer — overlays unavailable.
-                      </p>
-                    )}
-                  </MotionDiv>
-                )}
-              </AnimatePresence>
+              <ArrowLeft aria-hidden="true" />
+            </Button>
+            <div className="pvc-heading">
+              <p className="pvc-title">{title}</p>
+              {subtitle && <p className="pvc-subtitle">{subtitle}</p>}
             </div>
-          )}
+            <div className="pvc-controls">
+              {scheme && (
+                <Tabs className="pvc-document" value={side} onValueChange={next => setSide(next as Side)}>
+                  <TabsList aria-label="Paper or marking scheme">
+                    <TabsTrigger value="paper">Paper</TabsTrigger>
+                    <TabsTrigger value="scheme">Scheme</TabsTrigger>
+                  </TabsList>
+                </Tabs>
+              )}
+              {/* Answers — the flagship per-question marking-scheme reveal. A
+                  standalone one-tap toggle (not buried in the Tools menu), shown
+                  whenever this paper has a verified answer map. */}
+              {side === 'paper' && answersUrl && (
+                <Button
+                  className="pvc-answers"
+                  onClick={toggleAnswers}
+                  aria-pressed={answersOn}
+                  aria-label="Show the marking scheme beside each question"
+                >
+                  <span className="pvc-answers-mark" aria-hidden="true" />Answers
+                </Button>
+              )}
+              {/* The Kobra menu dismisses itself on an outside tap and on
+                  Escape; it stays controlled so every tool can still close it. */}
+              {side === 'paper' && (
+                <DropdownMenu open={toolsOpen} onOpenChange={open => setToolsOpen(open)}>
+                  <DropdownMenuTrigger
+                    render={
+                      <Button
+                        variant="outline"
+                        className="nsu-ink-outline pvc-tools"
+                        data-active={activeToolCount > 0 || undefined}
+                        aria-label="Study tools for this paper"
+                      />
+                    }
+                  >
+                    <SlidersHorizontal aria-hidden="true" />
+                    <span className="pvc-tools-label">Tools</span>
+                    {activeToolCount > 0 && (
+                      <span className="pvc-count" aria-hidden="true">{activeToolCount}</span>
+                    )}
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" sideOffset={8} className="pvc-menu">
+                    <KobraScope className="nsu-paper-viewer">
+                      <p className="pvc-menu-label">Study tools</p>
+                      {answersUrl && (
+                        <ToolRow
+                          icon={<BookOpenCheck />}
+                          title="Answers"
+                          sub="Marking scheme beside each question"
+                          on={answersOn}
+                          onClick={() => {
+                            toggleAnswers();
+                            setToolsOpen(false);
+                          }}
+                        />
+                      )}
+                      {answersUrl && storageNs && (
+                        <ToolRow
+                          icon={<ListChecks />}
+                          title="Triage"
+                          sub="Rate each question before you start"
+                          busy={answerState === 'loading'}
+                          onClick={openTriage}
+                        />
+                      )}
+                      {answersUrl && scheme && storageNs && (
+                        <ToolRow
+                          icon={<PenLine />}
+                          title="Self-mark"
+                          sub="Score yourself against the scheme"
+                          on={selfMarkOn}
+                          busy={selfMarkOn && answerState === 'loading'}
+                          onClick={toggleSelfMark}
+                        />
+                      )}
+                      {answersUrl && scheme && storageNs && (
+                        <ToolRow
+                          icon={<Repeat2 />}
+                          title="The Full Loop"
+                          sub="Work the paper question by question — attempt, reveal, mark"
+                          on={!!loop}
+                          busy={!!loop && answerState === 'loading'}
+                          onClick={startLoop}
+                        />
+                      )}
+                      <ToolRow
+                        icon={<Highlighter />}
+                        title="Command words"
+                        sub="Decode what each question demands"
+                        on={decodeOn}
+                        busy={decodeOn && scanState === 'loading'}
+                        keepOpen
+                        onClick={() => toggleTool('decode')}
+                      />
+                      {timing && (
+                        <ToolRow
+                          icon={<Play />}
+                          title="Exam mode"
+                          sub={`Clock set to ${timing.totalMinutes} min`}
+                          on={examOn}
+                          onClick={() => {
+                            setExamOn(v => {
+                              const next = !v;
+                              setRunning(next);
+                              if (next) setElapsed(0);
+                              return next;
+                            });
+                            setToolsOpen(false);
+                          }}
+                        />
+                      )}
+                      {topics && (
+                        <ToolRow
+                          icon={<TrendingUp />}
+                          title="Topics & frequency"
+                          sub="How often each topic comes up + drill it across years"
+                          on={topicsOn}
+                          busy={topicsOn && answerState === 'loading'}
+                          keepOpen
+                          onClick={toggleTopics}
+                        />
+                      )}
+                      {formulae && (
+                        <ToolRow
+                          icon={<BookOpen />}
+                          title="Formulae & Tables"
+                          sub="Jump to the booklet section"
+                          onClick={openFormulae}
+                        />
+                      )}
+                      {scanState === 'error' && (
+                        <p className="pvc-menu-note">
+                          Couldn’t read this paper’s text layer — overlays unavailable.
+                        </p>
+                      )}
+                    </KobraScope>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              )}
+            </div>
+            <a
+              href={activeDoc.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open the ${side} in your browser or download it${activeDoc.bytes ? ` (${prettyBytes(activeDoc.bytes)})` : ''}`}
+              className="nsu-ink-outline pvc-link"
+            >
+              <Download aria-hidden="true" />
+            </a>
           </div>
-          <a
-            href={activeDoc.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Open the ${side} in your browser or download it${activeDoc.bytes ? ` (${prettyBytes(activeDoc.bytes)})` : ''}`}
-            className="p-2 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-          >
-            <Download size={17} />
-          </a>
         </div>
-      </div>
+      </KobraScope>
 
       {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
         <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
@@ -1463,17 +1470,10 @@ const Viewer: React.FC<ViewerProps> = ({
         {schemeBeside && schemeContent}
       </aside>}
       </div>
-      {/* Footer: zoom + page scrubber */}
+      {/* Footer: zoom + page position, Kobra chrome (viewer-chrome.css). */}
       {session.state === 'ready' && (
-        <div
-          className="shrink-0 bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800"
-          style={{
-            paddingTop: 8,
-            paddingBottom: 'calc(8px + var(--sab, 0px))',
-            paddingLeft: 'calc(16px + var(--sal, 0px))',
-            paddingRight: 'calc(16px + var(--sar, 0px))',
-          }}
-        >
+        <KobraScope className="nsu-paper-viewer">
+        <div className="pvc-bottom">
           {/* Minute targets are writing-speed sensitive — say whose speed they
               assume, with the one-line route into the 2-min calibration. */}
           {paceOn && side === 'paper' && timing && hasAnyTokens && (
@@ -1519,55 +1519,98 @@ const Viewer: React.FC<ViewerProps> = ({
               </div>
             </div>
           )}
-          <div className="flex items-center gap-3 max-w-3xl mx-auto">
-            <button onClick={() => zoomBy(-1)} disabled={zoom === ZOOM_STEPS[0]} aria-label="Zoom out" className="p-1.5 rounded-lg text-zinc-500 disabled:opacity-30">
-              <ZoomOut size={17} />
-            </button>
-            <button onClick={() => zoomBy(1)} disabled={zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]} aria-label="Zoom in" className="p-1.5 rounded-lg text-zinc-500 disabled:opacity-30">
-              <ZoomIn size={17} />
-            </button>
-            {session.numPages > 3 ? (
-              <>
-                <input
-                  type="range"
-                  min={1}
-                  max={session.numPages}
-                  value={scrubbing ?? session.page}
-                  onChange={e => setScrubbing(Number(e.target.value))}
-                  onPointerUp={() => {
-                    if (scrubbing != null) jumpToPage(scrubbing);
-                    setScrubbing(null);
-                  }}
-                  onKeyUp={() => {
-                    if (scrubbing != null) jumpToPage(scrubbing);
-                    setScrubbing(null);
-                  }}
-                  aria-label={`Go to page, currently page ${session.page} of ${session.numPages}`}
-                  className="flex-1 accent-[#F26B1F]"
-                />
-                <span className="text-[12px] tabular-nums text-zinc-500 whitespace-nowrap">
-                  {scrubbing ?? session.page} / {session.numPages}
-                </span>
-              </>
-            ) : (
-              <span className="flex-1 text-right text-[12px] tabular-nums text-zinc-500">
-                {session.page} / {session.numPages}
-              </span>
-            )}
+          <div className="pvc-pagebar">
+            <div className="pvc-zoom">
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(-1)}
+                disabled={zoom === ZOOM_STEPS[0]}
+                aria-label="Zoom out"
+              >
+                <ZoomOut aria-hidden="true" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(1)}
+                disabled={zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
+                aria-label="Zoom in"
+              >
+                <ZoomIn aria-hidden="true" />
+              </Button>
+            </div>
+            <div className="pvc-position">
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => jumpToPage(session.page - 1)}
+                disabled={session.page <= 1}
+                aria-label="Previous page"
+              >
+                <ChevronLeft aria-hidden="true" />
+              </Button>
+              <PagePosition
+                page={scrubbing ?? session.page}
+                numPages={session.numPages}
+                scrubber={
+                  // More than three pages: drag (or arrow-key) to any page,
+                  // landing on release, as the range always did.
+                  session.numPages > 3 ? (
+                    <input
+                      type="range"
+                      min={1}
+                      max={session.numPages}
+                      value={scrubbing ?? session.page}
+                      onChange={e => setScrubbing(Number(e.target.value))}
+                      onPointerUp={() => {
+                        if (scrubbing != null) jumpToPage(scrubbing);
+                        setScrubbing(null);
+                      }}
+                      onKeyUp={() => {
+                        if (scrubbing != null) jumpToPage(scrubbing);
+                        setScrubbing(null);
+                      }}
+                      aria-label={`Go to page, currently page ${session.page} of ${session.numPages}`}
+                      className="pvc-range"
+                    />
+                  ) : null
+                }
+              />
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => jumpToPage(session.page + 1)}
+                disabled={session.page >= session.numPages}
+                aria-label="Next page"
+              >
+                <ChevronRight aria-hidden="true" />
+              </Button>
+            </div>
           </div>
         </div>
+        </KobraScope>
       )}
 
-      {/* Answers map fetch status (chips appear once ready). */}
-      {(answersOn || topicsOn) && side === 'paper' && answerState !== 'idle' && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
-        >
-          {answerState === 'loading' ? 'Loading question tools…' : 'Couldn’t load question tools — try again later.'}
+      {/* Status toasts and notices, where the floating status pills sat. */}
+      <KobraScope className="nsu-paper-viewer">
+        <div className="pvc-toasts">
+          <Toasts position="bottom-center" />
         </div>
-      )}
+        {/* Scanned paper (no text layer) — explain why overlays are absent. Too
+            long for a one-line toast, so it is the house hairline notice. */}
+        {side === 'paper' && (paceOn || decodeOn) && scanState === 'idle' && docTokens && !hasAnyTokens && (
+          <Alert variant="info" role="status" aria-live="polite" className="pvc-notice">
+            <AlertDescription>
+              This paper is a scanned image — its text can’t be read for on-paper tools.
+            </AlertDescription>
+          </Alert>
+        )}
+      </KobraScope>
 
       {/* Cross-year topic sheet — every sibling question for this subtopic. */}
       <AnimatePresence>
@@ -1811,28 +1854,6 @@ const Viewer: React.FC<ViewerProps> = ({
           </div>
         );
       })()}
-
-      {/* Text-scan status while the overlay tools read the paper. */}
-      {side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
-        >
-          <span className="w-3 h-3 rounded-full border-2 border-white/40 border-t-white animate-spin" aria-hidden />
-          Reading the paper…
-        </div>
-      )}
-      {/* Scanned paper (no text layer) — explain why overlays are absent. */}
-      {side === 'paper' && (paceOn || decodeOn) && scanState === 'idle' && docTokens && !hasAnyTokens && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] max-w-[86%] px-3.5 py-2 rounded-full text-[12px] font-medium text-center bg-zinc-900/90 text-white shadow-lg"
-        >
-          This paper is a scanned image — its text can’t be read for on-paper tools.
-        </div>
-      )}
 
       {/* Handwriting-speed calibrator (F4) — opened from the tools menu or the
           pace footer line; result feeds straight back into the minute budgets. */}
@@ -2254,7 +2275,7 @@ const ExamClock: React.FC<{
   const frac = Math.min(1, Math.max(0, elapsed / totalSec));
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 bottom-[76px] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
+      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(76px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
       role="timer"
       aria-live="off"
     >
@@ -2287,41 +2308,95 @@ const ExamClock: React.FC<{
 
 // ─── tools-menu row ─────────────────────────────────────────
 
+/** One row of the Kobra Tools menu. A tool that switches on and off is a
+ *  menuitemcheckbox whose Switch shows its state; the rest open something. */
 const ToolRow: React.FC<{
   icon: React.ReactNode;
   title: string;
   sub: string;
   on?: boolean;
   busy?: boolean;
+  /** Leave the menu open after the tap, for a tool the student may flip again. */
+  keepOpen?: boolean;
   onClick: () => void;
-}> = ({ icon, title, sub, on, busy, onClick }) => (
-  <button
-    role="menuitemcheckbox"
-    aria-checked={!!on}
-    onClick={onClick}
-    className="w-full flex items-center gap-3 px-3.5 py-2.5 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/60 transition-colors"
-  >
-    <span
-      className="shrink-0 w-8 h-8 rounded-md flex items-center justify-center border-[1.5px] border-[#1A1A1A] dark:border-zinc-100"
-      style={{ backgroundColor: on ? '#F26B1F' : '#FFFFFF', color: on ? '#fff' : '#1A1A1A' }}
+}> = ({ icon, title, sub, on, busy, keepOpen, onClick }) => {
+  const toggle = on !== undefined;
+  return (
+    <DropdownMenuItem
+      className="pvc-tool"
+      closeOnClick={!keepOpen}
+      onClick={onClick}
+      {...(toggle ? { role: 'menuitemcheckbox', 'aria-checked': on } : {})}
     >
-      {busy ? <span className="w-3.5 h-3.5 rounded-full border-2 border-current/40 border-t-current animate-spin" /> : icon}
-    </span>
-    <span className="flex-1 min-w-0">
-      <span className="block text-[13px] font-semibold text-zinc-900 dark:text-zinc-100">{title}</span>
-      <span className="block text-[11px] text-zinc-500 truncate">{sub}</span>
-    </span>
-    {on !== undefined && (
-      <span
-        className="shrink-0 w-9 h-5 rounded-full p-0.5 transition-colors"
-        style={{ backgroundColor: on ? '#F26B1F' : '#d0cdc8' }}
-        aria-hidden
-      >
-        <span className="block w-4 h-4 rounded-full bg-white transition-transform" style={{ transform: on ? 'translateX(16px)' : 'none' }} />
+      <span className="pvc-tool-icon" data-on={on || undefined} aria-hidden="true">
+        {busy ? <Spinner /> : icon}
       </span>
-    )}
-  </button>
+      <span className="pvc-tool-copy">
+        <strong>{title}</strong>
+        <small>{sub}</small>
+      </span>
+      {toggle ? (
+        <span className="pvc-tool-switch" aria-hidden="true">
+          <Switch checked={on} tabIndex={-1} />
+        </span>
+      ) : (
+        <ArrowUpRight className="pvc-tool-open" aria-hidden="true" />
+      )}
+    </DropdownMenuItem>
+  );
+};
+
+// ─── page position ──────────────────────────────────────────
+
+/** Where the reader is: a serif page count over a Kobra Progress (the runtime
+ *  ships no Slider). When a page range input comes with it, that input is the
+ *  control, laid over the bar, and the progress is its picture. */
+const PagePosition: React.FC<{ page: number; numPages: number; scrubber: React.ReactNode }> = ({
+  page,
+  numPages,
+  scrubber,
+}) => (
+  <div className="pvc-scrub">
+    <Progress
+      className="pvc-progress"
+      // The fill ends under the range thumb: page 1 at the start, the last page at the end.
+      value={numPages > 1 ? ((page - 1) / (numPages - 1)) * 100 : 100}
+      getAriaValueText={() => `Page ${page} of ${numPages}`}
+      aria-hidden={scrubber ? true : undefined}
+    >
+      <ProgressLabel className="pvc-page-count">
+        <span className="pvc-sr">Page </span>
+        {page} <span className="pvc-of">of</span> {numPages}
+      </ProgressLabel>
+    </Progress>
+    {scrubber}
+  </div>
 );
+
+// ─── status toasts ──────────────────────────────────────────
+
+type StatusToast = { message: string; state: 'pending' | 'error' | 'info' };
+/** setTimeout's ceiling: a settled status stays until it clears. */
+const UNTIL_CLEARED = 2 ** 31 - 1;
+
+/** Reports a viewer status through the runtime toast, where the floating
+ *  status pill used to be: shown while the status holds, then let go once it
+ *  clears, as the pill went with its condition. */
+function useStatusToast(id: string, status: StatusToast | null) {
+  const shown = useRef<string | null>(null);
+  const message = status?.message;
+  const state = status?.state;
+  useEffect(() => {
+    if (message && state) {
+      shown.current = message;
+      toast(state === 'pending' ? { id, message, state } : { id, message, state, lifetime: UNTIL_CLEARED });
+    } else if (shown.current) {
+      // Same toast, no state: it drops its mark and leaves.
+      toast({ id, message: shown.current, lifetime: 200 });
+      shown.current = null;
+    }
+  }, [id, message, state]);
+}
 
 // ─── command-word decoder content ───────────────────────────
 
@@ -2686,7 +2761,7 @@ const RevealContent: React.FC<{
                     className="px-2.5 py-1 rounded-full text-[11.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
                     style={{ backgroundColor: '#fff', borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
                   >
-                    {s.year} · Q{s.n} →
+                    {s.year} · {questionLabel(s, { short: true })} →
                   </button>
                 ))}
               </div>

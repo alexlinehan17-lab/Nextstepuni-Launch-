@@ -33,6 +33,7 @@
  */
 
 import type {
+  GeographyChoiceOption,
   GeographyAllocation,
   GeographyAllocationGroup,
   GeographyAnswerRow,
@@ -470,5 +471,912 @@ export function tryParseGeographyAllocation(card: GeographyAllocationSource): Ge
 
 export const parseGeographyAllocation = (card: GeographyAllocationSource): GeographyAllocation | undefined => {
   const result = tryParseGeographyAllocation(card);
+  return result.ok ? result.allocation : undefined;
+};
+
+// ---------------------------------------------------------------------------
+// Reviewed criteria, 2010–2026.
+//
+// Since the 2010–2026 review (scripts/markbank/authoring/geography_review.py
+// and its per-sitting ledgers) every Geography card carries one criterion per
+// published allocation line, each with the marks the scheme can award
+// (`permittedMarks`). The reveal still printed each criterion's lines as grey
+// text over number buttons. This section cuts one criterion's lines into rows
+// the way the whole-question parser above does, under two gates instead of
+// one: the rows reach the criterion's printed maximum, and every total they
+// can produce is a mark the reviewed ledger permits. The parser and the
+// ledger read the same scheme page independently, so they have to agree.
+//
+// The lines arrive as the review lifted them, the printed cells of one row
+// joined by " · ". The shapes read, beyond the notations above:
+//   Mid-Ocean Ridge · E · 2 marks                  answer cells, then the price
+//   (ii) · 5 marks · Transform /Transverse /Tear   the price before the answer
+//   4 features @ 4 marks each: · Shown 3 marks (graded 3/1/0)   one unit of several:
+//                                                  a price larger than the
+//                                                  criterion is its heading
+//   Five terms @ 2 marks each as follows: / Crater an answer the scheme prices
+//                                                  only in its heading, so at
+//                                                  the reviewed criterion's value
+//   Explaining how acid rain occurs / 2 SRPs @ 3 marks each · 6 marks
+//                                                  a label line, then its SRPs
+//   Number of aspects · 3 @ 20 marks each · 4 @ 15 marks each / For each aspect:
+//                                                  two routes, one column each
+//   Overall coherence: · 7/6 marks graded          per-unit alternatives; the
+//                                                  criterion's total picks one
+//   Excellent · 20 · Excellent, comprehensive response …   a band table
+
+export interface GeographyCriterionSource {
+  maxMarks: number;
+  permittedMarks: readonly number[];
+  guidanceKind: 'exact' | 'srp';
+  guidance: readonly string[];
+}
+
+export interface GeographyCriterionContext {
+  level: 'higher' | 'ordinary';
+  questionText: string;
+  /** The card's column headings ("Bar Chart · Pie Chart"), where one of its
+   *  criteria prints them over a two-route table and the others do not. */
+  columnLabels?: readonly string[];
+  /** The last answer of the criterion before this one, for a criterion whose
+   *  line is only a second price for the same printed slot ("2 + 2 marks"
+   *  under "Any two valid challenges explained @ 4 marks each 2 + 2 marks"). */
+  previousRowText?: string;
+  /** The printed part the card practises, "(i)" or "(ii)", for a Part One
+   *  table the scheme prints as two columns on one line. */
+  part?: string;
+}
+
+const CELL = ' · ';
+const CRITERION_PART = /^\(((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)|[a-h])\)\s*(?:·\s*)?/i;
+const BAND_LINE = /^(Excellent|Very Good|Good|Fair|Weak|Poor)\s+·\s+(\d+)\s+·\s+(.+)$/;
+const COUNT = `(\\d+|${NUMBER_WORD})`;
+const UNIT = String.raw`\s*(?:marks?|m)\b`;
+const LADDER = String.raw`(?:\s+graded\*?)?(?:\s*\(\s*(?:graded\s*)?(\d+(?:\s*\/\s*\d+)+)\s*\))?`;
+/** "Total 10m", "Sub-total 25 marks", "5 marks total": furniture on a criterion. */
+const CRITERION_TOTAL = /\b(?:sub\s*[-–]?\s*)?total\s*:?\s*\d+\s*(?:marks?|m)\b\.?|\b\d+\s*(?:marks?|m)\s+total\b\.?/gi;
+/** A cell that is nothing but a price ("4 marks", "8 x SRPs", "3 @ 20 marks
+ *  each", "1+1 mark (Circle & Centred)"): one column of a two-route table. */
+const PRICE_CELL = new RegExp(String.raw`^(?:${COUNT}\s*@\s*)?\d+(?:\s*[/+]\s*\d+)*\s*(?:x\s*SRP'?s?|(?:marks?|m)\b(?:\s+each)?(?:\s+graded\*?)?(?:\s*\([^)]*\))?)\.?$`, 'i');
+const HEADING_PHRASE = /^(?:each question|sketch|.*\bas follows|.*:)$/i;
+/** The scheme prices a slot without printing an answer for it: "Tectonic
+ *  plate named", "Two definitions", or a numbered slot ("Use 1", "Reason 2"). */
+const CRITERION_TARIFF_WORDS = new RegExp(`${TARIFF_ONLY.source.replace(/\)\\b$/, ')s?\\b')}|\\b(?:definition|statement|location|evidence|reference)s?\\b|\\b(?:naming|identifying|correctly)\\b|^[A-Z][a-z]+(?: [a-z]+)? \\d$`, 'i');
+/** …unless it prints an example after all ("Any valid extrusive igneous rock e.g. Basalt"). */
+const isTariff = (text: string) => CRITERION_TARIFF_WORDS.test(text) && !/\be\.g\./i.test(text);
+
+type Scan =
+  | { kind: 'row'; marks: number; steps?: number[]; alternatives?: number[] }
+  | { kind: 'srp'; count: number; min?: number; marks: number; total?: number }
+  | { kind: 'each'; unit: number; count?: number; total?: number; graded?: number[] | 'any' }
+  | { kind: 'times'; count: number; unit: number; steps: number[] };
+
+interface Scanned { text: string; raw: string; price: Scan; newCell: boolean }
+
+/**
+ * Every price on one line, most specific first so "9 SRPs @ 3 marks each 27
+ * marks" is one SRP part, not a 27-mark answer:
+ *   SRP@   9 SRPs @ 3 marks each 27 marks      SRPn   Impact identified 1 SRP 3m
+ *   SRPx   14 x SRPs · 6/7 x SRPs              TIMES  2 x (2 marks graded + 1 mark)
+ *   N@     3 @ 20 marks each · 7 @ 3 marks each 21 marks
+ *   @      Two examples @ 2m each 4m           EACH   2m each graded (2/1/0)
+ *   SUM    3 marks + 2 marks · 1+1m            ALT    7/6 marks graded
+ *   GRADED 4 marks (Graded 4-2-0) · 3 marks graded · 4 marks (4/0)
+ *   LADDER 3/1/0m                              BARE   2 marks
+ */
+const CRITERION_PRICE = new RegExp(String.raw`(.*?)\s*(?:` +
+  String.raw`${COUNT}\s*SRP'?s?\s*@\s*(\d+)${UNIT}(?:\s*each)?(?:\s+graded)?\.?(?:\s*⟨?\s*((?:\d+${UNIT}\s*\+\s*)*\d+)${UNIT}\s*⟩?)?` +
+  String.raw`|${COUNT}\s*SRP'?s?\s*⟨?\s*((?:\d+${UNIT}\s*\+\s*)*\d+)${UNIT}\s*⟩?` +
+  String.raw`|(\d+)(?:\s*\/\s*(\d+))?\s*x\s*SRP'?s?\.?` +
+  String.raw`|${COUNT}\s*x\s*\(\s*((?:\d+${UNIT}(?:\s+graded)?\s*\+\s*)+\d+${UNIT}(?:\s+graded)?)\s*\)` +
+  String.raw`|${COUNT}\s*@\s*(\d+)${UNIT}(?:\s*each)?${LADDER}\.?(?:\s*(\d+)${UNIT})?` +
+  String.raw`|@\s*(\d+)${UNIT}(?:\s+each)?${LADDER}\.?(?:\s*(\d+)${UNIT}(?:\s+(?:graded|each)\b)?)?` +
+  String.raw`|(\d+)${UNIT}\s+each\b${LADDER}\.?` +
+  String.raw`|((?:\d+(?:${UNIT})?\s*\+\s*)+\d+)${UNIT}` +
+  String.raw`|(\d+(?:\/\d+)+)${UNIT}\s+graded\b\*?` +
+  String.raw`|⟨?\s*(\d+)${UNIT}\s*(?:graded\*?)?\s*\(\s*(?:graded\s*)?(\d+(?:\s*[/-]\s*\d+)+)\s*\)?\s*⟩?` +
+  String.raw`|(\d+)${UNIT}\s+graded\b\*?` +
+  String.raw`|(\d+(?:\/\d+)+)\s*m\b` +
+  String.raw`|⟨?\s*(\d+)${UNIT}\s*⟩?` +
+  String.raw`)`, 'gi');
+
+const numberOf = (value: string) => NUMBER_WORDS[value.toLowerCase()] ?? Number(value);
+const ladderOf = (value: string) => [...new Set(value.split(/\s*[/-]\s*/).map(Number))]
+  .filter(step => step > 0).sort((a, b) => a - b);
+const upTo = (marks: number) => Array.from({ length: marks }, (_, index) => index + 1);
+const addSets = (a: Iterable<number>, b: Iterable<number>) => {
+  const out = new Set<number>();
+  for (const x of a) for (const y of b) out.add(x + y);
+  return out;
+};
+/** Every non-zero total reachable by awarding any value from each part. */
+const reachable = (parts: number[][]) => {
+  let totals = new Set([0]);
+  for (const values of parts) totals = addSets(totals, [0, ...values]);
+  return [...totals].filter(total => total > 0).sort((a, b) => a - b);
+};
+/** The count a heading names, never an adjective ("six figure grid reference"). */
+const countOf = (text: string) => countIn(text.replace(/\b(?:six|6)[- ]figure\b/gi, ''));
+/** A row or label as printed, with cell dividers, joiners and unmatched brackets trimmed. */
+const tidyCell = (value: string) => {
+  let out = tidy(value.replace(/\u2060/g, '').replace(/^\*\s*/, '')
+    .replace(/^(?:[·:=;]\s*)+|(?:\s*[·:=;])+$/g, '')
+    .replace(/\s+(?:for|=)$/i, ''));
+  for (let changed = true; changed;) {
+    const before = out;
+    if (/^[([]/.test(out) && !/[)\]]/.test(out)) out = out.slice(1).trim();
+    if (/[)\]]$/.test(out) && !/[([]/.test(out)) out = out.slice(0, -1).trim();
+    if (/[([]$/.test(out)) out = out.slice(0, -1).trim();
+    out = tidy(out.replace(/^(?:[·:=;]\s*)+|(?:\s*[·:=;])+$/g, ''));
+    changed = out !== before;
+  }
+  return out;
+};
+
+/** "274m" or "2,000m" on a criterion worth 2 is a height: hide it from the price reader. */
+function guardFigures(line: string, maxMarks: number): string {
+  // A figure inside a sum ("4m + 3m + 3m") is a price whatever its size.
+  return line.replace(/(\+\s*)?(\d+(?:[.,]\d+)*)\s*(m|marks?)\b(?!\s*\+)/gi, (whole, plus: string | undefined, digits: string, unit: string) =>
+    !plus && (/[.,]/.test(digits) || Number(digits) > maxMarks) ? `${digits}\u2060${unit}` : whole);
+}
+
+/** Join a price to the cells that complete it: "@ · 3 marks each · 27 marks"
+ *  reads as one price, "6.1 · 3m" as an answer and its price. Two prices in
+ *  separate cells ("4 marks · 3 marks") are two columns and stay apart. */
+function joinPriceCells(line: string): string {
+  return line
+    .replace(/\s·\s(?=@)/g, ' ').replace(/@\s·\s/g, '@ ')
+    // "@ 3m + 2m" prices a sum, not one unit of several.
+    .replace(/@\s*(?=\d+\s*(?:marks?|m)?\s*\+)/gi, '')
+    .replace(/(\beach\.?|\bSRP'?s?|\bgraded|\))\s·\s(?=⟨?\d+\s*(?:marks?|m)\b)/gi, '$1 ')
+    // "@ 20 marks = · 40 marks": the total after an equals sign.
+    .replace(/(\b(?:marks?|m|each))\s*=\s*(?:·\s*)?(?=\d+\s*(?:marks?|m)\b)/gi, '$1 ')
+    // "4m graded · (4/2/0)": the ladder in the next cell.
+    .replace(/(\bgraded)\s·\s(?=\()/gi, '$1 ');
+}
+
+/** What one scanned price is worth at most (an SRP part at the paper's rate). */
+function scannedValue(item: Scanned, srpMarks: number): number {
+  const price = item.price;
+  if (price.kind === 'row') return price.marks;
+  if (price.kind === 'srp') return price.min === undefined ? price.count * (price.marks || srpMarks) : 0;
+  if (price.kind === 'times') return price.count * price.unit;
+  const count = price.count ?? countOf(item.text);
+  return price.total ?? (count ? count * price.unit : price.unit);
+}
+
+export function scanCriterionLine(source: string, maxMarks: number, srpMarks = 0): { items: Scanned[]; trailing: string } {
+  // A figure larger than the criterion is an answer ("50m", "274m"), not a price.
+  const line = guardFigures(source, maxMarks);
+  const items: Scanned[] = [];
+  let last = 0;
+  CRITERION_PRICE.lastIndex = 0;
+  for (let match = CRITERION_PRICE.exec(line); match; match = CRITERION_PRICE.exec(line)) {
+    if (match[0].length === 0) { CRITERION_PRICE.lastIndex += 1; continue; }
+    const [whole, before,
+      srpAtCount, srpAtEach, srpAtTotal,
+      srpNCount, srpNTotal,
+      srpXa, srpXb,
+      timesCount, timesUnit,
+      nAtCount, nAtUnit, nAtLadder, nAtTotal,
+      atUnit, atLadder, atTotal,
+      eachUnit, eachLadder,
+      sum,
+      altMarks,
+      gradedMarks, gradedLadder,
+      gradedAny,
+      bareLadder,
+      bare] = match;
+    const added = (value: string) => (value.match(/\d+/g) ?? []).map(Number).reduce((a, b) => a + b, 0);
+    const graded = (ladder: string | undefined) => ladder ? ladderOf(ladder) : /graded/i.test(whole) ? 'any' as const : undefined;
+    let price: Scan;
+    if (srpAtCount) {
+      price = { kind: 'srp', count: numberOf(srpAtCount), marks: Number(srpAtEach), total: srpAtTotal ? added(srpAtTotal) : undefined };
+    } else if (srpNCount) {
+      const count = numberOf(srpNCount); const total = added(srpNTotal);
+      price = { kind: 'srp', count, marks: total / count, total };
+    } else if (srpXa) {
+      const a = Number(srpXa); const b = srpXb ? Number(srpXb) : a;
+      price = { kind: 'srp', count: Math.max(a, b), min: a === b ? undefined : Math.min(a, b), marks: 0 };
+    } else if (timesCount) {
+      // "2 x (2 marks graded + 1 mark)": each part graded or whole, the unit twice.
+      const parts = timesUnit.split('+').map(part => {
+        const marks = Number(part.match(/\d+/)![0]);
+        return /graded/i.test(part) ? upTo(marks) : [marks];
+      });
+      const unit = parts.reduce((total, values) => total + Math.max(...values), 0);
+      price = { kind: 'times', count: numberOf(timesCount), unit, steps: reachable(parts) };
+    } else if (nAtCount) {
+      price = { kind: 'each', count: numberOf(nAtCount), unit: Number(nAtUnit), total: nAtTotal ? Number(nAtTotal) : undefined, graded: graded(nAtLadder) };
+    } else if (atUnit) {
+      price = { kind: 'each', unit: Number(atUnit), total: atTotal ? Number(atTotal) : undefined, graded: graded(atLadder) };
+    } else if (eachUnit) {
+      price = { kind: 'each', unit: Number(eachUnit), graded: graded(eachLadder) };
+    } else if (sum) {
+      const addends = (sum.match(/\d+/g) ?? []).map(Number);
+      price = { kind: 'row', marks: addends.reduce((a, b) => a + b, 0), steps: reachable(addends.map(value => [value])) };
+    } else if (altMarks) {
+      // "7/6 marks graded": one value per unit; the criterion's total picks it.
+      const alternatives = altMarks.split('/').map(Number);
+      price = { kind: 'row', marks: alternatives[0], steps: upTo(alternatives[0]), alternatives };
+    } else if (gradedMarks) {
+      const marks = Number(gradedMarks);
+      const steps = ladderOf(gradedLadder).filter(step => step <= marks);
+      price = { kind: 'row', marks, steps: steps.length > 1 ? steps : undefined };
+    } else if (gradedAny) {
+      const marks = Number(gradedAny);
+      price = { kind: 'row', marks, steps: marks > 1 ? upTo(marks) : undefined };
+    } else if (bareLadder) {
+      const steps = ladderOf(bareLadder);
+      price = { kind: 'row', marks: Math.max(...steps), steps: steps.length > 1 ? steps : undefined };
+    } else {
+      price = { kind: 'row', marks: Number(bare) };
+    }
+    const newCell = items.length === 0 || /·/.test(before);
+    const previous = items[items.length - 1];
+    // The same price printed again in the next column ("2 marks each graded ·
+    // 2 marks each graded") is that column's copy, not a second answer.
+    if (previous && !tidyCell(before) && whole.replace(/[\s·]/g, '') === previous.raw.slice(previous.text.length).replace(/[\s·]/g, '')) {
+      last = CRITERION_PRICE.lastIndex;
+      continue;
+    }
+    items.push({ text: before, raw: whole, price, newCell });
+    last = CRITERION_PRICE.lastIndex;
+  }
+  // A last cell that only restates the line's total ("… 1 SRP @ 3m · 3m",
+  // "Two reasons identified @ 3m + 2m · 5m") is the total, not a second answer.
+  const final = items[items.length - 1];
+  if (items.length > 1 && final.price.kind === 'row' && !final.price.steps && !tidyCell(final.text)) {
+    const before = items.slice(0, -1).reduce((total, item) => total + scannedValue(item, srpMarks), 0);
+    if (before === final.price.marks) items.pop();
+  }
+  return { items, trailing: line.slice(last).replace(/\u2060/g, '') };
+}
+
+/** Every total a student can claim from an allocation. */
+export function geographyAchievable(allocation: GeographyAllocation): Set<number> {
+  if (allocation.choice) {
+    const out = new Set<number>([0]);
+    for (const option of allocation.choice.options) {
+      if (option.allocation) for (const mark of geographyAchievable(option.allocation)) out.add(mark);
+      else if (option.marks !== undefined) out.add(option.marks);
+    }
+    return out;
+  }
+  let total = new Set([0]);
+  for (const group of allocation.groups) {
+    let unit = new Set([0]);
+    for (const row of group.rows) unit = addSets(unit, [0, ...(row.steps ?? [row.marks])]);
+    for (const srp of group.srp) {
+      if (srp.min !== undefined) continue;
+      unit = addSets(unit, Array.from({ length: srp.count + 1 }, (_, index) => index * srp.marks));
+    }
+    for (let index = 0; index < (group.repeat?.count ?? 1); index += 1) total = addSets(total, unit);
+  }
+  const pool = allocation.srpPool;
+  if (pool) total = addSets(total, Array.from({ length: pool.count + 1 }, (_, index) => index * pool.marks));
+  return total;
+}
+
+/** The most an allocation can award. */
+export function geographyAllocationMax(allocation: GeographyAllocation): number {
+  if (allocation.choice) {
+    return Math.max(0, ...allocation.choice.options.map(option =>
+      option.allocation ? geographyAllocationMax(option.allocation) : option.marks ?? 0));
+  }
+  let total = 0;
+  for (const group of allocation.groups) {
+    const unit = group.rows.reduce((sum, row) => sum + row.marks, 0)
+      + group.srp.reduce((sum, srp) => sum + (srp.min === undefined ? srp.count * srp.marks : 0), 0);
+    total += unit * (group.repeat?.count ?? 1);
+  }
+  if (allocation.srpPool) total += allocation.srpPool.count * allocation.srpPool.marks;
+  return total;
+}
+
+/** The two gates: the rows reach the maximum and claim only permitted marks. */
+function reconcileCriterion(allocation: GeographyAllocation, criterion: GeographyCriterionSource): string | undefined {
+  const max = geographyAllocationMax(allocation);
+  if (max !== criterion.maxMarks) return `rows add to ${max}, criterion is ${criterion.maxMarks}`;
+  const permitted = new Set(criterion.permittedMarks);
+  const achievable = geographyAchievable(allocation);
+  const outside = [...achievable].filter(mark => !permitted.has(mark)).sort((a, b) => a - b);
+  if (outside.length) return `rows can claim ${outside.join('/')}, which the ledger does not permit`;
+  // A ledger that permits every whole mark ("graded", no ladder printed) may
+  // be met by rows that are stricter; any other ledger must be met exactly.
+  const everyMark = criterion.permittedMarks.length === criterion.maxMarks + 1;
+  const missing = [...permitted].filter(mark => !achievable.has(mark)).sort((a, b) => a - b);
+  if (!everyMark && missing.length) return `rows cannot claim ${missing.join('/')}, which the ledger permits`;
+  return undefined;
+}
+
+interface UnitResult { allocation: GeographyAllocation; headings: string[] }
+
+/**
+ * Part One tables print a letter column and a process column on one line
+ * ("B River · 2m + 2m", "C Q.3 (ii) (River) · 2m", "(D) Q.3 (ii) Erosion ·
+ * 2m"). Keep the cell for the card's own part and that cell's price. A cell
+ * in brackets is the paper's own pre-printed entry and carries no marks.
+ */
+const WELDED = /^(\(?[A-F]\)?)\s+(?:Q\.?\s*\d+\s*\(ii\)\s+)?(\(?[A-Z][a-z]+\)?)\s*·\s*(\d+m)(?:\s*\+\s*(\d+m))?$/;
+function weldedColumn(text: string, part: string | undefined): string {
+  if (part !== '(i)' && part !== '(ii)') return text;
+  const match = text.match(WELDED);
+  if (!match) return text;
+  const [, letter, word, first, second] = match;
+  const cell = part === '(i)' ? letter : word;
+  if (/^\(.*\)$/.test(cell)) return text;
+  return `${cell} · ${second && part === '(ii)' ? second : first}`;
+}
+
+/** One column of a criterion's lines, as rows. */
+function parseCriterionUnit(lines: readonly string[], criterion: GeographyCriterionSource,
+  context: GeographyCriterionContext): UnitResult | { error: string } {
+  const srpMarks = GEOGRAPHY_SRP_MARKS[context.level];
+  const max = criterion.maxMarks;
+  const parts = subQuestions(context.questionText);
+  const directions: string[] = [];
+  // Headings keep the line they were printed on, so they read in print order.
+  const headings: Array<{ at: number; text: string }> = [];
+  const heading = (at: number, text: string) => { if (text) headings.push({ at, text: joinPriceCells(text) }); };
+  let unitNoun: string | undefined;
+  interface Piece extends Scanned { line: number; demoted?: boolean }
+  interface Entry { at: number; clean: string; part?: string; pieces: Piece[]; text?: string }
+  const entries: Entry[] = [];
+
+  lines.forEach((raw, lineIndex) => {
+    let line = raw.replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim();
+    // "(Significant Relevant Point = 2 marks)" defines the SRP; it prices nothing.
+    line = line.replace(/\s*\(Significant Relevant Points? = \d+ marks?\)/i, match => {
+      directions.push(tidyCell(match));
+      return '';
+    });
+    // "(5/4/4 x SRP's)" breaks an SRP count down; "award 5 marks to all
+    // candidates" is a ruling. Neither prices an answer of its own.
+    line = line.replace(/\s*\(\s*\d+(?:\s*\/\s*\d+)+\s*x\s*SRP'?s?\s*\)/i, match => { directions.push(tidyCell(match)); return ''; });
+    line = line.replace(/\s*·?\s*(award (\d+) marks? to all candidates)\.?/i, (_match, ruling: string, marks: string) => {
+      directions.push(tidyCell(ruling));
+      return ` · ${marks} marks`;
+    });
+    // The text layer letter-spaces a word now and then ("2 mark s").
+    line = line.replace(/\bmark s\b/gi, 'marks').replace(PART_TOTAL, ' ').replace(CRITERION_TOTAL, ' ');
+    // An allocation note over several questions or parts ("Q4(iv), Q9(iv) &
+    // Q12(iv) @ 1 + 1 mark", "Q2 & 3 Part (i) 4 parts @ 1m") prices the answer
+    // under it; it is a heading, not a row.
+    const note = /(?:\bQ\.?\s*\d+\b[^Q]*){2,}@|\bparts?\b[^@]*@|@[^;]*;|^\s*Q\.?\s*\d+\s*:.*@/i.test(line);
+    // Question numbers and bullets are page furniture: "Q.1 ·", "Q.3, 4, 5:", "•".
+    if (!note) line = line.replace(/^\s*Q\.?\s*\d+(?:\s*[,&]\s*\d+)*\s*[.:]?(?:\s*(?=\()|\s*·\s*|\s+|$)/i, '');
+    line = line.replace(/^[•➢]\s*/, '');
+    line = line.replace(/\s+/g, ' ').replace(/(?:\s*·)+\s*$/, '').replace(/^\s*(?:·\s*)+/, '').trim();
+    if (!line) return;
+    const forEach = line.match(/^for each(?: of the)?\s+(?:\w+\s+)?([^:·]+?)\s*:\s*(?:·\s*)?(.*)$/i);
+    if (forEach) {
+      unitNoun = tidyCell(forEach[1]);
+      heading(lineIndex, tidyCell(line.slice(0, line.length - forEach[2].length)));
+      line = forEach[2];
+      if (!line) return;
+    }
+    // "(2/1/0) · (2/1/0)" under "6 items illustrated · 2 marks each graded":
+    // the ladder the line above grades by, printed a line lower.
+    const ladderLine = line.match(/^\((\d+(?:\/\d+)+)\)(?:\s·\s\(\1\))*$/);
+    const above = [...entries].reverse().find(entry => entry.pieces.length)?.pieces.slice(-1)[0];
+    if (ladderLine && above && (above.price.kind === 'each' || above.price.kind === 'row')) {
+      const ladder = ladderOf(ladderLine[1]);
+      if (above.price.kind === 'each') above.price.graded = ladder;
+      else if (ladder.every(step => step <= (above.price as { marks: number }).marks)) above.price.steps = ladder;
+      return;
+    }
+    const label = note ? null : line.match(CRITERION_PART);
+    const part = label ? label[1].toLowerCase() : undefined;
+    let rest = label ? line.slice(label[0].length) : line;
+    rest = weldedColumn(rest, context.part ?? context.questionText.trim().match(/^\((?:i|ii)\)/)?.[0]);
+    // A table with a "Mark" column prints the price as a bare figure: the
+    // header "Magnitude · Mark" over "6.3 · 2", or "First evidence 4". A bare
+    // final figure is a price only when it is the criterion's own value.
+    const markHeader = rest.match(/^(.+?)\s·\s(?:Marks?)$/i);
+    if (markHeader) { heading(lineIndex, tidyCell(markHeader[1])); return; }
+    const bareFigure = rest.match(/^(.*\S)(?:\s·\s|\s+)(\d+)$/);
+    if (bareFigure && Number(bareFigure[2]) === max && /[A-Za-z0-9]/.test(bareFigure[1])
+      && !/(?:marks?|m)\b|[+@/]$/i.test(bareFigure[1].split(CELL).pop() ?? '')) {
+      rest = `${bareFigure[1]} · ${bareFigure[2]} marks`;
+    }
+    const clean = tidyCell(line);
+    // "(ii) Award 2m (ambiguous wording)": a ruling that awards the part to
+    // everyone. The row is the ruling as printed, at its own price.
+    const ruling = !note && rest.match(/^award\s+(\d+)\s*(?:marks?|m)\b.*$/i);
+    if (ruling) {
+      const price: Scan = { kind: 'row', marks: Number(ruling[1]) };
+      entries.push({ at: lineIndex, clean, part, pieces: [{ text: tidyCell(rest), raw: rest, price, newCell: true, line: lineIndex }] });
+      return;
+    }
+    const { items, trailing } = scanCriterionLine(joinPriceCells(rest), max, srpMarks);
+    if (note) {
+      heading(lineIndex, tidyCell(line));
+      return;
+    }
+    if (!items.length) {
+      entries.push({ at: lineIndex, clean, part, pieces: [], text: tidyCell(rest) });
+      return;
+    }
+    // "Five terms @ 2 marks each as follows:" — the heading's own words; "Three
+    // named @ 3 marks each · 9 marks" — the heading's total, larger than this criterion.
+    const tail = /^\s*(?:as follows)?\s*[:=]?\s*$/i.test(trailing) || /^\s*·?\s*\d+\s*(?:marks?|m)(?:\s+graded)?\s*$/i.test(trailing)
+      ? '' : tidyCell(trailing);
+    if (tail) {
+      const lastItem = items[items.length - 1];
+      // 2010–2013 print the price first: "(ii) · 5 marks · Transform /Transverse".
+      if (!tidyCell(lastItem.text)) lastItem.text = tail;
+      else if (/^\(.*\)$/.test(tail)) lastItem.text = `${lastItem.text} ${tail}`;
+      else { entries.push({ at: lineIndex, clean, part, pieces: [], text: `\u0000${raw}` }); return; }
+    }
+    entries.push({ at: lineIndex, clean, part, pieces: items.map(item => ({ ...item, line: lineIndex })) });
+  });
+  const broken = entries.find(entry => entry.text?.startsWith('\u0000'));
+  if (broken) return { error: `text after the last price: ${broken.text!.slice(1)}` };
+
+  const pieces = entries.flatMap(entry => entry.pieces);
+  const value = (piece: Piece) => scannedValue(piece, srpMarks);
+  const live = () => pieces.filter(piece => !piece.demoted);
+  const sum = () => live().reduce((total, piece) => total + value(piece), 0);
+  const answers = entries.filter(entry => !entry.pieces.length && entry.text && !HEADING_PHRASE.test(entry.text));
+
+  // A heading over repeated units: "3 @ 20 marks each" over "Identifying
+  // aspect 4 marks" and "Examination 8 x SRPs".
+  let repeat: { count: number; marks: number } | undefined;
+  const head = pieces[0];
+  if (head?.price.kind === 'each' && head.price.total === undefined) {
+    const count = head.price.count ?? countOf(head.text);
+    const others = pieces.slice(1).reduce((total, piece) => total + value(piece), 0);
+    if (count && count > 1 && count * head.price.unit === max && others === head.price.unit && pieces.length > 1) {
+      repeat = { count, marks: head.price.unit };
+      head.demoted = true;
+    }
+  }
+  // A heading's words that name the price after it, where that price prints
+  // none ("Any two valid challenges explained @ 4 marks each 2 + 2 marks").
+  const named = new Set<Piece>();
+  const lendWords = (from: Piece, to: Piece | undefined) => {
+    if (!to || to.demoted || to.line !== from.line || tidyCell(to.text) || !tidyCell(from.text)) return false;
+    to.text = from.text;
+    named.add(from);
+    return true;
+  };
+  if (!repeat && sum() !== max) {
+    // A price larger than the criterion frames the units it is one of.
+    for (const piece of pieces) if (value(piece) > max) piece.demoted = true;
+    // Allocation notes above the answer ("Q1 Parts (i),(iii) & (iv) @1m + 1m;
+    // Part (ii) @ 2m" over "A = North American B = Eurasian").
+    if (sum() !== max && answers.length) {
+      const noteLines = new Set(live().map(piece => piece.line));
+      if ([...noteLines].every(index => /@|\bparts?\b/i.test(lines[index]))) {
+        for (const piece of live()) piece.demoted = true;
+      }
+    }
+    // "Way explained · 6 marks" over "Two SRPs @ 3 marks each": a labelled
+    // total over its own breakdown.
+    if (sum() !== max) {
+      const kept = live();
+      const total = kept.find((piece, index) => value(piece) === max
+        && kept.slice(index + 1).reduce((acc, other) => acc + value(other), 0) === max);
+      if (total) {
+        total.demoted = true;
+        const next = kept[kept.indexOf(total) + 1];
+        if (next && !tidyCell(next.text)) { next.text = total.text; named.add(total); }
+      }
+    }
+    // One unit of several, with no other price: "Two definitions @ 2 marks
+    // each", "Showing and naming two physical features · 2 x (2 marks graded +
+    // 2 marks)", "Three statements @ 4m + 3m + 3m" (the first statement's 4m).
+    if (!live().length && !answers.length) {
+      const unit = pieces.find(piece => ((piece.price.kind === 'each' || piece.price.kind === 'times') && piece.price.unit === max)
+        || (piece.price.kind === 'row' && !piece.price.alternatives && /\+/.test(piece.raw)
+          && (piece.raw.match(/\d+(?=\s*(?:marks?|m)?\s*(?:\+|$|\s))/g) ?? []).map(Number).includes(max)));
+      if (unit) {
+        unit.demoted = false;
+        unit.price = unit.price.kind === 'times'
+          ? { kind: 'row', marks: max, steps: unit.price.steps.length > 1 ? unit.price.steps : undefined }
+          : { kind: 'row', marks: max };
+      }
+    }
+    // "7/6 marks graded": take the alternative the criterion's total needs.
+    if (sum() !== max) {
+      const alternative = live().find(piece => piece.price.kind === 'row' && piece.price.alternatives);
+      if (alternative && alternative.price.kind === 'row') {
+        const others = sum() - alternative.price.marks;
+        const pick = alternative.price.alternatives!.find(marks => others + marks === max);
+        if (pick !== undefined) alternative.price = { kind: 'row', marks: pick, steps: upTo(pick) };
+      }
+    }
+  }
+  for (const entry of entries) {
+    // A line whose every price frames the units ("Five terms @ 2 marks each as
+    // follows:") is a heading as printed.
+    if (entry.pieces.length && entry.pieces.every(piece => piece.demoted && !named.has(piece))) {
+      heading(entry.at, entry.clean);
+      continue;
+    }
+    entry.pieces.forEach((piece, index) => {
+      if (!piece.demoted || named.has(piece)) return;
+      if (lendWords(piece, entry.pieces[index + 1])) {
+        heading(piece.line, tidyCell(piece.raw.slice(piece.text.length)));
+        return;
+      }
+      heading(piece.line, tidyCell(piece.raw));
+    });
+  }
+
+  const groups: GeographyAllocationGroup[] = [];
+  const current = () => {
+    if (!groups.length) groups.push({ rows: [], srp: [] });
+    return groups[groups.length - 1];
+  };
+  let rowCount = 0; let srpCount = 0;
+  let pooled = false;
+  const pending: Array<{ at: number; text: string }> = [];
+  const takePending = () => pending.pop()?.text;
+  /** Plain lines after a price: the answers a tariff row stands over. */
+  const after: Array<{ at: number; text: string }> = [];
+  const rowLine = new Map<GeographyAnswerRow, number>();
+  let awaiting: GeographyAnswerRow | undefined;
+  const multiPart = parts.size > 1;
+  for (const entry of entries) {
+    if (entry.part) {
+      const prompt = multiPart ? parts.get(entry.part.replace(/[()]/g, '')) : undefined;
+      if (groups.length && (current().rows.length || current().srp.length || current().part)) {
+        groups.push({ part: `(${entry.part})`, prompt, rows: [], srp: [] });
+      } else {
+        current().part = `(${entry.part})`;
+        if (prompt) current().prompt = prompt;
+      }
+    }
+    if (!entry.pieces.length) {
+      if (!entry.text) continue;
+      if (awaiting) { awaiting.text = entry.text; if (!isTariff(entry.text)) delete awaiting.tariffOnly; awaiting = undefined; continue; }
+      const next = entries[entries.indexOf(entry) + 1];
+      const labelsNext = next && next.pieces.length && !next.part;
+      if (HEADING_PHRASE.test(entry.text) && !rowCount && !srpCount) heading(entry.at, entry.text);
+      else if ((rowCount || srpCount) && !labelsNext) after.push({ at: entry.at, text: entry.text });
+      else pending.push({ at: entry.at, text: entry.text });
+      continue;
+    }
+    for (const piece of entry.pieces) {
+      if (piece.demoted) continue;
+      let text = tidyCell(piece.text);
+      // A label line over a price that prints its own words ("Diagram (s)" over
+      // "Two aspects @ 2 marks each 4 marks") heads the rows from there on.
+      if (text && pending.length) {
+        const label = pending.splice(0).map(line => line.text).join(CELL);
+        const group = current();
+        if (group.rows.length || group.srp.length) groups.push({ prompt: label, rows: [], srp: [] });
+        else group.prompt = group.prompt ? `${group.prompt}${CELL}${label}` : label;
+      }
+      // "Relief (upland/lowland): · Named" — a labelled cell heads the row after it.
+      const cells = text.split(CELL);
+      const headIndex = cells.findIndex((cell, index) => index < cells.length - 1 && /:\s*$/.test(cell));
+      if (headIndex >= 0) {
+        heading(piece.line, tidyCell(cells.slice(0, headIndex + 1).join(CELL)));
+        text = tidyCell(cells.slice(headIndex + 1).join(CELL));
+      }
+      // A part label inside the words means two columns of a table were read
+      // across ("C Q.3 (ii) (River)"): the words no longer belong together.
+      if (/\S\s+(?:Q\.?\s*\d+\s*)?\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)(?:\s|$)/i.test(text)) {
+        return { error: `two columns read across: ${piece.raw}` };
+      }
+      const price = piece.price;
+      if (price.kind === 'srp') {
+        srpCount += 1;
+        const srp: GeographySrpAllocation = {
+          id: `s${srpCount}`,
+          label: text || takePending() || '',
+          count: price.count,
+          marks: price.marks || srpMarks,
+        };
+        // A total may cover several units: "For each pattern: … 2 SRPs @ 3m each · 6m + 6m + 6m".
+        const unitTotal = srp.count * srp.marks;
+        if (price.total !== undefined && price.total !== unitTotal && !(unitNoun && price.total % unitTotal === 0)) {
+          return { error: `SRP line does not multiply out: ${piece.raw}` };
+        }
+        if (price.min !== undefined) { srp.min = price.min; pooled = true; }
+        current().srp.push(srp);
+        continue;
+      }
+      let marks: number; let steps: number[] | undefined;
+      if (price.kind === 'times') {
+        marks = price.count * price.unit;
+        steps = reachable(Array.from({ length: price.count }, () => price.steps));
+      } else if (price.kind === 'each') {
+        const count = price.count ?? countOf(text) ?? 1;
+        marks = price.total ?? count * price.unit;
+        if (marks % price.unit !== 0) return { error: `count line does not multiply out: ${piece.raw}` };
+        const units = marks / price.unit;
+        // A ladder printed with the words: "6 items illustrated (graded 2/1/0)".
+        const inText = text.match(/\(graded(?:\s*(\d+(?:\/\d+)+))?\)/i);
+        const ladder = price.graded ?? (inText ? (inText[1] ? ladderOf(inText[1]) : 'any' as const) : undefined);
+        // "Explanation 7 @ 3 marks each 21 marks" on an SRP criterion counts SRPs.
+        if (criterion.guidanceKind === 'srp' && !ladder && units > 2) {
+          srpCount += 1;
+          current().srp.push({ id: `s${srpCount}`, label: text.replace(/\s+\d+$/, '') || takePending() || '', count: units, marks: price.unit });
+          continue;
+        }
+        steps = ladder === 'any' ? upTo(marks)
+          : ladder ? reachable(Array.from({ length: units }, () => ladder.filter(step => step <= price.unit)))
+            : Array.from({ length: units }, (_, index) => price.unit * (index + 1));
+      } else {
+        marks = price.marks;
+        steps = price.steps;
+      }
+      rowCount += 1;
+      const row: GeographyAnswerRow = { id: `r${rowCount}`, text: text || takePending() || '', marks };
+      rowLine.set(row, piece.line);
+      if (steps && steps.length > 1) row.steps = steps;
+      if (!row.text) {
+        // The price stands before its answer, on a line of its own ("2m" / "A").
+        awaiting = row;
+        row.tariffOnly = true;
+      } else if (isTariff(row.text)) {
+        row.tariffOnly = true;
+      }
+      current().rows.push(row);
+    }
+  }
+  if (awaiting) {
+    // No answer line followed: a second price for the slot above it, or for
+    // the previous criterion's slot.
+    const group = current();
+    const previous = group.rows[group.rows.indexOf(awaiting) - 1]?.text ?? context.previousRowText;
+    if (!previous) return { error: 'a price with nothing before it' };
+    awaiting.text = previous;
+    if (isTariff(previous)) awaiting.tariffOnly = true; else delete awaiting.tariffOnly;
+  }
+
+  // Lines that carry no price at all are the answer, priced by the heading
+  // the scheme printed over them ("Five terms @ 2 marks each as follows:" /
+  // "Crater") and so at the reviewed criterion's value: one row, as printed.
+  if (!rowCount && !srpCount) {
+    if (!pending.length) return { error: 'no priced line' };
+    // Rejoin a printed answer the page wrapped ("Calm dry weather with warm" /
+    // "temperature", "250,000/300,000-" / "320,000 Euro", "Plantation / Natural
+    // Woodland /"); keep separate lines apart.
+    const chunks: string[] = [];
+    for (const { text: line } of pending.splice(0)) {
+      const previous = chunks[chunks.length - 1];
+      const wraps = previous !== undefined && (/[/,-]$|\b(?:or|and|with)$/i.test(previous)
+        || /^(?:[a-z]|e\.g\.)/.test(line) || (previous.includes('/') && line.includes('/')));
+      if (wraps) chunks[chunks.length - 1] = `${previous} ${line}`;
+      else chunks.push(line);
+    }
+    const cellCount = (chunk: string) => chunk.split(CELL).length;
+    let answer: string[] = chunks;
+    if (chunks.length > 1 && cellCount(chunks[0]) > 1 && cellCount(chunks[1]) === cellCount(chunks[0])) {
+      // A small table: header rows ("Example · Location") over the answer row.
+      const width = cellCount(chunks[0]);
+      let last = 0;
+      while (last + 1 < chunks.length && cellCount(chunks[last + 1]) === width) last += 1;
+      chunks.slice(0, last).forEach(chunk => heading(-1, chunk));
+      answer = [chunks.slice(last).join(' ')];
+    } else if (chunks.length > 1) {
+      // A note printed under the answer ("Matching issues to photograph as above").
+      for (const chunk of chunks.slice(1)) if (/\bas above\b|^(?:matching|note)\b/i.test(chunk)) directions.push(chunk);
+      answer = chunks.filter((chunk, index) => index === 0 || !directions.includes(chunk));
+    }
+    const text = tidyCell(answer.join(CELL));
+    const steps = criterion.permittedMarks.filter(mark => mark > 0);
+    if (criterion.guidanceKind === 'srp') {
+      const step = steps[0];
+      if (!step || max % step !== 0 || steps.some((mark, index) => mark !== step * (index + 1))) {
+        return { error: 'an SRP criterion with no SRP line' };
+      }
+      current().srp.push({ id: 's1', label: text, count: max / step, marks: step });
+    } else {
+      // A completed passage prints its answer in capitals ("The sedimentary
+      // rock in the photograph is called LIMESTONE. It is weathered by the"):
+      // the answer is that word.
+      // Two answers on one printed line belong to two criteria in order: the
+      // one after the previous criterion's answer.
+      const capitals: string[] = text.match(/\b[A-Z]{4,}\b/g) ?? [];
+      const next = context.previousRowText ? capitals.indexOf(context.previousRowText) + 1 : 0;
+      const cloze = capitals.length > 0 && next < capitals.length && /\b[a-z]{3,}\b.*\b[a-z]{3,}\b/.test(text);
+      const row: GeographyAnswerRow = { id: 'r1', text: cloze ? capitals[next] : text, marks: max };
+      if (steps.length > 1) row.steps = steps;
+      if (!cloze && isTariff(text)) row.tariffOnly = true;
+      current().rows.push(row);
+    }
+  }
+  // "(iii) · 2 named features @ 2 marks each · 4 marks" over "Cavern/Passage/
+  // Stalactite/…": the plain lines under a tariff row are its printed answers.
+  // A plain line under SRPs qualifies them ("Reason stated for one SRP").
+  if (after.length && groups.some(group => group.srp.length)) directions.push(...after.splice(0).map(line => line.text));
+  if (after.length) {
+    const rows = groups.flatMap(group => group.rows);
+    const only = rows.length === 1 && !groups.some(group => group.srp.length) ? rows[0] : undefined;
+    if (!only) return { error: `text after the last price: ${after[0]}` };
+    const answers = after.map(line => line.text);
+    if (only.tariffOnly) {
+      heading(rowLine.get(only) ?? after[0].at - 0.5, only.text);
+      only.text = tidyCell(answers.join(' '));
+      if (!isTariff(only.text)) delete only.tariffOnly;
+    } else {
+      // The answer runs on under its price ("X – Mid Atlantic Ridge or" /
+      // "Constructive/divergent"), or the scheme prints a second accepted form
+      // under it ("Cuan an Daingin/Dingle Harbour" / "An Chois"): the printed
+      // pieces, divided like cells.
+      only.text = [only.text, ...answers].join(CELL);
+    }
+  }
+  // A label left over names the part ("Two actions" over "Action 1").
+  for (const line of pending) heading(line.at, line.text);
+
+  let srpPool: GeographyAllocation['srpPool'];
+  if (pooled) {
+    const fixed = groups.reduce((total, group) => total
+      + group.rows.reduce((acc, row) => acc + row.marks, 0)
+      + group.srp.reduce((acc, srp) => acc + (srp.min === undefined ? srp.count * srp.marks : 0), 0), 0);
+    const pool = groups.flatMap(group => group.srp).filter(srp => srp.min !== undefined);
+    const left = max - fixed;
+    const each = pool[0].marks;
+    if (left <= 0 || left % each !== 0) return { error: `SRP pool does not divide the remaining ${left} marks` };
+    const count = left / each;
+    const low = pool.reduce((total, srp) => total + (srp.min ?? 0), 0);
+    const high = pool.reduce((total, srp) => total + srp.count, 0);
+    if (count < low || count > high) return { error: `SRP pool of ${count} outside ${low}–${high}` };
+    if (pool.length === 1) {
+      // One part priced as a range ("Issue examined 7/6 x SRPs"): the
+      // criterion's maximum says which end applies.
+      delete pool[0].min;
+      pool[0].count = count;
+    } else {
+      srpPool = { count, marks: each };
+    }
+  }
+  if (repeat) {
+    if (groups.length !== 1) return { error: 'a repeated unit over several parts' };
+    const noun = unitNoun ?? tidyCell(head.text).split(/\s+/).filter(word => /^[a-z]+$/i.test(word)).pop() ?? '';
+    groups[0].repeat = { count: repeat.count, unit: noun, marks: repeat.marks };
+  }
+  const allocation: GeographyAllocation = { groups, directions };
+  if (srpPool) allocation.srpPool = srpPool;
+  const printed = [...headings].sort((x, y) => x.at - y.at).map(line => line.text);
+  return { allocation, headings: [...new Set(printed)] };
+}
+
+/** Headings sit over the first group, each printed piece divided like a cell. */
+const withHeadings = ({ allocation, headings }: UnitResult): GeographyAllocation => {
+  if (headings.length && allocation.groups.length) {
+    const first = allocation.groups[0];
+    first.prompt = [...headings, ...(first.prompt ? [first.prompt] : [])].join(CELL);
+  }
+  return allocation;
+};
+
+/** A card's column headings ("Bar Chart · Pie Chart"): a line of plain cells
+ *  over a line that prints one price per cell, in any of its criteria. */
+export function geographyColumnLabels(criteria: readonly GeographyCriterionSource[]): string[] | undefined {
+  for (const criterion of criteria) {
+    const lines = criterion.guidance;
+    for (let index = 0; index < lines.length - 1; index += 1) {
+      const cells = lines[index].split(CELL);
+      if (cells.length < 2 || cells.some(cell => /\d/.test(cell))) continue;
+      const next = joinPriceCells(lines[index + 1]).split(CELL).filter(cell => PRICE_CELL.test(guardFigures(cell, criterion.maxMarks)));
+      if (next.length === cells.length) return cells.map(cell => tidyCell(cell));
+    }
+  }
+  return undefined;
+}
+
+/**
+ * Cut one reviewed criterion into rows, or say why not. A criterion is
+ * structured only when its rows reach `maxMarks` and claim exactly the marks
+ * the ledger permits.
+ */
+export function tryParseGeographyCriterionAllocation(context: GeographyCriterionContext,
+  criterion: GeographyCriterionSource): GeographyAllocationResult {
+  const lines = criterion.guidance.map(line => line.replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim()).filter(Boolean);
+  const finish = (allocation: GeographyAllocation): GeographyAllocationResult => {
+    const problem = reconcileCriterion(allocation, criterion);
+    return problem ? { ok: false, reason: problem } : { ok: true, allocation };
+  };
+
+  // A band table: "Excellent · 20 · <descriptor>" down to "Poor · 0 · …".
+  const bands = lines.map(line => line.match(BAND_LINE)).filter((match): match is RegExpMatchArray => !!match);
+  if (bands.length >= 3) {
+    const others = lines.filter(line => !BAND_LINE.test(line));
+    return finish({
+      groups: [],
+      directions: [],
+      choice: {
+        kind: 'band',
+        prompt: others.length ? tidyCell(others[0].split(CELL)[0]) : '',
+        options: bands.map((band, index) => ({ id: `b${index + 1}`, label: band[1], marks: Number(band[2]), note: band[3].trim() })),
+      },
+    });
+  }
+
+  // "(ii) · ($) 400 billion · 4 marks or" over "($) 400 · 2 marks": the scheme
+  // accepts one answer or the other, each at its own price.
+  const orAt = lines.findIndex(line => /(?:marks?|m)\s+or$/i.test(line));
+  if (orAt >= 0 && orAt + 1 < lines.length) {
+    const options: GeographyChoiceOption[] = [];
+    for (const [index, line] of [lines.slice(0, orAt + 1), lines.slice(orAt + 1)].map(chunk => chunk.join(' ').replace(/\s+or$/i, '')).entries()) {
+      const unit = parseCriterionUnit([line], { ...criterion, maxMarks: Math.max(...criterion.permittedMarks) }, context);
+      if ('error' in unit) return { ok: false, reason: unit.error };
+      const rows = unit.allocation.groups.flatMap(group => group.rows);
+      if (rows.length !== 1 || unit.allocation.groups.some(group => group.srp.length)) return { ok: false, reason: 'an alternative with more than one row' };
+      options.push({ id: `a${index + 1}`, label: rows[0].text, marks: rows[0].marks });
+    }
+    return finish({ groups: [], directions: [], choice: { kind: 'alternative', prompt: '', options } });
+  }
+
+  // A two-route table: some line prints one price per column ("Identifying
+  // aspect · 4 marks · 3 marks"). Each column is read on its own; columns that
+  // price identically are one allocation, columns that differ are a choice.
+  const isPrice = (cell: string) => PRICE_CELL.test(guardFigures(cell, criterion.maxMarks));
+  const cellsOf = (line: string) => joinPriceCells(line).split(CELL).filter(cell => !/^or$/i.test(cell));
+  const priceCells = (line: string) => cellsOf(line).filter(isPrice);
+  const widths = new Set(lines.map(line => priceCells(line).length).filter(count => count >= 2));
+  if (widths.size > 1) return { ok: false, reason: 'columns of different widths' };
+  if (widths.size === 1) {
+    const width = [...widths][0];
+    const header = lines.find(line => priceCells(line).length === width) ?? '';
+    const headerCells = cellsOf(header);
+    const plainHeader = lines.find(line => line.split(CELL).length === width && !/\d/.test(line));
+    const borrowed = !plainHeader && context.columnLabels?.length === width;
+    const labels = plainHeader ? plainHeader.split(CELL).map(cell => tidyCell(cell))
+      : borrowed ? [...context.columnLabels!]
+        : headerCells.filter(isPrice).map(cell => tidyCell(cell));
+    const prompt = plainHeader || borrowed ? '' : tidyCell(headerCells.filter(cell => !isPrice(cell)).join(CELL));
+    const columns: GeographyAllocation[] = [];
+    for (let column = 0; column < width; column += 1) {
+      const columnLines = (shared: boolean) => lines.filter(line => line !== plainHeader).flatMap(line => {
+        const cells = cellsOf(line);
+        if (priceCells(line).length !== width) {
+          // A priced line with one price belongs to the first column only when
+          // the other column does not print it ("Horizontal axis named · 1 mark"
+          // has no pie-chart counterpart).
+          return shared || !priceCells(line).length ? [line] : [];
+        }
+        const price = cells.filter(isPrice)[column];
+        // "1+1 mark (Circle & Centred)": the column names its own slot.
+        const own = price.match(/^(.*?)\s*\(([^)]*[A-Za-z][^)]*)\)\s*$/);
+        if (own) return [[own[2], own[1]].join(CELL)];
+        return [[...cells.filter(cell => !isPrice(cell)), price].join(CELL)];
+      });
+      let result = parseCriterionUnit(columnLines(true), criterion, context);
+      if (column > 0 && ('error' in result || geographyAllocationMax(result.allocation) !== criterion.maxMarks)) {
+        const alone = parseCriterionUnit(columnLines(false), criterion, context);
+        if (!('error' in alone) && geographyAllocationMax(alone.allocation) === criterion.maxMarks) result = alone;
+      }
+      if ('error' in result) return { ok: false, reason: `column ${column + 1}: ${result.error}` };
+      columns.push(withHeadings(result));
+    }
+    if (columns.every(column => JSON.stringify(column) === JSON.stringify(columns[0]))) {
+      if (plainHeader && columns[0].groups.length) {
+        const first = columns[0].groups[0];
+        first.prompt = first.prompt ? `${plainHeader}${CELL}${first.prompt}` : plainHeader;
+      }
+      return finish(columns[0]);
+    }
+    return finish({
+      groups: [],
+      directions: [],
+      choice: {
+        kind: 'route',
+        prompt,
+        options: columns.map((allocation, index) => {
+          // The column's heading is the option's label, not a row heading.
+          for (const group of allocation.groups) if (group.repeat) delete group.prompt;
+          return { id: `o${index + 1}`, label: labels[index] ?? '', allocation };
+        }),
+      },
+    });
+  }
+
+  const result = parseCriterionUnit(lines, criterion, context);
+  if ('error' in result) return { ok: false, reason: result.error };
+  return finish(withHeadings(result));
+}
+
+export const parseGeographyCriterionAllocation = (context: GeographyCriterionContext,
+  criterion: GeographyCriterionSource): GeographyAllocation | undefined => {
+  const result = tryParseGeographyCriterionAllocation(context, criterion);
   return result.ok ? result.allocation : undefined;
 };

@@ -1,0 +1,64 @@
+/* Claimable scheme rows — the recipe a science card's marking points use
+   (SessionScreen MarkRowView), shared by every rubric subject whose scheme is
+   cut into rows: a full-width button, a square check, the scheme's answer, a
+   marks chip. Mint means claimed; nothing is tinted before the student
+   touches it. */
+.mb-claim-row {
+  width: 100%; text-align: left; display: grid; gap: 10px; align-items: start;
+  padding: 11px 12px; border-radius: 12px;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
+  font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
+  transition: background 160ms, border-color 160ms;
+}
+button.mb-claim-row { grid-template-columns: 20px minmax(0, 1fr) auto; cursor: pointer; }
+button.mb-claim-row:disabled { cursor: default; opacity: .55; }
+/* A stepped row keeps at least 9em for its words, so a row with many mark
+   buttons never squeezes its text to one letter per line (Geography #271). */
+.mb-claim-row--stepped { grid-template-columns: minmax(9em, 1fr) auto; }
+.mb-claim-row[data-claimed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }
+.mb-claim-row[data-tone="partial"] .mb-claim-text > span:first-child { color: var(--mb-ink-2); }
+.mb-claim-row[data-tone="deduction"] { border-style: dashed; }
+.mb-claim-row[data-tone="deduction"][data-claimed="true"] { border-style: solid; border-color: var(--mb-ink); background: var(--mb-raised); color: var(--mb-ink); }
+
+.mb-claim-check {
+  width: 18px; height: 18px; border-radius: 5px; margin-top: 1px; flex: none;
+  border: 1.5px solid var(--mb-border); display: inline-flex; align-items: center; justify-content: center; color: #fff;
+}
+.mb-claim-row[data-claimed="true"] .mb-claim-check { border-color: var(--mb-success); background: var(--mb-success); }
+.mb-claim-row[data-tone="deduction"][data-claimed="true"] .mb-claim-check { border-color: var(--mb-ink); background: var(--mb-ink); color: var(--mb-paper); }
+
+.mb-claim-text { min-width: 0; overflow-wrap: anywhere; display: grid; gap: 3px; }
+.mb-claim-text small { font: 400 11.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-claim-tag { font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--mb-label); }
+
+.mb-claim-chip {
+  font: 700 10.5px/1.7 'Roboto Mono', ui-monospace, monospace; border-radius: 6px; padding: 0 6px; white-space: nowrap;
+  font-variant-numeric: tabular-nums; background: var(--mb-raised); color: var(--mb-muted); align-self: start;
+}
+[data-claimed="true"] > .mb-claim-chip { background: var(--mb-success-tint); color: var(--mb-success-text); }
+[data-tone="deduction"][data-claimed="true"] > .mb-claim-chip { background: var(--mb-paper); color: var(--mb-ink); }
+
+.mb-claim-steps { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+.mb-claim-steps button,
+.mb-claim-marks button {
+  min-width: 34px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
+  font: 700 11px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
+}
+.mb-claim-steps button[aria-pressed="true"] { border-color: var(--mb-success); background: var(--mb-success); color: #fff; }
+.mb-claim-marks { display: flex; gap: 5px; flex-wrap: wrap; }
+.mb-claim-marks button[aria-pressed="true"] { border-color: var(--mb-ink); background: var(--mb-ink); color: var(--mb-paper); }
+.mb-claim-marks button:disabled { cursor: default; opacity: .45; }
+
+.mb-claim-part { margin: 6px 0 0; font: 600 13px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); display: flex; gap: 8px; align-items: baseline; min-width: 0; }
+.mb-claim-part-label { flex: none; font: 700 11px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); }
+.mb-claim-part-prompt { min-width: 0; overflow-wrap: anywhere; }
+
+.mb-claim-directions { padding: 11px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
+.mb-claim-directions strong { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }
+.mb-claim-directions ul { margin: 6px 0 0; padding-left: 17px; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); display: grid; gap: 3px; }
+
+@media (max-width: 480px) {
+  .mb-claim-row--stepped { grid-template-columns: 1fr; }
+  .mb-claim-steps { justify-content: flex-start; }
+}

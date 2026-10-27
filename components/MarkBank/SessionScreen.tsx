@@ -47,7 +47,6 @@ import {
   isRubricCard,
   pclmCapRule,
   rowId,
-  type ArtCriterion,
   type ArtRubric,
   type CardAudioMaterial,
   type GeographyCriterion,
@@ -55,6 +54,7 @@ import {
   type IrishCriterion,
   type LabelKey,
   type MarkRow,
+  type MarkRowPart,
   type PclmCapRule,
   type PclmCriterionId,
   type PclmRubric,
@@ -72,15 +72,21 @@ import WaysInPanel, {
 import SourceMaterialReader from './SourceMaterialReader';
 import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
 import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
+import ArtRubricPanel from './ArtRubricPanel';
+import { artMarks, artScoreId, type ArtScoreId } from './artScoring';
 import GeographyAllocationPanel from './GeographyAllocationPanel';
+import GeographyChoicePanel from './GeographyChoicePanel';
 import { geographyMarks, geographyScoreId, type GeographyScoreId } from './geographyScoring';
+import IrishAllocationPanel from './IrishAllocationPanel';
+import { irishCriterionMarks } from './irishScoring';
 import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AppliedMathematicsRubricPanel, {
   appliedMathematicsMarks,
   type AppliedMathematicsScoreId,
 } from './AppliedMathematicsRubricPanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
-import AccountingAssessment, { accountingMark, accountingScoreId } from './AccountingAssessment';
+import AccountingAssessment, { accountingMarks, accountingScoreId } from './AccountingAssessment';
+import type { AccountingScoreId } from './AccountingAssessment';
 import BusinessRubricPanel from './BusinessRubricPanel';
 import { businessMarks, type BusinessScoreId } from './businessRubric';
 import FrenchRubricPanel from './FrenchRubricPanel';
@@ -158,6 +164,16 @@ export const criterionMarksClaimed = (row: MarkRow, claim: RowClaim) => {
   if (claim === 'yes') return row.marks ?? 0;
   return typeof claim === 'number' && row.permittedMarks.includes(claim) ? claim : 0;
 };
+
+/** A part's claim lives under its row's id, so a row's claims travel together. */
+export const partClaimId = (rowId: string, partId: string) => `${rowId}:${partId}`;
+const partMarksClaimed = (part: MarkRowPart, claim: RowClaim) => {
+  if (claim === 'yes') return part.marks;
+  return typeof claim === 'number' && part.permittedMarks.includes(claim) ? claim : 0;
+};
+/** A row priced in named components scores what was placed on each part, never above the row. */
+export const partsMarksClaimed = (row: MarkRow, id: string, claims: Record<string, RowClaim>) =>
+  Math.min(row.marks ?? 0, (row.parts ?? []).reduce((sum, part) => sum + partMarksClaimed(part, claims[partClaimId(id, part.id)] ?? 'no'), 0));
 
 export interface SessionCardResult {
   cardId: string;
@@ -271,6 +287,7 @@ export function marksClaimed(
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + claimedMarks(r.group, chosen);
     }
+    if (r.parts) return n + partsMarksClaimed(r, id, claims);
     if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no');
     return isClaimed(claims, id) ? n + rowMarks(r) : n;
   }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') : 0);
@@ -318,9 +335,10 @@ export type PclmScoreId =
   | `component:${string}:${PclmCriterionId}`;
 export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
-export type ArtScoreId = `art:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId | FrenchScoreId | BusinessScoreId;
+export { artMarks, artScoreId };
+export type { ArtScoreId };
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -458,25 +476,15 @@ export function suggestPclmGrade(card: SecRubricCard, scores: PclmScores): MarkB
 export const irishScoreId = (criterionId: string) =>
   `irish:${criterionId}` as const;
 
-/** Awards add to the Irish mark; the scheme's explicit language penalties subtract. */
+/** Awards add to the Irish mark; the scheme's explicit language penalties
+ *  subtract. A criterion cut into rows (cards/irish/answers.ts) is worth its
+ *  claimed rows; any other is worth the mark placed on it. */
 export function irishMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system !== 'irish') return 0;
   const total = card.rubric.criteria.reduce((sum, criterion) => {
-    const value = scores[irishScoreId(criterion.id)] ?? 0;
+    const value = irishCriterionMarks(criterion, scores);
     return criterion.kind === 'deduction' ? sum - value : sum + value;
   }, 0);
-  return Math.max(0, Math.min(card.totalMarks, total));
-}
-
-export const artScoreId = (criterionId: string) =>
-  `art:${criterionId}` as const;
-
-/** Art components and descriptor criteria are independently awarded and added. */
-export function artMarks(card: SecRubricCard, scores: RubricScores): number {
-  if (card.rubric.system !== 'art') return 0;
-  const total = card.rubric.criteria.reduce(
-    (sum, criterion) => sum + (scores[artScoreId(criterion.id)] ?? 0), 0,
-  );
   return Math.max(0, Math.min(card.totalMarks, total));
 }
 
@@ -487,7 +495,7 @@ export { geographyMarks, geographyScoreId } from './geographyScoring';
 export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
   if (card.rubric.system === 'applied-mathematics') return appliedMathematicsMarks(card, scores);
-  if (card.rubric.system === 'accounting') return accountingMark(card.totalMarks, scores[accountingScoreId]);
+  if (card.rubric.system === 'accounting') return accountingMarks(card as SecRubricCard & { rubric: Extract<SecRubricCard['rubric'], { system: 'accounting' }> }, scores);
   if (card.rubric.system === 'business') return businessMarks(card, scores);
   if (card.rubric.system === 'french') return frenchMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
@@ -579,10 +587,50 @@ const MarkRowView: React.FC<{
   /** Options already claimed in a SIBLING menu on this card. */
   takenElsewhere?: ReadonlySet<string>;
   wholeResponse?: boolean;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse }) => {
+  /** The claims on a row's parts, by part id; only a row with parts has them. */
+  partClaims?: Record<string, RowClaim>;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse, partClaims }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
+
+  if (row.permittedMarks && row.parts) {
+    // "Design feature 1 (2 for point, 4 for discussion)": each named component
+    // is placed on its own marks and the row scores their sum.
+    const placed = row.parts.reduce((sum, part) => sum + partMarksClaimed(part, partClaims?.[part.id] ?? 'no'), 0);
+    return (
+      <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+          <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+          <span style={{ font: `700 10.5px/1.7 ${MONO}`, color: placed > 0 ? SUCCESS_TEXT : MUTED, whiteSpace: 'nowrap' }}>{placed}m of {row.marks}m</span>
+        </div>
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
+          {row.parts.map(part => {
+            const selected = partMarksClaimed(part, partClaims?.[part.id] ?? 'no');
+            return (
+              <div key={part.id} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8 }}>
+                <span style={{ minWidth: 96, color: selected > 0 ? SUCCESS_TEXT : INK_2, font: `500 13px/1.4 ${SANS}` }}>{part.verbatim}</span>
+                <div role="group" aria-label={`Marks for ${part.verbatim} · ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                  {part.permittedMarks.map(mark => (
+                    <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
+                      aria-label={`Award ${mark} marks for ${part.verbatim} · ${row.verbatim}`}
+                      onClick={() => onClaim(partClaimId(id, part.id), mark)}
+                      style={{ minWidth: 34, padding: '7px 10px', borderRadius: 6, border: `1px solid ${selected === mark ? SUCCESS : MUTED_BORDER}`,
+                        background: selected === mark ? SUCCESS : 'var(--mb-paper)',
+                        color: selected === mark ? '#fff' : INK, font: `700 11px/1 ${MONO}`, cursor: blocked ? 'default' : 'pointer' }}>
+                      {mark}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        {blocked && blockedReason ? <p>{blockedReason}</p> : null}
+      </section>
+    );
+  }
 
   if (row.permittedMarks) {
     const selected = criterionMarksClaimed(row, claim);
@@ -1326,12 +1374,25 @@ const IrishRubricPanel: React.FC<{
               }}>
                 {guidanceLabel(criterion)}
               </span>
-              {criterion.guidance.length > 0 && (
-                <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
-                  {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
-                </ul>
+              {criterion.allocation ? (
+                <div style={{ marginTop: 10 }}>
+                  <IrishAllocationPanel
+                    criterionId={criterion.id}
+                    allocation={criterion.allocation}
+                    scores={scores}
+                    onScore={(id, marks) => onScore(id as RubricScoreId, marks)}
+                  />
+                </div>
+              ) : (
+                <>
+                  {criterion.guidance.length > 0 && (
+                    <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                      {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
+                    </ul>
+                  )}
+                  {scoreControl(criterion)}
+                </>
               )}
-              {scoreControl(criterion)}
             </section>
           ))}
         </div>
@@ -1355,254 +1416,6 @@ const IrishRubricPanel: React.FC<{
           {rubric.markingGuideNote}
         </p>
       </aside>
-    </div>
-  );
-};
-
-/* ----------------------------------------------------------- Art rubric ---- */
-
-const ART_BAND_LABELS = {
-  low: 'Low', moderate: 'Moderate', high: 'High',
-} as const;
-
-const ArtRubricPanel: React.FC<{
-  card: SecRubricCard & { rubric: ArtRubric };
-  scores: RubricScores;
-  requirementChecks: Record<number, boolean>;
-  onScore: (id: RubricScoreId, marks: number) => void;
-  onRequirement: (index: number) => void;
-}> = ({ card, scores, requirementChecks, onScore, onRequirement }) => {
-  const { rubric } = card;
-  const total = artMarks(card, scores);
-
-  const markButton = (criterion: ArtCriterion, mark: number) => {
-    const id = artScoreId(criterion.id);
-    const active = scores[id] === mark;
-    return (
-      <button
-        key={mark}
-        type="button"
-        aria-pressed={active}
-        aria-label={`Set ${criterion.label} to ${mark} marks`}
-        onClick={() => onScore(id, mark)}
-        style={{
-          minWidth: 32, height: 30, padding: '0 7px', borderRadius: 8,
-          border: `1.5px solid ${active ? INK : MUTED_BORDER}`,
-          background: active ? INK : 'var(--mb-paper)',
-          color: active ? 'var(--mb-paper)' : INK_2,
-          font: `700 10.5px/1 ${MONO}`, cursor: 'pointer',
-          fontVariantNumeric: 'tabular-nums',
-        }}
-      >
-        {mark}
-      </button>
-    );
-  };
-
-  const allocatedScore = (criterion: ArtCriterion) => {
-    const id = artScoreId(criterion.id);
-    const selected = scores[id] ?? 0;
-    if (criterion.permittedMarks.length <= 11) {
-      return (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
-          {criterion.permittedMarks.map(mark => markButton(criterion, mark))}
-        </div>
-      );
-    }
-    return (
-      <div>
-        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-          <span style={{ font: `600 10.5px/1.4 ${SANS}`, color: MUTED }}>Mark selected</span>
-          <strong style={{ font: `750 18px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
-            {selected}
-          </strong>
-        </div>
-        <input
-          type="range"
-          min={0}
-          max={criterion.maxMarks}
-          step={1}
-          value={selected}
-          aria-label={`${criterion.label} mark`}
-          onChange={event => onScore(id, Number(event.currentTarget.value))}
-          style={{ width: '100%', margin: '9px 0 5px', accentColor: INK }}
-        />
-        <div style={{ display: 'flex', justifyContent: 'space-between', color: LABEL, font: `650 9.5px/1 ${MONO}` }}>
-          <span>0</span><span>{criterion.maxMarks}</span>
-        </div>
-      </div>
-    );
-  };
-
-  const descriptorScore = (criterion: ArtCriterion) => (
-    <div style={{ display: 'grid', gap: 7 }}>
-      {criterion.bands!.map(band => {
-        const selected = band.marks.includes(scores[artScoreId(criterion.id)] ?? -1);
-        const rangeLabel = band.marks.length === 1
-          ? `${band.marks[0]}`
-          : `${band.marks[0]}–${band.marks[band.marks.length - 1]}`;
-        return (
-          <div
-            key={band.level}
-            style={{
-              padding: '9px 10px', borderRadius: 10,
-              border: `1.5px solid ${selected ? INK : HAIRLINE_2}`,
-              background: selected ? 'var(--mb-raised)' : 'transparent',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-              <strong style={{ font: `750 9.5px/1.3 ${SANS}`, letterSpacing: '.09em', textTransform: 'uppercase', color: INK_2 }}>
-                {ART_BAND_LABELS[band.level]}
-              </strong>
-              <span style={{ font: `700 9.5px/1 ${MONO}`, color: LABEL }}>{rangeLabel} marks</span>
-            </div>
-            {band.lead && (
-              <p style={{ margin: '6px 0 0', color: MUTED, font: `400 11px/1.45 ${SANS}` }}>{band.lead}</p>
-            )}
-            <ul style={{ listStyle: 'disc', margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 11px/1.45 ${SANS}` }}>
-              {band.guidance.map((note, index) => <li key={`${band.level}-${index}`}>{note}</li>)}
-            </ul>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
-              {band.marks.map(mark => markButton(criterion, mark))}
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-
-  return (
-    <div>
-      <div style={{ margin: '0 0 16px', padding: '0 0 15px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
-        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
-          Task check · no marks added here
-        </span>
-        <p style={{ margin: '5px 0 10px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
-          Did you answer the exact task?
-        </p>
-        <div style={{ display: 'grid', gap: 7 }}>
-          {rubric.taskRequirements.map((requirement, index) => {
-            const checked = !!requirementChecks[index];
-            return (
-              <button
-                key={`${index}-${requirement}`}
-                type="button"
-                aria-pressed={checked}
-                onClick={() => onRequirement(index)}
-                style={{
-                  display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
-                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
-                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
-                  color: checked ? SUCCESS_TEXT : INK_2,
-                  font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
-                }}
-              >
-                <span aria-hidden style={{
-                  display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
-                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
-                  background: checked ? SUCCESS : 'transparent', color: '#fff',
-                }}>
-                  {checked ? <span style={{
-                    width: 6, height: 10, borderRight: '2px solid currentColor',
-                    borderBottom: '2px solid currentColor', transform: 'rotate(45deg) translate(-1px, -1px)',
-                  }} /> : null}
-                </span>
-                <span>{requirement}</span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      <div>
-        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
-          SEC Art marking scheme
-        </span>
-        <p style={{ margin: '5px 0 12px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
-          Place your response on the published Art scale.
-        </p>
-
-        <div style={{ display: 'grid', gap: 10 }}>
-          {rubric.criteria.map(criterion => (
-            <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
-              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
-                <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>{criterion.label}</strong>
-                <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {criterion.maxMarks}</span>
-              </div>
-              {criterion.rowMarks && (criterion.rowMarks.length > 1 || criterion.rowNotes) ? (
-                /* The 2021–2022 schemes' own table: each component row with
-                   the Marks and Notes columns printed beside it. */
-                <table style={{ width: '100%', borderCollapse: 'collapse', margin: '7px 0 10px', color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
-                  <thead>
-                    <tr>
-                      <th scope="col" style={{ padding: '0 6px 4px 0' }}><span style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0 0 0 0)' }}>Component</span></th>
-                      <th scope="col" style={{ padding: '0 6px 4px', width: 42, textAlign: 'right', font: `700 9.5px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: LABEL }}>Marks</th>
-                      {criterion.rowNotes && (
-                        <th scope="col" style={{ padding: '0 0 4px 6px', width: '30%', textAlign: 'left', font: `700 9.5px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: LABEL }}>Notes</th>
-                      )}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {criterion.guidance.map((row, index) => (
-                      <tr key={`${criterion.id}-${index}`} style={{ borderTop: `1px solid ${HAIRLINE_2}` }}>
-                        <td style={{ padding: '5px 6px 5px 0', verticalAlign: 'top' }}>{row}</td>
-                        <td style={{ padding: '5px 6px', verticalAlign: 'top', textAlign: 'right', font: `700 11px/1.48 ${MONO}`, color: INK_2, fontVariantNumeric: 'tabular-nums' }}>{criterion.rowMarks![index]}</td>
-                        {criterion.rowNotes && (
-                          <td style={{ padding: '5px 0 5px 6px', verticalAlign: 'top' }}>{criterion.rowNotes[index]}</td>
-                        )}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              ) : criterion.guidance.length > 0 && (
-                <ul style={{ listStyle: 'disc', margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
-                  {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
-                </ul>
-              )}
-              {criterion.bands?.length ? descriptorScore(criterion) : allocatedScore(criterion)}
-            </section>
-          ))}
-        </div>
-
-        <div style={{
-          display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 12,
-          marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)',
-        }}>
-          <span style={{ font: `600 12px/1.4 ${SANS}`, color: INK_2 }}>Your placement</span>
-          <strong style={{ font: `700 17px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
-            {total} / {card.totalMarks}
-          </strong>
-        </div>
-      </div>
-
-      {rubric.markingGuideNote && (
-        <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
-          <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
-            From the SEC marking scheme
-          </strong>
-          <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
-            {rubric.markingGuideNote}
-          </p>
-        </aside>
-      )}
-
-      {rubric.practiceNotes && rubric.practiceNotes.length > 0 && (
-        <section
-          aria-label="NextStepUni practice notes"
-          style={{ marginTop: 16, paddingTop: 14, borderTop: `1px solid ${HAIRLINE_2}` }}
-        >
-          <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
-            NextStepUni practice notes
-          </span>
-          <p style={{ margin: '4px 0 8px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
-            Our guidance for using this card. Not part of the SEC marking scheme.
-          </p>
-          <ul style={{ listStyle: 'disc', margin: 0, paddingLeft: 17, color: INK_2, font: `400 12px/1.5 ${SANS}` }}>
-            {rubric.practiceNotes.map((note, index) => <li key={`practice-${index}`}>{note}</li>)}
-          </ul>
-        </section>
-      )}
     </div>
   );
 };
@@ -1651,6 +1464,13 @@ const GeographyRubricPanel: React.FC<{
         </div>
       );
     }
+    // A criterion priced in whole SRPs moves in SRP steps, never to a mark
+    // the scheme cannot award.
+    const marks = criterion.permittedMarks;
+    const step = marks.length > 1 && marks.every((mark, index) =>
+      index === 0 || mark - marks[index - 1] === marks[1] - marks[0])
+      ? marks[1] - marks[0]
+      : 1;
     return (
       <div>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
@@ -1663,7 +1483,7 @@ const GeographyRubricPanel: React.FC<{
           type="range"
           min={0}
           max={criterion.maxMarks}
-          step={1}
+          step={step}
           value={selected}
           aria-label={`${criterion.label} mark`}
           onChange={event => onScore(id, Number(event.currentTarget.value))}
@@ -1742,11 +1562,19 @@ const GeographyRubricPanel: React.FC<{
             </div>
             {criterion.allocation ? (
               <div style={{ marginTop: 10 }}>
-                <GeographyAllocationPanel
-                  criterion={criterion as GeographyCriterion & { allocation: NonNullable<GeographyCriterion['allocation']> }}
-                  scores={scores}
-                  onScore={onScore}
-                />
+                {criterion.allocation.choice ? (
+                  <GeographyChoicePanel
+                    criterion={criterion as React.ComponentProps<typeof GeographyChoicePanel>['criterion']}
+                    scores={scores}
+                    onScore={onScore}
+                  />
+                ) : (
+                  <GeographyAllocationPanel
+                    criterion={criterion as GeographyCriterion & { allocation: NonNullable<GeographyCriterion['allocation']> }}
+                    scores={scores}
+                    onScore={onScore}
+                  />
+                )}
               </div>
             ) : (
               <>
@@ -1763,6 +1591,21 @@ const GeographyRubricPanel: React.FC<{
           </section>
         ))}
       </div>
+
+      {rubric.directions && rubric.directions.length > 0 && (
+        <section style={{ marginTop: 14, paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}` }}>
+          <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+            Examiner directions
+          </span>
+          <ul style={{ margin: '7px 0 0', padding: '0 0 0 16px', display: 'grid', gap: 6 }}>
+            {rubric.directions.map((direction, index) => (
+              <li key={`direction-${index}`} style={{ color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                {direction.replace(/^•\s*/, '')}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <div style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 12,
@@ -1812,7 +1655,8 @@ const RubricPanel: React.FC<{
     return <AccountingAssessment card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'accounting' }>;
     }} score={props.scores[accountingScoreId] ?? 0}
-      onScore={marks => props.onScore(accountingScoreId, marks)} />;
+      onScore={marks => props.onScore(accountingScoreId, marks)}
+      scores={props.scores} onClaim={(id, value) => props.onScore(id, value)} />;
   }
   if (props.card.rubric.system === 'business') {
     return <BusinessRubricPanel card={props.card as SecRubricCard & {
@@ -2319,10 +2163,20 @@ const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListenin
 const listeningMemberScores = (
   card: IrishListeningCard,
   combinedScores: RubricScores,
-): RubricScores => Object.fromEntries(card.rubric.criteria.map(criterion => [
-  irishScoreId(criterion.id),
-  combinedScores[irishScoreId(listeningCriterionId(card.id, criterion.id))] ?? 0,
-])) as RubricScores;
+): RubricScores => {
+  const scores: Record<string, number> = {};
+  for (const criterion of card.rubric.criteria) {
+    const combined = irishScoreId(listeningCriterionId(card.id, criterion.id));
+    scores[irishScoreId(criterion.id)] = combinedScores[combined] ?? 0;
+    // Row claims nest under the namespaced criterion id: "irish:<card>/<criterion>:<part>:<row>".
+    for (const [key, value] of Object.entries(combinedScores)) {
+      if (key.startsWith(`${combined}:`) && value !== undefined) {
+        scores[`${irishScoreId(criterion.id)}${key.slice(combined.length)}`] = value;
+      }
+    }
+  }
+  return scores as RubricScores;
+};
 
 /* ------------------------------------------------------------ the screen ---- */
 
@@ -2456,7 +2310,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const rowClaims = useMemo(() => {
     if (!assessmentCard || !isPointCard(assessmentCard)) return {};
     const out: Record<string, RowClaim> = {};
-    assessmentCard.rows.forEach((r, i) => { out[rowId(r, i)] = claimOf(rowId(r, i)); });
+    assessmentCard.rows.forEach((r, i) => {
+      out[rowId(r, i)] = claimOf(rowId(r, i));
+      for (const part of r.parts ?? []) out[partClaimId(rowId(r, i), part.id)] = claimOf(partClaimId(rowId(r, i), part.id));
+    });
     if (assessmentCard.questionBonus) out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
     return out;
   }, [assessmentCard, claimOf]);
@@ -2483,6 +2340,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         if (r.route && route && r.route !== route) return false;
         // An anyN group is partially claimable, so it is never simply "unclaimed".
         if (r.kind === 'anyN') return false;
+        if (r.parts) return partsMarksClaimed(r, rowId(r, i), rowClaims) === 0;
         return (rowClaims[rowId(r, i)] ?? 'no') === 'no';
       })
       // The scheme's own wording, minus any "Label — " prefix the card carries.
@@ -3206,6 +3064,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             reduced={reduced}
                             picks={picks[id] ?? []}
                             takenElsewhere={takenByRow[id]}
+                            partClaims={row.parts ? Object.fromEntries(row.parts.map(part => [part.id, rowClaims[partClaimId(id, part.id)] ?? 'no'])) : undefined}
                             onClaim={setClaim}
                             onPick={togglePick}
                           />

@@ -36,20 +36,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "DETAILS - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced strip foundation 1200 × 400 mm; concrete fill / foundation blocks; hardcore and sand blinding; 1200-gauge DPC/radon barrier; 200–300 mm floor insulation; 150 mm concrete floor slab taped and sealed at the wall junction; 20 mm floor tiles; skirting board; block inner leaf with 13 mm plaster; 200 mm full-fill cavity insulation; wall ties; block outer leaf with 19 mm render.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced strip foundation 1200 × 400 mm; concrete fill / foundation blocks; hardcore and sand blinding; 1200-gauge DPC/radon barrier; 200–300 mm floor insulation; 150 mm concrete floor slab taped and sealed at the wall junction; 20 mm floor tiles; skirting board; block inner leaf with 13 mm plaster; 200 mm full-fill cavity insulation; wall ties; block outer leaf with 19 mm render.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Reinforced strip foundation 1200 mm x 400 mm",
+                "Concrete fill / foundation blocks",
+                "Hardcore and sand blinding",
+                "1200-gauge damp proof course/radon barrier",
+                "200 - 300 mm Floor insulation",
+                "Floor tiles 20 mm",
+                "Skirting board",
+                "Concrete block inner leaf with 13 mm internal plaster",
+                "200 mm Full fill cavity insulation",
+                "Wall ties",
+                "Concrete block outer leaf with 19 mm render"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -245,20 +252,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "DETAILS - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced strip foundation 1200 × 400 mm; concrete fill / foundation blocks; hardcore and sand blinding; 1200-gauge DPC/radon barrier; 200–300 mm floor insulation; 150 mm concrete floor slab taped and sealed at the wall junction; 20 mm floor tiles; skirting board; block inner leaf with 13 mm plaster; 200 mm full-fill cavity insulation; wall ties; block outer leaf with 19 mm render.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced strip foundation 1200 × 400 mm; concrete fill / foundation blocks; hardcore and sand blinding; 1200-gauge DPC/radon barrier; 200–300 mm floor insulation; 150 mm concrete floor slab taped and sealed at the wall junction; 20 mm floor tiles; skirting board; block inner leaf with 13 mm plaster; 200 mm full-fill cavity insulation; wall ties; block outer leaf with 19 mm render.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Reinforced strip foundation 1200 mm x 400 mm",
+                "Concrete fill / foundation blocks",
+                "Hardcore and sand blinding",
+                "1200-gauge damp proof course/radon barrier",
+                "200 - 300 mm Floor insulation",
+                "Floor tiles 20 mm",
+                "Skirting board",
+                "Concrete block inner leaf with 13 mm internal plaster",
+                "200 mm Full fill cavity insulation",
+                "Wall ties",
+                "Concrete block outer leaf with 19 mm render"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -419,6 +433,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           },
           {
@@ -657,6 +705,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           }
         ],
@@ -760,6 +842,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           },
           {
@@ -844,6 +960,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 8,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
             ]
           }
         ],
@@ -954,21 +1104,25 @@
         "rows": [
           {
             "id": "items",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "DETAILS – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: drawing the given sketch; 15 mm cold feed to the burner; 22 mm flow to the radiators; 22 mm return from the radiators; radiators; 22 mm primary flow to the cylinder; 22 mm primary return to the burner; 22 mm overflow pipe; 22 mm expansion pipe from the cylinder; valves / pumps.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: drawing the given sketch; 15 mm cold feed to the burner; 22 mm flow to the radiators; 22 mm return from the radiators; radiators; 22 mm primary flow to the cylinder; 22 mm primary return to the burner; 22 mm overflow pipe; 22 mm expansion pipe from the cylinder; valves / pumps.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "15 mm cold feed to burner",
+                "22 mm flow to radiators",
+                "22 mm return from radiators",
+                "Radiators",
+                "22 mm primary flow to cylinder",
+                "22 mm primary return to burner",
+                "22 mm overflow pipe",
+                "22 mm expansion pipe from cylinder",
+                "Valves / pumps"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1153,21 +1307,25 @@
         "rows": [
           {
             "id": "a-items",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "DETAILS – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: drawing the given sketch; 15 mm cold feed to the burner; 22 mm flow to the radiators; 22 mm return from the radiators; radiators; 22 mm primary flow to the cylinder; 22 mm primary return to the burner; 22 mm overflow pipe; 22 mm expansion pipe from the cylinder; valves / pumps.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: drawing the given sketch; 15 mm cold feed to the burner; 22 mm flow to the radiators; 22 mm return from the radiators; radiators; 22 mm primary flow to the cylinder; 22 mm primary return to the burner; 22 mm overflow pipe; 22 mm expansion pipe from the cylinder; valves / pumps.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "15 mm cold feed to burner",
+                "22 mm flow to radiators",
+                "22 mm return from radiators",
+                "Radiators",
+                "22 mm primary flow to cylinder",
+                "22 mm primary return to burner",
+                "22 mm overflow pipe",
+                "22 mm expansion pipe from cylinder",
+                "Valves / pumps"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -1564,6 +1722,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 10,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
             ]
           }
         ],
@@ -1761,6 +1953,40 @@
               14,
               15,
               16
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 10,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ]
+              }
             ]
           }
         ],
@@ -1872,20 +2098,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "DETAILS - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: ridge tile; ridge vent; roofing slates; 50 × 35 mm battens; breather membrane; 275 × 32 mm ridge board; 200 × 50 mm rafter; 200 × 50 mm collar tie; insulation between rafters; airtight membrane; insulated plasterboard; plaster skim.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: ridge tile; ridge vent; roofing slates; 50 × 35 mm battens; breather membrane; 275 × 32 mm ridge board; 200 × 50 mm rafter; 200 × 50 mm collar tie; insulation between rafters; airtight membrane; insulated plasterboard; plaster skim.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Ridge tile",
+                "Ridge vent",
+                "Roofing slates",
+                "Battens 50 mm x 35 mm",
+                "Breather membrane",
+                "Ridge board 275 mm x 32 mm",
+                "Rafter 200 mm x 50 mm",
+                "Collar tie 200 mm x 50 mm",
+                "Insulation between rafters",
+                "Airtight membrane",
+                "Insulated plasterboard",
+                "Plaster skim"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2080,20 +2314,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "DETAILS - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: ridge tile; ridge vent; roofing slates; 50 × 35 mm battens; breather membrane; 275 × 32 mm ridge board; 200 × 50 mm rafter; 200 × 50 mm collar tie; insulation between rafters; airtight membrane; insulated plasterboard; plaster skim.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: ridge tile; ridge vent; roofing slates; 50 × 35 mm battens; breather membrane; 275 × 32 mm ridge board; 200 × 50 mm rafter; 200 × 50 mm collar tie; insulation between rafters; airtight membrane; insulated plasterboard; plaster skim.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Ridge tile",
+                "Ridge vent",
+                "Roofing slates",
+                "Battens 50 mm x 35 mm",
+                "Breather membrane",
+                "Ridge board 275 mm x 32 mm",
+                "Rafter 200 mm x 50 mm",
+                "Collar tie 200 mm x 50 mm",
+                "Insulation between rafters",
+                "Airtight membrane",
+                "Insulated plasterboard",
+                "Plaster skim"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -2382,6 +2624,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2401,6 +2670,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -2666,6 +2962,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2685,6 +3008,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 5,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -2857,6 +3207,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -2873,6 +3247,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -2889,6 +3287,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -2987,6 +3409,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -3017,6 +3463,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -3243,6 +3713,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3259,6 +3753,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3275,6 +3793,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3291,6 +3833,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -3321,6 +3887,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "note",
+                "verbatim": "Note",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -3706,6 +4296,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 9,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              }
             ]
           },
           {
@@ -3729,6 +4350,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 9,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              }
             ]
           }
         ],
@@ -3970,6 +4622,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 9,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              }
             ]
           },
           {
@@ -3993,6 +4676,37 @@
               11,
               12,
               13
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "sketch",
+                "verbatim": "sketch",
+                "marks": 9,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              }
             ]
           },
           {
@@ -5016,12 +5730,15 @@
     {
       "cardId": "cons-2020-ol-q1-a",
       "priorSha256": "2668023eb669f825f9f678c5a671f8faab2f6ab2d360920f755bc0437eed67d9",
-      "correctedSha256": "64ce5edd8d449d9ee7eb017cc612dda4f775805fb7d34b396fff7260b90777b0",
+      "correctedSha256": "e77da9089c2cbbcfdca735dcca6df4b7ea295cd2f59dc377cd3a1eca741f2ce1",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 47,
       "priorTopicId": "cons-2-4",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47."
+      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47.",
+      "supersededSha256": [
+        "64ce5edd8d449d9ee7eb017cc612dda4f775805fb7d34b396fff7260b90777b0"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q1-b",
@@ -5036,12 +5753,15 @@
     {
       "cardId": "cons-2020-ol-q2-a",
       "priorSha256": "1411bfdc2092602917ca61d3e340d8e3bf7976a9346abd832c68499a5368e537",
-      "correctedSha256": "76163ef32b2563418b4b33da761d2c269f0a04f5ae6fb7f6668b567273581e57",
+      "correctedSha256": "cf3a6c39dbe902b85072ee9bbf9646f7a1a828d6b521f86ccd9ac89f021939a3",
       "priorTotalMarks": 5,
       "correctedTotalMarks": 26,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-3-3",
-      "reason": "Question wording lifted from the paper. Adds the printed insulation type (5) and thickness (5) to the method note and sketch (8 + 8): 5 → 26."
+      "reason": "Question wording lifted from the paper. Adds the printed insulation type (5) and thickness (5) to the method note and sketch (8 + 8): 5 → 26.",
+      "supersededSha256": [
+        "76163ef32b2563418b4b33da761d2c269f0a04f5ae6fb7f6668b567273581e57"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q2-b",
@@ -5056,22 +5776,28 @@
     {
       "cardId": "cons-2020-ol-q2-c",
       "priorSha256": "50316a96a199b621279e59f7d02e9fa18bea44659b426327fdaf7fd1c1b199cd",
-      "correctedSha256": "7fbac76c729d45b6e8329c7240c64959e81d888cd13d950cf2abaf8b2b3d0d79",
+      "correctedSha256": "4ff76a7b31433ca3a756f4b7b4027b1b13e1c74da76f29abc3c11e8791a302d5",
       "priorTotalMarks": 16,
       "correctedTotalMarks": 16,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-6-2",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed note + sketch row (8 + 8); tariff unchanged (16)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed note + sketch row (8 + 8); tariff unchanged (16).",
+      "supersededSha256": [
+        "7fbac76c729d45b6e8329c7240c64959e81d888cd13d950cf2abaf8b2b3d0d79"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q3-a",
       "priorSha256": "98c199c4ad2139a04822fed5712c043588d1bb6cfd4250ba7b3a29b4fbae0399",
-      "correctedSha256": "343bc13f9ac9a5078b493f94a0b18d2c90fb4571ee6548380b9d262f941e9e44",
+      "correctedSha256": "2d34dd9c8f0ec39b964b426dc8360b38a5d677e2e19e2258f17b43cc978a1fc1",
       "priorTotalMarks": 40,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-3",
-      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketch band (6/4/2) to the best-eight items: 40 → 46."
+      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketch band (6/4/2) to the best-eight items: 40 → 46.",
+      "supersededSha256": [
+        "343bc13f9ac9a5078b493f94a0b18d2c90fb4571ee6548380b9d262f941e9e44"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q3-b",
@@ -5096,22 +5822,28 @@
     {
       "cardId": "cons-2020-ol-q4-c",
       "priorSha256": "e90cc367356577a6d41297d131d42891816b70996ffef01f31365304065ab036",
-      "correctedSha256": "8e31ba77241cbe0cb94f0c5d1b54d1aae05d28d1e5144340e56e4d1c8e11801e",
+      "correctedSha256": "dc1b885ff3ed4608636e15835b842f67ab84e53b028473e4d2ac9879f9bf4af7",
       "priorTotalMarks": 16,
       "correctedTotalMarks": 16,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed note + sketch row (6 + 10); tariff unchanged (16)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed note + sketch row (6 + 10); tariff unchanged (16).",
+      "supersededSha256": [
+        "8e31ba77241cbe0cb94f0c5d1b54d1aae05d28d1e5144340e56e4d1c8e11801e"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q5-a",
       "priorSha256": "bc745f678d79a79ab7b5979bfd8587501891057c3e787e1b690e33492f690535",
-      "correctedSha256": "8fb03ccf35714d26dcdf9528f23054b7167ece4653be19eb1a0f47e96c3df410",
+      "correctedSha256": "20f105f685e819ce86d6a12d1730e87cbb920f81536b73476adf1ac73d2b4109",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-3-8",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46."
+      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46.",
+      "supersededSha256": [
+        "8fb03ccf35714d26dcdf9528f23054b7167ece4653be19eb1a0f47e96c3df410"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q5-b",
@@ -5136,12 +5868,15 @@
     {
       "cardId": "cons-2020-ol-q6-b",
       "priorSha256": "efacbef03e3050d524bf14380ca12429d3e5926a0ab3e7b8d74137815ab26879",
-      "correctedSha256": "f21f3b780bfb0a51913838802f1a535d2ed23c6c18d1f601141ff627d212a1bf",
+      "correctedSha256": "ce1c8f8136b133a87005eb4578518d95032abcaa8e4d49c750021d295c159488",
       "priorTotalMarks": 18,
       "correctedTotalMarks": 18,
       "priorTopicId": "cons-1-8",
       "correctedTopicId": "cons-1-8",
-      "reason": "Question wording lifted from the paper. Split into the two printed precautions (notes + sketch 5 + 4 each); tariff unchanged (18)."
+      "reason": "Question wording lifted from the paper. Split into the two printed precautions (notes + sketch 5 + 4 each); tariff unchanged (18).",
+      "supersededSha256": [
+        "f21f3b780bfb0a51913838802f1a535d2ed23c6c18d1f601141ff627d212a1bf"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q6-c",
@@ -5156,22 +5891,28 @@
     {
       "cardId": "cons-2020-ol-q7-a",
       "priorSha256": "dacdc88e669f0628c267052f91196dff1f3ee7afad4f34b35cb94f567f974455",
-      "correctedSha256": "31222a27ff852f63ed4d2ad8813bf195e00edca76a888c40c12fa2d6933b76e4",
+      "correctedSha256": "42cd36e58055f8e822eee9924f9eb081fc962eda090319f2c38c94e38e372c36",
       "priorTotalMarks": 24,
       "correctedTotalMarks": 24,
       "priorTopicId": "cons-5-6",
       "correctedTopicId": "cons-5-6",
-      "reason": "Question wording lifted from the paper. Split into the printed sketch (6) and the three location-and-reason rows (3 + 3 each); tariff unchanged (24)."
+      "reason": "Question wording lifted from the paper. Split into the printed sketch (6) and the three location-and-reason rows (3 + 3 each); tariff unchanged (24).",
+      "supersededSha256": [
+        "31222a27ff852f63ed4d2ad8813bf195e00edca76a888c40c12fa2d6933b76e4"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q7-b",
       "priorSha256": "e126d18174b004a9b6965494d269646d30662113fcdaff134b83e89d3a811d6b",
-      "correctedSha256": "7b2df720d65d89589bb3d6fb4e13cd86a12f3a41a1d478d02422382f8c55770f",
+      "correctedSha256": "616f5851a75dc4265b951c3795ffbc79fd910b5d8a185f185dbfdc5271841b00",
       "priorTotalMarks": 8,
       "correctedTotalMarks": 20,
       "priorTopicId": "cons-5-6",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Both printed locations, each note + sketch (2 + 4) and a reason (4): 8 → 20."
+      "reason": "Question wording lifted from the paper. Both printed locations, each note + sketch (2 + 4) and a reason (4): 8 → 20.",
+      "supersededSha256": [
+        "7b2df720d65d89589bb3d6fb4e13cd86a12f3a41a1d478d02422382f8c55770f"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q7-c",
@@ -5206,12 +5947,15 @@
     {
       "cardId": "cons-2020-ol-q9-b",
       "priorSha256": "35b1e8c04c4f11f3e3c55fdd4c94c01274a02958eacc68b743ce21fc22ebd195",
-      "correctedSha256": "8e0fdc46d563129222b99515f1017e5ce520057b8df993fa31c514777911a243",
+      "correctedSha256": "23fbbf18f7c25e0ee39cf998969cfbe9018fe489a5000a80e60e0a4e271fc26a",
       "priorTotalMarks": 26,
       "correctedTotalMarks": 26,
       "priorTopicId": "cons-7-4",
       "correctedTopicId": "cons-7-4",
-      "reason": "Question wording lifted from the paper. Split into the two printed modifications (notes + sketch 4 + 9 each); tariff unchanged (26)."
+      "reason": "Question wording lifted from the paper. Split into the two printed modifications (notes + sketch 4 + 9 each); tariff unchanged (26).",
+      "supersededSha256": [
+        "8e0fdc46d563129222b99515f1017e5ce520057b8df993fa31c514777911a243"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q9-c",
@@ -5538,5 +6282,58 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2020-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2020-ordinary/prior-2020-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2020-ordinary/prior-2020-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2020-ol-q2-complete",
+      "priorSha256": "a2aa5abbb5e61c614f67ba43eb1b5b63c1600fc733c0569d57e2ea2177c0e1e5",
+      "correctedSha256": "36fc563be5fe92b9e9320aac451c8522d51fa16d6b698e80aa4860a012598ea7",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2020-ol-q4-complete",
+      "priorSha256": "dcbf47d5091c700b139d8c6621e48e2590750cf38a2950b04a3efa56a35a4a80",
+      "correctedSha256": "a3f2ce96a15d7db12c35eac2f0a18db75a2ba787d3ba125b5df6be3ac1e826a2",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2020-ol-q6-complete",
+      "priorSha256": "9ac1916849c8a4d0fab363cb88d070730badc9108a1280fed231737ab04b472f",
+      "correctedSha256": "a35acdde5fa5780591ac5c85a299898602d998469d9363da72393900d90dac40",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2020-ol-q7-complete",
+      "priorSha256": "86c83de5b2c319c450bb767beb1b055d0b0317ae9eb48e055bc4aebc16e06bed",
+      "correctedSha256": "e7e06b5d67cfdf10477d6539d266f285e504eac76889785faaab09637eefd4e1",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "ee38d55d7eed31eeb459e300772d8cc38c74b81972311110f76d4fa627127e2c"
+      ]
+    },
+    {
+      "cardId": "cons-2020-ol-q9-complete",
+      "priorSha256": "01c6e4b14bcdeb50ddc30d6320177442cd01f7d70dffaa3acbbc6f30d236c7dc",
+      "correctedSha256": "11bb3c8b37c000d823cd0a9bf086bd27d46729081cc32255ca3355cecd9b8602",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2020-ol-q1-complete",
+      "priorSha256": "cf853052631c01d44e807a35236dc4d9176ffa71918d2d28864f175ab194650b",
+      "correctedSha256": "9d31b7726cf866defb2efa1a3dbf2cafc1b080bba90c1e2e2bad698683289c5a",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2020-ol-q3-complete",
+      "priorSha256": "14dc67f5207377b372edb0548f50c4cb437977fe5731344eddd41fc7f3814ea4",
+      "correctedSha256": "21ab3418d01b2496033958b25e6ef69b8d381f371f836bb706f7976207d9f42d",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2020-ol-q5-complete",
+      "priorSha256": "e6983f6628fd2ddb27d9efe7e9b4550306803a4e866bb05791fd92a34a1ee3f1",
+      "correctedSha256": "c9d25ea8b68665e045f2746ac6866f7e7e8a96543273feb6dece25ee3992c2ba",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    }
+  ]
 }

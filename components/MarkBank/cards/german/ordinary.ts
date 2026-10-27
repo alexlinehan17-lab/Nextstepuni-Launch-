@@ -1452,7 +1452,7 @@ export const CARDS: SecCard[] = [
     questionText: "When did the boys get the idea for their app and what were they doing at the time? (Par. 3)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Three years (1) ago (1)", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “When”." },
+    { id: "r-1", kind: "criterion", verbatim: "Three years (1) ago (1)", marks: 2, contextNote: "This question is printed in Irish and in English and must be answered in Irish or English; the marking scheme halves the marks for an answer given in the language not specified. The scheme heads this answer “When”.", permittedMarks: [0,1,2], parts: [{"id":"p1","verbatim":"Three years","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"ago","marks":1,"permittedMarks":[0,1]}] },
     { id: "r-2", kind: "point", verbatim: "They took part in a school project about bullying.", marks: 2, contextNote: "The scheme heads this answer “What”." },
     ],
     sourceMaterial: {

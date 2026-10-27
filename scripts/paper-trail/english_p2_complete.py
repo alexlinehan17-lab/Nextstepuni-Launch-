@@ -118,9 +118,34 @@ def crop_text(doc, start_page, start_y, end_page, end_y):
     return norm(" ".join(parts))
 
 
+# A spaced dash outside brackets separates a printed title from its author
+# ("THE HANDMAID’S TALE – Margaret Atwood"). One inside brackets belongs to the
+# title: 2019 Ordinary prints "THE FISH (EXTRACT: LINES 45 – 76)", which a
+# split at the first dash cut to "The Fish (Extract: Lines 45".
+_TITLE_DASH = re.compile(r"[()]|\s+[‐‑–—-]\s+")
+# str.title() starts a new word after an apostrophe ("Handmaid’S", "Yeats’S",
+# "It’S"). A possessive or contraction ending is lowered again; a name such as
+# O’Casey keeps its capital because "Casey" is not one of these endings.
+_APOSTROPHE_ENDING = re.compile(r"(?<=[A-Za-z])([’'])(S|T|D|M|Ll|Re|Ve)\b")
+# A roman numeral in a title ("BABY-MOVEMENTS II") is printed in capitals.
+_ROMAN = re.compile(r"\b(?:Ii|Iii|Iv|Vi|Vii|Viii|Ix)\b")
+
+
 def title_case(value):
-    value = norm(re.split(r"\s+[‐‑–—-]\s+", value, maxsplit=1)[0]).strip(" ‐‑–—-")
-    return value.title()
+    value = norm(value)
+    depth = 0
+    for match in _TITLE_DASH.finditer(value):
+        token = match.group(0)
+        if token == "(":
+            depth += 1
+        elif token == ")":
+            depth = max(0, depth - 1)
+        elif depth == 0:
+            value = value[:match.start()]
+            break
+    value = norm(value).strip(" ‐‑–—-").title()
+    value = _APOSTROPHE_ENDING.sub(lambda m: m.group(1) + m.group(2).lower(), value)
+    return _ROMAN.sub(lambda m: m.group(0).upper(), value)
 
 
 def header_candidates(page, letters):

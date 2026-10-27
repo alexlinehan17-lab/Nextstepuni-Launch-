@@ -19,21 +19,22 @@ Q8 = 'q8-terms'
 TERMS = ['Solar panel', 'Dovetail halving joint', 'Sash cramp', 'Flue liner', 'Purlin', 'Water table', 'Wind turbine', 'Low-e coating', 'Vapour barrier']
 LEGACY = set()
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["Weatherproofing - 3 layers of bituminous felt", "Plywood decking 25 mm", "Roof /ceiling joist 200 mm × 50 mm", "Thermal insulation min 150 mm", "12.5 insulated foil-backed plasterboard with skim coat", "Air tightness seal taped to masonry", "Wallplate, 100 × 75 mm, with wallplate straps", "Proprietary cavity barrier / non combustible tile or slate", "Internal plaster 15 mm", "Concrete block inner leaf 100 mm", "Wall insulation / cavity / full fill cavity", "Concrete block outer leaf 100 mm", "External render 19 mm", "Fascia and soffit"]), 'q3-a': ('details', 7, 5, ["Rising main", "Ballvalve", "Cold water storage tank", "Overflow", "Cold feed from storage to indirect hot water cylinder", "Indirect hot water cylinder", "Expansion pipe from indirect hot water cylinder", "Hot water supply to appliances", "Cold water supply from storage tank to appliances", "Insulation to storage tank, cylinder and pipework", "Labelling"]), 'q5-section': ('details', 6, 6, ["Stud partition 100 mm × 50 mm", "Insulation between studs", "Plasterboard to the partition 12.5 mm", "Skirting boards 120 mm × 20 mm", "Floating tongued and grooved oak timber floor", "Polyethylene bubble underlay or proprietary matting", "Plywood 18 mm - 25 mm", "Joists 200 mm × 50 mm", "Insulation between joists minimum 150 mm", "Plasterboard, plaster and vapour barrier", "Plaster 15 mm", "Solid block wall 215 mm"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8, 'q5-section'}  # Q8's any-five card and the unlettered Q5 drawing are each a whole question
 LEDGER = [(1, 'Answer Question'), (3, 'any five')]
 TAILS = {'6': ('the kitchen in a dwelling house.', 'must be worn on a construction site:')}  # Q6(a)'s bullets follow Q9 in the text layer
 GAPS = {'q4-a': {'cons-2-1'}, 'q4-b': {'cons-2-5'}, Q8: {'cons-10-1', 'cons-10-4', 'cons-10-6', 'cons-2-1'}, 'q9-a': {'cons-10-1'}}
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 4, r(4))],
+    'q1-a': [('details', 35, None), ('dimensions', 4, r(4))],
     'q1-b': [('rainwater', 3, r(3)), ('presentation', 8, BAND8)],
     'q2-a': [('cavity-notes', 12, r(12)), ('cavity-sketch', 8, BAND8), ('internal-notes', 12, r(12)), ('internal-sketch', 8, BAND8)],
     'q2-b': [('advantage-1', 5, r(5)), ('advantage-2', 5, r(5))],
-    'q3-a': [('details', 35, list(range(0, 36, 5))), ('presentation', 8, BAND8)],
+    'q3-a': [('details', 35, None), ('presentation', 8, BAND8)],
     'q3-b': [('primary', 4, r(4)), ('other', 3, r(3))],
     'q4-a': [(k, 9, r(9)) for k in ['profiles', 'trench', 'square', 'level']],
     'q4-b': [('reinforcement', 3, r(3)), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
-    'q5-section': [('details', 36, list(range(0, 37, 6))), ('dimensions', 6, r(6)), ('presentation', 8, BAND8)],
+    'q5-section': [('details', 36, None), ('dimensions', 6, r(6)), ('presentation', 8, BAND8)],
     'q6-a': [(k, 6, BAND6) for k in ['eye-sign', 'ear-sign', 'gloves-sign']],
     'q6-b': [(k, 6, r(6)) for k in ['eye', 'ear', 'gloves']],
     'q6-c': [('item', 6, r(6)), ('reason-1', 4, r(4)), ('reason-2', 4, r(4))],

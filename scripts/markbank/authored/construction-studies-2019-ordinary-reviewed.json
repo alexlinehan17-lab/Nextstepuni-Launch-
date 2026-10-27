@@ -36,20 +36,25 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm external plaster; 100 mm block outer leaf; 200 mm thermal insulation; stepped DPC/cavity tie; 100 mm block inner leaf; 15 mm internal plaster; prestressed concrete lintels 100 × 70 mm; window head 150 × 80 mm; triple glazing with low-e glass.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm external plaster; 100 mm block outer leaf; 200 mm thermal insulation; stepped DPC/cavity tie; 100 mm block inner leaf; 15 mm internal plaster; prestressed concrete lintels 100 × 70 mm; window head 150 × 80 mm; triple glazing with low-e glass.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External plaster 19 mm",
+                "Concrete block outer leaf 100 mm",
+                "Thermal insulation 200 mm",
+                "Stepped DPC/ Cavity tie",
+                "Concrete block inner leaf 100 mm",
+                "Internal plaster 15 mm",
+                "Pre-stressed concrete lintels 100 × 70 mm",
+                "Window head 150 × 80 mm",
+                "Triple glazing low e glass"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -245,20 +250,25 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm external plaster; 100 mm block outer leaf; 200 mm thermal insulation; stepped DPC/cavity tie; 100 mm block inner leaf; 15 mm internal plaster; prestressed concrete lintels 100 × 70 mm; window head 150 × 80 mm; triple glazing with low-e glass.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 19 mm external plaster; 100 mm block outer leaf; 200 mm thermal insulation; stepped DPC/cavity tie; 100 mm block inner leaf; 15 mm internal plaster; prestressed concrete lintels 100 × 70 mm; window head 150 × 80 mm; triple glazing with low-e glass.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External plaster 19 mm",
+                "Concrete block outer leaf 100 mm",
+                "Thermal insulation 200 mm",
+                "Stepped DPC/ Cavity tie",
+                "Concrete block inner leaf 100 mm",
+                "Internal plaster 15 mm",
+                "Pre-stressed concrete lintels 100 × 70 mm",
+                "Window head 150 × 80 mm",
+                "Triple glazing low e glass"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -997,20 +1007,25 @@
         "rows": [
           {
             "id": "items",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 28,
-            "contextNote": "Credit the best SEVEN acceptable items at 4 marks each, capped at 28. Marked items: drawing the given sketch; 15 mm rising main; 15 mm cold water feed to the kitchen sink; water storage tank; ball valve in the tank; 28 mm overflow; insulation around the tank; 15 mm cold water supply to the cistern; valves.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28
-            ]
+            "contextNote": "Any 7 of the above details (4 marks each). Credit the best SEVEN acceptable items at 4 marks each, capped at 28. Marked items: drawing the given sketch; 15 mm rising main; 15 mm cold water feed to the kitchen sink; water storage tank; ball valve in the tank; 28 mm overflow; insulation around the tank; 15 mm cold water supply to the cistern; valves.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 4,
+              "options": [
+                "Draw given sketch",
+                "15 mm rising main",
+                "15 mm cold water feed to kitchen sink",
+                "Water storage tank",
+                "Ball valve in storage tank",
+                "28 mm Overflow",
+                "Insulation around storage tank",
+                "15 mm cold water supply to cistern",
+                "Valves"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1311,20 +1326,25 @@
         "rows": [
           {
             "id": "a-items",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 28,
-            "contextNote": "Credit the best SEVEN acceptable items at 4 marks each, capped at 28. Marked items: drawing the given sketch; 15 mm rising main; 15 mm cold water feed to the kitchen sink; water storage tank; ball valve in the tank; 28 mm overflow; insulation around the tank; 15 mm cold water supply to the cistern; valves.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28
-            ]
+            "contextNote": "Any 7 of the above details (4 marks each). Credit the best SEVEN acceptable items at 4 marks each, capped at 28. Marked items: drawing the given sketch; 15 mm rising main; 15 mm cold water feed to the kitchen sink; water storage tank; ball valve in the tank; 28 mm overflow; insulation around the tank; 15 mm cold water supply to the cistern; valves.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 4,
+              "options": [
+                "Draw given sketch",
+                "15 mm rising main",
+                "15 mm cold water feed to kitchen sink",
+                "Water storage tank",
+                "Ball valve in storage tank",
+                "28 mm Overflow",
+                "Insulation around storage tank",
+                "15 mm cold water supply to cistern",
+                "Valves"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -2128,20 +2148,26 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: upper floor joists 200 × 50 mm; 150 mm insulation between joists; 25 mm plywood; ceiling plasterboard, plaster and vapour barrier; stud partition 100 × 50 mm; stud soleplate 100 × 50 mm; 12.5 mm plasterboard on the partition; floor underlay; floating tongued and grooved timber floor; skirting board 120 × 20 mm.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: upper floor joists 200 × 50 mm; 150 mm insulation between joists; 25 mm plywood; ceiling plasterboard, plaster and vapour barrier; stud partition 100 × 50 mm; stud soleplate 100 × 50 mm; 12.5 mm plasterboard on the partition; floor underlay; floating tongued and grooved timber floor; skirting board 120 × 20 mm.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Upper floor joists 200 mm × 50 mm",
+                "Insulation between joists 150 mm",
+                "Plywood 25 mm",
+                "Ceiling plasterboard, plaster and vapour barrier",
+                "Stud partition 100 mm × 50 mm",
+                "Stud soleplate 100 mm × 50 mm",
+                "Plasterboard 12.5 mm on partition",
+                "Floor underlay",
+                "Floating tongued and grooved timber floor",
+                "Skirting board 120 mm × 20 mm"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2336,20 +2362,26 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: upper floor joists 200 × 50 mm; 150 mm insulation between joists; 25 mm plywood; ceiling plasterboard, plaster and vapour barrier; stud partition 100 × 50 mm; stud soleplate 100 × 50 mm; 12.5 mm plasterboard on the partition; floor underlay; floating tongued and grooved timber floor; skirting board 120 × 20 mm.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: upper floor joists 200 × 50 mm; 150 mm insulation between joists; 25 mm plywood; ceiling plasterboard, plaster and vapour barrier; stud partition 100 × 50 mm; stud soleplate 100 × 50 mm; 12.5 mm plasterboard on the partition; floor underlay; floating tongued and grooved timber floor; skirting board 120 × 20 mm.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Upper floor joists 200 mm × 50 mm",
+                "Insulation between joists 150 mm",
+                "Plywood 25 mm",
+                "Ceiling plasterboard, plaster and vapour barrier",
+                "Stud partition 100 mm × 50 mm",
+                "Stud soleplate 100 mm × 50 mm",
+                "Plasterboard 12.5 mm on partition",
+                "Floor underlay",
+                "Floating tongued and grooved timber floor",
+                "Skirting board 120 mm × 20 mm"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -3432,6 +3464,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -3446,6 +3500,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -3460,6 +3536,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -3840,6 +3938,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -3854,6 +3974,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -3868,6 +4010,28 @@
               2,
               3,
               4
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 1,
+                "permittedMarks": [
+                  0,
+                  1
+                ]
+              }
             ]
           },
           {
@@ -4347,6 +4511,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -4626,6 +4820,36 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "notes",
+                "verbatim": "Notes",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "sketches",
+                "verbatim": "sketches",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
             ]
           },
           {
@@ -5804,12 +6028,15 @@
     {
       "cardId": "cons-2019-ol-q1-a",
       "priorSha256": "9be9cbc40300ff9b3f5dd83049c470cb9554d11e1382d5d9028fe1ba09ce2238",
-      "correctedSha256": "201065e6cc8a39e979816e6f93e31cc50cf7a5d842a4e6df7a8e40ef5f43621f",
+      "correctedSha256": "d1303b65435267bbeaf81a6bbaf10734097ab357c2b770c1d92336a505bf2ee9",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 39,
       "priorTopicId": "cons-1-5",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) printed within part (a): 35 → 39."
+      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) printed within part (a): 35 → 39.",
+      "supersededSha256": [
+        "201065e6cc8a39e979816e6f93e31cc50cf7a5d842a4e6df7a8e40ef5f43621f"
+      ]
     },
     {
       "cardId": "cons-2019-ol-q1-b",
@@ -5844,12 +6071,15 @@
     {
       "cardId": "cons-2019-ol-q3-a",
       "priorSha256": "9baed4a61ad6b0b7e714e3cb94568b5d5b78e2932f9f698a4fffb81995caaa07",
-      "correctedSha256": "c1aca9ad9516e0faa66e4c9338d5710f0239818f68903d289ed1a4d1a64d2d8c",
+      "correctedSha256": "2374f34b24a1dfc2c0df5bc74ab0392b2b6f3aae293ca07e3ef9ba8d92019499",
       "priorTotalMarks": 28,
       "correctedTotalMarks": 34,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketch band (6/4/2) to the best-seven items: 28 → 34."
+      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketch band (6/4/2) to the best-seven items: 28 → 34.",
+      "supersededSha256": [
+        "c1aca9ad9516e0faa66e4c9338d5710f0239818f68903d289ed1a4d1a64d2d8c"
+      ]
     },
     {
       "cardId": "cons-2019-ol-q3-b",
@@ -5894,12 +6124,15 @@
     {
       "cardId": "cons-2019-ol-q5-a",
       "priorSha256": "cc5b06bf91e859ff23157acfebab886315b94a24d1f9d55018f57f69cb3e6fd3",
-      "correctedSha256": "32dcdfc03645af53ac2c59f8f0accdadb5fdbc2765d8e38e6a373ee521c3393e",
+      "correctedSha256": "2fb7f175a5cfa1bd547700cd011c7dfc50bec718e5e204e7fd30ad8749edc0ea",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 38,
       "priorTopicId": "cons-4-3",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) printed within part (a): 35 → 38."
+      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) printed within part (a): 35 → 38.",
+      "supersededSha256": [
+        "32dcdfc03645af53ac2c59f8f0accdadb5fdbc2765d8e38e6a373ee521c3393e"
+      ]
     },
     {
       "cardId": "cons-2019-ol-q5-b",
@@ -5954,12 +6187,15 @@
     {
       "cardId": "cons-2019-ol-q7-a",
       "priorSha256": "554cd3a9c8874e5122c537c74964d3e3036d0e2bb9e5ae3bce578fec8320cb48",
-      "correctedSha256": "17e7d8ec3d56fe1f002a7482cede7ae696ce4c31e6d563447a22d89f0146fcfa",
+      "correctedSha256": "77aa9c63655fabfe4daacc45655d599c3c453119bf7209581721ce064c5fe3b3",
       "priorTotalMarks": 16,
       "correctedTotalMarks": 24,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — sketch 4, three locations with reasons (3 + 1 each) and quality of sketches (8/6/4): 16 → 24."
+      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — sketch 4, three locations with reasons (3 + 1 each) and quality of sketches (8/6/4): 16 → 24.",
+      "supersededSha256": [
+        "17e7d8ec3d56fe1f002a7482cede7ae696ce4c31e6d563447a22d89f0146fcfa"
+      ]
     },
     {
       "cardId": "cons-2019-ol-q7-b",
@@ -5994,12 +6230,15 @@
     {
       "cardId": "cons-2019-ol-q9-b",
       "priorSha256": "95e9b7ad1ccf3233da0f4ccfa706b5b94a7854c8c52cb24ff3f076c00626d595",
-      "correctedSha256": "229b7b4c515ef4b7c4ea790fc738b5e7bfbb8cb116370acbeb35bf82508d9367",
+      "correctedSha256": "1727a60b0c0991d3096ae16fc42ba24691f83e5d3293dfbc565950fd2b985ecf",
       "priorTotalMarks": 12,
       "correctedTotalMarks": 20,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-3-5",
-      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketches band (8/6/4) to the modification notes and sketches (6 + 6): 12 → 20."
+      "reason": "Question wording lifted from the paper. Adds the printed quality-of-sketches band (8/6/4) to the modification notes and sketches (6 + 6): 12 → 20.",
+      "supersededSha256": [
+        "229b7b4c515ef4b7c4ea790fc738b5e7bfbb8cb116370acbeb35bf82508d9367"
+      ]
     },
     {
       "cardId": "cons-2019-ol-q9-c",
@@ -6284,5 +6523,37 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2019-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2019-ordinary/prior-2019-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2019-ordinary/prior-2019-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2019-ol-q9-complete",
+      "priorSha256": "af804f87b22021e1d3a9110fcf64b12eec061acaa92a8a6a2096a2b6dd7f9de6",
+      "correctedSha256": "4a25ab992938cddc855a291f99d3b697eb8baeac9bc17e2121ddc7e5aef6d345",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2019-ol-q7-complete",
+      "priorSha256": "fd4b8aca9841de1a3cc2e355a5c6e5f82177d01315d8b80d99a75c1c3ae1ee0c",
+      "correctedSha256": "698cc93c23a529ff7161777350953846e379836fe7aac6df2ca785fba3fe56be",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2019-ol-q1-complete",
+      "priorSha256": "c12a451e97ef680519425daec0ee44226091984ccd778a3240a281d2a7e01ff8",
+      "correctedSha256": "1041d1d919c391780058c160e710a7b3011b0cfabc2ba580449aa13ea416d41a",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2019-ol-q3-complete",
+      "priorSha256": "88f1ec2fdd0bf7360d1993fae11c52f43d44f9b94286dae323e713ffdb3982a2",
+      "correctedSha256": "cc4ec3e4cde9c53c040bf5823f4f9e560e2e22d73f647bd8b04f9f5bbb3e1a94",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2019-ol-q5-complete",
+      "priorSha256": "858a3b7654f93da8f7fe7c5d2b7ae70b6d6fef17dd3776fb4d43a5c1a09a9199",
+      "correctedSha256": "b1e658018f94db1e8f37ef5f5cb548b467440ffe441048ac51ad83ae16898e6e",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    }
+  ]
 }

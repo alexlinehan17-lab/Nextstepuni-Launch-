@@ -1,0 +1,245 @@
+/* Paper Trail viewer chrome on Kobra (approved review, 25 Oct 2026): the top
+   bar, the Tools menu, the zoom and page bar, and the status toasts. Kobra
+   Buttons replace the option-E ink buttons and their offset shadows, the Tools
+   menu is a Kobra DropdownMenu whose toggle rows carry a Switch, and the page
+   position is a serif count over a Kobra Progress. Orange marks Answers when
+   it is on (ordinary selection) and fills the page progress; ink carries the
+   rest. Tokens only, so .dark on <html> carries it; no shadows or tints of our
+   own and no forced declarations.
+   Every rule sits under `.nsu-paper-viewer`, the class the viewer gives each
+   of its KobraScopes (top bar, page bar, floating notices, menu rows). The one
+   exception is the menu panel itself, which the runtime portals into its own
+   `.nsu-kobra` layer outside the viewer. The pages, the question workspace and
+   the sheets keep their own styles. */
+
+.nsu-paper-viewer { flex: none; min-width: 0; }
+.nsu-paper-viewer :is(p, h2) { margin: 0; }
+.nsu-paper-viewer .pvc-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ── Top bar. On a narrow bar the controls take their own row, as before. ── */
+.nsu-paper-viewer .pvc-top {
+  padding: calc(12px + var(--sat, 0px)) calc(16px + var(--sar, 0px)) 12px calc(16px + var(--sal, 0px));
+  border-bottom: 1px solid var(--border);
+  background: var(--background);
+  color: var(--foreground);
+  /* Focused on open so the dialog has a landing point; it is not a control. */
+  outline: none;
+}
+.nsu-paper-viewer .pvc-bar {
+  container: pvc-bar / inline-size;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px;
+  max-width: 768px; margin: 0 auto;
+}
+.nsu-paper-viewer .pvc-heading { flex: 1; min-width: 0; }
+.nsu-paper-viewer .pvc-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 600 15px/1.3 'DM Sans', sans-serif; }
+.nsu-paper-viewer .pvc-subtitle { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 400 13px/1.4 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.nsu-paper-viewer .pvc-controls {
+  order: 10; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px;
+  width: 100%; min-width: 0;
+}
+
+/* Every button in the chrome: 44px, radius 12, DM Sans 15/500. The Tools
+   button is a Kobra Button rendered by the menu trigger, which renames its slot. */
+.nsu-paper-viewer :is(.pvc-top, .pvc-bottom) :is([data-slot=button], [data-slot=dropdown-menu-trigger]) {
+  min-height: 44px; padding-inline: 16px; gap: 8px; border-radius: 12px;
+  font: 500 15px/1 'DM Sans', sans-serif;
+}
+.nsu-paper-viewer :is(.pvc-top, .pvc-bottom) :is([data-slot=button], [data-slot=dropdown-menu-trigger]) svg { width: 18px; height: 18px; }
+.nsu-paper-viewer :is(.pvc-top, .pvc-bottom) .pvc-icon[data-slot=button] { width: 44px; height: 44px; padding: 0; }
+
+/* Open or download: a link, so it keeps link semantics, drawn with the same
+   outline face as the Kobra icon buttons beside it (nsu-ink-outline gives the
+   ::before its fill, edge and hover in both themes). */
+.nsu-paper-viewer .pvc-link {
+  position: relative; isolation: isolate; flex: none;
+  display: inline-grid; place-items: center; width: 44px; height: 44px;
+  border-radius: 12px; color: var(--foreground);
+}
+.nsu-paper-viewer .pvc-link::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  border-width: 1px; border-style: solid; border-radius: inherit;
+  transition: background-color 150ms ease-out;
+}
+.nsu-paper-viewer .pvc-link svg { width: 18px; height: 18px; }
+
+/* Paper / Scheme: Kobra Tabs as the house pill, a soft tray, the chosen side on
+   the page face with an ink edge. */
+.nsu-paper-viewer .pvc-document[data-slot=tabs] { gap: 0; }
+.nsu-paper-viewer .pvc-document [data-slot=tabs-list] {
+  height: 44px; padding: 4px; gap: 4px;
+  border: 1px solid var(--outline-soft); border-radius: 12px;
+}
+.nsu-paper-viewer .pvc-document [data-slot=tabs-trigger] {
+  min-width: 0; height: 100%; padding: 0 16px;
+  border: 1px solid transparent; border-radius: 9px;
+  font: 500 15px/1 'DM Sans', sans-serif; color: var(--muted-foreground); cursor: pointer;
+}
+.nsu-paper-viewer .pvc-document [data-slot=tabs-trigger]:hover { color: var(--foreground); }
+.nsu-paper-viewer .pvc-document [data-slot=tabs-trigger][aria-selected=true] {
+  background: var(--background); color: var(--foreground);
+  border-color: var(--outline-strong); box-shadow: none;
+}
+
+/* Answers: the main action on Kobra's default face. On, it takes the orange
+   face with dark ink in both themes, and its marker fills. */
+.nsu-paper-viewer .pvc-answers-mark {
+  width: 14px; height: 14px; flex: none; border-radius: 50%;
+  border: 1.5px solid currentColor; background: transparent;
+  transition: background 150ms ease;
+}
+.nsu-paper-viewer .pvc-top .pvc-answers[aria-pressed=true][data-slot=button] { color: var(--foreground); }
+.dark .nsu-paper-viewer .pvc-top .pvc-answers[aria-pressed=true][data-slot=button] { color: var(--background); }
+.nsu-paper-viewer .pvc-top .pvc-answers[aria-pressed=true][data-slot=button]::before { background: var(--nsu-orange); }
+.nsu-paper-viewer .pvc-top .pvc-answers[aria-pressed=true][data-slot=button]:hover::before {
+  background: color-mix(in srgb, var(--nsu-orange) 88%, var(--foreground));
+}
+.nsu-paper-viewer .pvc-answers[aria-pressed=true] .pvc-answers-mark { background: currentColor; }
+
+/* Tools: an outline button carrying the count of tools on, ringed in ink while
+   any is on. Under 360px it is the icon alone, as before. */
+.nsu-paper-viewer .pvc-tools-label { display: none; }
+@media (min-width: 360px) {
+  .nsu-paper-viewer .pvc-tools-label { display: inline; }
+}
+.nsu-paper-viewer .pvc-count {
+  display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--foreground); color: var(--background);
+  font: 600 12px/1 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
+}
+.nsu-paper-viewer .pvc-top .pvc-tools[data-active]::before {
+  border-color: var(--foreground); box-shadow: inset 0 0 0 1px var(--foreground);
+}
+
+@container pvc-bar (min-width: 700px) {
+  .nsu-paper-viewer .pvc-controls { order: 0; width: auto; }
+}
+@container pvc-bar (max-width: 480px) {
+  .nsu-paper-viewer .pvc-controls { justify-content: flex-start; }
+  .nsu-paper-viewer .pvc-controls > .pvc-document { flex-basis: 100%; }
+  .nsu-paper-viewer .pvc-controls > .pvc-document [data-slot=tabs-list] { display: flex; width: 100%; }
+  .nsu-paper-viewer .pvc-controls > .pvc-document [data-slot=tabs-trigger] { flex: 1; }
+}
+
+/* ── Page bar: zoom, then previous / position / next ── */
+.nsu-paper-viewer .pvc-bottom {
+  container: pvc-bottom / inline-size;
+  padding: 12px calc(16px + var(--sar, 0px)) calc(12px + var(--sab, 0px)) calc(16px + var(--sal, 0px));
+  border-top: 1px solid var(--border);
+  background: var(--background);
+  color: var(--foreground);
+}
+.nsu-paper-viewer .pvc-pagebar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 16px;
+  max-width: 768px; margin: 0 auto;
+}
+.nsu-paper-viewer .pvc-zoom { display: flex; gap: 8px; }
+.nsu-paper-viewer .pvc-position { display: flex; align-items: center; gap: 12px; flex: 1 1 260px; max-width: 440px; min-width: 0; }
+/* The runtime ships no Slider, so the position reads as a serif count over a
+   Kobra Progress. On a paper of more than three pages the page range input
+   sits over the bar, its thumb a round ink marker at the end of the fill, so
+   the student can still drag to any page. */
+.nsu-paper-viewer .pvc-scrub { position: relative; display: grid; flex: 1; min-width: 0; }
+.nsu-paper-viewer .pvc-progress[data-slot=progress] { display: grid; gap: 8px; min-width: 0; }
+.nsu-paper-viewer .pvc-page-count {
+  justify-self: center; font: 500 20px/1 var(--nsu-serif); letter-spacing: -.02em; font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.nsu-paper-viewer .pvc-page-count .pvc-of { font-style: italic; font-weight: 400; color: var(--muted-foreground); }
+.nsu-paper-viewer .pvc-progress [data-slot=progress-track] {
+  height: 8px; border: 1px solid var(--outline-strong); border-radius: 999px; background: var(--background);
+}
+.nsu-paper-viewer .pvc-progress [data-slot=progress-indicator] { border-radius: 999px; background: var(--nsu-orange); }
+
+/* The range spans the track plus half a thumb each side, so the thumb's centre
+   lands where the fill ends. */
+.nsu-paper-viewer .pvc-range {
+  position: absolute; left: -8px; right: -8px; bottom: -8px;
+  width: calc(100% + 16px); height: 24px; margin: 0;
+  background: transparent; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+}
+.nsu-paper-viewer .pvc-range:focus-visible { outline: none; }
+.nsu-paper-viewer .pvc-range::-webkit-slider-runnable-track { height: 24px; background: transparent; }
+.nsu-paper-viewer .pvc-range::-moz-range-track { height: 24px; background: transparent; }
+.nsu-paper-viewer .pvc-range::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 16px; height: 16px; margin-top: 4px; box-sizing: border-box;
+  border: 2px solid var(--background); border-radius: 50%; background: var(--foreground);
+}
+.nsu-paper-viewer .pvc-range::-moz-range-thumb {
+  width: 16px; height: 16px; box-sizing: border-box;
+  border: 2px solid var(--background); border-radius: 50%; background: var(--foreground);
+}
+.nsu-paper-viewer .pvc-scrub:has(.pvc-range:focus-visible) [data-slot=progress-track] {
+  outline: 2px solid var(--nsu-orange); outline-offset: 3px;
+}
+
+/* One row at every width, as before: the exam clock and the status toasts
+   float just above this bar, so a second row would put them over its buttons.
+   At 360px the bar still gets about 110px. */
+@container pvc-bottom (max-width: 480px) {
+  .nsu-paper-viewer .pvc-position { flex: 1 1 0; max-width: none; gap: 8px; }
+}
+
+/* ── Floating notices ── */
+/* The runtime toasts, lifted off the page bar to where the old status pill sat
+   (and clear of the home indicator). */
+.nsu-paper-viewer .pvc-toasts > [aria-live] { bottom: calc(96px + var(--sab, 0px)); }
+
+/* A paper with no text layer: Kobra's Alert as the house hairline row, the
+   mark in ink, floating where the old pill did. */
+.nsu-paper-viewer .pvc-notice[data-slot=alert] {
+  position: absolute; left: 50%; bottom: calc(96px + var(--sab, 0px)); z-index: 60;
+  display: flex; align-items: center; gap: 10px;
+  width: max-content; max-width: min(calc(100% - 32px), 440px);
+  padding: 10px 14px 10px 12px;
+  border: 1px solid var(--outline-strong); border-radius: 12px;
+  background: var(--background); color: var(--foreground);
+  transform: translateX(-50%);
+}
+.nsu-paper-viewer .pvc-notice [data-slot=alert-mark] { flex: none; width: 20px; height: 20px; padding: 0; background: transparent; color: var(--foreground); }
+.nsu-paper-viewer .pvc-notice [data-slot=alert-description] { font: 400 14px/1.45 'DM Sans', sans-serif; color: var(--foreground); }
+
+/* ── The Tools menu ── */
+/* The panel renders in the runtime's portal layer, outside the viewer. */
+.nsu-kobra .pvc-menu[data-slot=dropdown-menu-content] {
+  width: min(360px, calc(100vw - 32px)); padding: 6px;
+  border: 1px solid var(--outline-soft); border-radius: 16px;
+  background: var(--background); box-shadow: none;
+}
+.nsu-paper-viewer .pvc-menu-label {
+  padding: 8px 10px 6px;
+  font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground);
+}
+.nsu-paper-viewer .pvc-tool[data-slot=dropdown-menu-item] {
+  display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  padding: 10px; border-radius: 12px; cursor: pointer;
+}
+.nsu-paper-viewer .pvc-tool-icon {
+  display: grid; place-items: center; width: 34px; height: 34px;
+  border: 1px solid var(--outline-soft); border-radius: 10px; color: var(--foreground);
+  transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+.nsu-paper-viewer .pvc-tool-icon svg { width: 16px; height: 16px; }
+.nsu-paper-viewer .pvc-tool-icon[data-on] { border-color: var(--foreground); background: var(--foreground); color: var(--background); }
+.nsu-paper-viewer .pvc-tool-copy { display: grid; gap: 2px; min-width: 0; }
+.nsu-paper-viewer .pvc-tool-copy strong { font: 500 15px/1.35 'DM Sans', sans-serif; color: var(--foreground); }
+.nsu-paper-viewer .pvc-tool-copy small { font: 400 13px/1.4 'DM Sans', sans-serif; color: var(--muted-foreground); }
+/* The row is the control (menuitemcheckbox); the switch only shows its state. */
+.nsu-paper-viewer .pvc-tool-switch { display: inline-flex; pointer-events: none; }
+.nsu-paper-viewer .pvc-tool-switch [data-slot=switch][data-on=false] { background: var(--outline-soft); }
+.nsu-paper-viewer .pvc-tool-open { width: 16px; height: 16px; color: var(--muted-foreground); }
+/* The runtime inks every descendant of the highlighted row; keep the reversed
+   face of an on tool, the muted line and the muted arrow as they are. */
+.nsu-paper-viewer .pvc-tool .pvc-tool-icon[data-on] * { color: inherit; }
+.nsu-paper-viewer .pvc-tool .pvc-tool-copy small { color: var(--muted-foreground); }
+.nsu-paper-viewer .pvc-tool svg.pvc-tool-open { color: var(--muted-foreground); }
+/* Keyboard focus: the house orange ring, inside the row so it clears its neighbours. */
+.nsu-paper-viewer .pvc-tool[data-slot=dropdown-menu-item]:focus-visible { outline: 2px solid var(--nsu-orange); outline-offset: -2px; }
+.nsu-paper-viewer .pvc-menu-note { padding: 8px 10px; font: 400 13px/1.45 'DM Sans', sans-serif; color: var(--muted-foreground); }
+
+@media (prefers-reduced-motion: reduce) {
+  .nsu-paper-viewer .pvc-answers-mark,
+  .nsu-paper-viewer .pvc-link::before,
+  .nsu-paper-viewer .pvc-tool-icon { transition: none; }
+}

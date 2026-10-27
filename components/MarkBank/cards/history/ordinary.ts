@@ -295,7 +295,8 @@ export const CARDS: SecCard[] = [
     questionText: "With whom did Asenath Nicholson work closely?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Quaker relief agencies (3M) and Presentation nuns (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Quaker relief agencies", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Presentation nuns", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -391,7 +392,8 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from Ulster, where in Ireland are there unionists opposed to the Bill?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In the South (3M) and in the West (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "In the South", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "in the West", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -439,7 +441,8 @@ export const CARDS: SecCard[] = [
     questionText: "According to the extract, is Carson prepared to support Ulster resistance to Home Rule? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes (3M), he will go with them “to the end” (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "he will go with them “to the end”", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -535,7 +538,8 @@ export const CARDS: SecCard[] = [
     questionText: "Are Pearse and his comrades afraid to die? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No (3M), they shall die “cheerfully/proudly” (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "they shall die “cheerfully/proudly”", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -607,7 +611,8 @@ export const CARDS: SecCard[] = [
     questionText: "According to Mac Amhlaigh, what type of place is Daventry?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Small (3M) and not very nice (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Small", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "not very nice", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -799,7 +804,8 @@ export const CARDS: SecCard[] = [
     questionText: "Immediately on landing, what did the paratroopers do?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They ran (3M) with their guns ready to fire (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "They ran", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "their guns ready to fire", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1039,7 +1045,8 @@ export const CARDS: SecCard[] = [
     questionText: "What reforms did King Frederick William agree to introduce?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A new constitution (3M) and a parliament (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A new constitution", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "a parliament", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1063,7 +1070,8 @@ export const CARDS: SecCard[] = [
     questionText: "Did the revolutionaries achieve their aims in Germany? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Generally, NO (3M). ONE valid explanation (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Generally, NO", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "ONE valid explanation", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1231,7 +1239,8 @@ export const CARDS: SecCard[] = [
     questionText: "Where were sleeping quarters found?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In factories (3M) and schools (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "In factories", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "schools", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1495,7 +1504,7 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from London, in what major British cities did disturbances take place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any TWO: Liverpool, Manchester, Birmingham, and/or Leeds (3M + 3M)", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["Liverpool","Manchester","Birmingham","Leeds"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1519,7 +1528,8 @@ export const CARDS: SecCard[] = [
     questionText: "Did Brixton remain quiet after April, 1981? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No (3M), there was another “outburst” in Brixton (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "there was another “outburst” in Brixton", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2039,7 +2049,8 @@ export const CARDS: SecCard[] = [
     questionText: "From what were the walls of the cottages made?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sods (3M) and saplings (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Sods", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "saplings", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2255,7 +2266,8 @@ export const CARDS: SecCard[] = [
     questionText: "To what group of businessmen did Crommelin belong and from what country did they come, originally?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The Huguenots (3M), from France (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The Huguenots", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "from France", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2279,7 +2291,8 @@ export const CARDS: SecCard[] = [
     questionText: "Where and when did disturbances break out?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tipperary (3M), 1761 (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Tipperary", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "1761", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2303,7 +2316,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who had built the ditches?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Landlords (3M) and graziers (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Landlords", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "graziers", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2399,7 +2413,8 @@ export const CARDS: SecCard[] = [
     questionText: "What positive comment is made about the houses?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They were well built (3M) and slated (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "They were well built", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "slated", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2639,7 +2654,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who behaved as if they were independent of the King?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nobles (3M) and governors of the provinces (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Nobles", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "governors of the provinces", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2759,7 +2775,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who had to pay a tax to keep their beards?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Gentlemen (3M) and merchants (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Gentlemen", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "merchants", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2783,7 +2800,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who were allowed keep their beards without paying a tax?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Priests (3M) and peasants (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Priests", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "peasants", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -2927,7 +2945,8 @@ export const CARDS: SecCard[] = [
     questionText: "What two cash crops did the merchants plant?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cocoa (3M) and sugar (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Cocoa", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "sugar", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3215,7 +3234,8 @@ export const CARDS: SecCard[] = [
     questionText: "What did the leaders of the demonstration hand over, according to document B?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Documents (4m) and maps (4m)", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Documents", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "maps", marks: 4 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3520,7 +3540,8 @@ export const CARDS: SecCard[] = [
     questionText: "Which Kirwans played on the Clonea team?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "James (3m) and Percy (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "James", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Percy", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3592,7 +3613,8 @@ export const CARDS: SecCard[] = [
     questionText: "Where and when did the activity in the extract take place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Downing Street/London (3m), 11 October 1921 (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Downing Street/London", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "11 October 1921", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3736,7 +3758,8 @@ export const CARDS: SecCard[] = [
     questionText: "What did the visitors have the pleasure of seeing?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Native games (3m) and dances (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Native games", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "dances", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3760,7 +3783,8 @@ export const CARDS: SecCard[] = [
     questionText: "What were the visitors given to eat?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Venison (3m) and wild rice (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Venison", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "wild rice", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3952,7 +3976,8 @@ export const CARDS: SecCard[] = [
     questionText: "What was the total workforce and how many workers were children?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Total workforce was 1,800 (3m) including 500 children (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Total workforce was 1,800", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "including 500 children", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4000,7 +4025,8 @@ export const CARDS: SecCard[] = [
     questionText: "What lessons are mentioned?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Singing (3m) and dancing (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Singing", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "dancing", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4432,7 +4458,8 @@ export const CARDS: SecCard[] = [
     questionText: "What groups were in conflict in Lyon?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Young people (3m) and police (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Young people", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "police", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4744,7 +4771,8 @@ export const CARDS: SecCard[] = [
     questionText: "In document B, what forms of gambling did Meiler Magrath take part in?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cards (4M) and dice (4M)", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Cards", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "dice", marks: 4 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5188,7 +5216,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who were Ó Bruadair’s patrons in Co. Cork?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "MacCarthys (3m) and Barrys (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "MacCarthys", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Barrys", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5260,7 +5289,8 @@ export const CARDS: SecCard[] = [
     questionText: "What did O’Carolan’s family do for a living?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The family were farmers (3m) and blacksmiths (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The family were farmers", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "blacksmiths", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5404,7 +5434,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did the United Irishmen wear in their hats?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Green ribbons (ribbons = 3m)", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Green ribbons", marks: 6, contextNote: "ribbons = 3m", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5548,7 +5578,8 @@ export const CARDS: SecCard[] = [
     questionText: "Other than English, what languages were spoken by the King?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "French (3m) and Latin (3m) [a little Italian (3m)]", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "French", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Latin", marks: 3, contextNote: "[a little Italian (3m)]" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5572,7 +5603,8 @@ export const CARDS: SecCard[] = [
     questionText: "What musical instruments does the King play?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Lute (3m) and harpsichord (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Lute", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "harpsichord", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5788,7 +5820,8 @@ export const CARDS: SecCard[] = [
     questionText: "What action did the Company take against English traders?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Seized the English trading post at Amboina (3m) and killed most of the Englishmen there (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Seized the English trading post at Amboina", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "killed most of the Englishmen there", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6372,7 +6405,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Document B gives Faulkner’s attitude to the London government", marks: null },
     { id: "r-2", kind: "point", verbatim: "There is no mention of Faulkner or the London government in document A. Document B states that Faulkner “felt betrayed” by the London government", marks: null },
     { id: "r-3", kind: "point", verbatim: "He has not been given enough help to cope with all the problems caused by the strike", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Identification of doc B and quote from doc B required. 5M + 5M Max =", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Identification of doc B and quote from doc B required.", marks: null, contextNote: "5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6429,7 +6462,7 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "OR Secondary source: this book of recollections was published in 2022, nearly 50 years after the events it describes", marks: null },
     { id: "r-5", kind: "point", verbatim: "In 2022, Don Anderson is not giving a primary account of events in 1974, but is reflecting back on them nearly 50 years later", marks: null },
     { id: "r-6", kind: "point", verbatim: "Therefore, this should be taken as a secondary source", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Primary/secondary and a valid reason 5M + 5M Max =", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Primary/secondary and a valid reason", marks: null, contextNote: "5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6573,7 +6606,8 @@ export const CARDS: SecCard[] = [
     questionText: "How were the poorer quarters decorated?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Flags (3m) and triumphal arches (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Flags", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "triumphal arches", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -6813,7 +6847,8 @@ export const CARDS: SecCard[] = [
     questionText: "What buildings were located by the river?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Shops (3m) and tenements (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Shops", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "tenements", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7101,7 +7136,8 @@ export const CARDS: SecCard[] = [
     questionText: "How did Haussmann improve the city’s water supply?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He built an aqueduct (3m) and a huge reservoir (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "He built an aqueduct", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "a huge reservoir", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7293,7 +7329,8 @@ export const CARDS: SecCard[] = [
     questionText: "When and where did the writer first see Hitler?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In Munich (3m) in November 1921 (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "In Munich", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "in November 1921", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7557,7 +7594,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who was murdered and by whom?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Patrice Lumumba/the Prime Minister (3m) by rivals (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Patrice Lumumba/the Prime Minister", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "by rivals", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7917,7 +7955,8 @@ export const CARDS: SecCard[] = [
     questionText: "In document A, for what services are the citizens never paid?",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Food (4m) and accommodation (4m) for the soldiers", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Food", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "accommodation for the soldiers", marks: 4 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8102,7 +8141,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Document B is a secondary source because it is written by an historian, Colm Lennon, in a book which was published in 1994", marks: null },
     { id: "r-2", kind: "point", verbatim: "Colm Lennon was not present to witness events in Dublin in the 1590s, around 400 years before his book was published", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Secondary source and a valid explanation 5M + 5M Max =", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Secondary source and a valid explanation", marks: null, contextNote: "5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8198,7 +8237,8 @@ export const CARDS: SecCard[] = [
     questionText: "What punishment would a poet face for disobeying the law of 1549?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The loss of his goods (3m) and imprisonment (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The loss of his goods", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "imprisonment", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8246,7 +8286,8 @@ export const CARDS: SecCard[] = [
     questionText: "Where and when was Luke Wadding born?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In Waterford (3m), in 1588 (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "In Waterford", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "in 1588", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8726,7 +8767,8 @@ export const CARDS: SecCard[] = [
     questionText: "To whom does Columbus promise as much gold as they need?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "King Ferdinand (3m) and Queen Isabella (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "King Ferdinand", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Queen Isabella", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8822,7 +8864,8 @@ export const CARDS: SecCard[] = [
     questionText: "Were Columbus’s explorations characterized by success or failure? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Success/failure (3m) and ONE valid reason (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Success/failure", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "ONE valid reason", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -8918,7 +8961,8 @@ export const CARDS: SecCard[] = [
     questionText: "What losses did the Spanish suffer off Gravelines?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They lost 16 ships (3m) and 5,000 men (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "They lost 16 ships", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "5,000 men", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9158,7 +9202,8 @@ export const CARDS: SecCard[] = [
     questionText: "Did everybody drink tea in 1715? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No (3m), it was a drink reserved for the well-off (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "it was a drink reserved for the well-off", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9446,7 +9491,8 @@ export const CARDS: SecCard[] = [
     questionText: "Is this account written from an Irish or an English point of view? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "English point-of-view (3m) and one reason (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "English point-of-view", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "one reason", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9752,7 +9798,7 @@ export const CARDS: SecCard[] = [
     { id: "r-7", kind: "point", verbatim: "In 1998, Zbarsky is not giving a primary account of the events of 1938, but is reflecting back on them after a gap of sixty years", marks: null },
     { id: "r-8", kind: "point", verbatim: "Therefore, this could be taken as a secondary source", marks: null },
     { id: "r-9", kind: "point", verbatim: "It is an edited extract and could therefore be taken as a secondary source", marks: null },
-    { id: "r-10", kind: "point", verbatim: "Primary/secondary and a valid reason 5M + 5M Max =", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Primary/secondary and a valid reason", marks: null, contextNote: "5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10234,7 +10280,8 @@ export const CARDS: SecCard[] = [
     questionText: "Did the Americans welcome Irish emigrants? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No (3M), there were barriers raised against them (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "there were barriers raised against them", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10426,7 +10473,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who was to meet Harold Wilson?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The Taoiseach (3M), Jack Lynch (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The Taoiseach", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Jack Lynch", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10690,7 +10738,8 @@ export const CARDS: SecCard[] = [
     questionText: "What types of industry must be developed?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Armour (3M) and armaments (3M) industries", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Armour", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "armaments industries", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -10954,7 +11003,8 @@ export const CARDS: SecCard[] = [
     questionText: "Who danced together, and where?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Muslims and Hindus (3M), in the streets/in Calcutta (3M)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Muslims and Hindus", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "in the streets/in Calcutta", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11421,7 +11471,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Document A is a secondary source because it is written by a historian, Cissie Fairchilds, in a book which was published in 2007", marks: null },
     { id: "r-2", kind: "point", verbatim: "Fairchilds was not present to witness the events she describes in her book, which was published around 500 years later", marks: null },
     { id: "r-3", kind: "point", verbatim: "Fairchilds, living in the 20/21st centuries is not an eye-witness to the events she describes", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Secondary source and a valid explanation 5M + 5M Max =", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Secondary source and a valid explanation", marks: null, contextNote: "5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -11520,7 +11570,8 @@ export const CARDS: SecCard[] = [
     questionText: "Was Gaelic law better than European law in relation to marriage? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or no (3m) with a valid reason (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or no", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "a valid reason", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12240,7 +12291,8 @@ export const CARDS: SecCard[] = [
     questionText: "What were two products over which it enjoyed a monopoly?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Spices (3m) and sugar (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Spices", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "sugar", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12480,7 +12532,8 @@ export const CARDS: SecCard[] = [
     questionText: "What cities were destinations on the Grand Tour?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Naples (3m) and Rome (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Naples", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Rome", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12552,7 +12605,8 @@ export const CARDS: SecCard[] = [
     questionText: "What are Catherine’s priorities?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The welfare of her subjects (3m) and the glory of her empire (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The welfare of her subjects", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "the glory of her empire", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12576,7 +12630,8 @@ export const CARDS: SecCard[] = [
     questionText: "Did Catherine manage her work effectively? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No (3m), she took on too many projects at once (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "she took on too many projects at once", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13087,7 +13142,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Doc A is a primary source It is written by Ellen Wilkinson who helped to organise and took part in the march", marks: null },
     { id: "r-2", kind: "point", verbatim: "She is a participant in the events described", marks: null },
     { id: "r-3", kind: "point", verbatim: "Her book was published in 1939, within three years of the march taking place", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Doc A and a valid reason 5M + 5M Max =", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Doc A and a valid reason", marks: null, contextNote: "5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13454,7 +13509,7 @@ export const CARDS: SecCard[] = [
     questionText: "What did Belfast experience in April-May, 1941?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Massive German air raids (air raids alone = 3m)", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Massive German air raids", marks: 6, contextNote: "air raids alone = 3m", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -13790,7 +13845,7 @@ export const CARDS: SecCard[] = [
     questionText: "What arrangement was already in place?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The original six members had access to Irish, British and Danish fisheries (access to Irish fisheries alone = 3m)", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "The original six members had access to Irish, British and Danish fisheries", marks: 6, contextNote: "access to Irish fisheries alone = 3m", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14078,7 +14133,8 @@ export const CARDS: SecCard[] = [
     questionText: "Did most of the women taken on during World War I remain in the workforce when the war was over? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No (3m), and explanation (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "explanation", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14534,7 +14590,8 @@ export const CARDS: SecCard[] = [
     questionText: "Overall, was Stalin a good employer, according to the writer? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No (3m), plus reason (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "reason", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -14760,7 +14817,7 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Lotherington was not alive at the same time as the characters he writes about", marks: null },
     { id: "r-3", kind: "point", verbatim: "His book was written nearly 500 years later", marks: null },
     { id: "r-4", kind: "point", verbatim: "Lotherington, living in the 20/21st centuries, was not an eye- witness to the events she describes", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Secondary source and a valid explanation 5M + 5M Max =", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Secondary source and a valid explanation", marks: null, contextNote: "5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15293,7 +15350,7 @@ export const CARDS: SecCard[] = [
     questionText: "Where is the Whiteboy as he laments his fate?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Clonmel prison (6m), Clonmel only (3m), prison only (3m)", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Clonmel prison", marks: 6, contextNote: "Clonmel only (3m), prison only (3m)", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15965,7 +16022,8 @@ export const CARDS: SecCard[] = [
     questionText: "What did the men in Boston do?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Boarded the tea ships (3m) and threw the cargoes into the harbour (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Boarded the tea ships", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "threw the cargoes into the harbour", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -16013,7 +16071,8 @@ export const CARDS: SecCard[] = [
     questionText: "What and where was the Bastille?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A prison (3m) in Paris (3m)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A prison", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "in Paris", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",

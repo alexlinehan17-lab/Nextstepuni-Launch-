@@ -49,9 +49,14 @@ describe('Politics and Society published marking', () => {
     const onScore = vi.fn();
     render(<PoliticsRubricPanel card={card} scores={{ 'politics:conclusions': 24, 'politics:documents': 16 }} onScore={onScore} />);
     expect(screen.getByText('40 / 50')).toBeInTheDocument();
-    expect(screen.getByText(/focused, insightful/, { selector: '.mb-politics-selected-band' })).toBeVisible();
-    fireEvent.change(screen.getByRole('combobox', { name: 'Conclusions mark' }), { target: { value: '30' } });
+    // Each descriptor band is a row with its marks as buttons; the placed mark's band is claimed.
+    expect(screen.queryByRole('combobox')).not.toBeInTheDocument();
+    expect(screen.getByText('focused, insightful')).toBeVisible();
+    expect(screen.getByRole('button', { name: 'Clear 24 marks for Very good' })).toHaveAttribute('aria-pressed', 'true');
+    fireEvent.click(screen.getByRole('button', { name: 'Claim 30 marks for Very good' }));
     expect(onScore).toHaveBeenCalledWith('politics:conclusions', 30);
+    // A criterion without bands keeps a plain control (a slider over 21 marks).
+    expect(screen.getByRole('slider', { name: 'Use of documents mark' })).toHaveValue('16');
     fireEvent.click(screen.getByRole('button', { name: /Read the official scheme/ }));
     await waitFor(() => expect(vaultPdf).toHaveBeenCalledWith(expect.stringContaining('%2Fscheme%2FLC568ALP000EV.pdf')));
     expect(screen.getByRole('link', { name: 'Open the original marking scheme' }).getAttribute('href')).toContain('#page=12');
