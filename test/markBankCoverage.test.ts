@@ -248,7 +248,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
       }
     }
     if (subject === 'physical-education' || subject === 'applied-maths') {
-      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json'] : ['reviewed.ts', 'reviewed.json']) {
+      // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
+      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
