@@ -240,16 +240,18 @@ describe('Mark Bank paper-coverage ratchet', () => {
       const names = subject === 'english'
         ? ['factory.ts', 'authored.json', 'published-higher.json', 'published-ordinary.json']
         : subject === 'geography' ? ['factory.ts', 'authored.json', 'allocation.ts']
-          : subject === 'art' ? ['factory.ts', 'authored.json', 'answers.ts']
+          : subject === 'art' || subject === 'politics-and-society' ? ['factory.ts', 'authored.json', 'answers.ts']
             : subject === 'irish' ? ['factory.ts', 'authored.json', 'answers.ts', 'tariffs.ts']
-              : ['factory.ts', 'authored.json'];
+            : subject === 'accounting' ? ['factory.ts', 'authored.json', 'rows.json']
+            : ['factory.ts', 'authored.json'];
       for (const name of names) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
     }
     if (subject === 'physical-education' || subject === 'applied-maths') {
-      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json'] : ['reviewed.ts', 'reviewed.json']) {
+      // PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
+      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json', 'answers.ts'] : ['reviewed.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
@@ -263,7 +265,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'french') {
       // Same files and order as reconcile.py's content hash, listening included.
-      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json']) {
+      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json', 'answers.ts']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

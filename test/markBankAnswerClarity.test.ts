@@ -24,6 +24,13 @@
  * Geography card carries one criterion per published allocation line; each is
  * cut into rows on its own (tryParseGeographyCriterionAllocation).
  */
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
+import type { AccountingRubric } from '../types/markBank';
+import accountingResidue from '../scripts/markbank/authored/accounting-rows-residue.json';
+import { REVIEWED_CARDS as APPLIED_MATHS_REVIEWED } from '../components/MarkBank/cards/applied-maths/reviewed';
+import type { AppliedMathematicsRubric } from '../types/markBank';
+import appliedMathsResidue from '../scripts/markbank/authored/applied-maths-steps-residue.json';
 import { describe, expect, it } from 'vitest';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
@@ -189,22 +196,29 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         else expect(max * allocation.count, card.id).toBe(card.totalMarks);
       }
     }
-    expect(structured).toEqual({ listening: 715, reading: 876, cloze: 170 });
+    // Reading 876 → 920 once an opinion list ("Any two of:" over bullets the scheme prices only in its
+    // general rule) became a ladder of the total shared equally, where the ledger permits that step.
+    expect(structured).toEqual({ listening: 715, reading: 920, cloze: 170 });
 
     // What is still a list, by shape. Fix a shape and lower its number here.
     const fallback = FRENCH_READING_CARDS.filter(card => !card.rubric.allocation);
     const shape = (card: typeof fallback[number]) => {
-      if (card.level === 'higher' && /\bQ6\b/.test(card.questionRef)) return 'HL Q6 opinion: points priced in the general scheme, not on the card';
-      if (card.level === 'ordinary' && /\bQ8\b/.test(card.questionRef)) return 'OL Q8 points: priced in the general scheme, not on the card';
+      // 2012 and 2015 Higher Q6: the ledger permits even marks only, so two points at 5 is not a step it allows.
+      if (card.level === 'higher' && /\bQ6\b/.test(card.questionRef) && card.rubric.criteria[0].permittedMarks.every(mark => mark % 2 === 0)) {
+        return /\(Two points/.test(card.questionText) || /^Any two of/m.test((card.rubric.answerGuide ?? []).join('\n'))
+          ? 'HL Q6 opinion: the ledger permits even marks only, so the equal split is not a step'
+          : 'HL Q6 two-part description: no printed count to share the total by';
+      }
       return 'other';
     };
     const byShape: Record<string, string[]> = {};
     for (const card of fallback) (byShape[shape(card)] ??= []).push(card.id);
     expect(Object.fromEntries(Object.entries(byShape).map(([key, ids]) => [key, ids.length]))).toEqual({
-      'HL Q6 opinion: points priced in the general scheme, not on the card': 34,
-      'OL Q8 points: priced in the general scheme, not on the card': 14,
+      'HL Q6 opinion: the ledger permits even marks only, so the equal split is not a step': 3,
+      'HL Q6 two-part description: no printed count to share the total by': 1,
       other: 1,
     });
+    expect(byShape['HL Q6 two-part description: no printed count to share the total by']).toEqual(['fr-2012-hl-reading-a2-q6']);
     // A 2013 line whose bracketed note ends in its own price ("… 4 marks (Minus 1 mark …, e.g. je demande = 3 marks)").
     expect(byShape.other).toEqual(['fr-2013-ol-reading-a4-q3']);
     const pick = (card: Guided) => [card.rubric?.answerGuide ?? []];
@@ -324,20 +338,17 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       }
     }
     expect(cards).toHaveLength(623);
-    expect(structured).toHaveLength(580);
-    // Split cards whose block carries a sibling's ladder or answers, and
-    // theorist/model pairs the scheme prints as bare names. Fix a card's
-    // block and take it off this list.
+    // 580 before the residue shapes were read: a name the scheme prints bare over a one- or two-mark criterion,
+    // a sibling card's ladder on a split question's shared block, tariff rows beside a ladder, a range the text
+    // layer broke over two lines, a band whose descriptor follows its marks.
+    expect(structured).toHaveLength(615);
+    // What is still a list, pinned by id: a two-line answer with "1 mark + 1 mark" inside it, a one-word answer under a
+    // sibling's "2 marks + 2 marks", three "One fact" items over a two-mark ladder on a four-mark response, an essay whose
+    // second criterion's bands the block does not carry, a sibling card's answer row, a bare "Name" the question also
+    // says, and two tariffs the block does not print.
     expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id).sort()).toEqual([
-      'politics-2018-hl-q1-c', 'politics-2018-hl-q1-e', 'politics-2018-hl-q1-k', 'politics-2018-ol-q1-a', 'politics-2018-ol-q1-b-i',
-      'politics-2018-ol-q1-d', 'politics-2018-ol-q1-e-i', 'politics-2018-ol-q1-e-ii-limitation', 'politics-2018-ol-q1-e-ii-strength',
-      'politics-2018-ol-q1-g-example', 'politics-2018-ol-q1-i-example', 'politics-2018-ol-q1-j-example', 'politics-2018-ol-q1-k-example',
-      'politics-2018-ol-q1-o-i', 'politics-2019-hl-q1-i', 'politics-2019-hl-q1-k', 'politics-2019-ol-q1-e', 'politics-2019-ol-q1-f',
-      'politics-2019-ol-q1-j-example', 'politics-2019-ol-q3-c', 'politics-2020-hl-q1-l', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-d-thinker',
-      'politics-2021-ol-q1-q-iii', 'politics-2022-hl-q1-a', 'politics-2022-hl-q1-c-thinker', 'politics-2022-ol-q1-d-i', 'politics-2022-ol-q1-d-ii',
-      'politics-2022-ol-q1-e', 'politics-2023-hl-q1-h', 'politics-2024-hl-q2-c', 'politics-2024-ol-q1-d-ii', 'politics-2024-ol-q1-d-iii',
-      'politics-2025-hl-q1-o-theory', 'politics-2025-hl-q1-o-thinker', 'politics-2025-ol-q1-d-ii', 'politics-2025-ol-q1-d-iii', 'politics-2025-ol-q3-c',
-      'politics-2026-hl-q1-k-example', 'politics-2026-hl-q2-c', 'politics-2026-ol-q1-d-i', 'politics-2026-ol-q1-k', 'politics-2026-ol-q1-p',
+      'politics-2018-hl-q1-c', 'politics-2018-ol-q1-b-i', 'politics-2018-ol-q1-k-example', 'politics-2018-ol-q1-o-i',
+      'politics-2019-ol-q1-f', 'politics-2019-ol-q3-c', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-q-iii',
     ]);
     // No card hides its answers in a closed box any more: the bullets are a
     // visible list on every card, structured or not.
@@ -377,20 +388,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       expect([...sums].sort((a, b) => a - b), `${card.id}/${criterion.label}: reachable marks`).toEqual([...criterion.permittedMarks].sort((a, b) => a - b));
     }
     expect(criteria).toHaveLength(1269);
-    expect(structured).toHaveLength(1230);
-    // Guidance whose marks the parser cannot reach exactly: counted items at
-    // two possible values ("1 mark, or 2 marks where …, up to 6"), and prose
-    // over several permitted marks. Rewrite the guidance in a readable shape
-    // and take the criterion off this list.
-    expect(criteria.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`).sort()).toEqual([
-      'pe-2020-hl-q11aiii/c1', 'pe-2020-hl-q13a/c1', 'pe-2020-hl-q15ai/c1', 'pe-2020-hl-q15ai/c2', 'pe-2020-hl-q15ai/c3', 'pe-2021-hl-q13b/c2',
-      'pe-2021-hl-q13c/c1', 'pe-2021-hl-q15bii/c1', 'pe-2021-ol-q6/c1', 'pe-2022-hl-q3/c1', 'pe-2022-hl-q3/c2', 'pe-2023-hl-q13d/c1',
-      'pe-2023-hl-q14aii/c1', 'pe-2023-hl-q15bi/c1', 'pe-2023-hl-q16a/c1', 'pe-2023-hl-q17aii/c1', 'pe-2023-hl-q18b/c1', 'pe-2023-hl-q18di/c1',
-      'pe-2023-hl-q1a/c1', 'pe-2023-hl-q4a/c1', 'pe-2023-hl-q8/c1', 'pe-2023-ol-q15b/c1', 'pe-2023-ol-q16c/c1', 'pe-2023-ol-q16c/c2',
-      'pe-2024-hl-q11b/c1', 'pe-2024-hl-q12a/c1', 'pe-2024-hl-q13aii/c1', 'pe-2024-hl-q16ai/c1', 'pe-2024-hl-q5b/c1', 'pe-2024-hl-q9b/c1',
-      'pe-2025-hl-q15b/c1', 'pe-2025-hl-q16ai/c1', 'pe-2025-hl-q16bii/c1', 'pe-2025-hl-q16c/c1', 'pe-2025-hl-q17a/c1', 'pe-2025-hl-q17c/c1',
-      'pe-2025-hl-q18aii/c1', 'pe-2025-hl-q9b/c1', 'pe-2026-hl-q12/c1',
-    ]);
+    // 1230 before the residue shapes were read: "one mark per …" counted rows and rows per listed name, labels priced
+    // without a colon, an extra "+1" as a step, ordinal responses as one counted row, and a ladder outranking a
+    // printed breakdown that is not the criterion.
+    expect(structured).toHaveLength(1269);
+    expect(criteria.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`)).toEqual([]);
     // "Accurate description: 4; some accuracy: 2." and "3 × 2 marks. Load: javelin…" still as prose, in those criteria only.
     const PE_PRICED = /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i;
     const lines = criteria.filter(({ criterion }) => !criterion.allocation).flatMap(({ criterion }) => criterion.guidance).filter(line => PE_PRICED.test(line)).length;
@@ -471,8 +473,75 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
     expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(59);
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options)).toEqual([['Liverpool', 'Manchester', 'Birmingham', 'Leeds']]);
-    expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks])).toEqual([['Clonmel prison', 6, [0, 3, 6]]]);
+    // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
+    expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
+      ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
+      ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
+      ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
+      ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
+    ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+  });
+
+  it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
+    const cards = [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].filter((card): card is SecRubricCard & { rubric: AccountingRubric } => card.kind === 'rubric' && card.rubric.system === 'accounting');
+    expect(cards).toHaveLength(1365);
+    const structured = cards.filter(card => card.rubric.rows?.length);
+    for (const card of structured) {
+      const rows = card.rubric.rows!;
+      expect(new Set(rows.map(row => row.id)).size, `${card.id}: row ids`).toBe(rows.length);
+      for (const row of rows) {
+        expect(row.text.trim().length, `${card.id}/${row.id}: empty row`).toBeGreaterThan(0);
+        expect(/[A-Za-z0-9]/.test(row.text), `${card.id}/${row.id}: "${row.text}" names nothing`).toBe(true);
+        expect(row.marks, `${card.id}/${row.id}: marks`).toBeGreaterThan(0);
+        expect(Number.isInteger(row.page) && row.page > 0, `${card.id}/${row.id}: page`).toBe(true);
+      }
+      // The rows are the task: they add up to its total exactly.
+      expect(rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows add up`).toBe(card.totalMarks);
+    }
+    // 1,080 of 1,365 tasks (2026-10-27): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
+    expect(structured).toHaveLength(1080);
+    const residue = cards.filter(card => !card.rubric.rows?.length).map(card => card.id).sort();
+    expect(residue).toEqual(accountingResidue.tasks.map(task => task.id).sort());
+    for (const task of accountingResidue.tasks) expect(task.reason.length, task.id).toBeGreaterThan(0);
+    // A part the scheme prices only through its section total is one flagged block row; pinned so it cannot grow unnoticed.
+    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2022-ol-q6(a)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-ol-q6(a)", "acc-2024-ol-q6(b)", "acc-2024-ol-q6(c)", "acc-2024-ol-q8(g)", "acc-2024-ol-q9(b)"]);
+  });
+
+  it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
+    const cards = APPLIED_MATHS_REVIEWED.filter((card): card is SecRubricCard & { rubric: AppliedMathematicsRubric } => card.kind === 'rubric' && card.rubric.system === 'applied-mathematics');
+    expect(cards).toHaveLength(1486);
+    const residue = new Set(appliedMathsResidue.cards.map(card => card.id));
+    let cut = 0, scaleOnly = 0;
+    for (const card of cards) {
+      const steps = card.rubric.allocations.filter(item => item.label.startsWith('Published step'));
+      if (!steps.length) { scaleOnly += 1; continue; }
+      if (residue.has(card.id)) {
+        expect(steps.some(item => item.region), `${card.id}: in the residue yet cut`).toBe(false);
+        continue;
+      }
+      cut += 1;
+      const pages = card.rubric.solution.pages;
+      const regions = card.rubric.solution.regions ?? [];
+      let last: { p: number; bottom: number } | null = null;
+      for (const item of steps) {
+        expect(item.region, `${card.id}/${item.id}: no region`).toBeDefined();
+        const { p, r } = item.region!;
+        const index = pages.indexOf(p);
+        expect(index, `${card.id}/${item.id}: page ${p} is not a solution page`).toBeGreaterThanOrEqual(0);
+        const whole = regions[index] as [number, number, number, number] | undefined;
+        // Inside the solution's own region, at least a line tall, and in reading order.
+        if (whole) {
+          expect(r[0] >= whole[0] - 1e-6 && r[2] <= whole[2] + 1e-6 && r[1] >= whole[1] - 1e-6 && r[3] <= whole[3] + 1e-6, `${card.id}/${item.id}: outside the solution`).toBe(true);
+        }
+        expect(r[3] - r[1], `${card.id}/${item.id}: thinner than a line`).toBeGreaterThanOrEqual(0.012);
+        if (last && last.p === p) expect(r[1], `${card.id}/${item.id}: out of order`).toBeGreaterThanOrEqual(last.bottom - 0.01);
+        last = { p, bottom: r[3] };
+      }
+    }
+    // 1,328 cut, 52 priced by a scale over the whole solution, 106 in the residue (2026-10-27).
+    expect([cut, scaleOnly, residue.size]).toEqual([1328, 52, 106]);
+    for (const card of appliedMathsResidue.cards) expect(card.reason.length, card.id).toBeGreaterThan(0);
   });
 
   it('Construction: a criterion row priced in named components carries them as parts the student places separately', () => {
@@ -490,8 +559,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       'cons-2010-hl-q3-complete/a-external: External Insulation System (note 4 marks, sketch 4 marks)',
     ]);
     const withParts = rows.filter(({ row }) => row.parts);
-    // 1,145 rows: 664 priced in the row's own text, 481 priced in its note ("Notes 6 and sketches 6. Such as: …").
-    expect(withParts).toHaveLength(1145);
+    // 1,284 rows: 664 priced in the row's own text, 620 priced in its note ("Notes 6 and sketches 6. Such as: …",
+    // "Location 3 and reason 2", "The distribution board drawn (4) and annotated (1)", "Correct tabulation 2, wood 3, …").
+    // Every part is the scheme's own words (construction_paper.validate); a note that paraphrases the scheme's table
+    // keeps only the words it prints, and a row whose head word the scheme does not print stays unsplit.
+    expect(withParts).toHaveLength(1284);
     for (const { card, row } of withParts) {
       expect(rowPartsReconcile(row), `${card.id}/${row.id}`).toBe(true);
       // Every part is a word the row or its note prints, and the row's own text, marks and steps are untouched.
@@ -661,7 +733,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 const BASELINE = {
   frenchReading: 1,
   irishExactCriteria: 52,
-  physicalEducationLines: 15,
+  physicalEducationLines: 0,
 };
 
 if (process.env.CLARITY_PRINT) {
