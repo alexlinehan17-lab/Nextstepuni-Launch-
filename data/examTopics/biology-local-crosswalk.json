@@ -58449,10 +58449,14 @@
         "biology-0-1"
       ],
       "topicIds": [
-        "biology-ordinary-old-course-bacteria-viruses-fungi-protista"
+        "biology-ordinary-new-course-24-the-nervous-system",
+        "biology-ordinary-new-course-24-plant-responses",
+        "biology-ordinary-new-course-24-the-musculoskeletal-system",
+        "biology-ordinary-new-course-32-microorganisms",
+        "biology-ordinary-new-course-26-plant-structure-and-transport"
       ],
-      "resolution": "retained-local-canonical-fallback",
-      "reason": "Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question."
+      "resolution": "retained-local-reviewed",
+      "reason": "Official SEC 2011 task retained from direct paper review; the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",
@@ -58464,10 +58468,15 @@
         "biology-0-0"
       ],
       "topicIds": [
-        "biology-ordinary-old-course-experiment-questions"
+        "biology-ordinary-new-course-u2-investigating-in-science",
+        "biology-ordinary-new-course-12-chemicals-of-life-biomolecules",
+        "biology-ordinary-new-course-25-reproduction-plant",
+        "biology-ordinary-new-course-13-unit-of-life-cells",
+        "biology-ordinary-new-course-21-enzymes",
+        "biology-ordinary-new-course-24-plant-responses"
       ],
-      "resolution": "retained-local-canonical-fallback",
-      "reason": "Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question."
+      "resolution": "retained-local-reviewed",
+      "reason": "Official SEC 2011 task retained from direct paper review; the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "higher",
@@ -58479,10 +58488,10 @@
         "biology-1-3"
       ],
       "topicIds": [
-        "biology-higher-old-course-bacteria"
+        "biology-higher-new-course-13-unit-of-life-cells"
       ],
-      "resolution": "retained-local-canonical-fallback",
-      "reason": "Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question."
+      "resolution": "retained-local-reviewed",
+      "reason": "Official SEC 2010 task retained from direct paper review; the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "ordinary",

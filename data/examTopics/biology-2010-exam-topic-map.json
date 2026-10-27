@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "biology",
+  "year": 2010,
+  "authority": "State Examinations Commission",
+  "scope": "Top-level question-to-reference-topic mapping reviewed directly from the official English paper booklets and marking schemes, task by task (scripts/markbank/authoring/bio_review_2010_<level>.py). Each question keeps every topic the factual reference snapshot already gave it and gains the topics its reviewed tasks need.",
+  "questions": {
+    "higher|1": ["biology-higher-new-course-12-chemicals-of-life-biomolecules", "biology-higher-old-course-food-food-tests"],
+    "higher|2": ["biology-higher-new-course-14-information-of-life-genetic-inheritance", "biology-higher-old-course-genetics-dna-evolution"],
+    "higher|3": ["biology-higher-old-course-protista", "biology-higher-new-course-32-microorganisms", "biology-higher-new-course-13-unit-of-life-cells"],
+    "higher|4": ["biology-higher-new-course-13-unit-of-life-cells"],
+    "higher|5": ["biology-higher-new-course-31-ecology-ecosystems-and-biodiversity", "biology-higher-old-course-ecology"],
+    "higher|6": ["biology-higher-new-course-24-immunity", "biology-higher-old-course-viruses", "biology-higher-new-course-11-viruses-classification-and-the-domains-of-life"],
+    "higher|7": ["biology-higher-new-course-26-the-circulatory-system-and-blood", "biology-higher-old-course-blood-circulatory-system"],
+    "higher|8": ["biology-higher-new-course-u2-investigating-in-science", "biology-higher-old-course-the-scientific-method", "biology-higher-new-course-13-unit-of-life-cells", "biology-higher-new-course-22-photosynthesis", "biology-higher-new-course-12-dna-rna-and-the-genetic-code", "biology-higher-new-course-32-microorganisms", "biology-higher-new-course-12-chemicals-of-life-biomolecules"],
+    "higher|9": ["biology-higher-old-course-plant-responses", "biology-higher-new-course-24-plant-responses"],
+    "higher|10": ["biology-higher-new-course-14-information-of-life-genetic-inheritance", "biology-higher-new-course-23-dna-replication-protein-synthesis-and-mutations", "biology-higher-old-course-genetics-dna-evolution"],
+    "higher|11": ["biology-higher-new-course-24-the-endocrine-system", "biology-higher-new-course-24-the-nervous-system", "biology-higher-old-course-hormonalendocrine-system", "biology-higher-old-course-nervous-system"],
+    "higher|12": ["biology-higher-new-course-31-ecology-ecosystems-and-biodiversity", "biology-higher-old-course-ecology", "biology-higher-new-course-32-microorganisms"],
+    "higher|13": ["biology-higher-new-course-25-reproduction-plant", "biology-higher-old-course-plant-reproduction", "biology-higher-old-course-plant-responses"],
+    "higher|14": ["biology-higher-new-course-13-unit-of-life-cells", "biology-higher-new-course-21-enzymes", "biology-higher-new-course-22-photosynthesis", "biology-higher-new-course-26-transport-across-membranes", "biology-higher-old-course-cell-metabolism-enzymes", "biology-higher-old-course-cell-structure", "biology-higher-old-course-movement-through-cell-membranes", "biology-higher-old-course-photosynthesis"],
+    "higher|15": ["biology-higher-new-course-25-reproduction-human", "biology-higher-new-course-26-the-digestive-system", "biology-higher-old-course-digestive-system", "biology-higher-old-course-human-reproduction", "biology-higher-new-course-32-microorganisms", "biology-higher-new-course-26-the-urinary-system", "biology-higher-new-course-24-homeostasis"]
+  }
+}

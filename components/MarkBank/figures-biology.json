@@ -1,4 +1,87 @@
 {
+ "biology-2010-hl-q12b-graph-a": {
+  "src": "/exam-figures/biology/markbank/biology-2010-hl-q12b-graph-a.png",
+  "md5": "4f7b1876a6a4b6cae7a6ab9a3ac4366b",
+  "alt": "Sketch graph headed Graph A, with no scales. Vertical axis: quantity. Horizontal axis: distance downstream, with an upward arrow at the origin labelled outflow. Three curves, each named by a label and arrow. Organic effluent: starts high on the vertical axis, falls steeply, then levels off at a lower value. Oxygen demand: starts a little above the origin, rises to a peak a short distance downstream, then falls and levels off below the organic effluent curve. Bacteria: starts at the origin, rises to a peak at about the same distance, then falls almost to the horizontal axis, staying below the oxygen demand curve.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(b)(i)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2010 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Biology for You by Gareth Williams; Stanley Thomas (Publishers) Ltd, 2nd edition 2002 (adapted)",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   100,
+   150,
+   380,
+   302
+  ]
+ },
+ "biology-2010-hl-q12b-graph-b": {
+  "src": "/exam-figures/biology/markbank/biology-2010-hl-q12b-graph-b.png",
+  "md5": "c306e1fdd5e0d43e5bcd00741210770f",
+  "alt": "Sketch graph headed Graph B, with no scales. Vertical axis: quantity. Horizontal axis: distance downstream, with an upward arrow at the origin labelled outflow. Two curves of the same U shape, each named by a label and arrow: oxygen concentration, the upper curve, and fish, the lower. Both start part way up the vertical axis, fall to a low point a short distance downstream, then rise steadily, ending higher than they started.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q12(b)(vi)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2010 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Biology for You by Gareth Williams; Stanley Thomas (Publishers) Ltd, 2nd edition 2002 (adapted)",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   100,
+   428,
+   380,
+   574
+  ]
+ },
+ "biology-2010-hl-q3-amoeba": {
+  "src": "/exam-figures/biology/markbank/biology-2010-hl-q3-amoeba.png",
+  "md5": "619aabbd4efb699d7719afbaba0d2079",
+  "alt": "Line drawing of a single irregular cell with a wavy outline drawn out into several rounded lobes. Printed labels: Nucleus, pointing to a dark oval near the top right; B, pointing to a small circle near the top left ringed by short radiating dashes; C, a line ending at a curly bracket around three small oval bodies on the left; A, a line ending at a curly bracket beside a rounded lobe of the outline at the lower right.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q3(a)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   95,
+   56,
+   516,
+   230
+  ]
+ },
+ "biology-2010-hl-q6-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2010-hl-q6-virus.png",
+  "md5": "ad78c727426043e6a7e5490a02b7d0ab",
+  "alt": "Line drawing of a large oval labelled Host cell. Attached to its upper right edge is a small six-sided shape with a coiled line inside it, from which short angled legs reach the cell surface; a curly bracket over the small shape is labelled Virus. Label A points to the edge of the six-sided shape; label B points to the coiled line inside it.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2010 HL Q6(a)(i)",
+  "year": 2010,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2010 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   150,
+   290,
+   548,
+   460
+  ]
+ },
  "biology-2011-hl-q11biii-question": {
   "src": "/exam-figures/biology/markbank/biology-2011-hl-q11biii-question.png",
   "md5": "4248ad278df5a75c6d984b9c639ed6fd",
