@@ -9,32 +9,13 @@
   "reason": "text layer glyph damage on the cited page; geometry: text layer glyph damage on the page"
  },
  {
-  "id": "bus-2010-ol-s2-q3ai",
-  "questionRef": "2010 OL Section 2 Q3(A)(i)",
+  "id": "bus-2012-hl-s1-q8b",
+  "questionRef": "2012 HL Section 1 Q8(b)",
   "schemePages": [
    5,
-   14
+   15
   ],
-  "reason": "workings table flattened by the text layer; geometry: tick table: the ticks are not in the text layer"
- },
- {
-  "id": "bus-2011-hl-s3-q7c-i",
-  "questionRef": "2011 HL Section 3 Q7(C)(i)",
-  "schemePages": [
-   12,
-   41,
-   42
-  ],
-  "reason": "text layer glyph damage on the cited page; geometry: tick table: the ticks are not in the text layer"
- },
- {
-  "id": "bus-2012-hl-s1-q10i",
-  "questionRef": "2012 HL Section 1 Q10(i)",
-  "schemePages": [
-   5,
-   16
-  ],
-  "reason": "roman marker; geometry: tick table: the ticks are not in the text layer"
+  "reason": "s1 part marker; geometry: the marker found opens another part"
  },
  {
   "id": "bus-2012-ol-s1-q10",
@@ -43,7 +24,7 @@
    4,
    10
   ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
+  "reason": "table layout lost in the text layer; geometry: the answer is a drawing: a chart or graph plotted on the page"
  },
  {
   "id": "bus-2012-ol-s2-q5d",
@@ -55,31 +36,22 @@
   "reason": "workings table flattened by the text layer; geometry: part marker not found"
  },
  {
-  "id": "bus-2013-hl-s1-q3a",
-  "questionRef": "2013 HL Section 1 Q3(a)",
+  "id": "bus-2014-hl-s1-q10a",
+  "questionRef": "2014 HL Section 1 Q10(a)",
   "schemePages": [
    5,
-   11
+   14
   ],
-  "reason": "workings table flattened by the text layer; geometry: tick table: the ticks are not in the text layer"
+  "reason": "table layout lost in the text layer; geometry: the marker found opens another part"
  },
  {
-  "id": "bus-2013-hl-s1-q8",
-  "questionRef": "2013 HL Section 1 Q8",
+  "id": "bus-2014-hl-s1-q10b",
+  "questionRef": "2014 HL Section 1 Q10(b)",
   "schemePages": [
    5,
-   13
+   14
   ],
-  "reason": "s1 marker; geometry: no readable response"
- },
- {
-  "id": "bus-2013-hl-s3-q5a",
-  "questionRef": "2013 HL Section 3 Q5(A)",
-  "schemePages": [
-   9,
-   32
-  ],
-  "reason": "workings table flattened by the text layer; geometry: tick table: the ticks are not in the text layer"
+  "reason": "table layout lost in the text layer; geometry: the marker found opens another part"
  },
  {
   "id": "bus-2014-hl-s1-q10c",
@@ -106,44 +78,7 @@
    6,
    17
   ],
-  "reason": "workings table flattened by the text layer; geometry: tick table: the ticks are not in the text layer"
- },
- {
-  "id": "bus-2014-hl-s3-q5b-ii",
-  "questionRef": "2014 HL Section 3 Q5(B)(ii)",
-  "schemePages": [
-   9,
-   33
-  ],
-  "reason": "roman marker; geometry: tick table: the ticks are not in the text layer"
- },
- {
-  "id": "bus-2015-ol-s1-q8",
-  "questionRef": "2015 OL Section 1 Q8",
-  "schemePages": [
-   4,
-   10
-  ],
-  "reason": "the scheme prints the marker and the question but no response under it on the cited page; geometry: no response under the marker"
- },
- {
-  "id": "bus-2015-hl-s2-abq-b-i",
-  "questionRef": "2015 HL Section 2 ABQ(B)(i)",
-  "schemePages": [
-   6,
-   17
-  ],
-  "reason": "part marker; geometry: roman marker not found"
- },
- {
-  "id": "bus-2015-hl-s2-abq-b-ii",
-  "questionRef": "2015 HL Section 2 ABQ(B)(ii)",
-  "schemePages": [
-   6,
-   17,
-   18
-  ],
-  "reason": "part marker; geometry: tick table: the ticks are not in the text layer"
+  "reason": "workings table flattened by the text layer; geometry: the answer is a drawing: a chart or graph plotted on the page"
  },
  {
   "id": "bus-2015-hl-s3-q4a-i",
@@ -152,25 +87,7 @@
    9,
    34
   ],
-  "reason": "part marker; geometry: tick table: the ticks are not in the text layer"
- },
- {
-  "id": "bus-2015-hl-s3-q5a-i",
-  "questionRef": "2015 HL Section 3 Q5(A)(i)",
-  "schemePages": [
-   10,
-   38
-  ],
-  "reason": "part marker; geometry: tick table: the ticks are not in the text layer"
- },
- {
-  "id": "bus-2015-hl-s3-q6c-ii",
-  "questionRef": "2015 HL Section 3 Q6(C)(ii)",
-  "schemePages": [
-   11,
-   43
-  ],
-  "reason": "part marker; geometry: no readable response"
+  "reason": "part marker; geometry: the answer is a drawing: a chart or graph plotted on the page"
  },
  {
   "id": "bus-2015-hl-s3-q7a",
@@ -183,23 +100,13 @@
   "reason": "unbounded block over 3000 characters: a whole question, not this part; geometry: block over 3000 characters"
  },
  {
-  "id": "bus-2015-hl-s3-q7c-ii",
-  "questionRef": "2015 HL Section 3 Q7(C)(ii)",
-  "schemePages": [
-   11,
-   47,
-   48
-  ],
-  "reason": "part marker; geometry: tick table: the ticks are not in the text layer"
- },
- {
   "id": "bus-2016-hl-s1-q10",
   "questionRef": "2016 HL Section 1 Q10",
   "schemePages": [
    5,
    15
   ],
-  "reason": "unbounded block over 3000 characters: a whole question, not this part; geometry: tick table: the ticks are not in the text layer"
+  "reason": "unbounded block over 3000 characters: a whole question, not this part; geometry: block over 3000 characters"
  },
  {
   "id": "bus-2016-ol-s1-q13",
@@ -235,16 +142,7 @@
    11,
    41
   ],
-  "reason": "workings table flattened by the text layer; geometry: tick table: the ticks are not in the text layer"
- },
- {
-  "id": "bus-2017-hl-s1-q10",
-  "questionRef": "2017 HL Section 1 Q10",
-  "schemePages": [
-   5,
-   18
-  ],
-  "reason": "s1 marker; geometry: tick table: the ticks are not in the text layer"
+  "reason": "workings table flattened by the text layer; geometry: word not in the scheme text: (15m+5m)"
  },
  {
   "id": "bus-2017-hl-s1-q5",
@@ -253,7 +151,7 @@
    5,
    15
   ],
-  "reason": "tiny block; geometry: no readable response"
+  "reason": "tiny block; geometry: the answer is a drawing: a chart or graph plotted on the page"
  },
  {
   "id": "bus-2017-ol-s1-q10",
@@ -298,7 +196,7 @@
    7,
    24
   ],
-  "reason": "roman marker; geometry: tick table: the ticks are not in the text layer"
+  "reason": "roman marker; geometry: the marker found opens another part"
  },
  {
   "id": "bus-2017-hl-s3-q6b-iv",
@@ -308,15 +206,6 @@
    48
   ],
   "reason": "workings table flattened by the text layer; geometry: roman marker not found"
- },
- {
-  "id": "bus-2018-hl-s1-q6",
-  "questionRef": "2018 HL Section 1 Q6",
-  "schemePages": [
-   5,
-   18
-  ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
  },
  {
   "id": "bus-2018-ol-s2-q3cii",
@@ -362,7 +251,7 @@
    5,
    16
   ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
+  "reason": "table layout lost in the text layer; geometry: text layer glyph damage on the page"
  },
  {
   "id": "bus-2019-hl-s3-q5b-ii-acid",
@@ -392,15 +281,6 @@
   "reason": "text layer glyph damage on the cited page; geometry: roman marker not found"
  },
  {
-  "id": "bus-2020-ol-s1-q11",
-  "questionRef": "2020 OL Section 1 Q11",
-  "schemePages": [
-   4,
-   11
-  ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
- },
- {
   "id": "bus-2020-ol-s1-q12",
   "questionRef": "2020 OL Section 1 Q12",
   "schemePages": [
@@ -416,7 +296,7 @@
    4,
    9
   ],
-  "reason": "the scheme prints the marker and the question but no response under it on the cited page; geometry: tick table: the ticks are not in the text layer"
+  "reason": "the scheme prints the marker and the question but no response under it on the cited page; geometry: word not in the scheme text: 2+2+2+2+2"
  },
  {
   "id": "bus-2020-ol-s1-q6",
@@ -493,22 +373,6 @@
   "reason": "table layout lost in the text layer; geometry: text layer glyph damage on the page"
  },
  {
-  "id": "bus-2021-ol-s1-q12",
-  "questionRef": "2021 OL Section 1 Q12",
-  "schemePages": [
-   6
-  ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
- },
- {
-  "id": "bus-2021-ol-s1-q15",
-  "questionRef": "2021 OL Section 1 Q15",
-  "schemePages": [
-   7
-  ],
-  "reason": "the scheme prints the marker and the question but no response under it on the cited page; geometry: tick table: the ticks are not in the text layer"
- },
- {
   "id": "bus-2021-ol-s2-q3aii",
   "questionRef": "2021 OL Section 2 Q3(A)(ii)",
   "schemePages": [
@@ -532,7 +396,7 @@
    6,
    29
   ],
-  "reason": "text layer glyph damage on the cited page; geometry: no response under the marker"
+  "reason": "text layer glyph damage on the cited page; geometry: no readable response"
  },
  {
   "id": "bus-2021-hl-s3-q7bi",
@@ -589,7 +453,16 @@
    4,
    20
   ],
-  "reason": "workings table flattened by the text layer; geometry: tick table: the ticks are not in the text layer"
+  "reason": "workings table flattened by the text layer; geometry: text layer glyph damage on the page"
+ },
+ {
+  "id": "bus-2022-hl-s1-q3b",
+  "questionRef": "2022 HL Section 1 Q3(b)",
+  "schemePages": [
+   4,
+   14
+  ],
+  "reason": "s1 part marker; geometry: the marker found opens another part"
  },
  {
   "id": "bus-2022-hl-s1-q4",
@@ -637,13 +510,22 @@
   "reason": "the scheme prints the marker and the question but no response under it on the cited page; geometry: q marker not found"
  },
  {
-  "id": "bus-2022-ol-s2-q6d",
-  "questionRef": "2022 OL Section 2 Q6(D)",
+  "id": "bus-2022-ol-s2-q3ci",
+  "questionRef": "2022 OL Section 2 Q3(C)(i)",
   "schemePages": [
-   6,
-   27
+   5,
+   17
   ],
-  "reason": "table layout lost in the text layer; geometry: tick table: the ticks are not in the text layer"
+  "reason": "roman marker; geometry: the marker found opens another part"
+ },
+ {
+  "id": "bus-2022-ol-s2-q3cii",
+  "questionRef": "2022 OL Section 2 Q3(C)(ii)",
+  "schemePages": [
+   5,
+   17
+  ],
+  "reason": "roman marker; geometry: the marker found opens another part"
  },
  {
   "id": "bus-2022-ol-s2-q7ci",
@@ -671,15 +553,6 @@
    57
   ],
   "reason": "an item is not one slice of the page text: a table or diagram the text layer reordered; geometry: no response under the marker"
- },
- {
-  "id": "bus-2023-hl-s1-q4",
-  "questionRef": "2023 HL Section 1 Q4",
-  "schemePages": [
-   6,
-   17
-  ],
-  "reason": "s1 marker; geometry: no readable response"
  },
  {
   "id": "bus-2023-hl-s1-q7b",
@@ -743,7 +616,7 @@
    14,
    56
   ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
+  "reason": "table layout lost in the text layer; geometry: text layer glyph damage on the page"
  },
  {
   "id": "bus-2024-ol-s1-q6ii",
@@ -764,15 +637,6 @@
   "reason": "text layer glyph damage on the cited page; geometry: no response under the marker"
  },
  {
-  "id": "bus-2024-hl-s3-q6aii",
-  "questionRef": "2024 HL Section 3 Q6(A)(ii)",
-  "schemePages": [
-   11,
-   50
-  ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
- },
- {
   "id": "bus-2025-hl-s1-q1",
   "questionRef": "2025 HL Section 1 Q1",
   "schemePages": [
@@ -782,24 +646,6 @@
   "reason": "the scheme prints the marker and the question but no response under it on the cited page; geometry: no response under the marker"
  },
  {
-  "id": "bus-2025-hl-s1-q7b",
-  "questionRef": "2025 HL Section 1 Q7(b)",
-  "schemePages": [
-   5,
-   14
-  ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
- },
- {
-  "id": "bus-2025-ol-s1-q4",
-  "questionRef": "2025 OL Section 1 Q4",
-  "schemePages": [
-   4,
-   8
-  ],
-  "reason": "text layer glyph damage on the cited page; geometry: tick table: the ticks are not in the text layer"
- },
- {
   "id": "bus-2025-ol-s1-q9",
   "questionRef": "2025 OL Section 1 Q9",
   "schemePages": [
@@ -807,24 +653,6 @@
    10
   ],
   "reason": "the scheme prints the marker and the question but no response under it on the cited page; geometry: no readable response"
- },
- {
-  "id": "bus-2026-hl-s1-q10ii",
-  "questionRef": "2026 HL Section 1 Q10(ii)",
-  "schemePages": [
-   5,
-   19
-  ],
-  "reason": "table layout lost in the text layer; geometry: no readable response"
- },
- {
-  "id": "bus-2026-hl-s1-q9",
-  "questionRef": "2026 HL Section 1 Q9",
-  "schemePages": [
-   5,
-   19
-  ],
-  "reason": "table layout lost in the text layer; geometry: tick table: the ticks are not in the text layer"
  },
  {
   "id": "bus-2026-ol-s1-q13ii",

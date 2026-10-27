@@ -642,9 +642,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       return schemes.get(key)!;
     };
     const lifted = cards.filter(card => card.rubric.expected);
-    // 1,767 from the text layer (stage A) + 124 from the page's geometry (stage B: tables, ticks, True/False columns).
-    expect(lifted).toHaveLength(1891);
-    expect(lifted.filter(card => card.rubric.expected!.lifted === 'geometry')).toHaveLength(124);
+    // 1,767 from the text layer (stage A) + 143 from the page's geometry (stage B: tables, ticks, True/False columns).
+    expect(lifted).toHaveLength(1910);
+    expect(lifted.filter(card => card.rubric.expected!.lifted === 'geometry')).toHaveLength(143);
     for (const card of lifted) {
       const corpus = schemeText(card.year, card.level);
       const expected = card.rubric.expected!;
@@ -667,7 +667,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     }
     // A row sits under the response it names, or in one pool the responses draw from.
     const layouts = lifted.map(card => businessExpectedLayout(card.rubric)!.kind);
-    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([242, 1649]);
+    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([242, 1668]);
     // What bus_expected.py could not lift — the text-layer reason, then the geometry reading's — each with the pages it looked at.
     // Fix a shape and lower its number here.
     const review = JSON.parse(readFileSync(resolve(__dirname, '..', 'scripts', 'markbank', 'authored', 'business-expected-review.json'), 'utf8')) as Array<{ id: string; reason: string; schemePages: number[] }>;
@@ -676,44 +676,43 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(reasons).toEqual({
       "an item is not one slice of the page text: a table or diagram the text layer reordered; geometry: no readable response": 1,
       "an item is not one slice of the page text: a table or diagram the text layer reordered; geometry: no response under the marker": 1,
-      "part marker; geometry: no readable response": 1,
-      "part marker; geometry: roman marker not found": 1,
-      "part marker; geometry: tick table: the ticks are not in the text layer": 4,
+      "part marker; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
       "roman marker; geometry: roman marker not found": 3,
-      "roman marker; geometry: tick table: the ticks are not in the text layer": 3,
+      "roman marker; geometry: the marker found opens another part": 3,
       "roman marker; geometry: word not in the scheme text: 10(5+5)": 1,
-      "s1 marker; geometry: no readable response": 3,
-      "s1 marker; geometry: tick table: the ticks are not in the text layer": 1,
-      "table layout lost in the text layer; geometry: no readable response": 10,
+      "s1 marker; geometry: no readable response": 1,
+      "s1 part marker; geometry: the marker found opens another part": 2,
+      "table layout lost in the text layer; geometry: no readable response": 1,
       "table layout lost in the text layer; geometry: no response under the marker": 4,
       "table layout lost in the text layer; geometry: part marker not found": 1,
       "table layout lost in the text layer; geometry: q marker not found": 3,
       "table layout lost in the text layer; geometry: roman marker not found": 3,
-      "table layout lost in the text layer; geometry: text layer glyph damage on the page": 3,
-      "table layout lost in the text layer; geometry: tick table: the ticks are not in the text layer": 2,
+      "table layout lost in the text layer; geometry: text layer glyph damage on the page": 5,
+      "table layout lost in the text layer; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
+      "table layout lost in the text layer; geometry: the marker found opens another part": 2,
       "table layout lost in the text layer; geometry: word not in the scheme text: (4+3+2+1)": 1,
       "table layout lost in the text layer; geometry: word not in the scheme text: 3+3+2+2": 1,
       "text layer glyph damage on the cited page; geometry: block over 3000 characters": 1,
-      "text layer glyph damage on the cited page; geometry: no response under the marker": 6,
+      "text layer glyph damage on the cited page; geometry: no readable response": 1,
+      "text layer glyph damage on the cited page; geometry: no response under the marker": 5,
       "text layer glyph damage on the cited page; geometry: q marker not found": 1,
       "text layer glyph damage on the cited page; geometry: roman marker not found": 3,
       "text layer glyph damage on the cited page; geometry: text layer glyph damage on the page": 2,
-      "text layer glyph damage on the cited page; geometry: tick table: the ticks are not in the text layer": 2,
       "the scheme prints the marker and the question but no response under it on the cited page; geometry: no readable response": 1,
-      "the scheme prints the marker and the question but no response under it on the cited page; geometry: no response under the marker": 6,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: no response under the marker": 5,
       "the scheme prints the marker and the question but no response under it on the cited page; geometry: q marker not found": 3,
-      "the scheme prints the marker and the question but no response under it on the cited page; geometry: tick table: the ticks are not in the text layer": 2,
       "the scheme prints the marker and the question but no response under it on the cited page; geometry: word not in the scheme text: (5+5)": 1,
+      "the scheme prints the marker and the question but no response under it on the cited page; geometry: word not in the scheme text: 2+2+2+2+2": 1,
       "the scheme prints the marker and the question but no response under it on the cited page; geometry: word not in the scheme text: 3+3+2+2": 1,
-      "tiny block; geometry: no readable response": 1,
-      "unbounded block over 3000 characters: a whole question, not this part; geometry: block over 3000 characters": 1,
+      "tiny block; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
+      "unbounded block over 3000 characters: a whole question, not this part; geometry: block over 3000 characters": 2,
       "unbounded block over 3000 characters: a whole question, not this part; geometry: no response under the marker": 1,
-      "unbounded block over 3000 characters: a whole question, not this part; geometry: tick table: the ticks are not in the text layer": 1,
       "workings table flattened by the text layer; geometry: part marker not found": 1,
       "workings table flattened by the text layer; geometry: q marker not found": 1,
       "workings table flattened by the text layer; geometry: roman marker not found": 2,
-      "workings table flattened by the text layer; geometry: text layer glyph damage on the page": 4,
-      "workings table flattened by the text layer; geometry: tick table: the ticks are not in the text layer": 6,
+      "workings table flattened by the text layer; geometry: text layer glyph damage on the page": 5,
+      "workings table flattened by the text layer; geometry: the answer is a drawing: a chart or graph plotted on the page": 1,
+      "workings table flattened by the text layer; geometry: word not in the scheme text: (15m+5m)": 1,
     });
     const ids = new Set(cards.map(card => card.id));
     for (const entry of review) {
