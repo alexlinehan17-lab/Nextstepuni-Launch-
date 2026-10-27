@@ -214,6 +214,10 @@ MASKS = {
     # the line above ("temperature", dark to x 912, y 280-299); whited out (dark pixels at 917-931
     # x 310-332, the panel's right edge cutting the mark after "(1").
     'chemistry-2018-HL-paper-q9d-print.png': [(914, 304, 932, 337)],
+    # 2017 HL Q7(c): the part's mark "(18)" prints at the end of its last line ("gases at
+    # temperature T.", paper page 7, y 623), under the end of the line above ("of the", dark to
+    # x 909); whited out (dark pixels at 917-953 x 261-281 of the stacked print).
+    'chemistry-2017-HL-paper-q7c-print.png': [(914, 257, 958, 285)],
 }
 
 

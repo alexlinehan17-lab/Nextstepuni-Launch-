@@ -3586,5 +3586,407 @@
   "description": "The marking scheme's own print of its answer to 2017 OL Q11(a)(ii), as the State Examinations Commission set it: Kc = [SO₃]² over [SO₂]²[O₂] (6); then \"[Allow (3) for numerator only correct; allow (3) for denominator only correct; allow (3) for correct numerator and denominator inverted.]\"",
   "questionRef": "2017 OL Q11(a)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q1a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q1(a)(i): \"1. A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O\", with \"standard solution\" underlined; then \"(a) (i) Explain the underlined term.\"",
+  "questionRef": "2017 HL Q1(a)(i)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Apparatus: a dropping funnel labelled \"water\" above a conical flask labelled \"reaction flask\" with solid lumps labelled \"CaC₂\" in its bottom; a delivery tube runs from the flask into a trough of water, under an upturned test tube collecting a gas, labelled \"ethyne\", and the trough's liquid labelled \"water\".",
+  "questionRef": "2017 HL Q2"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table: a table with a header row marking \"Column X\" over the fourth column and \"Column Y\" over the last, and columns \"Run\", \"Volume stock (30 g/L) Na₂S₂O₃ solution (cm³)\", \"Volume water used for dilution (cm³)\", \"Concentration Na₂S₂O₃ (g/L)\", \"Volume HCl (cm³)\", \"t (s)\" and \"r (s⁻¹)\"; runs 1 to 6 with stock volumes 100, 80, 60, 40, 20, 0, water 0, 20, 40, 60, 80, 100, HCl 10 in every run and t 50, 63, 83, 125, 250 and \"-\"; the concentration column gives only 30.0 for run 1 and 0 for run 6, and the rate column only 0 for run 6.",
+  "questionRef": "2017 HL Q3"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q3d-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q3(d)(ii): \"In the reaction of sodium thiosulfate solution with hydrochloric acid, according to the following balanced equation, sulfur precipitates as a fine, pale-yellow powder.\" and the equation Na₂S₂O₃ + 2HCl → 2NaCl + SO₂ + S + H₂O; \"To investigate the effect of the sodium thiosulfate concentration on the rate (r) of this reaction, the time (t), taken for a certain mass of sulfur to precipitate after the reactants were mixed, was measured at room temperature for a number of different sodium thiosulfate concentrations using a constant concentration of hydrochloric acid. The inverse of the time for each run was taken as a measure of the initial rate of reaction (r = 1/t). In each run a stopwatch was started as 100 cm³ of the sodium thiosulfate solution of known concentration were added to a reaction flask containing 10 cm³ of the hydrochloric acid solution. The table contains the data collected.\"; a table with a header row marking \"Column X\" over the fourth column and \"Column Y\" over the last, and columns \"Run\", \"Volume stock (30 g/L) Na₂S₂O₃ solution (cm³)\", \"Volume water used for dilution (cm³)\", \"Concentration Na₂S₂O₃ (g/L)\", \"Volume HCl (cm³)\", \"t (s)\" and \"r (s⁻¹)\"; runs 1 to 6 with stock volumes 100, 80, 60, 40, 20, 0, water 0, 20, 40, 60, 80, 100, HCl 10 in every run and t 50, 63, 83, 125, 250 and \"-\"; the concentration column gives only 30.0 for run 1 and 0 for run 6, and the rate column only 0 for run 6; then \"(ii) Plot a graph of concentration of sodium thiosulfate (in g/L) versus rate (r) for runs 1 to 6.\"",
+  "questionRef": "2017 HL Q3(d)(ii)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q4c-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The nuclear equation: caesium, Cs, with mass number 137 and atomic number 55 → X, with mass number 137 and atomic number Z, + e, with mass number 0 and atomic number –1.",
+  "questionRef": "2017 HL Q4(c)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q4f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of an intravenous fluid bag whose label reads \"0.9% SODIUM CHLORIDE INJECTION, USP\" and \"500 mL\", with smaller printed text, a barcode and graduation marks down its side.",
+  "questionRef": "2017 HL Q4(f)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q4h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The structure of eugenol: a benzene ring carrying OH, and beside it O–CH₃, at the top right, and at the lower left a CH₂ joined to a carbon that carries H and is double-bonded to a carbon carrying two H atoms.",
+  "questionRef": "2017 HL Q4(h)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A bar chart titled \"Second period covalent radii\": \"Covalent Radius (pm)\" from 0 to 140 up the side and \"Atomic Number\" 3 to 9 along the foot, the bars labelled 128, 96, 84, 76, 71, 66 and 57.",
+  "questionRef": "2017 HL Q5(c)(ii)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q6e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q6(e): \"(e) State Hess's law. The heats of formation of dodecane, but-2-ene, 2-methylbutane and X are –350.9, –9.3, –178.4 and 20.0 kJ mol⁻¹ respectively. Use the data to calculate the heat change for the cracking reaction:\" and the equation C₁₂H₂₆ (l) → but-2-ene (g) + 2-methylbutane (l) + X (g).",
+  "questionRef": "2017 HL Q6(e)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q7-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The equilibrium N₂O₄ (g) ⇋ 2NO₂ (g), \"colourless\" under N₂O₄ and \"dark brown\" under 2NO₂.",
+  "questionRef": "2017 HL Q7"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q7b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q7(b): \"Consider the following chemical equilibrium established between dinitrogen tetroxide (N₂O₄) and nitrogen dioxide (NO₂) at a certain temperature T.\" and the equilibrium N₂O₄ (g) ⇋ 2NO₂ (g), \"colourless\" under N₂O₄ and \"dark brown\" under 2NO₂; then \"(b) Write the equilibrium constant (Kc) expression for the reaction.\"",
+  "questionRef": "2017 HL Q7(b)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q7c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q7(c): \"Consider the following chemical equilibrium established between dinitrogen tetroxide (N₂O₄) and nitrogen dioxide (NO₂) at a certain temperature T.\" and the equilibrium N₂O₄ (g) ⇋ 2NO₂ (g), \"colourless\" under N₂O₄ and \"dark brown\" under 2NO₂; then \"(c) The value of Kc for the reaction at T is 0.2. One mole of pure dinitrogen tetroxide was sealed into a container of fixed 10 litre capacity. Calculate the equilibrium concentration, in moles per litre, of each of the gases at temperature T.\"",
+  "questionRef": "2017 HL Q7(c)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The reaction scheme: phenylmethanol, drawn as a benzene ring bonded to a carbon carrying two H atoms and OH, converted by \"1. KMnO₄ / OH⁻\" and \"2. HCl 3. Na₂SO₃\" to benzoic acid, drawn as a benzene ring bonded to a C=O carbon carrying OH; \"propan-1-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"A\", and A by \"[O]\" to \"propanoic acid\"; \"propan-2-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"B\", and B back to propan-2-ol by \"[R]\".",
+  "questionRef": "2017 HL Q8"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q8a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q8(a)(i): \"8. The scheme below shows redox reactions of some organic compounds.\" and the scheme: phenylmethanol, drawn as a benzene ring bonded to a carbon carrying two H atoms and OH, converted by \"1. KMnO₄ / OH⁻\" and \"2. HCl 3. Na₂SO₃\" to benzoic acid, drawn as a benzene ring bonded to a C=O carbon carrying OH; \"propan-1-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"A\", and A by \"[O]\" to \"propanoic acid\"; \"propan-2-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"B\", and B back to propan-2-ol by \"[R]\"; then \"Copy the structures of phenylmethanol and benzoic acid into your answerbook and mark clearly the bond(s) involving carbon in this oxidation reaction\" and \"(i) that are broken in phenylmethanol,\"",
+  "questionRef": "2017 HL Q8(a)(i)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q8a-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q8(a)(ii): \"8. The scheme below shows redox reactions of some organic compounds.\" and the scheme: phenylmethanol, drawn as a benzene ring bonded to a carbon carrying two H atoms and OH, converted by \"1. KMnO₄ / OH⁻\" and \"2. HCl 3. Na₂SO₃\" to benzoic acid, drawn as a benzene ring bonded to a C=O carbon carrying OH; \"propan-1-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"A\", and A by \"[O]\" to \"propanoic acid\"; \"propan-2-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"B\", and B back to propan-2-ol by \"[R]\"; then \"Copy the structures of phenylmethanol and benzoic acid into your answerbook and mark clearly the bond(s) involving carbon in this oxidation reaction\" and \"(ii) that are formed in benzoic acid.\"",
+  "questionRef": "2017 HL Q8(a)(ii)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q8b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q8(b): \"8. The scheme below shows redox reactions of some organic compounds.\" and the scheme: phenylmethanol, drawn as a benzene ring bonded to a carbon carrying two H atoms and OH, converted by \"1. KMnO₄ / OH⁻\" and \"2. HCl 3. Na₂SO₃\" to benzoic acid, drawn as a benzene ring bonded to a C=O carbon carrying OH; \"propan-1-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"A\", and A by \"[O]\" to \"propanoic acid\"; \"propan-2-ol\" converted by \"Na₂Cr₂O₇ / H⁺\" to \"B\", and B back to propan-2-ol by \"[R]\"; then \"(b) Give the IUPAC names for A and B and draw their structures.\"",
+  "questionRef": "2017 HL Q8(b)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q10b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of a sphere with a wedge cut away, showing small dark balls embedded in it and on its cut faces, two of them pointed to by arrows labelled \"electrons\".",
+  "questionRef": "2017 HL Q10(b)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q11a-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The equation 2Cu₃(CO₃)₂(OH)₂ (s) + H₂O (l) → 3Cu₂CO₃(OH)₂ (s) + CO₂ (g), with \"azurite (blue)\" under the azurite and \"malachite (green)\" under the malachite.",
+  "questionRef": "2017 HL Q11(a)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q11a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q11(a)(i): \"(a) Some of the blue pigment azurite used by an artist in a picture painted in 1600 has changed over the years into green malachite according to the following balanced equation.\" and the equation 2Cu₃(CO₃)₂(OH)₂ (s) + H₂O (l) → 3Cu₂CO₃(OH)₂ (s) + CO₂ (g), \"azurite (blue)\" under the azurite and \"malachite (green)\" under the malachite; then \"Analysis shows that the only copper-containing pigments in the painting are azurite and malachite and that the picture now contains 3.81 g of copper.\" and \"(i) What mass of pure azurite contains 3.81 g copper?\"",
+  "questionRef": "2017 HL Q11(a)(i)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q11a-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q11(a)(ii): \"(a) Some of the blue pigment azurite used by an artist in a picture painted in 1600 has changed over the years into green malachite according to the following balanced equation.\" and the equation 2Cu₃(CO₃)₂(OH)₂ (s) + H₂O (l) → 3Cu₂CO₃(OH)₂ (s) + CO₂ (g), \"azurite (blue)\" under the azurite and \"malachite (green)\" under the malachite; then \"Analysis shows that the only copper-containing pigments in the painting are azurite and malachite and that the picture now contains 3.81 g of copper.\" and \"(ii) Calculate the maximum mass of malachite that will eventually be formed from this mass of azurite.\"",
+  "questionRef": "2017 HL Q11(a)(ii)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q11a-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 HL Q11(a)(iii): \"(a) Some of the blue pigment azurite used by an artist in a picture painted in 1600 has changed over the years into green malachite according to the following balanced equation.\" and the equation 2Cu₃(CO₃)₂(OH)₂ (s) + H₂O (l) → 3Cu₂CO₃(OH)₂ (s) + CO₂ (g), \"azurite (blue)\" under the azurite and \"malachite (green)\" under the malachite; then \"Analysis shows that the only copper-containing pigments in the painting are azurite and malachite and that the picture now contains 3.81 g of copper.\" and \"(iii) What is the volume, measured at s.t.p., of carbon dioxide that would be released from the painting in the formation of this mass of malachite?\"",
+  "questionRef": "2017 HL Q11(a)(iii)"
+ },
+ {
+  "file": "chemistry-2017-HL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A fractionating column with four trays of bubble caps; \"clean air intake\" enters a box labelled \"refrigeration\", from which a pipe labelled \"liquid air intake\" enters the column near its base; a pipe from the top runs down the side to an outlet \"A\", and a pipe from the bottom to an outlet \"B\".",
+  "questionRef": "2017 HL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q1d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q1(d)(i), as the State Examinations Commission set it: four boxed routes, each two steps priced (3): M = 8.82 × 4 over 392* = 0.09** M (3), 25×0.09 over 1000 = 0.00225 (2.25 × 10⁻³) moles (3) / 8.82 over 10 = 0.882 g in 25 cm³ (3), 0.882 over 392* = 0.00225 (2.25 × 10⁻³) moles (3) / 8.82 over 392* = 0.0225 (2.25 × 10⁻²) moles in 250 cm³ (3), 0.0225 over 10 = 0.00225 (2.25 × 10⁻³) moles (3) / 56 × 100 over 392* = 14.29%, 14.29% of 8.82 = 1.26 g, M = 1.26 × 4 over 56 = 0.09** M / 1.26 over 56 = 0.0225 (2.25 × 10⁻²) moles in 250 cm³ (3), 25×0.09 over 1000 / 0.0225 over 10 = 0.00225 (2.25 × 10⁻³) moles (3); then [*Addition must be shown for error to be treated as slip.] [**Only figure to be used as molarity in (d) (iii)]",
+  "questionRef": "2017 HL Q1(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q1d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q1(d)(iii), as the State Examinations Commission set it: two boxed routes: 0.00045 over 20.45 = 0.0000220 = 0.000022 moles / cm³ (3), 0.0000220 × 1000 = 0.0220 = 0.022 M (3) / 20.45 × M over 1 = 25 × 0.09** over 5 (3), M = 0.0220 = 0.022 M (3); then [1 mark to be deducted for incorrect rounding off resulting in candidate's final numerical answer lying outside given value but deduction to be made once only in (d).]",
+  "questionRef": "2017 HL Q1(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q2b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q2(b)(i), as the State Examinations Commission set it: a drawing: a horizontal test tube held over a Bunsen burner, its closed end labelled \"ethanol and glass wool\" and a solid at its middle, over the flame, labelled \"Al₂O₃\"; a delivery tube runs from its stopper into a trough of water, under an upturned test tube collecting a gas labelled \"ethene\", the trough's liquid labelled \"water\".",
+  "questionRef": "2017 HL Q2(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q2b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q2(b)(ii), as the State Examinations Commission set it: a table, \"State Precaution\" \"ANY TWO: (2 × 3)\" and \"Explain Precaution\" \"ANY TWO: (2 × 3)\", each line priced (3) and (3): remove delivery tube from water (loosen test-tube stopper) before removing heat at end, avoid suckback into hot test-tube/ avoid flying glass (chemical splash) / avoid test-tube (apparatus) cracking; keep ethanol (ethene, stopper) away from flame / keep test-tube stopper tightly fitted, ethanol (ethene, stopper) flammable /avoid fumes from burning stopper; use Pyrex (boiling, stout-walled) test-tube / apply heat to test-tube gently before heating strongly / avoid prolonged heating of test-tube at the same place, avoid test-tube cracking / avoid fire (burns); keep long hair tied back, avoid burns (contact with chemicals); wear eye-protection (goggles) / use safety screen) /, avoid burns (cuts from flying glass, contact with chemicals); wear gloves / use tongs (forceps) / do not touch glass wool, avoid burns (cuts from flying glass, contact with chemicals); wear mask (lab coat), avoid contact with chemicals; then [Correct, linked, specific, chemical hazard, e.g. 'glass wool irritating' acceptable.]",
+  "questionRef": "2017 HL Q2(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q3a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q3(a), as the State Examinations Commission set it: change in concentration per unit time / rate of change of concentration / change in concentration over time (3); of one (a) reactant (product) (2); or −d[reactant] over dt / d[reactant] over dt / d[product] over dt (5).",
+  "questionRef": "2017 HL Q3(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q3(d)(ii), as the State Examinations Commission set it: two graphs on graph paper, each a straight line through the origin through the plotted points: one with \"Rate (s⁻¹)\" up the side and \"Concentration (g / L)\" along the foot, marked 0, 12, 24 and 36; the other with \"Concentration (g / L)\" up the side and \"Rate (s⁻¹)\" along the foot; their scale numbers are handwritten.",
+  "questionRef": "2017 HL Q3(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q6c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q6(c)(i), as the State Examinations Commission set it: C₇H₁₆ → C₆H₅CH₃ + 4H₂ / C₇H₁₆ → C₇H₈ + 4H₂ / C₇H₁₆ → a benzene ring carrying CH₃ + 4H₂.",
+  "questionRef": "2017 HL Q6(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q6d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q6(d)(i), as the State Examinations Commission set it: a table headed \"but-2-ene\" and \"2-methylbutane\": but-2-ene as two skeletal zigzags, as H₃C–CH=CH–CH₃ drawn with its H atoms in two arrangements, and as CH3CH=CHCH3; 2-methylbutane as a skeletal drawing, as (CH3)2CHCH2CH3, and as H₃C–CH(CH₃)–CH(CH₃)–H drawn with its H atoms.",
+  "questionRef": "2017 HL Q6(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q6(e), as the State Examinations Commission set it: three boxed routes. The first: ΔHcracking = ΣΔHformation products – ΣΔHformation reactants = [(–9.3) + (–178.4) + (20.0)] kJ (3) – (– 350.9) kJ (3), or = [(–9.3) + (–178.4) + (20.0)] kJ (3) + 350.9 kJ (3), or = –167.7 kJ (3) + 350.9 kJ (3), and = 183.2 kJ (3). Or: C₁₂H₂₆ → 12C + 13H₂ ΔH = 350.9 kJ (3); 4C + 4H₂ → C₄H₈ ΔH = –9.3 kJ, 5C + 6H₂ → C₅H₁₂ ΔH = –178.4 kJ, 3C + 3H₂ → C₃H₆ ΔH = 20.0 kJ (3); C₁₂H₂₆ → C₄H₈ + C₅H₁₂ + C₃H₆ ΔH = 183.2 kJ (3). Or: C₁₂H₂₆ → 12C + 13H₂ ΔH = 350.9 kJ (3); 12C + 13H₂ → C₄H₈ + C₅H₁₂ + C₃H₆ ΔH = –167.7 kJ (3); C₁₂H₂₆ → C₄H₈ + C₅H₁₂ + C₃H₆ ΔH = 183.2 kJ (3). Then [Final Answer C₄H₈ + C₅H₁₂ + C₃H₆ → C₁₂H₂₆ ΔH = –183.2 kJ is worth (6) marks.] [Equations not essential, however final answer –183.2 kJ is worth only (3) marks if not accompanied by an equation or if accompanied by an equation other than that for cracking in reverse.]",
+  "questionRef": "2017 HL Q6(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q7b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q7(b), as the State Examinations Commission set it: Kc = [NO₂]² over [N₂O₄].",
+  "questionRef": "2017 HL Q7(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q7c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q7(c), as the State Examinations Commission set it: four boxed routes, each six steps priced (3). \"Candidate takes 2x moles/l NO₂ at equilibrium\": N₂O₄ (g) ⇋ 2NO₂ (g); Start: 1 mol, 0 mol, 0.1 mol/l, 0 mol/l (3); Equil: 0.1 – x mol/l, 2x mol/l (3); 4x² over 0.1–x = 0.2 / (2x)² over 0.1–x = 0.2 / 4x² + 0.2x – 0.02 = 0 / 2x² + 0.1x – 0.01 = 0 / x² + 0.05x – 0.005 = 0 (3); the quadratic formula for each, or (2x + 0.2)(2x – 0.1) = 0 / (x + 0.1)(2x – 0.1) = 0 / (x + 0.1)(x – 0.05) = 0; x = 0.05 mol/l (3); [N₂O₄] = 0.1 – x = 0.05 mol/l (3); [NO₂] = 2x = 0.1 mol/l (3). \"Candidate takes y moles/l NO₂ at equilibrium\": Start 0.1 mol/l, 0 mol/l (3); Equil: 0.1 – ½y mol/l, y mol/l (3); y² over 0.1–½y = 0.2 / y² + 0.1y – 0.02 = 0 (3); the quadratic formula, or (y + 0.2)(y – 0.1) = 0; y = 0.1 mol/l (3); [N₂O₄] = 0.1 – ½y = 0.05 mol/l (3); [NO₂] = y = 0.1 mol/l (3). The same two working in moles, \"Candidate working with 2x moles NO₂ at equilibrium\" and \"Candidate working with y moles NO₂ at equilibrium\", dividing by 10 to reach x = 0.5 mol and y = 1 mol and the same concentrations. Then [Chemically impossible solution of correct quadratic equation also used to find concentrations, deduct (1) mark.] [Do not award last (6) marks for quadratic equation with two chemically impossible solutions.] [Do not allow mixing and matching of marks within boxes.] [Where inverted Kc expression used, do not award (3) marks for setting up quadratic.]",
+  "questionRef": "2017 HL Q7(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q8a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q8(a)(i), as the State Examinations Commission set it: phenylmethanol drawn twice, \"/\" between: in the first the two C–H bonds of the carbon carrying OH are ringed; in the second two arrows point to those two bonds.",
+  "questionRef": "2017 HL Q8(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q8a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q8(a)(ii), as the State Examinations Commission set it: benzoic acid drawn twice, \"/\" between: in the first the C=O bond is ringed; in the second an arrow points to it.",
+  "questionRef": "2017 HL Q8(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q8b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q8(b), as the State Examinations Commission set it: a table headed \"propanal\" and \"propanone\": CH₃CH₂CHO and CH₃COCH₃; C₂H₅CHO and (CH₃)₂CO; then each drawn with its C=O bond and H atoms, H₃C–CH₂–C(=O)–H and H₃C–C(=O)–CH₃; as skeletal drawings, the propanal with its aldehyde H; and as a zigzag ending CHO and H₃C–C(=O)–CH₃.",
+  "questionRef": "2017 HL Q8(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q9b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q9(b)(i) and (ii), as the State Examinations Commission set it: \"(i) & (ii) First (9) marks available from one of the boxes below.\" The first box: \"RELEVANT HCl information\" 0.10 M HCl produces 0.10 M H⁺ ion / pH HCl = –log (0.10) (6), or HCl monoprotic (monobasic) / one molecule HCl produces one H⁺ ion // HCl is strong (fully dissociated into H⁺ ions, a good proton donor) (2 × 3), and \"RELEVANT H₂SO₄ information\" 0.10 M H₂SO₄ produces 0.20 M H⁺ ion / pH H₂SO₄ = –log (0.20) / H₂SO₄ diprotic (dibasic) / one molecule H₂SO₄ produces two H⁺ ions / H₂SO₄ produces (has) more (twice as many) H⁺ ions as HCl (3). Or the second box: \"RELEVANT H₂SO₄ information\" 0.10 M H₂SO₄ produces 0.20 M H⁺ ion / pH H₂SO₄ = –log (0.20) (6), or H₂SO₄ diprotic (dibasic) / one molecule H₂SO₄ produces two H⁺ ions / H₂SO₄ produces (has) more (twice as many) H⁺ ions as HCl (3), and \"RELEVANT HCl information\" 0.10 M HCl produces 0.10 M H⁺ ion / pH HCl = –log (0.10) (3). And \"RELEVANT HCOOH information\" 0.10 M methanoic acid (HCOOH) solution produces 4.27 × 10⁻³ M (less than 0.10 M) H⁺ ion / pH HCOOH = inverse log (–2.37) {antilog (–2.37)} / HCOOH is weak {slightly (not fully) dissociated into H⁺ ions, a poor proton donor} / HCOOH weaker than HCl (3).",
+  "questionRef": "2017 HL Q9(b)(i) and (ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q9b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q9(b)(iii), as the State Examinations Commission set it: boxed, [H⁺] = inverse log (–2.37) */ antilog (–2.37)* / 4.27 × 10⁻³ / 10^–2.37 (3), \"*Omission of minus loses this (3)\"; ⇒ Ka = [H⁺][A⁻] over [HA] ([H⁺]² over [HA], [H⁺]² over [0.1]) / [H⁺] = the square root of Ka[HA] / 4.27 × 10⁻³ = the square root of Ka[0.1] / [H⁺]² = Ka[HA] / (4.27 × 10⁻³)² = Ka(0.1); Ka = 1.82 × 10⁻⁴ (3); [acid] = [HA] = [HX] = M = Ma.",
+  "questionRef": "2017 HL Q9(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q9b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q9(b)(iv), as the State Examinations Commission set it: boxed, pH = –log of the square root of Ka[HA]* = –log of the square root of 1.82 × 10⁻⁴[0.05]* = 2.52 (3), \"*Omission of minus loses this (3)\"; [acid] = [HA] = [HX] = M = Ma.",
+  "questionRef": "2017 HL Q9(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q9(c), as the State Examinations Commission set it: a pH curve: \"pH\" 0 to 14 up the side and \"Volume NaOH\" 0 to 60 along the foot; the curve starts near pH 2.5, rises gently to about 4 by 20, rises steeply at about 25 to about 11, and levels off near 12.8 by 50.",
+  "questionRef": "2017 HL Q9(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q10a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q10(a), as the State Examinations Commission set it: two labelled drawings. A conical flask stands in a beaker of water on a hotplate, a thermometer in the water; labels \"pinhole\", \"rubber band\", \"aluminium foil\", \"vapour\", \"boiling water\", \"thermometer\" and \"hotplate\". A gas syringe lies in a box; labels \"thermometer\", \"gas syringe\", \"oven\", \"vapour\", \"rubber seal\", \"plunger\" and \"small syringe\".",
+  "questionRef": "2017 HL Q10(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q10a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q10(a)(i), as the State Examinations Commission set it: two boxed routes. n = pV over RT / pV = nRT / n = 1.01 × 10⁵ × 268 × 10⁻⁶ over 8.3 × 371.15 / 1.01 × 10⁵ × 268 × 10⁻⁶ = n × 8.3 × 371.15 (6); n = 8.787 × 10⁻³ moles [8.7 × 10⁻³ to 9 × 10⁻³ moles] (3); [Treat an incorrect multiple of any of the possible answers allowed by the range above as a mathematical slip. Treat use of temperature in °C as another slip.] / p₁V₁ over T₁ = p₂V₂ over T₂ / V₁ over T₁ = V₂ over T₂ / 101×268 over 371.15 = 101.325×V₂ over 273.15 / v₂ = 101×268×273.15 over 101.325×371.15 / v₂ = 268×273.15 over 371.15 / V₂ = 196.60 cm³ (6); n = 196.60 over 22400 = 8.787 × 10⁻³ moles [8.7 × 10⁻³ to 9 × 10⁻³ moles] (3); and the same bracketed note.",
+  "questionRef": "2017 HL Q10(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q10a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q10(a)(ii), as the State Examinations Commission set it: boxed, n = m over Mr / Mr = m over n / Mr = 0.28 over 8.787 × 10⁻³ (3); 31.9 = 32 [Accept 32 or 31] (3); \"Deduct 1 mark if answer not rounded correctly to a whole number. No penalty if relative molecular mass is given units of mass.\"",
+  "questionRef": "2017 HL Q10(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q10b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q10(b), as the State Examinations Commission set it: helium (He) nucleus / particle consisting of two protons and two neutrons / He with mass number 4 and atomic number 2 / He²⁺ (6).",
+  "questionRef": "2017 HL Q10(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q10c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q10(c)(i), as the State Examinations Commission set it: three tables of diagrams, priced (3), (3), (3), and the last (3), (6). The first: \"HCl → H⁺ + (and) Cl⁻ /\" and H–Cl with a curly arrow; ethene, a curly arrow from its double bond to H⁺, giving a carbocation C⁺ with its H atoms; then Cl⁻ with a curly arrow to the carbocation giving chloroethane drawn with its H atoms and Cl. The second: \"H of Hδ+—Clδ– approaches double bond\"; ethene with a curly arrow from its double bond to the H of H–Cl and a curly arrow from that bond to Cl, giving the carbocation + Cl⁻; then Cl⁻ adding to the carbocation giving chloroethane. The third: \"HCl → H⁺ + (and) Cl⁻\"; H–Cl with curly arrows to ethene, which loses H⁺, giving chloroethane + H⁺.",
+  "questionRef": "2017 HL Q10(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(a)(i), as the State Examinations Commission set it: three boxed routes. Mr azurite = 344.5* (3); 3.81 over 63.5 = 0.06 moles Cu ⇒ 0.02 (1/50) moles azurite (3); m over 344.5 = 0.02 moles, m = 6.89 g azurite (3) / Mr azurite = 344.5* (3); 3 × 63.5 over 344.5 × 100 = 55.2975 – 55.30% Cu (3); 3.81 over 0.5530 = m, m = 6.8896 – 6.89 g azurite (3) / Mr azurite = 344.5* (3); 3 × 63.5 g Cu in 344.5 g azurite / 190.5 g Cu in 344.5 g azurite (3); 3.81 g Cu ⇒ 344.5×3.81 over 3×63.5 / 344.5×3.81 over 190.5 = 6.89 g azurite (3); then [*Addition must be shown for error to be treated as slip.]",
+  "questionRef": "2017 HL Q11(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(a)(ii), as the State Examinations Commission set it: three boxed routes. Mr malachite = 221** (3); 0.06 moles Cu or 0.02 moles azurite ⇒ 0.03 (3/100) moles malachite (3); 0.03 × 221 = 6.63 g malachite (3) / Mr malachite = 221** (3); 2 × 63.5 g Cu in 221 g malachite / 127 g Cu in 221 g malachite (3); 3.81 g Cu ⇒ 221×3.81 over 2×63.5 / 221×3.81 over 127 = 6.63 g malachite (3) / Mr malachite = 221** (3); 2 × 344.5 g / 689 g azurite ⇒ 3 × 221 g / 663 g malachite (3); 6.89 g azurite ⇒ 663×6.89 over 689 = 6.63 g malachite (3); then [**Addition must be shown for error to be treated as slip.] [Where candidate's work clearly shows one incorrect Ar used to get Mr of azurite and Mr of malachite consistent with this error, award no marks for Mr of azurite and apply slip (–1) for the error in Mr of malachite.]",
+  "questionRef": "2017 HL Q11(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(a)(iii), as the State Examinations Commission set it: two boxed routes. 0.01 (1/100) moles CO₂ gas (3); 0.01 × 22.4 = 0.224 litres / 224 cm³ (3) / 689 (2 × 344.5) g azurite / 663 (3 × 221) g malachite ⇒ 22.4 l (22400 cm³) CO₂ gas (3); 6.89 g azurite / 6.63 g malachite ⇒ 0.224 litres / 224 cm³ (3); then [Use of 24 litres as molar volume not acceptable here.]",
+  "questionRef": "2017 HL Q11(a)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(b)(i), as the State Examinations Commission set it: two dot and cross diagrams of NF₃: three overlapping circles F around a central circle N, each overlap holding a dot and a cross, and a pair of crosses at the top of N; and N with a pair of crosses, bonded to three F atoms each by a dot and a cross.",
+  "questionRef": "2017 HL Q11(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(b)(ii), as the State Examinations Commission set it: two dot and cross diagrams of BF₃: a circle B overlapping three circles F, each overlap holding a dot and a cross; and B bonded to three F atoms each by a dot and a cross.",
+  "questionRef": "2017 HL Q11(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(b)(iii), as the State Examinations Commission set it: two dot and cross diagrams of ClF: a large circle Cl with three pairs of dots outside the overlap, overlapping a small circle F with three pairs of crosses, the overlap holding a dot and a cross; and Cl x • F.",
+  "questionRef": "2017 HL Q11(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(b)(iv), as the State Examinations Commission set it: the ClF diagrams again, each with \"δ+\" by the Cl and \"δ–\" by the F.",
+  "questionRef": "2017 HL Q11(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-HL-scheme-q11c-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 HL Q11(c)B(i), as the State Examinations Commission set it: three ethene molecules, each H₂C=CH₂ drawn with its H atoms, joined by \"+\" and an arrow, \"/\" a box of one ethene molecule headed \"3\" (6); and a chain of six carbon atoms joined by single bonds, each carrying two H atoms, with open bonds at its ends (4).",
+  "questionRef": "2017 HL Q11(c)B(i)",
+  "solution": true
  }
 ]

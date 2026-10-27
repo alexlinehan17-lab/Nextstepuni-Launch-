@@ -68884,5 +68884,3437 @@
     "contextNote": ""
    }
   ]
+ },
+ {
+  "id": "chem-2017-hl-q1-a-i",
+  "topicId": "chem-4-1",
+  "conceptId": "what-a-standard-solution-is",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(a)(i)",
+  "questionText": "Explain the underlined term.",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "solution of known concentration (molarity)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "questionFigureKey": "chemistry-2017-HL-paper-q1a-i-print"
+ },
+ {
+  "id": "chem-2017-hl-q1-a-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "properties-of-a-primary-standard",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(a)(ii)",
+  "questionText": "Give two essential properties of a primary standard for volumetric analysis.",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "pure",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow one of either ‘non-toxic’ or ‘cheap’ or ‘readily available’ for 3 if no other marks awarded] [Allow 3 marks for enables accurately known concentration to be obtained if no other marks awarded]",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "pure",
+      "water soluble",
+      "solid",
+      "high molecular mass",
+      "stable in air {not oxidised by air, does not effloresce (lose water of crystallisation), does not deliquesce (absorb water from air), is not hygroscopic}",
+      "mass true (accurate) representation of number of moles present",
+      "anhydrous (not hydrated, does not have water of crystallisation)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q1-b-i",
+  "topicId": "chem-4-1",
+  "conceptId": "acid-to-keep-iron-ii-from-air-oxidation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(b)(i)",
+  "questionText": "to use dilute sulfuric acid when preparing the standard solution from hydrated ammonium iron(II) sulfate,",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O Explain why it was necessary",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to prevent air oxidation of the Fe²⁺ in solution / to prevent Fe²⁺ in solution reacting with dissolved oxygen (air) / to avoid formation of Fe³⁺ / to stabilize Fe²⁺",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘to prevent hydrolysis of Fe²⁺’ and ‘to prevent Fe²⁺ reacting with water’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q1-b-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "excess-acid-in-a-manganate-vii-titration",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(b)(ii)",
+  "questionText": "to add more dilute sulfuric acid to each 25.0 cm³ portion of the standard solution used in the titrations.",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O Explain why it was necessary",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to ensure MnO₄⁻ {Mn(VII)} reduced to (produces, forms) colourless Mn²⁺ {Mn(II)} / to prevent formation of MnO₂ {Mn(IV), brown precipitate} in solution",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow Mn⁷⁺ for Mn(VII) and Mn⁴⁺ for Mn(IV).] [Allow MnO₄⁻ {Mn(VII), Mn⁷⁺, MnO₂ , Mn(IV), brown precipitate} ‘fully reduced’ or ‘to ensure reaction goes to completion’.] [Allow 3 marks only for oxidation of MnO₄⁻ {Mn(VII), Mn⁷⁺, MnO₂ , Mn(IV)} to Mn²⁺ {Mn(II)}.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q1-c",
+  "topicId": "chem-4-1",
+  "conceptId": "end-point-of-a-manganate-vii-titration",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(c)",
+  "questionText": "Describe fully the procedure used during the titrations to ensure the accuracy of the end point. What observation indicates that the correct end point has been reached?",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "swirl flask while adding manganate(VII) (solution from burette)",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "DESCRIBE: any four of these, (3) each: \"ANY FOUR: (4 × 3)\". The scheme adds: [Allow ‘beaker’ for ‘flask’.]",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "swirl flask while adding manganate(VII) (solution from burette)",
+      "rinse down inside walls (sides, inside) of flask (container, vessel) with deionised (distilled, pure) water at intervals",
+      "add manganate(VII) dropwise (slowly) as end point is approached",
+      "read burette at eye-level",
+      "keep burette vertical",
+      "read top of meniscus",
+      "carry out a rough titration",
+      "repeat to find two or more titres (readings) that agree to within 0.1 cm³",
+      "use a white tile (surface, paper) to see colour changes in flask clearly"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "faint (pale) pink colour remains",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WHAT OBS. The scheme adds: [‘Pink to colourless’ not acceptable.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q1-d-i",
+  "topicId": "chem-4-1",
+  "conceptId": "moles-of-iron-ii-in-a-portion",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(d)(i)",
+  "questionText": "the number of moles of Fe²⁺ ion in a 25.0 cm³ portion of the standard solution,",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O Calculate",
+  "figureKey": "chemistry-2017-HL-scheme-q1d-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.00225 (2.25 × 10⁻³) moles",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. The scheme prices each of its routes in two steps, (3) each, and adds: [*Addition must be shown for error to be treated as slip.] [**Only figure to be used as molarity in (d) (iii)]"
+   }
+  ],
+  "notes": "The scheme sets out four boxed routes, each two steps priced (3), and adds: [*Addition must be shown for error to be treated as slip.] [**Only figure to be used as molarity in (d) (iii)]"
+ },
+ {
+  "id": "chem-2017-hl-q1-d-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "moles-of-manganate-vii-from-moles-of-iron-ii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(d)(ii)",
+  "questionText": "the number of moles of potassium manganate(VII) required to oxidise this quantity of Fe²⁺ ion,",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O Calculate",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.00225 ÷ 5 = 0.00045 (4.5 × 10⁻⁴) moles",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.00045 (4.5 × 10⁻⁴) moles, priced [3], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2017-hl-q1-d-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "molarity-of-the-manganate-vii-solution",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q1(d)(iii)",
+  "questionText": "the molarity of the potassium manganate(VII) solution.",
+  "stem": "A solution of (NH₄)₂SO₄·FeSO₄·6H₂O (hydrated ammonium iron(II) sulfate), used as a primary standard, was prepared by dissolving 8.82 g of the crystals in dilute sulfuric acid and making the solution up to exactly 250 cm³ with deionised water. This standard solution was titrated in 25.0 cm³ portions, to which some more dilute sulfuric acid had been added, with a solution of potassium manganate(VII) (KMnO₄). On average, 20.45 cm³ of the potassium manganate(VII) solution were required for complete oxidation of the Fe²⁺ ions. The equation for the titration reaction is: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O Calculate",
+  "figureKey": "chemistry-2017-HL-scheme-q1d-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.022 M",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. The scheme prices each of its two routes in two steps, (3) each, and adds: [1 mark to be deducted for incorrect rounding off resulting in candidate’s final numerical answer lying outside given value but deduction to be made once only in (d).]"
+   }
+  ],
+  "notes": "The scheme sets out two boxed routes, each two steps priced (3), and adds: [1 mark to be deducted for incorrect rounding off resulting in candidate’s final numerical answer lying outside given value but deduction to be made once only in (d).]"
+ },
+ {
+  "id": "chem-2017-hl-q2-a-i",
+  "topicId": "chem-u2",
+  "conceptId": "calcium-carbide-and-water",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(a)(i)",
+  "questionText": "What was observed in the reaction flask as the water was dropped onto the calcium carbide (CaC₂)?",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties. The apparatus shown was used to prepare and collect ethyne.",
+  "figureKey": "chemistry-2017-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "reaction mixture turns milky (white) / bubbling / vapour (steam, smoke) / effervescence (fizzing) / solid (CaC₂, calcium dicarbide) reacts / flask gets hot",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q2-a-ii",
+  "topicId": "chem-u2",
+  "conceptId": "why-the-first-gas-collected-is-discarded",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(a)(ii)",
+  "questionText": "Explain why the first few test-tubes of gas collected were discarded.",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties. The apparatus shown was used to prepare and collect ethyne.",
+  "figureKey": "chemistry-2017-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "contain air (nitrogen, oxygen, argon, carbon dioxide)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow impure.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q2-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "apparatus-for-preparing-ethene",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(b)(i)",
+  "questionText": "Draw a labelled diagram of a suitable arrangement of apparatus and chemicals for the preparation and collection of ethene.",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties.",
+  "figureKey": "chemistry-2017-HL-scheme-q2b-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "heat applied to aluminium oxide (alumina, Al₂O₃)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ethanol (C₂H₅OH)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "glass wool (fibre glass, cotton wool) holding ethanol",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any two of these, (3) each: \"ANY TWO: (2 × 3)\". The scheme adds: [Where no diagram or arrangement incorrect, award maximum (9) marks.] [Accept ‘steel wool’ instead of ‘fibre glass’.] [Accept liquid shown in collecting trough, and unlabelled, as water.] Its own drawing is shown with the answer.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "glass wool (fibre glass, cotton wool) holding ethanol",
+      "at end of horizontal test tube",
+      "gas collected over water / gas collected in gas syringe (balloon, etc)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q2-b-ii",
+  "topicId": "chem-u2",
+  "conceptId": "safety-in-preparing-ethene",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(b)(ii)",
+  "questionText": "State and explain two safety precautions that should be taken when carrying out the experiment.",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties.",
+  "figureKey": "chemistry-2017-HL-scheme-q2b-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "remove delivery tube from water (loosen test-tube stopper) before removing heat at end",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "STATE: any two precautions, (3) each: \"ANY TWO STATED PRECAUTIONS: (2 × 3)\".",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "remove delivery tube from water (loosen test-tube stopper) before removing heat at end",
+      "keep ethanol (ethene, stopper) away from flame / keep test-tube stopper tightly fitted",
+      "use Pyrex (boiling, stout-walled) test-tube / apply heat to test-tube gently before heating strongly / avoid prolonged heating of test-tube at the same place",
+      "keep long hair tied back",
+      "wear eye-protection (goggles) / use safety screen)",
+      "wear gloves / use tongs (forceps) / do not touch glass wool",
+      "wear mask (lab coat)"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "avoid suckback into hot test-tube/ avoid flying glass (chemical splash)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "EXPLAIN: the explanation the scheme's table sets beside each precaution stated, (3) each: \"ANY TWO LINKED EXPLANATIONS: (2 × 3)\". The table also sets \"avoid burns (cuts from flying glass, contact with chemicals)\" beside eye-protection and beside gloves or tongs; its own print of the table is shown with the answer. It adds: [Correct, linked, specific, chemical hazard, e.g. ‘glass wool irritating’ acceptable.]",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "avoid suckback into hot test-tube/ avoid flying glass (chemical splash)",
+      "avoid test-tube (apparatus) cracking",
+      "ethanol (ethene, stopper) flammable /avoid fumes from burning stopper",
+      "avoid test-tube cracking / avoid fire (burns)",
+      "avoid burns (contact with chemicals)",
+      "avoid contact with chemicals"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q2-c-i",
+  "topicId": "chem-2-4",
+  "conceptId": "combustion-of-ethene-and-ethyne-compared",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(c)(i)",
+  "questionText": "Compare the observations made in the two tests.",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties. Combustion tests were carried out on samples of ethene and ethyne.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "comparison: ethyne flame smokier (sootier, brighter, more luminous, yellower) than ethene’s / ethene flame cleaner (not as bright, less luminous, bluer) than ethyne’s / statement: ethyne smoky (sooty, yellow, bright) / ethene clean (blue, bluish, yellowish)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q2-c-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "equation-for-the-combustion-of-ethyne",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(c)(ii)",
+  "questionText": "Write a balanced equation for the complete combustion of ethyne in oxygen.",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties. Combustion tests were carried out on samples of ethene and ethyne.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₂H₂ + 2½ O₂ → 2CO₂ + H₂O / 2C₂H₂ + 5O₂ → 4CO₂ + 2H₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [formulae (3), balancing (3)] The scheme prices this point [3 + 3]."
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q2-d",
+  "topicId": "chem-2-4",
+  "conceptId": "reagent-to-test-for-unsaturation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(d)",
+  "questionText": "Name a reagent used to test the gases for unsaturation.",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "bromine (Br₂) solution (water) / acidified potassium manganate(VII) {permanganate} / (KMnO₄/H⁺) / (MnO₄¯/H⁺)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q2-e",
+  "topicId": "chem-1-4",
+  "conceptId": "number-of-ethyne-molecules-from-calcium-carbide",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q2(e)",
+  "questionText": "The mass of calcium carbide consumed in the preparation of ethyne, in an apparatus like that shown above, was 3.2 g. The equation for the reaction is as follows: CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂ Calculate the maximum theoretical number of ethyne molecules produced in this reaction.",
+  "stem": "A student prepared ethene and ethyne gases and compared their properties.",
+  "figureKey": "chemistry-2017-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3.2 ÷ 64∗ = 0.05 moles calcium carbide",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 3.2 over 64∗ as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "⇒ 0.05 moles ethyne / 1:1 CaC₂:ethyne",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.05 × 6.0 × 10²³ = 3.0 × 10²² molecules",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme adds: [*Addition must be shown for error to be treated as slip.]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 3.0 × 10²² molecules, priced [8], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2017-hl-q3-a",
+  "topicId": "chem-3-2",
+  "conceptId": "definition-of-rate-of-reaction",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q3(a)",
+  "questionText": "Define rate of reaction.",
+  "figureKey": "chemistry-2017-HL-scheme-q3a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "change in concentration per unit time / rate of change of concentration",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme also writes the change in concentration over time as a fraction, and accepts instead, after \"or\", the rate written as the derivative of a reactant's or product's concentration with time (5); its own print is shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "of one (a) reactant (product)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q3-b",
+  "topicId": "chem-u2",
+  "conceptId": "judging-when-the-same-mass-of-sulfur-has-formed",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q3(b)",
+  "questionText": "Describe a method you could use to determine when the same mass of sulfur had been formed in each run.",
+  "stem": "In the reaction of sodium thiosulfate solution with hydrochloric acid, according to the following balanced equation, sulfur precipitates as a fine, pale-yellow powder. Na₂S₂O₃ + 2HCl → 2NaCl + SO₂ + S + H₂O To investigate the effect of the sodium thiosulfate concentration on the rate (r) of this reaction, the time (t), taken for a certain mass of sulfur to precipitate after the reactants were mixed, was measured at room temperature for a number of different sodium thiosulfate concentrations using a constant concentration of hydrochloric acid. The inverse of the time for each run was taken as a measure of the initial rate of reaction (r = 1/t). In each run a stopwatch was started as 100 cm³ of the sodium thiosulfate solution of known concentration were added to a reaction flask containing 10 cm³ of the hydrochloric acid solution. The table contains the data collected.",
+  "figureKey": "chemistry-2017-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "cross (print) under (behind) flask",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Any two points of the one method used, the first (6) and the second (3): \"ANY TWO: (6 + 3)\". The scheme sets three methods, the second and third each after \"or\": a cross under the flask, obscured, with the same depth or flask; a light meter reading reaching the same value, with the same depth or flask; and a pH or conductivity meter reading reaching the same value (6 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "cross (print) under (behind) flask",
+      "obscured (no longer visible, no longer legible)",
+      "when viewed through same (constant) depth (height) of solution in each run / using same or identical flask (vessel) in each run",
+      "light meter reading",
+      "reaches same value",
+      "pH meter (probe) reading / conductivity meter (probe) reading"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q3-c",
+  "topicId": "chem-3-2",
+  "conceptId": "concentrations-of-diluted-thiosulfate",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q3(c)",
+  "questionText": "Copy Column X into your answer book and fill in the missing concentrations.",
+  "stem": "In the reaction of sodium thiosulfate solution with hydrochloric acid, according to the following balanced equation, sulfur precipitates as a fine, pale-yellow powder. Na₂S₂O₃ + 2HCl → 2NaCl + SO₂ + S + H₂O To investigate the effect of the sodium thiosulfate concentration on the rate (r) of this reaction, the time (t), taken for a certain mass of sulfur to precipitate after the reactants were mixed, was measured at room temperature for a number of different sodium thiosulfate concentrations using a constant concentration of hydrochloric acid. The inverse of the time for each run was taken as a measure of the initial rate of reaction (r = 1/t). In each run a stopwatch was started as 100 cm³ of the sodium thiosulfate solution of known concentration were added to a reaction flask containing 10 cm³ of the hydrochloric acid solution. The table contains the data collected.",
+  "figureKey": "chemistry-2017-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "24.0 (24) g/L",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme works each as 30 × 0.8, 30 × 0.6, 30 × 0.4 and 30 × 0.2 in its table."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "18.0 (18), 12.0 (12), 6.0 (6) g/L",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q3-d-i",
+  "topicId": "chem-3-2",
+  "conceptId": "rates-as-inverse-times",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q3(d)(i)",
+  "questionText": "Copy Column Y into your answer book and fill in the missing rates, correct to three decimal places.",
+  "stem": "In the reaction of sodium thiosulfate solution with hydrochloric acid, according to the following balanced equation, sulfur precipitates as a fine, pale-yellow powder. Na₂S₂O₃ + 2HCl → 2NaCl + SO₂ + S + H₂O To investigate the effect of the sodium thiosulfate concentration on the rate (r) of this reaction, the time (t), taken for a certain mass of sulfur to precipitate after the reactants were mixed, was measured at room temperature for a number of different sodium thiosulfate concentrations using a constant concentration of hydrochloric acid. The inverse of the time for each run was taken as a measure of the initial rate of reaction (r = 1/t). In each run a stopwatch was started as 100 cm³ of the sodium thiosulfate solution of known concentration were added to a reaction flask containing 10 cm³ of the hydrochloric acid solution. The table contains the data collected.",
+  "figureKey": "chemistry-2017-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.020 s⁻¹",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.016, 0.012, 0.008, 0.004 s⁻¹",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme's table notes: \"1 mark to be deducted for any one of these four values incorrectly rounded but make at most one deduction.\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q3-d-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "graph-of-concentration-against-rate",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q3(d)(ii)",
+  "questionText": "Plot a graph of concentration of sodium thiosulfate (in g/L) versus rate (r) for runs 1 to 6.",
+  "stem": "In the reaction of sodium thiosulfate solution with hydrochloric acid, according to the following balanced equation, sulfur precipitates as a fine, pale-yellow powder. Na₂S₂O₃ + 2HCl → 2NaCl + SO₂ + S + H₂O To investigate the effect of the sodium thiosulfate concentration on the rate (r) of this reaction, the time (t), taken for a certain mass of sulfur to precipitate after the reactants were mixed, was measured at room temperature for a number of different sodium thiosulfate concentrations using a constant concentration of hydrochloric acid. The inverse of the time for each run was taken as a measure of the initial rate of reaction (r = 1/t). In each run a stopwatch was started as 100 cm³ of the sodium thiosulfate solution of known concentration were added to a reaction flask containing 10 cm³ of the hydrochloric acid solution. The table contains the data collected.",
+  "figureKey": "chemistry-2017-HL-scheme-q3d-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "both axes correctly labelled concentration (g/L) and rate (r, s⁻¹)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "appropriate scales on both axes",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "five points plotted correctly",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "straight line through origin / 6th point plotted correctly and line (curve) through them",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Not plotted on graph paper (–3).] [Where concentration versus time plotted, maximum (6) marks.] The scheme draws the graph both ways round; its own print is shown with the answer."
+   }
+  ],
+  "questionFigureKey": "chemistry-2017-HL-paper-q3d-ii-print"
+ },
+ {
+  "id": "chem-2017-hl-q3-d-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "rate-proportional-to-concentration",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q3(d)(iii)",
+  "questionText": "What can you conclude from your graph?",
+  "stem": "In the reaction of sodium thiosulfate solution with hydrochloric acid, according to the following balanced equation, sulfur precipitates as a fine, pale-yellow powder. Na₂S₂O₃ + 2HCl → 2NaCl + SO₂ + S + H₂O To investigate the effect of the sodium thiosulfate concentration on the rate (r) of this reaction, the time (t), taken for a certain mass of sulfur to precipitate after the reactants were mixed, was measured at room temperature for a number of different sodium thiosulfate concentrations using a constant concentration of hydrochloric acid. The inverse of the time for each run was taken as a measure of the initial rate of reaction (r = 1/t). In each run a stopwatch was started as 100 cm³ of the sodium thiosulfate solution of known concentration were added to a reaction flask containing 10 cm³ of the hydrochloric acid solution. The table contains the data collected.",
+  "figureKey": "chemistry-2017-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "concentration of sodium thiosulfate is directly proportional to (varies directly with) rate (r, 1/t)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘direct relationship between concentration and rate (r, 1/t)’, and ‘straight line through origin’ and ‘linear relationship between concentration and rate (r, 1/t)’ and ‘rate increases as concentration increases’.] [‘Inversely’ cancels ‘proportional’, ‘varies indirectly’ cancels ‘varies directly’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q3-e",
+  "topicId": "chem-u2",
+  "conceptId": "investigating-temperature-and-rate-with-thiosulfate",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2017 HL Q3(e)",
+  "questionText": "Describe how you could use the same reaction to investigate the effect of changing temperature on the reaction rate.",
+  "stem": "In the reaction of sodium thiosulfate solution with hydrochloric acid, according to the following balanced equation, sulfur precipitates as a fine, pale-yellow powder. Na₂S₂O₃ + 2HCl → 2NaCl + SO₂ + S + H₂O To investigate the effect of the sodium thiosulfate concentration on the rate (r) of this reaction, the time (t), taken for a certain mass of sulfur to precipitate after the reactants were mixed, was measured at room temperature for a number of different sodium thiosulfate concentrations using a constant concentration of hydrochloric acid. The inverse of the time for each run was taken as a measure of the initial rate of reaction (r = 1/t). In each run a stopwatch was started as 100 cm³ of the sodium thiosulfate solution of known concentration were added to a reaction flask containing 10 cm³ of the hydrochloric acid solution. The table contains the data collected.",
+  "figureKey": "chemistry-2017-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "repeat using water baths / repeat heating solutions using hotplate (Bunsen burner)",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "\"ANY THREE: (3 × 3)\".",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "repeat using water baths / repeat heating solutions using hotplate (Bunsen burner)",
+      "at a number of (several) different (stated) temperatures",
+      "with same (fixed) volume(s) and concentration(s) of sodium thiosulfate and HCl / repeat a specified run from examination question, e.g. repeat Run 3",
+      "record reaction times (rates) / analyse data collected / plot graph of temperature versus reaction rates (inverse times)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q4-a",
+  "topicId": "chem-1-3",
+  "conceptId": "tellurium-before-iodine-in-mendeleevs-table",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(a)",
+  "questionText": "Why did Mendeleev place tellurium before iodine in his periodic table of the elements?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chemical properties matched (fitted) better in that order / to ensure periodic recurrence of chemical properties / elements with similar chemical properties were listed in columns (groups) / listing these by atomic mass (weight) did not group them with elements of similar chemical properties",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘Mendeleev thought tellurium’s atomic mass had been incorrectly measured’.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-b",
+  "topicId": "chem-1-2",
+  "conceptId": "energy-levels-of-the-red-balmer-line",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(b)",
+  "questionText": "Identify the main energy levels involved in the electron transition that gives rise to the first (red) line of the Balmer series in the emission spectrum of the hydrogen atom.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prints \"3 and // 2\"."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Order not important.][Allow orbitals if given, e.g. 3s and 2s.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\" The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2017-hl-q4-c",
+  "topicId": "chem-1-2",
+  "conceptId": "daughter-nucleus-of-the-beta-decay-of-caesium-137",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(c)",
+  "questionText": "Identify the atomic symbol X and the atomic number Z of the daughter nucleus in the following nuclear equation.",
+  "figureKey": "chemistry-2017-HL-paper-q4c-eq",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X = Ba",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Z = 56",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-d-i-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "oxidation-numbers-of-oxygen-and-xenon",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(d)(i)–(ii)",
+  "questionText": "(i) oxygen in OF₂, (ii) xenon in XeF₄.",
+  "stem": "Write the oxidation number for",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2 / +2",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (i). The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "4 /+4",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii)."
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-e",
+  "topicId": "chem-2-3",
+  "conceptId": "avogadros-law",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(e)",
+  "questionText": "State Avogadro’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "equal (same) volumes of gases contain equal (same) numbers of molecules (particles, moles)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "at the same (constant) temperature and pressure",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [‘Amounts’ unacceptable instead of ‘volumes’; ‘all temperatures and pressures’ and ‘at s.t.p.’ unacceptable instead of ‘at the same (constant) temperature and pressure’.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-f",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-salt-in-a-saline-solution",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(f)",
+  "questionText": "Calculate the mass of sodium chloride required to prepare 500 cm³ of a 0.9% (w/v) saline solution for use as an intravenous fluid.",
+  "figureKey": "chemistry-2017-HL-paper-q4f",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.9 (w/v) ⇒ 0.9 g per 100 cm³ / 9 g per litre",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "4.5 g per 500 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 4.5 g per 500 cm³, priced [6], then the working that earns it, step by step; the steps here are its first route. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-g-i-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "bonding-and-intermolecular-forces-in-ammonia",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(g)(i)–(ii)",
+  "questionText": "(i) intramolecular bonding, (ii) intermolecular forces, present.",
+  "stem": "Identify, in ammonia, the type of",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "intramolecular: polar (covalent) bonds within ammonia molecule(s)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (i)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "intermolecular: hydrogen bonds (dipole-dipole, van der Waals forces) between ammonia molecules",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Take order of question unless statements clearly identified as intermolecular or intramolecular] For (ii)."
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-h-i-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "molecular-formula-of-eugenol-and-its-identification",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(h)(i)–(ii)",
+  "questionText": "(i) Write the molecular formula of eugenol. (ii) Name a spectroscopic technique that could help confirm the identity of a sample of eugenol.",
+  "stem": "The structure of eugenol is shown.",
+  "figureKey": "chemistry-2017-HL-paper-q4h",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₁₀H₁₂O₂",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow condensed formula with 10C, 12H, 2O.] For (i)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "IR (ir, infrared) spectrometry or spectroscopy / uv-visible (UV-vis) spectrometry or spectroscopy / MS {mass spectrometry (spectroscopy)} / nmr (nuclear magnetic resonance spectroscopy) / x-ray crystallography (diffraction), etc",
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (ii)."
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-i",
+  "topicId": "chem-3-5",
+  "conceptId": "copper-displacing-silver",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(i)",
+  "questionText": "Write a balanced equation for the displacement reaction between copper metal and AgNO₃ solution to produce copper(II) nitrate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [formulae (3), balancing (3)] The scheme prices this point [3 + 3]."
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-j",
+  "topicId": "chem-4-3",
+  "conceptId": "hardness-removed-by-boiling",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(j)",
+  "questionText": "How does boiling remove any temporary hardness, caused by the presence of calcium hydrogencarbonate, in a water sample?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "calcium hydrogen carbonate decomposes (breaks down, reacts) / calcium hydrogencarbonate converted to calcium carbonate (CaCO₃, limescale, limestone) / a precipitate (an insoluble product) is formed",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Information can be conveyed in a chemical equation.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-k-a",
+  "topicId": "chem-4-3",
+  "conceptId": "sulfuric-acid-in-acid-rain",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(k)A",
+  "questionText": "Explain using balanced equations how sulfuric acid in rainwater is formed from sulfur dioxide in the atmosphere.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "SO₂ + ½ O₂ → SO₃ // SO₃ + H₂O → H₂SO₄",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One of these, as the student gave it: the scheme sets the second pair and the overall equation each after \"or\". Each pair is priced (2 × 3), an equation each; the overall equation (6).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "SO₂ + ½ O₂ → SO₃ // SO₃ + H₂O → H₂SO₄",
+      "SO₂ + H₂O → H₂SO₃ // H₂SO₃ + ½ O₂ → H₂SO₄",
+      "SO₂ + ½ O₂ + H₂O → H₂SO₄"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q4-k-b",
+  "topicId": "chem-3-5",
+  "conceptId": "anodising-aluminium",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q4(k)B",
+  "questionText": "How is aluminium anodised?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "aluminium object to be anodised (it) is made anode (positive electrode, +)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in dilute sulfuric acid electrolyte / in acidified water electrolyte",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2017-hl-q5-a",
+  "topicId": "chem-1-2",
+  "conceptId": "atomic-orbital-and-the-configuration-of-carbon",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q5(a)",
+  "questionText": "Define an atomic orbital. Write the ground state s, p electron configuration for a carbon atom. How many orbitals are occupied?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "space (volume, region) around the nucleus of an atom",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "DEFINE: one of these wordings, the scheme setting the second after \"or\"; it prices the two points of each (2 × 3), one each. It adds: [‘Area’ around nucleus not acceptable.]",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "space (volume, region) around the nucleus of an atom",
+      "approximate solution"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "where there is a relatively high probability (possibility) of finding an electron / where an electron is likely to be found",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the second point of that same wording, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "where there is a relatively high probability (possibility) of finding an electron / where an electron is likely to be found",
+      "to a Schrödinger wave equation"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1s² 2s² 2p² /1s² 2s² 2px¹2py¹",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WRITE. The scheme adds: [Allow subscripts instead of superscripts.] [Arrows to represent numbers of electrons acceptable but sublevel symbols must be given.]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "HOW MANY."
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q5-b",
+  "topicId": "chem-1-3",
+  "conceptId": "atomic-boundary-and-covalent-radius",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q5(b)",
+  "questionText": "Why is it difficult to specify the absolute boundary of an atom? State the definition used for the (covalent) radius of an atom.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "orbitals do not have defined volumes / Heisenberg’s uncertainty principle / it is impossible (difficult) to measure accurately both position and momentum (velocity) of an electron in an atom simultaneously / wave-particle duality of electron / electrons have wave nature / electrons have wave motion / distance between electron in an atom and nucleus always changing / probability of finding an electron in an atom non-zero except at infinity / probability exists of finding an electron in an atom anywhere",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [‘Distance between electron and nucleus difficult to measure’ insufficient on its own.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "half the distance between the nuclei (centres)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "of two atoms of (an, the, the same) element joined by a single covalent bond / of two identical atoms joined by a single covalent bond",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept information given in a labelled diagram.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q5-c-i",
+  "topicId": "chem-1-3",
+  "conceptId": "covalent-radius-down-group-1",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q5(c)(i)",
+  "questionText": "Describe and account for the general trend in (covalent) radii down Group 1 of the periodic table of the elements.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "increases (increasing)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "additional shell(s) {main energy level(s)} overcome(s) increasing nuclear charge",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [DESCRIBE and ACCOUNT are linked.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q5-c-ii",
+  "topicId": "chem-1-3",
+  "conceptId": "covalent-radius-across-the-second-period",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q5(c)(ii)",
+  "questionText": "The bar chart below shows the (covalent) radii (2008 values) for the atoms of the elements of the second period of the periodic table excluding neon. Account for the general trend shown.",
+  "figureKey": "chemistry-2017-HL-paper-q5c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "effective nuclear charge increasing / number protons (nuclear charge, atomic number) increasing with same screening effect by electrons in first shell",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q5-d",
+  "topicId": "chem-1-3",
+  "conceptId": "first-ionisation-energy-across-the-second-period",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q5(d)",
+  "questionText": "Define the first ionisation energy of an isolated atom of an element in its ground state. Why do first ionisation energy values show a general increase across the second period of the periodic table?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "minimum energy to remove",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "most loosely bound electron completely (to infinity)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "increasing effective nuclear charge / increasing number protons (atomic number) with same screening effect by electrons in first shell",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "smaller atomic radius / atomic size decreasing",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q5-e-i",
+  "topicId": "chem-1-2",
+  "conceptId": "electrons-in-carbon-from-ionisation-energies",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q5(e)(i)",
+  "questionText": "the number of electrons in a carbon atom,",
+  "stem": "The full set of successive ionisation energy values for the electrons in carbon, in kJ mol⁻¹ and in order starting with the first, is {1086, 2353, 4620, 6223, 37831, 47277}. How does this set of numbers provide evidence for",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "six values ⇒ six electrons / each value ⇒ one electron",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q5-e-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "carbons-energy-levels-from-ionisation-energies",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q5(e)(ii)",
+  "questionText": "the number of electrons in each main energy level in a carbon atom?",
+  "stem": "The full set of successive ionisation energy values for the electrons in carbon, in kJ mol⁻¹ and in order starting with the first, is {1086, 2353, 4620, 6223, 37831, 47277}. How does this set of numbers provide evidence for",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "gradual (steady) increase for first four values ⇒ four electrons in the outer (second) main energy level (shell) / first four values numerically close (all low, all lower) ⇒ four electrons in the outer (second) main energy level (shell) / last two values very high (higher) ⇒ two electrons in the inner (first) main energy level (shell) / large jump (large increase) after 4th value (after 6223, before 5th value, before 37831) ⇒ two (four) electrons of the six in one level (shell) and four (two) in the other",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q6-a",
+  "topicId": "chem-2-4",
+  "conceptId": "methane-from-anaerobic-decomposition",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q6(a)",
+  "questionText": "Identify the hydrocarbon gas produced by anaerobic bacterial decomposition of either animal waste or vegetation. Give a major use of this gas. Why is the concentration of this gas in the atmosphere a cause of concern?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[5 + 3 + 3]"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methane (CH₄)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "IDENTIFY."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "fuel /production of hydrogen / steam reforming / production of ammonia / production of fertilizer",
+    "marks": null,
+    "openList": true,
+    "contextNote": "GIVE."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "global warming / enhanced greenhouse gas (effect) / traps heat that should escape to atmosphere / climate change / rising sea levels / melting polar ice-caps / destruction of some wildlife habitats / threat to survival of some wildlife species / affects crop yields, etc",
+    "marks": null,
+    "openList": true,
+    "contextNote": "WHY. The scheme adds: [‘Damages ozone’ cancels correct response.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [5 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2017-hl-q6-b",
+  "topicId": "chem-2-2",
+  "conceptId": "boiling-points-of-alkanes",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q6(b)",
+  "questionText": "The boiling points of propane (C₃H₈) and dodecane (C₁₂H₂₆) are –42 °C and 216 °C respectively. Explain why high molecular mass alkanes have high boiling points.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "stronger (more) intermolecular {van der Waals, London (dispersion)} bonds (forces, interactions) / more electrons present to create intermolecular forces",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q6-c-i",
+  "topicId": "chem-2-4",
+  "conceptId": "dehydrocyclisation-of-heptane",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q6(c)(i)",
+  "questionText": "Write a balanced equation for the dehydrocyclisation reaction in which heptane is converted into methylbenzene and hydrogen.",
+  "figureKey": "chemistry-2017-HL-scheme-q6c-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₇H₁₆ → C₆H₅CH₃ + 4H₂ / C₇H₁₆ → C₇H₈ + 4H₂",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [formulae (3), balancing (3)] The scheme prices this point [3 + 3]. The scheme also accepts the equation with methylbenzene drawn as its structure; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q6-c-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "purpose-of-dehydrocyclisation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q6(c)(ii)",
+  "questionText": "What is the purpose of dehydrocyclisation in oil refining?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "increase (improve) octane rating (number, value) of a fuel / reduces tendency of fuel to cause knocking / make more fuel (compounds, hydrocarbons, molecules) of higher demand / increase value of products / make more efficient fuel /makes molecules (compounds, hydrocarbons) that are cyclic",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q6-d-i",
+  "topicId": "chem-2-4",
+  "conceptId": "structures-of-but-2-ene-and-2-methylbutane",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q6(d)(i)",
+  "questionText": "Draw a structural formula for each named product.",
+  "stem": "But-2-ene, 2-methylbutane and a second alkene (X) were the products of catalytic cracking of a dodecane (C₁₂H₂₆) molecule.",
+  "figureKey": "chemistry-2017-HL-scheme-q6d-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "but-2-ene",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Its structural formula, drawn; the scheme prices the two drawings (2 × 3), one each, and sets several forms of each in its table, shown with the answer. It adds: [In expanded structures the Hs need not be explicitly written.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2-methylbutane",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Its structural formula, drawn."
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q6-d-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "formula-of-the-third-cracking-product",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q6(d)(ii)",
+  "questionText": "Deduce the molecular formula of the third product (X).",
+  "stem": "But-2-ene, 2-methylbutane and a second alkene (X) were the products of catalytic cracking of a dodecane (C₁₂H₂₆) molecule.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₃H₆",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept structure]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q6-e",
+  "topicId": "chem-3-1",
+  "conceptId": "hess-law-and-the-heat-of-cracking",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q6(e)",
+  "questionText": "State Hess’s law. The heats of formation of dodecane, but-2-ene, 2-methylbutane and X are –350.9, –9.3, –178.4 and 20.0 kJ mol⁻¹ respectively. Use the data to calculate the heat change for the cracking reaction:",
+  "figureKey": "chemistry-2017-HL-scheme-q6e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "heat change for a reaction",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "STATE. The scheme prices this point and the next (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "depends only on initial and final states / is same whether reaction takes place in one or more stages / is independent of path taken / is sum of heat changes for all stages",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "[(–9.3) + (–178.4) + (20.0)] kJ",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "CALCULATE: ΔH cracking = ΣΔH formation products – ΣΔH formation reactants; the products' heats of formation first, or added up, \"–167.7 kJ\" (3)."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "– (– 350.9) kJ",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Then the reactant's, subtracted, or written \"+ 350.9 kJ\" (3)."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "183.2 kJ",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme gives the answer, 183.2 kJ, priced (9) with its working, and accepts two other routes, adding equations; its own print of every route is shown with the answer. It adds: [Final Answer C₄H₈ + C₅H₁₂ + C₃H₆ → C₁₂H₂₆ ΔH = –183.2 kJ is worth (6) marks.] [Equations not essential, however final answer –183.2 kJ is worth only (3) marks if not accompanied by an equation or if accompanied by an equation other than that for cracking in reverse.]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2017-HL-paper-q6e-print"
+ },
+ {
+  "id": "chem-2017-hl-q7-a",
+  "topicId": "chem-3-3",
+  "conceptId": "dynamic-equilibrium-and-le-chateliers-principle",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q7(a)",
+  "questionText": "What is meant by a chemical equilibrium? Why is it described as a dynamic state? State Le Châtelier’s principle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "state in which rate of forward reaction is equal to rate of reverse reaction / state reached at which concentrations of reactants and products are constant",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow rf = rr or rf = rb.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "both reaction(s) continue(s) / reaction doesn’t stop",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "systems in (at) equilibrium",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "react to oppose (minimise, relieve) applied stress(es) {disturbance(s)}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Instead of ‘stress(es){disturbance(s)}’ accept ‘change in temperature, pressure or number of moles (concentrations)’ if all three {temperature, pressure and moles (concentrations)} are given.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q7-b",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-expression-for-dinitrogen-tetroxide",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q7(b)",
+  "questionText": "Write the equilibrium constant (Kc) expression for the reaction.",
+  "stem": "Consider the following chemical equilibrium established between dinitrogen tetroxide (N₂O₄) and nitrogen dioxide (NO₂) at a certain temperature T.",
+  "figureKey": "chemistry-2017-HL-scheme-q7b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Write the equilibrium constant (Kc) expression for the reaction.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [Do not accept inverted expression.]",
+    "ask": true
+   }
+  ],
+  "questionFigureKey": "chemistry-2017-HL-paper-q7b-print"
+ },
+ {
+  "id": "chem-2017-hl-q7-c",
+  "topicId": "chem-3-3",
+  "conceptId": "equilibrium-concentrations-of-dinitrogen-tetroxide-and-nitrogen-dioxide",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q7(c)",
+  "questionText": "The value of Kc for the reaction at T is 0.2. One mole of pure dinitrogen tetroxide was sealed into a container of fixed 10 litre capacity. Calculate the equilibrium concentration, in moles per litre, of each of the gases at temperature T.",
+  "stem": "Consider the following chemical equilibrium established between dinitrogen tetroxide (N₂O₄) and nitrogen dioxide (NO₂) at a certain temperature T.",
+  "figureKey": "chemistry-2017-HL-scheme-q7c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.05 mol per litre N₂O₄ and 0.1 mol per litre NO₂",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. The scheme prices each of its routes in six steps, (3) each, and adds: [Chemically impossible solution of correct quadratic equation also used to find concentrations, deduct (1) mark.] [Do not award last (6) marks for quadratic equation with two chemically impossible solutions.] [Do not allow mixing and matching of marks within boxes.] [Where inverted Kc expression used, do not award (3) marks for setting up quadratic.]"
+   }
+  ],
+  "notes": "The scheme sets out four boxed routes (2x or y moles of NO₂, in moles per litre or in moles), each six steps priced (3), and adds: [Chemically impossible solution of correct quadratic equation also used to find concentrations, deduct (1) mark.] [Do not award last (6) marks for quadratic equation with two chemically impossible solutions.] [Do not allow mixing and matching of marks within boxes.] [Where inverted K_(c) expression used, do not award (3) marks for setting up quadratic.]",
+  "questionFigureKey": "chemistry-2017-HL-paper-q7c-print"
+ },
+ {
+  "id": "chem-2017-hl-q7-d",
+  "topicId": "chem-3-3",
+  "conceptId": "temperature-and-the-colour-of-the-equilibrium-mixture",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q7(d)",
+  "questionText": "The colour of the equilibrium mixture is paler at 0 °C than at T, where T > 0 °C. Explaining your reasoning, deduce whether the decomposition of dinitrogen tetroxide into nitrogen dioxide is an exothermic or an endothermic reaction.",
+  "stem": "Consider the following chemical equilibrium established between dinitrogen tetroxide (N₂O₄) and nitrogen dioxide (NO₂) at a certain temperature T.",
+  "figureKey": "chemistry-2017-HL-paper-q7-eq",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "low(er) temperature (decrease in temperature) favours (results in, produces more) N₂O₄ {left side, reverse, exothermic (heat producing) reaction} / high(er) temperature would favour (result in, produce more) NO₂ {right side, forward, endothermic (heat absorbing) reaction}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "decomposition endothermic",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Linkage here. EXPLAIN marks only available if DEDUCE marks awarded but order of answering parts unimportant]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q7-e",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-and-the-initial-concentration",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q7(e)",
+  "questionText": "Would there be a change in the value of Kc at T if a different initial concentration of dinitrogen tetroxide were used? Explain your answer.",
+  "stem": "Consider the following chemical equilibrium established between dinitrogen tetroxide (N₂O₄) and nitrogen dioxide (NO₂) at a certain temperature T.",
+  "figureKey": "chemistry-2017-HL-paper-q7-eq",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "no change (effect) / none",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Kc constant at given temperature even if concentrations change / only change in temperature will result in change in Kc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [WOULD and EXPLAIN linked; order of answering parts unimportant; WOULD marks may be awarded if correct response to WOULD is inferred in correct EXPLAIN statement.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q8-a",
+  "topicId": "chem-4-2",
+  "conceptId": "colour-change-oxidising-phenylmethanol-with-manganate-vii",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q8(a)",
+  "questionText": "What is the overall colour change that occurs in the reaction vessel as phenylmethanol is converted to benzoic acid under the conditions given in the scheme? Explain this colour change by reference to the transition metal reagent used.",
+  "stem": "The scheme below shows redox reactions of some organic compounds.",
+  "figureKey": "chemistry-2017-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "colourless to purple (pink) to brown to colourless (white)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WHAT. The scheme sets this twice, the second after \"/\", bolding \"purple (pink)\" and \"colourless (white)\" in the first and \"brown to colourless (white)\" in the second."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "MnO₄⁻ {Mn(VII)} changes to / MnO₂ {Mn(IV)} changes to",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "EXPLAIN."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Mn²⁺ {Mn(II)}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow Mn⁷⁺ for Mn(VII) and Mn⁴⁺ for Mn(IV)] [Oxidation of MnO₄⁻ {Mn(VII), Mn⁷⁺} instead of reduction not acceptable.] [WHAT and EXPLAIN linked]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q8-a-i",
+  "topicId": "chem-4-2",
+  "conceptId": "bonds-broken-in-phenylmethanol",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q8(a)(i)",
+  "questionText": "that are broken in phenylmethanol,",
+  "stem": "The scheme below shows redox reactions of some organic compounds. What is the overall colour change that occurs in the reaction vessel as phenylmethanol is converted to benzoic acid under the conditions given in the scheme? Explain this colour change by reference to the transition metal reagent used. Copy the structures of phenylmethanol and benzoic acid into your answerbook and mark clearly the bond(s) involving carbon in this oxidation reaction",
+  "figureKey": "chemistry-2017-HL-scheme-q8a-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "that are broken in phenylmethanol,",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "questionFigureKey": "chemistry-2017-HL-paper-q8a-i-print"
+ },
+ {
+  "id": "chem-2017-hl-q8-a-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "bonds-formed-in-benzoic-acid",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q8(a)(ii)",
+  "questionText": "that are formed in benzoic acid.",
+  "stem": "The scheme below shows redox reactions of some organic compounds. What is the overall colour change that occurs in the reaction vessel as phenylmethanol is converted to benzoic acid under the conditions given in the scheme? Explain this colour change by reference to the transition metal reagent used. Copy the structures of phenylmethanol and benzoic acid into your answerbook and mark clearly the bond(s) involving carbon in this oxidation reaction",
+  "figureKey": "chemistry-2017-HL-scheme-q8a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "that are formed in benzoic acid.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "questionFigureKey": "chemistry-2017-HL-paper-q8a-ii-print"
+ },
+ {
+  "id": "chem-2017-hl-q8-b",
+  "topicId": "chem-4-2",
+  "conceptId": "propanal-and-propanone",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)",
+  "questionText": "Give the IUPAC names for A and B and draw their structures.",
+  "stem": "The scheme below shows redox reactions of some organic compounds.",
+  "figureKey": "chemistry-2017-HL-scheme-q8b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = propanal",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "GIVE. The scheme prices this point and the next (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = propanone",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Correct order essential unless substances clearly labelled A and B.]"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "propanal",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "DRAW: the structure of propanal; the scheme prices the two structures (2 × 3), one each, and sets several forms of each in its table, shown with the answer. It adds: [Aldehyde H must be explicitly shown, other Hs need not be explicit.]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "propanone",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The structure of propanone."
+   }
+  ],
+  "questionFigureKey": "chemistry-2017-HL-paper-q8b-print"
+ },
+ {
+  "id": "chem-2017-hl-q8-c",
+  "topicId": "chem-4-2",
+  "conceptId": "reducing-propanone-to-propan-2-ol",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q8(c)",
+  "questionText": "Identify the reactant and a transition metal catalyst used to reduce B to propan-2-ol.",
+  "stem": "The scheme below shows redox reactions of some organic compounds.",
+  "figureKey": "chemistry-2017-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "hydrogen / H₂",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "nickel (Ni, platinum, Pt, palladium, Pd, copper, Cu, rhodium, Rh, ruthenium, Ru) catalyst",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow any order of response here.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q8-d",
+  "topicId": "chem-4-2",
+  "conceptId": "weak-oxidising-agent-to-tell-aldehyde-from-ketone",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q8(d)",
+  "questionText": "Oxidation of B is very difficult while A can be very readily oxidised with reagents that are weaker than those shown in the scheme. Suggest a weak oxidising reagent – a transition metal compound – that could be used to distinguish between a sample of A and a sample of B.",
+  "stem": "The scheme below shows redox reactions of some organic compounds.",
+  "figureKey": "chemistry-2017-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tollens’ reagent / ammoniacal silver nitrate / silver(I) oxide (Ag₂O) / Fehling’s reagent / Benedict’s reagent / copper(II) hydroxide {Cu(OH)₂}",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q8-e",
+  "topicId": "chem-4-2",
+  "conceptId": "ester-isomer-of-propanoic-acid",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q8(e)",
+  "questionText": "Name an ester that is a structural isomer of propanoic acid. Identify the alcohol and the carboxylic acid used in the synthesis of this ester.",
+  "stem": "The scheme below shows redox reactions of some organic compounds.",
+  "figureKey": "chemistry-2017-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methyl ethanoate / ethyl methanoate",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "NAME. The scheme adds: [Full or condensed ester formula acceptable here. Molecular formula C₃H₆O₂ insufficient.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "methanol / CH₃OH",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "IDENTIFY: the alcohol and the carboxylic acid of the ester named, the first (3) and the second (2). The scheme's table sets methanol and ethanoic acid under methyl ethanoate, and ethanol and methanoic acid under ethyl methanoate. It adds: [NAME and IDENTIFY are linked and IDENTIFY marks only available where NAME marks awarded.] [Alcohol and carboxylic acid may be identified by name, condensed formula or structure.]",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "methanol / CH₃OH",
+      "ethanoic acid / CH₃COOH",
+      "ethanol / C₂H₅OH",
+      "methanoic acid / HCOOH"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q9-a",
+  "topicId": "chem-3-4",
+  "conceptId": "bronsted-lowry-base-and-conjugate-pair",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q9(a)",
+  "questionText": "Define (i) a base, (ii) a conjugate acid-base pair, according to Brønsted-Lowry theory. What is the conjugate acid of H₂O?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "proton (H⁺) acceptor",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. For (i)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "two species that differ by a proton (H⁺)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Examples insufficient on their own.] For (ii)."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "H₃O⁺ / hydronium ion",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "WHAT."
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q9-b",
+  "topicId": "chem-3-4",
+  "conceptId": "definition-of-ph",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)",
+  "questionText": "Define pH.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pH = –log₁₀ [H⁺] / –log₁₀ [H₃O⁺] / minus log base 10 hydrogen ion concentration expressed in moles per litre",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q9-b-i-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "strong-diprotic-and-weak-acids-compared",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(i)–(ii)",
+  "questionText": "(i) of 0.10 M hydrochloric acid and 0.10 M sulfuric acid, (ii) of 0.10 M hydrochloric acid and 0.10 M methanoic acid.",
+  "stem": "The pH values of 0.10 M solutions of sulfuric acid, hydrochloric acid and methanoic acid are 0.70, 1.00 and 2.37 respectively. In terms of hydrogen ions, account for the difference in the pH values",
+  "figureKey": "chemistry-2017-HL-scheme-q9b-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "0.10 M HCl produces 0.10 M H⁺ ion / pH HCl = –log (0.10)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "For (i): \"First (9) marks available from one of the boxes below.\" Either the hydrochloric acid information, or after \"or\" the two points priced (2 × 3), one each (the first box), or the sulfuric acid information (the second box), (6). The second box also accepts, after \"or\", that sulfuric acid is diprotic, priced (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "0.10 M HCl produces 0.10 M H⁺ ion / pH HCl = –log (0.10)",
+      "HCl monoprotic (monobasic) / one molecule HCl produces one H⁺ ion // HCl is strong (fully dissociated into H⁺ ions, a good proton donor)",
+      "0.10 M H₂SO₄ produces 0.20 M H⁺ ion / pH H₂SO₄ = –log (0.20)"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "0.10 M H₂SO₄ produces 0.20 M H⁺ ion / pH H₂SO₄ = –log (0.20) / H₂SO₄ diprotic (dibasic) / one molecule H₂SO₄ produces two H⁺ ions / H₂SO₄ produces (has) more (twice as many) H⁺ ions as HCl",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And, from that same box, the other acid's information, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "0.10 M H₂SO₄ produces 0.20 M H⁺ ion / pH H₂SO₄ = –log (0.20) / H₂SO₄ diprotic (dibasic) / one molecule H₂SO₄ produces two H⁺ ions / H₂SO₄ produces (has) more (twice as many) H⁺ ions as HCl",
+      "0.10 M HCl produces 0.10 M H⁺ ion / pH HCl = –log (0.10)"
+     ]
+    }
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.10 M methanoic acid (HCOOH) solution produces 4.27 × 10⁻³ M (less than 0.10 M) H⁺ ion / pH HCOOH = inverse log (–2.37) {antilog (–2.37)} / HCOOH is weak {slightly (not fully) dissociated into H⁺ ions, a poor proton donor} / HCOOH weaker than HCl",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii): the methanoic acid information. The scheme adds: [Allow ‘hydrochloric’ for HCl, ‘sulfuric’ for H₂SO₄ and ‘methanoic’ for HCOOH. Allow H⁺, proton, H₃O⁺ or hydronium ion for’ hydrogen ion'.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q9-b-iii",
+  "topicId": "chem-3-4",
+  "conceptId": "ka-of-methanoic-acid-from-its-ph",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(iii)",
+  "questionText": "the value of the acid dissociation constant (Ka) for methanoic acid,",
+  "stem": "The pH values of 0.10 M solutions of sulfuric acid, hydrochloric acid and methanoic acid are 0.70, 1.00 and 2.37 respectively. Use the pH value given for 0.10 M methanoic acid to calculate",
+  "figureKey": "chemistry-2017-HL-scheme-q9b-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[H⁺] = inverse log (–2.37) */ antilog (–2.37)* / 4.27 × 10⁻³ / 10^–2.37",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: \"*Omission of minus loses this (3)\""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ka = 1.82 × 10⁻⁴",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme works it from Ka = [H⁺][A⁻] over [HA], set as fractions; its own print is shown with the answer. It adds: \"[acid] = [HA] = [HX] = M = Ma\""
+   }
+  ],
+  "notes": "The scheme gives the answer, Ka = 1.82 × 10⁻⁴, priced (6), then the working that earns it in two steps, (3) each."
+ },
+ {
+  "id": "chem-2017-hl-q9-b-iv",
+  "topicId": "chem-3-4",
+  "conceptId": "ph-of-a-weak-acid-from-ka",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(iv)",
+  "questionText": "the pH of a 0.05 M solution of methanoic acid.",
+  "stem": "The pH values of 0.10 M solutions of sulfuric acid, hydrochloric acid and methanoic acid are 0.70, 1.00 and 2.37 respectively. Use the pH value given for 0.10 M methanoic acid to calculate",
+  "figureKey": "chemistry-2017-HL-scheme-q9b-iv",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pH = 2.52",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer. The scheme works it as minus log of the square root of Ka × [HA], and adds: \"*Omission of minus loses this (3)\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q9-c",
+  "topicId": "chem-3-4",
+  "conceptId": "ph-curve-for-methanoic-acid-and-sodium-hydroxide",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q9(c)",
+  "questionText": "Draw a clear, labelled diagram of the pH curve you would expect to obtain when 50 cm³ of a 0.10 M NaOH solution are added gradually to 25 cm³ of a 0.10 M methanoic acid solution. Name a suitable indicator for a titration between these two solutions. Explain your selection with reference to your pH curve.",
+  "figureKey": "chemistry-2017-HL-scheme-q9c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "axes labelled (pH and volume)",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "DRAW: any three of these, (3) each: \"ANY THREE: (3 × 3)\". The scheme adds: [Allow correct work with volume scale increasing from right to left or pH decreasing on y-axis towards 0.] [Allow volume on y-axis.] Its own curve is shown with the answer.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "axes labelled (pH and volume)",
+      "curve of correct shape with steep rise at 25 cm³",
+      "vertical part mostly above pH = 7",
+      "steep rise coincides with 25 cm³ NaOH"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "phenolphthalein",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "NAME."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "colour change (indicator range) coincides with sharp rise on graph / colour change occurs > 7 /colour change occurs between 7 and 10 / indicator range is 8.3 – 10",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "EXPLAIN. The scheme adds: [NAME and EXPLAIN linked]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-a",
+  "topicId": "chem-u2",
+  "conceptId": "apparatus-for-the-mr-of-a-volatile-liquid",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(a)",
+  "questionText": "A student determined the relative molecular mass of a volatile liquid by vaporising a known mass of the liquid at a known temperature and pressure. Draw a large, clearly-labelled diagram of an apparatus that could have been used in this experiment.",
+  "figureKey": "chemistry-2017-HL-scheme-q10a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "conical flask containing vapour (liquid)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Any four points of the one method drawn, the first (4) and the others (2) each: \"ANY FOUR POINTS: 4 + (3 × 2)\". The first six are for a flask in boiling water; the scheme sets the last five, for a gas syringe, after \"or\". It adds: [At least one correct label essential; unlabelled diagram maximum (3 × 2).] [No diagram = maximum (3 × 2).] [Syringes should be recognisable; injection shown or mentioned.] Its own drawings of both are shown with the answer.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "conical flask containing vapour (liquid)",
+      "aluminium foil lid with pinhole (bung with small hole)",
+      "rubber band (only acceptable with the foil option)",
+      "immersed in beaker of boiling (hot) water",
+      "thermometer (temperature probe, temperature sensor) shown in water",
+      "heat source / symbol for heat source",
+      "vapour in gas syringe",
+      "liquid injected into large syringe via rubber seal",
+      "by needle of small syringe",
+      "gas syringe in oven (water bath, steam jacket) / heat source indicated",
+      "thermometer (temperature probe, temperature sensor) shown in oven (water bath, steam jacket)"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
+      2,
+      2
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-a-i",
+  "topicId": "chem-2-3",
+  "conceptId": "moles-of-vapour-from-the-ideal-gas-equation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(a)(i)",
+  "questionText": "Calculate the number of moles of vapour present.",
+  "stem": "A student determined the relative molecular mass of a volatile liquid by vaporising a known mass of the liquid at a known temperature and pressure. The student recorded that 0.28 g of the volatile liquid occupied a volume of 268 cm³ when vapourised at a temperature of 98 °C and at a pressure of 101 kPa.",
+  "figureKey": "chemistry-2017-HL-scheme-q10a-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the number of moles of vapour present.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme's answer and working are set in an equation font its text cannot carry; its own print is shown with the answer. It prices the answer (9), from the ideal gas equation or from the combined gas law, the working (6) and the moles (3) in each route, and adds: [Treat an incorrect multiple of any of the possible answers allowed by the range above as a mathematical slip. Treat use of temperature in °C as another slip.]",
+    "ask": true
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-a-ii",
+  "topicId": "chem-2-3",
+  "conceptId": "relative-molecular-mass-of-the-volatile-liquid",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(a)(ii)",
+  "questionText": "Find, correct to the nearest whole number, the relative molecular mass of the volatile liquid.",
+  "stem": "A student determined the relative molecular mass of a volatile liquid by vaporising a known mass of the liquid at a known temperature and pressure. The student recorded that 0.28 g of the volatile liquid occupied a volume of 268 cm³ when vapourised at a temperature of 98 °C and at a pressure of 101 kPa.",
+  "figureKey": "chemistry-2017-HL-scheme-q10a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.28 ÷ 8.787 × 10⁻³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme opens with n = m over Mr, or Mr = m over n. The scheme prints 0.28 over 8.787 × 10⁻³ as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "31.9 = 32",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept 32 or 31] \"Deduct 1 mark if answer not rounded correctly to a whole number. No penalty if relative molecular mass is given units of mass.\""
+   }
+  ],
+  "notes": "The scheme gives the answer, 32 or 31, priced (6), then the two steps that earn it, (3) each."
+ },
+ {
+  "id": "chem-2017-hl-q10-b",
+  "topicId": "chem-1-2",
+  "conceptId": "what-an-alpha-particle-is",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(b)",
+  "questionText": "What is an alpha particle?",
+  "figureKey": "chemistry-2017-HL-scheme-q10b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "helium (He) nucleus",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any one of these, the scheme setting each after \"/\" and, before He²⁺, the helium nucleus written with its mass and atomic numbers; its own print is shown with the answer. It prices the answer (6).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "helium (He) nucleus",
+      "particle consisting of two protons and two neutrons",
+      "He²⁺"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-b-i",
+  "topicId": "chem-1-2",
+  "conceptId": "rutherfords-expected-result",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(b)(i)",
+  "questionText": "On the basis of this understanding of atomic structure, what result was expected by Rutherford when thin gold foil was first bombarded with alpha particles in 1909?",
+  "stem": "Before 1909 an atom was thought to consist of a sphere of positive matter with a number of small, negatively-charged electrons embedded in it, as illustrated.",
+  "figureKey": "chemistry-2017-HL-paper-q10b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "alpha particles were expected to pass straight through / alpha particles passing through expected to be undeflected (no more than slightly deflected) / small angles of deflection (repulsion) for some alpha particles passing through",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Reference to ‘large angles’ or ‘straight back’ contradicts another correct statement.] The scheme adds, under (iii): [Marks in (i), (ii), and (iii) are available for separate, clear, labelled diagrams.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-b-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "rutherfords-actual-result",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(b)(ii)",
+  "questionText": "How did the actual result of this experiment differ from the expected result?",
+  "stem": "Before 1909 an atom was thought to consist of a sphere of positive matter with a number of small, negatively-charged electrons embedded in it, as illustrated.",
+  "figureKey": "chemistry-2017-HL-paper-q10b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "some (a few) alpha particles were deflected (repelled) at large angles",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a few (some) alpha particles were reflected (deflected back, repelled back along original path)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds, under (iii): [Marks in (i), (ii), and (iii) are available for separate, clear, labelled diagrams.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-b-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "the-nuclear-model-of-the-atom",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(b)(iii)",
+  "questionText": "How was the model of atomic structure changed as a result?",
+  "stem": "Before 1909 an atom was thought to consist of a sphere of positive matter with a number of small, negatively-charged electrons embedded in it, as illustrated.",
+  "figureKey": "chemistry-2017-HL-paper-q10b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "large electron cloud surrounding / atoms mostly empty space with",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "small (dense)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 2], one each."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "nucleus / positive core (centre)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme adds: [Marks in (i), (ii), and (iii) are available for separate, clear, labelled diagrams.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-c-i",
+  "topicId": "chem-4-2",
+  "conceptId": "ionic-addition-of-hydrogen-chloride-to-ethene",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(c)(i)",
+  "questionText": "What is the product of the reaction of hydrogen chloride and ethene? Name and describe the mechanism for this reaction.",
+  "figureKey": "chemistry-2017-HL-scheme-q10c-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "monochloroethane / 1-chloroethane / ethyl chloride / C₂H₅Cl",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "WHAT."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ionic addition / electrophilic addition",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "NAME."
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "polar bond in hydrogen chloride breaks into ions / hydrogen chloride undergoes heterolytic fission / HCl → H⁺ + (and) Cl⁻",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "DESCRIBE, \"(3 × 3)\": the first step of the one description given. The scheme sets three, the second and third each after \"or\", each with its diagrams, which earn the same marks; its own print is shown with the answer.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "polar bond in hydrogen chloride breaks into ions / hydrogen chloride undergoes heterolytic fission / HCl → H⁺ + (and) Cl⁻",
+      "hydrogen of hydrogen chloride approaches double bond end-on / hydrogen chloride (HCl) highly polarised with hydrogen nearest double bond / hydrogen chloride (HCl) becomes (→) Hδ+—Clδ– with hydrogen nearest double bond / partially charged hydrogen atom (Hδ)+ from HCl is attracted to double bond",
+      "polar bond in hydrogen chloride breaks into ions / HCl → H⁺ + (and) Cl⁻"
+     ]
+    }
+   },
+   {
+    "id": "r-4",
+    "kind": "anyN",
+    "verbatim": "double bond in ethene breaks with H⁺ adding to (with H⁺ forming a bond with) one carbon atom giving carbononium ion (carbocation, C⁺, intermediate) / double bond breaks and new C-H bond formed with H⁺, giving carbonium ion (carbocation, C⁺, intermediate)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The second step, as that same description sets it (3). The third description prices this step and the last together, (6): claim it here and again below.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "double bond in ethene breaks with H⁺ adding to (with H⁺ forming a bond with) one carbon atom giving carbononium ion (carbocation, C⁺, intermediate) / double bond breaks and new C-H bond formed with H⁺, giving carbonium ion (carbocation, C⁺, intermediate)",
+      "double bond breaks and new C-H bond formed (with H⁺ adding) giving carbononium ion (carbocation, C⁺, intermediate) and Cl⁻ / double bond breaks and new C-H bond formed, giving carbonium ion (carbocation, C⁺, intermediate) and Cl⁻",
+      "double bond breaks with H⁺ adding to ethene and simultaneous (followed very rapidly by) breaking of bond in nearby HCl molecule to then allow addition of Cl⁻ giving product (chloroethane) and regenerating a H⁺"
+     ]
+    }
+   },
+   {
+    "id": "r-5",
+    "kind": "anyN",
+    "verbatim": "addition of Cl⁻ to carbonium ion (carbocation, C⁺, intermediate) gives product (chloroethane)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The last step (3); the first two descriptions set it in the same words. The scheme adds: [Allow cyclic carbocation.] [Marks available for diagrams, allow correct use of curly arrows (but not half-arrows (fishhooks).] [Deduct (3) marks for each of the following errors: H⁺—Cl⁻, addition of Clδ– instead of Cl⁻ in third step, each reference to radicals, reference to Cl⁻ adding first and H⁺ adding in third step.]",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "addition of Cl⁻ to carbonium ion (carbocation, C⁺, intermediate) gives product (chloroethane)",
+      "double bond breaks with H⁺ adding to ethene and simultaneous (followed very rapidly by) breaking of bond in nearby HCl molecule to then allow addition of Cl⁻ giving product (chloroethane) and regenerating a H⁺"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-c-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "geometry-around-carbon-in-ethene-and-chloroethane",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(c)(ii)",
+  "questionText": "How does the geometry around the carbon atoms differ between ethene and the product molecule?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "planar around carbons in ethene to",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "tetrahedral around carbons in chloroethane",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Take order of question unless geometries clearly assigned to ethene and chloroethane]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q10-c-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "chloroethane-from-ethane",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q10(c)(iii)",
+  "questionText": "How could the same product be formed from ethane?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chlorine (Cl₂) / chlorination",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ultraviolet (uv) light",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow 3 for ‘free radical substitution’ or ‘radical chlorination’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-a-i",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-azurite-containing-a-mass-of-copper",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(a)(i)",
+  "questionText": "What mass of pure azurite contains 3.81 g copper?",
+  "stem": "Some of the blue pigment azurite used by an artist in a picture painted in 1600 has changed over the years into green malachite according to the following balanced equation. Analysis shows that the only copper-containing pigments in the painting are azurite and malachite and that the picture now contains 3.81 g of copper.",
+  "figureKey": "chemistry-2017-HL-scheme-q11a-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mr azurite = 344.5*",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "3.81 ÷ 63.5 = 0.06 moles Cu ⇒ 0.02 (1/50) moles azurite",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 3.81 over 63.5 as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "m = 6.89 g azurite",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme opens this step with m over 344.5 = 0.02 moles. It adds: [*Addition must be shown for error to be treated as slip.] The scheme gives the answer as \"6.8896 – 6.89 g azurite\" (9), and accepts two other routes; its own print of every route is shown with the answer."
+   }
+  ],
+  "notes": "The scheme gives the answer, 6.8896 – 6.89 g azurite, priced (9), then three boxed routes of three steps (3) each; the steps here are its first route, and its own print of every route is shown with the answer.",
+  "questionFigureKey": "chemistry-2017-HL-paper-q11a-i-print"
+ },
+ {
+  "id": "chem-2017-hl-q11-a-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-malachite-formed-from-azurite",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(a)(ii)",
+  "questionText": "Calculate the maximum mass of malachite that will eventually be formed from this mass of azurite.",
+  "stem": "Some of the blue pigment azurite used by an artist in a picture painted in 1600 has changed over the years into green malachite according to the following balanced equation. Analysis shows that the only copper-containing pigments in the painting are azurite and malachite and that the picture now contains 3.81 g of copper.",
+  "figureKey": "chemistry-2017-HL-scheme-q11a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mr malachite = 221**",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.06 moles Cu or 0.02 moles azurite ⇒ 0.03 (3/100) moles malachite",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.03 × 221 = 6.63 g malachite",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [**Addition must be shown for error to be treated as slip.] [Where candidate’s work clearly shows one incorrect Ar used to get Mr of azurite and Mr of malachite consistent with this error, award no marks for Mr of azurite and apply slip (–1) for the error in Mr of malachite.] The scheme gives the answer as \"6.63 g malachite\" (9), and accepts two other routes; its own print of every route is shown with the answer."
+   }
+  ],
+  "notes": "The scheme gives the answer, 6.63 g malachite, priced (9), then three boxed routes of three steps (3) each; the steps here are its first route.",
+  "questionFigureKey": "chemistry-2017-HL-paper-q11a-ii-print"
+ },
+ {
+  "id": "chem-2017-hl-q11-a-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "volume-of-carbon-dioxide-released",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(a)(iii)",
+  "questionText": "What is the volume, measured at s.t.p., of carbon dioxide that would be released from the painting in the formation of this mass of malachite?",
+  "stem": "Some of the blue pigment azurite used by an artist in a picture painted in 1600 has changed over the years into green malachite according to the following balanced equation. Analysis shows that the only copper-containing pigments in the painting are azurite and malachite and that the picture now contains 3.81 g of copper.",
+  "figureKey": "chemistry-2017-HL-scheme-q11a-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.01 (1/100) moles CO₂ gas",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.01 × 22.4 = 0.224 litres / 224 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.224 litres / 224 cm³, priced [6], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer.",
+  "questionFigureKey": "chemistry-2017-HL-paper-q11a-iii-print"
+ },
+ {
+  "id": "chem-2017-hl-q11-a-iv",
+  "topicId": "chem-1-4",
+  "conceptId": "slowing-the-deterioration-of-a-painting",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(a)(iv)",
+  "questionText": "Suggest a way that further deterioration of the painting by this chemical reaction could be prevented or delayed.",
+  "stem": "Some of the blue pigment azurite used by an artist in a picture painted in 1600 has changed over the years into green malachite according to the following balanced equation. Analysis shows that the only copper-containing pigments in the painting are azurite and malachite and that the picture now contains 3.81 g of copper.",
+  "figureKey": "chemistry-2017-HL-paper-q11a-eq",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "keep it dry / low humidity / use waterproof varnish (coating) / keep it cool / protect from heat / protect from light",
+    "marks": 1,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-b",
+  "topicId": "chem-2-1",
+  "conceptId": "definition-of-electronegativity",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b)",
+  "questionText": "Define electronegativity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "number expressing the relative attraction of an atom for / measure of tendency for atom to attract",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "shared pair(s) of electrons / electrons in a covalent bond / bonding pair of electrons",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-b-i",
+  "topicId": "chem-2-1",
+  "conceptId": "dot-and-cross-diagram-of-nitrogen-trifluoride",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b)(i)",
+  "questionText": "nitrogen trifluoride (NF₃),",
+  "stem": "Draw dot and cross diagrams to show the bonding in a molecule of",
+  "figureKey": "chemistry-2017-HL-scheme-q11b-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "NF₃",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Its dot and cross diagram, drawn; the scheme draws it two ways, shown with the answer. It adds: [Only bond pairs required for each molecule.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-b-ii",
+  "topicId": "chem-2-1",
+  "conceptId": "dot-and-cross-diagram-of-boron-trifluoride",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b)(ii)",
+  "questionText": "boron trifluoride (BF₃),",
+  "stem": "Draw dot and cross diagrams to show the bonding in a molecule of",
+  "figureKey": "chemistry-2017-HL-scheme-q11b-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "BF₃",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Its dot and cross diagram, drawn; the scheme draws it two ways, shown with the answer. It adds: [Only bond pairs required for each molecule.] [BF₃ ionic unacceptable but cancellation not applied.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-b-iii",
+  "topicId": "chem-2-1",
+  "conceptId": "dot-and-cross-diagram-of-chlorine-monofluoride",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b)(iii)",
+  "questionText": "chlorine monofluoride (ClF).",
+  "stem": "Draw dot and cross diagrams to show the bonding in a molecule of",
+  "figureKey": "chemistry-2017-HL-scheme-q11b-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ClF",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Its dot and cross diagram, drawn; the scheme draws it two ways, shown with the answer. It adds: [Only bond pairs required for each molecule.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-b-after-iii",
+  "topicId": "chem-2-2",
+  "conceptId": "shape-of-boron-trifluoride",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b) — after (iii)",
+  "questionText": "Use electron pair repulsion theory to predict the shape of a molecule of boron trifluoride.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "trigonal (triangular) planar",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "USE. The scheme adds: [Diagram alone insufficient, name essential]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-b-iv",
+  "topicId": "chem-2-1",
+  "conceptId": "partial-charges-in-chlorine-monofluoride",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b)(iv)",
+  "questionText": "indicate on your bonding diagram for chlorine monofluoride any full or partial charges that you would expect to result from the formation of the bond between chlorine and fluorine,",
+  "stem": "Use electronegativity values to",
+  "figureKey": "chemistry-2017-HL-scheme-q11b-iv",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "partial positive charge on chlorine",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 2], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "partial negative charge on fluorine",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme adds: [See original diagram in (iii) above or accept new diagram; only bond pair required.] [Full charges not acceptable.] The scheme marks the charges on its two diagrams; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-b-v",
+  "topicId": "chem-2-1",
+  "conceptId": "polar-covalent-bond-in-chlorine-monofluoride",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(b)(v)",
+  "questionText": "predict the type of bonding in chlorine monofluoride.",
+  "stem": "Use electronegativity values to",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "polar covalent",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-a-i",
+  "topicId": "chem-u3",
+  "conceptId": "uses-of-nitrogen",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)A(i)",
+  "questionText": "Give two major uses of nitrogen.",
+  "stem": "Oxygen (O₂) and nitrogen (N₂) are separated industrially by the fractional distillation of liquefied air in a column like that shown.",
+  "figureKey": "chemistry-2017-HL-paper-q11c-a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "packaging food to prevent oxidation (keep food fresh)",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Any two of these, the first (4) and the second (3): \"ANY TWO: (4 + 3)\". The scheme ends its list with \"etc\".",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "packaging food to prevent oxidation (keep food fresh)",
+      "packaging to prevent crushing of food (delicate items)",
+      "flushing (purging) tanks of flammable liquids (gases, vapours)",
+      "freezing (preserving) food (biological specimens, sperm, semen)",
+      "remove unwanted skin cells",
+      "remove skin cancer (warts, verrucae)",
+      "feedstock for ammonia (fertilizer) industry"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-a-ii",
+  "topicId": "chem-u3",
+  "conceptId": "components-removed-from-air-before-distillation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)A(ii)",
+  "questionText": "Name two components of the air feedstock that are removed prior to fractional distillation.",
+  "stem": "Oxygen (O₂) and nitrogen (N₂) are separated industrially by the fractional distillation of liquefied air in a column like that shown.",
+  "figureKey": "chemistry-2017-HL-paper-q11c-a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "carbon dioxide",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow CO₂ and H₂O.] Any two of these, (3) each: \"ANY TWO: (2 × 3)\".",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "carbon dioxide",
+      "water vapour",
+      "dust",
+      "oil particles"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-a-iii",
+  "topicId": "chem-u3",
+  "conceptId": "liquefying-air",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)A(iii)",
+  "questionText": "Explain how the air intake is liquefied prior to fractional distillation.",
+  "stem": "Oxygen (O₂) and nitrogen (N₂) are separated industrially by the fractional distillation of liquefied air in a column like that shown.",
+  "figureKey": "chemistry-2017-HL-paper-q11c-a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "cooled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One of these wordings, the scheme setting the second after \"or\"; it prices the two points of each (2 × 3), one each.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "cooled",
+      "compressed (placed under pressure)"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "compressed (placed under pressure)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "And the second point of that same wording, (3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "compressed (placed under pressure)",
+      "and allowed to expand"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-a-iv",
+  "topicId": "chem-u3",
+  "conceptId": "which-product-has-the-lower-boiling-point",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)A(iv)",
+  "questionText": "Which of the products, A or B, has the lower boiling point?",
+  "stem": "Oxygen (O₂) and nitrogen (N₂) are separated industrially by the fractional distillation of liquefied air in a column like that shown.",
+  "figureKey": "chemistry-2017-HL-paper-q11c-a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-a-v",
+  "topicId": "chem-u3",
+  "conceptId": "which-product-is-oxygen",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)A(v)",
+  "questionText": "Which of the products, A or B, is oxygen?",
+  "stem": "Oxygen (O₂) and nitrogen (N₂) are separated industrially by the fractional distillation of liquefied air in a column like that shown.",
+  "figureKey": "chemistry-2017-HL-paper-q11c-a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-b-i",
+  "topicId": "chem-4-2",
+  "conceptId": "addition-polymerisation-of-ethene",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)B(i)",
+  "questionText": "Draw structures to show the differences that occur in the bonding in three ethene molecules when they undergo addition polymerisation and become part of a poly(ethene) chain.",
+  "figureKey": "chemistry-2017-HL-scheme-q11c-b-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw structures to show the differences that occur in the bonding in three ethene molecules when they undergo addition polymerisation and become part of a poly(ethene) chain.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The three ethene molecules, drawn, (6): the scheme answers with its drawings, shown with the answer.",
+    "ask": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Three repeating units of poly(ethene), i.e. six carbons in a chain, two hydrogen atoms attached to each carbon, single bonds.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The chain, drawn, (4). The scheme adds: [End bonds not required.] [Where 2 ethenes make a carbon chain with four carbon atoms, award (3) for ethenes and (2) for chain.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-b-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "ldpe-and-hdpe-compared",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)B(ii)",
+  "questionText": "Give two differences in properties, other than the difference in density, between LDPE or low-density poly(ethene) and HDPE or high-density poly(ethene).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "more branched",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Any two of these, for LDPE, the first (6) and the second (3): \"ANY TWO: (6 + 3)\". The scheme adds: [Accept equivalent opposites about HDPE]",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "more branched",
+      "lower melting point",
+      "shorter chain length",
+      "softer (more flexible, not as strong)"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2017-hl-q11-c-b-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "conditions-for-making-ldpe-and-hdpe",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2017 HL Q11(c)B(iii)",
+  "questionText": "LDPE was first synthesised industrially in 1933 but HDPE was not produced until the early 1950s. What were the differences between the conditions used for the production of LDPE and HDPE?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HDPE: organometallic (Ziegler-Natta) catalyst",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "LDPE: high(er) pressure(s) / LDPE: high(er) temperature(s) / HDPE: low(er) temperature(s) / HDPE: low(er) pressure(s)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
  }
 ]
