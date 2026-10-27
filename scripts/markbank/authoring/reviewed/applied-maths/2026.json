@@ -1,0 +1,3963 @@
+{
+  "subjectId": "applied-mathematics",
+  "year": 2026,
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Visual sweep of both English-version question papers and written marking-scheme pages, cross-checked at each published task and tariff. PDF coordinates are locators, not evidence of task completeness.",
+  "papers": [
+    {
+      "level": "higher",
+      "paperSha256": "892ba8fa21c61c94bead0fef2ed8e184c3e283cf967ca3809dd5805ef3f4cc6c",
+      "schemeSha256": "41a364fcf32f1e04d2d3a32cdb7f292c3f9eb39b14e1cdefb9b3a719ead79ec7",
+      "questionPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        26,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "printedTaskCount": 45,
+      "practiceTaskCount": 45,
+      "availableMarks": 500,
+      "tasks": [
+        {
+          "ref": "Q1(a)(i)",
+          "idSuffix": "1-a-i",
+          "questionText": "Use an appropriate algorithm to find the minimum spanning tree for the network. Name the algorithm you used. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-2",
+          "paperPages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.386128
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                5,
+                10,
+                15
+              ],
+              "guidance": "15: correct; 10: one systemic error; 5: two systemic errors or a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ]
+        },
+        {
+          "ref": "Q1(a)(ii)",
+          "idSuffix": "1-a-ii",
+          "questionText": "Use Dijkstra’s algorithm to find the shortest path from L to S. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-3",
+          "paperPages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.386,
+            0.93,
+            0.638884
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                5,
+                10,
+                15
+              ],
+              "guidance": "15: correct; 10: one systemic error; 5: two systemic errors or a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs",
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-optimal-critical-paths",
+              "date": "2026-10-11",
+              "evidence": "Paper 1(a)(ii): \"Use Dijkstra's algorithm to find the shortest path from L to S\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
+        },
+        {
+          "ref": "Q1(a)(iii)",
+          "idSuffix": "1-a-iii",
+          "questionText": "On average, the caretaker takes 20 s to check each classroom. The caretaker checks every classroom by leaving the staffroom and using the minimum spanning tree. He then returns to the staffroom. Calculate the minimum total time taken.",
+          "topicId": "applied-mathematics-1-2",
+          "paperPages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.636508,
+            0.93,
+            0.751947
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ]
+        },
+        {
+          "ref": "Q1(b)(i)",
+          "idSuffix": "1-b-i",
+          "questionText": "Calculate U₁ and U₂.",
+          "topicId": "applied-mathematics-3-1",
+          "paperPages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.119976
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q1(b)(ii)",
+          "idSuffix": "1-b-ii",
+          "questionText": "Show that Uₙ = (13/2)3ⁿ − n − 3/2 is a solution to the difference equation Uₙ₊₁ = 3Uₙ + 2n + 2.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.075,
+            0.117601,
+            0.93,
+            0.221104
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q2(i)",
+          "idSuffix": "2-i",
+          "questionText": "Draw a diagram of a directed graph to show the scheduling network for the assembly of a fan. The edges of your network should be drawn with non-dashed lines and labelled with the letters A to G. In addition, you may draw unlabelled edges (shown with dashed lines) to help explain the order in which the activities must happen.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            7,
+            8,
+            9
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.24867
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q2(ii)",
+          "idSuffix": "2-ii",
+          "questionText": "Draw a diagram showing all the forces acting on the mass when it is in motion.",
+          "topicId": "applied-mathematics-2-3",
+          "paperPages": [
+            7,
+            8,
+            9
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.075,
+            0.249,
+            0.93,
+            0.412423
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(iii)",
+          "idSuffix": "2-iii",
+          "questionText": "Show that the motion of the mass may be modelled by the differential equation v(dv/dx) = 16.79 − 3x, where v is the velocity of the mass when its displacement is x.",
+          "topicId": "applied-mathematics-3-3",
+          "paperPages": [
+            7,
+            8,
+            9
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.075,
+            0.4125,
+            0.93,
+            0.471639
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(iv)",
+          "idSuffix": "2-iv",
+          "questionText": "Calculate v in terms of x.",
+          "topicId": "applied-mathematics-3-4",
+          "paperPages": [
+            7,
+            8,
+            9
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.075,
+            0.469264,
+            0.93,
+            0.596698
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q2(v)",
+          "idSuffix": "2-v",
+          "questionText": "Calculate the maximum velocity of the mass.",
+          "topicId": "applied-mathematics-2-1",
+          "paperPages": [
+            7,
+            8,
+            9
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.075,
+            0.594323,
+            0.93,
+            0.664655
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(i)",
+          "idSuffix": "3-i",
+          "questionText": "Draw separate diagrams to show the forces acting on particle A and particle B when they are in motion and before particle B collides with C.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.215534
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(ii)",
+          "idSuffix": "3-ii",
+          "questionText": "Calculate the acceleration of particle A and particle B before particle B collides with C.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.2155,
+            0.93,
+            0.30924
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(iii)",
+          "idSuffix": "3-iii",
+          "questionText": "Calculate the velocity of particle A after it has fallen through 1.25 m.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.306865,
+            0.93,
+            0.402874
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(iv)",
+          "idSuffix": "3-iv",
+          "questionText": "Calculate the velocity of the system immediately after particle B collides with C.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.400499,
+            0.93,
+            0.472494
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions",
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(v)",
+          "idSuffix": "3-v",
+          "questionText": "Calculate the time taken for particle A to pass its original position after particle B collides with and sticks to C.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.470119,
+            0.93,
+            0.567601
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(i)",
+          "idSuffix": "4-i",
+          "questionText": "Calculate, in terms of e, the velocity of B₁ and the velocity of B₂ after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.160166
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ]
+        },
+        {
+          "ref": "Q4(ii)",
+          "idSuffix": "4-ii",
+          "questionText": "Show that e = 2/7.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.157791,
+            0.93,
+            0.242969
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ]
+        },
+        {
+          "ref": "Q4(iii)",
+          "idSuffix": "4-iii",
+          "questionText": "Calculate the speed of B₁ and the speed of B₂ after they collide.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.240594,
+            0.93,
+            0.374727
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ]
+        },
+        {
+          "ref": "Q4(iv)",
+          "idSuffix": "4-iv",
+          "questionText": "Calculate the angle through which B₁ is deflected as a result of the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.372352,
+            0.93,
+            0.445498
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ]
+        },
+        {
+          "ref": "Q5(i)",
+          "idSuffix": "5-i",
+          "questionText": "Draw a diagram showing all the forces acting on the particle when it is in motion.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.229359
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(ii)",
+          "idSuffix": "5-ii",
+          "questionText": "Calculate, in terms of v, the reaction force between the particle and the table.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.226983,
+            0.93,
+            0.334537
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(iii)",
+          "idSuffix": "5-iii",
+          "questionText": "Show that the particle will remain in contact with the table if v ≤ 3√(2g)/4.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.332162,
+            0.93,
+            0.421544
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(iv)",
+          "idSuffix": "5-iv",
+          "questionText": "Show that the speed of the particle at Y is 7√(cos β − sin α).",
+          "topicId": "applied-mathematics-2-6",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.419169,
+            0.93,
+            0.509691
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion",
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(v)",
+          "idSuffix": "5-v",
+          "questionText": "Calculate, in terms of α and β, the tension in the string when the particle is at Y.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.507316,
+            0.93,
+            0.581605
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(a)",
+          "idSuffix": "6-a",
+          "questionText": "Solve this differential equation to find an expression for v in terms of s.",
+          "topicId": "applied-mathematics-3-4",
+          "paperPages": [
+            22,
+            24
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.275321
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 6",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+              "date": "2026-10-11",
+              "evidence": "Scheme 6(a): substitution \"u = 3v^2 + 4\".",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
+        },
+        {
+          "ref": "Q6(b)",
+          "idSuffix": "6-b",
+          "questionText": "Express t₁ in terms of t₂, u and g.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            22,
+            24
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.272945,
+            0.93,
+            0.417282
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q7(i)",
+          "idSuffix": "7-i",
+          "questionText": "By finding a value for λ, show that Tₙ₊₁ = 0.96Tₙ + 0.8.",
+          "topicId": "applied-mathematics-3-1",
+          "paperPages": [
+            26,
+            27,
+            28
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.137435
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q7(ii)",
+          "idSuffix": "7-ii",
+          "questionText": "Solve this difference equation to find an expression for Tₙ in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            26,
+            27,
+            28
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.135059,
+            0.93,
+            0.219667
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q7(iii)",
+          "idSuffix": "7-iii",
+          "questionText": "Calculate the minimum time, to the nearest minute, that the difference equation predicts that the caramel will take to cool below 80 °C.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            26,
+            27,
+            28
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.217292,
+            0.93,
+            0.295843
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q7(iv)",
+          "idSuffix": "7-iv",
+          "questionText": "Solve the differential equation to find an expression for T in terms of t.",
+          "topicId": "applied-mathematics-3-4",
+          "paperPages": [
+            26,
+            27,
+            28
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.293468,
+            0.93,
+            0.431531
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ]
+        },
+        {
+          "ref": "Q8(a)(i)",
+          "idSuffix": "8-a-i",
+          "questionText": "Express sₙ in terms of u, a and n.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.126532
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q8(a)(ii)",
+          "idSuffix": "8-a-ii",
+          "questionText": "Express Dₙ in terms of u, a and n.",
+          "topicId": "applied-mathematics-3-0",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.124157,
+            0.93,
+            0.210903
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q8(a)(iii)",
+          "idSuffix": "8-a-iii",
+          "questionText": "Derive a difference equation for D, i.e. express Dₙ₊₁ in terms of Dₙ and a.",
+          "topicId": "applied-mathematics-3-0",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.208527,
+            0.93,
+            0.269691
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(b)(i)",
+          "idSuffix": "8-b-i",
+          "questionText": "Solve the difference equation to find an expression for Gₙ in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.267316,
+            0.93,
+            0.460309
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(b)(ii)",
+          "idSuffix": "8-b-ii",
+          "questionText": "Calculate the number of bulbs that are predicted to be harvested in 2028.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.457933,
+            0.93,
+            0.5055
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q9(a)(i)",
+          "idSuffix": "9-a-i",
+          "questionText": "Use integration by parts to show that s = (t³/3)(ln 2t − 1/3).",
+          "topicId": "applied-mathematics-2-1",
+          "paperPages": [
+            34,
+            35,
+            36,
+            37
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.26171
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-integration",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-differential-equations",
+              "date": "2026-10-11",
+              "evidence": "Paper 9(a): velocity \"modelled by the differential equation\" ds/dt = t^2 ln 2t with s = 0 when t = 0.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
+        },
+        {
+          "ref": "Q9(a)(ii)",
+          "idSuffix": "9-a-ii",
+          "questionText": "Calculate the value for t when the particle will next reach P.",
+          "topicId": "applied-mathematics-2-1",
+          "paperPages": [
+            34,
+            35,
+            36,
+            37
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.259335,
+            0.93,
+            0.341805
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-integration",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+          ]
+        },
+        {
+          "ref": "Q9(b)(i)",
+          "idSuffix": "9-b-i",
+          "questionText": "Express v⃗, the velocity of the object at any time t, in terms of ı⃗ and ȷ⃗.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            34,
+            35,
+            36,
+            37
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.33943,
+            0.93,
+            0.393967
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-vectors",
+            "applied-mathematics-higher-projectiles"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-projectiles",
+              "date": "2026-10-11",
+              "evidence": "Paper 9(b): object projected from O with u = 4.9i + 14.7j; (i) velocity at time t.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
+        },
+        {
+          "ref": "Q9(b)(ii)",
+          "idSuffix": "9-b-ii",
+          "questionText": "Express r⃗, the displacement of the object at any time t, in terms of ı⃗ and ȷ⃗.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            34,
+            35,
+            36,
+            37
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.391591,
+            0.93,
+            0.446271
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-vectors",
+            "applied-mathematics-higher-projectiles"
+          ],
+          "topicReviewNotes": [
+            {
+              "added": "applied-mathematics-higher-projectiles",
+              "date": "2026-10-11",
+              "evidence": "Scheme 9(b)(ii): r = 4.9t i + (14.7t - 4.9t^2) j for the projected object.",
+              "source": "StudyClix parity audit; decided from the SEC paper and marking-scheme method"
+            }
+          ]
+        },
+        {
+          "ref": "Q9(b)(iii)",
+          "idSuffix": "9-b-iii",
+          "questionText": "Show that t₂/t₁ = 5/4.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            34,
+            35,
+            36,
+            37
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.443895,
+            0.93,
+            0.586197
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-vectors"
+          ]
+        },
+        {
+          "ref": "Q10(i)",
+          "idSuffix": "10-i",
+          "questionText": "Calculate the early time and the late time for each event. Complete the diagram above by writing the early time (upper box) and late time (lower box) at the node representing each event. Use the space below to show relevant supporting work, if necessary.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            38,
+            39,
+            40
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.461306
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                5,
+                10,
+                15,
+                20
+              ],
+              "guidance": "20: correct; 15: one systemic error; 10: two systemic errors; 5: a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q10(ii)",
+          "idSuffix": "10-ii",
+          "questionText": "Write down the critical path(s) for the network.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            38,
+            39,
+            40
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.075,
+            0.458931,
+            0.93,
+            0.504821
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q10(iii)",
+          "idSuffix": "10-iii",
+          "questionText": "Draw a cascade chart or similar bar chart to represent the schedule for this project.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            38,
+            39,
+            40
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.529715
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                5,
+                10,
+                15
+              ],
+              "guidance": "15: correct; 10: one systemic error; 5: two systemic errors or a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q10(iv)",
+          "idSuffix": "10-iv",
+          "questionText": "Assuming that there are no delays to any activity, calculate the minimum number of workers the hotel manager needs to employ so that this project will finish on time. Justify your answer.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            38,
+            39,
+            40
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.075,
+            0.52734,
+            0.93,
+            0.581948
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q10(v)",
+          "idSuffix": "10-v",
+          "questionText": "If activity B was delayed by 7 hours, what effect would this have on the critical path(s) and on the time it takes to complete the project? Explain your answer.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            38,
+            39,
+            40
+          ],
+          "schemePage": 17,
+          "schemeRegion": [
+            0.075,
+            0.579572,
+            0.93,
+            0.625463
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ]
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Answer any eight questions.",
+          "decision": "Every printed question is included as separately practicable tasks. Whole-examination combinations are not additional tasks."
+        },
+        {
+          "wording": "appropriate algorithm / or otherwise / similar bar chart",
+          "decision": "Open method choices; no finite answer pool is printed and no route multiplication applies."
+        }
+      ],
+      "boundaryReview": "Each printed task remains intact where steps jointly establish one answer. At Ordinary Q3(i), Q3(iii), and Q8(i), independently priced diagrams, tensions and sequence values are separate practice tasks, preserving the shared printed ask and context. All other jointly requested values share a single scheme placement or are intermediates in one calculation.",
+      "selectionDirectives": [
+        {
+          "page": 2,
+          "text": "Answer any eight questions.",
+          "decision": "Outer paper selection; all ten questions are practised separately."
+        }
+      ],
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      },
+      "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
+    },
+    {
+      "level": "ordinary",
+      "paperSha256": "427aea301bdab3225c74ff4bf7dba7f15dc4fcccda2894bb0eb983a81b227c21",
+      "schemeSha256": "8bc68114c103f6ddf57a0b0550d827080ae74cd9423d5beeb03676c96592326b",
+      "questionPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "printedTaskCount": 54,
+      "practiceTaskCount": 58,
+      "availableMarks": 500,
+      "tasks": [
+        {
+          "ref": "Q1(a)",
+          "idSuffix": "1-a",
+          "questionText": "Calculate AB.",
+          "topicId": "applied-mathematics-1-1",
+          "paperPages": [
+            3,
+            4,
+            5
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.131093
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ]
+        },
+        {
+          "ref": "Q1(b)(i)",
+          "idSuffix": "1-b-i",
+          "questionText": "Calculate the speed of P and the speed of Q after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            3,
+            4,
+            5
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.128717,
+            0.93,
+            0.224798
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ]
+        },
+        {
+          "ref": "Q1(b)(ii)",
+          "idSuffix": "1-b-ii",
+          "questionText": "Calculate the fraction of kinetic energy lost due to the collision.",
+          "topicId": "applied-mathematics-2-6",
+          "paperPages": [
+            3,
+            4,
+            5
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.222423,
+            0.93,
+            0.331829
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions",
+            "applied-mathematics-ordinary-work-energy-power-momentum"
+          ]
+        },
+        {
+          "ref": "Q1(b)(iii)",
+          "idSuffix": "1-b-iii",
+          "questionText": "Calculate the impulse imparted on the 40 kg bumper car P.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            3,
+            4,
+            5
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.329454,
+            0.93,
+            0.38399
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ]
+        },
+        {
+          "ref": "Q1(b)(iv)",
+          "idSuffix": "1-b-iv",
+          "questionText": "Show that, after the collision with the wall, the two cars will be travelling at the same speed but in opposite directions.",
+          "topicId": "applied-mathematics-2-4",
+          "paperPages": [
+            3,
+            4,
+            5
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.075,
+            0.381615,
+            0.93,
+            0.451591
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ]
+        },
+        {
+          "ref": "Q2(i)",
+          "idSuffix": "2-i",
+          "questionText": "Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            6,
+            7,
+            8
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.387411
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                9,
+                12,
+                15
+              ],
+              "guidance": "15: correct; 12: one systemic error; 9: two systemic errors; 6: a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q2(ii)",
+          "idSuffix": "2-ii",
+          "questionText": "Write down the critical path for the network.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            6,
+            7,
+            8
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.075,
+            0.385036,
+            0.93,
+            0.439572
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q2(iii)",
+          "idSuffix": "2-iii",
+          "questionText": "Write down the minimum time, in days, to complete the project.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            6,
+            7,
+            8
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.075,
+            0.437197,
+            0.93,
+            0.491805
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q2(iv)",
+          "idSuffix": "2-iv",
+          "questionText": "Calculate the float time for activity B and the float time for activity G.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            6,
+            7,
+            8
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.075,
+            0.48943,
+            0.93,
+            0.587482
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q2(v)",
+          "idSuffix": "2-v",
+          "questionText": "Draw a cascade chart or similar bar chart to represent the schedule for this project.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            6,
+            7,
+            8
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.538979
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                9,
+                12,
+                15
+              ],
+              "guidance": "15: correct; 12: one systemic error; 9: two systemic errors; 6: a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q2(vi)",
+          "idSuffix": "2-vi",
+          "questionText": "An inspection team calls to check the progress of the project at 12 noon on the 18th day. Use your chart, or otherwise, to state the activities that must be happening at that time.",
+          "topicId": "applied-mathematics-1-5",
+          "paperPages": [
+            6,
+            7,
+            8
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.075,
+            0.536603,
+            0.93,
+            0.599952
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q3(i)",
+          "idSuffix": "3-i-4kg",
+          "questionText": "Draw separate diagrams to show the forces acting on each mass when they are moving.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.052,
+            0.93,
+            0.206983
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "practiceFocus": "4 kg mass",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(i)",
+          "idSuffix": "3-i-6kg",
+          "questionText": "Draw separate diagrams to show the forces acting on each mass when they are moving.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.052,
+            0.93,
+            0.206983
+          ],
+          "allocations": [
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "practiceFocus": "6 kg mass",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(i)",
+          "idSuffix": "3-i-10kg",
+          "questionText": "Draw separate diagrams to show the forces acting on each mass when they are moving.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.052,
+            0.93,
+            0.206983
+          ],
+          "allocations": [
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "practiceFocus": "10 kg mass",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(ii)",
+          "idSuffix": "3-ii",
+          "questionText": "Show that the common acceleration of the masses is 2.94 m s⁻².",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.204608,
+            0.93,
+            0.29399
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(iii)",
+          "idSuffix": "3-iii-pulley-string",
+          "questionText": "Calculate the tension in each of the strings.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.291615,
+            0.93,
+            0.363539
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "practiceFocus": "String connecting the 6 kg and 10 kg masses",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(iii)",
+          "idSuffix": "3-iii-table-string",
+          "questionText": "Calculate the tension in each of the strings.",
+          "topicId": "applied-mathematics-2-5",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.291615,
+            0.93,
+            0.363539
+          ],
+          "allocations": [
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "practiceFocus": "String connecting the 4 kg and 6 kg masses",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(iv)",
+          "idSuffix": "3-iv",
+          "questionText": "Calculate the time that it would take for it to hit the ground.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.361164,
+            0.93,
+            0.415772
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q3(v)",
+          "idSuffix": "3-v",
+          "questionText": "Calculate the speed of the 6 kg mass when the 10 kg mass hits the ground.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            9,
+            10,
+            11
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.075,
+            0.413397,
+            0.93,
+            0.476674
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q4(i)",
+          "idSuffix": "4-i",
+          "questionText": "Calculate the acceleration of the tram.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            12,
+            13,
+            14
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.119976
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-linear-motion",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q4(ii)",
+          "idSuffix": "4-ii",
+          "questionText": "Calculate the time that the tram spends decelerating.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            12,
+            13,
+            14
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.117601,
+            0.93,
+            0.172209
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-linear-motion",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q4(iii)",
+          "idSuffix": "4-iii",
+          "questionText": "Calculate the distance for which the tram is travelling at 20 m s⁻¹.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            12,
+            13,
+            14
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.169834,
+            0.93,
+            0.272328
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-linear-motion",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q4(iv)",
+          "idSuffix": "4-iv",
+          "questionText": "Calculate the time for which the tram is travelling at 20 m s⁻¹.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            12,
+            13,
+            14
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.269952,
+            0.93,
+            0.331188
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-linear-motion",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q4(v)",
+          "idSuffix": "4-v",
+          "questionText": "Using the axes below, draw an accurate velocity‐time graph showing the motion of the tram from P to Q.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            12,
+            13,
+            14
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.328812,
+            0.93,
+            0.764584
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-linear-motion",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q4(vi)",
+          "idSuffix": "4-vi",
+          "questionText": "Calculate the new time that would be taken to complete the journey from P to Q.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            12,
+            13,
+            14
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.075,
+            0.762209,
+            0.93,
+            0.860332
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-linear-motion",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ]
+        },
+        {
+          "ref": "Q5(i)",
+          "idSuffix": "5-i",
+          "questionText": "Calculate the initial velocity of the golf ball, in terms of ı⃗ and ȷ⃗.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.137435
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(ii)",
+          "idSuffix": "5-ii",
+          "questionText": "Calculate the time taken for the ball to reach P.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.135059,
+            0.93,
+            0.207126
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(iii)",
+          "idSuffix": "5-iii",
+          "questionText": "Calculate |AB|.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.204751,
+            0.93,
+            0.259287
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(iv)",
+          "idSuffix": "5-iv",
+          "questionText": "Calculate the maximum height of the ball above the ground.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.256912,
+            0.93,
+            0.338741
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q5(v)",
+          "idSuffix": "5-v",
+          "questionText": "Calculate the speed of the ball at P.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            15,
+            16,
+            17
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.075,
+            0.336366,
+            0.93,
+            0.434489
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(i)",
+          "idSuffix": "6-i",
+          "questionText": "While in position A, the ball is given an initial horizontal velocity of 7 m s⁻¹, as shown in the diagram above. Show that the ball will just reach the ceiling.",
+          "topicId": "applied-mathematics-2-6",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.150689
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-work-energy-power-momentum"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(ii)",
+          "idSuffix": "6-ii",
+          "questionText": "Calculate the speed at which the ball strikes the horizontal ceiling.",
+          "topicId": "applied-mathematics-2-6",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.148314,
+            0.93,
+            0.226793
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-work-energy-power-momentum"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(iii)",
+          "idSuffix": "6-iii",
+          "questionText": "Draw a labelled diagram to show the forces acting on the ball.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.224418,
+            0.93,
+            0.331188
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(iv)",
+          "idSuffix": "6-iv",
+          "questionText": "Calculate the radius of the horizontal circle that the ball traces out.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.328812,
+            0.93,
+            0.383349
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(v)",
+          "idSuffix": "6-v",
+          "questionText": "Calculate the tension in the string.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.380974,
+            0.93,
+            0.452969
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q6(vi)",
+          "idSuffix": "6-vi",
+          "questionText": "Calculate ω, the angular velocity of the ball.",
+          "topicId": "applied-mathematics-2-7",
+          "paperPages": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.075,
+            0.450594,
+            0.93,
+            0.531401
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "stem": "Unless otherwise indicated, take g, the acceleration due to gravity, to be 9.8 m s⁻²."
+        },
+        {
+          "ref": "Q7(i)",
+          "idSuffix": "7-i",
+          "questionText": "Show that a⃗=2 ı⃗+5 ȷ⃗.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            22,
+            23,
+            24,
+            25
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.147268
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ]
+        },
+        {
+          "ref": "Q7(ii)",
+          "idSuffix": "7-ii",
+          "questionText": "Calculate a⃗ − b⃗.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            22,
+            23,
+            24,
+            25
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.144893,
+            0.93,
+            0.19943
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ]
+        },
+        {
+          "ref": "Q7(iii)",
+          "idSuffix": "7-iii",
+          "questionText": "Calculate |b⃗|.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            22,
+            23,
+            24,
+            25
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.197055,
+            0.93,
+            0.251663
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ]
+        },
+        {
+          "ref": "Q7(iv)",
+          "idSuffix": "7-iv",
+          "questionText": "Calculate a⃗ · b⃗, the dot product of a⃗ and b⃗.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            22,
+            23,
+            24,
+            25
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.249287,
+            0.93,
+            0.324133
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ]
+        },
+        {
+          "ref": "Q7(v)",
+          "idSuffix": "7-v",
+          "questionText": "Hence, or otherwise, calculate the angle between the two vectors a⃗ and b⃗.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            22,
+            23,
+            24,
+            25
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.321758,
+            0.93,
+            0.397316
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ]
+        },
+        {
+          "ref": "Q7(vi)",
+          "idSuffix": "7-vi",
+          "questionText": "Calculate the value of the scalars q and r such that qa⃗ + rb⃗ = i⃗ + 13j⃗, where q, r ∈ ℤ.",
+          "topicId": "applied-mathematics-2-2",
+          "paperPages": [
+            22,
+            23,
+            24,
+            25
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.075,
+            0.394941,
+            0.93,
+            0.475677
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ]
+        },
+        {
+          "ref": "Q8(i)",
+          "idSuffix": "8-i-m1",
+          "questionText": "Calculate M₁ and M₂.",
+          "topicId": "applied-mathematics-3-1",
+          "paperPages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.137435
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "practiceFocus": "M₁",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(i)",
+          "idSuffix": "8-i-m2",
+          "questionText": "Calculate M₁ and M₂.",
+          "topicId": "applied-mathematics-3-1",
+          "paperPages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.137435
+          ],
+          "allocations": [
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "practiceFocus": "M₂",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(ii)",
+          "idSuffix": "8-ii",
+          "questionText": "Solve the difference equation to find an expression for Mₙ, in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.135059,
+            0.93,
+            0.215677
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(iii)",
+          "idSuffix": "8-iii",
+          "questionText": "Calculate M₆, the population of mice after 6 months.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.213302,
+            0.93,
+            0.267981
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(iv)",
+          "idSuffix": "8-iv",
+          "questionText": "Solve this quadratic equation, i.e. calculate the roots of the equation.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.265606,
+            0.93,
+            0.320214
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(v)",
+          "idSuffix": "8-v",
+          "questionText": "Hence, or otherwise, solve the difference equation to find an expression for Hₙ in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.317838,
+            0.93,
+            0.40715
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q8(vi)",
+          "idSuffix": "8-vi",
+          "questionText": "Calculate H₆, the population of hares after 6 months.",
+          "topicId": "applied-mathematics-3-2",
+          "paperPages": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.075,
+            0.404774,
+            0.93,
+            0.468194
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ]
+        },
+        {
+          "ref": "Q9(a)(i)",
+          "idSuffix": "9-a-i",
+          "questionText": "Use an appropriate algorithm to find the minimum spanning tree for the computer network. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-2",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.374513
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                9,
+                12,
+                15
+              ],
+              "guidance": "15: correct; 12: one systemic error; 9: two systemic errors; 6: a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ]
+        },
+        {
+          "ref": "Q9(a)(ii)",
+          "idSuffix": "9-a-ii",
+          "questionText": "State the name of the algorithm used.",
+          "topicId": "applied-mathematics-1-2",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.372138,
+            0.93,
+            0.426675
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ]
+        },
+        {
+          "ref": "Q9(a)(iii)",
+          "idSuffix": "9-a-iii",
+          "questionText": "Use your minimum spanning tree to calculate the minimum cost of connecting the nine computer terminals.",
+          "topicId": "applied-mathematics-1-2",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.424299,
+            0.93,
+            0.478907
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ]
+        },
+        {
+          "ref": "Q9(b)(i)",
+          "idSuffix": "9-b-i",
+          "questionText": "Use Dijkstra’s algorithm to find the route from A to M that takes the shortest time. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-3",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.476532,
+            0.93,
+            0.765653
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q9(b)(ii)",
+          "idSuffix": "9-b-ii",
+          "questionText": "Calculate the shortest time for the route.",
+          "topicId": "applied-mathematics-1-3",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.763278,
+            0.93,
+            0.817886
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q9(b)(iii)",
+          "idSuffix": "9-b-iii",
+          "questionText": "The bus travels at a constant speed of 25 km hour⁻¹. Calculate the total distance travelled in km from A to M.",
+          "topicId": "applied-mathematics-2-0",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.815511,
+            0.93,
+            0.870048
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-linear-motion"
+          ]
+        },
+        {
+          "ref": "Q9(b)(iv)",
+          "idSuffix": "9-b-iv",
+          "questionText": "On a particular day there is a delay. The time taken to travel from H to K is now 7 minutes. What effect will this have on the shortest time for Amy to travel from A to M?",
+          "topicId": "applied-mathematics-1-3",
+          "paperPages": [
+            30,
+            31,
+            32,
+            33
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.075,
+            0.867672,
+            0.93,
+            0.913563
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q10(a)",
+          "idSuffix": "10-a",
+          "questionText": "Use Bellman’s Principle of Optimality to calculate the minimum cost of the ticket price. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-3",
+          "paperPages": [
+            34,
+            35,
+            36
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.075,
+            0.065439,
+            0.93,
+            0.407862
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                9,
+                18,
+                24,
+                32,
+                35
+              ],
+              "guidance": "35: correct; 32: one systemic error; 24: two systemic errors; 18: three systemic errors; 9: a valid attempt; 0: no credit."
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ]
+        },
+        {
+          "ref": "Q10(b)",
+          "idSuffix": "10-b",
+          "questionText": "Use dimensional analysis (comparison of units) to show the units on either side of the equation are equivalent.",
+          "topicId": "applied-mathematics-2-8",
+          "paperPages": [
+            34,
+            35,
+            36
+          ],
+          "schemePage": 16,
+          "schemeRegion": [
+            0.075,
+            0.405487,
+            0.93,
+            0.486152
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "examTopicIds": [
+            "applied-mathematics-ordinary-dimensional-analysis"
+          ]
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Answer any eight questions.",
+          "decision": "Every printed question is included as separately practicable tasks. Whole-examination combinations are not additional tasks."
+        },
+        {
+          "wording": "appropriate algorithm / or otherwise / similar bar chart",
+          "decision": "Open method choices; no finite answer pool is printed and no route multiplication applies."
+        }
+      ],
+      "boundaryReview": "Each printed task remains intact where steps jointly establish one answer. At Ordinary Q3(i), Q3(iii), and Q8(i), independently priced diagrams, tensions and sequence values are separate practice tasks, preserving the shared printed ask and context. All other jointly requested values share a single scheme placement or are intermediates in one calculation.",
+      "selectionDirectives": [
+        {
+          "page": 2,
+          "text": "Answer any eight questions.",
+          "decision": "Outer paper selection; all ten questions are practised separately."
+        },
+        {
+          "page": 8,
+          "text": "your chart, or otherwise, to state the acƟviƟes that must be happening at that Ɵme.",
+          "decision": "Alternative method wording, not a finite pool of selectable responses."
+        },
+        {
+          "page": 24,
+          "text": "Hence, or otherwise, calculate the angle between the two vectors a⃗ and bሬ⃗.",
+          "decision": "Alternative method wording, not a finite pool of selectable responses."
+        },
+        {
+          "page": 28,
+          "text": "Hence, or otherwise, solve the difference equaƟon to find an expression for H௡ in terms of n.",
+          "decision": "Alternative method wording, not a finite pool of selectable responses."
+        },
+        {
+          "page": 36,
+          "text": "Use dimensional analysis (comparison of units) to show the units on either side of the",
+          "decision": "Either side means both sides of an equation, not a choice."
+        }
+      ],
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      },
+      "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
+    }
+  ]
+}

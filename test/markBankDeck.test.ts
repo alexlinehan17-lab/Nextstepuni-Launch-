@@ -1,3 +1,4 @@
+import { taskGroupsFault } from '../scripts/markbank/taskGroups.mjs';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -54,6 +55,8 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
 import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
 import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
@@ -112,6 +115,8 @@ import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -122,6 +127,7 @@ import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-educ
  *  row caps — which is how cards with 14 and 17 rows reached the deck. Adding a
  *  subject here is a required step of the pipeline, not a follow-up. */
 const SAMPLE_CARDS = [
+  ...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY,
   ...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY,
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
@@ -171,7 +177,7 @@ import {
  * Shrink this list. Do not add to it.
  */
 const KNOWN_OVER_ROW_CAP = new Set([
-  'agsci-2024-hl-q15av', 'agsci-2024-ol-q16b', 'agsci-2024-ol-q17aiii',
+  'agsci-2024-ol-q16b',
 ]);
 
 const ROOT = resolve(__dirname, '..');
@@ -261,7 +267,13 @@ describe('every card traces to the marking scheme on disk', () => {
           // Rows read "Label — answer"; the answer is what the scheme prints.
           : [row.verbatim.split(/\s[—-]\s/).pop() ?? row.verbatim];
         for (const claim of claims) {
-          if (!claimMatches(scheme, claim)) bad.push(`${card.questionRef}: "${claim}"`);
+          // As the build: a menu option pairing a label with its value, read
+          // from a scheme table ("thoracic — 12"), traces when each half does.
+          const halves = row.kind === 'anyN' ? claim.split(/\s—\s/) : [];
+          if (!claimMatches(scheme, claim)
+            && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
+            bad.push(`${card.questionRef}: "${claim}"`);
+          }
         }
       }
     }
@@ -285,11 +297,13 @@ describe('reviewed Construction Studies boundaries stay on their printed tasks',
     expect(card && isPointCard(card)).toBe(true);
     if (!card || !isPointCard(card)) return;
 
+    // Source-reviewed (construction_2017_higher.py): the three printed requirements, note 4 + sketch 4 each.
     expect(card.totalMarks).toBe(24);
-    expect(card.rows).toHaveLength(1);
-    expect(card.rows[0].group).toMatchObject({ claimMax: 3, perOption: 8 });
-    expect(card.rows[0].group?.options).toHaveLength(16);
-    expect(card.rows[0].group?.options.join(' ')).not.toMatch(/Concrete block wall|Positives|Negatives/);
+    expect(card.rows.map(row => [row.verbatim, row.marks])).toEqual(
+      [1, 2, 3].map(i => [`Functional requirement ${i} (Note and Sketch)`, 8]),
+    );
+    expect(card.rows.map(row => `${row.verbatim} ${row.contextNote ?? ''}`).join(' '))
+      .not.toMatch(/Concrete block wall|Positives|Negatives/);
   });
 
   test('2017 OL Q9(c) remains the ten-mark patio question', () => {
@@ -298,11 +312,12 @@ describe('reviewed Construction Studies boundaries stay on their printed tasks',
     expect(card && isPointCard(card)).toBe(true);
     if (!card || !isPointCard(card)) return;
 
+    // Source-reviewed (construction_2017_ordinary.py): the two printed advantages, 5 each.
     expect(card.totalMarks).toBe(10);
     expect(card.questionText).toMatch(/external patio/i);
-    expect(card.rows[0].group).toMatchObject({ claimMax: 2, perOption: 5 });
-    expect(card.rows[0].group?.options).toHaveLength(8);
-    expect(card.rows.map(row => row.verbatim).join(' ')).not.toMatch(/practical project|craft skills|portfolio/i);
+    expect(card.rows.map(row => [row.verbatim, row.marks])).toEqual([['Advantage one', 5], ['Advantage two', 5]]);
+    expect(card.rows.map(row => `${row.verbatim} ${row.contextNote ?? ''}`).join(' '))
+      .not.toMatch(/practical project|craft skills|portfolio/i);
   });
 });
 
@@ -324,6 +339,19 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       for (const row of card.rows) {
+        // A declared criterion row prices a judgement the scheme prints
+        // ("Safety precaution described"); it is exempt from the answer test
+        // but may never be empty, or a tariff written in place of the
+        // criterion that the answer test refuses as well (build-deck's
+        // contentFreeRow). Biology's own rows are held to the tariff test
+        // alone in markBankBiologyReview.test.ts.
+        if (row.kind === 'criterion') {
+          if (!row.verbatim.trim() || (/\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i.test(row.verbatim)
+            && isContentFreeRow(row.verbatim))) {
+            bad.push(`${card.questionRef}: "${row.verbatim}"`);
+          }
+          continue;
+        }
         if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
           bad.push(`${card.questionRef}: "${row.verbatim}"`);
         }
@@ -333,13 +361,13 @@ describe('no card can repeat the fabrication that shipped first time', () => {
   });
 
   test('every card obeys the structural caps and id rules', () => {
-    // The cap depends on the tariff: five REQUIRED rows, but a best-N-of-M card
+    // The cap depends on the tariff: six REQUIRED rows, but a best-N-of-M card
     // may show up to MAX_OPTION_ROWS, because its surplus rows are a menu the
     // student picks from rather than a list they must recall.
     const bad = SAMPLE_CARDS.filter(isPointCard)
       .filter(c => !KNOWN_OVER_ROW_CAP.has(c.id))
       .filter(c => !isValidCardId(c.id) || c.rows.length === 0
-        || c.rows.length > rowCapFor(c.tariffModel.kind))
+        || (c.taskGroups ? taskGroupsFault(c) !== null : c.rows.length > rowCapFor(c.tariffModel.kind)))
       .map(c => `${c.questionRef} (${c.id}, ${c.rows.length} rows, ${c.tariffModel.kind})`);
     expect(bad, show(bad)).toEqual([]);
   });
@@ -453,7 +481,12 @@ describe('every card points at the question paper it came from', () => {
     for (const card of SAMPLE_CARDS) {
       const source = card.sourceMaterial;
       if (!source) continue;
-      const pagesAreValid = source.pages.length > 0
+      // A supplementary reading edition or a linked publisher reading copy is
+      // deliberately NOT a page of the SEC paper (types/markBank.ts): it carries
+      // its verified texts or readings instead, and never a page number.
+      const offPaper = (source.kind === 'supplementary-text' && (source.texts?.length ?? 0) > 0)
+        || (source.kind === 'linked-reading' && (source.readings?.length ?? 0) > 0);
+      const pagesAreValid = offPaper ? source.pages.length === 0 : source.pages.length > 0
         && source.pages.every(page => Number.isInteger(page) && page > 0)
         && new Set(source.pages).size === source.pages.length
         && source.pages.every((page, index) => index === 0 || page > source.pages[index - 1]);
@@ -520,6 +553,8 @@ describe('the size manifest matches the decks it describes', () => {
   // The tool reads these counts to say which decks are ready WITHOUT importing
   // them. A stale count either hides a finished deck or offers an empty one.
   test.each([
+    ['accounting', 'higher', ACCOUNTING_HIGHER],
+    ['accounting', 'ordinary', ACCOUNTING_ORDINARY],
     ['biology', 'higher', BIO_HIGHER],
     ['biology', 'ordinary', BIO_ORDINARY],
     ['chemistry', 'higher', CHEM_HIGHER],
@@ -546,6 +581,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['art', 'ordinary', ART_ORDINARY],
     ['geography', 'higher', GEOGRAPHY_HIGHER],
     ['geography', 'ordinary', GEOGRAPHY_ORDINARY],
+    ['politics-and-society', 'higher', POLITICS_HIGHER],
+    ['politics-and-society', 'ordinary', POLITICS_ORDINARY],
     ['computer-science', 'higher', CS_HIGHER],
     ['computer-science', 'ordinary', CS_ORDINARY],
     ['engineering', 'higher', ENG_HIGHER],

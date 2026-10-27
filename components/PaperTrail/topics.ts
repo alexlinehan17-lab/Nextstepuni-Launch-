@@ -20,6 +20,7 @@ import {
   examQuestionTopicMappingsForSubject,
 } from '../../data/examTopics/registry';
 import { PAPER_TRAIL_INDEX } from '../../paperTrailData';
+import { physicalEducationTask, withPhysicalEducationAtlasTasks } from './physicalEducationTasks';
 
 /** Normalise a paper label to a stable slot so P1 and P2 topic pools stay
  *  separate in the frequency counts. */
@@ -69,6 +70,8 @@ export function browseTopicIdsForQuestion(
   paper: Pick<PaperTopicTags, 'subjectId' | 'level' | 'year' | 'paperKey' | 'lang' | 'fileid'>,
   question: QuestionTopicTag,
 ): string[] {
+  const reviewedTask = physicalEducationTask({ ...paper, n: question.n });
+  if (reviewedTask) return reviewedTask.examTopicIds;
   if (!examTopicTaxonomyFor(paper.subjectId)) return canonicalTopicIds(question);
   return examTopicIdsForQuestion(
     paper.subjectId,
@@ -192,7 +195,14 @@ for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
           secondary: canonicalIds[1],
         });
       }
-      paper.q.sort((a, b) => Number(a.n) - Number(b.n));
+      // Order rows by printed question number; reviewed tasks keep their
+      // audited order after their printed question (Accounting 1, 1(a), 1(b),
+      // 2 …). A paper whose rows are not all numbered (French sections A1 …
+      // B3B and their task routes) keeps its audited order. Sort is stable.
+      const printedNumber = (n: string) => n.match(/^\d+/)?.[0];
+      if (paper.q.every(question => printedNumber(question.n) !== undefined)) {
+        paper.q.sort((a, b) => Number(printedNumber(a.n)) - Number(printedNumber(b.n)));
+      }
     }
   }
 }
@@ -213,6 +223,8 @@ export function topicsForPaper(
   return byPaper.get(paperId(subjectId, year, level, lang, fileid)) ?? null;
 }
 
+const ATLAS_TOPIC_TAGS = withPhysicalEducationAtlasTasks(RUNTIME_TOPIC_TAGS);
+
 // ─── frequency (within a subject/level/paper-slot pool) ─────
 
 export interface TopicFrequency {
@@ -232,7 +244,7 @@ export function frequencyFor(
 ): TopicFrequency {
   const yearsAll = new Set<number>();
   const yearsHit = new Set<number>();
-  for (const p of RUNTIME_TOPIC_TAGS) {
+  for (const p of ATLAS_TOPIC_TAGS) {
     if (p.subjectId !== subjectId || p.level !== level || p.paperKey !== paperKey) continue;
     yearsAll.add(p.year);
     if (p.q.some(q => questionHasTopic(p, q, subtopicId))) yearsHit.add(p.year);
@@ -252,11 +264,35 @@ export interface TopicSibling {
   n: string;
 }
 
+/** A 2010-2019 Geography booklet printed Part One (Q1-12) and then Part Two,
+ *  which restarts at Q1. Part Two keeps its printed number as its Atlas and
+ *  Paper Trail identity (the Viewer's chips); Part One files as
+ *  n = 1000 + its printed number (scripts/markbank/authoring/geography_atlas_anchors.py). */
+const GEOGRAPHY_SHARED_BOOKLET = /^LC005[AG]LP000(EV|IV)\.pdf$/;
+const GEOGRAPHY_PART_ONE_OFFSET = 1000;
+
+/** The printed address of a tagged question, for any place that names one
+ *  before (or without) its anchor map's own label. `short` is the compact
+ *  form used in lists ("Q4", "Part One Q4"). */
+export function questionLabel(
+  q: Pick<TopicSibling, 'subjectId' | 'fileid' | 'n'>,
+  { short = false }: { short?: boolean } = {},
+): string {
+  const shared = q.subjectId === 'geography' ? GEOGRAPHY_SHARED_BOOKLET.exec(q.fileid) : null;
+  const printed = Number(q.n) - GEOGRAPHY_PART_ONE_OFFSET;
+  if (shared && Number.isInteger(printed) && printed >= 1) {
+    const part = shared[1] === 'IV' ? 'Cuid a hAon' : 'Part One';
+    if (short) return `${part} Q${printed}`;
+    return shared[1] === 'IV' ? `${part} · Ceist ${printed}` : `${part} · Question ${printed}`;
+  }
+  return short ? `Q${q.n}` : `Question ${q.n}`;
+}
+
 /** Every question tagged with `subtopicId` across the subject's tagged papers —
  *  the "drill this topic across years" set. Newest first. */
 export function siblingsFor(subjectId: string, subtopicId: string): TopicSibling[] {
   const out: TopicSibling[] = [];
-  for (const p of RUNTIME_TOPIC_TAGS) {
+  for (const p of ATLAS_TOPIC_TAGS) {
     if (p.subjectId !== subjectId) continue;
     for (const q of p.q) {
       if (questionHasTopic(p, q, subtopicId)) {
@@ -272,21 +308,21 @@ export function siblingsFor(subjectId: string, subtopicId: string): TopicSibling
       }
     }
   }
-  return out.sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || Number(a.n) - Number(b.n));
+  return out.sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || a.n.localeCompare(b.n, undefined, { numeric: true }));
 }
 
 // ─── revision hub (browse by topic) ────────────────────────
 
 /** Subject ids that have any committed topic tags. */
 export function taggedSubjects(): string[] {
-  return [...new Set(RUNTIME_TOPIC_TAGS.map(p => p.subjectId))];
+  return [...new Set(ATLAS_TOPIC_TAGS.map(p => p.subjectId))];
 }
 
 /** Distinct tagged years available for a subject — the honest denominator for a
  *  topic's "appears in N of M years" frequency. */
 export function taggedYearsForSubject(subjectId: string): number {
   const years = new Set<number>();
-  for (const p of RUNTIME_TOPIC_TAGS) if (p.subjectId === subjectId) years.add(p.year);
+  for (const p of ATLAS_TOPIC_TAGS) if (p.subjectId === subjectId) years.add(p.year);
   return years.size;
 }
 
@@ -308,7 +344,7 @@ export function topicsForSubject(subjectId: string): SubjectTopic[] {
   for (const topic of examTopicTaxonomyFor(subjectId)?.topics ?? []) {
     agg.set(topic.id, { questions: new Set<string>(), years: new Set<number>() });
   }
-  for (const p of RUNTIME_TOPIC_TAGS) {
+  for (const p of ATLAS_TOPIC_TAGS) {
     if (p.subjectId !== subjectId) continue;
     for (const q of p.q) {
       const questionKey = logicalQuestionIdentity({ ...p, n: q.n });
@@ -332,7 +368,7 @@ export function topicsForSubject(subjectId: string): SubjectTopic[] {
 export function questionsForTopics(subjectId: string, subtopicIds: string[] | null): TopicSibling[] {
   const want = subtopicIds && subtopicIds.length ? new Set(subtopicIds) : null;
   const byPrintedQuestion = new Map<string, TopicSibling>();
-  for (const p of RUNTIME_TOPIC_TAGS) {
+  for (const p of ATLAS_TOPIC_TAGS) {
     if (p.subjectId !== subjectId) continue;
     for (const q of p.q) {
       const match = want
@@ -371,7 +407,7 @@ export function subjectAtlasStats(subjectId: string): SubjectAtlasStats {
   const perYearQuestions = new Map<number, Set<string>>();
   const topicIds = new Set<string>();
   const questions = new Set<string>();
-  for (const p of RUNTIME_TOPIC_TAGS) {
+  for (const p of ATLAS_TOPIC_TAGS) {
     if (p.subjectId !== subjectId) continue;
     for (const q of p.q) {
       const key = logicalQuestionIdentity({ ...p, n: q.n });
@@ -401,7 +437,7 @@ export function subjectAtlasStats(subjectId: string): SubjectAtlasStats {
  *  strip (one dot per tagged year, filled where the topic was asked). */
 export function topicYearSets(subjectId: string): Map<string, Set<number>> {
   const out = new Map<string, Set<number>>();
-  for (const p of RUNTIME_TOPIC_TAGS) {
+  for (const p of ATLAS_TOPIC_TAGS) {
     if (p.subjectId !== subjectId) continue;
     for (const q of p.q) {
       for (const id of browseTopicIdsForQuestion(p, q)) {

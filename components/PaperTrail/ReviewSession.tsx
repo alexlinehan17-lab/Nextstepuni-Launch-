@@ -24,7 +24,7 @@ import {
   type ReviewCard,
   type ReviewGrade,
 } from './reviewStore';
-import { siblingsFor, topicLabel, topicsForPaper, type TopicSibling } from './topics';
+import { questionLabel, siblingsFor, topicLabel, topicsForPaper, type TopicSibling } from './topics';
 import { allMarks } from './attemptStore';
 import { computeProgress } from './progressStats';
 import { recordActivity } from './streakStore';
@@ -224,7 +224,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
                     {subjectLabel(c.subjectId)}{c.topicId ? ` · ${topicLabel(c.topicId)}` : ''}
                   </span>
                   <span className="block text-[11.5px]" style={{ color: '#7a7068' }}>
-                    {c.year} · {LVL[c.level] ?? c.level} · Q{c.n} · {c.lastTs === 0 ? 'new' : dueText(c.dueTs)}
+                    {c.year} · {LVL[c.level] ?? c.level} · {questionLabel(c, { short: true })} · {c.lastTs === 0 ? 'new' : dueText(c.dueTs)}
                   </span>
                 </button>
                 <button

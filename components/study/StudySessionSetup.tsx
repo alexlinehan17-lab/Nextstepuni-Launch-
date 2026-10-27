@@ -39,6 +39,9 @@ interface StudySessionSetupProps {
   onTodosChange?: (steps: PlanStep[]) => void;
   colourfulTimer?: boolean;
   onColourfulTimerChange?: (value: boolean) => void;
+  /** Quiz on what was studied once the session is saved (settings.studyQuiz). */
+  quizAtEnd?: boolean;
+  onQuizAtEndChange?: (value: boolean) => void;
   examDate?: string | null;
   topicIds?: string[];
   onTopics?: (ids: string[]) => void;
@@ -46,6 +49,9 @@ interface StudySessionSetupProps {
   selectedSubject: string;
   selectedType: SessionType | '';
   selectedMinutes: number;
+  /** Stopwatch session: no set end, finish when done. */
+  openEnded?: boolean;
+  onOpenEnded?: () => void;
   onSubject: (subject: string) => void;
   onType: (type: SessionType) => void;
   onMinutes: (minutes: number) => void;
@@ -71,6 +77,8 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
     selectedSubject,
     selectedType,
     selectedMinutes,
+    openEnded = false,
+    onOpenEnded,
     onSubject,
     onType,
     onMinutes,
@@ -101,11 +109,12 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
       { label: selectedSubject || 'Choose your subject', done: !!selectedSubject },
       { label: method?.detail || 'Choose how you’ll work', done: !!selectedType },
       {
-        label:
-          selectedMinutes >= MIN_STUDY_SESSION_MINUTES
+        label: openEnded
+          ? 'Open-ended: finish when you’re done'
+          : selectedMinutes >= MIN_STUDY_SESSION_MINUTES
             ? `${selectedMinutes} minutes of attention`
             : 'Make some time',
-        done: selectedMinutes >= MIN_STUDY_SESSION_MINUTES,
+        done: openEnded || selectedMinutes >= MIN_STUDY_SESSION_MINUTES,
       },
     ];
   return (
@@ -200,13 +209,13 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                     variant="outline"
                     className="nsu-ink-outline"
                     aria-label={`${preset.minutes} min`}
-                    aria-pressed={selectedMinutes === preset.minutes}
+                    aria-pressed={!openEnded && selectedMinutes === preset.minutes}
                     onClick={() => onMinutes(preset.minutes)}
                   >
                     {preset.minutes} min
                   </Button>
                 ))}
-                <label className="ks-custom-duration" data-selected={selectedMinutes > 0 && !DURATION_PRESETS.some(preset => preset.minutes === selectedMinutes)}>
+                <label className="ks-custom-duration" data-selected={!openEnded && selectedMinutes > 0 && !DURATION_PRESETS.some(preset => preset.minutes === selectedMinutes)}>
                   <span>Custom</span>
                   <Input
                     type="number"
@@ -227,11 +236,24 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                   />
                   <span>min</span>
                 </label>
+                {onOpenEnded && (
+                  <Button
+                    variant="outline"
+                    className="nsu-ink-outline ks-open-ended"
+                    aria-pressed={openEnded}
+                    aria-describedby={`${id}-duration-help`}
+                    onClick={onOpenEnded}
+                  >
+                    Open-ended <span>Count up, stop when you’re done</span>
+                  </Button>
+                )}
               </div>
               <p id={`${id}-duration-help`} className="ss-duration-help">
-                {selectedMinutes > 0 && selectedMinutes < MIN_STUDY_SESSION_MINUTES
-                  ? `Minimum ${MIN_STUDY_SESSION_MINUTES} minutes`
-                  : `Choose a preset or enter ${MIN_STUDY_SESSION_MINUTES}–180 minutes.`}
+                {openEnded
+                  ? `The clock counts up. Finish whenever you’re done, after ${MIN_STUDY_SESSION_MINUTES} minutes or more.`
+                  : selectedMinutes > 0 && selectedMinutes < MIN_STUDY_SESSION_MINUTES
+                    ? `Minimum ${MIN_STUDY_SESSION_MINUTES} minutes`
+                    : `Choose a preset or enter ${MIN_STUDY_SESSION_MINUTES}–180 minutes.`}
               </p>
             </section>
           </div>
@@ -251,7 +273,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                 className="nsu-plan-card"
                 icon={<Clock3 />}
                 title={selectedSubject || 'Make a start.'}
-                description={`${selectedMinutes > 0 ? `${selectedMinutes} minutes` : 'Choose your duration'} · ${method?.label || 'Choose a method'}`}
+                description={`${openEnded ? 'Open-ended' : selectedMinutes > 0 ? `${selectedMinutes} minutes` : 'Choose your duration'} · ${method?.label || 'Choose a method'}`}
                 steps={steps}
                 visibleSteps={3}
                 approveLabel="Start Session"
@@ -294,6 +316,25 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                   onCheckedChange={props.onColourfulTimerChange}
                   aria-label="I want my timer to have more colour!"
                   aria-describedby={`${id}-appearance-help`}
+                />
+              </div>
+            )}
+            {props.onQuizAtEndChange && (
+              <div className="ks-appearance-choice">
+                <div>
+                  <label htmlFor={`${id}-quiz`}>Quiz me when I finish</label>
+                  <p id={`${id}-quiz-help`}>
+                    {props.quizAtEnd
+                      ? 'A few real exam questions on what you just studied, marked by you.'
+                      : 'Straight to your points when you log the session.'}
+                  </p>
+                </div>
+                <Switch
+                  id={`${id}-quiz`}
+                  checked={!!props.quizAtEnd}
+                  onCheckedChange={props.onQuizAtEndChange}
+                  aria-label="Quiz me when I finish"
+                  aria-describedby={`${id}-quiz-help`}
                 />
               </div>
             )}

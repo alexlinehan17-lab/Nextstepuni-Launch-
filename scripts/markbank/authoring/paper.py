@@ -89,6 +89,16 @@ def papers_dir(subject):
 # Q1 in the Maths corpus was lost that way, and with it its parts.
 QHEAD_AHEAD = r'(?=\d{1,2}\.\s+[A-Z(]|Question\s+\d{1,2}\b)'
 INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+' + QHEAD_AHEAD)
+# Subjects whose booklets close an ask with its ruled answer line and set the
+# next question's head straight after it in the same text block. Biology's
+# 2010-2018 single booklets do this throughout: 2017 HL page 5 is one block
+# from "4. From your knowledge of microorganisms" to "5. Indicate whether ...",
+# and the "5." follows "____" rather than a closed sentence, so INLINE_QHEAD
+# never split it and Question 5 vanished into Question 4(g). The answer line
+# ends the ask as surely as a full stop does. Every reviewed Biology sitting
+# (2018 HL, 2019-2026) censuses byte-identically with it.
+ANSWER_LINE_HEADS = {'biology'}
+INLINE_QHEAD_AFTER_LINE = re.compile(r'(?:(?<=[.)?:])|(?<=_))\s+' + QHEAD_AHEAD)
 
 RUBRIC_HEAD = re.compile(
     r'^(?:(?:SECTION|Section)\s+[A-D]\b'
@@ -154,7 +164,138 @@ MISPRINTS = {
     ('chemistry', 2024, 'hl'): [
         ('(ii) Name the co\u2010product formed', lambda t: '(iii) ' + t[5:]),
     ],
+    # 2020 OL prints Q14(c)'s second part as "(iii)" and its third as "(iii)"
+    # again; the scheme numbers them (ii) and (iii).
+    ('biology', 2020, 'ol'): [
+        ('(iii) What is meant by the term heterotrophic?', lambda t: '(ii)' + t[5:]),
+    ],
+    # 2018 HL prints Q14(a)'s fifth part as "(iv)" again; the scheme numbers
+    # it (v), between (iv) and (vi).
+    ('biology', 2018, 'hl'): [
+        ('(iv) The graph below shows variations', lambda t: '(v)' + t[4:]),
+    ],
+    # 2026 OL Economics page 8 sets Question 8's head in the same block as the
+    # last cell of Question 7's answer table ("Explanation 2", where 2 is the
+    # completed example), so the head is glued behind a bare number and never
+    # read. The cell is the paper's worked example, not an ask; drop it.
+    ('economics', 2026, 'ol'): [
+        ('Explanation 2 Question 8', lambda t: t[len('Explanation 2 '):]),
+    ],
+    # 2017 OL page 2 sets Question 2's dichotomous key as one block, its steps
+    # numbered "1." to "4." in the head form ("3. Animal has three pairs of
+    # legs Musca ____", "4. Animal has long cylindrical body Nematode ____").
+    # Steps 3 and 4 follow an answer line, so each split off as a head: a
+    # phantom Question 3 took key step 3, a phantom Question 4 took step 4 and
+    # the real Question 3's (a)-(e), and the real "3." and "4." heads on page 3
+    # were then rejected as repeats -- Question 4's own (a)-(e) filed as the
+    # tail of the phantom Q4(e). The step numbers are the key's, not heads.
+    ('biology', 2017, 'ol'): [
+        ('3. Animal has three pairs of legs', lambda t: t[3:]),
+        ('4. Animal has long cylindrical body', lambda t: t[3:]),
+    ],
+    # 2013 OL page 11 prints Question 13's third part as "(b)" again ("(b)
+    # Answer the following questions in relation to an investigation you
+    # carried out into fermentation by yeast cells."), after (a) and the
+    # membrane (b); the scheme (p12) numbers it (c). Read as a second (b), its
+    # five romans merged into the membrane (b)'s first five.
+    ('biology', 2013, 'ol'): [
+        ('(b) Answer the following questions in relation to an investigation you carried out into fermentation',
+         lambda t: '(c)' + t[3:]),
+    ],
+    # 2011 OL pages 12 and 13 print the heads of Questions 14 and 15 as "14.
+    # Answer any two of (a), (b), (c) (30, 30)" with no full stop after "(c)"
+    # (rendered and looked at), so the reader splits off "(c) (30, 30)" as the
+    # opening of a part (c); the real (a) and (b) then read as letters going
+    # backwards and were lost. The "(c)" of the head's own list is not a part.
+    ('biology', 2011, 'ol'): [
+        ('(c) (30, 30)', lambda t: t[len('(c) '):]),
+    ],
 }
+# A question head the text layer welds onto the END of the block before it,
+# with no closed sentence between them for INLINE_QHEAD to split at: 2020 OL
+# Biology's Q4 table ends in the cell "(e) Converts starch into maltose" and
+# the block carries on "5. A selection of different cells ...", which filed
+# the whole of Question 5 as the tail of Q4(e). Keyed by sitting, like
+# MISPRINTS: the block is split straight after the named text.
+WELDED_HEADS = {
+    ('biology', 2020, 'ol'): ['(e) Converts starch into maltose'],
+    # 2018 OL page 4 is one block from "5. Indicate whether each of the
+    # following statements" to "6. The diagram shows a plant cell.": Q5(g)'s
+    # row ends in its circle options "T F", not a full stop or an answer line,
+    # so the "6." was never split off, Question 6 vanished into Q5(g), and
+    # with no Question 6 read, the reader (due a 6) took no head after it --
+    # Questions 7 to 15 all filed as romans of Q5(g).
+    ('biology', 2018, 'ol'): ['(g) Scientific discoveries are first published in newspapers T F'],
+    # 2017 OL page 4 is one block from "5. Indicate whether the following
+    # statements" to "6. The diagram shows part of the organism Rhizopus.":
+    # Q5(g)'s row ends in its circle options "T F", so the "6." was never
+    # split off and Question 6 vanished into Q5(g). Page 5 is one block from
+    # the Section B rubric to Q7(b)(v): the page sets "(iii)" at the start of
+    # the line "1. What did you use to cut the section of stem?", and the text
+    # layer welds that marker to the end of (ii)'s answer line, so Q7(b)(iii)
+    # and its two numbered asks filed as the tail of Q7(b)(ii).
+    ('biology', 2017, 'ol'): ['(g) An immobilised enzyme is one that has lost its function. T F',
+                              'State one reason why you used a herbaceous stem rather than a woody one. '
+                              + '_' * 73],
+    # 2016 HL page 13 is one block. Q13(b)(i) ends in its bold row of parts to
+    # label, "pinna semi-circular canals stirrup ear drum cochlea Eustachian
+    # tube", with no full stop, and the page sets "(ii)" on its own line under
+    # it before "1. Briefly outline the function of the pinna." Flattened, the
+    # "(ii)" trails the last part's name with nothing to split at, so Q13(b)(ii)
+    # and its five numbered asks filed as the tail of Q13(b)(i).
+    ('biology', 2016, 'hl'): ['stirrup ear drum cochlea Eustachian tube'],
+    # 2016 OL page 3 is one block from "3. Indicate whether the following
+    # statements are true or false" to Q4(e)(ii) "One treatment for the
+    # disorder.": Q3(g)'s row ends in its circle options "T F", so the "4.
+    # The diagram shows a section of the human skeleton." was never split off,
+    # Question 4 vanished into Q3(g), and Q4(e)(i)-(ii) filed as romans of
+    # Q3(g).
+    ('biology', 2016, 'ol'): ['(g) Oxygen passes from our lungs to our blood by osmosis. T F'],
+    # 2015 OL page 13 sets Question 15's head "15. Answer any two of (a), (b),
+    # (c). (30, 30)" and, on a line of its own under it, above the three fruit
+    # photographs, the marker "(a)"; the text layer reads that marker into the
+    # head's block, after "(30, 30)" with no full stop before it for
+    # TRAILING_MARKER to carry it. With no (a) read, the inline "(b) The
+    # diagram shows the human skin." and "(c) (i) Draw a diagram of Rhizopus."
+    # were not taken as letters, and all eighteen romans of (a), (b) and (c)
+    # filed as six romans of a letterless Q15.
+    ('biology', 2015, 'ol'): ['15. Answer any two of (a), (b), (c). (30, 30)'],
+    # 2014 HL page 8 is one block from "9." to Q9(b)(ii)'s last answer line.
+    # Q9(b)(i)'s third numbered ask, "3. Where did you find the semilunar
+    # valves during the dissection?", closes on its ruled answer line, and the
+    # page sets "(ii)" on its own line under it before "1. When you
+    # investigated the effect of exercise ...". Flattened, the "(ii)" trails
+    # the answer line with no full stop before it for TRAILING_MARKER to carry
+    # it, the head split before "1." strands it there, and Q9(b)(ii) and its
+    # two numbered asks filed as the tail of Q9(b)(i).
+    ('biology', 2014, 'hl'): ['Where did you find the semilunar valves during the dissection? ' + '_' * 75],
+    # 2013 OL page 3 is one block from "3. Indicate whether the following
+    # statements are true (T) or false (F)" to "4. The diagram shows the cell
+    # cycle.": Q3(g)'s row ends in its circle options "T F", so the "4." was
+    # never split off, Question 4's head filed as the tail of Q3(g), and its
+    # (a)-(d) (the next block) were read as repeats of Q3's letters and lost.
+    ('biology', 2013, 'ol'): ['(g) Grazing food chains begin with animals. T F'],
+    # 2012 OL page 3 is one block from "3. Indicate whether each of the
+    # following statements is true (T) or false (F)" to Q4(a)'s "Does the
+    # diagram represent a root or a stem?": Q3(g)'s row "An organ is a group of
+    # systems." ends in its circle options "T F", so "4. The diagram below
+    # represents a transverse section through part of a plant." was never
+    # split off, Question 4's head filed as the tail of Q3(g), and its (a)-(d)
+    # were read as repeats of Q3's letters and lost.
+    ('biology', 2012, 'ol'): ['(g) An organ is a group of systems. T F'],
+}
+# Subjects where a letter going BACKWARDS inside a question is never a new
+# part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
+# gametes as "(B), (b) X (b)", and the "(b)" opening a line re-opened part
+# (b) and filed all six of (c)'s romans under it.
+BACKWARD_LETTER_IS_TEXT = {'biology'}
+# Subjects whose answer tables set several bare part markers in one block:
+# 2020 OL Biology Q5 labels the boxes under its cell drawings "(a)", "(b) (c)",
+# "(d)", "(e)", "(f) (g)", and a block reading "(b) (c)" was taken as one
+# marker -- the last -- so (b) and (f) vanished and (c) to (g) jumped the run.
+# Each marker in such a block is read on its own.
+BARE_MARKER_RUNS = {'biology'}
+_BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf
 # text.
@@ -183,8 +324,7 @@ TERMINAL = re.compile(r'[.?!]$')
 # a formula and followed by the reaction's ΔH is passed over; no part opens
 # "ΔH =" straight after a formula.
 INLINE_MARKER = re.compile(
-    r'(?:(?<![A-Za-z0-9\u2080-\u2089])\s|\s(?!\([gl]\)\s+\u0394))'
-    r'(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    r'\s(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
 # Chemistry goes further: a "(g)" or "(l)" written straight after a formula is
 # that formula's state, whatever follows it. 2019 HL Q9 ends its stem's
@@ -252,10 +392,15 @@ def _next_marker(tok):
 # The gap after the marker may be set in no-break spaces: 2022 HL Chemistry
 # prints "(iii)\xa0\xa0 sulfur (S)," and [ \t] lost Q10(c)(iii).
 LINE_OPENING_MARKER = re.compile(
+    r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:[ \t]*$|[ \t]+(?=[a-z]))')
+# Subject-gated (Chemistry, the reader that met it): the same marker with any
+# white space after it, no-break spaces included.
+ANY_SPACE_MARKER_SUBJECTS = {'chemistry'}
+LINE_OPENING_MARKER_ANY_SPACE = re.compile(
     r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:\s*$|\s+(?=[a-z]))')
 
 
-def _split_own_line_markers(raw):
+def _split_own_line_markers(raw, any_space=False):
     """Flatten a block, but let a marker printed ALONE on its line start one.
 
     A block is flattened to a single line, and INLINE_MARKER -- which finds the
@@ -281,7 +426,7 @@ def _split_own_line_markers(raw):
     lines = [l.strip() for l in raw.splitlines() if l.strip()]
     out, cur, last = [], [], None
     for i, line in enumerate(lines):
-        m = LINE_OPENING_MARKER.match(line)
+        m = (LINE_OPENING_MARKER_ANY_SPACE if any_space else LINE_OPENING_MARKER).match(line)
         tok = m.group(1) if m else None
         alone = m and line == m.group(0).strip()
         # Alone on its line, with the ask starting below it: a marker.
@@ -470,16 +615,73 @@ def _join_gutter_markers(blocks):
     return out
 
 
-def _blocks(path, subject=None):
-    """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
+def _unweld(block, anchors):
+    """A block split straight after each anchor text it contains (WELDED_HEADS)."""
+    for anchor in anchors:
+        at = block.find(anchor + ' ')
+        if at >= 0:
+            cut = at + len(anchor)
+            return [block[:cut]] + _unweld(block[cut:].strip(), anchors)
+    return [block]
+
+
+# Pages whose text layer is set in overlapping vertical strips: every printed
+# line is stored as several pieces, and the glyph at each strip edge is set
+# twice at the same place ("Namme the liquidd part of thee blood."), so no
+# block holds a whole line. 2011 OL Biology pages 11-13 (Questions 13-15; the
+# pages render cleanly and the scheme reads normally). Keyed (subject, year,
+# level) -> {file name: pages}; strip_set_lines() reads those pages instead.
+STRIP_SET_PAGES = {
+    ('biology', 2011, 'ol'): {'2011-ol-paper.pdf': (11, 12, 13)},
+}
+
+
+def strip_set_lines(page):
+    """A strip-set page's printed lines as (baseline, text), top to bottom.
+
+    Every glyph is pooled from every strip, grouped into lines by baseline and
+    read left to right. A glyph set again at the same place, the same
+    character within 1pt, is a strip edge and kept once: on 2011 OL pp11-13
+    those repeats sit 0.00-0.06pt apart, a printed double letter ("ll", "ee")
+    3.3pt or more. A gap wider than 1.5pt between glyphs is a word space."""
+    rows = collections.defaultdict(list)
+    for b in page.get_text('rawdict')['blocks']:
+        for ln in b.get('lines', []):
+            for sp in ln['spans']:
+                for ch in sp['chars']:
+                    rows[round(round(ch['origin'][1], 1))].append((ch['bbox'][0], ch['bbox'][2], ch['c']))
+    out = []
+    for y in sorted(rows):
+        kept = []
+        for x0, x1, c in sorted(rows[y]):
+            if kept and c == kept[-1][2] and abs(x0 - kept[-1][0]) < 1.0:
+                continue
+            kept.append((x0, x1, c))
+        text, last = '', None
+        for x0, x1, c in kept:
+            if last is not None and x0 - last > 1.5 and not text.endswith(' ') and c != ' ':
+                text += ' '
+            text += c
+            last = x1
+        text = ' '.join(text.split())
+        if text:
+            out.append((y, text))
+    return out
+
+
+def _blocks(path, subject=None, strip_pages=(), any_space=False):
+    """Every non-empty text block, in page then top-to-bottom, left-to-right order.
+    A strip-set page (STRIP_SET_PAGES) gives one block per rebuilt line."""
     with pymupdf.open(path) as doc:
-        pages = [sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
+        pages = [[(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n]))]
+                 if n + 1 in strip_pages else
+                 sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]
     if subject in GUTTER_MARKERS:
         pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4]):
+            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4], any_space):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
@@ -825,6 +1027,14 @@ class Paper:
                 # on to (j) — Chemistry's Q4 runs (a) to (l) — and the first
                 # roman when it does not. The blocks ahead decide.
                 found_letter, found_roman = 'i', None
+            if self.subject in BACKWARD_LETTER_IS_TEXT and found_letter and letter is not None \
+                    and found_letter < letter and not or_part:
+                # See BACKWARD_LETTER_IS_TEXT: a bracketed allele, not a part.
+                if open_key:
+                    self.parts[open_key].append(text)
+                else:
+                    self.stems.setdefault((q, letter), []).append(text)
+                continue
             if found_letter and letter is not None and found_letter > letter \
                     and ord(found_letter) - ord(letter) > 1 \
                     and found_letter not in ('j', 'k', 'l', 'm'):
@@ -832,6 +1042,20 @@ class Paper:
                 # open — is a unit in a table ("Average Daily Gain (ADG) (g)"),
                 # and keying it filed two years' worth of Agricultural Science
                 # asks under a letter the paper never printed.
+                if open_key:
+                    self.parts[open_key].append(f'({found_letter}) {rest}')
+                else:
+                    self.stems.setdefault((q, letter), []).append(
+                        f'({found_letter}) {rest}')
+                continue
+            if found_letter and letter is not None and found_letter < letter \
+                    and rest and not re.search(r'[A-Za-z]', rest):
+                # Letters never run backwards inside a question. A lower letter
+                # followed only by figures is a cross-reference a table wrapped
+                # onto a new line: 2021 OL Agricultural Science Q17(b) heads a
+                # column "Calculated at part" / "(a) 80 65 35", and keying that
+                # "(a)" filed (b)(ii) and (b)(iii) under (a) -- two printed
+                # parts read as orphans.
                 if open_key:
                     self.parts[open_key].append(f'({found_letter}) {rest}')
                 else:
@@ -954,9 +1178,16 @@ class Paper:
         split_at = '\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])' + ''.join(
             '|\\s+(?=' + re.escape(h) + ')'
             for h in DRAWN_RULE_HEADS.get((self.subject, self.year, self.level), []))
+        welded = WELDED_HEADS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
+            blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None,
+                             strip_pages=STRIP_SET_PAGES.get((self.subject, self.year, self.level), {})
+                             .get(os.path.basename(path), ()),
+                             any_space=self.subject in ANY_SPACE_MARKER_SUBJECTS)
+            if welded:
+                blocks = [piece for block in blocks for piece in _unweld(block, welded)]
+            for block in blocks:
               if block in FIGURE_BLOCKS.get((self.subject, self.year, self.level), ()):
                   continue           # (2012 HL Chemistry: a figure's numbered equations; see FIGURE_BLOCKS.)
               if self.subject in RULED_HEADS:
@@ -965,7 +1196,7 @@ class Paper:
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
               for text in re.split(split_at, block):
-               for text in INLINE_QHEAD.split(text):
+               for text in (INLINE_QHEAD_AFTER_LINE if self.subject in ANSWER_LINE_HEADS else INLINE_QHEAD).split(text):
                 text = text.strip()
                 if not text:
                     continue
@@ -992,7 +1223,9 @@ class Paper:
                     if t:
                         carry = t.group(1)
                         piece = piece[:t.start(1)].rstrip()
-                    if piece:
+                    if piece and self.subject in BARE_MARKER_RUNS and _BARE_RUN.match(piece):
+                        yield from piece.split()
+                    elif piece:
                         yield piece
         if carry:
             yield carry

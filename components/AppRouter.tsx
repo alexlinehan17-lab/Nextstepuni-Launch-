@@ -39,6 +39,7 @@ const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.G
 const DashboardView = lazy(() => import('./DashboardView'));
 const LearningPathsView = lazy(() => import('./LearningPathsView'));
 const YearPlansView = lazy(() => import('./YearPlansView'));
+const YourSetupView = lazy(() => import('./setup/YourSetupView'));
 const WipTools = lazy(() => import('./WipTools'));
 const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.ModulesView })));
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
@@ -229,6 +230,7 @@ export interface AppRouterProps {
   setPassportOpen: (open: boolean) => void;
   setChangeSubjectsOpen: (open: boolean) => void;
   setNorthStarEditOpen: (open: boolean) => void;
+  handleExamDateSave: (examStartDate: string) => void;
 
   // Cosmetic unlocks (only setters needed at this layer; values flow through SettingsContext)
   setUnlockedAvatarSeeds: (seeds: string[]) => void;
@@ -310,6 +312,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     transitionToSeniorMode, transitionTargetYear,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
+    handleExamDateSave,
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
@@ -468,6 +471,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           strategyMastery={strategyMastery.masteryMap}
           onGoToProgress={handleGoToMilestones}
           onSetUpProfile={() => nav.navigateToOnboarding()}
+          onMinimise={handleBackToTree}
+          onGoToIsland={() => nav.navigateToJourney()}
           dismissedGuides={dismissedGuides}
           onDismissGuide={handleDismissGuide}
           weeklyChallenge={weeklyChallenge}
@@ -554,6 +559,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           onTabChange={nav.setDashboardSection}
           darkMode={settings.darkMode}
           onToggleTheme={() => updateSetting('darkMode', !settings.darkMode)}
+          onEditGrades={() => setChangeSubjectsOpen(true)}
+          onAddMockResult={() => nav.navigateToInnovationZone('points-passport')}
         />
       </Suspense>
     );
@@ -591,6 +598,27 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           onBack={handleBackToTree}
           isLca={isLcaYear(user?.yearGroup ?? studentProfile?.yearGroup)}
           currentYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
+        />
+      </Suspense>
+    );
+  }
+
+  if (viewState === 'your-setup') {
+    return (
+      <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your setup" />}>
+        <YourSetupView
+          profile={studentProfile}
+          northStar={northStar}
+          yearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
+          darkMode={settings.darkMode}
+          onBack={handleBackToTree}
+          onFinishSetup={() => nav.navigateToOnboarding()}
+          onEditSubjects={() => setChangeSubjectsOpen(true)}
+          onSaveExamDate={handleExamDateSave}
+          onEditNorthStar={() => setNorthStarEditOpen(true)}
+          onOpenSettings={() => setSettingsOpen(true)}
+          onOpenPlanner={() => nav.navigateToInnovationZone('planner')}
+          onSetDarkMode={dark => updateSetting('darkMode', dark)}
         />
       </Suspense>
     );
@@ -649,6 +677,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           allCourses={studentCourses}
           subjects={studentProfile?.subjects?.map((s: any) => s.subjectName) ?? []}
+          onOpenSetup={() => nav.navigateToYourSetup()}
         />
       </Suspense>
     );

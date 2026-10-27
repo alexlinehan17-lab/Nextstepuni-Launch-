@@ -112,6 +112,24 @@ export interface UserSettings {
   readingScale?: number;
   /** Reading comfort: 'relaxed' opens up line spacing in module reading text. */
   readingSpacing?: 'normal' | 'relaxed';
+  /**
+   * Which local notifications the student has chosen (services/notifications).
+   * Absent means they have not been asked yet; the device permission is
+   * separate and lives with the operating system or browser.
+   */
+  notifications?: NotificationPreferences;
+  /**
+   * A short recall quiz after each saved study session, built from Mark Bank
+   * questions on what was just studied (student feedback, 16 and 23 Oct 2026).
+   * Absent means on: the student turns it off, not on.
+   */
+  studyQuiz?: boolean;
+}
+
+/** One switch per kind of notification. Absent: not asked yet. */
+export interface NotificationPreferences {
+  /** One notification when a timed study session's time is up. */
+  studyTimer?: boolean;
 }
 
 export type NorthStarCategory =

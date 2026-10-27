@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { taskGroupsFault } from './taskGroups.mjs';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -19,8 +20,9 @@
  *   node scripts/markbank/build-deck.mjs <cards.json>
  */
 
-import { readFileSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -29,6 +31,7 @@ import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
+import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economicsEditions.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -150,7 +153,7 @@ const SUBJECTS = {
     /* The 1999 syllabus, still examined. Named by year because it is verified:
      * every paper in the corpus (2021-2025) sits on it. */
     specVersion: 'lc-business-1999',
-    specNote: 'Cards are tagged to the units of the REDEVELOPED Business specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
+    specNote: 'Cards are tagged to the 1999 Business syllabus examined in these papers.\n * Source-reviewed rubric cards resolve their specification by examination year.',
     figureDir: 'public/exam-figures/business',
     blocked: new Set(),
   },
@@ -571,11 +574,10 @@ const SUBJECTS = {
   },
   'agricultural-science': {
     title: 'Agricultural Science',
-    /* The NCCA specification published 2019 and first examined in 2021 — dated
-     * here because it IS verified: every paper in the corpus (2021-2025) sits on
-     * it, with no syllabus change to straddle. */
+    /* Historical additions override this default through the exam-year
+     * curriculum registry; their current practice filter is a separate field. */
     specVersion: 'lc-agricultural-science-2019',
-    specNote: 'Cards are tagged to the strands of the specification the papers were actually sat\n * under: this one has been the examined specification since 2021.',
+    specNote: 'Current practice topics and the examined curriculum are distinct. Reviewed\n * historical cards resolve their specification through the exam-year registry.',
     figureDir: 'public/exam-figures/agricultural-science',
     blocked: new Set(),
   },
@@ -744,6 +746,53 @@ function walkStrings(node, fn) {
 
 function repairGlyphs(card) { walkStrings(card, repairText); }
 
+/* Ligature glyphs that a text layer misreads. Calibri draws "tt", "tti", "ti",
+ * "tf" and "tí" as single glyphs; a broken subset reports them as U+01A9,
+ * U+01AB, U+019F, U+019E and U+01A1, and the Latin presentation forms U+FB00-
+ * U+FB06 are the same glyphs reported honestly. None is ever a letter a card
+ * should show. derive_glyph_ids.py reads them by glyph id and
+ * repair_ligature_words.py repairs each source document; one that still
+ * reaches a shipped card means a source was not repaired, so it is refused. */
+const LIGATURE_CODEPOINTS = /[\u019E\u019F\u01A1\u01A9\u01AB\uFB00-\uFB06]/;
+
+/* The same glyphs misread as FEWER letters leave no odd code point behind: the
+ * 2023 OL Latin scheme's text layer says "batle" where the page prints
+ * "battle". repair_ligature_words.py records every such misread form it finds
+ * in a subject's papers and schemes; a shipped card still carrying one is
+ * refused, because the word it shows is not the word that was printed. */
+const LIGATURE_WORDS = (() => {
+  const path = resolve(ROOT, 'scripts/markbank/authoring/ligature_words.json');
+  if (!existsSync(path)) return {};
+  return JSON.parse(readFileSync(path, 'utf8'));
+})();
+
+/* Identifiers are keys, never shown: a concept id coined from a misread
+ * stem ("...-writen-force-...") is left alone, because renaming it would orphan
+ * whatever refers to it. Every printed string is still checked. */
+const LIGATURE_IDENTIFIER_KEYS = new Set(['id', 'conceptId', 'topicId', 'figureKey', 'questionFigureKey', 'labelKey', 'replacementId']);
+
+function printedStrings(node, out = []) {
+  if (Array.isArray(node)) node.forEach(v => (typeof v === 'string' ? out.push(v) : printedStrings(v, out)));
+  else if (node && typeof node === 'object') {
+    for (const [k, v] of Object.entries(node)) {
+      if (LIGATURE_IDENTIFIER_KEYS.has(k)) continue;
+      if (typeof v === 'string') out.push(v);
+      else printedStrings(v, out);
+    }
+  }
+  return out;
+}
+
+function misreadLigatures(card) {
+  const { notes, ...shipped } = card;
+  const text = printedStrings(shipped).join(' ');
+  const code = text.match(LIGATURE_CODEPOINTS);
+  if (code) return `ligature glyph U+${code[0].codePointAt(0).toString(16).toUpperCase().padStart(4, '0')} still on the card`;
+  const words = Object.keys(LIGATURE_WORDS[SUBJECT_ID] ?? {});
+  const hit = words.find(w => new RegExp(`(?<![\\p{L}\\p{N}_])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}_])`, 'u').test(text));
+  return hit ? `misread ligature "${hit}" (printed "${LIGATURE_WORDS[SUBJECT_ID][hit]}")` : null;
+}
+
 function brokenGlyphs(text) {
   if (DOUBLED_MATHS_DIGIT.test(text)) {
     return 'a doubled maths digit whose value the text layer has lost — the font mis-maps some digits, so the pair cannot be collapsed';
@@ -803,9 +852,47 @@ if (subjectIds.length !== 1) {
 }
 const SUBJECT_ID = subjectIds[0];
 const SUBJECT = SUBJECTS[SUBJECT_ID];
+if (SUBJECT_ID === 'economics') {
+  // During the corpus audit, unreviewed papers remain explicitly pending.
+  // Reviewed papers are a hard gate: changed sources, stale review keys and
+  // new unclassified selection directives must stop generation.
+  process.stdout.write(execFileSync('python3', [
+    resolve(ROOT, 'scripts/markbank/authoring/econ_review.py'), '--allow-pending',
+  ], { cwd: ROOT, encoding: 'utf8' }));
+}
 if (!SUBJECT) {
   console.error(`unknown subject "${SUBJECT_ID}" — add it to SUBJECTS in this script`);
   process.exit(1);
+}
+
+// PE now uses the complete, visually reviewed task inventories. Rebuilding
+// historical authored input must never restore incomplete point-card content.
+if (SUBJECT_ID === 'physical-education') {
+  execFileSync('python3', [resolve(ROOT, 'scripts/markbank/authoring/pe_complete.py'), '--write'],
+    { cwd: ROOT, stdio: 'inherit' });
+  const reviewed = JSON.parse(readFileSync(resolve(ROOT,
+    'components/MarkBank/cards/physical-education/reviewed.json'), 'utf8')).cards;
+  const ids = new Set(reviewed.map(card => card.id));
+  if (rawCards.some(card => !ids.has(card.id))) {
+    throw new Error('PE input contains an unreviewed card; update the paper/scheme task inventory first.');
+  }
+  process.exit(0);
+}
+
+// A normal Business build fails closed while a raw-paper selection remains
+// unclassified. In-progress local authoring is explicit and never a completion
+// certificate; stale reviews and changed source hashes cannot be bypassed.
+if (SUBJECT_ID === 'business') {
+  try {
+    execFileSync('python3', [resolve(ROOT, 'scripts/markbank/authoring/business_corpus_inventory.py'),
+      '--check-selections'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  } catch (error) {
+    const message = String(error.stdout || error.stderr || error.message).trim();
+    if (error.status !== 3 || !process.argv.includes('--allow-incomplete-business-review')) {
+      throw new Error(`Business source review blocks generation: ${message}`);
+    }
+    process.stderr.write(`DRAFT BUSINESS BUILD — source review is incomplete.\n${message}\n`);
+  }
 }
 
 /**
@@ -830,6 +917,27 @@ const SOURCE_BINDINGS = existsSync(SOURCE_BINDINGS_PATH)
 const subjectCorrections = CORRECTIONS[SUBJECT_ID] ?? {};
 const subjectSourceBindings = SOURCE_BINDINGS[SUBJECT_ID] ?? {};
 const rawIds = new Set(rawCards.map(card => card.id));
+// Independently reviewed French reading corrections keep their original IDs.
+// The source ledger must explicitly authorize each replacement; every other
+// authored card continues through the existing validation and rendering path.
+const reviewedFrenchReading = SUBJECT_ID === 'french'
+  ? JSON.parse(readFileSync(resolve(ROOT, 'components/MarkBank/cards/french/reading.json'), 'utf8'))
+  : [];
+const frenchReadingRepairs = SUBJECT_ID === 'french'
+  ? JSON.parse(readFileSync(resolve(ROOT, 'scripts/markbank/authoring/french-reading-review.json'), 'utf8')).papers
+    .flatMap(paper => Object.values(paper.preservedCardIds ?? {}).map(id => ({ id, reason: paper.correctionReason })))
+  : [];
+const repairedFrenchIds = new Set(frenchReadingRepairs.map(repair => repair.id));
+for (const repair of frenchReadingRepairs) {
+  if (!repair.reason || !rawIds.has(repair.id) || reviewedFrenchReading.filter(card => card.id === repair.id).length !== 1) {
+    throw new Error(`Invalid reviewed French reading correction: ${repair.id}`);
+  }
+}
+for (const card of reviewedFrenchReading) {
+  if (rawIds.has(card.id) && !repairedFrenchIds.has(card.id)) {
+    throw new Error(`Unreviewed French reading replacement: ${card.id}`);
+  }
+}
 for (const id of Object.keys(subjectCorrections)) {
   if (!rawIds.has(id)) {
     console.error(`stale correction for missing ${SUBJECT_ID} card "${id}"`);
@@ -846,6 +954,10 @@ for (const id of Object.keys(subjectSourceBindings)) {
 const appliedCorrections = [];
 const cards = [];
 for (const raw of rawCards) {
+  if (repairedFrenchIds.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: preserved in the visually reviewed reading deck`);
+    continue;
+  }
   const correction = subjectCorrections[raw.id];
   if (correction) {
     if (!String(correction.reason ?? '').trim()) {
@@ -911,6 +1023,14 @@ for (const raw of rawCards) {
   }
   cards.push(card);
   if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
+}
+
+let economicsReviews = [];
+if (SUBJECT_ID === 'economics') {
+  const directory = resolve(ROOT, 'scripts/markbank/authoring/reviews');
+  economicsReviews = readdirSync(directory).filter(name => /^economics-.*\.json$/.test(name))
+    .map(name => JSON.parse(readFileSync(resolve(directory, name), 'utf8')));
+  bindEconomicsEditions(cards, economicsReviews);
 }
 
 /**
@@ -993,6 +1113,23 @@ const q = (s) => JSON.stringify(String(s));
  */
 function tariffFault(c) {
   const t = c.tariffModel ?? { kind: 'fixed' };
+  if (c.rows.some(row => row.permittedMarks && (
+    t.kind !== 'fixed' || row.kind !== 'criterion' || !Number.isFinite(row.marks)
+    || !Array.isArray(row.permittedMarks) || row.permittedMarks.length < 2
+    || row.permittedMarks[0] !== 0 || row.permittedMarks.at(-1) !== row.marks
+    || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
+      || mark < 0 || (index > 0 && mark <= steps[index - 1]))
+  ))) return 'invalid published criterion mark steps';
+  // A criterion row's parts (types/markBank.ts rowPartsReconcile) add up to it, each on printed steps.
+  if (c.rows.some(row => row.parts && (
+    !row.permittedMarks || row.kind !== 'criterion' || !Array.isArray(row.parts) || row.parts.length < 2
+    || new Set(row.parts.map(part => part.id)).size !== row.parts.length
+    || row.parts.reduce((sum, part) => sum + part.marks, 0) !== row.marks
+    || row.parts.some(part => !part.id || !String(part.verbatim ?? '').trim() || !Number.isInteger(part.marks) || part.marks <= 0
+      || !Array.isArray(part.permittedMarks) || part.permittedMarks.length < 2 || part.permittedMarks[0] !== 0
+      || part.permittedMarks.at(-1) !== part.marks
+      || part.permittedMarks.some((mark, index, steps) => !Number.isInteger(mark) || mark < 0 || (index > 0 && mark <= steps[index - 1])))
+  ))) return 'invalid criterion row parts';
   if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
     return c.rows.every(r => r.marks === null || r.marks === undefined)
       ? null : `a ${t.kind} tariff cannot give rows their own marks`;
@@ -1014,6 +1151,7 @@ function tariffFault(c) {
     if (!r.route) common += worth(r);
     else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
   }
+  common += c.questionBonus?.marks ?? 0;
   if (!byRoute.size) {
     return common === c.totalMarks ? null : `rows sum to ${common}, tariff is ${c.totalMarks}`;
   }
@@ -1033,6 +1171,33 @@ function tariffFault(c) {
  * renders, so the split it described reached nobody.
  */
 const TARIFF_PROSE = /\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i;
+
+/**
+ * A row that states neither an answer nor an honest criterion.
+ *
+ * A row DECLARED `criterion` is the scheme pricing a judgement -- "Safety
+ * precaution described", "Any correct vitamin deficiency to match named
+ * vitamin" -- and the type reserves the kind for exactly that. Dropping the
+ * card for carrying one either loses the printed task or ships it with part of
+ * its published tariff missing, which the paper-by-paper audits forbid. Such a
+ * row is still refused when it is empty, or when it is a tariff written where
+ * the criterion should be AND the content-free test refuses it too. The second
+ * condition keeps the exemption from ever being stricter than the rule before
+ * it: Construction Studies ships criterion rows that print the scheme's own
+ * "Any 7 of the above details (5 marks each)", which the content-free test
+ * passes, and refusing every TARIFF_PROSE criterion dropped 125 of its cards on
+ * a rebuild. Biology holds its own criterion rows to TARIFF_PROSE alone, in
+ * test/markBankBiologyReview.test.ts. Every other kind is held to the
+ * content-free test as before.
+ */
+function contentFreeRow(r) {
+  if (r.kind === 'anyN') return false;
+  if (r.kind === 'criterion') {
+    const text = String(r.verbatim ?? '');
+    return !text.trim() || (TARIFF_PROSE.test(text) && isContentFreeRow(text));
+  }
+  return isContentFreeRow(r.verbatim);
+}
 
 /** Faults in a bounded pick-list that arithmetic can settle without an agent. */
 function groupFault(c) {
@@ -1119,7 +1284,7 @@ function answerVariantsFault(card) {
       if (!ROW_KINDS.has(row.kind)) {
         return `answer variant "${variant.id}" row "${row.id}" has invalid kind "${row.kind}"`;
       }
-      if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
+      if (contentFreeRow(row)) {
         return `answer variant "${variant.id}" contains content-free row "${row.verbatim}"`;
       }
     }
@@ -1183,6 +1348,10 @@ const seenHash = new Map();
 let unresolvedPapers = 0;
 
 for (const c of cards) {
+  if (c.questionFigureIncludesPrompt !== undefined
+      && (typeof c.questionFigureIncludesPrompt !== 'boolean' || !c.questionFigureKey)) {
+    throw new Error(`${c.id}: questionFigureIncludesPrompt requires a question figure and a boolean value`);
+  }
   if (byQuestion.get(c.questionRef) !== c) {
     dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
     continue;
@@ -1193,7 +1362,7 @@ for (const c of cards) {
   // layout exactly. Keep the accessible text prompt, but remove blank-rule
   // scaffolding and page furniture so students do not see a noisy OCR copy
   // above the official crop.
-  if (c.questionFigureKey) {
+  if (c.questionFigureKey && c.questionFigureIncludesPrompt !== false) {
     const originalQuestionText = c.questionText;
     c.questionText = String(c.questionText)
       .replace(/_{3,}/g, '')
@@ -1206,7 +1375,7 @@ for (const c of cards) {
     }
   }
 
-  const contentFree = c.rows.filter(r => r.kind !== 'anyN' && isContentFreeRow(r.verbatim));
+  const contentFree = c.rows.filter(contentFreeRow);
   if (contentFree.length) {
     dropped.push(`${c.id}: ${contentFree.length} content-free row(s), e.g. "${contentFree[0].verbatim}"`);
     continue;
@@ -1220,6 +1389,9 @@ for (const c of cards) {
 
   const badGroup = groupFault(c);
   if (badGroup) { dropped.push(`${c.id}: ${badGroup}`); continue; }
+
+  const badTaskGroups = taskGroupsFault(c);
+  if (badTaskGroups) { dropped.push(`${c.id}: ${badTaskGroups}`); continue; }
 
   const badVariants = answerVariantsFault(c);
   if (badVariants) { dropped.push(`${c.id}: ${badVariants}`); continue; }
@@ -1254,7 +1426,7 @@ for (const c of cards) {
   const relabelled = relabelDistractors(c);
   if (relabelled) repaired.push(relabelled);
 
-  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows)].flat()) {
+  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     const cap = optionCapFor(c.section);
     if (r.group && r.group.options.length > cap) {
       overCap.push(`${c.id}: row "${r.id}" shows ${r.group.options.length} options in section ${c.section}, over the ${cap} agreed for a short question`);
@@ -1323,7 +1495,7 @@ for (const c of cards) {
   const scheme = schemeFor(SUBJECT_ID, c);
   if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
-  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows)].flat()) {
+  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     if (r.ask) {
       /* A row that restates the part's own ask, where the scheme answers with
        * a drawing and prints no words to claim (the labelled schemes of
@@ -1340,7 +1512,16 @@ for (const c of cards) {
     }
     const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
-      if (!claimMatches(scheme, claim)) untraceable.push(claim);
+      // A menu option that pairs a label with its value ("thoracic — 12") was
+      // read from a scheme TABLE, names in one row and numbers in the next
+      // (2017 HL Biology Q15(b)(i)), so the two are never adjacent in the text
+      // layer. It traces when each half does; a whole option still traces as
+      // it always did.
+      const halves = r.kind === 'anyN' ? String(claim).split(/\s—\s/) : [];
+      if (!claimMatches(scheme, claim)
+        && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
+        untraceable.push(claim);
+      }
     }
   }
   if (untraceable.length) {
@@ -1356,6 +1537,8 @@ for (const c of cards) {
   repairGlyphs(c);
   const mangled = mangledText(c);
   if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+  const misread = misreadLigatures(c);
+  if (misread) { dropped.push(`${c.id}: ${misread}`); continue; }
 
   let figure = null;
   let labelKey = null;
@@ -1387,6 +1570,7 @@ for (const c of cards) {
     if (rec.solution) { dropped.push(`${c.id}: question figure "${c.questionFigureKey}" is a solution crop`); continue; }
     questionFigure = { candId: rec.candId, src: rec.src, srcHash: rec.srcHash,
       alt: accessibleQuestionFigureAlt(rec.alt, c), lettersVisible: [], attribution: rec.attribution };
+    if (c.questionFigureIncludesPrompt !== undefined) questionFigure.includesPrompt = c.questionFigureIncludesPrompt;
   }
 
   seenId.add(c.id);
@@ -1395,6 +1579,8 @@ for (const c of cards) {
       `marks: ${r.marks === null || r.marks === undefined ? 'null' : r.marks}`];
     if (r.accepts?.length) parts.push(`accepts: ${JSON.stringify(r.accepts)}`);
     if (r.contextNote) parts.push(`contextNote: ${q(r.contextNote)}`);
+    if (r.permittedMarks) parts.push(`permittedMarks: ${JSON.stringify(r.permittedMarks)}`);
+    if (r.parts) parts.push(`parts: ${JSON.stringify(r.parts)}`);
     if (r.openList) parts.push('openList: true');
     if (r.ask) parts.push('ask: true');
     if (r.exactTermRequired) parts.push('exactTermRequired: true');
@@ -1423,21 +1609,24 @@ for (const c of cards) {
     corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
-  out.push({ level, code: `  {
-    ...base, kind: ${q(labelKey ? 'diagram' : 'question')},
+  out.push({ id: c.id, level, code: `  {
+    ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
     schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level — © State Examinations Commission.`)},
-    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 
+// A later provenance, glyph or figure rejection must not silently remove a
+// task that the independent physical-paper census requires. Fail before writes.
+if (SUBJECT_ID === 'economics') assertEconomicsReviewCoverage(seenId, economicsReviews);
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 /* Every build ends with the paper-anchored ledger, so nobody can ship a deck
  * without the coverage number in front of them — the class of failure where
@@ -1474,6 +1663,49 @@ if (unresolvedPapers) {
 const OUT_DIR = resolve(ROOT, 'components/MarkBank/cards', SUBJECT_ID);
 mkdirSync(OUT_DIR, { recursive: true });
 
+// Business ABQs have independently published Name/Explain/Link allocations.
+// Existing IDs can move to the rubric renderer only with a source-reviewed
+// correction that pins their original wording and tariff. All other point
+// cards remain intact.
+const businessRubrics = SUBJECT_ID === 'business'
+  ? [...JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards,
+    ...JSON.parse(execFileSync('node', [resolve(ROOT, 'scripts/markbank/authoring/business_routes.mjs')],
+      { cwd: ROOT, encoding: 'utf8' }))]
+  : [];
+if (businessRubrics.length) {
+  const ids = new Set();
+  for (const card of businessRubrics) {
+    if (ids.has(card.id)) throw new Error(`Duplicate Business rubric card ${card.id}`);
+    ids.add(card.id);
+    const original = rawCards.find(item => item.id === card.id);
+    if (original && (!card.correction?.reason
+      || card.correction.originalQuestionText !== original.questionText
+      || card.correction.originalTotalMarks !== original.totalMarks
+      || card.totalMarks !== original.totalMarks)) {
+      throw new Error(`Business rubric ${card.id} needs a verified correction for its existing ID`);
+    }
+    if (!original && card.correction) throw new Error(`Stale Business correction ${card.id}`);
+    if (resolvePaperFileid('business', card.year, card.level, card.section) !== card.paperFileid) {
+      throw new Error(`Business rubric ${card.id} does not resolve to its Paper Trail document`);
+    }
+    // Reviewed rubric cards bypass repairGlyphs, so refuse any glyph a broken
+    // subset font left in them rather than ship "se[U+01AB]ng" for "setting".
+    const residue = mangledText(card);
+    if (residue) throw new Error(`Business rubric ${card.id} carries ${residue}`);
+  }
+}
+
+// Subject-specific imports for the generated module. A subject with none gets
+// no line for them, so its module stays byte-identical to the one it had
+// before French and Applied Maths added theirs.
+const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
+  : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
+    : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : '';
+// Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
+// historical papers) spread examCardCurriculum into each card, so their level
+// module imports it. Every other module's import line is unchanged.
+const moduleImportsFor = level => `${moduleImports}${rawCards.some(c => (c.level ?? 'higher') === level && c.curriculumNodeIds?.length)
+  ? "import { examCardCurriculum } from '../../cardCurriculum';\n" : ''}`;
 const moduleFor = (level, cards) => `/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -1493,7 +1725,7 @@ const moduleFor = (level, cards) => `/**
  */
 
 import type { SecCard } from '../../../../types/markBank';
-${cards.length ? `
+${moduleImportsFor(level) ? `${moduleImportsFor(level)}\n` : ''}${cards.length ? `
 const base = {
   source: 'sec' as const,
   subjectId: ${q(SUBJECT_ID)},
@@ -1501,9 +1733,9 @@ const base = {
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 ` : ''}
-export const CARDS: SecCard[] = [
+export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-];
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -1512,13 +1744,21 @@ ${cards.join('\n')}
  * always rewritten, so a subject that loses every card at a level still ends
  * up with an honestly empty module rather than a stale one. */
 const sizes = {};
+const rubricIds = new Set(businessRubrics.map(card => card.id));
 for (const level of LEVELS) {
-  const levelCards = out.filter(c => c.level === level).map(c => c.code);
+  const levelCards = out.filter(c => c.level === level && !rubricIds.has(c.id)).map(c => c.code);
+  const levelRubrics = businessRubrics.filter(card => card.level === level).length;
   const path = resolve(OUT_DIR, `${level}.ts`);
-  if (!levelCards.length && !existsSync(path)) continue;
+  if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));
-  sizes[level] = levelCards.length;
-  process.stderr.write(`  ${level}: ${levelCards.length} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
+  const reviewedIds = SUBJECT_ID === 'applied-maths'
+    ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
+  const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
+  const additionsCount = SUBJECT_ID === 'french'
+    ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
+    : 0;
+  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
+  process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 
 /**

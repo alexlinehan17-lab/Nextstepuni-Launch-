@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "pools": [
+    {
+      "id": "bus-2013-hl-s3-q1b",
+      "choose": 2,
+      "sourceWording": "Evaluate any two of the following legislative approaches to solving conflict: (i) Small Claims Court; (ii) Labour Relations Commission; (iii) Employment Appeals Tribunal.",
+      "routePrompt": "Evaluate the following two legislative approaches to solving conflict:",
+      "options": [
+        {
+          "id": "small-claims",
+          "label": "(i) Small Claims Court",
+          "topicId": "business-0-13",
+          "response": {
+            "allocations": [
+              {
+                "id": "explain-1",
+                "label": "Explanation point 1",
+                "maxMarks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "explain-2",
+                "label": "Explanation point 2",
+                "maxMarks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "explain-3",
+                "label": "Explanation point 3",
+                "maxMarks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "explain-4",
+                "label": "Explanation point 4",
+                "maxMarks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "evaluation",
+                "label": "Evaluation / own judgement",
+                "maxMarks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "labour-relations",
+          "label": "(ii) Labour Relations Commission",
+          "topicId": "business-0-14",
+          "response": {
+            "allocations": [
+              {
+                "id": "explain-1",
+                "label": "Explanation point 1",
+                "maxMarks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "explain-2",
+                "label": "Explanation point 2",
+                "maxMarks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "evaluation",
+                "label": "Evaluation / own judgement",
+                "maxMarks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "employment-appeals",
+          "label": "(iii) Employment Appeals Tribunal",
+          "topicId": "business-0-14",
+          "response": {
+            "allocations": [
+              {
+                "id": "explain-1",
+                "label": "Explanation point 1",
+                "maxMarks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "explain-2",
+                "label": "Explanation point 2",
+                "maxMarks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "evaluation",
+                "label": "Evaluation / own judgement",
+                "maxMarks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "review": {
+        "status": "partial-subject-review",
+        "year": 2013,
+        "level": "higher",
+        "section": "3",
+        "question": "1(B)",
+        "sources": {
+          "exampapers": {
+            "fileid": "LC033ALP000EV.pdf",
+            "sha256": "abc495d75b7c62d13f8d4a0f52e6441e9226c27025325520bd3949038e69f835"
+          },
+          "markingschemes": {
+            "fileid": "LC033ALP000EV.pdf",
+            "sha256": "3b6eef02b21859d30aff0c8e2ab212cc412b3eaa8c38519ded744d71d6c22236"
+          }
+        },
+        "paperPagesReviewed": [
+          6
+        ],
+        "schemePagesReviewed": [
+          7,
+          21,
+          22
+        ],
+        "boundaries": {
+          "1(B)": 20
+        },
+        "selectionAnalysis": "The paper explicitly says any two of three named legislative approaches. All three unordered pairs are generated mechanically. Each selected approach carries 10 marks, so each route retains 20 marks; the three alternative routes are not added together.",
+        "sourceClarifications": [
+          "Small Claims Court uses four explanation points at 2 marks, plus evaluation 2. The other two bodies each use 4+4 explanation and 2 evaluation.",
+          "The scheme includes a historical note on proposed 2013 institutional changes on PDF page 22. Students answer the bodies named in the 2013 paper."
+        ]
+      },
+      "template": {
+        "year": 2013,
+        "level": "higher",
+        "section": "3",
+        "paperFileid": "LC033ALP000EV",
+        "paperPages": [
+          6
+        ],
+        "sourceLabel": "QUESTION PAPER",
+        "sourceTitle": "2013 Business · Question 1(B)",
+        "questionRef": "2013 HL Section 3 Q1(B)",
+        "totalMarks": 20,
+        "conceptId": "legislative-approaches-to-conflict",
+        "rubric": {
+          "system": "business",
+          "taskRequirements": [
+            "Evaluate both named approaches. Each is worth 10 marks, including 2 marks for your own judgement."
+          ],
+          "guidance": [
+            "Use the institutions and legislation named in the 2013 question. The attached scheme gives the historical responses and a note on changes proposed at that time."
+          ],
+          "schemeFileid": "LC033ALP000EV",
+          "schemePages": [
+            7,
+            21,
+            22
+          ],
+          "markingGuideNote": "The official support notes illustrate possible responses. Assess your explanation and evaluation against the published allocation; other relevant answers are considered on their merits."
+        }
+      }
+    }
+  ]
+}

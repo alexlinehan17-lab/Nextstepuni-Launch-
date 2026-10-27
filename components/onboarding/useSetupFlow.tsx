@@ -5,6 +5,7 @@ import { useNativeStatusBarAppearance } from "../../hooks/useNativeStatusBarAppe
 import { useSettingsContext } from "../../contexts/SettingsContext";
 import {
   DAYS_OF_WEEK,
+  fixedLevelNote,
   type StudentSubjectProfile,
   type YearGroup,
 } from "../subjectData";
@@ -20,12 +21,14 @@ import {
   buildProfile,
   choiceReady,
   choicesFor,
+  targetChoicesFor,
   cycleFor,
   daysUntil,
   draftKey,
   emptyChoice,
   hasGrades,
   legacyDraftKey,
+  levelOptions,
   needsDate,
   pointsFor,
   readDraft,
@@ -139,6 +142,9 @@ export function useSetupFlow(
   const config =
     draft.configs[currentSubject] ?? emptyChoice(draft.year, currentSubject);
   const gradeChoices = choicesFor(draft.year, config.level);
+  const targetChoices = targetChoicesFor(draft.year, config.level);
+  const levelChoices = levelOptions(draft.year, currentSubject);
+  const levelNote = junior || lca || !currentSubject ? null : fixedLevelNote(currentSubject);
   const unreviewed = draft.subjects.filter(
     (name) => !draft.configs[name]?.reviewed,
   );
@@ -556,6 +562,9 @@ export function useSetupFlow(
     nextSubject,
     config,
     gradeChoices,
+    targetChoices,
+    levelChoices,
+    levelNote,
     points,
     studyDays,
     stage,

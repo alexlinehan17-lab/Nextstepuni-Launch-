@@ -1,6 +1,6 @@
 import { peekTopicStudy, clearTopicStudy } from '../../utils/topicLaunch';
 import { sameStudySubject, sessionTopicAllocations } from '../../services/studyTopicHistory';
-import type { StudyTopicAllocation } from '../../types/studyTopics';
+import type { StudyTopicAllocation, StudyTopicSelection } from '../../types/studyTopics';
 import { studyTopicSelection } from '../../services/studyTopicHistory';
 import { readPlannerTodos } from '../launchpad/plannerTodos';
 /**
@@ -8,7 +8,7 @@ import { readPlannerTodos } from '../launchpad/plannerTodos';
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { lazy, Suspense, useState, useEffect, useMemo, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { BookOpen, Target, RotateCcw, type LucideIcon } from 'lucide-react';
@@ -28,7 +28,13 @@ import { type UserProgress, type StrategyMasteryMap, type StudyConfidenceLabel, 
 import { type CourseData } from '../Library';
 import { STRATEGY_REGISTRY } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
-import { MIN_STUDY_SESSION_MINUTES, useStudySession } from '../../hooks/useStudySession';
+import { MIN_STUDY_SESSION_MINUTES } from '../../hooks/useStudySession';
+import { useSharedStudySession } from '../../contexts/StudySessionContext';
+import StudyTimeUp from './StudyTimeUp';
+import StudySessionSaved from './StudySessionSaved';
+// The quiz pulls in a Mark Bank deck, so it loads only when a session is saved
+// with the quiz on — never as part of the study room itself.
+const StudySessionQuiz = lazy(() => import('./quiz/StudySessionQuiz'));
 import StrategyPickerStep from './StrategyPickerStep';
 import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
 import StudyJournalModal from '../StudyJournalModal';
@@ -40,6 +46,7 @@ import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
 import { getSyllabusTopics } from '../syllabusTopics';
 import { logError } from '../../utils/logError';
 import { useProgress } from '../../contexts/ProgressContext';
+import { useSettingsContext } from '../../contexts/SettingsContext';
 import { DEMO_STUDENT_UID } from '../../data/devStudent';
 import { useModal } from '../../hooks/useModal';
 
@@ -92,6 +99,10 @@ interface StudySessionViewProps {
   todayBlocks?: TimetableBlockContext[];
   onStudyBlock?: (block: TimetableBlockContext) => void;
   onSetUpProfile?: () => void;
+  /** Leave the study room while the timer keeps counting (mini timer). */
+  onMinimise?: () => void;
+  /** Open My Island after a session is saved. */
+  onGoToIsland?: () => void;
 }
 
 const StudySessionView: React.FC<StudySessionViewProps> = ({
@@ -113,9 +124,27 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   todayBlocks = [],
   onStudyBlock,
   onSetUpProfile,
+  onMinimise,
+  onGoToIsland,
 }) => {
-  const session = useStudySession(user.uid, userProgress, allCourses);
+  // One running session for the whole app (contexts/StudySessionContext); the
+  // default export renders this only once that session exists.
+  const session = useSharedStudySession()!;
+  const [openEndedChoice, setOpenEndedChoice] = useState(false);
+  const [finishing, setFinishing] = useState(false);
+  const [savedSummary, setSavedSummary] = useState<{
+    subject: string; seconds: number; points: number;
+    /** The topics studied, kept for the end-of-session quiz (resetSession clears them). */
+    topicSelection?: StudyTopicSelection;
+    quizDone?: boolean;
+  } | null>(null);
+  useEffect(() => { if (session.phase !== 'complete') setFinishing(false); }, [session.phase]);
   const [timerAppearance, setTimerAppearance] = useStudyTimerAppearance(user.uid);
+  // The end-of-session quiz is on unless the student turned it off. It needs
+  // the settings provider to exist at all (the switch writes there); rendered
+  // without one, as tests do, the room behaves as it did before the quiz.
+  const settingsContext = useSettingsContext();
+  const quizEnabled = Boolean(settingsContext) && settingsContext?.settings.studyQuiz !== false;
   const { rawProgressDoc, updateDemoProgress } = useProgress();
   const isDemo = user.uid === DEMO_STUDENT_UID;
 
@@ -248,26 +277,35 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const canStart = Boolean(
     selectedSubject
     && selectedType
-    && selectedMinutes >= MIN_STUDY_SESSION_MINUTES,
+    && (openEndedChoice || selectedMinutes >= MIN_STUDY_SESSION_MINUTES),
   );
   const startHint = !selectedSubject
     ? 'Choose a subject to continue'
     : !selectedType
       ? 'Choose how you want to study'
-      : selectedMinutes < MIN_STUDY_SESSION_MINUTES
+      : !openEndedChoice && selectedMinutes < MIN_STUDY_SESSION_MINUTES
         ? `Choose at least ${MIN_STUDY_SESSION_MINUTES} minutes`
         : null;
 
   const handleStart = () => {
     if (!canStart || !selectedType) return;
-    session.startSession(selectedSubject, selectedType, selectedMinutes, studyTopicSelection(selectedSubject, selectedTopicIds, studentProfile?.examStartDate, subjects.find(subject => subject.subjectName === selectedSubject)?.level));
+    setSavedSummary(null);
+    session.startSession(selectedSubject, selectedType, openEndedChoice ? 0 : selectedMinutes, studyTopicSelection(selectedSubject, selectedTopicIds, studentProfile?.examStartDate, subjects.find(subject => subject.subjectName === selectedSubject)?.level), { openEnded: openEndedChoice });
   };
+
+  /** JP this session earns on saving, before any debrief bonus. */
+  const sessionPoints = session.basePointsEarned + (session.extensionBonus ?? 0);
+  const rememberSaved = (debriefBonus: number) => setSavedSummary({
+    subject: session.subject, seconds: session.elapsedSeconds, points: sessionPoints + debriefBonus,
+    topicSelection: session.topicSelection ?? undefined,
+  });
 
   // Auto-complete timetable block after saving session
   const completeTimetableBlock = () => {
     // Ending early still records the study session and opens reflection, but it
-    // must not claim that the scheduled timetable block was completed.
-    if (session.elapsedSeconds < session.totalDuration) return;
+    // must not claim that the scheduled timetable block was completed. "Keep
+    // going" time is extra: the block is done once its own minutes are.
+    if (session.elapsedSeconds < (session.plannedSeconds ?? session.totalDuration)) return;
     if (timetableBlock && onTimetableBlockComplete) {
       const actualMinutes = Math.round(session.elapsedSeconds / 60);
       onTimetableBlockComplete(timetableBlock.dateKey, timetableBlock.blockId, actualMinutes);
@@ -340,6 +378,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         confidenceLabel,
         reflectionMode,
       }, allocations);
+      rememberSaved(bonus);
       completeTimetableBlock();
       pointsReload();
       onStrategyMasteryRecompute?.();
@@ -363,6 +402,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     setIsSaving(true);
     try {
       await session.saveSession(0, selectedStrategies, undefined, allocations);
+      rememberSaved(0);
       completeTimetableBlock();
       pointsReload();
       onStrategyMasteryRecompute?.();
@@ -416,6 +456,35 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     session.resetSession();
   };
 
+  // ── QUIZ: a quick check on what was studied, once the session is safely saved ──
+  if (session.phase === 'idle' && savedSummary && quizEnabled && !savedSummary.quizDone) {
+    const finishQuiz = () => setSavedSummary(current => current ? { ...current, quizDone: true } : current);
+    return (
+      <Suspense fallback={null}>
+        <StudySessionQuiz
+          uid={user.uid}
+          subject={savedSummary.subject}
+          topicSelection={savedSummary.topicSelection}
+          profileSubjects={studentProfile?.subjects}
+          examDate={studentProfile?.examStartDate}
+          character={user.avatar}
+          onDone={finishQuiz}
+          onSkip={finishQuiz}
+        />
+      </Suspense>
+    );
+  }
+
+  // ── SAVED: the points just earned, and where to spend them ──
+  if (session.phase === 'idle' && savedSummary) {
+    return <StudySessionSaved
+      subject={savedSummary.subject} seconds={savedSummary.seconds} points={savedSummary.points}
+      character={user.avatar}
+      onIsland={onGoToIsland}
+      onStudyAgain={() => setSavedSummary(null)}
+    />;
+  }
+
   // ── SETUP PHASE ──
   if (session.phase === 'idle') {
     return (
@@ -425,6 +494,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onTodosChange={setSessionTodos}
           colourfulTimer={timerAppearance === 'layers'}
           onColourfulTimerChange={value => setTimerAppearance(value ? 'layers' : 'ink')}
+          quizAtEnd={quizEnabled}
+          onQuizAtEndChange={settingsContext ? value => settingsContext.updateSetting('studyQuiz', value) : undefined}
           subjects={subjects}
           selectedSubject={selectedSubject}
           examDate={studentProfile?.examStartDate}
@@ -432,9 +503,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onTopics={setSelectedTopicIds}
           selectedType={selectedType}
           selectedMinutes={selectedMinutes}
+          openEnded={openEndedChoice}
+          onOpenEnded={() => { setOpenEndedChoice(true); setSelectedMinutes(0); }}
           onSubject={setSelectedSubject}
           onType={setSelectedType}
-          onMinutes={setSelectedMinutes}
+          onMinutes={minutes => { setOpenEndedChoice(false); setSelectedMinutes(minutes); }}
           todayBlocks={computedTodayBlocks}
           onBlock={block => {
             setTopicLaunch(undefined);
@@ -442,6 +515,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             else {
               setSelectedSubject(block.subject);
               setSelectedType(block.sessionType);
+              setOpenEndedChoice(false);
               setSelectedMinutes(block.durationMinutes);
             }
           }}
@@ -503,6 +577,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           type={typeConfig.label}
           totalSeconds={session.totalDuration}
           elapsedSeconds={session.elapsedSeconds}
+          plannedSeconds={session.plannedSeconds}
+          extendedMinutes={session.extendedMinutes}
+          openEnded={session.openEnded}
+          canFinish={session.canRecordSession}
+          onFinish={() => { if (session.canRecordSession) session.endSession(); }}
+          onMinimise={onMinimise}
           paused={session.phase === 'paused'}
           onLeave={() => setConfirmQuit(true)}
           onPause={session.pauseSession}
@@ -575,6 +655,19 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   // ── COMPLETE PHASE ──
   if (session.phase === 'complete') {
+    // The countdown ran out (not an early end): offer to keep going first.
+    const ranOut = !session.openEnded && session.elapsedSeconds >= session.totalDuration;
+    if (ranOut && !finishing && session.extendSession) {
+      return <StudyTimeUp
+        subject={session.subject}
+        elapsedSeconds={session.elapsedSeconds}
+        extendedMinutes={session.extendedMinutes ?? 0}
+        extensionBonus={session.extensionBonus ?? 0}
+        sessionPoints={sessionPoints}
+        onKeepGoing={minutes => { session.extendSession(minutes); }}
+        onFinish={() => setFinishing(true)}
+      />;
+    }
     // Show strategy picker before stats — all strategies shown regardless of module completion
     if (!pickerDone) {
       return (
@@ -583,7 +676,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           autoTrackedIds={session.getTrackedStrategies()}
           subject={session.subject}
           durationSeconds={session.elapsedSeconds}
-          pointsEarned={session.basePointsEarned}
+          pointsEarned={sessionPoints}
           onContinue={(ids) => {
             setSelectedStrategies(ids);
             setPickerDone(true);
@@ -599,8 +692,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     return <StudySessionFinish
       topicSelection={session.topicSelection}
       subject={session.subject} elapsedSeconds={session.elapsedSeconds}
-      plannedSeconds={session.totalDuration} practice={SESSION_TYPE_CONFIG[session.sessionType].label}
-      character={user.avatar} basePoints={session.basePointsEarned}
+      plannedSeconds={session.openEnded ? session.elapsedSeconds : (session.plannedSeconds ?? session.totalDuration)} practice={SESSION_TYPE_CONFIG[session.sessionType].label}
+      character={user.avatar} basePoints={session.basePointsEarned} extensionBonus={session.extensionBonus ?? 0}
       strategies={[...new Set([...session.getTrackedStrategies(), ...selectedStrategies])].map(id => STRATEGY_REGISTRY.find(strategy => strategy.moduleId === id)?.strategyName ?? id)}
       isSaving={isSaving} mode={reflectionMode} onModeChange={setReflectionMode}
       onSave={handleSaveWithReflection} onSkip={handleSkipReflection}

@@ -1,0 +1,1399 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "ordinary",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "status": "Q1 draft; source/Atlas validation pending, not integrated.",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf": "6a5e6c2c39fcfc5d7d3d4eebae139ed927eaaaa16fb429d0eab333c3f0d7e99f",
+    "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf": "ca21a4dccfd47aea12de99758ce82058a9b33138a0ab9742dba1197b47364e07"
+  },
+  "tasks": [
+    {
+      "questionNumber": "1",
+      "card": {
+        "id": "cons-2015-ol-q1-a",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-3-8",
+        "conceptId": "porch-roof-section-a",
+        "questionRef": "2015 OL Q1(a) — construction and dimensions",
+        "stem": "The front porch has a TILED traditional cut roof pitched at 30° and an internal width of 2.0 m. A 400 mm concrete-block wall has a 200 mm full-fill insulated cavity. Rafters and ceiling joists are 200 mm × 40 mm; insulated plasterboard is fixed UNDER the ceiling joists. At scale 1:5, the half-roof section shows one rafter length from 400 mm below the wallplate, through the wall and eaves, to the ridge. Show THREE courses of tiles at eaves and FOUR typical dimensions. The front door is not required. Part (b) shows one method of securing the wallplate to the external wall.",
+        "questionText": "To scale 1:5, draw the specified half-roof section, from 400 mm below the wallplate to the ridge, with one rafter length, three tile courses at eaves and four typical dimensions. The front door is not required. This component covers the published construction-detail and dimension marks; the complete drawing has a separate shared quality allowance.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 40,
+        "rows": [
+          {
+            "id": "details",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
+            "marks": 36,
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Published examples include ridge board; concrete tiles; battens; overlapped/taped breather membrane; rafters; roof insulation; ceiling joists; insulated plasterboard; wallplate; internal plaster; inner block leaf; full-fill cavity insulation; outer block leaf; external plaster; soffit/fascia; eaves gutter. Preserve the printed 200×40 mm rafters/ceiling joists, 400 mm wall and 200 mm cavity. The source does not divide these 4-mark details into drawing3/annotation1; do not import that Higher-level allocation. The full indicative menu is not mandatory.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Ridge board 250 mm × 35 mm",
+                "Concrete tiles",
+                "Softwood battens - typical 44 mm × 35 mm",
+                "Breather membrane overlapped and taped",
+                "Rafters 200 mm × 40 mm",
+                "Roof insulation to comply with current Building Regulations",
+                "Ceiling joist 200 mm × 40 mm",
+                "Insulated plasterboard with skim coat",
+                "100 mm × 75 mm wallplate",
+                "Internal plaster",
+                "Concrete block inner leaf – 100 mm",
+                "Full-fill insulated cavity 200 mm",
+                "Concrete block outer leaf – 100 mm",
+                "Soffit 12 mm and fascia 25 mm",
+                "Eaves gutter 100 mm"
+              ]
+            }
+          },
+          {
+            "id": "dimensions",
+            "kind": "criterion",
+            "verbatim": "Four typical dimensions",
+            "marks": 4,
+            "contextNote": "Include four appropriate dimensions for the specified roof section. This is the published shared 4-mark dimension allowance; no finer partial allocation is printed. Keep the given 30° pitch, 2.0 m internal width and component sizes consistent. The separate whole-drawing quality allowance is not included again here.",
+            "permittedMarks": [
+              0,
+              4
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-OL-q1-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-OL-q1-roof-section",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Insulated porch roof and wallplate fixing",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "The original specified section and complete model drawing are retained. Detail/dimension marks and wallplate-fixing marks are separated from the one shared whole-drawing quality allowance. Historical model specifications do not assert current building regulations."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "dac019a1956b8a2a278e0a3cd050c339b310cc1455c97eea93d51e78ddc63c28"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "d0a525e79176612b6b63c86dabd3f45035f2f19b0606c746b8afe004a31d4a8d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "a9778132c6043d36628c0984f5447665329eed6c57357bb8f40e743d0d511db6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 4,
+          "textSha256": "931290567289095e71811be29df128c27c547eb652feaf84fe34f853caeabe56"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 17,
+          "textSha256": "91261b3e122a44f32d4e3fb8a71abcdbb01bc17eb12e6b5ecd3cd9295bb4ab63"
+        }
+      ],
+      "boundaryReview": "a details36(best9×4) plus four dimensions4=40; b fixing2. Whole drawing has one shared draughting/accuracy/scale allowance8 with excellent8/good6/fair4. Complete50. The quality allowance is not separately published for each part and must not be duplicated or arbitrarily attached to the fixing task.",
+      "selectionReview": "One required half-roof section and one open wallplate-fixing method. The scheme best-nine detail list is an indicative marking menu, not a printed choose-nine task. The front door is expressly excluded. Whole-exam selection does not add single-question variants.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-OL-q1-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-OL-q1-roof-section"
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "card": {
+        "id": "cons-2015-ol-q1-b",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-3-8",
+        "conceptId": "porch-roof-section-b",
+        "questionRef": "2015 OL Q1(b) — wallplate fixing",
+        "stem": "The front porch has a TILED traditional cut roof pitched at 30° and an internal width of 2.0 m. A 400 mm concrete-block wall has a 200 mm full-fill insulated cavity. Rafters and ceiling joists are 200 mm × 40 mm; insulated plasterboard is fixed UNDER the ceiling joists. At scale 1:5, the half-roof section shows one rafter length from 400 mm below the wallplate, through the wall and eaves, to the ridge. Show THREE courses of tiles at eaves and FOUR typical dimensions. The front door is not required. Part (b) shows one method of securing the wallplate to the external wall.",
+        "questionText": "On the specified drawing, show clearly one method of securing the wallplate to the external wall.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 2,
+        "rows": [
+          {
+            "id": "fixing",
+            "kind": "criterion",
+            "verbatim": "Stainless steel strap fixed to wall and wallplate – shown on drawing",
+            "marks": 2,
+            "contextNote": "Show a coherent wallplate restraint detail. The model uses a vertical L-shaped stainless-steel strap fixed to BOTH wall and wallplate. This is the separately published 2-mark fixing detail, not a 10-mark task obtained by assigning all shared drawing-quality marks to part (b). The full roof/wall context remains supplied.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-OL-q1-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-OL-q1-roof-section",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Insulated porch roof and wallplate fixing",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "The original specified section and complete model drawing are retained. Detail/dimension marks and wallplate-fixing marks are separated from the one shared whole-drawing quality allowance. Historical model specifications do not assert current building regulations."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "dac019a1956b8a2a278e0a3cd050c339b310cc1455c97eea93d51e78ddc63c28"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "d0a525e79176612b6b63c86dabd3f45035f2f19b0606c746b8afe004a31d4a8d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "a9778132c6043d36628c0984f5447665329eed6c57357bb8f40e743d0d511db6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 4,
+          "textSha256": "931290567289095e71811be29df128c27c547eb652feaf84fe34f853caeabe56"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 17,
+          "textSha256": "91261b3e122a44f32d4e3fb8a71abcdbb01bc17eb12e6b5ecd3cd9295bb4ab63"
+        }
+      ],
+      "boundaryReview": "a details36(best9×4) plus four dimensions4=40; b fixing2. Whole drawing has one shared draughting/accuracy/scale allowance8 with excellent8/good6/fair4. Complete50. The quality allowance is not separately published for each part and must not be duplicated or arbitrarily attached to the fixing task.",
+      "selectionReview": "One required half-roof section and one open wallplate-fixing method. The scheme best-nine detail list is an indicative marking menu, not a printed choose-nine task. The front door is expressly excluded. Whole-exam selection does not add single-question variants.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-OL-q1-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-OL-q1-roof-section"
+      ]
+    },
+    {
+      "questionNumber": "1",
+      "card": {
+        "id": "cons-2015-ol-q1-complete",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "ordinary",
+        "section": "B",
+        "topicId": "cons-3-8",
+        "conceptId": "porch-roof-section-complete",
+        "questionRef": "2015 OL Q1 — complete",
+        "stem": "The front porch has a TILED traditional cut roof pitched at 30° and an internal width of 2.0 m. A 400 mm concrete-block wall has a 200 mm full-fill insulated cavity. Rafters and ceiling joists are 200 mm × 40 mm; insulated plasterboard is fixed UNDER the ceiling joists. At scale 1:5, the half-roof section shows one rafter length from 400 mm below the wallplate, through the wall and eaves, to the ridge. Show THREE courses of tiles at eaves and FOUR typical dimensions. The front door is not required. Part (b) shows one method of securing the wallplate to the external wall.",
+        "questionText": "To scale 1:5, draw the specified half-roof section, from 400 mm below the wallplate to the ridge, with one rafter length, three tile courses at eaves and four typical dimensions. The front door is not required. This component covers the published construction-detail and dimension marks; the complete drawing has a separate shared quality allowance.\n\nOn the specified drawing, show clearly one method of securing the wallplate to the external wall.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 50,
+        "rows": [
+          {
+            "id": "a-details",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
+            "marks": 36,
+            "contextNote": "Any 9 of the above details (4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Published examples include ridge board; concrete tiles; battens; overlapped/taped breather membrane; rafters; roof insulation; ceiling joists; insulated plasterboard; wallplate; internal plaster; inner block leaf; full-fill cavity insulation; outer block leaf; external plaster; soffit/fascia; eaves gutter. Preserve the printed 200×40 mm rafters/ceiling joists, 400 mm wall and 200 mm cavity. The source does not divide these 4-mark details into drawing3/annotation1; do not import that Higher-level allocation. The full indicative menu is not mandatory.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "Ridge board 250 mm × 35 mm",
+                "Concrete tiles",
+                "Softwood battens - typical 44 mm × 35 mm",
+                "Breather membrane overlapped and taped",
+                "Rafters 200 mm × 40 mm",
+                "Roof insulation to comply with current Building Regulations",
+                "Ceiling joist 200 mm × 40 mm",
+                "Insulated plasterboard with skim coat",
+                "100 mm × 75 mm wallplate",
+                "Internal plaster",
+                "Concrete block inner leaf – 100 mm",
+                "Full-fill insulated cavity 200 mm",
+                "Concrete block outer leaf – 100 mm",
+                "Soffit 12 mm and fascia 25 mm",
+                "Eaves gutter 100 mm"
+              ]
+            }
+          },
+          {
+            "id": "a-dimensions",
+            "kind": "criterion",
+            "verbatim": "Four typical dimensions",
+            "marks": 4,
+            "contextNote": "Include four appropriate dimensions for the specified roof section. This is the published shared 4-mark dimension allowance; no finer partial allocation is printed. Keep the given 30° pitch, 2.0 m internal width and component sizes consistent. The separate whole-drawing quality allowance is not included again here.",
+            "permittedMarks": [
+              0,
+              4
+            ]
+          },
+          {
+            "id": "b-fixing",
+            "kind": "criterion",
+            "verbatim": "Stainless steel strap fixed to wall and wallplate – shown on drawing",
+            "marks": 2,
+            "contextNote": "Show a coherent wallplate restraint detail. The model uses a vertical L-shaped stainless-steel strap fixed to BOTH wall and wallplate. This is the separately published 2-mark fixing detail, not a 10-mark task obtained by assigning all shared drawing-quality marks to part (b). The full roof/wall context remains supplied.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-OL-q1-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-OL-q1-roof-section",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Insulated porch roof and wallplate fixing",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Ordinary Level — © State Examinations Commission.",
+          "presentationNote": "The original specified section and complete model drawing are retained. Detail/dimension marks and wallplate-fixing marks are separated from the one shared whole-drawing quality allowance. Historical model specifications do not assert current building regulations."
+        },
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-ol-q1-a",
+            "marks": 40,
+            "rowIds": [
+              "a-details",
+              "a-dimensions"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-ol-q1-b",
+            "marks": 2,
+            "rowIds": [
+              "b-fixing"
+            ]
+          }
+        ],
+        "questionBonus": {
+          "id": "drawing-quality",
+          "kind": "criterion",
+          "verbatim": "Draughting, accuracy and scale",
+          "marks": 8,
+          "contextNote": "One shared assessment of the COMPLETE drawing: excellent8, good6, fair4; zero if no credit. Apply once to the integrated 1:5 section and wallplate detail. The source does not divide this into separate draughting and scale allowances or award 8 for each component.",
+          "permittedMarks": [
+            0,
+            4,
+            6,
+            8
+          ]
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+          "page": 1,
+          "textSha256": "dac019a1956b8a2a278e0a3cd050c339b310cc1455c97eea93d51e78ddc63c28"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "d0a525e79176612b6b63c86dabd3f45035f2f19b0606c746b8afe004a31d4a8d"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 2,
+          "textSha256": "a9778132c6043d36628c0984f5447665329eed6c57357bb8f40e743d0d511db6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 4,
+          "textSha256": "931290567289095e71811be29df128c27c547eb652feaf84fe34f853caeabe56"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+          "page": 17,
+          "textSha256": "91261b3e122a44f32d4e3fb8a71abcdbb01bc17eb12e6b5ecd3cd9295bb4ab63"
+        }
+      ],
+      "boundaryReview": "a details36(best9×4) plus four dimensions4=40; b fixing2. Whole drawing has one shared draughting/accuracy/scale allowance8 with excellent8/good6/fair4. Complete50. The quality allowance is not separately published for each part and must not be duplicated or arbitrarily attached to the fixing task.",
+      "selectionReview": "One required half-roof section and one open wallplate-fixing method. The scheme best-nine detail list is an indicative marking menu, not a printed choose-nine task. The front door is expressly excluded. Whole-exam selection does not add single-question variants.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-OL-q1-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-OL-q1-roof-section"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2015-ol-q1-a",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing: traditional roof forms/coverings and supporting cavity wall, with thermal insulation. Fixing the wallplate is a roof-to-wall junction. The whole card retains the union. Ordinary Atlas uses the combined Foundations/Floors/Walls topic for the wall node, not the Higher-only Walls label.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q1-b",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "2015 outgoing: traditional roof forms/coverings and supporting cavity wall, with thermal insulation. Fixing the wallplate is a roof-to-wall junction. The whole card retains the union. Ordinary Atlas uses the combined Foundations/Floors/Walls topic for the wall node, not the Higher-only Walls label.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-ol-q1-complete",
+      "markBankTopicId": "cons-3-8",
+      "canonicalTopicIds": [
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "2015 outgoing: traditional roof forms/coverings and supporting cavity wall, with thermal insulation. Fixing the wallplate is a roof-to-wall junction. The whole card retains the union. Ordinary Atlas uses the combined Foundations/Floors/Walls topic for the wall node, not the Higher-only Walls label.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2015-OL-q1-original",
+      "source": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+      "page": 2,
+      "rect": [
+        38,
+        34,
+        580,
+        221
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "bc12b90fb58ea49e1883363aa9624215e2a1cb0100f9167af10165e8f5c70353",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-OL-q1-roof-section",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 4,
+      "rect": [
+        54,
+        54,
+        568,
+        752
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "eea9316c048d98dd0b82fca197cbeb4d651975598203415a5fe2d21e9200c141",
+      "visuallyInspected": true
+    }
+  ],
+  "addedIds": [
+    "cons-2015-ol-q1-a",
+    "cons-2015-ol-q1-b",
+    "cons-2015-ol-q1-complete"
+  ],
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "rows": [
+      {
+        "page": 1,
+        "start": 211,
+        "match": "Answer Question",
+        "context": " Friday, 12 June Afternoon, 2:00 to 4:30 (a) Answer Question 1 and three other questions. (b) All questions carry equal marks. (c) Answers must be written in ink. (d) Drawings and sketches t",
+        "classification": "Whole-exam selection: compulsoryQ1 plus three other questions; all nine question banks retained, no full-exam Cartesian cards."
+      },
+      {
+        "page": 3,
+        "start": 1655,
+        "match": "any five",
+        "context": "with the aid of notes and freehand sketches, any five of the following: • box dovetail joint • triple glazing • solar panel • cordless drill • skirting board • compression fitting • n",
+        "classification": "Closed choose-five pool of nine named terms: all C(9,5)=126 whole-question routes, plus nine10-mark term tasks."
+      },
+      {
+        "page": 3,
+        "start": 2006,
+        "match": "one of",
+        "context": "ketches, show a suitable joint for attaching one of the rail to the leg of the table. Give one reason for choosing this joint. (b) Using notes and freehand sketches, discuss two des",
+        "classification": "Q9 attaching one rail to a leg: an open choice of suitable joint, not a fixed finite option list."
+      }
+    ],
+    "unclassified": 0,
+    "sourceHashes": {
+      "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf": "6a5e6c2c39fcfc5d7d3d4eebae139ed927eaaaa16fb429d0eab333c3f0d7e99f",
+      "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf": "ca21a4dccfd47aea12de99758ce82058a9b33138a0ab9742dba1197b47364e07"
+    },
+    "finiteQuestionChoices": {
+      "8": {
+        "choose": 5,
+        "options": [
+          "box-dovetail-joint",
+          "triple-glazing",
+          "solar-panel",
+          "cordless-drill",
+          "skirting-board",
+          "compression-fitting",
+          "natural-seasoning",
+          "concrete-lintel",
+          "radon-barrier"
+        ],
+        "routes": [
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "solar-panel",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "cordless-drill",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "skirting-board",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "skirting-board",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "skirting-board",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "triple-glazing",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "cordless-drill",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "skirting-board",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "skirting-board",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "solar-panel",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "skirting-board",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "cordless-drill",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "box-dovetail-joint",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "box-dovetail-joint",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "cordless-drill",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "skirting-board",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "solar-panel",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "skirting-board",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "cordless-drill",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "triple-glazing",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "triple-glazing",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "skirting-board",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "cordless-drill",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "solar-panel",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel"
+          ],
+          [
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "radon-barrier"
+          ],
+          [
+            "cordless-drill",
+            "skirting-board",
+            "compression-fitting",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "cordless-drill",
+            "skirting-board",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "cordless-drill",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ],
+          [
+            "skirting-board",
+            "compression-fitting",
+            "natural-seasoning",
+            "concrete-lintel",
+            "radon-barrier"
+          ]
+        ],
+        "wholeRouteMarks": 50,
+        "termMarks": 10
+      }
+    }
+  },
+  "routeLedger": {
+    "wholeRoutes": [
+      {
+        "id": "cons-2015-ol-q1-complete",
+        "parts": [
+          "a",
+          "b"
+        ],
+        "componentMarks": [
+          40,
+          2
+        ],
+        "sharedQualityMarks": 8,
+        "marks": 50
+      }
+    ],
+    "nonChoices": [
+      "Best-nine scheme detail menu is not a printed finite option pool.",
+      "One suitable wallplate securing method is an open response."
+    ]
+  }
+}

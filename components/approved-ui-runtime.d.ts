@@ -23,3 +23,9 @@ export { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuIte
 export { ChartContainer, ChartTooltip, ChartTooltipContent } from './approved-ui-types/components/ui/chart';
 export { Tooltip, TooltipTrigger, TooltipContent } from './approved-ui-types/components/ui/tooltip';
 export { Progress, ProgressLabel } from './approved-ui-types/components/ui/progress';
+export { Textarea } from './approved-ui-types/components/ui/textarea';
+export { Kbd, KbdGroup } from './approved-ui-types/components/ui/kbd';
+export { InputGroup, InputGroupAddon, InputGroupButton, InputGroupText, InputGroupInput, InputGroupTextarea } from './approved-ui-types/components/ui/input-group';
+export { Spinner } from './approved-ui-types/components/ui/spinner';
+export { Alert, AlertTitle, AlertDescription, AlertAction } from './approved-ui-types/components/ui/alert';
+export { Toggle } from './approved-ui-types/components/ui/toggle';

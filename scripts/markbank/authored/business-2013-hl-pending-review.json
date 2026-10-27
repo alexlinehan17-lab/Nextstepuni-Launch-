@@ -1,0 +1,245 @@
+{
+  "status": "authored-and-validated",
+  "year": 2013,
+  "level": "higher",
+  "section": "3",
+  "sources": {
+    "exampapers": {
+      "fileid": "LC033ALP000EV.pdf",
+      "sha256": "abc495d75b7c62d13f8d4a0f52e6441e9226c27025325520bd3949038e69f835"
+    },
+    "markingschemes": {
+      "fileid": "LC033ALP000EV.pdf",
+      "sha256": "3b6eef02b21859d30aff0c8e2ab212cc412b3eaa8c38519ded744d71d6c22236"
+    }
+  },
+  "paperPagesReviewed": [
+    7,
+    8,
+    9
+  ],
+  "schemePagesReviewed": [
+    8,
+    9,
+    10,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "selectionAnalysis": "There is no finite printed task menu on paper pages 7–9. Required pairs/categories and the four headings in Q6(C) remain one response. Benefits, methods, research techniques and examples are open responses. Scheme illustrations do not create extra routes.",
+  "tasks": [
+    {
+      "question": "3",
+      "paperPages": [
+        7
+      ],
+      "tariffPage": 8,
+      "boundaries": {
+        "A(i)": 10,
+        "A(ii)": 6,
+        "A(iii)": 4,
+        "B": 20,
+        "C": 20
+      },
+      "supportPages": {
+        "A(i)": [
+          26
+        ],
+        "A(ii)": [
+          26
+        ],
+        "A(iii)": [
+          26
+        ],
+        "B": [
+          27,
+          28
+        ],
+        "C": [
+          29
+        ]
+      },
+      "notes": [
+        "A(i): two required definitions, each 5 (3+2).",
+        "A(ii): retain the CSO table in every card. 2012: 10004-6769=3235 million surplus; 2011:9660-9192=468 million surplus. Six figures at 1 mark.",
+        "A(iii): 2+2 for invisible exports, with reference to Ireland.",
+        "B: two opportunities plus two challenges of exporting to non-EU countries, each 5(2+3).",
+        "C: four benefits of ongoing EU membership, each5(2+3)."
+      ]
+    },
+    {
+      "question": "4",
+      "paperPages": [
+        8
+      ],
+      "tariffPage": 9,
+      "boundaries": {
+        "A(i)": 6,
+        "A(ii)": 14,
+        "B": 20,
+        "C": 20
+      },
+      "supportPages": {
+        "A(i)": [
+          30
+        ],
+        "A(ii)": [
+          30
+        ],
+        "B": [
+          30,
+          31
+        ],
+        "C": [
+          31
+        ]
+      },
+      "notes": [
+        "Attach the EducaPrint case to every task requiring it.",
+        "A(i):6(4+2); A(ii):two methods7(4+2+1)each.",
+        "B:two benefits and two challenges of matrix structure, each5(2+3).",
+        "C:three planning points7(4+3),7(4+3),6(3+3)."
+      ]
+    },
+    {
+      "question": "5",
+      "paperPages": [
+        8
+      ],
+      "tariffPage": 9,
+      "boundaries": {
+        "A": 20,
+        "B": 20,
+        "C(i)": 10,
+        "C(ii)": 10
+      },
+      "supportPages": {
+        "A": [
+          32
+        ],
+        "B": [
+          33,
+          34
+        ],
+        "C(i)": [
+          34
+        ],
+        "C(ii)": [
+          34,
+          35
+        ]
+      },
+      "notes": [
+        "A: retain the full tax case with all rates, bands and credits from the 2013 paper. It is a historical calculation.",
+        "A has fourteen one-mark figures and three two-mark figures/actions. Own-figure (OF) allowances apply exactly where printed in the worked table.",
+        "Three two-mark entries: gross income80000, PRSI3200, dividing annual take-home by12.",
+        "Fourteen one-mark entries: taxable high-band47200; PAYE6560,19352,25912; credits1650,1650,320; net tax22292; USC200.72,239.20,high-band63984,4478.88,total4918.80; net monthly3965.77.",
+        "Net annual pay is47589.20 from salary78000 less total deductions30410.80; the2000 benefit-in-kind is taxable but not cash take-home.",
+        "B requires two financial and two non-financial rewards, each5(2+3); scheme allows benefit-in-kind as financial or non-financial depending on taxability.",
+        "C(i):two reasons5(2+3)each; C(ii):two solutions5(2+3)each."
+      ]
+    },
+    {
+      "question": "6",
+      "paperPages": [
+        9
+      ],
+      "tariffPage": 10,
+      "boundaries": {
+        "A": 20,
+        "B": 20,
+        "C": 20
+      },
+      "supportPages": {
+        "A": [
+          36
+        ],
+        "B": [
+          37,
+          38
+        ],
+        "C": [
+          38,
+          39
+        ]
+      },
+      "notes": [
+        "Attach Google 20 Percent Time source box.",
+        "A:two internal and two external sources of ideas, each5(2+3).",
+        "B:two methods10(2+3+3+2)each; own judgement evaluation required. The four sample methods in scheme are not a printed finite pool.",
+        "C:four required headings organisation structure/product mix/profitability/employment, each5(4+1). Cover short and long-term implications; do not invent an unstated mapping of the4+1marks."
+      ]
+    },
+    {
+      "question": "7",
+      "paperPages": [
+        9
+      ],
+      "tariffPage": 10,
+      "boundaries": {
+        "A": 20,
+        "B(i)": 6,
+        "B(ii)": 14,
+        "C": 20
+      },
+      "supportPages": {
+        "A": [
+          40
+        ],
+        "B(i)": [
+          41
+        ],
+        "B(ii)": [
+          41
+        ],
+        "C": [
+          41,
+          42
+        ]
+      },
+      "notes": [
+        "Attach All-Weather Wellies case to each task.",
+        "A:two research techniques10(2+3+3+2)each; support discusses desk and field. No finite printed menu.",
+        "B(i):6(3+2+1); B(ii):two reasons7(4+3)each.",
+        "C:four price-setting factors5(2+3)each."
+      ]
+    }
+  ],
+  "authoredCardIds": [
+    "bus-2013-hl-s3-q3a-i",
+    "bus-2013-hl-s3-q3a-ii",
+    "bus-2013-hl-s3-q3a-iii",
+    "bus-2013-hl-s3-q3b",
+    "bus-2013-hl-s3-q3c",
+    "bus-2013-hl-s3-q4a-i",
+    "bus-2013-hl-s3-q4a-ii",
+    "bus-2013-hl-s3-q4b",
+    "bus-2013-hl-s3-q4c",
+    "bus-2013-hl-s3-q5a",
+    "bus-2013-hl-s3-q5b",
+    "bus-2013-hl-s3-q5c-i",
+    "bus-2013-hl-s3-q5c-ii",
+    "bus-2013-hl-s3-q6a",
+    "bus-2013-hl-s3-q6b",
+    "bus-2013-hl-s3-q6c",
+    "bus-2013-hl-s3-q7a",
+    "bus-2013-hl-s3-q7b-i",
+    "bus-2013-hl-s3-q7b-ii",
+    "bus-2013-hl-s3-q7c"
+  ],
+  "validation": "All twenty Section 3 Q3–Q7 tasks are in the generated deck, retain source pages, reconcile to their published marks, and map to the distinct S3Q Topic Atlas identities. Included in the full 2013 English Higher source review."
+}

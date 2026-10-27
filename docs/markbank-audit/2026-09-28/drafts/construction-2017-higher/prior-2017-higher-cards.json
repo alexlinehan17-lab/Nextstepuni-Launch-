@@ -1,0 +1,1240 @@
+[
+  {
+    "id": "cons-2017-hl-q1-b",
+    "topicId": "cons-4-3",
+    "conceptId": "typical-design-detailing-cross-ventilation-suspended",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q1(b)",
+    "questionText": "On your drawing show the typical design detailing for the cross ventilation of the suspended timber floor through the solid concrete floor.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Design detailing for cross ventilation",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q2-a",
+    "topicId": "cons-5-6",
+    "conceptId": "functional-requirements-bathroom-designed-lifetime-use",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q2(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, two functional requirements of a bathroom designed for lifetime use.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 6",
+      "answer": 4,
+      "ofParts": 13,
+      "perPart": 6
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Two functional requirements of a bathroom designed for lifetime use such as",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "Two functional requirements of a bathroom designed for lifetime use such as",
+        "group": {
+          "claimMax": 4,
+          "perOption": 6,
+          "options": [
+            "width of door – 850 min - 900 to 1000 mm recommended",
+            "turning circle for wheelchair – 1500mm to 1800 min diameter, 2000 mm best",
+            "suitable height of washbasin, space for wheelchair beneath",
+            "spatula type lever taps, or sensor taps",
+            "grab rails to toilet, shower and wash basin – drop-down and fixed",
+            "clothes hooks at low level",
+            "shower tray level with floor, no upstand or use wetroom layout",
+            "non-slip floor covering or non-slip tiles",
+            "baby-changing facility provided",
+            "light switch at appropriate height for all users or motion or heat sensors for automatic lights",
+            "door-lock that allows for release of the lock from the outside",
+            "pull cord emergency alarm",
+            "low-level handle to window for person in wheelchair"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q2-b",
+    "topicId": "cons-4-2",
+    "conceptId": "shows-ground-floor-plan-semi-detached",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q2(b)",
+    "questionText": "The drawing shows the ground floor plan of a semi-detached house. The dimensions shown are in millimetres. It is proposed to provide a bathroom suitable for lifetime use by converting the office A into a bathroom. Discuss two advantages of converting the existing office A rather than building a new bathroom at location B, as shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-hl-paper-p002-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 9,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q2-b-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages – any two of the following – such as",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Advantages – any two of the following – such as",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "conversion cheaper than new build - cost savings on construction – an extension at B with associated costs not needed",
+            "little disruption during conversion of office – at front of house so owners can live in house as conversion takes place",
+            "external ventilation, window and access from vented lobby already present in front office",
+            "the design integrity of the existing dwelling house is maintained",
+            "access for visitors to W.C. is more convenient by proximity to the front door",
+            "existing office large enough to accommodate wheelchair access – universal design",
+            "increased distance of bathroom from food preparation and consumption areas",
+            "existing natural light to the utility room at the back of the dwelling is not restricted",
+            "links with nature preserved - existing back garden remains undisturbed - existing size, plants, green area and trees maintained, contact with nature good for wellbeing of occupants"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q2-c",
+    "topicId": "cons-5-6",
+    "conceptId": "proposed-design-layout-bathroom-design-location",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q2(c)",
+    "questionText": "Using notes and freehand sketches, show a proposed design layout for the bathroom at A. On your design sketches, show the location of the shower area, W.C., wash basin and grab rails. Include appropriate dimensions. On a separate sketch, show one design detail that will prevent the penetration of sewer gases into the bathroom at the W.C.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 4",
+      "answer": 6,
+      "ofParts": 7,
+      "perPart": 4
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show a proposed design layout for the bathroom at A. On your design sketches, show th",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "Location of shower area",
+            "Location of W.C",
+            "Location of wash basin",
+            "Grab rails",
+            "Dimensions of turning circle/door/any 2 dimensions",
+            "Design detail to prevent the penetration of sewer gases",
+            "Separate Sketch"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q3-a",
+    "topicId": "cons-1-1",
+    "conceptId": "proposed-design-layout-incorporates-above-requirements",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q3(a)",
+    "questionText": "Using notes and freehand sketches show a proposed design layout that incorporates each of the above requirements.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 8",
+      "answer": 4,
+      "ofParts": 13,
+      "perPart": 8
+    },
+    "totalMarks": 32,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches show a proposed design layout that incorporates each of the above requirements.",
+        "marks": 32,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 8,
+          "options": [
+            "A-A rear is south facing, glazed area of extension to the south for sunlight and daylight",
+            "roof light windows on extension to allow natural light to both extension and kitchen",
+            "rear window removed and opening formed to allow open-plan layout",
+            "opening to be widened for open-plan design – lintels over opening",
+            "glazing increased at southern, eastern and western elevations",
+            "floor to ceiling glazing and roof lights increase natural light",
+            "install high performance windows - low-e, triple glazing",
+            "remove a portion of the rear wall of the house to allow sunlight and solar gain deep into the original kitchen/dining area - must be completed in accordance with structural engineer’s specification",
+            "allows a visual connection between the old and new areas giving a greater sense of space",
+            "sliding, folding or swing doors to garden to bring outside in and to link garden/nature to extension for wellbeing of occupants",
+            "kitchen/dining area is maintained with a seating/family area in the extension - this allows a connection between family members while activities such as cooking/playing/homework/watching TV are taking place",
+            "maintaining existing kitchen/dining area also reduces expense",
+            "extensions such as described can reduce the levels of natural light and solar gain to the existing kitchen/dining room. Including roof lights, offsetting extension or increasing roof pitch with roof lights as indicated are examples of how levels of natural light and solar gain can be maintained"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q3-b",
+    "topicId": "cons-1-1",
+    "conceptId": "reasons-proposed-design-layout",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q3(b)",
+    "questionText": "Discuss three reasons for your proposed design layout.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss three reasons for your proposed design layout.",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "glazing to south east and west walls to get day long sunshine and natural light into room and into existing house – morning, midday and evening sunshine into house",
+            "existing house has small windows – limited passive solar gain and increased heating costs",
+            "high performance low-e glazing allows light and heat into both extension and house – people are phototropic and move towards the light",
+            "open-plan layout allows sunlight to enter into main house and enhance the life of the occupants",
+            "bringing the outside in through sliding/swing doors and low level glazing fosters visual delight",
+            "flexible open-plan layout allows spaces to be reconfigured to meet changing needs",
+            "open-plan layout facilitates persons with reduced mobility"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q4-c",
+    "topicId": "cons-1-1",
+    "conceptId": "construction-wall-type-selected-under-headings",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q4(c)",
+    "questionText": "Discuss the construction of each wall type selected under the following headings: • environmental considerations • ease of construction.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 3",
+      "answer": 4,
+      "ofParts": 4,
+      "perPart": 3
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss the construction of each wall type selected under the following headings: • environmental considerations • ease ",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 3,
+          "options": [
+            "Wall type 1",
+            "Environmental consideration",
+            "Ease of construction",
+            "Wall type"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q5-b",
+    "topicId": "cons-6-1",
+    "conceptId": "proposed-upgrade-thermal-properties-above-wall",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q5(b)",
+    "questionText": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expanded polystyrene to the external surface, as shown. Using the given thermal data at 5(a) above, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-hl-paper-p003-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 3",
+      "answer": 6,
+      "ofParts": 6,
+      "perPart": 3
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q5-b-r1",
+        "kind": "anyN",
+        "verbatim": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expand",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 3,
+          "options": [
+            "Formula U=1/R",
+            "R value for 0.15 using R=1/U",
+            "R value for calculated U-Value from part (a)",
+            "Difference in resistances (required resistance)",
+            "Application of formula R = T/k",
+            "Required thickness of insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q5-c",
+    "topicId": "cons-6-1",
+    "conceptId": "calculate-cost-heat-lost-annually-through",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q5(c)",
+    "questionText": "Calculate the cost of heat lost annually through the upgraded wall at 5(b) above, using the following data: Area of external wall 140 m2 Average internal temperature 18 °C Average external temperature 6 °C U-value of wall 0.15 W/m2 °C Heating period 8 hours per day, every day, for 36 weeks per annum Cost of oil 98 cent per litre Calorific value of oil 37350 kJ per litre 1000 Watts 1 kJ per second.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q5-c-r1",
+        "kind": "anyN",
+        "verbatim": "Calculate the cost of heat lost annually through the upgraded wall at 5(b) above, using the following data: Area of exte",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Area = 140 m2 Temp difference = 12; 1000",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Heat loss formula and calculation",
+            "Heating duration for one year",
+            "k/Joules calculation for one year",
+            "Litres of oil for one year",
+            "Annual cost of heat loss"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q6-a",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-eco-friendly-house-design-21st",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q6(a)",
+    "questionText": "Discuss in detail two advantages of eco-friendly house design in the 21st century.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail two advantages of eco-friendly house design in the 21st century.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "ethical living and ethical building a must for the 21st century",
+            "cannot have a sustainable planet without sustainable buildings",
+            "one planet supplies all our needs – and stores our waste – we need to tend it carefully",
+            "diminishing natural resources, fossils fuels such as oil, coal, gas are non-renewable and diminishing",
+            "the more we use of them, the less that is left for future generations",
+            "a new ethic is required, doing very much more, with very much less for very much longer - buildings consume about 40% of total energy use – to mine and process the raw materials, to transport the materials often over long distances, and to process and cons truct the buildings"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q6-b",
+    "topicId": "cons-1-1",
+    "conceptId": "features-given-design-contribute-making-house",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q6(b)",
+    "questionText": "Using notes and freehand sketches, discuss in detail three features of the given design that contribute to making the house eco-friendly.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Three features of the design that make the house an eco-friendly house - such as",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "Three features of the design that make the house an eco-friendly house - such as",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "the house - except for foundations, ground floor, chimney stack and internal plasterboard for fire-proofing - is entirely constructed from wood",
+            "wood is renewable, carbon neutral and has low embodied energy",
+            "simple building form appropriate to eco-friendly design",
+            "the native larch finish on the exterior, is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction",
+            "larch cladding is naturally durable and needs no preservatives – can be flame charred as a finish",
+            "reduced transport costs as larch is available in Ireland and does not have to be imported or transported long distances",
+            "lightweight timber-frame building needs smaller foundations – eco-friendly",
+            "the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere",
+            "the large areas of glazing, which are south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating",
+            "there are no windows to the north, thus reducing heat loss and helping conserve energy",
+            "external storage space to the north, at rear, builds a buffer zone to outside, reducing heat loss through the cold north facing external walls",
+            "the stove and flue are placed against an inner chimney stack of high thermal mass, increasing the storage of heat and keeping the heat within the fabric of the house",
+            "wood burning stoves are carbon neutral and are about 70% efficient",
+            "purposely designed open-plan, naturally lighted layout with no corridors, all space is useable, no wasted floor area – 1.5 storeys for maximum use of upper floor area"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 19 acceptable points under \"Three features of the design that make the house an eco-friendly house - such as\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2017-hl-q6-c",
+    "topicId": "cons-1-1",
+    "conceptId": "low-operating-costs-are-important-consideration",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q6(c)",
+    "questionText": "Low operating costs are an important consideration in eco-friendly design. Using notes and freehand sketches, discuss two features that could be added to the design that would further reduce the operating costs of the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Low operating costs are an important consideration in eco-friendly design. Using notes and freehand sketches, discuss tw",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "Adding to the building fabric",
+            "Install evacuated tubes",
+            "Install photovoltaic (PV) panels to generate on-site renewable energy",
+            "Wind generator to generate electricity from the wind",
+            "Rainwater harvesting"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "typical-dimensions-roof-members",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q7(b)",
+    "questionText": "On your drawing show the typical dimensions of three roof members.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q7-b-r1",
+        "kind": "point",
+        "verbatim": "Typical dimensions",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q8-a",
+    "topicId": "cons-7-4",
+    "conceptId": "importance-providing-adequate-light-work-surface",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q8(a)",
+    "questionText": "Using notes and freehand sketches, discuss the importance of each of the following in providing adequate light on a work surface in a kitchen, as shown: • natural light • artificial light.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-hl-paper-p004-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 4 + 2 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Natural Light",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Natural Light",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "countertops are the primary task areas in kitchens - careful consideration must be given to the lighting plan for the kitchen",
+            "use of light meter to help in the design of lighting plan",
+            "design to provide even lighting while avoiding excessive glare",
+            "careful placement of windows to reduce dependence on artificial lighting",
+            "light from sky above most efficient – roof lights, light tunnels, domes and light panels",
+            "natural light aids positive mental attitude and a general sense of well being - phototropic",
+            "natural light and sunlight enhance occupant comfort creating a calm environment",
+            "natural light connects occupants with the outdoors",
+            "natural light enhances clarity and colour definition"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-hl-q8-a-r2",
+        "kind": "anyN",
+        "verbatim": "Artifical light",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Artifical light",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "provides safe and effective illumination for preparing, cooking and eating",
+            "consideration given to energy efficiency of light source – strip LEDs",
+            "provide task lighting to specific locations - sinks, countertops, hobs, islands",
+            "use of sensor lighting reduces energy consumption",
+            "locate and position lighting to allow ease of maintenance",
+            "use of diffused light helps soften atmosphere within the kitchen",
+            "can be used to highlight kitchen cabinetry",
+            "may be ceiling mounted, wall mounted or fixed to cabinets",
+            "lighting may be movable to suit various tasks",
+            "glass doors and glass shelves in kitchen cabinets allow diffuse light to filter into room"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q8-b",
+    "topicId": "cons-3-6",
+    "conceptId": "home-office-shown-measures-metres-long",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q8(b)",
+    "questionText": "A home office, as shown, measures 4.8 metres long by 3.5 metres wide. The office has a vertical window and unobstructed views. An average illumination of 500 lux of daylight is required on the work plane. Determine using the degree of efficiency method, or any other suitable method, the approximate area of glazing required to provide the stated illumination. Assume the illumination of a standard overcast sky to be 5000 lux.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-hl-paper-p004-i1",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 3",
+      "answer": 6,
+      "ofParts": 7,
+      "perPart": 3
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q8-b-r1",
+        "kind": "anyN",
+        "verbatim": "A home office, as shown, measures 4.8 metres long by 3.5 metres wide. The office has a vertical window and unobstructed ",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 3,
+          "options": [
+            "Formula",
+            "Correct entry into formula",
+            "Floor area",
+            "Lo × WF × E",
+            "Solve for w (window area) line 1",
+            "Solve for w (window area) line 2",
+            "Window area"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q9-a",
+    "topicId": "cons-2-4",
+    "conceptId": "reinforced-concrete-strip-foundation-supports-400",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q9(a)",
+    "questionText": "A reinforced concrete strip foundation supports a 400 mm concrete block external wall with an insulated cavity, as shown. Using notes and freehand sketches, show the typical design detailing of the foundation. Indicate the position of the reinforcement in the foundation. Specify three typical dimensions and discuss the reasons for the dimensions you have specified.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 4",
+      "answer": 5,
+      "ofParts": 11,
+      "perPart": 4
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Reasons for dimensions specified depth of trench below ground",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "Reasons for dimensions specified depth of trench below ground",
+        "group": {
+          "claimMax": 5,
+          "perOption": 4,
+          "options": [
+            "typically 1000 - 1200 mm below ground level and below frost line, so there is no movement of soil owing to freezing and thawing",
+            "usually solid, compacted soil at this level",
+            "further depth if required until solid base is achieved. width of trench",
+            "typically wall thickness × 3, 1200 mm",
+            "to spread the load over wide area",
+            "to provide for sufficient reinforcement",
+            "to allow workers lay the blockwork to ground level",
+            "to provide level base for wall reinforcement",
+            "typically 12 mm mild steel bars longitudinally and traverse",
+            "tied at junctions",
+            "50 mm cover to bars to prevent ingress of water, water causes the bars to rust and expand, resulting in spalling of the concrete and reduction in strength"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "test-may-carried-out-measure-consistency",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q9(c)",
+    "questionText": "Using notes and freehand sketches, describe one test that may be carried out to measure consistency in the quality of all concrete delivered to a site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 8 + 1 x 8",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Procedure",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Procedure",
+        "group": {
+          "claimMax": 1,
+          "perOption": 8,
+          "options": [
+            "clean the internal surface of the mould and apply oil",
+            "place the mould on a smooth horizontal non-porous base plate",
+            "fill the mould with the prepared concrete mix in 3 approximately equal layers",
+            "tamp each layer with 25 strokes of the rounded end of the tamping rod in a uniform manner over the cross section of the mould",
+            "for the subsequent layers, the tamping should penetrate into the underlying layer",
+            "remove the excess concrete and level the surface with a trowel",
+            "clean away the mortar or water leaked out between the mould and the base plate",
+            "raise the mould from the concrete immediately and slowly in vertical direction",
+            "measure the slump as the difference between the height of the mould and that of high point of the specimen being tested",
+            "the greater the slump, the weaker the concrete",
+            "batches for the same job, i.e. foundations - should have the same slump"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-hl-q9-c-r2",
+        "kind": "anyN",
+        "verbatim": "Cube Test",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "Cube Test",
+        "group": {
+          "claimMax": 1,
+          "perOption": 8,
+          "options": [
+            "the cube test assesses the strength of concrete used in a structure, by selecting a sample cube of the concrete and by testing that sample",
+            "clean and lightly oil all surfaces of the steel cube mould",
+            "select a representative sample of concrete",
+            "place the concrete in the mould in three equal layers",
+            "tamp each layer 6 times with the tamping rod",
+            "clean off surplus concrete and rub exposed top surface smooth using a steel trowel",
+            "store the concrete cube overnight internally and ensure an ambient room temperature is maintained",
+            "strike the steel mould after 12 hours",
+            "record essential information-(date/ strength/ location) on the top surface of the cube using a waterproof marker",
+            "store the concrete cube in a designated heated water storage tank until collected and brought to the testing facility",
+            "cubes may be tested at 7 day intervals starting from the date of pouring (7, 14, 21, 28 days)",
+            "cubes are tested using Uniformly Distributed Loading, UDL applied at constant increasing pressure - to destruction",
+            "the crushing strength is recorded as N/mm2"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q10-a",
+    "topicId": "cons-6-2",
+    "conceptId": "importance-passive-house-design-airtightness-indoor",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q10(a)",
+    "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • airtightness • indoor air quality • solar shading.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 12",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 12
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q10-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • airtigh",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 12,
+          "options": [
+            "Airtightness",
+            "Indoor Air Quality",
+            "Solar Shading"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q10-b",
+    "topicId": "cons-4-2",
+    "conceptId": "diagram-shows-ground-floor-plan-semi",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q10(b)",
+    "questionText": "The diagram shows the ground floor plan of a semi-detached house. Also shown is the location M in the hallway, of the Mechanical Heat Recovery with Ventilation (MHRV) unit. Draw a line diagram of the given room layout and show a typical design for the ducting to the MHRV unit. Indicate clearly the direction of the airflow in the ducts and describe how the MHRV system works.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 6",
+      "answer": 4,
+      "ofParts": 4,
+      "perPart": 6
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q10-b-r1",
+        "kind": "anyN",
+        "verbatim": "How a mechanical heat recovery ventilation system works",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "How a mechanical heat recovery ventilation system works",
+        "group": {
+          "claimMax": 4,
+          "perOption": 6,
+          "options": [
+            "a MHRV system provides a constant supply of clean fresh pre-heated air to a building while also removing moisture laden air from “wet rooms” such as bathrooms and kitchens",
+            "the unit is generally located within the insulation layer of the building on an external wall, from this a carefully designed arrangement of ductwork extracts warm moist air from rooms such as bathrooms and kitchens",
+            "the warm air is passed through a heat exchanger that pre-heats cool fresh incoming air, the incoming air also passes through a particle filter that removes dust and pollen ensuring that the air supplied to the house is clean",
+            "fresh, clean pre-heated air is now pumped through another separate arrangement of ductwork to strategic locations in the living spaces of the building, thus ensuring an adequate supply of preheated, fresh, clean air throughout the building"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q10-c",
+    "topicId": "cons-1-2",
+    "conceptId": "advantages-siting-mhrv-unit-hallway-shown",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q10(c)",
+    "questionText": "Discuss two advantages of siting the MHRV unit in the hallway, as shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q10-c-r1",
+        "kind": "anyN",
+        "verbatim": "Locating the MHRV unit in the hallway as shown has advantages - such as",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Locating the MHRV unit in the hallway as shown has advantages - such as",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "it is located on an external wall so extract and intake ducts can be taken directly out through the external wall",
+            "it is positioned away from the living spaces and bedrooms therefore minimising the impact of noise from the unit",
+            "the unit is contained in a press, minimising any visual impact it may have",
+            "the location of the unit in the hallway allows easy access for regular maintenance and filter change",
+            "its location in the internal environment, inside the insulation layer minimises any heat loss that may occur in ducting"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q7-a",
+    "topicId": "cons-3-8",
+    "conceptId": "vertical-section-through-roof-structure-typical",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q7(a)",
+    "questionText": "To a scale of 1:10, draw a vertical section through the roof structure. Show the typical construction details from a level 400 mm below the ceiling up to ridge level, and include both external walls. Show the typical design detailing at one of the eaves and include battens, membranes and four courses of slate at eaves. Label the components.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "12 x 4 + 6 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 72,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Roof Details (any 6 × 4 marks)",
+        "marks": 48,
+        "openList": true,
+        "contextNote": "Roof Details (any 6 × 4 marks)",
+        "group": {
+          "claimMax": 12,
+          "perOption": 4,
+          "options": [
+            "Battens 50 × 30 - 40 mm",
+            "Prefabricated roof trusses at 400-600 centres",
+            "300-600 mm insulation to ceiling",
+            "Facia, soffit, gutter (any 2)",
+            "Ventilation",
+            "Double headplate 200 ×",
+            "Insulated service cavity",
+            "12.5 mm gypsum plasterboard and hardwall skim finish",
+            "Airtight tape at wall and ceiling junction to ensure airtightness",
+            "Racking board 9-20 mm OSB or plywood",
+            "Breather membrane with taped joints",
+            "Both walls",
+            "(8 6 4)"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-hl-q7-a-r2",
+        "kind": "anyN",
+        "verbatim": "Wall Details (any 5 × 4 marks)",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "Wall Details (any 5 × 4 marks)",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "Double headplate 200 ×",
+            "Vertical stud framework 200 × 50 @400 centres",
+            "Insulated service cavity",
+            "Vapour barrier to ceiling and wall-joints sealed and taped",
+            "12.5 mm gypsum plasterboard and hardwall skim finish",
+            "Airtight tape at wall and ceiling junction to ensure airtightness",
+            "Insulation 200 mm",
+            "Racking board 9-20 mm OSB or plywood",
+            "Breather membrane with taped joints",
+            "Vapour diffusion cavity/wall ties/cavity closer (any two)",
+            "100mm concrete block outer leaf",
+            "15-20 mm – 2 coats render"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q3-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-building-extension-farmhouse-shown",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q3(c)",
+    "questionText": "Discuss two advantages of building an extension to the farmhouse shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-hl-paper-p002-i1",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q3-c-r1",
+        "kind": "anyN",
+        "verbatim": "Two advantages of building an extension to the farmhouse shown – such as",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Two advantages of building an extension to the farmhouse shown – such as",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "there is an existing high quality vernacular house on site – extending it maintains the character of the house but enhances its possibilities",
+            "benefit from existing rear garden, trees, shrubs, plants – enhances wellbeing and creates a pleasant indoor atmosphere, close to nature – sounds, sights, smells, changing seasons",
+            "low environment impact – the extension is small in size but increases the flexibility of kitchen/dining/ living space",
+            "low environmental demands – services such as water, electricity, sewage treatment, roads etc. are already on site, minimum disruption needed to greatly enhance the living space",
+            "modest scale, modest costs, low borrowing requirements",
+            "highest thermal standards – orientation, insulation, airtightness – low operating cost to heat and light",
+            "single storey facilitates roof lights for penetration of natural light and sunlight",
+            "minimum energy required to extend – opening with lintels formed in rear wall – no specialised components or steel lintels needed, so minimum environmental impact and low embodied energy",
+            "modest scale is environmentally sustainable - small spans, restricted material requirements, compact form, easy to manage, clean and maintain",
+            "occupants can live in house while extension is being built, extension built first, last task is to form opening between extension and existing house – cost effective",
+            "increases living space and allows for individual requirements and preferences of owners to be incorporated into the farmhouse design and layout",
+            "provides a more light-filled comfortable interior space taking advantage of natural sunlight if extension is appropriately designed",
+            "increased levels of solar gain due to the extra glazing on the southern façade results in a more comfortable living space",
+            "reduction in energy consumption in lighting and heating will decrease the carbon footprint of the farmhouse"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 18 acceptable points under \"Two advantages of building an extension to the farmhouse shown – such as\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2017-hl-q4-a",
+    "topicId": "cons-3-3",
+    "conceptId": "functional-requirements-external-wall-new-dwelling",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q4(a)",
+    "questionText": "Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 4",
+      "answer": 6,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwellin",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "Concrete block wall",
+            "Timber frame with rainscreen",
+            "Rendered wall of timber frame and hemp-lime construction",
+            "Positives",
+            "Negatives",
+            "Ease of construction",
+            "Positives: environmental considerations",
+            "Negatives",
+            "Ease of construction - Positives",
+            "Negatives",
+            "Positives",
+            "Negatives",
+            "Ease of construction - Positives",
+            "Negatives"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-hl-q8-c",
+    "topicId": "cons-3-6",
+    "conceptId": "advances-glazing-technology-make-modern-glazing",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q8(c)",
+    "questionText": "Using notes and freehand sketches, discuss three advances in glazing technology that make modern glazing systems more energy efficient.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 4",
+      "answer": 6,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q8-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, discuss three advances in glazing technology that make modern glazing systems more en",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Insulated Glazing Units (IGU); Low Emissivity (Low-E) Glazing; Dynamic Glass/Smart Glass; Warm edge spacer",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "double or triple glazed units hermetically sealed to form a single unit",
+            "cavity filled with argon or krypton gas giving a much lower u-value",
+            "aerogel technology is being developed which allows even greater insulating properties",
+            "microscopically thin metallic layer is placed on inside surface of glass pane",
+            "low-e coating allows the suns short wave radiation to pass through to the inside",
+            "re-radiated heat from inside the dwelling in long wave form is reflected back into the room",
+            "enables glass to change tint when necessary to reduce glare and heat load",
+            "provides greater levels of comfort for the occupant",
+            "electrochromic : metallic oxide layers fixed to surface of glass",
+            "low voltage electric current passed through layers",
+            "thermochromic glass reacts and tints to the heat of the sun",
+            "warm edge spacer insulate the edges of a sealed unit and keep the panes of glass apart",
+            "warm edge spacers are made of an insulating plastic composite material which acts as a barrier to heat loss",
+            "the insulating plastic has low heat conductivity and thus reduces the amount of heat lost through the sealed unit"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2017-hl-q4-b",
+    "topicId": "cons-3-3",
+    "conceptId": "when-specifying-high-performance-external-wall",
+    "level": "higher",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 HL Q4(b)",
+    "questionText": "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wall of concrete block construction or • a wall of timber frame construction with a rainscreen of cedar cladding, as shown or • a rendered wall of timber frame and hemp-lime construction. Select any two of the above wall types, and using notes and freehand sketches, show the typical design detailing for each wall type selected. Name the typical components of each wall and include typical dimensions.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 4,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2017-hl-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wa",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "Sketch",
+            "Timber frame construction",
+            "Dimensions",
+            "Note"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

@@ -1,0 +1,1476 @@
+[
+  {
+    "id": "cons-2017-ol-q2-a",
+    "topicId": "cons-1-1",
+    "conceptId": "how-inner-leaf-insulated-type-thickness",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q2(a)",
+    "questionText": "Using notes and freehand sketches show how the inner leaf is to be insulated. Specify the type and thickness of insulation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 5",
+      "answer": 1,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Insulation",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "Type of insulation",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "Blown cellulose insulation",
+            "Sheep wool, fibreglass, woodfibre, cork board, rockwool,",
+            "Mineral fibre batts – rockwool, Gutex insulation",
+            "Extruded polystyrene – batts fitted between joists",
+            "Expanded polystyrene – pearl insulation",
+            "Spray foam insulation – water or polyurethane based"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q2-b",
+    "topicId": "cons-1-1",
+    "conceptId": "list-advantages-insulating-inner-leaf-wall",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q2(b)",
+    "questionText": "List two advantages of insulating the inner leaf of the wall.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 10,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q2-b-r1",
+        "kind": "anyN",
+        "verbatim": "Two advantages of insulating the inner leaf of the external wall",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Two advantages of insulating the inner leaf of the external wall",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Insulation reduces the heat loss",
+            "Most effective way to save energy inside the home",
+            "Thermal insulation will keep the heat in your house",
+            "Ensures better thermal comfort for occupants",
+            "Energy bills are reduced",
+            "Good for the environment",
+            "It improves the U-value rating",
+            "It improves the Building Energy Rating (BER)",
+            "The house will be warmer",
+            "Value of house is higher"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q3-a",
+    "topicId": "cons-5-2",
+    "conceptId": "solar-panel-used-provide-hot-water",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q3(a)",
+    "questionText": "A solar panel is used to provide hot water for a dwelling house as shown. Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water to a kitchen sink. Include the following in your diagram: • solar panel • rising main and cold water storage tank • hot water cylinder, as shown • pipework from solar panel to cylinder • expansion tank / vessel • pipework to hot tap • all necessary valves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 4",
+      "answer": 7,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 28,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Given sketch showing pipework necessary to supply hot water to a kitchen sink – typical sizes",
+        "marks": 28,
+        "openList": true,
+        "contextNote": "Given sketch showing pipework necessary to supply hot water to a kitchen sink – typical sizes",
+        "group": {
+          "claimMax": 7,
+          "perOption": 4,
+          "options": [
+            "15 mm rising main with stop valve",
+            "Insulated storage tank and ball valve",
+            "22 mm min overflow",
+            "22 mm cold feed with insulation from storage tank to indirect hot water cylinder",
+            "Control valve",
+            "Drain off valve",
+            "Insulated indirect hot water cylinder",
+            "22 mm expansion pipe with insulation from indirect hot water cylinder",
+            "22 mm hot water supply to kitchen sink",
+            "Solar panel",
+            "22 mm flow from solar panel to cylinder",
+            "22 mm return from cylinder to solar panel",
+            "Pump and isolator located on the return",
+            "Expansion tank / vessel and pressure release valve"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q3-b",
+    "topicId": "cons-5-2",
+    "conceptId": "advantages-solar-panel-provide-hot-water",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q3(b)",
+    "questionText": "Discuss two advantages of using a solar panel to provide hot water for a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of using a solar panel to provide hot water for a dwelling house.",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Energy bills for hot water are reduced",
+            "Water in the cylinder is seldom cold",
+            "Once installed running costs are low",
+            "An effective way to save energy inside the home",
+            "Reduces CO2 from the burning of fossil fuels",
+            "Solar power saves money",
+            "Helps to slow down climate change",
+            "Solar is an eco-friendly source of energy"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q4-b",
+    "topicId": "cons-1-1",
+    "conceptId": "reasons-why-waste-should-kept-minimum",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q4(b)",
+    "questionText": "Discuss two reasons why waste should be kept to a minimum on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 11,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why the waste should be kept to a minimum on a construction site",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Discuss two reasons why the waste should be kept to a minimum on a construction site",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Waste is a potential safety hazard – can fall over it, can fall down on a worker",
+            "Well managed site reduces the risk of accidents",
+            "It is good for the environment",
+            "It reduces energy usage and wastage",
+            "It helps promote the idea of upcycling",
+            "It promotes the idea of reduce, reuse and recycle",
+            "Landfill site are becoming full and are scarce",
+            "It is good example for all in the community",
+            "It reduces the overall cost of the building",
+            "It is expensive to dispose of waste materials",
+            "Helps to comply with environmental legislation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q5-a",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-through-external-wall-bottom",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q5(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and bottom portion of the window, showing the fixed frame of the window and the concrete cill. Show the typical construction details from 300 mm below to a level 250 mm above the concrete cill. Include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "9 x 4",
+      "answer": 9,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 36,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and bottom portion of the window, showing the fixed",
+        "marks": 36,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 9,
+          "perOption": 4,
+          "options": [
+            "19 mm external render",
+            "100 mm concrete block outer leaf",
+            "Wall tie",
+            "200 mm full-fill cavity insulation",
+            "Proprietary cavity closer",
+            "100 mm concrete block inner leaf",
+            "15 mm internal plaster with skim coat",
+            "Reinforced concrete window cill",
+            "Damp proof course (dpc) wrapped around window cill",
+            "Insulation placed at the back of concrete cill to prevent thermal/cold bridge",
+            "Expanded metal mesh to prevent shrinkage cracks between insulation and concrete blocks",
+            "100 mm × 80 mm thermally broken fixed window frame",
+            "25 mm window board",
+            "Triple glazing with low e glass"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q5-b",
+    "topicId": "cons-6-2",
+    "conceptId": "typical-design-detailing-prevent-formation-cold",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q5(b)",
+    "questionText": "Show on your drawing the typical design detailing to prevent the formation of a cold bridge at the concrete cill.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q5-b-r1",
+        "kind": "point",
+        "verbatim": "Insulation is placed at the back of the window cill to prevent thermal/cold",
+        "marks": 3,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q6-a",
+    "topicId": "cons-1-8",
+    "conceptId": "reasons-why-safety-signs-must-displayed",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q6(a)",
+    "questionText": "Discuss two reasons why safety signs must be displayed at the entrance to a construction site, as shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-ol-paper-p003-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why safety signs must be displayed at the entrance to a construction site",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Discuss two reasons why safety signs must be displayed at the entrance to a construction site",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Safety signs must be used wherever a potential hazard exists",
+            "Construction sites have many danger areas",
+            "Safety signs alert people to the dangers on a construction site",
+            "Safety signs remind all of Health and Safety on site",
+            "The signs show that machinery, work at heights and trenches exist on site",
+            "Remind site workers and visitors to wear hard hats and high visibility jackets",
+            "Remind site workers to use correct footwear"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q6-b",
+    "topicId": "cons-1-8",
+    "conceptId": "items-personal-protective-equipment-ppe-must",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q6(b)",
+    "questionText": "Using notes and freehand sketches, show three items of personal protective equipment (PPE) that must be worn by workers on a construction site. Give one specific reason why each item of personal protective equipment must be worn.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 6,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show three items of personal protective equipment (PPE) that must be worn by workers ",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Hard hat",
+            "Reason",
+            "Safety boots",
+            "Reason",
+            "High visibility vest",
+            "Reason"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q6-c",
+    "topicId": "cons-1-8",
+    "conceptId": "specific-safety-precautions-should-observed-when",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q6(c)",
+    "questionText": "Describe two specific safety precautions that should be observed when using electric power tools on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 10,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Describe two specific safety precautions that should be observed when using electric power tools on a construction site.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Check to make sure that all electrical leads are in good condition",
+            "Damaged leads are very dangerous and should be replaced",
+            "Use the correct transformer with proper outdoor connections",
+            "Make sure work is carried out in dry conditions",
+            "Electric power tools should not be used in wet conditions",
+            "Tools to be used by skilled trained operators",
+            "The tools must carry the CE mark",
+            "Eye protection should be worn as needed",
+            "Ear protection to be worn as needed",
+            "Use double insulated tools"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q7-a",
+    "topicId": "cons-1-1",
+    "conceptId": "method-preventing-floor-joists-from-twisting",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q7(a)",
+    "questionText": "Show, using notes and freehand sketches, one method of preventing the floor joists from twisting.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 4 + 1 x 4 + 1 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Herringbone bridging/strutting - Wood",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Herringbone bridging/strutting - Wood",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Struts are made of wood",
+            "The struts fit firmly and are tightened between the joists",
+            "The struts are easily fitted between the joists",
+            "This method uses less wood",
+            "Allows easy access for electrical cables and plumbing between the joists",
+            "Strengthens floor joists",
+            "Tied and wedged to adjacent walls"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q7-a-r2",
+        "kind": "anyN",
+        "verbatim": "Herringbone bridging/strutting - Metal",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Herringbone bridging/strutting - Metal",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Metal webbing/bridging used between joists",
+            "The struts are fitted similar to wooden struts"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q7-a-r3",
+        "kind": "anyN",
+        "verbatim": "Solid bridging/strutting - Wood",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Solid bridging/strutting - Wood",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "The struts are fitted vertically between the joists",
+            "Struts are staggered to allow for end nailing or in line, in which case skew nailing is used",
+            "The struts should be the same height as the joists",
+            "Strutting usually occurs at mid-span of the joists"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q7-c",
+    "topicId": "cons-3-9",
+    "conceptId": "advantage-disadvantage-converting-attic-provide-additional",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q7(c)",
+    "questionText": "Discuss one advantage and one disadvantage of converting an attic to provide additional bedroom accommodation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 4 + 1 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q7-c-r1",
+        "kind": "anyN",
+        "verbatim": "One advantage of converting an attic to provide additional bedroom accommodation",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "One advantage of converting an attic to provide additional bedroom accommodation",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Attic conversion usually costs less than ground floor extension",
+            "Attic conversion provides an extra room",
+            "Extra insulation required in attic, improves thermal performance of house – lower energy bills",
+            "May not need planning permission, if roof lights are kept to rear",
+            "Unlike ground extension no extra ground space is necessary – not extending the original footprint",
+            "Can increase the value of the house",
+            "Is good for environment – no need for foundations, block walls etc",
+            "More energy efficient form"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q7-c-r2",
+        "kind": "anyN",
+        "verbatim": "One disadvantage of converting an attic to provide additional bedroom accommodation",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "One disadvantage of converting an attic to provide additional bedroom accommodation",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Can be difficult to get the required head height",
+            "May compromise the structural element of the existing roof",
+            "There is disruption to the household while the conversion is taking place",
+            "Sometimes difficult to insulate the conversion properly",
+            "In older houses attic conversion may be difficult",
+            "May be difficult to meet building regulations with regard to habitable spaces in attic conversions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q9-a",
+    "topicId": "cons-1-1",
+    "conceptId": "how-fix-wooden-decking-joists-ensure",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q9(a)",
+    "questionText": "Show, using notes and freehand sketches, how to fix the wooden decking to the joists to ensure that the decking does not warp or bow, especially during wet weather.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 8,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Show, using notes and freehand sketches, how to fix the wooden decking to the joists to ensure that the decking does not",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Lay the decking boards on the joists starting next to the house",
+            "Allow a space of 6mm between each board",
+            "This allows for drainage and expansion in wet weather",
+            "Drill pilot holes for the fixing screws",
+            "Screws provide a more secure fixing than nailing",
+            "Use stainless steel screws",
+            "Fix the ends of the boards at first",
+            "Then fix the boards to every joist in between"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q9-b",
+    "topicId": "cons-1-1",
+    "conceptId": "recommend-applied-finish-preserve-external-decking",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q9(b)",
+    "questionText": "Recommend a suitable applied finish to preserve the external decking. Using notes and freehand sketches, describe the steps involved in preparing the wood and in applying the recommended applied finish.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 11,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Recommend a suitable applied finish to preserve the external decking",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Recommend a suitable applied finish to preserve the external decking",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "A wide range of oil based varnish/stain finishes is available for decking surfaces",
+            "These are available from regular manufacturers",
+            "Finishes are supplied under headings such as Deck oil, Deck stain or Deck paint",
+            "Paint finishes are available in a range of colours",
+            "All finishes help protect the decking and extend its life",
+            "The surface is cleaned",
+            "The surface may be cleaned using white spirit",
+            "If using water based finish use a damp cloth to clean the surface",
+            "The varnish/stain is applied using a brush or cloth",
+            "Apply two or three coats",
+            "Allow to dry between successive coats"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q1-b",
+    "topicId": "cons-3-4",
+    "conceptId": "clearly-how-prevent-penetration-rainwater-head",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q1(b)",
+    "questionText": "Show clearly on your drawing how to prevent the penetration of rainwater at the head of the door.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 4",
+      "answer": 1,
+      "ofParts": 2,
+      "perPart": 4
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q1-b-r1",
+        "kind": "anyN",
+        "verbatim": "Show clearly on your drawing how to prevent the entry of rainwater at the head of the door",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Show clearly on your drawing how to prevent the entry of rainwater at the head of the door",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Inserting Damp Proof Course (DPC) between the inner and the outer leaf",
+            "Damp Proof Course sloping towards the outside"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q1-a",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-through-top-door-showing",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q1(a)",
+    "questionText": "To a scale of 1:5 draw a vertical section through the top of the door, showing the wall, the concrete lintels over the door, the doorframe and the door. Show the typical construction details from 400 mm below the lintels to a level 400 mm above the lintels. Include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "Specification – typical detail",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "Specification – typical detail",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "19 mm external render",
+            "Insulated plasterboard with skim coat",
+            "100 mm concrete block outer leaf",
+            "Proprietary cavity closer",
+            "200 mm full-fill cavity insulation",
+            "150 mm × 70 mm thermally broken",
+            "Damp Proof Course - DPC door frame",
+            "100mm concrete block inner leaf",
+            "Draught proof strips to door",
+            "15 mm internal plaster with skim coat",
+            "90 mm door top rail and insulation",
+            "Reinforced concrete lintels",
+            "12 mm vertical sheeting on both sides",
+            "18 mm plywood of the door"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 15 acceptable points under \"Specification – typical detail\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2017-ol-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "large-tongue-groove-joint-between-flooring",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q7(b)",
+    "questionText": "Using a large freehand sketch, show the tongue-and- groove joint between two flooring boards and list two advantages of this method of jointing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "Two advantages a tongue-and-groove joint between two flooring boards - Notes",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Two advantages a tongue-and-groove joint between two flooring boards - Notes",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "The joint closes the gap between the boards",
+            "The joint helps to draught proof the floor",
+            "The joint adds strength to the overall floor",
+            "If shrinkage occurs the gap will remain closed",
+            "Boards can be glued together at the tongue",
+            "Boards can be secret nailed through the tongue"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-hand-rail",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-hand-rail",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Hand rail",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • handrail.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-hand-rail-r1",
+        "kind": "anyN",
+        "verbatim": "Hand rail",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Hand rail",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This is solid member A fitted to the newel post",
+            "The handrail may also be fitted to a wall surface adjoining the stairs",
+            "The rail is located parallel to the pitch line of a stairs",
+            "The balusters are fitted to the underneath surface of the hand rail",
+            "The handrail is generally made of wood with section size of 75 mm ×"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-damp-proof-course",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-damp-proof-course",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Damp-proof course",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • damp-proof course.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-damp-proof-course-r1",
+        "kind": "anyN",
+        "verbatim": "Damp-proof course",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Damp-proof course",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This is an impermeable barrier fitted in external and internal walls",
+            "The DPC is linked to the damp-proof membrane/radon barrier",
+            "It prevents rising damp in walls",
+            "It prevents the passage of damp from external leaf to the internal leaf at window and door openings",
+            "Damp-proof course may be vertical or horizontal",
+            "The DPC is fitted at 150mm above the external surrounds of the building",
+            "Heavy duty plastic is normally used as a DPC",
+            "Other suitable materials may be used"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-wind-turbine",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-wind-turbine",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Wind Turbine",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wind turbine.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-wind-turbine-r1",
+        "kind": "anyN",
+        "verbatim": "Wind Turbine",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Wind Turbine",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This is a device used to convert the energy of the wind into mechanical energy",
+            "This energy is then used to generate electricity",
+            "Wind turbines are made up of three main parts, blades, generator and structural support tower",
+            "Wind turbines may be used for small scale applications",
+            "They may also be used for large scale production of commercial electricity",
+            "Small wind turbines are used as auxiliary power on boats/caravans and charging batteries",
+            "Wind turbines are located to exploit the wind energy at a given location",
+            "Wind is an eco-friendly source of energy"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-box-dovetail-joint",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-box-dovetail-joint",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Box dovetail joint",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • box dovetail joint.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-box-dovetail-joint-r1",
+        "kind": "anyN",
+        "verbatim": "Box dovetail joint",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Box dovetail joint",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "The joint is used for the manufacture of box shapes",
+            "This joint is used in high quality furniture",
+            "It may be constructed by hand or with special jigs",
+            "The slope of the dovetail is important for maximum strength",
+            "The dovetail slope in softwood is usually 1:6",
+            "The dovetail slope in hardwood is usually 1:8",
+            "The joint has a series of tails and pins as part of the design",
+            "The joint gives decorative appearance when correctly made",
+            "Contrasting woods may be used to highlight the dovetail effect",
+            "Used mainly in drawer construction"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-ball-valve",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-ball-valve",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Ball valve",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • ball valve.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-ball-valve-r1",
+        "kind": "anyN",
+        "verbatim": "Ball valve",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Ball valve",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This valve is used to control the entry of water into toilet cisterns or tanks",
+            "The control valve is mounted on the side of the cistern/tank",
+            "The valve is connected to the water supply",
+            "The valve is linked to a plastic float within the cistern/tank",
+            "As water is used the float drops and the arm opens the valve",
+            "The water enters the cistern/tank rising the float to close the valve cutting off the supply of water",
+            "A lever valve, as shown, also incorporates a ball mechanism"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-joist-hanger",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-joist-hanger",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Joist hanger",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • joist hanger.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-joist-hanger-r1",
+        "kind": "anyN",
+        "verbatim": "Joist hanger",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Joist hanger",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Joist Hangers are designed to hold timber joists in place",
+            "They are used to anchor decking, floors and ceilings",
+            "Joist hangers wrap around three sides of the joist end",
+            "Nails or screws are placed into predrilled holes to secure the joist",
+            "Joist hangers are versatile and stronger than using nails or screws alone",
+            "They are also easier to fit and relatively cheap",
+            "They come in many shapes and sizes to fit different beams and framing configurations",
+            "They are available as galvanised units"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-purlin",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-purlin",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Purlin",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • purlin.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-purlin-r1",
+        "kind": "anyN",
+        "verbatim": "Purlin",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Purlin",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This is the member A stretching under the rafter B",
+            "It provides support to the roof structure",
+            "The purlin provides alignment of the rafters",
+            "The purlin is an important part of a traditional cut roof",
+            "The purlin helps in the construction of attic space development",
+            "The typical cross section size of a purlin is 175 mm × 75 mm",
+            "It is supported by struts which transfer the weight to an internal load bearing wall",
+            "The purlin may also be supported by means of a Rolled Steel Joist (RSJ)"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-energy-rating",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-energy-rating",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Energy rating",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • energy rating.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-energy-rating-r1",
+        "kind": "anyN",
+        "verbatim": "Energy rating",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Energy rating",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This is a table showing the efficiency of electrical appliances",
+            "The rating labels vary from A to G",
+            "An A rating is the most energy efficient with G being the least efficient",
+            "The labels give useful information to the consumer as they choose between various models",
+            "The ratings are shown on a coloured list",
+            "Energy rating also applies to dwelling houses",
+            "A Building Energy Rating or BER is an energy label report for homes. The rating is again the A to G scale",
+            "A-rated homes are the most energy efficient and have the lowest energy bills"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q8-None-service-cavity",
+    "topicId": "cons-3-8",
+    "conceptId": "explain-five-handrail-box-dovetail-joint-service-cavity",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q8 — Service cavity",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • service cavity.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q8-None-service-cavity-r1",
+        "kind": "anyN",
+        "verbatim": "Service cavity",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Service cavity",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "This is a separate cavity space on the inside of an external wall S",
+            "The cavity is used to carry electrical wiring and plumbing services",
+            "This cavity prevents damage to the airtightness membrane",
+            "It protects the airtightness of the external wall structure",
+            "Service cavity is used as part of solid walls or timber frame construction"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2017-ol-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "external-patio-has-many-advantages-occupants",
+    "level": "ordinary",
+    "year": 2017,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2017 OL Q9(c)",
+    "questionText": "An external patio has many advantages for the occupants of a dwelling house. Discuss two advantages of having an external patio, as shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2017-ol-paper-p004-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3 x 2 + 2 x 1 + 2 x 1 + 2 x 2 + 2 x 1 + 2 x 3 + 2 x 2 + 2 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 34,
+    "rows": [
+      {
+        "id": "cons-2017-ol-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "A 2 Design and applied shaping to edges",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "A 2 Design and applied shaping to edges",
+        "group": {
+          "claimMax": 3,
+          "perOption": 2,
+          "options": [
+            "E 1 Overall quality of assembled artefact",
+            "slope",
+            "C",
+            "sloped edge                        ",
+            "D",
+            "Experiment"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q9-c-r2",
+        "kind": "anyN",
+        "verbatim": "C 1 Piece A",
+        "marks": 2,
+        "openList": true,
+        "contextNote": "C 1 Piece A",
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "joints ‐ dovetail (3 marks) ‐ mortices (3 × 2  marks) B",
+            "slopes (2 × 1 mark) 11 2 Piece B A",
+            "joints ‐ bottom trench (2 marks) ‐ mortice (2 marks) ‐ top trench (3 marks)",
+            "slopes (2 × 1 mark) 3 Piece C",
+            "joints  ‐ dovetail pins (3 marks)",
+            "trench (2 marks)",
+            "slope (1 mark)"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q9-c-r3",
+        "kind": "anyN",
+        "verbatim": "E 4 Piece D",
+        "marks": 2,
+        "openList": true,
+        "contextNote": "E 4 Piece D",
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "joints ‐ tenons (2 × 2 marks)",
+            "trench (2 marks)",
+            "slopes (2 × 1 mark)"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q9-c-r4",
+        "kind": "anyN",
+        "verbatim": "D 5 Piece E",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "D 5 Piece E",
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "joints ‐ bare faced tenons (2 × 3 marks)",
+            "stopped chamfers (2 × 2 marks)"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q9-c-r5",
+        "kind": "anyN",
+        "verbatim": "A Planning of Project",
+        "marks": 2,
+        "openList": true,
+        "contextNote": "A Planning of Project",
+        "group": {
+          "claimMax": 2,
+          "perOption": 1,
+          "options": [
+            "Ability to design an appropriate plan of procedure",
+            "Evidence of research",
+            "Preparation of working drawings/use of models as graphic aids"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q9-c-r6",
+        "kind": "anyN",
+        "verbatim": "B Report Writing",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "B Report Writing",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Design folio detailing planning, execution and evaluation of project",
+            "Critical appraisal of project for quality, function and finish",
+            "Conclusions from practical experience of project work"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q9-c-r7",
+        "kind": "anyN",
+        "verbatim": "C Manipulative Skills",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "C Manipulative Skills",
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Skills in preparation and finishing of materials",
+            "Safe use of tools and machines - Hand/Power/CNC",
+            "Skills in assembly of materials"
+          ]
+        }
+      },
+      {
+        "id": "cons-2017-ol-q9-c-r8",
+        "kind": "anyN",
+        "verbatim": "D Presentation of Project",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "D Presentation of Project",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Task completed to acceptable standard",
+            "Appropriate use of materials",
+            "Satisfactory knowledge of construction technology"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

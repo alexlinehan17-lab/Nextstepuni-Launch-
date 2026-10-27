@@ -99,7 +99,25 @@ describe('Geography exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'geography');
     expect(papers).toHaveLength(60);
     expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(720);
-    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1317);
+    // 1,317 reference-derived mappings plus 2026 Higher Part One Q5, which the
+    // reference snapshot omitted and the independent 2026 review restores, and
+    // 2024 Higher Part One Q5 and 2023 Higher Part One Q2 (Volcanic Activity),
+    // which the reference tagged only with a new-course topic (not examinable
+    // before 2028) and the independent 2024 and 2023 reviews file under
+    // earthquakes and volcanoes; and from the 2022 Higher review, Part One Q1
+    // (plate tectonics, again new-course only in the reference) and options
+    // 14, 15, 17, 18, 20, 21, 23 and 24, which the reference omitted; and from
+    // the 2021 Higher review, Part One Q1, Q6 and Q7, and the 2021 Ordinary
+    // review, Part One Q6, Q7 and Q8, which it also omitted; and from the
+    // 2020 Higher review, Part One Q3, Q6, Q7, Q8 and Q9 (omitted) and Q1
+    // (new-course only in the reference), and the 2020 Ordinary review, Part
+    // One Q5, Q6, Q7 and Q12 (omitted). The 2015-2019 Higher and
+    // Ordinary reviews add topics to the Part Two questions already filed (24
+    // and 12 a sitting). That makes 1,345; and since 2026-10-23 every 2010-2019
+    // shared booklet also files its twelve Part One questions as their own
+    // questions (n = 1000 + printed number), in English and in the Irish
+    // edition's mirror: + 240 + 240.
+    expect(examQuestionTopicMappingsForSubject('geography')).toHaveLength(1825);
     const taxonomyById = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     for (const paper of papers) {
       for (const question of paper.q) {

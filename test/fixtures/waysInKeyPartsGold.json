@@ -1982,16 +1982,18 @@
 "units":[
 {
 "action":"Describe",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Mining"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 },
 {
 "action":"explain",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Mining"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 }
 ]
@@ -2220,9 +2222,10 @@
 "units":[
 {
 "action":"Examine",
+"count":"one of the following surface processes",
 "focus":"how humans interact",
-"conditions":[
-"Coastal processes"
+"use":[
+"River processes • Coastal processes • Mass movement processes"
 ]
 }
 ]
@@ -2388,20 +2391,26 @@
 "units":[
 {
 "action":"Describe",
+"count":"one of the following economic activities",
 "focus":"the development",
 "conditions":[
-"Financial services",
 "with reference to a developed economy",
 "that you have studied"
+],
+"use":[
+"Tourism • Financial services • Service and footloose industries"
 ]
 },
 {
 "action":"explain",
+"count":"one of the following economic activities",
 "focus":"the development",
 "conditions":[
-"Financial services",
 "with reference to a developed economy",
 "that you have studied"
+],
+"use":[
+"Tourism • Financial services • Service and footloose industries"
 ]
 }
 ]
@@ -2411,16 +2420,18 @@
 "units":[
 {
 "action":"Describe",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Oil/Gas exploitation"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 },
 {
 "action":"explain",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Oil/Gas exploitation"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 }
 ]
@@ -2553,24 +2564,19 @@
 ]
 },
 {
-"id":"geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-development-of-transport-in-th",
+"id":"geography-2021-ol-p2-q6b-the-reasons-why-tourists-are-attra-the-importance-of-manufacturing-to",
 "units":[
 {
 "action":"Explain",
-"focus":"The reasons why tourists are attracted to the region",
+"count":"any two of the following",
+"focus":"the development",
 "conditions":[
 "with reference to a European region",
 "not in Ireland",
 "that you have studied"
-]
-},
-{
-"action":"Explain",
-"focus":"The development of transport in the region",
-"conditions":[
-"with reference to a European region",
-"not in Ireland",
-"that you have studied"
+],
+"use":[
+"The reasons why tourists are attracted to the region • The importance of manufacturing to the region • The development of transport in the region"
 ]
 }
 ]
@@ -2697,41 +2703,10 @@
 "focus":"the highest Human Development Index value",
 "conditions":[
 "in 2018"
+],
+"use":[
+"the table above"
 ]
-},
-{
-"action":"What was",
-"focus":"the gross national income per capita",
-"conditions":[
-"(in US$)",
-"for Australia in 2018"
-]
-},
-{
-"action":"Which",
-"count":"two countries",
-"focus":"the lowest life expectancy at birth",
-"conditions":[
-"in 2018"
-]
-},
-{
-"action":"Calculate",
-"focus":"the difference between the gross national income per capita",
-"conditions":[
-"(in US$)",
-"in Ireland and Mexico"
-]
-},
-{
-"action":"List",
-"count":"two reasons",
-"focus":"why some countries have a higher Human Development Index value than others"
-},
-{
-"action":"Explain briefly",
-"count":"one factor",
-"focus":"that influences life expectancy"
 }
 ]
 },
@@ -2925,39 +2900,6 @@
 "(%)",
 "for March 2021"
 ]
-},
-{
-"action":"In which month",
-"focus":"the male and female unemployment rates the same"
-},
-{
-"action":"For how many months",
-"focus":"the female unemployment rate higher than the male unemployment rate"
-},
-{
-"action":"Was",
-"focus":"the unemployment rate for males",
-"conditions":[
-"increasing or decreasing",
-"from May to September"
-]
-},
-{
-"action":"Calculate",
-"focus":"the average unemployment rate",
-"conditions":[
-"(%)",
-"for females",
-"for the months shown on the chart above"
-],
-"use":[
-"the chart above"
-]
-},
-{
-"action":"Explain briefly",
-"count":"two benefits",
-"focus":"having a low unemployment rate"
 }
 ]
 },
@@ -2969,32 +2911,9 @@
 "focus":"tourists visited Ireland",
 "conditions":[
 "In 2023"
-]
-},
-{
-"action":"What was",
-"focus":"the average spend per trip made by tourists"
-},
-{
-"action":"What was",
-"focus":"the average length of stay",
-"conditions":[
-"(in nights)"
-]
-},
-{
-"action":"Where",
-"focus":"most ferry passengers come from",
-"conditions":[
-"in 2023"
-]
-},
-{
-"action":"Name",
-"count":"one",
-"focus":"tourist attraction",
-"conditions":[
-"in Ireland"
+],
+"use":[
+"the information above"
 ]
 }
 ]
@@ -3006,24 +2925,8 @@
 "action":"Discuss",
 "count":"three of the following",
 "focus":"Sustainability is a model for future human and economic development",
-"conditions":[
-"Resource use"
-]
-},
-{
-"action":"Discuss",
-"count":"three of the following",
-"focus":"Sustainability is a model for future human and economic development",
-"conditions":[
-"Fair trade"
-]
-},
-{
-"action":"Discuss",
-"count":"three of the following",
-"focus":"Sustainability is a model for future human and economic development",
-"conditions":[
-"Justice issues"
+"use":[
+"Resource use • Fair trade • Justice issues • Self-reliance"
 ]
 }
 ]
@@ -3132,38 +3035,9 @@
 "focus":"the types of fault",
 "conditions":[
 "labelled A and B"
-]
-},
-{
-"action":"Name",
-"count":"each of",
-"focus":"the landforms created by faulting",
-"conditions":[
-"labelled C and D"
-]
-},
-{
-"action":"What type of fault",
-"focus":"where the process of shearing occurs"
-},
-{
-"action":"Explain briefly",
-"focus":"what causes faulting"
-},
-{
-"action":"Name",
-"count":"two periods",
-"focus":"fold mountain building",
-"conditions":[
-"that shaped the Irish landscape",
-"over the last 400 million years"
-]
-},
-{
-"action":"state whether",
-"focus":"A syncline is the part of a fold where the layers of rock have been pushed upwards",
-"conditions":[
-"true or false"
+],
+"use":[
+"the diagram above"
 ]
 }
 ]

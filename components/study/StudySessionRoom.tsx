@@ -4,6 +4,7 @@ import { useStudyTransitionSound } from '../../hooks/useStudyTransitionSound';
 import StudySessionTimer, { type StudySessionTimerProps } from './StudySessionTimer';
 import StudyBreak from './StudyBreak';
 import StudySoundToggle from './StudySoundToggle';
+import StudyNotifyOffer from './StudyNotifyOffer';
 import { animateStudyChange, studyControlOrigin } from './studyMotion';
 import './study-motion.css';
 
@@ -46,7 +47,7 @@ export default function StudySessionRoom({ onPause, onResume, onLeave, paused, .
 
   return <div className="study-room-stage" data-transitioning={Boolean(transition)}>
     <div ref={timerPage} className="study-room-page" data-front={!showBreak} hidden={showBreak && !transition} inert={showBreak || Boolean(transition)} aria-hidden={showBreak || Boolean(transition)}>
-      <StudySessionTimer {...timerProps} paused={paused && showBreak} onLeave={onLeave} onTogglePause={event => change(true, event)} soundControl={<StudySoundToggle muted={sound.muted} />} />
+      <StudySessionTimer {...timerProps} paused={paused && showBreak} onLeave={onLeave} onTogglePause={event => change(true, event)} soundControl={<StudySoundToggle muted={sound.muted} />} notifyOffer={<StudyNotifyOffer />} />
     </div>
     <div ref={breakPage} className="study-room-page study-room-break-page" data-front={showBreak} hidden={!showBreak && !transition} inert={!showBreak || Boolean(transition)} aria-hidden={!showBreak || Boolean(transition)}>
       <StudyBreak subject={timerProps.subject} elapsedSeconds={timerProps.elapsedSeconds} onResume={event => change(false, event)} onLeave={onLeave} sound={sound} />

@@ -1,0 +1,34 @@
+/* Geography allocation: the parts of the reveal that are Geography's own. The
+   rows, chips, part headings and directions come from claim-rows.css. */
+.mb-geo-alloc { display: grid; gap: 14px; }
+.mb-geo-group { display: grid; gap: 7px; }
+.mb-geo-unit { display: grid; gap: 7px; }
+.mb-geo-unit-label { font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--mb-label); margin-top: 4px; }
+
+/* An SRP counter sits in the same frame as a row: minus, count, plus, and the
+   marks those SRPs are worth. */
+.mb-geo-srp {
+  width: 100%; text-align: left; display: grid; gap: 10px; align-items: center;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  padding: 11px 12px; border-radius: 12px;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
+  font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
+  transition: background 160ms, border-color 160ms;
+}
+.mb-geo-srp[data-claimed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }
+.mb-geo-counter { display: inline-flex; align-items: center; gap: 4px; }
+.mb-geo-counter button {
+  min-width: 32px; height: 32px; padding: 0 9px; border-radius: 8px; cursor: pointer;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
+  font: 700 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums;
+}
+.mb-geo-counter button:disabled { opacity: .4; cursor: default; }
+.mb-geo-counter output { min-width: 26px; text-align: center; font: 750 15px/1 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; color: var(--mb-ink); }
+
+.mb-geo-pool { margin: 0; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+
+@media (max-width: 480px) {
+  .mb-geo-srp { grid-template-columns: minmax(0, 1fr) auto; }
+  .mb-geo-srp .mb-claim-chip { grid-column: 2; grid-row: 1; }
+  .mb-geo-srp .mb-geo-counter { grid-column: 1 / -1; }
+}

@@ -1,0 +1,9 @@
+from paper_review_lib import record
+record(2011, 'higher', {
+  'LC033ALP000EV.pdf': dict(scheme=list(range(5, 44)), notes=[
+    'Visually reviewed all twelve pages of the 2011 Higher paper (one booklet; eight of ten short questions at 10 marks, the compulsory Applied Business Question at 80 and four of seven long questions at 60: one from Part 1, two from Part 2 and one other): the cover and mark grid, the ten short questions on pages 2-4 (including the Natural Options Ltd figures, the trade figures and answer box, and the true/false table), the ABQ on page 5, the seven long questions on pages 6-10 (every quotation and extract, the underlined taxes, the Colm, Kilronan Ltd and Moore Ltd information) and the blank pages 11-12.',
+    'Each Section 1 and Section 3 task was checked against the allocation summary on scheme pages 5 and 7-12 and the support notes on pages 13-17 and 23-43; the ABQ keeps its earlier cards. No card existed for Sections 1 and 3, so all 45 are new. Printed sub-parts with their own published marks are separate cards (Section 1 Q1-Q5 and Q9; Section 3 Q1(B), Q2(C), Q4(B), Q5(B), Q5(C), Q6(A), Q7(B) and Q7(C)). Section 1 Q5(b) prints (i) and (ii) in one sentence over one answer box, so it is one card whose two response groups carry the summary’s 3 and 3.',
+    'No printed choice of task occurs: the three underlined taxes in Section 3 Q5(B) are all required, and Q6(A)(i) requires both a merger and a takeover.',
+    'All raw selection matches are classified, including the twelve printed page counters. Topic Atlas uses the single-booklet identity: short questions by number, the ABQ, and long questions as S3Q1-S3Q7.',
+    'This source-pinned record covers the English Higher paper only. Source hashes and exact ID sets detect stale evidence; parser counts do not independently prove completeness.']),
+})

@@ -459,6 +459,9 @@ const ARTWORK_ALIASES: Record<string, string> = {
   "classics": "classical-studies",
   "english and communications": "english",
   "gaeilge chumarsaideach": "irish",
+  // Archive-only subjects from the 1995-2009 Paper Trail papers.
+  "an cursa gaeilge agus chumarsaideach": "irish",
+  "technical drawing": "design-and-communication-graphics",
   "graphics": "design-and-communication-graphics",
   "graphics and construction studies": "construction-studies",
   "history early modern": "history",
@@ -535,7 +538,12 @@ const ARTWORK_ALIASES: Record<string, string> = {
   "life community and work": "lcvp-link-modules",
   "lcvp": "lcvp-link-modules",
   "link modules": "lcvp-link-modules",
-  "chemical and physical science": "physics-and-chemistry"
+  "chemical and physical science": "physics-and-chemistry",
+  "leaving cert maths": "mathematics",
+  "introduction to ict": "computer-science",
+  "vocational preparation and guidance": "lcvp-link-modules",
+  "leisure and recreation": "active-leisure-studies",
+  "arts education": "art"
 };
 
 function artworkKey(subject: string): string {

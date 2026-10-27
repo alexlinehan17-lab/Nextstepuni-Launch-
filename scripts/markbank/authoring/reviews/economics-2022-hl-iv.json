@@ -1,0 +1,1064 @@
+{
+  "subjectId": "economics",
+  "year": 2022,
+  "level": "higher",
+  "lang": "iv",
+  "fileid": "LC034ALP000IV",
+  "reviewedAt": "2026-10-07",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "completeSubject": false,
+  "paperSha256": "e7c6bc0614d65c9f56e3318e2524997e03cf3fef08b83fd55be93f09426da1fc",
+  "schemeSha256": "d040a60e8fe5de10611f6379ad7f4e08046e1d0759180ac978170fa2494962ce",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-1-4",
+        "economics-1-1"
+      ],
+      "boundaryReason": "The printed parts are separately priced. Lists of possible responses are illustrative, not finite printed answer pools.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 10,
+          "cardId": "econ-2022-hl-sa-q1-a",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b",
+          "marks": 5,
+          "cardId": "econ-2022-hl-sa-q1-b",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "equivalenceReason": "Paperp3 and schemep5 match PED calculation10 and law-of-demand explanation5. Same graph points, €4→€5 and quantity8→4, PED−3. Irish working retains Q/P notation."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-0",
+        "economics-1-1"
+      ],
+      "boundaryReason": "The printed parts are separately priced. Lists of possible responses are illustrative, not finite printed answer pools.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 9,
+          "cardId": "econ-2022-hl-seca-q2-a",
+          "topicId": "economics-4-2",
+          "answerGuidance": "Irish source note: the infographic shows OTN (GNP) falling 6.7%. The official scheme acknowledges that this should show an increase. For this task use the exports increase of 6.4% and imports increase of 5.4%."
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2022-hl-sa-q2-b",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "equivalenceReason": "Paperp4 and schemep5 match net-exports classification+figures9 and personal-consumption factor6. Irish infographic incorrectly shows GNP(OTN) down6.7%; the scheme footnote explicitly acknowledges it should be up. Exports6.4/imports5.4 and personal consumption12.6 match English and supply the asked data."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-2-2"
+      ],
+      "boundaryReason": "Part (a) is an evaluative agree/disagree choice, with two nine-mark routes. Its examples are an open response menu.",
+      "tasks": [
+        {
+          "key": "a/agree",
+          "marks": 9,
+          "cardId": "econ-2022-hl-sa-q3-a-agree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/disagree",
+          "marks": 9,
+          "cardId": "econ-2022-hl-sa-q3-a-disagree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2022-hl-sa-q3-b",
+          "topicId": "economics-2-2"
+        }
+      ],
+      "equivalenceReason": "Paperp5 and schemep6 match two evaluative agree/disagree routes9 and market-failure explanation+example6. IPA in the paper is MUP; same alcohol examples and open reasons."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-1"
+      ],
+      "boundaryReason": "Parts (b) and (c) are alternatives at the shared seven-mark tariff. FDI reasons are assessed together because the 3+2+2 tariff is not a per-reason split.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 8,
+          "cardId": "econ-2022-hl-seca-q4-a-ticks",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b",
+          "marks": 7,
+          "cardId": "econ-2022-hl-sa-q4-b",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c",
+          "marks": 7,
+          "cardId": "econ-2022-hl-sa-q4-c",
+          "topicId": "economics-4-1"
+        }
+      ],
+      "equivalenceReason": "Paperp6 and schemep7 match all three injections/leakage ticks8 and justification or FDI reasons7. Scheme mistakenly heads the alternatives (a)/(b); follow paper(b)/(c). FDI has no per-reason tariff, so complete7 remains together."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-2-1",
+        "economics-3-1"
+      ],
+      "boundaryReason": "Retain the printed asymmetry: (b) is 4+4, (c) is 4+3. Do not change either to force a question total.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 7,
+          "cardId": "econ-2022-hl-sa-q5-a",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "b",
+          "marks": 8,
+          "cardId": "econ-2022-hl-sa-q5-b",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c",
+          "marks": 7,
+          "cardId": "econ-2022-hl-sa-q5-c",
+          "topicId": "economics-3-1",
+          "answerGuidance": "The Irish scheme omits the mark cell beside this task. The English scheme explicitly gives the same two government-policy impacts 7 marks (4 + 3)."
+        }
+      ],
+      "equivalenceReason": "Paperp7 and schemepp8–9 match ageing causes7, benefits8 and government-policy effects. Irish scheme omits a cell beside(c); English schemePDFp9 explicitly prices that same two-impact task7(4+3). That published English cell supplies this route’s tariff. Do not force the alternative benefits8 to7.",
+      "allocationEvidence": {
+        "lang": "ev",
+        "fileid": "LC034ALP000EV",
+        "schemePages": [
+          9
+        ],
+        "reason": "Paperp7 and schemepp8–9 match ageing causes7, benefits8 and government-policy effects. Irish scheme omits a cell beside(c); English schemePDFp9 explicitly prices that same two-impact task7(4+3). That published English cell supplies this route’s tariff. Do not force the alternative benefits8 to7."
+      }
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        8,
+        9
+      ],
+      "schemePages": [
+        10
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "boundaryReason": "The scheme jointly prices the diagrams at 4 and explanations at 2 each; neither (b) nor (c) has an adjacent standalone tariff. Keep complete (a)+(b) and (a)+(c) routes at the Section A question total, without inferring per-diagram or per-alternative marks.",
+      "tasks": [
+        {
+          "key": "a+b",
+          "marks": 15,
+          "cardId": "econ-2022-hl-sa-q6-a-b",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Both editions require the diagrams and their explanations plus this short-run answer. Irish mark cells are displaced; assess the complete 15-mark route without assigning separate marks to its diagrams or alternative."
+        },
+        {
+          "key": "a+c",
+          "marks": 15,
+          "cardId": "econ-2022-hl-sa-q6-a-c",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Both editions require the diagrams and their explanations plus this long-run answer. Irish mark cells are displaced; assess the complete 15-mark route without assigning separate marks to its diagrams or alternative."
+        }
+      ],
+      "equivalenceReason": "Paperpp8–9 and schemep10 match both market/firm diagrams with explanations plus either short-run or long-run survival. Irish cells1x4,1x3,4,2,2 are displaced among question stems and alternatives; English schemep10 has4,2,2 only beside(a). Neither layout supports a reliable common part split. Retain each complete printed15-mark route with no priced rows. Diagram Q/P/D/AR/MR labels match English."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "canonicalNodeIds": [
+        "economics-3-3",
+        "economics-3-4"
+      ],
+      "boundaryReason": "The printed parts are separately priced. Lists of possible responses are illustrative, not finite printed answer pools.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 1,
+          "cardId": "econ-2022-hl-sa-q7-a-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-seca-q7-a-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2022-hl-sa-q7-b",
+          "topicId": "economics-3-4"
+        }
+      ],
+      "equivalenceReason": "Paperp10 and schemep11 match chartB1, explanation8 and two other ECB roles6. Paper uses BCE while scheme also uses ECB; the chart choices and data are the same."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        12
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-2"
+      ],
+      "boundaryReason": "Hidden-economy definition5 concerns unrecorded national income (canonical4.1), not a fiscal-policy intervention. Supply-chain reasons10 concern international trade. Scheme examples are illustrative, not finite routes.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 5,
+          "cardId": "econ-2022-hl-sa-q8-a",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b",
+          "marks": 10,
+          "cardId": "econ-2022-hl-sa-q8-b",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "equivalenceReason": "Paperp11 and schemep12 match hidden-economy definition5 and two supply-chain causes10. Irish paper geilleagar folaithe and scheme geilleagar ceilte name the same unrecorded activity; national-income topic retained."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        12
+      ],
+      "canonicalNodeIds": [
+        "economics-2-2"
+      ],
+      "boundaryReason": "The printed parts are separately priced. Lists of possible responses are illustrative, not finite printed answer pools.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 10,
+          "cardId": "econ-2022-hl-sa-q9-a",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "b",
+          "marks": 5,
+          "cardId": "econ-2022-hl-sa-q9-b",
+          "topicId": "economics-2-2"
+        }
+      ],
+      "equivalenceReason": "Paperp12 and schemep12 match private cost+benefit5+5 and social benefits5. Both required private components remain in the same ten-mark task, not optional alternatives."
+    },
+    {
+      "n": "10",
+      "paperPages": [
+        13
+      ],
+      "schemePages": [
+        13
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "boundaryReason": "The printed parts are separately priced. Lists of possible responses are illustrative, not finite printed answer pools.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2022-hl-seca-q10-a",
+          "topicId": "economics-0-1",
+          "answerGuidance": "The Irish scheme omits this task’s mark cell; the English scheme explicitly awards the same calculation and explanation 6 marks."
+        },
+        {
+          "key": "b",
+          "marks": 9,
+          "cardId": "econ-2022-hl-sa-q10-b",
+          "topicId": "economics-0-1"
+        }
+      ],
+      "equivalenceReason": "Paperp13 and schemep13 match opportunity cost D→H and pointX efficiency. Irish omits(a)’s6 cell; the identical English task is explicitly6 on English schemePDFp13. Part(b)9 is printed in both. Same quantities, diagram and explanation.",
+      "allocationEvidence": {
+        "lang": "ev",
+        "fileid": "LC034ALP000EV",
+        "schemePages": [
+          13
+        ],
+        "reason": "Paperp13 and schemep13 match opportunity cost D→H and pointX efficiency. Irish omits(a)’s6 cell; the identical English task is explicitly6 on English schemePDFp13. Part(b)9 is printed in both. Same quantities, diagram and explanation."
+      }
+    },
+    {
+      "n": "11",
+      "paperPages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "schemePages": [
+        14,
+        15,
+        16
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-3-5",
+        "economics-1-0",
+        "economics-1-2",
+        "economics-0-1",
+        "economics-1-3"
+      ],
+      "boundaryReason": "(c)(iii) requires both sides. The printed 2x6 tariff is for the pair, not 12 for each side. All example menus are open.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2022-hl-q11-a-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-q11-a-ii",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "b/i",
+          "marks": 11,
+          "cardId": "econ-2022-hl-q11-b-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2022-hl-q11-b-ii",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q11-b-iii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q11-c-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q11-c-ii",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-q11-c-iii-for",
+          "topicId": "economics-1-3",
+          "answerGuidance": "The Irish question requires arguments both for and against, just like the English question. Give one of each at 6 marks each; the Irish scheme’s “or” wording does not replace the paper’s required headings."
+        }
+      ],
+      "equivalenceReason": "Paperpp14–17 and schemepp14–16 match all eight task routes and75total. Land diagram retains D/S/P/Q notation. The Irish scheme prose says for OR against airports although the paper requires both sides, as does the English paper; use one argument each at the printed2x6 tariff."
+    },
+    {
+      "n": "12",
+      "paperPages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "schemePages": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3",
+        "economics-0-2"
+      ],
+      "boundaryReason": "Monopoly/oligopoly advantages and planning arguments for/against are required headings with separate cells (5 each and 4 each), not optional answer routes.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 9,
+          "cardId": "econ-2022-hl-q12-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 6,
+          "cardId": "econ-2022-hl-q12-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/iii",
+          "marks": 4,
+          "cardId": "econ-2022-hl-q12-a-iii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/iv",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q12-a-iv",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/i/monopoly",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q12-b-i-monopoly",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i/oligopoly",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q12-b-i-oligopoly",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 19,
+          "cardId": "econ-2022-hl-q12-b-ii",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Irish solution labels: CI = marginal cost (MC), II = marginal revenue (MR), and MCH = average cost (AC). Use the same curve positions as in the English solution."
+        },
+        {
+          "key": "b/iii",
+          "marks": 6,
+          "cardId": "econ-2022-hl-q12-b-iii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q12-c-i",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "c/ii/for",
+          "marks": 4,
+          "cardId": "econ-2022-hl-q12-c-ii-for",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii/against",
+          "marks": 4,
+          "cardId": "econ-2022-hl-q12-c-ii-against",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "equivalenceReason": "Paperpp18–21 and schemepp17–22 match eleven routes: concentration9,deregulation6,privatisation4+5,advantages5each,monopoly diagram/explanation19,conditions6,EV challenges8,planning4each. Irish solution labels CI(marginal cost),II(marginal revenue),MCH(average cost); remaining Q/P/D/AR notation matches. Blank question axes impose no alternative labels."
+    },
+    {
+      "n": "13",
+      "paperPages": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "schemePages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3"
+      ],
+      "boundaryReason": "(a)(i) requires both a five-mark explanation and four-mark example. Incentive/tax are required separately priced headings. (c)(ii) is a yes/no evaluative choice, two eight-mark routes.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 9,
+          "cardId": "econ-2022-hl-q13-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 16,
+          "cardId": "econ-2022-hl-q13-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i/incentive",
+          "marks": 7,
+          "cardId": "econ-2022-hl-q13-b-i-incentive",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/i/tax",
+          "marks": 7,
+          "cardId": "econ-2022-hl-q13-b-i-tax",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-q13-b-ii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/i",
+          "marks": 16,
+          "cardId": "econ-2022-hl-q13-c-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii/yes",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q13-c-ii-yes",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii/no",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q13-c-ii-no",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "equivalenceReason": "Paperpp22–25 and schemepp23–26 match eight routes including yes/no corporate-tax alternatives8each. Required social-benefit example4 accompanies explanation5; tax distinction16, incentive7,tax7,other interventions12 and corporate-tax effects16 match. Required headings are not optional routes."
+    },
+    {
+      "n": "14",
+      "paperPages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "schemePages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "canonicalNodeIds": [
+        "economics-3-3",
+        "economics-1-5",
+        "economics-2-1"
+      ],
+      "boundaryReason": "(b)(i) B is average TOTAL cost in the paper. Scheme mislabels it average variable cost while using total cost in the calculation. Preserve the official result and disclose the label discrepancy in guidance.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 6,
+          "cardId": "econ-2022-hl-q14-a-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 18,
+          "cardId": "econ-2022-hl-q14-a-ii-ticks",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/i",
+          "marks": 9,
+          "cardId": "econ-2022-hl-q14-b-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/ii",
+          "marks": 16,
+          "cardId": "econ-2022-hl-q14-b-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/iii",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q14-b-iii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q14-c-i",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q14-c-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q14-c-iii",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "equivalenceReason": "Paperpp26–29 and schemepp27–30 match eight routes,75total. The Irish paper B column says mean cost and uses total-cost figures; the scheme repeats the erroneous average-variable-cost label while calculating400000/2. Follow average total cost. Both editions require every classification and all three cost curves."
+    },
+    {
+      "n": "15",
+      "paperPages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "schemePages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "canonicalNodeIds": [
+        "economics-1-2",
+        "economics-1-3",
+        "economics-1-0",
+        "economics-4-2",
+        "economics-1-4",
+        "economics-4-1"
+      ],
+      "boundaryReason": "One depreciation period is an open observation from a continuous graph, not a finite printed menu. Subsidy/quota are both required; the two terms jointly answer the printed ask. Both paper editions label the exchange-rate axis €/£ in error; scheme prose interprets values as sterling per euro. Its decimal values are pounds, not pence. Guidance follows that interpretation and readable graph values.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q15-a-i",
+          "topicId": "economics-1-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q15-a-ii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/iii",
+          "marks": 14,
+          "cardId": "econ-2022-hl-q15-a-iii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2022-hl-q15-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 14,
+          "cardId": "econ-2022-hl-q15-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 6,
+          "cardId": "econ-2022-hl-q15-b-iii",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/i",
+          "marks": 7,
+          "cardId": "econ-2022-hl-q15-c-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2022-hl-q15-c-ii",
+          "topicId": "economics-4-1"
+        }
+      ],
+      "equivalenceReason": "Paperpp30–34 and schemepp31–36 match eight routes,75total, all chart data and optional observed depreciation periods. Both editions incorrectly label the exchange-rate axis €/£; both schemes interpret it as sterling bought per euro. Decimal values are pounds, not the pence stated in scheme prose. Milk, trade and EU-budget tasks match; subsidy/quota are required headings."
+    },
+    {
+      "n": "16",
+      "paperPages": [
+        35,
+        36,
+        37,
+        38
+      ],
+      "schemePages": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "canonicalNodeIds": [
+        "economics-0-2",
+        "economics-1-3"
+      ],
+      "boundaryReason": "(a)(i) pays two impacts at 8+4. (b)(ii) requires government AND citizen strategies, priced separately at 7 each. (c)(iii) is 5 (2+3), not 2.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2022-hl-q16-a-i",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2022-hl-q16-a-ii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/i",
+          "marks": 7,
+          "cardId": "econ-2022-hl-q16-b-i",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b/ii/government",
+          "marks": 7,
+          "cardId": "econ-2022-hl-q16-b-ii",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b/ii/citizens",
+          "marks": 7,
+          "cardId": "econ-2022-hl-q16-b-ii-citizens",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "c/i",
+          "marks": 15,
+          "cardId": "econ-2022-hl-q16-c-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2022-hl-q16-c-ii",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "c/iii",
+          "marks": 5,
+          "cardId": "econ-2022-hl-q16-c-iii",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "equivalenceReason": "Paperpp35–38 and schemepp37–41 match eight routes,75total. Housing impacts12 and interventions12; sustainability7; government and citizen strategies7each; minimum-price graph+explanation15; consumer steps10; firm step5. Required actors are separately priced, open response lists are illustrative."
+    }
+  ],
+  "selections": [
+    {
+      "page": 2,
+      "text": "Freagair 5 cheist as 10 gceist sa roinn seo.",
+      "classification": "exam-question-selection",
+      "reason": "Exam-level question selection; all ten short and six long questions retained."
+    },
+    {
+      "page": 2,
+      "text": "Freagair 3 cheist as 6 cheist.",
+      "classification": "exam-question-selection",
+      "reason": "Exam-level question selection; all ten short and six long questions retained."
+    },
+    {
+      "page": 2,
+      "text": "Scríobh do chuid freagraí le peann gorm nó le peann dubh.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction or copyright notice; no practice route."
+    },
+    {
+      "page": 2,
+      "text": "obair bhreise i gcúl an leabhráin. Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction or copyright notice; no practice route."
+    },
+    {
+      "page": 2,
+      "text": "i láthair an scrúdaitheora. Mar sin is féidir nach bhfeicfidh an scrúdaitheoir aon rud",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction or copyright notice; no practice route."
+    },
+    {
+      "page": 3,
+      "text": "Freagair 5 cheist as 10 gceist",
+      "classification": "exam-question-selection",
+      "reason": "Exam-level question selection; all ten short and six long questions retained."
+    },
+    {
+      "page": 4,
+      "text": "(a) Agus úsáid á baint agat as na sonraí thuas, mínigh cé acu tionchar leathnaithe nó tionchar",
+      "classification": "answer-classification",
+      "reason": "Q2(a) one correct net-exports classification from the figures; not two optional routes."
+    },
+    {
+      "page": 4,
+      "text": "Cuir tic ( ) sa bhosca cuí chun a chur in iúl cé acu leathnú nó crapadh atá ann.",
+      "classification": "answer-classification",
+      "reason": "Q2(a) one correct net-exports classification from the figures; not two optional routes."
+    },
+    {
+      "page": 5,
+      "text": "(a) An aontaíonn tú leis an IPA nua seo ar an alcól?",
+      "classification": "finite-route",
+      "reason": "Q3(a) evaluative agree/disagree choice; both nine-mark routes retained."
+    },
+    {
+      "page": 5,
+      "text": "Aontaím: Ní aontaím:",
+      "classification": "finite-route",
+      "reason": "Q3(a) evaluative agree/disagree choice; both nine-mark routes retained."
+    },
+    {
+      "page": 6,
+      "text": "ioncaim nó mar shileadh as an sreabhadh ciorclach ioncaim.",
+      "classification": "answer-classification",
+      "reason": "Q4(a) all three statements require injection/leakage classification; no selection of entries."
+    },
+    {
+      "page": 6,
+      "text": "Freagair (b) nó (c)",
+      "classification": "finite-route",
+      "reason": "Q4(b)/(c) justification or FDI reasons; both seven-mark tasks retained."
+    },
+    {
+      "page": 6,
+      "text": "(b) Sa bhosca thíos cosain gach ceann de na roghanna a rinne tú i gcuid (a) thuas.",
+      "classification": "required-headings",
+      "reason": "Q4(b) justify all three classifications, not one choice."
+    },
+    {
+      "page": 6,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q4(b)/(c) justification or FDI reasons; both seven-mark tasks retained."
+    },
+    {
+      "page": 7,
+      "text": "Freagair (b) nó (c)",
+      "classification": "finite-route",
+      "reason": "Q5(b)/(c) benefits or government-policy effects; both routes retained with their own printed tariffs."
+    },
+    {
+      "page": 7,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q5(b)/(c) benefits or government-policy effects; both routes retained with their own printed tariffs."
+    },
+    {
+      "page": 8,
+      "text": "Mínigh gach ceann de do léaráidí thíos.",
+      "classification": "required-headings",
+      "reason": "Q6(a) explain both diagrams; both required within either complete route."
+    },
+    {
+      "page": 9,
+      "text": "Freagair (b) nó (c)",
+      "classification": "finite-route",
+      "reason": "Q6(a)+(b) or (a)+(c): both complete fifteen-mark routes retained."
+    },
+    {
+      "page": 9,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q6(a)+(b) or (a)+(c): both complete fifteen-mark routes retained."
+    },
+    {
+      "page": 10,
+      "text": "Ní thaispeánann ach ceann amháin de na cairteacha thíos an treocht go cruinn i ráta úis an Bhainc",
+      "classification": "answer-classification",
+      "reason": "Q7 one historically correct ECB-rate chart and justification; do not create a route for the incorrect chart."
+    },
+    {
+      "page": 10,
+      "text": "(a) (i) Sainaithin cé acu cairt a thaispeánann an treocht cheart go cruinn i ráta an BCE ó 2000",
+      "classification": "answer-classification",
+      "reason": "Q7 one historically correct ECB-rate chart and justification; do not create a route for the incorrect chart."
+    },
+    {
+      "page": 10,
+      "text": "Cuir tic ( ) i gceann amháin de na boscaí thíos chun do rogha a chur in iúl.",
+      "classification": "answer-classification",
+      "reason": "Q7 one historically correct ECB-rate chart and justification; do not create a route for the incorrect chart."
+    },
+    {
+      "page": 10,
+      "text": "(ii) Cosain an rogha a rinne tú in (i) thuas.",
+      "classification": "answer-classification",
+      "reason": "Q7 one historically correct ECB-rate chart and justification; do not create a route for the incorrect chart."
+    },
+    {
+      "page": 14,
+      "text": "Freagair 3 cheist as 6 cheist",
+      "classification": "exam-question-selection",
+      "reason": "Exam-level question selection; all ten short and six long questions retained."
+    },
+    {
+      "page": 15,
+      "text": "(b) (i) Mínigh, le cuidiú léaráide atá lipéadaithe go hiomlán, an dóigh a ndéantar praghas",
+      "classification": "not-a-task-selection",
+      "reason": "An dóigh means how the price of land is determined in the required diagram; not a finite alternative."
+    },
+    {
+      "page": 17,
+      "text": "(iii) Ba chóir do rialtas na hÉireann níos mó tacaíochta airgeadais a chur ar fáil d’aerfoirt",
+      "classification": "required-headings",
+      "reason": "The paper requires both for and against arguments; they are not evaluative either/or routes."
+    },
+    {
+      "page": 21,
+      "text": "Déan plé ar chúis amháin ar chóir do rialtas na hÉireann cead pleanála a thabhairt",
+      "classification": "required-headings",
+      "reason": "The paper requires both for and against arguments; they are not evaluative either/or routes."
+    },
+    {
+      "page": 21,
+      "text": "i gcomhair tuilleadh ionad sonraí in Éirinn agus cúis amháin nár chóir don rialtas cead",
+      "classification": "required-headings",
+      "reason": "The paper requires both for and against arguments; they are not evaluative either/or routes."
+    },
+    {
+      "page": 24,
+      "text": "ioncam bliantúil €750 milliún nó níos mó acu, ráta 12.5% a ghearrfar ar gach gnólacht eile.",
+      "classification": "not-a-task-selection",
+      "reason": "Turnover threshold €750m or more in the stimulus; not a choice of tasks."
+    },
+    {
+      "page": 25,
+      "text": "(ii) Ar chóir do Rialtas na hÉireann ráta nua na cánach corparáide, 15%, a ghearradh",
+      "classification": "finite-route",
+      "reason": "Q13(c)(ii) evaluative yes/no corporate-tax proposal; both eight-mark routes retained."
+    },
+    {
+      "page": 25,
+      "text": "Ba chóir: Níor chóir:",
+      "classification": "finite-route",
+      "reason": "Q13(c)(ii) evaluative yes/no corporate-tax proposal; both eight-mark routes retained."
+    },
+    {
+      "page": 26,
+      "text": "a leanas. Mínigh do rogha.",
+      "classification": "answer-classification",
+      "reason": "All cost-table entries need the appropriate fixed/variable classification plus explanation."
+    },
+    {
+      "page": 28,
+      "text": "teach ba chóir dó a tháirgeadh? Mínigh do fhreagra.",
+      "classification": "answer-classification",
+      "reason": "Profit-maximising output determined from given costs and revenue; no open evaluative choice."
+    },
+    {
+      "page": 30,
+      "text": "(ii) Mínigh gach ceann de na téarmaí eacnamaíochta seo a leanas i gcomhthéacs",
+      "classification": "required-headings",
+      "reason": "Explain both subsidy and quota; not a choice between the two."
+    },
+    {
+      "page": 31,
+      "text": "de na foirgnimh feirme a fheabhsú agus/nó a thógáil nó chun trealamh a d’fhéadfadh",
+      "classification": "not-a-task-selection",
+      "reason": "Flexible description of uses of grant aid, not alternative question routes."
+    },
+    {
+      "page": 33,
+      "text": "(iii) Mínigh an dóigh a bhféadfadh tuiscint ar phraghasleaisteachas an éilimh (PED i mBéarla)",
+      "classification": "not-a-task-selection",
+      "reason": "An dóigh means how PED knowledge helps farmers; the response remains one open explanatory task."
+    },
+    {
+      "page": 35,
+      "text": "(RPZs i mBéarla) ar aon dul leis an ráta boilscithe, agus tá toirmeasc ar dhíshealbhú curtha",
+      "classification": "not-a-task-selection",
+      "reason": "Irish phrase ar aon dul means in line with inflation; not a selection instruction."
+    },
+    {
+      "page": 39,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction or copyright notice; no practice route."
+    },
+    {
+      "page": 40,
+      "text": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction or copyright notice; no practice route."
+    },
+    {
+      "page": 40,
+      "text": "Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche dá bhfuil sé",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction or copyright notice; no practice route."
+    },
+    {
+      "page": 40,
+      "text": "beartaithe. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction or copyright notice; no practice route."
+    }
+  ],
+  "equivalentTo": {
+    "lang": "ev",
+    "fileid": "LC034ALP000EV"
+  },
+  "reviewNote": "All40 paper and48 scheme pages visually inspected. Scheme42–45 is the separate research project;46–48 blank/back cover. All75 English task routes also occur in Irish. The allocation comparison records missing/displaced Irish cells, the officially acknowledged GNP graphic error, and graph-label differences. English published tariffs are used only for the explicitly matched tasks identified below, not inferred by arithmetic."
+}

@@ -20,19 +20,24 @@
  */
 
 import '../launchpad/launchpad.css';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
   ArrowLeft,
+  ArrowUpRight,
   BookOpen,
+  ChevronLeft,
+  ChevronRight,
   Clock3,
   Download,
   Highlighter,
   Pause,
   Play,
   ListChecks,
+  Minus,
   PenLine,
+  Plus,
   Repeat2,
   RotateCcw,
   SlidersHorizontal,
@@ -43,13 +48,30 @@ import {
   ZoomOut,
 } from 'lucide-react';
 import { MotionDiv } from '../Motion';
-import HorizontalTabs from '../ui/HorizontalTabs';
+import KobraScope, {
+  Alert,
+  AlertDescription,
+  Button,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  Progress,
+  ProgressLabel,
+  Spinner,
+  Switch,
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  Toasts,
+  toast,
+} from '../approved-ui-runtime';
 import { prettyBytes } from './storage';
 import { fetchPdfCached } from './pdfCache';
 import { clearLoopPlace, loadLoopPlace, saveLoopPlace } from './loopResume';
 import { composeReceipt, downloadReceipt, type LoopReceiptStats } from './receipt';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
-import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
+import { frequencyFor, questionLabel, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
 import { markerLicence, type MarkerLicence } from './trust';
 import { loadCalibration, paceScale } from './wpmStore';
@@ -62,16 +84,19 @@ import type { PaperTopicTags } from '../../types/paperTrailTopics';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 // pdf.js lazy singleton + region renderer — shared with the Topic Vault.
-import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
+import { loadPdfjs, openPdfDocument, type PdfjsModule } from './pdfjsLoader';
 import CropView from './CropView';
+import { captureZoomAnchor, restoreZoomAnchor, type ZoomAnchor } from './zoomAnchor';
 import MobileQuestionTools from './MobileQuestionTools';
-import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
+import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
+import { frenchAudioForPaper } from './frenchAudio';
+import FrenchPaperAudio from './FrenchPaperAudio';
+// The chrome (top bar, Tools menu, page bar, status toasts) is Kobra; see the file.
+import './viewer-chrome.css';
 
-/** The viewer's square ink buttons (option E): hairline, offset shadow, orange when on. */
-const E_BUTTON = 'inline-flex items-center gap-1.5 h-[34px] px-3 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold transition-[transform,box-shadow,background-color,color] duration-150 shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none';
-const E_BUTTON_OFF = 'bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100';
-const E_BUTTON_ON = 'bg-[#F26B1F] text-white';
+/** The scheme panel's compact square ink buttons (option E) for its step and text-size controls. */
+const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
@@ -198,6 +223,7 @@ const Viewer: React.FC<ViewerProps> = ({
   onClose,
   onPosition,
 }) => {
+  const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
   const [side, setSide] = useState<Side>(initialSide === 'scheme' && scheme ? 'scheme' : 'paper');
   const [zoom, setZoom] = useState(1);
   const [epoch, setEpoch] = useState(0); // bumped on resize/rotation → canvases re-render
@@ -215,7 +241,7 @@ const Viewer: React.FC<ViewerProps> = ({
   const schemePrefetched = useRef(false);
 
   // ── on-paper study tools (live text-layer overlays) ──
-  const [toolsOpen, setToolsOpen] = useState(false); // tools menu popover
+  const [toolsOpen, setToolsOpen] = useState(false); // Tools menu (a controlled Kobra DropdownMenu)
   const [paceOn, setPaceOn] = useState(false); // time-budget chips
   const [decodeOn, setDecodeOn] = useState(false); // command-word highlighting
   const [markingOpen, setMarkingOpen] = useState(false); // "how it's marked" card
@@ -256,6 +282,18 @@ const Viewer: React.FC<ViewerProps> = ({
   useEffect(() => {
     const mq = window.matchMedia('(min-width: 768px)');
     const on = () => setIsWide(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
+  // A scheme opened beside the paper needs room for both. From 1100px the
+  // workspace widens to about half the screen; narrower tablets open the
+  // scheme over the paper instead.
+  const [isRoomy, setIsRoomy] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 1100px)').matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1100px)');
+    const on = () => setIsRoomy(mq.matches);
     mq.addEventListener('change', on);
     return () => mq.removeEventListener('change', on);
   }, []);
@@ -310,7 +348,7 @@ const Viewer: React.FC<ViewerProps> = ({
   // scroll/zoom re-renders (a fresh filter() each render would defeat it).
   const anchorsByPage = useMemo(() => {
     const m = new Map<number, PaperAnswerQuestion[]>();
-    if (answerMap) for (const q of answerMap.q) {
+    if (answerMap) for (const q of printedQuestionAnchors(answerMap.q)) {
       const list = m.get(q.pP);
       if (list) list.push(q);
       else m.set(q.pP, [q]);
@@ -433,8 +471,8 @@ const Viewer: React.FC<ViewerProps> = ({
         );
         if (!mountedRef.current) return;
         const task = bytes
-          ? pdfjs.getDocument({ data: new Uint8Array(bytes) })
-          : pdfjs.getDocument({ url: target.url });
+          ? openPdfDocument(pdfjs, { data: new Uint8Array(bytes) })
+          : openPdfDocument(pdfjs, { url: target.url });
         s.task = task;
         const pdf = await withTimeout(task.promise, LOAD_TIMEOUT_MS);
         if (!mountedRef.current) {
@@ -567,13 +605,19 @@ const Viewer: React.FC<ViewerProps> = ({
   loopStateRef.current = loop;
   const answerMapRef = useRef<PaperAnswerMap | null>(null);
   answerMapRef.current = answerMap;
+  // The Full Loop walks the printed questions. Reviewed practice tasks stay in
+  // the map so a focused jump can still find them, but a student looping the
+  // paper answers each printed question once rather than its parts again.
+  const loopQuestions = useMemo(() => (answerMap ? printedQuestionAnchors(answerMap.q) : []), [answerMap]);
+  const loopQuestionsRef = useRef(loopQuestions);
+  loopQuestionsRef.current = loopQuestions;
   const attemptMarkedRef = useRef(0);
   attemptMarkedRef.current = Object.keys(attempt.marks ?? {}).length;
 
   const persistLoopPlace = useCallback(() => {
     const l = loopStateRef.current;
     if (!l || !storageNs) return;
-    const total = answerMapRef.current?.q.length ?? 0;
+    const total = loopQuestionsRef.current.length;
     if (total < 1) return;
     saveLoopPlace(
       storageNs,
@@ -634,7 +678,7 @@ const Viewer: React.FC<ViewerProps> = ({
     // If the map is already in, clamp against its live length (the saved
     // total guards most drift; a re-generated shorter map is the edge case —
     // the clamp effect below covers a map that arrives after this tap).
-    const liveTotal = answerMapRef.current?.q.length;
+    const liveTotal = loopQuestionsRef.current.length || undefined;
     const idx = liveTotal ? Math.min(place.idx, liveTotal - 1) : place.idx;
     setLoop({ idx, qStartTs: Date.now() });
     setResumePlace(null);
@@ -660,10 +704,10 @@ const Viewer: React.FC<ViewerProps> = ({
   // A resumed index can outrun a re-generated (shorter) answer map that arrives
   // after the resume tap — clamp once the map is in.
   useEffect(() => {
-    if (loop && answerMap && answerMap.q.length > 0 && loop.idx >= answerMap.q.length) {
-      setLoop({ idx: answerMap.q.length - 1, qStartTs: Date.now() });
+    if (loop && loopQuestions.length > 0 && loop.idx >= loopQuestions.length) {
+      setLoop({ idx: loopQuestions.length - 1, qStartTs: Date.now() });
     }
-  }, [loop, answerMap]);
+  }, [loop, loopQuestions]);
 
   // Mid-loop persistence: save on every loop step, and on tab close / bfcache
   // eviction while a loop is live. Unmount is covered separately below.
@@ -690,9 +734,9 @@ const Viewer: React.FC<ViewerProps> = ({
   // Jump to the current loop question once the map is in.
   useEffect(() => {
     if (!loop || !answerMap) return;
-    const q = answerMap.q[loop.idx];
+    const q = loopQuestions[loop.idx];
     if (q) scrollToQuestion(q);
-  }, [loop, answerMap, scrollToQuestion]);
+  }, [loop, answerMap, loopQuestions, scrollToQuestion]);
 
   // Per-question elapsed readout, 1s cadence while the loop bar is showing.
   useEffect(() => {
@@ -705,7 +749,7 @@ const Viewer: React.FC<ViewerProps> = ({
     setReveal(null);
     setLoop(l => {
       if (!l || !answerMap) return l;
-      if (l.idx + 1 >= answerMap.q.length) {
+      if (l.idx + 1 >= loopQuestions.length) {
         // Finished: snapshot the wall clock for the receipt and retire the
         // saved place — a completed loop has nothing to resume.
         loopTotalSecRef.current = loopStartedAtRef.current
@@ -718,7 +762,7 @@ const Viewer: React.FC<ViewerProps> = ({
       }
       return { idx: l.idx + 1, qStartTs: Date.now() };
     });
-  }, [answerMap, storageNs]);
+  }, [answerMap, loopQuestions, storageNs]);
 
   const recordMark = useCallback(
     (n: string, mark: SelfMark | null) => {
@@ -864,17 +908,6 @@ const Viewer: React.FC<ViewerProps> = ({
     setExaminerOpen(false);
   }, [side]);
 
-  // Close the tools menu on outside tap.
-  useEffect(() => {
-    if (!toolsOpen) return;
-    const onDown = (e: PointerEvent) => {
-      const t = e.target as HTMLElement;
-      if (!t.closest('[data-tools-anchor]')) setToolsOpen(false);
-    };
-    window.addEventListener('pointerdown', onDown);
-    return () => window.removeEventListener('pointerdown', onDown);
-  }, [toolsOpen]);
-
   // Dialog behaviour: focus, Escape, Tab trap; resize/rotation re-render.
   useEffect(() => {
     headerRef.current?.focus();
@@ -947,11 +980,15 @@ const Viewer: React.FC<ViewerProps> = ({
   }, []);
 
   // ── scroll → current page + persistence ──
+  // The point being read on the paper, kept current so a change in the
+  // paper column's width (the scheme panel opening) can hold it in place.
+  const layoutAnchor = useRef<ZoomAnchor | null>(null);
   const onScroll = useCallback(() => {
     const el = scrollerRef.current;
     const s = sessions.current[side];
     if (!el || s.state !== 'ready') return;
     s.scrollTop = el.scrollTop;
+    if (side === 'paper') layoutAnchor.current = captureZoomAnchor(el);
     const kids = el.querySelectorAll<HTMLElement>('[data-page]');
     const mid = el.scrollTop + el.clientHeight / 2;
     let current = 1;
@@ -1046,12 +1083,51 @@ const Viewer: React.FC<ViewerProps> = ({
     });
   }, [focusQuestion, answerMap, focusAnchorMap, focusAnchorSettled, focusAnchorsUrl, session.state]);
 
+  // Zoom resizes every page, so note the point being read before it and
+  // scroll back to it once the new widths are laid out, before paint.
+  const zoomAnchor = useRef<ZoomAnchor | null>(null);
   const zoomBy = (dir: 1 | -1) => {
     const i = ZOOM_STEPS.indexOf(zoom);
-    setZoom(ZOOM_STEPS[Math.min(ZOOM_STEPS.length - 1, Math.max(0, i + dir))]);
+    const next = ZOOM_STEPS[Math.min(ZOOM_STEPS.length - 1, Math.max(0, i + dir))];
+    if (next === zoom) return;
+    zoomAnchor.current = scrollerRef.current ? captureZoomAnchor(scrollerRef.current) : null;
+    setZoom(next);
   };
+  useLayoutEffect(() => {
+    const anchor = zoomAnchor.current;
+    zoomAnchor.current = null;
+    const el = scrollerRef.current;
+    if (!anchor || !el) return;
+    restoreZoomAnchor(el, anchor);
+    onScroll();
+  }, [zoom, onScroll]);
 
-  const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || reveal);
+  const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
+  // The scheme reads at panel width, so beside the paper it gets half the
+  // screen (Oct 2026: a 360px panel set the answers at about 7px).
+  const schemeBeside = inlineScheme && isRoomy && Boolean(reveal);
+  const besideRef = useRef(schemeBeside);
+  useLayoutEffect(() => {
+    if (besideRef.current === schemeBeside) return;
+    besideRef.current = schemeBeside;
+    const el = scrollerRef.current;
+    if (el && layoutAnchor.current) restoreZoomAnchor(el, layoutAnchor.current);
+    setEpoch(n => n + 1); // pages re-render at the column's new width
+  }, [schemeBeside]);
+
+  // Step the open scheme through the paper's questions, bringing each
+  // question into view beside it.
+  const revealIndex = reveal ? loopQuestions.findIndex(x => x.n === reveal.n) : -1;
+  const stepReveal = useCallback((dir: 1 | -1) => {
+    const cur = revealRef.current;
+    const list = loopQuestionsRef.current;
+    const i = cur ? list.findIndex(x => x.n === cur.n) : -1;
+    const next = i < 0 ? undefined : list[i + dir];
+    if (!next) return;
+    onReveal(next);
+    scrollToQuestion(next);
+  }, [onReveal, scrollToQuestion]);
+
   const schemeContent = reveal ? (
               <RevealContent
                 q={reveal}
@@ -1076,8 +1152,28 @@ const Viewer: React.FC<ViewerProps> = ({
                 onRecordMark={m => recordMark(reveal.n, m)}
                 onClose={() => setReveal(null)}
                 onFullScheme={jumpSchemeToPage}
+                onStep={!loop && revealIndex >= 0 ? stepReveal : undefined}
+                canPrev={revealIndex > 0}
+                canNext={revealIndex >= 0 && revealIndex < loopQuestions.length - 1}
               />
   ) : null;
+
+  // Answers map fetch status (chips appear once ready), as a runtime toast.
+  useStatusToast(
+    'pt-viewer-question-tools',
+    (answersOn || topicsOn) && side === 'paper' && answerState !== 'idle'
+      ? answerState === 'loading'
+        ? { message: 'Loading question tools…', state: 'pending' }
+        : { message: 'Couldn’t load question tools — try again later.', state: 'error' }
+      : null,
+  );
+  // Text-scan status while the overlay tools read the paper.
+  useStatusToast(
+    'pt-viewer-text-scan',
+    side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens
+      ? { message: 'Reading the paper…', state: 'pending' }
+      : null,
+  );
 
   // ── render ──
   return createPortal(
@@ -1089,192 +1185,180 @@ const Viewer: React.FC<ViewerProps> = ({
       aria-modal="true"
       aria-label={`${title} — document viewer`}
     >
-      {/* Header */}
-      <div
-        ref={headerRef}
-        tabIndex={-1}
-        className="shrink-0 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 outline-none"
-        style={{
-          paddingTop: 'calc(8px + var(--sat, 0px))',
-          paddingBottom: 8,
-          paddingLeft: 'calc(12px + var(--sal, 0px))',
-          paddingRight: 'calc(12px + var(--sar, 0px))',
-        }}
-      >
-        <div className="flex flex-wrap items-center gap-2 max-w-3xl mx-auto">
-          <button
-            onClick={() => onCloseRef.current()}
-            aria-label="Close viewer"
-            className="p-2 -ml-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-          >
-            <ArrowLeft size={19} />
-          </button>
-          <div className="flex-1 min-w-0">
-            <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">{title}</p>
-            {subtitle && <p className="text-[11px] truncate text-zinc-500">{subtitle}</p>}
-          </div>
-          <div className="order-last flex w-full min-w-0 items-center justify-end gap-1.5 sm:order-none sm:w-auto sm:gap-2">
-          {scheme && (
-            <HorizontalTabs
-              variant="pill"
-              size="sm"
-              label="Paper or marking scheme"
-              className="pt-document-toggle shrink-0"
-              value={side}
-              onChange={next => setSide(next as Side)}
-              options={[{ value: 'paper', label: 'Paper' }, { value: 'scheme', label: 'Scheme' }]}
-            />
-          )}
-          {/* Answers — the flagship per-question marking-scheme reveal. A
-              standalone one-tap toggle (not buried in the Tools menu), shown
-              whenever this paper has a verified answer map. */}
-          {side === 'paper' && answersUrl && (
-            <button
-              onClick={toggleAnswers}
-              aria-pressed={answersOn}
-              aria-label="Show the marking scheme beside each question"
-              className={`${E_BUTTON} ${answersOn ? E_BUTTON_ON : E_BUTTON_OFF}`}
+      {/* Header: Kobra chrome (viewer-chrome.css). */}
+      <KobraScope className="nsu-paper-viewer">
+        <div ref={headerRef} tabIndex={-1} className="pvc-top">
+          <div className="pvc-bar">
+            <Button
+              variant="outline"
+              size="icon"
+              className="nsu-ink-outline pvc-icon"
+              onClick={() => onCloseRef.current()}
+              aria-label="Close viewer"
             >
-              <span className={`pt-mode-dot ${answersOn ? 'is-on' : ''}`} aria-hidden="true" /><span>Answers</span>
-            </button>
-          )}
-          {side === 'paper' && (
-            <div className="relative" data-tools-anchor>
-              <button
-                onClick={() => setToolsOpen(o => !o)}
-                aria-expanded={toolsOpen}
-                aria-label="Study tools for this paper"
-                className={`${E_BUTTON} ${activeToolCount > 0 ? E_BUTTON_ON : E_BUTTON_OFF}`}
-              >
-                <SlidersHorizontal size={14} className="min-[360px]:hidden" /><span className="hidden min-[360px]:inline">Tools</span>
-                {activeToolCount > 0 && (
-                  <span className="ml-0.5 min-w-[16px] h-4 px-1 inline-flex items-center justify-center rounded-full bg-white/25 text-[10px] tabular-nums">
-                    {activeToolCount}
-                  </span>
-                )}
-              </button>
-              <AnimatePresence>
-                {toolsOpen && (
-                  <MotionDiv
-                    key="tools-menu"
-                    initial={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -6, scale: 0.98 }}
-                    transition={{ duration: 0.16, ease: [0.16, 1, 0.3, 1] }}
-                    role="menu"
-                    className="absolute right-0 mt-2 w-64 z-[70] rounded-md bg-white dark:bg-zinc-900 border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 shadow-[3px_3px_0_#1A1A1A] dark:shadow-[3px_3px_0_#E4E4E7] overflow-hidden"
-                    style={{ transformOrigin: 'top right' }}
-                  >
-                    <p className="px-3.5 pt-3 pb-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
-                      Study tools
-                    </p>
-                    {answersUrl && (
-                      <ToolRow
-                        icon={<BookOpenCheck size={15} />}
-                        title="Answers"
-                        sub="Marking scheme beside each question"
-                        on={answersOn}
-                        onClick={() => {
-                          toggleAnswers();
-                          setToolsOpen(false);
-                        }}
-                      />
-                    )}
-                    {answersUrl && storageNs && (
-                      <ToolRow
-                        icon={<ListChecks size={15} />}
-                        title="Triage"
-                        sub="Rate each question before you start"
-                        busy={answerState === 'loading'}
-                        onClick={openTriage}
-                      />
-                    )}
-                    {answersUrl && scheme && storageNs && (
-                      <ToolRow
-                        icon={<PenLine size={15} />}
-                        title="Self-mark"
-                        sub="Score yourself against the scheme"
-                        on={selfMarkOn}
-                        busy={selfMarkOn && answerState === 'loading'}
-                        onClick={toggleSelfMark}
-                      />
-                    )}
-                    {answersUrl && scheme && storageNs && (
-                      <ToolRow
-                        icon={<Repeat2 size={15} />}
-                        title="The Full Loop"
-                        sub="Work the paper question by question — attempt, reveal, mark"
-                        on={!!loop}
-                        busy={!!loop && answerState === 'loading'}
-                        onClick={startLoop}
-                      />
-                    )}
-                    <ToolRow
-                      icon={<Highlighter size={15} />}
-                      title="Command words"
-                      sub="Decode what each question demands"
-                      on={decodeOn}
-                      busy={decodeOn && scanState === 'loading'}
-                      onClick={() => toggleTool('decode')}
-                    />
-                    {timing && (
-                      <ToolRow
-                        icon={<Play size={15} />}
-                        title="Exam mode"
-                        sub={`Clock set to ${timing.totalMinutes} min`}
-                        on={examOn}
-                        onClick={() => {
-                          setExamOn(v => {
-                            const next = !v;
-                            setRunning(next);
-                            if (next) setElapsed(0);
-                            return next;
-                          });
-                          setToolsOpen(false);
-                        }}
-                      />
-                    )}
-                    {topics && (
-                      <ToolRow
-                        icon={<TrendingUp size={15} />}
-                        title="Topics & frequency"
-                        sub="How often each topic comes up + drill it across years"
-                        on={topicsOn}
-                        busy={topicsOn && answerState === 'loading'}
-                        onClick={toggleTopics}
-                      />
-                    )}
-                    {formulae && (
-                      <ToolRow
-                        icon={<BookOpen size={15} />}
-                        title="Formulae & Tables"
-                        sub="Jump to the booklet section"
-                        onClick={openFormulae}
-                      />
-                    )}
-                    {scanState === 'error' && (
-                      <p className="px-3.5 py-2 text-[11px] text-zinc-500">
-                        Couldn’t read this paper’s text layer — overlays unavailable.
-                      </p>
-                    )}
-                  </MotionDiv>
-                )}
-              </AnimatePresence>
+              <ArrowLeft aria-hidden="true" />
+            </Button>
+            <div className="pvc-heading">
+              <p className="pvc-title">{title}</p>
+              {subtitle && <p className="pvc-subtitle">{subtitle}</p>}
             </div>
-          )}
+            <div className="pvc-controls">
+              {scheme && (
+                <Tabs className="pvc-document" value={side} onValueChange={next => setSide(next as Side)}>
+                  <TabsList aria-label="Paper or marking scheme">
+                    <TabsTrigger value="paper">Paper</TabsTrigger>
+                    <TabsTrigger value="scheme">Scheme</TabsTrigger>
+                  </TabsList>
+                </Tabs>
+              )}
+              {/* Answers — the flagship per-question marking-scheme reveal. A
+                  standalone one-tap toggle (not buried in the Tools menu), shown
+                  whenever this paper has a verified answer map. */}
+              {side === 'paper' && answersUrl && (
+                <Button
+                  className="pvc-answers"
+                  onClick={toggleAnswers}
+                  aria-pressed={answersOn}
+                  aria-label="Show the marking scheme beside each question"
+                >
+                  <span className="pvc-answers-mark" aria-hidden="true" />Answers
+                </Button>
+              )}
+              {/* The Kobra menu dismisses itself on an outside tap and on
+                  Escape; it stays controlled so every tool can still close it. */}
+              {side === 'paper' && (
+                <DropdownMenu open={toolsOpen} onOpenChange={open => setToolsOpen(open)}>
+                  <DropdownMenuTrigger
+                    render={
+                      <Button
+                        variant="outline"
+                        className="nsu-ink-outline pvc-tools"
+                        data-active={activeToolCount > 0 || undefined}
+                        aria-label="Study tools for this paper"
+                      />
+                    }
+                  >
+                    <SlidersHorizontal aria-hidden="true" />
+                    <span className="pvc-tools-label">Tools</span>
+                    {activeToolCount > 0 && (
+                      <span className="pvc-count" aria-hidden="true">{activeToolCount}</span>
+                    )}
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" sideOffset={8} className="pvc-menu">
+                    <KobraScope className="nsu-paper-viewer">
+                      <p className="pvc-menu-label">Study tools</p>
+                      {answersUrl && (
+                        <ToolRow
+                          icon={<BookOpenCheck />}
+                          title="Answers"
+                          sub="Marking scheme beside each question"
+                          on={answersOn}
+                          onClick={() => {
+                            toggleAnswers();
+                            setToolsOpen(false);
+                          }}
+                        />
+                      )}
+                      {answersUrl && storageNs && (
+                        <ToolRow
+                          icon={<ListChecks />}
+                          title="Triage"
+                          sub="Rate each question before you start"
+                          busy={answerState === 'loading'}
+                          onClick={openTriage}
+                        />
+                      )}
+                      {answersUrl && scheme && storageNs && (
+                        <ToolRow
+                          icon={<PenLine />}
+                          title="Self-mark"
+                          sub="Score yourself against the scheme"
+                          on={selfMarkOn}
+                          busy={selfMarkOn && answerState === 'loading'}
+                          onClick={toggleSelfMark}
+                        />
+                      )}
+                      {answersUrl && scheme && storageNs && (
+                        <ToolRow
+                          icon={<Repeat2 />}
+                          title="The Full Loop"
+                          sub="Work the paper question by question — attempt, reveal, mark"
+                          on={!!loop}
+                          busy={!!loop && answerState === 'loading'}
+                          onClick={startLoop}
+                        />
+                      )}
+                      <ToolRow
+                        icon={<Highlighter />}
+                        title="Command words"
+                        sub="Decode what each question demands"
+                        on={decodeOn}
+                        busy={decodeOn && scanState === 'loading'}
+                        keepOpen
+                        onClick={() => toggleTool('decode')}
+                      />
+                      {timing && (
+                        <ToolRow
+                          icon={<Play />}
+                          title="Exam mode"
+                          sub={`Clock set to ${timing.totalMinutes} min`}
+                          on={examOn}
+                          onClick={() => {
+                            setExamOn(v => {
+                              const next = !v;
+                              setRunning(next);
+                              if (next) setElapsed(0);
+                              return next;
+                            });
+                            setToolsOpen(false);
+                          }}
+                        />
+                      )}
+                      {topics && (
+                        <ToolRow
+                          icon={<TrendingUp />}
+                          title="Topics & frequency"
+                          sub="How often each topic comes up + drill it across years"
+                          on={topicsOn}
+                          busy={topicsOn && answerState === 'loading'}
+                          keepOpen
+                          onClick={toggleTopics}
+                        />
+                      )}
+                      {formulae && (
+                        <ToolRow
+                          icon={<BookOpen />}
+                          title="Formulae & Tables"
+                          sub="Jump to the booklet section"
+                          onClick={openFormulae}
+                        />
+                      )}
+                      {scanState === 'error' && (
+                        <p className="pvc-menu-note">
+                          Couldn’t read this paper’s text layer — overlays unavailable.
+                        </p>
+                      )}
+                    </KobraScope>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              )}
+            </div>
+            <a
+              href={activeDoc.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open the ${side} in your browser or download it${activeDoc.bytes ? ` (${prettyBytes(activeDoc.bytes)})` : ''}`}
+              className="nsu-ink-outline pvc-link"
+            >
+              <Download aria-hidden="true" />
+            </a>
           </div>
-          <a
-            href={activeDoc.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Open the ${side} in your browser or download it${activeDoc.bytes ? ` (${prettyBytes(activeDoc.bytes)})` : ''}`}
-            className="p-2 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100"
-          >
-            <Download size={17} />
-          </a>
         </div>
-      </div>
+      </KobraScope>
 
+      {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
+        <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
+      </div>}
       <div className="pt-reader-workspace" data-split={inlineScheme || undefined}>
       {/* Body */}
       {session.state === 'ready' && session.pdf ? (
@@ -1376,23 +1460,20 @@ const Viewer: React.FC<ViewerProps> = ({
         />
       )}
 
-      {inlineScheme && <aside className="pt-reader-sidebar" aria-label="Question workspace">
-        <div className="pt-reader-sidebar-heading"><h2>Question workspace</h2><p>Keep the question in view while you explore its scheme.</p></div>
-        {answerMap && session.state === 'ready' && <MobileQuestionTools page={session.page} initialQuestion={focusQuestion} questions={anchorsByPage.get(session.page) ?? []} topicInfo={topicsOn ? topicInfoByN : undefined} showAnswers={answersOn} onAnswer={onReveal} onTopic={onTopic} />}
-        {schemeContent}
+      {inlineScheme && <aside className="pt-reader-sidebar" data-scheme-open={schemeBeside || undefined} aria-label="Question workspace">
+        {/* Hidden, not unmounted, while a scheme is open, so the question
+            picker keeps its place for when the scheme closes. */}
+        <div hidden={schemeBeside}>
+          <div className="pt-reader-sidebar-heading"><h2>Question workspace</h2><p>Keep the question in view while you explore its scheme.</p></div>
+          {answerMap && session.state === 'ready' && <MobileQuestionTools page={session.page} initialQuestion={focusQuestion} questions={anchorsByPage.get(session.page) ?? []} topicInfo={topicsOn ? topicInfoByN : undefined} showAnswers={answersOn} onAnswer={onReveal} onTopic={onTopic} />}
+        </div>
+        {schemeBeside && schemeContent}
       </aside>}
       </div>
-      {/* Footer: zoom + page scrubber */}
+      {/* Footer: zoom + page position, Kobra chrome (viewer-chrome.css). */}
       {session.state === 'ready' && (
-        <div
-          className="shrink-0 bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800"
-          style={{
-            paddingTop: 8,
-            paddingBottom: 'calc(8px + var(--sab, 0px))',
-            paddingLeft: 'calc(16px + var(--sal, 0px))',
-            paddingRight: 'calc(16px + var(--sar, 0px))',
-          }}
-        >
+        <KobraScope className="nsu-paper-viewer">
+        <div className="pvc-bottom">
           {/* Minute targets are writing-speed sensitive — say whose speed they
               assume, with the one-line route into the 2-min calibration. */}
           {paceOn && side === 'paper' && timing && hasAnyTokens && (
@@ -1438,55 +1519,98 @@ const Viewer: React.FC<ViewerProps> = ({
               </div>
             </div>
           )}
-          <div className="flex items-center gap-3 max-w-3xl mx-auto">
-            <button onClick={() => zoomBy(-1)} disabled={zoom === ZOOM_STEPS[0]} aria-label="Zoom out" className="p-1.5 rounded-lg text-zinc-500 disabled:opacity-30">
-              <ZoomOut size={17} />
-            </button>
-            <button onClick={() => zoomBy(1)} disabled={zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]} aria-label="Zoom in" className="p-1.5 rounded-lg text-zinc-500 disabled:opacity-30">
-              <ZoomIn size={17} />
-            </button>
-            {session.numPages > 3 ? (
-              <>
-                <input
-                  type="range"
-                  min={1}
-                  max={session.numPages}
-                  value={scrubbing ?? session.page}
-                  onChange={e => setScrubbing(Number(e.target.value))}
-                  onPointerUp={() => {
-                    if (scrubbing != null) jumpToPage(scrubbing);
-                    setScrubbing(null);
-                  }}
-                  onKeyUp={() => {
-                    if (scrubbing != null) jumpToPage(scrubbing);
-                    setScrubbing(null);
-                  }}
-                  aria-label={`Go to page, currently page ${session.page} of ${session.numPages}`}
-                  className="flex-1 accent-[#F26B1F]"
-                />
-                <span className="text-[12px] tabular-nums text-zinc-500 whitespace-nowrap">
-                  {scrubbing ?? session.page} / {session.numPages}
-                </span>
-              </>
-            ) : (
-              <span className="flex-1 text-right text-[12px] tabular-nums text-zinc-500">
-                {session.page} / {session.numPages}
-              </span>
-            )}
+          <div className="pvc-pagebar">
+            <div className="pvc-zoom">
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(-1)}
+                disabled={zoom === ZOOM_STEPS[0]}
+                aria-label="Zoom out"
+              >
+                <ZoomOut aria-hidden="true" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => zoomBy(1)}
+                disabled={zoom === ZOOM_STEPS[ZOOM_STEPS.length - 1]}
+                aria-label="Zoom in"
+              >
+                <ZoomIn aria-hidden="true" />
+              </Button>
+            </div>
+            <div className="pvc-position">
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => jumpToPage(session.page - 1)}
+                disabled={session.page <= 1}
+                aria-label="Previous page"
+              >
+                <ChevronLeft aria-hidden="true" />
+              </Button>
+              <PagePosition
+                page={scrubbing ?? session.page}
+                numPages={session.numPages}
+                scrubber={
+                  // More than three pages: drag (or arrow-key) to any page,
+                  // landing on release, as the range always did.
+                  session.numPages > 3 ? (
+                    <input
+                      type="range"
+                      min={1}
+                      max={session.numPages}
+                      value={scrubbing ?? session.page}
+                      onChange={e => setScrubbing(Number(e.target.value))}
+                      onPointerUp={() => {
+                        if (scrubbing != null) jumpToPage(scrubbing);
+                        setScrubbing(null);
+                      }}
+                      onKeyUp={() => {
+                        if (scrubbing != null) jumpToPage(scrubbing);
+                        setScrubbing(null);
+                      }}
+                      aria-label={`Go to page, currently page ${session.page} of ${session.numPages}`}
+                      className="pvc-range"
+                    />
+                  ) : null
+                }
+              />
+              <Button
+                variant="outline"
+                size="icon"
+                className="nsu-ink-outline pvc-icon"
+                onClick={() => jumpToPage(session.page + 1)}
+                disabled={session.page >= session.numPages}
+                aria-label="Next page"
+              >
+                <ChevronRight aria-hidden="true" />
+              </Button>
+            </div>
           </div>
         </div>
+        </KobraScope>
       )}
 
-      {/* Answers map fetch status (chips appear once ready). */}
-      {(answersOn || topicsOn) && side === 'paper' && answerState !== 'idle' && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
-        >
-          {answerState === 'loading' ? 'Loading question tools…' : 'Couldn’t load question tools — try again later.'}
+      {/* Status toasts and notices, where the floating status pills sat. */}
+      <KobraScope className="nsu-paper-viewer">
+        <div className="pvc-toasts">
+          <Toasts position="bottom-center" />
         </div>
-      )}
+        {/* Scanned paper (no text layer) — explain why overlays are absent. Too
+            long for a one-line toast, so it is the house hairline notice. */}
+        {side === 'paper' && (paceOn || decodeOn) && scanState === 'idle' && docTokens && !hasAnyTokens && (
+          <Alert variant="info" role="status" aria-live="polite" className="pvc-notice">
+            <AlertDescription>
+              This paper is a scanned image — its text can’t be read for on-paper tools.
+            </AlertDescription>
+          </Alert>
+        )}
+      </KobraScope>
 
       {/* Cross-year topic sheet — every sibling question for this subtopic. */}
       <AnimatePresence>
@@ -1536,7 +1660,7 @@ const Viewer: React.FC<ViewerProps> = ({
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
       <AnimatePresence>
-        {reveal && !inlineScheme && (
+        {reveal && !schemeBeside && (
           <>
             <MotionDiv
               key="reveal-backdrop"
@@ -1559,8 +1683,8 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'pt-reveal-sheet fixed bottom-0 inset-x-0 z-[111] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
               {schemeContent}
@@ -1571,7 +1695,7 @@ const Viewer: React.FC<ViewerProps> = ({
 
       {/* The Full Loop bar (PT-2) — sequences attempt → reveal → mark → next. */}
       {loop && answerMap && !reveal && (() => {
-        const q = answerMap.q[loop.idx];
+        const q = loopQuestions[loop.idx];
         if (!q) return null;
         void loopTick; // 1s cadence re-render for the elapsed readout
         const marked = attempt.marks?.[q.n] !== undefined;
@@ -1583,7 +1707,7 @@ const Viewer: React.FC<ViewerProps> = ({
             <div className="w-full max-w-md rounded-2xl border-2 border-[#1a1a1a] dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-2xl px-4 py-3 flex items-center gap-3">
               <div className="min-w-0 flex-1">
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-zinc-400">
-                  The full loop · {loop.idx + 1} of {answerMap.q.length}
+                  The full loop · {loop.idx + 1} of {loopQuestions.length}
                 </p>
                 <p className="text-[14px] font-semibold truncate text-zinc-900 dark:text-white">
                   {q.label ?? `Question ${q.n}`}
@@ -1596,7 +1720,7 @@ const Viewer: React.FC<ViewerProps> = ({
                   className="shrink-0 rounded-full px-4 py-2 text-[13px] font-semibold text-white transition-transform active:translate-y-0.5"
                   style={{ backgroundColor: '#3A8D5F' }}
                 >
-                  {loop.idx + 1 >= answerMap.q.length ? 'Finish' : 'Next →'}
+                  {loop.idx + 1 >= loopQuestions.length ? 'Finish' : 'Next →'}
                 </button>
               ) : (
                 <button
@@ -1661,7 +1785,7 @@ const Viewer: React.FC<ViewerProps> = ({
 
       {/* Full Loop summary — the session in the student's own marks. */}
       {loopDone && answerMap && (() => {
-        const qs = answerMap.q;
+        const qs = loopQuestions;
         const marks = qs.map(q => attempt.marks?.[q.n]).filter((m): m is SelfMark => !!m);
         const avg = marks.length ? Math.round(marks.reduce((a, m) => a + (m.max ? (m.score / m.max) * 100 : m.score), 0) / marks.length) : 0;
         const gapCounts = new Map<GapKind, number>();
@@ -1730,28 +1854,6 @@ const Viewer: React.FC<ViewerProps> = ({
           </div>
         );
       })()}
-
-      {/* Text-scan status while the overlay tools read the paper. */}
-      {side === 'paper' && (paceOn || decodeOn) && scanState === 'loading' && !docTokens && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] flex items-center gap-2 px-3 py-1.5 rounded-full text-[12px] font-medium bg-zinc-900/90 text-white shadow-lg"
-        >
-          <span className="w-3 h-3 rounded-full border-2 border-white/40 border-t-white animate-spin" aria-hidden />
-          Reading the paper…
-        </div>
-      )}
-      {/* Scanned paper (no text layer) — explain why overlays are absent. */}
-      {side === 'paper' && (paceOn || decodeOn) && scanState === 'idle' && docTokens && !hasAnyTokens && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 z-[60] max-w-[86%] px-3.5 py-2 rounded-full text-[12px] font-medium text-center bg-zinc-900/90 text-white shadow-lg"
-        >
-          This paper is a scanned image — its text can’t be read for on-paper tools.
-        </div>
-      )}
 
       {/* Handwriting-speed calibrator (F4) — opened from the tools menu or the
           pace footer line; result feeds straight back into the minute budgets. */}
@@ -2173,7 +2275,7 @@ const ExamClock: React.FC<{
   const frac = Math.min(1, Math.max(0, elapsed / totalSec));
   return (
     <div
-      className="absolute left-1/2 -translate-x-1/2 bottom-[76px] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
+      className="absolute left-1/2 -translate-x-1/2 bottom-[calc(76px+var(--sab,0px))] z-[65] flex items-center gap-2.5 pl-3 pr-2 py-2 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-[#1A1A1A] dark:border-zinc-700 shadow-[3px_3px_0_0_#1A1A1A] dark:shadow-[3px_3px_0_0_#3f3f46]"
       role="timer"
       aria-live="off"
     >
@@ -2206,41 +2308,95 @@ const ExamClock: React.FC<{
 
 // ─── tools-menu row ─────────────────────────────────────────
 
+/** One row of the Kobra Tools menu. A tool that switches on and off is a
+ *  menuitemcheckbox whose Switch shows its state; the rest open something. */
 const ToolRow: React.FC<{
   icon: React.ReactNode;
   title: string;
   sub: string;
   on?: boolean;
   busy?: boolean;
+  /** Leave the menu open after the tap, for a tool the student may flip again. */
+  keepOpen?: boolean;
   onClick: () => void;
-}> = ({ icon, title, sub, on, busy, onClick }) => (
-  <button
-    role="menuitemcheckbox"
-    aria-checked={!!on}
-    onClick={onClick}
-    className="w-full flex items-center gap-3 px-3.5 py-2.5 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/60 transition-colors"
-  >
-    <span
-      className="shrink-0 w-8 h-8 rounded-md flex items-center justify-center border-[1.5px] border-[#1A1A1A] dark:border-zinc-100"
-      style={{ backgroundColor: on ? '#F26B1F' : '#FFFFFF', color: on ? '#fff' : '#1A1A1A' }}
+}> = ({ icon, title, sub, on, busy, keepOpen, onClick }) => {
+  const toggle = on !== undefined;
+  return (
+    <DropdownMenuItem
+      className="pvc-tool"
+      closeOnClick={!keepOpen}
+      onClick={onClick}
+      {...(toggle ? { role: 'menuitemcheckbox', 'aria-checked': on } : {})}
     >
-      {busy ? <span className="w-3.5 h-3.5 rounded-full border-2 border-current/40 border-t-current animate-spin" /> : icon}
-    </span>
-    <span className="flex-1 min-w-0">
-      <span className="block text-[13px] font-semibold text-zinc-900 dark:text-zinc-100">{title}</span>
-      <span className="block text-[11px] text-zinc-500 truncate">{sub}</span>
-    </span>
-    {on !== undefined && (
-      <span
-        className="shrink-0 w-9 h-5 rounded-full p-0.5 transition-colors"
-        style={{ backgroundColor: on ? '#F26B1F' : '#d0cdc8' }}
-        aria-hidden
-      >
-        <span className="block w-4 h-4 rounded-full bg-white transition-transform" style={{ transform: on ? 'translateX(16px)' : 'none' }} />
+      <span className="pvc-tool-icon" data-on={on || undefined} aria-hidden="true">
+        {busy ? <Spinner /> : icon}
       </span>
-    )}
-  </button>
+      <span className="pvc-tool-copy">
+        <strong>{title}</strong>
+        <small>{sub}</small>
+      </span>
+      {toggle ? (
+        <span className="pvc-tool-switch" aria-hidden="true">
+          <Switch checked={on} tabIndex={-1} />
+        </span>
+      ) : (
+        <ArrowUpRight className="pvc-tool-open" aria-hidden="true" />
+      )}
+    </DropdownMenuItem>
+  );
+};
+
+// ─── page position ──────────────────────────────────────────
+
+/** Where the reader is: a serif page count over a Kobra Progress (the runtime
+ *  ships no Slider). When a page range input comes with it, that input is the
+ *  control, laid over the bar, and the progress is its picture. */
+const PagePosition: React.FC<{ page: number; numPages: number; scrubber: React.ReactNode }> = ({
+  page,
+  numPages,
+  scrubber,
+}) => (
+  <div className="pvc-scrub">
+    <Progress
+      className="pvc-progress"
+      // The fill ends under the range thumb: page 1 at the start, the last page at the end.
+      value={numPages > 1 ? ((page - 1) / (numPages - 1)) * 100 : 100}
+      getAriaValueText={() => `Page ${page} of ${numPages}`}
+      aria-hidden={scrubber ? true : undefined}
+    >
+      <ProgressLabel className="pvc-page-count">
+        <span className="pvc-sr">Page </span>
+        {page} <span className="pvc-of">of</span> {numPages}
+      </ProgressLabel>
+    </Progress>
+    {scrubber}
+  </div>
 );
+
+// ─── status toasts ──────────────────────────────────────────
+
+type StatusToast = { message: string; state: 'pending' | 'error' | 'info' };
+/** setTimeout's ceiling: a settled status stays until it clears. */
+const UNTIL_CLEARED = 2 ** 31 - 1;
+
+/** Reports a viewer status through the runtime toast, where the floating
+ *  status pill used to be: shown while the status holds, then let go once it
+ *  clears, as the pill went with its condition. */
+function useStatusToast(id: string, status: StatusToast | null) {
+  const shown = useRef<string | null>(null);
+  const message = status?.message;
+  const state = status?.state;
+  useEffect(() => {
+    if (message && state) {
+      shown.current = message;
+      toast(state === 'pending' ? { id, message, state } : { id, message, state, lifetime: UNTIL_CLEARED });
+    } else if (shown.current) {
+      // Same toast, no state: it drops its mark and leaves.
+      toast({ id, message: shown.current, lifetime: 200 });
+      shown.current = null;
+    }
+  }, [id, message, state]);
+}
 
 // ─── command-word decoder content ───────────────────────────
 
@@ -2441,8 +2597,17 @@ const RevealContent: React.FC<{
   onRecordMark?: (mark: SelfMark | null) => void;
   onClose: () => void;
   onFullScheme: (page: number) => void;
-}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme }) => {
+  /** Previous/next question's scheme; absent during the Full Loop, which
+   *  sequences questions itself. */
+  onStep?: (dir: 1 | -1) => void;
+  canPrev?: boolean;
+  canNext?: boolean;
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme, onStep, canPrev, canNext }) => {
   const schemeRegion = schemeRegionFor(q);
+  // Text size for the crop; it carries across questions while the panel is open.
+  const [zoom, setZoom] = useState(1);
+  const zoomStep = (dir: 1 | -1) => setZoom(z => Math.min(2, Math.max(1, Math.round((z + dir * 0.25) * 100) / 100)));
+  const showsCrop = q.mode !== 'pagejump' && !schemeErrored;
   const firstPage = schemeRegion[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
@@ -2460,22 +2625,56 @@ const RevealContent: React.FC<{
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-start gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
         <div className="flex-1 min-w-0">
-          <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
-          <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
+          <p className="text-[16px] font-bold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
+          <p className="mt-0.5 text-[12px] text-zinc-500">How examiners award the marks — not a model answer.</p>
         </div>
+        {onStep && (
+          <div className="shrink-0 flex items-center gap-1.5 pt-0.5">
+            <button type="button" onClick={() => onStep(-1)} disabled={!canPrev} aria-label="Previous question’s marking scheme" className={E_SQUARE}>
+              <ChevronLeft size={16} aria-hidden />
+            </button>
+            <button type="button" onClick={() => onStep(1)} disabled={!canNext} aria-label="Next question’s marking scheme" className={E_SQUARE}>
+              <ChevronRight size={16} aria-hidden />
+            </button>
+          </div>
+        )}
         <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
           <X size={18} />
         </button>
       </div>
+      {showsCrop && (
+        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2 border-b border-zinc-100 dark:border-zinc-800">
+          <span className="text-[12px] text-zinc-500">Text size</span>
+          <div className="flex items-center gap-1.5">
+            <button type="button" onClick={() => zoomStep(-1)} disabled={zoom <= 1} aria-label="Smaller marking scheme text" className={E_SQUARE}>
+              <Minus size={14} aria-hidden />
+            </button>
+            <output aria-live="polite" className="min-w-[44px] text-center text-[12.5px] font-semibold tabular-nums text-zinc-900 dark:text-zinc-100">
+              {Math.round(zoom * 100)}%
+            </output>
+            <button type="button" onClick={() => zoomStep(1)} disabled={zoom >= 2} aria-label="Bigger marking scheme text" className={E_SQUARE}>
+              <Plus size={14} aria-hidden />
+            </button>
+            <button type="button" onClick={() => setZoom(1)} disabled={zoom === 1} className={E_SQUARE}>
+              Fit
+            </button>
+          </div>
+        </div>
+      )}
       {/* Content settles a beat after the panel lands (premium stagger). */}
       <MotionDiv
         initial={reduced ? false : { opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-        className="flex-1 overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950"
+        className="flex-1 min-h-0 overflow-auto overscroll-contain p-4 bg-white dark:bg-zinc-900"
       >
+        {q.schemeNote && (
+          <p className="text-[13px] leading-relaxed text-zinc-800 dark:text-zinc-200 mb-3 px-1">
+            {q.schemeNote}
+          </p>
+        )}
         {q.mode === 'pagejump' ? (
           <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
             This question’s answer spans several scheme pages. Open the marking scheme to read it in full.
@@ -2485,7 +2684,7 @@ const RevealContent: React.FC<{
             Couldn’t load the marking scheme. Open it in the Scheme tab instead.
           </p>
         ) : schemePdf ? (
-          <CropView pdf={schemePdf} region={schemeRegion} />
+          <CropView pdf={schemePdf} region={schemeRegion} trim zoom={zoom} responsive maxWidth={1200} />
         ) : (
           <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
             <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
@@ -2562,7 +2761,7 @@ const RevealContent: React.FC<{
                     className="px-2.5 py-1 rounded-full text-[11.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
                     style={{ backgroundColor: '#fff', borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
                   >
-                    {s.year} · Q{s.n} →
+                    {s.year} · {questionLabel(s, { short: true })} →
                   </button>
                 ))}
               </div>
@@ -2571,11 +2770,11 @@ const RevealContent: React.FC<{
         </div>
       )}
       <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
-        <span className="text-[10px] text-zinc-400 truncate">{copyright ?? '© State Examinations Commission'}</span>
+        <span className="text-[11px] text-zinc-500 truncate">{copyright ?? '© State Examinations Commission'}</span>
         <button
           onClick={() => firstPage && onFullScheme(firstPage)}
           disabled={!firstPage}
-          className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#F26B1F] bg-[#FDEEDF] disabled:opacity-40"
+          className="shrink-0 inline-flex items-center gap-1.5 pb-px border-b-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold text-[#1A1A1A] dark:text-zinc-100 disabled:opacity-40"
         >
           View full scheme →
         </button>

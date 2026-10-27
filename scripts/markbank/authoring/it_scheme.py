@@ -773,6 +773,9 @@ def _settle(part):
     than a single answer.
     """
     per = (part.split or [part.total])[0]
+    # One answer's whole worth: the total where an unequal split says how one
+    # answer divides, else one share.
+    whole = part.total if part.split and len(set(part.split)) > 1 else per
     kept, demoted = [], []
     for a in part.answers:
         body = INLINE_SPLIT.sub('', a).strip()
@@ -780,6 +783,15 @@ def _settle(part):
         bare = BARE_MARK.search(body)
         if bare and int(bare.group(1)) < per and not body.startswith('('):
             demoted.append(_rung(a))
+        elif (kept and len(marks) == 1 and marks[0].end() >= len(body.rstrip())
+              and _completes(kept[-1], int(marks[0].group(1)), whole)):
+            # The wrapped tail of the full answer above, not a lesser answer:
+            # 2025 Higher B2B 2(a) prints "Il fatto che stesse per attaccare
+            # uno del partito di Rosello (3) e voleva coinvolgere" and then
+            # "Rosello stesso (2)" under a "5 marks (3+2)" head. The line above
+            # stops short of one answer's worth by exactly this line's mark,
+            # with its own mark mid-line, so this line finishes it.
+            kept[-1] = f'{kept[-1].rstrip()} {a.strip()}'
         elif (len(marks) == 1 and marks[0].end() >= len(body.rstrip())
               and int(marks[0].group(1)) < per):
             demoted.append(_rung(body[:marks[0].start()] + ' '
@@ -894,6 +906,15 @@ def _settle(part):
     # them answers the ask. See the front matter quoted above.
     if part.claim is None and len(part.answers) > 1:
         part.claim = 1
+
+
+def _completes(line, value, whole):
+    """Whether `line` is a full answer cut short: its bracketed marks stop `value`
+    short of one answer's worth, and the last of them sits mid-line."""
+    body = INLINE_SPLIT.sub('', line).strip()
+    marks = list(BRACKET_MARK.finditer(body))
+    return bool(marks) and marks[-1].end() < len(body.rstrip()) \
+        and sum(int(m.group(1)) for m in marks) + value == whole
 
 
 def _recut(ask, alt):

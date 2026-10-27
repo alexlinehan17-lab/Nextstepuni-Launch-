@@ -1,0 +1,986 @@
+{
+ "schemaVersion": 1,
+ "subjectId": "english",
+ "rule": "Archive topics for canonical nodes that published reviewed cards need and the reference menu lacks.",
+ "topics": [
+  {
+   "id": "english-higher-poetry-kinsella-reviewed-archive",
+   "level": "higher",
+   "slug": "poetry-kinsella",
+   "label": "Poetry - Kinsella",
+   "curriculumNodeIds": [
+    "english-8-0",
+    "english-11-57"
+   ]
+  },
+  {
+   "id": "english-higher-text-king-lear-reviewed-archive",
+   "level": "higher",
+   "slug": "text-king-lear",
+   "label": "Text - King Lear",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-1"
+   ]
+  },
+  {
+   "id": "english-higher-text-pride-and-prejudice-reviewed-archive",
+   "level": "higher",
+   "slug": "text-pride-and-prejudice",
+   "label": "Text - Pride and Prejudice",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-17"
+   ]
+  },
+  {
+   "id": "english-higher-text-macbeth-reviewed-archive",
+   "level": "higher",
+   "slug": "text-macbeth",
+   "label": "Text - Macbeth",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-2"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-crucible-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-crucible",
+   "label": "Text - The Crucible",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-21"
+   ]
+  },
+  {
+   "id": "english-higher-text-dancing-at-lughnasa-reviewed-archive",
+   "level": "higher",
+   "slug": "text-dancing-at-lughnasa",
+   "label": "Text - Dancing at Lughnasa",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-32"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-grapes-of-wrath-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-grapes-of-wrath",
+   "label": "Text - The Grapes of Wrath",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-33"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-blackwater-lightship-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-blackwater-lightship",
+   "label": "Text - The Blackwater Lightship",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-34"
+   ]
+  },
+  {
+   "id": "english-higher-text-a-whistle-in-the-dark-reviewed-archive",
+   "level": "higher",
+   "slug": "text-a-whistle-in-the-dark",
+   "label": "Text - A Whistle in the Dark",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-38"
+   ]
+  },
+  {
+   "id": "english-higher-text-emma-reviewed-archive",
+   "level": "higher",
+   "slug": "text-emma",
+   "label": "Text - Emma",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-43"
+   ]
+  },
+  {
+   "id": "english-higher-text-empire-of-the-sun-reviewed-archive",
+   "level": "higher",
+   "slug": "text-empire-of-the-sun",
+   "label": "Text - Empire of the Sun",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-44"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-grass-is-singing-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-grass-is-singing",
+   "label": "Text - The Grass Is Singing",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-47"
+   ]
+  },
+  {
+   "id": "english-higher-text-antigone-reviewed-archive",
+   "level": "higher",
+   "slug": "text-antigone",
+   "label": "Text - Antigone",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-48"
+   ]
+  },
+  {
+   "id": "english-higher-text-translations-reviewed-archive",
+   "level": "higher",
+   "slug": "text-translations",
+   "label": "Text - Translations",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-50"
+   ]
+  },
+  {
+   "id": "english-higher-text-never-let-me-go-reviewed-archive",
+   "level": "higher",
+   "slug": "text-never-let-me-go",
+   "label": "Text - Never Let Me Go",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-51"
+   ]
+  },
+  {
+   "id": "english-higher-text-all-my-sons-reviewed-archive",
+   "level": "higher",
+   "slug": "text-all-my-sons",
+   "label": "Text - All My Sons",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-52"
+   ]
+  },
+  {
+   "id": "english-higher-text-americanah-reviewed-archive",
+   "level": "higher",
+   "slug": "text-americanah",
+   "label": "Text - Americanah",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-56"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-boland-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-boland",
+   "label": "Poetry - Boland",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-1"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-larkin-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-larkin",
+   "label": "Poetry - Larkin",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-13"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-montague-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-montague",
+   "label": "Poetry - Montague",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-17"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-plath-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-plath",
+   "label": "Poetry - Plath",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-19"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-smith-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-smith",
+   "label": "Poetry - Smith",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-21"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-clanchy-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-clanchy",
+   "label": "Poetry - Clanchy",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-28"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-oliver-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-oliver",
+   "label": "Poetry - Oliver",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-36"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-shuttle-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-shuttle",
+   "label": "Poetry - Shuttle",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-43"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-williams-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-williams",
+   "label": "Poetry - Williams",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-45"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-eliot-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-eliot",
+   "label": "Poetry - Eliot",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-5"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-lochhead-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-lochhead",
+   "label": "Poetry - Lochhead",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-53"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-monahan-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-monahan",
+   "label": "Poetry - Monahan",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-54"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-o-callaghan-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-o-callaghan",
+   "label": "Poetry - O'Callaghan",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-55"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-wilbur-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-wilbur",
+   "label": "Poetry - Wilbur",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-56"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-kinsella-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-kinsella",
+   "label": "Poetry - Kinsella",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-57"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-wyley-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-wyley",
+   "label": "Poetry - Wyley",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-58"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-herbert-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-herbert",
+   "label": "Poetry - Herbert",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-59"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-wall-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-wall",
+   "label": "Poetry - Wall",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-60"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-coady-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-coady",
+   "label": "Poetry - Coady",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-62"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-king-lear-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-king-lear",
+   "label": "Text - King Lear",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-1"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-pride-and-prejudice-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-pride-and-prejudice",
+   "label": "Text - Pride and Prejudice",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-17"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-macbeth-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-macbeth",
+   "label": "Text - Macbeth",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-2"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-crucible-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-crucible",
+   "label": "Text - The Crucible",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-21"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-dancing-at-lughnasa-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-dancing-at-lughnasa",
+   "label": "Text - Dancing at Lughnasa",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-32"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-grapes-of-wrath-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-grapes-of-wrath",
+   "label": "Text - The Grapes of Wrath",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-33"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-blackwater-lightship-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-blackwater-lightship",
+   "label": "Text - The Blackwater Lightship",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-34"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-lamb-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-lamb",
+   "label": "Text - Lamb",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-35"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-lies-of-silence-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-lies-of-silence",
+   "label": "Text - Lies of Silence",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-36"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-panther-in-the-basement-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-panther-in-the-basement",
+   "label": "Text - Panther in the Basement",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-37"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-a-whistle-in-the-dark-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-a-whistle-in-the-dark",
+   "label": "Text - A Whistle in the Dark",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-38"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-circle-of-friends-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-circle-of-friends",
+   "label": "Text - Circle of Friends",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-39"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-how-many-miles-to-babylon-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-how-many-miles-to-babylon",
+   "label": "Text - How Many Miles to Babylon?",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-40"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-secret-life-of-bees-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-secret-life-of-bees",
+   "label": "Text - The Secret Life of Bees",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-41"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-plough-and-the-stars-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-plough-and-the-stars",
+   "label": "Text - The Plough and the Stars",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-42"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-emma-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-emma",
+   "label": "Text - Emma",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-43"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-empire-of-the-sun-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-empire-of-the-sun",
+   "label": "Text - Empire of the Sun",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-44"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-lonesome-west-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-lonesome-west",
+   "label": "Text - The Lonesome West",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-45"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-story-of-lucy-gault-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-story-of-lucy-gault",
+   "label": "Text - The Story of Lucy Gault",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-46"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-grass-is-singing-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-grass-is-singing",
+   "label": "Text - The Grass Is Singing",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-47"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-antigone-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-antigone",
+   "label": "Text - Antigone",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-48"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-home-before-night-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-home-before-night",
+   "label": "Text - Home Before Night",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-49"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-translations-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-translations",
+   "label": "Text - Translations",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-50"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-never-let-me-go-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-never-let-me-go",
+   "label": "Text - Never Let Me Go",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-51"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-all-my-sons-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-all-my-sons",
+   "label": "Text - All My Sons",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-52"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-juno-and-the-paycock-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-juno-and-the-paycock",
+   "label": "Text - Juno and the Paycock",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-53"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-americanah-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-americanah",
+   "label": "Text - Americanah",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-56"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-ocean-at-the-end-of-the-lane-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-ocean-at-the-end-of-the-lane",
+   "label": "Text - The Ocean at the End of the Lane",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-57"
+   ]
+  },
+  {
+   "id": "english-ordinary-comparative-aspects-of-story-reviewed-archive",
+   "level": "ordinary",
+   "slug": "comparative-aspects-of-story",
+   "label": "Comparative - Aspects of Story",
+   "curriculumNodeIds": [
+    "english-7-10"
+   ]
+  },
+  {
+   "id": "english-higher-text-frankenstein-reviewed-archive",
+   "level": "higher",
+   "slug": "text-frankenstein",
+   "label": "Text - Frankenstein",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-12"
+   ]
+  },
+  {
+   "id": "english-higher-text-all-the-light-we-cannot-see-reviewed-archive",
+   "level": "higher",
+   "slug": "text-all-the-light-we-cannot-see",
+   "label": "Text - All the Light We Cannot See",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-8"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-traynor-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-traynor",
+   "label": "Poetry - Traynor",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-44"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-frankenstein-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-frankenstein",
+   "label": "Text - Frankenstein",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-12"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-all-the-light-we-cannot-see-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-all-the-light-we-cannot-see",
+   "label": "Text - All the Light We Cannot See",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-8"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-picture-of-dorian-gray-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-picture-of-dorian-gray",
+   "label": "Text - The Picture of Dorian Gray",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-25"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-szymborska-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-szymborska",
+   "label": "Poetry - Szymborska",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-52"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-philadelphia-here-i-come-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-philadelphia-here-i-come",
+   "label": "Text - Philadelphia, Here I Come!",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-16"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-picture-of-dorian-gray-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-picture-of-dorian-gray",
+   "label": "Text - The Picture of Dorian Gray",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-25"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-lauras-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-lauras",
+   "label": "Text - The Lauras",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-24"
+   ]
+  },
+  {
+   "id": "english-higher-poetry-kennelly-reviewed-archive",
+   "level": "higher",
+   "slug": "poetry-kennelly",
+   "label": "Poetry - Kennelly",
+   "curriculumNodeIds": [
+    "english-8-0",
+    "english-11-12"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-lawrence-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-lawrence",
+   "label": "Poetry - Lawrence",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-14"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-by-the-bog-of-cats-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-by-the-bog-of-cats",
+   "label": "Text - By the Bog of Cats",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-9"
+   ]
+  },
+  {
+   "id": "english-higher-text-days-without-end-reviewed-archive",
+   "level": "higher",
+   "slug": "text-days-without-end",
+   "label": "Text - Days Without End",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-10"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-handmaid-s-tale-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-handmaid-s-tale",
+   "label": "Text - The Handmaid's Tale",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-23"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-tempest-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-tempest",
+   "label": "Text - The Tempest",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-4"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-hudgins-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-hudgins",
+   "label": "Poetry - Hudgins",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-48"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-soto-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-soto",
+   "label": "Poetry - Soto",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-49"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-days-without-end-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-days-without-end",
+   "label": "Text - Days Without End",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-10"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-handmaid-s-tale-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-handmaid-s-tale",
+   "label": "Text - The Handmaid's Tale",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-23"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-tempest-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-tempest",
+   "label": "Text - The Tempest",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-4"
+   ]
+  },
+  {
+   "id": "english-higher-text-death-and-nightingales-reviewed-archive",
+   "level": "higher",
+   "slug": "text-death-and-nightingales",
+   "label": "Text - Death and Nightingales",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-54"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-delanty-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-delanty",
+   "label": "Poetry - Delanty",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-61"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-death-and-nightingales-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-death-and-nightingales",
+   "label": "Text - Death and Nightingales",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-54"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-big-maggie-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-big-maggie",
+   "label": "Text - Big Maggie",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-55"
+   ]
+  },
+  {
+   "id": "english-higher-text-persuasion-reviewed-archive",
+   "level": "higher",
+   "slug": "text-persuasion",
+   "label": "Text - Persuasion",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-15"
+   ]
+  },
+  {
+   "id": "english-higher-text-by-the-bog-of-cats-reviewed-archive",
+   "level": "higher",
+   "slug": "text-by-the-bog-of-cats",
+   "label": "Text - By the Bog of Cats",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-9"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-kennelly-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-kennelly",
+   "label": "Poetry - Kennelly",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-12"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-herrick-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-herrick",
+   "label": "Poetry - Herrick",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-63"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-hardie-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-hardie",
+   "label": "Poetry - Hardie",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-64"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-persuasion-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-persuasion",
+   "label": "Text - Persuasion",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-15"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-playboy-of-the-western-world-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-playboy-of-the-western-world",
+   "label": "Text - The Playboy of the Western World",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-26"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-piercy-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-piercy",
+   "label": "Poetry - Piercy",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-65"
+   ]
+  }
+ ]
+}

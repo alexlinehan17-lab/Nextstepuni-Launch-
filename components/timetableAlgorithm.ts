@@ -6,7 +6,7 @@
 import {
   type StudentSubject, type StudyBlock, type WeeklyTimetable, type Grade,
   type TimetableCompletions, type JCBand,
-  LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, getGradeIndex,
+  LC_SUBJECTS, DAYS_OF_WEEK, getPointsForGrade, gradeSteps,
   JC_BANDS,
   toDateKey,
 } from './subjectData';
@@ -268,7 +268,7 @@ export function computeSubjectPriorities(
 
     // A nearby target is more actionable than an equally valuable seven-grade
     // leap. This tempers aspiration without declaring weak subjects hopeless.
-    const targetGradeSteps = Math.max(0, getGradeIndex(s.currentGrade) - getGradeIndex(s.targetGrade));
+    const targetGradeSteps = gradeSteps(s.currentGrade, s.targetGrade);
     const difficultyMultiplier = targetGradeSteps > 0 ? 1 / Math.sqrt(targetGradeSteps) : 1;
 
     // Personal coverage signal: subjects the student has marked shaky or not

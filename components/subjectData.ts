@@ -7,14 +7,24 @@
 
 export type Grade =
   | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
-  | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8';
+  | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8'
+  | 'F1' | 'F2' | 'F3' | 'F4' | 'F5' | 'F6' | 'F7' | 'F8'
+  | LcvpGrade;
 
-// LC subjects use 'higher' | 'ordinary'. Junior Cycle subjects without an
+/** LCVP Link Modules is one common-level exam graded Distinction / Merit /
+ *  Pass, and CAO counts it among the best six (66 / 46 / 28 points). It is the
+ *  only established Leaving Cert subject on this scale, so 'common' level in
+ *  the LC programme means these grades. */
+export type LcvpGrade = 'Distinction' | 'Merit' | 'Pass';
+
+// LC subjects use 'higher' | 'ordinary', plus 'foundation' for Mathematics and
+// Irish (the only LC subjects the SEC examines at Foundation level) and
+// 'common' for LCVP Link Modules. Junior Cycle subjects without an
 // H/O choice (all JC subjects except English / Irish / Mathematics) carry
 // level 'common'. Treat this as a runtime flag — LC code that branches on
 // level === 'higher' / 'ordinary' continues to work because no LC subject
 // ever has level === 'common'.
-export type Level = 'higher' | 'ordinary' | 'common';
+export type Level = 'higher' | 'ordinary' | 'foundation' | 'common';
 
 // LC entries set currentGrade / targetGrade. JC entries set currentBand /
 // targetBand. Discriminate at the call site via the profile-level
@@ -76,17 +86,29 @@ export interface LCSubject {
   name: string;
   group: 'languages' | 'stem' | 'business' | 'humanities' | 'practical' | 'creative';
   isMaths?: boolean;
+  /** Levels the SEC examines. Omitted means Higher and Ordinary. The
+   *  non-curricular EU languages and Ukrainian are Higher only; Mathematics
+   *  and Irish add Foundation; LCVP Link Modules is a single common-level paper. */
+  levels?: Level[];
+  /** Other names students search by, including the name the subject takes
+   *  for a later exam cohort (e.g. Construction Technology from 2028). */
+  aliases?: string[];
+  /** LCA only: a course assessed by key assignments, with no SEC written exam. */
+  noWrittenExam?: boolean;
 }
 
 
-/** Leaving Cert Applied courses. Names match the Paper Trail archive display
- *  names (paperTrailData cycle 'lca') so a student's chosen subjects link
- *  straight to their papers. All LCA courses are assessed at common level —
- *  credits (Distinction / Merit / Pass), not H/O grades. */
+/** Leaving Cert Applied courses (LCA Programme Statement, Dec 2024). Courses
+ *  with an SEC final exam use the Paper Trail archive display names
+ *  (paperTrailData cycle 'lca') so a student's chosen subjects link straight to
+ *  their papers. Courses assessed only by key assignments are marked
+ *  `noWrittenExam`. LCA students may also take Leaving Cert Mathematics at any
+ *  level. All LCA courses are assessed at common level: credits
+ *  (Distinction / Merit / Pass), not H/O grades. */
 export const LCA_SUBJECTS: LCSubject[] = [
   // Languages & communication
-  { name: 'English and Communications', group: 'languages' },
-  { name: 'Gaeilge Chumarsáideach', group: 'languages' },
+  { name: 'English and Communications', group: 'languages', aliases: ['English and Communication'] },
+  { name: 'Gaeilge Chumarsáideach', group: 'languages', aliases: ['Gaeilge', 'Irish'] },
   { name: 'French', group: 'languages' },
   { name: 'German', group: 'languages' },
   { name: 'Spanish', group: 'languages' },
@@ -94,12 +116,17 @@ export const LCA_SUBJECTS: LCSubject[] = [
   { name: 'Sign Language', group: 'languages' },
   // STEM
   { name: 'Mathematical Applications', group: 'stem', isMaths: true },
-  { name: 'Information & Communication Tech.', group: 'stem' },
+  { name: 'Leaving Cert Maths', group: 'stem', aliases: ['Mathematics', 'Ordinary Maths', 'Maths'] },
+  { name: 'Information & Communication Tech.', group: 'stem', aliases: ['ICT', 'Information and Communication Technology'] },
+  { name: 'Introduction to ICT', group: 'stem', noWrittenExam: true, aliases: ['Introduction to Information and Communication Technology'] },
+  { name: 'Science', group: 'stem', noWrittenExam: true },
   // Business / vocational
-  { name: 'Office Admin And Customer', group: 'business' },
-  { name: 'Hotel / Catering & Tourism', group: 'business' },
+  { name: 'Vocational Preparation & Guidance', group: 'business', noWrittenExam: true, aliases: ['VPG', 'Vocational Preparation and Guidance'] },
+  { name: 'Office Admin And Customer', group: 'business', aliases: ['Office Administration and Customer Care'] },
+  { name: 'Hotel / Catering & Tourism', group: 'business', aliases: ['Hotel, Catering and Tourism'] },
   // Humanities
   { name: 'Social Education', group: 'humanities' },
+  { name: 'Religious Education', group: 'humanities', noWrittenExam: true },
   // Practical / vocational specialisms
   { name: 'Engineering', group: 'practical' },
   { name: 'Graphics And Construction Studies', group: 'practical' },
@@ -107,54 +134,114 @@ export const LCA_SUBJECTS: LCSubject[] = [
   { name: 'Childcare / Community Care', group: 'practical' },
   { name: 'Hair And Beauty', group: 'practical' },
   { name: 'Active Leisure Studies', group: 'practical' },
+  { name: 'Leisure and Recreation', group: 'practical', noWrittenExam: true },
   { name: 'Technology', group: 'practical' },
   // Creative
-  { name: 'Crafts & Design', group: 'creative' },
+  { name: 'Crafts & Design', group: 'creative', aliases: ['Craft and Design'] },
+  { name: 'Arts Education', group: 'creative', noWrittenExam: true, aliases: ['Dance', 'Drama', 'Music', 'Visual Arts'] },
 ];
 
+const HIGHER_ONLY: Level[] = ['higher'];
+
+/** Established Leaving Cert subjects a student can sit. Names match the Paper
+ *  Trail archive display names or their aliases (paperTrailData cycle 'lc') and
+ *  resolve through curriculumRegistry's resolveSubjectId, so a chosen subject
+ *  links to its papers, Mark Bank deck and Topic Atlas
+ *  (test/subjectCatalogueLinks.test.ts holds every entry to that). */
 export const LC_SUBJECTS: LCSubject[] = [
   // Languages
   { name: 'English', group: 'languages' },
-  { name: 'Irish', group: 'languages' },
+  { name: 'Irish', group: 'languages', levels: ['higher', 'ordinary', 'foundation'], aliases: ['Gaeilge'] },
   { name: 'French', group: 'languages' },
   { name: 'German', group: 'languages' },
   { name: 'Spanish', group: 'languages' },
   { name: 'Italian', group: 'languages' },
   { name: 'Japanese', group: 'languages' },
+  { name: 'Mandarin Chinese', group: 'languages', aliases: ['Chinese'] },
+  { name: 'Russian', group: 'languages' },
+  { name: 'Arabic', group: 'languages' },
+  { name: 'Lithuanian', group: 'languages' },
+  { name: 'Polish', group: 'languages' },
+  { name: 'Portuguese', group: 'languages' },
   { name: 'Latin', group: 'languages' },
   { name: 'Ancient Greek', group: 'languages' },
-  { name: 'Arabic', group: 'languages' },
+  { name: 'Hebrew Studies', group: 'languages' },
+  // Non-curricular EU languages and Ukrainian: examined at Higher level only,
+  // for students with a home or community connection to the language.
+  { name: 'Bulgarian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Croatian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Czech', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Danish', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Dutch', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Estonian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Finnish', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Hungarian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Latvian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Maltese', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Modern Greek', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Romanian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Slovakian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Slovenian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Swedish', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Ukrainian', group: 'languages', levels: HIGHER_ONLY },
   // STEM
-  { name: 'Mathematics', group: 'stem', isMaths: true },
-  { name: 'Applied Maths', group: 'stem' },
+  { name: 'Mathematics', group: 'stem', isMaths: true, levels: ['higher', 'ordinary', 'foundation'], aliases: ['Maths'] },
+  { name: 'Applied Maths', group: 'stem', aliases: ['Applied Mathematics'] },
   { name: 'Physics', group: 'stem' },
   { name: 'Chemistry', group: 'stem' },
-  { name: 'Physics & Chemistry', group: 'stem' },
+  { name: 'Physics & Chemistry', group: 'stem', aliases: ['Physics and Chemistry', 'Chemical and Physical Science'] },
   { name: 'Biology', group: 'stem' },
   { name: 'Computer Science', group: 'stem' },
-  { name: 'Ag Science', group: 'stem' },
+  { name: 'Ag Science', group: 'stem', aliases: ['Agricultural Science'] },
   // Business
   { name: 'Accounting', group: 'business' },
   { name: 'Business', group: 'business' },
   { name: 'Economics', group: 'business' },
+  { name: 'LCVP Link Modules', group: 'business', levels: ['common'], aliases: ['LCVP', 'Link Modules', 'Life, Community and Work'] },
   // Humanities
   { name: 'History', group: 'humanities' },
   { name: 'Geography', group: 'humanities' },
-  { name: 'Politics & Society', group: 'humanities' },
+  { name: 'Politics & Society', group: 'humanities', aliases: ['Politics and Society'] },
   { name: 'Religious Education', group: 'humanities' },
   { name: 'Classical Studies', group: 'humanities' },
-  { name: 'Climate Action and Sustainable Development', group: 'humanities' },
+  { name: 'Climate Action and Sustainable Development', group: 'humanities', aliases: ['CASD'] },
   // Practical
-  { name: 'Home Economics', group: 'practical' },
-  { name: 'Construction Studies', group: 'practical' },
+  { name: 'Home Economics', group: 'practical', aliases: ['Home Ec'] },
+  { name: 'Construction Studies', group: 'practical', aliases: ['Construction Technology'] },
   { name: 'Engineering', group: 'practical' },
-  { name: 'DCG', group: 'practical' },
+  { name: 'DCG', group: 'practical', aliases: ['Design and Communication Graphics', 'Applied Graphics and Design'] },
   { name: 'Technology', group: 'practical' },
+  { name: 'Physical Education', group: 'practical', aliases: ['PE', 'LCPE'] },
   // Creative
   { name: 'Art', group: 'creative' },
   { name: 'Music', group: 'creative' },
-  { name: 'Drama, Film and Theatre Studies', group: 'creative' },
+  { name: 'Drama, Film and Theatre Studies', group: 'creative', aliases: ['DFTS'] },
 ];
+
+const DEFAULT_LC_LEVELS: Level[] = ['higher', 'ordinary'];
+
+/** The levels a Leaving Cert subject is examined at, in display order. */
+export function lcSubjectLevels(name: string): Level[] {
+  return LC_SUBJECTS.find(subject => subject.name === name)?.levels ?? DEFAULT_LC_LEVELS;
+}
+
+export const LEVEL_LABELS: Record<Level, string> = { higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common' };
+
+/** Whether a subject matches what a student typed, by name or by another name. */
+export function subjectMatchesQuery(subject: LCSubject, query: string): boolean {
+  const q = query.trim().toLocaleLowerCase();
+  if (!q) return true;
+  return [subject.name, ...(subject.aliases ?? [])].some(name => name.toLocaleLowerCase().includes(q));
+}
+
+/** One line for a subject whose level is fixed, or null when the student chooses. */
+export function fixedLevelNote(name: string): string | null {
+  const levels = lcSubjectLevels(name);
+  if (levels.length !== 1) return null;
+  return levels[0] === 'common'
+    ? `${name} is one common-level exam, graded Distinction, Merit or Pass.`
+    : `${name} is examined at Higher level only.`;
+}
 
 export const SUBJECT_GROUP_LABELS: Record<LCSubject['group'], string> = {
   languages: 'Languages',
@@ -269,6 +356,52 @@ export const ORDINARY_POINTS: Record<string, number> = {
   O1: 56, O2: 46, O3: 37, O4: 28, O5: 20, O6: 12, O7: 0, O8: 0,
 };
 
+export const FOUNDATION_GRADES: Grade[] = ['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8'];
+
+/** CAO's grid: F1 20, F2 12 for Foundation Mathematics and Irish. Not every
+ *  college counts them, but CAO publishes them, so the totals include them. */
+export const FOUNDATION_POINTS: Record<string, number> = {
+  F1: 20, F2: 12, F3: 0, F4: 0, F5: 0, F6: 0, F7: 0, F8: 0,
+};
+
+export const LCVP_GRADES: Grade[] = ['Distinction', 'Merit', 'Pass'];
+
+export const LCVP_POINTS: Record<string, number> = {
+  Distinction: 66, Merit: 46, Pass: 28,
+};
+
+export type GradeScale = 'higher' | 'ordinary' | 'foundation' | 'lcvp';
+
+/** Which scale a grade belongs to, read from the grade itself. */
+export function gradeScale(grade: Grade | undefined | null): GradeScale | null {
+  if (!grade || typeof grade !== 'string') return null;
+  if (Object.prototype.hasOwnProperty.call(LCVP_POINTS, grade)) return 'lcvp';
+  if (grade.startsWith('H')) return 'higher';
+  if (grade.startsWith('O')) return 'ordinary';
+  if (Object.prototype.hasOwnProperty.call(FOUNDATION_POINTS, grade)) return 'foundation';
+  return null;
+}
+
+/** Every grade on the same scale as `grade`, best first. */
+export function gradeLadder(grade: Grade | undefined | null): Grade[] {
+  const scale = gradeScale(grade);
+  return scale === 'lcvp' ? LCVP_GRADES : scale === 'higher' ? HIGHER_GRADES : scale === 'foundation' ? FOUNDATION_GRADES : ORDINARY_GRADES;
+}
+
+/** A sensible starting pair (current, target) on a level's scale. */
+export function defaultGradesForLevel(level: Level): { currentGrade: Grade; targetGrade: Grade } {
+  const grades = getGradesForLevel(level);
+  return level === 'common'
+    ? { currentGrade: 'Merit', targetGrade: 'Distinction' }
+    : { currentGrade: grades[3], targetGrade: grades[1] };
+}
+
+/** A new LC subject's starting level and grades, respecting fixed levels. */
+export function defaultSubjectConfig(name: string): { level: Level; currentGrade: Grade; targetGrade: Grade } {
+  const level = lcSubjectLevels(name)[0];
+  return { level, ...defaultGradesForLevel(level) };
+}
+
 export const DAYS_OF_WEEK = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] as const;
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -283,6 +416,8 @@ export function getPointsForGrade(grade: Grade | undefined | null, isMaths: bool
   // getStudentCurrentCAO end up giving JC students a CAO total of 0, which
   // is the correct semantic (no LC points to compute).
   if (!grade || typeof grade !== 'string') return 0;
+  if (gradeScale(grade) === 'lcvp') return LCVP_POINTS[grade];
+  if (gradeScale(grade) === 'foundation') return FOUNDATION_POINTS[grade];
   let points = grade.startsWith('H')
     ? (HIGHER_POINTS[grade] ?? 0)
     : (ORDINARY_POINTS[grade] ?? 0);
@@ -297,6 +432,8 @@ export function getPointsForGrade(grade: Grade | undefined | null, isMaths: bool
  * Returns the grade options for a given level.
  */
 export function getGradesForLevel(level: Level): Grade[] {
+  if (level === 'common') return LCVP_GRADES;
+  if (level === 'foundation') return FOUNDATION_GRADES;
   return level === 'higher' ? HIGHER_GRADES : ORDINARY_GRADES;
 }
 
@@ -308,19 +445,68 @@ export function getGradesForLevel(level: Level): Grade[] {
  */
 export function getGradeIndex(grade: Grade | undefined): number {
   if (!grade) return ORDINARY_GRADES.length; // off-scale → lowest priority
-  if (grade.startsWith('H')) {
-    return HIGHER_GRADES.indexOf(grade);
-  }
-  return ORDINARY_GRADES.indexOf(grade);
+  return gradeLadder(grade).indexOf(grade);
+}
+
+const SCALE_BONUS: Record<GradeScale, number> = { higher: 3, ordinary: 2, foundation: 1, lcvp: 0 };
+
+/**
+ * One number to compare any two Leaving Cert grades, bigger is better: CAO
+ * points first, then the level (H6 and O2 are both 46 points but H6 is the
+ * stronger result), then position on the grade's own scale (so H8, O7 and O8,
+ * all 0 points, still order within a scale).
+ */
+export function gradeRank(grade: Grade | undefined | null): number {
+  const scale = gradeScale(grade);
+  if (!grade || !scale) return -1;
+  return getPointsForGrade(grade) * 100 + SCALE_BONUS[scale] * 10 + (8 - getGradeIndex(grade));
+}
+
+/** The levels a student can aim for from `level`: their own and every level above it. */
+export function targetLevelsFor(level: Level): Level[] {
+  if (level === 'common') return ['common'];
+  if (level === 'foundation') return ['higher', 'ordinary', 'foundation'];
+  if (level === 'ordinary') return ['higher', 'ordinary'];
+  return ['higher'];
 }
 
 /**
- * Check if target grade is at same level or better than current.
+ * Grades a student may set as a target: those of their own level and every
+ * level above, best first. An Ordinary student can aim for Higher, a
+ * Foundation student for Ordinary or Higher. Every subject offered at a level is
+ * also offered at the levels above it, so the level alone decides this.
+ */
+export function targetGradesFor(level: Level): Grade[] {
+  return targetLevelsFor(level).flatMap(getGradesForLevel);
+}
+
+/**
+ * How far a target is from the current grade, for effort estimates. On one
+ * scale it is the number of grade steps; across levels it is the difference in
+ * CAO points steps plus one for the jump in level (moving up a level is harder
+ * than the same points on the level you are on).
+ */
+export function gradeSteps(current: Grade | undefined, target: Grade | undefined): number {
+  const from = gradeScale(current);
+  const to = gradeScale(target);
+  if (!current || !target || !from || !to) return 0;
+  if (from === to) return Math.max(0, getGradeIndex(current) - getGradeIndex(target));
+  const ladder = [100, 88, 77, 66, 56, 46, 37, 28, 20, 12, 0];
+  const position = (grade: Grade) => ladder.indexOf(getPointsForGrade(grade));
+  const jump = SCALE_BONUS[to] > SCALE_BONUS[from] ? 1 : 0;
+  return Math.max(0, position(current) - position(target)) + jump;
+}
+
+/**
+ * A target is valid when it is no worse than the current grade, on the same
+ * scale or a higher one (Ordinary current, Higher target).
  */
 export function isValidTarget(current: Grade, target: Grade): boolean {
-  // Must be same level prefix
-  if (current.charAt(0) !== target.charAt(0)) return false;
-  return getGradeIndex(target) <= getGradeIndex(current);
+  const from = gradeScale(current);
+  const to = gradeScale(target);
+  if (!from || !to) return false;
+  if (from === 'lcvp' || to === 'lcvp') return from === to && getGradeIndex(target) <= getGradeIndex(current);
+  return gradeRank(target) >= gradeRank(current);
 }
 
 // ─── Grade Bargains Calculator ──────────────────────────────────────────────
@@ -339,7 +525,7 @@ export function computeBargains(profile: StudentSubjectProfile): Bargain[] {
 
   for (const sub of profile.subjects) {
     const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
-    const grades = sub.level === 'higher' ? HIGHER_GRADES : ORDINARY_GRADES;
+    const grades = gradeLadder(sub.currentGrade);
     const currentIdx = grades.indexOf(sub.currentGrade);
     if (currentIdx <= 0) continue;
 

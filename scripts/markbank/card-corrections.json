@@ -286,24 +286,6 @@
   }
  },
  "biology": {
-  "bio-2024-hl-q12-b-i": {
-   "reason": "The printed task asks the student to copy and extend the prey-population graph; the same inspected official graph is shared by every sibling that depends on it.",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
-  "bio-2024-hl-q12-b-ii": {
-   "reason": "The explanation concerns the predator line the student draws over the supplied prey graph, so the inspected official graph must remain visible as question context.",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
-  "bio-2024-hl-q12-b-iii": {
-   "reason": "Time X exists only on the supplied prey graph; attach the same inspected official graph used by the rest of Q12(b).",
-   "set": {
-    "questionFigureKey": "biology-2024-hl-paper-p003-i0"
-   }
-  },
   "bio-2025-ol-q11-c-i": {
    "reason": "Q11(c) is printed in the Section C booklet; its earlier Section A tag pointed the source reader at the wrong paper component.",
    "set": {
@@ -328,47 +310,120 @@
     "section": "C"
    }
   },
-  "bio-2022-ol-q6-a": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q3-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q3-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q3-a"
   },
-  "bio-2022-ol-q6-b": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q4-ab-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q4-ab, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q4-ab"
   },
-  "bio-2022-ol-q6-c": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q5-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q5-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q5-a"
   },
-  "bio-2022-ol-q6-d": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q5-b-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q5-b, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q5-b"
   },
-  "bio-2022-ol-q6-e": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q6-a-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-a, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-a"
   },
-  "bio-2022-ol-q6-f": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q6-b-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-b, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-b"
   },
-  "bio-2022-ol-q6-g": {
-   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
-   "set": {
-    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
-   }
+  "bio-2025-hl-q6-c-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q6-c, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q6-c"
+  },
+  "bio-2025-hl-q11-b-iv-vi-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q11-b-iv-vi, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q11-b-iv-vi"
+  },
+  "bio-2025-hl-q14-c-i-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q14-c-neuron-id, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q14-c-neuron-id"
+  },
+  "bio-2025-hl-q16-a-iv-1-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q16-a-iv-1, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q16-a-iv-1"
+  },
+  "bio-2025-hl-q16-c-iii-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q16-c-iii, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q16-c-iii"
+  },
+  "bio-2025-hl-q17-a-i-fig": {
+   "reason": "Never shipped: a figure twin superseded by its base card bio-2025-hl-q17-a-i, which now carries the reviewed task and its figure. Withdrawn so the corrected base's questionRef cannot expose it as a duplicate.",
+   "drop": true,
+   "replacementId": "bio-2025-hl-q17-a-i"
+  },
+  "bio-2025-ol-q16-ciii-fig": {
+   "reason": "A shipped duplicate: \"Q16(c)(iii)-(iv)\" carded the two parts bio-2025-ol-q16-c-iii and bio-2025-ol-q16-c-iv already card separately. Withdrawn with a progress alias to bio-2025-ol-q16-c-iii, which carries its first part.",
+   "drop": true,
+   "replacementId": "bio-2025-ol-q16-c-iii"
+  },
+  "bio-2024-hl-q8-b2": {
+   "reason": "The second half of Q8(b), one printed task the old cards cut in two (\"[1 of 2]\", \"[2 of 2]\"). Withdrawn with a progress alias to bio-2024-hl-q8-b1, which now carries the whole task.",
+   "drop": true,
+   "replacementId": "bio-2024-hl-q8-b1"
+  },
+  "bio-2023-hl-q14-b-ii-fig": {
+   "reason": "Never shipped: a figure twin of bio-2023-hl-q14-b-ii, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2023-hl-q14-b-ii"
+  },
+  "bio-2023-ol-q16b-ii-v-fig": {
+   "reason": "Never shipped: a figure twin of bio-2023-ol-q16b-ii-v, which carries Q16(b)(ii) with its figure.",
+   "drop": true,
+   "replacementId": "bio-2023-ol-q16b-ii-v"
+  },
+  "bio-2022-hl-q17-d-ii": {
+   "reason": "Never shipped: the explanation half of Q17(d)(ii), which bio-2022-hl-q17-d-ii-fig carries whole with its diagram.",
+   "drop": true,
+   "replacementId": "bio-2022-hl-q17-d-ii-fig"
+  },
+  "bio-2022-hl-q16-b-iii-fig": {
+   "reason": "Never shipped: a figure twin of bio-2022-hl-q16-b-iii, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2022-hl-q16-b-iii"
+  },
+  "bio-2022-ol-q16-a-ii-fig": {
+   "reason": "Never shipped: a figure twin of bio-2022-ol-q16-a-ii, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2022-ol-q16-a-ii"
+  },
+  "bio-2021-ol-q14-b-iv-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q14-b-iv, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q14-b-iv"
+  },
+  "bio-2021-ol-q15-b-v-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q15-b-v, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q15-b-v"
+  },
+  "bio-2021-ol-q15-b-vi-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q15-b-vi, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q15-b-vi"
+  },
+  "bio-2021-ol-q16d-iv-fig": {
+   "reason": "Never shipped: a figure twin of bio-2021-ol-q16d-iv, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "bio-2021-ol-q16d-iv"
   }
  },
  "physics": {
@@ -426,1084 +481,7 @@
    }
   }
  },
- "construction-studies": {
-  "cons-2016-hl-q6-a": {
-   "reason": "The scheme awards 5 marks for the notes and 5 for the sketch for each of three selected design features; the parsed 6-of-14 list incorrectly treated six bullet points as six features.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 30,
-    "rows": [
-     {
-      "id": "cons-2016-hl-q6-a-notes",
-      "kind": "anyN",
-      "verbatim": "Three low-environmental-impact design features — Notes",
-      "marks": 15,
-      "openList": true,
-      "contextNote": "Choose three distinct features shown in the supplied design. Each selected feature needs a detailed note and is worth 5 marks.",
-      "group": {
-       "claimMax": 3,
-       "perOption": 5,
-       "options": [
-        "the cedar cladding finish on the exterior is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction",
-        "the tree planting indicated reduces the visual impact of the building and help with carbon sequestration",
-        "the planting of trees indicated in the drawing softens the contrast between the natural setting and the geometric nature of the architecture",
-        "trees to provide shade, food and shelter for birds and humans and aid biodiversity",
-        "the cedar cladding needs no preservatives, naturally durable",
-        "the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere",
-        "the large areas of glazing and the double height glazing, which are presumed to be south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating",
-        "the smaller windows to the north-facing elevations reduce heat loss and help conserve energy",
-        "the stove and associated flue are placed against an inner wall of high thermal mass, increasing the storage of heat within the fabric of the house",
-        "wood burning stoves are carbon neutral and stoves are up to 70% efficient",
-        "open-plan, naturally lighted layout",
-        "short circulation areas and corridors",
-        "hot press adjacent to bathroom and kitchen, short pipe runs and reduced hot water run off needed",
-        "the entrance lobby/storm porch greatly reduces the loss of heated air when the door is used"
-       ]
-      }
-     },
-     {
-      "id": "cons-2016-hl-q6-a-sketches",
-      "kind": "criterion",
-      "verbatim": "Three selected design features — Sketches",
-      "marks": 15,
-      "contextNote": "The scheme awards 5 marks for the freehand sketch accompanying each of the three selected features. Claim this only when all three sketches communicate their design details."
-     }
-    ]
-   }
-  },
-  "cons-2016-hl-q10-b": {
-   "reason": "The paper awards two reasons at 6 marks and two design details at 6 marks. The parser had omitted the reasons, split three scheme headings into unequal rows, and inflated the total to 42.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 24,
-    "rows": [
-     {
-      "id": "cons-2016-hl-q10-b-reasons",
-      "kind": "anyN",
-      "verbatim": "Reasons why the Passive House may overheat",
-      "marks": 12,
-      "openList": true,
-      "contextNote": "Select two distinct, discussed reasons; each is worth 6 marks.",
-      "group": {
-       "claimMax": 2,
-       "perOption": 6,
-       "options": [
-        "passive standard – overheating occurs if internal temperature greater than 25° for 36 days (10%) days annually",
-        "inadequate or no over-shading of windows – no roof overhang, balcony or brise-soleil",
-        "insufficient ventilation – natural or mechanical",
-        "insufficient thermal mass - not appropriate to house size",
-        "poor design detailing, long unvented corridors, small isolated rooms, poor placement of windows",
-        "large amounts of south facing glazing resulting in too much solar heat gain",
-        "inadequate natural shading",
-        "in addition to solar heat gain, heat produced inside the house, lighting, appliances, hot water production and cooking all add to overheating"
-       ]
-      }
-     },
-     {
-      "id": "cons-2016-hl-q10-b-details",
-      "kind": "anyN",
-      "verbatim": "Design details that reduce overheating",
-      "marks": 12,
-      "openList": true,
-      "contextNote": "Select two distinct note-and-sketch design details; each complete detail is worth 6 marks.",
-      "group": {
-       "claimMax": 2,
-       "perOption": 6,
-       "options": [
-        "an overhang / extended eaves / to reduce the amount of solar heat gain in summertime",
-        "this works on the same principle as the overhang and is used to reduce the amount of summer sun entering a building",
-        "Include thermal mass in design, external insulation with concrete walls and floors to absorb heat and release slowly",
-        "automatically adjusts its tint in response to environmental conditions"
-       ]
-      }
-     }
-    ]
-   }
-  },
-  "cons-2017-hl-q2-c": {
-   "reason": "This is six compulsory layout criteria, not an any-six menu containing seven generic labels. Four parallel fixture-location marks are grouped into one bounded checklist so the complete rubric remains readable on a phone.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 24,
-    "rows": [
-     {
-      "id": "cons-2017-hl-q2-c-locations",
-      "kind": "anyN",
-      "verbatim": "Bathroom fixture locations",
-      "marks": 16,
-      "group": {
-       "claimMax": 4,
-       "perOption": 4,
-       "options": [
-        "Location of shower area",
-        "Location of W.C.",
-        "Location of wash basin",
-        "Grab rails"
-       ]
-      }
-     },
-     {
-      "id": "cons-2017-hl-q2-c-dimensions",
-      "kind": "point",
-      "verbatim": "Dimensions of turning circle/door/any 2 dimensions",
-      "marks": 4
-     },
-     {
-      "id": "cons-2017-hl-q2-c-sewer-gases",
-      "kind": "point",
-      "verbatim": "Design detail to prevent the penetration of sewer gases",
-      "marks": 4,
-      "contextNote": "Show this design detail on the separate sketch required by the printed task."
-     }
-    ]
-   }
-  },
-  "cons-2017-hl-q4-a": {
-   "reason": "Q4(a) awards a note and a freehand sketch for each of three functional requirements. The flattened scheme crossed into Q4(b) and replaced those requirements with wall types and generic positive/negative headings.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 24,
-    "rows": [
-     {
-      "id": "cons-2017-hl-q4-a-requirements",
-      "kind": "anyN",
-      "verbatim": "Three functional requirements — discussed note and freehand sketch",
-      "marks": 24,
-      "openList": true,
-      "contextNote": "Choose three distinct functional requirements. For each one, the scheme awards 4 marks for the discussed note and 4 marks for the communicating freehand sketch.",
-      "group": {
-       "claimMax": 3,
-       "perOption": 8,
-       "options": [
-        "keep the occupants safe, dry and warm and sheltered from the elements",
-        "prevent the transfer of heat to the outside or to the inside of the dwelling",
-        "provide for the reduction of noise from outside and inside",
-        "anchor roof to walls and support the floors/upper floor(s) and roof",
-        "spread the superimposed loads evenly over the foundations",
-        "provide robust openings for doors and windows",
-        "have sufficient structural integrity to avoid cracks or other failure under load",
-        "provide low-maintenance, climate-proof exterior surfaces and finishes",
-        "have no cold bridges and be designed to have low embodied energy",
-        "prevent the formation of condensation and dampness",
-        "prevent interstitial dampness",
-        "prevent the uncontrolled passage of air through the structure",
-        "prevent the ingress of water",
-        "prevent access of vermin to the building and the roof space",
-        "be aesthetically pleasing and be in keeping with the surroundings of the dwelling",
-        "provide a means of carbon sequestration"
-       ]
-      }
-     }
-    ]
-   }
-  },
-  "cons-2017-hl-q4-b": {
-   "reason": "The paper requires any two of three named wall systems, each marked Note 5 + Sketch 5 + Dimensions 2. Named route variants retain that split while grouping the two parallel wall entries into three compact checklist rows.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 24,
-    "rows": [
-     {
-      "id": "cons-2017-hl-q4-b-concrete-timber-notes",
-      "kind": "anyN",
-      "verbatim": "Selected wall systems — Notes",
-      "marks": 10,
-      "contextNote": "Name and annotate the typical components of both selected walls.",
-      "group": {
-       "claimMax": 2,
-       "perOption": 5,
-       "options": [
-        "Concrete block construction",
-        "Timber frame construction"
-       ]
-      }
-     },
-     {
-      "id": "cons-2017-hl-q4-b-concrete-timber-sketches",
-      "kind": "anyN",
-      "verbatim": "Selected wall systems — Sketches",
-      "marks": 10,
-      "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.",
-      "group": {
-       "claimMax": 2,
-       "perOption": 5,
-       "options": [
-        "Concrete block construction",
-        "Timber frame construction"
-       ]
-      }
-     },
-     {
-      "id": "cons-2017-hl-q4-b-concrete-timber-dimensions",
-      "kind": "anyN",
-      "verbatim": "Selected wall systems — Dimensions",
-      "marks": 4,
-      "contextNote": "Include typical dimensions for both selected walls.",
-      "group": {
-       "claimMax": 2,
-       "perOption": 2,
-       "options": [
-        "Concrete block construction",
-        "Timber frame construction"
-       ]
-      }
-     }
-    ],
-    "answerVariants": [
-     {
-      "id": "concrete-and-timber",
-      "label": "Concrete block + timber frame",
-      "rows": [
-       {
-        "id": "cons-2017-hl-q4-b-concrete-timber-notes",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Notes",
-        "marks": 10,
-        "contextNote": "Name and annotate typical components such as cavities, insulation, airtight layers, rainscreen battens and racking.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 5,
-         "options": [
-          "Concrete block construction",
-          "Timber frame construction"
-         ]
-        }
-       },
-       {
-        "id": "cons-2017-hl-q4-b-concrete-timber-sketches",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Sketches",
-        "marks": 10,
-        "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 5,
-         "options": [
-          "Concrete block construction",
-          "Timber frame construction"
-         ]
-        }
-       },
-       {
-        "id": "cons-2017-hl-q4-b-concrete-timber-dimensions",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Dimensions",
-        "marks": 4,
-        "contextNote": "Include typical dimensions for both selected walls.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 2,
-         "options": [
-          "Concrete block construction",
-          "Timber frame construction"
-         ]
-        }
-       }
-      ]
-     },
-     {
-      "id": "concrete-and-hemp-lime",
-      "label": "Concrete block + hemp-lime",
-      "rows": [
-       {
-        "id": "cons-2017-hl-q4-b-concrete-hemp-notes",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Notes",
-        "marks": 10,
-        "contextNote": "Name and annotate typical components including the 300–500 mm hemp-lime layer and breathable finishes where relevant.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 5,
-         "options": [
-          "Concrete block construction",
-          "Timber frame and hemp-lime construction"
-         ]
-        }
-       },
-       {
-        "id": "cons-2017-hl-q4-b-concrete-hemp-sketches",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Sketches",
-        "marks": 10,
-        "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 5,
-         "options": [
-          "Concrete block construction",
-          "Timber frame and hemp-lime construction"
-         ]
-        }
-       },
-       {
-        "id": "cons-2017-hl-q4-b-concrete-hemp-dimensions",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Dimensions",
-        "marks": 4,
-        "contextNote": "Include typical dimensions for both selected walls.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 2,
-         "options": [
-          "Concrete block construction",
-          "Timber frame and hemp-lime construction"
-         ]
-        }
-       }
-      ]
-     },
-     {
-      "id": "timber-and-hemp-lime",
-      "label": "Timber frame + hemp-lime",
-      "rows": [
-       {
-        "id": "cons-2017-hl-q4-b-timber-hemp-notes",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Notes",
-        "marks": 10,
-        "contextNote": "Name and annotate the rainscreen/timber-frame layers and the hemp-lime wall's breathable construction.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 5,
-         "options": [
-          "Timber frame construction",
-          "Timber frame and hemp-lime construction"
-         ]
-        }
-       },
-       {
-        "id": "cons-2017-hl-q4-b-timber-hemp-sketches",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Sketches",
-        "marks": 10,
-        "contextNote": "Each selected wall needs a freehand sketch communicating its typical design detailing.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 5,
-         "options": [
-          "Timber frame construction",
-          "Timber frame and hemp-lime construction"
-         ]
-        }
-       },
-       {
-        "id": "cons-2017-hl-q4-b-timber-hemp-dimensions",
-        "kind": "anyN",
-        "verbatim": "Selected wall systems — Dimensions",
-        "marks": 4,
-        "contextNote": "Include typical dimensions for both selected walls.",
-        "group": {
-         "claimMax": 2,
-         "perOption": 2,
-         "options": [
-          "Timber frame construction",
-          "Timber frame and hemp-lime construction"
-         ]
-        }
-       }
-      ]
-     }
-    ]
-   }
-  },
-  "cons-2017-hl-q4-c": {
-   "reason": "Q4(c) follows the same closed any-two wall choice as Q4(b). Named route variants replace four anonymous placeholders and preserve the correct four-by-three-mark tariff.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 12,
-    "rows": [
-     {
-      "id": "cons-2017-hl-q4-c-concrete-environment",
-      "kind": "point",
-      "verbatim": "Concrete block construction — Environmental consideration",
-      "marks": 3,
-      "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time."
-     },
-     {
-      "id": "cons-2017-hl-q4-c-concrete-ease",
-      "kind": "point",
-      "verbatim": "Concrete block construction — Ease of construction",
-      "marks": 3,
-      "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction."
-     },
-     {
-      "id": "cons-2017-hl-q4-c-timber-environment",
-      "kind": "point",
-      "verbatim": "Timber frame construction — Environmental consideration",
-      "marks": 3,
-      "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts."
-     },
-     {
-      "id": "cons-2017-hl-q4-c-timber-ease",
-      "kind": "point",
-      "verbatim": "Timber frame construction — Ease of construction",
-      "marks": 3,
-      "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands."
-     }
-    ],
-    "answerVariants": [
-     {
-      "id": "concrete-and-timber",
-      "label": "Concrete block + timber frame",
-      "rows": [
-       {
-        "id": "cons-2017-hl-q4-c-concrete-environment",
-        "kind": "point",
-        "verbatim": "Concrete block construction — Environmental consideration",
-        "marks": 3,
-        "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-concrete-ease",
-        "kind": "point",
-        "verbatim": "Concrete block construction — Ease of construction",
-        "marks": 3,
-        "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-timber-environment",
-        "kind": "point",
-        "verbatim": "Timber frame construction — Environmental consideration",
-        "marks": 3,
-        "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-timber-ease",
-        "kind": "point",
-        "verbatim": "Timber frame construction — Ease of construction",
-        "marks": 3,
-        "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands."
-       }
-      ]
-     },
-     {
-      "id": "concrete-and-hemp-lime",
-      "label": "Concrete block + hemp-lime",
-      "rows": [
-       {
-        "id": "cons-2017-hl-q4-c-concrete-environment",
-        "kind": "point",
-        "verbatim": "Concrete block construction — Environmental consideration",
-        "marks": 3,
-        "contextNote": "Discuss a supported positive or negative, such as durability and thermal mass, or cement emissions, embodied energy, long construction and drying time."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-concrete-ease",
-        "kind": "point",
-        "verbatim": "Concrete block construction — Ease of construction",
-        "marks": 3,
-        "contextNote": "Relevant points include readily available skilled trades, standard components and largely on-site construction."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-hemp-environment",
-        "kind": "point",
-        "verbatim": "Timber frame and hemp-lime construction — Environmental consideration",
-        "marks": 3,
-        "contextNote": "Relevant points include sustainable fast-growing hemp, low manufacturing energy, carbon storage and breathability, balanced against sourcing, licensing and airtightness."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-hemp-ease",
-        "kind": "point",
-        "verbatim": "Timber frame and hemp-lime construction — Ease of construction",
-        "marks": 3,
-        "contextNote": "Relevant points include familiar timber skills, simple on-site mixing and quick enclosure, balanced against scarce skills and materials."
-       }
-      ]
-     },
-     {
-      "id": "timber-and-hemp-lime",
-      "label": "Timber frame + hemp-lime",
-      "rows": [
-       {
-        "id": "cons-2017-hl-q4-c-timber-environment",
-        "kind": "point",
-        "verbatim": "Timber frame construction — Environmental consideration",
-        "marks": 3,
-        "contextNote": "Discuss a supported positive or negative, such as carbon storage and high insulation, or maintenance, water-detailing and forestry impacts."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-timber-ease",
-        "kind": "point",
-        "verbatim": "Timber frame construction — Ease of construction",
-        "marks": 3,
-        "contextNote": "Relevant points include light components, fast dry construction and off-site manufacture, balanced against accuracy, planning and dry-storage demands."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-hemp-environment",
-        "kind": "point",
-        "verbatim": "Timber frame and hemp-lime construction — Environmental consideration",
-        "marks": 3,
-        "contextNote": "Relevant points include sustainable fast-growing hemp, low manufacturing energy, carbon storage and breathability, balanced against sourcing, licensing and airtightness."
-       },
-       {
-        "id": "cons-2017-hl-q4-c-hemp-ease",
-        "kind": "point",
-        "verbatim": "Timber frame and hemp-lime construction — Ease of construction",
-        "marks": 3,
-        "contextNote": "Relevant points include familiar timber skills, simple on-site mixing and quick enclosure, balanced against scarce skills and materials."
-       }
-      ]
-     }
-    ]
-   }
-  },
-  "cons-2017-hl-q6-b": {
-   "reason": "The scheme awards three notes and three sketches at 5 marks each; the parsed six-of-fourteen list let students claim six isolated facts instead of completing three designed features.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 30,
-    "rows": [
-     {
-      "id": "cons-2017-hl-q6-b-notes",
-      "kind": "anyN",
-      "verbatim": "Three eco-friendly design features — Notes",
-      "marks": 15,
-      "openList": true,
-      "contextNote": "Choose three distinct features shown in the supplied design. Each selected feature needs a detailed note and is worth 5 marks.",
-      "group": {
-       "claimMax": 3,
-       "perOption": 5,
-       "options": [
-        "the house - except for foundations, ground floor, chimney stack and internal plasterboard for fire-proofing - is entirely constructed from wood",
-        "wood is renewable, carbon neutral and has low embodied energy",
-        "simple building form appropriate to eco-friendly design",
-        "the native larch finish on the exterior, is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction",
-        "larch cladding is naturally durable and needs no preservatives – can be flame charred as a finish",
-        "reduced transport costs as larch is available in Ireland and does not have to be imported or transported long distances",
-        "lightweight timber-frame building needs smaller foundations – eco-friendly",
-        "the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere",
-        "the large areas of glazing, which are south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating",
-        "there are no windows to the north, thus reducing heat loss and helping conserve energy",
-        "external storage space to the north, at rear, builds a buffer zone to outside, reducing heat loss through the cold north facing external walls",
-        "the stove and flue are placed against an inner chimney stack of high thermal mass, increasing the storage of heat and keeping the heat within the fabric of the house",
-        "wood burning stoves are carbon neutral and are about 70% efficient",
-        "purposely designed open-plan, naturally lighted layout with no corridors, all space is useable, no wasted floor area – 1.5 storeys for maximum use of upper floor area"
-       ]
-      }
-     },
-     {
-      "id": "cons-2017-hl-q6-b-sketches",
-      "kind": "criterion",
-      "verbatim": "Three eco-friendly features — Sketches",
-      "marks": 15,
-      "contextNote": "The scheme awards 5 marks for the freehand sketch accompanying each of the three selected features. Claim this only when all three sketches communicate their design details."
-     }
-    ]
-   }
-  },
-  "cons-2017-hl-q6-c": {
-   "reason": "The scheme awards a note and a sketch at 5 marks each for each of two added features; the parsed four-of-five heading list did not represent that rubric.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 20,
-    "rows": [
-     {
-      "id": "cons-2017-hl-q6-c-notes",
-      "kind": "anyN",
-      "verbatim": "Two additional low-operating-cost features — Notes",
-      "marks": 10,
-      "openList": true,
-      "contextNote": "Choose two distinct additions and discuss each in a detailed note; each note is worth 5 marks.",
-      "group": {
-       "claimMax": 2,
-       "perOption": 5,
-       "options": [
-        "Adding to the building fabric",
-        "Install evacuated tubes",
-        "Install photovoltaic (PV) panels to generate on-site renewable energy",
-        "Wind generator to generate electricity from the wind",
-        "Rainwater harvesting"
-       ]
-      }
-     },
-     {
-      "id": "cons-2017-hl-q6-c-sketches",
-      "kind": "criterion",
-      "verbatim": "Two additional features — Sketches",
-      "marks": 10,
-      "contextNote": "The scheme awards 5 marks for the freehand sketch accompanying each selected addition. Claim this only when both sketches communicate their design details."
-     }
-    ]
-   }
-  },
-  "cons-2017-hl-q9-a": {
-   "reason": "The scheme has five compulsory 4-mark criteria. The parser turned them into an any-five list headed by only the final criterion, obscuring the sketch, note, reinforcement and dimensions requirements.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 20,
-    "rows": [
-     {
-      "id": "cons-2017-hl-q9-a-sketch",
-      "kind": "criterion",
-      "verbatim": "Sketch of foundation",
-      "marks": 4,
-      "contextNote": "Show the typical reinforced-concrete strip-foundation detail for the 400 mm cavity wall."
-     },
-     {
-      "id": "cons-2017-hl-q9-a-note",
-      "kind": "point",
-      "verbatim": "Foundation design detailing — Note",
-      "marks": 4,
-      "contextNote": "Annotate the foundation construction shown in the sketch."
-     },
-     {
-      "id": "cons-2017-hl-q9-a-reinforcement",
-      "kind": "point",
-      "verbatim": "Position of reinforcement",
-      "marks": 4,
-      "contextNote": "Typical details include 12 mm longitudinal and transverse mild-steel bars, tied at junctions, with 50 mm concrete cover."
-     },
-     {
-      "id": "cons-2017-hl-q9-a-dimensions",
-      "kind": "point",
-      "verbatim": "Three typical dimensions",
-      "marks": 4,
-      "contextNote": "Examples include a trench 1000–1200 mm below ground, width about three times the wall thickness (1200 mm), 12 mm bars and 50 mm cover."
-     },
-     {
-      "id": "cons-2017-hl-q9-a-reasons",
-      "kind": "point",
-      "verbatim": "Reasons for dimensions specified",
-      "marks": 4,
-      "contextNote": "Relate the depth to the frost line and solid ground, the width to spreading load and working space, and cover to protecting reinforcement from water and corrosion."
-     }
-    ]
-   }
-  },
-  "cons-2017-ol-q6-b": {
-   "reason": "All three named PPE items are compulsory and each earns 6 marks for sketch quality plus 4 for its note and reason. Parallel sketch and reason checklists retain all six allocations without presenting six separate panels.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 30,
-    "rows": [
-     {
-      "id": "cons-2017-ol-q6-b-sketches",
-      "kind": "anyN",
-      "verbatim": "PPE items — Quality of sketches",
-      "marks": 18,
-      "contextNote": "Each of the three sketches is marked excellent 6, good 4 or fair 2.",
-      "group": {
-       "claimMax": 3,
-       "perOption": 6,
-       "options": [
-        "Hard hat",
-        "Safety boots",
-        "High visibility vest"
-       ]
-      }
-     },
-     {
-      "id": "cons-2017-ol-q6-b-reasons",
-      "kind": "anyN",
-      "verbatim": "PPE items — Notes and specific reasons",
-      "marks": 12,
-      "contextNote": "Give the matching safety reason for each of the three items.",
-      "group": {
-       "claimMax": 3,
-       "perOption": 4,
-       "options": [
-        "The wearing of helmets is mandatory for workers and visitors to a site",
-        "The safety boots provide extra safety for workers on the site",
-        "High visibility vest is very important when machinery is being used on the site"
-       ]
-      }
-     }
-    ]
-   }
-  },
-  "cons-2017-ol-q9-c": {
-   "reason": "The parser crossed into the separate practical-test booklet and attached eight project-assessment rows to a ten-mark patio question. The corrected menu contains only the two-of-eight advantages printed in the theory-paper scheme.",
-   "set": {
-    "tariffModel": {
-     "kind": "bestNofParts",
-     "answer": 2,
-     "ofParts": 8,
-     "perPart": 5
-    },
-    "totalMarks": 10,
-    "rows": [
-     {
-      "id": "cons-2017-ol-q9-c-advantages",
-      "kind": "anyN",
-      "verbatim": "Two advantages of an external patio",
-      "marks": 10,
-      "openList": true,
-      "group": {
-       "claimMax": 2,
-       "perOption": 5,
-       "options": [
-        "It extends the area of the house",
-        "Provides a level surface for people with mobility issues",
-        "Patio provides an open external play area for children",
-        "Provides a place to eat, sit-out, relax and entertain in an outdoor space",
-        "Decking furniture may be used for relaxation",
-        "Ideal for summer dining",
-        "Brings the occupants close to nature - biophilia",
-        "It adds to the value of the house"
-       ]
-      }
-     }
-    ]
-   }
-  },
-  "cons-2018-ol-q6-c": {
-   "reason": "The scheme awards 4 marks for naming one of three PPE items and 5 for its matching reason. Three explicit answer routes replace the lost item mark and eye-protection-only answer.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 9,
-    "rows": [
-     {
-      "id": "cons-2018-ol-q6-c-eye-item",
-      "kind": "point",
-      "verbatim": "Eye protection",
-      "marks": 4
-     },
-     {
-      "id": "cons-2018-ol-q6-c-eye-reason",
-      "kind": "anyN",
-      "verbatim": "Eye protection — Reason",
-      "marks": 5,
-      "openList": true,
-      "group": {
-       "claimMax": 1,
-       "perOption": 5,
-       "options": [
-        "This is to protect the eyes from sharp objects",
-        "To protect the eyes from grit and dust",
-        "To protect the eyes when cutting concrete or steel",
-        "Protects the eyes when using an angle grinder or when welding"
-       ]
-      }
-     }
-    ],
-    "answerVariants": [
-     {
-      "id": "eye-protection",
-      "label": "Eye protection",
-      "rows": [
-       {
-        "id": "cons-2018-ol-q6-c-eye-item",
-        "kind": "point",
-        "verbatim": "Eye protection",
-        "marks": 4
-       },
-       {
-        "id": "cons-2018-ol-q6-c-eye-reason",
-        "kind": "anyN",
-        "verbatim": "Eye protection — Reason",
-        "marks": 5,
-        "openList": true,
-        "group": {
-         "claimMax": 1,
-         "perOption": 5,
-         "options": [
-          "This is to protect the eyes from sharp objects",
-          "To protect the eyes from grit and dust",
-          "To protect the eyes when cutting concrete or steel",
-          "Protects the eyes when using an angle grinder or when welding"
-         ]
-        }
-       }
-      ]
-     },
-     {
-      "id": "ear-protection",
-      "label": "Ear protection",
-      "rows": [
-       {
-        "id": "cons-2018-ol-q6-c-ear-item",
-        "kind": "point",
-        "verbatim": "Ear protection",
-        "marks": 4
-       },
-       {
-        "id": "cons-2018-ol-q6-c-ear-reason",
-        "kind": "anyN",
-        "verbatim": "Ear protection — Reason",
-        "marks": 5,
-        "openList": true,
-        "group": {
-         "claimMax": 1,
-         "perOption": 5,
-         "options": [
-          "To protect the ears from constant loud noise",
-          "Protect the ears when using drilling equipment",
-          "Protect the ears when noise is continuous at level 85-90 decibels"
-         ]
-        }
-       }
-      ]
-     },
-     {
-      "id": "safety-gloves",
-      "label": "Safety gloves",
-      "rows": [
-       {
-        "id": "cons-2018-ol-q6-c-gloves-item",
-        "kind": "point",
-        "verbatim": "Safety gloves",
-        "marks": 4
-       },
-       {
-        "id": "cons-2018-ol-q6-c-gloves-reason",
-        "kind": "anyN",
-        "verbatim": "Safety gloves — Reason",
-        "marks": 5,
-        "openList": true,
-        "group": {
-         "claimMax": 1,
-         "perOption": 5,
-         "options": [
-          "Working with sharp edges e.g. glass",
-          "Working with hot bitumen on flat roofs",
-          "Working with pneumatic drills or vibrating machinery",
-          "Working with corrosive or toxic equipment"
-         ]
-        }
-       }
-      ]
-     }
-    ]
-   }
-  },
-  "cons-2018-ol-q9-c-advantage": {
-   "reason": "Replace the anonymous row heading with the actual examinable point while retaining every accepted scheme answer.",
-   "set": {
-    "rows": [
-     {
-      "id": "cons-2018-ol-q9-c-advantage-r1",
-      "kind": "anyN",
-      "verbatim": "Advantages of fitting glazed double doors",
-      "marks": 4,
-      "openList": true,
-      "contextNote": "Discuss one supported advantage.",
-      "group": {
-       "claimMax": 1,
-       "perOption": 4,
-       "options": [
-        "The double doors open up the area",
-        "More space available",
-        "Make the rooms feel bigger",
-        "They create a private area when needed",
-        "They create a quiet area as required",
-        "People arriving into one section will be visible",
-        "Allows sunlight / daylight into the both rooms",
-        "Allows wheelchair accessibility between both rooms"
-       ]
-      }
-     }
-    ]
-   }
-  },
-  "cons-2019-hl-q8-c": {
-   "reason": "The scheme supplies three complete alternative wastewater systems. Named routes now pair the 8-mark notes and 8-mark sketch instead of displaying two generic labels with no system content.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 16,
-    "rows": [
-     {
-      "id": "cons-2019-hl-q8-c-raised-notes",
-      "kind": "point",
-      "verbatim": "Raised percolation areas — Notes",
-      "marks": 8,
-      "contextNote": "Where site conditions suit, mound additional topsoil above existing ground and lay the percolation pipes within the raised element."
-     },
-     {
-      "id": "cons-2019-hl-q8-c-raised-sketch",
-      "kind": "criterion",
-      "verbatim": "Raised percolation areas — Sketch",
-      "marks": 8,
-      "contextNote": "Show the dwelling wastewater route and the raised/mounded percolation arrangement clearly."
-     }
-    ],
-    "answerVariants": [
-     {
-      "id": "raised-percolation",
-      "label": "Raised percolation area",
-      "rows": [
-       {
-        "id": "cons-2019-hl-q8-c-raised-notes",
-        "kind": "point",
-        "verbatim": "Raised percolation areas — Notes",
-        "marks": 8,
-        "contextNote": "Where site conditions suit, mound additional topsoil above existing ground and lay the percolation pipes within the raised element."
-       },
-       {
-        "id": "cons-2019-hl-q8-c-raised-sketch",
-        "kind": "criterion",
-        "verbatim": "Raised percolation areas — Sketch",
-        "marks": 8,
-        "contextNote": "Show the dwelling wastewater route and the raised/mounded percolation arrangement clearly."
-       }
-      ]
-     },
-     {
-      "id": "constructed-wetland",
-      "label": "Constructed wetland",
-      "rows": [
-       {
-        "id": "cons-2019-hl-q8-c-wetland-notes",
-        "kind": "point",
-        "verbatim": "Constructed Wetlands — Notes",
-        "marks": 8,
-        "contextNote": "Describe a gravel-, sand- or soil-based horizontal/vertical-flow reed-bed filter system treating wastewater from a septic tank."
-       },
-       {
-        "id": "cons-2019-hl-q8-c-wetland-sketch",
-        "kind": "criterion",
-        "verbatim": "Constructed Wetlands — Sketch",
-        "marks": 8,
-        "contextNote": "Show the septic-tank outflow entering and passing through the constructed wetland/filter bed."
-       }
-      ]
-     },
-     {
-      "id": "peat-filter",
-      "label": "Peat filter system",
-      "rows": [
-       {
-        "id": "cons-2019-hl-q8-c-peat-notes",
-        "kind": "point",
-        "verbatim": "Peat filter system — Notes",
-        "marks": 8,
-        "contextNote": "Describe module units filled with peat, including distribution, treatment medium and drain; effluent is dosed on top and treated as it percolates through."
-       },
-       {
-        "id": "cons-2019-hl-q8-c-peat-sketch",
-        "kind": "criterion",
-        "verbatim": "Peat filter system — Sketch",
-        "marks": 8,
-        "contextNote": "Show the distribution system, peat treatment medium, drainage and direction of wastewater flow."
-       }
-      ]
-     }
-    ]
-   }
-  },
-  "cons-2019-hl-q10-b": {
-   "reason": "The candidate develops three of the six considerations selected in part (a), with 4 marks for each note and 4 for each sketch. The parser incorrectly displayed all six considerations as compulsory 4-mark rows.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 24,
-    "rows": [
-     {
-      "id": "cons-2019-hl-q10-b-notes",
-      "kind": "anyN",
-      "verbatim": "Three selected retrofit upgrades — Notes",
-      "marks": 12,
-      "openList": true,
-      "contextNote": "Choose the same three considerations you specified in part (a); each developed retrofit note is worth 4 marks.",
-      "group": {
-       "claimMax": 3,
-       "perOption": 4,
-       "options": [
-        "Increase the levels of insulation in the walls, roof and floor",
-        "Install a highly efficient heat recovery and ventilation system with an outlet to supply or extract air from all rooms. This will reduce heat loss, moisture content and the energy consumption of the building",
-        "Seal any holes in the fabric such as pipes penetrating the external walls, joints between wall/ceiling/floor surfaces, openings around electrical services etc",
-        "The heating demand requirement should be ≤ 25 kWh/(m2a)",
-        "solar photovoltaic cells to generate electricity for domestic consumption",
-        "Install new windows on the south facing wall of the house"
-       ]
-      }
-     },
-     {
-      "id": "cons-2019-hl-q10-b-sketches",
-      "kind": "anyN",
-      "verbatim": "Three selected retrofit upgrades — Sketches",
-      "marks": 12,
-      "contextNote": "Provide a communicating freehand sketch for each of the same three selected retrofit considerations.",
-      "group": {
-       "claimMax": 3,
-       "perOption": 4,
-       "options": [
-        "Thermal efficiency of the external envelope of the building",
-        "Appropriate ventilation using a heat recovery system",
-        "Airtightness of the building",
-        "Optimum levels of thermal comfort for occupants",
-        "Install renewable energy systems",
-        "Maximise solar gains"
-       ]
-      }
-     }
-    ]
-   }
-  },
-  "cons-2019-ol-q3-b": {
-   "reason": "The scheme has two compulsory 3-mark entries—location and reason—not an any-two menu headed only 'Reason'.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "totalMarks": 6,
-    "rows": [
-     {
-      "id": "cons-2019-ol-q3-b-location",
-      "kind": "point",
-      "verbatim": "The valve is fitted close to the cistern",
-      "marks": 3
-     },
-     {
-      "id": "cons-2019-ol-q3-b-reason",
-      "kind": "point",
-      "verbatim": "The valve is fitted within easy reach to operate the valve",
-      "marks": 3
-     }
-    ]
-   }
-  },
-  "cons-2025-ol-q7-c-advantage": {
-   "reason": "Replace the generic 'Advantage' heading with the specific examinable idea while retaining the scheme's accepted answers.",
-   "set": {
-    "rows": [
-     {
-      "id": "cons-2025-ol-q7-c-advantage-r1",
-      "kind": "anyN",
-      "verbatim": "Advantages of a separate garden office",
-      "marks": 6,
-      "openList": true,
-      "contextNote": "Discuss one supported advantage.",
-      "group": {
-       "claimMax": 1,
-       "perOption": 6,
-       "options": [
-        "Creates a clear boundary between work and home life",
-        "Easier to concentrate when away from household noise and interruptions.",
-        "A garden office can increase the value of your home",
-        "Lessens the impact on the household",
-        "The office does not take up space within the house"
-       ]
-      }
-     }
-    ]
-   }
-  }
- },
+ "construction-studies": {},
  "home-economics": {
   "he-2024-hl-sc-q2b-wool": {
    "reason": "The paper asks for one self-selected natural-fibre profile. Four scheme examples are answer routes within one practice identity, not four exam questions.",
@@ -2284,19 +1262,185 @@
   }
  },
  "economics": {
-  "econ-2025-hl-q14-a-iii-agri": {
-   "reason": "The authored question reworded the paper (it dropped \"one other way\" and the printed context the ask depends on). Restored word for word from the 2025 Higher Level paper, page 26, Q14(a)(iii): the context sentence as the stem, the ask and the tick instruction as the question, and this card's own printed sector option.",
-   "set": {
-    "stem": "Online shopping shows how advances in technology can influence Ireland’s market economy.",
-    "questionText": "Outline one other way that changes in technology may affect how either of the following sectors operate. Indicate your sector by ticking (✓) the relevant box below and outline your answer.\nAgriculture"
-   }
+  "econ-2021-hl-q12-a-ii-neg": {
+   "reason": "Paper p.19 and scheme PDF pp.16–17: one ask requires two positive AND two negative impacts, and the scheme prints 2 @ 8 (5 + 3) and 2 @ 5 (2 + 3) beside it without tying either price to a side. The older positive card now carries all four impacts at the published 26; progress is preserved by alias.",
+   "drop": true,
+   "replacementId": "econ-2021-hl-q12-a-ii-pos"
   },
-  "econ-2025-hl-q14-a-iii-sport": {
-   "reason": "The authored question reworded the paper (it dropped \"one other way\" and the printed context the ask depends on). Restored word for word from the 2025 Higher Level paper, page 26, Q14(a)(iii): the context sentence as the stem, the ask and the tick instruction as the question, and this card's own printed sector option.",
-   "set": {
-    "stem": "Online shopping shows how advances in technology can influence Ireland’s market economy.",
-    "questionText": "Outline one other way that changes in technology may affect how either of the following sectors operate. Indicate your sector by ticking (✓) the relevant box below and outline your answer.\nSports and fitness"
-   }
+  "econ-2021-hl-q16-b-ii-economic": {
+   "reason": "Paper p.36 and scheme PDF p.33: one 10 (2 @ 5) (2 + 3) cell covers one social AND one economic reason, so both are one 10-mark task. The older social card now carries both required headings; progress is preserved by alias.",
+   "drop": true,
+   "replacementId": "econ-2021-hl-q16-b-ii-social"
+  },
+  "econ-2022-hl-sa-q6-a-i": {
+   "reason": "SEC paper pp.8–9 and scheme PDF p.10: the two diagrams have a shared tariff, and the original card inferred a per-diagram split. Complete question routes now include the omitted (b)/(c) alternatives. Prior progress resolves to the complete (a)+(b) route.",
+   "drop": true,
+   "replacementId": "econ-2022-hl-sa-q6-a-b"
+  },
+  "econ-2022-hl-sa-q6-a-ii": {
+   "reason": "SEC paper pp.8–9 and scheme PDF p.10: the two diagrams have a shared tariff, and the original card inferred a per-diagram split. Complete question routes now include the omitted (b)/(c) alternatives. Prior progress resolves to the complete (a)+(b) route.",
+   "drop": true,
+   "replacementId": "econ-2022-hl-sa-q6-a-b"
+  },
+  "econ-2022-hl-q11-c-iii-against": {
+   "reason": "Paper p.17 requires arguments for and against. Scheme PDF p.16 prices the complete pair at 12, not each side at 12. The retained older for-card now contains both required sides.",
+   "drop": true,
+   "replacementId": "econ-2022-hl-q11-c-iii-for"
+  },
+  "econ-2022-ol-q12-a-ii": {
+   "reason": "Paper p.13 and scheme PDF p.16 require both curves plus equilibrium labels on one diagram at the shared 28-mark tariff. The older demand card now contains the full (i)–(iii) task; progress is preserved by alias.",
+   "drop": true,
+   "replacementId": "econ-2022-ol-q12-a-i"
+  },
+  "econ-2022-ol-sa-q3-ii": {
+   "reason": "Paper p.4 and scheme PDF p.6: one tariff, 1st x 9 (6+3) and 2nd x 6 (3+3), is printed beside the Q3 stem across (i) and (ii), so the reason and the disadvantage are one 15-mark task with no fixed share for either part. The older (i) card now carries both; progress is preserved by alias.",
+   "drop": true,
+   "replacementId": "econ-2022-ol-sa-q3-i"
+  },
+  "econ-2022-ol-sa-q8-ii": {
+   "reason": "Paper p.8 and scheme PDF p.10: one tariff, 1st x 9 (6+3) and 2nd x 6 (3+3), is printed beside the Q8 stem across (i) and (ii), so the externality and the opportunity cost are one 15-mark task with no fixed share for either part. The older (i) card now carries both; progress is preserved by alias.",
+   "drop": true,
+   "replacementId": "econ-2022-ol-sa-q8-i"
+  },
+  "econ-2022-ol-q14-b-ii-water": {
+   "reason": "Paper pp.20-21 and scheme PDF p.23: one tariff, 1st x 10 (6+4) and 2nd x 7 (4+3), is printed beside the Q14(b) stem across (i) and (ii), so the argument for water charges and the reasons citizens object are one 17-mark task. The older (i) card now carries both; progress is preserved by alias.",
+   "drop": true,
+   "replacementId": "econ-2022-ol-q14-b-i"
+  },
+  "econ-2023-hl-sa-q2-c-dis": {
+   "reason": "2023 HL paper4 / scheme6–7: both headings are required in one complete response. The retained card contains both sides at the published combined tariff; preserve prior progress through this alias.",
+   "drop": true,
+   "replacementId": "econ-2023-hl-sa-q2-c-adv"
+  },
+  "econ-2023-hl-q11-a-iii-pos": {
+   "reason": "2023 HL paper14 / scheme15–16: both headings are required in one complete response. The retained card contains both sides at the published combined tariff; preserve prior progress through this alias.",
+   "drop": true,
+   "replacementId": "econ-2023-hl-q11-a-iii-neg"
+  },
+  "econ-2023-hl-q12-b-iii-dis": {
+   "reason": "2023 HL paper19 / scheme21: both headings are required in one complete response. The retained card contains both sides at the published combined tariff; preserve prior progress through this alias.",
+   "drop": true,
+   "replacementId": "econ-2023-hl-q12-b-iii-adv"
+  },
+  "econ-2023-hl-q16-c-i-against": {
+   "reason": "2023 HL paper35 / scheme38: both headings are required in one complete response. The retained card contains both sides at the published combined tariff; preserve prior progress through this alias.",
+   "drop": true,
+   "replacementId": "econ-2023-hl-q16-c-i-for"
+  },
+  "econ-2023-ol-sa-q10-social": {
+   "reason": "Paper p9 and scheme p11 require both benefits in one12-mark response, first8/second4. The scheme does not allocate a fixed tariff to each side.",
+   "drop": true,
+   "replacementId": "econ-2023-ol-sa-q10-private"
+  },
+  "econ-2023-ol-q14-a-ii-effect": {
+   "reason": "Paper p19 and scheme p20 require both cause and consumer effect at a shared first8/second4 tariff, total12; no fixed per-side allocation.",
+   "drop": true,
+   "replacementId": "econ-2023-ol-q14-a-ii-reason"
+  },
+  "econ-2024-hl-sa-q6-b-up": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-sa-q6-b-down",
+   "reason": "Complete2024 English paper/scheme visual review: Q6(b) requires both slopes of the AC curve in one4-mark response. Saved progress resolves to the combined task."
+  },
+  "econ-2024-hl-sa-q9-a-benefit": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-sa-q9-a-cost",
+   "reason": "Complete2024 English paper/scheme visual review: Q9(a) requires opportunity cost and social benefit together6. Saved progress resolves to the combined task."
+  },
+  "econ-2024-hl-q13-b-iii-neg": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-q13-b-iii-pos",
+   "reason": "Complete2024 English paper/scheme visual review: Q13(b)(iii) requires both positive and negative effects with a shared6+4 tariff. Saved progress resolves to the combined task."
+  },
+  "econ-2024-hl-q13-c-iii-neg": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-q13-c-iii-pos",
+   "reason": "Complete2024 English paper/scheme visual review: Q13(c)(iii) requires both budget-surplus effects3+3. Saved progress resolves to the combined task."
+  },
+  "econ-2024-hl-q14-c-i-debt": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-q14-c-i-spending",
+   "reason": "Complete2024 English paper/scheme visual review: Q14(c)(i) requires spending and debt-servicing effects4+4. Saved progress resolves to the combined task."
+  },
+  "econ-2024-hl-q15-c-ii-social": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-q15-c-ii-economic",
+   "reason": "Complete2024 English paper/scheme visual review: Q15(c)(ii) requires economic and social measures with a shared6+4 tariff, not12. Saved progress resolves to the combined task."
+  },
+  "econ-2024-hl-q16-c-ii-benefit": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-q16-c-ii-cost",
+   "reason": "Complete2024 English paper/scheme visual review: Q16(c)(ii) requires DART social cost and benefit5+5. Saved progress resolves to the combined task."
+  },
+  "econ-2024-hl-q16-c-iii-disadvantage": {
+   "drop": true,
+   "replacementId": "econ-2024-hl-q16-c-iii-advantage",
+   "reason": "Complete2024 English paper/scheme visual review: Q16(c)(iii) requires both advantage and disadvantage6+6. Saved progress resolves to the combined task."
+  },
+  "econ-2025-hl-sa-q1-a-against": {
+   "drop": true,
+   "replacementId": "econ-2025-hl-sa-q1-a-for",
+   "reason": "Complete 2025 English paper/scheme visual review: Q1(a) requires one argument for AND one argument against, 6 marks each, in one response. Saved progress resolves to the combined task."
+  },
+  "econ-2025-hl-sa-q4-a-bad": {
+   "drop": true,
+   "replacementId": "econ-2025-hl-sa-q4-a-good",
+   "reason": "Complete 2025 English paper/scheme visual review: Q4(a) is one 6-mark response: the trend comment with data and whether it is beneficial; the scheme lists both views under one cell and the paper prints no tick. Saved progress resolves to the combined task."
+  },
+  "econ-2025-hl-sa-q4-b-cons": {
+   "drop": true,
+   "replacementId": "econ-2025-hl-sa-q4-b-gov",
+   "reason": "Complete 2025 English paper/scheme visual review: Q4(b) requires one government measure AND one consumer measure, 6 marks each, in one response. Saved progress resolves to the combined task."
+  },
+  "econ-2025-hl-q11-b-iii-dis": {
+   "drop": true,
+   "replacementId": "econ-2025-hl-q11-b-iii-adv",
+   "reason": "Complete 2025 English paper/scheme visual review: Q11(b)(iii) requires one advantage AND one disadvantage for consumers, 4 marks each, in one response. Saved progress resolves to the combined task."
+  },
+  "econ-2025-hl-q12-a-ii-gov": {
+   "drop": true,
+   "replacementId": "econ-2025-hl-q12-a-ii-tax",
+   "reason": "Complete 2025 English paper/scheme visual review: Q12(a)(ii) requires one advantage for taxpayers AND one for the government, 7 marks each, in one response. Saved progress resolves to the combined task."
+  },
+  "econ-2025-hl-q12-c-i-employer": {
+   "drop": true,
+   "replacementId": "econ-2025-hl-q12-c-i-employee",
+   "reason": "Complete 2025 English paper/scheme visual review: Q12(c)(i) requires the employee advantage AND the employer disadvantage, 7 marks each, in one response. Saved progress resolves to the combined task."
+  },
+  "econ-2025-hl-q13-a-ii-challenge": {
+   "drop": true,
+   "replacementId": "econ-2025-hl-q13-a-ii-benefit",
+   "reason": "Complete 2025 English paper/scheme visual review: Q13(a)(ii) requires one benefit AND one challenge, 7 marks each, in one response. Saved progress resolves to the combined task."
+  },
+  "econ-2025-ol-sa-q6-social": {
+   "drop": true,
+   "replacementId": "econ-2025-ol-sa-q6-private",
+   "reason": "Complete 2025 English paper/scheme visual review: Q6 prices one private cost and one social cost together as one 12 (1st x 8, 2nd x 4) with no fixed share for either heading. Saved progress resolves to the combined task."
+  },
+  "econ-2025-ol-sa-q8-ii": {
+   "drop": true,
+   "replacementId": "econ-2025-ol-seca-q8-i-ticks",
+   "reason": "Complete 2025 English paper/scheme visual review: Q8 prints one 1st x 8 / 2nd x 4 cell for the tick in (i) and the barrier in (ii) together, 12 in all. Saved progress resolves to the combined task."
+  },
+  "econ-2025-ol-q16-b-i-ind": {
+   "drop": true,
+   "replacementId": "econ-2025-ol-q16-b-i-ag",
+   "reason": "Complete 2025 English paper/scheme visual review: Q16(c)(i) requires one agricultural AND one industrial action (2 @ 6) plus a 6-mark justification in one response. Saved progress resolves to the combined task."
+  },
+  "econ-2024-ol-sa-q1-ii": {
+   "drop": true,
+   "replacementId": "econ-2024-ol-sa-q1-i",
+   "reason": "Q1 requires resource value AND individual protection,12 with shared8/4. Independently verified against all paper/scheme pages; old progress explicitly aliases to the whole response."
+  },
+  "econ-2024-ol-sa-q8-ii": {
+   "drop": true,
+   "replacementId": "econ-2024-ol-sa-q8-i",
+   "reason": "Q8 requires lowest AND highest inequality,12 with shared8/4. Independently verified against all paper/scheme pages; old progress explicitly aliases to the whole response."
+  },
+  "econ-2024-ol-q16-b-ii-dis": {
+   "drop": true,
+   "replacementId": "econ-2024-ol-q16-b-ii-adv",
+   "reason": "Q16(b)(ii) requires advantage AND disadvantage,9 each,18 overall. Independently verified against all paper/scheme pages; old progress explicitly aliases to the whole response."
   }
  },
  "applied-maths": {
@@ -2402,6 +1546,59 @@
    "set": {
     "stem": "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal. The coefficient of restitution between the basketball and the wall is 3/7."
    }
+  },
+  "am-2024-hl-8-b": {
+   "reason": "A ligature glyph misread: the paper draws Calibri’s \"tt\" ligature (glyph 425), which the text layer reported as U+01A9 and the old character map turned into one \"t\". Repaired by glyph id from the card’s own paper (patch_deck_ligatures.py); nothing else in the text changes.",
+   "set": {
+    "questionText": "The algebraic formula below is written in terms of force F, mass m, displacement s and angular velocity 𝜔"
+   }
+  }
+ },
+ "agricultural-science": {
+  "agsci-2022-ol-q4bi": {
+   "reason": "2022 OL Q4(b) is one true/false table of five statements under one instruction and one 5(2) tariff (paper PDF page 7, scheme PDF page 14). The original statement (i) card duplicated two of the table card's 10 marks; it is withdrawn and its progress now belongs to agsci-2022-ol-q4b, which prints all five statements.",
+   "drop": true,
+   "replacementId": "agsci-2022-ol-q4b"
+  },
+  "agsci-2022-ol-q4bii": {
+   "reason": "2022 OL Q4(b) is one true/false table of five statements under one instruction and one 5(2) tariff (paper PDF page 7, scheme PDF page 14). The original statement (ii) card duplicated two of the table card's 10 marks; it is withdrawn and its progress now belongs to agsci-2022-ol-q4b, which prints all five statements.",
+   "drop": true,
+   "replacementId": "agsci-2022-ol-q4b"
+  },
+  "agsci-2022-ol-q4biii": {
+   "reason": "2022 OL Q4(b) is one true/false table of five statements under one instruction and one 5(2) tariff (paper PDF page 7, scheme PDF page 14). The original statement (iii) card duplicated two of the table card's 10 marks; it is withdrawn and its progress now belongs to agsci-2022-ol-q4b, which prints all five statements.",
+   "drop": true,
+   "replacementId": "agsci-2022-ol-q4b"
+  },
+  "agsci-2022-ol-q4biv": {
+   "reason": "2022 OL Q4(b) is one true/false table of five statements under one instruction and one 5(2) tariff (paper PDF page 7, scheme PDF page 14). The original statement (iv) card duplicated two of the table card's 10 marks; it is withdrawn and its progress now belongs to agsci-2022-ol-q4b, which prints all five statements.",
+   "drop": true,
+   "replacementId": "agsci-2022-ol-q4b"
+  },
+  "agsci-2022-ol-q4bv": {
+   "reason": "2022 OL Q4(b) is one true/false table of five statements under one instruction and one 5(2) tariff (paper PDF page 7, scheme PDF page 14). The original statement (v) card duplicated two of the table card's 10 marks; it is withdrawn and its progress now belongs to agsci-2022-ol-q4b, which prints all five statements.",
+   "drop": true,
+   "replacementId": "agsci-2022-ol-q4b"
+  },
+  "agsci-2025-hl-q12b": {
+   "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (b) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+   "drop": true,
+   "replacementId": "agsci-2025-hl-q12a"
+  },
+  "agsci-2025-hl-q12c": {
+   "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (c) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+   "drop": true,
+   "replacementId": "agsci-2025-hl-q12a"
+  },
+  "agsci-2025-hl-q12d": {
+   "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (d) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+   "drop": true,
+   "replacementId": "agsci-2025-hl-q12a"
+  },
+  "agsci-2025-hl-q12e": {
+   "reason": "2025 HL Q12 is one any-four-of-five task under a single 2(4)+2(1) scale (paper PDF page 18, scheme PDF page 17). The original prompt (e) card priced one prompt at 2 marks; it is withdrawn and its progress now belongs to agsci-2025-hl-q12a, the single 10-mark card that lists all five prompts.",
+   "drop": true,
+   "replacementId": "agsci-2025-hl-q12a"
   }
  }
 }

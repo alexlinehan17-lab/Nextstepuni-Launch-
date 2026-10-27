@@ -88,6 +88,16 @@ export type RowKind =
    *  of the question — each asterisked item stands or falls alone. */
   | 'gate';
 
+/** One priced component of a criterion row; see `MarkRow.parts`. */
+export interface MarkRowPart {
+  id: string;
+  /** The component as the scheme prints it: "point", "discussion", "Scale". */
+  verbatim: string;
+  marks: number;
+  /** Including zero and the part's maximum; the printed ladder where the scheme gives one. */
+  permittedMarks: number[];
+}
+
 export interface MarkRow {
   id: string;
   kind: RowKind;
@@ -110,6 +120,19 @@ export interface MarkRow {
    *  tariff model leaves per-row values undefined — render no chip rather than a
    *  wrong one. */
   marks: number | null;
+  /** Explicit partial-credit steps printed for one criterion, including zero
+   * and its maximum. A diagram marked6/3/0 must not become a binary6-mark tick.
+   * Only fixed-tariff criterion rows may use these; never inferred. */
+  permittedMarks?: number[];
+  /**
+   * The named components a criterion row is priced in — "Design feature 1
+   * (2 for point, 4 for discussion)" — each placed on its own marks, so a
+   * student who had the point but not the discussion can say so. The row's
+   * claim is the parts' sum. Only a fixed-tariff criterion row carries parts,
+   * their marks add up to the row's, and every part is the scheme's own word
+   * (cards/construction-studies: construction_rows.py).
+   */
+  parts?: MarkRowPart[];
   /** Alternatives the scheme prints explicitly. */
   accepts?: string[];
   /**
@@ -157,8 +180,9 @@ export interface MarkRow {
     perOption: number;
     options: string[];
     /**
-     * Descending per-option values, where the scheme does not pay the same for
-     * every option claimed.
+     * Ordered per-option values, where the scheme does not pay the same for
+     * every option claimed. Preserve their printed order: Agricultural Science
+     * 2010 OL Q7 explicitly awards five 1s followed by five 3s.
      *
      * Economics is built on this: "Discuss two economic consequences" prices the
      * first at 6 and the second at 4, and it is the commonest tariff on the
@@ -200,6 +224,10 @@ export interface CardFigure {
    *  the question area before reveal answers the question for the student, so
    *  the session screen holds these back until the scheme is revealed. */
   solution?: boolean;
+  /** For question-side figures only. False means this is an illustration and
+   * the written stem and prompt must remain visible. Omitted means the crop
+   * contains the complete printed question and replaces that text. */
+  includesPrompt?: boolean;
   /** Named in the paper's acknowledgements, where a figure is third-party. */
   thirdPartyRights?: string;
 }
@@ -213,14 +241,41 @@ export interface CardFigure {
  * are rendered from the real paper PDF already held by Paper Trail: no retyped
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
+export interface SupplementaryReading {
+  title: string;
+  author: string;
+  /** Preserve the edition's stanza and line breaks. */
+  stanzas: string[][];
+  edition: string;
+  sourceUrl: string;
+}
+
+export interface LinkedReading {
+  title: string;
+  author: string;
+  edition: string;
+  /** Page-aware link to the publisher's reading copy, opened in a new tab. */
+  sourceUrl: string;
+  location: string;
+}
+
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration';
+  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
   title: string;
-  /** One-based PDF pages, in reading order. */
+  /** One-based PDF pages, in reading order; empty for supplementary texts. */
   pages: number[];
+  /** Additional clockwise rotation for sideways material printed inside a
+   * portrait page. Applied to the PDF viewport, preserving the source bytes. */
+  pageRotations?: Record<number, 90 | 180 | 270>;
+  /** Optional inspected crops, one per page; coordinates are PDF fractions. */
+  regions?: Array<[number, number, number, number] | { p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 }>;
+  /** Attributed reading editions for named studied works absent from the paper. */
+  texts?: SupplementaryReading[];
+  /** Published reading copies for named studied works absent from this paper. */
+  readings?: LinkedReading[];
   /**
    * A separate official SEC document when the required material is not inside
    * the question paper itself. Art publishes its illustrations as a companion
@@ -228,6 +283,8 @@ export interface CardSourceMaterial {
    * wrong PDF. Omitted for passages that live in the question paper.
    */
   sourceFileid?: string;
+  /** Examination year of a verified reading copy from another paper. */
+  sourceYear?: number;
   /** The author/publication acknowledgement printed by the SEC. */
   attribution: string;
   /** Clarifies that the displayed layout is the official examination version. */
@@ -279,6 +336,9 @@ interface CardBase {
    *  different topics, and inheriting would file bread mould under the
    *  breathing system. */
   topicId: string;
+  /** Other canonical topics assessed by the same indivisible marked task.
+   * Cross-list the existing card; never duplicate its identity or progress. */
+  additionalTopicIds?: string[];
   /**
    * Level-independent concept identity, shared by an HL card and its OL sibling.
    * Costs one field now and cannot be retrofitted. Students drop from Higher to
@@ -374,6 +434,10 @@ export interface SecCardBase extends CardBase {
   audioMaterial?: CardAudioMaterial;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
+  /** Names a separately priced task within a shared printed instruction. */
+  practiceFocus?: string;
+  /** Printed MCQ options, in paper order; no answer key is included here. */
+  questionChoices?: string[];
   /** The tariff printed on the paper. Row marks must reconcile against this. */
   totalMarks: number;
   schemeCitation: string;
@@ -386,6 +450,9 @@ export interface SecCardBase extends CardBase {
    *  is labelled and cited separately. */
   authored?: { sources: string[]; author: string; reviewedAt: string };
   specVersion: string;
+  /** Exam-year registry identity; topicId remains the current practice filter. */
+  specificationId?: string;
+  curriculumNodeIds?: string[];
   qa: { gates: string[]; humanReviewedBy: string; humanReviewedAt: string };
 }
 
@@ -400,8 +467,8 @@ export interface SecCardBase extends CardBase {
  */
 export interface SecPointCardBase extends SecCardBase {
   tariffModel: TariffModel;
-  /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
-   *  dependency splitting, and is what makes the card fit a 360px phone.
+  /** Capped at six REQUIRED rows. Keep separately marked tasks split, while
+   *  retaining all six marking groups in a published three-comparison route.
    *
    *  Menu-class tariffs are the exception — see rowCapFor. A best-N-of-M card
    *  is capped at MAX_OPTION_ROWS: its extra rows are a menu the student
@@ -412,6 +479,27 @@ export interface SecPointCardBase extends SecCardBase {
    *  printed candidates, bounded by the notation or the question total, and
    *  share the long-question ceiling. */
   rows: MarkRow[];
+  /** A source-published whole-question bonus, assessed separately from tasks.
+   * It is never silently credited: the student applies the printed rule. */
+  questionBonus?: {
+    id: string;
+    kind: 'criterion';
+    verbatim: string;
+    contextNote: string;
+    marks: number;
+    permittedMarks: number[];
+  };
+  /** A complete finite assessment route assembled from separately practicable
+   * tasks. Each group retains its source task, published maximum and up to five
+   * marking rows. Groups partition the rows in display order. */
+  taskGroups?: Array<{
+    sourceCardId: string;
+    label: string;
+    marks: number;
+    rowIds: string[];
+    tariffModel?: { kind: 'orderedSplit'; notation: string };
+    responseCounts?: number[];
+  }>;
   /**
    * Official marking-scheme routes for an open printed choice.
    *
@@ -430,13 +518,54 @@ export interface SecPointCardBase extends SecCardBase {
 
 export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
 
+/**
+ * Grade labels exactly as each year's SEC grid prints them: the modern H1–H8
+ * and O1–O8 scales (2017 onward), the 2010–2016 Higher Level A+/B/C/D/E-
+ * anchors, and the 2010–2016 Ordinary Level A–F and N/G (F/NG on the combined
+ * grid) bands.
+ */
+export type PclmGradeLabel =
+  | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
+  | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8'
+  | 'A+' | 'A' | 'B' | 'C' | 'D' | 'E' | 'E-' | 'F' | 'N/G' | 'F/NG';
+
 /** One score family exactly as the SEC grade grid prints it. */
 export interface PclmGradeBand {
-  grade:
-    | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
-    | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8';
+  grade: PclmGradeLabel;
   /** Every mark the published grid permits in this band. */
   marks: number[];
+}
+
+/**
+ * How Coherence and Language are limited, exactly as the year's criteria page
+ * prints it. The modern rule (C and L cannot exceed P) must not be projected
+ * onto years that print a different rule or none:
+ * - `purpose-primacy`: C and L cannot exceed P (2016 onward where printed).
+ * - `language-at-d-band`: 2010–2015 Ordinary Level — only when BOTH P and C
+ *   fall below the D band is L limited, to the top of its D band.
+ * - `none`: the scheme prints no cap (2010–2015 Higher, 2018 Ordinary).
+ * Mechanics is always assessed on its own merits.
+ */
+export type PclmCapRule =
+  | { kind: 'purpose-primacy' }
+  | { kind: 'none' }
+  | { kind: 'language-at-d-band'; purposeBelow: number; coherenceBelow: number; languageMax: number };
+
+/** Where a card's grid was transcribed from, when it is a year-specific print. */
+export interface PclmPrintedGrid {
+  /** `<year>-<level>`, e.g. `2015-ordinary`. */
+  sitting: string;
+  /** Marking-scheme PDF pages that print the grid. */
+  schemePages: number[];
+  /** Adjacent printed cells share a mark (2010–2016 Ordinary Level grid). */
+  overlapping?: true;
+  /** Lowest printed mark when it is not 0 (2010–2016 OL 10-mark F/NG prints 1). */
+  lowestMark?: number;
+}
+
+/** The cap a discrete assessment declares, defaulting legacy cards to C/L <= P. */
+export function pclmCapRule(assessment: { primacyOfPurpose?: true; capRule?: PclmCapRule }): PclmCapRule {
+  return assessment.capRule ?? (assessment.primacyOfPurpose ? { kind: 'purpose-primacy' } : { kind: 'none' });
 }
 
 export interface PclmCriterion {
@@ -471,7 +600,9 @@ export interface PclmDiscreteComponent extends PclmComponentBase {
   bands: PclmGradeBand[];
   criteria: PclmCriterion[];
   /** C and L may not exceed P within this component. */
-  primacyOfPurpose: true;
+  primacyOfPurpose?: true;
+  /** The year's printed cap rule; absent on legacy cards (C/L <= P). */
+  capRule?: PclmCapRule;
 }
 
 export type PclmComponent = PclmCombinedComponent | PclmDiscreteComponent;
@@ -482,6 +613,7 @@ export type PclmAssessment =
       mode: 'combined';
       bands: PclmGradeBand[];
       criteria: string[];
+      printedGrid?: PclmPrintedGrid;
     }
   | {
       /** Longer responses receive separate P, C, L and M marks. */
@@ -489,7 +621,10 @@ export type PclmAssessment =
       bands: PclmGradeBand[];
       criteria: PclmCriterion[];
       /** C and L may not exceed P. */
-      primacyOfPurpose: true;
+      primacyOfPurpose?: true;
+      /** The year's printed cap rule; absent on legacy cards (C/L <= P). */
+      capRule?: PclmCapRule;
+      printedGrid?: PclmPrintedGrid;
     }
   | {
       /**
@@ -525,6 +660,40 @@ export type IrishGuidanceKind =
   /** A published quality band such as Cumas/Cruinneas Gaeilge. */
   | 'quality';
 
+/** One answer of an Irish listening or reading scheme, cut from the exact
+ * guidance by cards/irish/answers.ts: the scheme's words before "= 2 mharc". */
+export interface IrishAnswerRow {
+  id: string;
+  text: string;
+  /** Marks the row earns; 0 when the part's ladder prices the rows instead. */
+  marks: number;
+  /** A row the scheme prices in steps rather than whole: "Dhá phointe eolais
+   * = 4 mharc + 4 mharc" places at 0, 4 or 8; "Tréith 1 = 13 mharc" with a
+   * published band table places anywhere from 0 to 13. Including 0 and `marks`. */
+  steps?: number[];
+}
+
+/** One sub-question of the scheme ("1. Cad atá á lorg…? 2 mharc") with its answers. */
+export interface IrishAnswerPart {
+  id: string;
+  /** The sub-question as the scheme prints it, with any "(Alt 2)" reference. */
+  prompt?: string;
+  /** The marks the scheme gives this sub-question. */
+  tariff: number;
+  /** "{3 mharc: 2 mharc + 1 mharc}": marks for 1..n right answers. */
+  ladder?: number[];
+  rows: IrishAnswerRow[];
+  /** "Freagraí samplacha: • …": the scheme's sample points for this
+   * sub-question. Indicative, never a checklist; shown under the rows. */
+  samples?: string[];
+}
+
+export interface IrishAllocation {
+  parts: IrishAnswerPart[];
+  /** Lifted scheme sentences that are rules, not answers. */
+  directions: string[];
+}
+
 /** One independently placed part of the SEC Irish marking scheme. */
 export interface IrishCriterion {
   id: string;
@@ -536,6 +705,9 @@ export interface IrishCriterion {
   guidanceKind: IrishGuidanceKind;
   /** Verbatim or tightly bounded scheme guidance, never invented content. */
   guidance: string[];
+  /** The exact guidance as claimable rows, where cards/irish/answers.ts could
+   * cut it so the parts add up to the criterion. Absent: prose over a scale. */
+  allocation?: IrishAllocation;
 }
 
 /**
@@ -558,7 +730,9 @@ export type ArtBandLevel = 'low' | 'moderate' | 'high';
 export interface ArtBand {
   level: ArtBandLevel;
   marks: number[];
-  /** SEC descriptor guidance, condensed only to remove repeated boilerplate. */
+  /** The scheme's printed lead-in to the band's bullets, where audited. */
+  lead?: string;
+  /** SEC descriptor guidance: the bullets exactly as the scheme prints them. */
   guidance: string[];
 }
 
@@ -578,8 +752,47 @@ export interface ArtCriterion {
   permittedMarks: number[];
   /** Question-specific allocation or focus printed by the marking scheme. */
   guidance: string[];
+  /**
+   * 2021–2022 schemes: the Marks column printed beside each guidance row
+   * (parallel to `guidance`), and the Notes column where the scheme prints
+   * any note for this component ('' for a row without one).
+   */
+  rowMarks?: number[];
+  rowNotes?: string[];
   /** Absent where the SEC printed an allocation but no descriptor bands. */
   bands?: ArtBand[];
+  /**
+   * 2021–2022 schemes: the printed rows cut into what the scheme prices
+   * (cards/art/answers.ts), so the student places marks on each row or on
+   * the parts its Notes cell splits it into, never on the component as a
+   * whole. Absent on 2023+ descriptor criteria.
+   */
+  allocation?: ArtAllocation;
+}
+
+/** One priced part of an Art row: "name · 5m" from "5 for name, 10 for description". */
+export interface ArtAllocationPart {
+  id: string;
+  /** The note's own phrase, or the row's words for a remainder the note leaves unlabelled. */
+  text: string;
+  marks: number;
+  /** "1st" / "2nd" where the note prices the same word twice ("names (3/2)"). */
+  tag?: string;
+}
+
+/** One printed row of an Art component with the Marks cell beside it. */
+export interface ArtAllocationRow {
+  id: string;
+  text: string;
+  marks: number;
+  /** The Notes cell's split of the row's marks; the parts add up to `marks`. */
+  parts?: ArtAllocationPart[];
+  /** A Notes cell that prices nothing by itself ("Max 3 for partially correct name."). */
+  note?: string;
+}
+
+export interface ArtAllocation {
+  rows: ArtAllocationRow[];
 }
 
 export interface ArtRubric {
@@ -587,7 +800,10 @@ export interface ArtRubric {
   /** Things the printed task explicitly requires. They carry no marks alone. */
   taskRequirements: string[];
   criteria: ArtCriterion[];
+  /** The scheme's own printed note on applying the descriptors, or ''. */
   markingGuideNote: string;
+  /** NextStepUni's guidance for using the card; not part of the SEC scheme. */
+  practiceNotes?: string[];
 }
 
 export type GeographyGuidanceKind =
@@ -605,14 +821,104 @@ export type GeographyGuidanceKind =
  * explicit prevents the scheme's non-exhaustive examples becoming a fabricated
  * checklist while still letting a student place their work on the real tariff.
  */
+/**
+ * One claimable answer on a Geography card: a slice of a scheme line and the
+ * marks the scheme prints beside it.
+ */
+export interface GeographyAnswerRow {
+  id: string;
+  /** The printed answer, or the scheme's tariff wording when it prints none. */
+  text: string;
+  marks: number;
+  /** The values a student may claim when the scheme splits the row
+   *  ("2 + 2 marks", "4m graded (4/2/0)"). Omitted means all or nothing. */
+  steps?: number[];
+  /** The scheme prices the answer without printing one ("Tectonic plate
+   *  named 3m"). The row shows the scheme's words and says any correct answer
+   *  scores; it never carries an example the scheme did not print. */
+  tariffOnly?: boolean;
+}
+
+/** A Significant Relevant Point allocation: how many the scheme counts, at
+ *  what value each. Rendered as a counter, never as a list to tick. */
+export interface GeographySrpAllocation {
+  id: string;
+  /** The scheme's label for the part ("Description/Explanation"), or ''. */
+  label: string;
+  /** The most SRPs this part can earn. */
+  count: number;
+  marks: number;
+  /** Set when the scheme prints a range ("6/7 x SRP's"): this part and its
+   *  siblings share `GeographyAllocation.srpPool`, which caps their sum. */
+  min?: number;
+}
+
+/** The rows and SRP counts under one printed sub-question. */
+export interface GeographyAllocationGroup {
+  /** The paper's label, "(i)". */
+  part?: string;
+  /** The sub-question as printed. */
+  prompt?: string;
+  rows: GeographyAnswerRow[];
+  srp: GeographySrpAllocation[];
+  /**
+   * The scheme prices one unit and asks for several ("Formation of any two
+   * landforms @ 20m each. For each landform: …"). The group's rows and SRPs
+   * are claimed once per unit; `unit` is the scheme's own noun for one.
+   */
+  repeat?: { count: number; unit: string; marks: number };
+}
+
+/**
+ * A Geography criterion cut into claimable rows. Present only when the rows
+ * and SRP counts add up to the card's total (cards/geography/allocation.ts);
+ * otherwise the reveal falls back to the guidance lines and a mark control.
+ */
+export interface GeographyAllocation {
+  groups: GeographyAllocationGroup[];
+  /** Examiner directions: caps, named-example rules, diagram conditions. */
+  directions: string[];
+  /** Where parts print SRP ranges, the SRPs they share between them. */
+  srpPool?: { count: number; marks: number };
+  /** The scheme prices this criterion one of several ways and the student
+   *  claims exactly one: a column of a two-route table ("3 @ 20 marks each" /
+   *  "4 @ 15 marks each"), or a quality band ("Very Good · 17"). */
+  choice?: GeographyAllocationChoice;
+}
+
+/** One way the scheme prices a criterion, claimed instead of the others. */
+export interface GeographyChoiceOption {
+  id: string;
+  /** The scheme's words for it: a column heading or a band's name. */
+  label: string;
+  /** A band's marks, earned by choosing it. */
+  marks?: number;
+  /** A band's descriptor, as printed. */
+  note?: string;
+  /** A column's own rows and SRP counts, claimed once the column is chosen. */
+  allocation?: GeographyAllocation;
+}
+
+export interface GeographyAllocationChoice {
+  /** route: a column of a two-route table; band: a quality band; alternative:
+   *  one printed answer or another, each at its own price. */
+  kind: 'route' | 'band' | 'alternative';
+  /** The scheme's heading over the options ("Number of aspects"), or ''. */
+  prompt: string;
+  options: GeographyChoiceOption[];
+}
+
 export interface GeographyCriterion {
   id: string;
   label: string;
   maxMarks: number;
   permittedMarks: number[];
   guidanceKind: GeographyGuidanceKind;
-  /** Published allocation and examiner directions for this task. */
+  /** Published allocation and examiner directions for this task, as lifted. */
   guidance: string[];
+  /** The same allocation as claimable rows, where it reconciles to
+   *  `maxMarks` and (for a reviewed criterion) to `permittedMarks`. */
+  allocation?: GeographyAllocation;
 }
 
 export interface GeographyRubric {
@@ -622,10 +928,292 @@ export interface GeographyRubric {
   criteria: GeographyCriterion[];
   /** The mark value of one SRP on this paper, where SRPs govern the answer. */
   srpMarks?: number;
+  /** Printed marks the published scheme allocates to no line (2020 OL 9C
+   *  prices 27 of its printed 30). They stay in the card's `totalMarks` and
+   *  are never derived into a criterion, so the criteria reach
+   *  `totalMarks - unpricedMarks`; the marking guide note says so. */
+  unpricedMarks?: number;
+  /** The scheme's own examiner directions (credit rules, caps, deductions)
+   *  for this task, lifted verbatim. They qualify the criteria; they carry
+   *  no marks of their own. */
+  directions?: string[];
   markingGuideNote: string;
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric;
+/** Politics answers mix exact allocations, quality bands and six essay criteria. */
+export interface PoliticsCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidance: string[];
+  bands?: Array<{ label: string; marks: number[]; guidance: string }>;
+}
+
+/** One quality band of a Politics ladder as the scheme prints it:
+ * "Very good explanation" at 8–10M, with its descriptor where printed. */
+export interface PoliticsBand {
+  label: string;
+  marks: number[];
+  descriptor?: string;
+}
+
+export interface PoliticsAnswerRow {
+  id: string;
+  text: string;
+  marks: number;
+  /** The scheme prices this answer without printing one: the row shows the
+   * criterion's own words and the reveal says any correct answer scores. */
+  tariffOnly?: boolean;
+}
+
+/** One independently priced part of a Politics answer, cut from the lifted
+ * scheme block by cards/politics-and-society/answers.ts: a quality ladder the
+ * student places themselves on, or exact answers they claim. */
+export interface PoliticsPart {
+  id: string;
+  /** The criterion this part scores. */
+  label: string;
+  /** The scheme's own words for what the part asks ("Two valid actions"). */
+  caption?: string;
+  max: number;
+  bands?: PoliticsBand[];
+  rows?: PoliticsAnswerRow[];
+  /** How many rows count when the part is a list of exact answers. */
+  count?: number;
+  /** "3 marks + 2 marks" over a list of answers: marks for 1..count rows claimed. */
+  ladder?: number[];
+}
+
+export interface PoliticsAllocation {
+  parts: PoliticsPart[];
+  /** The scheme's indicative points ("Responses may make reference to"), shown as a list; never a checklist. */
+  examples: string[];
+  /** Lifted scheme sentences that are rules, not answers. */
+  directions: string[];
+}
+
+export interface PoliticsRubric {
+  system: 'politics';
+  taskRequirements: string[];
+  criteria: PoliticsCriterion[];
+  /** Shared published guidance, shown once even when several criteria apply. */
+  schemeGuidance?: string[];
+  /** The guidance and bands as placeable ladders and claimable rows, where
+   * cards/politics-and-society/answers.ts could cut them so the parts add up
+   * to the card. Absent: the lines show as a list over mark buttons. */
+  allocation?: PoliticsAllocation;
+  markingGuideNote: string;
+  /** Exact scheme pages remain available after reveal, including grade grids. */
+  schemePages: number[];
+  schemeFileid: string;
+}
+
+/** PE mixes exact allocations, descending tariffs and quality bands. The
+ * original scheme remains available after reveal, including answer diagrams
+ * and tick tables which must not be flattened into a guessed text answer. */
+/** One PE criterion's reviewed guidance cut into what the scheme prices
+ * (cards/physical-education/answers.ts): quality bands the student places
+ * themselves on ("Good description: 2; fair description: 1."), and rows they
+ * claim ("Vector.", "Phase named: 1", "4 marks + 2 marks" as steps). */
+export interface PhysicalEducationAllocation {
+  /** The guidance's own statement of what is asked, where it has one. */
+  caption?: string;
+  bands?: Array<{ label: string; marks: number[] }>;
+  rows?: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
+  /** The rest of the guidance: accept/do-not-accept rules, scheme examples. */
+  notes: string[];
+}
+
+export interface PhysicalEducationRubric {
+  system: 'physical-education';
+  taskRequirements: string[];
+  criteria: Array<{
+    id: string;
+    label: string;
+    maxMarks: number;
+    permittedMarks: number[];
+    guidance: string[];
+    allocation?: PhysicalEducationAllocation;
+  }>;
+  schemeMaterial: CardSourceMaterial & { kind: 'marking-scheme' };
+  markingGuideNote: string;
+}
+
+/** Mathematical working and drawings remain in their original SEC layout.
+ * Each allocation is one published step or scale, with its actual credit
+ * values. Error deductions apply within that allocation, never to neighbours. */
+export interface AppliedMathematicsRubric {
+  system: 'applied-mathematics';
+  solution: Omit<CardSourceMaterial, 'regions'> & { kind: 'source-scheme'; regions?: Array<[number, number, number, number]> };
+  allocations: Array<{
+    id: string;
+    label: string;
+    credit: number[];
+    guidance?: string;
+    /**
+     * The printed lines this step prices, as a crop of the scheme page (scripts/markbank/authoring/am_steps.py):
+     * from the step before it to its own margin mark. The equation-editor text layer cannot be read as words,
+     * so the step's content is shown, not transcribed. Absent on a card whose steps could not be cut
+     * (scripts/markbank/authored/applied-maths-steps-residue.json) and on a scale that prices the whole solution.
+     */
+    region?: { p: number; r: [number, number, number, number] };
+  }>;
+  markingGuideNote: string;
+}
+
+/** Accounting awards marks within worked accounts, including transfer and
+ * calculation penalties. Preserve the printed layout and allocation rather
+ * than turning each correct final figure into an all-or-nothing checklist. */
+export interface AccountingRubric {
+  system: 'accounting';
+  solution: Omit<CardSourceMaterial, 'regions'> & { kind: 'marking-scheme'; regions?: Array<{ p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 }> };
+  allocationNote: string;
+  /** A separately priced output within a shared printed instruction. */
+  taskFocus?: string;
+  /**
+   * The figures the scheme prices, as rows the student claims (cards/accounting/rows.json, lifted from the
+   * scheme PDF by scripts/markbank/authoring/acc_rows.py). They add up to the task's total. Absent on a task
+   * whose rows could not be lifted (scripts/markbank/authored/accounting-rows-residue.json), which keeps
+   * the crop and the half-mark stepper.
+   */
+  rows?: AccountingRow[];
+}
+
+/** One priced line of an Accounting solution: "Purchases W2 1,126,000" for 9 marks. */
+export interface AccountingRow {
+  id: string;
+  /** The scheme's words for the line, figure included. */
+  text: string;
+  marks: number;
+  /** The figure the marks sit beside, when the row is one. */
+  figure?: string;
+  /** The scheme page the row is printed on. */
+  page: number;
+  /** A theory part or a boxed section priced as one block of points. */
+  block?: boolean;
+  /** A part the scheme prices only through its section total: its span prints no mark of its own. */
+  inferred?: boolean;
+}
+
+/** A published Business allocation within one response, e.g. Name/Explain/Link. */
+export interface BusinessAllocation {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  /** The SEC forbids an ABQ link without relevant theory in that response. */
+  requiresAnyOf?: string[];
+}
+
+/** One response the SEC's scheme prints for a Business part — a bullet, a
+ * numbered line or a heading with the prose under it — lifted from the cited
+ * "Possible Responses" / "Support Notes" page by bus_expected.py. The scheme
+ * calls these a sample, never an exhaustive list, so a row is what the scheme
+ * printed, not the only answer that scores. */
+export interface BusinessExpectedItem {
+  id: string;
+  text: string;
+  /** The lines the scheme prints under a heading: the explanation and its case link. */
+  detail?: string[];
+}
+
+export interface BusinessExpected {
+  /** The scheme page the items were read from. */
+  page: number;
+  items: BusinessExpectedItem[];
+  /**
+   * Read from the page's word positions rather than its text layer (bus_expected.py stage B): a table's rows, a
+   * tick under a column header, "True"/"False" beside a statement. Every word is one the page prints; an item
+   * may join words from one line in the page's own order with " — ".
+   */
+  lifted?: 'geometry';
+}
+
+export interface BusinessRubric {
+  system: 'business';
+  taskRequirements: string[];
+  guidance: string[];
+  responses: Array<{
+    id: string;
+    label: string;
+    allocations: BusinessAllocation[];
+  }>;
+  /** The scheme's printed responses for this part, as rows the student can
+   * claim; absent where bus_expected.py could not lift them (listed in
+   * scripts/markbank/authored/business-expected-review.json). */
+  expected?: BusinessExpected;
+  /** Exact official support notes, shown only after the scheme is revealed. */
+  schemeFileid: string;
+  schemePages: number[];
+  markingGuideNote: string;
+}
+
+/** French writing combines communicative tasks, language quality and format.
+ * A band describes the whole response; it is never a claimable answer. */
+export interface FrenchCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidance: string[];
+  bands?: { label: string; marks: number[]; guidance: string[] }[];
+  /** The SEC withholds language marks if no communicative task is attempted. */
+  requiresAttempt?: boolean;
+}
+
+/** One answer of a French listening, reading or cloze scheme, cut from a
+ * lifted `answerGuide` line by cards/french/answers.ts. The text is the
+ * scheme's own words without the list marker and the price. */
+export interface FrenchAnswerRow {
+  id: string;
+  text: string;
+  /** Marks the row earns when claimed; negative for a printed deduction
+   * ("➢ Incorrect year = -1 Mark"); 0 for an answer the scheme prices at 0. */
+  marks: number;
+  /** A row the student places at one of several printed values (cloze: 3, or
+   * 2 after the scheme's careless-transcription deduction). */
+  steps?: number[];
+  /** A dash or asterisk line: the scheme's partial-credit alternative. */
+  partial?: boolean;
+  /** The sub-part heading the scheme prints over this row ("(a)", "(ii) Restaurant"). */
+  part?: string;
+}
+
+/** A French card's scheme cut into claimable rows. */
+export interface FrenchAllocation {
+  /** How many answers the task asks for: at most this many positive rows count. */
+  count: number;
+  rows: FrenchAnswerRow[];
+  /** A list the scheme prices by how many are right ("Any two of the following,
+   * award 5 Marks / Any one … 3 Marks"; "Two correct answers needed for 8 marks
+   * (7+1)"): marks for 1..count ticked rows. The rows then carry no price. */
+  ladder?: number[];
+  /** The aural rule printed for named tasks: where less than full marks is
+   * achieved in either segment, the higher mark is awarded to each segment. */
+  scoring?: 'higher-segment-both';
+  /** Lifted scheme lines that are not answers: acceptances, conventions, notes. */
+  directions: string[];
+}
+
+export interface FrenchRubric {
+  system: 'french';
+  taskRequirements: string[];
+  /** Complete accepted answers, partial-credit ladder and question-specific rules. */
+  answerGuide?: string[];
+  /** The answerGuide as claimable rows, where cards/french/answers.ts could cut
+   * it so the rows reconcile with the printed total. Absent: the lines show as
+   * a list and the response is placed on the permitted marks. */
+  allocation?: FrenchAllocation;
+  criteria: FrenchCriterion[];
+  markingGuideNote: string;
+  /** NextStepUni's own practice guidance. Never SEC text: rendered apart from
+   *  the scheme under an explicit app label. Every other field of this rubric
+   *  shows the SEC's printed wording. */
+  practiceNotes?: string[];
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -658,6 +1246,15 @@ export interface SecDiagramCard extends SecPointCardBase {
 export interface SecRubricCard extends SecCardBase {
   kind: 'rubric';
   rubric: SecRubric;
+  /** A crop of an official document shown on the card. A `solution` crop
+   *  (the scheme's own answer drawing) is held back until the reveal. Used by
+   *  Geography for a map crop around the grid reference asked about and for a
+   *  scheme's labelled diagram. */
+  figure?: CardFigure;
+  /** The paper's own print of the ask, as on `SecQuestionCard`: shown before
+   *  the reveal in place of the typeset stem, never a solution. Used by
+   *  Geography for a diagram question whose blanks are the ask. */
+  questionFigure?: CardFigure;
 }
 
 /**
@@ -686,7 +1283,9 @@ export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 
 /** Max rows on one card when every row is required. See the note on `rows`. */
-export const MAX_ROWS = 5;
+// Agricultural Science 2010 HL Q8(c): three comparisons with two separately
+// priced marking groups each. Six rows preserve the full printed route.
+export const MAX_ROWS = 6;
 
 /**
  * Max rows on a best-N-of-M card, where the surplus rows are options rather
@@ -707,15 +1306,15 @@ export const MAX_OPTION_ROWS = 8;
  * menu that omits answers the scheme states is misrepresenting the marking,
  * which is the one thing this tool exists not to do.
  *
- * Still bounded. Sixteen is the ceiling because 2017 Construction Studies HL
- * Q4(a) prints sixteen distinct functional requirements. The bound follows the
+ * Still bounded. Seventeen is the ceiling because Agricultural Science 2010 HL
+ * Q5(a)(ii) prints seventeen accepted footrot points. The bound follows the
  * largest verified SEC menu rather than deleting correct answers for neatness.
  */
-export const MAX_LONG_OPTION_ROWS = 16;
+export const MAX_LONG_OPTION_ROWS = 17;
 
 /** The row cap that actually applies to a card, given its tariff.
  *
- * The five-row cap is for REQUIRED recall — a list the student must produce in
+ * The six-row cap is for REQUIRED recall — a list the student must produce in
  * full. An orderedSplit or questionTotal card's rows are a different thing:
  * the scheme's own printed candidate points, where what a student claims is
  * bounded by the notation or the question's total rather than by the row
@@ -836,8 +1435,86 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
     : g.claimMax * g.perOption;
 }
 
+/** A criterion row's parts add up to its marks, with ids of their own and steps from 0 to each part's marks. */
+export function rowPartsReconcile(row: MarkRow): boolean {
+  const parts = row.parts;
+  if (!parts || !row.permittedMarks || row.kind !== 'criterion' || row.marks === null) return false;
+  if (parts.length < 2 || new Set(parts.map(part => part.id)).size !== parts.length) return false;
+  if (parts.reduce((sum, part) => sum + part.marks, 0) !== row.marks) return false;
+  return parts.every(part => part.id && part.verbatim.trim()
+    && Number.isInteger(part.marks) && part.marks > 0
+    && part.permittedMarks.length >= 2
+    && part.permittedMarks[0] === 0
+    && part.permittedMarks.at(-1) === part.marks
+    && part.permittedMarks.every((mark, index, steps) => Number.isInteger(mark) && mark >= 0 && (index === 0 || mark > steps[index - 1])));
+}
+
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'politics') {
+      const { criteria, schemePages, schemeFileid } = card.rubric;
+      return Boolean(schemeFileid)
+        && schemePages.length > 0
+        && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion => {
+          const permitted = criterion.permittedMarks;
+          if (!permitted.length || Math.min(...permitted) !== 0
+              || Math.max(...permitted) !== criterion.maxMarks
+              || new Set(permitted).size !== permitted.length
+              || permitted.some(mark => !Number.isInteger(mark) || mark < 0)) return false;
+          if (!criterion.bands) return true;
+          const marks = criterion.bands.flatMap(band => band.marks).sort((a, b) => a - b);
+          return marks.length === permitted.length
+            && new Set(marks).size === marks.length
+            && marks.every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
+        });
+    }
+    if (card.rubric.system === 'applied-mathematics') {
+      const { allocations, solution } = card.rubric;
+      return allocations.length > 0
+        && new Set(allocations.map(item => item.id)).size === allocations.length
+        && allocations.every(item => item.credit.length > 1
+          && item.credit[0] === 0
+          && item.credit.every((mark, index) => Number.isInteger(mark) && mark >= 0
+            && (index === 0 || mark > item.credit[index - 1])))
+        && allocations.reduce((sum, item) => sum + Math.max(...item.credit), 0) === card.totalMarks
+        && solution.kind === 'source-scheme'
+        && solution.pages.length > 0
+        && solution.pages.every(page => Number.isInteger(page) && page > 0)
+        && (!solution.regions || (solution.regions.length === solution.pages.length
+          && solution.regions.every(rect => Array.isArray(rect) && rect.length === 4
+            && rect.every(value => Number.isFinite(value) && value >= 0 && value <= 1)
+            && rect[0] < rect[2] && rect[1] < rect[3])));
+    }
+    if (card.rubric.system === 'accounting') {
+      const { solution, allocationNote } = card.rubric;
+      return Number.isFinite(card.totalMarks) && card.totalMarks > 0
+        && solution.kind === 'marking-scheme'
+        && Boolean(solution.sourceFileid) && Boolean(allocationNote.trim())
+        && solution.pages.length > 0
+        && solution.pages.every(page => Number.isInteger(page) && page > 0);
+    }
+    if (card.rubric.system === 'business') {
+      const { responses } = card.rubric;
+      return responses.length > 0
+        && new Set(responses.map(response => response.id)).size === responses.length
+        && responses.flatMap(response => response.allocations)
+          .reduce((sum, allocation) => sum + allocation.maxMarks, 0) === card.totalMarks
+        && responses.every(response => response.allocations.length > 0
+          && new Set(response.allocations.map(allocation => allocation.id)).size === response.allocations.length
+          && response.allocations.every(allocation =>
+            allocation.permittedMarks.length > 0
+            && Math.min(...allocation.permittedMarks) === 0
+            && Math.max(...allocation.permittedMarks) === allocation.maxMarks
+            && new Set(allocation.permittedMarks).size === allocation.permittedMarks.length
+            && allocation.permittedMarks.every(mark => Number.isInteger(mark) && mark >= 0)
+            && (!allocation.requiresAnyOf || (allocation.requiresAnyOf.length > 0
+              && allocation.requiresAnyOf.every(id => response.allocations.some(candidate =>
+                candidate.id === id && !candidate.requiresAnyOf && candidate.id !== allocation.id))))));
+    }
     if (card.rubric.system === 'irish') {
       const { criteria } = card.rubric;
       const awardMaximum = criteria
@@ -873,27 +1550,50 @@ export function tariffReconciles(card: SecCard): boolean {
               .every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
         });
     }
-    if (card.rubric.system === 'geography') {
+    if (card.rubric.system === 'french') {
       const { criteria } = card.rubric;
       return criteria.length > 0
         && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
         && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion => {
+          const allowed = criterion.permittedMarks;
+          if (!allowed.length || Math.min(...allowed) !== 0
+            || Math.max(...allowed) !== criterion.maxMarks
+            || new Set(allowed).size !== allowed.length
+            || allowed.some(mark => !Number.isInteger(mark) || mark < 0)) return false;
+          if (!criterion.bands) return true;
+          const marks = criterion.bands.flatMap(band => band.marks);
+          return marks.length === allowed.length && new Set(marks).size === marks.length
+            && marks.every(mark => allowed.includes(mark));
+        });
+    }
+    if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
+      const criteria: Array<{ id: string; maxMarks: number; permittedMarks: number[] }> = card.rubric.criteria;
+      // A printed remainder the scheme prices on no line is declared, never derived.
+      const unpriced = card.rubric.system === 'geography' ? card.rubric.unpricedMarks ?? 0 : 0;
+      return criteria.length > 0
+        && Number.isInteger(unpriced) && unpriced >= 0 && unpriced < card.totalMarks
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) + unpriced === card.totalMarks
         && criteria.every(criterion =>
           criterion.permittedMarks.length > 0
           && Math.min(...criterion.permittedMarks) === 0
           && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && criterion.permittedMarks.every(mark => Number.isInteger(mark) && mark >= 0 && mark <= criterion.maxMarks)
           && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
     }
     const { assessment } = card.rubric;
-    const bandsReconcile = (bands: PclmGradeBand[], total: number) => {
+    const bandsReconcile = (bands: PclmGradeBand[], total: number, printed?: PclmPrintedGrid) => {
       const marks = bands.flatMap(band => band.marks);
+      // A year-specific print may share a mark between adjacent cells or start
+      // above 0; only a card that declares that printed grid may do so.
       return marks.length > 0
-        && Math.min(...marks) === 0
+        && Math.min(...marks) === (printed?.lowestMark ?? 0)
         && Math.max(...marks) === total
-        && new Set(marks).size === marks.length;
+        && (printed?.overlapping ? true : new Set(marks).size === marks.length);
     };
     if (assessment.mode === 'combined') {
-      return bandsReconcile(assessment.bands, card.totalMarks);
+      return bandsReconcile(assessment.bands, card.totalMarks, assessment.printedGrid);
     }
     if (assessment.mode === 'composite') {
       const criteriaReconcile = (criteria: PclmCriterion[], total: number) =>
@@ -922,6 +1622,26 @@ export function tariffReconciles(card: SecCard): boolean {
         && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
   }
   const { tariffModel: t, rows, totalMarks } = card;
+  const bonus = card.questionBonus;
+  if (bonus && (t.kind !== 'fixed' || !card.taskGroups?.length
+    || !bonus.id || rows.some(row => row.id === bonus.id)
+    || bonus.kind !== 'criterion' || !bonus.verbatim.trim() || !bonus.contextNote.trim()
+    || !Number.isFinite(bonus.marks) || bonus.marks <= 0
+    || !Array.isArray(bonus.permittedMarks) || bonus.permittedMarks.length < 2
+    || bonus.permittedMarks[0] !== 0 || bonus.permittedMarks.at(-1) !== bonus.marks
+    || bonus.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
+      || mark < 0 || (index > 0 && mark <= steps[index - 1])))) return false;
+
+  if (rows.some(row => row.permittedMarks && (
+    t.kind !== 'fixed' || row.kind !== 'criterion' || row.marks === null
+    || row.permittedMarks.length < 2
+    || row.permittedMarks[0] !== 0
+    || row.permittedMarks.at(-1) !== row.marks
+    || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
+      || mark < 0 || (index > 0 && mark <= steps[index - 1]))
+  ))) return false;
+  // Parts are a criterion row's own split: they add up to it, each on printed steps.
+  if (rows.some(row => row.parts && !rowPartsReconcile(row))) return false;
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   // The scheme never printed a split, so a row carrying its own marks is a
   // value the card invented — the tariff lives on the question alone.
@@ -938,6 +1658,7 @@ export function tariffReconciles(card: SecCard): boolean {
     if (!r.route) common += worth(r);
     else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
   }
+  common += bonus?.marks ?? 0;
   if (!byRoute.size) return common === totalMarks;
   return [...byRoute.values()].every(n => common + n === totalMarks);
 }
