@@ -27,11 +27,18 @@ figures sit in a grid the geometry cannot label, is left as it was (the crop and
 in accounting-rows-residue.json with its reason. Nothing is typed: every row is the scheme's words.
 """
 
-import fitz, re, json, collections, sys, os
+import fitz, re, json, collections, sys, os, unicodedata
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 os.chdir(ROOT)
 sys.path.insert(0, os.path.join(ROOT, 'scripts/paper-trail')); import accounting_era as era
 cards=json.load(open('components/MarkBank/cards/accounting/authored.json'))['cards']
+# The scheme's text layer draws "ti", "tt", "fi" as single ligature glyphs and its bullets from the Symbol font;
+# the shared repair map (glyphmap.json, ligature test) and NFKC make them the printed letters.
+GLYPHMAP=json.load(open(os.path.join(HERE, 'glyphmap.json')))
+BULLETS={'\uf0b7': '•', '\uf0a7': '•', '\uf0d8': '•', '\uf076': '•', '\uf0fc': '✓'}
+def repaired(text):
+    text=''.join(GLYPHMAP.get(ch, BULLETS.get(ch, ch)) for ch in text)
+    return unicodedata.normalize('NFKC', text)
 MARK=re.compile(r'^\[(\d+)\]$')
 MARK_IN=re.compile(r'\[(\d+)\]|[>\[](\d+)[@\]]')
 FIG=re.compile(r'^(?:\(€?\d[\d,.]*\)|€?\d[\d,.]*)$')
@@ -294,8 +301,8 @@ for cid in sorted(out):
     v=out[cid]
     rows=[]
     for i,r in enumerate(v['rows']):
-        row={'id':row_id(i,r),'text':r['text'],'marks':r['marks'],'page':r['p']}
-        if r.get('figure'): row['figure']=r['figure']
+        row={'id':row_id(i,r),'text':repaired(r['text']),'marks':r['marks'],'page':r['p']}
+        if r.get('figure'): row['figure']=repaired(r['figure'])
         if r.get('block'): row['block']=True
         if r.get('inferred'): row['inferred']=True
         rows.append(row)
