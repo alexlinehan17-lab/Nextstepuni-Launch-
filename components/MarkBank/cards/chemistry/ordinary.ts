@@ -16811,7 +16811,7 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2017 Ordinary Level — © State Examinations Commission.",
     id: "chem-2017-ol-q6-c-another-alkane", topicId: "chem-2-4", conceptId: "another-alkane-and-its-structure",
-    section: "B", questionRef: "2017 OL Q6(c) — another alkane and its structure",
+    section: "B", questionRef: "2017 OL Q6(c) — another member and its structure",
     stem: "The diagram shows a butane (C₄H₁₀) gas lighter being used to ignite methane (CH₄) gas in a Bunsen burner. To which homologous series do both methane and butane belong?",
     questionText: "Name one other member of this series and draw the structure of one of its molecules.",
     tariffModel: {"kind":"orderedSplit","notation":"[6 + 3]"}, totalMarks: 9,
@@ -22468,7 +22468,7 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2014 Ordinary Level — © State Examinations Commission.",
     id: "chem-2014-ol-q10-b-diffusion", topicId: "chem-1-1", conceptId: "diffusion",
-    section: "B", questionRef: "2014 OL Q10(b) — after (ii), diffusion",
+    section: "B", questionRef: "2014 OL Q10(b) — after (ii), the white ring",
     questionText: "Name the process that results in the formation of a white ring of ammonium chloride (NH₄Cl) from ammonia (NH₃) gas and hydrogen chloride (HCl) gas as shown in the diagram.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [

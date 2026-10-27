@@ -373,7 +373,7 @@ C.add([k('5', 'a')], 'chem-1-2', 'bohr-and-energy-levels-against-orbitals', [
     menu_row('r-3', [_orb1[0], _orb2[0]], 1, 'One of these wordings for the atomic orbital, the scheme setting the '
              'second after "or"; it prices the two points of each (2 × 3), one each.', per=3, total=3),
     menu_row('r-4', [_orb1[1], _orb2[1]], 1, 'And the second point of that same wording, (3).', per=3, total=3)],
-    total=14, qtext=Q5A_NAME, stem='', figure=FIG + 'paper-q5a', cid='q5-a-bohr', ref_suffix='Bohr; energy level and orbital')
+    total=14, qtext=Q5A_NAME, stem='', figure=FIG + 'paper-q5a', cid='q5-a-bohr', ref_suffix='the scientist; energy level and orbital')
 # WRITE: the full configuration (6), or after "or" the short one (3) and the
 # distribution in 2p and 3p shown (3); the scheme's boxes are shown with the answer.
 _full = raw(12, 295, 315, 130, 300)
@@ -513,7 +513,7 @@ C.add([k('7', 'c')], 'chem-3-4', 'ph-and-the-hydronium-ion-in-nitrous-acid', [
     lift('r-1', _q7c[0].text, 3, 'DEFINE. The scheme adds: ' + _sq),
     lift('r-2', _inv, 3, 'CALCULATE: the scheme gives the answer, 0.01 M, priced (3), and works it so.'),
     lift('r-3', _q7c[3].text, 3, 'EXPLAIN.')],
-    qtext=Q7C_PH, cid='q7-c-ph', ref_suffix='pH and the hydronium ion')
+    qtext=Q7C_PH, cid='q7-c-ph', ref_suffix='pH and the H₃O⁺ ion')
 _oh = [display(_q7c[i].text) for i in (6, 7, 8, 9)]
 assert _oh[0] == '[H₃O⁺][OH¯] = 1 × 10⁻¹⁴' and _oh[2] == 'pH + pOH = 14 / pOH = 12', _oh
 _oh = [x.replace('OH¯', 'OH⁻') for x in _oh]

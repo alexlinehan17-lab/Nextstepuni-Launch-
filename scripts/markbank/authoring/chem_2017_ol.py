@@ -239,7 +239,7 @@ C.add([k('6', 'c')], 'chem-2-4', 'another-alkane-and-its-structure', [
              + traced(_q6c[2].text))],
     kind='orderedSplit', notation='[6 + 3]', total=9, notes=SPLIT.format('[6 + 3]'), figure=S + 'q6c',
     qtext=_member, stem=C.context(k('6', 'c')) + ' ' + _series, cid='q6-c-another-alkane',
-    ref_suffix='another alkane and its structure')
+    ref_suffix='another member and its structure')
 C.fixed([k('6', 'd')], 'chem-2-4', 'fractional-distillation-of-crude-oil', figure=Q6)
 # (e): the definition (6), then "ANY ONE: (6)" of the ways to raise the octane
 # number: one menu row. "addition of lead /addition of oxygenates" prints

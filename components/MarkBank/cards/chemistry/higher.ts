@@ -27043,7 +27043,7 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2014 Higher Level — © State Examinations Commission.",
     id: "chem-2014-hl-q5-a-bohr", topicId: "chem-1-2", conceptId: "bohr-and-energy-levels-against-orbitals",
-    section: "B", questionRef: "2014 HL Q5(a) — Bohr; energy level and orbital",
+    section: "B", questionRef: "2014 HL Q5(a) — the scientist; energy level and orbital",
     questionText: "Name the scientist whose work on energy levels in the hydrogen atom is depicted in the Google doodle reproduced on the right. Distinguish between the terms energy level and atomic orbital.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
@@ -27370,7 +27370,7 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2014 Higher Level — © State Examinations Commission.",
     id: "chem-2014-hl-q7-c-ph", topicId: "chem-3-4", conceptId: "ph-and-the-hydronium-ion-in-nitrous-acid",
-    section: "B", questionRef: "2014 HL Q7(c) — pH and the hydronium ion",
+    section: "B", questionRef: "2014 HL Q7(c) — pH and the H₃O⁺ ion",
     stem: "Nitrous acid (HNO₂) is a weak acid that is readily oxidised to the strong acid, nitric acid (HNO₃).",
     questionText: "Define pH. The pH of a 0.2 M solution of nitrous acid is 2.0 at a temperature of 25 °C. Calculate the concentration of H₃O⁺ ion in this solution in moles per litre. Explain clearly how this H₃O⁺ ion concentration confirms that nitrous acid is a weak acid.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,

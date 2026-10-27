@@ -475,7 +475,7 @@ C.add([k('10', 'b', 'i'), k('10', 'b', 'ii')], 'chem-1-4', 'moles-and-molecules-
           'the answer.')
 C.add([k('10', 'b')], 'chem-1-1', 'diffusion', [lift('r-1', _q10b1[2].text, 7)],
       qtext=cut(_q10b_ask, 'Name the process'), stem='', figure=FIG + 'paper-q10b', cid='q10-b-diffusion',
-      ref_suffix='after (ii), diffusion')
+      ref_suffix='after (ii), the white ring')
 # (c): the paper underlines "chemical equilibrium" and prints the equation with
 # an arrow the text layer reads as another glyph; (i) and (ii) take the paper's
 # print as their question, (iii) the chemist's photograph and (iv) the equation.
