@@ -43,7 +43,14 @@ import { CARDS as CONSTRUCTION_ORDINARY } from '../components/MarkBank/cards/con
 import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
 import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
-import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
+import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/higher';
+import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
+import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { businessExpectedLayout } from '../components/MarkBank/businessRubric';
+import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type BusinessRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
 
 type Guided = { rubric?: { answerGuide?: string[]; schemeGuidance?: string[]; criteria?: Array<{ guidance?: string[]; permittedMarks?: number[]; guidanceKind?: string; rowMarks?: number[] }> }; criteria?: Array<{ guidance?: string[]; guidanceKind?: string; rowMarks?: number[] }> };
@@ -473,6 +480,110 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         expect(twin.map(row => row.parts ?? null), `${card.id} ← ${source.id}`).toEqual(source.rows.map(row => row.parts ?? null));
       }
     }
+  });
+
+  it('Italian: a price the scheme prints inside an answer is a row, and a shorter answer it prices is a printed step', () => {
+    const cards = [...ITALIAN_HIGHER, ...ITALIAN_ORDINARY].filter(isPointCard);
+    const rows = cards.flatMap(card => card.rows.map(row => ({ card, row })));
+    // "Erano stati compagni (1m) di scuola (4m)", "By summer [2] 2022 [1]" were one row each; it_rows.py cuts them at the printed prices.
+    const inline = /\(\s*\d+\s*m?\s*\)|\[\s*\d+\s*\]/g;
+    expect(rows.filter(({ row }) => row.kind !== 'anyN' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
+    const pieces = rows.filter(({ row }) => /^r-\d+-\d+$/.test(row.id));
+    expect([pieces.length, new Set(pieces.map(({ card }) => card.id)).size]).toEqual([88, 35]);
+    for (const { card, row } of pieces) {
+      expect(row.kind, `${card.id}/${row.id}`).toBe('point');
+      expect(/[\p{L}\p{N}]/u.test(row.verbatim), `${card.id}/${row.id}: "${row.verbatim}"`).toBe(true);
+      expect(row.marks, `${card.id}/${row.id}`).toBeGreaterThan(0);
+    }
+    // The pieces of one row add up to the card: a fixed tariff still reconciles.
+    for (const card of cards.filter(item => item.rows.some(row => /^r-\d+-\d+$/.test(row.id)))) {
+      expect(card.rows.reduce((sum, row) => sum + (row.marks ?? 0), 0), card.id).toBe(card.totalMarks);
+    }
+    // The 2025 HL B2B 2(a) answer the SEC wrapped onto a second line, whose tail the reader had filed as a lesser answer.
+    expect(cards.find(card => card.id === 'it-2025-hl-b2b-2-a')!.rows.map(row => [row.verbatim, row.marks])).toEqual([
+      ['Il fatto che stesse per attaccare uno del partito di Rosello', 3], ['voleva coinvolgere Rosello stesso', 2],
+    ]);
+    // A shorter answer the scheme prices under the full one ("Nata nel 2020 2m") was a sentence in the
+    // row's note; the row now carries that mark as a step, and the note still names the answer.
+    const lesser = 'The scheme also pays part marks for a shorter answer: ';
+    const stepped = rows.filter(({ row }) => row.kind === 'criterion');
+    expect(stepped).toHaveLength(44);
+    for (const { card, row } of stepped) {
+      const where = `${card.id}/${row.id}`;
+      expect(row.permittedMarks![0], where).toBe(0);
+      expect(row.permittedMarks!.at(-1), where).toBe(row.marks);
+      const priced = [...(row.contextNote ?? '').split(lesser)[1].matchAll(/”\s*(\d+)\s*marks?/g)].map(match => Number(match[1])).filter(value => value < row.marks!);
+      expect([...new Set(row.permittedMarks!.slice(1, -1))].sort((a, b) => a - b), where).toEqual([...new Set(priced)].sort((a, b) => a - b));
+    }
+    // What is still a note: a shorter form of a cut answer (which piece?) and shorter forms of any-N
+    // options (the group has no per-option steps). Model one of those and lower its number here.
+    const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
+    expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
+    expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([16, 93]);
+  });
+
+  it('Business: the responses the scheme prints for a part are rows on the card, each lifted from the cited scheme page', () => {
+    const cards = [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY].filter((card): card is SecRubricCard & { rubric: BusinessRubric } => isRubricCard(card) && card.rubric.system === 'business');
+    expect(cards).toHaveLength(1988);
+    const normalise = (value: string) => value.normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const schemes = new Map<string, string>();
+    // The scheme markdown as bus_expected.py reads it: no page heads, running footers, "(20 marks)" cells or marks column.
+    const FOOT = /^\s*(?:Page \d+ of \d+|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|LC Business \d{4} \((?:OL|HL)\)|Leaving Certificate\b.*|\d{1,2}\s*marks?|⟨\d+⟩|\d{1,2})\s*$/;
+    const INLINE_FOOT = /\s*(?:LC Business \d{4} \((?:OL|HL)\)|Bus\.? ?\d{4} ?\((?:OL|HL)\) ?\d+|Page \d+ of \d+|Leaving Certificate(?: \d{4})?\s*[–-]\s*(?:Higher|Ordinary) Level(?: \d{4})?)\s*(?:⟨\d{1,2}⟩)?\s*/g;
+    const schemeText = (year: number, level: string) => {
+      const key = `${year}-${level === 'higher' ? 'hl' : 'ol'}`;
+      if (!schemes.has(key)) {
+        const lines = readFileSync(resolve(__dirname, '..', 'examiner-reports', 'business', 'schemes', `${key}.md`), 'utf8')
+          .replace(/\u00a0/g, ' ').split('\n')
+          .filter(line => !/^## Page \d+\s*$/.test(line))
+          .map(line => line.replace(INLINE_FOOT, ' ').replace(/\s*⟨[^⟩]*⟩/g, '').replace(/\s*\(\s*\d{1,3}\s*marks?\s*\)/g, '').trim())
+          .filter(line => line && !FOOT.test(line));
+        schemes.set(key, normalise(lines.join(' ')));
+      }
+      return schemes.get(key)!;
+    };
+    const lifted = cards.filter(card => card.rubric.expected);
+    expect(lifted).toHaveLength(1767);
+    for (const card of lifted) {
+      const corpus = schemeText(card.year, card.level);
+      const expected = card.rubric.expected!;
+      expect(expected.page, card.id).toBeGreaterThan(0);
+      expect(expected.items.length, card.id).toBeGreaterThan(0);
+      for (const item of expected.items) {
+        expect(item.text.trim().length, `${card.id}/${item.id}`).toBeGreaterThan(0);
+        for (const piece of [item.text, ...(item.detail ?? [])]) {
+          expect(corpus.includes(normalise(piece)), `${card.id}/${item.id}: "${piece.slice(0, 50)}" is not lifted from the ${card.year} scheme`).toBe(true);
+        }
+      }
+    }
+    // A row sits under the response it names, or in one pool the responses draw from.
+    const layouts = lifted.map(card => businessExpectedLayout(card.rubric)!.kind);
+    expect([layouts.filter(kind => kind === 'per-response').length, layouts.filter(kind => kind === 'pool').length]).toEqual([221, 1546]);
+    // What bus_expected.py could not lift, by reason, each with the pages it looked at. Fix a shape and lower its number here.
+    const review = JSON.parse(readFileSync(resolve(__dirname, '..', 'scripts', 'markbank', 'authored', 'business-expected-review.json'), 'utf8')) as Array<{ id: string; reason: string; schemePages: number[] }>;
+    const reasons: Record<string, number> = {};
+    for (const entry of review) reasons[entry.reason] = (reasons[entry.reason] ?? 0) + 1;
+    expect(reasons).toEqual({
+      'an item is not one slice of the page text: a table or diagram the text layer reordered': 5,
+      'part marker': 24,
+      'roman marker': 22,
+      's1 marker': 6,
+      's1 part marker': 6,
+      'table layout lost in the text layer': 59,
+      'text layer glyph damage on the cited page': 27,
+      'the scheme prints the marker and the question but no response under it on the cited page': 30,
+      'tiny block': 1,
+      'unbounded block over 3000 characters: a whole question, not this part': 14,
+      'workings table flattened by the text layer': 24,
+    });
+    const ids = new Set(cards.map(card => card.id));
+    for (const entry of review) {
+      expect(ids.has(entry.id), entry.id).toBe(true);
+      expect(entry.schemePages.length, entry.id).toBeGreaterThan(0);
+    }
+    const reviewed = new Set(review.map(entry => entry.id));
+    // Every card either carries its rows or is on the review list; the three route-pool expansions share their template's data.
+    expect(cards.filter(card => !card.rubric.expected && !reviewed.has(card.id)).length).toBe(3);
   });
 
 });

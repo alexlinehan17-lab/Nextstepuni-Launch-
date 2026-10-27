@@ -124,7 +124,7 @@
   },
   "business": {
     "cards": 1988,
-    "contentHash": "7c0615dd06aa22c5",
+    "contentHash": "dfc2d964027df2b9",
     "coveragePct": 100.0,
     "covered": 2173,
     "excluded": 0,
@@ -454,7 +454,7 @@
   },
   "italian": {
     "cards": 350,
-    "contentHash": "08a7a5134bfce00f",
+    "contentHash": "7df0d826a57f097d",
     "coveragePct": 100.0,
     "covered": 380,
     "excluded": 325,
