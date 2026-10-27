@@ -179,7 +179,8 @@ describe('complete Art corpus, 2010–2026', () => {
     } as const;
     expect(artMarks(card, scores)).toBe(35);
     expect(suggestRubricGrade(card, scores)).toBe('got');
-    expect(artMarks(card, { ...scores, 'art:subject-knowledge': 999 })).toBe(50);
+    // A criterion never scores above its own maximum (20 here), so the card cannot reach 50 this way.
+    expect(artMarks(card, { ...scores, 'art:subject-knowledge': 999 })).toBe(41);
   });
 
   it('opens every required image from the separate official illustration booklet', () => {

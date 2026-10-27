@@ -24,6 +24,7 @@ import type {
   SecRubricCard,
 } from '../../../../types/markBank';
 import authored from './authored.json';
+import { parseArtAllocation } from './answers';
 
 type ArtLevel = 'higher' | 'ordinary';
 type AssessmentKind =
@@ -105,16 +106,22 @@ const bandsFrom = (
 const authoredCriteria = (card: AuthoredArtCard): ArtCriterion[] => {
   if (!card.criteria) throw new Error(`${card.id}: missing Art scheme criteria`);
   const printed = printedFor(card);
-  return card.criteria.map(criterion => ({
-    id: criterion.id,
-    label: criterion.label,
-    maxMarks: criterion.maxMarks,
-    permittedMarks: criterion.permittedMarks,
-    guidance: criterion.guidance,
-    ...(criterion.rowMarks ? { rowMarks: [...criterion.rowMarks] } : {}),
-    ...(criterion.rowNotes ? { rowNotes: [...criterion.rowNotes] } : {}),
-    bands: bandsFrom(criterion, printed),
-  }));
+  return card.criteria.map(criterion => {
+    // The 2010–2022 table's rows as placements (cards/art/answers.ts); a
+    // component whose Marks column does not reconcile keeps the table.
+    const allocation = criterion.rowMarks ? parseArtAllocation(criterion) : undefined;
+    return {
+      id: criterion.id,
+      label: criterion.label,
+      maxMarks: criterion.maxMarks,
+      permittedMarks: criterion.permittedMarks,
+      guidance: criterion.guidance,
+      ...(criterion.rowMarks ? { rowMarks: [...criterion.rowMarks] } : {}),
+      ...(criterion.rowNotes ? { rowNotes: [...criterion.rowNotes] } : {}),
+      bands: bandsFrom(criterion, printed),
+      ...(allocation?.ok ? { allocation: allocation.allocation } : {}),
+    };
+  });
 };
 
 /** The four Section B/C criteria exactly as an audited scheme prints them. */

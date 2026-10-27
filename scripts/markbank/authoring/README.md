@@ -150,7 +150,13 @@ subject-specific generators.
   criterion's reviewed guidance sentence ("Good description: 2; fair
   description: 1.", "Phase named: 1; … good 2, fair 1", "4 marks + 2 marks",
   "Vector.") into bands and rows whose reachable marks must equal the
-  criterion's permitted marks; write new PE guidance in those shapes.
+  criterion's permitted marks; write new PE guidance in those shapes. Art
+  2010–2022 components come from `components/MarkBank/cards/art/answers.ts`,
+  which makes each printed row a placement at its Marks cell and cuts a
+  Notes cell that splits the row ("5 for name, 10 for description &
+  discussion", "5 for names (3/2)", "10/10/10" beside printed headings,
+  "2 x 5 for functions", "Location - 5 Function - 5") into parts that add
+  up to the row; a cell that prices nothing stays a note under the row.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

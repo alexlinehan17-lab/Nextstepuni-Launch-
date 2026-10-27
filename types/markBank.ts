@@ -728,6 +728,38 @@ export interface ArtCriterion {
   rowNotes?: string[];
   /** Absent where the SEC printed an allocation but no descriptor bands. */
   bands?: ArtBand[];
+  /**
+   * 2021–2022 schemes: the printed rows cut into what the scheme prices
+   * (cards/art/answers.ts), so the student places marks on each row or on
+   * the parts its Notes cell splits it into, never on the component as a
+   * whole. Absent on 2023+ descriptor criteria.
+   */
+  allocation?: ArtAllocation;
+}
+
+/** One priced part of an Art row: "name · 5m" from "5 for name, 10 for description". */
+export interface ArtAllocationPart {
+  id: string;
+  /** The note's own phrase, or the row's words for a remainder the note leaves unlabelled. */
+  text: string;
+  marks: number;
+  /** "1st" / "2nd" where the note prices the same word twice ("names (3/2)"). */
+  tag?: string;
+}
+
+/** One printed row of an Art component with the Marks cell beside it. */
+export interface ArtAllocationRow {
+  id: string;
+  text: string;
+  marks: number;
+  /** The Notes cell's split of the row's marks; the parts add up to `marks`. */
+  parts?: ArtAllocationPart[];
+  /** A Notes cell that prices nothing by itself ("Max 3 for partially correct name."). */
+  note?: string;
+}
+
+export interface ArtAllocation {
+  rows: ArtAllocationRow[];
 }
 
 export interface ArtRubric {
