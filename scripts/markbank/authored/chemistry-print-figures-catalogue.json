@@ -5261,5 +5261,333 @@
   "description": "The marking scheme's own print of its answer to 2014 OL Q10(c)(ii), as the State Examinations Commission set it: WRITE: (ii) the expression [NH₃]² over [N₂][H₂]³, set as a fraction (2 × 3).",
   "questionRef": "2014 OL Q10(c)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q1a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q1(a): \"A batch of washing soda crystals (hydrated sodium carbonate, Na₂CO₃.xH₂O) had lost some of its water of crystallisation by a process called efflorescence. A chemist was required to determine the percentage water of crystallisation in the crystals and the value of x, the average number of water molecules in the formula.\"; \"A sample of the crystals was accurately weighed and found to have a mass of 2.50 g. The sample was dissolved in deionised water and made up to 250 cm³ of solution. A number of 25.0 cm³ portions of this solution were titrated with a previously standardised 0.10 M hydrochloric acid (HCl) solution. The mean volume of the hydrochloric acid solution required to reach the end point was 21.6 cm³.\", the word \"standardised\" underlined; then \"(a) Explain the underlined term.\"",
+  "questionRef": "2014 HL Q1(a)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table headed \"Diagrams for Question 2\", four drawings side by side: \"Stage 1 Reflux\", a long upright condenser over a round-bottomed flask in a water bath on a hotplate; \"Stage 2 Distil\", a flask in a water bath on a hotplate with a thermometer above it and a sloping condenser running down to a small conical flask; \"Stage 3 Decant\", a round-bottomed flask tipped to pour into a beaker; \"Stage 4 Filter\", a beaker tipped over a funnel set in a flask with a side arm and a tube. Below the table, the equation: glyceryl tristearate, drawn as three lines \"C₁₇H₃₅COOCH₂\", \"C₁₇H₃₅COOCH\", \"C₁₇H₃₅COOCH₂\" joined by short vertical bonds and labelled \"glyceryl tristearate\", \"+ 3NaOH →\", \"3C₁₇H₃₅COONa\", labelled \"soap (sodium stearate)\", \"+ co-product\".",
+  "questionRef": "2014 HL Q2"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q2e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q2(e): \"A student prepared a sample of soap in the school laboratory. The experiment was carried out in the four stages illustrated on the previous page. At Stage 1, using a water bath, the student refluxed for approximately 20 minutes 4.45 g of glyceryl tristearate (an animal fat) together with an excess of sodium hydroxide pellets, anti-bumping material and about 30 cm³ of ethanol. The reaction shown in the following balanced equation took place.\"; then the equation: glyceryl tristearate, drawn as three lines \"C₁₇H₃₅COOCH₂\", \"C₁₇H₃₅COOCH\", \"C₁₇H₃₅COOCH₂\" joined by short vertical bonds and labelled \"glyceryl tristearate\", \"+ 3NaOH →\", \"3C₁₇H₃₅COONa\", labelled \"soap (sodium stearate)\", \"+ co-product\"; then \"The apparatus was then allowed to cool and rearranged for Stage 2, distillation, again using a water bath. After distillation, the contents of the distillation flask were decanted or washed into a beaker containing brine – Stage 3. Filtration was used in Stage 4 to isolate the soap which was then thoroughly washed.\"; then \"(e) Draw the structure or give the name of the co-product of the reaction. Where was the co-product located at the end of the process?\"",
+  "questionRef": "2014 HL Q2(e)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q2f-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q2(f): \"A student prepared a sample of soap in the school laboratory. The experiment was carried out in the four stages illustrated on the previous page. At Stage 1, using a water bath, the student refluxed for approximately 20 minutes 4.45 g of glyceryl tristearate (an animal fat) together with an excess of sodium hydroxide pellets, anti-bumping material and about 30 cm³ of ethanol. The reaction shown in the following balanced equation took place.\"; then the equation: glyceryl tristearate, drawn as three lines \"C₁₇H₃₅COOCH₂\", \"C₁₇H₃₅COOCH\", \"C₁₇H₃₅COOCH₂\" joined by short vertical bonds and labelled \"glyceryl tristearate\", \"+ 3NaOH →\", \"3C₁₇H₃₅COONa\", labelled \"soap (sodium stearate)\", \"+ co-product\"; then \"The apparatus was then allowed to cool and rearranged for Stage 2, distillation, again using a water bath. After distillation, the contents of the distillation flask were decanted or washed into a beaker containing brine – Stage 3. Filtration was used in Stage 4 to isolate the soap which was then thoroughly washed.\"; then \"(f) Given that the sodium hydroxide was in excess, calculate the maximum yield in grams of soap that could have been obtained in this preparation.\"",
+  "questionRef": "2014 HL Q2(f)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's a table, \"temperature (ºC)\", \"time (s)\" and \"1/time (s⁻¹)\": 0, 976, 0.001; 12, 485, 0.002; 23, 182, 0.005; 30, 99, 0.010; 39, 53, 0.019; 47, 33, 0.030; 57, 20, 0.050.",
+  "questionRef": "2014 HL Q3"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q3c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q3(c): \"An experiment to investigate the effect of temperature on the rate of the reaction between 0.05 M sodium thiosulfate solution and an excess of 3 M hydrochloric acid solution was carried out as follows. A timer was started as 5 cm³ of the acid were added to 100 cm³ of the sodium thiosulfate solution in a conical flask and a value was obtained for the time taken for the reaction to progress to a certain observable stage. The reciprocal of this time (1/time) was taken as an approximate measure of the initial rate of the reaction. This procedure was repeated at a number of different temperatures. The temperatures and their corresponding reaction times and rates are shown in the table below.\"; a table, \"temperature (ºC)\", \"time (s)\" and \"1/time (s⁻¹)\": 0, 976, 0.001; 12, 485, 0.002; 23, 182, 0.005; 30, 99, 0.010; 39, 53, 0.019; 47, 33, 0.030; 57, 20, 0.050; then \"(c) Plot a graph of reaction rate (1/time) versus temperature.\"",
+  "questionRef": "2014 HL Q3(c)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q3e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q3(e): \"An experiment to investigate the effect of temperature on the rate of the reaction between 0.05 M sodium thiosulfate solution and an excess of 3 M hydrochloric acid solution was carried out as follows. A timer was started as 5 cm³ of the acid were added to 100 cm³ of the sodium thiosulfate solution in a conical flask and a value was obtained for the time taken for the reaction to progress to a certain observable stage. The reciprocal of this time (1/time) was taken as an approximate measure of the initial rate of the reaction. This procedure was repeated at a number of different temperatures. The temperatures and their corresponding reaction times and rates are shown in the table below.\"; a table, \"temperature (ºC)\", \"time (s)\" and \"1/time (s⁻¹)\": 0, 976, 0.001; 12, 485, 0.002; 23, 182, 0.005; 30, 99, 0.010; 39, 53, 0.019; 47, 33, 0.030; 57, 20, 0.050; then \"(e) Use your graph to find the value for the reaction time at 35 ºC. Give your answer correct to the nearest second.\"",
+  "questionRef": "2014 HL Q3(e)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q4c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q4(c): \"(c) Write a balanced nuclear equation for the beta-particle decay of the ²²³₈₇Fr nucleus.\", the mass number 223 set above the atomic number 87 before \"Fr\".",
+  "questionRef": "2014 HL Q4(c)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q4d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white head-and-shoulders photograph of a smiling young man wearing a hat, a jacket, a shirt and a tie.",
+  "questionRef": "2014 HL Q4(d)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A Google doodle: the word \"Google\" in pale letters on a dark ground, its first \"o\" drawn as an atom of three elliptical orbits around a nucleus, the orbits labelled \"n=1\", \"n=2\" and \"n=3\"; an arrow from the atom runs into a wavy line that ends at \"ΔE=hν\" at the top right.",
+  "questionRef": "2014 HL Q5(a)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graph titled \"Successive Ionisation Energies of Silicon\": \"Ionisation Energy (kJ mol⁻¹)\" 0 to 250000 up the side and \"Electron removed\" 1 to 14 along the foot. Fourteen points joined by a line rise gently from 1 to 4, step up at 5, rise gently again to 12, then leap at 13 and rise again at 14.",
+  "questionRef": "2014 HL Q5(c)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a camping gas cylinder, its label reading \"BUTANE/PROPANE\" and \"CAMPINGAZ\".",
+  "questionRef": "2014 HL Q6"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q7b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The equation \"HNO₂ + H₂O ⇋ H₃O⁺ + NO₂⁻\", in bold, with an equilibrium arrow.",
+  "questionRef": "2014 HL Q7(b)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The formulae of the three hydrocarbons over their letters: \"C₂H₂\" over \"A\", \"C₂H₄\" over \"B\" and \"C₂H₆\" over \"C\", in a row.",
+  "questionRef": "2014 HL Q8"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q8a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q8(a): \"Answer the questions that follow with reference to hydrocarbons A, B and C below.\"; then \"C₂H₂\" over \"A\", \"C₂H₄\" over \"B\" and \"C₂H₆\" over \"C\", in a row; then \"(a) Give the IUPAC name and draw the structural formula of compound B.\"",
+  "questionRef": "2014 HL Q8(a)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q8b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q8(b): \"Answer the questions that follow with reference to hydrocarbons A, B and C below.\"; then \"C₂H₂\" over \"A\", \"C₂H₄\" over \"B\" and \"C₂H₆\" over \"C\", in a row; then \"(b) Draw a labelled diagram to show how a sample of compound A can be prepared and collected in the school laboratory.\"",
+  "questionRef": "2014 HL Q8(b)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q8d-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q8(d)(ii): \"Answer the questions that follow with reference to hydrocarbons A, B and C below.\"; then \"C₂H₂\" over \"A\", \"C₂H₄\" over \"B\" and \"C₂H₆\" over \"C\", in a row; then \"(d) Hydrocarbon C reacts with chlorine gas (Cl₂) in the presence of ultraviolet light.\" and \"(ii) Give a detailed description of the mechanism of this reaction.\"",
+  "questionRef": "2014 HL Q8(d)(ii)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's the equation \"2NO(g) ⇋ N₂(g) + O₂(g)\", the state symbols set as subscripts, and beside it \"ΔH = –183 kJ\".",
+  "questionRef": "2014 HL Q9"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q9b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q9(b): \"Consider the following reversible reaction\"; the equation \"2NO(g) ⇋ N₂(g) + O₂(g)\", the state symbols set as subscripts, and beside it \"ΔH = –183 kJ\"; \"that has an equilibrium constant (Kc) value of 20.25 at a certain high temperature T.\"; then \"(b) Calculate the number of moles of nitrogen gas (N₂) in the reaction mixture at equilibrium when a 2 mole sample of nitrogen monoxide decomposes to nitrogen gas and oxygen gas in a closed container at temperature T.\"",
+  "questionRef": "2014 HL Q9(b)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q10a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme of three boxes in a row, \"Alcohol X\", \"Aldehyde Y\" and \"Carboxylic acid Z\", with a pair of arrows between each box and the next, one pointing each way.",
+  "questionRef": "2014 HL Q10(a)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q10a-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q10(a)(ii): \"(a) Study the reaction scheme below and answer the questions that follow with reference to the compounds X, Y and Z, each of which has two carbon atoms in its molecules.\"; then three boxes in a row, \"Alcohol X\", \"Aldehyde Y\" and \"Carboxylic acid Z\", with a pair of arrows between each box and the next, one pointing each way; then \"(ii) Draw the structure of aldehyde Y showing the bonding between the atoms.\"",
+  "questionRef": "2014 HL Q10(a)(ii)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q10a-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q10(a)(iii): \"(a) Study the reaction scheme below and answer the questions that follow with reference to the compounds X, Y and Z, each of which has two carbon atoms in its molecules.\"; then three boxes in a row, \"Alcohol X\", \"Aldehyde Y\" and \"Carboxylic acid Z\", with a pair of arrows between each box and the next, one pointing each way; then \"(iii) Draw the structural formula of the ester formed from compounds X and Z. Identify any carbon atom in this ester that is in planar geometry.\"",
+  "questionRef": "2014 HL Q10(a)(iii)"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Part of the structure of graphite: three layers of hexagonal rings of grey atoms joined by solid bonds, one layer above another, dotted lines running down from atoms in one layer to atoms in the next.",
+  "questionRef": "2014 HL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2014-HL-paper-q11c-b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2014 HL Q11(c)B(i): \"B\"; \"Many solid materials are classified as ionic, molecular, covalent or metallic crystals. Their properties can often be explained in terms of their crystal structures.\", the word \"crystals\" underlined; then \"(i) Explain the underlined term.\"",
+  "questionRef": "2014 HL Q11(c)B(i)"
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q1d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q1(d), as the State Examinations Commission set it: a boxed table, \"Name (3)\", \"Colour before (3) // Colour after (3)\": \"methyl orange\", \"orange (yellow) // red (pink, peach)\"; \"methyl red\", \"orange (yellow) // red (pink)\"; \"bromophenol blue\", \"blue (purple, violet) // yellow\"; \"bromocresol green\", \"blue // yellow\".",
+  "questionRef": "2014 HL Q1(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q1e-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q1(e)(i), as the State Examinations Commission set it: boxed, 25 × M over 1 = 21.6 × 0.1 over 2 (3) and M = 0.0432 (3); beside it, boxed, \"[M = 0.04 or 0.043, deduct 1 mark for inappropriate rounding off in (i) or for use of 0.04 or 0.043 in (ii) but deduction to made once only.]\"",
+  "questionRef": "2014 HL Q1(e)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q1f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q1(f), as the State Examinations Commission set it: \"54 – 54.4% (3)\"; boxed, \"Hydrated = 2.50 g/250 cm³ / 10 g l⁻¹\", \"Anhydrous = 1.14 – 1.15 g/250 cm³ / 4.58 – 4.6 g l⁻¹\", \"Water = 1.35 – 1.36 g/250 cm³ / 5.4 – 5.44 g l⁻¹\", \"=> 1.35/1.36 over 2.5 × 100 / 5.4/5.44 over 10 × 100 = 54% (3)\". Then \"VALUE OF x: 6.9 – 7 (6)\" and a table of two columns, headed \"Formula mass of Na₂CO₃ = 106\" and \"Formula mass of H₂O = 18\", \"OR\" between them, five rows of two routes, each two steps (3) each. Row one: \"Na₂CO₃ content = 4.6 g l⁻¹ [4.5792 – 4.6]\", \"H₂O content = 10 – 4.6 = 5.4 g l⁻¹ [5.4 – 5.4208]\", 5.4 over 4.6 = 18x over 106 (3), \"x = 6.9 – 7 (3)\"; and \"Na₂CO₃ content = 1.15 g /250 cm³ [1.14 - 1.15]\", \"H₂O content = 2.5 – 1.15 = 1.35 g /250 cm³ [1.35 - 1.36]\", 1.35 over 1.15 = 18x over 106 (3), \"x = 6.9 – 7 (3)\". Row two: the same contents, then 4.6 over 106 : 5.4 over 18 / 0.043 : 0.3 (3), \"= 1 : 6.9 – 7 (3)\"; and 1.15 over 106 : 1.35 over 18 / 0.0109 : 0.075 (3), \"= 1 : 6.9 – 7 (3)\". Row three: \"Hydrated form: 10 g l⁻¹ = 0.0432 M\", Formula mass = 10 over 0.0432 / 231.5 (3), x = 231.5−106 over 18 = 6.9 – 7 (3); and \"Hydrated form: 2.5 g /250 cm³ = 0.0108 mol\", Formula mass = 2.5 over 0.0108 / 231.5 (3), x = 231.5−106 over 18 = 6.9 – 7 (3). Row four: Mr(hyd) over 106 = 10 over 4.6* / Mr(hyd) = 230.4 [230.4 -231.5] [*4.5792 – 4.6] (3), x = 230.4−106 over 18 = 6.9 – 7 (3); and Mr(hyd) over 106 = 2.5 over 1.15* / Mr(hyd) = 230.4 [230.4 - 232.5] [*1.14 – 1.15] (3), x = 230.4−106 over 18 = 6.9 – 7 (3). Row five: mass(water) over 106 = 5.4 over 4.6 [5.4 – 5.4208][4.5792 –4.6] / mass(water) = 124.4 [124.4 – 125.5] (3), x = 124.4 over 18 = 6.9 – 7 (3); and mass(water) over 106 = 1.35 over 1.15 [1.35 - 1.36][1.14 - 1.15] / mass(water) = 124.4 [124.4 – 125.5] (3), x = 124.4 over 18 = 6.9 – 7 (3). Below: \"[Reminder: second 3 may be awarded consequentially.]\"",
+  "questionRef": "2014 HL Q1(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q2e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q2(e), as the State Examinations Commission set it: three forms of the co-product separated by \"/\": a chain of three carbons, H–C–C–C–H, with an H above each carbon and an OH below each; a skeletal zigzag with \"HO\" at one end, \"OH\" on the middle carbon and \"OH\" at the other end; and \"CH₂OHCHOHCH₂OH /\".",
+  "questionRef": "2014 HL Q2(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q2f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q2(f), as the State Examinations Commission set it: boxed, 4.45 over 890 (3) = 0.005 mol fat (3); \"0.005 × 3 = 0.015 mol soap (3)\"; \"0.015 × 306 = 4.59 g (3)\"; beside it, boxed, \"For incorrect Mr (for 890 or 306), apply usual deductions of –3 and – 1, respectively. See page 1.\"",
+  "questionRef": "2014 HL Q2(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q3(c), as the State Examinations Commission set it: a graph on graph paper, \"rate or (1/time) or (s⁻¹)\" 0.00 to 0.05 up the side and \"temperature or (℃)\" 0 to 60 along the foot: seven crosses joined by a curve that rises slowly from near 0.00 and then ever more steeply, through 0.05 near 57; a dashed line runs up from 35 on the foot to the curve and across to the rate axis, between 0.01 and 0.02.",
+  "questionRef": "2014 HL Q3(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q4(b), as the State Examinations Commission set it: a grey disc with small circled minus signs scattered over it; arrows point to two of the minus signs from the label \"electrons\" and to the grey from the label \"positive charge\".",
+  "questionRef": "2014 HL Q4(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q4c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q4(c), as the State Examinations Commission set it: the nuclear equation \"²²³₈₇Fr → ²²³₈₈Ra / + ⁰₋₁e\", each mass number set above its atomic number before the symbol, \"Ra\" and \"e\" in bold.",
+  "questionRef": "2014 HL Q4(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q4(g), as the State Examinations Commission set it: boxed, 40 over 32 = 1.25; 60 over 16 = 3.75 / 1 : 3 (3); \"=> SO₃ (3)\".",
+  "questionRef": "2014 HL Q4(g)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q4h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q4(h), as the State Examinations Commission set it: boxed, three routes side by side separated by slanting strokes: 0.15 over 127 / 0.00118 / 0.0012 // then \"× 166 = 0.196\"; 166 over 127 = 1.31 // then \"× 0.15 = 0.196\"; 127 over 166 × 100 = 76.51% // then \"0.15 ÷ 0.7651 = 0.196\"; \"(3)\" at the end of each of the two rows.",
+  "questionRef": "2014 HL Q4(h)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q5a-write.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q5(a), as the State Examinations Commission set it: \"1s² 2s² 2px² 2py² 2pz² 3s² 3px¹ 3py¹ /\", x, y and z set as subscripts, over a row of orbital boxes labelled \"1s\", \"2s\", \"2p\" (three boxes), \"3s\" and \"3p\" (two boxes), each holding \"↓↑\" except the two 3p boxes, which hold \"↓\" each, \"(6)\"; \"or\"; \"1s² 2s² 2p⁶ 3s² 3p² (3)\"; \"distribution of electrons in 2p and 3p clearly shown:\" over three \"2p\" boxes holding \"↓↑\" and two \"3p\" boxes holding \"↓\", \"(3)\"; \"[Accept dots or crosses or other as indicator of electron distribution.]\"",
+  "questionRef": "2014 HL Q5(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q6a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q6(a), as the State Examinations Commission set it: a table of three forms of propane: \"CH₃CH₂CH₃\"; H–C–C–C–H with an H above and below each carbon; and a skeletal formula, a single bent line.",
+  "questionRef": "2014 HL Q6(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q6c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q6(c)(ii), as the State Examinations Commission set it: a table of six forms of the isomer: \"(CH₃)₂CHCH₃\"; \"CH(CH₃)₃\"; H₃C–C–CH₃ with an H above the middle carbon and CH₃ below it; H–C–C–C–H with an H above each carbon, an H below the end carbons and CH₃ below the middle one; a carbon bonded to an H and to three carbons, each of them drawn with its H atoms; and a skeletal formula, three lines meeting at a point.",
+  "questionRef": "2014 HL Q6(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q6d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q6(d), as the State Examinations Commission set it: boxed, \"4C + 4O₂ → 4CO₂ ΔH = – 1574 kJ (3)\", \"5H₂ + 2½O₂ → 5H₂O ΔH = – 1429 kJ (3)\", \"C₄H₁₀ → 4C + 5H₂ ΔH = 125.7 kJ (3)\", and under a line \"C₄H₁₀ + 6½O₂ → 4CO₂ + 5H₂O ΔH = – 2877.3 kJ mol⁻¹ (3)\"; \"or\"; boxed, \"ΣΔHc ΣΔHf(products) – ΣΔHf(reactants)\", \"= 4(–393.5) + 5(–285.8) – (–125.7)\", \"= – 1574 (3) – 1429 (3) + 125.7 (3)\", \"= – 2877.3 kJ mol⁻¹ (3)\".",
+  "questionRef": "2014 HL Q6(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q8a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q8(a), as the State Examinations Commission set it: a table of three forms of ethene: \"CH₂=CH₂\", \"H₂C=CH₂\", and two carbons joined by a double bond, each bonded to two H atoms.",
+  "questionRef": "2014 HL Q8(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q8b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q8(b), as the State Examinations Commission set it: a drawing of the apparatus: a dropping funnel with a tap, its liquid labelled \"water\", fitted into a conical flask holding lumps labelled \"CaC₂\"; a delivery tube runs from the flask's side arm down into a trough of water and up into an upturned test tube, labelled \"ethyne\", with bubbles rising in it.",
+  "questionRef": "2014 HL Q8(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q8d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q8(d)(ii), as the State Examinations Commission set it: \"initiation:\" \"homolysis (splitting, fission) of chlorine molecule (Cl₂) into free radicals (atoms, Cl●) by ultraviolet (uv) light / Cl₂ → 2Cl● / Cl₂ → 2Cl\", \"uv\" set over each arrow, \"(3)\"; \"propagation (1):\" \"chlorine radical (atom, Cl●, Cl) reacts with ethane molecule (C₂H₆) giving hydrogen chloride (HCl) and an ethyl radical (C₂H₅●) / Cl● + C₂H₆ → HCl + C₂H₅● / Cl + C₂H₆ → HCl + C₂H₅● (3)\", \"[Hydrochloric acid not acceptable for HCl and cancellation applies.]\", \"[Where C₂H₅ used instead of C₂H₅● deduct 3 marks but only once in (d).]\"; \"propagation (2):\" \"ethyl radical (C₂H₅●) reacts with chlorine molecule (Cl₂) giving monochloroethane (C₂H₅Cl) and a chlorine radical (atom, Cl●, Cl) / C₂H₅● + Cl₂ → C₂H₅Cl + Cl● / C₂H₅● + Cl₂ → C₂H₅Cl + Cl (3)\"; \"chain reaction occurs / propagation steps repeat until one reactant used up (3)\", \"[Accept ‘chain reaction occurs’ anywhere in (d).]\"; \"termination:\" \"combination of remaining radicals to form molecules (chlorine, chloroethane, butane) / 2Cl● → Cl₂ / 2Cl → Cl₂ / Cl● + C₂H₅● → C₂H₅Cl / Cl + C₂H₅● → C₂H₅Cl / 2C₂H₅● → C₄H₁₀ (3)\".",
+  "questionRef": "2014 HL Q8(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q9b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q9(b), as the State Examinations Commission set it: two boxed routes side by side, both opening \"2NO ⇋ N₂ + O₂\", \"Start: 2 mole 0 mole 0 mole\", \"Equil: 2 – 2x x x / 2 – x ½x ½x (3)\" and x² over (2−2x)² = 20.25 (3). The first goes on x over 2−2x = 4.5 (3) and \"x = 0.9 mole (3)\"; the second \"80x² – 162x + 81 = 0 (3)\", \"(10x – 9)(8x – 9) = 0\", \"or\", x = −(−162) ± √((−162)² − 4(80)(81)) over 2(80), and \"x = 0.9 mole\".",
+  "questionRef": "2014 HL Q9(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q10a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q10(a)(ii), as the State Examinations Commission set it: the structure of ethanal: a carbon bonded to three H atoms and to a second carbon, which is double-bonded to an O and bonded to an H.",
+  "questionRef": "2014 HL Q10(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2014-HL-scheme-q10a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2014 HL Q10(a)(iii), as the State Examinations Commission set it: a table, \"CH₃COOC₂H₅\" beside the structure H₃C–C(=O)–O–CH₂–CH₃; \"[In the fully-expanded form the Hs need not be shown.]\"; \"(6)\"; then \"carbonyl carbon /\" beside the same structure with a box drawn around the C of the C=O, \"[May be indicated by arrow, colouring, asterisk, etc.] (3)\"; \"[Accept correct planar carbon in an incorrect structure.]\"",
+  "questionRef": "2014 HL Q10(a)(iii)",
+  "solution": true
  }
 ]

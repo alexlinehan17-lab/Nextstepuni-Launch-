@@ -255,6 +255,10 @@ MASKS = {
     # 880-902 x 148-169).
     'chemistry-2014-OL-paper-q9b-print.png': [(876, 258, 920, 288)],
     'chemistry-2014-OL-paper-q11a-print.png': [(876, 144, 903, 172)],
+    # 2014 HL Q11(c)B(i): the print of B's lead-in ends at y 631 (paper page 7), where the tops of
+    # the graphite drawing's first atoms already show at its right (x 493-518; dark pixels 844-895
+    # x 92-94 of the first panel), below and right of the lead-in's words; whited out.
+    'chemistry-2014-HL-paper-q11c-b-i-print.png': [(840, 88, 900, 95)],
 }
 
 
