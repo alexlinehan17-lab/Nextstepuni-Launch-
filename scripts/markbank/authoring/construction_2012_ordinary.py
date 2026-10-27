@@ -20,21 +20,22 @@ Q8 = 'q8-terms'
 TERMS = ['Rainwater butt', 'Box Dovetail Joint', 'Compression joint', 'Wall tie', 'Gully trap', 'Angle bead', 'Newel Post', 'Through and through sawing', 'Biscuit joint']
 LEGACY = set()
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["Concrete tiles", "Softwood battens 44 × 35 mm", "Breathable membrane", "Rafters 150 × 40 mm / 250 mm × 40 mm", "Roof insulation to comply with current Building Regulations", "Ceiling joists 150 × 40 mm", "12.5 mm foil-backed plasterboard ceiling with skim coat", "Wallplate 100 × 75 mm", "Internal plaster and external render", "Concrete block inner leaf 100 mm", "Wall insulation to comply with current Building Regulations", "Residual cavity 50 mm", "Concrete block outer leaf 100 mm", "Eaves gutter 100 mm", "Ventilation path"]), 'q3-a': ('details', 6, 5, ["Connection to water mains", "Stop valve", "Water supply pipe", "External wall", "Protective sleeve for water supply", "Service pipe insulation", "Stop valve", "Rising main", "Connection to kitchen sink", "Typical type of material", "Typical size of pipework"]), 'q5-a': ('details', 7, 5, ["Window board 25 mm", "Window frame 150 mm × 80 mm", "Triple-glazing low-e glass", "Precast concrete window cill", "Mastic and / or taped seals", "D.P.C.", "External plaster and Internal plaster 15 mm", "Concrete block outer leaf 100 mm", "Residual cavity 50 mm", "Wall tie", "Thermal insulation 100 mm", "Concrete block inner leaf 100 mm", "Proprietary cavity closer"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 LEDGER = [(1, 'Answer Question'), (3, 'any five')]
 GAPS = {'q4-a': {'cons-2-5'}, Q8: {'cons-10-1', 'cons-10-4', 'cons-4-1', 'cons-4-4'}, 'q9-a': {'cons-10-1', 'cons-10-4'}}
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 5, r(5))],
+    'q1-a': [('details', 35, None), ('dimensions', 5, r(5))],
     'q1-b': [('closer', 4, r(4)), ('presentation', 6, BAND6)],
     'q2-a': [('description-1', 6, r(6)), ('description-2', 6, r(6)), ('finish', 6, r(6)), ('insulation', 6, r(6)), ('sketch', 16, r(16))],
     'q2-b': [('advantage-1', 5, r(5)), ('advantage-2', 5, r(5))],
-    'q3-a': [('details', 30, list(range(0, 31, 5))), ('presentation', 8, BAND8)],
+    'q3-a': [('details', 30, None), ('presentation', 8, BAND8)],
     'q3-b': [('frost', 6, r(6))],
     'q3-c': [('ways', 6, r(6))],
     'q4-a': [(k, 10, r(10)) for k in ['trench', 'level', 'reinforcement', 'position']],
     'q4-b': [('reason-1', 5, r(5)), ('reason-2', 5, r(5))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 5, r(5))],
+    'q5-a': [('details', 35, None), ('dimensions', 5, r(5))],
     'q5-b': [('cold-bridge', 4, r(4)), ('presentation', 6, BAND6)],
     'q6-a': [('lifting', 10, r(10)), ('concrete', 10, r(10))],
     'q6-b': [('item-1', 15, r(15)), ('item-2', 15, r(15))],

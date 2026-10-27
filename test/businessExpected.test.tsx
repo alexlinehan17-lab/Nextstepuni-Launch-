@@ -68,4 +68,15 @@ describe('the responses a Business scheme prints', () => {
     expect(businessExpectedId('e1')).toBe('business:expected:e1');
     expect(businessScoreId('r', 'a')).toBe('business:r:a');
   });
+
+  test('stage B reads the rows the text layer flattened from the page geometry: a workings table, a matching grid, a True/False column', () => {
+    const payroll = byId('bus-2010-hl-s1-q10a');
+    expect(payroll.rubric.expected?.lifted).toBe('geometry');
+    expect(payroll.rubric.expected!.items.map(item => item.text)).toEqual(expect.arrayContaining(['Gross Tax 12856', 'Net Pay 43,144']));
+    const matching = byId('bus-2012-hl-s1-q2');
+    expect(matching.rubric.expected!.items.slice(0, 5).map(item => item.text)).toEqual(['1 — D', '2 — A', '3 — E', '4 — C', '5 — F']);
+    const trueFalse = byId('bus-2016-ol-s1-q10');
+    expect(trueFalse.rubric.expected!.items.some(item => item.text.endsWith('— False'))).toBe(true);
+    expect(trueFalse.rubric.expected!.items.some(item => item.text.endsWith('— True'))).toBe(true);
+  });
 });

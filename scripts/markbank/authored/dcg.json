@@ -14203,27 +14203,74 @@
   "rows": [
    {
     "id": "dcg-2023-ol-b3c-r1",
-    "kind": "anyN",
+    "kind": "criterion",
     "verbatim": "Projections from elevation (2) and plan (2)",
-    "marks": 13,
-    "openList": true,
-    "contextNote": "The scheme prices this drawing step by step: 4, 3, 2, 4 — 13 marks in all, in the order the scheme sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 4,
-     "options": [
-      "Projections from elevation (2) and plan (2)",
-      "Axonometric projection of front surface",
-      "Axonometric projection side surface",
-      "Axonometric projection of roof"
-     ],
-     "perOptionSteps": [
-      4,
-      3,
-      2,
-      4
-     ]
-    }
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "parts": [
+     {
+      "id": "elevation",
+      "verbatim": "elevation",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "plan",
+      "verbatim": "plan",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dcg-2023-ol-b3c-r2",
+    "kind": "criterion",
+    "verbatim": "Axonometric projection of front surface",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "id": "dcg-2023-ol-b3c-r3",
+    "kind": "criterion",
+    "verbatim": "Axonometric projection side surface",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "dcg-2023-ol-b3c-r4",
+    "kind": "criterion",
+    "verbatim": "Axonometric projection of roof",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Axonometric Projection of Outline' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."

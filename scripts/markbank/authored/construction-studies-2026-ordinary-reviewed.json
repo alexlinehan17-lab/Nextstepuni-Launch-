@@ -34,20 +34,29 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced concrete foundation; hardcore (maximum 225 mm layers); sand blinding; radon barrier; concrete subfloor; 200–300 mm rigid floor insulation; screed; 20 mm T&G flooring; outer leaf with external render; concrete fill; full-fill insulated cavity; inner leaf with internal plaster; airtightness tape. The model also shows a DPC, 100 mm leaves and 15 mm internal plaster.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced concrete foundation; hardcore (maximum 225 mm layers); sand blinding; radon barrier; concrete subfloor; 200–300 mm rigid floor insulation; screed; 20 mm T&G flooring; outer leaf with external render; concrete fill; full-fill insulated cavity; inner leaf with internal plaster; airtightness tape. The model also shows a DPC, 100 mm leaves and 15 mm internal plaster.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Reinforced concrete foundation",
+                "Hardcore max 225mm layers",
+                "Sand blinding",
+                "Radon barrier",
+                "Concrete subfloor",
+                "200 – 300 mm rigid floor insulation",
+                "Screed",
+                "20 mm T&G flooring",
+                "Outer leaf external render",
+                "Concrete fill",
+                "Full-fill insulated cavity",
+                "Inner leaf internal plaster",
+                "Airtightness tape"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -238,20 +247,29 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced concrete foundation; hardcore (maximum 225 mm layers); sand blinding; radon barrier; concrete subfloor; 200–300 mm rigid floor insulation; screed; 20 mm T&G flooring; outer leaf with external render; concrete fill; full-fill insulated cavity; inner leaf with internal plaster; airtightness tape. The model also shows a DPC, 100 mm leaves and 15 mm internal plaster.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: reinforced concrete foundation; hardcore (maximum 225 mm layers); sand blinding; radon barrier; concrete subfloor; 200–300 mm rigid floor insulation; screed; 20 mm T&G flooring; outer leaf with external render; concrete fill; full-fill insulated cavity; inner leaf with internal plaster; airtightness tape. The model also shows a DPC, 100 mm leaves and 15 mm internal plaster.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Reinforced concrete foundation",
+                "Hardcore max 225mm layers",
+                "Sand blinding",
+                "Radon barrier",
+                "Concrete subfloor",
+                "200 – 300 mm rigid floor insulation",
+                "Screed",
+                "20 mm T&G flooring",
+                "Outer leaf external render",
+                "Concrete fill",
+                "Full-fill insulated cavity",
+                "Inner leaf internal plaster",
+                "Airtightness tape"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1043,21 +1061,26 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT correct details at 5 marks each, capped at 40. Marked details: 15 mm rising main; 15 mm cold water feed to the kitchen sink (from the rising main); kitchen sink; insulated water storage tank; ball valve in the tank; overflow pipe (about Ø28 mm); bathroom fixtures; cold feeds to the wash basin and toilet cistern (Ø15 mm) and to the bath; valves (stop valves and drain valve).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT correct details at 5 marks each, capped at 40. Marked details: 15 mm rising main; 15 mm cold water feed to the kitchen sink (from the rising main); kitchen sink; insulated water storage tank; ball valve in the tank; overflow pipe (about Ø28 mm); bathroom fixtures; cold feeds to the wash basin and toilet cistern (Ø15 mm) and to the bath; valves (stop valves and drain valve).",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "15mm rising main",
+                "15mm cold water feed to kitchen sink",
+                "Kitchen sink",
+                "Insulated water storage tank",
+                "Ball valve in tank",
+                "Overflow pipe",
+                "Bathroom fixtures",
+                "Cold water feed to wash basin",
+                "Cold water feed to toilet cistern",
+                "Cold water feed to bath"
+              ]
+            }
           }
         ],
         "questionFigureKey": "construction-studies-2026-OL-q3-original",
@@ -1241,21 +1264,26 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT correct details at 5 marks each, capped at 40. Marked details: 15 mm rising main; 15 mm cold water feed to the kitchen sink (from the rising main); kitchen sink; insulated water storage tank; ball valve in the tank; overflow pipe (about Ø28 mm); bathroom fixtures; cold feeds to the wash basin and toilet cistern (Ø15 mm) and to the bath; valves (stop valves and drain valve).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT correct details at 5 marks each, capped at 40. Marked details: 15 mm rising main; 15 mm cold water feed to the kitchen sink (from the rising main); kitchen sink; insulated water storage tank; ball valve in the tank; overflow pipe (about Ø28 mm); bathroom fixtures; cold feeds to the wash basin and toilet cistern (Ø15 mm) and to the bath; valves (stop valves and drain valve).",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "15mm rising main",
+                "15mm cold water feed to kitchen sink",
+                "Kitchen sink",
+                "Insulated water storage tank",
+                "Ball valve in tank",
+                "Overflow pipe",
+                "Bathroom fixtures",
+                "Cold water feed to wash basin",
+                "Cold water feed to toilet cistern",
+                "Cold water feed to bath"
+              ]
+            }
           },
           {
             "id": "b-use-1",
@@ -2012,20 +2040,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); full-fill insulated cavity (200 mm) with wall tie; concrete block inner leaf (100 mm); internal plaster (15 mm); cavity closer; stepped DPC; concrete lintels (100 mm × 75 mm); thermally broken door frame; insulated door; airtightness (tape).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); full-fill insulated cavity (200 mm) with wall tie; concrete block inner leaf (100 mm); internal plaster (15 mm); cavity closer; stepped DPC; concrete lintels (100 mm × 75 mm); thermally broken door frame; insulated door; airtightness (tape).",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External render",
+                "Concrete block outer leaf",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf",
+                "Internal plaster",
+                "Cavity closer",
+                "Stepped DPC",
+                "Concrete lintels",
+                "Thermally broken door frame",
+                "Insulated door",
+                "Airtightness"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2216,20 +2251,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); full-fill insulated cavity (200 mm) with wall tie; concrete block inner leaf (100 mm); internal plaster (15 mm); cavity closer; stepped DPC; concrete lintels (100 mm × 75 mm); thermally broken door frame; insulated door; airtightness (tape).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render (19 mm); concrete block outer leaf (100 mm); full-fill insulated cavity (200 mm) with wall tie; concrete block inner leaf (100 mm); internal plaster (15 mm); cavity closer; stepped DPC; concrete lintels (100 mm × 75 mm); thermally broken door frame; insulated door; airtightness (tape).",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External render",
+                "Concrete block outer leaf",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf",
+                "Internal plaster",
+                "Cavity closer",
+                "Stepped DPC",
+                "Concrete lintels",
+                "Thermally broken door frame",
+                "Insulated door",
+                "Airtightness"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -3366,6 +3408,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3381,6 +3446,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3396,6 +3484,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3411,6 +3522,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -3663,6 +3797,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3678,6 +3835,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3693,6 +3873,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3708,6 +3911,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -6449,6 +6675,54 @@
       "priorSha256": "e190f6c18887246a62db1aeff2b289e1258d1ff3e52ebf0d0f228ce8b5a16e6e",
       "correctedSha256": "7c1bd3c168665a67cda63a4aa615e59b1b073568b76817904dabfd0a8ad8227d",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q7-b",
+      "priorSha256": "09e575501044230f5d2c0fdf6ca920fb2dd41b654fc95c15de0b5f5e1045d206",
+      "correctedSha256": "ce7e8d3f83a4db7717eeb40bc5b63e39702642b39feafacc3c4123d240103d29",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q7-complete",
+      "priorSha256": "3663ef4b8f929372f22f07783799176aa65e6e9ef91774609915fa9fcc1486b1",
+      "correctedSha256": "aa5ec1bf079697a716950f854705040bda975df9bdc23f4ba24cee2b6c4c0145",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q1-a",
+      "priorSha256": "5d9dd4065e602c18153b950863dd03b90411511936b52ede834846a2e1b0691b",
+      "correctedSha256": "82101ce799605dd081d15ff322aff48ccb6dbd06d9f8088ea20ab8442b9cd881",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q1-complete",
+      "priorSha256": "ba7b6a49a240530cc75c5cebda1c09348f236b47d8ba0ebb9de6aec1788a45bf",
+      "correctedSha256": "452add4522f74248a282246e467d3457ca4e35c054270e94621242243a711e97",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q3-a",
+      "priorSha256": "1869fa1d7c4ed44a7376af2838fe552fb7ff985d9bdb564069100c472da87b49",
+      "correctedSha256": "fb852845cb49d0bf31d8a4ca0f9ba4ac72503a77cc8a5651123750e09b3849e9",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q3-complete",
+      "priorSha256": "144332680df7318cfdd7774922257ca9c323d44ca28b05e62a7af744a7cf1483",
+      "correctedSha256": "669763890d8b956c70590c0aa313b40bb82c8e9007042a45bac88ab6781113e5",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q5-a",
+      "priorSha256": "b081ed8e2c5c115961de03eef422d2bbf4278ebabebad641a9431da0f539164b",
+      "correctedSha256": "e124a2331dc35540be946e71eedbb5dd8f010c0bcc7174c75b51eb15b33a9e0f",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2026-ol-q5-complete",
+      "priorSha256": "6efa36130ef718fdc62df01b6a315686db0886c2034cc5aa1ff36e8b32902792",
+      "correctedSha256": "d314786313f729d50be4857dfc8d02e356bd759bd1a8156a3c6d6d9b68f30ab4",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

@@ -23,6 +23,7 @@ TERMS = ['Carbon monoxide alarm', 'Grab rail', 'Furniture castor', 'Laminated sa
 LEGACY = {'q1-a', 'q1-b', 'q2-b', 'q2-c', 'q3-a', 'q3-b', 'q3-c', 'q4-b', 'q4-c', 'q5-a', 'q5-b', 'q6-b', 'q6-c', 'q7-a', 'q7-b', 'q7-c', 'q9-a', 'q9-b',
           'q9-c'} | {f'q6-a-{k}' for k in Q6A}
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["External plaster 19 mm", "Concrete block outer leaf 100 mm", "Thermal insulation 200 mm", "Stepped DPC/ Cavity tie", "Concrete block inner leaf 100 mm", "Internal plaster 15 mm", "Pre-stressed concrete lintels 100 × 70 mm", "Window head 150 × 80 mm", "Triple glazing low e glass"]), 'q3-a': ('items', 7, 4, ["Draw given sketch", "15 mm rising main", "15 mm cold water feed to kitchen sink", "Water storage tank", "Ball valve in storage tank", "28 mm Overflow", "Insulation around storage tank", "15 mm cold water supply to cistern", "Valves"]), 'q5-a': ('details', 7, 5, ["Upper floor joists 200 mm × 50 mm", "Insulation between joists 150 mm", "Plywood 25 mm", "Ceiling plasterboard, plaster and vapour barrier", "Stud partition 100 mm × 50 mm", "Stud soleplate 100 mm × 50 mm", "Plasterboard 12.5 mm on partition", "Floor underlay", "Floating tongued and grooved timber floor", "Skirting board 120 mm × 20 mm"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 LABELLED = {f'q6-a-{k}' for k in Q6A}
@@ -31,18 +32,18 @@ LEDGER = [(1, 'Answer Question'), (4, 'Select'), (4, 'any five')]
 GAPS = {'q4-a': {'cons-2-5'}, Q8: {'cons-10-2', 'cons-4-4', 'cons-10-1', 'cons-10-4'}}
 RETIRED = [('card-source-bindings.json', 'q3-a'), ('card-source-bindings.json', 'q3-b'), ('card-corrections.json', 'q3-b')]
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 4, r(4))],
+    'q1-a': [('details', 35, None), ('dimensions', 4, r(4))],
     'q1-b': [('closer', 3, [0, 3]), ('presentation', 8, BAND8)],
     'q2-a': [('sketch', 8, r(8)), ('type', 5, r(5)), ('thickness', 5, r(5)), ('presentation', 8, BAND8)],
     'q2-b': [('insulating', 5, r(5)), ('sealing', 5, r(5)), ('presentation', 8, BAND8)],
     'q2-c': [('reason-1', 3, r(3)), ('reason-2', 3, r(3))],
-    'q3-a': [('items', 28, list(range(0, 29, 4))), ('presentation', 6, BAND6)],
+    'q3-a': [('items', 28, None), ('presentation', 6, BAND6)],
     'q3-b': [('location', 3, r(3)), ('reason', 3, r(3)), ('presentation', 6, BAND6)],
     'q3-c': [('advantage', 4, r(4))],
     'q4-a': [('sketch', 11, r(11)), ('wall-position', 6, r(6)), ('reinforcement', 6, r(6)), ('dimensions', 3, r(3)), ('presentation', 6, BAND6)],
     'q4-b': [('method', 4, r(4)), ('presentation', 6, BAND6)],
     'q4-c': [('advantage-1', 4, r(4)), ('advantage-2', 4, r(4))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3))],
+    'q5-a': [('details', 35, None), ('dimensions', 3, r(3))],
     'q5-b': [('insulation', 4, [0, 4]), ('presentation', 8, BAND8)],
     **{f'q6-a-{k}': [('precaution-1', 4, r(4)), ('precaution-2', 4, r(4))] for k in Q6A},
     'q6-b': [(f'precaution-{i}', 6, r(6)) for i in (1, 2, 3)] + [('presentation', 8, BAND8)],

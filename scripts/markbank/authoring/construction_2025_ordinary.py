@@ -48,18 +48,20 @@ def r(n):
     return list(range(n + 1))
 
 
+CHOICES = {}
+CHOICES.update({'q1-a': ('details', 7, 5, ["External render", "Concrete block outer leaf", "Full fill insulated cavity with wall tie", "Concrete block inner leaf", "Internal plaster", "Cavity closer", "Stepped DPC", "Concrete lintels", "Thermally broken window frame", "Triple glazing", "Airtightness"]), 'q3-a': ('details', 8, 5, ["15mm cold feed to stove", "22 mm flow to radiators", "22 mm return from radiators", "Radiators", "Cold feed to cylinder", "22 mm primary flow to cylinder", "22 mm primary return from cylinder", "22 mm expansion pipe", "Expansion tank/ vessel", "Hot feed from cylinder", "22 mm overflow pipe"]), 'q5-a': ('details', 7, 5, ["String 250 mm × 50 mm", "Tread 250 mm × 25 mm", "Riser 170 mm × 20 mm", "Joint between tread and riser", "Nosing – 16 mm minimum", "Vertical & horizontal wedge", "Glue blocks 60 mm × 60 mm", "Pitch line/ nosing line (max 42⁰)", "Trimmer joist 225 mm x 75 mm", "First floor joist 225 mm x 50 mm", "Tongue and groove floor"])})  # drawing details as option groups (construction_choices.py)
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
+    'q1-a': [('details', 35, None), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
     'q1-b': [('stepped-dpc', 4, [0, 4])],
     'q2-a': [('advantage-1', 6, r(6)), ('advantage-2', 6, r(6))],
     'q2-b': [('method', 16, r(16)), ('type', 4, r(4)), ('thickness', 4, r(4))],
     'q2-c': [('note', 7, r(7)), ('sketch', 7, r(7))],
-    'q3-a': [('details', 40, list(range(0, 41, 5))), ('quality', 5, BAND5)],
+    'q3-a': [('details', 40, None), ('quality', 5, BAND5)],
     'q3-b': [('advantage', 5, r(5))],
     'q4-a': [('select', 2, r(2)), ('reason-1', 6, r(6)), ('reason-2', 6, r(6))],
     'q4-b': [(k, 6, r(6)) for k in ['site', 'house', 'entrance', 'driveway']],
     'q4-c': [('advantage', 6, r(6)), ('disadvantage', 6, r(6))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
+    'q5-a': [('details', 35, None), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
     'q5-b': [('glue-blocks', 4, [0, 4])],
     **{f'q6-a-{p}': [('sign-reason', 8, r(8))] for p in PPE},
     'q6-b': [('risk-1', 6, r(6)), ('risk-2', 6, r(6))],

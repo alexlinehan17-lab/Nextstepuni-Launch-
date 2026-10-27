@@ -10525,11 +10525,46 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "(1 + 1 + 1) A legally binding agreement (a written statement) (1) between the employer and the employee (1) detailing the terms and conditions of the employment (1)",
     "marks": 3,
     "openList": true,
-    "contextNote": "3 answers at 1 mark each."
+    "contextNote": "3 answers at 1 mark each.",
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "parts": [
+     {
+      "id": "p1",
+      "verbatim": "A legally binding agreement (a written statement)",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p2",
+      "verbatim": "between the employer and the employee",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p3",
+      "verbatim": "detailing the terms and conditions of the employment",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ]
    }
   ],
   "notes": "The scheme prices this ask \"(1 + 1 + 1)\". Its list is what the SEC published and is not exhaustive — the scheme's own note says variations and alternatives may also be acceptable."

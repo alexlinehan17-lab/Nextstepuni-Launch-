@@ -36,22 +36,29 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details ( 4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: 100 mm concrete path/ground level; DPC; 100 mm block outer leaf and 19 mm render; full-fill cavity insulation; wall tie; 100 mm block inner leaf and 13 mm plaster; skirting board; 20 mm floating timber floor; 150 mm concrete floor taped and sealed to the wall; 300 mm floor insulation; DPM/radon barrier; hardcore and sand blinding; concrete fill/foundation blocks; reinforced concrete foundation.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details ( 4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: 100 mm concrete path/ground level; DPC; 100 mm block outer leaf and 19 mm render; full-fill cavity insulation; wall tie; 100 mm block inner leaf and 13 mm plaster; skirting board; 20 mm floating timber floor; 150 mm concrete floor taped and sealed to the wall; 300 mm floor insulation; DPM/radon barrier; hardcore and sand blinding; concrete fill/foundation blocks; reinforced concrete foundation.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "100 concrete path / ground level",
+                "D.P.C",
+                "100 mm concrete block outer leaf and 19 mm external render",
+                "Full-fill cavity insulation",
+                "100mm concrete block inner leaf and 13 mm internal plaster",
+                "Skirting board",
+                "20 mm floating timber floor",
+                "150 mm concrete floor taped and seal between wall and floor",
+                "300 mm floor insulation",
+                "D.P.M. /radon barrier",
+                "Hardcore and sand blinding",
+                "Concrete fill / foundation blocks",
+                "Reinforced concrete foundation"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -247,22 +254,29 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 9 of the above details ( 4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 36,
-            "contextNote": "Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: 100 mm concrete path/ground level; DPC; 100 mm block outer leaf and 19 mm render; full-fill cavity insulation; wall tie; 100 mm block inner leaf and 13 mm plaster; skirting board; 20 mm floating timber floor; 150 mm concrete floor taped and sealed to the wall; 300 mm floor insulation; DPM/radon barrier; hardcore and sand blinding; concrete fill/foundation blocks; reinforced concrete foundation.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32,
-              36
-            ]
+            "contextNote": "Any 9 of the above details ( 4 marks each). Credit the best NINE acceptable details at 4 marks each, capped at 36. Marked details: 100 mm concrete path/ground level; DPC; 100 mm block outer leaf and 19 mm render; full-fill cavity insulation; wall tie; 100 mm block inner leaf and 13 mm plaster; skirting board; 20 mm floating timber floor; 150 mm concrete floor taped and sealed to the wall; 300 mm floor insulation; DPM/radon barrier; hardcore and sand blinding; concrete fill/foundation blocks; reinforced concrete foundation.",
+            "group": {
+              "claimMax": 9,
+              "perOption": 4,
+              "options": [
+                "100 concrete path / ground level",
+                "D.P.C",
+                "100 mm concrete block outer leaf and 19 mm external render",
+                "Full-fill cavity insulation",
+                "100mm concrete block inner leaf and 13 mm internal plaster",
+                "Skirting board",
+                "20 mm floating timber floor",
+                "150 mm concrete floor taped and seal between wall and floor",
+                "300 mm floor insulation",
+                "D.P.M. /radon barrier",
+                "Hardcore and sand blinding",
+                "Concrete fill / foundation blocks",
+                "Reinforced concrete foundation"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -441,6 +455,44 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "tank",
+                "verbatim": "tank",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "free-of-insulation",
+                "verbatim": "free of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "top-and-sides",
+                "verbatim": "top and sides",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -459,6 +511,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "expansion-pipe",
+                "verbatim": "expansion pipe",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "other-exposed-pipes",
+                "verbatim": "other exposed pipes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -700,6 +778,44 @@
               10,
               11,
               12
+            ],
+            "parts": [
+              {
+                "id": "tank",
+                "verbatim": "tank",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "free-of-insulation",
+                "verbatim": "free of insulation",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "top-and-sides",
+                "verbatim": "top and sides",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -718,6 +834,32 @@
               6,
               7,
               8
+            ],
+            "parts": [
+              {
+                "id": "expansion-pipe",
+                "verbatim": "expansion pipe",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              {
+                "id": "other-exposed-pipes",
+                "verbatim": "other exposed pipes",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -864,21 +1006,27 @@
         "rows": [
           {
             "id": "items",
-            "kind": "criterion",
-            "verbatim": "Any 8 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 32,
-            "contextNote": "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Secondary circulation: 15 mm rising main; insulated storage tank; 22 mm cold feed to the cylinder; indirect cylinder; 22 mm expansion pipe. Primary circulation: wood burning stove; 28 mm primary flow and return; 22 mm cold supply and expansion pipe from the expansion tank; insulated expansion tank; overflows; valves.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32
-            ]
+            "contextNote": "Any 8 of the above details (4 marks each). Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Secondary circulation: 15 mm rising main; insulated storage tank; 22 mm cold feed to the cylinder; indirect cylinder; 22 mm expansion pipe. Primary circulation: wood burning stove; 28 mm primary flow and return; 22 mm cold supply and expansion pipe from the expansion tank; insulated expansion tank; overflows; valves.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 4,
+              "options": [
+                "15 mm rising main",
+                "Insulated storage tank",
+                "22 mm cold feed from storage tank to hot water cylinder",
+                "Indirect hot water cylinder",
+                "22 mm expansion pipe from hot water cylinder",
+                "Wood burning stove",
+                "28 mm primary flow and return from stove and cylinder",
+                "22 mm cold supply from expansion tank and 22 mm expansion pipe",
+                "Insulated expansion tank",
+                "Overflow from storage and expansion tanks",
+                "Valves"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1166,21 +1314,27 @@
         "rows": [
           {
             "id": "a-items",
-            "kind": "criterion",
-            "verbatim": "Any 8 of the above details (4 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 32,
-            "contextNote": "Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Secondary circulation: 15 mm rising main; insulated storage tank; 22 mm cold feed to the cylinder; indirect cylinder; 22 mm expansion pipe. Primary circulation: wood burning stove; 28 mm primary flow and return; 22 mm cold supply and expansion pipe from the expansion tank; insulated expansion tank; overflows; valves.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24,
-              28,
-              32
-            ]
+            "contextNote": "Any 8 of the above details (4 marks each). Credit the best EIGHT acceptable items at 4 marks each, capped at 32. Secondary circulation: 15 mm rising main; insulated storage tank; 22 mm cold feed to the cylinder; indirect cylinder; 22 mm expansion pipe. Primary circulation: wood burning stove; 28 mm primary flow and return; 22 mm cold supply and expansion pipe from the expansion tank; insulated expansion tank; overflows; valves.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 4,
+              "options": [
+                "15 mm rising main",
+                "Insulated storage tank",
+                "22 mm cold feed from storage tank to hot water cylinder",
+                "Indirect hot water cylinder",
+                "22 mm expansion pipe from hot water cylinder",
+                "Wood burning stove",
+                "28 mm primary flow and return from stove and cylinder",
+                "22 mm cold supply from expansion tank and 22 mm expansion pipe",
+                "Insulated expansion tank",
+                "Overflow from storage and expansion tanks",
+                "Valves"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -1898,21 +2052,26 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: newel post 100 × 100 mm; handrail; balusters 50 × 50 mm; treads 250 mm; nosing at least 16 mm; risers 175 mm; cut string; glue blocks; the tread–riser joint; the bottom three steps.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 of the above details (5 marks each). Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: newel post 100 × 100 mm; handrail; balusters 50 × 50 mm; treads 250 mm; nosing at least 16 mm; risers 175 mm; cut string; glue blocks; the tread–riser joint; the bottom three steps.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Newel post 100 × 100 mm",
+                "Handrail",
+                "Balusters 50 × 50 mm",
+                "Treads 250 mm",
+                "Nosing 16 mm minimum",
+                "Risers 175 mm",
+                "Cut string",
+                "Glue blocks",
+                "Joint between tread and riser",
+                "Bottom three steps"
+              ]
+            }
           }
         ],
         "questionFigureKey": "construction-studies-2016-OL-q5-original",
@@ -2094,21 +2253,26 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: newel post 100 × 100 mm; handrail; balusters 50 × 50 mm; treads 250 mm; nosing at least 16 mm; risers 175 mm; cut string; glue blocks; the tread–riser joint; the bottom three steps.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 of the above details (5 marks each). Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: newel post 100 × 100 mm; handrail; balusters 50 × 50 mm; treads 250 mm; nosing at least 16 mm; risers 175 mm; cut string; glue blocks; the tread–riser joint; the bottom three steps.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Newel post 100 × 100 mm",
+                "Handrail",
+                "Balusters 50 × 50 mm",
+                "Treads 250 mm",
+                "Nosing 16 mm minimum",
+                "Risers 175 mm",
+                "Cut string",
+                "Glue blocks",
+                "Joint between tread and riser",
+                "Bottom three steps"
+              ]
+            }
           },
           {
             "id": "b-baluster",
@@ -4930,12 +5094,15 @@
     {
       "cardId": "cons-2016-ol-q1-a",
       "priorSha256": "361554f0fe7b64d8eaaf72be1317e92e4302ccb5b347fa3ae02d2a6904097c00",
-      "correctedSha256": "6ebecd9bad367885bf0383c74fba13b28562687883c3cab9409120b882f142cf",
+      "correctedSha256": "ec532a41a0416dd1b80b81b3a9e0c61227dc7b0ff7f4ebd9cb3fa36565f7bf63",
       "priorTotalMarks": 36,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-2-4",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) printed within part (a): 36 → 40."
+      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) printed within part (a): 36 → 40.",
+      "supersededSha256": [
+        "6ebecd9bad367885bf0383c74fba13b28562687883c3cab9409120b882f142cf"
+      ]
     },
     {
       "cardId": "cons-2016-ol-q1-b",
@@ -4950,12 +5117,15 @@
     {
       "cardId": "cons-2016-ol-q2-a",
       "priorSha256": "cfe3f8ea1c03c18ac1cab3c9e18b298fe07b706f1d89b8208cb8e61abe649bb4",
-      "correctedSha256": "a7ab82a129c8a8b1e98208e4edbef6503dd42a9002c2ee710519d094ccd9af5f",
+      "correctedSha256": "44c138819a077fc5fd0104ad896426a01301f3dd83055b10a8c9b81b35301423",
       "priorTotalMarks": 32,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-3-9",
-      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — attic 12, tank 12, pipes 8 and quality of sketches (8/6/4): 32 → 40."
+      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — attic 12, tank 12, pipes 8 and quality of sketches (8/6/4): 32 → 40.",
+      "supersededSha256": [
+        "a7ab82a129c8a8b1e98208e4edbef6503dd42a9002c2ee710519d094ccd9af5f"
+      ]
     },
     {
       "cardId": "cons-2016-ol-q2-b",
@@ -4970,12 +5140,15 @@
     {
       "cardId": "cons-2016-ol-q3-a",
       "priorSha256": "59f63536b1c15deef2ea5bd02fb49f772a6e7fa8552b1ba2aa85b331bf7e5403",
-      "correctedSha256": "64c7245f39d4c713612800274d15d9be75cb1e6ee32ec3fb279c2053e0c67d5d",
+      "correctedSha256": "fdd51a6ed35e2806bc54b58cc4296af0f0de02ab200c2d2149bb0a4bf990cd88",
       "priorTotalMarks": 32,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Rebuilt to the best-eight items (4 each) and the printed quality-of-sketch band (8/6/4): 32 → 40."
+      "reason": "Question wording lifted from the paper. Rebuilt to the best-eight items (4 each) and the printed quality-of-sketch band (8/6/4): 32 → 40.",
+      "supersededSha256": [
+        "64c7245f39d4c713612800274d15d9be75cb1e6ee32ec3fb279c2053e0c67d5d"
+      ]
     },
     {
       "cardId": "cons-2016-ol-q3-b",
@@ -5030,12 +5203,15 @@
     {
       "cardId": "cons-2016-ol-q5-a",
       "priorSha256": "0724ec88196be5f253d9528c9ac11e502d53ee951fcab201fd3f661b8373ead3",
-      "correctedSha256": "f75ca1bf04bc0aa14e40eeb7c91b57c16b159eb3853ba8a21183dece3498ed9b",
+      "correctedSha256": "770db7b40d30bceaae50e8e11d0a75c7d225469661f3094a4b1e93c39432f8df",
       "priorTotalMarks": 40,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-4-4",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Reshaped to the best-eight details (5 each); tariff unchanged (40)."
+      "reason": "Question wording lifted from the paper. Reshaped to the best-eight details (5 each); tariff unchanged (40).",
+      "supersededSha256": [
+        "f75ca1bf04bc0aa14e40eeb7c91b57c16b159eb3853ba8a21183dece3498ed9b"
+      ]
     },
     {
       "cardId": "cons-2016-ol-q5-b",
@@ -5448,5 +5624,31 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2016-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2016-ordinary/prior-2016-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2016-ordinary/prior-2016-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2016-ol-q2-complete",
+      "priorSha256": "e1e1939dae781c609d933c16861d1517a46fd89f7da8971ae87a7da673865fa1",
+      "correctedSha256": "58c05be138c49b4d21a1ca338bd2fae9c4cbd169c6559790a55c584062d25807",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2016-ol-q1-complete",
+      "priorSha256": "d2133e87cb170b0f5a72e56f8943384a5b080c2e25cba33258fe04db10163046",
+      "correctedSha256": "74c2df88b6f9aac2a808dfb486fd4a13b66358fd4104ec6c2f9d9cca557f67fc",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2016-ol-q3-complete",
+      "priorSha256": "a7e10ab3f79724a36ffcd5ebd4d522c012ca5f9949cc16dad7e04f5f0ea90016",
+      "correctedSha256": "44361d1f8542ecbb3034c5ff26bedcb9ddcd246141138eca10023dc93fa93829",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2016-ol-q5-complete",
+      "priorSha256": "ebc032a82b9ae6d62dfd9dfeb933839cab9fff2bd4aa1ea28e1b2b22cc0b8e19",
+      "correctedSha256": "5a12715945607268f40cbf21b14cbc297e425db2ce2841ad5059c5ab76414f8c",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    }
+  ]
 }

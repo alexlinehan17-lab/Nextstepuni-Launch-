@@ -20,23 +20,24 @@ TERMS = ['Lever valve', 'Mortice and tenon joint', 'Cob wall', 'Thermal bridge',
 LEGACY = {'q1-a', 'q1-b', 'q2-a', 'q2-b', 'q3-a', 'q3-b', 'q3-c', 'q4-a', 'q4-b', 'q4-c', 'q5-a', 'q5-b', 'q6-a', 'q6-b', 'q7-a', 'q7-b', 'q7-c', 'q9-a', 'q9-c', Q8}
 CONSOLIDATED = {f'q8-None-{t}': Q8 for t in ['mortice-and-tenon-joint', 'thermal-bridge', 'dual-flush-toilet', 'smart-meter', 'solar-gain', 'low-e-glazing', 'access-ramp']}
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 9, 4, ["100 concrete path / ground level", "D.P.C", "100 mm concrete block outer leaf and 19 mm external render", "Full-fill cavity insulation", "100mm concrete block inner leaf and 13 mm internal plaster", "Skirting board", "20 mm floating timber floor", "150 mm concrete floor taped and seal between wall and floor", "300 mm floor insulation", "D.P.M. /radon barrier", "Hardcore and sand blinding", "Concrete fill / foundation blocks", "Reinforced concrete foundation"]), 'q3-a': ('items', 8, 4, ["15 mm rising main", "Insulated storage tank", "22 mm cold feed from storage tank to hot water cylinder", "Indirect hot water cylinder", "22 mm expansion pipe from hot water cylinder", "Wood burning stove", "28 mm primary flow and return from stove and cylinder", "22 mm cold supply from expansion tank and 22 mm expansion pipe", "Insulated expansion tank", "Overflow from storage and expansion tanks", "Valves"]), 'q5-a': ('details', 8, 5, ["Newel post 100 × 100 mm", "Handrail", "Balusters 50 × 50 mm", "Treads 250 mm", "Nosing 16 mm minimum", "Risers 175 mm", "Cut string", "Glue blocks", "Joint between tread and riser", "Bottom three steps"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 LEDGER = [(1, 'Answer Question'), (3, 'any five')]
 GAPS = {'q5-a': {'cons-4-4'}, 'q5-b': {'cons-4-4', 'cons-10-1'}, 'q7-c': {'cons-4-1'}, Q8: {'cons-10-1', 'cons-10-4'}}
 RETIRED = [('card-source-bindings.json', 'q3-a')]
 LEAF = {
-    'q1-a': [('details', 36, list(range(0, 37, 4))), ('dimensions', 4, r(4))],
+    'q1-a': [('details', 36, None), ('dimensions', 4, r(4))],
     'q1-b': [('thermal-bridge', 2, [0, 2]), ('presentation', 8, BAND8)],
     'q2-a': [('attic', 12, r(12)), ('tank', 12, r(12)), ('pipes', 8, r(8)), ('presentation', 8, BAND8)],
     'q2-b': [('reason-1', 5, r(5)), ('reason-2', 5, r(5))],
-    'q3-a': [('items', 32, list(range(0, 33, 4))), ('presentation', 8, BAND8)],
+    'q3-a': [('items', 32, None), ('presentation', 8, BAND8)],
     'q3-b': [('solar', 4, r(4))],
     'q3-c': [('advantage-1', 3, r(3)), ('advantage-2', 3, r(3))],
     'q4-a': [('reason-1', 6, r(6)), ('reason-2', 6, r(6))],
     'q4-b': [('site-layout-map', 15, r(15)), ('newspaper-notice', 15, r(15))],
     'q4-c': [('reason', 8, r(8))],
-    'q5-a': [('details', 40, list(range(0, 41, 5)))],
+    'q5-a': [('details', 40, None)],
     'q5-b': [('baluster', 2, [0, 2]), ('presentation', 8, BAND8)],
     'q6-a': [(k, 8, r(8)) for k in ['scalpel', 'chisel', 'adhesive']],
     'q6-b': [(f'precaution-{i}', 6, r(6)) for i in (1, 2, 3)] + [('presentation', 8, BAND8)],

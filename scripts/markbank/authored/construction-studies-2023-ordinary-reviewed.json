@@ -35,20 +35,26 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; joist hanger; joist; airtight tape; plasterboard; plywood decking; tongue and groove flooring; skirting board. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, 225 × 50 mm joists and 20 mm plywood decking.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; joist hanger; joist; airtight tape; plasterboard; plywood decking; tongue and groove flooring; skirting board. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, 225 × 50 mm joists and 20 mm plywood decking.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with internal plaster",
+                "Full fill cavity with wall tie",
+                "Concrete block inner leaf with render",
+                "Joist hanger",
+                "Ceiling joist",
+                "Airtight tape",
+                "Plasterboard",
+                "Plywood decking",
+                "Tongue & groove flooring",
+                "Skirting board"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -242,20 +248,26 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; joist hanger; joist; airtight tape; plasterboard; plywood decking; tongue and groove flooring; skirting board. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, 225 × 50 mm joists and 20 mm plywood decking.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block outer leaf with render; full-fill cavity with wall tie; concrete block inner leaf with internal plaster; joist hanger; joist; airtight tape; plasterboard; plywood decking; tongue and groove flooring; skirting board. The model specifies 19 mm render, 100 mm leaves, a 200 mm full-fill cavity, 15 mm plaster, 225 × 50 mm joists and 20 mm plywood decking.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with internal plaster",
+                "Full fill cavity with wall tie",
+                "Concrete block inner leaf with render",
+                "Joist hanger",
+                "Ceiling joist",
+                "Airtight tape",
+                "Plasterboard",
+                "Plywood decking",
+                "Tongue & groove flooring",
+                "Skirting board"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1078,21 +1090,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: solar collector; cold feed to collector; hot return to cylinder; cylinder; circulation pump; solar expansion vessel; storage tank; cold feed to cylinder; expansion pipe; hot water to shower and shower unit; valves. Typical sizes: Ø22 mm feed and return, a 250 l cylinder, a 24 l solar expansion vessel, a Ø28 mm expansion pipe, Ø22 mm hot water to the shower.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: solar collector; cold feed to collector; hot return to cylinder; cylinder; circulation pump; solar expansion vessel; storage tank; cold feed to cylinder; expansion pipe; hot water to shower and shower unit; valves. Typical sizes: Ø22 mm feed and return, a 250 l cylinder, a 24 l solar expansion vessel, a Ø28 mm expansion pipe, Ø22 mm hot water to the shower.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Solar collector",
+                "Cold feed to collector",
+                "Hot return to cylinder",
+                "Cylinder",
+                "Circulation pump",
+                "Solar expansion vessel",
+                "Storage tank",
+                "Cold feed to cylinder",
+                "Expansion pipe",
+                "Hot water to shower and shower unit",
+                "Valves"
+              ]
+            }
           }
         ],
         "questionFigureKey": "construction-studies-2023-OL-q3-original",
@@ -1278,21 +1296,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: solar collector; cold feed to collector; hot return to cylinder; cylinder; circulation pump; solar expansion vessel; storage tank; cold feed to cylinder; expansion pipe; hot water to shower and shower unit; valves. Typical sizes: Ø22 mm feed and return, a 250 l cylinder, a 24 l solar expansion vessel, a Ø28 mm expansion pipe, Ø22 mm hot water to the shower.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: solar collector; cold feed to collector; hot return to cylinder; cylinder; circulation pump; solar expansion vessel; storage tank; cold feed to cylinder; expansion pipe; hot water to shower and shower unit; valves. Typical sizes: Ø22 mm feed and return, a 250 l cylinder, a 24 l solar expansion vessel, a Ø28 mm expansion pipe, Ø22 mm hot water to the shower.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Solar collector",
+                "Cold feed to collector",
+                "Hot return to cylinder",
+                "Cylinder",
+                "Circulation pump",
+                "Solar expansion vessel",
+                "Storage tank",
+                "Cold feed to cylinder",
+                "Expansion pipe",
+                "Hot water to shower and shower unit",
+                "Valves"
+              ]
+            }
           },
           {
             "id": "b-consideration-1",
@@ -2298,21 +2322,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; wallplate with cavity closer; waterproof membrane; insulation; plywood decking with breather membrane; firring piece; insulated ceiling joist; insulated plasterboard ceiling with airtight membrane; fascia and soffit; gutter. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster, a 100 × 75 mm wallplate, 150 mm insulation, 20 mm plywood, 200 × 50 mm joists and a 50 mm insulated plasterboard ceiling.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; wallplate with cavity closer; waterproof membrane; insulation; plywood decking with breather membrane; firring piece; insulated ceiling joist; insulated plasterboard ceiling with airtight membrane; fascia and soffit; gutter. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster, a 100 × 75 mm wallplate, 150 mm insulation, 20 mm plywood, 200 × 50 mm joists and a 50 mm insulated plasterboard ceiling.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Wall plate with cavity closer",
+                "Waterproof membrane",
+                "Insulation",
+                "Plywood decking with breather membrane",
+                "Firring piece",
+                "Insulated ceiling joist",
+                "Insulated plasterboard ceiling with airtight membrane",
+                "Fascia and soffit",
+                "Gutter"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -2492,21 +2523,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; wallplate with cavity closer; waterproof membrane; insulation; plywood decking with breather membrane; firring piece; insulated ceiling joist; insulated plasterboard ceiling with airtight membrane; fascia and soffit; gutter. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster, a 100 × 75 mm wallplate, 150 mm insulation, 20 mm plywood, 200 × 50 mm joists and a 50 mm insulated plasterboard ceiling.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable details at 5 marks each, capped at 40. Marked details: concrete block outer leaf with external render; full-fill insulated cavity with wall tie; concrete block inner leaf with internal plaster; wallplate with cavity closer; waterproof membrane; insulation; plywood decking with breather membrane; firring piece; insulated ceiling joist; insulated plasterboard ceiling with airtight membrane; fascia and soffit; gutter. The model specifies 19 mm render, 100 mm leaves, a 200 mm cavity, 15 mm plaster, a 100 × 75 mm wallplate, 150 mm insulation, 20 mm plywood, 200 × 50 mm joists and a 50 mm insulated plasterboard ceiling.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "Concrete block outer leaf with external render",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf with internal plaster",
+                "Wall plate with cavity closer",
+                "Waterproof membrane",
+                "Insulation",
+                "Plywood decking with breather membrane",
+                "Firring piece",
+                "Insulated ceiling joist",
+                "Insulated plasterboard ceiling with airtight membrane",
+                "Fascia and soffit",
+                "Gutter"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -3385,6 +3423,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3400,6 +3461,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3415,6 +3499,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3430,6 +3537,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           }
         ],
@@ -3697,6 +3827,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3712,6 +3865,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3727,6 +3903,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -3742,6 +3941,29 @@
               3,
               4,
               5
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 2,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2
+                ]
+              }
             ]
           },
           {
@@ -5509,12 +5731,15 @@
     {
       "cardId": "cons-2023-ol-q1-a",
       "priorSha256": "04c81f80b2412cbc4c8270b6ba78a45eeeab3a2bb42f417962ef6230d9323937",
-      "correctedSha256": "f6ca87b841a3254f5f7a46e32ba7751f013f11876f09fa2a283c1b51030d7f79",
+      "correctedSha256": "9e2046ebc15750fc0624cc60abb7c7b5b5f15deceddfe35b312efc1129cc24e2",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 47,
       "priorTopicId": "cons-3-2",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47."
+      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47.",
+      "supersededSha256": [
+        "f6ca87b841a3254f5f7a46e32ba7751f013f11876f09fa2a283c1b51030d7f79"
+      ]
     },
     {
       "cardId": "cons-2023-ol-q1-b",
@@ -5552,12 +5777,15 @@
     {
       "cardId": "cons-2023-ol-q3-a",
       "priorSha256": "120e82ce37f42465add2b38ec201114fc0a4db821f971c8c01e3192c693f7da5",
-      "correctedSha256": "716c7f86305146d28b1119be1163d9844c64924bae74afed9286bb3dc62be819",
+      "correctedSha256": "842fff30b6f1c562aa82481c135680b4115e0cf06748696c3cf12ecefc8fd2bf",
       "priorTotalMarks": 40,
       "correctedTotalMarks": 40,
       "priorTopicId": "cons-5-2",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Reshaped to the printed best-eight row (8 × 5); total unchanged (40)."
+      "reason": "Question wording lifted from the paper. Reshaped to the printed best-eight row (8 × 5); total unchanged (40).",
+      "supersededSha256": [
+        "716c7f86305146d28b1119be1163d9844c64924bae74afed9286bb3dc62be819"
+      ]
     },
     {
       "cardId": "cons-2023-ol-q3-b",
@@ -5595,12 +5823,15 @@
     {
       "cardId": "cons-2023-ol-q5-a",
       "priorSha256": "c76fdc2ee555ea7913c31f7ca3fc8f0e64d1ae1750848fb6481ef7b9cceb586f",
-      "correctedSha256": "020ac124c26ca6d9d80e7435e5ed09ac46f396e846222a8759d08a11882bdefe",
+      "correctedSha256": "80c69680fedc2989196d355f1bbe35683d814ad4690e4d6f8fab49e1c7385468",
       "priorTotalMarks": 40,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-3-10",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the draughting/accuracy/scale allowance (6/4/2) printed within part (a): 40 → 46."
+      "reason": "Question wording lifted from the paper. Adds the draughting/accuracy/scale allowance (6/4/2) printed within part (a): 40 → 46.",
+      "supersededSha256": [
+        "020ac124c26ca6d9d80e7435e5ed09ac46f396e846222a8759d08a11882bdefe"
+      ]
     },
     {
       "cardId": "cons-2023-ol-q5-b",
@@ -5655,12 +5886,15 @@
     {
       "cardId": "cons-2023-ol-q7-b",
       "priorSha256": "9d5a38fafeb4005a45366636be6cdbae73b9220140ef19409f3aa8453695325a",
-      "correctedSha256": "0a9f657ae4384512162f046234fff9fdac6a90340e5a95e770bec5284b371e70",
+      "correctedSha256": "689713f5d5dc64c75a1f1b837333f622e9bdec95f09c43c7e26ca3ff7280c959",
       "priorTotalMarks": 20,
       "correctedTotalMarks": 28,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Adds the printed sketch (8) to the four location-and-reason rows (3 + 2 each): 20 → 28."
+      "reason": "Question wording lifted from the paper. Adds the printed sketch (8) to the four location-and-reason rows (3 + 2 each): 20 → 28.",
+      "supersededSha256": [
+        "0a9f657ae4384512162f046234fff9fdac6a90340e5a95e770bec5284b371e70"
+      ]
     },
     {
       "cardId": "cons-2023-ol-q8-None-concrete-mixer",
@@ -6023,6 +6257,30 @@
       "priorSha256": "56c2a763e6615033a43b37f5d14e8e5cf465f791fe175527d677aa1c69a60be1",
       "correctedSha256": "6b2873816bfeedd669bf0eb699a20d2fd665862b719fe5645d98959aa05df698",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2023-ol-q7-complete",
+      "priorSha256": "b8b54d88855810069c1045f3f4c8d4f4d3d670b0823cfceff4eb130148461491",
+      "correctedSha256": "b93d245ee300cf1dbc14f2ff3f66a2c305594572a92b9bd0c6bcbe1c0962bff7",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2023-ol-q1-complete",
+      "priorSha256": "97c764b56d53975d84975deb7a9c754dafda046d99964e38474de0df48f8a174",
+      "correctedSha256": "7d9fcd2fcc1299c7956981f27307fdcb50af60c7d54e7934c6d44ed694479e4b",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2023-ol-q3-complete",
+      "priorSha256": "913414f69a40609364cdde5b4b8a6cc4b293a8dbf30962a21b5b6e7c387b4f33",
+      "correctedSha256": "ce3dbbb8bece60ba9ed2778aa25ba25fc4069dd9ed71145f1c30010c766a929a",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2023-ol-q5-complete",
+      "priorSha256": "f7cb2a9c478633c1256a88a9f9aa1621392462ffedac784a770f44d06f0597c5",
+      "correctedSha256": "00a5db8af088e916ff6c727d246d5fc1b7cf7fbe948f33cc4e10a6c6834bec24",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

@@ -21,6 +21,7 @@ TERMS = ['Smart meter', 'Biscuit joint', 'Earth rod', 'Airtightness tape', 'Evac
 LEGACY = {'q1-a', 'q1-b', 'q2-a', 'q2-b', 'q2-c', 'q3-a', 'q3-b', 'q4-a', 'q5-a', 'q5-b', 'q6-b', 'q6-c', 'q7-a', 'q7-b', 'q7-c', 'q9-a', 'q9-b',
           'q9-c-advantage', 'q9-c-disadvantage'}
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["15 mm internal plaster with skim coat", "120 × 50 mm doorframe", "60 mm flush panel door", "65 × 15 mm architrave and 100 × 15 mm skirting board", "20 mm tongue and groove floating hardwood floor", "100 mm smooth concrete floor", "250 mm floor insulation with thermal blocks", "200 mm concrete sub-floor", "Radon barrier", "30 mm sand blinding", "200 mm hardcore", "Reinforced concrete foundation", "215 mm concrete block wall"]), 'q3-a': ('items', 7, 5, ["15 mm rising main", "Water storage tank and overflow 22 mm min", "22 mm cold feed from water storage tank to hot water cylinder", "Hot water cylinder", "22 mm expansion pipe from hot water cylinder", "22 mm hot water supply to shower", "Wood-burning stove", "28 mm primary flow and return to and from wood-burning stove and hot", "22 mm cold feed from expansion tank and 22 mm expansion pipe", "Expansion tank and overflow 22 mm min"]), 'q5-a': ('details', 7, 5, ["Weather proofing three layers of bituminous felt", "Marine plywood decking 18 to 25 mm", "Battens/counter battens 50 mm × 50 mm and firring piece", "Roof/ceiling joists 200 mm × 50 mm", "Roof insulation min 200 mm", "12.5 mm insulated plasterboard with skim coat", "100 × 75 mm wallplate and wallplate straps", "Concrete block inner leaf 100 mm", "Full-fill cavity insulation and cavity closer with fire stopping insulation", "Concrete block outer leaf 100 mm", "15 mm internal plaster and 19 mm external render", "Fascia 25 mm, soffit 12 mm and eaves gutter 100 mm"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 TAILS = {'8': 'between the sitting room and the dining room.'}
@@ -28,17 +29,17 @@ LEDGER = [(1, 'Answer Question'), (4, 'any five')]
 GAPS = {'q4-b': {'cons-2-1'}, Q8: {'cons-10-1', 'cons-10-4', 'cons-10-2'}}
 RETIRED = [('card-source-bindings.json', 'q3-a'), ('card-corrections.json', 'q6-c'), ('card-corrections.json', 'q9-c-advantage')]
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3))],
+    'q1-a': [('details', 35, None), ('dimensions', 3, r(3))],
     'q1-b': [('radon', 4, [0, 4]), ('presentation', 8, BAND8)],
     'q2-a': [('description-1', 4, r(4)), ('description-2', 4, r(4)), ('thickness', 4, r(4)), ('presentation', 8, BAND8)],
     'q2-b': [('step-1', 4, r(4)), ('step-2', 4, r(4)), ('finish', 4, r(4)), ('presentation', 8, BAND8)],
     'q2-c': [('advantage', 5, r(5)), ('disadvantage', 5, r(5))],
-    'q3-a': [('items', 35, list(range(0, 36, 5))), ('presentation', 8, BAND8)],
+    'q3-a': [('items', 35, None), ('presentation', 8, BAND8)],
     'q3-b': [('advantage', 7, r(7))],
     'q4-a': [('detail-1', 5, r(5)), ('detail-2', 5, r(5))],
     'q4-b': [(k, 10, r(10)) for k in ['profiles', 'width-depth', 'wall-position']],
     'q4-c': [('level', 10, r(10))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3))],
+    'q5-a': [('details', 35, None), ('dimensions', 3, r(3))],
     'q5-b': [('ventilation', 4, [0, 4]), ('presentation', 8, BAND8)],
     'q6-a': [(k, 8, BAND8) for k in ['vest', 'footwear', 'helmet']],
     'q6-b': [(k, 3, r(3)) for k in ['vest', 'footwear', 'helmet']] + [('presentation', 8, BAND8)],

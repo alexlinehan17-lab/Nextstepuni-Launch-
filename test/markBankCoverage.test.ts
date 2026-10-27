@@ -243,7 +243,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
           : subject === 'art' ? ['factory.ts', 'authored.json', 'answers.ts']
             : subject === 'politics-and-society' ? ['factory.ts', 'authored.json', 'answers.ts', 'corrections.ts', 'corrections.json']
             : subject === 'irish' ? ['factory.ts', 'authored.json', 'answers.ts', 'tariffs.ts']
-              : ['factory.ts', 'authored.json'];
+            : subject === 'accounting' ? ['factory.ts', 'authored.json', 'rows.json']
+            : ['factory.ts', 'authored.json'];
       for (const name of names) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));

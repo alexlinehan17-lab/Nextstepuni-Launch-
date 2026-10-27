@@ -173,6 +173,20 @@ subject-specific generators.
   several placements, so the five-rows-per-task cap and the yearly
   validators' pinned row lists stand; the pass records every changed card in
   its year's review ledger and changes nothing on a second run.
+  Construction Studies drawing rows priced "Any 7 of the above details (5
+  marks each)" become option groups (`construction_choices.py --write`): the
+  options are the scheme table's own priced detail lines (Higher Level's under
+  PERFORMANCE CRITERIA, headed by the part's tariff line), a line the table
+  prints twice is a detail drawn twice and stays twice, and the row claims N
+  at the unit price for its unchanged marks with the printed tariff as its
+  note. The pass mirrors each task's group into its complete-question twin and
+  the 2015 Q1 checkpoint draft, records every changed card in its year's
+  review ledger, and writes the group into the yearly validator
+  (`CHOICES.update`, the LEAF row without steps). A second run finds nothing to
+  convert and changes nothing; to re-lift after changing the reader, check out
+  the data, the validators and the draft first. 2019 HL Q1(a) ("Any 12 ×
+  4marks" over 25 details in three menus) is the one row left as prose: one
+  pool, past the 17 options a question may show.
   Italian answers priced in halves on one line ("Erano stati compagni (1m)
   di scuola (4m)", "By summer [2] 2022 [1]") are cut at the printed prices by
   `it_rows.py`, which `it_all.py` applies to every card it builds and which
@@ -181,6 +195,16 @@ subject-specific generators.
   row's note, becomes a printed step on a fixed-tariff point row, and a full
   answer the SEC wrapped onto a second line is joined back from the note
   (`it_scheme.py` joins it at the source now too).
+  Applied Mathematics cards price their solution in "Published step N"
+  allocations beside a crop of the whole solution; `am_steps.py` cuts each
+  step's own lines from the scheme page (the band from the step before it to
+  its margin mark — "5" in the margin on the 2010–2017 schemes, "(5)" right
+  of the working from 2018) and writes the crop region into the allocation
+  (`reviewed.json`), so the step shows its content; the equation-editor text
+  layer is fragments, never words, so nothing is transcribed. A card whose
+  margin marks do not match its steps in number and value keeps the whole
+  crop and is listed with its reason in
+  `authored/applied-maths-steps-residue.json`.
   Business rubric cards carry the responses the scheme prints for their part
   as `rubric.expected` rows (`bus_expected.py`): the lifter reads the card's
   cited "Possible Responses" / "Support Notes" pages, cuts the block at the
@@ -200,6 +224,30 @@ subject-specific generators.
   table under "Tréith 1 = 13 mharc") is cut into rows at load by
   `cards/irish/tariffs.ts`, which also reads the last reading question's
   composite tariff where `answers.ts` cannot.
+  Where that text reading leaves a Business card for review, stage B reads the
+  cited pages' word positions with PyMuPDF (`bus_expected.py`, the same run):
+  a table's rows become items line by line, a tick names the column header
+  above it, "True"/"False" in the right-hand column names its statement, a
+  numbers row over a letters row pairs them; every word is one the page
+  prints (the gate checks word by word, since the text layer holds a table's
+  words in another order). What neither reading can lift — a tick table whose
+  ticks are drawn, not typed; a marker the page does not print — stays in
+  `authored/business-expected-review.json` with both readings' reasons.
+  Accounting tasks carry the scheme's priced lines as rows (`acc_rows.py`,
+  `cards/accounting/rows.json`): the scheme PDF is read as word lines with
+  PyMuPDF and every bracketed mark becomes a row — the figure before it and
+  the words that label the line, a mark on its own line taking the figure
+  above or below it at the same x, a theory part the unpriced lines after
+  its mark, a boxed section no mark follows a block of points; section
+  totals (drawn squares, the title's bracketed total, a lone sum of two or
+  more parts) are never rows. A task's rows are its heading span when they
+  add up to its total, else the question's rows shared out to its tasks in
+  paper order; a task they cannot be made to fit, or a grid the geometry
+  cannot label, keeps its crop and stepper and is listed with its reason in
+  `authored/accounting-rows-residue.json`. The 2022 schemes embed subset
+  fonts with no ToUnicode map; `acc_glyphs_2022.py` derives
+  `glyphmap-accounting-2022.json` from word evidence (never hand-typed) and
+  `acc_rows.py` reads those pages glyph by glyph through it.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.
