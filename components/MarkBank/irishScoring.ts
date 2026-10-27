@@ -20,8 +20,17 @@ export const irishRowClaimed = (criterionId: string, part: IrishAnswerPart, rowI
 /** How many answers a sub-question asks for: its tariff over its full answer, or its ladder's length. */
 export const irishPartCount = (part: IrishAnswerPart): number => {
   if (part.ladder) return part.ladder.length;
+  // Rows priced as a tariff ("Tréith 1 = 13 mharc", "Dhá phointe eolais = 4 + 4") are all claimable at once.
+  if (part.rows.some(row => row.steps)) return part.rows.length;
   const max = Math.max(0, ...part.rows.map(row => row.marks));
   return max > 0 ? Math.max(1, Math.floor(part.tariff / max)) : 1;
+};
+
+/** What a claimed row is worth: its placed step where it has steps, else its marks. */
+export const irishRowValue = (criterionId: string, part: IrishAnswerPart, row: IrishAnswerPart['rows'][number], scores: IrishScores): number => {
+  const stored = scores[irishRowScoreId(criterionId, part.id, row.id)] ?? 0;
+  if (row.steps) return row.steps.includes(stored) ? stored : 0;
+  return stored > 0 ? row.marks : 0;
 };
 
 /** Marks for one sub-question: the ladder by rows ticked, or the highest
@@ -32,7 +41,7 @@ export const irishPartMarks = (criterionId: string, part: IrishAnswerPart, score
     const ticked = Math.min(claimed.length, part.ladder.length);
     return ticked > 0 ? part.ladder[ticked - 1] : 0;
   }
-  const values = claimed.map(row => row.marks).sort((a, b) => b - a).slice(0, irishPartCount(part));
+  const values = claimed.map(row => irishRowValue(criterionId, part, row, scores)).sort((a, b) => b - a).slice(0, irishPartCount(part));
   return Math.min(part.tariff, values.reduce((sum, value) => sum + value, 0));
 };
 
