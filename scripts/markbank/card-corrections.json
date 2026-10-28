@@ -467,6 +467,11 @@
    "reason": "Never shipped: the figureless twin of phys-2025-ol-q10viii-fig, which carries the reviewed task and its figure.",
    "drop": true,
    "replacementId": "phys-2025-ol-q10viii-fig"
+  },
+  "phys-2024-hl-q6-h": {
+   "reason": "Never shipped: the figureless twin of phys-2024-hl-q6h-fig, which carries the reviewed task and the building photograph.",
+   "drop": true,
+   "replacementId": "phys-2024-hl-q6h-fig"
   }
  },
  "business": {

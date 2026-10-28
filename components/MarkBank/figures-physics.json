@@ -1,4 +1,411 @@
 {
+ "physics-2024-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q1-table.png",
+  "md5": "396c0d81f88a25929ea6e72c1e6cd14d",
+  "alt": "Table of the recorded data: F (N) 0.2, 0.3, 0.4, 0.5, 0.6, 0.7; a (m s⁻²) 0.280, 0.422, 0.554, 0.702, 0.837, 0.982.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(iii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   238,
+   545,
+   310
+  ]
+ },
+ "physics-2024-hl-q11-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q11-circuit.png",
+  "md5": "76893482043819263b33e986f969a8d1",
+  "alt": "Circuit diagram: a 30 V supply of cells across the top, and along the bottom a capacitor labelled 85 µF in series with a resistor labelled 25 kΩ.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q11(vi)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   150,
+   430,
+   445,
+   648
+  ]
+ },
+ "physics-2024-hl-q12a-vii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-vii-question.png",
+  "md5": "f2b88876c913c5186b11fcc6ecf5fc57",
+  "alt": "The printed question: (vii) Write an equation to represent the decay of a neutron (n, with mass number 1 above and atomic number 0 below) by beta-decay.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(vii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   52,
+   345,
+   400,
+   381
+  ]
+ },
+ "physics-2024-hl-q12a-vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-vii-scheme.png",
+  "md5": "a64961563062d22e302e5ccfeae3306e",
+  "alt": "The marking scheme's equation: a neutron (1 above, 0 below the n) gives a proton (1 above, 1 below the p) plus an electron (0 above, -1 below the e) plus an antineutrino (a nu with a bar over it).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(vii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   82,
+   420,
+   172,
+   448
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q12a-viii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-viii-question.png",
+  "md5": "f910685c162c511a4ef3fee89fa6683e",
+  "alt": "The printed questions: (vii) Write an equation to represent the decay of a neutron (n, with mass number 1 above and atomic number 0 below) by beta-decay. (viii) Calculate the energy released during this beta-decay.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(viii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   52,
+   345,
+   440,
+   401
+  ]
+ },
+ "physics-2024-hl-q12a-xi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-xi-scheme.png",
+  "md5": "a3c2a82c12ae55bd265cd50cc5d48610",
+  "alt": "The marking scheme's answer: an electron (0 above, -1 below the e) plus a positron (0 above, 1 below the e) gives 2γ, and beside it, after a double solidus, 2mc² = 2hf.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(xi)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   82,
+   720.5,
+   300,
+   742
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q14a-slide": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q14a-slide.png",
+  "md5": "c329205f2d1f64cb6e89ad0b55daaf5e",
+  "alt": "Diagram of the slide: a horizontal platform at the top left, a straight slide running down to the right at 32° below the dashed horizontal from the platform, and a vertical line from the end of the slide down to the water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q14(a)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   360,
+   278,
+   545,
+   392
+  ]
+ },
+ "physics-2024-hl-q14bi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q14bi-scheme.png",
+  "md5": "834e5a3a3863a05eef6f33d0300df489",
+  "alt": "The marking scheme's equation: radium (224 above, 88 below the Ra) gives helium (4 above, 2 below the He) plus radon (220 above, 86 below the Rn).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q14(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   82,
+   465,
+   188,
+   490
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q14d-grating": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q14d-grating.png",
+  "md5": "c363741e4d607167e29f7cb11cbcfd51",
+  "alt": "Diagram: a ray of light strikes a diffraction grating; two lines spread from the grating to a white screen, and the angle between them is labelled angle of separation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q14(d)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   338,
+   382,
+   545,
+   556
+  ]
+ },
+ "physics-2024-hl-q1vi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q1vi-scheme.png",
+  "md5": "35955538a50608bbff0aa64326193b6b",
+  "alt": "The marking scheme's sketch: axes labelled a (m s⁻²) and F (N), with a straight line rising from a point on the F axis to the right of the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(vi)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   576,
+   300,
+   650
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q2-table.png",
+  "md5": "98d9c18c016d7eae89329988c665393e",
+  "alt": "Table of the recorded data: u (cm) 20.0, 30.0, 40.0, 50.0; v (cm) 78.7, 35.2, 26.9, 23.4.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q2(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   130,
+   545,
+   190
+  ]
+ },
+ "physics-2024-hl-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q3-table.png",
+  "md5": "16c673dcd920d895ff959f4cb8329b82",
+  "alt": "Table of the recorded data: mass of copper calorimeter 83.2 g; mass of calorimeter + water before adding ice 132.9 g, after adding ice 138.5 g; temperature of water before adding ice 26.8 °C, after adding ice 17.4 °C.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q3(iii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   402,
+   545,
+   528
+  ]
+ },
+ "physics-2024-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q4-table.png",
+  "md5": "c4742e77994309323e6019f62eb83b22",
+  "alt": "Table of the recorded data: f (Hz) 256, 320, 341, 426.5, 480, 512; T (N) 29, 44, 51, 79, 100, 115.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(v)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   134,
+   545,
+   194
+  ]
+ },
+ "physics-2024-hl-q4iv-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q4iv-scheme.png",
+  "md5": "ab3ad0d53d9460d51e99fbb0f58916ec",
+  "alt": "The marking scheme's line \"values for √T or f²\" [3] over its table of values: f² 65536, 102400, 116281, 181902, 230400, 262144; √T 5.39, 6.63, 7.14, 8.89, 10.00, 10.72.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(iv)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   82,
+   452,
+   545,
+   512
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q4vi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q4vi-scheme.png",
+  "md5": "90b13f766a0eaf29086b50329054d690",
+  "alt": "The marking scheme's line: slope formula, f = 1/2l times the square root of T over μ, the fraction T/μ under the root sign.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(vi)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   82,
+   620,
+   210,
+   650
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q5-table.png",
+  "md5": "422535c2859b2688486ac37ebd1d092f",
+  "alt": "Table of the recorded data: V (V) 1.0, 2.0, 3.0, 4.0, 5.0, 6.0; I (A) 0.14, 0.26, 0.43, 0.58, 0.70, 0.84.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q5(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   449,
+   545,
+   510
+  ]
+ },
+ "physics-2024-hl-q6a-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q6a-diagram.png",
+  "md5": "0885da37f2e57a1241f68a88151a6502",
+  "alt": "Diagram of a metre stick hung at its 50 cm mark from a horizontal support: a 0.6 N weight hangs at the 10 cm mark, a 1.3 N weight at the 35 cm mark, and an apple at the 90 cm mark.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q6(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: State Examinations Commission; sarthaks.com (images on page 5)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   262,
+   185,
+   545,
+   275
+  ]
+ },
+ "physics-2024-hl-q6c-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q6c-scheme.png",
+  "md5": "10d206a17ae78c8b37dfd53b6b68e3c3",
+  "alt": "The marking scheme's formula: T = 2π times the square root of l over g, the fraction l/g under the root sign.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q6(c)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   82,
+   290,
+   140,
+   322
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q6h-building": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q6h-building.png",
+  "md5": "0f8ff87e077eabf0d14174f980cf3844",
+  "alt": "Drawing of a tall rectangular building with rows of windows; a rod with a pointed tip stands on its roof and a conductor runs from it down the outside of the building to the ground.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q6(h)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: State Examinations Commission; sarthaks.com (images on page 5)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   474,
+   395,
+   543,
+   586
+  ]
+ },
+ "physics-2024-hl-q8-loudspeaker": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q8-loudspeaker.png",
+  "md5": "e01f6963d126589a27f382f5fe41f287",
+  "alt": "Cutaway diagram of a moving-coil loudspeaker: a block labelled permanent magnet, a coil wound around its centre with two leads and arrows out to the left, and a flared cone labelled cone, with curved lines in front of it labelled cone vibrations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q8(v)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: explainthatstuff.com",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   372,
+   266,
+   545,
+   450
+  ]
+ },
+ "physics-2024-hl-q9biv-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q9biv-scheme.png",
+  "md5": "3ad04911a74dd7c70ea87c002b83c5fa",
+  "alt": "The marking scheme's formula: Po × 100 over Pi, set as a fraction, or P = W/t.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q9(b)(iv)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   82,
+   572,
+   215,
+   600
+  ],
+  "solution": true
+ },
  "physics-2025-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2025-hl-q1-table.png",
   "md5": "8947c1e27358c74a4517b8b50177fc9b",

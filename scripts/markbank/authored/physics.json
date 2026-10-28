@@ -15157,14 +15157,12 @@
  },
  {
   "id": "phys-2024-hl-q1-iv",
-  "topicId": "phys-u2",
-  "conceptId": "graph-verifies-force-proportional-acceleration",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "graph-verifies-force-proportional-acceleration",
   "section": "A",
   "questionRef": "2024 HL Q1(iv)",
-  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration, and then plotted a suitable graph.",
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded.",
   "questionText": "Explain how your graph verifies the relationship between F and a.",
   "tariffModel": {
    "kind": "fixed"
@@ -15172,24 +15170,25 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "straight line through the origin shows F is proportional to a",
     "marks": 3
    }
   ],
-  "notes": "From Q1 I skipped (i), (iii) and (vi) as drawing/sketching/graph-plotting parts. I skipped (ii) because reaching its 9 marks requires the row 'use relevant formula', a content-free criterion. I skipped (v) because its only non-answer row is 'slope formula' (content-free) and the result depends on the candidate's own graph."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q1-table"
  },
  {
   "id": "phys-2024-hl-q2-i",
-  "topicId": "phys-u2",
-  "conceptId": "approximate-focal-length-distant-object",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "approximate-focal-length-distant-object",
   "section": "A",
   "questionRef": "2024 HL Q2(i)",
-  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u.",
+  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length.",
   "questionText": "Describe how the student found an approximate value for the focal length.",
   "tariffModel": {
    "kind": "fixed"
@@ -15197,30 +15196,30 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "focus the image of a distant object on a screen",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "measure the distance from the screen to the lens",
     "marks": 3
    }
   ],
-  "notes": "Q2(ii) skipped (labelled diagram). Q2(iv) skipped: its four // routes are made up of method criteria only ('1st calculation of f', 'labelled axes', 'points and line of best fit') with no stated value of f, so it fails the content-free-criterion and calculation rules."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q2-iii",
-  "topicId": "phys-u2",
-  "conceptId": "measuring-image-distance-lens",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "measuring-image-distance-lens",
   "section": "A",
   "questionRef": "2024 HL Q2(iii)",
-  "stem": "In an experiment to measure the focal length f of a converging lens, a student set up the apparatus and recorded the image distance v for different values of the object distance u.",
+  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u. The following data were recorded.",
   "questionText": "Describe, with reference to your diagram, how the values for v were determined and measured.",
   "tariffModel": {
    "kind": "fixed"
@@ -15228,41 +15227,37 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "move object",
-    "accepts": [
-     "lens",
-     "screen"
-    ],
-    "contextNote": "The scheme reads 'move object/lens/screen' — moving any one of the object, the lens or the screen is equally acceptable.",
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "move object/lens/screen",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "until a sharp image is formed",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "measure v with a meter stick",
     "marks": 3
    }
   ],
-  "notes": "The scheme's phrasing keeps 'with reference to your diagram'; the marking points are all self-contained and do not require the diagram."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q2-table"
  },
  {
   "id": "phys-2024-hl-q2-v",
-  "topicId": "phys-u2",
-  "conceptId": "concave-mirror-apparatus-reflection",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "concave-mirror-apparatus-reflection",
   "section": "A",
   "questionRef": "2024 HL Q2(v)",
-  "stem": "A student completed an experiment to measure the focal length f of a converging lens, recording the image distance v for different values of the object distance u.",
+  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length.",
   "questionText": "The student also completed an experiment to measure the focal length of a concave mirror. Why does the arrangement of the apparatus differ in this experiment?",
   "tariffModel": {
    "kind": "fixed"
@@ -15270,112 +15265,124 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "reflection of light",
-    "exactTermRequired": false,
-    "contextNote": "Key words — they must appear in the correct context (a mirror reflects rather than transmits the light) to merit the marks.",
     "marks": 4
    }
   ],
-  "notes": "Single 4-mark key-word answer; the scheme gives no further detail."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q3-ii",
-  "topicId": "phys-u2",
-  "conceptId": "preparing-ice-latent-heat-experiment",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
-  "section": "A",
-  "questionRef": "2024 HL Q3(ii)",
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice.",
-  "questionText": "(a) State two steps the student took to prepare the ice taken from the freezer. (b) Describe the importance of each step.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "crush the ice",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "dry the ice",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "crush the ice — ensure the ice was at 0 °C",
-    "accepts": [
-     "it would melt faster"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-4",
-    "kind": "alt",
-    "verbatim": "dry the ice — no additional water added",
-    "accepts": [
-     "only ice added"
-    ],
-    "marks": 3
-   }
-  ],
-  "notes": "Parts (a) and (b) are carded together because (b) ('the importance of each step') is not answerable without the steps from (a). Q3(i) skipped (labelled diagram)."
- },
- {
-  "id": "phys-2024-hl-q3-iii",
   "topicId": "phys-2-1",
-  "conceptId": "energy-lost-by-calorimeter",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
+  "conceptId": "preparing-ice-latent-heat-experiment",
   "section": "A",
-  "questionRef": "2024 HL Q3(iii)",
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following data were recorded: mass of copper calorimeter 83.2 g; mass of calorimeter + water before adding ice 132.9 g; mass of calorimeter + water after adding ice 138.5 g; temperature of water before adding ice 26.8 °C; temperature of water after adding ice 17.4 °C. (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹; specific heat capacity of copper = 390 J kg⁻¹ K⁻¹)",
-  "questionText": "Use the recorded data to calculate the energy lost by the calorimeter after the ice was added.",
+  "questionRef": "2024 HL Q3(ii)(a)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice.",
+  "questionText": "Ice for the experiment was taken from the freezer. The student prepared the ice to ensure that only ice at 0 °C was added to the warm water. (a) State two steps the student took to prepare the ice taken from the freezer.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "crush the ice",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "dry the ice",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices (a) and (b) apart, each line its own [3]: one card each. The old card bundled them. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q3-ii-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "why-prepare-the-ice",
+  "section": "A",
+  "questionRef": "2024 HL Q3(ii)(b)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. Ice for the experiment was taken from the freezer. The student prepared the ice to ensure that only ice at 0 °C was added to the warm water. (a) State two steps the student took to prepare the ice taken from the freezer.",
+  "questionText": "(b) Describe the importance of each step.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "crush the ice: ensure the ice was at 0 °C / it would melt faster",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "dry the ice: no additional water added / only ice added",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "energy-lost-by-calorimeter",
+  "section": "A",
+  "questionRef": "2024 HL Q3(iii)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following data were recorded. specific heat capacity of water = 4180 J kg⁻¹ K⁻¹; specific heat capacity of copper = 390 J kg⁻¹ K⁻¹",
+  "questionText": "Use the data in the table to calculate the energy lost by the calorimeter after the ice was added.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
     "kind": "point",
     "verbatim": "mc∆θ",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "∆θcal = 9.4 (°C)",
     "marks": 1
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "305 J",
     "marks": 2
    }
   ],
-  "notes": "Carded because the scheme awards discrete checkable points: the formula, an intermediate stated value, and the final answer with its unit. The data table is reproduced in the scheme so it is carried in the stem."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q3-table"
  },
  {
   "id": "phys-2024-hl-q3-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "specific-latent-heat-fusion-calculation",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2024 HL Q3(iv)",
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following data were recorded: mass of copper calorimeter 83.2 g; mass of calorimeter + water before adding ice 132.9 g; mass of calorimeter + water after adding ice 138.5 g; temperature of water before adding ice 26.8 °C; temperature of water after adding ice 17.4 °C. (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹; specific heat capacity of copper = 390 J kg⁻¹ K⁻¹). The energy lost by the calorimeter after the ice was added was found to be 305 J.",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following data were recorded. (iii) Use the data in the table to calculate the energy lost by the calorimeter after the ice was added. specific heat capacity of water = 4180 J kg⁻¹ K⁻¹; specific heat capacity of copper = 390 J kg⁻¹ K⁻¹",
   "questionText": "Hence, or otherwise, calculate the specific latent heat of fusion of ice.",
   "tariffModel": {
    "kind": "fixed"
@@ -15383,44 +15390,55 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "allOf",
-    "verbatim": "mwater = 49.7 (g); mice = 5.6 (g); ∆θice = 17.4 (°C)",
-    "contextNote": "One mark for each of the three values.",
-    "marks": 3
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mwater = 49.7 (g)",
+    "marks": 1
    },
    {
-    "id": "r-2",
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mice = 5.6 (g)",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "∆θice = 17.4 (°C)",
+    "marks": 1
+   },
+   {
+    "id": "r4",
     "kind": "point",
     "verbatim": "ml",
-    "contextNote": "The latent-heat term (mass × specific latent heat) must appear.",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r5",
     "kind": "point",
     "verbatim": "(ml)ice + (mc∆θ)melted ice = (mc∆θ)cal + (mc∆θ)water",
     "marks": 2
    },
    {
-    "id": "r-4",
+    "id": "r6",
     "kind": "point",
     "verbatim": "l = 3.3 × 10⁵ J kg⁻¹",
     "marks": 2
    }
   ],
-  "notes": "The scheme's [1 + 1 + 1] line of three extracted values is kept as one allOf row worth 3 so the card stays within five rows. Superscripts lost by the PDF extractor have been restored (the file renders 10⁵ as '105')."
+  "notes": "[1 + 1 + 1] against the three quantities printed on one line: 1 each, in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q3-table"
  },
  {
   "id": "phys-2024-hl-q3-v",
-  "topicId": "phys-u2",
-  "conceptId": "thermometer-properties-accuracy",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "thermometer-properties-accuracy",
   "section": "A",
   "questionRef": "2024 HL Q3(v)",
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice, using a thermometer to measure the temperature of the water before and after adding the ice.",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice.",
   "questionText": "State two properties of a thermometer that would help improve the accuracy of the experiment.",
   "tariffModel": {
    "kind": "fixed"
@@ -15428,10 +15446,10 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "low heat capacity",
-    "openList": true,
+    "verbatim": "low heat capacity / reacts quickly / measures to at least 2 decimal places",
+    "marks": null,
     "group": {
      "claimMax": 2,
      "perOption": 2,
@@ -15440,19 +15458,18 @@
       "reacts quickly",
       "measures to at least 2 decimal places"
      ]
-    },
-    "marks": null
+    }
    }
   ],
-  "notes": "Scheme prints three options for a 'state two' at [2 + 2]; openList set because the preamble states the descriptions are not exhaustive."
+  "notes": "Two of three printed properties at [2 + 2]: a menu. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q4-ii",
-  "topicId": "phys-u2",
-  "conceptId": "detecting-resonance-stretched-string",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "detecting-resonance-stretched-string",
   "section": "A",
   "questionRef": "2024 HL Q4(ii)",
   "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension.",
@@ -15463,66 +15480,74 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "paper rider fell off",
-    "accepts": [
-     "maximum displacement of the string observed"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "paper rider fell off / maximum displacement of the string observed",
     "marks": 3
    }
   ],
-  "notes": "Q4(i) skipped (labelled diagram). Q4(iv) skipped (graph plotting). Q4(vi) skipped: the only non-answer marking point is 'slope formula', the printed formula is corrupted in the extraction, and the result depends on the candidate's own graph."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q4-iii",
-  "topicId": "phys-u2",
-  "conceptId": "measuring-frequency-and-tension",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "measuring-frequency-and-tension",
   "section": "A",
-  "questionRef": "2024 HL Q4(iii)",
-  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. The length of the string was kept constant, and the student varied the tension.",
-  "questionText": "Describe how the student determined (a) the frequency f, (b) the tension T.",
+  "questionRef": "2024 HL Q4(iii)(a)",
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension.",
+  "questionText": "Describe how the student determined (a) the frequency f,",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 4,
+  "totalMarks": 2,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "f — read from tuning fork",
-    "accepts": [
-     "signal generator"
-    ],
-    "contextNote": "The scheme reads 'read from tuning fork/signal generator' — either source is equally acceptable.",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "T — read from newtonmeter",
-    "accepts": [
-     "weights"
-    ],
-    "contextNote": "The scheme reads 'read from newtonmeter/weights' — either is equally acceptable.",
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "read from tuning fork/signal generator",
     "marks": 2
    }
   ],
-  "notes": "Sub-parts (a) and (b) carded together; each carries its own printed 2 marks."
+  "notes": "The scheme prices (a) and (b) apart, each its own [2]: one card each. The old card bundled them. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q4-iii-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "determining-tension",
+  "section": "A",
+  "questionRef": "2024 HL Q4(iii)(b)",
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension.",
+  "questionText": "Describe how the student determined (b) the tension T.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "read from newtonmeter/weights",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q4-v",
-  "topicId": "phys-2-5",
-  "conceptId": "frequency-proportional-root-tension",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "frequency-proportional-root-tension",
   "section": "A",
   "questionRef": "2024 HL Q4(v)",
-  "stem": "A student investigated how the fundamental frequency f of a stretched string of fixed length varied with its tension T. The following data were recorded.",
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension. The following data were recorded.",
   "questionText": "State the relationship between f and T.",
   "tariffModel": {
    "kind": "fixed"
@@ -15530,25 +15555,25 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "frequency is proportional to square root of tension",
     "marks": 3
    }
   ],
-  "notes": "The question asks for the physical relationship rather than the method, so it is filed under sound rather than phys-u2.",
-  "figureKey": "physics-2024-HL-paper-p04-i0"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q4-table"
  },
  {
   "id": "phys-2024-hl-q5-iv",
-  "topicId": "phys-u2",
-  "conceptId": "measuring-length-and-diameter-of-wire",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "measuring-length-and-diameter-of-wire",
   "section": "A",
   "questionRef": "2024 HL Q5(iv)",
-  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire, the student used their results to calculate the resistivity of the copper wire. The following additional data were recorded: length of wire = 65 cm; diameter of wire = 0.32 mm.",
+  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded. The student used their results to calculate the resistivity of the copper wire. The following additional data were recorded: length of wire = 65 cm diameter of wire = 0.32 mm",
   "questionText": "Describe how the student determined both the length and the diameter of the copper wire.",
   "tariffModel": {
    "kind": "fixed"
@@ -15556,33 +15581,30 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "length — meter stick",
+    "verbatim": "length: meter stick",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "diameter — micrometer",
-    "accepts": [
-     "digital callipers"
-    ],
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "diameter: micrometer/digital callipers",
     "marks": 3
    }
   ],
-  "notes": "Q5(i) skipped (circuit diagram) and Q5(ii) skipped (graph plotting). Q5(iii) skipped: its only method row is 'slope formula', a content-free criterion, and R comes from the candidate's own graph."
+  "notes": "[3 + 3] against the two lines: 3 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q5-v",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "resistivity-calculation",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2024 HL Q5(v)",
-  "stem": "In an experiment on a length of copper wire the resistance R was found from the graph to be 7.03 Ω. The following additional data were recorded: length of wire = 65 cm; diameter of wire = 0.32 mm.",
+  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded. The student used their results to calculate the resistivity of the copper wire. The following additional data were recorded: length of wire = 65 cm diameter of wire = 0.32 mm",
   "questionText": "Calculate the resistivity of the copper wire.",
   "tariffModel": {
    "kind": "fixed"
@@ -15590,90 +15612,134 @@
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "ρ = RA/l",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "A = πr²",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "ρ = 8.7 × 10⁻⁷ Ω m",
     "marks": 3
    }
   ],
-  "notes": "Two named formulae plus a final answer with unit, so it passes the calculation test. The scheme's stacked fraction has been written inline and the lost superscript restored."
+  "notes": "\"ρ = RA/l, A = πr² [3 + 2]\": the two formulas 3 and 2, in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q5-table"
  },
  {
-  "id": "phys-2024-hl-q6-b",
-  "topicId": "phys-1-5",
-  "conceptId": "geostationary-orbit",
-  "level": "higher",
-  "year": 2024,
+  "id": "phys-2024-hl-q6-a",
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "mass-of-apple-from-moments",
   "section": "B",
-  "questionRef": "2024 HL Q6(b)",
-  "questionText": "Explain what is meant by a geostationary orbit.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "remains in the same position above earth",
-    "accepts": [
-     "has a period of 24 hours"
-    ],
-    "marks": 4
-   }
-  ],
-  "notes": "The full part also asks the candidate to 'state a use of a satellite in geostationary orbit' for 3 marks, but the scheme gives only 'any use', a content-free criterion, so that clause is carved off and the card covers the 4-mark explanation only."
- },
- {
-  "id": "phys-2024-hl-q6-c",
-  "topicId": "phys-1-6",
-  "conceptId": "simple-pendulum-length-from-period",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "B",
-  "questionRef": "2024 HL Q6(c)",
-  "questionText": "A simple pendulum has a period of 1.24 s. Calculate the length of the pendulum.",
+  "questionRef": "2024 HL Q6(a)",
+  "questionText": "A meter stick is suspended from its centre of gravity as shown in the diagram. The meter stick is in equilibrium. Calculate the mass of the apple.\nacceleration due to gravity = 9.8 m s⁻²",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "T = 2π√(l/g)",
+    "verbatim": "M = Fd",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "W = mg",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "m = 0.11 kg",
+    "marks": 2
+   }
+  ],
+  "notes": "The bank had left this part open: it is carded with the printed diagram, whose distances and weights the ask works from. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q6a-diagram"
+ },
+ {
+  "id": "phys-2024-hl-q6-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "geostationary-orbit",
+  "section": "B",
+  "questionRef": "2024 HL Q6(b)",
+  "questionText": "Explain what is meant by a geostationary orbit and state a use of a satellite in geostationary orbit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "remains in the same position above earth / has a period of 24 hours",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "any use",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q6-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-3",
+  "conceptId": "simple-pendulum-length-from-period",
+  "section": "B",
+  "questionRef": "2024 HL Q6(c)",
+  "questionText": "A simple pendulum has a period of 1.24 s. Calculate the length of the pendulum.\nacceleration due to gravity = 9.8 m s⁻²",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T = 2π√ l/g",
+    "marks": 4,
+    "contextNote": "The root covers l/g (shown in the figure, cropped from the scheme)."
+   },
+   {
+    "id": "r2",
     "kind": "point",
     "verbatim": "l = 0.38 m",
     "marks": 3
    }
   ],
-  "notes": "Named formula plus final answer with unit. The extractor mangled the radical sign; the formula has been written in standard notation."
+  "notes": "The scheme sets T = 2π√(l/g) with the root sign as a Sinhala letter in the text layer; the reader maps it to the root sign but its reach is lost, so the formula is also shown as a crop. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q6c-scheme"
  },
  {
   "id": "phys-2024-hl-q6-d",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "conduction-versus-convection",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q6(d)",
   "questionText": "Conduction and convection are methods of heat transfer. Distinguish between conduction and convection.",
@@ -15683,27 +15749,34 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "conduction is transfer of heat (by vibration) from particle to particle",
-    "marks": 4
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "convection is transfer of heat by means of circulating currents",
-    "marks": 3
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "conduction is transfer of heat (by vibration) from particle to particle / convection is transfer of heat by means of circulating currents",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "conduction is transfer of heat (by vibration) from particle to particle",
+      "convection is transfer of heat by means of circulating currents"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "The scheme prints these items under one sum, [4 + 3], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "The scheme's [4 + 3] maps in printed order to the conduction line then the convection line."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q6-e",
-  "topicId": "phys-u2",
-  "conceptId": "sound-interference-demonstration",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "sound-interference-demonstration",
   "section": "B",
   "questionRef": "2024 HL Q6(e)",
   "questionText": "Describe an experiment to demonstrate that sound is a wave.",
@@ -15713,33 +15786,33 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "two coherent sound sources",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "movement relative to the sources",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "interference observed",
     "marks": 2
    }
   ],
-  "notes": "Unlike the generic 'apparatus / method / observation' schemes elsewhere on this paper, every marking point here carries real content, so the part is cardable. The scheme prints no 'apparatus/method/observation' labels for this part, so none are added."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q6-f",
+  "subjectId": "physics",
   "topicId": "phys-2-6",
   "conceptId": "stationary-wave-definition",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q6(f)",
   "questionText": "Explain what is meant by a stationary wave.",
@@ -15749,30 +15822,27 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "(superposition of) two waves of the same frequency and amplitude",
     "marks": 4
    },
    {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "maximum amplitude at each point is constant",
-    "accepts": [
-     "no net transfer of energy"
-    ],
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "maximum amplitude at each point is constant / no net transfer of energy",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "[4 + 3] against the two lines of one definition: in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q6-g",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "critical-angle-definition",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q6(g)",
   "questionText": "Define critical angle.",
@@ -15782,21 +15852,21 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "angle of incidence",
-    "contextNote": "Key words only — they score only inside a correct statement of the definition.",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "angle of refraction of 90°",
-    "contextNote": "Key words only — they score only inside a correct statement of the definition.",
     "marks": 3
    }
   ],
-  "notes": "The scheme gives key words rather than a full sentence, as the preamble's first convention allows."
+  "notes": "[4 + 3] against the two lines of one definition: in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q6-h",
@@ -15867,92 +15937,84 @@
  },
  {
   "id": "phys-2024-hl-q6-j",
+  "subjectId": "physics",
   "topicId": "phys-3-1",
   "conceptId": "coulomb-force-between-protons",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q6(j)",
-  "questionText": "Calculate the electrostatic force between two protons that are 5.6 × 10⁻¹⁵ m apart in a vacuum.",
+  "questionText": "Calculate the electrostatic force between two protons that are 5.6 x 10⁻¹⁵ m apart in a vacuum.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "F = (1/4πε)(q₁q₂/d²)",
+    "verbatim": "F = 1/(4πε) q₁q₂/d²",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "7.36 N",
     "marks": 3
    }
   ],
-  "notes": "The scheme's stacked fraction has been written inline; the symbol set (4πε, not 4πε₀) is the scheme's own."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q6-k",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "photoelectric-equation-symbols",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q6(k)",
-  "questionText": "Einstein's photoelectric law is explained by the equation hf = ɸ + ½mv². Explain what each of the symbols in the equation stands for.",
+  "questionText": "Einstein’s photoelectric law is explained by the equation hf = φ + ½mv². Explain what each of the symbols in the equation stands for.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "h = Planck constant",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "f = frequency",
-    "marks": 2
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "ɸ = work function",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "m = mass",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "v = velocity",
-    "marks": 1
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "h = Planck constant / f = frequency / φ = work function / m = mass / v = velocity",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "h = Planck constant",
+      "f = frequency",
+      "φ = work function",
+      "m = mass",
+      "v = velocity"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      1,
+      1,
+      1
+     ]
+    },
+    "contextNote": "The scheme prints these items under one sum, [2 + 2 + 1 + 1 + 1], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "The scheme's [2 + 2 + 1 + 1 + 1] maps in printed order to h, f, ɸ, m, v. Exactly five rows, at the cap."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12-a-viii",
+  "subjectId": "physics",
   "topicId": "phys-4-5",
   "conceptId": "energy-released-in-beta-decay",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q12(a)(viii)",
-  "stem": "A neutron decays by beta-decay into a proton, an electron and an antineutrino.",
   "questionText": "Calculate the energy released during this beta-decay.",
   "tariffModel": {
    "kind": "fixed"
@@ -15960,33 +16022,34 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "E = mc²",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "change in mass = 1.395 × 10⁻³⁰ (kg)",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "E = 1.25 × 10⁻¹³ J",
     "marks": 3
    }
   ],
-  "notes": "Particle masses come from the Formulae and Tables booklet."
+  "notes": "\"this beta-decay\" is the neutron decay of (vii), whose nuclide the text layer cannot read: the ask is shown as printed, with (vii) above it. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "questionFigureKey": "physics-2024-hl-q12a-viii-question"
  },
  {
   "id": "phys-2024-hl-q12-a-ix",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "baryons-vs-leptons",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q12(a)(ix)",
   "stem": "Neutrons involved in beta-decay are classified as baryons, while electrons and positrons are classified as leptons.",
@@ -15997,27 +16060,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "baryons are composed of smaller particles but leptons are fundamental particles",
-    "accepts": [
-     "baryons are subject to the strong force but leptons are not subject to the strong force"
-    ],
-    "marks": 3,
-    "openList": true
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "baryons are composed of smaller particles but leptons are fundamental particles / baryons are subject to the strong force but leptons are not subject to the strong force",
+    "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12-a-x",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "quark-composition-of-neutron",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q12(a)(x)",
+  "stem": "Neutrons involved in beta-decay are classified as baryons, while electrons and positrons are classified as leptons.",
   "questionText": "Neutrons are neutral baryons. Show how the quark model explains this.",
   "tariffModel": {
    "kind": "fixed"
@@ -16025,19 +16085,21 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "neutron = udd",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "2/3 – 1/3 – 1/3 = 0",
     "marks": 3
    }
   ],
-  "notes": "Q12(a)(xi) (pair annihilation equation) skipped: the equation is mangled by the extractor and cannot be quoted verbatim."
+  "notes": "[4 + 3] against the two lines: in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12-b-i",
@@ -16109,232 +16171,312 @@
  },
  {
   "id": "phys-2024-hl-q13-i-a",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "primary-colours-of-light",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q13(i)(a)",
-  "stem": "Blue is a primary colour of light.",
-  "questionText": "Name the two other primary colours of light.",
+  "stem": "Read the following passage and answer the accompanying questions. John Tyndall ranks as one of Ireland’s most successful scientists and educators. He reached the pinnacle of 19th century science and counted amongst his friends and collaborators many of the best-known scientists of that century. Tyndall’s scientific interests spanned heat, sound, light and environmental phenomena. Amongst his many achievements, perhaps he is best known for the explanation of why the sky is blue – the scattering of light by small particles suspended in the atmosphere. Blue light is scattered more than other colours because it travels at shorter wavelengths. This colour is known as Tyndall Blue. His major scientific interest was the study of the interaction of light with matter, especially gases. He studied the absorption of infrared radiation by gases found in the atmosphere. He made the first studies of atmospheric pollution in London. adapted from: ‘The Ascent of John Tyndall: Victorian Scientist, Mountaineer, and Public Intellectual’ (Roland Jackson) Oxford University Press 2018",
+  "questionText": "Blue is a primary colour of light. (a) Name the two other primary colours of light.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "red",
     "marks": 2
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "green",
     "marks": 2
    }
   ],
-  "notes": ""
+  "notes": "[2 + 2] against the two colours printed on one line: 2 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q13-i-b",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "secondary-colour-red-plus-green",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q13(i)(b)",
-  "stem": "Red and green are two primary colours of light.",
-  "questionText": "Name the secondary colour produced by these two primary colours.",
+  "stem": "Blue is a primary colour of light. (a) Name the two other primary colours of light.",
+  "questionText": "(b) Name the secondary colour produced by these two primary colours.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "yellow",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q13-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "dispersion-of-light",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q13(ii)",
-  "questionText": "What is meant by dispersion of light?",
+  "questionText": "A prism can be used to show dispersion of light. What is meant by dispersion of light?",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "splitting of light",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "into its different colours",
     "marks": 3
    }
   ],
-  "notes": "Q13(iii) skipped: the scheme awards only 'two items', a content-free criterion."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q13-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "causes-of-dispersion",
+  "section": "B",
+  "questionRef": "2024 HL Q13(iii)",
+  "stem": "A prism can be used to show dispersion of light.",
+  "questionText": "Name two other items that can cause dispersion of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "two items",
+    "marks": 7,
+    "contextNote": "The scheme prints no answer here, only what earns the marks. It prices the two items [4 + 3]."
+   }
+  ],
+  "notes": "The bank had excluded this part. The scheme prints \"two items [4 + 3]\" and names none: one criterion row in its words at the cell's 7. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q13-iv-a",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "refractive-index-meaning",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q13(iv)(a)",
-  "stem": "The refractive index of a medium varies for different wavelengths of light. Therefore, different colours travel at different speeds and are turned through different angles.",
-  "questionText": "Explain what is meant by refractive index.",
+  "questionText": "The refractive index of a medium varies for different wavelengths of light. Therefore, different colours travel at different speeds and are turned through different angles. (a) Explain what is meant by refractive index.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "ratio of sine of the angle of incidence",
+    "verbatim": "ratio of sine of the angle of incidence // formula",
     "marks": 3,
-    "contextNote": "Key words — they score only inside the correct statement, completed by the second marking point."
+    "contextNote": "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "to sine of the angle of refraction",
+    "verbatim": "to sine of the angle of refraction // notation",
     "marks": 3
    }
   ],
-  "notes": "The scheme's // alternative route is 'formula' plus 'notation', both content-free criteria, so only the worded route is carded."
+  "notes": "Each line printed with its // side: one row per line, as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q13-iv-b",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "speed-of-light-in-glass-from-refractive-index",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q13(iv)(b)",
-  "questionText": "The refractive index of a block of glass for red light is 1.51 and for violet light is 1.53. Calculate the difference between the speed of the red light and the speed of the violet light as they travel through the block of glass.",
+  "stem": "The refractive index of a medium varies for different wavelengths of light. Therefore, different colours travel at different speeds and are turned through different angles.",
+  "questionText": "(b) The refractive index of a block of glass for red light is 1.51 and for violet light is 1.53. Calculate the difference between the speed of the red light and the speed of the violet light as they travel through the block of glass.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "n = c₁/c₂",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "cred = 1.985 × 10⁸ (m s⁻¹)",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
-    "verbatim": "cviolet = 1.959 × 10⁸ (m s⁻¹)",
+    "verbatim": "cviolet = 1.959× 10⁸ (m s⁻¹)",
     "marks": 1
    },
    {
-    "id": "r-4",
+    "id": "r4",
     "kind": "point",
     "verbatim": "difference = 2.6 × 10⁶ m s⁻¹",
     "marks": 2
    }
   ],
-  "notes": "Exponents and unit indices shown as superscripts; the source extraction flattened them."
+  "notes": "[2 + 1] against the two speeds printed on one line: in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q13-v-a",
+  "subjectId": "physics",
   "topicId": "phys-4-3",
   "conceptId": "energy-level-transition-photon",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q13(v)(a)",
-  "stem": "A photon of blue light, of frequency 6.54 × 10¹⁴ Hz, is produced in a line emission spectrum. This occurs when an electron falls from an energy level 6 × 10⁻¹⁹ J to a lower energy level.",
-  "questionText": "Calculate the energy of the lower energy level.",
+  "questionText": "Tyndall also did work in the field of spectroscopy. A photon of blue light, of frequency 6.54 × 10¹⁴ Hz, is produced in a line emission spectrum. This occurs when an electron falls from an energy level 6 x 10⁻¹⁹ J to a lower energy level. (a) Calculate the energy of the lower energy level.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "E2 – E1 = hf",
+    "verbatim": "E₂ – E₁ = hf",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "1.67 × 10⁻¹⁹ J",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q13-v-b",
+  "subjectId": "physics",
   "topicId": "phys-4-3",
   "conceptId": "line-versus-continuous-emission-spectrum",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q13(v)(b)",
-  "questionText": "Distinguish between a line emission spectrum and a continuous emission spectrum.",
+  "stem": "Tyndall also did work in the field of spectroscopy. A photon of blue light, of frequency 6.54 × 10¹⁴ Hz, is produced in a line emission spectrum. This occurs when an electron falls from an energy level 6 x 10⁻¹⁹ J to a lower energy level.",
+  "questionText": "(b) Distinguish between a line emission spectrum and a continuous emission spectrum.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "line spectra: contain gaps / contain specific wavelengths and continuous spectra: no gaps",
-    "accepts": [
-     "line spectra: contain specific wavelengths and continuous spectra: contain all wavelengths"
-    ],
-    "marks": 5,
-    "contextNote": "Both halves are needed for the 5 marks. The scheme gives each half in two equally acceptable forms ('contain gaps / contain specific wavelengths' and 'no gaps / contain all wavelengths')."
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "line spectra: contain gaps / contain specific wavelengths and continuous spectra: no gaps / contain all wavelengths",
+    "marks": 5
    }
   ],
-  "notes": "The scheme awards a single undivided [5] for the whole comparison, so it is carried as one row rather than an invented split. Q13(v)(c) skipped ('one use' is a content-free criterion); Q13(vi) skipped ('any 4 named' and 'order' are content-free criteria)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q13-v-c",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "uses-of-spectroscopy",
+  "section": "B",
+  "questionRef": "2024 HL Q13(v)(c)",
+  "stem": "Tyndall also did work in the field of spectroscopy. A photon of blue light, of frequency 6.54 × 10¹⁴ Hz, is produced in a line emission spectrum. This occurs when an electron falls from an energy level 6 x 10⁻¹⁹ J to a lower energy level.",
+  "questionText": "(c) State one use of spectroscopy as a tool in science.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "one use",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The old cards carded (v)(a) and (b) and left (c) out. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q13-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "electromagnetic-spectrum-order",
+  "section": "B",
+  "questionRef": "2024 HL Q13(vi)",
+  "stem": "Read the following passage and answer the accompanying questions. John Tyndall ranks as one of Ireland’s most successful scientists and educators. He reached the pinnacle of 19th century science and counted amongst his friends and collaborators many of the best-known scientists of that century. Tyndall’s scientific interests spanned heat, sound, light and environmental phenomena. Amongst his many achievements, perhaps he is best known for the explanation of why the sky is blue – the scattering of light by small particles suspended in the atmosphere. Blue light is scattered more than other colours because it travels at shorter wavelengths. This colour is known as Tyndall Blue. His major scientific interest was the study of the interaction of light with matter, especially gases. He studied the absorption of infrared radiation by gases found in the atmosphere. He made the first studies of atmospheric pollution in London. adapted from: ‘The Ascent of John Tyndall: Victorian Scientist, Mountaineer, and Public Intellectual’ (Roland Jackson) Oxford University Press 2018",
+  "questionText": "Infrared radiation is part of the electromagnetic spectrum. List any four other parts of the electromagnetic spectrum in order of increasing frequency.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "any 4 named",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks. It prices them [4 × 1]."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "order",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The bank had excluded this part. The scheme prices \"any 4 named [4 × 1]\" and \"order [3]\" and names no part of the spectrum: two criterion rows in its words. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14-a-i",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "law-of-conservation-of-energy",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(a)(i)",
+  "stem": "Ireland’s Fittest Family is a competition where families compete across a range of different fitness challenges. These challenges exemplify many physics principles in action.",
   "questionText": "State the law of conservation of energy.",
   "tariffModel": {
    "kind": "fixed"
@@ -16342,24 +16484,24 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "energy cannot be created or destroyed",
     "marks": 4
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14-a-ii",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "height-from-slope-length-and-angle",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(a)(ii)",
-  "stem": "A man slides from a raised horizontal platform down a 2.4 m long slide. The slide is at an angle of 32° to the horizontal from the platform. The end of the slide is a vertical distance of 90 cm above the water.",
+  "stem": "A man is competing in a race where participants are required to slide from a raised horizontal platform down a 2.4 m long slide. The slide is at an angle of 32° to the horizontal from the platform. The end of the slide is a vertical distance of 90 cm above the water.",
   "questionText": "Calculate the height of the platform above the surface of the water.",
   "tariffModel": {
    "kind": "fixed"
@@ -16367,30 +16509,31 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "slide height = 2.4 sin 32° (= 1.27 m)",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "total height = 1.27 + 0.9 = 2.17 m",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q14a-slide"
  },
  {
   "id": "phys-2024-hl-q14-a-iii",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "energy-conservation-velocity-from-height",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(a)(iii)",
-  "stem": "A man slides down a slide from a platform 2.17 m above the surface of the water.",
+  "stem": "A man is competing in a race where participants are required to slide from a raised horizontal platform down a 2.4 m long slide. The slide is at an angle of 32° to the horizontal from the platform. The end of the slide is a vertical distance of 90 cm above the water. acceleration due to gravity = 9.8 m s⁻²",
   "questionText": "The man starts from rest. Calculate his velocity as he enters the water. Assume that there is no friction on the slide.",
   "tariffModel": {
    "kind": "fixed"
@@ -16398,63 +16541,154 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "mgh = ½mv²",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "v = 6.52 m s⁻¹",
     "marks": 3
    }
   ],
-  "notes": "Q14(a)(iv) skipped: force-diagram drawing question. Q14(b)(i) skipped: the nuclear equation is broken across lines by the extractor and cannot be quoted verbatim."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q14a-slide"
  },
  {
-  "id": "phys-2024-hl-q14-b-ii",
-  "topicId": "phys-4-4",
-  "conceptId": "decay-series-alpha-beta-count",
-  "level": "higher",
-  "year": 2024,
+  "id": "phys-2024-hl-q14-a-iv-a",
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "forces-on-the-sliding-man",
   "section": "B",
-  "questionRef": "2024 HL Q14(b)(ii)",
-  "stem": "Ra-224 is an unstable nucleus of radium. A sample of Ra-224 decays to form Pb-208, an isotope of lead.",
-  "questionText": "(a) How many alpha-particles are released? (b) How many beta-particles are released?",
+  "questionRef": "2024 HL Q14(a)(iv)(a)",
+  "stem": "A man is competing in a race where participants are required to slide from a raised horizontal platform down a 2.4 m long slide. The slide is at an angle of 32° to the horizontal from the platform. The end of the slide is a vertical distance of 90 cm above the water.",
+  "questionText": "Draw a force diagram for the man (a) as he slides down the slide,",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "(a) — 4",
-    "marks": 4,
-    "contextNote": "The number of alpha-particles released."
+    "verbatim": "weight down",
+    "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "(b) — 2",
-    "marks": 2,
-    "contextNote": "The number of beta-particles released."
+    "verbatim": "normal reaction perpendicular to surface",
+    "marks": 3,
+    "contextNote": "[–3 for additional/incorrect forces]"
    }
   ],
-  "notes": ""
+  "notes": "The bank had left (iv) open. The scheme prices (a) and (b) apart, [3] a line: one card each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q14a-slide"
+ },
+ {
+  "id": "phys-2024-hl-q14-a-iv-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "forces-on-the-floating-man",
+  "section": "B",
+  "questionRef": "2024 HL Q14(a)(iv)(b)",
+  "stem": "A man is competing in a race where participants are required to slide from a raised horizontal platform down a 2.4 m long slide. The slide is at an angle of 32° to the horizontal from the platform. The end of the slide is a vertical distance of 90 cm above the water.",
+  "questionText": "Draw a force diagram for the man (b) when he is floating in the water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "weight down",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "upward force equal in size",
+    "marks": 3,
+    "contextNote": "[–3 for additional/incorrect forces]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q14-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "alpha-decay-of-radium",
+  "section": "B",
+  "questionRef": "2024 HL Q14(b)(i)",
+  "stem": "Ra–224 is an unstable nucleus of radium.",
+  "questionText": "Ra–224 decays by releasing an alpha-particle. Write a nuclear equation for this decay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "²²⁴₈₈Ra → ⁴₂He + ²²⁰₈₆Rn",
+    "marks": 7,
+    "contextNote": "[-3 for additional incorrect species] [7 × 1]: the scheme prices the equation one mark at a time."
+   }
+  ],
+  "notes": "The bank had left this part open. The equation is read from glyph positions and the scheme's print of it is the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q14bi-scheme"
+ },
+ {
+  "id": "phys-2024-hl-q14-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "decay-series-alpha-beta-count",
+  "section": "B",
+  "questionRef": "2024 HL Q14(b)(ii)",
+  "stem": "Ra–224 is an unstable nucleus of radium.",
+  "questionText": "A sample of Ra–224 decays to form Pb–208, an isotope of lead. (a) How many alpha-particles are released? (b) How many beta-particles are released?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(a) — 4",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(b) — 2",
+    "marks": 2
+   }
+  ],
+  "notes": "One cell [4 + 2] prices (a) and (b) together: one card, (a) 4 and (b) 2 in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14-b-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "half-life-meaning",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(b)(iii)",
-  "stem": "Ra-224 has a half-life of 3.6 days.",
+  "stem": "Ra–224 has a half-life of 3.6 days.",
   "questionText": "Explain what is meant by the term half-life.",
   "tariffModel": {
    "kind": "fixed"
@@ -16462,58 +16696,59 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "the time taken",
-    "marks": 3,
-    "contextNote": "Key words — they score only inside the correct statement, completed by the second marking point."
+    "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "for half of the nuclei to decay",
     "marks": 3,
-    "contextNote": "The scheme deducts 1 mark for an incorrect reference to atoms instead of nuclei."
+    "contextNote": "[-1 for incorrect reference to atoms]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14-b-iv",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "activity-from-half-life-and-number-of-nuclei",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(b)(iv)",
-  "stem": "Ra-224 decays by releasing an alpha-particle and has a half-life of 3.6 days.",
-  "questionText": "Calculate the total number of alpha-particles emitted per second by a sample of Ra-224 containing 4.7 × 10¹⁴ atoms.",
+  "stem": "Ra–224 has a half-life of 3.6 days.",
+  "questionText": "Calculate the total number of alpha-particles emitted per second by a sample of Ra–224 containing 4.7 × 10¹⁴ atoms.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "T1/2 = ln2/λ",
+    "verbatim": "T 1/2 = ln2/λ",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "A = λN",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "A = 1.05 × 10⁹ (Bq)",
     "marks": 3
    }
   ],
-  "notes": "The half-life subscript was typed as the vulgar fraction ½, which normalise() strips; the scheme sets it as 1 over 2, so T1/2 is both readable and traceable."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14-c-i",
@@ -16547,11 +16782,9 @@
  },
  {
   "id": "phys-2024-hl-q14-c-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-1",
   "conceptId": "accelerating-voltage-for-electron",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(c)(iii)",
   "stem": "A high-speed electron that strikes the screen of an oscilloscope produces the green light that is seen.",
@@ -16562,28 +16795,27 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "alt",
-    "verbatim": "Ek = ½mv²",
-    "accepts": [
-     "W = qV"
-    ],
+    "verbatim": "Eₖ = ½mv² or W = qV",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "qV = ½mv²",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "V = 2072 V",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14-c-iv",
@@ -16611,11 +16843,9 @@
  },
  {
   "id": "phys-2024-hl-q14-d-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-6",
   "conceptId": "diffraction-grating-angle-of-separation",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(d)(ii)",
   "stem": "Green light of wavelength 530 nm is passed through a diffraction grating with 400 lines per mm.",
@@ -16626,40 +16856,40 @@
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "d = 1/number of lines per metre",
+    "verbatim": "d = 1/(number of lines per metre)",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "nλ = dsinθ",
+    "verbatim": "nλ =dsinθ",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "θ = 25.1",
-    "marks": 3,
-    "contextNote": "The angle is in degrees."
+    "marks": 3
    },
    {
-    "id": "r-4",
+    "id": "r4",
     "kind": "point",
-    "verbatim": "angle of separation = 50.2˚",
+    "verbatim": "angle of separation = 50.2°",
     "marks": 3
    }
   ],
-  "notes": "Q14(d)(i) skipped: labelled-diagram drawing question."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q14d-grating"
  },
  {
   "id": "phys-2024-hl-q14-d-iii",
+  "subjectId": "physics",
   "topicId": "phys-2-6",
   "conceptId": "wavelength-and-diffraction-angle",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(d)(iii)",
   "stem": "Green light of wavelength 530 nm is passed through a diffraction grating with 400 lines per mm.",
@@ -16670,27 +16900,25 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "red",
-    "accepts": [
-     "orange",
-     "yellow"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "red / orange / yellow",
     "marks": 4
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q14d-grating"
  },
  {
   "id": "phys-2024-hl-q14-d-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-6",
   "conceptId": "grating-line-density-and-separation",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(d)(iv)",
+  "stem": "Green light of wavelength 530 nm is passed through a diffraction grating with 400 lines per mm.",
   "questionText": "Explain how the number of lines per mm on a diffraction grating affects the angle of separation.",
   "tariffModel": {
    "kind": "fixed"
@@ -16698,13 +16926,16 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "increased number of lines per mm means increased angle",
     "marks": 4
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q14d-grating"
  },
  {
   "id": "phys-2024-ol-q1-i",
@@ -17140,57 +17371,80 @@
  },
  {
   "id": "phys-2024-hl-q6-l",
+  "subjectId": "physics",
   "topicId": "phys-4-5",
   "conceptId": "cockcroft-walton-significance",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
-  "questionRef": "2024 HL Q6(l)",
+  "questionRef": "2024 HL Q6(l) — cockcroft-walton",
   "questionText": "Cockcroft and Walton won a Nobel Prize for their experiment that bombarded a lithium nucleus with a proton. State two reasons why their experiment was significant.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "ANY TWO: [4 + 3]"
+   "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "first artificial splitting of nucleus",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "first transmutation using artificially accelerated particles",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "verification of E = mc²",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "major step in the development of particle accelerators",
-    "marks": null
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "first artificial splitting of nucleus / first transmutation using artificially accelerated particles / verification of E = mc² / major step in the development of particle accelerators",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "first artificial splitting of nucleus",
+      "first transmutation using artificially accelerated particles",
+      "verification of E = mc²",
+      "major step in the development of particle accelerators"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
+    "contextNote": "The scheme prints these items under one sum, [4 + 3], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "The scheme prints four reasons in one comma-separated list under a single aggregate tariff [4 + 3] for the two reasons asked for, so per-row mark values do not exist and are not asserted. No ellipsis in the scheme's list, so it is not an open list. Q6(l) also offers an alternative 'or' question (draw a diagram converting a galvanometer into a voltmeter), skipped as a drawing question."
+  "notes": "Q6(l) prints two alternatives joined by \"or\": each is carded at the part's 7, as routes of the one leaf. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q6-l-galvanometer",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "galvanometer-to-voltmeter",
+  "section": "B",
+  "questionRef": "2024 HL Q6(l) — galvanometer",
+  "questionText": "Draw a diagram to show how a galvanometer can be converted into a voltmeter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "galvanometer in series with",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(large valued) resistor/multiplier",
+    "marks": 3
+   }
+  ],
+  "notes": "The second alternative of Q6(l), which the old cards left out. [4 + 3] against the two lines: in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q7-ii",
+  "subjectId": "physics",
   "topicId": "phys-1-6",
   "conceptId": "centripetal-force-meaning",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q7(ii)",
-  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it.",
   "questionText": "Explain what is meant by centripetal force.",
   "tariffModel": {
    "kind": "fixed"
@@ -17198,19 +17452,21 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "force towards centre of circle",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "(that keeps) object moving in a circle",
     "marks": 3
    }
   ],
-  "notes": "Q7(i) skipped: reaching its 9 marks requires the row 'combination of two formulae', a content-free criterion. Q7(iii) and Q7(vi) skipped as force-diagram / labelled-diagram parts."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q7-iv",
@@ -17270,82 +17526,82 @@
  },
  {
   "id": "phys-2024-hl-q7-vii-a",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "projectile-maximum-height",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q7(vii)(a)",
-  "stem": "A ball is released with a velocity of magnitude 27 m s⁻¹ at an angle of 36° above the horizontal, from a height of 1.26 m above the ground, and lands 3.79 s later.",
-  "questionText": "Ignoring air resistance, calculate the maximum height above the ground reached by the ball.",
+  "stem": "An athlete rotates a ball of mass 4 kg in a circle of radius 1.25 m. The ball is moving with an angular velocity of 21.6 rad s⁻¹ just before it is released. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later. acceleration due to gravity = 9.8 m s⁻²",
+  "questionText": "Ignoring air resistance, (a) calculate the maximum height above the ground reached by the ball,",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "v² = u² + 2as",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "sy = 12.85 (m)",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "(above ground = 12.85 + 1.26 =) 14.11 m",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "An inconsistency arises within the question, all valid alternative calculations & answers are acceptable."
    }
   ],
-  "notes": "The scheme adds a note to Q7: 'An inconsistency arises within the question, all valid alternative calculations & answers are acceptable.'"
+  "notes": "The scheme closes Q7 with \"An inconsistency arises within the question, all valid alternative calculations & answers are acceptable.\": it is the note on the final answer. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q7-vii-b",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "projectile-horizontal-distance",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q7(vii)(b)",
-  "stem": "A ball is released with a velocity of magnitude 27 m s⁻¹ at an angle of 36° above the horizontal, from a height of 1.26 m above the ground, and lands 3.79 s later.",
-  "questionText": "Ignoring air resistance, calculate the horizontal distance travelled by the ball in 3.79 s.",
+  "stem": "An athlete rotates a ball of mass 4 kg in a circle of radius 1.25 m. The ball is moving with an angular velocity of 21.6 rad s⁻¹ just before it is released. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later.",
+  "questionText": "Ignoring air resistance, (b) calculate the horizontal distance travelled by the ball in 3.79 s.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "s = ut",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "sx = 82.79 m",
-    "marks": 2
+    "verbatim": "sₓ = 82.79 m",
+    "marks": 2,
+    "contextNote": "An inconsistency arises within the question, all valid alternative calculations & answers are acceptable."
    }
   ],
-  "notes": "The scheme adds a note to Q7: 'An inconsistency arises within the question, all valid alternative calculations & answers are acceptable.'"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q7-viii",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "air-resistance-effect-on-projectile",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q7(viii)",
-  "stem": "A ball is released with a velocity of magnitude 27 m s⁻¹ at an angle of 36° above the horizontal, from a height of 1.26 m above the ground.",
+  "stem": "The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later.",
   "questionText": "How would air resistance affect the path of the ball?",
   "tariffModel": {
    "kind": "fixed"
@@ -17353,21 +17609,21 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "reduction in the horizontal and vertical distance travelled",
     "marks": 5
    }
   ],
-  "notes": "Single 5-mark point; the whole tariff sits on one statement."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q8-i",
+  "subjectId": "physics",
   "topicId": "phys-3-5",
   "conceptId": "factors-affecting-force-on-conductor",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q8(i)",
   "stem": "A moving-coil loudspeaker is based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
@@ -17378,9 +17634,9 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "magnetic flux density",
+    "verbatim": "magnetic flux density / current / length of conductor / angle",
     "marks": null,
     "group": {
      "claimMax": 2,
@@ -17394,7 +17650,49 @@
     }
    }
   ],
-  "notes": "Q8(ii) 'Describe a laboratory experiment...' skipped: the scheme awards only apparatus/method/observation, which are content-free criteria. Q8(iii) skipped: diagram-drawing question."
+  "notes": "Two of four printed quantities at [2 + 2]: a menu. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-5",
+  "conceptId": "current-balance-experiment",
+  "section": "B",
+  "questionRef": "2024 HL Q8(ii)",
+  "stem": "A moving-coil loudspeaker is based on the principle that a current-carrying conductor in a magnetic field experiences a force.",
+  "questionText": "Describe a laboratory experiment to demonstrate that a current-carrying conductor in a magnetic field experiences a force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The bank had excluded this part. The scheme prices \"apparatus [3] method [3] observation [3]\" and names only what earns the marks: three criterion rows. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q8-iv",
@@ -17428,14 +17726,12 @@
  },
  {
   "id": "phys-2024-hl-q8-v",
+  "subjectId": "physics",
   "topicId": "phys-2-5",
   "conceptId": "sound-wave-type",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q8(v)",
-  "stem": "The cone of a loudspeaker vibrates and causes pressure variations in the air that produce sound waves.",
+  "stem": "A loudspeaker has three main components as shown in the diagram: the magnet, the coil and the cone. The cone vibrations cause pressure variations in the air that produce sound waves of frequency 512 Hz.",
   "questionText": "What type of wave is sound?",
   "tariffModel": {
    "kind": "fixed"
@@ -17443,27 +17739,25 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "longitudinal",
-    "accepts": [
-     "mechanical"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "longitudinal / mechanical",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q8-loudspeaker"
  },
  {
   "id": "phys-2024-hl-q8-vi",
+  "subjectId": "physics",
   "topicId": "phys-2-5",
   "conceptId": "wavelength-of-sound-wave",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q8(vi)",
-  "stem": "The cone vibrations cause pressure variations in the air that produce sound waves of frequency 512 Hz.",
+  "stem": "A loudspeaker has three main components as shown in the diagram: the magnet, the coil and the cone. The cone vibrations cause pressure variations in the air that produce sound waves of frequency 512 Hz. speed of sound = 340 m s⁻¹",
   "questionText": "Calculate the wavelength of the sound wave produced.",
   "tariffModel": {
    "kind": "fixed"
@@ -17471,27 +17765,28 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "c = fλ",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "λ = 0.66 m",
     "marks": 3
    }
   ],
-  "notes": "The speed of sound in air is taken from the Formulae and Tables booklet."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q8-loudspeaker"
  },
  {
   "id": "phys-2024-hl-q8-vii",
+  "subjectId": "physics",
   "topicId": "phys-2-5",
   "conceptId": "amplitude-and-loudness",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q8(vii)",
   "stem": "The amplitude of the vibrations of the cone determines the amplitude of the sound wave produced.",
@@ -17502,16 +17797,15 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "loudness",
-    "accepts": [
-     "volume"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "loudness/volume",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q8-viii",
@@ -17552,14 +17846,12 @@
  },
  {
   "id": "phys-2024-hl-q8-ix",
+  "subjectId": "physics",
   "topicId": "phys-2-5",
   "conceptId": "distance-for-halved-intensity",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q8(ix)",
-  "stem": "A loudspeaker has a power of 80 mW. A person is standing 7 m from the loudspeaker.",
+  "stem": "A loudspeaker has a power of 80 mW. (viii) Calculate the sound intensity for a person standing 7 m from the loudspeaker.",
   "questionText": "This sound intensity is halved for the person when they stand a distance d from the loudspeaker. Calculate d.",
   "tariffModel": {
    "kind": "fixed"
@@ -17567,33 +17859,30 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "I ∝ 1/d²",
-    "accepts": [
-     "reference to √2"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "I ∝ 1/d² / reference to √2",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "9.9 m",
     "marks": 2
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q8-x",
+  "subjectId": "physics",
   "topicId": "phys-2-5",
   "conceptId": "sound-intensity-level-decibels",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q8(x)",
-  "stem": "A speaker of power 80 mW is replaced by a speaker of power 20 mW.",
+  "stem": "A loudspeaker has a power of 80 mW. (viii) Calculate the sound intensity for a person standing 7 m from the loudspeaker.",
   "questionText": "After this, the speaker of power 80 mW is replaced by a speaker of power 20 mW. Calculate the decrease in sound intensity level.",
   "tariffModel": {
    "kind": "fixed"
@@ -17601,28 +17890,27 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "reference to 3 dB",
-    "marks": 2,
-    "contextNote": "The 3 dB is the change in sound intensity level that corresponds to one halving of the intensity."
+    "marks": 2
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "6 dB",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9-a-i",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "what-is-a-semiconductor",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q9(a)(i)",
   "stem": "The resistance of a semiconductor depends on multiple factors, one of which is temperature. A thermistor is a temperature-dependent semiconductor.",
@@ -17633,34 +17921,30 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "material with a resistivity",
-    "marks": 3,
-    "contextNote": "Key words — they score only inside a correct statement, completed by the second marking point."
+    "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "between that of a good conductor and a good insulator",
-    "accepts": [
-     "that decreases with temperature"
-    ],
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "between that of a good conductor and a good insulator / that decreases with temperature",
     "marks": 3
    }
   ],
-  "notes": "Q9(a)(ii) skipped: graph-sketching question."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9-a-iii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "thermistor-resistance-charge-carriers",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q9(a)(iii)",
-  "stem": "A thermistor is a temperature-dependent semiconductor. Part (ii) asked for a sketch of the graph showing the relationship between temperature and resistance for a thermistor.",
+  "stem": "The resistance of a semiconductor depends on multiple factors, one of which is temperature. A thermistor is a temperature-dependent semiconductor. (ii) Sketch a graph to show the relationship between temperature and resistance for a thermistor.",
   "questionText": "Explain the shape of the graph in terms of the charge carriers in semiconductors.",
   "tariffModel": {
    "kind": "fixed"
@@ -17668,50 +17952,53 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "as temperature increases, the number of electron hole pairs increase",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "resistance decreases",
     "marks": 3
    }
   ],
-  "notes": "The graph referred to is the candidate's own sketch of the standard thermistor relationship, not a printed figure, so the part is answerable without any figure."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9-b-i",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "joules-law",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q9(b)(i)",
-  "questionText": "State Joule's law.",
+  "stem": "A current of 5 A flows in an electric drill when it is connected to the mains supply. Some of the input energy is dissipated as heat.",
+  "questionText": "State Joule’s law.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "power is proportional to",
+    "verbatim": "power is proportional to // P ∝ I²",
     "marks": 3,
-    "contextNote": "The scheme allows an equivalent answer in symbols (P ∝ I²) with notation and reference to constant resistance, as a mutually exclusive alternative to the worded route."
+    "contextNote": "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "the current squared & the resistance",
+    "verbatim": "the current squared & the resistance // notation & reference to constant resistance",
     "marks": 3
    }
   ],
-  "notes": "The scheme's // alternative route is 'P ∝ I²' plus 'notation & reference to constant resistance'. The second of those is a content-free criterion, so only the worded route is carded; the symbolic route is recorded in the contextNote."
+  "notes": "Each line printed with its // side: one row per line, as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9-b-ii",
@@ -17746,14 +18033,12 @@
  },
  {
   "id": "phys-2024-hl-q9-b-iii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "electrical-input-power",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q9(b)(iii)",
-  "stem": "A current of 5 A flows in an electric drill when it is connected to the mains supply.",
+  "stem": "A current of 5 A flows in an electric drill when it is connected to the mains supply. Some of the input energy is dissipated as heat.",
   "questionText": "Calculate the input power supplied to the drill by the 230 V mains supply.",
   "tariffModel": {
    "kind": "fixed"
@@ -17761,27 +18046,27 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "P = VI",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "P = 1150 W",
     "marks": 3
    }
   ],
-  "notes": "Q9(b)(iv) (percentage efficiency) skipped: it carries forward the answers of (ii) and (iii), and its first marking point (the efficiency formula) is unrecoverably garbled in the source extraction, so it cannot be quoted verbatim."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9-c-i",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "high-voltage-transmission",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q9(c)(i)",
   "stem": "The mains supply is provided to homes at 230 V. However, electrical energy is transmitted using high voltages of approximately 300 kV in power lines.",
@@ -17792,27 +18077,24 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
+    "id": "r1",
+    "kind": "point",
     "verbatim": "high voltage means low current and therefore less energy/heat loss",
-    "accepts": [
-     "high voltage means low current and therefore less heat loss"
-    ],
     "marks": 6
    }
   ],
-  "notes": "The scheme prints 'less energy/heat loss'; the solidus is expanded into the two equally acceptable forms."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9-c-ii",
+  "subjectId": "physics",
   "topicId": "phys-3-6",
   "conceptId": "transformer-steps-down-voltage",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q9(c)(ii)",
-  "stem": "Electrical energy is transmitted at approximately 300 kV in power lines but supplied to homes at 230 V.",
+  "stem": "The mains supply is provided to homes at 230 V. However, electrical energy is transmitted using high voltages of approximately 300 kV in power lines.",
   "questionText": "Name a device that is used to reduce the voltage from 300 kV to 230 V.",
   "tariffModel": {
    "kind": "fixed"
@@ -17820,24 +18102,24 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "transformer",
     "marks": 4
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-a-i",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "ionisation-definition",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(a)(i)",
-  "stem": "Food irradiation is the process of exposing food and food packaging to ionising radiation, such as X-rays and gamma rays.",
+  "stem": "Food irradiation is used to delay spoilage and prevent illness caused by microorganisms. It is the process of exposing food and food packaging to ionising radiation, such as X–rays and gamma rays.",
   "questionText": "Explain what is meant by ionisation.",
   "tariffModel": {
    "kind": "fixed"
@@ -17845,95 +18127,132 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "loss",
-    "accepts": [
-     "gain"
-    ],
-    "marks": 3,
-    "contextNote": "Key word — it scores only in the correct context, completed by the second marking point ('of an electron')."
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "loss/gain",
+    "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "of an electron",
     "marks": 3
    }
   ],
-  "notes": "Q10(a)(ii) skipped: the scheme awards only apparatus/method/observation, which are content-free criteria."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q10-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "ionising-ability-experiment",
+  "section": "B",
+  "questionRef": "2024 HL Q10(a)(ii)",
+  "stem": "Food irradiation is used to delay spoilage and prevent illness caused by microorganisms. It is the process of exposing food and food packaging to ionising radiation, such as X–rays and gamma rays.",
+  "questionText": "Describe a laboratory experiment to demonstrate the ionising ability of nuclear radiation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The bank had excluded this part. The scheme prices \"apparatus [3] method [3] observation [3]\" and names only what earns the marks: three criterion rows. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-a-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "x-ray-production",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(a)(iii)",
-  "questionText": "Explain how X-rays are produced.",
+  "stem": "X–rays used for food irradiation have a minimum wavelength of 1.02 × 10⁻¹¹ m.",
+  "questionText": "Explain how X–rays are produced.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "high energy electrons",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "strike a metal target",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-a-iv",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "maximum-x-ray-energy",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(a)(iv)",
-  "stem": "X-rays used for food irradiation have a minimum wavelength of 1.02 × 10⁻¹¹ m.",
-  "questionText": "Calculate the maximum energy of the X-rays used for food irradiation.",
+  "stem": "X–rays used for food irradiation have a minimum wavelength of 1.02 × 10⁻¹¹ m.",
+  "questionText": "Calculate the maximum energy of the X–rays used for food irradiation.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "c = fλ and E = hf",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "E = 1.95 × 10⁻¹⁴ J",
     "marks": 3
    }
   ],
-  "notes": "Exponents shown as superscripts; the source extraction flattened them."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-a-v",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "gamma-rays-meaning",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(a)(v)",
-  "stem": "Cobalt-60 is commonly used to produce gamma rays for food irradiation.",
+  "stem": "Cobalt–60 is commonly used to produce gamma rays for food irradiation. Cobalt–60 emits gamma rays with an average energy of 1.25 MeV.",
   "questionText": "Explain what is meant by gamma rays.",
   "tariffModel": {
    "kind": "fixed"
@@ -17941,58 +18260,55 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "electromagnetic radiation of highest energy",
-    "accepts": [
-     "electromagnetic radiation due to the radioactive decay of a nucleus"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electromagnetic radiation of highest energy / electromagnetic radiation due to the radioactive decay of a nucleus",
     "marks": 6
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-a-vi",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "mev-to-joule-energy-ratio",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(a)(vi)",
-  "stem": "The maximum energy of the X-rays used for food irradiation is 1.95 × 10⁻¹⁴ J. Cobalt-60 emits gamma rays with an average energy of 1.25 MeV.",
-  "questionText": "How many times bigger is the average energy of the gamma rays than the maximum energy of the X-rays?",
+  "stem": "X–rays used for food irradiation have a minimum wavelength of 1.02 × 10⁻¹¹ m. Cobalt–60 is commonly used to produce gamma rays for food irradiation. Cobalt–60 emits gamma rays with an average energy of 1.25 MeV.",
+  "questionText": "How many times bigger is the average energy of the gamma rays than the maximum energy of the X–rays?",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "1 eV = 1.6 × 10⁻¹⁹ J",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "10.28 times",
     "marks": 3
    }
   ],
-  "notes": "The X-ray energy in the stem is the answer carried forward from part (iv); both values are the scheme's own."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-b-i",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "isotopes-definition",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(b)(i)",
-  "stem": "Cobalt-60 is a radioactive isotope. It is produced artificially in nuclear fission reactors.",
+  "stem": "Cobalt–60 is a radioactive isotope. It is produced artificially in nuclear fission reactors.",
   "questionText": "What are isotopes?",
   "tariffModel": {
    "kind": "fixed"
@@ -18000,29 +18316,30 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "same atomic number",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "different mass number",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-b-ii",
+  "subjectId": "physics",
   "topicId": "phys-4-6",
   "conceptId": "nuclear-fission-meaning",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(b)(ii)",
+  "stem": "Cobalt–60 is a radioactive isotope. It is produced artificially in nuclear fission reactors.",
   "questionText": "Explain what is meant by nuclear fission.",
   "tariffModel": {
    "kind": "fixed"
@@ -18030,58 +18347,65 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "breaking up of a large nucleus",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "into two similar sized nuclei with the release of energy and neutrons",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q10-b-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-6",
   "conceptId": "moderator-vs-control-rods",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q10(b)(iii)",
+  "stem": "Cobalt–60 is a radioactive isotope. It is produced artificially in nuclear fission reactors.",
   "questionText": "Distinguish between the role of the moderator and the control rods in a nuclear fission reactor.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "[3 + 2]"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "moderator: slows the neutrons to allow for fission",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "control rods: absorbs neutrons to control the rate of fission",
-    "marks": null
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "moderator: slows the neutrons to allow for fission / control rods: absorbs neutrons to control the rate of fission",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "moderator: slows the neutrons to allow for fission",
+      "control rods: absorbs neutrons to control the rate of fission"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "contextNote": "The scheme prints these items under one sum, [3 + 2], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "The scheme prints one aggregate tariff [3 + 2] at the end of the two-line answer rather than a mark on each line, so per-row values are not stated and are not asserted here — the same treatment given to Q6(l)'s [4 + 3]."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q11-i",
+  "subjectId": "physics",
   "topicId": "phys-3-2",
   "conceptId": "define-capacitance",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q11(i)",
   "stem": "A device that is designed to store energy when it holds a charge is called a capacitor.",
@@ -18092,28 +18416,68 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "charge",
+    "verbatim": "charge // formula",
     "marks": 3,
-    "contextNote": "Key word — it scores only inside the correct statement, completed by the second marking point."
+    "contextNote": "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "per unit voltage",
+    "verbatim": "per unit voltage // notation",
     "marks": 3
    }
   ],
-  "notes": "The scheme's // alternative route is 'formula' plus 'notation', both content-free criteria, so only the worded route is carded. Q11(ii) skipped (apparatus/method/observation only); Q11(iii) skipped (graph sketch)."
+  "notes": "Each line printed with its // side: one row per line, as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q11-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "capacitance-and-area-experiment",
+  "section": "B",
+  "questionRef": "2024 HL Q11(ii)",
+  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor.",
+  "questionText": "Describe an experiment to demonstrate that capacitance depends on the common area of the plates of a parallel plate capacitor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The bank had excluded this part. The scheme prices \"apparatus [3] method [3] observation [3]\" and names only what earns the marks: three criterion rows. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q11-iv",
+  "subjectId": "physics",
   "topicId": "phys-3-2",
   "conceptId": "energy-stored-parallel-plate-capacitor",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q11(iv)",
   "stem": "A parallel-plate capacitor with metal plates of area 0.0225 m² are placed 8 mm apart in a vacuum.",
@@ -18124,36 +18488,36 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "C = εA/d",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "W = ½CV²",
+    "verbatim": "W = 1/2 CV²",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "W = 1.12 × 10⁻⁴ J",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q11-v",
+  "subjectId": "physics",
   "topicId": "phys-3-2",
   "conceptId": "relative-permittivity-effect-on-stored-energy",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q11(v)",
-  "stem": "A parallel-plate capacitor with metal plates of area 0.0225 m² are placed 8 mm apart in a vacuum. A voltage of 3 kV is applied across the plates.",
+  "stem": "A parallel-plate capacitor with metal plates of area 0.0225 m² are placed 8 mm apart in a vacuum. (iv) A voltage of 3 kV is applied across the plates. Calculate the maximum potential energy stored in the capacitor.",
   "questionText": "A material with a relative permittivity of 2 is then inserted to completely fill the space between the capacitor plates. What is the effect on the maximum potential energy stored by the capacitor?",
   "tariffModel": {
    "kind": "fixed"
@@ -18161,19 +18525,21 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "increases",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "by factor of 2",
     "marks": 3
    }
   ],
-  "notes": "Q11(vi) and Q11(vii) skipped: both need the resistor and capacitor values printed on the circuit diagram, which the scheme does not reproduce. Q11(viii) skipped: diagram-drawing question."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12-a-i",
@@ -18227,13 +18593,12 @@
  },
  {
   "id": "phys-2024-hl-q12-a-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "inverse-square-law-forces",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q12(a)(iii)",
+  "stem": "All matter and energy in the universe must abide by one or more of the four fundamental forces of nature.",
   "questionText": "State the two fundamental forces of nature that are based on inverse square laws.",
   "tariffModel": {
    "kind": "fixed"
@@ -18241,29 +18606,30 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "gravitational force",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "electromagnetic force",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "[3 + 3] against the two forces printed on one line: 3 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12-a-iv",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "force-responsible-for-beta-decay",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q12(a)(iv)",
+  "stem": "All matter and energy in the universe must abide by one or more of the four fundamental forces of nature.",
   "questionText": "Name the fundamental force that allows for beta-decay.",
   "tariffModel": {
    "kind": "fixed"
@@ -18271,24 +18637,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "weak force",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12-a-v",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "pauli-proposed-neutrino",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q12(a)(v)",
-  "stem": "When it was observed that momentum did not appear to be conserved during beta-decay, Wolfgang Pauli proposed that an additional particle must be emitted to carry away the missing momentum and energy.",
+  "stem": "When it was observed that momentum did not appear to be conserved during beta-decay, Wolfgang Pauli proposed that an additional particle must be emitted to carry away the missing momentum and energy. Pauli wrote, “I have done something very bad today by proposing a particle that cannot be detected; it is something no theorist should ever do”.",
   "questionText": "Identify the particle that Pauli proposed.",
   "tariffModel": {
    "kind": "fixed"
@@ -18296,24 +18662,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "neutrino",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12-a-vi",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "why-neutrino-hard-to-detect",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q12(a)(vi)",
-  "stem": "Pauli proposed an additional particle, the neutrino, emitted during beta-decay to carry away the missing momentum and energy.",
+  "stem": "When it was observed that momentum did not appear to be conserved during beta-decay, Wolfgang Pauli proposed that an additional particle must be emitted to carry away the missing momentum and energy. Pauli wrote, “I have done something very bad today by proposing a particle that cannot be detected; it is something no theorist should ever do”. (v) Identify the particle that Pauli proposed.",
   "questionText": "Explain why it is difficult to detect this particle.",
   "tariffModel": {
    "kind": "fixed"
@@ -18321,19 +18687,48 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "very small mass",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "no charge",
     "marks": 3
    }
   ],
-  "notes": "Q12(a)(vii) skipped: the nuclear equation is broken across lines by the extractor (superscripts and subscripts detached), so it cannot be quoted verbatim."
+  "notes": "[3 + 3] against the two reasons printed on one line: 3 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q12-a-vii",
+  "subjectId": "physics",
+  "topicId": "phys-4-4",
+  "conceptId": "beta-decay-of-neutron",
+  "section": "B",
+  "questionRef": "2024 HL Q12(a)(vii)",
+  "questionText": "Write an equation to represent the decay of a neutron (n₀ ¹) by beta-decay.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "¹₀n → ¹₁p + ⁰₋₁e + ν̅",
+    "marks": 7,
+    "contextNote": "[-3 for additional incorrect species] [7 × 1]: the scheme prices the equation one mark at a time."
+   }
+  ],
+  "notes": "The bank had left this part open. The paper prints the neutron with its numbers stacked, which the text layer reads \"(n₀ ¹)\": the ask is shown as printed. The scheme's equation is read from glyph positions (its antineutrino bar by glyph id, GLYPHS) and shown as a crop. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q12a-vii-scheme",
+  "questionFigureKey": "physics-2024-hl-q12a-vii-question"
  },
  {
   "id": "phys-2024-ol-q6-g",
@@ -26517,37 +26912,34 @@
  },
  {
   "id": "phys-2024-hl-q6h-fig",
+  "subjectId": "physics",
   "topicId": "phys-3-1",
   "conceptId": "lightning-conductor-point-discharge",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q6(h)",
-  "stem": "Answer any eight of the following parts, (a), (b), (c), etc.",
   "questionText": "A lightning conductor can be placed on top of a tall building as shown. Explain how a lightning conductor works.",
-  "figureKey": "physics-2024-HL-paper-p05-i0",
-  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed"
+  },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "point discharge",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "transfers charge to ground",
-    "marks": 3,
-    "contextNote": "The scheme prints the two points on separate consecutive lines, with the combined tariff '[4 + 3]' at the end of this second line: first point 4 marks, second point 3 marks. There is no solidus between them - both points are required and credited separately, not alternatives."
+    "marks": 3
    }
   ],
-  "notes": "Skeptic-verified against sources on disk. Both rows word-for-word from the 2024 HL scheme page 11, where 'point discharge' and 'transfers charge to ground [4 + 3]' appear on two consecutive lines (no solidus). Tariff 7 confirmed by the paper's '(8 x 7)' for Q6. Figure crop verified by opening the PNG: left two-thirds is the printed wording of Q6 parts (e)-(k); at right is a perspective drawing of a tall multi-window office block with a pointed lightning-conductor rod on its roof and an earthing wire down the side - this is what part (h)'s 'as shown' refers to, so the figure is bound show-for-context; the marking points themselves do not depend on the drawing. Worklist entry for this figure gives letters: [], so labelKey is correctly empty (the (e)-(k) visible in the crop are question-part enumerators in printed text, not diagram labels). Note for merge: a text-only card phys-2024-hl-q6-h for this same part already exists in cards/physics/higher.ts and should be superseded or deduplicated.",
-  "tariffModel": {
-   "kind": "fixed"
-  }
+  "notes": "[4 + 3] against the two lines: in the order printed. Q6(h) was carded twice, with and without the photograph; this id carries the reviewed task and phys-2024-hl-q6-h is withdrawn onto it. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q6h-building"
  },
  {
   "id": "phys-2024-ol-q1-iii-fig",
@@ -33061,13 +33453,12 @@
  },
  {
   "id": "phys-2024-hl-q11-vii",
+  "subjectId": "physics",
   "topicId": "phys-3-2",
   "conceptId": "charge-on-a-capacitor-mid-discharge",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q11(vii)",
+  "stem": "Capacitors and resistors can be combined to create timing circuits such as those used to create the flash on a camera. The circuit diagram below shows a resistor and a capacitator connected in series with a 30 V power supply. The current flowing in the circuit at a given instant is 0.3 mA.",
   "questionText": "Calculate the charge held by the capacitor at this instant.",
   "tariffModel": {
    "kind": "fixed"
@@ -33075,35 +33466,37 @@
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "Calculate the charge held by the capacitor at this instant.",
+    "verbatim": "Vcapacitor = 30 – 7.5 = 22.5 (V)",
     "marks": 2
    },
    {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Vcapacitor = 30 – 7.5 = 22.5 (V)",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
+    "id": "r2",
     "kind": "point",
     "verbatim": "C = q/V",
     "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "q = 1.91 × 10⁻³ C",
+    "marks": 3
    }
   ],
-  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q11-circuit"
  },
  {
   "id": "phys-2024-hl-q5-iii",
-  "topicId": "phys-u2",
-  "conceptId": "resistance-from-the-slope-of-a-graph",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-from-the-slope-of-a-graph",
   "section": "A",
   "questionRef": "2024 HL Q5(iii)",
+  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded.",
   "questionText": "Use your graph to calculate the resistance R of the copper wire.",
   "tariffModel": {
    "kind": "fixed"
@@ -33111,59 +33504,94 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "slope formula",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "R = 7.03 Ω",
     "marks": 2
    }
   ],
-  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded. V (V) 1.0 2.0 3.0 4.0 5.0 6.0 I (A) 0.14 0.26 0.43 0.58 0.70 0.84 Each question carries 56 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q5-table"
  },
  {
   "id": "phys-2024-hl-q9a-iv",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "intrinsic-and-extrinsic-conduction",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q9(a)(iv)",
-  "questionText": "Distinguish between intrinsic and extrinsic conduction in semiconductors. (22)",
+  "stem": "The resistance of a semiconductor depends on multiple factors, one of which is temperature. A thermistor is a temperature-dependent semiconductor.",
+  "questionText": "Distinguish between intrinsic and extrinsic conduction in semiconductors.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "intrinsic: pure // equal number of electrons & holes // low conductivity",
-    "marks": 2
+    "verbatim": "intrinsic: pure",
+    "marks": 2,
+    "contextNote": "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side.",
+    "route": "side-a"
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "extrinsic: doped // unequal number of electrons & holes // high conductivity",
-    "marks": 2
+    "verbatim": "extrinsic: doped",
+    "marks": 2,
+    "route": "side-a"
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "intrinsic — equal number of electrons & holes",
+    "marks": 2,
+    "route": "side-b"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "extrinsic — unequal number of electrons & holes",
+    "marks": 2,
+    "route": "side-b"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "intrinsic — low conductivity",
+    "marks": 2,
+    "route": "side-c"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "extrinsic — high conductivity",
+    "marks": 2,
+    "route": "side-c"
    }
   ],
-  "notes": "The scheme numbers this answer under its own Question 8 while the paper prints Question 9."
+  "notes": "Each line prints three answers split by // (pure / doped, equal / unequal numbers of electrons and holes, low / high conductivity), [2] a line: each pairing is a route inside the card (claiming a row commits to its side), never answer variants whose labels would name the answer before the reveal. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q11-vi",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "potential-difference-across-a-resistor",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q11(vi)",
+  "stem": "Capacitors and resistors can be combined to create timing circuits such as those used to create the flash on a camera. The circuit diagram below shows a resistor and a capacitator connected in series with a 30 V power supply. The current flowing in the circuit at a given instant is 0.3 mA.",
   "questionText": "Calculate the potential difference across the resistor at this instant.",
   "tariffModel": {
    "kind": "fixed"
@@ -33171,65 +33599,68 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "V = IR",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "V = 7.5 V",
     "marks": 3
    }
   ],
-  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q11-circuit"
  },
  {
   "id": "phys-2024-hl-q1-ii",
-  "topicId": "phys-u2",
-  "conceptId": "how-acceleration-was-determined",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "how-acceleration-was-determined",
   "section": "A",
   "questionRef": "2024 HL Q1(ii)",
-  "questionText": "Describe how the student determined the acceleration of the body. (19)",
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration.",
+  "questionText": "Describe how the student determined the acceleration of the body.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "calculate initial velocity and final velocity",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "measure distance/time interval between velocities",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "use relevant formula",
     "marks": 3
    }
   ],
-  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded. F (N) 0.2 0.3 0.4 0.5 0.6 0.7 a (m s–2) 0.280 0.422 0.554 0.702 0.837 0.982"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q7-i",
+  "subjectId": "physics",
   "topicId": "phys-1-6",
   "conceptId": "deriving-v-equals-r-omega",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q7(i)",
+  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it.",
   "questionText": "Derive the formula to show the relationship between the radius, velocity and angular velocity of an object moving with uniform circular motion.",
   "tariffModel": {
    "kind": "fixed"
@@ -33237,35 +33668,37 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "alt",
     "verbatim": "θ = s/r or v = s/t or ω = θ/t",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "combination of two formulae",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "v = rω",
     "marks": 3
    }
   ],
-  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q1-iii",
-  "topicId": "phys-u2",
-  "conceptId": "graph-of-force-against-acceleration",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "graph-of-force-against-acceleration",
   "section": "A",
   "questionRef": "2024 HL Q1(iii)",
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded.",
   "questionText": "Draw a suitable graph to show the relationship between F and a.",
   "tariffModel": {
    "kind": "fixed"
@@ -33273,72 +33706,94 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axes",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "points plotted",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "line of best fit",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded. F (N) 0.2 0.3 0.4 0.5 0.6 0.7 a (m s–2) 0.280 0.422 0.554 0.702 0.837 0.982"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q1-table"
  },
  {
   "id": "phys-2024-hl-q5-i",
-  "topicId": "phys-u2",
-  "conceptId": "circuit-for-the-resistivity-experiment",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit-for-the-resistivity-experiment",
   "section": "A",
   "questionRef": "2024 HL Q5(i)",
+  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded.",
   "questionText": "Draw a circuit diagram for this experiment.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "any three of the four components at 1 each, then 3 and 3"
+   "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "power supply, copper wire, ammeter, voltmeter",
-    "marks": 3
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "power supply / copper wire / ammeter / voltmeter",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "power supply",
+      "copper wire",
+      "ammeter",
+      "voltmeter"
+     ]
+    },
+    "contextNote": "The scheme prints \"[any 3 × 1]\" against this line."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "power supply, copper wire and ammeter in series",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
-    "verbatim": "voltmeter in parallel",
+    "verbatim": "voltmeter in parallel with copper wire",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "means of varying voltage",
     "marks": 3
    }
   ],
-  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded. V (V) 1.0 2.0 3.0 4.0 5.0 6.0 I (A) 0.14 0.26 0.43 0.58 0.70 0.84 Each question carries 56 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q5-ii",
-  "topicId": "phys-u2",
-  "conceptId": "graph-of-current-against-voltage",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "graph-of-current-against-voltage",
   "section": "A",
   "questionRef": "2024 HL Q5(ii)",
+  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded.",
   "questionText": "Draw a suitable graph to show the relationship between I and V.",
   "tariffModel": {
    "kind": "fixed"
@@ -33346,34 +33801,38 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axes",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "correct points plotted",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "line of best fit",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded. V (V) 1.0 2.0 3.0 4.0 5.0 6.0 I (A) 0.14 0.26 0.43 0.58 0.70 0.84 Each question carries 56 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q5-table"
  },
  {
   "id": "phys-2024-hl-q8-iii",
+  "subjectId": "physics",
   "topicId": "phys-3-4",
   "conceptId": "field-around-a-straight-current-carrying-wire",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q8(iii)",
   "questionText": "Draw a diagram of the magnetic field produced by a current flowing in a long straight wire.",
   "tariffModel": {
@@ -33382,29 +33841,32 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "shape",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "direction",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A moving-coil loudspeaker is based on the principle that a current-carrying conductor in a magnetic field experiences a force. permanent magnet cone coil The amplitude of the vibrations of the cone determines the amplitude of the sound wave produced. cone vibrations A loudspeaker has a power of 80 mW."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12b-iii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "circuit-of-a-half-wave-rectifier",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q12(b)(iii)",
+  "stem": "The mains electricity supply in Ireland is a.c. and operates at a frequency of 50 Hz. However, many electrical appliances in the home require d.c. to operate.",
   "questionText": "Draw a circuit diagram of a half-wave rectifier that can be used to convert a.c. to d.c..",
   "tariffModel": {
    "kind": "fixed"
@@ -33412,89 +33874,135 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "diode",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "input and output voltage labelled",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "arrangement",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
+ },
+ {
+  "id": "phys-2024-hl-q12-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "rectified-output-voltage",
+  "section": "B",
+  "questionRef": "2024 HL Q12(b)(iv)",
+  "stem": "(iii) Draw a circuit diagram of a half-wave rectifier that can be used to convert a.c. to d.c..",
+  "questionText": "Sketch the graph of the output voltage of this circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "shape",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The bank had excluded this part. The scheme prices \"shape [3]\" and names only what earns the marks: one criterion row. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12b-v",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "structure-of-a-bipolar-transistor",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q12(b)(v)",
+  "stem": "A voltage inverter can be used to convert d.c. to a.c.. A transistor can be used to build a NOT gate in a voltage inverter circuit.",
   "questionText": "Draw a labelled diagram of the structure of a bi-polar transistor.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 2 + 2 across the three layers"
+   "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "n (collector), p (base), n (emitter)",
-    "marks": 7
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "n (collector) / p (base) / n (emitter)",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "n (collector)",
+      "p (base)",
+      "n (emitter)"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      2
+     ]
+    },
+    "contextNote": "The scheme prints these items under one sum, [3 + 2 + 2], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12b-vi",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "truth-table-of-a-not-gate",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q12(b)(vi)",
-  "questionText": "Draw a truth table for a NOT gate. (11) The induction coil was invented by Dr Nicolas Callan in 1836.",
+  "stem": "A voltage inverter can be used to convert d.c. to a.c.. A transistor can be used to build a NOT gate in a voltage inverter circuit.",
+  "questionText": "Draw a truth table for a NOT gate.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "input 1 : output 0",
     "marks": 2
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "input 0 : output 1",
     "marks": 2
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12b-vii",
+  "subjectId": "physics",
   "topicId": "phys-3-6",
   "conceptId": "parts-of-an-induction-coil",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q12(b)(vii)",
+  "stem": "The induction coil was invented by Dr Nicolas Callan in 1836.",
   "questionText": "Draw a labelled diagram showing the main components of an induction coil.",
   "tariffModel": {
    "kind": "fixed"
@@ -33502,103 +34010,123 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "coil and d.c power supply in primary circuit",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "coil with more turns in secondary circuit",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "labelled make and break mechanism and iron core",
     "marks": 3
    }
   ],
-  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14c-ii",
-  "topicId": "phys-4-2",
-  "conceptId": "parts-of-a-cathode-ray-tube",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "parts-of-a-cathode-ray-tube",
   "section": "B",
   "questionRef": "2024 HL Q14(c)(ii)",
-  "questionText": "Draw a labelled diagram of a cathode ray tube. (14) A high-speed electron that strikes the screen of an oscilloscope produces the green light that is seen.",
+  "questionText": "Draw a labelled diagram of a cathode ray tube.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "heating coil",
     "marks": 2
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "voltage across cathode and anode",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "labelled vacuum",
     "marks": 2
    },
    {
-    "id": "r-4",
-    "kind": "point",
+    "id": "r4",
+    "kind": "criterion",
     "verbatim": "one other detail",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "The scheme numbers this answer under its own Question 13 while the paper prints Question 14."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q14d-i",
+  "subjectId": "physics",
   "topicId": "phys-2-6",
   "conceptId": "parts-of-a-spectrometer",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2024 HL Q14(d)(i)",
-  "questionText": "Draw a labelled diagram of a spectrometer. (8) Green light of wavelength 530 nm is passed through a diffraction grating with 400 lines per mm.",
+  "stem": "A spectrometer can be used to measure the wavelength of light.",
+  "questionText": "Draw a labelled diagram of a spectrometer.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 + 2 + 2 + 2"
+   "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "labelled collimator, table, telescope, other detail",
-    "marks": 8
+    "verbatim": "labelled collimator",
+    "marks": 2
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "table",
+    "marks": 2
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "telescope",
+    "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "other detail",
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "angle of separation ray of light diffraction grating Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Higher Level Physics Wednesday, 19 June Morning, 9:30 – 12:30",
-  "notes": "The scheme numbers this answer under its own Question 13 while the paper prints Question 14."
+  "notes": "[2 + 2 + 2 + 2] against the four items printed on one line: 2 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q1-i",
-  "topicId": "phys-u2",
-  "conceptId": "apparatus-for-the-newtons-second-law-experiment",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "apparatus-for-the-newtons-second-law-experiment",
   "section": "A",
   "questionRef": "2024 HL Q1(i)",
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration.",
   "questionText": "Draw a labelled diagram of how the apparatus was arranged in this experiment.",
   "tariffModel": {
    "kind": "fixed"
@@ -33606,73 +34134,90 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "trolley",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "applied force",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "ticker timer/light gates",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[–1 if no label present on diagram]"
    }
   ],
-  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded. F (N) 0.2 0.3 0.4 0.5 0.6 0.7 a (m s–2) 0.280 0.422 0.554 0.702 0.837 0.982",
-  "notes": "The scheme takes a mark off if the diagram carries no labels."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q4-i",
-  "topicId": "phys-u2",
-  "conceptId": "apparatus-for-the-stretched-string-experiment",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "apparatus-for-the-stretched-string-experiment",
   "section": "A",
   "questionRef": "2024 HL Q4(i)",
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension.",
   "questionText": "Draw a labelled diagram of how the apparatus was arranged in this experiment.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 10,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "stretched string",
     "marks": 2
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "weights",
+    "verbatim": "newtonmeter / weights",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
-    "verbatim": "signal generator",
+    "verbatim": "tuning fork / signal generator",
     "marks": 2
+   },
+   {
+    "id": "r4",
+    "kind": "anyN",
+    "verbatim": "meter stick / bridges / paper rider",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "meter stick",
+      "bridges",
+      "paper rider"
+     ]
+    },
+    "contextNote": "[–1 if no label present on diagram] The scheme prints \"any two [2 + 2]\" against this line."
    }
   ],
-  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension. The following data were recorded. f (Hz) 256 320 341 426.5 480 512 T (N) 29 44 51 79 100 115",
-  "notes": "The scheme also credits a newtonmeter, a tuning fork, a metre stick and the bridges."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q7-iii",
+  "subjectId": "physics",
   "topicId": "phys-1-6",
   "conceptId": "forces-on-a-ball-in-circular-motion",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q7(iii)",
+  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it.",
   "questionText": "Draw a force diagram to show the forces acting on the ball just before it is released.",
   "tariffModel": {
    "kind": "fixed"
@@ -33680,30 +34225,31 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "weight down",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "tension towards centre",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[–3 for additional/incorrect forces]"
    }
   ],
-  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later.",
-  "notes": "The scheme takes three marks off for any extra force drawn in — there is no outward force on the ball."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9a-ii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "temperature-resistance-graph-for-a-thermistor",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q9(a)(ii)",
+  "stem": "The resistance of a semiconductor depends on multiple factors, one of which is temperature. A thermistor is a temperature-dependent semiconductor.",
   "questionText": "Sketch a graph to show the relationship between temperature and resistance for a thermistor.",
   "tariffModel": {
    "kind": "fixed"
@@ -33711,59 +34257,64 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "axes labelled",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "shape",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "The scheme numbers this answer under its own Question 8 while the paper prints Question 9."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q11-iii",
+  "subjectId": "physics",
   "topicId": "phys-3-2",
   "conceptId": "graph-of-capacitance-against-plate-area",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q11(iii)",
-  "questionText": "Sketch a suitable graph to show the relationship between capacitance C and the common area A between the plates of a parallel plate capacitor. (21) A parallel-plate capacitor with metal plates of area 0.0225 m2 are placed 8 mm apart in a vacuum.",
+  "questionText": "Sketch a suitable graph to show the relationship between capacitance C and the common area A between the plates of a parallel plate capacitor.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "axes labelled",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "correct shape",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q12b-ii",
-  "topicId": "phys-3-6",
-  "conceptId": "voltage-time-graphs-for-ac-and-dc",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
-  "section": "A",
+  "topicId": "phys-3-3",
+  "conceptId": "voltage-time-graphs-for-ac-and-dc",
+  "section": "B",
   "questionRef": "2024 HL Q12(b)(ii)",
+  "stem": "The mains electricity supply in Ireland is a.c. and operates at a frequency of 50 Hz. However, many electrical appliances in the home require d.c. to operate.",
   "questionText": "Draw a voltage–time graph for an a.c. supply and a d.c. supply.",
   "tariffModel": {
    "kind": "fixed"
@@ -33771,35 +34322,39 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axes",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "a.c. shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "d.c. shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q1-v",
-  "topicId": "phys-u2",
-  "conceptId": "mass-from-the-slope-of-a-graph",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "mass-from-the-slope-of-a-graph",
   "section": "A",
   "questionRef": "2024 HL Q1(v)",
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded.",
   "questionText": "Use your graph to calculate the mass that had been accelerated.",
   "tariffModel": {
    "kind": "fixed"
@@ -33807,29 +34362,60 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "slope formula",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "m = 0.71 kg",
     "marks": 2
    }
   ],
-  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded. F (N) 0.2 0.3 0.4 0.5 0.6 0.7 a (m s–2) 0.280 0.422 0.554 0.702 0.837 0.982"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q1-table"
+ },
+ {
+  "id": "phys-2024-hl-q1-vi",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "graph-with-friction",
+  "section": "A",
+  "questionRef": "2024 HL Q1(vi)",
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration.",
+  "questionText": "Sketch the graph that a student would get if they did not account for the presence of a constant frictional force of less than 0.2 N.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Sketch the graph that a student would get if they did not account for the presence of a constant frictional force of less than 0.2 N.",
+    "marks": 4,
+    "ask": true,
+    "contextNote": "The scheme answers with a sketch (shown at the reveal) and prices it [4]; it prints no words for it."
+   }
+  ],
+  "notes": "The bank had excluded this part. The scheme draws its answer and names it in no words: one drawn row restating the ask at the cell's 4, the scheme's drawing cropped as the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q1vi-scheme"
  },
  {
   "id": "phys-2024-hl-q2-ii",
-  "topicId": "phys-u2",
-  "conceptId": "apparatus-for-the-focal-length-experiment",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "apparatus-for-the-focal-length-experiment",
   "section": "A",
   "questionRef": "2024 HL Q2(ii)",
+  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u. The following data were recorded.",
   "questionText": "Draw a labelled diagram of the apparatus and clearly identify the distances u and v.",
   "tariffModel": {
    "kind": "fixed"
@@ -33837,41 +34423,44 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "lens",
     "marks": 2
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "object",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "screen",
     "marks": 2
    },
    {
-    "id": "r-4",
-    "kind": "point",
+    "id": "r4",
+    "kind": "criterion",
     "verbatim": "u and v shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u. The following data were recorded. u (cm) 20.0 30.0 40.0 50.0 v (cm) 78.7 35.2 26.9 23.4"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q2-table"
  },
  {
   "id": "phys-2024-hl-q2-iv",
-  "topicId": "phys-u2",
-  "conceptId": "focal-length-from-all-of-the-data",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "focal-length-from-all-of-the-data",
   "section": "A",
   "questionRef": "2024 HL Q2(iv)",
+  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u. The following data were recorded.",
   "questionText": "Calculate the focal length of the lens using all of the data in the table.",
   "tariffModel": {
    "kind": "fixed"
@@ -33879,42 +34468,115 @@
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "1/u + 1/v = 1/f // values for 1/u and 1/v",
+    "verbatim": "1/u + 1/v = 1/f",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "1st calculation of f // labelled axes",
-    "marks": 3
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "1st calculation of f",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "three further calculations for f // points and line of best fit",
-    "marks": 3
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "three further calculations for f",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "average for f // value for f",
-    "marks": 3
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "average for f",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "In an experiment to measure the focal length f of a converging lens, a student first found an approximate value for the focal length. Then the student set up the apparatus and recorded the image distance v for different values of the object distance u. The following data were recorded. u (cm) 20.0 30.0 40.0 50.0 v (cm) 78.7 35.2 26.9 23.4",
-  "notes": "The // pairs the calculation route with the graph route — either side of each line earns its marks, but the two routes cannot be mixed."
+  "answerVariants": [
+   {
+    "id": "calculation",
+    "label": "By calculation",
+    "rows": [
+     {
+      "id": "r1",
+      "kind": "point",
+      "verbatim": "1/u + 1/v = 1/f",
+      "marks": 3
+     },
+     {
+      "id": "r2",
+      "kind": "criterion",
+      "verbatim": "1st calculation of f",
+      "marks": 3,
+      "contextNote": "The scheme prints no answer here, only what earns the marks."
+     },
+     {
+      "id": "r3",
+      "kind": "criterion",
+      "verbatim": "three further calculations for f",
+      "marks": 3,
+      "contextNote": "The scheme prints no answer here, only what earns the marks."
+     },
+     {
+      "id": "r4",
+      "kind": "criterion",
+      "verbatim": "average for f",
+      "marks": 3,
+      "contextNote": "The scheme prints no answer here, only what earns the marks."
+     }
+    ]
+   },
+   {
+    "id": "graph",
+    "label": "By a graph",
+    "rows": [
+     {
+      "id": "r1",
+      "kind": "criterion",
+      "verbatim": "values for 1/u and 1/v",
+      "marks": 3,
+      "contextNote": "The scheme prints no answer here, only what earns the marks."
+     },
+     {
+      "id": "r2",
+      "kind": "criterion",
+      "verbatim": "labelled axes",
+      "marks": 3,
+      "contextNote": "The scheme prints no answer here, only what earns the marks."
+     },
+     {
+      "id": "r3",
+      "kind": "criterion",
+      "verbatim": "points and line of best fit",
+      "marks": 3,
+      "contextNote": "The scheme prints no answer here, only what earns the marks."
+     },
+     {
+      "id": "r4",
+      "kind": "criterion",
+      "verbatim": "value for f",
+      "marks": 3,
+      "contextNote": "The scheme prints no answer here, only what earns the marks."
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme prints two methods split by //, by calculation or by a graph of 1/u against 1/v, each line priced [3]: each is shown as its own answer set. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q2-table"
  },
  {
   "id": "phys-2024-hl-q3-i",
-  "topicId": "phys-u2",
-  "conceptId": "apparatus-for-the-latent-heat-experiment",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "apparatus-for-the-latent-heat-experiment",
   "section": "A",
   "questionRef": "2024 HL Q3(i)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice.",
   "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
    "kind": "fixed"
@@ -33922,111 +34584,131 @@
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "ice",
     "marks": 2
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "calorimeter with water",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "balance",
     "marks": 2
    },
    {
-    "id": "r-4",
+    "id": "r4",
     "kind": "point",
     "verbatim": "thermometer",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "[–1 if no label present on diagram]"
    }
   ],
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. The following data were recorded. Mass of copper calorimeter 83.2 g Mass of calorimeter + water before adding ice 132.9 g after adding ice 138.5 g Temperature of water before adding ice 26.8 °C after adding ice 17.4 °C",
-  "notes": "The scheme takes a mark off if the diagram carries no labels."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q4-iv",
-  "topicId": "phys-u2",
-  "conceptId": "graph-of-frequency-against-tension",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "graph-of-frequency-against-tension",
   "section": "A",
   "questionRef": "2024 HL Q4(iv)",
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension. The following data were recorded. f (Hz) 256 320 341 426.5 480 512 T (N) 29 44 51 79 100 115",
   "questionText": "Draw a suitable graph to show the relationship between f and T.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "values for √T or f²",
+    "marks": 3,
+    "contextNote": "The scheme prints the values it expects in the table shown in the figure."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "labelled axes",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "correct points plotted",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r4",
+    "kind": "criterion",
     "verbatim": "line of best fit",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension. The following data were recorded. f (Hz) 256 320 341 426.5 480 512 T (N) 29 44 51 79 100 115",
-  "notes": "The scheme awards a further 3 marks, not shown here, for first working out the values to plot — the square of each frequency or the square root of each tension; that line is typeset with a radical sign the text layer cannot carry."
+  "notes": "The scheme prints \"values for √T or f²\" over a table of the values (its root sign a SymbolMT glyph read by id, GLYPHS): one criterion row in its words, the line with its table the solution figure. The data table is lifted into the stem. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q4iv-scheme"
  },
  {
   "id": "phys-2024-hl-q4-vi",
-  "topicId": "phys-u2",
-  "conceptId": "mass-per-unit-length-from-the-slope",
-  "level": "higher",
-  "year": 2024,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "mass-per-unit-length-from-the-slope",
   "section": "A",
   "questionRef": "2024 HL Q4(vi)",
-  "questionText": "Use your graph to determine the mass per unit length of the string used in this experiment. (23)",
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension. The following data were recorded. f (Hz) 256 320 341 426.5 480 512 T (N) 29 44 51 79 100 115",
+  "questionText": "Use your graph to determine the mass per unit length of the string used in this experiment.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 2 for the slope formula, then 3"
+   "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "slope formula",
-    "marks": 5
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "μ = 2.2 × 10–4 kg m–1",
+    "verbatim": "f = 1/(2l) √ T/μ",
+    "marks": 2,
+    "contextNote": "The root covers T/μ (shown in the figure, cropped from the scheme)."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "μ = 2.2 × 10⁻⁴ kg m⁻¹",
     "marks": 3
    }
   ],
-  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension. The following data were recorded. f (Hz) 256 320 341 426.5 480 512 T (N) 29 44 51 79 100 115",
-  "notes": "The scheme writes the slope formula out in full as typeset maths that does not survive the text layer; the 3 + 2 covers stating and using it."
+  "notes": "\"slope formula, f = 1/2l √(T/μ) [3 + 2]\": slope formula 3, the formula 2, in the order printed. The root sign is a Sinhala letter in the text layer and its reach is lost, so the formula is also shown as a crop of the scheme. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q4vi-scheme"
  },
  {
   "id": "phys-2024-hl-q7-vi",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "resolving-velocity-into-components",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q7(vi)",
+  "stem": "An athlete rotates a ball of mass 4 kg in a circle of radius 1.25 m. The ball is moving with an angular velocity of 21.6 rad s⁻¹ just before it is released. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later.",
   "questionText": "With the aid of a labelled diagram, resolve the velocity of the ball into its horizontal and vertical components.",
   "tariffModel": {
    "kind": "fixed"
@@ -34034,66 +34716,69 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "diagram showing horizontal and vertical components",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "ux = 27 cos 36°",
+    "verbatim": "uₓ = 27 cos 36°",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "uy = 27 sin 36°",
     "marks": 3
    }
   ],
-  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later.",
-  "notes": "The 27 m s–1 is the speed of the ball as it is released, calculated in the previous part."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q9b-iv",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "percentage-efficiency-of-a-drill",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q9(b)(iv)",
-  "questionText": "Calculate the percentage efficiency of the drill. (24)",
+  "stem": "A current of 5 A flows in an electric drill when it is connected to the mains supply. Some of the input energy is dissipated as heat. (ii) The drill has an electrical resistance of 22 Ω and it runs for 30 s. Calculate the heat energy produced by the drill. (iii) Calculate the input power supplied to the drill by the 230 V mains supply.",
+  "questionText": "Calculate the percentage efficiency of the drill.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "P = W/t",
+    "verbatim": "(Po × 100)/(Pi) or P = W/t",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "52.2 %",
     "marks": 3
    }
   ],
-  "notes": "The scheme equally accepts the ratio of output power to input power for the first mark; it is typeset as maths the text layer cannot carry. The input power comes from the previous part."
+  "notes": "The scheme's \"×\" is a Malayalam sign in the text layer (read by the bank's glyph map): the formula is also shown as a crop of the scheme. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q9biv-scheme"
  },
  {
   "id": "phys-2024-hl-q11-viii",
+  "subjectId": "physics",
   "topicId": "phys-3-2",
   "conceptId": "field-between-the-plates-of-a-capacitor",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q11(viii)",
+  "stem": "Capacitors and resistors can be combined to create timing circuits such as those used to create the flash on a camera. The circuit diagram below shows a resistor and a capacitator connected in series with a 30 V power supply. The current flowing in the circuit at a given instant is 0.3 mA.",
   "questionText": "Draw a diagram to show the electric field between the plates of the charged capacitor.",
   "tariffModel": {
    "kind": "fixed"
@@ -34101,44 +34786,58 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "shape",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "direction",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q11-circuit"
  },
  {
   "id": "phys-2024-hl-q12a-xi",
+  "subjectId": "physics",
   "topicId": "phys-4-5",
   "conceptId": "pair-annihilation-equation",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 HL Q12(a)(xi)",
-  "questionText": "Pair annihilation occurs when an electron and a positron meet. Write an equation that represents this process. (16)",
+  "questionText": "Pair annihilation occurs when an electron and a positron meet. Write an equation that represents this process.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "⁰₋₁e + ⁰₁e → 2γ",
+    "marks": 6,
+    "contextNote": "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side.",
+    "route": "side-a"
+   },
+   {
+    "id": "r2",
     "kind": "point",
     "verbatim": "2mc² = 2hf",
-    "marks": 6
+    "marks": 6,
+    "route": "side-b"
    }
   ],
-  "stem": "Pauli wrote, “I have done something very bad today by proposing a particle that cannot be detected; it is something no theorist should ever do”.",
-  "notes": "The scheme equally accepts the annihilation equation written in full nuclear notation; its stacked sub- and superscripts do not survive the text layer, so the card shows the // alternative."
+  "notes": "The scheme prints the equation \"// 2mc² = 2hf\", one [6]: two mutually exclusive answers, each a route inside the card. The equation is read from glyph positions and shown as a crop of the scheme. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "year": 2024,
+  "level": "higher",
+  "figureKey": "physics-2024-hl-q12a-xi-scheme"
  },
  {
   "id": "phys-2024-ol-q11-i",
