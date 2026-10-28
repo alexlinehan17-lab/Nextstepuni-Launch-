@@ -40818,5 +40818,3741 @@
   "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
   "year": 2026,
   "level": "higher"
+ },
+ {
+  "id": "phys-2026-ol-q1-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "displacement-in-free-fall-apparatus",
+  "section": "A",
+  "questionRef": "2026 OL Q1(i)",
+  "stem": "A student carried out an experiment to measure the value for the acceleration due to gravity g. She drew the following diagram to show the apparatus that she used.",
+  "questionText": "Copy the diagram above into your answerbook and mark the displacement s that the student measured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "distance indicated from bottom of ball",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "to trapdoor",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "s labelled",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints one phrase over two lines (\"distance indicated from bottom of ball\" / \"to trapdoor\") and prices each line [3]: rows as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q1-apparatus"
+ },
+ {
+  "id": "phys-2026-ol-q1-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "measuring-displacement-s",
+  "section": "A",
+  "questionRef": "2026 OL Q1(ii)",
+  "stem": "A student carried out an experiment to measure the value for the acceleration due to gravity g. She drew the following diagram to show the apparatus that she used.",
+  "questionText": "On your diagram, add in the piece of apparatus used to measure the displacement s.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "metre stick",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q1-apparatus"
+ },
+ {
+  "id": "phys-2026-ol-q1-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "trapdoor-connected-to-timer",
+  "section": "A",
+  "questionRef": "2026 OL Q1(iii)",
+  "stem": "A student carried out an experiment to measure the value for the acceleration due to gravity g. She drew the following diagram to show the apparatus that she used.",
+  "questionText": "Suggest a reason why the trapdoor is connected to the timer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "to stop the timer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q1-apparatus"
+ },
+ {
+  "id": "phys-2026-ol-q1-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "values-of-2s",
+  "section": "A",
+  "questionRef": "2026 OL Q1(iv)",
+  "questionText": "Copy and complete the table below into your answerbook by calculating the missing values for 2s in metres.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1.5",
+    "marks": 1,
+    "contextNote": "The scheme prints the four missing values in its table, in the table's order, at [4 x 1]."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1.6",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "1.7",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "1.8",
+    "marks": 1
+   }
+  ],
+  "notes": "The ask is a table with four empty cells; the question is shown as the printed crop of the ask and its table, and each missing value is a row at the scheme's [4 x 1]. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2026-ol-q1iv-table"
+ },
+ {
+  "id": "phys-2026-ol-q1-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "values-of-t-squared",
+  "section": "A",
+  "questionRef": "2026 OL Q1(v)",
+  "questionText": "Copy and complete the table below into your answerbook by calculating the missing values for t².",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "0.1296",
+    "marks": 1,
+    "contextNote": "The scheme prints the four missing values in its table, in the table's order, at [4 x 1]."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "0.1444",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "0.1521",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "0.16",
+    "marks": 1
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2026-ol-q1v-table"
+ },
+ {
+  "id": "phys-2026-ol-q1-vi",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "graph-of-2s-against-t-squared",
+  "section": "A",
+  "questionRef": "2026 OL Q1(vi)",
+  "stem": "A student carried out an experiment to measure the value for the acceleration due to gravity g. She drew the following diagram to show the apparatus that she used. The following data were recorded. s (cm) 65 70 75 80 85 90 t (s) 0.36 0.38 0.39 0.40 0.41 0.43",
+  "questionText": "Use the data to draw a graph of 2s (y–axis) against t² (x–axis).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axis",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "points plotted",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "line of best fit",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q1-scheme-tables"
+ },
+ {
+  "id": "phys-2026-ol-q1-vii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "g-from-slope",
+  "section": "A",
+  "questionRef": "2026 OL Q1(vii)",
+  "stem": "A student carried out an experiment to measure the value for the acceleration due to gravity g. She drew the following diagram to show the apparatus that she used. The following data were recorded. s (cm) 65 70 75 80 85 90 t (s) 0.36 0.38 0.39 0.40 0.41 0.43",
+  "questionText": "Calculate the slope of the graph to get a value for g.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "g = 9.63 m s⁻²",
+    "marks": 5,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "\"the graph\" is the student's own, from (vi); the card carries the scheme's completed tables it is drawn from. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q1-scheme-tables"
+ },
+ {
+  "id": "phys-2026-ol-q2-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "concave-mirror-apparatus",
+  "section": "A",
+  "questionRef": "2026 OL Q2(i)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "object",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mirror",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "screen",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "arrangement",
+    "marks": 3,
+    "contextNote": "[–1 if no label is present on diagram] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q2-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "marking-u-and-v",
+  "section": "A",
+  "questionRef": "2026 OL Q2(ii)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror.",
+  "questionText": "On your diagram, indicate the object distance u and the image distance v.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "u indicated between object and mirror",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "v indicated between mirror and screen",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "\"the image distance\" reads to the figure-pointer check as a printed image; the paper prints none for Q2, so the card links its page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Physics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
+ },
+ {
+  "id": "phys-2026-ol-q2-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "finding-image-distance",
+  "section": "A",
+  "questionRef": "2026 OL Q2(iii)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror.",
+  "questionText": "Describe the steps used to determine v.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "move screen/ move mirror / until sharpest image is formed / measure v / measure using a metre stick",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "move screen/ move mirror",
+      "until sharpest image is formed",
+      "measure v / measure using a metre stick"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    },
+    "contextNote": "The scheme prints \"[any two 6 + 3]\"."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q2-iv-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "mirror-formula",
+  "section": "A",
+  "questionRef": "2026 OL Q2(iv)(a)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 25 cm. She measured the image distance v to be 48 cm.",
+  "questionText": "State the formula used to calculate the focal length f.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1/u + 1/v = 1/f",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme sets the formula as stacked fractions whose + and = glyphs the text layer reads as Malayalam signs (repaired by the bank's glyph map): read with G('fraction') and shown as a crop. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q2iva-scheme-formula"
+ },
+ {
+  "id": "phys-2026-ol-q2-iv-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "focal-length-of-mirror",
+  "section": "A",
+  "questionRef": "2026 OL Q2(iv)(b)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 25 cm. She measured the image distance v to be 48 cm. (a) State the formula used to calculate the focal length f.",
+  "questionText": "Calculate f.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1/25 + 1/48 = 73/1200",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "f = 16.4 cm",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q2ivb-scheme-formula"
+ },
+ {
+  "id": "phys-2026-ol-q2-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "mirror-experiment-precaution",
+  "section": "A",
+  "questionRef": "2026 OL Q2(v)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror.",
+  "questionText": "Describe one precaution that the student could have taken to improve the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. repeat",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "sonometer-apparatus",
+  "section": "A",
+  "questionRef": "2026 OL Q3(i)",
+  "stem": "In an experiment to investigate the relationship between frequency f and length l for a stretched string, a student set a length of string vibrating and adjusted the length until resonance occurred. He measured l and noted the corresponding f. He repeated this for different values of f.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "sonometer / string / bridges / tension key / paper rider / tuning fork",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "sonometer",
+      "string",
+      "bridges",
+      "tension key",
+      "paper rider",
+      "tuning fork"
+     ]
+    },
+    "contextNote": "[–1 if no label is present on diagram] The scheme prices any three of these [any 3 x 3]."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "marking-length-l",
+  "section": "A",
+  "questionRef": "2026 OL Q3(ii)",
+  "stem": "In an experiment to investigate the relationship between frequency f and length l for a stretched string, a student set a length of string vibrating and adjusted the length until resonance occurred. He measured l and noted the corresponding f. He repeated this for different values of f.",
+  "questionText": "On your diagram, indicate the length l the student measured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct length indicated",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q3-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "finding-resonant-length",
+  "section": "A",
+  "questionRef": "2026 OL Q3(iii)",
+  "stem": "In an experiment to investigate the relationship between frequency f and length l for a stretched string, a student set a length of string vibrating and adjusted the length until resonance occurred. He measured l and noted the corresponding f. He repeated this for different values of f.",
+  "questionText": "Describe the steps that the student used to determine l for a particular value of f.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "tuning fork of known frequency (constant tension)",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "vary length until paper rider falls off",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q3-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "values-of-1-over-l",
+  "section": "A",
+  "questionRef": "2026 OL Q3(iv)",
+  "questionText": "Copy and complete the table above into your answerbook by calculating the missing values",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "0.025",
+    "marks": 1,
+    "contextNote": "The scheme prints the four missing values in its table, in the table's order, at [4 x 1]."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "0.027",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "0.030",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "0.033",
+    "marks": 1
+   }
+  ],
+  "notes": "The paper sets \"1/l\" as a stacked fraction the text layer breaks: the ask is shown as the printed crop of the table and the ask. The scheme prints the completed values in its table above its reprint of the ask. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2026-ol-q3iv-table"
+ },
+ {
+  "id": "phys-2026-ol-q3-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "graph-of-f-against-1-over-l",
+  "section": "A",
+  "questionRef": "2026 OL Q3(v)",
+  "questionText": "Draw a graph of f against",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axis",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "points plotted",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "line of best fit",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The ask ends in the stacked fraction \"1/l\": shown as the printed crop with the table it works from. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2026-ol-q3v-table"
+ },
+ {
+  "id": "phys-2026-ol-q3-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "frequency-length-relationship",
+  "section": "A",
+  "questionRef": "2026 OL Q3(vi)",
+  "stem": "In an experiment to investigate the relationship between frequency f and length l for a stretched string, a student set a length of string vibrating and adjusted the length until resonance occurred. He measured l and noted the corresponding f. He repeated this for different values of f.",
+  "questionText": "State the relationship between f and l.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "f is inversely proportional to l",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q4-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-of-fusion-apparatus",
+  "section": "A",
+  "questionRef": "2026 OL Q4(i)",
+  "stem": "A student carried out an experiment to measure l the specific latent heat of fusion of ice. She added ice to warm water in a copper calorimeter. When the ice had fully melted, she recorded the measurements below. She then calculated l.",
+  "questionText": "Draw a labelled diagram of the apparatus used in the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "calorimeter",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "water",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "ice",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "detail e.g. thermometer, mass balance, etc",
+    "marks": 3,
+    "contextNote": "[–1 if no label is present on diagram]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q4-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-change-of-melted-ice",
+  "section": "A",
+  "questionRef": "2026 OL Q4(ii)",
+  "stem": "A student carried out an experiment to measure l the specific latent heat of fusion of ice. She added ice to warm water in a copper calorimeter. When the ice had fully melted, she recorded the measurements below. She then calculated l. mass of calorimeter + warm water (kg) 0.450 mass of calorimeter + water + melted ice (kg) 0.474 initial temperature of the calorimeter and warm water (°C) 27 final temperature of calorimeter, water and melted ice (°C) 20 energy lost by calorimeter and water and given to the ice (J) 9585 When the ice was added to the warm water, all the ice melted.",
+  "questionText": "The initial temperature of the ice was 0 °C. Calculate the change in temperature of the melted ice, Δθ.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "20 – 0 = 20 °C",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q4-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "mass-of-ice-added",
+  "section": "A",
+  "questionRef": "2026 OL Q4(iii)",
+  "stem": "A student carried out an experiment to measure l the specific latent heat of fusion of ice. She added ice to warm water in a copper calorimeter. When the ice had fully melted, she recorded the measurements below. She then calculated l. mass of calorimeter + warm water (kg) 0.450 mass of calorimeter + water + melted ice (kg) 0.474 initial temperature of the calorimeter and warm water (°C) 27 final temperature of calorimeter, water and melted ice (°C) 20 energy lost by calorimeter and water and given to the ice (J) 9585 When the ice was added to the warm water, all the ice melted.",
+  "questionText": "Calculate the mass m of the ice added.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "0.474 – 0.450 = 0.024 kg",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q4-iv-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "energy-to-warm-melted-ice",
+  "section": "A",
+  "questionRef": "2026 OL Q4(iv)(a)",
+  "stem": "A student carried out an experiment to measure l the specific latent heat of fusion of ice. She added ice to warm water in a copper calorimeter. When the ice had fully melted, she recorded the measurements below. She then calculated l. mass of calorimeter + warm water (kg) 0.450 mass of calorimeter + water + melted ice (kg) 0.474 initial temperature of the calorimeter and warm water (°C) 27 final temperature of calorimeter, water and melted ice (°C) 20 energy lost by calorimeter and water and given to the ice (J) 9585 The student wrote the following equation: specific heat capacity of water, c = 4180 J kg⁻¹ K⁻¹",
+  "questionText": "Calculate the energy needed to change the temperature of the melted ice from 0 °C to 20 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Q = m c Δθ = 2006.4 J",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q4-equation"
+ },
+ {
+  "id": "phys-2026-ol-q4-iv-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "specific-latent-heat-of-fusion",
+  "section": "A",
+  "questionRef": "2026 OL Q4(iv)(b)",
+  "stem": "A student carried out an experiment to measure l the specific latent heat of fusion of ice. She added ice to warm water in a copper calorimeter. When the ice had fully melted, she recorded the measurements below. She then calculated l. mass of calorimeter + warm water (kg) 0.450 mass of calorimeter + water + melted ice (kg) 0.474 initial temperature of the calorimeter and warm water (°C) 27 final temperature of calorimeter, water and melted ice (°C) 20 energy lost by calorimeter and water and given to the ice (J) 9585 The student wrote the following equation:",
+  "questionText": "Calculate l, the specific latent heat of fusion of the ice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "l = 315 775 J kg⁻¹",
+    "marks": 6,
+    "contextNote": "The scheme's working: 9585 = (0.024)(l) + 2006.4 The scheme accepts a partial answer for 3."
+   }
+  ],
+  "notes": "The scheme prints its working line and the answer under one cell [6]: one row, the answer, with the working as its note. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q4-equation"
+ },
+ {
+  "id": "phys-2026-ol-q4-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "why-warm-water",
+  "section": "A",
+  "questionRef": "2026 OL Q4(v)",
+  "stem": "A student carried out an experiment to measure l the specific latent heat of fusion of ice. She added ice to warm water in a copper calorimeter. When the ice had fully melted, she recorded the measurements below. She then calculated l.",
+  "questionText": "Suggest a reason why the student used warm water at the start of the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "so that the energy gained = energy lost / ice melts quicker",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q4-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "latent-heat-precaution",
+  "section": "A",
+  "questionRef": "2026 OL Q4(vi)",
+  "stem": "A student carried out an experiment to measure l the specific latent heat of fusion of ice. She added ice to warm water in a copper calorimeter. When the ice had fully melted, she recorded the measurements below. She then calculated l.",
+  "questionText": "State one precaution the student should take to improve the accuracy of the experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "insulate the calorimeter, etc.",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-temperature-apparatus",
+  "section": "A",
+  "questionRef": "2026 OL Q5(i)",
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T.",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "conductor",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ohmmeter",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "arrangement",
+    "marks": 3,
+    "contextNote": "[–1 if no label is present on diagram] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q5-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "measuring-resistance",
+  "section": "A",
+  "questionRef": "2026 OL Q5(ii)",
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T.",
+  "questionText": "Name the piece of apparatus used to measure the resistance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ohmmeter",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q5-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "varying-conductor-temperature",
+  "section": "A",
+  "questionRef": "2026 OL Q5(iii)",
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T.",
+  "questionText": "Describe how the student varied the temperature of the metallic conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "any appropriate heat source",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q5-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-temperature-relationship",
+  "section": "A",
+  "questionRef": "2026 OL Q5(iv)",
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. The student used their recorded data to plot the following graph.",
+  "questionText": "Describe the relationship between T and R.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "R increases linearly with increasing T",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q5-graph"
+ },
+ {
+  "id": "phys-2026-ol-q5-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-in-melting-ice",
+  "section": "A",
+  "questionRef": "2026 OL Q5(v)",
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. The student used their recorded data to plot the following graph.",
+  "questionText": "Use the graph to find the resistance of the metallic conductor when it was placed into melting ice.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "4.5 Ω",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q5-graph"
+ },
+ {
+  "id": "phys-2026-ol-q5-vi",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "temperature-of-unknown-liquid",
+  "section": "A",
+  "questionRef": "2026 OL Q5(vi)",
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. The student used their recorded data to plot the following graph. The student used the apparatus to estimate the temperature of an unknown liquid. The resistance was measured as 7.6 Ω.",
+  "questionText": "Use the graph to estimate the temperature of the unknown liquid.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "46 °C",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q5-graph"
+ },
+ {
+  "id": "phys-2026-ol-q6-a",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "vector-and-scalar",
+  "section": "B",
+  "questionRef": "2026 OL Q6(a)",
+  "questionText": "State the difference between a vector and a scalar quantity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a scalar quantity has magnitude only / a vector quantity has magnitude and direction",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-b",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "newtons-laws-sentences",
+  "section": "B",
+  "questionRef": "2026 OL Q6(b)",
+  "questionText": "Copy and complete the following sentences.\nAn object moving at constant velocity will continue moving at constant velocity unless a net ___________ acts on it.\nThe force on an object is ___________ to the rate of change of the object’s momentum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "proportional",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Two blanks, answered in the order of the sentences under one cell [4 + 3]: a row each, in order. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-c",
+  "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "work-done-raising-mass",
+  "section": "B",
+  "questionRef": "2026 OL Q6(c)",
+  "questionText": "Calculate the work done in giving an 11 kg mass potential energy by raising it through a height of 0.5 m.\nacceleration due to gravity g = 9.8 m s⁻²",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "53.9 J",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-d",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "instruments-energy-and-force",
+  "section": "B",
+  "questionRef": "2026 OL Q6(d)",
+  "questionText": "Choose, from the following list of apparatus, an instrument used to measure (i) energy transferred, (ii) force.\nWrite your answer in your answerbook.\nbarometer joulemeter newton balance voltmeter",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(i) — joulemeter",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "(ii) — newton balance",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "The scheme answers (i) and (ii) under one cell [4 + 3]: one card for (d), at the part's 7. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-e",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "boyles-law",
+  "section": "B",
+  "questionRef": "2026 OL Q6(e)",
+  "questionText": "State Boyle’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the pressure is inversely proportional to the volume (for a fixed mass of gas at constant temperature}",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "The scheme closes its bracket with \"}\" (as printed). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-f",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "field-of-bar-magnet",
+  "section": "B",
+  "questionRef": "2026 OL Q6(f)",
+  "questionText": "Draw the magnetic field around a bar magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct shape",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct direction",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-g",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "parallel-resistance",
+  "section": "B",
+  "questionRef": "2026 OL Q6(g)",
+  "questionText": "Two resistors are connected in parallel as in the diagram on the right. Calculate the total resistance in the circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "R = 4.17 Ω",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "The scheme prints its working as stacked fractions above the answer and one cell [7] under both; the answer is the row. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q6g-resistors"
+ },
+ {
+  "id": "phys-2026-ol-q6-h",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "primary-colours",
+  "section": "B",
+  "questionRef": "2026 OL Q6(h)",
+  "questionText": "State the three primary colours of light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "red / green / blue",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "red",
+      "green",
+      "blue"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      2
+     ]
+    },
+    "contextNote": "The scheme prints these items under one sum, [3 + 2 + 2], and names no order: a response earns the marks step by step."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-4",
+  "conceptId": "detecting-infrared",
+  "section": "B",
+  "questionRef": "2026 OL Q6(i)",
+  "questionText": "Infrared radiation is electromagnetic radiation with a wavelength longer than visible red light. Describe how infrared radiation can be detected.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-j",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "insulator-and-conductor",
+  "section": "B",
+  "questionRef": "2026 OL Q6(j)",
+  "questionText": "Explain the difference between an electrical insulator and an electrical conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electrical insulator does not allow current to flow through it / an electrical conductor does allow current to flow through it",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-k",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "doping",
+  "section": "B",
+  "questionRef": "2026 OL Q6(k)",
+  "questionText": "Explain what is meant by doping a semiconductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "adding impurities / improving the conductivity of the material",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q6-l",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photoelectric-effect",
+  "section": "B",
+  "questionRef": "2026 OL Q6(l)",
+  "questionText": "Explain what is meant by the photoelectric effect.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "emission of electrons from the surface of a metal when light {of a suitable frequency} shines on it",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "newtons-third-law",
+  "section": "B",
+  "questionRef": "2026 OL Q7(i)",
+  "stem": "Apollo 11 launched from Kennedy Space Station in Florida on 16th July, 1969.",
+  "questionText": "State Newton’s 3rd law of motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "every action has an equal and opposite reaction",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "rocket-lift-off",
+  "section": "B",
+  "questionRef": "2026 OL Q7(ii)",
+  "stem": "Apollo 11 launched from Kennedy Space Station in Florida on 16th July, 1969.",
+  "questionText": "Use Newton’s 3rd law to explain why the rocket was able to lift off from the Earth.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the rocket engine exerts a downward force",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "an equal and opposite upward force acts on the rocket",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "force-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q7(iii)",
+  "stem": "Apollo 11 started from rest (u = 0 m s⁻¹). Its engine exerted a force that increased its velocity.",
+  "questionText": "Explain what is meant by a force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(force) causes acceleration",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "unit-of-force",
+  "section": "B",
+  "questionRef": "2026 OL Q7(iv)",
+  "stem": "Apollo 11 started from rest (u = 0 m s⁻¹). Its engine exerted a force that increased its velocity.",
+  "questionText": "State the unit of force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "newton",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "average-acceleration-of-rocket",
+  "section": "B",
+  "questionRef": "2026 OL Q7(v)",
+  "stem": "Apollo 11 started from rest (u = 0 m s⁻¹). Its engine exerted a force that increased its velocity.",
+  "questionText": "Assume that it reached a velocity v of 7800 m s⁻¹ in a time t of 600 s. Calculate the average acceleration a during this phase of the flight.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "v = u + at",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "a = 13 m s⁻²",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-vi",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "average-net-force-on-rocket",
+  "section": "B",
+  "questionRef": "2026 OL Q7(vi)",
+  "stem": "Apollo 11 started from rest (u = 0 m s⁻¹). Its engine exerted a force that increased its velocity. (v) Assume that it reached a velocity v of 7800 m s⁻¹ in a time t of 600 s. Calculate the average acceleration a during this phase of the flight.",
+  "questionText": "Assume that the rocket’s average mass m is 45 702 kg. Calculate the average net force F on the rocket during this phase of the flight.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F = ma",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "F = 594 126 N",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-vii",
+  "subjectId": "physics",
+  "topicId": "phys-1-6",
+  "conceptId": "velocity-in-orbit",
+  "section": "B",
+  "questionRef": "2026 OL Q7(vii)",
+  "stem": "After this, the rocket went into orbit around the Earth. During this next phase, Apollo 11 was moving at a constant speed of 7800 m s⁻¹.",
+  "questionText": "Is Apollo 11 moving at a constant velocity while in orbit? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "no",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "moving in a circle",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-viii",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "weight-on-the-moon",
+  "section": "B",
+  "questionRef": "2026 OL Q7(viii)",
+  "stem": "Apollo 11 landed on the Moon on 20th July, 1969. Neil Armstrong became the first person to step on the Moon.",
+  "questionText": "Neil Armstrong, while wearing his spacesuit, had a mass of 163 kg on Earth. Given that the acceleration due to gravity on the Moon is 1.6 m s⁻², calculate his weight on the Moon",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "W = mg",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "W = 260.8 N",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The paper and the scheme print \"... calculate his weight on the Moon\" with no full stop. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-ix",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "mass-on-the-moon",
+  "section": "B",
+  "questionRef": "2026 OL Q7(ix)",
+  "stem": "Apollo 11 landed on the Moon on 20th July, 1969. Neil Armstrong became the first person to step on the Moon. (viii) Neil Armstrong, while wearing his spacesuit, had a mass of 163 kg on Earth. Given that the acceleration due to gravity on the Moon is 1.6 m s⁻², calculate his weight on the Moon",
+  "questionText": "What was his mass on the Moon?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "163 kg",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q7-x",
+  "subjectId": "physics",
+  "topicId": "phys-1-5",
+  "conceptId": "no-atmosphere-on-moon",
+  "section": "B",
+  "questionRef": "2026 OL Q7(x)",
+  "questionText": "Buzz Aldrin, the second person on the Moon left a footprint. That footprint has remained on the Moon as the Moon has no atmosphere. Explain why there is no atmosphere on the Moon.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force of gravity is too low",
+    "marks": 5,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "u-value",
+  "section": "B",
+  "questionRef": "2026 OL Q8(i)",
+  "stem": "Polystyrene boards can be used to insulate the wall cavity of a house. This improves the U‐value of the house.",
+  "questionText": "Explain what is meant by U‐value.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the rate of transfer of heat through a material",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "celsius-to-kelvin",
+  "section": "B",
+  "questionRef": "2026 OL Q8(ii)",
+  "stem": "Insulation helps to keep the temperature inside the house at a comfortable level. A thermometer inside the house can be used to monitor this temperature.",
+  "questionText": "The temperature inside a house is maintained at 20 °C. Calculate this temperature in kelvin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "293(.15) K",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "thermometric-property",
+  "section": "B",
+  "questionRef": "2026 OL Q8(iii)",
+  "questionText": "All thermometers are based on a thermometric property. Explain what is meant by a thermometric property.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "property that changes (measurably) with temperature",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "example-of-thermometric-property",
+  "section": "B",
+  "questionRef": "2026 OL Q8(iv)",
+  "questionText": "State an example of a thermometric property.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. length, etc.",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "heat-and-temperature",
+  "section": "B",
+  "questionRef": "2026 OL Q8(v)",
+  "stem": "When heat is added to the inner wall, its temperature slowly increases.",
+  "questionText": "Explain the difference between heat and temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heat is a form of energy / temperature is a measure of hotness",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "specific-heat-capacity-of-block",
+  "section": "B",
+  "questionRef": "2026 OL Q8(vi)",
+  "stem": "When heat is added to the inner wall, its temperature slowly increases.",
+  "questionText": "The mass m of a block used to construct the inner wall in a house is 23 kg. Energy ΔE of 41 400 J is needed to raise the temperature of the block by 2 °C. Calculate the specific heat capacity c of the block.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ΔE = mcΔθ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "c = 900 J kg⁻¹ K⁻¹",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "ways-heat-is-transferred",
+  "section": "B",
+  "questionRef": "2026 OL Q8(vii)",
+  "stem": "The external surface of the house is heated by the Sun. Heat is transferred from the Sun by radiation.",
+  "questionText": "Radiation is one type of heat transfer. Name another way in which heat can be transferred.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "conduction / convection",
+    "marks": 5,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q8-viii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "heat-transfer-experiment",
+  "section": "B",
+  "questionRef": "2026 OL Q8(viii)",
+  "questionText": "Describe an experiment to show how heat can be transferred.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q9-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "refraction-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q9(i)",
+  "stem": "Spearfishing is one of the oldest human hunting practices. Even without formal science, early spear fishers realised fish weren’t where they “appeared” to be in the water. Hunters adapted and learned to adjust their aim. This is one of humanity’s earliest applications of refraction.",
+  "questionText": "Explain what is meant by refraction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the bending of light (as it travels from one medium to another)",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q9-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "refraction-experiment",
+  "section": "B",
+  "questionRef": "2026 OL Q9(ii)",
+  "questionText": "Describe an experiment to show that light undergoes refraction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q9-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "apparent-depth-of-fish",
+  "section": "B",
+  "questionRef": "2026 OL Q9(iii)",
+  "stem": "Spearfishing is one of the oldest human hunting practices. Even without formal science, early spear fishers realised fish weren’t where they “appeared” to be in the water. Hunters adapted and learned to adjust their aim. This is one of humanity’s earliest applications of refraction.",
+  "questionText": "A fish is at a depth of 2 m below the surface of the water. The refractive index of the water is 1.33. Calculate the apparent depth of the fish.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparent depth = 1.5 m",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The paper's \"Note: real depth / apparent depth = refractive index\" is a stacked fraction with an \"=\" the text layer reads as a Malayalam sign: shown as a crop of the page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q9iii-note"
+ },
+ {
+  "id": "phys-2026-ol-q9-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "aiming-at-the-fish",
+  "section": "B",
+  "questionRef": "2026 OL Q9(iv)",
+  "stem": "Spearfishing is one of the oldest human hunting practices. Even without formal science, early spear fishers realised fish weren’t where they “appeared” to be in the water. Hunters adapted and learned to adjust their aim. This is one of humanity’s earliest applications of refraction.",
+  "questionText": "Does the hunter need to aim above or below where the fish appears to be?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "below",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q9-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "critical-angle-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q9(v)",
+  "questionText": "Explain what is meant by the critical angle.\nA diagram may help your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "angle of incidence (in the denser medium causing)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "angle of refraction of 90°",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q9-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "refractive-index-from-critical-angle",
+  "section": "B",
+  "questionRef": "2026 OL Q9(vi)",
+  "questionText": "A diver notes that the critical angle C of water is 49°. Calculate the refractive index of the water n to 3 decimal places.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n = 1/(sin C)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "n = 1.325",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q9vi-scheme-formula"
+ },
+ {
+  "id": "phys-2026-ol-q9-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "total-internal-reflection-path",
+  "section": "B",
+  "questionRef": "2026 OL Q9(vii)",
+  "questionText": "Copy and complete the diagram below to show the path of the light. The light is travelling in the water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "light reflected in water (at the same angle)",
+    "marks": 6
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q9vii-diagram"
+ },
+ {
+  "id": "phys-2026-ol-q9-viii-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "fibre-optic-diagram",
+  "section": "B",
+  "questionRef": "2026 OL Q9(viii)(a)",
+  "stem": "A fibre optic cable is a thin flexible fibre with a glass core that can transmit light from one end to the other by total internal reflection.",
+  "questionText": "Draw a labelled diagram to show how a ray of light is transmitted through a fibre optic cable by total internal reflection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ray of light in material",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "multiple internal reflections",
+    "marks": 3,
+    "contextNote": "[–1 if no label is present on diagram]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q9-viii-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "use-of-fibre-optics",
+  "section": "B",
+  "questionRef": "2026 OL Q9(viii)(b)",
+  "stem": "A fibre optic cable is a thin flexible fibre with a glass core that can transmit light from one end to the other by total internal reflection.",
+  "questionText": "State one use of fibre optic cables.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "endoscopy / broadband / Christmas decorations",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "endoscopy",
+      "broadband",
+      "Christmas decorations"
+     ]
+    },
+    "openList": true,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The scheme reprints the ask as \"State one other use of fibre optic cables.\"; its list closes \"etc.\": an open menu, one answer. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q10-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "electric-current-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q10(i)",
+  "stem": "A student drew the electrical circuits shown below to show bulbs B₁ and B₂ connected in series, and then connected in parallel. B₁ and B₂ are identical bulbs.",
+  "questionText": "Explain what is meant by electric current.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "flow of charge",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-series"
+ },
+ {
+  "id": "phys-2026-ol-q10-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "voltmeter-and-ammeter",
+  "section": "B",
+  "questionRef": "2026 OL Q10(ii)",
+  "stem": "A student drew the electrical circuits shown below to show bulbs B₁ and B₂ connected in series, and then connected in parallel. B₁ and B₂ are identical bulbs.",
+  "questionText": "(a) Instrument X is used to measure voltage. Name the instrument. (b) Instrument Y is used to measure current. Name the instrument.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "voltmeter",
+    "marks": 6
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "ammeter",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The scheme answers (a) and (b) under one cell [6 + 3]: one card for (ii). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-series"
+ },
+ {
+  "id": "phys-2026-ol-q10-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "voltage-across-series-bulb",
+  "section": "B",
+  "questionRef": "2026 OL Q10(iii)",
+  "stem": "A student drew the electrical circuits shown below to show bulbs B₁ and B₂ connected in series, and then connected in parallel. B₁ and B₂ are identical bulbs.",
+  "questionText": "The voltage across B₁ is 5 V. What is the voltage across B₂? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "5 V",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "total voltage is 10 V",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-series"
+ },
+ {
+  "id": "phys-2026-ol-q10-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-of-bulb",
+  "section": "B",
+  "questionRef": "2026 OL Q10(iv)",
+  "stem": "A student drew the electrical circuits shown below to show bulbs B₁ and B₂ connected in series, and then connected in parallel. B₁ and B₂ are identical bulbs.",
+  "questionText": "The current through B₁ is 0.5 A. The voltage across it is 5 V. Calculate the resistance of B₁.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "V = IR",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "10 Ω",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-series"
+ },
+ {
+  "id": "phys-2026-ol-q10-v",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "series-bulbs-light-together",
+  "section": "B",
+  "questionRef": "2026 OL Q10(v)",
+  "stem": "A student drew the electrical circuits shown below to show bulbs B₁ and B₂ connected in series, and then connected in parallel. B₁ and B₂ are identical bulbs.",
+  "questionText": "Write one of the following statements (1), (2) or (3) in your answerbook to describe how the bulbs light in the circuit when the battery is connected.\n(1) B₁ lights first. (2) B₂ lights first. (3) B₁ and B₂ light at the same time.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(3) B₁ and B₂ light at the same time",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-series"
+ },
+ {
+  "id": "phys-2026-ol-q10-vi",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "series-circuit-symbols",
+  "section": "B",
+  "questionRef": "2026 OL Q10(vi)",
+  "stem": "A student drew the electrical circuits shown below to show bulbs B₁ and B₂ connected in series, and then connected in parallel. B₁ and B₂ are identical bulbs.",
+  "questionText": "Use electrical circuit symbols to redraw the series circuit above.\nNote: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering this question.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct symbols",
+    "marks": 4,
+    "contextNote": "The scheme prices this [4 x 1], a mark a symbol, and names no symbol."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct arrangement",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-series"
+ },
+ {
+  "id": "phys-2026-ol-q10-vii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "advantage-of-parallel-bulbs",
+  "section": "B",
+  "questionRef": "2026 OL Q10(vii)",
+  "stem": "In the circuit above the bulbs are connected in series but they can also be connected in parallel (as shown below).",
+  "questionText": "State one advantage of connecting bulbs in parallel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. if bulbs break, the others will keep lighting, etc.",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-parallel"
+ },
+ {
+  "id": "phys-2026-ol-q10-viii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "voltage-across-parallel-bulbs",
+  "section": "B",
+  "questionRef": "2026 OL Q10(viii)",
+  "stem": "In the circuit above the bulbs are connected in series but they can also be connected in parallel (as shown below).",
+  "questionText": "Compare the voltage across B₁ with the voltage across B₂ in the new circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the same",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-parallel"
+ },
+ {
+  "id": "phys-2026-ol-q10-ix",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "current-through-parallel-bulb",
+  "section": "B",
+  "questionRef": "2026 OL Q10(ix)",
+  "stem": "In the circuit above the bulbs are connected in series but they can also be connected in parallel (as shown below).",
+  "questionText": "Instrument Y now reads 2 A. Calculate the current now flowing through B₁.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1 A",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-parallel"
+ },
+ {
+  "id": "phys-2026-ol-q10-x",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "increasing-battery-voltage",
+  "section": "B",
+  "questionRef": "2026 OL Q10(x)",
+  "stem": "In the circuit above the bulbs are connected in series but they can also be connected in parallel (as shown below).",
+  "questionText": "What effect would increasing the voltage of the battery have on the current flowing through each of the bulbs in this parallel circuit?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "current increases",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q10-parallel"
+ },
+ {
+  "id": "phys-2026-ol-q11-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "doppler-effect-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q11(i)",
+  "stem": "Police use radar guns to measure the speed of moving vehicles by detecting changes in the frequency of reflected microwaves. This is an application of the Doppler effect.",
+  "questionText": "Explain what is meant by the Doppler effect.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(apparent) change in frequency due to the movement of the source/observer",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q11-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "laws-of-reflection",
+  "section": "B",
+  "questionRef": "2026 OL Q11(ii)",
+  "stem": "Reflection is a wave phenomenon.",
+  "questionText": "State one of the laws of reflection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "angle of incidence equals angle of reflection / incident ray, reflected ray and normal all lie on same plane",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q11-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "reflection-experiment",
+  "section": "B",
+  "questionRef": "2026 OL Q11(iii)",
+  "questionText": "Describe an experiment to show that a wave can undergo reflection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q11-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "refractive-index-of-glass",
+  "section": "B",
+  "questionRef": "2026 OL Q11(iv)",
+  "stem": "Refraction is another wave phenomenon.",
+  "questionText": "Light strikes a glass block at an angle of incidence of 40°. It is refracted at an angle of 25°. Calculate the refractive index n of the glass block.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "n = (sin i)/(sin r)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "n = 1.52",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q11iv-scheme-formula"
+ },
+ {
+  "id": "phys-2026-ol-q11-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "why-sound-diffracts-through-a-door",
+  "section": "B",
+  "questionRef": "2026 OL Q11(v)",
+  "stem": "Waves can also undergo diffraction, interference and polarisation. Diffraction is the sideways spreading of a wave as it passes through a gap.",
+  "questionText": "The diagrams on the right show a sound wave and a light wave as they pass through a doorway. Explain why the sound wave diffracts as it passes through the door but the light wave does not.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "wavelength of sound is similar to the width of the gap / wavelength of a light wave is not similar to the width of the gap",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q11v-waves"
+ },
+ {
+  "id": "phys-2026-ol-q11-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "diffraction-and-interference-experiment",
+  "section": "B",
+  "questionRef": "2026 OL Q11(vi)",
+  "questionText": "Describe an experiment to show that light undergoes diffraction and interference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q11-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "out-of-phase-interference",
+  "section": "B",
+  "questionRef": "2026 OL Q11(vii)",
+  "questionText": "Two coherent waves meet out of phase. Do they undergo constructive or destructive interference?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "destructive interference",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q11-viii",
+  "subjectId": "physics",
+  "topicId": "phys-2-7",
+  "conceptId": "why-sound-cannot-be-polarised",
+  "section": "B",
+  "questionRef": "2026 OL Q11(viii)",
+  "questionText": "Explain why light waves can be polarised but sound waves cannot.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "light waves are transverse waves / sound waves are longitudinal waves",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q12-i",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "properties-of-electron",
+  "section": "B",
+  "questionRef": "2026 OL Q12(i)",
+  "stem": "According to J. J. Thomson’s plum pudding model, atoms were like buns: a soft, positive “dough” with negative electrons dotted around like raisins. Ernest Rutherford wasn’t convinced of this. He decided to test this idea in the laboratory. His team fired tiny particles, called alpha particles (helium nuclei), at an extremely thin sheet of gold foil.",
+  "questionText": "State two properties of an electron.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "negative charge / small mass",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "negative charge",
+      "small mass"
+     ]
+    },
+    "openList": true,
+    "contextNote": "[accept partial answer for 4] The scheme prints its list as examples (\"e.g. ... etc.\"): the list is open."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q12-ii",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "diagram-of-an-atom",
+  "section": "B",
+  "questionRef": "2026 OL Q12(ii)",
+  "stem": "Rutherford’s gold foil experiment changed scientific views on the structure of the atom.",
+  "questionText": "Draw a labelled diagram of an atom showing the position of the protons, neutrons and electrons.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "diagram of nucleus containing protons and neutrons with electrons orbiting",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q12-iii",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "atomic-number",
+  "section": "B",
+  "questionRef": "2026 OL Q12(iii)",
+  "stem": "79 is the atomic number and 197 is the mass number.",
+  "questionText": "Explain what is meant by the atomic number of an element.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "atomic number is the number of protons in an atom",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q12-iv",
+  "subjectId": "physics",
+  "topicId": "phys-4-3",
+  "conceptId": "neutrons-in-gold",
+  "section": "B",
+  "questionRef": "2026 OL Q12(iv)",
+  "questionText": "Calculate the number of neutrons that are in an atom of",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "197−79 = 118 neutrons",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The paper sets the nuclide as stacked numbers beside \"Au\" that the text layer cannot order: the ask is shown as the printed crop. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2026-ol-q12iv-ask"
+ },
+ {
+  "id": "phys-2026-ol-q12-v",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "producing-electrons-in-crt",
+  "section": "B",
+  "questionRef": "2026 OL Q12(v)",
+  "stem": "In Thomson’s earlier work, he used a piece of apparatus called a cathode ray tube. A cathode ray is a beam of electrons.",
+  "questionText": "How are the electrons produced in a cathode ray tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermionic emission",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q12-vi",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "accelerating-electrons-in-crt",
+  "section": "B",
+  "questionRef": "2026 OL Q12(vi)",
+  "stem": "In Thomson’s earlier work, he used a piece of apparatus called a cathode ray tube. A cathode ray is a beam of electrons. The electrons are accelerated to very high speeds in the tube.",
+  "questionText": "How are the electrons accelerated in the tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "high voltage",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q12-vii",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "steering-an-electron-beam",
+  "section": "B",
+  "questionRef": "2026 OL Q12(vii)",
+  "stem": "In Thomson’s earlier work, he used a piece of apparatus called a cathode ray tube. A cathode ray is a beam of electrons.",
+  "questionText": "Describe how the direction of a beam of electrons can be controlled in a cathode ray tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electric field / magnetic field",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q12-viii",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "kinetic-energy-of-electron",
+  "section": "B",
+  "questionRef": "2026 OL Q12(viii)",
+  "stem": "In a cathode ray tube, a zinc sulphide screen can be used to convert the electrons’ kinetic energy into light energy.",
+  "questionText": "Given that an electron in a cathode ray tube has a mass m of 9.1 × 10⁻³¹ kg and moves with a velocity v of 3 × 10⁶ m s⁻¹, calculate the kinetic energy of the electron travelling in the cathode ray tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Eₖ= 1/2 mv²",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "4. 095×10⁻¹⁸ J",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The scheme sets both lines in CambriaMath: the formula as a stacked fraction (read with G('fraction')) and the answer with bold digits and broken \"x\" and \"-\" glyphs whose raised power of ten the text layer cannot raise. Both are shown as a crop of the scheme. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q12viii-scheme-formula"
+ },
+ {
+  "id": "phys-2026-ol-q12-ix",
+  "subjectId": "physics",
+  "topicId": "phys-4-1",
+  "conceptId": "use-of-crt",
+  "section": "B",
+  "questionRef": "2026 OL Q12(ix)",
+  "questionText": "State one use for a cathode ray tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "old TV monitor / ECG",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "old TV monitor",
+      "ECG"
+     ]
+    },
+    "openList": true,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q13-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "how-sound-is-produced",
+  "section": "B",
+  "questionRef": "2026 OL Q13(i)",
+  "stem": "Every kind of sound is produced by vibrations. The sound source may be a violin, a car horn or a barking dog. Whatever it is, some part of it is vibrating while it is producing sound. The vibrations from the source disturb the air in such a way that sound waves are produced. These waves travel through a substance in all directions, by passing the vibrations from molecule to molecule. If the waves happen to reach someone’s ear, they set up vibrations that are perceived as sound.",
+  "questionText": "Explain how sound is produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sound is produced by vibrations",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q13-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "medium-and-mechanical-waves",
+  "section": "B",
+  "questionRef": "2026 OL Q13(ii)",
+  "stem": "Detecting sound depends on three things. There must be a vibrating source to set up sound waves, a medium to carry the waves, and a receiver to detect them. Sound waves cannot travel through a vacuum.",
+  "questionText": "Sound needs a medium to carry the waves.\n(a) Explain what is meant by a medium.\n(b) Identify if sound is a mechanical wave or an electromagnetic wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a substance through which a wave travels",
+    "marks": 4
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mechanical",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers (a) and (b) under one cell [4 + 3]: one card for (ii). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q13-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "sound-in-a-vacuum-experiment",
+  "section": "B",
+  "questionRef": "2026 OL Q13(iii)",
+  "questionText": "Describe a laboratory experiment to show that sound cannot travel through a vacuum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q13-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "sound-faster-in-solids",
+  "section": "B",
+  "questionRef": "2026 OL Q13(iv)",
+  "questionText": "Explain why sound travels faster in solids than in gases.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "molecules are more tightly packed in a solid",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q13-v",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "frequency-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q13(v)",
+  "questionText": "Sources can vibrate at different frequencies. Explain what is meant by the frequency of a wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "number of waves passing a point each second",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q13-vi",
+  "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "frequency-of-sound-wave",
+  "section": "B",
+  "questionRef": "2026 OL Q13(vi)",
+  "questionText": "The speed of sound in air c is 340 m s⁻¹. A sound wave has a wavelength λ of 0.78 m. Calculate the frequency f of the wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "c = f λ",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "substitution",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "f = 435.9 Hz",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q13-vii",
+  "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "frequency-and-pitch",
+  "section": "B",
+  "questionRef": "2026 OL Q13(vii)",
+  "questionText": "Another sound has a frequency of 200 Hz. Identify if changing the frequency affects the loudness, the pitch or the quality of the sound.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "pitch",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "moment-of-a-force",
+  "section": "B",
+  "questionRef": "2026 OL Q14(a)(i)",
+  "questionText": "Explain what is meant by the moment of a force.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the turning effect of a force about a pivot / force x perpendicular distance",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "pivot-to-centre-of-gravity",
+  "section": "B",
+  "questionRef": "2026 OL Q14(a)(ii)",
+  "stem": "A uniform beam with length 2 m has a weight of 120 N. It appears that the 120 N acts through the centre of gravity of the beam. It is placed horizontally on a pivot which is 0.8 m from the left end of the beam.",
+  "questionText": "Calculate the distance between the pivot and the centre of gravity of the beam.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1 − 0.8 = 0.2 m",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14a-beam1"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-iii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "moment-of-beam-weight",
+  "section": "B",
+  "questionRef": "2026 OL Q14(a)(iii)",
+  "stem": "A uniform beam with length 2 m has a weight of 120 N. It appears that the 120 N acts through the centre of gravity of the beam. It is placed horizontally on a pivot which is 0.8 m from the left end of the beam.",
+  "questionText": "Calculate the moment, about the pivot, due to the 120 N weight of the beam acting through its centre of gravity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "M = Fd",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "24 N m",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14a-beam1"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "conditions-for-equilibrium",
+  "section": "B",
+  "questionRef": "2026 OL Q14(a)(iv)",
+  "stem": "Students hang a 30 N weight on the left‐hand side of the beam, as shown below. The pivot exerts an upward force of 150 N. The beam is now stationary and in equilibrium.",
+  "questionText": "State the two conditions necessary for equilibrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "upward forces = downward forces",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "clockwise moments = anticlockwise moments",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14a-beam2"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-v",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "beam-in-equilibrium",
+  "section": "B",
+  "questionRef": "2026 OL Q14(a)(v)",
+  "stem": "A uniform beam with length 2 m has a weight of 120 N. It appears that the 120 N acts through the centre of gravity of the beam. It is placed horizontally on a pivot which is 0.8 m from the left end of the beam. Students hang a 30 N weight on the left‐hand side of the beam, as shown below. The pivot exerts an upward force of 150 N. The beam is now stationary and in equilibrium.",
+  "questionText": "Show by calculation that the beam is in equilibrium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "150 N = 30 N + 120 N or (120)(0.2) N m = (30)(0.8) N m",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14a-beam2"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "harmonics-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(i)",
+  "stem": "A group of students investigate how different musical instruments produce sound. A clarinet can be treated as a pipe that is closed at one end. Different harmonics can be set up in a pipe closed at one end.",
+  "questionText": "Explain what is meant by harmonics.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "frequencies which are multiples of the fundamental",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-ii-a",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "fundamental-in-closed-pipe",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(ii)(a)",
+  "stem": "A group of students investigate how different musical instruments produce sound. A clarinet can be treated as a pipe that is closed at one end. Different harmonics can be set up in a pipe closed at one end.",
+  "questionText": "Copy and complete the diagram on the right to show the fundamental frequency in a pipe closed at one end, showing any nodes or antinodes in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "node at closed end / antinode at open end",
+    "marks": 5
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct shape",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14b-closed-pipe"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-ii-b",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "labelling-node-and-antinode",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(ii)(b)",
+  "stem": "A group of students investigate how different musical instruments produce sound. A clarinet can be treated as a pipe that is closed at one end. Different harmonics can be set up in a pipe closed at one end. (a) Copy and complete the diagram on the right to show the fundamental frequency in a pipe closed at one end, showing any nodes or antinodes in the diagram.",
+  "questionText": "Label a node and an antinode on your diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "correct labels",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14b-closed-pipe"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "fundamental-in-open-pipe",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(iii)",
+  "stem": "A flute can be treated as a pipe that is open at both ends.",
+  "questionText": "Copy and complete the diagram on the right to show the fundamental frequency in a pipe open at both ends, showing any nodes or antinodes in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "antinode at each end",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct shape",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14b-open-pipe"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-iv",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "wavelength-on-guitar-string",
+  "section": "B",
+  "questionRef": "2026 OL Q14(b)(iv)",
+  "stem": "A guitar string is vibrating at its fundamental frequency.",
+  "questionText": "The length of the string is 0.6 m. Calculate the wavelength of the wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "1.2 m",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q14-c-i",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "capacitance-definition",
+  "section": "B",
+  "questionRef": "2026 OL Q14(c)(i)",
+  "stem": "A student investigates how capacitors store and release charge using a simple circuit.",
+  "questionText": "Explain what is meant by capacitance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "charge per unit volt / Q/V",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q14-c-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "field-between-parallel-plates",
+  "section": "B",
+  "questionRef": "2026 OL Q14(c)(ii)",
+  "stem": "When the switch is at A, the capacitor charges. When a capacitor is charged, one plate is positively charged and the other is negatively charged. An electric field is set up between the plates.",
+  "questionText": "Copy and complete the diagram below to show the shape of the electric field between two parallel plates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "parallel lines",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "from + to −",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14c-plates"
+ },
+ {
+  "id": "phys-2026-ol-q14-c-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "electric-field-experiment",
+  "section": "B",
+  "questionRef": "2026 OL Q14(c)(iii)",
+  "questionText": "Describe an experiment to show the electric field between two parallel plates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q14-c-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "capacitor-discharging-through-bulb",
+  "section": "B",
+  "questionRef": "2026 OL Q14(c)(iv)",
+  "stem": "A student investigates how capacitors store and release charge using a simple circuit. When the switch is at A, the capacitor charges. When a capacitor is charged, one plate is positively charged and the other is negatively charged. An electric field is set up between the plates.",
+  "questionText": "Describe what happens when the switch is moved to B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "bulb flashes",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14c-circuit-b"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-i-a",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "magnet-moved-into-coil",
+  "section": "B",
+  "questionRef": "2026 OL Q14(d)(i)(a)",
+  "stem": "Electromagnetic induction is used to generate electricity. The diagram below shows a laboratory experiment to demonstrate electromagnetic induction.",
+  "questionText": "Describe what happens on the ammeter as the magnet is moved into the coil,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the ammeter needle deflects in one direction",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14d-induction"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-i-b",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "magnet-moved-out-of-coil",
+  "section": "B",
+  "questionRef": "2026 OL Q14(d)(i)(b)",
+  "stem": "Electromagnetic induction is used to generate electricity. The diagram below shows a laboratory experiment to demonstrate electromagnetic induction.",
+  "questionText": "Describe what happens on the ammeter as the magnet is moved out of the coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the ammeter needle deflects in the opposite direction",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14d-induction"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "magnetic-flux-through-coil",
+  "section": "B",
+  "questionRef": "2026 OL Q14(d)(ii)",
+  "stem": "The size of the induced emf can be calculated using the formula Φ = BA.",
+  "questionText": "Calculate the magnetic flux Φ through a coil with an area A of 0.3 m² when placed at right angles to a magnetic flux density B of 2 T.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "0.6 Wb",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-iii-a",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "moving-the-magnet-faster",
+  "section": "B",
+  "questionRef": "2026 OL Q14(d)(iii)(a)",
+  "stem": "Electromagnetic induction is used to generate electricity. The diagram below shows a laboratory experiment to demonstrate electromagnetic induction.",
+  "questionText": "Describe what happens on the ammeter if the magnet is moved in and out of the coil more quickly,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the ammeter shows a greater deflection",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14d-induction"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-iii-b",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "copper-rod-in-coil",
+  "section": "B",
+  "questionRef": "2026 OL Q14(d)(iii)(b)",
+  "stem": "Electromagnetic induction is used to generate electricity. The diagram below shows a laboratory experiment to demonstrate electromagnetic induction.",
+  "questionText": "Describe what happens on the ammeter if a similar sized copper rod is moved in and out of the coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the ammeter shows no deflection",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14d-induction"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-iv",
+  "subjectId": "physics",
+  "topicId": "phys-3-6",
+  "conceptId": "galvanometer",
+  "section": "B",
+  "questionRef": "2026 OL Q14(d)(iv)",
+  "questionText": "This experiment is usually done with a galvanometer instead of an ammeter.\n(a) Suggest a reason why a galvanometer may be used instead of an ammeter.\n(b) Draw the circuit symbol for a galvanometer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "more sensitive / can detect very small currents",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 4]"
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct circuit symbol",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme answers (a) and (b) under one cell [6 + 4]: one card for (iv). Its \"[accept partial answer for 4]\" is printed under both; a partial mark of 4 fits only (a)'s 6, so it is (a)'s note. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "physics-2026-ol-q14d-induction"
  }
 ]

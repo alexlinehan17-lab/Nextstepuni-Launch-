@@ -294,5 +294,533 @@
    345,
    290
   ]
+ },
+ "physics-2026-ol-q1-apparatus": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1-apparatus.png",
+  "md5": "a5f5087189b1520c8c307151bbfd43ba",
+  "alt": "The student's diagram: a ball held under a ball release mechanism at the top left, joined by a wire to a timer at the right, and the timer joined by a wire to a trapdoor at the bottom left.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   345,
+   147,
+   572,
+   330
+  ]
+ },
+ "physics-2026-ol-q1-scheme-tables": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1-scheme-tables.png",
+  "md5": "5f244d82b1fe0ad1758acaa22788f4a7",
+  "alt": "The scheme's completed tables: 2s (m) 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 for s (cm) 65 to 90, and t² (s²) 0.1296, 0.1444, 0.1521, 0.16, 0.168, 0.185 for t (s) 0.36 to 0.43.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(vi)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   66,
+   410,
+   562,
+   588
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q10-parallel": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q10-parallel.png",
+  "md5": "778519bfcf1adc2e4b23c33d43c5bb76",
+  "alt": "The parallel circuit: a 10 V battery and a meter Y in series with bulbs B₁ and B₂ connected in parallel, and a meter X connected across the two bulbs.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(ix)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   52,
+   495,
+   262,
+   676
+  ]
+ },
+ "physics-2026-ol-q10-series": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q10-series.png",
+  "md5": "4a2b2e434e4c3fa3a17e41abad620b5e",
+  "alt": "The series circuit: a 10 V battery, a meter Y, then bulbs B₁ and B₂ in series, with a meter X connected across B₁.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   62,
+   96,
+   262,
+   276
+  ]
+ },
+ "physics-2026-ol-q11iv-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q11iv-scheme-formula.png",
+  "md5": "4af494e1dcf99d189b2051b4ad403f8d",
+  "alt": "The scheme's formula: n equals sin i over sin r, set as a stacked fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q11(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   95,
+   356,
+   150,
+   384
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q11v-waves": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q11v-waves.png",
+  "md5": "17c0c7fc3e22392a023f552b879f878b",
+  "alt": "Two diagrams of waves reaching a doorway in a wall: sound wave crests, a wavelength λ apart, spreading out in curves beyond the gap; light wave crests, very close together, passing straight through the gap.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q11(v)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   348,
+   290,
+   548,
+   556
+  ]
+ },
+ "physics-2026-ol-q12iv-ask": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q12iv-ask.png",
+  "md5": "b49075d108fe19a0c31e7e33abea6186",
+  "alt": "Part (iv) as printed: \"Calculate the number of neutrons that are in an atom of\" gold, written Au with mass number 197 above and atomic number 79 below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q12(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   55,
+   273,
+   400,
+   294
+  ]
+ },
+ "physics-2026-ol-q12viii-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q12viii-scheme-formula.png",
+  "md5": "c407530a6bc67b5d5d74ae0bea08da03",
+  "alt": "The scheme's lines: E k equals one half m v squared, and 4.095 × 10 to the power −18 J.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q12(viii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   95,
+   652,
+   195,
+   690
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q14a-beam1": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14a-beam1.png",
+  "md5": "a9be8381e91062e669f7f38f964bb611",
+  "alt": "A beam 2 m long resting on a pivot 0.8 m from its left end; an arrow for the 120 N weight points down from a point to the right of the pivot.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(a)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   185,
+   133,
+   440,
+   208
+  ]
+ },
+ "physics-2026-ol-q14a-beam2": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14a-beam2.png",
+  "md5": "6c18a244d47260a1a9ed443d35583f09",
+  "alt": "The same 2 m beam on its pivot, 0.8 m from the left end: a 30 N weight hangs from the left end, the 120 N weight acts down to the right of the pivot, and an arrow labelled 150 N points up at the pivot.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(a)(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   165,
+   345,
+   432,
+   443
+  ]
+ },
+ "physics-2026-ol-q14b-closed-pipe": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14b-closed-pipe.png",
+  "md5": "114703c8dadfe5e3c5c587f9ad4d0c2f",
+  "alt": "An empty outline of a pipe, open at the top and closed at the bottom, for the fundamental to be drawn in.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(b)(ii)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   495,
+   122,
+   545,
+   220
+  ]
+ },
+ "physics-2026-ol-q14b-open-pipe": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14b-open-pipe.png",
+  "md5": "0f40551d888b1c6224aadd80e2cce2de",
+  "alt": "An empty outline of a pipe, open at both ends, for the fundamental to be drawn in.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(b)(iii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   495,
+   260,
+   545,
+   356
+  ]
+ },
+ "physics-2026-ol-q14c-circuit-b": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14c-circuit-b.png",
+  "md5": "ef09e45644bbd98db6f6041c4cfed40c",
+  "alt": "The capacitor circuit: a battery, a capacitor and a two-way switch with contacts A and B, and a bulb; the switch is shown at B, joining the capacitor to the bulb.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(c)(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   205,
+   356,
+   382,
+   512
+  ]
+ },
+ "physics-2026-ol-q14c-plates": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14c-plates.png",
+  "md5": "d61ffa397c6d3b9c713bfa2b70d0d6e2",
+  "alt": "Two parallel plates, the left one marked + + + and the right one marked − − −, for the field between them to be drawn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(c)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   188,
+   226,
+   316,
+   295
+  ]
+ },
+ "physics-2026-ol-q14d-induction": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14d-induction.png",
+  "md5": "4881eeacd9e096a6cd61ca2637affd14",
+  "alt": "A coil of wire connected to an ammeter, and a bar magnet inside the right-hand end of the coil; a double arrow labelled direction of movement shows the magnet moving in and out.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(d)(i)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   110,
+   100,
+   432,
+   342
+  ]
+ },
+ "physics-2026-ol-q1iv-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1iv-table.png",
+  "md5": "61bf9d9f682640f75ffd9d850ffe72f2",
+  "alt": "Part (iv) as printed: \"Copy and complete the table below into your answerbook by calculating the missing values for 2s in metres.\" Below it a table of s (cm) 65, 70, 75, 80, 85, 90 over 2s (m) 1.3, 1.4 and four empty cells.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   50,
+   486,
+   545,
+   582
+  ]
+ },
+ "physics-2026-ol-q1v-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1v-table.png",
+  "md5": "60056bc754c4e0f8c1136e0d8aa3b2e2",
+  "alt": "Part (v) as printed: \"Copy and complete the table below into your answerbook by calculating the missing values for t².\" Below it a table of t (s) 0.36, 0.38, 0.39, 0.40, 0.41, 0.43 over t² (s²) with four empty cells, then 0.168 and 0.185.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(v)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   50,
+   584,
+   545,
+   680
+  ]
+ },
+ "physics-2026-ol-q2iva-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q2iva-scheme-formula.png",
+  "md5": "a8c343a0607947f89f4bdac1967bfeca",
+  "alt": "The scheme's formula: 1 over u plus 1 over v equals 1 over f, set as stacked fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q2(iv)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   125,
+   402,
+   200,
+   430
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q2ivb-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q2ivb-scheme-formula.png",
+  "md5": "ddc82f983c0996d77d4aff9cad9c9bc6",
+  "alt": "The scheme's working: 1 over 25 plus 1 over 48 equals 73 over 1200, set as stacked fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q2(iv)(b)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   125,
+   456,
+   210,
+   484
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q3iv-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q3iv-table.png",
+  "md5": "06878541ba07cb88140fed33ab11b8e1",
+  "alt": "The results table, f (Hz) 256, 288, 320, 341, 384, 426 over l (cm) 50, 44, 40, 37, 33, 30, with a row for 1/l (cm⁻¹) showing 0.020, 0.023 and four empty cells; under it part (iv): \"Copy and complete the table above into your answerbook by calculating the missing values for 1/l to 3 decimal places.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q3(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   50,
+   443,
+   545,
+   584
+  ]
+ },
+ "physics-2026-ol-q3v-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q3v-table.png",
+  "md5": "a2f4fd0441e0dc569009e28ed023a9e7",
+  "alt": "The results table (f, l and 1/l with four empty cells), part (iv) under it, and part (v): \"Draw a graph of f against 1/l.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q3(v)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   50,
+   443,
+   545,
+   610
+  ]
+ },
+ "physics-2026-ol-q4-equation": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q4-equation.png",
+  "md5": "8cd5c56b15f1cf93070b69f3035815f3",
+  "alt": "The student's equation as printed: energy lost by calorimeter and water and given to the ice = energy needed to melt the ice + energy needed to change the temperature of the melted ice from 0 °C to 20 °C; below it, 9585 = m l + m c Δθ.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q4(iv)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   60,
+   380,
+   545,
+   464
+  ]
+ },
+ "physics-2026-ol-q5-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q5-graph.png",
+  "md5": "1179b0b716bfbb38de95fa0859604dfc",
+  "alt": "Graph of R (Ω), 0 to 9, against T (°C), 0 to 70, on fine grid paper: six plotted points at T = 10, 20, 30, 40, 50 and 60 °C lie on a straight line that rises to the right and is drawn back to the R axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q5(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   75,
+   175,
+   520,
+   447
+  ]
+ },
+ "physics-2026-ol-q6g-resistors": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q6g-resistors.png",
+  "md5": "430ac15d9c40aea827a4cb8ab2970e27",
+  "alt": "Two resistors in parallel between two leads: a 25 Ω resistor in the upper branch and a 5 Ω resistor in the lower branch.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q6(g)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   440,
+   505,
+   557,
+   592
+  ]
+ },
+ "physics-2026-ol-q9iii-note": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q9iii-note.png",
+  "md5": "7b14efea875a89fe25b2e5fadd6d69a0",
+  "alt": "The note printed under part (iii): real depth over apparent depth equals refractive index, set as a stacked fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q9(iii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   83,
+   240,
+   372,
+   264
+  ]
+ },
+ "physics-2026-ol-q9vi-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q9vi-scheme-formula.png",
+  "md5": "b311a82c18e5d093f042c4f0c95dc41e",
+  "alt": "The scheme's formula: n equals 1 over sin C, set as a stacked fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q9(vi)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   95,
+   503,
+   150,
+   530
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q9vii-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q9vii-diagram.png",
+  "md5": "7046d697af5f2c043064f100ad0987ff",
+  "alt": "A horizontal surface with air above and water below, a dashed normal, and a ray travelling up through the water to the surface at 55° to the normal.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q9(vii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   165,
+   458,
+   395,
+   553
+  ]
  }
 }

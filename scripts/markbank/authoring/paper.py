@@ -403,6 +403,23 @@ PROSE_MARKER_BLOCKS[('physics', 2026, 'hl')] = [
     '(a) Calculate the minimum frequency heard', '(b) State the observed frequency',
     '(a) the strong nuclear force between the two protons,', '(b) how many ',
     '(a) Draw a circuit diagram to show how a transistor', '(b) Label the input voltage']
+# 2026 OL Physics Q14 (pages 15 and 17, rendered and looked at) is letter-major, (a)-(d),
+# and prints letters INSIDE four romans: (b)(ii) "(a) Copy and complete the diagram ... (b)
+# Label a node and an antinode on your diagram.", (d)(i) "(a) the magnet is moved into the
+# coil, (b) the magnet is moved out of the coil.", (d)(iii) "(a) the magnet is moved in and
+# out of the coil more quickly, (b) a similar sized copper rod ...", (d)(iv) "(a) Suggest a
+# reason why a galvanometer ... (b) Draw the circuit symbol for a galvanometer. (28)". Each
+# was read as a top-level letter: Q14(b)(ii) took (d)(ii)'s "Calculate the magnetic flux",
+# (d)(iii) and (d)(iv) filed under Q14(b)'s (iii) and (iv), and the census printed
+# Q14(d)(i) alone. Read as lines of the roman that is open, each stays in its own ask and
+# (d)(ii)-(iv) are keyed as the paper prints them.
+PROSE_MARKER_BLOCKS[('physics', 2026, 'ol')] = [
+    '(a) Copy and complete the diagram on the right to show the fundamental frequency in a pipe closed',
+    '(b) Label a node and an antinode on your diagram.',
+    '(a) the magnet is moved into the coil,', '(b) the magnet is moved out of the coil.',
+    '(a) the magnet is moved in and out of the coil more quickly,',
+    '(b) a similar sized copper rod is moved in and out of the coil.',
+    '(a) Suggest a reason why a galvanometer may be used', '(b) Draw the circuit symbol for a galvanometer.']
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
