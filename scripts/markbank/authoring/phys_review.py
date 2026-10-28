@@ -287,6 +287,16 @@ def build_row_spans(lifter, spec, row_id, task_doc, sp, lo):
         row, units, worth = _build_row(lifter, spec, row_id, task_doc, sp, lo)
     finally:
         lifter.lift = real_lift
+    # A row read from glyph positions lifts no line: its span is the scheme
+    # lines printed inside its clip.
+    for g in ([spec] if spec.get('type') == 'geo' else []) + [o for o in (spec.get('options') or [])
+                                                              if isinstance(o, dict) and o.get('type') == 'geo']:
+        pg = g.get('page') or sp
+        boxes = lifter.srcs['scheme'].boxes.get(pg, [])
+        inside = [k for k, b in enumerate(boxes)
+                  if g['clip'][0] <= (b[0] + b[2]) / 2 <= g['clip'][2] and g['clip'][1] <= (b[1] + b[3]) / 2 <= g['clip'][3]]
+        if inside:
+            spans.append((pg, min(inside), max(inside)))
     return row, units, worth, spans
 
 

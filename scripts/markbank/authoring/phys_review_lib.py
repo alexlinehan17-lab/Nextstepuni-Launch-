@@ -300,15 +300,15 @@ def _page_rows(page, paper=False):
         if k in owner:
             continue
         if k in cells:
-            out.append((r[0], r[0]))
+            out.append((r[0], r[0], r[1]))
         else:
-            out.append((r[0], ' '.join(attached[k]) if attached.get(k) else None))
+            out.append((r[0], ' '.join(attached[k]) if attached.get(k) else None, r[1]))
     return out
 
 
 def _page_lines(page, paper=False):
     """The page's printed lines with their cells taken off (see _page_rows)."""
-    return [t for t, _ in _page_rows(page, paper)]
+    return [t for t, _, _ in _page_rows(page, paper)]
 
 
 def _norm(line):
@@ -333,6 +333,7 @@ class Src:
         self.lines = {}
         # page -> {line index: the mark cell printed on that line's baseline}
         self.cells = {}
+        self.boxes = {}
         strips = _STRIP_SET.get(os.path.basename(path), ())
         for i, page in enumerate(self.doc):
             if i + 1 in strips:
@@ -340,10 +341,12 @@ class Src:
                 # read the rebuilt lines.
                 self.lines[i + 1] = [n for n in (_norm(t) for _, t in strip_set_lines(page)) if n]
                 self.cells[i + 1] = {}
+                self.boxes[i + 1] = []
                 continue
             rows = _page_rows(page, paper=label != 'scheme')
-            self.lines[i + 1] = [t for t, _ in rows]
-            self.cells[i + 1] = {k: c for k, (_, c) in enumerate(rows) if c}
+            self.lines[i + 1] = [t for t, _, _ in rows]
+            self.cells[i + 1] = {k: c for k, (_, c, _) in enumerate(rows) if c}
+            self.boxes[i + 1] = [b for _, _, b in rows]
 
     def page_text(self, page):
         return ' '.join(self.lines[page])
