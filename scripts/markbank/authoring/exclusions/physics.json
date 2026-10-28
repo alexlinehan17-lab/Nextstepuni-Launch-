@@ -73,30 +73,5 @@
     "ref": "2022 HL Q4(iii)",
     "reason": "Question wording is font-mangled in both documents: the stacked 1/f fraction in the ask cannot be lifted legibly, so the card's questionText would ship mojibake. The scheme's answer lines ('values for 1/f', 'labelled axes', 'correct points plotted', 'line of best fit') are clean, but lib lifts quest",
     "evidence": "Paper text layer gives 'Draw a graph to show the relationship between l and ଵ ௙.' (Indic glyphs standing in for the typeset fraction 1/f, confirmed against paper page 4); the scheme's own reprint splits it the same way, as 'Draw a graph to show the relationship between l and 1' + '𝑓𝑓.'"
-  },
-  {
-    "ref": "2023 OL Q10(iii)",
-    "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content — nothing liftable to card.",
-    "evidence": "Scheme p.15: \"apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case]\" is the entire answer block for the sound-interference experiment."
-  },
-  {
-    "ref": "2023 OL Q11(viii)",
-    "reason": "The credit is the drawn figure itself; the scheme never states in words what the correct shape of the sketch is.",
-    "evidence": "Scheme p.16: \"axis labelled [3] correct shape [3]\" — 'correct shape' names no shape, so there is no separable wording to lift."
-  },
-  {
-    "ref": "2023 OL Q14(b)(ii)",
-    "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content.",
-    "evidence": "Scheme p.19 (total internal reflection demonstration): \"apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case]\"."
-  },
-  {
-    "ref": "2023 OL Q14(c)(iii)",
-    "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content.",
-    "evidence": "Scheme p.20 (Van de Graaff / charge on the outside of a hollow conductor): \"apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case]\"."
-  },
-  {
-    "ref": "2023 OL Q14(d)(ii)",
-    "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content.",
-    "evidence": "Scheme p.21 (plotting the magnetic field around a current-carrying conductor): \"apparatus [6] method [6] [accept partial answers for 3 in each case]\"."
   }
 ]

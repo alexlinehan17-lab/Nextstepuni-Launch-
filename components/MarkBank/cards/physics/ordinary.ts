@@ -2221,7 +2221,7 @@ export const CARDS: SecCard[] = [
     questionText: "What measurements did the student take to calculate acceleration?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "first distance", marks: null, contextNote: "The scheme prints \"first distance/velocity, second distance/velocity, time (any two)\" — a velocity may be given in place of a distance for either of the first two measurements.", group: {"claimMax":2,"perOption":3,"options":["first distance","second distance","time"]} },
+    { id: "r1", kind: "anyN", verbatim: "first distance/velocity / second distance/velocity / time", marks: null, contextNote: "any two", group: {"claimMax":2,"perOption":3,"options":["first distance/velocity","second distance/velocity","time"]} },
     ],
   } as SecCard,
   {
@@ -2235,7 +2235,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one precaution the student took to ensure an accurate result.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "avoid error of parallax", marks: null, contextNote: "The scheme prefixes these with \"e.g.\" and states that descriptions and methods in the scheme are not exhaustive — other valid precautions are acceptable.", openList: true, group: {"claimMax":1,"perOption":4,"options":["avoid error of parallax","smooth runway"]} },
+    { id: "r1", kind: "anyN", verbatim: "avoid error of parallax / smooth runway", marks: null, contextNote: "[accept partial answer for 2]", openList: true, group: {"claimMax":1,"perOption":4,"options":["avoid error of parallax","smooth runway"]} },
     ],
   } as SecCard,
   {
@@ -2243,13 +2243,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q1-v", topicId: "phys-u2", conceptId: "proportionality-from-straight-line-graph",
+    id: "phys-2023-ol-q1-v", topicId: "phys-1-2", conceptId: "proportionality-from-straight-line-graph",
     section: "A", questionRef: "2023 OL Q1(v)",
-    stem: "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied, and drew a graph of F against a.",
+    stem: "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied.",
     questionText: "Explain how your graph shows that acceleration is proportional to force.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "straight line (through the origin)", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "straight line (through the origin)", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2259,10 +2259,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-iii", topicId: "phys-u2", conceptId: "locating-image-concave-mirror",
     section: "A", questionRef: "2023 OL Q2(iii)",
+    stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
     questionText: "Describe how the student found the position of the image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "move screen", marks: 6, accepts: ["sharpest image is formed"], contextNote: "The scheme prints \"move screen/mirror/object\" — moving the mirror or moving the object are equally acceptable to moving the screen. A partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "move screen/mirror/object / sharpest image is formed", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -2282,12 +2283,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-iv", topicId: "phys-2-3", conceptId: "mirror-formula",
     section: "A", questionRef: "2023 OL Q2(iv)",
-    stem: "A student carried out an experiment to measure the focal length f of a concave mirror.",
+    stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
     questionText: "State the formula used to calculate the focal length f.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1/u + 1/v = 1/f", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "1/u + 1/v = 1/f", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2296,10 +2307,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-v", topicId: "phys-2-3", conceptId: "focal-length-calculation",
     section: "A", questionRef: "2023 OL Q2(v)",
+    stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
     questionText: "Calculate f.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "f = 15.1 cm", marks: 6, contextNote: "The scheme prints the answer with its unit: f = 15.1 cm." },
+    { id: "r1", kind: "point", verbatim: "f = 15.1 cm", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -2319,12 +2331,72 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-vi", topicId: "phys-u2", conceptId: "improving-experiment-repeat-average",
     section: "A", questionRef: "2023 OL Q2(vi)",
-    stem: "A student carried out an experiment to measure the focal length f of a concave mirror.",
+    stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
     questionText: "Describe how the student could have improved the experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "repeat and average", marks: 4, contextNote: "The scheme prefixes this with \"e.g.\" — other valid improvements are acceptable. Partial answer scores 2.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. repeat and average", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q3-i", topicId: "phys-u2", conceptId: "equipment-a",
+    section: "A", questionRef: "2023 OL Q3(i)",
+    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. Below is a diagram of the apparatus used in this experiment.",
+    questionText: "Name the piece of equipment labelled A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "thermometer", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2023-ol-q3-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q3-diagram.png",
+          "srcHash": "993687b9e5e1e9bf692bc26180036822",
+          "alt": "Diagram of the apparatus: a calorimeter of water with crushed ice standing in a larger container, the outer container pointed to by an arrow labelled B; a long rod with a bulb at its lower end dips into the water, pointed to by an arrow labelled A; beside it a dark cloth holding crushed ice.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": [
+                "A"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"thermometer","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q3-ii", topicId: "phys-u2", conceptId: "equipment-b",
+    section: "A", questionRef: "2023 OL Q3(ii)",
+    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. Below is a diagram of the apparatus used in this experiment.",
+    questionText: "Name the piece of equipment labelled B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "lagging/insulation", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2023-ol-q3-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q3-diagram.png",
+          "srcHash": "993687b9e5e1e9bf692bc26180036822",
+          "alt": "Diagram of the apparatus: a calorimeter of water with crushed ice standing in a larger container, the outer container pointed to by an arrow labelled B; a long rod with a bulb at its lower end dips into the water, pointed to by an arrow labelled A; beside it a dark cloth holding crushed ice.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": [
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"B","meaning":"lagging/insulation","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2337,7 +2409,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did the student crush the ice before adding it to the calorimeter?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "melts faster", marks: 4, accepts: ["increase surface area","all at the same temperature","0 °C"] },
+    { id: "r1", kind: "point", verbatim: "melts faster / increase surface area / all at the same temperature/0 °C", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -2347,25 +2419,33 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q3-iv", topicId: "phys-u2", conceptId: "drying-ice-latent-heat",
     section: "A", questionRef: "2023 OL Q3(iv)",
-    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter.",
+    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. Below is a diagram of the apparatus used in this experiment.",
     questionText: "What was the cloth used for in this experiment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "to dry the ice", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "to dry the ice", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q3-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q3-diagram.png",
+          "srcHash": "993687b9e5e1e9bf692bc26180036822",
+          "alt": "Diagram of the apparatus: a calorimeter of water with crushed ice standing in a larger container, the outer container pointed to by an arrow labelled B; a long rod with a bulb at its lower end dips into the water, pointed to by an arrow labelled A; beside it a dark cloth holding crushed ice.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q3-v", topicId: "phys-u2", conceptId: "temperature-fall-calorimetry",
+    id: "phys-2023-ol-q3-v", topicId: "phys-2-1", conceptId: "temperature-fall-calorimetry",
     section: "A", questionRef: "2023 OL Q3(v)",
-    stem: "A student added ice at 0 °C to water in a copper calorimeter and recorded: initial temperature of calorimeter + water = 23 °C; final temperature of calorimeter + water + melted ice = 16 °C.",
+    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C",
     questionText: "Calculate the fall in temperature of the calorimeter and water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "23 – 16 = 7 °C", marks: 4, contextNote: "The scheme prints the subtraction and the answer together, with the unit: 23 – 16 = 7 °C." },
+    { id: "r1", kind: "point", verbatim: "23 – 16 = 7 °C", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -2373,13 +2453,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q3-vi", topicId: "phys-u2", conceptId: "mass-of-water-calorimetry",
+    id: "phys-2023-ol-q3-vi", topicId: "phys-2-1", conceptId: "mass-of-water-calorimetry",
     section: "A", questionRef: "2023 OL Q3(vi)",
-    stem: "A student added ice at 0 °C to water in a copper calorimeter and recorded: mass of empty copper calorimeter = 0.083 kg; mass of calorimeter + water = 0.181 kg.",
+    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C",
     questionText: "Calculate the mass of the water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.181 – 0.083 = 0.098 kg", marks: 4, contextNote: "The scheme prints the subtraction and the answer together, with the unit: 0.181 – 0.083 = 0.098 kg." },
+    { id: "r1", kind: "point", verbatim: "0.181 – 0.083 = 0.098 kg", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -2387,15 +2467,15 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q3-vii", topicId: "phys-u2", conceptId: "heat-lost-mcdeltatheta",
+    id: "phys-2023-ol-q3-vii", topicId: "phys-2-1", conceptId: "heat-lost-mcdeltatheta",
     section: "A", questionRef: "2023 OL Q3(vii)",
-    stem: "A student added ice at 0 °C to water in a copper calorimeter. The mass of the empty copper calorimeter was 0.083 kg, the mass of the water was 0.098 kg, and the fall in temperature of the calorimeter and water was 7 °C.",
+    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C specific heat capacity of copper = 390 J kg⁻¹K⁻¹; specific heat capacity of water = 4180 J kg⁻¹ K⁻¹",
     questionText: "Using the formula mcΔθ and your answers to (v) and (vi), calculate E, the heat lost by the water and the calorimeter.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(0.098 × 4180 × 7)", marks: 3, contextNote: "The heat lost by the water, using the specific heat capacity of water from the Formulae and Tables booklet." },
-    { id: "r-2", kind: "point", verbatim: "(0.083 × 390 × 7)", marks: 3, contextNote: "The heat lost by the copper calorimeter, using the specific heat capacity of copper from the Formulae and Tables booklet." },
-    { id: "r-3", kind: "point", verbatim: "3094.07 J", marks: 3, contextNote: "The scheme prints this final line as '= 3094.07 J', with the unit." },
+    { id: "r1", kind: "point", verbatim: "(0.098 × 4180 × 7)", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "(0.083 × 390 × 7)", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "= 3094.07 J", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2403,13 +2483,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q3-viii", topicId: "phys-u2", conceptId: "temperature-rise-of-melted-ice",
+    id: "phys-2023-ol-q3-viii", topicId: "phys-2-1", conceptId: "temperature-rise-of-melted-ice",
     section: "A", questionRef: "2023 OL Q3(viii)",
-    stem: "A student added ice at 0 °C to water in a copper calorimeter. The final temperature of the calorimeter + water + melted ice was 16 °C.",
+    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C",
     questionText: "Calculate the rise in temperature of the ice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "16 °C", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "16 °C", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2423,7 +2503,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did the student find the frequency values?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "from tuning fork", marks: 6, contextNote: "Key words only — they must appear in the correct context (the frequency is stamped on the tuning fork) to merit the marks. Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "from tuning fork", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2431,14 +2511,72 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q4-iv", topicId: "phys-u2", conceptId: "resonance-loud-sound",
+    id: "phys-2023-ol-q4-iv", topicId: "phys-2-5", conceptId: "resonance-loud-sound",
     section: "A", questionRef: "2023 OL Q4(iv)",
-    stem: "A student set a tuning fork vibrating over a column of air. The student knew that the column of air was vibrating at its fundamental frequency because resonance had occurred.",
-    questionText: "How did the student know that resonance had occurred?",
+    stem: "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies.",
+    questionText: "The student knew that the column of air was vibrating at its fundamental frequency because resonance had occurred. How did the student know that resonance had occurred?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "loud sound", marks: 6, contextNote: "Key words only — they must appear in the correct context to merit the marks. Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "loud sound", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q4-v", topicId: "phys-u2", conceptId: "values-of-1-over-l",
+    section: "A", questionRef: "2023 OL Q4(v)",
+    questionText: "For each value of l in the table above, calculate the value of",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "0.33 — 3.03", marks: 1, contextNote: "The scheme prints the six values [6 × 1]: 1 mark each." },
+    { id: "r2", kind: "point", verbatim: "0.29 — 3.45", marks: 1 },
+    { id: "r3", kind: "point", verbatim: "0.27 — 3.70", marks: 1 },
+    { id: "r4", kind: "point", verbatim: "0.25 — 4.00", marks: 1 },
+    { id: "r5", kind: "point", verbatim: "0.22 — 4.55", marks: 1 },
+    { id: "r6", kind: "point", verbatim: "0.18 — 5.56", marks: 1 },
+    ],
+    questionFigure: {
+          "candId": "physics-2023-ol-q4v-question",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q4v-question.png",
+          "srcHash": "da7d889f83e0552a9c242e40d33da793",
+          "alt": "The printed Question 4 up to part (v): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (m) 0.33, 0.29, 0.27, 0.25, 0.22, 0.18, and parts (i) to (v), (v) asking for the value of 1 over l, set as a fraction, to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q4-vi", topicId: "phys-u2", conceptId: "graph-f-against-1-over-l",
+    section: "A", questionRef: "2023 OL Q4(vi)",
+    questionText: "Draw a graph on graph paper of f against",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+    questionFigure: {
+          "candId": "physics-2023-ol-q4vi-question",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q4vi-question.png",
+          "srcHash": "d72bed65c09fcd0383db65bc153ae954",
+          "alt": "The printed Question 4 up to part (vi): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (m) 0.33, 0.29, 0.27, 0.25, 0.22, 0.18, and parts (i) to (vi), (vi) asking for a graph of f against 1 over l, set as a fraction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2023-ol-q4vi-scheme-graph",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q4vi-scheme-graph.png",
+          "srcHash": "6eaf9c165a2ccf1207626f3b69cf0e8b",
+          "alt": "The marking scheme's graph: 1/l (m⁻¹), from 0 to 6, against f (Hz), from 0 to 600, with six plotted points from about 3.0 to 5.6 on a straight line that meets the vertical axis just above zero.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2446,14 +2584,40 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q5-i", topicId: "phys-u2", conceptId: "resistivity-apparatus",
-    section: "A", questionRef: "2023 OL Q5(i)",
-    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire, and also measured the diameter d of the wire.",
-    questionText: "Name the apparatus used in this experiment to measure (a) the length of the wire (b) the resistance of the wire and (c) the diameter of the wire.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    section: "A", questionRef: "2023 OL Q5(i)(a)",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
+    questionText: "Name the apparatus used in this experiment to measure (a) the length of the wire",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(a) — metre stick", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "(b) — ohmmeter", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "(c) — micrometer", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "metre stick", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q5-i-b", topicId: "phys-u2", conceptId: "measuring-resistance-of-wire",
+    section: "A", questionRef: "2023 OL Q5(i)(b)",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
+    questionText: "Name the apparatus used in this experiment to measure (b) the resistance of the wire",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "ohmmeter", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q5-i-c", topicId: "phys-u2", conceptId: "measuring-diameter-of-wire",
+    section: "A", questionRef: "2023 OL Q5(i)(c)",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
+    questionText: "Name the apparatus used in this experiment to measure (c) the diameter of the wire.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "micrometer", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2463,11 +2627,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q5-ii", topicId: "phys-u2", conceptId: "uniform-diameter-check",
     section: "A", questionRef: "2023 OL Q5(ii)",
-    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the diameter d of the wire.",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
     questionText: "How did the student check that the wire had the same diameter throughout its length?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "checked the diameter at various points", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "checked the diameter at various points", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2475,35 +2639,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q5-iv", topicId: "phys-u2", conceptId: "resistance-length-proportional",
+    id: "phys-2023-ol-q5-iv", topicId: "phys-3-3", conceptId: "resistance-length-proportional",
     section: "A", questionRef: "2023 OL Q5(iv)",
-    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R of the wire for six different lengths l. She also measured the diameter d of the wire. The student recorded the following results.",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire. The student recorded the following results. l (cm) 20 30 40 50 60 70 R (Ω) 0.08 0.12 0.17 0.21 0.25 0.29 d (mm) 2",
     questionText: "State the relationship between l and R.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "proportional", marks: 6, contextNote: "Key word — \"proportional\" must appear in the correct context (that R is proportional to l) to merit the marks. Partial answer scores 3.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "proportional", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    figure: {
-          "candId": "physics-2023-OL-paper-p04-i1",
-          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p04-i1.png",
-          "srcHash": "db6c89b37aaf43572af45746fae6c90a",
-          "alt": "A table from the exam paper. Columns: l (cm), 20, 30, 40, 50, 60, 70. Rows: R (Ω), d (mm). 3 rows by 7 columns, as printed in the paper.",
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q5-v", topicId: "phys-u2", conceptId: "resistivity-formula",
+    id: "phys-2023-ol-q5-v", topicId: "phys-3-3", conceptId: "resistivity-formula",
     section: "A", questionRef: "2023 OL Q5(v)",
-    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R, the length l and the diameter d of the wire.",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
     questionText: "State the formula used to calculate ρ, the resistivity of the wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ρ = RA/l", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "ρ = RA/l", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2516,7 +2672,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by the moment of a force?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "force × distance (to fulcrum)", marks: 7, accepts: ["the turning effect of the force"], contextNote: "Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "force × distance (to fulcrum) / the turning effect of the force", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2526,10 +2682,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q6-b", topicId: "phys-1-1", conceptId: "acceleration-from-velocity-change",
     section: "B", questionRef: "2023 OL Q6(b)",
-    questionText: "A car accelerates from a speed of 17 m s–1 to a speed of 28 m s–1 in a time of 8 s. Calculate the acceleration of the car.",
+    questionText: "A car accelerates from a speed of 17 m s⁻¹ to a speed of 28 m s⁻¹ in a time of 8 s. Calculate the acceleration of the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(28 – 17)/8 = 1.375 m s–2", marks: 7, contextNote: "The scheme prints the working and the answer together, with the unit. Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "(28 – 17)/8 = 1.375 m s⁻²", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2801,7 +2957,7 @@ export const CARDS: SecCard[] = [
     questionText: "Convert 30 °C into kelvin (K).",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "30 + 273 = 303 K", marks: 7, contextNote: "Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "30 + 273 = 303 K", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2814,7 +2970,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name an instrument used to measure voltage.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "voltmeter", marks: 7, contextNote: "Partial answer scores 4.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "voltmeter", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2827,7 +2983,7 @@ export const CARDS: SecCard[] = [
     questionText: "An object has a height of 2 cm. Its image in a mirror has a height of 5 cm. Calculate the object’s magnification.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "5 ÷ 2 = 2.5", marks: 7, contextNote: "Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "5 ÷ 2 = 2.5", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2840,7 +2996,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the difference between heat and temperature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "heat is a form of energy", marks: 7, accepts: ["temperature is a measure of hotness"], contextNote: "The scheme separates the two statements with a solidus, so they are equally acceptable alternatives. Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "heat is a form of energy / temperature is a measure of hotness", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2853,7 +3009,7 @@ export const CARDS: SecCard[] = [
     questionText: "What are complementary colours of light?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "a primary and a secondary colour", marks: 7, accepts: ["colours that combine to give white light"], contextNote: "Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "a primary and a secondary colour / colours that combine to give white light", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2866,7 +3022,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how infrared radiation can be detected.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "heating effect", marks: 7, contextNote: "The scheme prints \"heating effect, etc.\" — other valid methods of detection are acceptable, and the key words must appear in the correct context. Partial answer scores 4.", openList: true },
+    { id: "r1", kind: "point", verbatim: "heating effect, etc.", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2874,12 +3030,12 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q6-j", topicId: "phys-3-1", conceptId: "capacitance-definition",
+    id: "phys-2023-ol-q6-j", topicId: "phys-3-2", conceptId: "capacitance-definition",
     section: "B", questionRef: "2023 OL Q6(j)",
     questionText: "What is meant by capacitance?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ratio of charge to voltage", marks: 7, contextNote: "Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "ratio of charge to voltage", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2887,12 +3043,12 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q6-k", topicId: "phys-2-4", conceptId: "dispersion-of-white-light",
+    id: "phys-2023-ol-q6-k", topicId: "phys-2-3", conceptId: "dispersion-of-white-light",
     section: "B", questionRef: "2023 OL Q6(k)",
     questionText: "Describe how white light can be separated into its constituent colours.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "prism", marks: 7, accepts: ["diffraction grating"], contextNote: "The scheme prints \"prism / diffraction grating / etc.\" — other valid answers are acceptable. Partial answer scores 4.", openList: true },
+    { id: "r1", kind: "point", verbatim: "prism / diffraction grating / etc.", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2902,12 +3058,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q6-l", topicId: "phys-4-5", conceptId: "mass-energy-equation-symbols",
     section: "B", questionRef: "2023 OL Q6(l)",
-    questionText: "State what each letter in Einstein’s famous equation E = mc2 stands for.",
+    questionText: "State what each letter in Einstein’s famous equation E = mc² stands for.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "E = energy", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "m = mass", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "c = speed of light", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "E = energy", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "m = mass", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "c = speed of light", marks: 2 },
     ],
   } as SecCard,
   {
@@ -2921,7 +3077,7 @@ export const CARDS: SecCard[] = [
     questionText: "As the carriage travels to the top, the carriage is gaining potential energy. What is meant by potential energy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "energy due to position in a force field", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "energy due to position in a force field", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2931,13 +3087,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q7-iii", topicId: "phys-1-4", conceptId: "gravitational-potential-energy-calculation",
     section: "B", questionRef: "2023 OL Q7(iii)",
-    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. acceleration due to gravity = 9.8 m s⁻²",
     questionText: "The carriage is dropped from a height of 37 m above the braking zone. The mass of the carriage is 6200 kg. Calculate the potential energy the carriage had before it was dropped.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mgh", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "6200 × 9.8 × 37", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "2248120 J", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "mgh", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "6200 × 9.8 × 37", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "= 2248120 J", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2951,7 +3107,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the main energy conversion that takes place as the carriage falls?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "potential energy to kinetic energy", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "potential energy to kinetic energy", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2961,11 +3117,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q7-vi", topicId: "phys-1-1", conceptId: "time-of-free-fall",
     section: "B", questionRef: "2023 OL Q7(vi)",
-    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. The carriage is dropped from a height of 37 m above the braking zone.",
+    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. (v) Calculate the velocity of the carriage when it has fallen 37 m. acceleration due to gravity = 9.8 m s⁻²",
     questionText: "Calculate the time it takes the carriage to fall 37 m.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "26.9 ÷ 9.8 = 2.75 s", marks: 6, contextNote: "26.9 m s–1 is the carriage's velocity after falling 37 m — the answer to part (v). Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "26.9 ÷ 9.8 = 2.75 s", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2978,8 +3134,54 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by refraction of light?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the bending of light (as it travels from one medium to another)", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "the bending of light (as it travels from one medium to another)", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q8-ii", topicId: "phys-2-3", conceptId: "naming-a-b-c",
+    section: "B", questionRef: "2023 OL Q8(ii)",
+    stem: "The diagram below shows how a ray of light travels through a rectangular glass block.",
+    questionText: "Name A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "A — incident ray", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "B — refracted ray", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "C — normal", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2023-ol-q8-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q8-diagram.png",
+          "srcHash": "909cd2c1684e403cf51d63dd9838edb2",
+          "alt": "Diagram of a ray of light passing through a rectangular glass block: the ray arriving at the top face is pointed to by an arrow labelled A, a dashed vertical line at the point of entry by an arrow labelled C, and the ray inside the block by an arrow labelled B; the ray leaves through the bottom face.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q8-iii", topicId: "phys-2-3", conceptId: "labelling-angles",
+    section: "B", questionRef: "2023 OL Q8(iii)",
+    stem: "The diagram below shows how a ray of light travels through a rectangular glass block.",
+    questionText: "Copy the diagram into your answerbook and label the angle of incidence i and the angle of refraction r.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "angles labelled", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
+    ],
+    figure: {
+          "candId": "physics-2023-ol-q8-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q8-diagram.png",
+          "srcHash": "909cd2c1684e403cf51d63dd9838edb2",
+          "alt": "Diagram of a ray of light passing through a rectangular glass block: the ray arriving at the top face is pointed to by an arrow labelled A, a dashed vertical line at the point of entry by an arrow labelled C, and the ray inside the block by an arrow labelled B; the ray leaves through the bottom face.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2992,7 +3194,7 @@ export const CARDS: SecCard[] = [
     questionText: "Converging lenses can be used in glasses to correct a sight defect. Which sight defect is corrected using a converging lens?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "long-sightedness", marks: 5, accepts: ["hypermetropia","hyperopia"], contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "long-sightedness / hypermetropia / hyperopia", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3006,8 +3208,8 @@ export const CARDS: SecCard[] = [
     questionText: "Heat is transferred through a wall by conduction. Name two other ways in which heat can be transferred.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "convection", marks: 3, exactTermRequired: true },
-    { id: "r-2", kind: "point", verbatim: "radiation", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "convection", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "radiation", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3017,10 +3219,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q9-ii", topicId: "phys-2-1", conceptId: "u-value",
     section: "B", questionRef: "2023 OL Q9(ii)",
+    stem: "Brick is considered one of the best construction materials in the world for a number of reasons. One reason is that brick is a better insulator than many other building materials.",
     questionText: "What is meant by the U-value of a material?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "measure of the conducting/insulating property", marks: 6, accepts: ["measure of the insulating property","the rate of transfer of energy (through unit area of a material when there is a temperature difference of 1 K between the two sides)"], contextNote: "The scheme prints this as 'measure of the conducting/insulating property' — either word is equally acceptable." },
+    { id: "r1", kind: "point", verbatim: "measure of the conducting/insulating property / the rate of transfer of energy (through unit area of a material when there is a temperature difference of 1 K between the two sides)", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3030,11 +3233,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q9-iii", topicId: "phys-2-1", conceptId: "u-value-heat-transfer-calculation",
     section: "B", questionRef: "2023 OL Q9(iii)",
-    questionText: "A wall has an area of 66 m2 and a U-value of 0.31 W m–2 K–1. The temperature difference between inside and outside the wall is 15 °C. Calculate how much heat energy is transmitted through the wall every second.",
+    stem: "Brick is considered one of the best construction materials in the world for a number of reasons. One reason is that brick is a better insulator than many other building materials.",
+    questionText: "A wall has an area of 66 m² and a U-value of 0.31 W m⁻² K⁻¹. The temperature difference between inside and outside the wall is 15 °C. Calculate how much heat energy is transmitted through the wall every second.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "66 × 0.31 × 15", marks: 6, contextNote: "The scheme awards the larger share for the correct substitution." },
-    { id: "r-2", kind: "point", verbatim: "306.9 J", marks: 3, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "66 × 0.31 × 15", marks: 6 },
+    { id: "r2", kind: "point", verbatim: "306.9 J", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3044,12 +3248,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q9-iv", topicId: "phys-1-2", conceptId: "volume-calculation",
     section: "B", questionRef: "2023 OL Q9(iv)",
-    stem: "A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm. The brick has a mass of 2 kg.",
-    questionText: "Calculate the volume of the brick in cm3.",
+    stem: "Another reason for bricks being such a popular building material is that that they are durable and strong. A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm, as shown in the diagram. The brick has a mass of 2 kg.",
+    questionText: "Calculate the volume of the brick in cm³.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "20 × 9 × 6 = 1080 cm3", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "20 × 9 × 6 = 1080 cm³", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q9-brick",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q9-brick.png",
+          "srcHash": "a7d265995216d10194da623f5b9293b2",
+          "alt": "Photograph of a rectangular brick with three faces lettered: A on the small end face, B on the top face and C on the long side face; its dimensions are marked w = 9 cm, h = 6 cm and l = 20 cm.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: willamettegraystone.com",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3058,26 +3270,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q9-v", topicId: "phys-1-2", conceptId: "density-calculation",
     section: "B", questionRef: "2023 OL Q9(v)",
-    stem: "A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm. The brick has a mass of 2 kg.",
-    questionText: "Calculate the density of the brick in g cm–3.",
+    stem: "Another reason for bricks being such a popular building material is that that they are durable and strong. A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm, as shown in the diagram. The brick has a mass of 2 kg. (iv) Calculate the volume of the brick in cm³.",
+    questionText: "Calculate the density of the brick in g cm⁻³.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "conversion to grams", marks: 4, contextNote: "The mass 2 kg must be converted to 2000 g before dividing." },
-    { id: "r-2", kind: "point", verbatim: "2000 ÷ 1080 = 1.85 g cm–3", marks: 2, contextNote: "1080 cm3 is the volume found in part (iv). Partial answer scores 3." },
+    { id: "r1", kind: "criterion", verbatim: "conversion to grams", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "point", verbatim: "2000 ÷ 1080 = 1.85 g cm⁻³", marks: 2, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q9-brick",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q9-brick.png",
+          "srcHash": "a7d265995216d10194da623f5b9293b2",
+          "alt": "Photograph of a rectangular brick with three faces lettered: A on the small end face, B on the top face and C on the long side face; its dimensions are marked w = 9 cm, h = 6 cm and l = 20 cm.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: willamettegraystone.com",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q9-vii", topicId: "phys-u3", conceptId: "non-renewable-energy",
+    id: "phys-2023-ol-q9-vii", topicId: "phys-1-4", conceptId: "non-renewable-energy",
     section: "B", questionRef: "2023 OL Q9(vii)",
     stem: "Brick is a sustainable material. Factories that make bricks are moving away from non-renewable energy sources and are using alternative energy sources instead.",
     questionText: "What is meant by non-renewable energy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "energy that is not replaced as it is used", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "energy that is not replaced as it is used", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3085,12 +3305,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q9-viii", topicId: "phys-u3", conceptId: "renewable-energy-source",
+    id: "phys-2023-ol-q9-viii", topicId: "phys-1-4", conceptId: "renewable-energy-source",
     section: "B", questionRef: "2023 OL Q9(viii)",
+    stem: "Brick is a sustainable material. Factories that make bricks are moving away from non-renewable energy sources and are using alternative energy sources instead.",
     questionText: "State an example of a renewable energy source.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "solar", marks: 3, contextNote: "The scheme gives this as an example ('e.g. solar'); other valid renewable sources are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. solar", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3100,11 +3321,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q9-ix", topicId: "phys-2-1", conceptId: "reducing-heat-loss-home",
     section: "B", questionRef: "2023 OL Q9(ix)",
-    stem: "Bricks alone are not enough to meet today's heat retention standards.",
+    stem: "Bricks alone are not enough to meet today’s heat retention standards.",
     questionText: "State two ways in which you can reduce heat loss from your home.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "double-glazed windows", marks: null, contextNote: "The scheme gives these as examples ('e.g.'); other valid ways of reducing heat loss are acceptable.", openList: true, group: {"claimMax":2,"perOption":3,"options":["double-glazed windows","insulated attic"]} },
+    { id: "r1", kind: "anyN", verbatim: "double-glazed windows / insulated attic", marks: null, contextNote: "The scheme prints two examples (\"e.g.\") at \"[2 × 3]\": 3 each.", openList: true, group: {"claimMax":2,"perOption":3,"options":["double-glazed windows","insulated attic"]} },
     ],
   } as SecCard,
   {
@@ -3118,7 +3339,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by reflection?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bouncing of a wave off a surface", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "bouncing of a wave off a surface", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3132,7 +3353,23 @@ export const CARDS: SecCard[] = [
     questionText: "What causes sound to refract as it moves from one medium to another?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "change in speed", marks: 6, accepts: ["change in (optical) density"] },
+    { id: "r1", kind: "point", verbatim: "change in speed / change in (optical) density", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q10-iii", topicId: "phys-2-6", conceptId: "demonstrating-sound-interference",
+    section: "B", questionRef: "2023 OL Q10(iii)",
+    stem: "When two sound waves meet they can undergo interference.",
+    questionText: "Describe a laboratory experiment to show that sound waves undergo interference.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -3146,7 +3383,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by diffraction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "spreading of a wave as it passes through a gap", marks: 6, accepts: ["spreading of a wave as it passes around an object"], contextNote: "The scheme accepts either ending — 'through a gap' or 'around an object'." },
+    { id: "r1", kind: "point", verbatim: "spreading of a wave as it passes through a gap/around an object", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3154,13 +3391,13 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q10-v", topicId: "phys-2-3", conceptId: "polarisation-longitudinal-waves",
+    id: "phys-2023-ol-q10-v", topicId: "phys-2-2", conceptId: "polarisation-longitudinal-waves",
     section: "B", questionRef: "2023 OL Q10(v)",
     stem: "Light waves can undergo polarisation but sound waves cannot.",
     questionText: "Why do sound waves not undergo polarisation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sound waves are longitudinal", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "sound waves are longitudinal", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3184,10 +3421,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q11-ii", topicId: "phys-3-3", conceptId: "measuring-current-instrument",
     section: "B", questionRef: "2023 OL Q11(ii)",
+    stem: "Electric current is the movement of charged particles through a conductor.",
     questionText: "Name an instrument used to measure electric current.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ammeter", marks: 6, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "ammeter", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3197,12 +3435,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q11-vi", topicId: "phys-3-3", conceptId: "parallel-circuit-current",
     section: "B", questionRef: "2023 OL Q11(vi)",
-    stem: "Two light bulbs connected in parallel have resistances of 5 Ω and 4 Ω.",
+    stem: "(v) Two light bulbs connected in parallel have resistances of 5 Ω and 4 Ω. Calculate the total resistance of the two light bulbs.",
     questionText: "Calculate the total current flowing in this circuit if the battery had a voltage of 12 V.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "12 ÷ 2.22 = 5.4 A", marks: 6, contextNote: "2.22 Ω is the total resistance of the two bulbs in parallel, found in part (v)." },
+    { id: "r1", kind: "point", verbatim: "12 ÷ 2.22 = 5.4 A", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3214,7 +3462,7 @@ export const CARDS: SecCard[] = [
     questionText: "The charged particles that carry current through a metallic conductor are electrons. Name the charged particles that carry current through an ionic solution such as copper sulfate solution?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ions", marks: 5, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "ions", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3228,7 +3476,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name a positively charged subatomic particle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "proton", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "proton", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3242,7 +3490,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name a neutral subatomic particle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "neutron", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "neutron", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3252,12 +3500,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-iv", topicId: "phys-4-1", conceptId: "thermionic-emission",
     section: "B", questionRef: "2023 OL Q12(iv)",
-    stem: "A beam of electrons is produced in a cathode ray tube.",
+    stem: "The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
     questionText: "How are the electrons produced in a cathode ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "thermionic emission", marks: 6, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "thermionic emission", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q12-crt",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-crt.png",
+          "srcHash": "b445948c85671dad8e403c8c31d377a2",
+          "alt": "Photograph of a cathode ray tube: a glass tube with electrodes inside, widening at one end into a flat, square screen.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3266,11 +3522,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-v", topicId: "phys-4-1", conceptId: "deflecting-electron-beam",
     section: "B", questionRef: "2023 OL Q12(v)",
+    stem: "The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
     questionText: "How can the beam of electrons be deflected in a cathode ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "electric field", marks: 6, accepts: ["magnetic field"], contextNote: "The scheme prints 'electric/magnetic field' — the two are equally acceptable." },
+    { id: "r1", kind: "point", verbatim: "electric/magnetic field", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q12-crt",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-crt.png",
+          "srcHash": "b445948c85671dad8e403c8c31d377a2",
+          "alt": "Photograph of a cathode ray tube: a glass tube with electrodes inside, widening at one end into a flat, square screen.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3279,11 +3544,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-vi", topicId: "phys-4-1", conceptId: "detecting-electron-beam",
     section: "B", questionRef: "2023 OL Q12(vi)",
+    stem: "The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
     questionText: "How is the beam of electrons detected in a cathode ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "light on a screen", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "light on a screen", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q12-crt",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-crt.png",
+          "srcHash": "b445948c85671dad8e403c8c31d377a2",
+          "alt": "Photograph of a cathode ray tube: a glass tube with electrodes inside, widening at one end into a flat, square screen.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3292,12 +3566,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-vii", topicId: "phys-4-2", conceptId: "xray-tube-acceleration",
     section: "B", questionRef: "2023 OL Q12(vii)",
-    stem: "A beam of high speed electrons is used to produce X-rays in an X-ray tube.",
+    stem: "The picture on the right is of an X-ray tube. A beam of high speed electrons is used to produce X-rays in an X-ray tube.",
     questionText: "How are the electrons accelerated to high speeds in an X-ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(high) voltage", marks: 6, contextNote: "'voltage' is the key word; it must appear in the correct context to merit the marks." },
+    { id: "r1", kind: "point", verbatim: "(high) voltage", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q12-xray",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-xray.png",
+          "srcHash": "10128d45c3139c8e6d0fb329c2e32a50",
+          "alt": "Photograph of an X-ray tube: a glass tube with metal electrodes, a finned metal cap at one end and wire leads at the other.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3306,11 +3588,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-viii", topicId: "phys-4-2", conceptId: "xray-tube-target",
     section: "B", questionRef: "2023 OL Q12(viii)",
+    stem: "The picture on the right is of an X-ray tube. A beam of high speed electrons is used to produce X-rays in an X-ray tube.",
     questionText: "Tungsten is often used as the target in an X-ray tube because it has a high melting point. Why does the target in an X-ray tube need to have a high melting point?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "heat is produced", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "heat is produced", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q12-xray",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-xray.png",
+          "srcHash": "10128d45c3139c8e6d0fb329c2e32a50",
+          "alt": "Photograph of an X-ray tube: a glass tube with metal electrodes, a finned metal cap at one end and wire leads at the other.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3319,11 +3610,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-x", topicId: "phys-2-4", conceptId: "electromagnetic-spectrum",
     section: "B", questionRef: "2023 OL Q12(x)",
-    stem: "X-rays are a type of electromagnetic radiation.",
+    stem: "(ix) X-rays are a type of electromagnetic radiation. They travel at a speed of 3 × 10⁸ m s⁻¹. Calculate the wavelength of an X-ray that has a frequency of 5.5 × 10¹⁷ Hz.",
     questionText: "Name one other type of electromagnetic radiation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "gamma", marks: 5, contextNote: "The scheme gives this as an example ('e.g. gamma'); any other member of the electromagnetic spectrum is acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. gamma", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3333,10 +3624,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13-i", topicId: "phys-4-6", conceptId: "nuclear-fusion",
     section: "B", questionRef: "2023 OL Q13(i)",
+    stem: "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
     questionText: "What is meant by nuclear fusion?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "joining of two nuclei", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "joining of two nuclei", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3346,10 +3638,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13-ii", topicId: "phys-3-1", conceptId: "electrostatic-repulsion-nuclei",
     section: "B", questionRef: "2023 OL Q13(ii)",
+    stem: "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
     questionText: "Why is there a huge force of electrostatic repulsion between two nuclei that are brought close to each other?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "they are both positively charged", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "they are both positively charged", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3359,10 +3652,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13-iii", topicId: "phys-4-4", conceptId: "isotopes",
     section: "B", questionRef: "2023 OL Q13(iii)",
+    stem: "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
     questionText: "The scientists used isotopes of hydrogen in this experiment. What are isotopes?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "atoms of the same atomic number but with different mass numbers", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "atoms of the same atomic number but with different mass numbers", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3372,10 +3666,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13-vi", topicId: "phys-1-4", conceptId: "power-calculation",
     section: "B", questionRef: "2023 OL Q13(vi)",
+    stem: "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
     questionText: "In this experiment, 59 MJ of energy was produced during 5 s. Calculate the power generated.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "59 ÷ 5 = 11.8 MW", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "59 ÷ 5 = 11.8 MW", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3385,10 +3680,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13-vii", topicId: "phys-4-6", conceptId: "nuclear-fission",
     section: "B", questionRef: "2023 OL Q13(vii)",
+    stem: "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
     questionText: "Nuclear power plants currently use nuclear fission, not nuclear fusion. What is meant by nuclear fission?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the splitting of a nucleus", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "the splitting of a nucleus", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3398,11 +3694,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-a-i", topicId: "phys-1-2", conceptId: "momentum-calculation",
     section: "B", questionRef: "2023 OL Q14(a)(i)",
-    questionText: "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s–1. Calculate the momentum of the train. Include units in your answer.",
+    stem: "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s⁻¹.",
+    questionText: "Calculate the momentum of the train. Include units in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "720 000", marks: 6, contextNote: "The numerical value of the momentum; the unit is marked separately below." },
-    { id: "r-2", kind: "point", verbatim: "kg m s–1", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "720 000", marks: 6, contextNote: "[accept partial answer for 3]" },
+    { id: "r2", kind: "point", verbatim: "kg m s⁻¹", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3412,12 +3709,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-a-ii", topicId: "phys-1-2", conceptId: "momentum-at-rest",
     section: "B", questionRef: "2023 OL Q14(a)(ii)",
-    stem: "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s–1. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
+    stem: "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s⁻¹. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
     questionText: "What is the momentum of the carriage before the coupling? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0", marks: 3, contextNote: "The stated momentum of the carriage before the coupling." },
-    { id: "r-2", kind: "point", verbatim: "because it has zero velocity", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "0", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "because it has zero velocity", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3427,11 +3724,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-a-iii", topicId: "phys-1-2", conceptId: "conservation-of-momentum",
     section: "B", questionRef: "2023 OL Q14(a)(iii)",
-    stem: "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s–1. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
+    stem: "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s⁻¹. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
     questionText: "Calculate the initial velocity of the train after it joins with the carriage.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "720 000 ÷ 265 000 = 2.72 m s–1", marks: 6, contextNote: "720 000 kg m s–1 is the train's momentum from part (i); 265 000 kg is the combined mass of train and carriage." },
+    { id: "r1", kind: "point", verbatim: "720 000 ÷ 265 000 = 2.72 m s⁻¹", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3441,10 +3738,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-a-iv", topicId: "phys-1-1", conceptId: "distance-speed-time",
     section: "B", questionRef: "2023 OL Q14(a)(iv)",
-    questionText: "The train then accelerates to a speed of 22 m s–1. It maintains this speed for 8 minutes. Calculate the distance travelled by the train over the 8 minutes.",
+    stem: "The train then accelerates to a speed of 22 m s⁻¹. It maintains this speed for 8 minutes.",
+    questionText: "Calculate the distance travelled by the train over the 8 minutes.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "22 × 8 × 60 = 10560 m", marks: 7, contextNote: "The 8 minutes must be converted to seconds before multiplying." },
+    { id: "r1", kind: "point", verbatim: "22 × 8 × 60 = 10560 m", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3454,11 +3752,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-b-iii", topicId: "phys-2-3", conceptId: "critical-angle-refractive-index",
     section: "B", questionRef: "2023 OL Q14(b)(iii)",
-    stem: "Light travels through an optical fibre using total internal reflection.",
     questionText: "The critical angle of the glass in an optical fibre is 43.6°. Calculate n, the refractive index of the glass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1/sin 43.6° = 1.45", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "1/sin 43.6° = 1.45", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3471,7 +3768,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one use of an optical fibre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "microsurgery", marks: 4, contextNote: "The scheme gives this as an example ('e.g. microsurgery'); other valid uses are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. microsurgery", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -3481,11 +3778,27 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-c-ii", topicId: "phys-3-1", conceptId: "inverse-square-law",
     section: "B", questionRef: "2023 OL Q14(c)(ii)",
-    stem: "The force between two electric charges is calculated using Coulomb's law. Coulomb's law is an example of an inverse square law.",
+    stem: "The force between two electric charges is calculated using Coulomb’s law. Coulomb’s law is an example of an inverse square law.",
     questionText: "Describe what is meant by an inverse square law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "as one quantity doubles, the other quantity decreases by a factor of 4", marks: 6, contextNote: "The scheme gives this as an example ('e.g.'); other valid descriptions are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. as one quantity doubles, the other quantity decreases by a factor of 4", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q14-c-iii", topicId: "phys-3-1", conceptId: "charge-on-outside-of-conductor",
+    section: "B", questionRef: "2023 OL Q14(c)(iii)",
+    stem: "Electric charge builds up on the dome of a Van de Graaff generator.",
+    questionText: "Describe a laboratory experiment that uses a Van de Graaff generator to show that charge resides on the outside of a hollow metal conductor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -3495,12 +3808,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-c-iv", topicId: "phys-3-1", conceptId: "static-charge-repulsion",
     section: "B", questionRef: "2023 OL Q14(c)(iv)",
-    stem: "Electric charge builds up on the dome of a Van de Graaff generator. A student is touching a Van de Graaff generator.",
-    questionText: "Explain why her hair is standing up.",
+    stem: "Electric charge builds up on the dome of a Van de Graaff generator.",
+    questionText: "The picture on the right shows a student touching a Van de Graaff generator. Explain why her hair is standing up.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "hair is charged (and like charges repel)", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "hair is charged (and like charges repel)", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q14c-vdg",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q14c-vdg.png",
+          "srcHash": "b8e71f62a63ee4522410709c8f45a87a",
+          "alt": "Photograph of a student with her hand on the dome of a Van de Graaff generator, her hair standing out from her head.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: fishersci.com",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3513,7 +3834,22 @@ export const CARDS: SecCard[] = [
     questionText: "What is a magnetic field?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "region where magnetic forces can be felt", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "region where magnetic forces can be felt", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q14-d-ii", topicId: "phys-3-4", conceptId: "plotting-field-around-conductor",
+    section: "B", questionRef: "2023 OL Q14(d)(ii)",
+    stem: "A current-carrying conductor has a magnetic field around it.",
+    questionText: "Describe a laboratory experiment to plot the magnetic field around a current-carrying conductor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 6, contextNote: "[accept partial answers for 3 in each case] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -3527,7 +3863,7 @@ export const CARDS: SecCard[] = [
     questionText: "A straight piece of wire of length 1.8 m carrying a current of 3 A experiences a maximum force of 11 N when it is placed in a uniform magnetic field. Calculate the magnetic flux density.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "11 ÷ (3 × 1.8) = 2.04 T", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "11 ÷ (3 × 1.8) = 2.04 T", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3535,12 +3871,12 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q14-d-iv", topicId: "phys-u4", conceptId: "vector-quantities",
+    id: "phys-2023-ol-q14-d-iv", topicId: "phys-1-1", conceptId: "vector-quantities",
     section: "B", questionRef: "2023 OL Q14(d)(iv)",
     questionText: "Magnetic flux density is an example of a vector quantity. Name another example of a vector quantity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "force", marks: 4, contextNote: "The scheme gives this as an example ('e.g. force'); any other valid vector quantity is acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. force", marks: 4 },
     ],
   } as SecCard,
   {
@@ -6690,7 +7026,7 @@ export const CARDS: SecCard[] = [
     labelKey: [{"letter":"40 cm","meaning":"The distance between two adjacent nodes of the stationary wave (half a wavelength) — used in part (iv) to find the wavelength this part relies on","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
@@ -6700,56 +7036,44 @@ export const CARDS: SecCard[] = [
     questionText: "The bricks are stacked to build a wall. On which side, A, B or C, should a brick be stacked so that it exerts the least amount of pressure on the bricks below it? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "B", marks: 4, contextNote: "B is the top face — the face with the largest area (20 cm x 9 cm)." },
-    { id: "r-2", kind: "point", verbatim: "greatest area", marks: 4, contextNote: "The explanation mark: pressure = force / area, so the face with the greatest area exerts the least pressure." },
+    { id: "r1", kind: "point", verbatim: "B", marks: 4 },
+    { id: "r2", kind: "point", verbatim: "greatest area", marks: 4 },
     ],
     figure: {
-          "candId": "physics-2023-OL-paper-p08-i0",
-          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p08-i0.png",
-          "srcHash": "f53d1d8a2dd39a6a7b4ff3dbf928b100",
-          "alt": "Question 9 parts (iv) to (vi) on the left, beside a three-quarter view of a single rectangular grey brick on the right. Three faces of the brick are lettered directly on the image: \"B\" on the large top face, \"A\" on the small end face at the left, and \"C\" on the long front face. Dimension captions surround the brick — \"h = 6 cm\" with the vertical height at the right-hand end, \"l = 20 cm\" beneath the long bottom front edge, and \"w = 9 cm\" at the lower left beside the short edge. All three letters, all three dimension captions and the whole brick are inside the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "h",
-                "w",
-                "l"
-          ]
+          "candId": "physics-2023-ol-q9-brick",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q9-brick.png",
+          "srcHash": "a7d265995216d10194da623f5b9293b2",
+          "alt": "Photograph of a rectangular brick with three faces lettered: A on the small end face, B on the top face and C on the long side face; its dimensions are marked w = 9 cm, h = 6 cm and l = 20 cm.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: willamettegraystone.com",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"A","meaning":"The end face of the brick (width x height, 9 cm x 6 cm) — the smallest face","askedInThisQuestion":false},{"letter":"B","meaning":"The top face of the brick (length x width, 20 cm x 9 cm) — the largest face","askedInThisQuestion":true},{"letter":"C","meaning":"The front face of the brick (length x height, 20 cm x 6 cm)","askedInThisQuestion":false},{"letter":"h","meaning":"Height of the brick, h = 6 cm","askedInThisQuestion":false},{"letter":"w","meaning":"Width of the brick, w = 9 cm","askedInThisQuestion":false},{"letter":"l","meaning":"Length of the brick, l = 20 cm","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q11iii-fig", topicId: "phys-3-3", conceptId: "circuit-diagram-from-apparatus",
     section: "B", questionRef: "2023 OL Q11(iii)",
-    stem: "Electric current is the movement of charged particles through a conductor.",
+    stem: "Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).",
     questionText: "Draw a circuit diagram for the arrangement of apparatus shown in the diagram on the right.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "symbol for battery/cell", marks: 3, contextNote: "The single solidus means battery symbol and cell symbol are equally acceptable." },
-    { id: "r-2", kind: "point", verbatim: "symbol for bulb", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "connected in series", marks: 3, contextNote: "The scheme prints these three elements on one line as 'symbol for battery/cell, symbol for bulb, connected in series [3 × 3]' — split here into its three 3-mark elements." },
+    { id: "r1", kind: "criterion", verbatim: "symbol for battery/cell", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "symbol for bulb", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "connected in series", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
     figure: {
-          "candId": "physics-2023-OL-paper-p10-i0",
-          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p10-i0.png",
-          "srcHash": "2d6b9eb8be7d0505036dc9d36dc84bb3",
-          "alt": "Question 11 parts (iii) and (iv) on the left, with a pictorial (not symbolic) circuit on the right. A single filament light bulb sits at the top in a screw holder; two wires leave the holder, curve down to the left and to the right, and run to the two ends of one cylindrical battery drawn as a black cell lying horizontally at the bottom. The result is a single closed series loop of bulb and battery. The battery's left end is marked with a circled \"+\" and its right end with a circled \"−\", and the word \"battery\" is printed across the black cell. A leader arrow coming from the right, captioned \"light bulb\", points at the bulb. Both ends of the loop and both captions are fully inside the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "+",
-                "−"
-          ]
+          "candId": "physics-2023-ol-q11-bulb",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q11-bulb.png",
+          "srcHash": "b5964f932a9c1104b5fe9d1d9693c710",
+          "alt": "Drawing of a light bulb joined by two wires to the + and – ends of a battery, labelled light bulb and battery.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: electricityforum.com",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"+","meaning":"The positive terminal of the battery","askedInThisQuestion":false},{"letter":"−","meaning":"The negative terminal of the battery","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
@@ -6759,21 +7083,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the electric field lines around two positively charged particles held close to each other.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "shape", marks: 3, contextNote: "For two like (positive) charges the field lines repel — they curve away from the midpoint, unlike the shown dipole pattern where lines connect the two charges." },
-    { id: "r-2", kind: "point", verbatim: "direction", marks: 3, contextNote: "Arrows must point away from both positive charges." },
+    { id: "r1", kind: "criterion", verbatim: "shape", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "direction", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
     figure: {
-          "candId": "physics-2023-OL-paper-p14-i1",
-          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-p14-i1.png",
-          "srcHash": "fbe05b427166d33f686268c5505186bf",
-          "alt": "Question 14 part (c) opening text on the left, and on the right a line diagram of the electric field around an electric dipole. Two small circles sit side by side, the left one containing \"+\" and the right one containing \"−\". Curved field lines carrying arrowheads run from the left circle to the right circle: short tight loops directly between the two, and progressively wider loops arching above and below them. Further out, straighter lines with arrowheads radiate outwards away from the \"+\" circle and converge inwards onto the \"−\" circle. Every arrowhead points away from \"+\" and towards \"−\". All the field lines terminate inside the crop on all four sides.",
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "+",
-                "−"
-          ]
+          "candId": "physics-2023-ol-q14c-field",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q14c-field.png",
+          "srcHash": "ebaad35fa29362ec67c73b5b5f8a8912",
+          "alt": "Diagram of the electric field around a positive and a negative charge side by side: curved field lines with arrows run from the + charge to the – charge, and outer lines spread away from + and in towards –.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"+","meaning":"The positively charged particle (left circle) — field lines point away from it","askedInThisQuestion":false},{"letter":"−","meaning":"The negatively charged particle (right circle) — field lines point towards it","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7851,20 +8171,27 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13b-v", topicId: "phys-4-4", conceptId: "daughter-nucleus-after-beta-decay",
     section: "B", questionRef: "2023 OL Q13(v)",
-    questionText: "Tritium decays by beta emission. What is the daughter nucleus when an atom of H1 3 emits a beta particle? (7)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    questionText: "Tritium decays by beta emission. What is the daughter nucleus when an atom of H₁ ³ emits a beta particle?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He2 3", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "He³₂", marks: 7, contextNote: "[3 + 2 + 2]: the scheme prices the nuclide's symbol and its two numbers." },
     ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL SOURCE",
-          "title": "Source and question",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    questionFigure: {
+          "candId": "physics-2023-ol-q13v-question",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q13v-question.png",
+          "srcHash": "f34bd4dc2597e55d5634d339998466d5",
+          "alt": "The printed part (v): Tritium decays by beta emission. What is the daughter nucleus when an atom of H, with 3 above and 1 below, emits a beta particle? (7)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2023-ol-q13v-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q13v-scheme.png",
+          "srcHash": "ad1ec5b658f0cf9b3d352a99e642c28e",
+          "alt": "The marking scheme's answer: He with 3 above and 2 below, the two numbers printed after the symbol.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7872,22 +8199,21 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q10-vi", topicId: "phys-2-4", conceptId: "nodes-on-a-stationary-wave",
-    section: "A", questionRef: "2023 OL Q10(vi)",
+    id: "phys-2023-ol-q10-vi", topicId: "phys-2-6", conceptId: "nodes-on-a-stationary-wave",
+    section: "B", questionRef: "2023 OL Q10(vi)",
+    stem: "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹.",
     questionText: "What name is given to points A and B?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "nodes", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "nodes", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                9
-          ],
-          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2023-ol-q10-wave",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q10-wave.png",
+          "srcHash": "9d124319add3e8f0790cec854bb9ddc3",
+          "alt": "Diagram of a standing wave on a string fixed between two posts: a solid and a dotted curve cross at the points marked A and B, and a double arrow labelled h marks the height of one loop.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7895,28 +8221,44 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q10-vii", topicId: "phys-2-4", conceptId: "amplitude-on-a-stationary-wave",
-    section: "A", questionRef: "2023 OL Q10(vii)",
-    stem: "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h",
+    id: "phys-2023-ol-q10-vii", topicId: "phys-2-6", conceptId: "amplitude-on-a-stationary-wave",
+    section: "B", questionRef: "2023 OL Q10(vii)",
+    stem: "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹.",
     questionText: "What name is given to height h?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "What name is given to height h?", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "amplitude", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q10-wave",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q10-wave.png",
+          "srcHash": "9d124319add3e8f0790cec854bb9ddc3",
+          "alt": "Diagram of a standing wave on a string fixed between two posts: a solid and a dotted curve cross at the points marked A and B, and a double arrow labelled h marks the height of one loop.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q10-viii", topicId: "phys-2-4", conceptId: "wavelength-from-node-separation",
-    section: "A", questionRef: "2023 OL Q10(viii)",
-    stem: "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h",
+    id: "phys-2023-ol-q10-viii", topicId: "phys-2-6", conceptId: "wavelength-from-node-separation",
+    section: "B", questionRef: "2023 OL Q10(viii)",
+    stem: "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹.",
     questionText: "Calculate the wavelength of the wave.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2 × 45 = 90 cm", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "2 × 45 = 90 cm", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q10-wave",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q10-wave.png",
+          "srcHash": "9d124319add3e8f0790cec854bb9ddc3",
+          "alt": "Diagram of a standing wave on a string fixed between two posts: a solid and a dotted curve cross at the points marked A and B, and a double arrow labelled h marks the height of one loop.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7925,21 +8267,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13b-viii", topicId: "phys-4-6", conceptId: "why-fusion-is-preferred-to-fission",
     section: "B", questionRef: "2023 OL Q13(viii)",
-    questionText: "Large amounts of money are being invested into nuclear fusion research.",
+    stem: "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
+    questionText: "Large amounts of money are being invested into nuclear fusion research. Why is there such interest in replacing nuclear fission with nuclear fusion?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "any valid reference to fuel/products/etc.", marks: 7 },
+    { id: "r1", kind: "criterion", verbatim: "any valid reference to fuel/products/etc.", marks: 7, contextNote: "[accept partial answer for 4] The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL SOURCE",
-          "title": "Source and question",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7947,21 +8280,43 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q11-vii", topicId: "phys-3-3", conceptId: "why-a-filament-graph-curves",
-    section: "A", questionRef: "2023 OL Q11(vii)",
+    section: "B", questionRef: "2023 OL Q11(vii)",
+    stem: "The relationship between current and voltage for a filament bulb is shown in the graph below.",
     questionText: "Explain the shape of the graph.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "the resistance is greater at high current", marks: 6, accepts: ["due to the heating effect","as voltage increases, the current increases"] },
+    { id: "r1", kind: "point", verbatim: "the resistance is greater at high current / due to the heating effect / as voltage increases, the current increases", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                10
-          ],
-          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2023-ol-q11-graph",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q11-graph.png",
+          "srcHash": "50a0c453411b5722034602605b81e88a",
+          "alt": "Graph of current (mA), from 0 to 60, against voltage (V), from 0 to 6, for a filament bulb: a curve rising from the origin, steep at first and levelling off near 56 mA at 6 V.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q11-viii", topicId: "phys-3-3", conceptId: "metallic-conductor-graph",
+    section: "B", questionRef: "2023 OL Q11(viii)",
+    stem: "The relationship between current and voltage for a filament bulb is shown in the graph below.",
+    questionText: "Sketch the graph of current against voltage for a metallic conductor held at constant temperature.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "axis labelled", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "correct shape", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+    figure: {
+          "candId": "physics-2023-ol-q11-graph",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q11-graph.png",
+          "srcHash": "50a0c453411b5722034602605b81e88a",
+          "alt": "Graph of current (mA), from 0 to 60, against voltage (V), from 0 to 6, for a filament bulb: a curve rising from the origin, steep at first and levelling off near 56 mA at 6 V.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7970,21 +8325,21 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q8-iv", topicId: "phys-2-3", conceptId: "angle-of-refraction-from-snells-law",
-    section: "A", questionRef: "2023 OL Q8(iv)",
+    section: "B", questionRef: "2023 OL Q8(iv)",
     stem: "The diagram below shows how a ray of light travels through a rectangular glass block.",
-    questionText: "The refractive index of the glass block is 1.5.",
+    questionText: "The refractive index of the glass block is 1.5. Calculate the angle of refraction when the angle of incidence is 35°.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "n = sin i/sin r", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "r = 22.5°", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "n = sin i/sin r", marks: 3 },
+    { id: "r2", kind: "criterion", verbatim: "substitution", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "r = 22.5°", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
     figure: {
-          "candId": "physics-2023-ol-paper-p007-i0",
-          "src": "/exam-figures/physics/markbank/physics-2023-ol-paper-p007-i0.png",
-          "srcHash": "85751cd2429eddcb45c7685f132f1f71",
-          "alt": "Ray diagram of light passing through a rectangular glass block drawn in plain outline. An incident ray with an arrowhead comes down from the upper left and meets the top face; a vertical dashed normal is drawn at that point; inside the block the ray bends towards the normal and travels down to the bottom face, where it bends again and leaves as an arrowed ray to the lower right. Leader lines label the incident ray A, the ray inside the block B, and the dashed normal C.",
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2023-ol-q8-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q8-diagram.png",
+          "srcHash": "909cd2c1684e403cf51d63dd9838edb2",
+          "alt": "Diagram of a ray of light passing through a rectangular glass block: the ray arriving at the top face is pointed to by an arrow labelled A, a dashed vertical line at the point of entry by an arrow labelled C, and the ray inside the block by an arrow labelled B; the ray leaves through the bottom face.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -7994,14 +8349,14 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q7-v", topicId: "phys-1-4", conceptId: "velocity-from-energy-or-suvat",
-    section: "A", questionRef: "2023 OL Q7(v)",
-    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+    section: "B", questionRef: "2023 OL Q7(v)",
+    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. (iii) The carriage is dropped from a height of 37 m above the braking zone. The mass of the carriage is 6200 kg. Calculate the potential energy the carriage had before it was dropped. acceleration due to gravity = 9.8 m s⁻²",
     questionText: "Calculate the velocity of the carriage when it has fallen 37 m.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ek = ½mv2 // v2 = u2 + 2as", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "v = 26.9 m s–1", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "Eₖ = ½mv² // v² = u² + 2as", marks: 3, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side." },
+    { id: "r2", kind: "criterion", verbatim: "substitution", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "v = 26.9 m s⁻¹", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -8010,22 +8365,24 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q8-vi", topicId: "phys-2-3", conceptId: "image-position-for-a-converging-lens",
-    section: "A", questionRef: "2023 OL Q8(vi)",
-    stem: "The diagram below shows how a ray of light travels through a rectangular glass block.",
+    section: "B", questionRef: "2023 OL Q8(vi)",
+    stem: "Refraction also occurs when light travels through a lens.",
     questionText: "An object is placed 25 cm in front of a converging lens of focal length 15 cm. Calculate the position of the image formed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1/u + 1/v = 1/f", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "v = 37.5 cm", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "1/u + 1/v = 1/f", marks: 3 },
+    { id: "r2", kind: "criterion", verbatim: "substitution", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "v = 37.5 cm", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
-    figure: {
-          "candId": "physics-2023-ol-paper-p007-i0",
-          "src": "/exam-figures/physics/markbank/physics-2023-ol-paper-p007-i0.png",
-          "srcHash": "85751cd2429eddcb45c7685f132f1f71",
-          "alt": "Ray diagram of light passing through a rectangular glass block drawn in plain outline. An incident ray with an arrowhead comes down from the upper left and meets the top face; a vertical dashed normal is drawn at that point; inside the block the ray bends towards the normal and travels down to the bottom face, where it bends again and leaves as an arrowed ray to the lower right. Leader lines label the incident ray A, the ray inside the block B, and the dashed normal C.",
-          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
     },
   } as SecCard,
   {
@@ -8034,14 +8391,13 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q11-v", topicId: "phys-3-3", conceptId: "total-resistance-of-two-parallel-bulbs",
-    section: "A", questionRef: "2023 OL Q11(v)",
-    stem: "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V)",
+    section: "B", questionRef: "2023 OL Q11(v)",
     questionText: "Two light bulbs connected in parallel have resistances of 5 Ω and 4 Ω. Calculate the total resistance of the two light bulbs.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1/RT = 1/R1 + 1/R2", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "RT = 2.22 Ω", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "1/RT = 1/R₁ + 1/R₂", marks: 3 },
+    { id: "r2", kind: "criterion", verbatim: "substitution", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "RT = 2.22 Ω", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -8051,14 +8407,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q1-i", topicId: "phys-u2", conceptId: "newtons-second-law-apparatus",
     section: "A", questionRef: "2023 OL Q1(i)",
-    stem: "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied. The student recorded the following results. F (N) 0.2 0.4 0.6 0.8 1.0 1.2 a (m s–2) 0.72 1.39 2.11 2.76 3.47 4.22",
-    questionText: "Draw a labelled diagram of the apparatus used in this experiment. (12)",
+    stem: "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied.",
+    questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "runway", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "trolley", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "means of applying/measuring force", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "means of measuring distance/velocity/time", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "runway", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "trolley", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "means of applying/measuring force", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "means of measuring distance/velocity/time", marks: 3, contextNote: "[–1 if no label present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8068,14 +8424,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q1-iv", topicId: "phys-u2", conceptId: "graph-of-force-against-acceleration",
     section: "A", questionRef: "2023 OL Q1(iv)",
-    stem: "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied. The student recorded the following results. F (N) 0.2 0.4 0.6 0.8 1.0 1.2 a (m s–2) 0.72 1.39 2.11 2.76 3.47 4.22",
+    stem: "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied. The student recorded the following results. F (N) 0.2 0.4 0.6 0.8 1.0 1.2 a (m s⁻²) 0.72 1.39 2.11 2.76 3.47 4.22",
     questionText: "Use the data in the table to draw a graph on graph paper of F against a.",
-    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
+    figure: {
+          "candId": "physics-2023-ol-q1iv-scheme-graph",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q1iv-scheme-graph.png",
+          "srcHash": "c69e921a1ec48771bc02b17ba88269a6",
+          "alt": "The marking scheme's graph: a (m s⁻²), from 0 to 4.5, against F (N), from 0 to 1.4, with six plotted points from 0.2 N to 1.2 N on a straight line drawn from the origin.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8084,10 +8449,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q2-i", topicId: "phys-u2", conceptId: "concave-mirror-focal-length-apparatus",
     section: "A", questionRef: "2023 OL Q2(i)",
+    stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"6 + 3 + 3"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "object, mirror, screen", marks: 12 },
+    { id: "r1", kind: "anyN", verbatim: "object / mirror / screen", marks: null, contextNote: "[–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step.", group: {"claimMax":3,"perOption":6,"options":["object","mirror","screen"],"perOptionSteps":[6,3,3]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -8108,149 +8474,18 @@ export const CARDS: SecCard[] = [
     id: "phys-2023-ol-q2-ii", topicId: "phys-u2", conceptId: "marking-u-and-v-on-the-diagram",
     section: "A", questionRef: "2023 OL Q2(ii)",
     stem: "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
-    questionText: "On your diagram, indicate the object distance u and the image distance v. (18)",
+    questionText: "On your diagram, indicate the object distance u and the image distance v.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "u shown", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "v shown", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q3-ix", topicId: "phys-u2", conceptId: "specific-latent-heat-result",
-    section: "A", questionRef: "2023 OL Q3(ix)",
-    stem: "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C Below is a diagram of the apparatus used in this experiment. cloth with crushed ice calorimeter water with crushed ice",
-    questionText: "Calculate the value for l, the specific latent heat of fusion of ice.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "0.008l + (0.008 × 4180 ×16) = 3094.07 so l = 319880 J kg–1", marks: 6 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q4-i", topicId: "phys-u2", conceptId: "speed-of-sound-apparatus",
-    section: "A", questionRef: "2023 OL Q4(i)",
-    stem: "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies. The student recorded the following results. f (Hz) 256 288 320 341 384 480 l (m) 0.33 0.29 0.27 0.25 0.22 0.18",
-    questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"6 + 3 + 3"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "tube, tuning fork, means of changing length, metre stick (any three)", marks: 12 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q4-ii", topicId: "phys-u2", conceptId: "showing-the-measured-air-column-length",
-    section: "A", questionRef: "2023 OL Q4(ii)",
-    stem: "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies. The student recorded the following results. f (Hz) 256 288 320 341 384 480 l (m) 0.33 0.29 0.27 0.25 0.22 0.18",
-    questionText: "Indicate on your diagram the length that the student measured. (15)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "valid length shown", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q5-iii", topicId: "phys-u2", conceptId: "graph-of-length-against-resistance",
-    section: "A", questionRef: "2023 OL Q5(iii)",
-    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire. The student recorded the following results. l (cm) 20 30 40 50 60 70 R (Ω) 0.08 0.12 0.17 0.21 0.25 0.29 d (mm) 2 Each question carries 56 marks.",
-    questionText: "Use the data in the table to draw a graph on graph paper of length l against resistance R. (13)",
-    tariffModel: {"kind":"fixed","notation":"4 + 6 × 1 + 3"}, totalMarks: 13,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q6-d", topicId: "phys-1-4", conceptId: "unit-of-work",
-    section: "A", questionRef: "2023 OL Q6(d)",
-    stem: "joule watt farad metre",
-    questionText: "Which of the following is the unit of work?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "joule", marks: 7 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q7-ii", topicId: "phys-1-2", conceptId: "forces-on-a-carriage-at-constant-velocity",
-    section: "A", questionRef: "2023 OL Q7(ii)",
-    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
-    questionText: "Draw a diagram of the forces acting on the carriage as it travels up the tower at a constant velocity.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "arrow down", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "equal arrow up", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q7-vii", topicId: "phys-1-2", conceptId: "forces-on-a-falling-carriage",
-    section: "A", questionRef: "2023 OL Q7(vii)",
-    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
-    questionText: "Draw a diagram of the forces acting on the carriage as it falls.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "arrow down", marks: 6 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q7-viii", topicId: "phys-1-1", conceptId: "velocity-time-graph-of-the-ride",
-    section: "A", questionRef: "2023 OL Q7(viii)",
-    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
-    questionText: "Draw a velocity-time graph for the motion of the carriage from when it was dropped to when it comes to rest. (14) acceleration due to gravity = 9.8 m s–2",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "axis labelled", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "acceleration shown", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "deceleration shown", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q8-v", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-real-image",
-    section: "A", questionRef: "2023 OL Q8(v)",
-    questionText: "Draw a converging lens and draw a ray diagram to show how the lens forms a real image.",
-    tariffModel: {"kind":"fixed","notation":"3 + 3 × 3"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "converging lens", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "object, incident ray(s), image formed", marks: 9 },
+    { id: "r1", kind: "criterion", verbatim: "u shown", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "v shown", marks: 3, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "OFFICIAL QUESTION PAGE",
           "title": "Official question page",
           "pages": [
-                7
+                2
           ],
           "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
@@ -8261,14 +8496,171 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2023-ol-q10-ix", topicId: "phys-2-4", conceptId: "frequency-from-wave-speed-and-wavelength",
-    section: "A", questionRef: "2023 OL Q10(ix)",
-    stem: "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h",
-    questionText: "Calculate the frequency of the wave. (20)",
+    id: "phys-2023-ol-q3-ix", topicId: "phys-2-1", conceptId: "specific-latent-heat-result",
+    section: "A", questionRef: "2023 OL Q3(ix)",
+    questionText: "Calculate the value for l, the specific latent heat of fusion of ice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "400 ÷ 0.9 = 444.4 Hz", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "0.008l + (0.008 × 4180 ×16) = 3094.07 so l = 319880 J kg⁻¹", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    questionFigure: {
+          "candId": "physics-2023-ol-q3ix-question",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q3ix-question.png",
+          "srcHash": "36dcfa6354e380400d1efeb0920a8e30",
+          "alt": "The printed Question 3: the latent heat of fusion experiment with its results (masses 0.083 kg, 0.181 kg and 0.008 kg; temperatures 23 °C and 16 °C), the apparatus diagram with A and B, and parts (i) to (ix), the last with its note E = m(ice) l + m(ice) c(water) Δθ(ice), the words in brackets printed as subscripts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q4-i", topicId: "phys-u2", conceptId: "speed-of-sound-apparatus",
+    section: "A", questionRef: "2023 OL Q4(i)",
+    stem: "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies.",
+    questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "anyN", verbatim: "tube / tuning fork / means of changing length / metre stick", marks: null, contextNote: "any three [–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step.", group: {"claimMax":3,"perOption":6,"options":["tube","tuning fork","means of changing length","metre stick"],"perOptionSteps":[6,3,3]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q4-ii", topicId: "phys-u2", conceptId: "showing-the-measured-air-column-length",
+    section: "A", questionRef: "2023 OL Q4(ii)",
+    stem: "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies.",
+    questionText: "Indicate on your diagram the length that the student measured.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "valid length shown", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q5-iii", topicId: "phys-u2", conceptId: "graph-of-length-against-resistance",
+    section: "A", questionRef: "2023 OL Q5(iii)",
+    stem: "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire. The student recorded the following results. l (cm) 20 30 40 50 60 70 R (Ω) 0.08 0.12 0.17 0.21 0.25 0.29 d (mm) 2",
+    questionText: "Use the data in the table to draw a graph on graph paper of length l against resistance R.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 13,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+    figure: {
+          "candId": "physics-2023-ol-q5iii-scheme-graph",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q5iii-scheme-graph.png",
+          "srcHash": "ce517ca2e5a42b674dcf6a92f66cf423",
+          "alt": "The marking scheme's graph: R (Ω), from 0 to 0.35, against l (m), from 0 to 0.8, with six plotted points from 0.2 m to 0.7 m on a dotted straight line drawn from the origin.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q6-d", topicId: "phys-1-4", conceptId: "unit-of-work",
+    section: "B", questionRef: "2023 OL Q6(d)",
+    questionText: "Which of the following is the unit of work?\njoule\nwatt\nfarad\nmetre",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "joule", marks: 7 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q7-ii", topicId: "phys-1-2", conceptId: "forces-on-a-carriage-at-constant-velocity",
+    section: "B", questionRef: "2023 OL Q7(ii)",
+    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+    questionText: "Draw a diagram of the forces acting on the carriage as it travels up the tower at a constant velocity.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "arrow down", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "equal arrow up", marks: 3, contextNote: "[–1 if arrows are clearly not equal] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q7-vii", topicId: "phys-1-2", conceptId: "forces-on-a-falling-carriage",
+    section: "B", questionRef: "2023 OL Q7(vii)",
+    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+    questionText: "Draw a diagram of the forces acting on the carriage as it falls.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "arrow down", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q7-viii", topicId: "phys-1-1", conceptId: "velocity-time-graph-of-the-ride",
+    section: "B", questionRef: "2023 OL Q7(viii)",
+    stem: "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+    questionText: "Draw a velocity-time graph for the motion of the carriage from when it was dropped to when it comes to rest.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "axis labelled", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "acceleration shown", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "deceleration shown", marks: 3, contextNote: "[–1 if incorrect acceleration shown] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q8-v", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-real-image",
+    section: "B", questionRef: "2023 OL Q8(v)",
+    stem: "Refraction also occurs when light travels through a lens.",
+    questionText: "Draw a converging lens and draw a ray diagram to show how the lens forms a real image.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "converging lens", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "object", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "incident ray(s)", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "image formed", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q10-ix", topicId: "phys-2-6", conceptId: "frequency-from-wave-speed-and-wavelength",
+    section: "B", questionRef: "2023 OL Q10(ix)",
+    stem: "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹. (viii) Calculate the wavelength of the wave.",
+    questionText: "Calculate the frequency of the wave.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "400 ÷ 0.9 = 444.4 Hz", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2023-ol-q10-wave",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q10-wave.png",
+          "srcHash": "9d124319add3e8f0790cec854bb9ddc3",
+          "alt": "Diagram of a standing wave on a string fixed between two posts: a solid and a dotted curve cross at the points marked A and B, and a double arrow labelled h marks the height of one loop.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8276,14 +8668,24 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q11-iv", topicId: "phys-3-3", conceptId: "two-bulbs-in-parallel-circuit-diagram",
-    section: "A", questionRef: "2023 OL Q11(iv)",
-    stem: "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V)",
-    questionText: "Draw a circuit diagram to show two light bulbs connected in parallel across a battery. (24) Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).",
+    section: "B", questionRef: "2023 OL Q11(iv)",
+    stem: "Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).",
+    questionText: "Draw a circuit diagram to show two light bulbs connected in parallel across a battery.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "second bulb", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "in parallel", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "second bulb", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "in parallel", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8291,14 +8693,13 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-iii", topicId: "phys-4-3", conceptId: "labelled-diagram-of-the-atom",
-    section: "A", questionRef: "2023 OL Q12(iii)",
-    stem: "An electron is a negatively charged subatomic particle.",
-    questionText: "Draw a labelled diagram of an atom. Include in your diagram the names and locations of the subatomic particles of the atom. (15) The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
+    section: "B", questionRef: "2023 OL Q12(iii)",
+    questionText: "Draw a labelled diagram of an atom. Include in your diagram the names and locations of the subatomic particles of the atom.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "location of proton(s)/neutron(s)", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "electron", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "location of electron(s)", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "location of proton(s)/neutron(s)", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "electron", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "location of electron(s)", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8307,12 +8708,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q12-ix", topicId: "phys-2-4", conceptId: "wavelength-of-an-x-ray",
-    section: "A", questionRef: "2023 OL Q12(ix)",
-    stem: "An electron is a negatively charged subatomic particle.",
-    questionText: "X-rays are a type of electromagnetic radiation. They travel at a speed of 3 × 108 m s–1. Calculate the wavelength of an X-ray that has a frequency of 5.5 × 1017 Hz.",
+    section: "B", questionRef: "2023 OL Q12(ix)",
+    questionText: "X-rays are a type of electromagnetic radiation. They travel at a speed of 3 × 10⁸ m s⁻¹. Calculate the wavelength of an X-ray that has a frequency of 5.5 × 10¹⁷ Hz.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(3 × 108) ÷ (5.5 × 1017) = 5.45 × 10–10 m", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "(3 × 10⁸) ÷ (5.5 × 10¹⁷) = 5.45 × 10⁻¹⁰ m", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -8322,21 +8722,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q13-iv", topicId: "phys-4-4", conceptId: "protons-and-neutrons-in-tritium",
     section: "B", questionRef: "2023 OL Q13(iv)",
-    questionText: "The symbol for tritium is H1 3. (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium? (7)",
+    questionText: "The symbol for tritium is H₁ (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "2", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "(a) — 1", marks: 4 },
+    { id: "r2", kind: "point", verbatim: "(b) — 2", marks: 3 },
     ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL SOURCE",
-          "title": "Source and question",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
+    questionFigure: {
+          "candId": "physics-2023-ol-q13iv-question",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-q13iv-question.png",
+          "srcHash": "e65c34bde542a06fee7ef4a544d919f2",
+          "alt": "The printed part (iv): The symbol for tritium is H, with 3 above and 1 below. (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium? (7)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -8346,10 +8744,27 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
     id: "phys-2023-ol-q14-b-i", topicId: "phys-2-3", conceptId: "path-of-a-ray-through-an-optical-fibre",
     section: "B", questionRef: "2023 OL Q14(b)(i)",
+    stem: "Light travels through an optical fibre using total internal reflection.",
     questionText: "Sketch the path of a ray of light through an optical fibre.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "internal reflection shown in path of ray in fibre", marks: 6 },
+    { id: "r1", kind: "criterion", verbatim: "internal reflection shown in path of ray in fibre", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q14-b-ii", topicId: "phys-2-3", conceptId: "demonstrating-total-internal-reflection",
+    section: "B", questionRef: "2023 OL Q14(b)(ii)",
+    stem: "Light travels through an optical fibre using total internal reflection.",
+    questionText: "Describe a laboratory experiment to demonstrate total internal reflection.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {

@@ -196,6 +196,396 @@
   ],
   "solution": true
  },
+ "physics-2023-ol-q10-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q10-wave.png",
+  "md5": "9d124319add3e8f0790cec854bb9ddc3",
+  "alt": "Diagram of a standing wave on a string fixed between two posts: a solid and a dotted curve cross at the points marked A and B, and a double arrow labelled h marks the height of one loop.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q10(ix)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   360,
+   546,
+   442
+  ]
+ },
+ "physics-2023-ol-q11-bulb": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q11-bulb.png",
+  "md5": "b5964f932a9c1104b5fe9d1d9693c710",
+  "alt": "Drawing of a light bulb joined by two wires to the + and – ends of a battery, labelled light bulb and battery.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q11(iii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: electricityforum.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   360,
+   120,
+   545,
+   222
+  ]
+ },
+ "physics-2023-ol-q11-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q11-graph.png",
+  "md5": "50a0c453411b5722034602605b81e88a",
+  "alt": "Graph of current (mA), from 0 to 60, against voltage (V), from 0 to 6, for a filament bulb: a curve rising from the origin, steep at first and levelling off near 56 mA at 6 V.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q11(vii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   95,
+   365,
+   560,
+   578
+  ]
+ },
+ "physics-2023-ol-q12-crt": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-crt.png",
+  "md5": "b445948c85671dad8e403c8c31d377a2",
+  "alt": "Photograph of a cathode ray tube: a glass tube with electrodes inside, widening at one end into a flat, square screen.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q12(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   417,
+   158,
+   541,
+   248
+  ]
+ },
+ "physics-2023-ol-q12-xray": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-xray.png",
+  "md5": "10128d45c3139c8e6d0fb329c2e32a50",
+  "alt": "Photograph of an X-ray tube: a glass tube with metal electrodes, a finned metal cap at one end and wire leads at the other.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q12(vii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   417,
+   276,
+   541,
+   360
+  ]
+ },
+ "physics-2023-ol-q13iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q13iv-question.png",
+  "md5": "e65c34bde542a06fee7ef4a544d919f2",
+  "alt": "The printed part (iv): The symbol for tritium is H, with 3 above and 1 below. (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium? (7)",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   452,
+   548,
+   503
+  ]
+ },
+ "physics-2023-ol-q13v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q13v-question.png",
+  "md5": "f34bd4dc2597e55d5634d339998466d5",
+  "alt": "The printed part (v): Tritium decays by beta emission. What is the daughter nucleus when an atom of H, with 3 above and 1 below, emits a beta particle? (7)",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(v)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   507,
+   548,
+   541
+  ]
+ },
+ "physics-2023-ol-q13v-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q13v-scheme.png",
+  "md5": "ad1ec5b658f0cf9b3d352a99e642c28e",
+  "alt": "The marking scheme's answer: He with 3 above and 2 below, the two numbers printed after the symbol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(v)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   539,
+   115,
+   563
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q14c-field": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q14c-field.png",
+  "md5": "ebaad35fa29362ec67c73b5b5f8a8912",
+  "alt": "Diagram of the electric field around a positive and a negative charge side by side: curved field lines with arrows run from the + charge to the – charge, and outer lines spread away from + and in towards –.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(c)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   440,
+   53,
+   542,
+   131
+  ]
+ },
+ "physics-2023-ol-q14c-vdg": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q14c-vdg.png",
+  "md5": "b8e71f62a63ee4522410709c8f45a87a",
+  "alt": "Photograph of a student with her hand on the dome of a Van de Graaff generator, her hair standing out from her head.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(c)(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: fishersci.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   448,
+   208,
+   540,
+   301
+  ]
+ },
+ "physics-2023-ol-q1iv-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q1iv-scheme-graph.png",
+  "md5": "c69e921a1ec48771bc02b17ba88269a6",
+  "alt": "The marking scheme's graph: a (m s⁻²), from 0 to 4.5, against F (N), from 0 to 1.4, with six plotted points from 0.2 N to 1.2 N on a straight line drawn from the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q1(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   140,
+   415,
+   512,
+   640
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q3-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q3-diagram.png",
+  "md5": "993687b9e5e1e9bf692bc26180036822",
+  "alt": "Diagram of the apparatus: a calorimeter of water with crushed ice standing in a larger container, the outer container pointed to by an arrow labelled B; a long rod with a bulb at its lower end dips into the water, pointed to by an arrow labelled A; beside it a dark cloth holding crushed ice.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q3(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   100,
+   242,
+   545,
+   452
+  ]
+ },
+ "physics-2023-ol-q3ix-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q3ix-question.png",
+  "md5": "36dcfa6354e380400d1efeb0920a8e30",
+  "alt": "The printed Question 3: the latent heat of fusion experiment with its results (masses 0.083 kg, 0.181 kg and 0.008 kg; temperatures 23 °C and 16 °C), the apparatus diagram with A and B, and parts (i) to (ix), the last with its note E = m(ice) l + m(ice) c(water) Δθ(ice), the words in brackets printed as subscripts.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q3(ix)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   55,
+   548,
+   685
+  ]
+ },
+ "physics-2023-ol-q4v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q4v-question.png",
+  "md5": "da7d889f83e0552a9c242e40d33da793",
+  "alt": "The printed Question 4 up to part (v): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (m) 0.33, 0.29, 0.27, 0.25, 0.22, 0.18, and parts (i) to (v), (v) asking for the value of 1 over l, set as a fraction, to 2 decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4(v)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   55,
+   548,
+   335
+  ]
+ },
+ "physics-2023-ol-q4vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q4vi-question.png",
+  "md5": "d72bed65c09fcd0383db65bc153ae954",
+  "alt": "The printed Question 4 up to part (vi): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (m) 0.33, 0.29, 0.27, 0.25, 0.22, 0.18, and parts (i) to (vi), (vi) asking for a graph of f against 1 over l, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4(vi)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   55,
+   548,
+   362
+  ]
+ },
+ "physics-2023-ol-q4vi-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q4vi-scheme-graph.png",
+  "md5": "6eaf9c165a2ccf1207626f3b69cf0e8b",
+  "alt": "The marking scheme's graph: 1/l (m⁻¹), from 0 to 6, against f (Hz), from 0 to 600, with six plotted points from about 3.0 to 5.6 on a straight line that meets the vertical axis just above zero.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4(vi)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   112,
+   556,
+   484,
+   782
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q5iii-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q5iii-scheme-graph.png",
+  "md5": "ce517ca2e5a42b674dcf6a92f66cf423",
+  "alt": "The marking scheme's graph: R (Ω), from 0 to 0.35, against l (m), from 0 to 0.8, with six plotted points from 0.2 m to 0.7 m on a dotted straight line drawn from the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q5(iii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   140,
+   411,
+   512,
+   637
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q8-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q8-diagram.png",
+  "md5": "909cd2c1684e403cf51d63dd9838edb2",
+  "alt": "Diagram of a ray of light passing through a rectangular glass block: the ray arriving at the top face is pointed to by an arrow labelled A, a dashed vertical line at the point of entry by an arrow labelled C, and the ray inside the block by an arrow labelled B; the ray leaves through the bottom face.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q8(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   140,
+   75,
+   420,
+   300
+  ]
+ },
+ "physics-2023-ol-q9-brick": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q9-brick.png",
+  "md5": "a7d265995216d10194da623f5b9293b2",
+  "alt": "Photograph of a rectangular brick with three faces lettered: A on the small end face, B on the top face and C on the long side face; its dimensions are marked w = 9 cm, h = 6 cm and l = 20 cm.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q9(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: willamettegraystone.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   314,
+   240,
+   545,
+   347
+  ],
+  "maskedFurniture": [
+   [
+    314,
+    298,
+    326,
+    322
+   ]
+  ]
+ },
  "physics-2024-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2024-hl-q1-table.png",
   "md5": "396c0d81f88a25929ea6e72c1e6cd14d",

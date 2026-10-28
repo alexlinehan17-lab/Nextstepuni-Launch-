@@ -10572,11 +10572,9 @@
  },
  {
   "id": "phys-2023-ol-q1-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "newtons-second-law-measurements",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q1(ii)",
   "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied.",
@@ -10587,31 +10585,31 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "first distance",
+    "verbatim": "first distance/velocity / second distance/velocity / time",
     "marks": null,
-    "contextNote": "The scheme prints \"first distance/velocity, second distance/velocity, time (any two)\" — a velocity may be given in place of a distance for either of the first two measurements.",
     "group": {
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "first distance",
-      "second distance",
+      "first distance/velocity",
+      "second distance/velocity",
       "time"
      ]
-    }
+    },
+    "contextNote": "any two"
    }
   ],
-  "notes": "Q1(i) (labelled diagram of apparatus) and Q1(iv) (draw a graph on graph paper) skipped — drawing/graph-plotting."
+  "notes": "\"(any two) [2 × 3]\": a menu of three, any two at 3 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q1-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "newtons-second-law-precaution",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q1(iii)",
   "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied.",
@@ -10622,12 +10620,10 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "avoid error of parallax",
+    "verbatim": "avoid error of parallax / smooth runway",
     "marks": null,
-    "openList": true,
-    "contextNote": "The scheme prefixes these with \"e.g.\" and states that descriptions and methods in the scheme are not exhaustive — other valid precautions are acceptable.",
     "group": {
      "claimMax": 1,
      "perOption": 4,
@@ -10635,21 +10631,23 @@
       "avoid error of parallax",
       "smooth runway"
      ]
-    }
+    },
+    "openList": true,
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "Scheme also allows a partial answer for 2 marks."
+  "notes": "The scheme prints two examples (\"e.g.\") for one precaution at [4]: a menu of one. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q1-v",
-  "topicId": "phys-u2",
-  "conceptId": "proportionality-from-straight-line-graph",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "proportionality-from-straight-line-graph",
   "section": "A",
   "questionRef": "2023 OL Q1(v)",
-  "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied, and drew a graph of F against a.",
+  "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied.",
   "questionText": "Explain how your graph shows that acceleration is proportional to force.",
   "tariffModel": {
    "kind": "fixed"
@@ -10657,24 +10655,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "straight line (through the origin)",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Scheme allows a partial answer for 3 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q2-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "locating-image-concave-mirror",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q2(iii)",
-  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror.",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
   "questionText": "Describe how the student found the position of the image.",
   "tariffModel": {
    "kind": "fixed"
@@ -10682,28 +10681,35 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "move screen",
-    "accepts": [
-     "sharpest image is formed"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "move screen/mirror/object / sharpest image is formed",
     "marks": 6,
-    "contextNote": "The scheme prints \"move screen/mirror/object\" — moving the mirror or moving the object are equally acceptable to moving the screen. A partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q2(i) (labelled diagram) and Q2(ii) (indicate u and v on your diagram) skipped — drawing."
+  "notes": "\"the image distance\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q2-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "mirror-formula",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q2(iv)",
-  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror.",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
   "questionText": "State the formula used to calculate the focal length f.",
   "tariffModel": {
    "kind": "fixed"
@@ -10711,21 +10717,32 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "1/u + 1/v = 1/f",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Named formula — a discrete, checkable marking point. Partial answer scores 3."
+  "notes": "\"the image distance\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q2-v",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "focal-length-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q2(v)",
   "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
@@ -10736,25 +10753,35 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "f = 15.1 cm",
     "marks": 6,
-    "contextNote": "The scheme prints the answer with its unit: f = 15.1 cm."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "The scheme awards this as a single stated value with its unit, so it is self-markable. Partial answer scores 3."
+  "notes": "\"the image distance\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q2-vi",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "improving-experiment-repeat-average",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q2(vi)",
-  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror.",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
   "questionText": "Describe how the student could have improved the experiment.",
   "tariffModel": {
    "kind": "fixed"
@@ -10762,23 +10789,98 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "repeat and average",
+    "verbatim": "e.g. repeat and average",
     "marks": 4,
-    "openList": true,
-    "contextNote": "The scheme prefixes this with \"e.g.\" — other valid improvements are acceptable. Partial answer scores 2."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": ""
+  "notes": "\"the image distance\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
+ },
+ {
+  "id": "phys-2023-ol-q3-i",
+  "subjectId": "physics",
+  "topicId": "phys-u2",
+  "conceptId": "equipment-a",
+  "section": "A",
+  "questionRef": "2023 OL Q3(i)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. Below is a diagram of the apparatus used in this experiment.",
+  "questionText": "Name the piece of equipment labelled A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q3-diagram",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "thermometer",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "phys-2023-ol-q3-ii",
+  "subjectId": "physics",
+  "topicId": "phys-u2",
+  "conceptId": "equipment-b",
+  "section": "A",
+  "questionRef": "2023 OL Q3(ii)",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. Below is a diagram of the apparatus used in this experiment.",
+  "questionText": "Name the piece of equipment labelled B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "lagging/insulation",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q3-diagram",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "lagging/insulation",
+    "askedInThisQuestion": true
+   }
+  ]
  },
  {
   "id": "phys-2023-ol-q3-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "crushing-ice-latent-heat",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q3(iii)",
   "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter.",
@@ -10789,29 +10891,25 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "melts faster",
-    "accepts": [
-     "increase surface area",
-     "all at the same temperature",
-     "0 °C"
-    ],
-    "marks": 4
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "melts faster / increase surface area / all at the same temperature/0 °C",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "Q3(i) and Q3(ii) (name the equipment labelled A and B) skipped — they depend on reading the apparatus diagram, which this wave carries no figures for."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q3-iv",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "drying-ice-latent-heat",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q3(iv)",
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter.",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. Below is a diagram of the apparatus used in this experiment.",
   "questionText": "What was the cloth used for in this experiment?",
   "tariffModel": {
    "kind": "fixed"
@@ -10819,24 +10917,26 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "to dry the ice",
-    "marks": 4
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "The cloth is named in the question itself, so no figure is needed. Partial answer scores 2."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q3-diagram"
  },
  {
   "id": "phys-2023-ol-q3-v",
-  "topicId": "phys-u2",
-  "conceptId": "temperature-fall-calorimetry",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-fall-calorimetry",
   "section": "A",
   "questionRef": "2023 OL Q3(v)",
-  "stem": "A student added ice at 0 °C to water in a copper calorimeter and recorded: initial temperature of calorimeter + water = 23 °C; final temperature of calorimeter + water + melted ice = 16 °C.",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C",
   "questionText": "Calculate the fall in temperature of the calorimeter and water.",
   "tariffModel": {
    "kind": "fixed"
@@ -10844,25 +10944,25 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "23 – 16 = 7 °C",
     "marks": 4,
-    "contextNote": "The scheme prints the subtraction and the answer together, with the unit: 23 – 16 = 7 °C."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "Partial answer scores 2."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q3-vi",
-  "topicId": "phys-u2",
-  "conceptId": "mass-of-water-calorimetry",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "mass-of-water-calorimetry",
   "section": "A",
   "questionRef": "2023 OL Q3(vi)",
-  "stem": "A student added ice at 0 °C to water in a copper calorimeter and recorded: mass of empty copper calorimeter = 0.083 kg; mass of calorimeter + water = 0.181 kg.",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C",
   "questionText": "Calculate the mass of the water.",
   "tariffModel": {
    "kind": "fixed"
@@ -10870,25 +10970,25 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "0.181 – 0.083 = 0.098 kg",
     "marks": 4,
-    "contextNote": "The scheme prints the subtraction and the answer together, with the unit: 0.181 – 0.083 = 0.098 kg."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "Partial answer scores 2."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q3-vii",
-  "topicId": "phys-u2",
-  "conceptId": "heat-lost-mcdeltatheta",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "heat-lost-mcdeltatheta",
   "section": "A",
   "questionRef": "2023 OL Q3(vii)",
-  "stem": "A student added ice at 0 °C to water in a copper calorimeter. The mass of the empty copper calorimeter was 0.083 kg, the mass of the water was 0.098 kg, and the fall in temperature of the calorimeter and water was 7 °C.",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C specific heat capacity of copper = 390 J kg⁻¹K⁻¹; specific heat capacity of water = 4180 J kg⁻¹ K⁻¹",
   "questionText": "Using the formula mcΔθ and your answers to (v) and (vi), calculate E, the heat lost by the water and the calorimeter.",
   "tariffModel": {
    "kind": "fixed"
@@ -10896,39 +10996,37 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "(0.098 × 4180 × 7)",
-    "marks": 3,
-    "contextNote": "The heat lost by the water, using the specific heat capacity of water from the Formulae and Tables booklet."
+    "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "(0.083 × 390 × 7)",
-    "marks": 3,
-    "contextNote": "The heat lost by the copper calorimeter, using the specific heat capacity of copper from the Formulae and Tables booklet."
+    "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
-    "verbatim": "3094.07 J",
+    "verbatim": "= 3094.07 J",
     "marks": 3,
-    "contextNote": "The scheme prints this final line as '= 3094.07 J', with the unit."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Carded because the scheme awards three discrete, separately checkable points (water term, calorimeter term, final answer with unit) rather than undifferentiated working. Partial answer scores 3."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q3-viii",
-  "topicId": "phys-u2",
-  "conceptId": "temperature-rise-of-melted-ice",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-rise-of-melted-ice",
   "section": "A",
   "questionRef": "2023 OL Q3(viii)",
-  "stem": "A student added ice at 0 °C to water in a copper calorimeter. The final temperature of the calorimeter + water + melted ice was 16 °C.",
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C",
   "questionText": "Calculate the rise in temperature of the ice.",
   "tariffModel": {
    "kind": "fixed"
@@ -10936,21 +11034,21 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "16 °C",
     "marks": 3
    }
   ],
-  "notes": "Q3(ix) (calculate l) skipped — the scheme awards a single lump of chained worked arithmetic (\"0.008l + (0.008 × 4180 ×16) = 3094.07 so l = 319880 J kg–1 [6]\") with no discrete, self-markable steps."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q4-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "source-of-frequency-tuning-fork",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q4(iii)",
   "stem": "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies.",
@@ -10961,88 +11059,223 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "from tuning fork",
     "marks": 6,
-    "contextNote": "Key words only — they must appear in the correct context (the frequency is stamped on the tuning fork) to merit the marks. Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q4(i) (labelled diagram), Q4(ii) (indicate the measured length on your diagram) and Q4(vi) (draw a graph) skipped — drawing/graph-plotting."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q4-iv",
-  "topicId": "phys-u2",
-  "conceptId": "resonance-loud-sound",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-5",
+  "conceptId": "resonance-loud-sound",
   "section": "A",
   "questionRef": "2023 OL Q4(iv)",
-  "stem": "A student set a tuning fork vibrating over a column of air. The student knew that the column of air was vibrating at its fundamental frequency because resonance had occurred.",
-  "questionText": "How did the student know that resonance had occurred?",
+  "stem": "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies.",
+  "questionText": "The student knew that the column of air was vibrating at its fundamental frequency because resonance had occurred. How did the student know that resonance had occurred?",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "loud sound",
     "marks": 6,
-    "contextNote": "Key words only — they must appear in the correct context to merit the marks. Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q4(v) skipped — it only asks for the reciprocal of each tabulated length (6 × 1 mark of arithmetic), not a self-markable physics point."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
-  "id": "phys-2023-ol-q5-i",
-  "topicId": "phys-u2",
-  "conceptId": "resistivity-apparatus",
-  "level": "ordinary",
-  "year": 2023,
+  "id": "phys-2023-ol-q4-v",
   "subjectId": "physics",
+  "topicId": "phys-u2",
+  "conceptId": "values-of-1-over-l",
   "section": "A",
-  "questionRef": "2023 OL Q5(i)",
-  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire, and also measured the diameter d of the wire.",
-  "questionText": "Name the apparatus used in this experiment to measure (a) the length of the wire (b) the resistance of the wire and (c) the diameter of the wire.",
+  "questionRef": "2023 OL Q4(v)",
+  "questionText": "For each value of l in the table above, calculate the value of",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "(a) — metre stick",
-    "marks": 3
+    "verbatim": "0.33 — 3.03",
+    "marks": 1,
+    "contextNote": "The scheme prints the six values [6 × 1]: 1 mark each."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "(b) — ohmmeter",
-    "marks": 3
+    "verbatim": "0.29 — 3.45",
+    "marks": 1
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
-    "verbatim": "(c) — micrometer",
+    "verbatim": "0.27 — 3.70",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "0.25 — 4.00",
+    "marks": 1
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "0.22 — 4.55",
+    "marks": 1
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "0.18 — 5.56",
+    "marks": 1
+   }
+  ],
+  "notes": "The paper sets \"1/l\" as a stacked fraction the text layer breaks: the question is shown as printed, Q4 with its table. The scheme prints the values as a table: one row per value, labelled with its length. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2023-ol-q4v-question"
+ },
+ {
+  "id": "phys-2023-ol-q4-vi",
+  "subjectId": "physics",
+  "topicId": "phys-u2",
+  "conceptId": "graph-f-against-1-over-l",
+  "section": "A",
+  "questionRef": "2023 OL Q4(vi)",
+  "questionText": "Draw a graph on graph paper of f against",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "labelled axis",
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "points plotted",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "line of best fit",
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The ask ends in the stacked fraction \"1/l\": the question is shown as printed, Q4 with its table; the scheme draws the graph (the solution figure). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q4vi-scheme-graph",
+  "questionFigureKey": "physics-2023-ol-q4vi-question"
+ },
+ {
+  "id": "phys-2023-ol-q5-i",
+  "subjectId": "physics",
+  "topicId": "phys-u2",
+  "conceptId": "resistivity-apparatus",
+  "section": "A",
+  "questionRef": "2023 OL Q5(i)(a)",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
+  "questionText": "Name the apparatus used in this experiment to measure (a) the length of the wire",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "metre stick",
     "marks": 3
    }
   ],
-  "notes": "Q5(iii) (draw a graph of l against R) skipped — graph-plotting."
+  "notes": "The paper prints (a), (b) and (c) inside one sentence, priced [3] each: the question is that sentence cut at its own markers. The old card bundled (a), (b) and (c), which the scheme prices apart; it keeps its id for (a). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2023-ol-q5-i-b",
+  "subjectId": "physics",
+  "topicId": "phys-u2",
+  "conceptId": "measuring-resistance-of-wire",
+  "section": "A",
+  "questionRef": "2023 OL Q5(i)(b)",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
+  "questionText": "Name the apparatus used in this experiment to measure (b) the resistance of the wire",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ohmmeter",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper prints (a), (b) and (c) inside one sentence: the question is that sentence without the other markers' words. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2023-ol-q5-i-c",
+  "subjectId": "physics",
+  "topicId": "phys-u2",
+  "conceptId": "measuring-diameter-of-wire",
+  "section": "A",
+  "questionRef": "2023 OL Q5(i)(c)",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
+  "questionText": "Name the apparatus used in this experiment to measure (c) the diameter of the wire.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "micrometer",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper prints (a), (b) and (c) inside one sentence: the question is that sentence without the other markers' words. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q5-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "uniform-diameter-check",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q5(ii)",
-  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the diameter d of the wire.",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
   "questionText": "How did the student check that the wire had the same diameter throughout its length?",
   "tariffModel": {
    "kind": "fixed"
@@ -11050,25 +11283,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "checked the diameter at various points",
     "marks": 6,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q5-iv",
-  "topicId": "phys-u2",
-  "conceptId": "resistance-length-proportional",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-length-proportional",
   "section": "A",
   "questionRef": "2023 OL Q5(iv)",
-  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R of the wire for six different lengths l. She also measured the diameter d of the wire. The student recorded the following results.",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire. The student recorded the following results. l (cm) 20 30 40 50 60 70 R (Ω) 0.08 0.12 0.17 0.21 0.25 0.29 d (mm) 2",
   "questionText": "State the relationship between l and R.",
   "tariffModel": {
    "kind": "fixed"
@@ -11076,27 +11309,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "proportional",
     "marks": 6,
-    "exactTermRequired": true,
-    "contextNote": "Key word — \"proportional\" must appear in the correct context (that R is proportional to l) to merit the marks. Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "",
-  "figureKey": "physics-2023-OL-paper-p04-i1"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q5-v",
-  "topicId": "phys-u2",
-  "conceptId": "resistivity-formula",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "resistivity-formula",
   "section": "A",
   "questionRef": "2023 OL Q5(v)",
-  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R, the length l and the diameter d of the wire.",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire.",
   "questionText": "State the formula used to calculate ρ, the resistivity of the wire.",
   "tariffModel": {
    "kind": "fixed"
@@ -11104,22 +11335,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "ρ = RA/l",
     "marks": 6,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Named formula — a discrete, checkable marking point."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-a",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "moment-of-a-force",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(a)",
   "questionText": "What is meant by the moment of a force?",
@@ -11129,42 +11360,41 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "force × distance (to fulcrum)",
-    "accepts": [
-     "the turning effect of the force"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "force × distance (to fulcrum) / the turning effect of the force",
     "marks": 7,
-    "contextNote": "Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "Q6 instructs candidates to answer any eight of parts (a)–(l); each part carries its own fixed 7-mark tariff, so each is carded separately."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-b",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "acceleration-from-velocity-change",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(b)",
-  "questionText": "A car accelerates from a speed of 17 m s–1 to a speed of 28 m s–1 in a time of 8 s. Calculate the acceleration of the car.",
+  "questionText": "A car accelerates from a speed of 17 m s⁻¹ to a speed of 28 m s⁻¹ in a time of 8 s. Calculate the acceleration of the car.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "(28 – 17)/8 = 1.375 m s–2",
+    "verbatim": "(28 – 17)/8 = 1.375 m s⁻²",
     "marks": 7,
-    "contextNote": "The scheme prints the working and the answer together, with the unit. Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-hl-q6-j",
@@ -14137,11 +14367,9 @@
  },
  {
   "id": "phys-2023-ol-q6-c",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "celsius-to-kelvin",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(c)",
   "questionText": "Convert 30 °C into kelvin (K).",
@@ -14151,22 +14379,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "30 + 273 = 303 K",
     "marks": 7,
-    "contextNote": "Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "Q6(d) skipped — the scheme reproduces only the four options (\"joule watt farad metre\") and the [7] tariff; it never states which is correct, so no verbatim answer exists to card."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-e",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "voltmeter",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(e)",
   "questionText": "Name an instrument used to measure voltage.",
@@ -14176,23 +14404,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "voltmeter",
     "marks": 7,
-    "exactTermRequired": true,
-    "contextNote": "Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-f",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "magnification",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(f)",
   "questionText": "An object has a height of 2 cm. Its image in a mirror has a height of 5 cm. Calculate the object’s magnification.",
@@ -14202,22 +14429,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "5 ÷ 2 = 2.5",
     "marks": 7,
-    "contextNote": "Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-g",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "heat-versus-temperature",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(g)",
   "questionText": "Explain the difference between heat and temperature.",
@@ -14227,25 +14454,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "heat is a form of energy",
-    "accepts": [
-     "temperature is a measure of hotness"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "heat is a form of energy / temperature is a measure of hotness",
     "marks": 7,
-    "contextNote": "The scheme separates the two statements with a solidus, so they are equally acceptable alternatives. Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-h",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "complementary-colours",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(h)",
   "questionText": "What are complementary colours of light?",
@@ -14255,25 +14479,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "a primary and a secondary colour",
-    "accepts": [
-     "colours that combine to give white light"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "a primary and a secondary colour / colours that combine to give white light",
     "marks": 7,
-    "contextNote": "Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-i",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "detecting-infrared",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(i)",
   "questionText": "Describe how infrared radiation can be detected.",
@@ -14283,23 +14504,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "heating effect",
+    "verbatim": "heating effect, etc.",
     "marks": 7,
-    "openList": true,
-    "contextNote": "The scheme prints \"heating effect, etc.\" — other valid methods of detection are acceptable, and the key words must appear in the correct context. Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-j",
-  "topicId": "phys-3-1",
-  "conceptId": "capacitance-definition",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-3-2",
+  "conceptId": "capacitance-definition",
   "section": "B",
   "questionRef": "2023 OL Q6(j)",
   "questionText": "What is meant by capacitance?",
@@ -14309,22 +14529,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "ratio of charge to voltage",
     "marks": 7,
-    "contextNote": "Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-k",
-  "topicId": "phys-2-4",
-  "conceptId": "dispersion-of-white-light",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "dispersion-of-white-light",
   "section": "B",
   "questionRef": "2023 OL Q6(k)",
   "questionText": "Describe how white light can be separated into its constituent colours.",
@@ -14334,62 +14554,58 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "prism",
-    "accepts": [
-     "diffraction grating"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "prism / diffraction grating / etc.",
     "marks": 7,
-    "openList": true,
-    "contextNote": "The scheme prints \"prism / diffraction grating / etc.\" — other valid answers are acceptable. Partial answer scores 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q6-l",
+  "subjectId": "physics",
   "topicId": "phys-4-5",
   "conceptId": "mass-energy-equation-symbols",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q6(l)",
-  "questionText": "State what each letter in Einstein’s famous equation E = mc2 stands for.",
+  "questionText": "State what each letter in Einstein’s famous equation E = mc² stands for.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "E = energy",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "m = mass",
     "marks": 2
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "c = speed of light",
     "marks": 2
    }
   ],
-  "notes": ""
+  "notes": "\"[3 + 2 + 2]\" against the three meanings printed on one line: in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q7-i",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "potential-energy-definition",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q7(i)",
   "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
@@ -14400,25 +14616,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "energy due to position in a force field",
     "marks": 6,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q7(ii), (vii) (draw the forces acting on the carriage) and Q7(viii) (draw a velocity-time graph) skipped — drawing/graph-plotting."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q7-iii",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "gravitational-potential-energy-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q7(iii)",
-  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. acceleration due to gravity = 9.8 m s⁻²",
   "questionText": "The carriage is dropped from a height of 37 m above the braking zone. The mass of the carriage is 6200 kg. Calculate the potential energy the carriage had before it was dropped.",
   "tariffModel": {
    "kind": "fixed"
@@ -14426,33 +14642,34 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "mgh",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "6200 × 9.8 × 37",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
-    "verbatim": "2248120 J",
-    "marks": 3
+    "verbatim": "= 2248120 J",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Carded because the scheme awards three discrete points: the named formula, the substitution it prints in full, and the final answer with its unit. Partial answer scores 3."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q7-iv",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "potential-to-kinetic-conversion",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q7(iv)",
   "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
@@ -14463,25 +14680,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "potential energy to kinetic energy",
     "marks": 6,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q7-vi",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "time-of-free-fall",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q7(vi)",
-  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. The carriage is dropped from a height of 37 m above the braking zone.",
+  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. (v) Calculate the velocity of the carriage when it has fallen 37 m. acceleration due to gravity = 9.8 m s⁻²",
   "questionText": "Calculate the time it takes the carriage to fall 37 m.",
   "tariffModel": {
    "kind": "fixed"
@@ -14489,22 +14706,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "26.9 ÷ 9.8 = 2.75 s",
     "marks": 6,
-    "contextNote": "26.9 m s–1 is the carriage's velocity after falling 37 m — the answer to part (v). Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q7(v) (calculate the velocity) skipped — its middle marking point is the content-free criterion \"substitution [3]\", so the rows cannot be made to sum to the real 9-mark tariff without inventing an answer. It is also a // (mutually exclusive) split where neither route reaches the full tariff without that row."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q8-i",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "refraction-definition",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q8(i)",
   "questionText": "What is meant by refraction of light?",
@@ -14514,22 +14731,87 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "the bending of light (as it travels from one medium to another)",
     "marks": 6,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q8(ii) (name A, B and C) and Q8(iii) (copy the diagram and label i and r) skipped — both depend on the printed ray-through-a-glass-block diagram. Q8(v) skipped — drawing a ray diagram. Q8(iv) and Q8(vi) skipped — the scheme's middle marking point is the content-free word 'substitution', so the printed 3 + 3 + 3 split cannot be reproduced without inventing text."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2023-ol-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "naming-a-b-c",
+  "section": "B",
+  "questionRef": "2023 OL Q8(ii)",
+  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
+  "questionText": "Name A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A — incident ray",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "B — refracted ray",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "C — normal",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q8-diagram"
+ },
+ {
+  "id": "phys-2023-ol-q8-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "labelling-angles",
+  "section": "B",
+  "questionRef": "2023 OL Q8(iii)",
+  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
+  "questionText": "Copy the diagram into your answerbook and label the angle of incidence i and the angle of refraction r.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "angles labelled",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "\"angles labelled [2 × 3]\": one row of two 3-mark units. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q8-diagram"
  },
  {
   "id": "phys-2023-ol-q8-vii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "converging-lens-sight-defect",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q8(vii)",
   "stem": "Refraction also occurs when light travels through a lens.",
@@ -14540,26 +14822,22 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "long-sightedness",
-    "accepts": [
-     "hypermetropia",
-     "hyperopia"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "long-sightedness / hypermetropia / hyperopia",
     "marks": 5,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Single copy of this card — the batch listed it twice. Q8(iv) and Q8(vi) skipped: each has a bare \"substitution [3]\" as its middle marking point, a content-free criterion that cannot be carded, which makes the 9-mark tariff impossible to reconstruct honestly."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q9-i",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "heat-transfer-methods",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q9(i)",
   "stem": "Brick is considered one of the best construction materials in the world for a number of reasons. One reason is that brick is a better insulator than many other building materials.",
@@ -14570,31 +14848,30 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "convection",
-    "marks": 3,
-    "exactTermRequired": true
+    "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "radiation",
-    "marks": 3,
-    "exactTermRequired": true
+    "marks": 3
    }
   ],
-  "notes": "Q9(vi) skipped — 'On which side, A, B or C, should a brick be stacked…' depends entirely on the printed brick diagram that labels the three faces."
+  "notes": "\"[2 × 3]\" against the two ways printed on one line: 3 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q9-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "u-value",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q9(ii)",
+  "stem": "Brick is considered one of the best construction materials in the world for a number of reasons. One reason is that brick is a better insulator than many other building materials.",
   "questionText": "What is meant by the U-value of a material?",
   "tariffModel": {
    "kind": "fixed"
@@ -14602,116 +14879,115 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "measure of the conducting/insulating property",
-    "accepts": [
-     "measure of the insulating property",
-     "the rate of transfer of energy (through unit area of a material when there is a temperature difference of 1 K between the two sides)"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "measure of the conducting/insulating property / the rate of transfer of energy (through unit area of a material when there is a temperature difference of 1 K between the two sides)",
     "marks": 6,
-    "contextNote": "The scheme prints this as 'measure of the conducting/insulating property' — either word is equally acceptable."
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q9-iii",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "u-value-heat-transfer-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q9(iii)",
-  "questionText": "A wall has an area of 66 m2 and a U-value of 0.31 W m–2 K–1. The temperature difference between inside and outside the wall is 15 °C. Calculate how much heat energy is transmitted through the wall every second.",
+  "stem": "Brick is considered one of the best construction materials in the world for a number of reasons. One reason is that brick is a better insulator than many other building materials.",
+  "questionText": "A wall has an area of 66 m² and a U-value of 0.31 W m⁻² K⁻¹. The temperature difference between inside and outside the wall is 15 °C. Calculate how much heat energy is transmitted through the wall every second.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "66 × 0.31 × 15",
-    "marks": 6,
-    "contextNote": "The scheme awards the larger share for the correct substitution."
+    "marks": 6
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "306.9 J",
     "marks": 3,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q9-iv",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "volume-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q9(iv)",
-  "stem": "A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm. The brick has a mass of 2 kg.",
-  "questionText": "Calculate the volume of the brick in cm3.",
+  "stem": "Another reason for bricks being such a popular building material is that that they are durable and strong. A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm, as shown in the diagram. The brick has a mass of 2 kg.",
+  "questionText": "Calculate the volume of the brick in cm³.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "20 × 9 × 6 = 1080 cm3",
+    "verbatim": "20 × 9 × 6 = 1080 cm³",
     "marks": 6,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q9-brick"
  },
  {
   "id": "phys-2023-ol-q9-v",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "density-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q9(v)",
-  "stem": "A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm. The brick has a mass of 2 kg.",
-  "questionText": "Calculate the density of the brick in g cm–3.",
+  "stem": "Another reason for bricks being such a popular building material is that that they are durable and strong. A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm, as shown in the diagram. The brick has a mass of 2 kg. (iv) Calculate the volume of the brick in cm³.",
+  "questionText": "Calculate the density of the brick in g cm⁻³.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "conversion to grams",
     "marks": 4,
-    "contextNote": "The mass 2 kg must be converted to 2000 g before dividing."
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "2000 ÷ 1080 = 1.85 g cm–3",
+    "verbatim": "2000 ÷ 1080 = 1.85 g cm⁻³",
     "marks": 2,
-    "contextNote": "1080 cm3 is the volume found in part (iv). Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "\"[4 + 2]\" against the two steps printed on one line: 4 then 2. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q9-brick"
  },
  {
   "id": "phys-2023-ol-q9-vii",
-  "topicId": "phys-u3",
-  "conceptId": "non-renewable-energy",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "non-renewable-energy",
   "section": "B",
   "questionRef": "2023 OL Q9(vii)",
   "stem": "Brick is a sustainable material. Factories that make bricks are moving away from non-renewable energy sources and are using alternative energy sources instead.",
@@ -14722,22 +14998,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "energy that is not replaced as it is used",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q9-viii",
-  "topicId": "phys-u3",
-  "conceptId": "renewable-energy-source",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-1-4",
+  "conceptId": "renewable-energy-source",
   "section": "B",
   "questionRef": "2023 OL Q9(viii)",
+  "stem": "Brick is a sustainable material. Factories that make bricks are moving away from non-renewable energy sources and are using alternative energy sources instead.",
   "questionText": "State an example of a renewable energy source.",
   "tariffModel": {
    "kind": "fixed"
@@ -14745,25 +15024,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "solar",
-    "marks": 3,
-    "openList": true,
-    "contextNote": "The scheme gives this as an example ('e.g. solar'); other valid renewable sources are acceptable."
+    "verbatim": "e.g. solar",
+    "marks": 3
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q9-ix",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "reducing-heat-loss-home",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q9(ix)",
-  "stem": "Bricks alone are not enough to meet today's heat retention standards.",
+  "stem": "Bricks alone are not enough to meet today’s heat retention standards.",
   "questionText": "State two ways in which you can reduce heat loss from your home.",
   "tariffModel": {
    "kind": "fixed"
@@ -14771,11 +15049,10 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "double-glazed windows",
+    "verbatim": "double-glazed windows / insulated attic",
     "marks": null,
-    "openList": true,
     "group": {
      "claimMax": 2,
      "perOption": 3,
@@ -14784,17 +15061,19 @@
       "insulated attic"
      ]
     },
-    "contextNote": "The scheme gives these as examples ('e.g.'); other valid ways of reducing heat loss are acceptable."
+    "openList": true,
+    "contextNote": "The scheme prints two examples (\"e.g.\") at \"[2 × 3]\": 3 each."
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q10-i",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "reflection-definition",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q10(i)",
   "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection.",
@@ -14805,21 +15084,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "bouncing of a wave off a surface",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q10(iii) skipped — the scheme gives only the content-free criteria 'apparatus / method / observation'. Q10(vi)–(ix) skipped — the node/amplitude naming and the wavelength and frequency calculations all depend on the printed standing-wave diagram (points A and B, height h)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q10-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "cause-of-refraction",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q10(ii)",
   "stem": "Sound also undergoes refraction as it moves from one medium to another.",
@@ -14830,23 +15110,62 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "change in speed",
-    "accepts": [
-     "change in (optical) density"
-    ],
-    "marks": 6
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "change in speed / change in (optical) density",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2023-ol-q10-iii",
+  "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "demonstrating-sound-interference",
+  "section": "B",
+  "questionRef": "2023 OL Q10(iii)",
+  "stem": "When two sound waves meet they can undergo interference.",
+  "questionText": "Describe a laboratory experiment to show that sound waves undergo interference.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation and prints no answer. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q10-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "diffraction-definition",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q10(iv)",
   "stem": "Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners.",
@@ -14857,24 +15176,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "spreading of a wave as it passes through a gap",
-    "accepts": [
-     "spreading of a wave as it passes around an object"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "spreading of a wave as it passes through a gap/around an object",
     "marks": 6,
-    "contextNote": "The scheme accepts either ending — 'through a gap' or 'around an object'."
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q10-v",
-  "topicId": "phys-2-3",
-  "conceptId": "polarisation-longitudinal-waves",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-2",
+  "conceptId": "polarisation-longitudinal-waves",
   "section": "B",
   "questionRef": "2023 OL Q10(v)",
   "stem": "Light waves can undergo polarisation but sound waves cannot.",
@@ -14885,14 +15202,16 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "sound waves are longitudinal",
     "marks": 6,
-    "contextNote": "Partial answer scores 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q11-i",
@@ -14921,13 +15240,12 @@
  },
  {
   "id": "phys-2023-ol-q11-ii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "measuring-current-instrument",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q11(ii)",
+  "stem": "Electric current is the movement of charged particles through a conductor.",
   "questionText": "Name an instrument used to measure electric current.",
   "tariffModel": {
    "kind": "fixed"
@@ -14935,24 +15253,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "ammeter",
     "marks": 6,
-    "exactTermRequired": true
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q11-vi",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "parallel-circuit-current",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q11(vi)",
-  "stem": "Two light bulbs connected in parallel have resistances of 5 Ω and 4 Ω.",
+  "stem": "(v) Two light bulbs connected in parallel have resistances of 5 Ω and 4 Ω. Calculate the total resistance of the two light bulbs.",
   "questionText": "Calculate the total current flowing in this circuit if the battery had a voltage of 12 V.",
   "tariffModel": {
    "kind": "fixed"
@@ -14960,21 +15279,32 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "12 ÷ 2.22 = 5.4 A",
     "marks": 6,
-    "contextNote": "2.22 Ω is the total resistance of the two bulbs in parallel, found in part (v)."
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "\"this circuit\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q11-ix",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "charge-carriers-ionic-solution",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q11(ix)",
   "questionText": "The charged particles that carry current through a metallic conductor are electrons. Name the charged particles that carry current through an ionic solution such as copper sulfate solution?",
@@ -14984,21 +15314,22 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "ions",
     "marks": 5,
-    "exactTermRequired": true
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q12-i",
+  "subjectId": "physics",
   "topicId": "phys-4-3",
   "conceptId": "subatomic-particles",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(i)",
   "stem": "An electron is a negatively charged subatomic particle.",
@@ -15009,22 +15340,21 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "proton",
-    "marks": 3,
-    "exactTermRequired": true
+    "marks": 3
    }
   ],
-  "notes": "Q12(iii) skipped — labelled diagram of an atom (drawing). Q12(ix) skipped — the extraction flattened the powers of ten ('3 × 108 m s–1', '5.5 × 1017 Hz', '5.45 × 10–10 m'), so neither the question data nor the answer can be reproduced faithfully."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q12-ii",
+  "subjectId": "physics",
   "topicId": "phys-4-3",
   "conceptId": "subatomic-particles",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(ii)",
   "stem": "An electron is a negatively charged subatomic particle.",
@@ -15035,24 +15365,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "neutron",
-    "marks": 3,
-    "exactTermRequired": true
+    "marks": 3
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q12-iv",
+  "subjectId": "physics",
   "topicId": "phys-4-1",
   "conceptId": "thermionic-emission",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(iv)",
-  "stem": "A beam of electrons is produced in a cathode ray tube.",
+  "stem": "The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
   "questionText": "How are the electrons produced in a cathode ray tube?",
   "tariffModel": {
    "kind": "fixed"
@@ -15060,23 +15390,26 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "thermionic emission",
     "marks": 6,
-    "exactTermRequired": true
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q12-crt"
  },
  {
   "id": "phys-2023-ol-q12-v",
+  "subjectId": "physics",
   "topicId": "phys-4-1",
   "conceptId": "deflecting-electron-beam",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(v)",
+  "stem": "The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
   "questionText": "How can the beam of electrons be deflected in a cathode ray tube?",
   "tariffModel": {
    "kind": "fixed"
@@ -15084,26 +15417,26 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "electric field",
-    "accepts": [
-     "magnetic field"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "electric/magnetic field",
     "marks": 6,
-    "contextNote": "The scheme prints 'electric/magnetic field' — the two are equally acceptable."
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q12-crt"
  },
  {
   "id": "phys-2023-ol-q12-vi",
+  "subjectId": "physics",
   "topicId": "phys-4-1",
   "conceptId": "detecting-electron-beam",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(vi)",
+  "stem": "The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
   "questionText": "How is the beam of electrons detected in a cathode ray tube?",
   "tariffModel": {
    "kind": "fixed"
@@ -15111,23 +15444,26 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "light on a screen",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q12-crt"
  },
  {
   "id": "phys-2023-ol-q12-vii",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "xray-tube-acceleration",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(vii)",
-  "stem": "A beam of high speed electrons is used to produce X-rays in an X-ray tube.",
+  "stem": "The picture on the right is of an X-ray tube. A beam of high speed electrons is used to produce X-rays in an X-ray tube.",
   "questionText": "How are the electrons accelerated to high speeds in an X-ray tube?",
   "tariffModel": {
    "kind": "fixed"
@@ -15135,23 +15471,26 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "(high) voltage",
     "marks": 6,
-    "contextNote": "'voltage' is the key word; it must appear in the correct context to merit the marks."
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q12-xray"
  },
  {
   "id": "phys-2023-ol-q12-viii",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "xray-tube-target",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(viii)",
+  "stem": "The picture on the right is of an X-ray tube. A beam of high speed electrons is used to produce X-rays in an X-ray tube.",
   "questionText": "Tungsten is often used as the target in an X-ray tube because it has a high melting point. Why does the target in an X-ray tube need to have a high melting point?",
   "tariffModel": {
    "kind": "fixed"
@@ -15159,23 +15498,26 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "heat is produced",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q12-xray"
  },
  {
   "id": "phys-2023-ol-q12-x",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "electromagnetic-spectrum",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q12(x)",
-  "stem": "X-rays are a type of electromagnetic radiation.",
+  "stem": "(ix) X-rays are a type of electromagnetic radiation. They travel at a speed of 3 × 10⁸ m s⁻¹. Calculate the wavelength of an X-ray that has a frequency of 5.5 × 10¹⁷ Hz.",
   "questionText": "Name one other type of electromagnetic radiation.",
   "tariffModel": {
    "kind": "fixed"
@@ -15183,24 +15525,25 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "gamma",
+    "verbatim": "e.g. gamma",
     "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme gives this as an example ('e.g. gamma'); any other member of the electromagnetic spectrum is acceptable."
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q13-i",
+  "subjectId": "physics",
   "topicId": "phys-4-6",
   "conceptId": "nuclear-fusion",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(i)",
+  "stem": "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
   "questionText": "What is meant by nuclear fusion?",
   "tariffModel": {
    "kind": "fixed"
@@ -15208,23 +15551,25 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "joining of two nuclei",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "Q13(iv) and (v) skipped — the isotope symbols are flattened by the extraction to 'H1 3' and 'He2 3', so neither the question nor the answer can be reproduced faithfully. Q13(viii) skipped — the scheme gives only the content-free criterion 'any valid reference to fuel/products/etc.'"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q13-ii",
+  "subjectId": "physics",
   "topicId": "phys-3-1",
   "conceptId": "electrostatic-repulsion-nuclei",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(ii)",
+  "stem": "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
   "questionText": "Why is there a huge force of electrostatic repulsion between two nuclei that are brought close to each other?",
   "tariffModel": {
    "kind": "fixed"
@@ -15232,22 +15577,25 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "they are both positively charged",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q13-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "isotopes",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(iii)",
+  "stem": "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
   "questionText": "The scientists used isotopes of hydrogen in this experiment. What are isotopes?",
   "tariffModel": {
    "kind": "fixed"
@@ -15255,22 +15603,25 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "atoms of the same atomic number but with different mass numbers",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q13-vi",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "power-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(vi)",
+  "stem": "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
   "questionText": "In this experiment, 59 MJ of energy was produced during 5 s. Calculate the power generated.",
   "tariffModel": {
    "kind": "fixed"
@@ -15278,22 +15629,25 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "59 ÷ 5 = 11.8 MW",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q13-vii",
+  "subjectId": "physics",
   "topicId": "phys-4-6",
   "conceptId": "nuclear-fission",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(vii)",
+  "stem": "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
   "questionText": "Nuclear power plants currently use nuclear fission, not nuclear fusion. What is meant by nuclear fission?",
   "tariffModel": {
    "kind": "fixed"
@@ -15301,53 +15655,57 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "the splitting of a nucleus",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-a-i",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "momentum-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(a)(i)",
-  "questionText": "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s–1. Calculate the momentum of the train. Include units in your answer.",
+  "stem": "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s⁻¹.",
+  "questionText": "Calculate the momentum of the train. Include units in your answer.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "720 000",
     "marks": 6,
-    "contextNote": "The numerical value of the momentum; the unit is marked separately below."
+    "contextNote": "[accept partial answer for 3]"
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "kg m s–1",
+    "verbatim": "kg m s⁻¹",
     "marks": 3
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-a-ii",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "momentum-at-rest",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(a)(ii)",
-  "stem": "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s–1. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
+  "stem": "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s⁻¹. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
   "questionText": "What is the momentum of the carriage before the coupling? Explain your answer.",
   "tariffModel": {
    "kind": "fixed"
@@ -15355,30 +15713,30 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "0",
-    "marks": 3,
-    "contextNote": "The stated momentum of the carriage before the coupling."
+    "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "because it has zero velocity",
     "marks": 3
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-a-iii",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "conservation-of-momentum",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(a)(iii)",
-  "stem": "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s–1. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
+  "stem": "A train has a mass of 180 000 kg and is travelling at a speed of 4 m s⁻¹. The train then joins together with a carriage of mass 85 000 kg which is at rest.",
   "questionText": "Calculate the initial velocity of the train after it joins with the carriage.",
   "tariffModel": {
    "kind": "fixed"
@@ -15386,48 +15744,50 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "720 000 ÷ 265 000 = 2.72 m s–1",
+    "verbatim": "720 000 ÷ 265 000 = 2.72 m s⁻¹",
     "marks": 6,
-    "contextNote": "720 000 kg m s–1 is the train's momentum from part (i); 265 000 kg is the combined mass of train and carriage."
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-a-iv",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "distance-speed-time",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(a)(iv)",
-  "questionText": "The train then accelerates to a speed of 22 m s–1. It maintains this speed for 8 minutes. Calculate the distance travelled by the train over the 8 minutes.",
+  "stem": "The train then accelerates to a speed of 22 m s⁻¹. It maintains this speed for 8 minutes.",
+  "questionText": "Calculate the distance travelled by the train over the 8 minutes.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "22 × 8 × 60 = 10560 m",
     "marks": 7,
-    "contextNote": "The 8 minutes must be converted to seconds before multiplying."
+    "contextNote": "[accept partial answer for 4]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-b-iii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "critical-angle-refractive-index",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(b)(iii)",
-  "stem": "Light travels through an optical fibre using total internal reflection.",
   "questionText": "The critical angle of the glass in an optical fibre is 43.6°. Calculate n, the refractive index of the glass.",
   "tariffModel": {
    "kind": "fixed"
@@ -15435,21 +15795,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "1/sin 43.6° = 1.45",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q14(b)(i) skipped — sketching the path of a ray. Q14(b)(ii) skipped — the scheme gives only the content-free criteria 'apparatus / method / observation'."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-b-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "optical-fibre-uses",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(b)(iv)",
   "questionText": "State one use of an optical fibre.",
@@ -15459,25 +15820,25 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "microsurgery",
+    "verbatim": "e.g. microsurgery",
     "marks": 4,
-    "openList": true,
-    "contextNote": "The scheme gives this as an example ('e.g. microsurgery'); other valid uses are acceptable."
+    "contextNote": "[accept partial answer for 2]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-c-ii",
+  "subjectId": "physics",
   "topicId": "phys-3-1",
   "conceptId": "inverse-square-law",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(c)(ii)",
-  "stem": "The force between two electric charges is calculated using Coulomb's law. Coulomb's law is an example of an inverse square law.",
+  "stem": "The force between two electric charges is calculated using Coulomb’s law. Coulomb’s law is an example of an inverse square law.",
   "questionText": "Describe what is meant by an inverse square law.",
   "tariffModel": {
    "kind": "fixed"
@@ -15485,47 +15846,89 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "as one quantity doubles, the other quantity decreases by a factor of 4",
+    "verbatim": "e.g. as one quantity doubles, the other quantity decreases by a factor of 4",
     "marks": 6,
-    "openList": true,
-    "contextNote": "The scheme gives this as an example ('e.g.'); other valid descriptions are acceptable."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q14(c)(i) skipped — drawing electric field lines. Q14(c)(iii) skipped — the scheme gives only the content-free criteria 'apparatus / method / observation'."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2023-ol-q14-c-iii",
+  "subjectId": "physics",
+  "topicId": "phys-3-1",
+  "conceptId": "charge-on-outside-of-conductor",
+  "section": "B",
+  "questionRef": "2023 OL Q14(c)(iii)",
+  "stem": "Electric charge builds up on the dome of a Van de Graaff generator.",
+  "questionText": "Describe a laboratory experiment that uses a Van de Graaff generator to show that charge resides on the outside of a hollow metal conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation and prints no answer. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-c-iv",
+  "subjectId": "physics",
   "topicId": "phys-3-1",
   "conceptId": "static-charge-repulsion",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(c)(iv)",
-  "stem": "Electric charge builds up on the dome of a Van de Graaff generator. A student is touching a Van de Graaff generator.",
-  "questionText": "Explain why her hair is standing up.",
+  "stem": "Electric charge builds up on the dome of a Van de Graaff generator.",
+  "questionText": "The picture on the right shows a student touching a Van de Graaff generator. Explain why her hair is standing up.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "hair is charged (and like charges repel)",
-    "marks": 4
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q14c-vdg"
  },
  {
   "id": "phys-2023-ol-q14-d-i",
+  "subjectId": "physics",
   "topicId": "phys-3-4",
   "conceptId": "magnetic-field-definition",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(d)(i)",
   "stem": "A current-carrying conductor has a magnetic field around it.",
@@ -15536,21 +15939,55 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "region where magnetic forces can be felt",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q14(d)(ii) skipped — the scheme gives only the content-free criteria 'apparatus' and 'method'."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2023-ol-q14-d-ii",
+  "subjectId": "physics",
+  "topicId": "phys-3-4",
+  "conceptId": "plotting-field-around-conductor",
+  "section": "B",
+  "questionRef": "2023 OL Q14(d)(ii)",
+  "stem": "A current-carrying conductor has a magnetic field around it.",
+  "questionText": "Describe a laboratory experiment to plot the magnetic field around a current-carrying conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 6,
+    "contextNote": "[accept partial answers for 3 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus and method and prints no answer. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-d-iii",
+  "subjectId": "physics",
   "topicId": "phys-3-5",
   "conceptId": "magnetic-flux-density-calculation",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(d)(iii)",
   "stem": "When a current-carrying conductor is placed in an external magnetic field, it experiences a force. The magnitude of the force F is proportional to the magnitude of the magnetic flux density B. The force may be calculated using the formula F = IlB.",
@@ -15561,20 +15998,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "11 ÷ (3 × 1.8) = 2.04 T",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q14-d-iv",
-  "topicId": "phys-u4",
-  "conceptId": "vector-quantities",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-1-1",
+  "conceptId": "vector-quantities",
   "section": "B",
   "questionRef": "2023 OL Q14(d)(iv)",
   "questionText": "Magnetic flux density is an example of a vector quantity. Name another example of a vector quantity.",
@@ -15584,14 +16023,15 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "force",
-    "marks": 4,
-    "openList": true,
-    "contextNote": "The scheme gives this as an example ('e.g. force'); any other valid vector quantity is acceptable."
+    "verbatim": "e.g. force",
+    "marks": 4
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2024-hl-q1-iv",
@@ -27681,167 +28121,110 @@
  },
  {
   "id": "phys-2023-ol-q9vi-fig",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "pressure-force-area",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q9(vi)",
   "stem": "Another reason for bricks being such a popular building material is that that they are durable and strong. A brick has length l = 20 cm, width w = 9 cm and height h = 6 cm, as shown in the diagram. The brick has a mass of 2 kg.",
   "questionText": "The bricks are stacked to build a wall. On which side, A, B or C, should a brick be stacked so that it exerts the least amount of pressure on the bricks below it? Explain your answer.",
-  "figureKey": "physics-2023-OL-paper-p08-i0",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "The end face of the brick (width x height, 9 cm x 6 cm) — the smallest face",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "The top face of the brick (length x width, 20 cm x 9 cm) — the largest face",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "C",
-    "meaning": "The front face of the brick (length x height, 20 cm x 6 cm)",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "h",
-    "meaning": "Height of the brick, h = 6 cm",
-    "askedInThisQuestion": false
-   },
-   {
-    "letter": "w",
-    "meaning": "Width of the brick, w = 9 cm",
-    "askedInThisQuestion": false
-   },
-   {
-    "letter": "l",
-    "meaning": "Length of the brick, l = 20 cm",
-    "askedInThisQuestion": false
-   }
-  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "B",
-    "marks": 4,
-    "contextNote": "B is the top face — the face with the largest area (20 cm x 9 cm)."
+    "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "greatest area",
-    "marks": 4,
-    "contextNote": "The explanation mark: pressure = force / area, so the face with the greatest area exerts the least pressure."
+    "marks": 4
    }
   ],
-  "notes": "Opened the figure: it shows Q9 parts (iv)-(vi) beside a photographed grey brick in three-quarter view. A is printed on the small left end face, B on the top face, C on the long front face, with h = 6 cm, w = 9 cm and l = 20 cm annotated on the edges — matches the worklist description. Part (vi) asks the student to choose between faces A, B and C, which exist only on this diagram, so the question is unanswerable without the crop. Parts (iv) and (v) were NOT carded here because their dimensions are printed in the question prose and they stand without the figure (text-wave territory). Tariff check: the paper's (20) for (iv)-(vi) splits as 6 + 6 + 8 in the scheme, so this part carries 8 marks. Stem transcribed verbatim including the paper's printed 'that that'.",
-  "tariffModel": {
-   "kind": "fixed"
-  }
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q9-brick"
  },
  {
   "id": "phys-2023-ol-q11iii-fig",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "circuit-diagram-from-apparatus",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q11(iii)",
-  "stem": "Electric current is the movement of charged particles through a conductor.",
+  "stem": "Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).",
   "questionText": "Draw a circuit diagram for the arrangement of apparatus shown in the diagram on the right.",
-  "figureKey": "physics-2023-OL-paper-p10-i0",
-  "labelKey": [
-   {
-    "letter": "+",
-    "meaning": "The positive terminal of the battery",
-    "askedInThisQuestion": false
-   },
-   {
-    "letter": "−",
-    "meaning": "The negative terminal of the battery",
-    "askedInThisQuestion": false
-   }
-  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "symbol for battery/cell",
     "marks": 3,
-    "contextNote": "The single solidus means battery symbol and cell symbol are equally acceptable."
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "symbol for bulb",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "connected in series",
     "marks": 3,
-    "contextNote": "The scheme prints these three elements on one line as 'symbol for battery/cell, symbol for bulb, connected in series [3 × 3]' — split here into its three 3-mark elements."
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "Opened the figure: a pictorial (not symbolic) drawing — a filament light bulb in a screw holder at the top, labelled 'light bulb', joined by two curved wires to a black cylindrical battery labelled 'battery' with its + terminal on the left and − terminal on the right. Matches the worklist description. The task is to translate this pictorial arrangement into a symbolic circuit diagram, which is impossible without seeing the arrangement, so the figure is essential. The paper also prints beneath part (iv): 'Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).' Part (iv) (two bulbs in parallel) was not carded — it stands without the figure. Tariff check: (24) for (i)-(iv) = 3 + 6 + 9 + 6, so this part carries 9 marks.",
-  "tariffModel": {
-   "kind": "fixed"
-  }
+  "notes": "\"[3 × 3]\" against the three items printed on one line: 3 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q11-bulb"
  },
  {
   "id": "phys-2023-ol-q14ci-fig",
+  "subjectId": "physics",
   "topicId": "phys-3-2",
   "conceptId": "electric-field-lines",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(c)(i)",
   "stem": "The diagram shows the electric field around two oppositely charged particles.",
   "questionText": "Draw the electric field lines around two positively charged particles held close to each other.",
-  "figureKey": "physics-2023-OL-paper-p14-i1",
-  "labelKey": [
-   {
-    "letter": "+",
-    "meaning": "The positively charged particle (left circle) — field lines point away from it",
-    "askedInThisQuestion": false
-   },
-   {
-    "letter": "−",
-    "meaning": "The negatively charged particle (right circle) — field lines point towards it",
-    "askedInThisQuestion": false
-   }
-  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "shape",
     "marks": 3,
-    "contextNote": "For two like (positive) charges the field lines repel — they curve away from the midpoint, unlike the shown dipole pattern where lines connect the two charges."
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "direction",
     "marks": 3,
-    "contextNote": "Arrows must point away from both positive charges."
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "Opened the figure: a line diagram of the electric field around an electric dipole — two small circles side by side, the left marked + and the right marked −, with arrowed field lines leaving the + charge and entering the − charge, curving between and around them. Matches the worklist description. The stem points directly at this diagram ('The diagram shows the electric field around two oppositely charged particles') and the question asks the student to adapt the shown pattern for two positive charges, so the exemplar diagram is what the question is anchored to. Tariff check: (12) for (c)(i)-(ii) = 6 + 6 in the scheme, so this part carries 6 marks (shape 3 + direction 3).",
-  "tariffModel": {
-   "kind": "fixed"
-  }
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q14c-field"
  },
  {
   "id": "phys-2024-hl-q6h-fig",
@@ -33610,38 +33993,39 @@
  },
  {
   "id": "phys-2023-ol-q13b-v",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "daughter-nucleus-after-beta-decay",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(v)",
-  "questionText": "Tritium decays by beta emission. What is the daughter nucleus when an atom of H1 3 emits a beta particle? (7)",
+  "questionText": "Tritium decays by beta emission. What is the daughter nucleus when an atom of H₁ ³ emits a beta particle?",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 3,
+  "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "He2 3",
-    "marks": 3
+    "verbatim": "He³₂",
+    "marks": 7,
+    "contextNote": "[3 + 2 + 2]: the scheme prices the nuclide's symbol and its two numbers."
    }
   ],
-  "stem": "Read the following passage and answer the questions below. It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7)",
-  "notes": "The scheme prints \"[3 + 2 + 2]\" against this line, covering this part and the two that follow it."
+  "notes": "The paper sets the tritium nuclide with stacked numbers: the question is shown as printed. The scheme prints the daughter nucleus with its numbers stacked after the symbol, read with G('equation'); its print is the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q13v-scheme",
+  "questionFigureKey": "physics-2023-ol-q13v-question"
  },
  {
   "id": "phys-2023-ol-q10-vi",
-  "topicId": "phys-2-4",
-  "conceptId": "nodes-on-a-stationary-wave",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
-  "section": "A",
+  "topicId": "phys-2-6",
+  "conceptId": "nodes-on-a-stationary-wave",
+  "section": "B",
   "questionRef": "2023 OL Q10(vi)",
+  "stem": "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹.",
   "questionText": "What name is given to points A and B?",
   "tariffModel": {
    "kind": "fixed"
@@ -33649,24 +34033,26 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "nodes",
-    "marks": 4
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h",
-  "notes": "The scheme reprints the question above its answer and the two run together in one line, so the answer is the word after the question mark."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q10-wave"
  },
  {
   "id": "phys-2023-ol-q10-vii",
-  "topicId": "phys-2-4",
-  "conceptId": "amplitude-on-a-stationary-wave",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
-  "section": "A",
+  "topicId": "phys-2-6",
+  "conceptId": "amplitude-on-a-stationary-wave",
+  "section": "B",
   "questionRef": "2023 OL Q10(vii)",
+  "stem": "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹.",
   "questionText": "What name is given to height h?",
   "tariffModel": {
    "kind": "fixed"
@@ -33674,23 +34060,26 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "What name is given to height h?",
-    "marks": 4
+    "verbatim": "amplitude",
+    "marks": 4,
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q10-wave"
  },
  {
   "id": "phys-2023-ol-q10-viii",
-  "topicId": "phys-2-4",
-  "conceptId": "wavelength-from-node-separation",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
-  "section": "A",
+  "topicId": "phys-2-6",
+  "conceptId": "wavelength-from-node-separation",
+  "section": "B",
   "questionRef": "2023 OL Q10(viii)",
+  "stem": "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹.",
   "questionText": "Calculate the wavelength of the wave.",
   "tariffModel": {
    "kind": "fixed"
@@ -33698,48 +34087,52 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "2 × 45 = 90 cm",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h",
-  "notes": "The scheme runs the next part on from this answer in the same line; the six words taken are this part's working and result."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q10-wave"
  },
  {
   "id": "phys-2023-ol-q13b-viii",
+  "subjectId": "physics",
   "topicId": "phys-4-6",
   "conceptId": "why-fusion-is-preferred-to-fission",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(viii)",
-  "questionText": "Large amounts of money are being invested into nuclear fusion research.",
+  "stem": "It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com",
+  "questionText": "Large amounts of money are being invested into nuclear fusion research. Why is there such interest in replacing nuclear fission with nuclear fusion?",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "any valid reference to fuel/products/etc.",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "Read the following passage and answer the questions below. It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7)"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q11-vii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "why-a-filament-graph-curves",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q11(vii)",
+  "stem": "The relationship between current and voltage for a filament bulb is shown in the graph below.",
   "questionText": "Explain the shape of the graph.",
   "tariffModel": {
    "kind": "fixed"
@@ -33747,65 +34140,100 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "the resistance is greater at high current",
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the resistance is greater at high current / due to the heating effect / as voltage increases, the current increases",
     "marks": 6,
-    "accepts": [
-     "due to the heating effect",
-     "as voltage increases, the current increases"
-    ]
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V)",
-  "notes": "The scheme prints three ways of saying it and pays six for any of them, with three for a partial answer."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q11-graph"
+ },
+ {
+  "id": "phys-2023-ol-q11-viii",
+  "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "metallic-conductor-graph",
+  "section": "B",
+  "questionRef": "2023 OL Q11(viii)",
+  "stem": "The relationship between current and voltage for a filament bulb is shown in the graph below.",
+  "questionText": "Sketch the graph of current against voltage for a metallic conductor held at constant temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "axis labelled",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "correct shape",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme names the shape as \"correct shape\" and draws none: two criterion rows. The filament bulb's printed graph is shown as the question's context. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q11-graph"
  },
  {
   "id": "phys-2023-ol-q8-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "angle-of-refraction-from-snells-law",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q8(iv)",
-  "questionText": "The refractive index of the glass block is 1.5.",
+  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
+  "questionText": "The refractive index of the glass block is 1.5. Calculate the angle of refraction when the angle of incidence is 35°.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "n = sin i/sin r",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "substitution",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "r = 22.5°",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
-  "figureKey": "physics-2023-ol-paper-p007-i0"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q8-diagram"
  },
  {
   "id": "phys-2023-ol-q7-v",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "velocity-from-energy-or-suvat",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q7(v)",
+  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest. (iii) The carriage is dropped from a height of 37 m above the braking zone. The mass of the carriage is 6200 kg. Calculate the potential energy the carriage had before it was dropped. acceleration due to gravity = 9.8 m s⁻²",
   "questionText": "Calculate the velocity of the carriage when it has fallen 37 m.",
   "tariffModel": {
    "kind": "fixed"
@@ -33813,36 +34241,39 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "Ek = ½mv2 // v2 = u2 + 2as",
-    "marks": 3
+    "verbatim": "Eₖ = ½mv² // v² = u² + 2as",
+    "marks": 3,
+    "contextNote": "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "substitution",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
-    "verbatim": "v = 26.9 m s–1",
-    "marks": 3
+    "verbatim": "v = 26.9 m s⁻¹",
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
-  "notes": "Either route scores, the energy one or the equation of motion, but a partial answer cannot be taken from both."
+  "notes": "The first line is printed with its // side (an energy route or an equation of motion): one row, as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q8-vi",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "image-position-for-a-converging-lens",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q8(vi)",
+  "stem": "Refraction also occurs when light travels through a lens.",
   "questionText": "An object is placed 25 cm in front of a converging lens of focal length 15 cm. Calculate the position of the image formed.",
   "tariffModel": {
    "kind": "fixed"
@@ -33850,35 +34281,46 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "1/u + 1/v = 1/f",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "substitution",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "v = 37.5 cm",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
-  "figureKey": "physics-2023-ol-paper-p007-i0"
+  "notes": "\"the image formed\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q11-v",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "total-resistance-of-two-parallel-bulbs",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q11(v)",
   "questionText": "Two light bulbs connected in parallel have resistances of 5 Ω and 4 Ω. Calculate the total resistance of the two light bulbs.",
   "tariffModel": {
@@ -33887,171 +34329,216 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "1/RT = 1/R1 + 1/R2",
+    "verbatim": "1/RT = 1/R₁ + 1/R₂",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "substitution",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "RT = 2.22 Ω",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V)"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q1-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "newtons-second-law-apparatus",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q1(i)",
-  "questionText": "Draw a labelled diagram of the apparatus used in this experiment. (12)",
+  "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied.",
+  "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "runway",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "trolley",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "means of applying/measuring force",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-4",
-    "kind": "point",
+    "id": "r4",
+    "kind": "criterion",
     "verbatim": "means of measuring distance/velocity/time",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[–1 if no label present on diagram] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied. The student recorded the following results. F (N) 0.2 0.4 0.6 0.8 1.0 1.2 a (m s–2) 0.72 1.39 2.11 2.76 3.47 4.22",
-  "notes": "The scheme takes one mark off if no label is present on the diagram."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q1-iv",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "graph-of-force-against-acceleration",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q1(iv)",
+  "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied. The student recorded the following results. F (N) 0.2 0.4 0.6 0.8 1.0 1.2 a (m s⁻²) 0.72 1.39 2.11 2.76 3.47 4.22",
   "questionText": "Use the data in the table to draw a graph on graph paper of F against a.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 6 × 1 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axis",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "points plotted",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "line of best fit",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student carried out an experiment to show that the acceleration a of an object is proportional to the force F applied. The student recorded the following results. F (N) 0.2 0.4 0.6 0.8 1.0 1.2 a (m s–2) 0.72 1.39 2.11 2.76 3.47 4.22",
-  "notes": "Six plotted points at one mark each."
+  "notes": "\"points plotted [6 × 1]\": one row of six 1-mark units. The scheme draws the graph (the solution figure); the data table is lifted into the stem. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q1iv-scheme-graph"
  },
  {
   "id": "phys-2023-ol-q2-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "concave-mirror-focal-length-apparatus",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q2(i)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
   "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 + 3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "object, mirror, screen",
-    "marks": 12
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "object / mirror / screen",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "object",
+      "mirror",
+      "screen"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "[–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step."
    }
   ],
-  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
-  "notes": "The scheme takes one mark off if no label is present on the diagram."
+  "notes": "\"the image distance\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q2-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "marking-u-and-v-on-the-diagram",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q2(ii)",
-  "questionText": "On your diagram, indicate the object distance u and the image distance v. (18)",
+  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
+  "questionText": "On your diagram, indicate the object distance u and the image distance v.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "u shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "v shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student carried out an experiment to measure the focal length f of a concave mirror. She measured the object distance u to be 20 cm and the image distance v to be 61 cm.",
-  "notes": "This part follows the apparatus diagram asked for in part (i)."
+  "notes": "\"the image distance\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q3-ix",
-  "topicId": "phys-u2",
-  "conceptId": "specific-latent-heat-result",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "specific-latent-heat-result",
   "section": "A",
   "questionRef": "2023 OL Q3(ix)",
   "questionText": "Calculate the value for l, the specific latent heat of fusion of ice.",
@@ -34061,138 +34548,158 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "0.008l + (0.008 × 4180 ×16) = 3094.07 so l = 319880 J kg–1",
-    "marks": 6
+    "verbatim": "0.008l + (0.008 × 4180 ×16) = 3094.07 so l = 319880 J kg⁻¹",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C Below is a diagram of the apparatus used in this experiment. cloth with crushed ice calorimeter water with crushed ice",
-  "notes": "E = 3094.07 J is the heat lost by the water and calorimeter, calculated in part (vii); 16 °C is the rise in temperature of the ice, from part (viii). The scheme runs this answer on from part (viii) in the same block."
+  "notes": "The ask's note \"E = m_ice l + m_ice c_water Δθ_ice\" sets its subscripts as lowered words the text layer cannot lower (\"micel\"): the question is shown as printed, the whole of Q3 with its data. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2023-ol-q3ix-question"
  },
  {
   "id": "phys-2023-ol-q4-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "speed-of-sound-apparatus",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q4(i)",
+  "stem": "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies.",
   "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 + 3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "tube, tuning fork, means of changing length, metre stick (any three)",
-    "marks": 12
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "tube / tuning fork / means of changing length / metre stick",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "tube",
+      "tuning fork",
+      "means of changing length",
+      "metre stick"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "any three [–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step."
    }
   ],
-  "stem": "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies. The student recorded the following results. f (Hz) 256 288 320 341 384 480 l (m) 0.33 0.29 0.27 0.25 0.22 0.18",
-  "notes": "The scheme takes one mark off if no label is present on the diagram."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q4-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "showing-the-measured-air-column-length",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q4(ii)",
-  "questionText": "Indicate on your diagram the length that the student measured. (15)",
+  "stem": "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies.",
+  "questionText": "Indicate on your diagram the length that the student measured.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "valid length shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student carried out an experiment to determine the speed of sound in air. The student set a tuning fork vibrating and measured the length l of a column of air when the air was vibrating at its fundamental frequency f. The experiment was repeated for different frequencies. The student recorded the following results. f (Hz) 256 288 320 341 384 480 l (m) 0.33 0.29 0.27 0.25 0.22 0.18",
-  "notes": "This part follows the apparatus diagram asked for in part (i)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q5-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "graph-of-length-against-resistance",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2023 OL Q5(iii)",
-  "questionText": "Use the data in the table to draw a graph on graph paper of length l against resistance R. (13)",
+  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire. The student recorded the following results. l (cm) 20 30 40 50 60 70 R (Ω) 0.08 0.12 0.17 0.21 0.25 0.29 d (mm) 2",
+  "questionText": "Use the data in the table to draw a graph on graph paper of length l against resistance R.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "4 + 6 × 1 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 13,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axis",
-    "marks": 4
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "points plotted",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "line of best fit",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "In an experiment to determine the resistivity of a nichrome wire, a student measured the resistance R and the length l of the wire. She repeated this for different lengths of wire. She also measured the diameter d of the wire. The student recorded the following results. l (cm) 20 30 40 50 60 70 R (Ω) 0.08 0.12 0.17 0.21 0.25 0.29 d (mm) 2 Each question carries 56 marks.",
-  "notes": "Six plotted points at one mark each."
+  "notes": "\"points plotted [6 × 1]\": one row of six 1-mark units. The scheme draws the graph (the solution figure); the data table is lifted into the stem. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q5iii-scheme-graph"
  },
  {
   "id": "phys-2023-ol-q6-d",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "unit-of-work",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q6(d)",
-  "questionText": "Which of the following is the unit of work?",
+  "questionText": "Which of the following is the unit of work?\njoule\nwatt\nfarad\nmetre",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "joule",
     "marks": 7
    }
   ],
-  "stem": "joule watt farad metre",
-  "notes": "The printed scheme answers this by setting joule in bold among the four options it reprints; the answer is read off the rendered page the same way a tick would be."
+  "notes": "The scheme reprints the four options and strikes through watt, farad and metre (drawn lines, rendered and looked at), leaving joule: the row is the option it leaves, at the [7] printed under it. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q7-ii",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "forces-on-a-carriage-at-constant-velocity",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q7(ii)",
+  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
   "questionText": "Draw a diagram of the forces acting on the carriage as it travels up the tower at a constant velocity.",
   "tariffModel": {
    "kind": "fixed"
@@ -34200,30 +34707,32 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "arrow down",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "equal arrow up",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[–1 if arrows are clearly not equal] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
-  "notes": "The scheme takes one mark off if the arrows are clearly not equal."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q7-vii",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "forces-on-a-falling-carriage",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q7(vii)",
+  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
   "questionText": "Draw a diagram of the forces acting on the carriage as it falls.",
   "tariffModel": {
    "kind": "fixed"
@@ -34231,240 +34740,277 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "arrow down",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
-  "notes": "The scheme reprints the question above its answer; the answer is the single downward arrow, weight."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q7-viii",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "velocity-time-graph-of-the-ride",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q7(viii)",
-  "questionText": "Draw a velocity-time graph for the motion of the carriage from when it was dropped to when it comes to rest. (14) acceleration due to gravity = 9.8 m s–2",
+  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+  "questionText": "Draw a velocity-time graph for the motion of the carriage from when it was dropped to when it comes to rest.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "axis labelled",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "acceleration shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "deceleration shown",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[–1 if incorrect acceleration shown] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
-  "notes": "The scheme takes one mark off if an incorrect acceleration is shown."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q8-v",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "ray-diagram-for-a-real-image",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q8(v)",
+  "stem": "Refraction also occurs when light travels through a lens.",
   "questionText": "Draw a converging lens and draw a ray diagram to show how the lens forms a real image.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 3 × 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "converging lens",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "object, incident ray(s), image formed",
-    "marks": 9
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "object",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "incident ray(s)",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "image formed",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
-  "notes": "Object, incident ray(s) and image formed earn three marks each."
+  "notes": "\"[3 × 3]\" against the three items printed on one line: 3 each. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q10-ix",
-  "topicId": "phys-2-4",
-  "conceptId": "frequency-from-wave-speed-and-wavelength",
-  "level": "ordinary",
-  "year": 2023,
   "subjectId": "physics",
-  "section": "A",
+  "topicId": "phys-2-6",
+  "conceptId": "frequency-from-wave-speed-and-wavelength",
+  "section": "B",
   "questionRef": "2023 OL Q10(ix)",
-  "questionText": "Calculate the frequency of the wave. (20)",
+  "stem": "A standing wave is set up on a string as shown so that the distance between points A and B is 45 cm. The waves on the string are travelling with a speed of 400 m s⁻¹. (viii) Calculate the wavelength of the wave.",
+  "questionText": "Calculate the frequency of the wave.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "400 ÷ 0.9 = 444.4 Hz",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h",
-  "notes": "0.9 m is the wavelength calculated in part (viii), converted from 90 cm; 400 m s–1 is the wave speed given on the paper. The scheme runs this answer on from part (viii) in the same block."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "figureKey": "physics-2023-ol-q10-wave"
  },
  {
   "id": "phys-2023-ol-q11-iv",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "two-bulbs-in-parallel-circuit-diagram",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q11(iv)",
-  "questionText": "Draw a circuit diagram to show two light bulbs connected in parallel across a battery. (24) Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).",
+  "stem": "Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering parts (iii) and (iv).",
+  "questionText": "Draw a circuit diagram to show two light bulbs connected in parallel across a battery.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "second bulb",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "in parallel",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V)"
+  "notes": "\"a circuit diagram\" reads to the figure-pointer check as a printed figure; the ask is the student's own, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Physics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2023-ol-q12-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-3",
   "conceptId": "labelled-diagram-of-the-atom",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q12(iii)",
-  "questionText": "Draw a labelled diagram of an atom. Include in your diagram the names and locations of the subatomic particles of the atom. (15) The picture on the right is of a cathode ray tube. A beam of electrons is produced in a cathode ray tube.",
+  "questionText": "Draw a labelled diagram of an atom. Include in your diagram the names and locations of the subatomic particles of the atom.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "location of proton(s)/neutron(s)",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "electron",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "location of electron(s)",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "An electron is a negatively charged subatomic particle."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q12-ix",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "wavelength-of-an-x-ray",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2023 OL Q12(ix)",
-  "questionText": "X-rays are a type of electromagnetic radiation. They travel at a speed of 3 × 108 m s–1. Calculate the wavelength of an X-ray that has a frequency of 5.5 × 1017 Hz.",
+  "questionText": "X-rays are a type of electromagnetic radiation. They travel at a speed of 3 × 10⁸ m s⁻¹. Calculate the wavelength of an X-ray that has a frequency of 5.5 × 10¹⁷ Hz.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "(3 × 108) ÷ (5.5 × 1017) = 5.45 × 10–10 m",
-    "marks": 6
+    "verbatim": "(3 × 10⁸) ÷ (5.5 × 10¹⁷) = 5.45 × 10⁻¹⁰ m",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "An electron is a negatively charged subatomic particle.",
-  "notes": "The scheme runs this answer on from part (viii) in the same block."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-ol-q13-iv",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "protons-and-neutrons-in-tritium",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q13(iv)",
-  "questionText": "The symbol for tritium is H1 3. (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium? (7)",
+  "questionText": "The symbol for tritium is H₁ (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium?",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "1",
+    "verbatim": "(a) — 1",
     "marks": 4
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "2",
+    "verbatim": "(b) — 2",
     "marks": 3
    }
   ],
-  "stem": "Read the following passage and answer the questions below. It was recently announced that a team of researchers at the Joint European Torus tokamak reactor near Oxford generated the highest sustained energy pulse ever created using nuclear fusion, the joining of two atomic nuclei with the release of energy. If researchers can harness nuclear fusion, the process that powers the Sun, it promises to provide a near-limitless source of clean energy. But so far no experiment has generated more energy than has been put in, due to the huge force of electrostatic repulsion between nuclei. These results do not change that, but they suggest that scientists should eventually be able to reach this goal. To break the energy record, the scientists used a fuel made of equal parts tritium and deuterium. Tritium is a rare and radioactive isotope of hydrogen, meaning it has the same atomic number as normal hydrogen but a different mass number. When tritium undergoes nuclear fusion with the isotope deuterium, the reaction produces more energy than a reaction involving deuterium only. In this experiment, 59 MJ of energy was produced during a fusion pulse that lasted 5 s. This pulse generated more than twice the power of the previous record for nuclear fusion. Adapted from: www.nature.com What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7)",
-  "notes": "The first row is (a), the number of protons; the second row is (b), the number of neutrons."
+  "notes": "One cell \"[4 + 3]\" prices (a) and (b) together: one card, (a) 4 and (b) 3 in the order printed. The paper sets the tritium nuclide with stacked numbers: the question is shown as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2023-ol-q13iv-question"
  },
  {
   "id": "phys-2023-ol-q14-b-i",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "path-of-a-ray-through-an-optical-fibre",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2023 OL Q14(b)(i)",
+  "stem": "Light travels through an optical fibre using total internal reflection.",
   "questionText": "Sketch the path of a ray of light through an optical fibre.",
   "tariffModel": {
    "kind": "fixed"
@@ -34472,12 +35018,56 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "internal reflection shown in path of ray in fibre",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks."
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2023-ol-q14-b-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "demonstrating-total-internal-reflection",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "stem": "Light travels through an optical fibre using total internal reflection.",
+  "questionText": "Describe a laboratory experiment to demonstrate total internal reflection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "apparatus",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 4,
+    "contextNote": "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation and prints no answer. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2023_ol.py.",
+  "year": 2023,
+  "level": "ordinary"
  },
  {
   "id": "phys-2024-hl-q11-vii",
