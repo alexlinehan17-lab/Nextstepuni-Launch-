@@ -1,40 +1,5 @@
 [
   {
-    "ref": "2021 HL Q10(ii)",
-    "reason": "Same marking-convention-only shape; no answer content printed.",
-    "evidence": "Scheme: 'Describe an experiment to show the magnetic field around the conductor. apparatus, method, observation (3 × 3)'."
-  },
-  {
-    "ref": "2021 HL Q10(iii)",
-    "reason": "The credit is the drawn figure itself: the scheme's rows are grader labels that name neither the shape nor the direction, unlike Q12(vi) whose scheme names 'parallel field lines' and 'from + to −' (and which is carded).",
-    "evidence": "Scheme: 'Draw the shape and direction of this magnetic field. correct shape (3) correct direction (3)'."
-  },
-  {
-    "ref": "2021 HL Q11(i)",
-    "reason": "The nuclear equation (alpha + Be-9 -> C-12 + n, 11 × 1) is set in a font the text layer mangles; the answer cannot be lifted. Same class as 2022 HL Q10's equations, already recorded as font-mangled.",
-    "evidence": "Text layer yields '4 → C6' under the part, with fragments 'Be4', '9 + He2', '12 + n0' scattered into the neighbouring block; tariff line '(11 × 1) (–3 for each additional incorrect species)'."
-  },
-  {
-    "ref": "2021 HL Q13(a)(iv)",
-    "reason": "Proton–antiproton annihilation equation set with sub/superscripts and an overbar the text layer mangles; not liftable.",
-    "evidence": "Text layer yields '1 = 2γ (7 × 1)' and '1 + pത -1' plus '(–3 for each additional incorrect species)'."
-  },
-  {
-    "ref": "2021 HL Q14(b)(ii)",
-    "reason": "Marking-convention-only, as the script's docstring already records for this part.",
-    "evidence": "Scheme: 'Describe how the Doppler effect can be demonstrated in the laboratory. apparatus, method, observation (3 × 3)'."
-  },
-  {
-    "ref": "2021 HL Q2(iv)",
-    "reason": "The scheme prints only the tariff against the candidate's own drawing; there is no answer content to lift.",
-    "evidence": "Scheme p.7: '(iv) On your diagram, indicate u and v. (2 × 3)' — nothing follows the tariff."
-  },
-  {
-    "ref": "2021 HL Q8(ii)",
-    "reason": "Describe-an-experiment part answered only by the marking convention; nothing to put on the back of a card (rule 2).",
-    "evidence": "Scheme: '(ii) Describe such an experiment. apparatus, method, observation (3 × 3)'."
-  },
-  {
     "ref": "2021 OL Q11(x)",
     "reason": "Describe-an-experiment part whose scheme prints only the marking convention with no answer content — the exact case the script's header rule names as uncardable.",
     "evidence": "Scheme (2021-ol.md, Q11): 'Describe an experiment to compare the rate of conduction through different solids. 3 × 3 apparatus 3 method 3 observation/conclusion 3 partial answer (3)' — no apparatus, method or observation is actually named."

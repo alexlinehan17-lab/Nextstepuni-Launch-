@@ -1,4 +1,225 @@
 {
+ "physics-2021-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q1-table.png",
+  "md5": "26c2e3fd59af0e47343d67eeafe385ed",
+  "alt": "Table of the recorded data: l (mm) 300, 400, 500, 600, 700, 800; t (s) 22.0, 25.4, 28.4, 31.1, 33.6, 35.9.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q1(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   92,
+   254,
+   500,
+   313
+  ]
+ },
+ "physics-2021-hl-q11-photo": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q11-photo.png",
+  "md5": "1005241df8fb419e50a2532a5020178c",
+  "alt": "Black-and-white photograph of a group at an outdoor table laid with cups and saucers in front of a hedge: five men seated and, behind them, two women in hats and two men standing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: sciencesource.com (image on page 10)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   248,
+   99,
+   541,
+   294
+  ]
+ },
+ "physics-2021-hl-q14d-photo": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q14d-photo.png",
+  "md5": "960369df03a73aa2ff2e0a537ecdec40",
+  "alt": "Black-and-white photograph of a glass ball resting on pebbles at a shoreline with mountains behind; the mountains and the sky appear upside down inside the ball.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q14(d)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: paulreiffer.com (image on page 15)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   341,
+   327,
+   542,
+   479
+  ]
+ },
+ "physics-2021-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q2-table.png",
+  "md5": "106b94cdeafd2f987a28234f955fdd78",
+  "alt": "Table of the recorded data: u (cm) 20.0, 25.0; v (cm) 31.2, 23.2.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q2(v)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   210,
+   135,
+   386,
+   192
+  ]
+ },
+ "physics-2021-hl-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q3-table.png",
+  "md5": "dac0ab00e6287b2c39839be7095df5ad",
+  "alt": "Table of the recorded data: f (Hz) 256, 320, 341, 427, 480, 512; T (N) 15, 24, 27, 43, 54, 61.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q3(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   92,
+   527,
+   500,
+   585
+  ]
+ },
+ "physics-2021-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q4-table.png",
+  "md5": "d0748709809f4f4539df6122d815d6fb",
+  "alt": "Table of the recorded data: θ (°C) 0, 20, 40, 60, 80, 100; R (Ω) 5.35, 5.60, 5.85, 6.04, 6.28, 6.51.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q4(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   92,
+   104,
+   500,
+   161
+  ]
+ },
+ "physics-2021-hl-q5-data": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q5-data.png",
+  "md5": "8a56a98189469e20f576afbadd02f3e1",
+  "alt": "Table of the recorded data: I (A) 1.0, 1.5, 2.0, 2.5, 3.0, 3.5; Δθ (°C) 2.0, 4.6, 8.2, 12.6, 18.3, 25.0; below it, the line the paper prints under the question: (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   92,
+   491,
+   500,
+   671
+  ],
+  "maskedFurniture": [
+   [
+    92,
+    551,
+    500,
+    651
+   ]
+  ]
+ },
+ "physics-2021-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q5-table.png",
+  "md5": "e9c83108d3d4699d1952965e0c8ff925",
+  "alt": "Table of the recorded data: I (A) 1.0, 1.5, 2.0, 2.5, 3.0, 3.5; Δθ (°C) 2.0, 4.6, 8.2, 12.6, 18.3, 25.0.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   92,
+   491,
+   500,
+   549
+  ]
+ },
+ "physics-2021-hl-q7-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q7-diagram.png",
+  "md5": "7190cd8c4081bc0116ab949bf8b35e42",
+  "alt": "Diagram: a vertical string hangs from point P down to a sphere B; a block A on the right has an arrow pointing left towards B, and a dashed curved arrow leads from B up and away to the left.",
+  "lettersVisible": [
+   "P",
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q7(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   344,
+   136,
+   545,
+   389
+  ]
+ },
+ "physics-2021-hl-q9-apparatus": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q9-apparatus.png",
+  "md5": "1a27fce7bd6fa98836447bb29e69388f",
+  "alt": "Diagram: a test tube of water held at an angle, a piece of ice held at its closed lower end by a metal weight, and a Bunsen burner heating the tube near the top of the water; labels Water, Metal weight, Ice and Bunsen burner.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9(vii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: amazon.co.uk; slideplayer.com (images on page 8)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   130,
+   460,
+   440,
+   692
+  ]
+ },
+ "physics-2021-hl-q9-picnic": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q9-picnic.png",
+  "md5": "d8254c218c36486cbf92be76e4e6dfb5",
+  "alt": "Photograph of a grey plastic picnic box with a white rim and a carrying handle, two ice packs standing in front of it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: amazon.co.uk; slideplayer.com (images on page 8)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   388,
+   72,
+   542,
+   222
+  ]
+ },
  "physics-2022-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2022-hl-q1-table.png",
   "md5": "d49e8f197e710a48c5a00aa373b4abbb",
