@@ -213,7 +213,12 @@ subject-specific generators.
   response under it, a table the text layer flattened, glyph damage, a block
   that is a whole question) is listed with its pages in
   `authored/business-expected-review.json`, never typed in. `--write`
-  rewrites `rubric-authored.json`; a second run changes nothing.
+  rewrites `rubric-authored.json`; a second run changes nothing. Three
+  readings run in order — the text layer, then a hand-checked slice
+  (`authored/business-expected-slices.json`, see below), then the page
+  geometry — and 1,979 of the 1,985 cards carry rows; the six left are
+  recorded exclusions with page evidence (two image answers, a drawn
+  organisation chart, three drawn charts).
   Irish reading and literature excerpts are re-cut across the scheme pages
   they run onto by `irish_excerpts.py` (`--write` upgrades `authored.json`;
   `irish_cards.py` applies the same pass to every card it builds): a reading
@@ -227,12 +232,26 @@ subject-specific generators.
   Where that text reading leaves a Business card for review, stage B reads the
   cited pages' word positions with PyMuPDF (`bus_expected.py`, the same run):
   a table's rows become items line by line, a tick names the column header
-  above it, "True"/"False" in the right-hand column names its statement, a
-  numbers row over a letters row pairs them; every word is one the page
-  prints (the gate checks word by word, since the text layer holds a table's
-  words in another order). What neither reading can lift — a tick table whose
-  ticks are drawn, not typed; a marker the page does not print — stays in
-  `authored/business-expected-review.json` with both readings' reasons.
+  above it (a wrapped header is joined column by column, "Take-"/"over"), a
+  ring the scheme drew around a printed option names the option on the line
+  its centre sits on, "True"/"False" in the right-hand column names its
+  statement, a numbers row over a letters row pairs them, a figure set a
+  point off its label's baseline rejoins the label, and the marks column —
+  "(1m)", "5marks", a run of bare integers at one x, a label such as
+  "Explain" in the far margin — is dropped; every word is one the page prints
+  (the gate checks word by word, since the text layer holds a table's words in
+  another order). A page whose text layer names glyphs by a mangled code point
+  the repair map does not know (2016 OL's Calibri2 subset) is read character
+  by character through `glyph_ids.py`, the table the scheme extractor itself
+  uses. Between the two readings sits `authored/business-expected-slices.json`:
+  for a part whose marker the scheme never prints (a ratio's rows on a shared
+  baseline, an answer box beside a chart, a sub-part inside its parent's
+  block) a slice names the page region the responses sit in, by eye, and the
+  words are still the page's own; `mode: labels` takes a marks column's own
+  labels one per item; `skip` leaves out a marking note inside the region; an
+  entry marked `excluded` records why the page holds nothing to lift (an
+  image, a drawn chart) with its page evidence, and the card stays in
+  `authored/business-expected-review.json` with that reason.
   Accounting tasks carry the scheme's priced lines as rows (`acc_rows.py`,
   `cards/accounting/rows.json`): the scheme PDF is read as word lines with
   PyMuPDF and every bracketed mark becomes a row — the figure before it and
