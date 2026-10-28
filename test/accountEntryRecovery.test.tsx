@@ -110,15 +110,23 @@ describe('a failed sign-in says why', () => {
   };
 
   it('tells a locked-out student to wait, and rests the button instead of letting them extend the lock', async () => {
-    signIn.mockRejectedValue(authError('auth/too-many-requests'));
-    tryToSignIn('aoife@marinocollege.ie');
-    expect(await screen.findByRole('alert')).toHaveTextContent('Too many tries on this account');
-    expect(screen.getByRole('button', { name: /Try again in 60s/ })).toBeDisabled();
-    expect(screen.queryByText('No account yet?')).not.toBeInTheDocument();
-    expect(report).toHaveBeenCalledWith({ kind: 'too-many-requests', input: 'email', platform: 'web' });
-    // A different email is a different account.
-    fireEvent.change(screen.getByLabelText('Email or username'), { target: { value: 'other@marinocollege.ie' } });
-    expect(screen.getByRole('button', { name: 'Sign in' })).toBeEnabled();
+    // The countdown reads the clock: frozen here, so a loaded runner cannot tick it to 59s between the alert and
+    // the assertion. Only Date is faked; the timers that findByRole polls with stay real.
+    vi.useFakeTimers({ toFake: ['Date'] });
+    vi.setSystemTime(new Date('2026-10-28T09:00:00Z'));
+    try {
+      signIn.mockRejectedValue(authError('auth/too-many-requests'));
+      tryToSignIn('aoife@marinocollege.ie');
+      expect(await screen.findByRole('alert')).toHaveTextContent('Too many tries on this account');
+      expect(screen.getByRole('button', { name: /Try again in 60s/ })).toBeDisabled();
+      expect(screen.queryByText('No account yet?')).not.toBeInTheDocument();
+      expect(report).toHaveBeenCalledWith({ kind: 'too-many-requests', input: 'email', platform: 'web' });
+      // A different email is a different account.
+      fireEvent.change(screen.getByLabelText('Email or username'), { target: { value: 'other@marinocollege.ie' } });
+      expect(screen.getByRole('button', { name: 'Sign in' })).toBeEnabled();
+    } finally {
+      vi.useRealTimers();
+    }
   });
 
   it('blames the connection, not the password, when Firebase cannot be reached', async () => {

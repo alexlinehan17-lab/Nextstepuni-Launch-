@@ -39,6 +39,7 @@ import type {
   GeographyAnswerRow,
   GeographySrpAllocation,
 } from '../../../../types/markBank';
+import { geographyRowClaims, geographyRowInUnit } from '../../geographyScoring';
 
 export interface GeographyAllocationSource {
   level: 'higher' | 'ordinary';
@@ -98,7 +99,7 @@ const QUESTION_FURNITURE = /\bQ\.?\s*\d+\.?(?=\s|\()\s*/gi;
  * wording; the reveal says any correct answer scores. Matched on the words a
  * scheme uses for the slot, never on the absence of a word the parser expected.
  */
-const TARIFF_ONLY = /\b(?:named|identified|stated|chosen|listed|explained|described|outlined|given|valid|any|answer|explanation|reason|example|suitable|appropriate|relevant|correct|title|factor|process|landform|feature|impact|shown|outline|aspect|diagram|graph)\b/i;
+const TARIFF_ONLY = /\b(?:named|identified|located|stated|chosen|listed|explained|described|outlined|given|valid|any|answer|explanation|reason|example|suitable|appropriate|relevant|correct|title|factor|process|landform|feature|impact|shown|outline|aspect|diagram|graph)\b/i;
 
 const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
 
@@ -504,6 +505,15 @@ export const parseGeographyAllocation = (card: GeographyAllocationSource): Geogr
 //   Overall coherence: · 7/6 marks graded          per-unit alternatives; the
 //                                                  criterion's total picks one
 //   Excellent · 20 · Excellent, comprehensive response …   a band table
+//   Located · 4m / (4m graded 4/2/0)               a ladder that names the
+//                                                  price it grades
+// and, where a criterion's own reading is refused, lines printed for more
+// than one criterion (both at the end of this file):
+//   Number of aspects: · 3 (27 + 27 + 26) · (4 @ 20 marks each)
+//                                                  a points table split over
+//                                                  criteria: N points, each at
+//                                                  its own price (2010–2013 HL)
+//   Named · 4m + 3m + 3m   on Pattern 1, 2, 3      one addend per criterion
 
 export interface GeographyCriterionSource {
   maxMarks: number;
@@ -525,6 +535,14 @@ export interface GeographyCriterionContext {
   /** The printed part the card practises, "(i)" or "(ii)", for a Part One
    *  table the scheme prints as two columns on one line. */
   part?: string;
+  /** The card's points table ("Number of aspects: 3 (27 + 27 + 26) · (4 @ 20
+   *  marks each)"), where one of its criteria prints it over rows the review
+   *  split across several criteria (geographyPointRoutes). */
+  pointRoutes?: GeographyPointRoutes;
+  /** This criterion is the `index`-th (0-based) of `count` criteria the review
+   *  gave the same printed lines, where one line prices all of them at once
+   *  ("Named · 4m + 3m + 3m" over Pattern 1, 2 and 3). */
+  share?: { index: number; count: number };
 }
 
 const CELL = ' · ';
@@ -745,13 +763,18 @@ export function geographyAchievable(allocation: GeographyAllocation): Set<number
   }
   let total = new Set([0]);
   for (const group of allocation.groups) {
-    let unit = new Set([0]);
-    for (const row of group.rows) unit = addSets(unit, [0, ...(row.steps ?? [row.marks])]);
-    for (const srp of group.srp) {
-      if (srp.min !== undefined) continue;
-      unit = addSets(unit, Array.from({ length: srp.count + 1 }, (_, index) => index * srp.marks));
+    // Each unit on its own: a row the scheme prices unalike per point
+    // (`unitMarks`) offers a different ladder in each.
+    for (let index = 0; index < (group.repeat?.count ?? 1); index += 1) {
+      const at = group.repeat ? index + 1 : undefined;
+      let unit = new Set([0]);
+      for (const row of group.rows) unit = addSets(unit, [0, ...geographyRowClaims(row, at)]);
+      for (const srp of group.srp) {
+        if (srp.min !== undefined) continue;
+        unit = addSets(unit, Array.from({ length: srp.count + 1 }, (_, count) => count * srp.marks));
+      }
+      total = addSets(total, unit);
     }
-    for (let index = 0; index < (group.repeat?.count ?? 1); index += 1) total = addSets(total, unit);
   }
   const pool = allocation.srpPool;
   if (pool) total = addSets(total, Array.from({ length: pool.count + 1 }, (_, index) => index * pool.marks));
@@ -766,9 +789,11 @@ export function geographyAllocationMax(allocation: GeographyAllocation): number 
   }
   let total = 0;
   for (const group of allocation.groups) {
-    const unit = group.rows.reduce((sum, row) => sum + row.marks, 0)
-      + group.srp.reduce((sum, srp) => sum + (srp.min === undefined ? srp.count * srp.marks : 0), 0);
-    total += unit * (group.repeat?.count ?? 1);
+    for (let index = 0; index < (group.repeat?.count ?? 1); index += 1) {
+      const at = group.repeat ? index + 1 : undefined;
+      total += group.rows.reduce((sum, row) => sum + geographyRowInUnit(row, at).marks, 0)
+        + group.srp.reduce((sum, srp) => sum + (srp.min === undefined ? srp.count * srp.marks : 0), 0);
+    }
   }
   if (allocation.srpPool) total += allocation.srpPool.count * allocation.srpPool.marks;
   return total;
@@ -865,6 +890,13 @@ function parseCriterionUnit(lines: readonly string[], criterion: GeographyCriter
       if (above.price.kind === 'each') above.price.graded = ladder;
       else if (ladder.every(step => step <= (above.price as { marks: number }).marks)) above.price.steps = ladder;
       return;
+    }
+    // "(4m graded 4/2/0)" under "Located · 4m": the same, naming the price it
+    // grades. It grades the row above only when that row is that price.
+    const pricedLadder = line.match(/^\((\d+)\s*(?:marks?|m)\s+graded\s+(\d+(?:\/\d+)+)\)$/i);
+    if (pricedLadder && above?.price.kind === 'row' && above.price.marks === Number(pricedLadder[1])) {
+      const ladder = ladderOf(pricedLadder[2]);
+      if (ladder.at(-1) === above.price.marks) { above.price.steps = ladder.length > 1 ? ladder : undefined; return; }
     }
     const label = note ? null : line.match(CRITERION_PART);
     const part = label ? label[1].toLowerCase() : undefined;
@@ -1263,14 +1295,38 @@ export function geographyColumnLabels(criteria: readonly GeographyCriterionSourc
   return undefined;
 }
 
+/** A criterion's printed lines, as every reading takes them. */
+const criterionLines = (guidance: readonly string[]) =>
+  guidance.map(line => line.replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim()).filter(Boolean);
+
 /**
  * Cut one reviewed criterion into rows, or say why not. A criterion is
  * structured only when its rows reach `maxMarks` and claim exactly the marks
  * the ledger permits.
+ *
+ * Two readings are for lines printed for more than one criterion: a points
+ * table split over several criteria, and one line that prices several
+ * criteria at once. They are tried only where the criterion's own reading is
+ * refused, so they can never change a criterion that already reads, and they
+ * pass the same two gates.
  */
 export function tryParseGeographyCriterionAllocation(context: GeographyCriterionContext,
   criterion: GeographyCriterionSource): GeographyAllocationResult {
-  const lines = criterion.guidance.map(line => line.replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim()).filter(Boolean);
+  const lines = criterionLines(criterion.guidance);
+  const own = readCriterion(context, criterion, lines);
+  if (own.ok) return own;
+  const points = readPointRoutes(context, criterion, lines);
+  if (points) return points;
+  const shared = sharedLines(lines, context.share);
+  if (shared) {
+    const again = readCriterion(context, criterion, shared);
+    if (again.ok) return again;
+  }
+  return own;
+}
+
+function readCriterion(context: GeographyCriterionContext, criterion: GeographyCriterionSource,
+  lines: readonly string[]): GeographyAllocationResult {
   const finish = (allocation: GeographyAllocation): GeographyAllocationResult => {
     const problem = reconcileCriterion(allocation, criterion);
     return problem ? { ok: false, reason: problem } : { ok: true, allocation };
@@ -1373,6 +1429,195 @@ export function tryParseGeographyCriterionAllocation(context: GeographyCriterion
   const result = parseCriterionUnit(lines, criterion, context);
   if ('error' in result) return { ok: false, reason: result.error };
   return finish(withHeadings(result));
+}
+
+// ---------------------------------------------------------------------------
+// Lines printed for more than one criterion.
+
+/**
+ * 2010–2013 Higher options print one table for the whole 80 marks, one
+ * column per number of aspects the essay discusses:
+ *
+ *   Number of aspects:   3 (27 + 27 + 26)        (4 @ 20 marks each)
+ *   Identifying aspect:  4 marks                 4 marks
+ *   Discussion:          8 x SRPs          OR    6 x SRPs
+ *   Overall coherence:   7/6 marks graded        4 marks graded
+ *
+ * The question never says how many aspects it expects ("Select scheme
+ * according to number of aspects discussed"), and the review splits the rows
+ * over two criteria: identifying + coherence (32) and discussion (48). Each
+ * column is that many points at the prices its heading prints, so each
+ * criterion's rows repeat once per point, and a row priced "7/6" takes, point
+ * by point, what the heading leaves it: 27, 27, 26 is 7, 7 and 6.
+ */
+export interface GeographyPointRoutes {
+  /** The heading as printed ("Number of aspects") and the noun for one point. */
+  prompt: string;
+  unit: string;
+  /** The criterion whose lines print the heading: it owns the pick. */
+  owner: string;
+  /** The heading line as the criterion prints it. */
+  line: string;
+  /** One per column: its heading cell, and what each point is worth in all. */
+  columns: Array<{ label: string; points: number[] }>;
+}
+
+const POINTS_HEADING = /^(Number of ([a-z]+))\s*:?$/i;
+/** "3 (27 + 27 + 26)", "3 @ 27 + 27 + 26", "4 @ 20 marks each". */
+const POINTS_COLUMN = /^(\d+)\s*(?:\(\s*(\d+(?:\s*\+\s*\d+)+)\s*\)|@\s*(\d+(?:\s*\+\s*\d+)*)\s*(?:marks?)?(?:\s+each)?)$/i;
+
+function pointsColumn(cell: string): { label: string; points: number[] } | undefined {
+  // "(4 @ 20 marks each)": the brackets frame the whole cell.
+  const label = tidyCell(cell.replace(/^\((.*)\)$/, '$1'));
+  const match = label.match(POINTS_COLUMN);
+  if (!match) return undefined;
+  const count = Number(match[1]);
+  const prices = (match[2] ?? match[3]).split('+').map(value => Number(value.trim()));
+  const points = prices.length === 1 ? Array.from({ length: count }, () => prices[0]) : prices;
+  return count > 0 && points.length === count ? { label, points } : undefined;
+}
+
+/** The card's points table, where one of its criteria prints the heading. */
+export function geographyPointRoutes(criteria: ReadonlyArray<GeographyCriterionSource & { id: string }>): GeographyPointRoutes | undefined {
+  const words = normalise(criteria.flatMap(criterion => criterion.guidance).join(' '));
+  for (const criterion of criteria) {
+    for (const line of criterionLines(criterion.guidance)) {
+      const [head, ...cells] = line.split(CELL).map(cell => cell.trim()).filter(cell => !/^or$/i.test(cell));
+      const heading = head?.match(POINTS_HEADING);
+      if (!heading || cells.length < 2) continue;
+      const columns = cells.map(pointsColumn);
+      if (columns.some(column => !column)) continue;
+      // One point is the heading's noun, singular where the table prints it so
+      // ("Identifying aspect" under "Number of aspects").
+      const plural = heading[2];
+      const single = plural.replace(/s$/i, '');
+      const unit = single !== plural && words.replace(normalise(heading[1]), '').includes(normalise(single)) ? single : plural;
+      return { prompt: heading[1], unit, owner: criterion.id, line, columns: columns as Array<{ label: string; points: number[] }> };
+    }
+  }
+  return undefined;
+}
+
+/** One cell of a points table row: a price, a graded price, or a count of SRPs. */
+const POINTS_PRICE = /^(\d+(?:\/\d+)*)\s*(?:marks?|m)(\s+graded)?$/i;
+const POINTS_SRP = /^(\d+)\s*x\s*SRP'?s?$/i;
+
+function readPointRoutes(context: GeographyCriterionContext, criterion: GeographyCriterionSource,
+  lines: readonly string[]): GeographyAllocationResult | undefined {
+  const routes = context.pointRoutes;
+  if (!routes) return undefined;
+  const width = routes.columns.length;
+  const owns = lines.includes(routes.line);
+  // Every other line is "Label: · price · [OR ·] price", one price per column.
+  const table: Array<{ label: string; cells: string[] }> = [];
+  for (const line of lines) {
+    if (line === routes.line) continue;
+    const [label, ...cells] = line.split(CELL).map(cell => cell.trim()).filter(cell => !/^or$/i.test(cell));
+    if (cells.length !== width || !label || /\d/.test(label)) return undefined;
+    table.push({ label: tidyCell(label), cells });
+  }
+  if (!table.length) return undefined;
+
+  const srpMarks = GEOGRAPHY_SRP_MARKS[context.level];
+  const options: GeographyChoiceOption[] = [];
+  for (const [column, { label: optionLabel, points }] of routes.columns.entries()) {
+    const rows: GeographyAnswerRow[] = [];
+    const srp: GeographySrpAllocation[] = [];
+    for (const { label, cells } of table) {
+      const cell = cells[column];
+      const count = cell.match(POINTS_SRP);
+      if (count) {
+        srp.push({ id: `s${srp.length + 1}`, label, count: Number(count[1]), marks: srpMarks });
+        continue;
+      }
+      const price = cell.match(POINTS_PRICE);
+      if (!price) return { ok: false, reason: `a points-table cell with no price: ${cell}` };
+      const alternatives = price[1].split('/').map(Number);
+      const row: GeographyAnswerRow = { id: `r${rows.length + 1}`, text: label, marks: Math.max(...alternatives) };
+      if (price[2] && row.marks > 1) row.steps = upTo(row.marks);
+      if (alternatives.length > 1) {
+        // "7/6": each point takes what the heading leaves it, which must be
+        // one of the printed values.
+        const top = Math.max(...points);
+        const own = points.map(point => row.marks - (top - point));
+        if (own.some(mark => !alternatives.includes(mark))) {
+          return { ok: false, reason: `"${cell}" does not fit the points ${points.join(' + ')}` };
+        }
+        if (own.some(mark => mark !== row.marks)) row.unitMarks = own;
+      }
+      if (isTariff(label)) row.tariffOnly = true;
+      rows.push(row);
+    }
+    // What this criterion awards for each point; `repeat.marks` is the most.
+    const perPoint = points.map((_, index) => rows.reduce((sum, row) => sum + geographyRowInUnit(row, index + 1).marks, 0)
+      + srp.reduce((sum, part) => sum + part.count * part.marks, 0));
+    const allocation: GeographyAllocation = {
+      groups: [{ rows, srp, repeat: { count: points.length, unit: routes.unit, marks: Math.max(...perPoint) } }],
+      directions: [],
+    };
+    // Every column, not only the largest, must reach the criterion's maximum.
+    const max = geographyAllocationMax(allocation);
+    if (max !== criterion.maxMarks) return { ok: false, reason: `column ${column + 1} adds to ${max}, criterion is ${criterion.maxMarks}` };
+    options.push({ id: `o${column + 1}`, label: optionLabel, allocation });
+  }
+  const allocation: GeographyAllocation = {
+    groups: [],
+    directions: [],
+    choice: { kind: 'route', prompt: routes.prompt, options, ...(owns ? {} : { follows: routes.owner }) },
+  };
+  const problem = reconcileCriterion(allocation, criterion);
+  return problem ? { ok: false, reason: problem } : { ok: true, allocation };
+}
+
+/**
+ * The criteria of one points table, point by point: what each criterion's
+ * rows award for a point must add up to what the heading prints for it
+ * (27 = identifying 4 + coherence 7 + discussion 8 SRPs at 2). A table whose
+ * criteria do not add up is not structured at all. Returns the problem, or
+ * undefined.
+ */
+export function geographyPointsProblem(routes: GeographyPointRoutes,
+  criteria: ReadonlyArray<{ id: string; allocation?: GeographyAllocation }>): string | undefined {
+  const table = criteria.filter(criterion => criterion.id === routes.owner || criterion.allocation?.choice?.follows === routes.owner);
+  for (const [column, { points }] of routes.columns.entries()) {
+    const sums = points.map(() => 0);
+    for (const criterion of table) {
+      const option = criterion.allocation?.choice?.options[column];
+      const group = option?.allocation?.groups[0];
+      if (!group || option.allocation!.groups.length !== 1 || group.repeat?.count !== points.length) {
+        return `${criterion.id} does not read the table's column ${column + 1}`;
+      }
+      points.forEach((_, index) => {
+        sums[index] += group.rows.reduce((sum, row) => sum + geographyRowInUnit(row, index + 1).marks, 0)
+          + group.srp.reduce((sum, srp) => sum + srp.count * srp.marks, 0);
+      });
+    }
+    if (sums.some((sum, index) => sum !== points[index])) {
+      return `column ${column + 1} awards ${sums.join(' + ')} where the heading prints ${points.join(' + ')}`;
+    }
+  }
+  return undefined;
+}
+
+/**
+ * "Named · 4m + 3m + 3m" printed once for three criteria (2016 Ordinary Q12C:
+ * Pattern 1, 2 and 3): the review gave each criterion the same lines, and
+ * each takes its own addend, in order. The lines come back with every such
+ * sum cut to that one addend ("Named · 3m" for Pattern 2), or undefined
+ * where no line prices the criteria that way.
+ */
+function sharedLines(lines: readonly string[], share: GeographyCriterionContext['share']): string[] | undefined {
+  if (!share || share.count < 2) return undefined;
+  const SUM = /^(?:\d+\s*(?:marks?|m)\s*\+\s*)+\d+\s*(?:marks?|m)$/i;
+  let cut = false;
+  const out = lines.map(line => line.split(CELL).map(cell => {
+    if (!SUM.test(cell)) return cell;
+    const addends = cell.split('+').map(addend => addend.trim());
+    if (addends.length !== share.count) return cell;
+    cut = true;
+    return addends[share.index];
+  }).join(CELL));
+  return cut ? out : undefined;
 }
 
 export const parseGeographyCriterionAllocation = (context: GeographyCriterionContext,
