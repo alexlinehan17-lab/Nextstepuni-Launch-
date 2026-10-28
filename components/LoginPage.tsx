@@ -370,8 +370,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       if (usernameInput && kind === 'invalid-email') kind = 'credentials';
       reportSignInFailure(kind, usernameInput ? 'username' : 'email');
       if (kind === 'too-many-requests') {
-        setPauseNow(Date.now());
-        setSignInPausedUntil(Date.now() + SIGN_IN_LOCKOUT_MS);
+        // One reading of the clock for both: two readings a millisecond apart
+        // round the first countdown up to 61s.
+        const now = Date.now();
+        setPauseNow(now);
+        setSignInPausedUntil(now + SIGN_IN_LOCKOUT_MS);
       }
       const message = signInFailureMessage(kind);
       if (kind === 'invalid-email' && message) rejectField('login-email', message);
