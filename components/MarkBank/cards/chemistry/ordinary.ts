@@ -1350,13 +1350,13 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "known concentration", marks: 5, openList: true },
     ],
-    figure: {
-          "candId": "chemistry-2023-OL-paper-p03-i0",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p03-i0.png",
-          "srcHash": "9637e81af842b02fcb137240e49f337c",
-          "alt": "Three separate pieces of titration glassware drawn side by side with no connections between them, set among the question text. Left: a conical (Erlenmeyer) flask with a narrow neck, captioned \"conical flask\". Middle: a plastic wash bottle — a cylindrical bottle with a ribbed screw cap, an internal dip tube, and a bent delivery spout rising from the cap and angling down to the right — labelled \"A\". Right: a very long thin pipette standing vertically, with a swollen bulb part-way down its stem, a graduation mark above the bulb, and a drawn-out pointed tip at the bottom — labelled \"B\". Above the drawings are the last three lines of the question stem, ending \"Some pieces of apparatus used to carry out the titration are shown below.\" Below them are part (a) about the underlined term \"standard solution\" (5) and part (b)(i) \"Identify the pieces of apparatus A and B above.\"",
-          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q2a-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q2a-print.png",
+          "srcHash": "9df6029eca581b1d483cb501356fa3e3",
+          "alt": "The paper's own print of 2023 OL Q2(a): \"2. A student titrated 25.0 cm³ portions of a 0.05 M solution of sodium carbonate (Na₂CO₃) with a solution of hydrochloric acid (HCl) of unknown concentration. A burette was used to add the HCl to the Na₂CO₃ solution in a conical flask until an indicator showed that the end point had been reached. This procedure was repeated a number of times. Some pieces of apparatus used to carry out the titration are shown below.\"; below, three drawings side by side: a flask with a wide base and a narrow neck, captioned \"conical flask\"; a bottle with a screw cap and a bent spout, labelled \"A\"; and, on the right, a long thin tube with a bulb part way down and a pointed tip, labelled \"B\", reaching down beside the next lines; then \"(a) The sodium carbonate solution is a standard solution.\" with the words \"standard solution\" underlined, and \"Explain the underlined term.\" (a)'s mark is whited out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -1542,6 +1542,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "heat (energy) released / negative ∆H", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q4h-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q4h-print.png",
+          "srcHash": "1c4ee7e5c6e73e3100da48019f82ab8e",
+          "alt": "The paper's own print of 2023 OL Q4(h): \"(h) Burning coal is an exothermic reaction.\" with the words \"exothermic reaction\" underlined, then \"Explain the underlined term.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1688,6 +1696,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "contain hydrogen (H)", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "and carbon (C) only", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q6a-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q6a-print.png",
+          "srcHash": "6c6cd9c1bbe5b6db9d686404d33de6df",
+          "alt": "The paper's own print of 2023 OL Q6(a)(i)–(iii): \"6. (a) Methane is a greenhouse gas. Its increasing concentration in the atmosphere is a concern. Satellites showed that considerable quantities of methane were leaked into the atmosphere at oil and gas fields and from gas pipelines all over the world in 2022.\"; then \"(i) Identify a significant source of methane not associated with the oil and gas industry.\" with \"not\" in bold, \"(ii) Write the chemical formula for methane.\" and \"(iii) Methane is a hydrocarbon. Explain the underlined term.\" with the word \"hydrocarbon\" underlined. (a)'s mark is whited out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2146,6 +2162,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "concentrations of reactants and products", marks: 2, contextNote: "Or instead, this point and the next (2 × 2), one each.", openList: true, route: "b" },
     { id: "r-5", kind: "point", verbatim: "are constant", marks: 2, openList: true, route: "b" },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q11b-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q11b-i-print.png",
+          "srcHash": "7eee65dfd6942f946d91c9d1671a3031",
+          "alt": "The paper's own print of 2023 OL Q11(b)(i): \"(b) The Haber process for manufacturing ammonia involves a reversible reaction between nitrogen and hydrogen, establishing a chemical equilibrium according to the following balanced equation.\" with the words \"reversible reaction\" and \"chemical equilibrium\" underlined, then the equation \"N₂ (g) + 3H₂ (g) ⇌ 2NH₃ (g)\" in bold with its state symbols small and in italics, then \"(i) Explain the underlined terms.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2254,6 +2278,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "addition to (presence in) to atmosphere (air) of toxins (contaminants, harmful substances) or addition to (presence in) atmosphere (air) of substances that cannot be removed (broken down) easily", marks: 3, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q11d-a-vi-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q11d-a-vi-print.png",
+          "srcHash": "e18eff9d26b5419a33ad06303d43cbf5",
+          "alt": "The paper's own print of 2023 OL Q11(d)A(vi): the heading \"A\", then \"Oxygen is the most reactive gas in clean air. Nitrogen is one of the chemically inert gases in air. Industrially, oxygen and nitrogen are separated from one another and from the other gases by liquefaction of air followed by its fractional distillation.\", then \"(vi) Oxides of nitrogen can cause atmospheric pollution.\" with the words \"atmospheric pollution\" underlined, and \"Explain the underlined term.\" The asks (i) to (v), printed between them, are not in this picture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2615,6 +2647,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "chemically inactive / not reactive", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2025-OL-paper-q9c-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-q9c-i-print.png",
+          "srcHash": "50cf75c20323c7c7f3a1653330700e84",
+          "alt": "The paper's own print of 2025 OL Q9(c)(i): \"(c) Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.\" with the word \"inert\" underlined, then \"(i) What is meant by the underlined term?\" The apparatus printed beside the text is not in this picture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2025-OL-paper-q9c",
           "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-q9c.png",
@@ -2864,6 +2904,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "a solution of known concentration", marks: 5, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2025-OL-paper-q2a-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-q2a-print.png",
+          "srcHash": "998b50745f1495ea2a6e683cf1977eb6",
+          "alt": "The paper's own print of 2025 OL Q2(a): \"2. A student used a standard solution of sodium carbonate (Na₂CO₃) to find the concentration of a solution of hydrochloric acid (HCl) by titration.\"; \"The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm³ portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out.\"; then \"(a) The sodium carbonate solution used was a standard solution.\" with the words \"standard solution\" underlined in (a), and \"Explain the underlined term.\" The drawing of P beside the text, and (a)'s mark, are not in this picture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -3898,6 +3946,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "carbon-containing / natural", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2024-OL-paper-q10a-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q10a-i-print.png",
+          "srcHash": "f1545e56f72a7686d8923c5a34ffbc1b",
+          "alt": "The paper's own print of 2024 OL Q10(a)(i): \"(a) Multistriatin is an organic compound released by the female elm bark beetle when she has found a good source of food.\" with the word \"organic\" underlined, then \"(i) Explain the underlined term.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3957,6 +4013,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "time taken", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "for half a sample to decay / for activity to half", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2024-OL-paper-q10c-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q10c-i-print.png",
+          "srcHash": "70f9884a2cbea05553b37df68baf38e4",
+          "alt": "The paper's own print of 2024 OL Q10(c)(i): \"(c) In Ireland, high levels of radon–222 (²²²₈₆Rn) are found in areas such as Galway and Wicklow, which have a lot of granite rock.\", the symbol Rn in bold with 222 set above 86 at its left; \"Radon–222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle.\" with the word \"half-life\" underlined; then \"(i) Explain the underlined term.\" The map printed beside the part is not in this picture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4425,6 +4489,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "measure of (tendency of) a fuel to resist knocking (pinking, autoignition, pre-ignition) / indication of how well a fuel causes knocking (pinking, autoignition, pre-ignition)", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-OL-paper-q4h-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q4h-print.png",
+          "srcHash": "7a422378174362c5be2181436a3364d0",
+          "alt": "The paper's own print of 2022 OL Q4(h): \"(h) 2,2,4‐trimethylpentane has a higher octane number than heptane.\" with the words \"octane number\" underlined, then \"Explain the underlined term.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4606,6 +4678,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "contain hydrogen (H) and carbon (C) only", marks: 5, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-OL-paper-q6a-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q6a-print.png",
+          "srcHash": "ea654215bcd6f00625bd5e6665f113c7",
+          "alt": "The paper's own print of 2022 OL Q6(a): \"6. Consider the structural formulae of the five hydrocarbon compounds A to E in the table.\" with the word \"hydrocarbon\" underlined and the letters A and E in bold, then \"(a) Explain the underlined term.\" The table printed to the right, and (a)'s mark, are not in this picture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-OL-paper-q6-fig0",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q6-fig0.png",
@@ -4698,6 +4778,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "solvent / fuel / fuel additive / disinfectant / hand sanitiser / preservative / to make essences (flavourings, drugs, lacquers, polishes, polymers) / chemical industry, etc", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "2", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-OL-paper-q8a-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q8a-print.png",
+          "srcHash": "3f64bff7d3f9259ac93d9637a4725bd0",
+          "alt": "The paper's own print of 2022 OL Q8(a)(i)–(iii): \"8. Study the reaction scheme below and answer the questions that follow.\"; then \"(a) Reaction W is a fermentation process used to make the ethanol in alcoholic drinks.\", \"(i) Fermentation of glucose to ethanol involves the enzyme zymase contained in yeast.\" with the word \"enzyme\" underlined, \"Explain the underlined term.\", \"(ii) Give a major use for ethanol, other than in alcoholic beverages.\" and \"(iii) When one glucose (C₆H₁₂O₆) molecule is fermented by the action of zymase, it is broken down into two ethanol (C₂H₅OH) molecules and a number of CO₂ molecules. How many carbon atoms from one glucose molecule end up forming CO₂?\", with W, the formulae and \"two\" in bold. The reaction scheme printed between the first line and (a) is not in this picture, and (a)'s mark is whited out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2022-OL-paper-q8-fig0",
           "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q8-fig0.png",
@@ -4798,6 +4886,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "state where concentrations of reactants and products", marks: 3, contextNote: "Or instead, this point and the next (2 × 3), one each.", openList: true, route: "b" },
     { id: "r-4", kind: "point", verbatim: "are constant", marks: 3, openList: true, route: "b" },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-OL-paper-q10b-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q10b-i-print.png",
+          "srcHash": "9e3bada2ecf89de285c666590720b52e",
+          "alt": "The paper's own print of 2022 OL Q10(b)(i): \"(b) The colourless gas N₂O₄ decomposes into the brown gas NO₂ and the following chemical equilibrium is established at room temperature.\" with the words \"chemical equilibrium\" underlined, then the equation \"N₂O₄ (g) ⇌ 2NO₂ (g)\" in bold with its state symbols small and in italics, then \"(i) Explain the underlined term.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6229,6 +6325,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "brown (red, orange, yellow) colour", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "disappears (decolourises, fades)", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-OL-paper-q1c-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q1c-print.png",
+          "srcHash": "a19445de8b53e74bebc7f06c2e5ae900",
+          "alt": "The paper's own print of 2023 OL Q1(c)(i)–(iii): \"1. The apparatus shown in the diagram below can be used to make and collect the hydrocarbon gas ethyne (C₂H₂) in the school laboratory.\"; then \"(c) Ethyne is an unsaturated hydrocarbon.\" with the word \"unsaturated\" underlined, \"(i) Draw the structure of the ethyne (C₂H₂) molecule showing all of its atoms and all of its bonds.\", \"(ii) Explain the underlined term.\" and \"(iii) What colour change is observed when bromine solution is added to a test-tube of ethyne in a test for unsaturation?\" The diagram and parts (a) and (b), printed between them, are not in this picture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+    },
     figure: {
           "candId": "chemistry-2023-OL-paper-p02-i0",
           "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-p02-i0.png",

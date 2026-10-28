@@ -111,12 +111,19 @@ C.ordered([k('1', 'a', 'i'), k('1', 'a', 'ii')], None, None, cid='q1-a-fig', fig
 C.ordered([k('1', 'b', 'i'), k('1', 'b', 'ii')], None, None, cid='q1-b', figure=Q1)
 C.ordered([k('1', 'c', 'i'), k('1', 'c', 'ii'), k('1', 'c', 'iii')], 'chem-2-4',
           'ethyne-structure-unsaturation-and-bromine-test', cid='q1-c-i', figure=Q1)
+# Q1(c)(ii), Q2(a), Q4(h), Q6(a)(iii), Q11(b)(i) and Q11(d)A(vi) ask about a term the paper
+# underlines, which no text layer carries: the paper's own print of the part is the question (the
+# marks printed beside the asks are left out). Q1's apparatus stays the card's figure, shown below.
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q1c-print'
 C.ordered([k('1', 'd', 'i'), k('1', 'd', 'ii'), k('1', 'd', 'iii')], 'chem-u2',
           'combustion-test-and-use-of-ethyne', cid='q1-d-i-ii', figure=Q1)
 
 # ── Q2 Titrating sodium carbonate with hydrochloric acid ─────────────────────
 Q2 = FIG + 'paper-p03-i0'
-C.fixed([k('2', 'a')], None, None, figure=Q2)
+# Q2(a)'s print is the question's opening paragraph with the apparatus it says is "shown below", then
+# (a): it holds the apparatus, so it is the card's only figure.
+C.fixed([k('2', 'a')], None, None)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q2a-print'
 C.fixed([k('2', 'b', 'i')], None, None, cid='q2-b-i-fig', figure=Q2)
 C.fixed([k('2', 'b', 'ii')], None, None, cid='q2-b-ii-fig', figure=Q2)
 C.fixed([k('2', 'b', 'iii')], None, None, cid='q2-b-iii-fig', figure=Q2)
@@ -161,6 +168,8 @@ for letter in ('c', 'd', 'e'):
 C.route([k('4', 'f')], None, None, figure=S + 'q4f', notes=Q4_NOTE)
 for letter in ('g', 'h', 'i'):
     C.fixed([k('4', letter)], None, None, notes=Q4_NOTE)
+    if letter == 'h':
+        C.cards[-1]['questionFigureKey'] = FIG + 'paper-q4h-print'
 C.route([k('4', 'j')], None, None, figure=S + 'q4j', notes=Q4_NOTE,
         fixes={'% Ti = 48 80 × 100 = 60%': '% Ti = 48 ÷ 80 × 100 = 60%'},
         row_notes={1: FRACTION.format('48', '80')})
@@ -188,6 +197,7 @@ C.ordered([k('5', 'c', 'i'), k('5', 'c', 'ii')], None, None, cid='q5-c', figure=
 # ── Q6 Methane and natural gas ───────────────────────────────────────────────
 C.ordered([k('6', 'a', 'i'), k('6', 'a', 'ii'), k('6', 'a', 'iii')], 'chem-4-3',
           'methane-sources-formula-and-hydrocarbons', cid='q6-a-i')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q6a-print'
 C.ordered([k('6', 'b', r) for r in ('i', 'ii', 'iii', 'iv')], None, None, cid='q6-b')
 C.fixed([k('6', 'b', 'v')], None, None)
 C.ordered([k('6', 'c', 'i'), k('6', 'c', 'ii')], 'chem-2-4', 'aromatic-and-aliphatic-compounds',
@@ -311,6 +321,7 @@ C.add([k('11', 'b', 'i')], None, None, [
     routed(C.lifted('r-4', 'concentrations of reactants and products', 2,
                     'Or instead, this point and the next (2 × 2), one each.'), 'b'),
     routed(C.lifted('r-5', 'are constant', 2), 'b')], total=7, stem=Q11B)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11b-i-print'
 C.drawn([k('11', 'b', 'ii')], None, None, S + 'q11b-ii', stem=Q11B)
 C.fixed([k('11', 'b', 'iii')], None, None, stem=Q11B)
 C.fixed([k('11', 'b', 'iv')], 'chem-3-3', 'why-the-haber-process-avoids-very-high-pressure',
@@ -324,6 +335,7 @@ C.fixed([ka('11', 'd', 'iii', 'A')], None, None)
 C.fixed([ka('11', 'd', 'iv', 'A')], 'chem-4-3', 'abundance-of-nitrogen-in-air', cid='q11-d-a-iv-v')
 C.fixed([ka('11', 'd', 'v', 'A')], 'chem-4-3', 'nitrogen-fixation')
 C.fixed([ka('11', 'd', 'vi', 'A')], None, None)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11d-a-vi-print'
 C.menu([ka('11', 'd', 'i', 'B')], None, None)
 C.fixed([ka('11', 'd', 'ii', 'B')], 'chem-3-5', 'corrosion-of-metals', cid='q11-d-b-ii-iii')
 C.fixed([ka('11', 'd', 'iii', 'B')], 'chem-3-5', 'why-iron-corrodes-more-easily')

@@ -167,13 +167,13 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "using electricity", marks: 2, contextNote: "The scheme prices these points [2 × 2], one each.", openList: true },
     { id: "r-2", kind: "point", verbatim: "to break down a chemical (substance) / to cause a chemical reaction", marks: 2, openList: true },
     ],
-    figure: {
-          "candId": "chemistry-2021-HL-paper-p14-i1",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p14-i1.png",
-          "srcHash": "03d947641cead977883ddf54c0ae5713",
-          "alt": "Left: the stem of Q11(d) part B — \"Strongly electropositive metals, e.g. aluminium and sodium, are extracted from their ores by electrolysis. Chemical methods can be used to extract other metals, e.g. iron and zinc from their ores. Occasionally nuggets of metallic elements are found free in nature. The photograph shows a large piece of elemental copper found in Michigan, U.S.A. It was torn away from a vein of copper by a moving glacier during the ice age.\" with \"electrolysis\" underlined, followed by \"(i) Explain the underlined term.\" Right: a black-and-white landscape photograph of a very large, irregular, pale boulder-like mass of native copper lying on mown grass, with bare woodland and tree trunks behind it. Its surface is rough and lumpy, creased with dark pits and folds. No scale bar, label or lettering appears on the photograph. Along the very top edge only the bottom sliver of a bold capital \"B\" — the part heading — is visible.",
-          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+    questionFigure: {
+          "candId": "chemistry-2021-HL-paper-q11d-b-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-q11d-b-i-print.png",
+          "srcHash": "a43445326bbbeb8a11ebaf2e4b7ca29c",
+          "alt": "The paper's own print of 2021 HL Q11(d)B(i): the heading \"B\", then \"Strongly electropositive metals, e.g. aluminium and sodium, are extracted from their ores by electrolysis. Chemical methods can be used to extract other metals, e.g. iron and zinc from their ores. Occasionally nuggets of metallic elements are found free in nature. The photograph shows a large piece of elemental copper found in Michigan, U.S.A. It was torn away from a vein of copper by a moving glacier during the ice age.\" with the word \"electrolysis\" underlined; on the right, a black-and-white photograph of a very large, irregular, pale lump of copper lying on grass with bare woodland behind it; then \"(i) Explain the underlined term.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -1623,13 +1623,13 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "amount of (measure of, number of ppm, number of moles, number of grams, concentration, molarity) dissolved oxygen consumed by biochemical (biological, chemical) process", marks: 3, contextNote: "The scheme prices these points [2 × 3], one each.", openList: true },
     { id: "r-2", kind: "point", verbatim: "in a water sample over five days in the dark at 20 ⁰C", marks: 3, contextNote: "The scheme adds: [Allow 20 ± 1 ⁰C ]", openList: true },
     ],
-    figure: {
-          "candId": "chemistry-2021-HL-paper-p12-i0",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p12-i0.png",
-          "srcHash": "cb5aecf80d6515aa6631b4e6037289b5",
-          "alt": "Left: question text — \"(b) Pig slurry has a very high biochemical oxygen demand (BOD) and therefore effluent from pig farming must be very carefully managed. Spreading it on the ground as a fertilizer is one option for disposing of pig slurry and transfer to a treatment works is another.\" with \"biochemical oxygen demand\" underlined; then \"(i) Explain the underlined term.\" and \"(ii) Why is the run-off from pig slurry fertilizer, or the addition of any other solution with a high BOD, into waterways undesirable?\" Right: a square black-and-white photograph of two young pigs lying side by side with their snouts and forelegs resting over the top of a horizontal wooden board, dark vertical planking forming the background. The photograph carries no labels, letters or arrows.",
-          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+    questionFigure: {
+          "candId": "chemistry-2021-HL-paper-q11b-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-q11b-i-print.png",
+          "srcHash": "85b5a6347e5049a797c21a12c52df476",
+          "alt": "The paper's own print of 2021 HL Q11(b)(i): \"(b) Pig slurry has a very high biochemical oxygen demand (BOD) and therefore effluent from pig farming must be very carefully managed. Spreading it on the ground as a fertilizer is one option for disposing of pig slurry and transfer to a treatment works is another.\" with the words \"biochemical oxygen demand\" underlined, then \"(i) Explain the underlined term.\"; on the right, a square black-and-white photograph of two young pigs resting their snouts and forelegs over a horizontal wooden board. Part (ii), printed beside the photograph's lower half, is whited out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -4328,6 +4328,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "catalyst in a different phase from reactants and products / boundary between catalyst and reactants", marks: 3, contextNote: "The scheme adds: [State for phase unacceptable.]", openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-HL-paper-q11c-v-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q11c-v-print.png",
+          "srcHash": "d5b44e46a1b40bbd8717d4883c0f8f90",
+          "alt": "The paper's own print of 2022 HL Q11(c)(v): \"The reaction between pure hydrogen and oxygen gases, mixed in the ratio 2:1 by volume and forming water, is very slow at room temperature but is violently rapid when a little powdered platinum catalyst is added. This is an example of heterogeneous catalysis.\" with the words \"heterogeneous catalysis\" underlined, then \"(v) Explain the underlined term.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4357,6 +4365,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "break-up (splitting up, decomposing)", marks: 4, contextNote: "The scheme prices these points [2 × 4], one each.", openList: true },
     { id: "r-2", kind: "point", verbatim: "using light (uv, electromagnetic radiation)", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2022-HL-paper-q11d-a-i-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q11d-a-i-print.png",
+          "srcHash": "18f3d53869bf28571d209b656473116b",
+          "alt": "The paper's own print of 2022 HL Q11(d)A(i): the heading \"A\", then \"Ozone is formed and broken down by photodissociation in the stratosphere. Chlorofluorocarbons (CFCs) in the atmosphere were identified as a major contributor to damage to the ozone layer and their phasing out was agreed internationally in the Montreal Protocol (1987).\" with the word \"photodissociation\" underlined, then \"(i) Explain the underlined term.\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12899,6 +12915,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "absorbs (retains) heat energy (infrared radiation) in Earth’s atmosphere / contributes to global warming (climate change)", marks: 5, openList: true },
     ],
+    questionFigure: {
+          "candId": "chemistry-2023-HL-paper-q11d-a-v-print",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-q11d-a-v-print.png",
+          "srcHash": "ec9a6f9e5a7c36fe2734b40a92fc0999",
+          "alt": "The paper's own print of 2023 HL Q11(d)A(v): the heading \"A\" beside \"In Ireland atmospheric NO₂ concentrations peak daily at about 10 a.m. and again at about 7 p.m. and total monthly emissions in the summer months are lower than in the winter months.\", then \"(v) Neither NO nor NO₂ is a significant greenhouse gas although N₂O is.\" with the words \"greenhouse gas\" underlined and the formulae in bold, then \"Explain the underlined term.\" The asks (i) to (iv), printed between them, are not in this picture.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

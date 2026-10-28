@@ -271,7 +271,6 @@
   "questionRef": "2021 HL Q11(d)B(i)",
   "questionText": "Explain the underlined term.",
   "stem": "Strongly electropositive metals, e.g. aluminium and sodium, are extracted from their ores by electrolysis. Chemical methods can be used to extract other metals, e.g. iron and zinc from their ores. Occasionally nuggets of metallic elements are found free in nature. The photograph shows a large piece of elemental copper found in Michigan, U.S.A. It was torn away from a vein of copper by a moving glacier during the ice age.",
-  "figureKey": "chemistry-2021-HL-paper-p14-i1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -293,7 +292,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2021-HL-paper-q11d-b-i-print"
  },
  {
   "id": "chem-2021-hl-q11-d-b-ii",
@@ -3624,7 +3624,6 @@
   "questionRef": "2021 HL Q11(b)(i)",
   "questionText": "Explain the underlined term.",
   "stem": "Pig slurry has a very high biochemical oxygen demand (BOD) and therefore effluent from pig farming must be very carefully managed. Spreading it on the ground as a fertilizer is one option for disposing of pig slurry and transfer to a treatment works is another.",
-  "figureKey": "chemistry-2021-HL-paper-p12-i0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -3646,7 +3645,8 @@
     "openList": true,
     "contextNote": "The scheme adds: [Allow 20 ± 1 ⁰C ]"
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2021-HL-paper-q11b-i-print"
  },
  {
   "id": "chem-2021-hl-q11-b-ii",
@@ -9951,7 +9951,6 @@
   "questionRef": "2023 OL Q2(a)",
   "questionText": "The sodium carbonate solution is a standard solution. Explain the underlined term.",
   "stem": "A student titrated 25.0 cm³ portions of a 0.05 M solution of sodium carbonate (Na₂CO₃) with a solution of hydrochloric acid (HCl) of unknown concentration. A burette was used to add the HCl to the Na₂CO₃ solution in a conical flask until an indicator showed that the end point had been reached. This procedure was repeated a number of times. Some pieces of apparatus used to carry out the titration are shown below.",
-  "figureKey": "chemistry-2023-OL-paper-p03-i0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9965,7 +9964,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2023-OL-paper-q2a-print"
  },
  {
   "id": "chem-2023-ol-q2-b-iv",
@@ -10367,7 +10367,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\"",
+  "questionFigureKey": "chemistry-2023-OL-paper-q4h-print"
  },
  {
   "id": "chem-2023-ol-q4-i",
@@ -10712,7 +10713,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme prices these points together as [6 + 4 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
+  "notes": "The scheme prices these points together as [6 + 4 + 2 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2023-OL-paper-q6a-print"
  },
  {
   "id": "chem-2023-ol-q6-a-ii-iii",
@@ -12400,7 +12402,8 @@
     "contextNote": "",
     "route": "b"
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2023-OL-paper-q11b-i-print"
  },
  {
   "id": "chem-2023-ol-q11-b-ii",
@@ -12592,7 +12595,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2023-OL-paper-q11d-a-vi-print"
  },
  {
   "id": "chem-2023-ol-q11-d-b-i",
@@ -12801,7 +12805,8 @@
     "openList": true,
     "contextNote": "The scheme adds: [State for phase unacceptable.]"
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2022-HL-paper-q11c-v-print"
  },
  {
   "id": "chem-2022-hl-q11-c-vi",
@@ -12874,7 +12879,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2022-HL-paper-q11d-a-i-print"
  },
  {
   "id": "chem-2022-hl-q11-d-a-iv-v",
@@ -19516,7 +19522,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2025-OL-paper-q9c-i-print"
  },
  {
   "id": "chem-2025-ol-q9-c-iv-v",
@@ -20163,7 +20170,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2025-OL-paper-q2a-print"
  },
  {
   "id": "chem-2025-ol-q2-b",
@@ -23156,7 +23164,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2024-OL-paper-q10a-i-print"
  },
  {
   "id": "chem-2024-ol-q10-a-iv",
@@ -23290,7 +23299,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2024-OL-paper-q10c-i-print"
  },
  {
   "id": "chem-2024-ol-q10-c-ii-iv",
@@ -24362,7 +24372,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\"",
+  "questionFigureKey": "chemistry-2022-OL-paper-q4h-print"
  },
  {
   "id": "chem-2022-ol-q4-i",
@@ -24694,7 +24705,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2022-OL-paper-q6a-print"
  },
  {
   "id": "chem-2022-ol-q6-e",
@@ -24893,7 +24905,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme prices these points together as [9 + 4 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
+  "notes": "The scheme prices these points together as [9 + 4 + 2 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2022-OL-paper-q8a-print"
  },
  {
   "id": "chem-2022-ol-q9-b",
@@ -25139,7 +25152,8 @@
     "contextNote": "",
     "route": "b"
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2022-OL-paper-q10b-i-print"
  },
  {
   "id": "chem-2022-ol-q10-b-ii",
@@ -28908,7 +28922,8 @@
     "contextNote": ""
    }
   ],
-  "notes": "The scheme prices these points together as [6 + 6 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
+  "notes": "The scheme prices these points together as [6 + 6 + 3 + 3] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2023-OL-paper-q1c-print"
  },
  {
   "id": "chem-2023-ol-q2-d-ii",
@@ -41501,7 +41516,8 @@
     "openList": true,
     "contextNote": ""
    }
-  ]
+  ],
+  "questionFigureKey": "chemistry-2023-HL-paper-q11d-a-v-print"
  },
  {
   "id": "chem-2023-hl-q11-d-b-iii",

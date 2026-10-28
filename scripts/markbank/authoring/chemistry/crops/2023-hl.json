@@ -35,5 +35,6 @@
  ["paper-q3d-i-print", "paper-panels", 4, [[52, 52, 548, 526], [52, 532, 548, 568]]],
  ["paper-q3d-ii-print", "paper-panels", 4, [[52, 52, 548, 526], [52, 532, 548, 550], [52, 567, 548, 614]]],
  ["paper-q3d-iii-print", "paper-panels", 4, [[52, 52, 548, 526], [52, 532, 548, 550], [52, 615, 548, 648]]],
- ["paper-q4k-print", "paper-panels", 5, [[108, 511, 520, 651]]]
+ ["paper-q4k-print", "paper-panels", 5, [[108, 511, 520, 651]]],
+ ["paper-q11d-a-v-print", "paper-panels", 14, [[80, 91, 545, 139], [80, 314, 515, 350]]]
 ]

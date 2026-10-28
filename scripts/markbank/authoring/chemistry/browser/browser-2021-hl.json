@@ -13,6 +13,6 @@
  {"id": "chem-2021-hl-q10-b-ii", "ask": "", "answer": "appropriate correct numeric scales on both axes", "figure": true, "solution": true},
  {"id": "chem-2021-hl-q10-c-i", "ask": "Find the mass of silver in the alloy.", "answer": "76.20 – 7.62 = 68.58 g Ag", "solution": true},
  {"id": "chem-2021-hl-q11-a-iii", "ask": "Draw the structure of an organic product", "answer": "CH₂BrCH₂Br / BrCH₂CH₂Br", "solution": true},
- {"id": "chem-2021-hl-q11-b-i", "ask": "Explain the underlined term.", "answer": "in a water sample over five days", "figure": true},
+ {"id": "chem-2021-hl-q11-b-i", "ask": "", "answer": "in a water sample over five days", "figure": true, "figureSrc": "chemistry-2021-HL-paper-q11b-i-print"},
  {"id": "chem-2021-hl-q11-d-b-iii", "ask": "graphite electrodes", "answer": "Al³⁺ + 3e⁻ → Al", "figure": true}
 ]

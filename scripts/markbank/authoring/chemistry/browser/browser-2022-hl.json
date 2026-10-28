@@ -12,5 +12,6 @@
  {"id": "chem-2022-hl-q10-a-i-ii", "ask": "What is meant by the term ideal gas?", "answer": "obeys kinetic theory assumptions perfectly"},
  {"id": "chem-2022-hl-q10-c-iv", "ask": "what is the empirical formula of X", "answer": "Divide C : H : N : O : S ratio", "solution": true},
  {"id": "chem-2022-hl-q11-c-iii", "ask": "By how much does catalyst C lower the value of Ea", "answer": "40 kJ mol⁻¹", "figure": true},
- {"id": "chem-2022-hl-q11-d-b-v-vi", "ask": "Write balanced half‐equations for the reactions", "answer": "Pb²⁺ + 2e⁻ → Pb", "figure": true}
+ {"id": "chem-2022-hl-q11-d-b-v-vi", "ask": "Write balanced half‐equations for the reactions", "answer": "Pb²⁺ + 2e⁻ → Pb", "figure": true},
+ {"id": "chem-2022-hl-q11-c-v", "ask": "", "answer": "catalyst in a different phase from reactants and products", "figure": true, "figureSrc": "chemistry-2022-HL-paper-q11c-v-print"}
 ]
