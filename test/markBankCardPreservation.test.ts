@@ -1796,9 +1796,16 @@ describe('Mark Bank card preservation', () => {
     const chemistryAuditAliases = chemistryWithdrawn.map(([id]) => id)
       .filter(id => !['chem-2023-ol-q10-a-iii-iv-fig', 'chem-2023-ol-q6-b-i-iv'].includes(id));
     expect(chemistryWithdrawn).toHaveLength(54);
+    // ...and the Physics review's withdrawals (phys- keys), each a shipped id
+    // whose printed task is now one card, aliased onto that card. Counted from
+    // the review audit, so a withdrawal without its alias (or the reverse) fails.
+    const physicsWithdrawn = Object.values(
+      (physicsReview as unknown as { sittings: Record<string, { review?: { withdrawn?: Record<string, unknown> } }> })
+        .sittings).flatMap(sitting => Object.keys(sitting.review?.withdrawn ?? {}));
+    expect(new Set(physicsAliasIds)).toEqual(new Set(physicsWithdrawn));
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length);
+      + chemistryAuditAliases.length + physicsAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1929,11 +1936,11 @@ describe('Mark Bank card preservation', () => {
     expect(PHYS_ORDINARY.every(card => card.id.startsWith(`phys-${card.year}-ol-`))).toBe(true);
     for (const id of physicsAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     // The live decks, pinned whole (re-pinned as each reviewed sitting is written).
-    expect(PHYS_HIGHER).toHaveLength(706);
-    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('e9954ad6f6c8be34a020b4e64eae6064686e0489b8556ac2d22ccb027f3d1915');
+    expect(PHYS_HIGHER).toHaveLength(725);
+    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('b854b0289ad2f90ebda4407fecbb1fa9c156ce3b16689dfe8ac56029522de162');
     expect(PHYS_ORDINARY).toHaveLength(688);
     expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('3e8ebd130f03523a00071b2ae01c194ac4d890f8227c25b79e4a0525a80a219c');
-    expect(physicsAdditionIds.size).toBe(706 + 688 - 570 - 563 + physicsAliasIds.length);
+    expect(physicsAdditionIds.size).toBe(725 + 688 - 570 - 563 + physicsAliasIds.length);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

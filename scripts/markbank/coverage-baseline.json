@@ -618,19 +618,19 @@
     "refsHash": "95be090e951fe8e2"
   },
   "physics": {
-    "cards": 1394,
-    "contentHash": "5e66eddca29bad16",
-    "coveragePct": 95.9,
-    "covered": 1350,
+    "cards": 1413,
+    "contentHash": "2cfe01fd6a91b65d",
+    "coveragePct": 96.7,
+    "covered": 1366,
     "excluded": 46,
-    "leaves": 1455,
-    "open": 59,
-    "orphans": 4,
+    "leaves": 1460,
+    "open": 48,
+    "orphans": 0,
     "papers": {
       "count": 34,
       "hash": "235feb6c1db85258"
     },
-    "refsHash": "3dfc9501ac91173c"
+    "refsHash": "84d10eeeba1c2be7"
   },
   "polish": {
     "cards": 237,

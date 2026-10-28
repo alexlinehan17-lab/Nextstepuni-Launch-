@@ -1,4 +1,378 @@
 {
+ "physics-2025-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q1-table.png",
+  "md5": "8947c1e27358c74a4517b8b50177fc9b",
+  "alt": "Table of the metre stick data: position of force on metre stick (cm) 2.0, 11.2, 40.1, 72.7, 82.9; force (N) 3.4, 3.0, 2.0, 5.5, 3.0; direction up, down, down, up, down.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q1(iii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   322,
+   545,
+   413
+  ]
+ },
+ "physics-2025-hl-q11-parallel": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q11-parallel.png",
+  "md5": "307a5ab9c93c668f9e68e821ff8f1cd4",
+  "alt": "Circuit diagram of two resistors, R1 and R2, connected in parallel between two leads.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   160,
+   160,
+   415,
+   262
+  ]
+ },
+ "physics-2025-hl-q11-switch": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q11-switch.png",
+  "md5": "2318ec28bec1202e9512c750d928dfe5",
+  "alt": "Circuit diagram: a 12 V supply connected across an 8 Ω resistor and a second 8 Ω resistor in series; point X lies between them, and a switch from X leads to a 4 Ω resistor that joins point Y at the bottom of the lower 8 Ω resistor.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11(iii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   378,
+   300,
+   547,
+   433
+  ]
+ },
+ "physics-2025-hl-q11-thermistor": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q11-thermistor.png",
+  "md5": "01f8cd6873f7e049dad5009368518505",
+  "alt": "Potential divider between 12 V and 0 V: a variable resistor above a thermistor, with the output Vout taken across the thermistor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11(vi)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   395,
+   515,
+   552,
+   690
+  ]
+ },
+ "physics-2025-hl-q12a-i-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q12a-i-scheme.png",
+  "md5": "5f8d132def25430db17676b7e7e91f28",
+  "alt": "The marking scheme's equation: ¹₁H + ⁷₃Li → ⁴₂He + ⁴₂He, each nucleus printed with its mass number above and its atomic number below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12(a)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   141,
+   195,
+   170
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q12a-ix-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q12a-ix-scheme.png",
+  "md5": "094e17ef254170031b30d050615c3bc4",
+  "alt": "The marking scheme's equation: ¹⁸₉F → ¹⁸₈O + ⁰₊₁e, each particle printed with its mass number above and its atomic number below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12(a)(ix)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   738,
+   170,
+   766
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q13-vii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q13-vii-question.png",
+  "md5": "bc31433785f6cecc42b4f86fa4398b39",
+  "alt": "The printed question: (vii) The diagram shows a graph of current I against time t for an alternating current flowing through an appliance. Calculate the RMS current flowing in the appliance. (7) Beside it, a graph of I (A), from -10 to 10, against t (s), from 0.00 to 0.02, showing one full cycle of a sine-shaped curve.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(vii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   52,
+   634,
+   545,
+   746
+  ]
+ },
+ "physics-2025-hl-q13-vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q13-vii-scheme.png",
+  "md5": "7319c1eff0842c02bbfbf180dfd7ed76",
+  "alt": "The marking scheme's formula: I rms (rms as a subscript) equals I0 over the square root of 2, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(vii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   300,
+   264,
+   356,
+   295
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q13-wire": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q13-wire.png",
+  "md5": "8f25e957433bd574aebd273638a4c8c4",
+  "alt": "Diagram of a straight wire lying between an S pole above and an N pole below, with five field arrows pointing up from N to S across it; the wire is connected in a loop to a 0.225 V cell.",
+  "lettersVisible": [
+   "S",
+   "N"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(iii)(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   380,
+   325,
+   545,
+   445
+  ]
+ },
+ "physics-2025-hl-q14b-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q14b-table.png",
+  "md5": "1ad1c7b652fea7a1d3bd793b79ff1b86",
+  "alt": "Table of the refractive index of three types of glass: core 1.47, Y 1.44, Z 1.50.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   52,
+   413,
+   545,
+   477
+  ]
+ },
+ "physics-2025-hl-q14c-ii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q14c-ii-scheme.png",
+  "md5": "2045f6b24858d5ece4ac5df3e3212329",
+  "alt": "The marking scheme's equation: ¹³¹₅₃I → ¹³¹₅₄Xe + ⁰₋₁β, each particle printed with its mass number above and its atomic number below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14(c)(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 24,
+  "sourceRect": [
+   80,
+   176,
+   175,
+   210
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q2-table.png",
+  "md5": "6f2fb581d26bd09b42aa43133d5bd5b1",
+  "alt": "Table of the trolley data: mass of A 200 g, mass of B 250 g, sA 10 cm, tA 185 ms, sB 8 cm, tB 190 ms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q2(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   161,
+   544,
+   225
+  ]
+ },
+ "physics-2025-hl-q3-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q3-graph.png",
+  "md5": "3f918387029dc1ede446228f2e71a886",
+  "alt": "Graph of l (m), from -0.10 to 0.50, against 1/f (Hz⁻¹), from 0.000 to 0.006: six plotted points lie on a straight line drawn from just below the origin up to the last point at 0.005.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q3(iv)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   62,
+   146,
+   534,
+   507
+  ]
+ },
+ "physics-2025-hl-q4-block": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q4-block.png",
+  "md5": "f228f59224bd974f02ca0ddd4d06872b",
+  "alt": "Diagram of a rectangle, the glass block seen from above, with a ray drawn as an arrow coming down from the upper left to meet its top face.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q4(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   236,
+   220,
+   358,
+   316
+  ]
+ },
+ "physics-2025-hl-q4-sheet": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q4-sheet.png",
+  "md5": "06398c3a0fcc82ccd554ebdde485880f",
+  "alt": "Line drawing in perspective of a rectangular glass block lying flat on its largest face on a square sheet of paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q4(v)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   210,
+   500,
+   386,
+   614
+  ]
+ },
+ "physics-2025-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q4-table.png",
+  "md5": "531cc2c2b39744e4a6816767bf7e42f9",
+  "alt": "Table of the angles recorded: i (°) 20, 30, 40, 50, 60, 70; r (°) 13, 19, 27, 30, 35, 39.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q4(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   52,
+   138,
+   530,
+   202
+  ]
+ },
+ "physics-2025-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q5-table.png",
+  "md5": "b49fd1b45b736a17f8746a050968223c",
+  "alt": "Table of the readings: V (V) 1, 2, 3, 4, 5, 6, 7; I (mA) 25, 47, 68, 80, 91, 100, 104.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q5(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   52,
+   115,
+   545,
+   179
+  ]
+ },
+ "physics-2025-hl-q6c-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q6c-diagram.png",
+  "md5": "7052385bf9dcab95711f7f1fd40183cb",
+  "alt": "Diagram of two horizontal lines 20 m apart: particle Y on the upper line with a short arrow pointing down, labelled 5 m s⁻¹, and particle X on the lower line, the ground, with an arrow pointing up, labelled 15 m s⁻¹.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q6(c)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   430,
+   262,
+   548,
+   405
+  ]
+ },
+ "physics-2025-hl-q8-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q8-diagram.png",
+  "md5": "c12a484890022094a6f0226958c1d978",
+  "alt": "Diagram of a laser beam passing through a diffraction grating to a white screen; dashed lines from the grating, with the angle between them marked 49°, reach the two images marked n = 2 on the screen, with a column of marks between them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q8(iv)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   155,
+   222,
+   440,
+   392
+  ]
+ },
  "physics-2026-hl-q10-circuit": {
   "src": "/exam-figures/physics/markbank/physics-2026-hl-q10-circuit.png",
   "md5": "1af5640f4d561f377e0d6630b2c4b0fd",

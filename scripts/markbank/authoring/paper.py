@@ -403,6 +403,17 @@ PROSE_MARKER_BLOCKS[('physics', 2026, 'hl')] = [
     '(a) Calculate the minimum frequency heard', '(b) State the observed frequency',
     '(a) the strong nuclear force between the two protons,', '(b) how many ',
     '(a) Draw a circuit diagram to show how a transistor', '(b) Label the input voltage']
+# 2025 HL Physics Q14 (paper page 18, rendered and looked at) is letter-major, (a)-(d),
+# and prints two letters INSIDE (c)(iv): "(iv) A sample of Iodine-131 contains 2 x 10^15
+# atoms. Calculate" / "(a) the rate of decay of the sample," / "(b) how long it would take
+# for 1.75 x 10^15 nuclei to decay. (11)". Each was read as a top-level letter, so the
+# walker stood at (b) when "(d) (i) State Coulomb's law." arrived; the jump from (b) to
+# (d) was taken for a table unit, and (d)'s five romans (i)-(v) filed under Q14(b)'s keys
+# (the census read Q14(b)(i) as "State which glass Y or Z ... State Coulomb's law" and
+# printed no Q14(d)). Read as lines of the roman that is open, (a) and (b) stay in
+# Q14(c)(iv), and (d)(i)-(v) are keyed as the paper prints them.
+PROSE_MARKER_BLOCKS[('physics', 2025, 'hl')] = [
+    '(a) the rate of decay of the sample,', '(b) how long it would take for 1.75']
 # 2026 OL Physics Q14 (pages 15 and 17, rendered and looked at) is letter-major, (a)-(d),
 # and prints letters INSIDE four romans: (b)(ii) "(a) Copy and complete the diagram ... (b)
 # Label a node and an antinode on your diagram.", (d)(i) "(a) the magnet is moved into the

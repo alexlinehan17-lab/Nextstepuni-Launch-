@@ -26,7 +26,8 @@ type Task = { id: string; questionRef: string; total: number; route: string | nu
   evidence?: string; cells?: { printed: string[]; sum: number | null; waiver?: string } };
 type Sitting = { tasks: Task[]; cardCount: number; baseTaskCount: number; figures: string[];
   sources: Record<string, { sha256: string; pages: number }>;
-  review?: { retained: Array<{ id: string; reason: string }> };
+  review?: { retained: Array<{ id: string; reason: string }>;
+    withdrawn?: Record<string, { replacementId: string; reason: string }> };
   checks: { censusLeaves: number; censusLeavesClaimed: number; excluded: unknown[];
     openLeaves?: unknown[]; excludedLeaves?: unknown[] } };
 const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sittings;
@@ -37,6 +38,8 @@ const PINS: Record<string, [number, number, number, string, string]> = {
     'c7f984734a202b0fa5ef413b805d208c52cdb6bd3239a8513d4e8a6a6129f302'],
   '2026-hl': [136, 136, 107, 'fd1ff3286d201f396a282c38d4bf0f40adf71a1fca80d9111e763a4141a200d5',
     '228dec63cad7a6c8653dfb8b84ac29e908ec34277869cafea69e9481ad199463'],
+  '2025-hl': [137, 137, 125, 'bd8d60f621d8d952e0aaefb054a5e064ea81d6fafcee0501bad5cf10b2ddbf27',
+    'f0928d59d20bb0ea168dc17dcaf180b5c68389e8c9fecbf171a17ee90e21ffa2'],
 };
 
 type Card = (typeof PHYS_HIGHER)[number] & {
@@ -58,7 +61,9 @@ describe('Physics — reviewed sittings', () => {
     const [year, level] = key.split('-');
     const prefix = `phys-${year}-${level}-`;
     const shipped = deck.filter(card => card.id.startsWith(prefix));
-    const retained = new Set((s.review?.retained ?? []).map(r => r.id));
+    // A retained id the review withdrew onto its replacement does not ship.
+    const withdrawn = new Set(Object.keys(s.review?.withdrawn ?? {}));
+    const retained = new Set((s.review?.retained ?? []).map(r => r.id).filter(id => !withdrawn.has(id)));
     expect(s.cardCount).toBe(cards);
     expect(s.baseTaskCount).toBe(tasks);
     expect(s.sources.paper.sha256).toBe(paperSha);

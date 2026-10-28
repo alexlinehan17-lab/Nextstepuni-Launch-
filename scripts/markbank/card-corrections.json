@@ -447,6 +447,11 @@
     "stem": "The strings of a guitar can be plucked so that they vibrate at certain frequencies. The guitar and the air inside it also vibrate due to resonance. For each pair of variables, sketch a suitable graph to show the relationship between them.",
     "questionText": "(c) Sketch the graph of f against 1/√μ."
    }
+  },
+  "phys-2025-hl-q6-h-ii": {
+   "reason": "Q6(h) is one of the eight 7-mark parts of \"Answer any eight\" (8 x 7), and the scheme prices (i) and (ii) in one cell [4 + 3]: one card for the part, phys-2025-hl-q6-h-i.",
+   "drop": true,
+   "replacementId": "phys-2025-hl-q6-h-i"
   }
  },
  "business": {

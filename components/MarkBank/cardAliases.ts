@@ -560,4 +560,5 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "geography-2026-hl-p2-q5c-transport-raw-materials": "geography-2026-hl-p2-q5c-labour-transport",
   "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
   "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+  "phys-2025-hl-q6-h-ii": "phys-2025-hl-q6-h-i",
 };
