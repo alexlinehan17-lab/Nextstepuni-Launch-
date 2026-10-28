@@ -356,6 +356,18 @@ INLINE_NOT_MARKERS = {('chemistry', 2016, 'hl'): ['(ii) 2,2,4-trimethylpentane, 
 # empty-leaf) and a leaf "CH3COOH. (6)", where this paper's Q2(b), Q6(a), Q7(a) and Q8(b),
 # their romans in a sentence the same way, are each one ask. Joined back, as 2016 HL's.
 INLINE_NOT_MARKERS[('chemistry', 2010, 'ol')] = ['(i) C2H2,', '(ii) CH3COOH.']
+# The inverse: romans set INSIDE a sentence, each opening its ask in lower case,
+# that the paper prices as parts of their own. 2023 HL Physics Q4 (paper page 4,
+# lines 22-23) prints "How did the student (ii) cool the water, (iii) dry the
+# steam?" and "Why did the student (iv) cool the water, (v) dry the steam?" under
+# its (i) and before its (vi), group mark (24); the scheme (page 9) prices (ii),
+# (iii), (iv) and (v) each on its own. The lower case after each marker kept the
+# marker lookahead from splitting them, so the census read Q4(i) and Q4(vi) only
+# (flag roman-gap) and the cards for Q4(ii)-(v) were orphans. A piece holding a
+# listed text after its start is split there. Gated to the sitting: no other
+# paper's reading may move because of it.
+INLINE_SENTENCE_MARKERS = {('physics', 2023, 'hl'): ['(ii) cool the water,', '(iii) dry the steam?',
+                                                     '(iv) cool the water,', '(v) dry the steam?']}
 # A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
 # Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
 # identify the salts by means of flame tests, (ii) to confirm the identity of the anion
@@ -1212,6 +1224,17 @@ class Paper:
                     at = [j for j, p in enumerate(pieces) if j and p.startswith(joined)]
                     for j in reversed(at):
                         pieces[j - 1:j + 1] = [pieces[j - 1] + ' ' + pieces[j]]
+                # (2023 HL Physics Q4: romans inside a sentence; see INLINE_SENTENCE_MARKERS.)
+                for cut in INLINE_SENTENCE_MARKERS.get((self.subject, self.year, self.level), []):
+                    split = []
+                    for p in pieces:
+                        k = p.find(cut, 1)
+                        while k > 0:
+                            split.append(p[:k].strip())
+                            p = p[k:]
+                            k = p.find(cut, 1)
+                        split.append(p)
+                    pieces = [p for p in split if p]
                 for i, piece in enumerate(pieces):
                     piece = (prefix + piece) if i == 0 else piece
                     if carry:
