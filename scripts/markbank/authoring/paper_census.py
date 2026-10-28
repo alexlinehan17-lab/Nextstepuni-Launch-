@@ -69,7 +69,12 @@ SUBJECTS = {
     # its levels are.
     'biology': {'mode': 'merged', 'from': 2010, 'also': []},
     'chemistry': {'mode': 'merged'},
-    'physics': {'mode': 'merged'},
+    # Physics's carded corpus started at 2021 (the 2021-2025 pre-audit cards);
+    # the papers folder also holds 2010-2020 and 2026, fetched for Paper Trail.
+    # The window is a DECISION, as Biology's was: it starts at 2021, takes in
+    # 2026 once carded, and 'also' admits each earlier sitting as its
+    # phys_review_<year>_<level>.py ledger is written (2026-10-28 lane).
+    'physics': {'mode': 'merged', 'from': 2021, 'also': []},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
