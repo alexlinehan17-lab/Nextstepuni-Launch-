@@ -690,21 +690,23 @@ def S(start, end=None, page=None, after=None, before=None, nth=1, skip_marks=Fal
 
 
 def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False,
-       note_sel=None, note_lead=None, whole=False):
+       note_sel=None, note_lead=None, whole=False, route=None):
     """One marking row lifted whole from the scheme. `whole` keeps a printed
     "Word: ..." line as one answer instead of reading "Word" as its label."""
     return {'type': 'pt', 'sel': sel, 'marks': marks, 'label': label, 'kind': kind,
             'note': note, 'units': units or [marks], 'first_alt': first_alt,
-            'note_sel': note_sel, 'note_lead': note_lead, 'whole': whole}
+            'note_sel': note_sel, 'note_lead': note_lead, 'whole': whole, **({'route': route} if route else {})}
 
 
-def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None, open_list=False, sep=None):
+def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None, open_list=False, sep=None,
+         route=None):
     """A bounded menu: "Any two 2(3)". `sel` is the whole printed list, cut
     into options at the SEC's own solidus; or `options` is a list of
     selectors, one per option, for menus printed one per line. `open_list`
     marks a menu the scheme prints as examples ("e.g.")."""
     return {'type': 'anyn', 'sel': sel, 'claim': claim, 'per': per, 'steps': steps,
-            'note': note, 'options': options, 'note_sel': note_sel, 'open_list': open_list, 'sep': sep}
+            'note': note, 'options': options, 'note_sel': note_sel, 'open_list': open_list, 'sep': sep,
+            **({'route': route} if route else {})}
 
 
 def allof(parts, marks, note=None, note_sel=None):

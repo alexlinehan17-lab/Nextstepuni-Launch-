@@ -994,7 +994,7 @@
      "topic": "phys-2-6",
      "concept": "diffraction-grating-method",
      "route": null,
-     "rows": 3,
+     "rows": 6,
      "figure": null,
      "questionFigure": null,
      "sourcePages": null,
@@ -4168,7 +4168,7 @@
       ],
       "sum": 2
      },
-     "decision": "\"Geiger-Muller tube // solid state detector\": two detectors, each with its own principle in (b): answer variants.",
+     "decision": "\"Geiger-Muller tube // solid state detector\": the ask names ONE detector, so the two printed detectors are a menu of one, never a choice shown before the reveal.",
      "notes": null
     },
     {
@@ -4196,7 +4196,7 @@
      "topic": "phys-4-4",
      "concept": "detector-principle",
      "route": null,
-     "rows": 2,
+     "rows": 4,
      "figure": null,
      "questionFigure": null,
      "sourcePages": null,
@@ -4208,7 +4208,7 @@
       ],
       "sum": 4
      },
-     "decision": "The principle of the detector named in (a): answer variants, Geiger-Muller tube and solid state.",
+     "decision": "The principle of the detector named in (a): the scheme's two sides of \"//\" (Geiger-Muller tube, solid state detector) are routes inside the card; claiming a row commits to its side.",
      "notes": null
     },
     {
@@ -4473,7 +4473,7 @@
      "topic": "phys-3-3",
      "concept": "semiconductor-definition",
      "route": null,
-     "rows": 2,
+     "rows": 3,
      "figure": null,
      "questionFigure": null,
      "sourcePages": null,
@@ -4485,7 +4485,7 @@
       ],
       "sum": 7
      },
-     "decision": "\"between that of a conductor and an insulator // decreases with temperature\": answer variants, each with \"resistivity\".",
+     "decision": "\"resistivity [4]\" then \"between that of a conductor and an insulator // decreases with temperature [3]\": the two sides of the \"//\" are routes inside the card, never answer variants whose labels would show the answers before the reveal.",
      "notes": null
     },
     {
@@ -12168,7 +12168,7 @@
      "topic": "phys-1-1",
      "concept": "measuring-constant-velocity",
      "route": null,
-     "rows": 3,
+     "rows": 5,
      "figure": null,
      "questionFigure": null,
      "sourcePages": null,
@@ -12181,7 +12181,7 @@
       ],
       "sum": 9
      },
-     "decision": "The scheme prints two routes split by //: card and timer, or dots on tape; both close on v = l/t. The two sides of the scheme's // are mutually exclusive routes: each is shown as its own answer set.",
+     "decision": "The scheme prints two routes split by //: card and timer, or dots on tape; both close on v = l/t. The sides are routes inside the card (claiming a row commits to its side), never answer variants whose labels would name the method before the reveal.",
      "notes": null
     },
     {
@@ -12367,7 +12367,7 @@
      "topic": "phys-1-2",
      "concept": "minimising-external-forces",
      "route": null,
-     "rows": 2,
+     "rows": 4,
      "figure": null,
      "questionFigure": null,
      "sourcePages": null,
@@ -12379,7 +12379,7 @@
       ],
       "sum": 4
      },
-     "decision": "Two routes split by //: an air track, or a track with oiled wheels. The two sides of the scheme's // are mutually exclusive routes: each is shown as its own answer set.",
+     "decision": "Two routes split by //: an air track, or a track with oiled wheels; routes inside the card, never answer variants whose labels would give the answer before the reveal.",
      "notes": null
     },
     {
@@ -17496,7 +17496,6 @@
       "changed": [
        "stem",
        "rows",
-       "answerVariants",
        "topicId"
       ],
       "fieldsBefore": {
@@ -17538,7 +17537,6 @@
          "contextNote": "Awarded on either route - the scheme prints this line without a double solidus."
         }
        ],
-       "answerVariants": null,
        "topicId": "phys-u2"
       },
       "notesBefore": "The scheme prints // on the first two lines, so route a is the card-and-timer method and route b is the ticker-tape method; each route reaches the full 9 marks (its two routed points plus the shared v = l/t line). Partial answers from the two sides may not be combined."
@@ -17672,7 +17670,6 @@
        "stem",
        "questionText",
        "rows",
-       "answerVariants",
        "topicId"
       ],
       "fieldsBefore": {
@@ -17708,7 +17705,6 @@
          "route": "b"
         }
        ],
-       "answerVariants": null,
        "topicId": "phys-u2"
       },
       "notesBefore": "The scheme prints // on both lines: route a is the air-track apparatus, route b is the wheeled-trolley-on-track apparatus, and each route reaches the full 4 marks on its own. Partial answers from opposite sides may not be combined. The scheme adds: '[allow 4 marks for adjust the track until frictional force = gravitational force]'."

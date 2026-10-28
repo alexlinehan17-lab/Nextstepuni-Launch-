@@ -310,6 +310,10 @@ def build_row_spans(lifter, spec, row_id, task_doc, sp, lo):
         row, units, worth = _build_row(lifter, spec, row_id, task_doc, sp, lo)
     finally:
         lifter.lift = real_lift
+    # A side of the scheme's double solidus ("//"): rows sharing a route are one
+    # complete answer; claiming any of them commits the card to that side.
+    if spec.get('route'):
+        row['route'] = spec['route']
     # A row read from glyph positions lifts no line: its span is the scheme
     # lines printed inside its clip.
     for g in ([spec] if spec.get('type') == 'geo' else []) + [o for o in (spec.get('options') or [])
@@ -592,6 +596,7 @@ def build(ledger, year, level):
             problems.append(f'{t["key"]}: scheme reprint "{sq_text[:60]}" shares {score:.0%} of its '
                             f'words with the paper ask "{qtext[:60]}"')
         rows, task_units, worth = [], [], 0
+        routed = []
         whole = t.get('tariff') == 'questionTotal'
         row_spans = []
         if t.get('excluded'):
@@ -616,8 +621,19 @@ def build(ledger, year, level):
                 rows += _unpriced_rows(row)
                 continue
             rows.append(row)
-            task_units += units
-            worth += w
+            routed.append((row.get('route'), units, w))
+        # Rows outside any route count once; each route (a side of a "//") must
+        # make the rest of the total on its own, and is counted once.
+        sides = sorted({r for r, _, _ in routed if r})
+        common = [(u, w) for r, u, w in routed if not r]
+        task_units = [x for u, _ in common for x in u]
+        worth = sum(w for _, w in common)
+        if sides:
+            per_side = {sd: sum(w for r, _, w in routed if r == sd) for sd in sides}
+            if len(set(per_side.values())) != 1 or len(sides) < 2:
+                problems.append(f'{t["key"]}: each route must make the same total, got {per_side}')
+            worth += per_side[sides[0]]
+            task_units += [x for r, u, _ in routed if r == sides[0] for x in u]
         if whole:
             for i, r in enumerate(rows):
                 r['id'] = f'r{i + 1}'

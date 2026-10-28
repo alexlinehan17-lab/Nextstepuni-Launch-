@@ -19954,72 +19954,38 @@
     "id": "r1",
     "kind": "point",
     "verbatim": "(measure) length l of card",
-    "marks": 3
+    "marks": 3,
+    "route": "card"
    },
    {
     "id": "r2",
     "kind": "point",
     "verbatim": "(measure) time for l",
-    "marks": 3
+    "marks": 3,
+    "route": "card"
    },
    {
     "id": "r3",
+    "kind": "point",
+    "verbatim": "(measure) distance between dots",
+    "marks": 3,
+    "route": "dots"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "(measure) time between dots",
+    "marks": 3,
+    "route": "dots"
+   },
+   {
+    "id": "r5",
     "kind": "point",
     "verbatim": "v = l/t",
     "marks": 3
    }
   ],
-  "answerVariants": [
-   {
-    "id": "card",
-    "label": "Length of card and its time",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "(measure) length l of card",
-      "marks": 3
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "(measure) time for l",
-      "marks": 3
-     },
-     {
-      "id": "r3",
-      "kind": "point",
-      "verbatim": "v = l/t",
-      "marks": 3
-     }
-    ]
-   },
-   {
-    "id": "dots",
-    "label": "Distance and time between dots",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "(measure) distance between dots",
-      "marks": 3
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "(measure) time between dots",
-      "marks": 3
-     },
-     {
-      "id": "r3",
-      "kind": "point",
-      "verbatim": "v = l/t",
-      "marks": 3
-     }
-    ]
-   }
-  ],
-  "notes": "The scheme prints two routes split by //: card and timer, or dots on tape; both close on v = l/t. The two sides of the scheme's // are mutually exclusive routes: each is shown as its own answer set. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
+  "notes": "The scheme prints two routes split by //: card and timer, or dots on tape; both close on v = l/t. The sides are routes inside the card (claiming a row commits to its side), never answer variants whose labels would name the method before the reveal. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
   "year": 2025,
   "level": "higher"
  },
@@ -20167,57 +20133,33 @@
     "id": "r1",
     "kind": "alt",
     "verbatim": "cushion of air or clean air track",
-    "marks": 2
+    "marks": 2,
+    "route": "air-track"
    },
    {
     "id": "r2",
     "kind": "point",
     "verbatim": "horizontal air track",
     "marks": 2,
-    "contextNote": "[allow 4 marks for adjust the track until frictional force = gravitational force]"
-   }
-  ],
-  "answerVariants": [
-   {
-    "id": "air-track",
-    "label": "Air track",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "alt",
-      "verbatim": "cushion of air or clean air track",
-      "marks": 2
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "horizontal air track",
-      "marks": 2,
-      "contextNote": "[allow 4 marks for adjust the track until frictional force = gravitational force]"
-     }
-    ]
+    "route": "air-track"
    },
    {
-    "id": "track",
-    "label": "Track with wheels",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "alt",
-      "verbatim": "oil wheels or clean track",
-      "marks": 2
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "slope track",
-      "marks": 2,
-      "contextNote": "[allow 4 marks for adjust the track until frictional force = gravitational force]"
-     }
-    ]
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "oil wheels or clean track",
+    "marks": 2,
+    "route": "track"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "slope track",
+    "marks": 2,
+    "contextNote": "[allow 4 marks for adjust the track until frictional force = gravitational force]",
+    "route": "track"
    }
   ],
-  "notes": "Two routes split by //: an air track, or a track with oiled wheels. The two sides of the scheme's // are mutually exclusive routes: each is shown as its own answer set. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
+  "notes": "Two routes split by //: an air track, or a track with oiled wheels; routes inside the card, never answer variants whose labels would give the answer before the reveal. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
   "year": 2025,
   "level": "higher"
  },
@@ -37830,69 +37772,43 @@
     "id": "r1",
     "kind": "point",
     "verbatim": "rotate telescope to locate image on RHS of zero",
-    "marks": 2
+    "marks": 2,
+    "route": "spectrometer"
    },
    {
     "id": "r2",
     "kind": "point",
     "verbatim": "rotate telescope to locate image on LHS of zero",
-    "marks": 2
+    "marks": 2,
+    "route": "spectrometer"
    },
    {
     "id": "r3",
     "kind": "point",
     "verbatim": "reference to reading on circular scale",
-    "marks": 2
-   }
-  ],
-  "answerVariants": [
-   {
-    "id": "spectrometer",
-    "label": "Spectrometer",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "rotate telescope to locate image on RHS of zero",
-      "marks": 2
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "rotate telescope to locate image on LHS of zero",
-      "marks": 2
-     },
-     {
-      "id": "r3",
-      "kind": "point",
-      "verbatim": "reference to reading on circular scale",
-      "marks": 2
-     }
-    ]
+    "marks": 2,
+    "route": "spectrometer"
    },
    {
-    "id": "screen",
-    "label": "Screen",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "measure the distance D from grating to screen",
-      "marks": 2
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "measure distance x from central image to other images",
-      "marks": 2
-     },
-     {
-      "id": "r3",
-      "kind": "point",
-      "verbatim": "reference to use of trigonometry",
-      "marks": 2
-     }
-    ]
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "measure the distance D from grating to screen",
+    "marks": 2,
+    "route": "screen"
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "measure distance x from central image to other images",
+    "marks": 2,
+    "route": "screen"
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "reference to use of trigonometry",
+    "marks": 2,
+    "route": "screen"
    }
   ],
   "notes": "Each line prints two answers separated by \"//\", a spectrometer method and a screen method: answer variants, each on the scheme's own [2] per line. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
@@ -40552,38 +40468,20 @@
   "rows": [
    {
     "id": "r1",
-    "kind": "point",
-    "verbatim": "Geiger-Muller tube",
-    "marks": 2
+    "kind": "anyN",
+    "verbatim": "Geiger-Muller tube / solid state detector",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Geiger-Muller tube",
+      "solid state detector"
+     ]
+    }
    }
   ],
-  "answerVariants": [
-   {
-    "id": "geiger-muller",
-    "label": "Geiger-Muller tube",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "Geiger-Muller tube",
-      "marks": 2
-     }
-    ]
-   },
-   {
-    "id": "solid-state",
-    "label": "Solid state detector",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "solid state detector",
-      "marks": 2
-     }
-    ]
-   }
-  ],
-  "notes": "\"Geiger-Muller tube // solid state detector\": two detectors, each with its own principle in (b): answer variants. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
+  "notes": "\"Geiger-Muller tube // solid state detector\": the ask names ONE detector, so the two printed detectors are a menu of one, never a choice shown before the reveal. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
   "year": 2026,
   "level": "higher"
  },
@@ -40605,54 +40503,32 @@
     "id": "r1",
     "kind": "point",
     "verbatim": "ionisation",
-    "marks": 2
+    "marks": 2,
+    "route": "geiger-muller"
    },
    {
     "id": "r2",
     "kind": "point",
     "verbatim": "current flows",
-    "marks": 2
-   }
-  ],
-  "answerVariants": [
-   {
-    "id": "geiger-muller",
-    "label": "Geiger-Muller tube",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "ionisation",
-      "marks": 2
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "current flows",
-      "marks": 2
-     }
-    ]
+    "marks": 2,
+    "route": "geiger-muller"
    },
    {
-    "id": "solid-state",
-    "label": "Solid state detector",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "free electrons produced",
-      "marks": 2
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "current flows",
-      "marks": 2
-     }
-    ]
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "free electrons produced",
+    "marks": 2,
+    "route": "solid-state"
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "current flows",
+    "marks": 2,
+    "route": "solid-state"
    }
   ],
-  "notes": "The principle of the detector named in (a): answer variants, Geiger-Muller tube and solid state. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
+  "notes": "The principle of the detector named in (a): the scheme's two sides of \"//\" (Geiger-Muller tube, solid state detector) are routes inside the card; claiming a row commits to its side. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
   "year": 2026,
   "level": "higher"
  },
@@ -40858,48 +40734,18 @@
     "id": "r2",
     "kind": "point",
     "verbatim": "between that of a conductor and an insulator",
-    "marks": 3
-   }
-  ],
-  "answerVariants": [
-   {
-    "id": "conductor-insulator",
-    "label": "Between a conductor and an insulator",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "resistivity",
-      "marks": 4
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "between that of a conductor and an insulator",
-      "marks": 3
-     }
-    ]
+    "marks": 3,
+    "route": "conductor-insulator"
    },
    {
-    "id": "temperature",
-    "label": "Decreases with temperature",
-    "rows": [
-     {
-      "id": "r1",
-      "kind": "point",
-      "verbatim": "resistivity",
-      "marks": 4
-     },
-     {
-      "id": "r2",
-      "kind": "point",
-      "verbatim": "decreases with temperature",
-      "marks": 3
-     }
-    ]
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "decreases with temperature",
+    "marks": 3,
+    "route": "temperature"
    }
   ],
-  "notes": "\"between that of a conductor and an insulator // decreases with temperature\": answer variants, each with \"resistivity\". Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
+  "notes": "\"resistivity [4]\" then \"between that of a conductor and an insulator // decreases with temperature [3]\": the two sides of the \"//\" are routes inside the card, never answer variants whose labels would show the answers before the reveal. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
   "year": 2026,
   "level": "higher"
  },

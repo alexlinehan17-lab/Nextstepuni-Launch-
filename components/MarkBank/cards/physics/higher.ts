@@ -4955,59 +4955,11 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how the constant velocity of a trolley can be determined.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r1", kind: "point", verbatim: "(measure) length l of card", marks: 3 },
-    { id: "r2", kind: "point", verbatim: "(measure) time for l", marks: 3 },
-    { id: "r3", kind: "point", verbatim: "v = l/t", marks: 3 },
-    ],
-    answerVariants: [
-          {
-                "id": "card",
-                "label": "Length of card and its time",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "(measure) length l of card",
-                            "marks": 3
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "(measure) time for l",
-                            "marks": 3
-                      },
-                      {
-                            "id": "r3",
-                            "kind": "point",
-                            "verbatim": "v = l/t",
-                            "marks": 3
-                      }
-                ]
-          },
-          {
-                "id": "dots",
-                "label": "Distance and time between dots",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "(measure) distance between dots",
-                            "marks": 3
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "(measure) time between dots",
-                            "marks": 3
-                      },
-                      {
-                            "id": "r3",
-                            "kind": "point",
-                            "verbatim": "v = l/t",
-                            "marks": 3
-                      }
-                ]
-          }
+    { id: "r1", kind: "point", verbatim: "(measure) length l of card", marks: 3, route: "card" },
+    { id: "r2", kind: "point", verbatim: "(measure) time for l", marks: 3, route: "card" },
+    { id: "r3", kind: "point", verbatim: "(measure) distance between dots", marks: 3, route: "dots" },
+    { id: "r4", kind: "point", verbatim: "(measure) time between dots", marks: 3, route: "dots" },
+    { id: "r5", kind: "point", verbatim: "v = l/t", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5097,48 +5049,10 @@ export const CARDS: SecCard[] = [
     questionText: "External forces acting on the trolleys were minimised in the experiment. (b) Describe how the effect of these forces could be minimised.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r1", kind: "alt", verbatim: "cushion of air or clean air track", marks: 2 },
-    { id: "r2", kind: "point", verbatim: "horizontal air track", marks: 2, contextNote: "[allow 4 marks for adjust the track until frictional force = gravitational force]" },
-    ],
-    answerVariants: [
-          {
-                "id": "air-track",
-                "label": "Air track",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "alt",
-                            "verbatim": "cushion of air or clean air track",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "horizontal air track",
-                            "marks": 2,
-                            "contextNote": "[allow 4 marks for adjust the track until frictional force = gravitational force]"
-                      }
-                ]
-          },
-          {
-                "id": "track",
-                "label": "Track with wheels",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "alt",
-                            "verbatim": "oil wheels or clean track",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "slope track",
-                            "marks": 2,
-                            "contextNote": "[allow 4 marks for adjust the track until frictional force = gravitational force]"
-                      }
-                ]
-          }
+    { id: "r1", kind: "alt", verbatim: "cushion of air or clean air track", marks: 2, route: "air-track" },
+    { id: "r2", kind: "point", verbatim: "horizontal air track", marks: 2, route: "air-track" },
+    { id: "r3", kind: "alt", verbatim: "oil wheels or clean track", marks: 2, route: "track" },
+    { id: "r4", kind: "point", verbatim: "slope track", marks: 2, contextNote: "[allow 4 marks for adjust the track until frictional force = gravitational force]", route: "track" },
     ],
   } as SecCard,
   {
@@ -9829,59 +9743,12 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the method the student used to obtain the data.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "rotate telescope to locate image on RHS of zero", marks: 2 },
-    { id: "r2", kind: "point", verbatim: "rotate telescope to locate image on LHS of zero", marks: 2 },
-    { id: "r3", kind: "point", verbatim: "reference to reading on circular scale", marks: 2 },
-    ],
-    answerVariants: [
-          {
-                "id": "spectrometer",
-                "label": "Spectrometer",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "rotate telescope to locate image on RHS of zero",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "rotate telescope to locate image on LHS of zero",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r3",
-                            "kind": "point",
-                            "verbatim": "reference to reading on circular scale",
-                            "marks": 2
-                      }
-                ]
-          },
-          {
-                "id": "screen",
-                "label": "Screen",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "measure the distance D from grating to screen",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "measure distance x from central image to other images",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r3",
-                            "kind": "point",
-                            "verbatim": "reference to use of trigonometry",
-                            "marks": 2
-                      }
-                ]
-          }
+    { id: "r1", kind: "point", verbatim: "rotate telescope to locate image on RHS of zero", marks: 2, route: "spectrometer" },
+    { id: "r2", kind: "point", verbatim: "rotate telescope to locate image on LHS of zero", marks: 2, route: "spectrometer" },
+    { id: "r3", kind: "point", verbatim: "reference to reading on circular scale", marks: 2, route: "spectrometer" },
+    { id: "r4", kind: "point", verbatim: "measure the distance D from grating to screen", marks: 2, route: "screen" },
+    { id: "r5", kind: "point", verbatim: "measure distance x from central image to other images", marks: 2, route: "screen" },
+    { id: "r6", kind: "point", verbatim: "reference to use of trigonometry", marks: 2, route: "screen" },
     ],
   } as SecCard,
   {
@@ -11183,33 +11050,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name one type of detector used to detect nuclear radiation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r1", kind: "point", verbatim: "Geiger-Muller tube", marks: 2 },
-    ],
-    answerVariants: [
-          {
-                "id": "geiger-muller",
-                "label": "Geiger-Muller tube",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "Geiger-Muller tube",
-                            "marks": 2
-                      }
-                ]
-          },
-          {
-                "id": "solid-state",
-                "label": "Solid state detector",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "solid state detector",
-                            "marks": 2
-                      }
-                ]
-          }
+    { id: "r1", kind: "anyN", verbatim: "Geiger-Muller tube / solid state detector", marks: null, group: {"claimMax":1,"perOption":2,"options":["Geiger-Muller tube","solid state detector"]} },
     ],
   } as SecCard,
   {
@@ -11223,46 +11064,10 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the principle of operation of the detector.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r1", kind: "point", verbatim: "ionisation", marks: 2 },
-    { id: "r2", kind: "point", verbatim: "current flows", marks: 2 },
-    ],
-    answerVariants: [
-          {
-                "id": "geiger-muller",
-                "label": "Geiger-Muller tube",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "ionisation",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "current flows",
-                            "marks": 2
-                      }
-                ]
-          },
-          {
-                "id": "solid-state",
-                "label": "Solid state detector",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "free electrons produced",
-                            "marks": 2
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "current flows",
-                            "marks": 2
-                      }
-                ]
-          }
+    { id: "r1", kind: "point", verbatim: "ionisation", marks: 2, route: "geiger-muller" },
+    { id: "r2", kind: "point", verbatim: "current flows", marks: 2, route: "geiger-muller" },
+    { id: "r3", kind: "point", verbatim: "free electrons produced", marks: 2, route: "solid-state" },
+    { id: "r4", kind: "point", verbatim: "current flows", marks: 2, route: "solid-state" },
     ],
   } as SecCard,
   {
@@ -11364,45 +11169,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r1", kind: "point", verbatim: "resistivity", marks: 4 },
-    { id: "r2", kind: "point", verbatim: "between that of a conductor and an insulator", marks: 3 },
-    ],
-    answerVariants: [
-          {
-                "id": "conductor-insulator",
-                "label": "Between a conductor and an insulator",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "resistivity",
-                            "marks": 4
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "between that of a conductor and an insulator",
-                            "marks": 3
-                      }
-                ]
-          },
-          {
-                "id": "temperature",
-                "label": "Decreases with temperature",
-                "rows": [
-                      {
-                            "id": "r1",
-                            "kind": "point",
-                            "verbatim": "resistivity",
-                            "marks": 4
-                      },
-                      {
-                            "id": "r2",
-                            "kind": "point",
-                            "verbatim": "decreases with temperature",
-                            "marks": 3
-                      }
-                ]
-          }
+    { id: "r2", kind: "point", verbatim: "between that of a conductor and an insulator", marks: 3, route: "conductor-insulator" },
+    { id: "r3", kind: "point", verbatim: "decreases with temperature", marks: 3, route: "temperature" },
     ],
   } as SecCard,
   {

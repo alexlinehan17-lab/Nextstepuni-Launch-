@@ -309,9 +309,14 @@ TASKS = [
       SQ(8, 'Draw a labelled diagram to show how the apparatus was arranged in this', 'experiment.'), 9,
       stem=Q3S[:1]),
     T('3ib', 'Q3(i)(b)', 'A', Q(4, 'Describe the method the student used to obtain the data.'),
-      [pt(dslash('rotate telescope to locate image on RHS of zero', 'grating to screen', 1), 2),
-       pt(dslash('rotate telescope to locate image on LHS of zero', 'central image to other images', 1), 2),
-       pt(dslash('reference to reading on circular scale', None, 1), 2)],
+      [pt(dslash('rotate telescope to locate image on RHS of zero', 'grating to screen', 1), 2, route='spectrometer'),
+       pt(dslash('rotate telescope to locate image on LHS of zero', 'central image to other images', 1), 2,
+          route='spectrometer'),
+       pt(dslash('reference to reading on circular scale', None, 1), 2, route='spectrometer'),
+       pt(dslash('rotate telescope to locate image on RHS of zero', 'grating to screen', 2), 2, route='screen'),
+       pt(dslash('rotate telescope to locate image on LHS of zero', 'central image to other images', 2), 2,
+          route='screen'),
+       pt(dslash('reference to reading on circular scale', None, 2), 2, route='screen')],
       'phys-2-6', 'diffraction-grating-method',
       SQ(8, 'Describe the method the student used to obtain the data.'), 6, stem=Q3S,
       decision='Each line prints two answers separated by "//", a spectrometer method and a screen method: '
@@ -695,15 +700,19 @@ TASKS = [
       pieces(S('alpha: yes; beta: yes; gamma: no'), [2, 2, 2], ';'), 'phys-4-4', 'deflection-in-magnetic-field',
       SQ(18, 'deflection in a magnetic field.'), 6),
     T('12iiia', 'Q12(iii)(a)', 'B', Q12IIIA,
-      [pt(dslash('Geiger-Muller tube', '// solid state detector', 1), 2)], 'phys-4-4', 'radiation-detector',
+      [anyn(S('Geiger-Muller tube', '// solid state detector'), 1, 2, sep='//')], 'phys-4-4', 'radiation-detector',
       SQ(18, 'Name one type of detector used to detect nuclear radiation.'), 2,
-      decision='"Geiger-Muller tube // solid state detector": two detectors, each with its own principle in (b): '
-               'answer variants.'),
+      decision='"Geiger-Muller tube // solid state detector": the ask names ONE detector, so the two printed '
+               'detectors are a menu of one, never a choice shown before the reveal.'),
     T('12iiib', 'Q12(iii)(b)', 'B', Q(14, 'Describe the principle of operation of the detector.'),
-      [pt(dslash('ionisation', '// free electrons produced', 1), 2), pt(dslash('current flows', '// current flows', 1), 2)],
+      [pt(dslash('ionisation', '// free electrons produced', 1), 2, route='geiger-muller'),
+       pt(dslash('current flows', '// current flows', 1), 2, route='geiger-muller'),
+       pt(dslash('ionisation', '// free electrons produced', 2), 2, route='solid-state'),
+       pt(dslash('current flows', '// current flows', 2), 2, route='solid-state')],
       'phys-4-4', 'detector-principle', SQ(18, 'Describe the principle of operation of the detector.'), 4,
       stem=[M('(a)', 14), Q12IIIA],
-      decision='The principle of the detector named in (a): answer variants, Geiger-Muller tube and solid state.'),
+      decision='The principle of the detector named in (a): the scheme\'s two sides of "//" (Geiger-Muller '
+               'tube, solid state detector) are routes inside the card; claiming a row commits to its side.'),
     T('12iv', 'Q12(iv)', 'B', Q(14, 'Calculate how many', 'beta particles are emitted.'),
       pieces(S('one alpha particle; two beta particles'), [3, 3], ';'), 'phys-4-4', 'alpha-beta-in-decay-series',
       SQ(18, 'Calculate how many'), 6, stem=[Q12SB],
@@ -729,12 +738,15 @@ TASKS = [
       8, stem=Q12SD),
     # ---- Q13 home of 2030 (passage) -------------------------------------------
     T('13i', 'Q13(i)', 'B', Q(15, 'Silicon is classed as a semiconductor. Explain what is meant by a semiconductor.'),
-      [pt(S('resistivity'), 4), pt(dslash('between that of a conductor and an insulator', None, 1), 3)],
+      [pt(S('resistivity'), 4),
+       pt(dslash('between that of a conductor and an insulator', None, 1), 3, route='conductor-insulator'),
+       pt(dslash('between that of a conductor and an insulator', None, 2), 3, route='temperature')],
       'phys-3-3', 'semiconductor-definition',
       SQ(19, 'Silicon is classed as a semiconductor. Explain what is meant by a semiconductor.'), 7,
       stem=[P13['solar']],
-      decision='"between that of a conductor and an insulator // decreases with temperature": answer variants, '
-               'each with "resistivity".'),
+      decision='"resistivity [4]" then "between that of a conductor and an insulator // decreases with '
+               'temperature [3]": the two sides of the "//" are routes inside the card, never answer variants '
+               'whose labels would show the answers before the reveal.'),
     T('13iia', 'Q13(ii)(a)', 'B', Q(15, 'What do the letters in the acronym LED stand for?'),
       pieces(S('light, emitting, diode'), [1, 1, 1], ','), 'phys-3-3', 'led-acronym',
       SQ(19, 'What do the letters in the acronym LED stand for?'), 3, stem=[P13['led'], Q13II]),
@@ -899,16 +911,6 @@ TASKS = [
 ]
 
 ANSWER_VARIANTS = {
-    '3ib': [
-        ('spectrometer', 'Spectrometer',
-         [pt(dslash('rotate telescope to locate image on RHS of zero', 'grating to screen', 1), 2),
-          pt(dslash('rotate telescope to locate image on LHS of zero', 'central image to other images', 1), 2),
-          pt(dslash('reference to reading on circular scale', None, 1), 2)]),
-        ('screen', 'Screen',
-         [pt(dslash('rotate telescope to locate image on RHS of zero', 'grating to screen', 2), 2),
-          pt(dslash('rotate telescope to locate image on LHS of zero', 'central image to other images', 2), 2),
-          pt(dslash('reference to reading on circular scale', None, 2), 2)]),
-    ],
     '10ia': [
         ('words', 'In words', [pt(dslash('charge', '// C = Q/V', 1), 3), pt(dslash('per unit voltage', '// notation', 1), 3)]),
         ('formula', 'As a formula', [pt(dslash('charge', '// C = Q/V', 2), 3), pt(dslash('per unit voltage', '// notation', 2), 3)]),
@@ -916,22 +918,6 @@ ANSWER_VARIANTS = {
     '10ib': [
         ('words', 'In words', [pt(dslash('work', '// V = W/q', 1), 3), pt(dslash('per unit charge', '// notation', 1), 3)]),
         ('formula', 'As a formula', [pt(dslash('work', '// V = W/q', 2), 3), pt(dslash('per unit charge', '// notation', 2), 3)]),
-    ],
-    '12iiia': [
-        ('geiger-muller', 'Geiger-Muller tube', [pt(dslash('Geiger-Muller tube', '// solid state detector', 1), 2)]),
-        ('solid-state', 'Solid state detector', [pt(dslash('Geiger-Muller tube', '// solid state detector', 2), 2)]),
-    ],
-    '12iiib': [
-        ('geiger-muller', 'Geiger-Muller tube',
-         [pt(dslash('ionisation', '// free electrons produced', 1), 2), pt(dslash('current flows', '// current flows', 1), 2)]),
-        ('solid-state', 'Solid state detector',
-         [pt(dslash('ionisation', '// free electrons produced', 2), 2), pt(dslash('current flows', '// current flows', 2), 2)]),
-    ],
-    '13i': [
-        ('conductor-insulator', 'Between a conductor and an insulator',
-         [pt(S('resistivity'), 4), pt(dslash('between that of a conductor and an insulator', None, 1), 3)]),
-        ('temperature', 'Decreases with temperature',
-         [pt(S('resistivity'), 4), pt(dslash('between that of a conductor and an insulator', None, 2), 3)]),
     ],
     '14bia': [
         ('words', 'In words', [pt(dslash('rate of change', '// ω = θ/t', 1), 3), pt(dslash('of angle', '// notation', 1), 3)]),
