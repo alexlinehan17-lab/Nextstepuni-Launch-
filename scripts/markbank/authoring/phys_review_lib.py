@@ -849,6 +849,15 @@ def card_id(year, level, ref, route=None):
 UNPRINTED = 'The scheme prints no answer for this part.'
 
 
+def drawn(marks, note=None):
+    """The one row of a card whose answer the scheme DRAWS and prices without a
+    word to claim (a sketched graph, a field pattern: "[4]" beside the drawing).
+    The row restates the card's own ask (the build checks it is the question
+    text) and the scheme's drawing is the card's solution figure (fig=, a
+    FIGURES entry with solution=True), shown at the reveal."""
+    return {'type': 'drawn', 'marks': marks, 'note': note}
+
+
 def unprinted(marks, note):
     """The one row of a card for a printed ask the scheme prints NO answer row
     for (Alex, 2026-10-28: every printed ask gets a card). It shows exactly

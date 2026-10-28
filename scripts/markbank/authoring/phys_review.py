@@ -331,7 +331,13 @@ def _build_row(lifter, spec, row_id, task_doc, sp, lo):
     notes = []
     if spec['type'] == 'unprinted':
         row = {'id': row_id, 'kind': 'criterion', 'verbatim': B.UNPRINTED, 'marks': spec['marks'],
-               'contextNote': spec['note']}
+               'contextNote': spec['note'], 'unprinted': True}
+        return row, [spec['marks']], spec['marks']
+    if spec['type'] == 'drawn':
+        # The verbatim is the card's question text, filled in by build().
+        row = {'id': row_id, 'kind': 'criterion', 'verbatim': None, 'marks': spec['marks'], 'ask': True}
+        if spec.get('note'):
+            row['contextNote'] = spec['note']
         return row, [spec['marks']], spec['marks']
     if spec['type'] == 'geo':
         value = read_geo(lifter, spec, sp)
@@ -603,6 +609,8 @@ def build(ledger, year, level):
             problems.append(f'{t["key"]}: an exclusion is not an outcome (every printed ask gets a card); '
                             'card it, with an unprinted() row if the scheme prints no answer')
         kinds = [spec['type'] for spec in t['rows']]
+        if 'drawn' in kinds and (kinds != ['drawn'] or whole):
+            problems.append(f'{t["key"]}: a drawn() row must be the task\'s only row, on a fixed card')
         if 'unprinted' in kinds:
             if kinds != ['unprinted'] or whole:
                 problems.append(f'{t["key"]}: an unprinted row must be the task\'s only row, on a fixed card')
@@ -749,6 +757,14 @@ def build(ledger, year, level):
             tariff = {'kind': 'orderedSplit', 'notation': lspec['notation']}
             for r in rows + [r for v in (variants or []) for r in v['rows']]:
                 r['marks'] = None
+        for r in rows:
+            if r.get('ask'):
+                # A drawn answer's row restates the ask; the drawing is the
+                # solution figure, so the task must carry one.
+                r['verbatim'] = qtext.split('\n')[-1]
+                fig_spec = ledger.FIGURES.get(t['fig']) if t['fig'] else None
+                if not (fig_spec and fig_spec[6]):
+                    problems.append(f'{t["key"]}: a drawn() row needs the scheme\'s drawing as a solution figure (fig=)')
         card.update({'questionText': qtext, 'tariffModel': tariff,
                      'totalMarks': t['total'], 'rows': rows})
         if variants:
