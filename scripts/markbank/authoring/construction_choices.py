@@ -11,8 +11,10 @@ lines, read from the scheme PDF's table (construction_paper.sources, PyMuPDF): t
 question's head and the row's own "Any N …" summary line that end in the unit price and carry words;
 table furniture ("Sub-total", "Ceist") and lines priced for another row are not options; a line printed twice is
 a detail drawn twice and stays twice. Higher Level prices the same way under PERFORMANCE CRITERIA, the part's
-own tariff line ("(b) Any 4 × 4marks (Sketch 3 Annotation 1)") heading its labels. A row whose table yields
-fewer options than its claim is left alone and reported. Complete-question cards mirror their task's
+own tariff line ("(b) Any 4 × 4marks (Sketch 3 Annotation 1)") heading its labels; a first part whose tariff line
+carries no letter ("Any 12 × 4marks", 2019 Q1(a)) lists its details as bullets under menu headings with the unit
+price printed once per pair, and every bullet is an option. A row whose table yields fewer options than its
+claim is left alone and reported. Complete-question cards mirror their task's
 row. The row's id, text and marks are unchanged; the yearly validators carry the group in CHOICES and the
 row without steps in LEAF (construction_paper.validate), so the card is still pinned to the paper.
 """
@@ -72,6 +74,22 @@ def options_for(card, row):
                 if re.fullmatch(r'\d+', t) or ws[0][0]/W>=0.4 or not re.search('[A-Za-z]{3}', t) or FURNITURE.match(t): continue
                 labels.append(re.sub(rf'\s+{per}$', '', t).strip())
             if len(labels)>=n: opts=labels
+        if len(opts)<n and part and part.group(1)=='a':
+            # the Higher Level pool (2019 Q1(a)): the first part's tariff line carries no letter ("Any 12 × 4marks"), the details are
+            # bulleted under their menu headings ("External Timber Frame Wall", "Triple Glazing"), and the MARK column prints the
+            # unit price once per pair of bullets, so no detail line ends in its price; every bullet is an option, a heading is not
+            rows_=lines_words(page); tariff_i=next((i for i,ws in enumerate(rows_) if ANY.match(' '.join(w[4] for w in ws))), None)
+            if tariff_i is not None:
+                labels=[]; pending=False
+                for ws in rows_[tariff_i+1:]:
+                    t=' '.join(w[4] for w in ws).strip()
+                    if re.match(r'^\([a-z]\)', t) or re.match(r'^(?:Total|Scale)\b', t, re.I): break
+                    if t in ('•','●','▪'): pending=True; continue
+                    bullet=re.match(r'^[•●▪]\s*(.+)$', t)
+                    if bullet: labels.append(re.sub(rf'\s+{per}$', '', bullet.group(1)).strip()); pending=False; continue
+                    if pending and re.search('[A-Za-z]{3}', t): labels.append(re.sub(rf'\s+{per}$', '', t).strip()); pending=False; continue
+                    pending=False
+                if len(labels)>=n: opts=labels
         score=(1 if len(priced)>=n else 0, len(opts))
         if len(opts)>=n and (best is None or score>best[2]): best=(p, opts, score)
     if not best: return None, 'the scheme table does not list enough priced details'
