@@ -131,24 +131,22 @@ const verbatims = (id: string) => (olById.get(id)!.rows as unknown as Array<{ ve
   .map(row => row.verbatim);
 
 describe('Biology 2026 Ordinary — reviewed sitting', () => {
-  it('ships every carded task, excludes the one it cannot card, and nothing else', () => {
+  it('ships every task as a card, the misprinted one as printed with its note', () => {
     expect(ol.baseTaskCount).toBe(183);
-    expect(ol.cardCount).toBe(187);
-    expect(ordinary2026).toHaveLength(187);
-    const carded = ol.tasks.filter(task => task.status === 'carded').map(task => task.id);
-    expect(new Set(carded)).toEqual(new Set(olById.keys()));
+    expect(ol.cardCount).toBe(188);
+    expect(ordinary2026).toHaveLength(188);
+    expect(ol.tasks.every(task => task.status === 'carded')).toBe(true);
+    expect(new Set(ol.tasks.map(task => task.id))).toEqual(new Set(olById.keys()));
+    expect(ol.checks.excluded).toEqual([]);
     // Q12(b)(ii)2: the scheme prints "Rr" in both offspring boxes, against its
-    // own "White" phenotype for the r row. Reviewed, priced and excluded with
-    // its evidence; neither the misprint nor a correction is carded.
-    expect(ol.tasks.filter(task => task.status === 'excluded').map(task => task.id))
-      .toEqual(['bio-2026-ol-q12-b-ii-2']);
-    expect(olById.has('bio-2026-ol-q12-b-ii-2')).toBe(false);
-    const [exclusion] = ol.checks.excluded;
-    expect(exclusion.schemeRows).toEqual(['Rr', 'Rr']);
-    expect(exclusion.evidence).toMatch(/both offspring boxes .* print "Rr"/);
-    expect(exclusion.evidence).toMatch(/"White"/);
-    // Decided by Alex on 2026-10-12: it stays excluded, never carded or corrected.
-    expect(exclusion.reason).toMatch(/Decided by Alex 2026-10-12/);
+    // own "White" phenotype for the second row. Excluded 2026-10-12; carded as
+    // printed 2026-10-28 (every printed ask gets a card), the misprint named
+    // in the second row's note and no corrected answer written.
+    const rows = olById.get('bio-2026-ol-q12-b-ii-2')!.rows as unknown as Array<{ verbatim: string; contextNote?: string }>;
+    expect(rows.map(row => row.verbatim)).toEqual(['Rr', 'Rr']);
+    expect(rows[0].contextNote).toBeUndefined();
+    expect(rows[1].contextNote).toMatch(/phenotype column reads White .* misprint/);
+    expect(rows[1].contextNote).not.toMatch(/\brr\b/);
   });
 
   it('pins the reviewed source PDFs', () => {
@@ -2048,11 +2046,9 @@ describe('Biology — every deck', () => {
       expect(checks.openLeaves, key).toBeUndefined();
       expect(checks.excludedLeaves, key).toBeUndefined();
     }
-    // The one excluded TASK left: a numbered sub-item under a census leaf its
-    // carded siblings (ii)1 and (ii)3 claim, kept out on Alex's decision of
-    // 2026-10-12 (the scheme's Punnett square misprints "Rr" for rr).
-    expect(Object.values(sittings).flatMap(s => s.checks.excluded.map(e => e.id)))
-      .toEqual(['bio-2026-ol-q12-b-ii-2']);
+    // No excluded task either: the last one, 2026 Ordinary Q12(b)(ii)2, is
+    // carded as printed with its misprint noted (pinned in its own block).
+    expect(Object.values(sittings).flatMap(s => s.checks.excluded.map(e => e.id))).toEqual([]);
   });
 
   it('files every card under its own printed Topic Atlas question, listed under each of its headings', () => {

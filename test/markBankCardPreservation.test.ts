@@ -321,6 +321,12 @@ const decks = [
    * carded as bio-2010-ol-q11-c-vii, its one row "The scheme prints no answer
    * for this part." (scheme p7 prints no (vii) row). The 2010 Ordinary review
    * is now 165 tasks, 165 cards. Every earlier id is unchanged. */
+  /* 2026-10-28: biology ordinary 2834 -> 2835. The last Biology exclusion,
+   * 2026 Ordinary Q12(b)(ii)2 (excluded 2026-10-12), is carded as
+   * bio-2026-ol-q12-b-ii-2 under the same rule: both rows the scheme's printed
+   * "Rr", the second row's note saying the scheme's own phenotype for that row
+   * is White, so its genotype is the SEC's misprint. The 2026 Ordinary review
+   * is now 183 tasks, 188 cards. Every earlier id is unchanged. */
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
@@ -1896,14 +1902,14 @@ describe('Mark Bank card preservation', () => {
     // The live decks, pinned whole (their history is beside the frozen pins).
     expect(BIO_HIGHER).toHaveLength(2705);
     expect(idHash(BIO_HIGHER.map(card => card.id))).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
-    expect(BIO_ORDINARY).toHaveLength(2834);
-    expect(idHash(BIO_ORDINARY.map(card => card.id))).toBe('855b303480936e2f396a87d84b1b49d89362190e28eadabe8b395a71f884c0bf');
-    expect(biologyAdditionIds.size).toBe(2705 + 2834 - (673 - 1) - (686 - 1));
+    expect(BIO_ORDINARY).toHaveLength(2835);
+    expect(idHash(BIO_ORDINARY.map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
+    expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1));
     // The sittings before 2021 had no Biology cards: everything they carry is new.
     expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(1627);
     expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1742);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
-    expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(187);
+    expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(188);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

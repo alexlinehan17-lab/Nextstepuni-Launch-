@@ -35,15 +35,16 @@ Finite printed routes (one card each, at the route tariff): Q7(c) asthma or
 bronchitis; Q13(b)(vi) the electrons or the protons; Q16(c)(vi) smoking or
 diet or exercise; Q17(a)(iv) a disorder of the ear or the eye.
 
-EXCLUDED, decided by Alex 2026-10-12: Q12(b)(ii)2. The scheme prints "Rr" in
-both offspring boxes of its Punnett square; the r-gamete row of a pink (Rr) x
-white (rr) cross gives rr, which the scheme's own matching phenotype for that
-row ("White") confirms. A card would teach the misprint, and the reviewer may
-not write the correction, so the task is reviewed, priced and excluded, with
-its reason and evidence recorded in the audit. Alex decided on 2026-10-12
-that it stays excluded: never carded and never corrected. (The census reads Q12(b)(ii)
-as one leaf, already covered by the (ii)1 and (ii)3 cards, so reconcile.py
-has no finer leaf for an exclusion entry to land on.)
+Q12(b)(ii)2, carded as printed with the misprint in its note. The scheme
+prints "Rr" in both offspring boxes of its Punnett square, while its own
+matching phenotypes beside the same two rows ((ii)3) read Pink and White: the
+second row's "Rr" is the SEC's misprint. It was reviewed, priced and excluded
+on 2026-10-12 (Alex's decision then); under Alex's rule of 2026-10-28 that
+every printed ask gets a card, no exceptions, it is carded as the 2013
+Ordinary Q13(b)(ii) and 2019 Higher Q7(b) parts are: both rows are the
+scheme's print, read from the glyphs, and the second row's note says, in our
+words, that the scheme's own phenotype for that row is White, so the genotype
+printed there is a misprint. No corrected answer is written.
 """
 from bio_review_lib import Q, SQ, S, M, G, pt, anyn, T, L
 
@@ -453,6 +454,17 @@ Q11_ARTICLE = [_C(2, 'Read the article below'),
 Q12_ROSES = _C(3, 'The images show a red rose', 'Pink roses are heterozygous.')
 Q12_CROSS = [_C(3, 'A rose with pink flowers was crossed', 'with a rose with white flowers.'),
              _C(3, 'Copy the Punnett square shown', 'show the following:')]
+# Q12(b)(ii)2: the scheme's second offspring box misprints its genotype (docstring). The
+# note is ours, a direction shown at the reveal; no corrected answer is written.
+Q12_MISPRINT = ('The scheme prints "Rr" in both offspring boxes. Its own phenotype column reads White '
+                'for this second row, so the genotype printed here is the SEC\'s misprint.')
+Q12_MISPRINT_EVIDENCE = ('Scheme p.17, Q12(b)(ii) "2. Genotypes of the possible offspring.": both offspring '
+                         'boxes of the completed Punnett square print "Rr" (read from the glyphs at '
+                         '(165,535)-(192,553) and (165,556)-(192,575)); "3. Matching phenotypes of the '
+                         'possible offspring." prints "Pink" and "White" beside the same two rows; the '
+                         'gametes it prints are R and r for the pink rose and r for the white rose. Paper '
+                         '040 p.3: a rose with pink flowers crossed with a rose with white flowers, captioned '
+                         'White (rr).')
 Q12_DNA = [_C(3, 'The diagram shows a DNA molecule.'),
            _C(3, 'The four bases, C (cytosine)', 'shown on one strand.')]
 Q13_C = [_C(4, 'Respiration can be either anaerobic or aerobic.'),
@@ -772,22 +784,13 @@ TASKS = [
       stem=[Q12_ROSES] + Q12_CROSS, fig='q12-punnett'),
     T('12bii2', 'Q12(b)(ii)2', 'C', _C(3, 'Genotypes of the possible', 'offspring.'),
       [G('tokens', page=17, clip=(165, 535, 192, 553), expect='Rr', marks=3),
-       G('tokens', page=17, clip=(165, 556, 192, 575), expect='Rr', marks=3)],
+       G('tokens', page=17, clip=(165, 556, 192, 575), expect='Rr', marks=3, note=Q12_MISPRINT)],
       'bio-1-4', 'punnett-square-offspring', SQ(17, '2. Genotypes of the possible offspring.'), 6,
-      stem=[Q12_ROSES] + Q12_CROSS,
-      excluded='The scheme prints "Rr" in both offspring boxes, but the r-gamete row of a pink '
-               '(Rr) x white (rr) cross is rr, as the scheme\'s own matching phenotype for that '
-               'row ("White") shows. Carding the printed answer would teach the misprint, and '
-               'correcting it would be the reviewer writing an answer, so the task is excluded. '
-               'Decided by Alex 2026-10-12: it stays excluded, never carded or corrected. Its '
-               'siblings (ii)1 and (ii)3 are carded.',
-      evidence='Scheme p.17, Q12(b)(ii) "2. Genotypes of the possible offspring.": both offspring '
-               'boxes of the completed Punnett square print "Rr" (read from the glyphs at '
-               '(165,535)-(192,553) and (165,556)-(192,575)); "3. Matching phenotypes of the '
-               'possible offspring." prints "Pink" and "White" beside the same two rows; the '
-               'gametes it prints are R and r for the pink rose and r for the white rose. Paper '
-               '040 p.3: a rose with pink flowers crossed with a rose with white flowers, captioned '
-               'White (rr).'),
+      stem=[Q12_ROSES] + Q12_CROSS, fig='q12-punnett',
+      decision='Carded as printed, the misprint in the second row\'s note (2013 Ordinary Q13(b)(ii) and 2019 '
+               'Higher Q7(b) precedent): excluded 2026-10-12, carded 2026-10-28 under Alex\'s rule that every '
+               'printed ask gets a card. Rows in the order the scheme sets them: the R gamete\'s row, then the r '
+               'gamete\'s. Evidence: ' + Q12_MISPRINT_EVIDENCE),
     T('12bii3', 'Q12(b)(ii)3', 'C', _C(3, 'Matching phenotypes of', 'the possible offspring.'),
       [pt(S('Pink'), 3), pt(S('White'), 3)], 'bio-1-4', 'punnett-square-phenotypes',
       SQ(17, '3. Matching phenotypes of the possible offspring.'), 6,

@@ -770,8 +770,8 @@ def build(ledger, year, level):
     for t in ledger.TASKS:
         # Only a CARDED task claims its leaf: an excluded task is reviewed and
         # recorded, but a printed ask only it reaches has no card, and every
-        # printed ask gets one (Alex, 2026-10-28). 2026 Ordinary
-        # Q12(b)(ii)2's exclusion stands under a leaf its carded siblings claim.
+        # printed ask gets one (Alex, 2026-10-28). The last Biology exclusion,
+        # 2026 Ordinary Q12(b)(ii)2, is carded as printed since that day.
         qn, letter, roman, _ = B.parse_ref(t['ref'])
         key = (qn, letter, roman)
         hit = [l for l in leaves if l == key or (l[0] == qn and l[1] == letter and roman is None)]

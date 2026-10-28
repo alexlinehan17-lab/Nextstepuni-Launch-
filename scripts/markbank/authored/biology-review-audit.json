@@ -10767,7 +10767,7 @@
      "notes": null
     },
     {
-     "status": "excluded",
+     "status": "carded",
      "key": "12bii2",
      "id": "bio-2026-ol-q12-b-ii-2",
      "questionRef": "2026 OL Q12(b)(ii)2",
@@ -10792,11 +10792,11 @@
      "concept": "punnett-square-offspring",
      "route": null,
      "rows": 2,
-     "figure": null,
+     "figure": "q12-punnett",
      "questionFigure": null,
      "sourcePages": null,
      "pairingScore": 0.75,
-     "decision": null,
+     "decision": "Carded as printed, the misprint in the second row's note (2013 Ordinary Q13(b)(ii) and 2019 Higher Q7(b) precedent): excluded 2026-10-12, carded 2026-10-28 under Alex's rule that every printed ask gets a card. Rows in the order the scheme sets them: the R gamete's row, then the r gamete's. Evidence: Scheme p.17, Q12(b)(ii) \"2. Genotypes of the possible offspring.\": both offspring boxes of the completed Punnett square print \"Rr\" (read from the glyphs at (165,535)-(192,553) and (165,556)-(192,575)); \"3. Matching phenotypes of the possible offspring.\" prints \"Pink\" and \"White\" beside the same two rows; the gametes it prints are R and r for the pink rose and r for the white rose. Paper 040 p.3: a rose with pink flowers crossed with a rose with white flowers, captioned White (rr).",
      "notes": null
     },
     {
@@ -14120,7 +14120,7 @@
      "notes": null
     }
    ],
-   "cardCount": 187,
+   "cardCount": 188,
    "baseTaskCount": 183,
    "figures": [
     "biology-2026-ol-q10-heart",
@@ -14399,20 +14399,7 @@
       "column": "Non-cloudy"
      }
     ],
-    "excluded": [
-     {
-      "key": "12bii2",
-      "id": "bio-2026-ol-q12-b-ii-2",
-      "questionRef": "2026 OL Q12(b)(ii)2",
-      "total": 6,
-      "reason": "The scheme prints \"Rr\" in both offspring boxes, but the r-gamete row of a pink (Rr) x white (rr) cross is rr, as the scheme's own matching phenotype for that row (\"White\") shows. Carding the printed answer would teach the misprint, and correcting it would be the reviewer writing an answer, so the task is excluded. Decided by Alex 2026-10-12: it stays excluded, never carded or corrected. Its siblings (ii)1 and (ii)3 are carded.",
-      "evidence": "Scheme p.17, Q12(b)(ii) \"2. Genotypes of the possible offspring.\": both offspring boxes of the completed Punnett square print \"Rr\" (read from the glyphs at (165,535)-(192,553) and (165,556)-(192,575)); \"3. Matching phenotypes of the possible offspring.\" prints \"Pink\" and \"White\" beside the same two rows; the gametes it prints are R and r for the pink rose and r for the white rose. Paper 040 p.3: a rose with pink flowers crossed with a rose with white flowers, captioned White (rr).",
-      "schemeRows": [
-       "Rr",
-       "Rr"
-      ]
-     }
-    ]
+    "excluded": []
    }
   },
   "2025-hl": {
