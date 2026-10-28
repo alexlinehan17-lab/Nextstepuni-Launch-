@@ -45,6 +45,7 @@ What it guarantees, and how:
   one task, and every task resolves to a census leaf.
 """
 import hashlib
+import unicodedata
 import json
 import os
 import re
@@ -185,6 +186,10 @@ def _script(text, table):
     """A raised or lowered span in Unicode super/subscript characters, or None
     when any printed character has no such form (it is then left as printed)."""
     core = text.strip()
+    # A digit or letter set in the Mathematical Alphanumeric block (CambriaMath
+    # "𝟐" for 2) is that digit: folded before its raised or lowered form is
+    # chosen, so "d" with a raised "𝟐" reads "d²", not "d𝟐".
+    core = ''.join(unicodedata.normalize('NFKD', c) if 0x1D400 <= ord(c) <= 0x1D7FF else c for c in core)
     if not core or any(c not in table for c in core):
         return None
     lead = text[:len(text) - len(text.lstrip())]
@@ -786,7 +791,7 @@ _CELL_ONLY = re.compile(CELL.pattern)
 # on one line with a solidus: "C = q/V". An operand of more than one symbol is
 # bracketed ("1/(4πε)") so the line cannot be read any other way. Every glyph
 # is the SEC's; the solidus and brackets only say what the bar said.
-_ATOM = re.compile(r'^(?:\d+(?:\.\d+)?|[A-Za-z\u0370-\u03ff][\u00b2\u00b3\u00b9\u2070-\u209f]*)$')
+_ATOM = re.compile(r'^(?:\d+(?:\.\d+)?|[A-Za-z\u0370-\u03ff\U0001d400-\U0001d7ff][\u00b2\u00b3\u00b9\u2070-\u209f]*)$')
 
 
 def _region_text(spans):
