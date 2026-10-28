@@ -20,5 +20,7 @@
  ["scheme-q6a-ii", "scheme-panels", 11, [[114, 180, 300, 276], [310, 162.5, 445, 276]]],
  ["q8b-ii-art", "scheme-labels", 13, [110, 350, 202, 412]],
  ["scheme-q8b-ii", "scheme", 13, [110, 350, 202, 412]],
- ["scheme-q10b-i", "scheme", 15, [110, 500, 145, 529]]
+ ["scheme-q10b-i", "scheme", 15, [110, 500, 145, 529]],
+ ["paper-q10a-i-print", "paper-panels", 11, [[52, 97, 545, 151.5]]],
+ ["paper-q10c-i-print", "paper-panels", 11, [[52, 495, 433, 586.5]]]
 ]

@@ -139,7 +139,7 @@
   },
   "chemistry": {
     "cards": 3369,
-    "contentHash": "53fc9dfbd3a882b5",
+    "contentHash": "1373456627274212",
     "coveragePct": 100.0,
     "covered": 3496,
     "excluded": 0,
@@ -364,7 +364,7 @@
   },
   "geography": {
     "cards": 4153,
-    "contentHash": "a6e62d9ee7b835c2",
+    "contentHash": "c5cb46da46ff07b8",
     "coveragePct": 100.0,
     "covered": 3869,
     "excluded": 0,

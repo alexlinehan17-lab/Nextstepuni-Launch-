@@ -97,5 +97,12 @@
   "ask": "Explain how the carbon in fossil fuels becomes CO₂",
   "answer": "photosynthesis / dissolving in oceans",
   "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q9-c-i-iii",
+  "ask": "",
+  "answer": "chemically inactive / not reactive",
+  "figure": true,
+  "figureSrc": "chemistry-2025-OL-paper-q9c-i-print"
  }
 ]

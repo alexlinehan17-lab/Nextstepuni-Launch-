@@ -31,5 +31,9 @@
  ["q11db-iii-table", "scheme-labels", 22, [96, 218, 547, 382]],
  ["scheme-q11db-iv", "scheme", 22, [95, 406, 545, 758]],
  ["q11db-iv-table", "scheme-labels", 22, [100, 422, 540, 725]],
- ["paper-q3a-print", "paper-panels", 4, [[52, 52, 545, 346], [52, 354, 512, 424]]]
+ ["paper-q3a-print", "paper-panels", 4, [[52, 52, 545, 346], [52, 354, 512, 424]]],
+ ["paper-q4h-print", "paper-panels", 5, [[80, 487, 545, 521]]],
+ ["paper-q6a-print", "paper-panels", 8, [[52, 55, 545, 75], [52, 76, 380, 95]]],
+ ["paper-q8a-print", "paper-panels", 9, [[52, 55, 566, 76], [52, 242, 566, 375.5]]],
+ ["paper-q10b-i-print", "paper-panels", 11, [[80, 252, 545, 329.5]]]
 ]

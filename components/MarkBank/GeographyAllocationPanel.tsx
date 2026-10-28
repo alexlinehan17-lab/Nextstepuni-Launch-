@@ -15,6 +15,7 @@ import React from 'react';
 import type { GeographyAllocationGroup, GeographyCriterion, GeographySrpAllocation } from '../../types/markBank';
 import {
   geographyPooledSrps,
+  geographyRowInUnit,
   geographyRowScoreId,
   geographySrpScoreId,
   type GeographyScoreId,
@@ -73,16 +74,19 @@ export default function GeographyAllocationPanel({ criterion, scores, onScore }:
       {group.rows.map(row => {
         const id = geographyRowScoreId(criterion.id, row.id, unit);
         const claimed = scores[id] ?? 0;
+        // A row the scheme prices unalike per point ("7/6 marks graded")
+        // offers this point's own price and steps.
+        const { marks, steps } = geographyRowInUnit(row, unit);
         return (
           <ClaimRow
             key={id}
             text={row.text}
-            marks={row.marks}
-            steps={row.steps}
+            marks={marks}
+            steps={steps}
             claimed={claimed > 0}
             value={claimed}
             note={row.tariffOnly ? NO_PRINTED_ANSWER : undefined}
-            onToggle={() => onScore(id, claimed > 0 ? 0 : row.marks)}
+            onToggle={() => onScore(id, claimed > 0 ? 0 : marks)}
             onStep={step => onScore(id, claimed === step ? 0 : step)}
           />
         );

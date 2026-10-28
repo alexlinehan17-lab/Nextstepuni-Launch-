@@ -11,7 +11,7 @@
  * is capped at the printed maximum, so a student can never place above the paper.
  */
 
-import type { GeographyAllocation, GeographyCriterion, SecRubricCard } from '../../types/markBank';
+import type { GeographyAllocation, GeographyAnswerRow, GeographyCriterion, SecRubricCard } from '../../types/markBank';
 
 export type GeographyScoreId = `geography:${string}`;
 export type GeographyScores = Partial<Record<GeographyScoreId, number>>;
@@ -29,7 +29,8 @@ export const geographySrpScoreId = (criterionId: string, srpId: string, unit?: n
   `geography:${criterionId}:srp:${srpId}${unit ? `:u${unit}` : ''}`;
 
 /** A choice's claim: the 1-based option the student picked (a route, a band
- *  or one of two printed answers); 0 or absent is none. */
+ *  or one of two printed answers); 0 or absent is none. A choice that
+ *  `follows` another criterion's is scored under that criterion's id. */
 export const geographyChoiceScoreId = (criterionId: string): GeographyScoreId =>
   `geography:${criterionId}:choice`;
 
@@ -37,6 +38,22 @@ export const geographyChoiceScoreId = (criterionId: string): GeographyScoreId =>
  *  never share a score with the other route's. */
 export const geographyOptionCriterionId = (criterionId: string, optionId: string) =>
   `${criterionId}:${optionId}`;
+
+/** What a row can be claimed at in one unit of a repeated group: its own
+ *  price there where the scheme prices the units unalike (`unitMarks`, "7/6
+ *  marks graded" over 27 + 27 + 26), and only the steps up to that price. */
+export function geographyRowInUnit(row: GeographyAnswerRow, unit?: number): { marks: number; steps?: number[] } {
+  const own = unit !== undefined ? row.unitMarks?.[unit - 1] : undefined;
+  if (own === undefined || own === row.marks) return { marks: row.marks, steps: row.steps };
+  const steps = row.steps?.filter(step => step <= own);
+  return { marks: own, steps: steps && steps.length > 1 ? steps : undefined };
+}
+
+/** The values a row can be claimed at in one unit: its steps, or its price. */
+export const geographyRowClaims = (row: GeographyAnswerRow, unit?: number): number[] => {
+  const { marks, steps } = geographyRowInUnit(row, unit);
+  return steps ?? [marks];
+};
 
 const units = (count: number | undefined) =>
   count ? Array.from({ length: count }, (_, index) => index + 1) : [undefined];
@@ -59,7 +76,9 @@ export function geographyAllocationMarks(criterion: GeographyCriterion, scores: 
   const allocation = criterion.allocation;
   if (!allocation) return Math.max(0, Math.min(criterion.maxMarks, scores[geographyScoreId(criterion.id)] ?? 0));
   if (allocation.choice) {
-    const picked = allocation.choice.options[(scores[geographyChoiceScoreId(criterion.id)] ?? 0) - 1];
+    // A choice that follows another criterion's (one printed route table split
+    // over several criteria) reads that criterion's pick.
+    const picked = allocation.choice.options[(scores[geographyChoiceScoreId(allocation.choice.follows ?? criterion.id)] ?? 0) - 1];
     if (!picked) return 0;
     const value = picked.allocation
       ? geographyAllocationMarks({
@@ -75,8 +94,7 @@ export function geographyAllocationMarks(criterion: GeographyCriterion, scores: 
     for (const unit of units(group.repeat?.count)) {
       for (const row of group.rows) {
         const claimed = scores[geographyRowScoreId(criterion.id, row.id, unit)] ?? 0;
-        const permitted = row.steps ?? [row.marks];
-        total += permitted.includes(claimed) ? claimed : 0;
+        total += geographyRowClaims(row, unit).includes(claimed) ? claimed : 0;
       }
       for (const srp of group.srp) {
         if (srp.min !== undefined) continue;

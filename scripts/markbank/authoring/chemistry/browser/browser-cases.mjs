@@ -4,7 +4,9 @@
  * answer printed in the question), nothing overflows sideways, and after the
  * reveal the named marking point is there and a solution crop has loaded.
  *   node browser-cases.mjs <cases.json> <name>
- * cases.json: [{ "id", "ask", "answer", "figure"?: true, "solution"?: true }] */
+ * cases.json: [{ "id", "ask", "answer", "figure"?: true, "figureSrc"?: string, "solution"?: true }]
+ * figureSrc names the one picture that must be on screen before the reveal (a part of its src),
+ * for a card that shows the paper's print as its question beside another paper picture. */
 const { chromium } = await import(process.env.PLAYWRIGHT_CORE ?? 'playwright-core');
 import fs from 'node:fs/promises';
 
@@ -35,7 +37,7 @@ try {
     if (await page.locator('img[src*="-scheme-"]').count()) throw new Error(`${c.id}: solution shown before the reveal`);
     if (await page.getByText(c.answer, { exact: false }).count()) throw new Error(`${c.id}: answer shown before the reveal`);
     if (c.figure) {
-      const fig = page.locator('img[src*="-paper-"]').first();
+      const fig = page.locator(c.figureSrc ? `img[src*="${c.figureSrc}"]` : 'img[src*="-paper-"]').first();
       await fig.waitFor();
       await fig.evaluate(img => img.decode?.().catch(() => {}));
       if (!(await fig.evaluate(img => img.complete && img.naturalWidth > 0))) throw new Error(`${c.id}: figure failed to load`);

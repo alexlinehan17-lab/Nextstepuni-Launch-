@@ -88,5 +88,12 @@
   "id": "chem-2023-ol-q3-a-ii",
   "ask": "concentration of dissolved solids",
   "answer": "find mass residue"
+ },
+ {
+  "id": "chem-2023-ol-q2-a",
+  "ask": "",
+  "answer": "known concentration",
+  "figure": true,
+  "figureSrc": "chemistry-2023-OL-paper-q2a-print"
  }
 ]

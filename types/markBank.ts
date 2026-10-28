@@ -855,6 +855,11 @@ export interface GeographyAnswerRow {
    *  named 3m"). The row shows the scheme's words and says any correct answer
    *  scores; it never carries an example the scheme did not print. */
   tariffOnly?: boolean;
+  /** In a repeated group whose points the scheme prices unalike, this row's
+   *  price in each point, in order: "Overall coherence 7/6 marks graded" under
+   *  "Number of aspects: 3 (27 + 27 + 26)" is 7, 7 and 6. `marks` is the
+   *  largest; a point offers only the steps up to its own price. */
+  unitMarks?: number[];
 }
 
 /** A Significant Relevant Point allocation: how many the scheme counts, at
@@ -924,6 +929,11 @@ export interface GeographyAllocationChoice {
   /** The scheme's heading over the options ("Number of aspects"), or ''. */
   prompt: string;
   options: GeographyChoiceOption[];
+  /** The criterion whose pick this one shares. One printed route table the
+   *  review split over several criteria (2010–2013 Higher options: "Number of
+   *  aspects" over identifying, discussion and coherence) is chosen once: the
+   *  criterion that prints the heading owns the pick, the others follow it. */
+  follows?: string;
 }
 
 export interface GeographyCriterion {
