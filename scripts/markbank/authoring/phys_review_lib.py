@@ -270,7 +270,7 @@ def _page_dict(page, glyphs=None, clip=None):
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 fix = next((m for f, m in (glyphs or {}).items() if f in sp['font']), None)
-                out, prev = [], None
+                out, prev, glyphs_at = [], None, []
                 for ch in sp['chars']:
                     c = ch['c']
                     if (c.strip() and ch['bbox'][2] - ch['bbox'][0] < 0.05
@@ -288,7 +288,9 @@ def _page_dict(page, glyphs=None, clip=None):
                         gid = gid_at.get((sp['font'], round(ch['origin'][0], 1), round(ch['origin'][1], 1)))
                         c = fix.get(gid, c)
                     out.append(c)
+                    glyphs_at.append((ch['bbox'][0], c))
                 sp['text'] = ''.join(out)
+                sp['glyphs'] = glyphs_at   # each kept glyph with its x, for equation_text
     return raw
 
 
@@ -990,11 +992,23 @@ def equation_text(page, clip, glyphs=None):
                                        for i in range(len(ss))))
         u, l = txt(up), txt(lo)
         return (_script(u, SUP_MAP) or u if u else '') + (_script(l, SUB_MAP) or l if l else '')
-    tokens = [(sp['bbox'][0], _span_text([sp], 0), 'main') for sp in sorted(main, key=lambda s: s['bbox'][0])]
+    # The main line read glyph by glyph, each at its own x: a nuclide's stack
+    # is often printed INSIDE a span (" + He" holds He's 4/2), and placed by the
+    # span's start it would land after the whole span.
+    tokens = []
+    for sp in main:
+        for x, c in sp.get('glyphs') or [(sp['bbox'][0], sp['text'])]:
+            tokens.append((x, _GLYPHMAP.get(_decode_symbol(c, sp['font']), _decode_symbol(c, sp['font'])), 'main'))
     glyphs = [t for t in tokens if t[1].strip()]
     for st in stacks:
         after = [t for t in glyphs if 0 <= t[0] - st['x1'] <= 3]
         x = st['x1'] - 0.01 if after else st['x0']
         tokens.append((x, script(st), 'script'))
     tokens.sort(key=lambda t: t[0])
-    return _norm(''.join(t for _, t, _ in tokens))
+    out = _norm(''.join(t for _, t, _ in tokens))
+    # A span's leading space shares its x with the glyph after it and can sort
+    # between a nuclide's stack and its symbol ("²³⁴₉₂ U"): a pre-script is
+    # closed up to its symbol, and "+" and "→" are set with a space either side.
+    out = re.sub(r'([\u00b2\u00b3\u00b9\u2070-\u209f]) +(?=[A-Za-z\u0370-\u03ff])', r'\1', out)
+    out = re.sub(r'\s*([+→])\s*', r' \1 ', out)
+    return _norm(out)
