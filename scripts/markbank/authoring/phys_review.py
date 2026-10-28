@@ -1265,6 +1265,16 @@ def reconcile_existing(ledger, prefix, cards):
     return replacements, additions, record
 
 
+def _unshipped_before(ledger, level, record):
+    import subprocess
+    lvl = 'higher' if level == 'hl' else 'ordinary'
+    deck = subprocess.check_output(['git', 'show', f'{ledger.BASELINE_COMMIT}:components/MarkBank/cards/physics/{lvl}.ts'],
+                                   cwd=ROOT, text=True)
+    shipped = set(re.findall(r'^    id: "([^"]+)"', deck, re.M))
+    kept = list(record['verified']) + [c['id'] for c in record['corrected']]
+    return sorted(i for i in kept if i not in shipped)
+
+
 def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     prefix = f'phys-{year}-{level}-'
     raw = open(AUTHORED, encoding='utf-8').read()
@@ -1372,6 +1382,11 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
         'routes': ledger.ROUTES,
         'tasks': audit_tasks,
         **({'review': {'baselineCommit': ledger.BASELINE_COMMIT, **record,
+                       # Pre-existing ids the deck build never SHIPPED at the
+                       # baseline (it dropped them): no student has their
+                       # progress, so the preservation test counts them with
+                       # the review's additions.
+                       'unshippedBefore': _unshipped_before(ledger, level, record),
                        'withdrawn': {k: {'replacementId': v[0], 'reason': v[1]}
                                      for k, v in getattr(ledger, 'WITHDRAW', {}).items()}}}
            if record else {}),

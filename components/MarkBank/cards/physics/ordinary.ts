@@ -1311,11 +1311,9 @@ export const CARDS: SecCard[] = [
     id: "phys-2022-ol-q6-i", topicId: "phys-2-4", conceptId: "primary-colours-of-light",
     section: "B", questionRef: "2022 OL Q6(i)",
     questionText: "Name the three primary colours of light.",
-    tariffModel: {"kind":"orderedSplit","notation":"4 + 2 + 1"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "red", marks: null },
-    { id: "r-2", kind: "point", verbatim: "blue", marks: null },
-    { id: "r-3", kind: "point", verbatim: "green", marks: null },
+    { id: "r1", kind: "anyN", verbatim: "red / blue / green", marks: null, contextNote: "The scheme prints these items under one sum, [4 + 2 + 1], and names no order: a response earns the marks step by step.", group: {"claimMax":3,"perOption":4,"options":["red","blue","green"],"perOptionSteps":[4,2,1]} },
     ],
   } as SecCard,
   {
@@ -1328,7 +1326,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by nuclear fission?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "splitting a nucleus [by a neutron, releasing energy]", marks: 7, contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "splitting a nucleus [by a neutron, releasing energy]", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -1341,7 +1339,7 @@ export const CARDS: SecCard[] = [
     questionText: "A fuse is a safety device used in an electrical plug. Describe how a fuse works.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "melts", marks: 7, accepts: ["breaks"], contextNote: "The scheme prints 'melts/breaks when current is too high'. The key word only scores in the correct context — the answer must say this happens when the current is too high. Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "melts/breaks when current is too high", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -1351,10 +1349,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q6-l", topicId: "phys-4-4", conceptId: "half-life-definition",
     section: "B", questionRef: "2022 OL Q6(l)",
-    questionText: "Explain what is meant by the half-life of a radioactive sample.",
+    questionText: "Explain what is meant by the half‐life of a radioactive sample.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "the time for half the sample to decay", marks: 7, accepts: ["the time for its activity to halve"], contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "the time for half the sample to decay / the time for its activity to halve", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -1364,10 +1362,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q7-i", topicId: "phys-1-1", conceptId: "definition-of-velocity",
     section: "B", questionRef: "2022 OL Q7(i)",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
     questionText: "What is meant by velocity?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "rate of change of displacement", marks: 6, accepts: ["speed in a given direction","s ÷ t"], contextNote: "One mark is deducted if 'distance' is used instead of 'displacement'. Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "rate of change of displacement / speed in a given direction / s ÷ t", marks: 6, contextNote: "[–1 if “distance” used instead of “displacement”] [accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1377,12 +1376,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q7-iii", topicId: "phys-1-1", conceptId: "acceleration-with-units",
     section: "B", questionRef: "2022 OL Q7(iii)",
-    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes (360 s).",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
     questionText: "Calculate the acceleration of the train. Include units in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "25 ÷ 360 = 0.069", marks: 4, contextNote: "Partial answer accepted for 2, e.g. a = (v-u)/t." },
-    { id: "r-2", kind: "point", verbatim: "m s–2", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "25 ÷ 360 = 0.069", marks: 4, contextNote: "[accept partial answer for 2, e.g. a = (v-u)/t]" },
+    { id: "r2", kind: "point", verbatim: "m s⁻²", marks: 2 },
     ],
   } as SecCard,
   {
@@ -1392,11 +1391,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q7-iv", topicId: "phys-1-2", conceptId: "force-from-mass-and-acceleration",
     section: "B", questionRef: "2022 OL Q7(iv)",
-    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes. Its acceleration was calculated in part (iii) as 0.069 m s–2.",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
     questionText: "Calculate the force required to accelerate the train.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "420000 × 0.069 = 29166.7 N", marks: 6, contextNote: "Partial answer accepted for 3, e.g. F = ma." },
+    { id: "r1", kind: "point", verbatim: "420000 × 0.069 = 29166.7 N", marks: 6, contextNote: "[accept partial answer for 3, e.g. F = ma]" },
     ],
   } as SecCard,
   {
@@ -1406,11 +1405,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q7-v", topicId: "phys-1-1", conceptId: "distance-under-uniform-acceleration",
     section: "B", questionRef: "2022 OL Q7(v)",
-    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes.",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
     questionText: "Calculate the distance the train travelled in 6 minutes.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "4500 m", marks: 6, contextNote: "Partial answer accepted for 3, e.g. s = ut + ½at2." },
+    { id: "r1", kind: "point", verbatim: "4500 m", marks: 6, contextNote: "[accept partial answer for 3, e.g. s = ut + ½at²]" },
     ],
   } as SecCard,
   {
@@ -1420,11 +1419,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q7-vi", topicId: "phys-1-1", conceptId: "distance-at-constant-speed",
     section: "B", questionRef: "2022 OL Q7(vi)",
-    stem: "A train accelerated from rest to 25 m s–1 in 6 minutes. The train then maintained this speed of 25 m s–1 for a further 15 minutes.",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes. The train then maintained this speed of 25 m s⁻¹ for a further 15 minutes.",
     questionText: "Calculate the distance the train travelled during this 15 minute interval.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "25 × 15 × 60 = 22500 m", marks: 6, contextNote: "Partial answer accepted for 3, e.g. formula for distance." },
+    { id: "r1", kind: "point", verbatim: "25 × 15 × 60 = 22500 m", marks: 6, contextNote: "[accept partial answer for 3, e.g. formula for distance]" },
     ],
   } as SecCard,
   {
@@ -1447,13 +1446,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q8-iii", topicId: "phys-2-1", conceptId: "heat-source-for-water",
     section: "B", questionRef: "2022 OL Q8(iii)",
-    stem: "Water is heated up, changing its temperature and its state.",
+    stem: "The graph shows how the temperature and state of water change as the water is heated up.",
     questionText: "Describe how the energy could have been supplied to the water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "joulemeter", marks: 6, accepts: ["element","coil","electricity","hot plate"], contextNote: "The scheme prints this as an 'e.g.' list and states that its methods are not exhaustive, so any other valid heat source is acceptable.", openList: true },
-    { id: "r-2", kind: "alt", verbatim: "in the water", marks: 3, accepts: ["under the container of water"], contextNote: "Scheme: 'detail, e.g. in the water, under the container of water as appropriate' — the second mark is for saying where the heat source is placed.", openList: true },
+    { id: "r1", kind: "anyN", verbatim: "joulemeter / element / coil / electricity / hot plate", marks: null, openList: true, group: {"claimMax":1,"perOption":6,"options":["joulemeter","element","coil","electricity","hot plate"]} },
+    { id: "r2", kind: "point", verbatim: "detail, e.g. in the water, under the container of water as appropriate", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2022-ol-q8-graph",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q8-graph.png",
+          "srcHash": "e3c2d6d1b74b5e10e1ef69903eef4497",
+          "alt": "Graph of temperature against heat added: a line rising from the origin through a stretch labelled solid, a level stretch labelled melting, a rising stretch labelled X, a long level stretch labelled Y, and a final rising stretch labelled gas.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1462,10 +1469,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q8-iv", topicId: "phys-2-1", conceptId: "latent-heat-calculation",
     section: "B", questionRef: "2022 OL Q8(iv)",
-    questionText: "Ice has a latent heat of 330000 J kg–1. Calculate how much energy is required to change 0.2 kg of ice to water.",
+    questionText: "Ice has a latent heat of 330000 J kg⁻¹. Calculate how much energy is required to change 0.2 kg of ice to water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "330000 × 0.2 = 66000 J", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "330000 × 0.2 = 66000 J", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1478,7 +1485,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain why a steam burn is more dangerous than a burn from boiling water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "steam has more energy", marks: 6, accepts: ["steam may have higher temperature"], contextNote: "The scheme separates the two statements with a solidus, so either one alone is equally acceptable for the full 6 marks." },
+    { id: "r1", kind: "point", verbatim: "steam has more energy / steam may have higher temperature", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1488,11 +1495,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q8-vi", topicId: "phys-2-1", conceptId: "thermometric-property",
     section: "B", questionRef: "2022 OL Q8(vi)",
-    stem: "The temperature of water is measured throughout an experiment using a thermometer.",
+    stem: "The temperature of the water needs to be measured throughout this experiment. It is measured using a thermometer.",
     questionText: "A thermometer uses a particular thermometric property to measure temperature. What is meant by a thermometric property?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "one that changes [measurably] with heat", marks: 5, accepts: ["temperature"], contextNote: "The scheme reads 'one that changes [measurably] with heat/temperature' — 'heat' and 'temperature' are equally acceptable alternatives in that statement." },
+    { id: "r1", kind: "point", verbatim: "one that changes [measurably] with heat/temperature", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1502,10 +1509,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q8-vii", topicId: "phys-2-1", conceptId: "thermometric-property-examples",
     section: "B", questionRef: "2022 OL Q8(vii)",
+    stem: "The temperature of the water needs to be measured throughout this experiment. It is measured using a thermometer.",
     questionText: "State two examples of thermometric properties.",
-    tariffModel: {"kind":"orderedSplit","notation":"4 + 2"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "volume", marks: null, contextNote: "The scheme prints 'e.g volume, emf, pressure, height, resistance etc. [4 + 2]' — the first correct property scores 4 and the second 2, and the list is not exhaustive.", openList: true, group: {"claimMax":2,"options":["volume","emf","pressure","height","resistance"]} },
+    { id: "r1", kind: "anyN", verbatim: "volume / emf / pressure / height / resistance", marks: null, contextNote: "The scheme prints these items under one sum, [4 + 2], and names no order: a response earns the marks step by step.", openList: true, group: {"claimMax":2,"perOption":4,"options":["volume","emf","pressure","height","resistance"],"perOptionSteps":[4,2]} },
     ],
   } as SecCard,
   {
@@ -1518,18 +1526,8 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by reflection?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "rebounding of a wave off a surface", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "rebounding of a wave off a surface", marks: 3 },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1538,20 +1536,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-iii", topicId: "phys-2-3", conceptId: "real-image-definition",
     section: "B", questionRef: "2022 OL Q9(iii)",
+    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual.",
     questionText: "The image formed is real. Explain what is meant by a real image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "one formed by the intersection of rays", marks: 6, accepts: ["one formed on a screen"], contextNote: "Separated by a solidus in the scheme, so either statement alone earns the full 6 marks." },
+    { id: "r1", kind: "point", verbatim: "one formed by the intersection of rays / one formed on a screen", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2022-ol-q9-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q9-diagram.png",
+          "srcHash": "e571fa263e98a0de4c7aa9883e8f8c94",
+          "alt": "Ray diagram to complete: a dashed principal axis with an upright arrow labelled object on the left, a point labelled f on the axis to its right, and a concave mirror curving across the axis further right.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -1561,21 +1558,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-v", topicId: "phys-2-3", conceptId: "magnification-image-height",
     section: "B", questionRef: "2022 OL Q9(v)",
+    stem: "The object is 20 cm in front of the concave mirror. The mirror has a focal length of 12 cm.",
     questionText: "The object has a height of 4 cm. Calculate the height of the image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "m = v/u = 1.5", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "image height = 4 × 1.5 = 6 cm", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "m = v/u = 1.5", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "image height = 4 × 1.5 = 6 cm", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2022-ol-q9-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q9-diagram.png",
+          "srcHash": "e571fa263e98a0de4c7aa9883e8f8c94",
+          "alt": "Ray diagram to complete: a dashed principal axis with an upright arrow labelled object on the left, a point labelled f on the axis to its right, and a concave mirror curving across the axis further right.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -1588,7 +1584,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one use for a concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "shaving", marks: 4, accepts: ["dentistry","headlights","searchlights","satellite dishes"], contextNote: "The scheme gives these as examples ('e.g. ... etc.'), so any other valid use of a concave mirror is acceptable.", openList: true },
+    { id: "r1", kind: "anyN", verbatim: "shaving / dentistry / headlights / searchlights / satellite dishes", marks: null, contextNote: "[accept partial answer for 2]", openList: true, group: {"claimMax":1,"perOption":4,"options":["shaving","dentistry","headlights","searchlights","satellite dishes"]} },
     ],
   } as SecCard,
   {
@@ -1598,10 +1594,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-viii", topicId: "phys-2-3", conceptId: "virtual-image-definition",
     section: "B", questionRef: "2022 OL Q9(viii)",
+    stem: "Light is also reflected by convex mirrors.",
     questionText: "The image produced in a convex mirror is always virtual. Explain what is meant by a virtual image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "one formed by the apparent intersection of rays", marks: 6, accepts: ["one not formed on a screen"], contextNote: "Separated by a solidus in the scheme, so either statement alone earns the full 6 marks." },
+    { id: "r1", kind: "point", verbatim: "one formed by the apparent intersection of rays / one not formed on a screen", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1621,10 +1618,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-ix", topicId: "phys-2-3", conceptId: "convex-mirror-uses",
     section: "B", questionRef: "2022 OL Q9(ix)",
+    stem: "Light is also reflected by convex mirrors.",
     questionText: "State one use for a convex mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "cars", marks: 4, accepts: ["shops","roads"], contextNote: "The scheme gives these as examples ('e.g. ... etc.'), so any other valid use of a convex mirror is acceptable.", openList: true },
+    { id: "r1", kind: "anyN", verbatim: "cars / shops / roads", marks: null, contextNote: "[accept partial answer for 2]", openList: true, group: {"claimMax":1,"perOption":4,"options":["cars","shops","roads"]} },
     ],
   } as SecCard,
   {
@@ -1637,7 +1635,7 @@ export const CARDS: SecCard[] = [
     questionText: "Sound is also an example of a longitudinal wave. What is a longitudinal wave?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "wave displacement is parallel to direction of wave", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "wave displacement is parallel to direction of wave", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1645,12 +1643,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q10-iii", topicId: "phys-2-7", conceptId: "diffraction-wavelength-and-gap",
+    id: "phys-2022-ol-q10-iii", topicId: "phys-2-3", conceptId: "diffraction-wavelength-and-gap",
     section: "B", questionRef: "2022 OL Q10(iii)",
+    stem: "Sound waves can undergo reflection, refraction, diffraction and interference.",
     questionText: "A doorway may cause a sound wave to diffract but it will not cause a light wave to do so. Explain why.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "appropriate reference to width of doorway and wavelength of sound", marks: 6, accepts: ["light"], contextNote: "The scheme reads 'appropriate reference to width of doorway and wavelength of sound/light' — comparing the doorway width with either wavelength earns the mark." },
+    { id: "r1", kind: "criterion", verbatim: "appropriate reference to width of doorway and wavelength of sound/light", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -1663,7 +1662,7 @@ export const CARDS: SecCard[] = [
     questionText: "Sound waves do not undergo polarisation but light waves do. What is meant by polarisation?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "wave vibrations restricted to one plane", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "wave vibrations restricted to one plane", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1671,13 +1670,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q10-vi", topicId: "phys-2-5", conceptId: "resonance-definition",
+    id: "phys-2022-ol-q10-vi", topicId: "phys-2-6", conceptId: "resonance-definition",
     section: "B", questionRef: "2022 OL Q10(vi)",
     stem: "The human ear is most sensitive to sounds with frequencies between 2 kHz and 4 kHz. One reason for this is that sounds in this range can cause resonance to occur in the ear canal.",
     questionText: "What is meant by resonance?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "transfer of energy between two objects of similar natural frequency", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "transfer of energy between two objects of similar natural frequency", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1690,7 +1689,7 @@ export const CARDS: SecCard[] = [
     questionText: "The frequency of a sound wave is 2800 Hz and it has a wavelength of 0.12 m. Calculate the speed of the wave.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2800 × 0.12 = 336 m s–1", marks: 5, contextNote: "Partial answer accepted for 3, e.g. c = fλ." },
+    { id: "r1", kind: "point", verbatim: "2800 × 0.12 = 336 m s⁻¹", marks: 5, contextNote: "[accept partial answer for 3, e.g. c = fλ]" },
     ],
   } as SecCard,
   {
@@ -1700,10 +1699,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q11-i", topicId: "phys-3-3", conceptId: "electric-current-definition",
     section: "B", questionRef: "2022 OL Q11(i)",
+    stem: "Benjamin Franklin began experimenting with electricity during the 18th century.",
     questionText: "What is electric current?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "flow of charge", marks: 6, contextNote: "Key words — they must appear in the correct context in the candidate's answer to merit the marks." },
+    { id: "r1", kind: "point", verbatim: "flow of charge", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1716,7 +1716,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name an instrument used to measure electric current.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "ammeter", marks: 6, accepts: ["galvanometer","multimeter"], contextNote: "Separated by solidi in the scheme, so all three are equally acceptable. The scheme's 'voltmeter, ohmmeter' are listed only as partial answers worth 3, not as correct answers." },
+    { id: "r1", kind: "point", verbatim: "ammeter /galvanometer / multimeter", marks: 6, contextNote: "[accept partial answer for 3, e.g. voltmeter, ohmmeter]" },
     ],
   } as SecCard,
   {
@@ -1729,7 +1729,7 @@ export const CARDS: SecCard[] = [
     questionText: "The wires in a circuit are made of metal. Explain why.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "conductor", marks: 3, contextNote: "Key word — 'conductor' scores only inside a correct statement (metal is a good conductor of electricity).", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "conductor", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1737,12 +1737,12 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q11-v", topicId: "phys-3-1", conceptId: "charge-carrier-in-metal",
+    id: "phys-2022-ol-q11-v", topicId: "phys-3-3", conceptId: "charge-carrier-in-metal",
     section: "B", questionRef: "2022 OL Q11(v)",
     questionText: "Name the subatomic particle that is the charge carrier in a metal.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "electron", marks: 6, contextNote: "The scheme lists 'proton, neutron' only as partial answers worth 3, not as correct answers.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "electron", marks: 6, contextNote: "[accept partial answer for 3, e.g. proton, neutron]" },
     ],
   } as SecCard,
   {
@@ -1755,7 +1755,7 @@ export const CARDS: SecCard[] = [
     questionText: "A charge of 30 C passes through a wire in a time of 6 s. Calculate the current flowing in the wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "30 ÷ 6 = 5 A", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "30 ÷ 6 = 5 A", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1765,11 +1765,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q11-vii", topicId: "phys-3-3", conceptId: "ohms-law-potential-difference",
     section: "B", questionRef: "2022 OL Q11(vii)",
-    stem: "A charge of 30 C passes through a wire in a time of 6 s, so the current in the wire is 5 A (the answer to part (vi)).",
-    questionText: "The wire has a resistance of 3 Ω. Calculate the potential difference (voltage) across the wire.",
+    stem: "(vi) A charge of 30 C passes through a wire in a time of 6 s. Calculate the current flowing in the wire.",
+    questionText: "The wire has a resistance of 3 Ω. Calculate the potential difference (voltage) across the wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "5 × 3 = 15 V", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "5 × 3 = 15 V", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1779,11 +1779,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q11-ix", topicId: "phys-3-3", conceptId: "resistance-and-length",
     section: "B", questionRef: "2022 OL Q11(ix)",
-    stem: "A piece of wire of length 1.5 m has a resistance of 12 Ω.",
+    stem: "A piece of wire of length 1.5 m has a resistance of 12 Ω.",
     questionText: "What is the resistance of a 3 m piece of the same wire?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "24 Ω", marks: 4, accepts: ["double"], contextNote: "Separated by a solidus in the scheme, so stating that the resistance doubles is equally acceptable." },
+    { id: "r1", kind: "point", verbatim: "24 Ω / double", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -1793,10 +1793,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q11-x", topicId: "phys-3-3", conceptId: "resistance-and-cross-sectional-area",
     section: "B", questionRef: "2022 OL Q11(x)",
-    questionText: "State the relationship between the resistance of a wire and its cross-sectional area.",
+    stem: "A piece of wire of length 1.5 m has a resistance of 12 Ω.",
+    questionText: "State the relationship between the resistance of a wire and its cross‐sectional area.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "inversely proportional", marks: 4, contextNote: "Key words — they must appear in the correct context (resistance is inversely proportional to cross-sectional area)." },
+    { id: "r1", kind: "point", verbatim: "inversely proportional", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -1810,7 +1811,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two properties of the electron.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "negative charge", marks: null, contextNote: "The scheme prints 'e.g. negative charge, small mass etc. [4 + 4]' — 4 marks per property, and the list is not exhaustive, so any other valid property of the electron is acceptable.", openList: true, group: {"claimMax":2,"perOption":4,"options":["negative charge","small mass"]} },
+    { id: "r1", kind: "anyN", verbatim: "negative charge / small mass", marks: null, contextNote: "The scheme prints \"[4 + 4]\".", openList: true, group: {"claimMax":2,"perOption":4,"options":["negative charge","small mass"]} },
     ],
   } as SecCard,
   {
@@ -1820,11 +1821,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q12-iii", topicId: "phys-4-2", conceptId: "threshold-frequency",
     section: "B", questionRef: "2022 OL Q12(iii)",
-    stem: "The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it. To ensure the photoelectric effect occurs, the light must be of a suitable frequency to release the electrons. The frequency of the light must be above the threshold frequency.",
+    stem: "To ensure the photoelectric effect occurs, the light must be of a suitable frequency to release the electrons. The frequency of the light must be above the threshold frequency.",
     questionText: "Describe what happens if the frequency of the incident light is below the threshold frequency.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "photoelectric effect does not occur", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "photoelectric effect does not occur", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1834,11 +1835,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q12-v", topicId: "phys-4-2", conceptId: "electron-production-xray-tube",
     section: "B", questionRef: "2022 OL Q12(v)",
-    stem: "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target.",
+    stem: "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
     questionText: "How are electrons produced in an X–ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "thermionic emission", marks: 6, accepts: ["hot cathode"], contextNote: "Separated by a solidus in the scheme, so either answer alone earns the full 6 marks." },
+    { id: "r1", kind: "point", verbatim: "thermionic emission / hot cathode", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1848,10 +1849,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q12-vi", topicId: "phys-4-2", conceptId: "electron-acceleration-xray-tube",
     section: "B", questionRef: "2022 OL Q12(vi)",
+    stem: "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
     questionText: "How are electrons accelerated in an X–ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "[high] voltage", marks: 6, contextNote: "Key word — 'voltage' must appear in the correct context; the scheme brackets 'high'." },
+    { id: "r1", kind: "point", verbatim: "[high] voltage", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1861,10 +1863,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q12-vii", topicId: "phys-4-2", conceptId: "xray-target-material",
     section: "B", questionRef: "2022 OL Q12(vii)",
+    stem: "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
     questionText: "Tungsten is often used as the target in an X–ray tube. State one property of tungsten that makes it suitable to use as the target.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "high melting point", marks: 6, accepts: ["high specific heat capacity"], contextNote: "The scheme prints these as examples ('e.g.'), and states that its descriptions are not exhaustive.", openList: true },
+    { id: "r1", kind: "anyN", verbatim: "high melting point / high specific heat capacity", marks: null, contextNote: "[accept partial answer for 3]", openList: true, group: {"claimMax":1,"perOption":6,"options":["high melting point","high specific heat capacity"]} },
     ],
   } as SecCard,
   {
@@ -1874,10 +1877,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q12-viii", topicId: "phys-4-2", conceptId: "xray-shielding-material",
     section: "B", questionRef: "2022 OL Q12(viii)",
+    stem: "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
     questionText: "What material could be used to ensure that the X–rays do not escape from the X–ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lead", marks: 6, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "lead", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1891,7 +1895,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how the student measured the time.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "number of gaps × 0.02 s", marks: 3, accepts: ["from (electronic) timer"] },
+    { id: "r1", kind: "point", verbatim: "number of gaps × 0.02 s / from (electronic) timer", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1905,7 +1909,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the formula used to calculate the velocity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "s ÷ t", marks: 6, contextNote: "The scheme allows a partial answer for 3." },
+    { id: "r1", kind: "point", verbatim: "s ÷ t", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -1919,7 +1923,7 @@ export const CARDS: SecCard[] = [
     questionText: "What changes did the student make to the apparatus?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "changed slope", marks: 4, accepts: ["applied force","second light-gate"] },
+    { id: "r1", kind: "point", verbatim: "changed slope / applied force / second light-gate", marks: 4 },
     ],
   } as SecCard,
   {
@@ -1933,7 +1937,7 @@ export const CARDS: SecCard[] = [
     questionText: "What measurements did the student take to calculate acceleration?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "two distances", marks: 4, accepts: ["times","velocities","distance or time between measurements"], contextNote: "The scheme prints 'two distances/times/velocities / distance or time between measurements' — 'times' and 'velocities' substitute for 'distances', i.e. two of any one of those quantities." },
+    { id: "r1", kind: "alt", verbatim: "two distances/times/velocities / distance or time between measurements", marks: 4 },
     ],
   } as SecCard,
   {
@@ -1943,11 +1947,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q1-vii", topicId: "phys-1-1", conceptId: "acceleration-formula",
     section: "A", questionRef: "2022 OL Q1(vii)",
-    stem: "A student used a runway and timer apparatus to measure the acceleration of an object.",
+    stem: "A student carried out an experiment to measure the velocity of an object. The student then used the apparatus to measure the acceleration of the object.",
     questionText: "How did the student use these measurements to calculate acceleration?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "(v – u) ÷ t", marks: 4, accepts: ["(v2 – u2) ÷ 2s"], contextNote: "The scheme joins these with 'or'. It prints v2 and u2 for v² and u². Partial answer accepted for 2." },
+    { id: "r1", kind: "alt", verbatim: "(v – u) ÷ t or (v² – u²) ÷ 2s", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -1957,11 +1961,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q1-viii", topicId: "phys-u2", conceptId: "velocity-experiment-precautions",
     section: "A", questionRef: "2022 OL Q1(viii)",
-    stem: "A student carried out experiments to measure the velocity and the acceleration of an object using a runway/air-track and timer.",
+    stem: "A student carried out an experiment to measure the velocity of an object. The student then used the apparatus to measure the acceleration of the object.",
     questionText: "State two precautions that could be taken to improve the accuracy of either of these experiments.",
-    tariffModel: {"kind":"orderedSplit","notation":"3 + 1"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "polish", marks: null, contextNote: "The scheme prefaces the list with 'e.g.' and closes it with 'etc.', so other valid precautions are acceptable. Marks are awarded 3 for the first precaution and 1 for the second.", openList: true, group: {"claimMax":2,"options":["polish","oil","remove dirt","change slope","repeat","increased sensitivity of timer","avoid error of parallax"]} },
+    { id: "r1", kind: "anyN", verbatim: "polish / oil / remove dirt / change slope / repeat / increased sensitivity of timer / avoid error of parallax", marks: null, contextNote: "The scheme prints these items under one sum, [3 + 1], and names no order: a response earns the marks step by step.", openList: true, group: {"claimMax":2,"perOption":3,"options":["polish","oil","remove dirt","change slope","repeat","increased sensitivity of timer","avoid error of parallax"],"perOptionSteps":[3,1]} },
     ],
   } as SecCard,
   {
@@ -1971,11 +1975,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-iii", topicId: "phys-u2", conceptId: "protractor-angle-measurement",
     section: "A", questionRef: "2022 OL Q2(iii)",
-    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r.",
+    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
     questionText: "Name the instrument used to measure these angles.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "protractor", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "protractor", marks: 3 },
     ],
   } as SecCard,
   {
@@ -1985,11 +1989,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-iv", topicId: "phys-2-3", conceptId: "refractive-index-formula",
     section: "A", questionRef: "2022 OL Q2(iv)",
-    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r.",
+    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
     questionText: "State the formula used to calculate n.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "sin i ÷ sin r", marks: 4, contextNote: "Partial answer accepted for 2." },
+    { id: "r1", kind: "point", verbatim: "sin i ÷ sin r", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -1999,11 +2003,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-vii", topicId: "phys-u2", conceptId: "snells-law-experiment-precaution",
     section: "A", questionRef: "2022 OL Q2(vii)",
-    stem: "A student carried out an experiment to verify Snell’s Law, measuring the angle of incidence i and the corresponding angle of refraction r for a transparent block.",
+    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
     questionText: "State one precaution used to improve the accuracy of the experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "thinner pencil", marks: null, contextNote: "The scheme prefaces the list with 'e.g.' and closes it with 'etc.', so other valid precautions are acceptable.", openList: true, group: {"claimMax":1,"perOption":3,"options":["thinner pencil","avoid error of parallax"]} },
+    { id: "r1", kind: "anyN", verbatim: "thinner pencil / avoid error of parallax", marks: null, openList: true, group: {"claimMax":1,"perOption":3,"options":["thinner pencil","avoid error of parallax"]} },
     ],
   } as SecCard,
   {
@@ -2013,11 +2017,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q3-iii", topicId: "phys-u2", conceptId: "sonometer-length-instrument",
     section: "A", questionRef: "2022 OL Q3(iii)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred.",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
     questionText: "Name the instrument used to measure length.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "sonometer", marks: 3, accepts: ["metre stick"] },
+    { id: "r1", kind: "point", verbatim: "sonometer / metre stick", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2025,13 +2029,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q3-iv", topicId: "phys-u2", conceptId: "constant-tension-control",
+    id: "phys-2022-ol-q3-iv", topicId: "phys-2-6", conceptId: "constant-tension-control",
     section: "A", questionRef: "2022 OL Q3(iv)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The tension of the string was kept constant throughout the experiment.",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
     questionText: "Explain why the tension of the string must be kept constant.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "frequency depends on tension", marks: 3, contextNote: "The scheme marks this '[state or imply]', so an answer that clearly implies the dependence also scores." },
+    { id: "r1", kind: "alt", verbatim: "frequency depends on tension [state or imply]", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2041,11 +2045,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q3-v", topicId: "phys-u2", conceptId: "sonometer-frequency-source",
     section: "A", questionRef: "2022 OL Q3(v)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l, recording frequency values from 256 Hz to 512 Hz.",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. The student recorded the following results.",
     questionText: "How did the student find the frequency values?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "from tuning forks", marks: 3, accepts: ["from signal generator"] },
+    { id: "r1", kind: "point", verbatim: "from tuning forks / from signal generator", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2053,13 +2057,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q3-vi", topicId: "phys-u2", conceptId: "detecting-resonance-sonometer",
+    id: "phys-2022-ol-q3-vi", topicId: "phys-2-6", conceptId: "detecting-resonance-sonometer",
     section: "A", questionRef: "2022 OL Q3(vi)",
-    stem: "A student set a length of stretched string vibrating and adjusted the length until resonance occurred.",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
     questionText: "Describe how the student knew that resonance had occurred.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "paper rider jumps", marks: 4, accepts: ["loud sound"], contextNote: "Partial answer accepted for 2." },
+    { id: "r1", kind: "point", verbatim: "paper rider jumps / loud sound", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -2073,7 +2077,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did the student supply the heat energy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "joulemeter", marks: 3, accepts: ["hot copper","heating element"], contextNote: "The scheme marks this '[state or imply]'." },
+    { id: "r1", kind: "alt", verbatim: "joulemeter / hot copper / heating element [state or imply]", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2083,11 +2087,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q4-v", topicId: "phys-2-1", conceptId: "heat-capacity-formula",
     section: "A", questionRef: "2022 OL Q4(v)",
-    stem: "A student carried out an experiment to measure c, the specific heat capacity of water.",
+    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter.",
     questionText: "State the formula used to calculate the heat gained by a material as it changes temperature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "mcΔθ", marks: 4, contextNote: "The scheme accepts a partial answer for 2, e.g. CΔθ." },
+    { id: "r1", kind: "point", verbatim: "mcΔθ", marks: 4, contextNote: "[accept partial answer for 2, e.g. CΔθ]" },
     ],
   } as SecCard,
   {
@@ -2095,13 +2099,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q5-ii", topicId: "phys-u2", conceptId: "joules-law-controlled-variables",
+    id: "phys-2022-ol-q5-ii", topicId: "phys-3-3", conceptId: "joules-law-controlled-variables",
     section: "A", questionRef: "2022 OL Q5(ii)",
-    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. The mass of the water and the length of time for which the current was flowing were both kept constant.",
+    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
     questionText: "Why were the mass and the time kept constant?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Δθ depends on mass and/or time", marks: 3, contextNote: "The scheme marks this '[state or imply]'. The 'and/or' is printed in the scheme itself, not an alternatives solidus." },
+    { id: "r1", kind: "alt", verbatim: "Δθ depends on mass and/or time [state or imply]", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2111,11 +2115,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q5-vi", topicId: "phys-3-3", conceptId: "joules-law-statement",
     section: "A", questionRef: "2022 OL Q5(vi)",
-    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents, with the mass of the water and the time kept constant. The student then plotted a graph of I2 against Δθ.",
+    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
     questionText: "Explain how your graph verifies Joule’s law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "I2 proportional to Δθ", marks: 4, contextNote: "The scheme prints I2 for I². Partial answer accepted for 2." },
+    { id: "r1", kind: "point", verbatim: "I² proportional to Δθ", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -2125,11 +2129,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q6-a", topicId: "phys-1-2", conceptId: "newtons-first-law",
     section: "B", questionRef: "2022 OL Q6(a)",
-    stem: "Question 6 instructs: Answer any eight of the following parts (a), (b), (c), etc. Each part is worth 7 marks.",
     questionText: "State Newton’s first law of motion.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a body remains at rest [or moving at constant velocity] unless an [unbalanced, external] force acts on it", marks: 7, contextNote: "The scheme accepts a partial answer for 4, e.g. Newton's second law of motion." },
+    { id: "r1", kind: "point", verbatim: "a body remains at rest [or moving at constant velocity] unless an [unbalanced, external] force acts on it", marks: 7, contextNote: "[accept partial answer for 4, e.g Newton’s second law of motion]" },
     ],
   } as SecCard,
   {
@@ -2142,7 +2145,7 @@ export const CARDS: SecCard[] = [
     questionText: "A boy applies a force of 20 N to pull his sleigh for 150 m. Calculate the work done by the boy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "20 × 150 = 3000 J", marks: 7, contextNote: "The scheme accepts a partial answer for 4." },
+    { id: "r1", kind: "point", verbatim: "20 × 150 = 3000 J", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2155,7 +2158,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the difference between heat and temperature?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "heat is a form of energy", marks: 7, accepts: ["temperature is a measure of hotness"], contextNote: "The scheme separates these with a solidus, so either alone is acceptable; marked '[state or imply]'. Partial answer accepted for 4." },
+    { id: "r1", kind: "alt", verbatim: "heat is a form of energy / temperature is a measure of hotness [state or imply]", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2168,7 +2171,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how to charge an electroscope.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "touch with charged object", marks: 7, accepts: ["bring charged object close and earth electroscope"], contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "touch with charged object / bring charged object close and earth electroscope", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2178,10 +2181,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q6-f", topicId: "phys-3-3", conceptId: "resistors-in-series",
     section: "B", questionRef: "2022 OL Q6(f)",
-    questionText: "Two resistors of resistance 4 ohm and 7 ohm are connected in series. Calculate the combined resistance of the two resistors.",
+    questionText: "Two resistors of resistance 4 Ω and 7 Ω are connected in series. Calculate the combined resistance of the two resistors.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "4 + 7 = 11 Ω", marks: 7, contextNote: "The scheme accepts a partial answer for 4." },
+    { id: "r1", kind: "point", verbatim: "4 + 7 = 11 Ω", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2194,7 +2197,7 @@ export const CARDS: SecCard[] = [
     questionText: "When the frequency of a sound wave increases, its pitch also increases. What is observed to happen to a sound when its amplitude increases?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "it gets louder", marks: 7, contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "it gets louder", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2207,7 +2210,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how to show the magnetic field of a bar magnet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "distribute iron filings", marks: 7, accepts: ["move compass"], contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "distribute iron filings / move compass", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2695,10 +2698,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q13-i", topicId: "phys-2-3", conceptId: "solar-eclipse",
     section: "B", questionRef: "2022 OL Q13(i)",
+    stem: "Total solar eclipses are the most dramatic of all eclipses. This is when the light from the Sun gets blocked by the Moon for a few minutes and day turns quickly into night. A lunar eclipse, when the Earth's shadow covers the Moon, is a gentler event. The full Moon gradually becomes fainter and redder over a period of a couple of hours. Both types of eclipse can be either total or partial. In a total eclipse, the Earth or the Moon gets completely in the way, while in a partial eclipse only a part of either the Earth or the Moon is in shadow.",
     questionText: "Describe what happens during a solar eclipse.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "light from the Sun is blocked by the Moon", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "light from the Sun is blocked by the Moon", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2708,10 +2712,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q13-ii", topicId: "phys-2-3", conceptId: "lunar-eclipse-frequency",
     section: "B", questionRef: "2022 OL Q13(ii)",
+    stem: "Lunar eclipses are far more common than solar eclipses. This is because the Earth’s shadow is bigger than the Moon’s shadow. At the same time as the Earth’s shadow blocks the Moon, some of the light from the Sun will pass through the Earth’s atmosphere and then onto the Moon. The Sun’s light is refracted as it passes through the Earth’s atmosphere. The refracted light is then dispersed into the colours of the rainbow. These processes result in the Moon appearing red.",
     questionText: "Lunar eclipses are more common than solar eclipses. Explain why.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the Earth’s shadow is bigger than the Moon’s shadow", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "the Earth’s shadow is bigger than the Moon’s shadow", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2724,7 +2729,7 @@ export const CARDS: SecCard[] = [
     questionText: "The light from the Sun is refracted as it passes through the Earth’s atmosphere. Explain what is meant by refraction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "bending of a wave as it travels from one medium to another", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "bending of a wave as it travels from one medium to another", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2734,11 +2739,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q13-iv", topicId: "phys-2-3", conceptId: "dispersion-equipment",
     section: "B", questionRef: "2022 OL Q13(iv)",
+    stem: "Lunar eclipses are far more common than solar eclipses. This is because the Earth’s shadow is bigger than the Moon’s shadow. At the same time as the Earth’s shadow blocks the Moon, some of the light from the Sun will pass through the Earth’s atmosphere and then onto the Moon. The Sun’s light is refracted as it passes through the Earth’s atmosphere. The refracted light is then dispersed into the colours of the rainbow. These processes result in the Moon appearing red.",
     questionText: "Name two pieces of laboratory equipment that can be used to disperse light.",
-    tariffModel: {"kind":"orderedSplit","notation":"4 + 3"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "prism", marks: null, contextNote: "The scheme prints 'e.g. prism, diffraction grating etc. [4 + 3]'. The list is an example only, so any other instrument that disperses light scores; the first correct item named scores 4 and the second 3, whichever they are.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "diffraction grating", marks: null, contextNote: "The second of the scheme's two printed examples.", openList: true },
+    { id: "r1", kind: "anyN", verbatim: "prism / diffraction grating", marks: null, contextNote: "The scheme prints these items under one sum, [4 + 3], and names no order: a response earns the marks step by step.", openList: true, group: {"claimMax":2,"perOption":4,"options":["prism","diffraction grating"],"perOptionSteps":[4,3]} },
     ],
   } as SecCard,
   {
@@ -2751,7 +2756,7 @@ export const CARDS: SecCard[] = [
     questionText: "An astronaut weighs less on the Moon than she does on Earth. Distinguish between mass and weight.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "mass is how much matter is in something", marks: 7, accepts: ["weight is force of gravity"], contextNote: "The scheme separates the two statements with a solidus, so either alone is accepted; it also notes a partial answer is worth 4." },
+    { id: "r1", kind: "point", verbatim: "mass is how much matter is in something / weight is force of gravity", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2764,7 +2769,7 @@ export const CARDS: SecCard[] = [
     questionText: "Infrared radiation lies just beyond red light in the electromagnetic spectrum, with a slightly longer wavelength. How can infrared radiation be detected?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "blackened thermometer", marks: 7, accepts: ["[digital] camera"], contextNote: "The scheme prints these as examples ('e.g. ... etc.'), so any other valid detector is acceptable.", openList: true },
+    { id: "r1", kind: "anyN", verbatim: "blackened thermometer / [digital] camera", marks: null, contextNote: "[accept partial answer for 4]", openList: true, group: {"claimMax":1,"perOption":7,"options":["blackened thermometer","[digital] camera"]} },
     ],
   } as SecCard,
   {
@@ -2777,7 +2782,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the type of electromagnetic radiation that has a slightly shorter wavelength than visible light.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "ultraviolet", marks: 7, accepts: ["uv"] },
+    { id: "r1", kind: "point", verbatim: "ultraviolet / uv", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -2787,11 +2792,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14-a-i", topicId: "phys-1-4", conceptId: "kinetic-energy-definition",
     section: "B", questionRef: "2022 OL Q14(a)(i)",
-    stem: "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s–1. As the stone travels upwards, it loses kinetic energy.",
+    stem: "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy.",
     questionText: "What is meant by kinetic energy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "energy due to motion", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "energy due to motion", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2804,7 +2809,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the principle of conservation of energy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "energy cannot be created or destroyed", marks: 6 },
+    { id: "r1", kind: "alt", verbatim: "energy cannot be created or destroyed", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2814,11 +2819,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14-a-iii", topicId: "phys-1-4", conceptId: "kinetic-to-potential-energy",
     section: "B", questionRef: "2022 OL Q14(a)(iii)",
-    stem: "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s–1. As the stone travels upwards, it loses kinetic energy.",
+    stem: "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy.",
     questionText: "What is the main type of energy that the stone’s kinetic energy is being converted into as it travels upwards?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "potential energy", marks: 6, contextNote: "The scheme allows 3 of the 6 marks for a partial answer." },
+    { id: "r1", kind: "point", verbatim: "potential energy", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2831,7 +2836,24 @@ export const CARDS: SecCard[] = [
     questionText: "What is the unit of energy?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Joule", marks: 3, accepts: ["J"] },
+    { id: "r1", kind: "point", verbatim: "Joule / J", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q14-b-i", topicId: "phys-2-3", conceptId: "total-internal-reflection-experiment",
+    section: "B", questionRef: "2022 OL Q14(b)(i)",
+    stem: "In order for an observer to see a mirage on a hot day, total internal reflection must occur. Mirages happen when the ground is very hot and the hot air just above the ground and the cool air higher up have different refractive indices. Light undergoes refraction as it travels from the cool air into the hot air.",
+    questionText: "Describe an experiment to demonstrate total internal reflection.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "apparatus 1, e.g. ray box / laser", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "apparatus 2, 3.g. semi-circular glass block", marks: 3 },
+    { id: "r3", kind: "criterion", verbatim: "method", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "observation", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -2845,7 +2867,7 @@ export const CARDS: SecCard[] = [
     questionText: "If the light from a distant object comes to focus in front of the retina, the person will see a blurred image. This person is said to be short sighted. What type of lens is used to correct short sightedness?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "concave", marks: 6, accepts: ["diverging"], contextNote: "Separated by a solidus in the scheme, so either term alone earns the full 6 marks." },
+    { id: "r1", kind: "point", verbatim: "concave / diverging", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2855,11 +2877,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14-b-iiia", topicId: "phys-2-3", conceptId: "lens-power-combination",
     section: "B", questionRef: "2022 OL Q14(b)(iii)(a)",
-    stem: "A certain person’s eye has a power of 62 m–1. The lens of their glasses has a power of –2 m–1.",
+    stem: "A certain person’s eye has a power of 62 m⁻¹. The lens of their glasses has a power of –2 m⁻¹.",
     questionText: "Calculate the power of the combination of the eye and the lens.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "P = 62 + (–2) = 60 m–1", marks: 5, contextNote: "The scheme allows 3 of the 5 marks for a partial answer." },
+    { id: "r1", kind: "point", verbatim: "P = 62 + (–2) = 60 m⁻¹", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -2869,12 +2891,56 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14-b-iiib", topicId: "phys-2-3", conceptId: "focal-length-from-power",
     section: "B", questionRef: "2022 OL Q14(b)(iii)(b)",
-    stem: "A certain person’s eye has a power of 62 m–1. The lens of their glasses has a power of –2 m–1.",
+    stem: "A certain person’s eye has a power of 62 m⁻¹. The lens of their glasses has a power of –2 m⁻¹.",
     questionText: "Calculate the focal length of the lens in the glasses.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "f = 1 ÷ 2 = 0.5 m", marks: 5, contextNote: "The scheme allows 3 of the 5 marks for a partial answer." },
+    { id: "r1", kind: "point", verbatim: "f = 1 ÷ 2 = 0.5 m", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q14-c-i", topicId: "phys-1-2", conceptId: "clockwise-moment",
+    section: "B", questionRef: "2022 OL Q14(c)(i)",
+    stem: "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+    questionText: "A moment is a turning effect caused by a force. The 2 N force and the 4 N force result in clockwise moments about the midpoint of the metre stick. Calculate the total clockwise moment about the midpoint of the metre stick.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "(2 × 0.1) + (4 × 0.3) = 1.4 N m", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q14c-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q14c-diagram.png",
+          "srcHash": "ab514ec686716cc9123f1aa82095fc68",
+          "alt": "Diagram of a metre stick marked 10 cm to 90 cm, held up by an arrow pointing up at 50, with arrows pointing down at 30 (7 N), 60 (2 N) and 80 (4 N).",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q14-c-ii", topicId: "phys-1-2", conceptId: "anticlockwise-moment",
+    section: "B", questionRef: "2022 OL Q14(c)(ii)",
+    stem: "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+    questionText: "The 7 N force results in an anticlockwise moment about the midpoint of the metre stick. Calculate the total anticlockwise moment about the midpoint of the metre stick.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "7 × 0.2 = 1.4 N m", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q14c-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q14c-diagram.png",
+          "srcHash": "ab514ec686716cc9123f1aa82095fc68",
+          "alt": "Diagram of a metre stick marked 10 cm to 90 cm, held up by an arrow pointing up at 50, with arrows pointing down at 30 (7 N), 60 (2 N) and 80 (4 N).",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2883,26 +2949,64 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14-c-iii", topicId: "phys-1-2", conceptId: "law-of-equilibrium",
     section: "B", questionRef: "2022 OL Q14(c)(iii)",
-    stem: "A metre stick suspended from its mid-point with three masses hanging from it is in equilibrium. The total clockwise moment about the midpoint was calculated as 1.4 N m and the total anticlockwise moment as 1.4 N m.",
+    stem: "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
     questionText: "State the law of equilibrium verified by the calculations in (i) and (ii).",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "clockwise moments = anti-clockwise moments", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "clockwise moments = anti-clockwise moments", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2022-ol-q14c-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q14c-diagram.png",
+          "srcHash": "ab514ec686716cc9123f1aa82095fc68",
+          "alt": "Diagram of a metre stick marked 10 cm to 90 cm, held up by an arrow pointing up at 50, with arrows pointing down at 30 (7 N), 60 (2 N) and 80 (4 N).",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q14-c-v", topicId: "phys-u2", conceptId: "centre-of-gravity-assumption",
+    id: "phys-2022-ol-q14-c-iv", topicId: "phys-1-2", conceptId: "weight-of-metre-stick",
+    section: "B", questionRef: "2022 OL Q14(c)(iv)",
+    stem: "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+    questionText: "The upward force on the metre stick is 15 N. Calculate the weight of the metre stick.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "15 – (7 + 2 + 4) = 2 N", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q14c-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q14c-diagram.png",
+          "srcHash": "ab514ec686716cc9123f1aa82095fc68",
+          "alt": "Diagram of a metre stick marked 10 cm to 90 cm, held up by an arrow pointing up at 50, with arrows pointing down at 30 (7 N), 60 (2 N) and 80 (4 N).",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q14-c-v", topicId: "phys-1-2", conceptId: "centre-of-gravity-assumption",
     section: "B", questionRef: "2022 OL Q14(c)(v)",
-    stem: "A metre stick is suspended from its mid-point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
-    questionText: "Your calculations assume that the centre of gravity of the metre stick acts at the mid-point of the metre stick. What might cause this assumption to be invalid?",
+    stem: "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+    questionText: "Your calculations assume that the centre of gravity of the metre stick acts at the mid‐point of the metre stick. What might cause this assumption to be invalid?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "chipped metre stick", marks: 4, contextNote: "The scheme prints 'e.g. chipped metre stick etc.' and states its descriptions are not exhaustive, so any other valid reason (uneven or damaged stick) is acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. chipped metre stick etc.", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2022-ol-q14c-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q14c-diagram.png",
+          "srcHash": "ab514ec686716cc9123f1aa82095fc68",
+          "alt": "Diagram of a metre stick marked 10 cm to 90 cm, held up by an arrow pointing up at 50, with arrows pointing down at 30 (7 N), 60 (2 N) and 80 (4 N).",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2915,8 +3019,8 @@ export const CARDS: SecCard[] = [
     questionText: "Alpha radiation is one of the three types of radiation. Name the other two types of radiation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "beta", marks: 3, accepts: ["β"] },
-    { id: "r-2", kind: "alt", verbatim: "gamma", marks: 3, accepts: ["γ"] },
+    { id: "r1", kind: "point", verbatim: "beta/β", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "gamma/γ", marks: 3 },
     ],
   } as SecCard,
   {
@@ -2926,12 +3030,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14-d-iii", topicId: "phys-4-4", conceptId: "neutron-number",
     section: "B", questionRef: "2022 OL Q14(d)(iii)",
-    stem: "Radium (Ra88 226) is an alpha emitter.",
-    questionText: "How many neutrons are there in an atom of Ra88 226?",
+    stem: "Radium (Ra₈₈ ²²⁶) is an alpha emitter.",
+    questionText: "How many neutrons are there in an atom of Ra₈₈ ²²⁶?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "226 – 88 = 138", marks: 6, contextNote: "Ra88 226 is radium-226: mass number 226, atomic number 88 (the sub/superscripts flattened in extraction)." },
+    { id: "r1", kind: "point", verbatim: "226 – 88 = 138", marks: 6, contextNote: "[accept partial answer for 3, e.g. number of protons]" },
     ],
+    questionFigure: {
+          "candId": "physics-2022-ol-q14diii-question",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q14diii-question.png",
+          "srcHash": "833eff385b7d504a49a3b8386773c767",
+          "alt": "The printed lines: \"Radium (Ra, with 226 above 88 after the symbol) is an alpha emitter.\" and part (iii), \"How many neutrons are there in an atom of\" the same radium nuclide.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2940,12 +3052,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14-d-iv", topicId: "phys-4-4", conceptId: "alpha-decay-daughter-nucleus",
     section: "B", questionRef: "2022 OL Q14(d)(iv)",
-    stem: "Radium (Ra88 226) is an alpha emitter.",
-    questionText: "What is the daughter nucleus when an atom of Ra88 226 emits two alpha particles?",
-    tariffModel: {"kind":"orderedSplit","notation":"2 + 1 + 1"}, totalMarks: 4,
+    stem: "Radium (Ra₈₈ ²²⁶) is an alpha emitter.",
+    questionText: "What is the daughter nucleus when an atom of Ra₈₈ ²²⁶ emits two alpha particles?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Po84 218", marks: null, contextNote: "Read as polonium-218: atomic number 84, mass number 218 (sub/superscripts flattened in extraction). The scheme prints the tariff as [2 + 1 + 1]." },
+    { id: "r1", kind: "point", verbatim: "Po²¹⁸₈₄", marks: 4, contextNote: "The scheme prices the nuclide [2 + 1 + 1]. [accept partial answer for 2]" },
     ],
+    questionFigure: {
+          "candId": "physics-2022-ol-q14div-question",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q14div-question.png",
+          "srcHash": "39555988a8b1e212a505940d44250bc1",
+          "alt": "The printed lines: \"Radium (Ra, with 226 above 88 after the symbol) is an alpha emitter.\", part (iii), and part (iv), \"What is the daughter nucleus when an atom of\" the same radium nuclide \"emits two alpha particles?\"",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7599,23 +7719,24 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q2-v", topicId: "phys-u2", conceptId: "average-refractive-index-from-results",
+    id: "phys-2022-ol-q2-v", topicId: "phys-2-3", conceptId: "average-refractive-index-from-results",
     section: "A", questionRef: "2022 OL Q2(v)",
+    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below.",
     questionText: "Use all of the results in the table to calculate an average value for n.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "one calculation of n // graph of sin i against sin r", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "average calculated // slope calculated", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "one calculation of n", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks.", route: "side-a" },
+    { id: "r2", kind: "criterion", verbatim: "average calculated", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks.", route: "side-a" },
+    { id: "r3", kind: "criterion", verbatim: "graph of sin i against sin r", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks.", route: "side-b" },
+    { id: "r4", kind: "criterion", verbatim: "slope calculated", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks.", route: "side-b" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2022-ol-q2-table",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q2-table.png",
+          "srcHash": "aafe38416f9374a4545da9482b34c37f",
+          "alt": "Table of the results: i (degrees) 30, 40, 50, 60; r (degrees) 19, 25, 31, 35.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7625,12 +7746,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q5-v", topicId: "phys-u2", conceptId: "reading-a-current-off-a-graph",
     section: "A", questionRef: "2022 OL Q5(v)",
-    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks.",
+    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
     questionText: "Use your graph to find the current that caused a change in temperature of 6 °C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "reading for I2 [≈ 5]", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "I ≈ 2.2 A", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "reading for I² [≈ 5]", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "I ≈ 2.2 A", marks: 3, contextNote: "[accept partial answer for 3, e.g graph not used]" },
     ],
   } as SecCard,
   {
@@ -7638,13 +7759,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q7-ii", topicId: "phys-u5", conceptId: "converting-minutes-to-seconds",
-    section: "A", questionRef: "2022 OL Q7(ii)",
-    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes.",
+    id: "phys-2022-ol-q7-ii", topicId: "phys-1-1", conceptId: "converting-minutes-to-seconds",
+    section: "B", questionRef: "2022 OL Q7(ii)",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
     questionText: "Convert 6 minutes into seconds.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "6 × 60 = 360 s", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "6 × 60 = 360 s", marks: 6, contextNote: "[accept partial answer for 3, e.g. reference to 60 s in a minute]" },
     ],
   } as SecCard,
   {
@@ -7653,23 +7774,22 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-iv", topicId: "phys-2-3", conceptId: "image-position-from-the-lens-formula",
-    section: "A", questionRef: "2022 OL Q9(iv)",
+    section: "B", questionRef: "2022 OL Q9(iv)",
+    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual. The object is 20 cm in front of the concave mirror. The mirror has a focal length of 12 cm.",
     questionText: "Calculate the position of the real image formed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1/u + 1/v = 1/f", marks: 6 },
-    { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "v = 30 cm", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "1/u + 1/v = 1/f", marks: 6 },
+    { id: "r2", kind: "criterion", verbatim: "substitution", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "v = 30 cm", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2022-ol-q9-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q9-diagram.png",
+          "srcHash": "e571fa263e98a0de4c7aa9883e8f8c94",
+          "alt": "Ray diagram to complete: a dashed principal axis with an upright arrow labelled object on the left, a point labelled f on the axis to its right, and a concave mirror curving across the axis further right.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7679,10 +7799,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14a-iv", topicId: "phys-1-4", conceptId: "kinetic-energy-of-a-thrown-stone",
     section: "B", questionRef: "2022 OL Q14(a)(iv)",
+    stem: "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy.",
     questionText: "Calculate the kinetic energy of the stone when it is thrown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "½ × 0.005 × 152 = 0.5625 J", marks: 5 },
+    { id: "r1", kind: "point", verbatim: "½ × 0.005 × 15² = 0.5625 J", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -7692,10 +7813,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14a-v", topicId: "phys-1-4", conceptId: "maximum-height-from-kinetic-energy",
     section: "B", questionRef: "2022 OL Q14(a)(v)",
+    stem: "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy. (acceleration due to gravity = 9.8 m s⁻²)",
     questionText: "Calculate the maximum height reached by the stone.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.5625 ÷ (0.005 × 9.8) = 11.5 m", marks: 5 },
+    { id: "r1", kind: "point", verbatim: "0.5625 ÷ (0.005 × 9.8) = 11.5 m", marks: 5, contextNote: "[accept partial answer for 3]", route: "side-a" },
+    { id: "r2", kind: "point", verbatim: "15² ÷ (2 × 9.8) = 11.5 m", marks: 5, route: "side-b" },
     ],
   } as SecCard,
   {
@@ -7703,24 +7826,15 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q2-vi", topicId: "phys-u2", conceptId: "whether-the-results-verify-snells-law",
+    id: "phys-2022-ol-q2-vi", topicId: "phys-2-3", conceptId: "whether-the-results-verify-snells-law",
     section: "A", questionRef: "2022 OL Q2(vi)",
+    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
     questionText: "Do your calculations verify Snell’s law? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "yes [or answer consistent with calculations]", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "explanation, e.g. calculations all close to average, straight line through origin", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "yes [or answer consistent with calculations]", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "explanation, e.g. calculations all close to average, straight line through origin", marks: 3 },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7729,14 +7843,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q5-iv", topicId: "phys-u2", conceptId: "plotting-current-squared-against-temperature-rise",
     section: "A", questionRef: "2022 OL Q5(iv)",
-    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks.",
-    questionText: "Use all of the data to plot a graph of I2 against Δθ.",
-    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results.",
+    questionText: "Use all of the data to plot a graph of I² against Δθ.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks. It prices them [6 × 1]: 1 mark per point." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
+    figure: {
+          "candId": "physics-2022-ol-q5-table",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q5-table.png",
+          "srcHash": "c3bf292ff47510636fbbbd92c5cd2a8d",
+          "alt": "Table of the results: I (A) 1, 1.5, 2, 2.5, 3, 3.5; an empty row for I² (A²); Δθ (°C) 1.2, 2.7, 4.8, 7.5, 10.8, 14.7.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7744,13 +7866,22 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q7-vii", topicId: "phys-1-2", conceptId: "forces-on-a-train-at-constant-speed",
-    section: "A", questionRef: "2022 OL Q7(vii)",
-    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes.",
+    section: "B", questionRef: "2022 OL Q7(vii)",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes. The train then maintained this speed of 25 m s⁻¹ for a further 15 minutes.",
     questionText: "Draw a labelled diagram to show the forces acting on the train while it is moving with constant speed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "four correct forces", marks: 9 },
+    { id: "r1", kind: "criterion", verbatim: "four correct forces", marks: 9, contextNote: "[–1 for each omitted force] The scheme prints no answer here, only what earns the marks." },
     ],
+    figure: {
+          "candId": "physics-2022-ol-q7vii-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q7vii-scheme.png",
+          "srcHash": "ea745acb9187aab1a8af5ca251b26c0d",
+          "alt": "The marking scheme's force diagram: a box with four arrows, F pointing left, Fr. pointing right, R pointing up and W pointing down.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7759,10 +7890,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q1-ii", topicId: "phys-u2", conceptId: "what-distance-was-measured-on-the-tape",
     section: "A", questionRef: "2022 OL Q1(ii)",
+    stem: "A student carried out an experiment to measure the velocity of an object.",
     questionText: "Indicate on the diagram what distance the student measured.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "length of tape", marks: 3, accepts: ["length of rider or card","distance travelled by car/rider"] },
+    { id: "r1", kind: "alt", verbatim: "length of tape / length of rider or card / distance travelled by car/rider", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -7780,24 +7912,60 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q3-ii", topicId: "phys-u2", conceptId: "what-length-of-string-was-measured",
+    section: "A", questionRef: "2022 OL Q3(ii)",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
+    questionText: "Indicate on your diagram the length of string the student measured.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "length between two bridges / any valid length", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q3-viii", topicId: "phys-u2", conceptId: "graph-of-frequency-against-one-over-length",
+    section: "A", questionRef: "2022 OL Q3(viii)",
+    questionText: "Use the data to plot a graph of f against",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks. It prices them [6 × 1]: 1 mark per point." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+    questionFigure: {
+          "candId": "physics-2022-ol-q3viii-question",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q3viii-question.png",
+          "srcHash": "61a37d3fe29c7fb4de6f9ed904f63fd6",
+          "alt": "The printed Question 3: the stretched-string experiment, parts (i) to (iv), its table of f (Hz) 256, 320, 341, 427, 480, 512 against l (cm) 22, 18, 17, 13, 12, 11 with an empty row for 1 over l, and parts (v) to (viii), (viii) asking for a graph of f against 1 over l, set as a fraction.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-ii", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-magnified-image-ol",
-    section: "A", questionRef: "2022 OL Q9(ii)",
+    section: "B", questionRef: "2022 OL Q9(ii)",
+    stem: "When light is reflected from a concave mirror, the image produced may be real or virtual.",
     questionText: "In your answerbook, copy and complete the ray diagram below to show how a magnified image is formed in a concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "first reflected ray", marks: 5 },
-    { id: "r-2", kind: "point", verbatim: "second reflected ray", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "intersection of rays", marks: 2 },
+    { id: "r1", kind: "criterion", verbatim: "first reflected ray", marks: 5, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "second reflected ray", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "intersection of rays", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2022-ol-q9-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q9-diagram.png",
+          "srcHash": "e571fa263e98a0de4c7aa9883e8f8c94",
+          "alt": "Ray diagram to complete: a dashed principal axis with an upright arrow labelled object on the left, a point labelled f on the axis to its right, and a concave mirror curving across the axis further right.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7806,23 +7974,14 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q9-vii", topicId: "phys-2-3", conceptId: "which-side-of-a-convex-mirror-reflects",
-    section: "A", questionRef: "2022 OL Q9(vii)",
-    questionText: "Sketch a convex mirror.",
+    section: "B", questionRef: "2022 OL Q9(vii)",
+    stem: "Light is also reflected by convex mirrors.",
+    questionText: "Sketch a convex mirror. Indicate which side of the mirror reflects light.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "shape", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "side", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "shape", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "side", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7832,12 +7991,10 @@ export const CARDS: SecCard[] = [
     id: "phys-2022-ol-q1-i", topicId: "phys-u2", conceptId: "apparatus-to-measure-constant-velocity",
     section: "A", questionRef: "2022 OL Q1(i)",
     stem: "A student carried out an experiment to measure the velocity of an object.",
-    questionText: "Draw a labelled diagram of the apparatus used to measure constant velocity. (12)",
-    tariffModel: {"kind":"fixed","notation":"6 + 3 + 3"}, totalMarks: 12,
+    questionText: "Draw a labelled diagram of the apparatus used to measure constant velocity.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "runway", marks: 6, accepts: ["air-track"] },
-    { id: "r-2", kind: "alt", verbatim: "car", marks: 3, accepts: ["rider"] },
-    { id: "r-3", kind: "alt", verbatim: "ticker-tape", marks: 3, accepts: ["light-gate","timer"] },
+    { id: "r1", kind: "anyN", verbatim: "runway / air-track / car / rider / ticker-tape / light-gate / timer", marks: null, contextNote: "[–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step.", group: {"claimMax":3,"perOption":6,"options":["runway / air-track","car / rider","ticker-tape / light-gate / timer"],"perOptionSteps":[6,3,3]} },
     ],
   } as SecCard,
   {
@@ -7847,23 +8004,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-i", topicId: "phys-u2", conceptId: "apparatus-to-verify-snells-law",
     section: "A", questionRef: "2022 OL Q2(i)",
+    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"6 + 3 + 3"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "transparent block", marks: 6 },
-    { id: "r-2", kind: "alt", verbatim: "ray-box", marks: 3, accepts: ["laser","pins"] },
-    { id: "r-3", kind: "point", verbatim: "detail e.g. paper, ruler, pencil, protractor, etc.", marks: 3 },
+    { id: "r1", kind: "anyN", verbatim: "transparent block / ray-box / laser / pins / detail e.g. paper, ruler, pencil, protractor, etc.", marks: null, contextNote: "[–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step.", group: {"claimMax":3,"perOption":6,"options":["transparent block","ray-box / laser / pins","detail e.g. paper, ruler, pencil, protractor, etc."],"perOptionSteps":[6,3,3]} },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7872,20 +8018,53 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q2-ii", topicId: "phys-u2", conceptId: "labelling-the-angles-measured",
     section: "A", questionRef: "2022 OL Q2(ii)",
-    questionText: "On your diagram, label the angles measured by the student. (18)",
+    stem: "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
+    questionText: "On your diagram, label the angles measured by the student.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "both angles labelled", marks: 6 },
+    { id: "r1", kind: "criterion", verbatim: "both angles labelled", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q3-i", topicId: "phys-u2", conceptId: "apparatus-for-the-stretched-string-experiment",
+    section: "A", questionRef: "2022 OL Q3(i)",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
+    questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "sonometer / stretched string", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "detail, e.g. metre stick, tuning fork, bridge, paper rider, etc.", marks: 3, contextNote: "[–1 if no label present on diagram]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q3-vii", topicId: "phys-u2", conceptId: "completing-the-table-of-one-over-length",
+    section: "A", questionRef: "2022 OL Q3(vii)",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. The student recorded the following results.",
+    questionText: "In your answerbook, copy and complete the table above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "22 — 0.045", marks: 1, contextNote: "The scheme prints the six values of 1/l (cm⁻¹) [6 × 1], each under its length l (cm): 1 mark each." },
+    { id: "r2", kind: "point", verbatim: "18 — 0.056", marks: 1 },
+    { id: "r3", kind: "point", verbatim: "17 — 0.059", marks: 1 },
+    { id: "r4", kind: "point", verbatim: "13 — 0.077", marks: 1 },
+    { id: "r5", kind: "point", verbatim: "12 — 0.083", marks: 1 },
+    { id: "r6", kind: "point", verbatim: "11 — 0.091", marks: 1 },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q3-table",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q3-table.png",
+          "srcHash": "140c5c63f1b394ee9fee969ba9a12d8a",
+          "alt": "Table of the results: f (Hz) 256, 320, 341, 427, 480, 512; l (cm) 22, 18, 17, 13, 12, 11; and a third row headed 1 over l (cm⁻¹), set as a fraction, with its six cells left empty.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -7895,11 +8074,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q4-i", topicId: "phys-u2", conceptId: "apparatus-for-the-specific-heat-capacity-experiment",
     section: "A", questionRef: "2022 OL Q4(i)",
-    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)",
+    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"any 3 × 3"}, totalMarks: 9,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "calorimeter, water, appropriate source of heat, thermometer, mass balance, joulemeter, detail e.g. lagging, lid, stirrer etc.", marks: 9 },
+    { id: "r1", kind: "anyN", verbatim: "calorimeter / water / appropriate source of heat / thermometer / mass balance / joulemeter / detail e.g. lagging, lid, stirrer etc.", marks: null, contextNote: "[–1 if no label present on diagram] The scheme prints \"[any 3 × 3]\".", openList: true, group: {"claimMax":3,"perOption":3,"options":["calorimeter","water","appropriate source of heat","thermometer","mass balance","joulemeter","detail e.g. lagging, lid, stirrer etc."]} },
     ],
   } as SecCard,
   {
@@ -7907,13 +8086,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q4-iii", topicId: "phys-u2", conceptId: "mass-of-the-water-from-the-results",
+    id: "phys-2022-ol-q4-iii", topicId: "phys-2-1", conceptId: "mass-of-the-water-from-the-results",
     section: "A", questionRef: "2022 OL Q4(iii)",
-    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)",
+    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J",
     questionText: "Calculate the mass of the water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.1498 – 0.0745 = 0.0753 kg", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "0.1498 – 0.0745 = 0.0753 kg", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -7921,13 +8100,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q4-iv", topicId: "phys-u2", conceptId: "temperature-rise-of-the-calorimeter-and-water",
+    id: "phys-2022-ol-q4-iv", topicId: "phys-2-1", conceptId: "temperature-rise-of-the-calorimeter-and-water",
     section: "A", questionRef: "2022 OL Q4(iv)",
-    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)",
-    questionText: "Calculate the increase in temperature of the calorimeter and cold water. (12)",
+    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J",
+    questionText: "Calculate the increase in temperature of the calorimeter and cold water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "23 – 18 = 5 °C", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "23 – 18 = 5 °C", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -7935,14 +8114,14 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q4-vi", topicId: "phys-u2", conceptId: "specific-heat-capacity-from-the-results",
+    id: "phys-2022-ol-q4-vi", topicId: "phys-2-1", conceptId: "specific-heat-capacity-from-the-results",
     section: "A", questionRef: "2022 OL Q4(vi)",
-    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)",
-    questionText: "Use your answers for (iii), (iv) and (v) to calculate c, the specific heat capacity of water.",
-    tariffModel: {"kind":"fixed","notation":"6 + 2 + 2 + 2"}, totalMarks: 12,
+    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J (specific heat capacity of copper = 390 J kg⁻¹ K⁻¹)",
+    questionText: "Use your answers for (iii), (iv) and (v) to calculate c, the specific heat capacity of water. Note: Heat energy added = Heat energy gained by water + calorimeter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1703 = (0.0745 × 390 × 5) + (0.0753 × c × 5)", marks: 10 },
-    { id: "r-2", kind: "point", verbatim: "c = 4137.4 [J kg–1 K–1]", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "1703 = (0.0745 × 390 × 5) + (0.0753 × c × 5)", marks: 10, contextNote: "The scheme prices this line [6 + 2 + 2] and prints no split of it." },
+    { id: "r2", kind: "point", verbatim: "c = 4137.4 [J kg⁻¹ K⁻¹]", marks: 2 },
     ],
   } as SecCard,
   {
@@ -7952,11 +8131,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q5-i", topicId: "phys-u2", conceptId: "apparatus-for-the-joules-law-experiment",
     section: "A", questionRef: "2022 OL Q5(i)",
-    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks.",
+    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"any 3 × 3"}, totalMarks: 9,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "container, water, heating coil, ammeter/multimeter, thermometer, detail e.g. mass balance, stopwatch, lagging, lid, stirrer etc.", marks: 9 },
+    { id: "r1", kind: "anyN", verbatim: "container / water / heating coil / ammeter/multimeter / thermometer / detail e.g. mass balance, stopwatch, lagging, lid, stirrer etc.", marks: null, contextNote: "[–1 if no label present on diagram] The scheme prints \"[any 3 × 3]\".", openList: true, group: {"claimMax":3,"perOption":3,"options":["container","water","heating coil","ammeter/multimeter","thermometer","detail e.g. mass balance, stopwatch, lagging, lid, stirrer etc."]} },
     ],
   } as SecCard,
   {
@@ -7966,17 +8145,190 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q5-iii", topicId: "phys-u2", conceptId: "completing-the-table-of-current-squared",
     section: "A", questionRef: "2022 OL Q5(iii)",
-    questionText: "In your answerbook, copy and complete the table above. (18)",
-    tariffModel: {"kind":"fixed","notation":"6 × 1"}, totalMarks: 6,
+    stem: "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results.",
+    questionText: "In your answerbook, copy and complete the table above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1 2.25 4 6.25 9 12.25", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "1 — 1", marks: 1, contextNote: "The scheme prints the six values of I² (A²) [6 × 1], each under its current I (A): 1 mark each." },
+    { id: "r2", kind: "point", verbatim: "1.5 — 2.25", marks: 1 },
+    { id: "r3", kind: "point", verbatim: "2 — 4", marks: 1 },
+    { id: "r4", kind: "point", verbatim: "2.5 — 6.25", marks: 1 },
+    { id: "r5", kind: "point", verbatim: "3 — 9", marks: 1 },
+    { id: "r6", kind: "point", verbatim: "3.5 — 12.25", marks: 1 },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q5-table",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q5-table.png",
+          "srcHash": "c3bf292ff47510636fbbbd92c5cd2a8d",
+          "alt": "Table of the results: I (A) 1, 1.5, 2, 2.5, 3, 3.5; an empty row for I² (A²); Δθ (°C) 1.2, 2.7, 4.8, 7.5, 10.8, 14.7.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q6-d", topicId: "phys-2-3", conceptId: "light-through-an-optical-fibre",
+    section: "B", questionRef: "2022 OL Q6(d)",
+    questionText: "Draw a labelled diagram to show how light travels through an optical fibre.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "total internal refraction shown", marks: 7, contextNote: "[–1 if no label present on diagram] [accept partial answer for 4] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q7-ix", topicId: "phys-1-1", conceptId: "speed-time-graph-for-the-train",
+    section: "B", questionRef: "2022 OL Q7(ix)",
+    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes. The train then maintained this speed of 25 m s⁻¹ for a further 15 minutes.",
+    questionText: "Draw a speed‐time graph for the train during the first 21 minutes of its journey.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "correct shape", marks: 6, contextNote: "[for shape, accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q7ix-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q7ix-scheme.png",
+          "srcHash": "673b6e793da2005f94e371bfa57c84f4",
+          "alt": "The marking scheme's sketch: speed against time, a dashed line rising straight from the origin and then running level.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q8-i", topicId: "phys-2-1", conceptId: "shape-at-x",
+    section: "B", questionRef: "2022 OL Q8(i)",
+    stem: "The graph shows how the temperature and state of water change as the water is heated up.",
+    questionText: "Explain the shape of the graph at part X.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "increase in temperature / no change of state", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q8-graph",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q8-graph.png",
+          "srcHash": "e3c2d6d1b74b5e10e1ef69903eef4497",
+          "alt": "Graph of temperature against heat added: a line rising from the origin through a stretch labelled solid, a level stretch labelled melting, a rising stretch labelled X, a long level stretch labelled Y, and a final rising stretch labelled gas.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q8-ii", topicId: "phys-2-1", conceptId: "shape-at-y",
+    section: "B", questionRef: "2022 OL Q8(ii)",
+    stem: "The graph shows how the temperature and state of water change as the water is heated up.",
+    questionText: "Explain the shape of the graph at part Y.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "change of state / evaporation / no change in temperature", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2022-ol-q8-graph",
+          "src": "/exam-figures/physics/markbank/physics-2022-ol-q8-graph.png",
+          "srcHash": "e3c2d6d1b74b5e10e1ef69903eef4497",
+          "alt": "Graph of temperature against heat added: a line rising from the origin through a stretch labelled solid, a level stretch labelled melting, a rising stretch labelled X, a long level stretch labelled Y, and a final rising stretch labelled gas.",
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q8-viii", topicId: "phys-2-1", conceptId: "experiment-to-calibrate-a-thermometer",
+    section: "B", questionRef: "2022 OL Q8(viii)",
+    stem: "The temperature of the water needs to be measured throughout this experiment. It is measured using a thermometer.",
+    questionText: "Describe, with the aid of labelled diagram, a laboratory experiment to calibrate a thermometer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "calibrated thermometer", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "uncalibrated thermometer", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "source of heat", marks: 3 },
+    { id: "r4", kind: "criterion", verbatim: "method", marks: 3, contextNote: "[–1 if no label present on diagram] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q10-i", topicId: "phys-2-5", conceptId: "experiment-to-show-sound-is-a-mechanical-wave",
+    section: "B", questionRef: "2022 OL Q10(i)",
+    stem: "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears.",
+    questionText: "Sound is an example of a mechanical wave which therefore needs a medium to travel through. Describe an experiment to show that sound is a mechanical wave.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "apparatus, e.g. source of sound, bell jar", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "method 1: e.g. place source of sound in jar", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "method 2: e.g. turn on vacuum pump", marks: 3 },
+    { id: "r4", kind: "criterion", verbatim: "observation", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q10-iv", topicId: "phys-2-6", conceptId: "experiment-to-show-sound-interference",
+    section: "B", questionRef: "2022 OL Q10(iv)",
+    stem: "Sound waves can undergo reflection, refraction, diffraction and interference.",
+    questionText: "Describe an experiment to show that sound waves undergo interference.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "apparatus, e.g. two speakers (emitting the same sound)", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "method, e.g. walk between the speakers", marks: 3 },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q10-vii", topicId: "phys-2-6", conceptId: "first-position-of-resonance-in-a-pipe",
+    section: "B", questionRef: "2022 OL Q10(vii)",
+    stem: "The ear canal can be thought of as a pipe open at one end.",
+    questionText: "Draw a labelled diagram to show the first position of resonance for a sound wave in a pipe open at one end.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "alt", verbatim: "node at closed end, anti-node at open end, no other nodes or antinodes", marks: 6, contextNote: "[–1 if no label present on diagram] [accept partial answer for 3]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q11-iii", topicId: "phys-3-3", conceptId: "circuit-diagram-of-a-torch",
+    section: "B", questionRef: "2022 OL Q11(iii)",
+    questionText: "A torch contains a battery, a light bulb and a switch. Draw a circuit diagram to show how these components are connected in a torch. (You may refer to the electrical circuit symbols on pages 72 to 78 of the booklet of Formulae and Tables.)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "component symbols", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks. It prices them [3 × 1]: 1 mark per symbol." },
+    { id: "r2", kind: "point", verbatim: "connected in series", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "OFFICIAL QUESTION PAGE",
           "title": "Official question page",
           "pages": [
-                4
+                10
           ],
           "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
@@ -7987,121 +8339,14 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q6-d", topicId: "phys-2-3", conceptId: "light-through-an-optical-fibre",
-    section: "A", questionRef: "2022 OL Q6(d)",
-    questionText: "Draw a labelled diagram to show how light travels through an optical fibre.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "total internal refraction shown", marks: 7 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q7-ix", topicId: "phys-1-1", conceptId: "speed-time-graph-for-the-train",
-    section: "A", questionRef: "2022 OL Q7(ix)",
-    stem: "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes.",
-    questionText: "Draw a speed‐time graph for the train during the first 21 minutes of its journey. (26)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "correct shape", marks: 6 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q8-viii", topicId: "phys-2-1", conceptId: "experiment-to-calibrate-a-thermometer",
-    section: "A", questionRef: "2022 OL Q8(viii)",
-    questionText: "Describe, with the aid of labelled diagram, a laboratory experiment to calibrate a thermometer. (23)",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "calibrated thermometer", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "uncalibrated thermometer", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "source of heat", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "method", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q10-i", topicId: "phys-2-5", conceptId: "experiment-to-show-sound-is-a-mechanical-wave",
-    section: "A", questionRef: "2022 OL Q10(i)",
-    stem: "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears. The ear canal can be thought of as a pipe open at one end.",
-    questionText: "Sound is an example of a mechanical wave which therefore needs a medium to travel through. Describe an experiment to show that sound is a mechanical wave.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "apparatus, e.g. source of sound, bell jar", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "method 1: e.g. place source of sound in jar", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "method 2: e.g. turn on vacuum pump", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "observation", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q10-iv", topicId: "phys-2-6", conceptId: "experiment-to-show-sound-interference",
-    section: "A", questionRef: "2022 OL Q10(iv)",
-    stem: "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears. The ear canal can be thought of as a pipe open at one end.",
-    questionText: "Describe an experiment to show that sound waves undergo interference.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "apparatus, e.g. two speakers (emitting the same sound)", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "method, e.g. walk between the speakers", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "observation", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q10-vii", topicId: "phys-2-5", conceptId: "first-position-of-resonance-in-a-pipe",
-    section: "A", questionRef: "2022 OL Q10(vii)",
-    stem: "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears. The ear canal can be thought of as a pipe open at one end.",
-    questionText: "Draw a labelled diagram to show the first position of resonance for a sound wave in a pipe open at one end.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "node at closed end, anti-node at open end, no other nodes or antinodes", marks: 6 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2022-ol-q11-iii", topicId: "phys-3-3", conceptId: "circuit-diagram-of-a-torch",
-    section: "A", questionRef: "2022 OL Q11(iii)",
-    stem: "Benjamin Franklin began experimenting with electricity during the 18th century.",
-    questionText: "A torch contains a battery, a light bulb and a switch. Draw a circuit diagram to show how these components are connected in a torch. (You may refer to the electrical circuit symbols on pages 72 to 78 of the booklet of Formulae and Tables.)",
-    tariffModel: {"kind":"fixed","notation":"3 × 1 + 3"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "component symbols", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "connected in series", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q11-viii", topicId: "phys-3-3", conceptId: "resistance-of-two-wires-in-parallel",
-    section: "A", questionRef: "2022 OL Q11(viii)",
-    stem: "Benjamin Franklin began experimenting with electricity during the 18th century.",
-    questionText: "The 3 Ω wire is connected in parallel with another wire of resistance 2 Ω. Calculate the total resistance of the two wires in parallel. (21) A piece of wire of length 1.5 m has a resistance of 12 Ω.",
+    section: "B", questionRef: "2022 OL Q11(viii)",
+    questionText: "The 3 Ω wire is connected in parallel with another wire of resistance 2 Ω. Calculate the total resistance of the two wires in parallel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1/R1 + 1/R2 = 1/RT", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "RT = 1.2 Ω", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "1/R₁ + 1/R₂ = 1/RT", marks: 3 },
+    { id: "r2", kind: "criterion", verbatim: "substitution", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "RT = 1.2 Ω", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -8110,14 +8355,14 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q12-ii", topicId: "phys-4-2", conceptId: "experiment-to-demonstrate-the-photoelectric-effect",
-    section: "A", questionRef: "2022 OL Q12(ii)",
-    stem: "The Irish physicist George Stoney is most famous for introducing the term electron. The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it.",
-    questionText: "Describe an experiment to demonstrate the photoelectric effect. (17) To ensure the photoelectric effect occurs, the light must be of a suitable frequency to release the electrons. The frequency of the light must be above the threshold frequency.",
+    section: "B", questionRef: "2022 OL Q12(ii)",
+    stem: "The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it.",
+    questionText: "Describe an experiment to demonstrate the photoelectric effect.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "apparatus [e.g. electroscope, zinc plate, uv lamp]", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "method", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "observation", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "apparatus [e.g. electroscope, zinc plate, uv lamp]", marks: 3 },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8126,13 +8371,26 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q12-iv", topicId: "phys-4-2", conceptId: "wavelength-and-photon-energy-at-the-threshold-frequency",
-    section: "A", questionRef: "2022 OL Q12(iv)",
-    stem: "The Irish physicist George Stoney is most famous for introducing the term electron. The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it.",
-    questionText: "The threshold frequency for zinc is 6.5 × 1014 Hz. (a) Calculate the wavelength of light of this frequency. (b) Calculate the energy of a photon of this frequency. (15) X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    section: "B", questionRef: "2022 OL Q12(iv)(a)",
+    stem: "The threshold frequency for zinc is 6.5 × 10¹⁴ Hz.",
+    questionText: "Calculate the wavelength of light of this frequency.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(3 × 108) ÷ (6.5 × 1014) = 4.6 × 10–7 m", marks: 6 },
-    { id: "r-2", kind: "point", verbatim: "(6.6 × 10–34) × (6.5 × 1014) = 4.3 × 10–19 J", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "(3 × 10⁸) ÷ (6.5 × 10¹⁴) = 4.6 × 10⁻⁷ m", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2022-ol-q12-iv-b", topicId: "phys-4-2", conceptId: "photon-energy-at-threshold",
+    section: "B", questionRef: "2022 OL Q12(iv)(b)",
+    stem: "The threshold frequency for zinc is 6.5 × 10¹⁴ Hz.",
+    questionText: "Calculate the energy of a photon of this frequency.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "(6.6 × 10⁻³⁴) × (6.5 × 10¹⁴) = 4.3 × 10⁻¹⁹ J", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -8142,10 +8400,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q13-v", topicId: "phys-1-5", conceptId: "acceleration-due-to-gravity-on-the-moon",
     section: "B", questionRef: "2022 OL Q13(v)",
-    questionText: "The Moon has a mass of 7.3 × 1022 kg and a radius of 1.7 × 106 m. Calculate g, the acceleration due to gravity on the Moon. (7)",
+    questionText: "The Moon has a mass of 7.3 × 10²² kg and a radius of 1.7 × 10⁶ m. Calculate g, the acceleration due to gravity on the Moon.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(6.7 × 10–11) × (7.3 × 1022) ÷ (1.7 × 106)2 = 1.7 m s–2", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "(6.7 × 10⁻¹¹) × (7.3 × 10²²) ÷ (1.7 × 10⁶)² = 1.7 m s⁻²", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -8155,13 +8413,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",
     id: "phys-2022-ol-q14d-ii", topicId: "phys-4-4", conceptId: "experiment-to-compare-penetrating-powers",
     section: "B", questionRef: "2022 OL Q14(d)(ii)",
-    questionText: "Alpha radiation is the least penetrating of the three types of radiation. Describe an experiment to show that the three types of radiation have different penetrating powers. (18) Radium (Ra88 226) is an alpha emitter.",
+    stem: "Henri Becquerel was the first person to discover evidence of radioactivity. Radioactivity is the emission of radiation as a result of the decay of atomic nuclei.",
+    questionText: "Alpha radiation is the least penetrating of the three types of radiation. Describe an experiment to show that the three types of radiation have different penetrating powers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "apparatus 1: source of radiation", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "apparatus 2: barrier[s]", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "method", marks: 3 },
-    { id: "r-4", kind: "alt", verbatim: "observation", marks: 3, accepts: ["detector"] },
+    { id: "r1", kind: "point", verbatim: "apparatus 1: source of radiation", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "apparatus 2: barrier[s]", marks: 3 },
+    { id: "r3", kind: "criterion", verbatim: "method", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "point", verbatim: "observation / detector", marks: 3 },
     ],
   } as SecCard,
   {

@@ -1264,10 +1264,13 @@ const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
 // 2021-2025 cards stay frozen; 2010-2020 and 2026 are carded for the first
 // time and the tasks the reviewed 2021-2025 sittings had bundled or missed are
 // added, all counted on top. A shipped id a review withdraws becomes an alias.
-type PhysicsReviewSitting = { review?: { added: string[] } };
+// A pre-existing id the deck build never shipped at the baseline (it dropped
+// it, e.g. for a broken glyph) carries no student progress: counted with the
+// additions (the review's unshippedBefore).
+type PhysicsReviewSitting = { review?: { added: string[]; unshippedBefore?: string[] } };
 const PHYSICS_REVIEW_ADDED = new Set(Object.values(
   (physicsReview as unknown as { sittings: Record<string, PhysicsReviewSitting> }).sittings)
-  .flatMap(sitting => sitting.review?.added ?? []));
+  .flatMap(sitting => [...(sitting.review?.added ?? []), ...(sitting.review?.unshippedBefore ?? [])]));
 const isPhysicsAdded = (id: string) => {
   const year = Number(id.slice('phys-'.length, 'phys-'.length + 4));
   return year < 2021 || year > 2025 || PHYSICS_REVIEW_ADDED.has(id);
@@ -1950,9 +1953,9 @@ describe('Mark Bank card preservation', () => {
     // The live decks, pinned whole (re-pinned as each reviewed sitting is written).
     expect(PHYS_HIGHER).toHaveLength(773);
     expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('601c99b29ec4152a7ab4f50566fb633dc8945360c6750d377910010f3a87f49f');
-    expect(PHYS_ORDINARY).toHaveLength(738);
-    expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('6472460915e2160c6d5e86f5b6bf88bfdd4cd33d443ba9bcb46a3fdf5a92130b');
-    expect(physicsAdditionIds.size).toBe(773 + 738 - 570 - 563 + physicsAliasIds.length);
+    expect(PHYS_ORDINARY).toHaveLength(749);
+    expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('a44b6ac9057e3831d667cb33b8d342c94dab6ca5808eabb0605fdf14c55fcf7b');
+    expect(physicsAdditionIds.size).toBe(773 + 749 - 570 - 563 + physicsAliasIds.length);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

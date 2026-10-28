@@ -282,6 +282,224 @@
    574
   ]
  },
+ "physics-2022-ol-q14c-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q14c-diagram.png",
+  "md5": "ab514ec686716cc9123f1aa82095fc68",
+  "alt": "Diagram of a metre stick marked 10 cm to 90 cm, held up by an arrow pointing up at 50, with arrows pointing down at 30 (7 N), 60 (2 N) and 80 (4 N).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(c)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   110,
+   89,
+   485,
+   228
+  ]
+ },
+ "physics-2022-ol-q14diii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q14diii-question.png",
+  "md5": "833eff385b7d504a49a3b8386773c767",
+  "alt": "The printed lines: \"Radium (Ra, with 226 above 88 after the symbol) is an alpha emitter.\" and part (iii), \"How many neutrons are there in an atom of\" the same radium nuclide.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(d)(iii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   100,
+   612,
+   450,
+   657
+  ]
+ },
+ "physics-2022-ol-q14div-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q14div-question.png",
+  "md5": "39555988a8b1e212a505940d44250bc1",
+  "alt": "The printed lines: \"Radium (Ra, with 226 above 88 after the symbol) is an alpha emitter.\", part (iii), and part (iv), \"What is the daughter nucleus when an atom of\" the same radium nuclide \"emits two alpha particles?\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(d)(iv)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   100,
+   612,
+   500,
+   697
+  ]
+ },
+ "physics-2022-ol-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q2-table.png",
+  "md5": "aafe38416f9374a4545da9482b34c37f",
+  "alt": "Table of the results: i (degrees) 30, 40, 50, 60; r (degrees) 19, 25, 31, 35.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q2(v)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   90,
+   497,
+   505,
+   554
+  ]
+ },
+ "physics-2022-ol-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q3-table.png",
+  "md5": "140c5c63f1b394ee9fee969ba9a12d8a",
+  "alt": "Table of the results: f (Hz) 256, 320, 341, 427, 480, 512; l (cm) 22, 18, 17, 13, 12, 11; and a third row headed 1 over l (cm⁻¹), set as a fraction, with its six cells left empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q3(vii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   84,
+   233,
+   541,
+   334
+  ]
+ },
+ "physics-2022-ol-q3viii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q3viii-question.png",
+  "md5": "61a37d3fe29c7fb4de6f9ed904f63fd6",
+  "alt": "The printed Question 3: the stretched-string experiment, parts (i) to (iv), its table of f (Hz) 256, 320, 341, 427, 480, 512 against l (cm) 22, 18, 17, 13, 12, 11 with an empty row for 1 over l, and parts (v) to (viii), (viii) asking for a graph of f against 1 over l, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q3(viii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   25,
+   52,
+   548,
+   430
+  ]
+ },
+ "physics-2022-ol-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q5-table.png",
+  "md5": "c3bf292ff47510636fbbbd92c5cd2a8d",
+  "alt": "Table of the results: I (A) 1, 1.5, 2, 2.5, 3, 3.5; an empty row for I² (A²); Δθ (°C) 1.2, 2.7, 4.8, 7.5, 10.8, 14.7.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q5(iii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   82,
+   526,
+   541,
+   610
+  ]
+ },
+ "physics-2022-ol-q7ix-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q7ix-scheme.png",
+  "md5": "673b6e793da2005f94e371bfa57c84f4",
+  "alt": "The marking scheme's sketch: speed against time, a dashed line rising straight from the origin and then running level.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q7(ix)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   112,
+   593,
+   268,
+   663
+  ],
+  "solution": true
+ },
+ "physics-2022-ol-q7vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q7vii-scheme.png",
+  "md5": "ea745acb9187aab1a8af5ca251b26c0d",
+  "alt": "The marking scheme's force diagram: a box with four arrows, F pointing left, Fr. pointing right, R pointing up and W pointing down.",
+  "lettersVisible": [
+   "F",
+   "R",
+   "W"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q7(vii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   398,
+   465,
+   541,
+   535
+  ],
+  "solution": true
+ },
+ "physics-2022-ol-q8-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q8-graph.png",
+  "md5": "e3c2d6d1b74b5e10e1ef69903eef4497",
+  "alt": "Graph of temperature against heat added: a line rising from the origin through a stretch labelled solid, a level stretch labelled melting, a rising stretch labelled X, a long level stretch labelled Y, and a final rising stretch labelled gas.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q8(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   135,
+   72,
+   450,
+   266
+  ]
+ },
+ "physics-2022-ol-q9-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q9-diagram.png",
+  "md5": "e571fa263e98a0de4c7aa9883e8f8c94",
+  "alt": "Ray diagram to complete: a dashed principal axis with an upright arrow labelled object on the left, a point labelled f on the axis to its right, and a concave mirror curving across the axis further right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q9(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   85,
+   140,
+   507,
+   294
+  ]
+ },
  "physics-2023-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2023-hl-q1-table.png",
   "md5": "e1fcf589c3d06127be8d333556a06a81",

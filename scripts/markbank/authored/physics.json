@@ -7731,48 +7731,48 @@
  },
  {
   "id": "phys-2022-ol-q6-i",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "primary-colours-of-light",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(i)",
   "questionText": "Name the three primary colours of light.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "4 + 2 + 1"
+   "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "red",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "blue",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "green",
-    "marks": null
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "red / blue / green",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "red",
+      "blue",
+      "green"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
+      1
+     ]
+    },
+    "contextNote": "The scheme prints these items under one sum, [4 + 2 + 1], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "Marks are awarded on an ordered 4 + 2 + 1 split for the three colours named, so every row carries marks: null."
+  "notes": "The three colours share one cell [4 + 2 + 1]: a menu priced step by step. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-j",
+  "subjectId": "physics",
   "topicId": "phys-4-6",
   "conceptId": "nuclear-fission",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(j)",
   "questionText": "What is meant by nuclear fission?",
@@ -7782,22 +7782,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "splitting a nucleus [by a neutron, releasing energy]",
     "marks": 7,
-    "contextNote": "Partial answer accepted for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "The scheme's square brackets are reproduced as printed; this preamble contains no bracket-optionality rule."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-k",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "how-a-fuse-works",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(k)",
   "questionText": "A fuse is a safety device used in an electrical plug. Describe how a fuse works.",
@@ -7807,55 +7807,50 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "melts",
-    "accepts": [
-     "breaks"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "melts/breaks when current is too high",
     "marks": 7,
-    "contextNote": "The scheme prints 'melts/breaks when current is too high'. The key word only scores in the correct context — the answer must say this happens when the current is too high. Partial answer accepted for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "The solidus here alternates a single verb inside a phrase, so the two key words are split and the shared condition is carried in the contextNote rather than reconstructed into two new phrases."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-l",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "half-life-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(l)",
-  "questionText": "Explain what is meant by the half-life of a radioactive sample.",
+  "questionText": "Explain what is meant by the half‐life of a radioactive sample.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "the time for half the sample to decay",
-    "accepts": [
-     "the time for its activity to halve"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "the time for half the sample to decay / the time for its activity to halve",
     "marks": 7,
-    "contextNote": "Partial answer accepted for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-i",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "definition-of-velocity",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q7(i)",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
   "questionText": "What is meant by velocity?",
   "tariffModel": {
    "kind": "fixed"
@@ -7863,29 +7858,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "rate of change of displacement",
-    "accepts": [
-     "speed in a given direction",
-     "s ÷ t"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "rate of change of displacement / speed in a given direction / s ÷ t",
     "marks": 6,
-    "contextNote": "One mark is deducted if 'distance' is used instead of 'displacement'. Partial answer accepted for 3."
+    "contextNote": "[–1 if “distance” used instead of “displacement”] [accept partial answer for 3]"
    }
   ],
-  "notes": "Q7(ii) skipped — 'Convert 6 minutes into seconds' is a bare unit conversion with no physics marking point. Q7(vii) and (ix) skipped — force diagram and speed-time graph (rule 9)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-iii",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "acceleration-with-units",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q7(iii)",
-  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes (360 s).",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
   "questionText": "Calculate the acceleration of the train. Include units in your answer.",
   "tariffModel": {
    "kind": "fixed"
@@ -7893,31 +7884,31 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "25 ÷ 360 = 0.069",
     "marks": 4,
-    "contextNote": "Partial answer accepted for 2, e.g. a = (v-u)/t."
+    "contextNote": "[accept partial answer for 2, e.g. a = (v-u)/t]"
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "m s–2",
+    "verbatim": "m s⁻²",
     "marks": 2
    }
   ],
-  "notes": "Carded because the scheme splits the tariff into two discrete, separately checkable points: the value (4) and the unit (2)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-iv",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "force-from-mass-and-acceleration",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q7(iv)",
-  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes. Its acceleration was calculated in part (iii) as 0.069 m s–2.",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
   "questionText": "Calculate the force required to accelerate the train.",
   "tariffModel": {
    "kind": "fixed"
@@ -7925,25 +7916,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "420000 × 0.069 = 29166.7 N",
     "marks": 6,
-    "contextNote": "Partial answer accepted for 3, e.g. F = ma."
+    "contextNote": "[accept partial answer for 3, e.g. F = ma]"
    }
   ],
-  "notes": "The carried-forward acceleration is stated in the stem so the part is self-contained."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-v",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "distance-under-uniform-acceleration",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q7(v)",
-  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes.",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
   "questionText": "Calculate the distance the train travelled in 6 minutes.",
   "tariffModel": {
    "kind": "fixed"
@@ -7951,25 +7942,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "4500 m",
     "marks": 6,
-    "contextNote": "Partial answer accepted for 3, e.g. s = ut + ½at2."
+    "contextNote": "[accept partial answer for 3, e.g. s = ut + ½at²]"
    }
   ],
-  "notes": "The scheme prints only the final answer with its unit — a single checkable marking point."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-vi",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "distance-at-constant-speed",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q7(vi)",
-  "stem": "A train accelerated from rest to 25 m s–1 in 6 minutes. The train then maintained this speed of 25 m s–1 for a further 15 minutes.",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes. The train then maintained this speed of 25 m s⁻¹ for a further 15 minutes.",
   "questionText": "Calculate the distance the train travelled during this 15 minute interval.",
   "tariffModel": {
    "kind": "fixed"
@@ -7977,14 +7968,16 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "25 × 15 × 60 = 22500 m",
     "marks": 6,
-    "contextNote": "Partial answer accepted for 3, e.g. formula for distance."
+    "contextNote": "[accept partial answer for 3, e.g. formula for distance]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-viii",
@@ -8012,14 +8005,12 @@
  },
  {
   "id": "phys-2022-ol-q8-iii",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "heat-source-for-water",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q8(iii)",
-  "stem": "Water is heated up, changing its temperature and its state.",
+  "stem": "The graph shows how the temperature and state of water change as the water is heated up.",
   "questionText": "Describe how the energy could have been supplied to the water.",
   "tariffModel": {
    "kind": "fixed"
@@ -8027,65 +8018,66 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "joulemeter",
-    "accepts": [
-     "element",
-     "coil",
-     "electricity",
-     "hot plate"
-    ],
-    "openList": true,
-    "marks": 6,
-    "contextNote": "The scheme prints this as an 'e.g.' list and states that its methods are not exhaustive, so any other valid heat source is acceptable."
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "joulemeter / element / coil / electricity / hot plate",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "joulemeter",
+      "element",
+      "coil",
+      "electricity",
+      "hot plate"
+     ]
+    },
+    "openList": true
    },
    {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "in the water",
-    "accepts": [
-     "under the container of water"
-    ],
-    "openList": true,
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "detail, e.g. in the water, under the container of water as appropriate",
     "marks": 3,
-    "contextNote": "Scheme: 'detail, e.g. in the water, under the container of water as appropriate' — the second mark is for saying where the heat source is placed."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q8(i) and Q8(ii) skipped: both ask you to explain the shape of a heating-curve graph at parts X and Y, and this wave carries no figures. Q8(viii) skipped: it is a 'describe with the aid of labelled diagram' question and one of its four rows is the content-free 'method [3]'."
+  "notes": "\"[6 + 3]\" against the two lines: the source of energy (examples, \"e.g. ... etc.\": an open menu of one) 6, then its detail 3, in the order printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q8-graph"
  },
  {
   "id": "phys-2022-ol-q8-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "latent-heat-calculation",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q8(iv)",
-  "questionText": "Ice has a latent heat of 330000 J kg–1. Calculate how much energy is required to change 0.2 kg of ice to water.",
+  "questionText": "Ice has a latent heat of 330000 J kg⁻¹. Calculate how much energy is required to change 0.2 kg of ice to water.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "330000 × 0.2 = 66000 J",
     "marks": 6,
-    "contextNote": "Partial answer accepted for 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Carded because the scheme awards a single discrete, checkable final answer (66000 J) rather than untraceable working."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q8-v",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "steam-burn-danger",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q8(v)",
   "questionText": "Explain why a steam burn is more dangerous than a burn from boiling water.",
@@ -8095,28 +8087,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "steam has more energy",
-    "accepts": [
-     "steam may have higher temperature"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "steam has more energy / steam may have higher temperature",
     "marks": 6,
-    "contextNote": "The scheme separates the two statements with a solidus, so either one alone is equally acceptable for the full 6 marks."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q8-vi",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "thermometric-property",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q8(vi)",
-  "stem": "The temperature of water is measured throughout an experiment using a thermometer.",
+  "stem": "The temperature of the water needs to be measured throughout this experiment. It is measured using a thermometer.",
   "questionText": "A thermometer uses a particular thermometric property to measure temperature. What is meant by a thermometric property?",
   "tariffModel": {
    "kind": "fixed"
@@ -8124,65 +8113,66 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "one that changes [measurably] with heat",
-    "accepts": [
-     "temperature"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "one that changes [measurably] with heat/temperature",
     "marks": 5,
-    "contextNote": "The scheme reads 'one that changes [measurably] with heat/temperature' — 'heat' and 'temperature' are equally acceptable alternatives in that statement."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q8-vii",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "thermometric-property-examples",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q8(vii)",
+  "stem": "The temperature of the water needs to be measured throughout this experiment. It is measured using a thermometer.",
   "questionText": "State two examples of thermometric properties.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "volume",
+    "verbatim": "volume / emf / pressure / height / resistance",
     "marks": null,
-    "openList": true,
     "group": {
      "claimMax": 2,
+     "perOption": 4,
      "options": [
       "volume",
       "emf",
       "pressure",
       "height",
       "resistance"
+     ],
+     "perOptionSteps": [
+      4,
+      2
      ]
     },
-    "contextNote": "The scheme prints 'e.g volume, emf, pressure, height, resistance etc. [4 + 2]' — the first correct property scores 4 and the second 2, and the list is not exhaustive."
+    "openList": true,
+    "contextNote": "The scheme prints these items under one sum, [4 + 2], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "Marks are an unequal 4 + 2 split across the two properties, so the tariff is carried as an ordered split rather than a per-option value."
+  "notes": "The scheme prints examples (\"e.g ... etc.\") for two properties at [4 + 2]: an open menu of two, priced step by step. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q9-i",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "reflection-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q9(i)",
-  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual.",
   "questionText": "What is meant by reflection?",
   "tariffModel": {
    "kind": "fixed"
@@ -8190,23 +8180,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "rebounding of a wave off a surface",
     "marks": 3
    }
   ],
-  "notes": "Q9(ii) skipped: it asks you to copy and complete a printed ray diagram. Q9(iv) skipped: of its three rows one is the content-free 'substitution [3]', so the remaining content rows cannot sum to the printed 12 marks. Q9(vii) skipped: it is a sketching question."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q9-iii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "real-image-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q9(iii)",
+  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual.",
   "questionText": "The image formed is real. Explain what is meant by a real image.",
   "tariffModel": {
    "kind": "fixed"
@@ -8214,29 +8205,26 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "one formed by the intersection of rays",
-    "accepts": [
-     "one formed on a screen"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "one formed by the intersection of rays / one formed on a screen",
     "marks": 6,
-    "contextNote": "Separated by a solidus in the scheme, so either statement alone earns the full 6 marks."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "",
-  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. An object is placed in front of a concave mirror, between its focal point and its centre of curvature, so that a magnified image is formed."
+  "notes": "The scheme sets (ii)'s rows and (iii) in a narrow column beside its copy of the diagram; (iii)'s [6] is printed in the answer's own line, not in the margin. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q9-diagram"
  },
  {
   "id": "phys-2022-ol-q9-v",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "magnification-image-height",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q9(v)",
-  "stem": "The object is 20 cm in front of the concave mirror. The mirror has a focal length of 12 cm. The real image is formed at v = 30 cm.",
+  "stem": "The object is 20 cm in front of the concave mirror. The mirror has a focal length of 12 cm.",
   "questionText": "The object has a height of 4 cm. Calculate the height of the image.",
   "tariffModel": {
    "kind": "fixed"
@@ -8244,27 +8232,29 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "m = v/u = 1.5",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "image height = 4 × 1.5 = 6 cm",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "The stem's u = 20 cm and f = 12 cm are the paper's own words from the lead-in to Q9(iv); v = 30 cm is the scheme's printed answer to Q9(iv), carried forward so this part is answerable on its own. The scheme adds [accept partial answer for 3] for the part as a whole. Carded because both marking points are stated values a student can self-check."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q9-diagram"
  },
  {
   "id": "phys-2022-ol-q9-vi",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "concave-mirror-uses",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q9(vi)",
   "questionText": "State one use for a concave mirror.",
@@ -8274,31 +8264,37 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "shaving",
-    "accepts": [
-     "dentistry",
-     "headlights",
-     "searchlights",
-     "satellite dishes"
-    ],
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "shaving / dentistry / headlights / searchlights / satellite dishes",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "shaving",
+      "dentistry",
+      "headlights",
+      "searchlights",
+      "satellite dishes"
+     ]
+    },
     "openList": true,
-    "marks": 4,
-    "contextNote": "The scheme gives these as examples ('e.g. ... etc.'), so any other valid use of a concave mirror is acceptable."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": ""
+  "notes": "The scheme prints examples (\"e.g. ... etc.\") for one use at [4]: an open menu of one. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q9-viii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "virtual-image-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q9(viii)",
+  "stem": "Light is also reflected by convex mirrors.",
   "questionText": "The image produced in a convex mirror is always virtual. Explain what is meant by a virtual image.",
   "tariffModel": {
    "kind": "fixed"
@@ -8306,27 +8302,35 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "one formed by the apparent intersection of rays",
-    "accepts": [
-     "one not formed on a screen"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "one formed by the apparent intersection of rays / one not formed on a screen",
     "marks": 6,
-    "contextNote": "Separated by a solidus in the scheme, so either statement alone earns the full 6 marks."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "\"The image\" (the mirror's optical image) reads to the figure-pointer check as a printed figure: the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2022-ol-q9-ix",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "convex-mirror-uses",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q9(ix)",
+  "stem": "Light is also reflected by convex mirrors.",
   "questionText": "State one use for a convex mirror.",
   "tariffModel": {
    "kind": "fixed"
@@ -8334,27 +8338,32 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "cars",
-    "accepts": [
-     "shops",
-     "roads"
-    ],
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "cars / shops / roads",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "cars",
+      "shops",
+      "roads"
+     ]
+    },
     "openList": true,
-    "marks": 4,
-    "contextNote": "The scheme gives these as examples ('e.g. ... etc.'), so any other valid use of a convex mirror is acceptable."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": ""
+  "notes": "The scheme prints examples (\"e.g. ... etc.\") for one use at [4]: an open menu of one. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-2",
   "conceptId": "longitudinal-wave-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q10(ii)",
   "questionText": "Sound is also an example of a longitudinal wave. What is a longitudinal wave?",
@@ -8364,23 +8373,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "wave displacement is parallel to direction of wave",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q10(i) and Q10(iv) skipped: both are 'describe an experiment' parts whose rows include the content-free 'observation [3]' (and, in (iv), 'method'), so the content-bearing rows cannot sum to the printed tariff. Q10(vii) skipped: it is a labelled-diagram question."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-iii",
-  "topicId": "phys-2-7",
-  "conceptId": "diffraction-wavelength-and-gap",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "diffraction-wavelength-and-gap",
   "section": "B",
   "questionRef": "2022 OL Q10(iii)",
+  "stem": "Sound waves can undergo reflection, refraction, diffraction and interference.",
   "questionText": "A doorway may cause a sound wave to diffract but it will not cause a light wave to do so. Explain why.",
   "tariffModel": {
    "kind": "fixed"
@@ -8388,25 +8399,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "appropriate reference to width of doorway and wavelength of sound",
-    "accepts": [
-     "light"
-    ],
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "appropriate reference to width of doorway and wavelength of sound/light",
     "marks": 6,
-    "contextNote": "The scheme reads 'appropriate reference to width of doorway and wavelength of sound/light' — comparing the doorway width with either wavelength earns the mark."
+    "contextNote": "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-v",
+  "subjectId": "physics",
   "topicId": "phys-2-7",
   "conceptId": "polarisation-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q10(v)",
   "questionText": "Sound waves do not undergo polarisation but light waves do. What is meant by polarisation?",
@@ -8416,21 +8424,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "wave vibrations restricted to one plane",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-vi",
-  "topicId": "phys-2-5",
-  "conceptId": "resonance-definition",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "resonance-definition",
   "section": "B",
   "questionRef": "2022 OL Q10(vi)",
   "stem": "The human ear is most sensitive to sounds with frequencies between 2 kHz and 4 kHz. One reason for this is that sounds in this range can cause resonance to occur in the ear canal.",
@@ -8441,21 +8450,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "transfer of energy between two objects of similar natural frequency",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-viii",
+  "subjectId": "physics",
   "topicId": "phys-2-2",
   "conceptId": "wave-equation-speed",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q10(viii)",
   "questionText": "The frequency of a sound wave is 2800 Hz and it has a wavelength of 0.12 m. Calculate the speed of the wave.",
@@ -8465,24 +8475,25 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "2800 × 0.12 = 336 m s–1",
+    "verbatim": "2800 × 0.12 = 336 m s⁻¹",
     "marks": 5,
-    "contextNote": "Partial answer accepted for 3, e.g. c = fλ."
+    "contextNote": "[accept partial answer for 3, e.g. c = fλ]"
    }
   ],
-  "notes": "Carded because the scheme awards a single discrete final answer, 336 m s–1."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-i",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "electric-current-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q11(i)",
+  "stem": "Benjamin Franklin began experimenting with electricity during the 18th century.",
   "questionText": "What is electric current?",
   "tariffModel": {
    "kind": "fixed"
@@ -8490,22 +8501,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "flow of charge",
     "marks": 6,
-    "contextNote": "Key words — they must appear in the correct context in the candidate's answer to merit the marks."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q11(iii) skipped: it asks for a circuit diagram. Q11(viii) skipped: one of its three rows is the content-free 'substitution [3]', so the content rows (the parallel-resistance formula and RT = 1.2 Ω) cannot sum to the printed 9 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-ii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "current-measuring-instrument",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q11(ii)",
   "questionText": "Name an instrument used to measure electric current.",
@@ -8515,26 +8526,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "ammeter",
-    "accepts": [
-     "galvanometer",
-     "multimeter"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ammeter /galvanometer / multimeter",
     "marks": 6,
-    "contextNote": "Separated by solidi in the scheme, so all three are equally acceptable. The scheme's 'voltmeter, ohmmeter' are listed only as partial answers worth 3, not as correct answers."
+    "contextNote": "[accept partial answer for 3, e.g. voltmeter, ohmmeter]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-iv",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "metals-as-conductors",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q11(iv)",
   "questionText": "The wires in a circuit are made of metal. Explain why.",
@@ -8544,23 +8551,21 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "conductor",
-    "marks": 3,
-    "exactTermRequired": true,
-    "contextNote": "Key word — 'conductor' scores only inside a correct statement (metal is a good conductor of electricity)."
+    "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-v",
-  "topicId": "phys-3-1",
-  "conceptId": "charge-carrier-in-metal",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "charge-carrier-in-metal",
   "section": "B",
   "questionRef": "2022 OL Q11(v)",
   "questionText": "Name the subatomic particle that is the charge carrier in a metal.",
@@ -8570,23 +8575,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "electron",
     "marks": 6,
-    "exactTermRequired": true,
-    "contextNote": "The scheme lists 'proton, neutron' only as partial answers worth 3, not as correct answers."
+    "contextNote": "[accept partial answer for 3, e.g. proton, neutron]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-vi",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "current-from-charge-and-time",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q11(vi)",
   "questionText": "A charge of 30 C passes through a wire in a time of 6 s. Calculate the current flowing in the wire.",
@@ -8596,51 +8600,51 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "30 ÷ 6 = 5 A",
     "marks": 6,
-    "contextNote": "Partial answer accepted for 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-vii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "ohms-law-potential-difference",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q11(vii)",
-  "stem": "A charge of 30 C passes through a wire in a time of 6 s, so the current in the wire is 5 A (the answer to part (vi)).",
-  "questionText": "The wire has a resistance of 3 Ω. Calculate the potential difference (voltage) across the wire.",
+  "stem": "(vi) A charge of 30 C passes through a wire in a time of 6 s. Calculate the current flowing in the wire.",
+  "questionText": "The wire has a resistance of 3 Ω. Calculate the potential difference (voltage) across the wire.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "5 × 3 = 15 V",
     "marks": 6,
-    "contextNote": "Partial answer accepted for 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "The current of 5 A is the scheme's own printed answer to Q11(vi), carried into the stem so this part is answerable on its own."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-ix",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "resistance-and-length",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q11(ix)",
-  "stem": "A piece of wire of length 1.5 m has a resistance of 12 Ω.",
+  "stem": "A piece of wire of length 1.5 m has a resistance of 12 Ω.",
   "questionText": "What is the resistance of a 3 m piece of the same wire?",
   "tariffModel": {
    "kind": "fixed"
@@ -8648,50 +8652,48 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "24 Ω",
-    "accepts": [
-     "double"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "24 Ω / double",
     "marks": 4,
-    "contextNote": "Separated by a solidus in the scheme, so stating that the resistance doubles is equally acceptable."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-x",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "resistance-and-cross-sectional-area",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q11(x)",
-  "questionText": "State the relationship between the resistance of a wire and its cross-sectional area.",
+  "stem": "A piece of wire of length 1.5 m has a resistance of 12 Ω.",
+  "questionText": "State the relationship between the resistance of a wire and its cross‐sectional area.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "inversely proportional",
     "marks": 4,
-    "contextNote": "Key words — they must appear in the correct context (resistance is inversely proportional to cross-sectional area)."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-i",
+  "subjectId": "physics",
   "topicId": "phys-4-1",
   "conceptId": "properties-of-the-electron",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q12(i)",
   "stem": "The Irish physicist George Stoney is most famous for introducing the term electron.",
@@ -8702,11 +8704,10 @@
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "negative charge",
+    "verbatim": "negative charge / small mass",
     "marks": null,
-    "openList": true,
     "group": {
      "claimMax": 2,
      "perOption": 4,
@@ -8715,21 +8716,22 @@
       "small mass"
      ]
     },
-    "contextNote": "The scheme prints 'e.g. negative charge, small mass etc. [4 + 4]' — 4 marks per property, and the list is not exhaustive, so any other valid property of the electron is acceptable."
+    "openList": true,
+    "contextNote": "The scheme prints \"[4 + 4]\"."
    }
   ],
-  "notes": "Q12(ii) skipped: its three rows include the content-free 'method [3]' and 'observation [3]'. Q12(iv)(a) and (b) skipped: the powers of ten lost their superscripts in extraction (the scheme text reads '6.5 × 1014 Hz' for 6.5 × 10¹⁴ Hz and '(3 × 108)' for 3 × 10⁸), so the answers cannot be reproduced verbatim without shipping a wrong number."
+  "notes": "The scheme prints two examples (\"e.g. ... etc.\") for two properties at [4 + 4]: an open menu of two at 4. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "threshold-frequency",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q12(iii)",
-  "stem": "The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it. To ensure the photoelectric effect occurs, the light must be of a suitable frequency to release the electrons. The frequency of the light must be above the threshold frequency.",
+  "stem": "To ensure the photoelectric effect occurs, the light must be of a suitable frequency to release the electrons. The frequency of the light must be above the threshold frequency.",
   "questionText": "Describe what happens if the frequency of the incident light is below the threshold frequency.",
   "tariffModel": {
    "kind": "fixed"
@@ -8737,24 +8739,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "photoelectric effect does not occur",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-v",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "electron-production-xray-tube",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q12(v)",
-  "stem": "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target.",
+  "stem": "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
   "questionText": "How are electrons produced in an X–ray tube?",
   "tariffModel": {
    "kind": "fixed"
@@ -8762,27 +8764,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "thermionic emission",
-    "accepts": [
-     "hot cathode"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "thermionic emission / hot cathode",
     "marks": 6,
-    "contextNote": "Separated by a solidus in the scheme, so either answer alone earns the full 6 marks."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-vi",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "electron-acceleration-xray-tube",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q12(vi)",
+  "stem": "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
   "questionText": "How are electrons accelerated in an X–ray tube?",
   "tariffModel": {
    "kind": "fixed"
@@ -8790,24 +8790,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "[high] voltage",
     "marks": 6,
-    "contextNote": "Key word — 'voltage' must appear in the correct context; the scheme brackets 'high'."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-vii",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "xray-target-material",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q12(vii)",
+  "stem": "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
   "questionText": "Tungsten is often used as the target in an X–ray tube. State one property of tungsten that makes it suitable to use as the target.",
   "tariffModel": {
    "kind": "fixed"
@@ -8815,28 +8816,34 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "high melting point",
-    "accepts": [
-     "high specific heat capacity"
-    ],
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "high melting point / high specific heat capacity",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "high melting point",
+      "high specific heat capacity"
+     ]
+    },
     "openList": true,
-    "marks": 6,
-    "contextNote": "The scheme prints these as examples ('e.g.'), and states that its descriptions are not exhaustive."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "The scheme prints two examples (\"e.g.\") for one property at [6]: an open menu of one. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-viii",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "xray-shielding-material",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q12(viii)",
+  "stem": "X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
   "questionText": "What material could be used to ensure that the X–rays do not escape from the X–ray tube?",
   "tariffModel": {
    "kind": "fixed"
@@ -8844,14 +8851,16 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "lead",
     "marks": 6,
-    "exactTermRequired": true
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-hl-q12b-vii",
@@ -9484,11 +9493,9 @@
  },
  {
   "id": "phys-2022-ol-q1-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "measuring-time-in-velocity-experiment",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(iii)",
   "stem": "A student carried out an experiment to measure the velocity of an object.",
@@ -9499,24 +9506,21 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "number of gaps × 0.02 s",
-    "accepts": [
-     "from (electronic) timer"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "number of gaps × 0.02 s / from (electronic) timer",
     "marks": 3
    }
   ],
-  "notes": "Q1(i) and (ii) skipped — labelled diagram / 'indicate on the diagram', both drawing-and-figure dependent (rules 4 and 9)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q1-iv",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "velocity-formula",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(iv)",
   "stem": "A student carried out an experiment to measure the velocity of an object.",
@@ -9527,22 +9531,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "s ÷ t",
     "marks": 6,
-    "contextNote": "The scheme allows a partial answer for 3."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Single printed marking point worth the full 6."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q1-v",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "acceleration-experiment-apparatus-change",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(v)",
   "stem": "A student carried out an experiment to measure the velocity of an object. The student then used the apparatus to measure the acceleration of the object.",
@@ -9553,25 +9557,21 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "changed slope",
-    "accepts": [
-     "applied force",
-     "second light-gate"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "changed slope / applied force / second light-gate",
     "marks": 4
    }
   ],
-  "notes": "Three solidus-separated alternatives, split one per string."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q1-vi",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "acceleration-experiment-measurements",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(vi)",
   "stem": "A student carried out an experiment to measure the velocity of an object. The student then used the apparatus to measure the acceleration of the object.",
@@ -9582,30 +9582,24 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "alt",
-    "verbatim": "two distances",
-    "accepts": [
-     "times",
-     "velocities",
-     "distance or time between measurements"
-    ],
-    "marks": 4,
-    "contextNote": "The scheme prints 'two distances/times/velocities / distance or time between measurements' — 'times' and 'velocities' substitute for 'distances', i.e. two of any one of those quantities."
+    "verbatim": "two distances/times/velocities / distance or time between measurements",
+    "marks": 4
    }
   ],
-  "notes": "The scheme nests an alternation inside a phrase; the substitutable key words are carried in accepts with a contextNote rather than reconstructed into new phrases."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q1-vii",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "acceleration-formula",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(vii)",
-  "stem": "A student used a runway and timer apparatus to measure the acceleration of an object.",
+  "stem": "A student carried out an experiment to measure the velocity of an object. The student then used the apparatus to measure the acceleration of the object.",
   "questionText": "How did the student use these measurements to calculate acceleration?",
   "tariffModel": {
    "kind": "fixed"
@@ -9613,43 +9607,39 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "alt",
-    "verbatim": "(v – u) ÷ t",
-    "accepts": [
-     "(v2 – u2) ÷ 2s"
-    ],
+    "verbatim": "(v – u) ÷ t or (v² – u²) ÷ 2s",
     "marks": 4,
-    "contextNote": "The scheme joins these with 'or'. It prints v2 and u2 for v² and u². Partial answer accepted for 2."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "Superscripts are flattened in the source scheme text and are reproduced exactly as printed."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q1-viii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "velocity-experiment-precautions",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(viii)",
-  "stem": "A student carried out experiments to measure the velocity and the acceleration of an object using a runway/air-track and timer.",
+  "stem": "A student carried out an experiment to measure the velocity of an object. The student then used the apparatus to measure the acceleration of the object.",
   "questionText": "State two precautions that could be taken to improve the accuracy of either of these experiments.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "3 + 1"
+   "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "polish",
+    "verbatim": "polish / oil / remove dirt / change slope / repeat / increased sensitivity of timer / avoid error of parallax",
     "marks": null,
-    "openList": true,
     "group": {
      "claimMax": 2,
+     "perOption": 3,
      "options": [
       "polish",
       "oil",
@@ -9658,23 +9648,28 @@
       "repeat",
       "increased sensitivity of timer",
       "avoid error of parallax"
+     ],
+     "perOptionSteps": [
+      3,
+      1
      ]
     },
-    "contextNote": "The scheme prefaces the list with 'e.g.' and closes it with 'etc.', so other valid precautions are acceptable. Marks are awarded 3 for the first precaution and 1 for the second."
+    "openList": true,
+    "contextNote": "The scheme prints these items under one sum, [3 + 1], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "Unequal split (3 + 1) so orderedSplit with a single anyN row; perOption omitted because the two marks are not equal."
+  "notes": "The scheme prints examples (\"e.g. ... etc.\") for two precautions at [3 + 1]: an open menu of two, priced step by step. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q2-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "protractor-angle-measurement",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q2(iii)",
-  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r.",
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
   "questionText": "Name the instrument used to measure these angles.",
   "tariffModel": {
    "kind": "fixed"
@@ -9682,25 +9677,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "protractor",
-    "marks": 3,
-    "exactTermRequired": true
+    "marks": 3
    }
   ],
-  "notes": "Q2(i) and (ii) skipped — labelled diagram and 'label the angles on your diagram' (rules 4 and 9)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q2-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "refractive-index-formula",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q2(iv)",
-  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r.",
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
   "questionText": "State the formula used to calculate n.",
   "tariffModel": {
    "kind": "fixed"
@@ -9708,25 +9702,25 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "sin i ÷ sin r",
     "marks": 4,
-    "contextNote": "Partial answer accepted for 2."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "Q2(v) skipped — its marking points ('one calculation of n', 'average calculated') are content-free criteria (rule 2). Q2(vi) skipped — the answer ('yes [or answer consistent with calculations]') depends on the candidate's own calculated values."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q2-vii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "snells-law-experiment-precaution",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q2(vii)",
-  "stem": "A student carried out an experiment to verify Snell’s Law, measuring the angle of incidence i and the corresponding angle of refraction r for a transparent block.",
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
   "questionText": "State one precaution used to improve the accuracy of the experiment.",
   "tariffModel": {
    "kind": "fixed"
@@ -9734,11 +9728,10 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "anyN",
-    "verbatim": "thinner pencil",
+    "verbatim": "thinner pencil / avoid error of parallax",
     "marks": null,
-    "openList": true,
     "group": {
      "claimMax": 1,
      "perOption": 3,
@@ -9747,21 +9740,21 @@
       "avoid error of parallax"
      ]
     },
-    "contextNote": "The scheme prefaces the list with 'e.g.' and closes it with 'etc.', so other valid precautions are acceptable."
+    "openList": true
    }
   ],
-  "notes": "anyN row carries marks: null per the anyN rule; claimMax × perOption = 3 = totalMarks."
+  "notes": "The scheme prints two examples (\"e.g. ... etc.\") for one precaution at [3]: an open menu of one. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q3-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "sonometer-length-instrument",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q3(iii)",
-  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred.",
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
   "questionText": "Name the instrument used to measure length.",
   "tariffModel": {
    "kind": "fixed"
@@ -9769,27 +9762,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "sonometer",
-    "accepts": [
-     "metre stick"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sonometer / metre stick",
     "marks": 3
    }
   ],
-  "notes": "Q3(i) and (ii) skipped — labelled diagram / 'indicate on your diagram' (rules 4 and 9)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q3-iv",
-  "topicId": "phys-u2",
-  "conceptId": "constant-tension-control",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "constant-tension-control",
   "section": "A",
   "questionRef": "2022 OL Q3(iv)",
-  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The tension of the string was kept constant throughout the experiment.",
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
   "questionText": "Explain why the tension of the string must be kept constant.",
   "tariffModel": {
    "kind": "fixed"
@@ -9797,25 +9787,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "frequency depends on tension",
-    "marks": 3,
-    "contextNote": "The scheme marks this '[state or imply]', so an answer that clearly implies the dependence also scores."
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "frequency depends on tension [state or imply]",
+    "marks": 3
    }
   ],
-  "notes": "Control-of-variables reasoning, so assigned to phys-u2."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q3-v",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "sonometer-frequency-source",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q3(v)",
-  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l, recording frequency values from 256 Hz to 512 Hz.",
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. The student recorded the following results.",
   "questionText": "How did the student find the frequency values?",
   "tariffModel": {
    "kind": "fixed"
@@ -9823,27 +9812,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "from tuning forks",
-    "accepts": [
-     "from signal generator"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "from tuning forks / from signal generator",
     "marks": 3
    }
   ],
-  "notes": "Q3(vii) skipped — 'copy and complete the table' is table computation. Q3(viii) skipped — graph plotting (rule 9)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q3-vi",
-  "topicId": "phys-u2",
-  "conceptId": "detecting-resonance-sonometer",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-6",
+  "conceptId": "detecting-resonance-sonometer",
   "section": "A",
   "questionRef": "2022 OL Q3(vi)",
-  "stem": "A student set a length of stretched string vibrating and adjusted the length until resonance occurred.",
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
   "questionText": "Describe how the student knew that resonance had occurred.",
   "tariffModel": {
    "kind": "fixed"
@@ -9851,25 +9837,22 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "paper rider jumps",
-    "accepts": [
-     "loud sound"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "paper rider jumps / loud sound",
     "marks": 4,
-    "contextNote": "Partial answer accepted for 2."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "Experimental observation, so assigned to phys-u2."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q4-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "supplying-heat-energy-calorimeter",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q4(ii)",
   "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter.",
@@ -9880,29 +9863,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "alt",
-    "verbatim": "joulemeter",
-    "accepts": [
-     "hot copper",
-     "heating element"
-    ],
-    "marks": 3,
-    "contextNote": "The scheme marks this '[state or imply]'."
+    "verbatim": "joulemeter / hot copper / heating element [state or imply]",
+    "marks": 3
    }
   ],
-  "notes": "Q4(i) skipped — labelled diagram (rule 9). Q4(iii) and (iv) skipped — the scheme shows only bare arithmetic (0.1498 – 0.0745 and 23 – 18) with no separable physics marking point (rule 6)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q4-v",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "heat-capacity-formula",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q4(v)",
-  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water.",
+  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter.",
   "questionText": "State the formula used to calculate the heat gained by a material as it changes temperature.",
   "tariffModel": {
    "kind": "fixed"
@@ -9910,25 +9888,25 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "mcΔθ",
     "marks": 4,
-    "contextNote": "The scheme accepts a partial answer for 2, e.g. CΔθ."
+    "contextNote": "[accept partial answer for 2, e.g. CΔθ]"
    }
   ],
-  "notes": "Q4(vi) skipped — the scheme prints a split substitution line ([6 + 2 + 2] plus [2] for the final value) as worked arithmetic, which cannot be turned into checkable marking points without inventing prose (rule 6)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q5-ii",
-  "topicId": "phys-u2",
-  "conceptId": "joules-law-controlled-variables",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-3-3",
+  "conceptId": "joules-law-controlled-variables",
   "section": "A",
   "questionRef": "2022 OL Q5(ii)",
-  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. The mass of the water and the length of time for which the current was flowing were both kept constant.",
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
   "questionText": "Why were the mass and the time kept constant?",
   "tariffModel": {
    "kind": "fixed"
@@ -9936,25 +9914,24 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Δθ depends on mass and/or time",
-    "marks": 3,
-    "contextNote": "The scheme marks this '[state or imply]'. The 'and/or' is printed in the scheme itself, not an alternatives solidus."
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Δθ depends on mass and/or time [state or imply]",
+    "marks": 3
    }
   ],
-  "notes": "Q5(i) skipped — labelled diagram (rule 9). Q5(iii) skipped — 'copy and complete the table'. Q5(iv) skipped — graph plotting (rule 9). Q5(v) skipped — the answer requires reading the candidate's own graph."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q5-vi",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "joules-law-statement",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q5(vi)",
-  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents, with the mass of the water and the time kept constant. The student then plotted a graph of I2 against Δθ.",
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
   "questionText": "Explain how your graph verifies Joule’s law.",
   "tariffModel": {
    "kind": "fixed"
@@ -9962,25 +9939,24 @@
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "I2 proportional to Δθ",
+    "verbatim": "I² proportional to Δθ",
     "marks": 4,
-    "contextNote": "The scheme prints I2 for I². Partial answer accepted for 2."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": "The graph referred to is the candidate's own, and the scheme describes its axes (I2 against Δθ) in words, so no figure is needed."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-a",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "newtons-first-law",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(a)",
-  "stem": "Question 6 instructs: Answer any eight of the following parts (a), (b), (c), etc. Each part is worth 7 marks.",
   "questionText": "State Newton’s first law of motion.",
   "tariffModel": {
    "kind": "fixed"
@@ -9988,22 +9964,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "a body remains at rest [or moving at constant velocity] unless an [unbalanced, external] force acts on it",
     "marks": 7,
-    "contextNote": "The scheme accepts a partial answer for 4, e.g. Newton's second law of motion."
+    "contextNote": "[accept partial answer for 4, e.g Newton’s second law of motion]"
    }
   ],
-  "notes": "Q6(d) skipped — 'Draw a labelled diagram to show how light travels through an optical fibre' (rule 9)."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-b",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "work-done-calculation",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(b)",
   "questionText": "A boy applies a force of 20 N to pull his sleigh for 150 m. Calculate the work done by the boy.",
@@ -10013,22 +9989,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "20 × 150 = 3000 J",
     "marks": 7,
-    "contextNote": "The scheme accepts a partial answer for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "Carded because the scheme awards one undivided marking point that is the complete working ending in the final answer, so it is fully self-markable. The 2022 OL scheme has no general units-deduction note, so no unit penalty is claimed. The multiplication sign was typed as the letter x, which no scheme contains."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-c",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "heat-vs-temperature",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(c)",
   "questionText": "What is the difference between heat and temperature?",
@@ -10038,25 +10014,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "alt",
-    "verbatim": "heat is a form of energy",
-    "accepts": [
-     "temperature is a measure of hotness"
-    ],
+    "verbatim": "heat is a form of energy / temperature is a measure of hotness [state or imply]",
     "marks": 7,
-    "contextNote": "The scheme separates these with a solidus, so either alone is acceptable; marked '[state or imply]'. Partial answer accepted for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "Modelled as alternatives because the scheme uses a single solidus, which this preamble defines as equally acceptable alternatives."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-e",
+  "subjectId": "physics",
   "topicId": "phys-3-1",
   "conceptId": "charging-an-electroscope",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(e)",
   "questionText": "Describe how to charge an electroscope.",
@@ -10066,50 +10039,47 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "touch with charged object",
-    "accepts": [
-     "bring charged object close and earth electroscope"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "touch with charged object / bring charged object close and earth electroscope",
     "marks": 7,
-    "contextNote": "Partial answer accepted for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-f",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "resistors-in-series",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(f)",
-  "questionText": "Two resistors of resistance 4 ohm and 7 ohm are connected in series. Calculate the combined resistance of the two resistors.",
+  "questionText": "Two resistors of resistance 4 Ω and 7 Ω are connected in series. Calculate the combined resistance of the two resistors.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "4 + 7 = 11 Ω",
     "marks": 7,
-    "contextNote": "The scheme accepts a partial answer for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "One undivided marking point reproduced as printed in the scheme, including the ohm symbol. The 2022 OL scheme has no general units-deduction note, so no unit penalty is claimed. The unit was spelled out as \"Omega\"; the scheme prints Ω."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-g",
+  "subjectId": "physics",
   "topicId": "phys-2-5",
   "conceptId": "amplitude-and-loudness",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(g)",
   "questionText": "When the frequency of a sound wave increases, its pitch also increases. What is observed to happen to a sound when its amplitude increases?",
@@ -10119,22 +10089,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "it gets louder",
     "marks": 7,
-    "contextNote": "Partial answer accepted for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q6-h",
+  "subjectId": "physics",
   "topicId": "phys-3-4",
   "conceptId": "magnetic-field-bar-magnet",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q6(h)",
   "questionText": "Describe how to show the magnetic field of a bar magnet.",
@@ -10144,17 +10114,16 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "distribute iron filings",
-    "accepts": [
-     "move compass"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "distribute iron filings / move compass",
     "marks": 7,
-    "contextNote": "Partial answer accepted for 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-hl-q13-i-c",
@@ -13336,13 +13305,12 @@
  },
  {
   "id": "phys-2022-ol-q13-i",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "solar-eclipse",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(i)",
+  "stem": "Total solar eclipses are the most dramatic of all eclipses. This is when the light from the Sun gets blocked by the Moon for a few minutes and day turns quickly into night. A lunar eclipse, when the Earth's shadow covers the Moon, is a gentler event. The full Moon gradually becomes fainter and redder over a period of a couple of hours. Both types of eclipse can be either total or partial. In a total eclipse, the Earth or the Moon gets completely in the way, while in a partial eclipse only a part of either the Earth or the Moon is in shadow.",
   "questionText": "Describe what happens during a solar eclipse.",
   "tariffModel": {
    "kind": "fixed"
@@ -13350,23 +13318,25 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "light from the Sun is blocked by the Moon",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": "Q13 is a comprehension question; the passage on eclipses is reproduced in full in the scheme, and the parts carded here are answerable without it. Q13(v) skipped: the powers of ten lost their superscripts in extraction ('7.3 × 1022 kg', '(1.7 × 106)2'), so the scheme's answer cannot be reproduced verbatim without shipping wrong numbers."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q13-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "lunar-eclipse-frequency",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(ii)",
+  "stem": "Lunar eclipses are far more common than solar eclipses. This is because the Earth’s shadow is bigger than the Moon’s shadow. At the same time as the Earth’s shadow blocks the Moon, some of the light from the Sun will pass through the Earth’s atmosphere and then onto the Moon. The Sun’s light is refracted as it passes through the Earth’s atmosphere. The refracted light is then dispersed into the colours of the rainbow. These processes result in the Moon appearing red.",
   "questionText": "Lunar eclipses are more common than solar eclipses. Explain why.",
   "tariffModel": {
    "kind": "fixed"
@@ -13374,21 +13344,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "the Earth’s shadow is bigger than the Moon’s shadow",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q13-iii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "refraction-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(iii)",
   "questionText": "The light from the Sun is refracted as it passes through the Earth’s atmosphere. Explain what is meant by refraction.",
@@ -13398,56 +13369,61 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "bending of a wave as it travels from one medium to another",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q13-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "dispersion-equipment",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(iv)",
+  "stem": "Lunar eclipses are far more common than solar eclipses. This is because the Earth’s shadow is bigger than the Moon’s shadow. At the same time as the Earth’s shadow blocks the Moon, some of the light from the Sun will pass through the Earth’s atmosphere and then onto the Moon. The Sun’s light is refracted as it passes through the Earth’s atmosphere. The refracted light is then dispersed into the colours of the rainbow. These processes result in the Moon appearing red.",
   "questionText": "Name two pieces of laboratory equipment that can be used to disperse light.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "4 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "prism",
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "prism / diffraction grating",
     "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "prism",
+      "diffraction grating"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    },
     "openList": true,
-    "contextNote": "The scheme prints 'e.g. prism, diffraction grating etc. [4 + 3]'. The list is an example only, so any other instrument that disperses light scores; the first correct item named scores 4 and the second 3, whichever they are."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "diffraction grating",
-    "marks": null,
-    "openList": true,
-    "contextNote": "The second of the scheme's two printed examples."
+    "contextNote": "The scheme prints these items under one sum, [4 + 3], and names no order: a response earns the marks step by step."
    }
   ],
-  "notes": "Marks are an unequal 4 + 3 split, so the tariff is an ordered split and no row may state its own value. Not modelled as anyN: an anyN group requires a perOption, an unequal split has none, and the session UI prints that value verbatim in the group header."
+  "notes": "The scheme prints two examples (\"e.g. ... etc.\") for two pieces of equipment at [4 + 3]: an open menu of two, priced step by step. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q13-vi",
+  "subjectId": "physics",
   "topicId": "phys-1-5",
   "conceptId": "mass-versus-weight",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(vi)",
   "questionText": "An astronaut weighs less on the Moon than she does on Earth. Distinguish between mass and weight.",
@@ -13457,25 +13433,22 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "mass is how much matter is in something",
-    "accepts": [
-     "weight is force of gravity"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mass is how much matter is in something / weight is force of gravity",
     "marks": 7,
-    "contextNote": "The scheme separates the two statements with a solidus, so either alone is accepted; it also notes a partial answer is worth 4."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q13-vii",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "infrared-detection",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(vii)",
   "questionText": "Infrared radiation lies just beyond red light in the electromagnetic spectrum, with a slightly longer wavelength. How can infrared radiation be detected?",
@@ -13485,26 +13458,31 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "blackened thermometer",
-    "accepts": [
-     "[digital] camera"
-    ],
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "blackened thermometer / [digital] camera",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "blackened thermometer",
+      "[digital] camera"
+     ]
+    },
     "openList": true,
-    "marks": 7,
-    "contextNote": "The scheme prints these as examples ('e.g. ... etc.'), so any other valid detector is acceptable."
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "The scheme prints two examples (\"e.g. ... etc.\") for one detector at [7]: an open menu of one. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q13-viii",
+  "subjectId": "physics",
   "topicId": "phys-2-4",
   "conceptId": "ultraviolet-radiation",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(viii)",
   "questionText": "Name the type of electromagnetic radiation that has a slightly shorter wavelength than visible light.",
@@ -13514,27 +13492,25 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "ultraviolet",
-    "accepts": [
-     "uv"
-    ],
-    "marks": 7
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ultraviolet / uv",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-a-i",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "kinetic-energy-definition",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(a)(i)",
-  "stem": "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s–1. As the stone travels upwards, it loses kinetic energy.",
+  "stem": "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy.",
   "questionText": "What is meant by kinetic energy?",
   "tariffModel": {
    "kind": "fixed"
@@ -13542,21 +13518,21 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "energy due to motion",
     "marks": 3
    }
   ],
-  "notes": "Q14 asks candidates to answer any two of parts (a)–(d); each sub-part carries its own fixed tariff, which is what these cards model. Q14(a)(iv) and (v) skipped: the square in 15² was flattened to '152' in extraction ('½ × 0.005 × 152 = 0.5625 J', '152 ÷ (2 × 9.8) = 11.5 m'), so the scheme's working cannot be reproduced verbatim without shipping a wrong number."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-a-ii",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "conservation-of-energy",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(a)(ii)",
   "questionText": "State the principle of conservation of energy.",
@@ -13566,24 +13542,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "alt",
     "verbatim": "energy cannot be created or destroyed",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-a-iii",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "kinetic-to-potential-energy",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(a)(iii)",
-  "stem": "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s–1. As the stone travels upwards, it loses kinetic energy.",
+  "stem": "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy.",
   "questionText": "What is the main type of energy that the stone’s kinetic energy is being converted into as it travels upwards?",
   "tariffModel": {
    "kind": "fixed"
@@ -13591,22 +13568,22 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "potential energy",
     "marks": 6,
-    "contextNote": "The scheme allows 3 of the 6 marks for a partial answer."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "exactTermRequired was dropped: the 2022 Ordinary Level scheme contains no asterisked items, and this one is explicitly marked '[accept partial answer for 3]'."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-a-vi",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "unit-of-energy",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(a)(vi)",
   "questionText": "What is the unit of energy?",
@@ -13616,24 +13593,66 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Joule",
-    "accepts": [
-     "J"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Joule / J",
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2022-ol-q14-b-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "total-internal-reflection-experiment",
+  "section": "B",
+  "questionRef": "2022 OL Q14(b)(i)",
+  "stem": "In order for an observer to see a mirage on a hot day, total internal reflection must occur. Mirages happen when the ground is very hot and the hot air just above the ground and the cool air higher up have different refractive indices. Light undergoes refraction as it travels from the cool air into the hot air.",
+  "questionText": "Describe an experiment to demonstrate total internal reflection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "apparatus 1, e.g. ray box / laser",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "apparatus 2, 3.g. semi-circular glass block",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "method",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "observation",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The bank had no card for this part. A \"describe an experiment\" part: the scheme prices apparatus, method and observation. The scheme prints \"3.g.\" for \"e.g.\" in its second apparatus line: lifted as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-b-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "short-sight-correction",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(b)(ii)",
   "stem": "To see an object clearly, light from an object must enter the eye through the pupil and come to focus on the retina at the back of the eye. The eye focusses the light onto the retina.",
@@ -13644,28 +13663,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "concave",
-    "accepts": [
-     "diverging"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "concave / diverging",
     "marks": 6,
-    "contextNote": "Separated by a solidus in the scheme, so either term alone earns the full 6 marks."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q14(b)(i) skipped: two of its four rows are the content-free 'method [3]' and 'observation [3]', so the apparatus rows cannot sum to the printed 12 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-b-iiia",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "lens-power-combination",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(b)(iii)(a)",
-  "stem": "A certain person’s eye has a power of 62 m–1. The lens of their glasses has a power of –2 m–1.",
+  "stem": "A certain person’s eye has a power of 62 m⁻¹. The lens of their glasses has a power of –2 m⁻¹.",
   "questionText": "Calculate the power of the combination of the eye and the lens.",
   "tariffModel": {
    "kind": "fixed"
@@ -13673,25 +13689,25 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "P = 62 + (–2) = 60 m–1",
+    "verbatim": "P = 62 + (–2) = 60 m⁻¹",
     "marks": 5,
-    "contextNote": "The scheme allows 3 of the 5 marks for a partial answer."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "The 2022 Ordinary Level preamble has no unit-deduction rule (that is the 2023 Higher scheme, point 6), so the original card's claim that a mark is deducted for a missing unit was removed. The scheme prints the unit inside the answer here and awards no separate unit mark."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-b-iiib",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "focal-length-from-power",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(b)(iii)(b)",
-  "stem": "A certain person’s eye has a power of 62 m–1. The lens of their glasses has a power of –2 m–1.",
+  "stem": "A certain person’s eye has a power of 62 m⁻¹. The lens of their glasses has a power of –2 m⁻¹.",
   "questionText": "Calculate the focal length of the lens in the glasses.",
   "tariffModel": {
    "kind": "fixed"
@@ -13699,25 +13715,79 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "f = 1 ÷ 2 = 0.5 m",
     "marks": 5,
-    "contextNote": "The scheme allows 3 of the 5 marks for a partial answer."
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "The 2022 Ordinary Level preamble has no unit-deduction rule, so the original card's claim to that effect was removed."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-i",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "clockwise-moment",
+  "section": "B",
+  "questionRef": "2022 OL Q14(c)(i)",
+  "stem": "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+  "questionText": "A moment is a turning effect caused by a force. The 2 N force and the 4 N force result in clockwise moments about the midpoint of the metre stick. Calculate the total clockwise moment about the midpoint of the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(2 × 0.1) + (4 × 0.3) = 1.4 N m",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The bank had no card for this part. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q14c-diagram"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-ii",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "anticlockwise-moment",
+  "section": "B",
+  "questionRef": "2022 OL Q14(c)(ii)",
+  "stem": "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+  "questionText": "The 7 N force results in an anticlockwise moment about the midpoint of the metre stick. Calculate the total anticlockwise moment about the midpoint of the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "7 × 0.2 = 1.4 N m",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The bank had no card for this part. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q14c-diagram"
  },
  {
   "id": "phys-2022-ol-q14-c-iii",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "law-of-equilibrium",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(c)(iii)",
-  "stem": "A metre stick suspended from its mid-point with three masses hanging from it is in equilibrium. The total clockwise moment about the midpoint was calculated as 1.4 N m and the total anticlockwise moment as 1.4 N m.",
+  "stem": "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
   "questionText": "State the law of equilibrium verified by the calculations in (i) and (ii).",
   "tariffModel": {
    "kind": "fixed"
@@ -13725,48 +13795,77 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "clockwise moments = anti-clockwise moments",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "Q14(c)(i), (ii) and (iv) skipped: all three need the force values and their positions read off the printed metre-stick diagram, which this wave does not carry. The two moment values in the stem are the scheme's own printed answers to (i) and (ii) and are not needed to answer this part."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q14c-diagram"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-iv",
+  "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "weight-of-metre-stick",
+  "section": "B",
+  "questionRef": "2022 OL Q14(c)(iv)",
+  "stem": "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+  "questionText": "The upward force on the metre stick is 15 N. Calculate the weight of the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "15 – (7 + 2 + 4) = 2 N",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The bank had no card for this part. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q14c-diagram"
  },
  {
   "id": "phys-2022-ol-q14-c-v",
-  "topicId": "phys-u2",
-  "conceptId": "centre-of-gravity-assumption",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-1-2",
+  "conceptId": "centre-of-gravity-assumption",
   "section": "B",
   "questionRef": "2022 OL Q14(c)(v)",
-  "stem": "A metre stick is suspended from its mid-point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
-  "questionText": "Your calculations assume that the centre of gravity of the metre stick acts at the mid-point of the metre stick. What might cause this assumption to be invalid?",
+  "stem": "The diagram shows a metre stick which is suspended from its mid‐point (50 cm) with three masses hanging from it. The metre stick is in equilibrium.",
+  "questionText": "Your calculations assume that the centre of gravity of the metre stick acts at the mid‐point of the metre stick. What might cause this assumption to be invalid?",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "chipped metre stick",
-    "openList": true,
+    "verbatim": "e.g. chipped metre stick etc.",
     "marks": 4,
-    "contextNote": "The scheme prints 'e.g. chipped metre stick etc.' and states its descriptions are not exhaustive, so any other valid reason (uneven or damaged stick) is acceptable."
+    "contextNote": "[accept partial answer for 2]"
    }
   ],
-  "notes": ""
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q14c-diagram"
  },
  {
   "id": "phys-2022-ol-q14-d-i",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "types-of-radiation",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(d)(i)",
   "stem": "Henri Becquerel was the first person to discover evidence of radioactivity. Radioactivity is the emission of radiation as a result of the decay of atomic nuclei.",
@@ -13777,78 +13876,75 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "beta",
-    "accepts": [
-     "β"
-    ],
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "beta/β",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "gamma",
-    "accepts": [
-     "γ"
-    ],
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "gamma/γ",
     "marks": 3
    }
   ],
-  "notes": "Q14(d)(ii) skipped: one of its four rows is the content-free 'method [3]', so the content rows cannot sum to the printed 12 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14-d-iii",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "neutron-number",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(d)(iii)",
-  "stem": "Radium (Ra88 226) is an alpha emitter.",
-  "questionText": "How many neutrons are there in an atom of Ra88 226?",
+  "stem": "Radium (Ra₈₈ ²²⁶) is an alpha emitter.",
+  "questionText": "How many neutrons are there in an atom of Ra₈₈ ²²⁶?",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "226 – 88 = 138",
     "marks": 6,
-    "contextNote": "Ra88 226 is radium-226: mass number 226, atomic number 88 (the sub/superscripts flattened in extraction)."
+    "contextNote": "[accept partial answer for 3, e.g. number of protons]"
    }
   ],
-  "notes": ""
+  "notes": "The radium nuclide is printed with its mass number above its atomic number after the symbol, which the text layer reads as two lines (\"Ra₈₈ ²²⁶\"): the question is shown as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2022-ol-q14diii-question"
  },
  {
   "id": "phys-2022-ol-q14-d-iv",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "alpha-decay-daughter-nucleus",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(d)(iv)",
-  "stem": "Radium (Ra88 226) is an alpha emitter.",
-  "questionText": "What is the daughter nucleus when an atom of Ra88 226 emits two alpha particles?",
+  "stem": "Radium (Ra₈₈ ²²⁶) is an alpha emitter.",
+  "questionText": "What is the daughter nucleus when an atom of Ra₈₈ ²²⁶ emits two alpha particles?",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "2 + 1 + 1"
+   "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "Po84 218",
-    "marks": null,
-    "contextNote": "Read as polonium-218: atomic number 84, mass number 218 (sub/superscripts flattened in extraction). The scheme prints the tariff as [2 + 1 + 1]."
+    "verbatim": "Po²¹⁸₈₄",
+    "marks": 4,
+    "contextNote": "The scheme prices the nuclide [2 + 1 + 1]. [accept partial answer for 2]"
    }
   ],
-  "notes": ""
+  "notes": "The scheme prints the polonium nuclide with its numbers stacked after the symbol: read from where they are printed, one row at the printed [2 + 1 + 1] = 4. The radium nuclide in the ask is printed the same way: the question is shown as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2022-ol-q14div-question"
  },
  {
   "id": "phys-2023-hl-q1-iii",
@@ -32139,13 +32235,12 @@
  },
  {
   "id": "phys-2022-ol-q2-v",
-  "topicId": "phys-u2",
-  "conceptId": "average-refractive-index-from-results",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "average-refractive-index-from-results",
   "section": "A",
   "questionRef": "2022 OL Q2(v)",
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below.",
   "questionText": "Use all of the results in the table to calculate an average value for n.",
   "tariffModel": {
    "kind": "fixed"
@@ -32153,30 +32248,51 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "one calculation of n // graph of sin i against sin r",
-    "marks": 3
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "one calculation of n",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks.",
+    "route": "side-a"
    },
    {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "average calculated // slope calculated",
-    "marks": 3
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "average calculated",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks.",
+    "route": "side-a"
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "graph of sin i against sin r",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks.",
+    "route": "side-b"
+   },
+   {
+    "id": "r4",
+    "kind": "criterion",
+    "verbatim": "slope calculated",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks.",
+    "route": "side-b"
    }
   ],
-  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35",
-  "notes": "Either route scores: an average of the calculated values, or the slope of a graph of sin i against sin r."
+  "notes": "The scheme prints two methods side by side, separated by \"//\" (calculations, or a graph): routes inside the card, each [3] [3]. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q2-table"
  },
  {
   "id": "phys-2022-ol-q5-v",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "reading-a-current-off-a-graph",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q5(v)",
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
   "questionText": "Use your graph to find the current that caused a change in temperature of 6 °C.",
   "tariffModel": {
    "kind": "fixed"
@@ -32184,29 +32300,31 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "reading for I2 [≈ 5]",
+    "verbatim": "reading for I² [≈ 5]",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "I ≈ 2.2 A",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3, e.g graph not used]"
    }
   ],
-  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-ii",
-  "topicId": "phys-u5",
-  "conceptId": "converting-minutes-to-seconds",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
-  "section": "A",
+  "topicId": "phys-1-1",
+  "conceptId": "converting-minutes-to-seconds",
+  "section": "B",
   "questionRef": "2022 OL Q7(ii)",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes.",
   "questionText": "Convert 6 minutes into seconds.",
   "tariffModel": {
    "kind": "fixed"
@@ -32214,23 +32332,25 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "6 × 60 = 360 s",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3, e.g. reference to 60 s in a minute]"
    }
   ],
-  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q9-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "image-position-from-the-lens-formula",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q9(iv)",
+  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. The object is 20 cm in front of the concave mirror. The mirror has a focal length of 12 cm.",
   "questionText": "Calculate the position of the real image formed.",
   "tariffModel": {
    "kind": "fixed"
@@ -32238,35 +32358,39 @@
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "1/u + 1/v = 1/f",
     "marks": 6
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "substitution",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "v = 30 cm",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q9-diagram"
  },
  {
   "id": "phys-2022-ol-q14a-iv",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "kinetic-energy-of-a-thrown-stone",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(a)(iv)",
+  "stem": "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy.",
   "questionText": "Calculate the kinetic energy of the stone when it is thrown.",
   "tariffModel": {
    "kind": "fixed"
@@ -32274,22 +32398,25 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "½ × 0.005 × 152 = 0.5625 J",
-    "marks": 5
+    "verbatim": "½ × 0.005 × 15² = 0.5625 J",
+    "marks": 5,
+    "contextNote": "[accept partial answer for 3]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14a-v",
+  "subjectId": "physics",
   "topicId": "phys-1-4",
   "conceptId": "maximum-height-from-kinetic-energy",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(a)(v)",
+  "stem": "A boy picks up a stone of mass 5 g and throws it vertically upwards with an initial velocity of 15 m s⁻¹. As the stone travels upwards, it loses kinetic energy. (acceleration due to gravity = 9.8 m s⁻²)",
   "questionText": "Calculate the maximum height reached by the stone.",
   "tariffModel": {
    "kind": "fixed"
@@ -32297,23 +32424,33 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "0.5625 ÷ (0.005 × 9.8) = 11.5 m",
-    "marks": 5
+    "marks": 5,
+    "contextNote": "[accept partial answer for 3]",
+    "route": "side-a"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "15² ÷ (2 × 9.8) = 11.5 m",
+    "marks": 5,
+    "route": "side-b"
    }
   ],
-  "notes": "The scheme accepts the suvat route as well."
+  "notes": "The scheme prints two methods separated by \"//\", each the whole answer at [5]: routes inside the card. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q2-vi",
-  "topicId": "phys-u2",
-  "conceptId": "whether-the-results-verify-snells-law",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-3",
+  "conceptId": "whether-the-results-verify-snells-law",
   "section": "A",
   "questionRef": "2022 OL Q2(vi)",
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
   "questionText": "Do your calculations verify Snell’s law? Explain your answer.",
   "tariffModel": {
    "kind": "fixed"
@@ -32321,66 +32458,71 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "yes [or answer consistent with calculations]",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "explanation, e.g. calculations all close to average, straight line through origin",
     "marks": 3
    }
   ],
-  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q5-iv",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "plotting-current-squared-against-temperature-rise",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q5(iv)",
-  "questionText": "Use all of the data to plot a graph of I2 against Δθ.",
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results.",
+  "questionText": "Use all of the data to plot a graph of I² against Δθ.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 6 × 1 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axis",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "points plotted",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks. It prices them [6 × 1]: 1 mark per point."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "line of best fit",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q5-table"
  },
  {
   "id": "phys-2022-ol-q7-vii",
+  "subjectId": "physics",
   "topicId": "phys-1-2",
   "conceptId": "forces-on-a-train-at-constant-speed",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q7(vii)",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes. The train then maintained this speed of 25 m s⁻¹ for a further 15 minutes.",
   "questionText": "Draw a labelled diagram to show the forces acting on the train while it is moving with constant speed.",
   "tariffModel": {
    "kind": "fixed"
@@ -32388,24 +32530,26 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "four correct forces",
-    "marks": 9
+    "marks": 9,
+    "contextNote": "[–1 for each omitted force] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes.",
-  "notes": "The scheme takes a mark off for each of the four forces left out."
+  "notes": "The scheme prices \"four correct forces\" [9] and draws them beside it (the solution figure). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q7vii-scheme"
  },
  {
   "id": "phys-2022-ol-q1-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "what-distance-was-measured-on-the-tape",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(ii)",
+  "stem": "A student carried out an experiment to measure the velocity of an object.",
   "questionText": "Indicate on the diagram what distance the student measured.",
   "tariffModel": {
    "kind": "fixed"
@@ -32413,27 +32557,34 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "alt",
-    "verbatim": "length of tape",
-    "marks": 3,
-    "accepts": [
-     "length of rider or card",
-     "distance travelled by car/rider"
-    ]
+    "verbatim": "length of tape / length of rider or card / distance travelled by car/rider",
+    "marks": 3
    }
   ],
-  "stem": "A student carried out an experiment to measure the velocity of an object."
+  "notes": "\"the diagram\" reads to the figure-pointer check as a printed figure; the ask is the student's own drawing, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2022-ol-q3-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "what-length-of-string-was-measured",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q3(ii)",
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
   "questionText": "Indicate on your diagram the length of string the student measured.",
   "tariffModel": {
    "kind": "fixed"
@@ -32441,63 +32592,64 @@
   "totalMarks": 3,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "length between two bridges",
-    "marks": 3,
-    "accepts": [
-     "any valid length"
-    ]
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "length between two bridges / any valid length",
+    "marks": 3
    }
   ],
-  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. f (Hz) 256 320 341 427 480 512 l (cm) 22 18 17 13 12 11 1 lൗ (cm–1)"
+  "notes": "The bank's card was never shipped (the broken \"1/l\" glyph in its stem); the stem is the lead-in alone. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q3-viii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "graph-of-frequency-against-one-over-length",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q3(viii)",
-  "questionText": "Use the data to plot a graph of f against 1 lൗ. (25)",
+  "questionText": "Use the data to plot a graph of f against",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 6 × 1 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axis",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "points plotted",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks. It prices them [6 × 1]: 1 mark per point."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "line of best fit",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. f (Hz) 256 320 341 427 480 512 l (cm) 22 18 17 13 12 11 1 lൗ (cm–1)"
+  "notes": "The bank's card was never shipped: its question carried the broken \"1/l\" glyph (U+0D57). The ask ends in that fraction, which the text layer reads out of order even with the glyph set right (\"1 l/\"): the question text is the ask up to the fraction, and the question is shown as printed, Q3 with its table. \"points plotted [6 × 1]\": one row of six 1-mark units. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "questionFigureKey": "physics-2022-ol-q3viii-question"
  },
  {
   "id": "phys-2022-ol-q9-ii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "ray-diagram-for-a-magnified-image-ol",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q9(ii)",
+  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual.",
   "questionText": "In your answerbook, copy and complete the ray diagram below to show how a magnified image is formed in a concave mirror.",
   "tariffModel": {
    "kind": "fixed"
@@ -32505,179 +32657,179 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "first reflected ray",
-    "marks": 5
+    "marks": 5,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "second reflected ray",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "intersection of rays",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q9-diagram"
  },
  {
   "id": "phys-2022-ol-q9-vii",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "which-side-of-a-convex-mirror-reflects",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q9(vii)",
-  "questionText": "Sketch a convex mirror.",
+  "stem": "Light is also reflected by convex mirrors.",
+  "questionText": "Sketch a convex mirror. Indicate which side of the mirror reflects light.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "shape",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "side",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q1-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "apparatus-to-measure-constant-velocity",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q1(i)",
-  "questionText": "Draw a labelled diagram of the apparatus used to measure constant velocity. (12)",
+  "stem": "A student carried out an experiment to measure the velocity of an object.",
+  "questionText": "Draw a labelled diagram of the apparatus used to measure constant velocity.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 + 3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "runway",
-    "marks": 6,
-    "accepts": [
-     "air-track"
-    ]
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "car",
-    "marks": 3,
-    "accepts": [
-     "rider"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "ticker-tape",
-    "marks": 3,
-    "accepts": [
-     "light-gate",
-     "timer"
-    ]
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "runway / air-track / car / rider / ticker-tape / light-gate / timer",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "runway / air-track",
+      "car / rider",
+      "ticker-tape / light-gate / timer"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "[–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step."
    }
   ],
-  "stem": "A student carried out an experiment to measure the velocity of an object.",
-  "notes": "Either of each line's alternatives scores; the scheme takes a mark off if the diagram carries no labels."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q2-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "apparatus-to-verify-snells-law",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q2(i)",
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
   "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 + 3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "transparent block",
-    "marks": 6
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "ray-box",
-    "marks": 3,
-    "accepts": [
-     "laser",
-     "pins"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "detail e.g. paper, ruler, pencil, protractor, etc.",
-    "marks": 3
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "transparent block / ray-box / laser / pins / detail e.g. paper, ruler, pencil, protractor, etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "transparent block",
+      "ray-box / laser / pins",
+      "detail e.g. paper, ruler, pencil, protractor, etc."
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    },
+    "contextNote": "[–1 if no label present on diagram] The scheme prints these items under one sum, [6 + 3 + 3], and names no order: a response earns the marks step by step."
    }
   ],
-  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35",
-  "notes": "Any of the second line's alternatives scores; the scheme takes a mark off if the diagram carries no labels."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q2-ii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "labelling-the-angles-measured",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q2(ii)",
-  "questionText": "On your diagram, label the angles measured by the student. (18)",
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i.",
+  "questionText": "On your diagram, label the angles measured by the student.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "both angles labelled",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q3-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "apparatus-for-the-stretched-string-experiment",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q3(i)",
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
   "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
    "kind": "fixed"
@@ -32685,85 +32837,128 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "sonometer",
-    "marks": 3,
-    "accepts": [
-     "stretched string"
-    ]
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "sonometer / stretched string",
+    "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "detail, e.g. metre stick, tuning fork, bridge, paper rider, etc.",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[–1 if no label present on diagram]"
    }
   ],
-  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. f (Hz) 256 320 341 427 480 512 l (cm) 22 18 17 13 12 11 1 lൗ (cm–1)",
-  "notes": "The scheme takes a mark off if the diagram carries no labels."
+  "notes": "The bank's card was never shipped: the deck build dropped it for the broken \"1/l\" glyph (U+0D57) in the table its stem carried. The stem is now the lead-in alone. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q3-vii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "completing-the-table-of-one-over-length",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q3(vii)",
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. The student recorded the following results.",
   "questionText": "In your answerbook, copy and complete the table above.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 × 1"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "0.045 0.056 0.059 0.077 0.083 0.091",
-    "marks": 6
+    "verbatim": "22 — 0.045",
+    "marks": 1,
+    "contextNote": "The scheme prints the six values of 1/l (cm⁻¹) [6 × 1], each under its length l (cm): 1 mark each."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "18 — 0.056",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "17 — 0.059",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "13 — 0.077",
+    "marks": 1
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "12 — 0.083",
+    "marks": 1
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "11 — 0.091",
+    "marks": 1
    }
   ],
-  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. f (Hz) 256 320 341 427 480 512 l (cm) 22 18 17 13 12 11 1 lൗ (cm–1)",
-  "notes": "One mark for each of the six 1/l values."
+  "notes": "The bank's card was never shipped: its rows carried the broken \"1/l\" glyph. The scheme prints the six values as a table row headed \"1/l (cm⁻¹)\": one row per value, labelled with the length l printed above it in the scheme's reprint of the table; the paper's table is the figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q3-table"
  },
  {
   "id": "phys-2022-ol-q4-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "apparatus-for-the-specific-heat-capacity-experiment",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q4(i)",
+  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter.",
   "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "any 3 × 3"
+   "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "calorimeter, water, appropriate source of heat, thermometer, mass balance, joulemeter, detail e.g. lagging, lid, stirrer etc.",
-    "marks": 9
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "calorimeter / water / appropriate source of heat / thermometer / mass balance / joulemeter / detail e.g. lagging, lid, stirrer etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "calorimeter",
+      "water",
+      "appropriate source of heat",
+      "thermometer",
+      "mass balance",
+      "joulemeter",
+      "detail e.g. lagging, lid, stirrer etc."
+     ]
+    },
+    "openList": true,
+    "contextNote": "[–1 if no label present on diagram] The scheme prints \"[any 3 × 3]\"."
    }
   ],
-  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)",
-  "notes": "Any three of the scheme's list score three marks each; the scheme takes a mark off if the diagram carries no labels."
+  "notes": "Seven items, the last a \"detail\" with its examples, priced \"[any 3 × 3]\": a menu of three claims at 3. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q4-iii",
-  "topicId": "phys-u2",
-  "conceptId": "mass-of-the-water-from-the-results",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "mass-of-the-water-from-the-results",
   "section": "A",
   "questionRef": "2022 OL Q4(iii)",
+  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J",
   "questionText": "Calculate the mass of the water.",
   "tariffModel": {
    "kind": "fixed"
@@ -32771,130 +32966,177 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "0.1498 – 0.0745 = 0.0753 kg",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q4-iv",
-  "topicId": "phys-u2",
-  "conceptId": "temperature-rise-of-the-calorimeter-and-water",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "temperature-rise-of-the-calorimeter-and-water",
   "section": "A",
   "questionRef": "2022 OL Q4(iv)",
-  "questionText": "Calculate the increase in temperature of the calorimeter and cold water. (12)",
+  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J",
+  "questionText": "Calculate the increase in temperature of the calorimeter and cold water.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "23 – 18 = 5 °C",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)"
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q4-vi",
-  "topicId": "phys-u2",
-  "conceptId": "specific-heat-capacity-from-the-results",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "specific-heat-capacity-from-the-results",
   "section": "A",
   "questionRef": "2022 OL Q4(vi)",
-  "questionText": "Use your answers for (iii), (iv) and (v) to calculate c, the specific heat capacity of water.",
+  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J (specific heat capacity of copper = 390 J kg⁻¹ K⁻¹)",
+  "questionText": "Use your answers for (iii), (iv) and (v) to calculate c, the specific heat capacity of water. Note: Heat energy added = Heat energy gained by water + calorimeter.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 + 2 + 2 + 2"
+   "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "1703 = (0.0745 × 390 × 5) + (0.0753 × c × 5)",
-    "marks": 10
+    "marks": 10,
+    "contextNote": "The scheme prices this line [6 + 2 + 2] and prints no split of it."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
-    "verbatim": "c = 4137.4 [J kg–1 K–1]",
+    "verbatim": "c = 4137.4 [J kg⁻¹ K⁻¹]",
     "marks": 2
    }
   ],
-  "stem": "A student carried out an experiment to measure c, the specific heat capacity of water. He added heat energy to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.0745 kg Mass of calorimeter and cold water = 0.1498 kg Initial temperature of cold water = 18 °C Final temperature of water = 23 °C Heat energy added = 1703 J Note: Heat energy added = Heat energy gained by water + calorimeter. (16) (specific heat capacity of copper = 390 J kg–1 K–1)",
-  "notes": "The scheme's note: heat energy added = heat energy gained by water + calorimeter. The paper supplies the specific heat capacity of copper, 390 J kg–1 K–1."
+  "notes": "\"[6 + 2 + 2]\" is printed against the one equation line: one row at 10, its units as printed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q5-i",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "apparatus-for-the-joules-law-experiment",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q5(i)",
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant.",
   "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "any 3 × 3"
+   "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "container, water, heating coil, ammeter/multimeter, thermometer, detail e.g. mass balance, stopwatch, lagging, lid, stirrer etc.",
-    "marks": 9
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "container / water / heating coil / ammeter/multimeter / thermometer / detail e.g. mass balance, stopwatch, lagging, lid, stirrer etc.",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "container",
+      "water",
+      "heating coil",
+      "ammeter/multimeter",
+      "thermometer",
+      "detail e.g. mass balance, stopwatch, lagging, lid, stirrer etc."
+     ]
+    },
+    "openList": true,
+    "contextNote": "[–1 if no label present on diagram] The scheme prints \"[any 3 × 3]\"."
    }
   ],
-  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks.",
-  "notes": "Any three of the scheme's list score three marks each; the scheme takes a mark off if the diagram carries no labels."
+  "notes": "Six items, the last a \"detail\" with its examples, priced \"[any 3 × 3]\": a menu of three claims at 3. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q5-iii",
+  "subjectId": "physics",
   "topicId": "phys-u2",
   "conceptId": "completing-the-table-of-current-squared",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 OL Q5(iii)",
-  "questionText": "In your answerbook, copy and complete the table above. (18)",
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results.",
+  "questionText": "In your answerbook, copy and complete the table above.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "6 × 1"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "1 2.25 4 6.25 9 12.25",
-    "marks": 6
+    "verbatim": "1 — 1",
+    "marks": 1,
+    "contextNote": "The scheme prints the six values of I² (A²) [6 × 1], each under its current I (A): 1 mark each."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "1.5 — 2.25",
+    "marks": 1
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "2 — 4",
+    "marks": 1
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "2.5 — 6.25",
+    "marks": 1
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "3 — 9",
+    "marks": 1
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "3.5 — 12.25",
+    "marks": 1
    }
   ],
-  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks.",
-  "notes": "One mark for each of the six I² values."
+  "notes": "The scheme prints the six values of I² as a table row: one row per value, read from its cell, labelled with the current printed above it in the scheme's reprint of the table. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q5-table"
  },
  {
   "id": "phys-2022-ol-q6-d",
+  "subjectId": "physics",
   "topicId": "phys-2-3",
   "conceptId": "light-through-an-optical-fibre",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q6(d)",
   "questionText": "Draw a labelled diagram to show how light travels through an optical fibre.",
   "tariffModel": {
@@ -32903,96 +33145,157 @@
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "total internal refraction shown",
-    "marks": 7
+    "marks": 7,
+    "contextNote": "[–1 if no label present on diagram] [accept partial answer for 4] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "The scheme takes a mark off if the diagram carries no labels."
+  "notes": "The scheme prints \"total internal refraction shown\" (as printed; the phenomenon is total internal reflection): one criterion row in its words. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q7-ix",
+  "subjectId": "physics",
   "topicId": "phys-1-1",
   "conceptId": "speed-time-graph-for-the-train",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q7(ix)",
-  "questionText": "Draw a speed‐time graph for the train during the first 21 minutes of its journey. (26)",
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s⁻¹ in a time of 6 minutes. The train then maintained this speed of 25 m s⁻¹ for a further 15 minutes.",
+  "questionText": "Draw a speed‐time graph for the train during the first 21 minutes of its journey.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "labelled axis",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "correct shape",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[for shape, accept partial answer for 3] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes.",
-  "notes": "For the shape, the scheme accepts a partial answer for 3 of the 6 marks."
+  "notes": "The scheme names the graph's features as criteria and draws the sketch beside them (the solution figure). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q7ix-scheme"
+ },
+ {
+  "id": "phys-2022-ol-q8-i",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "shape-at-x",
+  "section": "B",
+  "questionRef": "2022 OL Q8(i)",
+  "stem": "The graph shows how the temperature and state of water change as the water is heated up.",
+  "questionText": "Explain the shape of the graph at part X.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "increase in temperature / no change of state",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The bank had left this part open. The scheme prints its answer over two lines in a narrow column beside the graph, \"increase in temperature / no change of state\", and its [6] there in the text, not in the margin: one row. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q8-graph"
+ },
+ {
+  "id": "phys-2022-ol-q8-ii",
+  "subjectId": "physics",
+  "topicId": "phys-2-1",
+  "conceptId": "shape-at-y",
+  "section": "B",
+  "questionRef": "2022 OL Q8(ii)",
+  "stem": "The graph shows how the temperature and state of water change as the water is heated up.",
+  "questionText": "Explain the shape of the graph at part Y.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "change of state / evaporation / no change in temperature",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "The bank had left this part open. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "figureKey": "physics-2022-ol-q8-graph"
  },
  {
   "id": "phys-2022-ol-q8-viii",
+  "subjectId": "physics",
   "topicId": "phys-2-1",
   "conceptId": "experiment-to-calibrate-a-thermometer",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q8(viii)",
-  "questionText": "Describe, with the aid of labelled diagram, a laboratory experiment to calibrate a thermometer. (23)",
+  "stem": "The temperature of the water needs to be measured throughout this experiment. It is measured using a thermometer.",
+  "questionText": "Describe, with the aid of labelled diagram, a laboratory experiment to calibrate a thermometer.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "calibrated thermometer",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "uncalibrated thermometer",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "source of heat",
     "marks": 3
    },
    {
-    "id": "r-4",
-    "kind": "point",
+    "id": "r4",
+    "kind": "criterion",
     "verbatim": "method",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[–1 if no label present on diagram] The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "notes": "The scheme prints no detail for the method, and takes a mark off if the diagram carries no labels."
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation. \"method\" names what earns its marks only. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-i",
+  "subjectId": "physics",
   "topicId": "phys-2-5",
   "conceptId": "experiment-to-show-sound-is-a-mechanical-wave",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q10(i)",
+  "stem": "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears.",
   "questionText": "Sound is an example of a mechanical wave which therefore needs a medium to travel through. Describe an experiment to show that sound is a mechanical wave.",
   "tariffModel": {
    "kind": "fixed"
@@ -33000,42 +33303,43 @@
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "apparatus, e.g. source of sound, bell jar",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "method 1: e.g. place source of sound in jar",
     "marks": 3
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "method 2: e.g. turn on vacuum pump",
     "marks": 3
    },
    {
-    "id": "r-4",
-    "kind": "point",
+    "id": "r4",
+    "kind": "criterion",
     "verbatim": "observation",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears. The ear canal can be thought of as a pipe open at one end.",
-  "notes": "The scheme prints no detail for the observation."
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation. \"observation\" names what earns its marks only. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-iv",
+  "subjectId": "physics",
   "topicId": "phys-2-6",
   "conceptId": "experiment-to-show-sound-interference",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q10(iv)",
+  "stem": "Sound waves can undergo reflection, refraction, diffraction and interference.",
   "questionText": "Describe an experiment to show that sound waves undergo interference.",
   "tariffModel": {
    "kind": "fixed"
@@ -33043,36 +33347,37 @@
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "apparatus, e.g. two speakers (emitting the same sound)",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "method, e.g. walk between the speakers",
     "marks": 3
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "observation",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears. The ear canal can be thought of as a pipe open at one end.",
-  "notes": "The scheme prints no detail for the observation."
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation. \"observation\" names what earns its marks only. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q10-vii",
-  "topicId": "phys-2-5",
-  "conceptId": "first-position-of-resonance-in-a-pipe",
-  "level": "ordinary",
-  "year": 2022,
   "subjectId": "physics",
-  "section": "A",
+  "topicId": "phys-2-6",
+  "conceptId": "first-position-of-resonance-in-a-pipe",
+  "section": "B",
   "questionRef": "2022 OL Q10(vii)",
+  "stem": "The ear canal can be thought of as a pipe open at one end.",
   "questionText": "Draw a labelled diagram to show the first position of resonance for a sound wave in a pipe open at one end.",
   "tariffModel": {
    "kind": "fixed"
@@ -33080,218 +33385,255 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "alt",
     "verbatim": "node at closed end, anti-node at open end, no other nodes or antinodes",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "[–1 if no label present on diagram] [accept partial answer for 3]"
    }
   ],
-  "stem": "When a person sings, their vocal chords vibrate. These vibrations travel through the air to the listener’s ears. The ear canal can be thought of as a pipe open at one end.",
-  "notes": "The scheme takes a mark off if the diagram carries no labels."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q11-iii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "circuit-diagram-of-a-torch",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q11(iii)",
   "questionText": "A torch contains a battery, a light bulb and a switch. Draw a circuit diagram to show how these components are connected in a torch. (You may refer to the electrical circuit symbols on pages 72 to 78 of the booklet of Formulae and Tables.)",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 × 1 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "point",
+    "id": "r1",
+    "kind": "criterion",
     "verbatim": "component symbols",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks. It prices them [3 × 1]: 1 mark per symbol."
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "connected in series",
     "marks": 3
    }
   ],
-  "stem": "Benjamin Franklin began experimenting with electricity during the 18th century.",
-  "notes": "One mark for each of the three component symbols."
+  "notes": "\"component symbols [3 × 1]\": one row of three 1-mark units. \"a circuit diagram\" reads to the figure-pointer check as a printed figure; the ask is the student's own drawing, so the card links its exam page. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Physics 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
  },
  {
   "id": "phys-2022-ol-q11-viii",
+  "subjectId": "physics",
   "topicId": "phys-3-3",
   "conceptId": "resistance-of-two-wires-in-parallel",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q11(viii)",
-  "questionText": "The 3 Ω wire is connected in parallel with another wire of resistance 2 Ω. Calculate the total resistance of the two wires in parallel. (21) A piece of wire of length 1.5 m has a resistance of 12 Ω.",
+  "questionText": "The 3 Ω wire is connected in parallel with another wire of resistance 2 Ω. Calculate the total resistance of the two wires in parallel.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "1/R1 + 1/R2 = 1/RT",
+    "verbatim": "1/R₁ + 1/R₂ = 1/RT",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "substitution",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
+    "id": "r3",
     "kind": "point",
     "verbatim": "RT = 1.2 Ω",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "Benjamin Franklin began experimenting with electricity during the 18th century."
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-ii",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "experiment-to-demonstrate-the-photoelectric-effect",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
+  "section": "B",
   "questionRef": "2022 OL Q12(ii)",
-  "questionText": "Describe an experiment to demonstrate the photoelectric effect. (17) To ensure the photoelectric effect occurs, the light must be of a suitable frequency to release the electrons. The frequency of the light must be above the threshold frequency.",
+  "stem": "The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it.",
+  "questionText": "Describe an experiment to demonstrate the photoelectric effect.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "apparatus [e.g. electroscope, zinc plate, uv lamp]",
     "marks": 3
    },
    {
-    "id": "r-2",
-    "kind": "point",
+    "id": "r2",
+    "kind": "criterion",
     "verbatim": "method",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "observation",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    }
   ],
-  "stem": "The Irish physicist George Stoney is most famous for introducing the term electron. The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it.",
-  "notes": "The scheme prints no detail for the method or the observation."
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation. \"method\" and \"observation\" name what earns only. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q12-iv",
+  "subjectId": "physics",
   "topicId": "phys-4-2",
   "conceptId": "wavelength-and-photon-energy-at-the-threshold-frequency",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
-  "section": "A",
-  "questionRef": "2022 OL Q12(iv)",
-  "questionText": "The threshold frequency for zinc is 6.5 × 1014 Hz. (a) Calculate the wavelength of light of this frequency. (b) Calculate the energy of a photon of this frequency. (15) X–ray production is the inverse process of the photoelectric effect. In an X–ray tube, X–rays are produced when high speed electrons hit a target",
+  "section": "B",
+  "questionRef": "2022 OL Q12(iv)(a)",
+  "stem": "The threshold frequency for zinc is 6.5 × 10¹⁴ Hz.",
+  "questionText": "Calculate the wavelength of light of this frequency.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "(3 × 108) ÷ (6.5 × 1014) = 4.6 × 10–7 m",
-    "marks": 6
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "(6.6 × 10–34) × (6.5 × 1014) = 4.3 × 10–19 J",
-    "marks": 6
+    "verbatim": "(3 × 10⁸) ÷ (6.5 × 10¹⁴) = 4.6 × 10⁻⁷ m",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "stem": "The Irish physicist George Stoney is most famous for introducing the term electron. The photoelectric effect is the release of electrons from the surface of a metal when light of a suitable frequency falls on it.",
-  "notes": "The first row answers (a), the second answers (b)."
+  "notes": "The old card bundled (a) and (b), which the scheme prices apart; it keeps its id for (a). Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
+ },
+ {
+  "id": "phys-2022-ol-q12-iv-b",
+  "subjectId": "physics",
+  "topicId": "phys-4-2",
+  "conceptId": "photon-energy-at-threshold",
+  "section": "B",
+  "questionRef": "2022 OL Q12(iv)(b)",
+  "stem": "The threshold frequency for zinc is 6.5 × 10¹⁴ Hz.",
+  "questionText": "Calculate the energy of a photon of this frequency.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(6.6 × 10⁻³⁴) × (6.5 × 10¹⁴) = 4.3 × 10⁻¹⁹ J",
+    "marks": 6,
+    "contextNote": "[accept partial answer for 3]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q13-v",
+  "subjectId": "physics",
   "topicId": "phys-1-5",
   "conceptId": "acceleration-due-to-gravity-on-the-moon",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q13(v)",
-  "questionText": "The Moon has a mass of 7.3 × 1022 kg and a radius of 1.7 × 106 m. Calculate g, the acceleration due to gravity on the Moon. (7)",
+  "questionText": "The Moon has a mass of 7.3 × 10²² kg and a radius of 1.7 × 10⁶ m. Calculate g, the acceleration due to gravity on the Moon.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
-    "verbatim": "(6.7 × 10–11) × (7.3 × 1022) ÷ (1.7 × 106)2 = 1.7 m s–2",
-    "marks": 7
+    "verbatim": "(6.7 × 10⁻¹¹) × (7.3 × 10²²) ÷ (1.7 × 10⁶)² = 1.7 m s⁻²",
+    "marks": 7,
+    "contextNote": "[accept partial answer for 4]"
    }
-  ]
+  ],
+  "notes": "Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2022-ol-q14d-ii",
+  "subjectId": "physics",
   "topicId": "phys-4-4",
   "conceptId": "experiment-to-compare-penetrating-powers",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "physics",
   "section": "B",
   "questionRef": "2022 OL Q14(d)(ii)",
-  "questionText": "Alpha radiation is the least penetrating of the three types of radiation. Describe an experiment to show that the three types of radiation have different penetrating powers. (18) Radium (Ra88 226ሻ is an alpha emitter.",
+  "stem": "Henri Becquerel was the first person to discover evidence of radioactivity. Radioactivity is the emission of radiation as a result of the decay of atomic nuclei.",
+  "questionText": "Alpha radiation is the least penetrating of the three types of radiation. Describe an experiment to show that the three types of radiation have different penetrating powers.",
   "tariffModel": {
    "kind": "fixed"
   },
   "totalMarks": 12,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r1",
     "kind": "point",
     "verbatim": "apparatus 1: source of radiation",
     "marks": 3
    },
    {
-    "id": "r-2",
+    "id": "r2",
     "kind": "point",
     "verbatim": "apparatus 2: barrier[s]",
     "marks": 3
    },
    {
-    "id": "r-3",
-    "kind": "point",
+    "id": "r3",
+    "kind": "criterion",
     "verbatim": "method",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
    },
    {
-    "id": "r-4",
-    "kind": "alt",
-    "verbatim": "observation",
-    "marks": 3,
-    "accepts": [
-     "detector"
-    ]
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "observation / detector",
+    "marks": 3
    }
   ],
-  "notes": "The scheme prints no detail for the method; the fourth mark's observation may instead be made with a detector."
+  "notes": "A \"describe an experiment\" part: the scheme prices apparatus, method and observation. \"method\" names what earns its marks only. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2022_ol.py.",
+  "year": 2022,
+  "level": "ordinary"
  },
  {
   "id": "phys-2023-hl-q1-v",
