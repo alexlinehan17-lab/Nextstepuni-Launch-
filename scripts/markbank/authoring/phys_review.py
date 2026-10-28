@@ -603,12 +603,18 @@ def build(ledger, year, level):
                                                                           B.parse_ref(t['ref'])[1])
         if row_spans and lk0 is None:
             src = lifter.srcs['scheme']
-            printed_cells = []
+            printed_cells, partial_cells = [], []
             for pg in sorted({p for p, _, _ in row_spans}):
                 lo_, hi_ = min(a for p, a, _ in row_spans if p == pg), max(b for p, _, b in row_spans if p == pg)
                 cells = src.cells.get(pg, {})
                 for k in range(lo_, hi_ + 1):
-                    if k in cells:
+                    # A "partial answer ... (3)" line prices the partial credit
+                    # an examiner gives INSTEAD of the full mark (the 2010-2019
+                    # Ordinary schemes' "6 or 3": answer 6, partial answer (3));
+                    # its cell is an alternative to the answer's, not added to it.
+                    if k in cells and re.match(r'partial\b', src.lines[pg][k], re.I):
+                        partial_cells.append(cells[k])
+                    elif k in cells:
                         printed_cells.append(cells[k])
                 k = hi_ + 1
                 while k in cells and src.lines[pg][k] == cells[k]:
@@ -625,6 +631,7 @@ def build(ledger, year, level):
                                 f'these rows, the task total is {t["total"]}; correct the rows or say why '
                                 f'with cells="..."')
             cell_check = {'printed': printed_cells, 'sum': printed_sum,
+                          **({'partial': partial_cells} if partial_cells else {}),
                           **({'waiver': waiver} if waiver else {})}
         variants = None
         if t['key'] in getattr(ledger, 'ANSWER_VARIANTS', {}):
