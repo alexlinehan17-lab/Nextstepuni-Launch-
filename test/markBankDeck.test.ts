@@ -24,7 +24,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 // One implementation of the provenance comparison, shared with build-deck.mjs —
 // two copies drifted once and reported four correct cards as untraceable.
-import { comparableScheme, claimMatches } from '../scripts/markbank/schemeText.mjs';
+import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/schemeText.mjs';
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
 import { createHash } from 'node:crypto';
 
@@ -253,6 +253,15 @@ describe('every card traces to the marking scheme on disk', () => {
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       const scheme = schemeText(card);
       for (const row of card.rows) {
+        if (row.ask) {
+          // An ask row claims nothing from the scheme: it is the card's own
+          // question, answered by the scheme's print held back as a solution.
+          if (!normalise(card.questionText).includes(normalise(row.verbatim))
+            || !('figure' in card && card.figure?.solution)) {
+            bad.push(`${card.questionRef}: ask row "${row.verbatim}" without its question or solution figure`);
+          }
+          continue;
+        }
         const claims = row.kind === 'anyN' && row.group
           ? row.group.options
           // Rows read "Label — answer"; the answer is what the scheme prints.

@@ -198,6 +198,40 @@ REVIEWED = (json.load(open(REVIEWED_PATH))
             if os.path.exists(REVIEWED_PATH) else {})
 
 
+# A citation suffix ("2014 OL Q10(b) — <what>") is printed in the card header BEFORE the reveal, so it
+# must not name an answer: a suffix word that neither the stem nor the question prints but an answer row
+# or option does is a leak (the Chemistry audit's SUFFIX-LEAK, 88339172b). Scoped by subject, like
+# SCHEME_LEAK_BY_SUBJECT, to the decks authored with suffixes under this rule.
+SUFFIX_LEAK_SUBJECTS = {'chemistry'}
+_SUFFIX_STOP = {'after', 'what', 'which', 'with', 'from', 'that', 'this', 'used', 'their', 'there', 'each', 'part',
+                'parts', 'other', 'defined', 'define', 'calculated', 'value', 'explain', 'reason', 'drawn', 'type',
+                'about', 'steps', 'step'}
+
+
+def _suffix_words(text):
+    return set(re.findall(r"[a-z][a-z0-9'-]{3,}", text.lower()))
+
+
+def suffix_leaks(subject, cards):
+    """Cards whose citation suffix names a word of their own answer."""
+    out = []
+    for c in cards:
+        ref = c.get('questionRef') or ''
+        if ' — ' not in ref:
+            continue
+        said = _suffix_words((c.get('stem') or '') + ' ' + (c.get('questionText') or ''))
+        new = _suffix_words(ref.split(' — ', 1)[1]) - _SUFFIX_STOP - said
+        ans = set()
+        for r in c.get('rows') or []:
+            for t in [r.get('verbatim') or ''] + list((r.get('group') or {}).get('options', [])) \
+                    + list(r.get('accepts') or []):
+                ans |= _suffix_words(t)
+        if new & ans:
+            out.append((subject, c['id'], 'suffix-leak',
+                        f'citation suffix names {sorted(new & ans)}, which the answer holds'))
+    return out
+
+
 def load_cards(subject):
     """(cards, is_deck) for one subject; [] when it has no authored file."""
     if subject in DECK_LOADERS:
@@ -271,6 +305,8 @@ def lint(subject):
         if lettered and c['id'] not in REVIEWED and not (has_fig and decoded):
             flags.append((subject, c['id'], 'undecoded-letters',
                           qtext.strip()[:90]))
+    if subject in SUFFIX_LEAK_SUBJECTS:
+        flags += suffix_leaks(subject, cards)
     return flags
 
 

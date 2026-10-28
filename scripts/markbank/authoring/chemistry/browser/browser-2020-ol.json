@@ -1,0 +1,18 @@
+[
+ {"id": "chem-2020-ol-q1-a-ii", "ask": "What change is observed when the gas bubbled", "answer": "solution decolourises", "figure": true},
+ {"id": "chem-2020-ol-q1-d", "ask": "match each substance A, B, C and D", "answer": "B: clove oil", "figure": true},
+ {"id": "chem-2020-ol-q2-d-iv", "ask": "", "answer": "0.09 moles per litre", "figure": true, "solution": true},
+ {"id": "chem-2020-ol-q3-d", "ask": "", "answer": "smooth curve correctly drawn through points and (0, 0)", "figure": true, "solution": true},
+ {"id": "chem-2020-ol-q3-b-i", "ask": "What chemical hazard is indicated by this pictogram?", "answer": "oxidising agent (reagent)", "figure": true},
+ {"id": "chem-2020-ol-q4-i", "ask": "Calculate the percentage by mass", "answer": "% Si = 28 ÷ 60 × 100 = 47%"},
+ {"id": "chem-2020-ol-q5-a", "ask": "", "answer": "the number of protons in the atoms of an element", "figure": true},
+ {"id": "chem-2020-ol-q6-c-i-iv", "ask": "Give the systematic IUPAC name for CH₄.", "answer": "tetrahedral (tetrahedron)", "solution": true},
+ {"id": "chem-2020-ol-q7-c", "ask": "What is hard water?", "answer": "lathers poorly / forms scum"},
+ {"id": "chem-2020-ol-q8-c-i-ii", "ask": "Draw a labelled diagram of the arrangement of apparatus", "answer": "collection over water", "solution": true},
+ {"id": "chem-2020-ol-q9-c-iii", "ask": "Give two characteristic properties of ionic substances.", "answer": "Any two of these, the first (6) and the second (3)."},
+ {"id": "chem-2020-ol-q10-a", "ask": "The following words are omitted from the passage below.", "answer": "7 eutrophication"},
+ {"id": "chem-2020-ol-q10-b-iv", "ask": "", "answer": "80.0 cm³", "figure": true, "solution": true},
+ {"id": "chem-2020-ol-q11-b-i", "ask": "", "answer": "state where forward and reverse reactions", "figure": true},
+ {"id": "chem-2020-ol-q11-b-ii", "ask": "Write the equilibrium constant (Kc) expression", "answer": "its own print is shown with the answer", "solution": true},
+ {"id": "chem-2020-ol-q11-c-b-i-iii", "ask": "What particles, atoms, ions or molecules, make up a sodium chloride crystal?", "answer": "ions / Na⁺ and Cl⁻", "figure": true}
+]

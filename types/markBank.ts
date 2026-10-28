@@ -144,6 +144,13 @@ export interface MarkRow {
   /** Asterisked: exact term required, so synonym claiming is disabled. */
   exactTermRequired?: boolean;
   /**
+   * The row restates the part's own ask rather than an answer: the scheme
+   * answers this part with a drawing and prints no words to claim. Only on a
+   * card whose figure is the scheme's solution print; the build and the deck
+   * test require the row to be the card's own question text.
+   */
+  ask?: boolean;
+  /**
    * Unclaimable until `dependsOn` is claimed — a "justify" mark is genuinely
    * unreachable if the structure it justifies was named wrongly.
    *
@@ -1120,7 +1127,7 @@ export interface BusinessExpected {
    * tick under a column header, "True"/"False" beside a statement. Every word is one the page prints; an item
    * may join words from one line in the page's own order with " — ".
    */
-  lifted?: 'geometry';
+  lifted?: 'geometry' | 'slice';
 }
 
 export interface BusinessRubric {

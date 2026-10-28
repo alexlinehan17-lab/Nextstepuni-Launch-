@@ -1,0 +1,19 @@
+[
+ {"id": "chem-2019-hl-q1-d-i", "ask": "the average number of moles of sodium thiosulfate used in a titration", "answer": "3.1 ÷ 248 = 0.0125 (1/80) M"},
+ {"id": "chem-2019-hl-q1-d-iii", "ask": "the concentration of dissolved oxygen in the water in moles per litre", "answer": "× 5 = 0.00009375", "solution": true},
+ {"id": "chem-2019-hl-q2-b", "ask": "Describe a chemical test to show that ethanal can be very easily oxidised.", "answer": "brick red (precipitate, solid, Cu(I), Cu⁺)", "figure": true},
+ {"id": "chem-2019-hl-q2-c-i", "ask": "", "answer": "glass wool soaked in ethanol", "figure": true, "solution": true},
+ {"id": "chem-2019-hl-q3-a", "ask": "", "answer": "rubber seal (septum, self-sealing cap)", "figure": true, "solution": true},
+ {"id": "chem-2019-hl-q3-b-i-ii", "ask": "why the pressure of the vapour at the end of the heating stage", "answer": "plunger of gas (large) syringe free to move", "figure": true},
+ {"id": "chem-2019-hl-q4-e", "ask": "Give two differences between a sigma and a pi covalent bond.", "answer": "do not determine shape of molecule", "solution": true},
+ {"id": "chem-2019-hl-q4-g", "ask": "Define bond energy.", "answer": "average amount of bond dissociation energies for all bonds"},
+ {"id": "chem-2019-hl-q4-i", "ask": "", "answer": "4.86 × 10⁻⁴ × 206 = 0.100 g ⇒ 100.116 mg", "figure": true, "solution": true},
+ {"id": "chem-2019-hl-q4-k-b", "ask": "Draw two repeating units of the polymer poly(propene).", "answer": "end bonds need not be shown", "solution": true},
+ {"id": "chem-2019-hl-q6-a-i-iv", "ask": "Give the systematic IUPAC names for A, B and C.", "answer": "C: 2,2-dimethylpropane", "figure": true},
+ {"id": "chem-2019-hl-q9-c", "ask": "Describe the surface adsorption theory", "answer": "products leave (desorb from) surface (catalyst)", "figure": true},
+ {"id": "chem-2019-hl-q9-d", "ask": "", "answer": "decrease particle size of reactants", "figure": true},
+ {"id": "chem-2019-hl-q10-a-i-iv", "ask": "", "answer": "CH₃● + Cl₂ → CH₃Cl + Cl●", "figure": true, "solution": true},
+ {"id": "chem-2019-hl-q11-b-ii", "ask": "Calculate the percentage decomposition into bromine and chlorine", "answer": "48%", "solution": true},
+ {"id": "chem-2019-hl-q11-c-a-iii", "ask": "Give two human activities that have enhanced the natural greenhouse effect", "answer": "rice production (paddy fields)", "figure": true},
+ {"id": "chem-2019-hl-q11-c-b-iv", "ask": "why graphite can be used as a lubricant", "answer": "planes of carbon atoms bonded (held) together", "figure": true}
+]

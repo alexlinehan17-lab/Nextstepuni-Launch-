@@ -724,8 +724,12 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
                             'where': f'{pre or ""} Q{q}({roman or ""})',
                             'detail': f'letters found: {letters}'})
                 continue
-            letters = _letters_in_order(subject, {k[-2] for k in here
-                                                  if k[-2]})
+            # Chemistry's alternatives key a letter with its part, "lA" and
+            # "lB" for Q4(l)A and B (chemistry_choice_parts): both are (l)
+            # in the run of letters.
+            letters = _letters_in_order(subject, {
+                k[-2][0] if subject == 'chemistry' and re.fullmatch(r'[a-l][AB]', str(k[-2]))
+                else k[-2] for k in here if k[-2]})
             if letters:
                 expect = _letter_run(letters)
                 expect = _letter_run(subject)[:len(letters)]
@@ -805,7 +809,9 @@ def key_label(k, subject=None):
             else f'Q{-q}-alt' if isinstance(q, int) and q < 0 else f'Q{q}')
     for token in ((roman, letter) if subject in ROMAN_MAJOR
                   else (letter, roman)):
-        if token:
+        if token and re.fullmatch(r'[a-l][AB]', str(token)):
+            tail += f'({token[0]}){token[1]}'   # Chemistry's Q11(d)A, Q4(l)B
+        elif token:
             tail += f'({token})'
     # A unit that is priced WHOLE and numbers nothing beneath it — History's
     # Ordinary parts B and C, which the scheme answers with one ceiling each —
@@ -1060,10 +1066,88 @@ def census_merged(subject, year, level, component=None):
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
+    if subject == 'chemistry':
+        parts, texts = chemistry_choice_parts(year, level, parts, texts)
     if subject == 'construction-studies':
         from construction_census_repairs import apply_construction_census_repairs
         parts, texts = apply_construction_census_repairs(year, level, parts, texts)
     return parts, texts, P.files
+
+
+def chemistry_choice_parts(year, level, parts, texts):
+    """Chemistry's "Answer part A or part B." as two sets of asks, not one.
+
+    Q4(l) and Q11(d) print two whole alternative parts, A and B, each with its
+    own romans. The paper reader keyed both by (question, letter, roman), so
+    B's (i) landed on A's (i): the census counted 2026 OL Q11(d) as six asks
+    where the paper prints eleven, and a card for A's (i) covered B's (i)
+    too. The alternatives are read with chem_print's part reader, which tells
+    "A" and "B" apart from the instruction above them, and keyed with the
+    letter carrying the alternative -- (11, 'dA', 'i') -- printed as
+    "Q11(d)A(i)", the way the cards cite them.
+
+    The 2014-2020 papers set the same choice at Q4(k) and Q11(c), and their
+    alternatives were counted as one leaf (Q4(k)) or as B's romans landing on
+    A's: 2020 HL lost twelve asks that way. A choice is taken only where the
+    paper reader already holds that question's lettered part, so a page the
+    part reader cannot follow (2010-2013) adds nothing that is not there.
+    """
+    import chem_print
+    lvl = 'hl' if level in ('higher', 'hl') else 'ol'
+    path = os.path.join(PP.papers_dir('chemistry'), f'{year}-{lvl}-paper.pdf')
+    # (2013 OL sets each head in one run with its words: chem_print.split_heads,
+    # gated to the sittings in chem_print.OLD_OL_HEADS; every other paper as read.)
+    segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
+                                  answers=False)
+    choice = {}
+    if (year, lvl) in chem_print.PAPER_ALT_LETTERS:
+        # (2013 HL prints Q11(c)'s choice "Answer either part A or part B.": its
+        # alternatives are read as chem_print.Printed reads them, PAPER_ALT_LETTERS.)
+        segs, _ = chem_print.segments(chem_print.split_heads(chem_print.read_lines(path), year, lvl),
+                                      answers=False, alt_letters=chem_print.PAPER_ALT_LETTERS[(year, lvl)])
+    for sg in segs:
+        q, letter, roman, alt = sg.key
+        if alt:
+            choice.setdefault((int(q), letter), []).append(sg)
+    if not choice:
+        return parts, texts
+    parts, texts = set(parts), dict(texts)
+    for (q, letter), sgs in choice.items():
+        if not any(k[-3] == q and k[-2] == letter for k in parts):
+            continue                # not a part the paper reader found
+        for k in [k for k in parts if k[-3] == q and k[-2] == letter]:
+            parts.discard(k)
+            texts.pop(k, None)
+        for sg in sgs:
+            _, _, roman, alt = sg.key
+            has_romans = any(o.key[3] == alt and o.key[2] for o in sgs)
+            if roman is None and has_romans:
+                continue            # the alternative's lead-in, not an ask
+            k = (q, letter + alt, roman)
+            parts.add(k)
+            texts[k] = chem_print.joined(sg.text)
+        if (year, lvl) in CHOICE_LEADING_ROMANS:
+            # 2018 OL Q11(c)A: romans set inside the alternative's lead-in.
+            for sg in sgs:
+                _, _, roman, alt = sg.key
+                if roman is not None:
+                    continue
+                mine = {k for k in parts if k[-3] == q and k[-2] == letter + alt}
+                lead = chem_print.joined(sg.text)
+                parts |= complete_leading_romans(mine, texts, stem=lambda _q, _l, t=lead: t)
+    return parts, texts
+
+
+# 2018 OL Q11(c)A (paper page 10) sets its first two romans inside the
+# alternative's opening sentence -- "How do most metals compare to most
+# plastics in terms of (i) hardness, (ii) lustre?" -- and breaks to markers of
+# their own only at (iii) and (iv). chemistry_choice_parts skips that sentence
+# as the alternative's lead-in, so (i) and (ii) went with it (census flag
+# "roman-gap Q11(cA)"); the scheme prices them "(6 + 3)" (PDF page 18). The
+# lead-in supplies them, as complete_leading_romans does for a letter's own
+# text. Applied to every Chemistry sitting the rule adds these two asks and no
+# other; gated so that a future sitting's reading moves only by its own audit.
+CHOICE_LEADING_ROMANS = {(2018, 'ol')}
 
 
 # Stimulus prose from the last census_sections() walk of each sitting, for

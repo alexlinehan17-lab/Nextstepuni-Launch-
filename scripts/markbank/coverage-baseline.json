@@ -124,7 +124,7 @@
   },
   "business": {
     "cards": 1988,
-    "contentHash": "fbe2a0ac8731a9fa",
+    "contentHash": "8c53f2ed50e3e2fc",
     "coveragePct": 100.0,
     "covered": 2173,
     "excluded": 0,
@@ -138,19 +138,19 @@
     "refsHash": "4b71b53d9940c654"
   },
   "chemistry": {
-    "cards": 876,
-    "contentHash": "723a9a059950fb5f",
-    "coveragePct": 92.5,
-    "covered": 1120,
+    "cards": 3369,
+    "contentHash": "53fc9dfbd3a882b5",
+    "coveragePct": 100.0,
+    "covered": 3496,
     "excluded": 0,
-    "leaves": 1211,
-    "open": 91,
+    "leaves": 3496,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "bf2ca1ce05646d41"
+      "count": 34,
+      "hash": "a5df30dd2d14a50b"
     },
-    "refsHash": "f83cdbf7ec4449ee"
+    "refsHash": "69f459852daa8c02"
   },
   "classical-studies": {
     "cards": 516,
