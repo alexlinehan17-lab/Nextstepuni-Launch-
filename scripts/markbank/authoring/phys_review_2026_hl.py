@@ -760,7 +760,7 @@ TASKS = [
       stem=[P13['ev'], Q13IV]),
     T('13ivc', 'Q13(iv)(c)', 'B', Q(15, 'Calculate the average current drawn if the V2G provides a peak AC voltage of 328 V to',
                                     'power a 2 kW electric kettle.'),
-      [G('fraction', page=20, clip=(125, 302, 200, 330), expect='Vrmsൌ Vₚₑₐₖ/(√2)', marks=2),
+      [G('fraction', page=20, clip=(125, 302, 200, 330), expect='Vrms= Vₚₑₐₖ/(√2)', marks=2),
        pt(S('P = VI'), 2), pt(S('I = 8.62 A'), 2)],
       'phys-3-3', 'average-current-from-peak-voltage',
       SQ(20, 'Calculate the average current drawn if the V2G provides a peak AC voltage of 328',

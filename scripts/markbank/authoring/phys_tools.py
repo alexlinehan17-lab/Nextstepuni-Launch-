@@ -458,6 +458,24 @@ def _clip_reads(year, level):
     return out
 
 
+def cmd_fold_ledger(year, level):
+    """Rewrite a ledger's strings to read as the runner's reader now reads the
+    PDFs: maths-alphabet characters as plain ones, broken-font characters as
+    what they stand for (glyphmap.json, never "Ɵ"). Run after a reader change
+    that folds text, then re-run the check."""
+    import unicodedata
+    import phys_review_lib as B
+    p = os.path.join(HERE, f'phys_review_{year}_{level}.py')
+    s = open(p, encoding='utf-8').read()
+    out = ''.join(unicodedata.normalize('NFKD', c) if 0x1D400 <= ord(c) <= 0x1D7FF else B._GLYPHMAP.get(c, c)
+                  for c in s)
+    # Escaped broken glyphs written into the source as \uXXXX.
+    out = re.sub(r'\\u([0-9a-fA-F]{4})', lambda m: B._GLYPHMAP.get(chr(int(m.group(1), 16)), m.group(0)), out)
+    n = sum(1 for a, b in zip(s, out) if a != b)
+    open(p, 'w', encoding='utf-8').write(out)
+    print(f'{p}: {n} characters folded')
+
+
 COMMANDS = {k[4:].replace('_', '-'): v for k, v in globals().items() if k.startswith('cmd_')}
 
 if __name__ == '__main__':

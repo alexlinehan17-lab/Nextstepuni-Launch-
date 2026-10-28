@@ -165,6 +165,21 @@ def _decode_symbol(ch, font):
     return ch
 
 
+# The bank's table of characters a broken subset font left behind and what each
+# stands for, derived from glyph ids across the corpus (derive_glyphs.py) and
+# applied by the deck build to every string on a card. Physics reads it here,
+# BEFORE a raised span is turned into superscripts, so "10" followed by a raised
+# "ି18" (the equation font's broken minus) reads "10⁻¹⁸", not "10−18". "Ɵ" is
+# left to _norm, which tells the theta from the "ti" ligature.
+_GLYPHMAP = {k: v for k, v in json.load(open(os.path.join(HERE, 'glyphmap.json'), encoding='utf-8')).items()
+             if k != '\u019f' and len(k) == 1}
+
+
+def repair(text):
+    """A string with the bank's broken-font characters read as what they stand for."""
+    return ''.join(_GLYPHMAP.get(c, c) for c in text)
+
+
 def _span_text(spans, i):
     """One span's text. The 2021 and 2022 booklets set the degree sign as a
     superscript letter o before the C ("4 oC" in the text layer); the page
@@ -173,7 +188,7 @@ def _span_text(spans, i):
     nxt = spans[i + 1]['text'] if i + 1 < len(spans) else ''
     if sp['flags'] & 1 and sp['text'].strip() == 'o' and nxt.lstrip().startswith('C'):
         return '°'
-    return ''.join(_decode_symbol(c, sp['font']) for c in sp['text'])
+    return ''.join(_GLYPHMAP.get(c, c) for c in (_decode_symbol(c, sp['font']) for c in sp['text']))
 
 
 SUP_MAP = dict(zip('0123456789+-–−=()ni', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁻⁻⁼⁽⁾ⁿⁱ'))
