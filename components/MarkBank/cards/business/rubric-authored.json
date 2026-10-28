@@ -1983,7 +1983,33 @@
      3,
      11
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 11,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Manufacturer"
+      },
+      {
+       "id": "e2",
+       "text": "Wholesaler"
+      },
+      {
+       "id": "e3",
+       "text": "Retailer"
+      },
+      {
+       "id": "e4",
+       "text": "Consumer"
+      },
+      {
+       "id": "e5",
+       "text": "Any valid examples e.g. Toyota, Philips, Jacobs."
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -5144,37 +5170,7 @@
      5,
      14
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
-    "expected": {
-     "page": 14,
-     "items": [
-      {
-       "id": "e1",
-       "text": "000's"
-      },
-      {
-       "id": "e2",
-       "text": "400"
-      },
-      {
-       "id": "e3",
-       "text": "300"
-      },
-      {
-       "id": "e4",
-       "text": "200"
-      },
-      {
-       "id": "e5",
-       "text": "100"
-      },
-      {
-       "id": "e6",
-       "text": "Nov-07 May-08 Nov-08 May-09"
-      }
-     ],
-     "lifted": "geometry"
-    }
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
    },
    "additionalTopicIds": [
     "business-2-12"
@@ -22421,7 +22417,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Level 2: Safety/Security needs Level 3: Social needs Level 5: Self-actualisation needs"
+       "text": "Formula: Current Assets : Current Liabilities"
+      },
+      {
+       "id": "e2",
+       "text": "Workings: 2010 2009"
+      },
+      {
+       "id": "e3",
+       "text": "900,000 : 500,000 800,000 : 400.000"
+      },
+      {
+       "id": "e4",
+       "text": "1.8 : 1 2 : 1"
       }
      ],
      "lifted": "geometry"
@@ -27140,162 +27148,7 @@
      41,
      42
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
-    "expected": {
-     "page": 41,
-     "items": [
-      {
-       "id": "e1",
-       "text": "As part of a feasibility study for a new product, Moore Ltd supplies the following information:"
-      },
-      {
-       "id": "e2",
-       "text": "The Breakeven Point;"
-      },
-      {
-       "id": "e3",
-       "text": "Profit at forecast output;"
-      },
-      {
-       "id": "e4",
-       "text": "The Margin of Safety at forecast output."
-      },
-      {
-       "id": "e5",
-       "text": "SP = €20"
-      },
-      {
-       "id": "e6",
-       "text": "VC = €10 Contribution per unit = €20 - €10 = €10"
-      },
-      {
-       "id": "e7",
-       "text": "Break-even point = Total fixed costs"
-      },
-      {
-       "id": "e8",
-       "text": "Contribution per unit"
-      },
-      {
-       "id": "e9",
-       "text": "= 300,000"
-      },
-      {
-       "id": "e10",
-       "text": "10 = 30,000 units"
-      },
-      {
-       "id": "e11",
-       "text": "Units S/P V/costs F/Costs T/Costs T/Revenue Profit"
-      },
-      {
-       "id": "e12",
-       "text": "0 20 0 300,000 300,000 0 0"
-      },
-      {
-       "id": "e13",
-       "text": "30,000 20 300,000 300,000 600,000 600,000 0"
-      },
-      {
-       "id": "e14",
-       "text": "40,000 20 400,000 300,000 700,000 800,000 100,000"
-      },
-      {
-       "id": "e15",
-       "text": "Profit at forecast output = €800,000 - €700,000 = €100,000 (c ) Margin of Safety = 40,000 - 30,000 = 10,000 Units"
-      },
-      {
-       "id": "e16",
-       "text": "Total"
-      },
-      {
-       "id": "e17",
-       "text": "Total"
-      },
-      {
-       "id": "e18",
-       "text": "Revenue (TR) costs (TC)",
-       "detail": [
-        "€",
-        "‘000"
-       ]
-      },
-      {
-       "id": "e19",
-       "text": "900"
-      },
-      {
-       "id": "e20",
-       "text": "800"
-      },
-      {
-       "id": "e21",
-       "text": "Profit at forecast",
-       "detail": [
-        "output"
-       ]
-      },
-      {
-       "id": "e22",
-       "text": "700"
-      },
-      {
-       "id": "e23",
-       "text": "Break-even",
-       "detail": [
-        "point"
-       ]
-      },
-      {
-       "id": "e24",
-       "text": "600"
-      },
-      {
-       "id": "e25",
-       "text": "COSTS"
-      },
-      {
-       "id": "e26",
-       "text": "500"
-      },
-      {
-       "id": "e27",
-       "text": "AND"
-      },
-      {
-       "id": "e28",
-       "text": "400"
-      },
-      {
-       "id": "e29",
-       "text": "REVENUE"
-      },
-      {
-       "id": "e30",
-       "text": "300"
-      },
-      {
-       "id": "e31",
-       "text": "200"
-      },
-      {
-       "id": "e32",
-       "text": "Margin",
-       "detail": [
-        "of Safety"
-       ]
-      },
-      {
-       "id": "e33",
-       "text": "100"
-      },
-      {
-       "id": "e34",
-       "text": "10 20 30 40 50 ‘000 units"
-      }
-     ],
-     "lifted": "geometry"
-    }
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
    }
   },
   {
@@ -27556,46 +27409,18 @@
     ],
     "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
     "expected": {
-     "page": 17,
+     "page": 16,
      "items": [
       {
        "id": "e1",
-       "text": "RIM Ltd."
+       "text": "BEP in units and Units: 10,000"
       },
       {
        "id": "e2",
-       "text": "Long Term Finance:",
-       "detail": [
-        "Mortgage/Long Term Loan/Debenture: It is taken out for more than 5 years. If the bank lends the",
-        "€400,000 to RIM Ltd it will hold the deeds of the factory warehouse as security against the",
-        "repayment of the loan. It is paid in agreed instalments including interest which is tax deductible. If",
-        "RIM Ltd defaults on the repayment then the bank can recover their money through the repossession",
-        "and sale of the warehouse.",
-        "Equity/Share Capital/Owners Capital: RIM Ltd is a Private limited company and the €400,000",
-        "needed to purchase the warehouse could be raised by selling ordinary shares to new or existing",
-        "shareholders. No security or repayments are required for RIM Ltd.",
-        "Government Grants: Government agencies such as Enterprise Ireland or County Enterprise Boards",
-        "could be approached for grant aid assistance to help purchase the factory warehouse for €400,000.",
-        "Normally they are interest free and do not have to be repaid if used for their intended purpose.",
-        "Link: “It set about identifying the financing options available to purchase the factory warehouse for",
-        "the agreed price of €400,000.”"
-       ]
-      },
-      {
-       "id": "e3",
-       "text": "Medium Term Finance:",
-       "detail": [
-        "Medium Term Loan: RIM Ltd could get a medium term bank loan with a fixed rate of interest that",
-        "would be repaid in equal monthly instalments up to a five year period, allowing the company to cash",
-        "purchase and negotiate the best cash prices available for heating equipment, fixtures and fittings etc.",
-        "The bank may require security or personal guarantees. Interest paid is tax deductible.",
-        "know in advance the amount and number of repayments and can budget accordingly.",
-        "Link: “An additional €50,000 was required to refurbish the warehouse into 50 stall units which could",
-        "then be rented out to farmers and crafts people”."
-       ]
+       "text": "in euros € 450,000"
       }
      ],
-     "lifted": "geometry"
+     "lifted": "slice"
     }
    }
   },
@@ -27647,53 +27472,14 @@
     ],
     "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
     "expected": {
-     "page": 18,
+     "page": 16,
      "items": [
       {
        "id": "e1",
-       "text": "Medium Term Finance:",
-       "detail": [
-        "Hire Purchase: This is a method of finance that would allow the individual stallholders to purchase",
-        "an asset such as a transport vehicle over a five year period or less. The stallholder will get immediate",
-        "possession of the transport vehicle, however, ownership doesn’t transfer until the last instalment is",
-        "made. HP is an expensive source of finance. No security is required but the HP Co. may repossess",
-        "the asset if there is a default in repayments.",
-        "Leasing: This would involve the renting of an asset by the individual stallholder from a finance",
-        "company. The stallholder will not have to come up with a lump sum and would have the full use and",
-        "possession of an asset, provided s/he makes fixed and regular payments to the company. While",
-        "leasing costs more than cash purchase it can help the cash flow of a business.",
-        "Link: “The stallholders had to initially purchase a transport vehicle, equip their stall”."
-       ]
-      },
-      {
-       "id": "e2",
-       "text": "Short Term Finance:",
-       "detail": [
-        "Bank Overdraft: This is a facility offered by a bank that allows current account holders to withdraw",
-        "more money from their account than they actually have in it. Interest is charged on the outstanding",
-        "balance on a daily basis. It can be recalled by the bank at any time. The individual stallholders could",
-        "use their overdraft facility to purchase stock or pay the wages of part time staff. It can be used as a",
-        "form of working capital to aid in day-to-day business operations.",
-        "Accrued Expenses: This source of finance frees up money by delaying the payment of regular bills",
-        "such as utilities, rent or insurance. This would free up cash to pay for supplies which in turn could be",
-        "sold allowing these bills to be paid later.",
-        "Trade Credit: Stallholders may buy stock for resale on a “buy now and pay later” basis. The amount",
-        "of credit available is influenced by the creditworthiness of the stallholder. There is no direct charge",
-        "but cash discounts may be forgone.",
-        "Link: “The stallholders would have to manage cash flow effectively and control essential costs such",
-        "as raw materials, stock, transport operating costs, wages and insurance”."
-       ]
-      },
-      {
-       "id": "e3",
-       "text": "OR",
-       "detail": [
-        "Link: “The stallholders had to ........equip their stall and pay the agreed stall rent of €50 a day to RIM",
-        "Ltd”. (Candidate treating “equip stall” as a purchase of “stock”)"
-       ]
+       "text": "Profit at Forecast € 125,000"
       }
      ],
-     "lifted": "geometry"
+     "lifted": "slice"
     }
    }
   },
@@ -27834,10 +27620,6 @@
       {
        "id": "e5",
        "text": "5 — F"
-      },
-      {
-       "id": "e6",
-       "text": "tax rates tax credits."
       }
      ],
      "lifted": "geometry"
@@ -28514,15 +28296,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "Franchise is a business arrangement whereby the franchisor (the existing business with the proven business model) grants a contractual licence/permission to the franchisee (person setting",
-       "detail": [
-        "up the business) to use its name, logo and business idea in return for a fee or a percentage of",
-        "profits or sales.",
-        "The franchisor can expand his business without having to invest further capital or take additional",
-        "risks as these are passed onto the franchisee in the contractual arrangement.",
-        "Some franchises in Ireland include, The Zip Yard, Gloria Jean’s Coffees, McDonalds and",
-        "GEMS."
-       ]
+       "text": "The primary sector (extractive) is a category of industry based on the natural resources of a country such as agriculture, forestry, fishing, mining, energy."
       }
      ],
      "lifted": "geometry"
@@ -28594,7 +28368,51 @@
      5,
      15
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 15,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Current Trends"
+      },
+      {
+       "id": "e2",
+       "text": "Commodities such as beef and milk are commanding higher prices on world markets as demand increases due to global population growth."
+      },
+      {
+       "id": "e3",
+       "text": "Cóillte the state agency operating in forestry, land based businesses, renewable energy and panel products may be privatised along with other businesses such as Electric",
+       "detail": [
+        "Ireland."
+       ]
+      },
+      {
+       "id": "e4",
+       "text": "As a result of overfishing the EU has introduced fish quotas in an attempt to conserve fish stocks."
+      },
+      {
+       "id": "e5",
+       "text": "Gas deposits discovered in the Fermanagh/Leitrim border may be mined using ‘fracking’ a controversial mining technique. The Corrib natural gas field has also proved",
+       "detail": [
+        "controversial."
+       ]
+      },
+      {
+       "id": "e6",
+       "text": "Developments in the area of wind energy and solar power."
+      },
+      {
+       "id": "e7",
+       "text": "Continued growth in organic food production capitalising on Ireland’s green image worldwide."
+      },
+      {
+       "id": "e8",
+       "text": "Restriction on turf cutting due to EU environmental directive."
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -28862,7 +28680,33 @@
      4,
      10
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "1 — F"
+      },
+      {
+       "id": "e2",
+       "text": "2 — E"
+      },
+      {
+       "id": "e3",
+       "text": "3 — A"
+      },
+      {
+       "id": "e4",
+       "text": "4 — B"
+      },
+      {
+       "id": "e5",
+       "text": "5 — C"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "additionalTopicIds": [
     "business-3-19"
@@ -33971,7 +33815,49 @@
      7,
      20
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 20,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Gross Income €32,000"
+      },
+      {
+       "id": "e2",
+       "text": "Less Deductions:"
+      },
+      {
+       "id": "e3",
+       "text": "PAYE (20% of 32,000) 6,400"
+      },
+      {
+       "id": "e4",
+       "text": "Less Tax Credit – 3,600"
+      },
+      {
+       "id": "e5",
+       "text": "Net PAYE 2,800"
+      },
+      {
+       "id": "e6",
+       "text": "PRSI (4% of 32,000) 1,280"
+      },
+      {
+       "id": "e7",
+       "text": "USC (3% of 32,000) 960"
+      },
+      {
+       "id": "e8",
+       "text": "Total Deductions € 5,040"
+      },
+      {
+       "id": "e9",
+       "text": "Net Take Home Pay €26,960"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -37928,10 +37814,6 @@
       {
        "id": "e17",
        "text": "Decisions/legislation can be adjudicated upon by the Court of Justice."
-      },
-      {
-       "id": "e18",
-       "text": "Enterprise"
       }
      ],
      "lifted": "geometry"
@@ -39011,14 +38893,10 @@
      "items": [
       {
        "id": "e1",
-       "text": "Current Ratio;"
-      },
-      {
-       "id": "e2",
        "text": "Acid Test Ratio:"
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "Debt/Equity Ratio.",
        "detail": [
         "Return on Investment = Net Profit x100 / Cap. Employed",
@@ -39026,43 +38904,43 @@
        ]
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "50,000/(500,000 + 100,000 + 300,000)"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "50,000/900,000"
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "5.56%"
       },
       {
-       "id": "e7",
+       "id": "e6",
        "text": "Current Ratio = Current Assets: Current Liabilities"
       },
       {
-       "id": "e8",
+       "id": "e7",
        "text": "155,000: 85,000"
       },
       {
-       "id": "e9",
+       "id": "e8",
        "text": "1.82:1 Acid Test Ratio = Current Assets – Closing Stock: Current Liabilities"
       },
       {
-       "id": "e10",
+       "id": "e9",
        "text": "(155,000 – 80,000): 85,000"
       },
       {
-       "id": "e11",
+       "id": "e10",
        "text": "75,000:85,000 0.88:1 Debt Equity Ratio = Debt: Equity/ (Ordinary share capital + Retained Earnings)"
       },
       {
-       "id": "e12",
+       "id": "e11",
        "text": "300,000: (500,000 + 100,000)"
       },
       {
-       "id": "e13",
+       "id": "e12",
        "text": "300,000:600,000 0.5:1"
       }
      ],
@@ -40975,38 +40853,49 @@
      "items": [
       {
        "id": "e1",
-       "text": "(Show your workings)"
+       "text": "Workings",
+       "detail": [
+        "(Show your workings)"
+       ]
       },
       {
        "id": "e2",
-       "text": "Debtors €12,000"
+       "text": "Current Ratio is CA: CL"
       },
       {
        "id": "e3",
-       "text": "CA 12000 + 15000 + 8000 = €35000"
+       "text": "Debtors €12,000"
       },
       {
        "id": "e4",
-       "text": "Bank Overdraft €20,000"
+       "text": "CA 12000 + 15000 + 8000 = €35000"
       },
       {
        "id": "e5",
-       "text": "CL 20000 + 50000 = €70000"
+       "text": "Bank Overdraft €20,000"
       },
       {
        "id": "e6",
-       "text": "Cash €15,000"
+       "text": "CL 20000 + 50000 = €70000"
       },
       {
        "id": "e7",
-       "text": "Creditors €50,000"
+       "text": "Cash €15,000"
       },
       {
        "id": "e8",
-       "text": "Closing Stock € 8,000"
+       "text": "Creditors €50,000"
       },
       {
        "id": "e9",
+       "text": "Current Ratio = €35,000: €70,000"
+      },
+      {
+       "id": "e10",
+       "text": "Closing Stock € 8,000"
+      },
+      {
+       "id": "e11",
        "text": "Answer: 0.5:1"
       }
      ],
@@ -42882,23 +42771,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Indicate categories: Visible Invisible Visible Invisible"
+       "text": "Australian tourists in Ireland for ‘The Gathering 2013’ — Invisible Export"
       },
       {
        "id": "e2",
-       "text": "Australian tourists in Ireland for ‘The Gathering 2013’ — Export Export"
+       "text": "Greek cheese sold in Ireland — Visible Import"
       },
       {
        "id": "e3",
-       "text": "Greek cheese sold in Ireland — Import"
+       "text": "Irish Lamb sold in France — Visible Export"
       },
       {
        "id": "e4",
-       "text": "Irish Lamb sold in France — Export Export"
-      },
-      {
-       "id": "e5",
-       "text": "Justin Timberlake plays a concert in the O2 Dublin — Import"
+       "text": "Justin Timberlake plays a concert in the O2 Dublin — Invisible Import"
       }
      ],
      "lifted": "geometry"
@@ -49343,18 +49228,14 @@
       },
       {
        "id": "e5",
-       "text": "Information Notices:"
+       "text": "Information Notices: The Data Protection Commissioner may require any person to provide him with whatever information the Commissioner needs to carry out his functions, such as to pursue an investigation."
       },
       {
        "id": "e6",
-       "text": "The Data Protection Commissioner may require any person to provide him with whatever information the Commissioner needs to carry out his functions, such as to pursue an investigation."
-      },
-      {
-       "id": "e7",
        "text": "Prohibition Notice: Under section 11 of the Data Protection Acts, 1988 and 2003, the Data Protection Commissioner may prohibit the transfer of personal data from the"
       },
       {
-       "id": "e8",
+       "id": "e7",
        "text": "Appoint an Authorised Officer: Under section 24 of the Data Protection Acts, 1988 and 2003 the Data Protection Commissioner may appoint an \"authorised officer\" to",
        "detail": [
         "enter and examine the premises of a data controller or data processor, to enable the",
@@ -51768,7 +51649,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "€ € €"
+       "text": "Tax Computation for Audrey Stapleton"
       },
       {
        "id": "e2",
@@ -51780,7 +51661,7 @@
       },
       {
        "id": "e4",
-       "text": "Gross Income 80,000 (2m)"
+       "text": "Gross Income 80,000"
       },
       {
        "id": "e5",
@@ -51788,15 +51669,15 @@
       },
       {
        "id": "e6",
-       "text": "€32,800 @ 20% 6,560 (1m)"
+       "text": "€32,800 @ 20% 6,560"
       },
       {
        "id": "e7",
-       "text": "€47,200 @ 41% (1m) 19,352 (1m) OF"
+       "text": "€47,200 @ 41% (1m) 19,352 OF"
       },
       {
        "id": "e8",
-       "text": "Gross PAYE Tax 25,912 (1m) OF"
+       "text": "Gross PAYE Tax 25,912 OF"
       },
       {
        "id": "e9",
@@ -51804,19 +51685,23 @@
       },
       {
        "id": "e10",
-       "text": "Single Person 1,650 (1m)"
+       "text": "Single Person 1,650"
       },
       {
        "id": "e11",
-       "text": "PAYE 1,650 (1m)"
+       "text": "PAYE 1,650"
       },
       {
        "id": "e12",
-       "text": "Rent 320 (1m)"
+       "text": "Rent 320"
       },
       {
        "id": "e13",
        "text": "3,620 (3,620)"
+      },
+      {
+       "id": "e14",
+       "text": "Net Tax Payable 22,292 OF"
       }
      ],
      "lifted": "geometry"
@@ -53803,7 +53688,17 @@
      5,
      14
     ],
-    "markingGuideNote": "Compare your working and answer with the official table. Retain the units shown in the question."
+    "markingGuideNote": "Compare your working and answer with the official table. Retain the units shown in the question.",
+    "expected": {
+     "page": 14,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Sales 60,000 x €5 €300,000"
+      }
+     ],
+     "lifted": "slice"
+    }
    }
   },
   {
@@ -53862,7 +53757,17 @@
      5,
      14
     ],
-    "markingGuideNote": "Compare your working and answer with the official table. Retain the units shown in the question."
+    "markingGuideNote": "Compare your working and answer with the official table. Retain the units shown in the question.",
+    "expected": {
+     "page": 14,
+     "items": [
+      {
+       "id": "e1",
+       "text": "FC €48,000 + (VC €2 x €60,000) €168,000"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -53920,7 +53825,17 @@
      5,
      14
     ],
-    "markingGuideNote": "Compare your working and answer with the official table. Retain the units shown in the question."
+    "markingGuideNote": "Compare your working and answer with the official table. Retain the units shown in the question.",
+    "expected": {
+     "page": 14,
+     "items": [
+      {
+       "id": "e1",
+       "text": "€300,000 - €168,000 €132,000"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -54680,7 +54595,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "Name one leadership style. Autocratic/Democratic/Laissez Faire"
+       "text": "Autocratic/Democratic/Laissez Faire"
       }
      ],
      "lifted": "geometry"
@@ -55883,11 +55798,11 @@
      "items": [
       {
        "id": "e1",
-       "text": "A stakeholder is anyone or any group of people that has an (2+2) interest/involvement or is directly affected by how a business is run."
+       "text": "A stakeholder is anyone or any group of people that has an interest/involvement or is directly affected by how a business is run."
       },
       {
        "id": "e2",
-       "text": "Employees, entrepreneurs, investors, shareholders, customers, suppliers, (2 3m) service providers, local community, government, trade associations."
+       "text": "Employees, entrepreneurs, investors, shareholders, customers, suppliers, service providers, local community, government, trade associations."
       }
      ],
      "lifted": "geometry"
@@ -56349,7 +56264,21 @@
      4,
      10
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "BALANCE OF TRADE = €1,300m"
+      },
+      {
+       "id": "e2",
+       "text": "€1,500m [must show minus] = – €200m [must show minus] ✓ Deficit"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -56544,15 +56473,12 @@
        "id": "e5",
        "text": "Link",
        "detail": [
-        "“He (Shay) used ... €30,000 he had saved while working in Australia to establish"
+        "“He (Shay) used ... €30,000 he had saved while working in Australia to establish",
+        "Atlantic Surf.”"
        ]
       },
       {
        "id": "e6",
-       "text": "Atlantic Surf.”"
-      },
-      {
-       "id": "e7",
        "text": "Initiative/Exploiting opportunity",
        "detail": [
         "Shay showed initiative by bringing his surfing experience/skill to Ireland and taking",
@@ -56562,7 +56488,7 @@
        ]
       },
       {
-       "id": "e8",
+       "id": "e7",
        "text": "Link",
        "detail": [
         "“Inspired by the article........he decided to return home from Australia in 2008 to set",
@@ -56570,7 +56496,7 @@
        ]
       },
       {
-       "id": "e9",
+       "id": "e8",
        "text": "Resilient /Confident",
        "detail": [
         "Entrepreneurs are not put off by failure. Entrepreneurs have a strong sense of",
@@ -56581,7 +56507,7 @@
        ]
       },
       {
-       "id": "e10",
+       "id": "e9",
        "text": "Link",
        "detail": [
         "“Having tried and failed in business in the past. ‘...he decided to return home from",
@@ -56589,32 +56515,29 @@
        ]
       },
       {
-       "id": "e11",
+       "id": "e10",
        "text": "Future focused",
        "detail": [
         "Reference to the importance of a business plan........"
        ]
       },
       {
-       "id": "e12",
+       "id": "e11",
        "text": "Link",
        "detail": [
-        "\"He prepared a business plan and received a business start-up grant of €10,000 from"
+        "\"He prepared a business plan and received a business start-up grant of €10,000 from",
+        "Donegal County Enterprise Board.\""
        ]
       },
       {
-       "id": "e13",
-       "text": "Donegal County Enterprise Board.\""
-      },
-      {
-       "id": "e14",
+       "id": "e12",
        "text": "Reality Perception",
        "detail": [
         "Sees things for what they are........."
        ]
       },
       {
-       "id": "e15",
+       "id": "e13",
        "text": "Link",
        "detail": [
         "“Shay realised that he needed to carry out some market research and get assistance",
@@ -56622,7 +56545,7 @@
        ]
       },
       {
-       "id": "e16",
+       "id": "e14",
        "text": "Networking/ Persuasive abilities",
        "detail": [
         "Entrepreneurs recognise the importance of a wide range of contacts to provide",
@@ -56631,7 +56554,7 @@
        ]
       },
       {
-       "id": "e17",
+       "id": "e15",
        "text": "Link",
        "detail": [
         "“Shay contacted the Irish Surfing Association (ISA) and received valuable advice on",
@@ -58655,7 +58578,25 @@
      6,
      17
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 17,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Heading"
+      },
+      {
+       "id": "e2",
+       "text": "Labels: Year No.empl"
+      },
+      {
+       "id": "e3",
+       "text": "Correct Points: [Does not have to be scaled from ‘0’]"
+      }
+     ],
+     "lifted": "slice"
+    }
    }
   },
   {
@@ -59534,17 +59475,14 @@
        "text": "A SWOT analysis is undertaken by a firm to assess its:",
        "detail": [
         "Strengths (Internal) – the factors that make the business work well and",
-        "give it an advantage, e.g. good product, employees, USP.",
-        "+"
+        "give it an advantage, e.g. good product, employees, USP."
        ]
       },
       {
        "id": "e2",
        "text": "Jordan’s strength is his knowledge of and skills in surfing.",
        "detail": [
-        "expl.",
         "Weaknesses (Internal) – the factors within the business which need",
-        "@",
         "improvement in order to be successful. They weaken the business and",
         "must be remedied if it is to succeed, e.g. poor management."
        ]
@@ -61040,15 +60978,11 @@
       },
       {
        "id": "e10",
-       "text": "Note:"
-      },
-      {
-       "id": "e11",
        "text": "Total Deductions: €18,312 Must show"
       },
       {
-       "id": "e12",
-       "text": "Net Annual Take‐home pay: €41,688 workings"
+       "id": "e11",
+       "text": "Net Annual Take‐home pay: €41,688"
       }
      ],
      "lifted": "geometry"
@@ -62955,14 +62889,18 @@
      "items": [
       {
        "id": "e1",
-       "text": "Guarantees"
+       "text": "Merchantable Quality"
       },
       {
        "id": "e2",
-       "text": "Signs limiting consumer rights"
+       "text": "Guarantees"
       },
       {
        "id": "e3",
+       "text": "Signs limiting consumer rights"
+      },
+      {
+       "id": "e4",
        "text": "Unsolicited Goods i Merchantable Quality The consumer is entitled to goods which are of merchantable quality – they should be of reasonable standard/quality taking into account what they are supposed to do, their",
        "detail": [
         "durability and the price paid. A €50 pen versus a €1 pen.",
@@ -62981,13 +62919,8 @@
         "These signs are illegal and do not affect your statutory consumer rights. A credit note",
         "is not a refund as it restricts you to shopping in that shop.",
         "It is an offence for the retailer to display signs that give the consumer the impression",
-        "that they have no legal rights."
-       ]
-      },
-      {
-       "id": "e4",
-       "text": "Unsolicited Goods",
-       "detail": [
+        "that they have no legal rights.",
+        "iv Unsolicited Goods",
         "These are goods that are sent to someone without having received an order. The",
         "consumer has the right to keep the goods without payment after thirty days if the",
         "consumer has sent written notice to the sender and informed him where they can be",
@@ -63498,13 +63431,8 @@
      "items": [
       {
        "id": "e1",
-       "text": "Industrial Development Authority (IDA Ireland)"
-      },
-      {
-       "id": "e2",
-       "text": "Sample responses include the following:",
+       "text": "Industrial Development Authority (IDA Ireland)",
        "detail": [
-        "Must have the first point below.",
         "IDA Ireland is responsible for the attraction and development of foreign direct",
         "investment in Ireland. Companies such as Google, Intel, Microsoft and Face book",
         "etc. have all interacted with the IDA.",
@@ -63521,10 +63449,9 @@
        ]
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "Enterprise Ireland (EI)",
        "detail": [
-        "Must have the first point below.",
         "Enterprise Ireland has the responsibility for developing Indigenous Irish industry",
         "with an export focus. It is focused on helping Irish-owned business with 10 or more",
         "employees seeking to deliver new export sales. The Irish software sector is one area",
@@ -65166,14 +65093,18 @@
      "items": [
       {
        "id": "e1",
-       "text": "200,000 : 450,000 + 150,000"
+       "text": "Debt: Equity"
       },
       {
        "id": "e2",
-       "text": "200,000 : 600,000"
+       "text": "200,000 : 450,000 + 150,000"
       },
       {
        "id": "e3",
+       "text": "200,000 : 600,000"
+      },
+      {
+       "id": "e4",
        "text": ".33 : 1"
       }
      ],
@@ -65248,16 +65179,11 @@
        "id": "e1",
        "text": "Flame Ltd is a lowly geared company which means the majority of the capital has been provided by the owners in the form of share capital and retained earnings.",
        "detail": [
-        "Flame Ltd can raise further capital by selling shares up to a"
+        "Flame Ltd can raise further capital by selling shares up to a",
+        "limit of €450,000 (Authorised – Issued).",
+        "Raising finance through additional loans is an option for Flame Ltd because it does",
+        "not have too many existing loans already, as it is lowly geared."
        ]
-      },
-      {
-       "id": "e2",
-       "text": "limit of €450,000 (Authorised – Issued)."
-      },
-      {
-       "id": "e3",
-       "text": "Raising finance through additional loans is an option for Flame Ltd because it does not have too many existing loans already, as it is lowly geared."
       }
      ],
      "lifted": "geometry"
@@ -65435,11 +65361,11 @@
     ],
     "markingGuideNote": "Compare the named process with the official identification.",
     "expected": {
-     "page": 36,
+     "page": 34,
      "items": [
       {
        "id": "e1",
-       "text": "Short-term finance is finance available for a period of up to one year. It should be repaid within twelve months and should be used for short term needs."
+       "text": "Job Production"
       }
      ],
      "lifted": "geometry"
@@ -68493,27 +68419,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Examples Advertising Sales Public"
+       "text": "Buy One Get One Free — Sales Promotion"
       },
       {
        "id": "e2",
-       "text": "Buy One Get One Free — Promotion"
+       "text": "Billboards — Advertising"
       },
       {
        "id": "e3",
-       "text": "Billboards"
+       "text": "Press Conference — Public Relations"
       },
       {
        "id": "e4",
-       "text": "✓ — Promotion"
-      },
-      {
-       "id": "e5",
-       "text": "Press Conference — Relations"
-      },
-      {
-       "id": "e6",
-       "text": "Free Samples — Promotion"
+       "text": "Free Samples — Sales Promotion"
       }
      ],
      "lifted": "geometry"
@@ -69353,12 +69271,9 @@
        "id": "e29",
        "text": "Link",
        "detail": [
-        "“....that competitors from Eastern Europe had invested heavily in"
+        "“....that competitors from Eastern Europe had invested heavily in",
+        "Information and Communications Technology (ICT).”"
        ]
-      },
-      {
-       "id": "e30",
-       "text": "Information and Communications Technology (ICT).”"
       }
      ]
     }
@@ -69630,12 +69545,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "Explain the elements of a SWOT analysis and conduct the SWOT prepared by Christine Landers.",
-       "detail": [
-        "Strength: Internal attributes and resources that support a successful",
-        "outcome/aspects of a business which it is good at/can be developed into",
-        "a competitive advantage."
-       ]
+       "text": "Strength: Internal attributes and resources that support a successful outcome/aspects of a business which it is good at/can be developed into a competitive advantage."
       },
       {
        "id": "e2",
@@ -69681,28 +69591,32 @@
       },
       {
        "id": "e7",
-       "text": "Strength"
+       "text": "HARTE SHOES LTD"
       },
       {
        "id": "e8",
+       "text": "Strength"
+      },
+      {
+       "id": "e9",
        "text": "Link",
        "detail": [
         "“...highly skilled shoe makers and a very effective sales team”"
        ]
       },
       {
-       "id": "e9",
+       "id": "e10",
        "text": "OR",
        "detail": [
-        "“ Harte Shoes Ltd had manufacturing expertise”"
+        "Harte Shoes Ltd had manufacturing expertise”"
        ]
       },
       {
-       "id": "e10",
+       "id": "e11",
        "text": "Weakness"
       },
       {
-       "id": "e11",
+       "id": "e12",
        "text": "Link",
        "detail": [
         "“.....the lack of a computer aided design system (CAD) to assist with the",
@@ -69710,18 +69624,18 @@
        ]
       },
       {
-       "id": "e12",
+       "id": "e13",
        "text": "OR",
        "detail": [
         "“absence of a quality website to facilitate online selling.”"
        ]
       },
       {
-       "id": "e13",
+       "id": "e14",
        "text": "Opportunity"
       },
       {
-       "id": "e14",
+       "id": "e15",
        "text": "Link",
        "detail": [
         "“.....growing markets exist in the UK, America and Australia due to the",
@@ -69729,19 +69643,16 @@
        ]
       },
       {
-       "id": "e15",
+       "id": "e16",
        "text": "Threat"
       },
       {
-       "id": "e16",
+       "id": "e17",
        "text": "Link",
        "detail": [
-        "“....that competitors from Eastern Europe had invested heavily in"
+        "“....that competitors from Eastern Europe had invested heavily in",
+        "Information and Communications Technology (ICT).”"
        ]
-      },
-      {
-       "id": "e17",
-       "text": "Information and Communications Technology (ICT).”"
       }
      ],
      "lifted": "geometry"
@@ -75590,19 +75501,14 @@
         "If you reject the offer of mediation your complaint will go to",
         "investigation handled by an Equality Officer. Investigation is also held in",
         "private. At the end of the investigation the Tribunal Equality Officer will",
-        "issue a decision which is legally binding but it may be appealed by either"
+        "issue a decision which is legally binding but it may be appealed by either",
+        "party to the Labour Court within 42 days.",
+        "All decisions by law must be published but in sensitive cases names may",
+        "be withheld."
        ]
       },
       {
        "id": "e5",
-       "text": "party to the Labour Court within 42 days."
-      },
-      {
-       "id": "e6",
-       "text": "All decisions by law must be published but in sensitive cases names may be withheld."
-      },
-      {
-       "id": "e7",
        "text": "Evaluation required"
       }
      ],
@@ -76139,14 +76045,6 @@
      "items": [
       {
        "id": "e1",
-       "text": "Discuss how a business could operate in an environmentally conscious way."
-      },
-      {
-       "id": "e2",
-       "text": "Sample responses include the following:"
-      },
-      {
-       "id": "e3",
        "text": "Cleaner production methods/materials substitution/energy efficiency",
        "detail": [
         "(this can include switching to renewable energy sources). The product",
@@ -76173,28 +76071,28 @@
        ]
       },
       {
-       "id": "e4",
+       "id": "e2",
        "text": "Other acceptable points:",
        "detail": [
         "Regular environmental audits/Advice from the EPA (Enviromental"
        ]
       },
       {
-       "id": "e5",
+       "id": "e3",
        "text": "Protection Agency)/Promotion of environmental issues (rewarding",
        "detail": [
         "“Green” initiatives) etc."
        ]
       },
       {
-       "id": "e6",
+       "id": "e4",
        "text": "OR",
        "detail": [
         "(Focus on qualities of an environmentally conscious business)"
        ]
       },
       {
-       "id": "e7",
+       "id": "e5",
        "text": "Consult/advice-consult stakeholders before introducing policies that",
        "detail": [
         "might affect the environment.",
@@ -76203,7 +76101,7 @@
        ]
       },
       {
-       "id": "e8",
+       "id": "e6",
        "text": "Aware/promote environmental awareness amongst staff through",
        "detail": [
         "adequate training, which will require resources.",
@@ -77484,14 +77382,18 @@
      "items": [
       {
        "id": "e1",
-       "text": "SALES"
+       "text": "PRODUCT LIFE CYCLE"
       },
       {
        "id": "e2",
-       "text": "Introduction Growth Maturity Saturation Decline"
+       "text": "SALES"
       },
       {
        "id": "e3",
+       "text": "Introduction Growth Maturity Saturation Decline"
+      },
+      {
+       "id": "e4",
        "text": "TIME"
       }
      ],
@@ -77702,17 +77604,10 @@
         "Saturation: Sales begin to slow down and intensive advertising and",
         "promotion take place to maintain market share. Brand loyalty is vital at",
         "this stage. The big mobile phone companies spend millions of dollars",
-        "each year on advertising and promotion. According to Reuters, Samsung"
-       ]
-      },
-      {
-       "id": "e2",
-       "text": "spent an estimated $14 billion on marketing in 2013."
-      },
-      {
-       "id": "e3",
-       "text": "Sales slowing down as market saturated / Costs up (Advertising & Sales promotion)/ Prices may fall to encourage consumption.",
-       "detail": [
+        "each year on advertising and promotion. According to Reuters, Samsung",
+        "spent an estimated $14 billion on marketing in 2013.",
+        "Sales slowing down as market saturated / Costs up (Advertising & Sales",
+        "promotion)/ Prices may fall to encourage consumption.",
         "Decline: Sales and profits begin to fall and there may be an effort made",
         "to extent the product life or to re-launch the product in a new market. For",
         "example Smartphone technology lead to the demise of the Nokia",
@@ -78373,14 +78268,8 @@
        "text": "Indemnity: An insured person cannot make a profit from an insurance claim i.e. insurance can at best put an insured person in the same financial position as they were prior to a loss occurring. If a car is written",
        "detail": [
         "off in an accident the insured receives its replacement value and not the",
-        "original sum paid for it."
-       ]
-      },
-      {
-       "id": "e2",
-       "text": "Insurable Interest:",
-       "detail": [
-        "The insured must gain from the existence of the",
+        "original sum paid for it.",
+        "Insurable Interest: The insured must gain from the existence of the",
         "exposure unit and suffer from its loss. You can insure your own car but",
         "not your neighbours. In essence you can't insure something unless you",
         "have a vested interest in it.",
@@ -78562,8 +78451,13 @@
         "programmes already provided.",
         "Feedback: It provides an opportunity for employees to give and receive",
         "feedback, which may improve the employee’s job",
-        "satisfaction/motivation.",
-        "Evaluate the performance of management and employees: The goals set",
+        "satisfaction/motivation."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "The goals set",
+       "detail": [
         "the previous year and the employee’s achievements during the year are",
         "discussed and reviewed/ problem areas identified. Priorities and goals are",
         "set by mutual consent for the following year providing clarity for the",
@@ -78676,13 +78570,11 @@
         "It will help Amrod Ltd identify periods of time in the future when the",
         "business will have an excess of expenditure over income i.e. a deficit and",
         "then take corrective action/assess the best methods to deal with the cash",
-        "scarce resources",
-        "shortfall/ Enable Amrod Ltd to use its more",
+        "shortfall/ Enable Amrod Ltd to use its scarce resources more",
         "effectively.",
         "It will help Amrod Ltd identify periods of time in the future when the",
         "business will have a surplus of income over expenditure. Amrod Ltd can",
-        "surplus funds",
-        "then make plans to place these on deposit with a financial",
+        "then make plans to place these surplus funds on deposit with a financial",
         "institution or make expansion decisions.",
         "It will help Amrod Ltd gain access to finance from financial institutions",
         "as the cash flow forecast is an integral part of the business plan given to",
@@ -79068,7 +78960,87 @@
      45,
      46
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 45,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Product/Service",
+       "detail": [
+        "The item/service being sold plus anything related to how it is made,",
+        "packaged and named. The business needs to consider product/service",
+        "options, the after-sales service, warranties and servicing etc.",
+        "Product design (Functionality): the product must take account of",
+        "consumer legislation such as the Sale of Goods and Supply of Services",
+        "Act 1980 which puts a legislative onus on producers to manufacture",
+        "products or provide services that are of merchantable quality and fit for",
+        "the purpose intended. The product/service must do what it is expected to",
+        "do.",
+        "The product (service) that Kurve Ltd offers is designed as a ‘digital",
+        "Television service’."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Branding",
+       "detail": [
+        "Having a brand name makes it easier to distinguish the product/service",
+        "from competitor’s products/services. Branding can be used as a",
+        "marketing tool for advertising purposes. New products/services are easier",
+        "to introduce if the brand name is already well known. Brand names can",
+        "be registered to protect the owner so that no other firm can use that",
+        "name.",
+        "Branding helps buyers to identify a particular supplier’s goods/ services",
+        "and create and maintain their confidence in the performance of the brand",
+        "encouraging, brand loyalty."
+       ]
+      },
+      {
+       "id": "e3",
+       "text": "The brand name is “VISION”"
+      },
+      {
+       "id": "e4",
+       "text": "Price",
+       "detail": [
+        "Premium pricing/penetration pricing/cost-plus pricing.",
+        "Competition is very intense in the broadband /digital TV sector and this",
+        "will influence the price to be charged. Decisions on price affect the",
+        "viability of the brand and the profitability of the business, so great care is",
+        "needed when deciding on the price to charge. Consumers may use price as",
+        "a judge of quality/therefore one must be cautious around low prices.",
+        "The pricing strategy that Kurve Ltd has opted for is a low pricing strategy",
+        "called penetration pricing in order to capture market share as quickly as",
+        "possible.",
+        "“It charges a reduced subscription for the first six months to new",
+        "customers.”",
+        "“Providing different bundles of channels at different prices.”"
+       ]
+      },
+      {
+       "id": "e5",
+       "text": "Place",
+       "detail": [
+        "The place element is about distributing the right product/service to the",
+        "customer at the right place and at the right time. The most suitable",
+        "channel of distribution must be used.",
+        "Selling Direct /selling online is convenient for the consumer and cuts out",
+        "the costs associated with intermediaries/no retailer margin being involved",
+        "in the distribution process. It brings the organisation closer to the",
+        "customer. Companies can advertise and sell their products on line using a",
+        "company web site. Consumers place orders on line and the service is",
+        "provided or in the case of physical goods the products are delivered using",
+        "the postal system or a courier delivery service.",
+        "The channel of distribution chosen by Kurve Ltd to get its product to the",
+        "‘Orders can be placed directly on",
+        "market place is the direct channel as,",
+        "line’-is direct to the consumer via the internet."
+       ]
+      }
+     ],
+     "lifted": "slice"
+    }
    }
   },
   {
@@ -79494,10 +79466,6 @@
         "e.g Cars to suit different life styles (hybrid an economically efficient and",
         "environmentally friendly car) /sports gear etc."
        ]
-      },
-      {
-       "id": "e4",
-       "text": "END"
       }
      ],
      "lifted": "geometry"
@@ -79636,7 +79604,25 @@
      5,
      15
     ],
-    "markingGuideNote": "Use the official answer key and cumulative 4 + 3 + 3 sequence."
+    "markingGuideNote": "Use the official answer key and cumulative 4 + 3 + 3 sequence.",
+    "expected": {
+     "page": 15,
+     "items": [
+      {
+       "id": "e1",
+       "text": "European Commission"
+      },
+      {
+       "id": "e2",
+       "text": "European Parliament"
+      },
+      {
+       "id": "e3",
+       "text": "Council of EU"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -80024,14 +80010,18 @@
      "items": [
       {
        "id": "e1",
-       "text": "Debt Capital: Share Capital + Reserves"
+       "text": "Debt: Equity Ratio"
       },
       {
        "id": "e2",
-       "text": "700,000:220,000 + 130,000"
+       "text": "Debt Capital: Share Capital + Reserves"
       },
       {
        "id": "e3",
+       "text": "700,000:220,000 + 130,000"
+      },
+      {
+       "id": "e4",
        "text": "700,000:350,000 = 2:1"
       }
      ],
@@ -80862,7 +80852,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "IDA (Industrial Development Authority)"
+       "text": "✓ Solas (Formerly known as FÁS)"
       }
      ],
      "lifted": "geometry"
@@ -81021,7 +81011,26 @@
      5,
      13
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 13,
+     "items": [
+      {
+       "id": "e1",
+       "text": "This is the granting of a licence by the franchisor to the franchisee allowing the right to supply and sell its product or service. The franchisee uses the name and logo of the franchisor. The fee for the licence is expensive and a",
+       "detail": [
+        "percentage of sales/royalties/profits must be paid annually. The franchisee",
+        "has the benefit of renting a well-established business name and a proven",
+        "idea."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Examples: Supermac’s, Costa Coffee, Starbucks, KFC."
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -81313,7 +81322,56 @@
      5,
      10
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Gross Pay 30,000"
+      },
+      {
+       "id": "e2",
+       "text": "Deductions"
+      },
+      {
+       "id": "e3",
+       "text": "PAYE (20% of €30,000) 6000"
+      },
+      {
+       "id": "e4",
+       "text": "- Tax Credit 3200"
+      },
+      {
+       "id": "e5",
+       "text": "Net PAYE 2,800"
+      },
+      {
+       "id": "e6",
+       "text": "PRSI (4% of €30,000) (i) 1,200"
+      },
+      {
+       "id": "e7",
+       "text": "USC (3% of €30,000) (ii) 900"
+      },
+      {
+       "id": "e8",
+       "text": "Total Deductions (iii) 4,900"
+      },
+      {
+       "id": "e9",
+       "text": "Net Annual Take Home Pay (iv) 25,100"
+      },
+      {
+       "id": "e10",
+       "text": "Show Workings Show Workings",
+       "detail": [
+        "PRSI 30,000 x 4 / 100 = 1,200 USC 30,000 x 3 / 100 = 900"
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -81459,11 +81517,11 @@
       },
       {
        "id": "e2",
-       "text": "Name the method of visual communication presented. Bar Chart"
+       "text": "Bar Chart"
       },
       {
        "id": "e3",
-       "text": "(i) Identify the month with the highest projected sales. January"
+       "text": "January"
       },
       {
        "id": "e4",
@@ -81606,7 +81664,21 @@
      5,
      11
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 11,
+     "items": [
+      {
+       "id": "e1",
+       "text": "POWER DECISIONS TARGETS",
+       "detail": [
+        "Employee Empowerment provides staff with more POWER",
+        "to make their own DECISIONS about how to do their jobs."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -91246,7 +91318,41 @@
      11,
      41
     ],
-    "markingGuideNote": "Use the published diagram and the separate calculations-only ceiling. The changed cost line TC2 and BE2 in the scheme diagram belong to Part C(i), not this 25-mark task."
+    "markingGuideNote": "Use the published diagram and the separate calculations-only ceiling. The changed cost line TC2 and BE2 in the scheme diagram belong to Part C(i), not this 25-mark task.",
+    "expected": {
+     "page": 41,
+     "items": [
+      {
+       "id": "e1",
+       "text": "BEP = Fixed Costs /Contribution = 400,000/30-20 = 40,000 units"
+      },
+      {
+       "id": "e2",
+       "text": "Margin of Safety = 60,000-40,000 = 20,000 units"
+      },
+      {
+       "id": "e3",
+       "text": "Profit at Forecast output = 1,800,000 – 1,600,000 = €200,000 Units Selling Variable Fixed Total Total Profit/loss"
+      },
+      {
+       "id": "e4",
+       "text": "Price Costs Costs Costs Revenue"
+      },
+      {
+       "id": "e5",
+       "text": "0 30 20 400,000 400,000 0 (400,000)"
+      },
+      {
+       "id": "e6",
+       "text": "40,000 30 20 400,000 1,200,000 1,200,000 0"
+      },
+      {
+       "id": "e7",
+       "text": "60,000 30 20 400,000 1,600,000 1,800,000 200,000"
+      }
+     ],
+     "lifted": "slice"
+    }
    }
   },
   {
@@ -92292,13 +92398,6 @@
         "The reward for money saved/invested over a period of time",
         "expressed as a % of amount invested."
        ]
-      },
-      {
-       "id": "e3",
-       "text": "Palace Cinema Ltd.",
-       "detail": [
-        "(SUPPORT NOTES)"
-       ]
       }
      ],
      "lifted": "geometry"
@@ -92585,7 +92684,33 @@
      5,
      15
     ],
-    "markingGuideNote": "Use the official answer key and the 2017 cumulative sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the 2017 cumulative sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 15,
+     "items": [
+      {
+       "id": "e1",
+       "text": "A. 25,000"
+      },
+      {
+       "id": "e2",
+       "text": "B. (3,000)"
+      },
+      {
+       "id": "e3",
+       "text": "C. 11,000"
+      },
+      {
+       "id": "e4",
+       "text": "D. 5,000"
+      },
+      {
+       "id": "e5",
+       "text": "E. 16,000"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -93340,7 +93465,29 @@
      4,
      10
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Apple buys Beats by Dr Dre for $3bn. — Takeover"
+      },
+      {
+       "id": "e2",
+       "text": "Avonmore Foods plc and Waterford Foods plc joined forces to form Glanbia plc — Merger"
+      },
+      {
+       "id": "e3",
+       "text": "Irish grocery retailer SuperValu has announced a new partnership with Bank of Ireland as part of its ‘Real Rewards’ loyalty programme. — Strategic Alliance"
+      },
+      {
+       "id": "e4",
+       "text": "The Zip Yard have expanded by allowing other parties to use the business model and trademark in exchange for a fee and a percentage of profits. — Franchise"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "additionalTopicIds": [
     "business-5-14"
@@ -93398,15 +93545,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "✓"
-      },
-      {
-       "id": "e2",
-       "text": "Secret Ballot"
-      },
-      {
-       "id": "e3",
-       "text": "Work to rule"
+       "text": "✓ Secret Ballot"
       }
      ],
      "lifted": "geometry"
@@ -93578,7 +93717,30 @@
      4,
      10
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Businesses and people buying physical products from foreign countries.",
+       "detail": [
+        "Money leaves the importing country.",
+        "e.g. An Irish supermarket buying fruit from Spain.",
+        "A student importing a Debs dress from America."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Businesses selling services from one country to other foreign countries/to customers in other countries. Money comes in to the exporting country.",
+       "detail": [
+        "e.g. An Irish PR company selling its service to a business in the UK.",
+        "American tourists staying in an Irish Hotel in Cork."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -93715,7 +93877,33 @@
      4,
      11
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 11,
+     "items": [
+      {
+       "id": "e1",
+       "text": "1 — E"
+      },
+      {
+       "id": "e2",
+       "text": "2 — F"
+      },
+      {
+       "id": "e3",
+       "text": "3 — D"
+      },
+      {
+       "id": "e4",
+       "text": "4 — B"
+      },
+      {
+       "id": "e5",
+       "text": "5 — C"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -94162,18 +94350,11 @@
       },
       {
        "id": "e2",
-       "text": "99,000 x 100 = 45% (ii) 55,000 x 100 = 25% (4+1)"
+       "text": "99,000 x 100 = 45% (ii) 55,000 x 100 = 25%"
       },
       {
        "id": "e3",
-       "text": "220,000 1 220,000 1 +"
-      },
-      {
-       "id": "e4",
-       "text": "(4+1) 1m for correct answer. 1m for correct answer.",
-       "detail": [
-        "4m for workings. 4m for workings."
-       ]
+       "text": "220,000 1 220,000 1"
       }
      ],
      "lifted": "geometry"
@@ -94715,12 +94896,9 @@
         "criteria have been met. It is not repaid by the business once",
         "the conditions have been fulfilled.",
         "The marketing and finance team accessed a substantial",
-        "grant under the Government’s ‘Town and Village Renewal"
+        "grant under the Government’s ‘Town and Village Renewal",
+        "Scheme.’"
        ]
-      },
-      {
-       "id": "e9",
-       "text": "Scheme.’"
       }
      ]
     }
@@ -99273,7 +99451,17 @@
      7,
      24
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 24,
+     "items": [
+      {
+       "id": "e1",
+       "text": "This document shows details of the position/vacancy to be filled, including the job title, work details, duties and responsibilities of the job, conditions of employment and place of work."
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -99337,7 +99525,62 @@
      7,
      24
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 24,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Sample Job Description: (Answers may vary)",
+       "detail": [
+        "Vacancy at Máire de Paor’s new app business:"
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Job title: Sales Manager"
+      },
+      {
+       "id": "e3",
+       "text": "Work details:"
+      },
+      {
+       "id": "e4",
+       "text": "Marketing and advertising our app",
+       "detail": [
+        "Duties & Responsibilities: throughout Ireland. Ensuring it is kept",
+        "up-to-date."
+       ]
+      },
+      {
+       "id": "e5",
+       "text": "Conditions of employment:",
+       "detail": [
+        "38 hours per week. Weekend work"
+       ]
+      },
+      {
+       "id": "e6",
+       "text": "Contracted hours:",
+       "detail": [
+        "required."
+       ]
+      },
+      {
+       "id": "e7",
+       "text": "Salary: €25,000 p.a. plus commission"
+      },
+      {
+       "id": "e8",
+       "text": "Place of work: Head Office in Athlone."
+      },
+      {
+       "id": "e9",
+       "text": "Responsible to: Máire de Paor"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -103761,20 +104004,33 @@
      "items": [
       {
        "id": "e1",
-       "text": "REPORT ON THE DATA PROTECTION OBLIGATIONS",
-       "detail": [
-        "OF BECTIVE MANOR (1m)",
-        "To: Mr Richard Daly, Managing Director(1m)",
-        "From: Ms Emer Kelly, Data Protection Officer (1m) Layout 6m",
-        "Date: 15 June 2017 (1m)",
-        "compulsory",
-        "Terms of Reference (1m) headings at",
-        "To outline the obligations of Bective Manor under the Data Protection 1m each",
-        "Acts 1988 and 2003."
-       ]
+       "text": "REPORT ON THE DATA PROTECTION OBLIGATIONS"
       },
       {
        "id": "e2",
+       "text": "OF BECTIVE MANOR",
+       "detail": [
+        "To: Mr Richard Daly, Managing Director(1m)",
+        "From: Ms Emer Kelly, Data Protection Officer Layout"
+       ]
+      },
+      {
+       "id": "e3",
+       "text": "Date: 15 June 2017"
+      },
+      {
+       "id": "e4",
+       "text": "Terms of Reference headings at",
+       "detail": [
+        "To outline the obligations of Bective Manor under the Data Protection each"
+       ]
+      },
+      {
+       "id": "e5",
+       "text": "Acts 1988 and 2003."
+      },
+      {
+       "id": "e6",
        "text": "Introduction",
        "detail": [
         "Data protection is the means by which the privacy rights of individuals",
@@ -103792,57 +104048,54 @@
        ]
       },
       {
-       "id": "e3",
-       "text": "Obtain and process data fairly and openly 3 relevant"
-      },
-      {
-       "id": "e4",
-       "text": "Keep data only for one or more specified, explicit and lawful points purposes"
-      },
-      {
-       "id": "e5",
-       "text": "Use and disclose data only in ways compatible with explicit and lawful purposes"
-      },
-      {
-       "id": "e6",
-       "text": "Keep data safe and secure/protected against unauthorised access"
-      },
-      {
        "id": "e7",
-       "text": "Keep data accurate, complete and up-to-date/keep a register of data kept"
+       "text": "Obtain and process data fairly and openly relevant"
       },
       {
        "id": "e8",
-       "text": "Ensure that data is adequate, relevant and not excessive"
+       "text": "Keep data only for one or more specified, explicit and lawful purposes"
       },
       {
        "id": "e9",
-       "text": "Retain data for no longer than is necessary for the purpose or purposes"
+       "text": "Use and disclose data only in ways compatible with explicit and lawful purposes"
       },
       {
        "id": "e10",
-       "text": "Provide copy of personal data to the individual, on request."
+       "text": "Keep data safe and secure/protected against unauthorised access"
       },
       {
        "id": "e11",
-       "text": "Signed:"
+       "text": "Keep data accurate, complete and up-to-date/keep a register of data kept"
       },
       {
        "id": "e12",
+       "text": "Ensure that data is adequate, relevant and not excessive"
+      },
+      {
+       "id": "e13",
+       "text": "Retain data for no longer than is necessary for the purpose or purposes"
+      },
+      {
+       "id": "e14",
+       "text": "Signed:"
+      },
+      {
+       "id": "e15",
        "text": "Emer Kelly",
        "detail": [
         "______________"
        ]
       },
       {
-       "id": "e13",
+       "id": "e16",
        "text": "Emer Kelly"
       },
       {
-       "id": "e14",
+       "id": "e17",
        "text": "Data Protection Officer"
       }
-     ]
+     ],
+     "lifted": "geometry"
     }
    },
    "additionalTopicIds": [
@@ -105205,7 +105458,17 @@
      12,
      48
     ],
-    "markingGuideNote": "Each formula and credited figure earns 1 mark. The Debt/Equity answer earns 2 marks; the other final answers earn 1 mark each."
+    "markingGuideNote": "Each formula and credited figure earns 1 mark. The Debt/Equity answer earns 2 marks; the other final answers earn 1 mark each.",
+    "expected": {
+     "page": 48,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Debt Equity Ratio: 1.1:1"
+      }
+     ],
+     "lifted": "slice"
+    }
    }
   },
   {
@@ -107144,22 +107407,18 @@
       },
       {
        "id": "e2",
-       "text": "2+2+2+2+2"
-      },
-      {
-       "id": "e3",
        "text": "B. 400,000"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "C. 760,000"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "D. 600,000"
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "E. (360,000)"
       }
      ],
@@ -108000,59 +108259,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Statement Strategic Tactical Mission Contingency",
-       "detail": [
-        "Ben & Jerry’s aim is to create",
-        "linked prosperity for everyone"
-       ]
+       "text": "Ben & Jerry’s aim is to create linked prosperity for everyone connected to their business: suppliers, farmers, franchisees, customers and neighbours. — Mission Statement"
       },
       {
        "id": "e2",
-       "text": "✓ — Statement"
+       "text": "Ben & Jerry’s aim is to continue expanding its product range and its locations over the next 10 years. — Strategic Plan"
       },
       {
        "id": "e3",
-       "text": "connected to their business:",
-       "detail": [
-        "suppliers, farmers, franchisees,",
-        "customers and neighbours.",
-        "Ben & Jerry’s aim is to continue"
-       ]
+       "text": "Ben & Jerry’s will switch to non- dairy sources for their ice- creams in the event of a milk shortage. — Contingency Plan"
       },
       {
        "id": "e4",
-       "text": "expanding its product range and — Plan"
-      },
-      {
-       "id": "e5",
-       "text": "its locations over the next 10"
-      },
-      {
-       "id": "e6",
-       "text": "years.",
-       "detail": [
-        "Ben & Jerry’s will switch to non-"
-       ]
-      },
-      {
-       "id": "e7",
-       "text": "dairy sources for their ice- — Plan"
-      },
-      {
-       "id": "e8",
-       "text": "creams in the event of a milk shortage."
-      },
-      {
-       "id": "e9",
-       "text": "Ben & Jerry’s will expand its"
-      },
-      {
-       "id": "e10",
-       "text": "✓ — Plan"
-      },
-      {
-       "id": "e11",
-       "text": "vegan range of ice-cream in the next 6 months."
+       "text": "Ben & Jerry’s will expand its vegan range of ice-cream in the next 6 months. — Tactical Plan"
       }
      ],
      "lifted": "geometry"
@@ -108536,11 +108755,11 @@
       },
       {
        "id": "e2",
-       "text": "PRSI €2,800 (70,000 x 4 / 100) +"
+       "text": "PRSI €2,800 (70,000 x 4 / 100)"
       },
       {
        "id": "e3",
-       "text": "USC €2,100 (70,000 x 3 / 100) +"
+       "text": "USC €2,100 (70,000 x 3 / 100)"
       },
       {
        "id": "e4",
@@ -111456,7 +111675,17 @@
      6,
      15
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 15,
+     "items": [
+      {
+       "id": "e1",
+       "text": "16%"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "additionalTopicIds": [
     "business-6-14"
@@ -113521,37 +113750,38 @@
      "items": [
       {
        "id": "e1",
-       "text": "Working Capital Ratio",
-       "detail": [
-        "Current Assets : Current Liabilities 3"
-       ]
+       "text": "Working Capital Ratio"
       },
       {
        "id": "e2",
-       "text": "= 84,000 : 42,000 4"
+       "text": "Current Assets : Current Liabilities"
       },
       {
        "id": "e3",
-       "text": "= 2 : 1 2"
+       "text": "= 84,000 : 42,000"
       },
       {
        "id": "e4",
-       "text": "Acid Test Ratio",
-       "detail": [
-        "(Current Assets – Closing Stock) : Current Liabilities 3"
-       ]
+       "text": "= 2 : 1"
       },
       {
        "id": "e5",
-       "text": "= (84,000 – 14,000) : 42,000 6"
+       "text": "Acid Test Ratio",
+       "detail": [
+        "(Current Assets – Closing Stock) : Current Liabilities"
+       ]
       },
       {
        "id": "e6",
-       "text": "[= 70,000 : 42,000]"
+       "text": "= (84,000 – 14,000) : 42,000"
       },
       {
        "id": "e7",
-       "text": "= 1.66 : 1 2"
+       "text": "[= 70,000 : 42,000]"
+      },
+      {
+       "id": "e8",
+       "text": "= 1.66 : 1"
       }
      ],
      "lifted": "geometry"
@@ -113992,11 +114222,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "Provide Information:",
-       "detail": [
-        "Packaging will provide important information such as the ingredients,",
-        "instructions, sell-by date, warnings."
-       ]
+       "text": "Packaging will provide important information such as the ingredients, instructions, sell-by date, warnings."
       },
       {
        "id": "e2",
@@ -116830,7 +117056,96 @@
      40,
      41
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 40,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Yes/Maybe"
+      },
+      {
+       "id": "e2",
+       "text": "Reduction of transaction costs in trade – trade can occur without changing currency."
+      },
+      {
+       "id": "e3",
+       "text": "Easier for companies to locate here – Companies can locate in Ireland and have the same currency as much of Europe."
+      },
+      {
+       "id": "e4",
+       "text": "Reduction in price discrimination – If goods are priced in a single currency it should be much harder to disguise price differences across countries."
+      },
+      {
+       "id": "e5",
+       "text": "Reduction in foreign exchange rate variability-the reduction in uncertainty arising from the removal of exchange rate fluctuations may affect investment in the economy. Large exporting firms, facing less uncertainty",
+       "detail": [
+        "concerning receipts from its exports are able to plan for",
+        "their future with less risk so investment projects such as",
+        "building new factories appear less risky."
+       ]
+      },
+      {
+       "id": "e6",
+       "text": "Tourism industry. – It is easier for foreign visitors to holiday in Ireland resulting in higher revenues for the Irish services sector such as hotels, transport, and",
+       "detail": [
+        "entertainment."
+       ]
+      },
+      {
+       "id": "e7",
+       "text": "Easier for Irish business to expand into Europe as all transactions can be conducted in Euro"
+      },
+      {
+       "id": "e8",
+       "text": "Stable interest rates as they are only changed by the ECB"
+      },
+      {
+       "id": "e9",
+       "text": "Easier to access capital from banks across Europe."
+      },
+      {
+       "id": "e10",
+       "text": "Low inflation and price stability"
+      },
+      {
+       "id": "e11",
+       "text": "No/Maybe"
+      },
+      {
+       "id": "e12",
+       "text": "Ireland’s biggest trading partner (UK) did not join EMU so in a lot of cases, transaction costs still remain."
+      },
+      {
+       "id": "e13",
+       "text": "Loss of its independent monetary policy-Ireland gave up its national currency and therefore its freedom to set its own monetary policy which is now set and implemented",
+       "detail": [
+        "by the ECB."
+       ]
+      },
+      {
+       "id": "e14",
+       "text": "Single Monetary Policy. Ireland can no longer use monetary policy to adjust its interest rate."
+      },
+      {
+       "id": "e15",
+       "text": "More competition. There is more competition between Irish business and foreign firms/ Consumers are spending more online."
+      },
+      {
+       "id": "e16",
+       "text": "Loss of sovereignty. Ireland no longer has its own currency. It is reliant on the euro and policies of the eurozone."
+      },
+      {
+       "id": "e17",
+       "text": "Strict criteria for eligibility-(budget deficit, debt-to-GDP, low inflation, interest rates close to EU average)."
+      },
+      {
+       "id": "e18",
+       "text": "Greater vulnerability to external shocks."
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -119097,7 +119412,11 @@
      "items": [
       {
        "id": "e1",
-       "text": "The total amount of USC (iv) Ben’s net annual take home pay"
+       "text": "The total amount of USC"
+      },
+      {
+       "id": "e2",
+       "text": "Ben’s net annual take home pay"
       }
      ],
      "lifted": "geometry"
@@ -119214,7 +119533,33 @@
      12,
      56
     ],
-    "markingGuideNote": "Use the scheme’s exact 0/1/2 result awards. The shared taxable-income setup marks are not repeated here."
+    "markingGuideNote": "Use the scheme’s exact 0/1/2 result awards. The shared taxable-income setup marks are not repeated here.",
+    "expected": {
+     "page": 56,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Gross Pay 55,000 Annual Net Pay."
+      },
+      {
+       "id": "e2",
+       "text": "PAYE 13,720"
+      },
+      {
+       "id": "e3",
+       "text": "USC 2137.09"
+      },
+      {
+       "id": "e4",
+       "text": "PRSI 2,400 (18257.09)"
+      },
+      {
+       "id": "e5",
+       "text": "Net Annual Take home Pay 36,742.91"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -120335,7 +120680,17 @@
      5,
      17
     ],
-    "markingGuideNote": "Read the chart’s scale and show the subtraction."
+    "markingGuideNote": "Read the chart’s scale and show the subtraction.",
+    "expected": {
+     "page": 17,
+     "items": [
+      {
+       "id": "e1",
+       "text": "270,000 – 240,000 = €30,000"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -121101,7 +121456,17 @@
      5,
      16
     ],
-    "markingGuideNote": "Retain the € and billion scale from the infographic. Each of the four published calculation marks is counted once."
+    "markingGuideNote": "Retain the € and billion scale from the infographic. Each of the four published calculation marks is counted once.",
+    "expected": {
+     "page": 16,
+     "items": [
+      {
+       "id": "e1",
+       "text": "(122 - 79) = €43bn surplus"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -122495,22 +122860,18 @@
      "items": [
       {
        "id": "e1",
-       "text": "Circle the correct option in the case of each of the following statements."
-      },
-      {
-       "id": "e2",
        "text": "legal agreement"
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "consideration"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "legality of form"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "do not"
       }
      ]
@@ -122676,39 +123037,15 @@
      "items": [
       {
        "id": "e1",
-       "text": "This leader discusses and consults"
+       "text": "This leader discusses and consults with staff when making decisions. — DEMOCRATIC"
       },
       {
        "id": "e2",
-       "text": "✓ — AUTORCRATIC DEMOCRATIC LAISSEZ - FAIRE"
+       "text": "This leader does not discuss and consult with staff when making decisions. — AUTORCRATIC"
       },
       {
        "id": "e3",
-       "text": "with staff when making decisions."
-      },
-      {
-       "id": "e4",
-       "text": "This leader does not discuss and"
-      },
-      {
-       "id": "e5",
-       "text": "✓ — AUTORCRATIC DEMOCRATIC LAISSEZ - FAIRE"
-      },
-      {
-       "id": "e6",
-       "text": "consult with staff when making decisions."
-      },
-      {
-       "id": "e7",
-       "text": "The leader gives her/his staff"
-      },
-      {
-       "id": "e8",
-       "text": "✓ — AUTORCRATIC DEMOCRATIC LAISSEZ - FAIRE"
-      },
-      {
-       "id": "e9",
-       "text": "freedom to make their own decisions."
+       "text": "The leader gives her/his staff freedom to make their own decisions. — LAISSEZ"
       }
      ],
      "lifted": "geometry"
@@ -124915,7 +125252,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "A Multinational Company (MNC) is a company with a base/headquarters in one country and several branches in other + countries throughout the world."
+       "text": "A Multinational Company (MNC) is a company with a base/headquarters in one country and several branches in other countries throughout the world."
       }
      ],
      "lifted": "geometry"
@@ -125018,11 +125355,11 @@
      "items": [
       {
        "id": "e1",
-       "text": "Access to EU markets: free trade to other EU member states. Access to + market of over 500 million EU citizens will increase sales and profits."
+       "text": "Access to EU markets: free trade to other EU member states. Access to market of over 500 million EU citizens will increase sales and profits."
       },
       {
        "id": "e2",
-       "text": "Low Corporation Tax (12.5%): Multinational companies attracted by + the low rate of tax on profits. Ireland has a lower corporation tax rate on company profits than France, Germany, United Kingdom etc."
+       "text": "Low Corporation Tax (12.5%): Multinational companies attracted by the low rate of tax on profits. Ireland has a lower corporation tax rate on company profits than France, Germany, United Kingdom etc."
       },
       {
        "id": "e3",
@@ -132598,7 +132935,25 @@
      11,
      41
     ],
-    "markingGuideNote": "Each printed one-mark figure is credited once. The Current Ratio task is 7 marks and the Acid Test task is 9; together they preserve the published 16 marks."
+    "markingGuideNote": "Each printed one-mark figure is credited once. The Current Ratio task is 7 marks and the Acid Test task is 9; together they preserve the published 16 marks.",
+    "expected": {
+     "page": 41,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Acid Test CA-Stock/CL"
+      },
+      {
+       "id": "e2",
+       "text": "2017 2018"
+      },
+      {
+       "id": "e3",
+       "text": "40,000-10,000:20,000 = 1.5:1 62,500-42,500:25,000 = 0.8:1"
+      }
+     ],
+     "lifted": "slice"
+    }
    }
   },
   {
@@ -132713,7 +133068,25 @@
      11,
      41
     ],
-    "markingGuideNote": "Each printed one-mark figure is credited once. The Current Ratio task is 7 marks and the Acid Test task is 9; together they preserve the published 16 marks."
+    "markingGuideNote": "Each printed one-mark figure is credited once. The Current Ratio task is 7 marks and the Acid Test task is 9; together they preserve the published 16 marks.",
+    "expected": {
+     "page": 41,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Current Ratio CA/CL"
+      },
+      {
+       "id": "e2",
+       "text": "2017 2018"
+      },
+      {
+       "id": "e3",
+       "text": "40,000:20,000 = 2:1 62,500:25,000 = 2.5:1"
+      }
+     ],
+     "lifted": "slice"
+    }
    }
   },
   {
@@ -134535,7 +134908,20 @@
      5,
      20
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 20,
+     "items": [
+      {
+       "id": "e1",
+       "text": "When an item is underinsured, the insured person does not receive the full amount of compensation under the average clause rule. There would also be a breach of indemnity as the insured",
+       "detail": [
+        "person would make a financial gain."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -135197,7 +135583,6 @@
        "id": "e1",
        "text": "An indigenous firm is an Irish/native locally based business that has been established and is owned/managed by Irish residents. They produce goods and services in Ireland. The owners have a direct",
        "detail": [
-        "(3+2)",
         "personal interest in the survival and growth of the firm. Its principal",
         "place of business is in Ireland.",
         "e.g. The Dough Bros, Eason’s, SuperValu are examples of Irish based",
@@ -136030,7 +136415,29 @@
      4,
      11
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 11,
+     "items": [
+      {
+       "id": "e1",
+       "text": "A strategic plan is a long-term plan for a business. — True"
+      },
+      {
+       "id": "e2",
+       "text": "A mission statement sets out the overall purpose of the business. — True"
+      },
+      {
+       "id": "e3",
+       "text": "A functional structure divides a business into different geographic locations. — False"
+      },
+      {
+       "id": "e4",
+       "text": "A matrix structure is a team-based structure. — True"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -136583,7 +136990,37 @@
      4,
      9
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 9,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Conducting a focus group where a group of consumers is brought together to discuss a product. — Field"
+      },
+      {
+       "id": "e2",
+       "text": "Observing consumer behaviour in a marketplace. — Field"
+      },
+      {
+       "id": "e3",
+       "text": "Researching magazines and newspapers. — Desk"
+      },
+      {
+       "id": "e4",
+       "text": "Conducting a survey where a business interviews a consumer directly. — Field"
+      },
+      {
+       "id": "e5",
+       "text": "Collecting information from"
+      },
+      {
+       "id": "e6",
+       "text": "Government publications such as those prepared by the Central Statistics Office (CSO). — Desk"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -136636,7 +137073,29 @@
      4,
      9
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 9,
+     "items": [
+      {
+       "id": "e1",
+       "text": "(i) Inflation refers to an increase / a decrease in the general level of prices from one year to the next. — an increase"
+      },
+      {
+       "id": "e2",
+       "text": "(ii) A rise in the employment rate results in an increase / a decrease in income tax received by the government. — an increase"
+      },
+      {
+       "id": "e3",
+       "text": "(iii) Lower interest rates mean the cost of borrowing is cheaper / more expensive. — cheaper"
+      },
+      {
+       "id": "e4",
+       "text": "(iv) If the euro (€) increases in value relative to the US Dollar ($), Irish products become cheaper / more expensive in the USA. — more expensive"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -136689,7 +137148,29 @@
      4,
      10
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Rolex charges a high price for its watches to portray an image of high quality. — Premium Pricing"
+      },
+      {
+       "id": "e2",
+       "text": "Lidl sells a litre of milk to consumers for €0.60 but purchased it from its suppliers for €0.65. — Loss Leader"
+      },
+      {
+       "id": "e3",
+       "text": "Spotify offers students 50% off its premium package. — Discriminatory Pricing"
+      },
+      {
+       "id": "e4",
+       "text": "Apple charges a high price at the launch stage of new iPhones and reduces the price over time. — Price Skimming"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -137748,7 +138229,188 @@
      26,
      27
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 25,
+     "items": [
+      {
+       "id": "e1",
+       "text": "HR Planning/Manpower Planning:"
+      },
+      {
+       "id": "e2",
+       "text": "This involves having the right people with the right skills in the right place at the right time throughout the business. It involves doing a human resource audit and estimating future human resource needs."
+      },
+      {
+       "id": "e3",
+       "text": "The HR Manager must audit present staff resources, forecast staff State needs, and then plan to either increase/decrease staff levels.",
+       "detail": [
+        "The Human Resources (HR) department of Medway Devices looked at the Link",
+        "need for staff for the new plant."
+       ]
+      },
+      {
+       "id": "e4",
+       "text": "OR",
+       "detail": [
+        "While many staff from the Irish plant will be relocated, the HR",
+        "department predicts they will need to recruit 120 staff within the next six",
+        "months."
+       ]
+      },
+      {
+       "id": "e5",
+       "text": "Recruitment/Selection:"
+      },
+      {
+       "id": "e6",
+       "text": "Recruitment and selection are concerned with finding or attracting the best potential candidates with the appropriate skills and then picking the most suitable candidates for employment."
+      },
+      {
+       "id": "e7",
+       "text": "The Human Resource Manager must draw up a job description and person specification and then advertise the position. The applicants must be screened (short-listed). Selection is usually by means of an",
+       "detail": [
+        "interview process.",
+        "While many staff from the Irish plant will be relocated, the HR",
+        "department predicts they will need to recruit 120 staff within the next six",
+        "months."
+       ]
+      },
+      {
+       "id": "e8",
+       "text": "OR",
+       "detail": [
+        "The department advertised on recruitment websites in a wide range of",
+        "countries to attract the best candidates for every position."
+       ]
+      },
+      {
+       "id": "e9",
+       "text": "OR",
+       "detail": [
+        "Interviews were conducted via Skype to facilitate international",
+        "applicants."
+       ]
+      },
+      {
+       "id": "e10",
+       "text": "OR",
+       "detail": [
+        "The HR team ensured all selection panels had a gender balance."
+       ]
+      },
+      {
+       "id": "e11",
+       "text": "Training/Development:"
+      },
+      {
+       "id": "e12",
+       "text": "Training is concerned with improving the employees’ ability to perform their job in an effective manner."
+      },
+      {
+       "id": "e13",
+       "text": "The company invests in training, leading to better knowledge and skills among employees. This results in better customer service and a better experience for customers."
+      },
+      {
+       "id": "e14",
+       "text": "Induction training helps new employees fit into the workplace (learn about the job/the policies/rules of the company etc). Other types of training include internal/external training."
+      },
+      {
+       "id": "e15",
+       "text": "Development prepares the employees for new responsibilities and greater challenges in the workplace. It helps employees self-actualise.",
+       "detail": [
+        "This is largely due to the HR department planning an induction",
+        "programme for new staff and organising training for existing staff who",
+        "will be relocating to Singapore."
+       ]
+      },
+      {
+       "id": "e16",
+       "text": "Performance Appraisal:"
+      },
+      {
+       "id": "e17",
+       "text": "This is the process of evaluating the performances, progress, contribution and effectiveness of an employee. It ensures high performance standards in the business, leading to organisational",
+       "detail": [
+        "success.",
+        "It provides for two-way communication and clarification of objectives/",
+        "feedback is provided for employees on performance to enable",
+        "improvements to be made."
+       ]
+      },
+      {
+       "id": "e18",
+       "text": "A meeting is held with the employees to review their progress and set targets for the future."
+      },
+      {
+       "id": "e19",
+       "text": "Regular reviews are vital to the performance appraisal process.",
+       "detail": [
+        "The quarterly staff appraisals at the Irish plant have been postponed."
+       ]
+      },
+      {
+       "id": "e20",
+       "text": "Rewarding:"
+      },
+      {
+       "id": "e21",
+       "text": "Rewarding employees is concerned with offering employees monetary and or non-monetary rewards for work well done. This can lead to a motivated workforce."
+      },
+      {
+       "id": "e22",
+       "text": "Rewards offered by the HR department may include wages, salaries, bonuses, benefit-in-kind, share options, pension plans, promotion etc."
+      },
+      {
+       "id": "e23",
+       "text": "The Human Resource Manager negotiates each employee’s remuneration package and keeps it under review."
+      },
+      {
+       "id": "e24",
+       "text": "Monetary and non-monetary rewards are used to satisfy the wide- ranging needs of the workforce.",
+       "detail": [
+        "The HR team have also been asked by Maria for suggestions on how to",
+        "retain their top employees."
+       ]
+      },
+      {
+       "id": "e25",
+       "text": "OR",
+       "detail": [
+        "The job advertisements highlighted the excellent salaries offered by the",
+        "business."
+       ]
+      },
+      {
+       "id": "e26",
+       "text": "Managing Industrial Relations"
+      },
+      {
+       "id": "e27",
+       "text": "A function of the HR department is to promote and maintain positive industrial relations in the organisation."
+      },
+      {
+       "id": "e28",
+       "text": "HR departments take a proactive approach to ensure positive industrial relations by attempting to maintain open communications with staff and develop grievance procedures."
+      },
+      {
+       "id": "e29",
+       "text": "This is to ensure issues are resolved quickly.",
+       "detail": [
+        "The HR team have also been asked by Maria for suggestions on how to",
+        "retain their top employees."
+       ]
+      },
+      {
+       "id": "e30",
+       "text": "OR",
+       "detail": [
+        "Staff find it difficult to approach Maria about issues."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -139344,11 +140006,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "16bn + 47bn + 90bn = €153bn 1+1+1+2"
-      },
-      {
-       "id": "e2",
-       "text": "20bn + 14bn + 55bn = €89bn 1+1+1+2"
+       "text": "16bn + 47bn + 90bn = €153bn"
       }
      ],
      "lifted": "geometry"
@@ -139428,7 +140086,17 @@
      5,
      17
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 17,
+     "items": [
+      {
+       "id": "e1",
+       "text": "20bn + 14bn + 55bn = €89bn"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -141411,7 +142079,29 @@
      6,
      23
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 23,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Person Specification: This describes the qualities that the successful candidate for the job should have. These would include academic qualifications, previous work experience, and",
+       "detail": [
+        "relevant personal characteristics and skills."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Reference:",
+       "detail": [
+        "Minimum of five years fashion retail experience/excellent",
+        "interpersonal and communication skills/a keen interest in",
+        "fashion/good leadership skills/ability to work as part of a team."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -141813,7 +142503,27 @@
      6,
      24
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 24,
+     "items": [
+      {
+       "id": "e1",
+       "text": "A Benefit in Kind (also known as a ‘perk’) is a non-financial reward given to an employee by their employer. It is usually given as an incentive to take up a position or to motivate staff. Benefit in Kind is",
+       "detail": [
+        "given to employees in addition to their wage/salary."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Examples: Company car, Company phone/tablet/laptop, health",
+       "detail": [
+        "insurance, gym membership, subsidised restaurant/free meals."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -149009,26 +149719,22 @@
      "items": [
       {
        "id": "e1",
-       "text": "3,2,2,2,1"
-      },
-      {
-       "id": "e2",
        "text": "WTO World Trade Organisation"
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "CAM Computer Aided Manufacturing"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "EDI Electronic Data Interchange"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "CAD Computer Aided Design"
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "JIT Just in Time"
       }
      ],
@@ -149747,7 +150453,41 @@
      4,
      17
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 17,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Net Profit x 100"
+      },
+      {
+       "id": "e2",
+       "text": "Capital employed 1"
+      },
+      {
+       "id": "e3",
+       "text": "72,000 x 100"
+      },
+      {
+       "id": "e4",
+       "text": "450,000 100,000"
+      },
+      {
+       "id": "e5",
+       "text": "+ + 26,000 1"
+      },
+      {
+       "id": "e6",
+       "text": "72,000 x 100 = 12.5%"
+      },
+      {
+       "id": "e7",
+       "text": "576,000 1"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate the Return on Investment (ROI) for the owners of Stylish Tile & Bath Ltd for 2020. Show your formula and your workings.",
@@ -150528,50 +151268,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Ryanair customers find it difficult"
+       "text": "Ryanair customers find it difficult to contact the airline. — WEAKNESS"
       },
       {
        "id": "e2",
-       "text": "✓ — WEAKNESS"
+       "text": "Wetter weather has impacted on the potato crop for Keogh’s crisps. — THREAT"
       },
       {
        "id": "e3",
-       "text": "to contact the airline."
+       "text": "A new housing development has been built near SuperValu, Loughrea. — OPPORTUNITY"
       },
       {
        "id": "e4",
-       "text": "Wetter weather has impacted on"
-      },
-      {
-       "id": "e5",
-       "text": "✓ — THREAT"
-      },
-      {
-       "id": "e6",
-       "text": "the potato crop for Keogh’s crisps."
-      },
-      {
-       "id": "e7",
-       "text": "A new housing development has"
-      },
-      {
-       "id": "e8",
-       "text": "✓ — OPPORTUNITY"
-      },
-      {
-       "id": "e9",
-       "text": "been built near SuperValu, Loughrea.",
-       "detail": [
-        "Apple have almost $200 billion in"
-       ]
-      },
-      {
-       "id": "e10",
-       "text": "✓ — STRENGTH"
-      },
-      {
-       "id": "e11",
-       "text": "cash reserves."
+       "text": "Apple have almost $200 billion in cash reserves. — STRENGTH"
       }
      ],
      "lifted": "geometry"
@@ -150638,15 +151347,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Employee encouragement / empowerment involves employees being actively involved in the running of the business."
+       "text": "(i) TQM stands for Total / Team Quality Management. — Total"
       },
       {
        "id": "e2",
-       "text": "A Facilitator Manager delegates / dictates tasks to employees."
+       "text": "(ii) Employee encouragement / empowerment involves employees being actively involved in the running of the business. — empowerment"
       },
       {
        "id": "e3",
-       "text": "Products can be designed using Computer Assisted / Aided Design."
+       "text": "(iii) A Facilitator Manager delegates / dictates tasks to employees. — delegates"
+      },
+      {
+       "id": "e4",
+       "text": "(iv) Products can be designed using Computer Assisted / Aided Design. — Aided"
       }
      ],
      "lifted": "geometry"
@@ -150716,30 +151429,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "A chairperson has a casting vote if a vote is tied at a meeting. — TRUE"
+       "text": "(i) A chairperson has a casting vote if a vote is tied at a meeting. — TRUE"
       },
       {
        "id": "e2",
-       "text": "A chairperson sends out the notice and agenda for all meetings. — FALSE"
+       "text": "(ii) A chairperson sends out the notice and agenda for all meetings. — FALSE"
       },
       {
        "id": "e3",
-       "text": "(iii) A secretary takes notes during the meeting and — TRUE"
+       "text": "(iii) A secretary takes notes during the meeting and writes up the minutes of the meeting. — TRUE"
       },
       {
        "id": "e4",
-       "text": "writes up the minutes of the meeting.",
-       "detail": [
-        "A quorum is the minimum number of people who"
-       ]
-      },
-      {
-       "id": "e5",
-       "text": "(iv) — TRUE"
-      },
-      {
-       "id": "e6",
-       "text": "must be present for a meeting to take place."
+       "text": "(iv) A quorum is the minimum number of people who must be present for a meeting to take place. — TRUE"
       }
      ],
      "lifted": "geometry"
@@ -151235,11 +151937,11 @@
       },
       {
        "id": "e7",
-       "text": "USC: (3% of €35,000) B 1,050"
+       "text": "USC: (3% of €35,000) B 1,050 B"
       },
       {
        "id": "e8",
-       "text": "Total Deductions: C 6,150"
+       "text": "Total Deductions: C 6,150 C"
       },
       {
        "id": "e9",
@@ -153945,7 +154647,17 @@
     "schemePages": [
      12
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 12,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Surplus"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "State whether it is a surplus or a deficit.",
@@ -158446,7 +159158,22 @@
      26,
      27
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 27,
+     "items": [
+      {
+       "id": "e1",
+       "text": "A Merger is when two companies voluntarily agree to come together and operate as one. The company is now jointly owned and trades under one name. A single new legal entity is formed.",
+       "detail": [
+        "A Takeover is when one company buys out another company (with or",
+        "without its consent) by buying at least 51% of its shares. It is also",
+        "known as an acquisition."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Explain the difference between a merger and a takeover",
@@ -158874,7 +159601,78 @@
      6,
      29
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 29,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Informs the consumer:",
+       "detail": [
+        "The CCPC provides consumers with information about their",
+        "rights in relation to the purchase of goods and services, as well",
+        "as financial services. They provide a website, a helpline, social",
+        "media site and engage in radio and television advertising. They",
+        "also produce a newsletter through a subscription service on",
+        "their website."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Evaluation"
+      },
+      {
+       "id": "e3",
+       "text": "Enforces consumer law:",
+       "detail": [
+        "The CCPC is the statutory body responsible for enforcing all",
+        "consumer laws. They issue compliance notices, on the spot",
+        "fines, prohibition notices and produce a Consumer Protection"
+       ]
+      },
+      {
+       "id": "e4",
+       "text": "Advise the Government:",
+       "detail": [
+        "The CCPC advise the Government on consumer issues and",
+        "recommend where consumers may need extra protection via",
+        "legislation."
+       ]
+      },
+      {
+       "id": "e5",
+       "text": "Conduct Research:",
+       "detail": [
+        "The CCPC engages in research into consumer behaviour. They",
+        "do this in order to advise consumers on how they can change",
+        "habits and save money or receive better value for money, e.g.",
+        "switching electricity supplier."
+       ]
+      },
+      {
+       "id": "e6",
+       "text": "Educate consumers:",
+       "detail": [
+        "The CCPC website has many tools for consumers to use to make",
+        "more informed decisions. These include financial calculators,",
+        "cost comparisons for various financial services, interactive",
+        "quizzes etc."
+       ]
+      },
+      {
+       "id": "e7",
+       "text": "Monitors Mergers & Acquisitions:",
+       "detail": [
+        "To ensure fair competition in the market for consumers, the",
+        "CCPC monitors all mergers and acquisition in Ireland. This is to",
+        "ensure that there are no dominant businesses in particular",
+        "markets.",
+        "Evaluation required."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Evaluate the role of the Competition and Consumer Protection Commission (CCPC).",
@@ -162948,7 +163746,93 @@
       },
       {
        "id": "e5",
-       "text": "Margin of safety at the forecast output Profit at forecast output."
+       "text": "Margin of safety at the forecast output"
+      },
+      {
+       "id": "e6",
+       "text": "Profit at forecast output."
+      },
+      {
+       "id": "e7",
+       "text": "Calculations only",
+       "detail": [
+        "Break-even Point = F.C."
+       ]
+      },
+      {
+       "id": "e8",
+       "text": "S.P – V.C"
+      },
+      {
+       "id": "e9",
+       "text": "= 200,000"
+      },
+      {
+       "id": "e10",
+       "text": "15 – 5"
+      },
+      {
+       "id": "e11",
+       "text": "= 20,000 units"
+      },
+      {
+       "id": "e12",
+       "text": "Margin of Safety = Volume of Sales – BEP"
+      },
+      {
+       "id": "e13",
+       "text": "= 30,000 – 20,000 = 10,000 units"
+      },
+      {
+       "id": "e14",
+       "text": "Profit at Forecast Output:",
+       "detail": [
+        "Units Selling Variable Fixed Total Total Profit"
+       ]
+      },
+      {
+       "id": "e15",
+       "text": "Price Costs Costs Costs Revenue"
+      },
+      {
+       "id": "e16",
+       "text": "0 15 0 200,000 200,000 0 -200,000"
+      },
+      {
+       "id": "e17",
+       "text": "20000 15 100,000 200,000 300,000 300,000 0"
+      },
+      {
+       "id": "e18",
+       "text": "30000 15 150,000 200,000 350,000 450,000 100,000"
+      },
+      {
+       "id": "e19",
+       "text": "Answer: €100,000"
+      },
+      {
+       "id": "e20",
+       "text": "0 20,000 30,000"
+      },
+      {
+       "id": "e21",
+       "text": "Variable Costs (€5) 0 100,000 150,000"
+      },
+      {
+       "id": "e22",
+       "text": "Fixed Costs 200,000 200,000 200,000"
+      },
+      {
+       "id": "e23",
+       "text": "Total Costs 200,000 300,000 350,000"
+      },
+      {
+       "id": "e24",
+       "text": "Total Revenue (€15) 0 300,000 450,000"
+      },
+      {
+       "id": "e25",
+       "text": "Profit 0 0 100,000"
       }
      ],
      "lifted": "geometry"
@@ -163005,7 +163889,33 @@
      52,
      53
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 53,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Break-even Point = F.C."
+      },
+      {
+       "id": "e2",
+       "text": "S.P – V.C"
+      },
+      {
+       "id": "e3",
+       "text": "= 200,000"
+      },
+      {
+       "id": "e4",
+       "text": "15 – 5"
+      },
+      {
+       "id": "e5",
+       "text": "= 20,000 units"
+      }
+     ],
+     "lifted": "slice"
+    }
    },
    "correction": {
     "originalQuestionText": "Illustrate the following by means of a breakeven chart: (i) Breakeven point.",
@@ -163063,7 +163973,21 @@
      52,
      53
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 53,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Margin of Safety = Volume of Sales – BEP"
+      },
+      {
+       "id": "e2",
+       "text": "= 30,000 – 20,000 = 10,000 units"
+      }
+     ],
+     "lifted": "slice"
+    }
    },
    "correction": {
     "originalQuestionText": "Illustrate the following by means of a breakeven chart: (ii) Margin of safety at the forecast output.",
@@ -163453,7 +164377,56 @@
      13,
      55
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 55,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Access to Finance:"
+      },
+      {
+       "id": "e2",
+       "text": "It can be very difficult for new businesses to raise finance. Issues sharing profits, convincing investors."
+      },
+      {
+       "id": "e3",
+       "text": "Adequate working capital"
+      },
+      {
+       "id": "e4",
+       "text": "Entrepreneurs will need both short and long term sources of finance and may need to acquire finance through loan capital from financial institutions or try to convince investors to give",
+       "detail": [
+        "them the finance they require."
+       ]
+      },
+      {
+       "id": "e5",
+       "text": "Entrepreneurs must decide on the best ownership structure of the business."
+      },
+      {
+       "id": "e6",
+       "text": "They must take into account the type of business they are operating, the number of owners involved and the tax and administrative implications of their choice."
+      },
+      {
+       "id": "e7",
+       "text": "Sole trader, company, parntership"
+      },
+      {
+       "id": "e8",
+       "text": "Choosing a method of production:"
+      },
+      {
+       "id": "e9",
+       "text": "The method of production will be influence; Economies of scale, type of workers required (low skilled or high skilled) etc."
+      },
+      {
+       "id": "e10",
+       "text": "Job, Batch or Mass production."
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Discuss the three challenges below that a new business start-up must address: Ownership structure, Production, Finance.",
@@ -163722,7 +164695,22 @@
      13,
      57
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 57,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Market segmentation involves dividing up the market into clearly identifiable sections which have common characteristics. It allows a firm to identify who their target market is.",
+       "detail": [
+        "It involves dividing a broad target market into subsets of consumers,",
+        "businesses, or countries that have common needs and priorities, and",
+        "then designing and implementing strategies to target them."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Define the term market segmentation.",
@@ -163834,7 +164822,92 @@
      57,
      58
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 57,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Demographic segmentation"
+      },
+      {
+       "id": "e2",
+       "text": "Analyses consumers according to age, gender, family size, income, occupation."
+      },
+      {
+       "id": "e3",
+       "text": "For mass marketing demographic is one of the best ways as everyone has an age, gender and income."
+      },
+      {
+       "id": "e4",
+       "text": "e.g. Age: Businesses often target certain age groups, such as Nintendo developing products for children and adults or Netflix developing tv series for different age groups."
+      },
+      {
+       "id": "e5",
+       "text": "e.g. Gender: Males and females are targeted with different types of clothing Topshop targeting males aged 15-35 whereas Topshop targets females aged 15-35."
+      },
+      {
+       "id": "e6",
+       "text": "Geographic segmentation"
+      },
+      {
+       "id": "e7",
+       "text": "Analyses consumers according to location county/region/country etc."
+      },
+      {
+       "id": "e8",
+       "text": "By using segments such as urban versus rural, north versus south, sea coasts versus interior, warm areas versus cold, the business can design a marketing strategy to satisfy the chosen",
+       "detail": [
+        "target markets."
+       ]
+      },
+      {
+       "id": "e9",
+       "text": "e.g. Newspaper/Radio business offering different products/services for people in Leinster than people in Munster etc; Spin South West, Midlands 103 etc. The Munster Express",
+       "detail": [
+        "newspaper, The Connaught Tribune and The Leinster express",
+        "newspaper."
+       ]
+      },
+      {
+       "id": "e10",
+       "text": "Car manufacturers developing different products for people in very warm climates than people based in colder climates."
+      },
+      {
+       "id": "e11",
+       "text": "Behavioural segmentation"
+      },
+      {
+       "id": "e12",
+       "text": "Analyses consumers according to their knowledge of and attitudes towards the use of or response to a product."
+      },
+      {
+       "id": "e13",
+       "text": "Impulse buying /Value for money (special price) /Celebration packs of chocolates as seasonal treats (Easter/Christmas etc.)"
+      },
+      {
+       "id": "e14",
+       "text": "Psychological"
+      },
+      {
+       "id": "e15",
+       "text": "Analyses consumers according to social status, lifestyle and personality type."
+      },
+      {
+       "id": "e16",
+       "text": "Attitudes-organic chocolate/environmental concerns around cocoa bean production."
+      },
+      {
+       "id": "e17",
+       "text": "Lifestyles-more health conscious (natural ingredients) /sugar free chocolate/protein bars/diet conscious."
+      },
+      {
+       "id": "e18",
+       "text": "Tastes-more screen time, more snacking while watching TV/Netflix."
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Illustrate two different ways a market can be segmented.",
@@ -164256,7 +165329,49 @@
      4,
      20
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 20,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Gross PAYE"
+      },
+      {
+       "id": "e2",
+       "text": "36,800 x0.20 = 7,360 ◆"
+      },
+      {
+       "id": "e3",
+       "text": "Balance = (42,600-36,800) = 5,800◆"
+      },
+      {
+       "id": "e4",
+       "text": "5,800x0.40 = 2,320◆"
+      },
+      {
+       "id": "e5",
+       "text": "TOTAL GROSS PAYE = 9,680◆"
+      },
+      {
+       "id": "e6",
+       "text": "Tax Credits"
+      },
+      {
+       "id": "e7",
+       "text": "1700+1700 = 3,400"
+      },
+      {
+       "id": "e8",
+       "text": "PAYE Due"
+      },
+      {
+       "id": "e9",
+       "text": "9,680 – 3400 = €6280 •"
+      }
+     ],
+     "lifted": "slice"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate the amount of PAYE Kellie Murphy will pay annually. Show your workings.",
@@ -164447,34 +165562,10 @@
      "items": [
       {
        "id": "e1",
-       "text": "The Product Life Cycle are the level of sales a product goes through from inception/introduction to the market to a decline in sales/end (2+2) of market viability. It tracks the sales growth of the product over a",
+       "text": "The Product Life Cycle are the level of sales a product goes through from inception/introduction to the market to a decline in sales/end of market viability. It tracks the sales growth of the product over a",
        "detail": [
         "specific time period, which is divided up into 5 sections;",
-        "introduction, growth, maturity, saturation and decline.",
-        "Outline two methods a firm could use to extend a Product Life"
-       ]
-      },
-      {
-       "id": "e2",
-       "text": "Cycle. +",
-       "detail": [
-        "(2+1)",
-        "Reduce the Price: A business reduce price to attract more",
-        "customers.",
-        "Change Channel of Distribution: Sell online to attract a worldwide",
-        "audience. Sell via new retailers/platforms."
-       ]
-      },
-      {
-       "id": "e3",
-       "text": "Develop new features:",
-       "detail": [
-        "New product features/new image/design/use. Coca Cola have",
-        "developed new flavours and tweaked the packaging/label on the",
-        "product.",
-        "Create line extensions (different flavours/sizes).",
-        "Promotion: An Advertising campaign/sales promotion technique be",
-        "used as gimmicks that incentivise the consumer."
+        "introduction, growth, maturity, saturation and decline."
        ]
       }
      ],
@@ -164566,7 +165657,33 @@
      4,
      14
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 14,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Reduce the Price: A business reduce price to attract more customers.",
+       "detail": [
+        "Change Channel of Distribution: Sell online to attract a worldwide",
+        "audience. Sell via new retailers/platforms."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Develop new features:",
+       "detail": [
+        "New product features/new image/design/use. Coca Cola have",
+        "developed new flavours and tweaked the packaging/label on the",
+        "product.",
+        "Create line extensions (different flavours/sizes).",
+        "Promotion: An Advertising campaign/sales promotion technique be",
+        "used as gimmicks that incentivise the consumer."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Outline two methods firms such as Coca Cola could use to extend a Product Life Cycle.",
@@ -164625,7 +165742,33 @@
      4,
      14
     ],
-    "markingGuideNote": "Use the official answer key and the published cumulative sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published cumulative sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 14,
+     "items": [
+      {
+       "id": "e1",
+       "text": "i. Maslow"
+      },
+      {
+       "id": "e2",
+       "text": "ii. Theory Y"
+      },
+      {
+       "id": "e3",
+       "text": "iii. Social"
+      },
+      {
+       "id": "e4",
+       "text": "iv. Low"
+      },
+      {
+       "id": "e5",
+       "text": "v. Self-actualisation"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Circle the correct option in the case of each of the following statements. (i) Maslow / McGregor believed that once a need is satisfied the need immediately above in the hierarchy becomes the dominant motivator. (ii) Theory X / Theory Y managers believe workers are hardworking and self-motivated. (iii) Workplace friendships satisfy social / safety needs. (iv) There is a high / low staff turnover if managers trust and respect employees. (v) Physiological / Self-actualisation needs are satisfied by challenging work.",
@@ -165447,7 +166590,33 @@
      4,
      10
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Formula Current Assets – Closing Stock : Current Liabilities"
+      },
+      {
+       "id": "e2",
+       "text": "Workings €160,000 – €40,000 : €100,000"
+      },
+      {
+       "id": "e3",
+       "text": "€120,000 : €100,000"
+      },
+      {
+       "id": "e4",
+       "text": "Answer"
+      },
+      {
+       "id": "e5",
+       "text": "1.2 : 1"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate the Acid Test Ratio. (Show formula and workings.) The answerbook prints boxes headed Formula, Workings and Answer, and the answer box is printed as ____ : 1.",
@@ -165580,7 +166749,29 @@
      4,
      10
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 10,
+     "items": [
+      {
+       "id": "e1",
+       "text": "A loading is a reduction on a basic insurance premium. — False"
+      },
+      {
+       "id": "e2",
+       "text": "The greater the risk, the higher your insurance premium will be. — True"
+      },
+      {
+       "id": "e3",
+       "text": "An actuary calculates insurance premium. — True"
+      },
+      {
+       "id": "e4",
+       "text": "Indemnity means you cannot make a profit from insurance. — True"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Write the word TRUE or FALSE after each of the following statements. A loading is a reduction on a basic insurance premium. The greater the risk, the higher your insurance premium will be. An actuary calculates insurance premium. Indemnity means you cannot make a profit from insurance.",
@@ -166044,7 +167235,29 @@
      4,
      8
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 8,
+     "items": [
+      {
+       "id": "e1",
+       "text": "uses specialist equipment and machinery to produce their products. — Capital"
+      },
+      {
+       "id": "e2",
+       "text": "uses cocoa beans in the production of their chocolate bars. — Land"
+      },
+      {
+       "id": "e3",
+       "text": "employs thousands of people in their plants in Ireland and the UK. — Labour"
+      },
+      {
+       "id": "e4",
+       "text": "was founded by the entrepreneur John Cadbury. — Enterprise"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "additionalTopicIds": [
     "business-5-13"
@@ -166291,7 +167504,29 @@
      4,
      9
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 9,
+     "items": [
+      {
+       "id": "e1",
+       "text": "(i) A state‐owned enterprise is owned and controlled by private entrepreneurs / the government. — the government."
+      },
+      {
+       "id": "e2",
+       "text": "(ii) A partnership is owned by a minimum of one / two partners. — two"
+      },
+      {
+       "id": "e3",
+       "text": "(iii) In a cooperative, voting rights for members are equal / dependent on share ownership. — equal"
+      },
+      {
+       "id": "e4",
+       "text": "(iv) Shareholders in a Private Limited Company have limited / unlimited liability. — limited"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Circle the correct option in each of the following statements. (i) A state-owned enterprise is owned and controlled by private entrepreneurs / the government. (ii) A partnership is owned by a minimum of one / two partners. (iii) In a cooperative, voting rights for members are equal / dependent on share ownership. (iv) Shareholders in a Private Limited Company have limited / unlimited liability.",
@@ -166959,38 +168194,30 @@
        "id": "e4",
        "text": "Link",
        "detail": [
-        "“and has expanded by opening new restaurants in Cork and Evaluate"
+        "“and has expanded by opening new restaurants in Cork and Evaluate",
+        "Waterford.”"
        ]
       },
       {
        "id": "e5",
-       "text": "Waterford.”"
-      },
-      {
-       "id": "e6",
        "text": "Franchising"
       },
       {
-       "id": "e7",
+       "id": "e6",
        "text": "This is when the business owner allows entrepreneurs to use her/his business model in exchange for an upfront fee and a percentage of profits."
       },
       {
-       "id": "e8",
+       "id": "e7",
        "text": "The business owner, is known as the franchiser, the entrepreneurs who open a version of the business, are franchisees."
       },
       {
-       "id": "e9",
+       "id": "e8",
        "text": "Strict regulations are drawn up by the franchiser and the franchisee must obey all regulations and rules.",
        "detail": [
         "“Mike decided to further grow the business and brand through",
         "franchising. He conducted a strict vetting process.”",
-        "“ He chose two franchisees to open new restaurants in Galway and"
-       ]
-      },
-      {
-       "id": "e10",
-       "text": "Kildare under a franchise business model.”",
-       "detail": [
+        "“ He chose two franchisees to open new restaurants in Galway and",
+        "Kildare under a franchise business model.”",
         "“Legal advice was sought to ensure his franchise agreement clarified",
         "procedures, regulations, fees and profits”"
        ]
@@ -169061,7 +170288,17 @@
      5,
      17
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 17,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Balance of Trade = Visible Exports - Visible Imports = €12,706m – €8,053m = €4,653m"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Using the figures below calculate the Balance of Trade for April 2021. Show your workings.",
@@ -169115,7 +170352,17 @@
      5,
      17
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 17,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Surplus"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "State whether it is a surplus or a deficit.",
@@ -171371,85 +172618,18 @@
      "items": [
       {
        "id": "e1",
-       "text": "Net Profit €35,000 €45,000 €40,000 €55,000 €60,000"
-      },
-      {
-       "id": "e2",
        "text": "Title"
       },
       {
+       "id": "e2",
+       "text": "Labelled Axis"
+      },
+      {
        "id": "e3",
-       "text": "Labelled"
-      },
-      {
-       "id": "e4",
-       "text": "€70,000"
-      },
-      {
-       "id": "e5",
-       "text": "Axis"
-      },
-      {
-       "id": "e6",
-       "text": "€60,000"
-      },
-      {
-       "id": "e7",
-       "text": "+"
-      },
-      {
-       "id": "e8",
-       "text": "€50,000"
-      },
-      {
-       "id": "e9",
-       "text": "€"
-      },
-      {
-       "id": "e10",
-       "text": "Profit €40,000"
-      },
-      {
-       "id": "e11",
        "text": "Bars"
-      },
-      {
-       "id": "e12",
-       "text": "€30,000"
-      },
-      {
-       "id": "e13",
-       "text": "Net",
-       "detail": [
-        "@ each"
-       ]
-      },
-      {
-       "id": "e14",
-       "text": "€20,000"
-      },
-      {
-       "id": "e15",
-       "text": "(1m each if"
-      },
-      {
-       "id": "e16",
-       "text": "€10,000 not to scale)"
-      },
-      {
-       "id": "e17",
-       "text": "€0"
-      },
-      {
-       "id": "e18",
-       "text": "Year"
-      },
-      {
-       "id": "e19",
-       "text": "2017 2018 2019 2020 2021"
       }
      ],
-     "lifted": "geometry"
+     "lifted": "slice"
     }
    },
    "additionalTopicIds": [
@@ -171900,7 +173080,17 @@
      7,
      28
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 28,
+     "items": [
+      {
+       "id": "e1",
+       "text": "€20,000 × 5% = €1,000 + €400 = €1,400"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "additionalTopicIds": [
     "business-3-18"
@@ -171959,7 +173149,25 @@
      7,
      28
     ],
-    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once."
+    "markingGuideNote": "Use the official answer key and the published sequence. Each correct answer counts once.",
+    "expected": {
+     "page": 28,
+     "items": [
+      {
+       "id": "e1",
+       "text": "PAYE – Pay As You Earn"
+      },
+      {
+       "id": "e2",
+       "text": "PRSI – Pay Related Social Insurance"
+      },
+      {
+       "id": "e3",
+       "text": "USC – Universal Social Charge"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "List two statutory deductions that must be deducted from Leah's pay.",
@@ -178371,50 +179579,38 @@
      "items": [
       {
        "id": "e1",
-       "text": "Debt Capital : Equity Capital"
-      },
-      {
-       "id": "e2",
-       "text": "Formula:",
+       "text": "Formula: Debt Capital : Equity Capital",
        "detail": [
         "(Long-term Loan) : (Issued Share Capital + Reserves)"
        ]
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "2021 €150,000• : €460,000 ◆ + €140,000 ◆"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "€150,000 : €600,000"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "0.25 : 1 •"
       },
       {
+       "id": "e5",
+       "text": "2020 € 250,000 • : €300,000 ◆+ €120,000◆"
+      },
+      {
        "id": "e6",
-       "text": "◆+ €120,000◆"
-      },
-      {
-       "id": "e7",
-       "text": "2020 € 250,000 : €300,000"
-      },
-      {
-       "id": "e8",
        "text": "€ 250,000 : €420,000"
       },
       {
-       "id": "e9",
+       "id": "e7",
        "text": "0.6 : 1 •"
       },
       {
-       "id": "e10",
-       "text": "The Debt/Equity Ratio for The Cleaning Crew of 0.25: 1 shows that the business is low geared. The gearing ratio improved from 0.6:1 in 2020"
-      },
-      {
-       "id": "e11",
-       "text": "to 0.25:1in 2021."
+       "id": "e8",
+       "text": "The Debt/Equity Ratio for The Cleaning Crew of 0.25: 1 shows that the business is low geared. The gearing ratio improved from 0.6:1 in 2020 to 0.25:1in 2021."
       }
      ],
      "lifted": "geometry"
@@ -179459,7 +180655,55 @@
      13,
      57
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 57,
+     "items": [
+      {
+       "id": "e1",
+       "text": "This advertising attempts to persuade the consumer that they need the product. Persuasive advertising attempts to convey the message that this product/service will bring value to the",
+       "detail": [
+        "consumers life. E.g. L’Oréal try to persuade the consumer they",
+        "will have healthier/more attractive hair as a result of using their",
+        "products."
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Informative advertising:",
+       "detail": [
+        "Informative advertising conveys facts or data for the purposes of",
+        "educating an audience, rather than increasing sales revenue.",
+        "Examples: Covid-19 advertising from the Department of Health",
+        "In April 2022, Ferrero (Kinder Chocolate) recalled batches of",
+        "Kinder Surprise 20g and Kinder Surprise 20g x 3, due to the",
+        "possible presence of Salmonella."
+       ]
+      },
+      {
+       "id": "e3",
+       "text": "Generic advertising:",
+       "detail": [
+        "Generic advertising attempts to convey the importance of one",
+        "particular type of good. This refers to advertising a",
+        "good/industry/service rather than one particular brand. E.g. The",
+        "National dairy council advertising the benefits of drinking milk."
+       ]
+      },
+      {
+       "id": "e4",
+       "text": "Competitive/Comparative advertising:",
+       "detail": [
+        "The brand or product is advertised as superior to those of other",
+        "competitors based on the price comparisons, quality of the",
+        "products etc. Supermarkets will often use print advertising in",
+        "newspapers to highlight the price difference between their",
+        "products and those of competitors."
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Outline your understanding of any three of the following types of advertising listed below. Provide an example in each case to support your answer. 1. Persuasive advertising 2. Informative advertising 3. Generic advertising 4. Competitive advertising.",
@@ -180470,26 +181714,22 @@
      "items": [
       {
        "id": "e1",
-       "text": "3,2,2,2,1"
-      },
-      {
-       "id": "e2",
        "text": "1 — D"
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "2 — E"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "3 — A"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "4 — C"
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "5 — F"
       }
      ],
@@ -181018,7 +182258,36 @@
      6,
      19
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 19,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Liabilities",
+       "detail": [
+        "Formula: (Current Assets – closing stock) : Current"
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Workings:"
+      },
+      {
+       "id": "e3",
+       "text": "(€93,200 €14,000) €72,000"
+      },
+      {
+       "id": "e4",
+       "text": "€79,200 : €72,000"
+      },
+      {
+       "id": "e5",
+       "text": "1.1:1"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate the Acid Test Ratio for Cahill’s newsagents.",
@@ -181251,11 +182520,11 @@
      "items": [
       {
        "id": "e1",
-       "text": "Write TRUE or FALSE after each of the following statements. 3,2,2,2,1"
+       "text": "False"
       },
       {
        "id": "e2",
-       "text": "False"
+       "text": "True"
       },
       {
        "id": "e3",
@@ -181263,14 +182532,10 @@
       },
       {
        "id": "e4",
-       "text": "True"
-      },
-      {
-       "id": "e5",
        "text": "False"
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "True"
       }
      ],
@@ -181571,55 +182836,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "EU citizens have the right to"
+       "text": "EU citizens have the right to live and work in any EU country — Social Charter"
       },
       {
        "id": "e2",
-       "text": "live and work in any EU — Charter"
+       "text": "Farmers receive Single Farm Payments to help supplement their income. — CAP"
       },
       {
        "id": "e3",
-       "text": "country"
+       "text": "All business mergers and takeovers are monitored. — Comp Policy"
       },
       {
        "id": "e4",
-       "text": "Farmers receive Single Farm"
-      },
-      {
-       "id": "e5",
-       "text": "Payments to help supplement"
-      },
-      {
-       "id": "e6",
-       "text": "✓ — Charter"
-      },
-      {
-       "id": "e7",
-       "text": "their income."
-      },
-      {
-       "id": "e8",
-       "text": "All business mergers and"
-      },
-      {
-       "id": "e9",
-       "text": "✓ — Policy"
-      },
-      {
-       "id": "e10",
-       "text": "takeovers are monitored."
-      },
-      {
-       "id": "e11",
-       "text": "The aim is to preserve fish"
-      },
-      {
-       "id": "e12",
-       "text": "✓ — Charter"
-      },
-      {
-       "id": "e13",
-       "text": "stocks in EU waters."
+       "text": "The aim is to preserve fish stocks in EU waters. — CFP"
       }
      ],
      "lifted": "geometry"
@@ -181869,7 +183098,17 @@
      4,
      13
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 13,
+     "items": [
+      {
+       "id": "e1",
+       "text": "€3,000 Workings: 26,000 – 23,000 = 3,000 Or: 300 – (2700) = 300 + 2700 = 3,000"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate the Net Cash figure for February. Show your workings.",
@@ -181923,7 +183162,17 @@
      4,
      13
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 13,
+     "items": [
+      {
+       "id": "e1",
+       "text": "January"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Identify a month where the guesthouse has a deficit.",
@@ -182753,15 +184002,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "When employees ask for a pay rise because inflation has increased it is known as a productivity / cost of living claim."
+       "text": "(i) Employees must give seven / ten days’ notice of industrial action to their employer. — seven"
       },
       {
        "id": "e2",
-       "text": "IBEC represents businesses / employees."
+       "text": "(ii) When employees ask for a pay rise because inflation has increased it is known as a productivity / cost of living claim. — cost of living"
       },
       {
        "id": "e3",
-       "text": "The Irish Farmers’ Association (IFA) is an interest group / trade union."
+       "text": "(iii) IBEC represents businesses / employees. — businesses"
+      },
+      {
+       "id": "e4",
+       "text": "(iv) The Irish Farmers’ Association (IFA) is an interest group / trade union. — interest group"
       }
      ],
      "lifted": "geometry"
@@ -183004,7 +184257,83 @@
      24,
      25
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 24,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Long term loan",
+       "detail": [
+        "A business borrows a large sum of money that is to be repaid over",
+        "5-30 years. The sum of money is repaid with interest.",
+        "Security/collateral is provided against the sum of money",
+        "borrowed. The business owner(s) retains full control of the",
+        "business.",
+        "“They took advantage of low interest rates and received",
+        "approval for a 20 year long term loan to fund expansion into",
+        "Europe and Asia.”"
+       ]
+      },
+      {
+       "id": "e2",
+       "text": "Debenture",
+       "detail": [
+        "A debenture is a long-term security yielding a fixed rate of",
+        "interest, issued by a company and secured against assets.",
+        "“An additional investment of €2 million was secured in the form",
+        "of a 10 year debenture.”"
+       ]
+      },
+      {
+       "id": "e3",
+       "text": "Issued Share Capital",
+       "detail": [
+        "A company can issue shares to investors. The investors provide",
+        "capital in exchange for a percentage of ownership. This dilutes the",
+        "control of the entrepreneur but is a cost effective long term",
+        "source of finance.",
+        "“The company raised €3 million from issuing share capital.”"
+       ]
+      },
+      {
+       "id": "e4",
+       "text": "Reserves/Retained Capital",
+       "detail": [
+        "This is when a business uses the profits that they have developed",
+        "to fund expansion."
+       ]
+      },
+      {
+       "id": "e5",
+       "text": "“The business was benefiting from economies of scale and their cash reserves were healthy.”"
+      },
+      {
+       "id": "e6",
+       "text": "Grant",
+       "detail": [
+        "A grant is a type of finance provided by state agencies. State",
+        "agencies such as enterprise Ireland provide grants to help with",
+        "expansion. Grants come with conditions which must be met. They",
+        "do not have to be repaid.",
+        "“They successfully applied for support from Enterprise",
+        "Ireland for their planned expansion.”"
+       ]
+      },
+      {
+       "id": "e7",
+       "text": "Personal Equity /Savings",
+       "detail": [
+        "The use of savings (unspent income) which are the personal",
+        "equity of the entrepreneur. These are normally saved in a",
+        "deposit account in a bank or another financial institution.",
+        "“Helen raised the capital to start the business through",
+        "Investing her savings”"
+       ]
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -183472,19 +184801,14 @@
         "finance to pay for houses, cars, furniture etc.",
         "This has a positive impact on Irish businesses as sales increase.",
         "“They took advantage of low interest rates and received",
-        "approval for a 20 year long term loan to fund expansion into"
-       ]
-      },
-      {
-       "id": "e2",
-       "text": "Europe and Asia.”",
-       "detail": [
+        "approval for a 20 year long term loan to fund expansion into",
+        "Europe and Asia.”",
         "“Recently, across the world, interest rates have begun to",
         "increase.”"
        ]
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "Inflation",
        "detail": [
         "This is the sustained increase in the general level of prices over a",
@@ -183496,7 +184820,7 @@
        ]
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "Or",
        "detail": [
         "“Energy prices are far higher than budgeted for and fluctuations",
@@ -183504,7 +184828,7 @@
        ]
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "Employment",
        "detail": [
         "This refers to the percentage of the labour force who are engaged",
@@ -183516,11 +184840,11 @@
        ]
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "Question Possible Responses Max. Mark"
       },
       {
-       "id": "e7",
+       "id": "e6",
        "text": "C (ctd) Grants",
        "detail": [
         "This refers to the availability of finance from state agencies to",
@@ -183532,7 +184856,7 @@
        ]
       },
       {
-       "id": "e8",
+       "id": "e7",
        "text": "Economic Growth",
        "detail": [
         "An increase in the value of the goods and services produced in a",
@@ -183541,7 +184865,7 @@
        ]
       },
       {
-       "id": "e9",
+       "id": "e8",
        "text": "Exchange Rates",
        "detail": [
         "The cost of one currency in terms of another. The rate of",
@@ -194628,7 +195952,53 @@
      14,
      56
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 56,
+     "items": [
+      {
+       "id": "e1",
+       "text": "40,000 x 0.20 8,000"
+      },
+      {
+       "id": "e2",
+       "text": "28,000"
+      },
+      {
+       "id": "e3",
+       "text": "70,000 x 0.40"
+      },
+      {
+       "id": "e4",
+       "text": "36,000"
+      },
+      {
+       "id": "e5",
+       "text": "Gross PAYE"
+      },
+      {
+       "id": "e6",
+       "text": "Less Tax Credits:"
+      },
+      {
+       "id": "e7",
+       "text": "Single Person 1,700"
+      },
+      {
+       "id": "e8",
+       "text": "PAYE 1,700"
+      },
+      {
+       "id": "e9",
+       "text": "Dependent Relative 245 (3645)"
+      },
+      {
+       "id": "e10",
+       "text": "PAYE Tommy has to Pay €32,355"
+      }
+     ],
+     "lifted": "slice"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate each of the following: (i) The PAYE which Tommy has to pay",
@@ -194720,7 +196090,33 @@
      14,
      56
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 56,
+     "items": [
+      {
+       "id": "e1",
+       "text": "12,012 x 0.005 60.06"
+      },
+      {
+       "id": "e2",
+       "text": "9,281 x 0.02 185.62"
+      },
+      {
+       "id": "e3",
+       "text": "88,707 3,991.82*"
+      },
+      {
+       "id": "e4",
+       "text": "x 0.045"
+      },
+      {
+       "id": "e5",
+       "text": "Total amount of USC €4,237.50"
+      }
+     ],
+     "lifted": "slice"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate each of the following: (ii) The total amount of USC",
@@ -194774,7 +196170,17 @@
      14,
      56
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 56,
+     "items": [
+      {
+       "id": "e1",
+       "text": "110,000 x 0.04 €4,400"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Calculate each of the following: (iii) The total amount of PRSI",
@@ -198429,15 +199835,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "A team-based organisation structure is referred to as a matrix / product structure."
+       "text": "(i) A functional structure divides the business into departments / geographic locations. — departments"
       },
       {
        "id": "e2",
-       "text": "A narrow / wide span of control means there are a large number of employees reporting to one manager."
+       "text": "(ii) A team-based organisation structure is referred to as a matrix / product structure. — matrix"
       },
       {
        "id": "e3",
-       "text": "Delayering involves adding / removing layers of employees in the business."
+       "text": "(iii) A narrow / wide span of control means there are a large number of employees reporting to one manager. — wide"
+      },
+      {
+       "id": "e4",
+       "text": "(iv) Delayering involves adding / removing layers of employees in the business. — removing"
       }
      ],
      "lifted": "geometry"
@@ -198505,55 +199915,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Statement Merger Franchise Takeover Strategic"
+       "text": "Subway allows other business owners to use their business model and logo in return for a fee and a percentage of profits. — Franchise"
       },
       {
        "id": "e2",
-       "text": "Alliance"
+       "text": "Apple temporarily joined forces with Mastercard when they released Apple Pay. — Strategic"
       },
       {
        "id": "e3",
-       "text": "Subway allows other",
-       "detail": [
-        "✓",
-        "business owners to use",
-        "their business model and",
-        "logo in return for a fee and",
-        "a percentage of profits."
-       ]
+       "text": "Disney and Pixar joined their businesses together permanently to form a new company. — Merger"
       },
       {
        "id": "e4",
-       "text": "Apple temporarily joined ✓",
-       "detail": [
-        "forces with Mastercard",
-        "when they released Apple",
-        "Pay."
-       ]
-      },
-      {
-       "id": "e5",
-       "text": "Disney and Pixar joined ✓",
-       "detail": [
-        "their businesses together",
-        "permanently to form a new",
-        "company."
-       ]
-      },
-      {
-       "id": "e6",
-       "text": "Coca Cola purchased over ✓"
-      },
-      {
-       "id": "e7",
-       "text": "51% of the shares of Costa"
-      },
-      {
-       "id": "e8",
-       "text": "Coffee to become its new",
-       "detail": [
-        "owner."
-       ]
+       "text": "Coca Cola purchased over 51% of the shares of Costa Coffee to become its new owner. — Takeover"
       }
      ],
      "lifted": "geometry"
@@ -198800,7 +200174,17 @@
      3,
      9
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 9,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Saturation / Decline"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "Identify a stage of the product life cycle where sales decrease.",
@@ -199953,51 +201337,48 @@
        "text": "Or",
        "detail": [
         "‘James believes that if he looks after his staff, they will provide the",
-        "highest level of care and service to the residents at New Age Care"
+        "highest level of care and service to the residents at New Age Care",
+        "Ireland.’"
        ]
       },
       {
        "id": "e7",
-       "text": "Ireland.’"
-      },
-      {
-       "id": "e8",
        "text": "Evaluation required"
       },
       {
-       "id": "e9",
+       "id": "e8",
        "text": "Motivation"
       },
       {
-       "id": "e10",
+       "id": "e9",
        "text": "Motivation involves putting factors in place that cause people to behave in certain ways."
       },
       {
-       "id": "e11",
+       "id": "e10",
        "text": "Motivation as a management skill is the ability to know how to aid/get staff to contribute their best efforts."
       },
       {
-       "id": "e12",
+       "id": "e11",
        "text": "Theories of motivation include Maslow and McGregor."
       },
       {
-       "id": "e13",
+       "id": "e12",
        "text": "Reference James style of motivation, i.e. Theory Y or meeting a level of Maslow’s needs."
       },
       {
-       "id": "e14",
+       "id": "e13",
        "text": "Meets the needs of his staff."
       },
       {
-       "id": "e15",
+       "id": "e14",
        "text": "James meets the financial and non-financial needs of staff -low levels of staff turnover and help to improve the standard of service provided."
       },
       {
-       "id": "e16",
+       "id": "e15",
        "text": "Successful motivation leads to ❖ increased productivity ❖ greater intrapreneurship ❖ improved industrial relations ❖ staff retention / recruitment"
       },
       {
-       "id": "e17",
+       "id": "e16",
        "text": "Link",
        "detail": [
         "‘James presents a clear career progression path to staff as he recognises",
@@ -200008,14 +201389,14 @@
        ]
       },
       {
-       "id": "e18",
+       "id": "e17",
        "text": "Or",
        "detail": [
         "‘Targets are identified at these meetings for employees.’"
        ]
       },
       {
-       "id": "e19",
+       "id": "e18",
        "text": "Or",
        "detail": [
         "‘James decided to attract employees by offering a higher salary than his",
@@ -200023,35 +201404,32 @@
        ]
       },
       {
-       "id": "e20",
+       "id": "e19",
        "text": "Or",
        "detail": [
         "‘James believes that if he looks after his staff, they will provide the",
-        "highest level of care and service to the residents at New Age Care"
+        "highest level of care and service to the residents at New Age Care",
+        "Ireland.’"
        ]
       },
       {
-       "id": "e21",
-       "text": "Ireland.’"
-      },
-      {
-       "id": "e22",
+       "id": "e20",
        "text": "Evaluation required"
       },
       {
-       "id": "e23",
+       "id": "e21",
        "text": "Communication"
       },
       {
-       "id": "e24",
+       "id": "e22",
        "text": "Communication as a management skill involves the transfer of information between parties in a way that gets action."
       },
       {
-       "id": "e25",
+       "id": "e23",
        "text": "Management must try to ensure there is a two-way flow in the communication channels within the organisation. Many different ways of communication."
       },
       {
-       "id": "e26",
+       "id": "e24",
        "text": "Good communication as a management skill is essential for the effective running of a business. When a manager communicates well with staff everyone will know what to do, there will be fewer",
        "detail": [
         "mistakes, employees will feel more involved in the running of the",
@@ -200073,7 +201451,7 @@
        ]
       },
       {
-       "id": "e27",
+       "id": "e25",
        "text": "Link",
        "detail": [
         "‘James now holds regular meetings with his middle management team.’",
@@ -200085,19 +201463,16 @@
        ]
       },
       {
-       "id": "e28",
+       "id": "e26",
        "text": "Or",
        "detail": [
         "‘James believes that if he looks after his staff, they will provide the",
-        "highest level of care and service to the residents at New Age Care"
+        "highest level of care and service to the residents at New Age Care",
+        "Ireland.’"
        ]
       },
       {
-       "id": "e29",
-       "text": "Ireland.’"
-      },
-      {
-       "id": "e30",
+       "id": "e27",
        "text": "Evaluation required",
        "detail": [
         "(Support Notes)",
@@ -200107,7 +201482,7 @@
        ]
       },
       {
-       "id": "e31",
+       "id": "e28",
        "text": "People in Business / Business Environment"
       }
      ]
@@ -201665,7 +203040,17 @@
      4,
      18
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 18,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Surplus"
+      }
+     ],
+     "lifted": "geometry"
+    }
    },
    "correction": {
     "originalQuestionText": "State whether it is a surplus or a deficit.",
@@ -213624,14 +215009,18 @@
      "items": [
       {
        "id": "e1",
-       "text": "300,000"
+       "text": "Debt ÷ Equity"
       },
       {
        "id": "e2",
-       "text": "= 0. 5: 1"
+       "text": "300,000"
       },
       {
        "id": "e3",
+       "text": "= 0. 5: 1"
+      },
+      {
+       "id": "e4",
        "text": "550,000 + 50,000"
       }
      ],
@@ -214122,34 +215511,26 @@
      "items": [
       {
        "id": "e1",
-       "text": "€ € € €"
-      },
-      {
-       "id": "e2",
        "text": "Total Receipts (A) 115,000 110,000 120,000 345,000"
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "Total Payments (B) 90,000 85,000 92,000 267,000"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "Net Cash (A-B) 25,000 25,000 B. 28,000 78,000"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "Opening Cash 20,000 A. 45,000 70,000 C. 20,000"
       },
       {
-       "id": "e6",
-       "text": "+"
-      },
-      {
-       "id": "e7",
+       "id": "e5",
        "text": "Closing Cash 45,000 70,000 98,000 D. 98,000"
       },
       {
-       "id": "e8",
+       "id": "e6",
        "text": "Leaving Certificate 2025 – Business Ordinary Level"
       }
      ],
@@ -214778,10 +216159,17 @@
      "items": [
       {
        "id": "e1",
-       "text": "A Break-Even Point (BEP) C Total Cost (TC)"
+       "text": "B Total Revenue (TR)",
+       "detail": [
+        "A Break-Even Point (BEP) C Total Cost (TC)"
+       ]
       },
       {
        "id": "e2",
+       "text": "D Fixed Cost (FC)"
+      },
+      {
+       "id": "e3",
        "text": "Leaving Certificate 2025 – Business Ordinary Level"
       }
      ],
@@ -214979,14 +216367,15 @@
      "items": [
       {
        "id": "e1",
-       "text": "Statement Job Batch Mass",
-       "detail": [
-        "✓",
-        "Produced by robots on an automated assembly line.",
-        "Each product has a unique design. ✓",
-        "✓",
-        "Produces a limited quantity of identical products."
-       ]
+       "text": "Produced by robots on an automated assembly line. — Mass"
+      },
+      {
+       "id": "e2",
+       "text": "Each product has a unique design. — Job"
+      },
+      {
+       "id": "e3",
+       "text": "Produces a limited quantity of identical products. — Batch"
       }
      ],
      "lifted": "geometry"
@@ -221066,7 +222455,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "Create a Job Description: such as key duties, responsibilities, job + title, hours, salary, benefits, etc."
+       "text": "Create a Job Description: such as key duties, responsibilities, job title, hours, salary, benefits, etc."
       },
       {
        "id": "e2",
@@ -221074,10 +222463,7 @@
       },
       {
        "id": "e3",
-       "text": "Advertise the Role Promote the vacancy to attract suitable candidates through Internal Recruitment, External Recruitment, CV with cover letter.",
-       "detail": [
-        "+"
-       ]
+       "text": "Advertise the Role Promote the vacancy to attract suitable candidates through Internal Recruitment, External Recruitment, CV with cover letter."
       },
       {
        "id": "e4",
@@ -221340,66 +222726,62 @@
      "items": [
       {
        "id": "e1",
-       "text": "Name: David Mulroy € € €"
-      },
-      {
-       "id": "e2",
        "text": "Gross Pay 46,000"
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "PAYE :"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "20% @ 42,000 8,400"
       },
       {
-       "id": "e5",
+       "id": "e4",
        "text": "40% @ 4,000 +1,600"
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "Gross PAYE 10,000"
       },
       {
-       "id": "e7",
+       "id": "e6",
        "text": "Less Tax Credit 3,750 -3,750"
       },
       {
-       "id": "e8",
+       "id": "e7",
        "text": "Net PAYE 6,250"
       },
       {
-       "id": "e9",
+       "id": "e8",
        "text": "PRSI:"
       },
       {
-       "id": "e10",
+       "id": "e9",
        "text": "46,000@4.1% 1,886"
       },
       {
-       "id": "e11",
+       "id": "e10",
        "text": "USC"
       },
       {
-       "id": "e12",
+       "id": "e11",
        "text": "46,000@3.0% 1,380"
       },
       {
-       "id": "e13",
+       "id": "e12",
        "text": "Total Annual Deductions 9,516"
       },
       {
-       "id": "e14",
+       "id": "e13",
        "text": "Net Annual Salary 36,484"
       },
       {
-       "id": "e15",
+       "id": "e14",
        "text": "Leaving Certificate 2025 – Business Ordinary Level"
       },
       {
-       "id": "e16",
+       "id": "e15",
        "text": "Possible Responses"
       }
      ],
@@ -227113,18 +228495,14 @@
       },
       {
        "id": "e3",
-       "text": "0·005 x 12,012"
+       "text": "0·005 x 12,012 60·06❶"
       },
       {
        "id": "e4",
-       "text": "60·06❶"
-      },
-      {
-       "id": "e5",
        "text": "0·02 x 9,281 185·62❶"
       },
       {
-       "id": "e6",
+       "id": "e5",
        "text": "0·03 x 53,707❶ 1,611·21❶"
       }
      ],
@@ -227379,7 +228757,35 @@
      "items": [
       {
        "id": "e1",
-       "text": "Net annual take-home pay €32,818·11❶ Own figures are shaded."
+       "text": "Gross Salary 55,000"
+      },
+      {
+       "id": "e2",
+       "text": "Benefit in Kind 20,000"
+      },
+      {
+       "id": "e3",
+       "text": "Total taxable income 75,000❶"
+      },
+      {
+       "id": "e4",
+       "text": "PAYE"
+      },
+      {
+       "id": "e5",
+       "text": "0·20 x 44,000 8,800❶"
+      },
+      {
+       "id": "e6",
+       "text": "0·40 x 31,000❶ 12,400❶ 21,200❶"
+      },
+      {
+       "id": "e7",
+       "text": "Single Person Tax Credit 1,875❶"
+      },
+      {
+       "id": "e8",
+       "text": "Employee Tax Credit 2,000❶ (3,875) ❶"
       }
      ],
      "lifted": "geometry"
@@ -230873,18 +232279,14 @@
      "items": [
       {
        "id": "e1",
-       "text": "(1+1+1)"
-      },
-      {
-       "id": "e2",
        "text": "(50,000 × 20) −[300,000 + (50,000 × 10)]"
       },
       {
-       "id": "e3",
+       "id": "e2",
        "text": "1,000,000 −800,000"
       },
       {
-       "id": "e4",
+       "id": "e3",
        "text": "= €200,000"
       }
      ],
@@ -232231,65 +233633,6 @@
       {
        "id": "e5",
        "text": "5 — F"
-      },
-      {
-       "id": "e6",
-       "text": "(1+1+1+1)"
-      },
-      {
-       "id": "e7",
-       "text": "Selling Price−Variable cost per unit"
-      },
-      {
-       "id": "e8",
-       "text": "300,000"
-      },
-      {
-       "id": "e9",
-       "text": "30,000 units"
-      },
-      {
-       "id": "e10",
-       "text": "="
-      },
-      {
-       "id": "e11",
-       "text": "20 −10"
-      },
-      {
-       "id": "e12",
-       "text": "(1+1+1)"
-      },
-      {
-       "id": "e13",
-       "text": "(50,000 × 20) −[300,000 + (50,000 × 10)]"
-      },
-      {
-       "id": "e14",
-       "text": "1,000,000 −800,000"
-      },
-      {
-       "id": "e15",
-       "text": "= €200,000"
-      },
-      {
-       "id": "e16",
-       "text": "3 marks (1+1+1)"
-      },
-      {
-       "id": "e17",
-       "text": "20,000 units"
-      },
-      {
-       "id": "e18",
-       "text": "50,000 −30,000 ="
-      },
-      {
-       "id": "e19",
-       "text": "Own figures",
-       "detail": [
-        "shaded"
-       ]
       }
      ],
      "lifted": "geometry"
@@ -232650,15 +233993,19 @@
      "items": [
       {
        "id": "e1",
-       "text": "Higher employment rates lead to an increase / decrease in government spending on social welfare."
+       "text": "(i) An increase in the cost of goods from one year to the next is called inflation / deflation. — inflation"
       },
       {
        "id": "e2",
-       "text": "Higher interest rates mean the total cost of borrowing will be higher / lower for consumers."
+       "text": "(ii) Higher employment rates lead to an increase / decrease in government spending on social welfare. — decrease"
       },
       {
        "id": "e3",
-       "text": "A recession will lead to an increase / decrease in spending amongst consumers."
+       "text": "(iii) Higher interest rates mean the total cost of borrowing will be higher / lower for consumers. — higher"
+      },
+      {
+       "id": "e4",
+       "text": "(iv) A recession will lead to an increase / decrease in spending amongst consumers. — decrease"
       }
      ],
      "lifted": "geometry"
@@ -232769,7 +234116,17 @@
      4,
      12
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 12,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Launch / Growth / Maturity"
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -233122,31 +234479,15 @@
      "items": [
       {
        "id": "e1",
-       "text": "Statement European European Council of"
+       "text": "(i) Manage the day to day running of the EU — European Commission"
       },
       {
        "id": "e2",
-       "text": "✓ — Commission"
+       "text": "(ii) Debate and approve EU law. — European Parliament"
       },
       {
        "id": "e3",
-       "text": "Manage the day to day running of the EU"
-      },
-      {
-       "id": "e4",
-       "text": "(ii) Debate and approve — Parliament"
-      },
-      {
-       "id": "e5",
-       "text": "EU law."
-      },
-      {
-       "id": "e6",
-       "text": "✓ — the EU"
-      },
-      {
-       "id": "e7",
-       "text": "Adopt EU Law and co- ordinates EU Policy"
+       "text": "(iii) Adopt EU Law and co- ordinates EU Policy — Council of the EU"
       }
      ],
      "lifted": "geometry"
@@ -233577,7 +234918,21 @@
      4,
      11
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 11,
+     "items": [
+      {
+       "id": "e1",
+       "text": "A team-based organisational structure is called a Matrix organisational structure."
+      },
+      {
+       "id": "e2",
+       "text": "Directly supervising a large number of employees means a manager has a Wide span of control."
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   },
   {
@@ -240771,7 +242126,7 @@
      "items": [
       {
        "id": "e1",
-       "text": "Consent to contract: Both parties must enter the contract of their Explain own free will. They must agree to the contract without undue Example influence. If there is no choice, there is no consent. Consent must be",
+       "text": "Consent to contract: Both parties must enter the contract of their own free will. They must agree to the contract without undue influence. If there is no choice, there is no consent. Consent must be",
        "detail": [
         "honest and voluntary.",
         "Example required for full marks.",
@@ -240813,7 +242168,18 @@
       },
       {
        "id": "e7",
-       "text": "Companies operating outside their powers/Ultra vires"
+       "text": "Companies operating outside their powers/Ultra vires Consideration: This refers to the exchange of value in a contract. Each party in a contract must give something of value to the other party.",
+       "detail": [
+        "So long as consideration exists, a court of law will not question its",
+        "adequacy, provided it is of some value. Consideration is usually some",
+        "monetary payment, but it could also be something valuable",
+        "exchanged as part of the contract.",
+        "Example required for full marks.",
+        "Legality of form: Certain contracts, to be considered legal, must be",
+        "drawn up in a particular manner. Some contracts must be in writing if",
+        "they are to be legally valid.",
+        "Example required for full marks."
+       ]
       }
      ],
      "lifted": "geometry"
@@ -241042,7 +242408,119 @@
       },
       {
        "id": "e2",
-       "text": "Government and a business"
+       "text": "Co-operative: (Win/Win)"
+      },
+      {
+       "id": "e3",
+       "text": "Shared distribution or logistics"
+      },
+      {
+       "id": "e4",
+       "text": "Industry standards and joint research"
+      },
+      {
+       "id": "e5",
+       "text": "Joint purchasing agreements"
+      },
+      {
+       "id": "e6",
+       "text": "Shared infrastructure"
+      },
+      {
+       "id": "e7",
+       "text": "Training and apprenticeships"
+      },
+      {
+       "id": "e8",
+       "text": "Event or location sharing"
+      },
+      {
+       "id": "e9",
+       "text": "Competitive: (Win/Lose)"
+      },
+      {
+       "id": "e10",
+       "text": "Price competition"
+      },
+      {
+       "id": "e11",
+       "text": "Product differentiation"
+      },
+      {
+       "id": "e12",
+       "text": "Advertising and promotion"
+      },
+      {
+       "id": "e13",
+       "text": "Location competition"
+      },
+      {
+       "id": "e14",
+       "text": "Customer service competition"
+      },
+      {
+       "id": "e15",
+       "text": "Innovation and technology"
+      },
+      {
+       "id": "e16",
+       "text": "Government and business"
+      },
+      {
+       "id": "e17",
+       "text": "Co-operative: (Win/Win)"
+      },
+      {
+       "id": "e18",
+       "text": "Grants and subsidies"
+      },
+      {
+       "id": "e19",
+       "text": "Public–private partnerships (PPPs)"
+      },
+      {
+       "id": "e20",
+       "text": "Training and employment schemes"
+      },
+      {
+       "id": "e21",
+       "text": "Infrastructure support"
+      },
+      {
+       "id": "e22",
+       "text": "Research and development (R&D)"
+      },
+      {
+       "id": "e23",
+       "text": "Regulatory cooperation"
+      },
+      {
+       "id": "e24",
+       "text": "Competitive: (Lose/Win)"
+      },
+      {
+       "id": "e25",
+       "text": "Taxation"
+      },
+      {
+       "id": "e26",
+       "text": "Environmental regulations"
+      },
+      {
+       "id": "e27",
+       "text": "Governments enforce minimum wage, working hours, and health and safety laws, while some businesses push back to keep labour costs low."
+      },
+      {
+       "id": "e28",
+       "text": "Consumer protection"
+      },
+      {
+       "id": "e29",
+       "text": "Governments demand accurate financial reporting and disclosure, while businesses may prefer less scrutiny."
+      },
+      {
+       "id": "e30",
+       "text": "Governments regulate products like alcohol, tobacco, or sugary foods for public welfare, while businesses may lobby against restrictions that limit sales."
       }
      ],
      "lifted": "geometry"
@@ -245310,23 +246788,23 @@
      "items": [
       {
        "id": "e1",
-       "text": "Net profit x 100"
+       "text": "Net profit margin"
       },
       {
        "id": "e2",
-       "text": "Sales 1"
+       "text": "Net profit x 100"
       },
       {
        "id": "e3",
-       "text": "33,750 x 100 = 7.5 %"
+       "text": "Sales 1"
       },
       {
        "id": "e4",
-       "text": "450,000 1 Own figures"
+       "text": "33,750 x 100 = 7.5 %"
       },
       {
        "id": "e5",
-       "text": "shaded"
+       "text": "450,000 1 Own figures"
       }
      ],
      "lifted": "geometry"
@@ -245516,7 +246994,10 @@
      "items": [
       {
        "id": "e1",
-       "text": "Current Assets – Closing stock : Current liabilities"
+       "text": "Acid test ratio",
+       "detail": [
+        "Current Assets – Closing stock : Current liabilities"
+       ]
       },
       {
        "id": "e2",
@@ -245528,13 +247009,6 @@
       },
       {
        "id": "e4",
-       "text": "Own figures",
-       "detail": [
-        "shaded"
-       ]
-      },
-      {
-       "id": "e5",
        "text": "0.90 : 1"
       }
      ],
@@ -246443,7 +247917,187 @@
      69,
      70
     ],
-    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice."
+    "markingGuideNote": "The official support notes give possible responses, not an exhaustive list. Other relevant answers are considered on their merits. Apply the published allocation to your answer; do not count the same point twice.",
+    "expected": {
+     "page": 68,
+     "items": [
+      {
+       "id": "e1",
+       "text": "Short-Term Implications"
+      },
+      {
+       "id": "e2",
+       "text": "Increased Costs:"
+      },
+      {
+       "id": "e3",
+       "text": "Operational Expenses: Expanding a business often involves higher costs in the short term, including setup costs for new locations, hiring additional staff, marketing, and developing new products or services.",
+       "detail": [
+        "There may also be increased logistical costs."
+       ]
+      },
+      {
+       "id": "e4",
+       "text": "Debt: If the expansion is financed through loans or credit, the business may face additional financial strain in the short term due to interest payments and debt management."
+      },
+      {
+       "id": "e5",
+       "text": "Disruption to Existing Operations:"
+      },
+      {
+       "id": "e6",
+       "text": "Expansion can divert attention and resources away from the core business, leading to operational disruptions. For example, existing staff may be overburdened, or resources may be stretched thin as the",
+       "detail": [
+        "business tries to juggle both the expansion and ongoing operations."
+       ]
+      },
+      {
+       "id": "e7",
+       "text": "Cultural or Organisational Strain: Integrating new teams, products, or locations may create friction with existing employees or systems, requiring time for adjustment and alignment."
+      },
+      {
+       "id": "e8",
+       "text": "Market Risk:"
+      },
+      {
+       "id": "e9",
+       "text": "The company may face uncertainty in new markets, whether that be new geographic regions, customer segments, or product categories.",
+       "detail": [
+        "The demand may not meet expectations, leading to possible losses."
+       ]
+      },
+      {
+       "id": "e10",
+       "text": "There could also be risks from competitors already established in those markets, which may limit growth opportunities in the short term."
+      },
+      {
+       "id": "e11",
+       "text": "Brand and Reputation Risks:"
+      },
+      {
+       "id": "e12",
+       "text": "If the expansion is rushed or poorly executed, it can damage the company's brand reputation. Customers may experience lower quality service, leading to dissatisfaction and negative reviews."
+      },
+      {
+       "id": "e13",
+       "text": "New product launches, for example, might face problems such as quality control issues or underperformance, which can harm customer trust."
+      },
+      {
+       "id": "e14",
+       "text": "Cash Flow Pressures:"
+      },
+      {
+       "id": "e15",
+       "text": "The upfront investment required for expansion can lead to short- term cash flow issues, particularly if the business relies heavily on working capital or short-term profits to operate. Without careful",
+       "detail": [
+        "cash flow management, this could jeopardise the business’s ability",
+        "to meet its financial obligations."
+       ]
+      },
+      {
+       "id": "e16",
+       "text": "Long-Term Implications"
+      },
+      {
+       "id": "e17",
+       "text": "Revenue Generation:",
+       "detail": [
+        "In the long run, successful expansion can lead to significantly higher",
+        "revenues as the business taps into new markets, customer segments,",
+        "or product lines."
+       ]
+      },
+      {
+       "id": "e18",
+       "text": "Diversification:"
+      },
+      {
+       "id": "e19",
+       "text": "Expansion often helps a company diversify its income sources, which can reduce the risk of dependency on a single market or product. This makes the company more resilient to economic",
+       "detail": [
+        "downturns or changes in customer preferences."
+       ]
+      },
+      {
+       "id": "e20",
+       "text": "Increased Market Share:"
+      },
+      {
+       "id": "e21",
+       "text": "Over time, expansion can help the company secure a larger portion of the market, both in existing and new regions. This could lead to economies of scale, reduced competition, and the ability to dictate",
+       "detail": [
+        "market trends."
+       ]
+      },
+      {
+       "id": "e22",
+       "text": "Brand Recognition and Loyalty:"
+      },
+      {
+       "id": "e23",
+       "text": "A successful expansion strengthens the company's brand presence.",
+       "detail": [
+        "As it builds a loyal customer base in multiple regions or with various",
+        "products, the brand may become more trusted and recognised on a",
+        "broader scale."
+       ]
+      },
+      {
+       "id": "e24",
+       "text": "The brand can potentially attract new partners, suppliers, or investors, further propelling growth."
+      },
+      {
+       "id": "e25",
+       "text": "Economies of Scale:"
+      },
+      {
+       "id": "e26",
+       "text": "Expansion often results in economies of scale, where the company can reduce costs per unit as production and operations grow. Bulk buying, optimized supply chains, and better resource allocation can",
+       "detail": [
+        "all contribute to improved margins in the long run."
+       ]
+      },
+      {
+       "id": "e27",
+       "text": "Innovation and Competitive Edge:"
+      },
+      {
+       "id": "e28",
+       "text": "To compete effectively in expanded markets, businesses often need to innovate, whether through new technologies, services, or business models. This innovation can provide a long-term",
+       "detail": [
+        "competitive advantage."
+       ]
+      },
+      {
+       "id": "e29",
+       "text": "Companies that succeed in expansion often become leaders in their industry, having established themselves in multiple niches or global markets."
+      },
+      {
+       "id": "e30",
+       "text": "Talent Acquisition and Retention:"
+      },
+      {
+       "id": "e31",
+       "text": "Expanding a business may involve hiring more employees, and this can help the company access a wider pool of talent. Long-term expansion may lead to stronger, more diversified teams with new",
+       "detail": [
+        "skills that contribute to innovation."
+       ]
+      },
+      {
+       "id": "e32",
+       "text": "However, managing a larger workforce can be challenging and requires effective leadership and human resources management."
+      },
+      {
+       "id": "e33",
+       "text": "Global Expansion and Risk Diversification:"
+      },
+      {
+       "id": "e34",
+       "text": "If a business expands internationally, it can protect itself from local economic downturns or geopolitical risks. By diversifying its market base, the company may stabilise revenue and growth over time."
+      }
+     ],
+     "lifted": "geometry"
+    }
    }
   }
  ],

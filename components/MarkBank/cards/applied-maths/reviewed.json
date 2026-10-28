@@ -985,13 +985,31 @@
               0.07,
               0.27,
               0.95,
-              0.4172
+              0.3517
             ]
           }
         },
         {
           "id": "allocation-2",
           "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.07,
+              0.3497,
+              0.95,
+              0.4172
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
           "credit": [
             0,
             2,
@@ -1008,8 +1026,8 @@
           }
         },
         {
-          "id": "allocation-3",
-          "label": "Published step 3",
+          "id": "allocation-4",
+          "label": "Published step 4",
           "credit": [
             0,
             2,
@@ -1022,24 +1040,6 @@
               0.5081,
               0.95,
               0.6822
-            ]
-          }
-        },
-        {
-          "id": "allocation-4",
-          "label": "Published step 4",
-          "credit": [
-            0,
-            2,
-            5
-          ],
-          "region": {
-            "p": 9,
-            "r": [
-              0.07,
-              0.6802,
-              0.95,
-              0.71
             ]
           }
         }
@@ -1127,7 +1127,7 @@
               0.07,
               0.71,
               0.95,
-              0.7368
+              0.7584
             ]
           }
         },
@@ -1143,7 +1143,7 @@
             "p": 9,
             "r": [
               0.07,
-              0.7348,
+              0.7489,
               0.95,
               0.8354
             ]
@@ -1427,7 +1427,7 @@
               0.07,
               0.325,
               0.95,
-              0.3974
+              0.4871
             ]
           }
         }
@@ -2736,7 +2736,7 @@
               0.07,
               0.335,
               0.95,
-              0.4474
+              0.5374
             ]
           }
         }
@@ -2823,7 +2823,7 @@
               0.07,
               0.545,
               0.95,
-              0.6058
+              0.6314
             ]
           }
         },
@@ -2839,7 +2839,7 @@
             "p": 17,
             "r": [
               0.07,
-              0.6038,
+              0.6219,
               0.95,
               0.6632
             ]
@@ -4436,7 +4436,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.07,
+              0.485,
+              0.97,
+              0.5506
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -4445,7 +4454,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.07,
+              0.5486,
+              0.97,
+              0.6451
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -4454,7 +4472,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.07,
+              0.6431,
+              0.97,
+              0.7107
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -5875,7 +5902,7 @@
               0.07,
               0.44,
               0.97,
-              0.5405
+              0.57
             ]
           }
         }
@@ -6920,7 +6947,7 @@
               0.07,
               0.412,
               0.97,
-              0.5225
+              0.592
             ]
           }
         }
@@ -7008,7 +7035,7 @@
               0.07,
               0.598,
               0.97,
-              0.643
+              0.6345
             ]
           }
         }
@@ -7270,7 +7297,7 @@
               0.07,
               0.745,
               0.97,
-              0.785
+              0.7792
             ]
           }
         }
@@ -7691,7 +7718,7 @@
               0.07,
               0.635,
               0.97,
-              0.7259
+              0.6877
             ]
           }
         },
@@ -7707,9 +7734,9 @@
             "p": 12,
             "r": [
               0.07,
-              0.7239,
+              0.6857,
               0.97,
-              0.737
+              0.7259
             ]
           }
         }
@@ -7790,7 +7817,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.07,
+              0.741,
+              0.97,
+              0.7751
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -7799,7 +7835,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.07,
+              0.7731,
+              0.97,
+              0.7969
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -8534,7 +8579,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.26,
+              0.96,
+              0.3392
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -8543,7 +8597,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.26,
+              0.96,
+              0.3392
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -9107,7 +9170,7 @@
               0.05,
               0.3287,
               0.96,
-              0.358
+              0.4035
             ]
           }
         },
@@ -9123,7 +9186,7 @@
             "p": 7,
             "r": [
               0.05,
-              0.356,
+              0.394,
               0.96,
               0.6394
             ]
@@ -9691,7 +9754,7 @@
               0.05,
               0.27,
               0.96,
-              0.3531
+              0.4023
             ]
           }
         },
@@ -9707,7 +9770,7 @@
             "p": 10,
             "r": [
               0.05,
-              0.3511,
+              0.3928,
               0.96,
               0.5005
             ]
@@ -9833,7 +9896,7 @@
               0.05,
               0.29,
               0.96,
-              0.3647
+              0.4766
             ]
           }
         },
@@ -9849,7 +9912,7 @@
             "p": 11,
             "r": [
               0.05,
-              0.3627,
+              0.4671,
               0.96,
               0.5532
             ]
@@ -10667,7 +10730,7 @@
               0.05,
               0.56,
               0.96,
-              0.805
+              0.7891
             ]
           }
         }
@@ -10997,7 +11060,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.5,
+              0.96,
+              0.5518
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -11006,7 +11078,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.5498,
+              0.96,
+              0.62
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -11511,7 +11592,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.24,
+              0.96,
+              0.4304
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -11520,7 +11610,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.24,
+              0.96,
+              0.4304
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -11529,7 +11628,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.4284,
+              0.96,
+              0.5206
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -11616,7 +11724,7 @@
               0.05,
               0.53,
               0.96,
-              0.6024
+              0.7337
             ]
           }
         },
@@ -11632,7 +11740,7 @@
             "p": 19,
             "r": [
               0.05,
-              0.6004,
+              0.7242,
               0.96,
               0.7554
             ]
@@ -12690,7 +12798,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.49,
+              0.96,
+              0.564
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -12699,7 +12816,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.562,
+              0.96,
+              0.6732
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -12708,7 +12834,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.6712,
+              0.96,
+              0.7388
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -13906,7 +14041,7 @@
               0.05,
               0.36,
               0.96,
-              0.4678
+              0.5153
             ]
           }
         }
@@ -14188,7 +14323,7 @@
               0.05,
               0.352,
               0.96,
-              0.4151
+              0.4808
             ]
           }
         },
@@ -14204,7 +14339,7 @@
             "p": 8,
             "r": [
               0.05,
-              0.4131,
+              0.4713,
               0.96,
               0.5243
             ]
@@ -15153,7 +15288,7 @@
               0.05,
               0.34,
               0.96,
-              0.4379
+              0.4873
             ]
           }
         },
@@ -15169,7 +15304,7 @@
             "p": 11,
             "r": [
               0.05,
-              0.4359,
+              0.4778,
               0.96,
               0.5662
             ]
@@ -15295,7 +15430,7 @@
               0.05,
               0.295,
               0.96,
-              0.3766
+              0.4554
             ]
           }
         },
@@ -15311,7 +15446,7 @@
             "p": 12,
             "r": [
               0.05,
-              0.3746,
+              0.4459,
               0.96,
               0.5159
             ]
@@ -15818,7 +15953,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.05,
+              0.43,
+              0.96,
+              0.5297
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -15827,7 +15971,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.05,
+              0.5277,
+              0.96,
+              0.6171
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -16190,7 +16343,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.325,
+              0.96,
+              0.3993
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -16199,7 +16361,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.325,
+              0.96,
+              0.3993
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -16208,7 +16379,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.3973,
+              0.96,
+              0.5167
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -16217,7 +16397,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.5147,
+              0.96,
+              0.6205
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -16639,7 +16828,7 @@
               0.05,
               0.41,
               0.96,
-              0.7772
+              0.6898
             ]
           }
         },
@@ -16655,9 +16844,9 @@
             "p": 7,
             "r": [
               0.05,
-              0.7752,
+              0.6878,
               0.96,
-              0.79
+              0.7772
             ]
           }
         }
@@ -16745,7 +16934,7 @@
               0.05,
               0.795,
               0.96,
-              0.8264
+              0.8645
             ]
           }
         },
@@ -16761,7 +16950,7 @@
             "p": 7,
             "r": [
               0.05,
-              0.8244,
+              0.855,
               0.96,
               0.8893
             ]
@@ -17223,7 +17412,7 @@
               0.05,
               0.645,
               0.96,
-              0.8729
+              0.8837
             ]
           }
         }
@@ -18296,7 +18485,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.31,
+              0.96,
+              0.3694
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -18305,7 +18503,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.3674,
+              0.96,
+              0.4527
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -18314,7 +18521,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.4507,
+              0.96,
+              0.551
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -18323,7 +18539,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.549,
+              0.96,
+              0.6221
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -18508,7 +18733,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.235,
+              0.96,
+              0.2691
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -18517,7 +18751,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.235,
+              0.96,
+              0.2691
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -18526,7 +18769,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.2671,
+              0.96,
+              0.2964
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -18535,7 +18787,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.2944,
+              0.96,
+              0.4466
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -18614,7 +18875,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.2322,
+              0.96,
+              0.481
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -18623,7 +18893,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.479,
+              0.96,
+              0.5439
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -18632,7 +18911,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.5419,
+              0.96,
+              0.6204
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -18641,7 +18929,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.5419,
+              0.96,
+              0.6204
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -18650,7 +18947,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.6184,
+              0.96,
+              0.6765
+            ]
+          }
         },
         {
           "id": "allocation-6",
@@ -18659,7 +18965,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.6675,
+              0.96,
+              0.8446
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -19128,7 +19443,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.24,
+              0.96,
+              0.2806
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -19137,7 +19461,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.2786,
+              0.96,
+              0.3244
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -19146,7 +19479,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.2786,
+              0.96,
+              0.3244
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -19155,7 +19497,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.3224,
+              0.96,
+              0.409
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -19234,7 +19585,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.33791,
+              0.96,
+              0.5253
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -19243,7 +19603,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.5233,
+              0.96,
+              0.5882
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -19252,7 +19621,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.5233,
+              0.96,
+              0.5882
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -19261,7 +19639,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.5862,
+              0.96,
+              0.6919
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -19270,7 +19657,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.6899,
+              0.96,
+              0.7712
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -19437,7 +19833,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.3314,
+              0.96,
+              0.4232
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -19446,7 +19851,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.4212,
+              0.96,
+              0.4942
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -19455,7 +19869,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.4922,
+              0.96,
+              0.6117
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -20265,7 +20688,7 @@
               0.05,
               0.35,
               0.96,
-              0.417
+              0.4105
             ]
           }
         }
@@ -21413,7 +21836,7 @@
               0.05,
               0.402,
               0.96,
-              0.4759
+              0.5416
             ]
           }
         }
@@ -22042,7 +22465,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.42,
+              0.96,
+              0.4534
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -22051,7 +22483,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.4514,
+              0.96,
+              0.485
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -22237,7 +22678,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.555,
+              0.96,
+              0.6091
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -22246,7 +22696,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.6071,
+              0.96,
+              0.6583
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -22255,7 +22714,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.6563,
+              0.96,
+              0.702
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -22264,7 +22732,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.7,
+              0.96,
+              0.762
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -22430,7 +22907,7 @@
               0.05,
               0.42,
               0.96,
-              0.5174
+              0.578
             ]
           }
         }
@@ -23577,7 +24054,7 @@
               0.05,
               0.555,
               0.96,
-              0.648
+              0.6444
             ]
           }
         }
@@ -23782,7 +24259,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.195,
+              0.96,
+              0.2517
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -23791,7 +24277,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.2497,
+              0.96,
+              0.3773
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -23800,7 +24295,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.2497,
+              0.96,
+              0.3773
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -23809,7 +24313,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 4,
+            "r": [
+              0.05,
+              0.3753,
+              0.96,
+              0.4433
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -23895,7 +24408,7 @@
               0.05,
               0.31,
               0.96,
-              0.4172
+              0.4253
             ]
           }
         },
@@ -23911,7 +24424,7 @@
             "p": 5,
             "r": [
               0.05,
-              0.4152,
+              0.4158,
               0.96,
               0.45
             ]
@@ -24001,7 +24514,7 @@
               0.05,
               0.475,
               0.96,
-              0.52195
+              0.5156
             ]
           }
         }
@@ -26366,7 +26879,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.19,
+              0.96,
+              0.3606
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -26375,7 +26897,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.19,
+              0.96,
+              0.3606
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -26384,7 +26915,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.3586,
+              0.96,
+              0.4646
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -26393,7 +26933,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.4626,
+              0.96,
+              0.5246
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -26473,7 +27022,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.25212,
+              0.96,
+              0.5006
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -26482,7 +27040,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.4986,
+              0.96,
+              0.5963
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -26562,7 +27129,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.5328,
+              0.96,
+              0.6455
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -26571,7 +27147,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.6435,
+              0.96,
+              0.6782
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -26898,7 +27483,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.262,
+              0.96,
+              0.5415
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -26907,7 +27501,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.262,
+              0.96,
+              0.5415
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -26916,7 +27519,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.5395,
+              0.96,
+              0.61
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -26925,7 +27537,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.5395,
+              0.96,
+              0.61
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -26934,7 +27555,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.608,
+              0.96,
+              0.7467
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -27109,13 +27739,31 @@
               0.05,
               0.22,
               0.96,
-              0.4289
+              0.3142
             ]
           }
         },
         {
           "id": "allocation-2",
           "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.3122,
+              0.96,
+              0.4289
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
           "credit": [
             0,
             2,
@@ -27132,8 +27780,8 @@
           }
         },
         {
-          "id": "allocation-3",
-          "label": "Published step 3",
+          "id": "allocation-4",
+          "label": "Published step 4",
           "credit": [
             0,
             2,
@@ -27146,24 +27794,6 @@
               0.4842,
               0.96,
               0.601
-            ]
-          }
-        },
-        {
-          "id": "allocation-4",
-          "label": "Published step 4",
-          "credit": [
-            0,
-            2,
-            5
-          ],
-          "region": {
-            "p": 20,
-            "r": [
-              0.05,
-              0.599,
-              0.96,
-              0.615
             ]
           }
         }
@@ -27333,7 +27963,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.225,
+              0.96,
+              0.2608
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -27342,7 +27981,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.2588,
+              0.96,
+              0.3073
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -27351,7 +27999,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.2588,
+              0.96,
+              0.3073
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -27360,7 +28017,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.3053,
+              0.96,
+              0.4657
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -27369,7 +28035,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.4637,
+              0.96,
+              0.6514
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -28438,7 +29113,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.372,
+              0.96,
+              0.4081
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -28517,7 +29201,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.3733,
+              0.96,
+              0.4382
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -28526,7 +29219,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.4362,
+              0.96,
+              0.5
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -28606,7 +29308,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.531,
+              0.96,
+              0.5966
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -28686,7 +29397,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.57184,
+              0.96,
+              0.6765
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -28765,7 +29485,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.708,
+              0.96,
+              0.7769
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -28844,7 +29573,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.79,
+              0.96,
+              0.8704
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -29388,7 +30126,7 @@
               0.05,
               0.33862,
               0.96,
-              0.4111
+              0.446
             ]
           }
         }
@@ -29652,7 +30390,7 @@
               0.05,
               0.325,
               0.96,
-              0.4107
+              0.4604
             ]
           }
         },
@@ -29668,7 +30406,7 @@
             "p": 8,
             "r": [
               0.05,
-              0.4087,
+              0.4509,
               0.96,
               0.5173
             ]
@@ -30211,7 +30949,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.355,
+              0.96,
+              0.3916
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -30220,7 +30967,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.3896,
+              0.96,
+              0.4298
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -30644,7 +31400,7 @@
               0.05,
               0.325,
               0.96,
-              0.4152
+              0.4762
             ]
           }
         },
@@ -30660,7 +31416,7 @@
             "p": 11,
             "r": [
               0.05,
-              0.4132,
+              0.4667,
               0.96,
               0.5408
             ]
@@ -30893,7 +31649,7 @@
               0.05,
               0.48814,
               0.96,
-              0.543
+              0.5129
             ]
           }
         }
@@ -32654,7 +33410,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.245,
+              0.96,
+              0.3404
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -32663,7 +33428,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.3384,
+              0.96,
+              0.4033
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -33565,7 +34339,7 @@
               0.05,
               0.048,
               0.96,
-              0.121
+              0.2833
             ]
           }
         }
@@ -33654,7 +34428,7 @@
               0.05,
               0.048,
               0.96,
-              0.2277
+              0.2833
             ]
           }
         }
@@ -34574,7 +35348,7 @@
               0.05,
               0.358,
               0.96,
-              0.4906
+              0.3922
             ]
           }
         },
@@ -34590,9 +35364,9 @@
             "p": 15,
             "r": [
               0.05,
-              0.4886,
+              0.3902,
               0.96,
-              0.51
+              0.4906
             ]
           }
         }
@@ -35089,7 +35863,7 @@
               0.05,
               0.06,
               0.96,
-              0.3513
+              0.397
             ]
           }
         }
@@ -35178,7 +35952,7 @@
               0.05,
               0.06,
               0.96,
-              0.3677
+              0.397
             ]
           }
         }
@@ -35703,7 +36477,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.316,
+              0.96,
+              0.3483
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -35712,7 +36495,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.316,
+              0.96,
+              0.3483
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -35721,7 +36513,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.3463,
+              0.96,
+              0.4166
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -36055,7 +36856,7 @@
               0.05,
               0.412,
               0.96,
-              0.5626
+              0.4779
             ]
           }
         },
@@ -36071,9 +36872,9 @@
             "p": 21,
             "r": [
               0.05,
-              0.5606,
+              0.4759,
               0.96,
-              0.575
+              0.5626
             ]
           }
         }
@@ -36161,7 +36962,7 @@
               0.05,
               0.587,
               0.96,
-              0.7047
+              0.6227
             ]
           }
         },
@@ -36177,9 +36978,9 @@
             "p": 21,
             "r": [
               0.05,
-              0.7027,
+              0.6207,
               0.96,
-              0.718
+              0.7047
             ]
           }
         }
@@ -36903,7 +37704,7 @@
               0.05,
               0.3,
               0.96,
-              0.3945
+              0.442
             ]
           }
         }
@@ -37354,7 +38155,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.395,
+              0.96,
+              0.4294
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -37363,7 +38173,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.4274,
+              0.96,
+              0.4622
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -37442,7 +38261,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.39424,
+              0.96,
+              0.4923
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -37521,7 +38349,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.39424,
+              0.96,
+              0.5523
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -37530,7 +38367,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.5503,
+              0.96,
+              0.5851
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -37609,7 +38455,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.615,
+              0.96,
+              0.6834
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -37688,7 +38543,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.691,
+              0.96,
+              0.749
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -37697,7 +38561,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.747,
+              0.96,
+              0.8095
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -38435,7 +39308,7 @@
               0.05,
               0.34,
               0.96,
-              0.5087
+              0.5197
             ]
           }
         }
@@ -38735,7 +39608,7 @@
               0.05,
               0.304,
               0.96,
-              0.384
+              0.3721
             ]
           }
         }
@@ -39134,7 +40007,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.331,
+              0.96,
+              0.3658
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -39143,7 +40025,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.3638,
+              0.96,
+              0.404
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -39567,7 +40458,7 @@
               0.05,
               0.355,
               0.96,
-              0.4316
+              0.4991
             ]
           }
         }
@@ -40009,7 +40900,7 @@
               0.05,
               0.753,
               0.96,
-              0.803
+              0.8538
             ]
           }
         },
@@ -40025,7 +40916,7 @@
             "p": 11,
             "r": [
               0.05,
-              0.801,
+              0.8443,
               0.96,
               0.8849
             ]
@@ -41546,7 +42437,7 @@
               0.05,
               0.55,
               0.96,
-              0.7342
+              0.7776
             ]
           }
         },
@@ -41562,7 +42453,7 @@
             "p": 6,
             "r": [
               0.05,
-              0.7322,
+              0.7681,
               0.96,
               0.80608
             ]
@@ -41653,7 +42544,7 @@
               0.05,
               0.22,
               0.96,
-              0.3202
+              0.391
             ]
           }
         },
@@ -41669,7 +42560,7 @@
             "p": 7,
             "r": [
               0.05,
-              0.3182,
+              0.3815,
               0.96,
               0.4431
             ]
@@ -43559,7 +44450,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.336,
+              0.96,
+              0.3721
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -43568,7 +44468,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.336,
+              0.96,
+              0.3721
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -43577,7 +44486,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.3701,
+              0.96,
+              0.5114
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -43586,7 +44504,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.5094,
+              0.96,
+              0.5688
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -43595,7 +44522,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.5668,
+              0.96,
+              0.6838
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -43805,7 +44741,7 @@
               0.05,
               0.5702,
               0.96,
-              0.7126
+              0.7583
             ]
           }
         },
@@ -43821,7 +44757,7 @@
             "p": 16,
             "r": [
               0.05,
-              0.7106,
+              0.7488,
               0.96,
               0.8113
             ]
@@ -43912,7 +44848,7 @@
               0.05,
               0.257,
               0.96,
-              0.48089
+              0.4708
             ]
           }
         }
@@ -44089,7 +45025,7 @@
               0.05,
               0.544,
               0.96,
-              0.618
+              0.6101
             ]
           }
         }
@@ -44443,7 +45379,7 @@
               0.05,
               0.3185,
               0.96,
-              0.3697
+              0.4119
             ]
           }
         },
@@ -44459,7 +45395,7 @@
             "p": 19,
             "r": [
               0.05,
-              0.3677,
+              0.4024,
               0.96,
               0.4707
             ]
@@ -44549,7 +45485,7 @@
               0.05,
               0.482,
               0.96,
-              0.7849
+              0.7111
             ]
           }
         },
@@ -44565,9 +45501,9 @@
             "p": 19,
             "r": [
               0.05,
-              0.7829,
+              0.7091,
               0.96,
-              0.797
+              0.7849
             ]
           }
         }
@@ -44655,7 +45591,7 @@
               0.05,
               0.8,
               0.96,
-              0.8398
+              0.851
             ]
           }
         }
@@ -45321,7 +46257,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.6188,
+              0.96,
+              0.8596
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -45401,7 +46346,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.6188,
+              0.96,
+              0.8596
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -46653,7 +47607,7 @@
               0.05,
               0.7263,
               0.96,
-              0.7886
+              0.8032
             ]
           }
         }
@@ -47043,7 +47997,7 @@
               0.05,
               0.679,
               0.96,
-              0.7282
+              0.7199
             ]
           }
         }
@@ -47237,7 +48191,7 @@
               0.05,
               0.328,
               0.96,
-              0.4085
+              0.4326
             ]
           }
         }
@@ -48349,7 +49303,7 @@
               0.05,
               0.3635,
               0.96,
-              0.5155
+              0.4745
             ]
           }
         },
@@ -48365,9 +49319,9 @@
             "p": 10,
             "r": [
               0.05,
-              0.5135,
+              0.4725,
               0.96,
-              0.55696
+              0.5155
             ]
           }
         }
@@ -48883,7 +49837,7 @@
               0.05,
               0.344,
               0.96,
-              0.4458
+              0.5036
             ]
           }
         },
@@ -48899,7 +49853,7 @@
             "p": 12,
             "r": [
               0.05,
-              0.4438,
+              0.4941,
               0.96,
               0.5879
             ]
@@ -49733,7 +50687,7 @@
               0.05,
               0.21361,
               0.96,
-              0.3047
+              0.357
             ]
           }
         }
@@ -49821,7 +50775,7 @@
               0.05,
               0.405,
               0.96,
-              0.5724
+              0.4631
             ]
           }
         },
@@ -49837,9 +50791,9 @@
             "p": 4,
             "r": [
               0.05,
-              0.5704,
+              0.4611,
               0.96,
-              0.609
+              0.5724
             ]
           }
         }
@@ -53237,7 +54191,7 @@
               0.05,
               0.3,
               0.96,
-              0.3973
+              0.3372
             ]
           }
         },
@@ -53253,9 +54207,9 @@
             "p": 19,
             "r": [
               0.05,
-              0.3953,
+              0.3352,
               0.96,
-              0.45
+              0.3973
             ]
           }
         }
@@ -53343,7 +54297,7 @@
               0.05,
               0.45242,
               0.96,
-              0.6185
+              0.482
             ]
           }
         },
@@ -53359,9 +54313,9 @@
             "p": 19,
             "r": [
               0.05,
-              0.6165,
+              0.48,
               0.96,
-              0.637
+              0.6185
             ]
           }
         }
@@ -53690,7 +54644,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.272,
+              0.96,
+              0.552
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -53699,7 +54662,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.55,
+              0.96,
+              0.6148
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -53708,7 +54680,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.55,
+              0.96,
+              0.6148
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -53717,7 +54698,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.6128,
+              0.96,
+              0.7678
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -53726,7 +54716,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.7658,
+              0.96,
+              0.8006
+            ]
+          }
         },
         {
           "id": "allocation-6",
@@ -53735,7 +54734,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.7986,
+              0.96,
+              0.8607
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -54281,7 +55289,7 @@
               0.05,
               0.33,
               0.96,
-              0.4114
+              0.445
             ]
           }
         }
@@ -56029,7 +57037,7 @@
               0.05,
               0.0841,
               0.96,
-              0.1995
+              0.2335
             ]
           }
         }
@@ -56886,7 +57894,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.31,
+              0.96,
+              0.343
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -56895,7 +57912,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.341,
+              0.96,
+              0.4495
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -56904,7 +57930,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.4475,
+              0.96,
+              0.549
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -57310,7 +58345,7 @@
               0.05,
               0.357,
               0.96,
-              0.446
+              0.4893
             ]
           }
         }
@@ -59695,7 +60730,7 @@
               0.05,
               0.067,
               0.96,
-              0.2474
+              0.2184
             ]
           }
         },
@@ -59711,9 +60746,9 @@
             "p": 8,
             "r": [
               0.05,
-              0.2454,
+              0.2164,
               0.96,
-              0.3866
+              0.2474
             ]
           }
         },
@@ -59729,9 +60764,9 @@
             "p": 8,
             "r": [
               0.05,
-              0.3846,
+              0.2454,
               0.96,
-              0.458
+              0.3866
             ]
           }
         }
@@ -60523,7 +61558,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.15555,
+              0.96,
+              0.3754
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -60603,7 +61647,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.15555,
+              0.96,
+              0.3754
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -61496,7 +62549,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.311,
+              0.96,
+              0.3437
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -61505,7 +62567,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.311,
+              0.96,
+              0.3437
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -61514,7 +62585,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 15,
+            "r": [
+              0.05,
+              0.3417,
+              0.96,
+              0.4394
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -61779,13 +62859,31 @@
               0.05,
               0.198,
               0.96,
-              0.515
+              0.4309
             ]
           }
         },
         {
           "id": "allocation-2",
           "label": "Published step 2",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.4289,
+              0.96,
+              0.515
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
           "credit": [
             0,
             2,
@@ -61802,8 +62900,8 @@
           }
         },
         {
-          "id": "allocation-3",
-          "label": "Published step 3",
+          "id": "allocation-4",
+          "label": "Published step 4",
           "credit": [
             0,
             2,
@@ -61816,24 +62914,6 @@
               0.571,
               0.96,
               0.6309
-            ]
-          }
-        },
-        {
-          "id": "allocation-4",
-          "label": "Published step 4",
-          "credit": [
-            0,
-            2,
-            5
-          ],
-          "region": {
-            "p": 16,
-            "r": [
-              0.05,
-              0.6289,
-              0.96,
-              0.78
             ]
           }
         }
@@ -63904,7 +64984,7 @@
               0.05,
               0.7,
               0.96,
-              0.793
+              0.7805
             ]
           }
         }
@@ -65032,7 +66112,7 @@
               0.05,
               0.3653,
               0.96,
-              0.472
+              0.4709
             ]
           }
         }
@@ -66563,7 +67643,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.257,
+              0.96,
+              0.4465
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -66572,7 +67661,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.4445,
+              0.96,
+              0.4738
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -66581,7 +67679,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.4445,
+              0.96,
+              0.4738
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -66590,7 +67697,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.4718,
+              0.96,
+              0.5612
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -66599,7 +67715,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.5592,
+              0.96,
+              0.5995
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -66685,7 +67810,7 @@
               0.05,
               0.139,
               0.96,
-              0.304
+              0.3036
             ]
           }
         }
@@ -67896,7 +69021,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.6125,
+              0.96,
+              0.6565
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -67905,7 +69039,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.6545,
+              0.96,
+              0.6783
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -67914,7 +69057,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.6545,
+              0.96,
+              0.6783
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -67923,7 +69075,16 @@
             0,
             3,
             10
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.6763,
+              0.96,
+              0.7412
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -67932,7 +69093,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.7392,
+              0.96,
+              0.8289
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -68861,7 +70031,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.28,
+              0.96,
+              0.3086
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -68870,7 +70049,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.28,
+              0.96,
+              0.3086
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -68879,7 +70067,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.3066,
+              0.96,
+              0.384
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -69675,7 +70872,7 @@
               0.05,
               0.25,
               0.96,
-              0.374
+              0.3433
             ]
           }
         }
@@ -71508,7 +72705,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.16782,
+              0.96,
+              0.2553
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -71517,7 +72723,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.2533,
+              0.96,
+              0.346
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -71862,7 +73077,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.286,
+              0.96,
+              0.401
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -71871,7 +73095,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.3915,
+              0.96,
+              0.437
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -71880,7 +73113,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.435,
+              0.96,
+              0.5359
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -71889,7 +73131,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.435,
+              0.96,
+              0.5359
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -71898,7 +73149,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.5339,
+              0.96,
+              0.6626
+            ]
+          }
         },
         {
           "id": "allocation-6",
@@ -71907,7 +73167,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.6606,
+              0.96,
+              0.7079
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -71986,7 +73255,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.177,
+              0.96,
+              0.2616
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -71995,7 +73273,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.2596,
+              0.96,
+              0.3231
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -72004,7 +73291,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.2596,
+              0.96,
+              0.3231
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -72013,7 +73309,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.3211,
+              0.96,
+              0.3894
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -72022,7 +73327,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 22,
+            "r": [
+              0.05,
+              0.3874,
+              0.96,
+              0.4459
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -72101,7 +73415,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 23,
+            "r": [
+              0.05,
+              0.3107,
+              0.96,
+              0.38
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -72110,7 +73433,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 23,
+            "r": [
+              0.05,
+              0.378,
+              0.96,
+              0.4185
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -72119,7 +73451,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 23,
+            "r": [
+              0.05,
+              0.378,
+              0.96,
+              0.4185
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -72128,7 +73469,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 23,
+            "r": [
+              0.05,
+              0.4165,
+              0.96,
+              0.573
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -72302,7 +73652,7 @@
               0.05,
               0.381,
               0.96,
-              0.482
+              0.4788
             ]
           }
         }
@@ -72566,7 +73916,7 @@
               0.05,
               0.676,
               0.96,
-              0.7643
+              0.7859
             ]
           }
         }
@@ -73908,7 +75258,7 @@
               0.05,
               0.369,
               0.96,
-              0.4683
+              0.4895
             ]
           }
         }
@@ -74508,7 +75858,7 @@
               0.05,
               0.753,
               0.96,
-              0.826
+              0.8232
             ]
           }
         }
@@ -74695,7 +76045,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.1648,
+              0.96,
+              0.199
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -74704,7 +76063,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.197,
+              0.96,
+              0.2676
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -75146,7 +76514,7 @@
               0.05,
               0.348,
               0.96,
-              0.4384
+              0.467
             ]
           }
         }
@@ -75235,7 +76603,7 @@
               0.05,
               0.498,
               0.96,
-              0.53
+              0.5253
             ]
           }
         }
@@ -75500,7 +76868,7 @@
               0.05,
               0.612,
               0.96,
-              0.683
+              0.678
             ]
           }
         }
@@ -76152,7 +77520,7 @@
               0.05,
               0.467,
               0.96,
-              0.608
+              0.5914
             ]
           }
         }
@@ -76233,7 +77601,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.624,
+              0.96,
+              0.6504
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -76242,7 +77619,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.6484,
+              0.96,
+              0.6914
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -78592,7 +79978,7 @@
               0.05,
               0.298,
               0.96,
-              0.3768
+              0.4234
             ]
           }
         }
@@ -78681,7 +80067,7 @@
               0.05,
               0.298,
               0.96,
-              0.3768
+              0.4234
             ]
           }
         }
@@ -79949,7 +81335,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.258,
+              0.96,
+              0.4911
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -79958,7 +81353,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.4891,
+              0.96,
+              0.5793
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -79967,7 +81371,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.5773,
+              0.96,
+              0.6657
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -79976,7 +81389,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 16,
+            "r": [
+              0.05,
+              0.6637,
+              0.96,
+              0.7202
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -80277,7 +81699,7 @@
               0.05,
               0.572,
               0.96,
-              0.662
+              0.6529
             ]
           }
         }
@@ -80589,7 +82011,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.334,
+              0.96,
+              0.3654
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -80598,7 +82029,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.334,
+              0.96,
+              0.3654
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -80607,7 +82047,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.3634,
+              0.96,
+              0.4486
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -81040,7 +82489,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.72,
+              0.96,
+              0.7475
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -81049,7 +82507,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.7455,
+              0.96,
+              0.7778
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -81058,7 +82525,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.7455,
+              0.96,
+              0.7778
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -81067,7 +82543,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.7455,
+              0.96,
+              0.7778
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -81076,7 +82561,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 20,
+            "r": [
+              0.05,
+              0.7758,
+              0.96,
+              0.8902
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -82065,7 +83559,7 @@
               0.05,
               0.678,
               0.96,
-              0.7638
+              0.8042
             ]
           }
         }
@@ -82234,7 +83728,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.476,
+              0.96,
+              0.5107
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -82243,7 +83746,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.5087,
+              0.96,
+              0.529
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -82322,7 +83834,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.54,
+              0.96,
+              0.5731
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -82331,7 +83852,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.5711,
+              0.96,
+              0.593
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -82410,7 +83940,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.602,
+              0.96,
+              0.6356
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -82419,7 +83958,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 5,
+            "r": [
+              0.05,
+              0.6336,
+              0.96,
+              0.676
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -82505,7 +84053,7 @@
               0.05,
               0.693,
               0.96,
-              0.737
+              0.7213
             ]
           }
         }
@@ -82593,7 +84141,7 @@
               0.05,
               0.75,
               0.96,
-              0.798
+              0.7769
             ]
           }
         }
@@ -84357,7 +85905,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.2048,
+              0.96,
+              0.2327
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -84366,7 +85923,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 12,
+            "r": [
+              0.05,
+              0.2307,
+              0.96,
+              0.307
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -84802,7 +86368,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.05,
+              0.651,
+              0.96,
+              0.6795
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -84811,7 +86386,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.05,
+              0.6775,
+              0.96,
+              0.7136
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -84891,7 +86475,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.05,
+              0.6,
+              0.96,
+              0.6273
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -84900,7 +86493,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.05,
+              0.6253,
+              0.96,
+              0.6447
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -85827,7 +87429,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 18,
+            "r": [
+              0.05,
+              0.463,
+              0.96,
+              0.4908
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -85836,7 +87447,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 18,
+            "r": [
+              0.05,
+              0.4888,
+              0.96,
+              0.5255
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -85845,7 +87465,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 18,
+            "r": [
+              0.05,
+              0.5235,
+              0.96,
+              0.5603
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -85854,7 +87483,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 18,
+            "r": [
+              0.05,
+              0.5583,
+              0.96,
+              0.5951
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step and 3 for a 10-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -87640,7 +89278,7 @@
               0.05,
               0.337,
               0.96,
-              0.4097
+              0.4645
             ]
           }
         }
@@ -87872,7 +89510,7 @@
               0.05,
               0.21171,
               0.96,
-              0.3698
+              0.4017
             ]
           }
         },
@@ -87888,9 +89526,9 @@
             "p": 12,
             "r": [
               0.05,
-              0.3678,
+              0.3997,
               0.96,
-              0.4017
+              0.5003
             ]
           }
         },
@@ -89107,7 +90745,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.237,
+              0.96,
+              0.4799
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -89116,7 +90763,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.237,
+              0.96,
+              0.4799
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -89125,7 +90781,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.4779,
+              0.96,
+              0.5795
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -89134,7 +90799,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.5775,
+              0.96,
+              0.731
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -89763,7 +91437,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.298,
+              0.96,
+              0.5105
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -89772,7 +91455,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.5085,
+              0.96,
+              0.5495
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -89781,7 +91473,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.5475,
+              0.96,
+              0.7293
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -91284,7 +92985,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.258,
+              0.96,
+              0.3957
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -91293,7 +93003,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.3937,
+              0.96,
+              0.4699
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -91302,7 +93021,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.4679,
+              0.96,
+              0.5601
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -91691,7 +93419,7 @@
               0.05,
               0.584,
               0.96,
-              0.6368
+              0.6689
             ]
           }
         },
@@ -91707,7 +93435,7 @@
             "p": 9,
             "r": [
               0.05,
-              0.6348,
+              0.6594,
               0.96,
               0.7396
             ]
@@ -92102,7 +93830,7 @@
               0.05,
               0.345,
               0.96,
-              0.4465
+              0.484
             ]
           }
         }
@@ -92191,7 +93919,7 @@
               0.05,
               0.345,
               0.96,
-              0.4465
+              0.484
             ]
           }
         }
@@ -92549,7 +94277,7 @@
               0.05,
               0.25023,
               0.96,
-              0.3896
+              0.4214
             ]
           }
         },
@@ -92565,9 +94293,9 @@
             "p": 12,
             "r": [
               0.05,
-              0.3876,
+              0.4194,
               0.96,
-              0.4214
+              0.5202
             ]
           }
         },
@@ -93843,7 +95571,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.279,
+              0.96,
+              0.529
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -93852,7 +95589,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.279,
+              0.96,
+              0.529
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -93861,7 +95607,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.527,
+              0.96,
+              0.6067
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -93870,7 +95625,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 17,
+            "r": [
+              0.05,
+              0.6047,
+              0.96,
+              0.6852
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -94287,7 +96051,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.423,
+              0.96,
+              0.6498
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -94296,7 +96069,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.423,
+              0.96,
+              0.6498
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -94305,7 +96087,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.6478,
+              0.96,
+              0.7304
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2 for a 5-mark step. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -94622,7 +96413,7 @@
               0.05,
               0.26021,
               0.96,
-              0.4941
+              0.455
             ]
           }
         },
@@ -94638,9 +96429,9 @@
             "p": 21,
             "r": [
               0.05,
-              0.4921,
+              0.453,
               0.96,
-              0.611
+              0.4941
             ]
           }
         },
@@ -94656,9 +96447,9 @@
             "p": 21,
             "r": [
               0.05,
-              0.609,
+              0.4921,
               0.96,
-              0.622
+              0.611
             ]
           }
         }
@@ -95937,7 +97728,7 @@
               0.05,
               0.278,
               0.96,
-              0.312
+              0.3048
             ]
           }
         }
@@ -96399,7 +98190,7 @@
               0.05,
               0.62,
               0.96,
-              0.7045
+              0.7286
             ]
           }
         },
@@ -96415,7 +98206,7 @@
             "p": 5,
             "r": [
               0.05,
-              0.7025,
+              0.7191,
               0.96,
               0.7477
             ]
@@ -96612,7 +98403,7 @@
               0.05,
               0.414,
               0.96,
-              0.479
+              0.4726
             ]
           }
         }
@@ -97146,7 +98937,7 @@
               0.05,
               0.28,
               0.96,
-              0.3537
+              0.3676
             ]
           }
         }
@@ -97501,7 +99292,7 @@
               0.05,
               0.36,
               0.96,
-              0.4512
+              0.4722
             ]
           }
         }
@@ -97820,7 +99611,7 @@
               0.05,
               0.508,
               0.96,
-              0.599
+              0.5926
             ]
           }
         }
@@ -98815,7 +100606,7 @@
               0.05,
               0.469,
               0.96,
-              0.611
+              0.6076
             ]
           }
         }
@@ -98904,7 +100695,7 @@
               0.05,
               0.613,
               0.96,
-              0.644
+              0.6395
             ]
           }
         }
@@ -98994,7 +100785,7 @@
               0.05,
               0.645,
               0.96,
-              0.677
+              0.6713
             ]
           }
         }
@@ -99171,7 +100962,7 @@
               0.05,
               0.74,
               0.96,
-              0.826
+              0.818
             ]
           }
         }
@@ -99438,7 +101229,7 @@
               0.05,
               0.423,
               0.96,
-              0.534
+              0.5249
             ]
           }
         }
@@ -99740,7 +101531,7 @@
               0.05,
               0.312,
               0.96,
-              0.4103
+              0.4466
             ]
           }
         }
@@ -99954,7 +101745,7 @@
               0.05,
               0.35681,
               0.96,
-              0.4616
+              0.48439
             ]
           }
         }
@@ -100043,7 +101834,7 @@
               0.05,
               0.486,
               0.96,
-              0.509
+              0.5078
             ]
           }
         }
@@ -101148,7 +102939,7 @@
               0.05,
               0.181,
               0.96,
-              0.3957
+              0.3722
             ]
           }
         },
@@ -101164,9 +102955,9 @@
             "p": 8,
             "r": [
               0.05,
-              0.3937,
+              0.3627,
               0.96,
-              0.432
+              0.41
             ]
           }
         }
@@ -101248,7 +103039,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.446,
+              0.96,
+              0.4748
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -101257,7 +103057,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.4728,
+              0.96,
+              0.5102
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -101558,7 +103367,7 @@
               0.05,
               0.514,
               0.96,
-              0.5619
+              0.6019
             ]
           }
         },
@@ -101574,7 +103383,7 @@
             "p": 9,
             "r": [
               0.05,
-              0.5599,
+              0.5924,
               0.96,
               0.6818
             ]
@@ -102058,7 +103867,7 @@
               0.05,
               0.366,
               0.96,
-              0.495
+              0.4898
             ]
           }
         }
@@ -102523,7 +104332,7 @@
               0.05,
               0.274,
               0.96,
-              0.4131
+              0.4461
             ]
           }
         },
@@ -102539,9 +104348,9 @@
             "p": 14,
             "r": [
               0.05,
-              0.4111,
+              0.4441,
               0.96,
-              0.4461
+              0.5455
             ]
           }
         },
@@ -103887,7 +105696,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.205,
+              0.96,
+              0.431
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -103896,7 +105714,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.205,
+              0.96,
+              0.431
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -103905,7 +105732,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.429,
+              0.96,
+              0.4606
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -103914,7 +105750,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.4586,
+              0.96,
+              0.6031
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -103923,7 +105768,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 19,
+            "r": [
+              0.05,
+              0.6011,
+              0.96,
+              0.723
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -104146,7 +106000,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.277,
+              0.96,
+              0.3087
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -104155,7 +106018,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.277,
+              0.96,
+              0.3087
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -104164,7 +106036,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.3067,
+              0.96,
+              0.3441
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -104173,7 +106054,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.3421,
+              0.96,
+              0.4181
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -104182,7 +106072,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 21,
+            "r": [
+              0.05,
+              0.4161,
+              0.96,
+              0.4698
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -104512,7 +106411,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 23,
+            "r": [
+              0.05,
+              0.273,
+              0.96,
+              0.4826
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -104521,7 +106429,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 23,
+            "r": [
+              0.05,
+              0.4806,
+              0.96,
+              0.5236
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -104530,7 +106447,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 23,
+            "r": [
+              0.05,
+              0.5216,
+              0.96,
+              0.7049
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -105327,7 +107253,7 @@
               0.05,
               0.385,
               0.96,
-              0.505
+              0.4953
             ]
           }
         }
@@ -106127,7 +108053,7 @@
               0.05,
               0.505,
               0.96,
-              0.556
+              0.553
             ]
           }
         }
@@ -106303,7 +108229,7 @@
               0.05,
               0.597,
               0.96,
-              0.655
+              0.652
             ]
           }
         }
@@ -107143,7 +109069,7 @@
               0.05,
               0.321,
               0.96,
-              0.4025
+              0.416
             ]
           }
         }
@@ -107888,7 +109814,7 @@
               0.05,
               0.628,
               0.96,
-              0.66
+              0.6555
             ]
           }
         }
@@ -107976,7 +109902,7 @@
               0.05,
               0.673,
               0.96,
-              0.7506
+              0.7034
             ]
           }
         },
@@ -107992,9 +109918,9 @@
             "p": 11,
             "r": [
               0.05,
-              0.7486,
+              0.7014,
               0.96,
-              0.771
+              0.7506
             ]
           }
         }
@@ -108348,7 +110274,7 @@
               0.05,
               0.277,
               0.96,
-              0.373
+              0.391
             ]
           }
         }
@@ -108430,7 +110356,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.392,
+              0.96,
+              0.4728
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -108439,7 +110374,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.4708,
+              0.96,
+              0.5082
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -108448,7 +110392,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.5062,
+              0.96,
+              0.6704
+            ]
+          }
         }
       ],
       "markingGuideNote": "The scheme awards attempt marks of 2. Deduct 3 for a mathematical error, or 1 for a numerical slip or minor misreading. A serious error that oversimplifies the task receives attempt marks only. Valid alternative methods are accepted. Do not deduct an error twice."
@@ -108624,7 +110577,7 @@
               0.05,
               0.36,
               0.96,
-              0.4249
+              0.4876
             ]
           }
         }
@@ -108891,7 +110844,7 @@
               0.05,
               0.375,
               0.96,
-              0.566
+              0.653
             ]
           }
         }
@@ -109173,7 +111126,7 @@
               0.05,
               0.283,
               0.96,
-              0.323
+              0.3145
             ]
           }
         }
@@ -109351,7 +111304,7 @@
               0.05,
               0.387,
               0.96,
-              0.475
+              0.4653
             ]
           }
         }
@@ -109440,7 +111393,7 @@
               0.05,
               0.486,
               0.96,
-              0.528
+              0.518
             ]
           }
         }
@@ -109618,7 +111571,7 @@
               0.05,
               0.307,
               0.96,
-              0.4095
+              0.451
             ]
           }
         }
@@ -111077,31 +113030,13 @@
               0.05,
               0.478,
               0.96,
-              0.5766
+              0.6011
             ]
           }
         },
         {
           "id": "allocation-2",
           "label": "Published step 2",
-          "credit": [
-            0,
-            2,
-            5
-          ],
-          "region": {
-            "p": 7,
-            "r": [
-              0.05,
-              0.5746,
-              0.96,
-              0.6011
-            ]
-          }
-        },
-        {
-          "id": "allocation-3",
-          "label": "Published step 3",
           "credit": [
             0,
             2,
@@ -111118,8 +113053,8 @@
           }
         },
         {
-          "id": "allocation-4",
-          "label": "Published step 4",
+          "id": "allocation-3",
+          "label": "Published step 3",
           "credit": [
             0,
             2,
@@ -111132,6 +113067,24 @@
               0.6309,
               0.96,
               0.6883
+            ]
+          }
+        },
+        {
+          "id": "allocation-4",
+          "label": "Published step 4",
+          "credit": [
+            0,
+            2,
+            5
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.6863,
+              0.96,
+              0.7438
             ]
           }
         },
@@ -111423,7 +113376,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.245,
+              0.96,
+              0.3625
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -111432,7 +113394,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.245,
+              0.96,
+              0.3625
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -111441,7 +113412,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 8,
+            "r": [
+              0.05,
+              0.3605,
+              0.96,
+              0.4041
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the published scale where printed. Other placements allow 2 for a partially correct element. Deduct 3 for a mathematical error, or 1 for a slip or minor misreading; do not deduct an error twice. Specific table/edge deduction rules and algorithm-naming exceptions take precedence. Alternative valid methods are accepted."
@@ -112825,7 +114805,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.453,
+              0.96,
+              0.5087
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -112834,7 +114823,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.5067,
+              0.96,
+              0.6662
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -112843,7 +114841,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.5067,
+              0.96,
+              0.6662
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -112852,7 +114859,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.6642,
+              0.96,
+              0.8327
+            ]
+          }
         },
         {
           "id": "allocation-5",
@@ -112861,7 +114877,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 10,
+            "r": [
+              0.05,
+              0.8307,
+              0.96,
+              0.8817
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the published scale where printed. Other placements allow 2 for a partially correct element. Deduct 3 for a mathematical error, or 1 for a slip or minor misreading; do not deduct an error twice. Specific table/edge deduction rules and algorithm-naming exceptions take precedence. Alternative valid methods are accepted."
@@ -113684,7 +115709,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.1175
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -113693,7 +115727,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.1155,
+              0.96,
+              0.1558
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -113702,7 +115745,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.1155,
+              0.96,
+              0.1558
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -113711,7 +115763,16 @@
             0,
             2,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.05,
+              0.1538,
+              0.96,
+              0.2328
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the published scale where printed. Other placements allow 2 for a partially correct element. Deduct 3 for a mathematical error, or 1 for a slip or minor misreading; do not deduct an error twice. Specific table/edge deduction rules and algorithm-naming exceptions take precedence. Alternative valid methods are accepted."
@@ -119542,7 +121603,7 @@
               0.05,
               0.06,
               0.96,
-              0.1139
+              0.1655
             ]
           }
         },
@@ -119558,9 +121619,9 @@
             "p": 13,
             "r": [
               0.05,
-              0.1119,
+              0.1635,
               0.96,
-              0.1655
+              0.1935
             ]
           }
         },
@@ -122069,7 +124130,7 @@
               0.05,
               0.733,
               0.96,
-              0.78
+              0.7746
             ]
           }
         }
@@ -134973,7 +137034,7 @@
               0.05,
               0.1958,
               0.96,
-              0.2223
+              0.2648
             ]
           }
         },
@@ -134988,7 +137049,7 @@
             "p": 9,
             "r": [
               0.05,
-              0.2203,
+              0.2553,
               0.96,
               0.285
             ]
@@ -139144,7 +141205,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.152,
+              0.96,
+              0.1933
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -139152,7 +141222,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.152,
+              0.96,
+              0.1933
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -139160,7 +141239,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.1913,
+              0.96,
+              0.2142
+            ]
+          }
         },
         {
           "id": "allocation-4",
@@ -139168,7 +141256,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 7,
+            "r": [
+              0.05,
+              0.2122,
+              0.96,
+              0.234
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the published scale where printed. For other placements, select the published mark for the required working, then deduct 3 for a mathematical error or 1 for a slip or minor misreading. Select zero where no credit is earned. Do not deduct an error twice. Follow any specific matrix-entry deduction rule shown. Alternative valid methods are accepted."
@@ -141183,7 +143280,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.113
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -141191,7 +143297,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.06,
+              0.96,
+              0.113
+            ]
+          }
         },
         {
           "id": "allocation-3",
@@ -141199,7 +143314,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 11,
+            "r": [
+              0.05,
+              0.111,
+              0.96,
+              0.136
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the published scale where printed. For other placements, select the published mark for the required working, then deduct 3 for a mathematical error or 1 for a slip or minor misreading. Select zero where no credit is earned. Do not deduct an error twice. Follow any specific matrix-entry deduction rule shown. Alternative valid methods are accepted."
@@ -144274,7 +146398,7 @@
               0.075,
               0.065439,
               0.93,
-              0.119976
+              0.1058
             ]
           }
         }
@@ -144608,7 +146732,7 @@
               0.075,
               0.4125,
               0.93,
-              0.4716
+              0.4541
             ]
           }
         }
@@ -144721,9 +146845,9 @@
             "p": 8,
             "r": [
               0.075,
-              0.531,
+              0.5079,
               0.93,
-              0.5826
+              0.533
             ]
           }
         },
@@ -144738,9 +146862,9 @@
             "p": 8,
             "r": [
               0.075,
-              0.5806,
+              0.531,
               0.93,
-              0.596698
+              0.5826
             ]
           }
         }
@@ -145115,7 +147239,7 @@
               0.075,
               0.3069,
               0.93,
-              0.402874
+              0.3814
             ]
           }
         }
@@ -145409,7 +147533,7 @@
               0.075,
               0.065439,
               0.93,
-              0.1251
+              0.1058
             ]
           }
         },
@@ -145424,9 +147548,9 @@
             "p": 10,
             "r": [
               0.075,
-              0.1231,
+              0.1038,
               0.93,
-              0.1459
+              0.1251
             ]
           }
         },
@@ -145441,9 +147565,9 @@
             "p": 10,
             "r": [
               0.075,
-              0.1439,
+              0.1231,
               0.93,
-              0.160166
+              0.1459
             ]
           }
         }
@@ -145836,7 +147960,7 @@
               0.075,
               0.065439,
               0.93,
-              0.229359
+              0.2152
             ]
           }
         }
@@ -145918,7 +148042,7 @@
               0.075,
               0.227,
               0.93,
-              0.2905
+              0.2675
             ]
           }
         },
@@ -145933,9 +148057,9 @@
             "p": 11,
             "r": [
               0.075,
-              0.2885,
+              0.2655,
               0.93,
-              0.317
+              0.2905
             ]
           }
         },
@@ -145950,9 +148074,9 @@
             "p": 11,
             "r": [
               0.075,
-              0.315,
+              0.2885,
               0.93,
-              0.3345
+              0.317
             ]
           }
         }
@@ -146034,7 +148158,7 @@
               0.075,
               0.3322,
               0.93,
-              0.3999
+              0.3726
             ]
           }
         },
@@ -146049,9 +148173,9 @@
             "p": 11,
             "r": [
               0.075,
-              0.3979,
+              0.3706,
               0.93,
-              0.4215
+              0.3999
             ]
           }
         }
@@ -146133,7 +148257,7 @@
               0.075,
               0.4192,
               0.93,
-              0.495
+              0.4628
             ]
           }
         },
@@ -146148,9 +148272,9 @@
             "p": 11,
             "r": [
               0.075,
-              0.493,
+              0.4608,
               0.93,
-              0.509691
+              0.495
             ]
           }
         }
@@ -146624,7 +148748,7 @@
               0.075,
               0.065439,
               0.93,
-              0.1374
+              0.1232
             ]
           }
         }
@@ -146697,7 +148821,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.075,
+              0.1351,
+              0.93,
+              0.1803
+            ]
+          }
         },
         {
           "id": "allocation-2",
@@ -146705,7 +148838,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 13,
+            "r": [
+              0.075,
+              0.1783,
+              0.93,
+              0.2158
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -146783,7 +148925,7 @@
               0.075,
               0.2173,
               0.93,
-              0.2817
+              0.261
             ]
           }
         },
@@ -146798,9 +148940,9 @@
             "p": 13,
             "r": [
               0.075,
-              0.2797,
+              0.259,
               0.93,
-              0.2958
+              0.2817
             ]
           }
         }
@@ -147029,7 +149171,7 @@
               0.075,
               0.065439,
               0.93,
-              0.1265
+              0.109
             ]
           }
         }
@@ -147110,7 +149252,7 @@
               0.075,
               0.1242,
               0.93,
-              0.1934
+              0.169
             ]
           }
         },
@@ -147125,9 +149267,9 @@
             "p": 14,
             "r": [
               0.075,
-              0.1914,
+              0.167,
               0.93,
-              0.2109
+              0.1934
             ]
           }
         }
@@ -147208,7 +149350,7 @@
               0.075,
               0.208527,
               0.93,
-              0.269691
+              0.2521
             ]
           }
         }
@@ -147289,13 +149431,30 @@
               0.075,
               0.267316,
               0.93,
-              0.3251
+              0.3077
             ]
           }
         },
         {
           "id": "allocation-2",
           "label": "Published step 2",
+          "credit": [
+            0,
+            5
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.075,
+              0.3057,
+              0.93,
+              0.3251
+            ]
+          }
+        },
+        {
+          "id": "allocation-3",
+          "label": "Published step 3",
           "credit": [
             0,
             5
@@ -147311,8 +149470,8 @@
           }
         },
         {
-          "id": "allocation-3",
-          "label": "Published step 3",
+          "id": "allocation-4",
+          "label": "Published step 4",
           "credit": [
             0,
             5
@@ -147328,8 +149487,8 @@
           }
         },
         {
-          "id": "allocation-4",
-          "label": "Published step 4",
+          "id": "allocation-5",
+          "label": "Published step 5",
           "credit": [
             0,
             5
@@ -147341,23 +149500,6 @@
               0.4268,
               0.93,
               0.4462
-            ]
-          }
-        },
-        {
-          "id": "allocation-5",
-          "label": "Published step 5",
-          "credit": [
-            0,
-            5
-          ],
-          "region": {
-            "p": 14,
-            "r": [
-              0.075,
-              0.4442,
-              0.93,
-              0.4603
             ]
           }
         }
@@ -147668,7 +149810,7 @@
               0.075,
               0.259335,
               0.93,
-              0.3418
+              0.3243
             ]
           }
         }
@@ -147749,7 +149891,7 @@
               0.075,
               0.33943,
               0.93,
-              0.393967
+              0.3798
             ]
           }
         }
@@ -147830,7 +149972,7 @@
               0.075,
               0.3916,
               0.93,
-              0.446271
+              0.4321
             ]
           }
         }
@@ -148237,7 +150379,7 @@
               0.075,
               0.52734,
               0.93,
-              0.5819
+              0.5678
             ]
           }
         }
@@ -148471,7 +150613,7 @@
               0.075,
               0.128717,
               0.93,
-              0.1898
+              0.1692
             ]
           }
         },
@@ -148486,9 +150628,9 @@
             "p": 6,
             "r": [
               0.075,
-              0.1878,
+              0.1672,
               0.93,
-              0.2106
+              0.1898
             ]
           }
         },
@@ -148503,9 +150645,9 @@
             "p": 6,
             "r": [
               0.075,
-              0.2086,
+              0.1878,
               0.93,
-              0.224798
+              0.2106
             ]
           }
         }
@@ -148585,7 +150727,7 @@
               0.075,
               0.222423,
               0.93,
-              0.29
+              0.266
             ]
           }
         },
@@ -148600,9 +150742,9 @@
             "p": 6,
             "r": [
               0.075,
-              0.288,
+              0.264,
               0.93,
-              0.3142
+              0.29
             ]
           }
         },
@@ -148617,9 +150759,9 @@
             "p": 6,
             "r": [
               0.075,
-              0.3122,
+              0.288,
               0.93,
-              0.3318
+              0.3142
             ]
           }
         }
@@ -148699,7 +150841,7 @@
               0.075,
               0.3295,
               0.93,
-              0.38399
+              0.3698
             ]
           }
         }
@@ -148934,7 +151076,7 @@
               0.075,
               0.385036,
               0.93,
-              0.439572
+              0.4254
             ]
           }
         }
@@ -149324,7 +151466,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.075,
+              0.052,
+              0.93,
+              0.1793
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -149397,7 +151548,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.075,
+              0.052,
+              0.93,
+              0.1793
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -149470,7 +151630,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.075,
+              0.052,
+              0.93,
+              0.1793
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -149549,7 +151718,7 @@
               0.075,
               0.204608,
               0.93,
-              0.2624
+              0.245
             ]
           }
         },
@@ -149564,9 +151733,9 @@
             "p": 9,
             "r": [
               0.075,
-              0.2604,
+              0.243,
               0.93,
-              0.2798
+              0.2624
             ]
           }
         },
@@ -149581,9 +151750,9 @@
             "p": 9,
             "r": [
               0.075,
-              0.2778,
+              0.2604,
               0.93,
-              0.29399
+              0.2798
             ]
           }
         }
@@ -149658,7 +151827,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.075,
+              0.291615,
+              0.93,
+              0.332
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -149731,7 +151909,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 9,
+            "r": [
+              0.075,
+              0.291615,
+              0.93,
+              0.3494
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -149810,7 +151997,7 @@
               0.075,
               0.3612,
               0.93,
-              0.415772
+              0.4016
             ]
           }
         }
@@ -149971,7 +152158,7 @@
               0.075,
               0.065439,
               0.93,
-              0.119976
+              0.1058
             ]
           }
         }
@@ -150051,7 +152238,7 @@
               0.075,
               0.117601,
               0.93,
-              0.1722
+              0.1581
             ]
           }
         }
@@ -150131,7 +152318,7 @@
               0.075,
               0.169834,
               0.93,
-              0.2374
+              0.2134
             ]
           }
         },
@@ -150146,9 +152333,9 @@
             "p": 10,
             "r": [
               0.075,
-              0.2354,
+              0.2114,
               0.93,
-              0.2581
+              0.2374
             ]
           }
         },
@@ -150163,9 +152350,9 @@
             "p": 10,
             "r": [
               0.075,
-              0.2561,
+              0.2354,
               0.93,
-              0.2723
+              0.2581
             ]
           }
         }
@@ -150497,7 +152684,7 @@
               0.075,
               0.065439,
               0.93,
-              0.1232
+              0.1058
             ]
           }
         },
@@ -150512,9 +152699,9 @@
             "p": 11,
             "r": [
               0.075,
-              0.1212,
+              0.1038,
               0.93,
-              0.1374
+              0.1232
             ]
           }
         }
@@ -150595,7 +152782,7 @@
               0.075,
               0.1351,
               0.93,
-              0.193
+              0.1756
             ]
           }
         },
@@ -150610,9 +152797,9 @@
             "p": 11,
             "r": [
               0.075,
-              0.191,
+              0.1736,
               0.93,
-              0.2071
+              0.193
             ]
           }
         }
@@ -150693,7 +152880,7 @@
               0.075,
               0.2048,
               0.93,
-              0.259287
+              0.2451
             ]
           }
         }
@@ -150774,7 +152961,7 @@
               0.075,
               0.256912,
               0.93,
-              0.3246
+              0.2974
             ]
           }
         },
@@ -150789,9 +152976,9 @@
             "p": 11,
             "r": [
               0.075,
-              0.3226,
+              0.2954,
               0.93,
-              0.3387
+              0.3246
             ]
           }
         }
@@ -150988,7 +153175,7 @@
               0.075,
               0.065439,
               0.93,
-              0.133
+              0.109
             ]
           }
         },
@@ -151003,9 +153190,9 @@
             "p": 12,
             "r": [
               0.075,
-              0.131,
+              0.107,
               0.93,
-              0.150689
+              0.133
             ]
           }
         }
@@ -151087,7 +153274,7 @@
               0.075,
               0.148314,
               0.93,
-              0.2126
+              0.1919
             ]
           }
         },
@@ -151102,9 +153289,9 @@
             "p": 12,
             "r": [
               0.075,
-              0.2106,
+              0.1899,
               0.93,
-              0.226793
+              0.2126
             ]
           }
         }
@@ -151186,7 +153373,7 @@
               0.075,
               0.224418,
               0.93,
-              0.331188
+              0.2648
             ]
           }
         }
@@ -151268,7 +153455,7 @@
               0.075,
               0.328812,
               0.93,
-              0.3833
+              0.3692
             ]
           }
         }
@@ -151350,7 +153537,7 @@
               0.075,
               0.381,
               0.93,
-              0.4388
+              0.4214
             ]
           }
         },
@@ -151365,9 +153552,9 @@
             "p": 12,
             "r": [
               0.075,
-              0.4368,
+              0.4194,
               0.93,
-              0.452969
+              0.4388
             ]
           }
         }
@@ -151547,7 +153734,7 @@
               0.075,
               0.065439,
               0.93,
-              0.1331
+              0.1094
             ]
           }
         },
@@ -151562,9 +153749,9 @@
             "p": 13,
             "r": [
               0.075,
-              0.1311,
+              0.1074,
               0.93,
-              0.147268
+              0.1331
             ]
           }
         }
@@ -151645,7 +153832,7 @@
               0.075,
               0.1449,
               0.93,
-              0.1994
+              0.1853
             ]
           }
         }
@@ -151726,7 +153913,7 @@
               0.075,
               0.1971,
               0.93,
-              0.251663
+              0.2374
             ]
           }
         }
@@ -151807,7 +153994,7 @@
               0.075,
               0.2493,
               0.93,
-              0.31
+              0.2926
             ]
           }
         },
@@ -151822,9 +154009,9 @@
             "p": 13,
             "r": [
               0.075,
-              0.308,
+              0.2906,
               0.93,
-              0.3241
+              0.31
             ]
           }
         }
@@ -151905,7 +154092,7 @@
               0.075,
               0.3218,
               0.93,
-              0.3832
+              0.3651
             ]
           }
         },
@@ -151920,9 +154107,9 @@
             "p": 13,
             "r": [
               0.075,
-              0.3812,
+              0.3631,
               0.93,
-              0.3973
+              0.3832
             ]
           }
         }
@@ -152095,7 +154282,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.075,
+              0.065439,
+              0.93,
+              0.1058
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -152168,7 +154364,16 @@
           "credit": [
             0,
             5
-          ]
+          ],
+          "region": {
+            "p": 14,
+            "r": [
+              0.075,
+              0.065439,
+              0.93,
+              0.1232
+            ]
+          }
         }
       ],
       "markingGuideNote": "Use the official solution to select the credit for each published step or scale. Valid alternative methods are accepted. Deduct 3 for a mathematical error and 1 for a slip or minor misreading. An error that oversimplifies the question may count as a mathematical error. Do not deduct an error again if your scale placement already accounts for it."
@@ -152247,7 +154452,7 @@
               0.075,
               0.1351,
               0.93,
-              0.2015
+              0.1803
             ]
           }
         },
@@ -152262,9 +154467,9 @@
             "p": 14,
             "r": [
               0.075,
-              0.1995,
+              0.1783,
               0.93,
-              0.215677
+              0.2015
             ]
           }
         }
@@ -152345,7 +154550,7 @@
               0.075,
               0.213302,
               0.93,
-              0.267981
+              0.2538
             ]
           }
         }
@@ -152426,7 +154631,7 @@
               0.075,
               0.265606,
               0.93,
-              0.3202
+              0.306
             ]
           }
         }
@@ -152507,7 +154712,7 @@
               0.075,
               0.317838,
               0.93,
-              0.3756
+              0.3582
             ]
           }
         },
@@ -152522,9 +154727,9 @@
             "p": 14,
             "r": [
               0.075,
-              0.3736,
+              0.3562,
               0.93,
-              0.393
+              0.3756
             ]
           }
         },
@@ -152539,9 +154744,9 @@
             "p": 14,
             "r": [
               0.075,
-              0.391,
+              0.3736,
               0.93,
-              0.40715
+              0.393
             ]
           }
         }
@@ -152779,7 +154984,7 @@
               0.075,
               0.372138,
               0.93,
-              0.426675
+              0.4125
             ]
           }
         }
@@ -153016,7 +155221,7 @@
               0.075,
               0.7633,
               0.93,
-              0.817886
+              0.8037
             ]
           }
         }
@@ -153097,7 +155302,7 @@
               0.075,
               0.815511,
               0.93,
-              0.87
+              0.8559
             ]
           }
         }
