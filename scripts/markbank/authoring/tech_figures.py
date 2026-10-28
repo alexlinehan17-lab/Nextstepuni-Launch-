@@ -254,10 +254,7 @@ REVIEWED = {
         'arrow, a smartphone lying on that black surface showing a green '
         'charging indicator.',
     'technology-2024-HL-paper-secC-q2b-art':
-        'The pin layout of an eight-pin integrated circuit drawn as a plain '
-        'rectangle with four leads on each side. The pin numbers read 7, 4 and '
-        '8 across the top, 6 and 3 in the middle, and 2, 1 and 5 across the '
-        'bottom.',
+        'A circuit diagram of a 555 timer between two supply rails: R1 and R2 in series from the top rail to pins 7 and 6/2, a capacitor C from pin 2 to the bottom rail, pins 4 and 8 to the top rail, pin 1 to the bottom rail and the output at pin 3.',
     'technology-2024-HL-paper-secC-q5d-art':
         'Colour photograph of a transparent rigid plastic punnet of '
         'strawberries with a hinged clip-shut lid.',
@@ -363,6 +360,60 @@ REVIEWED = {
         'steep blue line A from the origin and a shallower red line B from '
         '3000, crossing at point C above 200, with the region X between them '
         'before C shaded green and the region Y after it shaded pink.',
+    # 2020 Higher (2026-10-28): the cropper's cuts, and by-eye rects for the rest.
+    'technology-2020-HL-paper-secA-q4-art':
+        'Colour photograph of a worm and worm wheel in a blue housing, the '
+        'steel worm above meshing with the brass wheel below.',
+    'technology-2020-HL-paper-secA-q7-art':
+        'Colour photograph of a clear acrylic table menu holder, a folded '
+        'sheet forming an upright sleeve on a flat base.',
+    'technology-2020-HL-paper-secA-q10-art':
+        'A table headed Part, Material and Reason for choice of material, with '
+        'rows Composite layer (filled in: Fibreglass, Strong/flexible material), '
+        'Wooden core, Metal edge and Plastic coversheet left blank.',
+    'technology-2020-HL-paper-secA-q13-art':
+        'Colour photograph of an LED bulb in exploded view: the frosted dome, '
+        'the LED board, the finned heatsink body with its driver and the '
+        'screw cap, stacked apart vertically.',
+    'technology-2020-HL-paper-secA-q15-art':
+        'Outline line drawing of an all-in-one printer in pictorial view: the '
+        'document feeder on top, the control panel at the front right and the '
+        'paper tray below.',
+    'technology-2020-HL-paper-secB-q2b-art':
+        'Colour photograph of the Lightcycle lamp, a tall white post with a '
+        'horizontal arm, arrows A (vertical, at the arm) and B (rotation, at '
+        'the base), with a circle marking the joint.',
+    'technology-2020-HL-paper-secB-q2b-ii-art':
+        'Close-up inset of the lamp\u2019s roller-and-groove joint, a roller '
+        'running in a slotted channel, cut at its left edge where the prose '
+        'column runs into it.',
+    'technology-2020-HL-paper-secB-q3b-art':
+        'Colour photograph of a food processor drive unit: a motor with two '
+        'white gears labelled A and B, captioned Each gear has 50 teeth and '
+        'Food processor drive unit.',
+    'technology-2020-HL-paper-secB-q3c-art':
+        'Colour photograph of a red and silver hand blender standing upright, '
+        'its cable coiled beside the handle.',
+    'technology-2020-HL-paper-secB-q3d-art':
+        'Two photographs of food boxes: Box A, a clamshell made from expanded '
+        'polystyrene, and Box B, a red folding carton made from cardboard, '
+        'each captioned.',
+    'technology-2020-HL-paper-secC-q1d-art':
+        'Colour photograph of a sheet metal cutter with a double acting '
+        'pneumatic cylinder mounted on top, labelled by an arrow.',
+    'technology-2020-HL-paper-secC-q2b-art':
+        'An incomplete op-amp circuit between +9 V and 0 V rails: a 66 kΩ and '
+        'a 33 kΩ resistor in series as a potential divider to point A on the '
+        'inverting input of an IC, the non-inverting input and output open.',
+    'technology-2020-HL-paper-secC-q2b-iii-art':
+        'Colour photograph of a black surface-mount integrated circuit with '
+        'eight bent legs.',
+    'technology-2020-HL-paper-secC-q2d-art':
+        'Drawing of an automated gate between two pillars with keypads A and '
+        'B, a house behind with the master switch S and gate switch C.',
+    'technology-2020-HL-paper-secC-q5c-art':
+        'Shaded drawing of a flat circular disc with a square hole through '
+        'its centre.',
     # 2026 Ordinary (2026-10-28): the cropper's cuts for Q9 and Q12, and by-eye
     # rects (tech_crops.BY_EYE) for the rest, each opened at 150 dpi.
     'technology-2026-OL-paper-secA-q1-art':
@@ -423,6 +474,142 @@ REVIEWED = {
         'resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and '
         '1 marked and its output at pin 3, and an electrolytic capacitor C.',
 }
+
+# The residue authors' crops (2026-10-28), each opened at 150 dpi.
+REVIEWED.update({
+    'technology-2021-HL-paper-secA-q11-art':
+        'Line drawing of a belt drive: a smaller pulley on the left labelled Driven pulley and a larger pulley on the right labelled Driver pulley, joined by a belt, with a curved arrow beside each pulley showing its direction of rotation, and a spring-loaded pulley labelled Jockey pulley pressing up against the lower run of the belt between them.',
+    'technology-2021-HL-paper-secA-q12-art':
+        'Two drawings. Left: a rendered compound gear, a small gear fixed to the face of a larger gear, with arrows labelled 20 teeth and 50 teeth, captioned Compound gear. Right: a schematic of a gearbox frame with a blue DC motor driving a small red gear labelled Initial driver gear, which meshes through a train of compound gears on parallel vertical shafts ending at the shaft labelled Output shaft.',
+    'technology-2021-HL-paper-secA-q6-art':
+        'Colour photograph of a Voronoi mushroom lamp lit from inside: a glowing orange dome-shaped shade, a thin skin set in a web of irregular cell-shaped frame ribs, standing on a white flared stem and round base.',
+    'technology-2021-HL-paper-secA-q8-art':
+        'Colour photograph of a bench-mounted belt and disc sander: a black motor housing driving a disc faced with red-brown abrasive, a horizontal sanding belt arm above it, a slotted metal work table with an angle fence in front of the disc, and a black base carrying a red and green on/off switch.',
+    'technology-2021-HL-paper-secC-q1b-art':
+        'Colour photograph of an automated pet-food dispenser, a black unit with a clear food hopper and a tray of dry food at its base, with a golden retriever and a tabby cat beside it. Below it, the start of a flowchart: a green Start box, an arrow to a blue parallelogram Power on, then a blue decision diamond Is hopper empty ? with one arrow leaving its right corner and one leaving its bottom.',
+    'technology-2021-HL-paper-secC-q1d-art':
+        'Colour photograph of a pneumatic bottle-capping machine: a pneumatic cylinder with air lines and a pressure regulator mounted on a vertical column above a capping head, with a row of blue bottles standing on the base plate beneath it.',
+    'technology-2021-HL-paper-secC-q3c-art':
+        'Two colour photographs. Top: a black laptop power supply brick with its cable and laptop connector, and a separate mains lead with a three-pin plug, captioned 240 V laptop power supply. Bottom: a smartphone lying on a black wireless charging power bank, blue rings drawn around it to show the charging field, captioned Wireless charging device.',
+    'technology-2021-OL-paper-secA-q11-i-art':
+        'Colour photograph of a garden spade lying diagonally: a flat grey-green steel blade at the lower left, a dark green shaft, and a yellow handle ending in a D-shaped grip at the upper right. Nothing on the picture is labelled.',
+    'technology-2021-OL-paper-secA-q11-ii-art':
+        'Lever diagram: a yellow horizontal beam resting on a yellow triangular fulcrum at its right end. A red arrow labelled 50 N pushes down on the left end, and a red arrow labelled F pushes up from below at a point 0.3 M from the left end and 0.5 M from the fulcrum, the two distances marked with dimension arrows above the beam.',
+    'technology-2021-OL-paper-secA-q12-art':
+        'Black-and-white line drawing of a citrus juicer: a ribbed cone-shaped reamer rising from the centre of a round bowl, a slotted strainer ring around the base of the cone, a pouring lip on the left rim and a short handle on the right.',
+    'technology-2021-OL-paper-secA-q5-art':
+        'Colour photograph of two meshing gear components: a black shaft with a spiral screw thread, labelled A, lying across the top of a brass toothed wheel, labelled B.',
+    'technology-2021-OL-paper-secA-q7-art':
+        'Colour photograph of a small wooden birdhouse with a pitched roof, a round entrance hole and a perch peg on its front. An arrow labelled B points straight down onto the roof from above, and an arrow labelled A points up and to the right at the front of the birdhouse from the lower left.',
+    'technology-2021-OL-paper-secC-q1b-art':
+        "The start of a flowchart: a green Start box with an arrow down to a white decision diamond labelled On. A line runs from the diamond's right corner out to the right, up, and back into the right side of the Start box, and an arrow leaves the bottom of the diamond. The top of a purple capsule box from the neighbouring photograph shows at the bottom right. the top 11 pt of the purple Nespresso capsule-box photograph (x 444.6-462, y 339.6-351) shows in the bottom-right corner: the flowchart's return loop reaches x 461.2 and its exit arrow reaches y 350.2, so no rectangle holding the whole flowchart can drop it. The coffee-machine photograph was left out because the (iii) ask line 'Describe how you would indicate, on the machine, that the' runs into its column.",
+    'technology-2021-OL-paper-secC-q1c-art':
+        "Colour photograph of a pneumatic shuttle valve: a silver valve body with three blue push-in air fittings, on a black mounting base. Below it, the shuttle valve's circuit symbol: a rectangle containing a circle between two angled seats, a port line labelled A entering the left side, one labelled B entering the right side, and one labelled C leaving the top from a dot at the centre. the last letters 's.' of the stem line 'The image shows a shuttle valve used in pneumatic circuits.' (ink to x 382.7, y 484.5-492.3) sit at the crop's left edge, level with the photograph; the label A starts at x 378.2, so no rectangle that keeps A can drop them. A symbol-only crop is no cleaner: the photograph's base reaches down into the symbol's top-right corner.",
+    'technology-2021-OL-paper-secC-q4d-art':
+        'A black-and-white barcode of vertical bars of varying widths, with the number 0 36000 29145 2 printed beneath it.',
+    'technology-2021-OL-paper-secC-q5a-art':
+        'A three-column table headed Body part, Material Classification and Material. Seat: Fabric, Material blank. Tyre: Material Classification blank, Steel-reinforced rubber. Headlight lens: Ceramic, Material blank.',
+    'technology-2022-HL-paper-secA-q10-art':
+        "A table titled 'Risk Assessment – Technology Room – Soldering iron' with six columns: Hazards; Is the hazard present? Y/N; What is the risk?; Risk rating (H = High, M = Medium, L = Low); Control measures; Is this control in place? Y/N. The first row is filled in: Hot soldering iron, Y, Burns, H, 'Use soldering iron stand. Warning signs present.', Y, Y. The next two rows, Damaged power lead (Y) and Fumes (Y), have every other cell blank.",
+    'technology-2022-HL-paper-secA-q5-art':
+        "Two pictures stacked one above the other. Top: a photograph of a beige resistor with wire leads and several coloured bands; a red arrow points to the band at its right-hand end, labelled 'Tolerance band'. Bottom: a circuit diagram in which a 5 Ω resistor in series leads to a junction, two 8 Ω resistors connected in parallel between two junction dots, then a 6 Ω resistor in series, with open wire ends at the left.",
+    'technology-2022-HL-paper-secA-q6-art':
+        "A rendered picture of a mechanism made of two components: a vertical blue rod passes down through a grey round plate, with a black coil spring around the rod below the plate, and the rod's lower end rests on a green pear-shaped disc mounted on a short purple shaft. A red arrow labelled A points to the lower end of the rod just under the spring; a red arrow labelled B points to the green disc.",
+    'technology-2022-HL-paper-secB-q2c-art':
+        "A photograph of the Adibot UV-C disinfection robot: a tall white robot with a wide wheeled base and a body with side panels, topped by a column of vertical ultraviolet lamp tubes held between round plates. A red arrow points to the bottom of the robot, labelled 'Base'.",
+    'technology-2022-HL-paper-secB-q3a-art':
+        "A photograph of a black Urban Movement folding e-scooter seen from the side, with a tall handlebar stem, a low deck and small wheels. A red arrow labelled 'Foldable frame' points to the hinge low on the stem, and a framed inset close-up labelled 'Electronic display' shows the small screen with a blue readout on the handlebar.",
+    'technology-2022-HL-paper-secB-q3b-art':
+        "A photograph of a black Urban Movement folding e-scooter seen from the side, with a tall handlebar stem, a low deck and small wheels. A red arrow labelled 'Foldable frame' points to the hinge low on the stem, and a framed inset close-up labelled 'Electronic display' shows the small screen with a blue readout on the handlebar.",
+    'technology-2022-HL-paper-secC-q5c-art':
+        "A photograph of a round robotic vacuum cleaner on a tiled floor, its glossy dark top lit with blue light and blue light trails fanning out around its base. A red arrow points to its upper surface, labelled 'Top cover'.",
+    'technology-2022-OL-paper-secA-q8-art':
+        'An incomplete Work Breakdown Structure drawn as three rows of boxes joined by arrows. Top row: Back, then Cut out, then Sand, then Paint. Second row: Sides, followed by three empty boxes. Third row: Roller, followed by three empty boxes. Arrows from the end of all three rows lead into one empty box on the right.',
+    'technology-2022-OL-paper-secB-q3b-art':
+        "A photograph of a black fabric battery pack holder with a Swytch logo, mounted on the front of a turquoise bicycle's handlebars between the brake levers and tan grips. A red arrow points up to the holder from the label 'Battery pack holder' printed beneath the photograph.",
+    'technology-2022-OL-paper-secB-q3d-art':
+        'A photograph of a bare pale blue road-bicycle frame with no wheels or components: top tube, down tube and seat tube forming the main triangle, thin rear stays forming a second triangle, and a dark blue front fork, with brand lettering on the tubes.',
+    'technology-2022-OL-paper-secC-q2a-art':
+        'A photograph of a beige axial resistor lying diagonally, with a wire lead at each end and four coloured bands: brown, black and red, then a gold band set apart nearer one end. The letter R is printed beside it.',
+    'technology-2023-HL-paper-secA-q13-art':
+        'Colour cutaway render of a blue gearbox housing with one quarter cut away to show the inside: a horizontal shaft with a spiral thread along it sits above, and meshes with, a toothed wheel below it. A flared, flanged housing on the right carries the output, with a shaft bore in its centre.',
+    'technology-2023-HL-paper-secA-q8-art':
+        "A cause and effect (fishbone) diagram. A thick horizontal spine arrow points right to an oval labelled 'Drone will not lift'. Four diagonal bones join the spine: 'Machine' and 'Environment' above it, 'User' and 'Materials' below it. Under Machine a box reads 'Propellers' in red, with a black arrow to its bone; each of the other three bones has an empty box beside it with a dashed red arrow pointing to the bone.",
+    'technology-2023-HL-paper-secB-q2c-art':
+        "A product lifecycle graph with 'Sales' on the vertical axis and 'Time' on the horizontal axis. A red curve starts low, rises slowly, then steeply, levels off to a peak and then falls away. Three dashed vertical lines divide the graph into four stages, numbered 1, 2, 3 and 4 across the top.",
+    'technology-2023-HL-paper-secC-q2b-art':
+        "A circuit diagram between a +9 V rail at the top and a 0 V rail at the bottom, with a switch on the +9 V line. On the left, a component labelled A, drawn as a rectangle with a diagonal arrow through it, sits above a component labelled B, drawn as a rectangle crossed by a bent line; their junction feeds the minus input of a triangular amplifier marked IC. Beside them two 10kΩ resistors in series set the voltage on the IC's plus input. The IC's output passes through a resistor to the base of a transistor, which drives a buzzer connected down to the 0 V rail.",
+    'technology-2023-OL-paper-secA-q7-art':
+        'Colour photograph of a bamboo cookbook stand: a large flat bamboo board leaning back on a stand, with a ledge along its bottom edge held by two black clips, and a slotted support rack visible behind it. A black arrow labelled A at the lower right points at the stand from the right-hand side.',
+    'technology-2023-OL-paper-secB-q2a-art':
+        "Colour photograph of a hurler's legs, in blue and yellow socks, standing on grass and holding a hurley upright with its taped handle at the top. A red arrow from the label 'Grip', on the left, points to the taped handle. the letter 'y' that ends 'environmentally' in the 2(a) stem line shows at the top-left corner: that glyph runs from x 399.6 to 405.0 and the 'Grip' label starts at x 400.0, beside a photo whose top is y 134.7, so no rectangle keeps the label and drops the letter",
+    'technology-2023-OL-paper-secC-q1c-art':
+        'Colour photograph of a long black dual in-line integrated circuit chip, white lettering printed on its top, with a row of silver pins along each long side.',
+    'technology-2023-OL-paper-secC-q4a-art':
+        "A perceptual map. A vertical red double-headed arrow runs from 'Low quality' at the bottom to 'High quality' at the top; it crosses a horizontal red double-headed arrow running from 'Low cost' on the left to 'High cost' on the right. Three circled letters mark products: A in the upper-left quarter (low cost, high quality), B in the upper-right quarter (high cost, high quality), and C just below the centre on the left (low cost, low quality).",
+    'technology-2024-HL-paper-secA-q10-art':
+        'Colour photograph of a small pink GPS luggage tag, a rounded rectangle seen at an angle, with the brand name nut printed in magenta on its face above a grid of small pin holes.',
+    'technology-2024-HL-paper-secA-q11-art':
+        "Colour photograph of an orange and grey counterbalance forklift truck: the driver's seat under a roll cage, a vertical mast at the front carrying two long forks lowered to the ground, and a heavy counterweight at the rear.",
+    'technology-2024-HL-paper-secA-q12-art':
+        'Colour photograph of a car alternator with a white 3D-printed mounting bracket bolted to its front, the pulley at the centre, with a red arrow pointing at the bracket.',
+    'technology-2024-HL-paper-secA-q15-art':
+        'Colour photograph of a small solid-timber fireside stool in a thin black frame: a rectangular top over a front rail, two splayed slab legs each with an arched cut-out at the foot, and a shelf spanning between the legs near the floor.',
+    'technology-2024-HL-paper-secA-q3-art':
+        'Colour photograph of the lower right-hand corner of an interactive touch screen: a teal abstract wallpaper on the display inside a thin black bezel, a dark bar along the bottom edge, and grey concentric rings drawn over the bottom right of that bar to mark where the proximity sensor sits.',
+    'technology-2024-HL-paper-secA-q7-art':
+        'Rendered pictorial view of a compound gear train in brown: a small gear labelled Gear A drives a large gear that shares its shaft with a second small gear, which drives a second large gear labelled Driven Gear. Red leader lines label the two small gears 15 Teeth and the two large gears 75 Teeth, and curved red arrows show the direction each gear turns.',
+    'technology-2024-HL-paper-secC-q2a-art':
+        'Colour photograph of a black three-in-one wireless charging stand: a smartphone propped upright on it showing a green charging symbol, a smartwatch on a raised arm to the right, and a pair of earbuds in a white case lying on the charging base.',
+    'technology-2024-HL-paper-secC-q2d-art':
+        'A logic gate diagram: inputs A and B feed a two-input AND gate; input A also branches down through a NOT gate, whose output meets input C at a second AND gate; the outputs of the two AND gates feed an OR gate whose output is labelled O.',
+    'technology-2024-HL-paper-secC-q4d-art':
+        'A product lifecycle graph drawn in red: Sales on the vertical axis against Time on the horizontal, divided by vertical lines into stages A, B, C and D. The curve rises slowly through A, climbs steeply through B, levels off across C and falls away sharply in D.',
+    'technology-2024-HL-paper-secC-q4d-ii-art':
+        'An updated product lifecycle graph drawn in green, on the same Sales against Time axes and stages A, B, C and D: the curve rises through A and B and levels off across C as before, but in D it dips briefly and then turns upward again.',
+    'technology-2024-HL-paper-secC-q5c-art':
+        'Colour photograph of an open presentation box finished in striped walnut veneer: the hinged lid raised, and inside a black lined tray holding a gold pen and a small gold crest badge.',
+    'technology-2024-OL-paper-secA-q1-art':
+        'A round blue mandatory safety sign showing, in white, water running from a tap over a pair of hands being washed.',
+    'technology-2024-OL-paper-secA-q6-art':
+        'Colour photograph of a sliding bevel: a black steel blade with a long slot, locked by a brass wing nut at the end of a polished hardwood stock with brass end caps.',
+    'technology-2024-OL-paper-secA-q7-art':
+        'Colour photograph of a blue steel machine tool stand with a plywood top and a plywood lower shelf on four splayed legs with black feet; a black arrow labelled A at the bottom right points diagonally up at the stand, giving the direction of view.',
+    'technology-2024-OL-paper-secA-q8-art':
+        'Colour photograph of a toothed belt drive: two flanged toothed pulleys of equal size joined by a black toothed timing belt whose teeth mesh with the pulleys.',
+    'technology-2024-OL-paper-secB-q3c-art':
+        'Outline side view of a model tilt-rotor aircraft on a stand: a 50 N upward force at the rear rotor 3 m from the nose, an arrow at the nose marking the fulcrum, and the rear motor labelled Motor.',
+    'technology-2024-OL-paper-secC-q1b-art':
+        'The start of a flowchart for the student to complete: a green Start box with an arrow down to a purple diamond decision labelled Button, whose right-hand exit loops back up to Start and whose lower exit is an open arrow pointing down.',
+    'technology-2024-OL-paper-secC-q2d-art':
+        'A partial resistor circuit: an 8 Ω resistor in series with a pair of 10 Ω resistors connected in parallel, with a lead at each end.',
+    'technology-2025-HL-paper-secA-q12-art':
+        'A resistor circuit between two open terminals on the left: R1 = 6 kΩ sits in series on the top wire, which then splits into two parallel branches down to the bottom wire, one holding R2 = 8 kΩ above R3 = 4 kΩ in series, the other holding R4 = 12 kΩ alone.',
+    'technology-2025-HL-paper-secA-q15-art':
+        'A photograph of a brass butt hinge opened flat: two rectangular leaves, each drilled with four countersunk screw holes, joined by a knuckle down the middle. A red arrow labelled pin points to the top of the pin that runs through the knuckle.',
+    'technology-2025-HL-paper-secA-q7-art':
+        "A photograph of Ireland's two-person skiff racing on blue water: a tall sail in green, white and orange bands, a dark jib marked IRL with the Olympic rings, and the crew leaning out from the hull. Beneath it three labels send red leader arrows into the photo: Mast (to the mast), Hull (to the hull) and Sail (to the striped sail).",
+    'technology-2025-HL-paper-secB-q3b-art':
+        'A cut-away model of a compound gearbox: four yellow spur gears on shafts in an open green housing. Red leader arrows label them: A, a small gear on the right on the shaft labelled Motor; B, the large gear beside it; C, a smaller gear in front of B; D, a large gear on the left on the shaft labelled Output.',
+    'technology-2025-HL-paper-secC-q2b-art':
+        "An op-amp circuit between a +9 V rail at the top and a 0 V rail at the bottom. A potential divider of R1 above R2 runs between the rails, its junction wired to the + input labelled B of a triangle labelled IC. A wire labelled Input enters from the left, hops over the divider wire and reaches the - input labelled A. The IC's output end is labelled output; no input or output device is drawn.",
+    'technology-2025-HL-paper-secC-q2d-art':
+        'A series circuit: a 12V battery (cells drawn with a dashed link) on the left drives current through R1 and then R2 on the right and back along the bottom wire through a circle marked A (the ammeter); a circle marked V (the voltmeter) is wired across R1 alone.',
+    'technology-2025-OL-paper-secA-q1-art':
+        'A photograph of a tall floor-standing workshop machine with a blue and white body: an upper and a lower cabinet, a vertical blade guide with a yellow guard above a square work table, a handwheel at the top right and the model mark BP-430A printed down the lower cabinet.',
+    'technology-2025-OL-paper-secA-q3-art':
+        'A round safety sign on white: a black camera symbol inside a thick red circle with a red diagonal bar struck through it from top left to bottom right.',
+    'technology-2025-OL-paper-secA-q4-art':
+        "A photograph of a child's wooden ride-on toy: a curved wooden seat on a front leg and a rear support, four black wheels with red hubs, and a red T-shaped handlebar at the front. At the lower right a black arrow labelled A points in towards the toy, giving the direction of view.",
+    'technology-2025-OL-paper-secC-q2c-art':
+        'A combination of two logic gates: inputs A and B enter a D-shaped gate (flat input side, rounded output side) labelled X; its output, labelled C, enters a triangle with a small circle at its tip labelled Y, whose output is labelled D. Below it, a truth table headed A, B, C, D with the A and B columns filled 0 0, 0 1, 1 0, 1 1 and the C and D columns left blank.',
+    'technology-2025-OL-paper-secC-q5b-art':
+        'A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).',
+})
+
+# The residue authors' crops (2026-10-28), each opened at 150 dpi.
+REVIEWED.update({
+})
 
 # Looked at and turned down, with what is wrong with each.
 REJECTED = {

@@ -238,6 +238,36 @@
   "notes": "The scheme prints '(6 marks)' for this question."
  },
  {
+  "id": "tech-2021-hl-a6",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q6",
+  "questionText": "The skin-frame type structure has gained popularity in 3D printing for items such as the Voronoi mushroom lamp shown. This approach uses a combination of frame and shell structures. Outline two reasons for the use of such a combined structure. 1. 2.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secA-q6-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3 + 3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Skin can be made very thin and still have rigidity, allows light to pass through, a variety of interesting shapes can be produced, can be manufactured in a single piece, strong, less material, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3 + 3 marks)' for this question."
+ },
+ {
   "id": "tech-2021-hl-a7",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -266,6 +296,43 @@
    }
   ],
   "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2021-hl-a8",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q8",
+  "questionText": "Outline two features that might be integrated into the bench-mounted belt sander shown, to reduce vibration and minimise dust. 1. Reduce vibration. 2. Minimise dust.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secA-q8-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3 + 3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Can be bolted to the bench, can have shock absorbing rubber mountings, rubber buffers, etc.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Can be attached to dust collection or extraction system, belt covers and dust bags, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3 + 3 marks)' for this question."
  },
  {
   "id": "tech-2021-hl-a9",
@@ -386,6 +453,36 @@
   "notes": "The scheme prints '(4 + 2 marks)' for this part."
  },
  {
+  "id": "tech-2021-hl-a11-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q11(i)",
+  "questionText": "Calculate the angular velocity (rotational speed) ratio of the system shown.",
+  "stem": "The system shown has a driver pulley, diameter 40 mm, and a driven pulley, diameter 25 mm.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secA-q11-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4 + 2 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ratio = Driven / Driver = 25 : 40 = 5 : 8",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4 + 2 marks)' for this part."
+ },
+ {
   "id": "tech-2021-hl-a11-ii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -395,9 +492,9 @@
   "section": "A",
   "questionRef": "2021 HL Section A Q11(ii)",
   "questionText": "Explain the purpose of the spring-loaded jockey pulley.",
-  "stem": "",
+  "stem": "The system shown has a driver pulley, diameter 40 mm, and a driven pulley, diameter 25 mm.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secA-q11-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -414,6 +511,43 @@
    }
   ],
   "notes": "The scheme prints '(4 + 2 marks)' for this part."
+ },
+ {
+  "id": "tech-2021-hl-a12",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q12",
+  "questionText": "The gearbox shown uses three identical compound gears. The initial driver gear (20 teeth) is secured to the motor. For each of the three subsequent compound gears, the driver gear has 20 teeth and the driven gear has 50 teeth. If the motor runs at 2000 rpm, calculate the angular velocity (rotational speed) at the output shaft. Output shaft DC motor 20 teeth 50 teeth Initial",
+  "stem": "",
+  "figureKey": "technology-2021-HL-scheme-secA-q12",
+  "questionFigureKey": "technology-2021-HL-paper-secA-q12-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gear ratio = B × D × F = 50 × 50 × 50 = 125000 = 15.625 : 1",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Velocity of output shaft = 2000 = 128 rpm 15.625",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
  },
  {
   "id": "tech-2021-hl-a13",
@@ -1167,9 +1301,9 @@
   "section": "C",
   "questionRef": "2021 HL Section C Q1(b)(i)",
   "questionText": "Outline three reasons why the programmable interface controller (PIC) is a suitable component to control the feeder.",
-  "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill. Start Power on Is hopper empty ?",
+  "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secC-q1b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1188,6 +1322,38 @@
   "notes": "The scheme prints '(16 marks, 4 + 8 + 4)' for this part."
  },
  {
+  "id": "tech-2021-hl-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q1(b)(ii)",
+  "questionText": "Redraw and complete the flowchart to control the feeder.",
+  "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
+  "figureKey": "technology-2021-HL-scheme-secC-q1b-ii",
+  "questionFigureKey": "technology-2021-HL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 4 + 8 + 4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Redraw and complete the flowchart to control the feeder.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 4 + 8 + 4)' for this part."
+ },
+ {
   "id": "tech-2021-hl-c1b-iii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -1197,9 +1363,9 @@
   "section": "C",
   "questionRef": "2021 HL Section C Q1(b)(iii)",
   "questionText": "After a period of usage, a design problem was identified - the warning buzzer discharged the battery. Suggest a modification to the flowchart to rectify this problem.",
-  "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill. Start Power on Is hopper empty ?",
+  "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secC-q1b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1285,6 +1451,38 @@
   "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
  },
  {
+  "id": "tech-2021-hl-c1d-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q1(d)(i)",
+  "questionText": "Draw a pneumatic circuit diagram to operate the pneumatic bottle-capping machine shown.",
+  "stem": "",
+  "figureKey": "technology-2021-HL-scheme-secC-q1d-i",
+  "questionFigureKey": "technology-2021-HL-paper-secC-q1d-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a pneumatic circuit diagram to operate the pneumatic bottle-capping machine shown.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
   "id": "tech-2021-hl-c1d-ii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -1296,7 +1494,7 @@
   "questionText": "Outline a method of controlling the speed of the piston as it places the cap on the bottle.",
   "stem": "",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secC-q1d-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1562,6 +1760,38 @@
   "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
  },
  {
+  "id": "tech-2021-hl-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q2(d)(i)",
+  "questionText": "Draw a logic circuit for the flight controller to ensure the drone remains undamaged.",
+  "stem": "The flight controller of a drone needs to ensure that all propellers are operational, heat does not build up excessively and batteries have sufficient charge to continue flying. If these conditions are not met a parachute can be deployed and power shut off.",
+  "figureKey": "technology-2021-HL-scheme-secC-q2d-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a logic circuit for the flight controller to ensure the drone remains undamaged.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
   "id": "tech-2021-hl-c2d-ii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -1770,6 +2000,36 @@
   "notes": "The scheme prints '(16 marks, 6 + 6 + 4)' for this part."
  },
  {
+  "id": "tech-2021-hl-c3c-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 HL Section C Q3(c)(i)",
+  "questionText": "Outline two functions of the mains-powered laptop power supply shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secC-q3c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Convert AC mains voltage to DC, low voltage supply, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
   "id": "tech-2021-hl-c3c-ii",
   "topicId": "tech-opt-ict",
   "conceptId": "opt-ict",
@@ -1781,7 +2041,7 @@
   "questionText": "Most wireless charging devices rely on AC inductive coupling to transmit power. Outline three advantages of wireless charging devices.",
   "stem": "",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-HL-paper-secC-q3c-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -2683,7 +2943,7 @@
   "section": "A",
   "questionRef": "2021 OL Section A Q3(i)",
   "questionText": "Give two safety precautions that should be observed when using an orbital sander. 1 2",
-  "stem": "The images show an orbital sander and disposable sanding discs of various grit size. ______________________________________________________________ ______________________________________________________________",
+  "stem": "The images show an orbital sander and disposable sanding discs of various grit size.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -2713,7 +2973,7 @@
   "section": "A",
   "questionRef": "2021 OL Section A Q3(ii)",
   "questionText": "Briefly outline what ‘grit size’ refers to in relation to sanding discs.",
-  "stem": "The images show an orbital sander and disposable sanding discs of various grit size. ______________________________________________________________ ______________________________________________________________",
+  "stem": "The images show an orbital sander and disposable sanding discs of various grit size.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -2743,7 +3003,7 @@
   "section": "A",
   "questionRef": "2021 OL Section A Q4",
   "questionText": "The graphics show two safety signs commonly displayed in schools, one colour-coded red and the other colour-coded yellow. State the meaning of each colour code.",
-  "stem": "The graphics show two safety signs commonly displayed in schools, one colour-coded red and the other colour-coded yellow. State the meaning of each colour code. Red colour-coded sign: _______________________________ _____________________________________________________ Yellow colour-coded sign: ________________________________ _____________________________________________________",
+  "stem": "",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -2771,6 +3031,95 @@
   "notes": "The scheme prints '(4+4 marks)' for this question."
  },
  {
+  "id": "tech-2021-ol-a5-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q5(i)",
+  "questionText": "Name Component A and Component B.",
+  "stem": "The image shows a mechanism which consists of two components, labelled A and B.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secA-q5-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Worm",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Worm wheel",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Component A: Worm",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Component B: Worm wheel",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2021-ol-a5-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q5(ii)",
+  "questionText": "Suggest one advantage of using this mechanism when manufacturing electro-mechanical control elements in project work.",
+  "stem": "The image shows a mechanism which consists of two components, labelled A and B.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secA-q5-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Worm",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Worm wheel",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Speed reduction allows for greater control, change of direction of motion can be useful in project work, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
   "id": "tech-2021-ol-a6",
   "topicId": "tech-core-project",
   "conceptId": "core-project",
@@ -2779,8 +3128,8 @@
   "subjectId": "technology",
   "section": "A",
   "questionRef": "2021 OL Section A Q6",
-  "questionText": "Organising time, people and a budget are essential aspects when managing a project. Briefly explain any two of the aspects listed below. Time: People: Budget: page running",
-  "stem": "Organising time, people and a budget are essential aspects when managing a project. Briefly explain any two of the aspects listed below. Time: _________________________________________________ _________________________________________________ People: _________________________________________________ _________________________________________________ Budget: _________________________________________________ _________________________________________________ page running",
+  "questionText": "Organising time, people and a budget are essential aspects when managing a project. Briefly explain any two of the aspects listed below.",
+  "stem": "",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -2820,6 +3169,38 @@
    }
   ],
   "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2021-ol-a7",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q7",
+  "questionText": "The image shows a wooden birdhouse. In the box provided, make a well-proportioned 2D sketch of the elevation looking in the direction of arrow A and the plan looking in the direction of arrow B.",
+  "stem": "",
+  "figureKey": "technology-2021-OL-scheme-secA-q7",
+  "questionFigureKey": "technology-2021-OL-paper-secA-q7-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(Very good sketch - 8 marks, A Fair sketch - 4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The image shows a wooden birdhouse. In the box provided, make a well-proportioned 2D sketch of the elevation looking in the direction of arrow A and the plan looking in the direction of arrow B.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(Very good sketch - 8 marks, A Fair sketch - 4 marks)' for this question."
  },
  {
   "id": "tech-2021-ol-a8-i",
@@ -3039,9 +3420,9 @@
   "section": "A",
   "questionRef": "2021 OL Section A Q11(i)",
   "questionText": "On the image, label the load, the effort and the fulcrum when the spade is in use.",
-  "stem": "The image shows a garden spade which acts as a lever. 50 N 0.3 M 0.5 M F",
-  "figureKey": "",
-  "questionFigureKey": "",
+  "stem": "The image shows a garden spade which acts as a lever.",
+  "figureKey": "technology-2021-OL-scheme-secA-q11-i",
+  "questionFigureKey": "technology-2021-OL-paper-secA-q11-i-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3052,12 +3433,88 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "fulcrum when the spade is in use. L",
+    "verbatim": "On the image, label the load, the effort and the fulcrum when the spade is in use.",
     "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2021-ol-a11-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q11(ii)",
+  "questionText": "A lever diagram is shown below. If a force of 50 N is applied as shown in the diagram, calculate the force F required to balance the lever.",
+  "stem": "The image shows a garden spade which acts as a lever.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secA-q11-ii-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "F x 0.5 M = 50 N x 0.8 M",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "F = 40 NM/0.5 M",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "F = 80 N",
+    "marks": null,
     "openList": true
    }
   ],
   "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2021-ol-a12",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q12",
+  "questionText": "Use two graphic techniques to enhance the representation of the juicer shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secA-q12-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rendering, colour, shadow, hatching, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
  },
  {
   "id": "tech-2021-ol-b2a-i",
@@ -3160,7 +3617,7 @@
   "questionRef": "2021 OL Section B Q2(b)(ii)",
   "questionText": "Draw a labelled diagram of a suitable circuit for the LED light source. Include a switch and a battery power supply.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "technology-2021-OL-scheme-secB-q2b-ii",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -3172,9 +3629,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "a battery power supply.",
+    "verbatim": "Draw a labelled diagram of a suitable circuit for the LED light source. Include a switch and a battery power supply.",
     "marks": 4,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(8 Marks, 2+4+2)' for this part."
@@ -3399,7 +3858,7 @@
   "section": "B",
   "questionRef": "2021 OL Section B Q3(b)(i)",
   "questionText": "Briefly describe what is meant by the terms additive and subtractive in reference to manufacturing.",
-  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. (i) has the lesser environmental impact.",
+  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -3427,6 +3886,36 @@
   "notes": "The scheme prints '(8 Marks, 4+2+2)' for this part."
  },
  {
+  "id": "tech-2021-ol-b3b-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2021 OL Section B Q3(b)(ii)",
+  "questionText": "Outline which of the processes at 3(b) (i) has the lesser environmental impact.",
+  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 4+2+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Additive manufacturing has the smaller environmental impact as it produces no waste.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 4+2+2)' for this part."
+ },
+ {
   "id": "tech-2021-ol-b3b-iii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -3436,7 +3925,7 @@
   "section": "B",
   "questionRef": "2021 OL Section B Q3(b)(iii)",
   "questionText": "Name one other CAM process commonly used in schools. Briefly outline the benefits of this process for student project work.",
-  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. (i) has the lesser environmental impact.",
+  "stem": "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -3651,6 +4140,146 @@
   "notes": "The scheme prints '(10 Marks, 6 + 4)' for this part."
  },
  {
+  "id": "tech-2021-ol-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q1(b)(i)",
+  "questionText": "Complete the given flowchart to operate the coffee machine in the following sequence: • the coffee machine is powered on • the capsule is inserted • a large or a small coffee is selected • the coffee pours.",
+  "stem": "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
+  "figureKey": "technology-2021-OL-scheme-secC-q1b-i",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8 + 6 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete the given flowchart to operate the coffee machine in the following sequence: • the coffee machine is powered on • the capsule is inserted • a large or a small coffee is selected • the coffee pours.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8 + 6 + 6)' for this part."
+ },
+ {
+  "id": "tech-2021-ol-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q1(b)(ii)",
+  "questionText": "Suggest a modification to the flowchart to indicate when the water container is empty.",
+  "stem": "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
+  "figureKey": "technology-2021-OL-scheme-secC-q1b-ii",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8 + 6 + 6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suggest a modification to the flowchart to indicate when the water container is empty.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8 + 6 + 6)' for this part."
+ },
+ {
+  "id": "tech-2021-ol-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q1(b)(iii)",
+  "questionText": "Describe how you would indicate, on the machine, that the water container needs refilling.",
+  "stem": "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8 + 6 + 6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use an LED indicator, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8 + 6 + 6)' for this part."
+ },
+ {
+  "id": "tech-2021-ol-c1c-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q1(c)(i)",
+  "questionText": "Explain how a shuttle valve works with reference to the parts labelled A, B and C.",
+  "stem": "The image shows a shuttle valve used in pneumatic circuits. Also shown is the symbol for a shuttle valve.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q1c-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Input port",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Input port",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Output port",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6 + 4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The shuttle valve switches based on the pressures entering either of the input ports A or B and exiting at port C. If both input ports A and B start to receive compressed air, the connection with the higher pressure takes precedence and it is output to port C, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6 + 4)' for this part."
+ },
+ {
   "id": "tech-2021-ol-c1c-ii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -3660,9 +4289,9 @@
   "section": "C",
   "questionRef": "2021 OL Section C Q1(c)(ii)",
   "questionText": "Give one practical example of where a shuttle valve could be used in industry.",
-  "stem": "",
+  "stem": "The image shows a shuttle valve used in pneumatic circuits. Also shown is the symbol for a shuttle valve.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q1c-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4572,7 +5201,7 @@
   "questionText": "Give two advantages of an e-Kanban system over a traditional Kanban system.",
   "stem": "In an Electronic Kanban (e-Kanban) system, all cards used to track parts within a factory are maintained electronically. Barcode scanners, sensors and technologies such as Radio-Frequency Identification (RFID) can be used for real-time tracking of inventory.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q4d-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4591,6 +5220,36 @@
   "notes": "The scheme prints '(10 Marks, 6 + 4)' for this part."
  },
  {
+  "id": "tech-2021-ol-c4d-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q4(d)(ii)",
+  "questionText": "Suggest two items of information that could be contained in a barcode such as the one shown.",
+  "stem": "In an Electronic Kanban (e-Kanban) system, all cards used to track parts within a factory are maintained electronically. Barcode scanners, sensors and technologies such as Radio-Frequency Identification (RFID) can be used for real-time tracking of inventory.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q4d-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6 + 4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price, weight, date of manufacture and expiry, name of the manufacturer of the product, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6 + 4)' for this part."
+ },
+ {
   "id": "tech-2021-ol-c5a-i",
   "topicId": "tech-opt-materials",
   "conceptId": "opt-materials",
@@ -4600,9 +5259,9 @@
   "section": "C",
   "questionRef": "2021 OL Section C Q5(a)(i)",
   "questionText": "Briefly outline what is meant by synthetic materials and natural materials.",
-  "stem": "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car. Body part Material Classification Material Seat Fabric Tyre Steel-reinforced rubber Headlight lens Ceramic A",
+  "stem": "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q5a-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -4623,6 +5282,38 @@
     "verbatim": "Natural materials are those that are found in nature, e.g., wool/linen/silk/cotton/leather.",
     "marks": null,
     "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4 + 6)' for this part."
+ },
+ {
+  "id": "tech-2021-ol-c5a-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2021 OL Section C Q5(a)(ii)",
+  "questionText": "Draw the table below into your answerbook and complete the missing information.",
+  "stem": "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car.",
+  "figureKey": "technology-2021-OL-scheme-secC-q5a-ii",
+  "questionFigureKey": "technology-2021-OL-paper-secC-q5a-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4 + 6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the table below into your answerbook and complete the missing information.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(10 Marks, 4 + 6)' for this part."
@@ -5002,6 +5693,194 @@
   "notes": "The scheme prints '(2 + 4 marks)' for this part."
  },
  {
+  "id": "tech-2022-hl-a5-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q5(i)",
+  "questionText": "Explain the function of the tolerance band on the resistor shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secA-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2 + 4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Resistor tolerance is the deviation from the nominal value. It is expressed as a ±%, a gold band has a tolerance of ±5%, a 100Ω resistor can have a value from 95Ω to 105Ω.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2 + 4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-a5-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q5(ii)",
+  "questionText": "Calculate the total resistance of the circuit shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secA-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(2 + 4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculation: 1/R = (1/8 +1/8). R = 4Ω, or Product/Sum",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "RTotal = 5 + 4 + 6 = 15Ω",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2 + 4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-a6-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(i)",
+  "questionText": "Name component A and component B.",
+  "stem": "The graphic shows a mechanism which consists of two components, labelled A and B.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secA-q6-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Follower",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cam",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(2 + 4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Follower",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Cam",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2 + 4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-a6-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(ii)",
+  "questionText": "Outline the operation of the mechanism shown, referring to the movement changes and the spring.",
+  "stem": "The graphic shows a mechanism which consists of two components, labelled A and B.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secA-q6-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Follower",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cam",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2 + 4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "As the cam (B) rotates, the profile of the cam causes the follower (A) to rise and fall in its guide plate, the spring ensures that the follower is in contact with the cam ensuring constant movement.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2 + 4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-a7",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q7",
+  "questionText": "The image shows a bridge under construction. Compile a Gantt chart for the construction of a typical bridge.",
+  "stem": "",
+  "figureKey": "technology-2022-HL-scheme-secA-q7",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The image shows a bridge under construction. Compile a Gantt chart for the construction of a typical bridge.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
   "id": "tech-2022-hl-a8",
   "topicId": "tech-core-graphics",
   "conceptId": "core-graphics",
@@ -5118,6 +5997,38 @@
    }
   ],
   "notes": "The scheme prints '(2 + 4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-a10",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q10",
+  "questionText": "Risk assessment is a critical element in providing a safe environment in a school workshop. Complete the partial risk assessment guide, shown below, for the use of a soldering iron. Risk Assessment – Technology Room – Soldering iron Hazards Is the hazard present? Control measures Is this control in place? What is the risk? Risk rating H = High M = Medium L = Low Y/N Y/N Hot soldering iron Y Burns H Use soldering iron stand. Warning signs present.",
+  "stem": "",
+  "figureKey": "technology-2022-HL-scheme-secA-q10",
+  "questionFigureKey": "technology-2022-HL-paper-secA-q10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Risk assessment is a critical element in providing a safe environment in a school workshop. Complete the partial risk assessment guide, shown below, for the use of a soldering iron. Risk Assessment – Technology Room – Soldering iron Hazards Is the hazard present? Control measures Is this control in place? What is the risk? Risk rating H = High M = Medium L = Low Y/N Y/N Hot soldering iron Y Burns H Use soldering iron stand. Warning signs present.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
  },
  {
   "id": "tech-2022-hl-a11",
@@ -5496,7 +6407,7 @@
   "subjectId": "technology",
   "section": "B",
   "questionRef": "2022 HL Section B Q2(b)(ii)",
-  "questionText": "Suggest one sensor that could be used in the base of the robot. State the purpose of this sensor. Outline two ways in which a product such as the Adibot could be marketed to boost sales.",
+  "questionText": "Suggest one sensor that could be used in the base of the robot. State the purpose of this sensor.",
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "",
@@ -5560,6 +6471,94 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 4 + 2 + 4)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-b2c-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q2(c)(i)",
+  "questionText": "Describe, using a labelled diagram, a typical product life cycle for the Adibot robot, shown in 2(b) above.",
+  "stem": "In an ever-advancing technological world, products are replaced very quickly.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secB-q2c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Introduction: product is launched to the market",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Sales with low sales.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2. Growth: demand increases with steep growth in sales.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "1 2 3 4 3. Maturity: sales are strong as product has established markets.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Time 4. Decline: sales reduce as competition increases.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-b2c-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q2(c)(ii)",
+  "questionText": "Outline two ways in which a product such as the Adibot could be marketed to boost sales.",
+  "stem": "In an ever-advancing technological world, products are replaced very quickly.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secB-q2c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Innovation in reaction to crisis, additional features added, reduce cost as product shows decline in market share, online/tv/radio advertising etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
  },
  {
   "id": "tech-2022-hl-b2d-i",
@@ -5629,6 +6628,73 @@
   "notes": "The scheme prints '(6 marks, 3 +3)' for this part."
  },
  {
+  "id": "tech-2022-hl-b3a-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q3(a)(i)",
+  "questionText": "Suggest one advantage and one disadvantage of using e-scooters for transport in cities.",
+  "stem": "Urban Movement® is an e-scooter brand developed by Stephen Woods from Dublin. The scooter shown in 3(b) below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secB-q3a-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(8 marks, 4 + 4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Advantages: Less air pollution, avoid traffic congestion, saves on the expense of car ownership, no car parking fees in cities, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Disadvantages: Insufficient number of charging points, greater risk of injury etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4 + 4)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-b3a-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q3(a)(ii)",
+  "questionText": "Outline two ways in which the comfort of the user has been enhanced in the e-scooter shown.",
+  "stem": "Urban Movement® is an e-scooter brand developed by Stephen Woods from Dublin. The scooter shown in 3(b) below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secB-q3a-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4 + 4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Handlebars have soft grips, the honeycomb wheels will have a shock absorption effect, easy manoeuvrability, lightweight and foldable, braking system increases safety, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4 + 4)' for this part."
+ },
+ {
   "id": "tech-2022-hl-b3b-i",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -5637,10 +6703,10 @@
   "subjectId": "technology",
   "section": "B",
   "questionRef": "2022 HL Section B Q3(b)(i)",
-  "questionText": "Suggest one advantage and one disadvantage of using e-scooters for transport in cities. Describe, using an annotated sketch, a method of folding the frame of the scooter.",
-  "stem": "below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery. This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
+  "questionText": "Describe, using an annotated sketch, a method of folding the frame of the scooter.",
+  "stem": "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secB-q3b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -5653,6 +6719,68 @@
     "kind": "point",
     "verbatim": "The column is hinged allowing the scooter to fold for easy storage and transporting.",
     "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4 + 4 + 2)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-b3b-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q3(b)(ii)",
+  "questionText": "Draw a circuit diagram that will automatically switch on a flashing LED cluster light on the scooter after dark.",
+  "stem": "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
+  "figureKey": "technology-2022-HL-scheme-secB-q3b-ii",
+  "questionFigureKey": "technology-2022-HL-paper-secB-q3b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4 + 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a circuit diagram that will automatically switch on a flashing LED cluster light on the scooter after dark.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4 + 4 + 2)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-b3b-iii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 HL Section B Q3(b)(iii)",
+  "questionText": "Suggest two pieces of data that may be shown on the electronic display of a scooter.",
+  "stem": "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secB-q3b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4 + 4 + 2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Speed of drive, battery life, distance travelled, etc.",
+    "marks": 2,
     "openList": true
    }
   ],
@@ -5888,6 +7016,38 @@
   "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
  },
  {
+  "id": "tech-2022-hl-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q1(b)(i)",
+  "questionText": "Draw a flowchart for the operating sequence of the printer.",
+  "stem": "",
+  "figureKey": "technology-2022-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 10 + 4 + 2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a flowchart for the operating sequence of the printer.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 10 + 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2022-hl-c1b-ii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -6018,7 +7178,7 @@
   "questionRef": "2022 HL Section C Q1(d)(i)",
   "questionText": "Draw a pneumatic circuit diagram for the operation of the double-acting cylinder used in the clamp.",
   "stem": "A pneumatic clamp is used to hold down wooden parts that have been glued together.",
-  "figureKey": "",
+  "figureKey": "technology-2022-HL-scheme-secC-q1d-i",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -6030,9 +7190,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Flow control valve",
+    "verbatim": "Draw a pneumatic circuit diagram for the operation of the double-acting cylinder used in the clamp.",
     "marks": 10,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(14 marks, 10 + 4)' for this part."
@@ -6165,6 +7327,38 @@
   "notes": "The scheme prints '(16 marks, 8 + 4 + 4)' for this part."
  },
  {
+  "id": "tech-2022-hl-c2b-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q2(b)(ii)",
+  "questionText": "Draw a truth table for the logic gate shown.",
+  "stem": "A heat alarm with logic gate processing is shown in the circuit diagram.",
+  "figureKey": "technology-2022-HL-scheme-secC-q2b-ii",
+  "questionFigureKey": "technology-2022-HL-paper-secC-q2b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8 + 4 + 4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a truth table for the logic gate shown.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8 + 4 + 4)' for this part."
+ },
+ {
   "id": "tech-2022-hl-c2b-iii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -6239,6 +7433,38 @@
   "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
  },
  {
+  "id": "tech-2022-hl-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q2(c)(ii)",
+  "questionText": "Draw the circuit configuration of the 555 timer in astable mode.",
+  "stem": "The 555 timer is an integrated chip used in a variety of timer, pulse generation and oscillator applications.",
+  "figureKey": "technology-2022-HL-scheme-secC-q2c-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 6 + 8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the circuit configuration of the 555 timer in astable mode.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
+ },
+ {
   "id": "tech-2022-hl-c2d-i",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -6249,7 +7475,7 @@
   "questionRef": "2022 HL Section C Q2(d)(i)",
   "questionText": "Draw a circuit diagram with an appropriate input, Darlington Pair transistors, and suitable output for temperature control of the vivarium.",
   "stem": "A plant terrarium or reptile vivarium tank needs to control temperature levels carefully. A circuit involving a Darlington Pair transistor with a relay may be used for this purpose.",
-  "figureKey": "",
+  "figureKey": "technology-2022-HL-scheme-secC-q2d-i",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -6261,9 +7487,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "suitable output for temperature control of the vivarium.",
+    "verbatim": "Draw a circuit diagram with an appropriate input, Darlington Pair transistors, and suitable output for temperature control of the vivarium.",
     "marks": 8,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
@@ -6706,6 +7934,38 @@
   "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
  },
  {
+  "id": "tech-2022-hl-c4b-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q4(b)(i)",
+  "questionText": "Draw a graph to show the cost of manufacturing the headphone stands using each method.",
+  "stem": "",
+  "figureKey": "technology-2022-HL-scheme-secC-q4b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8 + 2 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a graph to show the cost of manufacturing the headphone stands using each method.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8 + 2 + 6)' for this part."
+ },
+ {
   "id": "tech-2022-hl-c4b-ii",
   "topicId": "tech-opt-manufacturing",
   "conceptId": "opt-manufacturing",
@@ -6997,7 +8257,7 @@
   "section": "C",
   "questionRef": "2022 HL Section C Q5(b)(i)",
   "questionText": "State two reasons why destructive testing of materials is carried out during the design phase of devices such as vacuum cleaners.",
-  "stem": "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it. above.",
+  "stem": "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -7026,8 +8286,8 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2022 HL Section C Q5(b)(ii)",
-  "questionText": "Describe, using annotated sketches, an impact test to compare the impact properties of different materials that could be used in the manufacture of the cleaner cover. Describe, using annotated sketches, a suitable method to manufacture a large batch of the cleaner covers.",
-  "stem": "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it. above.",
+  "questionText": "Describe, using annotated sketches, an impact test to compare the impact properties of different materials that could be used in the manufacture of the cleaner cover.",
+  "stem": "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -7078,7 +8338,7 @@
   "section": "C",
   "questionRef": "2022 HL Section C Q5(b)(iii)",
   "questionText": "Describe, using annotated sketches, a means of strengthening materials during their design or production.",
-  "stem": "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it. above.",
+  "stem": "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it.",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -7125,6 +8385,80 @@
    }
   ],
   "notes": "The scheme prints '(16 marks, 6 + 6 + 4)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-c5c-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5(c)(i)",
+  "questionText": "Name a suitable thermoplastic material that could be used to manufacture the top cover of the robotic vacuum cleaner, shown in 5(b) above.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secC-q5c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 6 + 8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Transparent Polycarbonate, polypropylene, HDPE, ABS etc which are all impact resistant.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
+ },
+ {
+  "id": "tech-2022-hl-c5c-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 HL Section C Q5(c)(ii)",
+  "questionText": "Describe, using annotated sketches, a suitable method to manufacture a large batch of the cleaner covers.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-HL-paper-secC-q5c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 6 + 8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Injection moulding: plastic pellets are loaded from the hopper through the heated chamber.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It is pushed into the cover shaped mould by the rotating screw.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Appropriate alternative solutions acceptable.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
  },
  {
   "id": "tech-2022-hl-c5d-i",
@@ -7566,6 +8900,70 @@
    }
   ],
   "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-a7",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q7",
+  "questionText": "The image shows a Stockholm toddler chair that can be used at two different heights, by simply turning it upside-down. In the box provided, make a well-proportioned 2D sketch of the chair when viewed in the direction of arrow A.",
+  "stem": "",
+  "figureKey": "technology-2022-OL-scheme-secA-q7",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(Very good sketch- 8 marks, fair sketch 4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The image shows a Stockholm toddler chair that can be used at two different heights, by simply turning it upside-down. In the box provided, make a well-proportioned 2D sketch of the chair when viewed in the direction of arrow A.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(Very good sketch- 8 marks, fair sketch 4 marks)' for this question."
+ },
+ {
+  "id": "tech-2022-ol-a8",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q8",
+  "questionText": "A Work Breakdown Structure (WBS) is a project management tool used by students and professionals. Below is the incomplete WBS for the toilet-roll holder shown. Using your own headings, complete the sample WBS.",
+  "stem": "",
+  "figureKey": "technology-2022-OL-scheme-secA-q8",
+  "questionFigureKey": "technology-2022-OL-paper-secA-q8-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A Work Breakdown Structure (WBS) is a project management tool used by students and professionals. Below is the incomplete WBS for the toilet-roll holder shown. Using your own headings, complete the sample WBS.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks)' for this question."
  },
  {
   "id": "tech-2022-ol-a9-i",
@@ -8122,6 +9520,36 @@
   "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
  },
  {
+  "id": "tech-2022-ol-b3b-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 OL Section B Q3(b)(i)",
+  "questionText": "Name a suitable material for the manufacture of the battery pack holder, shown.",
+  "stem": "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secB-q3b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Leather, neoprene, nylon, polyester, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
   "id": "tech-2022-ol-b3b-ii",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -8133,7 +9561,7 @@
   "questionText": "Suggest two reasons why your chosen material is suitable for the manufacture of the battery pack holder.",
   "stem": "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secB-q3b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8163,7 +9591,7 @@
   "questionText": "Describe, using notes and sketches, how the battery pack holder could be attached to the front of the bicycle.",
   "stem": "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secB-q3b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8251,9 +9679,9 @@
   "section": "B",
   "questionRef": "2022 OL Section B Q3(d)(i)",
   "questionText": "Describe what is meant by the term alloy when referring to materials.",
-  "stem": "",
+  "stem": "Most modern bicycle frames, such as the one shown, are made from lightweight aluminium alloys.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secB-q3d-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8266,6 +9694,36 @@
     "kind": "point",
     "verbatim": "A metallic substance made from two or more elements.",
     "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-b3d-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2022 OL Section B Q3(d)(ii)",
+  "questionText": "Outline one structural feature that strengthens the bicycle frame shown.",
+  "stem": "Most modern bicycle frames, such as the one shown, are made from lightweight aluminium alloys.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secB-q3d-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Triangulation, tubing structure of material, etc.",
+    "marks": 2,
     "openList": true
    }
   ],
@@ -8330,6 +9788,100 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 OL Section C Q1(b)(i)",
+  "questionText": "Complete the flowchart, shown, to operate the Robo-Deck in the following sequence: • The system is powered on • The motor activates, moving the Robo-Deck forward for 15 seconds • At the same time, the stain sprayer comes on for 15 seconds • The motor and the sprayer stop.",
+  "stem": "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
+  "figureKey": "technology-2022-OL-scheme-secC-q1b-i",
+  "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete the flowchart, shown, to operate the Robo-Deck in the following sequence: • The system is powered on • The motor activates, moving the Robo-Deck forward for 15 seconds • At the same time, the stain sprayer comes on for 15 seconds • The motor and the sprayer stop.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 OL Section C Q1(b)(ii)",
+  "questionText": "Suggest a modification of the flowchart to alert the user when the stain is running low.",
+  "stem": "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
+  "figureKey": "technology-2022-OL-scheme-secC-q1b-ii",
+  "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suggest a modification of the flowchart to alert the user when the stain is running low.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 OL Section C Q1(b)(iii)",
+  "questionText": "Name a suitable sensor that could be used to detect an object in the path of the Robo-Deck.",
+  "stem": "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Infra-red motion sensor, LDR, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
  },
  {
   "id": "tech-2022-ol-c1c-i",
@@ -8401,20 +9953,6 @@
     "verbatim": "When the air stops, the spring brings the piston back to its original position.",
     "marks": null,
     "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Piston",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "A Spring",
-    "marks": null,
-    "openList": true
    }
   ],
   "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
@@ -8442,7 +9980,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "When a force presses inward on an object causing it to be compacted. Gripper",
+    "verbatim": "When a force presses inward on an object causing it to be compacted.",
     "marks": 4,
     "openList": true
    }
@@ -8489,9 +10027,9 @@
   "section": "C",
   "questionRef": "2022 OL Section C Q2(a)(i)",
   "questionText": "The colour band sequence of R is brown, black, red and gold. State the value of the resistor R.",
-  "stem": "",
+  "stem": "A resistor R, the resistor colour and tolerance code tables, are shown.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secC-q2a-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8504,6 +10042,36 @@
     "kind": "point",
     "verbatim": "1000Ω R",
     "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6 +4)' for this part."
+ },
+ {
+  "id": "tech-2022-ol-c2a-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2022 OL Section C Q2(a)(ii)",
+  "questionText": "Outline the function of the gold band on the resistor shown.",
+  "stem": "A resistor R, the resistor colour and tolerance code tables, are shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2022-OL-paper-secC-q2a-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6 +4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The tolerance band, indicates a tolerance of +/- 5%",
+    "marks": 4,
     "openList": true
    }
   ],
@@ -9953,6 +11521,36 @@
   "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
  },
  {
+  "id": "tech-2023-hl-a8",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q8",
+  "questionText": "Complete the cause and effect diagram below by suggesting three factors to analyse the performance of a drone that fails to lift off the ground. One has been completed for you.",
+  "stem": "",
+  "figureKey": "technology-2023-HL-scheme-secA-q8",
+  "questionFigureKey": "technology-2023-HL-paper-secA-q8-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2 + 2 + 2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Three appropriate factors selected.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2 + 2 + 2)' for this question."
+ },
+ {
   "id": "tech-2023-hl-a9",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -10194,6 +11792,87 @@
    }
   ],
   "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
+ },
+ {
+  "id": "tech-2023-hl-a13-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q13(i)",
+  "questionText": "Name the mechanism and describe its operation.",
+  "stem": "A cutaway model of a mechanism for a hoist is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secA-q13-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Worm and gearwheel",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Operation: One turn of worm moves wheel 1 tooth.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
+  "id": "tech-2023-hl-a13-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q13(ii)",
+  "questionText": "Give two reasons for using this mechanism in the hoist.",
+  "stem": "A cutaway model of a mechanism for a hoist is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secA-q13-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gives a very precise movement,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Can be used to prevent slippage,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Compact and strong, speed reduction etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
  },
  {
   "id": "tech-2023-hl-a14-i",
@@ -10478,6 +12157,57 @@
   "notes": "The scheme prints '(10 marks, 2 + 4 + 4)' for this part."
  },
  {
+  "id": "tech-2023-hl-b2c-i",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2023 HL Section B Q2(c)(i)",
+  "questionText": "Describe the four stages of a typical product lifecycle graph as shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secB-q2c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 - Introduction: After all research and development is complete, the product is launched. The product may have few competitors and sales may remain low and it may take Time time for the market to accept the new product.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2 - Growth: The market has accepted the product and sales begin to increase. The company may want to make improvements to the product to stay competitive.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3 - Maturity: Sales will reach their peak. Other competitors enter the market with alternative solutions and increasing competition.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4 - Decline: Sales begin to decline as the product reaches its saturation point. Most products are phased out of the market at this point due to the decrease in sales and because of competitive pressure. The market will see the product as old and no longer in demand.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2023-hl-b2c-ii",
   "topicId": "tech-core-ict",
   "conceptId": "core-ict",
@@ -10489,7 +12219,7 @@
   "questionText": "Concerns were raised over a flight time of five minutes and a reduction in company support for the device, despite initial high demand. Outline the possible impact of these concerns on the product lifecycle of the Pixy drone.",
   "stem": "",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secB-q2c-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10943,6 +12673,38 @@
   "notes": "The scheme prints '(10 marks, 6 +4)' for this part."
  },
  {
+  "id": "tech-2023-hl-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q1(b)(i)",
+  "questionText": "Draw a flowchart for the operating sequence of the iBowl.",
+  "stem": "The iBowl 3-in-1 aquarium monitoring system is capable of monitoring and maintaining water quality in an aquarium or fish tank. The iBowl performs the following steps when operating: • a green LED illuminates when powered on • temperature is constantly monitored, with a heater enabled if the temperature falls below a set level • water quality is monitored by total dissolved solids (TDS) sensors. Poor quality water is drained and clean water is pumped in if needed • water pH is constantly displayed.",
+  "figureKey": "technology-2023-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 8 + 4 + 4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a flowchart for the operating sequence of the iBowl.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 8 + 4 + 4)' for this part."
+ },
+ {
   "id": "tech-2023-hl-c1b-ii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -10953,11 +12715,11 @@
   "questionRef": "2023 HL Section C Q1(b)(ii)",
   "questionText": "Suggest a modification to the flowchart to support automated lighting in darkness.",
   "stem": "The iBowl 3-in-1 aquarium monitoring system is capable of monitoring and maintaining water quality in an aquarium or fish tank. The iBowl performs the following steps when operating: • a green LED illuminates when powered on • temperature is constantly monitored, with a heater enabled if the temperature falls below a set level • water quality is monitored by total dissolved solids (TDS) sensors. Poor quality water is drained and clean water is pumped in if needed • water pH is constantly displayed.",
-  "figureKey": "",
+  "figureKey": "technology-2023-HL-scheme-secC-q1b-ii",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(16 marks, 8 + 4 + 4)"
   },
   "totalMarks": 4,
@@ -10966,21 +12728,7 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Add light sensor check with light switching option.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Check light No",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Light on level",
-    "marks": null,
+    "marks": 4,
     "openList": true
    }
   ],
@@ -11267,6 +13015,47 @@
   "notes": "The scheme prints '(10 marks, 4 + 6)' for this part."
  },
  {
+  "id": "tech-2023-hl-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q2(b)(i)",
+  "questionText": "Name the components labelled A and B in the 9 V circuit shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-HL-paper-secC-q2b-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Variable Resistor",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Thermistor",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 6 + 6 + 4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Variable Resistor B = Thermistor",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 6 + 6 + 4)' for this part."
+ },
+ {
   "id": "tech-2023-hl-c2b-ii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -11314,7 +13103,7 @@
   "questionRef": "2023 HL Section C Q2(b)(iii)",
   "questionText": "Show how the given circuit could be modified to provide an output for a 220 V fan.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "technology-2023-HL-scheme-secC-q2b-iii",
   "questionFigureKey": "technology-2023-HL-paper-secC-q2b-art",
   "labelKey": [],
   "tariffModel": {
@@ -11326,9 +13115,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "B 10kΩ 0 V",
+    "verbatim": "Show how the given circuit could be modified to provide an output for a 220 V fan.",
     "marks": 4,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(16 marks, 6 + 6 + 4)' for this part."
@@ -11410,6 +13201,38 @@
     "verbatim": "This allows for convenient and cordless charging of devices by utilizing the principles of electromagnetic induction.",
     "marks": null,
     "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
+  "id": "tech-2023-hl-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 HL Section C Q2(d)(i)",
+  "questionText": "Draw a logic gate circuit to represent the operation of the coffee machine.",
+  "stem": "The coffee machine operates when a pod and a cup are in place and the water is at the correct temperature. If all these conditions are not met, a red LED continuously flashes.",
+  "figureKey": "technology-2023-HL-scheme-secC-q2d-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a logic gate circuit to represent the operation of the coffee machine.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
@@ -12846,6 +14669,38 @@
   "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
+  "id": "tech-2023-ol-a7",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q7",
+  "questionText": "The image shows a bamboo cookbook stand. In the box provided, make a well-proportioned 2D sketch of the cookbook stand when viewed in the direction of arrow A.",
+  "stem": "",
+  "figureKey": "technology-2023-OL-scheme-secA-q7",
+  "questionFigureKey": "technology-2023-OL-paper-secA-q7-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The image shows a bamboo cookbook stand. In the box provided, make a well-proportioned 2D sketch of the cookbook stand when viewed in the direction of arrow A.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks)' for this question."
+ },
+ {
   "id": "tech-2023-ol-a8-i",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -12966,6 +14821,36 @@
   "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
+  "id": "tech-2023-ol-a10",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q10",
+  "questionText": "Digital technology is used by students in many ways to capture learning as it happens. Describe three ways in which digital technology could be used when producing a design portfolio for Leaving Certificate Technology.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CAD drawings/Circuit simulation diagrams/flowcharts, graphs, photographic evidence of design journey, presentation of folio, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3+2 marks)' for this question."
+ },
+ {
   "id": "tech-2023-ol-a11-i",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -13074,7 +14959,7 @@
   "questionText": "Explain what is meant by the term biodegradable.",
   "stem": "Torpey Hurleys aim to create products which are environmentally friendly and biodegradable, where possible.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secB-q2a-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13087,6 +14972,36 @@
     "kind": "point",
     "verbatim": "A product that is able to decay/breakdown naturally and in a way that is not harmful to the environment, etc.",
     "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2023-ol-b2a-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2023 OL Section B Q2(a)(ii)",
+  "questionText": "Describe two properties which would be important for the material used as the grip on the hurley shown.",
+  "stem": "Torpey Hurleys aim to create products which are environmentally friendly and biodegradable, where possible.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secB-q2a-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lightweight, non-slippy, etc.",
+    "marks": 6,
     "openList": true
    }
   ],
@@ -13655,8 +15570,8 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2023 OL Section C Q1(b)(i)",
-  "questionText": "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Give two advantages of using a PIC to control devices.",
-  "stem": "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
+  "questionText": "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off.",
+  "stem": "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller).",
   "figureKey": "technology-2023-OL-scheme-secC-q1b-i",
   "questionFigureKey": "",
   "labelKey": [],
@@ -13669,7 +15584,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Give two advantages of using a PIC to control devices.",
+    "verbatim": "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off.",
     "marks": 8,
     "openList": true,
     "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
@@ -13687,8 +15602,8 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2023 OL Section C Q1(b)(ii)",
-  "questionText": "Suggest a modification to the flowchart that allows for music to be played as the novelty light rotates. Using an annotated sketch, show how pin number one of a PIC is identified.",
-  "stem": "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
+  "questionText": "Suggest a modification to the flowchart that allows for music to be played as the novelty light rotates.",
+  "stem": "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller).",
   "figureKey": "technology-2023-OL-scheme-secC-q1b-ii",
   "questionFigureKey": "",
   "labelKey": [],
@@ -13718,7 +15633,7 @@
   "section": "C",
   "questionRef": "2023 OL Section C Q1(b)(iii)",
   "questionText": "The novelty light above is powered using a low voltage DC power supply. Explain the term low voltage DC.",
-  "stem": "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
+  "stem": "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller).",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -13744,6 +15659,68 @@
    }
   ],
   "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2023-ol-c1c-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 OL Section C Q1(c)(i)",
+  "questionText": "Give two advantages of using a PIC to control devices.",
+  "stem": "The image shows a PIC which can be used to control devices such as the novelty light in 1(b) above.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secC-q1c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reprogrammable, adjustments can be made easily, parallel processing,",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2023-ol-c1c-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 OL Section C Q1(c)(ii)",
+  "questionText": "Using an annotated sketch, show how pin number one of a PIC is identified.",
+  "stem": "The image shows a PIC which can be used to control devices such as the novelty light in 1(b) above.",
+  "figureKey": "technology-2023-OL-scheme-secC-q1c-ii",
+  "questionFigureKey": "technology-2023-OL-paper-secC-q1c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using an annotated sketch, show how pin number one of a PIC is identified.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
  },
  {
   "id": "tech-2023-ol-c1d-i",
@@ -13920,7 +15897,7 @@
   "questionRef": "2023 OL Section C Q2(b)(ii)",
   "questionText": "Using the DPDT symbol shown, draw a circuit diagram for the forward and reverse control of a motor.",
   "stem": "The image shows a DPDT switch, that is commonly used for forward and reverse control of a motor. The circuit symbol for the DPDT switch is also shown.",
-  "figureKey": "",
+  "figureKey": "technology-2023-OL-scheme-secC-q2b-ii",
   "questionFigureKey": "technology-2023-OL-paper-secC-q2b-art",
   "labelKey": [],
   "tariffModel": {
@@ -13932,9 +15909,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "for the forward and reverse control of a motor.",
+    "verbatim": "Using the DPDT symbol shown, draw a circuit diagram for the forward and reverse control of a motor.",
     "marks": 8,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
@@ -14052,9 +16031,41 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Automatic switch, current amlifier, etc. C",
+    "verbatim": "Automatic switch, current amlifier, etc.",
     "marks": 4,
     "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2023-ol-c2d-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 OL Section C Q2(d)(ii)",
+  "questionText": "Using the Formulae and Tables booklet or otherwise, draw the symbol for a transistor. Label the base, the collector, and the emitter on your diagram.",
+  "stem": "The invention of the transistor was an unprecedented development in the technological world and is now one of the basic building blocks of modern electronics.",
+  "figureKey": "technology-2023-OL-scheme-secC-q2d-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using the Formulae and Tables booklet or otherwise, draw the symbol for a transistor. Label the base, the collector, and the emitter on your diagram.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
@@ -14353,9 +16364,9 @@
   "section": "C",
   "questionRef": "2023 OL Section C Q4(a)(i)",
   "questionText": "Outline two reasons why a company might gather information about products using this technique.",
-  "stem": "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services. High quality B A High cost Low cost C Low quality",
+  "stem": "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secC-q4a-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14368,6 +16379,66 @@
     "kind": "point",
     "verbatim": "Better understand perceptions of products, visually effective, fast, etc.",
     "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2023-ol-c4a-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2023 OL Section C Q4(a)(ii)",
+  "questionText": "Using the diagram shown, briefly describe the characteristics of any two of the products labelled A, B, or C.",
+  "stem": "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2023-OL-paper-secC-q4a-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Low cost/high quality, likely to sell.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "High cost/high quality, likely to sell but cost could impede sales.",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Low cost/low quality, poor sales likely as a result",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A- Low cost/high quality, likely to sell.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B- High cost/high quality, likely to sell but cost could impede sales.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C- Low cost/low quality, poor sales likely as a result",
+    "marks": null,
     "openList": true
    }
   ],
@@ -14958,9 +17029,9 @@
   "section": "A",
   "questionRef": "2024 HL Section A Q3(i)",
   "questionText": "Explain the term UHD.",
-  "stem": "",
+  "stem": "A 4K UHD interactive touch screen with integrated proximity sensor is shown.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q3-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14972,6 +17043,36 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "UHD: Ultra High Definition.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 3 + 3)' for this part."
+ },
+ {
+  "id": "tech-2024-hl-a3-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q3(ii)",
+  "questionText": "State the function of the proximity sensor integrated into this screen.",
+  "stem": "A 4K UHD interactive touch screen with integrated proximity sensor is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 3 + 3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The integration of proximity sensors into UHD screens enhances user experience, convenience, and energy efficiency by allowing the display to respond intelligently to the presence or absence of users in its vicinity.",
     "marks": 3,
     "openList": true
    }
@@ -15039,6 +17140,36 @@
   "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
  },
  {
+  "id": "tech-2024-hl-a5-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q5(i)",
+  "questionText": "Use the resistor colour code table to calculate the value of the resistor shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Value: 1000 Ω",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2024-hl-a5-ii",
   "topicId": "tech-core-energy",
   "conceptId": "core-energy",
@@ -15048,7 +17179,7 @@
   "section": "A",
   "questionRef": "2024 HL Section A Q5(ii)",
   "questionText": "Accounting for tolerance, state the maximum and minimum possible values for this resistor.",
-  "stem": "Colour code Tolerance code Black 0 Resistor bands: Brown Black Red Gold Brown 1% Brown 1 Red 2% Red 2 Gold 5% Orange 3 Silver 10% Yellow 4 Green 5 Blue 6 Violet 7 Grey 8 White 9",
+  "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q5-art",
   "labelKey": [],
@@ -15061,21 +17192,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Maximum value: 1050 Ω Violet 7",
+    "verbatim": "Maximum value: 1050 Ω",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Minimum value: 950 Ω Grey 8",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "White 9",
+    "verbatim": "Minimum value: 950 Ω",
     "marks": null,
     "openList": true
    }
@@ -15092,7 +17216,7 @@
   "section": "A",
   "questionRef": "2024 HL Section A Q6(i)",
   "questionText": "Explain the abbreviations.",
-  "stem": "Network diagrams use nodes similar to that shown. EST EFT LST LFT",
+  "stem": "Network diagrams use nodes similar to that shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q6-art",
   "labelKey": [],
@@ -15105,14 +17229,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "EST EFT",
+    "verbatim": "EST: Earliest Start Time",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "EST: Earliest Start Time",
+    "verbatim": "LFT: Latest Finish Time",
     "marks": null,
     "openList": true
    }
@@ -15129,7 +17253,7 @@
   "section": "A",
   "questionRef": "2024 HL Section A Q6(ii)",
   "questionText": "Explain how the critical path of a network diagram is established.",
-  "stem": "Network diagrams use nodes similar to that shown. EST EFT LST LFT",
+  "stem": "Network diagrams use nodes similar to that shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q6-art",
   "labelKey": [],
@@ -15150,6 +17274,36 @@
   "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
  },
  {
+  "id": "tech-2024-hl-a7-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q7(i)",
+  "questionText": "Name the type of gear train shown in the image.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q7-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2 + 4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Compound gear train.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2 + 4)' for this part."
+ },
+ {
   "id": "tech-2024-hl-a7-ii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -15161,7 +17315,7 @@
   "questionText": "Calculate the angular velocity of the driving gear A, if the output speed at the driven gear is 17 RPM.",
   "stem": "",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q7-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -15172,33 +17326,26 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Calculation: 15 Teeth 75 Teeth",
+    "verbatim": "Driven/Driver x Driven/Driver 75/15 x 75/15 = 5/1 x 5/1 = 25/1 = 25:1",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Driven/Driver x Driven/Driver 75/15 x 75/15 = 5/1 x 5/1 = 25/1 = 25:1",
+    "verbatim": "Gear A rotates 25 times faster.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Gear A rotates 25 times faster.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
     "verbatim": "25 x 17 = 425 RPM.",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-5",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "Gear speed Gear A = 425 RPM.",
     "marks": null,
@@ -15218,7 +17365,7 @@
   "questionRef": "2024 HL Section A Q8",
   "questionText": "An exploded view of a garden lantern is shown. Sketch a pictorial view of the assembled lantern.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "technology-2024-HL-scheme-secA-q8",
   "questionFigureKey": "technology-2024-HL-paper-secA-q8-art",
   "labelKey": [],
   "tariffModel": {
@@ -15230,9 +17377,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "lantern.",
+    "verbatim": "An exploded view of a garden lantern is shown. Sketch a pictorial view of the assembled lantern.",
     "marks": 6,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(6 marks)' for this question."
@@ -15305,6 +17454,87 @@
   "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
  },
  {
+  "id": "tech-2024-hl-a10",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q10",
+  "questionText": "The GPS luggage tag shown uses satellite navigation systems and cellular data connectivity to track luggage. The tag can also be scanned using a QR code on the back of the device. Explain each of the terms.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 2 + 2 + 2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Satellite Navigation Systems, commonly known as satellite navigation or satnav, are systems that use signals from satellites to determine the position, velocity, and real time information of a receiver anywhere on Earth. GPS is the most common example.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cellular data connectivity refers to the ability of a mobile device to access the internet and other data services using cellular networks. It allows users to connect to the internet, browse websites, use online applications and transmit/receive data through mobile devices.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A QR code, or Quick Response code, is a two-dimensional barcode that consists of black squares arranged on a white square grid. QR codes are designed to store and quickly retrieve information, making them a versatile tool used in various applications.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2 + 2 + 2)' for this question."
+ },
+ {
+  "id": "tech-2024-hl-a11-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q11(i)",
+  "questionText": "Calculate the mechanical advantage of a forklift if it lifts a mass of 1800 kg with an effort force of 200 N. Assume g = 9.81 m/s2",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q11-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mechanical advantage = Load force / effort force 1800 x 9.81/200 =",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "17,658/200 = 88.29",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2024-hl-a11-ii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -15314,9 +17544,9 @@
   "section": "A",
   "questionRef": "2024 HL Section A Q11(ii)",
   "questionText": "Explain the advantage of a low centre of gravity on the operation of the forklift.",
-  "stem": "an effort force of 200 N. Assume g = 9.81 m/s2",
+  "stem": "",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q11-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -15333,6 +17563,64 @@
    }
   ],
   "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
+  "id": "tech-2024-hl-a12",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q12",
+  "questionText": "Using the headings in the table below, describe the carbon footprint associated with producing small batches of car parts, such as the bracket shown, using 3D printing rather than traditional manufacturing processes. alternator bracket for a vintage car",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q12-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 2 + 2 + 2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It can take a long time to print each product using electrical energy running for hours.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Traditional metal cutting will shape the object quickly using high powered machines.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3D printing generates minimal waste, subtractive manufacturing of drilling and cutting will generate waste materials. Other forms of traditional manufacturing such as injection moulding or casting will not create much waste.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "3D printing is associated with plastic materials (e.g. PLA, ABS, etc.) but has now expanded to a wider range of plastics, composites and metals including aluminium and stainless steel.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Traditional manufacturing can process the full range of materials.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 2 + 2 + 2)' for this question."
  },
  {
   "id": "tech-2024-hl-a13-i",
@@ -15467,6 +17755,36 @@
    }
   ],
   "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
+  "id": "tech-2024-hl-a15",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q15",
+  "questionText": "Make well-proportioned freehand sketches of two principal orthographic views of the fireside stool shown in the image below, which was designed by Irish furniture maker Tricia Harris.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secA-q15-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks 3 + 3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any two orthographic views",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks 3 + 3)' for this question."
  },
  {
   "id": "tech-2024-hl-b2a-i",
@@ -16235,6 +18553,38 @@
   "notes": "The scheme prints '(10 marks, 6 +4)' for this part."
  },
  {
+  "id": "tech-2024-hl-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q1(b)(i)",
+  "questionText": "Draw a flowchart for the operating sequence of the deterrent.",
+  "stem": "",
+  "figureKey": "technology-2024-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 10 + 4 + 2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a flowchart for the operating sequence of the deterrent.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 10 + 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2024-hl-c1b-ii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -16429,6 +18779,36 @@
   "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
  },
  {
+  "id": "tech-2024-hl-c2a-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q2(a)(i)",
+  "questionText": "Outline the operation of the wireless charger shown.",
+  "stem": "Wireless chargers work on the principle of electromagnetic induction.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q2a-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6 + 4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The charger is connected to a power supply, when turned on, it generates an alternating current (AC) in a coil within the charger which produces an electromagnetic field. When you place a device on the charger it receives the magnetic field from the charger and turns it into DC current to charge the battery.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
+ },
+ {
   "id": "tech-2024-hl-c2a-ii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -16440,7 +18820,7 @@
   "questionText": "Suggest two benefits of wireless charging of devices.",
   "stem": "Wireless chargers work on the principle of electromagnetic induction.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q2a-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -16457,6 +18837,38 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
+ },
+ {
+  "id": "tech-2024-hl-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q2(b)(i)",
+  "questionText": "Redraw the circuit diagram to include an appropriate output.",
+  "stem": "An incomplete circuit diagram for an astable warning sounder is shown.",
+  "figureKey": "technology-2024-HL-scheme-secC-q2b-i",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q2b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 6 + 6 + 4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Redraw the circuit diagram to include an appropriate output.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 6 + 6 + 4)' for this part."
  },
  {
   "id": "tech-2024-hl-c2b-ii",
@@ -16607,6 +19019,38 @@
   "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
  },
  {
+  "id": "tech-2024-hl-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q2(d)(i)",
+  "questionText": "Draw a truth table to represent the operation of the logic gate system shown with O as the output.",
+  "stem": "",
+  "figureKey": "technology-2024-HL-scheme-secC-q2d-i",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q2d-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a truth table to represent the operation of the logic gate system shown with O as the output.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
   "id": "tech-2024-hl-c2d-ii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -16618,7 +19062,7 @@
   "questionText": "Outline the function of transistors and relays when constructing logic circuits.",
   "stem": "",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q2d-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -17329,9 +19773,9 @@
   "section": "C",
   "questionRef": "2024 HL Section C Q4(d)(i)",
   "questionText": "Name and describe each of the lifecycle stages A, B, C, and D.",
-  "stem": "",
+  "stem": "The expected product lifecycle for a hair styling product is shown.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q4d-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -17366,11 +19810,76 @@
     "verbatim": "D - Decline: Sales begin to decline as the product reaches its saturation point. Most products are phased out of the market at this point due to the decrease in sales and because of competitive pressure. The market will see the product as old and no longer in demand.",
     "marks": null,
     "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
+  "id": "tech-2024-hl-c4d-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q4(d)(ii)",
+  "questionText": "An updated lifecycle for the hair styling product is shown above. This shows a significant change at stage D for the product. Suggest two possible reasons for this change.",
+  "stem": "The expected product lifecycle for a hair styling product is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q4d-ii-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The product has gained additional sales:",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Enhanced features may have been added.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Product may have been relaunched with a marketing campaign.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "New markets may have been targeted.",
+    "marks": null,
+    "openList": true
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Sales A B C",
+    "verbatim": "Price adjustment.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Seasonal demand.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Effective customer satisfaction may encourage repeat buyers.",
     "marks": null,
     "openList": true
    }
@@ -17577,6 +20086,64 @@
   "notes": "The scheme prints '(16 marks, 4 + 8 + 4)' for this part."
  },
  {
+  "id": "tech-2024-hl-c5c-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 HL Section C Q5(c)(i)",
+  "questionText": "Describe three stages in fabricating a presentation box, similar to that shown, using hand crafting techniques.",
+  "stem": "Personalised wooden boxes are often used for company presentations.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q5c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 6 + 8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cut the pieces to size.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Corners can be attached at right angles with joints, adhesives or dowels.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The base of the box can be permanently attached.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The box lid can be designed to hinge and close or sit on top of the box sides.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "A finishing technique (varnish, stain, wax, etc.) can be applied.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
+ },
+ {
   "id": "tech-2024-hl-c5c-ii",
   "topicId": "tech-opt-materials",
   "conceptId": "opt-materials",
@@ -17588,7 +20155,7 @@
   "questionText": "Outline a technique to incorporate the company crest on the presentation box.",
   "stem": "Personalised wooden boxes are often used for company presentations.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-HL-paper-secC-q5c-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -17709,6 +20276,36 @@
   "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
  },
  {
+  "id": "tech-2024-ol-a1-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q1(i)",
+  "questionText": "State the meaning of the safety sign shown.",
+  "stem": "The Health and Safety Authority (HSA) provide a range of different colour-coded safety signs.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wash your hands.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
   "id": "tech-2024-ol-a1-ii",
   "topicId": "tech-core-materials",
   "conceptId": "core-materials",
@@ -17720,7 +20317,7 @@
   "questionText": "Explain what is meant by a safety sign that is blue in colour.",
   "stem": "The Health and Safety Authority (HSA) provide a range of different colour-coded safety signs.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secA-q1-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -17869,7 +20466,7 @@
   "questionRef": "2024 OL Section A Q4(ii)",
   "questionText": "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a buzzer in the box provided.",
   "stem": "The image shows a DC buzzer used in electronics.",
-  "figureKey": "",
+  "figureKey": "technology-2024-OL-scheme-secA-q4-ii",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -17881,9 +20478,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "draw the symbol for a buzzer in the box provided.",
+    "verbatim": "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a buzzer in the box provided.",
     "marks": 4,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(4+4 marks)' for this part."
@@ -17949,6 +20548,128 @@
   "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
+  "id": "tech-2024-ol-a6-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q6(i)",
+  "questionText": "Name the tool.",
+  "stem": "The tool shown is commonly used in the Technology room.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secA-q6-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Sliding Bevel.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2024-ol-a6-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q6(ii)",
+  "questionText": "Describe a situation where this tool might be used.",
+  "stem": "The tool shown is commonly used in the Technology room.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secA-q6-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It can be useful when a line must be marked at an angle on wood. It can also be used to check an angle, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2024-ol-a7",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q7",
+  "questionText": "The image shows a machine tool stand. In the box provided, make a well-proportioned 2D sketch of the stand when viewed in the direction of arrow A.",
+  "stem": "",
+  "figureKey": "technology-2024-OL-scheme-secA-q7",
+  "questionFigureKey": "technology-2024-OL-paper-secA-q7-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(Very good sketch- 8 marks, fair sketch 4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The image shows a machine tool stand. In the box provided, make a well-proportioned 2D sketch of the stand when viewed in the direction of arrow A.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(Very good sketch- 8 marks, fair sketch 4 marks)' for this question."
+ },
+ {
+  "id": "tech-2024-ol-a8-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q8(i)",
+  "questionText": "Name the mechanism shown.",
+  "stem": "The image shows a mechanism that allows the driver and driven wheels to rotate in the same direction.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secA-q8-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Toothed belt and pulley system.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
   "id": "tech-2024-ol-a8-ii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -17960,7 +20681,7 @@
   "questionText": "Outline two advantages of using this mechanism.",
   "stem": "The image shows a mechanism that allows the driver and driven wheels to rotate in the same direction.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secA-q8-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18601,7 +21322,7 @@
   "questionRef": "2024 OL Section B Q3(b)(iii)",
   "questionText": "A student has decided to make a model of a similar aircraft to include two DC motors and two LEDs. Draw a labelled diagram of a suitable electronic circuit for the model aircraft.",
   "stem": "Jump Aero anticipates that their flying prototype will be completed in 2025. It will include multiple safety features in its design.",
-  "figureKey": "",
+  "figureKey": "technology-2024-OL-scheme-secB-q3b-iii",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -18613,12 +21334,44 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "circuit for the model aircraft.",
+    "verbatim": "A student has decided to make a model of a similar aircraft to include two DC motors and two LEDs. Draw a labelled diagram of a suitable electronic circuit for the model aircraft.",
     "marks": 2,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(8 Marks, 2+4+2)' for this part."
+ },
+ {
+  "id": "tech-2024-ol-b3c-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2024 OL Section B Q3(c)(i)",
+  "questionText": "Calculate the moment when a force of 50 N is applied at a distance of 3 metres from the fulcrum as shown.",
+  "stem": "The diagram shows a wing of the JA1 aircraft.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secB-q3c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Moment = Force (N) x Distance (m) = 50N x 3m = 150Nm",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
  },
  {
   "id": "tech-2024-ol-b3c-ii",
@@ -18630,9 +21383,9 @@
   "section": "B",
   "questionRef": "2024 OL Section B Q3(c)(ii)",
   "questionText": "If the motor is moved further away from the fulcrum, what effect would this have on the moment force?",
-  "stem": "",
+  "stem": "The diagram shows a wing of the JA1 aircraft.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secB-q3c-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18719,8 +21472,8 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2024 OL Section C Q1(a)(i)",
-  "questionText": "Outline two advantages of using a PIC in a child’s toy. Complete a flowchart to operate the bubble blower in the following sequence: • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed • When the button is pressed a third time, the motorised blower stops.",
-  "stem": "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs). above, is programmed using a flowchart.",
+  "questionText": "Outline two advantages of using a PIC in a child’s toy.",
+  "stem": "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs).",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -18749,8 +21502,8 @@
   "subjectId": "technology",
   "section": "C",
   "questionRef": "2024 OL Section C Q1(a)(ii)",
-  "questionText": "Suggest one other child’s toy that could use a PIC and outline why it would be useful to use a PIC in this toy. Suggest a modification of the flowchart to alert the user when the bubble solution is running low.",
-  "stem": "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs). above, is programmed using a flowchart.",
+  "questionText": "Suggest one other child’s toy that could use a PIC and outline why it would be useful to use a PIC in this toy.",
+  "stem": "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs).",
   "figureKey": "",
   "questionFigureKey": "",
   "labelKey": [],
@@ -18769,6 +21522,100 @@
    }
   ],
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2024-ol-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 OL Section C Q1(b)(i)",
+  "questionText": "Complete a flowchart to operate the bubble blower in the following sequence: • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed • When the button is pressed a third time, the motorised blower stops.",
+  "stem": "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
+  "figureKey": "technology-2024-OL-scheme-secC-q1b-i",
+  "questionFigureKey": "technology-2024-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete a flowchart to operate the bubble blower in the following sequence: • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed • When the button is pressed a third time, the motorised blower stops.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2024-ol-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 OL Section C Q1(b)(ii)",
+  "questionText": "Suggest a modification of the flowchart to alert the user when the bubble solution is running low.",
+  "stem": "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
+  "figureKey": "technology-2024-OL-scheme-secC-q1b-ii",
+  "questionFigureKey": "technology-2024-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suggest a modification of the flowchart to alert the user when the bubble solution is running low.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2024-ol-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 OL Section C Q1(b)(iii)",
+  "questionText": "Name a suitable sensor that could be used to detect when the bubble solution is low.",
+  "stem": "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secC-q1b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Float switch sensor.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
  },
  {
   "id": "tech-2024-ol-c1c-i",
@@ -19002,7 +21849,7 @@
   "questionFigureKey": "technology-2024-OL-paper-secC-q2b-art",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(20 Marks, 6+8+6)"
   },
   "totalMarks": 8,
@@ -19010,15 +21857,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "7 3 in the circuit. 2 1",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Capacitor C is used to control the length of time the output stays activated. The larger the capacitor the longer the output will stay on C when configured in a monostable mode. 0 V",
-    "marks": null,
+    "verbatim": "Capacitor C is used to control the length of time the output stays activated. The larger the capacitor the longer the output will stay on when configured in a monostable mode.",
+    "marks": 8,
     "openList": true
    }
   ],
@@ -19035,7 +21875,7 @@
   "questionRef": "2024 OL Section C Q2(b)(iii)",
   "questionText": "Redraw the circuit to include an LED output at pin 3 of the 555 IC.",
   "stem": "Part of a 555 monostable IC is shown in the diagram.",
-  "figureKey": "",
+  "figureKey": "technology-2024-OL-scheme-secC-q2b-iii",
   "questionFigureKey": "technology-2024-OL-paper-secC-q2b-art",
   "labelKey": [],
   "tariffModel": {
@@ -19047,9 +21887,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "at pin 3 of the 555 IC.",
+    "verbatim": "Redraw the circuit to include an LED output at pin 3 of the 555 IC.",
     "marks": 6,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
@@ -19133,7 +21975,7 @@
   "questionText": "Briefly outline what is meant by the term tolerance when referring to resistors.",
   "stem": "A resistor with a gold band indicates that it has a tolerance of 5%.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secC-q2d-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -19152,6 +21994,43 @@
     "id": "r-2",
     "kind": "point",
     "verbatim": "e.g., 5% deviation for a 330 Ω resistor = 16.5 Ω. Therefore, the acceptable range for this resistor is 313.5 Ω to 346.5 Ω.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2024-ol-c2d-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2024 OL Section C Q2(d)(ii)",
+  "questionText": "Calculate the total resistance for the partial circuit shown.",
+  "stem": "A resistor with a gold band indicates that it has a tolerance of 5%.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2024-OL-paper-secC-q2d-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Resistors in parallel: 1/10 +1/10 = 2/10 = 1/5. R = 5 Ω",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Total resistance = 8 Ω + 5 Ω = 13 Ω",
     "marks": null,
     "openList": true
    }
@@ -20314,6 +23193,38 @@
   "notes": "The scheme prints '(6 marks, 3 + 3)' for this part."
  },
  {
+  "id": "tech-2025-hl-a7",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q7",
+  "questionText": "Ireland's sailing team of Robert Dickson and Sean Waddilove competed in the 2024 Paris Olympics in the men’s skiff event using the boat shown in the image. Name an appropriate material to be used for each boat part listed and outline a property of each material named.",
+  "stem": "",
+  "figureKey": "technology-2025-HL-scheme-secA-q7",
+  "questionFigureKey": "technology-2025-HL-paper-secA-q7-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ireland's sailing team of Robert Dickson and Sean Waddilove competed in the 2024 Paris Olympics in the men’s skiff event using the boat shown in the image. Name an appropriate material to be used for each boat part listed and outline a property of each material named.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
   "id": "tech-2025-hl-a8",
   "topicId": "tech-core-graphics",
   "conceptId": "core-graphics",
@@ -20555,6 +23466,64 @@
   "notes": "The scheme prints '(6 marks)' for this question."
  },
  {
+  "id": "tech-2025-hl-a12",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q12",
+  "questionText": "Calculate the total resistance of the circuit shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secA-q12-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Series: R2 + R3 = 8k + 4k = 12k",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1/Rtotal = 1/Rseries + 1/R4 = 1/12kΩ + 1/12kΩ = 2/12 = 1/6kΩ",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1/ Rtotal =1/6kΩ or (Product/Sum =144/24 = 6KΩ)",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Rtotal = 6 kΩ",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Total Resistance of circuit: 6 + 6 = 12kΩ",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
   "id": "tech-2025-hl-a13",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -20657,6 +23626,38 @@
    }
   ],
   "notes": "The scheme prints '(6 marks, 4 + 2)' for this part."
+ },
+ {
+  "id": "tech-2025-hl-a15",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q15",
+  "questionText": "Sketch an exploded pictorial view of the hinge shown.",
+  "stem": "",
+  "figureKey": "technology-2025-HL-scheme-secA-q15",
+  "questionFigureKey": "technology-2025-HL-paper-secA-q15-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sketch an exploded pictorial view of the hinge shown.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
  },
  {
   "id": "tech-2025-hl-b2a-i",
@@ -21145,9 +24146,9 @@
   "section": "B",
   "questionRef": "2025 HL Section B Q3(b)(i)",
   "questionText": "State two advantages of using a compound gear system.",
-  "stem": "",
+  "stem": "A gearbox that could be used in a personal transport pod is shown in the graphic.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secB-q3b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -21173,6 +24174,43 @@
   "notes": "The scheme prints '(10 marks, 4 + 4 + 2)' for this part."
  },
  {
+  "id": "tech-2025-hl-b3b-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q3(b)(ii)",
+  "questionText": "The electric motor rotates at 630 RPM and is connected to the gearbox shown. If gear A has 20 teeth, gear B has 60 teeth, gear C has 30 teeth, and gear D has 60 teeth, calculate the output speed of the gear system.",
+  "stem": "A gearbox that could be used in a personal transport pod is shown in the graphic.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secB-q3b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks, 4 + 4 + 2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Driver/driven x Driver/driven) x speed (20/60 x 30/60) x 630 = (1/3 x 1/2) x 630",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1/6 x 630 = 105 RPM",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4 + 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2025-hl-b3b-iii",
   "topicId": "tech-core-structures",
   "conceptId": "core-structures",
@@ -21182,9 +24220,9 @@
   "section": "B",
   "questionRef": "2025 HL Section B Q3(b)(iii)",
   "questionText": "Describe a method of reducing friction and wear as the gears rotate in the housing of the gearbox.",
-  "stem": "",
+  "stem": "A gearbox that could be used in a personal transport pod is shown in the graphic.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secB-q3b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -21432,6 +24470,38 @@
   "notes": "The scheme prints '(10 marks, 6 +4)' for this part."
  },
  {
+  "id": "tech-2025-hl-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 HL Section C Q1(b)(i)",
+  "questionText": "Draw a flowchart for the operating sequence of the reverse vending machine.",
+  "stem": "A reverse vending machine operates with the following sequence: • Touch screen to start • Place bottle or can on conveyor belt • Barcode read to approve bottle or can • Approved bottles are sent to servo 1 for processing • Approved cans are sent to servo 2 for processing • The user stops the machine by pressing ‘Print Voucher’ • Deposit voucher is printed.",
+  "figureKey": "technology-2025-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 10 + 4 + 2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a flowchart for the operating sequence of the reverse vending machine.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 10 + 4 + 2)' for this part."
+ },
+ {
   "id": "tech-2025-hl-c1b-ii",
   "topicId": "tech-opt-control",
   "conceptId": "opt-control",
@@ -21446,7 +24516,7 @@
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "questionTotal",
+   "kind": "fixed",
    "notation": "(16 marks, 10 + 4 + 2)"
   },
   "totalMarks": 4,
@@ -21454,22 +24524,8 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Barcode will read to accept or reject Yes item placed on conveyor belt.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Is it a plastic Yes",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Send to servo 1 bottle?",
-    "marks": null,
+    "verbatim": "Barcode will read to accept or reject item placed on conveyor belt.",
+    "marks": 4,
     "openList": true
    }
   ],
@@ -21498,35 +24554,21 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "aluminium can?",
+    "verbatim": "A limit switch at the top of the container could be used to stop any further processing of materials.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "A limit switch at the top of the Yes container could be used to stop Send to servo 2 any further processing of materials. Stop/Print",
+    "verbatim": "LDR and LED",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "LDR and LED voucher Suggested solution,",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Distance/Motion sensor. Alternatives accepted:",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "User stops machine",
+    "verbatim": "Distance/Motion sensor.",
     "marks": null,
     "openList": true
    }
@@ -21742,6 +24784,68 @@
   "notes": "The scheme prints '(10 marks, 6 + 4)' for this part."
  },
  {
+  "id": "tech-2025-hl-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 HL Section C Q2(b)(i)",
+  "questionText": "Name the integrated circuit (IC) shown.",
+  "stem": "An adjustable LED circuit activates in low light.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secC-q2b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 2 + 8 + 6)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Op-Amp",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 2 + 8 + 6)' for this part."
+ },
+ {
+  "id": "tech-2025-hl-c2b-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 HL Section C Q2(b)(ii)",
+  "questionText": "Complete the circuit to include an appropriate input and output.",
+  "stem": "An adjustable LED circuit activates in low light.",
+  "figureKey": "technology-2025-HL-scheme-secC-q2b-ii",
+  "questionFigureKey": "technology-2025-HL-paper-secC-q2b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks, 2 + 8 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete the circuit to include an appropriate input and output.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks, 2 + 8 + 6)' for this part."
+ },
+ {
   "id": "tech-2025-hl-c2b-iii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -21753,7 +24857,7 @@
   "questionText": "Describe the operation of this circuit making reference to components IC, R1, and R2.",
   "stem": "An adjustable LED circuit activates in low light.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secC-q2b-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -21779,6 +24883,107 @@
   "notes": "The scheme prints '(16 marks, 2 + 8 + 6)' for this part."
  },
  {
+  "id": "tech-2025-hl-c2c-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 HL Section C Q2(c)(i)",
+  "questionText": "Draw a logic gate circuit to represent the operation of the 3D printer.",
+  "stem": "A 3D printer will only operate when the power is switched on and the PLA filament is loaded into either extruder nozzle 1 or extruder nozzle 2. The printing nozzle must also reach a temperature of 400°C.",
+  "figureKey": "technology-2025-HL-scheme-secC-q2c-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a logic gate circuit to represent the operation of the 3D printer.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
+  "id": "tech-2025-hl-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 HL Section C Q2(c)(ii)",
+  "questionText": "Compile a truth table for this system.",
+  "stem": "A 3D printer will only operate when the power is switched on and the PLA filament is loaded into either extruder nozzle 1 or extruder nozzle 2. The printing nozzle must also reach a temperature of 400°C.",
+  "figureKey": "technology-2025-HL-scheme-secC-q2c-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks, 8 + 6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Compile a truth table for this system.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
+ },
+ {
+  "id": "tech-2025-hl-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 HL Section C Q2(d)(i)",
+  "questionText": "Outline the purpose of meter A and the purpose of meter V in the circuit shown.",
+  "stem": "Resistance, voltage, and current can be measured using electronic meters.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secC-q2d-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks, 6 + 8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Meter A – Ammeter – reads current in Amps",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Meter V – Voltmeter – reads voltage in Volts.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks, 6 + 8)' for this part."
+ },
+ {
   "id": "tech-2025-hl-c2d-ii",
   "topicId": "tech-opt-electronics",
   "conceptId": "opt-electronics",
@@ -21790,7 +24995,7 @@
   "questionText": "Calculate the readings at meter A and meter V if R1 is 4 kΩ and R2 is 2 kΩ.",
   "stem": "Resistance, voltage, and current can be measured using electronic meters.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2025-HL-paper-secC-q2d-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -22892,6 +26097,66 @@
   "notes": "The scheme prints '(14 marks, 8 + 6)' for this part."
  },
  {
+  "id": "tech-2025-ol-a1-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q1(i)",
+  "questionText": "Name the machine.",
+  "stem": "The machine shown is commonly used in Technology workshops.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Band saw.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2025-ol-a1-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q1(ii)",
+  "questionText": "State two safety precautions which should be observed when using this machine.",
+  "stem": "The machine shown is commonly used in Technology workshops.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wear safety glasses, ear defenders, use a protective guard, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
   "id": "tech-2025-ol-a2-i",
   "topicId": "tech-core-materials",
   "conceptId": "core-materials",
@@ -22952,6 +26217,36 @@
   "notes": "The scheme prints '(4+4 marks)' for this part."
  },
  {
+  "id": "tech-2025-ol-a3-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q3(i)",
+  "questionText": "State the meaning of the safety sign shown.",
+  "stem": "The safety sign shown is commonly used in everyday life.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "No photography allowed.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
   "id": "tech-2025-ol-a3-ii",
   "topicId": "tech-core-materials",
   "conceptId": "core-materials",
@@ -22961,9 +26256,9 @@
   "section": "A",
   "questionRef": "2025 OL Section A Q3(ii)",
   "questionText": "Explain what is meant by safety signs that are red in colour.",
-  "stem": "",
+  "stem": "The safety sign shown is commonly used in everyday life.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secA-q3-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -22980,6 +26275,38 @@
    }
   ],
   "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2025-ol-a4",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q4",
+  "questionText": "In the box provided, sketch a well-proportioned elevation of the toy when viewed in the direction of arrow A.",
+  "stem": "",
+  "figureKey": "technology-2025-OL-scheme-secA-q4",
+  "questionFigureKey": "technology-2025-OL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In the box provided, sketch a well-proportioned elevation of the toy when viewed in the direction of arrow A.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
  },
  {
   "id": "tech-2025-ol-a5-i",
@@ -23246,7 +26573,7 @@
   "questionRef": "2025 OL Section A Q9",
   "questionText": "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "technology-2025-OL-scheme-secA-q9",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -23258,9 +26585,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "In the space provided, sketch a circuit diagram for this circuit.",
+    "verbatim": "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.",
     "marks": 8,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(Very good diagram- 8 marks, good diagram- 6 marks, fair diagram- 4 marks)' for this question."
@@ -24333,7 +27662,7 @@
   "questionRef": "2025 OL Section C Q2(b)(ii)",
   "questionText": "Draw a labelled diagram of a suitable electronic circuit to control the forward and reverse motion of a DC motor.",
   "stem": "The image shows a miniature DC motor with an operating range from 1.5 V to 6 V. DC motors are commonly used by students in Technology projects.",
-  "figureKey": "",
+  "figureKey": "technology-2025-OL-scheme-secC-q2b-ii",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -24345,9 +27674,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "to control the forward and reverse motion of a DC motor.",
+    "verbatim": "Draw a labelled diagram of a suitable electronic circuit to control the forward and reverse motion of a DC motor.",
     "marks": 8,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
@@ -24394,7 +27725,7 @@
   "questionText": "Name the logic gates at X and Y.",
   "stem": "The graphic shows a combination of two logic gates.",
   "figureKey": "",
-  "questionFigureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secC-q2c-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24405,9 +27736,41 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "X = And Y = Not A B C D 0 0 0 1",
+    "verbatim": "X = And Y = Not",
     "marks": 6,
     "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2025-ol-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 OL Section C Q2(c)(ii)",
+  "questionText": "In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
+  "stem": "The graphic shows a combination of two logic gates.",
+  "figureKey": "technology-2025-OL-scheme-secC-q2c-ii",
+  "questionFigureKey": "technology-2025-OL-paper-secC-q2c-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
@@ -24453,7 +27816,7 @@
   "questionRef": "2025 OL Section C Q2(d)(ii)",
   "questionText": "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a phototransistor.",
   "stem": "The image shows a phototransistor. A phototransistor is a light sensitive transistor that allows current to flow between the collector and the emitter in bright conditions.",
-  "figureKey": "",
+  "figureKey": "technology-2025-OL-scheme-secC-q2d-ii",
   "questionFigureKey": "",
   "labelKey": [],
   "tariffModel": {
@@ -24465,9 +27828,11 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "draw the symbol for a phototransistor.",
+    "verbatim": "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a phototransistor.",
     "marks": 4,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
    }
   ],
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
@@ -25080,6 +28445,122 @@
   "notes": "The scheme prints '(10 marks, 6+4)' for this part."
  },
  {
+  "id": "tech-2025-ol-c5b-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 OL Section C Q5(b)(i)",
+  "questionText": "Briefly describe the operation of the 3D printer, referring to parts A, B, C, D, and E.",
+  "stem": "The graphic shows the typical operating process of a fused deposition 3D printer.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secC-q5b-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Filament spool",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "The extruder",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "The heater block",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "The part",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "The bed",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A- Filament spool, B- The extruder uses torque and a pinch system to feed and retract the filament. C- The heater block melts the filament to a useable temperature. D- The part is printed on the bed E. The print head and/or the bed move to the correct X/Y/Z position for placing the material.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2025-ol-c5b-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 OL Section C Q5(b)(ii)",
+  "questionText": "Outline two ways 3D printers can be made safe while in use.",
+  "stem": "The graphic shows the typical operating process of a fused deposition 3D printer.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secC-q5b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use an enclosure to prevent access to hot components, use ventilation, emergency stop, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2025-ol-c5b-iii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2025 OL Section C Q5(b)(iii)",
+  "questionText": "Suggest two items that could be manufactured using a 3D printer.",
+  "stem": "The graphic shows the typical operating process of a fused deposition 3D printer.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2025-OL-paper-secC-q5b-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any relevant examples- components for products, prototypes, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
   "id": "tech-2025-ol-c5c-i",
   "topicId": "tech-opt-materials",
   "conceptId": "opt-materials",
@@ -25303,40 +28784,26 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Vout = (Vin × R2) / (R1 + R2 +R3)",
+    "verbatim": "Vout = (Vin × R2) / (R1 + R2 +R3) = (12 × 40) / (10 + 40 +10) = 480 / 60 = 8V",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "= (12 × 40) / (10 + 40 +10) = 480 / 60",
+    "verbatim": "R total = 10 + 40 + 10 = 60 Ω",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "= 8V",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "R total = 10 + 40 + 10 = 60 Ω",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
     "verbatim": "I = V/R = 12/60 = 0.2 amp",
     "marks": null,
     "openList": true
    },
    {
-    "id": "r-6",
+    "id": "r-4",
     "kind": "point",
     "verbatim": "Voltage across 40 Ω = I x R = 0.2 x 40 = 8 V",
     "marks": null,
@@ -26223,19 +29690,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Reinforces a frame structure to increase",
+    "verbatim": "Reinforces a frame structure to increase rigidity, stability and strength.",
     "marks": null,
     "openList": true
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "rigidity, stability and strength.",
-    "marks": null,
-    "openList": true
-   },
-   {
-    "id": "r-3",
     "kind": "point",
     "verbatim": "The load is spread downward along their sides.",
     "marks": null,

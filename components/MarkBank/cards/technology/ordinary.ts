@@ -91,7 +91,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-a3-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2021 OL Section A Q3(i)",
-    stem: "The images show an orbital sander and disposable sanding discs of various grit size. ______________________________________________________________ ______________________________________________________________",
+    stem: "The images show an orbital sander and disposable sanding discs of various grit size.",
     questionText: "Give two safety precautions that should be observed when using an orbital sander. 1 2",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
@@ -105,7 +105,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-a3-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2021 OL Section A Q3(ii)",
-    stem: "The images show an orbital sander and disposable sanding discs of various grit size. ______________________________________________________________ ______________________________________________________________",
+    stem: "The images show an orbital sander and disposable sanding discs of various grit size.",
     questionText: "Briefly outline what ‘grit size’ refers to in relation to sanding discs.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
@@ -119,7 +119,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-a4", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "A", questionRef: "2021 OL Section A Q4",
-    stem: "The graphics show two safety signs commonly displayed in schools, one colour-coded red and the other colour-coded yellow. State the meaning of each colour code. Red colour-coded sign: _______________________________ _____________________________________________________ Yellow colour-coded sign: ________________________________ _____________________________________________________",
     questionText: "The graphics show two safety signs commonly displayed in schools, one colour-coded red and the other colour-coded yellow. State the meaning of each colour code.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
@@ -132,10 +131,54 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-a5-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2021 OL Section A Q5(i)",
+    stem: "The image shows a mechanism which consists of two components, labelled A and B.",
+    questionText: "Name Component A and Component B.",
+    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Component A: Worm", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Component B: Worm wheel", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secA-q5-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secA-q5-art.png",
+          "srcHash": "08af010c764caefb07590a91cd18ac8d",
+          "alt": "Colour photograph of two meshing gear components: a black shaft with a spiral screw thread, labelled A, lying across the top of a brass toothed wheel, labelled B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-a5-ii", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2021 OL Section A Q5(ii)",
+    stem: "The image shows a mechanism which consists of two components, labelled A and B.",
+    questionText: "Suggest one advantage of using this mechanism when manufacturing electro-mechanical control elements in project work.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Speed reduction allows for greater control, change of direction of motion can be useful in project work, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secA-q5-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secA-q5-art.png",
+          "srcHash": "08af010c764caefb07590a91cd18ac8d",
+          "alt": "Colour photograph of two meshing gear components: a black shaft with a spiral screw thread, labelled A, lying across the top of a brass toothed wheel, labelled B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-a6", topicId: "tech-core-project", conceptId: "core-project",
     section: "A", questionRef: "2021 OL Section A Q6",
-    stem: "Organising time, people and a budget are essential aspects when managing a project. Briefly explain any two of the aspects listed below. Time: _________________________________________________ _________________________________________________ People: _________________________________________________ _________________________________________________ Budget: _________________________________________________ _________________________________________________ page running",
-    questionText: "Organising time, people and a budget are essential aspects when managing a project. Briefly explain any two of the aspects listed below. Time: People: Budget: page running",
+    questionText: "Organising time, people and a budget are essential aspects when managing a project. Briefly explain any two of the aspects listed below.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Time: It is important that tasks are individually completed on time.", marks: null, openList: true },
@@ -143,6 +186,36 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "People: Individuals take responsibility for different elements of the project. It is important that everyone works together to ensure the completion of the project, etc.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Budget: The cost of a project should be estimated before it commences. Poor budgetary planning could result in the project running over budget, etc.", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-a7", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2021 OL Section A Q7",
+    questionText: "The image shows a wooden birdhouse. In the box provided, make a well-proportioned 2D sketch of the elevation looking in the direction of arrow A and the plan looking in the direction of arrow B.",
+    tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks, A Fair sketch - 4 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The image shows a wooden birdhouse. In the box provided, make a well-proportioned 2D sketch of the elevation looking in the direction of arrow A and the plan looking in the direction of arrow B.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secA-q7-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secA-q7-art.png",
+          "srcHash": "775baa0c08bedc43c3d9dc6f2958286c",
+          "alt": "Colour photograph of a small wooden birdhouse with a pitched roof, a round entrance hole and a perch peg on its front. An arrow labelled B points straight down onto the roof from above, and an arrow labelled A points up and to the right at the front of the birdhouse from the lower left.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-OL-scheme-secA-q7",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-scheme-secA-q7.png",
+          "srcHash": "64423488eca3ed49e54babd04128f5f9",
+          "alt": "The marking scheme's own answer to 2021 OL Section A Q7, as the State Examinations Commission printed it: a line sketch in two views. Above, the elevation of the birdhouse: a pitched roof with overhanging eaves over a rectangular front with a round entrance hole, a small circle for the perch beneath it and a strip across the base. Below, the plan: a rectangle divided down the middle by the roof ridge line. The scheme prints beneath it: (Very good sketch - 8 marks, Fair sketch - 4 marks).",
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -239,12 +312,74 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-a11-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2021 OL Section A Q11(i)",
-    stem: "The image shows a garden spade which acts as a lever. 50 N 0.3 M 0.5 M F",
+    stem: "The image shows a garden spade which acts as a lever.",
     questionText: "On the image, label the load, the effort and the fulcrum when the spade is in use.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "fulcrum when the spade is in use. L", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "On the image, label the load, the effort and the fulcrum when the spade is in use.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secA-q11-i-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secA-q11-i-art.png",
+          "srcHash": "73ec2001bde7c4b942d0d006b9bbf112",
+          "alt": "Colour photograph of a garden spade lying diagonally: a flat grey-green steel blade at the lower left, a dark green shaft, and a yellow handle ending in a D-shaped grip at the upper right. Nothing on the picture is labelled.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-OL-scheme-secA-q11-i",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-scheme-secA-q11-i.png",
+          "srcHash": "1b810727a188c172cf3b06849f4fe320",
+          "alt": "The marking scheme's own answer to 2021 OL Section A Q11(i), as the State Examinations Commission printed it: the spade photograph labelled with arrows: F points to the D-shaped grip at the top of the handle, E points to the shaft just below the yellow handle, and L points to the blade.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-a11-ii", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2021 OL Section A Q11(ii)",
+    stem: "The image shows a garden spade which acts as a lever.",
+    questionText: "A lever diagram is shown below. If a force of 50 N is applied as shown in the diagram, calculate the force F required to balance the lever.",
+    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F x 0.5 M = 50 N x 0.8 M", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "F = 40 NM/0.5 M", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "F = 80 N", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secA-q11-ii-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secA-q11-ii-art.png",
+          "srcHash": "64f87f5d4c0ee2f72d2d5f46203f90b2",
+          "alt": "Lever diagram: a yellow horizontal beam resting on a yellow triangular fulcrum at its right end. A red arrow labelled 50 N pushes down on the left end, and a red arrow labelled F pushes up from below at a point 0.3 M from the left end and 0.5 M from the fulcrum, the two distances marked with dimension arrows above the beam.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-a12", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2021 OL Section A Q12",
+    questionText: "Use two graphic techniques to enhance the representation of the juicer shown.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rendering, colour, shadow, hatching, etc.", marks: 8, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secA-q12-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secA-q12-art.png",
+          "srcHash": "87fd1aba88e53a648641f729fb8b5c3c",
+          "alt": "Black-and-white line drawing of a citrus juicer: a ribbed cone-shaped reamer rising from the centre of a round bowl, a slotted strainer ring around the base of the cone, a pouring lip on the left rim and a short handle on the right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -297,8 +432,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a labelled diagram of a suitable circuit for the LED light source. Include a switch and a battery power supply.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a battery power supply.", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Draw a labelled diagram of a suitable circuit for the LED light source. Include a switch and a battery power supply.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2021-OL-scheme-secB-q2b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-scheme-secB-q2b-ii.png",
+          "srcHash": "3b214d25bf9670cb56ee28a1c95a3416",
+          "alt": "The marking scheme's own answer to 2021 OL Section B Q2(b)(ii), as the State Examinations Commission printed it: a circuit diagram with no word labels: a single cell on the left; the top wire runs through a switch and then a resistor; three LEDs (each a diode in a circle with two arrows pointing out) are connected in parallel between that wire and the bottom wire back to the cell.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -420,7 +564,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3b-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(b)(i)",
-    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. (i) has the lesser environmental impact.",
+    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
     questionText: "Briefly describe what is meant by the terms additive and subtractive in reference to manufacturing.",
     tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
     rows: [
@@ -433,9 +577,23 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-b3b-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "B", questionRef: "2021 OL Section B Q3(b)(ii)",
+    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing.",
+    questionText: "Outline which of the processes at 3(b) (i) has the lesser environmental impact.",
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Additive manufacturing has the smaller environmental impact as it produces no waste.", marks: 2, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3b-iii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2021 OL Section B Q3(b)(iii)",
-    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. (i) has the lesser environmental impact.",
+    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. 3(b) (i) has the lesser environmental impact.",
     questionText: "Name one other CAM process commonly used in schools. Briefly outline the benefits of this process for student project work.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 2,
     rows: [
@@ -531,13 +689,128 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2021 OL Section C Q1(b)(i)",
+    stem: "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
+    questionText: "Complete the given flowchart to operate the coffee machine in the following sequence: • the coffee machine is powered on • the capsule is inserted • a large or a small coffee is selected • the coffee pours.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Complete the given flowchart to operate the coffee machine in the following sequence: • the coffee machine is powered on • the capsule is inserted • a large or a small coffee is selected • the coffee pours.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q1b-art.png",
+          "srcHash": "50690c7a4e9b1518bcbb17f5eb04854c",
+          "alt": "The start of a flowchart: a green Start box with an arrow down to a white decision diamond labelled On. A line runs from the diamond's right corner out to the right, up, and back into the right side of the Start box, and an arrow leaves the bottom of the diamond. The top of a purple capsule box from the neighbouring photograph shows at the bottom right. the top 11 pt of the purple Nespresso capsule-box photograph (x 444.6-462, y 339.6-351) shows in the bottom-right corner: the flowchart's return loop reaches x 461.2 and its exit arrow reaches y 350.2, so no rectangle holding the whole flowchart can drop it. The coffee-machine photograph was left out because the (iii) ask line 'Describe how you would indicate, on the machine, that the' runs into its column.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-OL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-scheme-secC-q1b-i.png",
+          "srcHash": "9bc4f4d50511e21c5a2afd6e99b97154",
+          "alt": "The marking scheme's own answer to 2021 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart. Start leads to the decision On?, whose N branch loops back above it; Y leads to Capsule Inserted, then to the decision Large coffee?. Its Y branch leads to Coffee pours and then Stop; its N branch leads to the decision Small coffee?, whose N branch loops back above Large coffee? and whose Y branch leads to Coffee pours and then Stop. The scheme prints beneath it: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2021 OL Section C Q1(b)(ii)",
+    stem: "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
+    questionText: "Suggest a modification to the flowchart to indicate when the water container is empty.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Suggest a modification to the flowchart to indicate when the water container is empty.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q1b-art.png",
+          "srcHash": "50690c7a4e9b1518bcbb17f5eb04854c",
+          "alt": "The start of a flowchart: a green Start box with an arrow down to a white decision diamond labelled On. A line runs from the diamond's right corner out to the right, up, and back into the right side of the Start box, and an arrow leaves the bottom of the diamond. The top of a purple capsule box from the neighbouring photograph shows at the bottom right. the top 11 pt of the purple Nespresso capsule-box photograph (x 444.6-462, y 339.6-351) shows in the bottom-right corner: the flowchart's return loop reaches x 461.2 and its exit arrow reaches y 350.2, so no rectangle holding the whole flowchart can drop it. The coffee-machine photograph was left out because the (iii) ask line 'Describe how you would indicate, on the machine, that the' runs into its column.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-OL-scheme-secC-q1b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-scheme-secC-q1b-ii.png",
+          "srcHash": "b45af9bd0106966ee03a373466917bf2",
+          "alt": "The marking scheme's own answer to 2021 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the flowchart modified for an empty water container. Start leads to the decision On?, whose N branch loops back above it; Y leads to a new decision Water?, whose N branch leads to Refill and loops back above Water?, and whose Y branch leads to Capsule Inserted, then the decision Large coffee?. Its Y branch leads to Coffee pours and then Stop; its N branch leads to Small coffee?, whose N branch loops back above Large coffee? and whose Y branch leads to Coffee pours and then Stop.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2021 OL Section C Q1(b)(iii)",
+    stem: "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
+    questionText: "Describe how you would indicate, on the machine, that the water container needs refilling.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Use an LED indicator, etc.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q1b-art.png",
+          "srcHash": "50690c7a4e9b1518bcbb17f5eb04854c",
+          "alt": "The start of a flowchart: a green Start box with an arrow down to a white decision diamond labelled On. A line runs from the diamond's right corner out to the right, up, and back into the right side of the Start box, and an arrow leaves the bottom of the diamond. The top of a purple capsule box from the neighbouring photograph shows at the bottom right. the top 11 pt of the purple Nespresso capsule-box photograph (x 444.6-462, y 339.6-351) shows in the bottom-right corner: the flowchart's return loop reaches x 461.2 and its exit arrow reaches y 350.2, so no rectangle holding the whole flowchart can drop it. The coffee-machine photograph was left out because the (iii) ask line 'Describe how you would indicate, on the machine, that the' runs into its column.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-c1c-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2021 OL Section C Q1(c)(i)",
+    stem: "The image shows a shuttle valve used in pneumatic circuits. Also shown is the symbol for a shuttle valve.",
+    questionText: "Explain how a shuttle valve works with reference to the parts labelled A, B and C.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The shuttle valve switches based on the pressures entering either of the input ports A or B and exiting at port C. If both input ports A and B start to receive compressed air, the connection with the higher pressure takes precedence and it is output to port C, etc.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q1c-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q1c-art.png",
+          "srcHash": "96c53a5708645fe77606f89436d301fb",
+          "alt": "Colour photograph of a pneumatic shuttle valve: a silver valve body with three blue push-in air fittings, on a black mounting base. Below it, the shuttle valve's circuit symbol: a rectangle containing a circle between two angled seats, a port line labelled A entering the left side, one labelled B entering the right side, and one labelled C leaving the top from a dot at the centre. the last letters 's.' of the stem line 'The image shows a shuttle valve used in pneumatic circuits.' (ink to x 382.7, y 484.5-492.3) sit at the crop's left edge, level with the photograph; the label A starts at x 378.2, so no rectangle that keeps A can drop them. A symbol-only crop is no cleaner: the photograph's base reaches down into the symbol's top-right corner.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 OL Section C Q1(c)(ii)",
+    stem: "The image shows a shuttle valve used in pneumatic circuits. Also shown is the symbol for a shuttle valve.",
     questionText: "Give one practical example of where a shuttle valve could be used in industry.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A shuttle valve can allow a machine to be operated using two switches for safety purposes, aircraft landing gear systems, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q1c-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q1c-art.png",
+          "srcHash": "96c53a5708645fe77606f89436d301fb",
+          "alt": "Colour photograph of a pneumatic shuttle valve: a silver valve body with three blue push-in air fittings, on a black mounting base. Below it, the shuttle valve's circuit symbol: a rectangle containing a circle between two angled seats, a port line labelled A entering the left side, one labelled B entering the right side, and one labelled C leaving the top from a dot at the centre. the last letters 's.' of the stem line 'The image shows a shuttle valve used in pneumatic circuits.' (ink to x 382.7, y 484.5-492.3) sit at the crop's left edge, level with the photograph; the label A starts at x 378.2, so no rectangle that keeps A can drop them. A symbol-only crop is no cleaner: the photograph's base reaches down into the symbol's top-right corner.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -962,6 +1235,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Easier to track inventory, tracking done in real time (no lag time), greater volume of materials/components can be monitored using software, ability to adjust to changing demand, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q4d-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q4d-art.png",
+          "srcHash": "21e3327eb038cbfb500fde2f51c7a6f7",
+          "alt": "A black-and-white barcode of vertical bars of varying widths, with the number 0 36000 29145 2 printed beneath it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
+    section: "C", questionRef: "2021 OL Section C Q4(d)(ii)",
+    stem: "In an Electronic Kanban (e-Kanban) system, all cards used to track parts within a factory are maintained electronically. Barcode scanners, sensors and technologies such as Radio-Frequency Identification (RFID) can be used for real-time tracking of inventory.",
+    questionText: "Suggest two items of information that could be contained in a barcode such as the one shown.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Price, weight, date of manufacture and expiry, name of the manufacturer of the product, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q4d-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q4d-art.png",
+          "srcHash": "21e3327eb038cbfb500fde2f51c7a6f7",
+          "alt": "A black-and-white barcode of vertical bars of varying widths, with the number 0 36000 29145 2 printed beneath it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -970,13 +1273,52 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5a-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(a)(i)",
-    stem: "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car. Body part Material Classification Material Seat Fabric Tyre Steel-reinforced rubber Headlight lens Ceramic A",
+    stem: "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car.",
     questionText: "Briefly outline what is meant by synthetic materials and natural materials.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4 + 6)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Synthetic materials are man-made and are not found in nature. They are created by mixing different chemicals, or prepared compounds and substances together, e.g., nylon/polyester/acrylic.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Natural materials are those that are found in nature, e.g., wool/linen/silk/cotton/leather.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q5a-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q5a-art.png",
+          "srcHash": "a087c9767a50b2947ca82a41a84e902e",
+          "alt": "A three-column table headed Body part, Material Classification and Material. Seat: Fabric, Material blank. Tyre: Material Classification blank, Steel-reinforced rubber. Headlight lens: Ceramic, Material blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-c5a-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2021 OL Section C Q5(a)(ii)",
+    stem: "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car.",
+    questionText: "Draw the table below into your answerbook and complete the missing information.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4 + 6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw the table below into your answerbook and complete the missing information.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q5a-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q5a-art.png",
+          "srcHash": "a087c9767a50b2947ca82a41a84e902e",
+          "alt": "A three-column table headed Body part, Material Classification and Material. Seat: Fabric, Material blank. Tyre: Material Classification blank, Steel-reinforced rubber. Headlight lens: Ceramic, Material blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-OL-scheme-secC-q5a-ii",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-scheme-secC-q5a-ii.png",
+          "srcHash": "85f813d4bacaafb3174305081b747358",
+          "alt": "The marking scheme's own answer to 2021 OL Section C Q5(a)(ii), as the State Examinations Commission printed it: the completed table. Seat: Fabric, Leather. Tyre: Composite, Steel reinforced rubber. Headlight lens: Ceramic, Glass. The three entries the candidate supplies, Leather, Composite and Glass, are printed in bold.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1265,6 +1607,58 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-a7", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2022 OL Section A Q7",
+    questionText: "The image shows a Stockholm toddler chair that can be used at two different heights, by simply turning it upside-down. In the box provided, make a well-proportioned 2D sketch of the chair when viewed in the direction of arrow A.",
+    tariffModel: {"kind":"fixed","notation":"(Very good sketch- 8 marks, fair sketch 4 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The image shows a Stockholm toddler chair that can be used at two different heights, by simply turning it upside-down. In the box provided, make a well-proportioned 2D sketch of the chair when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2022-OL-scheme-secA-q7",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-scheme-secA-q7.png",
+          "srcHash": "5c8a93783355784005b847c8ce6d9b6c",
+          "alt": "The marking scheme's own answer to 2022 OL Section A Q7, as the State Examinations Commission printed it: a 2D line sketch of the Stockholm toddler chair viewed in the direction of arrow A: a square outline with a doubled vertical line down each side for the side panels, a doubled horizontal band across the middle for the seat, and short dashed marks near the top and bottom of each side. The scheme prints beside it: (Very good sketch- 8 marks, fair sketch 4 marks).",
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-a8", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2022 OL Section A Q8",
+    questionText: "A Work Breakdown Structure (WBS) is a project management tool used by students and professionals. Below is the incomplete WBS for the toilet-roll holder shown. Using your own headings, complete the sample WBS.",
+    tariffModel: {"kind":"fixed","notation":"(8 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A Work Breakdown Structure (WBS) is a project management tool used by students and professionals. Below is the incomplete WBS for the toilet-roll holder shown. Using your own headings, complete the sample WBS.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secA-q8-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secA-q8-art.png",
+          "srcHash": "6d610784b574e8fd994cd85fbdeb571a",
+          "alt": "An incomplete Work Breakdown Structure drawn as three rows of boxes joined by arrows. Top row: Back, then Cut out, then Sand, then Paint. Second row: Sides, followed by three empty boxes. Third row: Roller, followed by three empty boxes. Arrows from the end of all three rows lead into one empty box on the right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2022-OL-scheme-secA-q8",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-scheme-secA-q8.png",
+          "srcHash": "ea8b321c6f2a1a6399218cf81c3cc863",
+          "alt": "The marking scheme's own answer to 2022 OL Section A Q8, as the State Examinations Commission printed it: a work breakdown structure of three rows of boxes joined left to right by arrows. Row 1: Back, Cut out, Sand, Paint. Row 2: Sides, Cut out, Drill, Sand/Paint. Row 3: Roller, Cut out, Sand, Paint. Arrows from the last box of each row meet at one box, Assemble. The steps the scheme adds (rows 2 and 3 after the part name, and Assemble) are in larger bold type; the Back row and the part names are in the question's own smaller type.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-a9-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2022 OL Section A Q9(i)",
     stem: "The image shows a plastic bin used in many places of work.",
@@ -1539,6 +1933,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-b3b-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "B", questionRef: "2022 OL Section B Q3(b)(i)",
+    stem: "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
+    questionText: "Name a suitable material for the manufacture of the battery pack holder, shown.",
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+2+4)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Leather, neoprene, nylon, polyester, etc.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secB-q3b-art.png",
+          "srcHash": "686188c29f3f4bcfb6ee2c3e98e9f475",
+          "alt": "A photograph of a black fabric battery pack holder with a Swytch logo, mounted on the front of a turquoise bicycle's handlebars between the brake levers and tan grips. A red arrow points up to the holder from the label 'Battery pack holder' printed beneath the photograph.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 OL Section B Q3(b)(ii)",
     stem: "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
@@ -1547,6 +1963,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Waterproof, strong, hard wearing, lightweight, etc.", marks: 2, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secB-q3b-art.png",
+          "srcHash": "686188c29f3f4bcfb6ee2c3e98e9f475",
+          "alt": "A photograph of a black fabric battery pack holder with a Swytch logo, mounted on the front of a turquoise bicycle's handlebars between the brake levers and tan grips. A red arrow points up to the holder from the label 'Battery pack holder' printed beneath the photograph.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1561,6 +1985,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A bracket could be used to attach the battery pack holder to the handlebar.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secB-q3b-art.png",
+          "srcHash": "686188c29f3f4bcfb6ee2c3e98e9f475",
+          "alt": "A photograph of a black fabric battery pack holder with a Swytch logo, mounted on the front of a turquoise bicycle's handlebars between the brake levers and tan grips. A red arrow points up to the holder from the label 'Battery pack holder' printed beneath the photograph.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1597,11 +2029,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3d-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2022 OL Section B Q3(d)(i)",
+    stem: "Most modern bicycle frames, such as the one shown, are made from lightweight aluminium alloys.",
     questionText: "Describe what is meant by the term alloy when referring to materials.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A metallic substance made from two or more elements.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secB-q3d-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secB-q3d-art.png",
+          "srcHash": "6c341fab2ec6d163e356d882ce7c5e13",
+          "alt": "A photograph of a bare pale blue road-bicycle frame with no wheels or components: top tube, down tube and seat tube forming the main triangle, thin rear stays forming a second triangle, and a dark blue front fork, with brand lettering on the tubes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-b3d-ii", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "B", questionRef: "2022 OL Section B Q3(d)(ii)",
+    stem: "Most modern bicycle frames, such as the one shown, are made from lightweight aluminium alloys.",
+    questionText: "Outline one structural feature that strengthens the bicycle frame shown.",
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Triangulation, tubing structure of material, etc.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secB-q3d-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secB-q3d-art.png",
+          "srcHash": "6c341fab2ec6d163e356d882ce7c5e13",
+          "alt": "A photograph of a bare pale blue road-bicycle frame with no wheels or components: top tube, down tube and seat tube forming the main triangle, thin rear stays forming a second triangle, and a dark blue front fork, with brand lettering on the tubes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1636,6 +2099,90 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2022 OL Section C Q1(b)(i)",
+    stem: "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
+    questionText: "Complete the flowchart, shown, to operate the Robo-Deck in the following sequence: • The system is powered on • The motor activates, moving the Robo-Deck forward for 15 seconds • At the same time, the stain sprayer comes on for 15 seconds • The motor and the sprayer stop.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Complete the flowchart, shown, to operate the Robo-Deck in the following sequence: • The system is powered on • The motor activates, moving the Robo-Deck forward for 15 seconds • At the same time, the stain sprayer comes on for 15 seconds • The motor and the sprayer stop.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q1b-art.png",
+          "srcHash": "3f92991fdda314fd2218fa26fd6b1fa5",
+          "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2022-OL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-scheme-secC-q1b-i.png",
+          "srcHash": "08c0f82e09e45dc98564da80d61a8398",
+          "alt": "The marking scheme's own answer to 2022 OL Section C Q1(b)(i), as the State Examinations Commission printed it: the completed flowchart. Start leads to a decision 'On'; N loops back round to Start. Y leads in turn to 'Motor On', 'Sprayer On', 'Wait 15s', 'Motor Off', 'Sprayer Off' and finally 'Stop'.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2022 OL Section C Q1(b)(ii)",
+    stem: "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
+    questionText: "Suggest a modification of the flowchart to alert the user when the stain is running low.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Suggest a modification of the flowchart to alert the user when the stain is running low.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q1b-art.png",
+          "srcHash": "3f92991fdda314fd2218fa26fd6b1fa5",
+          "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2022-OL-scheme-secC-q1b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-scheme-secC-q1b-ii.png",
+          "srcHash": "869da7d0359e90af24d79561eb664ad0",
+          "alt": "The marking scheme's own answer to 2022 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the modified flowchart. Start leads to a decision 'On'; N loops back round to Start. Y leads to a new decision 'Stain Low'; its Y branch leads left to an output 'LED On', which loops back up into the 'On' decision. Its N branch leads down through 'Motor On', 'Sprayer On', 'Wait 15s', 'Motor Off' and 'Sprayer Off' to 'Stop'.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2022 OL Section C Q1(b)(iii)",
+    stem: "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
+    questionText: "Name a suitable sensor that could be used to detect an object in the path of the Robo-Deck.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Infra-red motion sensor, LDR, etc.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q1b-art.png",
+          "srcHash": "3f92991fdda314fd2218fa26fd6b1fa5",
+          "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c1c-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2022 OL Section C Q1(c)(i)",
     stem: "The image shows a pneumatic paint sprayer which can be used to paint decks.",
@@ -1659,8 +2206,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Compressed air enters through Port A and pushes the piston out.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "When the air stops, the spring brings the piston back to its original position.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Piston", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "A Spring", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1673,7 +2218,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe what is meant by a compressive force.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When a force presses inward on an object causing it to be compacted. Gripper", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "When a force presses inward on an object causing it to be compacted.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -1696,11 +2241,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c2a-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 OL Section C Q2(a)(i)",
+    stem: "A resistor R, the resistor colour and tolerance code tables, are shown.",
     questionText: "The colour band sequence of R is brown, black, red and gold. State the value of the resistor R.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 +4)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "1000Ω R", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q2a-art.png",
+          "srcHash": "a855e7cf54e6a35b5da036d339e3b96e",
+          "alt": "A photograph of a beige axial resistor lying diagonally, with a wire lead at each end and four coloured bands: brown, black and red, then a gold band set apart nearer one end. The letter R is printed beside it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c2a-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 OL Section C Q2(a)(ii)",
+    stem: "A resistor R, the resistor colour and tolerance code tables, are shown.",
+    questionText: "Outline the function of the gold band on the resistor shown.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 +4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The tolerance band, indicates a tolerance of +/- 5%", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q2a-art.png",
+          "srcHash": "a855e7cf54e6a35b5da036d339e3b96e",
+          "alt": "A photograph of a beige axial resistor lying diagonally, with a wire lead at each end and four coloured bands: brown, black and red, then a gold band set apart nearer one end. The letter R is printed beside it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2409,6 +2985,36 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-a7", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2023 OL Section A Q7",
+    questionText: "The image shows a bamboo cookbook stand. In the box provided, make a well-proportioned 2D sketch of the cookbook stand when viewed in the direction of arrow A.",
+    tariffModel: {"kind":"fixed","notation":"(8 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The image shows a bamboo cookbook stand. In the box provided, make a well-proportioned 2D sketch of the cookbook stand when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secA-q7-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secA-q7-art.png",
+          "srcHash": "3e91073addd9d78a3012d2f53f4ca589",
+          "alt": "Colour photograph of a bamboo cookbook stand: a large flat bamboo board leaning back on a stand, with a ledge along its bottom edge held by two black clips, and a slotted support rack visible behind it. A black arrow labelled A at the lower right points at the stand from the right-hand side.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2023-OL-scheme-secA-q7",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-scheme-secA-q7.png",
+          "srcHash": "d56c86076d5a69c98b61ef9dfffc7756",
+          "alt": "The marking scheme's own answer to 2023 OL Section A Q7, as the State Examinations Commission printed it: a 2D line sketch, inside a ruled box, of the cookbook stand seen from the side: a tall flat back board leaning back at an angle with its foot on a short base piece, and a support strut running from a small block on the back of the board down to a notched rack (four notches) that slopes along the base.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-a8-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2023 OL Section A Q8(i)",
     stem: "The image shows a component which is commonly used in electronics.",
@@ -2458,6 +3064,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "E.g., 50 mm cushion thickness to ensure seat comfort, curved legs to allow the chair to rock, ultrabright LEDs to be used to provide appropriate lighting, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-a10", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2023 OL Section A Q10",
+    questionText: "Digital technology is used by students in many ways to capture learning as it happens. Describe three ways in which digital technology could be used when producing a design portfolio for Leaving Certificate Technology.",
+    tariffModel: {"kind":"fixed","notation":"(3+3+2 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "CAD drawings/Circuit simulation diagrams/flowcharts, graphs, photographic evidence of design journey, presentation of folio, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -2523,6 +3142,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A product that is able to decay/breakdown naturally and in a way that is not harmful to the environment, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secB-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secB-q2a-art.png",
+          "srcHash": "2b76b7ac7873ffc4a4818ecfde81a834",
+          "alt": "Colour photograph of a hurler's legs, in blue and yellow socks, standing on grass and holding a hurley upright with its taped handle at the top. A red arrow from the label 'Grip', on the left, points to the taped handle. the letter 'y' that ends 'environmentally' in the 2(a) stem line shows at the top-left corner: that glyph runs from x 399.6 to 405.0 and the 'Grip' label starts at x 400.0, beside a photo whose top is y 134.7, so no rectangle keeps the label and drops the letter",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-b2a-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "B", questionRef: "2023 OL Section B Q2(a)(ii)",
+    stem: "Torpey Hurleys aim to create products which are environmentally friendly and biodegradable, where possible.",
+    questionText: "Describe two properties which would be important for the material used as the grip on the hurley shown.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lightweight, non-slippy, etc.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secB-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secB-q2a-art.png",
+          "srcHash": "2b76b7ac7873ffc4a4818ecfde81a834",
+          "alt": "Colour photograph of a hurler's legs, in blue and yellow socks, standing on grass and holding a hurley upright with its taped handle at the top. A red arrow from the label 'Grip', on the left, points to the taped handle. the letter 'y' that ends 'environmentally' in the 2(a) stem line shows at the top-left corner: that glyph runs from x 399.6 to 405.0 and the 'Grip' label starts at x 400.0, beside a photo whose top is y 134.7, so no rectangle keeps the label and drops the letter",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2783,11 +3432,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(b)(i)",
-    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
-    questionText: "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Give two advantages of using a PIC to control devices.",
+    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller).",
+    questionText: "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Give two advantages of using a PIC to control devices.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "point", verbatim: "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
     figure: {
           "candId": "technology-2023-OL-scheme-secC-q1b-i",
@@ -2806,8 +3455,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(b)(ii)",
-    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
-    questionText: "Suggest a modification to the flowchart that allows for music to be played as the novelty light rotates. Using an annotated sketch, show how pin number one of a PIC is identified.",
+    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller).",
+    questionText: "Suggest a modification to the flowchart that allows for music to be played as the novelty light rotates.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any valid alternative solution accepted.", marks: 6, openList: true },
@@ -2829,13 +3478,66 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(b)(iii)",
-    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
+    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller).",
     questionText: "The novelty light above is powered using a low voltage DC power supply. Explain the term low voltage DC.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Low voltage - typically implies 0-50 volts,", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "DC represents direct current generally supplied from batteries or a low voltage DC transformer supply, etc.", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c1c-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2023 OL Section C Q1(c)(i)",
+    stem: "The image shows a PIC which can be used to control devices such as the novelty light in 1(b) above.",
+    questionText: "Give two advantages of using a PIC to control devices.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reprogrammable, adjustments can be made easily, parallel processing,", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q1c-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q1c-art.png",
+          "srcHash": "5d218472f72e022951e065c84bae1516",
+          "alt": "Colour photograph of a long black dual in-line integrated circuit chip, white lettering printed on its top, with a row of silver pins along each long side.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2023 OL Section C Q1(c)(ii)",
+    stem: "The image shows a PIC which can be used to control devices such as the novelty light in 1(b) above.",
+    questionText: "Using an annotated sketch, show how pin number one of a PIC is identified.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Using an annotated sketch, show how pin number one of a PIC is identified.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q1c-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q1c-art.png",
+          "srcHash": "5d218472f72e022951e065c84bae1516",
+          "alt": "Colour photograph of a long black dual in-line integrated circuit chip, white lettering printed on its top, with a row of silver pins along each long side.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2023-OL-scheme-secC-q1c-ii",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-scheme-secC-q1c-ii.png",
+          "srcHash": "3e59d7f9c5fc6afc98fe2e64f5bca17e",
+          "alt": "The marking scheme's own answer to 2023 OL Section C Q1(c)(ii), as the State Examinations Commission printed it: a sketch of an 8-pin dual in-line chip seen from above, four pins on each side, with a notch at its top end and a small dot beside the top-left pin; a red arrow from the label 'Pin 1' points to that top-left pin.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2928,7 +3630,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using the DPDT symbol shown, draw a circuit diagram for the forward and reverse control of a motor.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "for the forward and reverse control of a motor.", marks: 8, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Using the DPDT symbol shown, draw a circuit diagram for the forward and reverse control of a motor.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
     questionFigure: {
           "candId": "technology-2023-OL-paper-secC-q2b-art",
@@ -2937,6 +3639,15 @@ export const CARDS: SecCard[] = [
           "alt": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2023-OL-scheme-secC-q2b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-scheme-secC-q2b-ii.png",
+          "srcHash": "cdceccf7f6d33fb751dca0d54a3f6c25",
+          "alt": "The marking scheme's own answer to 2023 OL Section C Q2(b)(ii), as the State Examinations Commission printed it: a circuit diagram. Terminals +V (top) and -V (bottom) on the left run to the two moving arms of a double-pole double-throw switch, the arms linked by a dashed line. The two middle contacts are joined and wired to one side of a motor (a circle marked M). The top and bottom contacts each run through a push switch (two contact circles with a T-shaped plunger above and a bar beneath) to a wire down the right side, which joins the motor's other side.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -3016,8 +3727,31 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly outline two functions of a transistor.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Automatic switch, current amlifier, etc. C", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Automatic switch, current amlifier, etc.", marks: 4, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2023 OL Section C Q2(d)(ii)",
+    stem: "The invention of the transistor was an unprecedented development in the technological world and is now one of the basic building blocks of modern electronics.",
+    questionText: "Using the Formulae and Tables booklet or otherwise, draw the symbol for a transistor. Label the base, the collector, and the emitter on your diagram.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Using the Formulae and Tables booklet or otherwise, draw the symbol for a transistor. Label the base, the collector, and the emitter on your diagram.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2023-OL-scheme-secC-q2d-ii",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-scheme-secC-q2d-ii.png",
+          "srcHash": "3b9e34f967954503c94aa38e8667ccd7",
+          "alt": "The marking scheme's own answer to 2023 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: a transistor symbol: a circle containing a vertical bar, with the base lead entering from the left labelled B, the collector lead leaving at the top labelled C, and the emitter lead, carrying an outward-pointing arrow, leaving at the bottom labelled E.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3154,12 +3888,44 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(a)(i)",
-    stem: "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services. High quality B A High cost Low cost C Low quality",
+    stem: "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services.",
     questionText: "Outline two reasons why a company might gather information about products using this technique.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Better understand perceptions of products, visually effective, fast, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q4a-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q4a-art.png",
+          "srcHash": "499e8fda35e072dca0285f680e82a479",
+          "alt": "A perceptual map. A vertical red double-headed arrow runs from 'Low quality' at the bottom to 'High quality' at the top; it crosses a horizontal red double-headed arrow running from 'Low cost' on the left to 'High cost' on the right. Three circled letters mark products: A in the upper-left quarter (low cost, high quality), B in the upper-right quarter (high cost, high quality), and C just below the centre on the left (low cost, low quality).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c4a-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
+    section: "C", questionRef: "2023 OL Section C Q4(a)(ii)",
+    stem: "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services.",
+    questionText: "Using the diagram shown, briefly describe the characteristics of any two of the products labelled A, B, or C.",
+    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A- Low cost/high quality, likely to sell.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "B- High cost/high quality, likely to sell but cost could impede sales.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "C- Low cost/low quality, poor sales likely as a result", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q4a-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q4a-art.png",
+          "srcHash": "499e8fda35e072dca0285f680e82a479",
+          "alt": "A perceptual map. A vertical red double-headed arrow runs from 'Low quality' at the bottom to 'High quality' at the top; it crosses a horizontal red double-headed arrow running from 'Low cost' on the left to 'High cost' on the right. Three circled letters mark products: A in the upper-left quarter (low cost, high quality), B in the upper-right quarter (high cost, high quality), and C just below the centre on the left (low cost, low quality).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3442,6 +4208,28 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-a1-i", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2024 OL Section A Q1(i)",
+    stem: "The Health and Safety Authority (HSA) provide a range of different colour-coded safety signs.",
+    questionText: "State the meaning of the safety sign shown.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wash your hands.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secA-q1-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q1-art.png",
+          "srcHash": "7e6f92f073af27a74b07bf0ee9a43704",
+          "alt": "A round blue mandatory safety sign showing, in white, water running from a tap over a pair of hands being washed.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-a1-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2024 OL Section A Q1(ii)",
     stem: "The Health and Safety Authority (HSA) provide a range of different colour-coded safety signs.",
@@ -3450,6 +4238,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Indicates a mandatory action, hygiene instruction, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secA-q1-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q1-art.png",
+          "srcHash": "7e6f92f073af27a74b07bf0ee9a43704",
+          "alt": "A round blue mandatory safety sign showing, in white, water running from a tap over a pair of hands being washed.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3517,8 +4313,17 @@ export const CARDS: SecCard[] = [
     questionText: "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a buzzer in the box provided.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "draw the symbol for a buzzer in the box provided.", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a buzzer in the box provided.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2024-OL-scheme-secA-q4-ii",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-scheme-secA-q4-ii.png",
+          "srcHash": "ec4d021b82d2c8ab149eeaf2b44c4613",
+          "alt": "The marking scheme's own answer to 2024 OL Section A Q4(ii), as the State Examinations Commission printed it: the circuit symbol for a buzzer, drawn inside the scheme's reprint of the answer box (the box frame is left out): two parallel horizontal leads enter the curved side of a half-circle whose flat side stands upright on the right.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3553,6 +4358,102 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-a6-i", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2024 OL Section A Q6(i)",
+    stem: "The tool shown is commonly used in the Technology room.",
+    questionText: "Name the tool.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Sliding Bevel.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secA-q6-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q6-art.png",
+          "srcHash": "fafdc319b7193036e20d714e770ab8e5",
+          "alt": "Colour photograph of a sliding bevel: a black steel blade with a long slot, locked by a brass wing nut at the end of a polished hardwood stock with brass end caps.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-a6-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2024 OL Section A Q6(ii)",
+    stem: "The tool shown is commonly used in the Technology room.",
+    questionText: "Describe a situation where this tool might be used.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It can be useful when a line must be marked at an angle on wood. It can also be used to check an angle, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secA-q6-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q6-art.png",
+          "srcHash": "fafdc319b7193036e20d714e770ab8e5",
+          "alt": "Colour photograph of a sliding bevel: a black steel blade with a long slot, locked by a brass wing nut at the end of a polished hardwood stock with brass end caps.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-a7", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2024 OL Section A Q7",
+    questionText: "The image shows a machine tool stand. In the box provided, make a well-proportioned 2D sketch of the stand when viewed in the direction of arrow A.",
+    tariffModel: {"kind":"fixed","notation":"(Very good sketch- 8 marks, fair sketch 4 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The image shows a machine tool stand. In the box provided, make a well-proportioned 2D sketch of the stand when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secA-q7-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q7-art.png",
+          "srcHash": "774753076c12128477ed4d98a9d7e1a8",
+          "alt": "Colour photograph of a blue steel machine tool stand with a plywood top and a plywood lower shelf on four splayed legs with black feet; a black arrow labelled A at the bottom right points diagonally up at the stand, giving the direction of view.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2024-OL-scheme-secA-q7",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-scheme-secA-q7.png",
+          "srcHash": "6189c50f4d646a163d41cfddc9b3734b",
+          "alt": "The marking scheme's own answer to 2024 OL Section A Q7, as the State Examinations Commission printed it: a 2D line sketch of the machine tool stand seen in the direction of arrow A: a flat top overhanging two splayed legs, a rail under the top, a lower cross rail at shelf height and a small foot at the bottom of each leg. The scheme prices it beneath its box: (Very good sketch- 8 marks, fair sketch 4 marks).",
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-a8-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2024 OL Section A Q8(i)",
+    stem: "The image shows a mechanism that allows the driver and driven wheels to rotate in the same direction.",
+    questionText: "Name the mechanism shown.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Toothed belt and pulley system.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secA-q8-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q8-art.png",
+          "srcHash": "caa9e1786e82ad94d775146ffe7fcf8e",
+          "alt": "Colour photograph of a toothed belt drive: two flanged toothed pulleys of equal size joined by a black toothed timing belt whose teeth mesh with the pulleys.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-a8-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2024 OL Section A Q8(ii)",
     stem: "The image shows a mechanism that allows the driver and driven wheels to rotate in the same direction.",
@@ -3561,6 +4462,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Nonslip belt, quiet, relatively cheap, low maintenance, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secA-q8-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secA-q8-art.png",
+          "srcHash": "caa9e1786e82ad94d775146ffe7fcf8e",
+          "alt": "Colour photograph of a toothed belt drive: two flanged toothed pulleys of equal size joined by a black toothed timing belt whose teeth mesh with the pulleys.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3848,8 +4757,39 @@ export const CARDS: SecCard[] = [
     questionText: "A student has decided to make a model of a similar aircraft to include two DC motors and two LEDs. Draw a labelled diagram of a suitable electronic circuit for the model aircraft.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "circuit for the model aircraft.", marks: 2, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A student has decided to make a model of a similar aircraft to include two DC motors and two LEDs. Draw a labelled diagram of a suitable electronic circuit for the model aircraft.", marks: 2, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2024-OL-scheme-secB-q3b-iii",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-scheme-secB-q3b-iii.png",
+          "srcHash": "f380511ed3a6750da6ef5bfb78ea86ed",
+          "alt": "The marking scheme's own answer to 2024 OL Section B Q3(b)(iii), as the State Examinations Commission printed it: a circuit diagram with no word labels: two supply terminals (small circles) on the left of a top and a bottom rail, and four branches in parallel between the rails. Two branches are each a resistor above an LED (a diode in a circle with two arrows pointing out); the other two are each a motor (a circle marked M).",
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-b3c-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "B", questionRef: "2024 OL Section B Q3(c)(i)",
+    stem: "The diagram shows a wing of the JA1 aircraft.",
+    questionText: "Calculate the moment when a force of 50 N is applied at a distance of 3 metres from the fulcrum as shown.",
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Moment = Force (N) x Distance (m) = 50N x 3m = 150Nm", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secB-q3c-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secB-q3c-art.png",
+          "srcHash": "45bdb529beedf9f37d705694de7a9bd5",
+          "alt": "Outline side view of a model tilt-rotor aircraft on a stand: a 50 N upward force at the rear rotor 3 m from the nose, an arrow at the nose marking the fulcrum, and the rear motor labelled Motor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3858,11 +4798,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b3c-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2024 OL Section B Q3(c)(ii)",
+    stem: "The diagram shows a wing of the JA1 aircraft.",
     questionText: "If the motor is moved further away from the fulcrum, what effect would this have on the moment force?",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The moment would be increased.", marks: 2, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secB-q3c-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secB-q3c-art.png",
+          "srcHash": "45bdb529beedf9f37d705694de7a9bd5",
+          "alt": "Outline side view of a model tilt-rotor aircraft on a stand: a 50 N upward force at the rear rotor 3 m from the nose, an arrow at the nose marking the fulcrum, and the rear motor labelled Motor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3899,8 +4848,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1a-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(a)(i)",
-    stem: "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs). above, is programmed using a flowchart.",
-    questionText: "Outline two advantages of using a PIC in a child’s toy. Complete a flowchart to operate the bubble blower in the following sequence: • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed • When the button is pressed a third time, the motorised blower stops.",
+    stem: "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs).",
+    questionText: "Outline two advantages of using a PIC in a child’s toy.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Multiple inputs and outputs, reprogrammable, etc.", marks: 6, openList: true },
@@ -3913,12 +4862,96 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1a-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(a)(ii)",
-    stem: "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs). above, is programmed using a flowchart.",
-    questionText: "Suggest one other child’s toy that could use a PIC and outline why it would be useful to use a PIC in this toy. Suggest a modification of the flowchart to alert the user when the bubble solution is running low.",
+    stem: "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs).",
+    questionText: "Suggest one other child’s toy that could use a PIC and outline why it would be useful to use a PIC in this toy.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any relevant example and justification, e.g., remote controlled all-terrain buggy- multiple functions- lights, motors, different speeds, etc.", marks: 4, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2024 OL Section C Q1(b)(i)",
+    stem: "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
+    questionText: "Complete a flowchart to operate the bubble blower in the following sequence: • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed • When the button is pressed a third time, the motorised blower stops.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Complete a flowchart to operate the bubble blower in the following sequence: • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed • When the button is pressed a third time, the motorised blower stops.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q1b-art.png",
+          "srcHash": "790d521a56a75561ab3b81bcc983ea18",
+          "alt": "The start of a flowchart for the student to complete: a green Start box with an arrow down to a purple diamond decision labelled Button, whose right-hand exit loops back up to Start and whose lower exit is an open arrow pointing down.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2024-OL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-scheme-secC-q1b-i.png",
+          "srcHash": "b826eb1ef3ef1712f5a893bdca2a978d",
+          "alt": "The marking scheme's own answer to 2024 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision Button, whose N branch loops back to Start and whose Y branch runs Motor On, then a second Button decision that loops on itself on N, a third Button decision that loops on itself on N, and Motor Off, which returns to Start. The scheme prints beneath the page's drawings: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2024 OL Section C Q1(b)(ii)",
+    stem: "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
+    questionText: "Suggest a modification of the flowchart to alert the user when the bubble solution is running low.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Suggest a modification of the flowchart to alert the user when the bubble solution is running low.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q1b-art.png",
+          "srcHash": "790d521a56a75561ab3b81bcc983ea18",
+          "alt": "The start of a flowchart for the student to complete: a green Start box with an arrow down to a purple diamond decision labelled Button, whose right-hand exit loops back up to Start and whose lower exit is an open arrow pointing down.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2024-OL-scheme-secC-q1b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-scheme-secC-q1b-ii.png",
+          "srcHash": "a91f864e66babf8d1275cdd3ef831a5c",
+          "alt": "The marking scheme's own answer to 2024 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the flowchart modified with a decision Solution? after the first Button: Start, the decision Button (N back to Start), the decision Solution? (N back to Start), then Motor On, a Button decision looping on itself on N, a second Button decision looping on itself on N, and Motor Off, which returns to Start. The scheme prints beneath it: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2024 OL Section C Q1(b)(iii)",
+    stem: "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
+    questionText: "Name a suitable sensor that could be used to detect when the bubble solution is low.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Float switch sensor.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q1b-art.png",
+          "srcHash": "790d521a56a75561ab3b81bcc983ea18",
+          "alt": "The start of a flowchart for the student to complete: a green Start box with an arrow down to a purple diamond decision labelled Button, whose right-hand exit loops back up to Start and whose lower exit is an open arrow pointing down.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4052,10 +5085,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q2(b)(ii)",
     stem: "Part of a 555 monostable IC is shown in the diagram.",
     questionText: "Briefly outline the purpose of capacitor C in the circuit.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "7 3 in the circuit. 2 1", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Capacitor C is used to control the length of time the output stays activated. The larger the capacitor the longer the output will stay on C when configured in a monostable mode. 0 V", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Capacitor C is used to control the length of time the output stays activated. The larger the capacitor the longer the output will stay on when configured in a monostable mode.", marks: 8, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2024-OL-paper-secC-q2b-art",
@@ -4077,7 +5109,7 @@ export const CARDS: SecCard[] = [
     questionText: "Redraw the circuit to include an LED output at pin 3 of the 555 IC.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "at pin 3 of the 555 IC.", marks: 6, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Redraw the circuit to include an LED output at pin 3 of the 555 IC.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
     questionFigure: {
           "candId": "technology-2024-OL-paper-secC-q2b-art",
@@ -4086,6 +5118,15 @@ export const CARDS: SecCard[] = [
           "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2024-OL-scheme-secC-q2b-iii",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-scheme-secC-q2b-iii.png",
+          "srcHash": "e69714039d2a08d933185a4fe874af5f",
+          "alt": "The marking scheme's own answer to 2024 OL Section C Q2(b)(iii), as the State Examinations Commission printed it: a 555 timer circuit drawn between a top rail, which reaches the +V terminal through a switch at the right, and a 0 V rail. The IC is a box with pins 6, 8, 4 along its top, 7 and 2 on its left and 1 at the bottom; pins 8 and 4 go to the top rail and pin 1 to the 0 V rail. A resistor from the top rail feeds pin 2, which a push switch on the left connects down to 0 V; a second resistor from the top rail feeds pins 6 and 7 and a capacitor C (marked +) that runs down to 0 V. The output, pin 3 (labelled 3 in bold), runs through a resistor to an LED (a diode in a circle with two arrows pointing out) and on to the 0 V rail.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -4131,6 +5172,37 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "This is the acceptable deviation allowed for the stated value of resistor.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "e.g., 5% deviation for a 330 Ω resistor = 16.5 Ω. Therefore, the acceptable range for this resistor is 313.5 Ω to 346.5 Ω.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q2d-art.png",
+          "srcHash": "fce7350ba9590dc4f6f7dd0464a60e35",
+          "alt": "A partial resistor circuit: an 8 Ω resistor in series with a pair of 10 Ω resistors connected in parallel, with a lead at each end.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2024 OL Section C Q2(d)(ii)",
+    stem: "A resistor with a gold band indicates that it has a tolerance of 5%.",
+    questionText: "Calculate the total resistance for the partial circuit shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Resistors in parallel: 1/10 +1/10 = 2/10 = 1/5. R = 5 Ω", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Total resistance = 8 Ω + 5 Ω = 13 Ω", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q2d-art.png",
+          "srcHash": "fce7350ba9590dc4f6f7dd0464a60e35",
+          "alt": "A partial resistor circuit: an 8 Ω resistor in series with a pair of 10 Ω resistors connected in parallel, with a lead at each end.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4517,6 +5589,50 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a1-i", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2025 OL Section A Q1(i)",
+    stem: "The machine shown is commonly used in Technology workshops.",
+    questionText: "Name the machine.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Band saw.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secA-q1-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q1-art.png",
+          "srcHash": "97cb07252812724547c49319ed217a2e",
+          "alt": "A photograph of a tall floor-standing workshop machine with a blue and white body: an upper and a lower cabinet, a vertical blade guide with a yellow guard above a square work table, a handwheel at the top right and the model mark BP-430A printed down the lower cabinet.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a1-ii", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2025 OL Section A Q1(ii)",
+    stem: "The machine shown is commonly used in Technology workshops.",
+    questionText: "State two safety precautions which should be observed when using this machine.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wear safety glasses, ear defenders, use a protective guard, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secA-q1-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q1-art.png",
+          "srcHash": "97cb07252812724547c49319ed217a2e",
+          "alt": "A photograph of a tall floor-standing workshop machine with a blue and white body: an upper and a lower cabinet, a vertical blade guide with a yellow guard above a square work table, a handwheel at the top right and the model mark BP-430A printed down the lower cabinet.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-a2-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2025 OL Section A Q2(i)",
     stem: "Giant cylinder sails can cut the fuel consumption of cargo ships by up to 90%. They work by pulling in air, pressurising it, and pushing it out in another direction to create thrust.",
@@ -4545,13 +5661,74 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a3-i", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2025 OL Section A Q3(i)",
+    stem: "The safety sign shown is commonly used in everyday life.",
+    questionText: "State the meaning of the safety sign shown.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No photography allowed.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secA-q3-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q3-art.png",
+          "srcHash": "629e17523d9763920c5bf5469c6234a1",
+          "alt": "A round safety sign on white: a black camera symbol inside a thick red circle with a red diagonal bar struck through it from top left to bottom right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-a3-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2025 OL Section A Q3(ii)",
+    stem: "The safety sign shown is commonly used in everyday life.",
     questionText: "Explain what is meant by safety signs that are red in colour.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Prohibitive action- stop, yield or do what is shown on the sign, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secA-q3-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q3-art.png",
+          "srcHash": "629e17523d9763920c5bf5469c6234a1",
+          "alt": "A round safety sign on white: a black camera symbol inside a thick red circle with a red diagonal bar struck through it from top left to bottom right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a4", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2025 OL Section A Q4",
+    questionText: "In the box provided, sketch a well-proportioned elevation of the toy when viewed in the direction of arrow A.",
+    tariffModel: {"kind":"fixed","notation":"All questions carry 8 marks"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the box provided, sketch a well-proportioned elevation of the toy when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secA-q4-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secA-q4-art.png",
+          "srcHash": "bc19363441b4b58697638cc67c73937d",
+          "alt": "A photograph of a child's wooden ride-on toy: a curved wooden seat on a front leg and a rear support, four black wheels with red hubs, and a red T-shaped handlebar at the front. At the lower right a black arrow labelled A points in towards the toy, giving the direction of view.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2025-OL-scheme-secA-q4",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-scheme-secA-q4.png",
+          "srcHash": "191f64eb58f0a2560a18e1f65ec12f73",
+          "alt": "The marking scheme's own answer to 2025 OL Section A Q4, as the State Examinations Commission printed it: a box holding a line sketch of the toy's elevation: the seat drawn as a long rounded bar, the handlebar as a thin upright post topped with a black dot at the left, a short leg down to the left wheel and a curved support down to the right wheel, each wheel drawn as two concentric circles. The scheme prints beneath it: (Very good sketch- 8 marks, good sketch- 6 marks, fair sketch 4 marks)",
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4677,8 +5854,17 @@ export const CARDS: SecCard[] = [
     questionText: "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.",
     tariffModel: {"kind":"fixed","notation":"(Very good diagram- 8 marks, good diagram- 6 marks, fair diagram- 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In the space provided, sketch a circuit diagram for this circuit.", marks: 8, openList: true },
+    { id: "r-1", kind: "point", verbatim: "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2025-OL-scheme-secA-q9",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-scheme-secA-q9.png",
+          "srcHash": "b3d047eb88fd65e9d0ea0f0b0300429d",
+          "alt": "The marking scheme's own answer to 2025 OL Section A Q9, as the State Examinations Commission printed it: a circuit diagram drawn inside the scheme's answer box (the box frame is left out): a single cell on the left, a push-to-make switch (two contact circles under a bar and plunger) on the top wire, and a motor (a circle marked M) on the bottom wire, all in one series loop.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5210,8 +6396,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a labelled diagram of a suitable electronic circuit to control the forward and reverse motion of a DC motor.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "to control the forward and reverse motion of a DC motor.", marks: 8, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Draw a labelled diagram of a suitable electronic circuit to control the forward and reverse motion of a DC motor.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2025-OL-scheme-secC-q2b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-scheme-secC-q2b-ii.png",
+          "srcHash": "5bceb923c579cf96004ea9d2e307bd26",
+          "alt": "The marking scheme's own answer to 2025 OL Section C Q2(b)(ii), as the State Examinations Commission printed it: a circuit diagram with no word labels: a single cell on the left whose two leads run to the two moving arms of a double-pole double-throw switch, the arms linked by a dashed line. The two middle contacts are joined and wired to one side of a motor (a circle marked M); the top and bottom contacts are joined by a wire down the right side, which also meets the motor's other side.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5238,8 +6433,47 @@ export const CARDS: SecCard[] = [
     questionText: "Name the logic gates at X and Y.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "X = And Y = Not A B C D 0 0 0 1", marks: 6, openList: true },
+    { id: "r-1", kind: "point", verbatim: "X = And Y = Not", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secC-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secC-q2c-art.png",
+          "srcHash": "cdcab8868decb47f9affb1cb80ad5ac5",
+          "alt": "A combination of two logic gates: inputs A and B enter a D-shaped gate (flat input side, rounded output side) labelled X; its output, labelled C, enters a triangle with a small circle at its tip labelled Y, whose output is labelled D. Below it, a truth table headed A, B, C, D with the A and B columns filled 0 0, 0 1, 1 0, 1 1 and the C and D columns left blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 OL Section C Q2(c)(ii)",
+    stem: "The graphic shows a combination of two logic gates.",
+    questionText: "In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In your answerbook, draw and complete the truth table for the combination of logic gates shown.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secC-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secC-q2c-art.png",
+          "srcHash": "cdcab8868decb47f9affb1cb80ad5ac5",
+          "alt": "A combination of two logic gates: inputs A and B enter a D-shaped gate (flat input side, rounded output side) labelled X; its output, labelled C, enters a triangle with a small circle at its tip labelled Y, whose output is labelled D. Below it, a truth table headed A, B, C, D with the A and B columns filled 0 0, 0 1, 1 0, 1 1 and the C and D columns left blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2025-OL-scheme-secC-q2c-ii",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-scheme-secC-q2c-ii.png",
+          "srcHash": "4129291074f0c5b73341d10dab732a46",
+          "alt": "The marking scheme's own answer to 2025 OL Section C Q2(c)(ii), as the State Examinations Commission printed it: a truth table headed A, B, C, D with the rows 0 0 0 1, 0 1 0 1, 1 0 0 1 and 1 1 1 0.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5266,8 +6500,17 @@ export const CARDS: SecCard[] = [
     questionText: "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a phototransistor.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "draw the symbol for a phototransistor.", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a phototransistor.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2025-OL-scheme-secC-q2d-ii",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-scheme-secC-q2d-ii.png",
+          "srcHash": "79ea1a7b75718a102ee9bc1761f899e5",
+          "alt": "The marking scheme's own answer to 2025 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: the circuit symbol for a phototransistor: a transistor in a circle, with a base lead entering from the left to an upright bar, the collector line leaving at the top right and the emitter leaving at the bottom right with an arrow pointing outward, and two parallel arrows pointing in at the circle's upper left for the light falling on it.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5545,6 +6788,72 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "No waste, less energy required to manufacture, etc.", marks: 4, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2025 OL Section C Q5(b)(i)",
+    stem: "The graphic shows the typical operating process of a fused deposition 3D printer.",
+    questionText: "Briefly describe the operation of the 3D printer, referring to parts A, B, C, D, and E.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A- Filament spool, B- The extruder uses torque and a pinch system to feed and retract the filament. C- The heater block melts the filament to a useable temperature. D- The part is printed on the bed E. The print head and/or the bed move to the correct X/Y/Z position for placing the material.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secC-q5b-art.png",
+          "srcHash": "1bd2905e79526029d863cebb29152cd2",
+          "alt": "A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2025 OL Section C Q5(b)(ii)",
+    stem: "The graphic shows the typical operating process of a fused deposition 3D printer.",
+    questionText: "Outline two ways 3D printers can be made safe while in use.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Use an enclosure to prevent access to hot components, use ventilation, emergency stop, etc.", marks: 8, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secC-q5b-art.png",
+          "srcHash": "1bd2905e79526029d863cebb29152cd2",
+          "alt": "A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2025 OL Section C Q5(b)(iii)",
+    stem: "The graphic shows the typical operating process of a fused deposition 3D printer.",
+    questionText: "Suggest two items that could be manufactured using a 3D printer.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any relevant examples- components for products, prototypes, etc.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-OL-paper-secC-q5b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-paper-secC-q5b-art.png",
+          "srcHash": "1bd2905e79526029d863cebb29152cd2",
+          "alt": "A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

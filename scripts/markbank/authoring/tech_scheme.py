@@ -242,6 +242,10 @@ class TechScheme:
         order = []
         page = 0
         pages = set()
+        # "All questions carry 8 marks": Section A's rubric, which prices a
+        # short question whose own tariff never reached the text layer --
+        # 2025 Ordinary Q4's "(8,6,4,2 Marks)" is drawn inside its sketch box.
+        rubric_marks = None
 
         def close(total, terms, notation):
             """Emit the block the tariff just ended."""
@@ -319,6 +323,9 @@ class TechScheme:
                 text = FURNITURE.sub('', text, count=1).strip()
             sh = SECTION_HEAD.match(text)
             heading = bool(sh) or bool(RUBRIC.match(text))
+            rm = re.search(r'carr(?:y|ies)\s+(\d{1,2})\s+marks', text, re.I) if heading else None
+            if rm and section == 'A':
+                rubric_marks = int(rm.group(1))
             if heading:
                 # A heading or a rubric closes nothing and belongs to nothing.
                 # Whatever has accumulated above it is the cover page or the
@@ -361,6 +368,10 @@ class TechScheme:
                 # materials" -- and reading those as heads re-opened Question 1
                 # inside Question 11.
                 if m and last_q < int(m.group(1)) <= last_q + 3:
+                    if lines and head_q is not None and rubric_marks:
+                        # The next head has arrived and this block was never
+                        # priced: its tariff is the rubric's.
+                        close(rubric_marks, [], f'All questions carry {rubric_marks} marks')
                     head_q, head_letter, roman = int(m.group(1)), None, None
                     text = text[m.end():]
                     started = True
@@ -370,7 +381,15 @@ class TechScheme:
 
             rh = ROMAN_HEAD.match(text)
             if rh:
+                seen = [r for r, _t in lines if r]
                 roman = rh.group(1)
+                if seen and roman == seen[-1] and roman in ROMANS \
+                        and ROMANS.index(roman) + 1 < len(ROMANS) \
+                        and ROMANS[ROMANS.index(roman) + 1] not in seen:
+                    # Printed twice in a row: 2025 Ordinary 5(b) heads both
+                    # its second and third answers "(ii)". The second is the
+                    # part due next, which the paper prints as (iii).
+                    roman = ROMANS[ROMANS.index(roman) + 1]
                 text = text[rh.end():]
 
             # The tariff may end a line of prose ("...over budget, etc.

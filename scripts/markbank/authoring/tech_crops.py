@@ -112,7 +112,100 @@ BY_EYE = {
     'technology-2026-OL-paper-secA-q9-art': ('014', 4, (357.7, 595.3, 546.4, 732.8)),
     'technology-2026-OL-paper-secA-q11-art': ('014', 5, (62, 298, 174, 446)),
     'technology-2026-OL-paper-secB-q2b-art': ('039', 1, (496, 262, 552, 386)),
+    # 2020 Higher (the paper boxes each short question; pictures sit inside).
+    'technology-2020-HL-paper-secA-q13-art': ('014', 5, (112, 490, 292, 740)),
+    # The lamp photograph for 2(b); its roller-and-groove inset, which (ii) asks
+    # about, sits over the prose column and is cut at its left edge for (ii).
+    'technology-2020-HL-paper-secB-q2b-art': ('039', 1, (402, 282, 548, 478)),
+    'technology-2020-HL-paper-secB-q2b-ii-art': ('039', 1, (348, 326, 402, 404)),
+    'technology-2020-HL-paper-secB-q3b-art': ('039', 2, (395, 245, 562, 372)),
+    'technology-2020-HL-paper-secB-q3c-art': ('039', 2, (495, 436, 548, 565)),
+    'technology-2020-HL-paper-secC-q1d-art': ('039', 3, (395, 655, 562, 762)),
+    # 2(b)'s op-amp circuit for (i) and (ii); the surface-mount IC photograph
+    # is (iii)'s alone.
+    'technology-2020-HL-paper-secC-q2b-art': ('039', 4, (372, 226, 562, 375)),
+    'technology-2020-HL-paper-secC-q2b-iii-art': ('039', 4, (92, 371, 160, 422)),
+    'technology-2020-HL-paper-secC-q2d-art': ('039', 4, (325, 664, 562, 782)),
 }
+
+# In-window parts measured by the residue authors (2026-10-28), one agent per
+# year, each crop rendered and looked at before its rect was written.
+BY_EYE.update({
+    # The whole 555 circuit 2(b)(i) asks the student to redraw; the cropper's
+    # cut held the chip alone.
+    'technology-2024-HL-paper-secC-q2b-art': ('039', 4, (372, 251, 561, 363)),
+    'technology-2021-HL-paper-secA-q11-art': ('014', 4, (310, 486, 563, 645)),
+    'technology-2021-HL-paper-secA-q12-art': ('014', 5, (70, 121.5, 504, 287)),
+    'technology-2021-HL-paper-secA-q6-art': ('014', 2, (409, 614, 531, 753)),
+    'technology-2021-HL-paper-secA-q8-art': ('014', 3, (384, 355, 554, 528)),
+    'technology-2021-HL-paper-secC-q1b-art': ('039', 3, (420, 183, 556, 461)),
+    'technology-2021-HL-paper-secC-q1d-art': ('039', 3, (447, 650, 553, 781)),
+    'technology-2021-HL-paper-secC-q3c-art': ('039', 5, (387.8, 406, 558, 586)),
+    'technology-2021-OL-paper-secA-q11-i-art': ('014', 4, (412, 297.5, 524, 409)),
+    'technology-2021-OL-paper-secA-q11-ii-art': ('014', 4, (376, 440, 522, 528)),
+    'technology-2021-OL-paper-secA-q12-art': ('014', 4, (170, 580, 422, 770.5)),
+    'technology-2021-OL-paper-secA-q5-art': ('014', 2, (62, 339.8, 180, 453)),
+    'technology-2021-OL-paper-secA-q7-art': ('014', 3, (145, 141.8, 256, 284.5)),
+    'technology-2021-OL-paper-secC-q1b-art': ('039', 3, (382, 237, 462.2, 351)),
+    'technology-2021-OL-paper-secC-q1c-art': ('039', 3, (377.8, 436, 560, 569.5)),
+    'technology-2021-OL-paper-secC-q4d-art': ('039', 6, (476, 704, 573, 788)),
+    'technology-2021-OL-paper-secC-q5a-art': ('039', 7, (133, 202, 508, 293)),
+    'technology-2022-HL-paper-secA-q10-art': ('014', 5, (60, 78, 538, 351)),
+    'technology-2022-HL-paper-secA-q5-art': ('014', 3, (430, 316, 543, 514)),
+    'technology-2022-HL-paper-secA-q6-art': ('014', 3, (54, 562, 140, 724)),
+    'technology-2022-HL-paper-secB-q2c-art': ('039', 1, (474.5, 256, 572, 430)),
+    'technology-2022-HL-paper-secB-q3a-art': ('039', 2, (398, 212, 536, 392.5)),
+    # One point wider than 3(a)'s cut of the same photograph: bind-figures
+    # refuses a second name for identical bytes, and 3(b) needs its own.
+    'technology-2022-HL-paper-secB-q3b-art': ('039', 2, (397, 212, 536, 392.5)),
+    'technology-2022-HL-paper-secC-q5c-art': ('039', 8, (62, 310, 247, 442)),
+    'technology-2022-OL-paper-secA-q8-art': ('014', 4, (80, 436, 536, 538)),
+    'technology-2022-OL-paper-secB-q3b-art': ('039', 2, (394, 247, 562, 381)),
+    'technology-2022-OL-paper-secB-q3d-art': ('039', 2, (358, 634.5, 561, 751)),
+    'technology-2022-OL-paper-secC-q2a-art': ('039', 4, (312, 114, 390, 191)),
+    'technology-2023-HL-paper-secA-q13-art': ('014', 7, (388, 429, 540, 585)),
+    'technology-2023-HL-paper-secA-q8-art': ('014', 5, (152, 136, 502, 274)),
+    'technology-2023-HL-paper-secB-q2c-art': ('039', 1, (384, 506, 546, 614)),
+    'technology-2023-HL-paper-secC-q2b-art': ('039', 4, (300, 272, 570, 446)),
+    'technology-2023-OL-paper-secA-q7-art': ('014', 4, (84, 119.6, 272, 292)),
+    'technology-2023-OL-paper-secB-q2a-art': ('039', 1, (399.2, 131, 541, 246)),
+    'technology-2023-OL-paper-secC-q1c-art': ('039', 3, (60, 559, 141, 639)),
+    'technology-2023-OL-paper-secC-q4a-art': ('039', 6, (420, 111.4, 579, 229)),
+    'technology-2024-HL-paper-secA-q10-art': ('014', 5, (411, 403, 533, 499)),
+    'technology-2024-HL-paper-secA-q11-art': ('014', 6, (362, 90, 546, 229)),
+    'technology-2024-HL-paper-secA-q12-art': ('014', 6, (366, 404, 536, 519)),
+    'technology-2024-HL-paper-secA-q15-art': ('014', 8, (209, 132, 355, 258)),
+    'technology-2024-HL-paper-secA-q3-art': ('014', 2, (385, 571, 553, 666.5)),
+    'technology-2024-HL-paper-secA-q7-art': ('014', 4, (351.8, 96, 566, 247)),
+    'technology-2024-HL-paper-secC-q2a-art': ('039', 4, (431, 92, 537, 207)),
+    'technology-2024-HL-paper-secC-q2d-art': ('039', 4, (368, 650, 560, 739)),
+    'technology-2024-HL-paper-secC-q4d-art': ('039', 7, (155, 358, 376, 484)),
+    'technology-2024-HL-paper-secC-q4d-ii-art': ('039', 7, (155, 542, 381, 670.5)),
+    'technology-2024-HL-paper-secC-q5c-art': ('039', 8, (438, 432, 562, 557)),
+    'technology-2024-OL-paper-secA-q1-art': ('014', 2, (447, 140, 548, 237)),
+    'technology-2024-OL-paper-secA-q6-art': ('014', 3, (372.3, 508, 541, 603)),
+    'technology-2024-OL-paper-secA-q7-art': ('014', 4, (142, 124, 272, 265)),
+    'technology-2024-OL-paper-secA-q8-art': ('014', 4, (398, 298, 528, 408)),
+    'technology-2024-OL-paper-secB-q3c-art': ('039', 2, (372, 403, 560, 576)),
+    'technology-2024-OL-paper-secC-q1b-art': ('039', 3, (449, 296, 551, 388.8)),
+    'technology-2024-OL-paper-secC-q2d-art': ('039', 4, (399.5, 628, 546, 696)),
+    'technology-2025-HL-paper-secA-q12-art': ('014', 6, (362, 421, 552, 562)),
+    'technology-2025-HL-paper-secA-q15-art': ('014', 8, (100, 141, 255, 306)),
+    'technology-2025-HL-paper-secA-q7-art': ('014', 4, (340, 52, 518, 213)),
+    'technology-2025-HL-paper-secB-q3b-art': ('039', 2, (407, 231, 556, 358)),
+    'technology-2025-HL-paper-secC-q2b-art': ('039', 4, (355, 245, 572, 397)),
+    'technology-2025-HL-paper-secC-q2d-art': ('039', 4, (446, 637, 570, 775)),
+    'technology-2025-OL-paper-secA-q1-art': ('014', 2, (448, 145, 545, 307)),
+    'technology-2025-OL-paper-secA-q3-art': ('014', 2, (427, 571, 549, 668)),
+    'technology-2025-OL-paper-secA-q4-art': ('014', 3, (72, 108, 275, 279)),
+    'technology-2025-OL-paper-secC-q2c-art': ('039', 4, (387, 423, 557, 562)),
+    'technology-2025-OL-paper-secC-q5b-art': ('039', 7, (70, 247, 222, 398)),
+})
+
+# In-window parts measured by the residue authors (2026-10-28), one agent per
+# year, each crop rendered and looked at before its rect was written.
+BY_EYE.update({
+})
 
 # SCHEME crops: key -> (page index, rect, what was seen). Published with
 # solution: true. A caption the scheme prints UNDER its drawing ("Snail or
@@ -186,6 +279,31 @@ SOLUTIONS = {
         "State Examinations Commission printed it: a table comparing Composite "
         "materials with Treated softwood timber row by row under Fabrication "
         "techniques, Maintenance and Sustainability."),
+    # 2020 Higher.
+    'technology-2020-HL-scheme-secC-q1b-i': (12, (80, 258, 358, 622),
+        "The marking scheme's own answer to 2020 HL Section C Q1(b)(i), as the "
+        "State Examinations Commission printed it: a flowchart from Power On "
+        "through Wait 3 and Green LED to three decisions Pollutant A?, B? and "
+        "C? whose Y branches reach Amber LED x3, then three decisions Threshold "
+        "A?, B? and C? whose Y branches reach Red LED x3 and Buzzer, looping "
+        "back. The scheme prints beneath it: Any valid alternative solution "
+        "accepted."),
+    'technology-2020-HL-scheme-secC-q2b-i': (14, (270, 136, 505, 242),
+        "The marking scheme's own answer to 2020 HL Section C Q2(b)(i), as the "
+        "State Examinations Commission printed it: the op-amp circuit completed "
+        "between +9 V and 0 V rails, a variable resistor and an LDR as the "
+        "input potential divider, 66 kΩ and 33 kΩ resistors feeding point A, "
+        "and an LED with its resistor on the output."),
+    'technology-2020-HL-scheme-secC-q2d-i': (14, (80, 672, 285, 762),
+        "The marking scheme's own answer to 2020 HL Section C Q2(d)(i), as the "
+        "State Examinations Commission printed it: a logic circuit in which "
+        "Keypad (A) and Keypad (B) feed an OR gate, its output and Switch (C) "
+        "feed a second OR gate E, and E with Switch (S) feed an AND gate whose "
+        "output is F."),
+    'technology-2020-HL-scheme-secC-q2d-ii': (14, (355, 646, 515, 772),
+        "The marking scheme's own answer to 2020 HL Section C Q2(d)(ii), as the "
+        "State Examinations Commission printed it: a truth table with columns "
+        "A, B, C, E, S and F over eight rows from 0 0 0 0 0 0 to 1 1 1 1 1 1."),
     # 2026 Ordinary.
     'technology-2026-OL-scheme-secA-q4': (4, (295, 100, 440, 235),
         "The marking scheme's own answer to 2026 OL Section A Q4, as the State "
@@ -244,6 +362,116 @@ SOLUTIONS = {
         "scheme prints beneath it: Any valid alternative solution accepted."),
 }
 
+SOLUTIONS.update({
+    'technology-2021-HL-scheme-secA-q12': (7, (211, 126, 464, 257),
+        "The marking scheme's own answer to 2021 HL Section A Q12, as the State Examinations Commission printed it: the gearbox drawing relettered for the calculation. The DC motor drives the small red gear lettered A; the large gear B and the small gear C share the second shaft, the large gear D and the small gear E share the third, and the large red gear F sits on the shaft labelled Output shaft."),
+    'technology-2021-HL-scheme-secC-q1b-ii': (14, (64, 476, 415, 754),
+        "The marking scheme's own answer to 2021 HL Section C Q1(b)(ii), as the State Examinations Commission printed it: a flowchart. Start leads to Power on, then to the decision Hopper empty?. Its Yes branch leads to Buzzer on, which loops back into itself. Its No branch leads to the decision Is tray less than half full?, whose No branch loops back above the same decision and whose Yes branch leads to Fill and then Wait 6, after which a line returns to the main line just below Power on. The scheme prints beneath it: Any valid alternative solution accepted."),
+    'technology-2021-HL-scheme-secC-q1d-i': (15, (129, 497, 516, 670),
+        "The marking scheme's own answer to 2021 HL Section C Q1(d)(i), as the State Examinations Commission printed it: a pneumatic circuit. A cylinder at the top has both ends piped down to a 5/2 valve that has a manual actuator on its left, a spring on its right and the air supply and exhausts beneath it; a one-way flow control valve (a variable restrictor with a check valve beside it) sits in the line to the cylinder's left-hand end. The scheme prints beside it: Attach cylinder ram to bottle cap supply. 5/2 valve allow the cylinder to move back and forth once."),
+    'technology-2021-HL-scheme-secC-q2d-i': (17, (114, 484, 445, 573),
+        "The marking scheme's own answer to 2021 HL Section C Q2(d)(i), as the State Examinations Commission printed it: a logic circuit. Inputs labelled Propeller and Heat feed a two-input AND gate; its output and an input labelled Batteries feed a second two-input AND gate, whose output passes through a NOT gate to an output box labelled Deploy Parachute."),
+    'technology-2021-OL-scheme-secA-q11-i': (6, (412, 297.5, 524, 409),
+        "The marking scheme's own answer to 2021 OL Section A Q11(i), as the State Examinations Commission printed it: the spade photograph labelled with arrows: F points to the D-shaped grip at the top of the handle, E points to the shaft just below the yellow handle, and L points to the blade."),
+    'technology-2021-OL-scheme-secA-q7': (5, (380, 70, 482, 249),
+        "The marking scheme's own answer to 2021 OL Section A Q7, as the State Examinations Commission printed it: a line sketch in two views. Above, the elevation of the birdhouse: a pitched roof with overhanging eaves over a rectangular front with a round entrance hole, a small circle for the perch beneath it and a strip across the base. Below, the plan: a rectangle divided down the middle by the roof ridge line. The scheme prints beneath it: (Very good sketch - 8 marks, Fair sketch - 4 marks)."),
+    'technology-2021-OL-scheme-secC-q1b-i': (10, (345.3, 203.5, 577.5, 550.5),
+        "The marking scheme's own answer to 2021 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart. Start leads to the decision On?, whose N branch loops back above it; Y leads to Capsule Inserted, then to the decision Large coffee?. Its Y branch leads to Coffee pours and then Stop; its N branch leads to the decision Small coffee?, whose N branch loops back above Large coffee? and whose Y branch leads to Coffee pours and then Stop. The scheme prints beneath it: Any valid alternative solution accepted."),
+    'technology-2021-OL-scheme-secC-q1b-ii': (10, (70, 450, 307, 775),
+        "The marking scheme's own answer to 2021 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the flowchart modified for an empty water container. Start leads to the decision On?, whose N branch loops back above it; Y leads to a new decision Water?, whose N branch leads to Refill and loops back above Water?, and whose Y branch leads to Capsule Inserted, then the decision Large coffee?. Its Y branch leads to Coffee pours and then Stop; its N branch leads to Small coffee?, whose N branch loops back above Large coffee? and whose Y branch leads to Coffee pours and then Stop."),
+    'technology-2021-OL-scheme-secC-q5a-ii': (15, (133, 179.5, 501.5, 270),
+        "The marking scheme's own answer to 2021 OL Section C Q5(a)(ii), as the State Examinations Commission printed it: the completed table. Seat: Fabric, Leather. Tyre: Composite, Steel reinforced rubber. Headlight lens: Ceramic, Glass. The three entries the candidate supplies, Leather, Composite and Glass, are printed in bold."),
+    'technology-2022-HL-scheme-secA-q7': (5, (112, 80, 484, 244),
+        "The marking scheme's own answer to 2022 HL Section A Q7, as the State Examinations Commission printed it: a Gantt chart (the scheme heads it 'Suggested chart') with Task/Month down the left and months 1 to 6 across the top. Blue bars show Foundations in month 1; Pillars across months 2 and 3; Pre-cast Beam from month 1 into month 3; Install Beam in month 4; Install Railings in month 5; Safety Inspections in month 6."),
+    'technology-2022-HL-scheme-secC-q1b-i': (13, (116, 432, 563, 775.5),
+        "The marking scheme's own answer to 2022 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart. Start leads to an input 'Power on', then a decision 'Toner empty'; Yes leads to 'Replace toner', which loops back above 'Toner empty'. No leads to a decision 'Fuser temp. correct'; No leads to 'Wait', which loops back above that decision. Yes leads to a decision 'Is paper in machine?'; No leads to 'Red Flashing Led', which loops back above it. Yes leads to 'Motor on', then a decision 'Sheet Jam?'; Yes leads to 'Buzzer on', which loops back above 'Sheet Jam?'; No leads to 'Copy complete'. The scheme prints beneath it: Any valid alternative solution accepted."),
+    'technology-2022-HL-scheme-secC-q2b-ii': (15, (373.5, 402.5, 541, 484),
+        "The marking scheme's own answer to 2022 HL Section C Q2(b)(ii), as the State Examinations Commission printed it: a truth table with columns Input 1, Input 2 and Output. Rows: 0 and 0 give 0; 0 and 1 give 1; 1 and 0 give 1; 1 and 1 give 1."),
+    'technology-2022-HL-scheme-secC-q2c-ii': (16, (205, 62, 353, 207),
+        "The marking scheme's own answer to 2022 HL Section C Q2(c)(ii), as the State Examinations Commission printed it: a circuit diagram of a 555 timer IC wired in astable mode between a top and a bottom supply rail. Resistor R1 runs from the top rail to a node joined to pin 7; resistor R2 runs from that node down to a node joined to pins 2 and 6; capacitor C runs from there to the bottom rail. Pins 8 and 4 are joined to the top rail, pin 1 goes to the bottom rail, and pin 3 is the output on the right."),
+    'technology-2022-HL-scheme-secC-q4b-i': (19, (108, 411.5, 424, 668),
+        "The marking scheme's own answer to 2022 HL Section C Q4(b)(i), as the State Examinations Commission printed it: a graph with Cost (€) up the vertical axis, marked 2000 at its foot and rising in steps of 2000 to 12000, and Quantity along the horizontal axis, marked 0, 10000 and 20000. A green straight line labelled '3D Printing' rises steeply from the foot of the axes; a blue line labelled 'Injection moulding' starts at the 8000 mark and rises gently. The lines cross at about 10000 units, where a red arrow labelled 'BEQ' points to the crossing."),
+    'technology-2022-OL-scheme-secA-q7': (5, (290, 140, 436, 280),
+        "The marking scheme's own answer to 2022 OL Section A Q7, as the State Examinations Commission printed it: a 2D line sketch of the Stockholm toddler chair viewed in the direction of arrow A: a square outline with a doubled vertical line down each side for the side panels, a doubled horizontal band across the middle for the seat, and short dashed marks near the top and bottom of each side. The scheme prints beside it: (Very good sketch- 8 marks, fair sketch 4 marks)."),
+    'technology-2022-OL-scheme-secC-q1b-i': (9, (48, 379, 182, 693),
+        "The marking scheme's own answer to 2022 OL Section C Q1(b)(i), as the State Examinations Commission printed it: the completed flowchart. Start leads to a decision 'On'; N loops back round to Start. Y leads in turn to 'Motor On', 'Sprayer On', 'Wait 15s', 'Motor Off', 'Sprayer Off' and finally 'Stop'."),
+    'technology-2022-OL-scheme-secC-q1b-ii': (9, (229, 407.5, 416.6, 766.9),
+        "The marking scheme's own answer to 2022 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the modified flowchart. Start leads to a decision 'On'; N loops back round to Start. Y leads to a new decision 'Stain Low'; its Y branch leads left to an output 'LED On', which loops back up into the 'On' decision. Its N branch leads down through 'Motor On', 'Sprayer On', 'Wait 15s', 'Motor Off' and 'Sprayer Off' to 'Stop'."),
+    'technology-2023-HL-scheme-secA-q8': (5, (106, 488, 497, 625.5),
+        "The marking scheme's own answer to 2023 HL Section A Q8, as the State Examinations Commission printed it: the completed cause and effect diagram. The spine points to 'Drone will not lift.' and the bones are 'Machine', 'Environment', 'User' and 'Materials'. 'Propellers' (given) sits under Machine, and the scheme's suggested factors fill the other three: 'Wind' under Environment, 'Expertise' under User and 'Weight' under Materials. The scheme prints above it: Three appropriate factors selected. Suggested solution:"),
+    'technology-2023-HL-scheme-secC-q1b-i': (13, (176, 382, 536, 674),
+        "The marking scheme's own answer to 2023 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart. Start; an input box 'Power on'; a process box 'Green LED on'; a decision 'Temp. level check' whose No branch goes to 'Heater On' and loops back to the temperature check; its Yes branch goes to a decision 'Water quality check' whose No branch goes to 'Drain water' then 'Refill tank' and loops back to above 'Green LED on'; its Yes branch goes to 'Display Water temperature' then 'Display water pH', which loops back up to above 'Green LED on'. The scheme prints beside it: Any valid alternative solution accepted."),
+    'technology-2023-HL-scheme-secC-q1b-ii': (13, (220, 718, 364, 770),
+        "The marking scheme's own answer to 2023 HL Section C Q1(b)(ii), as the State Examinations Commission printed it: a flowchart fragment: a decision diamond 'Check light level' whose No branch leads right to a box 'Light on' and whose Yes branch continues downward. The scheme prints above it: Add light sensor check with light switching option."),
+    'technology-2023-HL-scheme-secC-q2b-iii': (16, (124, 80, 466.5, 252.5),
+        "The marking scheme's own answer to 2023 HL Section C Q2(b)(iii), as the State Examinations Commission printed it: the 2(b) circuit redrawn with the change: the same 9 V and 0 V rails, the A and B divider, the two 10kΩ resistors, the IC, the resistor and the transistor with its buzzer, now with a relay coil placed in the transistor's collector line from the 9 V rail. The relay's switch contacts sit in a separate circuit on the right that holds a motor (M) and an AC supply (~)."),
+    'technology-2023-HL-scheme-secC-q2d-i': (16, (108, 562, 582, 655),
+        "The marking scheme's own answer to 2023 HL Section C Q2(d)(i), as the State Examinations Commission printed it: a logic gate circuit. Inputs 'Pod in place' and 'Cup in place' enter an AND gate; its output and a third input, 'Temp correct', enter a second AND gate. The second gate's output branches: one branch is labelled 'Coffee machine operates.', the other passes through a NOT gate to a light-emitting diode."),
+    'technology-2023-OL-scheme-secA-q7': (6, (308, 84, 539, 245),
+        "The marking scheme's own answer to 2023 OL Section A Q7, as the State Examinations Commission printed it: a 2D line sketch, inside a ruled box, of the cookbook stand seen from the side: a tall flat back board leaning back at an angle with its foot on a short base piece, and a support strut running from a small block on the back of the board down to a notched rack (four notches) that slopes along the base."),
+    'technology-2023-OL-scheme-secC-q1c-ii': (12, (304, 203, 444, 292),
+        "The marking scheme's own answer to 2023 OL Section C Q1(c)(ii), as the State Examinations Commission printed it: a sketch of an 8-pin dual in-line chip seen from above, four pins on each side, with a notch at its top end and a small dot beside the top-left pin; a red arrow from the label 'Pin 1' points to that top-left pin."),
+    'technology-2023-OL-scheme-secC-q2d-ii': (13, (426, 644, 504, 732),
+        "The marking scheme's own answer to 2023 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: a transistor symbol: a circle containing a vertical bar, with the base lead entering from the left labelled B, the collector lead leaving at the top labelled C, and the emitter lead, carrying an outward-pointing arrow, leaving at the bottom labelled E."),
+    'technology-2024-HL-scheme-secC-q1b-i': (13, (220, 321, 488, 640),
+        "The marking scheme's own answer to 2024 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start through Power on to the decision Check for movement., whose No branch loops back to repeat the check and whose Yes branch runs Red LED on, Sound on and Wait 60 seconds. to a second decision Check for movement.; its No branch runs Sound Off then Red LED off, and its Yes branch loops back up to Red LED on."),
+    'technology-2024-HL-scheme-secC-q2b-i': (15, (193, 285.5, 450, 395),
+        "The marking scheme's own answer to 2024 HL Section C Q2(b)(i), as the State Examinations Commission printed it: the 555 astable circuit redrawn between its two supply rails, R1 and R2 in series to pins 7, 6 and 2 with capacitor C to the lower rail, pins 4 and 8 to the upper rail and pin 1 to the lower, and the output added at pin 3: a polarised capacitor marked + in series with a loudspeaker that returns to the lower rail."),
+    'technology-2024-OL-scheme-secA-q7': (5, (372, 84, 510, 208),
+        "The marking scheme's own answer to 2024 OL Section A Q7, as the State Examinations Commission printed it: a 2D line sketch of the machine tool stand seen in the direction of arrow A: a flat top overhanging two splayed legs, a rail under the top, a lower cross rail at shelf height and a small foot at the bottom of each leg. The scheme prices it beneath its box: (Very good sketch- 8 marks, fair sketch 4 marks)."),
+    'technology-2024-OL-scheme-secC-q1b-i': (9, (443, 253, 558, 518),
+        "The marking scheme's own answer to 2024 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision Button, whose N branch loops back to Start and whose Y branch runs Motor On, then a second Button decision that loops on itself on N, a third Button decision that loops on itself on N, and Motor Off, which returns to Start. The scheme prints beneath the page's drawings: Any valid alternative solution accepted."),
+    'technology-2024-OL-scheme-secC-q1b-ii': (9, (303, 372, 420, 687),
+        "The marking scheme's own answer to 2024 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the flowchart modified with a decision Solution? after the first Button: Start, the decision Button (N back to Start), the decision Solution? (N back to Start), then Motor On, a Button decision looping on itself on N, a second Button decision looping on itself on N, and Motor Off, which returns to Start. The scheme prints beneath it: Any valid alternative solution accepted."),
+    'technology-2025-HL-scheme-secC-q1b-i': (12, (308, 312, 560, 652),
+        "The marking scheme's own answer to 2025 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start through Touch screen ON and Place item on conveyor to the decision Barcode read, whose No branch goes to a Reject box and whose Yes branch reaches the decision Is it a plastic bottle?; its Yes branch goes to Send to servo 1 and its No branch to the decision Is it an aluminium can?, whose No branch loops back above that decision and whose Yes branch runs Send to servo 2 and Stop/Print voucher, which loops back to above Touch screen ON. A red arrow labelled Modification points at the Reject box. The scheme prints beside it: Suggested solution, Alternatives accepted:"),
+    'technology-2025-HL-scheme-secC-q2b-ii': (14, (60, 441, 513, 593),
+        "The marking scheme's own answer to 2025 HL Section C Q2(b)(ii), as the State Examinations Commission printed it: the circuit completed with a variable resistor above an LDR (a resistor in a circle with light arrows pointing in) forming a potential divider whose junction feeds the - input A of the IC, R1 and R2 setting the + input B, and the IC's output driving a resistor in series with an LED (arrows pointing out) down to the 0 V rail. The scheme prints beside it: Input: Potential divider LDR / Variable resistor, and LED output."),
+    'technology-2025-HL-scheme-secC-q2c-i': (15, (92, 135, 490, 240),
+        "The marking scheme's own answer to 2025 HL Section C Q2(c)(i), as the State Examinations Commission printed it: a logic gate circuit in which Filament in nozzle 1 (B) and Filament in nozzle 2 (C) enter an OR gate; the OR gate's output and Switch on (A) enter an AND gate; that AND gate's output and Temperature sensor for 400°C (D) enter a second AND gate, whose output is E."),
+    'technology-2025-HL-scheme-secC-q2c-ii': (15, (235, 289, 404, 540),
+        "The marking scheme's own answer to 2025 HL Section C Q2(c)(ii), as the State Examinations Commission printed it: a truth table headed A, B, C, D, E listing all sixteen combinations of A to D from 0 0 0 0 to 1 1 1 1, alternate rows shaded green; E is 1 only in the rows 1 0 1 1, 1 1 0 1 and 1 1 1 1, and 0 in every other row."),
+    'technology-2025-OL-scheme-secA-q4': (4, (327, 102, 561, 310),
+        "The marking scheme's own answer to 2025 OL Section A Q4, as the State Examinations Commission printed it: a box holding a line sketch of the toy's elevation: the seat drawn as a long rounded bar, the handlebar as a thin upright post topped with a black dot at the left, a short leg down to the left wheel and a curved support down to the right wheel, each wheel drawn as two concentric circles. The scheme prints beneath it: (Very good sketch- 8 marks, good sketch- 6 marks, fair sketch 4 marks)"),
+    'technology-2025-OL-scheme-secC-q2c-ii': (11, (462, 465, 546, 542),
+        "The marking scheme's own answer to 2025 OL Section C Q2(c)(ii), as the State Examinations Commission printed it: a truth table headed A, B, C, D with the rows 0 0 0 1, 0 1 0 1, 1 0 0 1 and 1 1 1 0."),
+})
+
+SOLUTIONS.update({
+    'technology-2021-OL-scheme-secB-q2b-ii': (8, (302, 282, 567, 365),
+        "The marking scheme's own answer to 2021 OL Section B Q2(b)(ii), as the State Examinations Commission printed it: a circuit diagram with no word labels: a single cell on the left; the top wire runs through a switch and then a resistor; three LEDs (each a diode in a circle with two arrows pointing out) are connected in parallel between that wire and the bottom wire back to the cell."),
+    'technology-2022-HL-scheme-secA-q10': (6, (52, 112, 540, 430),
+        "The marking scheme's own answer to 2022 HL Section A Q10, as the State Examinations Commission printed it: a table titled 'Risk Assessment – Technology Room – Soldering iron' with six columns: Hazards; Is the hazard present? Y/N; What is the risk?; Risk rating (H = High, M = Medium, L = Low); Control measures; Is this control in place? Y/N. Row 1: Hot soldering iron; Y; Burns; H; 'Use soldering iron stand. Warning signs present.'; Y, Y. Row 2: Damaged power lead; Y; 'Electrocution. Injury/burn. Death.'; H; 'Correct Amp rating fuse fitted and surge protection in place. Use soldering stand.'; last cell blank. Row 3: Fumes; Y; 'Inhalation of toxic fumes.'; H; 'Ventilated area. Fume extraction.'; last cell blank. The entries the scheme fills in for rows 2 and 3 are printed in bold."),
+    'technology-2022-HL-scheme-secB-q3b-ii': (11, (164, 513, 428, 659),
+        "The marking scheme's own answer to 2022 HL Section B Q3(b)(ii), as the State Examinations Commission printed it: a circuit diagram with no word labels. A battery of cells on the left feeds the top rail through a switch. From the top rail a variable resistor (a resistor crossed by a diagonal arrow) runs down to a junction, and a light-dependent resistor (a resistor in a circle with two arrows pointing in) runs from that junction to the bottom rail. The junction feeds a fixed resistor into the base of an NPN transistor whose emitter goes to the bottom rail. Three LEDs (each a diode in a circle with two arrows pointing out) are connected in parallel between the top rail and the transistor's collector."),
+    'technology-2022-HL-scheme-secC-q2d-i': (16, (176, 315, 425, 488),
+        "The marking scheme's own answer to 2022 HL Section C Q2(d)(i), as the State Examinations Commission printed it: a circuit diagram with no word labels. A battery of cells on the left feeds the top rail through a switch. From the top rail a thermistor (a resistor crossed by a line with a short flat foot) runs down to a junction, and a variable resistor (a resistor crossed by a diagonal arrow) runs from that junction to the bottom rail. The junction feeds a fixed resistor into the base of the first of two NPN transistors wired as a Darlington pair: its emitter drives the second transistor's base, the two collectors are joined, and the second emitter goes to the bottom rail. The joined collectors connect up to a relay coil (a rectangle) hanging from the top rail, with a diode drawn in parallel across the coil. To the right, a separate loop runs through the relay's switch contacts, a motor (a circle marked M) and a second battery of cells."),
+    'technology-2022-OL-scheme-secA-q8': (5, (66, 442, 528, 551),
+        "The marking scheme's own answer to 2022 OL Section A Q8, as the State Examinations Commission printed it: a work breakdown structure of three rows of boxes joined left to right by arrows. Row 1: Back, Cut out, Sand, Paint. Row 2: Sides, Cut out, Drill, Sand/Paint. Row 3: Roller, Cut out, Sand, Paint. Arrows from the last box of each row meet at one box, Assemble. The steps the scheme adds (rows 2 and 3 after the part name, and Assemble) are in larger bold type; the Back row and the part names are in the question's own smaller type."),
+    'technology-2023-OL-scheme-secC-q2b-ii': (13, (366.2, 237, 530, 339),
+        "The marking scheme's own answer to 2023 OL Section C Q2(b)(ii), as the State Examinations Commission printed it: a circuit diagram. Terminals +V (top) and -V (bottom) on the left run to the two moving arms of a double-pole double-throw switch, the arms linked by a dashed line. The two middle contacts are joined and wired to one side of a motor (a circle marked M). The top and bottom contacts each run through a push switch (two contact circles with a T-shaped plunger above and a bar beneath) to a wire down the right side, which joins the motor's other side."),
+    'technology-2024-HL-scheme-secA-q8': (5, (228, 440, 318, 647),
+        "The marking scheme's own answer to 2024 HL Section A Q8, as the State Examinations Commission printed it: a shaded colour picture of the assembled garden lantern standing upright: a thin wire carrying handle looped over a dark green domed cap, a pale yellow glass chamber below it, a green collar, a grey metal band, and a dark green domed base. The scheme prints no words for Q8 beyond the ask and its tariff."),
+    'technology-2024-HL-scheme-secC-q2d-i': (16, (110, 309, 396, 491),
+        "The marking scheme's own answer to 2024 HL Section C Q2(d)(i), as the State Examinations Commission printed it: the label 'Truth table:' beside a table with a green header row A, B, C, O and alternate rows shaded light green; the output column O is in bold. Rows (A B C, then O): 0 0 0 gives 0; 0 0 1 gives 1; 0 1 0 gives 0; 0 1 1 gives 1; 1 0 0 gives 0; 1 0 1 gives 0; 1 1 0 gives 1; 1 1 1 gives 1."),
+    'technology-2024-OL-scheme-secA-q4-ii': (4, (412, 147, 497, 227),
+        "The marking scheme's own answer to 2024 OL Section A Q4(ii), as the State Examinations Commission printed it: the circuit symbol for a buzzer, drawn inside the scheme's reprint of the answer box (the box frame is left out): two parallel horizontal leads enter the curved side of a half-circle whose flat side stands upright on the right."),
+    'technology-2024-OL-scheme-secB-q3b-iii': (8, (369, 287, 532, 382),
+        "The marking scheme's own answer to 2024 OL Section B Q3(b)(iii), as the State Examinations Commission printed it: a circuit diagram with no word labels: two supply terminals (small circles) on the left of a top and a bottom rail, and four branches in parallel between the rails. Two branches are each a resistor above an LED (a diode in a circle with two arrows pointing out); the other two are each a motor (a circle marked M)."),
+    'technology-2024-OL-scheme-secC-q2b-iii': (11, (347, 212, 560, 352),
+        "The marking scheme's own answer to 2024 OL Section C Q2(b)(iii), as the State Examinations Commission printed it: a 555 timer circuit drawn between a top rail, which reaches the +V terminal through a switch at the right, and a 0 V rail. The IC is a box with pins 6, 8, 4 along its top, 7 and 2 on its left and 1 at the bottom; pins 8 and 4 go to the top rail and pin 1 to the 0 V rail. A resistor from the top rail feeds pin 2, which a push switch on the left connects down to 0 V; a second resistor from the top rail feeds pins 6 and 7 and a capacitor C (marked +) that runs down to 0 V. The output, pin 3 (labelled 3 in bold), runs through a resistor to an LED (a diode in a circle with two arrows pointing out) and on to the 0 V rail."),
+    'technology-2025-HL-scheme-secA-q15': (7, (251, 527.5, 531.2, 730),
+        "The marking scheme's own answer to 2025 HL Section A Q15, as the State Examinations Commission printed it: an exploded line drawing of a butt hinge, each part ringed by a soft pink outline and labelled in bold. Hinge plate 1, on the left, is a plate with screw holes and three knuckles; the Hinge pin stands apart in the middle as a long thin rod with a round head, with a small round cap drawn below the left plate; Hinge plate 2, on the right, is a plate with screw holes and two knuckles. Pink leader lines join the labels Hinge plate 1 and Hinge plate 2 to their parts."),
+    'technology-2025-HL-scheme-secA-q7': (4, (82, 603, 516, 718),
+        "The marking scheme's own answer to 2025 HL Section A Q7, as the State Examinations Commission printed it: a three-column table with a green header row Part, Material, Properties and the Part column shaded green. Sail: Nylon/Kevlar; Hard wearing, high tensile strength, etc. Mast: Aluminium alloy/ Carbon Fibre; Tempered for strength, lightweight, strong, etc. Hull: Fibreglass/Aluminium; Strength, resistance to corrosion, etc. The Material and Properties entries are in bold."),
+    'technology-2025-OL-scheme-secA-q9': (5, (300, 506, 472, 606),
+        "The marking scheme's own answer to 2025 OL Section A Q9, as the State Examinations Commission printed it: a circuit diagram drawn inside the scheme's answer box (the box frame is left out): a single cell on the left, a push-to-make switch (two contact circles under a bar and plunger) on the top wire, and a motor (a circle marked M) on the bottom wire, all in one series loop."),
+    'technology-2025-OL-scheme-secC-q2b-ii': (11, (397.5, 240, 555, 310),
+        "The marking scheme's own answer to 2025 OL Section C Q2(b)(ii), as the State Examinations Commission printed it: a circuit diagram with no word labels: a single cell on the left whose two leads run to the two moving arms of a double-pole double-throw switch, the arms linked by a dashed line. The two middle contacts are joined and wired to one side of a motor (a circle marked M); the top and bottom contacts are joined by a wire down the right side, which also meets the motor's other side."),
+    'technology-2025-OL-scheme-secC-q2d-ii': (11, (459, 631, 516, 698),
+        "The marking scheme's own answer to 2025 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: the circuit symbol for a phototransistor: a transistor in a circle, with a base lead entering from the left to an upright bar, the collector line leaving at the top right and the emitter leaving at the bottom right with an arrow pointing outward, and two parallel arrows pointing in at the circle's upper left for the light falling on it."),
+})
+
 # Scheme regions whose words are a drawing's labels, not published as a crop.
 LABEL_ZONES = {
     (2026, 'hl'): [
@@ -283,14 +511,242 @@ ASK_ONLY = {
     'technology-2026-HL-scheme-secC-q5d',
 }
 
+# What the scheme says each printed letter is, for an ask that names labelled
+# parts ("Name component A and component B"): the card needs the picture AND
+# the letters decoded (build-deck's namesLetters gate), and the decoding is the
+# scheme's own words for each letter, lifted from its page by the residue
+# authors. Keyed by (year, level, section, q, letter).
+LABEL_KEYS = {}
+
+for _yl, _zs in {
+    (2021, 'ol'): [
+        (4, (62, 339.8, 180, 453)),  # 2021 OL Section A Q5: worm-gear photograph lettering 'A' (y 345.4) and 'B' (y 433.2) beside the reprinted Q5 ask lines; 'A' is level with '(i) Name component A and component B.' and 'B' with 'manufacturing electro-mechanical control elements' (scheme 2021-ol.pdf)
+        (6, (412, 297.5, 524, 409)),  # 2021 OL Section A Q11(i): spade labels F (y 304), E (y 326), L (y 353.5) beside the (i) ask; 'L' is welded into the shipped card's only row 'fulcrum when the spade is in use. L' (scheme 2021-ol.pdf)
+        (6, (376, 440, 492, 526)),  # 2021 OL Section A Q11(ii): lever-diagram lettering 50 N, 0.3 M, 0.5 M, F beside the calculation box; '50 N' (y 443.3) is level with 'F x 0.5 M = 50 N x 0.8 M'. The tariff '(4+4 marks)' (x 463.6-524.3, y 519.9-531.9) clips the zone's corner but its centre lies outside; keep it (scheme 2021-ol.pdf)
+        (11, (372, 178, 560, 283)),  # 2021 OL Section C Q1(c)(i): shuttle-valve symbol lettering A (y 245.6), B (y 241.0), C (y 218.0) beside the answer prose; 'C' is level with 'and exiting at port C. If both input ports A and B' and 'A'/'B' with 'with the higher pressure takes precedence' (scheme 2021-ol.pdf)
+    ],
+    (2022, 'hl'): [
+        (4, (472, 482, 557, 606)),  # 2022 HL scheme, Section A Q6: the reprinted question picture's letter A (text layer) sits beside the 6(i)/(ii) answers; the .md welds it onto 'A = Follower A'
+        (4, (536, 608, 557, 624)),  # 2022 HL scheme, Section A Q6: the reprinted question picture's letter B (text layer) beside the 6(ii) answer; the .md welds it onto '...the follower (A) to B'
+        (14, (318, 571, 574, 684)),  # 2022 HL scheme, Section C Q1(d)(i): pneumatic circuit answer with the text-layer label 'Flow control valve' printed beside the 1(d) prose; the .md puts 'Flow control valve' between the 1(d)(i) ask and (ii)
+        (15, (373.5, 402.5, 541, 484)),  # 2022 HL scheme, Section C Q2(b)(ii): the truth table answer sits beside the ask; the .md welds its header 'Input 1 Input 2 Output' onto the ask line
+    ],
+    (2022, 'ol'): [
+        (5, (48, 145, 228, 284)),  # 2022 OL scheme, Section A Q7: reprinted Stockholm chair picture with its text-layer arrow letter 'A' beside the sketch answer
+        (9, (48, 379, 182, 693)),  # 2022 OL scheme, Section C Q1(b)(i) flowchart lettering (Start, On, N, Y, Motor On...) printed beside the 1(b)(ii) ask
+        (9, (229, 407.5, 409, 764)),  # 2022 OL scheme, Section C Q1(b)(ii) flowchart lettering printed beside the 1(b)(iii) prose ask and answer ('Infra-red motion sensor, LDR, etc.'); the .md interleaves them line by line
+        (10, (225, 240, 446, 350)),  # 2022 OL scheme, Section C Q1(c)(ii) (seen in passing, not in this input): single-acting cylinder symbol with text-layer labels Piston, A, Spring printed under the answer prose
+        (10, (473, 499, 534, 527)),  # 2022 OL scheme, Section C Q1(d) (seen in passing, not in this input): caption 'Mechanical Gripper' of the reprinted question picture beside the 1(d)(i) answer
+    ],
+    (2023, 'hl'): [
+        (13, (220, 718, 364, 770)),  # HL C1(b)(ii): mini flowchart ('Check light level' / 'No' / 'Light on' / 'Yes') under the answer 'Add light sensor check with light switching option.'; card tech-2023-hl-c1b-ii carries its lettering as two rows, 'Check light No' and 'Light on level'
+        (16, (124, 80, 466.5, 252.5)),  # HL C2(b)(iii): the modified circuit's lettering (9 V, A, B, 10kΩ, IC, 0 V); card tech-2023-hl-c2b-iii carries 'B 10kΩ 0 V' as a 4-mark point
+        (5, (106, 488, 497, 625.5)),  # HL A8: fishbone lettering (Machine, Environment, Propellers, Wind, Drone will not lift., Expertise, Weight, User, Materials) under 'Three appropriate factors selected. Suggested solution:' (schemes/2023-hl.md lines 156-161)
+    ],
+    (2023, 'ol'): [
+        (13, (426, 644, 504, 732)),  # OL C2(d): transistor symbol labels C, B, E; the 'C' sits on the line of 2(d)(i)'s answer, and card tech-2023-ol-c2d-i reads 'Automatic switch, current amlifier, etc. C'
+        (12, (304, 203, 444, 292)),  # OL C1(c)(ii): 'Pin 1' label on the chip sketch, under the ask
+    ],
+    (2024, 'hl'): [
+        (4, (134, 260, 302, 338)),  # HL scheme page 4 (printed 3): the resistor photograph and its Resistor bands: Brown Black Red Gold list, reprinted beside 5(i)'s answer Value: 1000 Ω
+        (4, (336, 264, 436, 372)),  # HL scheme page 4: the Tolerance code table (Brown 1%, Red 2%, Gold 5%, Silver 10%) reprinted beside 5(i); its words weld onto 'Value: 1000 Ω Silver 10% Yellow 4'
+        (4, (438, 252, 542, 480)),  # HL scheme page 4: the Colour code table (Black 0 to White 9) reprinted beside 5(i) and 5(ii); its words weld onto the (ii) ask and the Maximum/Minimum value rows
+        (4, (380, 558, 544, 654)),  # HL scheme page 4: the network node (EST, EFT, Task:, LST, LFT) reprinted beside Q6; it welds 'Task:' onto 'LFT: Latest Finish Time' and 'LST LFT' onto the (ii) ask
+    ],
+    (2024, 'ol'): [
+        (5, (142, 103, 280, 247)),  # OL scheme page 5: the machine tool stand photograph and its arrow label A reprinted beside Q7; the A welds onto the tariff line '(Very good sketch- 8 marks,'
+    ],
+    (2025, 'hl'): [
+        (12, (345, 665, 415, 766)),  # 2025 HL scheme: WHITE (invisible) flowchart text 'User stops machine' and 'End' below the drawn flowchart; nothing renders here, but the text layer carries the words next to the 1(b)(iii) answer
+        (7, (384, 529, 440, 547)),  # 2025 HL scheme Q15: drawing label 'Hinge pin', on the same line as the Q15 ask
+        (7, (462, 556, 534, 574)),  # 2025 HL scheme Q15: drawing label 'Hinge plate 2'
+        (7, (256, 698, 298, 730)),  # 2025 HL scheme Q15: drawing label 'Hinge plate 1' (the text layer reads these three labels BEFORE Q13 on the page)
+    ],
+    (2025, 'ol'): [
+        (14, (53, 204, 203, 355)),  # 2025 OL scheme: the 3D printer picture, lettered A to E, reprinted beside the 5(b)(i) and (ii) answers
+        (11, (276, 425, 442, 486)),  # 2025 OL scheme: the logic-gate picture, lettered A, B, X, C, Y, D, reprinted beside the 2(c)(i) answer X = And Y = Not
+    ],
+}.items():
+    LABEL_ZONES.setdefault(_yl, []).extend(_zs)
+ASK_ONLY.update({
+    # 2025 Higher Q7's table: its cells wrap in the text layer, so the crop is
+    # the answer and the card's row is the ask.
+    'technology-2025-HL-scheme-secA-q7',
+    'technology-2021-HL-scheme-secC-q1b-ii',
+    'technology-2021-HL-scheme-secC-q2d-i',
+    'technology-2021-OL-scheme-secA-q11-i',
+    'technology-2021-OL-scheme-secA-q7',
+    'technology-2021-OL-scheme-secC-q1b-i',
+    'technology-2021-OL-scheme-secC-q1b-ii',
+    'technology-2022-HL-scheme-secA-q7',
+    'technology-2022-HL-scheme-secC-q1b-i',
+    'technology-2022-HL-scheme-secC-q2b-ii',
+    'technology-2022-HL-scheme-secC-q2c-ii',
+    'technology-2022-HL-scheme-secC-q4b-i',
+    'technology-2022-OL-scheme-secA-q7',
+    'technology-2022-OL-scheme-secC-q1b-i',
+    'technology-2022-OL-scheme-secC-q1b-ii',
+    'technology-2023-HL-scheme-secC-q1b-i',
+    'technology-2023-HL-scheme-secC-q2b-iii',
+    'technology-2023-HL-scheme-secC-q2d-i',
+    'technology-2023-OL-scheme-secA-q7',
+    'technology-2023-OL-scheme-secC-q1c-ii',
+    'technology-2023-OL-scheme-secC-q2d-ii',
+    'technology-2024-HL-scheme-secC-q1b-i',
+    'technology-2024-HL-scheme-secC-q2b-i',
+    'technology-2024-OL-scheme-secA-q7',
+    'technology-2024-OL-scheme-secC-q1b-i',
+    'technology-2024-OL-scheme-secC-q1b-ii',
+    'technology-2025-HL-scheme-secC-q1b-i',
+    'technology-2025-HL-scheme-secC-q2b-ii',
+    'technology-2025-HL-scheme-secC-q2c-i',
+    'technology-2025-HL-scheme-secC-q2c-ii',
+    'technology-2025-OL-scheme-secA-q4',
+    'technology-2025-OL-scheme-secC-q2c-ii',
+})
+LABEL_KEYS.update({
+    (2021, 'ol', 'A', 5, None): [{'letter': 'A', 'meaning': 'Worm'}, {'letter': 'B', 'meaning': 'Worm wheel'}],
+    (2021, 'ol', 'C', 1, 'c'): [{'letter': 'A', 'meaning': 'Input port'}, {'letter': 'B', 'meaning': 'Input port'}, {'letter': 'C', 'meaning': 'Output port'}],
+    (2022, 'hl', 'A', 6, None): [{'letter': 'A', 'meaning': 'Follower'}, {'letter': 'B', 'meaning': 'Cam'}],
+    (2023, 'hl', 'C', 2, 'b'): [{'letter': 'A', 'meaning': 'Variable Resistor'}, {'letter': 'B', 'meaning': 'Thermistor'}],
+    (2025, 'ol', 'C', 5, 'b'): [{'letter': 'A', 'meaning': 'Filament spool'}, {'letter': 'B', 'meaning': 'The extruder'}, {'letter': 'C', 'meaning': 'The heater block'}, {'letter': 'D', 'meaning': 'The part'}, {'letter': 'E', 'meaning': 'The bed'}],
+})
+
+for _yl, _zs in {
+    (2022, 'hl'): [
+        (4, (474, 483, 557, 620)),  # 2022 HL scheme, Section A Q6: the whole cam-and-follower picture reprinted beside the 6(i)/(ii) answers (blue follower rod, spring and guide plate, green cam, two red arrows lettered A and B). It covers the A and B letters that the two existing 2022 HL page-4 zones hold. No prose inside: the 6(ii) line '...the follower (A) to' ends at x 473.1 and 'rise and fall ... contact with' starts at y 620.8.
+        (22, (358, 320, 580, 433)),  # 2022 HL scheme, Section C Q5(c)(ii): the injection-moulding sketch with its labels Plastic hopper, mould, Motor drive and Heated chamber with screw, beside the answer prose. The prose runs to x 353.3 at most, and the ask line above ends at y 315.2.
+    ],
+    (2024, 'hl'): [
+        (5, (361, 80, 570, 213)),  # 2024 HL scheme, Section A Q7: the compound gear-train picture with its labels Driven Gear and 75 Teeth and most of 15 Teeth. The (i)/(ii) ask lines end at x 359.1, so the zone starts at 361. Its two side zones below hold the labels that stand further left.
+        (5, (347, 127, 390, 155)),  # 2024 HL scheme, Section A Q7: the label 'Gear A' (it lands as a row of its own in the .md). It sits above the (ii) ask line, which starts at y 156.9.
+        (5, (352, 189, 405, 213)),  # 2024 HL scheme, Section A Q7: the label '15 Teeth', which welds onto 'Calculation:' with '75 Teeth'. It sits below the (ii) ask, whose last line ends at y 187.7.
+        (22, (360, 319, 557, 459)),  # 2024 HL scheme, Section C Q4(d): the lifecycle graph reprinted beside (ii)'s answer, with stage letters A, B, C and the axis label Time. 'Time' welds onto 'Enhanced features may have been added.' The scheme reprints one graph only, the updated lifecycle. The prose word 'at' ends at x 357.9, and the 'marketing campaign.' line starts at y 459.1.
+        (22, (350, 333, 368, 364)),  # 2024 HL scheme, Section C Q4(d): the graph's rotated y-axis label 'Sales', which welds into 'Sales A B C'. It is a separate rectangle because the prose word 'at' (x 348.2-357.9, y 365.4+) sits directly below it.
+    ],
+    (2024, 'ol'): [
+        (11, (397, 640, 530, 699)),  # 2024 OL scheme, Section C Q2(d)(ii): the partial circuit (8 Ω in series with two 10 Ω in parallel) beside the calculation. It welds as 'R = 5 Ω 8 Ω', '= 13 Ω 10 Ω' and '...circuit shown. 10 Ω'. The ask word 'shown.' ends at x 395.9.
+    ],
+    (2025, 'hl'): [
+        (6, (394, 474, 574, 612)),  # 2025 HL scheme, Section A Q12: the resistor network R1 = 6kΩ, R2 = 8kΩ, R3 = 4kΩ, R4 = 12kΩ beside the calculation box. The box border is at x 388.5.
+        (10, (379, 379, 540, 514)),  # 2025 HL scheme, Section B Q3(b): the gearbox graphic with labels D, B, motor, A, output, C beside (ii)'s calculation. 'output C' welds onto '... x 630'. The (i) answer line above ends at y 376.2.
+        (12, (311, 313, 438, 639)),  # 2025 HL scheme, Section C Q1(b)(i): the flowchart ONLY, part 1 of 2. This is the main column (Start to Stop/Print voucher), with its left return loop, its Yes/No labels and the aluminium-can No loop. It replaces the zone [308,312,560,652]. The hidden-text zone [345,665,415,766] stays as it is.
+        (12, (431, 430.5, 497, 506)),  # 2025 HL scheme, Section C Q1(b)(i): the flowchart ONLY, part 2 of 2. These are the side boxes Reject and Send to servo 1, split off so the zone holds neither the Modification label above nor the caption below.
+        (12, (478, 398, 558, 431)),  # 2025 HL scheme, Section C Q1(b): the drawing's own label 'Modification' and its red arrow to the Reject box. It is separate from the flowchart zone, so it can be dropped if unwanted. Without it, a stray 'Modification' line stays in the text.
+        (12, (446, 619, 571, 654)),  # 2025 HL scheme, Section C Q1(b): the flowchart's caption 'Suggested solution, Alternatives accepted:'. It is separate from the flowchart zone. Without it, the caption welds onto the 1(b)(iii) answer ('LDR and LED voucher Suggested solution,' / 'Distance/Motion sensor. Alternatives accepted:').
+    ],
+}.items():
+    LABEL_ZONES.setdefault(_yl, []).extend(_zs)
+ASK_ONLY.update({
+    'technology-2021-OL-scheme-secB-q2b-ii',
+    'technology-2022-HL-scheme-secA-q10',
+    'technology-2022-HL-scheme-secB-q3b-ii',
+    'technology-2022-HL-scheme-secC-q2d-i',
+    'technology-2022-OL-scheme-secA-q8',
+    'technology-2023-OL-scheme-secC-q2b-ii',
+    'technology-2024-HL-scheme-secA-q8',
+    'technology-2024-HL-scheme-secC-q2d-i',
+    'technology-2024-OL-scheme-secA-q4-ii',
+    'technology-2024-OL-scheme-secB-q3b-iii',
+    'technology-2024-OL-scheme-secC-q2b-iii',
+    'technology-2025-HL-scheme-secA-q15',
+    'technology-2025-HL-scheme-secA-q7',
+    'technology-2025-OL-scheme-secA-q9',
+    'technology-2025-OL-scheme-secC-q2b-ii',
+    'technology-2025-OL-scheme-secC-q2d-ii',
+})
+LABEL_KEYS.update({
+})
+
+# 2022 Higher Option 1(d)(i): the scheme answers with a pneumatic circuit (a
+# double-acting cylinder, two flow control valves, a 5/2 valve and two 3/2
+# valves); the "Flow control valve" label stands in the prose column and is
+# left to the label zone beside it.
+SOLUTIONS['technology-2022-HL-scheme-secC-q1d-i'] = (14, (412, 518, 575, 684),
+    "The marking scheme's own answer to 2022 HL Section C Q1(d)(i), as the State "
+    "Examinations Commission printed it: a pneumatic circuit in which a "
+    "double-acting cylinder is fed through two flow control valves from a 5/2 "
+    "valve, itself piloted by two spring-return 3/2 push-button valves.")
+ASK_ONLY.add('technology-2022-HL-scheme-secC-q1d-i')
+
+# 2023 Ordinary: the perceptual map beside Option 4(a), whose axis words and
+# letters A, B and C were welded onto both parts' lines.
+LABEL_ZONES.setdefault((2023, 'ol'), []).append((15, (428, 92, 592, 228)))
+LABEL_KEYS[(2023, 'ol', 'C', 4, 'a')] = [
+    {'letter': 'A', 'meaning': 'Low cost/high quality, likely to sell.'},
+    {'letter': 'B', 'meaning': 'High cost/high quality, likely to sell but cost could impede sales.'},
+    {'letter': 'C', 'meaning': 'Low cost/low quality, poor sales likely as a result'},
+]
+
 _WORDS = {}
+
+
+# Sittings whose scheme text layer is not what the page prints: 2022 Higher's
+# subset fonts report the wrong character for every glyph (tech_glyphs.py
+# rebuilt its .md from glyph ids), and 2020 Higher's Calibri reports a space
+# for r, w, v and g. Their words are read the same way the .md was, by glyph
+# id, or no line of the .md could ever be found again on the page.
+GLYPH_REPAIRED = {(2022, 'hl'), (2020, 'hl')}
+_GLYPH_TRUTH = []
+
+
+def _sitting_of(path):
+    m = re.search(r'(\d{4})-(hl|ol)', os.path.basename(path))
+    return (int(m.group(1)), m.group(2)) if m else None
+
+
+def _repaired_words(path, page):
+    """Words of a glyph-repaired page: (x0, y0, x1, y1, text, block, line)."""
+    import tech_glyphs as TG
+    if not _GLYPH_TRUTH:
+        _GLYPH_TRUTH.append(TG.truth_table())
+    truth, by_family = _GLYPH_TRUTH[0]
+    out = []
+    with pymupdf.open(path) as doc:
+        pg = doc[page]
+        broken = TG.mangled_fonts(doc)
+        glyphs = TG._glyphs(pg)
+        for bi, blk in enumerate(pg.get_text('rawdict')['blocks']):
+            if blk.get('type') != 0:
+                continue
+            for li, line in enumerate(blk.get('lines', [])):
+                cur, box = [], None
+
+                def flush():
+                    if cur and box:
+                        out.append((box[0], box[1], box[2], box[3], ''.join(cur), bi, li))
+                for sp in line.get('spans', []):
+                    for ch in sp['chars']:
+                        c = ch['c']
+                        key = (round(ch['origin'][0], 2), round(ch['origin'][1], 2))
+                        if key in glyphs:
+                            (font, gid), _seen = glyphs[key]
+                            if font in broken or c == ' ' or ord(c) < 0x20:
+                                real = (truth.get((font, gid))
+                                        or by_family[TG.family(font)].get(gid)
+                                        or TG.LOOKED_AT.get((font, gid)))
+                                if real:
+                                    c = real
+                        if c.isspace():
+                            flush()
+                            cur, box = [], None
+                            continue
+                        x0, y0, x1, y1 = ch['bbox']
+                        cur.append(c)
+                        box = (x0, y0, x1, y1) if box is None else (
+                            min(box[0], x0), min(box[1], y0), max(box[2], x1), max(box[3], y1))
+                flush()
+    return out
 
 
 def page_words(path, page):
     key = (path, page)
     if key not in _WORDS:
-        with pymupdf.open(path) as doc:
-            _WORDS[key] = [tuple(w[:7]) for w in doc[page].get_text('words')]
+        if _sitting_of(path) in GLYPH_REPAIRED and '/schemes/' in path:
+            _WORDS[key] = _repaired_words(path, page)
+        else:
+            with pymupdf.open(path) as doc:
+                _WORDS[key] = [tuple(w[:7]) for w in doc[page].get_text('words')]
     return _WORDS[key]
 
 
@@ -459,6 +915,14 @@ def strip_labels(text, labels, keep_numbers=False):
     while hi > lo and _bare(tokens[hi - 1]) in labels \
             and not re.search(r'[.!?;:,]$', tokens[hi - 1]):
         hi -= 1
+    if hi == len(tokens) - 1 and re.fullmatch(r'[A-Za-z]', _bare(tokens[-1])) \
+            and not re.search(r'[.?!]$', tokens[-2] if len(tokens) > 1 else ''):
+        # A lone letter at the end is the sentence's own: "Note: f = 1.44 /
+        # (R1 + 2R2) × C" ends in the capacitor's name, which the 555's
+        # crop also letters. Unless a full stop stands before it -- "...in
+        # the direction of arrow A. A" is the arrow's own letter read after
+        # the sentence closed.
+        hi = len(tokens)
     if keep_numbers and all(re.fullmatch(r'[\d.,]+', t) for t in tokens[hi:]):
         # "Mean: 2+3+...+4 = 48 = 4" ends in the mean, which is also an
         # axis label on the control chart beside it. A bare number closing

@@ -783,19 +783,19 @@
     "refsHash": "a952dfaa733dd380"
   },
   "technology": {
-    "cards": 899,
-    "contentHash": "3a5bd36f457a24f8",
-    "coveragePct": 93.2,
-    "covered": 904,
-    "excluded": 28,
-    "leaves": 1000,
-    "open": 68,
+    "cards": 1000,
+    "contentHash": "f0023be18d2c8df7",
+    "coveragePct": 100.0,
+    "covered": 1005,
+    "excluded": 0,
+    "leaves": 1005,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "ca3702486591454b"
     },
-    "refsHash": "9f09d058c074b4b0"
+    "refsHash": "a6d134318c8c9225"
   },
   "ukrainian": {
     "cards": 20,

@@ -148,6 +148,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-a6", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2021 HL Section A Q6",
+    questionText: "The skin-frame type structure has gained popularity in 3D printing for items such as the Voronoi mushroom lamp shown. This approach uses a combination of frame and shell structures. Outline two reasons for the use of such a combined structure. 1. 2.",
+    tariffModel: {"kind":"fixed","notation":"(3 + 3 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Skin can be made very thin and still have rigidity, allows light to pass through, a variety of interesting shapes can be produced, can be manufactured in a single piece, strong, less material, etc.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secA-q6-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secA-q6-art.png",
+          "srcHash": "2b367f8a715d8d12f1757613516d1baf",
+          "alt": "Colour photograph of a Voronoi mushroom lamp lit from inside: a glowing orange dome-shaped shade, a thin skin set in a web of irregular cell-shaped frame ribs, standing on a white flared stem and round base.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-a7", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2021 HL Section A Q7",
     questionText: "Amazon have used artificial intelligence (AI) to develop their virtual assistant, Alexa. The device is capable of undertaking a range of tasks including voice interaction, music playback, etc. Alexa can be paired with devices such as lights and speakers. Outline the process of pairing electronic devices.",
@@ -155,6 +176,28 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Bluetooth activated on both devices to be paired. One device picks up the signal from the other device, request to pair, new device. Select pair and the devices will connect if in range.", marks: 6, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-a8", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2021 HL Section A Q8",
+    questionText: "Outline two features that might be integrated into the bench-mounted belt sander shown, to reduce vibration and minimise dust. 1. Reduce vibration. 2. Minimise dust.",
+    tariffModel: {"kind":"fixed","notation":"(3 + 3 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Can be bolted to the bench, can have shock absorbing rubber mountings, rubber buffers, etc.", marks: 3, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Can be attached to dust collection or extraction system, belt covers and dust bags, etc.", marks: 3, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secA-q8-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secA-q8-art.png",
+          "srcHash": "80c12d75f4e8a6e6c0cd2505cc6eb94e",
+          "alt": "Colour photograph of a bench-mounted belt and disc sander: a black motor housing driving a disc faced with red-brown abrasive, a horizontal sanding belt arm above it, a slotted metal work table with an angle fence in front of the disc, and a black base carrying a red and green on/off switch.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -230,13 +273,75 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-a11-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2021 HL Section A Q11(i)",
+    stem: "The system shown has a driver pulley, diameter 40 mm, and a driven pulley, diameter 25 mm.",
+    questionText: "Calculate the angular velocity (rotational speed) ratio of the system shown.",
+    tariffModel: {"kind":"fixed","notation":"(4 + 2 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ratio = Driven / Driver = 25 : 40 = 5 : 8", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secA-q11-art.png",
+          "srcHash": "1b185a6f0b7ac9452a8e9ee35e531733",
+          "alt": "Line drawing of a belt drive: a smaller pulley on the left labelled Driven pulley and a larger pulley on the right labelled Driver pulley, joined by a belt, with a curved arrow beside each pulley showing its direction of rotation, and a spring-loaded pulley labelled Jockey pulley pressing up against the lower run of the belt between them.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-a11-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2021 HL Section A Q11(ii)",
+    stem: "The system shown has a driver pulley, diameter 40 mm, and a driven pulley, diameter 25 mm.",
     questionText: "Explain the purpose of the spring-loaded jockey pulley.",
     tariffModel: {"kind":"fixed","notation":"(4 + 2 marks)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The ‘jockey pulley’ is used to keep tension on the pulley belt. Even if the belt stretches the spring will automatically maintain the required tension without further adjustment.", marks: 2, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secA-q11-art.png",
+          "srcHash": "1b185a6f0b7ac9452a8e9ee35e531733",
+          "alt": "Line drawing of a belt drive: a smaller pulley on the left labelled Driven pulley and a larger pulley on the right labelled Driver pulley, joined by a belt, with a curved arrow beside each pulley showing its direction of rotation, and a spring-loaded pulley labelled Jockey pulley pressing up against the lower run of the belt between them.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-a12", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2021 HL Section A Q12",
+    questionText: "The gearbox shown uses three identical compound gears. The initial driver gear (20 teeth) is secured to the motor. For each of the three subsequent compound gears, the driver gear has 20 teeth and the driven gear has 50 teeth. If the motor runs at 2000 rpm, calculate the angular velocity (rotational speed) at the output shaft. Output shaft DC motor 20 teeth 50 teeth Initial",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gear ratio = B × D × F = 50 × 50 × 50 = 125000 = 15.625 : 1", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Velocity of output shaft = 2000 = 128 rpm 15.625", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secA-q12-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secA-q12-art.png",
+          "srcHash": "ff7e4b702f5722804fec280e101b45a2",
+          "alt": "Two drawings. Left: a rendered compound gear, a small gear fixed to the face of a larger gear, with arrows labelled 20 teeth and 50 teeth, captioned Compound gear. Right: a schematic of a gearbox frame with a blue DC motor driving a small red gear labelled Initial driver gear, which meshes through a train of compound gears on parallel vertical shafts ending at the shaft labelled Output shaft.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-HL-scheme-secA-q12",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-scheme-secA-q12.png",
+          "srcHash": "2a39e49d2857ede70b4387a9fd498810",
+          "alt": "The marking scheme's own answer to 2021 HL Section A Q12, as the State Examinations Commission printed it: the gearbox drawing relettered for the calculation. The DC motor drives the small red gear lettered A; the large gear B and the small gear C share the second shaft, the large gear D and the small gear E share the third, and the large red gear F sits on the shaft labelled Output shaft.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -590,12 +695,51 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 HL Section C Q1(b)(i)",
-    stem: "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill. Start Power on Is hopper empty ?",
+    stem: "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
     questionText: "Outline three reasons why the programmable interface controller (PIC) is a suitable component to control the feeder.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 4 + 8 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Can be programmed, programme can be altered without rebuilding circuit, circuits can be mass produced, reliable operation, fast performance characteristics.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secC-q1b-art.png",
+          "srcHash": "f403c5552023365826888765440d60b6",
+          "alt": "Colour photograph of an automated pet-food dispenser, a black unit with a clear food hopper and a tray of dry food at its base, with a golden retriever and a tabby cat beside it. Below it, the start of a flowchart: a green Start box, an arrow to a blue parallelogram Power on, then a blue decision diamond Is hopper empty ? with one arrow leaving its right corner and one leaving its bottom.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2021 HL Section C Q1(b)(ii)",
+    stem: "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
+    questionText: "Redraw and complete the flowchart to control the feeder.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 4 + 8 + 4)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Redraw and complete the flowchart to control the feeder.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secC-q1b-art.png",
+          "srcHash": "f403c5552023365826888765440d60b6",
+          "alt": "Colour photograph of an automated pet-food dispenser, a black unit with a clear food hopper and a tray of dry food at its base, with a golden retriever and a tabby cat beside it. Below it, the start of a flowchart: a green Start box, an arrow to a blue parallelogram Power on, then a blue decision diamond Is hopper empty ? with one arrow leaving its right corner and one leaving its bottom.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-HL-scheme-secC-q1b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-scheme-secC-q1b-ii.png",
+          "srcHash": "0517fedbf46b7da050e1318df88d3125",
+          "alt": "The marking scheme's own answer to 2021 HL Section C Q1(b)(ii), as the State Examinations Commission printed it: a flowchart. Start leads to Power on, then to the decision Hopper empty?. Its Yes branch leads to Buzzer on, which loops back into itself. Its No branch leads to the decision Is tray less than half full?, whose No branch loops back above the same decision and whose Yes branch leads to Fill and then Wait 6, after which a line returns to the main line just below Power on. The scheme prints beneath it: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -604,12 +748,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 HL Section C Q1(b)(iii)",
-    stem: "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill. Start Power on Is hopper empty ?",
+    stem: "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
     questionText: "After a period of usage, a design problem was identified - the warning buzzer discharged the battery. Suggest a modification to the flowchart to rectify this problem.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 4 + 8 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The circuit should be altered to sound for a period of time and then turn off or use an alternative output component (such as a LED) as the buzzer will drain a battery quickly.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secC-q1b-art.png",
+          "srcHash": "f403c5552023365826888765440d60b6",
+          "alt": "Colour photograph of an automated pet-food dispenser, a black unit with a clear food hopper and a tray of dry food at its base, with a golden retriever and a tabby cat beside it. Below it, the start of a flowchart: a green Start box, an arrow to a blue parallelogram Power on, then a blue decision diamond Is hopper empty ? with one arrow leaving its right corner and one leaving its bottom.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -645,6 +797,36 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-c1d-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2021 HL Section C Q1(d)(i)",
+    questionText: "Draw a pneumatic circuit diagram to operate the pneumatic bottle-capping machine shown.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a pneumatic circuit diagram to operate the pneumatic bottle-capping machine shown.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secC-q1d-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secC-q1d-art.png",
+          "srcHash": "e5c5fdc139053395c4a536314c2d5d62",
+          "alt": "Colour photograph of a pneumatic bottle-capping machine: a pneumatic cylinder with air lines and a pressure regulator mounted on a vertical column above a capping head, with a row of blue bottles standing on the base plate beneath it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2021-HL-scheme-secC-q1d-i",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-scheme-secC-q1d-i.png",
+          "srcHash": "32b306eb189419522b18754606dd464d",
+          "alt": "The marking scheme's own answer to 2021 HL Section C Q1(d)(i), as the State Examinations Commission printed it: a pneumatic circuit. A cylinder at the top has both ends piped down to a 5/2 valve that has a manual actuator on its left, a spring on its right and the air supply and exhausts beneath it; a one-way flow control valve (a variable restrictor with a check valve beside it) sits in the line to the cylinder's left-hand end. The scheme prints beside it: Attach cylinder ram to bottle cap supply. 5/2 valve allow the cylinder to move back and forth once.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 HL Section C Q1(d)(ii)",
     questionText: "Outline a method of controlling the speed of the piston as it places the cap on the bottle.",
@@ -652,6 +834,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flow control valves to control the speed of the ram.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secC-q1d-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secC-q1d-art.png",
+          "srcHash": "e5c5fdc139053395c4a536314c2d5d62",
+          "alt": "Colour photograph of a pneumatic bottle-capping machine: a pneumatic cylinder with air lines and a pressure regulator mounted on a vertical column above a capping head, with a row of blue bottles standing on the base plate beneath it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -801,6 +991,29 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2021 HL Section C Q2(d)(i)",
+    stem: "The flight controller of a drone needs to ensure that all propellers are operational, heat does not build up excessively and batteries have sufficient charge to continue flying. If these conditions are not met a parachute can be deployed and power shut off.",
+    questionText: "Draw a logic circuit for the flight controller to ensure the drone remains undamaged.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a logic circuit for the flight controller to ensure the drone remains undamaged.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2021-HL-scheme-secC-q2d-i",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-scheme-secC-q2d-i.png",
+          "srcHash": "844c7bd0296a3ba28f6b7489f121f735",
+          "alt": "The marking scheme's own answer to 2021 HL Section C Q2(d)(i), as the State Examinations Commission printed it: a logic circuit. Inputs labelled Propeller and Heat feed a two-input AND gate; its output and an input labelled Batteries feed a second two-input AND gate, whose output passes through a NOT gate to an output box labelled Deploy Parachute.",
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 HL Section C Q2(d)(ii)",
     stem: "The flight controller of a drone needs to ensure that all propellers are operational, heat does not build up excessively and batteries have sufficient charge to continue flying. If these conditions are not met a parachute can be deployed and power shut off.",
@@ -889,6 +1102,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
+    id: "tech-2021-hl-c3c-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
+    section: "C", questionRef: "2021 HL Section C Q3(c)(i)",
+    questionText: "Outline two functions of the mains-powered laptop power supply shown.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Convert AC mains voltage to DC, low voltage supply, etc.", marks: 8, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secC-q3c-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secC-q3c-art.png",
+          "srcHash": "b709a00a76827da6ff3924ddea8a7783",
+          "alt": "Two colour photographs. Top: a black laptop power supply brick with its cable and laptop connector, and a separate mains lead with a three-pin plug, captioned 240 V laptop power supply. Bottom: a smartphone lying on a black wireless charging power bank, blue rings drawn around it to show the charging field, captioned Wireless charging device.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c3c-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 HL Section C Q3(c)(ii)",
     questionText: "Most wireless charging devices rely on AC inductive coupling to transmit power. Outline three advantages of wireless charging devices.",
@@ -896,6 +1130,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Convenience that device does not need to have a wired connection to the charger, will deal with power surges effectively, charging ports will not get damaged, needs not be concerned with type or size of charging port, chargers can power a range of devices, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-HL-paper-secC-q3c-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-HL-paper-secC-q3c-art.png",
+          "srcHash": "b709a00a76827da6ff3924ddea8a7783",
+          "alt": "Two colour photographs. Top: a black laptop power supply brick with its cable and laptop connector, and a separate mains lead with a three-pin plug, captioned 240 V laptop power supply. Bottom: a smartphone lying on a black wireless charging power bank, blue rings drawn around it to show the charging field, captioned Wireless charging device.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1287,6 +1529,116 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-a5-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2022 HL Section A Q5(i)",
+    questionText: "Explain the function of the tolerance band on the resistor shown.",
+    tariffModel: {"kind":"fixed","notation":"(2 + 4 marks)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Resistor tolerance is the deviation from the nominal value. It is expressed as a ±%, a gold band has a tolerance of ±5%, a 100Ω resistor can have a value from 95Ω to 105Ω.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secA-q5-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secA-q5-art.png",
+          "srcHash": "9aa31c54c1075eeb331289d3e7edf529",
+          "alt": "Two pictures stacked one above the other. Top: a photograph of a beige resistor with wire leads and several coloured bands; a red arrow points to the band at its right-hand end, labelled 'Tolerance band'. Bottom: a circuit diagram in which a 5 Ω resistor in series leads to a junction, two 8 Ω resistors connected in parallel between two junction dots, then a 6 Ω resistor in series, with open wire ends at the left.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-a5-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2022 HL Section A Q5(ii)",
+    questionText: "Calculate the total resistance of the circuit shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(2 + 4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Calculation: 1/R = (1/8 +1/8). R = 4Ω, or Product/Sum", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "RTotal = 5 + 4 + 6 = 15Ω", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secA-q5-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secA-q5-art.png",
+          "srcHash": "9aa31c54c1075eeb331289d3e7edf529",
+          "alt": "Two pictures stacked one above the other. Top: a photograph of a beige resistor with wire leads and several coloured bands; a red arrow points to the band at its right-hand end, labelled 'Tolerance band'. Bottom: a circuit diagram in which a 5 Ω resistor in series leads to a junction, two 8 Ω resistors connected in parallel between two junction dots, then a 6 Ω resistor in series, with open wire ends at the left.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-a6-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2022 HL Section A Q6(i)",
+    stem: "The graphic shows a mechanism which consists of two components, labelled A and B.",
+    questionText: "Name component A and component B.",
+    tariffModel: {"kind":"questionTotal","notation":"(2 + 4 marks)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Follower", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "B = Cam", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secA-q6-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secA-q6-art.png",
+          "srcHash": "f32ba591a1446ba8484d0ca907889a27",
+          "alt": "A rendered picture of a mechanism made of two components: a vertical blue rod passes down through a grey round plate, with a black coil spring around the rod below the plate, and the rod's lower end rests on a green pear-shaped disc mounted on a short purple shaft. A red arrow labelled A points to the lower end of the rod just under the spring; a red arrow labelled B points to the green disc.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-a6-ii", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2022 HL Section A Q6(ii)",
+    stem: "The graphic shows a mechanism which consists of two components, labelled A and B.",
+    questionText: "Outline the operation of the mechanism shown, referring to the movement changes and the spring.",
+    tariffModel: {"kind":"fixed","notation":"(2 + 4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As the cam (B) rotates, the profile of the cam causes the follower (A) to rise and fall in its guide plate, the spring ensures that the follower is in contact with the cam ensuring constant movement.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secA-q6-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secA-q6-art.png",
+          "srcHash": "f32ba591a1446ba8484d0ca907889a27",
+          "alt": "A rendered picture of a mechanism made of two components: a vertical blue rod passes down through a grey round plate, with a black coil spring around the rod below the plate, and the rod's lower end rests on a green pear-shaped disc mounted on a short purple shaft. A red arrow labelled A points to the lower end of the rod just under the spring; a red arrow labelled B points to the green disc.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-a7", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2022 HL Section A Q7",
+    questionText: "The image shows a bridge under construction. Compile a Gantt chart for the construction of a typical bridge.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The image shows a bridge under construction. Compile a Gantt chart for the construction of a typical bridge.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2022-HL-scheme-secA-q7",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secA-q7.png",
+          "srcHash": "3d8639378861cc20b6633c20163f04a6",
+          "alt": "The marking scheme's own answer to 2022 HL Section A Q7, as the State Examinations Commission printed it: a Gantt chart (the scheme heads it 'Suggested chart') with Task/Month down the left and months 1 to 6 across the top. Blue bars show Foundations in month 1; Pillars across months 2 and 3; Pre-cast Beam from month 1 into month 3; Install Beam in month 4; Install Railings in month 5; Safety Inspections in month 6.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-a8", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "A", questionRef: "2022 HL Section A Q8",
     questionText: "An exploded view of a castor wheel is shown. Sketch a pictorial view of the assembled castor wheel.",
@@ -1349,6 +1701,36 @@ export const CARDS: SecCard[] = [
           "alt": "Two colour photographs side by side: on the left a hard disk drive with its cover removed, showing the gold platter, spindle and read head arm; on the right a solid-state drive with its case partly open, showing the memory chips on the circuit board.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-a10", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2022 HL Section A Q10",
+    questionText: "Risk assessment is a critical element in providing a safe environment in a school workshop. Complete the partial risk assessment guide, shown below, for the use of a soldering iron. Risk Assessment – Technology Room – Soldering iron Hazards Is the hazard present? Control measures Is this control in place? What is the risk? Risk rating H = High M = Medium L = Low Y/N Y/N Hot soldering iron Y Burns H Use soldering iron stand. Warning signs present.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Risk assessment is a critical element in providing a safe environment in a school workshop. Complete the partial risk assessment guide, shown below, for the use of a soldering iron. Risk Assessment – Technology Room – Soldering iron Hazards Is the hazard present? Control measures Is this control in place? What is the risk? Risk rating H = High M = Medium L = Low Y/N Y/N Hot soldering iron Y Burns H Use soldering iron stand. Warning signs present.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secA-q10-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secA-q10-art.png",
+          "srcHash": "6558bc19d2f7001e5347044d2559146b",
+          "alt": "A table titled 'Risk Assessment – Technology Room – Soldering iron' with six columns: Hazards; Is the hazard present? Y/N; What is the risk?; Risk rating (H = High, M = Medium, L = Low); Control measures; Is this control in place? Y/N. The first row is filled in: Hot soldering iron, Y, Burns, H, 'Use soldering iron stand. Warning signs present.', Y, Y. The next two rows, Damaged power lead (Y) and Fumes (Y), have every other cell blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2022-HL-scheme-secA-q10",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secA-q10.png",
+          "srcHash": "26f6ede7a5533cc0ab7d2131fcbf1a4f",
+          "alt": "The marking scheme's own answer to 2022 HL Section A Q10, as the State Examinations Commission printed it: a table titled 'Risk Assessment – Technology Room – Soldering iron' with six columns: Hazards; Is the hazard present? Y/N; What is the risk?; Risk rating (H = High, M = Medium, L = Low); Control measures; Is this control in place? Y/N. Row 1: Hot soldering iron; Y; Burns; H; 'Use soldering iron stand. Warning signs present.'; Y, Y. Row 2: Damaged power lead; Y; 'Electrocution. Injury/burn. Death.'; H; 'Correct Amp rating fuse fitted and surge protection in place. Use soldering stand.'; last cell blank. Row 3: Fumes; Y; 'Inhalation of toxic fumes.'; H; 'Ventilated area. Fume extraction.'; last cell blank. The entries the scheme fills in for rows 2 and 3 are printed in bold.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -1501,7 +1883,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-b2b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 HL Section B Q2(b)(ii)",
-    questionText: "Suggest one sensor that could be used in the base of the robot. State the purpose of this sensor. Outline two ways in which a product such as the Adibot could be marketed to boost sales.",
+    questionText: "Suggest one sensor that could be used in the base of the robot. State the purpose of this sensor.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 2 + 4)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Proximity/LIDAR/Laser/LDR etc.", marks: null, openList: true },
@@ -1521,6 +1903,54 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A range of solutions are possible including description of rack and pinion steering, castor driven system, independent drive, Ackerman steering using linkages, independent drive to each wheel, servo motor to steer single wheel in front etc.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Motor-driven pinion will drive the rack and linkage to move the wheel linkage and turn wheels.", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-b2c-i", topicId: "tech-core-ict", conceptId: "core-ict",
+    section: "B", questionRef: "2022 HL Section B Q2(c)(i)",
+    stem: "In an ever-advancing technological world, products are replaced very quickly.",
+    questionText: "Describe, using a labelled diagram, a typical product life cycle for the Adibot robot, shown in 2(b) above.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Introduction: product is launched to the market", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Sales with low sales.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "2. Growth: demand increases with steep growth in sales.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "1 2 3 4 3. Maturity: sales are strong as product has established markets.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Time 4. Decline: sales reduce as competition increases.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secB-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secB-q2c-art.png",
+          "srcHash": "528a1d51a991be6e47ddac1a2d4e9b50",
+          "alt": "A photograph of the Adibot UV-C disinfection robot: a tall white robot with a wide wheeled base and a body with side panels, topped by a column of vertical ultraviolet lamp tubes held between round plates. A red arrow points to the bottom of the robot, labelled 'Base'.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-b2c-ii", topicId: "tech-core-design", conceptId: "core-design",
+    section: "B", questionRef: "2022 HL Section B Q2(c)(ii)",
+    stem: "In an ever-advancing technological world, products are replaced very quickly.",
+    questionText: "Outline two ways in which a product such as the Adibot could be marketed to boost sales.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks, 4 + 2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Innovation in reaction to crisis, additional features added, reduce cost as product shows decline in market share, online/tv/radio advertising etc.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secB-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secB-q2c-art.png",
+          "srcHash": "528a1d51a991be6e47ddac1a2d4e9b50",
+          "alt": "A photograph of the Adibot UV-C disinfection robot: a tall white robot with a wide wheeled base and a body with side panels, topped by a column of vertical ultraviolet lamp tubes held between round plates. A red arrow points to the bottom of the robot, labelled 'Base'.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1556,14 +1986,120 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-b3a-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "B", questionRef: "2022 HL Section B Q3(a)(i)",
+    stem: "Urban Movement® is an e-scooter brand developed by Stephen Woods from Dublin. The scooter shown in 3(b) below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery.",
+    questionText: "Suggest one advantage and one disadvantage of using e-scooters for transport in cities.",
+    tariffModel: {"kind":"questionTotal","notation":"(8 marks, 4 + 4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Advantages: Less air pollution, avoid traffic congestion, saves on the expense of car ownership, no car parking fees in cities, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Disadvantages: Insufficient number of charging points, greater risk of injury etc.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secB-q3a-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secB-q3a-art.png",
+          "srcHash": "894ffa34f3e518c6d02acdfb1fd387f3",
+          "alt": "A photograph of a black Urban Movement folding e-scooter seen from the side, with a tall handlebar stem, a low deck and small wheels. A red arrow labelled 'Foldable frame' points to the hinge low on the stem, and a framed inset close-up labelled 'Electronic display' shows the small screen with a blue readout on the handlebar.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-b3a-ii", topicId: "tech-core-design", conceptId: "core-design",
+    section: "B", questionRef: "2022 HL Section B Q3(a)(ii)",
+    stem: "Urban Movement® is an e-scooter brand developed by Stephen Woods from Dublin. The scooter shown in 3(b) below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery.",
+    questionText: "Outline two ways in which the comfort of the user has been enhanced in the e-scooter shown.",
+    tariffModel: {"kind":"fixed","notation":"(8 marks, 4 + 4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Handlebars have soft grips, the honeycomb wheels will have a shock absorption effect, easy manoeuvrability, lightweight and foldable, braking system increases safety, etc.", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secB-q3a-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secB-q3a-art.png",
+          "srcHash": "894ffa34f3e518c6d02acdfb1fd387f3",
+          "alt": "A photograph of a black Urban Movement folding e-scooter seen from the side, with a tall handlebar stem, a low deck and small wheels. A red arrow labelled 'Foldable frame' points to the hinge low on the stem, and a framed inset close-up labelled 'Electronic display' shows the small screen with a blue readout on the handlebar.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-b3b-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 HL Section B Q3(b)(i)",
-    stem: "below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery. This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
-    questionText: "Suggest one advantage and one disadvantage of using e-scooters for transport in cities. Describe, using an annotated sketch, a method of folding the frame of the scooter.",
+    stem: "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
+    questionText: "Describe, using an annotated sketch, a method of folding the frame of the scooter.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4 + 4 + 2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The column is hinged allowing the scooter to fold for easy storage and transporting.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secB-q3b-art.png",
+          "srcHash": "e2dfa228c640bd9acf364697d14292b3",
+          "alt": "A photograph of a black Urban Movement folding e-scooter seen from the side, with a tall handlebar stem, a low deck and small wheels. A red arrow labelled 'Foldable frame' points to the hinge low on the stem, and a framed inset close-up labelled 'Electronic display' shows the small screen with a blue readout on the handlebar.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-b3b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "B", questionRef: "2022 HL Section B Q3(b)(ii)",
+    stem: "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
+    questionText: "Draw a circuit diagram that will automatically switch on a flashing LED cluster light on the scooter after dark.",
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 4 + 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a circuit diagram that will automatically switch on a flashing LED cluster light on the scooter after dark.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secB-q3b-art.png",
+          "srcHash": "e2dfa228c640bd9acf364697d14292b3",
+          "alt": "A photograph of a black Urban Movement folding e-scooter seen from the side, with a tall handlebar stem, a low deck and small wheels. A red arrow labelled 'Foldable frame' points to the hinge low on the stem, and a framed inset close-up labelled 'Electronic display' shows the small screen with a blue readout on the handlebar.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2022-HL-scheme-secB-q3b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secB-q3b-ii.png",
+          "srcHash": "8044f62beb718ed4199df8a9b2be13eb",
+          "alt": "The marking scheme's own answer to 2022 HL Section B Q3(b)(ii), as the State Examinations Commission printed it: a circuit diagram with no word labels. A battery of cells on the left feeds the top rail through a switch. From the top rail a variable resistor (a resistor crossed by a diagonal arrow) runs down to a junction, and a light-dependent resistor (a resistor in a circle with two arrows pointing in) runs from that junction to the bottom rail. The junction feeds a fixed resistor into the base of an NPN transistor whose emitter goes to the bottom rail. Three LEDs (each a diode in a circle with two arrows pointing out) are connected in parallel between the top rail and the transistor's collector.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-b3b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "B", questionRef: "2022 HL Section B Q3(b)(iii)",
+    stem: "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
+    questionText: "Suggest two pieces of data that may be shown on the electronic display of a scooter.",
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 4 + 4 + 2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Speed of drive, battery life, distance travelled, etc.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secB-q3b-art.png",
+          "srcHash": "e2dfa228c640bd9acf364697d14292b3",
+          "alt": "A photograph of a black Urban Movement folding e-scooter seen from the side, with a tall handlebar stem, a low deck and small wheels. A red arrow labelled 'Foldable frame' points to the hinge low on the stem, and a framed inset close-up labelled 'Electronic display' shows the small screen with a blue readout on the handlebar.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1661,6 +2197,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2022 HL Section C Q1(b)(i)",
+    questionText: "Draw a flowchart for the operating sequence of the printer.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 10 + 4 + 2)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a flowchart for the operating sequence of the printer.", marks: 10, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2022-HL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secC-q1b-i.png",
+          "srcHash": "40d085ba3ac102b03d58723ed992a325",
+          "alt": "The marking scheme's own answer to 2022 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart. Start leads to an input 'Power on', then a decision 'Toner empty'; Yes leads to 'Replace toner', which loops back above 'Toner empty'. No leads to a decision 'Fuser temp. correct'; No leads to 'Wait', which loops back above that decision. Yes leads to a decision 'Is paper in machine?'; No leads to 'Red Flashing Led', which loops back above it. Yes leads to 'Motor on', then a decision 'Sheet Jam?'; Yes leads to 'Buzzer on', which loops back above 'Sheet Jam?'; No leads to 'Copy complete'. The scheme prints beneath it: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2022 HL Section C Q1(b)(ii)",
     questionText: "Suggest a modification to the flowchart to include a command that will count the number of sheets printed.",
@@ -1719,8 +2277,17 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a pneumatic circuit diagram for the operation of the double-acting cylinder used in the clamp.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 10 + 4)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Flow control valve", marks: 10, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Draw a pneumatic circuit diagram for the operation of the double-acting cylinder used in the clamp.", marks: 10, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2022-HL-scheme-secC-q1d-i",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secC-q1d-i.png",
+          "srcHash": "77244ff955008f5cf1f9618c2381f9c0",
+          "alt": "The marking scheme's own answer to 2022 HL Section C Q1(d)(i), as the State Examinations Commission printed it: a pneumatic circuit in which a double-acting cylinder is fed through two flow control valves from a 5/2 valve, itself piloted by two spring-return 3/2 push-button valves.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1808,6 +2375,37 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 HL Section C Q2(b)(ii)",
+    stem: "A heat alarm with logic gate processing is shown in the circuit diagram.",
+    questionText: "Draw a truth table for the logic gate shown.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 8 + 4 + 4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a truth table for the logic gate shown.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secC-q2b-art.png",
+          "srcHash": "3afb7b1c93f869fc5d578f8d17f6660c",
+          "alt": "A circuit diagram between +V and -V rails: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor; a push switch C and the transistor output feed an OR gate D that drives a buzzer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2022-HL-scheme-secC-q2b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secC-q2b-ii.png",
+          "srcHash": "a38c1f4390055e2e12876ec76507dfe7",
+          "alt": "The marking scheme's own answer to 2022 HL Section C Q2(b)(ii), as the State Examinations Commission printed it: a truth table with columns Input 1, Input 2 and Output. Rows: 0 and 0 give 0; 0 and 1 give 1; 1 and 0 give 1; 1 and 1 give 1.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 HL Section C Q2(b)(iii)",
     stem: "A heat alarm with logic gate processing is shown in the circuit diagram.",
@@ -1846,14 +2444,46 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 HL Section C Q2(c)(ii)",
+    stem: "The 555 timer is an integrated chip used in a variety of timer, pulse generation and oscillator applications.",
+    questionText: "Draw the circuit configuration of the 555 timer in astable mode.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw the circuit configuration of the 555 timer in astable mode.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2022-HL-scheme-secC-q2c-ii",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secC-q2c-ii.png",
+          "srcHash": "7464d6d475f9a87b20375c64aea841a8",
+          "alt": "The marking scheme's own answer to 2022 HL Section C Q2(c)(ii), as the State Examinations Commission printed it: a circuit diagram of a 555 timer IC wired in astable mode between a top and a bottom supply rail. Resistor R1 runs from the top rail to a node joined to pin 7; resistor R2 runs from that node down to a node joined to pins 2 and 6; capacitor C runs from there to the bottom rail. Pins 8 and 4 are joined to the top rail, pin 1 goes to the bottom rail, and pin 3 is the output on the right.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 HL Section C Q2(d)(i)",
     stem: "A plant terrarium or reptile vivarium tank needs to control temperature levels carefully. A circuit involving a Darlington Pair transistor with a relay may be used for this purpose.",
     questionText: "Draw a circuit diagram with an appropriate input, Darlington Pair transistors, and suitable output for temperature control of the vivarium.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "suitable output for temperature control of the vivarium.", marks: 8, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Draw a circuit diagram with an appropriate input, Darlington Pair transistors, and suitable output for temperature control of the vivarium.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2022-HL-scheme-secC-q2d-i",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secC-q2d-i.png",
+          "srcHash": "ad307d75710b6bc23fdaefa66535af10",
+          "alt": "The marking scheme's own answer to 2022 HL Section C Q2(d)(i), as the State Examinations Commission printed it: a circuit diagram with no word labels. A battery of cells on the left feeds the top rail through a switch. From the top rail a thermistor (a resistor crossed by a line with a short flat foot) runs down to a junction, and a variable resistor (a resistor crossed by a diagonal arrow) runs from that junction to the bottom rail. The junction feeds a fixed resistor into the base of the first of two NPN transistors wired as a Darlington pair: its emitter drives the second transistor's base, the two collectors are joined, and the second emitter goes to the bottom rail. The joined collectors connect up to a relay coil (a rectangle) hanging from the top rail, with a diode drawn in parallel across the coil. To the right, a separate loop runs through the relay's switch contacts, a motor (a circle marked M) and a second battery of cells.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2032,6 +2662,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
+    section: "C", questionRef: "2022 HL Section C Q4(b)(i)",
+    questionText: "Draw a graph to show the cost of manufacturing the headphone stands using each method.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 8 + 2 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a graph to show the cost of manufacturing the headphone stands using each method.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2022-HL-scheme-secC-q4b-i",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-scheme-secC-q4b-i.png",
+          "srcHash": "9f295fdc284d2e4ce6ad8824d227e005",
+          "alt": "The marking scheme's own answer to 2022 HL Section C Q4(b)(i), as the State Examinations Commission printed it: a graph with Cost (€) up the vertical axis, marked 2000 at its foot and rising in steps of 2000 to 12000, and Quantity along the horizontal axis, marked 0, 10000 and 20000. A green straight line labelled '3D Printing' rises steeply from the foot of the axes; a blue line labelled 'Injection moulding' starts at the 8000 mark and rises gently. The lines cross at about 10000 units, where a red arrow labelled 'BEQ' points to the crossing.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 HL Section C Q4(b)(ii)",
     questionText: "Determine the BEQ (break-even quantity).",
@@ -2150,7 +2802,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 HL Section C Q5(b)(i)",
-    stem: "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it. above.",
+    stem: "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it.",
     questionText: "State two reasons why destructive testing of materials is carried out during the design phase of devices such as vacuum cleaners.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -2164,8 +2816,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 HL Section C Q5(b)(ii)",
-    stem: "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it. above.",
-    questionText: "Describe, using annotated sketches, an impact test to compare the impact properties of different materials that could be used in the manufacture of the cleaner cover. Describe, using annotated sketches, a suitable method to manufacture a large batch of the cleaner covers.",
+    stem: "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it.",
+    questionText: "Describe, using annotated sketches, an impact test to compare the impact properties of different materials that could be used in the manufacture of the cleaner cover.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The impact test is carried out in a controlled Striker at a environment as the samples are likely to predetermined break. height.", marks: null, openList: true },
@@ -2181,7 +2833,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
     id: "tech-2022-hl-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 HL Section C Q5(b)(iii)",
-    stem: "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it. above.",
+    stem: "The top cover of the robotic vacuum cleaner must be able to withstand impacts from collisions with furniture or from a person accidently standing on it.",
     questionText: "Describe, using annotated sketches, a means of strengthening materials during their design or production.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -2191,6 +2843,50 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Corrugated sheet Fibre-reinforcement Impact of ribbed products", marks: null, openList: true },
     { id: "r-5", kind: "point", verbatim: "Other design or production techniques acceptable.", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-c5c-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2022 HL Section C Q5(c)(i)",
+    questionText: "Name a suitable thermoplastic material that could be used to manufacture the top cover of the robotic vacuum cleaner, shown in 5(b) above.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 6 + 8)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Transparent Polycarbonate, polypropylene, HDPE, ABS etc which are all impact resistant.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secC-q5c-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secC-q5c-art.png",
+          "srcHash": "cce4460a93c8ca466334b2f8afd01fc8",
+          "alt": "A photograph of a round robotic vacuum cleaner on a tiled floor, its glossy dark top lit with blue light and blue light trails fanning out around its base. A red arrow points to its upper surface, labelled 'Top cover'.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Higher Level — © State Examinations Commission.",
+    id: "tech-2022-hl-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2022 HL Section C Q5(c)(ii)",
+    questionText: "Describe, using annotated sketches, a suitable method to manufacture a large batch of the cleaner covers.",
+    tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Injection moulding: plastic pellets are loaded from the hopper through the heated chamber.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "It is pushed into the cover shaped mould by the rotating screw.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Appropriate alternative solutions acceptable.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-HL-paper-secC-q5c-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-HL-paper-secC-q5c-art.png",
+          "srcHash": "cce4460a93c8ca466334b2f8afd01fc8",
+          "alt": "A photograph of a round robotic vacuum cleaner on a tiled floor, its glossy dark top lit with blue light and blue light trails fanning out around its base. A red arrow points to its upper surface, labelled 'Top cover'.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2445,6 +3141,36 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-a8", topicId: "tech-core-ict", conceptId: "core-ict",
+    section: "A", questionRef: "2023 HL Section A Q8",
+    questionText: "Complete the cause and effect diagram below by suggesting three factors to analyse the performance of a drone that fails to lift off the ground. One has been completed for you.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks, 2 + 2 + 2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Three appropriate factors selected.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secA-q8-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q8-art.png",
+          "srcHash": "dc64849b70f4050acc3e0ca8f3760618",
+          "alt": "A cause and effect (fishbone) diagram. A thick horizontal spine arrow points right to an oval labelled 'Drone will not lift'. Four diagonal bones join the spine: 'Machine' and 'Environment' above it, 'User' and 'Materials' below it. Under Machine a box reads 'Propellers' in red, with a black arrow to its bone; each of the other three bones has an empty box beside it with a dashed red arrow pointing to the bone.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2023-HL-scheme-secA-q8",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-scheme-secA-q8.png",
+          "srcHash": "b91116e004902cd32ca947d2d5ee8585",
+          "alt": "The marking scheme's own answer to 2023 HL Section A Q8, as the State Examinations Commission printed it: the completed cause and effect diagram. The spine points to 'Drone will not lift.' and the bones are 'Machine', 'Environment', 'User' and 'Materials'. 'Propellers' (given) sits under Machine, and the scheme's suggested factors fill the other three: 'Wind' under Environment, 'Expertise' under User and 'Weight' under Materials. The scheme prints above it: Three appropriate factors selected. Suggested solution:",
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-a9", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2023 HL Section A Q9",
     questionText: "Use graphical techniques to enhance the profile shape of each wind turbine part labelled on the line drawing below. Rotor Nacelle (contains gears and generator) Cylindrical tower",
@@ -2568,6 +3294,53 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-a13-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2023 HL Section A Q13(i)",
+    stem: "A cutaway model of a mechanism for a hoist is shown.",
+    questionText: "Name the mechanism and describe its operation.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Name: Worm and gearwheel", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Operation: One turn of worm moves wheel 1 tooth.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secA-q13-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q13-art.png",
+          "srcHash": "eed6c29b83d3839684eef15081de465f",
+          "alt": "Colour cutaway render of a blue gearbox housing with one quarter cut away to show the inside: a horizontal shaft with a spiral thread along it sits above, and meshes with, a toothed wheel below it. A flared, flanged housing on the right carries the output, with a shaft bore in its centre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-a13-ii", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2023 HL Section A Q13(ii)",
+    stem: "A cutaway model of a mechanism for a hoist is shown.",
+    questionText: "Give two reasons for using this mechanism in the hoist.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gives a very precise movement,", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Can be used to prevent slippage,", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Compact and strong, speed reduction etc.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secA-q13-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secA-q13-art.png",
+          "srcHash": "eed6c29b83d3839684eef15081de465f",
+          "alt": "Colour cutaway render of a blue gearbox housing with one quarter cut away to show the inside: a horizontal shaft with a spiral thread along it sits above, and meshes with, a toothed wheel below it. A flared, flanged housing on the right carries the output, with a shaft bore in its centre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-a14-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2023 HL Section A Q14(i)",
     stem: "Vacuum forming machines can be used to form intricate hollow thermoplastic objects.",
@@ -2685,6 +3458,30 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-b2c-i", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "B", questionRef: "2023 HL Section B Q2(c)(i)",
+    questionText: "Describe the four stages of a typical product lifecycle graph as shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1 - Introduction: After all research and development is complete, the product is launched. The product may have few competitors and sales may remain low and it may take Time time for the market to accept the new product.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "2 - Growth: The market has accepted the product and sales begin to increase. The company may want to make improvements to the product to stay competitive.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "3 - Maturity: Sales will reach their peak. Other competitors enter the market with alternative solutions and increasing competition.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "4 - Decline: Sales begin to decline as the product reaches its saturation point. Most products are phased out of the market at this point due to the decrease in sales and because of competitive pressure. The market will see the product as old and no longer in demand.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secB-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secB-q2c-art.png",
+          "srcHash": "30d96537f1e4a60c76ad1f0a1a7c5737",
+          "alt": "A product lifecycle graph with 'Sales' on the vertical axis and 'Time' on the horizontal axis. A red curve starts low, rises slowly, then steeply, levels off to a peak and then falls away. Three dashed vertical lines divide the graph into four stages, numbered 1, 2, 3 and 4 across the top.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-b2c-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2023 HL Section B Q2(c)(ii)",
     questionText: "Concerns were raised over a flight time of five minutes and a reduction in company support for the device, despite initial high demand. Outline the possible impact of these concerns on the product lifecycle of the Pixy drone.",
@@ -2692,6 +3489,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Product maturity is likely to be impacted due to the critical deficiencies of poor battery life and limited flying time. Decline will happen sharply with inadequate company support and reduced advertising drive by the company.", marks: 2, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secB-q2c-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secB-q2c-art.png",
+          "srcHash": "30d96537f1e4a60c76ad1f0a1a7c5737",
+          "alt": "A product lifecycle graph with 'Sales' on the vertical axis and 'Time' on the horizontal axis. A red curve starts low, rises slowly, then steeply, levels off to a peak and then falls away. Three dashed vertical lines divide the graph into four stages, numbered 1, 2, 3 and 4 across the top.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2861,16 +3666,46 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2023 HL Section C Q1(b)(i)",
+    stem: "The iBowl 3-in-1 aquarium monitoring system is capable of monitoring and maintaining water quality in an aquarium or fish tank. The iBowl performs the following steps when operating: • a green LED illuminates when powered on • temperature is constantly monitored, with a heater enabled if the temperature falls below a set level • water quality is monitored by total dissolved solids (TDS) sensors. Poor quality water is drained and clean water is pumped in if needed • water pH is constantly displayed.",
+    questionText: "Draw a flowchart for the operating sequence of the iBowl.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 8 + 4 + 4)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a flowchart for the operating sequence of the iBowl.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2023-HL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-scheme-secC-q1b-i.png",
+          "srcHash": "03a309f4178061ca2b6bc6b2f60ae1f7",
+          "alt": "The marking scheme's own answer to 2023 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart. Start; an input box 'Power on'; a process box 'Green LED on'; a decision 'Temp. level check' whose No branch goes to 'Heater On' and loops back to the temperature check; its Yes branch goes to a decision 'Water quality check' whose No branch goes to 'Drain water' then 'Refill tank' and loops back to above 'Green LED on'; its Yes branch goes to 'Display Water temperature' then 'Display water pH', which loops back up to above 'Green LED on'. The scheme prints beside it: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 HL Section C Q1(b)(ii)",
     stem: "The iBowl 3-in-1 aquarium monitoring system is capable of monitoring and maintaining water quality in an aquarium or fish tank. The iBowl performs the following steps when operating: • a green LED illuminates when powered on • temperature is constantly monitored, with a heater enabled if the temperature falls below a set level • water quality is monitored by total dissolved solids (TDS) sensors. Poor quality water is drained and clean water is pumped in if needed • water pH is constantly displayed.",
     questionText: "Suggest a modification to the flowchart to support automated lighting in darkness.",
-    tariffModel: {"kind":"questionTotal","notation":"(16 marks, 8 + 4 + 4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 8 + 4 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Add light sensor check with light switching option.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Check light No", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Light on level", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Add light sensor check with light switching option.", marks: 4, openList: true },
     ],
+    figure: {
+          "candId": "technology-2023-HL-scheme-secC-q1b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-scheme-secC-q1b-ii.png",
+          "srcHash": "43f6b5976ce685ee3c6466088e5ca3a6",
+          "alt": "The marking scheme's own answer to 2023 HL Section C Q1(b)(ii), as the State Examinations Commission printed it: a flowchart fragment: a decision diamond 'Check light level' whose No branch leads right to a box 'Light on' and whose Yes branch continues downward. The scheme prints above it: Add light sensor check with light switching option.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2981,6 +3816,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2023 HL Section C Q2(b)(i)",
+    questionText: "Name the components labelled A and B in the 9 V circuit shown.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Variable Resistor B = Thermistor", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secC-q2b-art.png",
+          "srcHash": "abba011761a4a1af5033aa656df5b455",
+          "alt": "A circuit diagram between a +9 V rail at the top and a 0 V rail at the bottom, with a switch on the +9 V line. On the left, a component labelled A, drawn as a rectangle with a diagonal arrow through it, sits above a component labelled B, drawn as a rectangle crossed by a bent line; their junction feeds the minus input of a triangular amplifier marked IC. Beside them two 10kΩ resistors in series set the voltage on the IC's plus input. The IC's output passes through a resistor to the base of a transistor, which drives a buzzer connected down to the 0 V rail.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
     id: "tech-2023-hl-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 HL Section C Q2(b)(ii)",
     questionText: "Describe the operation of the circuit making reference to the IC and switching components.",
@@ -2992,8 +3848,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "technology-2023-HL-paper-secC-q2b-art",
           "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secC-q2b-art.png",
-          "srcHash": "56c0a7840b2537ceac8de34a7fa8ee22",
-          "alt": "A circuit diagram between +9 V and 0 V rails. A switch feeds two potential-divider branches: component A, a variable resistor, in series with a 10 kilohm resistor, and component B, a thermistor, in series with a second 10 kilohm resistor. The two junctions feed the inverting and non-inverting inputs of an IC comparator, whose output drives a resistor, a transistor and a buzzer back to the 0 V rail.",
+          "srcHash": "abba011761a4a1af5033aa656df5b455",
+          "alt": "A circuit diagram between a +9 V rail at the top and a 0 V rail at the bottom, with a switch on the +9 V line. On the left, a component labelled A, drawn as a rectangle with a diagonal arrow through it, sits above a component labelled B, drawn as a rectangle crossed by a bent line; their junction feeds the minus input of a triangular amplifier marked IC. Beside them two 10kΩ resistors in series set the voltage on the IC's plus input. The IC's output passes through a resistor to the base of a transistor, which drives a buzzer connected down to the 0 V rail.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
     },
@@ -3008,15 +3864,24 @@ export const CARDS: SecCard[] = [
     questionText: "Show how the given circuit could be modified to provide an output for a 220 V fan.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "B 10kΩ 0 V", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Show how the given circuit could be modified to provide an output for a 220 V fan.", marks: 4, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
     questionFigure: {
           "candId": "technology-2023-HL-paper-secC-q2b-art",
           "src": "/exam-figures/technology/markbank/technology-2023-HL-paper-secC-q2b-art.png",
-          "srcHash": "56c0a7840b2537ceac8de34a7fa8ee22",
-          "alt": "A circuit diagram between +9 V and 0 V rails. A switch feeds two potential-divider branches: component A, a variable resistor, in series with a 10 kilohm resistor, and component B, a thermistor, in series with a second 10 kilohm resistor. The two junctions feed the inverting and non-inverting inputs of an IC comparator, whose output drives a resistor, a transistor and a buzzer back to the 0 V rail.",
+          "srcHash": "abba011761a4a1af5033aa656df5b455",
+          "alt": "A circuit diagram between a +9 V rail at the top and a 0 V rail at the bottom, with a switch on the +9 V line. On the left, a component labelled A, drawn as a rectangle with a diagonal arrow through it, sits above a component labelled B, drawn as a rectangle crossed by a bent line; their junction feeds the minus input of a triangular amplifier marked IC. Beside them two 10kΩ resistors in series set the voltage on the IC's plus input. The IC's output passes through a resistor to the base of a transistor, which drives a buzzer connected down to the 0 V rail.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2023-HL-scheme-secC-q2b-iii",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-scheme-secC-q2b-iii.png",
+          "srcHash": "4872af06a339d4273fc28f1fd15e28c8",
+          "alt": "The marking scheme's own answer to 2023 HL Section C Q2(b)(iii), as the State Examinations Commission printed it: the 2(b) circuit redrawn with the change: the same 9 V and 0 V rails, the A and B divider, the two 10kΩ resistors, the IC, the resistor and the transistor with its buzzer, now with a relay coil placed in the transistor's collector line from the 9 V rail. The relay's switch contacts sit in a separate circuit on the right that holds a motor (M) and an AC supply (~).",
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -3047,6 +3912,29 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Induction enables wireless charging by using magnetic fields to transfer power from a transmitter coil in the charging pad to a receiver coil in the device being charged.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "This allows for convenient and cordless charging of devices by utilizing the principles of electromagnetic induction.", marks: null, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Higher Level — © State Examinations Commission.",
+    id: "tech-2023-hl-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2023 HL Section C Q2(d)(i)",
+    stem: "The coffee machine operates when a pod and a cup are in place and the water is at the correct temperature. If all these conditions are not met, a red LED continuously flashes.",
+    questionText: "Draw a logic gate circuit to represent the operation of the coffee machine.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a logic gate circuit to represent the operation of the coffee machine.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2023-HL-scheme-secC-q2d-i",
+          "src": "/exam-figures/technology/markbank/technology-2023-HL-scheme-secC-q2d-i.png",
+          "srcHash": "ed34839d12cc1491d7ababae74c8d6a6",
+          "alt": "The marking scheme's own answer to 2023 HL Section C Q2(d)(i), as the State Examinations Commission printed it: a logic gate circuit. Inputs 'Pod in place' and 'Cup in place' enter an AND gate; its output and a third input, 'Temp correct', enter a second AND gate. The second gate's output branches: one branch is labelled 'Coffee machine operates.', the other passes through a NOT gate to a light-emitting diode.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3516,11 +4404,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-a3-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2024 HL Section A Q3(i)",
+    stem: "A 4K UHD interactive touch screen with integrated proximity sensor is shown.",
     questionText: "Explain the term UHD.",
     tariffModel: {"kind":"fixed","notation":"(6 marks, 3 + 3)"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "UHD: Ultra High Definition.", marks: 3, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q3-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q3-art.png",
+          "srcHash": "0c23b2067afb81ca3a96853a50a1fb2e",
+          "alt": "Colour photograph of the lower right-hand corner of an interactive touch screen: a teal abstract wallpaper on the display inside a thin black bezel, a dark bar along the bottom edge, and grey concentric rings drawn over the bottom right of that bar to mark where the proximity sensor sits.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-a3-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2024 HL Section A Q3(ii)",
+    stem: "A 4K UHD interactive touch screen with integrated proximity sensor is shown.",
+    questionText: "State the function of the proximity sensor integrated into this screen.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks, 3 + 3)"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The integration of proximity sensors into UHD screens enhances user experience, convenience, and energy efficiency by allowing the display to respond intelligently to the presence or absence of users in its vicinity.", marks: 3, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q3-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q3-art.png",
+          "srcHash": "0c23b2067afb81ca3a96853a50a1fb2e",
+          "alt": "Colour photograph of the lower right-hand corner of an interactive touch screen: a teal abstract wallpaper on the display inside a thin black bezel, a dark bar along the bottom edge, and grey concentric rings drawn over the bottom right of that bar to mark where the proximity sensor sits.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3571,15 +4490,34 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-a5-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2024 HL Section A Q5(i)",
+    questionText: "Use the resistor colour code table to calculate the value of the resistor shown.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks, 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Value: 1000 Ω", marks: 4, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q5-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q5-art.png",
+          "srcHash": "aadc294c43067d390ef8c68c6c4488b1",
+          "alt": "A carbon-film resistor photographed at an angle beside the caption \"Resistor bands:\" and the list Brown, Black, Red, Gold, which are the four bands printed on it from left to right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-a5-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2024 HL Section A Q5(ii)",
-    stem: "Colour code Tolerance code Black 0 Resistor bands: Brown Black Red Gold Brown 1% Brown 1 Red 2% Red 2 Gold 5% Orange 3 Silver 10% Yellow 4 Green 5 Blue 6 Violet 7 Grey 8 White 9",
     questionText: "Accounting for tolerance, state the maximum and minimum possible values for this resistor.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Maximum value: 1050 Ω Violet 7", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Minimum value: 950 Ω Grey 8", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "White 9", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Maximum value: 1050 Ω", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Minimum value: 950 Ω", marks: null, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2024-HL-paper-secA-q5-art",
@@ -3597,12 +4535,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-a6-i", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "A", questionRef: "2024 HL Section A Q6(i)",
-    stem: "Network diagrams use nodes similar to that shown. EST EFT LST LFT",
+    stem: "Network diagrams use nodes similar to that shown.",
     questionText: "Explain the abbreviations.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "EST EFT", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "EST: Earliest Start Time", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "EST: Earliest Start Time", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "LFT: Latest Finish Time", marks: null, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2024-HL-paper-secA-q6-art",
@@ -3620,7 +4558,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-a6-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "A", questionRef: "2024 HL Section A Q6(ii)",
-    stem: "Network diagrams use nodes similar to that shown. EST EFT LST LFT",
+    stem: "Network diagrams use nodes similar to that shown.",
     questionText: "Explain how the critical path of a network diagram is established.",
     tariffModel: {"kind":"fixed","notation":"(6 marks, 4 + 2)"}, totalMarks: 2,
     rows: [
@@ -3640,17 +4578,45 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-a7-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2024 HL Section A Q7(i)",
+    questionText: "Name the type of gear train shown in the image.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks, 2 + 4)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Compound gear train.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q7-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q7-art.png",
+          "srcHash": "c0b2c908467e110397d991a1a293a603",
+          "alt": "Rendered pictorial view of a compound gear train in brown: a small gear labelled Gear A drives a large gear that shares its shaft with a second small gear, which drives a second large gear labelled Driven Gear. Red leader lines label the two small gears 15 Teeth and the two large gears 75 Teeth, and curved red arrows show the direction each gear turns.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-a7-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2024 HL Section A Q7(ii)",
     questionText: "Calculate the angular velocity of the driving gear A, if the output speed at the driven gear is 17 RPM.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 2 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Calculation: 15 Teeth 75 Teeth", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Driven/Driver x Driven/Driver 75/15 x 75/15 = 5/1 x 5/1 = 25/1 = 25:1", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Gear A rotates 25 times faster.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "25 x 17 = 425 RPM.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Gear speed Gear A = 425 RPM.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Driven/Driver x Driven/Driver 75/15 x 75/15 = 5/1 x 5/1 = 25/1 = 25:1", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Gear A rotates 25 times faster.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "25 x 17 = 425 RPM.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Gear speed Gear A = 425 RPM.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q7-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q7-art.png",
+          "srcHash": "c0b2c908467e110397d991a1a293a603",
+          "alt": "Rendered pictorial view of a compound gear train in brown: a small gear labelled Gear A drives a large gear that shares its shaft with a second small gear, which drives a second large gear labelled Driven Gear. Red leader lines label the two small gears 15 Teeth and the two large gears 75 Teeth, and curved red arrows show the direction each gear turns.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3662,7 +4628,7 @@ export const CARDS: SecCard[] = [
     questionText: "An exploded view of a garden lantern is shown. Sketch a pictorial view of the assembled lantern.",
     tariffModel: {"kind":"fixed","notation":"(6 marks)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lantern.", marks: 6, openList: true },
+    { id: "r-1", kind: "point", verbatim: "An exploded view of a garden lantern is shown. Sketch a pictorial view of the assembled lantern.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
     questionFigure: {
           "candId": "technology-2024-HL-paper-secA-q8-art",
@@ -3671,6 +4637,15 @@ export const CARDS: SecCard[] = [
           "alt": "Exploded pictorial view of a garden lantern, its parts spaced out vertically: the wire carrying handle, a small finial, the domed green top cover, the yellow cylindrical glass shade, a green collar, a grey cylindrical candle unit and the domed green base.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2024-HL-scheme-secA-q8",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-scheme-secA-q8.png",
+          "srcHash": "15d824db238f1456b41bc3b70899d23f",
+          "alt": "The marking scheme's own answer to 2024 HL Section A Q8, as the State Examinations Commission printed it: a shaded colour picture of the assembled garden lantern standing upright: a thin wire carrying handle looped over a dark green domed cap, a pale yellow glass chamber below it, a green collar, a grey metal band, and a dark green domed base. The scheme prints no words for Q8 beyond the ask and its tariff.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -3705,14 +4680,91 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-a10", topicId: "tech-core-ict", conceptId: "core-ict",
+    section: "A", questionRef: "2024 HL Section A Q10",
+    questionText: "The GPS luggage tag shown uses satellite navigation systems and cellular data connectivity to track luggage. The tag can also be scanned using a QR code on the back of the device. Explain each of the terms.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks, 2 + 2 + 2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Satellite Navigation Systems, commonly known as satellite navigation or satnav, are systems that use signals from satellites to determine the position, velocity, and real time information of a receiver anywhere on Earth. GPS is the most common example.", marks: 2, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Cellular data connectivity refers to the ability of a mobile device to access the internet and other data services using cellular networks. It allows users to connect to the internet, browse websites, use online applications and transmit/receive data through mobile devices.", marks: 2, openList: true },
+    { id: "r-3", kind: "point", verbatim: "A QR code, or Quick Response code, is a two-dimensional barcode that consists of black squares arranged on a white square grid. QR codes are designed to store and quickly retrieve information, making them a versatile tool used in various applications.", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q10-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q10-art.png",
+          "srcHash": "0f5e109f8e216735a5e535d490fe9f66",
+          "alt": "Colour photograph of a small pink GPS luggage tag, a rounded rectangle seen at an angle, with the brand name nut printed in magenta on its face above a grid of small pin holes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-a11-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2024 HL Section A Q11(i)",
+    questionText: "Calculate the mechanical advantage of a forklift if it lifts a mass of 1800 kg with an effort force of 200 N. Assume g = 9.81 m/s2",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mechanical advantage = Load force / effort force 1800 x 9.81/200 =", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "17,658/200 = 88.29", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q11-art.png",
+          "srcHash": "fc67969b76b2e07fcaf4bfcc42fec435",
+          "alt": "Colour photograph of an orange and grey counterbalance forklift truck: the driver's seat under a roll cage, a vertical mast at the front carrying two long forks lowered to the ground, and a heavy counterweight at the rear.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-a11-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2024 HL Section A Q11(ii)",
-    stem: "an effort force of 200 N. Assume g = 9.81 m/s2",
     questionText: "Explain the advantage of a low centre of gravity on the operation of the forklift.",
     tariffModel: {"kind":"fixed","notation":"(6 marks, 4 + 2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The center of gravity refers to the point where the entire weight of the forklift is considered to be concentrated. The low center of gravity increases stability, reduces the risk of tipping, improves handling, makes the forklift more maneuverable making the machine safer.", marks: 2, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q11-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q11-art.png",
+          "srcHash": "fc67969b76b2e07fcaf4bfcc42fec435",
+          "alt": "Colour photograph of an orange and grey counterbalance forklift truck: the driver's seat under a roll cage, a vertical mast at the front carrying two long forks lowered to the ground, and a heavy counterweight at the rear.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-a12", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2024 HL Section A Q12",
+    questionText: "Using the headings in the table below, describe the carbon footprint associated with producing small batches of car parts, such as the bracket shown, using 3D printing rather than traditional manufacturing processes. alternator bracket for a vintage car",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks, 2 + 2 + 2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It can take a long time to print each product using electrical energy running for hours.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Traditional metal cutting will shape the object quickly using high powered machines.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "3D printing generates minimal waste, subtractive manufacturing of drilling and cutting will generate waste materials. Other forms of traditional manufacturing such as injection moulding or casting will not create much waste.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "3D printing is associated with plastic materials (e.g. PLA, ABS, etc.) but has now expanded to a wider range of plastics, composites and metals including aluminium and stainless steel.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Traditional manufacturing can process the full range of materials.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q12-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q12-art.png",
+          "srcHash": "df962837acb90a8ce2d63f9e33b1f614",
+          "alt": "Colour photograph of a car alternator with a white 3D-printed mounting bracket bolted to its front, the pulley at the centre, with a red arrow pointing at the bracket.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3787,6 +4839,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Use of solvents, generation of fumes, skin reaction to adhesives, danger of adhering the user to adhesive, etc.", marks: 2, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-a15", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2024 HL Section A Q15",
+    questionText: "Make well-proportioned freehand sketches of two principal orthographic views of the fireside stool shown in the image below, which was designed by Irish furniture maker Tricia Harris.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks 3 + 3)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any two orthographic views", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secA-q15-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secA-q15-art.png",
+          "srcHash": "51a4d3889469fcc52e5f1d5886b64342",
+          "alt": "Colour photograph of a small solid-timber fireside stool in a thin black frame: a rectangular top over a front rail, two splayed slab legs each with an arched cut-out at the foot, and a shelf spanning between the legs near the floor.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4083,6 +5156,28 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2024 HL Section C Q1(b)(i)",
+    questionText: "Draw a flowchart for the operating sequence of the deterrent.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 10 + 4 + 2)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a flowchart for the operating sequence of the deterrent.", marks: 10, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2024-HL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-scheme-secC-q1b-i.png",
+          "srcHash": "7303d309d251895cc33846a412ff0821",
+          "alt": "The marking scheme's own answer to 2024 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start through Power on to the decision Check for movement., whose No branch loops back to repeat the check and whose Yes branch runs Red LED on, Sound on and Wait 60 seconds. to a second decision Check for movement.; its No branch runs Sound Off then Red LED off, and its Yes branch loops back up to Red LED on.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 HL Section C Q1(b)(ii)",
     questionText: "Suggest a modification to the flowchart that will turn on a water sprinkler if motion is detected more than once.",
@@ -4165,6 +5260,28 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-c2a-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2024 HL Section C Q2(a)(i)",
+    stem: "Wireless chargers work on the principle of electromagnetic induction.",
+    questionText: "Outline the operation of the wireless charger shown.",
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6 + 4)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The charger is connected to a power supply, when turned on, it generates an alternating current (AC) in a coil within the charger which produces an electromagnetic field. When you place a device on the charger it receives the magnetic field from the charger and turns it into DC current to charge the battery.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2a-art.png",
+          "srcHash": "38a4bc7712a48b27cf951f8794b17837",
+          "alt": "Colour photograph of a black three-in-one wireless charging stand: a smartphone propped upright on it showing a green charging symbol, a smartwatch on a raised arm to the right, and a pair of earbuds in a white case lying on the charging base.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c2a-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 HL Section C Q2(a)(ii)",
     stem: "Wireless chargers work on the principle of electromagnetic induction.",
@@ -4173,6 +5290,45 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Convenient, safer and prevents tripping, charging of multiple devices together, chargers can be integrated into furniture/vehicles etc", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2a-art.png",
+          "srcHash": "38a4bc7712a48b27cf951f8794b17837",
+          "alt": "Colour photograph of a black three-in-one wireless charging stand: a smartphone propped upright on it showing a green charging symbol, a smartwatch on a raised arm to the right, and a pair of earbuds in a white case lying on the charging base.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2024 HL Section C Q2(b)(i)",
+    stem: "An incomplete circuit diagram for an astable warning sounder is shown.",
+    questionText: "Redraw the circuit diagram to include an appropriate output.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Redraw the circuit diagram to include an appropriate output.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2b-art.png",
+          "srcHash": "431e1f4f000f77076c822b0260c1dedb",
+          "alt": "A circuit diagram of a 555 timer between two supply rails: R1 and R2 in series from the top rail to pins 7 and 6/2, a capacitor C from pin 2 to the bottom rail, pins 4 and 8 to the top rail, pin 1 to the bottom rail and the output at pin 3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2024-HL-scheme-secC-q2b-i",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-scheme-secC-q2b-i.png",
+          "srcHash": "ecb2829581173f01c683b48e418e6d89",
+          "alt": "The marking scheme's own answer to 2024 HL Section C Q2(b)(i), as the State Examinations Commission printed it: the 555 astable circuit redrawn between its two supply rails, R1 and R2 in series to pins 7, 6 and 2 with capacitor C to the lower rail, pins 4 and 8 to the upper rail and pin 1 to the lower, and the output added at pin 3: a polarised capacitor marked + in series with a loudspeaker that returns to the lower rail.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4191,8 +5347,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "technology-2024-HL-paper-secC-q2b-art",
           "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2b-art.png",
-          "srcHash": "54964d6028b891fa6da11ad06c6203b2",
-          "alt": "The pin layout of an eight-pin integrated circuit drawn as a plain rectangle with four leads on each side. The pin numbers read 7, 4 and 8 across the top, 6 and 3 in the middle, and 2, 1 and 5 across the bottom.",
+          "srcHash": "431e1f4f000f77076c822b0260c1dedb",
+          "alt": "A circuit diagram of a 555 timer between two supply rails: R1 and R2 in series from the top rail to pins 7 and 6/2, a capacitor C from pin 2 to the bottom rail, pins 4 and 8 to the top rail, pin 1 to the bottom rail and the output at pin 3.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
     },
@@ -4216,8 +5372,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "technology-2024-HL-paper-secC-q2b-art",
           "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2b-art.png",
-          "srcHash": "54964d6028b891fa6da11ad06c6203b2",
-          "alt": "The pin layout of an eight-pin integrated circuit drawn as a plain rectangle with four leads on each side. The pin numbers read 7, 4 and 8 across the top, 6 and 3 in the middle, and 2, 1 and 5 across the bottom.",
+          "srcHash": "431e1f4f000f77076c822b0260c1dedb",
+          "alt": "A circuit diagram of a 555 timer between two supply rails: R1 and R2 in series from the top rail to pins 7 and 6/2, a capacitor C from pin 2 to the bottom rail, pins 4 and 8 to the top rail, pin 1 to the bottom rail and the output at pin 3.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
     },
@@ -4253,6 +5409,36 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2024 HL Section C Q2(d)(i)",
+    questionText: "Draw a truth table to represent the operation of the logic gate system shown with O as the output.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a truth table to represent the operation of the logic gate system shown with O as the output.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2d-art.png",
+          "srcHash": "d31e3a25296e254fdb8b887562b633c5",
+          "alt": "A logic gate diagram: inputs A and B feed a two-input AND gate; input A also branches down through a NOT gate, whose output meets input C at a second AND gate; the outputs of the two AND gates feed an OR gate whose output is labelled O.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2024-HL-scheme-secC-q2d-i",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-scheme-secC-q2d-i.png",
+          "srcHash": "af6c5e07785aabee616f4fab6a8a28ff",
+          "alt": "The marking scheme's own answer to 2024 HL Section C Q2(d)(i), as the State Examinations Commission printed it: the label 'Truth table:' beside a table with a green header row A, B, C, O and alternate rows shaded light green; the output column O is in bold. Rows (A B C, then O): 0 0 0 gives 0; 0 0 1 gives 1; 0 1 0 gives 0; 0 1 1 gives 1; 1 0 0 gives 0; 1 0 1 gives 0; 1 1 0 gives 1; 1 1 1 gives 1.",
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 HL Section C Q2(d)(ii)",
     questionText: "Outline the function of transistors and relays when constructing logic circuits.",
@@ -4261,6 +5447,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Transistor: will create an electronic switching/current amplification for electronic circuits.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Relay: provides a method of controlling higher voltage circuits (including mains supply) using a low voltage electronic circuit.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q2d-art.png",
+          "srcHash": "d31e3a25296e254fdb8b887562b633c5",
+          "alt": "A logic gate diagram: inputs A and B feed a two-input AND gate; input A also branches down through a NOT gate, whose output meets input C at a second AND gate; the outputs of the two AND gates feed an OR gate whose output is labelled O.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4539,6 +5733,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 HL Section C Q4(d)(i)",
+    stem: "The expected product lifecycle for a hair styling product is shown.",
     questionText: "Name and describe each of the lifecycle stages A, B, C, and D.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
     rows: [
@@ -4546,8 +5741,43 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B - Growth: The market has accepted the product and sales begin to increase. The company may want to make improvements to the product to stay competitive.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "C - Maturity: Sales will reach their peak. Other competitors enter the market with alternative solutions and increasing competition.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "D - Decline: Sales begin to decline as the product reaches its saturation point. Most products are phased out of the market at this point due to the decrease in sales and because of competitive pressure. The market will see the product as old and no longer in demand.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Sales A B C", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q4d-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q4d-art.png",
+          "srcHash": "0e737ced33778c34411b1cb557f978c6",
+          "alt": "A product lifecycle graph drawn in red: Sales on the vertical axis against Time on the horizontal, divided by vertical lines into stages A, B, C and D. The curve rises slowly through A, climbs steeply through B, levels off across C and falls away sharply in D.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
+    section: "C", questionRef: "2024 HL Section C Q4(d)(ii)",
+    stem: "The expected product lifecycle for a hair styling product is shown.",
+    questionText: "An updated lifecycle for the hair styling product is shown above. This shows a significant change at stage D for the product. Suggest two possible reasons for this change.",
+    tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The product has gained additional sales:", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Enhanced features may have been added.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Product may have been relaunched with a marketing campaign.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "New markets may have been targeted.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Price adjustment.", marks: null, openList: true },
+    { id: "r-6", kind: "point", verbatim: "Seasonal demand.", marks: null, openList: true },
+    { id: "r-7", kind: "point", verbatim: "Effective customer satisfaction may encourage repeat buyers.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q4d-ii-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q4d-ii-art.png",
+          "srcHash": "ce042b9d928e368fa6fb0e587b0146f6",
+          "alt": "An updated product lifecycle graph drawn in green, on the same Sales against Time axes and stages A, B, C and D: the curve rises through A and B and levels off across C as before, but in D it dips briefly and then turns upward again.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4628,6 +5858,32 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
+    id: "tech-2024-hl-c5c-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
+    section: "C", questionRef: "2024 HL Section C Q5(c)(i)",
+    stem: "Personalised wooden boxes are often used for company presentations.",
+    questionText: "Describe three stages in fabricating a presentation box, similar to that shown, using hand crafting techniques.",
+    tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cut the pieces to size.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Corners can be attached at right angles with joints, adhesives or dowels.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "The base of the box can be permanently attached.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "The box lid can be designed to hinge and close or sit on top of the box sides.", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "A finishing technique (varnish, stain, wax, etc.) can be applied.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q5c-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q5c-art.png",
+          "srcHash": "6fc81afb37a2cf1832541f0e5232b8cb",
+          "alt": "Colour photograph of an open presentation box finished in striped walnut veneer: the hinged lid raised, and inside a black lined tray holding a gold pen and a small gold crest badge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 HL Section C Q5(c)(ii)",
     stem: "Personalised wooden boxes are often used for company presentations.",
@@ -4636,6 +5892,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A company crest can be hand engraved, carved, use marquetry, laser cut, etc.", marks: 8, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-HL-paper-secC-q5c-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-HL-paper-secC-q5c-art.png",
+          "srcHash": "6fc81afb37a2cf1832541f0e5232b8cb",
+          "alt": "Colour photograph of an open presentation box finished in striped walnut veneer: the hinged lid raised, and inside a black lined tray holding a gold pen and a small gold crest badge.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4833,6 +6097,36 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-a7", topicId: "tech-core-materials", conceptId: "core-materials",
+    section: "A", questionRef: "2025 HL Section A Q7",
+    questionText: "Ireland's sailing team of Robert Dickson and Sean Waddilove competed in the 2024 Paris Olympics in the men’s skiff event using the boat shown in the image. Name an appropriate material to be used for each boat part listed and outline a property of each material named.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ireland's sailing team of Robert Dickson and Sean Waddilove competed in the 2024 Paris Olympics in the men’s skiff event using the boat shown in the image. Name an appropriate material to be used for each boat part listed and outline a property of each material named.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secA-q7-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secA-q7-art.png",
+          "srcHash": "bdc9900cf7e511b98618085c0b4be15b",
+          "alt": "A photograph of Ireland's two-person skiff racing on blue water: a tall sail in green, white and orange bands, a dark jib marked IRL with the Olympic rings, and the crew leaning out from the hull. Beneath it three labels send red leader arrows into the photo: Mast (to the mast), Hull (to the hull) and Sail (to the striped sail).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2025-HL-scheme-secA-q7",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-scheme-secA-q7.png",
+          "srcHash": "9136e580105e140bb07d50fb48ddbf22",
+          "alt": "The marking scheme's own answer to 2025 HL Section A Q7, as the State Examinations Commission printed it: a three-column table with a green header row Part, Material, Properties and the Part column shaded green. Sail: Nylon/Kevlar; Hard wearing, high tensile strength, etc. Mast: Aluminium alloy/ Carbon Fibre; Tempered for strength, lightweight, strong, etc. Hull: Fibreglass/Aluminium; Strength, resistance to corrosion, etc. The Material and Properties entries are in bold.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-a8", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "A", questionRef: "2025 HL Section A Q8",
     questionText: "Use two graphic techniques to enhance the representation of the game controller shown. Sail Hull Mast Part Material Property Sail Mast Hull",
@@ -4930,6 +6224,31 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC065ALP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-a12", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2025 HL Section A Q12",
+    questionText: "Calculate the total resistance of the circuit shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(6 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Series: R2 + R3 = 8k + 4k = 12k", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "1/Rtotal = 1/Rseries + 1/R4 = 1/12kΩ + 1/12kΩ = 2/12 = 1/6kΩ", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "1/ Rtotal =1/6kΩ or (Product/Sum =144/24 = 6KΩ)", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Rtotal = 6 kΩ", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Total Resistance of circuit: 6 + 6 = 12kΩ", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secA-q12-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secA-q12-art.png",
+          "srcHash": "3760d2a0edc51edf99d2a4cbb6933c7f",
+          "alt": "A resistor circuit between two open terminals on the left: R1 = 6 kΩ sits in series on the top wire, which then splits into two parallel branches down to the bottom wire, one holding R2 = 8 kΩ above R3 = 4 kΩ in series, the other holding R4 = 12 kΩ alone.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-a13", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2025 HL Section A Q13",
     questionText: "Diving boards are adjusted according to the requirements of individual swimmers. Outline, using annotated sketches, an electro-mechanical method of adjusting the tilt angle of the diving board shown. Ladder Springboard Tilt Angle",
@@ -4975,6 +6294,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Lubricants are substances that reduce friction and offer smooth movement between the running parts of machinery and equipment. Cutting and cooling fluids will reduce the build-up of heat which will prolong tool life.", marks: 2, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-a15", topicId: "tech-core-graphics", conceptId: "core-graphics",
+    section: "A", questionRef: "2025 HL Section A Q15",
+    questionText: "Sketch an exploded pictorial view of the hinge shown.",
+    tariffModel: {"kind":"fixed","notation":"(6 marks)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sketch an exploded pictorial view of the hinge shown.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secA-q15-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secA-q15-art.png",
+          "srcHash": "9a1bda54c1d9d52abd5be9afa4b2a82a",
+          "alt": "A photograph of a brass butt hinge opened flat: two rectangular leaves, each drilled with four countersunk screw holes, joined by a knuckle down the middle. A red arrow labelled pin points to the top of the pin that runs through the knuckle.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2025-HL-scheme-secA-q15",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-scheme-secA-q15.png",
+          "srcHash": "2438cd88a8d49237534cdaa8bb2841e4",
+          "alt": "The marking scheme's own answer to 2025 HL Section A Q15, as the State Examinations Commission printed it: an exploded line drawing of a butt hinge, each part ringed by a soft pink outline and labelled in bold. Hinge plate 1, on the left, is a plate with screw holes and three knuckles; the Hinge pin stands apart in the middle as a long thin rod with a round head, with a small round cap drawn below the left plate; Hinge plate 2, on the right, is a plate with screw holes and two knuckles. Pink leader lines join the labels Hinge plate 1 and Hinge plate 2 to their parts.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5156,12 +6505,44 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-b3b-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 HL Section B Q3(b)(i)",
+    stem: "A gearbox that could be used in a personal transport pod is shown in the graphic.",
     questionText: "State two advantages of using a compound gear system.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 4 + 2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Compound gear trains are used to achieve a larger speed reduction or torque increase compared to simple gear trains.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "They maintain a more compact design and higher efficiency.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secB-q3b-art.png",
+          "srcHash": "79448d51a3b4c7b74ec9eeb9bd889ed5",
+          "alt": "A cut-away model of a compound gearbox: four yellow spur gears on shafts in an open green housing. Red leader arrows label them: A, a small gear on the right on the shaft labelled Motor; B, the large gear beside it; C, a smaller gear in front of B; D, a large gear on the left on the shaft labelled Output.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-b3b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "B", questionRef: "2025 HL Section B Q3(b)(ii)",
+    stem: "A gearbox that could be used in a personal transport pod is shown in the graphic.",
+    questionText: "The electric motor rotates at 630 RPM and is connected to the gearbox shown. If gear A has 20 teeth, gear B has 60 teeth, gear C has 30 teeth, and gear D has 60 teeth, calculate the output speed of the gear system.",
+    tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 4 + 2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Driver/driven x Driver/driven) x speed (20/60 x 30/60) x 630 = (1/3 x 1/2) x 630", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "1/6 x 630 = 105 RPM", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secB-q3b-art.png",
+          "srcHash": "79448d51a3b4c7b74ec9eeb9bd889ed5",
+          "alt": "A cut-away model of a compound gearbox: four yellow spur gears on shafts in an open green housing. Red leader arrows label them: A, a small gear on the right on the shaft labelled Motor; B, the large gear beside it; C, a smaller gear in front of B; D, a large gear on the left on the shaft labelled Output.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5170,11 +6551,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-b3b-iii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 HL Section B Q3(b)(iii)",
+    stem: "A gearbox that could be used in a personal transport pod is shown in the graphic.",
     questionText: "Describe a method of reducing friction and wear as the gears rotate in the housing of the gearbox.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4 + 4 + 2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The gearbox can be filled with oil up to the split in the casing. As the gears rotate, they will carry the lubricating oil to all moving parts of the gearbox. As speed increases, the oil will be moved quicker to lubricate effectively. Bearings etc.", marks: 2, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secB-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secB-q3b-art.png",
+          "srcHash": "79448d51a3b4c7b74ec9eeb9bd889ed5",
+          "alt": "A cut-away model of a compound gearbox: four yellow spur gears on shafts in an open green housing. Red leader arrows label them: A, a small gear on the right on the shaft labelled Motor; B, the large gear beside it; C, a smaller gear in front of B; D, a large gear on the left on the shaft labelled Output.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5272,15 +6662,36 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2025 HL Section C Q1(b)(i)",
+    stem: "A reverse vending machine operates with the following sequence: • Touch screen to start • Place bottle or can on conveyor belt • Barcode read to approve bottle or can • Approved bottles are sent to servo 1 for processing • Approved cans are sent to servo 2 for processing • The user stops the machine by pressing ‘Print Voucher’ • Deposit voucher is printed.",
+    questionText: "Draw a flowchart for the operating sequence of the reverse vending machine.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 10 + 4 + 2)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a flowchart for the operating sequence of the reverse vending machine.", marks: 10, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2025-HL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-scheme-secC-q1b-i.png",
+          "srcHash": "a10e37d0856246728cb6310c67c178fa",
+          "alt": "The marking scheme's own answer to 2025 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start through Touch screen ON and Place item on conveyor to the decision Barcode read, whose No branch goes to a Reject box and whose Yes branch reaches the decision Is it a plastic bottle?; its Yes branch goes to Send to servo 1 and its No branch to the decision Is it an aluminium can?, whose No branch loops back above that decision and whose Yes branch runs Send to servo 2 and Stop/Print voucher, which loops back to above Touch screen ON. A red arrow labelled Modification points at the Reject box. The scheme prints beside it: Suggested solution, Alternatives accepted:",
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 HL Section C Q1(b)(ii)",
     stem: "A reverse vending machine operates with the following sequence: • Touch screen to start • Place bottle or can on conveyor belt • Barcode read to approve bottle or can • Approved bottles are sent to servo 1 for processing • Approved cans are sent to servo 2 for processing • The user stops the machine by pressing ‘Print Voucher’ • Deposit voucher is printed.",
     questionText: "Suggest a modification to the flowchart that will return unapproved bottles and cans.",
-    tariffModel: {"kind":"questionTotal","notation":"(16 marks, 10 + 4 + 2)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 10 + 4 + 2)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Barcode will read to accept or reject Yes item placed on conveyor belt.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Is it a plastic Yes", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Send to servo 1 bottle?", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Barcode will read to accept or reject item placed on conveyor belt.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -5294,11 +6705,9 @@ export const CARDS: SecCard[] = [
     questionText: "Suggest a method of sensing when a storage compartment in the machine is full.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 10 + 4 + 2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "aluminium can?", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "A limit switch at the top of the Yes container could be used to stop Send to servo 2 any further processing of materials. Stop/Print", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "LDR and LED voucher Suggested solution,", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Distance/Motion sensor. Alternatives accepted:", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "User stops machine", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A limit switch at the top of the container could be used to stop any further processing of materials.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "LDR and LED", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Distance/Motion sensor.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -5390,6 +6799,59 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC065ALP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 HL Section C Q2(b)(i)",
+    stem: "An adjustable LED circuit activates in low light.",
+    questionText: "Name the integrated circuit (IC) shown.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 2 + 8 + 6)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Op-Amp", marks: 2, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secC-q2b-art.png",
+          "srcHash": "3ff9af14a4cbbc6bc793eaeeb29a8d55",
+          "alt": "An op-amp circuit between a +9 V rail at the top and a 0 V rail at the bottom. A potential divider of R1 above R2 runs between the rails, its junction wired to the + input labelled B of a triangle labelled IC. A wire labelled Input enters from the left, hops over the divider wire and reaches the - input labelled A. The IC's output end is labelled output; no input or output device is drawn.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 HL Section C Q2(b)(ii)",
+    stem: "An adjustable LED circuit activates in low light.",
+    questionText: "Complete the circuit to include an appropriate input and output.",
+    tariffModel: {"kind":"fixed","notation":"(16 marks, 2 + 8 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Complete the circuit to include an appropriate input and output.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secC-q2b-art.png",
+          "srcHash": "3ff9af14a4cbbc6bc793eaeeb29a8d55",
+          "alt": "An op-amp circuit between a +9 V rail at the top and a 0 V rail at the bottom. A potential divider of R1 above R2 runs between the rails, its junction wired to the + input labelled B of a triangle labelled IC. A wire labelled Input enters from the left, hops over the divider wire and reaches the - input labelled A. The IC's output end is labelled output; no input or output device is drawn.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2025-HL-scheme-secC-q2b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-scheme-secC-q2b-ii.png",
+          "srcHash": "94e2d4aae90f98fc3c989d807b431f9d",
+          "alt": "The marking scheme's own answer to 2025 HL Section C Q2(b)(ii), as the State Examinations Commission printed it: the circuit completed with a variable resistor above an LDR (a resistor in a circle with light arrows pointing in) forming a potential divider whose junction feeds the - input A of the IC, R1 and R2 setting the + input B, and the IC's output driving a resistor in series with an LED (arrows pointing out) down to the 0 V rail. The scheme prints beside it: Input: Potential divider LDR / Variable resistor, and LED output.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 HL Section C Q2(b)(iii)",
     stem: "An adjustable LED circuit activates in low light.",
@@ -5399,6 +6861,83 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The basic principle of this circuit is to compare the voltages at the Op-Amp IC. The potential divider at R1 and R2 provides a reference voltage at B. The LDR and resistor provide a potential divider circuit with the voltage from A feeding into the", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Op-Amp. As light level changes, the resistance of the LDR changes. When the voltage into the Op-Amp rises above the reference voltage at B, the LED output of the IC is turned on.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secC-q2b-art.png",
+          "srcHash": "3ff9af14a4cbbc6bc793eaeeb29a8d55",
+          "alt": "An op-amp circuit between a +9 V rail at the top and a 0 V rail at the bottom. A potential divider of R1 above R2 runs between the rails, its junction wired to the + input labelled B of a triangle labelled IC. A wire labelled Input enters from the left, hops over the divider wire and reaches the - input labelled A. The IC's output end is labelled output; no input or output device is drawn.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 HL Section C Q2(c)(i)",
+    stem: "A 3D printer will only operate when the power is switched on and the PLA filament is loaded into either extruder nozzle 1 or extruder nozzle 2. The printing nozzle must also reach a temperature of 400°C.",
+    questionText: "Draw a logic gate circuit to represent the operation of the 3D printer.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Draw a logic gate circuit to represent the operation of the 3D printer.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2025-HL-scheme-secC-q2c-i",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-scheme-secC-q2c-i.png",
+          "srcHash": "c3a195cb4da649c7edf214e278f1c97d",
+          "alt": "The marking scheme's own answer to 2025 HL Section C Q2(c)(i), as the State Examinations Commission printed it: a logic gate circuit in which Filament in nozzle 1 (B) and Filament in nozzle 2 (C) enter an OR gate; the OR gate's output and Switch on (A) enter an AND gate; that AND gate's output and Temperature sensor for 400°C (D) enter a second AND gate, whose output is E.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 HL Section C Q2(c)(ii)",
+    stem: "A 3D printer will only operate when the power is switched on and the PLA filament is loaded into either extruder nozzle 1 or extruder nozzle 2. The printing nozzle must also reach a temperature of 400°C.",
+    questionText: "Compile a truth table for this system.",
+    tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Compile a truth table for this system.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    figure: {
+          "candId": "technology-2025-HL-scheme-secC-q2c-ii",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-scheme-secC-q2c-ii.png",
+          "srcHash": "8fec8d366b1b0d9e399627fbbac1746c",
+          "alt": "The marking scheme's own answer to 2025 HL Section C Q2(c)(ii), as the State Examinations Commission printed it: a truth table headed A, B, C, D, E listing all sixteen combinations of A to D from 0 0 0 0 to 1 1 1 1, alternate rows shaded green; E is 1 only in the rows 1 0 1 1, 1 1 0 1 and 1 1 1 1, and 0 in every other row.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC065ALP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
+    id: "tech-2025-hl-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 HL Section C Q2(d)(i)",
+    stem: "Resistance, voltage, and current can be measured using electronic meters.",
+    questionText: "Outline the purpose of meter A and the purpose of meter V in the circuit shown.",
+    tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Meter A – Ammeter – reads current in Amps", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Meter V – Voltmeter – reads voltage in Volts.", marks: null, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secC-q2d-art.png",
+          "srcHash": "771b6776c860f177737ce6bc6b177842",
+          "alt": "A series circuit: a 12V battery (cells drawn with a dashed link) on the left drives current through R1 and then R2 on the right and back along the bottom wire through a circle marked A (the ammeter); a circle marked V (the voltmeter) is wired across R1 alone.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5416,6 +6955,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Meter V: V = I x R1", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "V= .002 x 4000 = 8V", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2025-HL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2025-HL-paper-secC-q2d-art.png",
+          "srcHash": "771b6776c860f177737ce6bc6b177842",
+          "alt": "A series circuit: a 12V battery (cells drawn with a dashed link) on the left drives current through R1 and then R2 on the right and back along the bottom wire through a circle marked A (the ammeter); a circle marked V (the voltmeter) is wired across R1 alone.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5886,12 +7433,10 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the voltmeter reading (V) in the circuit shown.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Vout = (Vin × R2) / (R1 + R2 +R3)", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "= (12 × 40) / (10 + 40 +10) = 480 / 60", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "= 8V", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "R total = 10 + 40 + 10 = 60 Ω", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "I = V/R = 12/60 = 0.2 amp", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "Voltage across 40 Ω = I x R = 0.2 x 40 = 8 V", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Vout = (Vin × R2) / (R1 + R2 +R3) = (12 × 40) / (10 + 40 +10) = 480 / 60 = 8V", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "R total = 10 + 40 + 10 = 60 Ω", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "I = V/R = 12/60 = 0.2 amp", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Voltage across 40 Ω = I x R = 0.2 x 40 = 8 V", marks: null, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2026-HL-paper-secA-q3-art",
@@ -6355,9 +7900,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain, using annotated sketches, what is meant by the term triangulation in a frame structure.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4 + 2 + 4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Reinforces a frame structure to increase", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "rigidity, stability and strength.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "The load is spread downward along their sides.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Reinforces a frame structure to increase rigidity, stability and strength.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "The load is spread downward along their sides.", marks: null, openList: true },
     ],
   } as SecCard,
   {

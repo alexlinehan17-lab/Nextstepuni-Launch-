@@ -93,8 +93,15 @@ CALCULATION = re.compile(r'\d.*[=\u2248]|[=\u2248].*\d'
 
 # The running footer, and the page number the extractor leaves welded to a
 # marking point's last line.
+# Only the footer's own form -- "Leaving Certificate Examination 2026",
+# "Leaving Certificate, 2020" -- never the words inside an ask: 2023 Ordinary
+# Q10 ends "...a design portfolio for Leaving Certificate Technology." and was
+# cut to "...portfolio for".
 FOOTER = re.compile(
-    r'\s*\d{0,3}\s*Leaving Certificate(?:\s+Examination)?[,\s].*$'
+    r'\s*\d{0,3}\s*Leaving Certificate(?:\s+Examination)?,?\s*20\d\d\b.*$'
+    # The 2021 Ordinary booklet's hidden footer tag, printed white at the foot of
+    # pages 3 and 5 and read onto the end of Q12's ask.
+    r'|\s*page\s+running\s*$'
     r'|\s*Technology\s*[-–—]\s*(?:Higher|Ordinary)\s+Level.*$'
     r'|\s*Please turn over\b.*$|\s*Do not write on this page\b.*$', re.I)
 
@@ -131,7 +138,9 @@ def flattened_table(text):
     words = text.split()
     if len(words) < 8 or re.search(r'[.?!]', text):
         return False
-    return sum(1 for w in words if len(w) <= 3) >= 0.5 * len(words)
+    # Twelve words with no sentence among them is a table (the 2024 Higher
+    # resistor colour code), however long its cells.
+    return len(words) >= 12 or sum(1 for w in words if len(w) <= 3) >= 0.5 * len(words)
 
 MIN_CUE_WORDS = 4
 # How much of the scheme's cue the paper's ask must hold before the pairing
@@ -368,6 +377,11 @@ def keeps_stem(stem, question):
     # The stem repeats the ask on a whole-question leaf: the census hands the
     # same sentence back as both, and printing it twice looks like a defect.
     if text.rstrip('.') in (question or '').rstrip('.'):
+        return False
+    # Or the other way about: a whole-question stem that is the ask with the
+    # answerbook's labels after it ("...State the meaning of each colour
+    # code. Red colour-coded sign: Yellow colour-coded sign:").
+    if question and question.rstrip('.') in text:
         return False
     return True
 
@@ -619,6 +633,10 @@ def author(bind_figures=True):
                 # it; the question does not.
                 ask = TC.strip_labels(ask, paper_labels) or ask
                 ask = TRAILING_LABEL.sub('', ask).strip()
+                # A picture's lone letter read after the ask's last sentence
+                # ("...direction of arrow A. A"), whether or not its crop is
+                # known: a question never ends in a capital on its own.
+                ask = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', ask)
 
                 del BACKED_OFF[:]
                 cue, points = split_cue([clean(l) for l in lines], ask)
@@ -671,12 +689,21 @@ def author(bind_figures=True):
                 pieces = []
                 lost_picture = not figure and points_at_print(question)
                 for piece in stem_pieces(section, q, letter, roman, texts, stems):
+                    # The answerbook's ruled blanks and their fill-in labels
+                    # ("Time: ____ People: ____"), which 2021 Ordinary Q6 prints
+                    # between its stem and its romans.
+                    piece = clean(BLANK_RULE.sub(' ', piece))
+                    piece = re.sub(r'(?:\s*\b[A-Z][a-z]{1,12}:\s*)+$', '', piece).strip()
                     piece = TC.strip_labels(piece, paper_labels)
                     piece = TRAILING_LABEL.sub('', piece).strip()
                     piece = re.sub(r'\s+OR\s*$', '', piece)
                     # A neighbouring figure's lone letter ("...in electronics. A")
                     # and a table the walker flattened ("Week 1 Week 2 ... Task D").
                     piece = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', piece)
+                    # A caption that followed the stem's last sentence on the
+                    # page ("...Technology workshops. Cylinder sail"): a run of
+                    # up to four words that closes nothing.
+                    piece = re.sub(r'(?<=[.?!])\s+(?:[A-Z]\S*\s+)(?:\S+\s+){0,2}\S*[^.?!:\s]\s*$', '', piece)
                     if not keeps_stem(piece, question) or CAPTION.match(piece) \
                             or flattened_table(piece):
                         continue
@@ -729,6 +756,12 @@ def author(bind_figures=True):
                     points = kept or points[-1:]
                 if len(points) > 1:
                     points = [p for p in points if not ACCEPTED_NOTE.match(p)]
+                if backed_off and backed_off in points and cue \
+                        and SCHEME_NORM(f'{cue} {backed_off}') in bare:
+                    # The cue and the back-off line together are the ask: the
+                    # reprint wrapped, and its last line is no answer whether
+                    # or not a drawing is bound.
+                    points = []
                 if backed_off and solution and backed_off in points:
                     # The reprint consumed every line and the scheme's answer
                     # is its DRAWING (the crop is bound): the back-off line is
@@ -769,14 +802,21 @@ def author(bind_figures=True):
                                         ' '.join(block.head_lines())))
 
                 joined = f'{show_stem} {question}'
+                label_key = []
                 if cardlint.NAMES_LETTERS.search(joined) \
                         and not cardlint.INVITES_DRAWING.search(joined):
                     # A question naming labelled points needs those letters
                     # DECODED as well as shown, and the build drops a card that
-                    # shows them without a label key. The crop alone is not
-                    # enough, so these stay refused even where one exists.
-                    note('names a lettered part this author cannot decode', question)
-                    continue
+                    # shows them without a label key. tech_crops.LABEL_KEYS
+                    # holds the scheme's own words for each letter; a part
+                    # with a picture and a key is carded, the rest refused.
+                    decoded = TC.LABEL_KEYS.get((year, level, section, q, letter))
+                    if figure and decoded:
+                        label_key = [{'letter': d['letter'], 'meaning': d['meaning'],
+                                      'askedInThisQuestion': True} for d in decoded]
+                    else:
+                        note('names a lettered part this author cannot decode', question)
+                        continue
                 if cardlint.SCHEME_LEAK.search(joined):
                     note('the paper text carries scheme metadata', question)
                     continue
@@ -834,7 +874,7 @@ def author(bind_figures=True):
                     # by the siblings under one part, which is right here: the
                     # paper prints the picture once for the whole question.
                     'questionFigureKey': figure or '',
-                    'labelKey': [],
+                    'labelKey': label_key,
                     'tariffModel': model,
                     'totalMarks': total,
                     'rows': rows,

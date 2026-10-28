@@ -1247,7 +1247,10 @@ def _paragraph_heads(raw):
 # (see the walker). Prose, not lettering.
 TECH_CONTINUES = re.compile(
     r'^(?:\u2022|\d{1,2}\.\s)'
-    r'|^(?:\S+\s+){4,}\S*[.?:]\s*$')
+    r'|^(?:\S+\s+){4,}\S*[.?:]\s*$'
+    # The tail of a wrapped sentence: "2(b) above." after "...the Adibot
+    # robot, shown in", or "above." on its own.
+    r'|^(?:\d\([a-d]\)\s+)?[a-z][^.?!]{0,40}[.?!]\s*$')
 TECH_ASKS = re.compile(
     r'^(?:\u2022|(?:briefly\s+)?(?:calculate|compare|complete|define|describe'
     r'|determine|differentiate|discuss|distinguish|draw|explain|give|identify'
@@ -1506,7 +1509,16 @@ def census_sections(subject, year, level):
                 q, letter, roman = int(op.group(1)), None, None
                 continue
             nl = re.match(r'(\d{1,2})\(([a-d])\)\s*', text)
-            if nl and section in ('B', 'C'):
+            # A head opens a part; a reference to one mid-sentence does not.
+            # 2023 Ordinary 1(c) says "...the novelty light in 1(b) above." and
+            # wraps so that "1(b) above." starts a block, which re-opened 1(b)
+            # and welded 1(c)'s two asks onto 1(b)'s cards.
+            # Nor one followed by a roman and a lower-case word: 2021 Ordinary
+            # 3(b)(ii) wraps "...the processes at" / "3(b) (i) has the lesser
+            # environmental impact." and read as a head it cut the ask at "at".
+            after = re.sub(r'^\(\s*(?:i{1,3}|iv|v)\s*\)\s*', '', text[nl.end():].strip()) if nl else ''
+            if nl and section in ('B', 'C') \
+                    and (not after or not after[:1].islower()):
                 q, letter, roman = int(nl.group(1)), nl.group(2), None
                 key = (section, q, letter, None)
                 parts.setdefault(key, [])
@@ -1617,6 +1629,15 @@ def census_sections(subject, year, level):
                 parts[key].append(rest)
             continue
         if PP.FURNITURE.match(text):
+            continue
+        if subject == 'technology' and section == 'A' and roman \
+                and (section, q, None, roman) in parts \
+                and (text[:1].islower() or text.startswith('\u2022')) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # Section A wraps a roman's ask into a block of its own too: 2024
+            # Higher 11(i) is "...a mass of 1800 kg with" / "an effort force of
+            # 200 N. Assume g = 9.81 m/s2", and the second block was its stem.
+            parts[(section, q, None, roman)].append(text)
             continue
         if subject == 'technology' and section in ('B', 'C') and letter \
                 and not roman and (section, q, letter, None) in parts \
@@ -3765,7 +3786,11 @@ def census_subject(subject):
             expected[(level, label)] = (total, n)
     for p in papers:
         if p.get('marksSum') and expected.get((p['level'], p.get('paper'))):
-            want = expected[(p['level'], p.get('paper'))][0]
+            want, n = expected[(p['level'], p.get('paper'))]
+            # Two sittings that disagree name no expectation: Technology 2020
+            # Higher prints 128 and 2021 Higher 64, and a tie flagged 2021.
+            if n < 2:
+                continue
             if p['marksSum'] != want:
                 p['flags'].append({
                     'type': 'marks-checksum',
