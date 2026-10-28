@@ -346,6 +346,12 @@ def _norm(line):
     # "Ɵ/°C = T/K – 273.15" in Times New Roman. Between letters the same code
     # point is Calibri's "ti" ligature ("invesƟgated"), which unligature restores.
     line = re.sub(r'(?<![A-Za-z])\u019f(?![A-Za-z])', '\u03b8', line)
+    # CambriaMath sets every digit and letter of a formula as a Mathematical
+    # Alphanumeric code point ("𝟕𝟑/𝟏𝟐𝟎𝟎", "𝑽𝒓𝒎𝒔"): the same characters in a
+    # maths style. They are read as the plain characters they are -- a styled
+    # "𝟎𝟎" is otherwise indistinguishable from the doubled-glyph font defect
+    # the deck build refuses, and the provenance gate folds them the same way.
+    line = ''.join(unicodedata.normalize('NFKD', c) if 0x1D400 <= ord(c) <= 0x1D7FF else c for c in line)
     line = unligature(line.replace(' ', ' ').replace(' ', ' '))
     return re.sub(r'\s+', ' ', line).strip()
 

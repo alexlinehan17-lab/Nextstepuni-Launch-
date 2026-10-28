@@ -9928,7 +9928,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r1", kind: "point", verbatim: "C = 48.74°", marks: 3 },
-    { id: "r2", kind: "point", verbatim: "n = 𝟏/(sin C)", marks: 6 },
+    { id: "r2", kind: "point", verbatim: "n = 1/(sin C)", marks: 6 },
     { id: "r3", kind: "point", verbatim: "n = 1.33", marks: 3 },
     ],
   } as SecCard,
@@ -10032,7 +10032,7 @@ export const CARDS: SecCard[] = [
     questionText: "A violin string is initially tuned to a fundamental frequency of 250 Hz under a tension of 10 N. Calculate the new tension required to adjust the fundamental frequency to 375 Hz assuming the tension is the only factor being changed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "𝒇∝√𝑻", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "f∝√T", marks: 3 },
     { id: "r2", kind: "point", verbatim: "T = 22.5 N", marks: 3 },
     ],
   } as SecCard,
@@ -10265,7 +10265,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r1", kind: "point", verbatim: "slope formula", marks: 3 },
-    { id: "r2", kind: "point", verbatim: "C = 𝜺𝑨/𝒅", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "C = εA/d", marks: 3 },
     { id: "r3", kind: "point", verbatim: "A ≈ 2.3 ×10⁻² m²", marks: 3 },
     ],
     figure: {
@@ -10685,7 +10685,7 @@ export const CARDS: SecCard[] = [
     questionText: "Estimate by calculation how many nuclei of polonium–210 remain in the 3.0 mg sample after 276 days.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r1", kind: "point", verbatim: "T 1/2 = 𝐥n2/λ", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "T 1/2 = ln2/λ", marks: 4 },
     { id: "r2", kind: "point", verbatim: "T1/2 = 1.19 × 10⁷ s / 138 days", marks: 2 },
     { id: "r3", kind: "point", verbatim: "2.14 × 10¹⁸ nuclei", marks: 2 },
     ],
@@ -10831,7 +10831,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the average current drawn if the V2G provides a peak AC voltage of 328 V to power a 2 kW electric kettle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "𝑽𝒓𝒎𝒔= 𝑽ₚₑₐₖ/(√𝟐)", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "Vrms= Vₚₑₐₖ/(√2)", marks: 2 },
     { id: "r2", kind: "point", verbatim: "P = VI", marks: 2 },
     { id: "r3", kind: "point", verbatim: "I = 8.62 A", marks: 2 },
     ],
@@ -11056,7 +11056,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r1", kind: "point", verbatim: "v = rω", marks: 3 },
     { id: "r2", kind: "point", verbatim: "v = 31.2 (m s⁻¹)", marks: 3 },
-    { id: "r3", kind: "point", verbatim: "f' = 𝒇𝒄/(c±u)", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "f' = fc/(c±u)", marks: 3 },
     { id: "r4", kind: "point", verbatim: "fmin = 1008 Hz", marks: 3 },
     ],
   } as SecCard,
@@ -11221,7 +11221,7 @@ export const CARDS: SecCard[] = [
     questionText: "Given that, at this distance, the strong nuclear force between the two protons is 120 times stronger than the force due to their charge, calculate the strong nuclear force between the two protons,",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "F = 𝒒₁𝒒₂/(4π𝝐d²)", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "F = q₁q₂/(4πεd²)", marks: 2 },
     { id: "r2", kind: "point", verbatim: "103 (N)", marks: 2 },
     { id: "r3", kind: "point", verbatim: "1.23 × 10⁴ N", marks: 2 },
     ],

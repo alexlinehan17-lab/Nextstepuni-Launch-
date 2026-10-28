@@ -38242,7 +38242,7 @@
    {
     "id": "r2",
     "kind": "point",
-    "verbatim": "n = 𝟏/(sin C)",
+    "verbatim": "n = 1/(sin C)",
     "marks": 6
    },
    {
@@ -38477,7 +38477,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "𝒇∝√𝑻",
+    "verbatim": "f∝√T",
     "marks": 3
    },
    {
@@ -38874,7 +38874,7 @@
    {
     "id": "r2",
     "kind": "point",
-    "verbatim": "C = 𝜺𝑨/𝒅",
+    "verbatim": "C = εA/d",
     "marks": 3
    },
    {
@@ -39637,7 +39637,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "T 1/2 = 𝐥n2/λ",
+    "verbatim": "T 1/2 = ln2/λ",
     "marks": 4
    },
    {
@@ -39913,7 +39913,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "𝑽𝒓𝒎𝒔ൌ 𝑽ₚₑₐₖ/(√𝟐)",
+    "verbatim": "Vrmsൌ Vₚₑₐₖ/(√2)",
     "marks": 2
    },
    {
@@ -40310,7 +40310,7 @@
    {
     "id": "r3",
     "kind": "point",
-    "verbatim": "f' = 𝒇𝒄/(c±u)",
+    "verbatim": "f' = fc/(c±u)",
     "marks": 3
    },
    {
@@ -40601,7 +40601,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "F = 𝒒₁𝒒₂/(4π𝝐d²)",
+    "verbatim": "F = q₁q₂/(4πεd²)",
     "marks": 2
    },
    {
