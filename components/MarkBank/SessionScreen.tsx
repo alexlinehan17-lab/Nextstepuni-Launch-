@@ -684,10 +684,14 @@ const MarkRowView: React.FC<{
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
           <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: chosen ? SUCCESS_TEXT : INK_2 }}>
             {/* A descending tariff is stated as it is paid. Saying "5 marks
-                each" of a 6-then-4 split is wrong for both halves. */}
-            {requiresAll ? `All ${g.claimMax} of these` : `Any ${g.claimMax} of these`} — {g.perOptionSteps
-              ? `${g.perOptionSteps.slice(0, g.claimMax).join(' then ')} marks`
-              : `${g.perOption} marks each`}
+                each" of a 6-then-4 split is wrong for both halves. A menu the
+                scheme prices only as a whole (an orderedSplit or questionTotal
+                card) has no value per option, and printed "undefined marks
+                each" on 34 shipped cards; it states the choice alone and the
+                card's footnote says how the marks are given. */}
+            {requiresAll ? `All ${g.claimMax} of these` : `Any ${g.claimMax} of these`}{g.perOptionSteps
+              ? ` — ${g.perOptionSteps.slice(0, g.claimMax).join(' then ')} marks`
+              : Number.isFinite(g.perOption) ? ` — ${g.perOption} marks each` : ''}
           </span>
           {showMarks && (
             <span style={{

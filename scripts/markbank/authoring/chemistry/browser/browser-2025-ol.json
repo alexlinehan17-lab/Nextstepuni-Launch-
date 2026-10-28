@@ -1,0 +1,101 @@
+[
+ {
+  "id": "chem-2025-ol-q1-b",
+  "ask": "Name the technique shown in Diagram 1",
+  "answer": "reflux",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q1-c-fig",
+  "ask": "Name the piece of apparatus labelled C",
+  "answer": "(liebig) condenser",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q1-c-ii",
+  "ask": "Identify the change of state that occurs in C",
+  "answer": "to liquid",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q1-e-fig",
+  "ask": "Warning pictograms found on containers",
+  "answer": "flammable",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q2-b",
+  "ask": "Describe how the burette was rinsed before use",
+  "answer": "volumetric flask",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q2-d",
+  "ask": "Calculate the concentration, in moles per litre, of the HCl solution",
+  "answer": "0.00125 × 2 = 0.0025",
+  "solution": true
+ },
+ {
+  "id": "chem-2025-ol-q3-b-i",
+  "ask": "Plot a graph, on graph paper",
+  "answer": "line of best fit",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q4-h",
+  "ask": "carried at different",
+  "answer": "stationary"
+ },
+ {
+  "id": "chem-2025-ol-q6-b",
+  "ask": "Draw the molecular structure of C₃H₆",
+  "answer": "propene",
+  "solution": true
+ },
+ {
+  "id": "chem-2025-ol-q7-c-i-ii",
+  "ask": "Is the ‘pH up’ solution acidic or basic?",
+  "answer": "it increases the pH"
+ },
+ {
+  "id": "chem-2025-ol-q8-a-ii",
+  "ask": "Draw the structure of a molecule of ethanol",
+  "answer": "its own print is shown with the answer",
+  "solution": true
+ },
+ {
+  "id": "chem-2025-ol-q9-b-ii",
+  "ask": "Cu²⁺(aq) + 2e⁻ → Cu(s)",
+  "answer": "Zn / Zinc"
+ },
+ {
+  "id": "chem-2025-ol-q10-c-i-iii",
+  "ask": "Calculate the volume (in litres) of this quantity of CO gas",
+  "answer": "6 × 22.4 = 134.4 (L)"
+ },
+ {
+  "id": "chem-2025-ol-q11-a-1",
+  "ask": "The first element of the periodic table of the elements is",
+  "answer": "1 = hydrogen / H",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-ol-q11-b",
+  "ask": "",
+  "answer": "sodium chloride / NaCl",
+  "figure": true,
+  "solution": true
+ },
+ {
+  "id": "chem-2025-ol-q11-c",
+  "ask": "H₂(g) + I₂(g) ⇌ 2HI(g)",
+  "answer": "systems at equilibrium oppose applied stresses",
+  "solution": true
+ },
+ {
+  "id": "chem-2025-ol-q11-d-a",
+  "ask": "Explain how the carbon in fossil fuels becomes CO₂",
+  "answer": "photosynthesis / dissolving in oceans",
+  "figure": true
+ }
+]

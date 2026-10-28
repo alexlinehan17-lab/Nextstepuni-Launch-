@@ -1,0 +1,20 @@
+[
+ {"id": "chem-2016-hl-q1-a", "ask": "Describe in detail the procedures involved in measuring", "answer": "stopper and invert flask a number of times"},
+ {"id": "chem-2016-hl-q1-c-i", "ask": "the number of moles of sodium hydroxide in each 25.0 cm³ portion", "answer": "0.0015 (1.5 × 10⁻³) moles", "solution": true},
+ {"id": "chem-2016-hl-q2-a", "ask": "Describe how to chemically test sample A or B for unsaturation.", "answer": "no change in colour", "figure": true},
+ {"id": "chem-2016-hl-q2-b-ii", "ask": "Identify C and E.", "answer": "E: ethanoic acid (CH₃COOH)", "solution": true},
+ {"id": "chem-2016-hl-q3-b", "ask": "", "answer": "appropriate, correct numeric scales on both axes", "figure": true, "solution": true},
+ {"id": "chem-2016-hl-q4-e", "ask": "the conjugate base, of H₂PO₄⁻.", "answer": "HPO₄²⁻"},
+ {"id": "chem-2016-hl-q4-j", "ask": "infrared spectrum of aspirin", "answer": "absorb infrared radiation", "figure": true},
+ {"id": "chem-2016-hl-q4-k-b", "ask": "Dorothy Hodgkin was awarded the 1964 Nobel Prize", "answer": "crystallography"},
+ {"id": "chem-2016-hl-q5-b", "ask": "Describe how to carry out a flame test", "answer": "spray solution onto (into) hot (blue) part of Bunsen flame", "solution": true},
+ {"id": "chem-2016-hl-q6-c-calculation", "ask": "", "answer": "8C + 5H₂ → C₈H₁₀ ΔH = –12.5 kJ", "figure": true, "solution": true},
+ {"id": "chem-2016-hl-q6-e", "ask": "Draw the molecular structure of (i) octane", "answer": "draws them in a table", "solution": true},
+ {"id": "chem-2016-hl-q7-c-kc-expression", "ask": "Write the equilibrium constant (Kc) expression for this reaction.", "answer": "set as a fraction its text cannot carry", "solution": true},
+ {"id": "chem-2016-hl-q8-c-mechanism", "ask": "Describe in detail the mechanism for the reaction between ethane and chlorine", "answer": "chain reaction occurs", "solution": true},
+ {"id": "chem-2016-hl-q9-c", "ask": "How does temporary hardness arise in rainwater flowing over limestone?", "answer": "rain (water) reacts with limestone to form soluble"},
+ {"id": "chem-2016-hl-q10-b-oxidation-numbers", "ask": "", "answer": "written under the equation", "figure": true, "solution": true},
+ {"id": "chem-2016-hl-q10-c-ii", "ask": "", "answer": "²²²₈₆Rn", "figure": true, "solution": true},
+ {"id": "chem-2016-hl-q11-a-iii", "ask": "What mass of solid is produced?", "answer": "94* × 0.1 = 9.4 g K₂O", "figure": true},
+ {"id": "chem-2016-hl-q11-b-arsine", "ask": "Predict the shape of the arsine molecule.", "answer": "pyramidal (trigonal pyramidal)", "solution": true}
+]

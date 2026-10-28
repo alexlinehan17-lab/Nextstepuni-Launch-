@@ -1,0 +1,85 @@
+[
+ {
+  "id": "chem-2023-hl-q1-a",
+  "ask": "State two properties of this substance",
+  "answer": "stable on storage"
+ },
+ {
+  "id": "chem-2023-hl-q3-c-fig",
+  "ask": "Why did the temperature rise when the solutions were mixed?",
+  "answer": "exothermic reaction",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-hl-q4-i",
+  "ask": "Draw a structure of propane-1,2,3-triol (glycerol)",
+  "answer": "its own print is shown with the answer",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q5-b-ii",
+  "ask": "Account for the increase in electronegativity values across the second period.",
+  "answer": "effective nuclear charge increasing",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-hl-q6-d",
+  "ask": "Calculate a value for the heat of combustion of C₁₅H₃₂",
+  "answer": "–10046.5 kJ mol⁻¹",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q6-e-ii",
+  "ask": "Estimate from the graph the difference between the values",
+  "answer": "600 – 700 kJ mol⁻¹",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-hl-q7-c-ii",
+  "ask": "Calculate the concentration of suspended solids",
+  "answer": "1550 p.p.m.",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q8-c-i",
+  "ask": "Draw two repeating units of the polymer poly(ethene).",
+  "answer": "its own print is shown with the answer",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q9-b-ii",
+  "ask": "Calculate the equilibrium concentration of each substance",
+  "answer": "[PCl₅] = 1.0 mol/l",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q9-d-i",
+  "ask": "is consistent with Le Châtelier’s principle",
+  "answer": "is a stress",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-hl-q10-c-iii",
+  "ask": "Copy and complete the following nuclear equation for this decay reaction.",
+  "answer": "completed nuclear equation",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q11-a-iv",
+  "ask": "calculate the approximate volume occupied by one mole of ammonia gas",
+  "answer": "300 – 310 litres",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q11-d-b-iii",
+  "ask": "What is the main economic consideration when locating the plant",
+  "answer": "availability of cheap electricity",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-hl-q11-a-i",
+  "ask": "State Charles",
+  "answer": "for a fixed mass of gas at constant pressure",
+  "solution": true
+ }
+]

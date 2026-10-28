@@ -1496,6 +1496,20 @@ for (const c of cards) {
   if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
   for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
+    if (r.ask) {
+      /* A row that restates the part's own ask, where the scheme answers with
+       * a drawing and prints no words to claim (the labelled schemes of
+       * 2010-2023 do not reprint the question). It claims nothing from the
+       * scheme: it must be the card's own question text, and the answer must
+       * be the scheme's print, held back as a solution figure. */
+      const rec = c.figureKey ? figureRecord(c.figureKey) : null;
+      if (!normalise(c.questionText ?? '').includes(normalise(r.verbatim))) {
+        untraceable.push(`${r.verbatim} (an ask row that is not the card's question text)`);
+      } else if (!rec || rec.error || !rec.solution) {
+        untraceable.push(`${r.verbatim} (an ask row with no scheme solution figure)`);
+      }
+      continue;
+    }
     const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
       // A menu option that pairs a label with its value ("thoracic — 12") was
@@ -1568,6 +1582,7 @@ for (const c of cards) {
     if (r.permittedMarks) parts.push(`permittedMarks: ${JSON.stringify(r.permittedMarks)}`);
     if (r.parts) parts.push(`parts: ${JSON.stringify(r.parts)}`);
     if (r.openList) parts.push('openList: true');
+    if (r.ask) parts.push('ask: true');
     if (r.exactTermRequired) parts.push('exactTermRequired: true');
     if (r.route) parts.push(`route: ${q(r.route)}`);
     if (r.dependsOn) parts.push(`dependsOn: ${q(r.dependsOn)}`);

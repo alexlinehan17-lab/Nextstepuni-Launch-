@@ -267,10 +267,14 @@ describe('Ways In across the Mark Bank corpus', () => {
         '(i) Is this a plant cell or an animal cell?',
         '(ii) Give two reasons for your answer in part (i) above.',
       ],
+      // The Chemistry audit carded 2025 OL Q10(b)(i)-(v) as one card (the scheme
+      // prices the five with one cell): the card prints all five asks.
       'chem-2025-ol-q10-b-i-iii': [
         '(i) Name the three states of matter.',
         '(ii) What is meant by the term ion?',
         '(iii) Classify helium (He) as an atom, a molecule or an ion.',
+        '(iv) Name two states of matter that exist at the melting point of a substance.',
+        '(v) In which state of matter do the particles vibrate around fixed positions?',
       ],
       'bio-2025-hl-q16-b-iii-fig': [
         '1. Oxygen and carbon dioxide are two gases that are exchanged between structures A and B.',
@@ -289,16 +293,20 @@ describe('Ways In across the Mark Bank corpus', () => {
         'Identify one other dish where germination is unlikely to happen.',
         'Justify your answer.',
       ],
+      // The Chemistry audit carded 2024 HL Q8(b)(iii) and (iv) apart (the scheme
+      // prices each with its own cell); this id kept its first part, (iii).
       'chem-2024-hl-q8-b-iii-iv': [
-        '(iii) A trace quantity of C4H10 is formed during reaction B.',
-        'Explain how the formation of C4H10 is evidence for the mechanism described.',
-        '(iv) Apart from the formation of C4H10, state one other piece of evidence for this mechanism.',
+        'A trace quantity of C₄H₁₀ is formed during reaction B.',
+        'Explain how the formation of C₄H₁₀ is evidence for the mechanism described.',
       ],
+      // The Chemistry audit lifts the paper's sentence printed between (iii) and
+      // (iv), and the chloride ion's charge as the paper sets it.
       'chem-2024-ol-q3-b': [
         '(ii) Identify the gas produced.',
         '(iii) Identify compound A.',
+        'When a sample of compound B was dissolved in water and mixed with a solution of barium chloride (BaCl₂) a white precipitate was produced.',
         '(iv) Identify compound B.',
-        '(v) Identify a reagent which could be used to confirm that compound C contained chloride (Cl–) ions.',
+        '(v) Identify a reagent which could be used to confirm that compound C contained chloride (Cl⁻) ions.',
       ],
       'bio-2024-ol-q16-a-ii-iii': [
         '(ii) 1. Give one function of xylem.',

@@ -1,0 +1,18 @@
+[
+ {"id": "chem-2021-ol-q1-a-fig", "ask": "liquid A", "answer": "A = water / H₂O", "figure": true},
+ {"id": "chem-2021-ol-q1-d-i", "ask": "", "answer": "contains multiple (triple or double) carbon-carbon bond", "figure": true},
+ {"id": "chem-2021-ol-q2-a-i-fig", "ask": "Identify the pieces of apparatus A and C", "answer": "C: evaporating basin", "figure": true},
+ {"id": "chem-2021-ol-q2-c", "ask": "Calculate the concentration, in moles per litre", "answer": "6.9 × 10⁻³ × 1 = 6.9 × 10⁻³ moles NaOH", "solution": true},
+ {"id": "chem-2021-ol-q3-a", "ask": "", "answer": "8 points correctly plotted", "figure": true, "solution": true},
+ {"id": "chem-2021-ol-q3-d-fig", "ask": "What chemical hazard is indicated by this pictogram?", "answer": "corrosive", "figure": true},
+ {"id": "chem-2021-ol-q4-b", "ask": "", "answer": "releasing radiation (or named radiation)", "figure": true},
+ {"id": "chem-2021-ol-q5-c-ii", "ask": "in an atom of oxygen.", "answer": "2, 6 / 1s² 2s² 2p⁴"},
+ {"id": "chem-2021-ol-q5-c-iii", "ask": "show how the bonding in BeO arises", "answer": "diagram showing beryllium ion with no electrons in outer shell", "solution": true},
+ {"id": "chem-2021-ol-q8-b-ii", "ask": "Identify the substance added to ethene in each case.", "answer": "B: hydrogen chloride (HCl)", "figure": true},
+ {"id": "chem-2021-ol-q8-e-i", "ask": "", "answer": "contains a benzene ring", "figure": true, "solution": true},
+ {"id": "chem-2021-ol-q9-b-i", "ask": "", "answer": "smooth curve correctly drawn through points and (0, 0)", "figure": true, "solution": true},
+ {"id": "chem-2021-ol-q10-b-i-ii", "ask": "Define (i) oxidation", "answer": "gain of electrons", "figure": true},
+ {"id": "chem-2021-ol-q10-c-iii", "ask": "What volume does this amount of NO₂ occupy", "answer": "33.6 litres NO₂", "solution": true},
+ {"id": "chem-2021-ol-q11-b-ii", "ask": "Write the equilibrium constant (Kc) expression", "answer": "its own print is shown with the answer", "solution": true},
+ {"id": "chem-2021-ol-q11-d-b-iii", "ask": "What name is usually given to Y?", "answer": "slag / calcium silicate (CaSiO₄)", "figure": true}
+]

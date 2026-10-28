@@ -10,7 +10,7 @@
   "file": "chemistry-2022-OL-paper-q6-fig0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "A table of five hydrocarbon structures. A is ethane, two carbons joined by a single bond each carrying three hydrogens. B is ethene, two carbons joined by a double bond each carrying two hydrogens. C is ethyne, H–C≡C–H. D is benzene, drawn as a hexagon with a circle inside it. E is methylbenzene, the same hexagon carrying a CH3 group.",
+  "description": "A table of five hydrocarbon structures labelled A to E: A, two carbons joined by a single bond, each carrying three hydrogens; B, two carbons joined by a double bond, each carrying two hydrogens; C, H–C≡C–H; D, a hexagon with a circle inside it; E, the same hexagon carrying a CH₃ group. The table gives the structures only, not their names.",
   "questionRef": "2022 OL Q6"
  },
  {
@@ -38,7 +38,7 @@
   "file": "chemistry-2023-OL-paper-q8-fig0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "A reaction scheme in four boxes. X is ethanol (C2H5OH) and converts to ethene (C2H4) using solid S, with an arrow back from ethene to X. X also converts, using reagent R, to Y, which is ethanal (CH3CHO); and Y converts to Z, which is ethanoic acid (CH3COOH).",
+  "description": "A reaction scheme in four boxes. X (C₂H₅OH) converts to ethene (C₂H₄) using solid S, with an arrow back from ethene to X. X also converts, using reagent R, to Y (CH₃CHO), and Y converts to Z (CH₃COOH). The boxes give X, Y and Z by formula only, not by name.",
   "questionRef": "2023 OL Q8"
  },
  {

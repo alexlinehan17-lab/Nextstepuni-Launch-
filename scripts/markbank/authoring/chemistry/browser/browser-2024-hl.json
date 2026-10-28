@@ -1,0 +1,95 @@
+[
+ {
+  "id": "chem-2024-hl-q1-d-i",
+  "ask": "Calculate the number of moles of sodium hydroxide",
+  "answer": "0.09 × 25.0 ÷ 1000 = 0.00225"
+ },
+ {
+  "id": "chem-2024-hl-q2-c-iii",
+  "ask": "Name the co‐product formed when soap is prepared",
+  "answer": "propan-1,2,3-triol / glycerol",
+  "solution": true
+ },
+ {
+  "id": "chem-2024-hl-q3-d-ii",
+  "ask": "Which temperature (T₁, T₂ or T₃) was the highest?",
+  "answer": "greatest rate / least time",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-hl-q4-a",
+  "ask": "How many (i) protons, (ii) neutrons",
+  "answer": "(ii) 1"
+ },
+ {
+  "id": "chem-2024-hl-q4-e",
+  "ask": "biochemical oxygen demand (BOD)",
+  "answer": "parts per million / ppm"
+ },
+ {
+  "id": "chem-2024-hl-q4-h",
+  "ask": "during the tertiary stage of sewage treatment?",
+  "answer": "to remove phosphates"
+ },
+ {
+  "id": "chem-2024-hl-q6-c-ii",
+  "ask": "",
+  "answer": "but-1-ene // but-2-ene // methylpropene",
+  "figure": true,
+  "solution": true
+ },
+ {
+  "id": "chem-2024-hl-q6-d-i",
+  "ask": "Calculate the heat of combustion of compound A",
+  "answer": "= –5469.9 (kJ mol⁻¹)",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-hl-q7-b-ii",
+  "ask": "Calculate the mass of carbon dioxide present",
+  "answer": "mass = 55 g",
+  "solution": true
+ },
+ {
+  "id": "chem-2024-hl-q8-b-ii",
+  "ask": "Reaction B takes place in the presence of chlorine",
+  "answer": "(termination): e.g.",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-hl-q8-c-iii",
+  "ask": "indicate clearly which of its bonds are broken",
+  "answer": "one C–Cl bond indicated",
+  "solution": true
+ },
+ {
+  "id": "chem-2024-hl-q9-d-i-ii",
+  "ask": "What evidence is there that acid Z is a strong acid?",
+  "answer": "vertical part of the graph ends before 10",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-hl-q10-b-i-ii",
+  "ask": "Identify the number X.",
+  "answer": "lead/Pb",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-hl-q11-a-i",
+  "ask": "Draw a dot and cross diagram",
+  "answer": "its own print is shown with the answer",
+  "solution": true
+ },
+ {
+  "id": "chem-2024-hl-q11-b-i",
+  "ask": "State the systematic IUPAC names for compounds A, B, C, D and E.",
+  "answer": "E: methyl ethanoate",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-hl-q11-db-v",
+  "ask": "Name the main stages in the manufacture of steel",
+  "answer": "charging",
+  "figure": true
+ }
+]

@@ -1,0 +1,89 @@
+[
+ {
+  "id": "chem-2024-ol-q1-b",
+  "ask": "Why is water added dropwise rather than poured directly onto X?",
+  "answer": "(calcium) carbide",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-ol-q2-a-i",
+  "ask": "Identify A.",
+  "answer": "pipette",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-ol-q2-a-ii",
+  "ask": "Describe the procedure used to wash and fill A",
+  "answer": "wash down sides of flask"
+ },
+ {
+  "id": "chem-2024-ol-q2-c-ii",
+  "ask": "Calculate the concentration of HCl in moles per litre.",
+  "answer": "20.55 × M ÷ 2",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-ol-q4-f-i-ii",
+  "ask": "State the chemical hazard indicated by symbol B.",
+  "answer": "corrosive",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-ol-q4-h",
+  "ask": "Describe what happens during the primary stage of sewage treatment.",
+  "answer": "screening / sedimentation / settling"
+ },
+ {
+  "id": "chem-2024-ol-q5-b",
+  "ask": "",
+  "answer": "3.98 – 3.04 = 0.94",
+  "figure": true,
+  "solution": true
+ },
+ {
+  "id": "chem-2024-ol-q6-a-ii",
+  "ask": "Draw the molecular structure of each of the two isomers",
+  "answer": "its own print is shown with the answer",
+  "solution": true
+ },
+ {
+  "id": "chem-2024-ol-q6-b",
+  "ask": "State two ways of increasing the octane number of a fuel.",
+  "answer": "catalytic cracking"
+ },
+ {
+  "id": "chem-2024-ol-q7-a-iv",
+  "ask": "Calculate the average rate of reaction during the first 4 minutes.",
+  "answer": "48 ÷ 4 = 12",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-ol-q8-b-ii",
+  "ask": "",
+  "answer": "[allow 3 marks for CH₃CHO]",
+  "figure": true,
+  "solution": true
+ },
+ {
+  "id": "chem-2024-ol-q9-c",
+  "ask": "write the term corresponding to each of the letters A to G",
+  "answer": "G pH adjustment",
+  "figure": true
+ },
+ {
+  "id": "chem-2024-ol-q10-b-i",
+  "ask": "Write the equilibrium constant (Kc) expression for this equilibrium.",
+  "answer": "[N₂O₄] ÷ [NO₂]²",
+  "solution": true
+ },
+ {
+  "id": "chem-2024-ol-q10-c-ii-iv",
+  "ask": "How many neutrons are present in an atom of ²²²₈₆Rn?",
+  "answer": "222 – 86 = 136"
+ },
+ {
+  "id": "chem-2024-ol-q11-d-a-ii",
+  "ask": "Identify the raw materials used for this industry.",
+  "answer": "appropriate raw materials"
+ }
+]
