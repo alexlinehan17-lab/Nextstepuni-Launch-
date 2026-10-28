@@ -316,6 +316,17 @@ const decks = [
    * (bio_review_2010_ol.py): 164 tasks, 164 cards; Q11(c)(vii) is left open
    * (its scheme prints no answer; excluded with that page evidence on
    * 2026-10-27, no card). Every earlier id is unchanged. */
+  /* 2026-10-28: biology ordinary 2833 -> 2834. Every printed ask gets a card
+   * (Alex, 2026-10-28): 2010 Ordinary Q11(c)(vii), excluded the day before, is
+   * carded as bio-2010-ol-q11-c-vii, its one row "The scheme prints no answer
+   * for this part." (scheme p7 prints no (vii) row). The 2010 Ordinary review
+   * is now 165 tasks, 165 cards. Every earlier id is unchanged. */
+  /* 2026-10-28: biology ordinary 2834 -> 2835. The last Biology exclusion,
+   * 2026 Ordinary Q12(b)(ii)2 (excluded 2026-10-12), is carded as
+   * bio-2026-ol-q12-b-ii-2 under the same rule: both rows the scheme's printed
+   * "Rr", the second row's note saying the scheme's own phenotype for that row
+   * is White, so its genotype is the SEC's misprint. The 2026 Ordinary review
+   * is now 183 tasks, 188 cards. Every earlier id is unchanged. */
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
@@ -1891,14 +1902,14 @@ describe('Mark Bank card preservation', () => {
     // The live decks, pinned whole (their history is beside the frozen pins).
     expect(BIO_HIGHER).toHaveLength(2705);
     expect(idHash(BIO_HIGHER.map(card => card.id))).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
-    expect(BIO_ORDINARY).toHaveLength(2833);
-    expect(idHash(BIO_ORDINARY.map(card => card.id))).toBe('3c05c15a5e63b4dc0b6ee511c626bab2deefd20696f76954151576c80106c2ff');
-    expect(biologyAdditionIds.size).toBe(2705 + 2833 - (673 - 1) - (686 - 1));
+    expect(BIO_ORDINARY).toHaveLength(2835);
+    expect(idHash(BIO_ORDINARY.map(card => card.id))).toBe('4f0b15fd23902b4da3b0f8948e85519be7c02b8e567f42aeea5cb6aed366d95e');
+    expect(biologyAdditionIds.size).toBe(2705 + 2835 - (673 - 1) - (686 - 1));
     // The sittings before 2021 had no Biology cards: everything they carry is new.
     expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(1627);
-    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1741);
+    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1742);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
-    expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(187);
+    expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(188);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

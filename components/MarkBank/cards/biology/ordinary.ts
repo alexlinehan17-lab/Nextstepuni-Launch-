@@ -17707,6 +17707,29 @@ export const CARDS: SecCard[] = [
     year: 2026, level: "ordinary",
     paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2026 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2026-ol-q12-b-ii-2", topicId: "bio-1-4", conceptId: "punnett-square-offspring",
+    section: "C", questionRef: "2026 OL Q12(b)(ii)2",
+    stem: "The images show a red rose, a pink rose and a white rose. The allele for red flower (R) is incompletely dominant to the allele for white flower (r). The genotype of a red rose is RR. Pink roses are heterozygous. A rose with pink flowers was crossed with a rose with white flowers. Copy the Punnett square shown on the right into your answerbook and complete it to show the following:",
+    questionText: "Genotypes of the possible offspring.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "Rr", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "Rr", marks: 3, contextNote: "The scheme prints \"Rr\" in both offspring boxes. Its own phenotype column reads White for this second row, so the genotype printed here is the SEC's misprint." },
+    ],
+    figure: {
+          "candId": "biology-2026-ol-q12-punnett",
+          "src": "/exam-figures/biology/markbank/biology-2026-ol-q12-punnett.png",
+          "srcHash": "44afe52cbd9d811d92c246c1b137ab7f",
+          "alt": "Three rose photographs captioned Red (RR), Pink followed by a blank line, and White (rr). Below them, an empty Punnett square: one box at the top labelled Genotype of white rose gamete; two boxes down the left side labelled Genotypes of pink rose gametes; two long boxes labelled Offspring genotypes; and two blank lines to the right labelled Matching offspring phenotypes.",
+          "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com; State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2026 Ordinary Level — © State Examinations Commission.",
     id: "bio-2026-ol-q12-b-ii-3", topicId: "bio-1-4", conceptId: "punnett-square-phenotypes",
     section: "C", questionRef: "2026 OL Q12(b)(ii)3",
     stem: "The images show a red rose, a pink rose and a white rose. The allele for red flower (R) is incompletely dominant to the allele for white flower (r). The genotype of a red rose is RR. Pink roses are heterozygous. A rose with pink flowers was crossed with a rose with white flowers. Copy the Punnett square shown on the right into your answerbook and complete it to show the following:",
@@ -49807,6 +49830,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"2(6)+6(2)"}, totalMarks: 6,
     rows: [
     { id: "r1", kind: "point", verbatim: "It must fold (into its functional shape)", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC025GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2010 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2010-ol-q11-c-vii", topicId: "bio-2-3", conceptId: "function-of-proteins",
+    section: "C", questionRef: "2010 OL Q11(c)(vii)",
+    questionText: "Give one function of proteins in living organisms.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(6)+6(2)"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: null, contextNote: "The marking scheme (printed page 6) prints answers to Q11(c)(i) to (vi), then blank rows: it prints no (vii) row. Its \"2(6)+6(2)\" counts eight answers in (c), (i)'s two bases and (ii) to (vii), so this part is still marked: 6 if it is one of your first two correct answers in (c), 2 after that.", unprinted: true },
     ],
   } as SecCard,
   {

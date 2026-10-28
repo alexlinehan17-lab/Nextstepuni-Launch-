@@ -608,6 +608,10 @@ const ALT = {
 
 const schemeCache = new Map();
 
+/** What an `unprinted` row says: the scheme prints no answer row for the
+ *  printed ask. Mirrors UNPRINTED_ANSWER in types/markBank.ts. */
+const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
+
 /** The level tokens a deck may carry.
  *
  * 'common' is not a third grade of difficulty: LCVP's Link Modules paper is
@@ -1496,6 +1500,18 @@ for (const c of cards) {
   if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
   for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
+    if (r.unprinted) {
+      /* A printed ask whose scheme prints NO answer row (Biology 2010 Ordinary
+       * Q11(c)(vii)): every printed ask gets a card, and this row says the
+       * scheme prints no answer -- a direction, never an answer, so it claims
+       * nothing from the scheme. It must read exactly UNPRINTED_ANSWER, be a
+       * criterion, and be the card's only row (types/markBank.ts). */
+      if (r.verbatim !== UNPRINTED_ANSWER || r.kind !== 'criterion' || c.rows.length !== 1
+        || c.answerVariants?.length || !c.rows.includes(r)) {
+        untraceable.push(`${r.verbatim} (an unprinted row must be the card's one criterion row, reading "${UNPRINTED_ANSWER}")`);
+      }
+      continue;
+    }
     if (r.ask) {
       /* A row that restates the part's own ask, where the scheme answers with
        * a drawing and prints no words to claim (the labelled schemes of
@@ -1583,6 +1599,7 @@ for (const c of cards) {
     if (r.parts) parts.push(`parts: ${JSON.stringify(r.parts)}`);
     if (r.openList) parts.push('openList: true');
     if (r.ask) parts.push('ask: true');
+    if (r.unprinted) parts.push('unprinted: true');
     if (r.exactTermRequired) parts.push('exactTermRequired: true');
     if (r.route) parts.push(`route: ${q(r.route)}`);
     if (r.dependsOn) parts.push(`dependsOn: ${q(r.dependsOn)}`);
