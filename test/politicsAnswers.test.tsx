@@ -10,6 +10,7 @@ import { fireEvent, render, screen, within } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
+import { SCHEME_CORRECTIONS, withSchemeCorrections } from '../components/MarkBank/cards/politics-and-society/corrections';
 import PoliticsRubricPanel, { politicsMarks } from '../components/MarkBank/PoliticsRubricPanel';
 import { politicsPartScoreId, politicsRowScoreId } from '../components/MarkBank/politicsScoring';
 import type { PoliticsAllocation, PoliticsRubric, SecRubricCard } from '../types/markBank';
@@ -79,8 +80,73 @@ describe('Politics scheme blocks become ladders and rows', () => {
     expect(essay.parts[1].bands![0]).toMatchObject({ label: 'Excellent', marks: [18, 19, 20] });
   });
 
-  it('leaves alone a card whose block carries only a sibling’s ladder', () => {
-    expect(byId('politics-2018-hl-q1-c').rubric.allocation).toBeUndefined();
+  it('prices one criterion in the sub-tariff headings the scheme prints in its margin', () => {
+    // 2018 HL Q1(c): "(c) (i) One fact 2 marks", "(c) (ii) One fact 1 mark", "(c) (iii) One fact 1 mark" (corrections.ts
+    // restores the prices the block lost); the two-mark ladder prices part (i), the one-mark facts are claimed.
+    const facts = allocationOf('politics-2018-hl-q1-c');
+    expect(facts.parts.map(part => [part.caption, part.max, part.bands ? 'bands' : part.rows![0].text.split(':')[0]])).toEqual([
+      ['One fact', 2, 'bands'], ['One fact', 1, 'Inalienable'], ['One fact', 1, 'Indivisible'],
+    ]);
+    expect(ladder(facts)).toEqual([['Good description', [2]], ['Fair description', [1]], ['Irrelevant description', [0]]]);
+    expect(facts.examples[0]).toMatch(/^Universal: everyone is born with the same rights.*equally\.$/);
+    expect(facts.directions).toEqual(['Note: If part (i) is awarded 1M or less mark part (ii) / (iii) out of 2M']);
+    // 2019 OL Q1(f): "One supranational body named 2 marks" is the tariff row, "Valid explanation of the role 3 marks" its ladder.
+    const body = allocationOf('politics-2019-ol-q1-f');
+    expect(body.parts.map(part => [part.max, part.caption ?? part.rows![0].text, part.rows?.[0].tariffOnly ?? 'bands'])).toEqual([
+      [2, 'One supranational body named', true], [3, 'Valid explanation of the role', 'bands'],
+    ]);
+    expect(ladder(body, 1).map(([, marks]) => marks)).toEqual([[3], [2], [1], [0]]);
+  });
+
+  it('restores the scheme lines a block lost, and refuses a block that no longer holds the line it corrects', () => {
+    expect(byId('politics-2018-hl-q1-c').rubric.schemeGuidance!.join('\n').split('\n')).toEqual(expect.arrayContaining(['(c) (i) One fact 2 marks', '(c) (ii) One fact 1 mark', '(c) (iii) One fact 1 mark']));
+    expect(SCHEME_CORRECTIONS['politics-2019-ol-q1-f'].scheme).toMatch(/2019, Ordinary Level marking scheme, p\. 5/);
+    const card = byId('politics-2019-ol-q1-f');
+    const regenerated = { ...card, rubric: { ...card.rubric, schemeGuidance: ['(f) One supranational body named 2 marks\nValid explanation of the role 3 marks'] } };
+    expect(() => withSchemeCorrections(regenerated)).toThrow(/scheme line "One supranational body named" \(occurrence 1\) is not in its block/);
+  });
+
+  it('places the printed marks of a split tariff on the answer sentence that carries it', () => {
+    // "The European Court of Human Rights is responsible for ensuring 1 mark + 1 mark" / "the implementation of…"
+    const cloze = allocationOf('politics-2018-ol-q1-b-i');
+    expect(cloze.parts).toHaveLength(1);
+    expect(cloze.parts[0].bands).toEqual([{
+      label: 'The European Court of Human Rights is responsible for ensuring', marks: [1, 2],
+      descriptor: 'the implementation of the European Convention on Human Rights (ECHR).',
+    }]);
+    // A ladder priced in the tariff ("3 marks + 2 marks" then one ladder) is still cut per term.
+    expect(allocationOf('politics-2021-hl-q1-d').parts.map(part => part.max)).toEqual([3, 2]);
+  });
+
+  it('takes the alternative the question offers as the answer, and a bare "Name" as the two-mark tariff', () => {
+    expect(allocationOf('politics-2018-ol-q1-o-i').parts[0].rows).toEqual([{ id: 'r1', text: 'Quantitative data', marks: 1 }]);
+    expect(allocationOf('politics-2019-ol-q1-u-i').parts[0].rows).toEqual([{ id: 'r1', text: 'Quantitative', marks: 1 }]);
+    expect(allocationOf('politics-2018-ol-q1-t-statement-2').parts[0]).toMatchObject({ caption: 'True or False statements', rows: [{ text: 'True', marks: 2 }] });
+    expect(allocationOf('politics-2018-ol-q1-k-example').parts[0].rows).toEqual([{ id: 'r1', text: 'Name', marks: 2, tariffOnly: true }]);
+  });
+
+  it('reads a criterion’s label heading its ladder, and tariff terms beside a ladder another criterion captions', () => {
+    expect(allocationOf('politics-2021-hl-q2-g').parts.map(part => [part.label, part.max, part.bands!.length])).toEqual([['Evaluation', 30, 4], ['Use of documents', 20, 4]]);
+    const pieces = allocationOf('politics-2019-ol-q3-c');
+    expect(pieces.parts.map(part => [part.label, part.max, part.rows?.[0].text ?? part.caption])).toEqual([
+      ['First piece of information', 5, '2 key pieces of information'], ['Second piece of information', 5, '2 key pieces of information'], ['Description', 5, 'Valid description'],
+    ]);
+  });
+
+  it('starts a shared block at the card’s own ask when a sibling’s answer and tariff come first', () => {
+    const observations = allocationOf('politics-2021-ol-q1-q-iii');
+    expect(observations.parts.map(part => [part.label, part.rows![0].text, part.rows![0].tariffOnly])).toEqual([
+      ['First observation', 'Two observations about the presentation of data in the graphic.', true],
+      ['Second observation', 'Two observations about the presentation of data in the graphic.', true],
+    ]);
+    expect(observations.directions).toContain('71.5% think Level 5 restrictions are appropriate.');
+    // The sibling's answer no longer scores the advantage card, and the strength card no longer wears the sibling's caption.
+    expect(allocationOf('politics-2021-ol-q1-q-ii-advantage').parts[0].rows).toEqual([{ id: 'r1', text: 'Advantage', marks: 2, tariffOnly: true }]);
+    expect(allocationOf('politics-2018-ol-q1-e-ii-strength').parts[0].caption).toBeUndefined();
+  });
+
+  it('structures every Politics card', () => {
+    expect(cards.filter(card => !card.rubric.allocation).map(card => card.id)).toEqual([]);
   });
 });
 

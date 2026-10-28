@@ -93,19 +93,19 @@
     "refsHash": "4fef6e53e28af5ba"
   },
   "biology": {
-    "cards": 1359,
-    "contentHash": "82e19e30fb563451",
-    "coveragePct": 93.8,
-    "covered": 1535,
-    "excluded": 0,
-    "leaves": 1636,
-    "open": 101,
+    "cards": 5538,
+    "contentHash": "7802d791695e4a06",
+    "coveragePct": 100.0,
+    "covered": 4927,
+    "excluded": 1,
+    "leaves": 4928,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 20,
-      "hash": "55091726a504e556"
+      "count": 50,
+      "hash": "4fd05441da103297"
     },
-    "refsHash": "2b9fe1cf969dd64a"
+    "refsHash": "ec3107ed9afd3101"
   },
   "bulgarian": {
     "cards": 141,
@@ -184,7 +184,7 @@
   },
   "construction-studies": {
     "cards": 1261,
-    "contentHash": "2b13a68d3c21ded1",
+    "contentHash": "440a5f642727d0ed",
     "coveragePct": 100.0,
     "covered": 845,
     "excluded": 0,
@@ -649,7 +649,7 @@
   },
   "politics-and-society": {
     "cards": 623,
-    "contentHash": "f7749147bd90da88",
+    "contentHash": "f946d3de64a000fe",
     "coveragePct": 100.0,
     "covered": 623,
     "excluded": 0,

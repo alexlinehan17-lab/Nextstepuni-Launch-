@@ -13,6 +13,7 @@ import biologyReference from '../data/examTopics/biology.json';
 import biologyEvidence from '../data/examTopics/biology-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/biology-curriculum-crosswalk.json';
 import reviewed2026 from '../data/examTopics/biology-2026-exam-topic-map.json';
+import reviewed2025 from '../data/examTopics/biology-2025-exam-topic-map.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import {
   browseTopicIdsForQuestion,
@@ -255,6 +256,24 @@ describe('Biology exam-topic registry', () => {
       expect(examTopicIdsForQuestion(
         'biology', level, 2026, 'main', n, 'single', 'iv',
       )).toEqual(expectedIds);
+    }
+  });
+
+  it('adds the topics each reviewed 2025 task needs without dropping a reference topic', () => {
+    for (const [key, reviewedIds] of Object.entries(reviewed2025.questions)) {
+      const [level, n] = key.split('|') as ['higher' | 'ordinary', string];
+      for (const lang of ['ev', 'iv'] as const) {
+        const live = examTopicIdsForQuestion('biology', level, 2025, 'main', n, 'single', lang);
+        expect(live.filter(id => !reviewedIds.includes(id)), `${key} ${lang}`).toEqual(
+          biologyEvidence.associations
+            .filter(a => a.year === 2025 && a.sitting === 'main' && a.level === level
+              && a.resolution === 'matched' && a.questionNumbers?.includes(n)
+              && !reviewedIds.includes(a.topicId))
+            .map(a => a.topicId)
+            .filter((id, i, all) => all.indexOf(id) === i),
+        );
+        for (const id of reviewedIds) expect(live, `${key} ${lang}`).toContain(id);
+      }
     }
   });
 

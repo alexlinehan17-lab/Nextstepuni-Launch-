@@ -1,0 +1,19 @@
+{
+  "politics-2018-hl-q1-c": {
+    "scheme": "SEC Politics and Society 2018, Higher Level marking scheme, p. 5 (paper-trail-corpus/markingschemes/2018/LC568ALP000EV.pdf)",
+    "why": "The scheme prices (c)(i) at 2 marks and (c)(ii), (c)(iii) at 1 mark each in the margin column on each heading's baseline (PyMuPDF words at y 56, 129, 231); the text layer gives each price its own line and politics_author.readable() drops a line that is only a price, so the block kept the headings without them.",
+    "lines": [
+      { "nth": 1, "from": "One fact", "to": "(c) (i) One fact 2 marks" },
+      { "nth": 2, "from": "One fact", "to": "(c) (ii) One fact 1 mark" },
+      { "nth": 3, "from": "One fact", "to": "(c) (iii) One fact 1 mark" }
+    ]
+  },
+  "politics-2019-ol-q1-f": {
+    "scheme": "SEC Politics and Society 2019, Ordinary Level marking scheme, p. 5 (paper-trail-corpus/markingschemes/2019/LC568GLP000EV.pdf)",
+    "why": "The scheme prices the named body at 2 marks and the explanation at 3 marks in the margin column on each heading's baseline (PyMuPDF words at y 447, 469); the text layer gives each price its own line and politics_author.readable() drops a line that is only a price.",
+    "lines": [
+      { "nth": 1, "from": "One supranational body named", "to": "(f) One supranational body named 2 marks" },
+      { "nth": 1, "from": "Valid explanation of the role", "to": "Valid explanation of the role 3 marks" }
+    ]
+  }
+}

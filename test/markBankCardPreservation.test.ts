@@ -105,6 +105,7 @@ import businessReviewed from '../components/MarkBank/cards/business/rubric-autho
 import businessRoutePools from '../components/MarkBank/cards/business/route-pools.json';
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
+import biologyReview from '../scripts/markbank/authored/biology-review-audit.json';
 import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
 import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 
@@ -139,7 +140,180 @@ const decks = [
   // topics (2.1 civil service; 5.5 NGOs and statutory bodies), so it is one
   // card per topic (AGENTS.md); the single branch-only q1-f ID is replaced.
   ['politics-and-society:ordinary', POLITICS_ORDINARY, 360, '0e1168ab9e3d9fcc06012554ce7ed77336e61b6d00d5f197ce331a3b15cf317b'],
+  /* Biology: the 1,359 IDs shipped on main before the paper-by-paper review
+   * (673 Higher / 686 Ordinary) are pinned here in the frozen form, as for
+   * Business, Economics and the rest: every live 2021-2025 id the review did
+   * not add, plus the bio- progress alias keys (frozenIds). The live decks and
+   * the review's additions are pinned in 'adds the reviewed Biology sittings'.
+   * The history of the live counts: */
+  /* 2026-10-11: biology higher 673 -> 861. The 2026 Higher sitting is added
+   * from a paper-by-paper review (bio_review_2026_hl.py): 184 tasks at the
+   * scheme's own mark boundaries, 188 cards once Q12(c)(ii) and (iii) are
+   * expanded into their three printed areas each. Nothing removed: the 673
+   * cards from 2021-2025 keep their identity hash, pinned below. */
+  /* 2026-10-12: biology higher 861 -> 928. The 2025 Higher sitting is
+   * re-reviewed paper by paper (bio_review_2025_hl.py) and corrected in
+   * place: all 106 shipped 2025 ids are kept (each mapped to the task it
+   * was carding, its old fields recorded in biology-review-audit.json), and
+   * the 67 tasks the old cards bundled or missed ship as new ids, one of
+   * them (bio-2025-hl-q9-b-ii) an authored card the build had never shipped.
+   * The frozen 2021-2025 identity hash is pinned below without them. */
+  /* 2026-10-12: biology higher 928 -> 956. The 2024 Higher sitting is
+   * re-reviewed the same way (bio_review_2024_hl.py): 134 of its 135 shipped
+   * ids are kept (121 corrected, 13 verified), 29 tasks the old cards bundled
+   * or missed ship as new ids, and bio-2024-hl-q8-b2, the second half of one
+   * printed task the old cards cut in two, is withdrawn with a progress alias
+   * to bio-2024-hl-q8-b1. The frozen hash below restores it. */
+  /* 2026-10-12: biology higher 956 -> 1019. The 2023 Higher sitting is
+   * re-reviewed the same way (bio_review_2023_hl.py): all 113 shipped ids are
+   * kept (105 corrected, 8 verified) and 63 tasks the old cards bundled or
+   * missed ship as new ids. bio-2023-hl-q14-b-ii-fig, an authored figure twin
+   * the build never shipped, is withdrawn without an alias. */
+  /* 2026-10-12: biology higher 1019 -> 1067. The 2022 Higher sitting is
+   * re-reviewed the same way (bio_review_2022_hl.py): all 142 shipped ids are
+   * kept (all corrected) and 48 tasks the old cards bundled or missed ship as
+   * new ids. Two authored cards the build never shipped are withdrawn without
+   * an alias. */
+  /* 2026-10-13: biology higher 1067 -> 1078. The 2021 Higher sitting is
+   * re-reviewed the same way (bio_review_2021_hl.py): all 177 shipped ids are
+   * kept (168 corrected, 9 verified) and 11 tasks the old cards bundled or
+   * missed ship as new ids. */
+  /* 2026-10-13: biology higher 1078 -> 1228. The 2020 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2020_hl.py): 149 tasks, 150 cards once Q6(f) is split into
+   * its two printed disorders. Every earlier id is unchanged. */
+  /* 2026-10-14: biology higher 1228 -> 1376. The 2019 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2019_hl.py): 147 tasks, 148 cards once the four printed
+   * routes are split, less Q7(b)(iii) and (iv), which the SEC withdrew as
+   * outside the syllabus. Every earlier id is unchanged. */
+  /* 2026-10-24: biology higher 1376 -> 1519. The 2018 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2018_hl.py): 137 tasks, 143 cards once the four printed routes
+   * are split. Every earlier id is unchanged. */
+  /* 2026-10-25: biology higher 1519 -> 1523. 2019 Higher Q7(b)(iii) and (iv),
+   * the four tasks the SEC withdrew as outside the syllabus and first kept out
+   * of the bank, are carded as printed with the footnote's effect as each
+   * row's note (a printed ask is never left out). Every earlier id is
+   * unchanged. */
+  /* 2026-10-25: biology higher 1523 -> 1664. The 2017 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2017_hl.py): 137 tasks, 141 cards once the four printed routes
+   * are split. Every earlier id is unchanged. */
+  /* 2026-10-25: biology higher 1664 -> 1829. The 2016 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2016_hl.py): 163 tasks, 165 cards once the two printed routes
+   * are split. Every earlier id is unchanged. */
+  /* 2026-10-25: biology higher 1829 -> 1983. The 2015 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2015_hl.py): 150 tasks, 154 cards once the printed routes
+   * (Q7(c)(i)2 and 3, catalase or pepsin or amylase) are split. Every earlier
+   * id is unchanged. */
+  /* 2026-10-25: biology higher 1983 -> 2122. The 2014 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2014_hl.py): 139 tasks, 139 cards, no printed routes. Every
+   * earlier id is unchanged. */
+  /* 2026-10-25: biology higher 2122 -> 2261. The 2013 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2013_hl.py): 139 tasks, 139 cards; Q5 and Q6 are each one
+   * whole-question card at the Section A rubric's 20. Every earlier id is
+   * unchanged. */
+  /* 2026-10-25: biology higher 2261 -> 2410. The 2012 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2012_hl.py): 149 tasks, 149 cards, no printed routes. Every
+   * earlier id is unchanged. */
+  /* 2026-10-25: biology higher 2410 -> 2565. The 2011 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2011_hl.py): 155 tasks, 155 cards, no printed routes. Every
+   * earlier id is unchanged. */
+  /* 2026-10-27: biology higher 2565 -> 2705. The 2010 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2010_hl.py): 140 tasks, 140 cards, no printed routes. Every
+   * earlier id is unchanged. */
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
+  /* 2026-10-11: biology ordinary 686 -> 873. The 2026 Ordinary sitting is
+   * added from the same review (bio_review_2026_ol.py): 183 tasks, 187 cards
+   * once the four closed choose-one pools (Q7(c), Q13(b)(vi), Q16(c)(vi),
+   * Q17(a)(iv)) are expanded, and one task (Q12(b)(ii)2) held over a scheme
+   * misprint. Nothing removed: the 686 cards from 2021-2025 keep their
+   * identity hash, pinned below. */
+  /* 2026-10-12: biology ordinary 873 -> 915. The 2025 Ordinary sitting is
+   * re-reviewed paper by paper (bio_review_2025_ol.py) and corrected in
+   * place: 132 of its 133 shipped ids are kept, each mapped to the task it
+   * was carding (old fields recorded in biology-review-audit.json), and 43
+   * tasks the old cards bundled or missed ship as new ids. One shipped id,
+   * bio-2025-ol-q16-ciii-fig, duplicated two cards already carding Q16(c)(iii)
+   * and (iv); it is withdrawn with a progress alias to bio-2025-ol-q16-c-iii.
+   * The frozen 2021-2025 identity hash is pinned below with it restored. */
+  /* 2026-10-12: biology ordinary 915 -> 959. The 2024 Ordinary sitting is
+   * re-reviewed the same way (bio_review_2024_ol.py): all 124 shipped ids are
+   * kept (122 corrected, 2 verified) and 44 tasks the old cards bundled or
+   * missed ship as new ids. */
+  /* 2026-10-12: biology ordinary 959 -> 1042. The 2023 Ordinary sitting is
+   * re-reviewed the same way (bio_review_2023_ol.py): all 99 shipped ids are
+   * kept (98 corrected, 1 verified) and 83 tasks the old cards bundled or
+   * missed ship as new ids. bio-2023-ol-q16b-ii-v-fig, an authored figure
+   * twin the build never shipped, is withdrawn without an alias. */
+  /* 2026-10-13: biology ordinary 1042 -> 1060. The 2022 Ordinary sitting is
+   * re-reviewed the same way (bio_review_2022_ol.py): all 166 shipped ids are
+   * kept (156 corrected, 10 verified) and 18 tasks the old cards bundled or
+   * missed ship as new ids. bio-2022-ol-q16-a-ii-fig, an authored figure twin
+   * the build never shipped, is withdrawn without an alias. */
+  /* 2026-10-13: biology ordinary 1060 -> 1092. The 2021 Ordinary sitting is
+   * re-reviewed the same way (bio_review_2021_ol.py): all 164 shipped ids are
+   * kept (153 corrected, 11 verified) and 32 tasks the old cards bundled or
+   * missed ship as new ids. Four authored figure twins the build never
+   * shipped are withdrawn without an alias. */
+  /* 2026-10-14: biology ordinary 1092 -> 1278. The 2020 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2020_ol.py): 186 tasks, 186 cards. Every earlier id is
+   * unchanged. */
+  /* 2026-10-24: biology ordinary 1278 -> 1404. The 2019 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2019_ol.py): 126 tasks, 126 cards; seven parts whose scheme
+   * prints answers but no per-response tariff they fit are each one whole-part
+   * card at the printed part total, every row unpriced. Every earlier id is
+   * unchanged. */
+  /* 2026-10-25: biology ordinary 1404 -> 1577. The 2018 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2018_ol.py): 173 tasks, 173 cards. Every earlier id is
+   * unchanged. */
+  /* 2026-10-25: biology ordinary 1577 -> 1748. The 2017 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2017_ol.py): 170 tasks, 171 cards once Q11(c)(iv)'s plant or
+   * animal route is split. Every earlier id is unchanged. */
+  /* 2026-10-25: biology ordinary 1748 -> 1914. The 2016 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2016_ol.py): 166 tasks, 166 cards, each of the two printed
+   * routes (Q4(e) arthritis or osteoporosis, Q15(c)(vi) Parkinson's disease or
+   * paralysis) authored as its own task. Every earlier id is unchanged. */
+  /* 2026-10-25: biology ordinary 1914 -> 2077. The 2015 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2015_ol.py): 163 tasks, 163 cards, no printed routes. Every
+   * earlier id is unchanged. */
+  /* 2026-10-25: biology ordinary 2077 -> 2238. The 2014 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2014_ol.py): 161 tasks, 161 cards, no printed routes. Every
+   * earlier id is unchanged. */
+  /* 2026-10-25: biology ordinary 2238 -> 2395. The 2013 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2013_ol.py): 157 tasks, 157 cards; Section B's Q7, Q8 and Q9
+   * (a) are each one whole-part card at the rubric's 6. Every earlier id is
+   * unchanged. */
+  /* 2026-10-25: biology ordinary 2395 -> 2526. The 2012 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2012_ol.py): 131 tasks, 131 cards; Section A's six questions
+   * are each one whole-question card at 20. Every earlier id is unchanged. */
+  /* 2026-10-27: biology ordinary 2526 -> 2669. The 2011 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2011_ol.py): 143 tasks, 143 cards; Question 11's three parts
+   * are each one whole-part card at the paper's printed part total. Every
+   * earlier id is unchanged. */
+  /* 2026-10-27: biology ordinary 2669 -> 2833. The 2010 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2010_ol.py): 164 tasks, 164 cards; Q11(c)(vii) is left open
+   * (its scheme prints no answer; excluded with that page evidence on
+   * 2026-10-27, no card). Every earlier id is unchanged. */
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
@@ -1025,6 +1199,28 @@ const englishBridgedIds = new Set<string>([
   ...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds]);
 const englishAdditionIds = new Set([...englishPublishedIds].filter(id => !englishBridgedIds.has(id)));
 const englishAliasIds = [...englishBridgedIds].filter(id => id in CARD_ID_ALIASES);
+/* Biology keeps its 1,359 pre-review IDs frozen (673 Higher + 686 Ordinary,
+ * the identity hashes above): every 2021-2025 card it shipped before the
+ * paper-by-paper review. The review's additions are explicit: each id a
+ * reviewed 2021-2025 sitting first ships (review.added in
+ * biology-review-audit.json, plus bio-2025-hl-q9-b-ii, an authored card the
+ * build had never shipped), the 2026 sittings, and every sitting before 2021,
+ * carded for the first time. A shipped id a review withdraws survives as a
+ * progress alias, so the frozen form is the live non-additions plus the bio-
+ * alias keys. Never rebaseline the frozen count or hash. */
+type BiologyReviewSitting = { review?: { added: string[] } };
+const BIOLOGY_REVIEW_ADDED = new Set([
+  ...Object.values((biologyReview as unknown as { sittings: Record<string, BiologyReviewSitting> })
+    .sittings).flatMap(sitting => sitting.review?.added ?? []),
+  'bio-2025-hl-q9-b-ii',
+]);
+const isBiologyAdded = (id: string) => {
+  const year = Number(id.slice('bio-'.length, 'bio-'.length + 4));
+  return year < 2021 || year > 2025 || BIOLOGY_REVIEW_ADDED.has(id);
+};
+const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
+  .map(card => card.id).filter(isBiologyAdded));
+const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
@@ -1036,6 +1232,10 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('biology:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [...ids.filter(id => !isBiologyAdded(id)), ...biologyAliasIds.filter(id => id.includes(level))];
+  }
   if (name.startsWith('agricultural-science:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !agriAdditionIds.has(id)), ...agriAliasIds.filter(id => id.includes(level))];
@@ -1076,6 +1276,7 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)).length
     : name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)).length
     : name.startsWith('english:') ? cards.filter(card => !englishAdditionIds.has(card.id)).length
+    : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
     : cards.length;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -1161,6 +1362,10 @@ describe('Mark Bank card preservation', () => {
     // source-reviewed tasks and withdraw 9 per-item cards onto aliases: + 1,595.
     // English (2026-10-23): its 650 frozen cards gain 2,160 reviewed tasks and
     // withdraw 125 bridged legacy cards onto aliases: + 2,035.
+    // Biology (merged 2026-10-24): its 1,359 frozen cards gain the paper-by-paper
+    // review's additions (2010-2020 and 2026 carded for the first time, and the
+    // tasks the reviewed 2021-2025 sittings had bundled or missed) and withdraw
+    // two onto aliases: + biologyAdditionIds - 2.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1170,7 +1375,8 @@ describe('Mark Bank card preservation', () => {
     // cards are withdrawn onto aliases.
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
-        || name.startsWith('geography:') || name.startsWith('english:') ? frozenIds(name, cards).length - cards.length : 0;
+        || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
+        ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
@@ -1181,7 +1387,8 @@ describe('Mark Bank card preservation', () => {
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
-        + englishAdditionIds.size - englishAliasIds.length);
+        + englishAdditionIds.size - englishAliasIds.length
+        + biologyAdditionIds.size - biologyAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1521,8 +1728,10 @@ describe('Mark Bank card preservation', () => {
     // ...and Geography's 93 withdrawn choose-N combination cards (geography- keys).
     expect(geographyAliasedIds).toHaveLength(93);
     expect(englishAliasIds).toHaveLength(125);
+    // ...and the 2 Biology shipped ids a paper-by-paper review withdrew (bio- keys).
+    expect(biologyAliasIds).toHaveLength(2);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
-      + geographyAliasedIds.length + englishAliasIds.length);
+      + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1568,7 +1777,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('physical-education:')
         && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
       // Business counts its frozen set; Economics (and Agricultural Science,
-      // Construction and English) its live frozen cards, its withdrawn halves
+      // Construction, English and Biology) its live frozen cards, its withdrawn halves
       // counted once, as the alias keys below; Art counts
       // its original cards (its added years are new cards, not part of this
       // earlier bank).
@@ -1620,6 +1829,28 @@ describe('Mark Bank card preservation', () => {
     for (const id of englishAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-'));
     expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-'));
+  });
+
+  it('adds the reviewed Biology sittings on top of the frozen 2021-2025 set without replacing an id', () => {
+    // Every card id names its own sitting, which is what isBiologyAdded reads.
+    expect(BIO_HIGHER.every(card => card.id.startsWith(`bio-${card.year}-hl-`))).toBe(true);
+    expect(BIO_ORDINARY.every(card => card.id.startsWith(`bio-${card.year}-ol-`))).toBe(true);
+    // A shipped id a review withdraws survives as a progress alias; restored,
+    // the 2021-2025 set is exactly the one pinned before the reviews (above).
+    expect(biologyAliasIds.filter(id => id.includes('-hl-'))).toEqual(['bio-2024-hl-q8-b2']);
+    expect(biologyAliasIds.filter(id => id.includes('-ol-'))).toEqual(['bio-2025-ol-q16-ciii-fig']);
+    for (const id of biologyAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+    // The live decks, pinned whole (their history is beside the frozen pins).
+    expect(BIO_HIGHER).toHaveLength(2705);
+    expect(idHash(BIO_HIGHER.map(card => card.id))).toBe('ddd10144ca8fa3f688428f95265c9ec22b34845cb958e688bda87cbe1fe5cf39');
+    expect(BIO_ORDINARY).toHaveLength(2833);
+    expect(idHash(BIO_ORDINARY.map(card => card.id))).toBe('3c05c15a5e63b4dc0b6ee511c626bab2deefd20696f76954151576c80106c2ff');
+    expect(biologyAdditionIds.size).toBe(2705 + 2833 - (673 - 1) - (686 - 1));
+    // The sittings before 2021 had no Biology cards: everything they carry is new.
+    expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(1627);
+    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1741);
+    expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
+    expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(187);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

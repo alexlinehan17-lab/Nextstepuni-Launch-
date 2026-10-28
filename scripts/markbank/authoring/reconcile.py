@@ -714,6 +714,9 @@ def content_hash(subject):
         if subject in ('art', 'politics-and-society'):
             # The rows and parts a student places marks on are cut from the printed table at load.
             names += ['answers.ts']
+        if subject == 'politics-and-society':
+            # Scheme lines the lifted block lost are restored from the PDF at load.
+            names += ['corrections.ts', 'corrections.json']
         if subject == 'irish':
             # Listening/reading answers and literature tariffs are cut into rows at load.
             names += ['answers.ts', 'tariffs.ts']

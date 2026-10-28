@@ -30,6 +30,7 @@ import { CARDS as physicsHigher } from '@/components/MarkBank/cards/physics/high
 import { CARDS as physicsOrdinary } from '@/components/MarkBank/cards/physics/ordinary';
 import { buildQuestionModel } from '@/components/WaysIn/questionModel';
 import { waysInSourceFromMarkBank } from '@/components/WaysIn/sources';
+import biologyPreReview from './fixtures/waysInBiologyPreReview.json';
 
 // Every built subject, not a hand-kept subset. Economics, Construction Studies
 // and Maths were absent, so nothing checked their cards through this handoff —
@@ -48,6 +49,19 @@ const cards = [
   ...mathsHigher, ...mathsOrdinary,
   ...physicsHigher, ...physicsOrdinary,
 ];
+
+// The Biology paper-by-paper review (2026-10) cards each priced ask on its own,
+// so the Biology cards the compact-list checks below were written against no
+// longer bundle several printed asks. Those checks are about the parser, so they
+// still read the bundled text those cards shipped with before the review
+// (fixtures/waysInBiologyPreReview.json, taken from the deck at 6652f80cc) on
+// top of the live card; every other card is read as it ships.
+const preReviewText = new Map(biologyPreReview.map(entry => [entry.id, entry]));
+const compactCard = (cardId: string) => {
+  const card = cards.find(candidate => candidate.id === cardId);
+  const before = preReviewText.get(cardId);
+  return card && before ? { ...card, ...before } as typeof card : card;
+};
 
 const countWords: Record<string, number> = {
   one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
@@ -190,7 +204,7 @@ describe('Ways In across the Mark Bank corpus', () => {
     };
 
     for (const [cardId, expected] of Object.entries(expectedLabels)) {
-      const card = cards.find(candidate => candidate.id === cardId);
+      const card = compactCard(cardId);
       expect(card, cardId).toBeDefined();
       const model = buildQuestionModel(waysInSourceFromMarkBank(card!, card!.subjectId));
       expect(model.planPrompts.map(prompt => prompt.label.toLowerCase()), cardId).toEqual(expected);
@@ -215,7 +229,7 @@ describe('Ways In across the Mark Bank corpus', () => {
     };
 
     for (const [cardId, expected] of Object.entries(expectedSources)) {
-      const card = cards.find(candidate => candidate.id === cardId);
+      const card = compactCard(cardId);
       expect(card, cardId).toBeDefined();
       const model = buildQuestionModel(waysInSourceFromMarkBank(card!, card!.subjectId));
       expect(model.planPrompts.map(prompt => prompt.sourceText), cardId).toEqual(expected);
@@ -311,7 +325,7 @@ describe('Ways In across the Mark Bank corpus', () => {
     };
 
     for (const [cardId, expected] of Object.entries(expectedLines)) {
-      const card = cards.find(candidate => candidate.id === cardId);
+      const card = compactCard(cardId);
       expect(card, cardId).toBeDefined();
       const model = buildQuestionModel(waysInSourceFromMarkBank(card!, card!.subjectId));
       expect(model.lines, cardId).toEqual(expected);
@@ -326,7 +340,7 @@ describe('Ways In across the Mark Bank corpus', () => {
       'bio-2024-ol-q16-b-ii-iii': ['Part 1', 'Part 2', 'Part (iii)'],
     };
     for (const [cardId, expected] of Object.entries(nestedPlanLabels)) {
-      const card = cards.find(candidate => candidate.id === cardId)!;
+      const card = compactCard(cardId)!;
       const model = buildQuestionModel(waysInSourceFromMarkBank(card, card.subjectId));
       expect(model.planPrompts.map(prompt => prompt.label), cardId).toEqual(expected);
     }

@@ -57,7 +57,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
 # 'merged' with no component split.
 SUBJECTS = {
     'accounting': {'mode': 'accounting-reviewed'},
-    'biology': {'mode': 'merged'},
+    # Biology's carded corpus starts at 2021, the first sitting carded in
+    # 2026-08 and the scope of its committed coverage baseline. The papers
+    # folder also holds the 2010-2020 sittings, fetched for Paper Trail; read
+    # as a side effect they turned a 1,636-ask ledger into 4,677 asks with no
+    # card ever written against them (the trap recorded in
+    # markbank-card-text-corrections). The window is a DECISION, like DCG's:
+    # widen it when those sittings are audited, never by fetching. 'also'
+    # admits one earlier sitting at a time, as each is carded paper by paper
+    # (bio_review_<year>_<level>.py); 'from' moves back a year once both of
+    # its levels are.
+    'biology': {'mode': 'merged', 'from': 2010, 'also': []},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},
@@ -505,6 +515,8 @@ def sittings(subject):
     """
     root = PP.papers_dir(subject)
     first = SUBJECTS.get(subject, {}).get('from')
+    # Sittings admitted ahead of the window, one at a time, as each is audited.
+    also = {tuple(s) for s in SUBJECTS.get(subject, {}).get('also', [])}
     found = collections.defaultdict(list)
     for f in sorted(os.listdir(root)):
         # 'cl' is the common-level token: LCVP is examined at one level, and
@@ -514,7 +526,7 @@ def sittings(subject):
         # 'em' — separate papers sat by different candidates on the same
         # afternoon, and a digits-only pattern found neither of them.
         m = re.fullmatch(r'(\d{4})-(hl|ol|cl)(?:-([a-z0-9]+))?-paper\.pdf', f)
-        if m and (first is None or int(m.group(1)) >= first):
+        if m and (first is None or int(m.group(1)) >= first or (int(m.group(1)), m.group(2)) in also):
             found[(int(m.group(1)), m.group(2))].append(m.group(3))
     return [(y, l, comps) for (y, l), comps in sorted(found.items())]
 
@@ -552,6 +564,48 @@ def _letter_run(subject):
 def _letters_in_order(subject, letters):
     run = _letter_run(subject)
     return sorted(letters, key=lambda c: (run.index(c) if c in run else 99, c))
+
+
+# Printed asks the census reads as too short to be a question, each checked on
+# its page and carded: the paper prints the ask once as a lead-in and then each
+# term, table row or answer box on its own ("Explain the following terms used in
+# genetics:" over "Gene"), so the leaf's own text is just that term. Keyed
+# (subject, year, level, census label) -> (the exact text the census extracts,
+# what the page prints). The empty-leaf flag stands down only while the reader
+# extracts exactly that text: a change in what it reads raises the flag again.
+SHORT_ASKS = {
+    **{('biology', 2020, 'ol', f'Q5({x})'): ('', 'p5: an empty answer box under cell drawing; the ask is Q5\'s '
+                                               'lead-in "Select the cell name from the following list and insert '
+                                               'it into the appropriate box underneath each"')
+       for x in 'abcdefg'},
+    ('biology', 2021, 'ol', 'Q3(b)'): ('Eye', 'Column A row "Eye" of the match-a-structure table; the ask is Q3\'s '
+                                              'lead-in "Choose each structure from the following list"'),
+    ('biology', 2021, 'ol', 'Q3(c)'): ('Lungs', 'Column A row "Lungs" of the same table'),
+    ('biology', 2021, 'ol', 'Q12(a)(ii)'): ('Gene', 'the term "Gene" under "Explain the following terms used in '
+                                                    'genetics:"'),
+    ('biology', 2018, 'ol', 'Q10(a)(i)'): ('Niche', 'the term "Niche" under "Explain the following terms used in '
+                                                    'ecology:"'),
+    ('biology', 2018, 'ol', 'Q11(a)(ii)'): ('Gene', 'the term "Gene" under "Explain the following terms used in '
+                                                    'genetics:"'),
+    ('biology', 2024, 'hl', 'Q7(c)(i)'): ('Plant', 'the organism "Plant" under "Give one application of genetic '
+                                                   'engineering for each of the following:"'),
+    ('biology', 2025, 'hl', 'Q15(a)(ii)'): ('Niche', 'the term "Niche" under "Explain the following three '
+                                                     'ecological terms:"'),
+    ('biology', 2025, 'ol', 'Q8(b)(iv)'): ('Lipid', 'the biomolecule "Lipid" under "Briefly describe how you tested '
+                                                    'for the presence of the following biomolecules:"'),
+    ('biology', 2013, 'hl', 'Q14(b)(iii)'): ('ADP.', 'p13: the topic "ADP." under "Write notes on each of the '
+                                                     'following topics."'),
+    ('biology', 2013, 'ol', 'Q10(a)(i)'): ('Gene.', 'p8: the term "Gene." under "Explain the following terms used in '
+                                                   'genetics:"'),
+    ('biology', 2013, 'ol', 'Q11(a)(ii)'): ('Niche.', 'p9: the term "Niche." under "Explain the following terms as '
+                                                     'used in ecology:"'),
+}
+
+
+def short_ask_ok(subject, year, level, flag):
+    """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded."""
+    entry = SHORT_ASKS.get((subject, year, level, flag.get('where')))
+    return bool(entry) and flag.get('type') == 'empty-leaf' and flag.get('detail') == f'extracted text: {entry[0]!r}'
 
 
 def continuity_flags(parts, texts, subject=None, continuous=False):
@@ -3393,6 +3447,7 @@ def census_subject(subject):
             flags = continuity_flags(
                 parts, texts, subject,
                 continuous=cfg.get('numbering') == 'continuous')
+            flags = [f for f in flags if not short_ask_ok(subject, year, level, f)]
             if cfg.get('walker') == 'history':
                 # A History paper is almost entirely CHOICE: eleven topics are
                 # printed and a candidate answers two. Adding up every printed

@@ -338,18 +338,14 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       }
     }
     expect(cards).toHaveLength(623);
-    // 580 before the residue shapes were read: a name the scheme prints bare over a one- or two-mark criterion,
-    // a sibling card's ladder on a split question's shared block, tariff rows beside a ladder, a range the text
-    // layer broke over two lines, a band whose descriptor follows its marks.
-    expect(structured).toHaveLength(615);
-    // What is still a list, pinned by id: a two-line answer with "1 mark + 1 mark" inside it, a one-word answer under a
-    // sibling's "2 marks + 2 marks", three "One fact" items over a two-mark ladder on a four-mark response, an essay whose
-    // second criterion's bands the block does not carry, a sibling card's answer row, a bare "Name" the question also
-    // says, and two tariffs the block does not print.
-    expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id).sort()).toEqual([
-      'politics-2018-hl-q1-c', 'politics-2018-ol-q1-b-i', 'politics-2018-ol-q1-k-example', 'politics-2018-ol-q1-o-i',
-      'politics-2019-ol-q1-f', 'politics-2019-ol-q3-c', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-q-iii',
-    ]);
+    // 580 before the residue shapes were read (2026-10-27 #291), 615 after them; the last eight (a two-line answer with
+    // "1 mark + 1 mark" inside it, a one-word answer under a sibling's "2 marks + 2 marks", three "One fact" items
+    // priced 2 + 1 + 1 in the scheme's margin, an essay whose second criterion's label heads its ladder, a sibling
+    // card's answer row, a bare "Name", and two sub-tariffs the block had lost) are read since the same day: every
+    // card is ladders and rows. cards/politics-and-society/corrections.ts restores the two margin prices the block
+    // lost, from the scheme PDF, and test/politicsAnswers.test.tsx pins each shape.
+    expect(structured).toHaveLength(623);
+    expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id)).toEqual([]);
     // No card hides its answers in a closed box any more: the bullets are a
     // visible list on every card, structured or not.
     expect(cardsOf(politics).filter(card => /^\s*•\s*\S/m.test((card.rubric?.schemeGuidance ?? []).join('\n'))).length).toBeGreaterThan(0);
@@ -577,6 +573,42 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         const source = cards.find(item => item.id === group.sourceCardId)!;
         const twin = group.rowIds.map(id => card.rows.find(row => row.id === id)!);
         expect(twin.map(row => row.parts ?? null), `${card.id} ← ${source.id}`).toEqual(source.rows.map(row => row.parts ?? null));
+      }
+    }
+  });
+
+  it('Construction: a drawing row priced "Any N of the above details (M marks each)" is a group of the scheme\'s own detail lines', () => {
+    const cards = [...CONSTRUCTION_HIGHER, ...CONSTRUCTION_ORDINARY].filter(isPointCard);
+    const rows = cards.flatMap(card => card.rows.map(row => ({ card, row })));
+    const tariff = /^Any (\d+)\s*(?:of the above details|x|×)/i;
+    // Ordinary Level draws to a priced table ("19 mm external render 5 … Any 7 of the above details (5 marks each)")
+    // and Higher Level prices the same way under PERFORMANCE CRITERIA, the part's own tariff line heading its labels.
+    // construction_choices.py reads each table's lines into the row's group: claim N at M each, the row's own marks,
+    // the printed tariff kept as the row's note. A line the table prints twice is a detail drawn twice ("Stop valve 5"
+    // on two valves, "70 x 20 mm architrave 4" each side of a door) and stays twice. 53 tasks and their twins.
+    const groups = rows.filter(({ row }) => row.kind === 'anyN' && row.group && tariff.test(row.contextNote ?? ''));
+    expect(groups).toHaveLength(105);
+    for (const { card, row } of groups) {
+      const n = Number(tariff.exec(row.contextNote!)![1]);
+      expect(row.group!.claimMax, `${card.id}/${row.id}`).toBe(n);
+      expect(row.group!.claimMax * row.group!.perOption, `${card.id}/${row.id}`).toBe(row.marks);
+      expect(row.group!.options.length, `${card.id}/${row.id}`).toBeGreaterThanOrEqual(n);
+      expect(row.group!.options.every(option => option.trim().length > 0), `${card.id}/${row.id}`).toBe(true);
+      expect(/^(?:DETAILS|Details)(?:\s*[-–]\s*typical sizes)?$|^PERFORMANCE CRITERIA$/.test(row.verbatim), `${card.id}/${row.id}: ${row.verbatim}`).toBe(true);
+    }
+    // 2019 HL Q1(a) prices "Any 12 × 4marks" over 25 bulleted details in three menus (scheme p. 32): one pool of
+    // twelve, past the 17 options a question may show, so the row keeps its strip and its note names the menus.
+    const unlifted = rows.filter(({ row }) => row.kind === 'criterion' && tariff.test(row.verbatim.trim()));
+    expect(unlifted.map(({ card, row }) => `${card.id}/${row.id}: ${row.verbatim}`)).toEqual([
+      'cons-2019-hl-q1-a/details: Any 12 × 4marks',
+      'cons-2019-hl-q1-complete/a-details: Any 12 × 4marks',
+    ]);
+    // Complete-question cards mirror their tasks' groups under their own row ids.
+    for (const card of cards.filter(item => item.taskGroups?.length)) {
+      for (const group of card.taskGroups!) {
+        const source = cards.find(item => item.id === group.sourceCardId)!;
+        const twin = group.rowIds.map(id => card.rows.find(row => row.id === id)!);
+        expect(twin.map(row => row.group ?? null), `${card.id} ← ${source.id}`).toEqual(source.rows.map(row => row.group ?? null));
       }
     }
   });

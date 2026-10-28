@@ -36,20 +36,26 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block inner leaf with 15 mm internal plaster; 200 mm full-fill cavity insulation; concrete block outer leaf with 19 mm render; wall ties; concrete lintels; stepped DPC; airtight tape; cavity closer; thermally broken door frame (150 × 80 mm); insulated external door (90 mm).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block inner leaf with 15 mm internal plaster; 200 mm full-fill cavity insulation; concrete block outer leaf with 19 mm render; wall ties; concrete lintels; stepped DPC; airtight tape; cavity closer; thermally broken door frame (150 × 80 mm); insulated external door (90 mm).",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block inner leaf with 15 mm internal plaster",
+                "Full fill cavity insulation 200 mm",
+                "Concrete block outer leaf with 19 mm render",
+                "Wall ties",
+                "Concrete lintels",
+                "Stepped DPC",
+                "Airtight tape",
+                "Cavity closer",
+                "Thermally broken door frame",
+                "Insulated external door"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -245,20 +251,26 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block inner leaf with 15 mm internal plaster; 200 mm full-fill cavity insulation; concrete block outer leaf with 19 mm render; wall ties; concrete lintels; stepped DPC; airtight tape; cavity closer; thermally broken door frame (150 × 80 mm); insulated external door (90 mm).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete block inner leaf with 15 mm internal plaster; 200 mm full-fill cavity insulation; concrete block outer leaf with 19 mm render; wall ties; concrete lintels; stepped DPC; airtight tape; cavity closer; thermally broken door frame (150 × 80 mm); insulated external door (90 mm).",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete block inner leaf with 15 mm internal plaster",
+                "Full fill cavity insulation 200 mm",
+                "Concrete block outer leaf with 19 mm render",
+                "Wall ties",
+                "Concrete lintels",
+                "Stepped DPC",
+                "Airtight tape",
+                "Cavity closer",
+                "Thermally broken door frame",
+                "Insulated external door"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1280,19 +1292,22 @@
         "rows": [
           {
             "id": "items",
-            "kind": "criterion",
-            "verbatim": "Any 6 x 4 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 24,
-            "contextNote": "Credit the best SIX acceptable items at 4 marks each, capped at 24. Marked items: pumps; pipework from the underground tank to the attic tank; filters; attic storage tank; ball valve; 28 mm overflow; pipework from the attic tank to the cistern; toilet cistern; valves. Typical details: a submersible pump, 12 mm pipe to an in-line filter, a 230 litre attic tank, 12 mm feed to the cistern.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24
-            ]
+            "contextNote": "Any 6 x 4 marks. Credit the best SIX acceptable items at 4 marks each, capped at 24. Marked items: pumps; pipework from the underground tank to the attic tank; filters; attic storage tank; ball valve; 28 mm overflow; pipework from the attic tank to the cistern; toilet cistern; valves. Typical details: a submersible pump, 12 mm pipe to an in-line filter, a 230 litre attic tank, 12 mm feed to the cistern.",
+            "group": {
+              "claimMax": 6,
+              "perOption": 4,
+              "options": [
+                "Sketch .",
+                "Pipework to collect water from roof",
+                "Pipework from roof to storage tank",
+                "Filters and overflow pipe",
+                "Pipework from underground storage to attic storage",
+                "Filters"
+              ]
+            }
           },
           {
             "id": "sketch",
@@ -1536,19 +1551,22 @@
           },
           {
             "id": "b-items",
-            "kind": "criterion",
-            "verbatim": "Any 6 x 4 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 24,
-            "contextNote": "Credit the best SIX acceptable items at 4 marks each, capped at 24. Marked items: pumps; pipework from the underground tank to the attic tank; filters; attic storage tank; ball valve; 28 mm overflow; pipework from the attic tank to the cistern; toilet cistern; valves. Typical details: a submersible pump, 12 mm pipe to an in-line filter, a 230 litre attic tank, 12 mm feed to the cistern.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16,
-              20,
-              24
-            ]
+            "contextNote": "Any 6 x 4 marks. Credit the best SIX acceptable items at 4 marks each, capped at 24. Marked items: pumps; pipework from the underground tank to the attic tank; filters; attic storage tank; ball valve; 28 mm overflow; pipework from the attic tank to the cistern; toilet cistern; valves. Typical details: a submersible pump, 12 mm pipe to an in-line filter, a 230 litre attic tank, 12 mm feed to the cistern.",
+            "group": {
+              "claimMax": 6,
+              "perOption": 4,
+              "options": [
+                "Sketch .",
+                "Pipework to collect water from roof",
+                "Pipework from roof to storage tank",
+                "Filters and overflow pipe",
+                "Pipework from underground storage to attic storage",
+                "Filters"
+              ]
+            }
           },
           {
             "id": "b-sketch",
@@ -2261,20 +2279,25 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 50 mm; tread 250 × 25 mm; riser 170 × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical wedge; horizontal wedge; glue blocks 60 × 60 mm; pitch line (maximum 42°).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 50 mm; tread 250 × 25 mm; riser 170 × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical wedge; horizontal wedge; glue blocks 60 × 60 mm; pitch line (maximum 42°).",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "String 250 mm × 50 mm",
+                "Tread 250 mm × 25 mm",
+                "Riser 170 mm × 20 mm",
+                "Joint between tread and riser",
+                "Nosing – 16 mm minimum",
+                "Vertical wedge",
+                "Horizontal wedge",
+                "Glue blocks 60 mm × 60 mm",
+                "Pitch line (max 42⁰)"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2469,20 +2492,25 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 50 mm; tread 250 × 25 mm; riser 170 × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical wedge; horizontal wedge; glue blocks 60 × 60 mm; pitch line (maximum 42°).",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 50 mm; tread 250 × 25 mm; riser 170 × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical wedge; horizontal wedge; glue blocks 60 × 60 mm; pitch line (maximum 42°).",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "String 250 mm × 50 mm",
+                "Tread 250 mm × 25 mm",
+                "Riser 170 mm × 20 mm",
+                "Joint between tread and riser",
+                "Nosing – 16 mm minimum",
+                "Vertical wedge",
+                "Horizontal wedge",
+                "Glue blocks 60 mm × 60 mm",
+                "Pitch line (max 42⁰)"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -5768,12 +5796,15 @@
     {
       "cardId": "cons-2022-ol-q1-a",
       "priorSha256": "713afad9168e24642edebb731611be9aaeafde484e03e36c2156992107ea1b50",
-      "correctedSha256": "506c4ee8b116957f0e6dd1e0e0173e88dfb5a5d3e6a72b5d13404cc87349d90f",
+      "correctedSha256": "99a628d099a653c0f48d3c325e2bbc1cfc6dd726cac5055fdad7c938d41436ff",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 47,
       "priorTopicId": "cons-3-4",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47."
+      "reason": "Question wording lifted from the paper. Adds the four typical dimensions (4) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 47.",
+      "supersededSha256": [
+        "506c4ee8b116957f0e6dd1e0e0173e88dfb5a5d3e6a72b5d13404cc87349d90f"
+      ]
     },
     {
       "cardId": "cons-2022-ol-q1-b",
@@ -5821,12 +5852,15 @@
     {
       "cardId": "cons-2022-ol-q3-b",
       "priorSha256": "9e305b55e1ba4350b671361fc1bd2b79d016370683f2bbd24b723fe857922d0a",
-      "correctedSha256": "ad28e4392aef5baf6308f5bc2a130811d9ff52496496088f7501a1bcfd132a74",
+      "correctedSha256": "08a274100aea18e673d99da15433b196adc1fa0f353d3e0d727520b04eae7d7f",
       "priorTotalMarks": 24,
       "correctedTotalMarks": 28,
       "priorTopicId": "cons-5-6",
       "correctedTopicId": "cons-5-2",
-      "reason": "Question wording lifted from the paper. Adds the printed sketch (4) to the best-six items (6 × 4): 24 → 28."
+      "reason": "Question wording lifted from the paper. Adds the printed sketch (4) to the best-six items (6 × 4): 24 → 28.",
+      "supersededSha256": [
+        "ad28e4392aef5baf6308f5bc2a130811d9ff52496496088f7501a1bcfd132a74"
+      ]
     },
     {
       "cardId": "cons-2022-ol-q3-c",
@@ -5861,12 +5895,15 @@
     {
       "cardId": "cons-2022-ol-q5-a",
       "priorSha256": "389c4fc48bef0108363c0bc0b0636f6536bf08d3784f41f1f1320361c55216ca",
-      "correctedSha256": "61c3d583efff6797b1446d79e8eaf2d8804c79b4a248c5e78e3619f1608c7bcf",
+      "correctedSha256": "9cd0538b5c4388e25a2f515549fdd9616227712208ff3d67714beadc6d9545b9",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-4-4",
       "correctedTopicId": "cons-1-5",
-      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46."
+      "reason": "Question wording lifted from the paper. Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46.",
+      "supersededSha256": [
+        "61c3d583efff6797b1446d79e8eaf2d8804c79b4a248c5e78e3619f1608c7bcf"
+      ]
     },
     {
       "cardId": "cons-2022-ol-q6-a",
@@ -6326,6 +6363,24 @@
       "priorSha256": "7b6a7f3ccb9e7e4b6ebcc7b6fa2e087ae7740a2ff003d95ab08c4491ada002aa",
       "correctedSha256": "bf0ada9cfdd91307155db25c7aa657ccd930fb79b265475723b1b95d7c18cf7a",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2022-ol-q1-complete",
+      "priorSha256": "1c10997aebc059b4ec1f774a01b7badc0a1d167a3406cf6524a0107101beb2c4",
+      "correctedSha256": "e8f93aaf07669f7e4d833f53a3161f20289f359fd5357f316842aa51474b7311",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2022-ol-q3-complete",
+      "priorSha256": "986fcd64d3c93b41d4b1f8f39a4185128c49d5b562559e34e7fc5c6d57a040c0",
+      "correctedSha256": "dc8aad225b0cf3fdf2f822ce24c506ce157918fedf620e952933096d30acf2c5",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2022-ol-q5-complete",
+      "priorSha256": "5e7c38203d10c722cf9ced0f565bc3fbfdcbebd2965c103b53ca67163f536328",
+      "correctedSha256": "44730914ef6946d8fb8e69fcbc1d12372f5283912ed80fcfcbb1f46ec4586bf1",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

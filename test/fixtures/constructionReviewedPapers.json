@@ -82,7 +82,7 @@
       "consolidatedLegacy": 8,
       "leafTasks": 23,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 30,
       "paperComplete": true
     },
@@ -136,6 +136,9 @@
       "cons-2022-ol-q8-None-strip-foundation"
     ],
     "choiceCardIds": [
+      "cons-2022-ol-q1-a",
+      "cons-2022-ol-q3-b",
+      "cons-2022-ol-q5-a",
       "cons-2022-ol-q8-None-strip-foundation"
     ]
   },
@@ -226,7 +229,7 @@
       "consolidatedLegacy": 8,
       "leafTasks": 22,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 29,
       "paperComplete": true
     },
@@ -279,6 +282,9 @@
       "cons-2021-ol-q8-None-joist-bridging"
     ],
     "choiceCardIds": [
+      "cons-2021-ol-q1-a",
+      "cons-2021-ol-q3-a",
+      "cons-2021-ol-q5-a",
       "cons-2021-ol-q8-None-joist-bridging"
     ]
   },
@@ -367,7 +373,7 @@
       "consolidatedLegacy": 8,
       "leafTasks": 22,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 29,
       "paperComplete": true
     },
@@ -420,6 +426,9 @@
       "cons-2020-ol-q8-None-stud-partition"
     ],
     "choiceCardIds": [
+      "cons-2020-ol-q1-a",
+      "cons-2020-ol-q3-a",
+      "cons-2020-ol-q5-a",
       "cons-2020-ol-q8-None-stud-partition"
     ]
   },
@@ -499,7 +508,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 24,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 32,
       "paperComplete": true
     },
@@ -544,6 +553,9 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2019-ol-q1-a",
+      "cons-2019-ol-q3-a",
+      "cons-2019-ol-q5-a",
       "cons-2019-ol-q8-terms"
     ]
   },
@@ -625,7 +637,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 23,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 29,
       "paperComplete": true
     },
@@ -669,6 +681,9 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2018-ol-q1-a",
+      "cons-2018-ol-q3-a",
+      "cons-2018-ol-q5-a",
       "cons-2018-ol-q8-terms"
     ]
   },
@@ -751,7 +766,7 @@
       "consolidatedLegacy": 8,
       "leafTasks": 23,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 30,
       "paperComplete": true
     },
@@ -805,6 +820,9 @@
       "cons-2017-ol-q8-None-hand-rail"
     ],
     "choiceCardIds": [
+      "cons-2017-ol-q1-a",
+      "cons-2017-ol-q3-a",
+      "cons-2017-ol-q5-a",
       "cons-2017-ol-q8-None-hand-rail"
     ]
   },
@@ -887,7 +905,7 @@
       "consolidatedLegacy": 7,
       "leafTasks": 21,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 28,
       "paperComplete": true
     },
@@ -938,6 +956,9 @@
       "cons-2016-ol-q8-None-lever-valve"
     ],
     "choiceCardIds": [
+      "cons-2016-ol-q1-a",
+      "cons-2016-ol-q3-a",
+      "cons-2016-ol-q5-a",
       "cons-2016-ol-q8-None-lever-valve"
     ]
   },
@@ -1018,7 +1039,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 22,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 30,
       "paperComplete": true
     },
@@ -1059,6 +1080,9 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2014-ol-q1-a",
+      "cons-2014-ol-q3-a",
+      "cons-2014-ol-q5-a",
       "cons-2014-ol-q8-terms"
     ]
   },
@@ -1138,7 +1162,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 19,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 28,
       "paperComplete": true
     },
@@ -1175,6 +1199,9 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2013-ol-q1-a",
+      "cons-2013-ol-q3-a",
+      "cons-2013-ol-q5-section",
       "cons-2013-ol-q8-terms"
     ]
   },
@@ -1254,7 +1281,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 20,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 28,
       "paperComplete": true
     },
@@ -1293,6 +1320,9 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2012-ol-q1-a",
+      "cons-2012-ol-q3-a",
+      "cons-2012-ol-q5-a",
       "cons-2012-ol-q8-terms"
     ]
   },
@@ -1307,7 +1337,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 27,
       "wholeQuestions": 11,
-      "anyNChoiceCards": 2,
+      "anyNChoiceCards": 3,
       "sourceFigures": 31,
       "paperComplete": true
     },
@@ -1357,6 +1387,7 @@
     "keptChoiceIds": [],
     "choiceCardIds": [
       "cons-2011-hl-q10-a",
+      "cons-2011-hl-q8-b",
       "cons-2011-hl-q9-a"
     ]
   },
@@ -1371,7 +1402,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 20,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 5,
       "sourceFigures": 27,
       "paperComplete": true
     },
@@ -1410,6 +1441,10 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2011-ol-q1-a",
+      "cons-2011-ol-q3-a",
+      "cons-2011-ol-q5-a",
+      "cons-2011-ol-q7-a",
       "cons-2011-ol-q8-terms"
     ]
   },
@@ -1487,7 +1522,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 21,
       "wholeQuestions": 9,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 4,
       "sourceFigures": 25,
       "paperComplete": true
     },
@@ -1527,6 +1562,9 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2010-ol-q1-a",
+      "cons-2010-ol-q3-a",
+      "cons-2010-ol-q5-a",
       "cons-2010-ol-q8-terms"
     ]
   }

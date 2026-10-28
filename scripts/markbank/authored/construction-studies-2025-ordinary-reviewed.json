@@ -35,20 +35,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render; concrete block outer leaf; full-fill insulated cavity with wall tie; concrete block inner leaf; internal plaster; cavity closer; stepped DPC; concrete lintels; thermally broken window frame; triple glazing; airtightness. The model specifies 19 mm render, 100 mm leaves, a 200 mm insulated cavity, 100 mm × 75 mm concrete lintels, 15 mm plaster and airtightness tape.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render; concrete block outer leaf; full-fill insulated cavity with wall tie; concrete block inner leaf; internal plaster; cavity closer; stepped DPC; concrete lintels; thermally broken window frame; triple glazing; airtightness. The model specifies 19 mm render, 100 mm leaves, a 200 mm insulated cavity, 100 mm × 75 mm concrete lintels, 15 mm plaster and airtightness tape.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External render",
+                "Concrete block outer leaf",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf",
+                "Internal plaster",
+                "Cavity closer",
+                "Stepped DPC",
+                "Concrete lintels",
+                "Thermally broken window frame",
+                "Triple glazing",
+                "Airtightness"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -241,20 +248,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render; concrete block outer leaf; full-fill insulated cavity with wall tie; concrete block inner leaf; internal plaster; cavity closer; stepped DPC; concrete lintels; thermally broken window frame; triple glazing; airtightness. The model specifies 19 mm render, 100 mm leaves, a 200 mm insulated cavity, 100 mm × 75 mm concrete lintels, 15 mm plaster and airtightness tape.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: external render; concrete block outer leaf; full-fill insulated cavity with wall tie; concrete block inner leaf; internal plaster; cavity closer; stepped DPC; concrete lintels; thermally broken window frame; triple glazing; airtightness. The model specifies 19 mm render, 100 mm leaves, a 200 mm insulated cavity, 100 mm × 75 mm concrete lintels, 15 mm plaster and airtightness tape.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "External render",
+                "Concrete block outer leaf",
+                "Full fill insulated cavity with wall tie",
+                "Concrete block inner leaf",
+                "Internal plaster",
+                "Cavity closer",
+                "Stepped DPC",
+                "Concrete lintels",
+                "Thermally broken window frame",
+                "Triple glazing",
+                "Airtightness"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -1030,21 +1044,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: draw the given sketch; 15 mm cold feed to stove; 22 mm flow to radiators; 22 mm return from radiators; radiators; cold feed to cylinder; 22 mm primary flow to cylinder; 22 mm primary return from cylinder; 22 mm expansion pipe; expansion tank/vessel; hot feed from cylinder; 22 mm overflow pipe; pump and valves.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: draw the given sketch; 15 mm cold feed to stove; 22 mm flow to radiators; 22 mm return from radiators; radiators; cold feed to cylinder; 22 mm primary flow to cylinder; 22 mm primary return from cylinder; 22 mm expansion pipe; expansion tank/vessel; hot feed from cylinder; 22 mm overflow pipe; pump and valves.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "15mm cold feed to stove",
+                "22 mm flow to radiators",
+                "22 mm return from radiators",
+                "Radiators",
+                "Cold feed to cylinder",
+                "22 mm primary flow to cylinder",
+                "22 mm primary return from cylinder",
+                "22 mm expansion pipe",
+                "Expansion tank/ vessel",
+                "Hot feed from cylinder",
+                "22 mm overflow pipe"
+              ]
+            }
           },
           {
             "id": "quality",
@@ -1228,21 +1248,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 8 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details – typical sizes",
             "marks": 40,
-            "contextNote": "Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: draw the given sketch; 15 mm cold feed to stove; 22 mm flow to radiators; 22 mm return from radiators; radiators; cold feed to cylinder; 22 mm primary flow to cylinder; 22 mm primary return from cylinder; 22 mm expansion pipe; expansion tank/vessel; hot feed from cylinder; 22 mm overflow pipe; pump and valves.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35,
-              40
-            ]
+            "contextNote": "Any 8 x 5 marks. Credit the best EIGHT acceptable items at 5 marks each, capped at 40. Marked items: draw the given sketch; 15 mm cold feed to stove; 22 mm flow to radiators; 22 mm return from radiators; radiators; cold feed to cylinder; 22 mm primary flow to cylinder; 22 mm primary return from cylinder; 22 mm expansion pipe; expansion tank/vessel; hot feed from cylinder; 22 mm overflow pipe; pump and valves.",
+            "group": {
+              "claimMax": 8,
+              "perOption": 5,
+              "options": [
+                "15mm cold feed to stove",
+                "22 mm flow to radiators",
+                "22 mm return from radiators",
+                "Radiators",
+                "Cold feed to cylinder",
+                "22 mm primary flow to cylinder",
+                "22 mm primary return from cylinder",
+                "22 mm expansion pipe",
+                "Expansion tank/ vessel",
+                "Hot feed from cylinder",
+                "22 mm overflow pipe"
+              ]
+            }
           },
           {
             "id": "a-quality",
@@ -2002,20 +2028,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 mm × 50 mm; tread 250 mm × 25 mm; riser 170 mm × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical and horizontal wedges; glue blocks 60 mm × 60 mm; pitch line/nosing line (maximum 42°); trimmer joist 225 mm × 75 mm; first floor joist 225 mm × 50 mm; tongue and groove floor.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 mm × 50 mm; tread 250 mm × 25 mm; riser 170 mm × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical and horizontal wedges; glue blocks 60 mm × 60 mm; pitch line/nosing line (maximum 42°); trimmer joist 225 mm × 75 mm; first floor joist 225 mm × 50 mm; tongue and groove floor.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "String 250 mm × 50 mm",
+                "Tread 250 mm × 25 mm",
+                "Riser 170 mm × 20 mm",
+                "Joint between tread and riser",
+                "Nosing – 16 mm minimum",
+                "Vertical & horizontal wedge",
+                "Glue blocks 60 mm × 60 mm",
+                "Pitch line/ nosing line (max 42⁰)",
+                "Trimmer joist 225 mm x 75 mm",
+                "First floor joist 225 mm x 50 mm",
+                "Tongue and groove floor"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2208,20 +2241,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 x 5 marks",
+            "kind": "anyN",
+            "verbatim": "Details - typical sizes",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 mm × 50 mm; tread 250 mm × 25 mm; riser 170 mm × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical and horizontal wedges; glue blocks 60 mm × 60 mm; pitch line/nosing line (maximum 42°); trimmer joist 225 mm × 75 mm; first floor joist 225 mm × 50 mm; tongue and groove floor.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 x 5 marks. Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 mm × 50 mm; tread 250 mm × 25 mm; riser 170 mm × 20 mm; joint between tread and riser; nosing (16 mm minimum); vertical and horizontal wedges; glue blocks 60 mm × 60 mm; pitch line/nosing line (maximum 42°); trimmer joist 225 mm × 75 mm; first floor joist 225 mm × 50 mm; tongue and groove floor.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "String 250 mm × 50 mm",
+                "Tread 250 mm × 25 mm",
+                "Riser 170 mm × 20 mm",
+                "Joint between tread and riser",
+                "Nosing – 16 mm minimum",
+                "Vertical & horizontal wedge",
+                "Glue blocks 60 mm × 60 mm",
+                "Pitch line/ nosing line (max 42⁰)",
+                "Trimmer joist 225 mm x 75 mm",
+                "First floor joist 225 mm x 50 mm",
+                "Tongue and groove floor"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -6167,12 +6207,15 @@
     {
       "cardId": "cons-2025-ol-q1-a",
       "priorSha256": "a7485186426a8e9c79725a9e4ddaeef95488426c507b4c7b569d47be0c95a2dc",
-      "correctedSha256": "538ab5114f3d7a03391829b5a457a5be0fe6c84a88c73daac887c771deb3ab5b",
+      "correctedSha256": "564cb9cb05137208d2b6086cf9ba296151b2bc1cece0a062989c6677bf59291a",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-3-2",
       "correctedTopicId": "cons-1-5",
-      "reason": "Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46."
+      "reason": "Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46.",
+      "supersededSha256": [
+        "538ab5114f3d7a03391829b5a457a5be0fe6c84a88c73daac887c771deb3ab5b"
+      ]
     },
     {
       "cardId": "cons-2025-ol-q1-b",
@@ -6220,12 +6263,15 @@
     {
       "cardId": "cons-2025-ol-q3-a",
       "priorSha256": "be47343311a1d5c5735406943225ef2689504bdbf6452ad6d4e3a7e40f8f7718",
-      "correctedSha256": "2a5aadc556f9b51159301b37597438f5a2dff01dab24a8deaeb1e20279d1a3e3",
+      "correctedSha256": "d19ca19651f55efe58a30457a14271540ca2c89c9f02e3fa26d935d75ad754ab",
       "priorTotalMarks": 40,
       "correctedTotalMarks": 45,
       "priorTopicId": "cons-5-3",
       "correctedTopicId": "cons-5-3",
-      "reason": "Adds the printed quality-of-sketch allowance (5/3/1): 40 → 45; best eight items at 5 each."
+      "reason": "Adds the printed quality-of-sketch allowance (5/3/1): 40 → 45; best eight items at 5 each.",
+      "supersededSha256": [
+        "2a5aadc556f9b51159301b37597438f5a2dff01dab24a8deaeb1e20279d1a3e3"
+      ]
     },
     {
       "cardId": "cons-2025-ol-q3-b",
@@ -6270,12 +6316,15 @@
     {
       "cardId": "cons-2025-ol-q5-a",
       "priorSha256": "461aadb41355ec540c7b26526136a813003bd9229106d12479b8f96a23817f86",
-      "correctedSha256": "77feff9b4d2ea26f03040aa89e1278dace4914529a6b76fc7f981131727aafe7",
+      "correctedSha256": "aaba2309b135ef6c0b0cfe667eacdf31f588105df0d526beea8250561daa1b90",
       "priorTotalMarks": 35,
       "correctedTotalMarks": 46,
       "priorTopicId": "cons-4-4",
       "correctedTopicId": "cons-1-5",
-      "reason": "Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46."
+      "reason": "Adds the three typical dimensions (3) and draughting/accuracy/scale (8/6/4) printed within part (a): 35 → 46.",
+      "supersededSha256": [
+        "77feff9b4d2ea26f03040aa89e1278dace4914529a6b76fc7f981131727aafe7"
+      ]
     },
     {
       "cardId": "cons-2025-ol-q5-b",
@@ -6668,6 +6717,24 @@
       "priorSha256": "b152a396c92aac115639d0eb72cb0effec8cf1719332cd8fb32cd47981be87cd",
       "correctedSha256": "52103601c0a1d160e9b4b41ae8dfe337214320330b0b5c5a6632e31aa02d1f95",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2025-ol-q1-complete",
+      "priorSha256": "4037753295d03aeead2621472023dd9b6aa14fafb78be06225cae8d42380036a",
+      "correctedSha256": "af288779b4fa5edafd25728aa1b2ee82db69b28928b61e5e1effa99b3dd6e432",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2025-ol-q3-complete",
+      "priorSha256": "14922d12cb9b8ef2fe0a966fd9f49f216ab892310f4c27ccc96c65754df2fb92",
+      "correctedSha256": "958b97cee3ba6088633a7ffcfe9f71785039f6eb93be83ef92b29d8a4917b9d6",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2025-ol-q5-complete",
+      "priorSha256": "cf8b0d84ce3d1ff5f0b13de988b0e8055a1cd2264d9cfb2adcdfdd421764d58f",
+      "correctedSha256": "696b7c7233d9d937a260a9ae158920c66f7aed3c54db4415cb499df0a2e0b967",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

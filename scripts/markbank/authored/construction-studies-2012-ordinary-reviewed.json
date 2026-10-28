@@ -36,20 +36,31 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete tiles",
+                "Softwood battens 44 × 35 mm",
+                "Breathable membrane",
+                "Rafters 150 × 40 mm / 250 mm × 40 mm",
+                "Roof insulation to comply with current Building Regulations",
+                "Ceiling joists 150 × 40 mm",
+                "12.5 mm foil-backed plasterboard ceiling with skim coat",
+                "Wallplate 100 × 75 mm",
+                "Internal plaster and external render",
+                "Concrete block inner leaf 100 mm",
+                "Wall insulation to comply with current Building Regulations",
+                "Residual cavity 50 mm",
+                "Concrete block outer leaf 100 mm",
+                "Eaves gutter 100 mm",
+                "Ventilation path"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -249,20 +260,31 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: concrete tiles; 44 × 35 mm battens; breathable membrane; rafters 150–250 × 40 mm; roof insulation; 150 × 40 mm ceiling joists; 12.5 mm foil-backed plasterboard and skim; 100 × 75 mm wallplate; internal plaster and external render; 100 mm inner leaf; wall insulation; 50 mm residual cavity; 100 mm outer leaf; fascia and soffit; 100 mm eaves gutter; ventilation path.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Concrete tiles",
+                "Softwood battens 44 × 35 mm",
+                "Breathable membrane",
+                "Rafters 150 × 40 mm / 250 mm × 40 mm",
+                "Roof insulation to comply with current Building Regulations",
+                "Ceiling joists 150 × 40 mm",
+                "12.5 mm foil-backed plasterboard ceiling with skim coat",
+                "Wallplate 100 × 75 mm",
+                "Internal plaster and external render",
+                "Concrete block inner leaf 100 mm",
+                "Wall insulation to comply with current Building Regulations",
+                "Residual cavity 50 mm",
+                "Concrete block outer leaf 100 mm",
+                "Eaves gutter 100 mm",
+                "Ventilation path"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -947,19 +969,27 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 6 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 30,
-            "contextNote": "Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30
-            ]
+            "contextNote": "Any 6 of the above details (5 marks each). Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.",
+            "group": {
+              "claimMax": 6,
+              "perOption": 5,
+              "options": [
+                "Connection to water mains",
+                "Stop valve",
+                "Water supply pipe",
+                "External wall",
+                "Protective sleeve for water supply",
+                "Service pipe insulation",
+                "Stop valve",
+                "Rising main",
+                "Connection to kitchen sink",
+                "Typical type of material",
+                "Typical size of pipework"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1239,19 +1269,27 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 6 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 30,
-            "contextNote": "Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30
-            ]
+            "contextNote": "Any 6 of the above details (5 marks each). Credit the best SIX acceptable details at 5 marks each, capped at 30. Marked details: connection to the water mains; stop valve; water supply pipe; external wall; protective sleeve for the supply; service pipe insulation; stop valve inside; rising main; connection to the kitchen sink; typical material; typical pipe size.",
+            "group": {
+              "claimMax": 6,
+              "perOption": 5,
+              "options": [
+                "Connection to water mains",
+                "Stop valve",
+                "Water supply pipe",
+                "External wall",
+                "Protective sleeve for water supply",
+                "Service pipe insulation",
+                "Stop valve",
+                "Rising main",
+                "Connection to kitchen sink",
+                "Typical type of material",
+                "Typical size of pipework"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -2116,20 +2154,29 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Window board 25 mm",
+                "Window frame 150 mm × 80 mm",
+                "Triple-glazing low-e glass",
+                "Precast concrete window cill",
+                "Mastic and / or taped seals",
+                "D.P.C.",
+                "External plaster and Internal plaster 15 mm",
+                "Concrete block outer leaf 100 mm",
+                "Residual cavity 50 mm",
+                "Wall tie",
+                "Thermal insulation 100 mm",
+                "Concrete block inner leaf 100 mm",
+                "Proprietary cavity closer"
+              ]
+            }
           },
           {
             "id": "dimensions",
@@ -2329,20 +2376,29 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 25 mm window board; 150 × 80 mm frame; triple low-e glazing; precast concrete cill; mastic or taped seals; DPC; 15 mm plaster outside and in; 100 mm outer leaf; 50 mm residual cavity; wall tie; 100 mm insulation; 100 mm inner leaf; proprietary cavity closer.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Window board 25 mm",
+                "Window frame 150 mm × 80 mm",
+                "Triple-glazing low-e glass",
+                "Precast concrete window cill",
+                "Mastic and / or taped seals",
+                "D.P.C.",
+                "External plaster and Internal plaster 15 mm",
+                "Concrete block outer leaf 100 mm",
+                "Residual cavity 50 mm",
+                "Wall tie",
+                "Thermal insulation 100 mm",
+                "Concrete block inner leaf 100 mm",
+                "Proprietary cavity closer"
+              ]
+            }
           },
           {
             "id": "a-dimensions",
@@ -5358,6 +5414,42 @@
       "priorSha256": "d82e50e67a37b2f31dde140554f499cb9648ee9ef9519ccb30acf03b975cfb85",
       "correctedSha256": "a6597ff6b14b5b02e403ad0e4244b476fdb22853d50d05099109a0d2d0ee6f06",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2012-ol-q1-a",
+      "priorSha256": "4c8a7f274ce055b49f2df1c136b7b1001784acc3f1fcb8ff261871abfd6fc24d",
+      "correctedSha256": "c88d9c5d597b8db4fea3853b39adb6487095635dee08fe9438fc21350f6a124b",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2012-ol-q1-complete",
+      "priorSha256": "1a7bb56ebac9ada119567907913e8273f7bc32761eda68a7da89405c94bff1e9",
+      "correctedSha256": "687883f3de26c926baa5d412df3808401e8befd18a0518525569d31fcff9aad3",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2012-ol-q3-a",
+      "priorSha256": "6de207d1b09d7beaa5cb7d5fa5c90adf5be86e78c30aee9eabbb740f20112773",
+      "correctedSha256": "8bccc61d62ab9e72705f572c4d7413196d45cdd2bb34c7189bed2b655ad03183",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2012-ol-q3-complete",
+      "priorSha256": "9fade3182eb8788469df0337cb1fc7fdc653aaf40b23395f18b153989998e1e8",
+      "correctedSha256": "dabfba093fbdc119c962f800c689339ef4bb1400537243fc359da1a45a17706a",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2012-ol-q5-a",
+      "priorSha256": "072212bcfae17a1e12048ab77667fd404df2c5272a45fd0b556df1dacd109df9",
+      "correctedSha256": "d287c92acdeea3fee05cbc05dd22dd9e78cf7b5c335d35894cc449fe1c93caa6",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2012-ol-q5-complete",
+      "priorSha256": "3efddffb0a70dfab600f1e7fdcbe2bf84a0eb76f786787835a046b634d35c783",
+      "correctedSha256": "a80ada35b5e055b2f601563d7e3c3bcb68dbd786804546cb9c3e6f43b1b6201d",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

@@ -258,7 +258,13 @@ describe('every card traces to the marking scheme on disk', () => {
           // Rows read "Label — answer"; the answer is what the scheme prints.
           : [row.verbatim.split(/\s[—-]\s/).pop() ?? row.verbatim];
         for (const claim of claims) {
-          if (!claimMatches(scheme, claim)) bad.push(`${card.questionRef}: "${claim}"`);
+          // As the build: a menu option pairing a label with its value, read
+          // from a scheme table ("thoracic — 12"), traces when each half does.
+          const halves = row.kind === 'anyN' ? claim.split(/\s—\s/) : [];
+          if (!claimMatches(scheme, claim)
+            && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
+            bad.push(`${card.questionRef}: "${claim}"`);
+          }
         }
       }
     }
@@ -324,6 +330,19 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad: string[] = [];
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       for (const row of card.rows) {
+        // A declared criterion row prices a judgement the scheme prints
+        // ("Safety precaution described"); it is exempt from the answer test
+        // but may never be empty, or a tariff written in place of the
+        // criterion that the answer test refuses as well (build-deck's
+        // contentFreeRow). Biology's own rows are held to the tariff test
+        // alone in markBankBiologyReview.test.ts.
+        if (row.kind === 'criterion') {
+          if (!row.verbatim.trim() || (/\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i.test(row.verbatim)
+            && isContentFreeRow(row.verbatim))) {
+            bad.push(`${card.questionRef}: "${row.verbatim}"`);
+          }
+          continue;
+        }
         if (row.kind !== 'anyN' && isContentFreeRow(row.verbatim)) {
           bad.push(`${card.questionRef}: "${row.verbatim}"`);
         }
