@@ -107,7 +107,7 @@ class Lifter:
             if not os.path.exists(path):
                 problems.append(f'{key}: {pin["path"]} is missing')
                 continue
-            src = B.Src(path, key)
+            src = B.Src(path, key, total_x=getattr(ledger, 'TOTAL_COLUMN_X', None) if key == 'scheme' else None)
             if src.sha != pin['sha256']:
                 problems.append(f'{key}: sha256 {src.sha} != pinned {pin["sha256"]}')
             if src.pages != pin['pages']:

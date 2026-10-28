@@ -218,7 +218,7 @@ def _line_text(ln):
 
 
 
-def _page_rows(page, paper=False):
+def _page_rows(page, paper=False, total_x=None):
     """The page's printed lines in the PDF's reading order, each as
     (text, cell): a mark cell printed on the same baseline as a line of text to
     its left is taken off as that line's cell; a cell with no text beside it
@@ -252,6 +252,24 @@ def _page_rows(page, paper=False):
         r[0] = _norm(r[0])
     raw = [r for r in raw if r[0]]
     width = page.rect.width
+    # A scheme that prints a second marks column of PART totals at the far
+    # right (2020 Higher: "With emission of radiation 3 6"): a bare number at
+    # or right of total_x (the ledger's TOTAL_COLUMN_X, in points) is that
+    # part's printed total, kept beside its line (Src.totals) and never read as
+    # a cell, so the row's own cell is not mistaken for half a table row.
+    totals = {}
+    if total_x is not None:
+        keep = []
+        for r in raw:
+            if re.fullmatch(r'\d{1,2}', r[0]) and r[1][0] >= total_x:
+                partner = [q for q in raw if q is not r and abs(q[2] - r[2]) <= 2.5 and q[1][2] <= r[1][0] + 1
+                           and not (re.fullmatch(r'\d{1,2}', q[0]) and q[1][0] >= total_x)
+                           and not re.fullmatch(r'\d{1,2}', q[0])]
+                if partner:
+                    totals[id(max(partner, key=lambda q: q[1][2]))] = r[0]
+                    continue
+            keep.append(r)
+        raw = keep
     bracketed = re.compile(r'(?:(?:[Aa]ny|ANY)\s+\w+\s+)?[\[(].*[\])]')
 
     def is_cell(r):
@@ -300,15 +318,15 @@ def _page_rows(page, paper=False):
         if k in owner:
             continue
         if k in cells:
-            out.append((r[0], r[0], r[1]))
+            out.append((r[0], r[0], r[1], None))
         else:
-            out.append((r[0], ' '.join(attached[k]) if attached.get(k) else None, r[1]))
+            out.append((r[0], ' '.join(attached[k]) if attached.get(k) else None, r[1], totals.get(id(r))))
     return out
 
 
 def _page_lines(page, paper=False):
     """The page's printed lines with their cells taken off (see _page_rows)."""
-    return [t for t, _, _ in _page_rows(page, paper)]
+    return [t for t, _, _, _ in _page_rows(page, paper)]
 
 
 def _norm(line):
@@ -324,7 +342,7 @@ _STRIP_SET = {name: pages for (subject, _y, _l), files in STRIP_SET_PAGES.items(
 class Src:
     """One SEC PDF read as printed lines, page by page (1-based pages)."""
 
-    def __init__(self, path, label):
+    def __init__(self, path, label, total_x=None):
         self.path, self.label = path, label
         self.doc = fitz.open(path)
         self.sha = sha256(path)
@@ -334,6 +352,7 @@ class Src:
         # page -> {line index: the mark cell printed on that line's baseline}
         self.cells = {}
         self.boxes = {}
+        self.totals = {}
         strips = _STRIP_SET.get(os.path.basename(path), ())
         for i, page in enumerate(self.doc):
             if i + 1 in strips:
@@ -342,11 +361,13 @@ class Src:
                 self.lines[i + 1] = [n for n in (_norm(t) for _, t in strip_set_lines(page)) if n]
                 self.cells[i + 1] = {}
                 self.boxes[i + 1] = []
+                self.totals[i + 1] = {}
                 continue
-            rows = _page_rows(page, paper=label != 'scheme')
-            self.lines[i + 1] = [t for t, _, _ in rows]
-            self.cells[i + 1] = {k: c for k, (_, c, _) in enumerate(rows) if c}
-            self.boxes[i + 1] = [b for _, _, b in rows]
+            rows = _page_rows(page, paper=label != 'scheme', total_x=total_x)
+            self.lines[i + 1] = [t for t, _, _, _ in rows]
+            self.cells[i + 1] = {k: c for k, (_, c, _, _) in enumerate(rows) if c}
+            self.boxes[i + 1] = [b for _, _, b, _ in rows]
+            self.totals[i + 1] = {k: t for k, (_, _, _, t) in enumerate(rows) if t}
 
     def page_text(self, page):
         return ' '.join(self.lines[page])
