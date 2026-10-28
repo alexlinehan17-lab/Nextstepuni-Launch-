@@ -1,0 +1,4237 @@
+{
+ "physics-2021-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q1-table.png",
+  "md5": "26c2e3fd59af0e47343d67eeafe385ed",
+  "alt": "Table of the recorded data: l (mm) 300, 400, 500, 600, 700, 800; t (s) 22.0, 25.4, 28.4, 31.1, 33.6, 35.9.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q1(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   92,
+   254,
+   500,
+   313
+  ]
+ },
+ "physics-2021-hl-q11-photo": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q11-photo.png",
+  "md5": "1005241df8fb419e50a2532a5020178c",
+  "alt": "Black-and-white photograph of a group at an outdoor table laid with cups and saucers in front of a hedge: five men seated and, behind them, two women in hats and two men standing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: sciencesource.com (image on page 10)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   248,
+   99,
+   541,
+   294
+  ]
+ },
+ "physics-2021-hl-q14d-photo": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q14d-photo.png",
+  "md5": "960369df03a73aa2ff2e0a537ecdec40",
+  "alt": "Black-and-white photograph of a glass ball resting on pebbles at a shoreline with mountains behind; the mountains and the sky appear upside down inside the ball.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q14(d)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: paulreiffer.com (image on page 15)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   341,
+   327,
+   542,
+   479
+  ]
+ },
+ "physics-2021-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q2-table.png",
+  "md5": "106b94cdeafd2f987a28234f955fdd78",
+  "alt": "Table of the recorded data: u (cm) 20.0, 25.0; v (cm) 31.2, 23.2.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q2(v)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   210,
+   135,
+   386,
+   192
+  ]
+ },
+ "physics-2021-hl-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q3-table.png",
+  "md5": "dac0ab00e6287b2c39839be7095df5ad",
+  "alt": "Table of the recorded data: f (Hz) 256, 320, 341, 427, 480, 512; T (N) 15, 24, 27, 43, 54, 61.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q3(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   92,
+   527,
+   500,
+   585
+  ]
+ },
+ "physics-2021-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q4-table.png",
+  "md5": "d0748709809f4f4539df6122d815d6fb",
+  "alt": "Table of the recorded data: θ (°C) 0, 20, 40, 60, 80, 100; R (Ω) 5.35, 5.60, 5.85, 6.04, 6.28, 6.51.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q4(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   92,
+   104,
+   500,
+   161
+  ]
+ },
+ "physics-2021-hl-q5-data": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q5-data.png",
+  "md5": "8a56a98189469e20f576afbadd02f3e1",
+  "alt": "Table of the recorded data: I (A) 1.0, 1.5, 2.0, 2.5, 3.0, 3.5; Δθ (°C) 2.0, 4.6, 8.2, 12.6, 18.3, 25.0; below it, the line the paper prints under the question: (specific heat capacity of water = 4180 J kg⁻¹ K⁻¹).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   92,
+   491,
+   500,
+   671
+  ],
+  "maskedFurniture": [
+   [
+    92,
+    551,
+    500,
+    651
+   ]
+  ]
+ },
+ "physics-2021-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q5-table.png",
+  "md5": "e9c83108d3d4699d1952965e0c8ff925",
+  "alt": "Table of the recorded data: I (A) 1.0, 1.5, 2.0, 2.5, 3.0, 3.5; Δθ (°C) 2.0, 4.6, 8.2, 12.6, 18.3, 25.0.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q5(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   92,
+   491,
+   500,
+   549
+  ]
+ },
+ "physics-2021-hl-q7-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q7-diagram.png",
+  "md5": "7190cd8c4081bc0116ab949bf8b35e42",
+  "alt": "Diagram: a vertical string hangs from point P down to a sphere B; a block A on the right has an arrow pointing left towards B, and a dashed curved arrow leads from B up and away to the left.",
+  "lettersVisible": [
+   "P",
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q7(iv)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   344,
+   136,
+   545,
+   389
+  ]
+ },
+ "physics-2021-hl-q9-apparatus": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q9-apparatus.png",
+  "md5": "1a27fce7bd6fa98836447bb29e69388f",
+  "alt": "Diagram: a test tube of water held at an angle, a piece of ice held at its closed lower end by a metal weight, and a Bunsen burner heating the tube near the top of the water; labels Water, Metal weight, Ice and Bunsen burner.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9(vii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: amazon.co.uk; slideplayer.com (images on page 8)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   130,
+   460,
+   440,
+   692
+  ]
+ },
+ "physics-2021-hl-q9-picnic": {
+  "src": "/exam-figures/physics/markbank/physics-2021-hl-q9-picnic.png",
+  "md5": "d8254c218c36486cbf92be76e4e6dfb5",
+  "alt": "Photograph of a grey plastic picnic box with a white rim and a carrying handle, two ice packs standing in front of it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9(iii)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2021 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: amazon.co.uk; slideplayer.com (images on page 8)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   388,
+   72,
+   542,
+   222
+  ]
+ },
+ "physics-2021-ol-q10iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q10iv-question.png",
+  "md5": "dcb5d630540cc1a66a4cc68e462d8548",
+  "alt": "The printed question: (iv) Copy the ray diagram below into your answerbook and complete it to show how a real image is formed in a concave mirror. Below it, an upright arrow labelled Object stands on a dashed principal axis, a point f is marked on the axis, and a curved concave mirror is drawn on the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q10(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   224,
+   545,
+   420
+  ]
+ },
+ "physics-2021-ol-q10iv-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q10iv-scheme.png",
+  "md5": "6a30fb84ac9216809dfdc226a30e101d",
+  "alt": "The marking scheme's ray diagram: from the top of the Object arrow a blue ray runs parallel to the axis to the mirror and is reflected back through the point f, and a red ray passes through f to the mirror and is reflected back parallel to the axis; they meet below the axis at the tip of an inverted blue arrow labelled Image.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q10(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   250,
+   449,
+   482,
+   536
+  ],
+  "maskedFurniture": [
+   [
+    250,
+    449,
+    274,
+    491
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q11-garden": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q11-garden.png",
+  "md5": "c992ecec9c5778243bfb3be95d4b69c1",
+  "alt": "Diagram of a rectangular garden drawn as a grey rectangle, a dashed arrow above it marked 6 m and a dashed arrow beside it marked 9 m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q11(ix)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   438,
+   318,
+   540,
+   432
+  ]
+ },
+ "physics-2021-ol-q12x-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q12x-question.png",
+  "md5": "bfd9bf647e801c5397afb437437d38f3",
+  "alt": "The printed question: (x) One isotope of curium is Cm with 247 written above and 96 below after the symbol. How many neutrons are in this isotope? (28)",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q12(x)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   518,
+   545,
+   542
+  ]
+ },
+ "physics-2021-ol-q13e-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q13e-scheme.png",
+  "md5": "a4dd6ff1d06002aa483abd6a139dfdea",
+  "alt": "The marking scheme's drawing of a circuit symbol: a pair of long and short parallel plates, a dashed line, and a second pair of long and short plates, with a wire leading out at each end.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(e)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   298,
+   512,
+   420,
+   542
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q13g-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q13g-scheme.png",
+  "md5": "73cde786b96a896bb6ac7a02cc78613d",
+  "alt": "The marking scheme's drawing: two parallel plates, the left one marked with red plus signs and the right one with red minus signs, joined by straight blue field lines with arrows pointing from the plus plate to the minus plate.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(g)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   236,
+   636,
+   356,
+   683
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14bi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14bi-scheme.png",
+  "md5": "8c19c6f51e3d5d78ee1bcb2d7e7e27fb",
+  "alt": "The marking scheme's drawing: two objects on stands, A on the left with red plus signs around it and B on the right with none.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   190,
+   136,
+   312,
+   209
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14biii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14biii-scheme.png",
+  "md5": "a90d12c0813c3053876d6e8abc3b382c",
+  "alt": "The marking scheme's drawing: a pear-shaped conductor outlined in grey with blue plus signs around it, more of them bunched at the pointed end.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(b)(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   372,
+   436.5,
+   488,
+   508
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14ciii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14ciii-scheme.png",
+  "md5": "662d7219e079ff3d6b7803857ef9ff04",
+  "alt": "The marking scheme's drawing: a vertical orange arrow labelled current carrying conductor passes through three dashed concentric ellipses labelled magnetic field, each with an arrowhead showing direction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(c)(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   230,
+   273,
+   468,
+   389
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q14d-sonometer": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14d-sonometer.png",
+  "md5": "376414813e4410d6a3c028ea48e910f5",
+  "alt": "Photograph of a sonometer: a long wooden box with a wire stretched along its top over two bridges, a tension key at one end and pegs at the other.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(d)(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: indiamart.com; State Examinations Commission (images on page 14)",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   214,
+   328,
+   452,
+   449
+  ]
+ },
+ "physics-2021-ol-q14d-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q14d-wave.png",
+  "md5": "584408a8e5ebb32b810d6eb2ae599439",
+  "alt": "Diagram of a stationary wave: two curves cross at a point near each end and bow apart between them, with a dashed double-headed arrow below marked 40 cm running between the two crossing points.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(d)(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   165,
+   517,
+   520,
+   598
+  ]
+ },
+ "physics-2021-ol-q1v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q1v-question.png",
+  "md5": "16ba7d19f32c7f578f870dd9779ff24b",
+  "alt": "The printed question: (v) From the table, when the distance s is 0.4 m the time t is 0.29 s. Use this data and the formula g = 2s over t squared, set as a fraction, to calculate a value for g.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q1(v)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   380,
+   545,
+   421
+  ]
+ },
+ "physics-2021-ol-q2iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q2iv-question.png",
+  "md5": "c1f9e6861c9b099439455b01a3323f52",
+  "alt": "The printed question: (iv) Boyle's law states that for a fixed mass of gas, pressure is inversely proportional to volume. For each value of V in the table above, calculate 1 over V, set as a fraction, to three decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q2(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   260,
+   545,
+   300
+  ]
+ },
+ "physics-2021-ol-q2v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q2v-question.png",
+  "md5": "5fb503323310c7b89f4f24281c8a786b",
+  "alt": "The printed question: (v) Plot a graph on graph paper of p against 1 over V, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q2(v)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   80,
+   305,
+   545,
+   328
+  ]
+ },
+ "physics-2021-ol-q2v-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q2v-scheme-graph.png",
+  "md5": "52e5cf623222f7f054672bc30d5d32e3",
+  "alt": "The marking scheme's graph titled Pressure against 1/Volume: 1/V from 0 to 0.12 on the vertical axis against pressure in kPa from 0 to 250, six points on a straight line through the origin, and red dashed arrows reading 1/V at 140 kPa.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q2(v)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   96,
+   493,
+   515,
+   692
+  ],
+  "maskedFurniture": [
+   [
+    96,
+    493,
+    332,
+    513
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q4-calc": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q4-calc.png",
+  "md5": "7d8fb3a6aa47c07f012378d0231ad57f",
+  "alt": "The printed calculation: Heat lost by steam = Heat gained by water and calorimeter; m(steam) l + m(steam) c(water) Δθ(steam) = m(water) c(water) Δθ(water) + m(cal.) c(copper) Δθ(cal.); B × l + B × 4200 × D = A × 4200 × C + 0.0894 × 390 × C; then the specific heat capacities of water (4200 J kg⁻¹ K⁻¹) and copper (390 J kg⁻¹ K⁻¹).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q4(vi)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   60,
+   335,
+   540,
+   430
+  ]
+ },
+ "physics-2021-ol-q5iv-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q5iv-scheme-graph.png",
+  "md5": "85277116b8e3a72ace0ba79a44480911",
+  "alt": "The marking scheme's graph: I / A from 0 to 0.4 on the vertical axis against V / V from 0 to 7, six points on a straight red line through the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q5(iv)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   100,
+   413,
+   492,
+   578
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q6a-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6a-question.png",
+  "md5": "e65aedf12d4af16cacf3907b030648c4",
+  "alt": "The printed question: (a) A student arranges a metre stick so that it is in equilibrium, the word equilibrium underlined. Explain the underlined term.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   192,
+   412,
+   228
+  ]
+ },
+ "physics-2021-ol-q6f-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6f-scheme.png",
+  "md5": "c7a7e9b25b59a7d4786f9e6b204852eb",
+  "alt": "The marking scheme's diagram: a red ray enters an optical fibre drawn as two parallel black lines and zigzags along it, reflecting off each side in turn before leaving at the far end, labelled Light ray and Optic fibre.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(f)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   283,
+   372,
+   500,
+   430
+  ],
+  "maskedFurniture": [
+   [
+    283,
+    413,
+    345,
+    430
+   ]
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q6g-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6g-question.png",
+  "md5": "9ad1fc06e3d90da6281ba8f975d58cf6",
+  "alt": "The printed question: (g) Coulomb's law may be written as F = 1 over 4πε times q₁q₂ over d squared, set as fractions. What do the letters F, q, and d stand for in this expression?",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(g)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   420,
+   545,
+   461
+  ]
+ },
+ "physics-2021-ol-q6i-xray": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6i-xray.png",
+  "md5": "571fe8103f45ad18e85e04fc38dfca2e",
+  "alt": "Photograph of an X-ray tube: a long glass envelope with a metal electrode assembly inside, a cylinder at one end and a coiled lead at the other.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: illustoon.com; orau.org (images on page 5)",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   398,
+   476,
+   542,
+   552
+  ]
+ },
+ "physics-2021-ol-q6k-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q6k-scheme.png",
+  "md5": "a76655c1bb9230fbccf4d52e436d50b5",
+  "alt": "The marking scheme's drawing: a red dot at the centre ringed in green, two dashed circles around it, and blue dots on the circles.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(k)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   398,
+   640,
+   478,
+   712
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q8vii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q8vii-question.png",
+  "md5": "4c402a2bc1dbdab7b1a96e3ca843b66d",
+  "alt": "The printed question: (vii) The wave fronts shown below diffract as they pass through the gap. Copy and complete the diagram to show this wave undergoing diffraction. Below it, four curved grey wave fronts approach a black barrier with a gap in its middle.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q8(vii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   80,
+   352,
+   545,
+   590
+  ]
+ },
+ "physics-2021-ol-q8vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q8vii-scheme.png",
+  "md5": "c8e7f4a06d6a0e2d392a592fe8524d3b",
+  "alt": "The marking scheme's drawing: three vertical black lines, the last with a gap, and three blue semicircular arcs on the far side of the gap, centred on it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q8(vii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   112,
+   520,
+   158,
+   592
+  ],
+  "solution": true
+ },
+ "physics-2021-ol-q9-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-circuit.png",
+  "md5": "a11aa6b2b478bb9beff198af1df97efb",
+  "alt": "Circuit diagram: a 12 V supply and an ammeter A in series with a resistor R₄ = 3 Ω and three resistors in parallel, R₁ = 5 Ω, R₂ = 2 Ω and R₃ = 4 Ω.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9(vi)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   334,
+   302,
+   542,
+   470
+  ]
+ },
+ "physics-2021-ol-q9-rheostat": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-q9-rheostat.png",
+  "md5": "c896da18a00c0f08b3e14a84b65ca6e2",
+  "alt": "Photograph of a laboratory rheostat: a coil of wire wound on a tube between two end mounts, with a sliding contact on a bar above it and terminals at the ends.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9(iii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: electronics-tutorials.ws; State Examinations Commission; shutterstock.com (images on page 8)",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   427,
+   146,
+   542,
+   226
+  ]
+ },
+ "physics-2022-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q1-table.png",
+  "md5": "d49e8f197e710a48c5a00aa373b4abbb",
+  "alt": "Table of the recorded data: position on metre stick 22.5 cm, 32.1 cm, 72.2 cm, 81.3 cm; force (N) 2.85, 2.00, 3.00, 3.40; direction upwards, downwards, downwards, upwards.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(vi)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   84,
+   410,
+   513,
+   517
+  ]
+ },
+ "physics-2022-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q2-table.png",
+  "md5": "c650a1deca91d5cd4916d99e15860136",
+  "alt": "Table of the recorded data: l (cm) 15.0, 20.0, 25.0, 30.0, 35.0, 40.0; p (kPa) 360, 227, 214, 178, 154, 136.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(vi)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   98,
+   120,
+   499,
+   178
+  ]
+ },
+ "physics-2022-hl-q2iv-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q2iv-scheme-table.png",
+  "md5": "3e802529ac9c6c89891f6cdd42d181fc",
+  "alt": "The marking scheme's table of values: 1/l (cm⁻¹) 0.067, 0.05, 0.04, 0.033, 0.029, 0.025; 1/p (kPa⁻¹) 0.0028, 0.0044, 0.0047, 0.0056, 0.0065, 0.0074.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   90,
+   384,
+   505,
+   433
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q3-table.png",
+  "md5": "9506a3ece1a6e215fa9f8ca2ef8d08ba",
+  "alt": "Table of the recorded data: i (degrees) 30, 40, 50, 60, 70, 80; r (degrees) 19, 27, 32, 36, 40, 44.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   98,
+   485,
+   498,
+   542
+  ]
+ },
+ "physics-2022-hl-q3iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q3iii-scheme-table.png",
+  "md5": "4e55ded05d738786714d0a52ff702bb1",
+  "alt": "The marking scheme's table of values: sin i 0.5, 0.64, 0.77, 0.87, 0.94, 0.98; sin r 0.33, 0.45, 0.53, 0.59, 0.64, 0.69.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   98,
+   386,
+   492,
+   426
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q4-table.png",
+  "md5": "ebb8b802d1593f1729b05db90312b7d9",
+  "alt": "Table of the recorded data: f (Hz) 256, 288, 320, 341, 384, 480; l (cm) 29.2, 25.5, 22.6, 20.9, 18.1, 13.7.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   98,
+   136,
+   499,
+   193
+  ]
+ },
+ "physics-2022-hl-q4iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q4iii-question.png",
+  "md5": "e2f82eee2a184a885168d7435804fb23",
+  "alt": "The printed Question 4 up to part (iii): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (cm) 29.2, 25.5, 22.6, 20.9, 18.1, 13.7, and parts (i) to (iii), (iii) asking for a graph of l against 1 over f, set as a fraction, with its note that the line of best fit should not go through the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   25,
+   52,
+   548,
+   304
+  ]
+ },
+ "physics-2022-hl-q4iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q4iii-scheme-table.png",
+  "md5": "7ac95d85a85b9081fae349206272ecbd",
+  "alt": "The marking scheme's table of values: 1/f (Hz⁻¹) 0.0039, 0.0035, 0.0031, 0.0029, 0.0026, 0.0021.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   98,
+   437,
+   494,
+   462
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q5-table.png",
+  "md5": "56347f23ac2f63882e24c20a86a495ea",
+  "alt": "Room temperature = 17.0 °C, then the table of the recorded data: I (A) 1.0, 2.0, 3.0, 3.5, 4.0, 4.5; θ (°C) 19.2, 26.1, 36.6, 44.4, 53.1, 62.1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   98,
+   528,
+   499,
+   613
+  ]
+ },
+ "physics-2022-hl-q5iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q5iii-scheme-table.png",
+  "md5": "40ba88961d5a280149a7519114384444",
+  "alt": "The marking scheme's table of values: I² (A²) 1.0, 4.0, 9.0, 12.25, 16.0, 20.25; Δθ (K) 2.2, 9.1, 19.6, 27.4, 36.1, 45.1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   98,
+   445,
+   500,
+   496
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q6l-scheme-gate": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q6l-scheme-gate.png",
+  "md5": "a5f8edba00ba7cf1fa144821affd23f8",
+  "alt": "The marking scheme's two drawings of the AND gate symbol, separated by a slash: a D-shaped gate with two inputs on the left and one output on the right, and a square box marked & with two inputs and one output.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(l) — and-gate",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   80,
+   521,
+   272,
+   584
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q8v-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q8v-scheme.png",
+  "md5": "16308869f1717055e21813e70481e267",
+  "alt": "The marking scheme's diagram of a p-n junction: a block with P on the left and N on the right, a column of minus signs on the p side of the interface and a column of plus signs on the n side, and arrows from the word neutral to the outer part of each side.",
+  "lettersVisible": [
+   "P",
+   "N"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(v)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   364,
+   428,
+   494,
+   491
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q8vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q8vii-scheme.png",
+  "md5": "f7dce2eaa3d1d89342e230a669741df3",
+  "alt": "The marking scheme's sketch: current I against voltage V, the current staying at zero and then rising in a dashed curve, with an arrow pointing down to the voltage where the curve leaves the axis.",
+  "lettersVisible": [
+   "I",
+   "V"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(vii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   261,
+   606,
+   356,
+   678
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q9c-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q9c-circuit.png",
+  "md5": "4b089950d5263a74503dbb5e9b64652f",
+  "alt": "Circuit diagram: a 12 V battery in a loop with a resistor X = 1 Ω in series with two resistors in parallel, Y = 6 Ω on the upper branch and Z = 3 Ω on the lower branch.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(c)(ii)(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   145,
+   340,
+   450,
+   574
+  ]
+ },
+ "physics-2022-ol-q14c-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q14c-diagram.png",
+  "md5": "ab514ec686716cc9123f1aa82095fc68",
+  "alt": "Diagram of a metre stick marked 10 cm to 90 cm, held up by an arrow pointing up at 50, with arrows pointing down at 30 (7 N), 60 (2 N) and 80 (4 N).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(c)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   110,
+   89,
+   485,
+   228
+  ]
+ },
+ "physics-2022-ol-q14diii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q14diii-question.png",
+  "md5": "833eff385b7d504a49a3b8386773c767",
+  "alt": "The printed lines: \"Radium (Ra, with 226 above 88 after the symbol) is an alpha emitter.\" and part (iii), \"How many neutrons are there in an atom of\" the same radium nuclide.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(d)(iii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   100,
+   612,
+   450,
+   657
+  ]
+ },
+ "physics-2022-ol-q14div-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q14div-question.png",
+  "md5": "39555988a8b1e212a505940d44250bc1",
+  "alt": "The printed lines: \"Radium (Ra, with 226 above 88 after the symbol) is an alpha emitter.\", part (iii), and part (iv), \"What is the daughter nucleus when an atom of\" the same radium nuclide \"emits two alpha particles?\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(d)(iv)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   100,
+   612,
+   500,
+   697
+  ]
+ },
+ "physics-2022-ol-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q2-table.png",
+  "md5": "aafe38416f9374a4545da9482b34c37f",
+  "alt": "Table of the results: i (degrees) 30, 40, 50, 60; r (degrees) 19, 25, 31, 35.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q2(v)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   90,
+   497,
+   505,
+   554
+  ]
+ },
+ "physics-2022-ol-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q3-table.png",
+  "md5": "140c5c63f1b394ee9fee969ba9a12d8a",
+  "alt": "Table of the results: f (Hz) 256, 320, 341, 427, 480, 512; l (cm) 22, 18, 17, 13, 12, 11; and a third row headed 1 over l (cm⁻¹), set as a fraction, with its six cells left empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q3(vii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   84,
+   233,
+   541,
+   334
+  ]
+ },
+ "physics-2022-ol-q3viii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q3viii-question.png",
+  "md5": "61a37d3fe29c7fb4de6f9ed904f63fd6",
+  "alt": "The printed Question 3: the stretched-string experiment, parts (i) to (iv), its table of f (Hz) 256, 320, 341, 427, 480, 512 against l (cm) 22, 18, 17, 13, 12, 11 with an empty row for 1 over l, and parts (v) to (viii), (viii) asking for a graph of f against 1 over l, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q3(viii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   25,
+   52,
+   548,
+   430
+  ]
+ },
+ "physics-2022-ol-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q5-table.png",
+  "md5": "c3bf292ff47510636fbbbd92c5cd2a8d",
+  "alt": "Table of the results: I (A) 1, 1.5, 2, 2.5, 3, 3.5; an empty row for I² (A²); Δθ (°C) 1.2, 2.7, 4.8, 7.5, 10.8, 14.7.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q5(iii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   82,
+   526,
+   541,
+   610
+  ]
+ },
+ "physics-2022-ol-q7ix-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q7ix-scheme.png",
+  "md5": "673b6e793da2005f94e371bfa57c84f4",
+  "alt": "The marking scheme's sketch: speed against time, a dashed line rising straight from the origin and then running level.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q7(ix)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   112,
+   593,
+   268,
+   663
+  ],
+  "solution": true
+ },
+ "physics-2022-ol-q7vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q7vii-scheme.png",
+  "md5": "ea745acb9187aab1a8af5ca251b26c0d",
+  "alt": "The marking scheme's force diagram: a box with four arrows, F pointing left, Fr. pointing right, R pointing up and W pointing down.",
+  "lettersVisible": [
+   "F",
+   "R",
+   "W"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q7(vii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   398,
+   465,
+   541,
+   535
+  ],
+  "solution": true
+ },
+ "physics-2022-ol-q8-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q8-graph.png",
+  "md5": "e3c2d6d1b74b5e10e1ef69903eef4497",
+  "alt": "Graph of temperature against heat added: a line rising from the origin through a stretch labelled solid, a level stretch labelled melting, a rising stretch labelled X, a long level stretch labelled Y, and a final rising stretch labelled gas.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q8(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   135,
+   72,
+   450,
+   266
+  ]
+ },
+ "physics-2022-ol-q9-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2022-ol-q9-diagram.png",
+  "md5": "e571fa263e98a0de4c7aa9883e8f8c94",
+  "alt": "Ray diagram to complete: a dashed principal axis with an upright arrow labelled object on the left, a point labelled f on the axis to its right, and a concave mirror curving across the axis further right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q9(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   85,
+   140,
+   507,
+   294
+  ]
+ },
+ "physics-2023-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q1-table.png",
+  "md5": "e1fcf589c3d06127be8d333556a06a81",
+  "alt": "Table of the recorded data: s (cm) 40, 50, 60, 70, 80, 90; t (cs) 29, 32, 35, 38, 40, 43.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q1(v)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   240,
+   545,
+   300
+  ]
+ },
+ "physics-2023-hl-q12aiii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q12aiii-scheme.png",
+  "md5": "82dc742f899810010e6c1d540af1b677",
+  "alt": "The marking scheme's two lines: hf = / γ =, then 2mₑc² / an electron (0 above, -1 below) plus a positron (0 above, 1 below), each printed with its numbers stacked before the e.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   216,
+   165,
+   258
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-q13-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q13-diagram.png",
+  "md5": "7a94a759fe92b40286441299b349659f",
+  "alt": "Cross-section of a hillside: a pipe runs from a reservoir at the top left down the slope, with the letter A beside it, to a wheel-shaped machine near the foot marked B, which opens into a lower reservoir on the right.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: esbarchives.ie",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   115,
+   298,
+   508,
+   500
+  ]
+ },
+ "physics-2023-hl-q14c-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q14c-circuit.png",
+  "md5": "889ae73772b8a666a48aaae60297e1a9",
+  "alt": "Circuit diagram: a cell in a rectangular loop with a 5 Ω resistor along the bottom, joined to two 5 Ω resistors side by side between the same two wires on the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(c)(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   212,
+   155,
+   410,
+   305
+  ]
+ },
+ "physics-2023-hl-q1iv-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q1iv-scheme-graph.png",
+  "md5": "683f8bfc48219b994d30cbbbddb428c5",
+  "alt": "The marking scheme's graph: s (m), from 0 to 1, against t² (s²), from 0 to 0.2, with six plotted points from 0.4 m to 0.9 m on a dotted straight line drawn from the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q1(iv)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   80,
+   480,
+   540,
+   668
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q2-table.png",
+  "md5": "02af10aedb7d06cabbea373b973e6ada",
+  "alt": "Table of the recorded data: u (cm) 20.0, 30.0, 40.0; v (cm) 66.3, 31.1, 25.2.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q2(v)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   180,
+   128,
+   416,
+   190
+  ]
+ },
+ "physics-2023-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q4-table.png",
+  "md5": "2b4c713164403e63bc27a19fe1cfb793",
+  "alt": "Table of the recorded data: mass of calorimeter 65.8 g; mass of calorimeter + water 111.6 g before adding steam and 114.3 g after; temperature of water 5.5 °C before adding steam and 36.4 °C after.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q4(vi)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   128,
+   545,
+   268
+  ]
+ },
+ "physics-2023-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q5-table.png",
+  "md5": "f3baa79cbcac36e28e2cfd8c7834f335",
+  "alt": "Table of the recorded data: V (V) 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7; I (mA) 0, 0, 0, 0, 5, 20, 70, 220.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q5(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   478,
+   545,
+   538
+  ]
+ },
+ "physics-2023-hl-q5ii-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q5ii-scheme-graph.png",
+  "md5": "1f5633caa8ff018911afb78d7bafa7bc",
+  "alt": "The marking scheme's graph: I (mA), from -50 to 250, against V (V), from 0 to 0.8; the curve runs along zero to about 0.3 V, rises slowly, then turns steeply up to 220 mA at 0.7 V.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q5(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   322,
+   450,
+   545
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-q9i-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q9i-scheme.png",
+  "md5": "1b09c2e6be08766204f4a7c7e70eecad",
+  "alt": "The marking scheme's equation: plutonium (238 above, 94 below) gives uranium (234 above, 92 below) plus helium (4 above, 2 below), each nucleus printed with its mass number above its atomic number.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   80,
+   151.5,
+   185,
+   174
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q10-wave": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q10-wave.png",
+  "md5": "9d124319add3e8f0790cec854bb9ddc3",
+  "alt": "Diagram of a standing wave on a string fixed between two posts: a solid and a dotted curve cross at the points marked A and B, and a double arrow labelled h marks the height of one loop.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q10(ix)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   360,
+   546,
+   442
+  ]
+ },
+ "physics-2023-ol-q11-bulb": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q11-bulb.png",
+  "md5": "b5964f932a9c1104b5fe9d1d9693c710",
+  "alt": "Drawing of a light bulb joined by two wires to the + and – ends of a battery, labelled light bulb and battery.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q11(iii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: electricityforum.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   360,
+   120,
+   545,
+   222
+  ]
+ },
+ "physics-2023-ol-q11-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q11-graph.png",
+  "md5": "50a0c453411b5722034602605b81e88a",
+  "alt": "Graph of current (mA), from 0 to 60, against voltage (V), from 0 to 6, for a filament bulb: a curve rising from the origin, steep at first and levelling off near 56 mA at 6 V.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q11(vii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   95,
+   365,
+   560,
+   578
+  ]
+ },
+ "physics-2023-ol-q12-crt": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-crt.png",
+  "md5": "b445948c85671dad8e403c8c31d377a2",
+  "alt": "Photograph of a cathode ray tube: a glass tube with electrodes inside, widening at one end into a flat, square screen.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q12(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   417,
+   158,
+   541,
+   248
+  ]
+ },
+ "physics-2023-ol-q12-xray": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q12-xray.png",
+  "md5": "10128d45c3139c8e6d0fb329c2e32a50",
+  "alt": "Photograph of an X-ray tube: a glass tube with metal electrodes, a finned metal cap at one end and wire leads at the other.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q12(vii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   417,
+   276,
+   541,
+   360
+  ]
+ },
+ "physics-2023-ol-q13iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q13iv-question.png",
+  "md5": "e65c34bde542a06fee7ef4a544d919f2",
+  "alt": "The printed part (iv): The symbol for tritium is H, with 3 above and 1 below. (a) How many protons are in an atom of tritium? (b) How many neutrons are in an atom of tritium? (7)",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   452,
+   548,
+   503
+  ]
+ },
+ "physics-2023-ol-q13v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q13v-question.png",
+  "md5": "f34bd4dc2597e55d5634d339998466d5",
+  "alt": "The printed part (v): Tritium decays by beta emission. What is the daughter nucleus when an atom of H, with 3 above and 1 below, emits a beta particle? (7)",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(v)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   507,
+   548,
+   541
+  ]
+ },
+ "physics-2023-ol-q13v-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q13v-scheme.png",
+  "md5": "ad1ec5b658f0cf9b3d352a99e642c28e",
+  "alt": "The marking scheme's answer: He with 3 above and 2 below, the two numbers printed after the symbol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(v)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   539,
+   115,
+   563
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q14c-field": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q14c-field.png",
+  "md5": "ebaad35fa29362ec67c73b5b5f8a8912",
+  "alt": "Diagram of the electric field around a positive and a negative charge side by side: curved field lines with arrows run from the + charge to the – charge, and outer lines spread away from + and in towards –.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(c)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: wikipedia.org",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   440,
+   53,
+   542,
+   131
+  ]
+ },
+ "physics-2023-ol-q14c-vdg": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q14c-vdg.png",
+  "md5": "b8e71f62a63ee4522410709c8f45a87a",
+  "alt": "Photograph of a student with her hand on the dome of a Van de Graaff generator, her hair standing out from her head.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(c)(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: fishersci.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   448,
+   208,
+   540,
+   301
+  ]
+ },
+ "physics-2023-ol-q1iv-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q1iv-scheme-graph.png",
+  "md5": "c69e921a1ec48771bc02b17ba88269a6",
+  "alt": "The marking scheme's graph: a (m s⁻²), from 0 to 4.5, against F (N), from 0 to 1.4, with six plotted points from 0.2 N to 1.2 N on a straight line drawn from the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q1(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   140,
+   415,
+   512,
+   640
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q3-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q3-diagram.png",
+  "md5": "993687b9e5e1e9bf692bc26180036822",
+  "alt": "Diagram of the apparatus: a calorimeter of water with crushed ice standing in a larger container, the outer container pointed to by an arrow labelled B; a long rod with a bulb at its lower end dips into the water, pointed to by an arrow labelled A; beside it a dark cloth holding crushed ice.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q3(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   100,
+   242,
+   545,
+   452
+  ]
+ },
+ "physics-2023-ol-q3ix-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q3ix-question.png",
+  "md5": "36dcfa6354e380400d1efeb0920a8e30",
+  "alt": "The printed Question 3: the latent heat of fusion experiment with its results (masses 0.083 kg, 0.181 kg and 0.008 kg; temperatures 23 °C and 16 °C), the apparatus diagram with A and B, and parts (i) to (ix), the last with its note E = m(ice) l + m(ice) c(water) Δθ(ice), the words in brackets printed as subscripts.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q3(ix)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   55,
+   548,
+   685
+  ]
+ },
+ "physics-2023-ol-q4v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q4v-question.png",
+  "md5": "da7d889f83e0552a9c242e40d33da793",
+  "alt": "The printed Question 4 up to part (v): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (m) 0.33, 0.29, 0.27, 0.25, 0.22, 0.18, and parts (i) to (v), (v) asking for the value of 1 over l, set as a fraction, to 2 decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4(v)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   55,
+   548,
+   335
+  ]
+ },
+ "physics-2023-ol-q4vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q4vi-question.png",
+  "md5": "d72bed65c09fcd0383db65bc153ae954",
+  "alt": "The printed Question 4 up to part (vi): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (m) 0.33, 0.29, 0.27, 0.25, 0.22, 0.18, and parts (i) to (vi), (vi) asking for a graph of f against 1 over l, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4(vi)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   55,
+   548,
+   362
+  ]
+ },
+ "physics-2023-ol-q4vi-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q4vi-scheme-graph.png",
+  "md5": "6eaf9c165a2ccf1207626f3b69cf0e8b",
+  "alt": "The marking scheme's graph: 1/l (m⁻¹), from 0 to 6, against f (Hz), from 0 to 600, with six plotted points from about 3.0 to 5.6 on a straight line that meets the vertical axis just above zero.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4(vi)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   112,
+   556,
+   484,
+   782
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q5iii-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q5iii-scheme-graph.png",
+  "md5": "ce517ca2e5a42b674dcf6a92f66cf423",
+  "alt": "The marking scheme's graph: R (Ω), from 0 to 0.35, against l (m), from 0 to 0.8, with six plotted points from 0.2 m to 0.7 m on a dotted straight line drawn from the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q5(iii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   140,
+   411,
+   512,
+   637
+  ],
+  "solution": true
+ },
+ "physics-2023-ol-q8-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q8-diagram.png",
+  "md5": "909cd2c1684e403cf51d63dd9838edb2",
+  "alt": "Diagram of a ray of light passing through a rectangular glass block: the ray arriving at the top face is pointed to by an arrow labelled A, a dashed vertical line at the point of entry by an arrow labelled C, and the ray inside the block by an arrow labelled B; the ray leaves through the bottom face.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q8(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   140,
+   75,
+   420,
+   300
+  ]
+ },
+ "physics-2023-ol-q9-brick": {
+  "src": "/exam-figures/physics/markbank/physics-2023-ol-q9-brick.png",
+  "md5": "a7d265995216d10194da623f5b9293b2",
+  "alt": "Photograph of a rectangular brick with three faces lettered: A on the small end face, B on the top face and C on the long side face; its dimensions are marked w = 9 cm, h = 6 cm and l = 20 cm.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q9(iv)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: willamettegraystone.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   314,
+   240,
+   545,
+   347
+  ],
+  "maskedFurniture": [
+   [
+    314,
+    298,
+    326,
+    322
+   ]
+  ]
+ },
+ "physics-2024-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q1-table.png",
+  "md5": "396c0d81f88a25929ea6e72c1e6cd14d",
+  "alt": "Table of the recorded data: F (N) 0.2, 0.3, 0.4, 0.5, 0.6, 0.7; a (m s⁻²) 0.280, 0.422, 0.554, 0.702, 0.837, 0.982.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(iii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   238,
+   545,
+   310
+  ]
+ },
+ "physics-2024-hl-q11-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q11-circuit.png",
+  "md5": "76893482043819263b33e986f969a8d1",
+  "alt": "Circuit diagram: a 30 V supply of cells across the top, and along the bottom a capacitor labelled 85 µF in series with a resistor labelled 25 kΩ.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q11(vi)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   150,
+   430,
+   445,
+   648
+  ]
+ },
+ "physics-2024-hl-q12a-vii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-vii-question.png",
+  "md5": "f2b88876c913c5186b11fcc6ecf5fc57",
+  "alt": "The printed question: (vii) Write an equation to represent the decay of a neutron (n, with mass number 1 above and atomic number 0 below) by beta-decay.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(vii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   52,
+   345,
+   400,
+   381
+  ]
+ },
+ "physics-2024-hl-q12a-vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-vii-scheme.png",
+  "md5": "a64961563062d22e302e5ccfeae3306e",
+  "alt": "The marking scheme's equation: a neutron (1 above, 0 below the n) gives a proton (1 above, 1 below the p) plus an electron (0 above, -1 below the e) plus an antineutrino (a nu with a bar over it).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(vii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   82,
+   420,
+   172,
+   448
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q12a-viii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-viii-question.png",
+  "md5": "f910685c162c511a4ef3fee89fa6683e",
+  "alt": "The printed questions: (vii) Write an equation to represent the decay of a neutron (n, with mass number 1 above and atomic number 0 below) by beta-decay. (viii) Calculate the energy released during this beta-decay.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(viii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   52,
+   345,
+   440,
+   401
+  ]
+ },
+ "physics-2024-hl-q12a-xi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q12a-xi-scheme.png",
+  "md5": "a3c2a82c12ae55bd265cd50cc5d48610",
+  "alt": "The marking scheme's answer: an electron (0 above, -1 below the e) plus a positron (0 above, 1 below the e) gives 2γ, and beside it, after a double solidus, 2mc² = 2hf.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(a)(xi)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   82,
+   720.5,
+   300,
+   742
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q14a-slide": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q14a-slide.png",
+  "md5": "c329205f2d1f64cb6e89ad0b55daaf5e",
+  "alt": "Diagram of the slide: a horizontal platform at the top left, a straight slide running down to the right at 32° below the dashed horizontal from the platform, and a vertical line from the end of the slide down to the water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q14(a)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   360,
+   278,
+   545,
+   392
+  ]
+ },
+ "physics-2024-hl-q14bi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q14bi-scheme.png",
+  "md5": "834e5a3a3863a05eef6f33d0300df489",
+  "alt": "The marking scheme's equation: radium (224 above, 88 below the Ra) gives helium (4 above, 2 below the He) plus radon (220 above, 86 below the Rn).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q14(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   82,
+   465,
+   188,
+   490
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q14d-grating": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q14d-grating.png",
+  "md5": "c363741e4d607167e29f7cb11cbcfd51",
+  "alt": "Diagram: a ray of light strikes a diffraction grating; two lines spread from the grating to a white screen, and the angle between them is labelled angle of separation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q14(d)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   338,
+   382,
+   545,
+   556
+  ]
+ },
+ "physics-2024-hl-q1vi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q1vi-scheme.png",
+  "md5": "35955538a50608bbff0aa64326193b6b",
+  "alt": "The marking scheme's sketch: axes labelled a (m s⁻²) and F (N), with a straight line rising from a point on the F axis to the right of the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(vi)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   82,
+   576,
+   300,
+   650
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q2-table.png",
+  "md5": "98d9c18c016d7eae89329988c665393e",
+  "alt": "Table of the recorded data: u (cm) 20.0, 30.0, 40.0, 50.0; v (cm) 78.7, 35.2, 26.9, 23.4.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q2(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   130,
+   545,
+   190
+  ]
+ },
+ "physics-2024-hl-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q3-table.png",
+  "md5": "16c673dcd920d895ff959f4cb8329b82",
+  "alt": "Table of the recorded data: mass of copper calorimeter 83.2 g; mass of calorimeter + water before adding ice 132.9 g, after adding ice 138.5 g; temperature of water before adding ice 26.8 °C, after adding ice 17.4 °C.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q3(iii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   402,
+   545,
+   528
+  ]
+ },
+ "physics-2024-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q4-table.png",
+  "md5": "c4742e77994309323e6019f62eb83b22",
+  "alt": "Table of the recorded data: f (Hz) 256, 320, 341, 426.5, 480, 512; T (N) 29, 44, 51, 79, 100, 115.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(v)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   134,
+   545,
+   194
+  ]
+ },
+ "physics-2024-hl-q4iv-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q4iv-scheme.png",
+  "md5": "ab3ad0d53d9460d51e99fbb0f58916ec",
+  "alt": "The marking scheme's line \"values for √T or f²\" [3] over its table of values: f² 65536, 102400, 116281, 181902, 230400, 262144; √T 5.39, 6.63, 7.14, 8.89, 10.00, 10.72.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q4(iv)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   82,
+   452,
+   545,
+   512
+  ],
+  "solution": true
+ },
+ "physics-2024-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q5-table.png",
+  "md5": "422535c2859b2688486ac37ebd1d092f",
+  "alt": "Table of the recorded data: V (V) 1.0, 2.0, 3.0, 4.0, 5.0, 6.0; I (A) 0.14, 0.26, 0.43, 0.58, 0.70, 0.84.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q5(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   449,
+   545,
+   510
+  ]
+ },
+ "physics-2024-hl-q6a-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q6a-diagram.png",
+  "md5": "0885da37f2e57a1241f68a88151a6502",
+  "alt": "Diagram of a metre stick hung at its 50 cm mark from a horizontal support: a 0.6 N weight hangs at the 10 cm mark, a 1.3 N weight at the 35 cm mark, and an apple at the 90 cm mark.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q6(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: State Examinations Commission; sarthaks.com (images on page 5)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   262,
+   185,
+   545,
+   275
+  ]
+ },
+ "physics-2024-hl-q6h-building": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q6h-building.png",
+  "md5": "0f8ff87e077eabf0d14174f980cf3844",
+  "alt": "Drawing of a tall rectangular building with rows of windows; a rod with a pointed tip stands on its roof and a conductor runs from it down the outside of the building to the ground.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q6(h)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: State Examinations Commission; sarthaks.com (images on page 5)",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   474,
+   395,
+   543,
+   586
+  ]
+ },
+ "physics-2024-hl-q8-loudspeaker": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q8-loudspeaker.png",
+  "md5": "e01f6963d126589a27f382f5fe41f287",
+  "alt": "Cutaway diagram of a moving-coil loudspeaker: a block labelled permanent magnet, a coil wound around its centre with two leads and arrows out to the left, and a flared cone labelled cone, with curved lines in front of it labelled cone vibrations.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q8(v)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: explainthatstuff.com",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   372,
+   266,
+   545,
+   450
+  ]
+ },
+ "physics-2024-hl-q9biv-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-hl-q9biv-scheme.png",
+  "md5": "3ad04911a74dd7c70ea87c002b83c5fa",
+  "alt": "The marking scheme's formula: Po × 100 over Pi, set as a fraction, or P = W/t.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q9(b)(iv)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   82,
+   572,
+   215,
+   600
+  ],
+  "solution": true
+ },
+ "physics-2024-ol-q1-tables": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+  "md5": "57c1ae8539adb55dc922c047d6495879",
+  "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q1(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   85,
+   255,
+   545,
+   334
+  ]
+ },
+ "physics-2024-ol-q10-pipe": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q10-pipe.png",
+  "md5": "627f5a252ed578a2281f42fcd46c33b9",
+  "alt": "Diagram of a pipe closed at the bottom and open at the top, with a curve drawn inside it for the wave; an arrow labelled X points to the open top and an arrow labelled Y points to the closed bottom.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q10(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   462,
+   168,
+   545,
+   310
+  ]
+ },
+ "physics-2024-ol-q10vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q10vi-question.png",
+  "md5": "4ee798be9ee2332eb8a6c794bc06a9bb",
+  "alt": "The printed question: (vi) The distance from X to Y is taken as λ/4. Calculate the length of the pipe.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q10(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   312,
+   465,
+   337
+  ]
+ },
+ "physics-2024-ol-q11-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-circuit.png",
+  "md5": "9c9b570e5f529960a115fe31af19652d",
+  "alt": "Circuit diagram: a coil of wire with a meter X connected in parallel across it, in series with a meter Y, a variable resistor labelled Z and a battery of cells.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q11(ix)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   322,
+   345,
+   512,
+   492
+  ]
+ },
+ "physics-2024-ol-q11-plug": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-plug.png",
+  "md5": "b4c5f755046cdd967cd044e874f8a9f0",
+  "alt": "Diagram of the inside of a three-pin plug with its parts labelled: a wire labelled A, a wire labelled neutral, a wire labelled B, the fuse, the cable grip and the cable.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q11(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   322,
+   72,
+   542,
+   215
+  ]
+ },
+ "physics-2024-ol-q12vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q12vi-question.png",
+  "md5": "164d1f60fe83e3078359071c77c0ecc8",
+  "alt": "The printed question: (vi) When Pu–239 decays, it emits alpha particles (α with 4 above and 2 below). What is the daughter nucleus X in the nuclear reaction below when an atom of Pu (239 above, 94 below) emits an alpha particle? Below it: Pu (239 above, 94 below) → X + α (4 above, 2 below), the numbers set after each symbol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   352,
+   530,
+   412
+  ]
+ },
+ "physics-2024-ol-q12vi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q12vi-scheme.png",
+  "md5": "f069f017056a77c45af0d4d8f094b3ae",
+  "alt": "The marking scheme's answer: U with 235 above and 92 below, set after the symbol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   110,
+   508,
+   145,
+   530
+  ],
+  "solution": true
+ },
+ "physics-2024-ol-q14a-balanced": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-balanced.png",
+  "md5": "775d6011131e9c67170de0889efefaa8",
+  "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 520 N pointing right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(a)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   110,
+   160,
+   375,
+   196
+  ]
+ },
+ "physics-2024-ol-q14a-unbalanced": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-unbalanced.png",
+  "md5": "94ea8c93584316f45e6d53e59f749657",
+  "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 680 N pointing right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(a)(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   110,
+   366,
+   380,
+   402
+  ]
+ },
+ "physics-2024-ol-q14c-grating": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14c-grating.png",
+  "md5": "76c2fa5048d64f8b7141507ca5096b24",
+  "alt": "Diagram: a laser sends a ray of light to a diffraction grating; lines spread from the grating to a white screen marked with bright spots labelled n = 2, n = 1, n = 0, n = 1, n = 2 from top to bottom.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(c)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   180,
+   106,
+   445,
+   255
+  ]
+ },
+ "physics-2024-ol-q14ciii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14ciii-scheme.png",
+  "md5": "564742c09a366ee2c50842a07b068da2",
+  "alt": "The marking scheme's line: λ = (2.5 × 10⁻⁶)(sin 14.6°) = 6.3 × 10⁻⁷ m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(c)(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   138,
+   642,
+   380,
+   662
+  ],
+  "solution": true
+ },
+ "physics-2024-ol-q14d-pear": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14d-pear.png",
+  "md5": "86f962ea9ec86514309631d42e5dc89d",
+  "alt": "Photograph of a pear-shaped metal conductor, rounded at one end and pointed at the other, mounted on an insulating stand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(d)(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: www.curiousscience.com/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   463,
+   630,
+   542,
+   723
+  ]
+ },
+ "physics-2024-ol-q1iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q1iii-question.png",
+  "md5": "1986a40e8365208c97eb26ba32b30a45",
+  "alt": "The printed question: (iii) Copy the diagram of the metre stick below into your answerbook. Two of the forces have been included. Complete your diagram to show all upward and downward forces and their positions. (18) Below it, a metre stick marked from 10 cm to 90 cm, with an upward arrow labelled 6 N at the 20 cm mark and a downward arrow labelled 3 N at the 50 cm mark.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q1(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   373,
+   545,
+   532
+  ]
+ },
+ "physics-2024-ol-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q2-table.png",
+  "md5": "00145fd0aed627283e63b481658fef0f",
+  "alt": "Table of the results: u (cm) 18, 25, 30; v (cm) 90, 38, 30.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q2(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   85,
+   196,
+   545,
+   252
+  ]
+ },
+ "physics-2024-ol-q3-calc": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q3-calc.png",
+  "md5": "b14c6eb3f6e41c6cc0a4ee392b19cd64",
+  "alt": "The calculation printed for completion: Heat energy added = Heat gained by water and calorimeter; ΔE = m(water) c(water) Δθ(water) + m(calorimeter) c(copper) Δθ(calorimeter); 3467 = A × c(water) × B + 0.106 × 390 × B.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q3(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   95,
+   600,
+   545,
+   680
+  ]
+ },
+ "physics-2024-ol-q4-sonometer": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-sonometer.png",
+  "md5": "95968106537422b089f1b4422f24e629",
+  "alt": "Diagram of the apparatus: a string stretched along the top of a long box over two bridges, with a paper rider on the string between them, passing over a pulley at the right-hand end to hanging weights.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   222,
+   110,
+   545,
+   252
+  ],
+  "maskedFurniture": [
+   [
+    222,
+    197,
+    448,
+    252
+   ]
+  ]
+ },
+ "physics-2024-ol-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-table.png",
+  "md5": "3c6482b8f681c15f5abfd34801333091",
+  "alt": "Table of the results: f (Hz) 256, 320, 341, 427, 480, 512; l (m) 0.214, 0.171, 0.160, 0.127, 0.114, 0.107; 1/l (m⁻¹) 4.67, 5.85, and four empty cells.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   85,
+   297,
+   545,
+   390
+  ]
+ },
+ "physics-2024-ol-q4v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4v-question.png",
+  "md5": "637850536438c8524bd755fbef35b6cc",
+  "alt": "The printed question: (v) Copy and complete the table above into your answerbook by calculating the value of 1/l to 2 decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   391,
+   520,
+   430
+  ]
+ },
+ "physics-2024-ol-q4vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4vi-question.png",
+  "md5": "67ca6cbc4115b2150d35ed6818a6c840",
+  "alt": "The printed question: (vi) Use the data to plot a graph of 1/l against f.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   428,
+   520,
+   453
+  ]
+ },
+ "physics-2024-ol-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q5-table.png",
+  "md5": "0f121140bb5d64cbd75dacfa95d23315",
+  "alt": "Table of the data: T (°C) 10, 20, 30, 40, 50, 60; R (Ω) 5.2, 5.9, 6.5, 7.2, 7.9, 8.5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q5(iv)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   85,
+   585,
+   545,
+   625
+  ]
+ },
+ "physics-2024-ol-q6c-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q6c-diagram.png",
+  "md5": "19fb534b11569dadaa604b05052d056a",
+  "alt": "Diagram: a spring balance reading 5 N holds a weight above a container of water; beside it, a balance reading 3 N holds the same weight under the water in a full container, the overflow running into a small dish labelled 2 N of water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q6(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: www.britannica.com/science/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   372,
+   188,
+   542,
+   302
+  ]
+ },
+ "physics-2024-ol-q7viii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q7viii-scheme.png",
+  "md5": "a8bf00038877e59c83c5357912010594",
+  "alt": "The marking scheme's sketch: velocity against time, a straight rise from the origin, a level section, then a steep straight fall to the time axis, then a level line along the axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q7(viii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   100,
+   665,
+   270,
+   736
+  ],
+  "solution": true
+ },
+ "physics-2024-ol-q8-concave-photo": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-concave-photo.png",
+  "md5": "8b0b64116277a28b4b98c2d46a54ae1a",
+  "alt": "Photograph of a large round concave mirror on a wall: a child labelled B stands beside it, a child labelled A stands close in front of it, and their images appear in the mirror.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   312,
+   495,
+   541,
+   660
+  ]
+ },
+ "physics-2024-ol-q8-plane-mirror": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-plane-mirror.png",
+  "md5": "dfffadd6142cb320edab75b3054fe9c1",
+  "alt": "Photograph of a small plane mirror standing upright on a sheet of paper, held by a bulldog clip, with a word printed on the paper in front of it and the word's image in the mirror.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   376,
+   64,
+   545,
+   183
+  ]
+ },
+ "physics-2024-ol-q8-ray-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-ray-diagram.png",
+  "md5": "d85efade84beaf99e7ec877011335bad",
+  "alt": "Ray diagram to copy: a principal axis drawn as a dashed line, an upright arrow labelled object standing on the axis, a point labelled f on the axis between the object and the mirror, and a concave mirror drawn as a curve at the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   84,
+   322,
+   500,
+   478
+  ]
+ },
+ "physics-2024-ol-q9-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q9-graph.png",
+  "md5": "c8e0a099819abe2b6fae80f717ac4394",
+  "alt": "Graph of temperature (°C), from 0 to 100, against heat added (J): plotted points rise in a straight line through the part labelled liquid, run level for three points where an arrow labelled A points, then rise again through the part labelled gas.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q9(ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   78,
+   130,
+   518,
+   345
+  ]
+ },
+ "physics-2025-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q1-table.png",
+  "md5": "8947c1e27358c74a4517b8b50177fc9b",
+  "alt": "Table of the metre stick data: position of force on metre stick (cm) 2.0, 11.2, 40.1, 72.7, 82.9; force (N) 3.4, 3.0, 2.0, 5.5, 3.0; direction up, down, down, up, down.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q1(iii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   322,
+   545,
+   413
+  ]
+ },
+ "physics-2025-hl-q11-parallel": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q11-parallel.png",
+  "md5": "307a5ab9c93c668f9e68e821ff8f1cd4",
+  "alt": "Circuit diagram of two resistors, R1 and R2, connected in parallel between two leads.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   160,
+   160,
+   415,
+   262
+  ]
+ },
+ "physics-2025-hl-q11-switch": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q11-switch.png",
+  "md5": "2318ec28bec1202e9512c750d928dfe5",
+  "alt": "Circuit diagram: a 12 V supply connected across an 8 Ω resistor and a second 8 Ω resistor in series; point X lies between them, and a switch from X leads to a 4 Ω resistor that joins point Y at the bottom of the lower 8 Ω resistor.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11(iii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   378,
+   300,
+   547,
+   433
+  ]
+ },
+ "physics-2025-hl-q11-thermistor": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q11-thermistor.png",
+  "md5": "01f8cd6873f7e049dad5009368518505",
+  "alt": "Potential divider between 12 V and 0 V: a variable resistor above a thermistor, with the output Vout taken across the thermistor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11(vi)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   395,
+   515,
+   552,
+   690
+  ]
+ },
+ "physics-2025-hl-q12a-i-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q12a-i-scheme.png",
+  "md5": "5f8d132def25430db17676b7e7e91f28",
+  "alt": "The marking scheme's equation: ¹₁H + ⁷₃Li → ⁴₂He + ⁴₂He, each nucleus printed with its mass number above and its atomic number below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12(a)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   141,
+   195,
+   170
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q12a-ix-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q12a-ix-scheme.png",
+  "md5": "094e17ef254170031b30d050615c3bc4",
+  "alt": "The marking scheme's equation: ¹⁸₉F → ¹⁸₈O + ⁰₊₁e, each particle printed with its mass number above and its atomic number below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12(a)(ix)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   738,
+   170,
+   766
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q13-vii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q13-vii-question.png",
+  "md5": "bc31433785f6cecc42b4f86fa4398b39",
+  "alt": "The printed question: (vii) The diagram shows a graph of current I against time t for an alternating current flowing through an appliance. Calculate the RMS current flowing in the appliance. (7) Beside it, a graph of I (A), from -10 to 10, against t (s), from 0.00 to 0.02, showing one full cycle of a sine-shaped curve.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(vii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   52,
+   634,
+   545,
+   746
+  ]
+ },
+ "physics-2025-hl-q13-vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q13-vii-scheme.png",
+  "md5": "7319c1eff0842c02bbfbf180dfd7ed76",
+  "alt": "The marking scheme's formula: I rms (rms as a subscript) equals I0 over the square root of 2, set as a fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(vii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   300,
+   264,
+   356,
+   295
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q13-wire": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q13-wire.png",
+  "md5": "8f25e957433bd574aebd273638a4c8c4",
+  "alt": "Diagram of a straight wire lying between an S pole above and an N pole below, with five field arrows pointing up from N to S across it; the wire is connected in a loop to a 0.225 V cell.",
+  "lettersVisible": [
+   "S",
+   "N"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(iii)(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   380,
+   325,
+   545,
+   445
+  ]
+ },
+ "physics-2025-hl-q14b-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q14b-table.png",
+  "md5": "1ad1c7b652fea7a1d3bd793b79ff1b86",
+  "alt": "Table of the refractive index of three types of glass: core 1.47, Y 1.44, Z 1.50.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   52,
+   413,
+   545,
+   477
+  ]
+ },
+ "physics-2025-hl-q14c-ii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q14c-ii-scheme.png",
+  "md5": "2045f6b24858d5ece4ac5df3e3212329",
+  "alt": "The marking scheme's equation: ¹³¹₅₃I → ¹³¹₅₄Xe + ⁰₋₁β, each particle printed with its mass number above and its atomic number below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14(c)(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 24,
+  "sourceRect": [
+   80,
+   176,
+   175,
+   210
+  ],
+  "solution": true
+ },
+ "physics-2025-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q2-table.png",
+  "md5": "6f2fb581d26bd09b42aa43133d5bd5b1",
+  "alt": "Table of the trolley data: mass of A 200 g, mass of B 250 g, sA 10 cm, tA 185 ms, sB 8 cm, tB 190 ms.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q2(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   161,
+   544,
+   225
+  ]
+ },
+ "physics-2025-hl-q3-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q3-graph.png",
+  "md5": "3f918387029dc1ede446228f2e71a886",
+  "alt": "Graph of l (m), from -0.10 to 0.50, against 1/f (Hz⁻¹), from 0.000 to 0.006: six plotted points lie on a straight line drawn from just below the origin up to the last point at 0.005.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q3(iv)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   62,
+   146,
+   534,
+   507
+  ]
+ },
+ "physics-2025-hl-q4-block": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q4-block.png",
+  "md5": "f228f59224bd974f02ca0ddd4d06872b",
+  "alt": "Diagram of a rectangle, the glass block seen from above, with a ray drawn as an arrow coming down from the upper left to meet its top face.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q4(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   236,
+   220,
+   358,
+   316
+  ]
+ },
+ "physics-2025-hl-q4-sheet": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q4-sheet.png",
+  "md5": "06398c3a0fcc82ccd554ebdde485880f",
+  "alt": "Line drawing in perspective of a rectangular glass block lying flat on its largest face on a square sheet of paper.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q4(v)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   210,
+   500,
+   386,
+   614
+  ]
+ },
+ "physics-2025-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q4-table.png",
+  "md5": "531cc2c2b39744e4a6816767bf7e42f9",
+  "alt": "Table of the angles recorded: i (°) 20, 30, 40, 50, 60, 70; r (°) 13, 19, 27, 30, 35, 39.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q4(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   52,
+   138,
+   530,
+   202
+  ]
+ },
+ "physics-2025-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q5-table.png",
+  "md5": "b49fd1b45b736a17f8746a050968223c",
+  "alt": "Table of the readings: V (V) 1, 2, 3, 4, 5, 6, 7; I (mA) 25, 47, 68, 80, 91, 100, 104.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q5(ii)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   52,
+   115,
+   545,
+   179
+  ]
+ },
+ "physics-2025-hl-q6c-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q6c-diagram.png",
+  "md5": "7052385bf9dcab95711f7f1fd40183cb",
+  "alt": "Diagram of two horizontal lines 20 m apart: particle Y on the upper line with a short arrow pointing down, labelled 5 m s⁻¹, and particle X on the lower line, the ground, with an arrow pointing up, labelled 15 m s⁻¹.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q6(c)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   430,
+   262,
+   548,
+   405
+  ]
+ },
+ "physics-2025-hl-q8-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2025-hl-q8-diagram.png",
+  "md5": "c12a484890022094a6f0226958c1d978",
+  "alt": "Diagram of a laser beam passing through a diffraction grating to a white screen; dashed lines from the grating, with the angle between them marked 49°, reach the two images marked n = 2 on the screen, with a column of marks between them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q8(iv)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2025 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   155,
+   222,
+   440,
+   392
+  ]
+ },
+ "physics-2025-ol-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q1-table.png",
+  "md5": "0f9e06fcc9353564abd432b1b5bf8f0a",
+  "alt": "Table of the data recorded: mass of trolley A, mA, 0.34 kg; mass of trolley B, mB, 0.36 kg; velocity of trolley A before the collision, uA, 1.85 m s⁻¹; velocity of trolley B before the collision, uB, 0 m s⁻¹; velocity of trolley A and trolley B after the collision, vfinal, 0.90 m s⁻¹.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1(iv)(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   272,
+   545,
+   416
+  ]
+ },
+ "physics-2025-ol-q10-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-coil.png",
+  "md5": "44a44444d2c21658890bdee3909378b3",
+  "alt": "Diagram of a bar magnet, S on the left and N on the right, with an arrow pointing from its N end towards a coil; the coil is connected in a loop to a meter.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q10(vi)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   222,
+   190,
+   382,
+   268
+  ]
+ },
+ "physics-2025-ol-q10-transformer": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-transformer.png",
+  "md5": "6e91242aae6d96b19fef764889de0ce5",
+  "alt": "Diagram of a transformer: a primary coil and a secondary coil wound on opposite sides of a square core, with the input voltage terminals at the primary coil and the output voltage terminals at the secondary coil.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q10(ix)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   138,
+   380,
+   428,
+   492
+  ]
+ },
+ "physics-2025-ol-q12a-ii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q12a-ii-question.png",
+  "md5": "ba54d24cad0218dbe87c180713ac0c7a",
+  "alt": "The printed lines: Rn²²²₈₆ is a radon atom. (ii) How many protons are in an atom of radon?",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q12(a)(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   151,
+   545,
+   193
+  ]
+ },
+ "physics-2025-ol-q12a-iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q12a-iv-question.png",
+  "md5": "0d44182e0104d7e8fcd5f61ff57aa8b7",
+  "alt": "The printed lines: Rn²²²₈₆ emits an alpha particle. (iv) Determine what element is formed after an alpha particle, α⁴₂, is emitted from Rn²²²₈₆.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q12(a)(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   220,
+   545,
+   263
+  ]
+ },
+ "physics-2025-ol-q14c-electroscope": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q14c-electroscope.png",
+  "md5": "b6ac9f76af74badb9a685a3dc236e94d",
+  "alt": "Diagram of a gold leaf electroscope: a cap on a metal rod that passes through the insulation between the cap and the frame into an earthed box; a thin line hangs beside the rod inside the box, with arrow X pointing to it.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   345,
+   75,
+   545,
+   245
+  ]
+ },
+ "physics-2025-ol-q14d-xray": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q14d-xray.png",
+  "md5": "2a156eb600a29f64d79667016eeffe73",
+  "alt": "Diagram of an X-ray tube: a coiled filament on the left, joined to the low voltage terminals, faces a target on the right; the high voltage terminals connect the two ends, an arrow labelled high speed electrons points along the path between them, rays fan out downward from the target, and the tube sits inside a lead casing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(d)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   78,
+   340,
+   472,
+   600
+  ]
+ },
+ "physics-2025-ol-q2-iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-iv-question.png",
+  "md5": "f1ae904153c377fd98698ff0e504214f",
+  "alt": "The printed question: (iv) Copy and complete the table above into your answerbook by calculating the value of 1/p, set as a fraction, to 2 decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q2(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   239,
+   545,
+   277
+  ]
+ },
+ "physics-2025-ol-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-table.png",
+  "md5": "6129f61837de9ee3c50878f504ea3c8f",
+  "alt": "Table of results: V (cm³) 5, 10, 15, 20, 25, 30; p (MPa) 0.203, 0.108, 0.073, 0.054, 0.043, 0.035; a row for 1/p (MPa⁻¹) with 4.93, 9.26 and 13.70 filled in and its last three cells blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q2(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   88,
+   545,
+   172
+  ]
+ },
+ "physics-2025-ol-q2-v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-v-question.png",
+  "md5": "d5e0e58efe93d3353954a51dddccf9b5",
+  "alt": "The printed question: (v) Plot a graph, on graph paper, of 1/p, set as a fraction, against V.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q2(v)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   280,
+   545,
+   304
+  ]
+ },
+ "physics-2025-ol-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q3-table.png",
+  "md5": "09579bec749557ba332f44e2417f5388",
+  "alt": "Table of results with columns i (degrees), r (degrees), sin i, sin r and n = sin i / sin r: the row 20, 13 has sin i 0.34 and sin r 0.22; the rows 46, 28 and 61, 35 have their sine cells blank, and the n column is blank in every row.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q3(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   495,
+   545,
+   622
+  ]
+ },
+ "physics-2025-ol-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q4-table.png",
+  "md5": "a18970f07723119f6f13f810c85a1dc8",
+  "alt": "Table of results: mass of calorimeter + cold water 0.196 kg; mass of calorimeter + water + steam 0.198 kg; final temperature of calorimeter, water and added steam 42 °C.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q4(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   139,
+   545,
+   231
+  ]
+ },
+ "physics-2025-ol-q5-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q5-graph.png",
+  "md5": "0f3acd0ae8b12c5f25d9cf3aa23d6244",
+  "alt": "Graph of R (Ω), from 0.00 to 0.25, against l (m), from 0.00 to 0.65: six plotted points lie on a straight line drawn from the origin up to the last point at 0.60 m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q5(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   55,
+   120,
+   535,
+   395
+  ]
+ },
+ "physics-2025-ol-q6a-wrench": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q6a-wrench.png",
+  "md5": "df5127e587cf86cb205b66b507dfa8b2",
+  "alt": "Drawing of a wrench gripping a nut at one end; an arrow labelled force applied = 50 N points down on the handle, and a double-headed arrow labelled distance = 15 cm runs from the nut along the wrench.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q6(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   358,
+   160,
+   545,
+   262
+  ]
+ },
+ "physics-2025-ol-q6j-conductor": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q6j-conductor.png",
+  "md5": "41137312baa968f05b01ca0336eea1ae",
+  "alt": "Outline of an insulated conductor, pointed at its left end and rounded at its right end, with an arrow from the label insulated conductor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q6(j)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   150,
+   528,
+   445,
+   594
+  ]
+ },
+ "physics-2025-ol-q7-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q7-graph.png",
+  "md5": "ac7eaa448578f1bcc3b88c8150ba03bc",
+  "alt": "Sketch graph of velocity (m s⁻¹) against time (s): from A at the origin the curve rises and bends over to B, a horizontal line runs from B to C, the curve drops steeply from C to D, then runs at a low level before falling to the time axis.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q7(ix)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   148,
+   395,
+   445,
+   535
+  ]
+ },
+ "physics-2025-ol-q9-iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q9-iii-question.png",
+  "md5": "8657728ca7e2e1e6a1701373d9c7e277",
+  "alt": "The printed question: (iii) A concave mirror has a focal length f of 8 cm. An object is placed with an object distance u of 20 cm in front of the mirror. Using the formula 1/u + 1/v = 1/f, each term set as a fraction, calculate the image distance v.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q9(iii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   286,
+   545,
+   326
+  ]
+ },
+ "physics-2025-ol-q9-ray": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q9-ray.png",
+  "md5": "3989daca135a0942b6a9468946ad6982",
+  "alt": "Ray diagram set-up: a principal axis drawn as a dashed line, an upright arrow labelled object standing on it, a point labelled f on the axis, and a concave mirror drawn as a curve on the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q9(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   85,
+   128,
+   505,
+   282
+  ]
+ },
+ "physics-2026-hl-q10-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q10-circuit.png",
+  "md5": "1af5640f4d561f377e0d6630b2c4b0fd",
+  "alt": "A series circuit: a 200 μF capacitor, a 40 kΩ resistor, a switch and a 12 V battery in one loop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q10(vi)(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   410,
+   412,
+   536,
+   500
+  ]
+ },
+ "physics-2026-hl-q10iv-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q10iv-scheme-table.png",
+  "md5": "29e51030773cb93c3b4140a36d3ec700",
+  "alt": "Scheme table of 1/d (m⁻¹) for the six plate separations: 47.6, 23.8, 15.9, 11.9, 9.5, 8.1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q10(iv)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   74,
+   458,
+   532,
+   478
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q11-path": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q11-path.png",
+  "md5": "92f140c6e38150452e409175ca30eb7d",
+  "alt": "A circled positive charge moving to the right; its path curves upwards just after it enters the magnetic field.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q11(v)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   260,
+   370,
+   335,
+   415
+  ]
+ },
+ "physics-2026-hl-q13ivc-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q13ivc-scheme-formula.png",
+  "md5": "1d347b07e45357fa2057dc9f952eff1d",
+  "alt": "The scheme's formula: V rms equals V peak divided by the square root of 2.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q13(iv)(c)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   125,
+   302,
+   200,
+   330
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q14a-boat": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14a-boat.png",
+  "md5": "96968d869e132161a36a7a2d1ffa02d8",
+  "alt": "Between two river banks: the water flow arrow, 1.5 m s⁻¹, points to the right; from a dot labelled boat an arrow labelled 2.5 m s⁻¹ points up and to the right at 20° to a dashed line drawn along the flow.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(a)(iii)(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   355,
+   120,
+   535,
+   196
+  ]
+ },
+ "physics-2026-hl-q14c-charges": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14c-charges.png",
+  "md5": "15920bf18585b6eedfd39e31c2786663",
+  "alt": "A positive point charge on the left and a negative point charge on the right, with a point X marked between them, nearer the positive charge.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(c)(iv)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   110,
+   398,
+   485,
+   432
+  ]
+ },
+ "physics-2026-hl-q14d-reaction": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14d-reaction.png",
+  "md5": "a5b580ba038af9ade93c0ebc212c90e1",
+  "alt": "Part (a)'s lead-in as printed: \"The following reaction represents the pair annihilation of a proton p, and an anti-proton\" followed by the symbol p with a bar over it, over the reaction: p plus p-bar gives 2 gamma.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(d)(iii) — part-a",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   55,
+   98,
+   500,
+   144
+  ]
+ },
+ "physics-2026-hl-q1iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q1iii-scheme-table.png",
+  "md5": "6a2e6b89c0fe5d8c4b93137154b62e15",
+  "alt": "Scheme table of 1/V (cm⁻³) for the six readings: 0.019, 0.023, 0.027, 0.031, 0.034, 0.043.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q1(iii)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   100,
+   441,
+   520,
+   461
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q1v-scheme-sketch": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q1v-scheme-sketch.png",
+  "md5": "69d6a749a207ab237ecb92e48f5e50f6",
+  "alt": "Scheme sketch: axes labelled pV (vertical) and p (horizontal), with a straight line drawn level, parallel to the p axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q1(v)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   100,
+   600,
+   240,
+   664
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q2iv-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q2iv-scheme-table.png",
+  "md5": "d9ee328a15fbe7d2c43dc23f55e4c167",
+  "alt": "Scheme table of T² (sec²) for the six lengths: 1.64, 2.01, 2.41, 2.89, 3.21, 3.61.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q2(iv)(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   128,
+   494,
+   520,
+   514
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q2v-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q2v-scheme-formula.png",
+  "md5": "cf1cf7d8dce19a79ee63df9b124e6bdf",
+  "alt": "The scheme's formula for the period: T equals 2π times the square root of l over g.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q2(v)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   96,
+   656,
+   200,
+   688
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q6b-plank": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q6b-plank.png",
+  "md5": "43e292d96ea743afe8c8e79516643f7e",
+  "alt": "A horizontal plank balanced on a triangular block. A 300 N weight hangs from the left end and a 450 N weight from the right end. X marks the centre of gravity, 2.5 m from the left weight and 0.3 m to the left of the block; the right weight hangs 2.0 m to the right of the block.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q6(b)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   125,
+   262,
+   472,
+   404
+  ]
+ },
+ "physics-2026-hl-q6h-resistors": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q6h-resistors.png",
+  "md5": "ecbfc6f211ba5cd878c9185d04962659",
+  "alt": "A resistor network between two terminals: an 8 Ω resistor in series with a 900 Ω resistor, and across the 900 Ω resistor a branch of a 15 Ω resistor in series with a 5 Ω resistor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q6(h)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   190,
+   78,
+   405,
+   180
+  ]
+ },
+ "physics-2026-hl-q6j-equation": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q6j-equation.png",
+  "md5": "6a2dd751c90737cf1cdd1940f740c695",
+  "alt": "The nuclear equation as printed: three alpha particles (mass number 4, atomic number 2) give carbon-12 (mass number 12, atomic number 6).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q6(j)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   280,
+   264,
+   345,
+   290
+  ]
+ },
+ "physics-2026-ol-q1-apparatus": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1-apparatus.png",
+  "md5": "a5f5087189b1520c8c307151bbfd43ba",
+  "alt": "The student's diagram: a ball held under a ball release mechanism at the top left, joined by a wire to a timer at the right, and the timer joined by a wire to a trapdoor at the bottom left.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   345,
+   147,
+   572,
+   330
+  ]
+ },
+ "physics-2026-ol-q1-scheme-tables": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1-scheme-tables.png",
+  "md5": "5f244d82b1fe0ad1758acaa22788f4a7",
+  "alt": "The scheme's completed tables: 2s (m) 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 for s (cm) 65 to 90, and t² (s²) 0.1296, 0.1444, 0.1521, 0.16, 0.168, 0.185 for t (s) 0.36 to 0.43.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(vi)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   66,
+   410,
+   562,
+   588
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q10-parallel": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q10-parallel.png",
+  "md5": "778519bfcf1adc2e4b23c33d43c5bb76",
+  "alt": "The parallel circuit: a 10 V battery and a meter Y in series with bulbs B₁ and B₂ connected in parallel, and a meter X connected across the two bulbs.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(ix)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   52,
+   495,
+   262,
+   676
+  ]
+ },
+ "physics-2026-ol-q10-series": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q10-series.png",
+  "md5": "4a2b2e434e4c3fa3a17e41abad620b5e",
+  "alt": "The series circuit: a 10 V battery, a meter Y, then bulbs B₁ and B₂ in series, with a meter X connected across B₁.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   62,
+   96,
+   262,
+   276
+  ]
+ },
+ "physics-2026-ol-q11iv-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q11iv-scheme-formula.png",
+  "md5": "4af494e1dcf99d189b2051b4ad403f8d",
+  "alt": "The scheme's formula: n equals sin i over sin r, set as a stacked fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q11(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   95,
+   356,
+   150,
+   384
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q11v-waves": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q11v-waves.png",
+  "md5": "17c0c7fc3e22392a023f552b879f878b",
+  "alt": "Two diagrams of waves reaching a doorway in a wall: sound wave crests, a wavelength λ apart, spreading out in curves beyond the gap; light wave crests, very close together, passing straight through the gap.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q11(v)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   348,
+   290,
+   548,
+   556
+  ]
+ },
+ "physics-2026-ol-q12iv-ask": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q12iv-ask.png",
+  "md5": "b49075d108fe19a0c31e7e33abea6186",
+  "alt": "Part (iv) as printed: \"Calculate the number of neutrons that are in an atom of\" gold, written Au with mass number 197 above and atomic number 79 below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q12(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   55,
+   273,
+   400,
+   294
+  ]
+ },
+ "physics-2026-ol-q14a-beam1": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14a-beam1.png",
+  "md5": "a9be8381e91062e669f7f38f964bb611",
+  "alt": "A beam 2 m long resting on a pivot 0.8 m from its left end; an arrow for the 120 N weight points down from a point to the right of the pivot.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(a)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   185,
+   133,
+   440,
+   208
+  ]
+ },
+ "physics-2026-ol-q14a-beam2": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14a-beam2.png",
+  "md5": "6c18a244d47260a1a9ed443d35583f09",
+  "alt": "The same 2 m beam on its pivot, 0.8 m from the left end: a 30 N weight hangs from the left end, the 120 N weight acts down to the right of the pivot, and an arrow labelled 150 N points up at the pivot.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(a)(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   165,
+   345,
+   432,
+   443
+  ]
+ },
+ "physics-2026-ol-q14b-closed-pipe": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14b-closed-pipe.png",
+  "md5": "114703c8dadfe5e3c5c587f9ad4d0c2f",
+  "alt": "An empty outline of a pipe, open at the top and closed at the bottom, for the fundamental to be drawn in.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(b)(ii)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   495,
+   122,
+   545,
+   220
+  ]
+ },
+ "physics-2026-ol-q14b-open-pipe": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14b-open-pipe.png",
+  "md5": "0f40551d888b1c6224aadd80e2cce2de",
+  "alt": "An empty outline of a pipe, open at both ends, for the fundamental to be drawn in.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(b)(iii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   495,
+   260,
+   545,
+   356
+  ]
+ },
+ "physics-2026-ol-q14c-circuit-b": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14c-circuit-b.png",
+  "md5": "ef09e45644bbd98db6f6041c4cfed40c",
+  "alt": "The capacitor circuit: a battery, a capacitor and a two-way switch with contacts A and B, and a bulb; the switch is shown at B, joining the capacitor to the bulb.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(c)(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   205,
+   356,
+   382,
+   512
+  ]
+ },
+ "physics-2026-ol-q14c-plates": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14c-plates.png",
+  "md5": "d61ffa397c6d3b9c713bfa2b70d0d6e2",
+  "alt": "Two parallel plates, the left one marked + + + and the right one marked − − −, for the field between them to be drawn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(c)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   188,
+   226,
+   316,
+   295
+  ]
+ },
+ "physics-2026-ol-q14d-induction": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q14d-induction.png",
+  "md5": "4881eeacd9e096a6cd61ca2637affd14",
+  "alt": "A coil of wire connected to an ammeter, and a bar magnet inside the right-hand end of the coil; a double arrow labelled direction of movement shows the magnet moving in and out.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(d)(i)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   110,
+   100,
+   432,
+   342
+  ]
+ },
+ "physics-2026-ol-q1iv-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1iv-table.png",
+  "md5": "61bf9d9f682640f75ffd9d850ffe72f2",
+  "alt": "Part (iv) as printed: \"Copy and complete the table below into your answerbook by calculating the missing values for 2s in metres.\" Below it a table of s (cm) 65, 70, 75, 80, 85, 90 over 2s (m) 1.3, 1.4 and four empty cells.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   50,
+   486,
+   545,
+   582
+  ]
+ },
+ "physics-2026-ol-q1v-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q1v-table.png",
+  "md5": "60056bc754c4e0f8c1136e0d8aa3b2e2",
+  "alt": "Part (v) as printed: \"Copy and complete the table below into your answerbook by calculating the missing values for t².\" Below it a table of t (s) 0.36, 0.38, 0.39, 0.40, 0.41, 0.43 over t² (s²) with four empty cells, then 0.168 and 0.185.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q1(v)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   50,
+   584,
+   545,
+   680
+  ]
+ },
+ "physics-2026-ol-q2iva-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q2iva-scheme-formula.png",
+  "md5": "a8c343a0607947f89f4bdac1967bfeca",
+  "alt": "The scheme's formula: 1 over u plus 1 over v equals 1 over f, set as stacked fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q2(iv)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   125,
+   402,
+   200,
+   430
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q2ivb-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q2ivb-scheme-formula.png",
+  "md5": "ddc82f983c0996d77d4aff9cad9c9bc6",
+  "alt": "The scheme's working: 1 over 25 plus 1 over 48 equals 73 over 1200, set as stacked fractions.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q2(iv)(b)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   125,
+   456,
+   210,
+   484
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q3iv-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q3iv-table.png",
+  "md5": "06878541ba07cb88140fed33ab11b8e1",
+  "alt": "The results table, f (Hz) 256, 288, 320, 341, 384, 426 over l (cm) 50, 44, 40, 37, 33, 30, with a row for 1/l (cm⁻¹) showing 0.020, 0.023 and four empty cells; under it part (iv): \"Copy and complete the table above into your answerbook by calculating the missing values for 1/l to 3 decimal places.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q3(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   50,
+   443,
+   545,
+   584
+  ]
+ },
+ "physics-2026-ol-q3v-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q3v-table.png",
+  "md5": "a2f4fd0441e0dc569009e28ed023a9e7",
+  "alt": "The results table (f, l and 1/l with four empty cells), part (iv) under it, and part (v): \"Draw a graph of f against 1/l.\"",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q3(v)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   50,
+   443,
+   545,
+   610
+  ]
+ },
+ "physics-2026-ol-q4-equation": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q4-equation.png",
+  "md5": "8cd5c56b15f1cf93070b69f3035815f3",
+  "alt": "The student's equation as printed: energy lost by calorimeter and water and given to the ice = energy needed to melt the ice + energy needed to change the temperature of the melted ice from 0 °C to 20 °C; below it, 9585 = m l + m c Δθ.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q4(iv)(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   60,
+   380,
+   545,
+   464
+  ]
+ },
+ "physics-2026-ol-q5-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q5-graph.png",
+  "md5": "1179b0b716bfbb38de95fa0859604dfc",
+  "alt": "Graph of R (Ω), 0 to 9, against T (°C), 0 to 70, on fine grid paper: six plotted points at T = 10, 20, 30, 40, 50 and 60 °C lie on a straight line that rises to the right and is drawn back to the R axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q5(iv)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   75,
+   175,
+   520,
+   447
+  ]
+ },
+ "physics-2026-ol-q6g-resistors": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q6g-resistors.png",
+  "md5": "430ac15d9c40aea827a4cb8ab2970e27",
+  "alt": "Two resistors in parallel between two leads: a 25 Ω resistor in the upper branch and a 5 Ω resistor in the lower branch.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q6(g)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   440,
+   505,
+   557,
+   592
+  ]
+ },
+ "physics-2026-ol-q9iii-note": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q9iii-note.png",
+  "md5": "7b14efea875a89fe25b2e5fadd6d69a0",
+  "alt": "The note printed under part (iii): real depth over apparent depth equals refractive index, set as a stacked fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q9(iii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   83,
+   240,
+   372,
+   264
+  ]
+ },
+ "physics-2026-ol-q9vi-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q9vi-scheme-formula.png",
+  "md5": "b311a82c18e5d093f042c4f0c95dc41e",
+  "alt": "The scheme's formula: n equals 1 over sin C, set as a stacked fraction.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q9(vi)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   95,
+   503,
+   150,
+   530
+  ],
+  "solution": true
+ },
+ "physics-2026-ol-q9vii-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2026-ol-q9vii-diagram.png",
+  "md5": "7046d697af5f2c043064f100ad0987ff",
+  "alt": "A horizontal surface with air above and water below, a dashed normal, and a ray travelling up through the water to the surface at 55° to the normal.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q9(vii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   165,
+   458,
+   395,
+   553
+  ]
+ }
+}

@@ -108,6 +108,7 @@ import businessRoutePools from '../components/MarkBank/cards/business/route-pool
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
 import biologyReview from '../scripts/markbank/authored/biology-review-audit.json';
+import physicsReview from '../scripts/markbank/authored/physics-review-audit.json';
 import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
 import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 
@@ -1259,6 +1260,24 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
+// Physics (the paper-by-paper review, 2026-10-28): its 570/563 pre-review
+// 2021-2025 cards stay frozen; 2010-2020 and 2026 are carded for the first
+// time and the tasks the reviewed 2021-2025 sittings had bundled or missed are
+// added, all counted on top. A shipped id a review withdraws becomes an alias.
+// A pre-existing id the deck build never shipped at the baseline (it dropped
+// it, e.g. for a broken glyph) carries no student progress: counted with the
+// additions (the review's unshippedBefore).
+type PhysicsReviewSitting = { review?: { added: string[]; unshippedBefore?: string[] } };
+const PHYSICS_REVIEW_ADDED = new Set(Object.values(
+  (physicsReview as unknown as { sittings: Record<string, PhysicsReviewSitting> }).sittings)
+  .flatMap(sitting => [...(sitting.review?.added ?? []), ...(sitting.review?.unshippedBefore ?? [])]));
+const isPhysicsAdded = (id: string) => {
+  const year = Number(id.slice('phys-'.length, 'phys-'.length + 4));
+  return year < 2021 || year > 2025 || PHYSICS_REVIEW_ADDED.has(id);
+};
+const physicsAdditionIds = new Set([...PHYS_HIGHER, ...PHYS_ORDINARY]
+  .map(card => card.id).filter(isPhysicsAdded));
+const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('phys-'));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
@@ -1277,6 +1296,10 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   if (name.startsWith('agricultural-science:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !agriAdditionIds.has(id)), ...agriAliasIds.filter(id => id.includes(level))];
+  }
+  if (name.startsWith('physics:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [...ids.filter(id => !isPhysicsAdded(id)), ...physicsAliasIds.filter(id => id.includes(level))];
   }
   if (name.startsWith('construction-studies:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -1318,6 +1341,7 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)).length
     : name.startsWith('english:') ? cards.filter(card => !englishAdditionIds.has(card.id)).length
     : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
+    : name.startsWith('physics:') ? cards.filter(card => !isPhysicsAdded(card.id)).length
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
 const peAdditions = {
@@ -1423,7 +1447,7 @@ describe('Mark Bank card preservation', () => {
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
-        || name.startsWith('chemistry:')
+        || name.startsWith('chemistry:') || name.startsWith('physics:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
@@ -1437,7 +1461,8 @@ describe('Mark Bank card preservation', () => {
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length
+        + physicsAdditionIds.size - physicsAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1785,9 +1810,17 @@ describe('Mark Bank card preservation', () => {
     const chemistryAuditAliases = chemistryWithdrawn.map(([id]) => id)
       .filter(id => !['chem-2023-ol-q10-a-iii-iv-fig', 'chem-2023-ol-q6-b-i-iv'].includes(id));
     expect(chemistryWithdrawn).toHaveLength(54);
+    // ...and the Physics review's withdrawals (phys- keys) of SHIPPED ids, each a
+    // printed task that is now one card, aliased onto that card.
+    const physicsWithdrawn = Object.values(
+      (physicsReview as unknown as { sittings: Record<string, { review?: { withdrawn?: Record<string, unknown> } }> })
+        .sittings).flatMap(sitting => Object.keys(sitting.review?.withdrawn ?? {}));
+    // A withdrawn id that never shipped (a figure twin the build dropped) carries no
+    // progress and has no alias; every alias is a withdrawn id.
+    for (const id of physicsAliasIds) expect(physicsWithdrawn, id).toContain(id);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length);
+      + chemistryAuditAliases.length + physicsAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1910,6 +1943,19 @@ describe('Mark Bank card preservation', () => {
     expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1742);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
     expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(188);
+  });
+
+  it('adds the reviewed Physics sittings on top of the frozen 2021-2025 set without replacing an id', () => {
+    // Every card id names its own sitting, which is what isPhysicsAdded reads.
+    expect(PHYS_HIGHER.every(card => card.id.startsWith(`phys-${card.year}-hl-`))).toBe(true);
+    expect(PHYS_ORDINARY.every(card => card.id.startsWith(`phys-${card.year}-ol-`))).toBe(true);
+    for (const id of physicsAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+    // The live decks, pinned whole (re-pinned as each reviewed sitting is written).
+    expect(PHYS_HIGHER).toHaveLength(786);
+    expect(idHash(PHYS_HIGHER.map(card => card.id))).toBe('d6598d49ee13868fd4815781013c78d9170f40d19776170464c78c2e023bd8f9');
+    expect(PHYS_ORDINARY).toHaveLength(763);
+    expect(idHash(PHYS_ORDINARY.map(card => card.id))).toBe('3728cb7616e46ba7762c6507d8667a8f87e5c2cf6db5f8c2e58ce6635e20ebd9');
+    expect(physicsAdditionIds.size).toBe(786 + 763 - 570 - 563 + physicsAliasIds.length);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

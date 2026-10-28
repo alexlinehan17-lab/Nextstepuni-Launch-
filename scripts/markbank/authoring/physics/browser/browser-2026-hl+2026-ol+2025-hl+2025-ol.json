@@ -1,0 +1,1256 @@
+[
+ {
+  "id": "phys-2026-hl-q1-iii",
+  "ask": "Draw a suitable graph to show the relati",
+  "answer": "calculations of 1",
+  "solution": "physics-2026-hl-q1iii-scheme-table.png"
+ },
+ {
+  "id": "phys-2026-hl-q1-v",
+  "ask": "Sketch a graph to show the relationship",
+  "answer": "labelled axes",
+  "solution": "physics-2026-hl-q1v-scheme-sketch.png"
+ },
+ {
+  "id": "phys-2026-hl-q2-iv-a",
+  "ask": "Draw a suitable graph to show the relati",
+  "answer": "calculations of T",
+  "solution": "physics-2026-hl-q2iv-scheme-table.png"
+ },
+ {
+  "id": "phys-2026-hl-q2-v",
+  "ask": "Use your graph to calculate the accelera",
+  "answer": "slope formula",
+  "solution": "physics-2026-hl-q2v-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-hl-q6-b",
+  "ask": "The diagram shows weights hanging from a",
+  "answer": "M = F d or 840 + 0.3W = 900",
+  "figure": "physics-2026-hl-q6b-plank.png"
+ },
+ {
+  "id": "phys-2026-hl-q6-h",
+  "ask": "Calculate the effective resistance of th",
+  "answer": "series formula or parallel for",
+  "figure": "physics-2026-hl-q6h-resistors.png"
+ },
+ {
+  "id": "phys-2026-hl-q6-j",
+  "ask": "Carbon–12 (C–12) which is necessary for",
+  "answer": "mass defect = 1.295",
+  "figure": "physics-2026-hl-q6j-equation.png"
+ },
+ {
+  "id": "phys-2026-hl-q10-iv",
+  "ask": "Draw a suitable graph on graph paper to",
+  "answer": "calculated 1",
+  "solution": "physics-2026-hl-q10iv-scheme-table.png"
+ },
+ {
+  "id": "phys-2026-hl-q10-v",
+  "ask": "Calculate the slope of the graph and use",
+  "answer": "slope formula",
+  "solution": "physics-2026-hl-q10iv-scheme-table.png"
+ },
+ {
+  "id": "phys-2026-hl-q10-vi-a",
+  "ask": "Calculate the potential difference acros",
+  "answer": "V = IR",
+  "figure": "physics-2026-hl-q10-circuit.png"
+ },
+ {
+  "id": "phys-2026-hl-q10-vi-b",
+  "ask": "Calculate the energy stored in the capac",
+  "answer": "E = ½ CV",
+  "figure": "physics-2026-hl-q10-circuit.png"
+ },
+ {
+  "id": "phys-2026-hl-q11-v",
+  "ask": "Using Fleming's left-hand rule, or other",
+  "answer": "into the page",
+  "figure": "physics-2026-hl-q11-path.png"
+ },
+ {
+  "id": "phys-2026-hl-q13-iv-c",
+  "ask": "Calculate the average current drawn if t",
+  "answer": "Vrms= V",
+  "solution": "physics-2026-hl-q13ivc-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-hl-q14-a-iii-a",
+  "ask": "Resolve the velocity of the boat into pa",
+  "answer": "parallel component = 2.349 m s",
+  "figure": "physics-2026-hl-q14a-boat.png"
+ },
+ {
+  "id": "phys-2026-hl-q14-a-iii-b",
+  "ask": "Calculate the magnitude and the directio",
+  "answer": "magnitude of v = 3.94 m s",
+  "figure": "physics-2026-hl-q14a-boat.png"
+ },
+ {
+  "id": "phys-2026-hl-q14-c-iv",
+  "ask": "Draw a diagram to show the electric fiel",
+  "answer": "shape",
+  "figure": "physics-2026-hl-q14c-charges.png"
+ },
+ {
+  "id": "phys-2026-hl-q14-c-v",
+  "ask": "Calculate the electric field strength at",
+  "answer": "6.8",
+  "figure": "physics-2026-hl-q14c-charges.png"
+ },
+ {
+  "id": "phys-2026-hl-q14-d-iii-part-a",
+  "ask": "Express the minimum frequency f of the g",
+  "answer": "hf and mc",
+  "figure": "physics-2026-hl-q14d-reaction.png"
+ },
+ {
+  "id": "phys-2026-hl-q14-d-iv-b-part-a",
+  "ask": "Given that, at this distance, the strong",
+  "answer": "F = G (m",
+  "solution": "physics-2026-hl-q14d-ivb-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-hl-q1-i-a",
+  "ask": "Draw a labelled diagram to show how the",
+  "answer": "trapped gas"
+ },
+ {
+  "id": "phys-2026-hl-q2-ii-a",
+  "ask": "Describe, with the aid of a labelled dia",
+  "answer": "split cork"
+ },
+ {
+  "id": "phys-2026-hl-q3-i-a",
+  "ask": "Draw a labelled diagram to show how the",
+  "answer": "spectrometer"
+ },
+ {
+  "id": "phys-2026-hl-q3-iv-b",
+  "ask": "Describe the effect that each of the fol",
+  "answer": "images closer together"
+ },
+ {
+  "id": "phys-2026-hl-q4-iv",
+  "ask": "Suggest a reason why the water in the ca",
+  "answer": "heat gained = heat lost"
+ },
+ {
+  "id": "phys-2026-hl-q5-i",
+  "ask": "Draw a labelled diagram to show how the",
+  "answer": "connected conductor in liquid"
+ },
+ {
+  "id": "phys-2026-hl-q5-vi",
+  "ask": "Calculate the resistivity of the wire at",
+  "answer": "ρ = RA"
+ },
+ {
+  "id": "phys-2026-hl-q6-f",
+  "ask": "66 000 m",
+  "answer": "m = ρV"
+ },
+ {
+  "id": "phys-2026-hl-q6-l-ii",
+  "ask": "State two factors that affect the effici",
+  "answer": "resistance of the wires"
+ },
+ {
+  "id": "phys-2026-hl-q7-iv",
+  "ask": "Calculate the upward velocity of the ste",
+  "answer": "= u"
+ },
+ {
+  "id": "phys-2026-hl-q8-i",
+  "ask": "Explain what is meant by reflection of l",
+  "answer": "bouncing back of light from a"
+ },
+ {
+  "id": "phys-2026-hl-q8-vi",
+  "ask": "The diameter of the circular disc is 1.1",
+  "answer": "C = 48.74°"
+ },
+ {
+  "id": "phys-2026-hl-q9-iii-a",
+  "ask": "Name these two factors.",
+  "answer": "length"
+ },
+ {
+  "id": "phys-2026-hl-q9-vii",
+  "ask": "A pipe that is open at both ends has a l",
+  "answer": "c = f λ"
+ },
+ {
+  "id": "phys-2026-hl-q10-iii",
+  "ask": "Describe a demonstration to show that a",
+  "answer": "apparatus"
+ },
+ {
+  "id": "phys-2026-hl-q11-iv",
+  "ask": "Derive the formula F = qvB for the force",
+  "answer": "F = BIl"
+ },
+ {
+  "id": "phys-2026-hl-q12-ii-a",
+  "ask": "Compare each type of radiation under the",
+  "answer": "alpha: strong"
+ },
+ {
+  "id": "phys-2026-hl-q12-v",
+  "ask": "Given that the energy needed to create o",
+  "answer": "262 500 ion pairs"
+ },
+ {
+  "id": "phys-2026-hl-q13-i",
+  "ask": "Silicon is classed as a semiconductor. E",
+  "answer": "resistivity"
+ },
+ {
+  "id": "phys-2026-hl-q13-iv-b",
+  "ask": "What type of energy conversion takes pla",
+  "answer": "chemical to"
+ },
+ {
+  "id": "phys-2026-hl-q14-a-ii",
+  "ask": "Describe a laboratory experiment to find",
+  "answer": "apparatus: three newton balanc"
+ },
+ {
+  "id": "phys-2026-hl-q14-b-iii-b",
+  "ask": "State the observed frequency at the cent",
+  "answer": "1100 Hz"
+ },
+ {
+  "id": "phys-2026-hl-q14-d-ii-part-a",
+  "ask": "Explain how the quark model can be used",
+  "answer": "anti-up, anti-up, anti-down"
+ },
+ {
+  "id": "phys-2026-hl-q14-d-iii-b-part-b",
+  "ask": "Label the input voltage and the output v",
+  "answer": "input across base resistor"
+ },
+ {
+  "id": "phys-2026-ol-q1-i",
+  "ask": "Copy the diagram above into your answerb",
+  "answer": "distance indicated from bottom",
+  "figure": "physics-2026-ol-q1-apparatus.png"
+ },
+ {
+  "id": "phys-2026-ol-q1-ii",
+  "ask": "On your diagram, add in the piece of app",
+  "answer": "metre stick",
+  "figure": "physics-2026-ol-q1-apparatus.png"
+ },
+ {
+  "id": "phys-2026-ol-q1-iii",
+  "ask": "Suggest a reason why the trapdoor is con",
+  "answer": "to stop the timer",
+  "figure": "physics-2026-ol-q1-apparatus.png"
+ },
+ {
+  "id": "phys-2026-ol-q1-iv",
+  "ask": "",
+  "answer": "1.5",
+  "questionFigure": "physics-2026-ol-q1iv-table.png"
+ },
+ {
+  "id": "phys-2026-ol-q1-v",
+  "ask": "",
+  "answer": "0.1296",
+  "questionFigure": "physics-2026-ol-q1v-table.png"
+ },
+ {
+  "id": "phys-2026-ol-q1-vi",
+  "ask": "Use the data to draw a graph of 2s (y–ax",
+  "answer": "labelled axis",
+  "solution": "physics-2026-ol-q1-scheme-tables.png"
+ },
+ {
+  "id": "phys-2026-ol-q1-vii",
+  "ask": "Calculate the slope of the graph to get",
+  "answer": "g = 9.63 m s",
+  "solution": "physics-2026-ol-q1-scheme-tables.png"
+ },
+ {
+  "id": "phys-2026-ol-q2-iv-a",
+  "ask": "State the formula used to calculate the",
+  "answer": "u + 1",
+  "solution": "physics-2026-ol-q2iva-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-ol-q2-iv-b",
+  "ask": "Calculate f.",
+  "answer": "25 + 1",
+  "solution": "physics-2026-ol-q2ivb-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-ol-q3-iv",
+  "ask": "",
+  "answer": "0.025",
+  "questionFigure": "physics-2026-ol-q3iv-table.png"
+ },
+ {
+  "id": "phys-2026-ol-q3-v",
+  "ask": "",
+  "answer": "labelled axis",
+  "questionFigure": "physics-2026-ol-q3v-table.png"
+ },
+ {
+  "id": "phys-2026-ol-q4-iv-a",
+  "ask": "Calculate the energy needed to change th",
+  "answer": "Q = m c Δθ = 2006.4 J",
+  "figure": "physics-2026-ol-q4-equation.png"
+ },
+ {
+  "id": "phys-2026-ol-q4-iv-b",
+  "ask": "Calculate l, the specific latent heat of",
+  "answer": "l = 315 775 J kg",
+  "figure": "physics-2026-ol-q4-equation.png"
+ },
+ {
+  "id": "phys-2026-ol-q5-iv",
+  "ask": "Describe the relationship between T and",
+  "answer": "R increases linearly with incr",
+  "figure": "physics-2026-ol-q5-graph.png"
+ },
+ {
+  "id": "phys-2026-ol-q5-v",
+  "ask": "Use the graph to find the resistance of",
+  "answer": "4.5 Ω",
+  "figure": "physics-2026-ol-q5-graph.png"
+ },
+ {
+  "id": "phys-2026-ol-q5-vi",
+  "ask": "Use the graph to estimate the temperatur",
+  "answer": "46 °C",
+  "figure": "physics-2026-ol-q5-graph.png"
+ },
+ {
+  "id": "phys-2026-ol-q6-g",
+  "ask": "Two resistors are connected in parallel",
+  "answer": "R = 4.17 Ω",
+  "figure": "physics-2026-ol-q6g-resistors.png"
+ },
+ {
+  "id": "phys-2026-ol-q9-iii",
+  "ask": "A fish is at a depth of 2 m below the su",
+  "answer": "apparent depth = 1.5 m",
+  "figure": "physics-2026-ol-q9iii-note.png"
+ },
+ {
+  "id": "phys-2026-ol-q9-vi",
+  "ask": "A diver notes that the critical angle C",
+  "answer": "n = 1",
+  "solution": "physics-2026-ol-q9vi-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-ol-q9-vii",
+  "ask": "Copy and complete the diagram below to s",
+  "answer": "light reflected in water (at t",
+  "figure": "physics-2026-ol-q9vii-diagram.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-i",
+  "ask": "Explain what is meant by electric curren",
+  "answer": "flow of charge",
+  "figure": "physics-2026-ol-q10-series.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-ii",
+  "ask": "Instrument X is used to measure voltage.",
+  "answer": "voltmeter",
+  "figure": "physics-2026-ol-q10-series.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-iii",
+  "ask": "The voltage across B",
+  "answer": "5 V",
+  "answerInAsk": true,
+  "figure": "physics-2026-ol-q10-series.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-iv",
+  "ask": "The current through B",
+  "answer": "V = IR",
+  "figure": "physics-2026-ol-q10-series.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-v",
+  "ask": "Write one of the following statements (1",
+  "answer": "(3) B",
+  "answerInAsk": true,
+  "figure": "physics-2026-ol-q10-series.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-vi",
+  "ask": "Use electrical circuit symbols to redraw",
+  "answer": "correct symbols",
+  "figure": "physics-2026-ol-q10-series.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-vii",
+  "ask": "State one advantage of connecting bulbs",
+  "answer": "e.g. if bulbs break, the other",
+  "figure": "physics-2026-ol-q10-parallel.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-viii",
+  "ask": "Compare the voltage across B",
+  "answer": "the same",
+  "figure": "physics-2026-ol-q10-parallel.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-ix",
+  "ask": "Instrument Y now reads 2 A. Calculate th",
+  "answer": "1 A",
+  "figure": "physics-2026-ol-q10-parallel.png"
+ },
+ {
+  "id": "phys-2026-ol-q10-x",
+  "ask": "What effect would increasing the voltage",
+  "answer": "current increases",
+  "figure": "physics-2026-ol-q10-parallel.png"
+ },
+ {
+  "id": "phys-2026-ol-q11-iv",
+  "ask": "Light strikes a glass block at an angle",
+  "answer": "n = (sin i)",
+  "solution": "physics-2026-ol-q11iv-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-ol-q11-v",
+  "ask": "The diagrams on the right show a sound w",
+  "answer": "wavelength of sound is similar",
+  "figure": "physics-2026-ol-q11v-waves.png"
+ },
+ {
+  "id": "phys-2026-ol-q12-iv",
+  "ask": "",
+  "answer": "197−79 = 118 neutrons",
+  "questionFigure": "physics-2026-ol-q12iv-ask.png"
+ },
+ {
+  "id": "phys-2026-ol-q12-viii",
+  "ask": "Given that an electron in a cathode ray",
+  "answer": "= 1",
+  "solution": "physics-2026-ol-q12viii-scheme-formula.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-ii",
+  "ask": "Calculate the distance between the pivot",
+  "answer": "1 − 0.8 = 0.2 m",
+  "figure": "physics-2026-ol-q14a-beam1.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-iii",
+  "ask": "Calculate the moment, about the pivot, d",
+  "answer": "M = Fd",
+  "figure": "physics-2026-ol-q14a-beam1.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-iv",
+  "ask": "State the two conditions necessary for e",
+  "answer": "upward forces = downward force",
+  "figure": "physics-2026-ol-q14a-beam2.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-a-v",
+  "ask": "Show by calculation that the beam is in",
+  "answer": "150 N = 30 N + 120 N or (120)(",
+  "figure": "physics-2026-ol-q14a-beam2.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-ii-a",
+  "ask": "Copy and complete the diagram on the rig",
+  "answer": "node at closed end",
+  "figure": "physics-2026-ol-q14b-closed-pipe.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-ii-b",
+  "ask": "Label a node and an antinode on your dia",
+  "answer": "correct labels",
+  "figure": "physics-2026-ol-q14b-closed-pipe.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-b-iii",
+  "ask": "Copy and complete the diagram on the rig",
+  "answer": "antinode at each end",
+  "figure": "physics-2026-ol-q14b-open-pipe.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-c-ii",
+  "ask": "Copy and complete the diagram below to s",
+  "answer": "parallel lines",
+  "figure": "physics-2026-ol-q14c-plates.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-c-iv",
+  "ask": "Describe what happens when the switch is",
+  "answer": "bulb flashes",
+  "figure": "physics-2026-ol-q14c-circuit-b.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-i-a",
+  "ask": "Describe what happens on the ammeter as",
+  "answer": "the ammeter needle deflects in",
+  "figure": "physics-2026-ol-q14d-induction.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-i-b",
+  "ask": "Describe what happens on the ammeter as",
+  "answer": "the ammeter needle deflects in",
+  "figure": "physics-2026-ol-q14d-induction.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-iii-a",
+  "ask": "Describe what happens on the ammeter if",
+  "answer": "the ammeter shows a greater de",
+  "figure": "physics-2026-ol-q14d-induction.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-iii-b",
+  "ask": "Describe what happens on the ammeter if",
+  "answer": "the ammeter shows no deflectio",
+  "figure": "physics-2026-ol-q14d-induction.png"
+ },
+ {
+  "id": "phys-2026-ol-q14-d-iv",
+  "ask": "This experiment is usually done with a g",
+  "answer": "more sensitive",
+  "figure": "physics-2026-ol-q14d-induction.png"
+ },
+ {
+  "id": "phys-2026-ol-q2-i",
+  "ask": "Draw a labelled diagram of the arrangeme",
+  "answer": "object"
+ },
+ {
+  "id": "phys-2026-ol-q3-ii",
+  "ask": "On your diagram, indicate the length l t",
+  "answer": "correct length indicated"
+ },
+ {
+  "id": "phys-2026-ol-q4-iii",
+  "ask": "Calculate the mass m of the ice added.",
+  "answer": "0.474 – 0.450 = 0.024 kg"
+ },
+ {
+  "id": "phys-2026-ol-q5-iii",
+  "ask": "Describe how the student varied the temp",
+  "answer": "any appropriate heat source"
+ },
+ {
+  "id": "phys-2026-ol-q6-e",
+  "ask": "State Boyle’s law.",
+  "answer": "the pressure is inversely prop"
+ },
+ {
+  "id": "phys-2026-ol-q6-k",
+  "ask": "Explain what is meant by doping a semico",
+  "answer": "adding impurities"
+ },
+ {
+  "id": "phys-2026-ol-q7-iv",
+  "ask": "State the unit of force.",
+  "answer": "newton"
+ },
+ {
+  "id": "phys-2026-ol-q7-ix",
+  "ask": "What was his mass on the Moon?",
+  "answer": "163 kg",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2026-ol-q8-iv",
+  "ask": "State an example of a thermometric prope",
+  "answer": "e.g. length, etc."
+ },
+ {
+  "id": "phys-2026-ol-q9-i",
+  "ask": "Explain what is meant by refraction.",
+  "answer": "the bending of light (as it tr"
+ },
+ {
+  "id": "phys-2026-ol-q9-viii-b",
+  "ask": "State one use of fibre optic cables.",
+  "answer": "endoscopy"
+ },
+ {
+  "id": "phys-2026-ol-q11-vii",
+  "ask": "Two coherent waves meet out of phase. Do",
+  "answer": "destructive interference",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2026-ol-q12-v",
+  "ask": "How are the electrons produced in a cath",
+  "answer": "thermionic emission"
+ },
+ {
+  "id": "phys-2026-ol-q13-ii",
+  "ask": "Sound needs a medium to carry the waves.",
+  "answer": "a substance through which a wa"
+ },
+ {
+  "id": "phys-2026-ol-q13-vii",
+  "ask": "Another sound has a frequency of 200 Hz.",
+  "answer": "pitch",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2026-ol-q14-c-iii",
+  "ask": "Describe an experiment to show the elect",
+  "answer": "apparatus"
+ },
+ {
+  "id": "phys-2025-hl-q1-v",
+  "ask": "Using the given data, calculate the net",
+  "answer": "forces up = 8.9 (N)",
+  "figure": "physics-2025-hl-q1-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q1-vii",
+  "ask": "Use your results to verify the laws of e",
+  "answer": "(total) force up ≈ (total) for",
+  "figure": "physics-2025-hl-q1-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q2-i",
+  "ask": "Explain how the masses could have been m",
+  "answer": "(electronic) balance",
+  "figure": "physics-2025-hl-q2-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q2-iii",
+  "ask": "Calculate the velocity of trolley A and",
+  "answer": "vA = 0.54 m s",
+  "figure": "physics-2025-hl-q2-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q2-v",
+  "ask": "Use the data to show that this experimen",
+  "answer": "p = mv",
+  "figure": "physics-2025-hl-q2-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q3-v",
+  "ask": "Why does the student’s graph not go thro",
+  "answer": "end correction",
+  "figure": "physics-2025-hl-q3-graph.png"
+ },
+ {
+  "id": "phys-2025-hl-q3-vi",
+  "ask": "Identify the frequency of the tuning for",
+  "answer": "f = 200 Hz",
+  "figure": "physics-2025-hl-q3-graph.png"
+ },
+ {
+  "id": "phys-2025-hl-q4-i",
+  "ask": "Copy the above diagram into your answerb",
+  "answer": "normal drawn at point of entry",
+  "figure": "physics-2025-hl-q4-block.png"
+ },
+ {
+  "id": "phys-2025-hl-q4-v",
+  "ask": "Explain why the student placed the glass",
+  "answer": "reduce (percentage) error (in",
+  "figure": "physics-2025-hl-q4-sheet.png"
+ },
+ {
+  "id": "phys-2025-hl-q5-iii",
+  "ask": "Does the graph show that Ohm’s law is ob",
+  "answer": "no",
+  "figure": "physics-2025-hl-q5-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q8-vii",
+  "ask": "Describe the effect on the pattern when",
+  "answer": "— distance between fringes inc",
+  "figure": "physics-2025-hl-q8-diagram.png"
+ },
+ {
+  "id": "phys-2025-hl-q11-vi",
+  "ask": "Explain what is meant by a thermistor.",
+  "answer": "resistance changes",
+  "figure": "physics-2025-hl-q11-thermistor.png"
+ },
+ {
+  "id": "phys-2025-hl-q11-vii",
+  "ask": "The thermostat switches on an electric h",
+  "answer": "= V",
+  "figure": "physics-2025-hl-q11-thermistor.png"
+ },
+ {
+  "id": "phys-2025-hl-q11-ii",
+  "ask": "Derive an expression for the total resis",
+  "answer": "= I",
+  "figure": "physics-2025-hl-q11-parallel.png"
+ },
+ {
+  "id": "phys-2025-hl-q11-iii",
+  "ask": "Calculate the total resistance of the ci",
+  "answer": "Rparallel = 2.67 (Ω)",
+  "figure": "physics-2025-hl-q11-switch.png"
+ },
+ {
+  "id": "phys-2025-hl-q11-iv",
+  "ask": "Calculate the potential difference betwe",
+  "answer": "I = ( V",
+  "figure": "physics-2025-hl-q11-switch.png"
+ },
+ {
+  "id": "phys-2025-hl-q11-v",
+  "ask": "What happens to the potential difference",
+  "answer": "potential difference increases",
+  "figure": "physics-2025-hl-q11-switch.png"
+ },
+ {
+  "id": "phys-2025-hl-q13-iii-a",
+  "ask": "The diagram shows a 5 cm long nichrome w",
+  "answer": "A = 1.119",
+  "figure": "physics-2025-hl-q13-wire.png"
+ },
+ {
+  "id": "phys-2025-hl-q13-iii-b",
+  "ask": "The diagram shows a 5 cm long nichrome w",
+  "answer": "I = V",
+  "figure": "physics-2025-hl-q13-wire.png"
+ },
+ {
+  "id": "phys-2025-hl-q13-vii",
+  "ask": "",
+  "answer": "Irms = I",
+  "solution": "physics-2025-hl-q13-vii-scheme.png",
+  "questionFigure": "physics-2025-hl-q13-vii-question.png"
+ },
+ {
+  "id": "phys-2025-hl-q14b-i",
+  "ask": "State which glass Y or Z would be suitab",
+  "answer": "Y",
+  "answerInAsk": true,
+  "figure": "physics-2025-hl-q14b-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q14b-iv",
+  "ask": "Calculate the critical angle between the",
+  "answer": "n = (sin i)",
+  "figure": "physics-2025-hl-q14b-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q14b-v",
+  "ask": "Identify the type of glass, from the tab",
+  "answer": "Y",
+  "figure": "physics-2025-hl-q14b-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q14c-ii",
+  "ask": "Write a nuclear equation to represent th",
+  "answer": "Xe +",
+  "solution": "physics-2025-hl-q14c-ii-scheme.png"
+ },
+ {
+  "id": "phys-2025-hl-q3-iv",
+  "ask": "Use the graph to calculate the speed of",
+  "answer": "slope formula",
+  "figure": "physics-2025-hl-q3-graph.png"
+ },
+ {
+  "id": "phys-2025-hl-q1-iii",
+  "ask": "Draw a labelled diagram to show all the",
+  "answer": "two forces up and four forces",
+  "figure": "physics-2025-hl-q1-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q1-vi",
+  "ask": "Using an axis at the 5 cm mark on the me",
+  "answer": "M = Fd",
+  "figure": "physics-2025-hl-q1-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q4-ii",
+  "ask": "Draw a suitable graph, on graph paper, t",
+  "answer": "values of sin i and sin r — si",
+  "figure": "physics-2025-hl-q4-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q4-iv",
+  "ask": "Use your graph to calculate the refracti",
+  "answer": "slope formula",
+  "figure": "physics-2025-hl-q4-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q5-ii",
+  "ask": "Draw a suitable graph, on graph paper, t",
+  "answer": "axes labelled",
+  "figure": "physics-2025-hl-q5-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q5-iv",
+  "ask": "Calculate the resistance of the bulb whe",
+  "answer": "R = V",
+  "figure": "physics-2025-hl-q5-table.png"
+ },
+ {
+  "id": "phys-2025-hl-q6-c",
+  "ask": "Using the diagram, calculate the time it",
+  "answer": "equation of motion given; e.g.",
+  "figure": "physics-2025-hl-q6c-diagram.png"
+ },
+ {
+  "id": "phys-2025-hl-q8-iv",
+  "ask": "Explain how this pattern is formed from",
+  "answer": "each slit acts as a source",
+  "figure": "physics-2025-hl-q8-diagram.png"
+ },
+ {
+  "id": "phys-2025-hl-q8-v",
+  "ask": "Calculate the number of lines per mm on",
+  "answer": "nλ = d sin θ",
+  "figure": "physics-2025-hl-q8-diagram.png"
+ },
+ {
+  "id": "phys-2025-hl-q8-vi",
+  "ask": "Calculate the maximum number of images t",
+  "answer": "= d",
+  "figure": "physics-2025-hl-q8-diagram.png"
+ },
+ {
+  "id": "phys-2025-hl-q11-viii",
+  "ask": "What change must be made to the resistan",
+  "answer": "resistance must decrease",
+  "figure": "physics-2025-hl-q11-thermistor.png"
+ },
+ {
+  "id": "phys-2025-hl-q12a-i",
+  "ask": "State the nuclear equation for the react",
+  "answer": "H +",
+  "solution": "physics-2025-hl-q12a-i-scheme.png"
+ },
+ {
+  "id": "phys-2025-hl-q12a-ix",
+  "ask": "Write a nuclear equation for this decay.",
+  "answer": "O +",
+  "solution": "physics-2025-hl-q12a-ix-scheme.png"
+ },
+ {
+  "id": "phys-2025-hl-q1-i",
+  "ask": "Describe how the student found the centr",
+  "answer": "balance on a pivot"
+ },
+ {
+  "id": "phys-2025-hl-q2-vi-a",
+  "ask": "External forces acting on the trolleys w",
+  "answer": "frictional"
+ },
+ {
+  "id": "phys-2025-hl-q4-iii",
+  "ask": "Explain how your graph verifies Snell’s",
+  "answer": "straight line through origin"
+ },
+ {
+  "id": "phys-2025-hl-q6-g",
+  "ask": "A 12 µF parallel-plate capacitor is conn",
+  "answer": "C = q"
+ },
+ {
+  "id": "phys-2025-hl-q7-i-b",
+  "ask": "Explain what is meant by (b) centripetal",
+  "answer": "force towards centre of circle"
+ },
+ {
+  "id": "phys-2025-hl-q7-v",
+  "ask": "Calculate the force of gravity that the",
+  "answer": "F = G (m"
+ },
+ {
+  "id": "phys-2025-hl-q8-iii",
+  "ask": "State two conditions necessary for total",
+  "answer": "same amplitude"
+ },
+ {
+  "id": "phys-2025-hl-q9-iv-ab",
+  "ask": "Calculate (a) the energy of a photon fal",
+  "answer": "Φ = 4.33 x 10"
+ },
+ {
+  "id": "phys-2025-hl-q10-i-a",
+  "ask": "Explain what is meant by (a) specific he",
+  "answer": "energy"
+ },
+ {
+  "id": "phys-2025-hl-q10-iii",
+  "ask": "State the equation that defines temperat",
+  "answer": "°C = T"
+ },
+ {
+  "id": "phys-2025-hl-q12a-ii",
+  "ask": "In addition to mass and energy, state tw",
+  "answer": "momentum"
+ },
+ {
+  "id": "phys-2025-hl-q12a-viii",
+  "ask": "State a difference between an electron a",
+  "answer": "electron has a negative charge"
+ },
+ {
+  "id": "phys-2025-hl-q12b-vii",
+  "ask": "List three principal components of a mov",
+  "answer": "magnet"
+ },
+ {
+  "id": "phys-2025-hl-q13-v",
+  "ask": "Explain what is meant by self-induction.",
+  "answer": "changing current in a coil"
+ },
+ {
+  "id": "phys-2025-hl-q14a-ii",
+  "ask": "Using Hooke’s law, show that the mass ex",
+  "answer": "F = ma"
+ },
+ {
+  "id": "phys-2025-hl-q14c-iii",
+  "ask": "Calculate the decay constant of Iodine–1",
+  "answer": "T 1"
+ },
+ {
+  "id": "phys-2025-hl-q14d-iii",
+  "ask": "Describe how an electric field pattern m",
+  "answer": "apparatus: oil and semolina"
+ },
+ {
+  "id": "phys-2025-hl-q3-i",
+  "ask": "Draw a labelled diagram of the arrangeme",
+  "answer": "tube"
+ },
+ {
+  "id": "phys-2025-hl-q6-j",
+  "ask": "Indicate on a diagram the sections of a",
+  "answer": "p-n junction with depletion la"
+ },
+ {
+  "id": "phys-2025-hl-q12a-vi",
+  "ask": "Given that the alpha particles produced",
+  "answer": "reference to energy of inciden"
+ },
+ {
+  "id": "phys-2025-ol-q5-vi",
+  "ask": "Using the formula, ρ = slope",
+  "answer": "ρ ≈ 1.6",
+  "figure": "physics-2025-ol-q5-graph.png"
+ },
+ {
+  "id": "phys-2025-ol-q6-a",
+  "ask": "The diagram shows a force of 50 N applie",
+  "answer": "moment = 7.5 N m",
+  "figure": "physics-2025-ol-q6a-wrench.png"
+ },
+ {
+  "id": "phys-2025-ol-q6-j",
+  "ask": "The insulated conductor shown below is p",
+  "answer": "(charge throughout with) conce",
+  "figure": "physics-2025-ol-q6j-conductor.png"
+ },
+ {
+  "id": "phys-2025-ol-q1-iv",
+  "ask": "Calculate (a) the total momentum before",
+  "answer": "momentum before = 0.63 kg m s",
+  "figure": "physics-2025-ol-q1-table.png"
+ },
+ {
+  "id": "phys-2025-ol-q1-iv-b",
+  "ask": "Calculate (b) the total momentum after t",
+  "answer": "momentum after = 0.63 kg m s",
+  "figure": "physics-2025-ol-q1-table.png"
+ },
+ {
+  "id": "phys-2025-ol-q3-v",
+  "ask": "Use the data to calculate an average val",
+  "answer": "average calculation, n ≈ 1.5",
+  "figure": "physics-2025-ol-q3-table.png"
+ },
+ {
+  "id": "phys-2025-ol-q4-ii",
+  "ask": "The initial temperature of the steam was",
+  "answer": "100 – 42 = 58 °C",
+  "figure": "physics-2025-ol-q4-table.png"
+ },
+ {
+  "id": "phys-2025-ol-q4-iii",
+  "ask": "Calculate the mass m of the steam added.",
+  "answer": "0.198 – 0.196 = 0.002 kg",
+  "figure": "physics-2025-ol-q4-table.png"
+ },
+ {
+  "id": "phys-2025-ol-q4-iv",
+  "ask": "Calculate, l, the specific latent heat o",
+  "answer": "l = 2.3",
+  "figure": "physics-2025-ol-q4-table.png"
+ },
+ {
+  "id": "phys-2025-ol-q14-c-i",
+  "ask": "Identify the part labelled X on the elec",
+  "answer": "gold",
+  "answerInAsk": true,
+  "figure": "physics-2025-ol-q14c-electroscope.png"
+ },
+ {
+  "id": "phys-2025-ol-q14c-ii",
+  "ask": "Describe how to charge an electroscope n",
+  "answer": "contact with negative conducto",
+  "figure": "physics-2025-ol-q14c-electroscope.png"
+ },
+ {
+  "id": "phys-2025-ol-q14c-v",
+  "ask": "Describe a method used to remove the cha",
+  "answer": "connect metal cap of an electr",
+  "figure": "physics-2025-ol-q14c-electroscope.png"
+ },
+ {
+  "id": "phys-2025-ol-q14d-i",
+  "ask": "What are X‐rays?",
+  "answer": "high energy rays",
+  "figure": "physics-2025-ol-q14d-xray.png"
+ },
+ {
+  "id": "phys-2025-ol-q14d-ii",
+  "ask": "Identify a suitable material that could",
+  "answer": "material with a high melting p",
+  "figure": "physics-2025-ol-q14d-xray.png"
+ },
+ {
+  "id": "phys-2025-ol-q14d-iii",
+  "ask": "Describe how electrons are produced in t",
+  "answer": "thermionic emission",
+  "figure": "physics-2025-ol-q14d-xray.png"
+ },
+ {
+  "id": "phys-2025-ol-q14d-iv",
+  "ask": "Why is a lead casing put around an X‐ray",
+  "answer": "for safety",
+  "figure": "physics-2025-ol-q14d-xray.png"
+ },
+ {
+  "id": "phys-2025-ol-q14d-v",
+  "ask": "State one use of X‐rays.",
+  "answer": "check for broken bones, check",
+  "figure": "physics-2025-ol-q14d-xray.png"
+ },
+ {
+  "id": "phys-2025-ol-q9-v",
+  "ask": "The concave mirror in the ray diagram is",
+  "answer": "refraction will occur",
+  "figure": "physics-2025-ol-q9-ray.png"
+ },
+ {
+  "id": "phys-2025-ol-q10-vi",
+  "ask": "Explain what is meant by electromagnetic",
+  "answer": "the production of an (induced)",
+  "figure": "physics-2025-ol-q10-coil.png"
+ },
+ {
+  "id": "phys-2025-ol-q10-ix",
+  "ask": "The primary coil of a transformer has 20",
+  "answer": "voltage output = 57.5 V",
+  "figure": "physics-2025-ol-q10-transformer.png"
+ },
+ {
+  "id": "phys-2025-ol-q12a-ii",
+  "ask": "",
+  "answer": "86",
+  "questionFigure": "physics-2025-ol-q12a-ii-question.png"
+ },
+ {
+  "id": "phys-2025-ol-q12a-iv",
+  "ask": "",
+  "answer": "Po",
+  "questionFigure": "physics-2025-ol-q12a-iv-question.png"
+ },
+ {
+  "id": "phys-2025-ol-q10vii-fig",
+  "ask": "What is observed on the meter when the m",
+  "answer": "non-zero reading on meter",
+  "figure": "physics-2025-ol-q10-coil.png"
+ },
+ {
+  "id": "phys-2025-ol-q10viii-fig",
+  "ask": "What is observed on the meter when the m",
+  "answer": "constant 0 A reading",
+  "figure": "physics-2025-ol-q10-coil.png"
+ },
+ {
+  "id": "phys-2025-ol-q2-v",
+  "ask": "",
+  "answer": "labelled axis",
+  "figure": "physics-2025-ol-q2-table.png",
+  "questionFigure": "physics-2025-ol-q2-v-question.png"
+ },
+ {
+  "id": "phys-2025-ol-q7-ix",
+  "ask": "How can we tell from the graph that the",
+  "answer": "positive slope",
+  "figure": "physics-2025-ol-q7-graph.png"
+ },
+ {
+  "id": "phys-2025-ol-q7-x",
+  "ask": "Describe the skydiver’s velocity between",
+  "answer": "it is constant",
+  "figure": "physics-2025-ol-q7-graph.png"
+ },
+ {
+  "id": "phys-2025-ol-q7-xi",
+  "ask": "Identify the point that represents when",
+  "answer": "C",
+  "figure": "physics-2025-ol-q7-graph.png"
+ },
+ {
+  "id": "phys-2025-ol-q7-xii",
+  "ask": "Why is it safe for the skydiver to land",
+  "answer": "as they have a small velocity",
+  "figure": "physics-2025-ol-q7-graph.png"
+ },
+ {
+  "id": "phys-2025-ol-q9-ii",
+  "ask": "In your answer book, copy and complete t",
+  "answer": "first incident ray",
+  "figure": "physics-2025-ol-q9-ray.png"
+ },
+ {
+  "id": "phys-2025-ol-q9-iii",
+  "ask": "",
+  "answer": "correct substitution of u or f",
+  "questionFigure": "physics-2025-ol-q9-iii-question.png"
+ },
+ {
+  "id": "phys-2025-ol-q2-iv",
+  "ask": "",
+  "answer": "18.52",
+  "figure": "physics-2025-ol-q2-table.png",
+  "questionFigure": "physics-2025-ol-q2-iv-question.png"
+ },
+ {
+  "id": "phys-2025-ol-q3-iv",
+  "ask": "Copy and complete the table above into y",
+  "answer": "calculations of sin i values —",
+  "figure": "physics-2025-ol-q3-table.png"
+ },
+ {
+  "id": "phys-2025-ol-q5-iv",
+  "ask": "Describe the relationship between l and",
+  "answer": "(directly) proportional",
+  "figure": "physics-2025-ol-q5-graph.png"
+ },
+ {
+  "id": "phys-2025-ol-q5-v",
+  "ask": "Calculate the slope of the graph.",
+  "answer": "m ≈ 0.33 Ω m",
+  "figure": "physics-2025-ol-q5-graph.png"
+ },
+ {
+  "id": "phys-2025-ol-q6-b",
+  "ask": "State one condition necessary for equili",
+  "answer": "forces up = forces down or clo"
+ },
+ {
+  "id": "phys-2025-ol-q6-g",
+  "ask": "Why does the north pole of a magnet, tha",
+  "answer": "due to Earth’s magnetic field"
+ },
+ {
+  "id": "phys-2025-ol-q7-ii",
+  "ask": "State the SI unit for force.",
+  "answer": "newton"
+ },
+ {
+  "id": "phys-2025-ol-q1-ii",
+  "ask": "Describe how the student measured the ma",
+  "answer": "(put on) mass balance"
+ },
+ {
+  "id": "phys-2025-ol-q2-iii",
+  "ask": "State one quantity that must be kept con",
+  "answer": "temperature"
+ },
+ {
+  "id": "phys-2025-ol-q4-vi",
+  "ask": "State one safety precaution the student",
+  "answer": "wear heat proof gloves, safety"
+ },
+ {
+  "id": "phys-2025-ol-q13-iv",
+  "ask": "An electric kettle has a power rating of",
+  "answer": "13 A",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2025-ol-q14a-i",
+  "ask": "Explain what is meant by energy.",
+  "answer": "the ability to do work"
+ },
+ {
+  "id": "phys-2025-ol-q14b-i",
+  "ask": "Explain what is meant by the Doppler eff",
+  "answer": "(apparent) change in frequency"
+ },
+ {
+  "id": "phys-2025-ol-q14c-iii",
+  "ask": "State one use of an electroscope.",
+  "answer": "detecting or measuring charge"
+ },
+ {
+  "id": "phys-2025-ol-q8-v",
+  "ask": "Does a sound wave travel faster in a sol",
+  "answer": "solid",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2025-ol-q9-viii",
+  "ask": "State one advantage of using fibre optic",
+  "answer": "greater bandwidth, etc."
+ },
+ {
+  "id": "phys-2025-ol-q10-v",
+  "ask": "State one effect of an electric current.",
+  "answer": "heating"
+ },
+ {
+  "id": "phys-2025-ol-q11-iii",
+  "ask": "Calculate the temperature of the living",
+  "answer": "292 – 273 = 19 °C"
+ },
+ {
+  "id": "phys-2025-ol-q11-ix",
+  "ask": "A solar cell can be used to charge a mob",
+  "answer": "time = 1200 s"
+ },
+ {
+  "id": "phys-2025-ol-q12b-iii",
+  "ask": "State a suitable fuel used in a nuclear",
+  "answer": "uranium"
+ },
+ {
+  "id": "phys-2025-ol-q13-i",
+  "ask": "Name a common material used to conduct e",
+  "answer": "copper",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2025-ol-q8-viii",
+  "ask": "Describe an experiment to show that soun",
+  "answer": "apparatus"
+ },
+ {
+  "id": "phys-2025-ol-q3-i",
+  "ask": "Draw a labelled diagram of the arrangeme",
+  "answer": "block",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2025-ol-q9-vi",
+  "ask": "Draw a labelled diagram to show how a ra",
+  "answer": "two materials of the differing"
+ }
+]
