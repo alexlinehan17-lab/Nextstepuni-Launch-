@@ -1,7 +1,7 @@
 {
   "accounting": {
     "cards": 1365,
-    "contentHash": "560c8b4f36e7a7de",
+    "contentHash": "613a9f2bdeb0486a",
     "coveragePct": 100.0,
     "covered": 1365,
     "excluded": 0,
@@ -46,7 +46,7 @@
   },
   "applied-maths": {
     "cards": 1486,
-    "contentHash": "03089387648f07d9",
+    "contentHash": "f015af7cba454cda",
     "coveragePct": 100.0,
     "covered": 1486,
     "excluded": 0,
@@ -184,7 +184,7 @@
   },
   "construction-studies": {
     "cards": 1261,
-    "contentHash": "440a5f642727d0ed",
+    "contentHash": "c95372f8985a6f0a",
     "coveragePct": 100.0,
     "covered": 845,
     "excluded": 0,
