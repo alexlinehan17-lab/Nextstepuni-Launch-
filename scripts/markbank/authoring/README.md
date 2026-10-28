@@ -244,10 +244,21 @@ subject-specific generators.
   add up to its total, else the question's rows shared out to its tasks in
   paper order; a task they cannot be made to fit, or a grid the geometry
   cannot label, keeps its crop and stepper and is listed with its reason in
-  `authored/accounting-rows-residue.json`. The 2022 schemes embed subset
+  `authored/accounting-rows-residue.json`. A part heading's bracketed total
+  ("(a) Sales Budget [16]") prices nothing when priced lines follow it, and is
+  a theory part's one priced line when none do; a heading glued to its title
+  ("(b)Trading") is split; the page number at the page's edge is not a boxed
+  total; a part's total printed alone at the right margin under its block,
+  or above it on the line before its heading, prices that block; a span that
+  prints no mark but holds the part's text is a block row before the greedy
+  share can take another part's rows; an "Alternative" solution prices
+  nothing until the next part; a page printed sideways (2014 OL Q3, 2019 HL
+  Q8–9, 2025 HL Q7) is read in its own frame. The 2022 schemes embed subset
   fonts with no ToUnicode map; `acc_glyphs_2022.py` derives
   `glyphmap-accounting-2022.json` from word evidence (never hand-typed) and
-  `acc_rows.py` reads those pages glyph by glyph through it.
+  `acc_rows.py` reads those pages glyph by glyph through it; on those pages a
+  mark is "(3)" or a bare digit beside its figure, mid-line or in a marks
+  column, and a figure with its mark glued on ("24,000(1)") is two tokens.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.
