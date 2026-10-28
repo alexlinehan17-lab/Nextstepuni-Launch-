@@ -50,6 +50,8 @@ const PINS: Record<string, [number, number, number, string, string]> = {
     '8bd4e67afb47942be5dc8087860322d606b05a71009d89d2715a0f8fc7ab4b48'],
   '2023-hl': [128, 128, 114, 'aabc53d82a590d2c96556ee256a80f130cea2c2fea7b2b0bbae3f67065dab2a1',
     '9f610bf3f7ce51bdd7ad7b438cd0d5e92ee9cbd6aa10c3f961b081528aac8020'],
+  '2022-hl': [128, 128, 118, '8b9b84d905e1d09691e115178f3d563116233928d075fcea9ffdafe387f26798',
+    '7fd0309754396d9091b6dd2d15523d099a469c8d09078a43f145ef2c775e64b3'],
 };
 
 type Card = (typeof PHYS_HIGHER)[number] & {

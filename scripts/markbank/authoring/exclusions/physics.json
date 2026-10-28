@@ -53,25 +53,5 @@
     "ref": "2021 OL Q14(c)(iii)",
     "reason": "The scheme credits the drawn figure with no separable wording — 'correct diagram' names nothing a card can lift (contrast Q13(h), whose scheme itemises the drawing's components and was carded).",
     "evidence": "Scheme (2021-ol.md, Q14(c)): '(iii) Draw a diagram to show the magnetic field around a current-carrying conductor. 6 or3 correct diagram 6 partial answer (3)'."
-  },
-  {
-    "ref": "2022 HL Q10(ii)",
-    "reason": "Nuclear equation set in a bold math font whose text layer doubles every glyph; no legible marking point can be lifted. Same class as the Chemistry formulae already recorded as font-mangled (and already recorded in the script's docstring).",
-    "evidence": "Scheme answer line reads '𝑷𝑷𝑷𝑷 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐𝟐𝟐 + 𝟐𝟐𝒏𝒏 𝟎𝟎 𝟏𝟏 → 𝑷𝑷𝑷𝑷 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐 [(5 × 1) + 1]' where the printed page shows Pu-239 + 2n → Pu-241 with nuclide super/subscripts."
-  },
-  {
-    "ref": "2022 HL Q10(iii)",
-    "reason": "Same font-mangled nuclear equation class as Q10(ii): the beta-decay equation's nuclide symbols come out as doubled bold glyphs.",
-    "evidence": "Scheme answer line reads '𝑷𝑷𝑷𝑷 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐 → 𝑨𝑨𝑨𝑨 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐 + 𝒆𝒆 −𝟏𝟏 𝟎𝟎 [7 × 1]' where the page shows Pu-241 → Am-241 + an electron."
-  },
-  {
-    "ref": "2022 HL Q12(a)(ii)",
-    "reason": "Same font-mangled nuclear equation class: the lithium-7 + proton → 2 alpha equation's symbols come out as doubled bold glyphs, so no legible answer can be lifted.",
-    "evidence": "Scheme answer line reads '𝑳𝑳𝑳𝑳 𝟑𝟑 𝟕𝟕 + 𝒑𝒑 𝟏𝟏 𝟏𝟏 →𝟐𝟐𝑯𝑯𝑯𝑯 𝟐𝟐 𝟒𝟒 [9 × 1]' where the page shows ⁷Li + ¹p → 2 ⁴He."
-  },
-  {
-    "ref": "2022 HL Q4(iii)",
-    "reason": "Question wording is font-mangled in both documents: the stacked 1/f fraction in the ask cannot be lifted legibly, so the card's questionText would ship mojibake. The scheme's answer lines ('values for 1/f', 'labelled axes', 'correct points plotted', 'line of best fit') are clean, but lib lifts quest",
-    "evidence": "Paper text layer gives 'Draw a graph to show the relationship between l and ଵ ௙.' (Indic glyphs standing in for the typeset fraction 1/f, confirmed against paper page 4); the scheme's own reprint splits it the same way, as 'Draw a graph to show the relationship between l and 1' + '𝑓𝑓.'"
   }
 ]

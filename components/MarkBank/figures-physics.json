@@ -1,4 +1,287 @@
 {
+ "physics-2022-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q1-table.png",
+  "md5": "d49e8f197e710a48c5a00aa373b4abbb",
+  "alt": "Table of the recorded data: position on metre stick 22.5 cm, 32.1 cm, 72.2 cm, 81.3 cm; force (N) 2.85, 2.00, 3.00, 3.40; direction upwards, downwards, downwards, upwards.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(vi)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   84,
+   410,
+   513,
+   517
+  ]
+ },
+ "physics-2022-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q2-table.png",
+  "md5": "c650a1deca91d5cd4916d99e15860136",
+  "alt": "Table of the recorded data: l (cm) 15.0, 20.0, 25.0, 30.0, 35.0, 40.0; p (kPa) 360, 227, 214, 178, 154, 136.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(vi)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   98,
+   120,
+   499,
+   178
+  ]
+ },
+ "physics-2022-hl-q2iv-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q2iv-scheme-table.png",
+  "md5": "3e802529ac9c6c89891f6cdd42d181fc",
+  "alt": "The marking scheme's table of values: 1/l (cm⁻¹) 0.067, 0.05, 0.04, 0.033, 0.029, 0.025; 1/p (kPa⁻¹) 0.0028, 0.0044, 0.0047, 0.0056, 0.0065, 0.0074.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q2(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   90,
+   384,
+   505,
+   433
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q3-table.png",
+  "md5": "9506a3ece1a6e215fa9f8ca2ef8d08ba",
+  "alt": "Table of the recorded data: i (degrees) 30, 40, 50, 60, 70, 80; r (degrees) 19, 27, 32, 36, 40, 44.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   98,
+   485,
+   498,
+   542
+  ]
+ },
+ "physics-2022-hl-q3iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q3iii-scheme-table.png",
+  "md5": "4e55ded05d738786714d0a52ff702bb1",
+  "alt": "The marking scheme's table of values: sin i 0.5, 0.64, 0.77, 0.87, 0.94, 0.98; sin r 0.33, 0.45, 0.53, 0.59, 0.64, 0.69.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q3(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   98,
+   386,
+   492,
+   426
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q4-table.png",
+  "md5": "ebb8b802d1593f1729b05db90312b7d9",
+  "alt": "Table of the recorded data: f (Hz) 256, 288, 320, 341, 384, 480; l (cm) 29.2, 25.5, 22.6, 20.9, 18.1, 13.7.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   98,
+   136,
+   499,
+   193
+  ]
+ },
+ "physics-2022-hl-q4iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q4iii-question.png",
+  "md5": "e2f82eee2a184a885168d7435804fb23",
+  "alt": "The printed Question 4 up to part (iii): the speed of sound experiment, its table of f (Hz) 256, 288, 320, 341, 384, 480 against l (cm) 29.2, 25.5, 22.6, 20.9, 18.1, 13.7, and parts (i) to (iii), (iii) asking for a graph of l against 1 over f, set as a fraction, with its note that the line of best fit should not go through the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   25,
+   52,
+   548,
+   304
+  ]
+ },
+ "physics-2022-hl-q4iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q4iii-scheme-table.png",
+  "md5": "7ac95d85a85b9081fae349206272ecbd",
+  "alt": "The marking scheme's table of values: 1/f (Hz⁻¹) 0.0039, 0.0035, 0.0031, 0.0029, 0.0026, 0.0021.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   98,
+   437,
+   494,
+   462
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q5-table.png",
+  "md5": "56347f23ac2f63882e24c20a86a495ea",
+  "alt": "Room temperature = 17.0 °C, then the table of the recorded data: I (A) 1.0, 2.0, 3.0, 3.5, 4.0, 4.5; θ (°C) 19.2, 26.1, 36.6, 44.4, 53.1, 62.1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(iv)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   98,
+   528,
+   499,
+   613
+  ]
+ },
+ "physics-2022-hl-q5iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q5iii-scheme-table.png",
+  "md5": "40ba88961d5a280149a7519114384444",
+  "alt": "The marking scheme's table of values: I² (A²) 1.0, 4.0, 9.0, 12.25, 16.0, 20.25; Δθ (K) 2.2, 9.1, 19.6, 27.4, 36.1, 45.1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q5(iii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   98,
+   445,
+   500,
+   496
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q6l-scheme-gate": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q6l-scheme-gate.png",
+  "md5": "a5f8edba00ba7cf1fa144821affd23f8",
+  "alt": "The marking scheme's two drawings of the AND gate symbol, separated by a slash: a D-shaped gate with two inputs on the left and one output on the right, and a square box marked & with two inputs and one output.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q6(l) — and-gate",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   80,
+   521,
+   272,
+   584
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q8v-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q8v-scheme.png",
+  "md5": "16308869f1717055e21813e70481e267",
+  "alt": "The marking scheme's diagram of a p-n junction: a block with P on the left and N on the right, a column of minus signs on the p side of the interface and a column of plus signs on the n side, and arrows from the word neutral to the outer part of each side.",
+  "lettersVisible": [
+   "P",
+   "N"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(v)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   364,
+   428,
+   494,
+   491
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q8vii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q8vii-scheme.png",
+  "md5": "f7dce2eaa3d1d89342e230a669741df3",
+  "alt": "The marking scheme's sketch: current I against voltage V, the current staying at zero and then rising in a dashed curve, with an arrow pointing down to the voltage where the curve leaves the axis.",
+  "lettersVisible": [
+   "I",
+   "V"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(vii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   261,
+   606,
+   356,
+   678
+  ],
+  "solution": true
+ },
+ "physics-2022-hl-q9c-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2022-hl-q9c-circuit.png",
+  "md5": "4b089950d5263a74503dbb5e9b64652f",
+  "alt": "Circuit diagram: a 12 V battery in a loop with a resistor X = 1 Ω in series with two resistors in parallel, Y = 6 Ω on the upper branch and Z = 3 Ω on the lower branch.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q9(c)(ii)(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2022 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   145,
+   340,
+   450,
+   574
+  ]
+ },
  "physics-2023-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2023-hl-q1-table.png",
   "md5": "e1fcf589c3d06127be8d333556a06a81",
