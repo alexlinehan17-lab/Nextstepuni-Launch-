@@ -519,7 +519,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       cut += 1;
       const pages = card.rubric.solution.pages;
       const regions = card.rubric.solution.regions ?? [];
-      let last: { p: number; bottom: number } | null = null;
+      let last: { p: number; top: number; bottom: number } | null = null;
       for (const item of steps) {
         expect(item.region, `${card.id}/${item.id}: no region`).toBeDefined();
         const { p, r } = item.region!;
@@ -531,12 +531,17 @@ describe('answer clarity: priced answers are rows, not prose', () => {
           expect(r[0] >= whole[0] - 1e-6 && r[2] <= whole[2] + 1e-6 && r[1] >= whole[1] - 1e-6 && r[3] <= whole[3] + 1e-6, `${card.id}/${item.id}: outside the solution`).toBe(true);
         }
         expect(r[3] - r[1], `${card.id}/${item.id}: thinner than a line`).toBeGreaterThanOrEqual(0.012);
-        if (last && last.p === p) expect(r[1], `${card.id}/${item.id}: out of order`).toBeGreaterThanOrEqual(last.bottom - 0.01);
-        last = { p, bottom: r[3] };
+        // In reading order; two steps the scheme prices on one line ("5, 5"), or beside one figure, share that band exactly.
+        const shared = last !== null && last.p === p && r[1] === last.top && r[3] === last.bottom;
+        if (last && last.p === p && !shared) expect(r[1], `${card.id}/${item.id}: out of order`).toBeGreaterThanOrEqual(last.bottom - 0.01);
+        last = { p, top: r[1], bottom: r[3] };
       }
     }
-    // 1,347 cut, 52 priced by a scale over the whole solution, 87 in the residue (2026-10-27, residue wave).
-    expect([cut, scaleOnly, residue.size]).toEqual([1347, 52, 87]);
+    // 1,434 cut and 52 priced by a scale over the whole solution (2026-10-28, exclusions wave): every card with published steps is cut.
+    // A floor, not an exact count, so a later lift never needs a re-pin; the residue is pinned by id (none).
+    expect(cut).toBeGreaterThanOrEqual(1434);
+    expect(scaleOnly).toBe(52);
+    expect([...residue].sort()).toEqual([]);
     for (const card of appliedMathsResidue.cards) expect(card.reason.length, card.id).toBeGreaterThan(0);
   });
 
