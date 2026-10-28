@@ -442,7 +442,7 @@ def _clip_reads(year, level):
 
     def walk(x):
         if isinstance(x, dict):
-            if x.get('type') == 'geo' and x.get('kind') in ('tokens', 'tokens-x', 'fraction'):
+            if x.get('type') == 'geo' and x.get('kind') in ('tokens', 'tokens-x', 'fraction', 'equation'):
                 specs.append(x)
             for v in x.values():
                 walk(v)
@@ -453,7 +453,7 @@ def _clip_reads(year, level):
     out = []
     for spec in specs:
         value = R.read_geo(lifter, spec, spec.get('page'))
-        if (len(value) >= 12 or spec.get('kind') == 'fraction') and value not in out:
+        if (len(value) >= 12 or spec.get('kind') in ('fraction', 'equation')) and value not in out:
             out.append(value)
     return out
 

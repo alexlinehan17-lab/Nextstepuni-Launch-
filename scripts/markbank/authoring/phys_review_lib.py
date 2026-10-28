@@ -80,14 +80,20 @@ _TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*|\([Aa]ny\s+\w+\)\s*)?(?:\d+\(\d\
 # "2 × 3", "3 + 6", and a menu's "any two [4 + 4]".
 _NUM = r'\d{1,2}'
 _SUM = rf'{_NUM}(?:\s*[+×x]\s*{_NUM})*'
-CELL = re.compile(rf'(?:(?:[Aa]ny|ANY)\s+(?:one|two|three|four|five|six|ONE|TWO|THREE|FOUR|FIVE|SIX)\s+)?'
-                  rf'(?:\[\s*{_SUM}\s*\]|\(\s*{_SUM}\s*\)|{_NUM}(?:\s*(?:or|\+|×|x)\s*\(?{_NUM}\)?)*)')
+# The menu's tally may sit before the bracket ("any two lines [4 + 3]") or
+# inside it ("[any two 6 + 3]", "[any 3 x 3]"); 2025 Ordinary misprints one
+# cell "[7)".
+_ANY = r'(?:[Aa]ny|ANY)\s+(?:(?:one|two|three|four|five|six|ONE|TWO|THREE|FOUR|FIVE|SIX)\s+)?'
+CELL = re.compile(rf'(?:{_ANY}(?:[a-z]+\s+)?)?'
+                  rf'(?:\[\s*(?:{_ANY})?{_SUM}\s*[\])]|\(\s*{_SUM}\s*\)|{_NUM}(?:\s*(?:or|\+|×|x)\s*\(?{_NUM}\)?)*)')
 
 
 def cell_value(text):
     """What a printed cell is worth in full: "[3 + 2]" 5, "any two [4 + 4]" 8,
     "6 or 3" 6 (the full mark; the second is the partial), "2 × 3" 6."""
-    t = re.sub(r'^(?:[Aa]ny|ANY)\s+\w+\s+', '', text.strip()).strip('[]() ')
+    m = re.search(r'\[([^\]\)]*)[\])]', text)
+    t = m.group(1) if m else text.strip()
+    t = re.sub(rf'^\s*{_ANY}', '', t).strip('[]() ')
     t = re.split(r'\s+or\s+', t)[0].strip('() ')
     total = 0
     for term in re.split(r'\s*\+\s*', t):
@@ -270,13 +276,13 @@ def _page_rows(page, paper=False, total_x=None):
                     continue
             keep.append(r)
         raw = keep
-    bracketed = re.compile(r'(?:(?:[Aa]ny|ANY)\s+\w+\s+)?[\[(].*[\])]')
+    bracketed = re.compile(r'(?:(?:[Aa]ny|ANY)\s+\w+\s+(?:[a-z]+\s+)?)?[\[(].*[\])]')
 
     def is_cell(r):
         if not _CELL_ONLY.fullmatch(r[0]):
             return False
         if bracketed.fullmatch(r[0]):
-            return r[1][0] >= 0.6 * width
+            return r[1][0] >= 0.55 * width
         # A bare number ("6", "6 or 3") is a cell only in the right-hand marks
         # column of a SCHEME; a paper prints its marks in brackets.
         return not paper and r[1][0] >= 0.8 * width
@@ -330,6 +336,11 @@ def _page_lines(page, paper=False):
 
 
 def _norm(line):
+    # A "Ɵ" standing alone (no letter either side) is a THETA: 2017 Ordinary's
+    # scheme sets "with its temperature Ɵ." in Calibri, 2025 Higher's
+    # "Ɵ/°C = T/K – 273.15" in Times New Roman. Between letters the same code
+    # point is Calibri's "ti" ligature ("invesƟgated"), which unligature restores.
+    line = re.sub(r'(?<![A-Za-z])\u019f(?![A-Za-z])', '\u03b8', line)
     line = unligature(line.replace(' ', ' ').replace(' ', ' '))
     return re.sub(r'\s+', ' ', line).strip()
 
@@ -629,7 +640,7 @@ def G(kind, page=None, clip=None, expect=None, **kw):
 def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
       qfig=None, labels=None, source_pages=None, route=None, notes='', decision='',
       paper_pages=None, scheme_pages=None, leaf=None, excluded=None, evidence=None,
-      item=None, id=None, tariff=None):
+      item=None, id=None, tariff=None, cells=None):
     """One reviewed task -> one card, or, with `excluded` (the reason) and
     `evidence` (what the SEC documents print), a reviewed and priced task kept
     out of the bank on purpose and recorded as excluded.
@@ -650,7 +661,7 @@ def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
                 source_pages=source_pages, route=route, notes=notes, decision=decision,
                 paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf,
                 excluded=excluded, evidence=evidence, id=id,
-                item=item, tariff=tariff)
+                item=item, tariff=tariff, **({'cells': cells} if cells else {}))
 
 
 def L(letter, meaning_sel, asked):
@@ -812,6 +823,13 @@ def fraction_text(page, clip):
                 if not (clip.x0 <= cx <= clip.x1 and clip.y0 <= cy <= clip.y1):
                     continue
                 spans.append(sp)
+    # A root sign's overbar is drawn as a bar too (2025 Higher p21 "I₀/√2": a
+    # bar over the "2" whose left end meets the "√"). It is no fraction: the
+    # radicand stays where it is printed, under the root.
+    roots = [b for b in bars if any(sp['text'].rstrip().endswith('\u221a')
+                                    and abs(sp['bbox'][2] - b.x0) <= 2
+                                    and sp['bbox'][1] - 1 <= b.y0 <= sp['bbox'][3] + 1 for sp in spans)]
+    bars = [b for b in bars if b not in roots]
     if not bars:
         raise LookupError(f'no fraction bar inside {list(clip)}')
     owner = {}
@@ -845,3 +863,55 @@ def fraction_text(page, clip):
         lo = bars[k].x1 if k < len(bars) else hi
     tokens.sort()
     return _norm(' '.join(t for _, t in tokens))
+
+
+# ------------------------------------------------------- nuclear equations --
+# A nuclide's mass number is printed small ABOVE and its atomic number small
+# BELOW, both to the LEFT of its symbol, as two separate text objects the text
+# layer hands back out of order ("H + Li -> He + He", then "2 4 2 4 3 7 1 1").
+# equation_text() puts each stack back in front of the symbol it stands at:
+# "¹₁H + ⁷₃Li → ⁴₂He + ⁴₂He". A stack with no symbol close on its right is
+# a postscript of the symbol before it (a charge, "β⁻"). Every glyph is the
+# SEC's; the Unicode super/subscripts only say where it was printed.
+
+def equation_text(page, clip):
+    clip = fitz.Rect(*clip)
+    spans = []
+    for b in page.get_text('dict', clip=clip)['blocks']:
+        for ln in b.get('lines', []):
+            for sp in ln['spans']:
+                r = fitz.Rect(sp['bbox'])
+                cx, cy = (r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2
+                if clip.x0 <= cx <= clip.x1 and clip.y0 <= cy <= clip.y1:
+                    spans.append(sp)
+    if not any(sp['text'].strip() for sp in spans):
+        raise LookupError(f'nothing printed inside {list(clip)}')
+    size = max(sp['size'] for sp in spans if sp['text'].strip())
+    main = [sp for sp in spans if sp['size'] >= 0.85 * size]
+    small = [sp for sp in spans if sp['size'] < 0.85 * size and sp['text'].strip()]
+    mid = sorted((sp['bbox'][1] + sp['bbox'][3]) / 2 for sp in main if sp['text'].strip())
+    cy = mid[len(mid) // 2]
+    stacks = []
+    for sp in sorted(small, key=lambda s: s['bbox'][0]):
+        if stacks and sp['bbox'][0] < stacks[-1]['x1'] - 0.5:
+            st = stacks[-1]
+            st['spans'].append(sp)
+            st['x1'] = max(st['x1'], sp['bbox'][2])
+        else:
+            stacks.append({'x0': sp['bbox'][0], 'x1': sp['bbox'][2], 'spans': [sp]})
+
+    def script(st):
+        up = [s for s in st['spans'] if (s['bbox'][1] + s['bbox'][3]) / 2 < cy]
+        lo = [s for s in st['spans'] if (s['bbox'][1] + s['bbox'][3]) / 2 >= cy]
+        txt = lambda ss: _norm(''.join(_span_text(sorted(ss, key=lambda s: s['bbox'][0]), i)
+                                       for i in range(len(ss))))
+        u, l = txt(up), txt(lo)
+        return (_script(u, SUP_MAP) or u if u else '') + (_script(l, SUB_MAP) or l if l else '')
+    tokens = [(sp['bbox'][0], _span_text([sp], 0), 'main') for sp in sorted(main, key=lambda s: s['bbox'][0])]
+    glyphs = [t for t in tokens if t[1].strip()]
+    for st in stacks:
+        after = [t for t in glyphs if 0 <= t[0] - st['x1'] <= 3]
+        x = st['x1'] - 0.01 if after else st['x0']
+        tokens.append((x, script(st), 'script'))
+    tokens.sort(key=lambda t: t[0])
+    return _norm(''.join(t for _, t, _ in tokens))

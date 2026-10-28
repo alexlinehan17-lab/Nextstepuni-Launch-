@@ -225,6 +225,13 @@ def read_geo(lifter, spec, sp):
             value = B.fraction_text(src.doc[page - 1], clip)
         except LookupError as e:
             raise Refusal(f'fraction p{page}: {e}')
+    elif kind == 'equation':
+        # A nuclear equation (or one nuclide of it), each nuclide's mass and
+        # atomic numbers put back where they are printed (equation_text).
+        try:
+            value = B.equation_text(src.doc[page - 1], clip)
+        except LookupError as e:
+            raise Refusal(f'equation p{page}: {e}')
     elif kind == 'tokens':
         words = sorted(src.words(page, clip), key=lambda w: (round(w[0].y0 / 8), w[0].x0))
         # `strip` drops the printed answer line a filled-in blank sits on
@@ -258,6 +265,8 @@ def read_geo(lifter, spec, sp):
         value = pairs[spec['index']]
     else:
         raise Refusal(f'unknown geometry kind {kind!r}')
+    # A standalone "Ɵ" is a theta (phys_review_lib._norm), wherever it is read.
+    value = re.sub(r'(?<![A-Za-z])\u019f(?![A-Za-z])', '\u03b8', value)
     if value != spec['expect']:
         raise Refusal(f'{kind} p{page}: glyph positions read {value!r}, reviewer read '
                       f'{spec["expect"]!r}')
