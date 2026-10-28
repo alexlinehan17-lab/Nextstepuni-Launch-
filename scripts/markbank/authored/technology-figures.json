@@ -1,5 +1,89 @@
 [
  {
+  "file": "technology-2020-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a worm and worm wheel in a blue housing, the steel worm above meshing with the brass wheel below.",
+  "questionRef": "2020 HL Section A Q4"
+ },
+ {
+  "file": "technology-2020-HL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a clear acrylic table menu holder, a folded sheet forming an upright sleeve on a flat base.",
+  "questionRef": "2020 HL Section A Q7"
+ },
+ {
+  "file": "technology-2020-HL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table headed Part, Material and Reason for choice of material, with rows Composite layer (filled in: Fibreglass, Strong/flexible material), Wooden core, Metal edge and Plastic coversheet left blank.",
+  "questionRef": "2020 HL Section A Q10"
+ },
+ {
+  "file": "technology-2020-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of an LED bulb in exploded view: the frosted dome, the LED board, the finned heatsink body with its driver and the screw cap, stacked apart vertically.",
+  "questionRef": "2020 HL Section A Q13"
+ },
+ {
+  "file": "technology-2020-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Outline line drawing of an all-in-one printer in pictorial view: the document feeder on top, the control panel at the front right and the paper tray below.",
+  "questionRef": "2020 HL Section A Q15"
+ },
+ {
+  "file": "technology-2020-HL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of the Lightcycle lamp, a tall white post with a horizontal arm, arrows A (vertical, at the arm) and B (rotation, at the base), with a circle marking the joint.",
+  "questionRef": "2020 HL Section B Q2(b)"
+ },
+ {
+  "file": "technology-2020-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a food processor drive unit: a motor with two white gears labelled A and B, captioned Each gear has 50 teeth and Food processor drive unit.",
+  "questionRef": "2020 HL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2020-HL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a red and silver hand blender standing upright, its cable coiled beside the handle.",
+  "questionRef": "2020 HL Section B Q3(c)"
+ },
+ {
+  "file": "technology-2020-HL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two photographs of food boxes: Box A, a clamshell made from expanded polystyrene, and Box B, a red folding carton made from cardboard, each captioned.",
+  "questionRef": "2020 HL Section B Q3(d)"
+ },
+ {
+  "file": "technology-2020-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a sheet metal cutter with a double acting pneumatic cylinder mounted on top, labelled by an arrow.",
+  "questionRef": "2020 HL Section C Q1(d)"
+ },
+ {
+  "file": "technology-2020-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An incomplete op-amp circuit between +9 V and 0 V rails: a 66 kΩ and a 33 kΩ resistor in series as a potential divider to point A on the inverting input of an IC, the non-inverting input and output open.",
+  "questionRef": "2020 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2020-HL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Shaded drawing of a flat circular disc with a square hole through its centre.",
+  "questionRef": "2020 HL Section C Q5(c)"
+ },
+ {
   "file": "technology-2021-HL-paper-secA-q4-art.png",
   "kind": "figure",
   "truncated": false,
@@ -812,48 +896,6 @@
   "questionRef": "2026 OL Section A Q4"
  },
  {
-  "file": "technology-2020-HL-paper-secA-q13-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of an LED bulb in exploded view: the frosted dome, the LED board, the finned heatsink body with its driver and the screw cap, stacked apart vertically.",
-  "questionRef": "2020 HL Section A Q13"
- },
- {
-  "file": "technology-2020-HL-paper-secB-q2b-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of the Lightcycle lamp, a tall white post with a horizontal arm, arrows A (vertical, at the arm) and B (rotation, at the base), with a circle marking the joint.",
-  "questionRef": "2020 HL Section B Q2(b)"
- },
- {
-  "file": "technology-2020-HL-paper-secB-q3b-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of a food processor drive unit: a motor with two white gears labelled A and B, captioned Each gear has 50 teeth and Food processor drive unit.",
-  "questionRef": "2020 HL Section B Q3(b)"
- },
- {
-  "file": "technology-2020-HL-paper-secB-q3c-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of a red and silver hand blender standing upright, its cable coiled beside the handle.",
-  "questionRef": "2020 HL Section B Q3(c)"
- },
- {
-  "file": "technology-2020-HL-paper-secC-q1d-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "Colour photograph of a sheet metal cutter with a double acting pneumatic cylinder mounted on top, labelled by an arrow.",
-  "questionRef": "2020 HL Section C Q1(d)"
- },
- {
-  "file": "technology-2020-HL-paper-secC-q2b-art.png",
-  "kind": "figure",
-  "truncated": false,
-  "description": "An incomplete op-amp circuit between +9 V and 0 V rails: a 66 kΩ and a 33 kΩ resistor in series as a potential divider to point A on the inverting input of an IC, the non-inverting input and output open.",
-  "questionRef": "2020 HL Section C Q2(b)"
- },
- {
   "file": "technology-2020-HL-paper-secC-q2d-art.png",
   "kind": "figure",
   "truncated": false,
@@ -943,6 +985,13 @@
   "truncated": false,
   "description": "A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).",
   "questionRef": "2025 OL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2020-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A one-row table of website analytics: Sessions 624,935, Users 299,488, Page Views 5,826,244 and Pages per Session 9.32.",
+  "questionRef": "2020 HL Section A Q12"
  },
  {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
@@ -1587,6 +1636,22 @@
   "questionRef": "2025 OL Section C Q2(b)(ii)"
  },
  {
+  "file": "technology-2022-OL-scheme-secC-q2d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2022 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: a completed truth table captioned 'Truth Table', with a yellow header row A, B, C, D and the C and D columns in red. Rows (A B, then C D): 0 0 gives 0 1; 0 1 gives 1 0; 1 0 gives 1 0; 1 1 gives 1 0.",
+  "solution": true,
+  "questionRef": "2022 OL Section C Q2(d)(ii)"
+ },
+ {
+  "file": "technology-2024-HL-scheme-secC-q4b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL Section C Q4(b)(ii), as the State Examinations Commission printed it: a graph of Cost (€) on the vertical axis, 0 to 700 in steps of 100, against Quantity on the horizontal axis, 0 to 60 in steps of 10. A red line for option A rises in a straight line from the origin; a blue line for option B starts at about 500 and rises gently. The two lines cross at a quantity of 50, where a dashed vertical line is drawn and the point (50,507.5) is labelled with an arrow; the point (50,425) on the red line is labelled with a second arrow below it, and the crossing is marked (BEQ) at the right.",
+  "solution": true,
+  "questionRef": "2024 HL Section C Q4(b)(ii)"
+ },
+ {
   "file": "technology-2025-OL-scheme-secC-q2d-ii.png",
   "kind": "figure",
   "truncated": false,
@@ -1601,5 +1666,53 @@
   "description": "The marking scheme's own answer to 2022 HL Section C Q1(d)(i), as the State Examinations Commission printed it: a pneumatic circuit in which a double-acting cylinder is fed through two flow control valves from a 5/2 valve, itself piloted by two spring-return 3/2 push-button valves.",
   "solution": true,
   "questionRef": "2022 HL Section C Q1(d)(i)"
+ },
+ {
+  "file": "technology-2020-HL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2020 HL Section A Q7, as the State Examinations Commission printed it: a work breakdown structure of four boxes in a row joined by arrows, Mark out sheet material, Cut sheet material, Edge finish sheet material and Bend sheet material.",
+  "solution": true,
+  "questionRef": "2020 HL Section A Q7"
+ },
+ {
+  "file": "technology-2020-HL-scheme-secA-q13.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2020 HL Section A Q13, as the State Examinations Commission printed it: a red arrow pointing at the assembled bulb, drawn as a shaded pictorial view with its dome, finned body and screw cap together.",
+  "solution": true,
+  "questionRef": "2020 HL Section A Q13"
+ },
+ {
+  "file": "technology-2020-HL-scheme-secB-q2d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2020 HL Section B Q2(d)(i), as the State Examinations Commission printed it: a product life cycle graph of sales against time, a curve rising, peaking and falling with the four stages marked off by dashed lines.",
+  "solution": true,
+  "questionRef": "2020 HL Section B Q2(d)(i)"
+ },
+ {
+  "file": "technology-2020-HL-scheme-secC-q1d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2020 HL Section C Q1(d)(i), as the State Examinations Commission printed it: a pneumatic circuit with a double-acting cylinder fed through two flow control valves from a 5/2 valve with its air inlet, and beside it an alternative solution, the cylinder driven by two spring-return 3/2 valves.",
+  "solution": true,
+  "questionRef": "2020 HL Section C Q1(d)(i)"
+ },
+ {
+  "file": "technology-2020-HL-scheme-secC-q4b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2020 HL Section C Q4(b)(i), as the State Examinations Commission printed it: a graph of Cost against Quantity, a red Skilled Labour line from the origin and a green Unskilled Labour line from about 3,300, crossing at the BEQ marked with a dashed line between 1,250 and 2,500.",
+  "solution": true,
+  "questionRef": "2020 HL Section C Q4(b)(i)"
+ },
+ {
+  "file": "technology-2020-HL-scheme-secC-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2020 HL Section C Q5(b)(ii), as the State Examinations Commission printed it: a sectioned injection moulding machine labelled Plastic hopper, mould, Motor drive and Heated chamber with screw drive.",
+  "solution": true,
+  "questionRef": "2020 HL Section C Q5(b)(ii)"
  }
 ]

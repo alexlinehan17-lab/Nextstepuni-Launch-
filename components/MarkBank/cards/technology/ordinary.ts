@@ -36,7 +36,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-a1-i", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "A", questionRef: "2021 OL Section A Q1(i)",
     stem: "Contactless payment systems are a popular method of payment for goods and services.",
-    questionText: "Outline two benefits for customers who use contactless payment methods when paying for goods or services. 1 2",
+    questionText: "Outline two benefits for customers who use contactless payment methods when paying for goods or services.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two benefits– no need for cash, security, speed, easy-to-use, better customer experience, etc.", marks: 4, openList: true },
@@ -50,7 +50,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-a1-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "A", questionRef: "2021 OL Section A Q1(ii)",
     stem: "Contactless payment systems are a popular method of payment for goods and services.",
-    questionText: "Give two examples of where contactless payment systems are used in everyday life. 1 2",
+    questionText: "Give two examples of where contactless payment systems are used in everyday life.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two applications– grocery shopping, restaurants, fuel filling stations, etc.", marks: 4, openList: true },
@@ -78,7 +78,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-a2-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2021 OL Section A Q2(ii)",
     stem: "The images show the state of the art Connacht GAA air-dome, in Bekan, Co. Mayo. Recently built, this dome is the largest of its kind in the world and is an example of an air-supported shell structure.",
-    questionText: "Suggest two ways its design facilitates the playing of Gaelic games all year round. 1 2",
+    questionText: "Suggest two ways its design facilitates the playing of Gaelic games all year round.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two ways– games are not weather– dependent, large enclosure allows for the flight of a ball to follow its natural trajectory, less maintenance with a synthetic pitch, etc.", marks: 4, openList: true },
@@ -92,7 +92,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-a3-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2021 OL Section A Q3(i)",
     stem: "The images show an orbital sander and disposable sanding discs of various grit size.",
-    questionText: "Give two safety precautions that should be observed when using an orbital sander. 1 2",
+    questionText: "Give two safety precautions that should be observed when using an orbital sander.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two safety precautions– wear ear protection, dust mask/ventilation, hold the sander firmly, empty dust bag when full, etc.", marks: 4, openList: true },
@@ -2228,7 +2228,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2022 OL Section C Q1(d)(ii)",
-    questionText: "Describe, using notes and annotated sketches, what is meant by ‘degrees of freedom’ with reference to robotic devices. Mechanical Gripper",
+    questionText: "Describe, using notes and annotated sketches, what is meant by ‘degrees of freedom’ with reference to robotic devices.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The number of axes along or around which an object can move.", marks: 6, openList: true },
@@ -2377,12 +2377,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2022-ol-c2d", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
-    section: "C", questionRef: "2022 OL Section C Q2(d)(i), (ii)",
-    questionText: "(i) Name the logic gates X and Y. (ii) In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
-    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 10,
+    id: "tech-2022-ol-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 OL Section C Q2(d)(i)",
+    stem: "The graphic shows a combination of two logic gates.",
+    questionText: "Name the logic gates X and Y.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A B C D (i) Name the logic gates X and Y. B 0 0 0 1 X = Or gate, Y = Not gate 0 1 1 0 (ii) In your answerbook, draw and complete 1 0 1 0 the truth table for the combination of logic 1 1 1 0 gates shown", marks: 10, openList: true },
+    { id: "r-1", kind: "point", verbatim: "X = Or gate, Y = Not gate", marks: 4, openList: true },
     ],
     questionFigure: {
           "candId": "technology-2022-OL-paper-secC-q2d-art",
@@ -2391,6 +2392,37 @@ export const CARDS: SecCard[] = [
           "alt": "A logic circuit diagram drawn with two gates. Inputs A and B enter an OR gate labelled X; its output, labelled C, feeds a NOT gate (inverter) labelled Y, whose output is labelled D.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 OL Section C Q2(d)(ii)",
+    stem: "The graphic shows a combination of two logic gates.",
+    questionText: "In your answerbook, draw and complete the truth table for the combination of logic gates shown.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In your answerbook, draw and complete the truth table for the combination of logic gates shown.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q2d-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q2d-art.png",
+          "srcHash": "a5adc9c0ec8e631a25dad3e5d5cd627e",
+          "alt": "A logic circuit diagram drawn with two gates. Inputs A and B enter an OR gate labelled X; its output, labelled C, feeds a NOT gate (inverter) labelled Y, whose output is labelled D.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "technology-2022-OL-scheme-secC-q2d-ii",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-scheme-secC-q2d-ii.png",
+          "srcHash": "7a5b8bf9e3625fc3998e6faf2bc8ed8b",
+          "alt": "The marking scheme's own answer to 2022 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: a completed truth table captioned 'Truth Table', with a yellow header row A, B, C, D and the C and D columns in red. Rows (A B, then C D): 0 0 gives 0 1; 0 1 gives 1 0; 1 0 gives 1 0; 1 1 gives 1 0.",
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -4698,10 +4730,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2024 OL Section B Q3(a)(i)",
     stem: "Jump Aero has unveiled the JA1 Pulse, a vertical take-off and landing aircraft. It is designed to respond to medical emergencies and has a top speed of 463km/h.",
     questionText: "Outline two advantages of using the JA1 Pulse aircraft to respond to a medical emergency.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Outline two advantages to using the JA1 Pulse aircraft to respond to a medical emergency.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Access to difficult terrain, fast response time, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Access to difficult terrain, fast response time, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -5876,11 +5907,10 @@ export const CARDS: SecCard[] = [
     questionText: "ICT (Information and Communications Technology) is used daily in schools for communication, learning, and accessing information. Name two forms of ICT you have used and state the purpose of using each.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ICT (Information and Communication Technology) is used daily in schools for communication, learning, and accessing information.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "ICT: PC/Laptop", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Purpose: to write a portfolio", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "ICT: Solidworks", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "Purpose: Produce working drawings, CAM files for 3D printing/laser cutting, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "ICT: PC/Laptop", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Purpose: to write a portfolio", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "ICT: Solidworks", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "Purpose: Produce working drawings, CAM files for 3D printing/laser cutting, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {

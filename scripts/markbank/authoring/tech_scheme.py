@@ -380,6 +380,22 @@ class TechScheme:
                 continue
 
             rh = ROMAN_HEAD.match(text)
+            while rh and ROMAN_HEAD.match(text[rh.end():]):
+                # "2(d) (i) (ii)": the scheme answers both with drawings and
+                # prints their heads side by side with nothing between. Each
+                # opens an empty part, so the drawings can be bound to them.
+                lines.append((rh.group(1), ''))
+                pages.add(page)
+                text = text[rh.end():]
+                rh = ROMAN_HEAD.match(text)
+            while rh and ROMAN_HEAD.match(text[rh.end():]):
+                # "2(d) (i) (ii)": the scheme answers both with drawings and
+                # prints their heads side by side with nothing between. Each
+                # opens an empty part, so the drawings can be bound to them.
+                lines.append((rh.group(1), ''))
+                pages.add(page)
+                text = text[rh.end():]
+                rh = ROMAN_HEAD.match(text)
             if rh:
                 seen = [r for r, _t in lines if r]
                 roman = rh.group(1)

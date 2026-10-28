@@ -560,4 +560,8 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "geography-2026-hl-p2-q5c-transport-raw-materials": "geography-2026-hl-p2-q5c-labour-transport",
   "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
   "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra": "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+  // Technology 2022 OL C2(d): the shipped card held both romans in one row, the
+  // truth table's cells welded to the asks; now (i) names the gates and (ii) draws
+  // the table against the scheme's crop. Progress on the old id reads from (i).
+  "tech-2022-ol-c2d": "tech-2022-ol-c2d-i",
 };

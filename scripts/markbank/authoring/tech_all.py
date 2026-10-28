@@ -49,7 +49,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import cardlint                                              # noqa: E402
 import paper_census as PC                                    # noqa: E402
-from tech_scheme import TechScheme, cue_score, normalise as SCHEME_NORM                # noqa: E402
+from tech_scheme import TechScheme, cue_score, normalise as SCHEME_NORM, _words as SCHEME_WORDS  # noqa: E402
 from tech_topics import topic_for, topic_for_option          # noqa: E402
 import tech_crops as TC                                      # noqa: E402
 
@@ -72,6 +72,8 @@ NOT_A_POINT = re.compile(
     r'|award\b|allow\b|note:|marks? awarded'
     r'|suggested\b.{0,20}'
     r'|or\b|and\b|etc\.?'
+    # The choice rubric between parts: "Answer 2(c) or 2(d)".
+    r'|answer\s+\d\([a-d]\)\s+(?:and|or)\s+\d\([a-d]\)'
     r'|[^.?!]{0,28}:)\s*$', re.I)
 
 # The examiner's closing remark on a list -- "Suggested elements, other
@@ -631,12 +633,27 @@ def author(bind_figures=True):
                 # text layer welds onto the end of the ask: "...the circuit
                 # shown. Calculation: 40 Ω 10 Ω 10 Ω V 12V". The crop carries
                 # it; the question does not.
+                # The ask as the paper's text layer gives it, lettering and all:
+                # the scheme reprints the same picture, so a "point" that is
+                # one of its labels ("1200 N") is found here and dropped.
+                raw_ask = ask
                 ask = TC.strip_labels(ask, paper_labels) or ask
                 ask = TRAILING_LABEL.sub('', ask).strip()
                 # A picture's lone letter read after the ask's last sentence
                 # ("...direction of arrow A. A"), whether or not its crop is
                 # known: a question never ends in a capital on its own.
                 ask = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', ask)
+                # ...and a short tail of numbers, units or capitalised words
+                # after the last sentence ("...for the display. 90 KG").
+                ask = re.sub(r'(?<=[.?!])\s+(?:[A-Z0-9][^\s.?!,]*\s*){1,3}$', '', ask)
+                # A roman that is a bare term under a lead-in that ends in a
+                # colon -- "Explain the terms:" over "(i) cookie" -- carries the
+                # lead-in, which is printed and is what the student is asked.
+                if roman and len(ask.split()) <= 4 and not re.search(r'[.?!](?:\s|$)', ask):
+                    lead_src = clean(stems.get((section, q, letter)) or stems.get((section, q, None)) or '')
+                    lm = re.search(r'(?:^|[.?!]\s+)([A-Z][^.?!:]{3,60}:)\s*(?:\S+\s*){0,40}$', lead_src)
+                    if lm:
+                        ask = f'{lm.group(1)} {ask}'
 
                 del BACKED_OFF[:]
                 cue, points = split_cue([clean(l) for l in lines], ask)
@@ -736,12 +753,34 @@ def author(bind_figures=True):
                 # rather than answering it: 2021 Higher Q3 marks the term
                 # "'patched'" and heads its answer with the term again, which
                 # shipped as a row telling the student the question.
-                bare = SCHEME_NORM(f'{ask} {question_label(covered)}')
+                bare = SCHEME_NORM(f'{raw_ask} {question_label(covered)}')
                 # At any length: 2022 Ordinary 2(b)(iii) reprints its ask in
                 # 68 characters above the two-word answer "Suitable circuit.",
                 # and a length exemption kept the reprint and lost the answer.
                 kept = [p for p in points
-                        if SCHEME_NORM(p) not in bare or p == backed_off]
+                        if (SCHEME_NORM(p) not in bare
+                            # A reprint that paraphrases by a word -- "Find a
+                            # value of R2" for the paper's "Find the value of
+                            # R2" -- is still the question, not an answer.
+                            # Measured in WORDS, not tokens: a worked line
+                            # ("Mean: 2+3+...+4 = 48 = 4") has one word, which
+                            # the ask also has, and scored as a reprint.
+                            # ...and opening as the ask opens: "Batch production
+                            # is most appropriate for this order" reuses every
+                            # word of its ask and is the answer.
+                            and not (len(SCHEME_WORDS(p)) >= 6
+                                     and cue_score(p, ask) >= 0.85
+                                     and _tokens(p)[:1] == _tokens(ask)[:1])
+                            # ...and a lead-in that ends in a colon needs
+                            # only most of its words in the ask: "Describe,
+                            # with specific examples, each of the following
+                            # potential sources of waste in business or in
+                            # manufacturing:" is the scheme's own wording of
+                            # the paper's "with reference to a specific example".
+                            and not (p.rstrip().endswith(':')
+                                     and len(SCHEME_WORDS(p)) >= 8
+                                     and cue_score(p, ask) >= 0.6))
+                        or p == backed_off]
                 # A priced block answers: where every line reads as a reprint,
                 # the last is the answer in the ask's own words. 2022 Ordinary
                 # 2(b)(iii) asks for "a suitable circuit" and the scheme credits

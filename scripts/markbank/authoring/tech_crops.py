@@ -468,6 +468,10 @@ SOLUTIONS.update({
         "The marking scheme's own answer to 2025 OL Section A Q9, as the State Examinations Commission printed it: a circuit diagram drawn inside the scheme's answer box (the box frame is left out): a single cell on the left, a push-to-make switch (two contact circles under a bar and plunger) on the top wire, and a motor (a circle marked M) on the bottom wire, all in one series loop."),
     'technology-2025-OL-scheme-secC-q2b-ii': (11, (397.5, 240, 555, 310),
         "The marking scheme's own answer to 2025 OL Section C Q2(b)(ii), as the State Examinations Commission printed it: a circuit diagram with no word labels: a single cell on the left whose two leads run to the two moving arms of a double-pole double-throw switch, the arms linked by a dashed line. The two middle contacts are joined and wired to one side of a motor (a circle marked M); the top and bottom contacts are joined by a wire down the right side, which also meets the motor's other side."),
+    'technology-2022-OL-scheme-secC-q2d-ii': (11, (106, 624, 203, 726),
+        "The marking scheme's own answer to 2022 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: a completed truth table captioned 'Truth Table', with a yellow header row A, B, C, D and the C and D columns in red. Rows (A B, then C D): 0 0 gives 0 1; 0 1 gives 1 0; 1 0 gives 1 0; 1 1 gives 1 0."),
+    'technology-2024-HL-scheme-secC-q4b-ii': (20, (300, 594, 575, 782),
+        "The marking scheme's own answer to 2024 HL Section C Q4(b)(ii), as the State Examinations Commission printed it: a graph of Cost (€) on the vertical axis, 0 to 700 in steps of 100, against Quantity on the horizontal axis, 0 to 60 in steps of 10. A red line for option A rises in a straight line from the origin; a blue line for option B starts at about 500 and rises gently. The two lines cross at a quantity of 50, where a dashed vertical line is drawn and the point (50,507.5) is labelled with an arrow; the point (50,425) on the red line is labelled with a second arrow below it, and the crossing is marked (BEQ) at the right."),
     'technology-2025-OL-scheme-secC-q2d-ii': (11, (459, 631, 516, 698),
         "The marking scheme's own answer to 2025 OL Section C Q2(d)(ii), as the State Examinations Commission printed it: the circuit symbol for a phototransistor: a transistor in a circle, with a base lead entering from the left to an upright bar, the collector line leaving at the top right and the emitter leaving at the bottom right with an arrow pointing outward, and two parallel arrows pointing in at the circle's upper left for the light falling on it."),
 })
@@ -537,6 +541,7 @@ for _yl, _zs in {
         (9, (229, 407.5, 409, 764)),  # 2022 OL scheme, Section C Q1(b)(ii) flowchart lettering printed beside the 1(b)(iii) prose ask and answer ('Infra-red motion sensor, LDR, etc.'); the .md interleaves them line by line
         (10, (225, 240, 446, 350)),  # 2022 OL scheme, Section C Q1(c)(ii) (seen in passing, not in this input): single-acting cylinder symbol with text-layer labels Piston, A, Spring printed under the answer prose
         (10, (473, 499, 534, 527)),  # 2022 OL scheme, Section C Q1(d) (seen in passing, not in this input): caption 'Mechanical Gripper' of the reprinted question picture beside the 1(d)(i) answer
+        (11, (396, 600, 558, 644)),  # 2022 OL scheme, Section C Q2(d): the reprinted logic diagram's lettering (A, B, X, C, Y, D) printed beside the (i) and (ii) asks; its B sat on the (i) ask's line
     ],
     (2023, 'hl'): [
         (13, (220, 718, 364, 770)),  # HL C1(b)(ii): mini flowchart ('Check light level' / 'No' / 'Light on' / 'Yes') under the answer 'Add light sensor check with light switching option.'; card tech-2023-hl-c1b-ii carries its lettering as two rows, 'Check light No' and 'Light on level'
@@ -594,6 +599,8 @@ ASK_ONLY.update({
     'technology-2023-OL-scheme-secC-q2d-ii',
     'technology-2024-HL-scheme-secC-q1b-i',
     'technology-2024-HL-scheme-secC-q2b-i',
+    'technology-2024-HL-scheme-secC-q4b-ii',
+    'technology-2022-OL-scheme-secC-q2d-ii',
     'technology-2024-OL-scheme-secA-q7',
     'technology-2024-OL-scheme-secC-q1b-i',
     'technology-2024-OL-scheme-secC-q1b-ii',
@@ -668,6 +675,64 @@ SOLUTIONS['technology-2022-HL-scheme-secC-q1d-i'] = (14, (412, 518, 575, 684),
     "double-acting cylinder is fed through two flow control valves from a 5/2 "
     "valve, itself piloted by two spring-return 3/2 push-button valves.")
 ASK_ONLY.add('technology-2022-HL-scheme-secC-q1d-i')
+
+# 2020 Higher, measured on the rendered scheme pages after the first pass.
+LABEL_ZONES.setdefault((2020, 'hl'), []).extend([
+    # Page 5: the potential-divider circuit reprinted beside 5(i)'s working.
+    (4, (428, 352, 562, 498)),
+    # Page 8: the analytics graph and its figures above Q12's terms.
+    (7, (130, 128, 460, 208)),
+])
+SOLUTIONS.update({
+    'technology-2020-HL-scheme-secA-q7': (5, (80, 104, 472, 162),
+        "The marking scheme's own answer to 2020 HL Section A Q7, as the State "
+        "Examinations Commission printed it: a work breakdown structure of four "
+        "boxes in a row joined by arrows, Mark out sheet material, Cut sheet "
+        "material, Edge finish sheet material and Bend sheet material."),
+    'technology-2020-HL-scheme-secA-q13': (7, (222, 505, 440, 672),
+        "The marking scheme's own answer to 2020 HL Section A Q13, as the State "
+        "Examinations Commission printed it: a red arrow pointing at the "
+        "assembled bulb, drawn as a shaded pictorial view with its dome, finned "
+        "body and screw cap together."),
+    'technology-2020-HL-scheme-secB-q2d-i': (10, (378, 560, 535, 658),
+        "The marking scheme's own answer to 2020 HL Section B Q2(d)(i), as the "
+        "State Examinations Commission printed it: a product life cycle graph of "
+        "sales against time, a curve rising, peaking and falling with the four "
+        "stages marked off by dashed lines."),
+})
+ASK_ONLY.update({
+    'technology-2020-HL-scheme-secA-q7',
+    'technology-2020-HL-scheme-secA-q13',
+    'technology-2020-HL-scheme-secB-q2d-i',
+})
+# The analytics table 12's terms refer to, cut from the paper.
+BY_EYE['technology-2020-HL-paper-secA-q12-art'] = ('014', 5, (82, 138, 532, 192))
+
+SOLUTIONS['technology-2020-HL-scheme-secC-q1d-i'] = (13, (72, 335, 562, 492),
+    "The marking scheme's own answer to 2020 HL Section C Q1(d)(i), as the State "
+    "Examinations Commission printed it: a pneumatic circuit with a double-acting "
+    "cylinder fed through two flow control valves from a 5/2 valve with its air "
+    "inlet, and beside it an alternative solution, the cylinder driven by two "
+    "spring-return 3/2 valves.")
+ASK_ONLY.add('technology-2020-HL-scheme-secC-q1d-i')
+
+# 2020 Higher Option 4(b)(i): the cost graph is the scheme's answer to "Draw a
+# graph"; the BEQ working beneath it stays as rows, so the crop is not ask-only.
+SOLUTIONS['technology-2020-HL-scheme-secC-q4b-i'] = (16, (88, 330, 500, 552),
+    "The marking scheme's own answer to 2020 HL Section C Q4(b)(i), as the State "
+    "Examinations Commission printed it: a graph of Cost against Quantity, a red "
+    "Skilled Labour line from the origin and a green Unskilled Labour line from "
+    "about 3,300, crossing at the BEQ marked with a dashed line between 1,250 and "
+    "2,500.")
+
+# 2020 Higher Option 5(b)(ii): the injection-moulding sketch beside the answer
+# prose, its labels (Plastic hopper, mould, Motor drive, Heated chamber with
+# screw drive) welded onto the lines; shown at the reveal beside the rows.
+SOLUTIONS['technology-2020-HL-scheme-secC-q5b-ii'] = (18, (383, 292, 582, 382),
+    "The marking scheme's own answer to 2020 HL Section C Q5(b)(ii), as the State "
+    "Examinations Commission printed it: a sectioned injection moulding machine "
+    "labelled Plastic hopper, mould, Motor drive and Heated chamber with screw "
+    "drive.")
 
 # 2023 Ordinary: the perceptual map beside Option 4(a), whose axis words and
 # letters A, B and C were welded onto both parts' lines.
@@ -923,6 +988,16 @@ def strip_labels(text, labels, keep_numbers=False):
         # the direction of arrow A. A" is the arrow's own letter read after
         # the sentence closed.
         hi = len(tokens)
+    if hi == len(tokens) and len(tokens) >= 4:
+        # A caption inside the picture, read after the ask's last sentence:
+        # "...and recyclability. Box B. Made from cardboard. Box A. Made from
+        # expanded polystyrene." Every word of the run is lettering and the
+        # run starts where a sentence ended, so punctuation is no bar here.
+        j = len(tokens)
+        while j > 0 and _bare(tokens[j - 1]) in labels:
+            j -= 1
+        if 0 < j < len(tokens) - 2 and re.search(r'[.?!]$', tokens[j - 1]):
+            hi = j
     if keep_numbers and all(re.fullmatch(r'[\d.,]+', t) for t in tokens[hi:]):
         # "Mean: 2+3+...+4 = 48 = 4" ends in the mean, which is also an
         # axis label on the control chart beside it. A bare number closing

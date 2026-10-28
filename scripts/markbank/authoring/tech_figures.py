@@ -414,6 +414,9 @@ REVIEWED = {
     'technology-2020-HL-paper-secC-q5c-art':
         'Shaded drawing of a flat circular disc with a square hole through '
         'its centre.',
+    'technology-2020-HL-paper-secA-q12-art':
+        'A one-row table of website analytics: Sessions 624,935, Users 299,488, '
+        'Page Views 5,826,244 and Pages per Session 9.32.',
     # 2026 Ordinary (2026-10-28): the cropper's cuts for Q9 and Q12, and by-eye
     # rects (tech_crops.BY_EYE) for the rest, each opened at 150 dpi.
     'technology-2026-OL-paper-secA-q1-art':
