@@ -26,6 +26,8 @@ import type {
 import authored from './authored.json';
 import {
   geographyColumnLabels,
+  geographyPointRoutes,
+  geographyPointsProblem,
   parseGeographyAllocation,
   parseGeographyCriterionAllocation,
 } from './allocation';
@@ -90,24 +92,45 @@ const range = (from: number, to: number) =>
  * they reconcile to the criterion's maximum and its permitted marks
  * (allocation.ts, tryParseGeographyCriterionAllocation). A criterion they do
  * not reconcile for keeps its lines and mark control.
+ *
+ * Criteria that share printed lines are read together: a points table split
+ * over several criteria ("Number of aspects", 2010–2013 Higher options) must
+ * add up point by point across them, or none of them is structured; and
+ * criteria the review gave identical lines take one addend each of a line
+ * that prices them all ("Named · 4m + 3m + 3m").
  */
 const reviewedCriteria = (card: AuthoredGeographyCard): GeographyCriterion[] => {
   const criteria = card.criteria ?? [];
   const columnLabels = geographyColumnLabels(criteria);
+  const pointRoutes = geographyPointRoutes(criteria);
+  const lineKeys = criteria.map(source => JSON.stringify(source.guidance));
   let previousRowText: string | undefined;
-  return criteria.map(source => {
+  const out = criteria.map((source, index) => {
     const criterion: GeographyCriterion = {
       ...source,
       permittedMarks: [...source.permittedMarks],
       guidance: [...source.guidance],
     };
+    const siblings = lineKeys.filter(key => key === lineKeys[index]).length;
+    const share = siblings > 1
+      ? { index: lineKeys.slice(0, index).filter(key => key === lineKeys[index]).length, count: siblings }
+      : undefined;
     const allocation = parseGeographyCriterionAllocation(
-      { level: card.level, questionText: card.questionText, columnLabels, previousRowText }, criterion);
+      { level: card.level, questionText: card.questionText, columnLabels, previousRowText, pointRoutes, share }, criterion);
     const rows = allocation?.groups.flatMap(group => group.rows) ?? [];
     previousRowText = rows.length ? rows[rows.length - 1].text : undefined;
     if (allocation) criterion.allocation = allocation;
     return criterion;
   });
+  // A points table the criteria split between them is one table: they share
+  // its pick (`follows`), and they must add up to its heading point by point.
+  if (pointRoutes && out.some(criterion => criterion.allocation?.choice?.follows === pointRoutes.owner)
+    && geographyPointsProblem(pointRoutes, out)) {
+    for (const criterion of out) {
+      if (criterion.id === pointRoutes.owner || criterion.allocation?.choice?.follows === pointRoutes.owner) delete criterion.allocation;
+    }
+  }
+  return out;
 };
 
 const criterionFor = (card: AuthoredGeographyCard): GeographyCriterion => {

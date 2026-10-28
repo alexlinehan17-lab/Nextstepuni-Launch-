@@ -99,6 +99,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
             if (!corpus.includes(normalise(row.text))) for (const piece of row.text.split(' · ')) lifted(piece, 'row');
             expect(row.marks, card.id).toBeGreaterThan(0);
             for (const step of row.steps ?? []) expect(step, card.id).toBeLessThanOrEqual(row.marks);
+            // A row priced unalike per point carries one price per point, none above its own.
+            if (row.unitMarks) {
+              expect(row.unitMarks, card.id).toHaveLength(group.repeat?.count ?? 0);
+              for (const marks of row.unitMarks) expect(marks, card.id).toBeLessThanOrEqual(row.marks);
+            }
           }
           for (const srp of group.srp) if (srp.label) lifted(srp.label, 'SRP label');
         }
@@ -131,37 +136,46 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         expect(/·\s*[1-9]\d*\s*(?:m|marks?)\s*$/i.test(note) && !/\bSRP|\bmax/i.test(note), `${card.id}: priced direction "${note}"`).toBe(false);
       }
     }
-    expect([criteria, structuredCriteria]).toEqual([7689, 7598]);
-    expect(structured).toHaveLength(4108);
+    // Every criterion structures since the last 45 cards did (2026-10-28):
+    // the 2010–2013 Higher 80-mark options (a points table split over two
+    // criteria) and 2016 Ordinary Q12C (one line pricing three patterns).
+    expect([criteria, structuredCriteria]).toEqual([7689, 7689]);
+    expect(structured).toHaveLength(4153);
+    expect(fallback.map(card => card.id)).toEqual([]);
 
-    // What is still prose, by shape. Fix a shape and lower its number here.
-    const shape = (card: typeof fallback[number]) => {
-      if (card.rubric.system !== 'geography') return 'other';
-      const lines = card.rubric.criteria.flatMap(criterion => criterion.guidance);
-      // 2010–2013 HL options: the scheme prints one two-route table (3 aspects
-      // at 27 + 27 + 26, or 4 at 20) whose rows the review splits into two
-      // criteria, identifying + coherence (32) and discussion (48). The
-      // discussion line ("8 x SRPs · OR · 6 x SRPs") prints no aspect count of
-      // its own, and coherence is "7/6 marks graded" across three aspects.
-      if (card.level === 'higher' && card.year <= 2013 && lines.some(line => /^(?:Discussion|Examination): · 8 x SRPs · OR · 6 x SRPs$/.test(line))) {
-        return 'HL 80-mark option 2010-2013: one route table split over two criteria';
-      }
-      // 2016 OL Q12C prints all three patterns' prices on one line each
-      // ("Named · 4m + 3m + 3m", "Located · 4m + 4m + 4m").
-      if (lines.some(line => /^Named · 4m \+ 3m \+ 3m$/.test(line))) return 'three units priced on one line';
-      return 'other';
-    };
-    const byShape: Record<string, string[]> = {};
-    for (const card of fallback) (byShape[shape(card)] ??= []).push(card.id);
-    expect(Object.fromEntries(Object.entries(byShape).map(([key, ids]) => [key, ids.length]))).toEqual({
-      'HL 80-mark option 2010-2013: one route table split over two criteria': 44,
-      'three units priced on one line': 1,
-    });
-    expect(byShape['three units priced on one line']).toEqual(['geography-2016-ol-p2-q12c']);
-    // Options that ask for a fixed number of aspects (2011 Q16/Q17, 2012 Q18,
-    // 2013 Q18 and Q24) are carded one criterion per aspect and do structure.
+    // 2010–2013 Higher options print one table for 80 marks: "Number of
+    // aspects: 3 (27 + 27 + 26) · (4 @ 20 marks each)" over identifying,
+    // discussion and coherence, which the review splits over two criteria.
+    // Both criteria share one pick (the discussion follows the first), and
+    // point by point they award what the heading prints: 27, 27, 26 or 20 x 4.
     const options = (year: number, numbers: Array<number | string>) => numbers.map(n => `geography-${year}-hl-p2-q${n}`);
-    expect(byShape['HL 80-mark option 2010-2013: one route table split over two criteria'].sort()).toEqual([
+    const pointTables: string[] = [];
+    for (const card of cards) {
+      if (card.rubric.system !== 'geography') continue;
+      const followers = card.rubric.criteria.filter(criterion => criterion.allocation?.choice?.follows);
+      if (!followers.length) continue;
+      pointTables.push(card.id);
+      const owner = card.rubric.criteria.find(criterion => criterion.id === followers[0].allocation!.choice!.follows)!;
+      const table = [owner, ...followers];
+      const labels = (criterion: typeof owner) => criterion.allocation!.choice!.options.map(option => option.label);
+      for (const criterion of followers) expect(labels(criterion), card.id).toEqual(labels(owner));
+      const perPoint = owner.allocation!.choice!.options.map((_, column) => {
+        const sums: number[] = [];
+        for (const criterion of table) {
+          const group = criterion.allocation!.choice!.options[column].allocation!.groups[0];
+          for (let unit = 0; unit < group.repeat!.count; unit += 1) {
+            sums[unit] = (sums[unit] ?? 0)
+              + group.rows.reduce((sum, row) => sum + (row.unitMarks?.[unit] ?? row.marks), 0)
+              + group.srp.reduce((sum, srp) => sum + srp.count * srp.marks, 0);
+          }
+        }
+        return sums;
+      });
+      expect(perPoint, card.id).toEqual([[27, 27, 26], [20, 20, 20, 20]]);
+    }
+    // Options that ask for a fixed number of aspects (2011 Q16/Q17, 2012 Q18,
+    // 2013 Q18 and Q24) are carded one criterion per aspect and need no table.
+    expect(pointTables.sort()).toEqual([
       ...options(2010, [13, 14, 15, 16, 17, 18, 19, '20-language', '20-religion', 21, 22, 23, 24]),
       ...options(2011, [13, 14, 15, 18, 19, 20, 21, 22, 23, 24]),
       ...options(2012, [13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24]),

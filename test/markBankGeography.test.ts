@@ -2,7 +2,9 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { createElement } from 'react';
+import { fireEvent, render, screen } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest';
 import authored from '../components/MarkBank/cards/geography/authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
@@ -23,6 +25,7 @@ import {
   geographyRowScoreId,
   geographySrpScoreId,
 } from '../components/MarkBank/geographyScoring';
+import GeographyChoicePanel from '../components/MarkBank/GeographyChoicePanel';
 import { isRubricCard, tariffReconciles, type SecRubricCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { waysInSourceFromMarkBank } from '../components/WaysIn/sources';
@@ -476,6 +479,107 @@ describe('Geography prompt, source and marking integrity', () => {
     expect(bands.options.map(option => [option.label, option.marks]))
       .toEqual([['Excellent', 20], ['Very Good', 17], ['Good', 14], ['Fair', 10], ['Weak', 6], ['Poor', 0]]);
     expect(geographyMarks(card, { [geographyChoiceScoreId(coherence.id)]: 2 })).toBe(17);
+  });
+
+  it('scores a 2010–2013 Higher option point by point: one pick for the whole table, coherence 7, 7 and 6', () => {
+    // "Number of aspects: 3 (27 + 27 + 26) · (4 @ 20 marks each)" over
+    // identifying and coherence (c1, 32) and discussion (c2, 48).
+    const card = HIGHER.find(entry => entry.id === 'geography-2010-hl-p2-q13')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const [aspects, discussion] = card.rubric.criteria;
+    const route = aspects.allocation!.choice!;
+    expect(route).toMatchObject({ kind: 'route', prompt: 'Number of aspects' });
+    expect(route.follows).toBeUndefined();
+    expect(route.options.map(option => option.label)).toEqual(['3 (27 + 27 + 26)', '4 @ 20 marks each']);
+    const three = route.options[0].allocation!.groups[0];
+    expect(three.repeat).toEqual({ count: 3, unit: 'aspect', marks: 11 });
+    expect(three.rows).toEqual([
+      { id: 'r1', text: 'Identifying aspect', marks: 4, tariffOnly: true },
+      { id: 'r2', text: 'Overall coherence', marks: 7, steps: [1, 2, 3, 4, 5, 6, 7], unitMarks: [7, 7, 6] },
+    ]);
+    const four = route.options[1].allocation!.groups[0];
+    expect(four.repeat).toEqual({ count: 4, unit: 'aspect', marks: 8 });
+    expect(four.rows.map(row => [row.text, row.marks, row.steps])).toEqual([
+      ['Identifying aspect', 4, undefined], ['Overall coherence', 4, [1, 2, 3, 4]]]);
+    // The discussion criterion prints no heading of its own: it follows c1's pick.
+    const srps = discussion.allocation!.choice!;
+    expect(srps.follows).toBe(aspects.id);
+    expect(srps.options.map(option => option.allocation!.groups[0].srp[0]))
+      .toEqual([{ id: 's1', label: 'Discussion', count: 8, marks: 2 }, { id: 's1', label: 'Discussion', count: 6, marks: 2 }]);
+    expect(srps.options.map(option => option.allocation!.groups[0].repeat!.count)).toEqual([3, 4]);
+
+    const aspectsThree = geographyOptionCriterionId(aspects.id, 'o1');
+    const discussionThree = geographyOptionCriterionId(discussion.id, 'o1');
+    const full = Object.fromEntries([1, 2, 3].flatMap(unit => [
+      [geographyRowScoreId(aspectsThree, 'r1', unit), 4],
+      [geographyRowScoreId(aspectsThree, 'r2', unit), unit === 3 ? 6 : 7],
+      [geographySrpScoreId(discussionThree, 's1', unit), 8],
+    ]));
+    // Nothing counts until the table's one pick is made; then both criteria count.
+    expect(geographyMarks(card, full)).toBe(0);
+    const pickThree = { [geographyChoiceScoreId(aspects.id)]: 1 };
+    expect(geographyMarks(card, { ...full, ...pickThree })).toBe(80);
+    // The third aspect's coherence is graded to 6: a 7 claimed there is not a mark it offers.
+    expect(geographyMarks(card, { ...full, ...pickThree, [geographyRowScoreId(aspectsThree, 'r2', 3)]: 7 })).toBe(74);
+    // A pick under the follower's own id is not the table's pick.
+    expect(geographyMarks(card, { ...full, [geographyChoiceScoreId(discussion.id)]: 1 })).toBe(0);
+    // The four-aspect column: 4 x (4 + 4 graded) and 4 x 6 SRPs.
+    const aspectsFour = geographyOptionCriterionId(aspects.id, 'o2');
+    const discussionFour = geographyOptionCriterionId(discussion.id, 'o2');
+    const fourClaimed = Object.fromEntries([1, 2, 3, 4].flatMap(unit => [
+      [geographyRowScoreId(aspectsFour, 'r1', unit), 4],
+      [geographyRowScoreId(aspectsFour, 'r2', unit), 3],
+      [geographySrpScoreId(discussionFour, 's1', unit), 5],
+    ]));
+    expect(geographyMarks(card, { ...fourClaimed, [geographyChoiceScoreId(aspects.id)]: 2 })).toBe(16 + 12 + 40);
+    expect(geographyMarks(card, { ...fourClaimed, ...pickThree })).toBe(0);
+  });
+
+  it('shows one points table as one pick in both criteria, each point at its own price', () => {
+    const card = HIGHER.find(entry => entry.id === 'geography-2010-hl-p2-q13')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const [aspects, discussion] = card.rubric.criteria;
+    type ChoiceCriterion = Parameters<typeof GeographyChoicePanel>[0]['criterion'];
+    const onScore = vi.fn();
+    // The discussion criterion's pill writes the table's one pick (c1's).
+    const { unmount } = render(createElement(GeographyChoicePanel, { criterion: discussion as ChoiceCriterion, scores: {}, onScore }));
+    expect(screen.getAllByRole('tab').map(tab => tab.textContent)).toEqual(['3 (27 + 27 + 26)', '4 @ 20 marks each']);
+    fireEvent.click(screen.getByRole('tab', { name: '3 (27 + 27 + 26)' }));
+    expect(onScore).toHaveBeenCalledWith(geographyChoiceScoreId(aspects.id), 1);
+    unmount();
+    const picked = { [geographyChoiceScoreId(aspects.id)]: 1 };
+    const second = render(createElement(GeographyChoicePanel, { criterion: discussion as ChoiceCriterion, scores: picked, onScore }));
+    expect(screen.getAllByRole('button', { name: 'One more SRP for Discussion' })).toHaveLength(3);
+    second.unmount();
+    // Coherence is graded to 7 for two aspects and to 6 for the third.
+    render(createElement(GeographyChoicePanel, { criterion: aspects as ChoiceCriterion, scores: picked, onScore }));
+    expect(screen.getAllByRole('button', { name: 'Claim 6 marks for Overall coherence' })).toHaveLength(3);
+    expect(screen.getAllByRole('button', { name: 'Claim 7 marks for Overall coherence' })).toHaveLength(2);
+    expect(screen.getAllByRole('button', { name: /^Identifying aspect · 4m$/ })).toHaveLength(3);
+  });
+
+  it('cuts one line that prices three settlement patterns into each pattern\'s own rows', () => {
+    // 2016 OL Q12C(i): "Named · 4m + 3m + 3m", "Located · 4m + 4m + 4m",
+    // "(4m graded 4/2/0)", printed once for Pattern 1, 2 and 3.
+    const card = ORDINARY.find(entry => entry.id === 'geography-2016-ol-p2-q12c')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    expect(card.rubric.criteria.map(criterion => criterion.allocation!.groups[0].rows)).toEqual([8, 7, 7].map((_, index) => [
+      { id: 'r1', text: 'Named', marks: index === 0 ? 4 : 3, tariffOnly: true },
+      { id: 'r2', text: 'Located', marks: 4, steps: [2, 4], tariffOnly: true },
+    ]));
+    expect(card.rubric.criteria.map(criterion => criterion.allocation!.groups[0].prompt))
+      .toEqual(['Three rural settlement patterns', 'Three rural settlement patterns', 'Three rural settlement patterns']);
+    const [first, second, third] = card.rubric.criteria;
+    expect(geographyMarks(card, {
+      [geographyRowScoreId(first.id, 'r1')]: 4,
+      [geographyRowScoreId(first.id, 'r2')]: 2,
+      [geographyRowScoreId(second.id, 'r1')]: 3,
+      [geographyRowScoreId(second.id, 'r2')]: 4,
+      [geographyRowScoreId(third.id, 'r1')]: 3,
+      [geographyRowScoreId(third.id, 'r2')]: 4,
+    })).toBe(20);
+    // The location is graded 4/2/0: a 3 is not a mark it offers.
+    expect(geographyMarks(card, { [geographyRowScoreId(first.id, 'r2')]: 3 })).toBe(0);
   });
 
   it('reads the older tables: Bar/Pie columns, one answer or another, Part One letter/process rows', () => {
