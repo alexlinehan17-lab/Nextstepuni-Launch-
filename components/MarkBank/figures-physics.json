@@ -1,1 +1,298 @@
-{}
+{
+ "physics-2026-hl-q10-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q10-circuit.png",
+  "md5": "1af5640f4d561f377e0d6630b2c4b0fd",
+  "alt": "A series circuit: a 200 μF capacitor, a 40 kΩ resistor, a switch and a 12 V battery in one loop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q10(vi)(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   410,
+   412,
+   536,
+   500
+  ]
+ },
+ "physics-2026-hl-q10iv-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q10iv-scheme-table.png",
+  "md5": "29e51030773cb93c3b4140a36d3ec700",
+  "alt": "Scheme table of 1/d (m⁻¹) for the six plate separations: 47.6, 23.8, 15.9, 11.9, 9.5, 8.1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q10(iv)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   74,
+   458,
+   532,
+   478
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q11-path": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q11-path.png",
+  "md5": "92f140c6e38150452e409175ca30eb7d",
+  "alt": "A circled positive charge moving to the right; its path curves upwards just after it enters the magnetic field.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q11(v)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   260,
+   370,
+   335,
+   415
+  ]
+ },
+ "physics-2026-hl-q13ivc-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q13ivc-scheme-formula.png",
+  "md5": "1d347b07e45357fa2057dc9f952eff1d",
+  "alt": "The scheme's formula: V rms equals V peak divided by the square root of 2.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q13(iv)(c)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 20,
+  "sourceRect": [
+   125,
+   302,
+   200,
+   330
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q14a-boat": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14a-boat.png",
+  "md5": "96968d869e132161a36a7a2d1ffa02d8",
+  "alt": "Between two river banks: the water flow arrow, 1.5 m s⁻¹, points to the right; from a dot labelled boat an arrow labelled 2.5 m s⁻¹ points up and to the right at 20° to a dashed line drawn along the flow.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(a)(iii)(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 16,
+  "sourceRect": [
+   355,
+   120,
+   535,
+   196
+  ]
+ },
+ "physics-2026-hl-q14c-charges": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14c-charges.png",
+  "md5": "15920bf18585b6eedfd39e31c2786663",
+  "alt": "A positive point charge on the left and a negative point charge on the right, with a point X marked between them, nearer the positive charge.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(c)(iv)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 17,
+  "sourceRect": [
+   110,
+   398,
+   485,
+   432
+  ]
+ },
+ "physics-2026-hl-q14d-ivb-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14d-ivb-scheme-formula.png",
+  "md5": "b073beec4f015962c4d32e90b3ecb8ba",
+  "alt": "The scheme's formula for the gravitational force: F equals G times m₁ m₂ over d².",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(d)(iv)(b) — part-a",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 24,
+  "sourceRect": [
+   125,
+   587,
+   200,
+   613
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q14d-reaction": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14d-reaction.png",
+  "md5": "a5b580ba038af9ade93c0ebc212c90e1",
+  "alt": "Part (a)'s lead-in as printed: \"The following reaction represents the pair annihilation of a proton p, and an anti-proton\" followed by the symbol p with a bar over it, over the reaction: p plus p-bar gives 2 gamma.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q14(d)(iii) — part-a",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   55,
+   98,
+   500,
+   144
+  ]
+ },
+ "physics-2026-hl-q1iii-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q1iii-scheme-table.png",
+  "md5": "6a2e6b89c0fe5d8c4b93137154b62e15",
+  "alt": "Scheme table of 1/V (cm⁻³) for the six readings: 0.019, 0.023, 0.027, 0.031, 0.034, 0.043.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q1(iii)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   100,
+   441,
+   520,
+   461
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q1v-scheme-sketch": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q1v-scheme-sketch.png",
+  "md5": "69d6a749a207ab237ecb92e48f5e50f6",
+  "alt": "Scheme sketch: axes labelled pV (vertical) and p (horizontal), with a straight line drawn level, parallel to the p axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q1(v)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   100,
+   600,
+   240,
+   664
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q2iv-scheme-table": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q2iv-scheme-table.png",
+  "md5": "d9ee328a15fbe7d2c43dc23f55e4c167",
+  "alt": "Scheme table of T² (sec²) for the six lengths: 1.64, 2.01, 2.41, 2.89, 3.21, 3.61.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q2(iv)(a)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   128,
+   494,
+   520,
+   514
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q2v-scheme-formula": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q2v-scheme-formula.png",
+  "md5": "cf1cf7d8dce19a79ee63df9b124e6bdf",
+  "alt": "The scheme's formula for the period: T equals 2π times the square root of l over g.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q2(v)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   96,
+   656,
+   200,
+   688
+  ],
+  "solution": true
+ },
+ "physics-2026-hl-q6b-plank": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q6b-plank.png",
+  "md5": "43e292d96ea743afe8c8e79516643f7e",
+  "alt": "A horizontal plank balanced on a triangular block. A 300 N weight hangs from the left end and a 450 N weight from the right end. X marks the centre of gravity, 2.5 m from the left weight and 0.3 m to the left of the block; the right weight hangs 2.0 m to the right of the block.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q6(b)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   125,
+   262,
+   472,
+   404
+  ]
+ },
+ "physics-2026-hl-q6h-resistors": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q6h-resistors.png",
+  "md5": "ecbfc6f211ba5cd878c9185d04962659",
+  "alt": "A resistor network between two terminals: an 8 Ω resistor in series with a 900 Ω resistor, and across the 900 Ω resistor a branch of a 15 Ω resistor in series with a 5 Ω resistor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q6(h)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   190,
+   78,
+   405,
+   180
+  ]
+ },
+ "physics-2026-hl-q6j-equation": {
+  "src": "/exam-figures/physics/markbank/physics-2026-hl-q6j-equation.png",
+  "md5": "6a2dd751c90737cf1cdd1940f740c695",
+  "alt": "The nuclear equation as printed: three alpha particles (mass number 4, atomic number 2) give carbon-12 (mass number 12, atomic number 6).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 HL Q6(j)",
+  "year": 2026,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   280,
+   264,
+   345,
+   290
+  ]
+ }
+}

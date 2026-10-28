@@ -377,6 +377,32 @@ INLINE_SENTENCE_MARKERS = {('physics', 2023, 'hl'): ['(ii) cool the water,', '(i
 # text is read as words of what is open (the ask, or else the lead-in), as CROSSREF's are.
 # Gated to the sitting: no other paper's reading may move because of it.
 PROSE_MARKER_BLOCKS = {('chemistry', 2010, 'ol'): ['(i) to identify the salts by means of flame tests,']}
+# 2026 HL Physics, two readings of the same kind (rendered and looked at):
+# * Q4 (paper page 5) prints its data table's units in brackets, "mass of copper
+#   calorimeter (g) | 64.6" and two rows more; each "(g) <value>" cell reached the
+#   walker as a block of its own, and the first, read as a LETTER, made Q4 letter-major:
+#   its romans (i)-(vi) filed under a phantom Q4(g), and (vi)'s "(a) the energy gained
+#   by the calorimeter," "(b) the mass of steam used," "(c) the specific latent heat"
+#   were promoted to parts Q4(a)-(c). The paper prints Q4(i)-(vi), (vi) holding (a)-(c).
+#   A unit cell is words of the lead-in (its table), not a part.
+# * Q14 (pages 16-18) is letter-major, (a)-(d), and prints letters INSIDE five romans:
+#   (a)(iii) "(a) Resolve ... (b) Calculate ...", (b)(i) "(a) angular velocity, (b)
+#   frequency.", (b)(iii) "(a) Calculate ... (b) State ...", and in (d)'s Part (a)
+#   (iv) "(a) the strong nuclear force ... (b) how many times stronger ...", Part (b)
+#   (iii) "(a) Draw a circuit diagram ... (b) Label the input voltage ...". Each was
+#   read as a top-level letter: Q14(a)(iii) and Q14(b)(iii) came out empty, (b)(i) read
+#   "Explain what is meant by Explain what is meant by a bi-polar transistor.", and
+#   (d)'s Part (b) (i), (ii), (iv) filed under Q14(b). Read as lines of the roman that
+#   is open, each stays in its own ask; (d)'s Part (b) romans then share the keys of
+#   Part (a)'s, the two printed alternatives of "Answer either part (a) or part (b)."
+#   (carded as routes of one leaf each).
+PROSE_MARKER_BLOCKS[('physics', 2026, 'hl')] = [
+    '(g) 64.6', '(g) 144.7', '(g) 145.8',
+    '(a) Resolve the velocity of the boat', '(b) Calculate the magnitude and the',
+    '(a) angular velocity,', '(b) frequency.',
+    '(a) Calculate the minimum frequency heard', '(b) State the observed frequency',
+    '(a) the strong nuclear force between the two protons,', '(b) how many ',
+    '(a) Draw a circuit diagram to show how a transistor', '(b) Label the input voltage']
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
