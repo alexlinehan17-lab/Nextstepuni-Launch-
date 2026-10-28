@@ -132,6 +132,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -162,6 +163,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -377,6 +379,7 @@
   "stem": "",
   "figureKey": "technology-2020-HL-scheme-secA-q7",
   "questionFigureKey": "technology-2020-HL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -536,6 +539,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -631,6 +635,7 @@
   "stem": "Websites can be analysed using information similar to that shown below to establish data on visits to the landing page and length of time spent on the site. Explain the terms:",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -661,6 +666,7 @@
   "stem": "Websites can be analysed using information similar to that shown below to establish data on visits to the landing page and length of time spent on the site. Explain the terms:",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -691,6 +697,7 @@
   "stem": "Websites can be analysed using information similar to that shown below to establish data on visits to the landing page and length of time spent on the site. Explain the terms:",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -721,6 +728,7 @@
   "stem": "",
   "figureKey": "technology-2020-HL-scheme-secA-q13",
   "questionFigureKey": "technology-2020-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -820,6 +828,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -910,6 +919,7 @@
   "stem": "The Lightcycle™ lamp by Jake Dyson is influenced by the construction industry and is adjusted manually by pushing the arms.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -940,6 +950,7 @@
   "stem": "The Lightcycle™ lamp by Jake Dyson is influenced by the construction industry and is adjusted manually by pushing the arms.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q2b-ii-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -984,6 +995,7 @@
   "stem": "The Lightcycle™ lamp by Jake Dyson is influenced by the construction industry and is adjusted manually by pushing the arms.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1238,6 +1250,7 @@
   "stem": "A food processor is driven by an electric motor with a range of speed options. A gear system is used to rotate the beater shafts.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1268,6 +1281,7 @@
   "stem": "A food processor is driven by an electric motor with a range of speed options. A gear system is used to rotate the beater shafts.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1298,6 +1312,7 @@
   "stem": "A food processor is driven by an electric motor with a range of speed options. A gear system is used to rotate the beater shafts.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1328,6 +1343,7 @@
   "stem": "During the product design process, engineers strive to produce designs that address the capabilities, limitations and needs of the user.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -1365,6 +1381,7 @@
   "stem": "During the product design process, engineers strive to produce designs that address the capabilities, limitations and needs of the user.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -1409,6 +1426,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secB-q3d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -1679,6 +1697,7 @@
   "stem": "",
   "figureKey": "technology-2020-HL-scheme-secC-q1d-i",
   "questionFigureKey": "technology-2020-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1711,6 +1730,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1801,6 +1821,7 @@
   "stem": "The incomplete circuit shown is designed to provide an alert when light levels drop.",
   "figureKey": "technology-2020-HL-scheme-secC-q2b-i",
   "questionFigureKey": "technology-2020-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1833,6 +1854,7 @@
   "stem": "The incomplete circuit shown is designed to provide an alert when light levels drop.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -1870,6 +1892,7 @@
   "stem": "The incomplete circuit shown is designed to provide an alert when light levels drop.",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secC-q2b-iii-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -1974,6 +1997,7 @@
   "stem": "The automated gate system shown has two keypads (A and B) to open the gates, one inside and one outside the entrance. The system also has a master on/off switch (S) and a gate opening switch (C) at the house.",
   "figureKey": "technology-2020-HL-scheme-secC-q2d-i",
   "questionFigureKey": "technology-2020-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -2006,6 +2030,7 @@
   "stem": "The automated gate system shown has two keypads (A and B) to open the gates, one inside and one outside the entrance. The system also has a master on/off switch (S) and a gate opening switch (C) at the house.",
   "figureKey": "technology-2020-HL-scheme-secC-q2d-ii",
   "questionFigureKey": "technology-2020-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -2882,6 +2907,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -2919,6 +2945,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2020-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3180,6 +3207,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -3224,6 +3252,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -3261,6 +3290,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3321,6 +3351,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3358,6 +3389,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -3402,6 +3434,7 @@
   "stem": "The helical-cut gears shown are mounted in a cast iron gearbox.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -3439,6 +3472,7 @@
   "stem": "The helical-cut gears shown are mounted in a cast iron gearbox.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -3476,6 +3510,7 @@
   "stem": "The system shown has a driver pulley, diameter 40 mm, and a driven pulley, diameter 25 mm.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3506,6 +3541,7 @@
   "stem": "The system shown has a driver pulley, diameter 40 mm, and a driven pulley, diameter 25 mm.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3536,6 +3572,7 @@
   "stem": "",
   "figureKey": "technology-2021-HL-scheme-secA-q12",
   "questionFigureKey": "technology-2021-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -3573,6 +3610,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3663,6 +3701,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4035,6 +4074,7 @@
   "stem": "The prototype circuit shown operates an automated fan.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -4072,6 +4112,7 @@
   "stem": "The prototype circuit shown operates an automated fan.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -4109,6 +4150,7 @@
   "stem": "The prototype circuit shown operates an automated fan.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -4315,6 +4357,7 @@
   "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4345,6 +4388,7 @@
   "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
   "figureKey": "technology-2021-HL-scheme-secC-q1b-ii",
   "questionFigureKey": "technology-2021-HL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4377,6 +4421,7 @@
   "stem": "A battery powered automated pet-food dispenser, controlled by a programmable circuit, will fill the food tray every 6 hours if the tray is less than half full. When the food hopper is empty, a warning buzzer will sound continuously to alert the owner to refill.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4474,6 +4519,7 @@
   "stem": "",
   "figureKey": "technology-2021-HL-scheme-secC-q1d-i",
   "questionFigureKey": "technology-2021-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4506,6 +4552,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4605,6 +4652,7 @@
   "stem": "An astable timer circuit is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4635,6 +4683,7 @@
   "stem": "An astable timer circuit is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4665,6 +4714,7 @@
   "stem": "An astable timer circuit is shown.",
   "figureKey": "technology-2021-HL-scheme-secC-q2b-iii",
   "questionFigureKey": "technology-2021-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -5023,6 +5073,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q3c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -5053,6 +5104,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q3c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -5321,6 +5373,7 @@
   "stem": "The simplified control chart shown is a representation of product consistency.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -5358,6 +5411,7 @@
   "stem": "The simplified control chart shown is a representation of product consistency.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-HL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -6054,6 +6108,7 @@
   "stem": "The image shows a mechanism which consists of two components, labelled A and B.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -6102,6 +6157,7 @@
   "stem": "The image shows a mechanism which consists of two components, labelled A and B.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -6194,6 +6250,7 @@
   "stem": "",
   "figureKey": "technology-2021-OL-scheme-secA-q7",
   "questionFigureKey": "technology-2021-OL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -6434,6 +6491,7 @@
   "stem": "The image shows a garden spade which acts as a lever.",
   "figureKey": "technology-2021-OL-scheme-secA-q11-i",
   "questionFigureKey": "technology-2021-OL-paper-secA-q11-i-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -6466,6 +6524,7 @@
   "stem": "The image shows a garden spade which acts as a lever.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secA-q11-ii-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -6510,6 +6569,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -6752,6 +6812,7 @@
   "stem": "The packaging of goods is a major environmental concern for manufacturers and retailers.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secB-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -6782,6 +6843,7 @@
   "stem": "The packaging of goods is a major environmental concern for manufacturers and retailers.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secB-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -7163,6 +7225,7 @@
   "stem": "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
   "figureKey": "technology-2021-OL-scheme-secC-q1b-i",
   "questionFigureKey": "technology-2021-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -7195,6 +7258,7 @@
   "stem": "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
   "figureKey": "technology-2021-OL-scheme-secC-q1b-ii",
   "questionFigureKey": "technology-2021-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -7227,6 +7291,7 @@
   "stem": "The image shows a Nespresso™ coffee machine and the capsules used for dispensing a large or small cup of coffee.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -7257,6 +7322,7 @@
   "stem": "The image shows a shuttle valve used in pneumatic circuits. Also shown is the symbol for a shuttle valve.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -7303,6 +7369,7 @@
   "stem": "The image shows a shuttle valve used in pneumatic circuits. Also shown is the symbol for a shuttle valve.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -7474,6 +7541,7 @@
   "stem": "The circuit diagram shown is a timer circuit. The circuit is based on the behaviour of the inter-connected capacitor and resistor.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -7504,6 +7572,7 @@
   "stem": "The circuit diagram shown is a timer circuit. The circuit is based on the behaviour of the inter-connected capacitor and resistor.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -7541,6 +7610,7 @@
   "stem": "The circuit diagram shown is a timer circuit. The circuit is based on the behaviour of the inter-connected capacitor and resistor.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8213,6 +8283,7 @@
   "stem": "In an Electronic Kanban (e-Kanban) system, all cards used to track parts within a factory are maintained electronically. Barcode scanners, sensors and technologies such as Radio-Frequency Identification (RFID) can be used for real-time tracking of inventory.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8243,6 +8314,7 @@
   "stem": "In an Electronic Kanban (e-Kanban) system, all cards used to track parts within a factory are maintained electronically. Barcode scanners, sensors and technologies such as Radio-Frequency Identification (RFID) can be used for real-time tracking of inventory.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8273,6 +8345,7 @@
   "stem": "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car.",
   "figureKey": "",
   "questionFigureKey": "technology-2021-OL-paper-secC-q5a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -8310,6 +8383,7 @@
   "stem": "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car.",
   "figureKey": "technology-2021-OL-scheme-secC-q5a-ii",
   "questionFigureKey": "technology-2021-OL-paper-secC-q5a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8582,6 +8656,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8716,6 +8791,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8746,6 +8822,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -8783,6 +8860,7 @@
   "stem": "The graphic shows a mechanism which consists of two components, labelled A and B.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -8831,6 +8909,7 @@
   "stem": "The graphic shows a mechanism which consists of two components, labelled A and B.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -8904,6 +8983,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8934,6 +9014,7 @@
   "stem": "Two computer devices used to store data are shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -8978,6 +9059,7 @@
   "stem": "Two computer devices used to store data are shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -9022,6 +9104,7 @@
   "stem": "",
   "figureKey": "technology-2022-HL-scheme-secA-q10",
   "questionFigureKey": "technology-2022-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -9295,6 +9378,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -9496,6 +9580,7 @@
   "stem": "In an ever-advancing technological world, products are replaced very quickly.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secB-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -9554,6 +9639,7 @@
   "stem": "In an ever-advancing technological world, products are replaced very quickly.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secB-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -9651,6 +9737,7 @@
   "stem": "Urban Movement® is an e-scooter brand developed by Stephen Woods from Dublin. The scooter shown in 3(b) below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -9688,6 +9775,7 @@
   "stem": "Urban Movement® is an e-scooter brand developed by Stephen Woods from Dublin. The scooter shown in 3(b) below offers a sleek black exterior, 270 W motor power, honeycomb wheels and a long-lasting battery.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -9718,6 +9806,7 @@
   "stem": "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -9748,6 +9837,7 @@
   "stem": "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
   "figureKey": "technology-2022-HL-scheme-secB-q3b-ii",
   "questionFigureKey": "technology-2022-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -9780,6 +9870,7 @@
   "stem": "This Urban Movement® e-scooter is designed to fold for ease of storage and has a removable battery.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10253,6 +10344,7 @@
   "stem": "Electromagnetic solenoids are transducer devices used to change one form of energy to another, i.e., electrical energy into mechanical energy.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10283,6 +10375,7 @@
   "stem": "Electromagnetic solenoids are transducer devices used to change one form of energy to another, i.e., electrical energy into mechanical energy.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10313,6 +10406,7 @@
   "stem": "A heat alarm with logic gate processing is shown in the circuit diagram.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10343,6 +10437,7 @@
   "stem": "A heat alarm with logic gate processing is shown in the circuit diagram.",
   "figureKey": "technology-2022-HL-scheme-secC-q2b-ii",
   "questionFigureKey": "technology-2022-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10375,6 +10470,7 @@
   "stem": "A heat alarm with logic gate processing is shown in the circuit diagram.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -11403,6 +11499,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -11433,6 +11530,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -11858,6 +11956,7 @@
   "stem": "The image shows a mechanism which is commonly used in Technology.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -11888,6 +11987,7 @@
   "stem": "The image shows a mechanism which is commonly used in Technology.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -11950,6 +12050,7 @@
   "stem": "",
   "figureKey": "technology-2022-OL-scheme-secA-q8",
   "questionFigureKey": "technology-2022-OL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12102,6 +12203,7 @@
   "stem": "The circuit diagram shown contains a power supply, a switch, a resistor and an LED. R Calculate the voltage drop across the resistor. Note: V = I × R",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12132,6 +12234,7 @@
   "stem": "The circuit diagram shown contains a power supply, a switch, a resistor and an LED. R Calculate the voltage drop across the resistor. Note: V = I × R",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -12176,6 +12279,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12536,6 +12640,7 @@
   "stem": "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12566,6 +12671,7 @@
   "stem": "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12596,6 +12702,7 @@
   "stem": "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12686,6 +12793,7 @@
   "stem": "Most modern bicycle frames, such as the one shown, are made from lightweight aluminium alloys.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secB-q3d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12716,6 +12824,7 @@
   "stem": "Most modern bicycle frames, such as the one shown, are made from lightweight aluminium alloys.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secB-q3d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12806,6 +12915,7 @@
   "stem": "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
   "figureKey": "technology-2022-OL-scheme-secC-q1b-i",
   "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12838,6 +12948,7 @@
   "stem": "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
   "figureKey": "technology-2022-OL-scheme-secC-q1b-ii",
   "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -12870,6 +12981,7 @@
   "stem": "The image shows Robo-Deck cleaning a deck. As the brushes at the front clean the deck, a wood stain is sprayed from the back to protect the deck.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13034,6 +13146,7 @@
   "stem": "A resistor R, the resistor colour and tolerance code tables, are shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13064,6 +13177,7 @@
   "stem": "A resistor R, the resistor colour and tolerance code tables, are shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13094,6 +13208,7 @@
   "stem": "The circuit diagram shown is a temperature sensing circuit which is often used in project work.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13124,6 +13239,7 @@
   "stem": "The circuit diagram shown is a temperature sensing circuit which is often used in project work.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13154,6 +13270,7 @@
   "stem": "The circuit diagram shown is a temperature sensing circuit which is often used in project work.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13244,6 +13361,7 @@
   "stem": "The graphic shows a combination of two logic gates.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13274,6 +13392,7 @@
   "stem": "The graphic shows a combination of two logic gates.",
   "figureKey": "technology-2022-OL-scheme-secC-q2d-ii",
   "questionFigureKey": "technology-2022-OL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13583,6 +13702,7 @@
   "stem": "When a company produces a product, it must be packaged securely for distribution, storage, and sale.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13613,6 +13733,7 @@
   "stem": "When a company produces a product, it must be packaged securely for distribution, storage, and sale.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13927,6 +14048,7 @@
   "stem": "CLT is used in the construction of the exterior panels of the building shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13957,6 +14079,7 @@
   "stem": "CLT is used in the construction of the exterior panels of the building shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -13987,6 +14110,7 @@
   "stem": "CLT is used in the construction of the exterior panels of the building shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2022-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14197,6 +14321,7 @@
   "stem": "Copperfish is an award-winning business, based in Co. Wicklow, creating lighting products from salvaged and storm-fallen timber.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14227,6 +14352,7 @@
   "stem": "Copperfish is an award-winning business, based in Co. Wicklow, creating lighting products from salvaged and storm-fallen timber.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14308,6 +14434,7 @@
   "stem": "An electronic output component is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14338,6 +14465,7 @@
   "stem": "An electronic output component is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14569,6 +14697,7 @@
   "stem": "",
   "figureKey": "technology-2023-HL-scheme-secA-q8",
   "questionFigureKey": "technology-2023-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14599,6 +14728,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -14629,6 +14759,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -14673,6 +14804,7 @@
   "stem": "A cycle helmet and attached camera with protective case, is shown in the image. The camera is powered by a rechargeable internal battery.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -14724,6 +14856,7 @@
   "stem": "A cycle helmet and attached camera with protective case, is shown in the image. The camera is powered by a rechargeable internal battery.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -14842,6 +14975,7 @@
   "stem": "A cutaway model of a mechanism for a hoist is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -14879,6 +15013,7 @@
   "stem": "A cutaway model of a mechanism for a hoist is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -15205,6 +15340,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secB-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -15256,6 +15392,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secB-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -16063,6 +16200,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -16104,6 +16242,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -16141,6 +16280,7 @@
   "stem": "",
   "figureKey": "technology-2023-HL-scheme-secC-q2b-iii",
   "questionFigureKey": "technology-2023-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -16943,6 +17083,7 @@
   "stem": "The assembly sequence of a flat screen television is shown below.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -16980,6 +17121,7 @@
   "stem": "The assembly sequence of a flat screen television is shown below.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-HL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -17717,6 +17859,7 @@
   "stem": "",
   "figureKey": "technology-2023-OL-scheme-secA-q7",
   "questionFigureKey": "technology-2023-OL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -17966,6 +18109,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -17996,6 +18140,7 @@
   "stem": "Torpey Hurleys aim to create products which are environmentally friendly and biodegradable, where possible.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secB-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18026,6 +18171,7 @@
   "stem": "Torpey Hurleys aim to create products which are environmentally friendly and biodegradable, where possible.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secB-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18709,6 +18855,7 @@
   "stem": "The image shows a PIC which can be used to control devices such as the novelty light in 1(b) above.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18739,6 +18886,7 @@
   "stem": "The image shows a PIC which can be used to control devices such as the novelty light in 1(b) above.",
   "figureKey": "technology-2023-OL-scheme-secC-q1c-ii",
   "questionFigureKey": "technology-2023-OL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18905,6 +19053,7 @@
   "stem": "The image shows a DPDT switch, that is commonly used for forward and reverse control of a motor. The circuit symbol for the DPDT switch is also shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18935,6 +19084,7 @@
   "stem": "The image shows a DPDT switch, that is commonly used for forward and reverse control of a motor. The circuit symbol for the DPDT switch is also shown.",
   "figureKey": "technology-2023-OL-scheme-secC-q2b-ii",
   "questionFigureKey": "technology-2023-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18967,6 +19117,7 @@
   "stem": "The image shows a DPDT switch, that is commonly used for forward and reverse control of a motor. The circuit symbol for the DPDT switch is also shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18997,6 +19148,7 @@
   "stem": "The image shows an LED torch.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -19027,6 +19179,7 @@
   "stem": "The image shows an LED torch.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -19403,6 +19556,7 @@
   "stem": "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -19433,6 +19587,7 @@
   "stem": "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -19493,6 +19648,7 @@
   "stem": "Expensive road bikes, like the one shown below, are often Assembled-to-Order.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -19523,6 +19679,7 @@
   "stem": "Expensive road bikes, like the one shown below, are often Assembled-to-Order.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -19553,6 +19710,7 @@
   "stem": "Expensive road bikes, like the one shown below, are often Assembled-to-Order.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -19770,6 +19928,7 @@
   "stem": "Permanent and semi-permanent jointing methods were used in the construction of the bridge.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -19807,6 +19966,7 @@
   "stem": "Permanent and semi-permanent jointing methods were used in the construction of the bridge.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -19837,6 +19997,7 @@
   "stem": "Permanent and semi-permanent jointing methods were used in the construction of the bridge.",
   "figureKey": "",
   "questionFigureKey": "technology-2023-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20068,6 +20229,7 @@
   "stem": "A 4K UHD interactive touch screen with integrated proximity sensor is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20098,6 +20260,7 @@
   "stem": "A 4K UHD interactive touch screen with integrated proximity sensor is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20128,6 +20291,7 @@
   "stem": "The guitar amplifier shown may typically contain a Darlington pair.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20158,6 +20322,7 @@
   "stem": "The guitar amplifier shown may typically contain a Darlington pair.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20188,6 +20353,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20218,6 +20384,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -20255,6 +20422,7 @@
   "stem": "Network diagrams use nodes similar to that shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -20292,6 +20460,7 @@
   "stem": "Network diagrams use nodes similar to that shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20322,6 +20491,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20352,6 +20522,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -20403,6 +20574,7 @@
   "stem": "",
   "figureKey": "technology-2024-HL-scheme-secA-q8",
   "questionFigureKey": "technology-2024-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20502,6 +20674,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20546,6 +20719,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -20583,6 +20757,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20613,6 +20788,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -20671,6 +20847,7 @@
   "stem": "eBörd is a smart table with wireless charging capabilities built into its glass surface. It generates energy through the capture of indoor and outdoor light.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -20708,6 +20885,7 @@
   "stem": "eBörd is a smart table with wireless charging capabilities built into its glass surface. It generates energy through the capture of indoor and outdoor light.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20805,6 +20983,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -21827,6 +22006,7 @@
   "stem": "Wireless chargers work on the principle of electromagnetic induction.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -21857,6 +22037,7 @@
   "stem": "Wireless chargers work on the principle of electromagnetic induction.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -21887,6 +22068,7 @@
   "stem": "An incomplete circuit diagram for an astable warning sounder is shown.",
   "figureKey": "technology-2024-HL-scheme-secC-q2b-i",
   "questionFigureKey": "technology-2024-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -21919,6 +22101,7 @@
   "stem": "An incomplete circuit diagram for an astable warning sounder is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -21956,6 +22139,7 @@
   "stem": "An incomplete circuit diagram for an astable warning sounder is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -22067,6 +22251,7 @@
   "stem": "",
   "figureKey": "technology-2024-HL-scheme-secC-q2d-i",
   "questionFigureKey": "technology-2024-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -22099,6 +22284,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -22592,6 +22778,7 @@
   "stem": "A rugby club wishes to purchase 50 personalised trophies, similar to those shown below, for their annual awards. Option A – Use skilled labour to assemble: Cost: €8.50 per unit to assemble. Option B – set up an automated assembly process: €500 set up cost for automated assembly machine. Cost: €0.15 per unit to assemble.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -22643,6 +22830,7 @@
   "stem": "A rugby club wishes to purchase 50 personalised trophies, similar to those shown below, for their annual awards.",
   "figureKey": "technology-2024-HL-scheme-secC-q4b-ii",
   "questionFigureKey": "technology-2024-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -22675,6 +22863,7 @@
   "stem": "A rugby club wishes to purchase 50 personalised trophies, similar to those shown below, for their annual awards. Option A – Use skilled labour to assemble: Cost: €8.50 per unit to assemble. Option B – set up an automated assembly process: €500 set up cost for automated assembly machine. Cost: €0.15 per unit to assemble.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -22807,6 +22996,7 @@
   "stem": "The expected product lifecycle for a hair styling product is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -22858,6 +23048,7 @@
   "stem": "The expected product lifecycle for a hair styling product is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q4d-ii-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -23129,6 +23320,7 @@
   "stem": "Personalised wooden boxes are often used for company presentations.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -23187,6 +23379,7 @@
   "stem": "Personalised wooden boxes are often used for company presentations.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23217,6 +23410,7 @@
   "stem": "PET packaging is suitable for displaying fresh salads, wraps, seafood, desserts, meats, and poultry. Its high clarity enhances the presentation of the food product.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -23254,6 +23448,7 @@
   "stem": "PET packaging is suitable for displaying fresh salads, wraps, seafood, desserts, meats, and poultry. Its high clarity enhances the presentation of the food product.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-HL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -23319,6 +23514,7 @@
   "stem": "The Health and Safety Authority (HSA) provide a range of different colour-coded safety signs.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23349,6 +23545,7 @@
   "stem": "The Health and Safety Authority (HSA) provide a range of different colour-coded safety signs.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23591,6 +23788,7 @@
   "stem": "The tool shown is commonly used in the Technology room.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23621,6 +23819,7 @@
   "stem": "The tool shown is commonly used in the Technology room.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23651,6 +23850,7 @@
   "stem": "",
   "figureKey": "technology-2024-OL-scheme-secA-q7",
   "questionFigureKey": "technology-2024-OL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23683,6 +23883,7 @@
   "stem": "The image shows a mechanism that allows the driver and driven wheels to rotate in the same direction.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23713,6 +23914,7 @@
   "stem": "The image shows a mechanism that allows the driver and driven wheels to rotate in the same direction.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -23914,6 +24116,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24380,6 +24583,7 @@
   "stem": "The diagram shows a wing of the JA1 aircraft.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24410,6 +24614,7 @@
   "stem": "The diagram shows a wing of the JA1 aircraft.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24560,6 +24765,7 @@
   "stem": "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
   "figureKey": "technology-2024-OL-scheme-secC-q1b-i",
   "questionFigureKey": "technology-2024-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24592,6 +24798,7 @@
   "stem": "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
   "figureKey": "technology-2024-OL-scheme-secC-q1b-ii",
   "questionFigureKey": "technology-2024-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24624,6 +24831,7 @@
   "stem": "A PIC, like the one mentioned in 1(a) above, is programmed using a flowchart.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24714,6 +24922,7 @@
   "stem": "The graphic shows the pneumatic symbol for a single-acting cylinder (actuator).",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24744,6 +24953,7 @@
   "stem": "The graphic shows the pneumatic symbol for a single-acting cylinder (actuator).",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24841,6 +25051,7 @@
   "stem": "Part of a 555 monostable IC is shown in the diagram.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24871,6 +25082,7 @@
   "stem": "Part of a 555 monostable IC is shown in the diagram.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -24901,6 +25113,7 @@
   "stem": "Part of a 555 monostable IC is shown in the diagram.",
   "figureKey": "technology-2024-OL-scheme-secC-q2b-iii",
   "questionFigureKey": "technology-2024-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -25000,6 +25213,7 @@
   "stem": "A resistor with a gold band indicates that it has a tolerance of 5%.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -25037,6 +25251,7 @@
   "stem": "A resistor with a gold band indicates that it has a tolerance of 5%.",
   "figureKey": "",
   "questionFigureKey": "technology-2024-OL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -26058,6 +26273,7 @@
   "stem": "A range of capacitors is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -26088,6 +26304,7 @@
   "stem": "A range of capacitors is shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -26125,6 +26342,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -26229,6 +26447,7 @@
   "stem": "",
   "figureKey": "technology-2025-HL-scheme-secA-q7",
   "questionFigureKey": "technology-2025-HL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -26261,6 +26480,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -26451,6 +26671,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -26502,6 +26723,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -26560,6 +26782,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -26664,6 +26887,7 @@
   "stem": "",
   "figureKey": "technology-2025-HL-scheme-secA-q15",
   "questionFigureKey": "technology-2025-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -27173,6 +27397,7 @@
   "stem": "A gearbox that could be used in a personal transport pod is shown in the graphic.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -27210,6 +27435,7 @@
   "stem": "A gearbox that could be used in a personal transport pod is shown in the graphic.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -27247,6 +27473,7 @@
   "stem": "A gearbox that could be used in a personal transport pod is shown in the graphic.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -27820,6 +28047,7 @@
   "stem": "An adjustable LED circuit activates in low light.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -27850,6 +28078,7 @@
   "stem": "An adjustable LED circuit activates in low light.",
   "figureKey": "technology-2025-HL-scheme-secC-q2b-ii",
   "questionFigureKey": "technology-2025-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -27882,6 +28111,7 @@
   "stem": "An adjustable LED circuit activates in low light.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -27983,6 +28213,7 @@
   "stem": "Resistance, voltage, and current can be measured using electronic meters.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -28020,6 +28251,7 @@
   "stem": "Resistance, voltage, and current can be measured using electronic meters.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -28520,6 +28752,7 @@
   "stem": "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -28550,6 +28783,7 @@
   "stem": "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -28587,6 +28821,7 @@
   "stem": "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -29133,6 +29368,7 @@
   "stem": "The machine shown is commonly used in Technology workshops.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -29163,6 +29399,7 @@
   "stem": "The machine shown is commonly used in Technology workshops.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -29253,6 +29490,7 @@
   "stem": "The safety sign shown is commonly used in everyday life.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -29283,6 +29521,7 @@
   "stem": "The safety sign shown is commonly used in everyday life.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -29313,6 +29552,7 @@
   "stem": "",
   "figureKey": "technology-2025-OL-scheme-secA-q4",
   "questionFigureKey": "technology-2025-OL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -29682,6 +29922,7 @@
   "stem": "The mechanism shown below is widely used in industrial machines.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -29712,6 +29953,7 @@
   "stem": "The mechanism shown below is widely used in industrial machines.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -29742,6 +29984,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -30743,6 +30986,7 @@
   "stem": "The graphic shows a combination of two logic gates.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -30773,6 +31017,7 @@
   "stem": "The graphic shows a combination of two logic gates.",
   "figureKey": "technology-2025-OL-scheme-secC-q2c-ii",
   "questionFigureKey": "technology-2025-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -31474,6 +31719,7 @@
   "stem": "The graphic shows the typical operating process of a fused deposition 3D printer.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [
    {
     "letter": "A",
@@ -31530,6 +31776,7 @@
   "stem": "The graphic shows the typical operating process of a fused deposition 3D printer.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -31560,6 +31807,7 @@
   "stem": "The graphic shows the typical operating process of a fused deposition 3D printer.",
   "figureKey": "",
   "questionFigureKey": "technology-2025-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -31791,6 +32039,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -32089,6 +32338,7 @@
   "stem": "",
   "figureKey": "technology-2026-HL-scheme-secA-q8",
   "questionFigureKey": "technology-2026-HL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -32119,6 +32369,7 @@
   "stem": "Machine systems can create a mechanical advantage. This is represented by the lever shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -32170,6 +32421,7 @@
   "stem": "Machine systems can create a mechanical advantage. This is represented by the lever shown.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -32207,6 +32459,7 @@
   "stem": "A jigsaw can be used to make straight and curved cuts in a range of materials.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -32237,6 +32490,7 @@
   "stem": "A jigsaw can be used to make straight and curved cuts in a range of materials.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -32267,6 +32521,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -32399,6 +32654,7 @@
   "stem": "",
   "figureKey": "technology-2026-HL-scheme-secA-q13",
   "questionFigureKey": "technology-2026-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -32538,6 +32794,7 @@
   "stem": "",
   "figureKey": "technology-2026-HL-scheme-secA-q15",
   "questionFigureKey": "technology-2026-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -33530,6 +33787,7 @@
   "stem": "Operational amplifiers (op-amps) are used for the efficient operation of modern mobile devices.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -33567,6 +33825,7 @@
   "stem": "Operational amplifiers (op-amps) are used for the efficient operation of modern mobile devices.",
   "figureKey": "technology-2026-HL-scheme-secC-q2b-ii",
   "questionFigureKey": "technology-2026-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -33599,6 +33858,7 @@
   "stem": "Operational amplifiers (op-amps) are used for the efficient operation of modern mobile devices.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -34196,6 +34456,7 @@
   "stem": "The table shows the number of paint defects observed on car doors produced in a factory over 12 consecutive days.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -34240,6 +34501,7 @@
   "stem": "The table shows the number of paint defects observed on car doors produced in a factory over 12 consecutive days.",
   "figureKey": "technology-2026-HL-scheme-secC-q4b-ii",
   "questionFigureKey": "technology-2026-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -34272,6 +34534,7 @@
   "stem": "The table shows the number of paint defects observed on car doors produced in a factory over 12 consecutive days.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -34559,6 +34822,7 @@
   "stem": "The multi-function gardening tool shown is widely used in landscaping.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -34589,6 +34853,7 @@
   "stem": "The multi-function gardening tool shown is widely used in landscaping.",
   "figureKey": "technology-2026-HL-scheme-secC-q5b-ii",
   "questionFigureKey": "technology-2026-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -34640,6 +34905,7 @@
   "stem": "The multi-function gardening tool shown is widely used in landscaping.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -34684,6 +34950,7 @@
   "stem": "The multi-function gardening tool is an example of modular design.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -34742,6 +35009,7 @@
   "stem": "The multi-function gardening tool is an example of modular design.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-HL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -34825,6 +35093,7 @@
   "stem": "The machine shown is commonly used in Technology workshops.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -34855,6 +35124,7 @@
   "stem": "The machine shown is commonly used in Technology workshops.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -34945,6 +35215,7 @@
   "stem": "The safety sign shown is commonly used in everyday life.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -34975,6 +35246,7 @@
   "stem": "The safety sign shown is commonly used in everyday life.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35005,6 +35277,7 @@
   "stem": "",
   "figureKey": "technology-2026-OL-scheme-secA-q4",
   "questionFigureKey": "technology-2026-OL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35127,6 +35400,7 @@
   "stem": "The image shows a see-saw. A see-saw acts as a lever when in use.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q6-ii-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -35261,6 +35535,7 @@
   "stem": "The circuit diagram shown contains a power supply, a switch, and a motor.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35291,6 +35566,7 @@
   "stem": "The circuit diagram shown contains a power supply, a switch, and a motor.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35381,6 +35657,7 @@
   "stem": "The mechanism shown is widely used in industry and in many other areas.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35411,6 +35688,7 @@
   "stem": "The mechanism shown is widely used in industry and in many other areas.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35441,6 +35719,7 @@
   "stem": "",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35531,6 +35810,7 @@
   "stem": "Many individuals purchase a phone cover when they get a new phone.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -35561,6 +35841,7 @@
   "stem": "Many individuals purchase a phone cover when they get a new phone.",
   "figureKey": "",
   "questionFigureKey": "technology-2026-OL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "questionTotal",
@@ -35598,6 +35879,7 @@
   "stem": "Many individuals purchase a phone cover when they get a new phone.",
   "figureKey": "technology-2026-OL-scheme-secB-q2b-iii",
   "questionFigureKey": "technology-2026-OL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",

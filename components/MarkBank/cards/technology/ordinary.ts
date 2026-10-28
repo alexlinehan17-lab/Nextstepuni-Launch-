@@ -146,7 +146,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "08af010c764caefb07590a91cd18ac8d",
           "alt": "Colour photograph of two meshing gear components: a black shaft with a spiral screw thread, labelled A, lying across the top of a brass toothed wheel, labelled B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -168,7 +169,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "08af010c764caefb07590a91cd18ac8d",
           "alt": "Colour photograph of two meshing gear components: a black shaft with a spiral screw thread, labelled A, lying across the top of a brass toothed wheel, labelled B.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -205,7 +207,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "775baa0c08bedc43c3d9dc6f2958286c",
           "alt": "Colour photograph of a small wooden birdhouse with a pitched roof, a round entrance hole and a perch peg on its front. An arrow labelled B points straight down onto the roof from above, and an arrow labelled A points up and to the right at the front of the birdhouse from the lower left.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2021-OL-scheme-secA-q7",
@@ -324,7 +327,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "73ec2001bde7c4b942d0d006b9bbf112",
           "alt": "Colour photograph of a garden spade lying diagonally: a flat grey-green steel blade at the lower left, a dark green shaft, and a yellow handle ending in a D-shaped grip at the upper right. Nothing on the picture is labelled.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2021-OL-scheme-secA-q11-i",
@@ -357,7 +361,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "64f87f5d4c0ee2f72d2d5f46203f90b2",
           "alt": "Lever diagram: a yellow horizontal beam resting on a yellow triangular fulcrum at its right end. A red arrow labelled 50 N pushes down on the left end, and a red arrow labelled F pushes up from below at a point 0.3 M from the left end and 0.5 M from the fulcrum, the two distances marked with dimension arrows above the beam.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -378,7 +383,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "87fd1aba88e53a648641f729fb8b5c3c",
           "alt": "Black-and-white line drawing of a citrus juicer: a ribbed cone-shaped reamer rising from the centre of a round bowl, a slotted strainer ring around the base of the cone, a pouring lip on the left rim and a short handle on the right.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -504,7 +510,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "ed94bc84c06a964daa3764048ab1b9c4",
           "alt": "Colour photograph of four identical flat-pack cardboard cartons standing upright on a steel bench, with a person reaching between two of them.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -526,7 +533,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "ed94bc84c06a964daa3764048ab1b9c4",
           "alt": "Colour photograph of four identical flat-pack cardboard cartons standing upright on a steel bench, with a person reaching between two of them.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -703,7 +711,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "50690c7a4e9b1518bcbb17f5eb04854c",
           "alt": "The start of a flowchart: a green Start box with an arrow down to a white decision diamond labelled On. A line runs from the diamond's right corner out to the right, up, and back into the right side of the Start box, and an arrow leaves the bottom of the diamond. The top of a purple capsule box from the neighbouring photograph shows at the bottom right. the top 11 pt of the purple Nespresso capsule-box photograph (x 444.6-462, y 339.6-351) shows in the bottom-right corner: the flowchart's return loop reaches x 461.2 and its exit arrow reaches y 350.2, so no rectangle holding the whole flowchart can drop it. The coffee-machine photograph was left out because the (iii) ask line 'Describe how you would indicate, on the machine, that the' runs into its column.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2021-OL-scheme-secC-q1b-i",
@@ -734,7 +743,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "50690c7a4e9b1518bcbb17f5eb04854c",
           "alt": "The start of a flowchart: a green Start box with an arrow down to a white decision diamond labelled On. A line runs from the diamond's right corner out to the right, up, and back into the right side of the Start box, and an arrow leaves the bottom of the diamond. The top of a purple capsule box from the neighbouring photograph shows at the bottom right. the top 11 pt of the purple Nespresso capsule-box photograph (x 444.6-462, y 339.6-351) shows in the bottom-right corner: the flowchart's return loop reaches x 461.2 and its exit arrow reaches y 350.2, so no rectangle holding the whole flowchart can drop it. The coffee-machine photograph was left out because the (iii) ask line 'Describe how you would indicate, on the machine, that the' runs into its column.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2021-OL-scheme-secC-q1b-ii",
@@ -765,7 +775,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "50690c7a4e9b1518bcbb17f5eb04854c",
           "alt": "The start of a flowchart: a green Start box with an arrow down to a white decision diamond labelled On. A line runs from the diamond's right corner out to the right, up, and back into the right side of the Start box, and an arrow leaves the bottom of the diamond. The top of a purple capsule box from the neighbouring photograph shows at the bottom right. the top 11 pt of the purple Nespresso capsule-box photograph (x 444.6-462, y 339.6-351) shows in the bottom-right corner: the flowchart's return loop reaches x 461.2 and its exit arrow reaches y 350.2, so no rectangle holding the whole flowchart can drop it. The coffee-machine photograph was left out because the (iii) ask line 'Describe how you would indicate, on the machine, that the' runs into its column.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -787,7 +798,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "96c53a5708645fe77606f89436d301fb",
           "alt": "Colour photograph of a pneumatic shuttle valve: a silver valve body with three blue push-in air fittings, on a black mounting base. Below it, the shuttle valve's circuit symbol: a rectangle containing a circle between two angled seats, a port line labelled A entering the left side, one labelled B entering the right side, and one labelled C leaving the top from a dot at the centre. the last letters 's.' of the stem line 'The image shows a shuttle valve used in pneumatic circuits.' (ink to x 382.7, y 484.5-492.3) sit at the crop's left edge, level with the photograph; the label A starts at x 378.2, so no rectangle that keeps A can drop them. A symbol-only crop is no cleaner: the photograph's base reaches down into the symbol's top-right corner.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -809,7 +821,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "96c53a5708645fe77606f89436d301fb",
           "alt": "Colour photograph of a pneumatic shuttle valve: a silver valve body with three blue push-in air fittings, on a black mounting base. Below it, the shuttle valve's circuit symbol: a rectangle containing a circle between two angled seats, a port line labelled A entering the left side, one labelled B entering the right side, and one labelled C leaving the top from a dot at the centre. the last letters 's.' of the stem line 'The image shows a shuttle valve used in pneumatic circuits.' (ink to x 382.7, y 484.5-492.3) sit at the crop's left edge, level with the photograph; the label A starts at x 378.2, so no rectangle that keeps A can drop them. A symbol-only crop is no cleaner: the photograph's base reaches down into the symbol's top-right corner.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -890,7 +903,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "e792f7d307de8c4cbad4ecf00d234030",
           "alt": "A circuit diagram between two supply rails with a switch in the top rail: a resistor above an electrolytic capacitor A in series, the junction feeding a transistor B through a resistor, with an LED and resistor in the collector line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -913,7 +927,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "e792f7d307de8c4cbad4ecf00d234030",
           "alt": "A circuit diagram between two supply rails with a switch in the top rail: a resistor above an electrolytic capacitor A in series, the junction feeding a transistor B through a resistor, with an LED and resistor in the collector line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -935,7 +950,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "e792f7d307de8c4cbad4ecf00d234030",
           "alt": "A circuit diagram between two supply rails with a switch in the top rail: a resistor above an electrolytic capacitor A in series, the junction feeding a transistor B through a resistor, with an LED and resistor in the collector line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1241,7 +1257,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "21e3327eb038cbfb500fde2f51c7a6f7",
           "alt": "A black-and-white barcode of vertical bars of varying widths, with the number 0 36000 29145 2 printed beneath it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1263,7 +1280,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "21e3327eb038cbfb500fde2f51c7a6f7",
           "alt": "A black-and-white barcode of vertical bars of varying widths, with the number 0 36000 29145 2 printed beneath it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1286,7 +1304,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a087c9767a50b2947ca82a41a84e902e",
           "alt": "A three-column table headed Body part, Material Classification and Material. Seat: Fabric, Material blank. Tyre: Material Classification blank, Steel-reinforced rubber. Headlight lens: Ceramic, Material blank.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1308,7 +1327,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a087c9767a50b2947ca82a41a84e902e",
           "alt": "A three-column table headed Body part, Material Classification and Material. Seat: Fabric, Material blank. Tyre: Material Classification blank, Steel-reinforced rubber. Headlight lens: Ceramic, Material blank.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2021-OL-scheme-secC-q5a-ii",
@@ -1577,7 +1597,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "3f78c170a3d931466602d13a187b838c",
           "alt": "Colour photograph of a pair of blue plastic bevel gears in mesh: a small pinion standing at right angles above a much larger bevel wheel with a keyed centre bore.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1599,7 +1620,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "3f78c170a3d931466602d13a187b838c",
           "alt": "Colour photograph of a pair of blue plastic bevel gears in mesh: a small pinion standing at right angles above a much larger bevel wheel with a keyed centre bore.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1642,7 +1664,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "6d610784b574e8fd994cd85fbdeb571a",
           "alt": "An incomplete Work Breakdown Structure drawn as three rows of boxes joined by arrows. Top row: Back, then Cut out, then Sand, then Paint. Second row: Sides, followed by three empty boxes. Third row: Roller, followed by three empty boxes. Arrows from the end of all three rows lead into one empty box on the right.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2022-OL-scheme-secA-q8",
@@ -1729,7 +1752,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c3c785f0daa69f8435fdd9a31d3d9429",
           "alt": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1753,7 +1777,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c3c785f0daa69f8435fdd9a31d3d9429",
           "alt": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1774,7 +1799,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "9734785c0bad60afd48cb158efd2e91a",
           "alt": "Outline line drawing of a USB flash drive in pictorial view, drawn unshaded in a ruled box, with its cap lying separately to the right and the metal connector exposed.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1947,7 +1973,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "686188c29f3f4bcfb6ee2c3e98e9f475",
           "alt": "A photograph of a black fabric battery pack holder with a Swytch logo, mounted on the front of a turquoise bicycle's handlebars between the brake levers and tan grips. A red arrow points up to the holder from the label 'Battery pack holder' printed beneath the photograph.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1969,7 +1996,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "686188c29f3f4bcfb6ee2c3e98e9f475",
           "alt": "A photograph of a black fabric battery pack holder with a Swytch logo, mounted on the front of a turquoise bicycle's handlebars between the brake levers and tan grips. A red arrow points up to the holder from the label 'Battery pack holder' printed beneath the photograph.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1991,7 +2019,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "686188c29f3f4bcfb6ee2c3e98e9f475",
           "alt": "A photograph of a black fabric battery pack holder with a Swytch logo, mounted on the front of a turquoise bicycle's handlebars between the brake levers and tan grips. A red arrow points up to the holder from the label 'Battery pack holder' printed beneath the photograph.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2041,7 +2070,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "6c341fab2ec6d163e356d882ce7c5e13",
           "alt": "A photograph of a bare pale blue road-bicycle frame with no wheels or components: top tube, down tube and seat tube forming the main triangle, thin rear stays forming a second triangle, and a dark blue front fork, with brand lettering on the tubes.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2063,7 +2093,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "6c341fab2ec6d163e356d882ce7c5e13",
           "alt": "A photograph of a bare pale blue road-bicycle frame with no wheels or components: top tube, down tube and seat tube forming the main triangle, thin rear stays forming a second triangle, and a dark blue front fork, with brand lettering on the tubes.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2113,7 +2144,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "3f92991fdda314fd2218fa26fd6b1fa5",
           "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2022-OL-scheme-secC-q1b-i",
@@ -2144,7 +2176,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "3f92991fdda314fd2218fa26fd6b1fa5",
           "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2022-OL-scheme-secC-q1b-ii",
@@ -2175,7 +2208,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "3f92991fdda314fd2218fa26fd6b1fa5",
           "alt": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2253,7 +2287,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a855e7cf54e6a35b5da036d339e3b96e",
           "alt": "A photograph of a beige axial resistor lying diagonally, with a wire lead at each end and four coloured bands: brown, black and red, then a gold band set apart nearer one end. The letter R is printed beside it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2275,7 +2310,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a855e7cf54e6a35b5da036d339e3b96e",
           "alt": "A photograph of a beige axial resistor lying diagonally, with a wire lead at each end and four coloured bands: brown, black and red, then a gold band set apart nearer one end. The letter R is printed beside it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2297,7 +2333,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "880020fc3340fbf6cec5ab993b41e85d",
           "alt": "A circuit diagram between 6V and 0V rails with a switch in the top rail: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor, with a buzzer C in the collector line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2319,7 +2356,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "880020fc3340fbf6cec5ab993b41e85d",
           "alt": "A circuit diagram between 6V and 0V rails with a switch in the top rail: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor, with a buzzer C in the collector line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2341,7 +2379,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "880020fc3340fbf6cec5ab993b41e85d",
           "alt": "A circuit diagram between 6V and 0V rails with a switch in the top rail: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor, with a buzzer C in the collector line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2391,7 +2430,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a5adc9c0ec8e631a25dad3e5d5cd627e",
           "alt": "A logic circuit diagram drawn with two gates. Inputs A and B enter an OR gate labelled X; its output, labelled C, feeds a NOT gate (inverter) labelled Y, whose output is labelled D.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2413,7 +2453,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a5adc9c0ec8e631a25dad3e5d5cd627e",
           "alt": "A logic circuit diagram drawn with two gates. Inputs A and B enter an OR gate labelled X; its output, labelled C, feeds a NOT gate (inverter) labelled Y, whose output is labelled D.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2022-OL-scheme-secC-q2d-ii",
@@ -2571,7 +2612,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "f105fd130205b310d95360e5ef5b3c12",
           "alt": "Colour photograph of corrugated cardboard packaging: a stack of flat die-cut carton blanks behind three small assembled cube-shaped boxes, one of them open.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2593,7 +2635,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "f105fd130205b310d95360e5ef5b3c12",
           "alt": "Colour photograph of corrugated cardboard packaging: a stack of flat die-cut carton blanks behind three small assembled cube-shaped boxes, one of them open.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2743,7 +2786,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c2a51b2de11186c6f6bcd7c8cadd8697",
           "alt": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2765,7 +2809,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c2a51b2de11186c6f6bcd7c8cadd8697",
           "alt": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2787,7 +2832,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c2a51b2de11186c6f6bcd7c8cadd8697",
           "alt": "Colour photograph of a prefabricated timber-framed facade panel with a window and cladding being craned into place on a partly built timber-frame building. The panel is labelled A and the concrete floor slab beneath it is labelled B; two workers in helmets and harnesses guide it in.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3030,7 +3076,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "3e91073addd9d78a3012d2f53f4ca589",
           "alt": "Colour photograph of a bamboo cookbook stand: a large flat bamboo board leaning back on a stand, with a ledge along its bottom edge held by two black clips, and a slotted support rack visible behind it. A black arrow labelled A at the lower right points at the stand from the right-hand side.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2023-OL-scheme-secA-q7",
@@ -3158,7 +3205,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c5c00cb6dc4aea0dccbffa66d0aeb89c",
           "alt": "Outline line drawing of an electric kettle in pictorial view, drawn unshaded in a ruled box: the tapered jug with its spout, hinged lid, handle and water-level window, standing on its power base.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3180,7 +3228,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "2b76b7ac7873ffc4a4818ecfde81a834",
           "alt": "Colour photograph of a hurler's legs, in blue and yellow socks, standing on grass and holding a hurley upright with its taped handle at the top. A red arrow from the label 'Grip', on the left, points to the taped handle. the letter 'y' that ends 'environmentally' in the 2(a) stem line shows at the top-left corner: that glyph runs from x 399.6 to 405.0 and the 'Grip' label starts at x 400.0, beside a photo whose top is y 134.7, so no rectangle keeps the label and drops the letter",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3202,7 +3251,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "2b76b7ac7873ffc4a4818ecfde81a834",
           "alt": "Colour photograph of a hurler's legs, in blue and yellow socks, standing on grass and holding a hurley upright with its taped handle at the top. A red arrow from the label 'Grip', on the left, points to the taped handle. the letter 'y' that ends 'environmentally' in the 2(a) stem line shows at the top-left corner: that glyph runs from x 399.6 to 405.0 and the 'Grip' label starts at x 400.0, beside a photo whose top is y 134.7, so no rectangle keeps the label and drops the letter",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3537,7 +3587,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5d218472f72e022951e065c84bae1516",
           "alt": "Colour photograph of a long black dual in-line integrated circuit chip, white lettering printed on its top, with a row of silver pins along each long side.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3559,7 +3610,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5d218472f72e022951e065c84bae1516",
           "alt": "Colour photograph of a long black dual in-line integrated circuit chip, white lettering printed on its top, with a row of silver pins along each long side.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2023-OL-scheme-secC-q1c-ii",
@@ -3648,7 +3700,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a5a16a9df3c1b5137f30f1ef1848915a",
           "alt": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3670,7 +3723,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a5a16a9df3c1b5137f30f1ef1848915a",
           "alt": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2023-OL-scheme-secC-q2b-ii",
@@ -3701,7 +3755,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "a5a16a9df3c1b5137f30f1ef1848915a",
           "alt": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3723,7 +3778,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7690997a731c39f03bd6f7399d311f30",
           "alt": "Colour photograph of a black aluminium LED pocket torch lying at an angle, with a knurled grip band, a pocket clip and a reflector lens at the left end.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3745,7 +3801,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7690997a731c39f03bd6f7399d311f30",
           "alt": "Colour photograph of a black aluminium LED pocket torch lying at an angle, with a knurled grip band, a pocket clip and a reflector lens at the left end.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3932,7 +3989,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "499e8fda35e072dca0285f680e82a479",
           "alt": "A perceptual map. A vertical red double-headed arrow runs from 'Low quality' at the bottom to 'High quality' at the top; it crosses a horizontal red double-headed arrow running from 'Low cost' on the left to 'High cost' on the right. Three circled letters mark products: A in the upper-left quarter (low cost, high quality), B in the upper-right quarter (high cost, high quality), and C just below the centre on the left (low cost, low quality).",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3956,7 +4014,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "499e8fda35e072dca0285f680e82a479",
           "alt": "A perceptual map. A vertical red double-headed arrow runs from 'Low quality' at the bottom to 'High quality' at the top; it crosses a horizontal red double-headed arrow running from 'Low cost' on the left to 'High cost' on the right. Three circled letters mark products: A in the upper-left quarter (low cost, high quality), B in the upper-right quarter (high cost, high quality), and C just below the centre on the left (low cost, low quality).",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3978,7 +4037,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "6e592660c8165dcd69956f53dc399c55",
           "alt": "Colour photograph of a white S-Works road bicycle with deep-section black wheels, standing on a road in front of desert hills.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4000,7 +4060,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "6e592660c8165dcd69956f53dc399c55",
           "alt": "Colour photograph of a white S-Works road bicycle with deep-section black wheels, standing on a road in front of desert hills.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4022,7 +4083,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "6e592660c8165dcd69956f53dc399c55",
           "alt": "Colour photograph of a white S-Works road bicycle with deep-section black wheels, standing on a road in front of desert hills.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4130,7 +4192,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bd9c5dbdbc7feab0285aa75e27da9a3f",
           "alt": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4152,7 +4215,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bd9c5dbdbc7feab0285aa75e27da9a3f",
           "alt": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4174,7 +4238,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bd9c5dbdbc7feab0285aa75e27da9a3f",
           "alt": "Colour photograph looking up at a suspension bridge from beneath. A red leader line labels the thin hangers running down from the main cable as Vertical cables, and a second labels the roadway box girder as Deck; a tower stands in the water in the background.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4254,7 +4319,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7e6f92f073af27a74b07bf0ee9a43704",
           "alt": "A round blue mandatory safety sign showing, in white, water running from a tap over a pair of hands being washed.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4276,7 +4342,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "7e6f92f073af27a74b07bf0ee9a43704",
           "alt": "A round blue mandatory safety sign showing, in white, water running from a tap over a pair of hands being washed.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4404,7 +4471,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fafdc319b7193036e20d714e770ab8e5",
           "alt": "Colour photograph of a sliding bevel: a black steel blade with a long slot, locked by a brass wing nut at the end of a polished hardwood stock with brass end caps.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4426,7 +4494,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fafdc319b7193036e20d714e770ab8e5",
           "alt": "Colour photograph of a sliding bevel: a black steel blade with a long slot, locked by a brass wing nut at the end of a polished hardwood stock with brass end caps.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4447,7 +4516,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "774753076c12128477ed4d98a9d7e1a8",
           "alt": "Colour photograph of a blue steel machine tool stand with a plywood top and a plywood lower shelf on four splayed legs with black feet; a black arrow labelled A at the bottom right points diagonally up at the stand, giving the direction of view.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2024-OL-scheme-secA-q7",
@@ -4478,7 +4548,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "caa9e1786e82ad94d775146ffe7fcf8e",
           "alt": "Colour photograph of a toothed belt drive: two flanged toothed pulleys of equal size joined by a black toothed timing belt whose teeth mesh with the pulleys.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4500,7 +4571,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "caa9e1786e82ad94d775146ffe7fcf8e",
           "alt": "Colour photograph of a toothed belt drive: two flanged toothed pulleys of equal size joined by a black toothed timing belt whose teeth mesh with the pulleys.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4593,7 +4665,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "304bfd8f8fae1c2cb3d87cfbf11b5dfd",
           "alt": "Outline line drawing of an angle-poise desk lamp in pictorial view, drawn unshaded in a ruled box: the conical shade, the two-part jointed arm and the weighted domed base.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4819,7 +4892,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "45bdb529beedf9f37d705694de7a9bd5",
           "alt": "Outline side view of a model tilt-rotor aircraft on a stand: a 50 N upward force at the rear rotor 3 m from the nose, an arrow at the nose marking the fulcrum, and the rear motor labelled Motor.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4841,7 +4915,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "45bdb529beedf9f37d705694de7a9bd5",
           "alt": "Outline side view of a model tilt-rotor aircraft on a stand: a 50 N upward force at the rear rotor 3 m from the nose, an arrow at the nose marking the fulcrum, and the rear motor labelled Motor.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -4919,7 +4994,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "790d521a56a75561ab3b81bcc983ea18",
           "alt": "The start of a flowchart for the student to complete: a green Start box with an arrow down to a purple diamond decision labelled Button, whose right-hand exit loops back up to Start and whose lower exit is an open arrow pointing down.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2024-OL-scheme-secC-q1b-i",
@@ -4950,7 +5026,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "790d521a56a75561ab3b81bcc983ea18",
           "alt": "The start of a flowchart for the student to complete: a green Start box with an arrow down to a purple diamond decision labelled Button, whose right-hand exit loops back up to Start and whose lower exit is an open arrow pointing down.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2024-OL-scheme-secC-q1b-ii",
@@ -4981,7 +5058,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "790d521a56a75561ab3b81bcc983ea18",
           "alt": "The start of a flowchart for the student to complete: a green Start box with an arrow down to a purple diamond decision labelled Button, whose right-hand exit loops back up to Start and whose lower exit is an open arrow pointing down.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5031,7 +5109,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "14aef6134821763b1908a6ff42dc85aa",
           "alt": "The pneumatic symbol for a double-acting cylinder: a rectangular barrel containing a piston and a piston rod that passes out through the right-hand end, with hatching drawn inside the barrel and a port stub beneath the left-hand end.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5053,7 +5132,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "14aef6134821763b1908a6ff42dc85aa",
           "alt": "The pneumatic symbol for a double-acting cylinder: a rectangular barrel containing a piston and a piston rod that passes out through the right-hand end, with hatching drawn inside the barrel and a port stub beneath the left-hand end.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5104,7 +5184,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "33c2290c1e5f0d819a6be36edf7dbd0a",
           "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5126,7 +5207,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "33c2290c1e5f0d819a6be36edf7dbd0a",
           "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5148,7 +5230,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "33c2290c1e5f0d819a6be36edf7dbd0a",
           "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2024-OL-scheme-secC-q2b-iii",
@@ -5209,7 +5292,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fce7350ba9590dc4f6f7dd0464a60e35",
           "alt": "A partial resistor circuit: an 8 Ω resistor in series with a pair of 10 Ω resistors connected in parallel, with a lead at each end.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5232,7 +5316,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "fce7350ba9590dc4f6f7dd0464a60e35",
           "alt": "A partial resistor circuit: an 8 Ω resistor in series with a pair of 10 Ω resistors connected in parallel, with a lead at each end.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5634,7 +5719,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "97cb07252812724547c49319ed217a2e",
           "alt": "A photograph of a tall floor-standing workshop machine with a blue and white body: an upper and a lower cabinet, a vertical blade guide with a yellow guard above a square work table, a handwheel at the top right and the model mark BP-430A printed down the lower cabinet.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5656,7 +5742,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "97cb07252812724547c49319ed217a2e",
           "alt": "A photograph of a tall floor-standing workshop machine with a blue and white body: an upper and a lower cabinet, a vertical blade guide with a yellow guard above a square work table, a handwheel at the top right and the model mark BP-430A printed down the lower cabinet.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5706,7 +5793,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "629e17523d9763920c5bf5469c6234a1",
           "alt": "A round safety sign on white: a black camera symbol inside a thick red circle with a red diagonal bar struck through it from top left to bottom right.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5728,7 +5816,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "629e17523d9763920c5bf5469c6234a1",
           "alt": "A round safety sign on white: a black camera symbol inside a thick red circle with a red diagonal bar struck through it from top left to bottom right.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5749,7 +5838,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bc19363441b4b58697638cc67c73937d",
           "alt": "A photograph of a child's wooden ride-on toy: a curved wooden seat on a front leg and a rear support, four black wheels with red hubs, and a red T-shaped handlebar at the front. At the lower right a black arrow labelled A points in towards the toy, giving the direction of view.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2025-OL-scheme-secA-q4",
@@ -5932,7 +6022,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bac61d4f1b02613436d57e4d5d216a08",
           "alt": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5954,7 +6045,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "bac61d4f1b02613436d57e4d5d216a08",
           "alt": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -5975,7 +6067,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "8f25fd0bd7aa29725697cc4567cbee66",
           "alt": "Line drawing of a disposable takeaway coffee cup, drawn in outline on a lightly hatched square inside a ruled box: a domed lid with a drinking hole, a sleeve carrying a coffee-bean motif, and the tapered cup below it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -6471,7 +6564,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "cdcab8868decb47f9affb1cb80ad5ac5",
           "alt": "A combination of two logic gates: inputs A and B enter a D-shaped gate (flat input side, rounded output side) labelled X; its output, labelled C, enters a triangle with a small circle at its tip labelled Y, whose output is labelled D. Below it, a truth table headed A, B, C, D with the A and B columns filled 0 0, 0 1, 1 0, 1 1 and the C and D columns left blank.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -6493,7 +6587,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "cdcab8868decb47f9affb1cb80ad5ac5",
           "alt": "A combination of two logic gates: inputs A and B enter a D-shaped gate (flat input side, rounded output side) labelled X; its output, labelled C, enters a triangle with a small circle at its tip labelled Y, whose output is labelled D. Below it, a truth table headed A, B, C, D with the A and B columns filled 0 0, 0 1, 1 0, 1 1 and the C and D columns left blank.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2025-OL-scheme-secC-q2c-ii",
@@ -6838,7 +6933,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "1bd2905e79526029d863cebb29152cd2",
           "alt": "A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -6860,7 +6956,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "1bd2905e79526029d863cebb29152cd2",
           "alt": "A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -6882,7 +6979,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "1bd2905e79526029d863cebb29152cd2",
           "alt": "A diagram of a fused deposition 3D printer: green filament runs from a reel on the right, over the top and down between a pair of grey rollers, through a grey housing to a red-and-yellow block and a nozzle above a green printed block standing on a flat grey plate. Red arrows mark A (the reel), B (the filament entering the rollers), C (the red-and-yellow block), D (the green block) and E (the plate).",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -6958,7 +7056,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "4f86229b499dd9894e78e8d9cbe81b90",
           "alt": "Colour photograph of a green floor-standing pillar drill: the motor and chuck at the top of a steel column, a machine vice on the table and a heavy cast base.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -6980,7 +7079,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "4f86229b499dd9894e78e8d9cbe81b90",
           "alt": "Colour photograph of a green floor-standing pillar drill: the motor and chuck at the top of a steel column, a machine vice on the table and a heavy cast base.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7030,7 +7130,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c848819b5818f2735a6c155b32c82b43",
           "alt": "A yellow triangular warning sign with a black border showing a figure tripping over a raised step.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7052,7 +7153,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "c848819b5818f2735a6c155b32c82b43",
           "alt": "A yellow triangular warning sign with a black border showing a figure tripping over a raised step.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7073,7 +7175,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "580e278a971e7d8decea0c74a37ed06e",
           "alt": "Colour photograph of a three-tiered wooden planter box on grass, three stepped troughs on a diagonal frame, with a white arrow labelled A pointing at its front.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2026-OL-scheme-secA-q4",
@@ -7148,7 +7251,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "8874dfacbf044dcd2e22cae3c6867803",
           "alt": "A lever diagram: a horizontal bar on a triangular fulcrum, a 40 N downward arrow at the left end 1 M from the fulcrum and a downward force F at the right end 4 M from it.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7209,7 +7313,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5f78da86141e71f2ed05e6050d7fad49",
           "alt": "A circuit diagram: a battery feeding a motor M through a double-pole double-throw switch outlined in a red dashed box and labelled Switch A, with its two blades linked by a dashed line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7231,7 +7336,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "5f78da86141e71f2ed05e6050d7fad49",
           "alt": "A circuit diagram: a battery feeding a motor M through a double-pole double-throw switch outlined in a red dashed box and labelled Switch A, with its two blades linked by a dashed line.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7281,7 +7387,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "47c9c4253ee9324e89f0e693abe4f9d3",
           "alt": "Shaded drawing of a ratchet and pawl: a toothed wheel with a keyed bore and a red arrow showing its rotation, with a pawl on a pivot above it and a red arrow showing the pawl lifting.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7303,7 +7410,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "47c9c4253ee9324e89f0e693abe4f9d3",
           "alt": "Shaded drawing of a ratchet and pawl: a toothed wheel with a keyed bore and a red arrow showing its rotation, with a pawl on a pivot above it and a red arrow showing the pawl lifting.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7324,7 +7432,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "e43ce7f7d133271fbc6790d535fce640",
           "alt": "Outline line drawing of a pump-action soap dispenser in a ruled box: a tapered bottle with a collar and a pump head whose nozzle points to the right.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7374,7 +7483,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "4638d95cb17b4f9ad85ee043fb316a25",
           "alt": "Colour photograph of a clear phone cover with a magnetic ring on its back, seen from behind.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7397,7 +7507,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "4638d95cb17b4f9ad85ee043fb316a25",
           "alt": "Colour photograph of a clear phone cover with a magnetic ring on its back, seen from behind.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7419,7 +7530,8 @@ export const CARDS: SecCard[] = [
           "srcHash": "4638d95cb17b4f9ad85ee043fb316a25",
           "alt": "Colour photograph of a clear phone cover with a magnetic ring on its back, seen from behind.",
           "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+          "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
     },
     figure: {
           "candId": "technology-2026-OL-scheme-secB-q2b-iii",

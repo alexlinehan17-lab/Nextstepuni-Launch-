@@ -913,6 +913,12 @@ def author(bind_figures=True):
                     # by the siblings under one part, which is right here: the
                     # paper prints the picture once for the whole question.
                     'questionFigureKey': figure or '',
+                    # A Technology question figure is the PICTURE the ask names
+                    # (a circuit, a lamp, a gate), never the printed ask itself:
+                    # the session screen must keep the stem and the ask text
+                    # visible beside it (SessionScreen printedQuestionReplacesText
+                    # hides both unless includesPrompt is false).
+                    **({'questionFigureIncludesPrompt': False} if figure else {}),
                     'labelKey': label_key,
                     'tariffModel': model,
                     'totalMarks': total,
