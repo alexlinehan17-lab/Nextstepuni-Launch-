@@ -55075,7 +55075,8 @@
       "topicIds": [
         "physics-higher-old-course-exp-qs-mechanics",
         "physics-higher-old-course-exp-qs-all",
-        "physics-higher-old-course-pressure-gravity-moments"
+        "physics-higher-old-course-pressure-gravity-moments",
+        "physics-higher-new-course-21-the-transfer-of-heat-energy-and-temperature-change"
       ],
       "resolution": "retained-local-reviewed",
       "reason": "Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot."
@@ -55188,7 +55189,9 @@
         "physics-higher-old-course-electromagnetic-induction",
         "physics-higher-old-course-light",
         "physics-higher-old-course-nuclear-energy",
-        "physics-higher-old-course-particle-physics"
+        "physics-higher-old-course-particle-physics",
+        "physics-higher-new-course-14-a-work-energy-model-for-analysing-particle-motion",
+        "physics-higher-new-course-44-radioactivity"
       ],
       "resolution": "retained-local-reviewed",
       "reason": "Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot."
@@ -55209,7 +55212,8 @@
         "physics-higher-new-course-25-sound-energy",
         "physics-higher-old-course-force-mass-momentum",
         "physics-higher-old-course-work-energy-power",
-        "physics-higher-old-course-vibration-sound"
+        "physics-higher-old-course-vibration-sound",
+        "physics-higher-new-course-11-particle-motion-in-a-straight-line"
       ],
       "resolution": "retained-local-reviewed",
       "reason": "Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot."
@@ -55366,7 +55370,10 @@
         "physics-higher-old-course-waves-wave-motion",
         "physics-higher-old-course-static-electricity",
         "physics-higher-old-course-particle-physics",
-        "physics-higher-old-course-semiconductors"
+        "physics-higher-old-course-semiconductors",
+        "physics-higher-new-course-15-forces-acting-in-a-gravitational-field",
+        "physics-higher-new-course-33-electric-circuits",
+        "physics-higher-new-course-45-mass-energy-equivalence"
       ],
       "resolution": "retained-local-reviewed",
       "reason": "Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot."
@@ -55492,7 +55499,9 @@
         "physics-ordinary-old-course-resistance",
         "physics-ordinary-old-course-light",
         "physics-ordinary-old-course-semiconductors",
-        "physics-ordinary-old-course-the-electron"
+        "physics-ordinary-old-course-the-electron",
+        "physics-ordinary-new-course-11-particle-motion-in-a-straight-line",
+        "physics-ordinary-new-course-21-the-transfer-of-heat-energy-and-temperature-change"
       ],
       "resolution": "retained-local-reviewed",
       "reason": "Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot."
@@ -55513,7 +55522,8 @@
         "physics-ordinary-new-course-16-uniform-circular-motion",
         "physics-ordinary-old-course-force-mass-momentum",
         "physics-ordinary-old-course-acceleration",
-        "physics-ordinary-old-course-pressure-gravity-moments"
+        "physics-ordinary-old-course-pressure-gravity-moments",
+        "physics-ordinary-new-course-11-particle-motion-in-a-straight-line"
       ],
       "resolution": "retained-local-reviewed",
       "reason": "Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot."

@@ -69,7 +69,12 @@ SUBJECTS = {
     # its levels are.
     'biology': {'mode': 'merged', 'from': 2010, 'also': []},
     'chemistry': {'mode': 'merged'},
-    'physics': {'mode': 'merged'},
+    # Physics's carded corpus started at 2021 (the 2021-2025 pre-audit cards);
+    # the papers folder also holds 2010-2020 and 2026, fetched for Paper Trail.
+    # The window is a DECISION, as Biology's was: it starts at 2021, takes in
+    # 2026 once carded, and 'also' admits each earlier sitting as its
+    # phys_review_<year>_<level>.py ledger is written (2026-10-28 lane).
+    'physics': {'mode': 'merged', 'from': 2021, 'also': []},
     'agricultural-science': {'mode': 'merged'},
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
@@ -599,6 +604,9 @@ SHORT_ASKS = {
                                                    'genetics:"'),
     ('biology', 2013, 'ol', 'Q11(a)(ii)'): ('Niche.', 'p9: the term "Niche." under "Explain the following terms as '
                                                      'used in ecology:"'),
+    ('physics', 2026, 'ol', 'Q6(d)(ii)'): ('force.', 'p6: the parent prompt asks for an instrument to measure '
+                                                  '(i) energy transferred and (ii) force; one Q6(d) card '
+                                                  'contains both priced answers, joulemeter and newton balance.'),
 }
 
 
@@ -3684,6 +3692,13 @@ def census_subject(subject):
             elif cfg.get('walker') == 're':
                 total = re_cover_marks(files[0])
                 marks = {(None, 0): total} if total else {}
+            elif subject == 'physics' and year == 2022:
+                # Both official 2022 papers print Section B as 224 marks and
+                # say to answer four questions at 56 marks each (page 5).
+                # Later papers use a 280-mark Section B, so label the genuine
+                # 2022 tariff format instead of flagging it as a missing 56.
+                label = 'Section B (224 marks)'
+                marks = marks_by_question(files, subject)
             elif marks is None:
                 marks = marks_by_question(files if cfg['mode'] != 'papers' else
                                           [f for f in files], subject)

@@ -1,0 +1,459 @@
+[
+ {
+  "id": "phys-2022-hl-q6-l-and-gate",
+  "ask": "Draw the symbol for an AND gate. Write o",
+  "answer": "Draw the symbol for an AND gat",
+  "answerInAsk": true,
+  "solution": "physics-2022-hl-q6l-scheme-gate.png"
+ },
+ {
+  "id": "phys-2022-hl-q9-c-ii-a",
+  "ask": "Calculate the current flowing (a) in res",
+  "answer": "RYZ = 1",
+  "figure": "physics-2022-hl-q9c-circuit.png"
+ },
+ {
+  "id": "phys-2022-hl-q9-c-ii-b",
+  "ask": "Calculate the current flowing (b) in res",
+  "answer": "(4)(1",
+  "figure": "physics-2022-hl-q9c-circuit.png"
+ },
+ {
+  "id": "phys-2022-hl-q1-viii",
+  "ask": "Explain how these results verify the law",
+  "answer": "net moment ≈ 0",
+  "figure": "physics-2022-hl-q1-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q2-vi",
+  "ask": "Which of the data points is inconsistent",
+  "answer": "the second data point, i.e. wh",
+  "figure": "physics-2022-hl-q2-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q2-vii",
+  "ask": "How did you treat this data point when y",
+  "answer": "ignored it",
+  "figure": "physics-2022-hl-q2-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q4-iii",
+  "ask": "",
+  "answer": "values for 1",
+  "solution": "physics-2022-hl-q4iii-scheme-table.png",
+  "questionFigure": "physics-2022-hl-q4iii-question.png"
+ },
+ {
+  "id": "phys-2022-hl-q1-vii",
+  "ask": "Calculate the net vertical force acting",
+  "answer": "2.85 + 3.4 – 2 – 3 – 1.2 = 0.0",
+  "figure": "physics-2022-hl-q1-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q1-vi",
+  "ask": "Calculate the net moment about the 0 cm",
+  "answer": "0.321) + (1.2",
+  "figure": "physics-2022-hl-q1-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q3-iv",
+  "ask": "Use your graph to calculate the refracti",
+  "answer": "slope formula",
+  "figure": "physics-2022-hl-q3-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q3-iii",
+  "ask": "Draw a suitable graph to verify Snell’s",
+  "answer": "values for sin i and sin r",
+  "solution": "physics-2022-hl-q3iii-scheme-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q5-iii",
+  "ask": "Draw a suitable graph to verify Joule’s",
+  "answer": "values for I",
+  "solution": "physics-2022-hl-q5iii-scheme-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q2-iv",
+  "ask": "Draw a suitable graph to verify Boyle’s",
+  "answer": "values for 1",
+  "solution": "physics-2022-hl-q2iv-scheme-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q4-iv",
+  "ask": "Use your graph to calculate the speed of",
+  "answer": "slope formula",
+  "figure": "physics-2022-hl-q4-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q5-iv",
+  "ask": "Calculate the slope of your graph.",
+  "answer": "slope formula",
+  "figure": "physics-2022-hl-q5-table.png"
+ },
+ {
+  "id": "phys-2022-hl-q8-v",
+  "ask": "Indicate on a diagram the sections of a",
+  "answer": "negatively charged in p-type c",
+  "solution": "physics-2022-hl-q8v-scheme.png"
+ },
+ {
+  "id": "phys-2022-hl-q8-vii",
+  "ask": "Sketch a graph to show the variation of",
+  "answer": "axes labelled",
+  "solution": "physics-2022-hl-q8vii-scheme.png"
+ },
+ {
+  "id": "phys-2022-hl-q6-l",
+  "ask": "Pair annihilation of an electron and a p",
+  "answer": "+ e"
+ },
+ {
+  "id": "phys-2022-hl-q7-v",
+  "ask": "What is the speed of the body when it ha",
+  "answer": "zero"
+ },
+ {
+  "id": "phys-2022-hl-q8-i",
+  "ask": "Distinguish between conductors, insulato",
+  "answer": "conductors are good at allowin"
+ },
+ {
+  "id": "phys-2022-hl-q9a-ii",
+  "ask": "Calculate the electric field strength at",
+  "answer": "F = q"
+ },
+ {
+  "id": "phys-2022-hl-q10-i-b",
+  "ask": "What is meant by (b) ionisation?",
+  "answer": "removing"
+ },
+ {
+  "id": "phys-2022-hl-q10-vi",
+  "ask": "State one example of a moderator.",
+  "answer": "water"
+ },
+ {
+  "id": "phys-2022-hl-q11-ii",
+  "ask": "Calculate the highest temperature the wa",
+  "answer": "mcΔθ"
+ },
+ {
+  "id": "phys-2022-hl-q11-viii",
+  "ask": "The ratio of C–14 to C–12 in a sample fr",
+  "answer": "no",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2022-hl-q12a-ix",
+  "ask": "A proton may be classified as a hadron.",
+  "answer": "it experiences the strong forc"
+ },
+ {
+  "id": "phys-2022-hl-q1-i",
+  "ask": "Describe how the student determined (a)",
+  "answer": "suspended from a thread"
+ },
+ {
+  "id": "phys-2022-hl-q2-i",
+  "ask": "State Boyle’s law.",
+  "answer": "p is inversely proportional to"
+ },
+ {
+  "id": "phys-2022-hl-q4-ii",
+  "ask": "How did the student determine the length",
+  "answer": "hold [vibrating] tuning fork o"
+ },
+ {
+  "id": "phys-2022-hl-q6-d",
+  "ask": "State the thermometric property of (i) a",
+  "answer": "— voltage"
+ },
+ {
+  "id": "phys-2022-hl-q6-i",
+  "ask": "A tungsten cube of side 2 cm has a resis",
+  "answer": "ρ = RA"
+ },
+ {
+  "id": "phys-2022-hl-q13-ii-a",
+  "ask": "Draw a labelled diagram of an experiment",
+  "answer": "light source"
+ },
+ {
+  "id": "phys-2022-hl-q13-v-b",
+  "ask": "Calculate (b) the acceleration due to gr",
+  "answer": "g = GM"
+ },
+ {
+  "id": "phys-2022-hl-q14b-i",
+  "ask": "What is the Doppler effect?",
+  "answer": "[apparent] change in frequency"
+ },
+ {
+  "id": "phys-2022-hl-q14d-ii",
+  "ask": "Describe what is observed when a sheet o",
+  "answer": "amplitude of oscillations decr"
+ },
+ {
+  "id": "phys-2022-hl-q12b-ii",
+  "ask": "Draw a labelled diagram of a moving-coil",
+  "answer": "magnet"
+ },
+ {
+  "id": "phys-2022-hl-q14a-ii",
+  "ask": "Draw a labelled diagram of the arrangeme",
+  "answer": "three newtonmeters"
+ },
+ {
+  "id": "phys-2022-hl-q4-i",
+  "ask": "Draw a labelled diagram of how the appar",
+  "answer": "tube"
+ },
+ {
+  "id": "phys-2022-hl-q8-vi",
+  "ask": "Draw a circuit diagram to show this arra",
+  "answer": "diode in forward bias"
+ },
+ {
+  "id": "phys-2022-hl-q12a-viii",
+  "ask": "Calculate (viii) the speed of the alpha",
+  "answer": "E = ½mv"
+ },
+ {
+  "id": "phys-2022-ol-q8-iii",
+  "ask": "Describe how the energy could have been",
+  "answer": "joulemeter",
+  "figure": "physics-2022-ol-q8-graph.png"
+ },
+ {
+  "id": "phys-2022-ol-q9-iii",
+  "ask": "The image formed is real. Explain what i",
+  "answer": "one formed by the intersection",
+  "figure": "physics-2022-ol-q9-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q9-v",
+  "ask": "The object has a height of 4 cm. Calcula",
+  "answer": "m = v",
+  "figure": "physics-2022-ol-q9-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-i",
+  "ask": "A moment is a turning effect caused by a",
+  "answer": "0.1) + (4",
+  "figure": "physics-2022-ol-q14c-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-ii",
+  "ask": "The 7 N force results in an anticlockwis",
+  "answer": "0.2 = 1.4 N m",
+  "figure": "physics-2022-ol-q14c-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-iii",
+  "ask": "State the law of equilibrium verified by",
+  "answer": "clockwise moments = anti-clock",
+  "figure": "physics-2022-ol-q14c-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-iv",
+  "ask": "The upward force on the metre stick is 1",
+  "answer": "15 – (7 + 2 + 4) = 2 N",
+  "figure": "physics-2022-ol-q14c-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q14-c-v",
+  "ask": "Your calculations assume that the centre",
+  "answer": "e.g. chipped metre stick etc.",
+  "figure": "physics-2022-ol-q14c-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q14-d-iii",
+  "ask": "",
+  "answer": "226 – 88 = 138",
+  "questionFigure": "physics-2022-ol-q14diii-question.png"
+ },
+ {
+  "id": "phys-2022-ol-q14-d-iv",
+  "ask": "",
+  "answer": "Po",
+  "questionFigure": "physics-2022-ol-q14div-question.png"
+ },
+ {
+  "id": "phys-2022-ol-q2-v",
+  "ask": "Use all of the results in the table to c",
+  "answer": "one calculation of n",
+  "figure": "physics-2022-ol-q2-table.png"
+ },
+ {
+  "id": "phys-2022-ol-q9-iv",
+  "ask": "Calculate the position of the real image",
+  "answer": "u + 1",
+  "figure": "physics-2022-ol-q9-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q5-iv",
+  "ask": "Use all of the data to plot a graph of I",
+  "answer": "labelled axis",
+  "figure": "physics-2022-ol-q5-table.png"
+ },
+ {
+  "id": "phys-2022-ol-q7-vii",
+  "ask": "Draw a labelled diagram to show the forc",
+  "answer": "four correct forces",
+  "solution": "physics-2022-ol-q7vii-scheme.png"
+ },
+ {
+  "id": "phys-2022-ol-q3-viii",
+  "ask": "",
+  "answer": "labelled axis",
+  "questionFigure": "physics-2022-ol-q3viii-question.png"
+ },
+ {
+  "id": "phys-2022-ol-q9-ii",
+  "ask": "In your answerbook, copy and complete th",
+  "answer": "first reflected ray",
+  "figure": "physics-2022-ol-q9-diagram.png"
+ },
+ {
+  "id": "phys-2022-ol-q3-vii",
+  "ask": "In your answerbook, copy and complete th",
+  "answer": "22 — 0.045",
+  "figure": "physics-2022-ol-q3-table.png"
+ },
+ {
+  "id": "phys-2022-ol-q5-iii",
+  "ask": "In your answerbook, copy and complete th",
+  "answer": "1 — 1",
+  "figure": "physics-2022-ol-q5-table.png"
+ },
+ {
+  "id": "phys-2022-ol-q7-ix",
+  "ask": "Draw a speed‐time graph for the train du",
+  "answer": "labelled axis",
+  "solution": "physics-2022-ol-q7ix-scheme.png"
+ },
+ {
+  "id": "phys-2022-ol-q8-i",
+  "ask": "Explain the shape of the graph at part X",
+  "answer": "increase in temperature",
+  "figure": "physics-2022-ol-q8-graph.png"
+ },
+ {
+  "id": "phys-2022-ol-q8-ii",
+  "ask": "Explain the shape of the graph at part Y",
+  "answer": "change of state",
+  "figure": "physics-2022-ol-q8-graph.png"
+ },
+ {
+  "id": "phys-2022-ol-q6-i",
+  "ask": "Name the three primary colours of light.",
+  "answer": "red"
+ },
+ {
+  "id": "phys-2022-ol-q7-iii",
+  "ask": "Calculate the acceleration of the train.",
+  "answer": "25 ÷ 360 = 0.069"
+ },
+ {
+  "id": "phys-2022-ol-q8-iv",
+  "ask": "Ice has a latent heat of 330000 J kg",
+  "answer": "330000",
+  "answerInAsk": true
+ },
+ {
+  "id": "phys-2022-ol-q9-vi",
+  "ask": "State one use for a concave mirror.",
+  "answer": "shaving"
+ },
+ {
+  "id": "phys-2022-ol-q10-v",
+  "ask": "Sound waves do not undergo polarisation",
+  "answer": "wave vibrations restricted to"
+ },
+ {
+  "id": "phys-2022-ol-q11-iv",
+  "ask": "The wires in a circuit are made of metal",
+  "answer": "conductor"
+ },
+ {
+  "id": "phys-2022-ol-q11-x",
+  "ask": "State the relationship between the resis",
+  "answer": "inversely proportional"
+ },
+ {
+  "id": "phys-2022-ol-q12-vii",
+  "ask": "Tungsten is often used as the target in",
+  "answer": "high melting point"
+ },
+ {
+  "id": "phys-2022-ol-q1-vi",
+  "ask": "What measurements did the student take t",
+  "answer": "two distances"
+ },
+ {
+  "id": "phys-2022-ol-q2-vii",
+  "ask": "State one precaution used to improve the",
+  "answer": "thinner pencil"
+ },
+ {
+  "id": "phys-2022-ol-q4-ii",
+  "ask": "How did the student supply the heat ener",
+  "answer": "joulemeter"
+ },
+ {
+  "id": "phys-2022-ol-q6-b",
+  "ask": "A boy applies a force of 20 N to pull hi",
+  "answer": "150 = 3000 J"
+ },
+ {
+  "id": "phys-2022-ol-q6-h",
+  "ask": "Describe how to show the magnetic field",
+  "answer": "distribute iron filings"
+ },
+ {
+  "id": "phys-2022-ol-q13-vi",
+  "ask": "An astronaut weighs less on the Moon tha",
+  "answer": "mass is how much matter is in"
+ },
+ {
+  "id": "phys-2022-ol-q14-a-iii",
+  "ask": "What is the main type of energy that the",
+  "answer": "potential energy"
+ },
+ {
+  "id": "phys-2022-ol-q14-b-iiib",
+  "ask": "Calculate the focal length of the lens i",
+  "answer": "f = 1 ÷ 2 = 0.5 m"
+ },
+ {
+  "id": "phys-2022-ol-q14a-v",
+  "ask": "Calculate the maximum height reached by",
+  "answer": "0.5625 ÷ (0.005"
+ },
+ {
+  "id": "phys-2022-ol-q1-i",
+  "ask": "Draw a labelled diagram of the apparatus",
+  "answer": "runway"
+ },
+ {
+  "id": "phys-2022-ol-q4-iii",
+  "ask": "Calculate the mass of the water.",
+  "answer": "0.1498 – 0.0745 = 0.0753 kg"
+ },
+ {
+  "id": "phys-2022-ol-q8-viii",
+  "ask": "Describe, with the aid of labelled diagr",
+  "answer": "calibrated thermometer"
+ },
+ {
+  "id": "phys-2022-ol-q11-viii",
+  "ask": "The 3 Ω wire is connected in parallel wi",
+  "answer": "+ 1"
+ },
+ {
+  "id": "phys-2022-ol-q14d-ii",
+  "ask": "Alpha radiation is the least penetrating",
+  "answer": "apparatus 1: source of radiati"
+ }
+]
