@@ -1600,5 +1600,91 @@
    "drop": true,
    "replacementId": "agsci-2025-hl-q12a"
   }
+ },
+ "technology": {
+  "tech-2020-hl-a8-ii": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2020 Higher Technology paper, page 4.",
+   "set": {
+    "questionText": "Outline the importance of privacy settings in the prevention of cyberbullying."
+   }
+  },
+  "tech-2020-hl-c3b-ii": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2020 Higher Technology paper, page 6.",
+   "set": {
+    "questionText": "Describe, with annotated sketches, the setting up of a LAN for three wired computers and a shared printer. Make reference to equipment used, security and set-up procedures."
+   }
+  },
+  "tech-2020-hl-c5c-i": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2020 Higher Technology paper, page 9.",
+   "set": {
+    "questionText": "Distinguish between a scroll saw and a bandsaw, making reference to type of cutting blade, motion of cutting blade and operator safety."
+   }
+  },
+  "tech-2021-hl-c4b-i": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Higher Technology paper, page 7.",
+   "set": {
+    "stem": "The submersible solar-powered pump shown requires accurate fittings. Measurements of samples of the fittings produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fitting must have an outside diameter between 39.85 mm and 39.95 mm."
+   }
+  },
+  "tech-2021-hl-c4b-ii": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Higher Technology paper, page 7.",
+   "set": {
+    "questionText": "Select Manufacturer A or Manufacturer B to produce the fittings. Justify your selection.",
+    "stem": "The submersible solar-powered pump shown requires accurate fittings. Measurements of samples of the fittings produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fitting must have an outside diameter between 39.85 mm and 39.95 mm."
+   }
+  },
+  "tech-2021-hl-c4b-iii": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Higher Technology paper, page 7.",
+   "set": {
+    "stem": "The submersible solar-powered pump shown requires accurate fittings. Measurements of samples of the fittings produced by two manufacturers are summarised below: Manufacturer A - standard deviation σ = 0.04077 mm Manufacturer B - standard deviation σ = 0.01620 mm The fitting must have an outside diameter between 39.85 mm and 39.95 mm."
+   }
+  },
+  "tech-2021-hl-c5c-i": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Higher Technology paper, page 9.",
+   "set": {
+    "questionText": "Describe a method of cutting an intricate design in thin plywood making reference to equipment used, cutting action, and safety."
+   }
+  },
+  "tech-2021-ol-b2b-i": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Ordinary Technology paper, page 2.",
+   "set": {
+    "questionText": "Outline two benefits of using light emitting diodes (LEDs) for this purpose."
+   }
+  },
+  "tech-2021-ol-b3c-i": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Ordinary Technology paper, page 3.",
+   "set": {
+    "questionText": "State two advantages of using an electric bicycle in a urban setting."
+   }
+  },
+  "tech-2021-ol-b3d-i": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Ordinary Technology paper, page 3.",
+   "set": {
+    "stem": "In order to reduce demand on the Earth’s resources, recycling, upcycling, and composting are now commonplace. 1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles"
+   }
+  },
+  "tech-2021-ol-b3d-ii": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Ordinary Technology paper, page 3.",
+   "set": {
+    "questionText": "In the case of any two processes below, state whether it is recycling, upcycling or composting. 1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles"
+   }
+  },
+  "tech-2021-ol-c2b-iii": {
+   "reason": "Correct the PDF extraction’s broken ligature against the official 2021 Ordinary Technology paper, page 5.",
+   "set": {
+    "questionText": "Redraw the circuit to include an indicator light emitting diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
+    "rows": [
+     {
+      "id": "r-1",
+      "kind": "point",
+      "verbatim": "Redraw the circuit to include an indicator light emitting diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
+      "marks": 6,
+      "openList": true,
+      "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+      "ask": true
+     }
+    ]
+   }
+  }
  }
 }
