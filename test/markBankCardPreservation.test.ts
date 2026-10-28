@@ -18,6 +18,8 @@ import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_
  * conceal a deletion.
  */
 import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { CARDS as BIO_HIGHER } from '../components/MarkBank/cards/biology/higher';
 import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordinary';
@@ -384,6 +386,13 @@ const decks = [
    * Every crop was opened and looked at before it was bound, and the alt text
    * on each was written from that -- a generated description would be a guess
    * about a picture, and it is the only thing a screen reader gets. */
+  /* 2026-10-13 on, the Chemistry audit: these are the PRE-AUDIT sets, as
+   * origin/main built them (496 Higher, 380 Ordinary), and they stay frozen.
+   * The audit re-cards each sitting from its paper and scheme and records every
+   * id it touches in scripts/markbank/authored/chemistry-audit-ledger.json.
+   * The check below rebuilds the frozen set from the live deck -- less the
+   * ids the ledger lists as added, plus the shipped ids it lists as withdrawn
+   * (each aliased to a live card) -- so a removed or replaced id fails it. */
   ['chemistry:higher', CHEM_HIGHER, 496, 'ef4c5a891f86986b4ba3091bb89a527ac4019d01f1f2590b8c465e35f2db71cc'],
   ['chemistry:ordinary', CHEM_ORDINARY, 380, 'f15304f5ef306c5d0002c1cacd3ce85f3d8e83ccece53772a739f7a2d9460eb8'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
@@ -1002,6 +1011,24 @@ const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
 
+type ChemistryLedgerRecord = { status: 'added' | 'corrected' | 'unchanged' | 'withdrawn';
+  replacementId?: string; shipped?: boolean };
+const chemistryLedger = JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authored/chemistry-audit-ledger.json'), 'utf8')) as {
+  papers: Record<string, Record<string, ChemistryLedgerRecord>> };
+const chemistryRecords = Object.values(chemistryLedger.papers).flatMap(paper => Object.entries(paper));
+const chemistryAdded = new Set(chemistryRecords
+  .filter(([, record]) => record.status === 'added').map(([id]) => id));
+const chemistryWithdrawn = chemistryRecords.filter(([, record]) => record.status === 'withdrawn');
+const chemistryWithdrawnShipped = chemistryWithdrawn
+  .filter(([, record]) => record.shipped).map(([id]) => id);
+// The pre-audit id set of one level, rebuilt from its live Chemistry deck.
+const chemistryFrozenView = (cards: readonly { id: string }[], level: 'hl' | 'ol') => [
+  ...cards.filter(card => !chemistryAdded.has(card.id)),
+  ...chemistryWithdrawnShipped.filter(id => new RegExp(`^chem-\\d{4}-${level}-`).test(id))
+    .map(id => ({ id })),
+];
+
 /* Art keeps its 462 pre-collapse IDs frozen (222 Higher + 240 Ordinary, the
  * original identity hashes above). The one-card-per-printed-task rule withdraws
  * the per-option cards of a printed choice whose options share one Topic Atlas
@@ -1261,6 +1288,9 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
       ...englishAliasIds.filter(id => id.includes(level)),
     ];
   }
+  if (name.startsWith('chemistry:')) {
+    return chemistryFrozenView(cards, name.endsWith(':higher') ? 'hl' : 'ol').map(card => card.id);
+  }
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
   if (name.startsWith('art:')) {
     return [...ids.filter(id => !isArtAdded(id)), ...artAliasIds.filter(id => id.includes(level))];
@@ -1277,6 +1307,7 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)).length
     : name.startsWith('english:') ? cards.filter(card => !englishAdditionIds.has(card.id)).length
     : name.startsWith('biology:') ? cards.filter(card => !isBiologyAdded(card.id)).length
+    : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -1366,6 +1397,11 @@ describe('Mark Bank card preservation', () => {
     // review's additions (2010-2020 and 2026 carded for the first time, and the
     // tasks the reviewed 2021-2025 sittings had bundled or missed) and withdraw
     // two onto aliases: + biologyAdditionIds - 2.
+    // Chemistry (the paper-by-paper audit, merged after Biology): its 876 frozen
+    // pre-audit cards (496 Higher, 380 Ordinary) gain the audit's additions
+    // (chemistry-audit-ledger.json "added": 2010-2020 and 2026 carded for the
+    // first time, and the parts the 2021-2025 sittings had joined or missed)
+    // and withdraw 34 shipped ids onto aliases: + chemistryAdded - 34.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1376,6 +1412,7 @@ describe('Mark Bank card preservation', () => {
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
+        || name.startsWith('chemistry:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
@@ -1388,7 +1425,8 @@ describe('Mark Bank card preservation', () => {
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
-        + biologyAdditionIds.size - biologyAliasIds.length);
+        + biologyAdditionIds.size - biologyAliasIds.length
+        + chemistryAdded.size - chemistryWithdrawnShipped.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1730,8 +1768,15 @@ describe('Mark Bank card preservation', () => {
     expect(englishAliasIds).toHaveLength(125);
     // ...and the 2 Biology shipped ids a paper-by-paper review withdrew (bio- keys).
     expect(biologyAliasIds).toHaveLength(2);
+    // ...and the Chemistry audit's withdrawals: 54 ledger ids, 34 shipped and 20
+    // never built, every one aliased onto a live card of its own sitting; two
+    // (2023 Ordinary duplicates) were aliased before the audit and are in the 158.
+    const chemistryAuditAliases = chemistryWithdrawn.map(([id]) => id)
+      .filter(id => !['chem-2023-ol-q10-a-iii-iv-fig', 'chem-2023-ol-q6-b-i-iv'].includes(id));
+    expect(chemistryWithdrawn).toHaveLength(54);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
-      + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length);
+      + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
+      + chemistryAuditAliases.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1777,7 +1822,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('physical-education:')
         && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
       // Business counts its frozen set; Economics (and Agricultural Science,
-      // Construction, English and Biology) its live frozen cards, its withdrawn halves
+      // Construction, English, Biology and Chemistry) its live frozen cards, its withdrawn halves
       // counted once, as the alias keys below; Art counts
       // its original cards (its added years are new cards, not part of this
       // earlier bank).
@@ -1785,7 +1830,10 @@ describe('Mark Bank card preservation', () => {
         ? frozenIds(name, cards).length
         : name.startsWith('art:') ? cards.filter(card => !isArtAdded(card.id)).length
           : liveFrozenCount(name, cards)), 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
+    // Chemistry counts its live frozen cards (876 less the 34 shipped ids it
+    // withdrew, now alias keys: net 0), and its audit aliased eighteen
+    // pre-audit ids the base build never shipped (+18).
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
@@ -1865,6 +1913,115 @@ describe('Mark Bank card preservation', () => {
       .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
     expect(idHash(frozenIds('geography:ordinary', GEOGRAPHY_ORDINARY).filter(id => yearOf(id) <= 2025)))
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
+  });
+
+  it('audits Chemistry without losing a card id or a student\'s progress', () => {
+    const live = new Map([...CHEM_HIGHER, ...CHEM_ORDINARY].map(card => [card.id, card]));
+    const count = (paper: string, status: string) => Object.values(chemistryLedger.papers[paper])
+      .filter(record => record.status === status).length;
+    // Every audited sitting's additions and withdrawals, pinned.
+    expect(Object.keys(chemistryLedger.papers).sort())
+      .toEqual(['2010 HL', '2010 OL', '2011 HL', '2011 OL', '2012 HL', '2012 OL', '2013 HL',
+        '2013 OL', '2014 HL', '2014 OL', '2015 HL', '2015 OL', '2016 HL', '2016 OL', '2017 HL',
+        '2017 OL', '2018 HL', '2018 OL', '2019 HL', '2019 OL', '2020 HL', '2020 OL', '2021 HL',
+        '2021 OL', '2022 HL', '2022 OL', '2023 HL', '2023 OL', '2024 HL', '2024 OL', '2025 HL',
+        '2025 OL', '2026 HL', '2026 OL']);
+    expect([count('2026 HL', 'added'), count('2026 OL', 'added'), count('2025 HL', 'added'),
+      count('2025 OL', 'added'), count('2024 HL', 'added'), count('2024 OL', 'added'),
+      count('2023 HL', 'added'), count('2023 OL', 'added'), count('2022 HL', 'added'),
+      count('2022 OL', 'added'), count('2021 HL', 'added'), count('2021 OL', 'added'),
+      count('2020 HL', 'added'), count('2020 OL', 'added'), count('2019 OL', 'added'),
+      count('2019 HL', 'added'), count('2018 OL', 'added'), count('2018 HL', 'added'),
+      count('2017 OL', 'added'), count('2017 HL', 'added'), count('2016 OL', 'added'),
+      count('2016 HL', 'added'), count('2015 OL', 'added'), count('2015 HL', 'added'),
+      count('2014 OL', 'added'), count('2014 HL', 'added'), count('2013 OL', 'added'),
+      count('2012 OL', 'added'), count('2013 HL', 'added'), count('2011 OL', 'added'),
+      count('2012 HL', 'added'), count('2010 OL', 'added'), count('2011 HL', 'added'),
+      count('2010 HL', 'added')])
+      .toEqual([125, 83, 41, 18, 29, 22, 23, 27, 49, 21, 21, 11, 116, 98, 105, 101, 94, 113, 100, 96, 88, 97, 86, 96, 78, 96, 81, 81, 91, 82, 90, 77, 96, 95]);
+    expect([count('2025 HL', 'corrected') + count('2025 HL', 'unchanged'),
+      count('2025 HL', 'withdrawn')]).toEqual([103, 1]);
+    expect([count('2025 OL', 'corrected') + count('2025 OL', 'unchanged'),
+      count('2025 OL', 'withdrawn')]).toEqual([58, 9]);
+    expect([count('2024 HL', 'corrected') + count('2024 HL', 'unchanged'),
+      count('2024 HL', 'withdrawn')]).toEqual([99, 4]);
+    expect([count('2024 OL', 'corrected') + count('2024 OL', 'unchanged'),
+      count('2024 OL', 'withdrawn')]).toEqual([63, 1]);
+    expect([count('2023 HL', 'corrected') + count('2023 HL', 'unchanged'),
+      count('2023 HL', 'withdrawn')]).toEqual([108, 3]);
+    expect([count('2023 OL', 'corrected') + count('2023 OL', 'unchanged'),
+      count('2023 OL', 'withdrawn')]).toEqual([70, 14]);
+    expect([count('2022 HL', 'corrected') + count('2022 HL', 'unchanged'),
+      count('2022 HL', 'withdrawn')]).toEqual([75, 7]);
+    expect([count('2022 OL', 'corrected') + count('2022 OL', 'unchanged'),
+      count('2022 OL', 'withdrawn')]).toEqual([69, 2]);
+    expect([count('2021 HL', 'corrected') + count('2021 HL', 'unchanged'),
+      count('2021 HL', 'withdrawn')]).toEqual([102, 4]);
+    expect([count('2021 OL', 'corrected') + count('2021 OL', 'unchanged'),
+      count('2021 OL', 'withdrawn')]).toEqual([95, 9]);
+    expect([count('2020 HL', 'corrected') + count('2020 HL', 'unchanged'),
+      count('2020 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2020 OL', 'corrected') + count('2020 OL', 'unchanged'),
+      count('2020 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2019 OL', 'corrected') + count('2019 OL', 'unchanged'),
+      count('2019 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2019 HL', 'corrected') + count('2019 HL', 'unchanged'),
+      count('2019 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2018 OL', 'corrected') + count('2018 OL', 'unchanged'),
+      count('2018 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2018 HL', 'corrected') + count('2018 HL', 'unchanged'),
+      count('2018 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2017 OL', 'corrected') + count('2017 OL', 'unchanged'),
+      count('2017 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2017 HL', 'corrected') + count('2017 HL', 'unchanged'),
+      count('2017 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2016 OL', 'corrected') + count('2016 OL', 'unchanged'),
+      count('2016 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2016 HL', 'corrected') + count('2016 HL', 'unchanged'),
+      count('2016 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2015 OL', 'corrected') + count('2015 OL', 'unchanged'),
+      count('2015 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2015 HL', 'corrected') + count('2015 HL', 'unchanged'),
+      count('2015 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2014 OL', 'corrected') + count('2014 OL', 'unchanged'),
+      count('2014 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2014 HL', 'corrected') + count('2014 HL', 'unchanged'),
+      count('2014 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2013 OL', 'corrected') + count('2013 OL', 'unchanged'),
+      count('2013 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2012 OL', 'corrected') + count('2012 OL', 'unchanged'),
+      count('2012 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2013 HL', 'corrected') + count('2013 HL', 'unchanged'),
+      count('2013 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2011 OL', 'corrected') + count('2011 OL', 'unchanged'),
+      count('2011 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2012 HL', 'corrected') + count('2012 HL', 'unchanged'),
+      count('2012 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2010 OL', 'corrected') + count('2010 OL', 'unchanged'),
+      count('2010 OL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2011 HL', 'corrected') + count('2011 HL', 'unchanged'),
+      count('2011 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2010 HL', 'corrected') + count('2010 HL', 'unchanged'),
+      count('2010 HL', 'withdrawn')]).toEqual([0, 0]);
+    // Every id the ledger keeps or adds is live, under its sitting's prefix.
+    for (const [paper, records] of Object.entries(chemistryLedger.papers)) {
+      const [year, level] = paper.split(' ');
+      for (const [id, record] of Object.entries(records)) {
+        expect(id.startsWith(`chem-${year}-${level.toLowerCase()}-`), id).toBe(true);
+        if (record.status === 'withdrawn') {
+          // Withdrawn: gone from the deck, its progress read by a live card
+          // of the same sitting through a one-step alias.
+          expect(live.has(id), `${id} is withdrawn but still built`).toBe(false);
+          expect(CARD_ID_ALIASES[id], `${id} has no progress alias`).toBe(record.replacementId);
+          const target = live.get(record.replacementId ?? '');
+          expect(target?.year, `${id} aliases a card of another year`).toBe(Number(year));
+          expect(target?.level, `${id} aliases a card of another level`)
+            .toBe(level === 'HL' ? 'higher' : 'ordinary');
+        } else {
+          expect(live.has(id), `${id} is ${record.status} but not built`).toBe(true);
+        }
+      }
+    }
   });
 
   it('adds the reviewed Geography parts on top of the frozen 754 without replacing any', () => {

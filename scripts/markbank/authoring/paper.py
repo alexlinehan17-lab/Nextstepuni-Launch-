@@ -159,6 +159,11 @@ MISPRINTS = {
     ('biology', 2023, 'hl'): [
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
+    # 2024 HL Chemistry Q2(c) prints "(ii)" twice; the second is the third
+    # part, which the scheme marks (iii) (the co-product of soap-making).
+    ('chemistry', 2024, 'hl'): [
+        ('(ii) Name the co\u2010product formed', lambda t: '(iii) ' + t[5:]),
+    ],
     # 2020 OL prints Q14(c)'s second part as "(iii)" and its third as "(iii)"
     # again; the scheme numbers them (ii) and (iii).
     ('biology', 2020, 'ol'): [
@@ -311,9 +316,55 @@ TERMINAL = re.compile(r'[.?!]$')
 # bracket, a digit ('(vi) 90 g of...'), a quote, or a mathematical-alphanumeric
 # glyph — Chemistry 2022 OL Q10(a) opens '(vi) 𝐇...' and the [A-Z(] class lost
 # the part.
+# A gas or liquid state symbol is not a part either. 2023 HL Chemistry Q9 sets
+# the equilibrium "PCl3 (g) + Cl2 (g) ⇌ PCl5 (g) ΔH = –87.9 kJ mol–1" in its
+# stem, and the Greek capital the lookahead admits read the last "(g)" as Q9(g):
+# an ask the paper never prints, held open by the census against a question
+# whose four parts were all carded. So a "(g)" or "(l)" written straight after
+# a formula and followed by the reaction's ΔH is passed over; no part opens
+# "ΔH =" straight after a formula.
 INLINE_MARKER = re.compile(
     r'\s(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+# Chemistry goes further: a "(g)" or "(l)" written straight after a formula is
+# that formula's state, whatever follows it. 2019 HL Q9 ends its stem's
+# equation "2A (g) -> B (g) + 3C (g)" and runs straight on with "The graph
+# shows that ...", and 2010 HL Q7 breaks its equilibrium "PCl5 (g) <-> PCl3 (g)
+# + Cl2 (g)" across lines the same way: each read as a part (g) holding the
+# equation, an ask neither paper prints. No Chemistry part from 2010 to 2026
+# opens straight after a letter or digit, so no real part is lost.
+# Subject-gated: across the other subjects the same rule moves the readings of
+# Biology OL 2011-2018 and Physics 2026 HL Q4, which are those audits' to change.
+STATE_SYMBOL_SUBJECTS = {'chemistry'}
+INLINE_MARKER_STATES = re.compile(
+    r'(?:(?<![A-Za-z0-9\u2080-\u2089])\s|\s(?!\([gl]\)\s))'
+    r'(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+# 2016 HL Chemistry Q6(e) (paper page 7, y 403-417) prints "Draw the molecular
+# structure of (i) octane, (ii) 2,2,4-trimethylpentane, (iii) ethylbenzene."
+# -- three romans inside one sentence under one mark (9), which the census keeps
+# as one ask, as it does this paper's Q4(a), Q4(e), Q7(a) and Q10(b). The digit
+# the marker lookahead admits ("(vi) 90 g of ...") split it at "(ii) 2,2,4-":
+# complete_leading_romans then made an (i) of "octane," and (iii)'s ask was
+# filed inside (ii). A piece opening with a listed text is no part on that
+# paper and is joined back to the piece before it. Gated to the sitting: no
+# other paper's reading may move because of it.
+INLINE_NOT_MARKERS = {('chemistry', 2016, 'hl'): ['(ii) 2,2,4-trimethylpentane, (iii) ethylbenzene.']}
+# 2010 OL Chemistry Q7(b) (paper page 5, x 70, y 320) prints "Give the systematic (IUPAC)
+# names for (i) C2H2, (ii) CH3COOH." on one line under one mark (6). The capital each formula
+# opens with let the marker lookahead split it: the census counted a leaf "C2H2," (flag
+# empty-leaf) and a leaf "CH3COOH. (6)", where this paper's Q2(b), Q6(a), Q7(a) and Q8(b),
+# their romans in a sentence the same way, are each one ask. Joined back, as 2016 HL's.
+INLINE_NOT_MARKERS[('chemistry', 2010, 'ol')] = ['(i) C2H2,', '(ii) CH3COOH.']
+# A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
+# Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
+# identify the salts by means of flame tests, (ii) to confirm the identity of the anion
+# ...", before its parts (a) and (b) (18, 32). Read as a roman it made Q3 a roman-major
+# question, its (a) and (b) were then taken for lines of an ask, and the census counted
+# Q3(i)-(iii) where the paper prints Q3(a) and (b)(i)-(iii). A block opening with a listed
+# text is read as words of what is open (the ask, or else the lead-in), as CROSSREF's are.
+# Gated to the sitting: no other paper's reading may move because of it.
+PROSE_MARKER_BLOCKS = {('chemistry', 2010, 'ol'): ['(i) to identify the salts by means of flame tests,']}
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -338,11 +389,18 @@ def _next_marker(tok):
 # ask begins on it in lower case -- 2023 HL Chemistry sets "(vi)" alone and
 # then "(vii) are not involved in bonding?" on one line. A cross-reference
 # never opens a line: it sits inside a sentence ("at part (a) above").
+# The gap after the marker may be set in no-break spaces: 2022 HL Chemistry
+# prints "(iii)\xa0\xa0 sulfur (S)," and [ \t] lost Q10(c)(iii).
 LINE_OPENING_MARKER = re.compile(
     r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:[ \t]*$|[ \t]+(?=[a-z]))')
+# Subject-gated (Chemistry, the reader that met it): the same marker with any
+# white space after it, no-break spaces included.
+ANY_SPACE_MARKER_SUBJECTS = {'chemistry'}
+LINE_OPENING_MARKER_ANY_SPACE = re.compile(
+    r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:\s*$|\s+(?=[a-z]))')
 
 
-def _split_own_line_markers(raw):
+def _split_own_line_markers(raw, any_space=False):
     """Flatten a block, but let a marker printed ALONE on its line start one.
 
     A block is flattened to a single line, and INLINE_MARKER -- which finds the
@@ -368,7 +426,7 @@ def _split_own_line_markers(raw):
     lines = [l.strip() for l in raw.splitlines() if l.strip()]
     out, cur, last = [], [], None
     for i, line in enumerate(lines):
-        m = LINE_OPENING_MARKER.match(line)
+        m = (LINE_OPENING_MARKER_ANY_SPACE if any_space else LINE_OPENING_MARKER).match(line)
         tok = m.group(1) if m else None
         alone = m and line == m.group(0).strip()
         # Alone on its line, with the ask starting below it: a marker.
@@ -455,6 +513,39 @@ GUTTER_MARKERS = {'technology'}
 # about how this subject's papers are typeset: no other subject's reading
 # may move because of it.
 TRAILING_OR = {'engineering'}
+# Subjects whose older papers close a question with a printed rule and set the
+# next question's head straight after it in the same block: 2010-2012 Higher
+# Chemistry reads "(d) ... (12) ___________ 3. A stopwatch was started ...",
+# and with no closed sentence before the "3." the inline head was invisible,
+# so Questions 3 and 7 of 2010, 2 of 2011 and 2, 5 and 7 of 2012 vanished from
+# the census. The rule is dropped so the head follows the closing "(12)".
+# Subject-gated: Biology, Business and Home Economics papers print the same
+# shape, and their readings must not move because of a Chemistry fix.
+RULED_HEADS = {'chemistry'}
+_RULED_HEAD = re.compile(r'\s*_{3,}\s*(?=\d{1,2}\.\s+[A-Z(])')
+# 2015 OL Chemistry (paper page 4) closes Question 4 with a rule DRAWN as a
+# vector line (y 504, x 218-395), not typed as "____", and the text layer sets
+# the next head in the same block as Q4(k)B's word list: "... calcium gold
+# mercury sodium 5. The diagram shows a small part of a sodium chloride (NaCl)
+# crystal ...". With no closed sentence before the "5." (INLINE_QHEAD) and no
+# underscores to drop (_RULED_HEAD), Question 5 was invisible and its six asks
+# were filed under Question 4 (census flag "question-gap: questions found [1, 2,
+# 3, 4, 6, 7, 8, 9, 10, 11]"). The head is split off where the page prints it.
+# Gated to the sitting: no other paper's reading may move because of it.
+DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small part']}
+# 2012 HL Chemistry (paper page 5) sets the three conversions Q6(a) asks about in a
+# column right of its words: "(i) C6H14 (l) -> 4H2 (g) + [benzene] (l)", "(ii) C14H30 (l)
+# -> ... + X (g)", "(iii) CH3(CH2)6CH3 (l) -> [2,2,4-trimethylpentane, drawn] (l)" (x 257-538,
+# y 49-152). Its text block opens at y 23.8, above the "6." head (y 49.3), so it was read
+# first and its romans were filed under Question 5: the census counted Q5(e)(i)-(iii) holding
+# the equations and lost Q5(e) itself ("Boron trichloride (BCl3) is a colourless gas. Would
+# you expect (i) the B-Cl bonds, (ii) the BCl3 molecules, to be polar or non-polar? Justify
+# your answers." (9)). The romans number a figure's equations, which Q6(a) asks about in one
+# sentence ("For each conversion, (i) to (iii), name the process involved." (8)): no ask is
+# printed there, and the block is left out as a figure's. Gated to the sitting.
+FIGURE_BLOCKS = {('chemistry', 2012, 'hl'): [
+    '(i) C6H14 (l) → 4H2 (g) + (l) (ii) C14H30 (l) → C7H16 (l) + C3H6 (g) + X (g) '
+    '(iii) CH3(CH2)6CH3 (l) → (l)']}
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
@@ -578,7 +669,7 @@ def strip_set_lines(page):
     return out
 
 
-def _blocks(path, subject=None, strip_pages=()):
+def _blocks(path, subject=None, strip_pages=(), any_space=False):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order.
     A strip-set page (STRIP_SET_PAGES) gives one block per rebuilt line."""
     with pymupdf.open(path) as doc:
@@ -590,7 +681,7 @@ def _blocks(path, subject=None, strip_pages=()):
         pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4]):
+            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4], any_space):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
@@ -917,6 +1008,13 @@ class Paper:
                 else:
                     self.stems.setdefault((q, letter), []).append(text)
                 continue
+            if any(text.startswith(t) for t in PROSE_MARKER_BLOCKS.get((self.subject, self.year, self.level), ())):
+                # (2010 OL Chemistry Q3's lead-in; see PROSE_MARKER_BLOCKS.)
+                if open_key:
+                    self.parts[open_key].append(text)
+                else:
+                    self.stems.setdefault((q, letter), []).append(text)
+                continue
 
             found_letter, found_roman, rest = _leading(text)
             if found_roman == 'i' and not found_letter and letter == 'h' \
@@ -1076,19 +1174,28 @@ class Paper:
         Agricultural Science lost the parts underneath every ruled answer box.
         """
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
+        # (2015 OL Chemistry: a head set after a drawn rule; see DRAWN_RULE_HEADS.)
+        split_at = '\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])' + ''.join(
+            '|\\s+(?=' + re.escape(h) + ')'
+            for h in DRAWN_RULE_HEADS.get((self.subject, self.year, self.level), []))
         welded = WELDED_HEADS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
             blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None,
                              strip_pages=STRIP_SET_PAGES.get((self.subject, self.year, self.level), {})
-                             .get(os.path.basename(path), ()))
+                             .get(os.path.basename(path), ()),
+                             any_space=self.subject in ANY_SPACE_MARKER_SUBJECTS)
             if welded:
                 blocks = [piece for block in blocks for piece in _unweld(block, welded)]
             for block in blocks:
+              if block in FIGURE_BLOCKS.get((self.subject, self.year, self.level), ()):
+                  continue           # (2012 HL Chemistry: a figure's numbered equations; see FIGURE_BLOCKS.)
+              if self.subject in RULED_HEADS:
+                  block = _RULED_HEAD.sub(' ', block)
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
-              for text in re.split('\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])', block):
+              for text in re.split(split_at, block):
                for text in (INLINE_QHEAD_AFTER_LINE if self.subject in ANSWER_LINE_HEADS else INLINE_QHEAD).split(text):
                 text = text.strip()
                 if not text:
@@ -1097,7 +1204,14 @@ class Paper:
                 prefix = ''
                 if head:
                     prefix, text = head.group(1) + ' ', text[head.end():]
-                pieces = [p.strip() for p in INLINE_MARKER.split(text) if p.strip()]
+                marker = (INLINE_MARKER_STATES if self.subject in STATE_SYMBOL_SUBJECTS
+                          else INLINE_MARKER)
+                pieces = [p.strip() for p in marker.split(text) if p.strip()]
+                # (2016 HL Chemistry Q6(e): a sentence's romans; see INLINE_NOT_MARKERS.)
+                for joined in INLINE_NOT_MARKERS.get((self.subject, self.year, self.level), []):
+                    at = [j for j, p in enumerate(pieces) if j and p.startswith(joined)]
+                    for j in reversed(at):
+                        pieces[j - 1:j + 1] = [pieces[j - 1] + ' ' + pieces[j]]
                 for i, piece in enumerate(pieces):
                     piece = (prefix + piece) if i == 0 else piece
                     if carry:

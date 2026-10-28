@@ -1,0 +1,94 @@
+[
+ {
+  "id": "chem-2026-hl-q1-a-i",
+  "ask": "accurately transfer all the hydrated sodium carbonate",
+  "answer": "use funnel to transfer substance"
+ },
+ {
+  "id": "chem-2026-hl-q1-b-i-ii",
+  "ask": "Describe how the burette was rinsed before use",
+  "answer": "rinse inside of flask with deionised water"
+ },
+ {
+  "id": "chem-2026-hl-q2-a-v",
+  "ask": "State the colour change observed for the reagent",
+  "answer": "to colourless",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q4-i",
+  "ask": "whose structure is shown on the right",
+  "answer": "8.1 × 10¹⁸",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q6-b-ii",
+  "ask": "Deduce the molecular formula for Y",
+  "answer": "C₃H₆",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q6-c-ii",
+  "ask": "calculate the heat of formation",
+  "answer": "–20.6 kJ mol⁻¹"
+ },
+ {
+  "id": "chem-2026-hl-q7-b-iv",
+  "ask": "Write an expression for the equilibrium constant",
+  "answer": "[CO][H₂]³",
+  "solution": true
+ },
+ {
+  "id": "chem-2026-hl-q7-b-v",
+  "ask": "correct to one decimal place",
+  "answer": "1252.8",
+  "solution": true
+ },
+ {
+  "id": "chem-2026-hl-q8-c-iii",
+  "ask": "two propagation reactions",
+  "answer": "C₂H₅• + Cl₂",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q9-a-i",
+  "ask": "Plot a graph on graph paper",
+  "answer": "curve of good fit",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q9-c-i-iii",
+  "ask": "Describe the mechanism by which the catalyst",
+  "answer": "desorption",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q11-c-iii",
+  "ask": "the acid dissociation constant",
+  "answer": "2.51 × 10⁻⁵",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q11-d-a-vi",
+  "ask": "Identify three chemical species",
+  "answer": "HCO₃⁻"
+ },
+ {
+  "id": "chem-2026-hl-q11-d-b-iv",
+  "ask": "reaction that takes place at the anode",
+  "answer": "2O²⁻ → O₂ + 4e⁻",
+  "figure": true
+ },
+ {
+  "id": "chem-2026-hl-q4-c",
+  "ask": "beta decay of a carbon",
+  "answer": "notation its text cannot carry",
+  "solution": true
+ },
+ {
+  "id": "chem-2026-hl-q11-a-iv",
+  "ask": "bond(s) broken in alcohol X",
+  "answer": "notation its text cannot carry",
+  "solution": true
+ }
+]

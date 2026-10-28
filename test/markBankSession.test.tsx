@@ -933,6 +933,23 @@ describe('claiming marks', () => {
     expect(screen.getByText(/You claimed 6 of 12 marks/)).toBeInTheDocument();
   });
 
+  test('a menu priced only as a whole states the choice without a per-option value', () => {
+    // An orderedSplit card ("[6+2+2+2]") prints no value for any one option,
+    // and its group carries none; the label once read "undefined marks each".
+    const c = card({
+      totalMarks: 12,
+      tariffModel: { kind: 'orderedSplit', notation: '[6+2+2+2]' },
+      rows: [row({ id: 'r1', verbatim: 'with deionised water', marks: null }), row({
+        id: 'g', kind: 'anyN', verbatim: 'add drop by drop', marks: null,
+        group: { claimMax: 2, options: ['add drop by drop', 'swirl solution', 'rinse inside of flask'] } as never,
+      })],
+    });
+    renderSession([c]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByText('Any 2 of these')).toBeInTheDocument();
+    expect(screen.queryByText(/undefined/)).not.toBeInTheDocument();
+  });
+
   test('stops a student claiming more of a group than the examiner marks', () => {
     const c = card({
       totalMarks: 6,

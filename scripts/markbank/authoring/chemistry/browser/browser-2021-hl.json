@@ -1,0 +1,18 @@
+[
+ {"id": "chem-2021-hl-q1-a", "ask": "Describe how the 25.0 cm³ sample", "answer": "use funnel to transfer original bleach"},
+ {"id": "chem-2021-hl-q1-e-iv", "ask": "expressed as a % (w/v)", "answer": "Mr ClO⁻ = 51.5", "solution": true},
+ {"id": "chem-2021-hl-q2-a-iii", "ask": "Justify the suitability of your suggested heating method.", "answer": "flask not heated directly", "figure": true},
+ {"id": "chem-2021-hl-q2-d-fig", "ask": "water loving (hydrophilic)", "answer": "one end ionic (polar)", "figure": true},
+ {"id": "chem-2021-hl-q3-a", "ask": "flame tests to distinguish", "answer": "yellow-green colour is a positive result for barium chloride", "solution": true},
+ {"id": "chem-2021-hl-q4-a", "ask": "ion have?", "answer": "18 electrons"},
+ {"id": "chem-2021-hl-q4-l-a", "ask": "using a batch process", "answer": "disadvantage: contamination from previous batch possible"},
+ {"id": "chem-2021-hl-q8-b-i", "ask": "", "answer": "propanone /acetone", "figure": true, "solution": true},
+ {"id": "chem-2021-hl-q8-b-ii", "ask": "", "answer": "CH bond of carbon to which OH is attached", "figure": true, "solution": true},
+ {"id": "chem-2021-hl-q9-c-ii", "ask": "Calculate the value of Kc under these conditions.", "answer": "25 ÷ 243 / 0.103", "solution": true},
+ {"id": "chem-2021-hl-q10-a-i", "ask": "Draw a dot and cross diagram", "answer": "1 lone pair shown", "solution": true},
+ {"id": "chem-2021-hl-q10-b-ii", "ask": "", "answer": "appropriate correct numeric scales on both axes", "figure": true, "solution": true},
+ {"id": "chem-2021-hl-q10-c-i", "ask": "Find the mass of silver in the alloy.", "answer": "76.20 – 7.62 = 68.58 g Ag", "solution": true},
+ {"id": "chem-2021-hl-q11-a-iii", "ask": "Draw the structure of an organic product", "answer": "CH₂BrCH₂Br / BrCH₂CH₂Br", "solution": true},
+ {"id": "chem-2021-hl-q11-b-i", "ask": "Explain the underlined term.", "answer": "in a water sample over five days", "figure": true},
+ {"id": "chem-2021-hl-q11-d-b-iii", "ask": "graphite electrodes", "answer": "Al³⁺ + 3e⁻ → Al", "figure": true}
+]
