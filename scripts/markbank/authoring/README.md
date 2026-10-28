@@ -201,10 +201,18 @@ subject-specific generators.
   its margin mark — "5" in the margin on the 2010–2017 schemes, "(5)" right
   of the working from 2018) and writes the crop region into the allocation
   (`reviewed.json`), so the step shows its content; the equation-editor text
-  layer is fragments, never words, so nothing is transcribed. A card whose
-  margin marks do not match its steps in number and value keeps the whole
-  crop and is listed with its reason in
-  `authored/applied-maths-steps-residue.json`.
+  layer is fragments, never words, so nothing is transcribed. The marks are
+  read inside the reviewed region first and only then in the band just under
+  it (a region drawn a line short of its last mark), so a mark of the next
+  part under the region never displaces this part's own; "5, 5" or "5,5" on
+  one line prices two steps that end on that line, and both show its band;
+  the 2013–14 Ordinary Level margin sits at x 0.67, where a wide equation's
+  last number can also fall, so a bare number there counts only with nothing
+  printed right of it (a question total of 15 or more aside); cards that share
+  one printed solution take their own slice of its marks, after any mark of
+  the part before caught at the top. Every card with published steps is cut;
+  `authored/applied-maths-steps-residue.json` records any that could not be,
+  with the reason, and is empty.
   Business rubric cards carry the responses the scheme prints for their part
   as `rubric.expected` rows (`bus_expected.py`): the lifter reads the card's
   cited "Possible Responses" / "Support Notes" pages, cuts the block at the
@@ -213,7 +221,12 @@ subject-specific generators.
   response under it, a table the text layer flattened, glyph damage, a block
   that is a whole question) is listed with its pages in
   `authored/business-expected-review.json`, never typed in. `--write`
-  rewrites `rubric-authored.json`; a second run changes nothing.
+  rewrites `rubric-authored.json`; a second run changes nothing. Three
+  readings run in order — the text layer, then a hand-checked slice
+  (`authored/business-expected-slices.json`, see below), then the page
+  geometry — and 1,979 of the 1,985 cards carry rows; the six left are
+  recorded exclusions with page evidence (two image answers, a drawn
+  organisation chart, three drawn charts).
   Irish reading and literature excerpts are re-cut across the scheme pages
   they run onto by `irish_excerpts.py` (`--write` upgrades `authored.json`;
   `irish_cards.py` applies the same pass to every card it builds): a reading
@@ -227,12 +240,26 @@ subject-specific generators.
   Where that text reading leaves a Business card for review, stage B reads the
   cited pages' word positions with PyMuPDF (`bus_expected.py`, the same run):
   a table's rows become items line by line, a tick names the column header
-  above it, "True"/"False" in the right-hand column names its statement, a
-  numbers row over a letters row pairs them; every word is one the page
-  prints (the gate checks word by word, since the text layer holds a table's
-  words in another order). What neither reading can lift — a tick table whose
-  ticks are drawn, not typed; a marker the page does not print — stays in
-  `authored/business-expected-review.json` with both readings' reasons.
+  above it (a wrapped header is joined column by column, "Take-"/"over"), a
+  ring the scheme drew around a printed option names the option on the line
+  its centre sits on, "True"/"False" in the right-hand column names its
+  statement, a numbers row over a letters row pairs them, a figure set a
+  point off its label's baseline rejoins the label, and the marks column —
+  "(1m)", "5marks", a run of bare integers at one x, a label such as
+  "Explain" in the far margin — is dropped; every word is one the page prints
+  (the gate checks word by word, since the text layer holds a table's words in
+  another order). A page whose text layer names glyphs by a mangled code point
+  the repair map does not know (2016 OL's Calibri2 subset) is read character
+  by character through `glyph_ids.py`, the table the scheme extractor itself
+  uses. Between the two readings sits `authored/business-expected-slices.json`:
+  for a part whose marker the scheme never prints (a ratio's rows on a shared
+  baseline, an answer box beside a chart, a sub-part inside its parent's
+  block) a slice names the page region the responses sit in, by eye, and the
+  words are still the page's own; `mode: labels` takes a marks column's own
+  labels one per item; `skip` leaves out a marking note inside the region; an
+  entry marked `excluded` records why the page holds nothing to lift (an
+  image, a drawn chart) with its page evidence, and the card stays in
+  `authored/business-expected-review.json` with that reason.
   Accounting tasks carry the scheme's priced lines as rows (`acc_rows.py`,
   `cards/accounting/rows.json`): the scheme PDF is read as word lines with
   PyMuPDF and every bracketed mark becomes a row — the figure before it and

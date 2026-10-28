@@ -46,7 +46,7 @@
   },
   "applied-maths": {
     "cards": 1486,
-    "contentHash": "03089387648f07d9",
+    "contentHash": "f015af7cba454cda",
     "coveragePct": 100.0,
     "covered": 1486,
     "excluded": 0,
@@ -124,7 +124,7 @@
   },
   "business": {
     "cards": 1988,
-    "contentHash": "fbe2a0ac8731a9fa",
+    "contentHash": "8c53f2ed50e3e2fc",
     "coveragePct": 100.0,
     "covered": 2173,
     "excluded": 0,
