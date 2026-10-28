@@ -62408,6 +62408,39 @@
   "figureKey": "biology-2026-ol-q12-punnett"
  },
  {
+  "id": "bio-2026-ol-q12-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "punnett-square-offspring",
+  "section": "C",
+  "questionRef": "2026 OL Q12(b)(ii)2",
+  "stem": "The images show a red rose, a pink rose and a white rose. The allele for red flower (R) is incompletely dominant to the allele for white flower (r). The genotype of a red rose is RR. Pink roses are heterozygous. A rose with pink flowers was crossed with a rose with white flowers. Copy the Punnett square shown on the right into your answerbook and complete it to show the following:",
+  "questionText": "Genotypes of the possible offspring.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Rr",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Rr",
+    "marks": 3,
+    "contextNote": "The scheme prints \"Rr\" in both offspring boxes. Its own phenotype column reads White for this second row, so the genotype printed here is the SEC's misprint."
+   }
+  ],
+  "notes": "Carded as printed, the misprint in the second row's note (2013 Ordinary Q13(b)(ii) and 2019 Higher Q7(b) precedent): excluded 2026-10-12, carded 2026-10-28 under Alex's rule that every printed ask gets a card. Rows in the order the scheme sets them: the R gamete's row, then the r gamete's. Evidence: Scheme p.17, Q12(b)(ii) \"2. Genotypes of the possible offspring.\": both offspring boxes of the completed Punnett square print \"Rr\" (read from the glyphs at (165,535)-(192,553) and (165,556)-(192,575)); \"3. Matching phenotypes of the possible offspring.\" prints \"Pink\" and \"White\" beside the same two rows; the gametes it prints are R and r for the pink rose and r for the white rose. Paper 040 p.3: a rose with pink flowers crossed with a rose with white flowers, captioned White (rr). Reviewed 2026-10-11 against the paper and scheme; ledger bio_review_2026_ol.py.",
+  "year": 2026,
+  "level": "ordinary",
+  "figureKey": "biology-2026-ol-q12-punnett"
+ },
+ {
   "id": "bio-2026-ol-q12-b-ii-3",
   "subjectId": "biology",
   "topicId": "bio-1-4",
@@ -167103,6 +167136,33 @@
    }
   ],
   "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2010-ol-q11-c-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "function-of-proteins",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(vii)",
+  "questionText": "Give one function of proteins in living organisms.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": null,
+    "unprinted": true,
+    "contextNote": "The marking scheme (printed page 6) prints answers to Q11(c)(i) to (vi), then blank rows: it prints no (vii) row. Its \"2(6)+6(2)\" counts eight answers in (c), (i)'s two bases and (ii) to (vii), so this part is still marked: 6 if it is one of your first two correct answers in (c), 2 after that."
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. The scheme prints no answer row for this ask (scheme p7: Q11(c) stops at (vi), then blank rows), so its one row is the fixed direction \"The scheme prints no answer for this part.\", never a typed answer. Left open by the review (ca320bf8a), excluded on 2026-10-27 (2e9846697), carded on 2026-10-28 under Alex's rule that every printed ask gets a card. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
   "year": 2010,
   "level": "ordinary"
  },

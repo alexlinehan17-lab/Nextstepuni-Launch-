@@ -384,8 +384,11 @@ C.add([k('11', 'a', 'iii')], None, None, [anyN(
     'formulae; its own print is shown with the answer. It adds: [1,1-dibromoethane '
     'unacceptable and 1-bromoethanol unacceptable.]')], total=6, figure=S + 'q11a-iii')
 C.fixed([k('11', 'a', 'iv')], None, None, figure=FIG + 'paper-p12-i2')
-# (b)(i): the paper's print shows which term is underlined.
-C.fixed([k('11', 'b', 'i')], None, None, figure=FIG + 'paper-p12-i0')
+# (b)(i) asks about the term the paper underlines, which no text layer carries: its question is the
+# paper's own print of (b), the paragraph with its photograph beside it, then (i) ((ii), printed
+# beside the photograph, whited out). The print holds the photograph, so it is the card's only figure.
+C.fixed([k('11', 'b', 'i')], None, None)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11b-i-print'
 for r in ('ii', 'iii', 'iv'):
     C.fixed([k('11', 'b', r)], None, None)
 C.route([k('11', 'b', 'v')], None, None)
@@ -405,8 +408,11 @@ C.menu([ka('11', 'd', 'ii', 'A')], None, None)
 C.ordered([ka('11', 'd', 'iii', 'A')], None, None)
 C.fixed([ka('11', 'd', 'iv', 'A')], None, None)
 C.fixed([ka('11', 'd', 'v', 'A')], None, None)
-# B's lead-in refers to its photograph, and (i) to its underlined term.
-for r in ('i', 'ii', 'iii', 'iv', 'v', 'vi'):
+# B's lead-in refers to its photograph. (i) asks about the term the paper underlines: its question is
+# the paper's own print of B, its heading, lead-in and photograph, then (i).
+C.fixed([ka('11', 'd', 'i', 'B')], None, None)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11d-b-i-print'
+for r in ('ii', 'iii', 'iv', 'v', 'vi'):
     C.fixed([ka('11', 'd', r, 'B')], None, None, figure=FIG + 'paper-p14-i1')
 
 

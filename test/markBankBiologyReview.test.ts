@@ -16,7 +16,7 @@ import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordi
 import audit from '../scripts/markbank/authored/biology-review-audit.json';
 import exclusions from '../scripts/markbank/authoring/exclusions/biology.json';
 import { createHash } from 'node:crypto';
-import { tariffReconciles } from '../types/markBank';
+import { tariffReconciles, UNPRINTED_ANSWER } from '../types/markBank';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import { questionsForTopics } from '../components/PaperTrail/topics';
@@ -31,8 +31,8 @@ type Sitting = { tasks: Task[]; cardCount: number; baseTaskCount: number;
     withdrawn: Record<string, { replacementId: string; reason: string }> };
   sources: Record<string, { sha256: string; pages: number }>;
   checks: { excluded: Array<{ id: string; reason: string; evidence: string; schemeRows: string[] }>;
-    openLeaves?: Array<{ leaf: string; reason: string; evidence: string }>;
-    excludedLeaves?: Array<{ leaf: string; reason: string; evidence: string }> } };
+    censusLeaves: number; censusLeavesClaimed: number;
+    unprintedAnswers?: Array<{ leaf: string; id: string; evidence: string }> } };
 const sittings = (audit as unknown as { sittings: Record<string, Sitting> }).sittings;
 const sitting = sittings['2026-hl'];
 
@@ -131,24 +131,22 @@ const verbatims = (id: string) => (olById.get(id)!.rows as unknown as Array<{ ve
   .map(row => row.verbatim);
 
 describe('Biology 2026 Ordinary — reviewed sitting', () => {
-  it('ships every carded task, excludes the one it cannot card, and nothing else', () => {
+  it('ships every task as a card, the misprinted one as printed with its note', () => {
     expect(ol.baseTaskCount).toBe(183);
-    expect(ol.cardCount).toBe(187);
-    expect(ordinary2026).toHaveLength(187);
-    const carded = ol.tasks.filter(task => task.status === 'carded').map(task => task.id);
-    expect(new Set(carded)).toEqual(new Set(olById.keys()));
+    expect(ol.cardCount).toBe(188);
+    expect(ordinary2026).toHaveLength(188);
+    expect(ol.tasks.every(task => task.status === 'carded')).toBe(true);
+    expect(new Set(ol.tasks.map(task => task.id))).toEqual(new Set(olById.keys()));
+    expect(ol.checks.excluded).toEqual([]);
     // Q12(b)(ii)2: the scheme prints "Rr" in both offspring boxes, against its
-    // own "White" phenotype for the r row. Reviewed, priced and excluded with
-    // its evidence; neither the misprint nor a correction is carded.
-    expect(ol.tasks.filter(task => task.status === 'excluded').map(task => task.id))
-      .toEqual(['bio-2026-ol-q12-b-ii-2']);
-    expect(olById.has('bio-2026-ol-q12-b-ii-2')).toBe(false);
-    const [exclusion] = ol.checks.excluded;
-    expect(exclusion.schemeRows).toEqual(['Rr', 'Rr']);
-    expect(exclusion.evidence).toMatch(/both offspring boxes .* print "Rr"/);
-    expect(exclusion.evidence).toMatch(/"White"/);
-    // Decided by Alex on 2026-10-12: it stays excluded, never carded or corrected.
-    expect(exclusion.reason).toMatch(/Decided by Alex 2026-10-12/);
+    // own "White" phenotype for the second row. Excluded 2026-10-12; carded as
+    // printed 2026-10-28 (every printed ask gets a card), the misprint named
+    // in the second row's note and no corrected answer written.
+    const rows = olById.get('bio-2026-ol-q12-b-ii-2')!.rows as unknown as Array<{ verbatim: string; contextNote?: string }>;
+    expect(rows.map(row => row.verbatim)).toEqual(['Rr', 'Rr']);
+    expect(rows[0].contextNote).toBeUndefined();
+    expect(rows[1].contextNote).toMatch(/phenotype column reads White .* misprint/);
+    expect(rows[1].contextNote).not.toMatch(/\brr\b/);
   });
 
   it('pins the reviewed source PDFs', () => {
@@ -1825,24 +1823,21 @@ type FirstCarded = {
   /** Cards whose "the graph" is the one the student draws in an earlier part
    *  (the paper prints none), so no printed figure exists to show. */
   ownDrawing?: string[];
-  /** Printed asks left OPEN (the ledger's OPEN_LEAVES): the scheme prints no
-   *  answer to lift, so the ask is neither carded nor excluded. */
-  openLeaves?: string[];
-  /** Printed asks EXCLUDED without a task (the ledger's EXCLUDED_LEAVES): the
-   *  scheme prints no answer to lift, and the exclusion is decided and
-   *  recorded in exclusions/biology.json with the same page evidence. */
-  excludedLeaves?: string[];
+  /** Printed asks whose scheme prints no answer row: carded all the same
+   *  (every printed ask gets a card, Alex 2026-10-28), each with the one row
+   *  "The scheme prints no answer for this part." (an unprinted() row). */
+  unprinted?: string[];
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
   '2010-ol': {
-    tasks: 164, cards: 164,
+    tasks: 165, cards: 165,
     sources: { "paper": ['97369eec58626ea8011318460e4f7bda32b61b465aabab420f480e47823d010f', 16], "scheme": ['09e0ceeb579948acbd7584859befa2efb9defc5ab857a27306560cb5130dfdc6', 11] },
     routes: {  },
     wholeParts: {  },
     // Scheme p7 prints Q11(c) (i)-(vi) and then blank rows: no answer for (vii).
-    // Left open by the review, excluded with that evidence on 2026-10-27.
-    excludedLeaves: ['Q11(c)(vii)'],
+    // Left open by the review, excluded on 2026-10-27, carded on 2026-10-28.
+    unprinted: ['Q11(c)(vii)'],
   },
   '2011-ol': {
     tasks: 143, cards: 143,
@@ -2014,23 +2009,18 @@ describe.each(Object.entries(FIRST_CARDED))('Biology %s — carded from a paper-
     }
   });
 
-  it('leaves open only the asks its scheme prints no answer for, each with its page evidence', () => {
-    const open = s.checks.openLeaves ?? [];
-    expect(open.map(o => o.leaf)).toEqual(pin.openLeaves ?? []);
-    for (const o of open) {
-      expect(o.evidence, o.leaf).toMatch(/Paper p\d+.*Scheme p\d+/s);
-      expect(deck.some(card => card.questionRef.startsWith(`${year} ${token} ${o.leaf}`)), o.leaf).toBe(false);
-    }
-  });
-
-  it('excludes without a task only the asks its scheme prints no answer for, each in exclusions/biology.json', () => {
-    const excludedLeaves = s.checks.excludedLeaves ?? [];
-    expect(excludedLeaves.map(o => o.leaf)).toEqual(pin.excludedLeaves ?? []);
-    for (const o of excludedLeaves) {
-      expect(o.evidence, o.leaf).toMatch(/Paper p\d+.*Scheme p\d+/s);
-      expect(deck.some(card => card.questionRef.startsWith(`${year} ${token} ${o.leaf}`)), o.leaf).toBe(false);
-      expect(exclusions.filter(e => e.ref === `${year} ${token} ${o.leaf}`), o.leaf)
-        .toEqual([{ ref: `${year} ${token} ${o.leaf}`, reason: o.reason, evidence: o.evidence }]);
+  it('cards every printed ask, one its scheme prints no answer for with the one row that says so', () => {
+    expect(s.checks.censusLeavesClaimed).toBe(s.checks.censusLeaves);
+    const unprinted = s.checks.unprintedAnswers ?? [];
+    expect(unprinted.map(u => u.leaf)).toEqual(pin.unprinted ?? []);
+    const carded = deck.filter(card => (card.rows as unknown as Array<{ unprinted?: boolean }>).some(row => row.unprinted));
+    expect(carded.map(card => card.id)).toEqual(unprinted.map(u => u.id));
+    for (const u of unprinted) {
+      expect(u.evidence, u.leaf).toMatch(/Paper p\d+.*Scheme p\d+/s);
+      const card = byCardId.get(u.id)!;
+      expect(card.questionRef, u.leaf).toBe(`${year} ${token} ${u.leaf}`);
+      expect(card.rows, u.leaf).toEqual([expect.objectContaining({
+        kind: 'criterion', verbatim: UNPRINTED_ANSWER, unprinted: true, contextNote: expect.stringMatching(/\S/) })]);
     }
   });
 
@@ -2045,6 +2035,22 @@ describe.each(Object.entries(FIRST_CARDED))('Biology %s — carded from a paper-
 });
 
 describe('Biology — every deck', () => {
+  it('excludes no printed ask: every census leaf of every sitting has a card', () => {
+    // Alex, 2026-10-28: "if a question is in a paper it needs to have a Mark
+    // Bank question, no exceptions". An excluded task claims no census leaf,
+    // so every leaf is claimed by a card, and nothing is recorded as excluded.
+    expect(exclusions).toEqual([]);
+    for (const [key, s] of Object.entries(sittings)) {
+      const checks = s.checks as Sitting['checks'] & Record<string, unknown>;
+      expect(checks.censusLeavesClaimed, key).toBe(checks.censusLeaves);
+      expect(checks.openLeaves, key).toBeUndefined();
+      expect(checks.excludedLeaves, key).toBeUndefined();
+    }
+    // No excluded task either: the last one, 2026 Ordinary Q12(b)(ii)2, is
+    // carded as printed with its misprint noted (pinned in its own block).
+    expect(Object.values(sittings).flatMap(s => s.checks.excluded.map(e => e.id))).toEqual([]);
+  });
+
   it('files every card under its own printed Topic Atlas question, listed under each of its headings', () => {
     // The Atlas audit: a card's question (its year, level, booklet and printed
     // number) is an Atlas question; one of that question's Atlas topics holds

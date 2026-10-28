@@ -124,6 +124,9 @@ C.fixed([k('1', 'e')], None, None, cid='q1-e-fig', figure=FIG + 'paper-q1e',
 # ── Q2 Titration of hydrochloric acid against sodium carbonate ───────────────
 Q2 = FIG + 'paper-q2'
 C.fixed([k('2', 'a')], None, None)
+# Q2(a) and Q9(c)(i) ask about a term the paper underlines, which no text layer carries: the paper's
+# own print of the part, its text column, is the question (Q9(c)'s apparatus stays its figure).
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q2a-print'
 C.ordered([k('2', 'b', r) for r in ('i', 'ii', 'iii', 'iv')], None, None, cid='q2-b',
           figure=Q2, label_key=[{'letter': 'P', 'meaning': 'volumetric flask',
                                  'askedInThisQuestion': True}])
@@ -236,6 +239,7 @@ C.fixed([k('9', 'b', 'iv')], 'chem-3-5', 'zinc-above-copper-in-the-electrochemic
 Q9C = FIG + 'paper-q9c'
 C.fixed([k('9', 'c', 'i')], 'chem-3-5', 'meaning-of-inert-electrodes', cid='q9-c-i-iii',
         figure=Q9C)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q9c-i-print'
 C.fixed([k('9', 'c', 'ii')], 'chem-3-5', 'material-for-inert-electrodes', figure=Q9C)
 C.fixed([k('9', 'c', 'iii')], 'chem-3-5', 'why-acid-is-added-before-electrolysing-water',
         figure=Q9C)

@@ -43,14 +43,17 @@ their part's ladder: Q8(b)(iii) "2, 0" and "1", Q12(c)(i) "3,0", Q14(a)(v)
 keep their own marks. No part needs a whole-part (questionTotal) card.
 
 Q11(c)(vii) ("Give one function of proteins in living organisms.", paper p10)
-has no answer in the scheme: its Q11(c) block (scheme p7) prints (i) to (vi)
-and then blank table rows. Nothing can be lifted for it, so it is not in
-TASKS. The review left the census leaf (11, 'c', 'vii') OPEN with its page
-evidence (ca320bf8a); on 2026-10-27 it was decided to exclude it, with that
-evidence: EXCLUDED_LEAVES records it, and the same entry stands in
-exclusions/biology.json, which reconcile.py counts. The ladder "2(6)+6(2)"
-has eight steps for (i)'s two bases and (ii)-(vii); seven of those responses
-are carded, which LADDERS records as 'responses': 7.
+has no answer in the scheme: its Q11(c) block (scheme p7, printed page 6)
+prints (i) to (vi), then an empty cell and a blank row, and p8 opens on
+Question 12. Every printed ask gets a card (Alex, 2026-10-28: "if a question
+is in a paper it needs to have a Mark Bank question, no exceptions"), so it is
+carded: its question lifted from the paper as (iii)-(vi) are, at the ladder's
+first rate 6 as every response of "2(6)+6(2)" is (eight steps: (i)'s two
+bases and (ii)-(vii)), and with one unprinted() row reading "The scheme prints
+no answer for this part.", its note saying what the scheme page prints
+instead. Nothing is typed as an answer. History: the review left the leaf
+OPEN (ca320bf8a), it was excluded on 2026-10-27 (2e9846697), and it is carded
+from 2026-10-28.
 
 The scheme's text layer reads its single quotes as U+2018/U+2019, as printed.
 It misspells "Heterotrohic nutrition" (Q13(a)(ii)), "rythym" (Q14(b)(v)) and
@@ -65,10 +68,10 @@ pixels lighter than grey 200 inside the scanned picture whitened, every
 printed stroke kept).
 
 The census reader finds all 145 printed asks, keyed as the paper prints them
-(Q2 and Q4-Q6 by roman alone); no paper.py entry was needed. 144 are claimed
-here; (11, 'c', 'vii') is the one excluded (above).
+(Q2 and Q4-Q6 by roman alone); no paper.py entry was needed. All 145 are
+claimed here, (11, 'c', 'vii') by its unprinted card (above).
 """
-from bio_review_lib import Q, SQ, S, M, pt, anyn, T, L
+from bio_review_lib import Q, SQ, S, M, pt, anyn, T, L, unprinted
 
 YEAR, LEVEL = 2010, 'ol'
 REVIEWED_AT = '2026-10-27'
@@ -122,8 +125,8 @@ LADDERS = {
     (9, 'a'): _ladder('5+1'), (9, 'b'): _ladder('2(6)+6(2)'),
     (10, 'a'): _ladder('7+2(1)'), (10, 'b'): _ladder('3(5)+6(2)'), (10, 'c'): _ladder('2(6)+6(2)'),
     (11, 'a'): _ladder('7+2(1)'), (11, 'b'): _ladder('3(5)+6(2)'),
-    # Eight steps; (vii) has no printed answer and is not carded (docstring).
-    (11, 'c'): _ladder('2(6)+6(2)', responses=7),
+    # Eight steps, (i)'s two bases and (ii)-(vii); (vii)'s answer is unprinted (docstring).
+    (11, 'c'): _ladder('2(6)+6(2)'),
     (12, 'a'): _ladder('7+2(1)'), (12, 'b'): _ladder('3(5)+6(2)'),
     # (c)(i)'s drawing "3,0" and labels "3(1)" are fixed beside (ii)-(v)'s "3(5)+3(1)".
     (12, 'c'): _ladder('3(5)+3(1)', fixed={3: 1, 1: 3}),
@@ -146,7 +149,7 @@ CHECKSUMS = {
     (8, 'a'): {5: 2}, (8, 'b'): {6: 7, 2: 1, 1: 1},
     (9, 'a'): {5: 2}, (9, 'b'): {6: 8},
     (10, 'a'): {7: 3}, (10, 'b'): {5: 9}, (10, 'c'): {6: 8},
-    (11, 'a'): {7: 3}, (11, 'b'): {5: 9}, (11, 'c'): {6: 7},
+    (11, 'a'): {7: 3}, (11, 'b'): {5: 9}, (11, 'c'): {6: 8},
     (12, 'a'): {7: 3}, (12, 'b'): {5: 9}, (12, 'c'): {5: 6, 3: 1, 1: 3},
     (13, 'a'): {7: 3}, (13, 'b'): {5: 9}, (13, 'c'): {6: 8},
     (14, 'a'): {6: 8, 3: 1, 1: 3}, (14, 'b'): {6: 9}, (14, 'c'): {6: 10},
@@ -203,23 +206,6 @@ SELECTION_SCAN = [
 
 ROUTES = {}
 
-# Left OPEN, neither carded nor excluded (the coordinator's rule: an ask the
-# scheme prints no answer for stays open, with its page evidence, for Alex).
-EXCLUDED_LEAVES = {
-    (11, 'c', 'vii'): {
-        'reason': 'The scheme prints no answer for this ask, so nothing can be lifted and no answer is written. '
-                  'Left OPEN by the review (ca320bf8a); excluded with this page evidence on 2026-10-27 '
-                  '(a decision Alex delegated to the coordinator).',
-        'evidence': 'Paper p10 prints "(vii) Give one function of proteins in living organisms." '
-                    'as the last ask of Q11(c), "(24)". Scheme p7 (printed page 6) prints Q11(c) '
-                    '(i) "1. Thymine or T" / "2. Cytosine or C" to (vi) "It must fold (into its '
-                    'functional shape)" beside "2(6)+6(2)", then an empty cell and a blank row; '
-                    'scheme p8 opens on Question 12. There is no (vii) row. The ladder\'s eight '
-                    'steps match (i)1, (i)2 and (ii)-(vii), so (vii) is priced (2) with no answer '
-                    'printed (rendered and looked at).',
-    },
-}
-
 SEC = 'State Examinations Commission'
 NO_REPRINT = 'The scheme prints no reprint of any question: anchored on the part\'s own marker.'
 WELDED = ('The scheme prints no reprint and sets this part\'s marker on its answer\'s own line: anchored on that '
@@ -235,6 +221,18 @@ LEAD_IN = 'The card carries the printed lead-in "Explain what is meant by" in it
 DRAWING = ('The scheme prices the drawing on its own, "{band}" for the diagram and "3(1)" for three labels, beside '
            'the part\'s ladder: the diagram is one criterion row (its band the row\'s note), the labels {labels}.')
 BAND = 'The scheme prints the diagram\'s band "{band}".'
+# Q11(c)(vii): the scheme prints no answer row for it (docstring).
+VII_ANCHOR = ('The scheme prints no (vii) row: anchored on the (c) marker that heads the part\'s answers and its '
+              '"2(6)+6(2)" ladder.')
+VII_NOTE = ('The marking scheme (printed page 6) prints answers to Q11(c)(i) to (vi), then blank rows: it prints no '
+            '(vii) row. Its "2(6)+6(2)" counts eight answers in (c), (i)\'s two bases and (ii) to (vii), so this '
+            'part is still marked: 6 if it is one of your first two correct answers in (c), 2 after that.')
+VII_EVIDENCE = ('Paper p10 prints "(vii) Give one function of proteins in living organisms." as the last ask of '
+                'Q11(c), "(24)". Scheme p7 (printed page 6) prints Q11(c) (i) "1. Thymine or T" / "2. Cytosine or C" '
+                'to (vi) "It must fold (into its functional shape)" beside "2(6)+6(2)", then an empty cell and a '
+                'blank row; scheme p8 opens on Question 12. There is no (vii) row. The ladder\'s eight steps are '
+                '(i)\'s two bases and (ii)-(vii), so (vii) is one of its responses, priced on the ladder with no '
+                'answer printed (both pages rendered and looked at, 2026-10-28).')
 
 
 def at(page, *path_and_marker, why=NO_REPRINT, nth=1):
@@ -785,6 +783,14 @@ TASKS = [
          'amino-acids'),
         ('vi', ask(10, 'What must happen to the newly formed protein before it can begin to work?'),
          'It must fold (into its functional shape)', 'protein-folding')]
+] + [
+    T('11cvii', 'Q11(c)(vii)', 'C', ask(10, 'Give one function of proteins in living organisms.'),
+      [unprinted(6, VII_NOTE)], 'bio-2-3', 'function-of-proteins', at(7, '11.', '(c)', why=VII_ANCHOR), 6,
+      decision=LADDER.format(notation='2(6)+6(2)') + ' The scheme prints no answer row for this ask (scheme p7: '
+               'Q11(c) stops at (vi), then blank rows), so its one row is the fixed direction "The scheme prints no '
+               'answer for this part.", never a typed answer. Left open by the review (ca320bf8a), excluded on '
+               '2026-10-27 (2e9846697), carded on 2026-10-28 under Alex\'s rule that every printed ask gets a card.',
+      evidence=VII_EVIDENCE),
 ] + [
     T('12ai', 'Q12(a)(i)', 'C', ask(11, 'What is meant by metabolism?'), [pt(S(*METABOLISM), 7)], 'bio-2-1',
       'metabolism', at(8, '12.', '(a)', '(i)'), 7, decision=LADDER.format(notation='7+2(1)')),

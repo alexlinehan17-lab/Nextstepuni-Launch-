@@ -8,6 +8,9 @@
  *  - route: a two-column table ("3 @ 20 marks each" / "4 @ 15 marks each",
  *    "Bar Chart" / "Pie Chart"). The student picks the column their answer
  *    followed, then claims that column's rows and SRPs as on any other card.
+ *    Where the review split one table over several criteria (2010–2013
+ *    Higher options, "Number of aspects") the pick is made once: every
+ *    criterion of the table shows the same pill and moves together.
  *  - band: a quality table ("Excellent · 20" … "Poor · 0"). Each band is a
  *    claimable row with its descriptor; claiming one clears the others.
  *  - alternative: one printed answer or another, each at its own price.
@@ -41,7 +44,7 @@ const Tick: React.FC = () => (
 
 export default function GeographyChoicePanel({ criterion, scores, onScore }: Props) {
   const { choice, directions } = criterion.allocation;
-  const choiceId = geographyChoiceScoreId(criterion.id);
+  const choiceId = geographyChoiceScoreId(choice.follows ?? criterion.id);
   const pickedIndex = (scores[choiceId] ?? 0) - 1;
   const picked = choice.options[pickedIndex];
   // The criterion's own heading already names it ("Overall coherence").

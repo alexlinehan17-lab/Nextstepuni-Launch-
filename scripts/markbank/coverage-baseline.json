@@ -1,7 +1,7 @@
 {
   "accounting": {
     "cards": 1365,
-    "contentHash": "560c8b4f36e7a7de",
+    "contentHash": "613a9f2bdeb0486a",
     "coveragePct": 100.0,
     "covered": 1365,
     "excluded": 0,
@@ -46,7 +46,7 @@
   },
   "applied-maths": {
     "cards": 1486,
-    "contentHash": "03089387648f07d9",
+    "contentHash": "f015af7cba454cda",
     "coveragePct": 100.0,
     "covered": 1486,
     "excluded": 0,
@@ -93,11 +93,11 @@
     "refsHash": "4fef6e53e28af5ba"
   },
   "biology": {
-    "cards": 5538,
-    "contentHash": "7802d791695e4a06",
+    "cards": 5540,
+    "contentHash": "33808b0a2e3ee089",
     "coveragePct": 100.0,
-    "covered": 4927,
-    "excluded": 1,
+    "covered": 4928,
+    "excluded": 0,
     "leaves": 4928,
     "open": 0,
     "orphans": 0,
@@ -105,7 +105,7 @@
       "count": 50,
       "hash": "4fd05441da103297"
     },
-    "refsHash": "ec3107ed9afd3101"
+    "refsHash": "32a1d05fcfa8198c"
   },
   "bulgarian": {
     "cards": 141,
@@ -139,7 +139,7 @@
   },
   "chemistry": {
     "cards": 3369,
-    "contentHash": "53fc9dfbd3a882b5",
+    "contentHash": "1373456627274212",
     "coveragePct": 100.0,
     "covered": 3496,
     "excluded": 0,
@@ -184,7 +184,7 @@
   },
   "construction-studies": {
     "cards": 1261,
-    "contentHash": "440a5f642727d0ed",
+    "contentHash": "c95372f8985a6f0a",
     "coveragePct": 100.0,
     "covered": 845,
     "excluded": 0,
@@ -364,7 +364,7 @@
   },
   "geography": {
     "cards": 4153,
-    "contentHash": "a6e62d9ee7b835c2",
+    "contentHash": "c5cb46da46ff07b8",
     "coveragePct": 100.0,
     "covered": 3869,
     "excluded": 0,

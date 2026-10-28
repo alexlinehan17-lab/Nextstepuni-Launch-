@@ -155,6 +155,9 @@ C.ordered([k('9', 'c')], 'chem-4-3', 'stages-of-water-treatment', figure=FIG + '
 
 # ── Q10 Any two of (a), (b), (c) ─────────────────────────────────────────────
 C.fixed([k('10', 'a', 'i')], None, None)
+# (a)(i) and (c)(i) ask about a term the paper underlines, which no text layer carries: the paper's
+# own print of the part is the question ((c)'s map, printed beside it, left out).
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q10a-i-print'
 C.fixed([k('10', 'a', 'ii')], 'chem-1-4', 'empirical-formula-of-multistriatin',
         fixes={'C: 70.59 12 = 5.88': 'C: 70.59 ÷ 12 = 5.88', 'H: 10.59 1 = 10.59': 'H: 10.59 ÷ 1 = 10.59',
                'O: 18.82 16 = 1.18': 'O: 18.82 ÷ 16 = 1.18'},
@@ -175,6 +178,7 @@ C.ordered([k('10', 'b', 'iii')], None, None, stem=_q10b + ' ' + P.lead(k('10', '
 _q10c = P.rearranged(P.ask(k('10', 'c')), '( 222 Rn ) are found in areas such as 86 Galway',
                      '(²²²₈₆Rn) are found in areas such as Galway')
 C.ordered([k('10', 'c', 'i')], None, None, stem=_q10c)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q10c-i-print'
 C.ordered([k('10', 'c', r) for r in ('ii', 'iii', 'iv')], None, None, cid='q10-c-ii-iv',
           stem=_q10c, qtext=' '.join(
               f'({r}) ' + P.rearranged(P.ask(k('10', 'c', r)), '222 Rn ? 86', '²²²₈₆Rn?')

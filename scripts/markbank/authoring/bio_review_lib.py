@@ -23,7 +23,21 @@ What it guarantees, and how:
   and the scheme's own tick-annotation checksum ("6 x 3 + 1 x 2") is matched
   against the mark units of the rows authored under it.
 * Every census leaf the independent paper reader finds is claimed by at least
-  one task, and every task resolves to a census leaf.
+  one CARDED task, and every task resolves to a census leaf.
+* Every printed ask gets a card, no exceptions (Alex, 2026-10-28: "if a
+  question is in a paper it needs to have a Mark Bank question"). An exclusion
+  is never a way to finish a sitting: an excluded task claims no census leaf,
+  a ledger may not leave a leaf open or excluded (no OPEN_LEAVES, no
+  EXCLUDED_LEAVES), and exclusions/biology.json stays empty. Where the scheme
+  prints no answer row at all for a printed ask, the card still exists: its
+  question is lifted from the paper as any other, its marks come from the
+  printed tariff or ladder, and its one row is `unprinted()`, a criterion row
+  reading exactly UNPRINTED ("The scheme prints no answer for this part.").
+  That sentence is our words, a direction to the student and never an answer;
+  it is the only text a row may carry that is not a slice of the scheme, and
+  the runner refuses it unless the scheme, read from the task's anchor to its
+  next part or question, prints no marker for the part (2010 Ordinary
+  Q11(c)(vii): scheme p7 prints Q11(c) (i) to (vi), then blank rows).
 """
 import hashlib
 import json
@@ -398,6 +412,26 @@ def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False
             'note_sel': note_sel, 'note_lead': note_lead, 'whole': whole}
 
 
+# The one row text that is not lifted: what a card says where the scheme
+# prints no answer row for a printed ask (module docstring). Mirrored as
+# UNPRINTED_ANSWER in types/markBank.ts and build-deck.mjs, which refuse any
+# other wording on an `unprinted` row.
+UNPRINTED = 'The scheme prints no answer for this part.'
+
+
+def unprinted(marks, note):
+    """The row of a printed ask whose scheme prints NO answer row at all: a
+    criterion row reading exactly UNPRINTED, worth `marks` (the printed
+    tariff's, or the ladder's first rate as every response of a ladder is
+    carded), never a typed example answer. `note` is the reviewer's
+    direction shown under it, saying what the scheme page prints instead
+    (required). The task must carry `evidence` (what the paper and scheme
+    pages print), and this must be its only row."""
+    if not note:
+        raise ValueError('an unprinted row needs its note: what the scheme prints instead')
+    return {'type': 'unprinted', 'marks': marks, 'note': note}
+
+
 def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None, open_list=False, sep=None):
     """A bounded menu: "Any two 2(3)". `sel` is the whole printed list, cut
     into options at the SEC's own solidus; or `options` is a list of
@@ -428,7 +462,11 @@ def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
       item=None, id=None, tariff=None):
     """One reviewed task -> one card, or, with `excluded` (the reason) and
     `evidence` (what the SEC documents print), a reviewed and priced task kept
-    out of the bank on purpose and recorded as excluded.
+    out of the bank on purpose and recorded as excluded. An excluded task
+    claims no census leaf: a leaf only an excluded task reaches has no card,
+    and the check refuses it (every printed ask gets a card). `evidence` is
+    also required of a task whose row is `unprinted()`: what the paper prints
+    for the ask and what the scheme prints in place of its answer.
 
     `route` names one option of a closed choose-one pool: the pool's cards are
     alternatives and its tariff counts once. `item` = (slug, label) names one

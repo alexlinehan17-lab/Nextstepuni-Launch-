@@ -13,5 +13,6 @@
  {"id": "chem-2022-ol-q10-b-iii", "ask": "Write the equilibrium constant (Kc) expression for this reaction.", "answer": "its own print is shown with the answer", "solution": true},
  {"id": "chem-2022-ol-q11-b-iv", "ask": "Name the law you used to calculate your answer.", "answer": "combined (general) gas law", "solution": true},
  {"id": "chem-2022-ol-q11-c-iii", "ask": "State what material acts as the stationary phase", "answer": "paper and water", "figure": true},
- {"id": "chem-2022-ol-q10-b-i", "ask": "Explain the underlined term.", "answer": "state where concentrations of reactants and products"}
+ {"id": "chem-2022-ol-q10-b-i", "ask": "", "answer": "state where concentrations of reactants and products", "figure": true, "figureSrc": "chemistry-2022-OL-paper-q10b-i-print"},
+ {"id": "chem-2022-ol-q8-a", "ask": "", "answer": "biological / protein / produced in living cells", "figure": true, "figureSrc": "chemistry-2022-OL-paper-q8a-print"}
 ]

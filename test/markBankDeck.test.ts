@@ -161,7 +161,7 @@ const SAMPLE_CARDS = [
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
-  rowCapFor, isValidCardId, optionCapFor, MAX_LONG_OPTION_ROWS,
+  rowCapFor, isValidCardId, optionCapFor, MAX_LONG_OPTION_ROWS, UNPRINTED_ANSWER,
 } from '../types/markBank';
 
 /**
@@ -253,6 +253,14 @@ describe('every card traces to the marking scheme on disk', () => {
     for (const card of SAMPLE_CARDS.filter(isPointCard)) {
       const scheme = schemeText(card);
       for (const row of card.rows) {
+        if (row.unprinted) {
+          // An unprinted row claims nothing from the scheme: the scheme prints
+          // no answer row for the ask, and the card's one row says so.
+          if (row.verbatim !== UNPRINTED_ANSWER || row.kind !== 'criterion' || card.rows.length !== 1) {
+            bad.push(`${card.questionRef}: unprinted row "${row.verbatim}" is not the card's one "${UNPRINTED_ANSWER}" criterion`);
+          }
+          continue;
+        }
         if (row.ask) {
           // An ask row claims nothing from the scheme: it is the card's own
           // question, answered by the scheme's print held back as a solution.

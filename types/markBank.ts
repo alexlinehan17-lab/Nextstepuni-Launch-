@@ -98,6 +98,15 @@ export interface MarkRowPart {
   permittedMarks: number[];
 }
 
+/**
+ * The one row text a card may carry that is not a slice of the scheme: what an
+ * `unprinted` row says where the scheme prints no answer row at all for a
+ * printed ask. Every printed ask gets a card (Alex, 2026-10-28), and this is a
+ * direction to the student, never a typed answer. Mirrored in build-deck.mjs
+ * and bio_review_lib.py (UNPRINTED), which refuse any other wording.
+ */
+export const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
+
 export interface MarkRow {
   id: string;
   kind: RowKind;
@@ -150,6 +159,15 @@ export interface MarkRow {
    * test require the row to be the card's own question text.
    */
   ask?: boolean;
+  /**
+   * The scheme prints NO answer row for this printed ask (Biology 2010
+   * Ordinary Q11(c)(vii): its scheme stops at (vi), then blank rows), and the
+   * card exists all the same. The row claims nothing from the scheme: its
+   * verbatim is exactly UNPRINTED_ANSWER, it is a criterion, and it is the
+   * card's only row; its contextNote says what the scheme prints instead. The
+   * build and the deck test hold it to all three.
+   */
+  unprinted?: boolean;
   /**
    * Unclaimable until `dependsOn` is claimed — a "justify" mark is genuinely
    * unreachable if the structure it justifies was named wrongly.
@@ -837,6 +855,11 @@ export interface GeographyAnswerRow {
    *  named 3m"). The row shows the scheme's words and says any correct answer
    *  scores; it never carries an example the scheme did not print. */
   tariffOnly?: boolean;
+  /** In a repeated group whose points the scheme prices unalike, this row's
+   *  price in each point, in order: "Overall coherence 7/6 marks graded" under
+   *  "Number of aspects: 3 (27 + 27 + 26)" is 7, 7 and 6. `marks` is the
+   *  largest; a point offers only the steps up to its own price. */
+  unitMarks?: number[];
 }
 
 /** A Significant Relevant Point allocation: how many the scheme counts, at
@@ -906,6 +929,11 @@ export interface GeographyAllocationChoice {
   /** The scheme's heading over the options ("Number of aspects"), or ''. */
   prompt: string;
   options: GeographyChoiceOption[];
+  /** The criterion whose pick this one shares. One printed route table the
+   *  review split over several criteria (2010–2013 Higher options: "Number of
+   *  aspects" over identifying, discussion and coherence) is chosen once: the
+   *  criterion that prints the heading owns the pick, the others follow it. */
+  follows?: string;
 }
 
 export interface GeographyCriterion {
@@ -1306,11 +1334,13 @@ export const MAX_OPTION_ROWS = 8;
  * menu that omits answers the scheme states is misrepresenting the marking,
  * which is the one thing this tool exists not to do.
  *
- * Still bounded. Seventeen is the ceiling because Agricultural Science 2010 HL
- * Q5(a)(ii) prints seventeen accepted footrot points. The bound follows the
- * largest verified SEC menu rather than deleting correct answers for neatness.
+ * Still bounded. Twenty-five is the ceiling because Construction Studies 2019
+ * HL Q1(a) prices "Any 12 × 4 marks" from twenty-five bulleted details in one
+ * pool (Agricultural Science 2010 HL Q5(a)(ii) prints seventeen footrot
+ * points). The bound follows the largest verified SEC menu rather than
+ * deleting correct answers for neatness.
  */
-export const MAX_LONG_OPTION_ROWS = 17;
+export const MAX_LONG_OPTION_ROWS = 25;
 
 /** The row cap that actually applies to a card, given its tariff.
  *

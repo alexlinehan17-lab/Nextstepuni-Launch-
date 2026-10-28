@@ -160,6 +160,12 @@ CROPS = {
         ('scheme-q8a-ii', 'scheme', 13, (105, 298.5, 240, 377)),
         ('scheme-q11b-vi', 'scheme', 17, (105, 701.5, 390, 744)),
         ('scheme-q11c-ii', 'scheme', 18, (105, 186, 180, 216)),
+        # Q2(a) and Q9(c)(i) ask about a term the paper underlines, which no text layer carries: the
+        # paper's own print is the card's question. Each is the text column only, left of the
+        # flask P (x 446.5 on) and of the electrolysis apparatus (x 430.3 on); Q2(a)'s mark "(5)"
+        # is whited out (MASKS).
+        ('paper-q2a-print', 'paper-panels', 3, ((24, 55, 545, 89), (24, 91, 442, 215.5))),
+        ('paper-q9c-i-print', 'paper-panels', 10, ((52, 305, 427, 479),)),
     ],
 }
 
@@ -336,6 +342,25 @@ MASKS = {
     # edge cuts it after "(21" (dark pixels 921-946 x 227-243), whited out; nothing else is dark
     # right of column 900 below row 210.
     'chemistry-2010-OL-paper-q9b-print.png': [(916, 222, 947, 249)],
+    # The underlined-term prints of 2021-2025 (the part's own print as the card's question). Each box
+    # is the dark pixels of what it whites out, padded 4-5 px; nothing else is dark inside it.
+    # 2021 HL Q11(b)(i): (b)'s paragraph and (i) with the photograph beside them, down to the
+    # photograph's foot (paper page 12, y 557), so (ii), printed beside its lower half, is whited out
+    # (x 113-386, y 526-567; dark pixels 72-630 x 214-296). (i) ends at row 196; the photograph
+    # starts at column 673.
+    'chemistry-2021-HL-paper-q11b-i-print.png': [(68, 210, 635, 301)],
+    # 2022 OL Q8(a): the mark "(17)" at the end of (iii)'s last line (paper page 9, x 519-541,
+    # y 360-372; dark pixels 975-1012 x 307-327); the line's own text ends at column 945.
+    'chemistry-2022-OL-paper-q8a-print.png': [(971, 303, 1017, 332)],
+    # 2023 OL Q2(a): the mark "(5)" (paper page 3, x 525-541, y 337-349; dark pixels 988-1012 x
+    # 591-611); pipette B, beside (a), ends at column 929.
+    'chemistry-2023-OL-paper-q2a-print.png': [(984, 587, 1017, 616)],
+    # 2023 OL Q6(a): the mark "(14)" at the end of (iii) (paper page 8, x 519-541, y 156-168; dark
+    # pixels 975-1012 x 213-233); (iii)'s text ends at column 762.
+    'chemistry-2023-OL-paper-q6a-print.png': [(971, 209, 1017, 238)],
+    # 2025 OL Q2(a): the mark "(5)" (paper page 3, x 424-440, y 200-212; dark pixels 835-859 x
+    # 316-336 of the print's second panel); (a)'s text ends at column 755.
+    'chemistry-2025-OL-paper-q2a-print.png': [(831, 312, 864, 341)],
 }
 
 

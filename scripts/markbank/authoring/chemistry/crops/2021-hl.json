@@ -37,5 +37,7 @@
  ["scheme-q11a-ii", "scheme", 27, [45, 128, 545, 349]],
  ["scheme-q11a-iii", "scheme", 27, [45, 349, 545, 512]],
  ["q11a-iii-drawings", "scheme-labels", 27, [77, 388, 539, 484]],
- ["scheme-q11c-iii", "scheme", 28, [45, 587, 545, 640]]
+ ["scheme-q11c-iii", "scheme", 28, [45, 587, 545, 640]],
+ ["paper-q11b-i-print", "paper-panels", 12, [[80, 424, 545, 569]]],
+ ["paper-q11d-b-i-print", "paper-panels", 14, [[80, 402, 555, 565]]]
 ]
