@@ -49,8 +49,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import cardlint                                              # noqa: E402
 import paper_census as PC                                    # noqa: E402
-from tech_scheme import TechScheme, cue_score, normalise as SCHEME_NORM                # noqa: E402
+from tech_scheme import TechScheme, cue_score, normalise as SCHEME_NORM, _words as SCHEME_WORDS  # noqa: E402
 from tech_topics import topic_for, topic_for_option          # noqa: E402
+import tech_crops as TC                                      # noqa: E402
 
 SUBJECT = 'technology'
 MAX_ROWS = 12
@@ -71,13 +72,27 @@ NOT_A_POINT = re.compile(
     r'|award\b|allow\b|note:|marks? awarded'
     r'|suggested\b.{0,20}'
     r'|or\b|and\b|etc\.?'
+    # The choice rubric between parts: "Answer 2(c) or 2(d)".
+    r'|answer\s+\d\([a-d]\)\s+(?:and|or)\s+\d\([a-d]\)'
     r'|[^.?!]{0,28}:)\s*$', re.I)
+
+# The examiner's closing remark on a list -- "Suggested elements, other
+# viable answers accepted." under 2026 Higher Q11's three -- is not a fourth
+# element. It is dropped only where other points stand: where it is the
+# scheme's ONLY line (2021 Higher Q13: "Any valid view of the assembled
+# console is accepted.") it is what earns the marks, and stays.
+ACCEPTED_NOTE = re.compile(r'^(?:suggested|any)\b.{0,80}\baccepted\.?\s*$', re.I)
 
 # A worked calculation states an answer without ever using a word: "F x 0.5 M
 # = 50 N x 0.8 M", "1000 ohm". The letters-only test threw away every line of
 # the arithmetic on eleven parts, and then refused the part for stating
 # nothing.
 CALCULATION = re.compile(r'\d.*[=\u2248]|[=\u2248].*\d'
+                         # An algebraic step with no figure in it: "F x D =
+                         # Effort x D" above "250 x 50 = Effort x 250" (2026
+                         # Higher 9(i)) is a step of the working, not prose
+                         # that wraps onto the line below.
+                         r'|^[A-Z][A-Za-z.]*(?:\s*[x\u00d7/+\-]\s*[A-Za-z.]+)+\s*='
                          # Both ohm signs: the SEC's text layer gives U+2126 OHM SIGN in one
                          # scheme and U+03A9 GREEK CAPITAL OMEGA in another, and
                          # "1000 ohm" is the whole answer to 2022 Ordinary Option 2(a)(i).
@@ -85,9 +100,17 @@ CALCULATION = re.compile(r'\d.*[=\u2248]|[=\u2248].*\d'
 
 # The running footer, and the page number the extractor leaves welded to a
 # marking point's last line.
+# Only the footer's own form -- "Leaving Certificate Examination 2026",
+# "Leaving Certificate, 2020" -- never the words inside an ask: 2023 Ordinary
+# Q10 ends "...a design portfolio for Leaving Certificate Technology." and was
+# cut to "...portfolio for".
 FOOTER = re.compile(
-    r'\s*\d{0,3}\s*Leaving Certificate(?:\s+Examination)?[,\s].*$'
-    r'|\s*Technology\s*[-–—]\s*(?:Higher|Ordinary)\s+Level.*$', re.I)
+    r'\s*\d{0,3}\s*Leaving Certificate(?:\s+Examination)?,?\s*20\d\d\b.*$'
+    # The 2021 Ordinary booklet's hidden footer tag, printed white at the foot of
+    # pages 3 and 5 and read onto the end of Q12's ask.
+    r'|\s*page\s+running\s*$'
+    r'|\s*Technology\s*[-–—]\s*(?:Higher|Ordinary)\s+Level.*$'
+    r'|\s*Please turn over\b.*$|\s*Do not write on this page\b.*$', re.I)
 
 # A cue too short to identify anything: "Modification:", "Calculation:".
 # An ask that names its subject only by pointing back at the stimulus:
@@ -104,6 +127,27 @@ LEANS_ON_STEM = re.compile(
 CUT_SHORT = re.compile(
     r'\b(?:in|of|the|and|to|on|for|with|at|a|an|as|by|from|that|which|when'
     r'|is|are|be|its|their|this|these)\s*$', re.I)
+
+# The answerbook's fill-in label left at the end of an ask once the labels
+# printed inside the picture have come off: "...circuit shown. Calculation:".
+# Only after a closed sentence -- "Explain each of the following in relation
+# to DFA:" is the question's own colon.
+TRAILING_LABEL = re.compile(r'(?<=[.?!])\s+[A-Z][a-z]{2,}:\s*$')
+
+# A figure's caption, filed as a stem by the walker because it is printed
+# between a part's head and its romans: "cable carousel cable loaded into
+# carousel". A stimulus is a sentence; a caption closes nothing and is short.
+CAPTION = re.compile(r'^(?:\S+\s+){0,7}\S*[^.?!:]$')
+
+
+def flattened_table(text):
+    """A table's cells read as prose: no sentence, half the tokens short."""
+    words = text.split()
+    if len(words) < 8 or re.search(r'[.?!]', text):
+        return False
+    # Twelve words with no sentence among them is a table (the 2024 Higher
+    # resistor colour code), however long its cells.
+    return len(words) >= 12 or sum(1 for w in words if len(w) <= 3) >= 0.5 * len(words)
 
 MIN_CUE_WORDS = 4
 # How much of the scheme's cue the paper's ask must hold before the pairing
@@ -196,9 +240,50 @@ def split_cue(lines, ask):
         if pos > at and matched >= max(2, int(0.6 * len(line_words))):
             cue.append(points.pop(0))
             at = pos
+        elif cue and not re.search(r'[.?!:]$', cue[-1]) \
+                and points[0][:1].islower():
+            # The reprint wraps and paraphrases: 2026 Ordinary 4(b)(iii)
+            # reprints "...at stage 4" / "of a products life cycle." where
+            # the paper says "in the lifecycle of a product". A line that
+            # opens in lower case under an unclosed cue line is the cue's
+            # own sentence going on, never an answer.
+            cue.append(points.pop(0))
         else:
             break
+    if not points and cue:
+        # The reprint consumed every line, which no priced block is: the
+        # last line is the answer, however many of the ask's words it
+        # reuses. 2026 Higher 4(b)(iii) answers "Determine the control state
+        # of this process" with "The control state is in control.", and
+        # read as a reprint the part had no marking point at all. The
+        # caller is told which line this was, so the repeat filter does
+        # not throw it away a second time for the same reason.
+        points = [cue.pop()]
+        BACKED_OFF.append(points[0])
     return ' '.join(cue), points
+
+
+BACKED_OFF = []
+
+
+def strip_ask_label(point, ask):
+    """A row that opens with the ask's own label is the scheme naming the
+    part before answering it: "Edit images: Limited ability to edit images"
+    under the ask "Edit images:" (2020 Higher 6(iii)), "cookie: Data sent from
+    a website..." under "Explain the terms: cookie" (12(i)). The label comes
+    off when it is the whole ask, or the ask's closing words, and an answer
+    follows it on the line."""
+    m = re.match(r'([^:]{1,40}):\s+(\S.*)$', point)
+    if not m:
+        return point
+    label = ' '.join(m.group(1).split()).lower()
+    bare = ' '.join((ask or '').rstrip(': ').split()).lower()
+    # The whole ask, or what follows its last colon ("Explain the terms:
+    # cookie"); never a heading the ask merely ends with ("...Man, Machine,
+    # Method." keeps its "Method:" row distinct from the other two).
+    if bare == label or re.search(r':\s*' + re.escape(label) + r'$', bare):
+        return m.group(2)
+    return point
 
 
 def question_label(covered):
@@ -232,6 +317,12 @@ def graphic_fragments(points):
     # it, and the exception let three such cards through.
     if len(bullets) >= 2 and len(bullets) >= 0.6 * len(points):
         return False
+    # "People: Unskilled, in-experienced" -- a heading and its answer on one
+    # line, three of them under 2026 Higher Q11's fishbone. Short, never
+    # closed, and each one states something.
+    labelled = [p for p in points if re.match(r'^[A-Z][A-Za-z /-]{1,24}:\s+\S', p)]
+    if len(labelled) >= 0.5 * len(points):
+        return False
     short = [p for p in points if len(p) < 46]
     # A question mark closes a flowchart's decision box, not a sentence --
     # "N On?", "Large coffee?" -- and counting those as closed let three
@@ -239,6 +330,14 @@ def graphic_fragments(points):
     # sentence counts.
     closed = [p for p in points if p.rstrip().endswith(('.', '!')) and len(p) >= 30]
     return len(short) >= 0.7 * len(points) and len(closed) <= 0.25 * len(points)
+
+
+# The examiner's own lead-in to an answer, which names nothing: it stays
+# off the row (cardable drops it on its own line, as before).
+EXAMINER_LEAD = re.compile(
+    r'^(?:calculations?|suggestions?|suggested (?:solutions?|answers?)|such as'
+    r'|modifications?|alternative solutions? acceptable|answers?|notes?|e\.g\.'
+    r'|any (?:one|two|three|four)(?:\s+\w+)?|possible answers?|sample answers?)\s*:$', re.I)
 
 
 def reflow(points, scheme_norm=''):
@@ -260,8 +359,31 @@ def reflow(points, scheme_norm=''):
             prev = out[-1]
             opens_lower = text[:1].islower() or text[:1] in ',;)'
             unclosed = not re.search(r'[.?!:;\u2022]$', prev)
+            # "Web/content scraping:" above "gathers data or content from
+            # websites..." is one point with its heading, not a heading the
+            # filter below throws away and an answer that then names nothing.
+            if prev.endswith(':') and opens_lower and not CALCULATION.search(text):
+                unclosed = True
+            # A bare heading -- "Product layout:", "Parallel:", "Method:" --
+            # is the name of the point under it, not a point: it joins the
+            # line below whatever case that opens in (2026 Higher 4(d)'s
+            # three layouts, 2025 Higher 12). Longer and it is a sentence.
+            heading = (prev.endswith(':') and len(prev) <= 40
+                       and not re.search(r'[.?!]', prev) and not CALCULATION.search(text)
+                       and not EXAMINER_LEAD.match(prev) and not NOT_A_POINT.match(prev))
+            if heading:
+                joined = f'{prev} {text}'
+                if not scheme_norm or SCHEME_NORM(joined) in scheme_norm:
+                    out[-1] = joined
+                    continue
             # A bullet, a heading and a new sentence all start their own point.
-            if unclosed and (opens_lower or not re.match(
+            # A worked calculation never closes a line and starts every
+            # step with a figure, so the rule above read 2026 Higher 9(i)'s
+            # five steps as one point. Two calculation lines stay two.
+            steps = bool(CALCULATION.search(prev) and CALCULATION.search(text)
+                         and not opens_lower
+                         and not re.match(r'[=+\u00d7\u2212\u2013-]|x\s', text))
+            if unclosed and not steps and (opens_lower or not re.match(
                     r'[A-Z\u2022\u2013-]', text)):
                 joined = f'{prev} {text}'
                 # And only where the JOIN is what the scheme prints. The two
@@ -302,6 +424,11 @@ def keeps_stem(stem, question):
     # The stem repeats the ask on a whole-question leaf: the census hands the
     # same sentence back as both, and printing it twice looks like a defect.
     if text.rstrip('.') in (question or '').rstrip('.'):
+        return False
+    # Or the other way about: a whole-question stem that is the ask with the
+    # answerbook's labels after it ("...State the meaning of each colour
+    # code. Red colour-coded sign: Yellow colour-coded sign:").
+    if question and question.rstrip('.') in text:
         return False
     return True
 
@@ -368,12 +495,21 @@ def block_units(block, leaves, year, level):
     # not -- 2021 Higher Question 8 is one ask on the page and two in the
     # scheme -- the whole-block card is the honest shape: it covers the leaf
     # the paper actually prints instead of citing two the paper does not.
+    paper = sorted((k[3] for k in leaves
+                    if k[0] == section and k[1] == q and k[2] == letter and k[3]),
+                   key=lambda r: ROMAN_ORDER.index(r) if r in ROMAN_ORDER else 99)
+    remap = {}
+    if romans and paper and len(romans) == len(paper) and set(romans) != set(paper):
+        # The scheme misprints a roman -- 2024 Higher 3(d) heads its two
+        # parts "(i)" and "(iii)" for the paper's (i) and (ii) -- and the
+        # block prints as many as the paper does: read them in printed order.
+        remap = dict(zip(romans, paper))
     if romans and all(block.marks_for(r) is not None for r in romans) \
-            and all((section, q, letter, r) in leaves for r in romans):
+            and all((section, q, letter, remap.get(r, r)) in leaves for r in romans):
         out = []
         for roman in romans:
-            out.append((roman, block.part_lines(roman), block.marks_for(roman),
-                        [(section, q, letter, roman)]))
+            out.append((remap.get(roman, roman), block.part_lines(roman), block.marks_for(roman),
+                        [(section, q, letter, remap.get(roman, roman))]))
         return out
     # Whole block. Its leaves are whatever the PAPER prints under this
     # address -- the scheme's own roman markers are not to be trusted here,
@@ -410,6 +546,14 @@ def joined_ref(year, level, covered):
         f', ({r})' for r in romans[1:])
 
 
+def _manifest():
+    path = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding='utf-8') as fh:
+        return json.load(fh)
+
+
 def figure_index():
     """The inspected crops, keyed by the part they were cut FOR.
 
@@ -419,18 +563,66 @@ def figure_index():
     in here to be bound.
     """
     figs = {}
-    path = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
-    if not os.path.exists(path):
-        return figs
-    with open(path, encoding='utf-8') as fh:
-        manifest = json.load(fh)
-    for key in manifest:
-        m = re.fullmatch(r'technology-(\d{4})-(HL|OL)-paper-sec([ABC])'
-                         r'-q(\d{1,2})([a-d])?-art', key)
-        if m:
-            figs[(int(m.group(1)), m.group(2).lower(), m.group(3),
-                  int(m.group(4)), m.group(5))] = key
+    for key, rec in _manifest().items():
+        parsed = TC.parse_key(key)
+        if parsed and '-paper-' in key and not rec.get('solution'):
+            figs[parsed] = key
+    for alias, key in TC.FIGURE_SHARED.items():
+        parsed = TC.parse_key(alias)
+        if parsed and key in _manifest():
+            figs[parsed] = key
     return figs
+
+
+def solution_index():
+    """The scheme's own drawn answers, keyed by the part each answers.
+
+    Published by tech_figures.py --publish from tech_crops.SOLUTIONS, each
+    marked solution: true, which the session screen holds back until the
+    student has answered. Bound as the card's figureKey, so the reveal shows
+    the examiner's drawing beside the rows -- or, where the scheme prints no
+    words at all, beside the ask itself as the one row.
+    """
+    figs = {}
+    for key, rec in _manifest().items():
+        parsed = TC.parse_key(key)
+        if parsed and '-scheme-' in key and rec.get('solution'):
+            figs[parsed] = key
+    for alias, key in TC.SOLUTION_SHARED.items():
+        parsed = TC.parse_key(alias)
+        if parsed and key in _manifest():
+            figs[parsed] = key
+    return figs
+
+
+def stem_pieces(section, q, letter, roman, texts, stems):
+    """The stimulus printed above a part, in the order the paper prints it.
+
+    The question's own introduction, then the lettered part's head sentence
+    ("The decorative wood-fired outdoor pizza oven shown, is made from cast
+    iron."), then whatever the walker filed as that part's stem. The head
+    sentence is the census's text for the letter itself, which is not a leaf
+    where romans follow it and so never reached a card: 171 long-question
+    cards opened mid-sentence ("in Co. Louth, consisting of...") for want of
+    it.
+    """
+    pieces = []
+    if letter:
+        pieces.append(stems.get((section, q, None)) or '')
+    if letter and roman:
+        pieces.append(texts.get((section, q, letter, None), ''))
+    pieces.append(stems.get((section, q, letter)) or '')
+    out = []
+    for piece in pieces:
+        piece = clean(piece)
+        if piece and piece not in out:
+            out.append(piece)
+    return out
+
+
+ASK_ROW_NOTE = ("The scheme answers this part with a drawing its text cannot "
+                "carry; its own print is shown with the answer.")
+FALLBACK_TOPIC = 'tech-core-design'
 
 
 def author(bind_figures=True):
@@ -440,9 +632,14 @@ def author(bind_figures=True):
     # uncovered. A cropper whose candidate set shrinks as its own crops are
     # bound cannot reproduce what it published.
     figures = figure_index() if bind_figures else {}
+    solutions = solution_index() if bind_figures else {}
     cards, refused, examples = [], collections.Counter(), collections.defaultdict(list)
     verdicts = []
     stats = []
+    # Cards whose ask names no syllabus heading, filled from their question's
+    # siblings once the sitting is read (every printed ask gets a card).
+    unshelved = []
+    shelved = collections.defaultdict(collections.Counter)
 
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
@@ -462,6 +659,10 @@ def author(bind_figures=True):
 
         for block in S.priced():
             section, q, letter = block.section, block.q, block.letter
+            # The lettering printed inside a drawing on this block's scheme
+            # pages -- a solution crop's own labels, or a diagram the scheme
+            # reprints beside its answer (tech_crops.py) -- comes off the
+            # marking points it was welded to, by the printed row.
             for roman, lines, total, covered in block_units(block, leaves,
                                                             year, level):
                 covered = [k for k in covered if k in leaves] or covered
@@ -479,7 +680,46 @@ def author(bind_figures=True):
                     note('the paper prints no ask at this address')
                     continue
 
+                # The SEC's own print of the picture the ask points at, and of
+                # the answer the scheme draws. A question figure is cut once
+                # per part and shared by the romans under it; a solution crop
+                # belongs to the one unit it answers.
+                figure = (figures.get((year, level, section, q, letter, roman))
+                          or figures.get((year, level, section, q, letter, None)))
+                solution = solutions.get((year, level, section, q, letter, roman))
+                paper_labels = TC.paper_labels(year, level, figure) if figure else set()
+                for key in TC.BY_EYE:
+                    if TC.parse_key(key)[:5] == (year, level, section, q, letter):
+                        paper_labels |= TC.paper_labels(year, level, key)
+                # The lettering printed inside that picture, which the paper's
+                # text layer welds onto the end of the ask: "...the circuit
+                # shown. Calculation: 40 Ω 10 Ω 10 Ω V 12V". The crop carries
+                # it; the question does not.
+                # The ask as the paper's text layer gives it, lettering and all:
+                # the scheme reprints the same picture, so a "point" that is
+                # one of its labels ("1200 N") is found here and dropped.
+                raw_ask = ask
+                ask = TC.strip_labels(ask, paper_labels) or ask
+                ask = TRAILING_LABEL.sub('', ask).strip()
+                # A picture's lone letter read after the ask's last sentence
+                # ("...direction of arrow A. A"), whether or not its crop is
+                # known: a question never ends in a capital on its own.
+                ask = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', ask)
+                # ...and a short tail of numbers, units or capitalised words
+                # after the last sentence ("...for the display. 90 KG").
+                ask = re.sub(r'(?<=[.?!])\s+(?:[A-Z0-9][^\s.?!,]*\s*){1,3}$', '', ask)
+                # A roman that is a bare term under a lead-in that ends in a
+                # colon -- "Explain the terms:" over "(i) cookie" -- carries the
+                # lead-in, which is printed and is what the student is asked.
+                if roman and len(ask.split()) <= 4 and not re.search(r'[.?!](?:\s|$)', ask):
+                    lead_src = clean(stems.get((section, q, letter)) or stems.get((section, q, None)) or '')
+                    lm = re.search(r'(?:^|[.?!]\s+)([A-Z][^.?!:]{3,60}:)\s*(?:\S+\s*){0,40}$', lead_src)
+                    if lm:
+                        ask = f'{lm.group(1)} {ask}'
+
+                del BACKED_OFF[:]
                 cue, points = split_cue([clean(l) for l in lines], ask)
+                backed_off = clean(BACKED_OFF[0]) if BACKED_OFF else None
                 score = cue_score(cue, ask)
                 cue_words = len(re.findall(r"[a-z']{3,}", cue.lower()))
                 if cue_words < MIN_CUE_WORDS:
@@ -514,28 +754,155 @@ def author(bind_figures=True):
                              ask)
                         continue
 
-                points = cardable(points, S.normalised)
+                question = clean(ask)
+
+                def points_at_print(text):
+                    return bool(cardlint.FIG_REF.search(text)
+                                and not cardlint.SELF_WORK.search(text)
+                                and not cardlint.INLINE_TABLE.search(text))
+
+                # The picture first, before the answer is read: a part that
+                # points at printed matter the card cannot carry is refused
+                # here whatever its scheme says, so tech_figures.py's worklist
+                # names every one of them.
+                pieces = []
+                lost_picture = not figure and points_at_print(question)
+                for piece in stem_pieces(section, q, letter, roman, texts, stems):
+                    # The answerbook's ruled blanks and their fill-in labels
+                    # ("Time: ____ People: ____"), which 2021 Ordinary Q6 prints
+                    # between its stem and its romans.
+                    piece = clean(BLANK_RULE.sub(' ', piece))
+                    piece = re.sub(r'(?:\s*\b[A-Z][a-z]{1,12}:\s*)+$', '', piece).strip()
+                    piece = TC.strip_labels(piece, paper_labels)
+                    piece = TRAILING_LABEL.sub('', piece).strip()
+                    piece = re.sub(r'\s+OR\s*$', '', piece)
+                    # A neighbouring figure's lone letter ("...in electronics. A")
+                    # and a table the walker flattened ("Week 1 Week 2 ... Task D").
+                    piece = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', piece)
+                    # A caption that followed the stem's last sentence on the
+                    # page ("...Technology workshops. Cylinder sail"): a run of
+                    # up to four words that closes nothing.
+                    piece = re.sub(r'(?<=[.?!])\s+(?:[A-Z]\S*\s+)(?:\S+\s+){0,2}\S*[^.?!:\s]\s*$', '', piece)
+                    if not keeps_stem(piece, question) or CAPTION.match(piece) \
+                            or flattened_table(piece):
+                        continue
+                    if not figure and points_at_print(piece):
+                        if LEANS_ON_STEM.search(question):
+                            lost_picture = True
+                        # This PIECE of the stimulus points at a picture and
+                        # the ask does not. "A 4K UHD interactive touch screen
+                        # ... is shown" above "Explain the term UHD." -- the ask
+                        # stands perfectly well on its own, and the sentence is
+                        # context this card cannot show. The piece goes, not
+                        # the card and not the rest of the stem: the cost data
+                        # printed under "the Slant 3D headphone stand, shown
+                        # here" is what 2022 Higher 4(b)(ii) is worked from.
+                        continue
+                    pieces.append(piece)
+                if lost_picture:
+                    note('points at printed matter the card cannot carry', question)
+                    continue
+                show_stem = ' '.join(pieces)
+                lead = re.match(r'([^.?!]{4,60}:)\s', question or '')
+                if lead and show_stem.rstrip().endswith(lead.group(1)):
+                    # "Explain the terms:" printed once above the parts arrives
+                    # at the end of the stem AND the head of each ask (2020
+                    # Higher 12); the stem gives it up.
+                    show_stem = show_stem.rstrip()[:-len(lead.group(1))].rstrip()
+                if not total:
+                    note('the scheme prints no tariff for this part', question)
+                    continue
+
+                raw = [TC.strip_scheme_line(clean(l), year, level, block.pages,
+                                            keep_numbers=bool(CALCULATION.search(l)))
+                       for l in points]
+                points = cardable([t for t in raw if t], S.normalised)
                 # A "point" that repeats the ask is the scheme naming the part
                 # rather than answering it: 2021 Higher Q3 marks the term
                 # "'patched'" and heads its answer with the term again, which
                 # shipped as a row telling the student the question.
-                bare = SCHEME_NORM(f'{ask} {question_label(covered)}')
+                bare = SCHEME_NORM(f'{raw_ask} {question_label(covered)}')
+                # The scheme reprints the stimulus too -- 2022 Higher Q9, Q13
+                # and Q14 open their blocks with the paper's own sentence --
+                # and a line that sits inside it is no answer either.
+                bare_stem = SCHEME_NORM(' '.join(pieces))
                 points = [p for p in points
-                          if len(p) > 60 or SCHEME_NORM(p) not in bare]
-                if not points:
-                    note('the scheme states no marking point for this part', ask)
-                    continue
-                if graphic_fragments(points):
-                    # The answer is a DRAWING the extractor has read the words
-                    # off: a flowchart's boxes, a truth table's rows. Each
-                    # fragment is a row a student would be asked to tick, and
-                    # not one of them states anything.
-                    note('the scheme answers this part with a drawing the text '
-                         'layer reads as fragments', ask)
-                    continue
-                if not total:
-                    note('the scheme prints no tariff for this part', ask)
-                    continue
+                          if not (len(SCHEME_WORDS(p)) >= 5 and SCHEME_NORM(p) in bare_stem)]
+                # At any length: 2022 Ordinary 2(b)(iii) reprints its ask in
+                # 68 characters above the two-word answer "Suitable circuit.",
+                # and a length exemption kept the reprint and lost the answer.
+                kept = [p for p in points
+                        if (SCHEME_NORM(p) not in bare
+                            # A reprint that paraphrases by a word -- "Find a
+                            # value of R2" for the paper's "Find the value of
+                            # R2" -- is still the question, not an answer.
+                            # Measured in WORDS, not tokens: a worked line
+                            # ("Mean: 2+3+...+4 = 48 = 4") has one word, which
+                            # the ask also has, and scored as a reprint.
+                            # ...and opening as the ask opens: "Batch production
+                            # is most appropriate for this order" reuses every
+                            # word of its ask and is the answer.
+                            and not (len(SCHEME_WORDS(p)) >= 6
+                                     and cue_score(p, ask) >= 0.85
+                                     and _tokens(p)[:1] == _tokens(ask)[:1])
+                            # ...and a lead-in that ends in a colon needs
+                            # only most of its words in the ask: "Describe,
+                            # with specific examples, each of the following
+                            # potential sources of waste in business or in
+                            # manufacturing:" is the scheme's own wording of
+                            # the paper's "with reference to a specific example".
+                            and not (p.rstrip().endswith(':')
+                                     and len(SCHEME_WORDS(p)) >= 8
+                                     and cue_score(p, ask) >= 0.6))
+                        or p == backed_off]
+                # A priced block answers: where every line reads as a reprint,
+                # the last is the answer in the ask's own words. 2022 Ordinary
+                # 2(b)(iii) asks for "a suitable circuit" and the scheme credits
+                # "Suitable circuit." -- two words the ask contains. Unless the
+                # last line merely finishes the line before it: 2026 Higher
+                # 2(b)(ii)'s reprint wraps after "voltage", and "comparator."
+                # is the end of the question, not a row.
+                if not kept and len(points) >= 2 \
+                        and SCHEME_NORM(f'{points[-2]} {points[-1]}') in bare:
+                    points = []
+                else:
+                    points = kept or points[-1:]
+                if len(points) > 1:
+                    points = [p for p in points if not ACCEPTED_NOTE.match(p)]
+                if backed_off and backed_off in points and cue \
+                        and SCHEME_NORM(f'{cue} {backed_off}') in bare:
+                    # The cue and the back-off line together are the ask: the
+                    # reprint wrapped, and its last line is no answer whether
+                    # or not a drawing is bound.
+                    points = []
+                if backed_off and solution and backed_off in points:
+                    # The reprint consumed every line and the scheme's answer
+                    # is its DRAWING (the crop is bound): the back-off line is
+                    # the end of the question, not a row. 2023 Ordinary
+                    # 1(b)(i)'s block is the paper's own bullets above a
+                    # flowchart, and "rotating and the light bulb turns off."
+                    # shipped as its 8-mark answer.
+                    points = []
+                points = [strip_ask_label(p, raw_ask) for p in points]
+                ask_row = bool(solution and solution in TC.ASK_ONLY)
+                if not ask_row and (not points or graphic_fragments(points)):
+                    # The answer is a DRAWING: the text layer holds nothing,
+                    # or the words read off a flowchart's boxes and a truth
+                    # table's rows, not one of which states anything. Where
+                    # the scheme's own print of that drawing has been cut and
+                    # looked at (tech_crops.SOLUTIONS), the card shows it at
+                    # the reveal, with the ask as its one row -- Chemistry's
+                    # rule for its dot-and-cross diagrams. Otherwise the part
+                    # is refused, and the refusal is the cropper's worklist.
+                    if solution:
+                        ask_row = True
+                    elif not points:
+                        note('the scheme states no marking point for this part', ask)
+                        continue
+                    else:
+                        note('the scheme answers this part with a drawing the '
+                             'text layer reads as fragments', ask)
+                        continue
 
                 marks = None
                 if roman is None and block.terms \
@@ -543,46 +910,27 @@ def author(bind_figures=True):
                         and sum(block.terms) == total:
                     marks = block.terms
 
-                stem = stems.get((section, q, letter)) or stems.get((section, q, None)) or ''
-                question = clean(ask)
+                stem_text = stems.get((section, q, letter)) or stems.get((section, q, None)) or ''
                 topic = (topic_for_option(q) if section == 'C'
-                         else topic_for(question, stem,
+                         else topic_for(question, stem_text,
                                         ' '.join(block.head_lines())))
-                if not topic:
-                    note('files under no syllabus heading', question)
-                    continue
 
-                show_stem = clean(stem) if keeps_stem(stem, question) else ''
-                figure = figures.get((year, level, section, q, letter))
-
-                def points_at_print(text):
-                    return bool(cardlint.FIG_REF.search(text)
-                                and not cardlint.SELF_WORK.search(text)
-                                and not cardlint.INLINE_TABLE.search(text))
-
-                if not figure and (points_at_print(question)
-                                   or (show_stem and points_at_print(show_stem)
-                                       and LEANS_ON_STEM.search(question))):
-                    note('points at printed matter the card cannot carry', question)
-                    continue
-                if not figure and show_stem and points_at_print(show_stem) \
-                        and not LEANS_ON_STEM.search(question):
-                    # The STIMULUS points at a picture and the ask does not.
-                    # "A 4K UHD interactive touch screen ... is shown" above
-                    # "Explain the term UHD." -- the ask stands perfectly well
-                    # on its own, and the stem is context this card cannot
-                    # show. Dropped rather than the card, which is what the
-                    # deck already does with a stem once a figure is bound.
-                    show_stem = ''
                 joined = f'{show_stem} {question}'
+                label_key = []
                 if cardlint.NAMES_LETTERS.search(joined) \
                         and not cardlint.INVITES_DRAWING.search(joined):
                     # A question naming labelled points needs those letters
                     # DECODED as well as shown, and the build drops a card that
-                    # shows them without a label key. The crop alone is not
-                    # enough, so these stay refused even where one exists.
-                    note('names a lettered part this author cannot decode', question)
-                    continue
+                    # shows them without a label key. tech_crops.LABEL_KEYS
+                    # holds the scheme's own words for each letter; a part
+                    # with a picture and a key is carded, the rest refused.
+                    decoded = TC.LABEL_KEYS.get((year, level, section, q, letter))
+                    if figure and decoded:
+                        label_key = [{'letter': d['letter'], 'meaning': d['meaning'],
+                                      'askedInThisQuestion': True} for d in decoded]
+                    else:
+                        note('names a lettered part this author cannot decode', question)
+                        continue
                 if cardlint.SCHEME_LEAK.search(joined):
                     note('the paper text carries scheme metadata', question)
                     continue
@@ -598,12 +946,19 @@ def author(bind_figures=True):
                     note('the paper text for this part is cut short', question)
                     continue
 
-                trimmed = len(points) - min(len(points), CAP[section])
-                rows, model = rows_for(points, marks, total, CAP[section])
-                shown = sum(r['marks'] or 0 for r in rows)
-                if model['kind'] == 'fixed' and shown != total:
-                    note('the rows do not sum to the printed tariff', question)
-                    continue
+                if ask_row:
+                    trimmed = 0
+                    rows = [{'id': 'r-1', 'kind': 'point', 'verbatim': question,
+                             'marks': total, 'openList': True,
+                             'contextNote': ASK_ROW_NOTE, 'ask': True}]
+                    model = {'kind': 'fixed'}
+                else:
+                    trimmed = len(points) - min(len(points), CAP[section])
+                    rows, model = rows_for(points, marks, total, CAP[section])
+                    shown = sum(r['marks'] or 0 for r in rows)
+                    if model['kind'] == 'fixed' and shown != total:
+                        note('the rows do not sum to the printed tariff', question)
+                        continue
                 model = dict(model, notation=block.notation)
 
                 note_text = (f'The scheme prints {block.notation!r} for '
@@ -615,10 +970,10 @@ def author(bind_figures=True):
                     note_text += (f' The scheme lists {len(points)} accepted '
                                   f'answers; the first {len(rows)} are shown.')
 
-                cards.append({
+                card = {
                     'id': card_id(year, level, section, q, letter, roman),
                     'topicId': topic,
-                    'conceptId': topic.replace('tech-', ''),
+                    'conceptId': (topic or '').replace('tech-', ''),
                     'level': LEVEL_WORD[level],
                     'year': year,
                     'subjectId': SUBJECT,
@@ -626,20 +981,46 @@ def author(bind_figures=True):
                     'questionRef': ref,
                     'questionText': question,
                     'stem': show_stem,
-                    'figureKey': '',
+                    # The scheme's own drawn answer, held back until the reveal.
+                    'figureKey': solution or '',
                     # The SEC's own print of the picture the ask points at,
                     # shown BEFORE the reveal. A question figure may be shared
                     # by the siblings under one part, which is right here: the
                     # paper prints the picture once for the whole question.
                     'questionFigureKey': figure or '',
-                    'labelKey': [],
+                    # A Technology question figure is the PICTURE the ask names
+                    # (a circuit, a lamp, a gate), never the printed ask itself:
+                    # the session screen must keep the stem and the ask text
+                    # visible beside it (SessionScreen printedQuestionReplacesText
+                    # hides both unless includesPrompt is false).
+                    **({'questionFigureIncludesPrompt': False} if figure else {}),
+                    'labelKey': label_key,
                     'tariffModel': model,
                     'totalMarks': total,
                     'rows': rows,
                     'notes': note_text,
-                })
+                }
+                cards.append(card)
+                shelf = (year, level, section, q)
+                if topic:
+                    shelved[shelf][topic] += 1
+                else:
+                    unshelved.append((card, shelf))
 
         stats.append((year, level, confirmed, cueless, contradicted))
+
+    # An ask whose own words name no syllabus heading -- "Suggest two
+    # industries that might use standards developed by the NSAI." -- sits on
+    # the shelf its question's other parts sit on, since the paper sets each
+    # long question in one context; failing that, under design, the area the
+    # syllabus names first. A shelf is a place to find the card, not a claim
+    # about what it says, and a card without one is a printed ask without a
+    # card.
+    for card, shelf in unshelved:
+        topic = (shelved[shelf].most_common(1)[0][0] if shelved[shelf]
+                 else FALLBACK_TOPIC)
+        card['topicId'] = topic
+        card['conceptId'] = topic.replace('tech-', '')
 
     return cards, refused, examples, verdicts, stats
 

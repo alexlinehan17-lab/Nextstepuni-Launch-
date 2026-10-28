@@ -55,6 +55,9 @@ import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
+import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technology/higher';
+import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
+import technologyExclusions from '../scripts/markbank/authoring/exclusions/technology.json';
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
 import { businessExpectedLayout } from '../components/MarkBank/businessRubric';
 import { isPointCard, isRubricCard, rowPartsReconcile, type ArtRubric, type BusinessRubric, type GeographyAllocation, type IrishAllocation, type SecRubricCard } from '../types/markBank';
@@ -669,6 +672,35 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const noted = rows.filter(({ row }) => row.kind !== 'criterion' && (row.contextNote ?? '').includes(lesser));
     expect(noted.filter(({ row }) => row.kind === 'point').every(({ row }) => /^r-\d+-\d+$/.test(row.id))).toBe(true);
     expect([noted.filter(({ row }) => row.kind === 'point').length, noted.filter(({ row }) => row.kind === 'anyN').length]).toEqual([16, 93]);
+  });
+
+  it('Technology: a drawn answer is the ask as its one row behind the scheme\'s own print; every printed 2026 Higher ask is a card', () => {
+    const cards = [...TECHNOLOGY_HIGHER, ...TECHNOLOGY_ORDINARY].filter(isPointCard);
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    // 716 shipped before the lane opened; 2026 Higher and the in-window parts that were
+    // refused for a missing picture or a drawn answer are added, never removed (tech_all.py,
+    // tech_crops.py). A floor, not a count: later sittings add to it.
+    expect(cards.length).toBeGreaterThanOrEqual(815);
+    for (const card of cards) {
+      expect(card.rows.length, `${card.id}: no rows`).toBeGreaterThan(0);
+      const askRows = card.rows.filter(row => row.ask);
+      if (!askRows.length) continue;
+      // Where the scheme answers with a drawing (a flowchart, a truth table, a cam, a
+      // comparator circuit, a comparison table), the card's one row is the ask itself,
+      // priced at the part's tariff, and the reveal shows the scheme's print as a solution
+      // figure (chem_figures.py's rule). Nothing is typed: the row is the question's own
+      // words and the figure is the examiner's drawing.
+      expect(card.rows, `${card.id}: an ask row stands alone`).toHaveLength(1);
+      expect(askRows[0].marks, `${card.id}: the ask row carries the tariff`).toBe(card.totalMarks);
+      expect(normalise(card.questionText).includes(normalise(askRows[0].verbatim)), `${card.id}: the ask row is the question`).toBe(true);
+      expect('figure' in card && card.figure?.solution, `${card.id}: an ask row needs the scheme's print`).toBe(true);
+    }
+    // 2026 Higher, carded part by part on 2026-10-28: 83 printed asks, 83 cards, nothing
+    // excluded (every-printed-ask-gets-a-card). reconcile.py measures the same thing against
+    // the census; this pins it where the deck is.
+    const hl2026 = cards.filter(card => card.year === 2026 && card.level === 'higher');
+    expect(hl2026.length).toBeGreaterThanOrEqual(83);
+    expect(technologyExclusions.filter(entry => entry.ref.startsWith('2026 '))).toEqual([]);
   });
 
   it('Business: the responses the scheme prints for a part are rows on the card, each lifted from the cited scheme page', () => {
