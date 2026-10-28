@@ -1306,11 +1306,13 @@ export const MAX_OPTION_ROWS = 8;
  * menu that omits answers the scheme states is misrepresenting the marking,
  * which is the one thing this tool exists not to do.
  *
- * Still bounded. Seventeen is the ceiling because Agricultural Science 2010 HL
- * Q5(a)(ii) prints seventeen accepted footrot points. The bound follows the
- * largest verified SEC menu rather than deleting correct answers for neatness.
+ * Still bounded. Twenty-five is the ceiling because Construction Studies 2019
+ * HL Q1(a) prices "Any 12 × 4 marks" from twenty-five bulleted details in one
+ * pool (Agricultural Science 2010 HL Q5(a)(ii) prints seventeen footrot
+ * points). The bound follows the largest verified SEC menu rather than
+ * deleting correct answers for neatness.
  */
-export const MAX_LONG_OPTION_ROWS = 17;
+export const MAX_LONG_OPTION_ROWS = 25;
 
 /** The row cap that actually applies to a card, given its tariff.
  *

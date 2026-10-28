@@ -20,11 +20,12 @@ LEGACY = {'q1-b', 'q2-a', 'q2-c', 'q3-a', 'q3-b', 'q4-a', 'q5-a', 'q5-b', 'q5-c'
 AREAS = ['Traditional cut roof with natural slates', 'Softwood sliding sash windows with single - glazing',
          'Solid external walls of brick construction, uninsulated and with internal lime render']
 CHOICES = {'q4-b': ('areas', 2, 18, AREAS)}
+CHOICES.update({'q1-a': ('details', 12, 4, ["External render", "Concrete block", "Air space/Residual cavity", "Cavity closer", "Breather membrane (BM)", "Racking board", "250 Stud/insulation", "Sheeting", "Air barrier membrane (ABM)", "Insulated service cavity", "Plasterboard/skim", "Concrete Window cill", "Wrap around DPC", "Frame cill – thermally broken", "Window board", "Glazing (Triple)", "Frame head -thermally broken", "Air -tight tapes @ head and cill", "Larch Cladding", "Soffit", "Battens", "Counter battens", "DPC", "Batten for DPC", "Timber lintels"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'4b': 'q4-b'}
 RETIRED = [('card-source-bindings.json', 'q2-c'), ('card-source-bindings.json', 'q8-b'), ('card-corrections.json', 'q8-c'), ('card-corrections.json', 'q10-b')]
 LEDGER = [(1, 'Answer Question'), (2, 'Select'), (3, 'one of'), (3, 'one of'), (3, 'Select'), (3, 'any two'), (7, 'OR'), (7, 'One of'), (7, 'or')]
 LEAF = {
-    'q1-a': [('details', 48, r(48)), ('presentation', 8, BAND8)],
+    'q1-a': [('details', 48, None), ('presentation', 8, BAND8)],
     'q1-b': [('cill', 4, r(4))],
     'q2-a': [(f'requirement-{i}', 6, r(6)) for i in (1, 2, 3)],
     'q2-b': [(f'profile-{i}', 8, r(8)) for i in (1, 2, 3)] + [('recommendation', 3, r(3)), ('justification', 3, r(3))],
