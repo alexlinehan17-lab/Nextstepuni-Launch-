@@ -772,8 +772,8 @@ const decks = [
   /* Technology is the sixteenth subject and the first to be authored end to
    * end from a paper-anchored census in one pass. Enrolled explicitly so a
    * later regeneration cannot silently omit or replace any of its cards. */
-  ['technology:higher', TECHNOLOGY_HIGHER, 357, 'ae8ad195ca373cef2d8923c83a848613215aa9413c2cd7bda7d6796c4d64370c'],
-  ['technology:ordinary', TECHNOLOGY_ORDINARY, 359, '43e668303c30fef288ee0e09d8b5d3384105085e23cc10d288903ed29d1ab687'],
+  ['technology:higher', TECHNOLOGY_HIGHER, 444, 'c7ba61ac47c654c637b0fb0435ed9f6dfefad2605d1a82670c0fde4c8c828b11'],
+  ['technology:ordinary', TECHNOLOGY_ORDINARY, 371, '6c246943d676430cd3c205bec722be43ccbe525f4be314cfd3c69969b623d60b'],
   /* 2026-09-10: History, the nineteenth subject, and the first carded
    * against TWO papers per sitting — a candidate sits either the Later
    * Modern or the Early Modern field of study, and both are now in the
@@ -1402,6 +1402,10 @@ describe('Mark Bank card preservation', () => {
     // (chemistry-audit-ledger.json "added": 2010-2020 and 2026 carded for the
     // first time, and the parts the 2021-2025 sittings had joined or missed)
     // and withdraw 34 shipped ids onto aliases: + chemistryAdded - 34.
+    // Technology (2026-10-28, the every-printed-ask lane): its 716 frozen
+    // cards gain 99 -- 2026 Higher carded part by part (83 asks, 83 cards)
+    // and 16 in-window parts that had been refused for a missing picture or
+    // a drawn answer -- and withdraw none: 22,970 + 99 = 23,069.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1418,9 +1422,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(22_970 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_069 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_069 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

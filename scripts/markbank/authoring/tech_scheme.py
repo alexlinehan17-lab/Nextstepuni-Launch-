@@ -48,8 +48,12 @@ ROMANS = ['i', 'ii', 'iii', 'iv', 'v']
 # "(10 Marks, 4+6)" on page 17 of the 2023 Ordinary scheme, and demanding the
 # spelling lost Option 5(c) -- a printed tariff, read as no tariff at all.
 _M = r'm?arks?'
+# A fourth shape, once: 2026 Higher prices Option 3(a) as "10 marks, (4 + 6)",
+# the total outside the bracket and the split inside it. Unread, the block
+# never closed and 3(a)'s two parts were filed under 3(b).
 TARIFF = re.compile(
     r'\(\s*(?P<total>\d{1,3})\s*' + _M + r'\s*[,;]?\s*(?P<split>\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)'
+    r'|(?<![\d(])(?P<total2>\d{1,3})\s*' + _M + r'\s*,\s*\(\s*(?P<split2>\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)'
     r'|\(\s*(?P<splitonly>\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*' + _M + r'\s*\)'
     # "(6 x 1 mark)" -- the 2021 Higher table question, six cells at one mark.
     r'|\(\s*(?P<each>\d{1,2})\s*[x\u00d7\u2715]\s*(?P<per>\d{1,2})\s*' + _M + r'\s*\)'
@@ -91,6 +95,7 @@ RUBRIC = re.compile(
 
 # Page furniture: the running footer, the section name repeated in the margin,
 # the rubric line above each section, and the extractor's page markers.
+PAGE_MARK = re.compile(r'^##\s*Page\s*(\d+)\s*$')
 FURNITURE = re.compile(
     r'^##\s*Page\s*\d+\s*$'
     r'|^Leaving Certificate(?:\s+Examination)?[,\s]'
@@ -98,6 +103,9 @@ FURNITURE = re.compile(
     r'|^Section\s+[ABC](?:\s+\d+)?(?:\s+Marking\s+Scheme)?\s*$'
     r'|^Marking\s+Scheme\s*$'
     r'|^\d{1,3}\s*$'
+    # The section's total on a line of its own -- "72 marks" under 2026
+    # Higher's "Section A" -- which landed in Question 1 as a row.
+    r'|^\d{1,3}\s*marks?\s*$'
     r'|^Answer\s+\d\(\w\)\s+(?:and|or)\s+\d\(\w\)\s*$'
     r'|^OR\s*$', re.I)
 
@@ -153,6 +161,10 @@ class Block:
         # Whether the scheme PRINTED this block's number, or the number was
         # filled in from the block's position in the run.
         self.numbered = True
+        # The scheme pages this block's lines were printed on, so a
+        # solution crop and a label zone (tech_crops.py) can be matched
+        # to the block whose words they hold.
+        self.pages = set()
 
     @property
     def key(self):
@@ -223,10 +235,12 @@ class TechScheme:
         head_q, head_letter = None, None
         last_q = 0
         order = []
+        page = 0
+        pages = set()
 
         def close(total, terms, notation):
             """Emit the block the tariff just ended."""
-            nonlocal lines, roman, head_q, head_letter, last_q
+            nonlocal lines, roman, head_q, head_letter, last_q, pages
             if lines:
                 q = head_q
                 if q is None:
@@ -246,14 +260,20 @@ class TechScheme:
                     block.total, block.terms = total, terms
                     block.notation = notation
                     block.numbered = head_q is not None
+                    block.pages = set(pages)
                     if block.key not in self.blocks:
                         order.append(block.key)
                     self.blocks[block.key] = block
                     last_q = q
             lines, roman = [], None
             head_q, head_letter = None, None
+            pages = set()
 
         for text in _lines(raw):
+            pm = PAGE_MARK.match(text)
+            if pm:
+                page = int(pm.group(1)) - 1
+                continue
             # Page furniture, unless it is carrying a tariff: the 2021
             # Ordinary scheme sets Question 3(d)'s "(6 Marks, 4+2)" on the same
             # line as the running footer, and dropping the line whole dropped
@@ -331,11 +351,13 @@ class TechScheme:
                     continue            # a section or option heading's price
                 if tail:
                     lines.append((roman, tail))
+                    pages.add(page)
                 close(total, terms, m.group(0))
                 continue
 
             if text and not NOT_A_POINT.match(text):
                 lines.append((roman, text))
+                pages.add(page)
         self.order = order
 
     def priced(self):
@@ -379,6 +401,9 @@ def _tariff(hit):
     if hit.group('total'):
         terms = [int(x) for x in re.findall(r'\d+', hit.group('split'))]
         return int(hit.group('total')), terms
+    if hit.group('total2'):
+        terms = [int(x) for x in re.findall(r'\d+', hit.group('split2'))]
+        return int(hit.group('total2')), terms
     if hit.group('splitonly'):
         terms = [int(x) for x in re.findall(r'\d+', hit.group('splitonly'))]
         return sum(terms), terms

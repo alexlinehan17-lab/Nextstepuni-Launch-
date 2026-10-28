@@ -51,6 +51,7 @@ import paper_census as PC                                    # noqa: E402
 import cardlint                                              # noqa: E402
 import tech_all as TA                                        # noqa: E402
 from tech_scheme import TechScheme                           # noqa: E402
+import tech_crops as TC                                      # noqa: E402
 
 # The page's own furniture, measured on the pages rather than assumed. A
 # question's first line sits at y=38 and the running footer starts at y=766 of
@@ -289,6 +290,106 @@ REVIEWED = {
         'line labels the tubular handrail assembly Ladder and the blue board '
         'Springboard, and an angle drawn between the board and its fulcrum '
         'mounting is labelled Tilt Angle.',
+    # 2026 Higher: the rectangles are tech_crops.BY_EYE, each measured on the
+    # rendered page and opened at 150 dpi before it was written down.
+    'technology-2026-HL-paper-secA-q3-art':
+        'A circuit diagram: a 12V battery feeding two 10 Ω resistors in '
+        'series, with a 40 Ω resistor and a voltmeter V in parallel with each '
+        'other between them.',
+    'technology-2026-HL-paper-secA-q8-art':
+        'Outline line drawing of a cordless drill in pictorial view, drawn '
+        'unshaded in a ruled box: the chuck and bit at the front, the motor '
+        'body, the pistol grip with its trigger, and the battery pack below.',
+    'technology-2026-HL-paper-secA-q9-art':
+        'A lever diagram: a horizontal bar on a triangular fulcrum at its left '
+        'end, a 250 N load 50 mm from the fulcrum, and an upward effort arrow '
+        '200 mm beyond the load at the right end.',
+    'technology-2026-HL-paper-secA-q10-art':
+        'Colour photograph of a hand holding a blue jigsaw by its handle, the '
+        'blade below the base plate, with a red double-headed arrow along the '
+        'blade showing its up-and-down motion.',
+    'technology-2026-HL-paper-secA-q11-art':
+        'A fishbone (cause and effect) diagram: a grey fish skeleton with four '
+        'cause boxes on its ribs labelled People, Material, Method and '
+        'Environment, each with an empty dashed box beside it except Material, '
+        'whose box reads Oxidised.',
+    'technology-2026-HL-paper-secA-q13-art':
+        'Two panels: on the left a ruled drawing box with a black dot at the '
+        'crossing of two dashed centre lines; on the right a colour photograph '
+        'of a wooden fishing automaton, a seated figure holding a rod over a '
+        'wave, labelled Fishing rod, Drive shaft, Cam and Handle.',
+    'technology-2026-HL-paper-secA-q15-art':
+        'Colour photograph of a child\u2019s climbing arch: a curved wooden '
+        'frame with a round hand-hole at each foot and pastel-coloured rungs '
+        'across the top.',
+    'technology-2026-HL-paper-secC-q2b-art':
+        'An op-amp circuit diagram: a triangle labelled IC with inverting (-) '
+        'and non-inverting (+) inputs on the left, between an upper and a lower '
+        'supply rail, with the output to the right and no components fitted.',
+    'technology-2026-HL-paper-secC-q4b-art':
+        'A two-row table: Day 1 to 12 across the top and Defects 2, 3, 4, 5, '
+        '3, 2, 6, 4, 3, 7, 5, 4 beneath.',
+    'technology-2026-HL-paper-secC-q5b-art':
+        'Colour photograph of a petrol multi-function gardening tool, the '
+        'engine at the top of a long shaft, with an inset of its orange '
+        'strimmer head labelled Safety guard by a red arrow.',
+    'technology-2026-HL-paper-secC-q5c-art':
+        'Three colour photographs of the gardening tool\u2019s modular heads: '
+        'a hedge-trimmer blade, a chainsaw bar and the orange strimmer head.',
+    # In-window parts, 2026-10-28: the cropper's own cuts, looked at.
+    'technology-2022-HL-paper-secC-q2b-art':
+        'A circuit diagram between +V and -V rails: a variable resistor A above '
+        'a thermistor B form a potential divider feeding a transistor through a '
+        'resistor; a push switch C and the transistor output feed an OR gate D '
+        'that drives a buzzer.',
+    'technology-2022-OL-paper-secC-q2b-art':
+        'A circuit diagram between 6V and 0V rails with a switch in the top '
+        'rail: a variable resistor A above a thermistor B form a potential '
+        'divider feeding a transistor through a resistor, with a buzzer C in '
+        'the collector line.',
+    'technology-2023-OL-paper-secC-q2b-art':
+        'Colour photograph of a red miniature toggle switch with six pins, '
+        'above its circuit symbol: a double-pole double-throw switch drawn as '
+        'two linked blades each able to meet either of two contacts.',
+    'technology-2023-OL-paper-secC-q4b-art':
+        'Colour photograph of a white S-Works road bicycle with deep-section '
+        'black wheels, standing on a road in front of desert hills.',
+    'technology-2024-HL-paper-secC-q4b-art':
+        'Colour photograph of three laser-cut plywood trophies, each a '
+        'latticed football on a tapered tower bearing a Fantasy Champion 2017 '
+        'shield.',
+    'technology-2025-HL-paper-secC-q4b-art':
+        'A cost graph: cost from 0 to 8000 against Quantity from 0 to 400, a '
+        'steep blue line A from the origin and a shallower red line B from '
+        '3000, crossing at point C above 200, with the region X between them '
+        'before C shaded green and the region Y after it shaded pink.',
+    # By-eye rects (tech_crops.BY_EYE) for in-window parts.
+    'technology-2021-HL-paper-secB-q3b-art':
+        'A circuit diagram: a variable resistor R1 and a thermistor R2 in series '
+        'as a potential divider feeding a transistor through R3, with a diode '
+        'across a relay coil in the collector line and the relay contacts '
+        'switching a motor M.',
+    'technology-2021-HL-paper-secC-q2b-art':
+        'A circuit diagram of a 555 timer between two supply rails: R1 and R2 '
+        'in series to pins 7, 6 and 2, C1 from pin 2 to 0V, C2 on pin 5, pins 4 '
+        'and 8 to +V and pin 1 to 0V, with the output at pin 3.',
+    'technology-2021-HL-paper-secC-q4c-art':
+        'A control chart: Sample Value from 38 to 42 against Time from 0 to '
+        '25, with a UCL line at 41.5, an Average line at 40 and an LCL line at '
+        '38.5, and the plotted samples scattered about the average.',
+    'technology-2021-OL-paper-secC-q2b-art':
+        'A circuit diagram between two supply rails with a switch in the top '
+        'rail: a resistor above an electrolytic capacitor A in series, the '
+        'junction feeding a transistor B through a resistor, with an LED and '
+        'resistor in the collector line.',
+    'technology-2023-HL-paper-secC-q4d-art':
+        'An assembly sequence in six captioned pictures joined by arrows: '
+        'Assemble chassis, Install circuit board, Install flat screen, Install '
+        'speakers, Final assembly and Inspection.',
+    'technology-2024-OL-paper-secC-q2b-art':
+        'A circuit diagram of a 555 monostable between +V and 0V rails: two '
+        'resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and '
+        '1 marked and its output at pin 3, and an electrolytic capacitor C.',
 }
 
 # Looked at and turned down, with what is wrong with each.
@@ -321,6 +422,8 @@ REJECTED = {
     'technology-2025-OL-paper-secA-q1-art': 'carries both asks and their answer boxes',
     'technology-2025-OL-paper-secA-q11-art': 'carries both asks and their answer boxes',
     'technology-2025-OL-paper-secA-q3-art': 'carries both asks and their answer boxes',
+    # Superseded by a by-eye rect of the whole circuit (tech_crops.BY_EYE).
+    # 'technology-2021-HL-paper-secC-q2b-art': the 555 chip alone, no circuit
 }
 
 
@@ -671,12 +774,22 @@ def main():
         os.makedirs(args.dir, exist_ok=True)
     cut, missed, warned = [], [], []
     seen = {}
-    for year, level, section, q, letter in worklist():
+    items = worklist()
+    for key in TC.BY_EYE:
+        yr, lv, sec, qq, le, _roman = TC.parse_key(key)
+        if (yr, lv, sec, qq, le) not in items:
+            items.append((yr, lv, sec, qq, le))
+    for year, level, section, q, letter in items:
         paths = sorted(
             os.path.join(PAPERS, f)
             for f in os.listdir(PAPERS)
             if re.fullmatch(rf'{year}-{level}(-\d+)?-paper\.pdf', f))
-        got = crop_for(paths, section, q, letter)
+        key = key_for(year, level, section, q, letter)
+        if key in TC.BY_EYE:
+            booklet, page_no, rect = TC.BY_EYE[key]
+            got = (TC.paper_path(year, level, booklet), page_no, tuple(rect))
+        else:
+            got = crop_for(paths, section, q, letter)
         if not got:
             missed.append((year, level, section, q, letter))
             continue
@@ -689,7 +802,6 @@ def main():
             cut.append((year, level, section, q, letter, seen[stamp], rect,
                         True, path, page))
             continue
-        key = key_for(year, level, section, q, letter)
         seen[stamp] = key
         if args.write:
             with pymupdf.open(path) as doc:
@@ -731,6 +843,24 @@ def main():
                 'description': REVIEWED[key],
                 'questionRef': (f'{year} {level.upper()} Section {section} '
                                 f'Q{q}' + (f'({letter})' if letter else '')),
+            })
+        for key, (page_no, rect, description) in TC.SOLUTIONS.items():
+            yr, lv, sec, qq, le, roman = TC.parse_key(key)
+            dest = os.path.join(ROOT, 'exam-papers', 'technology', 'figures',
+                                f'{yr}-{lv}')
+            os.makedirs(dest, exist_ok=True)
+            with pymupdf.open(TC.scheme_path(yr, lv)) as doc:
+                doc[page_no].get_pixmap(clip=pymupdf.Rect(*rect), dpi=200).save(
+                    os.path.join(dest, f'{key}.png'))
+            catalogue.append({
+                'file': f'{key}.png', 'kind': 'figure', 'truncated': False,
+                'description': description,
+                # The scheme's own answer: held back until the student has
+                # committed to one of their own (chem_figures.py's rule).
+                'solution': True,
+                'questionRef': (f'{yr} {lv.upper()} Section {sec} Q{qq}'
+                                + (f'({le})' if le else '')
+                                + (f'({roman})' if roman else '')),
             })
         out = os.path.join(ROOT, 'scripts', 'markbank', 'authored',
                            'technology-figures.json')

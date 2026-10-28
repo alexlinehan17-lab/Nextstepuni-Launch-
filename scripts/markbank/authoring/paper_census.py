@@ -159,7 +159,10 @@ SUBJECTS = {
     # and 039 carries Section B (two core long questions) and Section C (five
     # options, one answered). The sections are named on the page, and each
     # section restarts its numbering at 1, so the census reads the sections.
-    'technology': {'mode': 'sections'},
+    # The window is a DECISION: 2021-2025 shipped first; the archive 2010-2020
+    # and 2026 are admitted one sitting at a time, as each is carded under the
+    # year lane (2026-10-28), so census, ledger and deck measure the same thing.
+    'technology': {'mode': 'sections', 'from': 2021, 'also': [[2026, 'hl']]},
     # Religious Education restarts nothing and numbers almost nothing: three
     # UNITS hold ten lettered SECTIONS, and only Section A (Unit One) prints
     # "Question 1..3" at all. Sections B-J address their asks by part alone,
@@ -1240,6 +1243,20 @@ def _paragraph_heads(raw):
     return chunks
 
 
+# Technology, Sections B and C: a block that continues the roman part above it
+# (see the walker). Prose, not lettering.
+TECH_CONTINUES = re.compile(
+    r'^(?:\u2022|\d{1,2}\.\s)'
+    r'|^(?:\S+\s+){4,}\S*[.?:]\s*$')
+TECH_ASKS = re.compile(
+    r'^(?:\u2022|(?:briefly\s+)?(?:calculate|compare|complete|define|describe'
+    r'|determine|differentiate|discuss|distinguish|draw|explain|give|identify'
+    r'|indicate|label|list|name|outline|redraw|sketch|state|suggest|show'
+    r'|select|using|use|what|why|write)\b)', re.I)
+TECH_PAGE_FURNITURE = re.compile(
+    r'Leaving Certificate|Please turn over|Do not write on this page', re.I)
+
+
 def census_sections(subject, year, level):
     """The section-restart walker: Business and Home Economics.
 
@@ -1600,6 +1617,45 @@ def census_sections(subject, year, level):
                 parts[key].append(rest)
             continue
         if PP.FURNITURE.match(text):
+            continue
+        if subject == 'technology' and section in ('B', 'C') and letter \
+                and not roman and (section, q, letter, None) in parts \
+                and TECH_CONTINUES.match(text) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # The same, for the lettered part itself before any roman has
+            # opened: 3(d) wraps its one ask over two blocks ("...by air
+            # (planes)," / "land (trucks), and sea (ships)..."), 4(d) prints
+            # its context, a picture, and only then "Describe, with annotated
+            # sketches...", and 5(d) ends "in terms of:" above three bullets.
+            # Read as a stem, each ask shipped cut in half. Where romans do
+            # follow, the letter's text is their stimulus either way.
+            parts[(section, q, letter, None)].append(text)
+            continue
+        if subject == 'technology' and section in ('B', 'C') and letter \
+                and roman and (section, q, letter, roman) in parts \
+                and TECH_CONTINUES.match(text) \
+                and not TECH_PAGE_FURNITURE.search(text):
+            # A stimulus is printed ABOVE the parts it introduces. Prose
+            # that arrives after a roman has opened, under the same letter,
+            # is that roman's own text continuing in a block of its own:
+            # 2026 Higher 2(b)(iii) sets its data in one paragraph and
+            # "Calculate the time to fully discharge the battery." in the
+            # next, and 4(b)(i)'s three bullets follow its colon. Read as
+            # a stem, the ask lost its question and its siblings gained
+            # it. Only prose qualifies -- a bulleted or numbered list, or
+            # five words closed by a full stop, question mark or colon.
+            # A figure's caption ("Print head module"), its labels ("A D B
+            # Motor") and a table's cells carry no sentence and stay out,
+            # as does the page's own furniture.
+            parts[(section, q, letter, roman)].append(text)
+            if not TECH_ASKS.match(text):
+                # Data printed under (i) -- "Option A - Use skilled labour
+                # to assemble: Cost: EUR 8.50 per unit" -- is what (ii)
+                # and (iii) calculate from as well, so it is the letter's
+                # stem too; the author drops a stem its own ask repeats. A
+                # follow-on ask ("Name an electronic component...") and a
+                # bulleted enumeration belong to their roman alone.
+                stems.setdefault((section, q, letter), []).append(text)
             continue
         stems.setdefault((section, q, letter), []).append(text)
 

@@ -235,10 +235,25 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-a11-i", topicId: "tech-core-structures", conceptId: "core-structures",
+    section: "A", questionRef: "2021 OL Section A Q11(i)",
+    stem: "The image shows a garden spade which acts as a lever. 50 N 0.3 M 0.5 M F",
+    questionText: "On the image, label the load, the effort and the fulcrum when the spade is in use.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "fulcrum when the spade is in use. L", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2a-i", topicId: "tech-core-design", conceptId: "core-design",
     section: "B", questionRef: "2021 OL Section B Q2(a)(i)",
+    stem: "The FlapZen is an adjustable portable laptop stand which is specifically designed to meet the needs of the user.",
     questionText: "Outline two ways in which this laptop stand meets the needs of a typical user.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -252,6 +267,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2a-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q2(a)(ii)",
+    stem: "The FlapZen is an adjustable portable laptop stand which is specifically designed to meet the needs of the user.",
     questionText: "Suggest a suitable material for the manufacture of the support legs. Give one reason for selecting this material.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -276,6 +292,19 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2021-ol-b2b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "B", questionRef: "2021 OL Section B Q2(b)(ii)",
+    questionText: "Draw a labelled diagram of a suitable circuit for the LED light source. Include a switch and a battery power supply.",
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a battery power supply.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q2(b)(iii)",
     questionText: "Using notes and sketches, describe how the LED light source could be attached to the stand.",
@@ -291,6 +320,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2c-i", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2021 OL Section B Q2(c)(i)",
+    stem: "The majority of sales of the FlapZen are transacted online.",
     questionText: "State two advantages of purchasing goods online.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -304,6 +334,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2c-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2021 OL Section B Q2(c)(ii)",
+    stem: "The majority of sales of the FlapZen are transacted online.",
     questionText: "Outline two precautions people should take when purchasing goods online.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -317,6 +348,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2d-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q2(d)(i)",
+    stem: "The packaging of goods is a major environmental concern for manufacturers and retailers.",
     questionText: "State two ways in which manufacturers can limit their environmental impact when packaging their goods.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -338,6 +370,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2d-ii", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "B", questionRef: "2021 OL Section B Q2(d)(ii)",
+    stem: "The packaging of goods is a major environmental concern for manufacturers and retailers.",
     questionText: "The image opposite shows boxes made from corrugated cardboard. Using notes and sketches, describe what is meant by the term corrugated cardboard.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -359,6 +392,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3a-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(a)(i)",
+    stem: "Denise Schindler is a paralympian who was one of the first athletes to use a 3D-printed prosthetic limb. One of the great advantages of 3D printing and modeling technologies is the capacity for customisation and personalisation.",
     questionText: "Outline two advantages of 3D printing in the manufacture of bespoke (once-off) items.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -372,6 +406,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3a-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(a)(ii)",
+    stem: "Denise Schindler is a paralympian who was one of the first athletes to use a 3D-printed prosthetic limb. One of the great advantages of 3D printing and modeling technologies is the capacity for customisation and personalisation.",
     questionText: "Suggest two other ways in which sporting equipment has been enhanced through technological advancements.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -385,6 +420,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3b-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(b)(i)",
+    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. (i) has the lesser environmental impact.",
     questionText: "Briefly describe what is meant by the terms additive and subtractive in reference to manufacturing.",
     tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
     rows: [
@@ -399,6 +435,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3b-iii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2021 OL Section B Q3(b)(iii)",
+    stem: "3D printing is described as additive manufacturing, while turning wood or metal on a lathe is described as subtractive manufacturing. (i) has the lesser environmental impact.",
     questionText: "Name one other CAM process commonly used in schools. Briefly outline the benefits of this process for student project work.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 2,
     rows: [
@@ -412,6 +449,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3c-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q3(c)(i)",
+    stem: "The image shows an example of an electric bicycle. These bicycles are becoming increasingly popular, particularly with urban dwellers.",
     questionText: "State two advantages of using an electric bicycle in a urban setting.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -425,6 +463,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3c-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q3(c)(ii)",
+    stem: "The image shows an example of an electric bicycle. These bicycles are becoming increasingly popular, particularly with urban dwellers.",
     questionText: "It costs a consumer €1.05 to fully recharge the battery of an electric bicycle each week. Calculate the overall cost to the consumer to charge the bicycle for thirty-five days.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -438,7 +477,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3d-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(d)(i)",
-    stem: "1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
+    stem: "In order to reduce demand on the Earth’s resources, recycling, upcycling, and composting are now commonplace. 1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
     questionText: "Explain any two of the terms: recycling, upcycling, composting.",
     tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -454,11 +493,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3d-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(d)(ii)",
-    stem: "1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
-    questionText: "In the case of any two processes below, state whether it is recycling, upcycling or composting.",
+    stem: "In order to reduce demand on the Earth’s resources, recycling, upcycling, and composting are now commonplace.",
+    questionText: "In the case of any two processes below, state whether it is recycling, upcycling or composting. 1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans (Upcycling) (Recycling) 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles (Composting) (Upcycling)", marks: 2, openList: true },
+    { id: "r-1", kind: "point", verbatim: "(Upcycling) (Recycling) 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles (Composting) (Upcycling)", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -507,6 +546,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c1d-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 OL Section C Q1(d)(i)",
+    stem: "The image shows an industrial robotic device used for picking and placing objects.",
     questionText: "Give one advantage of using a robotic device for this type of work.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4 + 6)"}, totalMarks: 4,
     rows: [
@@ -520,6 +560,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 OL Section C Q1(d)(ii)",
+    stem: "The image shows an industrial robotic device used for picking and placing objects.",
     questionText: "Describe, using notes and annotated sketches, a suitable mechanical gripper for the device.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4 + 6)"}, totalMarks: 6,
     rows: [
@@ -535,6 +576,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2a-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(a)(i)",
+    stem: "The image shows a Digital Multimeter, a tool commonly used when working with electronics in Technology classrooms.",
     questionText: "State two measurements that can be taken using a multimeter.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -548,6 +590,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2a-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(a)(ii)",
+    stem: "The image shows a Digital Multimeter, a tool commonly used when working with electronics in Technology classrooms.",
     questionText: "A multimeter can also be used as a continuity tester. Describe the purpose of testing continuity in a circuit.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -562,11 +605,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(b)(i)",
+    stem: "The circuit diagram shown is a timer circuit. The circuit is based on the behaviour of the inter-connected capacitor and resistor.",
     questionText: "Name components A and B in the circuit.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6 + 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A: Electrolytic Capacitor B: Transistor +V", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q2b-art.png",
+          "srcHash": "e792f7d307de8c4cbad4ecf00d234030",
+          "alt": "A circuit diagram between two supply rails with a switch in the top rail: a resistor above an electrolytic capacitor A in series, the junction feeding a transistor B through a resistor, with an LED and resistor in the collector line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -575,12 +627,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(b)(ii)",
+    stem: "The circuit diagram shown is a timer circuit. The circuit is based on the behaviour of the inter-connected capacitor and resistor.",
     questionText: "Briefly describe the operation of the circuit.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6 + 8 + 6)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "When the circuit is turned on, the capacitor begins to fill with charge. When the capacitor is full, current flows to the base of the transistor B. This switches the R C transistor on allowing current to flow through the LED C.", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "The time it takes to fill the capacitor will depend on B the value of resistor R and the capacitor A, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q2b-art.png",
+          "srcHash": "e792f7d307de8c4cbad4ecf00d234030",
+          "alt": "A circuit diagram between two supply rails with a switch in the top rail: a resistor above an electrolytic capacitor A in series, the junction feeding a transistor B through a resistor, with an LED and resistor in the collector line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -589,11 +650,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(b)(iii)",
+    stem: "The circuit diagram shown is a timer circuit. The circuit is based on the behaviour of the inter-connected capacitor and resistor.",
     questionText: "Redraw the circuit to include an indicator light emitting diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6 + 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "closed. 0V", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2021-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2021-OL-paper-secC-q2b-art.png",
+          "srcHash": "e792f7d307de8c4cbad4ecf00d234030",
+          "alt": "A circuit diagram between two supply rails with a switch in the top rail: a resistor above an electrolytic capacitor A in series, the junction feeding a transistor B through a resistor, with an LED and resistor in the collector line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -602,7 +672,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(c)(i)",
-    stem: "Note: P = V × I Fuse in holder OR",
+    stem: "The image shows a fan heater with a power rating of 2000 W. The plug connected to this heater is fitted with a 13 A fuse. Note: P = V × I Fuse in holder",
     questionText: "State the purpose of a fuse.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -616,7 +686,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(c)(ii)",
-    stem: "Note: P = V × I Fuse in holder OR",
+    stem: "The image shows a fan heater with a power rating of 2000 W. The plug connected to this heater is fitted with a 13 A fuse. Note: P = V × I Fuse in holder",
     questionText: "Calculate the current this fan heater will draw from a 230 V supply.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -632,6 +702,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(d)(i)",
+    stem: "Circuits can be analysed digitally using circuit simulation software.",
     questionText: "Briefly describe what is meant by the term circuit simulation when referring to the design of circuits.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -645,6 +716,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(d)(ii)",
+    stem: "Circuits can be analysed digitally using circuit simulation software.",
     questionText: "Outline two benefits of using circuit simulation software when designing circuits.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -658,6 +730,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c3a-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(a)(i)",
+    stem: "Online games allow several players to interact simultaneously over networks such as the internet. Competing with human players remotely is typically considered more interesting and challenging than playing against computer-generated opponents.",
     questionText: "Outline two social benefits of playing games online.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 +4)"}, totalMarks: 6,
     rows: [
@@ -671,6 +744,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c3a-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(a)(ii)",
+    stem: "Online games allow several players to interact simultaneously over networks such as the internet. Competing with human players remotely is typically considered more interesting and challenging than playing against computer-generated opponents.",
     questionText: "Outline one possible consequence for your health of spending too much time playing computer games. Suggest one action that could be taken to avoid the consequence you have outlined.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6 +4)"}, totalMarks: 4,
     rows: [
@@ -685,6 +759,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c3b-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(b)(i)",
+    stem: "Fibre-optics or optical fibre, refers to the medium and the technology associated with the transmission of information as light pulses along a glass or plastic strand or fibre. Fibre-optics are used in long-distance and high-performance data networking.",
     questionText: "Outline two advantages of using fibre-optic cables instead of traditional copper cables.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6+ 6)"}, totalMarks: 8,
     rows: [
@@ -698,6 +773,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c3b-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(b)(ii)",
+    stem: "Fibre-optics or optical fibre, refers to the medium and the technology associated with the transmission of information as light pulses along a glass or plastic strand or fibre. Fibre-optics are used in long-distance and high-performance data networking.",
     questionText: "Discuss why fibre-optic internet access is not available in every home in Ireland.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6+ 6)"}, totalMarks: 6,
     rows: [
@@ -711,6 +787,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c3b-iii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(b)(iii)",
+    stem: "Fibre-optics or optical fibre, refers to the medium and the technology associated with the transmission of information as light pulses along a glass or plastic strand or fibre. Fibre-optics are used in long-distance and high-performance data networking.",
     questionText: "Fibre-optic internet to the home requires a modem and a router. Outline a difference between a modem and a router.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8 + 6+ 6)"}, totalMarks: 6,
     rows: [
@@ -753,6 +830,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c3d-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(d)(i)",
+    stem: "Biometrics are commonly used to grant access to systems, devices or data.",
     questionText: "Briefly describe what is meant by the term biometrics.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -766,6 +844,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c3d-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2021 OL Section C Q3(d)(ii)",
+    stem: "Biometrics are commonly used to grant access to systems, devices or data.",
     questionText: "Outline two advantages of using biometrics to access devices or data.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -779,6 +858,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(a)(i)",
+    stem: "Most electronic devices have a very short life-cycle.",
     questionText: "Outline two reasons why electronic devices have a short life-cycle.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -792,6 +872,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4a-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(a)(ii)",
+    stem: "Most electronic devices have a very short life-cycle.",
     questionText: "Suggest two ways in which the environmental impact of these short life-cycle products could be minimised.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -805,6 +886,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(b)(i)",
+    stem: "The image shows a smart television which is mass-produced in a factory.",
     questionText: "State two advantages of mass-producing items such as smart televisions.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 8,
     rows: [
@@ -818,6 +900,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(b)(ii)",
+    stem: "The image shows a smart television which is mass-produced in a factory.",
     questionText: "Give two quality characteristics that could be associated with a high quality smart television.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
     rows: [
@@ -831,6 +914,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(b)(iii)",
+    stem: "The image shows a smart television which is mass-produced in a factory.",
     questionText: "Outline two strategies a manufacturer of televisions could adopt to be more competitive than rival manufacturers of televisions.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
     rows: [
@@ -844,6 +928,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(c)(i)",
+    stem: "Before a television is distributed from the factory to a shop, it is tested and then flat-packed.",
     questionText: "Suggest two tests that could be carried out on a television prior to being packaged for distribution.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -857,6 +942,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(c)(ii)",
+    stem: "Before a television is distributed from the factory to a shop, it is tested and then flat-packed.",
     questionText: "State two advantages for a company which flat-packs their products.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -870,6 +956,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2021 OL Section C Q4(d)(i)",
+    stem: "In an Electronic Kanban (e-Kanban) system, all cards used to track parts within a factory are maintained electronically. Barcode scanners, sensors and technologies such as Radio-Frequency Identification (RFID) can be used for real-time tracking of inventory.",
     questionText: "Give two advantages of an e-Kanban system over a traditional Kanban system.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -883,7 +970,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5a-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(a)(i)",
-    stem: "Body part Material Classification Material Seat Fabric Tyre Steel-reinforced rubber Headlight lens Ceramic A",
+    stem: "The Morgan Plus Six is a bespoke sports car that is built on an all-new platform and uses industry-leading powertrain technology. A range of materials, both synthetic and natural, are used in the production of this sports car. Body part Material Classification Material Seat Fabric Tyre Steel-reinforced rubber Headlight lens Ceramic A",
     questionText: "Briefly outline what is meant by synthetic materials and natural materials.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4 + 6)"}, totalMarks: 4,
     rows: [
@@ -898,6 +985,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(b)(i)",
+    stem: "The frame of the curved wheel-arch is manufactured from laminated ash.",
     questionText: "Using notes and sketches, briefly describe the process of laminating wood.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 8,
     rows: [
@@ -911,6 +999,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(b)(ii)",
+    stem: "The frame of the curved wheel-arch is manufactured from laminated ash.",
     questionText: "Give two properties of ash that make it suitable for lamination.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
     rows: [
@@ -924,6 +1013,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(b)(iii)",
+    stem: "The frame of the curved wheel-arch is manufactured from laminated ash.",
     questionText: "Permanent and semi-permanent joining methods are used in the assembly of car parts. Briefly outline the difference between both joining methods and give one example of each.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8 + 6 + 6)"}, totalMarks: 6,
     rows: [
@@ -937,6 +1027,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5c-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(c)(i)",
+    stem: "It is important that manufacturers meet quality standards when they manufacture products.",
     questionText: "Suggest two characteristics of the materials used in the Morgan Plus Six car that would indicate that they are of high quality.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -950,6 +1041,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(c)(ii)",
+    stem: "It is important that manufacturers meet quality standards when they manufacture products.",
     questionText: "Suggest two quality standards to be met in the manufacture of the seats for this car.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -963,6 +1055,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(d)(i)",
+    stem: "A range of paint finishes is offered to customers of bespoke cars. One such finish is Chameleon colour-changing paint. This paint is an example of a smart material.",
     questionText: "Explain what is meant by the term smart material.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -976,6 +1069,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2021 OL Section C Q5(d)(ii)",
+    stem: "A range of paint finishes is offered to customers of bespoke cars. One such finish is Chameleon colour-changing paint. This paint is an example of a smart material.",
     questionText: "Name, and give a use for, one other smart material.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -1294,9 +1388,9 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2022-ol-b2a-i", topicId: "tech-core-project", conceptId: "core-project",
+    id: "tech-2022-ol-b2a-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2022 OL Section B Q2(a)(i)",
-    stem: "Suggest two ways in which the manufacturer could ensure that each Modpool produced is of a high quality.",
+    stem: "The image shows a ‘Modpool’, which is a portable swimming pool made from upcycled shipping containers.",
     questionText: "Explain what is meant by the term upcycling.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -1310,12 +1404,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b2a-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2022 OL Section B Q2(a)(ii)",
-    stem: "Suggest two ways in which the manufacturer could ensure that each Modpool produced is of a high quality.",
-    questionText: "Customers who purchase a product such as a Modpool expect that the product is of high quality.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    stem: "The image shows a ‘Modpool’, which is a portable swimming pool made from upcycled shipping containers.",
+    questionText: "Customers who purchase a product such as a Modpool expect that the product is of high quality. Suggest two ways in which the manufacturer could ensure that each Modpool produced is of a high quality.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Suggest two ways in which the manufacturer could ensure that each Modpool produced is of a high quality.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Using high quality materials, using good quality electronics, testing properly, finishing to high quality, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Using high quality materials, using good quality electronics, testing properly, finishing to high quality, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1323,9 +1416,8 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2022-ol-b2b-i", topicId: "tech-core-energy", conceptId: "core-energy",
+    id: "tech-2022-ol-b2b-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2022 OL Section B Q2(b)(i)",
-    stem: "Draw a labelled diagram of a suitable circuit to activate the siren. Modpool",
     questionText: "Give two reasons why steel is a suitable material for the manufacture of shipping containers.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
@@ -1337,9 +1429,8 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2022-ol-b2b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    id: "tech-2022-ol-b2b-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2022 OL Section B Q2(b)(ii)",
-    stem: "Draw a labelled diagram of a suitable circuit to activate the siren. Modpool",
     questionText: "Suggest two ways the safety of this Modpool could be enhanced for users.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
     rows: [
@@ -1353,12 +1444,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b2b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 OL Section B Q2(b)(iii)",
-    stem: "Draw a labelled diagram of a suitable circuit to activate the siren. Modpool",
-    questionText: "An electronic circuit is required to activate a siren (buzzer) when the water level in the swimming pool is too high.",
-    tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
+    questionText: "An electronic circuit is required to activate a siren (buzzer) when the water level in the swimming pool is too high. Draw a labelled diagram of a suitable circuit to activate the siren.",
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Draw a labelled diagram of a suitable circuit to activate the siren.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Suitable circuit.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Suitable circuit.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -1368,6 +1457,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b2c-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2022 OL Section B Q2(c)(i)",
+    stem: "The manufacturers of the Modpool allow their customers to design their perfect swimming pool using Computer-Aided Design (CAD) software.",
     questionText: "Briefly outline two constraints when designing a suitable Modpool for a home.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -1381,6 +1471,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b2c-ii", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "B", questionRef: "2022 OL Section B Q2(c)(ii)",
+    stem: "The manufacturers of the Modpool allow their customers to design their perfect swimming pool using Computer-Aided Design (CAD) software.",
     questionText: "Give two benefits of using CAD when designing products.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -1394,6 +1485,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b2d-i", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2022 OL Section B Q2(d)(i)",
+    stem: "The heater, jets and lights of a swimming pool can all be controlled from a phone using an app.",
     questionText: "Outline two advantages of being able to use a phone to control these features.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -1407,6 +1499,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b2d-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2022 OL Section B Q2(d)(ii)",
+    stem: "The heater, jets and lights of a swimming pool can all be controlled from a phone using an app.",
     questionText: "Suggest one additional feature, other than those listed above, that could be controlled using the app.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -1420,6 +1513,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3a-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 OL Section B Q3(a)(i)",
+    stem: "Swytch are a London-based company who convert standard bicycles into E-Bikes using a high-torque brushless motor.",
     questionText: "Give two benefits of converting a standard bicycle into an E-bike.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -1433,6 +1527,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3a-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2022 OL Section B Q3(a)(ii)",
+    stem: "Swytch are a London-based company who convert standard bicycles into E-Bikes using a high-torque brushless motor.",
     questionText: "Briefly describe what is meant by the term torque when referring to motors.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -1446,6 +1541,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 OL Section B Q3(b)(ii)",
+    stem: "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
     questionText: "Suggest two reasons why your chosen material is suitable for the manufacture of the battery pack holder.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+2+4)"}, totalMarks: 2,
     rows: [
@@ -1459,6 +1555,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 OL Section B Q3(b)(iii)",
+    stem: "The 1.5 kg battery pack can power the modified bicycle for up to 50 km and is usually stored in a holder at the front of the bicycle.",
     questionText: "Describe, using notes and sketches, how the battery pack holder could be attached to the front of the bicycle.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+2+4)"}, totalMarks: 4,
     rows: [
@@ -1472,6 +1569,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3c-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 OL Section B Q3(c)(i)",
+    stem: "The graphic shows an exploded view of the DC motor used in the Swytch converter pack.",
     questionText: "Explain what is meant by the abbreviation DC.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 2+4)"}, totalMarks: 2,
     rows: [
@@ -1485,6 +1583,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-b3c-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2022 OL Section B Q3(c)(ii)",
+    stem: "The graphic shows an exploded view of the DC motor used in the Swytch converter pack.",
     questionText: "If the E-bike has an operating voltage of 48 V and an output power of 240 watts, calculate the current drawn by the E-Bike. Note: Power = Voltage (V) × Current (I)",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 2+4)"}, totalMarks: 4,
     rows: [
@@ -1511,6 +1610,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c1a-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2022 OL Section C Q1(a)(i)",
+    stem: "Robo-Deck is a device that can be used to clean and protect outdoor decking. It can be programmed to carry out preventative maintenance every few weeks, keeping the deck in pristine condition all year round.",
     questionText: "Suggest two advantages of using an automated deck cleaning device.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -1524,6 +1624,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c1a-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2022 OL Section C Q1(a)(ii)",
+    stem: "Robo-Deck is a device that can be used to clean and protect outdoor decking. It can be programmed to carry out preventative maintenance every few weeks, keeping the deck in pristine condition all year round.",
     questionText: "Briefly describe one other household device that operates like the Robo-Deck.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -1537,6 +1638,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c1c-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2022 OL Section C Q1(c)(i)",
+    stem: "The image shows a pneumatic paint sprayer which can be used to paint decks.",
     questionText: "Give one advantage and one disadvantage of using a pneumatic paint sprayer.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -1551,6 +1653,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2022 OL Section C Q1(c)(ii)",
+    stem: "The image shows a pneumatic paint sprayer which can be used to paint decks.",
     questionText: "Draw the pneumatic symbol for a single-acting actuator and explain how it operates in a pneumatic circuit.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -1607,11 +1710,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 OL Section C Q2(b)(i)",
+    stem: "The circuit diagram shown is a temperature sensing circuit which is often used in project work.",
     questionText: "Using the Formulae and Tables booklet, or otherwise, name components A and B in the circuit.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A = Variable resistor, B = Thermistor V", marks: 8, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q2b-art.png",
+          "srcHash": "880020fc3340fbf6cec5ab993b41e85d",
+          "alt": "A circuit diagram between 6V and 0V rails with a switch in the top rail: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor, with a buzzer C in the collector line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1620,11 +1732,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 OL Section C Q2(b)(ii)",
+    stem: "The circuit diagram shown is a temperature sensing circuit which is often used in project work.",
     questionText: "Briefly describe the operation of the circuit.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "When the temperature is low, the transistor activates and the buzzer will sound.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q2b-art.png",
+          "srcHash": "880020fc3340fbf6cec5ab993b41e85d",
+          "alt": "A circuit diagram between 6V and 0V rails with a switch in the top rail: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor, with a buzzer C in the collector line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2022-ol-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2022 OL Section C Q2(b)(iii)",
+    stem: "The circuit diagram shown is a temperature sensing circuit which is often used in project work.",
+    questionText: "Multimeters are commonly used in electronics. Redraw the given circuit diagram to show how the probes of a multimeter would be connected to measure the voltage drop across the buzzer C.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "measure the voltage drop across the buzzer C. 0V", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2022-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2022-OL-paper-secC-q2b-art.png",
+          "srcHash": "880020fc3340fbf6cec5ab993b41e85d",
+          "alt": "A circuit diagram between 6V and 0V rails with a switch in the top rail: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor, with a buzzer C in the collector line.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1633,7 +1776,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 OL Section C Q2(c)(i)",
-    stem: "Explain what is meant by the term polarised when referring to electronic components. OR A C D X Y",
+    stem: "The image shows an electrolytic capacitor.",
     questionText: "State the unit of measurement of capacitance.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -1647,12 +1790,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2022 OL Section C Q2(c)(ii)",
-    stem: "Explain what is meant by the term polarised when referring to electronic components. OR A C D X Y",
-    questionText: "An electrolytic capacitor is a polarised component.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    stem: "The image shows an electrolytic capacitor.",
+    questionText: "An electrolytic capacitor is a polarised component. Explain what is meant by the term polarised when referring to electronic components.",
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "An electrolytic capacitor is a polarised component. Explain what is meant by the term polarised when referring to electronic components.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "A component that has an anode/cathode, positive/negative leg.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A component that has an anode/cathode, positive/negative leg.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -1683,6 +1825,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3a-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(a)(i)",
+    stem: "Internet streaming services are widely used by individuals when watching movies and television shows.",
     questionText: "Suggest two advantages of streaming movies and television shows.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -1696,6 +1839,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3a-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(a)(ii)",
+    stem: "Internet streaming services are widely used by individuals when watching movies and television shows.",
     questionText: "Describe two precautions that should be taken by the end-user when accessing streaming services.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -1709,6 +1853,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3b-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(b)(i)",
+    stem: "A computer network is essential for both business and school systems to run efficiently.",
     questionText: "Suggest two advantages of using a computer network system in a school setting.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 8,
     rows: [
@@ -1722,6 +1867,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3b-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(b)(ii)",
+    stem: "A computer network is essential for both business and school systems to run efficiently.",
     questionText: "Name two hardware devices that could be connected wirelessly to a computer network.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
@@ -1735,6 +1881,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3b-iii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(b)(iii)",
+    stem: "A computer network is essential for both business and school systems to run efficiently.",
     questionText: "Describe two measures a business could take to ensure that they have high quality wireless connectivity in their workplace.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
@@ -1748,6 +1895,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3c-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(c)(i)",
+    stem: "Many people prefer to use Open-Source software when installing programmes on a computer.",
     questionText: "Describe what is meant by the term Open-Source when referring to computer software.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -1761,6 +1909,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3c-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(c)(ii)",
+    stem: "Many people prefer to use Open-Source software when installing programmes on a computer.",
     questionText: "Outline two items of personal data you might be required to submit when downloading software.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -1774,6 +1923,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3d-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(d)(i)",
+    stem: "Reading, as an experience, has evolved with the emergence of eBooks and Audiobooks.",
     questionText: "Outline the main differences between an eBook and an Audiobook.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -1788,6 +1938,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c3d-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2022 OL Section C Q3(d)(ii)",
+    stem: "Reading, as an experience, has evolved with the emergence of eBooks and Audiobooks.",
     questionText: "Name a file extension commonly used when creating Audiobooks.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -1801,6 +1952,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(a)(i)",
+    stem: "When a company produces a product, it must be packaged securely for distribution, storage, and sale.",
     questionText: "The packaging, as shown in the image, has been mass-produced. Describe what is meant by the term mass-produced.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -1822,6 +1974,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4a-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(a)(ii)",
+    stem: "When a company produces a product, it must be packaged securely for distribution, storage, and sale.",
     questionText: "Suggest two ways in which a company could be more environmentally conscious when considering the choice of packaging for their product.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -1843,6 +1996,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(b)(i)",
+    stem: "The blockage of the Suez Canal by the grounded container vessel, the Ever Given, had a significant impact on the global supply of products in 2021. It particularly affected companies which use a Just-In-Time (JIT) system when sourcing materials and components for their products.",
     questionText: "Explain the manufacturing term Just-In-Time.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -1856,6 +2010,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(b)(ii)",
+    stem: "The blockage of the Suez Canal by the grounded container vessel, the Ever Given, had a significant impact on the global supply of products in 2021. It particularly affected companies which use a Just-In-Time (JIT) system when sourcing materials and components for their products.",
     questionText: "Suggest one advantage and one disadvantage of using a Just-In-Time system of manufacturing.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -1870,6 +2025,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(b)(iii)",
+    stem: "The blockage of the Suez Canal by the grounded container vessel, the Ever Given, had a significant impact on the global supply of products in 2021. It particularly affected companies which use a Just-In-Time (JIT) system when sourcing materials and components for their products.",
     questionText: "Briefly describe three unintended costs for manufacturers as a result of the disruption to the supply chain of products in 2021.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -1883,6 +2039,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(c)(i)",
+    stem: "The image shows colleagues in an organisation engaging in conversation during a meeting.",
     questionText: "Briefly describe two important roles of a ‘managing director’ in an organisation.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -1896,6 +2053,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(c)(ii)",
+    stem: "The image shows colleagues in an organisation engaging in conversation during a meeting.",
     questionText: "Outline two ways of promoting good teamwork within an organisation.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -1909,6 +2067,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(d)(i)",
+    stem: "Market research allows a company to discover a target market and to gather feedback from consumers about their interest in a product.",
     questionText: "Outline two ways in which a company might carry out market research for a new product.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -1922,6 +2081,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2022 OL Section C Q4(d)(ii)",
+    stem: "Market research allows a company to discover a target market and to gather feedback from consumers about their interest in a product.",
     questionText: "Suggest two negative consequences for a company that does not carry out effective market research.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -1935,6 +2095,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5a-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(a)(i)",
+    stem: "Cross-laminated timber (CLT) is a large-scale, prefabricated, solid engineered wood product. The Mjøstårnet in Norway is the tallest timber building in the world, and is constructed using CLT.",
     questionText: "Explain what is meant by the term laminated when referring to wood products.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -1948,6 +2109,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5a-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(a)(ii)",
+    stem: "Cross-laminated timber (CLT) is a large-scale, prefabricated, solid engineered wood product. The Mjøstårnet in Norway is the tallest timber building in the world, and is constructed using CLT.",
     questionText: "State one advantage and one disadvantage of using laminated wood products in the construction of buildings such as the Mjøstårnet.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -1962,6 +2124,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(b)(i)",
+    stem: "CLT is used in the construction of the exterior panels of the building shown.",
     questionText: "Name a suitable timber for the manufacture of the panels shown. Justify your selection.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -1983,6 +2146,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(b)(ii)",
+    stem: "CLT is used in the construction of the exterior panels of the building shown.",
     questionText: "Using notes and annotated sketches, describe how the exterior panel A could be attached to the concrete floor B.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -2004,6 +2168,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(b)(iii)",
+    stem: "CLT is used in the construction of the exterior panels of the building shown.",
     questionText: "Briefly outline two safety precautions to be observed by workers when installing the exterior panel shown.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -2025,6 +2190,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5c-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(c)(i)",
+    stem: "Anodised aluminium is commonly used in the manufacture of drinking bottles.",
     questionText: "Describe two properties of aluminium that make it a useful material for the manufacture of drinking bottles.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -2038,6 +2204,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(c)(ii)",
+    stem: "Anodised aluminium is commonly used in the manufacture of drinking bottles.",
     questionText: "Briefly outline one reason for anodising the external surface of a drinking bottle.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -2051,7 +2218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(d)(i)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "The image shows coffee cups that contain a thermochromic smart material. The cups change colour when a hot liquid is poured into them.",
     questionText: "Describe what is meant by the term smart material.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -2065,7 +2232,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2022 Ordinary Level — © State Examinations Commission.",
     id: "tech-2022-ol-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2022 OL Section C Q5(d)(ii)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "The image shows coffee cups that contain a thermochromic smart material. The cups change colour when a hot liquid is poured into them.",
     questionText: "Briefly outline one other possible use for a thermochromic material.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -2351,6 +2518,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2a-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2023 OL Section B Q2(a)(i)",
+    stem: "Torpey Hurleys aim to create products which are environmentally friendly and biodegradable, where possible.",
     questionText: "Explain what is meant by the term biodegradable.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2364,6 +2532,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2b-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2023 OL Section B Q2(b)(i)",
+    stem: "Ash is a native hardwood traditionally used for making hurleys. Recently, Ireland’s ash trees have been exposed to an invasive disease which has impacted the availability of ash timber. To combat this, Torpey Hurleys are manufacturing hurleys using bamboo.",
     questionText: "Describe what is meant by a native hardwood and name one other native hardwood.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
@@ -2377,6 +2546,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2b-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2023 OL Section B Q2(b)(ii)",
+    stem: "Ash is a native hardwood traditionally used for making hurleys. Recently, Ireland’s ash trees have been exposed to an invasive disease which has impacted the availability of ash timber. To combat this, Torpey Hurleys are manufacturing hurleys using bamboo.",
     questionText: "Suggest two reasons why it is more environmentally friendly to use bamboo instead of ash to manufacture hurleys.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
     rows: [
@@ -2390,6 +2560,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2b-iii", topicId: "tech-core-design", conceptId: "core-design",
     section: "B", questionRef: "2023 OL Section B Q2(b)(iii)",
+    stem: "Ash is a native hardwood traditionally used for making hurleys. Recently, Ireland’s ash trees have been exposed to an invasive disease which has impacted the availability of ash timber. To combat this, Torpey Hurleys are manufacturing hurleys using bamboo.",
     questionText: "Outline two ways Torpey Hurleys could enhance the sales of their bamboo hurleys.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
@@ -2403,6 +2574,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2c-i", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2023 OL Section B Q2(c)(i)",
+    stem: "The majority of GAA ticket sales are processed online and in most cases, tickets cannot be purchased at the grounds.",
     questionText: "Give two benefits of purchasing match tickets online.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -2416,6 +2588,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2c-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2023 OL Section B Q2(c)(ii)",
+    stem: "The majority of GAA ticket sales are processed online and in most cases, tickets cannot be purchased at the grounds.",
     questionText: "Briefly outline two precautions that should be taken when purchasing match tickets online.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -2429,7 +2602,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2d-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2023 OL Section B Q2(d)(i)",
-    stem: "open-viewing platform and offers breathtaking panoramic views of the city.",
+    stem: "The Skyline Tour (rooftop walkway) is Dublin’s highest open-viewing platform and offers breathtaking panoramic views of the city.",
     questionText: "Describe, using annotated sketches, a method used to strengthen the frame structure of the roof.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -2443,7 +2616,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b2d-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2023 OL Section B Q2(d)(ii)",
-    stem: "open-viewing platform and offers breathtaking panoramic views of the city.",
+    stem: "The Skyline Tour (rooftop walkway) is Dublin’s highest open-viewing platform and offers breathtaking panoramic views of the city.",
     questionText: "Suggest one safety feature which could be included in the design of the rooftop walkway.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -2457,6 +2630,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b3a-i", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "B", questionRef: "2023 OL Section B Q3(a)(i)",
+    stem: "The image shows the logo for the Leinster Model Flying Club. It is one of the longest running model flying clubs in Ireland.",
     questionText: "Give two advantages of having a logo for a club.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -2470,6 +2644,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b3a-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2023 OL Section B Q3(a)(ii)",
+    stem: "The image shows the logo for the Leinster Model Flying Club. It is one of the longest running model flying clubs in Ireland.",
     questionText: "Suggest a software package that could be used to design the logo.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -2483,6 +2658,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b3b-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2023 OL Section B Q3(b)(i)",
+    stem: "The image shows a Hobbyzone Carbon Cub plane and controller. It contains a 2200 mAh, 11 V lithium battery and is charged using a USB power source.",
     questionText: "Describe what is meant by a 2200 mAh battery and by a USB power source when referring to the specifications of the model plane.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+2+4)"}, totalMarks: 2,
     rows: [
@@ -2496,6 +2672,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b3b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2023 OL Section B Q3(b)(ii)",
+    stem: "The image shows a Hobbyzone Carbon Cub plane and controller. It contains a 2200 mAh, 11 V lithium battery and is charged using a USB power source.",
     questionText: "Calculate the power delivered when the motor draws 2200 mA from the 11 V battery. Note: P = V × I",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+2+4)"}, totalMarks: 2,
     rows: [
@@ -2509,6 +2686,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b3b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2023 OL Section B Q3(b)(iii)",
+    stem: "The image shows a Hobbyzone Carbon Cub plane and controller. It contains a 2200 mAh, 11 V lithium battery and is charged using a USB power source.",
     questionText: "Describe, using a simple circuit diagram, the difference between batteries connected in series and batteries connected in parallel.",
     tariffModel: {"kind":"questionTotal","notation":"(8 Marks, 2+2+4)"}, totalMarks: 4,
     rows: [
@@ -2549,6 +2727,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b3d-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2023 OL Section B Q3(d)(i)",
+    stem: "Aerodynamics is a key consideration when designing an aeroplane.",
     questionText: "Describe what is meant by the term aerodynamics when designing an aeroplane.",
     tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -2563,11 +2742,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-b3d-ii", topicId: "tech-core-project", conceptId: "core-project",
     section: "B", questionRef: "2023 OL Section B Q3(d)(ii)",
+    stem: "Aerodynamics is a key consideration when designing an aeroplane.",
     questionText: "Large design and build projects use planning tools such as Gantt charts. Give two reasons for the use of planning tools in large projects.",
-    tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
+    tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Give two reasons for the use of planning tools in large projects.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "To ensure that projects are completed on time, schedule the delivery of parts, manage budgets/people, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "To ensure that projects are completed on time, schedule the delivery of parts, manage budgets/people, etc.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -2577,6 +2756,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1a-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(a)(i)",
+    stem: "A home automation system allows many aspects of home living to be monitored and/or controlled.",
     questionText: "Suggest two areas of home living that could benefit from the use of automated systems.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -2590,6 +2770,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1a-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(a)(ii)",
+    stem: "A home automation system allows many aspects of home living to be monitored and/or controlled.",
     questionText: "Briefly describe one disadvantage of using automated systems in everyday life.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -2603,15 +2784,44 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(b)(i)",
-    stem: "• The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Start Button? OR",
-    questionText: "Complete the flowchart to operate the novelty light in the following sequence: Give two advantages of using a PIC to control devices.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 8,
+    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
+    questionText: "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Give two advantages of using a PIC to control devices.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Start • The light bulb turns on when the button is pressed", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "• After two seconds the novelty light rotates", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "N • After thirty seconds the novelty light stops", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "On? rotating and the light bulb turns off.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Complete the flowchart to operate the novelty light in the following sequence: • The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Give two advantages of using a PIC to control devices.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2023-OL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-scheme-secC-q1b-i.png",
+          "srcHash": "a77cd215fcd09c91e474087908002b53",
+          "alt": "The marking scheme's own answer to 2023 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision On?, whose N branch loops back and whose Y branch runs LED On, Wait 2s, Motor On, Wait 30s, Motor Off, LED On and back to the decision.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2023 OL Section C Q1(b)(ii)",
+    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
+    questionText: "Suggest a modification to the flowchart that allows for music to be played as the novelty light rotates. Using an annotated sketch, show how pin number one of a PIC is identified.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any valid alternative solution accepted.", marks: 6, openList: true },
+    ],
+    figure: {
+          "candId": "technology-2023-OL-scheme-secC-q1b-ii",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-scheme-secC-q1b-ii.png",
+          "srcHash": "efea673d64676e69448dc7c02dd172d8",
+          "alt": "The marking scheme's own answer to 2023 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the flowchart modified so that after Start and the decision On?, the Y branch runs LED On, Wait 2s, Motor On, Music On, Wait 30s, Motor/Music Off, LED On and loops back. The scheme prints beside it: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2620,12 +2830,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(b)(iii)",
-    stem: "• The light bulb turns on when the button is pressed • After two seconds the novelty light rotates • After thirty seconds the novelty light stops rotating and the light bulb turns off. Start Button? OR",
+    stem: "The image shows a rotating novelty light for a child's bedroom. The light is controlled using a PIC (Peripheral Interface Controller). above.",
     questionText: "The novelty light above is powered using a low voltage DC power supply. Explain the term low voltage DC.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 8+6+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Low voltage - typically implies 0-50 volts,", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "DC represents direct current generally supplied from batteries or a low voltage DC transformer supply, etc. LED On", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "DC represents direct current generally supplied from batteries or a low voltage DC transformer supply, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2635,6 +2845,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1d-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(d)(i)",
+    stem: "Pneumatics is the use of pressurised air as a source of energy to do work.",
     questionText: "Describe two practical examples of where pneumatic power is used in everyday life.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2648,6 +2859,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2023 OL Section C Q1(d)(ii)",
+    stem: "Pneumatics is the use of pressurised air as a source of energy to do work.",
     questionText: "Describe one advantage and one disadvantage of using pneumatic power.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -2662,6 +2874,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2a-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(a)(i)",
+    stem: "The image shows a PCB which can be found in many household devices. It is populated with semiconductor components.",
     questionText: "Explain what is meant by the abbreviation PCB.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -2675,6 +2888,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2a-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(a)(ii)",
+    stem: "The image shows a PCB which can be found in many household devices. It is populated with semiconductor components.",
     questionText: "Outline the difference between an electrical conductor and an electrical insulator.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -2689,11 +2903,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(b)(i)",
+    stem: "The image shows a DPDT switch, that is commonly used for forward and reverse control of a motor. The circuit symbol for the DPDT switch is also shown.",
     questionText: "Explain what is meant by the abbreviation DPDT.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Double Pole Double Throw.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q2b-art.png",
+          "srcHash": "a5a16a9df3c1b5137f30f1ef1848915a",
+          "alt": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2023-ol-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2023 OL Section C Q2(b)(ii)",
+    stem: "The image shows a DPDT switch, that is commonly used for forward and reverse control of a motor. The circuit symbol for the DPDT switch is also shown.",
+    questionText: "Using the DPDT symbol shown, draw a circuit diagram for the forward and reverse control of a motor.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "for the forward and reverse control of a motor.", marks: 8, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q2b-art.png",
+          "srcHash": "a5a16a9df3c1b5137f30f1ef1848915a",
+          "alt": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2702,11 +2947,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(b)(iii)",
+    stem: "The image shows a DPDT switch, that is commonly used for forward and reverse control of a motor. The circuit symbol for the DPDT switch is also shown.",
     questionText: "Relays are often used in electronics. Describe a situation where a relay would typically be used in everyday life.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Relays can be used to control a high voltage secondary circuit from a primary low voltage circuit, e.g., motorised gates, vehicle electrical systems, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q2b-art.png",
+          "srcHash": "a5a16a9df3c1b5137f30f1ef1848915a",
+          "alt": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2715,7 +2969,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(c)(i)",
-    stem: "V-Vf If OR Note: R =",
+    stem: "The image shows an LED torch.",
     questionText: "State two advantages of using an LED for the torch shown.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2737,7 +2991,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(c)(ii)",
-    stem: "V-Vf If OR Note: R =",
+    stem: "The image shows an LED torch.",
     questionText: "The torch is powered by two 1.5 V batteries. The voltage drop (Vf ) across the LED is 2 V and the maximum current (If ) that the LED bulb can draw is 0.01 A. Calculate the minimum value of the resistor (R) required to protect the LED.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -2759,6 +3013,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2023 OL Section C Q2(d)(i)",
+    stem: "The invention of the transistor was an unprecedented development in the technological world and is now one of the basic building blocks of modern electronics.",
     questionText: "Briefly outline two functions of a transistor.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2772,6 +3027,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3a-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(a)(i)",
+    stem: "Video conferencing platforms have become an essential part of the Irish education system in recent years. Many schools use these platforms so that learning continues, and connections are maintained among students, parents, and educators.",
     questionText: "Name two video conferencing platforms.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2785,6 +3041,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3a-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(a)(ii)",
+    stem: "Video conferencing platforms have become an essential part of the Irish education system in recent years. Many schools use these platforms so that learning continues, and connections are maintained among students, parents, and educators.",
     questionText: "Outline one advantage and one disadvantage of using video conferencing in education.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -2799,6 +3056,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3b-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(b)(i)",
+    stem: "Network topography describes how computers can be connected together. The two most common methods are star topography and ring topography.",
     questionText: "Using notes and annotated sketches, describe the difference between a star topography and a ring topography.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -2813,6 +3071,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3b-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(b)(ii)",
+    stem: "Network topography describes how computers can be connected together. The two most common methods are star topography and ring topography.",
     questionText: "Describe two advantages of networking a computer system.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -2826,6 +3085,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3b-iii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(b)(iii)",
+    stem: "Network topography describes how computers can be connected together. The two most common methods are star topography and ring topography.",
     questionText: "Outline two benefits of using a tablet device over a desktop computer in the workplace.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -2839,7 +3099,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3c-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(c)(i)",
-    stem: "Cybercrimes carried out by criminals sometimes use Cryptocurrency. OR",
+    stem: "The internet has become one of the key drivers of social evolution. It has changed business, consumer habits, and even the way criminals operate online. Cybercrimes carried out by criminals sometimes use Cryptocurrency.",
     questionText: "Briefly outline one example of a cybercrime.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2853,7 +3113,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3c-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(c)(ii)",
-    stem: "Cybercrimes carried out by criminals sometimes use Cryptocurrency. OR",
+    stem: "The internet has become one of the key drivers of social evolution. It has changed business, consumer habits, and even the way criminals operate online. Cybercrimes carried out by criminals sometimes use Cryptocurrency.",
     questionText: "Describe what you understand by the term Cryptocurrency.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -2867,6 +3127,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3d-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(d)(i)",
+    stem: "Fibre optic cables and copper cables can be used for transferring data.",
     questionText: "Outline two benefits of using fibre optic cable instead of copper cable for data transfer.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2880,6 +3141,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c3d-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2023 OL Section C Q3(d)(ii)",
+    stem: "Fibre optic cables and copper cables can be used for transferring data.",
     questionText: "Describe what is meant by the term encryption when referring to data storage.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -2893,7 +3155,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(a)(i)",
-    stem: "High quality B A High cost Low cost C Low quality",
+    stem: "Perceptual mapping is a technique used by companies to visually display how customers or potential customers perceive different products or services. High quality B A High cost Low cost C Low quality",
     questionText: "Outline two reasons why a company might gather information about products using this technique.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2907,11 +3169,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(b)(i)",
+    stem: "Expensive road bikes, like the one shown below, are often Assembled-to-Order.",
     questionText: "Explain the manufacturing term Assembled-to-Order.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The product is put together once it’s ordered by the customer.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q4b-art.png",
+          "srcHash": "6e592660c8165dcd69956f53dc399c55",
+          "alt": "Colour photograph of a white S-Works road bicycle with deep-section black wheels, standing on a road in front of desert hills.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2920,11 +3191,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(b)(ii)",
+    stem: "Expensive road bikes, like the one shown below, are often Assembled-to-Order.",
     questionText: "Suggest two advantages of using this method of producing bicycles.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Less stock, meet individual needs, etc.", marks: 8, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q4b-art.png",
+          "srcHash": "6e592660c8165dcd69956f53dc399c55",
+          "alt": "Colour photograph of a white S-Works road bicycle with deep-section black wheels, standing on a road in front of desert hills.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2933,11 +3213,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(b)(iii)",
+    stem: "Expensive road bikes, like the one shown below, are often Assembled-to-Order.",
     questionText: "Outline one other product that could be assembled-to-order and explain why this method is suitable for this product.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Computers, cakes, etc. Valid justification.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2023-OL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2023-OL-paper-secC-q4b-art.png",
+          "srcHash": "6e592660c8165dcd69956f53dc399c55",
+          "alt": "Colour photograph of a white S-Works road bicycle with deep-section black wheels, standing on a road in front of desert hills.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2946,6 +3235,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(c)(i)",
+    stem: "Testing is often carried out on products like bicycles before they are sold.",
     questionText: "Outline two reasons why tests are carried out on bicycles before they are sold to customers.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2959,12 +3249,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(c)(ii)",
+    stem: "Testing is often carried out on products like bicycles before they are sold.",
     questionText: "Cause and effect diagrams can be used to problem-solve quality related issues. Briefly outline a fault (effect) that might be identified by the testing of a bicycle and suggest a potential cause.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Briefly outline a fault (effect) that might be identified by the testing of a bicycle and suggest a potential cause.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Effect- Failure of brake system, Cause- broken brake cable.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Any relevant effect and cause identified.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Effect- Failure of brake system, Cause- broken brake cable.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "Any relevant effect and cause identified.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2974,6 +3264,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(d)(i)",
+    stem: "End of Life (EoL) is an important consideration for designers in the context of product manufacture.",
     questionText: "Outline two ways a bicycle could be designed so that it can be easily recycled.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -2987,6 +3278,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2023 OL Section C Q4(d)(ii)",
+    stem: "End of Life (EoL) is an important consideration for designers in the context of product manufacture.",
     questionText: "Suggest two consequences for the environment of a poorly designed product at its end of life.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3000,7 +3292,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5a-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(a)(i)",
-    stem: "the world with a main span of 2,023 metres. Steel was used to make the suspension cables of the bridge. Suspension cables",
+    stem: "The Çanakkale bridge was opened in Turkey in 2022. It is the longest suspension bridge in the world with a main span of 2,023 metres. Steel was used to make the suspension cables of the bridge.",
     questionText: "Suggest two reasons why steel is an appropriate material for the manufacture of the suspension cables of the bridge.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3014,7 +3306,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5a-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(a)(ii)",
-    stem: "the world with a main span of 2,023 metres. Steel was used to make the suspension cables of the bridge. Suspension cables",
+    stem: "The Çanakkale bridge was opened in Turkey in 2022. It is the longest suspension bridge in the world with a main span of 2,023 metres. Steel was used to make the suspension cables of the bridge.",
     questionText: "Steel is an example of an alloy. Briefly describe what is meant by the term alloy when referring to materials.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3028,7 +3320,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(b)(i)",
-    stem: "Vertical cables Bracket Deck",
+    stem: "Permanent and semi-permanent jointing methods were used in the construction of the bridge.",
     questionText: "Briefly outline, with an example in each case, the difference between permanent and semi-permanent jointing methods.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -3051,7 +3343,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(b)(ii)",
-    stem: "Vertical cables Bracket Deck",
+    stem: "Permanent and semi-permanent jointing methods were used in the construction of the bridge.",
     questionText: "Using notes and annotated sketches, describe how a vertical suspending cable could be attached to the concrete deck using a bracket like that shown.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -3073,7 +3365,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(b)(iii)",
-    stem: "Vertical cables Bracket Deck",
+    stem: "Permanent and semi-permanent jointing methods were used in the construction of the bridge.",
     questionText: "Suggest two safety hazards workers could encounter during the construction of a large-scale project such as a suspension bridge.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -3095,6 +3387,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5c-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(c)(i)",
+    stem: "Steel, like that used in the bridge above, often undergoes surface treatments like galvanising.",
     questionText: "Describe what is meant by the term galvanising.",
     tariffModel: {"kind":"fixed","notation":"(10 arks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3108,6 +3401,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5c-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(c)(ii)",
+    stem: "Steel, like that used in the bridge above, often undergoes surface treatments like galvanising.",
     questionText: "Materials used outdoors are subject to environmental degradation. Briefly outline one alternative method of protecting a named material of your choice from environmental degradation.",
     tariffModel: {"kind":"fixed","notation":"(10 arks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3121,7 +3415,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(d)(i)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "At COP27, a discussion on the sustainability of critical raw materials took place. Materials such as lithium, cobalt, and natural rubber are critical for society, industry, and for the future of green energy technologies.",
     questionText: "In the case of any two materials listed above, give one application of where each is used in everyday life.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3137,7 +3431,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2023 Ordinary Level — © State Examinations Commission.",
     id: "tech-2023-ol-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2023 OL Section C Q5(d)(ii)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "At COP27, a discussion on the sustainability of critical raw materials took place. Materials such as lithium, cobalt, and natural rubber are critical for society, industry, and for the future of green energy technologies.",
     questionText: "Suggest two reasons why the availability of some raw materials is becoming critical worldwide.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3194,11 +3488,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2024-ol-a3", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "A", questionRef: "2024 OL Section A Q3",
     questionText: "The SolarEV City Concept combines solar panels on rooftops with electric vehicles on the streets. Using this, and other concepts, the city of Paris aims to eliminate local CO2 (carbon dioxide) emissions by the year 2050. Describe two other ways urban areas can reduce carbon emissions.",
-    tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "streets. Using this, and other concepts, the city of Paris aims to eliminate local CO2 (carbon dioxide) emissions by the year 2050.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Describe two other ways urban areas can reduce carbon emissions.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Greater use of public transport, use renewable energy, reduce energy demand through efficient urban design, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Greater use of public transport, use renewable energy, reduce energy demand through efficient urban design, etc.", marks: 8, openList: true },
     ],
   } as SecCard,
   {
@@ -3213,6 +3505,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Direct Current.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-a4-ii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2024 OL Section A Q4(ii)",
+    stem: "The image shows a DC buzzer used in electronics.",
+    questionText: "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a buzzer in the box provided.",
+    tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "draw the symbol for a buzzer in the box provided.", marks: 4, openList: true },
     ],
   } as SecCard,
   {
@@ -3325,10 +3631,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "used to represent the failure rate of a product over a period of time. Failure Rate B C", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Suggest a reason for the high failure rate at A-B, and at C-D.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "As problems are resolved, the failure rate begins to fall.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "High failure rate at C-D: The product is approaching its end of life and faults increase due to failing parts within the product, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "High failure rate at A-B: Early stage in the life of a product- faults are more likely to occur.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "As problems are resolved, the failure rate begins to fall.", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "High failure rate at C-D: The product is approaching its end of life and faults increase due to failing parts within the product, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -3359,7 +3664,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b2a-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2024 OL Section B Q2(a)(i)",
-    stem: "compulsory for all competitors to wear a helmet.",
+    stem: "Skateboarding will be an Olympic sport in Paris 2024, and it will be compulsory for all competitors to wear a helmet.",
     questionText: "Name the type of structure typically used in the manufacture of a helmet.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -3374,7 +3679,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b2a-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2024 OL Section B Q2(a)(ii)",
-    stem: "compulsory for all competitors to wear a helmet.",
+    stem: "Skateboarding will be an Olympic sport in Paris 2024, and it will be compulsory for all competitors to wear a helmet.",
     questionText: "Outline one other application for this type of structure.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3427,7 +3732,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b2c-i", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2024 OL Section B Q2(c)(i)",
-    stem: "venue. It will be used by athletes, officials, staff, and the media.",
+    stem: "Facial recognition will be used at the Paris Olympics to ensure a high level of security at each venue. It will be used by athletes, officials, staff, and the media.",
     questionText: "Outline one advantage and one disadvantage of using facial recognition to control access to different venues.",
     tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -3442,7 +3747,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b2c-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2024 OL Section B Q2(c)(ii)",
-    stem: "venue. It will be used by athletes, officials, staff, and the media.",
+    stem: "Facial recognition will be used at the Paris Olympics to ensure a high level of security at each venue. It will be used by athletes, officials, staff, and the media.",
     questionText: "State one other biometric means that could be used to control access to an event.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -3454,9 +3759,9 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2024-ol-b2d-i", topicId: "tech-core-ict", conceptId: "core-ict",
+    id: "tech-2024-ol-b2d-i", topicId: "tech-core-project", conceptId: "core-project",
     section: "B", questionRef: "2024 OL Section B Q2(d)(i)",
-    stem: "intelligence (AI) at the 2024 Olympic Games. AI-powered camera systems will be used to identify suspicious behaviour in real time.",
+    stem: "France has passed a bill to trial surveillance cameras based on artificial intelligence (AI) at the 2024 Olympic Games. AI-powered camera systems will be used to identify suspicious behaviour in real time.",
     questionText: "Outline two quality characteristics of the surveillance cameras.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -3470,7 +3775,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b2d-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2024 OL Section B Q2(d)(ii)",
-    stem: "intelligence (AI) at the 2024 Olympic Games. AI-powered camera systems will be used to identify suspicious behaviour in real time.",
+    stem: "France has passed a bill to trial surveillance cameras based on artificial intelligence (AI) at the 2024 Olympic Games. AI-powered camera systems will be used to identify suspicious behaviour in real time.",
     questionText: "The law to trial AI-based surveillance has been controversial. Outline one disadvantage of AI-based surveillance.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -3482,9 +3787,9 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
-    id: "tech-2024-ol-b3a-i", topicId: "tech-core-design", conceptId: "core-design",
+    id: "tech-2024-ol-b3a-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2024 OL Section B Q3(a)(i)",
-    stem: "landing aircraft. It is designed to respond to medical emergencies and has a top speed of 463km/h.",
+    stem: "Jump Aero has unveiled the JA1 Pulse, a vertical take-off and landing aircraft. It is designed to respond to medical emergencies and has a top speed of 463km/h.",
     questionText: "Outline two advantages of using the JA1 Pulse aircraft to respond to a medical emergency.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -3499,7 +3804,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b3a-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2024 OL Section B Q3(a)(ii)",
-    stem: "landing aircraft. It is designed to respond to medical emergencies and has a top speed of 463km/h.",
+    stem: "Jump Aero has unveiled the JA1 Pulse, a vertical take-off and landing aircraft. It is designed to respond to medical emergencies and has a top speed of 463km/h.",
     questionText: "Suggest a suitable material for the fuselage (body) of the aircraft. Justify your selection.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3513,6 +3818,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b3b-i", topicId: "tech-core-design", conceptId: "core-design",
     section: "B", questionRef: "2024 OL Section B Q3(b)(i)",
+    stem: "Jump Aero anticipates that their flying prototype will be completed in 2025. It will include multiple safety features in its design.",
     questionText: "Explain what is meant by the term prototype.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
@@ -3526,10 +3832,25 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b3b-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2024 OL Section B Q3(b)(ii)",
+    stem: "Jump Aero anticipates that their flying prototype will be completed in 2025. It will include multiple safety features in its design.",
     questionText: "Suggest two safety features that could be incorporated into the design of the JA1 pulse.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Greater stability when flying in windy conditions, propellers are higher than a person’s head for operational safety, etc.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-b3b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "B", questionRef: "2024 OL Section B Q3(b)(iii)",
+    stem: "Jump Aero anticipates that their flying prototype will be completed in 2025. It will include multiple safety features in its design.",
+    questionText: "A student has decided to make a model of a similar aircraft to include two DC motors and two LEDs. Draw a labelled diagram of a suitable electronic circuit for the model aircraft.",
+    tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "circuit for the model aircraft.", marks: 2, openList: true },
     ],
   } as SecCard,
   {
@@ -3552,6 +3873,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b3d-i", topicId: "tech-core-project", conceptId: "core-project",
     section: "B", questionRef: "2024 OL Section B Q3(d)(i)",
+    stem: "A Work Breakdown Structure (WBS) can be a useful tool when planning for the manufacture of a product.",
     questionText: "Briefly outline two benefits of using a WBS when planning for the design and manufacture of a product.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -3565,6 +3887,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-b3d-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2024 OL Section B Q3(d)(ii)",
+    stem: "A Work Breakdown Structure (WBS) can be a useful tool when planning for the manufacture of a product.",
     questionText: "Suggest a sequence of steps to 3D print a propeller for a model aircraft.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -3578,8 +3901,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1a-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(a)(i)",
-    stem: "Start • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed Button • When the button is pressed a third time, the motorised blower stops.",
-    questionText: "Outline two advantages of using a PIC in a child’s toy. Complete a flowchart to operate the bubble blower in the following sequence:",
+    stem: "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs). above, is programmed using a flowchart.",
+    questionText: "Outline two advantages of using a PIC in a child’s toy. Complete a flowchart to operate the bubble blower in the following sequence: • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed • When the button is pressed a third time, the motorised blower stops.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Multiple inputs and outputs, reprogrammable, etc.", marks: 6, openList: true },
@@ -3592,7 +3915,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1a-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(a)(ii)",
-    stem: "Start • When a button is pressed, the motorised blower is turned on • When the button is pressed a second time, the motorised blower increases its speed Button • When the button is pressed a third time, the motorised blower stops.",
+    stem: "The image shows an automated bubble blower. Toys like this often use Peripheral Interface Controllers (PICs). above, is programmed using a flowchart.",
     questionText: "Suggest one other child’s toy that could use a PIC and outline why it would be useful to use a PIC in this toy. Suggest a modification of the flowchart to alert the user when the bubble solution is running low.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3606,6 +3929,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1c-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(c)(i)",
+    stem: "The image shows a Dipius S600 robotic vacuum cleaner and its charging unit. It is an example of a home automation system that is becoming increasingly popular.",
     questionText: "Outline two advantages of using home automation systems.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -3619,6 +3943,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(c)(ii)",
+    stem: "The image shows a Dipius S600 robotic vacuum cleaner and its charging unit. It is an example of a home automation system that is becoming increasingly popular.",
     questionText: "Give one other example of a home automation device.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3632,6 +3957,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1d-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(d)(i)",
+    stem: "The graphic shows the pneumatic symbol for a single-acting cylinder (actuator).",
     questionText: "Explain how a single-acting cylinder works with reference to the graphic shown.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -3653,6 +3979,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c1d-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2024 OL Section C Q1(d)(ii)",
+    stem: "The graphic shows the pneumatic symbol for a single-acting cylinder (actuator).",
     questionText: "Give one practical example of where a single-acting cylinder could be used in everyday life.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3674,6 +4001,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c2a-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(a)(i)",
+    stem: "The image shows an LED. LEDs are polarised components widely used in electronic devices.",
     questionText: "Explain what is meant by the term polarised.",
     tariffModel: {"kind":"questionTotal","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -3688,6 +4016,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c2a-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(a)(ii)",
+    stem: "The image shows an LED. LEDs are polarised components widely used in electronic devices.",
     questionText: "Describe how a student would ensure that an LED is correctly polarised when inserting it into a circuit.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3701,11 +4030,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(b)(i)",
+    stem: "Part of a 555 monostable IC is shown in the diagram.",
     questionText: "Explain what is meant by the abbreviation IC.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Integrated circuit.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q2b-art.png",
+          "srcHash": "878267a1b8a7000cb20c0b1c5c3a7c32",
+          "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3714,12 +4052,43 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(b)(ii)",
+    stem: "Part of a 555 monostable IC is shown in the diagram.",
     questionText: "Briefly outline the purpose of capacitor C in the circuit.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "7 3 in the circuit. 2 1", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Capacitor C is used to control the length of time the output stays activated. The larger the capacitor the longer the output will stay on C when configured in a monostable mode. 0 V", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q2b-art.png",
+          "srcHash": "878267a1b8a7000cb20c0b1c5c3a7c32",
+          "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2024-ol-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2024 OL Section C Q2(b)(iii)",
+    stem: "Part of a 555 monostable IC is shown in the diagram.",
+    questionText: "Redraw the circuit to include an LED output at pin 3 of the 555 IC.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "at pin 3 of the 555 IC.", marks: 6, openList: true },
+    ],
+    questionFigure: {
+          "candId": "technology-2024-OL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q2b-art.png",
+          "srcHash": "878267a1b8a7000cb20c0b1c5c3a7c32",
+          "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3728,6 +4097,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(c)(i)",
+    stem: "A student intends to drill 1 mm holes in a PCB to receive a resistor for soldering.",
     questionText: "Explain what is meant by the abbreviation PCB.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3741,6 +4111,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(c)(ii)",
+    stem: "A student intends to drill 1 mm holes in a PCB to receive a resistor for soldering.",
     questionText: "In each case, when drilling and when soldering, describe one safety precaution that must be observed by the student.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3755,6 +4126,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2024 OL Section C Q2(d)(i)",
+    stem: "A resistor with a gold band indicates that it has a tolerance of 5%.",
     questionText: "Briefly outline what is meant by the term tolerance when referring to resistors.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3795,6 +4167,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c3b-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(b)(i)",
+    stem: "Ireland has a high number of data centres which use large amounts of electricity. The hardware equipment used in data centres includes routers, switches, modems, and firewalls.",
     questionText: "Outline two reasons why data centres use large amounts of electricity.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -3808,6 +4181,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c3b-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(b)(ii)",
+    stem: "Ireland has a high number of data centres which use large amounts of electricity. The hardware equipment used in data centres includes routers, switches, modems, and firewalls.",
     questionText: "Describe the main function of any two items of hardware listed above.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -3824,6 +4198,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c3b-iii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(b)(iii)",
+    stem: "Ireland has a high number of data centres which use large amounts of electricity. The hardware equipment used in data centres includes routers, switches, modems, and firewalls.",
     questionText: "Suggest one way in which the hardware could be kept cool in a data centre.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -3837,6 +4212,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c3c-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(c)(i)",
+    stem: "Social engineering is the manipulation of someone to extract their personal information.",
     questionText: "Outline two examples of social engineering.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3850,6 +4226,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c3c-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(c)(ii)",
+    stem: "Social engineering is the manipulation of someone to extract their personal information.",
     questionText: "Describe two measures that can be taken by individuals to avoid social engineering.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3863,6 +4240,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c3d-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(d)(i)",
+    stem: "Software installed on personal computers often needs to be licenced before use.",
     questionText: "State a reason why a user might need to purchase a licence for a particular software application.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3876,6 +4254,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c3d-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2024 OL Section C Q3(d)(ii)",
+    stem: "Software installed on personal computers often needs to be licenced before use.",
     questionText: "Outline the difference between software and hardware when referring to computers.",
     tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3890,6 +4269,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(a)(i)",
+    stem: "Reverse engineering is the process of deconstructing or dismantling a product to learn how it works. It can also tell you more about the product's design.",
     questionText: "Suggest two reasons why a company might use this technique when designing a product.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -3903,6 +4283,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4a-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(a)(ii)",
+    stem: "Reverse engineering is the process of deconstructing or dismantling a product to learn how it works. It can also tell you more about the product's design.",
     questionText: "Many people feel that this technique should not be allowed. Outline one objection people might have to reverse engineering.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3916,6 +4297,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(b)(i)",
+    stem: "The graph shows a projected lifecycle for a hair dryer. It tracks the sales of a company’s product over a four-year period.",
     questionText: "Give two reasons why the sales are low in year 1.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -3929,6 +4311,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(b)(ii)",
+    stem: "The graph shows a projected lifecycle for a hair dryer. It tracks the sales of a company’s product over a four-year period.",
     questionText: "Briefly outline two challenges for the company in meeting the demand for the product in Year 2.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -3942,6 +4325,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(b)(iii)",
+    stem: "The graph shows a projected lifecycle for a hair dryer. It tracks the sales of a company’s product over a four-year period.",
     questionText: "Describe two techniques the company could use to increase its sales as the demand for the product declines during year 4.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -3955,7 +4339,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(c)(i)",
-    stem: "or become obsolete in the short to medium-term. OR",
+    stem: "Planned obsolescence describes the practice of designing products to break quickly or become obsolete in the short to medium-term.",
     questionText: "Briefly describe two problems of planned obsolescence for a consumer.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3969,7 +4353,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(c)(ii)",
-    stem: "or become obsolete in the short to medium-term. OR",
+    stem: "Planned obsolescence describes the practice of designing products to break quickly or become obsolete in the short to medium-term.",
     questionText: "Suggest two benefits of planned obsolescence for the manufacturer of a product.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -3983,6 +4367,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(d)(i)",
+    stem: "When setting up a manufacturing company, it is essential to have good leaders and people who work well as a team.",
     questionText: "Describe two characteristics of a good team leader.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -3996,6 +4381,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 OL Section C Q4(d)(ii)",
+    stem: "When setting up a manufacturing company, it is essential to have good leaders and people who work well as a team.",
     questionText: "Suggest two reasons why it is important to have people who work well as a team.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -4009,7 +4395,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c5a-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(a)(i)",
-    stem: "electric vehicle with the longest range in the world. The shell of the car is made from carbon fibre composite material.",
+    stem: "TUfast Eco, designed by students at the Technical University of München, has become the electric vehicle with the longest range in the world. The shell of the car is made from carbon fibre composite material.",
     questionText: "Explain what is meant by the term composite, when referring to materials.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4023,7 +4409,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c5a-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(a)(ii)",
-    stem: "electric vehicle with the longest range in the world. The shell of the car is made from carbon fibre composite material.",
+    stem: "TUfast Eco, designed by students at the Technical University of München, has become the electric vehicle with the longest range in the world. The shell of the car is made from carbon fibre composite material.",
     questionText: "Name one other composite material and outline one advantage of using this material.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4037,6 +4423,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c5b-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(b)(i)",
+    stem: "Metal tubing is used in the manufacture of the suspension system of the electric vehicle.",
     questionText: "Briefly outline two reasons for the use of metal tubing in manufacturing the suspension system.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -4050,6 +4437,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c5b-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(b)(ii)",
+    stem: "Metal tubing is used in the manufacture of the suspension system of the electric vehicle.",
     questionText: "Describe a suitable finish that could be applied to protect the metal tubing from degradation.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -4064,6 +4452,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c5b-iii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(b)(iii)",
+    stem: "Metal tubing is used in the manufacture of the suspension system of the electric vehicle.",
     questionText: "The metal tubes are joined using permanent jointing methods while the shell is attached to the suspension using semi-permanent joints. Explain what is meant by both permanent and semi-permanent joints, giving an example of each.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -4104,7 +4493,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(d)(i)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "The image shows a vehicle windscreen which is made from a photochromic smart material. It automatically darkens in sunlight making it easier for the driver to see out.",
     questionText: "Explain what is meant by the term smart material.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4118,7 +4507,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Ordinary Level — © State Examinations Commission.",
     id: "tech-2024-ol-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2024 OL Section C Q5(d)(ii)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "The image shows a vehicle windscreen which is made from a photochromic smart material. It automatically darkens in sunlight making it easier for the driver to see out.",
     questionText: "Suggest one other application for a photochromic material.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4285,17 +4674,29 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC065GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-a9", topicId: "tech-core-energy", conceptId: "core-energy",
+    section: "A", questionRef: "2025 OL Section A Q9",
+    questionText: "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.",
+    tariffModel: {"kind":"fixed","notation":"(Very good diagram- 8 marks, good diagram- 6 marks, fair diagram- 4 marks)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the space provided, sketch a circuit diagram for this circuit.", marks: 8, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-a10", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "A", questionRef: "2025 OL Section A Q10",
     questionText: "ICT (Information and Communications Technology) is used daily in schools for communication, learning, and accessing information. Name two forms of ICT you have used and state the purpose of using each.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "ICT (Information and Communication Technology) is used daily in schools for communication, learning, and accessing information.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Name two forms of ICT you have used and state the purpose of using each.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "ICT: PC/Laptop", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Purpose: to write a portfolio", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "ICT: Solidworks", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "Purpose: Produce working drawings, CAM files for 3D printing/laser cutting, etc.", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "ICT: PC/Laptop", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Purpose: to write a portfolio", marks: null, openList: true },
+    { id: "r-4", kind: "point", verbatim: "ICT: Solidworks", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "Purpose: Produce working drawings, CAM files for 3D printing/laser cutting, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4370,6 +4771,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2a-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 OL Section B Q2(a)(i)",
+    stem: "Bolt e-bikes are available to rent in many Irish towns. They provide fast and affordable urban transport.",
     questionText: "Outline two environmental benefits of using an e-bike.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 4,
     rows: [
@@ -4383,6 +4785,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2a-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 OL Section B Q2(a)(ii)",
+    stem: "Bolt e-bikes are available to rent in many Irish towns. They provide fast and affordable urban transport.",
     questionText: "Suggest a suitable material for the manufacture of the e-bike frame. Justify your selection.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
@@ -4396,6 +4799,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2b-i", topicId: "tech-core-design", conceptId: "core-design",
     section: "B", questionRef: "2025 OL Section B Q2(b)(i)",
+    stem: "The Bolt e-bike is ergonomically designed with an easily adjustable seat and a basket to hold your belongings.",
     questionText: "Explain what is meant by the term ergonomics.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
@@ -4409,6 +4813,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2b-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 OL Section B Q2(b)(ii)",
+    stem: "The Bolt e-bike is ergonomically designed with an easily adjustable seat and a basket to hold your belongings.",
     questionText: "List two safety features which should be incorporated into the design of the e-bike.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 4,
     rows: [
@@ -4422,6 +4827,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2b-iii", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "B", questionRef: "2025 OL Section B Q2(b)(iii)",
+    stem: "The Bolt e-bike is ergonomically designed with an easily adjustable seat and a basket to hold your belongings.",
     questionText: "Describe, using notes and sketches, how the height of the seat could be adjusted.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
@@ -4435,6 +4841,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2c-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 OL Section B Q2(c)(i)",
+    stem: "The e-bikes typically use a 48 V lithium-ion battery and have a range of up to 90 km.",
     questionText: "Suggest two factors that would affect the range of an e-bike.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -4448,6 +4855,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2c-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 OL Section B Q2(c)(ii)",
+    stem: "The e-bikes typically use a 48 V lithium-ion battery and have a range of up to 90 km.",
     questionText: "Calculate the power delivered when the motor draws 10 A from the 48 V battery. Note: P = V × I",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -4461,6 +4869,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2d-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2025 OL Section B Q2(d)(i)",
+    stem: "Payments for the rental of the e-bikes are processed through an app.",
     questionText: "Outline two advantages of using an app to pay for the rental of an e-bike.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -4474,6 +4883,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b2d-ii", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2025 OL Section B Q2(d)(ii)",
+    stem: "Payments for the rental of the e-bikes are processed through an app.",
     questionText: "Suggest two safety precautions that should be observed when using apps for payment.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -4487,6 +4897,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3a-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(a)(i)",
+    stem: "The Fehmarnbelt is currently the world's longest immersed (underwater) tunnel under construction. It will connect Scandinavia to mainland Europe when it opens in 2029.",
     questionText: "Outline two advantages of using an immersed tunnel for transportation purposes.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4500,6 +4911,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3a-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(a)(ii)",
+    stem: "The Fehmarnbelt is currently the world's longest immersed (underwater) tunnel under construction. It will connect Scandinavia to mainland Europe when it opens in 2029.",
     questionText: "Describe two safety concerns when constructing large infrastructure projects like an immersed tunnel.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4513,7 +4925,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3b-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(b)(i)",
-    stem: "Pre-cast concrete section",
+    stem: "The tunnel consists of 89 pre-cast reinforced concrete sections that will be manufactured in an offshore factory. Concrete is essential for building the tunnel due to its very high compressive strength.",
     questionText: "Describe, with the aid of a diagram, what is meant by the term compression when referring to materials.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 4,
     rows: [
@@ -4527,7 +4939,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3b-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2025 OL Section B Q3(b)(ii)",
-    stem: "Pre-cast concrete section",
+    stem: "The tunnel consists of 89 pre-cast reinforced concrete sections that will be manufactured in an offshore factory. Concrete is essential for building the tunnel due to its very high compressive strength.",
     questionText: "Suggest two benefits of manufacturing the concrete sections in an offshore factory.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 2,
     rows: [
@@ -4541,7 +4953,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3b-iii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(b)(iii)",
-    stem: "Pre-cast concrete section",
+    stem: "The tunnel consists of 89 pre-cast reinforced concrete sections that will be manufactured in an offshore factory. Concrete is essential for building the tunnel due to its very high compressive strength.",
     questionText: "Briefly describe, using notes and sketches, how the concrete sections could be joined together to ensure that the tunnel is watertight when completed.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 4+2+2)"}, totalMarks: 2,
     rows: [
@@ -4555,6 +4967,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3c-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(c)(i)",
+    stem: "Large-scale projects, like the Fehmarnbelt tunnel, require careful planning to ensure that they are completed successfully.",
     questionText: "Suggest two important objectives when planning for the successful completion of the tunnel.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -4568,6 +4981,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3c-ii", topicId: "tech-core-project", conceptId: "core-project",
     section: "B", questionRef: "2025 OL Section B Q3(c)(ii)",
+    stem: "Large-scale projects, like the Fehmarnbelt tunnel, require careful planning to ensure that they are completed successfully.",
     questionText: "Describe one planning tool that the project planners could use in large scale projects.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -4581,6 +4995,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3d-i", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(d)(i)",
+    stem: "One of the main goals of the Fehmarnbelt project is to build the tunnel sustainably.",
     questionText: "Outline two ways the project planners could ensure that the tunnel is built sustainably.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -4594,6 +5009,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-b3d-ii", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2025 OL Section B Q3(d)(ii)",
+    stem: "One of the main goals of the Fehmarnbelt project is to build the tunnel sustainably.",
     questionText: "Describe one consequence of not considering sustainability when building large-scale projects.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -4607,6 +5023,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c1a-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 OL Section C Q1(a)(i)",
+    stem: "Peripheral Interface Controllers (PICs) are commonly used in washing machines.",
     questionText: "Briefly describe why PICs are useful in washing machines.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4620,6 +5037,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c1a-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 OL Section C Q1(a)(ii)",
+    stem: "Peripheral Interface Controllers (PICs) are commonly used in washing machines.",
     questionText: "Suggest two other household appliances that use PICs.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4633,15 +5051,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c1b-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 OL Section C Q1(b)(i)",
-    stem: "• When a button is pressed, the motorised gate opens • After 30 seconds, the gate closes • The motorised gate must remain closed for a minimum of 10 seconds before it can open again. Start Button",
-    questionText: "Complete a flowchart to operate the gate in the following sequence:",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    stem: "The image shows a motorised gate that uses a PIC.",
+    questionText: "Complete a flowchart to operate the gate in the following sequence: • When a button is pressed, the motorised gate opens • After 30 seconds, the gate closes • The motorised gate must remain closed for a minimum of 10 seconds before it can open again.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "• When a button is pressed, the motorised gate opens", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "• After 30 seconds, the gate closes Start", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "• The motorised gate must remain closed for a minimum of 10 seconds before it can open again. N", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Button", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Complete a flowchart to operate the gate in the following sequence: • When a button is pressed, the motorised gate opens • After 30 seconds, the gate closes • The motorised gate must remain closed for a minimum of 10 seconds before it can open again.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    figure: {
+          "candId": "technology-2025-OL-scheme-secC-q1b-i",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-scheme-secC-q1b-i.png",
+          "srcHash": "cb045ae5a7b15a7d0ff7cc1866d80727",
+          "alt": "The marking scheme's own answer to 2025 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision Button, whose N branch loops back and whose Y branch runs Gate opens, Wait 30, the decision Object?, Gate closes, Wait 10 and back to Start; the dashed Y branch leaving Object? is cut at the edge.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4650,12 +5074,35 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c1b-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 OL Section C Q1(b)(ii)",
-    stem: "• When a button is pressed, the motorised gate opens • After 30 seconds, the gate closes • The motorised gate must remain closed for a minimum of 10 seconds before it can open again. Start Button",
+    stem: "The image shows a motorised gate that uses a PIC.",
     questionText: "Name a suitable sensor that could be used to stop the gate if an object blocks its path.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Motion sensor, LDR, etc. Gate opens", marks: 8, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Motion sensor, LDR, etc.", marks: 8, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-c1b-iii", topicId: "tech-opt-control", conceptId: "opt-control",
+    section: "C", questionRef: "2025 OL Section C Q1(b)(iii)",
+    stem: "The image shows a motorised gate that uses a PIC.",
+    questionText: "Suggest a modification to the flowchart to stop the gate from closing when an object blocks its path.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any valid alternative solution accepted.", marks: 6, openList: true },
+    ],
+    figure: {
+          "candId": "technology-2025-OL-scheme-secC-q1b-iii",
+          "src": "/exam-figures/technology/markbank/technology-2025-OL-scheme-secC-q1b-iii.png",
+          "srcHash": "0acd5ab0dec0a2f1e79cfa4cd27bd0ee",
+          "alt": "The marking scheme's own answer to 2025 OL Section C Q1(b)(iii), as the State Examinations Commission printed it: the lower part of its flowchart, where the decision Object? after Wait 30 sends a Y branch, drawn dashed, to a red Stop box before Gate closes and Wait 10. The scheme prints beneath it: Any valid alternative solution accepted.",
+          "attribution": "SEC Leaving Certificate Technology 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4664,6 +5111,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c1c-i", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 OL Section C Q1(c)(i)",
+    stem: "The image shows a CAD model of a robotic arm that has 6 Degrees of Freedom.",
     questionText: "Using notes and annotated sketches, explain what is meant by the term degrees of freedom.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4677,6 +5125,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2025 OL Section C Q1(c)(ii)",
+    stem: "The image shows a CAD model of a robotic arm that has 6 Degrees of Freedom.",
     questionText: "Describe one situation where a robotic arm could be used in industry.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4717,7 +5166,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c2a-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 OL Section C Q2(a)(i)",
-    stem: "These panels can have a power output rating of 400 W and typically generate 1.5 kilowatt hours of energy per day.",
+    stem: "The image shows solar photovoltaic panels typically used in a home installation. These panels can have a power output rating of 400 W and typically generate 1.5 kilowatt hours of energy per day.",
     questionText: "Outline two advantages of using solar photovoltaic panels.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4731,7 +5180,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c2a-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 OL Section C Q2(a)(ii)",
-    stem: "These panels can have a power output rating of 400 W and typically generate 1.5 kilowatt hours of energy per day.",
+    stem: "The image shows solar photovoltaic panels typically used in a home installation. These panels can have a power output rating of 400 W and typically generate 1.5 kilowatt hours of energy per day.",
     questionText: "Describe one energy conversion that takes place in a solar panel.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4745,7 +5194,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c2b-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 OL Section C Q2(b)(i)",
-    stem: "Name an electronic component that could be used to vary the speed of the motor. Give one example of where motor speed control is useful in everyday life. X Y A D C",
+    stem: "The image shows a miniature DC motor with an operating range from 1.5 V to 6 V. DC motors are commonly used by students in Technology projects.",
     questionText: "Outline what is meant by the abbreviation DC when referring to a motor.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -4757,14 +5206,27 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-c2b-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 OL Section C Q2(b)(ii)",
+    stem: "The image shows a miniature DC motor with an operating range from 1.5 V to 6 V. DC motors are commonly used by students in Technology projects.",
+    questionText: "Draw a labelled diagram of a suitable electronic circuit to control the forward and reverse motion of a DC motor.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "to control the forward and reverse motion of a DC motor.", marks: 8, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 OL Section C Q2(b)(iii)",
-    stem: "Name an electronic component that could be used to vary the speed of the motor. Give one example of where motor speed control is useful in everyday life. X Y A D C",
-    questionText: "Controlling the speed of the motor can be useful in different situations.",
-    tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
+    stem: "The image shows a miniature DC motor with an operating range from 1.5 V to 6 V. DC motors are commonly used by students in Technology projects.",
+    questionText: "Controlling the speed of the motor can be useful in different situations. Name an electronic component that could be used to vary the speed of the motor. Give one example of where motor speed control is useful in everyday life.",
+    tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name an electronic component that could be used to vary the speed of the motor. Give one example of where motor speed control is useful in everyday life.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Variable resistor. Roller doors, conveyor belt systems, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Variable resistor. Roller doors, conveyor belt systems, etc.", marks: 6, openList: true },
     ],
   } as SecCard,
   {
@@ -4774,6 +5236,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 OL Section C Q2(c)(i)",
+    stem: "The graphic shows a combination of two logic gates.",
     questionText: "Name the logic gates at X and Y.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4787,6 +5250,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c2d-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 OL Section C Q2(d)(i)",
+    stem: "The image shows a phototransistor. A phototransistor is a light sensitive transistor that allows current to flow between the collector and the emitter in bright conditions.",
     questionText: "Describe one practical use for a phototransistor.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4798,8 +5262,23 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC065GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "tech-2025-ol-c2d-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
+    section: "C", questionRef: "2025 OL Section C Q2(d)(ii)",
+    stem: "The image shows a phototransistor. A phototransistor is a light sensitive transistor that allows current to flow between the collector and the emitter in bright conditions.",
+    questionText: "Using the Formulae and Tables booklet, or otherwise, draw the symbol for a phototransistor.",
+    tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "draw the symbol for a phototransistor.", marks: 4, openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC065GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c3a-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(a)(i)",
+    stem: "Email is a method of transferring information from one user to another.",
     questionText: "Suggest two benefits of using email to transfer information.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4813,6 +5292,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c3a-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(a)(ii)",
+    stem: "Email is a method of transferring information from one user to another.",
     questionText: "Explain what is meant by the domain name with reference to an email address. Give one example of a commonly used domain name.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4826,6 +5306,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c3b-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(b)(i)",
+    stem: "Cybercrime has become more sophisticated in recent years, requiring computer users to remain highly vigilant. To combat cybercrime, biometrics are frequently employed as a security measure.",
     questionText: "Explain, using two examples, what is meant by the term biometrics.",
     tariffModel: {"kind":"questionTotal","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -4840,6 +5321,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c3b-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(b)(ii)",
+    stem: "Cybercrime has become more sophisticated in recent years, requiring computer users to remain highly vigilant. To combat cybercrime, biometrics are frequently employed as a security measure.",
     questionText: "Encryption can be used to protect data. Outline what is meant by the term encryption.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -4853,6 +5335,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c3b-iii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(b)(iii)",
+    stem: "Cybercrime has become more sophisticated in recent years, requiring computer users to remain highly vigilant. To combat cybercrime, biometrics are frequently employed as a security measure.",
     questionText: "Outline two other ways people can minimise the threat of cybercrime.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -4866,6 +5349,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c3c-i", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(c)(i)",
+    stem: "When individuals stream content over the internet, they may experience buffering issues that interrupt playback and disrupt their viewing experience.",
     questionText: "Explain what is meant by the term buffering.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4879,6 +5363,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c3c-ii", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2025 OL Section C Q3(c)(ii)",
+    stem: "When individuals stream content over the internet, they may experience buffering issues that interrupt playback and disrupt their viewing experience.",
     questionText: "Suggest two ways to improve the streaming of content at home.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -4944,7 +5429,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 OL Section C Q4(b)(i)",
-    stem: "supply chain and production operations. Zara's approach involves rapid design, production, and distribution of fashion items to respond quickly to changing consumer preferences.",
+    stem: "The fashion retailer Zara, has successfully implemented Just in Time (JIT) principles in its supply chain and production operations. Zara's approach involves rapid design, production, and distribution of fashion items to respond quickly to changing consumer preferences.",
     questionText: "Describe what is meant by Just in Time production.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -4958,7 +5443,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 OL Section C Q4(b)(ii)",
-    stem: "supply chain and production operations. Zara's approach involves rapid design, production, and distribution of fashion items to respond quickly to changing consumer preferences.",
+    stem: "The fashion retailer Zara, has successfully implemented Just in Time (JIT) principles in its supply chain and production operations. Zara's approach involves rapid design, production, and distribution of fashion items to respond quickly to changing consumer preferences.",
     questionText: "Outline two advantages of using this production method for a company like Zara.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 8,
     rows: [
@@ -4972,7 +5457,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 OL Section C Q4(b)(iii)",
-    stem: "supply chain and production operations. Zara's approach involves rapid design, production, and distribution of fashion items to respond quickly to changing consumer preferences.",
+    stem: "The fashion retailer Zara, has successfully implemented Just in Time (JIT) principles in its supply chain and production operations. Zara's approach involves rapid design, production, and distribution of fashion items to respond quickly to changing consumer preferences.",
     questionText: "Briefly outline one difficulty associated with this method of clothes production (fast fashion).",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6+8+6)"}, totalMarks: 6,
     rows: [
@@ -4986,6 +5471,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 OL Section C Q4(c)(i)",
+    stem: "Market research is essential before a new product is manufactured.",
     questionText: "Describe what is meant by the term market research.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -4999,6 +5485,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 OL Section C Q4(c)(ii)",
+    stem: "Market research is essential before a new product is manufactured.",
     questionText: "Outline two benefits for a company that conducts market research before manufacturing a product.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -5012,6 +5499,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 OL Section C Q4(d)(i)",
+    stem: "A manufacturing company may have a managing director and team leaders in charge of finance, sales, manufacturing, etc.",
     questionText: "Outline the role of the managing director in a company.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -5025,6 +5513,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 OL Section C Q4(d)(ii)",
+    stem: "A manufacturing company may have a managing director and team leaders in charge of finance, sales, manufacturing, etc.",
     questionText: "Describe two characteristics of an effective team leader.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -5038,6 +5527,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c5a-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2025 OL Section C Q5(a)(i)",
+    stem: "Bryson DeChambeau made history in the 2024 US Open Golf Championship by becoming the first player to win a Major using 3D printed irons.",
     questionText: "Outline two ways a golfer could benefit from using 3D printed golf clubs.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -5051,6 +5541,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c5a-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2025 OL Section C Q5(a)(ii)",
+    stem: "Bryson DeChambeau made history in the 2024 US Open Golf Championship by becoming the first player to win a Major using 3D printed irons.",
     questionText: "Suggest two reasons why 3D printing can be a more environmentally friendly method for manufacturing products such as golf clubs.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -5090,7 +5581,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c5d-i", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2025 OL Section C Q5(d)(i)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "Modern golf balls are manufactured from polybutadiene, a smart material which can be compressed when struck by a golf club but will return to its original shape. This smart material is called a shape memory material.",
     questionText: "Explain what is meant by the term smart material.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -5104,7 +5595,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Ordinary Level — © State Examinations Commission.",
     id: "tech-2025-ol-c5d-ii", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2025 OL Section C Q5(d)(ii)",
-    stem: "Do not write on this page Do not write on this page",
+    stem: "Modern golf balls are manufactured from polybutadiene, a smart material which can be compressed when struck by a golf club but will return to its original shape. This smart material is called a shape memory material.",
     questionText: "Suggest one other use for a shape memory material.",
     tariffModel: {"kind":"fixed","notation":"(10 marks, 6+4)"}, totalMarks: 4,
     rows: [

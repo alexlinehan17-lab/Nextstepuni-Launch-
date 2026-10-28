@@ -35,11 +35,39 @@
   "questionRef": "2021 HL Section A Q15"
  },
  {
+  "file": "technology-2021-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram: a variable resistor R1 and a thermistor R2 in series as a potential divider feeding a transistor through R3, with a diode across a relay coil in the collector line and the relay contacts switching a motor M.",
+  "questionRef": "2021 HL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2021-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram of a 555 timer between two supply rails: R1 and R2 in series to pins 7, 6 and 2, C1 from pin 2 to 0V, C2 on pin 5, pins 4 and 8 to +V and pin 1 to 0V, with the output at pin 3.",
+  "questionRef": "2021 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2021-HL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A control chart: Sample Value from 38 to 42 against Time from 0 to 25, with a UCL line at 41.5, an Average line at 40 and an LCL line at 38.5, and the plotted samples scattered about the average.",
+  "questionRef": "2021 HL Section C Q4(c)"
+ },
+ {
   "file": "technology-2021-OL-paper-secB-q2d-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "Colour photograph of four identical flat-pack cardboard cartons standing upright on a steel bench, with a person reaching between two of them.",
   "questionRef": "2021 OL Section B Q2(d)"
+ },
+ {
+  "file": "technology-2021-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram between two supply rails with a switch in the top rail: a resistor above an electrolytic capacitor A in series, the junction feeding a transistor B through a resistor, with an LED and resistor in the collector line.",
+  "questionRef": "2021 OL Section C Q2(b)"
  },
  {
   "file": "technology-2022-HL-paper-secA-q2-art.png",
@@ -70,11 +98,25 @@
   "questionRef": "2022 HL Section C Q2(a)"
  },
  {
+  "file": "technology-2022-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram between +V and -V rails: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor; a push switch C and the transistor output feed an OR gate D that drives a buzzer.",
+  "questionRef": "2022 HL Section C Q2(b)"
+ },
+ {
   "file": "technology-2022-OL-paper-secA-q6-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "Colour photograph of a pair of blue plastic bevel gears in mesh: a small pinion standing at right angles above a much larger bevel wheel with a keyed centre bore.",
   "questionRef": "2022 OL Section A Q6"
+ },
+ {
+  "file": "technology-2022-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram: a battery, a single-pole switch, a resistor labelled R and a light emitting diode with two emission arrows, all in one series loop.",
+  "questionRef": "2022 OL Section A Q11"
  },
  {
   "file": "technology-2022-OL-paper-secA-q12-art.png",
@@ -89,6 +131,13 @@
   "truncated": false,
   "description": "Colour photograph of a robotic deck-cleaning machine in side view: a low black wedge-shaped body with a vented top, running on wheels over timber decking, with a rotary brush turning underneath its front.",
   "questionRef": "2022 OL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2022-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram between 6V and 0V rails with a switch in the top rail: a variable resistor A above a thermistor B form a potential divider feeding a transistor through a resistor, with a buzzer C in the collector line.",
+  "questionRef": "2022 OL Section C Q2(b)"
  },
  {
   "file": "technology-2022-OL-paper-secC-q2d-art.png",
@@ -147,6 +196,13 @@
   "questionRef": "2023 HL Section C Q2(b)"
  },
  {
+  "file": "technology-2023-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An assembly sequence in six captioned pictures joined by arrows: Assemble chassis, Install circuit board, Install flat screen, Install speakers, Final assembly and Inspection.",
+  "questionRef": "2023 HL Section C Q4(d)"
+ },
+ {
   "file": "technology-2023-OL-paper-secA-q12-art.png",
   "kind": "figure",
   "truncated": false,
@@ -154,11 +210,25 @@
   "questionRef": "2023 OL Section A Q12"
  },
  {
+  "file": "technology-2023-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a red miniature toggle switch with six pins, above its circuit symbol: a double-pole double-throw switch drawn as two linked blades each able to meet either of two contacts.",
+  "questionRef": "2023 OL Section C Q2(b)"
+ },
+ {
   "file": "technology-2023-OL-paper-secC-q2c-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "Colour photograph of a black aluminium LED pocket torch lying at an angle, with a knurled grip band, a pocket clip and a reflector lens at the left end.",
   "questionRef": "2023 OL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2023-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a white S-Works road bicycle with deep-section black wheels, standing on a road in front of desert hills.",
+  "questionRef": "2023 OL Section C Q4(b)"
  },
  {
   "file": "technology-2023-OL-paper-secC-q5b-art.png",
@@ -196,6 +266,13 @@
   "questionRef": "2024 HL Section C Q2(b)"
  },
  {
+  "file": "technology-2024-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of three laser-cut plywood trophies, each a latticed football on a tapered tower bearing a Fantasy Champion 2017 shield.",
+  "questionRef": "2024 HL Section C Q4(b)"
+ },
+ {
   "file": "technology-2024-HL-paper-secC-q5d-art.png",
   "kind": "figure",
   "truncated": false,
@@ -215,6 +292,13 @@
   "truncated": false,
   "description": "The pneumatic symbol for a double-acting cylinder: a rectangular barrel containing a piston and a piston rod that passes out through the right-hand end, with hatching drawn inside the barrel and a port stub beneath the left-hand end.",
   "questionRef": "2024 OL Section C Q1(d)"
+ },
+ {
+  "file": "technology-2024-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
+  "questionRef": "2024 OL Section C Q2(b)"
  },
  {
   "file": "technology-2025-HL-paper-secA-q5-art.png",
@@ -245,10 +329,237 @@
   "questionRef": "2025 HL Section A Q13"
  },
  {
+  "file": "technology-2025-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cost graph: cost from 0 to 8000 against Quantity from 0 to 400, a steep blue line A from the origin and a shallower red line B from 3000, crossing at point C above 200, with the region X between them before C shaded green and the region Y after it shaded pink.",
+  "questionRef": "2025 HL Section C Q4(b)"
+ },
+ {
+  "file": "technology-2025-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendered pictorial view of a chain drive: a small toothed sprocket above and a much larger toothed sprocket below, both with keyed bores, joined by a roller chain running around them.",
+  "questionRef": "2025 OL Section A Q11"
+ },
+ {
   "file": "technology-2025-OL-paper-secA-q12-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "Line drawing of a disposable takeaway coffee cup, drawn in outline on a lightly hatched square inside a ruled box: a domed lid with a drinking hole, a sleeve carrying a coffee-bean motif, and the tapered cup below it.",
   "questionRef": "2025 OL Section A Q12"
+ },
+ {
+  "file": "technology-2026-HL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram: a 12V battery feeding two 10 Ω resistors in series, with a 40 Ω resistor and a voltmeter V in parallel with each other between them.",
+  "questionRef": "2026 HL Section A Q3"
+ },
+ {
+  "file": "technology-2026-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Outline line drawing of a cordless drill in pictorial view, drawn unshaded in a ruled box: the chuck and bit at the front, the motor body, the pistol grip with its trigger, and the battery pack below.",
+  "questionRef": "2026 HL Section A Q8"
+ },
+ {
+  "file": "technology-2026-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A lever diagram: a horizontal bar on a triangular fulcrum at its left end, a 250 N load 50 mm from the fulcrum, and an upward effort arrow 200 mm beyond the load at the right end.",
+  "questionRef": "2026 HL Section A Q9"
+ },
+ {
+  "file": "technology-2026-HL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a hand holding a blue jigsaw by its handle, the blade below the base plate, with a red double-headed arrow along the blade showing its up-and-down motion.",
+  "questionRef": "2026 HL Section A Q10"
+ },
+ {
+  "file": "technology-2026-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A fishbone (cause and effect) diagram: a grey fish skeleton with four cause boxes on its ribs labelled People, Material, Method and Environment, each with an empty dashed box beside it except Material, whose box reads Oxidised.",
+  "questionRef": "2026 HL Section A Q11"
+ },
+ {
+  "file": "technology-2026-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two panels: on the left a ruled drawing box with a black dot at the crossing of two dashed centre lines; on the right a colour photograph of a wooden fishing automaton, a seated figure holding a rod over a wave, labelled Fishing rod, Drive shaft, Cam and Handle.",
+  "questionRef": "2026 HL Section A Q13"
+ },
+ {
+  "file": "technology-2026-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a child’s climbing arch: a curved wooden frame with a round hand-hole at each foot and pastel-coloured rungs across the top.",
+  "questionRef": "2026 HL Section A Q15"
+ },
+ {
+  "file": "technology-2026-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An op-amp circuit diagram: a triangle labelled IC with inverting (-) and non-inverting (+) inputs on the left, between an upper and a lower supply rail, with the output to the right and no components fitted.",
+  "questionRef": "2026 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2026-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a petrol multi-function gardening tool, the engine at the top of a long shaft, with an inset of its orange strimmer head labelled Safety guard by a red arrow.",
+  "questionRef": "2026 HL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2026-HL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three colour photographs of the gardening tool’s modular heads: a hedge-trimmer blade, a chainsaw bar and the orange strimmer head.",
+  "questionRef": "2026 HL Section C Q5(c)"
+ },
+ {
+  "file": "technology-2026-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A two-row table: Day 1 to 12 across the top and Defects 2, 3, 4, 5, 3, 2, 6, 4, 3, 7, 5, 4 beneath.",
+  "questionRef": "2026 HL Section C Q4(b)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secA-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section A Q8, as the State Examinations Commission printed it: the cordless drill redrawn in outline with the line weights varied. The scheme captions it: Two graphic techniques demonstrated.",
+  "solution": true,
+  "questionRef": "2026 HL Section A Q8"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secA-q13.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section A Q13, as the State Examinations Commission printed it: a shaded three-dimensional cam, circular with one radial step cut into its rim and a centre hole. The scheme captions it: Snail or drop cam.",
+  "solution": true,
+  "questionRef": "2026 HL Section A Q13"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secA-q15.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section A Q15, as the State Examinations Commission printed it: a front elevation of the climbing arch as an inverted U with a ring at each foot, above a plan showing the two side rails and the rungs between them. The scheme prints beside it: Suggested Solution: Any valid alternative solution accepted.",
+  "solution": true,
+  "questionRef": "2026 HL Section A Q15"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start through Move to a shelf, Turn on camera and Scan stock to the decision Is stock full, whose No branch leads to Send alert and whose Yes branch leads to Move to next shelf and loops back to Move to a shelf. The scheme prints beside it: Suggested solution, Alternatives accepted.",
+  "solution": true,
+  "questionRef": "2026 HL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secC-q2a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section C Q2(a)(i), as the State Examinations Commission printed it: a logic circuit in which Fingerprint sensor and PIN Code feed an OR gate, whose output and Power Level feed an AND gate, whose output is Unlock. The scheme prints beside it: Suggested solution, Alternatives accepted.",
+  "solution": true,
+  "questionRef": "2026 HL Section C Q2(a)(i)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secC-q2a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section C Q2(a)(ii), as the State Examinations Commission printed it: a truth table with columns Fingerprint sensor, PIN Code, Power Level and Unlock, eight rows from 0 0 0 0 to 1 1 1 1, with Unlock at 1 in the rows 0 1 1, 1 0 1 and 1 1 1.",
+  "solution": true,
+  "questionRef": "2026 HL Section C Q2(a)(ii)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secC-q2b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section C Q2(b)(ii), as the State Examinations Commission printed it: the op-amp wired as a comparator between 9 V and 0 V rails, a potential divider of a variable resistor and an LDR feeding the inverting input A, R1 and R2 feeding the non-inverting input B, and the output driving an LED through a resistor, labelled Input: Potential divider eg variable resistor with LDR shown, and LED output.",
+  "solution": true,
+  "questionRef": "2026 HL Section C Q2(b)(ii)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secC-q4b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section C Q4(b)(ii), as the State Examinations Commission printed it: a control chart titled Control chart, the twelve daily defect counts plotted as a line on a 0 to 8 scale, a solid Mean line at 4 and dashed UCL and LCL lines at 7.3 and 0.7.",
+  "solution": true,
+  "questionRef": "2026 HL Section C Q4(b)(ii)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secC-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section C Q5(b)(ii), as the State Examinations Commission printed it: a sectioned injection moulding machine labelled plastic granules, hopper, heaters, mould cavity, casing mould, screw, barrel, nozzle and moveable plate.",
+  "solution": true,
+  "questionRef": "2026 HL Section C Q5(b)(ii)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secB-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section B Q3(d), as the State Examinations Commission printed it: a table with rows Air transport, Land transport and Sea transport against columns Carbon emissions and Pollution, giving each mode's share of global CO2 and grams of CO2 per tonne-km, and the pollutants it emits.",
+  "solution": true,
+  "questionRef": "2026 HL Section B Q3(d)"
+ },
+ {
+  "file": "technology-2026-HL-scheme-secC-q5d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 HL Section C Q5(d), as the State Examinations Commission printed it: a table comparing Composite materials with Treated softwood timber row by row under Fabrication techniques, Maintenance and Sustainability.",
+  "solution": true,
+  "questionRef": "2026 HL Section C Q5(d)"
+ },
+ {
+  "file": "technology-2021-HL-scheme-secC-q2a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2021 HL Section C Q2(a)(ii), as the State Examinations Commission printed it: a square wave labelled A Digital signal above a sine wave labelled An Analogue signal.",
+  "solution": true,
+  "questionRef": "2021 HL Section C Q2(a)(ii)"
+ },
+ {
+  "file": "technology-2021-HL-scheme-secC-q2b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2021 HL Section C Q2(b)(iii), as the State Examinations Commission printed it: the 555 astable circuit between 6V and 0V rails with R1, R2, C1 and C2, its pin 3 output driving a transistor through a resistor and an LED in the collector line. The scheme prints beside the part: See diagram above.",
+  "solution": true,
+  "questionRef": "2021 HL Section C Q2(b)(iii)"
+ },
+ {
+  "file": "technology-2023-OL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2023 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision On?, whose N branch loops back and whose Y branch runs LED On, Wait 2s, Motor On, Wait 30s, Motor Off, LED On and back to the decision.",
+  "solution": true,
+  "questionRef": "2023 OL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2023-OL-scheme-secC-q1b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2023 OL Section C Q1(b)(ii), as the State Examinations Commission printed it: the flowchart modified so that after Start and the decision On?, the Y branch runs LED On, Wait 2s, Motor On, Music On, Wait 30s, Motor/Music Off, LED On and loops back. The scheme prints beside it: Any valid alternative solution accepted.",
+  "solution": true,
+  "questionRef": "2023 OL Section C Q1(b)(ii)"
+ },
+ {
+  "file": "technology-2025-OL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision Button, whose N branch loops back and whose Y branch runs Gate opens, Wait 30, the decision Object?, Gate closes, Wait 10 and back to Start; the dashed Y branch leaving Object? is cut at the edge.",
+  "solution": true,
+  "questionRef": "2025 OL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2025-OL-scheme-secC-q1b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 OL Section C Q1(b)(iii), as the State Examinations Commission printed it: the lower part of its flowchart, where the decision Object? after Wait 30 sends a Y branch, drawn dashed, to a red Stop box before Gate closes and Wait 10. The scheme prints beneath it: Any valid alternative solution accepted.",
+  "solution": true,
+  "questionRef": "2025 OL Section C Q1(b)(iii)"
  }
 ]
