@@ -1,4 +1,201 @@
 {
+ "physics-2023-hl-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q1-table.png",
+  "md5": "e1fcf589c3d06127be8d333556a06a81",
+  "alt": "Table of the recorded data: s (cm) 40, 50, 60, 70, 80, 90; t (cs) 29, 32, 35, 38, 40, 43.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q1(v)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   240,
+   545,
+   300
+  ]
+ },
+ "physics-2023-hl-q12aiii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q12aiii-scheme.png",
+  "md5": "82dc742f899810010e6c1d540af1b677",
+  "alt": "The marking scheme's two lines: hf = / γ =, then 2mₑc² / an electron (0 above, -1 below) plus a positron (0 above, 1 below), each printed with its numbers stacked before the e.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   80,
+   216,
+   165,
+   258
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-q13-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q13-diagram.png",
+  "md5": "7a94a759fe92b40286441299b349659f",
+  "alt": "Cross-section of a hillside: a pipe runs from a reservoir at the top left down the slope, with the letter A beside it, to a wheel-shaped machine near the foot marked B, which opens into a lower reservoir on the right.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: esbarchives.ie",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   115,
+   298,
+   508,
+   500
+  ]
+ },
+ "physics-2023-hl-q14c-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q14c-circuit.png",
+  "md5": "889ae73772b8a666a48aaae60297e1a9",
+  "alt": "Circuit diagram: a cell in a rectangular loop with a 5 Ω resistor along the bottom, joined to two 5 Ω resistors side by side between the same two wires on the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(c)(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   212,
+   155,
+   410,
+   305
+  ]
+ },
+ "physics-2023-hl-q1iv-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q1iv-scheme-graph.png",
+  "md5": "683f8bfc48219b994d30cbbbddb428c5",
+  "alt": "The marking scheme's graph: s (m), from 0 to 1, against t² (s²), from 0 to 0.2, with six plotted points from 0.4 m to 0.9 m on a dotted straight line drawn from the origin.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q1(iv)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   80,
+   480,
+   540,
+   668
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q2-table.png",
+  "md5": "02af10aedb7d06cabbea373b973e6ada",
+  "alt": "Table of the recorded data: u (cm) 20.0, 30.0, 40.0; v (cm) 66.3, 31.1, 25.2.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q2(v)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   180,
+   128,
+   416,
+   190
+  ]
+ },
+ "physics-2023-hl-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q4-table.png",
+  "md5": "2b4c713164403e63bc27a19fe1cfb793",
+  "alt": "Table of the recorded data: mass of calorimeter 65.8 g; mass of calorimeter + water 111.6 g before adding steam and 114.3 g after; temperature of water 5.5 °C before adding steam and 36.4 °C after.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q4(vi)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   128,
+   545,
+   268
+  ]
+ },
+ "physics-2023-hl-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q5-table.png",
+  "md5": "f3baa79cbcac36e28e2cfd8c7834f335",
+  "alt": "Table of the recorded data: V (V) 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7; I (mA) 0, 0, 0, 0, 5, 20, 70, 220.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q5(iii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   478,
+   545,
+   538
+  ]
+ },
+ "physics-2023-hl-q5ii-scheme-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q5ii-scheme-graph.png",
+  "md5": "1f5633caa8ff018911afb78d7bafa7bc",
+  "alt": "The marking scheme's graph: I (mA), from -50 to 250, against V (V), from 0 to 0.8; the curve runs along zero to about 0.3 V, rises slowly, then turns steeply up to 220 mA at 0.7 V.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q5(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   80,
+   322,
+   450,
+   545
+  ],
+  "solution": true
+ },
+ "physics-2023-hl-q9i-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2023-hl-q9i-scheme.png",
+  "md5": "1b09c2e6be08766204f4a7c7e70eecad",
+  "alt": "The marking scheme's equation: plutonium (238 above, 94 below) gives uranium (234 above, 92 below) plus helium (4 above, 2 below), each nucleus printed with its mass number above its atomic number.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Physics 2023 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   80,
+   151.5,
+   185,
+   174
+  ],
+  "solution": true
+ },
  "physics-2024-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2024-hl-q1-table.png",
   "md5": "396c0d81f88a25929ea6e72c1e6cd14d",

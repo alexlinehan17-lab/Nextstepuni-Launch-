@@ -415,8 +415,20 @@ def cmd_scheme_rows(year, level):
 
 
 def _phys_rows(pdf):
+    """The scheme's lines as the runner reads them for this sitting: with the
+    ledger's glyph-id corrections (GLYPHS) and part-total column (TOTAL_COLUMN_X)."""
     import phys_review_lib as B
-    src = B.Src(pdf, 'scheme')
+    m = re.search(r'(\d{4})-(hl|ol)\.pdf$', pdf)
+    glyphs = total_x = None
+    if m:
+        try:
+            L = _ledger(int(m.group(1)), m.group(2))
+            g = getattr(L, 'GLYPHS', None)
+            glyphs = g.get('scheme', g) if isinstance(g, dict) and 'scheme' in g else g
+            total_x = getattr(L, 'TOTAL_COLUMN_X', None)
+        except ModuleNotFoundError:
+            pass
+    src = B.Src(pdf, 'scheme', total_x=total_x, glyphs=glyphs)
     return [line for p in sorted(src.lines) for line in src.lines[p]]
 
 

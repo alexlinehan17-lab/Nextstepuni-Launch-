@@ -75,36 +75,6 @@
     "evidence": "Paper text layer gives 'Draw a graph to show the relationship between l and ଵ ௙.' (Indic glyphs standing in for the typeset fraction 1/f, confirmed against paper page 4); the scheme's own reprint splits it the same way, as 'Draw a graph to show the relationship between l and 1' + '𝑓𝑓.'"
   },
   {
-    "ref": "2023 HL Q10(ii)",
-    "reason": "Describe-an-experiment part; the scheme names no apparatus, method or observation — only the 3 × 3 convention.",
-    "evidence": "Scheme p.16 prints exactly 'apparatus [3] method [3] observation [3]' for this part."
-  },
-  {
-    "ref": "2023 HL Q11(iv)",
-    "reason": "Describe-an-experiment part (demonstrate Faraday's or Lenz's law); scheme prints only the convention line.",
-    "evidence": "Scheme p.17 prints exactly 'apparatus [3] method [3] observation [3]' for this part."
-  },
-  {
-    "ref": "2023 HL Q12(b)(iii)",
-    "reason": "The scheme names no actual use of an LED — a card would have to invent the answer, which the lift-never-write rule forbids.",
-    "evidence": "Scheme (filed under its Q11(b)(iii)) prints exactly 'any valid use [3]' as the entire answer."
-  },
-  {
-    "ref": "2023 HL Q13(iii)",
-    "reason": "Describe-an-experiment part (force on a current-carrying conductor); scheme prints only the convention line.",
-    "evidence": "Scheme p.20 prints exactly 'apparatus [3] method [2] observation [2]' for this part."
-  },
-  {
-    "ref": "2023 HL Q14(d)(ii)",
-    "reason": "Describe-an-experiment part (demonstrate the photoelectric effect); scheme prints only the convention line.",
-    "evidence": "Scheme p.23 prints exactly 'apparatus [3] method [3] observation [3]' for this part."
-  },
-  {
-    "ref": "2023 HL Q8(ii)",
-    "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content — rule 2 forbids carding a bare apparatus/method/observation tariff.",
-    "evidence": "Scheme p.14 prints exactly 'apparatus [3] method [3] observation [3]' and nothing else for this part."
-  },
-  {
     "ref": "2023 OL Q10(iii)",
     "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content — nothing liftable to card.",
     "evidence": "Scheme p.15: \"apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case]\" is the entire answer block for the sound-interference experiment."
