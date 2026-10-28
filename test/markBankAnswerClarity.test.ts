@@ -509,13 +509,14 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       // The rows are the task: they add up to its total exactly.
       expect(rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows add up`).toBe(card.totalMarks);
     }
-    // 1,212 of 1,365 tasks (2026-10-27, residue wave): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
-    expect(structured).toHaveLength(1212);
+    // 1,267 of 1,365 tasks (2026-10-28, exclusions wave): the rest keep the crop and the half-mark stepper, each with its reason in the residue file.
+    // A floor, not an exact count, so a later lift never needs a re-pin; the residue is pinned by id against the file.
+    expect(structured.length).toBeGreaterThanOrEqual(1267);
     const residue = cards.filter(card => !card.rubric.rows?.length).map(card => card.id).sort();
     expect(residue).toEqual(accountingResidue.tasks.map(task => task.id).sort());
     for (const task of accountingResidue.tasks) expect(task.reason.length, task.id).toBeGreaterThan(0);
     // A part the scheme prices only through its section total is one flagged block row; pinned so it cannot grow unnoticed.
-    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2010-ol-q5(a)(iv)", "acc-2010-ol-q5(b)(iv)", "acc-2011-ol-q5(d)", "acc-2012-ol-q8(f)", "acc-2016-ol-q5(d)", "acc-2017-ol-q5(d)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-ol-q8(g)", "acc-2025-hl-q9(a)", "acc-2025-hl-q9(b)", "acc-2025-hl-q9(c)"]);
+    expect(structured.filter(card => card.rubric.rows!.some(row => row.inferred)).map(card => card.id).sort()).toEqual(["acc-2010-hl-q9(c)", "acc-2010-ol-q5(a)(i)", "acc-2010-ol-q5(b)(iv)", "acc-2011-hl-q2(c)", "acc-2011-hl-q4(b)", "acc-2011-hl-q5(c)", "acc-2011-ol-q4(c)", "acc-2011-ol-q5(d)", "acc-2011-ol-q8(a)(i)", "acc-2011-ol-q8(b)", "acc-2012-hl-q4(d)", "acc-2012-hl-q4(e)", "acc-2012-hl-q5(b)", "acc-2012-ol-q4(d)", "acc-2012-ol-q5(c)", "acc-2012-ol-q5(d)", "acc-2013-hl-q7(c)", "acc-2013-ol-q5(c)", "acc-2013-ol-q5(d)", "acc-2014-hl-q6(e)", "acc-2014-hl-q7(e)", "acc-2014-ol-q6(e)", "acc-2014-ol-q9(c)", "acc-2015-hl-q4(d)", "acc-2015-hl-q4(e)", "acc-2015-ol-q5(a)", "acc-2015-ol-q5(d)", "acc-2015-ol-q9(f)", "acc-2016-hl-q3(c)", "acc-2016-hl-q5(c)", "acc-2016-hl-q6(e)", "acc-2016-hl-q7(b)", "acc-2016-ol-q5(d)", "acc-2017-hl-q2(b)", "acc-2017-hl-q3(b)", "acc-2017-hl-q5(c)", "acc-2017-hl-q6(e)", "acc-2017-hl-q9(e)", "acc-2017-ol-q5(d)", "acc-2017-ol-q7(e)", "acc-2017-ol-q9(f)", "acc-2018-hl-q2(d)", "acc-2018-hl-q3(b)", "acc-2018-hl-q4(c)", "acc-2018-hl-q5(c)", "acc-2018-hl-q6(b)", "acc-2018-hl-q7(e)", "acc-2018-hl-q8(b)(iv)", "acc-2018-hl-q9(c)", "acc-2018-ol-q5(c)", "acc-2018-ol-q5(d)", "acc-2018-ol-q8(g)", "acc-2018-ol-q9(c)", "acc-2019-hl-q3(b)", "acc-2019-hl-q5(c)", "acc-2019-hl-q6(d)", "acc-2019-hl-q8(e)", "acc-2019-hl-q9(e)", "acc-2019-ol-q9(f)", "acc-2020-hl-q2(b)", "acc-2020-hl-q4(e)", "acc-2020-hl-q6(e)", "acc-2021-hl-q5(c)", "acc-2021-hl-q7(b)", "acc-2022-hl-q3(c)", "acc-2022-ol-q5(a)(ii)", "acc-2023-hl-q5(c)", "acc-2023-hl-q7(e)", "acc-2023-ol-q5(a)(ii)", "acc-2023-ol-q5(b)(iii)", "acc-2024-hl-q4(d)", "acc-2024-hl-q5(c)", "acc-2024-hl-q7(e)", "acc-2024-hl-q9(e)", "acc-2024-ol-q5(a)(i)", "acc-2024-ol-q5(a)(iv)", "acc-2024-ol-q5(c)", "acc-2024-ol-q6(b)", "acc-2024-ol-q8(g)", "acc-2026-hl-q4(c)", "acc-2026-hl-q8(b)(ii)"]);
   });
 
   it('Applied Maths: every published step shows the lines it prices as a crop of the scheme page, or the card is in the residue with its reason', () => {
@@ -604,9 +605,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // and Higher Level prices the same way under PERFORMANCE CRITERIA, the part's own tariff line heading its labels.
     // construction_choices.py reads each table's lines into the row's group: claim N at M each, the row's own marks,
     // the printed tariff kept as the row's note. A line the table prints twice is a detail drawn twice ("Stop valve 5"
-    // on two valves, "70 x 20 mm architrave 4" each side of a door) and stays twice. 53 tasks and their twins.
+    // on two valves, "70 x 20 mm architrave 4" each side of a door) and stays twice. 54 tasks and their twins
+    // (2026-10-28: a floor, not an exact count, so a later lift never needs a re-pin).
     const groups = rows.filter(({ row }) => row.kind === 'anyN' && row.group && tariff.test(row.contextNote ?? ''));
-    expect(groups).toHaveLength(105);
+    expect(groups.length).toBeGreaterThanOrEqual(107);
     for (const { card, row } of groups) {
       const n = Number(tariff.exec(row.contextNote!)![1]);
       expect(row.group!.claimMax, `${card.id}/${row.id}`).toBe(n);
@@ -615,13 +617,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       expect(row.group!.options.every(option => option.trim().length > 0), `${card.id}/${row.id}`).toBe(true);
       expect(/^(?:DETAILS|Details)(?:\s*[-–]\s*typical sizes)?$|^PERFORMANCE CRITERIA$/.test(row.verbatim), `${card.id}/${row.id}: ${row.verbatim}`).toBe(true);
     }
-    // 2019 HL Q1(a) prices "Any 12 × 4marks" over 25 bulleted details in three menus (scheme p. 32): one pool of
-    // twelve, past the 17 options a question may show, so the row keeps its strip and its note names the menus.
+    // Every such row is lifted: 2019 HL Q1(a) prices "Any 12 × 4marks" over 25 bulleted details in three menus
+    // (scheme p. 32) as one pool, and the menu ceiling (MAX_LONG_OPTION_ROWS, 25) follows that largest verified SEC menu.
     const unlifted = rows.filter(({ row }) => row.kind === 'criterion' && tariff.test(row.verbatim.trim()));
-    expect(unlifted.map(({ card, row }) => `${card.id}/${row.id}: ${row.verbatim}`)).toEqual([
-      'cons-2019-hl-q1-a/details: Any 12 × 4marks',
-      'cons-2019-hl-q1-complete/a-details: Any 12 × 4marks',
-    ]);
+    expect(unlifted.map(({ card, row }) => `${card.id}/${row.id}: ${row.verbatim}`)).toEqual([]);
     // Complete-question cards mirror their tasks' groups under their own row ids.
     for (const card of cards.filter(item => item.taskGroups?.length)) {
       for (const group of card.taskGroups!) {

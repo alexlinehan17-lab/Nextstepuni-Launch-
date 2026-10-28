@@ -14,16 +14,8 @@
    "reason": "marks 98 vs totals 100 over the question; resolved 4/5 scale 1"
   },
   {
-   "id": "acc-2010-ol-q5(a)(v)-and-5(c)",
-   "reason": "marks 50 vs totals 100 over the question; resolved 9/10 scale 1"
-  },
-  {
-   "id": "acc-2011-hl-q8(f)(i)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 6/8 scale 1"
-  },
-  {
    "id": "acc-2011-hl-q8(f)(ii)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 6/8 scale 1"
+   "reason": "marks 80 vs totals 80 over the question; resolved 7/8 scale 1"
   },
   {
    "id": "acc-2011-ol-q1(b)",
@@ -39,51 +31,27 @@
   },
   {
    "id": "acc-2011-ol-q3(c)",
-   "reason": "marks 61 vs totals 60 over the question; resolved 0/4 scale 1"
+   "reason": "marks 71 vs totals 60 over the question; resolved 0/4 scale 1"
   },
   {
    "id": "acc-2011-ol-q3(d)",
-   "reason": "marks 61 vs totals 60 over the question; resolved 0/4 scale 1"
-  },
-  {
-   "id": "acc-2011-ol-q4(c)",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
-   "id": "acc-2011-ol-q5(c)",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
-   "id": "acc-2011-ol-q6(e)",
-   "reason": "figures sit in a grid the geometry cannot label"
+   "reason": "marks 71 vs totals 60 over the question; resolved 0/4 scale 1"
   },
   {
    "id": "acc-2011-ol-q8(a)(ii)",
-   "reason": "marks 55 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2011-ol-q8(b)",
-   "reason": "marks 55 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2011-ol-q8(c)",
-   "reason": "marks 55 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2011-ol-q8(d)",
-   "reason": "marks 55 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2011-ol-q8(e)",
-   "reason": "marks 55 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2011-ol-q9(c)",
    "reason": "figures sit in a grid the geometry cannot label"
   },
   {
-   "id": "acc-2012-hl-q5(b)",
-   "reason": "marks 100 vs totals 100 over the question; resolved 7/8 scale 1"
+   "id": "acc-2011-ol-q8(c)",
+   "reason": "marks 80 vs totals 80 over the question; resolved 2/6 scale 1"
+  },
+  {
+   "id": "acc-2011-ol-q8(d)",
+   "reason": "marks 80 vs totals 80 over the question; resolved 2/6 scale 1"
+  },
+  {
+   "id": "acc-2011-ol-q8(e)",
+   "reason": "marks 80 vs totals 80 over the question; resolved 2/6 scale 1"
   },
   {
    "id": "acc-2012-hl-q9(a)",
@@ -130,44 +98,16 @@
    "reason": "figures sit in a grid the geometry cannot label"
   },
   {
-   "id": "acc-2014-ol-q3",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
-   "id": "acc-2014-ol-q5(c)",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
-   "id": "acc-2014-ol-q6(e)",
-   "reason": "marks 120 vs totals 100 over the question; resolved 4/5 scale 1"
-  },
-  {
-   "id": "acc-2014-ol-q9(c)",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
    "id": "acc-2015-hl-q2(b)",
    "reason": "figures sit in a grid the geometry cannot label"
   },
   {
    "id": "acc-2015-hl-q5(b)",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
-   "id": "acc-2015-hl-q6(b)(i)",
-   "reason": "marks 92 vs totals 100 over the question; resolved 5/6 scale 1"
-  },
-  {
-   "id": "acc-2015-hl-q9(c)(ii)",
-   "reason": "figures sit in a grid the geometry cannot label"
+   "reason": "marks 100 vs totals 100 over the question; resolved 6/7 scale 1"
   },
   {
    "id": "acc-2015-ol-q1(b)",
    "reason": "marks 160 vs totals 120 over the question; resolved 1/2 scale 1"
-  },
-  {
-   "id": "acc-2015-ol-q7(d)",
-   "reason": "marks 150 vs totals 100 over the question; resolved 4/5 scale 1"
   },
   {
    "id": "acc-2015-ol-q8(a)-packing-fixed",
@@ -182,52 +122,8 @@
    "reason": "marks 84 vs totals 80 over the question; resolved 4/7 scale 1"
   },
   {
-   "id": "acc-2015-ol-q9(b)",
-   "reason": "marks 156 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2015-ol-q9(c)",
-   "reason": "marks 156 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2015-ol-q9(d)",
-   "reason": "marks 156 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2015-ol-q9(e)",
-   "reason": "marks 156 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2015-ol-q9(f)",
-   "reason": "marks 156 vs totals 80 over the question; resolved 1/6 scale 1"
-  },
-  {
-   "id": "acc-2016-hl-q5(c)",
-   "reason": "marks 91 vs totals 100 over the question; resolved 6/7 scale 1"
-  },
-  {
-   "id": "acc-2016-ol-q5(c)",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
    "id": "acc-2016-ol-q6(b)",
    "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
-   "id": "acc-2017-ol-q7(b)",
-   "reason": "marks 128 vs totals 100 over the question; resolved 1/5 scale 1"
-  },
-  {
-   "id": "acc-2017-ol-q7(c)",
-   "reason": "marks 128 vs totals 100 over the question; resolved 1/5 scale 1"
-  },
-  {
-   "id": "acc-2017-ol-q7(d)",
-   "reason": "marks 128 vs totals 100 over the question; resolved 1/5 scale 1"
-  },
-  {
-   "id": "acc-2017-ol-q7(e)",
-   "reason": "marks 128 vs totals 100 over the question; resolved 1/5 scale 1"
   },
   {
    "id": "acc-2017-ol-q8(d)",
@@ -238,56 +134,8 @@
    "reason": "marks 122 vs totals 80 over the question; resolved 4/6 scale 1"
   },
   {
-   "id": "acc-2018-hl-q5(c)",
-   "reason": "marks 100 vs totals 100 over the question; resolved 6/7 scale 1"
-  },
-  {
-   "id": "acc-2018-ol-q8(g)",
-   "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
    "id": "acc-2019-hl-q7(b)",
    "reason": "marks 88 vs totals 100 over the question; resolved 4/5 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q8(a)",
-   "reason": "marks 147 vs totals 80 over the question; resolved 0/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q8(b)",
-   "reason": "marks 147 vs totals 80 over the question; resolved 0/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q8(c)-x",
-   "reason": "marks 147 vs totals 80 over the question; resolved 0/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q8(c)-y",
-   "reason": "marks 147 vs totals 80 over the question; resolved 0/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q8(d)",
-   "reason": "marks 147 vs totals 80 over the question; resolved 0/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q8(e)",
-   "reason": "marks 147 vs totals 80 over the question; resolved 0/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q9(a)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 3/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q9(b)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 3/6 scale 1"
-  },
-  {
-   "id": "acc-2019-hl-q9(e)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 3/6 scale 1"
-  },
-  {
-   "id": "acc-2019-ol-q5(b)(i)",
-   "reason": "marks 50 vs totals 100 over the question; resolved 9/10 scale 1"
   },
   {
    "id": "acc-2019-ol-q8(a)-production-fixed",
@@ -306,16 +154,12 @@
    "reason": "marks 120 vs totals 80 over the question; resolved 3/7 scale 1"
   },
   {
-   "id": "acc-2019-ol-q9(f)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 5/6 scale 1"
-  },
-  {
    "id": "acc-2020-hl-q2(a)-profit-loss",
    "reason": "figures sit in a grid the geometry cannot label"
   },
   {
    "id": "acc-2020-hl-q5(a)(i)",
-   "reason": "figures sit in a grid the geometry cannot label"
+   "reason": "marks 70 vs totals 100 over the question; resolved 6/7 scale 1"
   },
   {
    "id": "acc-2020-hl-q7(b)",
@@ -326,6 +170,10 @@
    "reason": "figures sit in a grid the geometry cannot label"
   },
   {
+   "id": "acc-2020-hl-q8(a)(iv)",
+   "reason": "marks 62 vs totals 80 over the question; resolved 6/8 scale 1"
+  },
+  {
    "id": "acc-2020-hl-q9(b)",
    "reason": "marks 68 vs totals 80 over the question; resolved 4/5 scale 1"
   },
@@ -334,12 +182,8 @@
    "reason": "marks 140 vs totals 100 over the question; resolved 9/10 scale 1"
   },
   {
-   "id": "acc-2020-ol-q7(b)",
-   "reason": "marks 170 vs totals 100 over the question; resolved 2/4 scale 1"
-  },
-  {
    "id": "acc-2020-ol-q7(d)",
-   "reason": "marks 170 vs totals 100 over the question; resolved 2/4 scale 1"
+   "reason": "figures sit in a grid the geometry cannot label"
   },
   {
    "id": "acc-2021-hl-q4(b)",
@@ -370,10 +214,6 @@
    "reason": "marks 70 vs totals 80 over the question; resolved 8/10 scale 1"
   },
   {
-   "id": "acc-2021-ol-q3(b)",
-   "reason": "marks 120 vs totals 60 over the question; resolved 1/2 scale 1"
-  },
-  {
    "id": "acc-2021-ol-q8(d)",
    "reason": "marks 122 vs totals 80 over the question; resolved 5/6 scale 1"
   },
@@ -394,52 +234,28 @@
    "reason": "marks 143 vs totals 120 over the question; resolved 0/2 scale 1"
   },
   {
-   "id": "acc-2022-ol-q2(a)",
-   "reason": "marks 0 vs totals 60 over the question; resolved 0/2 scale 1"
-  },
-  {
-   "id": "acc-2022-ol-q2(b)",
-   "reason": "marks 0 vs totals 60 over the question; resolved 0/2 scale 1"
+   "id": "acc-2022-ol-q3(a)",
+   "reason": "marks 56 vs totals 60 over the question; resolved 0/2 scale 1"
   },
   {
    "id": "acc-2022-ol-q3(b)",
-   "reason": "marks 116 vs totals 60 over the question; resolved 1/2 scale 1"
-  },
-  {
-   "id": "acc-2022-ol-q5(a)(ii)",
-   "reason": "marks 70 vs totals 100 over the question; resolved 6/10 scale 1"
+   "reason": "marks 56 vs totals 60 over the question; resolved 0/2 scale 1"
   },
   {
    "id": "acc-2022-ol-q5(a)(iii)",
-   "reason": "marks 70 vs totals 100 over the question; resolved 6/10 scale 1"
-  },
-  {
-   "id": "acc-2022-ol-q5(a)(iv)",
-   "reason": "marks 70 vs totals 100 over the question; resolved 6/10 scale 1"
+   "reason": "marks 70 vs totals 100 over the question; resolved 8/10 scale 1"
   },
   {
    "id": "acc-2022-ol-q5(b)(iv)",
-   "reason": "marks 70 vs totals 100 over the question; resolved 6/10 scale 1"
+   "reason": "marks 70 vs totals 100 over the question; resolved 8/10 scale 1"
   },
   {
    "id": "acc-2022-ol-q7(d)",
-   "reason": "marks 82 vs totals 100 over the question; resolved 3/5 scale 1"
-  },
-  {
-   "id": "acc-2022-ol-q7(e)",
-   "reason": "marks 82 vs totals 100 over the question; resolved 3/5 scale 1"
+   "reason": "marks 95 vs totals 100 over the question; resolved 4/5 scale 1"
   },
   {
    "id": "acc-2022-ol-q9(a)",
-   "reason": "marks 34 vs totals 80 over the question; resolved 0/3 scale 1"
-  },
-  {
-   "id": "acc-2022-ol-q9(b)",
-   "reason": "marks 34 vs totals 80 over the question; resolved 0/3 scale 1"
-  },
-  {
-   "id": "acc-2022-ol-q9(c)",
-   "reason": "marks 34 vs totals 80 over the question; resolved 0/3 scale 1"
+   "reason": "marks 71 vs totals 80 over the question; resolved 2/3 scale 1"
   },
   {
    "id": "acc-2023-hl-q5(a)(ii)",
@@ -494,12 +310,8 @@
    "reason": "marks 134 vs totals 80 over the question; resolved 3/6 scale 1"
   },
   {
-   "id": "acc-2024-hl-q8(b)(ii)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 7/9 scale 1"
-  },
-  {
    "id": "acc-2024-hl-q8(b)(iii)",
-   "reason": "marks 80 vs totals 80 over the question; resolved 7/9 scale 1"
+   "reason": "marks 80 vs totals 80 over the question; resolved 8/9 scale 1"
   },
   {
    "id": "acc-2024-ol-q1A(b)",
@@ -507,39 +319,19 @@
   },
   {
    "id": "acc-2024-ol-q1B(a)",
-   "reason": "marks 149 vs totals 120 over the question; resolved 0/3 scale 1"
+   "reason": "marks 109 vs totals 120 over the question; resolved 0/3 scale 1"
   },
   {
    "id": "acc-2024-ol-q1B(b)",
-   "reason": "marks 149 vs totals 120 over the question; resolved 0/3 scale 1"
+   "reason": "marks 109 vs totals 120 over the question; resolved 0/3 scale 1"
   },
   {
    "id": "acc-2024-ol-q1B(c)",
-   "reason": "marks 149 vs totals 120 over the question; resolved 0/3 scale 1"
-  },
-  {
-   "id": "acc-2024-ol-q5(a)(i)",
-   "reason": "marks 70 vs totals 100 over the question; resolved 6/10 scale 1"
+   "reason": "marks 109 vs totals 120 over the question; resolved 0/3 scale 1"
   },
   {
    "id": "acc-2024-ol-q5(a)(iii)",
    "reason": "figures sit in a grid the geometry cannot label"
-  },
-  {
-   "id": "acc-2024-ol-q5(a)(iv)",
-   "reason": "marks 70 vs totals 100 over the question; resolved 6/10 scale 1"
-  },
-  {
-   "id": "acc-2024-ol-q5(c)",
-   "reason": "marks 70 vs totals 100 over the question; resolved 6/10 scale 1"
-  },
-  {
-   "id": "acc-2024-ol-q6(b)",
-   "reason": "marks 60 vs totals 100 over the question; resolved 1/3 scale 1"
-  },
-  {
-   "id": "acc-2024-ol-q6(c)",
-   "reason": "marks 60 vs totals 100 over the question; resolved 1/3 scale 1"
   },
   {
    "id": "acc-2025-hl-q5(b)",
@@ -558,16 +350,8 @@
    "reason": "marks 82 vs totals 100 over the question; resolved 0/1 scale 1"
   },
   {
-   "id": "acc-2025-ol-q1B(b)",
-   "reason": "marks 159 vs totals 120 over the question; resolved 1/3 scale 1"
-  },
-  {
-   "id": "acc-2025-ol-q1B(c)",
-   "reason": "marks 159 vs totals 120 over the question; resolved 1/3 scale 1"
-  },
-  {
-   "id": "acc-2025-ol-q4(c)",
-   "reason": "marks 105 vs totals 60 over the question; resolved 3/4 scale 1"
+   "id": "acc-2025-ol-q1B(a)",
+   "reason": "marks 119 vs totals 120 over the question; resolved 2/3 scale 1"
   },
   {
    "id": "acc-2025-ol-q8(d)",
@@ -598,20 +382,16 @@
    "reason": "marks 90 vs totals 100 over the question; resolved 6/7 scale 1"
   },
   {
-   "id": "acc-2026-hl-q8(d)",
-   "reason": "marks 76 vs totals 80 over the question; resolved 4/8 scale 1"
-  },
-  {
    "id": "acc-2026-hl-q8(e)(i)-calculation",
-   "reason": "marks 76 vs totals 80 over the question; resolved 4/8 scale 1"
+   "reason": "marks 76 vs totals 80 over the question; resolved 5/8 scale 1"
   },
   {
    "id": "acc-2026-hl-q8(e)(i)-meaning",
-   "reason": "marks 76 vs totals 80 over the question; resolved 4/8 scale 1"
+   "reason": "marks 76 vs totals 80 over the question; resolved 5/8 scale 1"
   },
   {
    "id": "acc-2026-hl-q8(e)(ii)",
-   "reason": "marks 76 vs totals 80 over the question; resolved 4/8 scale 1"
+   "reason": "marks 76 vs totals 80 over the question; resolved 5/8 scale 1"
   }
  ]
 }

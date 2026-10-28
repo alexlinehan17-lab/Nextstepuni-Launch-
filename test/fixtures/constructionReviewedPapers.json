@@ -443,7 +443,7 @@
       "consolidatedLegacy": 0,
       "leafTasks": 28,
       "wholeQuestions": 11,
-      "anyNChoiceCards": 1,
+      "anyNChoiceCards": 2,
       "sourceFigures": 26,
       "paperComplete": true
     },
@@ -494,6 +494,7 @@
     "withdrawnIds": [],
     "keptChoiceIds": [],
     "choiceCardIds": [
+      "cons-2019-hl-q1-a",
       "cons-2019-hl-q4-b"
     ]
   },

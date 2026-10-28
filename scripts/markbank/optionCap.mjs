@@ -7,10 +7,12 @@
  * test/markBankDeck.test.ts asserts the two agree.
  */
 export const MAX_OPTION_ROWS = 8;
-// 2010 Agricultural Science HL Q5(a)(ii) prints seventeen accepted footrot
-// points. The ceiling must cover the largest verified SEC
-// menu; trimming it would make a correct answer impossible to self-mark.
-export const MAX_LONG_OPTION_ROWS = 17;
+// 2019 Construction Studies HL Q1(a) prices "Any 12 × 4 marks" from
+// twenty-five bulleted details in one pool (2010 Agricultural Science HL
+// Q5(a)(ii) prints seventeen footrot points). The ceiling must cover the
+// largest verified SEC menu; trimming it would make a correct answer
+// impossible to self-mark.
+export const MAX_LONG_OPTION_ROWS = 25;
 
 /** Business Section 3 (Higher) and Section 2 (Ordinary); Sections B and C in
  *  the sciences. Keyed on the section, because a long question's individual
