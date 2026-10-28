@@ -1137,7 +1137,7 @@ export interface BusinessExpected {
    * tick under a column header, "True"/"False" beside a statement. Every word is one the page prints; an item
    * may join words from one line in the page's own order with " — ".
    */
-  lifted?: 'geometry';
+  lifted?: 'geometry' | 'slice';
 }
 
 export interface BusinessRubric {
