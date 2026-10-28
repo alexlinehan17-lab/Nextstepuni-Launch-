@@ -43,6 +43,13 @@ try {
       try {
         await page.goto(`http://127.0.0.1:5707/scripts/markbank/authoring/physics/browser/review.html?card=${c.id}&theme=${theme}`,
           { timeout: wait });
+        if (c.variant) {
+          // A card with answer variants asks for the route first; its labels
+          // name a method, never the answer (checked by the ledger rules).
+          const route = page.getByRole('button', { name: c.variant, exact: false }).first();
+          await route.waitFor({ timeout: wait });
+          await route.click();
+        }
         const reveal = page.getByRole('button', { name: /Reveal the marking scheme/ });
         await reveal.waitFor({ timeout: wait });
         if (c.ask && !(await page.getByText(c.ask, { exact: false }).count())) throw new Error('ask not shown');

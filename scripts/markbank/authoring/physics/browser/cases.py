@@ -42,6 +42,11 @@ for y, l in sits:
         if c.get('figureKey'):
             src = os.path.basename(man[c['figureKey']]['src'])
             case['solution' if man[c['figureKey']].get('solution') else 'figure'] = src
+        if c.get('answerVariants'):
+            # The session asks which route the student answered before the
+            # reveal; the case picks the first, whose rows it then checks.
+            case['variant'] = c['answerVariants'][0]['label']
+            case['answer'] = snippet(c['answerVariants'][0]['rows'][0]['verbatim'], 30)
         if c.get('questionFigureKey'):
             case['questionFigure'] = os.path.basename(man[c['questionFigureKey']]['src'])
         cases.append(case)
