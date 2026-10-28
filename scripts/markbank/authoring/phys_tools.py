@@ -469,11 +469,13 @@ def cmd_fold_ledger(year, level):
     s = open(p, encoding='utf-8').read()
     out = ''.join(unicodedata.normalize('NFKD', c) if 0x1D400 <= ord(c) <= 0x1D7FF else B._GLYPHMAP.get(c, c)
                   for c in s)
+    # A decimal the text layer split ("2. 5"), as the reader now joins it.
+    out = re.sub(r'(?<![\d.])(\d{1,3})\. (?=\d)', r'\1.', out)
     # Escaped broken glyphs written into the source as \uXXXX.
     out = re.sub(r'\\u([0-9a-fA-F]{4})', lambda m: B._GLYPHMAP.get(chr(int(m.group(1), 16)), m.group(0)), out)
-    n = sum(1 for a, b in zip(s, out) if a != b)
+    n = sum(1 for a, b in zip(s.split('\n'), out.split('\n')) if a != b)
     open(p, 'w', encoding='utf-8').write(out)
-    print(f'{p}: {n} characters folded')
+    print(f'{p}: {n} lines folded')
 
 
 COMMANDS = {k[4:].replace('_', '-'): v for k, v in globals().items() if k.startswith('cmd_')}

@@ -419,6 +419,10 @@ def _norm(line):
     # "𝟎𝟎" is otherwise indistinguishable from the doubled-glyph font defect
     # the deck build refuses, and the provenance gate folds them the same way.
     line = ''.join(unicodedata.normalize('NFKD', c) if 0x1D400 <= ord(c) <= 0x1D7FF else c for c in line)
+    # The maths font's text layer sets a gap after a decimal point ("2. 5 × 10⁻⁶",
+    # "4. 095 × 10⁻¹⁸ J"; 36 lines across the Physics schemes, every one a
+    # decimal number, measured 2026-10-28): the number is printed whole.
+    line = re.sub(r'(?<![\d.])(\d{1,3})\. (?=\d)', r'\1.', line)
     line = unligature(line.replace(' ', ' ').replace(' ', ' '))
     return re.sub(r'\s+', ' ', line).strip()
 

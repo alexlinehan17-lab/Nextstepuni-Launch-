@@ -10801,7 +10801,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r1", kind: "point", verbatim: "Eₖ= 1/2 mv²", marks: 3 },
-    { id: "r2", kind: "point", verbatim: "4. 095×10⁻¹⁸ J", marks: 3, contextNote: "[accept partial answer for 3]" },
+    { id: "r2", kind: "point", verbatim: "4.095×10⁻¹⁸ J", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
     figure: {
           "candId": "physics-2026-ol-q12viii-scheme-formula",

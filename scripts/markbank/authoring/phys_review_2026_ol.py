@@ -655,7 +655,7 @@ TASKS = [
     T('12viii', 'Q12(viii)', 'B', Q(12, 'Given that an electron in a cathode ray tube has a mass m of 9.1 × 10⁻³¹ kg and moves with a',
                                     'cathode ray tube.'),
       [G('fraction', page=18, clip=(95, 650, 170, 678), expect='Eₖ= 1/2 mv²', marks=3),
-       pt(S('4. 095×10⁻¹⁸ J'), 3, note_sel=part(3))],
+       pt(S('4.095×10⁻¹⁸ J'), 3, note_sel=part(3))],
       'phys-4-1', 'kinetic-energy-of-electron',
       SQ(18, 'Given that an electron in a cathode ray tube has a mass m of 9.1 × 10⁻³¹ kg and moves',
          'in the cathode ray tube.'), 6,
