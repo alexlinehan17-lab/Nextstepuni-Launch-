@@ -107,7 +107,9 @@ class Lifter:
             if not os.path.exists(path):
                 problems.append(f'{key}: {pin["path"]} is missing')
                 continue
-            src = B.Src(path, key, total_x=getattr(ledger, 'TOTAL_COLUMN_X', None) if key == 'scheme' else None)
+            src = B.Src(path, key, total_x=getattr(ledger, 'TOTAL_COLUMN_X', None) if key == 'scheme' else None,
+                        glyphs=getattr(ledger, 'GLYPHS', {}).get(key) if isinstance(getattr(ledger, 'GLYPHS', None), dict)
+                        and key in getattr(ledger, 'GLYPHS', {}) else getattr(ledger, 'GLYPHS', None))
             if src.sha != pin['sha256']:
                 problems.append(f'{key}: sha256 {src.sha} != pinned {pin["sha256"]}')
             if src.pages != pin['pages']:
@@ -142,6 +144,18 @@ class Lifter:
                 if not 1 <= index <= len(cut):
                     raise LookupError(f'{doc} p{page}: no piece {index} in {text!r}')
                 text = cut[index - 1]
+        # A line set in a doubled maths font may carry a mis-mapped digit
+        # (phys_review_lib: Src.doubled): it is lifted only once the ledger
+        # lists it in VERIFIED_LINES as (doc, page, line text), read against
+        # the rendered page.
+        dbl = src.doubled.get(page, set()) if hasattr(src, 'doubled') else set()
+        if meta.get('lines') and dbl:
+            ok = {(d, p, t) for d, p, t in getattr(self.ledger, 'VERIFIED_LINES', [])}
+            for k in range(meta['lines'][0], meta['lines'][1] + 1):
+                if k in dbl and (doc, page, src.lines[page][k]) not in ok:
+                    raise LookupError(f'{doc} p{page} line {k} {src.lines[page][k]!r} is set in a maths font that '
+                                      'draws each glyph twice and can mis-map digits: check it against the rendered '
+                                      'page and list it in VERIFIED_LINES (or read it with G() and an expect)')
         return text, {**meta, 'doc': doc}
 
 
@@ -222,14 +236,14 @@ def read_geo(lifter, spec, sp):
         # A formula the scheme sets as a stacked fraction, read from where its
         # numerator and denominator are printed (phys_review_lib.fraction_text).
         try:
-            value = B.fraction_text(src.doc[page - 1], clip)
+            value = B.fraction_text(src.doc[page - 1], clip, src.glyphs)
         except LookupError as e:
             raise Refusal(f'fraction p{page}: {e}')
     elif kind == 'equation':
         # A nuclear equation (or one nuclide of it), each nuclide's mass and
         # atomic numbers put back where they are printed (equation_text).
         try:
-            value = B.equation_text(src.doc[page - 1], clip)
+            value = B.equation_text(src.doc[page - 1], clip, src.glyphs)
         except LookupError as e:
             raise Refusal(f'equation p{page}: {e}')
     elif kind == 'tokens':

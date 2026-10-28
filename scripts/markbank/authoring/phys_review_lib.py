@@ -229,14 +229,62 @@ def _line_text(ln):
 
 
 
-def _page_rows(page, paper=False, total_x=None):
+# Glyphs a subset font's ToUnicode map gets WRONG, set right by glyph id. The
+# 2023 Higher scheme's CambriaMath maps glyph 2195 (m), 2203 (u) and 2204 (v)
+# all to "m", and 2183 (a) to "k", so "F ∝ (mv − mu)/t" reads "F ∝ (mm − mm)/t".
+# A ledger names each such glyph it has looked at on the rendered page:
+# GLYPHS = {'CambriaMath': {2204: 'v', 2203: 'u', 2183: 'a'}}. The glyph's id is
+# taken from the page's text trace at the glyph's own origin (the duplicate a
+# maths font draws at the same origin with id -1 never overrides a real id).
+def _page_dict(page, glyphs=None, clip=None):
+    """page.get_text('dict') (optionally clipped), every span's text rebuilt from
+    its characters: a maths font draws each glyph TWICE, the copy a zero-width
+    character at the real one's advance or gathered at the line's end (2023
+    Higher p13 "F ∝ (mv − mu)/t" reads "FF∝ (mmvm − mmum)/tt" otherwise), so a
+    zero-width base character is dropped; and the ledger's glyph-id
+    corrections apply."""
+    gid_at = {}
+    if glyphs:
+        for sp in page.get_texttrace():
+            for ch in sp['chars']:
+                key = (sp['font'], round(ch[2][0], 1), round(ch[2][1], 1))
+                if ch[1] >= 0 or key not in gid_at:
+                    gid_at[key] = ch[1]
+    raw = page.get_text('rawdict', clip=clip) if clip is not None else page.get_text('rawdict')
+    for b in raw['blocks']:
+        for ln in b.get('lines', []):
+            for sp in ln['spans']:
+                fix = next((m for f, m in (glyphs or {}).items() if f in sp['font']), None)
+                out, prev = [], None
+                for ch in sp['chars']:
+                    c = ch['c']
+                    if (c.strip() and ch['bbox'][2] - ch['bbox'][0] < 0.05
+                            and not unicodedata.combining(c) and 'Cambria' in sp['font']):
+                        # A base glyph of no width prints nothing: the maths
+                        # font's duplicate, set beside its glyph or gathered
+                        # at the end of the line. Only the maths font does this:
+                        # a text font's ligature hands back its second letter
+                        # at zero width ("Certiﬁcate"), and combining marks (a
+                        # recurring decimal's dot) are zero-width by nature.
+                        sp['doubled'] = True
+                        continue
+                    prev = c
+                    if fix:
+                        gid = gid_at.get((sp['font'], round(ch['origin'][0], 1), round(ch['origin'][1], 1)))
+                        c = fix.get(gid, c)
+                    out.append(c)
+                sp['text'] = ''.join(out)
+    return raw
+
+
+def _page_rows(page, paper=False, total_x=None, glyphs=None):
     """The page's printed lines in the PDF's reading order, each as
     (text, cell): a mark cell printed on the same baseline as a line of text to
     its left is taken off as that line's cell; a cell with no text beside it
     stays a line of its own and is its own cell. A cell set inside the same
     text object as its line, after a wide gap, is taken off the same way."""
     raw = []
-    for b in page.get_text('dict')['blocks']:
+    for b in _page_dict(page, glyphs)['blocks']:
         for ln in b.get('lines', []):
             if not ln['spans']:
                 continue
@@ -251,14 +299,16 @@ def _page_rows(page, paper=False, total_x=None):
                     break
             if cut:
                 head = dict(ln, spans=spans[:cut])
+                dbl = any(sp.get('doubled') for sp in spans)
                 headbox = [min(s['bbox'][0] for s in spans[:cut]), ln['bbox'][1],
                            max(s['bbox'][2] for s in spans[:cut]), ln['bbox'][3]]
                 tailbox = [spans[cut]['bbox'][0], ln['bbox'][1], ln['bbox'][2], ln['bbox'][3]]
-                raw.append([_line_text(head), headbox, spans[0]['origin'][1]])
-                raw.append([''.join(s['text'] for s in spans[cut:]), tailbox, spans[cut]['origin'][1]])
+                raw.append([_line_text(head), headbox, spans[0]['origin'][1], dbl])
+                raw.append([''.join(s['text'] for s in spans[cut:]), tailbox, spans[cut]['origin'][1], False])
             else:
                 main = max(spans, key=lambda s: (s['size'], len(s['text'].strip())))
-                raw.append([_line_text(ln), list(ln['bbox']), main['origin'][1]])
+                raw.append([_line_text(ln), list(ln['bbox']), main['origin'][1],
+                            any(sp.get('doubled') for sp in spans)])
     for r in raw:
         r[0] = _norm(r[0])
     raw = [r for r in raw if r[0]]
@@ -329,15 +379,15 @@ def _page_rows(page, paper=False, total_x=None):
         if k in owner:
             continue
         if k in cells:
-            out.append((r[0], r[0], r[1], None))
+            out.append((r[0], r[0], r[1], None, False))
         else:
-            out.append((r[0], ' '.join(attached[k]) if attached.get(k) else None, r[1], totals.get(id(r))))
+            out.append((r[0], ' '.join(attached[k]) if attached.get(k) else None, r[1], totals.get(id(r)), r[3]))
     return out
 
 
 def _page_lines(page, paper=False):
     """The page's printed lines with their cells taken off (see _page_rows)."""
-    return [t for t, _, _, _ in _page_rows(page, paper)]
+    return [t for t, _, _, _, _ in _page_rows(page, paper)]
 
 
 def _norm(line):
@@ -364,8 +414,9 @@ _STRIP_SET = {name: pages for (subject, _y, _l), files in STRIP_SET_PAGES.items(
 class Src:
     """One SEC PDF read as printed lines, page by page (1-based pages)."""
 
-    def __init__(self, path, label, total_x=None):
+    def __init__(self, path, label, total_x=None, glyphs=None):
         self.path, self.label = path, label
+        self.glyphs = glyphs
         self.doc = fitz.open(path)
         self.sha = sha256(path)
         self.bytes = os.path.getsize(path)
@@ -375,6 +426,7 @@ class Src:
         self.cells = {}
         self.boxes = {}
         self.totals = {}
+        self.doubled = {}
         strips = _STRIP_SET.get(os.path.basename(path), ())
         for i, page in enumerate(self.doc):
             if i + 1 in strips:
@@ -384,12 +436,17 @@ class Src:
                 self.cells[i + 1] = {}
                 self.boxes[i + 1] = []
                 self.totals[i + 1] = {}
+                self.doubled[i + 1] = set()
                 continue
-            rows = _page_rows(page, paper=label != 'scheme', total_x=total_x)
-            self.lines[i + 1] = [t for t, _, _, _ in rows]
-            self.cells[i + 1] = {k: c for k, (_, c, _, _) in enumerate(rows) if c}
-            self.boxes[i + 1] = [b for _, _, b, _ in rows]
-            self.totals[i + 1] = {k: t for k, (_, _, _, t) in enumerate(rows) if t}
+            rows = _page_rows(page, paper=label != 'scheme', total_x=total_x, glyphs=glyphs)
+            self.lines[i + 1] = [t for t, _, _, _, _ in rows]
+            self.cells[i + 1] = {k: c for k, (_, c, _, _, _) in enumerate(rows) if c}
+            self.boxes[i + 1] = [b for _, _, b, _, _ in rows]
+            self.totals[i + 1] = {k: t for k, (_, _, _, t, _) in enumerate(rows) if t}
+            # Lines set in a maths font that draws each glyph twice: the copy is
+            # dropped, but the same fonts mis-map digits ("94" can read "99"),
+            # so the runner lifts such a line only once the ledger has checked it.
+            self.doubled[i + 1] = {k for k, (_, _, _, _, d) in enumerate(rows) if d}
 
     def page_text(self, page):
         return ' '.join(self.lines[page])
@@ -819,14 +876,14 @@ def _wrap(text, den=False):
     return f'({t})'
 
 
-def fraction_text(page, clip):
+def fraction_text(page, clip, glyphs=None):
     """The text inside `clip` with every stacked fraction written on one line."""
     clip = fitz.Rect(*clip)
     bars = [fitz.Rect(d['rect']) for d in page.get_drawings()
             if d['rect'].height < 1.6 and d['rect'].width > 3 and clip.contains(fitz.Rect(d['rect']))]
     bars.sort(key=lambda r: r.x0)
     spans = []
-    for b in page.get_text('dict', clip=clip)['blocks']:
+    for b in _page_dict(page, glyphs, clip)['blocks']:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 r = fitz.Rect(sp['bbox'])
@@ -885,10 +942,10 @@ def fraction_text(page, clip):
 # a postscript of the symbol before it (a charge, "β⁻"). Every glyph is the
 # SEC's; the Unicode super/subscripts only say where it was printed.
 
-def equation_text(page, clip):
+def equation_text(page, clip, glyphs=None):
     clip = fitz.Rect(*clip)
     spans = []
-    for b in page.get_text('dict', clip=clip)['blocks']:
+    for b in _page_dict(page, glyphs, clip)['blocks']:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 r = fitz.Rect(sp['bbox'])
