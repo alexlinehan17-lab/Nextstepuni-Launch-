@@ -23,6 +23,13 @@ const CURRICULUM_CROSSWALK_PATH = path.join(
 const REVIEWED_2026_PATH = path.join(
   ROOT, 'data/examTopics/physics-2026-exam-topic-map.json',
 );
+// Sittings reviewed paper by paper (scripts/markbank/authoring/phys_review_<year>_<level>.py):
+// each question's topics are the reference snapshot's PLUS the reviewed map's
+// (a union, so nothing the snapshot linked is lost), as Biology's builder does.
+const REVIEWED_EARLIER_YEARS = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010];
+const reviewedMapPath = year => path.join(
+  ROOT, `data/examTopics/physics-${year}-exam-topic-map.json`,
+);
 const REVIEWED_OMISSIONS_PATH = path.join(
   ROOT, 'data/examTopics/physics-reference-omissions-topic-map.json',
 );
@@ -40,6 +47,9 @@ const reference = readJson(REFERENCE_PATH);
 const curriculumCrosswalk = readJson(CURRICULUM_CROSSWALK_PATH);
 const reviewed2026 = readJson(REVIEWED_2026_PATH);
 const reviewedOmissions = readJson(REVIEWED_OMISSIONS_PATH);
+const reviewedEarlier = new Map(REVIEWED_EARLIER_YEARS
+  .filter(year => fs.existsSync(reviewedMapPath(year)))
+  .map(year => [year, readJson(reviewedMapPath(year))]));
 const localPapers = readJson(TAGS_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
 
@@ -107,6 +117,15 @@ validateReviewedMap(
   28,
   'reviewed 2026 Physics map',
 );
+for (const [year, map] of reviewedEarlier) {
+  if (map.year !== year) throw new Error(`Reviewed ${year} Physics map names year ${map.year}`);
+  validateReviewedMap(
+    map.questions,
+    /^(higher|ordinary)\|(?:[1-9]|1[0-4])$/,
+    Object.keys(map.questions).length,
+    `reviewed ${year} Physics map`,
+  );
+}
 validateReviewedMap(
   reviewedOmissions.questions,
   /^(higher|ordinary)\|\d{4}\|(?:[1-9]|1[0-4])$/,
@@ -290,6 +309,13 @@ for (const paper of logicalEnglishPapers) {
       indexes = ids.map(id => topicIndex.get(id));
       resolution = 'retained-local-reviewed';
     }
+    const reviewedIds = reviewedEarlier.get(paper.year)
+      ?.questions[`${paper.level}|${question.n}`];
+    if (reviewedIds) {
+      // Union: nothing the reference snapshot linked is lost.
+      if (!indexes) resolution = 'retained-local-reviewed';
+      indexes = [...new Set([...(indexes ?? []), ...reviewedIds.map(id => topicIndex.get(id))])];
+    }
     if (!indexes) {
       const ids = reviewedOmissions.questions[logicalKey];
       if (!ids) {
@@ -321,7 +347,9 @@ for (const paper of logicalEnglishPapers) {
         resolution,
         reason: paper.year === 2026
           ? 'Official SEC 2026 task retained from direct paper review; it post-dates the factual reference snapshot.'
-          : 'Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper.',
+          : reviewedIds
+            ? `Official SEC ${paper.year} task retained from direct paper review (phys_review_${paper.year}); the factual reference snapshot has no association for this independently selectable question.`
+            : 'Entitled SEC task omitted from the factual reference snapshot and retained from direct review of the official paper.',
       });
     }
   }

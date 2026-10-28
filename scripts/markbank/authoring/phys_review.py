@@ -60,6 +60,18 @@ FIG_MANIFEST = os.path.join(ROOT, 'components', 'MarkBank', 'figures-physics.jso
 ATLAS_MAP = os.path.join(ROOT, 'data', 'examTopics', 'physics-{year}-exam-topic-map.json')
 CROSSWALK = os.path.join(ROOT, 'data', 'examTopics', 'physics-curriculum-crosswalk.json')
 
+# A printed ASK on a question page: a line holding a question mark, or a
+# sentence opening on a command word. The 2010-2019 Higher papers print most of
+# their asks as unnumbered sentences under the question number ("Draw a
+# labelled diagram of the apparatus used in the experiment."), so the census
+# (which counts what the paper numbers) holds such a question as one leaf; the
+# ask scan is what proves every one of those sentences is carded.
+ASK_VERBS = ('Draw|Describe|Calculate|Explain|State|Name|Give|List|Sketch|Derive|Define|Estimate|Show|'
+             'Compare|Distinguish|Suggest|Use|Write|Find|Determine|Hence|What|How|Why|Which|Where|When|'
+             'Outline|Discuss|Identify|Label|Mark|Complete|Plot|Indicate|Justify|Verify|Predict|Convert|'
+             'Express|Account|Comment|Deduce|Prove|Construct|Measure|Copy|Classify|Arrange|Insert|Is|Are|'
+             'Does|Do|Can|Would|Will|Could|Should|Was|Were|Has|Have')
+ASK_LINE = re.compile(rf'\?|(?:^|[.?!:]\s+|^\((?:[a-l]|[ivx]{{1,4}})\)\s*)(?:{ASK_VERBS})\b')
 SCAN = re.compile(r'\b(any\s+(?:one|two|three|four|five|six)|either|choose|one of the following'
                   r'|the following|or|both)\b', re.I)
 LABEL_SPLIT = re.compile(r'^([A-Z][A-Za-z ()-]{0,30}):\s+(\S.*)$')
@@ -809,6 +821,44 @@ def build(ledger, year, level):
         if got != want:
             problems.append(f'checksum {ck}: rows give {got}, scheme tick summary says {want}')
 
+    # --- ask scan: every printed ask line inside some task's question ------
+    ask_scan = None
+    if getattr(ledger, 'ASK_SCAN_PAGES', None):
+        claimed_lines = defaultdict(set)
+        for t in ledger.TASKS:
+            for sel in (t['q'] if isinstance(t['q'], list) else [t['q']]):
+                if sel.get('src') != 'paper':
+                    continue
+                try:
+                    _, meta = lifter.lift(sel, booklet(t['sec'], ledger))
+                except LookupError:
+                    continue
+                if meta.get('lines'):
+                    a, b = meta['lines']
+                    claimed_lines[meta['page']].update(range(a, b + 1))
+        exempt = {(p, start): why for p, start, why in getattr(ledger, 'ASK_EXEMPT', [])}
+        used_exempt, asks, unclaimed = set(), 0, []
+        for doc, pages in ledger.ASK_SCAN_PAGES.items():
+            for p in pages:
+                for i, line in enumerate(lifter.srcs[doc].lines[p]):
+                    if not ASK_LINE.search(line):
+                        continue
+                    asks += 1
+                    if i in claimed_lines[p]:
+                        continue
+                    hit = [k for k in exempt if k[0] == p and line.startswith(k[1])]
+                    if hit:
+                        used_exempt.add(hit[0])
+                        continue
+                    unclaimed.append(f'p{p}:{i} {line[:90]!r}')
+        for u in unclaimed:
+            problems.append(f'ask scan: printed ask line in no task\'s question: {u} '
+                            '(card it, or ASK_EXEMPT it with the reason it is not an ask)')
+        for k in sorted(set(exempt) - used_exempt):
+            problems.append(f'ASK_EXEMPT {k} matches no unclaimed ask line (stale)')
+        ask_scan = {'askLines': asks, 'exempt': [{'page': p, 'line': st, 'reason': exempt[(p, st)]}
+                                                  for p, st in sorted(used_exempt)]}
+
     # --- census: every leaf claimed, every task a leaf --------------------
     parts, _texts, _files = PC.census_merged('physics', year, level, None)
     leaves = set(PC.leaves_of(parts))
@@ -970,6 +1020,7 @@ def build(ledger, year, level):
                      'Atlas topics (physics-<year>-exam-topic-map.json via '
                      'physics-curriculum-crosswalk.json)',
         'tickChecksumsMatched': len(ledger.CHECKSUMS),
+        **({'askScan': ask_scan} if ask_scan else {}),
         **({'layoutChecks': layout} if layout else {}),
         'excluded': excluded,
         **({'openLeaves': open_list} if open_list else {}),

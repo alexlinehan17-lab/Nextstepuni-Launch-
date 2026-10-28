@@ -24,6 +24,7 @@ checks a ledger before `phys_review.py <year> <level> --write`.
                                                     provenance gate reads: extraction, then the table cells,
                                                     block order, column runs and fractions appended, in the
                                                     order the 2021-2026 files carry them
+  python3 phys_tools.py scheme-rows YEAR LEVEL       append only the runner's own scheme lines to an existing .md
   python3 phys_tools.py identity [YEAR-LEVEL ...]    re-run --write for every reviewed sitting (except those
                                                     named) and report whether the bank comes back byte-identical
 
@@ -391,6 +392,21 @@ def cmd_scheme_md(year, level):
 # the runner lifts is found by the deck build's provenance gate. Append-only.
 PHYS_ROWS = type('PhysRows', (), {'START': '<!-- markbank:phys-rows -->',
                                    'END': '<!-- /markbank:phys-rows -->'})
+
+
+def cmd_scheme_rows(year, level):
+    """Append (or refresh) only the phys-rows block of an EXISTING scheme .md: a
+    pre-carded 2021-2025 sitting keeps the file its other cards were checked
+    against, and gains the runner's own reading of every scheme line."""
+    pdf = os.path.join(ROOT, 'examiner-reports', 'physics', 'schemes', f'{year}-{level}.pdf')
+    md = pdf[:-4] + '.md'
+    text = open(md, encoding='utf-8').read()
+    if PHYS_ROWS.START in text:
+        text = re.sub(re.escape(PHYS_ROWS.START) + r'.*?' + re.escape(PHYS_ROWS.END) + r'\n?', '', text, flags=re.S)
+    body = '\n\n' + f'{PHYS_ROWS.START}\n' + '\n'.join(_phys_rows(pdf)) + f'\n{PHYS_ROWS.END}\n'
+    with open(md, 'w', encoding='utf-8') as fh:
+        fh.write(text.rstrip('\n') + body)
+    print(md)
 
 
 def _phys_rows(pdf):
