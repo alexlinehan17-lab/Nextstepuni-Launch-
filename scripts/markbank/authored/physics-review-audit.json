@@ -5595,7 +5595,7 @@
      "concept": "strong-force-against-gravity",
      "route": "part-a",
      "rows": 3,
-     "figure": "q14d-ivb-scheme-formula",
+     "figure": null,
      "questionFigure": null,
      "sourcePages": null,
      "pairingScore": 1.0,
@@ -5607,7 +5607,7 @@
       ],
       "sum": 6
      },
-     "decision": "The scheme sets the squared distance with a bold digit two the reader cannot raise; the formula is also shown as a crop of the scheme.",
+     "decision": "The scheme sets the squared distance with a bold digit two, read through the math-alphanumeric fold and raised from its baseline.",
      "notes": null
     },
     {
@@ -5820,7 +5820,6 @@
     "physics-2026-hl-q13ivc-scheme-formula",
     "physics-2026-hl-q14a-boat",
     "physics-2026-hl-q14c-charges",
-    "physics-2026-hl-q14d-ivb-scheme-formula",
     "physics-2026-hl-q14d-reaction",
     "physics-2026-hl-q1iii-scheme-table",
     "physics-2026-hl-q1v-scheme-sketch",
@@ -10171,7 +10170,7 @@
      "concept": "kinetic-energy-of-electron",
      "route": null,
      "rows": 2,
-     "figure": "q12viii-scheme-formula",
+     "figure": null,
      "questionFigure": null,
      "sourcePages": null,
      "pairingScore": 1.0,
@@ -10182,7 +10181,7 @@
       ],
       "sum": 6
      },
-     "decision": "The scheme sets both lines in CambriaMath: the formula as a stacked fraction (read with G('fraction')) and the answer with bold digits and broken \"x\" and \"-\" glyphs whose raised power of ten the text layer cannot raise. Both are shown as a crop of the scheme.",
+     "decision": "The scheme sets both lines in CambriaMath: the formula as a stacked fraction (read with G('fraction')) and the answer with bold digits and broken \"x\" and \"-\" glyphs, read through the glyph map with the power of ten raised from its baseline.",
      "notes": null
     },
     {
@@ -11284,7 +11283,6 @@
     "physics-2026-ol-q11iv-scheme-formula",
     "physics-2026-ol-q11v-waves",
     "physics-2026-ol-q12iv-ask",
-    "physics-2026-ol-q12viii-scheme-formula",
     "physics-2026-ol-q14a-beam1",
     "physics-2026-ol-q14a-beam2",
     "physics-2026-ol-q14b-closed-pipe",
@@ -15466,7 +15464,7 @@
       ],
       "sum": 8
      },
-     "decision": "The nuclides carry their numbers stacked, which no line reading keeps: the row reads the equation's main line and the scheme's equation is the solution figure.",
+     "decision": "The nuclides carry their numbers stacked: G('equation') places each mass and atomic number by its glyph position, and the scheme's equation is also the solution figure.",
      "notes": null
     },
     {
@@ -15782,7 +15780,7 @@
       ],
       "sum": 7
      },
-     "decision": "The nuclides carry their numbers stacked, which no line reading keeps: the row reads the equation's main line and the scheme's equation is the solution figure.",
+     "decision": "The nuclides carry their numbers stacked: G('equation') places each mass and atomic number by its glyph position, and the scheme's equation is also the solution figure.",
      "notes": null
     },
     {
@@ -16975,7 +16973,7 @@
       ],
       "sum": 7
      },
-     "decision": "The nuclides carry their numbers stacked, which no line reading keeps: the row reads the equation's main line and the scheme's equation is the solution figure.",
+     "decision": "The nuclides carry their numbers stacked: G('equation') places each mass and atomic number by its glyph position, and the scheme's equation is also the solution figure.",
      "notes": null
     },
     {
@@ -31780,7 +31778,7 @@
      "concept": "mass-per-unit-length",
      "route": null,
      "rows": 3,
-     "figure": "q4vi-scheme",
+     "figure": null,
      "questionFigure": null,
      "sourcePages": null,
      "pairingScore": 1.0,
@@ -31791,7 +31789,7 @@
       ],
       "sum": 8
      },
-     "decision": "\"slope formula, f = 1/2l √(T/μ) [3 + 2]\": slope formula 3, the formula 2, in the order printed. The root sign is a Sinhala letter in the text layer and its reach is lost, so the formula is also shown as a crop of the scheme.",
+     "decision": "\"slope formula, f = 1/2l √(T/μ) [3 + 2]\": slope formula 3, the formula 2, in the order printed. The root sign is a Sinhala letter in the text layer, read as the root sign; the root's overbar marks its reach, so the radicand T/μ is bracketed.",
      "notes": null
     },
     {
@@ -32110,7 +32108,7 @@
      "concept": "length-of-pendulum",
      "route": null,
      "rows": 2,
-     "figure": "q6c-scheme",
+     "figure": null,
      "questionFigure": null,
      "sourcePages": null,
      "pairingScore": 1.0,
@@ -32121,7 +32119,7 @@
       ],
       "sum": 7
      },
-     "decision": "The scheme sets T = 2π√(l/g) with the root sign as a Sinhala letter in the text layer; the reader maps it to the root sign but its reach is lost, so the formula is also shown as a crop.",
+     "decision": "The scheme sets T = 2π√(l/g) with the root sign as a Sinhala letter in the text layer, drawn tall with no overbar of its own: the fraction printed straight after it is its radicand.",
      "notes": null
     },
     {
@@ -36687,28 +36685,11 @@
       },
       "changed": [
        "questionText",
-       "rows",
-       "topicId",
-       "figureKey"
+       "topicId"
       ],
       "fieldsBefore": {
        "questionText": "A simple pendulum has a period of 1.24 s. Calculate the length of the pendulum.",
-       "rows": [
-        {
-         "id": "r-1",
-         "kind": "point",
-         "verbatim": "T = 2π√(l/g)",
-         "marks": 4
-        },
-        {
-         "id": "r-2",
-         "kind": "point",
-         "verbatim": "l = 0.38 m",
-         "marks": 3
-        }
-       ],
-       "topicId": "phys-1-6",
-       "figureKey": null
+       "topicId": "phys-1-6"
       },
       "notesBefore": "Named formula plus final answer with unit. The extractor mangled the radical sign; the formula has been written in standard notation."
      },
@@ -39264,8 +39245,7 @@
        "questionText",
        "tariffModel",
        "rows",
-       "topicId",
-       "figureKey"
+       "topicId"
       ],
       "fieldsBefore": {
        "questionText": "Use your graph to determine the mass per unit length of the string used in this experiment. (23)",
@@ -39287,8 +39267,7 @@
          "marks": 3
         }
        ],
-       "topicId": "phys-u2",
-       "figureKey": null
+       "topicId": "phys-u2"
       },
       "notesBefore": "The scheme writes the slope formula out in full as typeset maths that does not survive the text layer; the 3 + 2 covers stating and using it."
      },
@@ -39485,10 +39464,8 @@
     "physics-2024-hl-q3-table",
     "physics-2024-hl-q4-table",
     "physics-2024-hl-q4iv-scheme",
-    "physics-2024-hl-q4vi-scheme",
     "physics-2024-hl-q5-table",
     "physics-2024-hl-q6a-diagram",
-    "physics-2024-hl-q6c-scheme",
     "physics-2024-hl-q6h-building",
     "physics-2024-hl-q8-loudspeaker",
     "physics-2024-hl-q9biv-scheme"

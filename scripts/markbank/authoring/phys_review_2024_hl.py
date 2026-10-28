@@ -30,8 +30,8 @@ is a Cambria glyph (id 3364) whose ToUnicode reads U+0D24, a Malayalam letter: l
 rendered page, it is the bar over the nu, read as U+0305 COMBINING OVERLINE (GLYPHS), as the
 bank's glyph map already reads its neighbour U+0D25. Two formulas put a fraction under a root whose
 sign the text layer reads as a Sinhala letter (Q4(vi) "f = 1/2l root(T/mu)", Q6(c)
-"T = 2 pi root(l/g)"); the reader maps it to the root sign, but the root's reach is lost, so each is
-also shown as a crop of the scheme. Q9(b)(iv)'s "x" is a Malayalam sign in the text layer (mapped
+"T = 2 pi root(l/g)"); the reader maps it to the root sign and brackets what the root covers (its
+overbar's reach, or the fraction straight after a tall sign). Q9(b)(iv)'s "x" is a Malayalam sign in the text layer (mapped
 by the reader); its formula is shown as a crop as well. Q4(iv)'s "values for root-T" sets the root
 in the Symbol font's private-use glyph U+F0D6 (SymbolMT glyph 151), read as the root sign by glyph id
 (GLYPHS); the line with its table of values is the solution figure.
@@ -386,14 +386,13 @@ TASKS = [
       SQ(9, 'State the relationship between f and T.'), 3, stem=STEM4, fig='q4-table', id='phys-2024-hl-q4-v'),
     T('4vi', 'Q4(vi)', 'A', P(4, 'Use your graph to determine the mass per unit length of the string used in this experiment.'),
       [pt(S('slope formula, f =', piece=1, psep=','), 3, kind='criterion', note=CRIT),
-       FR(9, (158, 623.5, 210, 650), 'f = 1/(2l) √ T/μ', 2,
-          note='The root covers T/μ (shown in the figure, cropped from the scheme).'),
+       FR(9, (158, 623.5, 210, 650), 'f = 1/(2l) √(T/μ)', 2),
        R('μ = 2.2 × 10⁻⁴ kg m⁻¹', 3)],
       'phys-2-6', 'mass-per-unit-length', SQ(9, 'Use your graph to determine the mass per unit length of the string'), 8,
-      stem=STEM4 + TAB4, fig='q4vi-scheme', id='phys-2024-hl-q4-vi',
+      stem=STEM4 + TAB4, id='phys-2024-hl-q4-vi',
       decision='"slope formula, f = 1/2l √(T/μ) [3 + 2]": slope formula 3, the formula 2, in the order printed. '
-               'The root sign is a Sinhala letter in the text layer and its reach is lost, so the formula is also '
-               'shown as a crop of the scheme.'),
+               'The root sign is a Sinhala letter in the text layer, read as the root sign; the root\'s overbar '
+               'marks its reach, so the radicand T/μ is bracketed.'),
     # ---- Q5 resistance and resistivity of copper wire --------------------------
     T('5i', 'Q5(i)', 'A', P(4, 'Draw a circuit diagram for this experiment.'),
       [anyn(S('power supply, copper wire, ammeter, voltmeter'), 3, 1, sep=',',
@@ -435,13 +434,12 @@ TASKS = [
       SQ(11, 'Explain what is meant by a geostationary orbit and state a use of a satellite in geostationary'), 7,
       id='phys-2024-hl-q6-b'),
     T('6c', 'Q6(c)', 'B', [P(5, 'A simple pendulum has a period of 1.24 s. Calculate the length of the pendulum.'), G6],
-      [FR(11, (80, 294, 140, 320), 'T = 2π√ l/g', 4,
-          note='The root covers l/g (shown in the figure, cropped from the scheme).'), R('l = 0.38 m', 3)],
+      [FR(11, (80, 294, 140, 320), 'T = 2π√(l/g)', 4), R('l = 0.38 m', 3)],
       'phys-1-3', 'length-of-pendulum',
       SQ(11, 'A simple pendulum has a period of 1.24 s. Calculate the length of the pendulum.'), 7,
-      fig='q6c-scheme', id='phys-2024-hl-q6-c',
-      decision='The scheme sets T = 2π√(l/g) with the root sign as a Sinhala letter in the text layer; the reader '
-               'maps it to the root sign but its reach is lost, so the formula is also shown as a crop.'),
+      id='phys-2024-hl-q6-c',
+      decision='The scheme sets T = 2π√(l/g) with the root sign as a Sinhala letter in the text layer, drawn tall '
+               'with no overbar of its own: the fraction printed straight after it is its radicand.'),
     T('6d', 'Q6(d)', 'B', P(5, 'Conduction and convection are methods of heat transfer.', 'and convection.'),
       [anyn(None, 2, 4, steps=[4, 3], note=ORDERED.format(cell='[4 + 3]'),
             options=[S('conduction is transfer of heat (by vibration) from particle to particle'),
@@ -712,7 +710,7 @@ TASKS = [
       SQ(17, 'Sketch a suitable graph to show the relationship between capacitance C and the common'), 6,
       id='phys-2024-hl-q11-iii'),
     T('11iv', 'Q11(iv)', 'B', P(10, 'A voltage of 3 kV is applied across the plates.', 'stored in the capacitor.'),
-      [FR(17, (80, 360, 120, 388), 'C = εA/d', 3), FR(17, (80, 386, 140, 412), 'W = 1/2 CV²', 3),
+      [FR(17, (80, 360, 120, 388), 'C = εA/d', 3), FR(17, (80, 386, 140, 412), 'W = ½ CV²', 3),
        R('W = 1.12 × 10⁻⁴ J', 3)], 'phys-3-2', 'energy-stored-in-capacitor',
       SQ(17, 'A voltage of 3 kV is applied across the plates. Calculate the maximum potential energy stored'), 9,
       stem=[PLATES], id='phys-2024-hl-q11-iv'),
@@ -920,7 +918,7 @@ TASKS = [
       id='phys-2024-hl-q14-b-iii'),
     T('14biv', 'Q14(b)(iv)', 'B', P(14, 'Calculate the total number of alpha-particles emitted per second by a sample of',
                                     'atoms.'),
-      [FR(21, (80, 705, 125, 733), 'T 1/2 = ln2/λ', 3), R('A = λN', 3), R('A = 1.05 × 10⁹ (Bq)', 3)], 'phys-4-4',
+      [FR(21, (80, 705, 125, 733), 'T½ = ln2/λ', 3), R('A = λN', 3), R('A = 1.05 × 10⁹ (Bq)', 3)], 'phys-4-4',
       'activity-of-radium-sample',
       SQ(21, 'Calculate the total number of alpha-particles emitted per second by a sample of Ra–224'), 9,
       stem=[HALF], id='phys-2024-hl-q14-b-iv'),
@@ -1007,18 +1005,12 @@ FIGURES = {
     'q4iv-scheme': ('scheme', 9, (82, 452, 545, 512), SEC, [],
                     "The marking scheme's line \"values for √T or f²\" [3] over its table of values: f² 65536, 102400, "
                     "116281, 181902, 230400, 262144; √T 5.39, 6.63, 7.14, 8.89, 10.00, 10.72.", True),
-    'q4vi-scheme': ('scheme', 9, (82, 620, 210, 650), SEC, [],
-                    "The marking scheme's line: slope formula, f = 1/2l times the square root of T over μ, the "
-                    "fraction T/μ under the root sign.", True),
     'q5-table': ('paper', 4, (52, 449, 545, 510), SEC, [],
                  'Table of the recorded data: V (V) 1.0, 2.0, 3.0, 4.0, 5.0, 6.0; I (A) 0.14, 0.26, 0.43, 0.58, 0.70, '
                  '0.84.', False),
     'q6a-diagram': ('paper', 5, (262, 185, 545, 275), P5, [],
                     'Diagram of a metre stick hung at its 50 cm mark from a horizontal support: a 0.6 N weight hangs '
                     'at the 10 cm mark, a 1.3 N weight at the 35 cm mark, and an apple at the 90 cm mark.', False),
-    'q6c-scheme': ('scheme', 11, (82, 290, 140, 322), SEC, [],
-                   "The marking scheme's formula: T = 2π times the square root of l over g, the fraction l/g under "
-                   "the root sign.", True),
     'q6h-building': ('paper', 5, (474, 395, 543, 586), P5, [],
                      'Drawing of a tall rectangular building with rows of windows; a rod with a pointed tip stands on '
                      'its roof and a conductor runs from it down the outside of the building to the ground.', False),

@@ -86,13 +86,13 @@ _SUM = rf'{_NUM}(?:\s*[+×x]\s*{_NUM})*'
 # cell "[7)".
 _ANY = r'(?:[Aa]ny|ANY)\s+(?:(?:one|two|three|four|five|six|ONE|TWO|THREE|FOUR|FIVE|SIX)\s+)?'
 CELL = re.compile(rf'(?:{_ANY}(?:[a-z]+\s+)?)?'
-                  rf'(?:\[\s*(?:{_ANY})?{_SUM}\s*[\])]|\(\s*{_SUM}\s*\)|{_NUM}(?:\s*(?:or|\+|×|x)\s*\(?{_NUM}\)?)*)')
+                  rf'(?:\[\s*(?:{_ANY})?{_SUM}\s*[\])]|\(\s*(?:{_ANY})?{_SUM}\s*\)|{_NUM}(?:\s*(?:or|\+|×|x)\s*\(?{_NUM}\)?)*)')
 
 
 def cell_value(text):
     """What a printed cell is worth in full: "[3 + 2]" 5, "any two [4 + 4]" 8,
     "6 or 3" 6 (the full mark; the second is the partial), "2 × 3" 6."""
-    m = re.search(r'\[([^\]\)]*)[\])]', text)
+    m = re.search(r'[\[(]([^\]\)]*)[\])]', text)
     t = m.group(1) if m else text.strip()
     t = re.sub(rf'^\s*{_ANY}', '', t).strip('[]() ')
     t = re.split(r'\s+or\s+', t)[0].strip('() ')
@@ -191,9 +191,10 @@ def _span_text(spans, i):
     return ''.join(_GLYPHMAP.get(c, c) for c in (_decode_symbol(c, sp['font']) for c in sp['text']))
 
 
-SUP_MAP = dict(zip('0123456789+-–−=()ni', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁻⁻⁼⁽⁾ⁿⁱ'))
-SUB_MAP = dict(zip('0123456789+-–−=()aeoxhklmnpst',
-                   '₀₁₂₃₄₅₆₇₈₉₊₋₋₋₌₍₎'
+# U+2010/U+2011 are the hyphens a raised minus is sometimes set in ("10‐7").
+SUP_MAP = dict(zip('0123456789+-–−\u2010\u2011=()ni', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁻⁻⁻⁻⁼⁽⁾ⁿⁱ'))
+SUB_MAP = dict(zip('0123456789+-–−\u2010\u2011=()aeoxhklmnpst',
+                   '₀₁₂₃₄₅₆₇₈₉₊₋₋₋₋₋₌₍₎'
                    'ₐₑₒₓₕₖₗₘₙₚₛₜ'))
 
 
@@ -899,70 +900,156 @@ def _region_text(spans):
     return _norm(out)
 
 
+def _one_group(t):
+    """Whether `t` is one bracketed group, with only its powers after it
+    ("(0.29)²"): it needs no second pair of brackets."""
+    core = t.rstrip('\u00b2\u00b3\u00b9\u2070\u2071\u2074\u2075\u2076\u2077\u2078\u2079\u207a\u207b\u207f')
+    if not (core.startswith('(') and core.endswith(')')):
+        return False
+    depth = 0
+    for i, ch in enumerate(core):
+        depth += {'(': 1, ')': -1}.get(ch, 0)
+        if depth == 0 and i < len(core) - 1:
+            return False
+    return depth == 0
+
+
 def _wrap(text, den=False):
     t = text.strip()
-    if _ATOM.match(t):
+    if _ATOM.match(t) or _one_group(t):
         return t
     if not den and not re.search(r'[\s+\-\u2013\u2212×]', t):
         return t
     return f'({t})'
 
 
+_VULGAR = {('1', '2'): '\u00bd', ('1', '3'): '\u2153', ('2', '3'): '\u2154', ('1', '4'): '\u00bc',
+           ('3', '4'): '\u00be', ('1', '5'): '\u2155', ('1', '8'): '\u215b'}
+
+
+def _items_text(items, sep=''):
+    """Items (real spans, or fractions already read) left to right: runs of
+    real spans read with their super/subscripts, read fractions as tokens."""
+    items = sorted(items, key=lambda it: it['x0'])
+    out, run = [], []
+    for it in items:
+        if it.get('span') is not None:
+            run.append(it['span'])
+            continue
+        if run:
+            out.append(_region_text(run))
+            run = []
+        if it.get('glue') and out:
+            # A fraction printed as a subscript of the glyph before it ("T" with
+            # a small "1" over "2": the half-life "T½") is part of that word.
+            out[-1] += it['text']
+        else:
+            out.append(it['text'])
+    if run:
+        out.append(_region_text(run))
+    return _norm(sep.join(out))
+
+
 def fraction_text(page, clip, glyphs=None):
-    """The text inside `clip` with every stacked fraction written on one line."""
+    """The text inside `clip` with every stacked fraction written on one line.
+
+    Bars are read innermost first, so a fraction inside another's numerator or
+    denominator ("ln2" over "T" with a small "1" over "2" beside it) is read
+    before the one around it and stands in it as a token ("λ = ln2/(T½)"; a
+    digit over a digit is its vulgar fraction). A root sign's overbar (a bar
+    that starts where a "√" ends, level with or above it) is no fraction: what
+    it covers is the radicand, bracketed unless it is one symbol ("√(T/μ)",
+    "√2")."""
     clip = fitz.Rect(*clip)
     bars = [fitz.Rect(d['rect']) for d in page.get_drawings()
             if d['rect'].height < 1.6 and d['rect'].width > 3 and clip.contains(fitz.Rect(d['rect']))]
-    bars.sort(key=lambda r: r.x0)
-    spans = []
+    items = []
     for b in _page_dict(page, glyphs, clip)['blocks']:
         for ln in b.get('lines', []):
             for sp in ln['spans']:
                 r = fitz.Rect(sp['bbox'])
                 cx, cy = (r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2
-                if not (clip.x0 <= cx <= clip.x1 and clip.y0 <= cy <= clip.y1):
-                    continue
-                spans.append(sp)
-    # A root sign's overbar is drawn as a bar too (2025 Higher p21 "I₀/√2": a
-    # bar over the "2" whose left end meets the "√"). It is no fraction: the
-    # radicand stays where it is printed, under the root.
-    roots = [b for b in bars if any(sp['text'].rstrip().endswith('\u221a')
-                                    and abs(sp['bbox'][2] - b.x0) <= 2
-                                    and sp['bbox'][1] - 1 <= b.y0 <= sp['bbox'][3] + 1 for sp in spans)]
-    bars = [b for b in bars if b not in roots]
+                if clip.x0 <= cx <= clip.x1 and clip.y0 <= cy <= clip.y1:
+                    items.append({'x0': r.x0, 'x1': r.x1, 'y0': r.y0, 'y1': r.y1, 'span': sp,
+                                  'text': sp['text']})
     if not bars:
         raise LookupError(f'no fraction bar inside {list(clip)}')
-    owner = {}
-    for i, sp in enumerate(spans):
-        if not sp['text'].strip():
-            continue          # a space belongs to the line around the fraction
-        r = fitz.Rect(sp['bbox'])
-        cx = (r.x0 + r.x1) / 2
-        # The glyph's own extent, not its line's: a trailing space set at full
-        # size widens a denominator's box past the bar.
-        for j, bar in enumerate(bars):
-            if bar.x0 - 1.5 <= cx <= bar.x1 + 1.5:
-                gy = (r.y0 + r.y1) / 2
-                owner[i] = (j, 'num' if gy < bar.y0 else 'den')
-                break
-    tokens = []   # (x, text)
-    outside = [sp for i, sp in enumerate(spans) if i not in owner]
-    # Outside text is grouped into runs separated by the bars.
-    for j, bar in enumerate(bars):
-        num = _region_text([sp for i, sp in enumerate(spans) if owner.get(i) == (j, 'num')])
-        den = _region_text([sp for i, sp in enumerate(spans) if owner.get(i) == (j, 'den')])
+    roots = []
+    for it in items:
+        if not repair(it['text']).rstrip().endswith('\u221a'):
+            continue
+        # The overbar is the HIGHEST bar starting where the root sign ends; a
+        # fraction under the root may start at the same x.
+        # An overbar sits at the TOP of the root sign (or just above it); a bar
+        # level with the sign's middle is a fraction under a tall radical.
+        cand = [b for b in bars if abs(it['x1'] - b.x0) <= 2 and it['y0'] - 8 <= b.y0 <= it['y0'] + 2]
+        if cand:
+            roots.append(min(cand, key=lambda b: b.y0))
+    fbars = sorted([b for b in bars if b not in roots], key=lambda b: (b.width, b.x0))
+    live = list(items)
+    for bar in fbars:
+        num, den = [], []
+        for it in live:
+            if not it['text'].strip():
+                continue
+            cx = (it['x0'] + it['x1']) / 2
+            if not (bar.x0 - 1.5 <= cx <= bar.x1 + 1.5):
+                continue
+            # A numerator's glyphs sit right on its bar and a denominator's right
+            # under it: a glyph further off belongs to another bar's fraction.
+            if bar.y0 - 5 <= it['y1'] <= bar.y0 + 1.5:
+                num.append(it)
+            elif bar.y1 - 1.5 <= it['y0'] <= bar.y1 + 5:
+                den.append(it)
+        # Glyphs riding on a numerator's or denominator's line (its sub- and
+        # superscripts) belong with it.
+        for group in (num, den):
+            for it in live:
+                if not it['text'].strip() or any(it is g for g in num + den):
+                    continue
+                cx = (it['x0'] + it['x1']) / 2
+                if bar.x0 - 1.5 <= cx <= bar.x1 + 1.5 and any(it['y0'] < g['y1'] and it['y1'] > g['y0'] for g in group):
+                    group.append(it)
         if not num or not den:
-            raise LookupError(f'fraction bar {list(bar)} has numerator {num!r}, denominator {den!r}')
-        tokens.append((bar.x0, f'{_wrap(num)}/{_wrap(den, den=True)}'))
-    edges = [b.x0 for b in bars] + [1e9]
-    lo = -1e9
-    for k, hi in enumerate(edges):
-        run = [sp for sp in outside if lo <= sp['bbox'][0] < hi]
-        if run:
-            tokens.append((run[0]['bbox'][0], _region_text(run)))
-        lo = bars[k].x1 if k < len(bars) else hi
-    tokens.sort()
-    return _norm(' '.join(t for _, t in tokens))
+            raise LookupError(f'fraction bar {[round(v, 1) for v in bar]} has numerator '
+                              f'{_items_text(num)!r}, denominator {_items_text(den)!r}')
+        nt, dt = _items_text(num), _items_text(den)
+        token = _VULGAR.get((nt.strip(), dt.strip())) or f'{_wrap(nt)}/{_wrap(dt, den=True)}'
+        used = num + den
+        live = [it for it in live if all(it is not u for u in used)]
+        x0 = min([bar.x0] + [u['x0'] for u in used])
+        sizes = [u['span']['size'] for u in used if u.get('span') is not None]
+        ty0, ty1 = min(u['y0'] for u in used), max(u['y1'] for u in used)
+        # Small digits hung below the middle of the glyph they touch: a subscript.
+        glue = bool(token in _VULGAR.values() and sizes and any(
+            it.get('span') is not None and it['text'].strip() and abs(it['x1'] - x0) <= 0.5
+            and it['span']['size'] >= 1.4 * max(sizes)
+            and (ty0 + ty1) / 2 >= (it['y0'] + it['y1']) / 2 + 0.25 * (it['y1'] - it['y0']) for it in live))
+        live.append({'x0': x0, 'x1': max([bar.x1] + [u['x1'] for u in used]),
+                     'y0': ty0, 'y1': ty1,
+                     'span': None, 'text': token, 'glue': glue})
+    for bar in roots:
+        under = [it for it in live if it['text'].strip() and bar.x0 - 1 <= (it['x0'] + it['x1']) / 2 <= bar.x1 + 1
+                 and it['y0'] >= bar.y0 - 1.5]
+        if not under:
+            continue
+        inner = _items_text(under)
+        token = inner if (len(inner.strip()) == 1 or _ATOM.match(inner.strip())) else f'({inner})'
+        live = [it for it in live if all(it is not u for u in under)]
+        live.append({'x0': min(u['x0'] for u in under), 'x1': max(u['x1'] for u in under),
+                     'y0': min(u['y0'] for u in under), 'y1': max(u['y1'] for u in under),
+                     'span': None, 'text': token})
+    # A radical sized to what follows it carries its own vinculum and draws no
+    # separate overbar (2024 Higher p11 "T = 2π√(l/g)": the tall root glyph
+    # covers the fraction printed straight after it): a fraction that starts
+    # where such a root sign ends is its radicand.
+    for it in [x for x in live if x.get('span') is not None and repair(x['text']).rstrip().endswith('\u221a')]:
+        nxt = [x for x in live if x.get('span') is None and '/' in x['text'] and -1 <= x['x0'] - it['x1'] <= 1.5]
+        if nxt and not any(abs(it['x1'] - b.x0) <= 2 for b in roots):
+            f = nxt[0]
+            if not f['text'].startswith('('):
+                f['text'] = f'({f["text"]})'
+    return re.sub('\u221a\\s+', '\u221a', _items_text(live, sep=' '))
 
 
 # ------------------------------------------------------- nuclear equations --
@@ -1026,4 +1113,7 @@ def equation_text(page, clip, glyphs=None):
     # closed up to its symbol, and "+" and "→" are set with a space either side.
     out = re.sub(r'([\u00b2\u00b3\u00b9\u2070-\u209f]) +(?=[A-Za-z\u0370-\u03ff])', r'\1', out)
     out = re.sub(r'\s*([+→])\s*', r' \1 ', out)
+    # ...and a stack printed AFTER its symbol ("He⁴₂", where a trailing space
+    # in the span pushed it right) is closed up to that symbol.
+    out = re.sub(r'([A-Za-z\u0370-\u03ff]) +(?=[\u00b2\u00b3\u00b9\u2070-\u209f])', r'\1', out)
     return _norm(out)

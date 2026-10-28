@@ -1358,26 +1358,6 @@
   ],
   "solution": true
  },
- "physics-2024-hl-q4vi-scheme": {
-  "src": "/exam-figures/physics/markbank/physics-2024-hl-q4vi-scheme.png",
-  "md5": "90b13f766a0eaf29086b50329054d690",
-  "alt": "The marking scheme's line: slope formula, f = 1/2l times the square root of T over μ, the fraction T/μ under the root sign.",
-  "lettersVisible": [],
-  "labelMeanings": [],
-  "questionRef": "2024 HL Q4(vi)",
-  "year": 2024,
-  "level": "higher",
-  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
-  "sourceDocument": "LC021ALP000EV.pdf",
-  "sourcePage": 9,
-  "sourceRect": [
-   82,
-   620,
-   210,
-   650
-  ],
-  "solution": true
- },
  "physics-2024-hl-q5-table": {
   "src": "/exam-figures/physics/markbank/physics-2024-hl-q5-table.png",
   "md5": "422535c2859b2688486ac37ebd1d092f",
@@ -1415,26 +1395,6 @@
    545,
    275
   ]
- },
- "physics-2024-hl-q6c-scheme": {
-  "src": "/exam-figures/physics/markbank/physics-2024-hl-q6c-scheme.png",
-  "md5": "10d206a17ae78c8b37dfd53b6b68e3c3",
-  "alt": "The marking scheme's formula: T = 2π times the square root of l over g, the fraction l/g under the root sign.",
-  "lettersVisible": [],
-  "labelMeanings": [],
-  "questionRef": "2024 HL Q6(c)",
-  "year": 2024,
-  "level": "higher",
-  "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
-  "sourceDocument": "LC021ALP000EV.pdf",
-  "sourcePage": 11,
-  "sourceRect": [
-   82,
-   290,
-   140,
-   322
-  ],
-  "solution": true
  },
  "physics-2024-hl-q6h-building": {
   "src": "/exam-figures/physics/markbank/physics-2024-hl-q6h-building.png",
@@ -2855,26 +2815,6 @@
    432
   ]
  },
- "physics-2026-hl-q14d-ivb-scheme-formula": {
-  "src": "/exam-figures/physics/markbank/physics-2026-hl-q14d-ivb-scheme-formula.png",
-  "md5": "b073beec4f015962c4d32e90b3ecb8ba",
-  "alt": "The scheme's formula for the gravitational force: F equals G times m₁ m₂ over d².",
-  "lettersVisible": [],
-  "labelMeanings": [],
-  "questionRef": "2026 HL Q14(d)(iv)(b) — part-a",
-  "year": 2026,
-  "level": "higher",
-  "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
-  "sourceDocument": "LC021ALP000EV.pdf",
-  "sourcePage": 24,
-  "sourceRect": [
-   125,
-   587,
-   200,
-   613
-  ],
-  "solution": true
- },
  "physics-2026-hl-q14d-reaction": {
   "src": "/exam-figures/physics/markbank/physics-2026-hl-q14d-reaction.png",
   "md5": "a5b580ba038af9ade93c0ebc212c90e1",
@@ -3173,26 +3113,6 @@
    400,
    294
   ]
- },
- "physics-2026-ol-q12viii-scheme-formula": {
-  "src": "/exam-figures/physics/markbank/physics-2026-ol-q12viii-scheme-formula.png",
-  "md5": "c407530a6bc67b5d5d74ae0bea08da03",
-  "alt": "The scheme's lines: E k equals one half m v squared, and 4.095 × 10 to the power −18 J.",
-  "lettersVisible": [],
-  "labelMeanings": [],
-  "questionRef": "2026 OL Q12(viii)",
-  "year": 2026,
-  "level": "ordinary",
-  "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
-  "sourceDocument": "LC021GLP000EV.pdf",
-  "sourcePage": 18,
-  "sourceRect": [
-   95,
-   652,
-   195,
-   690
-  ],
-  "solution": true
  },
  "physics-2026-ol-q14a-beam1": {
   "src": "/exam-figures/physics/markbank/physics-2026-ol-q14a-beam1.png",

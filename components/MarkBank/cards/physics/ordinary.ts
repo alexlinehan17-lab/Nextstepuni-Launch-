@@ -5016,7 +5016,7 @@ export const CARDS: SecCard[] = [
     questionText: "What fraction of the isotope will remain after 72 330 years?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "1/8", marks: 6, contextNote: "[accept partial answer for 3]" },
+    { id: "r1", kind: "point", verbatim: "⅛", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -11900,18 +11900,9 @@ export const CARDS: SecCard[] = [
     questionText: "Given that an electron in a cathode ray tube has a mass m of 9.1 × 10⁻³¹ kg and moves with a velocity v of 3 × 10⁶ m s⁻¹, calculate the kinetic energy of the electron travelling in the cathode ray tube.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "Eₖ= 1/2 mv²", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "Eₖ= ½ mv²", marks: 3 },
     { id: "r2", kind: "point", verbatim: "4.095×10⁻¹⁸ J", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
-    figure: {
-          "candId": "physics-2026-ol-q12viii-scheme-formula",
-          "src": "/exam-figures/physics/markbank/physics-2026-ol-q12viii-scheme-formula.png",
-          "srcHash": "c407530a6bc67b5d5d74ae0bea08da03",
-          "alt": "The scheme's lines: E k equals one half m v squared, and 4.095 × 10 to the power −18 J.",
-          "attribution": "SEC Leaving Certificate Physics 2026 Ordinary Level marking scheme — © State Examinations Commission",
-          "solution": true,
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",

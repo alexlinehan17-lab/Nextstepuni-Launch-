@@ -22,8 +22,8 @@ carded. The scheme prints a mark cell against every answer line; a cell
 Formulae the scheme sets as stacked fractions are read with G('fraction')
 (numerator and denominator from where they are printed, written with a
 solidus); nuclear equations, whose nuclides carry their mass and atomic numbers
-stacked, are read on their main line with G('tokens') and shown whole in a
-solution figure cropped from the scheme. The scheme's theta in Q10(iii) is a
+stacked, are read with G('equation') (each number placed by its glyph position)
+and shown whole in a solution figure cropped from the scheme. The scheme's theta in Q10(iii) is a
 Times New Roman "Ɵ", which the text layer's ligature map reads "ti": that
 row is read from glyph positions instead.
 
@@ -559,7 +559,7 @@ TASKS = [
       'phys-4-2', 'photocell-structure', SQ(15, 'Draw a labelled diagram of the structure of a photocell.'), 9,
       id='phys-2025-hl-q9-iii', decision='[3 + 3 + 3] against the three parts printed on one line: 3 each.'),
     T('9iva', 'Q9(iv)(a)', 'B', [P(11, 'Calculate'), M('(a)', 11), P(11, 'the energy of a photon falling on the photocell,')],
-      [R('Φ = 4.33 x 10⁻¹⁹ (J)', 3), FR(15, (110, 445, 190, 472), 'E = Φ + 1/2 mv²', 3),
+      [R('Φ = 4.33 x 10⁻¹⁹ (J)', 3), FR(15, (110, 445, 190, 472), 'E = Φ + ½ mv²', 3),
        R('E = 6.57 x 10⁻¹⁹ J', 3)], 'phys-4-2', 'photon-energy',
       SQ(15, 'the energy of a photon falling on the photocell,'), 9, stem=[PCELL], id='phys-2025-hl-q9-iv-ab',
       decision=bundled('(a) and (b)', '(a)')),
@@ -682,8 +682,8 @@ TASKS = [
       'phys-4-5', 'cockcroft-walton-equation',
       SQ(18, 'State the nuclear equation for the reaction in the experiment.'), 8, stem=STEM12A,
       fig='q12a-i-scheme', id='phys-2025-hl-q12a-i',
-      decision='The nuclides carry their numbers stacked, which no line reading keeps: the row reads the '
-               'equation\'s main line and the scheme\'s equation is the solution figure.'),
+      decision='The nuclides carry their numbers stacked: G(\'equation\') places each mass and atomic number '
+               'by its glyph position, and the scheme\'s equation is also the solution figure.'),
     T('12aii', 'Q12(a)(ii)', 'B', P(14, 'In addition to mass and energy, state two other properties', 'reaction.'),
       [R('momentum', 3), R('charge', 3)], 'phys-4-5', 'conserved-properties',
       SQ(18, 'In addition to mass and energy, state two other properties'), 6, stem=STEM12A,
@@ -719,8 +719,8 @@ TASKS = [
          note_sel=S('[–3 additional incorrect species]'))],
       'phys-4-4', 'positron-emission-equation', SQ(18, 'Write a nuclear equation for this decay.'), 7,
       stem=[PET], fig='q12a-ix-scheme', id='phys-2025-hl-q12a-ix',
-      decision='The nuclides carry their numbers stacked, which no line reading keeps: the row reads the '
-               'equation\'s main line and the scheme\'s equation is the solution figure.'),
+      decision='The nuclides carry their numbers stacked: G(\'equation\') places each mass and atomic number '
+               'by its glyph position, and the scheme\'s equation is also the solution figure.'),
     T('12bi', 'Q12(b)(i)', 'B', P(15, 'Draw a labelled diagram of an a.c. generator.'),
       [C('magnet', 3), C('coil', 3), C('slip rings and brushes', 3)], 'phys-3-6', 'ac-generator',
       SQ(19, 'Draw a labelled diagram of an a.c. generator.'), 9, id='phys-2025-hl-q12b-i'),
@@ -847,10 +847,10 @@ TASKS = [
       'phys-4-4', 'beta-decay-of-iodine-131',
       SQ(24, 'Write a nuclear equation to represent the beta decay of Iodine–131.'), 7, stem=IODINE,
       fig='q14c-ii-scheme', id='phys-2025-hl-q14c-ii',
-      decision='The nuclides carry their numbers stacked, which no line reading keeps: the row reads the '
-               'equation\'s main line and the scheme\'s equation is the solution figure.'),
+      decision='The nuclides carry their numbers stacked: G(\'equation\') places each mass and atomic number '
+               'by its glyph position, and the scheme\'s equation is also the solution figure.'),
     T('14ciii', 'Q14(c)(iii)', 'B', P(18, 'Calculate the decay constant of Iodine–131.'),
-      [FR(24, (84, 256, 126, 286), 'T 1/2 = ln2/λ', 3), R('λ = 1.0028 x 10⁻⁶ s⁻¹', 3)], 'phys-4-4',
+      [FR(24, (84, 256, 126, 286), 'T½ = ln2/λ', 3), R('λ = 1.0028 x 10⁻⁶ s⁻¹', 3)], 'phys-4-4',
       'decay-constant', SQ(24, 'Calculate the decay constant of Iodine–131.'), 6, stem=IODINE,
       id='phys-2025-hl-q14c-iii'),
     T('14civa', 'Q14(c)(iv)(a)', 'B', [SAMPLE, P(18, 'Calculate', after='contains 2 × 10¹⁵ atoms.'), M('(a)', 18),

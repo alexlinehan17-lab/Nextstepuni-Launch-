@@ -1298,10 +1298,15 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     if record is not None:
         # Every pre-existing card stays where it stood; new cards follow their
         # anchor. Cards this pipeline added on an earlier run are dropped first.
-        out, first = [], True
+        out, first, placed = [], True, set()
         for c in bank:
             if c['id'].startswith(prefix) and c['id'] not in replacements:
                 continue
+            # A pre-existing id the bank holds twice (2021 HL's figure twins,
+            # stored under the same id) is one card: its first place only.
+            if c['id'] in replacements and c['id'] in placed:
+                continue
+            placed.add(c['id'])
             if c['id'] in replacements:
                 if first:
                     out.extend(additions.get(None, []))
@@ -1337,7 +1342,17 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     manifest = {}
     if os.path.exists(FIG_MANIFEST):
         manifest = json.load(open(FIG_MANIFEST, encoding='utf-8'))
+    # A crop this sitting's ledger no longer names leaves the manifest and its
+    # PNG goes with it (only one the manifest listed: a legacy figure the shared
+    # figures.json names is not this ledger's to remove).
+    dropped = {k for k in manifest if k.startswith(f'physics-{year}-{level}-')} - set(figs)
     manifest = {k: v for k, v in manifest.items() if not k.startswith(f'physics-{year}-{level}-')}
+    legacy = set(json.load(open(os.path.join(ROOT, 'components', 'MarkBank', 'figures.json'), encoding='utf-8')))
+    for k in sorted(dropped - legacy):
+        png = os.path.join(FIG_DIR, f'{k}.png')
+        if os.path.exists(png):
+            os.remove(png)
+            print(f'  figure {k} is no longer named: its crop removed')
     for c in cards:
         for field in ('figureKey', 'questionFigureKey'):
             if c.get(field) and c[field] in figs:

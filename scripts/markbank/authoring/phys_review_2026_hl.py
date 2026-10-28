@@ -731,7 +731,7 @@ TASKS = [
       'phys-4-4', 'activity-of-polonium-sample', SQ(18, 'Calculate the activity of a 3.0 mg sample of polonium–210.'),
       9, stem=Q12SD),
     T('12viii', 'Q12(viii)', 'B', Q(14, 'Estimate by calculation how many nuclei of', '276 days.'),
-      [G('fraction', page=18, clip=(95, 694, 200, 722), expect='T 1/2 = ln2/λ', marks=4),
+      [G('fraction', page=18, clip=(95, 694, 200, 722), expect='T½ = ln2/λ', marks=4),
        pt(S('T1/2 = 1.19 × 10⁷ s / 138 days'), 2), pt(S('2.14 × 10¹⁸ nuclei'), 2)],
       'phys-4-4', 'nuclei-remaining-after-276-days',
       SQ(18, 'Estimate by calculation how many nuclei of polonium–210 remain in the 3.0 mg', 'sample after 276 days.'),
@@ -880,9 +880,9 @@ TASKS = [
        pt(S('8.3 × 10⁻³⁵ (N)'), 2), pt(S('ratio: 1.48 × 10³⁸'), 2)],
       'phys-1-5', 'strong-force-against-gravity',
       SQ(24, 'how many times stronger this strong nuclear force is than the gravitational force',
-         'between the two protons.'), 6, stem=[Q14DA], route='part-a', fig='q14d-ivb-scheme-formula',
-      decision='The scheme sets the squared distance with a bold digit two the reader cannot raise; the formula '
-               'is also shown as a crop of the scheme.'),
+         'between the two protons.'), 6, stem=[Q14DA], route='part-a',
+      decision='The scheme sets the squared distance with a bold digit two, read through the math-alphanumeric '
+               'fold and raised from its baseline.'),
     # Q14(d) Part (b)
     T('14dib', 'Q14(d)(i)', 'B', Q(18, 'Explain what is meant by a bi-polar transistor.'),
       [pt(S('consists of npn / pnp'), 6,
@@ -956,6 +956,4 @@ FIGURES = {
     'q14d-reaction': ('paper', 18, (55, 98, 500, 144), SEC, [],
         'Part (a)\'s lead-in as printed: "The following reaction represents the pair annihilation of a proton p, and an anti-proton" '
         'followed by the symbol p with a bar over it, over the reaction: p plus p-bar gives 2 gamma.', False),
-    'q14d-ivb-scheme-formula': ('scheme', 24, (125, 587, 200, 613), SEC, [],
-        "The scheme's formula for the gravitational force: F equals G times m₁ m₂ over d².", True),
 }

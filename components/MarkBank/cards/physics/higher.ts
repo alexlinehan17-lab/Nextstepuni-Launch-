@@ -4426,18 +4426,9 @@ export const CARDS: SecCard[] = [
     questionText: "A simple pendulum has a period of 1.24 s. Calculate the length of the pendulum.\nacceleration due to gravity = 9.8 m s⁻²",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r1", kind: "point", verbatim: "T = 2π√ l/g", marks: 4, contextNote: "The root covers l/g (shown in the figure, cropped from the scheme)." },
+    { id: "r1", kind: "point", verbatim: "T = 2π√(l/g)", marks: 4 },
     { id: "r2", kind: "point", verbatim: "l = 0.38 m", marks: 3 },
     ],
-    figure: {
-          "candId": "physics-2024-hl-q6c-scheme",
-          "src": "/exam-figures/physics/markbank/physics-2024-hl-q6c-scheme.png",
-          "srcHash": "10d206a17ae78c8b37dfd53b6b68e3c3",
-          "alt": "The marking scheme's formula: T = 2π times the square root of l over g, the fraction l/g under the root sign.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
-          "solution": true,
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4927,7 +4918,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the total number of alpha-particles emitted per second by a sample of Ra–224 containing 4.7 × 10¹⁴ atoms.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r1", kind: "point", verbatim: "T 1/2 = ln2/λ", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "T½ = ln2/λ", marks: 3 },
     { id: "r2", kind: "point", verbatim: "A = λN", marks: 3 },
     { id: "r3", kind: "point", verbatim: "A = 1.05 × 10⁹ (Bq)", marks: 3 },
     ],
@@ -5588,7 +5579,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r1", kind: "point", verbatim: "C = εA/d", marks: 3 },
-    { id: "r2", kind: "point", verbatim: "W = 1/2 CV²", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "W = ½ CV²", marks: 3 },
     { id: "r3", kind: "point", verbatim: "W = 1.12 × 10⁻⁴ J", marks: 3 },
     ],
   } as SecCard,
@@ -6499,7 +6490,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r1", kind: "point", verbatim: "Φ = 4.33 x 10⁻¹⁹ (J)", marks: 3 },
-    { id: "r2", kind: "point", verbatim: "E = Φ + 1/2 mv²", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "E = Φ + ½ mv²", marks: 3 },
     { id: "r3", kind: "point", verbatim: "E = 6.57 x 10⁻¹⁹ J", marks: 3 },
     ],
   } as SecCard,
@@ -7361,7 +7352,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the decay constant of Iodine–131.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r1", kind: "point", verbatim: "T 1/2 = ln2/λ", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "T½ = ln2/λ", marks: 3 },
     { id: "r2", kind: "point", verbatim: "λ = 1.0028 x 10⁻⁶ s⁻¹", marks: 3 },
     ],
   } as SecCard,
@@ -10166,18 +10157,9 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r1", kind: "criterion", verbatim: "slope formula", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
-    { id: "r2", kind: "point", verbatim: "f = 1/(2l) √ T/μ", marks: 2, contextNote: "The root covers T/μ (shown in the figure, cropped from the scheme)." },
+    { id: "r2", kind: "point", verbatim: "f = 1/(2l) √(T/μ)", marks: 2 },
     { id: "r3", kind: "point", verbatim: "μ = 2.2 × 10⁻⁴ kg m⁻¹", marks: 3 },
     ],
-    figure: {
-          "candId": "physics-2024-hl-q4vi-scheme",
-          "src": "/exam-figures/physics/markbank/physics-2024-hl-q4vi-scheme.png",
-          "srcHash": "90b13f766a0eaf29086b50329054d690",
-          "alt": "The marking scheme's line: slope formula, f = 1/2l times the square root of T over μ, the fraction T/μ under the root sign.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Higher Level marking scheme — © State Examinations Commission",
-          "solution": true,
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12604,7 +12586,7 @@ export const CARDS: SecCard[] = [
     questionText: "Estimate by calculation how many nuclei of polonium–210 remain in the 3.0 mg sample after 276 days.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r1", kind: "point", verbatim: "T 1/2 = ln2/λ", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "T½ = ln2/λ", marks: 4 },
     { id: "r2", kind: "point", verbatim: "T1/2 = 1.19 × 10⁷ s / 138 days", marks: 2 },
     { id: "r3", kind: "point", verbatim: "2.14 × 10¹⁸ nuclei", marks: 2 },
     ],
@@ -13123,15 +13105,6 @@ export const CARDS: SecCard[] = [
     { id: "r2", kind: "point", verbatim: "8.3 × 10⁻³⁵ (N)", marks: 2 },
     { id: "r3", kind: "point", verbatim: "ratio: 1.48 × 10³⁸", marks: 2 },
     ],
-    figure: {
-          "candId": "physics-2026-hl-q14d-ivb-scheme-formula",
-          "src": "/exam-figures/physics/markbank/physics-2026-hl-q14d-ivb-scheme-formula.png",
-          "srcHash": "b073beec4f015962c4d32e90b3ecb8ba",
-          "alt": "The scheme's formula for the gravitational force: F equals G times m₁ m₂ over d².",
-          "attribution": "SEC Leaving Certificate Physics 2026 Higher Level marking scheme — © State Examinations Commission",
-          "solution": true,
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -698,7 +698,7 @@ TASKS = [
       [R('atoms of the same element with different number of neutrons', 6, note_sel=PA(3))], 'phys-4-3', 'isotopes',
       SQ(18, 'What are isotopes?'), 6, stem=[FUELS], id='phys-2024-ol-q12-iv'),
     T('12v', 'Q12(v)', 'B', P(11, 'What fraction of the isotope will remain after 72 330 years?'),
-      [FR(18, (110, 434, 125, 460), '1/8', 6, note_sel=PA(3))], 'phys-4-4', 'fraction-remaining',
+      [FR(18, (110, 434, 125, 460), '⅛', 6, note_sel=PA(3))], 'phys-4-4', 'fraction-remaining',
       SQ(18, 'What fraction of the isotope will remain after 72 330 years?'), 6, stem=[PU], id='phys-2024-ol-q12-v'),
     T('12vi', 'Q12(vi)', 'B', P(11, 'When Pu–239 decays, it emits alpha particles', '?'),
       [G('equation', page=18, clip=(110, 508, 145, 530), expect='U²³⁵₉₂', marks=6, units=[2, 2, 2],

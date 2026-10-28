@@ -16984,9 +16984,8 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "T = 2π√ l/g",
-    "marks": 4,
-    "contextNote": "The root covers l/g (shown in the figure, cropped from the scheme)."
+    "verbatim": "T = 2π√(l/g)",
+    "marks": 4
    },
    {
     "id": "r2",
@@ -16995,10 +16994,9 @@
     "marks": 3
    }
   ],
-  "notes": "The scheme sets T = 2π√(l/g) with the root sign as a Sinhala letter in the text layer; the reader maps it to the root sign but its reach is lost, so the formula is also shown as a crop. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "notes": "The scheme sets T = 2π√(l/g) with the root sign as a Sinhala letter in the text layer, drawn tall with no overbar of its own: the fraction printed straight after it is its radicand. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
   "year": 2024,
-  "level": "higher",
-  "figureKey": "physics-2024-hl-q6c-scheme"
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q6-d",
@@ -17995,7 +17993,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "T 1/2 = ln2/λ",
+    "verbatim": "T½ = ln2/λ",
     "marks": 3
    },
    {
@@ -19799,7 +19797,7 @@
    {
     "id": "r2",
     "kind": "point",
-    "verbatim": "W = 1/2 CV²",
+    "verbatim": "W = ½ CV²",
     "marks": 3
    },
    {
@@ -21271,7 +21269,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "1/8",
+    "verbatim": "⅛",
     "marks": 6,
     "contextNote": "[accept partial answer for 3]"
    }
@@ -23410,7 +23408,7 @@
    {
     "id": "r2",
     "kind": "point",
-    "verbatim": "E = Φ + 1/2 mv²",
+    "verbatim": "E = Φ + ½ mv²",
     "marks": 3
    },
    {
@@ -25506,7 +25504,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "T 1/2 = ln2/λ",
+    "verbatim": "T½ = ln2/λ",
     "marks": 3
    },
    {
@@ -37169,9 +37167,8 @@
    {
     "id": "r2",
     "kind": "point",
-    "verbatim": "f = 1/(2l) √ T/μ",
-    "marks": 2,
-    "contextNote": "The root covers T/μ (shown in the figure, cropped from the scheme)."
+    "verbatim": "f = 1/(2l) √(T/μ)",
+    "marks": 2
    },
    {
     "id": "r3",
@@ -37180,10 +37177,9 @@
     "marks": 3
    }
   ],
-  "notes": "\"slope formula, f = 1/2l √(T/μ) [3 + 2]\": slope formula 3, the formula 2, in the order printed. The root sign is a Sinhala letter in the text layer and its reach is lost, so the formula is also shown as a crop of the scheme. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
+  "notes": "\"slope formula, f = 1/2l √(T/μ) [3 + 2]\": slope formula 3, the formula 2, in the order printed. The root sign is a Sinhala letter in the text layer, read as the root sign; the root's overbar marks its reach, so the radicand T/μ is bracketed. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2024_hl.py.",
   "year": 2024,
-  "level": "higher",
-  "figureKey": "physics-2024-hl-q4vi-scheme"
+  "level": "higher"
  },
  {
   "id": "phys-2024-hl-q7-vi",
@@ -38536,7 +38532,7 @@
     "contextNote": "[–3 additional incorrect species] [7 × 1]: the scheme prices the equation one mark at a time."
    }
   ],
-  "notes": "The nuclides carry their numbers stacked, which no line reading keeps: the row reads the equation's main line and the scheme's equation is the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
+  "notes": "The nuclides carry their numbers stacked: G('equation') places each mass and atomic number by its glyph position, and the scheme's equation is also the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
   "year": 2025,
   "level": "higher",
   "figureKey": "physics-2025-hl-q14c-ii-scheme"
@@ -39533,7 +39529,7 @@
     "contextNote": "[–2 additional incorrect species] [4 × 2]: the scheme prices the four nuclei."
    }
   ],
-  "notes": "The nuclides carry their numbers stacked, which no line reading keeps: the row reads the equation's main line and the scheme's equation is the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
+  "notes": "The nuclides carry their numbers stacked: G('equation') places each mass and atomic number by its glyph position, and the scheme's equation is also the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
   "year": 2025,
   "level": "higher",
   "figureKey": "physics-2025-hl-q12a-i-scheme"
@@ -39591,7 +39587,7 @@
     "contextNote": "[–3 additional incorrect species] [7 × 1]: the scheme prices the equation one mark at a time."
    }
   ],
-  "notes": "The nuclides carry their numbers stacked, which no line reading keeps: the row reads the equation's main line and the scheme's equation is the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
+  "notes": "The nuclides carry their numbers stacked: G('equation') places each mass and atomic number by its glyph position, and the scheme's equation is also the solution figure. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2025_hl.py.",
   "year": 2025,
   "level": "higher",
   "figureKey": "physics-2025-hl-q12a-ix-scheme"
@@ -44009,7 +44005,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "T 1/2 = ln2/λ",
+    "verbatim": "T½ = ln2/λ",
     "marks": 4
    },
    {
@@ -44996,10 +44992,9 @@
     "marks": 2
    }
   ],
-  "notes": "The scheme sets the squared distance with a bold digit two the reader cannot raise; the formula is also shown as a crop of the scheme. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
+  "notes": "The scheme sets the squared distance with a bold digit two, read through the math-alphanumeric fold and raised from its baseline. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_hl.py.",
   "year": 2026,
-  "level": "higher",
-  "figureKey": "physics-2026-hl-q14d-ivb-scheme-formula"
+  "level": "higher"
  },
  {
   "id": "phys-2026-hl-q14-d-i-part-b",
@@ -48062,7 +48057,7 @@
    {
     "id": "r1",
     "kind": "point",
-    "verbatim": "Eₖ= 1/2 mv²",
+    "verbatim": "Eₖ= ½ mv²",
     "marks": 3
    },
    {
@@ -48073,10 +48068,9 @@
     "contextNote": "[accept partial answer for 3]"
    }
   ],
-  "notes": "The scheme sets both lines in CambriaMath: the formula as a stacked fraction (read with G('fraction')) and the answer with bold digits and broken \"x\" and \"-\" glyphs whose raised power of ten the text layer cannot raise. Both are shown as a crop of the scheme. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
+  "notes": "The scheme sets both lines in CambriaMath: the formula as a stacked fraction (read with G('fraction')) and the answer with bold digits and broken \"x\" and \"-\" glyphs, read through the glyph map with the power of ten raised from its baseline. Reviewed 2026-10-28 against the paper and scheme; ledger phys_review_2026_ol.py.",
   "year": 2026,
-  "level": "ordinary",
-  "figureKey": "physics-2026-ol-q12viii-scheme-formula"
+  "level": "ordinary"
  },
  {
   "id": "phys-2026-ol-q12-ix",
