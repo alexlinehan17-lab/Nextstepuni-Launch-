@@ -85,5 +85,12 @@
   "id": "chem-2024-ol-q11-d-a-ii",
   "ask": "Identify the raw materials used for this industry.",
   "answer": "appropriate raw materials"
+ },
+ {
+  "id": "chem-2024-ol-q10-c-i",
+  "ask": "",
+  "answer": "for half a sample to decay",
+  "figure": true,
+  "figureSrc": "chemistry-2024-OL-paper-q10c-i-print"
  }
 ]

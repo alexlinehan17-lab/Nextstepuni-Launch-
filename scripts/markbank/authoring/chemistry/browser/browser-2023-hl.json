@@ -81,5 +81,12 @@
   "ask": "State Charles",
   "answer": "for a fixed mass of gas at constant pressure",
   "solution": true
+ },
+ {
+  "id": "chem-2023-hl-q11-d-a-v",
+  "ask": "",
+  "answer": "absorbs (retains) heat energy (infrared radiation)",
+  "figure": true,
+  "figureSrc": "chemistry-2023-HL-paper-q11d-a-v-print"
  }
 ]

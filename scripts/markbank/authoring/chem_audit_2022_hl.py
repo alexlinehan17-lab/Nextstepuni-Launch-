@@ -420,8 +420,12 @@ C.fixed([k('11', 'c', 'iv')], 'chem-3-2', 'heat-of-the-reverse-reaction', figure
 Q11CV = C.context(k('11', 'c', 'v'))
 Q11CV = Q11CV[Q11CV.index('The reaction between pure hydrogen'):]
 C.fixed([k('11', 'c', 'v')], None, None, stem=Q11CV)
+# (v) asks about the term the paper underlines, which no text layer carries: the paper's own print of
+# the paragraph and (v) is the question. So for A(i) below: A's heading and lead-in, then (i).
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11c-v-print'
 C.menu([k('11', 'c', 'vi')], None, None, stem=Q11CV)
 C.fixed([ka('11', 'd', 'i', 'A')], 'chem-4-3', 'photodissociation', cid='q11-d-a-i-iii')
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11d-a-i-print'
 C.fixed([ka('11', 'd', 'ii', 'A')], 'chem-4-3', 'photodissociation-of-ozone')
 C.fixed([ka('11', 'd', 'iii', 'A')], 'chem-4-3', 'a-use-of-cfcs')
 C.fixed([ka('11', 'd', 'iv', 'A')], 'chem-4-3', 'chlorine-radicals-and-ozone', cid='q11-d-a-iv-v')

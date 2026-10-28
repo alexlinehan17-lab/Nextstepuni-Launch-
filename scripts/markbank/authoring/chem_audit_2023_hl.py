@@ -300,6 +300,9 @@ C.answer_only([ka('11', 'd', 'iii', 'A')], None, None, S + 'q11da-iii')
 C.fixed([ka('11', 'd', 'iv', 'A')], 'chem-4-3', 'industrial-sources-of-nitrogen-oxides',
         cid='q11-d-a-iv-v')
 C.fixed([ka('11', 'd', 'v', 'A')], 'chem-4-3', 'what-a-greenhouse-gas-is', cid='q11-d-a-v')
+# (v) asks about the term the paper underlines, which no text layer carries: the paper's own print of
+# A's lead-in, then (v) ((i)-(iv) between them and the mark left out), is the question.
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11d-a-v-print'
 Q11DB = FIG + 'paper-q11d-b'
 C.ordered([ka('11', 'd', 'i', 'B')], None, None, figure=Q11DB)
 C.fixed([ka('11', 'd', 'ii', 'B')], 'chem-u3', 'environmental-impact-of-an-alumina-plant',

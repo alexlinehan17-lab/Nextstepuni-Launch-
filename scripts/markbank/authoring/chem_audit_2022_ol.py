@@ -127,6 +127,10 @@ C.ordered([k('4', 'e')], None, None, notes=Q4_NOTE)
 C.fixed([k('4', 'f')], None, None, notes=Q4_NOTE)
 C.ordered([k('4', 'g')], None, None, notes=Q4_NOTE)
 C.fixed([k('4', 'h')], None, None, notes=Q4_NOTE)
+# (h), Q6(a), Q8(a)(i) and Q10(b)(i) ask about a term the paper underlines, which no text layer
+# carries: the paper's own print of the part is the question (Q6's table and Q8's reaction scheme stay
+# the cards' figures, shown below it; the marks printed beside the asks are left out).
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q4h-print'
 C.route([k('4', 'i')], None, None, figure=S + 'q4i', notes=Q4_NOTE,
         fixes={'% Co = 177 × 100 = 33% 59': '% Co = 59 ÷ 177 × 100 = 33%'},
         row_notes={1: FRACTION.format('59', '177')})
@@ -169,6 +173,7 @@ C.ordered([k('5', 'd', 'i'), k('5', 'd', 'ii')], None, None, cid='q5-d', figure=
 # ── Q6 Hydrocarbons A to E ───────────────────────────────────────────────────
 Q6 = FIG + 'paper-q6-fig0'
 C.fixed([k('6', 'a')], None, None, figure=Q6)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q6a-print'
 C.ordered([k('6', 'b')], 'chem-2-4', 'iupac-names-of-ethane-ethyne-and-methylbenzene', figure=Q6)
 C.menu([k('6', 'c', 'i')], 'chem-2-4', 'which-hydrocarbons-are-gases-at-room-temperature',
        figure=Q6)
@@ -214,6 +219,7 @@ C.add([k('7', 'b')], None, None, [C.lifted(f'r-{i + 1}', t, None) for i, t in en
 # ── Q8 From glucose to ethanoic acid ─────────────────────────────────────────
 Q8 = FIG + 'paper-q8-fig0'
 C.ordered([k('8', 'a', r) for r in ('i', 'ii', 'iii')], None, None, cid='q8-a', figure=Q8)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q8a-print'
 C.ordered([k('8', 'b', r) for r in ('i', 'ii', 'iii')], 'chem-4-2',
           'oxidation-of-ethanol-to-ethanal', cid='q8-b-i', figure=Q8)
 C.ordered([k('8', 'c', r) for r in ('i', 'ii', 'iii')], 'chem-4-2',
@@ -297,6 +303,7 @@ C.add([k('10', 'b', 'i')], None, None, [
     routed(C.lifted('r-3', 'state where concentrations of reactants and products', 3,
                     'Or instead, this point and the next (2 × 3), one each.'), 'b'),
     routed(C.lifted('r-4', 'are constant', 3), 'b')], total=6, stem=Q10B)
+C.cards[-1]['questionFigureKey'] = FIG + 'paper-q10b-i-print'
 # (ii): one point (2); below it the text layer reads (iii)'s Kc numerator.
 _q10b2 = P.items(k('10', 'b', 'ii'))
 assert [it.cell for it in _q10b2] == ['[2]', None], _q10b2
