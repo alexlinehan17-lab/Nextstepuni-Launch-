@@ -22,9 +22,15 @@ more parts) are not rows.
 A task's rows are its heading span ("(a)" … next letter, "(i)" … next roman) when those rows add up to its
 total; otherwise the question's rows in reading order are shared out to its tasks in paper order, each
 taking rows until its total is met. A part the scheme prices only through its section total (its span
-prints no mark) takes a single flagged block row. A task whose rows cannot be made to add up, or whose
-figures sit in a grid the geometry cannot label, is left as it was (the crop and the stepper) and listed
-in accounting-rows-residue.json with its reason. Nothing is typed: every row is the scheme's words.
+prints no mark) takes a single flagged block row, before the greedy share can take another part's rows.
+A part heading's bracketed total prices nothing when priced lines (a mark with a figure) follow it and is a
+theory part's one priced line when none do; a heading glued to its title ("(b)Trading") is split; the page
+number at the page's edge is not a boxed total; a part's total alone at the right margin under its block
+(or on the line above its heading) prices the block; an "Alternative" solution prices nothing until the
+next part; a page printed sideways is read in its own frame; the 2022 schemes' marks are "(3)" or a bare
+digit beside the figure. A task whose rows cannot be made to add up, or whose figures sit in a grid the
+geometry cannot label, is left as it was (the crop and the stepper) and listed in
+accounting-rows-residue.json with its reason. Nothing is typed: every row is the scheme's words.
 """
 
 import fitz, re, json, collections, sys, os, unicodedata
@@ -52,6 +58,8 @@ def doc_for(year,fid):
     return docs[key]
 def tokens(word, x0, x1):
     """Split a word on bracketed marks: '[3](150,700)' -> '[3]', '(150,700)'; '180,000[1]' -> '180,000', '[1]'."""
+    g=re.fullmatch(r'(\(?€?\d[\d,.]*\)?)\((\d{1,2})\)', word)
+    if g: word=f'{g.group(1)} ({g.group(2)})'; parts=word.split(' '); n=len(parts); w=(x1-x0)/n; return [(x0+i*w, x0+(i+1)*w, t) for i,t in enumerate(parts)]
     out=[]; pos=0
     for m in MARK_IN.finditer(word):
         if m.start()>pos: out.append(word[pos:m.start()])
@@ -96,20 +104,39 @@ def page_lines(year,fid,p):
     key=(year,fid,p)
     if key in page_cache: return page_cache[key]
     page=doc_for(year,fid)[p-1]; W,H=page.rect.width,page.rect.height; bx=boxes(page)
+    words=list(words_2022(page) if year==2022 else page.get_text('words'))
+    dirs=collections.Counter(tuple(round(v) for v in l['dir']) for b in page.get_text('dict')['blocks'] for l in b.get('lines',[]))
+    if dirs and dirs.most_common(1)[0][0]==(0,-1):
+        # the page is printed sideways, text running up the page: read it in its own frame (x along the text, y across it)
+        words=[(H-w[3], w[0], H-w[1], w[2], w[4]) for w in words]
+        bx=[fitz.Rect(H-r.y1, r.x0, H-r.y0, r.x1) for r in bx]
+        W,H=H,W
     rows=collections.defaultdict(list)
-    for w in (words_2022(page) if year==2022 else page.get_text('words')):
+    for w in words:
         boxed=any(r.x0-3<=w[0] and w[2]<=r.x1+3 and r.y0-3<=w[1] and w[3]<=r.y1+3 for r in bx)
         for x0,x1,t in tokens(w[4],w[0],w[2]):
             if boxed and (MARK.match(t) or re.fullmatch(r'\d{1,3}', t)): t=f'<box {MARK.match(t).group(1) if MARK.match(t) else t}>'
+            g=re.match(r'^\(([A-Za-z]{1,4})\)(?=[A-Za-z])', t)
+            if g:   # "(b)Trading Profit and Loss Account": the heading glued to its title
+                cut=(x1-x0)*len(g.group(0))/len(t); rows[round(w[1]/3)].append((x0,w[1],x0+cut,f'({g.group(1).lower()})')); t=t[len(g.group(0)):]; x0=x0+cut
+            if re.fullmatch(r'\([A-Z]{1,4}\)', t): t=t.lower()   # the 2022 schemes head their parts "(A)", "(B)"
             rows[round(w[1]/3)].append((x0,w[1],x1,t))
     out=[]
     for k in sorted(rows):
         ws=sorted(rows[k], key=lambda w:w[0])
+        if len(ws)>=2 and re.fullmatch(r'\([a-z]{1,4}', ws[0][3]) and ws[1][3]==')': ws=[(ws[0][0],ws[0][1],ws[1][2],ws[0][3]+')')]+ws[2:]   # "(e )"
         # the 2024+ schemes price a line as "(10)" at its end: a mark, not a bracketed figure
         if len(ws)>=2 and re.fullmatch(r'\(\d{1,2}\)', ws[-1][3]) and int(ws[-1][3][1:-1])<=50 and ws[-1][0]/W>=0.4:
             x0,y0,x1,t=ws[-1]; ws[-1]=(x0,y0,x1,f'[{t[1:-1]}]')
+        if len(ws)==1 and re.fullmatch(r'\d{1,3}', ws[0][3]) and ws[0][0]/W>=0.88 and int(ws[0][3])==p: continue   # the page number, at the page's edge
         if len(ws)==1 and re.fullmatch(r'\d{1,3}', ws[0][3]) and ws[0][0]/W>=0.75:
             ws=[(ws[0][0],ws[0][1],ws[0][2],f'<box {ws[0][3]}>')]
+        # the 2022 schemes price a figure with the mark beside it: "(3)" or a bare digit right after the figure, in a marks column or mid-line
+        if year==2022:
+            for k in range(1,len(ws)):
+                x0,y0,x1,t=ws[k]
+                if FIG.match(ws[k-1][3]) and x0/W>=0.4 and (re.fullmatch(r'\((\d{1,2})\)', t) or (re.fullmatch(r'\d{1,2}', t) and int(t)<=12)):
+                    ws[k]=(x0,y0,x1,f"[{t.strip('()')}]")
         out.append({'p':p,'y':ws[0][1],'yf':ws[0][1]/H,'xf':ws[0][0]/W,'ws':ws,'W':W})
     if any(INTRO.search(' '.join(t for *_,t in l['ws'])) for l in out[:14]): out=[]
     page_cache[key]=out; return out
@@ -176,15 +203,26 @@ def rows_of(lines, totals, grid_mode=False):
             if sum(ch.isalpha() for ch in ' '.join(body))>=10:   # a block of points, not a bare heading under a section total
                 rows.append({'text':' '.join(texts)[:400],'figure':None,'marks':n,'p':p,'y':y,'block':True})
         pending_box=None
+    alternative=False
     for i,line in enumerate(lines):
         ws=line['ws']; texts=[t for *_,t in ws]
+        if line['xf']<0.3 and re.fullmatch(r'Alternative(?:ly)?(?: (?:solution|method|presentation|approach))?:?', ' '.join(texts), re.I): alternative=True; continue
+        if alternative and ((HEAD.match(texts[0]) and HEAD.match(texts[0]).group(1) not in ROMAN and line['xf']<0.3) or TITLE.match(texts[0])): alternative=False
+        if alternative: continue
         boxed=[int(BOX.match(t).group(1)) for t in texts if BOX.match(t)]
         marks=[(k,int(MARK.match(t).group(1))) for k,t in enumerate(texts) if MARK.match(t)]
         grid=grids.get(line['p']) if grid_mode else None
         if TITLE.match(texts[0]) and line['xf']<0.2 and marks and all(n>=10 for _,n in marks):
             marks=[]   # the question title carries its total in brackets ("1. Final Accounts … [80]")
-        if len(marks)==1 and marks[0][1] in totals and HEAD.match(texts[0]) and line['xf']<0.3 and TITLE_PHRASE.search(' '.join(texts)):
-            marks=[]   # a part heading carrying the part's total: "(b) Balance Sheet of … [40]"
+        if len(marks)==1 and marks[0][1] in totals and HEAD.match(texts[0]) and line['xf']<0.3 and not any(FIG.match(t) and not re.fullmatch(r'(?:19|20)\d{2}', t) for t in texts):
+            # a part heading carrying the part's total: "(b) Balance Sheet of … [40]", "(a) Sales Budget [16]", "(b) [8]" — nothing itself
+            # when priced lines follow; a theory part's heading ("(d) (i) Return on Capital Employed is 9.3% [10]") is its one priced line
+            priced_after=False
+            for j in range(i+1, min(len(lines), i+40)):
+                nt=[t for *_,t in lines[j]['ws']]
+                if (HEAD.match(nt[0]) and HEAD.match(nt[0]).group(1) not in ROMAN and lines[j]['xf']<0.3) or TITLE.match(nt[0]): break
+                if any(MARK.match(t) for t in nt) and any(FIG.match(t) and not re.fullmatch(r'(?:19|20)\d{2}', t) for t in nt): priced_after=True; break
+            if priced_after: marks=[]
         if boxed and not marks:
             flush_box(); pending_box=(boxed[0], line['p'], [], round(line['y']))
             rest=[t for t in texts if not BOX.match(t)]
@@ -212,7 +250,7 @@ def rows_of(lines, totals, grid_mode=False):
                         if headings>1 or j>i+2: break   # the section's own heading may follow its total; the next section ends the look
                         continue
                     if BOX.match(nt[0]): break
-                    if any(MARK.match(t) for t in nt): priced_after=True; break
+                    if any(MARK.match(t) for t in nt) and any(FIG.match(t) and not re.fullmatch(r'(?:19|20)\d{2}', t) for t in nt): priced_after=True; break
                 if priced_after: continue
         label=[]
         for k,(x0,y0,x1,t) in enumerate(ws):
@@ -267,11 +305,24 @@ def rows_of(lines, totals, grid_mode=False):
                 after=[]; j=i+1
                 while j<len(lines):
                     nt=[t for *_,t in lines[j]['ws']]
-                    if any(MARK.match(t) or BOX.match(t) for t in nt) or (HEAD.match(nt[0]) and lines[j]['xf']<0.3): break
+                    if any(MARK.match(t) or BOX.match(t) for t in nt) or (HEAD.match(nt[0]) and lines[j]['xf']<0.3 and j>i+1): break
                     if sum(1 for t in nt if FIG.match(t))>=2: break
                     if LETTERS.search(' '.join(nt)): after.append(' '.join(nt))
                     j+=1
+                block=False
+                if not after and only_marks and ws[0][0]/line['W']>=0.75:
+                    # the part's total at the right margin under its block: the unpriced lines above it, back to the heading, are the part
+                    before=[]; j=i-1
+                    while j>=0:
+                        nt=[t for *_,t in lines[j]['ws']]
+                        if any(MARK.match(t) or BOX.match(t) for t in nt): break
+                        if HEAD.match(nt[0]) and lines[j]['xf']<0.3: before.insert(0, ' '.join(nt)); break
+                        if LETTERS.search(' '.join(nt)) or any(FIG.match(t) for t in nt): before.insert(0, ' '.join(nt))
+                        j-=1
+                    if sum(ch.isalpha() for ch in ' '.join(before))>=4 or any(FIG.match(t) for b in before for t in b.split()): after=before; block=True
                 text=(' '.join([text]+after)).strip()[:400]
+                if block:
+                    rows.append({'text':text,'figure':None,'marks':n,'p':line['p'],'y':round(line['y']),'block':True}); continue
             rows.append({'text':text or '(unlabelled)','figure':fig,'marks':n,'p':line['p'],'y':round(line['y'])})
     flush_box()
     return rows
@@ -280,7 +331,11 @@ def task_parts(taskkey):
     return None if not m else {'q':int(m.group(1)),'sub':m.group(2),'letter':m.group(3),'roman':m.group(4),'sub2':m.group(5),'split':m.group(6)}
 def heading_span(lines, tp):
     if not tp['letter']: return None
-    heads=[(i,HEAD.match(l['ws'][0][3]).group(1)) for i,l in enumerate(lines) if HEAD.match(l['ws'][0][3]) and l['xf']<0.3]
+    heads=[]
+    for i,l in enumerate(lines):
+        if HEAD.match(l['ws'][0][3]) and l['xf']<0.3:
+            heads.append((i,HEAD.match(l['ws'][0][3]).group(1)))
+            if len(l['ws'])>1 and HEAD.match(l['ws'][1][3]) and HEAD.match(l['ws'][1][3]).group(1) in ROMAN: heads.append((i,HEAD.match(l['ws'][1][3]).group(1)))
     letters=[(i,h) for i,h in heads if h not in ROMAN]; romans=[(i,h) for i,h in heads if h in ROMAN]
     start=next((i for i,h in letters if h==tp['letter']), None)
     if start is None: return None
@@ -315,7 +370,7 @@ def solve(cs, lines, totals, scale, grid_mode=False):
         seg=heading_span(lines, tp)
         if not seg: continue
         rows=rows_of(lines[seg[0]:seg[1]], [t*scale for t in totals], grid_mode)
-        if rows and sum(r['marks'] for r in rows)==c['totalMarks']*scale and not tp['split']:
+        if rows and sum(r['marks'] for r in rows)==c['totalMarks']*scale and not tp['split'] and not any(r['text']=='(unlabelled)' for r in rows):
             resolved[c['id']]=rows; how[c['id']]='heading'; used.update((r['p'],r['y'],r['marks'],r['text']) for r in rows)
     # split cards ("2(a)-cash-flow", "2(a)-net-debt"): the parent's heading span shared out in the cards' order
     parents=collections.defaultdict(list)
@@ -338,6 +393,12 @@ def solve(cs, lines, totals, scale, grid_mode=False):
     for c,tp in cs:
         if c['id'] in resolved: continue
         need=c['totalMarks']*scale; got=0; take=[]
+        seg=heading_span(lines, tp)
+        if seg and seg[1]-seg[0]>=2 and not rows_of(lines[seg[0]:seg[1]], totals):
+            span=lines[seg[0]:seg[1]]; text=' '.join(t for l in span for *_,t in l['ws'] if not BOX.match(t))[:400]
+            if sum(ch.isalpha() for ch in text)>=20:
+                resolved[c['id']]=[{'text':text,'figure':None,'marks':need,'p':span[0]['p'],'y':round(span[0]['y']),'block':True,'inferred':True}]; how[c['id']]='inferred'
+                continue
         while pos<len(pool) and got<need: take.append(pool[pos]); got+=pool[pos]['marks']; pos+=1
         if got!=need:
             seg=heading_span(lines, tp)
