@@ -740,3 +740,84 @@ def unprinted(marks, note):
 
 
 _CELL_ONLY = re.compile(CELL.pattern)
+
+
+# ------------------------------------------------------------ fractions --
+# A stacked fraction: the numerator's glyphs printed above a drawn bar, the
+# denominator's below it, set smaller than the line around it. The text layer
+# hands the three pieces back as separate lines ("C =" / "q" / "V"), and joined
+# they read "C = q V" -- a different formula. fraction_text() reads each bar's
+# numerator and denominator from where they are PRINTED and writes the fraction
+# on one line with a solidus: "C = q/V". An operand of more than one symbol is
+# bracketed ("1/(4πε)") so the line cannot be read any other way. Every glyph
+# is the SEC's; the solidus and brackets only say what the bar said.
+_ATOM = re.compile(r'^(?:\d+(?:\.\d+)?|[A-Za-z\u0370-\u03ff][\u00b2\u00b3\u00b9\u2070-\u209f]*)$')
+
+
+def _region_text(spans):
+    """Spans of one region (left to right), super/subscripts read against the
+    region's own largest type."""
+    if not any(sp['text'].strip() for sp in spans):
+        return ''
+    spans = sorted(spans, key=lambda s: s['bbox'][0])
+    out = _line_text({'spans': spans})
+    return _norm(out)
+
+
+def _wrap(text, den=False):
+    t = text.strip()
+    if _ATOM.match(t):
+        return t
+    if not den and not re.search(r'[\s+\-\u2013\u2212×]', t):
+        return t
+    return f'({t})'
+
+
+def fraction_text(page, clip):
+    """The text inside `clip` with every stacked fraction written on one line."""
+    clip = fitz.Rect(*clip)
+    bars = [fitz.Rect(d['rect']) for d in page.get_drawings()
+            if d['rect'].height < 1.6 and d['rect'].width > 3 and clip.contains(fitz.Rect(d['rect']))]
+    bars.sort(key=lambda r: r.x0)
+    spans = []
+    for b in page.get_text('dict', clip=clip)['blocks']:
+        for ln in b.get('lines', []):
+            for sp in ln['spans']:
+                r = fitz.Rect(sp['bbox'])
+                cx, cy = (r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2
+                if not (clip.x0 <= cx <= clip.x1 and clip.y0 <= cy <= clip.y1):
+                    continue
+                spans.append(sp)
+    if not bars:
+        raise LookupError(f'no fraction bar inside {list(clip)}')
+    owner = {}
+    for i, sp in enumerate(spans):
+        if not sp['text'].strip():
+            continue          # a space belongs to the line around the fraction
+        r = fitz.Rect(sp['bbox'])
+        cx = (r.x0 + r.x1) / 2
+        # The glyph's own extent, not its line's: a trailing space set at full
+        # size widens a denominator's box past the bar.
+        for j, bar in enumerate(bars):
+            if bar.x0 - 1.5 <= cx <= bar.x1 + 1.5:
+                gy = (r.y0 + r.y1) / 2
+                owner[i] = (j, 'num' if gy < bar.y0 else 'den')
+                break
+    tokens = []   # (x, text)
+    outside = [sp for i, sp in enumerate(spans) if i not in owner]
+    # Outside text is grouped into runs separated by the bars.
+    for j, bar in enumerate(bars):
+        num = _region_text([sp for i, sp in enumerate(spans) if owner.get(i) == (j, 'num')])
+        den = _region_text([sp for i, sp in enumerate(spans) if owner.get(i) == (j, 'den')])
+        if not num or not den:
+            raise LookupError(f'fraction bar {list(bar)} has numerator {num!r}, denominator {den!r}')
+        tokens.append((bar.x0, f'{_wrap(num)}/{_wrap(den, den=True)}'))
+    edges = [b.x0 for b in bars] + [1e9]
+    lo = -1e9
+    for k, hi in enumerate(edges):
+        run = [sp for sp in outside if lo <= sp['bbox'][0] < hi]
+        if run:
+            tokens.append((run[0]['bbox'][0], _region_text(run)))
+        lo = bars[k].x1 if k < len(bars) else hi
+    tokens.sort()
+    return _norm(' '.join(t for _, t in tokens))

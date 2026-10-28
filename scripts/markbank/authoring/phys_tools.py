@@ -403,7 +403,12 @@ def cmd_scheme_rows(year, level):
     text = open(md, encoding='utf-8').read()
     if PHYS_ROWS.START in text:
         text = re.sub(re.escape(PHYS_ROWS.START) + r'.*?' + re.escape(PHYS_ROWS.END) + r'\n?', '', text, flags=re.S)
+    if CLIP_READS.START in text:
+        text = re.sub(re.escape(CLIP_READS.START) + r'.*?' + re.escape(CLIP_READS.END) + r'\n?', '', text, flags=re.S)
     body = '\n\n' + f'{PHYS_ROWS.START}\n' + '\n'.join(_phys_rows(pdf)) + f'\n{PHYS_ROWS.END}\n'
+    clips = _clip_reads(year, level)
+    if clips:
+        body += '\n' + f'{CLIP_READS.START}\n' + '\n'.join(clips) + f'\n{CLIP_READS.END}\n'
     with open(md, 'w', encoding='utf-8') as fh:
         fh.write(text.rstrip('\n') + body)
     print(md)
@@ -437,7 +442,7 @@ def _clip_reads(year, level):
 
     def walk(x):
         if isinstance(x, dict):
-            if x.get('type') == 'geo' and x.get('kind') in ('tokens', 'tokens-x'):
+            if x.get('type') == 'geo' and x.get('kind') in ('tokens', 'tokens-x', 'fraction'):
                 specs.append(x)
             for v in x.values():
                 walk(v)
@@ -448,7 +453,7 @@ def _clip_reads(year, level):
     out = []
     for spec in specs:
         value = R.read_geo(lifter, spec, spec.get('page'))
-        if len(value) >= 12 and value not in out:
+        if (len(value) >= 12 or spec.get('kind') == 'fraction') and value not in out:
             out.append(value)
     return out
 

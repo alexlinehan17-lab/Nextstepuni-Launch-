@@ -218,6 +218,13 @@ def read_geo(lifter, spec, sp):
         if len(row) != 1:
             raise Refusal(f'circled p{page}: {len(row)} circled numbers beside {spec["part"]!r}')
         value = f'{spec["part"]} — {chr(0x2460 + row[0] - 1)}'
+    elif kind == 'fraction':
+        # A formula the scheme sets as a stacked fraction, read from where its
+        # numerator and denominator are printed (phys_review_lib.fraction_text).
+        try:
+            value = B.fraction_text(src.doc[page - 1], clip)
+        except LookupError as e:
+            raise Refusal(f'fraction p{page}: {e}')
     elif kind == 'tokens':
         words = sorted(src.words(page, clip), key=lambda w: (round(w[0].y0 / 8), w[0].x0))
         # `strip` drops the printed answer line a filled-in blank sits on
