@@ -773,7 +773,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c2c-i", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 HL Section C Q2(c)(i)",
-    stem: "A BFY50 30 B 2N3053 50 C BC107 100 D TIP31 20",
     questionText: "A transistor has a collector current of 0.1 A and a base current of 1 mA. Select the most suitable transistor from the table given and justify your answer.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 6,
     rows: [
@@ -789,7 +788,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Higher Level — © State Examinations Commission.",
     id: "tech-2021-hl-c2c-ii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 HL Section C Q2(c)(ii)",
-    stem: "A BFY50 30 B 2N3053 50 C BC107 100 D TIP31 20",
     questionText: "Calculate the collector current for transistor D (TIP31) if the base current is 0.3 mA.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 6 + 8)"}, totalMarks: 8,
     rows: [
@@ -2795,9 +2793,8 @@ export const CARDS: SecCard[] = [
     questionText: "LED technology has a wide range of uses such as the cluster on the robot display. If an LED has a forward voltage of 2 V and draws a current of 25 mA, calculate the value of the protective resistor required when powered by a 12 V supply.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 3 + 3)"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "of a protective resistor required when powered by a 12 V supply.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "R = Vs – Vf / I LED", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "R = V / I = 12-2 / 0.025 = 400 Ω", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "R = Vs – Vf / I LED", marks: null, openList: true },
+    { id: "r-2", kind: "point", verbatim: "R = V / I = 12-2 / 0.025 = 400 Ω", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -4542,7 +4539,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2024 Higher Level — © State Examinations Commission.",
     id: "tech-2024-hl-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2024 HL Section C Q4(d)(i)",
-    stem: "A B C D Sales Time Sales A B C D Time",
     questionText: "Name and describe each of the lifecycle stages A, B, C, and D.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
     rows: [
@@ -5396,7 +5392,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2025 HL Section C Q2(b)(iii)",
-    stem: "An adjustable LED circuit activates in low light. +9 V R1 A Input output IC B R2 0 V",
+    stem: "An adjustable LED circuit activates in low light.",
     questionText: "Describe the operation of this circuit making reference to components IC, R1, and R2.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 2 + 8 + 6)"}, totalMarks: 6,
     rows: [
@@ -5597,7 +5593,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 HL Section C Q4(b)(i)",
-    stem: "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B. Cost (€) 8000 6000 4000 2000 0 100 200 300 400 Quantity",
+    stem: "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B.",
     questionText: "Determine, from the graph, the following information: • The cost of producing one unit by skilled labour • The fixed cost of computerised machinery • The break-even quantity (BEQ).",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -5619,7 +5615,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 HL Section C Q4(b)(ii)",
-    stem: "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B. Cost (€) 8000 6000 4000 2000 0 100 200 300 400 Quantity",
+    stem: "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B.",
     questionText: "Compare the profitable use of the skilled labour process with the automated process in both region X and region Y.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 6,
     rows: [
@@ -5642,7 +5638,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 HL Section C Q4(b)(iii)",
-    stem: "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B. Cost (€) 8000 6000 4000 2000 0 100 200 300 400 Quantity",
+    stem: "The cost of manufacturing a product by skilled labour is shown by line A on the graph below. The cost of automating the manufacturing process by purchasing additional computerised machinery is shown by line B.",
     questionText: "Outline one marketing advantage of a manually produced item and one marketing advantage of a machine produced item.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 6 + 6 + 4)"}, totalMarks: 4,
     rows: [
@@ -5693,7 +5689,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c4d-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 HL Section C Q4(d)(i)",
-    stem: "The Product-Process Matrix is a framework used to align a product with manufacturing processes, ensuring that operations are efficient and capable of meeting production requirements. High D C Volume of Product B A High Standardisation",
+    stem: "The Product-Process Matrix is a framework used to align a product with manufacturing processes, ensuring that operations are efficient and capable of meeting production requirements.",
     questionText: "Name the production process at each of the stages at A, B, C, and D.",
     tariffModel: {"kind":"questionTotal","notation":"(14 marks, 8 + 6)"}, totalMarks: 8,
     rows: [
@@ -5710,7 +5706,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2025 Higher Level — © State Examinations Commission.",
     id: "tech-2025-hl-c4d-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2025 HL Section C Q4(d)(ii)",
-    stem: "The Product-Process Matrix is a framework used to align a product with manufacturing processes, ensuring that operations are efficient and capable of meeting production requirements. High D C Volume of Product B A High Standardisation",
+    stem: "The Product-Process Matrix is a framework used to align a product with manufacturing processes, ensuring that operations are efficient and capable of meeting production requirements.",
     questionText: "Select a suitable production process for the manufacture of 10,000 promotional badges for a sports club. Justify your selection.",
     tariffModel: {"kind":"fixed","notation":"(14 marks, 8 + 6)"}, totalMarks: 6,
     rows: [
@@ -6271,7 +6267,7 @@ export const CARDS: SecCard[] = [
     questionText: "Sketch a front elevation and a plan of the child’s climbing arch shown.",
     tariffModel: {"kind":"fixed","notation":"(6 marks, 3 +3)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Sketch a front elevation and a plan of the child’s climbing arch shown.", marks: 6, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Sketch a front elevation and a plan of the child’s climbing arch shown.", marks: 6, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
     questionFigure: {
           "candId": "technology-2026-HL-paper-secA-q15-art",
@@ -6765,7 +6761,7 @@ export const CARDS: SecCard[] = [
     questionText: "Redraw and complete the op-amp circuit diagram shown for use as a voltage comparator.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 4 + 8 + 4)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "comparator.", marks: 8, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Redraw and complete the op-amp circuit diagram shown for use as a voltage comparator.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
     questionFigure: {
           "candId": "technology-2026-HL-paper-secC-q2b-art",

@@ -42,7 +42,7 @@
  {
   "ref": "2022 HL Section C Q4(b)(i)",
   "reason": "the answer the scheme prints for this part is a DRAWING, and what the text layer holds is the words written INSIDE it - a flowchart's boxes, a truth table's rows. Not one of them states a marking point, and each would be a row a student is asked to tick.",
-  "evidence": "2022 HL scheme, C Q4(b)(i): tariff '(16 marks, 8 + 2 + 6)'; the scheme reprints the ask ('Draw a graph to show the cost of manufacturing the headphone stands using each') and answers it graphically, leaving only 'method. Cost (€) 3D Printing 12000 Injection moulding 10000 8000 BEQ 6000 4000 2000 0 10000 20000 Qu' in the text layer"
+  "evidence": "2022 HL scheme, C Q4(b)(i): tariff '(16 marks, 8 + 2 + 6)'; the scheme reprints the ask ('Draw a graph to show the cost of manufacturing the headphone stands using each') and answers it graphically, leaving only 'Cost (€) 3D Printing 12000 Injection moulding 10000 8000 BEQ 6000 4000 2000 0 10000 20000 Quantity' in the text layer"
  },
  {
   "ref": "2022 OL Section A Q7",

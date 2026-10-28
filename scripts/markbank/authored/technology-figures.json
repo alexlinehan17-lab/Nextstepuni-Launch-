@@ -420,11 +420,67 @@
   "questionRef": "2026 HL Section C Q5(c)"
  },
  {
+  "file": "technology-2026-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a green floor-standing pillar drill: the motor and chuck at the top of a steel column, a machine vice on the table and a heavy cast base.",
+  "questionRef": "2026 OL Section A Q1"
+ },
+ {
+  "file": "technology-2026-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A yellow triangular warning sign with a black border showing a figure tripping over a raised step.",
+  "questionRef": "2026 OL Section A Q3"
+ },
+ {
+  "file": "technology-2026-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram: a battery feeding a motor M through a double-pole double-throw switch outlined in a red dashed box and labelled Switch A, with its two blades linked by a dashed line.",
+  "questionRef": "2026 OL Section A Q9"
+ },
+ {
+  "file": "technology-2026-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Shaded drawing of a ratchet and pawl: a toothed wheel with a keyed bore and a red arrow showing its rotation, with a pawl on a pivot above it and a red arrow showing the pawl lifting.",
+  "questionRef": "2026 OL Section A Q11"
+ },
+ {
+  "file": "technology-2026-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Outline line drawing of a pump-action soap dispenser in a ruled box: a tapered bottle with a collar and a pump head whose nozzle points to the right.",
+  "questionRef": "2026 OL Section A Q12"
+ },
+ {
+  "file": "technology-2026-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a clear phone cover with a magnetic ring on its back, seen from behind.",
+  "questionRef": "2026 OL Section B Q2(b)"
+ },
+ {
   "file": "technology-2026-HL-paper-secC-q4b-art.png",
   "kind": "figure",
   "truncated": false,
   "description": "A two-row table: Day 1 to 12 across the top and Defects 2, 3, 4, 5, 3, 2, 6, 4, 3, 7, 5, 4 beneath.",
   "questionRef": "2026 HL Section C Q4(b)"
+ },
+ {
+  "file": "technology-2026-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Colour photograph of a three-tiered wooden planter box on grass, three stepped troughs on a diagonal frame, with a white arrow labelled A pointing at its front.",
+  "questionRef": "2026 OL Section A Q4"
+ },
+ {
+  "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A lever diagram: a horizontal bar on a triangular fulcrum, a 40 N downward arrow at the left end 1 M from the fulcrum and a downward force F at the right end 4 M from it.",
+  "questionRef": "2026 OL Section A Q6"
  },
  {
   "file": "technology-2026-HL-scheme-secA-q8.png",
@@ -513,6 +569,30 @@
   "description": "The marking scheme's own answer to 2026 HL Section C Q5(d), as the State Examinations Commission printed it: a table comparing Composite materials with Treated softwood timber row by row under Fabrication techniques, Maintenance and Sustainability.",
   "solution": true,
   "questionRef": "2026 HL Section C Q5(d)"
+ },
+ {
+  "file": "technology-2026-OL-scheme-secA-q4.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Section A Q4, as the State Examinations Commission printed it: an elevation of the three-tiered planter box in outline, three shelves of equal width stepped one above the other between two uprights. The scheme prices it by quality: (8,6,4,2 Marks).",
+  "solution": true,
+  "questionRef": "2026 OL Section A Q4"
+ },
+ {
+  "file": "technology-2026-OL-scheme-secB-q2b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Section B Q2(b)(iii), as the State Examinations Commission printed it: a sectioned injection moulding machine labelled Hopper, Heater, Ram, Mould, Hydraulic fluid, Screw and Motor, beside the words Injection moulded.",
+  "solution": true,
+  "questionRef": "2026 OL Section B Q2(b)(iii)"
+ },
+ {
+  "file": "technology-2026-OL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2026 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision Button?, whose N branch loops back and whose Y branch runs LEDs On, Wait 2, Motor On, Melody On (dashed), Wait 15, LEDs Off, Motor Off and Melody Off (dashed) before looping back to Start; the dashed boxes are the modification (iii) asks for.",
+  "solution": true,
+  "questionRef": "2026 OL Section C Q1(b)(i)"
  },
  {
   "file": "technology-2021-HL-scheme-secC-q2a-ii.png",

@@ -39,6 +39,8 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 
+import tech_crops as TC                                      # noqa: E402
+
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v']
 
 # The three printed tariff shapes. Ordered longest-first: "(6 marks, 3 + 3)"
@@ -57,7 +59,10 @@ TARIFF = re.compile(
     r'|\(\s*(?P<splitonly>\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*' + _M + r'\s*\)'
     # "(6 x 1 mark)" -- the 2021 Higher table question, six cells at one mark.
     r'|\(\s*(?P<each>\d{1,2})\s*[x\u00d7\u2715]\s*(?P<per>\d{1,2})\s*' + _M + r'\s*\)'
-    r'|\(\s*(?P<only>\d{1,3})\s*' + _M + r'\s*\)', re.I)
+    r'|\(\s*(?P<only>\d{1,3})\s*' + _M + r'\s*\)'
+    # "(8,6,4,2 Marks)": 2026 Ordinary prices its sketch by quality, the
+    # best first. The part is worth the top mark; the steps are not a split.
+    r'|\(\s*(?P<ladder>\d{1,2}(?:\s*,\s*\d{1,2}){2,})\s*' + _M + r'\s*\)', re.I)
 
 # The Ordinary papers price a pure sketch question by QUALITY, not by content:
 # "(Very good sketch - 8 marks, good sketch - 6 marks, fair sketch - 4 marks)".
@@ -274,6 +279,36 @@ class TechScheme:
             if pm:
                 page = int(pm.group(1)) - 1
                 continue
+            # A drawing's lettering comes off the line HERE, before the heads
+            # are read: the 2026 Ordinary flowchart stands in the left margin
+            # of Option 1(b) and its boxes open every line of the answer --
+            # "Start (i) Complete a flowchart...", "Wait 2 (ii) Name a
+            # suitable motor..." -- so the roman heads were never seen and
+            # three parts became one. tech_crops.LABEL_ZONES names the
+            # drawing; the row it shares with the prose is cut by position.
+            rects = TC.scheme_zones(self.year, self.level, page)
+            if rects:
+                got = TC.strip_row_labels(text, TC.scheme_path(self.year, self.level),
+                                          page, rects)
+                if got is not None:
+                    text = got
+                    if not text:
+                        continue
+            # A drawing's lettering comes off the line HERE, before the heads
+            # are read: the 2026 Ordinary flowchart stands in the left margin
+            # of Option 1(b) and its boxes open every line of the answer --
+            # "Start (i) Complete a flowchart...", "Wait 2 (ii) Name a
+            # suitable motor..." -- so the roman heads were never seen and
+            # three parts became one. tech_crops.LABEL_ZONES names the
+            # drawing; the row it shares with the prose is cut by position.
+            rects = TC.scheme_zones(self.year, self.level, page)
+            if rects:
+                got = TC.strip_row_labels(text, TC.scheme_path(self.year, self.level),
+                                          page, rects)
+                if got is not None:
+                    text = got
+                    if not text:
+                        continue
             # Page furniture, unless it is carrying a tariff: the 2021
             # Ordinary scheme sets Question 3(d)'s "(6 Marks, 4+2)" on the same
             # line as the running footer, and dropping the line whole dropped
@@ -404,6 +439,12 @@ def _tariff(hit):
     if hit.group('total2'):
         terms = [int(x) for x in re.findall(r'\d+', hit.group('split2'))]
         return int(hit.group('total2')), terms
+    if hit.group('ladder'):
+        return max(int(x) for x in re.findall(r'\d+', hit.group('ladder'))), []
+    if hit.group('ladder'):
+        return max(int(x) for x in re.findall(r'\d+', hit.group('ladder'))), []
+    if hit.group('ladder'):
+        return max(int(x) for x in re.findall(r'\d+', hit.group('ladder'))), []
     if hit.group('splitonly'):
         terms = [int(x) for x in re.findall(r'\d+', hit.group('splitonly'))]
         return sum(terms), terms

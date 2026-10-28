@@ -363,6 +363,38 @@ REVIEWED = {
         'steep blue line A from the origin and a shallower red line B from '
         '3000, crossing at point C above 200, with the region X between them '
         'before C shaded green and the region Y after it shaded pink.',
+    # 2026 Ordinary (2026-10-28): the cropper's cuts for Q9 and Q12, and by-eye
+    # rects (tech_crops.BY_EYE) for the rest, each opened at 150 dpi.
+    'technology-2026-OL-paper-secA-q1-art':
+        'Colour photograph of a green floor-standing pillar drill: the motor '
+        'and chuck at the top of a steel column, a machine vice on the table '
+        'and a heavy cast base.',
+    'technology-2026-OL-paper-secA-q3-art':
+        'A yellow triangular warning sign with a black border showing a '
+        'figure tripping over a raised step.',
+    'technology-2026-OL-paper-secA-q4-art':
+        'Colour photograph of a three-tiered wooden planter box on grass, '
+        'three stepped troughs on a diagonal frame, with a white arrow '
+        'labelled A pointing at its front.',
+    'technology-2026-OL-paper-secA-q6-ii-art':
+        'A lever diagram: a horizontal bar on a triangular fulcrum, a 40 N '
+        'downward arrow at the left end 1 M from the fulcrum and a downward '
+        'force F at the right end 4 M from it.',
+    'technology-2026-OL-paper-secA-q9-art':
+        'A circuit diagram: a battery feeding a motor M through a '
+        'double-pole double-throw switch outlined in a red dashed box and '
+        'labelled Switch A, with its two blades linked by a dashed line.',
+    'technology-2026-OL-paper-secA-q11-art':
+        'Shaded drawing of a ratchet and pawl: a toothed wheel with a keyed '
+        'bore and a red arrow showing its rotation, with a pawl on a pivot '
+        'above it and a red arrow showing the pawl lifting.',
+    'technology-2026-OL-paper-secA-q12-art':
+        'Outline line drawing of a pump-action soap dispenser in a ruled box: '
+        'a tapered bottle with a collar and a pump head whose nozzle points '
+        'to the right.',
+    'technology-2026-OL-paper-secB-q2b-art':
+        'Colour photograph of a clear phone cover with a magnetic ring on its '
+        'back, seen from behind.',
     # By-eye rects (tech_crops.BY_EYE) for in-window parts.
     'technology-2021-HL-paper-secB-q3b-art':
         'A circuit diagram: a variable resistor R1 and a thermistor R2 in series '
@@ -809,6 +841,32 @@ def main():
                     os.path.join(args.dir, f'{key}.png'))
         cut.append((year, level, section, q, letter, key, rect, False, path, page))
 
+    # By-eye rects the worklist loop could not reach: one keyed to a single
+    # roman ("q6-ii", the lever diagram that only (ii) asks about).
+    done = {c[5] for c in cut}
+    for key, (booklet, page_no, rect) in TC.BY_EYE.items():
+        if key in done:
+            continue
+        yr, lv, sec, qq, le, _roman = TC.parse_key(key)
+        path = TC.paper_path(yr, lv, booklet)
+        if args.write:
+            with pymupdf.open(path) as doc:
+                doc[page_no].get_pixmap(clip=pymupdf.Rect(*rect), dpi=200).save(
+                    os.path.join(args.dir, f'{key}.png'))
+        cut.append((yr, lv, sec, qq, le, key, tuple(rect), False, path, page_no))
+    # By-eye rects the worklist loop could not reach: one keyed to a single
+    # roman ("q6-ii", the lever diagram that only (ii) asks about).
+    done = {c[5] for c in cut}
+    for key, (booklet, page_no, rect) in TC.BY_EYE.items():
+        if key in done:
+            continue
+        yr, lv, sec, qq, le, _roman = TC.parse_key(key)
+        path = TC.paper_path(yr, lv, booklet)
+        if args.write:
+            with pymupdf.open(path) as doc:
+                doc[page_no].get_pixmap(clip=pymupdf.Rect(*rect), dpi=200).save(
+                    os.path.join(args.dir, f'{key}.png'))
+        cut.append((yr, lv, sec, qq, le, key, tuple(rect), False, path, page_no))
     fresh = [c for c in cut if not c[7]]
     unreviewed = [c[5] for c in fresh
                   if c[5] not in REVIEWED and c[5] not in REJECTED]

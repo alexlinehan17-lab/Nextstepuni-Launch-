@@ -162,7 +162,7 @@ SUBJECTS = {
     # The window is a DECISION: 2021-2025 shipped first; the archive 2010-2020
     # and 2026 are admitted one sitting at a time, as each is carded under the
     # year lane (2026-10-28), so census, ledger and deck measure the same thing.
-    'technology': {'mode': 'sections', 'from': 2021, 'also': [[2026, 'hl']]},
+    'technology': {'mode': 'sections', 'from': 2021, 'also': [[2026, 'hl'], [2026, 'ol']]},
     # Religious Education restarts nothing and numbers almost nothing: three
     # UNITS hold ten lettered SECTIONS, and only Section A (Unit One) prints
     # "Question 1..3" at all. Sections B-J address their asks by part alone,

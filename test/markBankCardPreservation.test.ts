@@ -773,7 +773,7 @@ const decks = [
    * end from a paper-anchored census in one pass. Enrolled explicitly so a
    * later regeneration cannot silently omit or replace any of its cards. */
   ['technology:higher', TECHNOLOGY_HIGHER, 444, 'c7ba61ac47c654c637b0fb0435ed9f6dfefad2605d1a82670c0fde4c8c828b11'],
-  ['technology:ordinary', TECHNOLOGY_ORDINARY, 371, '6c246943d676430cd3c205bec722be43ccbe525f4be314cfd3c69969b623d60b'],
+  ['technology:ordinary', TECHNOLOGY_ORDINARY, 455, '642bc2284e09479d6735654ae2b8752b75d7567ca8670776a0a413f702d6bfb7'],
   /* 2026-09-10: History, the nineteenth subject, and the first carded
    * against TWO papers per sitting — a candidate sits either the Later
    * Modern or the Early Modern field of study, and both are now in the
@@ -1405,7 +1405,8 @@ describe('Mark Bank card preservation', () => {
     // Technology (2026-10-28, the every-printed-ask lane): its 716 frozen
     // cards gain 99 -- 2026 Higher carded part by part (83 asks, 83 cards)
     // and 16 in-window parts that had been refused for a missing picture or
-    // a drawn answer -- and withdraw none: 22,970 + 99 = 23,069.
+    // a drawn answer -- and withdraw none: 22,970 + 99 = 23,069. Then 2026
+    // Ordinary, 84 asks, 84 cards: 23,153.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1422,9 +1423,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_069 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_153 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_069 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_153 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

@@ -50825,7 +50825,7 @@
  },
  "technology-2024-OL-paper-secC-q2b-art": {
   "src": "/exam-figures/technology/markbank/technology-2024-OL-paper-secC-q2b-art.png",
-  "md5": "878267a1b8a7000cb20c0b1c5c3a7c32",
+  "md5": "33c2290c1e5f0d819a6be36edf7dbd0a",
   "alt": "A circuit diagram of a 555 monostable between +V and 0V rails: two resistors from +V, a push switch, the 555 with pins 8, 4, 6, 7, 2 and 1 marked and its output at pin 3, and an electrolytic capacitor C.",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -51169,5 +51169,129 @@
   "year": 2026,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Technology 2026 Higher Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secA-q1-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secA-q1-art.png",
+  "md5": "4f86229b499dd9894e78e8d9cbe81b90",
+  "alt": "Colour photograph of a green floor-standing pillar drill: the motor and chuck at the top of a steel column, a machine vice on the table and a heavy cast base.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q1",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secA-q3-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secA-q3-art.png",
+  "md5": "c848819b5818f2735a6c155b32c82b43",
+  "alt": "A yellow triangular warning sign with a black border showing a figure tripping over a raised step.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q3",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secA-q9-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secA-q9-art.png",
+  "md5": "5f78da86141e71f2ed05e6050d7fad49",
+  "alt": "A circuit diagram: a battery feeding a motor M through a double-pole double-throw switch outlined in a red dashed box and labelled Switch A, with its two blades linked by a dashed line.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q9",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secA-q11-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secA-q11-art.png",
+  "md5": "47c9c4253ee9324e89f0e693abe4f9d3",
+  "alt": "Shaded drawing of a ratchet and pawl: a toothed wheel with a keyed bore and a red arrow showing its rotation, with a pawl on a pivot above it and a red arrow showing the pawl lifting.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q11",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secA-q12-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secA-q12-art.png",
+  "md5": "e43ce7f7d133271fbc6790d535fce640",
+  "alt": "Outline line drawing of a pump-action soap dispenser in a ruled box: a tapered bottle with a collar and a pump head whose nozzle points to the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q12",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secB-q2b-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secB-q2b-art.png",
+  "md5": "4638d95cb17b4f9ad85ee043fb316a25",
+  "alt": "Colour photograph of a clear phone cover with a magnetic ring on its back, seen from behind.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section B Q2(b)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secA-q4-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secA-q4-art.png",
+  "md5": "580e278a971e7d8decea0c74a37ed06e",
+  "alt": "Colour photograph of a three-tiered wooden planter box on grass, three stepped troughs on a diagonal frame, with a white arrow labelled A pointing at its front.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q4",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-paper-secA-q6-ii-art": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-paper-secA-q6-ii-art.png",
+  "md5": "8874dfacbf044dcd2e22cae3c6867803",
+  "alt": "A lever diagram: a horizontal bar on a triangular fulcrum, a 40 N downward arrow at the left end 1 M from the fulcrum and a downward force F at the right end 4 M from it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q6",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-scheme-secA-q4": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-scheme-secA-q4.png",
+  "md5": "fa06d16be238bdb8ac8dad419798f871",
+  "alt": "The marking scheme's own answer to 2026 OL Section A Q4, as the State Examinations Commission printed it: an elevation of the three-tiered planter box in outline, three shelves of equal width stepped one above the other between two uprights. The scheme prices it by quality: (8,6,4,2 Marks).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section A Q4",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-scheme-secB-q2b-iii": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-scheme-secB-q2b-iii.png",
+  "md5": "7ec380ed13d19c85680bcab82694f77a",
+  "alt": "The marking scheme's own answer to 2026 OL Section B Q2(b)(iii), as the State Examinations Commission printed it: a sectioned injection moulding machine labelled Hopper, Heater, Ram, Mould, Hydraulic fluid, Screw and Motor, beside the words Injection moulded.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section B Q2(b)(iii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2026-OL-scheme-secC-q1b-i": {
+  "src": "/exam-figures/technology/markbank/technology-2026-OL-scheme-secC-q1b-i.png",
+  "md5": "0a6e3e9010ca8af049a69d4736999b62",
+  "alt": "The marking scheme's own answer to 2026 OL Section C Q1(b)(i), as the State Examinations Commission printed it: a flowchart from Start to the decision Button?, whose N branch loops back and whose Y branch runs LEDs On, Wait 2, Motor On, Melody On (dashed), Wait 15, LEDs Off, Motor Off and Melody Off (dashed) before looping back to Start; the dashed boxes are the modification (iii) asks for.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Section C Q1(b)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2026 Ordinary Level — © State Examinations Commission"
  }
 }

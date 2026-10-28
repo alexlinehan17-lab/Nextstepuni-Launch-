@@ -125,6 +125,14 @@ TRAILING_LABEL = re.compile(r'(?<=[.?!])\s+[A-Z][a-z]{2,}:\s*$')
 # carousel". A stimulus is a sentence; a caption closes nothing and is short.
 CAPTION = re.compile(r'^(?:\S+\s+){0,7}\S*[^.?!:]$')
 
+
+def flattened_table(text):
+    """A table's cells read as prose: no sentence, half the tokens short."""
+    words = text.split()
+    if len(words) < 8 or re.search(r'[.?!]', text):
+        return False
+    return sum(1 for w in words if len(w) <= 3) >= 0.5 * len(words)
+
 MIN_CUE_WORDS = 4
 # How much of the scheme's cue the paper's ask must hold before the pairing
 # counts as confirmed by wording rather than by address.
@@ -216,6 +224,14 @@ def split_cue(lines, ask):
         if pos > at and matched >= max(2, int(0.6 * len(line_words))):
             cue.append(points.pop(0))
             at = pos
+        elif cue and not re.search(r'[.?!:]$', cue[-1]) \
+                and points[0][:1].islower():
+            # The reprint wraps and paraphrases: 2026 Ordinary 4(b)(iii)
+            # reprints "...at stage 4" / "of a products life cycle." where
+            # the paper says "in the lifecycle of a product". A line that
+            # opens in lower case under an unclosed cue line is the cue's
+            # own sentence going on, never an answer.
+            cue.append(points.pop(0))
         else:
             break
     if not points and cue:
@@ -594,6 +610,9 @@ def author(bind_figures=True):
                           or figures.get((year, level, section, q, letter, None)))
                 solution = solutions.get((year, level, section, q, letter, roman))
                 paper_labels = TC.paper_labels(year, level, figure) if figure else set()
+                for key in TC.BY_EYE:
+                    if TC.parse_key(key)[:5] == (year, level, section, q, letter):
+                        paper_labels |= TC.paper_labels(year, level, key)
                 # The lettering printed inside that picture, which the paper's
                 # text layer welds onto the end of the ask: "...the circuit
                 # shown. Calculation: 40 Ω 10 Ω 10 Ω V 12V". The crop carries
@@ -655,7 +674,11 @@ def author(bind_figures=True):
                     piece = TC.strip_labels(piece, paper_labels)
                     piece = TRAILING_LABEL.sub('', piece).strip()
                     piece = re.sub(r'\s+OR\s*$', '', piece)
-                    if not keeps_stem(piece, question) or CAPTION.match(piece):
+                    # A neighbouring figure's lone letter ("...in electronics. A")
+                    # and a table the walker flattened ("Week 1 Week 2 ... Task D").
+                    piece = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', piece)
+                    if not keeps_stem(piece, question) or CAPTION.match(piece) \
+                            or flattened_table(piece):
                         continue
                     if not figure and points_at_print(piece):
                         if LEANS_ON_STEM.search(question):
@@ -706,6 +729,14 @@ def author(bind_figures=True):
                     points = kept or points[-1:]
                 if len(points) > 1:
                     points = [p for p in points if not ACCEPTED_NOTE.match(p)]
+                if backed_off and solution and backed_off in points:
+                    # The reprint consumed every line and the scheme's answer
+                    # is its DRAWING (the crop is bound): the back-off line is
+                    # the end of the question, not a row. 2023 Ordinary
+                    # 1(b)(i)'s block is the paper's own bullets above a
+                    # flowchart, and "rotating and the light bulb turns off."
+                    # shipped as its 8-mark answer.
+                    points = []
                 ask_row = bool(solution and solution in TC.ASK_ONLY)
                 if not ask_row and (not points or graphic_fragments(points)):
                     # The answer is a DRAWING: the text layer holds nothing,

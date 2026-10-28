@@ -100,7 +100,18 @@ BY_EYE = {
     'technology-2021-HL-paper-secC-q4c-art': ('039', 7, (106, 132, 478, 316)),
     'technology-2021-OL-paper-secC-q2b-art': ('039', 4, (349, 204, 562, 408)),
     'technology-2023-HL-paper-secC-q4d-art': ('039', 7, (118, 368, 482, 542)),
-    'technology-2024-OL-paper-secC-q2b-art': ('039', 4, (345, 230, 556, 370)),
+    'technology-2024-OL-paper-secC-q2b-art': ('039', 4, (338, 230, 556, 370)),
+    # 2026 Ordinary. The cropper's own cuts for Q1, Q3 and Q11 took both
+    # asks and their answer boxes; these are the pictures alone.
+    'technology-2026-OL-paper-secA-q1-art': ('014', 2, (452, 132, 546, 318)),
+    'technology-2026-OL-paper-secA-q3-art': ('014', 2, (428, 596, 546, 694)),
+    'technology-2026-OL-paper-secA-q4-art': ('014', 3, (82, 92, 244, 254)),
+    # The lever diagram only (ii) asks about; (i) names the see-saw.
+    'technology-2026-OL-paper-secA-q6-ii-art': ('014', 3, (78, 618, 262, 734)),
+    # The cropper's own cut, kept here so the stem loses "Switch A".
+    'technology-2026-OL-paper-secA-q9-art': ('014', 4, (357.7, 595.3, 546.4, 732.8)),
+    'technology-2026-OL-paper-secA-q11-art': ('014', 5, (62, 298, 174, 446)),
+    'technology-2026-OL-paper-secB-q2b-art': ('039', 1, (496, 262, 552, 386)),
 }
 
 # SCHEME crops: key -> (page index, rect, what was seen). Published with
@@ -175,6 +186,25 @@ SOLUTIONS = {
         "State Examinations Commission printed it: a table comparing Composite "
         "materials with Treated softwood timber row by row under Fabrication "
         "techniques, Maintenance and Sustainability."),
+    # 2026 Ordinary.
+    'technology-2026-OL-scheme-secA-q4': (4, (295, 100, 440, 235),
+        "The marking scheme's own answer to 2026 OL Section A Q4, as the State "
+        "Examinations Commission printed it: an elevation of the three-tiered "
+        "planter box in outline, three shelves of equal width stepped one above "
+        "the other between two uprights. The scheme prices it by quality: "
+        "(8,6,4,2 Marks)."),
+    'technology-2026-OL-scheme-secB-q2b-iii': (7, (418, 388, 556, 472),
+        "The marking scheme's own answer to 2026 OL Section B Q2(b)(iii), as the "
+        "State Examinations Commission printed it: a sectioned injection "
+        "moulding machine labelled Hopper, Heater, Ram, Mould, Hydraulic fluid, "
+        "Screw and Motor, beside the words Injection moulded."),
+    'technology-2026-OL-scheme-secC-q1b-i': (9, (40, 340, 180, 745),
+        "The marking scheme's own answer to 2026 OL Section C Q1(b)(i), as the "
+        "State Examinations Commission printed it: a flowchart from Start to "
+        "the decision Button?, whose N branch loops back and whose Y branch "
+        "runs LEDs On, Wait 2, Motor On, Melody On (dashed), Wait 15, LEDs "
+        "Off, Motor Off and Melody Off (dashed) before looping back to Start; "
+        "the dashed boxes are the modification (iii) asks for."),
     # In-window drawn answers that shipped as fragment rows or stayed open.
     'technology-2021-HL-scheme-secC-q2a-ii': (16, (85, 190, 462, 302),
         "The marking scheme's own answer to 2021 HL Section C Q2(a)(ii), as the "
@@ -227,6 +257,20 @@ LABEL_ZONES = {
         # Page 12: the worm-gear picture beside 3(b)(i), lettered Worm gear
         # and Motor drive.
         (11, (395, 275, 548, 352)),
+    ],
+    (2026, 'ol'): [
+        # Page 5: the lever diagram beside 6(ii)'s calculation (40 N, F, 1M, 4M).
+        (4, (80, 580, 262, 700)),
+        # Page 6: the saucepan photograph beside 7(i), captioned Handle.
+        (5, (418, 48, 562, 176)),
+        # Page 10: the flowchart in the margin of Option 1(b).
+        (9, (40, 340, 180, 745)),
+        # Page 12: the dark-sensing circuit beside 2(b), lettered A and B.
+        (11, (425, 228, 562, 352)),
+        # Page 14: the life-cycle graph beside 4(b), lettered 1 2 3 4, Sales, Time.
+        (13, (40, 228, 228, 348)),
+        # Page 15: the coffee-table photograph beside 5(b), captioned Leg assembly.
+        (14, (445, 236, 548, 370)),
     ],
 }
 
