@@ -431,6 +431,15 @@ PROSE_MARKER_BLOCKS[('physics', 2026, 'ol')] = [
     '(a) the magnet is moved in and out of the coil more quickly,',
     '(b) a similar sized copper rod is moved in and out of the coil.',
     '(a) Suggest a reason why a galvanometer may be used', '(b) Draw the circuit symbol for a galvanometer.']
+# 2024 OL Physics Q14 (paper page 13, rendered and looked at) is letter-major, (a)-(d), and
+# prints two letters INSIDE (b)(iv): "(iv) (a) Draw a circuit diagram to show a semiconductor
+# diode connected in series with a filament bulb." / "(b) Indicate if the bulb is lighting or
+# not. (10)". Each was read as a top-level letter: the (a) ask filed as words of Q14(a)'s
+# lead-in, the (b) ask as words of Q14(b)'s, and the census read Q14(b)(iv) empty (flag
+# empty-leaf). Read as lines of the roman that is open, both stay in Q14(b)(iv).
+PROSE_MARKER_BLOCKS[('physics', 2024, 'ol')] = [
+    '(a) Draw a circuit diagram to show a semiconductor diode connected in series',
+    '(b) Indicate if the bulb is lighting or not.']
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')

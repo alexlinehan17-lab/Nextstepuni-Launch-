@@ -406,6 +406,526 @@
   ],
   "solution": true
  },
+ "physics-2024-ol-q1-tables": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+  "md5": "57c1ae8539adb55dc922c047d6495879",
+  "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q1(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   85,
+   255,
+   545,
+   334
+  ]
+ },
+ "physics-2024-ol-q10-pipe": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q10-pipe.png",
+  "md5": "627f5a252ed578a2281f42fcd46c33b9",
+  "alt": "Diagram of a pipe closed at the bottom and open at the top, with a curve drawn inside it for the wave; an arrow labelled X points to the open top and an arrow labelled Y points to the closed bottom.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q10(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   462,
+   168,
+   545,
+   310
+  ]
+ },
+ "physics-2024-ol-q10vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q10vi-question.png",
+  "md5": "4ee798be9ee2332eb8a6c794bc06a9bb",
+  "alt": "The printed question: (vi) The distance from X to Y is taken as λ/4. Calculate the length of the pipe.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q10(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   80,
+   312,
+   465,
+   337
+  ]
+ },
+ "physics-2024-ol-q11-circuit": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-circuit.png",
+  "md5": "9c9b570e5f529960a115fe31af19652d",
+  "alt": "Circuit diagram: a coil of wire with a meter X connected in parallel across it, in series with a meter Y, a variable resistor labelled Z and a battery of cells.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q11(ix)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   322,
+   345,
+   512,
+   492
+  ]
+ },
+ "physics-2024-ol-q11-plug": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-plug.png",
+  "md5": "b4c5f755046cdd967cd044e874f8a9f0",
+  "alt": "Diagram of the inside of a three-pin plug with its parts labelled: a wire labelled A, a wire labelled neutral, a wire labelled B, the fuse, the cable grip and the cable.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q11(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   322,
+   72,
+   542,
+   215
+  ]
+ },
+ "physics-2024-ol-q12vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q12vi-question.png",
+  "md5": "164d1f60fe83e3078359071c77c0ecc8",
+  "alt": "The printed question: (vi) When Pu–239 decays, it emits alpha particles (α with 4 above and 2 below). What is the daughter nucleus X in the nuclear reaction below when an atom of Pu (239 above, 94 below) emits an alpha particle? Below it: Pu (239 above, 94 below) → X + α (4 above, 2 below), the numbers set after each symbol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   80,
+   352,
+   530,
+   412
+  ]
+ },
+ "physics-2024-ol-q12vi-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q12vi-scheme.png",
+  "md5": "f069f017056a77c45af0d4d8f094b3ae",
+  "alt": "The marking scheme's answer: U with 235 above and 92 below, set after the symbol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 18,
+  "sourceRect": [
+   110,
+   508,
+   145,
+   530
+  ],
+  "solution": true
+ },
+ "physics-2024-ol-q14a-balanced": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-balanced.png",
+  "md5": "775d6011131e9c67170de0889efefaa8",
+  "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 520 N pointing right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(a)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   110,
+   160,
+   375,
+   196
+  ]
+ },
+ "physics-2024-ol-q14a-unbalanced": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-unbalanced.png",
+  "md5": "94ea8c93584316f45e6d53e59f749657",
+  "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 680 N pointing right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(a)(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   110,
+   366,
+   380,
+   402
+  ]
+ },
+ "physics-2024-ol-q14c-grating": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14c-grating.png",
+  "md5": "76c2fa5048d64f8b7141507ca5096b24",
+  "alt": "Diagram: a laser sends a ray of light to a diffraction grating; lines spread from the grating to a white screen marked with bright spots labelled n = 2, n = 1, n = 0, n = 1, n = 2 from top to bottom.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(c)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   180,
+   106,
+   445,
+   255
+  ]
+ },
+ "physics-2024-ol-q14ciii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14ciii-scheme.png",
+  "md5": "564742c09a366ee2c50842a07b068da2",
+  "alt": "The marking scheme's line: λ = (2.5 × 10⁻⁶)(sin 14.6°) = 6.3 × 10⁻⁷ m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(c)(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 21,
+  "sourceRect": [
+   138,
+   642,
+   380,
+   662
+  ],
+  "solution": true
+ },
+ "physics-2024-ol-q14d-pear": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q14d-pear.png",
+  "md5": "86f962ea9ec86514309631d42e5dc89d",
+  "alt": "Photograph of a pear-shaped metal conductor, rounded at one end and pointed at the other, mounted on an insulating stand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(d)(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: www.curiousscience.com/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   463,
+   630,
+   542,
+   723
+  ]
+ },
+ "physics-2024-ol-q1iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q1iii-question.png",
+  "md5": "1986a40e8365208c97eb26ba32b30a45",
+  "alt": "The printed question: (iii) Copy the diagram of the metre stick below into your answerbook. Two of the forces have been included. Complete your diagram to show all upward and downward forces and their positions. (18) Below it, a metre stick marked from 10 cm to 90 cm, with an upward arrow labelled 6 N at the 20 cm mark and a downward arrow labelled 3 N at the 50 cm mark.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q1(iii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   80,
+   373,
+   545,
+   532
+  ]
+ },
+ "physics-2024-ol-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q2-table.png",
+  "md5": "00145fd0aed627283e63b481658fef0f",
+  "alt": "Table of the results: u (cm) 18, 25, 30; v (cm) 90, 38, 30.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q2(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   85,
+   196,
+   545,
+   252
+  ]
+ },
+ "physics-2024-ol-q3-calc": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q3-calc.png",
+  "md5": "b14c6eb3f6e41c6cc0a4ee392b19cd64",
+  "alt": "The calculation printed for completion: Heat energy added = Heat gained by water and calorimeter; ΔE = m(water) c(water) Δθ(water) + m(calorimeter) c(copper) Δθ(calorimeter); 3467 = A × c(water) × B + 0.106 × 390 × B.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q3(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   95,
+   600,
+   545,
+   680
+  ]
+ },
+ "physics-2024-ol-q4-sonometer": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-sonometer.png",
+  "md5": "95968106537422b089f1b4422f24e629",
+  "alt": "Diagram of the apparatus: a string stretched along the top of a long box over two bridges, with a paper rider on the string between them, passing over a pulley at the right-hand end to hanging weights.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   222,
+   110,
+   545,
+   252
+  ],
+  "maskedFurniture": [
+   [
+    222,
+    197,
+    448,
+    252
+   ]
+  ]
+ },
+ "physics-2024-ol-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-table.png",
+  "md5": "3c6482b8f681c15f5abfd34801333091",
+  "alt": "Table of the results: f (Hz) 256, 320, 341, 427, 480, 512; l (m) 0.214, 0.171, 0.160, 0.127, 0.114, 0.107; 1/l (m⁻¹) 4.67, 5.85, and four empty cells.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   85,
+   297,
+   545,
+   390
+  ]
+ },
+ "physics-2024-ol-q4v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4v-question.png",
+  "md5": "637850536438c8524bd755fbef35b6cc",
+  "alt": "The printed question: (v) Copy and complete the table above into your answerbook by calculating the value of 1/l to 2 decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   391,
+   520,
+   430
+  ]
+ },
+ "physics-2024-ol-q4vi-question": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q4vi-question.png",
+  "md5": "67ca6cbc4115b2150d35ed6818a6c840",
+  "alt": "The printed question: (vi) Use the data to plot a graph of 1/l against f.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   428,
+   520,
+   453
+  ]
+ },
+ "physics-2024-ol-q5-table": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q5-table.png",
+  "md5": "0f121140bb5d64cbd75dacfa95d23315",
+  "alt": "Table of the data: T (°C) 10, 20, 30, 40, 50, 60; R (Ω) 5.2, 5.9, 6.5, 7.2, 7.9, 8.5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q5(iv)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   85,
+   585,
+   545,
+   625
+  ]
+ },
+ "physics-2024-ol-q6c-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q6c-diagram.png",
+  "md5": "19fb534b11569dadaa604b05052d056a",
+  "alt": "Diagram: a spring balance reading 5 N holds a weight above a container of water; beside it, a balance reading 3 N holds the same weight under the water in a full container, the overflow running into a small dish labelled 2 N of water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q6(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: www.britannica.com/science/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   372,
+   188,
+   542,
+   302
+  ]
+ },
+ "physics-2024-ol-q7viii-scheme": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q7viii-scheme.png",
+  "md5": "a8bf00038877e59c83c5357912010594",
+  "alt": "The marking scheme's sketch: velocity against time, a straight rise from the origin, a level section, then a steep straight fall to the time axis, then a level line along the axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q7(viii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   100,
+   665,
+   270,
+   736
+  ],
+  "solution": true
+ },
+ "physics-2024-ol-q8-concave-photo": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-concave-photo.png",
+  "md5": "8b0b64116277a28b4b98c2d46a54ae1a",
+  "alt": "Photograph of a large round concave mirror on a wall: a child labelled B stands beside it, a child labelled A stands close in front of it, and their images appear in the mirror.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   312,
+   495,
+   541,
+   660
+  ]
+ },
+ "physics-2024-ol-q8-plane-mirror": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-plane-mirror.png",
+  "md5": "dfffadd6142cb320edab75b3054fe9c1",
+  "alt": "Photograph of a small plane mirror standing upright on a sheet of paper, held by a bulldog clip, with a word printed on the paper in front of it and the word's image in the mirror.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   376,
+   64,
+   545,
+   183
+  ]
+ },
+ "physics-2024-ol-q8-ray-diagram": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-ray-diagram.png",
+  "md5": "d85efade84beaf99e7ec877011335bad",
+  "alt": "Ray diagram to copy: a principal axis drawn as a dashed line, an upright arrow labelled object standing on the axis, a point labelled f on the axis between the object and the mirror, and a concave mirror drawn as a curve at the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(v)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   84,
+   322,
+   500,
+   478
+  ]
+ },
+ "physics-2024-ol-q9-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2024-ol-q9-graph.png",
+  "md5": "c8e0a099819abe2b6fae80f717ac4394",
+  "alt": "Graph of temperature (°C), from 0 to 100, against heat added (J): plotted points rise in a straight line through the part labelled liquid, run level for three points where an arrow labelled A points, then rise again through the part labelled gas.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q9(ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   78,
+   130,
+   518,
+   345
+  ]
+ },
  "physics-2025-hl-q1-table": {
   "src": "/exam-figures/physics/markbank/physics-2025-hl-q1-table.png",
   "md5": "8947c1e27358c74a4517b8b50177fc9b",

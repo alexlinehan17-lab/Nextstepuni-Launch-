@@ -128,40 +128,5 @@
     "ref": "2023 OL Q14(d)(ii)",
     "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content.",
     "evidence": "Scheme p.21 (plotting the magnetic field around a current-carrying conductor): \"apparatus [6] method [6] [accept partial answers for 3 in each case]\"."
-  },
-  {
-    "ref": "2024 OL Q10(ii)",
-    "reason": "Describe-an-experiment part; the scheme prints only the marking convention with no answer content.",
-    "evidence": "apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case] (scheme p16)"
-  },
-  {
-    "ref": "2024 OL Q14(d)(ii)",
-    "reason": "Describe-an-experiment part; the scheme prints only the marking convention with no answer content.",
-    "evidence": "apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case] (scheme p22)"
-  },
-  {
-    "ref": "2024 OL Q2(vi)",
-    "reason": "The scheme prints only the credit criterion and never gives the value of f, so there is no answer content to lift.",
-    "evidence": "calculation of f [6] [accept partial answer for 3] (scheme p7)"
-  },
-  {
-    "ref": "2024 OL Q6(d)",
-    "reason": "Describe-an-experiment part whose scheme prints only the marking convention with no answer content.",
-    "evidence": "apparatus method observation [3+2+2] (scheme p11)"
-  },
-  {
-    "ref": "2024 OL Q6(k)",
-    "reason": "The scheme names no eye part and states no function; the print is the credit criterion alone.",
-    "evidence": "named part of the eye function [4+3] (scheme p12)"
-  },
-  {
-    "ref": "2024 OL Q6(l)",
-    "reason": "The credit is the drawn magnetic-field figure itself; the scheme prints no separable wording for its components.",
-    "evidence": "shape direction [4+3] (scheme p12)"
-  },
-  {
-    "ref": "2024 OL Q8(iv)",
-    "reason": "Describe-an-experiment part; the scheme prints only the marking convention with no answer content.",
-    "evidence": "apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case] (scheme p14)"
   }
 ]

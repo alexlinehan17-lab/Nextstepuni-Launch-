@@ -3550,12 +3550,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q1-i", topicId: "phys-u2", conceptId: "measuring-weight-of-metre-stick",
     section: "A", questionRef: "2024 OL Q1(i)",
-    stem: "A student performed an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung weights from the metre stick until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark.",
+    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark.",
     questionText: "How did the student measure the weight of the metre stick?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "using a Newton balance", marks: 6, accepts: ["using a mass balance (and multiplying by g)"] },
+    { id: "r1", kind: "point", verbatim: "using a Newton balance / using a mass balance (and multiplying by g)", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q1-tables",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+          "srcHash": "57c1ae8539adb55dc922c047d6495879",
+          "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3564,12 +3572,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q1-ii", topicId: "phys-u2", conceptId: "finding-centre-of-gravity-metre-stick",
     section: "A", questionRef: "2024 OL Q1(ii)",
-    stem: "A student performed an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung weights from the metre stick until it was balanced and level. He found its centre of gravity at the 50 cm mark.",
+    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark.",
     questionText: "Describe how he found the centre of gravity of the metre stick.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "balance on a pivot", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "balance on a pivot", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q1-tables",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+          "srcHash": "57c1ae8539adb55dc922c047d6495879",
+          "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3582,7 +3598,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain why the student had to place the object outside the focal length of the lens.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "to get an image on the screen", marks: 6, accepts: ["to get a real image"] },
+    { id: "r1", kind: "point", verbatim: "to get an image on the screen / to get a real image", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3592,20 +3608,47 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q2-iv", topicId: "phys-u2", conceptId: "identifying-correct-image-distance",
     section: "A", questionRef: "2024 OL Q2(iv)",
+    stem: "A student carried out an experiment to measure f, the focal length of a converging lens. The student ensured that the object was placed outside the focal length of the lens.",
     questionText: "How did the student know that the correct image distance had been found?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "focussed image", marks: 6, contextNote: "Key words — the image on the screen being in focus (sharp) is what is being marked. Spelling as printed in the scheme." },
+    { id: "r1", kind: "point", verbatim: "focussed image", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q2-v", topicId: "phys-2-3", conceptId: "lens-formula",
+    section: "A", questionRef: "2024 OL Q2(v)",
+    stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
+    questionText: "Using the Formulae and Tables booklet, write the lens formula used to calculate f.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "1/f = 1/u + 1/v", marks: 4, contextNote: "[accept partial answer for 2]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q2-vi", topicId: "phys-2-3", conceptId: "focal-length-from-data",
+    section: "A", questionRef: "2024 OL Q2(vi)",
+    stem: "A student carried out an experiment to measure f, the focal length of a converging lens. The following results were recorded.",
+    questionText: "Use the formula and the data in the table to calculate f.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "calculation of f", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
+    ],
+    figure: {
+          "candId": "physics-2024-ol-q2-table",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q2-table.png",
+          "srcHash": "00145fd0aed627283e63b481658fef0f",
+          "alt": "Table of the results: u (cm) 18, 25, 30; v (cm) 90, 38, 30.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -3615,11 +3658,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q3-iii", topicId: "phys-u2", conceptId: "mass-of-water-by-subtraction",
     section: "A", questionRef: "2024 OL Q3(iii)",
-    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.106 kg. Mass of calorimeter and cold water = 0.262 kg. Initial temperature of cold water and calorimeter = 18 °C. Final temperature of water and calorimeter = 23 °C. Heat energy added = 3467 J.",
-    questionText: "Calculate A, the mass of the water.",
+    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J",
+    questionText: "Calculate A, the mass of the water mwater.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.262 – 0.106 = 0.156 kg", marks: 6, contextNote: "The scheme allows a partial answer for 3 of the 6 marks." },
+    { id: "r1", kind: "point", verbatim: "0.262 – 0.106 = 0.156 kg", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3629,11 +3672,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q3-iv", topicId: "phys-u2", conceptId: "temperature-rise-in-calorimeter",
     section: "A", questionRef: "2024 OL Q3(iv)",
-    stem: "A student carried out an experiment to measure c, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Initial temperature of cold water and calorimeter = 18 °C. Final temperature of water and calorimeter = 23 °C.",
-    questionText: "Calculate B, the increase in temperature of the calorimeter and cold water.",
+    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J",
+    questionText: "Calculate B, the increase in temperature of the calorimeter and the cold water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "23 – 18 = 5 ℃", marks: 6, contextNote: "The scheme allows a partial answer for 3 of the 6 marks." },
+    { id: "r1", kind: "point", verbatim: "23 – 18 = 5 ℃", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3643,12 +3686,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q4-i", topicId: "phys-u2", conceptId: "setting-a-stretched-string-vibrating",
     section: "A", questionRef: "2024 OL Q4(i)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment.",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. On the right is a diagram of the apparatus used in this experiment.",
     questionText: "How did the student set the string vibrating?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "using a tuning fork", marks: 6, accepts: ["using a frequency generator","pluck the string"] },
+    { id: "r1", kind: "point", verbatim: "using a tuning fork / using a frequency generator / pluck the string", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q4-sonometer",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-sonometer.png",
+          "srcHash": "95968106537422b089f1b4422f24e629",
+          "alt": "Diagram of the apparatus: a string stretched along the top of a long box over two bridges, with a paper rider on the string between them, passing over a pulley at the right-hand end to hanging weights.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3657,12 +3708,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q4-ii", topicId: "phys-u2", conceptId: "length-measured-between-bridges",
     section: "A", questionRef: "2024 OL Q4(ii)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred.",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. On the right is a diagram of the apparatus used in this experiment.",
     questionText: "Describe what length l of string the student should measure.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "distance between the bridges", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "distance between the bridges", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q4-sonometer",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-sonometer.png",
+          "srcHash": "95968106537422b089f1b4422f24e629",
+          "alt": "Diagram of the apparatus: a string stretched along the top of a long box over two bridges, with a paper rider on the string between them, passing over a pulley at the right-hand end to hanging weights.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3671,12 +3730,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q4-iii", topicId: "phys-u2", conceptId: "keeping-tension-constant",
     section: "A", questionRef: "2024 OL Q4(iii)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The tension of the string was kept constant throughout the experiment.",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. On the right is a diagram of the apparatus used in this experiment.",
     questionText: "Explain why the tension of the string was kept constant.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "frequency depends on tension", marks: 6, accepts: ["fair test"], contextNote: "The scheme prints '[state or imply]' after the first alternative — the dependence of frequency on tension may be stated or implied." },
+    { id: "r1", kind: "point", verbatim: "frequency depends on tension [state or imply] / fair test", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q4-sonometer",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-sonometer.png",
+          "srcHash": "95968106537422b089f1b4422f24e629",
+          "alt": "Diagram of the apparatus: a string stretched along the top of a long box over two bridges, with a paper rider on the string between them, passing over a pulley at the right-hand end to hanging weights.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3685,26 +3752,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q4-iv", topicId: "phys-u2", conceptId: "function-of-the-paper-rider",
     section: "A", questionRef: "2024 OL Q4(iv)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred.",
-    questionText: "What is the function of the paper rider?",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. On the right is a diagram of the apparatus used in this experiment.",
+    questionText: "What was the function of the paper rider?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "indicates that resonance has occurred", marks: 6, contextNote: "The scheme prints '[state or imply]' — resonance may be stated or implied (e.g. the rider is thrown off the string)." },
+    { id: "r1", kind: "point", verbatim: "indicates that resonance has occurred [state or imply]", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q4-sonometer",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-sonometer.png",
+          "srcHash": "95968106537422b089f1b4422f24e629",
+          "alt": "Diagram of the apparatus: a string stretched along the top of a long box over two bridges, with a paper rider on the string between them, passing over a pulley at the right-hand end to hanging weights.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q5-v", topicId: "phys-u2", conceptId: "resistance-temperature-relationship",
+    id: "phys-2024-ol-q5-v", topicId: "phys-3-3", conceptId: "resistance-temperature-relationship",
     section: "A", questionRef: "2024 OL Q5(v)",
-    stem: "A student performed an experiment to investigate how the resistance, R of a metallic conductor changes with temperature, T.",
+    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. The student recorded the following data.",
     questionText: "Describe the relationship between T and R.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "resistance increases with temperature", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "resistance increases with temperature", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q5-table",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q5-table.png",
+          "srcHash": "0f121140bb5d64cbd75dacfa95d23315",
+          "alt": "Table of the data: T (°C) 10, 20, 30, 40, 50, 60; R (Ω) 5.2, 5.9, 6.5, 7.2, 7.9, 8.5.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3713,11 +3796,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-a", topicId: "phys-1-2", conceptId: "principle-of-conservation-of-momentum",
     section: "B", questionRef: "2024 OL Q6(a)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
     questionText: "State the principle of conservation of momentum.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "(in a closed system, the total) momentum before (interaction) = (the total) momentum after", marks: 7, accepts: ["m1u1 + m2u2 = m1v1 + m2v2"] },
+    { id: "r1", kind: "point", verbatim: "(in a closed system, the total) momentum before (interaction) = (the total) momentum after / m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂", marks: 7, contextNote: "[accept partial answer for 4 e.g. p=mv]" },
     ],
   } as SecCard,
   {
@@ -3727,11 +3809,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-b", topicId: "phys-1-1", conceptId: "scalar-versus-vector-quantity",
     section: "B", questionRef: "2024 OL Q6(b)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
     questionText: "What is the difference between a scalar quantity and a vector quantity?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "a scalar quantity has magnitude only", marks: 7, accepts: ["a vector quantity has magnitude and direction"] },
+    { id: "r1", kind: "point", verbatim: "a scalar quantity has magnitude only / a vector quantity has magnitude and direction", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3741,11 +3822,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-e", topicId: "phys-2-2", conceptId: "light-waves-versus-sound-waves",
     section: "B", questionRef: "2024 OL Q6(e)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
     questionText: "State one difference between light waves and sound waves.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "light waves do not need a medium to travel through", marks: 7, accepts: ["sound waves need a medium to travel through"], openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. light waves do not need a medium to travel through / sound waves need a medium to travel through, etc.", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3755,11 +3835,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-f", topicId: "phys-2-7", conceptId: "doppler-effect-definition",
     section: "B", questionRef: "2024 OL Q6(f)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc. The Doppler effect is used in a radar system to detect the speed of cars.",
-    questionText: "What is the Doppler effect?",
+    questionText: "The Doppler effect is used in a radar system to detect the speed of cars. What is the Doppler effect? A labelled diagram may help you answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "(apparent) change in frequency due to the movement of the source", marks: 7, accepts: ["(apparent) change in frequency due to the movement of the observer"], contextNote: "The scheme prints this as 'due to the movement of the source/observer' — movement of either the source or the observer is accepted." },
+    { id: "r1", kind: "point", verbatim: "(apparent) change in frequency due to the movement of the source/observer", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3769,11 +3848,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-g", topicId: "phys-2-4", conceptId: "solar-constant-energy-calculation",
     section: "B", questionRef: "2024 OL Q6(g)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc. The solar constant (solar irradiance) is a measure of how much radiation from the Sun falls on each square metre of the Earth’s surface in one second. It has a value of 1.36 kW m−2.",
-    questionText: "Calculate the amount of energy falling per second on a 72 m2 garden.",
+    questionText: "The solar constant (solar irradiance) is a measure of how much radiation from the Sun falls on each square metre of the Earth’s atmosphere in one second. It has a value of 1.36 kW m⁻². Calculate the amount of energy falling per second on an area of 72 m².",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1360 × 72 = 97920 W", marks: 7, contextNote: "Note the conversion of 1.36 kW m−2 to 1360 W m−2. The scheme accepts a partial answer for 4." },
+    { id: "r1", kind: "point", verbatim: "1360 × 72 = 97920 W", marks: 7, contextNote: "[accept partial answer for 4]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q6-h", topicId: "phys-3-2", conceptId: "capacitance",
+    section: "B", questionRef: "2024 OL Q6(h)",
+    questionText: "What is meant by capacitance?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "C= Q/V", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3783,11 +3874,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-i", topicId: "phys-4-4", conceptId: "radioactive-materials-safety-precaution",
     section: "B", questionRef: "2024 OL Q6(i)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
     questionText: "State a safety precaution that should be taken when working with radioactive materials.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "use appropriate shielding for the type of radiation", marks: 7, accepts: ["distance yourself appropriately from source of radiation","wear protective clothing"], openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. use appropriate shielding for the type of radiation, distance yourself appropriately from source of radiation, wear protective clothing, etc.", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -3797,11 +3887,38 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-j", topicId: "phys-2-3", conceptId: "refractive-index-from-critical-angle",
     section: "B", questionRef: "2024 OL Q6(j)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc. The critical angle of diamond is 24.4°.",
-    questionText: "Calculate n, the refractive index of the diamond.",
+    questionText: "The critical angle of diamond is 24.4°. Calculate n, the refractive index of the diamond.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "n = 2.42", marks: 7, contextNote: "The scheme awards the marks on the final value alone; refractive index has no unit." },
+    { id: "r1", kind: "point", verbatim: "n = 2.42", marks: 7, contextNote: "[accept partial answer for 4]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q6-k", topicId: "phys-2-3", conceptId: "part-of-the-eye",
+    section: "B", questionRef: "2024 OL Q6(k)",
+    questionText: "Name one part of the eye. Explain its function.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "named part of the eye", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "function", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q6-l", topicId: "phys-3-4", conceptId: "field-of-bar-magnet",
+    section: "B", questionRef: "2024 OL Q6(l)",
+    questionText: "Draw the magnetic field around a bar magnet.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "shape", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "direction", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -3811,11 +3928,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q7-i", topicId: "phys-1-5", conceptId: "mass-versus-weight",
     section: "B", questionRef: "2024 OL Q7(i)",
-    stem: "Oleksii Novikov from the Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting 537.5 kg from the ground to a height of 46 cm.",
+    stem: "Oleksii Novikov from Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting a mass of 537.5 kg from the ground to a height of 46 cm.",
     questionText: "Explain the difference between mass and weight.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "mass is measure in kg", marks: 6, accepts: ["weight is measure in N"], contextNote: "Wording copied exactly as printed in the scheme (including 'is measure in'). The scheme prefixes with 'e.g.' and closes with 'etc.', so other valid distinctions are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. mass is measure in kg / weight is measure in N, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3825,11 +3942,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q7-ii", topicId: "phys-1-5", conceptId: "weight-from-mass-calculation",
     section: "B", questionRef: "2024 OL Q7(ii)",
-    stem: "Oleksii Novikov broke the world deadlift record by lifting 537.5 kg from the ground to a height of 46 cm.",
+    stem: "Oleksii Novikov from Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting a mass of 537.5 kg from the ground to a height of 46 cm. acceleration due to gravity g = 9.8 m s⁻²",
     questionText: "Calculate the weight of a 537.5 kg mass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "F = 537.5 × 9.8 = 5267.5 N", marks: 6, contextNote: "The scheme accepts a partial answer for 3 marks, e.g. F = ma. The unit N is part of the final answer." },
+    { id: "r1", kind: "point", verbatim: "F = 537.5 × 9.8 = 5267.5 N", marks: 6, contextNote: "[accept partial answer for 3, e.g. F = ma]" },
     ],
   } as SecCard,
   {
@@ -3839,11 +3956,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q7-iii", topicId: "phys-1-4", conceptId: "work-done-lifting-a-load",
     section: "B", questionRef: "2024 OL Q7(iii)",
-    stem: "Oleksii Novikov broke the world deadlift record by lifting 537.5 kg from the ground to a height of 46 cm. The weight of the 537.5 kg mass is 5267.5 N.",
-    questionText: "Calculate the work done in lifting a mass of 537.5 kg from the ground to the required height of 46 cm.",
+    stem: "Oleksii Novikov from Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting a mass of 537.5 kg from the ground to a height of 46 cm. (ii) Calculate the weight of a 537.5 kg mass. acceleration due to gravity g = 9.8 m s⁻²",
+    questionText: "Calculate the work done in lifting this weight from the ground to a height of 46 cm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "W = 5267.5 × 0.46 = 2423.05 J", marks: 6, contextNote: "The scheme accepts a partial answer for 3 marks, e.g. W = Fs. Note the conversion of 46 cm to 0.46 m, and the unit J is part of the final answer." },
+    { id: "r1", kind: "point", verbatim: "W = 5267.5 × 0.46 = 2423.05 J", marks: 6, contextNote: "[accept partial answer for 3, e.g. W = Fs]" },
     ],
   } as SecCard,
   {
@@ -3857,7 +3974,7 @@ export const CARDS: SecCard[] = [
     questionText: "Momentum is important when moving the bus. What is meant by momentum?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "mass × velocity", marks: 6, accepts: ["mv"] },
+    { id: "r1", kind: "point", verbatim: "mass × velocity / mv", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3867,12 +3984,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q7-vi", topicId: "phys-1-2", conceptId: "momentum-calculation-with-units",
     section: "B", questionRef: "2024 OL Q7(vi)",
-    stem: "One of the events in the World’s Strongest Man competition is a bus pull. The bus has a mass of 19 000 kg.",
-    questionText: "Calculate the momentum of the bus at a speed of 0.6 m s-1. Include units in your answer.",
+    stem: "In 2020, Novikov won the World’s Strongest Man competition. One of the events in this competition is a bus pull. The bus has a mass of 19 000 kg.",
+    questionText: "Calculate the momentum of the bus when its speed is 0.6 m s⁻¹. Include units in your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "19000 × 0.6 = 11 400", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "kg ms–1", marks: 2, contextNote: "The scheme awards the unit its own 2 marks in this part, because the question says 'Include units in your answer.'" },
+    { id: "r1", kind: "point", verbatim: "19000 × 0.6 = 11 400", marks: 4, contextNote: "[accept partial answer for 2]" },
+    { id: "r2", kind: "point", verbatim: "kg ms⁻¹", marks: 2 },
     ],
   } as SecCard,
   {
@@ -3882,11 +3999,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q7-vii", topicId: "phys-1-2", conceptId: "friction-brings-a-body-to-rest",
     section: "B", questionRef: "2024 OL Q7(vii)",
-    stem: "A man pulled a 19 000 kg bus over a course. It took one man 52 s to complete the course. It took him 5 s to get the bus to a top speed of 0.6 m s-1. The bus maintained that speed for 46 s and then it took 1 s for the bus to come to a stop.",
+    stem: "It took one man 52 s to complete the course. The bus started at rest. It took him 5 s to get the bus to a top speed of 0.6 m s⁻¹. The bus maintained that speed for 46 s and then it took 1 s for the bus to roll to a stop.",
     questionText: "Suggest a reason that the bus rolled to a stop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "friction", marks: 5, contextNote: "Key word — 'friction' must appear in the correct context, i.e. as the force acting against the motion of the bus.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "friction", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -3896,12 +4013,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-i", topicId: "phys-2-3", conceptId: "image-definition-intersection-of-rays",
     section: "B", questionRef: "2024 OL Q8(i)",
-    stem: "Light is reflected from different surfaces. An image is formed when light is reflected from a plane mirror.",
+    stem: "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed.",
     questionText: "Explain what is meant by an image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "intersection of rays", marks: 6, contextNote: "Key-word answer; the scheme allows a partial answer for 3." },
+    { id: "r1", kind: "point", verbatim: "intersection of rays", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q8-plane-mirror",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-plane-mirror.png",
+          "srcHash": "dfffadd6142cb320edab75b3054fe9c1",
+          "alt": "Photograph of a small plane mirror standing upright on a sheet of paper, held by a bulldog clip, with a word printed on the paper in front of it and the word's image in the mirror.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3910,20 +4035,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-ii", topicId: "phys-2-3", conceptId: "plane-mirror-image-properties",
     section: "B", questionRef: "2024 OL Q8(ii)",
+    stem: "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed.",
     questionText: "State one property of the image produced by a plane mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "same size", marks: 6, accepts: ["lateral inversion"], contextNote: "Scheme prints these as examples ('e.g. … etc.'), so other valid properties of a plane-mirror image are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. same size, lateral inversion, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2024-ol-q8-plane-mirror",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-plane-mirror.png",
+          "srcHash": "dfffadd6142cb320edab75b3054fe9c1",
+          "alt": "Photograph of a small plane mirror standing upright on a sheet of paper, held by a bulldog clip, with a word printed on the paper in front of it and the word's image in the mirror.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -3933,10 +4057,35 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-iii", topicId: "phys-2-3", conceptId: "plane-mirror-uses",
     section: "B", questionRef: "2024 OL Q8(iii)",
+    stem: "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed.",
     questionText: "State one use of a plane mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "to see yourself", marks: 3, contextNote: "Scheme gives this as an example ('e.g. … etc.'); any other valid use of a plane mirror is acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. to see yourself, etc.", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2024-ol-q8-plane-mirror",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-plane-mirror.png",
+          "srcHash": "dfffadd6142cb320edab75b3054fe9c1",
+          "alt": "Photograph of a small plane mirror standing upright on a sheet of paper, held by a bulldog clip, with a word printed on the paper in front of it and the word's image in the mirror.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q8-iv", topicId: "phys-2-3", conceptId: "law-of-reflection-experiment",
+    section: "B", questionRef: "2024 OL Q8(iv)",
+    stem: "One of the laws of reflection of light states that the angle of incidence equals the angle of reflection.",
+    questionText: "Describe an experiment to demonstrate this law of reflection.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -3946,12 +4095,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q9-i", topicId: "phys-2-1", conceptId: "latent-heat-definition",
     section: "B", questionRef: "2024 OL Q9(i)",
-    stem: "A heat pump is a device consisting of a closed system of circulating liquid called a refrigerant which absorbs and releases latent heat as it changes state.",
+    stem: "Solids, liquids and gases can change state when they are heated or cooled. A heat pump is a device used in household freezers. It consists of a closed system of circulating fluid called a refrigerant which absorbs and releases latent heat as it changes state.",
     questionText: "What is meant by latent heat?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "heat energy needed to change state", marks: 6, contextNote: "Key-word answer; partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "heat energy needed to change state", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q9-ii", topicId: "phys-2-1", conceptId: "why-the-graph-flattens",
+    section: "B", questionRef: "2024 OL Q9(ii)",
+    stem: "Solids, liquids and gases can change state when they are heated or cooled. A heat pump is a device used in household freezers. It consists of a closed system of circulating fluid called a refrigerant which absorbs and releases latent heat as it changes state. The graph shows the temperature of a substance as heat is added and it changes state from a liquid to a gas.",
+    questionText: "Explain why the graph flattens out at A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "changing state / no temperature change", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2024-ol-q9-graph",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q9-graph.png",
+          "srcHash": "c8e0a099819abe2b6fae80f717ac4394",
+          "alt": "Graph of temperature (°C), from 0 to 100, against heat added (J): plotted points rise in a straight line through the part labelled liquid, run level for three points where an arrow labelled A points, then rise again through the part labelled gas.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3960,10 +4131,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q9-iii", topicId: "phys-2-1", conceptId: "specific-latent-heat-of-vaporisation-calculation",
     section: "B", questionRef: "2024 OL Q9(iii)",
-    questionText: "The specific latent heat of vaporisation of the refrigerant is 141 100 J kg-1. Calculate the heat energy needed to change 0.3 kg of refrigerant from liquid to gas.",
+    stem: "Solids, liquids and gases can change state when they are heated or cooled. A heat pump is a device used in household freezers. It consists of a closed system of circulating fluid called a refrigerant which absorbs and releases latent heat as it changes state.",
+    questionText: "The specific latent heat of vaporisation of the refrigerant is 141 100 J kg⁻¹. Calculate the heat energy needed to change 0.3 kg of refrigerant from liquid to gas.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.3 × 141 100 = 42 330 J", marks: 6, contextNote: "The scheme accepts a partial answer for 3, e.g. ∆E = ml." },
+    { id: "r1", kind: "point", verbatim: "∆E= 0.3 × 141 100 = 42 330 J", marks: 6, contextNote: "[accept partial answer for 3 e.g. ∆E=ml]" },
     ],
   } as SecCard,
   {
@@ -3973,12 +4145,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q9-iv", topicId: "phys-2-1", conceptId: "evaporation-cools-fridge-interior",
     section: "B", questionRef: "2024 OL Q9(iv)",
-    stem: "A heat pump is a closed system of circulating refrigerant which absorbs and releases latent heat as it changes state.",
-    questionText: "What happens to the temperature inside the fridge when the liquid changes state to become a gas?",
+    stem: "Solids, liquids and gases can change state when they are heated or cooled. A heat pump is a device used in household freezers. It consists of a closed system of circulating fluid called a refrigerant which absorbs and releases latent heat as it changes state.",
+    questionText: "What happens to the temperature inside a freezer when the liquid changes state to become a gas?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "it decreases", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "it decreases", marks: 6 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q9-v", topicId: "phys-2-1", conceptId: "condensing-temperature-from-graph",
+    section: "B", questionRef: "2024 OL Q9(v)",
+    stem: "Solids, liquids and gases can change state when they are heated or cooled. A heat pump is a device used in household freezers. It consists of a closed system of circulating fluid called a refrigerant which absorbs and releases latent heat as it changes state. The graph shows the temperature of a substance as heat is added and it changes state from a liquid to a gas. The heat pump also turns the gas back into a liquid.",
+    questionText: "According to the graph, what temperature does this happen at?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "65 ℃", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2024-ol-q9-graph",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q9-graph.png",
+          "srcHash": "c8e0a099819abe2b6fae80f717ac4394",
+          "alt": "Graph of temperature (°C), from 0 to 100, against heat added (J): plotted points rise in a straight line through the part labelled liquid, run level for three points where an arrow labelled A points, then rise again through the part labelled gas.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3991,7 +4185,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the process called when a gas changes into a liquid?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "condensation", marks: 6, contextNote: "Partial answer scores 3.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "condensation", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4002,10 +4196,10 @@ export const CARDS: SecCard[] = [
     id: "phys-2024-ol-q9-viii", topicId: "phys-2-1", conceptId: "thermometric-property-definition",
     section: "B", questionRef: "2024 OL Q9(viii)",
     stem: "The temperature of the refrigerant can be measured using a thermometer.",
-    questionText: "A thermometer uses a particular thermometric property to measure temperature. What is meant by a thermometric property?",
+    questionText: "Different thermometers are based on different thermometric properties. What is meant by a thermometric property?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "property that changes (measurably) with temperature", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "property that changes (measurably) with temperature", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4018,7 +4212,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is the thermometric property of an alcohol-in-glass thermometer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "length", marks: 4, contextNote: "Partial answer scores 2.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "length", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -4031,7 +4225,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one everyday use of a thermometer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "body temperature", marks: 4, accepts: ["cooking"], contextNote: "Scheme gives these as examples ('e.g. … etc.'); other valid everyday uses are acceptable. Partial answer scores 2.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. body temperature, cooking, etc.", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -4039,13 +4233,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q10-i", topicId: "phys-2-7", conceptId: "resonance-definition",
+    id: "phys-2024-ol-q10-i", topicId: "phys-2-5", conceptId: "resonance-definition",
     section: "B", questionRef: "2024 OL Q10(i)",
     stem: "When a person sings, their vocal chords vibrate. This vibration can cause a wine glass to shatter if resonance occurs.",
     questionText: "What is meant by resonance?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "transfer of energy between bodies at the same frequency", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "transfer of energy between bodies at the same frequency", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4053,13 +4247,87 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q10-v", topicId: "phys-2-2", conceptId: "wave-equation-wavelength-of-sound",
-    section: "B", questionRef: "2024 OL Q10(v)",
-    questionText: "The speed of sound in air c is 336 m s-1 and frequency f of the wave is 320 Hz. Calculate the wavelength λ of the sound wave.",
+    id: "phys-2024-ol-q10-ii", topicId: "phys-2-5", conceptId: "resonance-experiment",
+    section: "B", questionRef: "2024 OL Q10(ii)",
+    stem: "When a person sings, their vocal chords vibrate. This vibration can cause a wine glass to shatter if resonance occurs.",
+    questionText: "Describe a laboratory experiment to demonstrate resonance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q10-iii", topicId: "phys-2-6", conceptId: "node-and-antinode",
+    section: "B", questionRef: "2024 OL Q10(iii)",
+    stem: "A clarinet is an instrument that can be thought of as a pipe closed at one end.",
+    questionText: "The diagram on the right shows a sound wave vibrating at its fundamental frequency in a pipe closed at one end. Name the parts of the stationary wave labelled X and Y.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1.05 m", marks: 6, contextNote: "Scheme shows 336 ÷ 320 = 1.05 m. The unit is part of the answer. A partial answer (writing the wave relationship c = f λ) scores 3." },
+    { id: "r1", kind: "point", verbatim: "X = antinode", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "Y = node", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q10-pipe",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q10-pipe.png",
+          "srcHash": "627f5a252ed578a2281f42fcd46c33b9",
+          "alt": "Diagram of a pipe closed at the bottom and open at the top, with a curve drawn inside it for the wave; an arrow labelled X points to the open top and an arrow labelled Y points to the closed bottom.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"antinode","askedInThisQuestion":true},{"letter":"Y","meaning":"node","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q10-v", topicId: "phys-2-5", conceptId: "wave-equation-wavelength-of-sound",
+    section: "B", questionRef: "2024 OL Q10(v)",
+    stem: "A clarinet is an instrument that can be thought of as a pipe closed at one end.",
+    questionText: "The speed of sound in air c is 336 m s⁻¹ and the frequency f of the wave is 320 Hz. Calculate the wavelength λ of the sound wave.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "λ= 336/320 =1.05 m", marks: 6, contextNote: "[accept partial answer for 3 e.g. c =fλ]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q10-vi", topicId: "phys-2-6", conceptId: "length-of-pipe",
+    section: "B", questionRef: "2024 OL Q10(vi)",
+    stem: "A clarinet is an instrument that can be thought of as a pipe closed at one end.",
+    questionText: "The distance from X to Y is taken as λ ₄. Calculate the length of the pipe.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "l= 1.05/4 = 0.2625 m", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "physics-2024-ol-q10vi-question",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q10vi-question.png",
+          "srcHash": "4ee798be9ee2332eb8a6c794bc06a9bb",
+          "alt": "The printed question: (vi) The distance from X to Y is taken as λ/4. Calculate the length of the pipe.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2024-ol-q10-pipe",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q10-pipe.png",
+          "srcHash": "627f5a252ed578a2281f42fcd46c33b9",
+          "alt": "Diagram of a pipe closed at the bottom and open at the top, with a curve drawn inside it for the wave; an arrow labelled X points to the open top and an arrow labelled Y points to the closed bottom.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4068,11 +4336,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q10-vii", topicId: "phys-2-5", conceptId: "pitch-determined-by-frequency",
     section: "B", questionRef: "2024 OL Q10(vii)",
-    stem: "If a musician increases the loudness of the note she plays, she has increased the amplitude of the sound wave.",
-    questionText: "What property of the wave needs to change to affect the pitch of the note played by the clarinet?",
+    stem: "A clarinet is an instrument that can be thought of as a pipe closed at one end. If a musician increases the loudness of the note she plays, she has increased the amplitude of the sound wave.",
+    questionText: "What property of the wave needs to change to affect the pitch of the note?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "frequency", marks: 6, contextNote: "Partial answer scores 3.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "frequency", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4086,7 +4354,7 @@ export const CARDS: SecCard[] = [
     questionText: "A sound wave vibrates at its fundamental frequency in a pipe of length 60 cm which is open at both ends. Calculate the wavelength of the sound wave.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1.2 m", marks: 5, contextNote: "At the fundamental in a pipe open at both ends the pipe length is half a wavelength, so λ = 2 × 0.60 m. The unit is part of the answer. Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "λ= 1.2 m", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4100,7 +4368,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name an instrument used to measure electric current.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "ammeter", marks: 6, accepts: ["galvanometer"], contextNote: "Scheme prints 'ammeter/galvanometer' — a single solidus, so the two are equally acceptable. Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "ammeter/galvanometer", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4114,7 +4382,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how a fuse works.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "melts/breaks if current is too high", marks: 6, accepts: ["breaks if current is too high"], contextNote: "The scheme prints 'melts/breaks if current is too high'. A single solidus, so either verb is equally acceptable, but the condition is part of the marking point, not optional context. Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "melts/breaks if current is too high", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4125,10 +4393,10 @@ export const CARDS: SecCard[] = [
     id: "phys-2024-ol-q11-v", topicId: "phys-3-3", conceptId: "mcb-advantage-over-fuse",
     section: "B", questionRef: "2024 OL Q11(v)",
     stem: "A miniature circuit breaker (MCB) is another device used for safety.",
-    questionText: "What is the advantage of using a MCB instead of a fuse in a domestic circuit?",
+    questionText: "What is an advantage of using a MCB instead of a fuse in a domestic circuit?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "more sensitive to current than a fuse", marks: 6, accepts: ["can be reset rather than replaced"], contextNote: "Scheme gives these as examples ('e.g. … etc.'); other valid advantages are acceptable. Partial answer scores 3.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. more sensitive to current than a fuse, can be reset rather than replaced, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4138,12 +4406,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q11-vi", topicId: "phys-3-3", conceptId: "domestic-circuit-safety-features",
     section: "B", questionRef: "2024 OL Q11(vi)",
-    stem: "A fuse and a miniature circuit breaker (MCB) are both used as safety devices in domestic circuits.",
+    stem: "A miniature circuit breaker (MCB) is another device used for safety.",
     questionText: "Name another safety feature used in domestic circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "earthing", marks: 3, accepts: ["bonding","RCD"], contextNote: "Scheme gives these as examples ('e.g. … etc.'); other valid domestic safety features are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. earthing, bonding, RCD, etc.", marks: 3 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q11-vii-a", topicId: "phys-3-3", conceptId: "which-is-the-voltmeter",
+    section: "B", questionRef: "2024 OL Q11(vii)(a)",
+    stem: "The circuit below is used in an experiment to demonstrate Ohm’s law.",
+    questionText: "Which of the devices, X or Y is a voltmeter? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "X as it is wired in parallel", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2024-ol-q11-circuit",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-circuit.png",
+          "srcHash": "9c9b570e5f529960a115fe31af19652d",
+          "alt": "Circuit diagram: a coil of wire with a meter X connected in parallel across it, in series with a meter Y, a variable resistor labelled Z and a battery of cells.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4152,12 +4442,57 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q11-viib", topicId: "phys-3-3", conceptId: "variable-resistor-in-ohms-law-circuit",
     section: "B", questionRef: "2024 OL Q11(vii)(b)",
-    stem: "A circuit containing a variable resistor is used to demonstrate Ohm's law.",
-    questionText: "Explain why a variable resistor is used in the circuit when demonstrating Ohm's law.",
+    stem: "The circuit below is used in an experiment to demonstrate Ohm’s law.",
+    questionText: "(b) The electrical component Z is a variable resistor. Explain why a variable resistor is used in the circuit when demonstrating Ohm’s law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "to adjust the voltage", marks: 3, accepts: ["to adjust the current in the circuit"], contextNote: "Scheme prints 'to adjust the voltage/current in the circuit' — either quantity is equally acceptable." },
+    { id: "r1", kind: "point", verbatim: "to adjust the voltage/current in the circuit", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q11-circuit",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-circuit.png",
+          "srcHash": "9c9b570e5f529960a115fe31af19652d",
+          "alt": "Circuit diagram: a coil of wire with a meter X connected in parallel across it, in series with a meter Y, a variable resistor labelled Z and a battery of cells.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q11-viii", topicId: "phys-3-3", conceptId: "verifying-resistance",
+    section: "B", questionRef: "2024 OL Q11(viii)",
+    stem: "Previous results from the experiment have shown the resistance of the coil of wire is 2.5 Ω.",
+    questionText: "Verify that the resistance is 2.5 Ω by calculating the resistance R when the voltage V is 2 V and the current I is 0.8 A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "R= 2/0.8 = 2.5 Ω", marks: 6, contextNote: "[accept partial answer for 3 e.g. V=IR]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q11-ix", topicId: "phys-3-3", conceptId: "parallel-resistance",
+    section: "B", questionRef: "2024 OL Q11(ix)",
+    questionText: "The resistance of the coil of wire is 2.5 Ω and the resistance of device X is 20 000 Ω. Calculate the total resistance of this parallel combination.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "1/(RT) = 1/R₁ + 1/R₂", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "1/(RT) = 1/2.5 + 1/(20 000)", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "RT = 2.5 Ω", marks: 3, contextNote: "[accept partial answer for 3 e.g. RT=R₁+R₂]" },
+    ],
+    figure: {
+          "candId": "physics-2024-ol-q11-circuit",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-circuit.png",
+          "srcHash": "9c9b570e5f529960a115fe31af19652d",
+          "alt": "Circuit diagram: a coil of wire with a meter X connected in parallel across it, in series with a meter Y, a variable resistor labelled Z and a battery of cells.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4169,7 +4504,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by nuclear fission?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the splitting of a nucleus", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "the splitting of a nucleus", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4180,11 +4515,11 @@ export const CARDS: SecCard[] = [
     id: "phys-2024-ol-q12-ii", topicId: "phys-4-6", conceptId: "control-rods-and-moderator-functions",
     section: "B", questionRef: "2024 OL Q12(ii)",
     stem: "The control rods and the moderator play a very important role in the production of energy by nuclear fission.",
-    questionText: "Explain the function of (a) the control rods (b) the moderator",
-    tariffModel: {"kind":"orderedSplit","notation":"[6+3]"}, totalMarks: 9,
+    questionText: "Explain the function of (a) the control rods, (b) the moderator.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Control rods — absorbs neutrons", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Moderator — slows down neutrons", marks: null },
+    { id: "r1", kind: "point", verbatim: "(a) the control rods — absorbs neutrons", marks: 6 },
+    { id: "r2", kind: "point", verbatim: "(b) the moderator — slows down neutrons", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4194,11 +4529,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q12-iii", topicId: "phys-4-6", conceptId: "reactor-shielding-material",
     section: "B", questionRef: "2024 OL Q12(iii)",
-    stem: "The fission reactor must also have a shield.",
-    questionText: "What material could be used to make the shield?",
+    questionText: "The fission reactor must also have a shield. What material could be used to make the shield?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "lead", marks: 3, contextNote: "Scheme gives this as an example ('e.g. lead, etc.'); other suitable dense shielding materials are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. lead, etc.", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4206,13 +4540,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q12-iv", topicId: "phys-4-4", conceptId: "isotopes-definition",
+    id: "phys-2024-ol-q12-iv", topicId: "phys-4-3", conceptId: "isotopes-definition",
     section: "B", questionRef: "2024 OL Q12(iv)",
-    stem: "The fuels typically used in a nuclear fission reactor are plutonium and uranium.",
+    stem: "The fuels typically used in a nuclear fission reactor are isotopes of plutonium and uranium.",
     questionText: "What are isotopes?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "atoms of the same element with different number of neutrons", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "atoms of the same element with different number of neutrons", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4222,10 +4556,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q12-v", topicId: "phys-4-4", conceptId: "half-life-fraction-remaining",
     section: "B", questionRef: "2024 OL Q12(v)",
-    questionText: "Pu-239 is an isotope of plutonium. It has a half-life of 24 110 years. What fraction of the isotope will remain after 72 330 years?",
+    stem: "Pu–239 is an isotope of plutonium. It has a half-life of 24 110 years.",
+    questionText: "What fraction of the isotope will remain after 72 330 years?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1/8", marks: 6, contextNote: "72 330 years is three half-lives of 24 110 years. Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "1/8", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4235,11 +4570,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q12-viii", topicId: "phys-4-3", conceptId: "sub-atomic-particles",
     section: "B", questionRef: "2024 OL Q12(viii)",
-    stem: "The previous part of this question concerned the neutrons in an atom.",
+    stem: "When uranium undergoes nuclear fission, neutrons are produced in the reaction. These help sustain a chain reaction. Neutrons are sub-atomic particles.",
     questionText: "Name another sub-atomic particle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "proton", marks: 6, accepts: ["electron"], contextNote: "Scheme gives these as examples ('e.g. … etc.'). Partial answer scores 3.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. proton, electron, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4253,7 +4588,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by nuclear fusion?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "joining of two nuclei", marks: 4, contextNote: "Partial answer scores 2." },
+    { id: "r1", kind: "point", verbatim: "joining of two nuclei", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -4263,10 +4598,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q12-x", topicId: "phys-4-6", conceptId: "fusion-advantage-over-fission",
     section: "B", questionRef: "2024 OL Q12(x)",
-    questionText: "Give one advantage of a nuclear fusion reactor over a nuclear fission reactor.",
+    stem: "Nuclear fusion is another type of nuclear reaction.",
+    questionText: "State one advantage of a nuclear fusion reactor over a nuclear fission reactor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "less radioactive waste", marks: 4, contextNote: "Scheme gives this as an example ('e.g. … etc.'); other valid advantages are acceptable. Partial answer scores 2.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. less radioactive waste, etc.", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -4274,13 +4610,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q13-b", topicId: "phys-1-6", conceptId: "orbital-period-orbits-per-day",
+    id: "phys-2024-ol-q13-b", topicId: "phys-1-5", conceptId: "orbital-period-orbits-per-day",
     section: "B", questionRef: "2024 OL Q13(b)",
-    stem: "The International Space Station (ISS) orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes.",
+    stem: "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
     questionText: "How many full orbits of the Earth does the ISS make in 24 hours?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "16 full orbits", marks: 7, contextNote: "Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "16 full orbits", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4290,11 +4626,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q13-c", topicId: "phys-1-5", conceptId: "variation-of-g-with-distance",
     section: "B", questionRef: "2024 OL Q13(c)",
-    stem: "The ISS orbits at an altitude of 322 km. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth's surface.",
     questionText: "Describe how acceleration due to gravity changes as the distance from the centre of the Earth increases.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "it decreases", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "it decreases", marks: 7 },
     ],
   } as SecCard,
   {
@@ -4302,13 +4637,12 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q13-d", topicId: "phys-2-4", conceptId: "nature-of-x-rays",
+    id: "phys-2024-ol-q13-d", topicId: "phys-4-2", conceptId: "nature-of-x-rays",
     section: "B", questionRef: "2024 OL Q13(d)",
-    stem: "A computed tomography (CT) scanner was used to examine the bones of astronauts.",
-    questionText: "A CT scanner uses x-rays to produce images of the inside of the body. What are x-rays?",
+    questionText: "A CT scanner uses X-rays to produce images of the inside of the body. What are X-rays?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "high energy waves", marks: 7, accepts: ["electromagnetic radiation"], contextNote: "Scheme separates these with a solidus, so they are equally acceptable. Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "high energy waves / electromagnetic radiation", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4316,12 +4650,12 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q13-f", topicId: "phys-u5", conceptId: "density-mass-volume-calculation",
+    id: "phys-2024-ol-q13-f", topicId: "phys-1-2", conceptId: "density-mass-volume-calculation",
     section: "B", questionRef: "2024 OL Q13(f)",
-    questionText: "The bone density of an astronaut was 1.39 g cm–3 before leaving Earth. The total volume of her bones is 7140 cm3. Calculate the total mass of her bones at that time.",
+    questionText: "The bone density of an astronaut was 1.39 g cm⁻³ before leaving Earth. The total volume of her bones is 7140 cm³. Calculate the total mass of her bones at that time.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "9924.6 g", marks: 7, contextNote: "Scheme shows 1.39 × 7140 = 9924.6 g. The unit is part of the answer. A partial answer (writing the density relationship, density = mass ÷ volume) scores 4." },
+    { id: "r1", kind: "point", verbatim: "m = 1.39 × 7140 = 9924.6 g", marks: 7, contextNote: "[accept partial answer for 4" },
     ],
   } as SecCard,
   {
@@ -4331,10 +4665,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q13-g", topicId: "phys-2-1", conceptId: "kelvin-to-celsius-conversion",
     section: "B", questionRef: "2024 OL Q13(g)",
-    questionText: "The temperature outside the ISS is 116 K. Convert this temperature to Celsius (℃).",
+    questionText: "The temperature outside the ISS is 116 K. Convert this temperature to Celsius (°C).",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "–157.15 ℃", marks: 7, contextNote: "Scheme shows 116 – 273.15. The unit is part of the answer. Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "116 – 273.15 = –157.15 ℃", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4344,11 +4678,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q13-h", topicId: "phys-1-5", conceptId: "microgravity-bone-loss-and-exercise",
     section: "B", questionRef: "2024 OL Q13(h)",
-    stem: "Astronauts on the International Space Station have to live and work in microgravity for months.",
+    stem: "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
     questionText: "Why do astronauts spend a lot of their time doing exercise while on the ISS?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "to reduce loss in bone mass", marks: 7, accepts: ["due to spending time in microgravity"], contextNote: "Scheme separates these with a solidus, so they are equally acceptable. Partial answer scores 4." },
+    { id: "r1", kind: "point", verbatim: "to reduce loss in bone mass / due to spending time in microgravity", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4358,11 +4692,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-iv", topicId: "phys-1-2", conceptId: "newtons-first-law-of-motion",
     section: "B", questionRef: "2024 OL Q14(a)(iv)",
-    stem: "Newton's three laws of motion describe the relationship between the motion of an object and the forces acting on it. (Q14 asks candidates to answer any two of parts (a), (b), (c), (d).)",
-    questionText: "State Newton's first law of motion.",
+    stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it.",
+    questionText: "State Newton’s first law of motion.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a body remains at rest (or moving at a constant velocity) unless an (unbalanced external) force acts on it", marks: 5, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "a body remains at rest (or moving at a constant velocity) unless an (unbalanced external) force acts on it", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4370,13 +4704,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q14b-i", topicId: "phys-u2", conceptId: "instrument-to-measure-resistance",
+    id: "phys-2024-ol-q14b-i", topicId: "phys-3-3", conceptId: "instrument-to-measure-resistance",
     section: "B", questionRef: "2024 OL Q14(b)(i)",
     stem: "A thermistor is a type of resistor made of semiconductor material whose resistance is dependent on temperature.",
-    questionText: "Name an instrument used to measure resistance",
+    questionText: "Name an instrument used to measure resistance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ohmmeter", marks: 6, contextNote: "Partial answer scores 3.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "ohmmeter", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4390,7 +4724,7 @@ export const CARDS: SecCard[] = [
     questionText: "A thermistor is a semiconductor. What is meant by a semiconductor?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "material with resistivity between an insulator and a conductor", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "material with resistivity between an insulator and a conductor", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4398,14 +4732,53 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q14c-i", topicId: "phys-2-3", conceptId: "diffraction-definition",
+    id: "phys-2024-ol-q14-b-iv-a", topicId: "phys-3-3", conceptId: "diode-circuit",
+    section: "B", questionRef: "2024 OL Q14(b)(iv)(a)",
+    stem: "Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering part (iv).",
+    questionText: "(a) Draw a circuit diagram to show a semiconductor diode connected in series with a filament bulb.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "symbol for battery/cell", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "symbol for bulb", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "symbol for semiconductor diode", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "connected in series", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q14-b-iv-b", topicId: "phys-3-3", conceptId: "is-the-bulb-lit",
+    section: "B", questionRef: "2024 OL Q14(b)(iv)(b)",
+    stem: "Note: You may refer to the electrical circuit symbols on pages 72 to 78 of the Formulae and Tables booklet when answering part (iv). (a) Draw a circuit diagram to show a semiconductor diode connected in series with a filament bulb.",
+    questionText: "(b) Indicate if the bulb is lighting or not.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "answer consistent with circuit drawn in (a)", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q14c-i", topicId: "phys-2-6", conceptId: "diffraction-definition",
     section: "B", questionRef: "2024 OL Q14(c)(i)",
-    stem: "A laser light is shone at right angles to a diffraction grating. Diffraction occurs at the grating producing an interference pattern which can be seen on a screen.",
+    stem: "A laser light is shone at right angles to a diffraction grating as shown in the diagram below. Diffraction occurs at the grating producing an interference pattern which can be seen on the screen.",
     questionText: "What is meant by diffraction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "spreading of a wave as it passes through a gap", marks: 6, accepts: ["spreading of a wave as it passes around an object"], contextNote: "Scheme prints 'spreading of a wave as it passes through a gap/around an object' — either ending is equally acceptable. Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "spreading of a wave as it passes through a gap/around an object", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q14c-grating",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14c-grating.png",
+          "srcHash": "76c2fa5048d64f8b7141507ca5096b24",
+          "alt": "Diagram: a laser sends a ray of light to a diffraction grating; lines spread from the grating to a white screen marked with bright spots labelled n = 2, n = 1, n = 0, n = 1, n = 2 from top to bottom.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4414,12 +4787,43 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14c-ii", topicId: "phys-2-6", conceptId: "constructive-and-destructive-interference",
     section: "B", questionRef: "2024 OL Q14(c)(ii)",
-    stem: "A laser light is shone at right angles to a diffraction grating. Diffraction occurs at the grating producing an interference pattern which can be seen on the screen.",
-    questionText: "Constructive and destructive interference occurs to produce the interference pattern. Distinguish between constructive and destructive interference.",
+    stem: "A laser light is shone at right angles to a diffraction grating as shown in the diagram below. Diffraction occurs at the grating producing an interference pattern which can be seen on the screen.",
+    questionText: "Constructive and destructive interference occurs to produce the interference pattern on the screen. Distinguish between constructive and destructive interference.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "constructive interference: bright spots", marks: 6, accepts: ["destructive interference: dark spots"], contextNote: "Scheme prints a single solidus between the two statements, so they are equally acceptable, and the 'e.g. … etc.' wrapper means other valid contrasts are also accepted. Partial answer scores 3.", openList: true },
+    { id: "r1", kind: "point", verbatim: "e.g. constructive interference: bright spots / destructive interference: dark spots, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q14c-grating",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14c-grating.png",
+          "srcHash": "76c2fa5048d64f8b7141507ca5096b24",
+          "alt": "Diagram: a laser sends a ray of light to a diffraction grating; lines spread from the grating to a white screen marked with bright spots labelled n = 2, n = 1, n = 0, n = 1, n = 2 from top to bottom.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q14-c-iii", topicId: "phys-2-6", conceptId: "wavelength-of-laser",
+    section: "B", questionRef: "2024 OL Q14(c)(iii)",
+    stem: "The diffraction grating has a grating constant d of 2.5 × 10⁻⁶ m. The first order diffracted image (n = 1) is at an angle θ of 14.6° from the straight through position.",
+    questionText: "Using the formula n λ = d sin θ, calculate the wavelength λ of the laser light.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "λ=(2.5×10⁻⁶)(sin 14.6°)= 6.3×10⁻⁷m", marks: 6, contextNote: "[accept partial answer for 3] The scheme's line is shown in the figure." },
+    ],
+    figure: {
+          "candId": "physics-2024-ol-q14ciii-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14ciii-scheme.png",
+          "srcHash": "564742c09a366ee2c50842a07b068da2",
+          "alt": "The marking scheme's line: λ = (2.5 × 10⁻⁶)(sin 14.6°) = 6.3 × 10⁻⁷ m.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4428,13 +4832,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14c-iv", topicId: "phys-2-4", conceptId: "primary-colours-of-light",
     section: "B", questionRef: "2024 OL Q14(c)(iv)",
-    stem: "If white light is passed through the diffraction grating, dispersion occurs.",
+    stem: "When white light is passed through the diffraction grating, it is split into its constituent colours.",
     questionText: "Name the 3 primary colours of light.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "red", marks: 2, exactTermRequired: true },
-    { id: "r-2", kind: "point", verbatim: "green", marks: 2, exactTermRequired: true },
-    { id: "r-3", kind: "point", verbatim: "blue", marks: 2, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "red", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "green", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "blue", marks: 2 },
     ],
   } as SecCard,
   {
@@ -4444,11 +4848,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14c-v", topicId: "phys-2-4", conceptId: "complementary-colours-of-light",
     section: "B", questionRef: "2024 OL Q14(c)(v)",
-    stem: "If white light is passed through the diffraction grating, dispersion occurs.",
+    stem: "When white light is passed through the diffraction grating, it is split into its constituent colours.",
     questionText: "Name a pair of complementary colours of light.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "red and cyan", marks: 4, accepts: ["green and magenta","blue and yellow"], contextNote: "Scheme separates the three pairs with solidi, so any one pair is acceptable, and awards [2+2] — 2 marks for each colour of the pair." },
+    { id: "r1", kind: "point", verbatim: "red and cyan / green and magenta / blue and yellow", marks: 4, contextNote: "The scheme prices the pair [2+2]." },
     ],
   } as SecCard,
   {
@@ -4458,21 +4862,28 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14d-i", topicId: "phys-3-1", conceptId: "charging-by-contact",
     section: "B", questionRef: "2024 OL Q14(d)(i)",
+    stem: "Objects with opposite charges attract each other and objects with the same charge repel each other.",
     questionText: "Describe how an object can become charged by contact.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(when two materials are brought into contact) electrons can transfer from one to the other", marks: 6, contextNote: "Partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "(when two materials are brought into contact) electrons can transfer from one to the other", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                14
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q14-d-ii", topicId: "phys-3-1", conceptId: "attraction-and-repulsion-experiment",
+    section: "B", questionRef: "2024 OL Q14(d)(ii)",
+    stem: "Objects with opposite charges attract each other and objects with the same charge repel each other.",
+    questionText: "Describe an experiment to show that opposite charges attract and like charges repel.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4485,7 +4896,7 @@ export const CARDS: SecCard[] = [
     questionText: "What type of charge does an electron have?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "negative", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "negative", marks: 3 },
     ],
   } as SecCard,
   {
@@ -6365,94 +6776,94 @@ export const CARDS: SecCard[] = [
     labelKey: [{"letter":"+","meaning":"The positively charged particle (left circle) — field lines point away from it","askedInThisQuestion":false},{"letter":"−","meaning":"The negatively charged particle (right circle) — field lines point towards it","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q1-iii-fig", topicId: "phys-1-2", conceptId: "laws-of-equilibrium-force-diagram",
     section: "A", questionRef: "2024 OL Q1(iii)",
-    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances — Upward forces (N): 6, 4; Position (cm): 20, 70. Weights — Downward forces (N): 5, 2; Position (cm): 26, 60.",
+    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below.",
     questionText: "Copy the diagram of the metre stick below into your answerbook. Two of the forces have been included. Complete your diagram to show all upward and downward forces and their positions.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "upward force of 4 N at 70 cm", marks: 2, contextNote: "Scheme tariff for (iii) is [3×2]: each missing force correctly drawn at its position earns 2 marks." },
-    { id: "r-2", kind: "point", verbatim: "downward force of 5 N at 26 cm", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "downward force of 2 N at 60 cm", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "upward force of 4 N at 70 cm", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "downward force of 5 N at 26 cm", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "downward force of 2 N at 60 cm", marks: 2 },
     ],
-    figure: {
-          "candId": "physics-2024-OL-paper-p02-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p02-i0.png",
-          "srcHash": "ea514a6243ae7b078afe63739f7e22f4",
-          "alt": "The metre-stick force diagram for the laws-of-equilibrium experiment. A long horizontal rectangle drawn in thick black outline represents the metre stick, with the scale printed inside it: '10 cm' then 20, 30, 40, 50, 60, 70, 80, 90, each with a short tick mark rising from the top edge of the rectangle. A vertical arrow points straight UP out of the stick at the 20 cm mark, labelled '6 N'. A vertical arrow points straight DOWN out of the stick at the 50 cm mark, labelled '3 N'. Both ends of the rectangle, both arrowheads and every scale number are inside the crop. Nothing else is drawn — the student is meant to copy this and add the remaining forces.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "6 N",
-                "3 N",
-                "10 cm",
-                "20",
-                "30",
-                "40",
-                "50",
-                "60",
-                "70",
-                "80",
-                "90"
-          ]
+    questionFigure: {
+          "candId": "physics-2024-ol-q1iii-question",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q1iii-question.png",
+          "srcHash": "1986a40e8365208c97eb26ba32b30a45",
+          "alt": "The printed question: (iii) Copy the diagram of the metre stick below into your answerbook. Two of the forces have been included. Complete your diagram to show all upward and downward forces and their positions. (18) Below it, a metre stick marked from 10 cm to 90 cm, with an upward arrow labelled 6 N at the 20 cm mark and a downward arrow labelled 3 N at the 50 cm mark.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission"
     },
-    labelKey: [{"letter":"6 N","meaning":"One of the two forces already included: the upward force of 6 N from the first Newton spring balance, drawn acting at the 20 cm mark","askedInThisQuestion":false},{"letter":"3 N","meaning":"One of the two forces already included: the downward weight of the metre stick (3 N), drawn acting at the 50 cm mark, its centre of gravity","askedInThisQuestion":false},{"letter":"10 cm","meaning":"The 10 cm graduation of the metre stick's scale; positions along the stick are read in centimetres against this scale","askedInThisQuestion":false},{"letter":"20","meaning":"The 20 cm graduation — the point where the 6 N upward spring-balance force is already drawn","askedInThisQuestion":false},{"letter":"30","meaning":"The 30 cm graduation on the metre stick scale","askedInThisQuestion":false},{"letter":"40","meaning":"The 40 cm graduation on the metre stick scale","askedInThisQuestion":false},{"letter":"50","meaning":"The 50 cm graduation — the metre stick's centre of gravity, where its 3 N weight is drawn acting","askedInThisQuestion":false},{"letter":"60","meaning":"The 60 cm graduation — the results table places the 2 N hanging weight (downward force) at this position","askedInThisQuestion":false},{"letter":"70","meaning":"The 70 cm graduation — the results table places the second spring balance's 4 N upward force at this position","askedInThisQuestion":false},{"letter":"80","meaning":"The 80 cm graduation on the metre stick scale","askedInThisQuestion":false},{"letter":"90","meaning":"The 90 cm graduation on the metre stick scale","askedInThisQuestion":false}],
+    figure: {
+          "candId": "physics-2024-ol-q1-tables",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+          "srcHash": "57c1ae8539adb55dc922c047d6495879",
+          "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q6-c-fig", topicId: "phys-1-2", conceptId: "archimedes-principle",
     section: "B", questionRef: "2024 OL Q6(c)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
-    questionText: "Explain Archimedes' principle. The diagram on the right may help your answer.",
+    questionText: "Explain Archimedes’ principle. The diagram on the right may help your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "upthrust = weight of the fluid displaced / upthrust 5 – 3 = 2 N, weight of fluid = 2 N", marks: 7, contextNote: "The single solidus / separates equally acceptable alternatives: either the general statement of the principle, or the numerical demonstration read off the diagram (5 N in air, 3 N immersed, 2 N of displaced water). Scheme also notes [accept partial answer for 4]." },
+    { id: "r1", kind: "point", verbatim: "upthrust = weight of the fluid displaced / upthrust 5 – 3 = 2 N, weight of fluid = 2 N", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
     figure: {
-          "candId": "physics-2024-OL-paper-p05-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p05-i0.png",
-          "srcHash": "f64538789b5d7706218f8f75d25624e3",
-          "alt": "Left two-thirds is question prose (parts (a) to (d) of Q6). Right third carries a greyscale drawing of an Archimedes'-principle demonstration, shown as two side-by-side set-ups. In the left set-up a round dial spring balance (Newton meter) hangs at the top with the label '5 N' beside it; a short chain runs down from its hook to a small tapered weight hanging freely in air; below and to the left sits a tall grey beaker/overflow can with a spout on its right side, and a small shallow empty dish stands beside the can. In the right set-up a second round dial spring balance is labelled '3 N'; its chain runs down and the same tapered weight now hangs INSIDE the can, which is filled with shaded liquid up to the spout; a small dish sits beside that can, and a black arrow runs from the label '2 N of water' down to that dish. Both cans, both balances, the weight and the dish are fully inside the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "5 N",
-                "3 N",
-                "2 N of water"
-          ]
+          "candId": "physics-2024-ol-q6c-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q6c-diagram.png",
+          "srcHash": "19fb534b11569dadaa604b05052d056a",
+          "alt": "Diagram: a spring balance reading 5 N holds a weight above a container of water; beside it, a balance reading 3 N holds the same weight under the water in a full container, the overflow running into a small dish labelled 2 N of water.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: www.britannica.com/science/",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"5 N","meaning":"The spring-balance reading with the object hanging in air — the object's weight is 5 N","askedInThisQuestion":false},{"letter":"3 N","meaning":"The spring-balance reading with the same object fully immersed in the vessel of water — its apparent weight is 3 N","askedInThisQuestion":false},{"letter":"2 N of water","meaning":"The water displaced by the immersed object, collected in the small dish — it weighs 2 N","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q6-d", topicId: "phys-2-1", conceptId: "comparing-conduction",
+    section: "B", questionRef: "2024 OL Q6(d)",
+    questionText: "Describe an experiment to compare the rates of conduction of heat through different solids.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-vi-fig", topicId: "phys-2-3", conceptId: "concave-mirror-image-orientation",
     section: "B", questionRef: "2024 OL Q8(vi)",
-    stem: "Light is also reflected from curved mirrors. The picture on the right shows images in a concave mirror.",
+    stem: "The picture on the right shows images in a concave mirror.",
     questionText: "Explain why the image of person A in the picture on the right is upright but the image of person B is upside down.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "person A is upright because they are inside the focal point of the mirror / person B is inverted because they are outside the focal point of the mirror", marks: 6, contextNote: "The single solidus / separates equally acceptable alternatives — explaining either person correctly earns the marks. Scheme also notes [accept partial answer for 3]." },
+    { id: "r1", kind: "point", verbatim: "person A is upright because they are inside the focal point of the mirror / person B is inverted because they are outside the focal point of the mirror", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
     figure: {
-          "candId": "physics-2024-OL-paper-p07-i2",
-          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p07-i2.png",
-          "srcHash": "fa5fb32a29b318f1bf9323c49b72b722",
-          "alt": "Left side is question prose for Q8(vi) to (vii). Right side is a black-and-white photograph of a large circular concave mirror mounted flush in a dark wall panel, in what looks like a museum or science centre. Standing close in front of the mirror, seen from behind, is a girl in a horizontally striped long-sleeved top and light shorts; a bold white capital 'A' is printed on the photograph just above her shoulder. Filling the right-hand side of the mirror is a large upright reflected head and shoulders of a dark-haired child looking back out. In the upper part of the mirror the reflected ceiling, hanging drapes and a lit display case appear inverted. To the left of the mirror, outside it, a person in a checked shirt stands side-on facing right with one arm stretched out towards the wall; a bold white capital 'B' is printed beside that person's head. The photograph is fully inside the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B"
-          ]
+          "candId": "physics-2024-ol-q8-concave-photo",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-concave-photo.png",
+          "srcHash": "8b0b64116277a28b4b98c2d46a54ae1a",
+          "alt": "Photograph of a large round concave mirror on a wall: a child labelled B stands beside it, a child labelled A stands close in front of it, and their images appear in the mirror.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: maggiesscienceconnection.weebly.com/",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"A","meaning":"The person standing close to the concave mirror; the picture shows their image in the mirror upright","askedInThisQuestion":true},{"letter":"B","meaning":"The person standing further back from the concave mirror; the picture shows their image in the mirror upside down","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -6461,29 +6872,24 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q11-iii-fig", topicId: "phys-3-3", conceptId: "mains-plug-wiring",
     section: "B", questionRef: "2024 OL Q11(iii)",
-    stem: "Electric current is the movement of charged particles through a conductor.",
     questionText: "The diagram on the right shows the parts of an electrical plug. Name the wires labelled A and B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A = earth wire", marks: 3, contextNote: "Scheme also notes [accept partial answer for 3] across the pair." },
-    { id: "r-2", kind: "point", verbatim: "B = live wire", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "A = earth wire", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "B = live wire", marks: 3, contextNote: "[accept partial answer for 3]" },
     ],
     figure: {
-          "candId": "physics-2024-OL-paper-p10-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p10-i0.png",
-          "srcHash": "7070b7aad28de06ce8e9bce2593c6f36",
-          "alt": "Left side is the Q11 stem and parts (i) to (iii) in print. Right side is a line diagram of the inside of a three-pin mains plug with its cover removed, seen face-on. The rounded triangular plug body is drawn in outline with the three pins shown as two solid black rectangles/circles at the bottom corners and the larger earth pin at the top. Inside, three insulated wires run up from a cable that enters at the bottom, pass under a screwed-down cable grip, and fan out to three screw terminals. A cylindrical cartridge fuse sits in a holder on the right of the body. Six leader lines run to labels around the drawing: bold 'A' at the top left points to the wire going to the top (earth) terminal; 'neutral' on the left points to the wire going to the left-hand terminal; 'fuse' on the right points to the cartridge; bold 'B' on the right points to the wire running to the terminal beside the fuse; 'cable grip' at the bottom left points to the screwed clamp; 'cable' at the bottom right points to the sheathed cable emerging below the plug. All labels, leader lines and the whole plug outline are inside the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q11-plug",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q11-plug.png",
+          "srcHash": "b4c5f755046cdd967cd044e874f8a9f0",
+          "alt": "Diagram of the inside of a three-pin plug with its parts labelled: a wire labelled A, a wire labelled neutral, a wire labelled B, the fuse, the cable grip and the cable.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
           "lettersVisible": [
                 "A",
-                "B",
-                "neutral",
-                "fuse",
-                "cable",
-                "cable grip"
+                "B"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"The earth wire — the wire running to the top pin of the plug","askedInThisQuestion":true},{"letter":"B","meaning":"The live wire — the wire connected through the fuse to the live pin","askedInThisQuestion":true},{"letter":"neutral","meaning":"Printed label for the neutral wire, connected to the left-hand pin","askedInThisQuestion":false},{"letter":"fuse","meaning":"Printed label for the cartridge fuse fitted in the live side of the plug","askedInThisQuestion":false},{"letter":"cable","meaning":"Printed label for the flex cable carrying the three wires into the plug","askedInThisQuestion":false},{"letter":"cable grip","meaning":"Printed label for the clamp that grips the cable where it enters the plug","askedInThisQuestion":false}],
+    labelKey: [{"letter":"A","meaning":"earth wire","askedInThisQuestion":true},{"letter":"B","meaning":"live wire","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7952,41 +8358,33 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q11-i", topicId: "phys-3-3", conceptId: "example-of-an-electrical-conductor",
-    section: "A", questionRef: "2024 OL Q11(i)",
-    stem: "Electric current is the movement of charged particles through a conductor. fuse neutral cable grip cable A fuse is used as a safety precaution. A miniature circuit breaker (MCB) is another device used for safety. Z coil of wire (b) The electrical component Z is a variable resistor. Explain why a variable resistor is used in the circuit when demonstrating Ohm’s law. X Y Previous results from the experiment have shown the resistance of the coil of wire is 2.5 Ω.",
+    section: "B", questionRef: "2024 OL Q11(i)",
+    stem: "Electric current is the movement of charged particles through a conductor.",
     questionText: "State an example of an electrical conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "any named conductor", marks: 5 },
+    { id: "r1", kind: "criterion", verbatim: "any named conductor", marks: 5, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
-    figure: {
-          "candId": "physics-2024-OL-paper-p10-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p10-i0.png",
-          "srcHash": "7070b7aad28de06ce8e9bce2593c6f36",
-          "alt": "Left side is the Q11 stem and parts (i) to (iii) in print. Right side is a line diagram of the inside of a three-pin mains plug with its cover removed, seen face-on. The rounded triangular plug body is drawn in outline with the three pins shown as two solid black rectangles/circles at the bottom corners and the larger earth pin at the top. Inside, three insulated wires run up from a cable that enters at the bottom, pass under a screwed-down cable grip, and fan out to three screw terminals. A cylindrical cartridge fuse sits in a holder on the right of the body. Six leader lines run to labels around the drawing: bold 'A' at the top left points to the wire going to the top (earth) terminal; 'neutral' on the left points to the wire going to the left-hand terminal; 'fuse' on the right points to the cartridge; bold 'B' on the right points to the wire running to the terminal beside the fuse; 'cable grip' at the bottom left points to the screwed clamp; 'cable' at the bottom right points to the sheathed cable emerging below the plug. All labels, leader lines and the whole plug outline are inside the crop.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q14a-ii", topicId: "phys-1-1", conceptId: "acceleration-at-constant-velocity",
+    id: "phys-2024-ol-q14a-ii", topicId: "phys-1-2", conceptId: "acceleration-at-constant-velocity",
     section: "B", questionRef: "2024 OL Q14(a)(ii)",
     stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
     questionText: "What is the acceleration of the car?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0 m s–2", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "0 m s⁻²", marks: 2 },
     ],
     figure: {
-          "candId": "physics-2024-ol-paper-p12-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
-          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
-          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q14a-balanced",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-balanced.png",
+          "srcHash": "775d6011131e9c67170de0889efefaa8",
+          "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 520 N pointing right.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -7995,23 +8393,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q13a", topicId: "phys-1-4", conceptId: "height-of-the-iss",
+    id: "phys-2024-ol-q13a", topicId: "phys-1-5", conceptId: "height-of-the-iss",
     section: "B", questionRef: "2024 OL Q13(a)",
-    questionText: "How high above the Earth is the ISS? (7)",
+    stem: "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
+    questionText: "How high above the Earth is the ISS?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "322 km", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "322 km", marks: 7 },
     ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL SOURCE",
-          "title": "Source and question",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8024,14 +8413,14 @@ export const CARDS: SecCard[] = [
     questionText: "What is the velocity of the car 12 s later?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "20 m s–1", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "20 m s⁻¹", marks: 2 },
     ],
     figure: {
-          "candId": "physics-2024-ol-paper-p12-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
-          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
-          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q14a-balanced",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-balanced.png",
+          "srcHash": "775d6011131e9c67170de0889efefaa8",
+          "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 520 N pointing right.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -8042,11 +8431,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q3-ii", topicId: "phys-u2", conceptId: "supplying-heat-in-the-calorimeter-experiment",
     section: "A", questionRef: "2024 OL Q3(ii)",
-    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J Heat energy added = Heat gained by water and calorimeter ∆E = mwatercwaterΔϴwater + mcalorimeterccopperΔϴcalorimeter 3467 = A × cwater × B + 0.106 × 390 × B (12)",
-    questionText: "How did the student supply the heat energy needed to increase the temperature of the water and the calorimeter? (16)",
+    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter.",
+    questionText: "How did the student supply the heat energy needed to increase the temperature of the water and the calorimeter?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "any heat source", marks: 6 },
+    { id: "r1", kind: "criterion", verbatim: "any heat source", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8056,11 +8445,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q5-ii", topicId: "phys-u2", conceptId: "varying-temperature-in-the-resistance-experiment",
     section: "A", questionRef: "2024 OL Q5(ii)",
-    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks.",
+    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T.",
     questionText: "How did the student vary the temperature of the metallic conductor?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "any appropriate heat source", marks: 6 },
+    { id: "r1", kind: "criterion", verbatim: "any appropriate heat source", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8068,22 +8457,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q1-v", topicId: "phys-u2", conceptId: "clockwise-moments-on-a-metre-stick",
+    id: "phys-2024-ol-q1-v", topicId: "phys-1-2", conceptId: "clockwise-moments-on-a-metre-stick",
     section: "A", questionRef: "2024 OL Q1(v)",
+    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
     questionText: "Use the data to calculate the clockwise moments on the metre stick about the 0 cm mark.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(5 × 26) + (3 × 50) + (2 × 60) = 400 N cm", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "(5 × 26) + (3 × 50) + (2 × 60) = 400 N cm", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2024-ol-q1-tables",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+          "srcHash": "57c1ae8539adb55dc922c047d6495879",
+          "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8097,14 +8485,14 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the net horizontal force acting on the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "520 – 520 = 0 N", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "520 – 520 = 0 N", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
     figure: {
-          "candId": "physics-2024-ol-paper-p12-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
-          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
-          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q14a-balanced",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-balanced.png",
+          "srcHash": "775d6011131e9c67170de0889efefaa8",
+          "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 520 N pointing right.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -8119,14 +8507,14 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the net horizontal force acting on the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "680 – 520 = 160 N (right)", marks: 5 },
+    { id: "r1", kind: "point", verbatim: "680 – 520 = 160 N (right)", marks: 5, contextNote: "[accept partial answer for 3]" },
     ],
     figure: {
-          "candId": "physics-2024-ol-paper-p12-i1",
-          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
-          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
-          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q14a-unbalanced",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-unbalanced.png",
+          "srcHash": "94ea8c93584316f45e6d53e59f749657",
+          "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 680 N pointing right.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -8138,17 +8526,17 @@ export const CARDS: SecCard[] = [
     id: "phys-2024-ol-q14a-vii", topicId: "phys-1-1", conceptId: "velocity-under-an-unbalanced-force",
     section: "B", questionRef: "2024 OL Q14(a)(vii)",
     stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
-    questionText: "Calculate the velocity of the car after 12 s when the unbalanced forces are acting on the car. (15)",
+    questionText: "Calculate the velocity of the car after 12 s when the unbalanced forces are acting on the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "v = 20 + (0.084)(12) = 21 m s–1", marks: 5 },
+    { id: "r1", kind: "point", verbatim: "v = 20 + (0.084)(12) = 21 m s⁻¹", marks: 5, contextNote: "[accept partial answer for 3 e.g. v=u+at]" },
     ],
     figure: {
-          "candId": "physics-2024-ol-paper-p12-i1",
-          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
-          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
-          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q14a-unbalanced",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-unbalanced.png",
+          "srcHash": "94ea8c93584316f45e6d53e59f749657",
+          "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 680 N pointing right.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -8159,14 +8547,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q2-i", topicId: "phys-u2", conceptId: "apparatus-for-the-focal-length-experiment",
     section: "A", questionRef: "2024 OL Q2(i)",
-    stem: "A student carried out an experiment to measure f, the focal length of a converging lens. u (cm) 18 25 30 v (cm) 90 38 30",
+    stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
     questionText: "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"4 + 4 + 2 + 2"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "converging lens", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "object", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "screen", marks: 2 },
-    { id: "r-4", kind: "point", verbatim: "correct arrangement", marks: 2 },
+    { id: "r1", kind: "criterion", verbatim: "converging lens", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "object", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "screen", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "correct arrangement", marks: 2, contextNote: "[–1 if no label is present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8176,14 +8564,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q5-i", topicId: "phys-u2", conceptId: "apparatus-for-the-resistance-temperature-experiment",
     section: "A", questionRef: "2024 OL Q5(i)",
-    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks.",
+    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T.",
     questionText: "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"4 + 4 + 2 + 2"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "conductor", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "ohmmeter", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "thermometer", marks: 2 },
-    { id: "r-4", kind: "point", verbatim: "arrangement", marks: 2 },
+    { id: "r1", kind: "criterion", verbatim: "conductor", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "ohmmeter", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "thermometer", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "arrangement", marks: 2, contextNote: "[–1 if no label present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8193,14 +8581,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q5-iv", topicId: "phys-u2", conceptId: "graph-of-resistance-against-temperature-ol",
     section: "A", questionRef: "2024 OL Q5(iv)",
-    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks.",
+    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. The student recorded the following data.",
     questionText: "Use the data to plot a graph to show the relationship between T and R.",
-    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks. It prices them [6×1]." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q5-table",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q5-table.png",
+          "srcHash": "0f121140bb5d64cbd75dacfa95d23315",
+          "alt": "Table of the data: T (°C) 10, 20, 30, 40, 50, 60; R (Ω) 5.2, 5.9, 6.5, 7.2, 7.9, 8.5.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8208,12 +8604,14 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q7-iv", topicId: "phys-1-2", conceptId: "forces-on-a-bar-held-still",
-    section: "A", questionRef: "2024 OL Q7(iv)",
-    stem: "Oleksii Novikov from Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting a mass of 537.5 kg from the ground to a height of 46 cm. In 2020, Novikov won the World’s Strongest Man competition. One of the events in this competition is a bus pull. The bus has a mass of 19 000 kg.",
+    section: "B", questionRef: "2024 OL Q7(iv)",
+    stem: "To successfully complete the deadlift, a lifter has to bring the bar to a height of 46 cm and then wait for the referee to signal that the bar can be lowered to the ground.",
     questionText: "Draw a diagram of the forces acting on the bar when it is held at a height of 46 cm.",
-    tariffModel: {"kind":"fixed","notation":"4 + 4 + 1"}, totalMarks: 9,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "arrow up arrow down same length", marks: 9 },
+    { id: "r1", kind: "criterion", verbatim: "arrow up", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "arrow down", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "same length", marks: 1, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8222,16 +8620,25 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q7-viii", topicId: "phys-1-1", conceptId: "velocity-time-graph-of-a-bus-journey",
-    section: "A", questionRef: "2024 OL Q7(viii)",
-    stem: "Oleksii Novikov from Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting a mass of 537.5 kg from the ground to a height of 46 cm. In 2020, Novikov won the World’s Strongest Man competition. One of the events in this competition is a bus pull. The bus has a mass of 19 000 kg.",
-    questionText: "Draw a velocity–time graph for the motion of the bus during the 52 s. (17) acceleration due to gravity g = 9.8 m s–2",
+    section: "B", questionRef: "2024 OL Q7(viii)",
+    stem: "It took one man 52 s to complete the course. The bus started at rest. It took him 5 s to get the bus to a top speed of 0.6 m s⁻¹. The bus maintained that speed for 46 s and then it took 1 s for the bus to roll to a stop.",
+    questionText: "Draw a velocity–time graph for the motion of the bus during the 52 s.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "acceleration shown", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "constant velocity shown", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "deceleration shown", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "acceleration shown", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "constant velocity shown", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "deceleration shown", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q7viii-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q7viii-scheme.png",
+          "srcHash": "a8bf00038877e59c83c5357912010594",
+          "alt": "The marking scheme's sketch: velocity against time, a straight rise from the origin, a level section, then a steep straight fall to the time axis, then a level line along the axis.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8239,24 +8646,23 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-v", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-magnified-image",
-    section: "A", questionRef: "2024 OL Q8(v)",
+    section: "B", questionRef: "2024 OL Q8(v)",
+    stem: "Light is also reflected from curved mirrors.",
     questionText: "In your answerbook, copy and complete the ray diagram below to show how a magnified image is formed in a concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "first incident ray", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "first reflected ray", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "second reflected ray", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "image formed", marks: 2 },
+    { id: "r1", kind: "criterion", verbatim: "first incident ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "first reflected ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "second reflected ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "image formed", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2024-ol-q8-ray-diagram",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q8-ray-diagram.png",
+          "srcHash": "d85efade84beaf99e7ec877011335bad",
+          "alt": "Ray diagram to copy: a principal axis drawn as a dashed line, an upright arrow labelled object standing on the axis, a point labelled f on the axis between the object and the mirror, and a concave mirror drawn as a curve at the right.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8265,12 +8671,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q12-vii", topicId: "phys-4-3", conceptId: "where-the-neutrons-are-in-an-atom",
-    section: "A", questionRef: "2024 OL Q12(vii)",
-    stem: "The picture on the right is a nuclear fission reactor in Kamataka, a state in India. The control rods and the moderator play a very important role in the production of energy by nuclear fission. Pu–239 is an isotope of plutonium. It has a half-life of 24 110 years. Pu94 239 → X + α2 4 When uranium undergoes nuclear fission, neutrons are produced in the reaction. These help sustain a chain reaction. Neutrons are sub-atomic particles. Nuclear fusion is another type of nuclear reaction.",
+    section: "B", questionRef: "2024 OL Q12(vii)",
+    stem: "When uranium undergoes nuclear fission, neutrons are produced in the reaction. These help sustain a chain reaction. Neutrons are sub-atomic particles.",
     questionText: "Draw a diagram of an atom and indicate where the neutrons are located.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diagram of atom indicating neutrons in the nucleus", marks: 6 },
+    { id: "r1", kind: "criterion", verbatim: "diagram of atom indicating neutrons in the nucleus", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no drawing; this line names what the diagram must show." },
     ],
   } as SecCard,
   {
@@ -8280,23 +8686,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q13e", topicId: "phys-4-2", conceptId: "parts-of-an-x-ray-tube-ol",
     section: "B", questionRef: "2024 OL Q13(e)",
-    questionText: "Draw a labelled diagram of an X-ray tube. (7)",
-    tariffModel: {"kind":"fixed","notation":"3 + 2 + 2"}, totalMarks: 7,
+    questionText: "Draw a labelled diagram of an X-ray tube.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "heating filament", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "cathode and anode target", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "high voltage", marks: 2 },
+    { id: "r1", kind: "criterion", verbatim: "heating filament", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "cathode and anode target / high voltage", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "shielding / glass tube", marks: 2, contextNote: "[–1 if no label is present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-text",
-          "label": "OFFICIAL SOURCE",
-          "title": "Source and question",
-          "pages": [
-                12
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the concise prompt above."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8305,11 +8701,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14b-ii", topicId: "phys-3-3", conceptId: "resistance-temperature-graph-for-a-thermistor",
     section: "B", questionRef: "2024 OL Q14(b)(ii)",
+    stem: "A thermistor is a type of resistor made of semiconductor material whose resistance is dependent on temperature.",
     questionText: "Sketch a graph to show the relationship between resistance and temperature for a thermistor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "correct shape", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "correct shape", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8319,20 +8716,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14d-v", topicId: "phys-3-1", conceptId: "charge-on-a-pear-shaped-conductor",
     section: "B", questionRef: "2024 OL Q14(d)(v)",
+    stem: "A student performed an experiment to investigate how charge is distributed on a pear-shaped conductor.",
     questionText: "Draw a diagram to show how charge is distributed on a pear-shaped conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "charges accumulated at the pointed end", marks: 4 },
+    { id: "r1", kind: "criterion", verbatim: "charges accumulated at the pointed end", marks: 4, contextNote: "[accept partial answer for 2] The scheme prints no drawing; this line names what the diagram must show." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                14
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2024-ol-q14d-pear",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14d-pear.png",
+          "srcHash": "86f962ea9ec86514309631d42e5dc89d",
+          "alt": "Photograph of a pear-shaped metal conductor, rounded at one end and pointed at the other, mounted on an insulating stand.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: www.curiousscience.com/",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8342,14 +8738,30 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q4-vi", topicId: "phys-u2", conceptId: "graph-of-frequency-against-one-over-length-ol",
     section: "A", questionRef: "2024 OL Q4(vi)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. paper rider bridge bridge On the right is a diagram of the apparatus used in this experiment. f (Hz) 256 320 341 427 480 512 l (m) 0.214 0.171 0.160 0.127 0.114 0.107 1 l (m–1) 4.67 5.85",
-    questionText: "Use the data to plot a graph of 1 l against f. (16)",
-    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. The student recorded the following results.",
+    questionText: "Use the data to plot a graph of 1 ₗ against f.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 6, contextNote: "The scheme prints no answer here, only what earns the marks. It prices them [6×1]." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
+    questionFigure: {
+          "candId": "physics-2024-ol-q4vi-question",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4vi-question.png",
+          "srcHash": "67ca6cbc4115b2150d35ed6818a6c840",
+          "alt": "The printed question: (vi) Use the data to plot a graph of 1/l against f.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2024-ol-q4-table",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-table.png",
+          "srcHash": "3c6482b8f681c15f5abfd34801333091",
+          "alt": "Table of the results: f (Hz) 256, 320, 341, 427, 480, 512; l (m) 0.214, 0.171, 0.160, 0.127, 0.114, 0.107; 1/l (m⁻¹) 4.67, 5.85, and four empty cells.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8357,35 +8769,42 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q10-iv", topicId: "phys-2-6", conceptId: "next-harmonic-in-a-closed-pipe",
-    section: "A", questionRef: "2024 OL Q10(iv)",
-    stem: "When a person sings, their vocal chords vibrate. This vibration can cause a wine glass to shatter if resonance occurs. X Y If a musician increases the loudness of the note she plays, she has increased the amplitude of the sound wave.",
+    section: "B", questionRef: "2024 OL Q10(iv)",
+    stem: "A clarinet is an instrument that can be thought of as a pipe closed at one end.",
     questionText: "Draw a diagram, in your answerbook, to show the next harmonic for a sound wave in the same pipe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "node at closed end and two antinodes", marks: 6, contextNote: "The pipe is the clarinet of the preceding parts, modelled as a pipe closed at one end." },
+    { id: "r1", kind: "criterion", verbatim: "node at closed end and two antinodes", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no drawing; this line names what the diagram must show." },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q10-pipe",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q10-pipe.png",
+          "srcHash": "627f5a252ed578a2281f42fcd46c33b9",
+          "alt": "Diagram of a pipe closed at the bottom and open at the top, with a curve drawn inside it for the wave; an arrow labelled X points to the open top and an arrow labelled Y points to the closed bottom.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q1-iv", topicId: "phys-u2", conceptId: "verifying-the-first-law-of-equilibrium",
+    id: "phys-2024-ol-q1-iv", topicId: "phys-1-2", conceptId: "verifying-the-first-law-of-equilibrium",
     section: "A", questionRef: "2024 OL Q1(iv)",
+    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. The first law of equilibrium states that the sum of the upward forces equals the sum of the downward forces.",
     questionText: "Use the data to show that the first law of equilibrium is verified in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "upward forces = 6 + 4 = 10 N downward forces = 5 + 2 + 3 = 10 N", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "upward forces = 6 + 4 = 10 N / downward forces = 5 + 2 + 3 = 10 N", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2024-ol-q1-tables",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+          "srcHash": "57c1ae8539adb55dc922c047d6495879",
+          "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8393,22 +8812,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q1-vi", topicId: "phys-u2", conceptId: "anticlockwise-moments-on-a-metre-stick",
+    id: "phys-2024-ol-q1-vi", topicId: "phys-1-2", conceptId: "anticlockwise-moments-on-a-metre-stick",
     section: "A", questionRef: "2024 OL Q1(vi)",
+    stem: "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
     questionText: "Use the data to calculate the anticlockwise moments on the metre stick about the 0 cm mark.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(6 × 20) + (4 × 70) = 400 N cm", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "(6 × 20) + (4 × 70) = 400 N cm", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2024-ol-q1-tables",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q1-tables.png",
+          "srcHash": "57c1ae8539adb55dc922c047d6495879",
+          "alt": "Two tables of the results. Newton Spring Balances: upward forces (N) 6 and 4 at positions (cm) 20 and 70. Weights: downward forces (N) 5 and 2 at positions (cm) 26 and 60.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8416,23 +8834,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q1-vii", topicId: "phys-u2", conceptId: "verifying-the-second-law-of-equilibrium",
+    id: "phys-2024-ol-q1-vii", topicId: "phys-1-2", conceptId: "verifying-the-second-law-of-equilibrium",
     section: "A", questionRef: "2024 OL Q1(vii)",
-    questionText: "Use your calculations to show that the second law of equilibrium is verified in this experiment. (22)",
+    stem: "The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
+    questionText: "Use your calculations to show that the second law of equilibrium is verified in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(the sum of) clockwise moments are equal to anticlockwise moments", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "(the sum of) clockwise moments are equal to anticlockwise moments", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                2
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8441,11 +8850,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q2-ii", topicId: "phys-u2", conceptId: "labelling-object-and-image-distances",
     section: "A", questionRef: "2024 OL Q2(ii)",
-    stem: "A student carried out an experiment to measure f, the focal length of a converging lens. u (cm) 18 25 30 v (cm) 90 38 30",
+    stem: "A student carried out an experiment to measure f, the focal length of a converging lens.",
     questionText: "On your diagram, indicate and label the object distance u and the image distance v.",
-    tariffModel: {"kind":"fixed","notation":"4 + 2"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "both distances indicated correctly", marks: 6 },
+    { id: "r1", kind: "criterion", verbatim: "both distances indicated correctly", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no answer here, only what earns the marks. It prices the line [4+2]." },
     ],
   } as SecCard,
   {
@@ -8455,11 +8864,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q3-i", topicId: "phys-u2", conceptId: "apparatus-for-the-specific-heat-capacity-experiment",
     section: "A", questionRef: "2024 OL Q3(i)",
-    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J Heat energy added = Heat gained by water and calorimeter ∆E = mwatercwaterΔϴwater + mcalorimeterccopperΔϴcalorimeter 3467 = A × cwater × B + 0.106 × 390 × B (12)",
+    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter.",
     questionText: "Draw a labelled diagram of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"any 4: 4 + 2 + 2 + 2"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "calorimeter, water, source of heat (e.g. hot copper, heating coil), thermometer, mass balance, joulemeter, detail e.g. lagging, lid, stirrer, etc.", marks: 10 },
+    { id: "r1", kind: "anyN", verbatim: "calorimeter / water / source of heat (e.g. hot copper, heating coil) / thermometer / mass balance / joulemeter / detail e.g. lagging, lid, stirrer, etc.", marks: null, contextNote: "[–1 if no label present on diagram] The scheme prints \"[any 4: 4+2+2+2]\" under this list: any four, the first 4 and the rest 2 each.", openList: true, group: {"claimMax":4,"perOption":4,"options":["calorimeter","water","source of heat (e.g. hot copper, heating coil)","thermometer","mass balance","joulemeter","detail e.g. lagging, lid, stirrer, etc."],"perOptionSteps":[4,2,2,2]} },
     ],
   } as SecCard,
   {
@@ -8467,16 +8876,24 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q3-v", topicId: "phys-u2", conceptId: "completing-the-specific-heat-capacity-calculation",
+    id: "phys-2024-ol-q3-v", topicId: "phys-2-1", conceptId: "completing-the-specific-heat-capacity-calculation",
     section: "A", questionRef: "2024 OL Q3(v)",
-    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J Heat energy added = Heat gained by water and calorimeter ∆E = mwatercwaterΔϴwater + mcalorimeterccopperΔϴcalorimeter 3467 = A × cwater × B + 0.106 × 390 × B (12)",
-    questionText: "Using your answers for A and B, and given that the specific heat capacity of copper ccopper = 390 J kg–1 K–1, complete the following calculations and find a value of cwater.",
+    stem: "A student carried out an experiment to measure cwater, the specific heat capacity of water. She added heat energy ∆E to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter, mcalorimeter = 0.106 kg Mass of calorimeter and cold water = 0.262 kg Initial temperature of cold water and calorimeter = 18 °C Final temperature of water and calorimeter = 23 °C Heat energy added, ∆E = 3467 J (iii) Calculate A, the mass of the water mwater. (iv) Calculate B, the increase in temperature of the calorimeter and the cold water.",
+    questionText: "Using your answers for A and B, and given that the specific heat capacity of copper ccopper = 390 J kg⁻¹ K⁻¹, complete the following calculations and find a value of cwater.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "substitution for A", marks: 4, contextNote: "The paper prints the calculation to complete: ∆E = mwater cwater Δθwater + mcalorimeter ccopper Δθcalorimeter, filled in as 3467 = A × cwater × B + 0.106 × 390 × B." },
-    { id: "r-2", kind: "point", verbatim: "substitution for B", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "c = 4179.98 J kg-1 K-1", marks: 4 },
+    { id: "r1", kind: "criterion", verbatim: "substitution for A", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "substitution for B", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "c = 4179.98 J kg⁻¹ K⁻¹", marks: 4 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q3-calc",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q3-calc.png",
+          "srcHash": "b14c6eb3f6e41c6cc0a4ee392b19cd64",
+          "alt": "The calculation printed for completion: Heat energy added = Heat gained by water and calorimeter; ΔE = m(water) c(water) Δθ(water) + m(calorimeter) c(copper) Δθ(calorimeter); 3467 = A × c(water) × B + 0.106 × 390 × B.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8485,18 +8902,29 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q4-v", topicId: "phys-u2", conceptId: "completing-the-one-over-length-table",
     section: "A", questionRef: "2024 OL Q4(v)",
-    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. paper rider bridge bridge On the right is a diagram of the apparatus used in this experiment. f (Hz) 256 320 341 427 480 512 l (m) 0.214 0.171 0.160 0.127 0.114 0.107 1 l (m–1) 4.67 5.85",
-    questionText: "Copy and complete the table above into your answerbook by calculating the value of 1 l to 2 decimal places.",
-    tariffModel: {"kind":"fixed","notation":"4 × 1"}, totalMarks: 4,
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. The student recorded the following results.",
+    questionText: "Copy and complete the table above into your answerbook by calculating the value of 1 ₗ to 2 decimal places.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "6.25 7.87 8.77 9.35", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "6.25", marks: 1, contextNote: "The four values the scheme prints for the empty cells of the table, in the order printed." },
+    { id: "r2", kind: "point", verbatim: "7.87", marks: 1 },
+    { id: "r3", kind: "point", verbatim: "8.77", marks: 1 },
+    { id: "r4", kind: "point", verbatim: "9.35", marks: 1 },
     ],
+    questionFigure: {
+          "candId": "physics-2024-ol-q4v-question",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4v-question.png",
+          "srcHash": "637850536438c8524bd755fbef35b6cc",
+          "alt": "The printed question: (v) Copy and complete the table above into your answerbook by calculating the value of 1/l to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission"
+    },
     figure: {
-          "candId": "physics-2024-ol-paper-p004-i0",
-          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p004-i0.png",
-          "srcHash": "751043cb967980700d0aa9edfbcae6b3",
-          "alt": "Line diagram of a sonometer in side view. A long hollow wooden sound box carries a wire stretched along its top; a solid black triangular bridge stands under the wire near each end, each captioned 'bridge', and a small folded paper rider sits on the wire between them, captioned 'paper rider'. A circular tuning peg is drawn at the left end; at the right the wire passes over a pulley wheel and hangs down to a solid black block captioned 'weights' with an arrow pointing to it. Three part-lines of the question's printed parts (i)-(iii) are visible along the lower left of the crop, beside the hanging weight.",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q4-table",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q4-table.png",
+          "srcHash": "3c6482b8f681c15f5abfd34801333091",
+          "alt": "Table of the results: f (Hz) 256, 320, 341, 427, 480, 512; l (m) 0.214, 0.171, 0.160, 0.127, 0.114, 0.107; 1/l (m⁻¹) 4.67, 5.85, and four empty cells.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -8507,11 +8935,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q5-iii", topicId: "phys-u2", conceptId: "safety-precaution-in-the-resistance-experiment",
     section: "A", questionRef: "2024 OL Q5(iii)",
-    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks.",
+    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T.",
     questionText: "State one safety precaution that the student should have taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "any safety precaution", marks: 4 },
+    { id: "r1", kind: "criterion", verbatim: "any safety precaution", marks: 4, contextNote: "[accept partial answer for 2] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8519,14 +8947,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q5-vi", topicId: "phys-u2", conceptId: "estimating-temperature-from-the-graph",
+    id: "phys-2024-ol-q5-vi", topicId: "phys-3-3", conceptId: "estimating-temperature-from-the-graph",
     section: "A", questionRef: "2024 OL Q5(vi)",
-    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks.",
+    stem: "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. The student recorded the following data. The student used the apparatus to estimate the temperature of an unknown liquid. The resistance was measured as 5.5 Ω.",
     questionText: "Use your graph to estimate the temperature of the unknown liquid.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "14.4 ℃", marks: 3, contextNote: "The student used the apparatus to estimate the temperature of an unknown liquid; its resistance measured 5.5 Ω." },
+    { id: "r1", kind: "point", verbatim: "14.4 ℃", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-q5-table",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q5-table.png",
+          "srcHash": "0f121140bb5d64cbd75dacfa95d23315",
+          "alt": "Table of the data: T (°C) 10, 20, 30, 40, 50, 60; R (Ω) 5.2, 5.9, 6.5, 7.2, 7.9, 8.5.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8534,22 +8970,13 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-vii", topicId: "phys-2-3", conceptId: "magnification-of-a-concave-mirror-image",
-    section: "A", questionRef: "2024 OL Q8(vii)",
+    section: "B", questionRef: "2024 OL Q8(vii)",
+    stem: "An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror.",
     questionText: "Calculate the magnification m of this image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2 cm", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "m = 40/20 = 2 cm", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8557,22 +8984,13 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q8-viii", topicId: "phys-2-3", conceptId: "image-height-from-magnification",
-    section: "A", questionRef: "2024 OL Q8(viii)",
-    questionText: "If the object is 5 cm high, calculate the height of the image. (29)",
+    section: "B", questionRef: "2024 OL Q8(viii)",
+    stem: "An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror. (vii) Calculate the magnification m of this image.",
+    questionText: "If the object is 5 cm high, calculate the height of the image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "5 × 2 = 10 cm", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "5 × 2 = 10 cm", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8580,24 +8998,15 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q9-vii", topicId: "phys-2-1", conceptId: "parts-of-a-heat-pump",
-    section: "A", questionRef: "2024 OL Q9(vii)",
+    section: "B", questionRef: "2024 OL Q9(vii)",
+    stem: "Solids, liquids and gases can change state when they are heated or cooled. A heat pump is a device used in household freezers. It consists of a closed system of circulating fluid called a refrigerant which absorbs and releases latent heat as it changes state.",
     questionText: "Draw a labelled diagram of a heat pump.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "closed system", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "circulating fluid", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "compressor/expansion valve", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "closed system", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "circulating fluid", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "compressor/expansion valve", marks: 3, contextNote: "[–1 if no label present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                8
-          ],
-          "attribution": "SEC Physics 2024 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8605,12 +9014,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q10-viii", topicId: "phys-2-6", conceptId: "fundamental-in-a-pipe-open-at-both-ends",
-    section: "A", questionRef: "2024 OL Q10(viii)",
-    stem: "When a person sings, their vocal chords vibrate. This vibration can cause a wine glass to shatter if resonance occurs. X Y If a musician increases the loudness of the note she plays, she has increased the amplitude of the sound wave.",
+    section: "B", questionRef: "2024 OL Q10(viii)",
+    stem: "A flute is an instrument that can be thought of as a pipe that is open at both ends.",
     questionText: "Draw a diagram to show a sound wave vibrating at its fundamental frequency in a pipe open at both ends.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "antinode at both ends with one node at the centre", marks: 6 },
+    { id: "r1", kind: "criterion", verbatim: "antinode at both ends with one node at the centre", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no drawing; this line names what the diagram must show." },
     ],
   } as SecCard,
   {
@@ -8619,33 +9028,50 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q12-vi", topicId: "phys-4-4", conceptId: "daughter-nucleus-after-alpha-decay",
-    section: "A", questionRef: "2024 OL Q12(vi)",
-    stem: "The picture on the right is a nuclear fission reactor in Kamataka, a state in India. The control rods and the moderator play a very important role in the production of energy by nuclear fission. Pu–239 is an isotope of plutonium. It has a half-life of 24 110 years. Pu94 239 → X + α2 4 When uranium undergoes nuclear fission, neutrons are produced in the reaction. These help sustain a chain reaction. Neutrons are sub-atomic particles. Nuclear fusion is another type of nuclear reaction.",
-    questionText: "When Pu–239 decays, it emits alpha particles α2 4. What is the daughter nucleus X in the nuclear reaction below when an atom of Pu94 239 emits α2 4?",
-    tariffModel: {"kind":"fixed","notation":"3 × 2"}, totalMarks: 6,
+    section: "B", questionRef: "2024 OL Q12(vi)",
+    stem: "Pu–239 is an isotope of plutonium. It has a half-life of 24 110 years.",
+    questionText: "When Pu–239 decays, it emits alpha particles α₂ ⁴. What is the daughter nucleus X in the nuclear reaction below when an atom of Pu₉₄ ²³⁹ emits α₂ ⁴?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "𝑼𝟗𝟐 𝟐𝟑𝟓", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "U²³⁵₉₂", marks: 6, contextNote: "[3 × 2]: the scheme prices the nucleus in three items, 2 each." },
     ],
+    questionFigure: {
+          "candId": "physics-2024-ol-q12vi-question",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q12vi-question.png",
+          "srcHash": "164d1f60fe83e3078359071c77c0ecc8",
+          "alt": "The printed question: (vi) When Pu–239 decays, it emits alpha particles (α with 4 above and 2 below). What is the daughter nucleus X in the nuclear reaction below when an atom of Pu (239 above, 94 below) emits an alpha particle? Below it: Pu (239 above, 94 below) → X + α (4 above, 2 below), the numbers set after each symbol.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2024-ol-q12vi-scheme",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q12vi-scheme.png",
+          "srcHash": "f069f017056a77c45af0d4d8f094b3ae",
+          "alt": "The marking scheme's answer: U with 235 above and 92 below, set after the symbol.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level marking scheme — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2024-ol-q14a-vi", topicId: "phys-1-1", conceptId: "acceleration-under-an-unbalanced-force",
+    id: "phys-2024-ol-q14a-vi", topicId: "phys-1-2", conceptId: "acceleration-under-an-unbalanced-force",
     section: "B", questionRef: "2024 OL Q14(a)(vi)",
     stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
     questionText: "Calculate the acceleration of the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.084 m s–2", marks: 5 },
+    { id: "r1", kind: "point", verbatim: "a= 160/1900 = 0.084 m s⁻²", marks: 5, contextNote: "[accept partial answer for 3 e.g. F=ma]" },
     ],
     figure: {
-          "candId": "physics-2024-ol-paper-p12-i1",
-          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
-          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
-          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
-          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2024-ol-q14a-unbalanced",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-q14a-unbalanced.png",
+          "srcHash": "94ea8c93584316f45e6d53e59f749657",
+          "alt": "Diagram of a box labelled 1900 kg with a force arrow labelled 520 N pointing left and a force arrow labelled 680 N pointing right.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
