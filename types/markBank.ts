@@ -98,6 +98,15 @@ export interface MarkRowPart {
   permittedMarks: number[];
 }
 
+/**
+ * The one row text a card may carry that is not a slice of the scheme: what an
+ * `unprinted` row says where the scheme prints no answer row at all for a
+ * printed ask. Every printed ask gets a card (Alex, 2026-10-28), and this is a
+ * direction to the student, never a typed answer. Mirrored in build-deck.mjs
+ * and bio_review_lib.py (UNPRINTED), which refuse any other wording.
+ */
+export const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
+
 export interface MarkRow {
   id: string;
   kind: RowKind;
@@ -150,6 +159,15 @@ export interface MarkRow {
    * test require the row to be the card's own question text.
    */
   ask?: boolean;
+  /**
+   * The scheme prints NO answer row for this printed ask (Biology 2010
+   * Ordinary Q11(c)(vii): its scheme stops at (vi), then blank rows), and the
+   * card exists all the same. The row claims nothing from the scheme: its
+   * verbatim is exactly UNPRINTED_ANSWER, it is a criterion, and it is the
+   * card's only row; its contextNote says what the scheme prints instead. The
+   * build and the deck test hold it to all three.
+   */
+  unprinted?: boolean;
   /**
    * Unclaimable until `dependsOn` is claimed — a "justify" mark is genuinely
    * unreachable if the structure it justifies was named wrongly.

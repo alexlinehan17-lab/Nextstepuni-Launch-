@@ -15,8 +15,14 @@ the cards, crops the figures, and refuses on any of:
     tasks do not add up to the printed total, or rows whose mark units do not
     reproduce the scheme's own tick summary;
   * a paper ask and its scheme reprint that do not share their wording;
-  * a census leaf (paper_census.py, an independent reader) no task claims, or a
-    task that resolves to no census leaf;
+  * a census leaf (paper_census.py, an independent reader) no carded task
+    claims, or a task that resolves to no census leaf. Every printed ask gets
+    a card, no exceptions (Alex, 2026-10-28): an excluded task claims no leaf,
+    a ledger may not name OPEN_LEAVES or EXCLUDED_LEAVES, and
+    exclusions/biology.json must be empty;
+  * an `unprinted` row (the scheme prints no answer row for a printed ask)
+    that is not its task's only row, has no page evidence, or stands for a
+    part whose marker the scheme does print;
   * a task filed under a topic the Topic Atlas does not give its question;
   * a card id that existed before and is not produced again.
 
@@ -244,7 +250,14 @@ def read_geo(lifter, spec, sp):
 
 def build_row(lifter, spec, row_id, task_doc, sp, lo):
     notes = []
-    if spec['type'] == 'geo':
+    if spec['type'] == 'unprinted':
+        # The scheme prints no answer row for this printed ask: the row is the
+        # one fixed direction B.UNPRINTED, never a typed answer. build() checks
+        # the scheme really prints no marker for the part.
+        row = {'id': row_id, 'kind': 'criterion', 'verbatim': B.UNPRINTED, 'marks': spec['marks'],
+               'unprinted': True}
+        units, worth = [spec['marks']], spec['marks']
+    elif spec['type'] == 'geo':
         value = read_geo(lifter, spec, sp)
         label = None
         if spec.get('label'):
@@ -407,6 +420,40 @@ def _unpriced_rows(row):
     return rows
 
 
+_LETTER = re.compile(r'^\(([a-h])\)(?:\s|$)')
+
+
+def unprinted_marker_problems(lifter, t, sq, anchor_end):
+    """Why an `unprinted` task's part may not be carded so, if it may not: the
+    scheme, read from the line after the task's anchor up to its next
+    question (or, for a roman, its next letter), prints the part's own
+    marker, so there is a row to lift instead."""
+    qn, letter, roman, item = B.parse_ref(t['ref'])
+    if item or t['route'] or t.get('item') or not (letter or roman):
+        return [f'{t["key"]}: an unprinted row cards one whole printed part (no item, route or bare question)']
+    marker = f'({roman})' if roman else f'({letter})'
+    nxt = qn + 1
+    src = lifter.srcs['scheme']
+    page, start = sq['page'], anchor_end + 1
+    while page in src.lines:
+        lines = src.lines[page]
+        for i in range(start, len(lines)):
+            line = lines[i]
+            # The next question's head: "12.", "Question 12", or a bare "12"
+            # that is not the page's own number (its first or last line).
+            if line in (f'{nxt}.', f'Question {nxt}') or line.startswith(f'Question {nxt} ') \
+                    or (line == f'{nxt}' and 0 < i < len(lines) - 1):
+                return []
+            nl = _LETTER.match(line)
+            if roman and nl and nl.group(1) > letter:
+                return []
+            if line == marker or line.startswith(marker + ' '):
+                return [f'{t["key"]}: the scheme prints {marker} on p{page} ({line[:50]!r}); lift its row '
+                        'instead of an unprinted one']
+        page, start = page + 1, 0
+    return []
+
+
 def ladder_key(ledger, qn, letter):
     """The LADDERS key a part belongs to: its question, or (question, letters)."""
     for k in getattr(ledger, 'LADDERS', {}):
@@ -434,7 +481,7 @@ def build(ledger, year, level):
     fail(problems)
 
     # --- tasks ------------------------------------------------------------
-    cards, audit_tasks, excluded = [], [], []
+    cards, audit_tasks, excluded, unprinted_list = [], [], [], []
     units_by = defaultdict(Counter)
     ladder_units = defaultdict(Counter)
     totals_q, totals_part = defaultdict(int), defaultdict(int)
@@ -507,6 +554,18 @@ def build(ledger, year, level):
                             f'words with the paper ask "{qtext[:60]}"')
         rows, task_units, worth = [], [], 0
         whole = t.get('tariff') == 'questionTotal'
+        if any(spec['type'] == 'unprinted' for spec in t['rows']):
+            # A printed ask whose scheme prints no answer row (2010 Ordinary
+            # Q11(c)(vii)) is carded all the same, with the one row that says
+            # so: refused unless it is the task's only row, on a priced (not
+            # whole-part, not variant, not excluded) task with its page
+            # evidence, for a part whose marker the scheme does not print.
+            if len(t['rows']) != 1 or whole or t.get('excluded') \
+                    or t['key'] in getattr(ledger, 'ANSWER_VARIANTS', {}):
+                problems.append(f'{t["key"]}: an unprinted row is the only row of a priced task')
+            if not re.search(r'Paper p\d+.*Scheme p\d+', t.get('evidence') or '', re.S):
+                problems.append(f'{t["key"]}: an unprinted row needs its page evidence ("Paper pN ... Scheme pN")')
+            problems += unprinted_marker_problems(lifter, t, sq, sq_meta['lines'][1])
         for i, spec in enumerate(t['rows']):
             try:
                 row, units, w = build_row(lifter, _unpriced_spec(spec) if whole else spec, f'r{i + 1}',
@@ -630,6 +689,8 @@ def build(ledger, year, level):
                              'schemeRows': [r['verbatim'] for r in rows]})
         else:
             cards.append(card)
+            if any(r.get('unprinted') for r in rows):
+                unprinted_list.append({'leaf': t['ref'], 'id': cid, 'evidence': t['evidence']})
         audit_tasks.append({
             'status': 'excluded' if t.get('excluded') else 'carded',
             'key': t['key'], 'id': cid, 'questionRef': card['questionRef'], 'section': t['sec'],
@@ -662,10 +723,11 @@ def build(ledger, year, level):
             # the scheme prices on its own ("3(1)" then "5(3) + 2"):
             # {'steps': [...], 'fixed': {mark: count}} names those units; a
             # question may hold two ladders, keyed (qn, 'letters'); and
-            # 'responses' allows more carded responses than steps, as in a
-            # best-five-of-six question, or fewer where a response's ask is
-            # left open or excluded without a task (OPEN_LEAVES,
-            # EXCLUDED_LEAVES).
+            # 'responses' counts the carded responses where they differ from
+            # the steps: more, as in a best-five-of-six question, or fewer
+            # where the scheme prints fewer answers than its response table
+            # has rows (2022 Ordinary Q11(b), Q12(b)). Either way every printed
+            # ask is carded: the census check below holds that, not this one.
             # A part under no ladder (a whole-part card, 2019 Ordinary Q7(b)
             # beside Q7(a)'s "4 + 2") adds its own total to the ladders'.
             ladder_total = free_q.get(qn, 0)
@@ -704,9 +766,12 @@ def build(ledger, year, level):
     # --- census: every leaf claimed, every task a leaf --------------------
     parts, _texts, _files = PC.census_merged('biology', year, level, None)
     leaves = set(PC.leaves_of(parts))
-    claimed = set()
+    claimed, excluded_only = set(), set()
     for t in ledger.TASKS:
-        # An excluded task is reviewed and accounted for: it claims its leaf.
+        # Only a CARDED task claims its leaf: an excluded task is reviewed and
+        # recorded, but a printed ask only it reaches has no card, and every
+        # printed ask gets one (Alex, 2026-10-28). 2026 Ordinary
+        # Q12(b)(ii)2's exclusion stands under a leaf its carded siblings claim.
         qn, letter, roman, _ = B.parse_ref(t['ref'])
         key = (qn, letter, roman)
         hit = [l for l in leaves if l == key or (l[0] == qn and l[1] == letter and roman is None)]
@@ -717,53 +782,24 @@ def build(ledger, year, level):
             hit = [l for l in leaves if l[0] == qn]
         if not hit:
             problems.append(f'{t["key"]}: {t["ref"]} is no census leaf')
-        claimed.update(hit)
-    # A census leaf left OPEN: the paper prints the ask and the scheme prints
-    # nothing for it to lift (2010 Ordinary Q11(c)(vii): scheme p7's Q11(c)
-    # block stops at (vi), then blank rows). It is neither carded nor
-    # excluded: it stays open for reconcile.py to report, with its reason and
-    # page evidence recorded in the audit.
-    open_leaves = getattr(ledger, 'OPEN_LEAVES', {})
-    open_list = []
-    for leaf, why in sorted(open_leaves.items(), key=lambda kv: str(kv[0])):
-        if leaf not in leaves:
-            problems.append(f'OPEN_LEAVES {leaf} is no census leaf')
-        elif leaf in claimed:
-            problems.append(f'OPEN_LEAVES {leaf} is claimed by a task')
-        elif not (why.get('reason') and why.get('evidence')):
-            problems.append(f'OPEN_LEAVES {leaf} needs its reason and its page evidence')
-        open_list.append({'leaf': f'Q{leaf[0]}' + ''.join(f'({x})' for x in leaf[1:] if x),
-                          'reason': why.get('reason'), 'evidence': why.get('evidence')})
-    # A census leaf EXCLUDED without a task: the same case as an open leaf
-    # (the scheme prints nothing to lift, so there are no scheme rows to
-    # price), recorded as an exclusion once that is decided (2010 Ordinary
-    # Q11(c)(vii), 2026-10-27). reconcile.py counts exclusions from
-    # exclusions/biology.json, so the same ref, reason and evidence must
-    # stand there: the ledger and the coverage count cannot drift apart.
-    excl_leaves = getattr(ledger, 'EXCLUDED_LEAVES', {})
-    excl_list = []
-    if excl_leaves:
-        excl_path = os.path.join(HERE, 'exclusions', 'biology.json')
-        excl_file = json.load(open(excl_path, encoding='utf-8')) if os.path.exists(excl_path) else []
-    for leaf, why in sorted(excl_leaves.items(), key=lambda kv: str(kv[0])):
-        label = f'Q{leaf[0]}' + ''.join(f'({x})' for x in leaf[1:] if x)
-        if leaf not in leaves:
-            problems.append(f'EXCLUDED_LEAVES {leaf} is no census leaf')
-        elif leaf in claimed:
-            problems.append(f'EXCLUDED_LEAVES {leaf} is claimed by a task')
-        elif leaf in open_leaves:
-            problems.append(f'EXCLUDED_LEAVES {leaf} is also in OPEN_LEAVES')
-        elif not (why.get('reason') and why.get('evidence')):
-            problems.append(f'EXCLUDED_LEAVES {leaf} needs its reason and its page evidence')
-        ref = f'{year} {level.upper()} {label}'
-        entry = [e for e in excl_file if e.get('ref') == ref]
-        if len(entry) != 1 or entry[0].get('reason') != why.get('reason') \
-                or entry[0].get('evidence') != why.get('evidence'):
-            problems.append(f'EXCLUDED_LEAVES {leaf}: exclusions/biology.json needs one entry "{ref}" '
-                            'with this reason and evidence')
-        excl_list.append({'leaf': label, 'reason': why.get('reason'), 'evidence': why.get('evidence')})
-    for leaf in sorted(leaves - claimed - set(open_leaves) - set(excl_leaves), key=str):
-        problems.append(f'census leaf {leaf} has no task')
+        if t.get('excluded'):
+            excluded_only.update(hit)
+        else:
+            claimed.update(hit)
+    # Every printed ask gets a card, no exceptions (Alex, 2026-10-28). A leaf
+    # is never left OPEN or EXCLUDED to finish a sitting: where the scheme
+    # prints no answer for the ask, the card carries an unprinted() row
+    # (2010 Ordinary Q11(c)(vii), the one leaf once left open, then excluded).
+    for name in ('OPEN_LEAVES', 'EXCLUDED_LEAVES'):
+        if getattr(ledger, name, None):
+            problems.append(f'{name}: a printed ask is never left open or excluded; card it, with an '
+                            'unprinted() row where the scheme prints no answer for it')
+    excl_path = os.path.join(HERE, 'exclusions', 'biology.json')
+    if os.path.exists(excl_path) and json.load(open(excl_path, encoding='utf-8')):
+        problems.append('exclusions/biology.json must be empty: a printed ask is never excluded')
+    for leaf in sorted(leaves - claimed, key=str):
+        problems.append(f'census leaf {leaf} has no task' if leaf not in excluded_only else
+                        f'census leaf {leaf} has no card (an excluded task claims no leaf): card it')
 
     # --- figure keys -----------------------------------------------------
     # Every figure a task names is cropped, and every crop is shown by a task.
@@ -851,8 +887,7 @@ def build(ledger, year, level):
         'tickChecksumsMatched': len(ledger.CHECKSUMS),
         **({'layoutChecks': layout} if layout else {}),
         'excluded': excluded,
-        **({'openLeaves': open_list} if open_list else {}),
-        **({'excludedLeaves': excl_list} if excl_list else {}),
+        **({'unprintedAnswers': unprinted_list} if unprinted_list else {}),
     }
     return lifter, cards, audit_tasks, checks
 
@@ -1155,10 +1190,8 @@ def main():
           + (' (written)' if args.write else ' (check only)'))
     for h in checks['excluded']:
         print(f'  EXCLUDED {h["questionRef"]}: {h["reason"]}')
-    for h in checks.get('openLeaves', []):
-        print(f'  OPEN {h["leaf"]}: {h["reason"]}')
-    for h in checks.get('excludedLeaves', []):
-        print(f'  EXCLUDED {h["leaf"]} (no task): {h["reason"]}')
+    for h in checks.get('unprintedAnswers', []):
+        print(f'  UNPRINTED {h["leaf"]} ({h["id"]}): carded with the row "{B.UNPRINTED}"')
     # Leave without interpreter teardown: PyMuPDF 1.26 on this machine
     # intermittently segfaults freeing its documents at exit, which would turn
     # a finished run's status into 139 after all its work is done.

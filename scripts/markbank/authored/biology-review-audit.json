@@ -244464,7 +244464,7 @@
      "5": 9
     },
     "11c": {
-     "6": 7
+     "6": 8
     },
     "12a": {
      "7": 3
@@ -247805,6 +247805,39 @@
     },
     {
      "status": "carded",
+     "key": "11cvii",
+     "id": "bio-2010-ol-q11-c-vii",
+     "questionRef": "2010 OL Q11(c)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      6
+     ],
+     "topic": "bio-2-3",
+     "concept": "function-of-proteins",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no (vii) row: anchored on the (c) marker that heads the part's answers and its \"2(6)+6(2)\" ladder.",
+     "decision": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. The scheme prints no answer row for this ask (scheme p7: Q11(c) stops at (vi), then blank rows), so its one row is the fixed direction \"The scheme prints no answer for this part.\", never a typed answer. Left open by the review (ca320bf8a), excluded on 2026-10-27 (2e9846697), carded on 2026-10-28 under Alex's rule that every printed ask gets a card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
      "key": "12ai",
      "id": "bio-2010-ol-q12-a-i",
      "questionRef": "2010 OL Q12(a)(i)",
@@ -250220,8 +250253,8 @@
      "notes": null
     }
    ],
-   "cardCount": 164,
-   "baseTaskCount": 164,
+   "cardCount": 165,
+   "baseTaskCount": 165,
    "figures": [
     "biology-2010-ol-q1-carbon",
     "biology-2010-ol-q10-pyramid",
@@ -250241,7 +250274,7 @@
    ],
    "checks": {
     "censusLeaves": 145,
-    "censusLeavesClaimed": 144,
+    "censusLeavesClaimed": 145,
     "atlas": {
      "1": {
       "atlasTopics": [
@@ -250403,11 +250436,11 @@
     "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (biology-<year>-exam-topic-map.json via biology-curriculum-crosswalk.json)",
     "tickChecksumsMatched": 30,
     "excluded": [],
-    "excludedLeaves": [
+    "unprintedAnswers": [
      {
       "leaf": "Q11(c)(vii)",
-      "reason": "The scheme prints no answer for this ask, so nothing can be lifted and no answer is written. Left OPEN by the review (ca320bf8a); excluded with this page evidence on 2026-10-27 (a decision Alex delegated to the coordinator).",
-      "evidence": "Paper p10 prints \"(vii) Give one function of proteins in living organisms.\" as the last ask of Q11(c), \"(24)\". Scheme p7 (printed page 6) prints Q11(c) (i) \"1. Thymine or T\" / \"2. Cytosine or C\" to (vi) \"It must fold (into its functional shape)\" beside \"2(6)+6(2)\", then an empty cell and a blank row; scheme p8 opens on Question 12. There is no (vii) row. The ladder's eight steps match (i)1, (i)2 and (ii)-(vii), so (vii) is priced (2) with no answer printed (rendered and looked at)."
+      "id": "bio-2010-ol-q11-c-vii",
+      "evidence": "Paper p10 prints \"(vii) Give one function of proteins in living organisms.\" as the last ask of Q11(c), \"(24)\". Scheme p7 (printed page 6) prints Q11(c) (i) \"1. Thymine or T\" / \"2. Cytosine or C\" to (vi) \"It must fold (into its functional shape)\" beside \"2(6)+6(2)\", then an empty cell and a blank row; scheme p8 opens on Question 12. There is no (vii) row. The ladder's eight steps are (i)'s two bases and (ii)-(vii), so (vii) is one of its responses, priced on the ladder with no answer printed (both pages rendered and looked at, 2026-10-28)."
      }
     ]
    }

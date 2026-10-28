@@ -167107,6 +167107,33 @@
   "level": "ordinary"
  },
  {
+  "id": "bio-2010-ol-q11-c-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "function-of-proteins",
+  "section": "C",
+  "questionRef": "2010 OL Q11(c)(vii)",
+  "questionText": "Give one function of proteins in living organisms.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6)+6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "The scheme prints no answer for this part.",
+    "marks": null,
+    "unprinted": true,
+    "contextNote": "The marking scheme (printed page 6) prints answers to Q11(c)(i) to (vi), then blank rows: it prints no (vii) row. Its \"2(6)+6(2)\" counts eight answers in (c), (i)'s two bases and (ii) to (vii), so this part is still marked: 6 if it is one of your first two correct answers in (c), 2 after that."
+   }
+  ],
+  "notes": "One response of the \"2(6)+6(2)\" ladder, carded at its first rate. The scheme prints no answer row for this ask (scheme p7: Q11(c) stops at (vi), then blank rows), so its one row is the fixed direction \"The scheme prints no answer for this part.\", never a typed answer. Left open by the review (ca320bf8a), excluded on 2026-10-27 (2e9846697), carded on 2026-10-28 under Alex's rule that every printed ask gets a card. Reviewed 2026-10-27 against the paper and scheme; ledger bio_review_2010_ol.py.",
+  "year": 2010,
+  "level": "ordinary"
+ },
+ {
   "id": "bio-2010-ol-q12-a-i",
   "subjectId": "biology",
   "topicId": "bio-2-1",
