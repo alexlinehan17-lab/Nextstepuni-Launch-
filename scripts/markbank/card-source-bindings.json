@@ -10820,42 +10820,6 @@
     8
    ],
    "stripStem": true
-  },
-  "phys-2025-ol-q2-iv": {
-   "pages": [
-    3
-   ],
-   "stripStem": true
-  },
-  "phys-2025-ol-q3-iv": {
-   "pages": [
-    3
-   ],
-   "stripStem": true
-  },
-  "phys-2025-ol-q5-iv": {
-   "pages": [
-    5
-   ],
-   "stripStem": true
-  },
-  "phys-2025-ol-q7-viii": {
-   "pages": [
-    7
-   ],
-   "stripStem": true
-  },
-  "phys-2025-ol-q9-ii": {
-   "pages": [
-    9
-   ],
-   "stripStem": true
-  },
-  "phys-2025-ol-q9-iv": {
-   "pages": [
-    9
-   ],
-   "stripStem": true
   }
  }
 }

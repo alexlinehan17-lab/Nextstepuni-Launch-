@@ -38,6 +38,8 @@ const PINS: Record<string, [number, number, number, string, string]> = {
     'c7f984734a202b0fa5ef413b805d208c52cdb6bd3239a8513d4e8a6a6129f302'],
   '2026-hl': [136, 136, 107, 'fd1ff3286d201f396a282c38d4bf0f40adf71a1fca80d9111e763a4141a200d5',
     '228dec63cad7a6c8653dfb8b84ac29e908ec34277869cafea69e9481ad199463'],
+  '2025-ol': [133, 133, 131, 'e25bb683dbff1c207dc4092b8e2fefb1dda2b1f2c9e294785c37cd99a605fffa',
+    'bf8f2367d00286ae516dae6ded5ac311ec596df035f4cb53023decbb6dfc308e'],
   '2025-hl': [137, 137, 125, 'bd8d60f621d8d952e0aaefb054a5e064ea81d6fafcee0501bad5cf10b2ddbf27',
     'f0928d59d20bb0ea168dc17dcaf180b5c68389e8c9fecbf171a17ee90e21ffa2'],
 };

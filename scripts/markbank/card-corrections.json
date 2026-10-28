@@ -452,6 +452,21 @@
    "reason": "Q6(h) is one of the eight 7-mark parts of \"Answer any eight\" (8 x 7), and the scheme prices (i) and (ii) in one cell [4 + 3]: one card for the part, phys-2025-hl-q6-h-i.",
    "drop": true,
    "replacementId": "phys-2025-hl-q6-h-i"
+  },
+  "phys-2025-ol-q6a-fig": {
+   "reason": "A figure twin of phys-2025-ol-q6-a, which carries the reviewed task and its figure (the build already drops this twin as superseded by its base).",
+   "drop": true,
+   "replacementId": "phys-2025-ol-q6-a"
+  },
+  "phys-2025-ol-q10-vii": {
+   "reason": "Never shipped: the figureless twin of phys-2025-ol-q10vii-fig, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "phys-2025-ol-q10vii-fig"
+  },
+  "phys-2025-ol-q10-viii": {
+   "reason": "Never shipped: the figureless twin of phys-2025-ol-q10viii-fig, which carries the reviewed task and its figure.",
+   "drop": true,
+   "replacementId": "phys-2025-ol-q10viii-fig"
   }
  },
  "business": {

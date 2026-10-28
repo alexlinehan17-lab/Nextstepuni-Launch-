@@ -282,7 +282,7 @@ TASKS = [
     # ---------------------------------------------------------------- Q3 --
     T('3i', 'Q3(i)', 'A', P(4, 'Draw a labelled diagram of the arrangement of the apparatus used in this experiment.'),
       [C('tube', 4), C('means of varying length l', 4),
-       C('tuning fork / metre stick', 4, note_sel=S('[–1 if no label present on diagram]'))],
+       R('tuning fork / metre stick', 4, note_sel=S('[–1 if no label present on diagram]'))],
       'phys-2-5', 'resonance-tube-apparatus',
       SQ(8, 'Draw a labelled diagram of the arrangement of the apparatus used in this experiment.'), 12,
       stem=STEM3A, id='phys-2025-hl-q3-i'),

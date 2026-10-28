@@ -9039,7 +9039,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r1", kind: "criterion", verbatim: "tube", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
     { id: "r2", kind: "criterion", verbatim: "means of varying length l", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
-    { id: "r3", kind: "criterion", verbatim: "tuning fork / metre stick", marks: 4, contextNote: "[–1 if no label present on diagram] The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "point", verbatim: "tuning fork / metre stick", marks: 4, contextNote: "[–1 if no label present on diagram]" },
     ],
   } as SecCard,
   {

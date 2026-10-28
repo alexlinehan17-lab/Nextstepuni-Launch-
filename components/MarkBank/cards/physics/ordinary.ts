@@ -4507,14 +4507,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q5-vi", topicId: "phys-u2", conceptId: "resistivity-from-slope-and-area",
+    id: "phys-2025-ol-q5-vi", topicId: "phys-3-3", conceptId: "resistivity-from-slope-and-area",
     section: "A", questionRef: "2025 OL Q5(vi)",
-    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire, repeated this for six different lengths of the same wire, and drew a graph of R against l. Earlier parts of this question give the slope of that graph as approximately 0.33 Ω m⁻¹ and the circular cross-sectional area A of the wire as 4.83 × 10⁻⁶ m².",
+    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire.",
     questionText: "Using the formula, ρ = slope × A, calculate the resistivity ρ of the wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "ρ ≈ 1.6 × 10-6 Ω m", marks: 6, contextNote: "The scheme prints this as 1.6 × 10⁻⁶ Ω m." },
+    { id: "r1", kind: "point", verbatim: "ρ ≈ 1.6 × 10⁻⁶ Ω m", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q5-graph",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q5-graph.png",
+          "srcHash": "0f3acd0ae8b12c5f25d9cf3aa23d6244",
+          "alt": "Graph of R (Ω), from 0.00 to 0.25, against l (m), from 0.00 to 0.65: six plotted points lie on a straight line drawn from the origin up to the last point at 0.60 m.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4523,18 +4531,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q6-a", topicId: "phys-1-2", conceptId: "moment-of-a-force",
     section: "B", questionRef: "2025 OL Q6(a)",
-    stem: "From the diagram: force applied = 50 N, distance = 15 cm.",
     questionText: "The diagram shows a force of 50 N applied to a wrench. Calculate the moment of the force about the fulcrum at the centre of the nut.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "moment = 7.5 N m", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "moment = 7.5 N m", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
     figure: {
-          "candId": "physics-2025-OL-paper-p06-i1",
-          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p06-i1.png",
-          "srcHash": "59f3a016f1c93e17d612263931e05d73",
-          "alt": "On the left, the opening of Question 6 ('Answer any eight of the following parts') with parts (a) to (d) in prose. On the right is the figure for part (a): a grey shaded 3-D clip-art drawing of an adjustable wrench (spanner) lying horizontally, seen from above/side. Its adjustable jaws are at the left end and grip a hexagonal nut; the long straight handle runs off to the right and ends in a small round hole. A short vertical arrow points straight down onto the far right end of the handle, and the text above it reads 'force applied = 50 N'. Beneath the wrench a double-headed horizontal arrow spans from the nut at the left to the end of the handle at the right, labelled 'distance = 15 cm'.",
-          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2025-ol-q6a-wrench",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q6a-wrench.png",
+          "srcHash": "df5127e587cf86cb205b66b507dfa8b2",
+          "alt": "Drawing of a wrench gripping a nut at one end; an arrow labelled force applied = 50 N points down on the handle, and a double-headed arrow labelled distance = 15 cm runs from the nut along the wrench.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -4548,7 +4555,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one condition necessary for equilibrium.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "forces up = forces down", marks: 7, accepts: ["clockwise moments = anticlockwise moments"] },
+    { id: "r1", kind: "alt", verbatim: "forces up = forces down or clockwise moments = anticlockwise moments", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4559,11 +4566,11 @@ export const CARDS: SecCard[] = [
     id: "phys-2025-ol-q6-c", topicId: "phys-2-4", conceptId: "primary-colours-of-light",
     section: "B", questionRef: "2025 OL Q6(c)",
     questionText: "State the three primary colours of light.",
-    tariffModel: {"kind":"orderedSplit","notation":"[3 + 2 + 2]"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "red", marks: null, exactTermRequired: true },
-    { id: "r-2", kind: "point", verbatim: "green", marks: null, exactTermRequired: true },
-    { id: "r-3", kind: "point", verbatim: "blue", marks: null, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "red", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "green", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "blue", marks: 2 },
     ],
   } as SecCard,
   {
@@ -4573,12 +4580,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q6-d", topicId: "phys-u2", conceptId: "instruments-barometer-and-voltmeter",
     section: "B", questionRef: "2025 OL Q6(d)",
-    stem: "Different instruments are used to measure different physical quantities.",
-    questionText: "Choose, from the following list of apparatus - barometer, joulemeter, sound level meter, voltmeter - an instrument used to measure (i) atmospheric pressure, (ii) potential difference.",
-    tariffModel: {"kind":"orderedSplit","notation":"[4 + 3]"}, totalMarks: 7,
+    questionText: "Choose, from the following list of apparatus, an instrument used to measure (i) atmospheric pressure, (ii) potential difference.\nbarometer joulemeter sound level meter voltmeter",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) barometer", marks: null, exactTermRequired: true },
-    { id: "r-2", kind: "point", verbatim: "(ii) voltmeter", marks: null, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "(i) — barometer", marks: 4 },
+    { id: "r2", kind: "point", verbatim: "(ii) — voltmeter", marks: 3, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4588,10 +4594,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q6-e", topicId: "phys-3-3", conceptId: "resistors-in-parallel",
     section: "B", questionRef: "2025 OL Q6(e)",
-    questionText: "Two resistors, 5 Ω and 10 Ω, are connected in parallel. Calculate the total resistance of the two resistors.",
+    questionText: "Two resistors, 5 Ω and 10 Ω, are connected in parallel. Calculate the total resistance of the two resistors.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "R = 3.3 Ω", marks: 7 },
+    { id: "r1", kind: "point", verbatim: "R = 3.3 Ω", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4602,9 +4608,9 @@ export const CARDS: SecCard[] = [
     id: "phys-2025-ol-q6-f", topicId: "phys-2-5", conceptId: "characteristics-of-a-musical-note",
     section: "B", questionRef: "2025 OL Q6(f)",
     questionText: "State two characteristics of a musical note.",
-    tariffModel: {"kind":"orderedSplit","notation":"[4 + 3]"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "any two of; loudness, pitch, quality", marks: null, group: {"claimMax":2,"options":["loudness","pitch","quality"]} },
+    { id: "r1", kind: "anyN", verbatim: "loudness / pitch / quality", marks: null, contextNote: "any two", group: {"claimMax":2,"perOption":4,"options":["loudness","pitch","quality"],"perOptionSteps":[4,3]} },
     ],
   } as SecCard,
   {
@@ -4617,7 +4623,21 @@ export const CARDS: SecCard[] = [
     questionText: "Why does the north pole of a magnet, that is free to rotate, point north?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "due to Earth's magnetic field", marks: 7, contextNote: "Key words: 'Earth's magnetic field' must appear in the correct context." },
+    { id: "r1", kind: "point", verbatim: "due to Earth’s magnetic field", marks: 7, contextNote: "[accept partial answer for 4]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q6-h", topicId: "phys-3-2", conceptId: "field-of-point-charge",
+    section: "B", questionRef: "2025 OL Q6(h)",
+    questionText: "Sketch the electric field due to a positive point charge.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "correct shape", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "correct direction", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -4630,8 +4650,29 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by a semiconductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "material whose resistivity lies between that of a good insulator or conductor", marks: 7, contextNote: "Key word: 'resistivity' must appear in the correct context." },
+    { id: "r1", kind: "point", verbatim: "material whose resistivity lies between that of a good insulator or conductor", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q6-j", topicId: "phys-3-1", conceptId: "charge-on-a-conductor",
+    section: "B", questionRef: "2025 OL Q6(j)",
+    questionText: "The insulated conductor shown below is positively charged. Copy the diagram into your answer book and show the distribution of charge on it.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "(charge throughout with) concentration at pointed end", marks: 7, contextNote: "[accept partial answer for 4] The scheme prints no drawing; this line names what the diagram must show." },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q6j-conductor",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q6j-conductor.png",
+          "srcHash": "41137312baa968f05b01ca0336eea1ae",
+          "alt": "Outline of an insulated conductor, pointed at its left end and rounded at its right end, with an arrow from the label insulated conductor.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4643,7 +4684,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by the photoelectric effect.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "emission of electrons from the surface of a metal when light of a suitable frequency shines on it", marks: 7, contextNote: "Key words: 'emission of electrons', 'metal' and 'suitable frequency' must appear in the correct context." },
+    { id: "r1", kind: "point", verbatim: "emission of electrons from the surface of a metal when light of a suitable frequency shines on it", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -4652,13 +4693,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q7-i-ii", topicId: "phys-1-2", conceptId: "definition-of-force-and-its-si-unit",
-    section: "B", questionRef: "2025 OL Q7(i)-(ii)",
-    stem: "In 1867, Isaac Newton published his ideas on motion in a book called The Principia. In it Newton developed an understanding of the idea of 'force'.",
-    questionText: "(i) Explain what is meant by force. (ii) State the SI unit for force.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    section: "B", questionRef: "2025 OL Q7(i)",
+    stem: "In 1867, Isaac Newton published his ideas on motion in a book called The Principia. In it Newton developed an understanding of the idea of ‘force’.",
+    questionText: "Explain what is meant by force.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(force) causes acceleration", marks: 6, contextNote: "Key words: 'causes acceleration' must appear in the correct context." },
-    { id: "r-2", kind: "point", verbatim: "newton", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "(force) causes acceleration", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4666,12 +4706,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q7-iii", topicId: "phys-1-2", conceptId: "vector-quantity-definition",
+    id: "phys-2025-ol-q7-ii", topicId: "phys-1-2", conceptId: "unit-of-force",
+    section: "B", questionRef: "2025 OL Q7(ii)",
+    stem: "In 1867, Isaac Newton published his ideas on motion in a book called The Principia. In it Newton developed an understanding of the idea of ‘force’.",
+    questionText: "State the SI unit for force.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "newton", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q7-iii", topicId: "phys-1-1", conceptId: "vector-quantity-definition",
     section: "B", questionRef: "2025 OL Q7(iii)",
     questionText: "Force is a vector quantity. Explain what is meant by a vector quantity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(magnitude and) direction", marks: 6, contextNote: "Key word: 'direction' must appear in the correct context." },
+    { id: "r1", kind: "point", verbatim: "(magnitude and) direction", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4681,11 +4735,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q7-v", topicId: "phys-1-1", conceptId: "acceleration-from-velocity-and-time",
     section: "B", questionRef: "2025 OL Q7(v)",
-    stem: "A person wishes to go skydiving. She boards an airplane at rest on a horizontal runway. The airplane reaches a velocity of 24 m s–1 in 8 s before take-off.",
+    stem: "A person wishes to go skydiving. She boards an airplane at rest on a horizontal runway. The airplane reaches a velocity of 24 m s⁻¹ in 8 s before take‐off.",
     questionText: "Calculate the horizontal acceleration of the airplane.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a = 3 m s-2", marks: 6, contextNote: "The scheme prints this as 3 m s⁻²." },
+    { id: "r1", kind: "point", verbatim: "a = 3 m s⁻²", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4695,11 +4749,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q7-vi", topicId: "phys-1-5", conceptId: "weight-from-mass-and-gravity",
     section: "B", questionRef: "2025 OL Q7(vi)",
-    stem: "Some time after take-off, the skydiver jumps out of the plane. The total mass of the skydiver is 70 kg, including the parachute.",
+    stem: "Some time after take‐off, the skydiver jumps out of the plane. The total mass of the skydiver is 70 kg, including the parachute.",
     questionText: "Calculate the total weight of the skydiver.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "F = 686 N", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "F = 686 N", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4709,10 +4763,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q7-vii", topicId: "phys-1-2", conceptId: "air-resistance-when-parachute-opens",
     section: "B", questionRef: "2025 OL Q7(vii)",
+    stem: "Some time after take‐off, the skydiver jumps out of the plane. The total mass of the skydiver is 70 kg, including the parachute.",
     questionText: "What happens to the force of air resistance when the parachute is opened?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "it increases", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "it increases", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4722,11 +4777,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q1-ii", topicId: "phys-u2", conceptId: "measuring-mass-mass-balance",
     section: "A", questionRef: "2025 OL Q1(ii)",
-    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with Trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and took further measurements to determine the velocities of the trolleys.",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys.",
     questionText: "Describe how the student measured the mass of each trolley.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(put on) mass balance", marks: 3, contextNote: "Key word: 'mass balance' must appear in the correct context.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "(put on) mass balance", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4734,13 +4789,13 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q1-iii", topicId: "phys-u2", conceptId: "velocity-formula-distance-over-time",
+    id: "phys-2025-ol-q1-iii", topicId: "phys-1-1", conceptId: "velocity-formula-distance-over-time",
     section: "A", questionRef: "2025 OL Q1(iii)",
-    stem: "In the momentum experiment the student took measurements to determine the velocities of the trolleys.",
-    questionText: "State the formula used to calculate the velocity.",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys.",
+    questionText: "State the formula used to calculate velocity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "v = s/t", marks: 6, contextNote: "The scheme prints this as a fraction (s over t)." },
+    { id: "r1", kind: "point", verbatim: "v = s/t", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4748,21 +4803,20 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q1-iv", topicId: "phys-u2", conceptId: "total-momentum-before-and-after-collision",
-    section: "A", questionRef: "2025 OL Q1(iv)",
-    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. The following data were recorded. She used the recorded data and the following formula to verify the principle of conservation of momentum: total momentum before = total momentum after, i.e. (mA × uA) + (mB × uB) = (mA + mB) × vfinal.",
-    questionText: "Calculate (a) the total momentum before the collision (b) the total momentum after the collision.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    id: "phys-2025-ol-q1-iv", topicId: "phys-1-2", conceptId: "total-momentum-before-and-after-collision",
+    section: "A", questionRef: "2025 OL Q1(iv)(a)",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys. The following data were recorded. She used the recorded data and the following formula to verify the principle of conservation of momentum. total momentum before = total momentum after (mA × uA) + (mB × uB) = (mA + mB) × vfinal",
+    questionText: "Calculate (a) the total momentum before the collision,",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "momentum before = 0.63 kg m s-1", marks: 6 },
-    { id: "r-2", kind: "point", verbatim: "momentum after = 0.63 kg m s-1", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "momentum before = 0.63 kg m s⁻¹", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
     figure: {
-          "candId": "physics-2025-OL-paper-p02-i0",
-          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p02-i0.png",
-          "srcHash": "f1ab09b9c5aecb72eebec68e24f57579",
-          "alt": "A table from the exam paper. Columns: mass of trolley A, m A, 0.34 kg. Rows: mass of trolley B, m B, velocity of trolley A before the collision, u A, velocity of trolley B before the collision, u B, velocity of trolley A and trolley B after the collision, v final. 5 rows by 2 columns, as printed in the paper.",
-          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
+          "candId": "physics-2025-ol-q1-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q1-table.png",
+          "srcHash": "0f9e06fcc9353564abd432b1b5bf8f0a",
+          "alt": "Table of the data recorded: mass of trolley A, mA, 0.34 kg; mass of trolley B, mB, 0.36 kg; velocity of trolley A before the collision, uA, 1.85 m s⁻¹; velocity of trolley B before the collision, uB, 0 m s⁻¹; velocity of trolley A and trolley B after the collision, vfinal, 0.90 m s⁻¹.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -4771,13 +4825,35 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q1-v", topicId: "phys-u2", conceptId: "verifying-conservation-of-momentum",
+    id: "phys-2025-ol-q1-iv-b", topicId: "phys-1-2", conceptId: "momentum-after",
+    section: "A", questionRef: "2025 OL Q1(iv)(b)",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys. The following data were recorded. She used the recorded data and the following formula to verify the principle of conservation of momentum. total momentum before = total momentum after (mA × uA) + (mB × uB) = (mA + mB) × vfinal",
+    questionText: "Calculate (b) the total momentum after the collision.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "momentum after = 0.63 kg m s⁻¹", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q1-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q1-table.png",
+          "srcHash": "0f9e06fcc9353564abd432b1b5bf8f0a",
+          "alt": "Table of the data recorded: mass of trolley A, mA, 0.34 kg; mass of trolley B, mB, 0.36 kg; velocity of trolley A before the collision, uA, 1.85 m s⁻¹; velocity of trolley B before the collision, uB, 0 m s⁻¹; velocity of trolley A and trolley B after the collision, vfinal, 0.90 m s⁻¹.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q1-v", topicId: "phys-1-2", conceptId: "verifying-conservation-of-momentum",
     section: "A", questionRef: "2025 OL Q1(v)",
-    stem: "The student calculated the total momentum before the collision and the total momentum after the collision.",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys.",
     questionText: "Explain how your calculations can be used to verify the principle of conservation of momentum.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "momentum before ≈ momentum after", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "momentum before ≈ momentum after", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4787,11 +4863,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q1-vi", topicId: "phys-u2", conceptId: "minimising-friction-momentum-experiment",
     section: "A", questionRef: "2025 OL Q1(vi)",
-    stem: "Trolley A travelled down a track and collided with Trolley B.",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys.",
     questionText: "How could the student have minimised the effect of friction?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "using an air track", marks: 4, accepts: ["aerodynamic trolleys"], contextNote: "The scheme ends this list with 'etc.' and states that its descriptions and methods are not exhaustive, so other valid answers are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "using an air track, aerodynamic trolleys, etc.", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -4801,12 +4877,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-ii", topicId: "phys-u2", conceptId: "measuring-pressure-and-volume-boyles-law",
     section: "A", questionRef: "2025 OL Q2(ii)",
-    stem: "In an experiment to verify Boyle's law, a student measured the pressure p of a gas at different volumes V.",
+    stem: "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results.",
     questionText: "Describe how the student measured both the pressure and the volume.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(read) pressure gauge", marks: 3, exactTermRequired: true },
-    { id: "r-2", kind: "point", verbatim: "(read) volume scale", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "(read) pressure gauge", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "(read) volume scale", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4816,11 +4892,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-iii", topicId: "phys-u2", conceptId: "boyles-law-quantity-kept-constant",
     section: "A", questionRef: "2025 OL Q2(iii)",
-    stem: "In an experiment to verify Boyle's law, a student measured the pressure p of a gas at different volumes V.",
+    stem: "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results.",
     questionText: "State one quantity that must be kept constant during the experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "temperature", marks: 3, accepts: ["mass of gas"] },
+    { id: "r1", kind: "point", verbatim: "temperature / mass of gas", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4830,11 +4906,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-vi", topicId: "phys-u2", conceptId: "boyles-law-graph-verification",
     section: "A", questionRef: "2025 OL Q2(vi)",
-    stem: "In an experiment to verify Boyle's law, a student measured the pressure p of a gas at different volumes V and then plotted a graph, on graph paper, of 1/p against V.",
-    questionText: "Explain how a graph of 1/p against V verifies Boyle's law.",
+    stem: "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results.",
+    questionText: "Explain how your graph verifies Boyle’s law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "straight line graph through the origin", marks: 4, accepts: ["P is inversely proportional to V"] },
+    { id: "r1", kind: "point", verbatim: "straight line graph through the origin / P is inversely proportional to V", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -4844,11 +4920,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q3-iii", topicId: "phys-u2", conceptId: "protractor-measuring-angles",
     section: "A", questionRef: "2025 OL Q3(iii)",
-    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r.",
+    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i.",
     questionText: "What piece of equipment did the student use to measure the angles?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "protractor", marks: 3, exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "protractor", marks: 3 },
     ],
   } as SecCard,
   {
@@ -4856,14 +4932,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q3-v", topicId: "phys-u2", conceptId: "average-refractive-index-from-data",
+    id: "phys-2025-ol-q3-v", topicId: "phys-2-3", conceptId: "average-refractive-index-from-data",
     section: "A", questionRef: "2025 OL Q3(v)",
-    stem: "A student measured the angle of incidence i and the corresponding angle of refraction r for a rectangular glass block and recorded the following results: i = 20°, r = 13°, sin i = 0.34, sin r = 0.22, sin i / sin r = 1.52; i = 46°, r = 28°, sin i = 0.72, sin r = 0.47, sin i / sin r = 1.53; i = 61°, r = 35°, sin i = 0.87, sin r = 0.57, sin i / sin r = 1.52.",
+    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i. The student recorded the following results.",
     questionText: "Use the data to calculate an average value for the refractive index n of the glass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "n ≈ 1.5", marks: 6, contextNote: "Refractive index is a ratio and has no unit." },
+    { id: "r1", kind: "point", verbatim: "average calculation, n ≈ 1.5", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q3-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q3-table.png",
+          "srcHash": "09579bec749557ba332f44e2417f5388",
+          "alt": "Table of results with columns i (degrees), r (degrees), sin i, sin r and n = sin i / sin r: the row 20, 13 has sin i 0.34 and sin r 0.22; the rows 46, 28 and 61, 35 have their sine cells blank, and the n column is blank in every row.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4872,11 +4956,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q3-vi", topicId: "phys-u2", conceptId: "refractive-index-experiment-precaution",
     section: "A", questionRef: "2025 OL Q3(vi)",
-    stem: "A student passed a ray of light through a rectangular glass block, measuring the angle of incidence and the angle of refraction for different values of i.",
+    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i.",
     questionText: "State one precaution the student should take when carrying out the experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "use large angle values", marks: 6, contextNote: "The scheme reads 'any valid precaution: use large angle values, etc.' and states that its descriptions are not exhaustive, so other valid precautions are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "any valid precaution: use large angle values, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4884,42 +4968,66 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q4-ii", topicId: "phys-u2", conceptId: "steam-temperature-change",
+    id: "phys-2025-ol-q4-ii", topicId: "phys-2-1", conceptId: "steam-temperature-change",
     section: "A", questionRef: "2025 OL Q4(ii)",
-    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. The following results were recorded: mass of calorimeter + cold water = 0.196 kg; mass of calorimeter + water + steam = 0.198 kg; final temperature of calorimeter, water and added steam = 42 °C.",
+    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. When the steam had condensed, she recorded a number of measurements and calculated the specific latent heat of vaporisation of water. The following results were recorded.",
     questionText: "The initial temperature of the steam was 100 °C. Calculate the change in temperature of the steam.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "100 – 42 = 58 °C", marks: 5 },
+    { id: "r1", kind: "point", verbatim: "100 – 42 = 58 °C", marks: 5, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q4-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q4-table.png",
+          "srcHash": "a18970f07723119f6f13f810c85a1dc8",
+          "alt": "Table of results: mass of calorimeter + cold water 0.196 kg; mass of calorimeter + water + steam 0.198 kg; final temperature of calorimeter, water and added steam 42 °C.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q4-iii", topicId: "phys-u2", conceptId: "mass-of-steam-added",
+    id: "phys-2025-ol-q4-iii", topicId: "phys-2-1", conceptId: "mass-of-steam-added",
     section: "A", questionRef: "2025 OL Q4(iii)",
-    stem: "A student added steam to cold water in a copper calorimeter and recorded: mass of calorimeter + cold water = 0.196 kg; mass of calorimeter + water + steam = 0.198 kg.",
+    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. When the steam had condensed, she recorded a number of measurements and calculated the specific latent heat of vaporisation of water. The following results were recorded.",
     questionText: "Calculate the mass m of the steam added.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0.198 – 0.196 = 0.002 kg", marks: 5 },
+    { id: "r1", kind: "point", verbatim: "0.198 – 0.196 = 0.002 kg", marks: 5, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q4-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q4-table.png",
+          "srcHash": "a18970f07723119f6f13f810c85a1dc8",
+          "alt": "Table of results: mass of calorimeter + cold water 0.196 kg; mass of calorimeter + water + steam 0.198 kg; final temperature of calorimeter, water and added steam 42 °C.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q4-iv", topicId: "phys-u2", conceptId: "specific-latent-heat-of-vaporisation-calculation",
+    id: "phys-2025-ol-q4-iv", topicId: "phys-2-1", conceptId: "specific-latent-heat-of-vaporisation-calculation",
     section: "A", questionRef: "2025 OL Q4(iv)",
-    stem: "The mass m of steam added to the calorimeter was 0.002 kg. She calculated the latent heat released ΔE when the steam condensed to be 4600 J.",
+    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. When the steam had condensed, she recorded a number of measurements and calculated the specific latent heat of vaporisation of water. The following results were recorded. She calculated the latent heat released ΔE when the steam condensed to be 4600 J.",
     questionText: "Calculate, l, the specific latent heat of vaporisation of the water.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "l = 2.3 × 106 J kg-1", marks: 6, contextNote: "The scheme prints the power as a superscript: 2.3 × 10⁶ J kg⁻¹." },
+    { id: "r1", kind: "point", verbatim: "l = 2.3 × 10⁶ J kg⁻¹", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q4-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q4-table.png",
+          "srcHash": "a18970f07723119f6f13f810c85a1dc8",
+          "alt": "Table of results: mass of calorimeter + cold water 0.196 kg; mass of calorimeter + water + steam 0.198 kg; final temperature of calorimeter, water and added steam 42 °C.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4928,11 +5036,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q4-v", topicId: "phys-u2", conceptId: "why-cold-water-in-calorimeter",
     section: "A", questionRef: "2025 OL Q4(v)",
-    stem: "In the experiment to measure the specific latent heat of vaporisation of water, the student added steam to cold water in a copper calorimeter.",
-    questionText: "Suggest a reason why the student used cold water in the calorimeter at the start of the experiment.",
+    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. When the steam had condensed, she recorded a number of measurements and calculated the specific latent heat of vaporisation of water.",
+    questionText: "Suggest a reason why the student used cold water at the start of the experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "so that the energy gained = energy lost", marks: 6, accepts: ["steam condenses quicker"] },
+    { id: "r1", kind: "alt", verbatim: "so that the energy gained = energy lost or steam condenses quicker", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4942,11 +5050,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q4-vi", topicId: "phys-u2", conceptId: "latent-heat-experiment-safety-precaution",
     section: "A", questionRef: "2025 OL Q4(vi)",
-    stem: "A student used a steam generator to add steam to cold water in a copper calorimeter.",
+    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. When the steam had condensed, she recorded a number of measurements and calculated the specific latent heat of vaporisation of water.",
     questionText: "State one safety precaution the student should take when carrying out the experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "wear heat proof gloves", marks: 4, accepts: ["safety glasses"], contextNote: "The scheme ends this list with 'etc.' and states that its descriptions are not exhaustive, so other valid safety precautions are acceptable.", openList: true },
+    { id: "r1", kind: "point", verbatim: "wear heat proof gloves, safety glasses, etc.", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -4955,13 +5063,26 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q5-i", topicId: "phys-u2", conceptId: "measuring-length-and-resistance-of-a-wire",
-    section: "A", questionRef: "2025 OL Q5(i)",
-    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire.",
-    questionText: "Describe how the student measured (a) the length l of the wire (b) the resistance R of the wire.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    section: "A", questionRef: "2025 OL Q5(i)(a)",
+    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire.",
+    questionText: "Describe how the student measured (a) the length l of the wire,",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(a) the length l — metre stick", marks: 6, contextNote: "Key word: 'metre stick'.", exactTermRequired: true },
-    { id: "r-2", kind: "point", verbatim: "(b) the resistance R — ohmmeter", marks: 6, contextNote: "Key word: 'ohmmeter'.", exactTermRequired: true },
+    { id: "r1", kind: "point", verbatim: "metre stick", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q5-i-b", topicId: "phys-u2", conceptId: "measuring-resistance-of-wire",
+    section: "A", questionRef: "2025 OL Q5(i)(b)",
+    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire.",
+    questionText: "Describe how the student measured (b) the resistance R of the wire.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "ohmmeter", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4971,11 +5092,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q5-ii", topicId: "phys-u2", conceptId: "measuring-wire-diameter-micrometer",
     section: "A", questionRef: "2025 OL Q5(ii)",
-    stem: "As well as the length and resistance of the wire, the student measured the diameter d of the wire.",
+    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire.",
     questionText: "Describe the steps the student used to find the diameter of the wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "measure diameter at several points along the wire using a micrometer", marks: 6, accepts: ["digital callipers"], contextNote: "The scheme prints 'micrometer/digital callipers' — either instrument is equally acceptable in the same statement." },
+    { id: "r1", kind: "point", verbatim: "measure diameter at several points along the wire using a micrometer/digital callipers", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4983,13 +5104,13 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q5-iii", topicId: "phys-u2", conceptId: "cross-sectional-area-of-a-wire",
+    id: "phys-2025-ol-q5-iii", topicId: "phys-3-3", conceptId: "cross-sectional-area-of-a-wire",
     section: "A", questionRef: "2025 OL Q5(iii)",
-    stem: "A student measured the diameter of a wire in an experiment to find the resistivity of its material.",
-    questionText: "The radius of the wire is 0.00124 m. Calculate the circular cross-sectional area A of the wire.",
+    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire.",
+    questionText: "The radius of the wire is 0.00124 m. Calculate the circular cross‐sectional area A of the wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A = 4.83 × 10-6 m2", marks: 6, contextNote: "The scheme prints this as 4.83 × 10⁻⁶ m²." },
+    { id: "r1", kind: "point", verbatim: "A = 4.83 × 10⁻⁶ m²", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -4999,11 +5120,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q13-iv", topicId: "phys-3-3", conceptId: "choosing-a-fuse-rating",
     section: "B", questionRef: "2025 OL Q13(iv)",
-    stem: "The copper wiring in a house connects appliances together in parallel. This is so that each appliance (e.g. an electric kettle) has 230 V across it.",
-    questionText: "An electric kettle has a power rating of 2300 W. Identify, from the list below, which is the most appropriate fuse that should be used, 3 A, 5 A or 13 A.",
+    questionText: "An electric kettle has a power rating of 2300 W. Identify, from the list below, which is the most appropriate fuse that should be used.\n3 Amp 5 Amp 13 Amp",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "13 A", marks: 7, contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "13 A", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5013,11 +5133,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q13-v", topicId: "phys-3-3", conceptId: "plug-wire-colours",
     section: "B", questionRef: "2025 OL Q13(v)",
-    questionText: "In an electric plug, state the colour of (a) the live wire and (b) the neutral wire.",
+    questionText: "In an electric plug, state the colour of (a) the live wire, (b) the neutral wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "live - brown", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "neutral - blue", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "(a) — live - brown", marks: 4 },
+    { id: "r2", kind: "point", verbatim: "(b) — neutral - blue", marks: 3, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5027,11 +5147,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q13-vi", topicId: "phys-3-3", conceptId: "cost-of-electricity",
     section: "B", questionRef: "2025 OL Q13(vi)",
-    stem: "Electricity meters measure the number of units, kilowatt-hours (kW h), of electricity used in the home. The cost of electricity is calculated using the following equation: units (kW h) = power (kW) × time (h). The price of a unit is 30 cent.",
-    questionText: "Calculate the cost of using a 1.2 kW electric heater for 3 hours.",
+    questionText: "The cost of electricity is calculated using the following equation. units (kW h) = power (kW) × time (h) The price of a unit is 30 cent. Calculate the cost of using a 1.2 kW electric heater for 3 hours.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "€1.08", marks: 7, contextNote: "Partial answer accepted for 4. The currency symbol is part of the answer." },
+    { id: "r1", kind: "point", verbatim: "€1.08", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5044,7 +5163,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain why appliances in the home are connected in parallel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "each appliance has 230 V across it", marks: 7, accepts: ["even if one appliance is off the rest of the appliances can still work"], contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "each appliance has 230 V across it / even if one appliance is off the rest of the appliances can still work", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5057,7 +5176,7 @@ export const CARDS: SecCard[] = [
     questionText: "Another device used in domestic circuits is a residual current device (RCD). Explain the function of an RCD.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "detects a current difference between the outgoing and incoming current", marks: 7, accepts: ["safety device","circuit breaker"], contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "detects a current difference between the outgoing and incoming current / safety device / circuit breaker", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5071,7 +5190,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by energy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the ability to do work", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "the ability to do work", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5081,10 +5200,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14a-ii", topicId: "phys-1-4", conceptId: "conservation-of-energy",
     section: "B", questionRef: "2025 OL Q14(a)(ii)",
+    stem: "A crane lifts large objects from the ground.",
     questionText: "State the principle of conservation of energy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "energy cannot be created or destroyed", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "energy cannot be created or destroyed", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5098,7 +5218,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the work done in lifting a weight of 12 000 N to a height of 3.5 m.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "W = 42 000 J", marks: 6, contextNote: "Partial answer accepted for 3. Each time an arithmetical slip occurs in a calculation, one mark is deducted." },
+    { id: "r1", kind: "point", verbatim: "W = 42 000 J", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5108,11 +5228,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14a-iv", topicId: "phys-1-4", conceptId: "power-output-calculation",
     section: "B", questionRef: "2025 OL Q14(a)(iv)",
-    stem: "A crane lifts large objects from the ground. The work done in lifting a weight of 12 000 N to a height of 3.5 m was found in part (iii) to be 42 000 J.",
+    stem: "A crane lifts large objects from the ground.",
     questionText: "Calculate the power output required by the crane to raise the weight to this height in a time of 12 seconds.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "P = 3500 W", marks: 6, contextNote: "Partial answer accepted for 3. Each time an arithmetical slip occurs in a calculation, one mark is deducted." },
+    { id: "r1", kind: "point", verbatim: "P = 3500 W", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5122,11 +5242,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14a-v", topicId: "phys-1-4", conceptId: "percentage-efficiency",
     section: "B", questionRef: "2025 OL Q14(a)(v)",
-    stem: "The power output of the crane was found in part (iv) to be 3500 W.",
+    stem: "A crane lifts large objects from the ground.",
     questionText: "The input power of the crane is 5000 W. Calculate the percentage efficiency of the crane.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "% efficiency = 70 %", marks: 4, contextNote: "Partial answer accepted for 2." },
+    { id: "r1", kind: "point", verbatim: "% efficiency = 70 %", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
   } as SecCard,
   {
@@ -5140,7 +5260,23 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by the Doppler effect.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(apparent) change in frequency due to the change in motion between the source producing it and the observer", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "(apparent) change in frequency due to the change in motion between the source producing it and the observer", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q14-b-ii", topicId: "phys-2-7", conceptId: "demonstrating-doppler",
+    section: "B", questionRef: "2025 OL Q14(b)(ii)",
+    stem: "A moving train’s whistle emits a note with a constant frequency of 2.4 kHz. The frequency of the sound emitted appears different to a stationary observer. This phenomenon is described by the Doppler effect.",
+    questionText: "Describe a laboratory experiment to demonstrate the Doppler effect.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -5150,11 +5286,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14b-iii", topicId: "phys-2-7", conceptId: "doppler-direction-of-motion",
     section: "B", questionRef: "2025 OL Q14(b)(iii)",
-    stem: "A moving train’s whistle emits a note with a constant frequency of 2.4 kHz. To the observer, the frequency of the note appears to be higher than 2.4 kHz.",
+    stem: "A moving train’s whistle emits a note with a constant frequency of 2.4 kHz. The frequency of the sound emitted appears different to a stationary observer. This phenomenon is described by the Doppler effect. To the observer, the frequency of the note appears to be higher than 2.4 kHz.",
     questionText: "Is the train moving towards or moving away from the observer?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "towards", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "towards", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5164,11 +5300,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14b-iv", topicId: "phys-2-7", conceptId: "doppler-frequency-at-source",
     section: "B", questionRef: "2025 OL Q14(b)(iv)",
-    stem: "A moving train’s whistle emits a note with a constant frequency of 2.4 kHz.",
+    stem: "A moving train’s whistle emits a note with a constant frequency of 2.4 kHz. The frequency of the sound emitted appears different to a stationary observer. This phenomenon is described by the Doppler effect. To the observer, the frequency of the note appears to be higher than 2.4 kHz.",
     questionText: "Describe the frequency that the train driver hears.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "hears the same note", marks: 3, accepts: ["2.4 kHz"] },
+    { id: "r1", kind: "point", verbatim: "hears the same note / 2.4 kHz", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5178,11 +5314,37 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14b-v", topicId: "phys-2-7", conceptId: "doppler-applications",
     section: "B", questionRef: "2025 OL Q14(b)(v)",
+    stem: "A moving train’s whistle emits a note with a constant frequency of 2.4 kHz. The frequency of the sound emitted appears different to a stationary observer. This phenomenon is described by the Doppler effect.",
     questionText: "State one application of the Doppler effect.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "speed gun", marks: 4, accepts: ["measuring red shift","ultrasonic scanners","weather forecasting","used to study heartbeat","blood flow"], contextNote: "Any one application scores the full 4; the scheme's list ends in 'etc.'. Partial answer accepted for 2.", openList: true },
+    { id: "r1", kind: "point", verbatim: "speed gun, measuring red shift, ultrasonic scanners, weather forecasting, used to study heartbeat, blood flow, etc.", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q14-c-i", topicId: "phys-3-1", conceptId: "gold-leaf",
+    section: "B", questionRef: "2025 OL Q14(c)(i)",
+    stem: "A gold leaf electroscope has many uses in the field of electrostatics.",
+    questionText: "Identify the part labelled X on the electroscope in the diagram.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "gold / leaf", marks: 6 },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q14c-electroscope",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14c-electroscope.png",
+          "srcHash": "b6ac9f76af74badb9a685a3dc236e94d",
+          "alt": "Diagram of a gold leaf electroscope: a cap on a metal rod that passes through the insulation between the cap and the frame into an earthed box; a thin line hangs beside the rod inside the box, with arrow X pointing to it.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": [
+                "X"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"gold / leaf","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5195,8 +5357,16 @@ export const CARDS: SecCard[] = [
     questionText: "Describe how to charge an electroscope negatively.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "contact with negative conductor", marks: 6, accepts: ["brought close to positive charge and earthed"], contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "contact with negative conductor / brought close to positive charge and earthed", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q14c-electroscope",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14c-electroscope.png",
+          "srcHash": "b6ac9f76af74badb9a685a3dc236e94d",
+          "alt": "Diagram of a gold leaf electroscope: a cap on a metal rod that passes through the insulation between the cap and the frame into an earthed box; a thin line hangs beside the rod inside the box, with arrow X pointing to it.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5205,10 +5375,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14c-iii", topicId: "phys-3-1", conceptId: "electroscope-uses",
     section: "B", questionRef: "2025 OL Q14(c)(iii)",
+    stem: "A gold leaf electroscope has many uses in the field of electrostatics.",
     questionText: "State one use of an electroscope.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "detecting or measuring charge", marks: 6, accepts: ["potential difference","capacitance"], contextNote: "The alternatives after the first read as detecting or measuring potential difference / capacitance. Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "detecting or measuring charge / potential difference / capacitance", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5221,8 +5392,8 @@ export const CARDS: SecCard[] = [
     questionText: "State Coulomb’s law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "force proportional to product of charges", marks: 3, contextNote: "The scheme prints a mutually exclusive symbolic route (F ∝ q1q2 together with the inverse-square proportionality written as a fraction); a candidate must stay on one side of the // and may not mix the worded and symbolic halves." },
-    { id: "r-2", kind: "point", verbatim: "inversely proportional to the square of the distance between them", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "force proportional to product of charges // F ∝ q₁q₂", marks: 3, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side." },
+    { id: "r2", kind: "point", verbatim: "inversely proportional to the square of the distance between them // ∝ 1/d²", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5232,11 +5403,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14c-v", topicId: "phys-3-1", conceptId: "discharging-electroscope",
     section: "B", questionRef: "2025 OL Q14(c)(v)",
+    stem: "A gold leaf electroscope has many uses in the field of electrostatics.",
     questionText: "Describe a method used to remove the charge from an electroscope.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "connect metal cap of an electroscope to an earth", marks: 4, contextNote: "Partial answer accepted for 2." },
+    { id: "r1", kind: "point", verbatim: "connect metal cap of an electroscope to an earth", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q14c-electroscope",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14c-electroscope.png",
+          "srcHash": "b6ac9f76af74badb9a685a3dc236e94d",
+          "alt": "Diagram of a gold leaf electroscope: a cap on a metal rod that passes through the insulation between the cap and the frame into an earthed box; a thin line hangs beside the rod inside the box, with arrow X pointing to it.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5245,12 +5425,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14d-i", topicId: "phys-4-2", conceptId: "nature-of-x-rays",
     section: "B", questionRef: "2025 OL Q14(d)(i)",
-    stem: "X-rays are produced when high speed electrons collide with a target in an X-ray tube.",
-    questionText: "What are X-rays?",
+    stem: "X‐rays are produced when high speed electrons collide with a target in an X‐ray tube as shown in the diagram.",
+    questionText: "What are X‐rays?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "high energy rays", marks: 6, accepts: ["electromagnetic radiation"], contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "high energy rays / electromagnetic radiation", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q14d-xray",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14d-xray.png",
+          "srcHash": "2a156eb600a29f64d79667016eeffe73",
+          "alt": "Diagram of an X-ray tube: a coiled filament on the left, joined to the low voltage terminals, faces a target on the right; the high voltage terminals connect the two ends, an arrow labelled high speed electrons points along the path between them, rays fan out downward from the target, and the tube sits inside a lead casing.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5259,26 +5447,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14d-ii", topicId: "phys-4-2", conceptId: "x-ray-target-material",
     section: "B", questionRef: "2025 OL Q14(d)(ii)",
-    stem: "X-rays are produced when high speed electrons collide with a target in an X-ray tube.",
+    stem: "X‐rays are produced when high speed electrons collide with a target in an X‐ray tube as shown in the diagram.",
     questionText: "Identify a suitable material that could be used for the target.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "material with a high melting point", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "material with a high melting point", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q14d-xray",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14d-xray.png",
+          "srcHash": "2a156eb600a29f64d79667016eeffe73",
+          "alt": "Diagram of an X-ray tube: a coiled filament on the left, joined to the low voltage terminals, faces a target on the right; the high voltage terminals connect the two ends, an arrow labelled high speed electrons points along the path between them, rays fan out downward from the target, and the tube sits inside a lead casing.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q14d-iii", topicId: "phys-4-2", conceptId: "thermionic-emission",
+    id: "phys-2025-ol-q14d-iii", topicId: "phys-4-1", conceptId: "thermionic-emission",
     section: "B", questionRef: "2025 OL Q14(d)(iii)",
-    stem: "X-rays are produced when high speed electrons collide with a target in an X-ray tube.",
-    questionText: "Describe how electrons are produced in the X-ray tube.",
+    stem: "X‐rays are produced when high speed electrons collide with a target in an X‐ray tube as shown in the diagram.",
+    questionText: "Describe how electrons are produced in the X‐ray tube.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "thermionic emission", marks: 6, contextNote: "Key words — words that must appear in the correct context in the candidate's answer in order to merit the assigned marks. Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "thermionic emission", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q14d-xray",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14d-xray.png",
+          "srcHash": "2a156eb600a29f64d79667016eeffe73",
+          "alt": "Diagram of an X-ray tube: a coiled filament on the left, joined to the low voltage terminals, faces a target on the right; the high voltage terminals connect the two ends, an arrow labelled high speed electrons points along the path between them, rays fan out downward from the target, and the tube sits inside a lead casing.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5287,11 +5491,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14d-iv", topicId: "phys-4-2", conceptId: "x-ray-lead-shielding",
     section: "B", questionRef: "2025 OL Q14(d)(iv)",
-    questionText: "Why is a lead casing put around an X-ray tube?",
+    stem: "X‐rays are produced when high speed electrons collide with a target in an X‐ray tube as shown in the diagram.",
+    questionText: "Why is a lead casing put around an X‐ray tube?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "for safety", marks: 6, accepts: ["to prevent radiation being released to surroundings"], contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "for safety / to prevent radiation being released to surroundings", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q14d-xray",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14d-xray.png",
+          "srcHash": "2a156eb600a29f64d79667016eeffe73",
+          "alt": "Diagram of an X-ray tube: a coiled filament on the left, joined to the low voltage terminals, faces a target on the right; the high voltage terminals connect the two ends, an arrow labelled high speed electrons points along the path between them, rays fan out downward from the target, and the tube sits inside a lead casing.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5300,11 +5513,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q14d-v", topicId: "phys-4-2", conceptId: "x-ray-uses",
     section: "B", questionRef: "2025 OL Q14(d)(v)",
-    questionText: "State one use of X-rays.",
+    stem: "X‐rays are produced when high speed electrons collide with a target in an X‐ray tube as shown in the diagram.",
+    questionText: "State one use of X‐rays.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "check for broken bones", marks: 4, accepts: ["check for defects in parts","food irradiation"], contextNote: "Any one use scores the full 4; the scheme's list ends in 'etc.'. Partial answer accepted for 2.", openList: true },
+    { id: "r1", kind: "point", verbatim: "check for broken bones, check for defects in parts, food irradiation, etc.", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q14d-xray",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q14d-xray.png",
+          "srcHash": "2a156eb600a29f64d79667016eeffe73",
+          "alt": "Diagram of an X-ray tube: a coiled filament on the left, joined to the low voltage terminals, faces a target on the right; the high voltage terminals connect the two ends, an arrow labelled high speed electrons points along the path between them, rays fan out downward from the target, and the tube sits inside a lead casing.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5313,11 +5535,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q8-ii", topicId: "phys-2-2", conceptId: "wave-frequency-definition",
     section: "B", questionRef: "2025 OL Q8(ii)",
-    stem: "Sound is produced when an object vibrates, causing the particles in the surrounding medium to have vibrational energy.",
     questionText: "Explain what is meant by the frequency of a wave.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "number of waves passing a point per second", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "number of waves passing a point per second", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5330,7 +5551,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the relationship between the frequency and the period of a wave.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "inversely proportional", marks: 3, contextNote: "Key words — they must appear in the correct context (frequency is inversely proportional to period) to score." },
+    { id: "r1", kind: "point", verbatim: "inversely proportional", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5344,7 +5565,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the speed of the sound wave produced.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "c = 330 m s-1", marks: 7, contextNote: "The scheme allows a partial answer for 4." },
+    { id: "r1", kind: "point", verbatim: "c = 330 m s⁻¹", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5371,7 +5592,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by diffraction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "the (sideways) spreading out of a wave through a narrow gap", marks: 6, accepts: ["around an obstacle"], contextNote: "The scheme prints 'the (sideways) spreading out of a wave through a narrow gap/around an obstacle.' — the solidus makes the two endings equally acceptable, so 'around an obstacle' substitutes for 'through a narrow gap'. Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "the (sideways) spreading out of a wave through a narrow gap/around an obstacle.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5382,10 +5603,10 @@ export const CARDS: SecCard[] = [
     id: "phys-2025-ol-q9-i", topicId: "phys-2-3", conceptId: "real-vs-virtual-image",
     section: "B", questionRef: "2025 OL Q9(i)",
     stem: "A concave mirror can be used to form real or virtual images.",
-    questionText: "Distinguish between a real and a virtual image.",
+    questionText: "Distinguish between a real image and a virtual image.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "real image is formed by the actual intersection of light rays", marks: 6, accepts: ["virtual image is formed by the apparent intersection of light rays"], contextNote: "The scheme separates the two statements with a single solidus, which its own conventions define as equally acceptable alternatives, so either carries the printed 6. A partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "real image is formed by the actual intersection of light rays / virtual image is formed by the apparent intersection of light rays", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5395,21 +5616,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-iv", topicId: "phys-2-3", conceptId: "mirror-magnification",
     section: "B", questionRef: "2025 OL Q9(iv)",
+    stem: "A concave mirror has a focal length f of 8 cm. An object is placed with an object distance u of 20 cm in front of the mirror.",
     questionText: "Calculate the magnification of the image produced.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "magnification = 0.67", marks: 6, contextNote: "Magnification is a ratio, so it carries no unit. Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "magnification = 0.67", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                9
-          ],
-          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5418,12 +5630,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-v", topicId: "phys-2-3", conceptId: "lens-vs-mirror-ray-behaviour",
     section: "B", questionRef: "2025 OL Q9(v)",
-    stem: "A ray diagram shows the formation of a real image in a concave mirror.",
     questionText: "The concave mirror in the ray diagram is replaced with a convex lens. Describe one difference between the ray diagram for the lens and the ray diagram for the concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "refraction will occur", marks: 4, accepts: ["ray will pass through lens"], contextNote: "Partial answer accepted for 2." },
+    { id: "r1", kind: "point", verbatim: "refraction will occur / ray will pass through lens", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q9-ray",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q9-ray.png",
+          "srcHash": "3989daca135a0942b6a9468946ad6982",
+          "alt": "Ray diagram set-up: a principal axis drawn as a dashed line, an upright arrow labelled object standing on it, a point labelled f on the axis, and a concave mirror drawn as a curve on the right.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5432,11 +5651,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-vii", topicId: "phys-2-3", conceptId: "critical-angle-refractive-index",
     section: "B", questionRef: "2025 OL Q9(vii)",
-    stem: "A fibre optic cable is a thin flexible fibre with a glass core that can transmit light from one end to the other by total internal reflection.",
+    stem: "Fibre broadband uses fibre optic cables to deliver data to homes and businesses across Ireland. A fibre optic cable is a thin flexible fibre with a glass core that can transmit light from one end to the other by total internal reflection.",
     questionText: "The critical angle C of the glass in a fibre optic cable is 42.8°. Calculate the refractive index n of the glass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "n = 1.47", marks: 6, contextNote: "Refractive index is a ratio, so it carries no unit. Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "n = 1.47", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5446,11 +5665,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-viii", topicId: "phys-2-3", conceptId: "fibre-optic-advantage",
     section: "B", questionRef: "2025 OL Q9(viii)",
-    stem: "Fibre broadband uses fibre optic cables to deliver data to homes and businesses across Ireland.",
+    stem: "Fibre broadband uses fibre optic cables to deliver data to homes and businesses across Ireland. A fibre optic cable is a thin flexible fibre with a glass core that can transmit light from one end to the other by total internal reflection.",
     questionText: "State one advantage of using fibre optic cables instead of copper conductor cables.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "greater bandwidth", marks: 4, contextNote: "The scheme prints 'greater bandwidth, etc.' and states its descriptions are not exhaustive, so other valid advantages are accepted.", openList: true },
+    { id: "r1", kind: "point", verbatim: "greater bandwidth, etc.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -5460,11 +5679,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-ix", topicId: "phys-2-3", conceptId: "fibre-optic-uses",
     section: "B", questionRef: "2025 OL Q9(ix)",
-    stem: "Fibre broadband uses fibre optic cables to deliver data to homes and businesses across Ireland.",
+    stem: "Fibre broadband uses fibre optic cables to deliver data to homes and businesses across Ireland. A fibre optic cable is a thin flexible fibre with a glass core that can transmit light from one end to the other by total internal reflection.",
     questionText: "State one other use of fibre optic cables.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "endoscopy", marks: 4, accepts: ["broadband","Christmas decorations"], contextNote: "Any one use scores the full 4; the scheme's list ends in 'etc.', so other valid uses are accepted.", openList: true },
+    { id: "r1", kind: "point", verbatim: "endoscopy, broadband, Christmas decorations, etc.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -5477,7 +5696,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by a magnetic field.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a region in space in which a magnetic force can be felt", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "a region in space in which a magnetic force can be felt", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5490,7 +5709,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by an electric current.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "flow of electrons", marks: 6, contextNote: "Key words — they must appear in the correct context to score. Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "flow of electrons", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5503,7 +5722,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name an instrument used to measure electric current.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "ammeter", marks: 3, accepts: ["galvanometer"] },
+    { id: "r1", kind: "point", verbatim: "ammeter / galvanometer", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5516,7 +5735,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one effect of an electric current.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "heating", marks: 3, accepts: ["chemical","magnetic"], contextNote: "Key word — it must name the effect in a correct statement (e.g. the heating effect of a current)." },
+    { id: "r1", kind: "point", verbatim: "heating / chemical / magnetic", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5526,12 +5745,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q10-vi", topicId: "phys-3-6", conceptId: "electromagnetic-induction-definition",
     section: "B", questionRef: "2025 OL Q10(vi)",
-    stem: "An electrical generator is based on the principle of electromagnetic induction.",
+    stem: "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil as shown.",
     questionText: "Explain what is meant by electromagnetic induction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the production of an (induced) e.m.f. due to a changing magnetic field", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "the production of an (induced) e.m.f. due to a changing magnetic field", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
+    figure: {
+          "candId": "physics-2025-ol-q10-coil",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-coil.png",
+          "srcHash": "44a44444d2c21658890bdee3909378b3",
+          "alt": "Diagram of a bar magnet, S on the left and N on the right, with an arrow pointing from its N end towards a coil; the coil is connected in a loop to a meter.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5544,7 +5771,28 @@ export const CARDS: SecCard[] = [
     questionText: "The primary coil of a transformer has 200 turns of wire and the secondary coil has 50 turns. The input voltage is 230 V a.c. Calculate the output voltage across the secondary coil.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "voltage output = 57.5 V", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "voltage output = 57.5 V", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q10-transformer",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-transformer.png",
+          "srcHash": "6e91242aae6d96b19fef764889de0ce5",
+          "alt": "Diagram of a transformer: a primary coil and a secondary coil wound on opposite sides of a square core, with the input voltage terminals at the primary coil and the output voltage terminals at the secondary coil.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q10-x", topicId: "phys-3-6", conceptId: "ac-voltage-graph",
+    section: "B", questionRef: "2025 OL Q10(x)",
+    questionText: "Draw a sketch of a graph to show how an a.c. voltage V changes with time t.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "labelled axis and curve shown", marks: 6, contextNote: "[accept partial answer for 3] The scheme prints no drawing; this line names what the diagram must show." },
     ],
   } as SecCard,
   {
@@ -5554,10 +5802,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q10-xi", topicId: "phys-3-6", conceptId: "transformer-uses",
     section: "B", questionRef: "2025 OL Q10(xi)",
+    stem: "A transformer is also based on the principle of electromagnetic induction. An a.c. source is connected to the primary coil of a transformer to provide an input voltage.",
     questionText: "State one use of a transformer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "charger", marks: 4, accepts: ["substations"], contextNote: "The scheme's list ends in 'etc.', so other valid uses are accepted.", openList: true },
+    { id: "r1", kind: "point", verbatim: "charger, substations, etc.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -5571,7 +5820,7 @@ export const CARDS: SecCard[] = [
     questionText: "Distinguish between heat and temperature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "heat is a form of energy", marks: 6, accepts: ["temperature is a measure of the hotness (of a body)"], contextNote: "The scheme separates the two statements with a single solidus, which its own conventions define as equally acceptable alternatives, so either carries the printed 6. A partial answer scores 3." },
+    { id: "r1", kind: "point", verbatim: "heat is a form of energy / temperature is a measure of the hotness (of a body)", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5581,10 +5830,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q11-ii", topicId: "phys-2-1", conceptId: "heat-transfer-methods",
     section: "B", questionRef: "2025 OL Q11(ii)",
+    stem: "An air to water system is one of the most common ways to heat modern homes.",
     questionText: "State two methods by which heat can be transferred throughout a home.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "conduction", marks: null, contextNote: "Any two of the three score 3 marks each; the scheme notes a partial answer is accepted for 3.", group: {"claimMax":2,"perOption":3,"options":["conduction","convection","radiation"]} },
+    { id: "r1", kind: "point", verbatim: "conduction", marks: null, contextNote: "[accept partial answer for 3] any two" },
+    { id: "r2", kind: "point", verbatim: "convection", marks: null },
+    { id: "r3", kind: "point", verbatim: "radiation", marks: null },
     ],
   } as SecCard,
   {
@@ -5598,7 +5850,7 @@ export const CARDS: SecCard[] = [
     questionText: "Calculate the temperature of the living room in degrees celsius (°C).",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "292 – 273 = 19 °C", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "292 – 273 = 19 °C", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5608,11 +5860,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q11-v", topicId: "phys-2-1", conceptId: "reducing-u-value",
     section: "B", questionRef: "2025 OL Q11(v)",
-    stem: "A U-value is the measure of the rate of heat loss in a house.",
-    questionText: "State two ways in which the U-value of a house can be reduced.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    stem: "A U‐value is the measure of the rate of heat loss in a house.",
+    questionText: "State two ways in which the U‐value of a house can be reduced.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "glazing", marks: null, contextNote: "3 marks each for two ways; the scheme's list ends in 'etc.', so other valid ways are accepted. Partial answer accepted for 3.", openList: true, group: {"claimMax":2,"perOption":3,"options":["glazing","insulation"]} },
+    { id: "r1", kind: "point", verbatim: "any two of: glazing, insulation, etc.", marks: null, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5620,13 +5872,13 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q11-vi", topicId: "phys-u3", conceptId: "renewable-energy-definition",
+    id: "phys-2025-ol-q11-vi", topicId: "phys-1-4", conceptId: "renewable-energy-definition",
     section: "B", questionRef: "2025 OL Q11(vi)",
-    stem: "Modern homes can have solar panels installed as a source of electricity. Solar energy is a renewable energy source.",
+    stem: "In addition to air to water systems, modern homes can also have solar panels installed as a source of electricity. Solar energy is a renewable energy source.",
     questionText: "Explain what is meant by the term renewable energy source.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(an energy source) that doesn’t run out", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "(an energy source) that doesn’t run out", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5634,13 +5886,27 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q11-viii", topicId: "phys-u3", conceptId: "renewable-energy-sources",
+    id: "phys-2025-ol-q11-vii", topicId: "phys-1-4", conceptId: "solar-energy-pros-and-cons",
+    section: "B", questionRef: "2025 OL Q11(vii)",
+    stem: "In addition to air to water systems, modern homes can also have solar panels installed as a source of electricity. Solar energy is a renewable energy source.",
+    questionText: "State one advantage and one disadvantage of using solar energy.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "one advantage and one disadvantage", marks: 7, contextNote: "[accept partial answer for 4] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q11-viii", topicId: "phys-1-4", conceptId: "renewable-energy-sources",
     section: "B", questionRef: "2025 OL Q11(viii)",
-    stem: "Solar energy is a renewable energy source.",
+    stem: "In addition to air to water systems, modern homes can also have solar panels installed as a source of electricity. Solar energy is a renewable energy source.",
     questionText: "State one other renewable source of energy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "wind", marks: 6, accepts: ["geothermal","biomass"], contextNote: "Any one named renewable source scores the full 6; the scheme's list ends in 'etc.'. Partial answer accepted for 3.", openList: true },
+    { id: "r1", kind: "point", verbatim: "wind, geothermal, biomass, etc.", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5653,7 +5919,7 @@ export const CARDS: SecCard[] = [
     questionText: "A solar cell can be used to charge a mobile phone. The power output from the solar cell is 3 W. The mobile phone requires 3.6 kJ of energy to charge. Calculate the time taken for the mobile phone to charge.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "time = 1200 s", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "time = 1200 s", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5667,7 +5933,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by radioactivity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "decay of a nucleus", marks: 6, accepts: ["nucleus emitting alpha, beta or gamma radiation"], contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "decay of a nucleus / nucleus emitting alpha, beta or gamma radiation", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5677,12 +5943,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q12a-ii", topicId: "phys-4-3", conceptId: "proton-number-from-nuclide",
     section: "B", questionRef: "2025 OL Q12(a)(ii)",
-    stem: "²²²₈₆Rn is a radon atom.",
-    questionText: "How many protons in an atom of radon?",
+    questionText: "How many protons are in an atom of radon?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "86", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "86", marks: 4 },
     ],
+    questionFigure: {
+          "candId": "physics-2025-ol-q12a-ii-question",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q12a-ii-question.png",
+          "srcHash": "ba54d24cad0218dbe87c180713ac0c7a",
+          "alt": "The printed lines: Rn²²²₈₆ is a radon atom. (ii) How many protons are in an atom of radon?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5691,11 +5964,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q12a-iii", topicId: "phys-4-3", conceptId: "neutron-number-from-nuclide",
     section: "B", questionRef: "2025 OL Q12(a)(iii)",
-    stem: "²²²₈₆Rn is a radon atom.",
-    questionText: "Calculate how many neutrons are in an atom of radon-222.",
+    stem: "Radon is a naturally occurring radioactive gas which can pose a health risk if it is found in high concentrations in indoor environments. Radon is produced from natural radioactive decay and is found in rocks and soils.",
+    questionText: "Calculate how many neutrons are in an atom of radon–222.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "136", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "136", marks: 4 },
     ],
   } as SecCard,
   {
@@ -5705,12 +5978,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q12a-iv", topicId: "phys-4-4", conceptId: "alpha-decay-product",
     section: "B", questionRef: "2025 OL Q12(a)(iv)",
-    stem: "²²²₈₆Rn emits an alpha particle.",
-    questionText: "Determine what element is formed after an alpha particle, ⁴₂α, is emitted from ²²²₈₆Rn.",
+    questionText: "Determine what element is formed after an alpha particle,",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Po", marks: 6, contextNote: "The scheme also awards 2 marks for stating 84 (the new atomic number) and 2 marks for 218 (the new mass number)." },
+    { id: "r1", kind: "point", verbatim: "Po", marks: 6, contextNote: "[accept 84 for 2] & [accept 218 for 2]" },
     ],
+    questionFigure: {
+          "candId": "physics-2025-ol-q12a-iv-question",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q12a-iv-question.png",
+          "srcHash": "0d44182e0104d7e8fcd5f61ff57aa8b7",
+          "alt": "The printed lines: Rn²²²₈₆ emits an alpha particle. (iv) Determine what element is formed after an alpha particle, α⁴₂, is emitted from Rn²²²₈₆.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5723,7 +6003,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by nuclear fission.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "splitting of a (large) nucleus", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "splitting of a (large) nucleus", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5733,10 +6013,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q12b-ii", topicId: "phys-4-6", conceptId: "chain-reaction-definition",
     section: "B", questionRef: "2025 OL Q12(b)(ii)",
+    stem: "Nuclear fission reactors are used to generate electricity.",
     questionText: "Explain what is meant by a chain reaction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the products of the reaction continue the reaction", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "the products of the reaction continue the reaction", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5746,10 +6027,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q12b-iii", topicId: "phys-4-6", conceptId: "fission-reactor-fuel",
     section: "B", questionRef: "2025 OL Q12(b)(iii)",
+    stem: "Nuclear fission reactors are used to generate electricity.",
     questionText: "State a suitable fuel used in a nuclear fission reactor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "uranium", marks: 3, accepts: ["plutonium"] },
+    { id: "r1", kind: "point", verbatim: "uranium / plutonium", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5758,12 +6040,26 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q12b-iv", topicId: "phys-4-6", conceptId: "reactor-moderator-shielding",
-    section: "B", questionRef: "2025 OL Q12(b)(iv)",
-    questionText: "State the function of (a) the moderator, (b) the shielding in a nuclear reactor.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    section: "B", questionRef: "2025 OL Q12(b)(iv)(a)",
+    stem: "Nuclear fission reactors are used to generate electricity.",
+    questionText: "State the function of (a) the moderator,",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "moderator — slows down (fast-moving) neutrons", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "shielding — prevents escape of radiation", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "(a) — slows down (fast-moving) neutrons", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q12-b-iv-b", topicId: "phys-4-6", conceptId: "shielding",
+    section: "B", questionRef: "2025 OL Q12(b)(iv)(b)",
+    stem: "Nuclear fission reactors are used to generate electricity.",
+    questionText: "State the function of (b) the shielding in a nuclear reactor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "(b) — prevents escape of radiation", marks: 3 },
     ],
   } as SecCard,
   {
@@ -5777,8 +6073,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify what the letters m and c stand for.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "m = mass of object", marks: 3, contextNote: "The scheme prints both together for [6] with '[accept partial answer for 3]', so one letter identified alone is the 3-mark partial answer." },
-    { id: "r-2", kind: "point", verbatim: "c = speed of light", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "m = mass of object & c = speed of light", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5792,7 +6087,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain what is meant by nuclear fusion.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "joining of two (small) nuclei", marks: 6, contextNote: "Partial answer accepted for 3." },
+    { id: "r1", kind: "point", verbatim: "joining of two (small) nuclei", marks: 6, contextNote: "[accept partial answer for 3]" },
     ],
   } as SecCard,
   {
@@ -5802,11 +6097,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q13-i", topicId: "phys-3-3", conceptId: "conductor-material-cable",
     section: "B", questionRef: "2025 OL Q13(i)",
-    stem: "Domestic electricity refers to electrical circuits and safety devices around the home, like circuit breakers (e.g. fuses and RCDs), the ring mains circuit and the functions of the live, neutral and earth wires.",
+    stem: "Domestic electricity refers to electrical circuits and safety devices around the home, like circuit breakers (e.g. fuses and RCDs), the ring mains circuit and the functions of the live, neutral and earth wires. Circuit breakers are automatically operated electrical switches that protect the home. A fuse breaks the circuit if a fault causes too much current to flow. The copper wiring in a house connects appliances together in parallel. This is so that each appliance (e.g. an electric kettle) has 230 V across it. Electricity meters measure the number of units, kilowatt‐hours (kW h), of electricity used in the home. adapted from www.bbc.co.uk/bitesize",
     questionText: "Name a common material used to conduct electricity in an electrical cable.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "copper", marks: 7, contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "copper", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5819,7 +6114,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the function of an earth wire.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "provides a (low resistance) path to earth", marks: 7, accepts: ["safety feature"], contextNote: "Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "provides a (low resistance) path to earth / safety feature", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -5832,7 +6127,7 @@ export const CARDS: SecCard[] = [
     questionText: "A fuse is a type of circuit breaker. Explain how a fuse works.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "melts", marks: 7, accepts: ["breaks if current is too high"], contextNote: "The scheme prints 'melts / breaks if current is too high' — the condition 'if current is too high' applies to either verb, and the key word only scores inside that correct statement. Partial answer accepted for 4." },
+    { id: "r1", kind: "point", verbatim: "melts / breaks if current is too high", marks: 7, contextNote: "[accept partial answer for 4]" },
     ],
   } as SecCard,
   {
@@ -6191,7 +6486,7 @@ export const CARDS: SecCard[] = [
     labelKey: [{"letter":"A","meaning":"The earth wire — the wire running to the top pin of the plug","askedInThisQuestion":true},{"letter":"B","meaning":"The live wire — the wire connected through the fuse to the live pin","askedInThisQuestion":true},{"letter":"neutral","meaning":"Printed label for the neutral wire, connected to the left-hand pin","askedInThisQuestion":false},{"letter":"fuse","meaning":"Printed label for the cartridge fuse fitted in the live side of the plug","askedInThisQuestion":false},{"letter":"cable","meaning":"Printed label for the flex cable carrying the three wires into the plug","askedInThisQuestion":false},{"letter":"cable grip","meaning":"Printed label for the clamp that grips the cable where it enters the plug","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
@@ -6201,23 +6496,19 @@ export const CARDS: SecCard[] = [
     questionText: "What is observed on the meter when the magnet is moved in and out of the coil?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "non-zero reading on meter", marks: 4, contextNote: "Scheme tariff [4]; scheme adds '[accept partial answer for 2]'." },
+    { id: "r1", kind: "point", verbatim: "non-zero reading on meter", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
     figure: {
-          "candId": "physics-2025-OL-paper-p10-i0",
-          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p10-i0.png",
-          "srcHash": "0f29d9f94429a05ad03a292b78e6b38d",
-          "alt": "A simple line diagram of the electromagnetic-induction demonstration, sitting under one clipped line of prose ('...demonstrated by moving a magnet towards a coil as shown.'). On the left is a long thin outlined rectangle representing a bar magnet, with 'S' printed inside its left-hand end and 'N' inside its right-hand end. A short solid horizontal arrow points from the magnet's N end towards the right. To the right of that arrow is a tall rectangular circuit loop: along its top edge the wire is drawn as five open loops (the coil). The two ends of the coil continue down the left and right sides of the rectangle and along the bottom, where they meet a small circle containing an upward-pointing arrow — the meter. The magnet is outside and to the left of the coil, pointing into it.",
-          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "S",
-                "N"
-          ]
+          "candId": "physics-2025-ol-q10-coil",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-coil.png",
+          "srcHash": "44a44444d2c21658890bdee3909378b3",
+          "alt": "Diagram of a bar magnet, S on the left and N on the right, with an arrow pointing from its N end towards a coil; the coil is connected in a loop to a meter.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"S","meaning":"The south pole of the bar magnet (the end facing away from the coil)","askedInThisQuestion":false},{"letter":"N","meaning":"The north pole of the bar magnet — the end facing the coil, with an arrow showing the magnet being moved towards the coil","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "diagram",
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
@@ -6227,20 +6518,16 @@ export const CARDS: SecCard[] = [
     questionText: "What is observed on the meter when the magnet is stationary within the coil?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "constant 0 A reading", marks: 4, contextNote: "Scheme tariff [4]; scheme adds '[accept partial answer for 2]'." },
+    { id: "r1", kind: "point", verbatim: "constant 0 A reading", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
     figure: {
-          "candId": "physics-2025-OL-paper-p10-i0",
-          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p10-i0.png",
-          "srcHash": "0f29d9f94429a05ad03a292b78e6b38d",
-          "alt": "A simple line diagram of the electromagnetic-induction demonstration, sitting under one clipped line of prose ('...demonstrated by moving a magnet towards a coil as shown.'). On the left is a long thin outlined rectangle representing a bar magnet, with 'S' printed inside its left-hand end and 'N' inside its right-hand end. A short solid horizontal arrow points from the magnet's N end towards the right. To the right of that arrow is a tall rectangular circuit loop: along its top edge the wire is drawn as five open loops (the coil). The two ends of the coil continue down the left and right sides of the rectangle and along the bottom, where they meet a small circle containing an upward-pointing arrow — the meter. The magnet is outside and to the left of the coil, pointing into it.",
-          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "S",
-                "N"
-          ]
+          "candId": "physics-2025-ol-q10-coil",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-coil.png",
+          "srcHash": "44a44444d2c21658890bdee3909378b3",
+          "alt": "Diagram of a bar magnet, S on the left and N on the right, with an arrow pointing from its N end towards a coil; the coil is connected in a loop to a meter.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
-    labelKey: [{"letter":"S","meaning":"The south pole of the bar magnet (the end facing away from the coil)","askedInThisQuestion":false},{"letter":"N","meaning":"The north pole of the bar magnet — the end facing the coil, with an arrow showing the magnet being moved towards the coil","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8368,12 +8655,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q12b-vii", topicId: "phys-4-6", conceptId: "advantage-of-fusion-over-fission",
-    section: "A", questionRef: "2025 OL Q12(b)(vii)",
-    stem: "Einstein’s equation E = mc2 is used to explain the energy conversion taking place in a nuclear reactor. The Sun’s energy is produced by nuclear fusion.",
-    questionText: "State one advantage of using nuclear fusion over nuclear fission as a source of energy. (36)",
+    section: "B", questionRef: "2025 OL Q12(b)(vii)",
+    stem: "The Sun’s energy is produced by nuclear fusion.",
+    questionText: "State one advantage of using nuclear fusion over nuclear fission as a source of energy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "any valid reference to fuel/products", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "any valid reference to fuel/products", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8382,12 +8669,28 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q8-vii", topicId: "phys-2-3", conceptId: "why-sound-diffracts-and-light-does-not",
-    section: "A", questionRef: "2025 OL Q8(vii)",
-    stem: "Sound is produced when an object vibrates, causing the particles in the surrounding medium to have vibrational energy. As the particles vibrate, they cause nearby particles to vibrate thus transmitting the sound until it is detected by the ear of a nearby person.",
+    section: "B", questionRef: "2025 OL Q8(vii)",
+    stem: "Sound waves can undergo diffraction and interference.",
     questionText: "Explain why a sound wave diffracts after passing through a doorway but a light wave does not.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "reference to wavelength", marks: 4 },
+    { id: "r1", kind: "criterion", verbatim: "reference to wavelength", marks: 4, contextNote: "[accept partial answer for 2] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q8-viii", topicId: "phys-2-6", conceptId: "interference-of-sound",
+    section: "B", questionRef: "2025 OL Q8(viii)",
+    stem: "Sound waves can undergo diffraction and interference.",
+    questionText: "Describe an experiment to show that sound is a wave by showing that it can undergo interference.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8397,38 +8700,28 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-v", topicId: "phys-u2", conceptId: "plotting-one-over-pressure-against-volume",
     section: "A", questionRef: "2025 OL Q2(v)",
-    stem: "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results. V (cm3) 5 10 15 20 25 30 p (MPa) 0.203 0.108 0.073 0.054 0.043 0.035 1 p (MPa–1) 4.93 9.26 13.70",
-    questionText: "Plot a graph, on graph paper, of 1 p against V.",
-    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    questionText: "Plot a graph, on graph paper, of",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
-    { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "labelled axis", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "points plotted", marks: 6, contextNote: "The scheme prints [6 x 1] against this line, which names what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "line of best fit", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q7-viii", topicId: "phys-1-2", conceptId: "forces-on-a-skydiver-at-constant-velocity",
-    section: "A", questionRef: "2025 OL Q7(viii)",
-    questionText: "After the parachute has opened, the skydiver travels at constant velocity. Draw a labelled diagram to show the forces now acting on the skydiver. (21) The graph shows how the velocity of the skydiver changes with respect to time once she leaves the airplane.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "arrow up", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "arrow down", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "equal and opposite", marks: 2 },
-    ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                7
-          ],
-          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    questionFigure: {
+          "candId": "physics-2025-ol-q2-v-question",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-v-question.png",
+          "srcHash": "d5e0e58efe93d3353954a51dddccf9b5",
+          "alt": "The printed question: (v) Plot a graph, on graph paper, of 1/p, set as a fraction, against V.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2025-ol-q2-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-table.png",
+          "srcHash": "6129f61837de9ee3c50878f504ea3c8f",
+          "alt": "Table of results: V (cm³) 5, 10, 15, 20, 25, 30; p (MPa) 0.203, 0.108, 0.073, 0.054, 0.043, 0.035; a row for 1/p (MPa⁻¹) with 4.93, 9.26 and 13.70 filled in and its last three cells blank.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8436,25 +8729,165 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q7-viii", topicId: "phys-1-2", conceptId: "forces-on-a-skydiver-at-constant-velocity",
+    section: "B", questionRef: "2025 OL Q7(viii)",
+    questionText: "After the parachute has opened, the skydiver travels at constant velocity. Draw a labelled diagram to show the forces now acting on the skydiver.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "arrow up", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "arrow down", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "equal and opposite", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q7-ix", topicId: "phys-1-1", conceptId: "accelerating-on-graph",
+    section: "B", questionRef: "2025 OL Q7(ix)",
+    stem: "The graph shows how the velocity of the skydiver changes with respect to time once she leaves the airplane.",
+    questionText: "How can we tell from the graph that the skydiver is accelerating between A and B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "positive slope", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q7-graph",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q7-graph.png",
+          "srcHash": "ac7eaa448578f1bcc3b88c8150ba03bc",
+          "alt": "Sketch graph of velocity (m s⁻¹) against time (s): from A at the origin the curve rises and bends over to B, a horizontal line runs from B to C, the curve drops steeply from C to D, then runs at a low level before falling to the time axis.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q7-x", topicId: "phys-1-1", conceptId: "velocity-between-b-and-c",
+    section: "B", questionRef: "2025 OL Q7(x)",
+    stem: "The graph shows how the velocity of the skydiver changes with respect to time once she leaves the airplane.",
+    questionText: "Describe the skydiver’s velocity between B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "it is constant", marks: 5 },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q7-graph",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q7-graph.png",
+          "srcHash": "ac7eaa448578f1bcc3b88c8150ba03bc",
+          "alt": "Sketch graph of velocity (m s⁻¹) against time (s): from A at the origin the curve rises and bends over to B, a horizontal line runs from B to C, the curve drops steeply from C to D, then runs at a low level before falling to the time axis.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q7-xi", topicId: "phys-1-1", conceptId: "parachute-opens",
+    section: "B", questionRef: "2025 OL Q7(xi)",
+    stem: "The graph shows how the velocity of the skydiver changes with respect to time once she leaves the airplane.",
+    questionText: "Identify the point that represents when the skydiver opens her parachute.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "C", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q7-graph",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q7-graph.png",
+          "srcHash": "ac7eaa448578f1bcc3b88c8150ba03bc",
+          "alt": "Sketch graph of velocity (m s⁻¹) against time (s): from A at the origin the curve rises and bends over to B, a horizontal line runs from B to C, the curve drops steeply from C to D, then runs at a low level before falling to the time axis.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q7-xii", topicId: "phys-1-1", conceptId: "safe-landing",
+    section: "B", questionRef: "2025 OL Q7(xii)",
+    stem: "The graph shows how the velocity of the skydiver changes with respect to time once she leaves the airplane.",
+    questionText: "Why is it safe for the skydiver to land after D?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "as they have a small velocity", marks: 3 },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q7-graph",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q7-graph.png",
+          "srcHash": "ac7eaa448578f1bcc3b88c8150ba03bc",
+          "alt": "Sketch graph of velocity (m s⁻¹) against time (s): from A at the origin the curve rises and bends over to B, a horizontal line runs from B to C, the curve drops steeply from C to D, then runs at a low level before falling to the time axis.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q8-i", topicId: "phys-2-5", conceptId: "sound-needs-a-medium",
+    section: "B", questionRef: "2025 OL Q8(i)",
+    stem: "Sound is produced when an object vibrates, causing the particles in the surrounding medium to have vibrational energy. As the particles vibrate, they cause nearby particles to vibrate thus transmitting the sound until it is detected by the ear of a nearby person.",
+    questionText: "Describe an experiment to show that sound requires a medium to travel through.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "apparatus", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "method", marks: 4, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "observation", marks: 4, contextNote: "[accept partial answers for 2 in each case] The scheme prints no answer here, only what earns the marks." },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-ii", topicId: "phys-2-3", conceptId: "ray-diagram-for-a-real-image",
-    section: "A", questionRef: "2025 OL Q9(ii)",
+    section: "B", questionRef: "2025 OL Q9(ii)",
     questionText: "In your answer book, copy and complete the ray diagram below to show the formation of a real image in a concave mirror.",
     tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "first incident ray", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "first reflected ray", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "second reflected ray", marks: 3 },
-    { id: "r-4", kind: "point", verbatim: "image formed at intersection of rays", marks: 2 },
+    { id: "r1", kind: "criterion", verbatim: "first incident ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "first reflected ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "second reflected ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r4", kind: "criterion", verbatim: "image formed at intersection of rays", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                9
-          ],
-          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2025-ol-q9-ray",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q9-ray.png",
+          "srcHash": "3989daca135a0942b6a9468946ad6982",
+          "alt": "Ray diagram set-up: a principal axis drawn as a dashed line, an upright arrow labelled object standing on it, a point labelled f on the axis, and a concave mirror drawn as a curve on the right.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q9-iii", topicId: "phys-2-3", conceptId: "image-distance",
+    section: "B", questionRef: "2025 OL Q9(iii)",
+    questionText: "A concave mirror has a focal length f of 8 cm. An object is placed with an object distance u of 20 cm in front of the mirror. Using the formula",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r1", kind: "criterion", verbatim: "correct substitution of u or f", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "point", verbatim: "1/v = 1/f − 1/u", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "v = 13.3 cm", marks: 3 },
+    ],
+    questionFigure: {
+          "candId": "physics-2025-ol-q9-iii-question",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q9-iii-question.png",
+          "srcHash": "8657728ca7e2e1e6a1701373d9c7e277",
+          "alt": "The printed question: (iii) A concave mirror has a focal length f of 8 cm. An object is placed with an object distance u of 20 cm in front of the mirror. Using the formula 1/u + 1/v = 1/f, each term set as a fraction, calculate the image distance v.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -8464,14 +8897,14 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q1-i", topicId: "phys-u2", conceptId: "apparatus-for-the-momentum-experiment",
     section: "A", questionRef: "2025 OL Q1(i)",
-    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys. The following data were recorded. mass of trolley A, mA 0.34 kg mass of trolley B, mB 0.36 kg velocity of trolley A before the collision, uA 1.85 m s–1 velocity of trolley B before the collision, uB 0 m s–1 velocity of trolley A and trolley B after the collision, vfinal 0.90 m s–1 total momentum before = total momentum after (mA × uA) + (mB × uB) = (mA + mB) × vfinal",
+    stem: "A student carried out an experiment to verify the principle of conservation of momentum between two trolleys, A and B. Trolley A travelled at a constant velocity down a track and then collided with trolley B which was at rest. Trolleys A and B then moved together with the same velocity, vfinal. She measured the mass of each trolley and then took further measurements to determine the velocities of the trolleys.",
     questionText: "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "runway // airtrack", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "two trolleys // two riders", marks: 3 },
-    { id: "r-3", kind: "alt", verbatim: "timer", marks: 3, accepts: ["metre stick","mass balance"] },
-    { id: "r-4", kind: "point", verbatim: "means of coalescence", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "runway // airtrack", marks: 3, contextNote: "Answers that are separated by a double solidus, //, are answers which are mutually exclusive. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side." },
+    { id: "r2", kind: "point", verbatim: "two trolleys // two riders", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "timer / metre stick / mass balance", marks: 3 },
+    { id: "r4", kind: "criterion", verbatim: "means of coalescence", marks: 3, contextNote: "[-1 if no label is present on diagram} The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8481,11 +8914,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-i", topicId: "phys-u2", conceptId: "apparatus-for-the-boyles-law-experiment",
     section: "A", questionRef: "2025 OL Q2(i)",
-    stem: "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results. V (cm3) 5 10 15 20 25 30 p (MPa) 0.203 0.108 0.073 0.054 0.043 0.035 1 p (MPa–1) 4.93 9.26 13.70",
+    stem: "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results.",
     questionText: "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
-    tariffModel: {"kind":"fixed","notation":"6 + 3"}, totalMarks: 9,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "any two of; enclosed volume of gas, pressure gauge, volume scale, means of altering the pressure/volume", marks: 9 },
+    { id: "r1", kind: "anyN", verbatim: "enclosed volume of gas / pressure gauge / volume scale / means of altering the pressure/volume", marks: null, contextNote: "[-1 if no label is present on diagram] any two", group: {"claimMax":2,"perOption":6,"options":["enclosed volume of gas","pressure gauge","volume scale","means of altering the pressure/volume"],"perOptionSteps":[6,3]} },
     ],
   } as SecCard,
   {
@@ -8495,13 +8928,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q3-i", topicId: "phys-u2", conceptId: "apparatus-for-the-refractive-index-experiment",
     section: "A", questionRef: "2025 OL Q3(i)",
-    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i. i (degrees) r (degrees) sin i sin r n = sin i sin r 20 13 0.34 0.22 46 28 61 35",
+    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i.",
     questionText: "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "block", marks: 3 },
-    { id: "r-2", kind: "alt", verbatim: "ray box", marks: 3, accepts: ["laser","pins"] },
-    { id: "r-3", kind: "point", verbatim: "detail: ruler, protractor, paper, etc.", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "block", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "ray box / laser / pins", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "detail: ruler, protractor, paper, etc.", marks: 3, contextNote: "[-1 if no label is present on diagram]" },
     ],
   } as SecCard,
   {
@@ -8509,15 +8942,15 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q3-ii", topicId: "phys-u2", conceptId: "labelling-the-rays-and-the-normal",
+    id: "phys-2025-ol-q3-ii", topicId: "phys-2-3", conceptId: "labelling-the-rays-and-the-normal",
     section: "A", questionRef: "2025 OL Q3(ii)",
-    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i. i (degrees) r (degrees) sin i sin r n = sin i sin r 20 13 0.34 0.22 46 28 61 35",
+    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i.",
     questionText: "On your diagram, draw and label the incident ray, the refracted ray and the normal to the surface of the glass block.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "incident ray", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "refracted ray", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "normal", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "incident ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "refracted ray", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "normal", marks: 3, contextNote: "[-1 if no label is present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8527,15 +8960,15 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q4-i", topicId: "phys-u2", conceptId: "apparatus-for-the-latent-heat-experiment",
     section: "A", questionRef: "2025 OL Q4(i)",
-    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. When the steam had condensed, she recorded a number of measurements and calculated the specific latent heat of vaporisation of water. The following results were recorded. mass of calorimeter + cold water 0.196 kg mass of calorimeter + water + steam 0.198 kg final temperature of calorimeter, water and added steam 42 °C",
+    stem: "A student carried out an experiment to measure the specific latent heat of vaporisation of water. She added steam to cold water in a copper calorimeter. When the steam had condensed, she recorded a number of measurements and calculated the specific latent heat of vaporisation of water.",
     questionText: "Draw a labelled diagram of the apparatus used in the experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "calorimeter", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "water", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "steam generator", marks: 3 },
-    { id: "r-4", kind: "alt", verbatim: "thermometer", marks: 3, accepts: ["mass balance"] },
-    { id: "r-5", kind: "point", verbatim: "detail: lagging, lid, stirrer, steam trap, tubing, etc.", marks: 2 },
+    { id: "r1", kind: "point", verbatim: "calorimeter", marks: 3 },
+    { id: "r2", kind: "point", verbatim: "water", marks: 3 },
+    { id: "r3", kind: "point", verbatim: "steam generator", marks: 3 },
+    { id: "r4", kind: "point", verbatim: "thermometer / mass balance", marks: 3 },
+    { id: "r5", kind: "criterion", verbatim: "detail: lagging, lid, stirrer, steam trap, tubing, etc.", marks: 2, contextNote: "[-1 if no label is present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8545,20 +8978,28 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q2-iv", topicId: "phys-u2", conceptId: "completing-the-one-over-pressure-table",
     section: "A", questionRef: "2025 OL Q2(iv)",
-    questionText: "Copy and complete the table above into your answerbook by calculating the value of 1 p to 2 decimal places.",
-    tariffModel: {"kind":"fixed","notation":"3 × 2"}, totalMarks: 6,
+    questionText: "Copy and complete the table above into your answerbook by calculating the value of",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "18.52 23.26 28.57", marks: 6 },
+    { id: "r1", kind: "point", verbatim: "18.52", marks: 2, contextNote: "The scheme's completed table: the value for V = 20 cm³." },
+    { id: "r2", kind: "point", verbatim: "23.26", marks: 2, contextNote: "The scheme's completed table: the value for V = 25 cm³." },
+    { id: "r3", kind: "point", verbatim: "28.57", marks: 2, contextNote: "The scheme's completed table: the value for V = 30 cm³." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    questionFigure: {
+          "candId": "physics-2025-ol-q2-iv-question",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-iv-question.png",
+          "srcHash": "f1ae904153c377fd98698ff0e504214f",
+          "alt": "The printed question: (iv) Copy and complete the table above into your answerbook by calculating the value of 1/p, set as a fraction, to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "physics-2025-ol-q2-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-table.png",
+          "srcHash": "6129f61837de9ee3c50878f504ea3c8f",
+          "alt": "Table of results: V (cm³) 5, 10, 15, 20, 25, 30; p (MPa) 0.203, 0.108, 0.073, 0.054, 0.043, 0.035; a row for 1/p (MPa⁻¹) with 4.93, 9.26 and 13.70 filled in and its last three cells blank.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8568,22 +9009,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q3-iv", topicId: "phys-u2", conceptId: "completing-the-sine-table",
     section: "A", questionRef: "2025 OL Q3(iv)",
+    stem: "In an experiment to calculate the refractive index n of glass, a student passed a ray of light through a rectangular glass block. He measured the angle of incidence i and the corresponding angle of refraction r. He repeated this for different values of the angle i. The student recorded the following results.",
     questionText: "Copy and complete the table above into your answerbook by calculating the missing values to 2 decimal places.",
-    tariffModel: {"kind":"fixed","notation":"2 × 1 + 2 × 1 + 3 × 1"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1.52", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "0.72 0.47 1.53", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "0.87 0.57 1.52", marks: 3 },
+    { id: "r1", kind: "point", verbatim: "calculations of sin i values — 0.72 0.87", marks: 2 },
+    { id: "r2", kind: "point", verbatim: "calculations of sin r values — 0.47 0.57", marks: 2 },
+    { id: "r3", kind: "point", verbatim: "1.52 1.53 1.52", marks: 3, contextNote: "The last column of the scheme's completed table, priced [3 x 1]." },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                3
-          ],
-          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2025-ol-q3-table",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q3-table.png",
+          "srcHash": "09579bec749557ba332f44e2417f5388",
+          "alt": "Table of results with columns i (degrees), r (degrees), sin i, sin r and n = sin i / sin r: the row 20, 13 has sin i 0.34 and sin r 0.22; the rows 46, 28 and 61, 35 have their sine cells blank, and the n column is blank in every row.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8591,22 +9031,43 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q5-iv", topicId: "phys-u2", conceptId: "relationship-between-length-and-resistance",
+    id: "phys-2025-ol-q5-iv", topicId: "phys-3-3", conceptId: "relationship-between-length-and-resistance",
     section: "A", questionRef: "2025 OL Q5(iv)",
+    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire.",
     questionText: "Describe the relationship between l and R shown in the graph.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(directly) proportional", marks: 4 },
+    { id: "r1", kind: "point", verbatim: "(directly) proportional", marks: 4, contextNote: "[accept partial answer for 2]" },
     ],
-    sourceMaterial: {
-          "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
-          "pages": [
-                5
-          ],
-          "attribution": "SEC Physics 2025 Ordinary Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    figure: {
+          "candId": "physics-2025-ol-q5-graph",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q5-graph.png",
+          "srcHash": "0f3acd0ae8b12c5f25d9cf3aa23d6244",
+          "alt": "Graph of R (Ω), from 0.00 to 0.25, against l (m), from 0.00 to 0.65: six plotted points lie on a straight line drawn from the origin up to the last point at 0.60 m.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q5-v", topicId: "phys-3-3", conceptId: "slope-of-resistance-graph",
+    section: "A", questionRef: "2025 OL Q5(v)",
+    stem: "In an experiment to measure the resistivity ρ of the material of a wire, a student measured the length l and the resistance R of the wire. He repeated this for six different lengths of the same wire. The student completed the following graph to show the relationship between l and R. He also measured the diameter d of the wire.",
+    questionText: "Calculate the slope of the graph.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r1", kind: "point", verbatim: "m ≈ 0.33 Ω m⁻¹", marks: 6, contextNote: "[accept partial answer for 3]" },
+    ],
+    figure: {
+          "candId": "physics-2025-ol-q5-graph",
+          "src": "/exam-figures/physics/markbank/physics-2025-ol-q5-graph.png",
+          "srcHash": "0f3acd0ae8b12c5f25d9cf3aa23d6244",
+          "alt": "Graph of R (Ω), from 0.00 to 0.25, against l (m), from 0.00 to 0.65: six plotted points lie on a straight line drawn from the origin up to the last point at 0.60 m.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -8615,11 +9076,11 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q6-k", topicId: "phys-4-3", conceptId: "labelled-diagram-of-the-atom",
-    section: "A", questionRef: "2025 OL Q6(k)",
+    section: "B", questionRef: "2025 OL Q6(k)",
     questionText: "Draw a labelled diagram of an atom. Include in your diagram the names and locations of the subatomic particles of the atom.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "diagram of nucleus containing protons and neutrons with electrons orbiting in shells", marks: 7 },
+    { id: "r1", kind: "criterion", verbatim: "diagram of nucleus containing protons and neutrons with electrons orbiting in shells", marks: 7, contextNote: "[accept partial answer for 4] The scheme prints no drawing; this line names what the diagram must show." },
     ],
   } as SecCard,
   {
@@ -8627,12 +9088,13 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q7-iv", topicId: "phys-1-2", conceptId: "example-of-a-vector-quantity",
-    section: "A", questionRef: "2025 OL Q7(iv)",
+    id: "phys-2025-ol-q7-iv", topicId: "phys-1-1", conceptId: "example-of-a-vector-quantity",
+    section: "B", questionRef: "2025 OL Q7(iv)",
+    stem: "(iii) Force is a vector quantity. Explain what is meant by a vector quantity.",
     questionText: "State another example of a vector quantity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "any valid example", marks: 3 },
+    { id: "r1", kind: "criterion", verbatim: "any valid example", marks: 3, contextNote: "The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8641,13 +9103,14 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q9-vi", topicId: "phys-2-3", conceptId: "fibre-optic-total-internal-reflection-diagram",
-    section: "A", questionRef: "2025 OL Q9(vi)",
+    section: "B", questionRef: "2025 OL Q9(vi)",
+    stem: "Fibre broadband uses fibre optic cables to deliver data to homes and businesses across Ireland. A fibre optic cable is a thin flexible fibre with a glass core that can transmit light from one end to the other by total internal reflection.",
     questionText: "Draw a labelled diagram to show how a ray of light is transmitted through a fibre optic cable by total internal reflection.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "two materials of the differing refractive index", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "ray of light", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "multiple internal reflections", marks: 2 },
+    { id: "r1", kind: "criterion", verbatim: "two materials of the differing refractive index", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r2", kind: "criterion", verbatim: "ray of light", marks: 2, contextNote: "The scheme prints no answer here, only what earns the marks." },
+    { id: "r3", kind: "criterion", verbatim: "multiple internal reflections", marks: 2, contextNote: "[-1 if no label is present on diagram] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {
@@ -8656,12 +9119,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q10-ii", topicId: "phys-3-4", conceptId: "sketch-of-the-field-around-a-bar-magnet",
-    section: "A", questionRef: "2025 OL Q10(ii)",
+    section: "B", questionRef: "2025 OL Q10(ii)",
     questionText: "Draw a sketch of the magnetic field around a bar magnet.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "magnetic field lines shown above and below a bar magnet", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "travelling from north to south", marks: 4 },
+    { id: "r1", kind: "criterion", verbatim: "magnetic field lines shown above and below a bar magnet", marks: 4, contextNote: "The scheme prints no drawing; this line names what the diagram must show." },
+    { id: "r2", kind: "criterion", verbatim: "travelling from north to south", marks: 4, contextNote: "The scheme prints no drawing; this line names what the diagram must show." },
     ],
   } as SecCard,
   {
@@ -8670,11 +9133,12 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q11-iv", topicId: "phys-2-1", conceptId: "example-of-a-thermometric-property",
-    section: "A", questionRef: "2025 OL Q11(iv)",
+    section: "B", questionRef: "2025 OL Q11(iv)",
+    stem: "Internal temperature monitors are used to record the indoor temperature. The temperature of a living room is 292 K.",
     questionText: "The internal temperature monitors are based on a thermometric property. State one example of a thermometric property.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "any valid named thermometric property", marks: 7 },
+    { id: "r1", kind: "criterion", verbatim: "any valid named thermometric property", marks: 7, contextNote: "[accept partial answer for 4] The scheme prints no answer here, only what earns the marks." },
     ],
   } as SecCard,
   {

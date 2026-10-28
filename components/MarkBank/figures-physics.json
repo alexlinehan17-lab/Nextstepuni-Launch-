@@ -373,6 +373,355 @@
    392
   ]
  },
+ "physics-2025-ol-q1-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q1-table.png",
+  "md5": "0f9e06fcc9353564abd432b1b5bf8f0a",
+  "alt": "Table of the data recorded: mass of trolley A, mA, 0.34 kg; mass of trolley B, mB, 0.36 kg; velocity of trolley A before the collision, uA, 1.85 m s⁻¹; velocity of trolley B before the collision, uB, 0 m s⁻¹; velocity of trolley A and trolley B after the collision, vfinal, 0.90 m s⁻¹.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q1(iv)(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   52,
+   272,
+   545,
+   416
+  ]
+ },
+ "physics-2025-ol-q10-coil": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-coil.png",
+  "md5": "44a44444d2c21658890bdee3909378b3",
+  "alt": "Diagram of a bar magnet, S on the left and N on the right, with an arrow pointing from its N end towards a coil; the coil is connected in a loop to a meter.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q10(vi)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   222,
+   190,
+   382,
+   268
+  ]
+ },
+ "physics-2025-ol-q10-transformer": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q10-transformer.png",
+  "md5": "6e91242aae6d96b19fef764889de0ce5",
+  "alt": "Diagram of a transformer: a primary coil and a secondary coil wound on opposite sides of a square core, with the input voltage terminals at the primary coil and the output voltage terminals at the secondary coil.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q10(ix)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   138,
+   380,
+   428,
+   492
+  ]
+ },
+ "physics-2025-ol-q12a-ii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q12a-ii-question.png",
+  "md5": "ba54d24cad0218dbe87c180713ac0c7a",
+  "alt": "The printed lines: Rn²²²₈₆ is a radon atom. (ii) How many protons are in an atom of radon?",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q12(a)(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   151,
+   545,
+   193
+  ]
+ },
+ "physics-2025-ol-q12a-iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q12a-iv-question.png",
+  "md5": "0d44182e0104d7e8fcd5f61ff57aa8b7",
+  "alt": "The printed lines: Rn²²²₈₆ emits an alpha particle. (iv) Determine what element is formed after an alpha particle, α⁴₂, is emitted from Rn²²²₈₆.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q12(a)(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   52,
+   220,
+   545,
+   263
+  ]
+ },
+ "physics-2025-ol-q14c-electroscope": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q14c-electroscope.png",
+  "md5": "b6ac9f76af74badb9a685a3dc236e94d",
+  "alt": "Diagram of a gold leaf electroscope: a cap on a metal rod that passes through the insulation between the cap and the frame into an earthed box; a thin line hangs beside the rod inside the box, with arrow X pointing to it.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(c)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   345,
+   75,
+   545,
+   245
+  ]
+ },
+ "physics-2025-ol-q14d-xray": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q14d-xray.png",
+  "md5": "2a156eb600a29f64d79667016eeffe73",
+  "alt": "Diagram of an X-ray tube: a coiled filament on the left, joined to the low voltage terminals, faces a target on the right; the high voltage terminals connect the two ends, an arrow labelled high speed electrons points along the path between them, rays fan out downward from the target, and the tube sits inside a lead casing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(d)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   78,
+   340,
+   472,
+   600
+  ]
+ },
+ "physics-2025-ol-q2-iv-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-iv-question.png",
+  "md5": "f1ae904153c377fd98698ff0e504214f",
+  "alt": "The printed question: (iv) Copy and complete the table above into your answerbook by calculating the value of 1/p, set as a fraction, to 2 decimal places.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q2(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   239,
+   545,
+   277
+  ]
+ },
+ "physics-2025-ol-q2-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-table.png",
+  "md5": "6129f61837de9ee3c50878f504ea3c8f",
+  "alt": "Table of results: V (cm³) 5, 10, 15, 20, 25, 30; p (MPa) 0.203, 0.108, 0.073, 0.054, 0.043, 0.035; a row for 1/p (MPa⁻¹) with 4.93, 9.26 and 13.70 filled in and its last three cells blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q2(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   88,
+   545,
+   172
+  ]
+ },
+ "physics-2025-ol-q2-v-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q2-v-question.png",
+  "md5": "d5e0e58efe93d3353954a51dddccf9b5",
+  "alt": "The printed question: (v) Plot a graph, on graph paper, of 1/p, set as a fraction, against V.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q2(v)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   280,
+   545,
+   304
+  ]
+ },
+ "physics-2025-ol-q3-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q3-table.png",
+  "md5": "09579bec749557ba332f44e2417f5388",
+  "alt": "Table of results with columns i (degrees), r (degrees), sin i, sin r and n = sin i / sin r: the row 20, 13 has sin i 0.34 and sin r 0.22; the rows 46, 28 and 61, 35 have their sine cells blank, and the n column is blank in every row.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q3(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   52,
+   495,
+   545,
+   622
+  ]
+ },
+ "physics-2025-ol-q4-table": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q4-table.png",
+  "md5": "a18970f07723119f6f13f810c85a1dc8",
+  "alt": "Table of results: mass of calorimeter + cold water 0.196 kg; mass of calorimeter + water + steam 0.198 kg; final temperature of calorimeter, water and added steam 42 °C.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q4(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   139,
+   545,
+   231
+  ]
+ },
+ "physics-2025-ol-q5-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q5-graph.png",
+  "md5": "0f3acd0ae8b12c5f25d9cf3aa23d6244",
+  "alt": "Graph of R (Ω), from 0.00 to 0.25, against l (m), from 0.00 to 0.65: six plotted points lie on a straight line drawn from the origin up to the last point at 0.60 m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q5(iv)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   55,
+   120,
+   535,
+   395
+  ]
+ },
+ "physics-2025-ol-q6a-wrench": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q6a-wrench.png",
+  "md5": "df5127e587cf86cb205b66b507dfa8b2",
+  "alt": "Drawing of a wrench gripping a nut at one end; an arrow labelled force applied = 50 N points down on the handle, and a double-headed arrow labelled distance = 15 cm runs from the nut along the wrench.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q6(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   358,
+   160,
+   545,
+   262
+  ]
+ },
+ "physics-2025-ol-q6j-conductor": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q6j-conductor.png",
+  "md5": "41137312baa968f05b01ca0336eea1ae",
+  "alt": "Outline of an insulated conductor, pointed at its left end and rounded at its right end, with an arrow from the label insulated conductor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q6(j)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   150,
+   528,
+   445,
+   594
+  ]
+ },
+ "physics-2025-ol-q7-graph": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q7-graph.png",
+  "md5": "ac7eaa448578f1bcc3b88c8150ba03bc",
+  "alt": "Sketch graph of velocity (m s⁻¹) against time (s): from A at the origin the curve rises and bends over to B, a horizontal line runs from B to C, the curve drops steeply from C to D, then runs at a low level before falling to the time axis.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q7(ix)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   148,
+   395,
+   445,
+   535
+  ]
+ },
+ "physics-2025-ol-q9-iii-question": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q9-iii-question.png",
+  "md5": "8657728ca7e2e1e6a1701373d9c7e277",
+  "alt": "The printed question: (iii) A concave mirror has a focal length f of 8 cm. An object is placed with an object distance u of 20 cm in front of the mirror. Using the formula 1/u + 1/v = 1/f, each term set as a fraction, calculate the image distance v.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q9(iii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   52,
+   286,
+   545,
+   326
+  ]
+ },
+ "physics-2025-ol-q9-ray": {
+  "src": "/exam-figures/physics/markbank/physics-2025-ol-q9-ray.png",
+  "md5": "3989daca135a0942b6a9468946ad6982",
+  "alt": "Ray diagram set-up: a principal axis drawn as a dashed line, an upright arrow labelled object standing on it, a point labelled f on the axis, and a concave mirror drawn as a curve on the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q9(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC021GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   85,
+   128,
+   505,
+   282
+  ]
+ },
  "physics-2026-hl-q10-circuit": {
   "src": "/exam-figures/physics/markbank/physics-2026-hl-q10-circuit.png",
   "md5": "1af5640f4d561f377e0d6630b2c4b0fd",
