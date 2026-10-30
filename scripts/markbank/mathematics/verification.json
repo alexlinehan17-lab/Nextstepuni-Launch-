@@ -8371,7 +8371,7 @@
       "10C row with an inconsistent Mid Partial Credit description retains its numeric awards and an explanation.",
       "Clipped scheme graph replaced in the card presentation by a separately attributed complete NextStepUni graph; original SEC credit notes and full PDF remain accessible."
     ],
-    "reproduction": "Pending committed generator check.",
+    "reproduction": "New generator reproduced its committed cards and review ledger byte for byte. Updated optional-supplement renderer reproduced all 172 previous deferred images and metadata unchanged.",
     "pendingEnglishDeferredPapers": 13,
     "wholeSubjectComplete": false
   }
