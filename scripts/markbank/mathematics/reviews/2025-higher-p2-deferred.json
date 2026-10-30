@@ -1,0 +1,1599 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2025,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV-deferred.pdf",
+  "schemeFileid": "LC003ALP000EV-deferred.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "e78fe93679d66a0b22221315e812d725d423155b340df1bd25574ae706ea7f4a",
+  "schemeSha256": "34bd01af622b76533421ad065eff4e86ddea3cf6dc40ed323ac9e49ce6aa37d5",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual sweep of all 32 question-paper pages and scheme pages 26–48, with the source introduction on pages 1–2. Each printed task reconciled against its published allocation. All question and solution images independently inspected before publication.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    2,
+    27,
+    28,
+    29,
+    30
+  ],
+  "sourceNotes": [
+    "All ten questions retained: 380 offered marks, with candidates selecting five Section A and three Section B questions for 300 marks.",
+    "43 separately marked tasks. Q2(a)(i)–(ii), Q3(a)(i)–(ii), Q3(b)(i)–(ii), Q4(a)–(b), and Q9(b)(i)–(ii) each share a published scale and remain together.",
+    "Scheme page 31 incorrectly heads the section Paper 1 and repeats Q1(a)(i) for the angle row. These are Paper 2 solutions; the second row corresponds to printed Q1(a)(ii).",
+    "Q4(b) interchanges the exact cosine and sine magnitudes in an intermediate line. The correct expression is √3/2 − (−1/2); the final value 1.3660 remains correct. A source note explains this.",
+    "Q5(a) requires one proof with Diagram, Given, To Prove, Construction, and Proof headings. These headings are not separate questions. Q5(b) asks for one freely chosen valid pair a,d, not a finite option pool.",
+    "Q6(a)(i) omits parentheses around −1 when squaring. A note clarifies that (−1)²=1 and the radius is √(4+1+20)=5.",
+    "Q7(a) preserves the complete original construction grid, coordinate scale and measurement instruction. Q7(c) is one yes/no-and-justification response. All sequence-dependent parts retain the first-triangle and unit-height context.",
+    "Q9(a)(ii) uses A to denote urban voters in its model solution; elsewhere Alayah is a candidate name. The card note identifies the intended event and the correct union calculation.",
+    "Q10(a)(i) rounds z to 0.67 before looking up 74.86%. Direct calculation without that intermediate rounding gives about 74.75%. Both approaches are explained without changing the published scale.",
+    "Q10(a)(i) high-partial guidance says 3 correct new entries, and Q10(a)(ii) uses probability-of-two/three-results wording. These appear copied from earlier questions. Original notes and numeric bands are retained; no replacement official marking criteria are invented.",
+    "Q10(a)(ii) has a tail-sign slip. The required cumulative probability is P(Z ≤ z)=0.5918, giving z≈0.23 and k≈79.4. The note distinguishes this from the printed P(Z > x)=0.5918.",
+    "Q10(c)(iii) selects a different second committee, leaving 251 choices, exactly one of which is the complement. The denominator must not silently change to 252."
+  ],
+  "cards": [
+    {
+      "id": "maths-2025-hl-p2-deferred-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC].",
+      "questionText": "Find slope of the line AB and the slope of AC.",
+      "solutionQuotes": [
+        "Some effort at finding a slope",
+        "One slope found"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q1-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q1-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC].",
+      "questionText": "Hence, or otherwise, find the value of θ. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Some correct substitution into formula",
+        "Fully correct substitution into formula",
+        "Apply a * for no or incorrect rounding"
+      ],
+      "markingNote": "The scheme repeats the label Q1(a)(i) on this row. Its angle calculation corresponds to Q1(a)(ii) in the question paper.",
+      "figureKey": "maths-2025-hl-p2-deferred-q1-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q1-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC].",
+      "questionText": "Find the shortest distance from B to the line AC. Give your answer in the form p√q, where p, q ∈ ℕ.",
+      "solutionQuotes": [
+        "Finds the equation of the line AC",
+        "Apply a * for incorrect format"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q1-b-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q1-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q2-a-i-ii",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "In an exam, the marks awarded to 30 000 candidates were normally distributed, with a mean mark of 180 and a standard deviation of 55 marks. The scaled diagram below shows the distribution of marks on the exam.",
+      "questionText": "(i) Fill in the 6 missing numbers in the diagram above. (ii) Using the empirical rule, or otherwise, find the number of candidates who were awarded a mark between 70 and 235.",
+      "solutionQuotes": [
+        "One part correct",
+        "One part correct and work of merit in the other part"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q2-a-i-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q2-a-i-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A spinner has exactly four different sectors. In a game, the spinner is spun once. The probability of landing on each sector is given in the table below. The amount of money that you get for landing on each sector is also shown. Sector A: probability 3/5, €0; B: probability 1/20, €100; C: probability 1/4, €10; D: probability 1/10, €25.",
+      "questionText": "Work out the cost to play this game, so that the expected value of the profit for someone playing the game would be − €0·50.",
+      "solutionQuotes": [
+        "A correct term formulated",
+        "All terms formulated"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q2-b-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q2-b-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A spinner has exactly four different sectors. In a game, the spinner is spun once. The probability of landing on each sector is given in the table below. The amount of money that you get for landing on each sector is also shown. Sector A: probability 3/5, €0; B: probability 1/20, €100; C: probability 1/4, €10; D: probability 1/10, €25.",
+      "questionText": "Each spin of the spinner is independent. The first time that it is spun, it lands on sector C. The spinner is spun a second time. Find the probability that it lands on sector C again, given that it landed on sector C the first time. Justify your answer.",
+      "solutionQuotes": [
+        "Correct answer no justification"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q2-b-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q2-b-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q3-a-i-ii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05.",
+      "questionText": "(i) Find the value of P(A \\ B), that is, the probability that A happens but B does not happen. (ii) Find the value of P(A ∪ B).",
+      "solutionQuotes": [
+        "One part correct",
+        "One part correct and work of merit in the other part"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q3-a-i-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q3-a-i-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q3-b-i-ii",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05. P(C) = x, where x ∈ ℝ, 0 ≤ x ≤ 1. A and C are mutually exclusive.",
+      "questionText": "(i) Write down the value of P(A ∪ C), in terms of x. Remember that P(A) = 0·3. (ii) Find the value of P(A | C), the probability that A happens given that C has happened.",
+      "solutionQuotes": [
+        "Accept correct answers without work",
+        "One part correct"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q3-b-i-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q3-b-i-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05. P(C) = x, where x ∈ ℝ, 0 ≤ x ≤ 1.",
+      "questionText": "P(B ∩ C) = 0·08 and P(B | C) = 1/3. Find the value of x = P(C).",
+      "solutionQuotes": [
+        "Relevant work on a Venn diagram"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q3-c-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q3-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q4-a-b",
+      "printedParts": [
+        "Q4(a)",
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "(a) cos A = 1/√2 and sin A = −1/√2, where 0 ≤ A ≤ 2π. Find the value of A. (b) f(x) = cos x − sin x, where −2π ≤ x ≤ 2π. Find the value of f(−π/6). Give your answer correct to 4 decimal places.",
+      "solutionQuotes": [
+        "One part correct",
+        "One part correct and work of merit in the other part",
+        "Apply a * for incorrect format"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q4-a-b-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q4-a-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Solve the equation: 2 sin(2x) = √3, where 0 ≤ x ≤ 180°.",
+      "solutionQuotes": [
+        "One correct value for x"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q4-c-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q4-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-functions"
+      ],
+      "questionText": "The function g(x), where x ∈ ℝ, is defined as follows: g(x) = 140 + 110 cos(3x). Part of the graph of y = g(x) is shown on the diagram below. The horizontal lines y = A and y = B are shown, where A, B ∈ ℕ. The vertical line x = C is also shown, where C ∈ ℝ. Find the value of A, the value of B, and the value of C. Write C in terms of π.",
+      "solutionQuotes": [
+        "One value correct",
+        "Two values correct"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q4-d-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q4-d-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Let ABC be a triangle. Prove that, if a line l is parallel to BC and cuts [AB] in the ratio s : t, where s, t ∈ ℕ, then it also cuts [AC] in the same ratio. Use the headings: Diagram, Given, To Prove, Construction, Proof.",
+      "solutionQuotes": [
+        "Relevant diagram drawn",
+        "Construction clearly indicated",
+        "Proof missing 1 relevant step"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q5-a-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q5-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "questionText": "XYZ is a triangle. The points P and Q lie on [XY] and the points R and S lie on [XZ]. The lines PR, QS, and YZ are all parallel. As shown in the diagram, |XP| = 4, |PQ| = 7, and |QY| = 10. |XR| = a, |RS| = a + d, and |SZ| = a + 2d, where a and d are positive constants. a is not equal to 4. Find one possible value of a (a ≠ 4), and the corresponding value of d.",
+      "solutionQuotes": [
+        "One variable written in terms of the other"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q5-b-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q5-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The equation of the circle s is x² + y² − 4x + 2y − 20 = 0.",
+      "questionText": "Write down the co-ordinates of the centre of s and the radius of s.",
+      "solutionQuotes": [
+        "Work towards finding the centre or radius",
+        "Centre or radius correct"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q6-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q6-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The equation of the circle s is x² + y² − 4x + 2y − 20 = 0.",
+      "questionText": "The equation of the circle t is (x + 14)² + (y − 11)² = 225. Show that the circles s and t touch externally.",
+      "solutionQuotes": [
+        "Radius and/or centre of circle t found",
+        "Some correct substitution into distance formula",
+        "Incorrect or no conclusion"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q6-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q6-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The circle k has centre (0, 0) and radius 2 units. The point A(−2, 0) is on the circle k. ABCD is a square. The point C is on the x-axis, and BC and CD are tangents to k, as shown. h is the perpendicular distance from (0, 0) to AD.",
+      "questionText": "Find the value of h. Give your answer in the form √a, where a ∈ ℕ.",
+      "solutionQuotes": [
+        "Apply a * for incorrect format"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q6-b-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q6-b-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The circle k has centre (0, 0) and radius 2 units. The point A(−2, 0) is on the circle k. ABCD is a square. The point C is on the x-axis, and BC and CD are tangents to k, as shown. h is the perpendicular distance from (0, 0) to AD.",
+      "questionText": "Find the area of the square ABCD. Give your answer in the form p + q√2 square units, where p, q ∈ ℕ.",
+      "solutionQuotes": [
+        "Length of the side of the square found"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q6-b-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q6-b-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+      "questionText": "The first four triangles in the sequence are shown on the co-ordinate axes below. Construct the next triangle in the sequence on the diagram below. Show clearly all your construction lines. If you make any measurements, write them in an appropriate place on the diagram.",
+      "solutionQuotes": [
+        "90° angle correct or 1 unit correct",
+        "90° angle correct and 1 unit correct"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q7-a-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q7-a-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+      "questionText": "The diagram on the right shows the first two triangles in the sequence. The angles A and B, and the point C, are marked on the diagram. Find, in degrees, the sizes of the angles A and B, and the size of the angle A + B. Give your second and third answers correct to 2 decimal places.",
+      "solutionQuotes": [
+        "1 correct angle",
+        "2 correct angles"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q7-b-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q7-b-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. The diagram shows the first two triangles, with angles A and B and the point C marked.",
+      "questionText": "Hence, or otherwise, find the y co-ordinate of the point C, correct to 2 decimal places.",
+      "solutionQuotes": [
+        "Finds the x co-ordinate"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q7-b-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q7-b-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "stem": "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+      "questionText": "Are any two triangles in the sequence similar? Justify your answer. Answer Yes or No.",
+      "solutionQuotes": [
+        "Correct answer (No) given"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q7-c-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q7-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+      "questionText": "The kth triangle in the sequence has a hypotenuse of length 5√41, where k ∈ ℕ. Find the value of k.",
+      "solutionQuotes": [
+        "√1025 found"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q7-d-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q7-d-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+      "questionText": "Two consecutive triangles in the sequence have hypotenuses of length √26 and √27, respectively, as shown in the diagram below. Two of the angles in the diagram are marked X and Y. Find the value of sin(X + Y), without using a calculator. Show all of your working out. Give your answer in the form (r + √t)/√u where r, t, u ∈ ℕ.",
+      "solutionQuotes": [
+        "1 step correct",
+        "3 steps correct",
+        "Apply a * for incorrect format"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q7-e-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q7-e-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x.",
+      "questionText": "Use the triangle ABC to find the value of x, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Fully substituted sine rule formula"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q8-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q8-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x.",
+      "questionText": "Find the value of θ, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Fully substituted cosine rule formula",
+        "Apply a * for no or incorrect units"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q8-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q8-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x.",
+      "questionText": "Michelle is putting topsoil on the field. The topsoil will cover the whole field, and will have a uniform height of 20 cm. Work out the volume of topsoil that Michelle will need, to cover the whole field. Give your answer correct to the nearest m³.",
+      "solutionQuotes": [
+        "2 steps correct",
+        "3 steps correct"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q8-a-iii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q8-a-iii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes footballs of different sizes. The surface of one football is made up of 20 hexagons and 12 pentagons, each with sides of length L cm, where L ∈ ℝ. In cm², the area of each hexagon is given by (3√3/2)L² and the area of each pentagon is given by (L²/4)√(5(5 + 2√5)).",
+      "questionText": "Use these formulas to write the total surface area of this type of football in terms of L.",
+      "solutionQuotes": [
+        "Total area of hexagons or pentagons found in terms of L"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q8-b-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q8-b-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes footballs of different sizes. The surface of one football is made up of 20 hexagons and 12 pentagons, each with sides of length L cm, where L ∈ ℝ. In cm², the area of each hexagon is given by (3√3/2)L² and the area of each pentagon is given by (L²/4)√(5(5 + 2√5)).",
+      "questionText": "When it is inflated, this football is in the shape of a sphere with a diameter of 22 cm. Use your answer to part (b)(i) to find the value of L, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "1 step correct",
+        "2 steps correct"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q8-b-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q8-b-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "Some of the other footballs that the company makes are in packaging that is in the shape of a cube. These come in two sizes: small and large. The surface area of a large cube is n times that of a small cube, where n ∈ ℝ. The volume of a large cube is k times that of a small cube, where k ∈ ℝ. Use this to write k in terms of n.",
+      "solutionQuotes": [
+        "1 step correct",
+        "2 steps correct"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q8-c-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q8-c-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall.",
+      "questionText": "Complete the table.",
+      "solutionQuotes": [
+        "1 correct new entry",
+        "3 correct new entries"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q9-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q9-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table.",
+      "questionText": "A caller is selected at random. Find the probability that this caller voted for David or is an urban voter.",
+      "solutionQuotes": [
+        "P(D) or P(A)"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q9-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q9-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table.",
+      "questionText": "A caller is selected at random from the callers who voted for Alayah. Find the probability that the caller is an urban voter. Give your answer correct to 4 decimal places.",
+      "solutionQuotes": [
+        "51.8 or 61.8"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q9-a-iii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q9-a-iii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table.",
+      "questionText": "A caller is selected at random. Let P be the event that the caller voted for Alayah. Let Q be the event that the caller is an urban voter. Are the events P and Q independent? Use calculations to support your answer.",
+      "solutionQuotes": [
+        "Effort at independent formula",
+        "P(P ∩ Q) = 0.518"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q9-a-iv-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q9-a-iv-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q9-b-i-ii",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A group of 9 friends are planning a trip abroad to an Ireland hockey match. They buy nine match tickets. All nine tickets are in the same row and the row has exactly nine seats.",
+      "questionText": "(i) How many different seating arrangements of the 9 friends are possible? (ii) Find the number of seating arrangements in which three of the friends – Máire, Jake, and Alex – are sitting together.",
+      "solutionQuotes": [
+        "One part correct",
+        "One part correct and work of merit in the other part"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q9-b-i-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q9-b-i-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In the match, Ireland take 6 penalty corners. The probability that Ireland score from a penalty corner is roughly 0·35. Assume that the outcome of each penalty corner is independent.",
+      "questionText": "Find the probability that Ireland score from none of the penalty corners in the match. Give your answer correct to 4 decimal places.",
+      "solutionQuotes": [
+        "Work of merit, 0.65 written"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q9-c-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q9-c-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In the match, Ireland take 6 penalty corners. The probability that Ireland score from a penalty corner is roughly 0·35. Assume that the outcome of each penalty corner is independent.",
+      "questionText": "The probability that Ireland score at least n of their penalty corners is 12%, correct to the nearest percent. Find the value of n ∈ ℕ. Show all your working out.",
+      "solutionQuotes": [
+        "Probability of two results set up",
+        "Probability of three results set up"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q9-c-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q9-c-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes.",
+      "questionText": "Find the percentage of drivers who completed the journey in 82 minutes or less.",
+      "solutionQuotes": [
+        "Some correct substitution into formula"
+      ],
+      "markingNote": "The printed high-partial note says 3 correct new entries, although this question contains no table. The published numeric awards are retained; no substitute official criterion is assumed.",
+      "figureKey": "maths-2025-hl-p2-deferred-q10-a-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q10-a-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes.",
+      "questionText": "Exactly 50% of the drivers took between 70 minutes and k minutes to complete the journey, where k ∈ ℝ. Find the value of k, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Apply a * for no or incorrect rounding"
+      ],
+      "markingNote": "The printed partial-credit notes refer to two or three results, apparently carried over from another question. The original notes and numeric scale are retained without inventing replacement SEC criteria.",
+      "figureKey": "maths-2025-hl-p2-deferred-q10-a-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q10-a-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes.",
+      "questionText": "In 2023 major road works were completed on the N22 between Killarney and Cork. Afterwards, Mark decides to carry out a new survey to see if the driving times have changed. He randomly selects 500 drivers to participate in the survey. For this sample the mean driving time was 71 minutes. Mark assumes the population standard deviation is still 6 minutes. Carry out a hypothesis test at the 5% level of significance to see if there has been a change in driving times after the road improvements. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
+      "solutionQuotes": [
+        "Work of merit in one step",
+        "Two steps correct",
+        "Three steps correct",
+        "award Mid Partial Credit at most"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q10-b-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q10-b-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women.",
+      "questionText": "Find the number of different committees which consist of 2 men and 3 women.",
+      "solutionQuotes": [
+        "= 120"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q10-c-i-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q10-c-i-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women.",
+      "questionText": "Find the number of different committees that have more women than men.",
+      "solutionQuotes": [
+        "One possible outcome formulated",
+        "Two possible outcomes formulated"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q10-c-ii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q10-c-ii-question"
+    },
+    {
+      "id": "maths-2025-hl-p2-deferred-q10-c-iii",
+      "printedParts": [
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women.",
+      "questionText": "One committee is picked at random. A different committee is then picked at random. Find the probability that none of the 10 people are on both of these committees.",
+      "solutionQuotes": [
+        "252 and stops"
+      ],
+      "figureKey": "maths-2025-hl-p2-deferred-q10-c-iii-solution",
+      "questionFigureKey": "maths-2025-hl-p2-deferred-q10-c-iii-question"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Every question is retained for practice regardless of exam-level selection."
+    },
+    {
+      "pages": [
+        4,
+        6,
+        17
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same required task, with no expansion."
+    },
+    {
+      "pages": [
+        12
+      ],
+      "wording": "Diagram, Given, To Prove, Construction, Proof",
+      "classification": "required-headings",
+      "reason": "Five required headings within one 15-mark proof."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "one possible value of a",
+      "classification": "open-answer",
+      "reason": "Freely chosen positive constants satisfying the ratios; not a finite choice pool."
+    },
+    {
+      "pages": [
+        18
+      ],
+      "wording": "Are any two triangles ... Answer (Yes or No)",
+      "classification": "answer-selection",
+      "reason": "One comparison and justification, not selection of triangles for separate answers."
+    },
+    {
+      "pages": [
+        24,
+        26,
+        30
+      ],
+      "wording": "David or urban / three friends / committees",
+      "classification": "mathematical-context",
+      "reason": "These describe event unions or counting constraints, not optional examination tasks."
+    }
+  ],
+  "sitting": "deferred",
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level choice; all questions retained."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level choice; all questions retained."
+    },
+    "4:652d2f37be5d70e5": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level choice; all questions retained."
+    },
+    "4:25c5af55a7abe001": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task."
+    },
+    "6:d9308dbbcd0a52e2": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task."
+    },
+    "16:6d19f0c54f6b2cc2": {
+      "classification": "exam-level-selection",
+      "reason": "Exam-level choice; all questions retained."
+    },
+    "17:6be71edac5fbbcf3": {
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same task."
+    },
+    "18:ff7116960676c956": {
+      "classification": "answer-selection",
+      "reason": "One yes/no decision with justification; no triangle-choice expansion."
+    }
+  }
+}

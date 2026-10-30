@@ -68990,4 +68990,1898 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q1-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a-i",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q1(a)(i)",
+    stem: "The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC].",
+    questionText: "Find slope of the line AB and the slope of AC.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q1-a-i-solution-1", kind: "point", verbatim: "Some effort at finding a slope", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q1-a-i-solution-2", kind: "point", verbatim: "One slope found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q1-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q1-a-i-question.png",
+          "srcHash": "564b2055925efa167cb6d4531a336ebf",
+          "alt": "The question as printed on the paper — The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC]. Find slope of the line AB and the slope of AC.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q1-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q1-a-i-solution.png",
+          "srcHash": "1ecd768b29c6c21f147d8cf4359268e2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q1(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q1-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q1-a-ii",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q1(a)(ii)",
+    stem: "The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC].",
+    questionText: "Hence, or otherwise, find the value of θ. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q1-a-ii-solution-1", kind: "point", verbatim: "Some correct substitution into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q1-a-ii-solution-2", kind: "point", verbatim: "Fully correct substitution into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q1-a-ii-solution-3", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"markingNote":"The scheme repeats the label Q1(a)(i) on this row. Its angle calculation corresponds to Q1(a)(ii) in the question paper.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q1-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q1-a-ii-question.png",
+          "srcHash": "e10868d1e698ac03dcf47df3f145f655",
+          "alt": "The question as printed on the paper — The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC]. Hence, or otherwise, find the value of θ. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q1-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q1-a-ii-solution.png",
+          "srcHash": "0ece9626e362ad1b9ed06d561ac1cdf6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q1(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme repeats the label (a)(i) on this row. This is the solution to printed Q1(a)(ii), the acute angle between AB and AC.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q1-b", topicId: "maths-2-2", conceptId: "p2-deferred-q1-b",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q1(b)",
+    stem: "The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC].",
+    questionText: "Find the shortest distance from B to the line AC. Give your answer in the form p√q, where p, q ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q1-b-solution-1", kind: "point", verbatim: "Finds the equation of the line AC", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q1-b-solution-2", kind: "point", verbatim: "Apply a * for incorrect format", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[31],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q1-b-question.png",
+          "srcHash": "b14d8f60a35c82e38f6e6b7f9c2d0ca2",
+          "alt": "The question as printed on the paper — The three points A(0, 0), B(4, 2), and C(6, −6) form a triangle, as shown in the diagram below. θ is the acute angle between [AB] and [AC]. Find the shortest distance from B to the line AC. Give your answer in the form p√q, where p, q ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q1-b-solution.png",
+          "srcHash": "cd591f8f13024a2f270d37c639aaab2b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q2-a-i-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q2-a-i-ii",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q2(a)(i), Q2(a)(ii)",
+    stem: "In an exam, the marks awarded to 30 000 candidates were normally distributed, with a mean mark of 180 and a standard deviation of 55 marks. The scaled diagram below shows the distribution of marks on the exam.",
+    questionText: "(i) Fill in the 6 missing numbers in the diagram above. (ii) Using the empirical rule, or otherwise, find the number of candidates who were awarded a mark between 70 and 235.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q2-a-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q2-a-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q2-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q2-a-i-ii-question.png",
+          "srcHash": "05d6d9edb150a0be4c1005f5f7341654",
+          "alt": "The question as printed on the paper — In an exam, the marks awarded to 30 000 candidates were normally distributed, with a mean mark of 180 and a standard deviation of 55 marks. The scaled diagram below shows the distribution of marks on the exam. (i) Fill in the 6 missing numbers in the diagram above. (ii) Using the empirical rule, or otherwise, find the number of candidates who were awarded a mark between 70 and 235.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q2-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q2-a-i-ii-solution.png",
+          "srcHash": "63ace0aca7a817e497d5a7bede9359cd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q2(a)(i), Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q2-b-i", topicId: "maths-1-3", conceptId: "p2-deferred-q2-b-i",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q2(b)(i)",
+    stem: "A spinner has exactly four different sectors. In a game, the spinner is spun once. The probability of landing on each sector is given in the table below. The amount of money that you get for landing on each sector is also shown. Sector A: probability 3/5, €0; B: probability 1/20, €100; C: probability 1/4, €10; D: probability 1/10, €25.",
+    questionText: "Work out the cost to play this game, so that the expected value of the profit for someone playing the game would be − €0·50.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q2-b-i-solution-1", kind: "point", verbatim: "A correct term formulated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q2-b-i-solution-2", kind: "point", verbatim: "All terms formulated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q2-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q2-b-i-question.png",
+          "srcHash": "c6caf736369a2ae6efcdfa2bc6598f9a",
+          "alt": "The question as printed on the paper — A spinner has exactly four different sectors. In a game, the spinner is spun once. The probability of landing on each sector is given in the table below. The amount of money that you get for landing on each sector is also shown. Sector A: probability 3/5, €0; B: probability 1/20, €100; C: probability 1/4, €10; D: probability 1/10, €25. Work out the cost to play this game, so that the expected value of the profit for someone playing the game would be − €0·50.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q2-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q2-b-i-solution.png",
+          "srcHash": "dee6a89cb2713ff129ba84de97e2799b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q2(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q2-b-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q2-b-ii",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q2(b)(ii)",
+    stem: "A spinner has exactly four different sectors. In a game, the spinner is spun once. The probability of landing on each sector is given in the table below. The amount of money that you get for landing on each sector is also shown. Sector A: probability 3/5, €0; B: probability 1/20, €100; C: probability 1/4, €10; D: probability 1/10, €25.",
+    questionText: "Each spin of the spinner is independent. The first time that it is spun, it lands on sector C. The spinner is spun a second time. Find the probability that it lands on sector C again, given that it landed on sector C the first time. Justify your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q2-b-ii-solution-1", kind: "point", verbatim: "Correct answer no justification", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[32],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q2-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q2-b-ii-question.png",
+          "srcHash": "5130545d01181beb0f502813ca248b8e",
+          "alt": "The question as printed on the paper — A spinner has exactly four different sectors. In a game, the spinner is spun once. The probability of landing on each sector is given in the table below. The amount of money that you get for landing on each sector is also shown. Sector A: probability 3/5, €0; B: probability 1/20, €100; C: probability 1/4, €10; D: probability 1/10, €25. Each spin of the spinner is independent. The first time that it is spun, it lands on sector C. The spinner is spun a second time. Find the probability that it lands on sector C again, given that it landed on sector C the first time. Justify your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q2-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q2-b-ii-solution.png",
+          "srcHash": "e5f92bcfadb166a9f4bc13c6e0fb88e5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q2(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q3-a-i-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q3-a-i-ii",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q3(a)(i), Q3(a)(ii)",
+    stem: "A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05.",
+    questionText: "(i) Find the value of P(A \\ B), that is, the probability that A happens but B does not happen. (ii) Find the value of P(A ∪ B).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q3-a-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q3-a-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q3-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q3-a-i-ii-question.png",
+          "srcHash": "16930b7c3ff20d9c2d6c6401a8e388fe",
+          "alt": "The question as printed on the paper — A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05. (i) Find the value of P(A \\ B), that is, the probability that A happens but B does not happen. (ii) Find the value of P(A ∪ B).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q3-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q3-a-i-ii-solution.png",
+          "srcHash": "adc7f2d0dbcb73c4c8c44ac4b5fc34ad",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q3(a)(i), Q3(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q3-b-i-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q3-b-i-ii",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q3(b)(i), Q3(b)(ii)",
+    stem: "A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05. P(C) = x, where x ∈ ℝ, 0 ≤ x ≤ 1. A and C are mutually exclusive.",
+    questionText: "(i) Write down the value of P(A ∪ C), in terms of x. Remember that P(A) = 0·3. (ii) Find the value of P(A | C), the probability that A happens given that C has happened.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q3-b-i-ii-solution-1", kind: "point", verbatim: "Accept correct answers without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q3-b-i-ii-solution-2", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q3-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q3-b-i-ii-question.png",
+          "srcHash": "e8b08549ba1e55ebfc87718e5c1feeb7",
+          "alt": "The question as printed on the paper — A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05. P(C) = x, where x ∈ ℝ, 0 ≤ x ≤ 1. A and C are mutually exclusive. (i) Write down the value of P(A ∪ C), in terms of x. Remember that P(A) = 0·3. (ii) Find the value of P(A | C), the probability that A happens given that C has happened.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q3-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q3-b-i-ii-solution.png",
+          "srcHash": "5ecb97b59e980e5c78607863901d52d3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q3(b)(i), Q3(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q3-c", topicId: "maths-1-2", conceptId: "p2-deferred-q3-c",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q3(c)",
+    stem: "A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05. P(C) = x, where x ∈ ℝ, 0 ≤ x ≤ 1.",
+    questionText: "P(B ∩ C) = 0·08 and P(B | C) = 1/3. Find the value of x = P(C).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q3-c-solution-1", kind: "point", verbatim: "Relevant work on a Venn diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[33],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q3-c-question.png",
+          "srcHash": "0bd932ff006b315e910cf07171941748",
+          "alt": "The question as printed on the paper — A, B, and C are three events. P(A) = 0·3, P(B) = 0·15, and P(A ∩ B) = 0·05. P(C) = x, where x ∈ ℝ, 0 ≤ x ≤ 1. P(B ∩ C) = 0·08 and P(B | C) = 1/3. Find the value of x = P(C).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q3-c-solution.png",
+          "srcHash": "ffd6fb0a66f5fe6bc804c415f7ec5b95",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q4-a-b", topicId: "maths-2-3", conceptId: "p2-deferred-q4-a-b",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q4(a), Q4(b)",
+    questionText: "(a) cos A = 1/√2 and sin A = −1/√2, where 0 ≤ A ≤ 2π. Find the value of A. (b) f(x) = cos x − sin x, where −2π ≤ x ≤ 2π. Find the value of f(−π/6). Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q4-a-b-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q4-a-b-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q4-a-b-solution-3", kind: "point", verbatim: "Apply a * for incorrect format", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q4-a-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q4-a-b-question.png",
+          "srcHash": "ddda47f640f6de5ea8409338d2b965be",
+          "alt": "The question as printed on the paper — (a) cos A = 1/√2 and sin A = −1/√2, where 0 ≤ A ≤ 2π. Find the value of A. (b) f(x) = cos x − sin x, where −2π ≤ x ≤ 2π. Find the value of f(−π/6). Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q4-a-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q4-a-b-solution.png",
+          "srcHash": "1c566e4c6756eb28398c4db50b86d2ea",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q4(a), Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "In part (b), the exact values are cos(−π/6) = √3/2 and sin(−π/6) = −1/2. The printed intermediate line interchanges these magnitudes. The correct expression √3/2 − (−1/2) still gives the printed final answer, 1·3660.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q4-c", topicId: "maths-2-3", conceptId: "p2-deferred-q4-c",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q4(c)",
+    questionText: "Solve the equation: 2 sin(2x) = √3, where 0 ≤ x ≤ 180°.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q4-c-solution-1", kind: "point", verbatim: "One correct value for x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q4-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q4-c-question.png",
+          "srcHash": "8a13f7db45a219611e765a13f74ff71a",
+          "alt": "The question as printed on the paper — Solve the equation: 2 sin(2x) = √3, where 0 ≤ x ≤ 180°.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q4-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q4-c-solution.png",
+          "srcHash": "2a46a8b94aa0c507f14f498150eacc65",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q4(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q4-d", topicId: "maths-2-3", conceptId: "p2-deferred-q4-d",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q4(d)",
+    questionText: "The function g(x), where x ∈ ℝ, is defined as follows: g(x) = 140 + 110 cos(3x). Part of the graph of y = g(x) is shown on the diagram below. The horizontal lines y = A and y = B are shown, where A, B ∈ ℕ. The vertical line x = C is also shown, where C ∈ ℝ. Find the value of A, the value of B, and the value of C. Write C in terms of π.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q4-d-solution-1", kind: "point", verbatim: "One value correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q4-d-solution-2", kind: "point", verbatim: "Two values correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[34],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q4-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q4-d-question.png",
+          "srcHash": "9d491836fb6576853e22c2456efb647e",
+          "alt": "The question as printed on the paper — The function g(x), where x ∈ ℝ, is defined as follows: g(x) = 140 + 110 cos(3x). Part of the graph of y = g(x) is shown on the diagram below. The horizontal lines y = A and y = B are shown, where A, B ∈ ℕ. The vertical line x = C is also shown, where C ∈ ℝ. Find the value of A, the value of B, and the value of C. Write C in terms of π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q4-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q4-d-solution.png",
+          "srcHash": "bec978f768ef7fec662083c919408224",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q4(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q5-a", topicId: "maths-2-1", conceptId: "p2-deferred-q5-a",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q5(a)",
+    questionText: "Let ABC be a triangle. Prove that, if a line l is parallel to BC and cuts [AB] in the ratio s : t, where s, t ∈ ℕ, then it also cuts [AC] in the same ratio. Use the headings: Diagram, Given, To Prove, Construction, Proof.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q5-a-solution-1", kind: "point", verbatim: "Relevant diagram drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q5-a-solution-2", kind: "point", verbatim: "Construction clearly indicated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q5-a-solution-3", kind: "point", verbatim: "Proof missing 1 relevant step", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q5-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q5-a-question.png",
+          "srcHash": "ead226414dba515e9b9e3dd14213b6f2",
+          "alt": "The question as printed on the paper — Let ABC be a triangle. Prove that, if a line l is parallel to BC and cuts [AB] in the ratio s : t, where s, t ∈ ℕ, then it also cuts [AC] in the same ratio. Use the headings: Diagram, Given, To Prove, Construction, Proof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q5-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q5-a-solution.png",
+          "srcHash": "fd04fe192707c6696234bd0f21d34249",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q5(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q5-b", topicId: "maths-2-1", conceptId: "p2-deferred-q5-b",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q5(b)",
+    questionText: "XYZ is a triangle. The points P and Q lie on [XY] and the points R and S lie on [XZ]. The lines PR, QS, and YZ are all parallel. As shown in the diagram, |XP| = 4, |PQ| = 7, and |QY| = 10. |XR| = a, |RS| = a + d, and |SZ| = a + 2d, where a and d are positive constants. a is not equal to 4. Find one possible value of a (a ≠ 4), and the corresponding value of d.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q5-b-solution-1", kind: "point", verbatim: "One variable written in terms of the other", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[35],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q5-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q5-b-question.png",
+          "srcHash": "51f31893689ade7e9ab84ea04062408f",
+          "alt": "The question as printed on the paper — XYZ is a triangle. The points P and Q lie on [XY] and the points R and S lie on [XZ]. The lines PR, QS, and YZ are all parallel. As shown in the diagram, |XP| = 4, |PQ| = 7, and |QY| = 10. |XR| = a, |RS| = a + d, and |SZ| = a + 2d, where a and d are positive constants. a is not equal to 4. Find one possible value of a (a ≠ 4), and the corresponding value of d.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q5-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q5-b-solution.png",
+          "srcHash": "4110620a4f83d400b93513860d3731ad",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q5(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q6-a-i", topicId: "maths-2-2", conceptId: "p2-deferred-q6-a-i",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q6(a)(i)",
+    stem: "The equation of the circle s is x² + y² − 4x + 2y − 20 = 0.",
+    questionText: "Write down the co-ordinates of the centre of s and the radius of s.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q6-a-i-solution-1", kind: "point", verbatim: "Work towards finding the centre or radius", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q6-a-i-solution-2", kind: "point", verbatim: "Centre or radius correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-a-i-question.png",
+          "srcHash": "95a862ff130d4cd8f7fad155d463e898",
+          "alt": "The question as printed on the paper — The equation of the circle s is x² + y² − 4x + 2y − 20 = 0. Write down the co-ordinates of the centre of s and the radius of s.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-a-i-solution.png",
+          "srcHash": "b7991ec13884ab9c9a5083437488aaad",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q6(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Read the radius calculation as √(2² + (−1)² + 20) = 5. The printed line omits parentheses around −1 before squaring; the square contributes +1.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q6-a-ii", topicId: "maths-2-2", conceptId: "p2-deferred-q6-a-ii",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q6(a)(ii)",
+    stem: "The equation of the circle s is x² + y² − 4x + 2y − 20 = 0.",
+    questionText: "The equation of the circle t is (x + 14)² + (y − 11)² = 225. Show that the circles s and t touch externally.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q6-a-ii-solution-1", kind: "point", verbatim: "Radius and/or centre of circle t found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q6-a-ii-solution-2", kind: "point", verbatim: "Some correct substitution into distance formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q6-a-ii-solution-3", kind: "point", verbatim: "Incorrect or no conclusion", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-a-ii-question.png",
+          "srcHash": "d8512bc16fd54b4a56754f6879992461",
+          "alt": "The question as printed on the paper — The equation of the circle s is x² + y² − 4x + 2y − 20 = 0. The equation of the circle t is (x + 14)² + (y − 11)² = 225. Show that the circles s and t touch externally.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-a-ii-solution.png",
+          "srcHash": "4a640aa824bb6cc0277c3e3dea8cad2c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q6(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q6-b-i", topicId: "maths-2-1", conceptId: "p2-deferred-q6-b-i",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q6(b)(i)",
+    stem: "The circle k has centre (0, 0) and radius 2 units. The point A(−2, 0) is on the circle k. ABCD is a square. The point C is on the x-axis, and BC and CD are tangents to k, as shown. h is the perpendicular distance from (0, 0) to AD.",
+    questionText: "Find the value of h. Give your answer in the form √a, where a ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q6-b-i-solution-1", kind: "point", verbatim: "Apply a * for incorrect format", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-b-i-question.png",
+          "srcHash": "a3ecf2764922133897d42f8b53445b03",
+          "alt": "The question as printed on the paper — The circle k has centre (0, 0) and radius 2 units. The point A(−2, 0) is on the circle k. ABCD is a square. The point C is on the x-axis, and BC and CD are tangents to k, as shown. h is the perpendicular distance from (0, 0) to AD. Find the value of h. Give your answer in the form √a, where a ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-b-i-solution.png",
+          "srcHash": "de328b6fbad17b90af2381bd4ee497d4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q6(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q6-b-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q6-b-ii",
+    section: "A", questionRef: "2025 HL Paper 2 — Deferred Q6(b)(ii)",
+    stem: "The circle k has centre (0, 0) and radius 2 units. The point A(−2, 0) is on the circle k. ABCD is a square. The point C is on the x-axis, and BC and CD are tangents to k, as shown. h is the perpendicular distance from (0, 0) to AD.",
+    questionText: "Find the area of the square ABCD. Give your answer in the form p + q√2 square units, where p, q ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q6-b-ii-solution-1", kind: "point", verbatim: "Length of the side of the square found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[36],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-b-ii-question.png",
+          "srcHash": "7c6d6b4564af132d2922c1a3c8c5d8e1",
+          "alt": "The question as printed on the paper — The circle k has centre (0, 0) and radius 2 units. The point A(−2, 0) is on the circle k. ABCD is a square. The point C is on the x-axis, and BC and CD are tangents to k, as shown. h is the perpendicular distance from (0, 0) to AD. Find the area of the square ABCD. Give your answer in the form p + q√2 square units, where p, q ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q6-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q6-b-ii-solution.png",
+          "srcHash": "9a759e7e41123d058956c2090b68b17b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q7-a", topicId: "maths-2-1", conceptId: "p2-deferred-q7-a",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q7(a)",
+    stem: "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+    questionText: "The first four triangles in the sequence are shown on the co-ordinate axes below. Construct the next triangle in the sequence on the diagram below. Show clearly all your construction lines. If you make any measurements, write them in an appropriate place on the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q7-a-solution-1", kind: "point", verbatim: "90° angle correct or 1 unit correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q7-a-solution-2", kind: "point", verbatim: "90° angle correct and 1 unit correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-a-question.png",
+          "srcHash": "0043b0f8280341ed55ec4506dce746d5",
+          "alt": "The question as printed on the paper — The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. The first four triangles in the sequence are shown on the co-ordinate axes below. Construct the next triangle in the sequence on the diagram below. Show clearly all your construction lines. If you make any measurements, write them in an appropriate place on the diagram.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-a-solution.png",
+          "srcHash": "64aeaab5ce89c0695a1f6f55710ba5c3",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q7(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q7-b-i", topicId: "maths-2-3", conceptId: "p2-deferred-q7-b-i",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q7(b)(i)",
+    stem: "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+    questionText: "The diagram on the right shows the first two triangles in the sequence. The angles A and B, and the point C, are marked on the diagram. Find, in degrees, the sizes of the angles A and B, and the size of the angle A + B. Give your second and third answers correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q7-b-i-solution-1", kind: "point", verbatim: "1 correct angle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q7-b-i-solution-2", kind: "point", verbatim: "2 correct angles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-b-i-question.png",
+          "srcHash": "1d13ccbbc82bfa408d1bb13dcfc08504",
+          "alt": "The question as printed on the paper — The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. The diagram on the right shows the first two triangles in the sequence. The angles A and B, and the point C, are marked on the diagram. Find, in degrees, the sizes of the angles A and B, and the size of the angle A + B. Give your second and third answers correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-b-i-solution.png",
+          "srcHash": "99deecb8b0432570991e062e1a109ec2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q7(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q7-b-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q7-b-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q7(b)(ii)",
+    stem: "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. The diagram shows the first two triangles, with angles A and B and the point C marked.",
+    questionText: "Hence, or otherwise, find the y co-ordinate of the point C, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q7-b-ii-solution-1", kind: "point", verbatim: "Finds the x co-ordinate", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-b-ii-question.png",
+          "srcHash": "e2ddcf552d4bf7acde40664c7eba1bbe",
+          "alt": "The question as printed on the paper — The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. The diagram shows the first two triangles, with angles A and B and the point C marked. Hence, or otherwise, find the y co-ordinate of the point C, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-b-ii-solution.png",
+          "srcHash": "299ad284f1fe3b3af4ca60818e20e79a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q7(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q7-c", topicId: "maths-2-1", conceptId: "p2-deferred-q7-c",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q7(c)",
+    stem: "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+    questionText: "Are any two triangles in the sequence similar? Justify your answer. Answer Yes or No.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q7-c-solution-1", kind: "point", verbatim: "Correct answer (No) given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-c-question.png",
+          "srcHash": "77903e69cc1afe8dfc62788c031c7865",
+          "alt": "The question as printed on the paper — The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. Are any two triangles in the sequence similar? Justify your answer. Answer Yes or No.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-c-solution.png",
+          "srcHash": "a526fc434c27c2816cc88f1d57379507",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q7-d", topicId: "maths-2-1", conceptId: "p2-deferred-q7-d",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q7(d)",
+    stem: "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+    questionText: "The kth triangle in the sequence has a hypotenuse of length 5√41, where k ∈ ℕ. Find the value of k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q7-d-solution-1", kind: "point", verbatim: "√1025 found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[37],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-d-question.png",
+          "srcHash": "88306c7049ebaf0420ea3d2c7b255ba0",
+          "alt": "The question as printed on the paper — The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. The kth triangle in the sequence has a hypotenuse of length 5√41, where k ∈ ℕ. Find the value of k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-d-solution.png",
+          "srcHash": "9ee4e86c13debc71f02c7eed67193871",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q7(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q7-e", topicId: "maths-2-3", conceptId: "p2-deferred-q7-e",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q7(e)",
+    stem: "The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit.",
+    questionText: "Two consecutive triangles in the sequence have hypotenuses of length √26 and √27, respectively, as shown in the diagram below. Two of the angles in the diagram are marked X and Y. Find the value of sin(X + Y), without using a calculator. Show all of your working out. Give your answer in the form (r + √t)/√u where r, t, u ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q7-e-solution-1", kind: "point", verbatim: "1 step correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q7-e-solution-2", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q7-e-solution-3", kind: "point", verbatim: "Apply a * for incorrect format", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[38],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-e-question.png",
+          "srcHash": "f7e0c89635bbe0db2594fdc8c91e3525",
+          "alt": "The question as printed on the paper — The first 16 triangles in a sequence of right-angled triangles are shown in the diagram. The first triangle in the sequence has sides of length 1, 1, and √2. The base line of any other triangle in the sequence is the hypotenuse of the previous triangle in the sequence. The perpendicular height of each triangle is always 1 unit. Two consecutive triangles in the sequence have hypotenuses of length √26 and √27, respectively, as shown in the diagram below. Two of the angles in the diagram are marked X and Y. Find the value of sin(X + Y), without using a calculator. Show all of your working out. Give your answer in the form (r + √t)/√u where r, t, u ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q7-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q7-e-solution.png",
+          "srcHash": "c40f621f2d5fb3b87698fd3fdc4b2ea1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q7(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q8-a-i", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-i",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q8(a)(i)",
+    stem: "Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x.",
+    questionText: "Use the triangle ABC to find the value of x, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q8-a-i-solution-1", kind: "point", verbatim: "Fully substituted sine rule formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-a-i-question.png",
+          "srcHash": "22250613a351f2ff80cc0d0f4a7aa4b3",
+          "alt": "The question as printed on the paper — Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x. Use the triangle ABC to find the value of x, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-a-i-solution.png",
+          "srcHash": "6ebe1b1b78a6e759158737879d893289",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q8-a-ii", topicId: "maths-2-3", conceptId: "p2-deferred-q8-a-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q8(a)(ii)",
+    stem: "Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x.",
+    questionText: "Find the value of θ, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "Fully substituted cosine rule formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-a-ii-question.png",
+          "srcHash": "28bbbe4be94f16d9e1bc5b56fdb703f8",
+          "alt": "The question as printed on the paper — Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x. Find the value of θ, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-a-ii-solution.png",
+          "srcHash": "a3ff314f04d3261437c8e7b09bb04e87",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q8-a-iii", topicId: "maths-3-4", conceptId: "p2-deferred-q8-a-iii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q8(a)(iii)",
+    stem: "Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x.",
+    questionText: "Michelle is putting topsoil on the field. The topsoil will cover the whole field, and will have a uniform height of 20 cm. Work out the volume of topsoil that Michelle will need, to cover the whole field. Give your answer correct to the nearest m³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q8-a-iii-solution-1", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q8-a-iii-solution-2", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-a-iii-question.png",
+          "srcHash": "b5320519d1678ca4cbc29b737089c06f",
+          "alt": "The question as printed on the paper — Michelle has a field in the shape of a quadrilateral ABCD. |AC| = 73 m, |AD| = 41 m, |DC| = 58 m, |∠CAB| = 36°, and |∠CBA| = 81°. |∠CDA| = θ and |BC| = x. Michelle is putting topsoil on the field. The topsoil will cover the whole field, and will have a uniform height of 20 cm. Work out the volume of topsoil that Michelle will need, to cover the whole field. Give your answer correct to the nearest m³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-a-iii-solution.png",
+          "srcHash": "730ab5a3bc42e444460f25cc66c2dc8c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q8-b-i", topicId: "maths-3-4", conceptId: "p2-deferred-q8-b-i",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q8(b)(i)",
+    stem: "A company makes footballs of different sizes. The surface of one football is made up of 20 hexagons and 12 pentagons, each with sides of length L cm, where L ∈ ℝ. In cm², the area of each hexagon is given by (3√3/2)L² and the area of each pentagon is given by (L²/4)√(5(5 + 2√5)).",
+    questionText: "Use these formulas to write the total surface area of this type of football in terms of L.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q8-b-i-solution-1", kind: "point", verbatim: "Total area of hexagons or pentagons found in terms of L", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[39],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-b-i-question.png",
+          "srcHash": "cd88939434c58f81f807899ded38f8e3",
+          "alt": "The question as printed on the paper — A company makes footballs of different sizes. The surface of one football is made up of 20 hexagons and 12 pentagons, each with sides of length L cm, where L ∈ ℝ. In cm², the area of each hexagon is given by (3√3/2)L² and the area of each pentagon is given by (L²/4)√(5(5 + 2√5)). Use these formulas to write the total surface area of this type of football in terms of L.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-b-i-solution.png",
+          "srcHash": "c5c39725d62e77e78d300656b418dabf",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q8(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q8-b-ii", topicId: "maths-3-4", conceptId: "p2-deferred-q8-b-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q8(b)(ii)",
+    stem: "A company makes footballs of different sizes. The surface of one football is made up of 20 hexagons and 12 pentagons, each with sides of length L cm, where L ∈ ℝ. In cm², the area of each hexagon is given by (3√3/2)L² and the area of each pentagon is given by (L²/4)√(5(5 + 2√5)).",
+    questionText: "When it is inflated, this football is in the shape of a sphere with a diameter of 22 cm. Use your answer to part (b)(i) to find the value of L, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q8-b-ii-solution-1", kind: "point", verbatim: "1 step correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q8-b-ii-solution-2", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-b-ii-question.png",
+          "srcHash": "eb55ec65c9d4f1d5dbad7d32a2edeccc",
+          "alt": "The question as printed on the paper — A company makes footballs of different sizes. The surface of one football is made up of 20 hexagons and 12 pentagons, each with sides of length L cm, where L ∈ ℝ. In cm², the area of each hexagon is given by (3√3/2)L² and the area of each pentagon is given by (L²/4)√(5(5 + 2√5)). When it is inflated, this football is in the shape of a sphere with a diameter of 22 cm. Use your answer to part (b)(i) to find the value of L, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-b-ii-solution.png",
+          "srcHash": "068b57e26c85ab40796a68eab321a184",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q8(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q8-c", topicId: "maths-3-4", conceptId: "p2-deferred-q8-c",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q8(c)",
+    questionText: "Some of the other footballs that the company makes are in packaging that is in the shape of a cube. These come in two sizes: small and large. The surface area of a large cube is n times that of a small cube, where n ∈ ℝ. The volume of a large cube is k times that of a small cube, where k ∈ ℝ. Use this to write k in terms of n.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q8-c-solution-1", kind: "point", verbatim: "1 step correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q8-c-solution-2", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[40],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-c-question.png",
+          "srcHash": "c845f87e71efea8659a1d1cf63a2e1d3",
+          "alt": "The question as printed on the paper — Some of the other footballs that the company makes are in packaging that is in the shape of a cube. These come in two sizes: small and large. The surface area of a large cube is n times that of a small cube, where n ∈ ℝ. The volume of a large cube is k times that of a small cube, where k ∈ ℝ. Use this to write k in terms of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q8-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q8-c-solution.png",
+          "srcHash": "ec2c820150e0b5b01a76f699a5b61957",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q8(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q9-a-i", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-i",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q9(a)(i)",
+    stem: "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall.",
+    questionText: "Complete the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q9-a-i-solution-1", kind: "point", verbatim: "1 correct new entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q9-a-i-solution-2", kind: "point", verbatim: "3 correct new entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-i-question.png",
+          "srcHash": "9f299548f78d2659589efdecb522d9ef",
+          "alt": "The question as printed on the paper — In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Complete the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-i-solution.png",
+          "srcHash": "4b87376172ba15eb86626486ff2bfccb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q9-a-ii", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q9(a)(ii)",
+    stem: "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table.",
+    questionText: "A caller is selected at random. Find the probability that this caller voted for David or is an urban voter.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q9-a-ii-solution-1", kind: "point", verbatim: "P(D) or P(A)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-ii-question.png",
+          "srcHash": "458e1b10afd2b3d65efb27ce636c3e0a",
+          "alt": "The question as printed on the paper — In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table. A caller is selected at random. Find the probability that this caller voted for David or is an urban voter.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-ii-solution.png",
+          "srcHash": "a59ddad20b5679243d1777ae0eab534d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q9(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Here the model solution uses A for the event “urban voter”. Using U avoids confusion with Alayah: P(D ∪ U) = 0·382 + 0·82 − 0·302 = 0·90.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q9-a-iii", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-iii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q9(a)(iii)",
+    stem: "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table.",
+    questionText: "A caller is selected at random from the callers who voted for Alayah. Find the probability that the caller is an urban voter. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q9-a-iii-solution-1", kind: "point", verbatim: "51.8 or 61.8", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-iii-question.png",
+          "srcHash": "9f65ef770fbb09750a6d08b6cface1fc",
+          "alt": "The question as printed on the paper — In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table. A caller is selected at random from the callers who voted for Alayah. Find the probability that the caller is an urban voter. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-iii-solution.png",
+          "srcHash": "c9d858f3f96f3dcce7410209ced5f3cd",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q9-a-iv", topicId: "maths-1-2", conceptId: "p2-deferred-q9-a-iv",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q9(a)(iv)",
+    stem: "In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table.",
+    questionText: "A caller is selected at random. Let P be the event that the caller voted for Alayah. Let Q be the event that the caller is an urban voter. Are the events P and Q independent? Use calculations to support your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q9-a-iv-solution-1", kind: "point", verbatim: "Effort at independent formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q9-a-iv-solution-2", kind: "point", verbatim: "P(P ∩ Q) = 0.518", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[41],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-iv-question.png",
+          "srcHash": "b2ca6a7abdc9e8429dc8e0152f728a13",
+          "alt": "The question as printed on the paper — In a large constituency with rural and urban voters, only two candidates, Alayah and David, stood for election. After the election, a local radio phone-in show released the table below. It was based on all of the callers who phoned in. All of these callers had voted. For example, 10% of the callers are rural voters who voted for Alayah. The table gives 18% rural voters in total, 61·8% Alayah voters in total, and 100% overall. Use the data from the table. A caller is selected at random. Let P be the event that the caller voted for Alayah. Let Q be the event that the caller is an urban voter. Are the events P and Q independent? Use calculations to support your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-a-iv-solution.png",
+          "srcHash": "b1a6c893b0fde2200cda0d000b2a0e93",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q9(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q9-b-i-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q9-b-i-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q9(b)(i), Q9(b)(ii)",
+    stem: "A group of 9 friends are planning a trip abroad to an Ireland hockey match. They buy nine match tickets. All nine tickets are in the same row and the row has exactly nine seats.",
+    questionText: "(i) How many different seating arrangements of the 9 friends are possible? (ii) Find the number of seating arrangements in which three of the friends – Máire, Jake, and Alex – are sitting together.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q9-b-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q9-b-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-b-i-ii-question.png",
+          "srcHash": "e7791e039843243c8e9833bffaacb5ce",
+          "alt": "The question as printed on the paper — A group of 9 friends are planning a trip abroad to an Ireland hockey match. They buy nine match tickets. All nine tickets are in the same row and the row has exactly nine seats. (i) How many different seating arrangements of the 9 friends are possible? (ii) Find the number of seating arrangements in which three of the friends – Máire, Jake, and Alex – are sitting together.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-b-i-ii-solution.png",
+          "srcHash": "559427395af1e5e3bf33a8e70dd512b8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q9(b)(i), Q9(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q9-c-i", topicId: "maths-1-3", conceptId: "p2-deferred-q9-c-i",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q9(c)(i)",
+    stem: "In the match, Ireland take 6 penalty corners. The probability that Ireland score from a penalty corner is roughly 0·35. Assume that the outcome of each penalty corner is independent.",
+    questionText: "Find the probability that Ireland score from none of the penalty corners in the match. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q9-c-i-solution-1", kind: "point", verbatim: "Work of merit, 0.65 written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-c-i-question.png",
+          "srcHash": "b90720f8e4603163362071d931a29f83",
+          "alt": "The question as printed on the paper — In the match, Ireland take 6 penalty corners. The probability that Ireland score from a penalty corner is roughly 0·35. Assume that the outcome of each penalty corner is independent. Find the probability that Ireland score from none of the penalty corners in the match. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-c-i-solution.png",
+          "srcHash": "1cd090f8be99a1010eeca01f3f95a32a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q9(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q9-c-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q9-c-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q9(c)(ii)",
+    stem: "In the match, Ireland take 6 penalty corners. The probability that Ireland score from a penalty corner is roughly 0·35. Assume that the outcome of each penalty corner is independent.",
+    questionText: "The probability that Ireland score at least n of their penalty corners is 12%, correct to the nearest percent. Find the value of n ∈ ℕ. Show all your working out.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q9-c-ii-solution-1", kind: "point", verbatim: "Probability of two results set up", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q9-c-ii-solution-2", kind: "point", verbatim: "Probability of three results set up", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[42],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-c-ii-question.png",
+          "srcHash": "a5837807116a49dc1ad5a36f0480bdc8",
+          "alt": "The question as printed on the paper — In the match, Ireland take 6 penalty corners. The probability that Ireland score from a penalty corner is roughly 0·35. Assume that the outcome of each penalty corner is independent. The probability that Ireland score at least n of their penalty corners is 12%, correct to the nearest percent. Find the value of n ∈ ℕ. Show all your working out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q9-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q9-c-ii-solution.png",
+          "srcHash": "0e81448107cd8a60061805132dbfca6c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q10-a-i", topicId: "maths-1-3", conceptId: "p2-deferred-q10-a-i",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q10(a)(i)",
+    stem: "Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes.",
+    questionText: "Find the percentage of drivers who completed the journey in 82 minutes or less.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q10-a-i-solution-1", kind: "point", verbatim: "Some correct substitution into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"markingNote":"The printed high-partial note says 3 correct new entries, although this question contains no table. The published numeric awards are retained; no substitute official criterion is assumed.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-a-i-question.png",
+          "srcHash": "21ce66810b51c233668e5c4fefbf989b",
+          "alt": "The question as printed on the paper — Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes. Find the percentage of drivers who completed the journey in 82 minutes or less.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-a-i-solution.png",
+          "srcHash": "891dc29bad63898a1044f27c8824a3df",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q10(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme rounds z = (82 − 78)/6 to 0·67 and uses a normal table to obtain 74·86%. Keeping the unrounded z gives approximately 74·75%. Its high-partial note “3 correct new entries” appears copied from a table question; the published awards and original notes are retained without inventing a replacement criterion.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q10-a-ii", topicId: "maths-1-3", conceptId: "p2-deferred-q10-a-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q10(a)(ii)",
+    stem: "Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes.",
+    questionText: "Exactly 50% of the drivers took between 70 minutes and k minutes to complete the journey, where k ∈ ℝ. Find the value of k, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q10-a-ii-solution-1", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"markingNote":"The printed partial-credit notes refer to two or three results, apparently carried over from another question. The original notes and numeric scale are retained without inventing replacement SEC criteria.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-a-ii-question.png",
+          "srcHash": "f626da4d536a56962bbd9b68d02cc5b1",
+          "alt": "The question as printed on the paper — Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes. Exactly 50% of the drivers took between 70 minutes and k minutes to complete the journey, where k ∈ ℝ. Find the value of k, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-a-ii-solution.png",
+          "srcHash": "cf39cc33a529b6e66882a3509f186d85",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The required cumulative probability is P(Z ≤ z) = 0·5918, giving z ≈ 0·23 and k ≈ 79·4 minutes. The printed line P(Z > x) = 0·5918 has the wrong tail for this positive z. The partial-credit notes about two or three results also appear copied from another question; the original notes and numeric awards are retained.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q10-b", topicId: "maths-1-7", conceptId: "p2-deferred-q10-b",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q10(b)",
+    stem: "Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes.",
+    questionText: "In 2023 major road works were completed on the N22 between Killarney and Cork. Afterwards, Mark decides to carry out a new survey to see if the driving times have changed. He randomly selects 500 drivers to participate in the survey. For this sample the mean driving time was 71 minutes. Mark assumes the population standard deviation is still 6 minutes. Carry out a hypothesis test at the 5% level of significance to see if there has been a change in driving times after the road improvements. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q10-b-solution-1", kind: "point", verbatim: "Work of merit in one step", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q10-b-solution-2", kind: "point", verbatim: "Two steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q10-b-solution-3", kind: "point", verbatim: "Three steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q10-b-solution-4", kind: "point", verbatim: "award Mid Partial Credit at most", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[43],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-b-question.png",
+          "srcHash": "cd6603ca42f4fefb0cc599be4049dfcd",
+          "alt": "The question as printed on the paper — Mark is analysing a large data set on driving times on the N22 from 2022. The time taken to drive from Killarney to Cork during this period was normally distributed. The mean was 78 minutes and the standard deviation was 6 minutes. In 2023 major road works were completed on the N22 between Killarney and Cork. Afterwards, Mark decides to carry out a new survey to see if the driving times have changed. He randomly selects 500 drivers to participate in the survey. For this sample the mean driving time was 71 minutes. Mark assumes the population standard deviation is still 6 minutes. Carry out a hypothesis test at the 5% level of significance to see if there has been a change in driving times after the road improvements. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-b-solution.png",
+          "srcHash": "a085f256fc726798f440f69509575793",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q10-c-i", topicId: "maths-1-1", conceptId: "p2-deferred-q10-c-i",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q10(c)(i)",
+    stem: "A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women.",
+    questionText: "Find the number of different committees which consist of 2 men and 3 women.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q10-c-i-solution-1", kind: "point", verbatim: "= 120", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-c-i-question.png",
+          "srcHash": "9692fd476b1acc08f4fe1620368e7024",
+          "alt": "The question as printed on the paper — A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women. Find the number of different committees which consist of 2 men and 3 women.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-c-i-solution.png",
+          "srcHash": "8a4c2ad86430c13d54ab376f502e0383",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q10(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q10-c-ii", topicId: "maths-1-1", conceptId: "p2-deferred-q10-c-ii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q10(c)(ii)",
+    stem: "A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women.",
+    questionText: "Find the number of different committees that have more women than men.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q10-c-ii-solution-1", kind: "point", verbatim: "One possible outcome formulated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-hl-p2-deferred-q10-c-ii-solution-2", kind: "point", verbatim: "Two possible outcomes formulated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-c-ii-question.png",
+          "srcHash": "000539fe4ba400754d88cf94c5a267b1",
+          "alt": "The question as printed on the paper — A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women. Find the number of different committees that have more women than men.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-c-ii-solution.png",
+          "srcHash": "ce8a75b15df4958095657fa14657b946",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q10(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-deferred-q10-c-iii", topicId: "maths-1-1", conceptId: "p2-deferred-q10-c-iii",
+    section: "B", questionRef: "2025 HL Paper 2 — Deferred Q10(c)(iii)",
+    stem: "A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women.",
+    questionText: "One committee is picked at random. A different committee is then picked at random. Find the probability that none of the 10 people are on both of these committees.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-deferred-q10-c-iii-solution-1", kind: "point", verbatim: "252 and stops", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[44],"generalNotesPages":[2,27,28,29,30]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-c-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-c-iii-question.png",
+          "srcHash": "6ed0885c40260dc3cfaf2e6663912dcc",
+          "alt": "The question as printed on the paper — A committee of 5 people is picked from a group of 10 people, consisting of 4 men and 6 women. One committee is picked at random. A different committee is then picked at random. Find the probability that none of the 10 people are on both of these committees.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-hl-p2-deferred-q10-c-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-hl-p2-deferred-q10-c-iii-solution.png",
+          "srcHash": "d01a3e7153511e8a71263c71c86fbf5a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 HL Paper 2 — Deferred Q10(c)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

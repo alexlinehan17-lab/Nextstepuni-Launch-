@@ -1,8 +1,8 @@
 {
   "date": "2026-10-30",
-  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and three deferred editions; 13 indexed English deferred editions and Irish provenance review remain outstanding.",
-  "runtimeCards": 4593,
-  "reviewedTasks": 4593,
+  "scope": "2010\u20132026 Mathematics: 111 reviewed English main/Project editions and four deferred editions; 12 indexed English deferred editions and Irish provenance review remain outstanding.",
+  "runtimeCards": 4636,
+  "reviewedTasks": 4636,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2025higherPaper1",
+  "latestBatch": "deferred2025higherPaper2",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -3776,9 +3776,9 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2025 Ordinary deferred Paper 2",
-    "status": "Independent source sweep completed; card authoring next",
-    "remainingEnglishDeferredPapers": 15,
+    "paper": "2024 Higher deferred Paper 1",
+    "status": "2025 deferred English papers complete; next independent source sweep starting",
+    "remainingEnglishDeferredPapers": 12,
     "irishEditionReview": "outstanding"
   },
   "higher2012Paper1SourceAndMarkingSupport": {
@@ -8373,6 +8373,37 @@
     ],
     "reproduction": "New generator reproduced its committed cards and review ledger byte for byte. Updated optional-supplement renderer reproduced all 172 previous deferred images and metadata unchanged.",
     "pendingEnglishDeferredPapers": 13,
+    "wholeSubjectComplete": false
+  },
+  "deferred2025higherPaper2": {
+    "date": "2026-10-30",
+    "runtimeCardsAdded": 43,
+    "offeredMarks": 380,
+    "reviewedPaperEditions": 115,
+    "runtimeByLevel": {
+      "higher": 1653,
+      "ordinary": 1846,
+      "foundation": 1137
+    },
+    "reviewedAtlasPlacements": 1084,
+    "hostedQuestionAnswerAnchors": 10,
+    "inspectedTypesetImages": 86,
+    "targetedTests": 410,
+    "pythonAuditTests": 11,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "sourceHashesAndSelectionAudit": "passed",
+    "previousAuthoredRecordsUnchanged": 4594,
+    "browser": "Construction question, enlarged diagram, 7/10 award and original deferred scheme page 37 verified on desktop. Normal-distribution question, source clarification, enlargement and zoom verified at 390x844; viewport restored.",
+    "sourceCorrections": [
+      "Repeated question label and wrong scheme section heading reconciled to the printed paper.",
+      "Exact trigonometric values and squared-negative parentheses clarified.",
+      "Ambiguous urban-voter event notation explained.",
+      "Rounded normal-table result distinguished from direct calculation.",
+      "Normal tail-sign slip corrected in the explanatory note; copied partial-credit wording flagged without inventing official criteria."
+    ],
+    "reproduction": "Pending committed-output check.",
+    "pendingEnglishDeferredPapers": 12,
     "wholeSubjectComplete": false
   }
 }
