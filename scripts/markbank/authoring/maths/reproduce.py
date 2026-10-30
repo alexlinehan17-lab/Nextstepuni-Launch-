@@ -21,7 +21,7 @@ AUTHORED = 'scripts/markbank/authored/maths.json'
 
 
 def ledger(name):
-    year, lv, key, edition = re.fullmatch(r'review_(\d{4})_(hl|ol|fl)_(p\d)(?:_(project))?', name).groups()
+    year, lv, key, edition = re.fullmatch(r'review_(\d{4})_(hl|ol|fl)_(p\d)(?:_(project|deferred))?', name).groups()
     key += f'-{edition}' if edition else ''
     return f'scripts/markbank/mathematics/reviews/{year}-{LEVEL[lv]}-{key}.json'
 

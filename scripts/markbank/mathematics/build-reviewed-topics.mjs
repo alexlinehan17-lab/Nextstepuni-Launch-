@@ -29,6 +29,7 @@ for (const paper of mathematicsReviews()) {
       { higher: 'h', ordinary: 'o', foundation: 'f' }[paper.level],
       paper.lang === 'ev' ? 'e' : 'i', paper.year, paper.paperKey,
       paper.paperFileid, number, indexes,
+      ...(paper.sitting && paper.sitting !== 'main' ? [paper.sitting] : []),
     ]);
   }
 }

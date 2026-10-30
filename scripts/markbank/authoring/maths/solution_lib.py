@@ -12,9 +12,10 @@ compared with the committed one, and the review ledger is rewritten from the
 declaration -- so reproduce.py can prove the committed output byte for byte.
 """
 from pathlib import Path
-import hashlib, json, re, sys
+import hashlib, json, os, re, sys
 sys.path.insert(0, 'scripts/markbank/mathematics')
 from audit import selection_candidates
+from sources import source_path
 
 SCALES = {}
 
@@ -24,7 +25,7 @@ def scale_marks(code, table):
 class Paper:
     def __init__(self, *, year, level, paper_key, paper_file, scheme_file, prefix, ref, scales,
                  reviewed_at, general_notes, scheme_pages, printed_marks, review_method, source_notes,
-                 out_name, atlas_prefix, section_of):
+                 out_name, atlas_prefix, section_of, sitting='main'):
         self.__dict__.update(locals()); del self.__dict__['self']
         self.cards = []
 
@@ -43,8 +44,8 @@ class Paper:
         self.cards.append(card)
 
     def write(self, selection_review, classify, finite_choices=None):
-        P = Path(f'paper-trail-corpus/exampapers/{self.year}/{self.paper_file}')
-        S = Path(f'paper-trail-corpus/markingschemes/{self.year}/{self.scheme_file}')
+        P = source_path(self.year, self.paper_file, 'paper', self.sitting)
+        S = source_path(self.year, self.scheme_file, 'scheme', self.sitting)
         import fitz
         n_pages = len(fitz.open(P))
         totals = {}
@@ -61,13 +62,15 @@ class Paper:
         assert len(parts) == len(set(parts)), 'repeated printed part'
         review = dict(
             schemaVersion=1, subjectId='mathematics', year=self.year, level=self.level, lang='ev',
-            paperKey=self.paper_key, paperFileid=P.name, schemeFileid=S.name, specificationId='mathematics:2015',
+            paperKey=self.paper_key, paperFileid=self.paper_file, schemeFileid=self.scheme_file, specificationId='mathematics:2015',
             paperSha256=hashlib.sha256(P.read_bytes()).hexdigest(), schemeSha256=hashlib.sha256(S.read_bytes()).hexdigest(),
             reviewedAt=self.reviewed_at, reviewMethod=self.review_method,
             paperPagesInspected=list(range(1, n_pages + 1)), schemePagesInspected=self.scheme_pages,
             printedQuestionMarks=self.printed_marks, fullCreditMinusOne=True, generalNotesPages=self.general_notes,
             sourceNotes=self.source_notes, cards=self.cards, selectionReview=selection_review,
         )
+        if self.sitting != 'main':
+            review['sitting'] = self.sitting
         if finite_choices:
             review['finiteChoices'] = finite_choices
         decisions = {}
@@ -102,10 +105,15 @@ class Paper:
                       for i, a in enumerate(c['solutionQuotes'])],
                 notes=f'Independently visually checked against the {self.year} {level_word} Paper {self.paper_key[1:]} and its scheme on {self.reviewed_at}.',
             )
+            for field in ('figureKey', 'questionFigureKey'):
+                if c.get(field):
+                    card[field] = c[field]
             if rerun:
                 if existing[c['id']] != card:
                     diff = sorted(k for k in set(card) | set(existing[c['id']]) if card.get(k) != existing[c['id']].get(k))
-                    raise SystemExit(f"{c['id']}: committed card differs from the rebuilt one in {diff}")
+                    if not os.environ.get('MATHS_REVIEW_UPDATE'):
+                        raise SystemExit(f"{c['id']}: committed card differs from the rebuilt one in {diff}")
+                    authored[authored.index(existing[c['id']])] = card
             else:
                 authored.append(card)
         authored_path.write_text(json.dumps(authored, ensure_ascii=False, indent=1) + '\n')

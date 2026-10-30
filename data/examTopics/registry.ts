@@ -548,7 +548,7 @@ interface BrowserQuestionRuntime {
   schemaVersion: 1;
   subjectId: string;
   topicIds: string[];
-  /** [level, language, year, paper slot, exact SEC booklet, card number, topic indexes] */
+  /** [level, language, year, paper slot, exact SEC booklet, card number, topic indexes, optional sitting] */
   questionMappings: Array<[
     'h' | 'o' | 'f',
     'e' | 'i',
@@ -557,6 +557,7 @@ interface BrowserQuestionRuntime {
     string,
     string,
     number[],
+    ExamSitting?,
   ]>;
 }
 
@@ -3559,6 +3560,7 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
     fileid,
     n,
     topicIndexes,
+    sitting = 'main',
   ] of runtime.questionMappings) {
     const topicIds = topicIndexes.map(topicIndex => {
       const topicId = runtime.topicIds[topicIndex];
@@ -3577,7 +3579,7 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
         runtime.subjectId,
         browserAuditLevel(levelCode),
         year,
-        'main',
+        sitting,
         fileid,
         n,
         paperKey,

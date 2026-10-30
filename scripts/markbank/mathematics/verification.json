@@ -1,8 +1,8 @@
 {
   "date": "2026-10-30",
-  "scope": "2010–2026 Mathematics: 111 reviewed English main/Project editions; 16 indexed English deferred editions and Irish provenance review still outstanding.",
-  "runtimeCards": 4467,
-  "reviewedTasks": 4467,
+  "scope": "2010–2026 Mathematics: 111 reviewed English main/Project editions and one deferred edition; 15 indexed English deferred editions and Irish provenance review remain outstanding.",
+  "runtimeCards": 4508,
+  "reviewedTasks": 4508,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "launchIntegration",
+  "latestBatch": "deferred2025ordinaryPaper1",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -3776,11 +3776,10 @@
     "generatorReproduction": "60/60 authoring scripts reproduce committed deck and ledger bytes"
   },
   "currentWork": {
-    "paper": "2010 Ordinary legacy Paper 2",
-    "status": "Next independent source review",
-    "paperFileid": "LC003GLP200EV.pdf",
-    "schemeFileid": "LC003GLP000EV.pdf",
-    "remainingEnglishPapers": 5
+    "paper": "2025 Ordinary deferred Paper 2",
+    "status": "Independent source sweep completed; card authoring next",
+    "remainingEnglishDeferredPapers": 15,
+    "irishEditionReview": "outstanding"
   },
   "higher2012Paper1SourceAndMarkingSupport": {
     "status": "Completed by higher2012Paper1; retained here as historical infrastructure evidence.",
@@ -8266,7 +8265,7 @@
     "parserTests": 31,
     "cardAndAssetChanges": 0,
     "evidence": "scripts/markbank/mathematics/reconciliation-review.json",
-    "next": "Reconcile choice groups with current launch AGENTS.md and selectively integrate; separate Irish edition review remains outstanding."
+    "next": "Main/Project choice reconciliation and local launch integration completed. Deferred sittings and Irish edition provenance remain in progress."
   },
   "launchIntegration": {
     "date": "2026-10-30",
@@ -8288,8 +8287,30 @@
     "productionBuild": "passed",
     "browserOriginalSchemeRendered": true,
     "browserSetupNote": "Isolated dev setup explicitly allows the shared dependency directory; original SEC PDF is reachable.",
-    "reproduction": "pending final integration commit",
+    "reproduction": "All 93 main/Project generators passed individually; 2024 OL Paper 1 was rerun after its generator page links were corrected.",
     "pendingEnglishDeferredPapers": 16,
+    "wholeSubjectComplete": false
+  },
+  "deferred2025ordinaryPaper1": {
+    "date": "2026-10-30",
+    "runtimeCardsAdded": 41,
+    "offeredMarks": 380,
+    "reviewedPaperEditions": 112,
+    "runtimeByLevel": {
+      "higher": 1570,
+      "ordinary": 1801,
+      "foundation": 1137
+    },
+    "reviewedAtlasPlacements": 1054,
+    "hostedQuestionAnswerAnchors": 10,
+    "inspectedTypesetImages": 82,
+    "targetedTests": 401,
+    "pythonAuditTests": 8,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "sourceHashesAndSelectionAudit": "passed",
+    "browser": "Desktop question and worked solution, exact task-specific scale, original scheme page 8 and phone-width layout verified.",
+    "reproduction": "pending committed-byte check",
     "wholeSubjectComplete": false
   }
 }

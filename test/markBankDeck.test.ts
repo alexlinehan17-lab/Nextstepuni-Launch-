@@ -196,7 +196,7 @@ const comparable = (text: string) => comparableScheme(text);
 
 const schemeFor = (card: { year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${({higher:'hl',ordinary:'ol',foundation:'fl',common:'cl'} as Record<string,string>)[card.level]}${card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project' : ''}.md`);
+    `${card.year}-${({higher:'hl',ordinary:'ol',foundation:'fl',common:'cl'} as Record<string,string>)[card.level]}${card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project' : card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('-deferred') ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
 const schemeText = (card: { year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) => {
@@ -521,7 +521,7 @@ describe('every card points at the question paper it came from', () => {
       // papers under separate SEC subject codes; the citation names which,
       // and the corpus key follows it. Same helper the build uses.
       const entry = paperEntry(
-        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level);
+        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level, card.paperFileid);
       if (!entry) { bad.push(`${card.questionRef}: no ${card.subjectId} paper for ${card.year} ${card.level}`); continue; }
       const strip = (f?: string) => f?.replace(/\.pdf$/, '');
       const papers = entry.papers.map((p: { doc?: { f?: string } }) => strip(p.doc?.f));

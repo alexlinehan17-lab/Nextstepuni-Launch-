@@ -14,6 +14,7 @@ from collections import Counter
 from pathlib import Path
 
 import fitz
+from sources import review_source
 
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
@@ -65,7 +66,7 @@ def logical_tasks(review):
             pool, choose = choice['pool'], choice['choose']
             if len(pool) != len(set(pool)) or not 0 < choose <= len(pool):
                 raise ValueError(f"{card['id']}: invalid printed choice")
-            path = ROOT / 'paper-trail-corpus/exampapers' / str(review['year']) / review['paperFileid']
+            path = review_source(review, 'paper')
             with fitz.open(path) as pdf:
                 text = ' '.join(pdf[choice['sourcePage'] - 1].get_text().split())
             if choice['sourceDirective'] not in text:
@@ -96,7 +97,7 @@ def logical_tasks(review):
             actual.append(tuple(variant['selected']))
         if len(actual) != len(set(actual)) or set(actual) != expected:
             raise ValueError(f'{group}: missing, duplicate or invalid finite route')
-        path = ROOT / 'paper-trail-corpus/exampapers' / str(review['year']) / review['paperFileid']
+        path = review_source(review, 'paper')
         with fitz.open(path) as pdf:
             text = ' '.join(pdf[spec['sourcePage'] - 1].get_text().split())
         if spec['sourceDirective'] not in text:
@@ -112,8 +113,8 @@ def validate_review_sources(reviews=None):
     errors = []
     for review in reviews:
         identity = f"{review['year']}/{review['paperFileid']}"
-        paper = ROOT / 'paper-trail-corpus/exampapers' / str(review['year']) / review['paperFileid']
-        scheme = ROOT / 'paper-trail-corpus/markingschemes' / str(review['year']) / review['schemeFileid']
+        paper = review_source(review, 'paper')
+        scheme = review_source(review, 'scheme')
         if not paper.is_file() or not scheme.is_file():
             errors.append(f'{identity}: missing reviewed primary source')
             continue

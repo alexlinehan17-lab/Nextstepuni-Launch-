@@ -25,6 +25,7 @@ export function reviewedMathematicsSource(cardId) {
     paperFileid: paper.paperFileid,
     schemeFileid: paper.schemeFileid,
     lang: paper.lang,
+    sitting: paper.sitting ?? 'main',
   };
 }
 

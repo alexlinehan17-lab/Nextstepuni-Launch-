@@ -75434,4 +75434,1788 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q1-a", topicId: "maths-4-2", conceptId: "p1-deferred-q1-a",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q1(a)",
+    questionText: "Solve the following equation, where x ∈ ℝ: 4(x − 2) + 10 = 3x",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q1-a-solution-1", kind: "point", verbatim: "Carries out some relevant correct operation e.g. writes 4x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q1-a-question.png",
+          "srcHash": "97b79211b2ce91a9dbe8ffe347b93f0d",
+          "alt": "The question as printed on the paper — Solve the following equation, where x ∈ ℝ: 4(x − 2) + 10 = 3x",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q1-a-solution.png",
+          "srcHash": "78c9230b4abb52e8c308d92471bfa223",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q1-b", topicId: "maths-4-2", conceptId: "p1-deferred-q1-b",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q1(b)",
+    questionText: "Solve the following equation in x: 2x² − 4x − 13 = 0. Give each answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q1-b-solution-1", kind: "point", verbatim: "Quadratic formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q1-b-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q1-b-question.png",
+          "srcHash": "fed928abc5d08107f119edb53fa5c7a6",
+          "alt": "The question as printed on the paper — Solve the following equation in x: 2x² − 4x − 13 = 0. Give each answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q1-b-solution.png",
+          "srcHash": "a569cb864f0d8655d2da6555a741bb34",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q1-c", topicId: "maths-4-1", conceptId: "p1-deferred-q1-c",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q1(c)",
+    questionText: "Express as a single fraction in its simplest form: (3x − 1)/2 − (2x + 2)/5",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q1-c-solution-1", kind: "point", verbatim: "One step correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q1-c-solution-2", kind: "point", verbatim: "Two steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q1-c-solution-3", kind: "point", verbatim: "Three steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"markingNote":"The task-specific scheme row awards 7 marks for high partial credit. This differs from the general 10D table, which lists 8.","fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q1-c-question.png",
+          "srcHash": "e521722ac73fd2612645928663158890",
+          "alt": "The question as printed on the paper — Express as a single fraction in its simplest form: (3x − 1)/2 − (2x + 2)/5",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q1-c-solution.png",
+          "srcHash": "2d246eff661f06c86919bc1d1257dd2b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q1(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q2-a-i-ii", topicId: "maths-3-1", conceptId: "p1-deferred-q2-a-i-ii",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q2(a)(i), Q2(a)(ii)",
+    stem: "In this question, i² = −1. z₁ = 4 + 3i and z₂ = 2 − i are complex numbers.",
+    questionText: "(i) Plot and label the two complex numbers z₁ and z₂ on the Argand diagram below. (ii) The complex number w is shown on the Argand diagram. Write w in the form p + qi, where p, q ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q2-a-i-ii-solution-1", kind: "point", verbatim: "One item correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q2-a-i-ii-solution-2", kind: "point", verbatim: "Work of merit in two items", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q2-a-i-ii-solution-3", kind: "point", verbatim: "Two items correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q2-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q2-a-i-ii-question.png",
+          "srcHash": "fa8c5efc926b78f606c142b0dadfb97f",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z₁ = 4 + 3i and z₂ = 2 − i are complex numbers. (i) Plot and label the two complex numbers z₁ and z₂ on the Argand diagram below. (ii) The complex number w is shown on the Argand diagram. Write w in the form p + qi, where p, q ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q2-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q2-a-i-ii-solution.png",
+          "srcHash": "5390a7d3870e12c8ecf5cb0a84d3f519",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q2(a)(i), Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q2-b", topicId: "maths-3-1", conceptId: "p1-deferred-q2-b",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q2(b)",
+    stem: "In this question, i² = −1. z₁ = 4 + 3i and z₂ = 2 − i are complex numbers.",
+    questionText: "z₃ = z₁ − 3z₂. Write z₃ in the form a + bi, where a, b ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q2-b-solution-1", kind: "point", verbatim: "Some correct expansion of −3(2 − i)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q2-b-question.png",
+          "srcHash": "f0f278d891d9ae73785338a1a87ae8ea",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z₁ = 4 + 3i and z₂ = 2 − i are complex numbers. z₃ = z₁ − 3z₂. Write z₃ in the form a + bi, where a, b ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q2-b-solution.png",
+          "srcHash": "342079324b52cdd19cf409b7fc689fe7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q2-c", topicId: "maths-3-1", conceptId: "p1-deferred-q2-c",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q2(c)",
+    stem: "In this question, i² = −1. z₁ = 4 + 3i and z₂ = 2 − i are complex numbers.",
+    questionText: "z₄ = z₁/z₂. Write z₄ in the form c + di, where c, d ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q2-c-solution-1", kind: "point", verbatim: "Some relevant correct multiplication", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q2-c-solution-2", kind: "point", verbatim: "Correct substitution AND correct conjugate written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q2-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q2-c-question.png",
+          "srcHash": "f732e55e9c35d103c1a5519ea9691bed",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z₁ = 4 + 3i and z₂ = 2 − i are complex numbers. z₄ = z₁/z₂. Write z₄ in the form c + di, where c, d ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q2-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q2-c-solution.png",
+          "srcHash": "ecd636555372980b25e94c3fc5c7d632",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q2(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q3-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q3-a-i",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q3(a)(i)",
+    stem: "f(x) = x² − x − 2, where x ∈ ℝ.",
+    questionText: "Find f(5) and f(−3).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q3-a-i-solution-1", kind: "point", verbatim: "Some correct substitution into function", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q3-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q3-a-i-question.png",
+          "srcHash": "8810643fe3f550f7c2a5afdf13264554",
+          "alt": "The question as printed on the paper — f(x) = x² − x − 2, where x ∈ ℝ. Find f(5) and f(−3).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q3-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q3-a-i-solution.png",
+          "srcHash": "c6588b19e3374b034eb3f16f2cf8c29e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q3(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q3-a-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q3-a-ii",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q3(a)(ii)",
+    stem: "f(x) = x² − x − 2, where x ∈ ℝ.",
+    questionText: "Find the co-ordinates of the points where f(x) crosses the x-axis. (That is, where f(x) = 0.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q3-a-ii-solution-1", kind: "point", verbatim: "Some attempt at factorising or quadratic formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q3-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q3-a-ii-question.png",
+          "srcHash": "cac8f6b4ca380ed1e025bd022f50732a",
+          "alt": "The question as printed on the paper — f(x) = x² − x − 2, where x ∈ ℝ. Find the co-ordinates of the points where f(x) crosses the x-axis. (That is, where f(x) = 0.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q3-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q3-a-ii-solution.png",
+          "srcHash": "5a35dd3272d2957607bbbf6a25ee74da",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q3(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q3-b-i-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q3-b-i-ii",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q3(b)(i), Q3(b)(ii)",
+    stem: "Part of the graph of the function g(x) is shown in the diagram below.",
+    questionText: "(i) Write down two values of x for which g′(x) = 0, where g′(x) is the derivative of g(x). (ii) Is g′(11) positive or negative? Give a reason for your answer. You may include work on the diagram. Tick one box only: Positive or Negative.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q3-b-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q3-b-i-ii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q3-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q3-b-i-ii-question.png",
+          "srcHash": "1cda824e2a7980edd2c748e61c74db73",
+          "alt": "The question as printed on the paper — Part of the graph of the function g(x) is shown in the diagram below. (i) Write down two values of x for which g′(x) = 0, where g′(x) is the derivative of g(x). (ii) Is g′(11) positive or negative? Give a reason for your answer. You may include work on the diagram. Tick one box only: Positive or Negative.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q3-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q3-b-i-ii-solution.png",
+          "srcHash": "74e25cfda6ffff6c72734b0fb05dc53c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q3(b)(i), Q3(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q4-a", topicId: "maths-5-2", conceptId: "p1-deferred-q4-a",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q4(a)",
+    stem: "f(x) = x³ + 2x² − 5.",
+    questionText: "Find f′(x), where f′(x) is the derivative of f(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q4-a-solution-1", kind: "point", verbatim: "Some correct differentiation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-a-question.png",
+          "srcHash": "1ee4aa282312da3877b62dc1a2d750f3",
+          "alt": "The question as printed on the paper — f(x) = x³ + 2x² − 5. Find f′(x), where f′(x) is the derivative of f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-a-solution.png",
+          "srcHash": "fcc6ec973c243a7665457ea845295028",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q4-b", topicId: "maths-5-2", conceptId: "p1-deferred-q4-b",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q4(b)",
+    stem: "f(x) = x³ + 2x² − 5.",
+    questionText: "Show that f′(1) = 7.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q4-b-solution-1", kind: "point", verbatim: "Fully correct substitution.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-b-question.png",
+          "srcHash": "807430ac066271dbd5971fe792260d99",
+          "alt": "The question as printed on the paper — f(x) = x³ + 2x² − 5. Show that f′(1) = 7.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-b-solution.png",
+          "srcHash": "59381014e0a133c7448d40d05f087c33",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q4(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q4-c", topicId: "maths-5-2", conceptId: "p1-deferred-q4-c",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q4(c)",
+    stem: "f(x) = x³ + 2x² − 5. The preceding part asks you to show that f′(1) = 7.",
+    questionText: "Hence, find the equation of the tangent to f(x) when x = 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q4-c-solution-1", kind: "point", verbatim: "Finds equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q4-c-solution-2", kind: "point", verbatim: "Two steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-c-question.png",
+          "srcHash": "6c5d887fe838bd2a25d728d8203b7855",
+          "alt": "The question as printed on the paper — f(x) = x³ + 2x² − 5. The preceding part asks you to show that f′(1) = 7. Hence, find the equation of the tangent to f(x) when x = 1.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-c-solution.png",
+          "srcHash": "7be6d69c7dc70bf437d7e45f1e413e3e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q4(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q4-d", topicId: "maths-5-1", conceptId: "p1-deferred-q4-d",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q4(d)",
+    stem: "f(x) = x³ + 2x² − 5.",
+    questionText: "g(x) = x + 11. Find g(f(x)) in terms of x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q4-d-solution-1", kind: "point", verbatim: "Work of merit, for example, attempts to", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-d-question.png",
+          "srcHash": "8644214c8d5223f12e762c75f46dbdbf",
+          "alt": "The question as printed on the paper — f(x) = x³ + 2x² − 5. g(x) = x + 11. Find g(f(x)) in terms of x.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q4-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q4-d-solution.png",
+          "srcHash": "87de890d46f2d8ff63abd8665a6e4a11",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q4(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q5-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q5-a-i",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q5(a)(i)",
+    stem: "The graph of the function f(x) in the domain −2 ≤ x ≤ 3, where x ∈ ℝ, is shown in the diagram on the right. This graph is symmetrical.",
+    questionText: "Use the points shown on the graph to complete the table below. The table gives x = −2, −1, 0, 1, 2, 3, with f(−2) = 0, f(0) = 6 and f(2) = 4.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q5-a-i-solution-1", kind: "point", verbatim: "One value correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q5-a-i-solution-2", kind: "point", verbatim: "Two values correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q5-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q5-a-i-question.png",
+          "srcHash": "8a4ad107b653eea10d21ea1dbb73d26f",
+          "alt": "The question as printed on the paper — The graph of the function f(x) in the domain −2 ≤ x ≤ 3, where x ∈ ℝ, is shown in the diagram on the right. This graph is symmetrical. Use the points shown on the graph to complete the table below. The table gives x = −2, −1, 0, 1, 2, 3, with f(−2) = 0, f(0) = 6 and f(2) = 4.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q5-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q5-a-i-solution.png",
+          "srcHash": "c3b6be4ffb3836f1923f7f76cd06cdbc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q5(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q5-a-ii", topicId: "maths-3-4", conceptId: "p1-deferred-q5-a-ii",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q5(a)(ii)",
+    stem: "The graph of the function f(x) in the domain −2 ≤ x ≤ 3, where x ∈ ℝ, is shown in the diagram on the right. This graph is symmetrical.",
+    questionText: "Use the Trapezoidal Rule to estimate the area between the graph and the x-axis. (Use the values of f(x) from your table as your heights.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q5-a-ii-solution-1", kind: "point", verbatim: "Formula fully substituted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q5-a-ii-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q5-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q5-a-ii-question.png",
+          "srcHash": "c288f089c19008c6f1e9069868f10338",
+          "alt": "The question as printed on the paper — The graph of the function f(x) in the domain −2 ≤ x ≤ 3, where x ∈ ℝ, is shown in the diagram on the right. This graph is symmetrical. Use the Trapezoidal Rule to estimate the area between the graph and the x-axis. (Use the values of f(x) from your table as your heights.)",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q5-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q5-a-ii-solution.png",
+          "srcHash": "18cdbf81daa0019041b44c3a8836fc94",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q5(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q5-b-i-ii", topicId: "maths-3-2", conceptId: "p1-deferred-q5-b-i-ii",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q5(b)(i), Q5(b)(ii)",
+    questionText: "(i) Express 16 and 32 in the form 2^k, where k ∈ ℕ. (ii) Hence, or otherwise, find the value of x for which 16^x = 32, where x ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q5-b-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q5-b-i-ii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q5-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q5-b-i-ii-question.png",
+          "srcHash": "c353b00983b658a9b6f449073750cda3",
+          "alt": "The question as printed on the paper — (i) Express 16 and 32 in the form 2^k, where k ∈ ℕ. (ii) Hence, or otherwise, find the value of x for which 16^x = 32, where x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q5-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q5-b-i-ii-solution.png",
+          "srcHash": "ae262ee8606953e4a0bd24810b1c8c43",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q5(b)(i), Q5(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q6-a", topicId: "maths-3-3", conceptId: "p1-deferred-q6-a",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q6(a)",
+    questionText: "John invested €3400 for 2 years. The interest rate was 4% for year 1 and 5% for year 2. Find the amount of the investment at the end of year 2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q6-a-solution-1", kind: "point", verbatim: "Amount at the end of year one correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q6-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q6-a-question.png",
+          "srcHash": "e4a415d323253a75517464a302dc1380",
+          "alt": "The question as printed on the paper — John invested €3400 for 2 years. The interest rate was 4% for year 1 and 5% for year 2. Find the amount of the investment at the end of year 2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q6-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q6-a-solution.png",
+          "srcHash": "2d7608c4b46fd746d578050554aa9f7a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q6(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q6-b", topicId: "maths-3-3", conceptId: "p1-deferred-q6-b",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q6(b)",
+    questionText: "John’s car was valued at €25 000 one year ago. Today it has a value of €21 250. Find the percentage decrease in the value of the car over the course of the year.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q6-b-solution-1", kind: "point", verbatim: "Work of merit, for example, finds decrease", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q6-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q6-b-question.png",
+          "srcHash": "f9c2ade300cd1d66a0ec30b22fb8be48",
+          "alt": "The question as printed on the paper — John’s car was valued at €25 000 one year ago. Today it has a value of €21 250. Find the percentage decrease in the value of the car over the course of the year.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q6-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q6-b-solution.png",
+          "srcHash": "2f77ced71bd6c116fe27a7648267efa6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q6(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q6-c", topicId: "maths-3-3", conceptId: "p1-deferred-q6-c",
+    section: "A", questionRef: "2025 OL Paper 1 — Deferred Q6(c)",
+    questionText: "Mary bought a painting 3 years ago. The value of the painting increased by 20% during each year for the last 3 years. The painting is now worth €8640. Find the value of the painting when Mary bought it.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q6-c-solution-1", kind: "point", verbatim: "Works back one year correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q6-c-solution-2", kind: "point", verbatim: "Works back two years correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q6-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q6-c-question.png",
+          "srcHash": "4b8506a7b97922f6f72573650aadd05e",
+          "alt": "The question as printed on the paper — Mary bought a painting 3 years ago. The value of the painting increased by 20% during each year for the last 3 years. The painting is now worth €8640. Find the value of the painting when Mary bought it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q6-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q6-c-solution.png",
+          "srcHash": "fdbe817bb8903bc23d538cd279d45d35",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q6(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q7-a-i", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a-i",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q7(a)(i)",
+    stem: "Anna and Ross are saving to buy a house. Anna’s gross annual salary is €50 800 and Ross’s gross annual salary is €48 500. The maximum that they can borrow is 4 times their gross combined salaries.",
+    questionText: "What is the maximum amount of money that they can borrow?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q7-a-i-solution-1", kind: "point", verbatim: "Finds 99300", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q7-a-i-solution-2", kind: "point", verbatim: "Multiplies one of the incomes by 4 and then adds on the other income", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-a-i-question.png",
+          "srcHash": "fa5103f89c4660a4b1bc8e685214ed61",
+          "alt": "The question as printed on the paper — Anna and Ross are saving to buy a house. Anna’s gross annual salary is €50 800 and Ross’s gross annual salary is €48 500. The maximum that they can borrow is 4 times their gross combined salaries. What is the maximum amount of money that they can borrow?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-a-i-solution.png",
+          "srcHash": "a8bee48912a69b6137b9546596a47a4d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q7(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q7-a-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q7(a)(ii)",
+    stem: "Anna and Ross are saving to buy a house. Anna’s gross annual salary is €50 800 and Ross’s gross annual salary is €48 500. The maximum that they can borrow is 4 times their gross combined salaries.",
+    questionText: "They are interested in buying a house that costs €395 000. In order to qualify for a mortgage they must have a deposit of at least 12·5% of the price of a house. How much of a deposit do they need to have in order to qualify for a mortgage for this house?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q7-a-ii-solution-1", kind: "point", verbatim: "Accept correct answer without work for full credit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-a-ii-question.png",
+          "srcHash": "1ce9175a1e524295468b1168e6fe543c",
+          "alt": "The question as printed on the paper — Anna and Ross are saving to buy a house. Anna’s gross annual salary is €50 800 and Ross’s gross annual salary is €48 500. The maximum that they can borrow is 4 times their gross combined salaries. They are interested in buying a house that costs €395 000. In order to qualify for a mortgage they must have a deposit of at least 12·5% of the price of a house. How much of a deposit do they need to have in order to qualify for a mortgage for this house?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-a-ii-solution.png",
+          "srcHash": "e48d2e266a073771d6b7d1799871a28e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q7(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q7-a-iii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-a-iii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q7(a)(iii)",
+    questionText: "The builder expects to make a profit of 15% when this house is sold for €395 000. Find the cost of building this house. Give your answer correct to the nearest euro.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q7-a-iii-solution-1", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-a-iii-question.png",
+          "srcHash": "0a8170a7059c47b49e9ac2cf3f5811fc",
+          "alt": "The question as printed on the paper — The builder expects to make a profit of 15% when this house is sold for €395 000. Find the cost of building this house. Give your answer correct to the nearest euro.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-a-iii-solution.png",
+          "srcHash": "a6d134c52f2328c075da8b48213135f6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q7(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q7-b", topicId: "maths-3-3", conceptId: "p1-deferred-q7-b",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q7(b)",
+    questionText: "Mary earns €55 000 per year. She pays €10 100 tax on her income. She also pays €1561·42 in U.S.C. (Universal Social Charge). Find her net income and write it as a percentage of her gross income. Give your second answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q7-b-solution-1", kind: "point", verbatim: "Subtracts one of the deductions from gross income", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q7-b-solution-2", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-b-question.png",
+          "srcHash": "593b6d6dfe95ce08bd6595e713ba21fd",
+          "alt": "The question as printed on the paper — Mary earns €55 000 per year. She pays €10 100 tax on her income. She also pays €1561·42 in U.S.C. (Universal Social Charge). Find her net income and write it as a percentage of her gross income. Give your second answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-b-solution.png",
+          "srcHash": "34685548c74baeab3f17b77155dd05da",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q7(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q7-c-i", topicId: "maths-3-3", conceptId: "p1-deferred-q7-c-i",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q7(c)(i)",
+    questionText: "John earns €49 572 per year. The table on the right shows the rates at which U.S.C. is charged. Find how much U.S.C. John pays per annum. First €12,012: 0·5%; next €10,908: 2%; next €47,124: 4%; balance: 8%.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q7-c-i-solution-1", kind: "point", verbatim: "Finds one correct amount of USC", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-c-i-question.png",
+          "srcHash": "37a493d9294ce4ca932c2ad2f97cc8ea",
+          "alt": "The question as printed on the paper — John earns €49 572 per year. The table on the right shows the rates at which U.S.C. is charged. Find how much U.S.C. John pays per annum. First €12,012: 0·5%; next €10,908: 2%; next €47,124: 4%; balance: 8%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-c-i-solution.png",
+          "srcHash": "c9dce26e440ec63ce8aaf6dde8b171f4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q7(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q7-c-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q7-c-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q7(c)(ii)",
+    questionText: "John gets a pay rise. He pays tax at 40% and U.S.C. at 4% on this extra income. His net salary increases by €1400 per year after tax and U.S.C. are deducted. Find his gross pay rise.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q7-c-ii-solution-1", kind: "point", verbatim: "Work of merit, for example, writes 44% or 56%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-c-ii-question.png",
+          "srcHash": "38b423219df6048caf9fd0de93cea9fc",
+          "alt": "The question as printed on the paper — John gets a pay rise. He pays tax at 40% and U.S.C. at 4% on this extra income. His net salary increases by €1400 per year after tax and U.S.C. are deducted. Find his gross pay rise.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q7-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q7-c-ii-solution.png",
+          "srcHash": "f33998a7173a88744d43e3e92eab2055",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q7(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q8-a-i", topicId: "maths-4-1", conceptId: "p1-deferred-q8-a-i",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q8(a)(i)",
+    stem: "The diagram below shows the first three patterns of a sequence of patterns of dots and lines.",
+    questionText: "Draw pattern 4 of the sequence in the box below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q8-a-i-solution-1", kind: "point", verbatim: "16 items: 4 lines and 12 dots", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q8-a-i-solution-2", kind: "point", verbatim: "Any one item drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q8-a-i-solution-3", kind: "point", verbatim: "8 items correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-i-question.png",
+          "srcHash": "a8999f9423f522c485edc4199a541af1",
+          "alt": "The question as printed on the paper — The diagram below shows the first three patterns of a sequence of patterns of dots and lines. Draw pattern 4 of the sequence in the box below.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-i-solution.png",
+          "srcHash": "4aab1285e33cc71f42c81f66a121c0dc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q8(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q8-a-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q8-a-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q8(a)(ii)",
+    stem: "The diagram below shows the first three patterns of a sequence of patterns of dots and lines.",
+    questionText: "Complete the table below showing the number of dots in each pattern. Pattern: 1, 2, 3, 4, 5. Number of dots: 1, 5, with the remaining entries left to complete.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q8-a-ii-solution-1", kind: "point", verbatim: "1 correct entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q8-a-ii-solution-2", kind: "point", verbatim: "2 correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-ii-question.png",
+          "srcHash": "1a9aab5934092957f870ba720965f370",
+          "alt": "The question as printed on the paper — The diagram below shows the first three patterns of a sequence of patterns of dots and lines. Complete the table below showing the number of dots in each pattern. Pattern: 1, 2, 3, 4, 5. Number of dots: 1, 5, with the remaining entries left to complete.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-ii-solution.png",
+          "srcHash": "0fd1980adbaacdf216805f14f8206308",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q8(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q8-a-iii", topicId: "maths-4-1", conceptId: "p1-deferred-q8-a-iii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q8(a)(iii)",
+    stem: "The diagram below shows the first three patterns of a sequence of patterns of dots and lines.",
+    questionText: "Tₙ is the number of dots in pattern n of the sequence, where n ∈ ℕ. Tₙ is given by: Tₙ = 2n² + bn + c, where b, c ∈ ℤ are constants. T₁ = 1 and T₂ = 5. Show that this means that: b + c = −1; 2b + c = −3.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q8-a-iii-solution-1", kind: "point", verbatim: "Any one correct equation found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-iii-question.png",
+          "srcHash": "e1653a3783a394ea54324ae7c381d37e",
+          "alt": "The question as printed on the paper — The diagram below shows the first three patterns of a sequence of patterns of dots and lines. Tₙ is the number of dots in pattern n of the sequence, where n ∈ ℕ. Tₙ is given by: Tₙ = 2n² + bn + c, where b, c ∈ ℤ are constants. T₁ = 1 and T₂ = 5. Show that this means that: b + c = −1; 2b + c = −3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-iii-solution.png",
+          "srcHash": "ee554ab5de2906a956377e9707d03994",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q8(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q8-a-iv", topicId: "maths-4-2", conceptId: "p1-deferred-q8-a-iv",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q8(a)(iv)",
+    questionText: "Solve these simultaneous equations to find the value of b and the value of c: b + c = −1; 2b + c = −3.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q8-a-iv-solution-1", kind: "point", verbatim: "Some work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q8-a-iv-solution-2", kind: "point", verbatim: "Either b or c found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-iv-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-iv-question.png",
+          "srcHash": "20727110edf40dd00a194d046c931406",
+          "alt": "The question as printed on the paper — Solve these simultaneous equations to find the value of b and the value of c: b + c = −1; 2b + c = −3.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-a-iv-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-a-iv-solution.png",
+          "srcHash": "90334d0d9d61d28bd8ec33df10ae0864",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q8(a)(iv).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q8-b", topicId: "maths-4-1", conceptId: "p1-deferred-q8-b",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q8(b)",
+    questionText: "The total distance Dan has driven, in km, is shown on the dashboard of his car. The table below shows the readings on the dashboard at the start of each week for 4 weeks, where p, q ∈ ℕ. Dashboard reading (km): Week 1, 100 000; Week 2, p; Week 3, q; Week 4, 104 500. Dan drives the same total distance each week. Hence, find the value of p and the value of q.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q8-b-solution-1", kind: "point", verbatim: "Accept correct answers without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-b-question.png",
+          "srcHash": "a948ae27dfbc6f0fa404dbeb9f17d672",
+          "alt": "The question as printed on the paper — The total distance Dan has driven, in km, is shown on the dashboard of his car. The table below shows the readings on the dashboard at the start of each week for 4 weeks, where p, q ∈ ℕ. Dashboard reading (km): Week 1, 100 000; Week 2, p; Week 3, q; Week 4, 104 500. Dan drives the same total distance each week. Hence, find the value of p and the value of q.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-b-solution.png",
+          "srcHash": "c7d0aefd6419d51a32c134b6b9aa0cf4",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q8-c-i", topicId: "maths-4-1", conceptId: "p1-deferred-q8-c-i",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q8(c)(i)",
+    stem: "The sequence of colours and timings of a set of traffic lights is shown in the table below. This sequence repeats as the lights change during the day. Green: 13 seconds; Amber: 2 seconds; Red: 20 seconds.",
+    questionText: "Dan is walking along the road and notices that the lights change from amber to red. He continues to look at the lights. How long will it be, from the time the light first changes to red, until Dan sees it change to amber for the third time? Give your answer in seconds.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q8-c-i-solution-1", kind: "point", verbatim: "Total time is 103 seconds", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-c-i-question.png",
+          "srcHash": "71f58a4019ff8cc0f95616b03e02a8bd",
+          "alt": "The question as printed on the paper — The sequence of colours and timings of a set of traffic lights is shown in the table below. This sequence repeats as the lights change during the day. Green: 13 seconds; Amber: 2 seconds; Red: 20 seconds. Dan is walking along the road and notices that the lights change from amber to red. He continues to look at the lights. How long will it be, from the time the light first changes to red, until Dan sees it change to amber for the third time? Give your answer in seconds.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-c-i-solution.png",
+          "srcHash": "6f12762ce43b6850ec0e55d8dc48103d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q8(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q8-c-ii", topicId: "maths-4-1", conceptId: "p1-deferred-q8-c-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q8(c)(ii)",
+    stem: "The sequence of colours and timings of a set of traffic lights is shown in the table below. This sequence repeats as the lights change during the day. Green: 13 seconds; Amber: 2 seconds; Red: 20 seconds.",
+    questionText: "What colour will the lights be exactly 25 minutes from the time Dan notices the first change from amber to red? Show any calculations you make to arrive at your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q8-c-ii-solution-1", kind: "point", verbatim: "Finds 25 minutes in seconds", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q8-c-ii-solution-2", kind: "point", verbatim: "The light will be Green!", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-c-ii-question.png",
+          "srcHash": "148560a5837bb15721abd9845beacecb",
+          "alt": "The question as printed on the paper — The sequence of colours and timings of a set of traffic lights is shown in the table below. This sequence repeats as the lights change during the day. Green: 13 seconds; Amber: 2 seconds; Red: 20 seconds. What colour will the lights be exactly 25 minutes from the time Dan notices the first change from amber to red? Show any calculations you make to arrive at your answer.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q8-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q8-c-ii-solution.png",
+          "srcHash": "1d8841f7f31cd583bfe18fa99e1eff8e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q8(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q9-a-i", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-i",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q9(a)(i)",
+    stem: "Paul O’Donovan and Fintan McCarthy are Irish rowers. They won a gold medal in the 2020 Olympic Games. The course they raced on was 2000 m in length. The following table shows their time since the start of the race as they pass various markers at set distances along the course. Their time is in seconds and the distances are measured in metres. Distance (m): 0, 500, 1000, 1500, 2000. Time (s): 0, 78·6, 182·4, 261·6, 366·43.",
+    questionText: "Draw a graph of their progress in the race on the grid below. You may assume that their rate of rowing was constant in between the markers.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q9-a-i-solution-1", kind: "point", verbatim: "Note: Solution requires 6 items, 5 points plotted and joined", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q9-a-i-solution-2", kind: "point", verbatim: "Apply a * if 5 items correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-a-i-question.png",
+          "srcHash": "6e507683a7dcf16a94147095ed9baf67",
+          "alt": "The question as printed on the paper — Paul O’Donovan and Fintan McCarthy are Irish rowers. They won a gold medal in the 2020 Olympic Games. The course they raced on was 2000 m in length. The following table shows their time since the start of the race as they pass various markers at set distances along the course. Their time is in seconds and the distances are measured in metres. Distance (m): 0, 500, 1000, 1500, 2000. Time (s): 0, 78·6, 182·4, 261·6, 366·43. Draw a graph of their progress in the race on the grid below. You may assume that their rate of rowing was constant in between the markers.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-a-i-solution.png",
+          "srcHash": "2cb60e8495826f0280c8234a8c10a328",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q9(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q9-a-ii-iii", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a-ii-iii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q9(a)(ii), Q9(a)(iii)",
+    stem: "Paul O’Donovan and Fintan McCarthy are Irish rowers. They won a gold medal in the 2020 Olympic Games. The course they raced on was 2000 m in length. The following table shows their time since the start of the race as they pass various markers at set distances along the course. Their time is in seconds and the distances are measured in metres. Distance (m): 0, 500, 1000, 1500, 2000. Time (s): 0, 78·6, 182·4, 261·6, 366·43.",
+    questionText: "Use your graph to answer part (a)(ii) and part (a)(iii). Show your work clearly on the graph. (ii) Estimate how much time had passed when they had travelled 750 m from the start. (iii) How far did they travel during minute 5 of the race (between 240 and 300 seconds)?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q9-a-ii-iii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q9-a-ii-iii-solution-2", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q9-a-ii-iii-solution-3", kind: "point", verbatim: "Apply a * for no or incorrect units", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-a-ii-iii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-a-ii-iii-question.png",
+          "srcHash": "cc3549931ffe5305339ab73f1bc3301c",
+          "alt": "The question as printed on the paper — Paul O’Donovan and Fintan McCarthy are Irish rowers. They won a gold medal in the 2020 Olympic Games. The course they raced on was 2000 m in length. The following table shows their time since the start of the race as they pass various markers at set distances along the course. Their time is in seconds and the distances are measured in metres. Distance (m): 0, 500, 1000, 1500, 2000. Time (s): 0, 78·6, 182·4, 261·6, 366·43. Use your graph to answer part (a)(ii) and part (a)(iii). Show your work clearly on the graph. (ii) Estimate how much time had passed when they had travelled 750 m from the start. (iii) How far did they travel during minute 5 of the race (between 240 and 300 seconds)?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-a-ii-iii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-a-ii-iii-solution.png",
+          "srcHash": "b6cea791ef3ba973641d25ddf050f536",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q9(a)(ii), Q9(a)(iii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q9-b-i-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q9-b-i-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q9(b)(i), Q9(b)(ii)",
+    stem: "The course they raced on was 2000 m in length.",
+    questionText: "(i) Paul and Fintan finished the race in a time of 366·43 seconds. Find their average speed. Give your answer, in metres per second (m/s), correct to 2 decimal places. (ii) Paul and Fintan also won gold at the 2022 world championships over the same distance (2000 m). In that race, they rowed at an average speed of 5·31 m/s. How long did it take them to finish that race? Give your answer in minutes and seconds, correct to the nearest second.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q9-b-i-ii-solution-1", kind: "point", verbatim: "Distance Speed Time formula written", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q9-b-i-ii-solution-2", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-b-i-ii-question.png",
+          "srcHash": "71459f43cc304d8cce2f5210e545b8d2",
+          "alt": "The question as printed on the paper — The course they raced on was 2000 m in length. (i) Paul and Fintan finished the race in a time of 366·43 seconds. Find their average speed. Give your answer, in metres per second (m/s), correct to 2 decimal places. (ii) Paul and Fintan also won gold at the 2022 world championships over the same distance (2000 m). In that race, they rowed at an average speed of 5·31 m/s. How long did it take them to finish that race? Give your answer in minutes and seconds, correct to the nearest second.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-b-i-ii-solution.png",
+          "srcHash": "e5f549ea34d260fbef18534e67a2de84",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q9(b)(i), Q9(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q9-c-i", topicId: "maths-3-3", conceptId: "p1-deferred-q9-c-i",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q9(c)(i)",
+    questionText: "Two different rowers, A and B, compete in a race. As they row, their bodies burn calories. They burn calories in the ratio A : B = 10 : 11. During the race they burned a total of 53·55 calories between them. Find how many calories each rower burned during the race.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q9-c-i-solution-1", kind: "point", verbatim: "Rower A: 25·5", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q9-c-i-solution-2", kind: "point", verbatim: "Rower B: 28·05", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-c-i-question.png",
+          "srcHash": "659f596b2a8a6a986e08a24fd1c2d44b",
+          "alt": "The question as printed on the paper — Two different rowers, A and B, compete in a race. As they row, their bodies burn calories. They burn calories in the ratio A : B = 10 : 11. During the race they burned a total of 53·55 calories between them. Find how many calories each rower burned during the race.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-c-i-solution.png",
+          "srcHash": "28de62c965f7fb589afdcfe39bf3c130",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q9(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q9-c-ii", topicId: "maths-3-3", conceptId: "p1-deferred-q9-c-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q9(c)(ii)",
+    questionText: "The two rowers, A and B, compete in a different race. In this race they burn calories in the ratio A : B = 1 : R, where R ∈ ℝ is a constant. At the end of the race they have burned a total of 57·5 calories between them. Rower A has burned 25 calories. Find the value of R in the ratio.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q9-c-ii-solution-1", kind: "point", verbatim: "Work of merit, for example, some relevant subtraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-c-ii-question.png",
+          "srcHash": "f9d2578b4fcb1246efeaa1855e13d9fd",
+          "alt": "The question as printed on the paper — The two rowers, A and B, compete in a different race. In this race they burn calories in the ratio A : B = 1 : R, where R ∈ ℝ is a constant. At the end of the race they have burned a total of 57·5 calories between them. Rower A has burned 25 calories. Find the value of R in the ratio.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q9-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q9-c-ii-solution.png",
+          "srcHash": "d14bd2b563f7f70315459bcf45e1a252",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q9(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q10-a-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q10-a-i-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q10(a)(i), Q10(a)(ii)",
+    stem: "Functions can be used to model wind speed as it changes over time. The function f(x) = x³ − 12x² + 36x + 10, where 0 ≤ x ≤ 8 and x ∈ ℝ, was used to model wind speed on a certain night at a particular location over an eight-hour period between midnight and 8 a.m. The wind speed was measured in km/hour and x is the time, in hours, after midnight.",
+    questionText: "(i) Complete the table, to show the values of f(x) for the given values of x. The table gives x = 0, 1, 2, 3, 4, 5, 6, 7, 8, with f(2) = 42 and f(7) = 17. (ii) Draw the graph of f(x) on the axes below for 0 ≤ x ≤ 8, where x ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q10-a-i-ii-solution-1", kind: "point", verbatim: "Note: Solution requires 17 items, 7 values in table, 9 points plotted and joined", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q10-a-i-ii-solution-2", kind: "point", verbatim: "Apply a * if 16 items correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-a-i-ii-question.png",
+          "srcHash": "69501adf44b304192fe292a00879275f",
+          "alt": "The question as printed on the paper — Functions can be used to model wind speed as it changes over time. The function f(x) = x³ − 12x² + 36x + 10, where 0 ≤ x ≤ 8 and x ∈ ℝ, was used to model wind speed on a certain night at a particular location over an eight-hour period between midnight and 8 a.m. The wind speed was measured in km/hour and x is the time, in hours, after midnight. (i) Complete the table, to show the values of f(x) for the given values of x. The table gives x = 0, 1, 2, 3, 4, 5, 6, 7, 8, with f(2) = 42 and f(7) = 17. (ii) Draw the graph of f(x) on the axes below for 0 ≤ x ≤ 8, where x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-a-i-ii-solution.png",
+          "srcHash": "14c1b8729dce521ba61177a9e49a81f2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q10(a)(i), Q10(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q10-b-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q10-b-i-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q10(b)(i), Q10(b)(ii)",
+    stem: "The diagram below shows the graph of a model for the wind speed, in km/hour, on a different night at the same location over the eight-hour period between midnight and 8 a.m.",
+    questionText: "In the case of parts (b)(i) and (b)(ii) below, show your work on the graph. (Remember that, on the graph, 1 on the x-axis represents 1 a.m., and so on.) (i) What was the wind speed at 3 a.m.? Give your answer in km/hour. (ii) On the Beaufort Wind Scale, winds between 75 km/hour and 88 km/hour are referred to as Strong Gale Force winds. Use the graph to complete the sentence below. On that night, Strong Gale Force winds were blowing between a.m. and a.m.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q10-b-i-ii-solution-1", kind: "point", verbatim: "Between 4 a.m. and 6 a.m.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q10-b-i-ii-solution-2", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-b-i-ii-question.png",
+          "srcHash": "98a488e6f07499c7c2fea15fabf7900b",
+          "alt": "The question as printed on the paper — The diagram below shows the graph of a model for the wind speed, in km/hour, on a different night at the same location over the eight-hour period between midnight and 8 a.m. In the case of parts (b)(i) and (b)(ii) below, show your work on the graph. (Remember that, on the graph, 1 on the x-axis represents 1 a.m., and so on.) (i) What was the wind speed at 3 a.m.? Give your answer in km/hour. (ii) On the Beaufort Wind Scale, winds between 75 km/hour and 88 km/hour are referred to as Strong Gale Force winds. Use the graph to complete the sentence below. On that night, Strong Gale Force winds were blowing between ___ a.m. and ___ a.m.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-b-i-ii-solution.png",
+          "srcHash": "49b881bb5678eeb4c2fdf0a54de700bc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q10(b)(i), Q10(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q10-c-i", topicId: "maths-4-2", conceptId: "p1-deferred-q10-c-i",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q10(c)(i)",
+    stem: "On a third night the quadratic function g(x) = −x² + 8x + 9, where 0 ≤ x ≤ 8 and x ∈ ℝ, was used to model the wind speed, in km/hour, at the same location over the eight hour period between midnight and 8 a.m.",
+    questionText: "Solve a quadratic equation to find the two times when the wind speed was exactly 24 km/hour, according to g(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q10-c-i-solution-1", kind: "point", verbatim: "Sets up g(x) = 24", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q10-c-i-solution-2", kind: "point", verbatim: "Writes quadratic formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[21],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-c-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-c-i-question.png",
+          "srcHash": "13a4acefec00b89a83184826127fe838",
+          "alt": "The question as printed on the paper — On a third night the quadratic function g(x) = −x² + 8x + 9, where 0 ≤ x ≤ 8 and x ∈ ℝ, was used to model the wind speed, in km/hour, at the same location over the eight hour period between midnight and 8 a.m. Solve a quadratic equation to find the two times when the wind speed was exactly 24 km/hour, according to g(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-c-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-c-i-solution.png",
+          "srcHash": "5436b59a5cb0da229f2aae1eccfac629",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q10(c)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-deferred-q10-c-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q10-c-ii",
+    section: "B", questionRef: "2025 OL Paper 1 — Deferred Q10(c)(ii)",
+    stem: "On a third night the quadratic function g(x) = −x² + 8x + 9, where 0 ≤ x ≤ 8 and x ∈ ℝ, was used to model the wind speed, in km/hour, at the same location over the eight hour period between midnight and 8 a.m.",
+    questionText: "Use differentiation to find the time when the wind speed was at its maximum and find this maximum wind speed, according to g(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-deferred-q10-c-ii-solution-1", kind: "point", verbatim: "Correct differentiation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q10-c-ii-solution-2", kind: "point", verbatim: "Equates derivative to zero", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q10-c-ii-solution-3", kind: "point", verbatim: "Solves for x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2025-ol-p1-deferred-q10-c-ii-solution-4", kind: "point", verbatim: "Finds the maximum value", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV-deferred.pdf","schemePages":[22],"generalNotesPages":[2,4,5,6,7]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-c-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-c-ii-question.png",
+          "srcHash": "c52d77fc899557a8579a31b4c65dcf8c",
+          "alt": "The question as printed on the paper — On a third night the quadratic function g(x) = −x² + 8x + 9, where 0 ≤ x ≤ 8 and x ∈ ℝ, was used to model the wind speed, in km/hour, at the same location over the eight hour period between midnight and 8 a.m. Use differentiation to find the time when the wind speed was at its maximum and find this maximum wind speed, according to g(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-ol-p1-deferred-q10-c-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2025-ol-p1-deferred-q10-c-ii-solution.png",
+          "srcHash": "bc9568d678ea92a1aebc9d8e9af08b0b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2025 OL Paper 1 — Deferred Q10(c)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

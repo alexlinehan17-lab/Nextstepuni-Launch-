@@ -77,7 +77,7 @@ export function browseTopicIdsForQuestion(
     paper.subjectId,
     paper.level,
     paper.year,
-    'main',
+    indexedSittings.get(paperId(paper.subjectId, paper.year, paper.level, paper.lang, paper.fileid)) ?? 'main',
     question.n,
     paper.paperKey,
     paper.lang,
@@ -94,6 +94,16 @@ const questionHasTopic = (paper: PaperTopicTags, question: QuestionTopicTag, top
 
 const paperId = (subjectId: string, year: number, level: string, lang: string, fileid: string) =>
   `${subjectId}|${year}|${level}|${lang}|${fileid}`;
+
+// A deferred Q1 is a different question from June's Q1. Resolve the sitting
+// from the indexed booklet, including when reading older tag records.
+const indexedSittings = new Map<string, 'main' | 'deferred' | 'sample'>();
+for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
+  for (const entry of entries) for (const item of entry.papers) {
+    indexedSittings.set(paperId(subjectId, entry.year, entry.level, entry.lang, item.doc.f),
+      item.sitting ?? entry.sitting ?? 'main');
+  }
+}
 
 /**
  * Merge a completed exam-topic audit into the local corpus without mutating or
@@ -121,13 +131,13 @@ for (const source of PAPER_TOPIC_TAGS) {
 
 for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
   if (!examTopicTaxonomyFor(subjectId)) continue;
-  const mappings = examQuestionTopicMappingsForSubject(subjectId)
-    .filter(mapping => mapping.sitting === 'main');
+  const mappings = examQuestionTopicMappingsForSubject(subjectId);
   for (const entry of entries) {
     for (const item of entry.papers) {
       const itemPaperKey = paperKeyOf(item.label);
       const candidateQuestions = mappings.filter(mapping =>
         mapping.year === entry.year
+        && mapping.sitting === (item.sitting ?? entry.sitting ?? 'main')
         && mapping.level === entry.level
         && mapping.paperKey === itemPaperKey
         && (mapping.lang === 'any' || mapping.lang === entry.lang));
@@ -182,7 +192,7 @@ for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
           subjectId,
           entry.level,
           entry.year,
-          'main',
+          mapping.sitting,
           mapping.n,
           itemPaperKey,
           entry.lang,

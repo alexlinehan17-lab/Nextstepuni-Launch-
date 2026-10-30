@@ -626,7 +626,8 @@ const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common', f
 
 function schemeFor(subjectId, card) {
   const project = subjectId === 'maths' && /LP030EV\.pdf$/.test(reviewedMathematicsSource(card.id)?.schemeFileid ?? '');
-  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : ''}`;
+  const deferred = subjectId === 'maths' && reviewedMathematicsSource(card.id)?.sitting === 'deferred';
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';

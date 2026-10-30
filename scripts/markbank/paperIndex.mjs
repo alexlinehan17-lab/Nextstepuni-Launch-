@@ -98,10 +98,11 @@ export const corpusSubjectFor = (subjectId, questionRef) =>
     : subjectId);
 
 /** The sitting of one subject, year and level in its authored paper language. */
-export const paperEntry = (subjectId, year, level) =>
+export const paperEntry = (subjectId, year, level, paperFileid) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
     .find(e => e.year === year && e.level === level
-      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev'));
+      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev')
+      && (!paperFileid || e.papers.some(p => p.doc?.f.replace(/\.pdf$/, '') === paperFileid.replace(/\.pdf$/, ''))));
 
 /**
  * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"
