@@ -13,8 +13,81 @@ import reviewP2 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p2-d
 import reviewHL1 from '../scripts/markbank/mathematics/reviews/2025-higher-p1-deferred.json';
 import reviewHL2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2-deferred.json';
 
+import review2024HL1 from '../scripts/markbank/mathematics/reviews/2024-higher-p1-deferred.json';
+
 const prefix = 'maths-2025-ol-p1-deferred-q';
 const cards = CARDS.filter(c => c.id.startsWith(prefix));
+
+
+describe('2024 Higher deferred Paper 1', () => {
+  const prefix='maths-2024-hl-p1-deferred-q';
+  const cards=HIGHER_CARDS.filter(c=>c.id.startsWith(prefix));
+  it('preserves every printed task at its published boundary and all 380 offered marks', () => {
+    expect(cards).toHaveLength(40);
+    expect(cards.map(c=>c.id).sort()).toEqual(review2024HL1.cards.map(c=>c.id).sort());
+    expect(cards.reduce((s,c)=>s+c.totalMarks,0)).toBe(380);
+    for(const [n,marks] of Object.entries(review2024HL1.printedQuestionMarks))
+      expect(cards.filter(c=>c.questionRef.match(/Q(\d+)/)?.[1]===n).reduce((s,c)=>s+c.totalMarks,0),n).toBe(marks);
+    for(const [id,marks] of [['6-b-i-ii',10],['7-a-i-ii',10],['7-b-i-ii',20],['8-e-i-ii',10]] as const)
+      expect(cards.find(c=>c.id===prefix+id)?.totalMarks,id).toBe(marks);
+    expect(cards.some(c=>c.id===prefix+'7-b-ii')).toBe(false);
+    expect(cards.find(c=>c.id===prefix+'8-e-i-ii')?.questionText).toContain('one possible value');
+    expect(cards.find(c=>c.id===prefix+'9-d')?.stem).toContain('1·5 ≤ x ≤ 2');
+  });
+  it('retains numeric awards while explicitly correcting inconsistent printed scale labels', () => {
+    for(const [id,code,marks,printed] of [
+      ['7-d','10D',[0,3,5,7,10],'10C'],['8-d','5B',[0,2,5],'5C'],
+      ['9-d','10C',[0,4,6,10],'10D'],['10-c','5B',[0,2,5],'5C'],
+    ] as const) {
+      const scale=cards.find(c=>c.id===prefix+id)?.mathematicsScale;
+      expect(scale).toMatchObject({code,marks});
+      expect(scale?.markingNote).toContain('scheme prints '+printed);
+      expect(scale?.markingNote).toContain('every published numeric award is retained');
+    }
+    expect(cards.find(c=>c.id===prefix+'7-b-i-ii')?.mathematicsScale).toMatchObject({code:'20D',marks:[0,8,11,13,20]});
+  });
+  it('supplies missing diagrams and explains verified answer corrections', () => {
+    for(const id of ['1-c','4-b','7-a-i-ii','8-e-i-ii']) {
+      const c=cards.find(c=>c.id===prefix+id)!;
+      expect('figure' in c && c.figure?.attribution).toContain('Worked example: NextStepUni');
+    }
+    for(const [id,note] of [['1-c','(4, −23/2)'],['7-a-i-ii','+925'],['6-b-i-ii','0 < a < 3'],['9-d','25/24'],['10-d-i','|BC|']]) {
+      const c=cards.find(c=>c.id===prefix+id)!;
+      expect('figure' in c && c.figure?.sourceNote).toContain(note);
+    }
+  });
+  it('exposes every card in Atlas with the exact deferred booklet, full images and hosted answer regions', () => {
+    const paper=topicsForPaper('mathematics',2024,'higher','ev',review2024HL1.paperFileid)!;
+    expect(paper).toBeDefined();
+    const url=preferredAnswersUrl('mathematics',2024,review2024HL1.paperFileid,'https://storage/map.json');
+    expect(url).toBe(`/paper-answers/2024/${review2024HL1.paperFileid}.json`);
+    const hosted=readFileSync('public'+url,'utf8');
+    expect(hosted).toBe(readFileSync(`scripts/paper-trail/answers/2024/${review2024HL1.paperFileid}.json`,'utf8'));
+    const map:PaperAnswerMap=JSON.parse(hosted);
+    expect(isAnswerMap(map)).toBe(true);
+    expect(map.schemeFileid).toBe(review2024HL1.schemeFileid);
+    const feeds=new Map<string,ReturnType<typeof questionsForTopics>>();
+    for(const task of review2024HL1.cards) {
+      const c=cards.find(c=>c.id===task.id)!;
+      expect(c.paperFileid).toBe('LC003ALP100EV-deferred');
+      expect(c.questionFigure?.solution).not.toBe(true);
+      expect('figure' in c && c.figure?.solution).toBe(true);
+      for(const f of [c.questionFigure,'figure' in c?c.figure:undefined]) {
+        expect(f,task.id).toBeDefined();
+        expect(createHash('md5').update(readFileSync('public'+f!.src)).digest('hex'),task.id).toBe(f!.srcHash);
+      }
+      const n=task.printedParts[0].match(/^Q(\d+)/)![1];
+      const q=paper.q.find(q=>q.n===n)!;
+      expect(browseTopicIdsForQuestion(paper,q),task.id).toEqual(expect.arrayContaining(task.examTopicIds));
+      expect(paperRegionFor(map.q,n)?.map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.sourcePages));
+      expect(schemeRegionFor(map.q.find(q=>q.n===n)!).map(r=>r.p),task.id).toEqual(expect.arrayContaining(task.schemePages));
+      for(const topic of task.examTopicIds) {
+        if(!feeds.has(topic))feeds.set(topic,questionsForTopics('mathematics',[topic]));
+        expect(feeds.get(topic),task.id).toContainEqual({subjectId:'mathematics',year:2024,level:'higher',lang:'ev',paperKey:'p1',fileid:review2024HL1.paperFileid,n});
+      }
+    }
+  });
+});
 
 describe('2025 Higher deferred Paper 2', () => {
   const prefix='maths-2025-hl-p2-deferred-q';

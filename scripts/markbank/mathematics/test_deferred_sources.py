@@ -54,5 +54,19 @@ class DeferredSources(unittest.TestCase):
         self.assertEqual(speeds,sorted(speeds))
         self.assertTrue(all(0<=v<54 for v in speeds))
 
+    def test_2024_shed_example_uses_the_positive_given_value_and_full_domain(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import shed_profit
+        self.assertEqual([shed_profit(x) for x in range(0,26,5)],[-900,925,2200,2625,1900,-275])
+
+    def test_2024_faster_drying_example_keeps_the_same_start_and_limit(self):
+        sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'authoring'/'maths'))
+        from worked_supplements import drying_water
+        self.assertEqual(drying_water(0),25)
+        self.assertEqual(drying_water(0,-.15),25)
+        for t in [1,5,10,30,60]:
+            self.assertTrue(5<drying_water(t,-.15)<drying_water(t)<25)
+        self.assertAlmostEqual(drying_water(1000,-.15),5)
+
 
 if __name__=='__main__': unittest.main()

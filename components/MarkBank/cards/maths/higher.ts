@@ -70884,4 +70884,1765 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q1-a", topicId: "maths-4-1", conceptId: "p1-deferred-q1-a",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q1(a)",
+    questionText: "Factorise fully 5x² − 45.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q1-a-solution-1", kind: "point", verbatim: "a common factor identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q1-a-solution-2", kind: "point", verbatim: "mentions difference of 2 squares", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q1-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q1-a-question.png",
+          "srcHash": "c7023ac819666d1c0d75093da367e749",
+          "alt": "The question as printed on the paper — Factorise fully 5x² − 45.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q1-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q1-a-solution.png",
+          "srcHash": "1a291f0f0050881991b39b8ae479f953",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q1(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q1-b", topicId: "maths-4-1", conceptId: "p1-deferred-q1-b",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q1(b)",
+    questionText: "Factorise fully 6xy − 8x − 28 + 21y.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q1-b-solution-1", kind: "point", verbatim: "a common factor identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q1-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q1-b-question.png",
+          "srcHash": "984651c6a6a21eef5e2fec5bf67fcb99",
+          "alt": "The question as printed on the paper — Factorise fully 6xy − 8x − 28 + 21y.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q1-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q1-b-solution.png",
+          "srcHash": "2fdb2a8e0aeb04839b04ea3ab3fc2a3c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q1(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q1-c", topicId: "maths-4-2", conceptId: "p1-deferred-q1-c",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q1(c)",
+    questionText: "Solve the simultaneous equations for x, y ∈ ℝ: x² + 4xy = −168; 4x + 2y = −7.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q1-c-solution-1", kind: "point", verbatim: "effort to isolate x or y", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q1-c-solution-2", kind: "point", verbatim: "Quadratic in one variable", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q1-c-solution-3", kind: "point", verbatim: "Finds correct values for x (or y)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[6],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q1-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q1-c-question.png",
+          "srcHash": "29243c0aaa878bade8ccb22d0704f891",
+          "alt": "The question as printed on the paper — Solve the simultaneous equations for x, y ∈ ℝ: x² + 4xy = −168; 4x + 2y = −7.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q1-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q1-c-solution.png",
+          "srcHash": "68b5a6f8c4c71c90ea2c77c6407518c8",
+          "alt": "NextStepUni corrected simultaneous-equation solutions: x=4, y=−23/2; x=−6, y=17/2, followed by original SEC credit notes.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The printed scheme reverses the two y values. The correct pairs are (x, y) = (4, −23/2) and (−6, 17/2). The NextStepUni example corrects the pairings; the original SEC credit notes remain below and the full scheme is available in the reader.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q2-a-i", topicId: "maths-3-1", conceptId: "p1-deferred-q2-a-i",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q2(a)(i)",
+    stem: "The first two terms of an arithmetic sequence are 3 and 10.",
+    questionText: "Find the sum of the first 100 terms of this sequence.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q2-a-i-solution-1", kind: "point", verbatim: "identifies a or d", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q2-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q2-a-i-question.png",
+          "srcHash": "bf7223aa50ba361ddff628d74aa1db2f",
+          "alt": "The question as printed on the paper — The first two terms of an arithmetic sequence are 3 and 10. Find the sum of the first 100 terms of this sequence.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q2-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q2-a-i-solution.png",
+          "srcHash": "9987ae53c46f61cf2405ed536842e082",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q2(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q2-a-ii", topicId: "maths-3-1", conceptId: "p1-deferred-q2-a-ii",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q2(a)(ii)",
+    stem: "The first two terms of an arithmetic sequence are 3 and 10.",
+    questionText: "The first, fourth, and nth terms of this sequence are the first three terms of a geometric sequence. Find the value of n.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q2-a-ii-solution-1", kind: "point", verbatim: "Calculates 192 correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q2-a-ii-solution-2", kind: "point", verbatim: "Sets up the correct equation in n", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q2-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q2-a-ii-question.png",
+          "srcHash": "bf8c8f5ad0c3a4c8ab5f012fc3cbe1d0",
+          "alt": "The question as printed on the paper — The first two terms of an arithmetic sequence are 3 and 10. The first, fourth, and nth terms of this sequence are the first three terms of a geometric sequence. Find the value of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q2-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q2-a-ii-solution.png",
+          "srcHash": "f81d469e69f06709c7e02dfeb60b5f82",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q2(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q2-b", topicId: "maths-3-1", conceptId: "p1-deferred-q2-b",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q2(b)",
+    questionText: "Use induction to prove that the sum of the first n natural numbers can be found using the formula: 1 + 2 + 3 + ⋯ + n = n(n + 1)/2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q2-b-solution-1", kind: "point", verbatim: "Omits conclusion but otherwise correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"markingNote":"The final numeric band is printed as 10j. The stray j is a typographical error; the full award is 10 marks.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[7],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q2-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q2-b-question.png",
+          "srcHash": "fa6bab6524551f9bb3e389a2c535d805",
+          "alt": "The question as printed on the paper — Use induction to prove that the sum of the first n natural numbers can be found using the formula: 1 + 2 + 3 + ⋯ + n = n(n + 1)/2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q2-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q2-b-solution.png",
+          "srcHash": "ca2faa97a629548e6135489321940a08",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q2(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The final numeric award is printed as 10j. The stray j is a typographical error; this is a 10-mark question.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q3-a", topicId: "maths-5-1", conceptId: "p1-deferred-q3-a",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q3(a)",
+    questionText: "f and g are two functions of x ∈ ℝ, defined as follows: f(x) = 6x − 5; g(x) = x² − 2x + 1. Find g(f(x)). Give your answer in the form ax² + bx + c, where a, b, c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q3-a-solution-1", kind: "point", verbatim: "Some correct substitution of f(x) into g(x)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q3-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q3-a-question.png",
+          "srcHash": "0427dc8318e306745415831a8ffb6cac",
+          "alt": "The question as printed on the paper — f and g are two functions of x ∈ ℝ, defined as follows: f(x) = 6x − 5; g(x) = x² − 2x + 1. Find g(f(x)). Give your answer in the form ax² + bx + c, where a, b, c ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q3-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q3-a-solution.png",
+          "srcHash": "06deb22cb50ecc2c96a6f8c7d3702499",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q3(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The required composition is g(f(x)), which gives 36x² − 72x + 36. The original notes also mention f(g(x)) for partial credit; that is not the requested composition.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q3-b", topicId: "maths-3-2", conceptId: "p1-deferred-q3-b",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q3(b)",
+    questionText: "Write 1/81 in the form 3^r, where r ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q3-b-solution-1", kind: "point", verbatim: "r = −4", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q3-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q3-b-question.png",
+          "srcHash": "421e4c3ab77d864ae888ee189175341e",
+          "alt": "The question as printed on the paper — Write 1/81 in the form 3^r, where r ∈ ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q3-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q3-b-solution.png",
+          "srcHash": "2039ff8571ae6b780b8bb16d4ec15e9d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q3(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q3-c", topicId: "maths-3-2", conceptId: "p1-deferred-q3-c",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q3(c)",
+    questionText: "The following is an expression in x, where x > 0, x ∈ ℝ: log₁₀₀ x + log₁₀₀ 18 − log₁₀₀ 3. Write this expression in the form p log₁₀ kx, where p, k ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q3-c-solution-1", kind: "point", verbatim: "Combines all 3 terms into 1 term", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q3-c-solution-2", kind: "point", verbatim: "Changes to the base 10", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[8],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q3-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q3-c-question.png",
+          "srcHash": "971c037e5c0af80e56b4add6d058de30",
+          "alt": "The question as printed on the paper — The following is an expression in x, where x > 0, x ∈ ℝ: log₁₀₀ x + log₁₀₀ 18 − log₁₀₀ 3. Write this expression in the form p log₁₀ kx, where p, k ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q3-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q3-c-solution.png",
+          "srcHash": "302aed17f1459977a72e440b85267b59",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q3(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q4-a", topicId: "maths-4-4", conceptId: "p1-deferred-q4-a",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q4(a)",
+    stem: "In this question, i² = −1.",
+    questionText: "Write the following complex number in the form a + bi, where a, b ∈ ℝ: (2 + 5i)(3 − 4i) − 2i(10 − i).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q4-a-solution-1", kind: "point", verbatim: "Expands correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q4-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q4-a-question.png",
+          "srcHash": "ecbdffc90c8ebb0f6cd0edc9f5bb3d2c",
+          "alt": "The question as printed on the paper — In this question, i² = −1. Write the following complex number in the form a + bi, where a, b ∈ ℝ: (2 + 5i)(3 − 4i) − 2i(10 − i).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q4-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q4-a-solution.png",
+          "srcHash": "43e25f62c1cd083fb86581c2a1199293",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q4(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q4-b", topicId: "maths-4-4", conceptId: "p1-deferred-q4-b",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q4(b)",
+    stem: "In this question, i² = −1.",
+    questionText: "Four complex numbers, w, x, y, and z, are represented by dots on the Argand diagram on the right. They satisfy the following: y = 2z; x = −z; w = iz. Use this information to write w, x, y, and z next to the correct complex number on the diagram. Use each letter only once.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q4-b-solution-1", kind: "point", verbatim: "one dot labelled correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q4-b-solution-2", kind: "point", verbatim: "2 dots labelled correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q4-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q4-b-question.png",
+          "srcHash": "84647b106317a1f1f239522ea6490d97",
+          "alt": "The question as printed on the paper — In this question, i² = −1. Four complex numbers, w, x, y, and z, are represented by dots on the Argand diagram on the right. They satisfy the following: y = 2z; x = −z; w = iz. Use this information to write w, x, y, and z next to the correct complex number on the diagram. Use each letter only once.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q4-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q4-b-solution.png",
+          "srcHash": "85131ad95c23e9eec54aba751480c7b8",
+          "alt": "NextStepUni labelled Argand diagram: upper-left far y, upper-left near z, lower-left w, lower-right x; followed by original SEC credit notes.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The scheme says “Correctly labelled diagram” but supplies no diagram. The NextStepUni example shows all four labels. It is a schematic with no numeric coordinate scale: y = 2z, x = −z, and w = iz (a 90° anticlockwise rotation).",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q4-c", topicId: "maths-4-4", conceptId: "p1-deferred-q4-c",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q4(c)",
+    stem: "In this question, i² = −1.",
+    questionText: "Use De Moivre’s theorem to find the two solutions to the equation: z² = 1 − √3 i. Give each answer in the form z = a + bi, where a, b ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q4-c-solution-1", kind: "point", verbatim: "polar form must be used to achieve any credit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q4-c-solution-2", kind: "point", verbatim: "Uses de Moivre’s Theorem", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[9],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q4-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q4-c-question.png",
+          "srcHash": "a8fe429bc8ee9d03859369a0f25bf884",
+          "alt": "The question as printed on the paper — In this question, i² = −1. Use De Moivre’s theorem to find the two solutions to the equation: z² = 1 − √3 i. Give each answer in the form z = a + bi, where a, b ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q4-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q4-c-solution.png",
+          "srcHash": "264e8da80c51b1acd6833a2ffdbdfaf8",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q4(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q5-a", topicId: "maths-5-2", conceptId: "p1-deferred-q5-a",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q5(a)",
+    questionText: "f(x) is a function of x ∈ ℝ. The derivative of f is f′(x) = 6x + 4. The point (−1, 8) is on the graph of y = f(x). Use this information to find f(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q5-a-solution-1", kind: "point", verbatim: "Two terms correct in integration", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q5-a-solution-2", kind: "point", verbatim: "Finds f(−1) in terms of c", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q5-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q5-a-question.png",
+          "srcHash": "9df7d1a604c57306ad73f70d3bfc51a2",
+          "alt": "The question as printed on the paper — f(x) is a function of x ∈ ℝ. The derivative of f is f′(x) = 6x + 4. The point (−1, 8) is on the graph of y = f(x). Use this information to find f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q5-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q5-a-solution.png",
+          "srcHash": "e4645899b903c6c315c71aba7edbd2c5",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q5(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q5-b-i", topicId: "maths-3-2", conceptId: "p1-deferred-q5-b-i",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q5(b)(i)",
+    stem: "y = x ln(x³), for x ∈ ℝ, x > 0.",
+    questionText: "Find the value of y when x = 2. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q5-b-i-solution-1", kind: "point", verbatim: "Some correct substitution into the function", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q5-b-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q5-b-i-question.png",
+          "srcHash": "084220fe3f571e3a4aca0f16f2d47147",
+          "alt": "The question as printed on the paper — y = x ln(x³), for x ∈ ℝ, x > 0. Find the value of y when x = 2. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q5-b-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q5-b-i-solution.png",
+          "srcHash": "5317d6867fb4d386261a31883ff419ed",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q5(b)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q5-b-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q5-b-ii",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q5(b)(ii)",
+    stem: "y = x ln(x³), for x ∈ ℝ, x > 0.",
+    questionText: "Find dy/dx. Give your answer in the form a + b ln x, where a, b ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q5-b-ii-solution-1", kind: "point", verbatim: "No differentiation no credit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q5-b-ii-solution-2", kind: "point", verbatim: "Substitutes correctly in the product rule", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[10],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q5-b-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q5-b-ii-question.png",
+          "srcHash": "e86168e80a0c6fe044b96c90e795669f",
+          "alt": "The question as printed on the paper — y = x ln(x³), for x ∈ ℝ, x > 0. Find dy/dx. Give your answer in the form a + b ln x, where a, b ∈ ℕ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q5-b-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q5-b-ii-solution.png",
+          "srcHash": "3170f45899a9f237032cef9c40853cc1",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q5(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q6-a-i", topicId: "maths-5-2", conceptId: "p1-deferred-q6-a-i",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q6(a)(i)",
+    stem: "The function h(x) is defined for x ∈ ℝ as: h(x) = sin 2x.",
+    questionText: "Write down h′(x), the derivative of h(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q6-a-i-solution-1", kind: "point", verbatim: "ℎ′(x) = 2 cos 2x", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q6-a-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q6-a-i-question.png",
+          "srcHash": "7cdf8804ffc8fc6d602ed95197512b4f",
+          "alt": "The question as printed on the paper — The function h(x) is defined for x ∈ ℝ as: h(x) = sin 2x. Write down h′(x), the derivative of h(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q6-a-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q6-a-i-solution.png",
+          "srcHash": "57cecf179214468d22a916b98d7c955d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q6(a)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q6-a-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q6-a-ii",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q6(a)(ii)",
+    stem: "The function h(x) is defined for x ∈ ℝ as: h(x) = sin 2x.",
+    questionText: "Use integration to find the average value of h(x) from x = 0 to x = π/6.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q6-a-ii-solution-1", kind: "point", verbatim: "integration is required in order to be awarded any credit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q6-a-ii-solution-2", kind: "point", verbatim: "Subs in limits", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q6-a-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q6-a-ii-question.png",
+          "srcHash": "37c28395b0e1eb9f91010349f9dcd943",
+          "alt": "The question as printed on the paper — The function h(x) is defined for x ∈ ℝ as: h(x) = sin 2x. Use integration to find the average value of h(x) from x = 0 to x = π/6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q6-a-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q6-a-ii-solution.png",
+          "srcHash": "7c8cd7161a91f181572bf005f783ac3c",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q6(a)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q6-b-i-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q6-b-i-ii",
+    section: "A", questionRef: "2024 HL Paper 1 — Deferred Q6(b)(i), Q6(b)(ii)",
+    stem: "The function f(x) is defined for 0 ≤ x ≤ 5, x ∈ ℝ. The diagram below shows the graph of the function f(x). The graph is made up of three straight line segments, two of which are horizontal. Use the graph to answer parts (b)(i) and (b)(ii).",
+    questionText: "(i) For what range of values of x, if any, is f′(x) negative? Note that f′(x) is the derivative of f(x), and 0 ≤ x ≤ 5, x ∈ ℝ. (ii) a is a constant, with 0 ≤ a ≤ 5, a ∈ ℝ. Write down the range of values of a, if any, for which this expression is positive: the integral of f(x) from 0 to a.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q6-b-i-ii-solution-1", kind: "point", verbatim: "One part correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q6-b-i-ii-solution-2", kind: "point", verbatim: "One part correct and work of merit in the other", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[11],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q6-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q6-b-i-ii-question.png",
+          "srcHash": "7a9ae561f252b37c70860e49caec3376",
+          "alt": "The question as printed on the paper — The function f(x) is defined for 0 ≤ x ≤ 5, x ∈ ℝ. The diagram below shows the graph of the function f(x). The graph is made up of three straight line segments, two of which are horizontal. Use the graph to answer parts (b)(i) and (b)(ii). (i) For what range of values of x, if any, is f′(x) negative? Note that f′(x) is the derivative of f(x), and 0 ≤ x ≤ 5, x ∈ ℝ. (ii) a is a constant, with 0 ≤ a ≤ 5, a ∈ ℝ. Write down the range of values of a, if any, for which this expression is positive: the integral of f(x) from 0 to a.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q6-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q6-b-i-ii-solution.png",
+          "srcHash": "c89cfe1f6d34bc3fd5416ff3fc45469b",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q6(b)(i), Q6(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "For part (ii), the full interval is 0 < a < 3. The printed a < 3 omits the strict lower bound: the integral is zero when a = 0, and positive only for 0 < a < 3 within the given domain.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q7-a-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q7-a-i-ii",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q7(a)(i), Q7(a)(ii)",
+    stem: "A company makes and sells different types of sheds. For each type of shed, they can model the profit they will make, based on the number of sheds they sell. The profit from shed type F can be modelled by: f(x) = 400x − 5x² − 0·4x³ − 900, where x is the number of sheds sold, and f(x) is the profit, in euro.",
+    questionText: "(i) Fill in the table below, showing the value of f(x) for each of the given values of x. Two values are already given. x: 0, 5, 10, 15, 20, 25; f(5) = 925 and f(20) = 1900. (ii) Draw the graph of the function y = f(x) on the axes below, for 0 ≤ x ≤ 25, x ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q7-a-i-ii-solution-1", kind: "point", verbatim: "4 values in table", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q7-a-i-ii-solution-2", kind: "point", verbatim: "6 points plotted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q7-a-i-ii-solution-3", kind: "point", verbatim: "Points joined appropriately", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-a-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-a-i-ii-question.png",
+          "srcHash": "3554a4e3ed97d2c56525e98c382692ed",
+          "alt": "The question as printed on the paper — A company makes and sells different types of sheds. For each type of shed, they can model the profit they will make, based on the number of sheds they sell. The profit from shed type F can be modelled by: f(x) = 400x − 5x² − 0·4x³ − 900, where x is the number of sheds sold, and f(x) is the profit, in euro. (i) Fill in the table below, showing the value of f(x) for each of the given values of x. Two values are already given. x: 0, 5, 10, 15, 20, 25; f(5) = 925 and f(20) = 1900. (ii) Draw the graph of the function y = f(x) on the axes below, for 0 ≤ x ≤ 25, x ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-a-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-a-i-ii-solution.png",
+          "srcHash": "a6a71342e0aa41d8bb05f7f0005b391f",
+          "alt": "NextStepUni complete table and profit graph from x=0 to 25: −900, 925, 2200, 2625, 1900, −275 at steps of five; followed by original SEC credit notes.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The printed table incorrectly gives f(5) = −925; the formula and question paper both give +925. The scheme also omits the graph. The NextStepUni example supplies the corrected table and complete graph on 0 ≤ x ≤ 25, followed by the original SEC marking notes.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q7-b-i-ii", topicId: "maths-4-2", conceptId: "p1-deferred-q7-b-i-ii",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q7(b)(i), Q7(b)(ii)",
+    stem: "A company makes and sells different types of sheds. For each type of shed, they can model the profit they will make, based on the number of sheds they sell. The profit from shed type G can be modelled by the following function, g(x): g(x) = −2x³ + 55x² + 974x − 6688, where x is the number of sheds sold, and g(x) is the profit, in euro.",
+    questionText: "(i) Show that x = −16 is a root of g(x). (ii) Hence, or otherwise, find the other two values of x ∈ ℝ for which g(x) = 0.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q7-b-i-ii-solution-1", kind: "point", verbatim: "Finds quadratic factor", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q7-b-i-ii-solution-2", kind: "point", verbatim: "Finds other roots", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q7-b-i-ii-solution-3", kind: "point", verbatim: "3 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,8,11,13,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[12],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-b-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-b-i-ii-question.png",
+          "srcHash": "00577cafa007306af229630b68c11138",
+          "alt": "The question as printed on the paper — A company makes and sells different types of sheds. For each type of shed, they can model the profit they will make, based on the number of sheds they sell. The profit from shed type G can be modelled by the following function, g(x): g(x) = −2x³ + 55x² + 974x − 6688, where x is the number of sheds sold, and g(x) is the profit, in euro. (i) Show that x = −16 is a root of g(x). (ii) Hence, or otherwise, find the other two values of x ∈ ℝ for which g(x) = 0.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-b-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-b-i-ii-solution.png",
+          "srcHash": "d329644065caafb43fcea7103de33f27",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q7(b)(i), Q7(b)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q7-c", topicId: "maths-4-1", conceptId: "p1-deferred-q7-c",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q7(c)",
+    stem: "A company makes and sells different types of sheds. For each type of shed, they can model the profit they will make, based on the number of sheds they sell.",
+    questionText: "The profit from shed type H can be modelled by a different function, h(x), where x is the number of sheds sold, and h(x) is the profit, in euro. The diagram below (not to scale) shows the graph of y = h(x) for some of x ∈ ℝ. The co-ordinates of four points on the graph are given: (−21, 0), (12, 0), (47, 0), and (0, −1316). Use the information in the diagram above to write h(x) in the form: h(x) = a(x − b)(x − c)(x − d), where a, b, c, d ∈ ℝ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q7-c-solution-1", kind: "point", verbatim: "some correct factor identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-c-question.png",
+          "srcHash": "95e9a1f8eee705988afdc39a89b743a0",
+          "alt": "The question as printed on the paper — A company makes and sells different types of sheds. For each type of shed, they can model the profit they will make, based on the number of sheds they sell. The profit from shed type H can be modelled by a different function, h(x), where x is the number of sheds sold, and h(x) is the profit, in euro. The diagram below (not to scale) shows the graph of y = h(x) for some of x ∈ ℝ. The co-ordinates of four points on the graph are given: (−21, 0), (12, 0), (47, 0), and (0, −1316). Use the information in the diagram above to write h(x) in the form: h(x) = a(x − b)(x − c)(x − d), where a, b, c, d ∈ ℝ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-c-solution.png",
+          "srcHash": "be7714b975bc24b54f5318a94925cc4a",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q7(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q7-d", topicId: "maths-3-3", conceptId: "p1-deferred-q7-d",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q7(d)",
+    questionText: "Martha works for this company. Martha’s gross annual income is €x, where x ∈ ℝ is a constant. She pays tax at a rate of 20% on the first €40 000 that she earns, and at a rate of 40% on the balance. She has an annual tax credit of €3550. Taking the tax credit into account, Martha pays 1/6 of her gross annual income in tax. Find the value of x, Martha’s gross annual income.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q7-d-solution-1", kind: "point", verbatim: "Finds tax @20%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q7-d-solution-2", kind: "point", verbatim: "Finds tax @40%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q7-d-solution-3", kind: "point", verbatim: "Deals with tax credit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"markingNote":"The scheme prints 10C, but its numeric awards (0, 3, 5, 7, 10) have the structure of 10D. The card uses 10D to label these bands; every published numeric award is retained.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[13],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-d-question.png",
+          "srcHash": "0b765590f5054b675ab36294aebc3f6f",
+          "alt": "The question as printed on the paper — Martha works for this company. Martha’s gross annual income is €x, where x ∈ ℝ is a constant. She pays tax at a rate of 20% on the first €40 000 that she earns, and at a rate of 40% on the balance. She has an annual tax credit of €3550. Taking the tax credit into account, Martha pays 1/6 of her gross annual income in tax. Find the value of x, Martha’s gross annual income.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q7-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q7-d-solution.png",
+          "srcHash": "31dcb43232e28f2546cc57b6fb6a1ad7",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q7(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme labels this 10C but lists five numeric bands: 0, 3, 5, 7, 10. The card labels that structure 10D and preserves all five published awards and the original credit notes.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q8-a", topicId: "maths-3-2", conceptId: "p1-deferred-q8-a",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q8(a)",
+    stem: "A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0.",
+    questionText: "Work out the water content of the wood at the start of the drying process, and after 8 weeks. Give each answer as a percentage, correct to the nearest percent where appropriate.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q8-a-solution-1", kind: "point", verbatim: "One correct value calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q8-a-solution-2", kind: "point", verbatim: "No rounding or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-a-question.png",
+          "srcHash": "e0942a0824f14dd434fedd5cb404ff08",
+          "alt": "The question as printed on the paper — A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0. Work out the water content of the wood at the start of the drying process, and after 8 weeks. Give each answer as a percentage, correct to the nearest percent where appropriate.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-a-solution.png",
+          "srcHash": "a73ae92667d308ae3bb893aa0182737e",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q8(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q8-b", topicId: "maths-3-2", conceptId: "p1-deferred-q8-b",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q8(b)",
+    stem: "A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0.",
+    questionText: "The company will sell the wood once the water content is 10% or less. Work out the least number of days that the wood must dry out, to ensure that the water content will be below 10%.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q8-b-solution-1", kind: "point", verbatim: "trials values of t", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q8-b-solution-2", kind: "point", verbatim: "Rounding the number of weeks and then calculating the number of days", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-b-question.png",
+          "srcHash": "f0f2206a2bfbd987f30f2cf9c3c282a7",
+          "alt": "The question as printed on the paper — A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0. The company will sell the wood once the water content is 10% or less. Work out the least number of days that the wood must dry out, to ensure that the water content will be below 10%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-b-solution.png",
+          "srcHash": "33f98cb6f6e7ada037d06780ba1645fc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q8(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q8-c", topicId: "maths-5-2", conceptId: "p1-deferred-q8-c",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q8(c)",
+    stem: "A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0.",
+    questionText: "Work out the value of w′(5), where w′(t) is the derivative of w(t). Give your answer as a percentage per week, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q8-c-solution-1", kind: "point", verbatim: "Differentiates correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-c-question.png",
+          "srcHash": "c6128765cd390d021135d299337d0e30",
+          "alt": "The question as printed on the paper — A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0. Work out the value of w′(5), where w′(t) is the derivative of w(t). Give your answer as a percentage per week, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-c-solution.png",
+          "srcHash": "56c5aaba38739ded4ec56679ad957c30",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q8(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The final printed line should read w′(5) = −1·06, not w′(t). This is a decrease of about 1·06 percentage points in water content per week at week 5.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q8-d", topicId: "maths-5-2", conceptId: "p1-deferred-q8-d",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q8(d)",
+    stem: "A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0.",
+    questionText: "w′(t) is always negative, and |w′(t)| gets smaller as t gets bigger. Explain what this means, in the context of the water content in the wood.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q8-d-solution-1", kind: "point", verbatim: "Explains the meaning of w′(t) being always negative", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"markingNote":"The scheme prints 5C, but its numeric awards (0, 2, 5) have the structure of 5B. The card uses 5B to label these bands; every published numeric award is retained.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[14],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-d-question.png",
+          "srcHash": "8a4d59a117d8ded68f594d44ad59830f",
+          "alt": "The question as printed on the paper — A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0. w′(t) is always negative, and |w′(t)| gets smaller as t gets bigger. Explain what this means, in the context of the water content in the wood.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-d-solution.png",
+          "srcHash": "6b27f489b32925d4cbb29b8a9114cbbc",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q8(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme prints 5C (0, 2, 5). These three bands have a 5B structure; the card uses 5B while retaining every numeric award and the original explanation.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q8-e-i-ii", topicId: "maths-5-1", conceptId: "p1-deferred-q8-e-i-ii",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q8(e)(i), Q8(e)(ii)",
+    stem: "A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0.",
+    questionText: "The company starts using a new warehouse. In this warehouse, the wood dries out faster – that is, the water content of the wood decreases more quickly. The following describes how the water content of the wood, u(t), changes over time while it is drying out in the new warehouse: u(t) = 5 + 20e^(kt). Here, k is a constant and t is the time, in weeks, from the start of the drying process. (i) The diagram below shows the graph of y = w(t) for a given domain of t ∈ ℝ, t ≥ 0. On the same domain, sketch a possible graph of y = u(t). (ii) Write down one possible value of k, so that u(t) describes the wood drying out faster than w(t). Remember that w(t) = 5 + 20e^(−0·079t).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q8-e-i-ii-solution-1", kind: "point", verbatim: "Graph under the given graph starting and approaching the same limit of 5", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q8-e-i-ii-solution-2", kind: "point", verbatim: "k is any value less than -0.079", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-e-i-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-e-i-ii-question.png",
+          "srcHash": "49b0c13c0efdc9f75403d07ec6747711",
+          "alt": "The question as printed on the paper — A company produces firewood. To make the firewood, the company cuts the wood and then leaves it in a warehouse to dry out. The water content of the wood, w(t), is the percentage of the firewood that is actually water. The following equation describes the water content of the wood while it is drying out: w(t) = 5 + 20e^(−0·079t), where t is the time, in weeks, from the start of the drying process, t ∈ ℝ, t ≥ 0. The company starts using a new warehouse. In this warehouse, the wood dries out faster – that is, the water content of the wood decreases more quickly. The following describes how the water content of the wood, u(t), changes over time while it is drying out in the new warehouse: u(t) = 5 + 20e^(kt). Here, k is a constant and t is the time, in weeks, from the start of the drying process. (i) The diagram below shows the graph of y = w(t) for a given domain of t ∈ ℝ, t ≥ 0. On the same domain, sketch a possible graph of y = u(t). (ii) Write down one possible value of k, so that u(t) describes the wood drying out faster than w(t). Remember that w(t) = 5 + 20e^(−0·079t).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-e-i-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-e-i-ii-solution.png",
+          "srcHash": "3aa6eee7909fcf46b45fb5eabe631328",
+          "alt": "NextStepUni faster-drying graph using k=−0.15, with both curves starting at 25 and approaching 5; followed by original SEC credit notes.",
+          "attribution": "Worked example: NextStepUni. Original credit notes: SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission.",
+          "solution": true,
+          "sourceNote": "The scheme describes the graph in words without drawing it. This NextStepUni example uses k = −0·15; any k < −0·079 is valid. Both curves start at 25%, the faster curve lies below the original for t > 0, and both approach 5%. The displayed 0–60 week scale illustrates the curves; the question itself does not prescribe a numerical time-axis scale.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q8-f", topicId: "maths-3-3", conceptId: "p1-deferred-q8-f",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q8(f)",
+    questionText: "In three consecutive years, the amount of firewood the company produces relative to the previous year increases by 6%, 8%, and 17%, respectively. The total increase over this time is equivalent to an increase of r % each year, compounded annually, where r ∈ ℝ is a constant. Work out the value of r. Give your answer correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q8-f-solution-1", kind: "point", verbatim: "Calculates 1.339416", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q8-f-solution-2", kind: "point", verbatim: "Finds total % increase over the 3 years", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[15],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-f-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-f-question.png",
+          "srcHash": "5a77ab22978fe07adc767734a29fd8e3",
+          "alt": "The question as printed on the paper — In three consecutive years, the amount of firewood the company produces relative to the previous year increases by 6%, 8%, and 17%, respectively. The total increase over this time is equivalent to an increase of r % each year, compounded annually, where r ∈ ℝ is a constant. Work out the value of r. Give your answer correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q8-f-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q8-f-solution.png",
+          "srcHash": "2dbb3ec3f3fcf89944f1948982b02c96",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q8(f).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q9-a", topicId: "maths-5-1", conceptId: "p1-deferred-q9-a",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q9(a)",
+    stem: "The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below.",
+    questionText: "Verify that g cuts the x-axis when x = 1·5.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q9-a-solution-1", kind: "point", verbatim: "correct substitution into given expression or attempt to factorise quadratic", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-a-question.png",
+          "srcHash": "3f2e8bde3e33c92364a3e89d23f5eb01",
+          "alt": "The question as printed on the paper — The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below. Verify that g cuts the x-axis when x = 1·5.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-a-solution.png",
+          "srcHash": "754d3dc95f4cd37217082bc94127d6c6",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q9(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q9-b", topicId: "maths-5-2", conceptId: "p1-deferred-q9-b",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q9(b)",
+    stem: "The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below.",
+    questionText: "Use calculus to find the local maximum point of f(x).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q9-b-solution-1", kind: "point", verbatim: "Fully correct differentiation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-b-question.png",
+          "srcHash": "1e3e3bd08c8034cc7f4ab9e1ee7da8ca",
+          "alt": "The question as printed on the paper — The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below. Use calculus to find the local maximum point of f(x).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-b-solution.png",
+          "srcHash": "bbeba85f1e063d46e6e260de29e5a726",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q9(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Here f is defined for all real x. Its local maximum is (8/3, 64/27); the 0 ≤ x ≤ 2 restriction describes the wave image, not the domain of this local-maximum question.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q9-c", topicId: "maths-5-2", conceptId: "p1-deferred-q9-c",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q9(c)",
+    stem: "The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below.",
+    questionText: "Use calculus to find the x co-ordinate of the steepest part of the graph of f(x), for 0 ≤ x ≤ 2.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q9-c-solution-1", kind: "point", verbatim: "Brings down derivative from (b)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[16],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-c-question.png",
+          "srcHash": "7806f33a953912624e0360370f92128e",
+          "alt": "The question as printed on the paper — The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below. Use calculus to find the x co-ordinate of the steepest part of the graph of f(x), for 0 ≤ x ≤ 2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-c-solution.png",
+          "srcHash": "0a895094f112817393ecf131a42a2275",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q9(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q9-d", topicId: "maths-5-2", conceptId: "p1-deferred-q9-d",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q9(d)",
+    stem: "The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below.",
+    questionText: "Use integration to work out the area of the image of the wave; that is, the area bounded by f, g, and the x-axis, for 0 ≤ x ≤ 2. Remember that f and g are defined as follows: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q9-d-solution-1", kind: "point", verbatim: "Integrate f", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q9-d-solution-2", kind: "point", verbatim: "Integrate g", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q9-d-solution-3", kind: "point", verbatim: "One relevant area calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"markingNote":"The scheme prints 10D, but its numeric awards (0, 4, 6, 10) have the structure of 10C. The card uses 10C to label these bands; every published numeric award is retained.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-d-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-d-question.png",
+          "srcHash": "d1d590a6c1e23dc607bdd4990bc9c27b",
+          "alt": "The question as printed on the paper — The functions f(x) and g(x) are defined as follows, for x ∈ ℝ: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24. The graphs of f and g are used to make an image of a wave for a logo. The wave is the region bounded by f(x), for 0 ≤ x ≤ 2; g(x), for 1·5 ≤ x ≤ 2; and the x-axis. The vertices of the wave are labelled A, B, and C, as shown in the diagram below. Use integration to work out the area of the image of the wave; that is, the area bounded by f, g, and the x-axis, for 0 ≤ x ≤ 2. Remember that f and g are defined as follows: f(x) = −x³/4 + x²; g(x) = −6x² + 25x − 24.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-d-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-d-solution.png",
+          "srcHash": "95b02287dfdac5ea899683f6b595e489",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q9(d).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "Use ∫₀² f(x) dx − ∫₁·₅² g(x) dx. The scheme incorrectly prints a zero lower limit in two intermediate lines for g, but actually substitutes 1·5 and gets the correct area 25/24. Its scale label 10D also disagrees with the four numeric bands 0, 4, 6, 10; these awards are retained under the matching 10C label.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q9-e-i", topicId: "maths-3-4", conceptId: "p1-deferred-q9-e-i",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q9(e)(i)",
+    stem: "A company makes candles in the shape of right circular cones. Each candle is made by pouring melted wax into a container. As it fills the container, the melted wax is always in the shape of a cone. This cone has a radius of r cm. Its height, h cm, is the same as its diameter.",
+    questionText: "Show that V, the volume of the cone in cm³, is given by: V = (2/3)πr³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q9-e-i-solution-1", kind: "point", verbatim: "Lets ℎ= 2r", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[17],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-e-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-e-i-question.png",
+          "srcHash": "6a8bf0c634cff8f9c68f12e6fefa4c33",
+          "alt": "The question as printed on the paper — A company makes candles in the shape of right circular cones. Each candle is made by pouring melted wax into a container. As it fills the container, the melted wax is always in the shape of a cone. This cone has a radius of r cm. Its height, h cm, is the same as its diameter. Show that V, the volume of the cone in cm³, is given by: V = (2/3)πr³.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-e-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-e-i-solution.png",
+          "srcHash": "9b8ba4f0a2157d2ac94cf93169cf0f5d",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q9(e)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q9-e-ii", topicId: "maths-5-2", conceptId: "p1-deferred-q9-e-ii",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q9(e)(ii)",
+    stem: "A company makes candles in the shape of right circular cones. Each candle is made by pouring melted wax into a container. As it fills the container, the melted wax is always in the shape of a cone. This cone has a radius of r cm. Its height, h cm, is the same as its diameter. V = (2/3)πr³.",
+    questionText: "The volume of the cone of melted wax increases at a rate of 0·5 cm³ per second. Find the rate at which the radius of the cone of melted wax is increasing with respect to time when its radius is 4 cm. Give your answer in terms of π.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q9-e-ii-solution-1", kind: "point", verbatim: "states a relevant derivative", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q9-e-ii-solution-2", kind: "point", verbatim: "Have all 3 from MPC list", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[18],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-e-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-e-ii-question.png",
+          "srcHash": "1b7b2bb49d9603da190019833a1df7e7",
+          "alt": "The question as printed on the paper — A company makes candles in the shape of right circular cones. Each candle is made by pouring melted wax into a container. As it fills the container, the melted wax is always in the shape of a cone. This cone has a radius of r cm. Its height, h cm, is the same as its diameter. V = (2/3)πr³. The volume of the cone of melted wax increases at a rate of 0·5 cm³ per second. Find the rate at which the radius of the cone of melted wax is increasing with respect to time when its radius is 4 cm. Give your answer in terms of π.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q9-e-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q9-e-ii-solution.png",
+          "srcHash": "b3e3f44c85d79d46255dd710a99a2186",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q9(e)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q10-a", topicId: "maths-3-1", conceptId: "p1-deferred-q10-a",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q10(a)",
+    stem: "A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D.",
+    questionText: "Complete the table below to show the distance (in centimetres) that the weight travels in each of the first four stages. Where an answer is not a whole number, write it as a fraction. Stage: 1, 2, 3, 4. Distance (cm): blank, 96, blank, blank.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q10-a-solution-1", kind: "point", verbatim: "2 entries correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q10-a-solution-2", kind: "point", verbatim: "Answer(s) in decimal form", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-a-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-a-question.png",
+          "srcHash": "725f714edcb0411947b753adc8423e37",
+          "alt": "The question as printed on the paper — A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D. Complete the table below to show the distance (in centimetres) that the weight travels in each of the first four stages. Where an answer is not a whole number, write it as a fraction. Stage: 1, 2, 3, 4. Distance (cm): blank, 96, blank, blank.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-a-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-a-solution.png",
+          "srcHash": "0d2cd9adc761d4b446c4f5ef11f20fcb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q10(a).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q10-b", topicId: "maths-3-1", conceptId: "p1-deferred-q10-b",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q10(b)",
+    stem: "A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D.",
+    questionText: "Stage p is the first stage where the distance travelled by the weight is less than 10 cm, where p ∈ ℕ. Find the value of p.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q10-b-solution-1", kind: "point", verbatim: "Converts to a log equation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q10-b-solution-2", kind: "point", verbatim: "Trials some values", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-b-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-b-question.png",
+          "srcHash": "5caffb29333f9f1060514215293d63b8",
+          "alt": "The question as printed on the paper — A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D. Stage p is the first stage where the distance travelled by the weight is less than 10 cm, where p ∈ ℕ. Find the value of p.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-b-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-b-solution.png",
+          "srcHash": "b27c8be52b23be45d7b112f8b1bee5bb",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q10(b).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q10-c", topicId: "maths-3-1", conceptId: "p1-deferred-q10-c",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q10(c)",
+    stem: "A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D.",
+    questionText: "Work out the total distance that the weight travels during the first n stages, where n ∈ ℕ. Give your answer, in cm, in terms of n.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q10-c-solution-1", kind: "point", verbatim: "some correct substitution into the Sn formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"markingNote":"The scheme prints 5C, but its numeric awards (0, 2, 5) have the structure of 5B. The card uses 5B to label these bands; every published numeric award is retained.","fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-c-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-c-question.png",
+          "srcHash": "90b5437886e1f8dfbdfd3c40fe72f630",
+          "alt": "The question as printed on the paper — A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D. Work out the total distance that the weight travels during the first n stages, where n ∈ ℕ. Give your answer, in cm, in terms of n.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-c-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-c-solution.png",
+          "srcHash": "0b96e0f6929e1e3a7606d71f61da1e76",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q10(c).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "The scheme prints 5C (0, 2, 5). These three numeric bands have a 5B structure; every published award is retained under the matching 5B label.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q10-d-i", topicId: "maths-3-1", conceptId: "p1-deferred-q10-d-i",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q10(d)(i)",
+    stem: "A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D.",
+    questionText: "Work out the distances |AC| and |AD|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q10-d-i-solution-1", kind: "point", verbatim: "One distance calculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q10-d-i-solution-2", kind: "point", verbatim: "Incorrect unit or no unit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[19],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                30
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-d-i-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-d-i-question.png",
+          "srcHash": "309d88df67c9261af9c550cd1c6f97ce",
+          "alt": "The question as printed on the paper — A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D. Work out the distances |AC| and |AD|.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-d-i-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-d-i-solution.png",
+          "srcHash": "d0c4f8291be7cf2c5f7da133949c0137",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q10(d)(i).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "sourceNote": "To find |AC|, subtract |BC| from |AB|: 120 − 96 = 24 cm. The printed formula incorrectly says |CD| here. The next calculation is correct: |AD| = |AC| + |CD| = 24 + 76·8 = 100·8 cm.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q10-d-ii", topicId: "maths-3-1", conceptId: "p1-deferred-q10-d-ii",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q10(d)(ii)",
+    stem: "A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D.",
+    questionText: "If the weight were to continue moving indefinitely, without stopping, it would tend towards the point X, between A and B. Work out the distance |AX|. Use the formula for S∞, the sum to infinity of a geometric series, in your solution.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q10-d-ii-solution-1", kind: "point", verbatim: "Correct substitution into S∞ formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                30
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-d-ii-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-d-ii-question.png",
+          "srcHash": "ec3c22d37f7921d42a5598eada487ab0",
+          "alt": "The question as printed on the paper — A weight is placed on a horizontal table with a vertical wall at either end. A spring is attached to each of the walls, and to the weight, as shown below. Two points, A and B, are marked on the table, with |AB| = 120 cm. In an experiment, the weight is brought to the point A and then released. It travels back and forth between A and B in stages so that, in each stage, it travels 4/5 of the distance it had travelled in the previous stage, and in the opposite direction. Stage 1: The weight travels 120 cm from A to B. Stage 2: From B, the weight travels back towards A, but only travels 4/5 of the way to A, to a point C. Stage 3: From C, the weight travels back towards B, but only travels 4/5 of the way to B, to a point D. If the weight were to continue moving indefinitely, without stopping, it would tend towards the point X, between A and B. Work out the distance |AX|. Use the formula for S∞, the sum to infinity of a geometric series, in your solution.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-d-ii-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-d-ii-solution.png",
+          "srcHash": "037b47bed9b311a4a6a3704cb3cb2dc2",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q10(d)(ii).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-30"}, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP100EV-deferred",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-deferred-q10-e", topicId: "maths-3-3", conceptId: "p1-deferred-q10-e",
+    section: "B", questionRef: "2024 HL Paper 1 — Deferred Q10(e)",
+    questionText: "Water is pumped into a container through two pipes. For each pipe, the water is pumped at a constant rate. Pipe A can fill the container in 18 minutes. Pipe B can fill the container in 15 minutes. The container is empty. Water is then pumped into the container through the two pipes. After 5 minutes, Pipe A becomes blocked, so that water no longer comes in through Pipe A. Water continues to come in through Pipe B, until the container is full. Find the total length of time taken to fill the container. Give your answer in minutes and seconds. Hint: first find the fraction of the tank that each pipe fills in one minute.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-deferred-q10-e-solution-1", kind: "point", verbatim: "the fraction filled by both pipes in five minutes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p1-deferred-q10-e-solution-2", kind: "point", verbatim: "the fraction left to fill after 5 minutes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV-deferred.pdf","schemePages":[20],"generalNotesPages":[2,3,4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                31
+          ],
+          "sourceFileid": "LC003ALP100EV-deferred.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-e-question",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-e-question.png",
+          "srcHash": "bfd104eb5b0d05712cc261180fbc8045",
+          "alt": "The question as printed on the paper — Water is pumped into a container through two pipes. For each pipe, the water is pumped at a constant rate. Pipe A can fill the container in 18 minutes. Pipe B can fill the container in 15 minutes. The container is empty. Water is then pumped into the container through the two pipes. After 5 minutes, Pipe A becomes blocked, so that water no longer comes in through Pipe A. Water continues to come in through Pipe B, until the container is full. Find the total length of time taken to fill the container. Give your answer in minutes and seconds. Hint: first find the fraction of the tank that each pipe fills in one minute.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-hl-p1-deferred-q10-e-solution",
+          "src": "/exam-figures/maths/markbank/maths-2024-hl-p1-deferred-q10-e-solution.png",
+          "srcHash": "ba7d85ee6f110d6d127c68c269055d60",
+          "alt": "Original SEC worked solution and complete marking guidance for 2024 HL Paper 1 — Deferred Q10(e).",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level, deferred examination — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

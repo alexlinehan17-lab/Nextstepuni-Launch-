@@ -140,7 +140,7 @@
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
-  "latestBatch": "deferred2025higherPaper2",
+  "latestBatch": "deferred2024higherPaper1",
   "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
@@ -8404,6 +8404,38 @@
     ],
     "reproduction": "New generator reproduced its committed cards and review ledger byte for byte.",
     "pendingEnglishDeferredPapers": 12,
+    "wholeSubjectComplete": false
+  },
+  "deferred2024higherPaper1": {
+    "date": "2026-10-30",
+    "runtimeCardsAdded": 40,
+    "offeredMarks": 380,
+    "runtimeCards": 4676,
+    "reviewedPaperEditions": 116,
+    "runtimeByLevel": {
+      "higher": 1693,
+      "ordinary": 1846,
+      "foundation": 1137
+    },
+    "reviewedAtlasPlacements": 1094,
+    "hostedQuestionAnswerAnchors": 10,
+    "inspectedTypesetImages": 80,
+    "targetedTests": 414,
+    "pythonAuditTests": 13,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "sourceHashesAndSelectionAudit": "passed",
+    "previousAuthoredRecordsUnchanged": 4637,
+    "previousDeferredImagesUnchanged": 338,
+    "browser": "Desktop complete shed-profit graph, 7/10 award, enlargement and original deferred scheme page 12 rendered. Phone 390x844: normalized Q8(d) bands 0/2/5, 2/5 selection, source note and zoom verified. Viewport restored.",
+    "sourceCorrections": [
+      "Correct simultaneous-equation pairings supplied in an attributed NextStepUni example.",
+      "Missing Argand, shed-profit and faster-drying diagrams supplied with original SEC credit notes.",
+      "Four inconsistent scale letters normalized to their printed numeric bands without altering any award.",
+      "Strict positive-integral interval, local-maximum domain, wave integration limits and spring-distance typo explained."
+    ],
+    "reproduction": "Pending committed-generator check.",
+    "pendingEnglishDeferredPapers": 11,
     "wholeSubjectComplete": false
   }
 }

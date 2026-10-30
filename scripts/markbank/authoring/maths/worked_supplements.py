@@ -21,6 +21,9 @@ def probability_tree_values():
 
 
 def render_supplement(name, dpi=200):
+    examples = {'argand-2024-hl-deferred':render_argand_2024, 'shed-2024-hl-deferred':render_shed_2024, 'drying-2024-hl-deferred':render_drying_2024, 'pairs-2024-hl-deferred':render_pairs_2024}
+    if name in examples:
+        return examples[name](dpi)
     if name == 'skydiver-graph-2025-hl-deferred':
         return render_skydiver_graph(dpi)
     if name != 'probability-tree-2025-ol-deferred':
@@ -108,3 +111,116 @@ def render_skydiver_graph(dpi=200):
     c.save()
     doc=fitz.open(stream=buf.getvalue(),filetype='pdf')
     return Image.open(BytesIO(doc[0].get_pixmap(dpi=dpi).tobytes('png'))).convert('RGB')
+
+
+def shed_profit(x):
+    return 400*x-5*x*x-0.4*x*x*x-900
+
+
+def drying_water(t,k=-0.079):
+    return 5+20*exp(k*t)
+
+
+def _example_canvas(title,subtitle,height):
+    buf=BytesIO(); c=canvas.Canvas(buf,pagesize=(560,height),invariant=1)
+    c.setTitle('NextStepUni worked example — '+title)
+    c.setFillColorRGB(.12,.12,.11)
+    c.setFont('Times-Bold',21);c.drawString(22,height-31,title)
+    c.setFont('Helvetica',10);c.drawString(22,height-51,subtitle)
+    c.setStrokeColorRGB(.90,.39,.15);c.setLineWidth(2);c.line(22,height-65,538,height-65)
+    c.setStrokeColorRGB(.18,.18,.16);c.setLineWidth(1)
+    c.setFont('Helvetica',9);c.drawString(22,17,'NextStepUni worked example. Original SEC credit notes follow below.')
+    return buf,c
+
+
+def _example_image(buf,c,dpi):
+    c.save();doc=fitz.open(stream=buf.getvalue(),filetype='pdf')
+    return Image.open(BytesIO(doc[0].get_pixmap(dpi=dpi).tobytes('png'))).convert('RGB')
+
+
+def render_argand_2024(dpi):
+    buf,c=_example_canvas('Labelling the four complex numbers','2024 deferred Higher Paper 1 · Q4(b) · schematic, with no numeric scale',435)
+    ox,oy,unit=280,157,43
+    c.line(90,oy,450,oy);c.line(ox,55,ox,354)
+    for x,y,dx,dy in [(450,oy,-7,4),(450,oy,-7,-4),(ox,354,-4,-7),(ox,354,4,-7)]:c.line(x,y,x+dx,y+dy)
+    c.setFont('Times-Italic',14);c.drawString(458,oy-4,'Re');c.drawString(ox+10,348,'Im')
+    # These proportional vectors reproduce the relationships, not coordinates claimed by the paper.
+    for label,x,y,explanation in [('z',-1,2,'z'),('y',-2,4,'y = 2z'),('x',1,-2,'x = -z'),('w',-2,-1,'w = iz')]:
+        px,py=ox+x*unit,oy+y*unit;c.circle(px,py,3,stroke=0,fill=1)
+        c.setFont('Times-Italic',17);c.drawString(px+10,py-4,explanation)
+    c.setFont('Helvetica',10);c.drawString(22,35,'Doubling stretches from the origin; negation turns 180°; multiplying by i turns 90° anticlockwise.')
+    return _example_image(buf,c,dpi)
+
+
+def render_shed_2024(dpi):
+    buf,c=_example_canvas('Profit from shed type F','2024 deferred Higher Paper 1 · Q7(a) · corrected table and complete graph',490)
+    left,width=22,516
+    c.setStrokeColorRGB(.72,.72,.69);c.setLineWidth(.6)
+    for y in [412,388,364]:c.line(left,y,left+width,y)
+    for i in range(8):
+        x=left+i*width/7;c.line(x,364,x,412)
+    c.setFont('Times-Italic',12);c.drawCentredString(left+width/14,396,'x');c.drawCentredString(left+width/14,372,'f(x)')
+    c.setFont('Helvetica',11)
+    for i,x in enumerate(range(0,26,5),1):
+        px=left+(i+.5)*width/7;c.drawCentredString(px,396,str(x));c.drawCentredString(px,372,str(round(shed_profit(x))))
+    x0,y0,w,h=78,87,430,228
+    def X(x):return x0+w*x/25
+    def Y(y):return y0+h*(y+1000)/4000
+    c.setFont('Helvetica',10);c.drawString(x0,337,'Profit f(x) (euro)')
+    c.setStrokeColorRGB(.87,.87,.85);c.setLineWidth(.5)
+    for x in range(0,26,5):c.line(X(x),y0,X(x),y0+h)
+    for y in range(-1000,3001,1000):c.line(x0,Y(y),x0+w,Y(y))
+    c.setStrokeColorRGB(.15,.15,.14);c.setLineWidth(1);c.line(x0,Y(0),x0+w+6,Y(0));c.line(x0,y0,x0,y0+h+6)
+    c.setFont('Helvetica',10)
+    for x in range(0,26,5):c.drawCentredString(X(x),y0-18,str(x))
+    for y in range(-1000,3001,1000):c.drawRightString(x0-10,Y(y)-3,str(y))
+    c.drawRightString(x0+w,44,'Number of sheds x')
+    path=c.beginPath();path.moveTo(X(0),Y(shed_profit(0)))
+    for i in range(1,501):
+        x=i/20;path.lineTo(X(x),Y(shed_profit(x)))
+    c.setLineWidth(1.7);c.drawPath(path)
+    for x in range(0,26,5):c.circle(X(x),Y(shed_profit(x)),2.4,stroke=0,fill=1)
+    return _example_image(buf,c,dpi)
+
+
+def render_drying_2024(dpi):
+    buf,c=_example_canvas('A possible faster drying curve','2024 deferred Higher Paper 1 · Q8(e) · one valid example: k = -0.15',430)
+    x0,y0,w,h=72,100,430,215
+    def X(t):return x0+w*t/60
+    def Y(y):return y0+h*y/25
+    c.setFont('Helvetica',10);c.drawString(x0,338,'Water content (%)')
+    c.setStrokeColorRGB(.87,.87,.85);c.setLineWidth(.5)
+    for t in range(0,61,10):c.line(X(t),y0,X(t),y0+h)
+    for y in range(0,26,5):c.line(x0,Y(y),x0+w,Y(y))
+    c.setStrokeColorRGB(.15,.15,.14);c.setLineWidth(1);c.line(x0,y0,x0+w+6,y0);c.line(x0,y0,x0,y0+h+6)
+    c.setFont('Helvetica',10)
+    for t in range(0,61,10):c.drawCentredString(X(t),y0-18,str(t))
+    for y in range(0,26,5):c.drawRightString(x0-10,Y(y)-3,str(y))
+    c.drawRightString(x0+w,58,'Time t (weeks)')
+    c.setDash(4,3);c.line(x0,Y(5),x0+w,Y(5));c.setDash()
+    for k,col in [(-.079,(.15,.15,.14)),(-.15,(.90,.39,.15))]:
+        c.setStrokeColorRGB(*col);c.setLineWidth(1.8)
+        path=c.beginPath();path.moveTo(X(0),Y(25))
+        for i in range(1,601):path.lineTo(X(i/10),Y(drying_water(i/10,k)))
+        c.drawPath(path)
+    c.setFont('Times-Italic',13);c.drawString(X(22),Y(10),'w(t)')
+    c.setFillColorRGB(.90,.39,.15);c.drawString(X(8),Y(12),'u(t)')
+    c.setFillColorRGB(.12,.12,.11);c.setFont('Helvetica',10)
+    c.drawString(22,36,'Both start at 25%. For t > 0, u(t) lies below w(t). Both approach 5%.')
+    return _example_image(buf,c,dpi)
+
+
+def render_pairs_2024(dpi):
+    buf,c=_example_canvas('The two simultaneous solutions','2024 deferred Higher Paper 1 · Q1(c) · corrected pairings',348)
+    c.setFont('Times-Roman',16)
+    c.drawString(28,253,'4x + 2y = -7')
+    c.drawString(280,253,'y = (-7 - 4x) / 2')
+    c.drawString(28,218,'Substitute into the first equation:')
+    c.drawString(280,218,'x² + 2x - 24 = 0')
+    c.drawString(280,188,'(x - 4)(x + 6) = 0')
+    for x,value,numerator in [(28,4,'-23'),(295,-6,'17')]:
+        c.setFont('Times-Bold',18);c.drawString(x,144,f'x = {value}')
+        c.setFont('Times-Roman',17);c.drawString(x,109,f'y = (-7 - 4({value})) / 2')
+        c.drawString(x,68,'y =');c.drawCentredString(x+61,76,numerator)
+        c.line(x+43,71,x+79,71);c.drawCentredString(x+61,53,'2')
+    return _example_image(buf,c,dpi)
