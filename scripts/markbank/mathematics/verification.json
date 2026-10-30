@@ -8310,7 +8310,7 @@
     "productionBuild": "passed",
     "sourceHashesAndSelectionAudit": "passed",
     "browser": "Desktop question and worked solution, exact task-specific scale, original scheme page 8 and phone-width layout verified.",
-    "reproduction": "pending committed-byte check",
+    "reproduction": "New deferred generator and all four existing generators that use solution_lib reproduced their committed cards and ledgers byte for byte.",
     "wholeSubjectComplete": false
   }
 }
