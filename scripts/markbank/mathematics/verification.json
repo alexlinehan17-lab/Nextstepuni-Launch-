@@ -8434,7 +8434,7 @@
       "Four inconsistent scale letters normalized to their printed numeric bands without altering any award.",
       "Strict positive-integral interval, local-maximum domain, wave integration limits and spring-distance typo explained."
     ],
-    "reproduction": "Pending committed-generator check.",
+    "reproduction": "New generator reproduced its committed cards and review ledger byte for byte.",
     "pendingEnglishDeferredPapers": 11,
     "wholeSubjectComplete": false
   }
