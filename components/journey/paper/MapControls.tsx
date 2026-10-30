@@ -1,4 +1,5 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import KobraScope, { Button, Input } from "../../approved-ui-runtime";
+import React, { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import {
   ArrowUpRight,
   Check,
@@ -80,6 +81,7 @@ export function IslandMap({
   /** The map's accessible name; a classmate's island names its owner. */
   label?: string;
 }) {
+  const silhouetteId = `journey-silhouette-${useId().replace(/:/g, "")}`;
   const [narrow, setNarrow] = useState(
     () => window.matchMedia("(max-width:700px)").matches,
   );
@@ -149,6 +151,7 @@ export function IslandMap({
         <PaintedWorld placed={world.placed} style="pencilatlas" view={view} />
         <svg
           className="student-map"
+          style={{ "--map-silhouette": `url(#${silhouetteId})` } as React.CSSProperties}
           viewBox={`${view.x} ${view.y} ${view.width} ${view.height}`}
           preserveAspectRatio="xMidYMid slice"
           role="group"
@@ -214,6 +217,14 @@ export function IslandMap({
             }
           }}
         >
+          <defs>
+            <filter id={silhouetteId} x="-15%" y="-15%" width="130%" height="130%" colorInterpolationFilters="sRGB">
+              <feMorphology in="SourceAlpha" operator="dilate" radius="3" result="edge" />
+              <feFlood floodColor="#111111" result="ink" />
+              <feComposite in="ink" in2="edge" operator="in" result="silhouette" />
+              <feMerge><feMergeNode in="silhouette" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
           {building &&
             slots.map((cell, index) => (
               <g
@@ -350,13 +361,12 @@ export function IslandMap({
                   }
                 }}
               >
-                <circle r="100" className="discovery-focus" />
-                <StickerRaster
+                <g className="map-character-art"><StickerRaster
                   src={stickerSrc(d.id)}
                   x={-80}
                   y={-80}
                   size={160}
-                />
+                /></g>
               </g>
             );
           })}
@@ -365,7 +375,7 @@ export function IslandMap({
             transform={`translate(${centre(visitor.q,visitor.r).x+70} ${centre(visitor.q,visitor.r).y-190})`}
             role="button" tabIndex={0} aria-label={`Meet ${crewById[visitor.id].name}`}
             onClick={()=>onVisit(visitor.id)} onKeyDown={event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();onVisit(visitor.id);}}}
-          ><image href={crewArt(visitor.id)} x="-52" y="-100" width="104" height="104"/><rect x="-54" y="7" width="108" height="29" rx="5"/><text y="27">{crewById[visitor.id].name}</text></g>}
+          ><image className="map-character-art" href={crewArt(visitor.id)} x="-52" y="-100" width="104" height="104"/><rect x="-54" y="7" width="108" height="29" rx="5"/><text y="27">{crewById[visitor.id].name}</text></g>}
         </svg>
       </div>
       <div className="map-navigation">
@@ -452,13 +462,19 @@ export function TileShelf({
   setGroup: (group: ShelfGroup) => void;
   orientation: "row" | "column";
 }) {
-  const scroller = useRef<HTMLDivElement>(null),
-    items = buildable.filter(
-      (t) => group === "All tiles" || groupFor(t.id) === group,
-    ),groups=wonders.length?[...shelfGroups,"Wonder tiles" as const]:shelfGroups;
+  const [query, setQuery] = useState("");
+  const scroller = useRef<HTMLDivElement>(null);
+  const search = query.trim().toLowerCase();
+  const items = buildable.filter(
+    tile => (group === "All tiles" || groupFor(tile.id) === group)
+      && tile.name.toLowerCase().includes(search),
+  );
+  const visibleWonders = wonders.filter(id => crewById[id].wonder.toLowerCase().includes(search));
+  const groups = wonders.length ? [...shelfGroups, "Wonder tiles" as const] : shelfGroups;
+  const tileCount = group === "Wonder tiles" ? visibleWonders.length : items.length;
   useEffect(() => {
     scroller.current?.scrollTo({ left: 0, top: 0, behavior: "instant" });
-  }, [group]);
+  }, [group, query]);
   useEffect(() => {
     const track = scroller.current;
     if (!track) return;
@@ -486,6 +502,11 @@ export function TileShelf({
       className={`tile-shelf ${orientation}`}
       aria-label="Tile collection"
     >
+      <div className="tile-library-heading">
+        <span className="eyebrow">THE TILE COLLECTION</span>
+        <Input type="search" aria-label="Search tiles" placeholder="Find a tile…"
+          value={query} onChange={event => setQuery(event.target.value)} />
+      </div>
       <div className="category-heading">
         <nav className="tile-categories" aria-label="Tile categories">
           {groups.map((name) => (
@@ -498,7 +519,7 @@ export function TileShelf({
             </button>
           ))}
         </nav>
-        <span>{group==="Wonder tiles"?wonders.length:items.length} tiles</span>
+        <span>{tileCount} {tileCount === 1 ? "tile" : "tiles"}</span>
       </div>
       <div className="student-tile-grid" ref={scroller}>
         {items.map((item) => {
@@ -524,7 +545,8 @@ export function TileShelf({
             </button>
           );
         })}
-        {group==="Wonder tiles"&&wonders.map(id=><button className="shelf-tile" key={id} aria-label={`Choose ${crewById[id].wonder}`} aria-pressed={chosenWonder===id} onClick={()=>onChooseWonder?.(id)}><span className="shelf-portrait"><WonderTileArt id={id} className="tile-portrait"/></span><strong>{crewById[id].wonder}</strong><span>Earned · yours to place</span></button>)}
+        {group==="Wonder tiles"&&visibleWonders.map(id=><button className="shelf-tile" key={id} aria-label={`Choose ${crewById[id].wonder}`} aria-pressed={chosenWonder===id} onClick={()=>onChooseWonder?.(id)}><span className="shelf-portrait"><WonderTileArt id={id} className="tile-portrait"/></span><strong>{crewById[id].wonder}</strong><span>Earned · yours to place</span></button>)}
+        {tileCount === 0 && <p className="tile-search-empty">No tiles match. Try another name or category.</p>}
       </div>
     </section>
   );
@@ -560,13 +582,14 @@ export function Placement({
       className={`placement-inspector ${full ? "full" : ""}`}
       aria-label="Your selected tile"
     >
+      <span className="eyebrow placement-step">{candidate ? "02 / READY TO PLACE" : "01 / CHOOSE A CORNER"}</span>
       {full && (chosenWonder?<WonderTileArt id={chosenWonder}/>:<TilePortrait kind={chosen} />)}
       <div className="placement-title">
         <h3>{t.name}</h3>
         <span>{chosenWonder?"A visitor’s gift":`${t.price} JP`}</span>
       </div>
-      {full && <p>{t.description}</p>}
-      <button
+      <p className="placement-description">{t.description}</p>
+      <Button
         className="primary-action place-action"
         disabled={busy || !candidate || !canPay}
         onClick={onPlace}
@@ -585,7 +608,7 @@ export function Placement({
             <ArrowUpRight size={19} />
           )}
         </span>
-      </button>
+      </Button>
       <div className="placement-foot">
         <span>
           {candidate && canPay
@@ -593,7 +616,7 @@ export function Placement({
             : "Tap a tile on your island to swap or remove it"}
         </span>
         <button
-          aria-label="Undo last placement"
+          aria-label="Undo last change"
           disabled={busy || !world.history.length}
           onClick={onUndo}
         >
@@ -615,6 +638,8 @@ export function TileEditor({
   note,
   busy,
   onReplace,
+  onUndo,
+  canUndo,
   onRemove,
   onClose,
 }: {
@@ -628,11 +653,14 @@ export function TileEditor({
   note: string | null;
   busy: boolean;
   onReplace: () => void;
+  onUndo: () => void;
+  canUndo: boolean;
   onRemove: () => void;
   onClose: () => void;
 }) {
   return (
     <aside className="placement-inspector tile-editor" aria-label={`Change ${name}`}>
+      <span className="eyebrow placement-step">EDIT SELECTED TILE</span>
       <div className="placement-title">
         <h3>{name}</h3>
         <button className="tile-editor-close" aria-label="Stop changing this tile" onClick={onClose}>
@@ -657,6 +685,7 @@ export function TileEditor({
           <small>{removeNote}</small>
         </button>
       </div>
+      <button className="tile-editor-undo" disabled={busy || !canUndo} onClick={onUndo} aria-label="Undo last change"><Undo2 size={14} /> Undo last change</button>
       <p className="tile-editor-note" role={note ? "status" : undefined}>
         {note || "Choose a shelf tile to swap in, or tap an open corner to build."}
       </p>
@@ -701,7 +730,7 @@ export function Overlay({
       >
         <X size={22} />
       </button>
-      {children}
+      <KobraScope className="journey-panel-controls">{children}</KobraScope>
     </dialog>
   );
 }

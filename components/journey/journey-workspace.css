@@ -1,0 +1,226 @@
+/* Journey controls use the approved Kobra runtime and NextStepUni's quiet ink
+   palette. Map artwork retains its original colours. */
+.journey-paper.journey-paper {
+  --journey-paper: #fff;
+  --journey-panel: #f7f7f4;
+  --journey-ink: #252525;
+  --journey-muted: #676963;
+  --journey-line: #d6d7d1;
+  --journey-selected: #252525;
+  --journey-on-selected: #fafaf7;
+  --journey-focus: #383833;
+  --journey-visit-line: #d6d7d1;
+  --journey-visit-hover: #eeeee9;
+  --journey-visit-hover-line: #8e9087;
+  --journey-visit-arrow: #75776d;
+}
+.dark .journey-paper.journey-paper {
+  --journey-paper: #151515;
+  --journey-panel: #212121;
+  --journey-ink: #f3f2ee;
+  --journey-muted: #aaa9a3;
+  --journey-line: #41413d;
+  --journey-selected: #eeede7;
+  --journey-on-selected: #202020;
+  --journey-focus: #e4e2db;
+  --journey-visit-line: #4c4c46;
+  --journey-visit-hover: #292928;
+  --journey-visit-hover-line: #77776f;
+  --journey-visit-arrow: #85857d;
+}
+.journey-paper.journey-paper { --ink:var(--journey-ink); --muted:var(--journey-muted); --line:var(--journey-line); color:var(--ink); background:var(--journey-paper); }
+.journey-paper.journey-paper :is(button,input,a,[tabindex]):focus-visible { outline:2px solid var(--journey-focus); outline-offset:3px; box-shadow:none; }
+.journey-paper.journey-paper .student-nav { background:var(--journey-paper); color:var(--ink); border-bottom:1px solid var(--line); padding-inline:26px; }
+.journey-paper .island-wallet { padding:8px 12px; border:1px solid var(--line); border-radius:12px; }
+.journey-paper.journey-paper .jp-coin { background:transparent; color:var(--muted); border-color:var(--line); }
+.journey-paper.journey-paper .island-dock { background:var(--journey-paper); color:var(--ink); border:1px solid var(--line); border-radius:18px; padding:8px; box-shadow:0 12px 32px #0002; gap:5px; }
+.journey-paper.journey-paper .island-dock > button { min-height:48px; border-radius:11px; padding-inline:18px; font-size:12px; gap:10px; }
+.journey-paper.journey-paper .island-dock > button:hover { background:var(--journey-panel); }
+.journey-paper.journey-paper :is(.primary-action,.visitor-action) { background:var(--journey-selected); color:var(--journey-on-selected); border:1px solid var(--journey-line); border-radius:10px; box-shadow:none; }
+.journey-paper.journey-paper :is(.primary-action,.visitor-action):hover:not(:disabled) { background:var(--journey-selected); filter:brightness(.92); transform:none; box-shadow:none; }
+.journey-paper.journey-paper :is(.primary-action,.visitor-action):disabled { background:var(--journey-panel); color:var(--muted); border-color:var(--line); opacity:.7; }
+.journey-paper.journey-paper :is(.year-entry,.visit-banner) { background:var(--journey-paper); color:var(--ink); border:1px solid var(--line); border-radius:14px; padding:12px; box-shadow:0 8px 20px #0001; }
+.journey-paper.journey-paper .year-entry:hover { transform:translateY(-2px); box-shadow:0 10px 24px #0002; }
+.journey-paper.journey-paper .year-entry-icon { background:var(--journey-panel); color:var(--ink); border:1px solid var(--line); border-radius:9px; }
+.journey-paper .journey-build-heading { position:absolute; top:20px; left:24px; z-index:6; display:grid; gap:6px; max-width:440px; padding:16px 20px; color:var(--ink); background:var(--journey-paper); border:1px solid var(--line); border-radius:14px; pointer-events:none; box-shadow:0 8px 24px #0001; }
+.journey-paper .journey-build-heading strong { font:500 25px/1.15 var(--serif); letter-spacing:-.6px; }
+.journey-paper .journey-build-heading > span:last-child { font-size:11px; color:var(--muted); }
+.journey-paper.journey-paper .eyebrow { color:var(--rust); font-size:10px; letter-spacing:1.5px; }
+.journey-paper.journey-paper .coast-done { background:var(--journey-paper); border:1px solid var(--line); border-radius:10px; color:var(--ink); min-height:44px; font-size:12px; gap:8px; }
+.journey-paper.journey-paper.is-building .coast-build-tray { height:278px; }
+.journey-paper.journey-paper .coast-build-tray { background:var(--journey-paper); border-color:var(--line); grid-template-columns:minmax(0,1fr) 330px; }
+.journey-paper.journey-paper .coast-build-tray > .tile-shelf { padding:18px 24px; min-height:277px; }
+.journey-paper .tile-library-heading { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:12px; }
+.journey-paper .tile-library-heading input { width:230px; height:34px; min-height:34px; background:var(--journey-panel); color:var(--ink); border:1px solid var(--line); border-radius:8px; font-size:12px; padding:7px 12px; }
+.journey-paper.journey-paper .tile-categories { gap:5px; border:0; flex-wrap:nowrap; overflow:auto; scrollbar-width:thin; }
+.journey-paper.journey-paper .tile-categories > button { padding:7px 12px; border:1px solid var(--line); border-radius:8px; font-size:11px; color:var(--muted); }
+.journey-paper.journey-paper .tile-categories > button[aria-pressed=true] { color:var(--journey-on-selected); background:var(--journey-selected); border-color:var(--journey-selected); }
+.journey-paper .tile-categories > button[aria-pressed=true]::after { display:none; }
+.journey-paper.journey-paper .coast-build-tray .student-tile-grid { margin-top:13px; grid-auto-columns:138px; grid-auto-rows:140px; gap:10px; padding-bottom:6px; scrollbar-width:thin; }
+.journey-paper.journey-paper .shelf-tile { background:var(--journey-panel); border:1px solid var(--line); border-radius:12px; padding:8px; }
+.journey-paper.journey-paper .shelf-tile[aria-pressed=true] { background:var(--journey-panel); border:2px solid var(--journey-focus); box-shadow:inset 0 0 0 1px var(--journey-paper); }
+.journey-paper.journey-paper .shelf-tile:hover { border-color:var(--journey-focus); background:var(--journey-panel); }
+.journey-paper.journey-paper .shelf-tile > strong { font-size:11px; line-height:1.4; color:var(--ink); }
+.journey-paper.journey-paper .shelf-tile > span:not(.shelf-portrait) { font-size:10px; color:var(--muted); }
+.journey-paper.journey-paper .coast-build-tray > .placement-inspector { background:var(--journey-panel); border-color:var(--line); min-height:277px; padding:22px; display:block; }
+.journey-paper .placement-step { display:block; margin-bottom:12px; }
+.journey-paper.journey-paper .placement-title h3 { font:500 26px/1.1 var(--serif); letter-spacing:-.7px; }
+.journey-paper .placement-description { font-size:12px; line-height:1.55; color:var(--muted); margin-top:10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.journey-paper.journey-paper .place-action { min-height:44px; font-size:12px; margin-top:16px; }
+.journey-paper.journey-paper .placement-foot { font-size:10px; line-height:1.6; color:var(--muted); }
+.journey-paper.journey-paper .placement-foot button { min-height:32px; padding:4px 8px; border:1px solid var(--line); border-radius:7px; color:var(--ink); }
+.journey-paper.journey-paper :is(.tile-editor-close,.tile-remove-action) { background:var(--journey-paper); border:1px solid var(--line); color:var(--ink); border-radius:8px; }
+.journey-paper.journey-paper .tile-editor-note { font-size:11px; line-height:1.6; }
+.journey-paper.journey-paper .tile-remove-action:disabled { background:var(--journey-panel); color:var(--muted); border-color:var(--line); }
+.journey-paper .tile-search-empty { font-size:12px; color:var(--muted); grid-column:1 / span 3; padding:24px 4px; }
+.journey-paper.journey-paper.island-dialog { background:var(--journey-paper); color:var(--ink); border:1px solid var(--line); border-radius:20px; box-shadow:0 24px 90px #0005; }
+.journey-paper.journey-paper.island-dialog::backdrop { background:#0008; backdrop-filter:blur(5px); }
+.journey-paper.journey-paper :is(.visitors-book,.visitor-panel,.year-book) { background:var(--journey-paper); color:var(--ink); --muted:var(--journey-muted); --line:var(--journey-line); --ink:var(--journey-ink); }
+.journey-paper.journey-paper :is(.visitors-book-heading h2,.visitor-panel h2,.year-book-heading h2) { font:500 45px/1.1 var(--serif); letter-spacing:-1.5px; }
+.journey-paper.journey-paper :is(.visitors-book-heading>p,.visitor-introduction-copy>p,.visitor-saved-note,.year-book-heading>p,.visitor-card-role,.visitor-card-status,.visitors-book-count) { color:var(--muted); }
+.journey-paper.journey-paper :is(.visitor-collection-card,.year-classmate-card) { background:var(--journey-panel); border:1px solid var(--line); border-radius:14px; color:var(--ink); box-shadow:none; transition:transform .18s,border-color .18s; }
+.journey-paper.journey-paper :is(.visitor-collection-card,.year-classmate-card):hover { transform:translateY(-3px); border-color:var(--journey-focus); box-shadow:0 10px 25px #0002; }
+.journey-paper.journey-paper .visitor-card-name { font:500 28px/1.2 var(--serif); letter-spacing:-.5px; }
+.journey-paper.journey-paper :is(.year-sharing,.visitor-wish) { background:var(--journey-panel); border:1px solid var(--line); border-radius:12px; }
+/* Approved “Open invitation”: the visit action belongs to the card footer. */
+.journey-paper.journey-paper .year-classmate-who { padding-bottom:14px; }
+.journey-paper.journey-paper .year-visit-cta {
+  align-self:stretch; justify-content:space-between; gap:8px;
+  margin:0; padding:11px 16px; min-height:60px;
+  border:0; border-top:1px solid var(--journey-visit-line); border-radius:0;
+  background:transparent; color:var(--ink); font-size:12px; font-weight:600;
+  transition:background .18s,color .18s,border-color .18s;
+}
+.journey-paper.journey-paper .year-visit-cta svg {
+  width:30px; height:30px; padding:7px;
+  border:1px solid var(--journey-visit-arrow); border-radius:50%;
+  transition:background .18s,color .18s,border-color .18s;
+}
+.journey-paper.journey-paper .year-classmate-card:is(:hover,:focus-visible) .year-visit-cta {
+  background:var(--journey-visit-hover); color:var(--ink); border-top-color:var(--journey-visit-hover-line);
+}
+.journey-paper.journey-paper .year-classmate-card:is(:hover,:focus-visible) .year-visit-cta svg {
+  background:var(--journey-selected); color:var(--journey-on-selected); border-color:var(--journey-selected);
+}
+.journey-paper .visitor-filters { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+.journey-paper .visitor-filters button { min-height:36px; font-size:12px; border:1px solid var(--line); border-radius:9px; padding:7px 13px; }
+.journey-paper .visitor-filters button[aria-pressed=true] { background:var(--journey-selected); color:var(--journey-on-selected); }
+.journey-paper .visitor-filter-empty { margin-top:24px; padding:24px 0; color:var(--muted); font-size:14px; }
+.journey-paper.journey-paper .fieldbook-tabs button[aria-pressed=true] { border-color:var(--journey-focus); }
+.journey-paper.journey-paper .dialog-close { background:var(--journey-panel); color:var(--ink); border:1px solid var(--line); border-radius:50%; width:36px; height:36px; }
+@media(max-width:900px) {
+  .journey-paper.journey-paper .coast-build-tray { grid-template-columns:minmax(0,1fr) 280px; }
+  .journey-paper .tile-library-heading > .eyebrow { display:none; }
+  .journey-paper .tile-library-heading input { width:100%; }
+  .journey-paper.journey-paper .island-dock > button { padding-inline:11px; }
+}
+@media(max-width:700px) {
+  .journey-paper.journey-paper .student-nav { padding-inline:14px; }
+  .journey-paper .island-wallet { padding:5px 8px; }
+  .journey-paper .journey-build-heading { top:12px; left:12px; padding:10px 12px; max-width:calc(100% - 155px); }
+  .journey-paper .journey-build-heading strong { font-size:17px; }
+  .journey-paper .journey-build-heading > span:last-child { display:none; }
+  .journey-paper .journey-build-heading .eyebrow { font-size:8px; letter-spacing:1px; }
+  .journey-paper.journey-paper .coast-done { top:12px; right:12px; padding:8px 10px; font-size:11px; }
+  .journey-paper.journey-paper.is-building .coast-build-tray { height:330px; }
+  .journey-paper.journey-paper .coast-build-tray > .tile-shelf { padding:10px 12px; height:193px; min-height:193px; }
+  .journey-paper .tile-library-heading { margin-bottom:7px; }
+  .journey-paper .tile-library-heading input { height:30px; min-height:30px; }
+  .journey-paper.journey-paper .tile-categories > button { padding:5px 9px; }
+  .journey-paper.journey-paper .coast-build-tray .student-tile-grid { grid-auto-columns:112px; grid-auto-rows:100px; margin-top:8px; }
+  .journey-paper.journey-paper .coast-build-tray > .placement-inspector { padding:12px 16px; min-height:137px; height:137px; display:grid; grid-template-columns:minmax(0,1fr) 160px; gap:6px 12px; align-content:center; }
+  .journey-paper .placement-step { display:none; }
+  .journey-paper.journey-paper .placement-title { grid-column:1; grid-row:1; }
+  .journey-paper.journey-paper .placement-title h3 { font-size:21px; }
+  .journey-paper .placement-description { display:none; }
+  .journey-paper.journey-paper .place-action { margin:0; grid-column:2; grid-row:1; font-size:11px; }
+  .journey-paper.journey-paper .placement-foot { grid-column:1 / -1; grid-row:2; margin-top:2px; display:flex; font-size:10px; }
+  .journey-paper.journey-paper .tile-editor-actions { grid-row:1 / 3; grid-column:2; }
+  .journey-paper.journey-paper .tile-editor-note { grid-column:1; grid-row:2; font-size:10px; }
+  .journey-paper.journey-paper .island-dock { max-width:calc(100% - 24px); border-radius:14px; }
+  .journey-paper.journey-paper .island-dock > button { padding:8px; min-height:42px; font-size:10px; }
+  .journey-paper.journey-paper :is(.visitors-book-heading h2,.visitor-panel h2,.year-book-heading h2) { font-size:34px; }
+  .journey-paper.journey-paper .visitor-card-name { font-size:24px; }
+}
+@media(prefers-reduced-motion:reduce) { .journey-paper.journey-paper * { transition:none!important; animation:none!important; } }
+.journey-paper .tile-editor-undo { display:inline-flex; align-items:center; gap:7px; font-size:11px; margin-top:9px; min-height:28px; text-decoration:underline; text-underline-offset:3px; }
+.journey-paper.journey-paper .map-placement-slot.selected .slot-highlight,
+.journey-paper.journey-paper .map-placement-slot:focus-visible .slot-highlight,
+.journey-paper.journey-paper .island-tile-edit:focus-visible,
+.journey-paper.journey-paper .island-tile-edit.selected { stroke:#383833; fill:#ffffff26; }
+@media(max-width:700px) {
+ .journey-paper .tile-editor-undo { grid-row:3; grid-column:1; margin:0; font-size:10px; }
+ .journey-paper.journey-paper .tile-editor-note { font-size:9px; line-height:1.3; }
+}
+.journey-paper .journey-panel-controls { --ink:var(--journey-ink); --muted:var(--journey-muted); --line:var(--journey-line); }
+.dark .journey-paper.journey-paper .eyebrow { color:#ee9b70; }
+.journey-paper.journey-paper .fieldbook-tabs button { color:var(--journey-muted); }
+.journey-paper.journey-paper .fieldbook-tabs button[aria-pressed=true] { color:var(--journey-ink); }
+.journey-paper.journey-paper .year-sharing { padding:18px; }
+.journey-paper.journey-paper :is(.visitor-role,.visitor-wonder-preview small,.visitor-wonder-preview>span>span,.visitor-gift>p:not(.visitor-quote),.visitor-wonder-panel>p,.year-book-foot,.year-book-sample,.year-book-count) { color:var(--journey-muted); }
+@media(max-width:700px) {
+ .journey-paper.journey-paper .coast-build-tray .shelf-tile { padding:3px 5px; }
+ .journey-paper.journey-paper .coast-build-tray .shelf-tile > strong { height:30px; min-height:30px; font-size:10px; line-height:15px; }
+ .journey-paper.journey-paper .coast-build-tray .shelf-tile > span:not(.shelf-portrait) { font-size:9px; line-height:12px; margin:0; }
+ .journey-paper.journey-paper .place-action { white-space:normal; text-align:left; line-height:1.35; padding:8px 10px; gap:6px; }
+ .journey-paper.journey-paper .tile-editor .place-action > span { white-space:normal; }
+ .journey-paper.journey-paper .year-sharing { padding:14px; }
+}
+.journey-paper.journey-paper .island-tile-edit-wash { fill:#ffffff30; }
+/* Kobra paints button faces on ::before; keep those faces in sync with the
+   selected state in both themes, including disabled placement actions. */
+.journey-paper.journey-paper .visitor-filters button[aria-pressed=true]::before,
+.journey-paper.journey-paper .primary-action[data-slot=button]::before { background:var(--journey-selected); border-color:var(--journey-selected); }
+.journey-paper.journey-paper .primary-action[data-slot=button]:disabled::before { background:var(--journey-panel); border-color:var(--journey-line); }
+.journey-paper.journey-paper .visitor-card-arrow { color:var(--journey-ink); }
+/* Map artwork supplies its own hexagon/silhouette focus boundary. Suppress
+   bounding-box outlines in every interaction state, including pointer focus
+   and focus returned from a character panel, not only :focus-visible. */
+@layer nsu-focus {
+  :root:not([data-focus-review]) .journey-paper .student-map [data-map-control],
+  :root:not([data-focus-review]) .journey-paper .student-map .map-character-art * {
+    outline:none!important;
+    outline-width:0!important;
+    outline-offset:0!important;
+    box-shadow:none!important;
+  }
+}
+.journey-paper.journey-paper .student-map [data-map-control] { -webkit-tap-highlight-color:transparent; }
+.journey-paper.journey-paper .island-tile-hit:is(:hover,:focus,:active) {
+  outline:none; stroke:#383833; stroke-width:5; stroke-linejoin:round; fill:#ffffff20;
+}
+.journey-paper.journey-paper :is(.map-visitor,.student-discovery):is(:hover,:focus,:active) .map-character-art { filter:var(--map-silhouette); }
+.journey-paper.journey-paper .map-visitor:focus-visible rect { stroke:#ff8125; stroke-width:2; }
+.journey-paper.journey-paper .resizable-build-tray { grid-template-rows:32px minmax(0,1fr); }
+.journey-paper.journey-paper.is-building .resizable-build-tray { height:var(--build-drawer-height); }
+.journey-paper.journey-paper .resizable-build-tray.is-resizing { transition:none; }
+.journey-paper .build-drawer-toolbar { grid-column:1 / -1; display:flex; align-items:center; height:32px; flex:none; border-bottom:1px solid var(--journey-line); }
+.journey-paper .build-drawer-grip { flex:1; min-width:0; height:32px; display:flex; align-items:center; justify-content:center; gap:12px; cursor:ns-resize; touch-action:none; user-select:none; color:var(--journey-muted); font-size:10px; }
+.journey-paper .build-drawer-grab-line { width:40px; height:4px; border-radius:4px; background:var(--journey-muted); }
+.journey-paper .build-drawer-toggle { display:flex; align-items:center; justify-content:center; gap:5px; height:30px; padding:0 16px; border-left:1px solid var(--journey-line); font-size:11px; min-width:92px; }
+.journey-paper.journey-paper .resizable-build-tray > :is(.tile-shelf,.placement-inspector) { min-height:0; height:auto; overflow:auto; }
+.journey-paper.journey-paper .resizable-build-tray.is-compact > :is(.tile-shelf,.placement-inspector) { padding:10px 16px; }
+.journey-paper .is-compact :is(.tile-library-heading,.category-heading,.placement-step,.placement-description,.tile-editor-note) { display:none; }
+.journey-paper.journey-paper .is-compact .student-tile-grid { margin-top:0; grid-auto-rows:112px; }
+.journey-paper.journey-paper .is-compact .shelf-portrait,
+.journey-paper.journey-paper .is-compact .shelf-tile .tile-portrait { height:60px; }
+.journey-paper.journey-paper .is-compact .placement-title h3 { font-size:22px; }
+.journey-paper.journey-paper .is-compact .place-action { margin-top:8px; min-height:36px; }
+.journey-paper .is-compact .placement-foot > span { display:none; }
+.journey-paper.journey-paper .is-compact .placement-foot { margin-top:6px; }
+.journey-paper .is-compact .tile-editor-actions { gap:4px; margin-top:6px; }
+.journey-paper.journey-paper .is-compact .tile-editor-actions .place-action { margin-top:0; }
+.journey-paper .is-compact .tile-editor-undo { margin-top:3px; }
+@media(max-width:700px) {
+ .journey-paper.journey-paper .resizable-build-tray > .tile-shelf { height:193px; min-height:0; }
+ .journey-paper.journey-paper .resizable-build-tray > .placement-inspector { flex:1; min-height:0; }
+ .journey-paper.journey-paper .resizable-build-tray.is-compact > .tile-shelf { height:108px; padding:4px 12px; }
+ .journey-paper.journey-paper .is-compact .student-tile-grid { grid-auto-rows:100px; }
+ .journey-paper.journey-paper .is-compact .shelf-portrait,
+ .journey-paper.journey-paper .is-compact .shelf-tile .tile-portrait { height:49px; }
+ .journey-paper.journey-paper .is-compact .place-action { margin-top:0; }
+}
+@media(forced-colors:active) {
+ .journey-paper.journey-paper .island-tile-hit:is(:hover,:focus,:active) { stroke:CanvasText; }
+}
+.journey-paper .is-compact .tile-editor-note[role=status] { display:block; }
