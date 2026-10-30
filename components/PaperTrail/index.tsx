@@ -200,7 +200,6 @@ type View =
     };
 
 interface PaperTrailProps {
-  onBack?: () => void;
   uid?: string;
   studentSubjects?: string[];
   /** Subject name → chosen level, from the subject profile. */
@@ -227,7 +226,6 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   isLca = false,
   onboardingExamDate,
   onOpenTool,
-  onBack,
   initialView,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
@@ -763,7 +761,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const requestedMissing = year != null && !availableYears.includes(year) && availableYears.length > 0;
 
     return <KobraScope className="pt-kobra"><section className="pt-archive pt-master-detail">
-      <nav className="pt-toolbar"><button className="pt-text-button" onClick={onBack}><ArrowLeft size={18} /> Tools</button><button className="pt-text-button" onClick={() => setView({v:'saved'})}><Bookmark size={18} /> Saved</button></nav>
+      <nav className="pt-toolbar"><button className="pt-text-button" onClick={() => setView({v:'saved'})}><Bookmark size={18} /> Saved</button></nav>
       <div className="pt-desktop-mast"><ToolMasthead tool="paper-trail" eyebrow="Your exam archive" title="Paper Trail." subtitle="Exam papers & marking schemes." /></div>
       <div className="pt-master-grid">
         <aside className="pt-subject-rail">
@@ -948,7 +946,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   return <KobraScope className="pt-kobra"><section className="pt-archive pt-home" aria-label="Paper Trail archive">
     {milestone && <MilestoneCelebration milestone={milestone} dateIso={new Date().toISOString().slice(0, 10)} onClose={dismissMilestone} />}
     <nav className="pt-toolbar" aria-label="Paper Trail">
-      {mobileAppDesign ? <p className="pt-page-intro">Exam papers & marking schemes.</p> : <button className="pt-text-button" onClick={onBack}><ArrowLeft size={20} aria-hidden /> Tools</button>}
+      {mobileAppDesign && <p className="pt-page-intro">Exam papers & marking schemes.</p>}
       <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
     </nav>
     <header className="pt-find-heading">
