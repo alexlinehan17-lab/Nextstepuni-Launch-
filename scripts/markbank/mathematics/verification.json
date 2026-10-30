@@ -8402,7 +8402,7 @@
       "Rounded normal-table result distinguished from direct calculation.",
       "Normal tail-sign slip corrected in the explanatory note; copied partial-credit wording flagged without inventing official criteria."
     ],
-    "reproduction": "Pending committed-output check.",
+    "reproduction": "New generator reproduced its committed cards and review ledger byte for byte.",
     "pendingEnglishDeferredPapers": 12,
     "wholeSubjectComplete": false
   }
