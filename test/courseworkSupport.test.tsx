@@ -14,7 +14,7 @@ function memoryStore(value=courseworkDemo()) {
 }
 async function open(storage:CourseworkStore) {const mounted=render(<CourseworkStudio uid="integration-student" storage={storage}/>);await screen.findByRole('heading',{name:'The changing working day'});return mounted;}
 const fill=(label:string,value:string)=>fireEvent.change(screen.getByLabelText(new RegExp(label)),{target:{value}});
-const click=(name:string)=>fireEvent.click(screen.getByRole('button',{name,exact:true}));
+const click=(name:string)=>fireEvent.click(screen.getByRole('button',{name}));
 const tab=(name:string)=>fireEvent.click(screen.getByRole('tab',{name}));
 async function saved(text:string){await screen.findByText(text);}
 
