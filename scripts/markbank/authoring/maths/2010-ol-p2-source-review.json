@@ -1,0 +1,2622 @@
+{
+  "status": "Original paper, scheme and all task crops visually reviewed",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "schemePagesInspected": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+  ],
+  "generalNotesPages": [
+    43,
+    44
+  ],
+  "offeredMarks": 550,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50,
+    "11": 50
+  },
+  "tasks": [
+    {
+      "suffix": "1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        45
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the perimeter of the square.",
+      "stem": "A circle of radius 9 cm is inscribed in the square shown.",
+      "markingNote": "Use the explicit award table. The special exchanged perimeter/area case and consistent follow-through are retained in the original notes."
+    },
+    {
+      "suffix": "1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        45
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the area of the square.",
+      "stem": "A circle of radius 9 cm is inscribed in the square shown.",
+      "markingNote": "Use the explicit award table. The special exchanged perimeter/area case and consistent follow-through are retained in the original notes."
+    },
+    {
+      "suffix": "1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        46
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "substitution-in-simpson-s-rule",
+              "label": "Substitution in Simpson’s rule",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                10
+              ]
+            },
+            {
+              "id": "calculation-of-area",
+              "label": "Calculation of area",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Use Simpson’s rule to estimate the area of the field.",
+      "stem": "The original field diagram gives perpendicular measurements at equal intervals of 5 m.",
+      "markingNote": "The substitution and calculation are scored separately within one task. The answer 195 without substitution earns 3 + 2; with relevant substitution, apply the separate five-mark calculation table."
+    },
+    {
+      "suffix": "1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        47
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "The actual area of the field is 200 m². Find the percentage error in the estimate.",
+      "stem": "Part (i) asks for a Simpson’s-rule estimate using the original field diagram."
+    },
+    {
+      "suffix": "1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        47,
+        48
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the volume of the metal sphere, in terms of π.",
+      "stem": "The metal sphere has diameter 9 cm.",
+      "markingNote": "Use radius 4.5 cm. A correct answer without work earns attempt 3 only."
+    },
+    {
+      "suffix": "1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        47,
+        48
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate r, correct to one decimal place.",
+      "stem": "The 9 cm diameter sphere is melted into a right circular cone and a right circular cylinder, each of height 8 cm and base radius r cm. Part (i) asks for the sphere’s volume.",
+      "markingNote": "All published volume methods are retained. Correct answer without work receives attempt 3; area formulas or unrelated volume formulas alone earn zero."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the area of the triangle with vertices (0, 0), (8, −6) and (−1, 5).",
+      "markingNote": "All three published methods are retained. The scheme accepts −17 without a sign penalty."
+    },
+    {
+      "suffix": "2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        50,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Verify that (1, −3) is on the line l.",
+      "stem": "The line l has equation 3x − 4y − 15 = 0."
+    },
+    {
+      "suffix": "2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        50,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the coordinates of P, where l intersects the x-axis.",
+      "stem": "The line l has equation 3x − 4y − 15 = 0."
+    },
+    {
+      "suffix": "2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        51,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show the lines l and k on a coordinate diagram.",
+      "stem": "l is 3x − 4y − 15 = 0. The line k passes through (1, −3) and is perpendicular to l; earlier parts identify a point on l and its x-intercept.",
+      "markingNote": "Retain both lines, axes and scales. The original scheme specifies angular tolerance and the treatment of an arbitrary line."
+    },
+    {
+      "suffix": "2-b-iv",
+      "printedParts": [
+        "Q2(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        52,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the equation of k.",
+      "stem": "l is 3x − 4y − 15 = 0. The line k passes through (1, −3) and is perpendicular to l.",
+      "markingNote": "All three published equation methods are retained."
+    },
+    {
+      "suffix": "2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        53,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |AB|.",
+      "stem": "A = (2, −1), B = (−4, 7)."
+    },
+    {
+      "suffix": "2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        53,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the coordinates of C.",
+      "stem": "A = (2, −1), B = (−4, 7). The translation which maps (2, −1) to (−7, 11) maps B to C.",
+      "markingNote": "This part is hit-or-miss: correct or consistent coordinates earn 5; otherwise 0. There is no attempt award."
+    },
+    {
+      "suffix": "2-c-iii",
+      "printedParts": [
+        "Q2(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        53,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that |AB| : |AC| = 2 : 5.",
+      "stem": "A = (2, −1), B = (−4, 7). The translation in part (ii) maps (2, −1) to (−7, 11) and maps B to C.",
+      "markingNote": "Correct or consistent work earns 5; otherwise 0. The required C from part (ii) and all original translation information are retained."
+    },
+    {
+      "suffix": "3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        54,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the radius of c.",
+      "stem": "The circle c has centre (0, 0) and passes through (5, −12)."
+    },
+    {
+      "suffix": "3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        54,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the equation of c.",
+      "stem": "The circle c has centre (0, 0) and passes through (5, −12)."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        55,
+        56,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 15,
+              "attempt": 5,
+              "permittedMarks": [
+                0,
+                5,
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the coordinates of T.",
+      "stem": "The circle x² + y² = 17 and the line x − 4y − 17 = 0 touch at T.",
+      "markingNote": "Only 0, 5 or 15 may be awarded. All three methods are retained, including the original graph. Verification in both equations earns full marks; a correct answer without work or obtained from the graph earns 5."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        57,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "T is one endpoint of a diameter. Find the other endpoint.",
+      "stem": "The circle x² + y² = 17 and the line x − 4y − 17 = 0 touch at T. Part (i) asks for T.",
+      "markingNote": "Follow through the candidate’s T. The published answer is (−1, 4)."
+    },
+    {
+      "suffix": "3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        57,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the centre and radius of x² + (y − 7)² = 100.",
+      "markingNote": "Both centre and radius are required: both correct earns 10, one correct earns 3, otherwise 0."
+    },
+    {
+      "suffix": "3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        58,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the two values of h.",
+      "stem": "The point (6, h) is on the circle x² + (y − 7)² = 100.",
+      "markingNote": "Both h = 15 and h = −1 are required. All three solution methods are retained."
+    },
+    {
+      "suffix": "4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        59
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of x.",
+      "stem": "In the original diagram, A, B and C are collinear, |BC| = |BD|, and ∠ABD = 118°.",
+      "markingNote": "Follow through the candidate’s x in part (ii). The scheme accepts a correct answer without work."
+    },
+    {
+      "suffix": "4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        59
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of y.",
+      "stem": "In the original diagram, A, B and C are collinear, |BC| = |BD|, and ∠ABD = 118°.",
+      "markingNote": "Follow through the candidate’s x in part (ii). The scheme accepts a correct answer without work."
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        60
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 20,
+              "attempt": 7
+            }
+          ]
+        }
+      ],
+      "questionText": "Prove that three parallel lines which cut off equal intercepts on one transversal cut off equal intercepts on any other transversal.",
+      "markingNote": "One complete proof is required. Include a diagram; a proof without a diagram earns at most attempt 7 if the work can be reconciled with the theorem."
+    },
+    {
+      "suffix": "4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        61
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw a square OABC of side 4 cm.",
+      "markingNote": "Use the measurement view for the original scale. The scheme allows ±0.5 cm and ±5°; label the vertices.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        61,
+        62
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw the image OA′B′C′ under the enlargement of centre O and scale factor 2.5.",
+      "stem": "OABC is a square of side 4 cm. Its image under an enlargement of centre O and scale factor 2.5 is OA′B′C′.",
+      "markingNote": "The image must be the correct size and location. Only 0, 2 or 5 are allowed for this part.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "4-c-iii",
+      "printedParts": [
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        62
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the ratio of the area of OA′B′C′ to the area of OABC.",
+      "stem": "OABC is a square of side 4 cm. Its image under an enlargement of centre O and scale factor 2.5 is OA′B′C′."
+    },
+    {
+      "suffix": "4-c-iv",
+      "printedParts": [
+        "Q4(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        62
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the scale factor of the enlargement.",
+      "stem": "Another square, OPQR, is the image of the 4 cm square OABC under a different enlargement. The area of OPQR is 324 cm²."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        63,
+        64
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the area of triangle ABC, correct to the nearest cm².",
+      "stem": "The original diagram gives |AB| = 6 cm, |BC| = 5 cm and ∠ABC = 135°.",
+      "markingNote": "All published methods are retained. The correct answer without work earns attempt 3."
+    },
+    {
+      "suffix": "5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        64,
+        65
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of x.",
+      "stem": "The original right-angled triangle has hypotenuse 17, opposite side 15, adjacent side x and marked angle θ.",
+      "markingNote": "The original notes retain exact fractions and consistent follow-through; decimals in parts (ii) and (iii) lose one mark."
+    },
+    {
+      "suffix": "5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        64,
+        65
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down, as a fraction, the value of sin θ.",
+      "stem": "The original right-angled triangle has hypotenuse 17, opposite side 15, adjacent side x and marked angle θ.",
+      "markingNote": "The original notes retain exact fractions and consistent follow-through; decimals in parts (ii) and (iii) lose one mark."
+    },
+    {
+      "suffix": "5-b-iii",
+      "printedParts": [
+        "Q5(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        64,
+        65
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down, as a fraction, the value of cos θ.",
+      "stem": "The original right-angled triangle has hypotenuse 17, opposite side 15, adjacent side x and marked angle θ.",
+      "markingNote": "The original notes retain exact fractions and consistent follow-through; decimals in parts (ii) and (iii) lose one mark."
+    },
+    {
+      "suffix": "5-b-iv",
+      "printedParts": [
+        "Q5(b)(iv)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        64,
+        65
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of sin 2θ.",
+      "stem": "The original right-angled triangle has hypotenuse 17, opposite side 15, adjacent side x and marked angle θ.",
+      "markingNote": "sin 2θ is hit-or-miss: 10 for a correct or consistent answer, otherwise 0. All three methods are retained."
+    },
+    {
+      "suffix": "5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        66
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the length of the cable PR, correct to the nearest metre.",
+      "stem": "The original mast diagram shows |SR| = 15 m, |RQ| = 17.4 m and ∠PRQ = 50°.",
+      "markingNote": "Only 0, 4 or 5 may be awarded; there is no attempt award. Any of the three published methods is accepted."
+    },
+    {
+      "suffix": "5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        66
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate |PS|, correct to the nearest metre.",
+      "stem": "Use the original mast diagram. Part (i) asks for the length PR.",
+      "markingNote": "Only 0, 9 or 10 may be awarded. Follow through the candidate’s PR; one slip or rounding error earns 9."
+    },
+    {
+      "suffix": "6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        67
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "In how many different ways can a committee of four people be selected from ten people?"
+    },
+    {
+      "suffix": "6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        67
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "If one particular person must be on the committee, in how many different ways can the committee be selected?",
+      "stem": "A committee of four is selected from ten people."
+    },
+    {
+      "suffix": "6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        68,
+        69
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the first ticket drawn is red.",
+      "stem": "A draw uses 15 blue tickets and 10 red tickets. Tickets are drawn at random without replacement.",
+      "markingNote": "All published sequential and combinatorial methods are retained. Subsequent draws must use the remaining 24 tickets."
+    },
+    {
+      "suffix": "6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        68,
+        69
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the first two tickets drawn are red.",
+      "stem": "A draw uses 15 blue tickets and 10 red tickets. Tickets are drawn at random without replacement.",
+      "markingNote": "All published sequential and combinatorial methods are retained. Subsequent draws must use the remaining 24 tickets."
+    },
+    {
+      "suffix": "6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        68,
+        69
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the first ticket drawn is red and the second is blue.",
+      "stem": "A draw uses 15 blue tickets and 10 red tickets. Tickets are drawn at random without replacement.",
+      "markingNote": "All published sequential and combinatorial methods are retained. Subsequent draws must use the remaining 24 tickets."
+    },
+    {
+      "suffix": "6-b-iv",
+      "printedParts": [
+        "Q6(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        68,
+        69
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the first two tickets drawn are different in colour.",
+      "stem": "A draw uses 15 blue tickets and 10 red tickets. Tickets are drawn at random without replacement.",
+      "markingNote": "All published sequential and combinatorial methods are retained. Subsequent draws must use the remaining 24 tickets."
+    },
+    {
+      "suffix": "6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        70
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the smallest possible four-digit code.",
+      "stem": "A four-digit code uses the digits 3 to 9 inclusive, with no repeated digit.",
+      "markingNote": "Use the specified digits and restrictions for this code. Only 0, 2 or 5 marks may be awarded."
+    },
+    {
+      "suffix": "6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        70
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "How many different codes are possible?",
+      "stem": "A four-digit code uses the digits 3 to 9 inclusive, with no repeated digit.",
+      "markingNote": "Use the specified digits and restrictions for this code. Only 0, 2 or 5 marks may be awarded."
+    },
+    {
+      "suffix": "6-c-iii",
+      "printedParts": [
+        "Q6(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        70
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "How many of the four-digit codes are greater than 6000?",
+      "stem": "A four-digit code uses the digits 3 to 9 inclusive, with no repeated digit.",
+      "markingNote": "Use the specified digits and restrictions for this code. Only 0, 2 or 5 marks may be awarded."
+    },
+    {
+      "suffix": "6-c-iv",
+      "printedParts": [
+        "Q6(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        70
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "How many of the four-digit codes are divisible by 2?",
+      "stem": "A four-digit code uses the digits 3 to 9 inclusive, with no repeated digit.",
+      "markingNote": "Only 0, 2, 4 or 5 marks may be awarded. The special four-mark case counts even codes greater than 6000, giving 200."
+    },
+    {
+      "suffix": "7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        71,
+        72
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                6,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Represent the data on a histogram.",
+      "stem": "The original table records 20 people in the donation intervals €5–€15, €15–€25, €25–€35 and €35–€65, with frequencies 2, 4, 8 and 6. Each interval includes its lower endpoint and excludes its upper endpoint.",
+      "markingNote": "The last interval is three times as wide, so its bar height must reflect frequency density. Keep axes, scale and area key; the original diagram shows the correct relative areas. Base awards are 10, 7, 4 and attempt 3, with a further one-mark deduction for an obvious misreading, subject to the attempt floor."
+    },
+    {
+      "suffix": "7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        72
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Taking mid-interval values, calculate the mean.",
+      "stem": "The original table records 20 people in the donation intervals €5–€15, €15–€25, €25–€35 and €35–€65, with frequencies 2, 4, 8 and 6. Each interval includes its lower endpoint and excludes its upper endpoint."
+    },
+    {
+      "suffix": "7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        73
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 15,
+              "attempt": 5,
+              "permittedMarks": [
+                0,
+                5,
+                14,
+                15
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Taking mid-interval values, calculate the standard deviation, correct to one decimal place.",
+      "stem": "The original table records 20 people in the donation intervals €5–€15, €15–€25, €25–€35 and €35–€65, with frequencies 2, 4, 8 and 6. Each interval includes its lower endpoint and excludes its upper endpoint. Part (ii) asks for the mean.",
+      "markingNote": "Use the population standard deviation. The official table also permits 14 for its specified sample-standard-deviation case and 5 for relevant work; no other awards are allowed."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        74
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw a cumulative frequency curve to illustrate the data.",
+      "stem": "The original table summarises the test marks of 400 candidates: cumulative frequencies 40, 150, 300, 380 and 400 at or below 20, 40, 60, 80 and 100."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        75
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graph to estimate the median mark.",
+      "stem": "The original table summarises the test marks of 400 candidates: cumulative frequencies 40, 150, 300, 380 and 400 at or below 20, 40, 60, 80 and 100. Part (i) asks for the cumulative frequency curve."
+    },
+    {
+      "suffix": "7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        75
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your graph to estimate how many candidates were called for interview.",
+      "stem": "The original table summarises the test marks of 400 candidates: cumulative frequencies 40, 150, 300, 380 and 400 at or below 20, 40, 60, 80 and 100. Candidates scoring above 65 are called for interview. Part (i) asks for the cumulative frequency curve.",
+      "markingNote": "Read the estimate from your graph. The scheme gives 75 and allows a tolerance of ±10 on your own graph."
+    },
+    {
+      "suffix": "8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        76
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |XP|.",
+      "stem": "The original intersecting-secant diagram gives |XY| = 5, |YP| = 4 and |CP| = 12."
+    },
+    {
+      "suffix": "8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        76
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |PD|.",
+      "stem": "The original intersecting-secant diagram gives |XY| = 5, |YP| = 4 and |CP| = 12."
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        77
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 20,
+              "attempt": 7
+            }
+          ]
+        }
+      ],
+      "questionText": "Prove that a line is a tangent to a circle if and only if it is perpendicular to a radius at a point on the circle.",
+      "markingNote": "Both directions are required within one proof. The original worked proof establishes the forward construction; the scheme explicitly reserves the last mark for the converse."
+    },
+    {
+      "suffix": "8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        78
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find ∠PSQ.",
+      "stem": "O is the centre of the circle, QS is a diameter, |RQ| = |PR| and ∠PRQ = 42°, as shown in the original diagram.",
+      "markingNote": "Each angle is a separate hit-or-miss task: 5 for a correct or consistent answer, otherwise 0."
+    },
+    {
+      "suffix": "8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        78
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find ∠SQP.",
+      "stem": "O is the centre of the circle, QS is a diameter, |RQ| = |PR| and ∠PRQ = 42°, as shown in the original diagram.",
+      "markingNote": "Each angle is a separate hit-or-miss task: 5 for a correct or consistent answer, otherwise 0."
+    },
+    {
+      "suffix": "8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        78
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find ∠QPR.",
+      "stem": "O is the centre of the circle, QS is a diameter, |RQ| = |PR| and ∠PRQ = 42°, as shown in the original diagram.",
+      "markingNote": "Each angle is a separate hit-or-miss task: 5 for a correct or consistent answer, otherwise 0."
+    },
+    {
+      "suffix": "8-c-iv",
+      "printedParts": [
+        "Q8(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        78
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find ∠RQS.",
+      "stem": "O is the centre of the circle, QS is a diameter, |RQ| = |PR| and ∠PRQ = 42°, as shown in the original diagram.",
+      "markingNote": "Each angle is a separate hit-or-miss task: 5 for a correct or consistent answer, otherwise 0."
+    },
+    {
+      "suffix": "9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        79
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find p + q in terms of i and j.",
+      "stem": "p = 7i + 9j and q = −2i + 3j."
+    },
+    {
+      "suffix": "9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        79
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |p + q|.",
+      "stem": "p = 7i + 9j and q = −2i + 3j. Part (i) asks for p + q."
+    },
+    {
+      "suffix": "9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        80,
+        81
+      ],
+      "methods": [
+        {
+          "id": "vector-construction",
+          "label": "Vector construction",
+          "components": [
+            {
+              "id": "complete-construction",
+              "label": "Complete construction",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "id": "single-resultant-only",
+          "label": "Single resultant only",
+          "components": [
+            {
+              "id": "single-resultant",
+              "label": "Single resultant",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "On a separate diagram, draw y − x.",
+      "stem": "The original diagram shows vectors x and y. Draw each requested vector on its own diagram.",
+      "markingNote": "Use the full-size original diagram for lengths. Constructed vectors and a single resultant have different permitted awards and tolerances. The same-origin penalty applies when the original multipart answers are combined on one diagram.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        80,
+        81
+      ],
+      "methods": [
+        {
+          "id": "vector-construction",
+          "label": "Vector construction",
+          "components": [
+            {
+              "id": "complete-construction",
+              "label": "Complete construction",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                4,
+                7,
+                9,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "id": "single-resultant-only",
+          "label": "Single resultant only",
+          "components": [
+            {
+              "id": "single-resultant",
+              "label": "Single resultant",
+              "maximum": 10,
+              "attempt": 0,
+              "permittedMarks": [
+                0,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "On a separate diagram, draw 2x + y.",
+      "stem": "The original diagram shows vectors x and y. Draw each requested vector on its own diagram.",
+      "markingNote": "Use the full-size original diagram for lengths. Constructed vectors and a single resultant have different permitted awards and tolerances. The same-origin penalty applies when the original multipart answers are combined on one diagram.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        81
+      ],
+      "methods": [
+        {
+          "id": "vector-construction",
+          "label": "Vector construction",
+          "components": [
+            {
+              "id": "complete-construction",
+              "label": "Complete construction",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "id": "single-resultant-only",
+          "label": "Single resultant only",
+          "components": [
+            {
+              "id": "single-resultant",
+              "label": "Single resultant",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "On a separate diagram, draw ½x − y.",
+      "stem": "The original diagram shows vectors x and y. Draw each requested vector on its own diagram.",
+      "markingNote": "Use the full-size original diagram for lengths. Constructed vectors and a single resultant have different permitted awards and tolerances. The same-origin penalty applies when the original multipart answers are combined on one diagram.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        82
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that r and s are perpendicular.",
+      "stem": "r = 12i − 9j and s = 9i + 12j.",
+      "markingNote": "All four published methods are retained: scalar product, slopes, Pythagoras and rotation."
+    },
+    {
+      "suffix": "9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        83
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find u in terms of i and j.",
+      "stem": "r = 12i − 9j and s = 9i + 12j. Given OR + 3RU = OS, express the position vector u = OU in terms of i and j.",
+      "markingNote": "Both components of u are required. Use RU = u − r, not u. The original vector equation is retained."
+    },
+    {
+      "suffix": "10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        84
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Expand (1 − x)⁶ in ascending powers of x.",
+      "markingNote": "All seven terms are required. Use the binomial theorem or repeated multiplication."
+    },
+    {
+      "suffix": "10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        85
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the salary after the first increase.",
+      "stem": "An employee’s starting salary is €24,000. At the end of each year the salary increases by 3%."
+    },
+    {
+      "suffix": "10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        85
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the salary after the fourth increase, correct to the nearest euro.",
+      "stem": "An employee’s starting salary is €24,000. At the end of each year the salary increases by 3%.",
+      "markingNote": "Both direct compound growth and successive annual calculations are retained."
+    },
+    {
+      "suffix": "10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        86
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the common ratio of a geometric series whose first term is 5 and whose sum to infinity is 10.",
+      "markingNote": "A correct ratio without work earns attempt 3. Merely writing 5/10 is explicitly classified as worthless in the scheme."
+    },
+    {
+      "suffix": "10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        87
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Express 0.1333… as an infinite geometric series and hence as a fraction.",
+      "markingNote": "Both the series and the fraction are required within one task. The algebra-only repeating-decimal method is capped at attempt 3 because the series is requested."
+    },
+    {
+      "suffix": "11-a-i",
+      "printedParts": [
+        "Q11(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        88,
+        49
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the equation of k.",
+      "stem": "The original diagram shows the line k through (0, 2) and (4, 0).",
+      "markingNote": "All published forms are accepted. Retain the shared coordinate-geometry guidance."
+    },
+    {
+      "suffix": "11-a-ii",
+      "printedParts": [
+        "Q11(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        89
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the three inequalities which together define the shaded region.",
+      "stem": "The original diagram shows a triangular region bounded by the axes and k through (0, 2) and (4, 0). Part (i) asks for k.",
+      "markingNote": "All three inequalities are required. One correct earns 2, two earn 4 and all three earn 5. The scheme accepts strict or non-strict inequalities."
+    },
+    {
+      "suffix": "11-b-i",
+      "printedParts": [
+        "Q11(b)(i)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        89,
+        90
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "better-inequality",
+              "label": "Better inequality",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "other-inequality",
+              "label": "Other inequality",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "feasible-region-graph",
+              "label": "Feasible-region graph",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write the two inequalities in x and y and draw the feasible region on a coordinate diagram.",
+      "stem": "A transporter carries heavy and light containers. Each heavy container weighs 160 kg and takes 3 minutes to load; each light container weighs 40 kg and takes 2 minutes. Capacity is 2080 kg and loading time is at most 54 minutes. Charges are €48 per heavy container and €36 per light container. Let x and y be the numbers of heavy and light containers.",
+      "markingNote": "Award up to ten marks for the better inequality, five for the other inequality, and five for the feasible-region graph."
+    },
+    {
+      "suffix": "11-b-ii",
+      "printedParts": [
+        "Q11(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        91
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 5,
+              "attempt": 2,
+              "permittedMarks": [
+                0,
+                2,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the number of each type of container that maximises the income.",
+      "stem": "A transporter carries heavy and light containers. Each heavy container weighs 160 kg and takes 3 minutes to load; each light container weighs 40 kg and takes 2 minutes. Capacity is 2080 kg and loading time is at most 54 minutes. Charges are €48 per heavy container and €36 per light container. Part (i) asks for the inequalities and feasible region.",
+      "markingNote": "Compare the vertices, then explicitly state 0 heavy and 27 light containers. Testing only that vertex earns at most 2 even if the answer is correct; identifying the maximum without the concluding numbers earns 4."
+    },
+    {
+      "suffix": "11-b-iii",
+      "printedParts": [
+        "Q11(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        92
+      ],
+      "methods": [
+        {
+          "id": "published-allocation",
+          "label": "Published allocation",
+          "components": [
+            {
+              "id": "complete-task",
+              "label": "Complete task",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "On your graph, show the region where the income is at most €576.",
+      "stem": "A transporter carries heavy and light containers. Each heavy container weighs 160 kg and takes 3 minutes to load; each light container weighs 40 kg and takes 2 minutes. Capacity is 2080 kg and loading time is at most 54 minutes. Charges are €48 per heavy container and €36 per light container. Part (i) asks for the original feasible region.",
+      "markingNote": "The correct or consistent shaded region earns 10; relevant work earns 3, otherwise 0. Keep both the original constraints and the income line."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        1,
+        2,
+        8
+      ],
+      "wording": "Attempt FIVE questions from Section A and ONE question from Section B.",
+      "classification": "whole-examination-selection",
+      "reason": "Retain every task in all seven Section A and all four Section B questions. The exam choice limit does not remove practice content."
+    },
+    {
+      "pages": [
+        4
+      ],
+      "wording": "any other transversal",
+      "classification": "universal-proof-statement",
+      "reason": "This quantifies the theorem to be proved; there is no finite list of alternative tasks."
+    },
+    {
+      "pages": [
+        6
+      ],
+      "wording": "selected from ten people; one particular person; digits 3 to 9 inclusive",
+      "classification": "counting-scenario",
+      "reason": "The people and digits define mathematical counting scenarios, not printed answer-choice menus. Each requested count is one task."
+    }
+  ],
+  "notes": [
+    "All 74 tasks and all 550 offered marks are retained; the candidate may attempt 300 marks. No task-internal finite answer pool needs expansion.",
+    "Required lists, both roots, coordinate pairs, complete proofs and graphs remain complete responses.",
+    "Q1(b)(i) uses 10+5 and Q11(b)(i) uses 10+5+5 scoring components inside their published tasks. Alternative methods never add marks.",
+    "Strict hit-or-miss and restricted award tables are represented by their exact permitted marks. General deduction routes retain blunder −3, slip/misreading −1, attempt floors and worthless zero.",
+    "Q9 vector constructions and single-resultant answers have distinct scoring methods and tolerances. All original diagrams remain available at source size.",
+    "Source printing errors and the omitted written converse are explained without changing the official solution images."
+  ],
+  "paperSha256": "d2b7007bd828b6f9975f68bafeaeda008a251eba7373a5de252fbd504ecec186",
+  "schemeSha256": "de7c4cc69647e882150104e1585ddc68cb957a4d616fe1f7abc51313d29e8735"
+}

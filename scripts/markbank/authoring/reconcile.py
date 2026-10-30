@@ -32,6 +32,7 @@ Exit code is the number of problems (open + orphans + unparsed + stale
 exclusions), so `reconcile.py <subject>` in a shell IS the done-check.
 """
 import argparse
+import glob
 import collections
 import json
 import os
@@ -78,7 +79,7 @@ HEAD = re.compile(
     # the address — so the card cites "Section E Q(b)(ii)" and the census keys
     # it with q=None. History goes one step further: a part priced whole, with
     # nothing numbered beneath it, is cited by its section alone.
-    r'(?:\s+(?:Q(?P<q>\d{1,2})?(?P<alt>-alt)?|(?P<abq>ABQ)))?')
+    r'(?:\s+(?:Q(?P<q>\d{1,2}[A-Z]?)?(?P<alt>-alt)?|(?P<abq>ABQ)))?')
 # What may follow the question number: part tokens, separated by commas,
 # "and", or a range dash. "Q3(c)(i), (ii)" covers two romans; "Q6(a)–(e)"
 # covers five letters; "Q9(vii)–(viii)" two romans with no letter above them.
@@ -398,12 +399,25 @@ def parse_ref(ref):
     if not d['q'] and not d['abq'] and not d['section'] and not d['paper'] \
             and not d.get('topic'):
         return None
-    q = 'ABQ' if d['abq'] else (int(d['q']) if d['q'] else None)
+    q = 'ABQ' if d['abq'] else ((int(d['q']) if d['q'].isdigit() else d['q']) if d['q'] else None)
     if d['alt'] and isinstance(q, int):
         q = -q
     paths, cur_letter, cur_roman, dash = [], None, None, False
     pos = m.end()
+    after_separator = False
     while pos < len(core):
+        # Some reviewed holistic tasks spell out the question number for
+        # every part: Q10(b)(i),Q10(b)(ii),Q10(c)(i),Q10(c)(ii).
+        # Reset the part context, but never silently fold a different
+        # question (or an alternative route) into this question's coverage.
+        repeated = re.match(r'\s*Q(\d{1,2}[A-Z]?)(-alt)?(?=\s*\()', core[pos:])
+        if repeated:
+            if not after_separator or repeated[1] != d['q'] or repeated[2] != d['alt']:
+                return None
+            pos += repeated.end()
+            cur_letter, cur_roman, dash = None, None, False
+            after_separator = False
+            continue
         t = PART_TOKEN.match(core, pos)
         if not t:
             break
@@ -413,7 +427,9 @@ def parse_ref(ref):
             dash = True
             continue
         if is_sep:
+            after_separator = True
             continue
+        after_separator = False
         cls = _classify(tok)
         tok = tok.lower()
         if cls == 'letter':
@@ -585,6 +601,24 @@ def load_exclusions(subject):
         return json.load(fh)
 
 
+def reviewed_maths_paper_keys():
+    """Resolve parallel editions by reviewed booklet identity, never the shared Q number."""
+    result = {}
+    for path in glob.glob(os.path.join(ROOT, 'scripts', 'markbank', 'mathematics', 'reviews', '*.json')):
+        with open(path) as source:
+            review = json.load(source)
+        m = re.search(r'LP(\d{3})EV', review['paperFileid'])
+        if not m:
+            continue
+        component = m.group(1)
+        label = {'100': 'Paper 1', '200': 'Paper 2'}.get(component, component)
+        if review['year'] == 2014:
+            label = {'130': 'Paper 1', '230': 'Paper 2'}.get(component, label)
+        for task in review['cards']:
+            result[task['id']] = label
+    return result
+
+
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
     if subject == 'accounting':
@@ -605,6 +639,7 @@ def reconcile_subject(subject, census=None):
     orphans, unparsed = [], []
 
     cards = shipped_cards(subject)
+    exact_papers = reviewed_maths_paper_keys() if subject == 'maths' else {}
     for cid, refstr in cards:
         ref = parse_ref(refstr)
         if subject == 'chemistry':
@@ -612,6 +647,8 @@ def reconcile_subject(subject, census=None):
         if not ref:
             unparsed.append({'id': cid, 'ref': refstr})
             continue
+        if cid in exact_papers:
+            ref['paper'] = exact_papers[cid]
         candidates = [k for k in idx
                       if k[0] == ref['year'] and k[1] == ref['level']
                       and (ref['paper'] is None or k[2] == ref['paper'])]

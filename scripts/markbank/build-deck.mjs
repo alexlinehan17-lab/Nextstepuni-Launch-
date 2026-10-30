@@ -26,12 +26,13 @@ import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveIndexedPaperFileid, resolveCompanionFileid, corpusSubjectFor } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
 import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economicsEditions.mjs';
+import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -620,12 +621,12 @@ const UNPRINTED_ANSWER = 'The scheme prints no answer for this part.';
  * already records. Filing it as 'higher' would have every card cite a Higher
  * Level paper that does not exist.
  */
-const LEVELS = ['higher', 'ordinary', 'common'];
-const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
-const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
+const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl', foundation: 'fl' };
+const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation' };
 
 function schemeFor(subjectId, card) {
-  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}`;
+  const project = subjectId === 'maths' && /LP030EV\.pdf$/.test(reviewedMathematicsSource(card.id)?.schemeFileid ?? '');
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${project ? '-project' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
@@ -855,6 +856,8 @@ if (subjectIds.length !== 1) {
   process.exit(1);
 }
 const SUBJECT_ID = subjectIds[0];
+const LEVELS = ['higher', 'ordinary', ...(SUBJECT_ID === 'maths' ? ['foundation'] : []), 'common'];
+if (SUBJECT_ID === 'maths') validateMathematicsReviewSources();
 const SUBJECT = SUBJECTS[SUBJECT_ID];
 if (SUBJECT_ID === 'economics') {
   // During the corpus audit, unreviewed papers remain explicitly pending.
@@ -1025,7 +1028,7 @@ for (const raw of rawCards) {
     if (!Array.isArray(binding) && binding.questionText) card.questionText = binding.questionText;
     appliedCorrections.push(`${raw.id}: attached its inspected official question-page source`);
   }
-  cards.push(card);
+  cards.push(SUBJECT_ID === 'maths' ? applyMathematicsReview(card) : card);
   if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
 }
 
@@ -1068,6 +1071,7 @@ const figureRecord = (key) => {
       alt: inspected.alt,
       attribution: inspected.attribution,
       ...(inspected.solution ? { solution: true } : {}),
+      ...(inspected.sourceNote ? { sourceNote: inspected.sourceNote } : {}),
     };
   }
 
@@ -1245,8 +1249,8 @@ function groupFault(c) {
 
 function sourceMaterialFault(source, field = 'sourceMaterial') {
   if (!source || typeof source !== 'object') return `${field} is not an object`;
-  if (!['source-text', 'source-illustration'].includes(source.kind)) {
-    return `${field}.kind must be source-text or source-illustration`;
+  if (!['source-text', 'source-illustration', 'source-question'].includes(source.kind)) {
+    return `${field}.kind must be source-text, source-illustration or source-question`;
   }
   for (const key of ['label', 'title', 'attribution', 'presentationNote']) {
     if (!String(source[key] ?? '').trim()) return `${field}.${key} is empty`;
@@ -1334,13 +1338,19 @@ function relabelDistractors(c) {
  * answered without seeing which diagram is meant. Where two cards claim the same
  * question, the one carrying a figure wins.
  */
+// A repeated printed reference in two distinct Mathematics booklets is two
+// tasks. Preserve ordinary duplicate resolution within each exact booklet.
+const questionIdentity = c => SUBJECT_ID === 'maths'
+  ? JSON.stringify([reviewedMathematicsSource(c.id)?.paperFileid ?? null, c.questionRef, c.mathematicsScale?.practiceInstruction ?? null])
+  : c.questionRef;
 const byQuestion = new Map();
 for (const c of cards) {
-  const prev = byQuestion.get(c.questionRef);
-  if (!prev) { byQuestion.set(c.questionRef, c); continue; }
+  const key = questionIdentity(c);
+  const prev = byQuestion.get(key);
+  if (!prev) { byQuestion.set(key, c); continue; }
   const prevHasFigure = Boolean(prev.figureKey);
   const thisHasFigure = Boolean(c.figureKey);
-  if (thisHasFigure && !prevHasFigure) byQuestion.set(c.questionRef, c);
+  if (thisHasFigure && !prevHasFigure) byQuestion.set(key, c);
 }
 
 const out = [];
@@ -1356,7 +1366,7 @@ for (const c of cards) {
       && (typeof c.questionFigureIncludesPrompt !== 'boolean' || !c.questionFigureKey)) {
     throw new Error(`${c.id}: questionFigureIncludesPrompt requires a question figure and a boolean value`);
   }
-  if (byQuestion.get(c.questionRef) !== c) {
+  if (byQuestion.get(questionIdentity(c)) !== c) {
     dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
     continue;
   }
@@ -1486,7 +1496,9 @@ for (const c of cards) {
    * with a questionFigure — so this was the odd one out, in the same way the
    * INVITES_DRAWING exemption above had drifted. Measured across every
    * authored deck in the repo: exactly ONE card changes verdict. */
-  if (namesLetters && !((c.figureKey || c.questionFigureKey)
+  const hasReviewedMathematicsSource = SUBJECT_ID === 'maths' && c.mathematicsScale
+    && c.sourceMaterial?.kind === 'source-question' && c.sourceMaterial.pages?.length;
+  if (namesLetters && !hasReviewedMathematicsSource && !((c.figureKey || c.questionFigureKey)
       && Array.isArray(c.labelKey) && c.labelKey.length)) {
     dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
     continue;
@@ -1622,8 +1634,10 @@ for (const c of cards) {
   /* History is examined in two FIELDS OF STUDY, printed as separate papers a
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
-  const fileid = resolvePaperFileid(
-    corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+  const reviewedSource = SUBJECT_ID === 'maths' ? reviewedMathematicsSource(c.id) : undefined;
+  const fileid = reviewedSource
+    ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
+    : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
@@ -1637,18 +1651,21 @@ for (const c of cards) {
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 
 // A later provenance, glyph or figure rejection must not silently remove a
 // task that the independent physical-paper census requires. Fail before writes.
 if (SUBJECT_ID === 'economics') assertEconomicsReviewCoverage(seenId, economicsReviews);
+
+if (SUBJECT_ID === 'maths') assertReviewedMathematicsCards(out.map(card => card.id), dropped);
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 /* Every build ends with the paper-anchored ledger, so nobody can ship a deck
  * without the coverage number in front of them — the class of failure where
  * "64 cards" was reported for a subject whose papers print 500 asks. Best
  * effort: a machine without python3 still builds. */
+if (SUBJECT_ID !== 'maths') {
 try {
   const { execSync } = await import('node:child_process');
   const led = execSync(
@@ -1660,6 +1677,7 @@ try {
   process.stderr.write(first
     ? `LEDGER ${first}\n`
     : 'LEDGER unavailable (python3 missing?) — run reconcile.py by hand\n');
+}
 }
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
 for (const c of appliedCorrections) process.stderr.write(`  CORRECTED ${c}\n`);
@@ -1790,3 +1808,16 @@ for (const level of LEVELS) {
 const MANIFEST_OUT = resolve(ROOT, 'components/MarkBank/cards/sizes.json');
 const existing = existsSync(MANIFEST_OUT) ? JSON.parse(readFileSync(MANIFEST_OUT, 'utf8')) : {};
 writeFileSync(MANIFEST_OUT, `${JSON.stringify({ ...existing, [SUBJECT_ID]: sizes }, null, 1)}\n`);
+
+
+// Mathematics reconciles the just-written modules against the full Paper Trail
+// inventory, including Foundation. The legacy ledger counts only two levels
+// and runs before the files are written, so it cannot report this build.
+if (SUBJECT_ID === 'maths') {
+  const { execFileSync } = await import('node:child_process');
+  try {
+    process.stderr.write(execFileSync('python3', [resolve(ROOT, 'scripts/markbank/mathematics/audit.py')], { encoding: 'utf8' }));
+  } catch (error) {
+    process.stderr.write(String(error.stdout ?? error.message));
+  }
+}

@@ -1,0 +1,1245 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "tasks": {
+    "1-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 158,
+          "bottom": 205,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 229,
+          "bottom": 489,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 67,
+          "top": 151,
+          "bottom": 209,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Incomplete statement of method (with some merit)"
+      ],
+      "inspectedQuestionSha256": "1c5c73716b01729127324d2196406ed1f9dc5ca229bc1ef14712c942798e1ac7",
+      "inspectedSolutionSha256": "93810cf675341bd8de11e8b8dd54a188abce7f64700861f05934b6af96cb1b59"
+    },
+    "1-b": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 158,
+          "bottom": 205,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 3,
+          "top": 489,
+          "bottom": 522,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 552,
+          "bottom": 747,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 67,
+          "top": 246,
+          "bottom": 388,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any reasonable first step.",
+        "High Partial Credit — Correct method applied with some error(s)",
+        "High Partial Credit — Correct method but vertices not taken in correct order (i.e ABDC or equivalent)",
+        "High Partial Credit — Correct method completed but with no conclusion."
+      ],
+      "inspectedQuestionSha256": "5068d2ad500949e48b770915f43a2affe9f3fc6db84aebd82cb662dbdb6d7daf",
+      "inspectedSolutionSha256": "fa51e51c277d00ed808a2e57e519e389c61377ff8931fe945dbffb60cbde4162"
+    },
+    "2-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 74,
+          "bottom": 159,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 174,
+          "bottom": 248,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 68,
+          "top": 86,
+          "bottom": 169,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Centre or radius found",
+        "Partial Credit — Incomplete statement of method (with some merit) e.g., completing square"
+      ],
+      "inspectedQuestionSha256": "057e6d8dd444832b48a11ef817d75fbcc60dbcee48fff912bda9c48bc7c2d7fe",
+      "inspectedSolutionSha256": "d73d4ec91b314f7d524d3582df9155a72cf2778a1982d672e7eee4ef15008bef"
+    },
+    "2-b": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 74,
+          "bottom": 132,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 4,
+          "top": 402,
+          "bottom": 421,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 448,
+          "bottom": 709,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 68,
+          "top": 186,
+          "bottom": 294,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Formula for distance between two centres with some substitution",
+        "Low Partial Credit — Difference between radii found or implied",
+        "High Partial Credit — No conclusion or incorrect conclusion"
+      ],
+      "inspectedQuestionSha256": "f58f3cf83e8174751af59f361dec394488ced1379d66f8709114917f0c7252d2",
+      "inspectedSolutionSha256": "79ef10dd5106d5a52e299a1c403b2e340b0ffad3252e1d45c0436f215b0e8bc6"
+    },
+    "2-c": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 74,
+          "bottom": 132,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 5,
+          "top": 54,
+          "bottom": 73,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 87,
+          "bottom": 319,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 68,
+          "top": 305,
+          "bottom": 427,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — (4, 7) substituted into one circle",
+        "Partial Credit — Subtracts both equations and stops",
+        "Partial Credit — (4, 7) substituted into both circles with an error"
+      ],
+      "inspectedQuestionSha256": "33583cab3c7d7625f1dcacf7aa8586679abfc466b0173be7881b6289613f48c6",
+      "inspectedSolutionSha256": "afc093f2673f6025753577b75d52bfac749ee88c9fee83bdb7c7afee00b745ef"
+    },
+    "2-d": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 74,
+          "bottom": 132,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 5,
+          "top": 54,
+          "bottom": 73,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 5,
+          "top": 316,
+          "bottom": 336,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 350,
+          "bottom": 700,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 68,
+          "top": 440,
+          "bottom": 551,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Some relevant slope found",
+        "Partial Credit — (4, 7) inserted into equation of line formula but without slope found",
+        "Partial Credit — Equation of line but (4, 7) incorrectly inserted"
+      ],
+      "inspectedQuestionSha256": "501dfd6174135b554d1aff7ecf4d424d8b695c4996b9427bad136e432e0b39ae",
+      "inspectedSolutionSha256": "92831e07b5937b20b0e97699539ffa538461c7cd4eea22726b4b1a4081dce083"
+    },
+    "3": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 74,
+          "bottom": 294,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 294,
+          "bottom": 635,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 51,
+          "top": 54,
+          "bottom": 747,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 69,
+          "top": 74,
+          "bottom": 446,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any reasonable first step, such as:",
+        "Low Partial Credit — Perpendicular distance of centre to either tangent indicated",
+        "Mid Partial Credit — Centre (r, r)",
+        "Mid Partial Credit — y = x and further work of merit",
+        "Mid Partial Credit — Substantive work at finding equation of a relevant angle-bisector, other than y = x"
+      ],
+      "inspectedQuestionSha256": "493d7d977f6510600c67e9461044f0e35f0f513bdc13b56e37043197d870e554",
+      "inspectedSolutionSha256": "06cf422d67275dbf890a3d1a8161883f7313ef07a475e9c8a9ff498b6119329e"
+    },
+    "4-a": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 74,
+          "bottom": 135,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 152,
+          "bottom": 238,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 70,
+          "top": 69,
+          "bottom": 165,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — One or both ‘given’ assumptions stated or implied",
+        "High Partial Credit — Either ‘independence’ or ‘probability of success the same each time’ stated."
+      ],
+      "inspectedQuestionSha256": "b1edbcb45f1db9de475e9f05e554fc04894728ce35b1d8a0b0ef7b375d3313b7",
+      "inspectedSolutionSha256": "cb7711eb7153c35cce731ec7eca5be79fa7faaa558b55983cc8a1a33106ae2ff"
+    },
+    "4-b-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 74,
+          "bottom": 107,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 7,
+          "top": 295,
+          "bottom": 314,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 7,
+          "top": 322,
+          "bottom": 342,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 406,
+          "bottom": 468,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 70,
+          "top": 173,
+          "bottom": 307,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct expression",
+        "High Partial Credit — Answer with one error in components",
+        "Note — Rounding incomplete: 9 marks"
+      ],
+      "inspectedQuestionSha256": "5cdff70c5cc804ab4e87a13bb55afc04a81eb2cd27e4909fffaf96b6c1af927e",
+      "inspectedSolutionSha256": "904a7570903f55f7bdbf9509deb96c40736df4c03e143fa73028ee7af19f3155"
+    },
+    "4-b-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 74,
+          "bottom": 107,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 7,
+          "top": 295,
+          "bottom": 314,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 7,
+          "top": 497,
+          "bottom": 516,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 570,
+          "bottom": 662,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 70,
+          "top": 319,
+          "bottom": 459,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct expression",
+        "High Partial Credit — Answer with one error in components",
+        "Note — Rounding incomplete: 9 marks"
+      ],
+      "inspectedQuestionSha256": "784a375b8a2eec345405d2d0acd88c87324bac93f80624e009a5a8b7d8a719f5",
+      "inspectedSolutionSha256": "bba51a3f291ae7807fd6924090ead53890d9e228f36076bc24a65ffb14e94333"
+    },
+    "5-a": {
+      "topic": "1-7",
+      "atlas": "statistics-z-scores",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 74,
+          "bottom": 204,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 218,
+          "bottom": 382,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 71,
+          "top": 83,
+          "bottom": 276,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any relevant step",
+        "Low Partial Credit — Some relevant diagram",
+        "Mid Partial Credit — Reference to 2·5",
+        "High Partial Credit — Correct method with some error"
+      ],
+      "inspectedQuestionSha256": "20ee20e0909ada4991d9ac72dc140351752b87846d97936145e2dad5dccbd527",
+      "inspectedSolutionSha256": "40f8f3c704223b10b304266912b394346f9f79561ea5d80d75545c94497f0eff"
+    },
+    "5-b": {
+      "topic": "1-7",
+      "atlas": "statistics-z-scores",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 74,
+          "bottom": 204,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 8,
+          "top": 460,
+          "bottom": 507,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 451,
+          "bottom": 711,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 71,
+          "top": 294,
+          "bottom": 424,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any relevant step",
+        "Low Partial Credit — Some relevant diagram",
+        "Low Partial Credit — One case taken only",
+        "High Partial Credit — Probability of both situations calculated but fails to complete fully"
+      ],
+      "sourceNote": "In the first standardisation fraction the SEC prints 19.75 − 20.25. The new mean is 20.05, so it should be (19.75 − 20.05) ÷ 0.1 = −3, as used in the next line. The final 94.35% increase is unchanged.",
+      "inspectedQuestionSha256": "d8d2fce8a5c45126896db07fef0b8650e97f90a79260f3587c960ca24993ce5d",
+      "inspectedSolutionSha256": "0a2e8963da42b48d72add4f9bfcdd3e2861179239115759dc6ce756bca6746d4"
+    },
+    "6a-a-i": {
+      "topic": "2-1",
+      "atlas": "geometry-constructions-proofs",
+      "questionRegions": [
+        {
+          "page": 9,
+          "top": 113,
+          "bottom": 355,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 148,
+          "bottom": 367,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 72,
+          "top": 83,
+          "bottom": 174,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any correct step",
+        "High Partial Credit — Correct method but outside the tolerance of 2°"
+      ],
+      "sourceNote": "The SEC drawing shows the construction for both parts (a)(i) and (a)(ii). For this card, assess the 60° construction only, using its 10C scale and 2° tolerance.",
+      "inspectedQuestionSha256": "4eb0bc4688f25b08718b1251c3aa03b68ec4ebb3380ff7cbef4e5c6ec425689d",
+      "inspectedSolutionSha256": "091ca5a43262e630cbc92a38497173b9f531a9483c3f5e942026402469a0b5c0"
+    },
+    "6a-a-ii": {
+      "topic": "2-1",
+      "atlas": "geometry-constructions-proofs",
+      "questionRegions": [
+        {
+          "page": 9,
+          "top": 113,
+          "bottom": 414,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 148,
+          "bottom": 367,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 54,
+          "top": 423,
+          "bottom": 476,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 72,
+          "top": 187,
+          "bottom": 279,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any correct step",
+        "High Partial Credit — Correct method but outside the tolerance of 2°"
+      ],
+      "inspectedQuestionSha256": "c492f77e9effc1efef52b16ad196f2795072dcd6c5c4a91000d035d139165c92",
+      "inspectedSolutionSha256": "b92d0542505e1d839ceb30f7443c161b647c526425a570e59515dc33dd5e11f5"
+    },
+    "6a-b": {
+      "topic": "2-1",
+      "atlas": "geometry-constructions-proofs",
+      "questionRegions": [
+        {
+          "page": 9,
+          "top": 437,
+          "bottom": 590,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 481,
+          "bottom": 750,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 55,
+          "top": 55,
+          "bottom": 235,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 72,
+          "top": 292,
+          "bottom": 473,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — identifies two equal sides",
+        "Low Partial Credit — identifies two equal angles",
+        "High Partial Credit — Proof with correct steps but without justification of steps",
+        "High Partial Credit — One error in establishing congruence"
+      ],
+      "inspectedQuestionSha256": "fafd02f5e7cebb26ee9633cb3c2b9f73c1e0eac3be2f7f55121a25b11e2c41dd",
+      "inspectedSolutionSha256": "37b545d1109a22dd7b1c9c4be0a8edcee3d267467905b94d43838bf9f8a46733"
+    },
+    "6b": {
+      "topic": "2-1",
+      "atlas": "geometry-constructions-proofs",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 320,
+          "bottom": 627,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 366,
+          "bottom": 755,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 56,
+          "top": 54,
+          "bottom": 637,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 72,
+          "top": 484,
+          "bottom": 708,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any correct statement",
+        "Lower Middle Partial Credit — Some substantive work towards proof e.g. at least one full step complete",
+        "Lower Middle Partial Credit — Two distinct relevant statements",
+        "Upper Middle Partial Credit — Substantive proof with two critical steps missing",
+        "High Partial Credit — Correct proof but critical step missing",
+        "High Partial Credit — Correct proof without justification of steps"
+      ],
+      "sourceNote": "In the first alternative on scheme PDF page 56, the two occurrences of ∠PBR should read ∠PCR: this is the angle at C in the cyclic quadrilateral OPCR and in triangle ABC. The rest of that argument and the target identity are unchanged.",
+      "inspectedQuestionSha256": "47b1ecd566f37ddcd60bbf221b9df64590fd2d58089080b24e0749d484527d74",
+      "inspectedSolutionSha256": "a0dff190f27b4c8c3eb67efbb6274011fd448b5e9d1ce52c1687cf71f2b37fee"
+    },
+    "7-a-i": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 158,
+          "bottom": 580,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 588,
+          "bottom": 648,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 73,
+          "top": 69,
+          "bottom": 120,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Incomplete statement e.g., “it has changed”."
+      ],
+      "inspectedQuestionSha256": "8e65b8a5954fe0d3847ccaffd14ea87f856d4ffcaf904595be2496d2b2849052",
+      "inspectedSolutionSha256": "9f44c53bff6e65a36cfdedcaf68c7dd5574f3b006f6d010e9ca5ad591d97ce24"
+    },
+    "7-a-ii": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 158,
+          "bottom": 553,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 12,
+          "top": 671,
+          "bottom": 691,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 678,
+          "bottom": 719,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 73,
+          "top": 131,
+          "bottom": 182,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Incomplete or partly correct statement"
+      ],
+      "inspectedQuestionSha256": "42e05cdbd5bb5b5753d8f1f7eadefb0c42da0840d6ed82077ba923a2bc1e06c2",
+      "inspectedSolutionSha256": "15108d7252356c6b69849a83a6efae5da9719cee844707d592d99f9122fb7dea"
+    },
+    "7-a-iii": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 158,
+          "bottom": 553,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 13,
+          "top": 54,
+          "bottom": 73,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 70,
+          "bottom": 135,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 73,
+          "top": 193,
+          "bottom": 300,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Incomplete or partly correct statement, e.g.,",
+        "Partial Credit — Reference to positive"
+      ],
+      "inspectedQuestionSha256": "6377316a3961933ff090a043222208e99bd294202253db4d8b2640d14b0a925f",
+      "inspectedSolutionSha256": "c95fbedc21a86a0ca6ff16470df8153e8aa950bbd52b23cfb300f7fd452a2d14"
+    },
+    "7-b": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 158,
+          "bottom": 500,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 13,
+          "top": 178,
+          "bottom": 211,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 186,
+          "bottom": 272,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 73,
+          "top": 311,
+          "bottom": 416,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Some reference to the middle household",
+        "Note — accept (for full credit) reference to needing information about mortgage holders who are not on standard variable rates."
+      ],
+      "inspectedQuestionSha256": "6b7d784d030f8111ba2a487df4424e41ef0e7af632dd628d07935e3cbfbf9908",
+      "inspectedSolutionSha256": "a80d42c65a796aa33e2aa86ee620bad5ffd313619fe126a1cbb7f3eb20931639"
+    },
+    "7-c": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 158,
+          "bottom": 500,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 13,
+          "top": 316,
+          "bottom": 383,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 368,
+          "bottom": 447,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 73,
+          "top": 428,
+          "bottom": 609,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Both may be caused by something else",
+        "Low Partial Credit — General statement regarding correlation not implying causality – no context"
+      ],
+      "inspectedQuestionSha256": "4612d87b48c4c5c4210a8543be773a469f4e52a6299565bb68622bfecbc8b9b3",
+      "inspectedSolutionSha256": "d0858d64748d839b427052c7f19f1d48dac95e6ac78fab0f59872e455c00e939"
+    },
+    "7-d-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 54,
+          "bottom": 143,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 14,
+          "top": 151,
+          "bottom": 199,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 216,
+          "bottom": 266,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 74,
+          "top": 53,
+          "bottom": 194,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Uses a relevant number",
+        "High Partial Credit — Answer in the form of a fraction"
+      ],
+      "inspectedQuestionSha256": "e75700a021cdbb0290c7516befed6d22a9da6cc8b4123861a1b4916d8c7b9d0c",
+      "inspectedSolutionSha256": "21089c318e1dd50d40353a38ca78feeb0eb662cfb297f8741cb5b12b6bfe8ab9"
+    },
+    "7-d-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 54,
+          "bottom": 143,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 14,
+          "top": 289,
+          "bottom": 337,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 345,
+          "bottom": 393,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 74,
+          "top": 205,
+          "bottom": 316,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Uses a relevant number",
+        "Partial Credit — Answer in form of a fraction"
+      ],
+      "inspectedQuestionSha256": "f7aed2b6f0ace6a17d96f369dab85fda15857bd273a0fc3ca428ac4a610ee42d",
+      "inspectedSolutionSha256": "dc1b80bb98a225a65a65a153c1315474fd6ab4bfcce5ca14edd24e56190770f0"
+    },
+    "7-d-iii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 54,
+          "bottom": 143,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 14,
+          "top": 427,
+          "bottom": 475,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 470,
+          "bottom": 744,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 60,
+          "top": 54,
+          "bottom": 151,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 74,
+          "top": 327,
+          "bottom": 465,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Attempt to combine (i) and (ii) for part (iii)",
+        "Low Partial Credit — Calculates total arrears and stops",
+        "High Partial Credit — Answer as a fraction"
+      ],
+      "inspectedQuestionSha256": "5968bab4c96e82d67f9816aac3bfa5ac3149a6c65ac7329a72f70920476794b9",
+      "inspectedSolutionSha256": "33b8e6967c98d5b73bba07ae1a62ee39e792d473c0808520ad15d003b15f8681"
+    },
+    "7-e": {
+      "topic": "1-7",
+      "atlas": "statistics-inferential-statistics",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 54,
+          "bottom": 143,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 15,
+          "top": 54,
+          "bottom": 162,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 278,
+          "bottom": 727,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 74,
+          "top": 477,
+          "bottom": 659,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — One relevant step e.g. null hypothesis stated only",
+        "Low Partial Credit — Margin of error or observed proportion and does not continue",
+        "Mid Partial Credit — Substantive work with one or more critical omissions",
+        "Mid Partial Credit — Margin of error and observed proportion found but fails to continue"
+      ],
+      "sourceNote": "Two arithmetic typos appear in the printed model: 0.31 ± 0.0224 gives [0.2876, 0.3324], not an upper endpoint of 0.3224. In the alternative method, use 0.276 + 0.0224 (not +0.0244), giving the printed interval (0.2536, 0.2984). Both methods still reject the null hypothesis.",
+      "inspectedQuestionSha256": "700fce052086aac840321109667b0bbb29a40b1bf7985e114ef3cc3f668f9562",
+      "inspectedSolutionSha256": "c78ff2a351bc9d30dd9563e70414cc6e0e3bbcaf8893a3699322d14826387b64"
+    },
+    "8-a": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 16,
+          "top": 86,
+          "bottom": 286,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 61,
+          "top": 289,
+          "bottom": 705,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 75,
+          "top": 54,
+          "bottom": 387,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Partial Credit — Some use of Pythagoras",
+        "Low Partial Credit — Cosine Rule with some substitution",
+        "Low Partial Credit — Some work towards solving required angle with sine or cosine rule"
+      ],
+      "inspectedQuestionSha256": "e1aaf26e28b1d5d54459fc87ad0ce85c993ae2a6b5e54191378d8441d7d25764",
+      "inspectedSolutionSha256": "99d3498ceede431397ba1b48411a35102ed230cdb2bcd6849db5743a54c66d7c"
+    },
+    "8-b": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 16,
+          "top": 86,
+          "bottom": 286,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 17,
+          "top": 54,
+          "bottom": 121,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 62,
+          "top": 134,
+          "bottom": 246,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 75,
+          "top": 397,
+          "bottom": 495,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Effort at working out values for angles",
+        "Low Partial Credit — Correct answer without justification",
+        "High Partial Credit — Correct answer without being fully justified"
+      ],
+      "inspectedQuestionSha256": "ba2f61db806f8cfe43003a33a418231b8a5ddc4550333e87dd03dc665bf87296",
+      "inspectedSolutionSha256": "11b5591d50d3a3cf48178fa5de47a7707f47035b7ad5c6dda827189b72a2a69b"
+    },
+    "8-c": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 16,
+          "top": 86,
+          "bottom": 286,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 17,
+          "top": 54,
+          "bottom": 121,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 17,
+          "top": 391,
+          "bottom": 452,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 62,
+          "top": 485,
+          "bottom": 694,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 75,
+          "top": 507,
+          "bottom": 645,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Some reference to distance between P and R",
+        "High Partial Credit — One situation only dealt with correctly"
+      ],
+      "inspectedQuestionSha256": "54dc5d17536bc787d9a95eadbc8fded53380bc400054ac0b342657871c356f03",
+      "inspectedSolutionSha256": "c49900f9e34618eb99f6e1374b3cdcdf742b27aced9d791a3b865c159e82875b"
+    },
+    "8-d": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 16,
+          "top": 86,
+          "bottom": 215,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 16,
+          "top": 239,
+          "bottom": 286,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 18,
+          "top": 54,
+          "bottom": 439,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 63,
+          "top": 103,
+          "bottom": 439,
+          "x0": 52,
+          "x1": 551
+        },
+        {
+          "page": 75,
+          "top": 656,
+          "bottom": 769,
+          "x0": 52,
+          "x1": 551
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any relevant semi circle sketched or implied",
+        "High Partial Credit — Any correct semi circle inserted in addition to semicircle centre P with radius 32."
+      ],
+      "inspectedQuestionSha256": "ebd1257b20b4edd670385dffc0299ff84f3714bc66d1ee6f5f21b7509c200961",
+      "inspectedSolutionSha256": "8ff76186486e3c594c5df99447ec6afdca64ed2be5f0b7671fa7063cb9dcd884"
+    }
+  },
+  "reviewedAt": "2026-10-29"
+}

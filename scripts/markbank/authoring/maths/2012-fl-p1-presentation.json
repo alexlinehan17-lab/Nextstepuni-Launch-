@@ -1,0 +1,1358 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003BLP100EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "tasks": {
+    "1-i": {
+      "topic": "3-2",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 40,
+          "bottom": 72,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 5,
+          "top": 155,
+          "bottom": 535,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "440ba079fee1ae3bd0ca617dc126efdb33d334ec1f17726a4e14b618aae6880c",
+      "inspectedSolutionSha256": "4adeebb9d4d8a36abe683037d151a0ba15470fe38d4512b096185d0a989d0293"
+    },
+    "1-ii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 86,
+          "bottom": 116,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 6,
+          "top": 110,
+          "bottom": 552,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "d9ec76a30205e20a62e59ad736d9b97142580dc6b395bf489350b9bfac74dc39",
+      "inspectedSolutionSha256": "943ecf5542867fd5b96a66c8fac16f6c6c6abf3398263d6da7d48e03fcca0d67"
+    },
+    "1-iii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 137,
+          "bottom": 198,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 7,
+          "top": 145,
+          "bottom": 568,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "ff1de5e4c7259d67fdeaadfc3f65e42805a0e69a02cd8259b692e74c4361f15b",
+      "inspectedSolutionSha256": "fa9f5befc6cac8ee1672c255a2d0b5818903a3b583f13f2efada3bc7ba52ae11"
+    },
+    "1-iv": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 204,
+          "bottom": 245,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 123,
+          "bottom": 524,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "07407aa1c305afb33766f48eebff6f30caabfa851b4cb2513a76bc58e8568c33",
+      "inspectedSolutionSha256": "62b9526763530a2509ff3084ed3cd7703f371074b7285e1ff9584dec82365a1a"
+    },
+    "1-v": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 264,
+          "bottom": 313,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 130,
+          "bottom": 322,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "5c0b6e783a5f4c9328e14077b50e73f8d738587cff79f9a5756eab069b9f736f",
+      "inspectedSolutionSha256": "6afc028498cfd56d600c5d5a106bb90467cb518a07162ff1632b47b11086d2a4"
+    },
+    "1-vi": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 333,
+          "bottom": 373,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 125,
+          "bottom": 480,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "a0162fa0d0e59622bcd7d6e08d8acdfc3a92d66f956244e55b2458ba7df5337f",
+      "inspectedSolutionSha256": "3d4f41df9ebf4c7f02156396e06a6b1a1e6b63fe8ff67cd759ac47d1e22975aa"
+    },
+    "1-vii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 395,
+          "bottom": 430,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 130,
+          "bottom": 493,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "d77fd39758aec342ad97c767d002cf1bd54d67847e37c391c7a7e3549b130aea",
+      "inspectedSolutionSha256": "4d44191d5b770a8bdcef6a9aef634809f7f89ca2e9abca0471327ded57317e0d"
+    },
+    "1-viii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 450,
+          "bottom": 485,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 12,
+          "top": 120,
+          "bottom": 456,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "dca6279886a1584a2a5676264de061b8bda71648fb71323d1b0f9e6d221b61d8",
+      "inspectedSolutionSha256": "336f465d04dea8dc2a9ac29d48021601e1fe95e6fc5cc80bf8ab9ad581335459"
+    },
+    "1-ix": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 507,
+          "bottom": 546,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 13,
+          "top": 123,
+          "bottom": 309,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "12d290f778ca622a64c9d76f7a0838b20e0d24d93e437ba9afb41017dcca6aad",
+      "inspectedSolutionSha256": "49e6d4f19992faf38e9d72fa0182c4faad1d809489d1cbca15c3102eb2f29d94"
+    },
+    "1-x": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 562,
+          "bottom": 605,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 121,
+          "bottom": 471,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "f2a7bd50d6cf05eb9551cc03e5b146b7aea8b0d66304677c8ff4d16d42c8a346",
+      "inspectedSolutionSha256": "c523c6f41306a4d2a5e14c177a471160595c8b49efcb5231da32e587fb4ee4b6"
+    },
+    "2-a": {
+      "topic": "3-4",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 30,
+          "bottom": 79,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 205,
+          "bottom": 524,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "89aeaab06d02e7f636cf73ad30c97f12740b62a2b14b85b59c0af9eed3530d65",
+      "inspectedSolutionSha256": "92403ad9f1a0820a7abdf242cef533dbddc1b1b6f7f517728f8d5e36c5d91c5b"
+    },
+    "2-b-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 99,
+          "bottom": 160,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 184,
+          "bottom": 488,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "563e079c61078a68c170dcee8ae3c2451c49c08e972e70f6eaf2e3ef77795223",
+      "inspectedSolutionSha256": "d387f709522b682607b7f870f33662b16ea1d64f28c3e1d48252f6c478767ebf"
+    },
+    "2-b-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 99,
+          "bottom": 134,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 159,
+          "bottom": 194,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 51,
+          "bottom": 280,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "886bad0f9402f3cc9c87a0a884479a5168a7870f7f24e35d0d38e6d7a00682c9",
+      "inspectedSolutionSha256": "d8248504bb9a15298310f14dda28891d075929511234ae585b6a292b189ea664"
+    },
+    "2-b-iii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 99,
+          "bottom": 134,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 159,
+          "bottom": 228,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 306,
+          "bottom": 674,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "sourceNote": "Source clarification: the printed carry-forward note says “part (i)”. The calculation uses the weekly pay from part (ii), not the finishing time from part (i). Use the candidate’s weekly-pay result when assessing this step.",
+      "inspectedQuestionSha256": "3f803681eea203d1ffff6b361e65d934dcdf87d06fa43b58afcad599331bcac8",
+      "inspectedSolutionSha256": "49e2800a09963c5c04581867391c12b3c4a67b7dc1a5abebf1307bdfc0f20aa5"
+    },
+    "2-c-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 253,
+          "bottom": 316,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 184,
+          "bottom": 448,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "3efb4679737704191000a721e6c9adb3a4180950483987258706e37a934e4480",
+      "inspectedSolutionSha256": "dcaac401c3c7b3784f52f7aca1c5ca7d542e67ded332b97d378602cf11da5680"
+    },
+    "2-c-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 253,
+          "bottom": 288,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 315,
+          "bottom": 350,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 51,
+          "bottom": 350,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "112ff681d1fa74a2624a47e818ebfbff626321870b529a755047cae4d4b42f88",
+      "inspectedSolutionSha256": "1668dc0a7d876eb6b1bc72d4b9bddaae2bfb0cb2531e4c1104f1a3d65fa540e9"
+    },
+    "2-c-iii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 253,
+          "bottom": 288,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 349,
+          "bottom": 398,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 352,
+          "bottom": 687,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "ed85d6af0f5470fb46482275aa9330c03c4f0889a1366849d920acb7688a7a5c",
+      "inspectedSolutionSha256": "e1fdcbe37e216f8d993b40c832c99ef400d45c14ce756e4750f405d05cdf5e7a"
+    },
+    "3-a-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 458,
+          "bottom": 521,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 217,
+          "bottom": 441,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "d52974b47c7f4a50927f5366de85d0b4d212df2336b7872f57a8cd35f7544808",
+      "inspectedSolutionSha256": "bb8b7383e93570da1c842b38666ced3ba2f5de4e66d665e6aa1ce5751c2adf9d"
+    },
+    "3-a-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 458,
+          "bottom": 493,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 520,
+          "bottom": 541,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 443,
+          "bottom": 788,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "e057b5846429f6e9ae7e936d8c9b0f54fa7f92dcdec80c0c201a9ca0e5132dec",
+      "inspectedSolutionSha256": "cda1e27c7f17e41d1080e1306562344e4eb67445e67a87fd458c5e3bdef3e7a4"
+    },
+    "3-b": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 561,
+          "bottom": 610,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 146,
+          "bottom": 547,
+          "x0": 46,
+          "x1": 550
+        },
+        {
+          "page": 22,
+          "top": 51,
+          "bottom": 576,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "5bc5f0a74ad7d1bf9956c9f27b12840f2a44b332b4251eeea215e085427747de",
+      "inspectedSolutionSha256": "1b7764d0d6aa60849b3777d7cfcba6577fe7f89159a84eb5afdb56dd7485fe0f"
+    },
+    "3-c-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 630,
+          "bottom": 693,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 23,
+          "top": 170,
+          "bottom": 420,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "d6297c0ed422b0eb6828f23edfb06a5a79b99c865c6f8cd37a9770a8fe1a8868",
+      "inspectedSolutionSha256": "dfa38b699ac1b033e970e422111ec9dcb5a4e42e7232bc6e36de38f5736d7d2a"
+    },
+    "3-c-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 630,
+          "bottom": 665,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 692,
+          "bottom": 727,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 51,
+          "bottom": 325,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "da33a79317ccd3d8d90af0247603e6cb7311b7130ddda27361f192cdab3f79c5",
+      "inspectedSolutionSha256": "75804a2a2418a23b2127b9f90b3a4d952c5a75e168f3877d575003728c7b8b1e"
+    },
+    "3-c-iii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 630,
+          "bottom": 747,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 372,
+          "bottom": 724,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "ae46ee7e1b7c9d16d5395e01fcc629749f152b96abb629d6809a4720c6020ff0",
+      "inspectedSolutionSha256": "f8cf80e3e32dcf4e101fbbad6b724e769afae9a328cefacb7a95c9768ba230aa"
+    },
+    "4-a": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 30,
+          "bottom": 66,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 192,
+          "bottom": 503,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Award full marks for correct answer by trial and error with verification"
+      ],
+      "inspectedQuestionSha256": "36490c1358ac568b3ab1ee5d50a086c1465ae5adf05aae6b1c876b69350de5af",
+      "inspectedSolutionSha256": "5c5bf699e9a307a472cb499c96ef73db102fbe62940c44bd20206f483eea87ec"
+    },
+    "4-b": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 100,
+          "bottom": 159,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 134,
+          "bottom": 599,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — Correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "4d7737f04677934a136e5128fb8a511a7eeb60d581d20ec6dbb082f1989771da",
+      "inspectedSolutionSha256": "e4bd64dee8820dfa2df51b337f3be759c6d43915f724e728aaaa620798184e4e"
+    },
+    "4-c-i": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 181,
+          "bottom": 244,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 170,
+          "bottom": 369,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — x + 5 or 5 – x"
+      ],
+      "inspectedQuestionSha256": "e81683ff2866cba9936404031ba5a28ad46b678662e91e6e3b10957dc9adeab7",
+      "inspectedSolutionSha256": "70774baffef054f444df3abb59f828b0bbb538b301138cff21bd3716333bbfc3"
+    },
+    "4-c-ii": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 181,
+          "bottom": 218,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 250,
+          "bottom": 300,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 398,
+          "bottom": 685,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates answer from part (i)"
+      ],
+      "inspectedQuestionSha256": "f14205ebfc27650cf107790c9878c65771b623fd8bbae8fa87cc3351edb77f6b",
+      "inspectedSolutionSha256": "9de563b6e7bc742405b42fbbfbad45d92dc84b5eb72458ceb1454cc2093670df"
+    },
+    "4-c-iii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 181,
+          "bottom": 327,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 28,
+          "top": 51,
+          "bottom": 401,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates answers from parts (i) and (ii)"
+      ],
+      "inspectedQuestionSha256": "8d2635e9afb295f283244a80f601dacc93e464980c2d68c600d863ea57025d44",
+      "inspectedSolutionSha256": "e9648536e271342ebad9b2524d243d601993e9154862e86e864445fb9a3b2dc6"
+    },
+    "5-a-i": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 402,
+          "bottom": 424,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 191,
+          "bottom": 360,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — At least one correct entry, each part"
+      ],
+      "inspectedQuestionSha256": "7a81923864370891bc98d263a944406d8471588c9a0404a3795b1baa4802751b",
+      "inspectedSolutionSha256": "3fd5ba55e904a6fcab47bfd67ec1ba1c96fa91abea51c8cd2155e908a08e9e63"
+    },
+    "5-a-ii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 402,
+          "bottom": 452,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 191,
+          "bottom": 360,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — At least one correct entry, each part"
+      ],
+      "inspectedQuestionSha256": "14af3729672e6ff75d6e174052f13b446174f239ef1270938b5786ffd05a9c0b",
+      "inspectedSolutionSha256": "3fd5ba55e904a6fcab47bfd67ec1ba1c96fa91abea51c8cd2155e908a08e9e63"
+    },
+    "5-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 472,
+          "bottom": 495,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 446,
+          "bottom": 710,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — Effort at finding factors",
+        "Attempts — Attempt at trial and error"
+      ],
+      "inspectedQuestionSha256": "77ae6affe2593c5c2d042a3137b498f7ea0ddc4f8070320cea41d1aa7b06bf48",
+      "inspectedSolutionSha256": "7e2363b9c2359cd05184f04515505f7e41bb73dd6edfecb3f26f01a31e2fac25"
+    },
+    "5-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 502,
+          "bottom": 525,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 51,
+          "bottom": 629,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Maximum deductions beyond point * is 3 marks"
+      ],
+      "inspectedQuestionSha256": "d4036b8e6418641ae7d7ce982a78106aaf520f9fdb54ccb868bf0732942f6dcb",
+      "inspectedSolutionSha256": "78fdbb57a8c36023f56e1523ce3b8364233df77f6b0e894d2139111659020215"
+    },
+    "5-c-i": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 545,
+          "bottom": 571,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 130,
+          "bottom": 443,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — Effort at trial and error by substitution"
+      ],
+      "inspectedQuestionSha256": "51afa6f26b5d9de3cf46280eab3eed36bff3279d9b537d2d9b2745973a850cde",
+      "inspectedSolutionSha256": "24f824807105d0d41a528383de1c9fc8daf5e44d94804a467d005b8d829345ee"
+    },
+    "5-c-ii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 577,
+          "bottom": 603,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 446,
+          "bottom": 788,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Misreadings — Uses ≤ instead of <"
+      ],
+      "inspectedQuestionSha256": "5a05b0d7fec067ca5239f24c42edcd345894a648cb7c805e5d47056bac27cd5e",
+      "inspectedSolutionSha256": "87db77648b9d1dfd34fd0ca502713ba657f1270391c7d98830e4c76b8b2d8be1"
+    },
+    "5-c-iii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 545,
+          "bottom": 631,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 32,
+          "top": 51,
+          "bottom": 246,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — If equality used in (i) or (ii), then attempt at most here"
+      ],
+      "inspectedQuestionSha256": "eb9f862e36563fed1dbb84a6978553693311b63201943b169af695c848213501",
+      "inspectedSolutionSha256": "3e22d0db1ad4bd63c39a6a37a0ec1e3e1a8e3034587dc280cf57ee4be6952ba0"
+    },
+    "6-i": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 30,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 334,
+          "bottom": 355,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 486,
+          "bottom": 573,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work shown"
+      ],
+      "inspectedQuestionSha256": "5ed45af5bd34f6460cde55cba89736c644caf69d394327ecf03ed95358e08806",
+      "inspectedSolutionSha256": "83ce219efb2ed10fdb77e1df79a35ad25c2d952a5c88c31ea153d72ec802996c"
+    },
+    "6-ii": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 30,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 362,
+          "bottom": 383,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 612,
+          "bottom": 784,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work shown"
+      ],
+      "inspectedQuestionSha256": "d73b0c81594262b58d5c6854c80edd3fe116ccf1ef6897146aa1d9d69c1b3e10",
+      "inspectedSolutionSha256": "8a7940bfb7eb4eb93a0765e30702d81ebf552a98b571bc39dcc12a148d9a79c3"
+    },
+    "6-iii": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 30,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 389,
+          "bottom": 411,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 104,
+          "bottom": 334,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work shown"
+      ],
+      "inspectedQuestionSha256": "d222a3b4b1ef95215918e10f132f0c74c7f900a82a8e7300cf2c5499537c1d72",
+      "inspectedSolutionSha256": "2236658422031637a1cfce64d9d106bce64d5be533e5df22bd78b09800f49231"
+    },
+    "6-iv": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 30,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 417,
+          "bottom": 439,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 404,
+          "bottom": 715,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work shown"
+      ],
+      "inspectedQuestionSha256": "207044fab4a5a9c5292c6e6e29158e71a6b98fcd2a186833a1eed9064399dbc8",
+      "inspectedSolutionSha256": "c9068be8f81f71028b3050f81cfd9a5a4e699e1ba337b6ecc49ca96e2533c1b0"
+    },
+    "6-v": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 30,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 444,
+          "bottom": 480,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 35,
+          "top": 117,
+          "bottom": 483,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work shown"
+      ],
+      "inspectedQuestionSha256": "d5faa511c026ef231c8a56367e0b192f6f30611f836676265239a4fdd405a869",
+      "inspectedSolutionSha256": "b121be16c039918e6d7cf8a4defa51357b244601a8ad9dea71c79e67c1e383c0"
+    },
+    "7-graph": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 554,
+          "bottom": 609,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 197,
+          "bottom": 553,
+          "x0": 46,
+          "x1": 550
+        },
+        {
+          "page": 37,
+          "top": 51,
+          "bottom": 430,
+          "x0": 46,
+          "x1": 550
+        },
+        {
+          "page": 38,
+          "top": 51,
+          "bottom": 649,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Fully correct graph drawn with no work shown: award 30 marks",
+        "Note — Accept values from candidates work"
+      ],
+      "inspectedQuestionSha256": "2005ce6bcd2d0954507802672eeb62f9682502180d6fb5e1b19ddc1b298105df",
+      "inspectedSolutionSha256": "22023ae56e7b2845d46cfeafcf7a1f30ebcede7fdc846ea5b461fb46fa9a5d7b"
+    },
+    "7-i": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 554,
+          "bottom": 636,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 642,
+          "bottom": 664,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 169,
+          "bottom": 785,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "inspectedQuestionSha256": "1661991af9e4e5ba1aaa889f285bf8724a5713d875b355a532a2a28b28a363d7",
+      "inspectedSolutionSha256": "def62a48829bf9d69a296c6e7b89a6e75ad2d03b65a049a05eed58a6d1ea4991"
+    },
+    "7-ii": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 554,
+          "bottom": 636,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 672,
+          "bottom": 694,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 169,
+          "bottom": 785,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "inspectedQuestionSha256": "813c6d57cd0297676f2450ad67fbe03361992a3e53b508446dcf5792cfa2cca8",
+      "inspectedSolutionSha256": "def62a48829bf9d69a296c6e7b89a6e75ad2d03b65a049a05eed58a6d1ea4991"
+    },
+    "7-iii": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 554,
+          "bottom": 636,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 702,
+          "bottom": 724,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 169,
+          "bottom": 785,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "inspectedQuestionSha256": "7831f6f962820acbd5f0fc522b86da7e5eb4d3f0aa3f93b53bcbdad741fc5426",
+      "inspectedSolutionSha256": "def62a48829bf9d69a296c6e7b89a6e75ad2d03b65a049a05eed58a6d1ea4991"
+    },
+    "7-iv": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 554,
+          "bottom": 636,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 732,
+          "bottom": 755,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 169,
+          "bottom": 785,
+          "x0": 46,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "inspectedQuestionSha256": "86eb8e75433a7a91bdc4de7fe8dd0b3791f9eac11014198c469b2912da627741",
+      "inspectedSolutionSha256": "def62a48829bf9d69a296c6e7b89a6e75ad2d03b65a049a05eed58a6d1ea4991"
+    }
+  }
+}

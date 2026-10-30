@@ -246,6 +246,8 @@ export interface CardFigure {
    * the written stem and prompt must remain visible. Omitted means the crop
    * contains the complete printed question and replaces that text. */
   includesPrompt?: boolean;
+  /** Verified clarification of a printed source error, shown only with the solution. */
+  sourceNote?: string;
   /** Named in the paper's acknowledgements, where a figure is third-party. */
   thirdPartyRights?: string;
 }
@@ -278,7 +280,11 @@ export interface LinkedReading {
 }
 
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
+  kind: 'source-text' | 'source-question' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
+  /** Schemes occupy a distinct storage directory, even when file IDs match. */
+  documentKind?: 'paper' | 'scheme';
+  /** A printed-scale measurement task needs the calibrated PDF ruler. */
+  measurementRequired?: boolean;
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
@@ -348,7 +354,7 @@ interface CardBase {
    * would make every card cite a Higher Level paper that does not exist, and
    * would hide it from a student whose profile says anything else.
    */
-  level: 'higher' | 'ordinary' | 'common';
+  level: 'higher' | 'ordinary' | 'foundation' | 'common';
   /** PART-level curriculum id. A card may never inherit its parent question's
    *  tag — the alternative parts of one Section C question routinely span
    *  different topics, and inheriting would file bread mould under the
@@ -416,7 +422,7 @@ export interface SecCardBase extends CardBase {
    *  what the card says a student is looking at. Part 4 is the composition,
    *  which is why the union needed a fourth number it had never had. */
   section: 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
-  | '1' | '2' | '3' | '4' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
+  | '0' | '1' | '2' | '3' | '4' | 'T1' | 'T2' | 'T3' | 'AG' | 'C1' | 'C2' | 'CD'
   | 'IR1' | 'IR2' | 'LA1' | 'LA2' | 'CA1'
   // Latin's paper prints no lettered sections a card could be filed under:
   // it prints five QUESTIONS, and the "Section A"/"Section B" beneath three
@@ -483,8 +489,41 @@ export interface SecCardBase extends CardBase {
  * exact failure Mark Bank exists to prevent — turning non-exhaustive English
  * indicative material into a fabricated answer checklist.
  */
+export interface MathematicsDeductionComponent {
+  id: string;
+  label: string;
+  maximum: number;
+  /** Zero means no attempt credit; without explicit awards, use hit-or-miss scoring. */
+  attempt: number;
+  /** Some older tasks replace general deductions with an explicit award list. */
+  permittedMarks?: number[];
+}
+
+export interface MathematicsDeductionMethod {
+  id: string;
+  label: string;
+  components: MathematicsDeductionComponent[];
+}
+
 export interface SecPointCardBase extends SecCardBase {
   tariffModel: TariffModel;
+  /** SEC credit scales, verified against the original scheme. Component scales
+   * belong to one indivisible task; their awards sum to the question total. */
+  mathematicsScale?: {
+    /** The fixed finite selection practised by this card; original question remains intact. */
+    practiceInstruction?: string;
+    /** Reviewed task-specific prerequisites, restrictions or follow-through rules. */
+    markingNote?: string;
+    fullCreditMinusOne: boolean;
+    schemeFileid: string;
+    schemePages: number[];
+    generalNotesPages: number[];
+  } & ({ code: string; marks: number[]; components?: never; methods?: never }
+    | { code?: never; marks?: never; methods?: never; components: { id: string; label: string; code: string; marks: number[]; fullCreditMinusOne?: boolean }[] }
+    | { code?: never; marks?: never; components?: never; fullCreditMinusOne: false;
+        /** Older schemes deduct errors from named steps, with an attempt floor.
+         * Alternative methods are exclusive: never add their awards together. */
+        methods: MathematicsDeductionMethod[] });
   /** Capped at six REQUIRED rows. Keep separately marked tasks split, while
    *  retaining all six marking groups in a published three-comparison route.
    *
@@ -1674,6 +1713,44 @@ export function tariffReconciles(card: SecCard): boolean {
   ))) return false;
   // Parts are a criterion row's own split: they add up to it, each on printed steps.
   if (rows.some(row => row.parts && !rowPartsReconcile(row))) return false;
+  if (card.mathematicsScale) {
+    const scale = card.mathematicsScale;
+    const validBand = (band: { code: string; marks: number[] }, maximum: number) =>
+      /^\d+[ABCDE]$/.test(band.code)
+      && Number.parseInt(band.code, 10) === maximum
+      && band.marks.length === 'ABCDE'.indexOf(band.code.at(-1)!) + 2
+      && band.marks[0] === 0 && band.marks.at(-1) === maximum
+      && band.marks.every((mark, index) => Number.isInteger(mark)
+        && (index === 0 || mark > band.marks[index - 1]));
+    const valid = scale.methods
+      ? scale.code === undefined && scale.marks === undefined && scale.components === undefined
+        && !scale.fullCreditMinusOne && scale.methods.length > 0
+        && new Set(scale.methods.map(method => method.id)).size === scale.methods.length
+        && scale.methods.every(method => /^[a-z][a-z0-9-]*$/.test(method.id) && method.label.trim().length > 0
+          && method.components.length > 0
+          && new Set(method.components.map(component => component.id)).size === method.components.length
+          && method.components.every(component => /^[a-z][a-z0-9-]*$/.test(component.id)
+            && component.label.trim().length > 0 && Number.isInteger(component.maximum) && component.maximum > 0
+            && Number.isInteger(component.attempt) && component.attempt >= 0 && component.attempt < component.maximum
+            && (component.permittedMarks === undefined || (Array.isArray(component.permittedMarks)
+              && component.permittedMarks[0] === 0 && component.permittedMarks.at(-1) === component.maximum
+              && component.permittedMarks.includes(component.attempt)
+              && component.permittedMarks.every((mark, index, marks) => Number.isInteger(mark)
+                && (index === 0 || (mark >= component.attempt && mark > marks[index - 1]))))))
+          && method.components.reduce((sum, component) => sum + component.maximum, 0) === totalMarks)
+      : scale.components
+      ? scale.code === undefined && scale.marks === undefined && scale.components.length > 1
+        && new Set(scale.components.map(component => component.id)).size === scale.components.length
+        && scale.components.every(component => /^[a-z][a-z0-9-]*$/.test(component.id)
+          && component.id !== 'deduction' && component.label.trim().length > 0
+          && (component.fullCreditMinusOne === undefined || typeof component.fullCreditMinusOne === 'boolean')
+          && validBand(component, Number.parseInt(component.code, 10)))
+        && !(scale.fullCreditMinusOne && scale.components.some(component => component.fullCreditMinusOne))
+        && scale.components.reduce((sum, component) => sum + Number.parseInt(component.code, 10), 0) === totalMarks
+      : validBand({ code: scale.code, marks: scale.marks }, totalMarks);
+    return valid && typeof scale.fullCreditMinusOne === 'boolean'
+      && scale.schemePages.length > 0 && scale.generalNotesPages.length > 0;
+  }
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   // The scheme never printed a split, so a row carrying its own marks is a
   // value the card invented — the tariff lives on the question alone.

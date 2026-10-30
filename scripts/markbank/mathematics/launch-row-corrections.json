@@ -1,0 +1,216 @@
+{
+  "reviewedAt": "2026-10-30",
+  "reason": "Re-read original scheme pages after current Launch extraction exposed four garbled legacy row bundles. All criteria retained, separately labelled; actual mathematics remains typeset in the official solution image. 2024 OL Q5(c) reader page corrected from 11 to 13.",
+  "originalCards": [
+    {
+      "id": "maths-2024-hl-p1-q6-b-iii",
+      "topicId": "maths-4-1",
+      "conceptId": "iii-write-function-terms-its-simplest",
+      "level": "higher",
+      "year": 2024,
+      "subjectId": "maths",
+      "section": "B",
+      "questionRef": "2024 HL Paper 1 Q6(b)(iii)",
+      "questionText": "Write the function g(f(x)) in terms of x, in its simplest form.",
+      "figureKey": "maths-2024-HL-paper-p015-i1",
+      "labelKey": [],
+      "tariffModel": {
+        "kind": "fixed",
+        "notation": "Scale (0, 4, 6, 10)",
+        "answer": null,
+        "ofParts": null,
+        "perPart": null
+      },
+      "totalMarks": 10,
+      "rows": [
+        {
+          "id": "maths-2024-hl-p1-q6-b-iii-r1",
+          "kind": "anyN",
+          "verbatim": "Some correct substitution into composite function\nSome correct substitution into f(g(x))\nHigh Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent\nff(gg(xx)) = xx 9/2",
+          "marks": 10,
+          "openList": true,
+          "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Low Partial Credit.",
+          "group": {
+            "claimMax": 1,
+            "perOption": 10,
+            "options": [
+              "Some correct substitution into composite function\nSome correct substitution into f(g(x))\nHigh Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent\nff(gg(xx)) = xx 9/2"
+            ]
+          }
+        }
+      ],
+      "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+      "questionFigureKey": "maths-2024-HL-ask-p1-q6-b-iii",
+      "stem": "Two functions, f(x) and g(x), are defined as follows, for x ∈ ℝ, x > 0: f(x) = e^(9x); g(x) = ln √x. Use these functions to answer parts (b)(i), (b)(ii), and (b)(iii)."
+    },
+    {
+      "id": "maths-2024-hl-p2-q6-a",
+      "topicId": "maths-2-2",
+      "conceptId": "line-segment-point-divides-line-segment",
+      "level": "higher",
+      "year": 2024,
+      "subjectId": "maths",
+      "section": "B",
+      "questionRef": "2024 HL Paper 2 Q6(a)",
+      "questionText": "[AB] is a line segment. The point C (6, 11) divides the line segment [AB] internally in the ratio 1 : 3. A is the point (1, 13). Find the co-ordinates of the point B.",
+      "figureKey": "maths-2024-HL-paper-p037-i0",
+      "labelKey": [],
+      "tariffModel": {
+        "kind": "fixed",
+        "notation": "Scale (0, 2, 3, 4, 5)",
+        "answer": null,
+        "ofParts": null,
+        "perPart": null
+      },
+      "totalMarks": 5,
+      "rows": [
+        {
+          "id": "maths-2024-hl-p2-q6-a-r1",
+          "kind": "anyN",
+          "verbatim": "Work of merit, for example, identifies one correct part of translation; some correct substitution into formula; relevant diagram with labelling",
+          "marks": 5,
+          "openList": true,
+          "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+          "group": {
+            "claimMax": 3,
+            "perOption": 2,
+            "options": [
+              "Work of merit, for example, identifies one correct part of translation; some correct substitution into formula; relevant diagram with labelling",
+              "Initial translation correct\nFully correct substitution into formula\nTreats C as midpoint, otherwise correct.",
+              "Identifies trebling/quadrupling of initial translation\n6 = (xx₂ + 3)/4 and 11 = ,/4 yy₂ + 39 or equivalent\nx₂ correct or y₂ correct"
+            ],
+            "perOptionSteps": [
+              2,
+              1,
+              2
+            ]
+          }
+        }
+      ],
+      "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+      "questionFigureKey": "maths-2024-HL-ask-p2-q6-a"
+    },
+    {
+      "id": "maths-2024-ol-p1-q5-c",
+      "topicId": "maths-5-1",
+      "conceptId": "graph-linear-function-shown",
+      "level": "ordinary",
+      "year": 2024,
+      "subjectId": "maths",
+      "section": "B",
+      "questionRef": "2024 OL Paper 1 Q5(c)",
+      "questionText": "The graph of the linear function g(x) is shown below. Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form a/b where a, b ∈ ℕ.",
+      "figureKey": "maths-2024-OL-paper-p012-i2",
+      "labelKey": [],
+      "tariffModel": {
+        "kind": "fixed",
+        "notation": "Scale (0, 2, 5)",
+        "answer": null,
+        "ofParts": null,
+        "perPart": null
+      },
+      "totalMarks": 5,
+      "rows": [
+        {
+          "id": "maths-2024-ol-p1-q5-c-r1",
+          "kind": "anyN",
+          "verbatim": "Work of merit, for example, work towards finding the equation of the line\nSome reference to differentiation\nWork on graph towards finding the slope\nRRRRRRRR/RRRRRR or mentions slope",
+          "marks": 5,
+          "openList": true,
+          "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Partial Credit.",
+          "group": {
+            "claimMax": 1,
+            "perOption": 5,
+            "options": [
+              "Work of merit, for example, work towards finding the equation of the line\nSome reference to differentiation\nWork on graph towards finding the slope\nRRRRRRRR/RRRRRR or mentions slope"
+            ]
+          }
+        }
+      ],
+      "notes": "Prompt, grouped parts and context visually checked against the original 2024 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+      "questionFigureKey": "maths-2024-OL-ask-p1-q5-c"
+    },
+    {
+      "id": "maths-2025-ol-p1-q2-a-ii",
+      "topicId": "maths-3-2",
+      "conceptId": "work-out-modulus-surd-form",
+      "level": "ordinary",
+      "year": 2025,
+      "subjectId": "maths",
+      "section": "B",
+      "questionRef": "2025 OL Paper 1 Q2(a)(ii), (iii)",
+      "questionText": "(ii) Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form. (iii) z₄ is a complex number with |z₄| < |z₁|. Write down one possible value of z₄. Give your answer in the form a + bi, where a, b ∈ ℤ.",
+      "figureKey": "maths-2025-OL-paper-p007-i1",
+      "labelKey": [],
+      "tariffModel": {
+        "kind": "fixed",
+        "notation": "Scale (0, 3, 5, 7, 10)",
+        "answer": null,
+        "ofParts": null,
+        "perPart": null
+      },
+      "totalMarks": 10,
+      "rows": [
+        {
+          "id": "maths-2025-ol-p1-q2-a-ii-r1",
+          "kind": "anyN",
+          "verbatim": "Work of merit in (ii), for example, correct substitution\nWork point with of merit a modulus in (iii), for < example,/√5 plotted a and labelled z₄\nModulus formula written in (ii) OR (iii)",
+          "marks": 10,
+          "openList": true,
+          "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: (ii) correct and (iii) not in correct form. Note: Accept correct answers without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+          "group": {
+            "claimMax": 3,
+            "perOption": 3,
+            "options": [
+              "Work of merit in (ii), for example, correct substitution\nWork point with of merit a modulus in (iii), for < example,/√5 plotted a and labelled z₄\nModulus formula written in (ii) OR (iii)",
+              "Work of merit in (ii) AND (iii)\nOne part correct",
+              "One part correct and work of merit in the other part"
+            ],
+            "perOptionSteps": [
+              3,
+              2,
+              5
+            ]
+          }
+        }
+      ],
+      "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+      "questionFigureKey": "maths-2025-OL-ask-p1-q2-a-ii",
+      "stem": "In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i."
+    }
+  ],
+  "correctedRows": {
+    "maths-2024-hl-p1-q6-b-iii": [
+      "Low Partial Credit — Some correct substitution into composite function",
+      "Low Partial Credit — Some correct substitution into f(g(x))",
+      "High Partial Credit — Writes ln√(e⁹ˣ) as ln((e⁹ˣ)^(1/2)) or equivalent",
+      "High Partial Credit — f(g(x)) = x^(9/2)"
+    ],
+    "maths-2024-hl-p2-q6-a": [
+      "Low Partial Credit — Work of merit, for example, identifies one correct part of translation; some correct substitution into formula; relevant diagram with labelling",
+      "Mid Partial Credit — Initial translation correct",
+      "Mid Partial Credit — Fully correct substitution into formula",
+      "Mid Partial Credit — Treats C as midpoint, otherwise correct.",
+      "High Partial Credit — Identifies trebling/quadrupling of initial translation",
+      "High Partial Credit — 6 = (x₂ + 3)/4 and 11 = (y₂ + 39)/4, or equivalent",
+      "High Partial Credit — x₂ correct or y₂ correct"
+    ],
+    "maths-2024-ol-p1-q5-c": [
+      "Partial Credit — Work of merit, for example, work towards finding the equation of the line",
+      "Partial Credit — Some reference to differentiation",
+      "Partial Credit — Work on graph towards finding the slope",
+      "Partial Credit — Rise/Run or mentions slope",
+      "Note — Accept correct answer without work"
+    ],
+    "maths-2025-ol-p1-q2-a-ii": [
+      "Low Partial Credit — Work of merit in (ii), for example, correct substitution",
+      "Low Partial Credit — Work of merit in (iii), for example, a point with a modulus < √5 plotted and labelled z₄",
+      "Low Partial Credit — Modulus formula written in (ii) OR (iii)",
+      "Mid Partial Credit — Work of merit in (ii) AND (iii)",
+      "Mid Partial Credit — One part correct",
+      "High Partial Credit — One part correct and work of merit in the other part",
+      "Full Credit −1 — (ii) correct and (iii) not in correct form",
+      "Note — Accept correct answers without work"
+    ]
+  }
+}

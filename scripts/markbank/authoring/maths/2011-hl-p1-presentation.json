@@ -1,0 +1,1623 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "tasks": {
+    "1-a": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 53,
+          "bottom": 92,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 5,
+          "top": 212,
+          "bottom": 397,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Factors once only",
+        "Blunders (−3) — Incorrect cancellation"
+      ],
+      "inspectedSolutionSha256": "9ec63e333ef706ee487c4b4754c353d23ef965529b365437fe4d7fbaf7a2e667"
+    },
+    "1-b-i": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 111,
+          "bottom": 165,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 5,
+          "top": 575,
+          "bottom": 740,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 6,
+          "top": 55,
+          "bottom": 540,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices",
+        "Slips (−1) — Numerical"
+      ],
+      "inspectedSolutionSha256": "9cf83914ab42183b1a3ffaba323e7c5522ed14e3bb15f571336995a08bb0caf9"
+    },
+    "1-b-ii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising,indices-and-logs",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 173,
+          "bottom": 227,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 6,
+          "top": 550,
+          "bottom": 745,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Deduction root from factor",
+        "Blunders (−3) — Solution set not stated"
+      ],
+      "inspectedSolutionSha256": "22774d02ae088826d6b55afd13bd5fece1f403cd2a2a1c04b8ac43f6da3f0851"
+    },
+    "1-c": {
+      "topic": "4-2",
+      "atlas": "algebra-cubics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 252,
+          "bottom": 291,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 7,
+          "top": 124,
+          "bottom": 620,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 8,
+          "top": 55,
+          "bottom": 600,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Not like to like when equating coefficients",
+        "Attempts — Other factor not linear, Att 2 marks only."
+      ],
+      "inspectedSolutionSha256": "14a285da01ba72bf76dc1ed8af534e061cc7d064b0c5af5cb7c3b89d6caabfca"
+    },
+    "2-a": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 340,
+          "bottom": 363,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 187,
+          "bottom": 754,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 10,
+          "top": 55,
+          "bottom": 262,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices",
+        "Slips (−1) — Numerical"
+      ],
+      "inspectedSolutionSha256": "b9afc67fe8cc637b01388d2d784e4fab46babb3fc66c4fc846505136fed423ed"
+    },
+    "2-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra-quadratics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 387,
+          "bottom": 438,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 2,
+          "top": 444,
+          "bottom": 466,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 406,
+          "bottom": 435,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 10,
+          "top": 465,
+          "bottom": 542,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 10,
+          "top": 645,
+          "bottom": 770,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Sum of roots",
+        "Blunders (−3) — Product of roots",
+        "Slips (−1) — Numerical"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "c10ea8ab105d3990de1c40940022f98dbca74112588a5d2503d8830ca4368e1f"
+    },
+    "2-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-quadratics",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 387,
+          "bottom": 466,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 2,
+          "top": 472,
+          "bottom": 493,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 435,
+          "bottom": 464,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 10,
+          "top": 542,
+          "bottom": 641,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 10,
+          "top": 645,
+          "bottom": 770,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Sum of roots",
+        "Blunders (−3) — Product of roots",
+        "Slips (−1) — Numerical"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "f1317df7cb8db0fa3628c9678dd406bbfdc0ecc2f49d4c5ab6c3d3dbd97a434e"
+    },
+    "2-c-i": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 514,
+          "bottom": 552,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 2,
+          "top": 558,
+          "bottom": 581,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 177,
+          "bottom": 191,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 11,
+          "top": 220,
+          "bottom": 329,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 11,
+          "top": 572,
+          "bottom": 701,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Deduction each time from work shown",
+        "Blunders (−3) — Inequality sign"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "e82c5a380b5f88eb1ae41fa101bf58045d2665dadee0a15f45b658eeeb1f224d"
+    },
+    "2-c-ii": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 514,
+          "bottom": 552,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 2,
+          "top": 588,
+          "bottom": 611,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 191,
+          "bottom": 205,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 11,
+          "top": 334,
+          "bottom": 445,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 11,
+          "top": 572,
+          "bottom": 701,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Deduction each time from work shown",
+        "Blunders (−3) — Inequality sign"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "7e872471a266db2e879e692ba56438b94cc9b1d05a877c38effe0f3002e19f58"
+    },
+    "2-c-iii": {
+      "topic": "4-3",
+      "atlas": "algebra-inequalities",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 514,
+          "bottom": 552,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 2,
+          "top": 618,
+          "bottom": 642,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 205,
+          "bottom": 219,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 11,
+          "top": 450,
+          "bottom": 566,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 11,
+          "top": 572,
+          "bottom": 701,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Deduction each time from work shown",
+        "Blunders (−3) — Inequality sign"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "72a786fcd8118ec28bad444e58083ff08ce3eaa772d3e68e99af4500543a37e7"
+    },
+    "3-a": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 53,
+          "bottom": 92,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 12,
+          "top": 198,
+          "bottom": 410,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Attempts — Not using correct conjugate",
+        "Slips (−1) — Numerical"
+      ],
+      "inspectedSolutionSha256": "0ea3c2b83d93d8883591cca1acd2514934edd20bba039649c10748db3d8557c6"
+    },
+    "3-b-i": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 111,
+          "bottom": 150,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 12,
+          "top": 519,
+          "bottom": 548,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 12,
+          "top": 565,
+          "bottom": 705,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 13,
+          "top": 185,
+          "bottom": 374,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Only one complex number found",
+        "Slips (−1) — Answers not simplified"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "067650027e5880162b944ac07ed0a773fc6db03ecb15e2ddbd06f79d3955fc6f"
+    },
+    "3-b-ii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers,algebra-quadratics",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 111,
+          "bottom": 150,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 157,
+          "bottom": 197,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 12,
+          "top": 548,
+          "bottom": 563,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 13,
+          "top": 55,
+          "bottom": 374,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Quadratic formula",
+        "Slips (−1) — Answers not simplified"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "653ea122997ac3c358e9165c58376abffa17b984602743d304f2042cdea1fce0"
+    },
+    "3-c-i": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 217,
+          "bottom": 269,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 206,
+          "bottom": 222,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 14,
+          "top": 271,
+          "bottom": 404,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 14,
+          "top": 618,
+          "bottom": 697,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices",
+        "Blunders (−3) — Incorrect order of multiplication"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "54612f8401692a3e56bb0cbddc7fc3775cccd2bbc275e922e0034371c154230d"
+    },
+    "3-c-ii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 276,
+          "bottom": 342,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 222,
+          "bottom": 252,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 14,
+          "top": 408,
+          "bottom": 496,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 14,
+          "top": 618,
+          "bottom": 719,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect order of multiplication"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "656fe3817a45552de391c96cf473d11de9a74cd1aa00fc0a8119b59a5bee04e1"
+    },
+    "3-c-iii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 217,
+          "bottom": 376,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 256,
+          "bottom": 270,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 14,
+          "top": 498,
+          "bottom": 612,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 14,
+          "top": 618,
+          "bottom": 697,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect order of multiplication"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "9f79f4efeb95dc040d68c9e8ee3e98017e17cdfbd52f40322521df9b1fdc1002"
+    },
+    "4-a": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 423,
+          "bottom": 459,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 182,
+          "bottom": 448,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Numerical"
+      ],
+      "inspectedSolutionSha256": "854453dd40003749ae217cc842644b9bf2bc3037f8fb718c1096309e7a9af4f1"
+    },
+    "4-b-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 477,
+          "bottom": 510,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 517,
+          "bottom": 541,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 55,
+          "bottom": 84,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 155,
+          "bottom": 229,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 593,
+          "bottom": 765,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "c763605fb50807dda90139f1cc6bd944928441a8c4c003a140d16ddce9d4e466"
+    },
+    "4-b-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 477,
+          "bottom": 510,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 549,
+          "bottom": 574,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 84,
+          "bottom": 112,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 231,
+          "bottom": 328,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 593,
+          "bottom": 765,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "4969d2eace16479b3bdde4b2728e6f2800f82c7843b45e50019b982a93ae4afd"
+    },
+    "4-b-iii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 477,
+          "bottom": 510,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 549,
+          "bottom": 574,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 582,
+          "bottom": 631,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 112,
+          "bottom": 126,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 333,
+          "bottom": 449,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 593,
+          "bottom": 765,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices",
+        "Blunders (−3) — Sum of geometric progression to infinity"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "d8921994833a39bc9c348e41f0e6c8eae972132c957762457558e80d6a094399"
+    },
+    "4-b-iv": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 477,
+          "bottom": 510,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 549,
+          "bottom": 574,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 3,
+          "top": 638,
+          "bottom": 698,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 126,
+          "bottom": 154,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 453,
+          "bottom": 589,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 16,
+          "top": 593,
+          "bottom": 765,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Indices",
+        "Blunders (−3) — Not least integer"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "5cc5ed1479456ef208dc9e25047d30c1331e949221bfbafb11186b1185603cca"
+    },
+    "5-a": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 54,
+          "bottom": 77,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 199,
+          "bottom": 766,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — General term",
+        "Blunders (−3) — Errors in binomial expansion once only"
+      ],
+      "inspectedSolutionSha256": "1e4108809f71f2a023326874932d1cf3a4708bcd25844a7e5b00acf5bf6472ec"
+    },
+    "5-b-i": {
+      "topic": "5-1",
+      "atlas": "indices-and-logs",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 98,
+          "bottom": 141,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 188,
+          "bottom": 409,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Logs laws",
+        "Worthless — Drops ‘log’"
+      ],
+      "inspectedSolutionSha256": "71ee9d6b12cd29bacbc4f3633af5b4e29676f71a63c3611e6a56fb68eca862f7"
+    },
+    "5-b-ii": {
+      "topic": "5-1",
+      "atlas": "indices-and-logs",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 147,
+          "bottom": 204,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 413,
+          "bottom": 765,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Not to 2 decimal places",
+        "Attempts — Correct answer by trial and error"
+      ],
+      "inspectedSolutionSha256": "1842f0e1684af9bb8b415f0fef6ed2e6658c21d4c5972bc183991a855c947f24"
+    },
+    "5-c": {
+      "topic": "4-1",
+      "atlas": "induction",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 222,
+          "bottom": 252,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 123,
+          "bottom": 743,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 20,
+          "top": 55,
+          "bottom": 405,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Note — Must prove P(1) step. Not sufficient to state P(n) true for n=1"
+      ],
+      "inspectedSolutionSha256": "3c2f4c9329e01a4a2db0f05283d05cc018cd5be445960f14aea93419a30c3e91"
+    },
+    "6-a": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 299,
+          "bottom": 322,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 134,
+          "bottom": 306,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Attempts — Error in differentiation formula"
+      ],
+      "inspectedSolutionSha256": "c9b25044c37f2066a2a748b6b165a98d3649d26da71903b8d7fa7f7c02a6dec9"
+    },
+    "6-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 343,
+          "bottom": 369,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 4,
+          "top": 370,
+          "bottom": 409,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 460,
+          "bottom": 474,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 21,
+          "top": 520,
+          "bottom": 574,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 22,
+          "top": 55,
+          "bottom": 202,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Attempts — Error in differentiation formula (chain rule)"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "6118fdb024d6e4f6299fb6bcc319f22203e424824d830e1646e653e615678ff4"
+    },
+    "6-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 343,
+          "bottom": 369,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 4,
+          "top": 414,
+          "bottom": 436,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 474,
+          "bottom": 504,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 21,
+          "top": 576,
+          "bottom": 633,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 22,
+          "top": 55,
+          "bottom": 202,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Attempts — Error in differentiation formula (chain rule)"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "dbe40910c44aaa6717ed88910343e3fbf69d0e1ce0551e05f4274885fbf37051"
+    },
+    "6-b-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 343,
+          "bottom": 369,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 4,
+          "top": 441,
+          "bottom": 464,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 504,
+          "bottom": 518,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 21,
+          "top": 634,
+          "bottom": 723,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 22,
+          "top": 55,
+          "bottom": 202,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Attempts — Error in differentiation formula (chain rule)"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "62ba15f28b30ecc7907b36bada22f7ad4ebc3f9639d101f79c0c446132bbdcff"
+    },
+    "6-c-i": {
+      "topic": "5-1",
+      "atlas": "functions",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 484,
+          "bottom": 551,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 22,
+          "top": 388,
+          "bottom": 402,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 22,
+          "top": 432,
+          "bottom": 501,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 23,
+          "top": 284,
+          "bottom": 452,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Asymptotes"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "c0db963ba01302dcbd093e66e037724c3e5a58289a01d8fbc065e5b7665b7bb0"
+    },
+    "6-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 484,
+          "bottom": 523,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 4,
+          "top": 558,
+          "bottom": 624,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 22,
+          "top": 402,
+          "bottom": 416,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 22,
+          "top": 505,
+          "bottom": 646,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 23,
+          "top": 55,
+          "bottom": 216,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 23,
+          "top": 284,
+          "bottom": 481,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply. The summary and detailed allocation both give Q6(c)(ii) 5 marks (attempt 2). A later note refers to “2nd 5 marks”, which is inconsistent with that allocation. This card retains the published 5-mark total and the original note.",
+      "inspectedSolutionSha256": "df8230a5c89f4d55699aa609096b5608e2aaf79b1ad0f0df65e8092bcf87cca2"
+    },
+    "6-c-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 484,
+          "bottom": 653,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 22,
+          "top": 416,
+          "bottom": 430,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 23,
+          "top": 219,
+          "bottom": 278,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 23,
+          "top": 284,
+          "bottom": 452,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Formula for mid-point line"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "cd2947126c5583f6e7b6341772b6fbe50472f2365a727f916ff9cde4e4af8b01"
+    },
+    "7-a": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 54,
+          "bottom": 77,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 201,
+          "bottom": 480,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect value of x or no value of x in slope",
+        "Blunders (−3) — Incorrect value of y or no value of y in slope"
+      ],
+      "inspectedSolutionSha256": "327b55e2bd05998e3a3dbb0d6b36b93b4ed08427df0da199e056b96ea9feba59"
+    },
+    "7-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 98,
+          "bottom": 159,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 167,
+          "bottom": 206,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 202,
+          "bottom": 267,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 25,
+          "top": 297,
+          "bottom": 399,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 25,
+          "top": 467,
+          "bottom": 588,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Attempts — Error in differentiation formula"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "d8dce04eaa80605aae5d0f1399bcc0fc774e1657645f67ec2974d50c11901e99"
+    },
+    "7-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 98,
+          "bottom": 159,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 167,
+          "bottom": 250,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 267,
+          "bottom": 298,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 25,
+          "top": 399,
+          "bottom": 463,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 25,
+          "top": 467,
+          "bottom": 588,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Differentiation",
+        "Attempts — Error in differentiation formula"
+      ],
+      "sourceNote": "The original scheme shares this marking-note block across adjacent parts. Only deductions relevant to the named task apply.",
+      "inspectedSolutionSha256": "5fd6bf1ebf67059f677234647aba4e78214e9cb08cf3474ea4e0146ae7d47974"
+    },
+    "7-c-i": {
+      "topic": "5-2",
+      "atlas": "differentiation-rules",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 269,
+          "bottom": 326,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 334,
+          "bottom": 373,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 396,
+          "bottom": 768,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 27,
+          "top": 55,
+          "bottom": 305,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Sides of triangle once only",
+        "Attempts — Error in differentiation formula and hence Att 2 at most in simplification"
+      ],
+      "inspectedSolutionSha256": "b3abf039ed4935384a30183b390048355ab37ee15a74f8c430b55e0ae8c1e6a1"
+    },
+    "7-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 269,
+          "bottom": 373,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 377,
+          "bottom": 614,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 341,
+          "bottom": 701,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect statement"
+      ],
+      "inspectedSolutionSha256": "be1dd9a69a8bc543c72f15653dcac1e68e7c66b82b639184f8ed9e08cc67caf7"
+    },
+    "8-a": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 49,
+          "bottom": 92,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 28,
+          "top": 134,
+          "bottom": 328,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Integration",
+        "Blunders (−3) — No ‘c’"
+      ],
+      "inspectedSolutionSha256": "ee5b30afc5f16fa3c77cb52adee526a4c6764cd2dc83fb8ee4c55573d6a7376b"
+    },
+    "8-b-i": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 98,
+          "bottom": 153,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 28,
+          "top": 499,
+          "bottom": 778,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 29,
+          "top": 55,
+          "bottom": 130,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Not calculating substituted limits",
+        "Blunders (−3) — Not changing limits"
+      ],
+      "inspectedSolutionSha256": "7011e8aa38966b25985f739b39546d72b7fff6ad81342ca038e5ce11076d6423"
+    },
+    "8-b-ii": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 161,
+          "bottom": 216,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 138,
+          "bottom": 615,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect order in applying limits",
+        "Slips (−1) — Not changing sign when subtracting in division"
+      ],
+      "inspectedSolutionSha256": "6cb269c376e78a6ba464d5f76a24883be3d50cca8e39093c2554d12f2029c53c"
+    },
+    "8-c": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 239,
+          "bottom": 275,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 150,
+          "bottom": 780,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 31,
+          "top": 55,
+          "bottom": 257,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Attempts — Error in differentiation formula or rules of integration"
+      ],
+      "inspectedSolutionSha256": "b5886f4185435acfaddf1030bca267b9d6780d2fdf99d32dbfadb839e47bf374"
+    }
+  }
+}

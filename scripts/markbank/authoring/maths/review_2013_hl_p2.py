@@ -1,0 +1,125 @@
+"""2013 Higher Project Maths Phase 2 Paper 2: every published task and both Q6 routes."""
+import os,sys
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from review_lib import *
+R={
+'1-a-i':[L(PC,'Incomplete statement but with some merit'),L(PC,'Reference to outcomes'),L(PC,'Use of # symbol')],
+'1-a-ii':[L(PC,'Incomplete statement but with some merit'),L(PC,'Some reference to ‘common’ or ‘intersection’ of sets'),L(PC,'Venn diagram with E and F (or equivalent) shown but no reference to outcomes in common'),L(PC,'Reference to P(EUF)')],
+'1-a-iii':[L(PC,'Incomplete statement but with some merit'),L(PC,'Reference to comparing/contrasting the outcomes of two events'),L(PC,'Reference to P(E∩F) or P(E|F) or P(F|E)')],
+'1-b':[L(LPC,'Venn Diagram with two or more entries correct'),L(LPC,'Reference to P(E∩F) only'),L(LPC,'Reference to P(E) or P(F) only'),L(MPC,'Venn diagram with either P(E∩F) or P(E) or P(F) or P((E|F) or P(F|E) calculated'),L(HPC,'P(E∩F) and P(E)×P(F) found but correct conclusion not stated or implied'),L(HPC,'Error in sample space but correct conclusion from candidate’s work')],
+'2-a-i':[L(LPC,'Any relevant step'),L(LPC,'Formula written'),L(HPC,'Reference to 1·6'),L(HPC,'Incorrect reading of tables')],
+'2-a-ii':[L(LPC,'Any relevant step other than in a(i)'),L(LPC,'Diagram clearly indicating a ‘new’ area'),L(LPC,'Reference to – 1·6'),L(LPC,'P(Z≤–1·6) = 0·0548 and stops'),L(HPC,'Probability of both situations calculated but fails to finish correctly'),L(HPC,'Correct method with some error')],
+'2-b':[L(LPC,'One correct'),L(LPC,'Bell shape in one or more'),L(HPC,'Two correct')],
+'3-a':[L(LPC,'Any one correct'),L(LPC,'Any line sketched correctly'),L(MPC,'Any two correct'),L(HPC,'Any four correct')],
+'3-b':[L(LPC,'Any reasonable step e.g. correct relevant formula'),L(LPC,'Slope m or n'),L(MPC,'Both slopes')],
+'4-a':[L(LPC,'Any one correct'),L(LPC,'Any reasonable step'),L(HPC,'Any two correct'),L(HPC,'Correct approach but error in work')],
+'4-b-i':[L(LPC,'Some reference to ratio'),L(LPC,'Any reasonable step'),L(MPC,'Some correct substitution into correct ratio formula'),L(MPC,'Substitution resulting in a quadratic equation in one variable'),L(HPC,'Error in ratio formula but finishes'),L(HPC,'Finds one of the ordinates only')],
+'4-b-ii':[L(LPC,'Slope of line of centres'),L(LPC,'Any reasonable step'),L(HPC,'Uses point of contact with slope of diameter for equation')],
+'5-a':[L(LPC,'Relevant diagram'),L(LPC,'One statement of area in trigonometric format'),L(LPC,'Sine of a relevant angle in right angled triangle written in terms of sides'),L(LPC,'Any reasonable step'),L(HPC,'Correct approach but one error in work')],
+'5-b-i':[L(LPC,'Relevant formula'),L(LPC,'Any reasonable step'),L(HPC,'Error in substitution into formula but continues'),L(HPC,'One value only'),L(HPC,'Correct method but one error in work')],
+'5-b-ii':[L(PC,'One position only shown'),L(PC,'Triangle(s) sketched but Z not indicated')],
+'5-c':[L(PC,'Error in substitution into area formula'),L(PC,'Any reasonable step')],
+'6a-a':[L(LPC,'One partially correct statement'),L(LPC,'One partially correct sketch'),L(LPC,'Any reasonable step'),L(MPC,'One fully correct statement'),L(MPC,'One fully correct sketch'),L(HPC,'Two correct statements'),L(HPC,'Two correct sketches')],
+'6a-b':[L(PC,'Some relevant reference to side(s) of triangle'),L(PC,'Some relevant reference to angles of triangle'),L(PC,'An incomplete ‘rough’ sketch')],
+'6a-c':[L(LPC,'Some correct elements of construction'),L(LPC,'Some evidence of understanding of term orthocentre'),L(LPC,'Any reasonable step'),L(MPC,'One correct altitude'),L(HPC,'Two altitudes but not intersecting')],
+'6b-a':[L(LPC,'Any correct step e.g.,'),L(LPC,'Identifies two equal sides'),L(LPC,'Identifies two equal angles'),L(HPC,'Proof with correct steps but without justification of steps'),L(HPC,'Congruent triangles established but fails to complete'),L(HPC,'No conclusion stated or implied')],
+'6b-b':[L(LPC,'Any correct step e.g.,'),L(LPC,'Establishes parallel sides'),L(LPC,'Identifies two equal sides'),L(HPC,'Proof with one step not fully established'),L(HPC,'No conclusion stated or implied')],
+'7-a-i':[L(PC,'Reference to subgroups'),L(PC,'Reference to sampling'),L(PC,'Definition of random sample')],
+'7-a-ii':[L(PC,'Not clearly disjoint groups'),L(PC,'Incomplete number of groups (at least two)')],
+'7-b-i':[L(PC,'One correct probability'),L(PC,'Some evidence of relevant understanding')],
+'7-b-ii':[L(PC,'Correct answer without explanation'),L(PC,'Correct answer with incorrect or incomplete explanation')],
+'7-c':[L(PC,'Correct answer without explanation'),L(PC,'Correct explanation but omits to nominate correct graph')],
+'7-d-i':[L(PC,'A partially correct bell shape curve')],
+'7-d-ii':[L(PC,'Mention of mean and median but interpretation not related to candidate’s curve')],
+'7-e-i':[L(LPC,'One relevant step e.g. null hypothesis stated only'),L(LPC,'Some work towards margin of error'),L(MPC,'Substantive work with one or more critical omissions'),L(MPC,'Margin of error and range found but fails to continue'),L(HPC,'Failure to state null hypothesis correctly'),L(HPC,'Failure to cotextualise answer (e.g. stops at ‘Reject null hypothesis’)'),L(NOTE,'Accept candidate work based on disregarding don’t knows, yielding an observed satisfaction rating of 664/902 and a corresponding n = 902.')],
+'7-e-ii':[L(PC,'Correct answer but no explanation'),L(PC,'Partially correct explanation')],
+'7-f-i':[L(LPC,'Correct scale with at least two points plotted'),L(HPC,'Correct scales but not all points plotted (one or two omissions)'),L(HPC,'All points plotted but scales incorrect')],
+'7-f-ii':[L(NOTE,'Scale 5A (0, 5)')],
+'7-f-iii':[L(PC,'Partially correct answer e.g. not in context'),L(PC,'Positive or strong positive correlation and stops')],
+'7-f-iv':[L(LPC,'Straight line but clearly not best fit')],
+'8-a-i':[L(LPC,'Identifies a relevant right angle'),L(NOTE,'Accept candidate answer from this section if and when used in later sections.'),L(NOTE,'Units - apply penalty once only in question'),L(NOTE,'Do not penalise candidates for rounding off answers in (a)(i) and (a)(ii).')],
+'8-a-ii':[L(LPC,'Identifies Cosine Rule'),L(HPC,'Substantially correct work with one error')],
+'8-b':[L(PC,'Some relevant work')],
+'9-a':[L(LPC,'One correct ratio involving k'),L(LPC,'Some relevant use of Pythagoras'),L(LPC,'Any reasonable step e.g. establishing similar triangles'),L(MPC,'Two correct ratios involving k')],
+'9-b-i':[L(PC,'One relevant perimeter'),L(PC,'Any reasonable step')],
+'9-b-ii':[L(PC,'Area of one semi circle'),L(PC,'Area of circle with diameter k'),L(PC,'Area of arbelos only')],
+'9-c-i':[L(PC,'Two correct entries')],
+'9-c-ii':[L(PC,'Area of either semicircle in terms of x')],
+'9-c-iii':[L(LPC,'Some correct differentiation'),L(LPC,'Incomplete quadratic graph sketched'),L(HPC,'x = 3 established as maximum but area not calculated'),L(HPC,'Graphical result not interpreted')],
+'9-d':[L(PC,'One relevant step')],
+}
+# The full typeset crops retain mathematical criteria and special Q8 notes that
+# cannot be faithfully represented by the original PDF text layer.
+for k in ('8-a-i','8-a-ii','8-b'):
+ R[k]+=[L(NOTE,'There are several correct approaches. Track candidate’s data throughout, accepting any valid approach to each part.'),L(NOTE,'Where there is evidence of impact of the error, award full marks in the part in which the impact occurs and subsequent part(s).')]
+ROWS={'maths-2013-hl-p2-q'+k:v for k,v in R.items()}
+if len(sys.argv)>1:quotes(ROWS,sys.argv[1]);raise SystemExit
+SC={'5A':[0,5],'5B':[0,3,5],'5C':[0,3,4,5],'10B':[0,5,10],'10C':[0,3,8,10],'10D':[0,3,7,9,10],'15C':[0,5,10,15],'15D':[0,4,7,11,15]}
+p=Paper(2013,'hl','p2',SC,'LC003ALP200EV.pdf','LC003ALP000EV.pdf',reviewed_at='2026-10-29',full_credit_minus_one=False)
+STAR={'5-b-i','5-c','8-a-i','8-a-ii','8-b','9-c-ii','9-c-iii'}
+def A(s,ref,scale,scheme,pages,topic,atlas,prompt,stem=None):
+ extra={'fullCreditMinusOne':True} if s in STAR else {}
+ if s=='6a-c':extra['measurementRequired']=True
+ p.A(s,ref,scale,scheme,pages,topic,atlas,prompt,stem=stem,extra=extra)
+for s,word in [('i','Sample space'),('ii','Mutually exclusive events'),('iii','Independent events')]:
+ A('1-a-'+s,'Q1(a)('+s+')','5B',[41,65],[3],'1-2','probability','Explain the following term: '+word+'.')
+A('1-b','Q1(b)(i),Q1(b)(ii)','10D',[41,65],[3],'1-2','probability','(i) Represent the information on the Venn diagram. (ii) By calculating probabilities, investigate if the events E and F are independent.','In a class of 30 students, 20 study Physics, 6 study Biology and 4 study both Physics and Biology. A student is selected at random from this class. E: the student studies Physics. F: the student studies Biology.')
+normal='A random variable X follows a normal distribution with mean 60 and standard deviation 5.'
+A('2-a-i','Q2(a)(i)','10C',[42,66],[4],'1-7','statistics-z-scores','Find P(X ≤ 68).',normal)
+A('2-a-ii','Q2(a)(ii)','5C',[42,66],[4],'1-7','statistics-z-scores','Find P(52 ≤ X ≤ 68).',normal)
+A('2-b','Q2(b)','10C',[42,43,66],[4,5],'1-7','statistics-z-scores','Sketch, on each diagram, a new distribution to show the effect of the hormone. A: increases the height of all plants. B: reduces the number of really small and really tall plants, with the mean unchanged. C: increases the number of small and tall plants, with the mean unchanged.','The heights of a certain type of plant at harvest are normally distributed with mean μ. Three hormones are tested on different large samples, whose heights remain normally distributed at harvest. Diagrams A, B and C show the expected distributions without hormones.')
+lines='The equations of six lines are given: h: x = 3 − y; i: 2x − 4y = 3; k: y = −¼(2x − 7); l: 4x − 2y − 5 = 0; m: x + √3y − 10 = 0; n: √3x + y − 10 = 0.'
+A('3-a','Q3(a)','10D',[44,67],[6],'2-2','co-ordinate-geometry-of-the-line','Complete the table by matching each description to one or more of the lines: slope 2; intersects the y-axis at (0, −2½); equal intercepts on the axes; angle 150° with the positive sense of the x-axis; two perpendicular lines.',lines)
+A('3-b','Q3(b)','15D',[44,67],[6],'2-2','co-ordinate-geometry-of-the-line','Find the acute angle between the lines m and n.',lines)
+circles='The circles c₁ and c₂ touch externally as shown. The table gives c₁ with centre (−3, −2) and radius 2, and c₂ with equation x² + y² − 2x − 2y − 7 = 0. The line t is their common tangent.'
+A('4-a','Q4(a)','10C',[45,68],[7],'2-2','co-ordinate-geometry-of-the-circle','Complete the table: the equation of c₁, and the centre and radius of c₂.',circles)
+A('4-b-i','Q4(b)(i)','10D',[45,68],[7],'2-2','co-ordinate-geometry-of-the-circle','Find the co-ordinates of the point of contact of c₁ and c₂.',circles)
+A('4-b-ii','Q4(b)(ii)','5C',[46,68],[7],'2-2','co-ordinate-geometry-of-the-circle','Hence, or otherwise, find the equation of the tangent, t, common to c₁ and c₂.',circles+' Part (b)(i): find the point of contact.')
+A('5-a','Q5(a)','5C',[47,69],[8],'2-3','trigonometry-triangles','In a triangle ABC, the lengths of the sides are a, b and c. Using a formula for the area of a triangle, or otherwise, prove that a/sin ∠A = b/sin ∠B = c/sin ∠C.')
+tri='In a triangle XYZ, |XY| = 5 cm, |XZ| = 3 cm and |∠XYZ| = 27°.'
+A('5-b-i','Q5(b)(i)','10C',[47,69],[8],'2-3','trigonometry-triangles','Find the two possible values of |∠XZY|. Give your answers correct to the nearest degree.',tri)
+A('5-b-ii','Q5(b)(ii)','5B',[48,69],[8,9],'2-3','trigonometry-triangles','Draw a sketch of the triangle XYZ, showing the two possible positions of the point Z.',tri)
+A('5-c','Q5(c)','5B',[48,69],[8,9],'2-3','trigonometry-triangles','In the case that |∠XZY| < 90°, write down |∠ZXY|, and hence find the area of the triangle XYZ, correct to the nearest integer.',tri)
+A('6a-a','Q6A(a)(i),Q6A(a)(ii),Q6A(a)(iii)','10D',[49,70],[10],'2-1','geometry-constructions-proofs','Complete each statement: (i) The circumcentre of a triangle is the point of intersection of ____. (ii) The incentre of a triangle is the point of intersection of ____. (iii) The centroid of a triangle is the point of intersection of ____.')
+A('6a-b','Q6A(b)','5B',[49,70],[10],'2-1','geometry-constructions-proofs','In an equilateral triangle, the circumcentre, the incentre and the centroid are all in the same place. Explain why this is the case.')
+A('6a-c','Q6A(c)','10D',[49,70],[10],'2-1','geometry-constructions-proofs','Construct the orthocentre of the triangle ABC below. Show all construction lines clearly.','Use the original obtuse triangle ABC shown on the paper.')
+A('6b-a','Q6B(a)','10C',[50,71],[11],'2-1','geometry-constructions-proofs','A quadrilateral (four sided figure) has two sides which are parallel and equal in length. Prove that the quadrilateral is a parallelogram.')
+A('6b-b','Q6B(b)','15C',[51,71],[11],'2-1','geometry-constructions-proofs','In the parallelogram ABCD, DE is perpendicular to AC and BF is perpendicular to AC. Prove that EBFD is a parallelogram.','Refer to the original diagram with E and F on the diagonal AC.')
+air='Go Fast Airlines provides internal flights in Ireland, short haul flights to Europe and long haul flights to America and Asia. Long haul tickets are economy, business or executive class. All passengers have a baggage allowance of 20 kg and pay per kg above it. The company surveys 1000 passengers each month.'
+data='May survey: male 479, female 521; previously flown: yes 682, no 318; would fly again: yes 913, no 87; age: mean 42, median 31; in-flight spend: mean €18·65, median €32·18; flight delayed: yes 231, no 748, don’t know 21; overall service: satisfied 664, not satisfied 238, don’t know 98.'
+A('7-a-i','Q7(a)(i)','5B',[52,72],[12],'1-4','statistics-descriptive-statistics','Go Fast Airlines used a stratified random sample to conduct the survey. Explain what is meant by a stratified random sample.',air+' '+data)
+A('7-a-ii','Q7(a)(ii)','5B',[53,72],[12,13],'1-4','statistics-descriptive-statistics','Write down 4 different passenger groups that the company might have included in their sample.',air+' '+data+' The sample was a stratified random sample.')
+A('7-b-i','Q7(b)(i)','5B',[53,72],[12,13],'1-2','probability','What is the probability that a passenger selected at random from this sample (1) had his/her flight delayed; (2) was not satisfied with the overall service?',air+' '+data)
+A('7-b-ii','Q7(b)(ii)','5B',[53,72],[12,13],'1-2','probability','An employee suggests that the probability of selecting a passenger whose flight was delayed and who was not satisfied with the overall service should be the product of the two probabilities in (i). Do you agree? Give a reason.',air+' '+data+' Part (b)(i): calculate the probability of a delayed flight and the probability of dissatisfaction.')
+A('7-c','Q7(c)','5B',[53,72],[12,13],'1-6','statistics-descriptive-statistics','Which of the three graphs is most likely to represent the distribution of the weights of passenger baggage? Give a reason.',air+' Refer to all three original graphs marked at 20 kg.')
+ages=air+' '+data
+A('7-d-i','Q7(d)(i)','5B',[54,72],[12,14],'1-6','statistics-descriptive-statistics','Draw a sketch of the possible distribution of the ages of the passengers based on the data in the survey.',ages)
+A('7-d-ii','Q7(d)(ii)','5B',[54,72],[12,14],'1-6','statistics-descriptive-statistics','Explain your answer to (d)(i).',ages+' Part (d)(i): sketch a possible distribution of passenger ages.')
+A('7-e-i','Q7(e)(i)','10D',[54,73],[12,14],'1-7','statistics-inferential-statistics','The company repeatedly asserts that 70% of their customers are satisfied with their overall service. Use an hypothesis test at the 5% level of significance to decide whether there is sufficient evidence to conclude that their claim is valid in May. Write the null hypothesis and state your conclusion clearly.',air+' '+data)
+A('7-e-ii','Q7(e)(ii)','5B',[54,73],[12,14],'1-7','statistics-inferential-statistics','A manager says: “If we survey 2000 passengers from June on, we will halve the margin of error in our surveys.” Is the manager correct? Explain your answer.',air)
+spend='Responses from ten passengers are given as (age in years, in-flight spend in euro): (46,30), (29,15), (37,20), (18,0), (25,10), (75,45), (52,25), (35,20), (40,20), (31,30).'
+A('7-f-i','Q7(f)(i)','10C',[55,73],[15],'1-6','statistics-descriptive-statistics','Draw a scatter plot of the data.',spend)
+A('7-f-ii','Q7(f)(ii)','5A',[55,73],[15],'1-6','statistics-descriptive-statistics','Calculate the correlation coefficient between passenger age and in-flight spend.',spend)
+A('7-f-iii','Q7(f)(iii)','5B',[55,73],[15],'1-6','statistics-descriptive-statistics','What can you conclude from the completed scatter plot and the correlation coefficient?',spend+' Parts (f)(i) and (ii): draw the scatter plot and calculate the correlation coefficient.')
+A('7-f-iv','Q7(f)(iv)','5B',[55,73],[15],'1-6','statistics-descriptive-statistics','Sketch the line of best fit in the completed scatter plot above.',spend+' Part (f)(i): draw the scatter plot.')
+ship='A port P is directly east of a port H. To sail from H to P, a ship first sails 80 km to R in the direction shown, then turns through an angle of 124° and sails 110 km directly to P. The original diagram marks ∠RHP = 36° and ∠HRP = 124°. Use the original question data as printed.'
+A('8-a-i','Q8(a)(i)','10C',[56,74,75],[16],'2-3','trigonometry-triangles','Find the distance from R to HP.',ship)
+A('8-a-ii','Q8(a)(ii)','10C',[56,57,74,75],[16],'2-3','trigonometry-triangles','Calculate |HP|.',ship+' Part (a)(i): find the distance from R to HP.')
+A('8-b','Q8(b)','10B',[57,58,74,75],[16,17],'2-3','trigonometry-triangles','The point T is directly east of R. |HT| = 110 km and |TP| = 80 km. Find |RT|.',ship+' Part (a)(ii): calculate |HP|. Refer also to the diagram showing T.')
+A('9-a','Q9(a)','10D',[59,76],[18],'2-1','geometry-constructions-proofs','The triangle XYZ is right-angled at X and XP is perpendicular to YZ. |YP| = 4, |PZ| = 8 and |PX| = k. Find k.')
+arbelos='The shaded region is an arbelos: a semicircular region of radius r₁ from which semicircles of radii r₂ and r₃ are removed as shown. SC is perpendicular to AF and |SC| = k. Refer to the original diagram.'
+A('9-b-i','Q9(b)(i)','5B',[60,76],[18,19],'3-4','area-volume','Show that, for fixed r₁, the perimeter of the arbelos is independent of the values of r₂ and r₃.',arbelos)
+A('9-b-ii','Q9(b)(ii)','5B',[60,76],[18,19],'3-4','area-volume','If r₂ = 2 and r₃ = 4, show that the area of the arbelos is the same as the area of the circle of diameter k.',arbelos)
+fixed=arbelos+' To investigate its area, a student fixes r₁ at 6 cm and varies r₂ and r₃.'
+A('9-c-i','Q9(c)(i)','10B',[61,76],[18,20],'3-4','area-volume','Complete the table for r₂ = 1, 2, 3, 4, 5: fill in r₃ and the area of the arbelos for each row.',fixed)
+A('9-c-ii','Q9(c)(ii)','5B',[61,76],[18,20],'3-4','area-volume,functions','In general, for r₁ = 6 cm and r₂ = x, 0 < x < 6, x ∈ ℝ, find an expression in x for the area of the arbelos.',fixed)
+A('9-c-iii','Q9(c)(iii)','5C',[61,76],[18,20],'5-2','differentiation-applications,area-volume','Hence, or otherwise, find the maximum area of an arbelos that can be formed in a semicircle of radius 6 cm.',fixed+' Part (c)(ii): find its area in terms of r₂ = x, with 0 < x < 6.')
+A('9-d','Q9(d)','5B',[62,76],[18,21],'2-1','geometry-constructions-proofs','AS and FS cut the two smaller semicircles at T and R respectively. Prove that RSTC is a rectangle.',arbelos)
+marks={**{str(i):25 for i in range(1,6)},'6A':25,'6B':25,'7':75,'8':30,'9':45}
+p.check(marks,44)
+p.review(marks,'Independent visual inspection of all 24 original paper pages and scheme PDF pages 39–80: all models, diagrams, alternative solutions, allocation/scale tables and detailed notes. Both Q6 alternatives retained. Phase 2 sources independently inspected and kept separate from the Phase 3 booklet; all Paper 2 tasks and marking boundaries coincide.',list(range(39,81)),[63,64],
+ ['300 candidate marks; 325 offered marks including both 25-mark Q6 alternatives.','Q1(b) and Q6A(a) retain their joint scales. All three Q2(b) graphs and the five Q3(a) descriptions are required, not optional pools.','Only the seven starred parts allow Full Credit minus one. Paper 2 ladders differ from Paper 1.','Detailed notes govern the Q5 and Q6A labels where the summary table is mislabelled. Q9(c)(i) is printed as Scale 5B (0,5,10); its actual 10-mark allocation and bands are retained as 10B.','Q8 contains errors expressly acknowledged by the SEC: retain all alternative model answers, carry-forward guidance, once-only units penalty, rounding allowance and full-credit provisions where the error affected work, including all impact criteria.','Source model typos: Q7(e)(i) reverses interval endpoints; Q9(c)(i) fourth row prints 1² instead of 2². Original images retained with labelled clarifications.'],
+ [{'pages':[2,10,11],'wording':'either Question 6A or Question 6B','classification':'expanded-alternatives','reason':'All three Q6A tasks and both Q6B tasks are retained, each at its published tariff.'},{'pages':[6],'wording':'matching each description given to one or more of the lines','classification':'matching-task','reason':'All five descriptions must be answered; this is not a choice of tasks.'},{'pages':[13],'wording':'4 different passenger groups','classification':'open-response','reason':'No finite list is specified. Retain one response at its 5B boundary.'},{'pages':[13],'wording':'Which of the graphs','classification':'answer-selection','reason':'All three answer options retained in one question; candidate identifies and explains the appropriate distribution.'}],
+ lambda t:('expanded-alternatives','Both complete Q6 routes retained.') if 'either' in t else ('all-required','All required tasks retained; Q6 routes are both covered.') if 'Answer all' in t else ('method-choice','Alternative methods for the same task; all published methods retained.') if 'or otherwise' in t else None)
+SCHEME_ROW_FIGURES = {'maths-2013-hl-p2-q1-a-i': 'maths-2013-HL-scheme-p041-i0', 'maths-2013-hl-p2-q1-a-ii': 'maths-2013-HL-scheme-p041-i1', 'maths-2013-hl-p2-q1-a-iii': 'maths-2013-HL-scheme-p041-i2', 'maths-2013-hl-p2-q1-b': 'maths-2013-HL-scheme-p041-i3', 'maths-2013-hl-p2-q2-a-i': 'maths-2013-HL-scheme-p042-i0', 'maths-2013-hl-p2-q2-a-ii': 'maths-2013-HL-scheme-p042-i1', 'maths-2013-hl-p2-q2-b': 'maths-2013-HL-scheme-p042-i2', 'maths-2013-hl-p2-q3-a': 'maths-2013-HL-scheme-p044-i0', 'maths-2013-hl-p2-q3-b': 'maths-2013-HL-scheme-p044-i1', 'maths-2013-hl-p2-q4-a': 'maths-2013-HL-scheme-p045-i0', 'maths-2013-hl-p2-q4-b-i': 'maths-2013-HL-scheme-p045-i1', 'maths-2013-hl-p2-q4-b-ii': 'maths-2013-HL-scheme-p046-i0', 'maths-2013-hl-p2-q5-a': 'maths-2013-HL-scheme-p047-i0', 'maths-2013-hl-p2-q5-b-i': 'maths-2013-HL-scheme-p047-i1', 'maths-2013-hl-p2-q5-b-ii': 'maths-2013-HL-scheme-p048-i0', 'maths-2013-hl-p2-q5-c': 'maths-2013-HL-scheme-p048-i1', 'maths-2013-hl-p2-q6a-a': 'maths-2013-HL-scheme-p049-i0', 'maths-2013-hl-p2-q6a-b': 'maths-2013-HL-scheme-p049-i1', 'maths-2013-hl-p2-q6a-c': 'maths-2013-HL-scheme-p049-i2', 'maths-2013-hl-p2-q6b-a': 'maths-2013-HL-scheme-p050-i0', 'maths-2013-hl-p2-q6b-b': 'maths-2013-HL-scheme-p051-i0', 'maths-2013-hl-p2-q7-a-i': 'maths-2013-HL-scheme-p052-i0', 'maths-2013-hl-p2-q7-a-ii': 'maths-2013-HL-scheme-p053-i0', 'maths-2013-hl-p2-q7-b-i': 'maths-2013-HL-scheme-p053-i1', 'maths-2013-hl-p2-q7-b-ii': 'maths-2013-HL-scheme-p053-i2', 'maths-2013-hl-p2-q7-c': 'maths-2013-HL-scheme-p053-i3', 'maths-2013-hl-p2-q7-d-i': 'maths-2013-HL-scheme-p054-i0', 'maths-2013-hl-p2-q7-d-ii': 'maths-2013-HL-scheme-p054-i1', 'maths-2013-hl-p2-q7-e-i': 'maths-2013-HL-scheme-p054-i2', 'maths-2013-hl-p2-q7-e-ii': 'maths-2013-HL-scheme-p054-i3', 'maths-2013-hl-p2-q7-f-i': 'maths-2013-HL-scheme-p055-i0', 'maths-2013-hl-p2-q7-f-ii': 'maths-2013-HL-scheme-p055-i1', 'maths-2013-hl-p2-q7-f-iii': 'maths-2013-HL-scheme-p055-i2', 'maths-2013-hl-p2-q7-f-iv': 'maths-2013-HL-scheme-p055-i3', 'maths-2013-hl-p2-q8-a-i': 'maths-2013-HL-scheme-p056-i0', 'maths-2013-hl-p2-q8-a-ii': 'maths-2013-HL-scheme-p056-i1', 'maths-2013-hl-p2-q8-b': 'maths-2013-HL-scheme-p057-i0', 'maths-2013-hl-p2-q9-a': 'maths-2013-HL-scheme-p059-i0', 'maths-2013-hl-p2-q9-b-i': 'maths-2013-HL-scheme-p060-i0', 'maths-2013-hl-p2-q9-b-ii': 'maths-2013-HL-scheme-p060-i1', 'maths-2013-hl-p2-q9-c-i': 'maths-2013-HL-scheme-p061-i0', 'maths-2013-hl-p2-q9-c-ii': 'maths-2013-HL-scheme-p061-i1', 'maths-2013-hl-p2-q9-c-iii': 'maths-2013-HL-scheme-p061-i2', 'maths-2013-hl-p2-q9-d': 'maths-2013-HL-scheme-p062-i0'}
+p.apply(ROWS,'2013 Higher Project Maths Phase 2 Paper 2',expect_added=[c['id'] for c in p.cards],card_overrides={k:{'figureKey':v} for k,v in SCHEME_ROW_FIGURES.items()},question_figures=True)

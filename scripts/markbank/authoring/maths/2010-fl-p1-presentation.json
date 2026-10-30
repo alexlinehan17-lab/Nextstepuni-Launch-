@@ -1,0 +1,1549 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003BLP100EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "tasks": {
+    "1-i": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 45,
+          "bottom": 67,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 5,
+          "top": 158,
+          "bottom": 646,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "4ddce8835b00f02e7fece5fe490a0de176a9a554108e391b1671ec6b323ac451",
+      "inspectedSolutionSha256": "705882dcc4f6f3304275f7aa653bcdbd15c4dbbc76967b75df46f4adba1f133a",
+      "figureKey": "maths-2010-FL-scheme-p005-i0",
+      "publishedQuestionSha256": "acf1c3da8c64fa6736c16354ca66d19dfdfed55f3df6516068ee3d790ae76df1"
+    },
+    "1-ii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 89,
+          "bottom": 111,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 6,
+          "top": 117,
+          "bottom": 475,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "03e18ca4fa1b79b0b65a3c639ca3f96dffecbba3014a4735676278f673ce2aff",
+      "inspectedSolutionSha256": "a6248640863071c5a9b590c7ab9b8e1a5d0b1db61debf92d7f5e2441525044d5",
+      "figureKey": "maths-2010-FL-scheme-p006-i0",
+      "publishedQuestionSha256": "932b03ce795c7a413f923cd4eaee3b0744880514514ba8ff544b19d6342c15de"
+    },
+    "1-iii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 131,
+          "bottom": 169,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 7,
+          "top": 136,
+          "bottom": 732,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "741a62ed8430e3094cb9b354f7f5dcfb3dd6b49a78c8ac77f16c6d59034eb594",
+      "inspectedSolutionSha256": "6d252c199b46547b40cfee8ab4431feb5a85e41140fe0567d26f7471fdec9097",
+      "figureKey": "maths-2010-FL-scheme-p007-i0",
+      "publishedQuestionSha256": "abb25d8086c749ad672291d866d8844b10d956d220c2b56f561149c3989ce8d6"
+    },
+    "1-iv": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 192,
+          "bottom": 241,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 146,
+          "bottom": 608,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "a314f3ab1c991311761a363f7ea24807684a291730ba12804bf5dc8b2ba9d822",
+      "inspectedSolutionSha256": "7617b305c00a58fa2cbd9ca7e42726ba79bf0602214ce7e88b719ef6caa7acaa",
+      "figureKey": "maths-2010-FL-scheme-p008-i0",
+      "publishedQuestionSha256": "dfbaeb9729ace3ce945c7725f86ab26048d6bdd2781340ddabfdcc2aad625747"
+    },
+    "1-v": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 261,
+          "bottom": 282,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 120,
+          "bottom": 423,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "415e787b6e5019f73e24763411524df2befbb9323d5896fced93189e42c484f0",
+      "inspectedSolutionSha256": "7f33e6f7130729ffad73fb682e5206307778fbde25002ba96509c90ceb51df3e",
+      "figureKey": "maths-2010-FL-scheme-p009-i0",
+      "publishedQuestionSha256": "935b719f60ae25b9ad4fb56adef6d48db2a1eb58c6c117ffbff792f9000e9057"
+    },
+    "1-vi": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 302,
+          "bottom": 341,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 137,
+          "bottom": 550,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "f5cd69661986c5dc1f0261bc860c762144307f2e126b4626a3cdacb10e8e099a",
+      "inspectedSolutionSha256": "6deaf3fd39f77dad6ccaa87b27193e79a2af5ab6c038b334c4e4f6a1f43dd643",
+      "figureKey": "maths-2010-FL-scheme-p010-i0",
+      "publishedQuestionSha256": "bba86d253d155a54042993fb8e7b4680e91fd4567670b5bd7fb02ba120fa4a34"
+    },
+    "1-vii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 361,
+          "bottom": 410,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 146,
+          "bottom": 490,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "67f54bc599cef61ed29b8e319964bf490ff0efb4c4279693af01439196b98c5d",
+      "inspectedSolutionSha256": "f442c8e9edca1a30d5ab60f08881601b02a06732ff5f3128a675c1574caad17c",
+      "figureKey": "maths-2010-FL-scheme-p011-i0",
+      "publishedQuestionSha256": "43f41db36f7f6498dc69d25a0b3474c1b8e78b08f800497df7c0f991aa54edb4"
+    },
+    "1-viii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 431,
+          "bottom": 514,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 12,
+          "top": 160,
+          "bottom": 476,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "09cdb90b9c1f0e6306f925d40c1ea1ec2c2026018a64ec7c4938880f240e0458",
+      "inspectedSolutionSha256": "53af04adb818e28c855bab2dd00d265f393fe2de6c25d3d23c34dd7275ea366f",
+      "figureKey": "maths-2010-FL-scheme-p012-i0",
+      "publishedQuestionSha256": "10763b91152df528afbf5bcec9965138d28aefe8bcac4a6d9fdf40cebb8ea1b5"
+    },
+    "1-ix": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 520,
+          "bottom": 557,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 13,
+          "top": 138,
+          "bottom": 533,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "52bc63e1c54f143e8b37d44e0e0ce0ea4ba8758e1a83db5bcfb729a5f6f57da6",
+      "inspectedSolutionSha256": "e90beb1ee9b4a12b69bb4d6ac8c24a5b4f5f6d6750b03c18be259416d78417dd",
+      "figureKey": "maths-2010-FL-scheme-p013-i0",
+      "publishedQuestionSha256": "1d4dab2a3334b80786fcbe3676e067bff36923ee6ab8eb97df1bafc22a5a1912"
+    },
+    "1-x": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 582,
+          "bottom": 616,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 140,
+          "bottom": 566,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "b17cd93910f14da6ca7e8dc09f4e920d4a650f99c3150d1c480f4924a1b4fe97",
+      "inspectedSolutionSha256": "9be6d01ec19492314be7664ff29e5439d1084759a9584e30fdf06ad823becc6c",
+      "figureKey": "maths-2010-FL-scheme-p014-i0",
+      "publishedQuestionSha256": "ccf358b8679efe3e1f48eb93f111cf7fef1ff3d9994be3cd8f7a7309ebfaf948"
+    },
+    "2-a-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 45,
+          "bottom": 65,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 194,
+          "bottom": 515,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept answers given without units"
+      ],
+      "inspectedQuestionSha256": "73ca41d45f6c4201e175fcd4b1d3fc1d7bf3cb9b1b11f167b16786c5e1db9110",
+      "inspectedSolutionSha256": "cadbd3b2e45e7ff1b1b834d33fd148b9b3984fb5053bf472b15b68df45afc83e",
+      "figureKey": "maths-2010-FL-scheme-p015-i0",
+      "publishedQuestionSha256": "354b351898815dd888e285a17a22a0b1f8a6342b9fb51b914c732ed69883c664"
+    },
+    "2-a-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 73,
+          "bottom": 92,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 194,
+          "bottom": 515,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept answers given without units"
+      ],
+      "inspectedQuestionSha256": "de192be354d6dfcbda46defa75ae3d951bd9bc83aa4a5c4dc388353fc4679a44",
+      "inspectedSolutionSha256": "cadbd3b2e45e7ff1b1b834d33fd148b9b3984fb5053bf472b15b68df45afc83e",
+      "figureKey": "maths-2010-FL-scheme-p015-i0",
+      "publishedQuestionSha256": "97bb7f1e157300e9aeb0a1de208d8652330c1475d4785cc0155ba704dcef7754"
+    },
+    "2-b-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 113,
+          "bottom": 180,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 199,
+          "bottom": 487,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "42a8f16bdf477af31e5cec8c6bcdf340f74bf25c5a90c2955699a3d7b9f55dc7",
+      "inspectedSolutionSha256": "567df46974fa3278aa4ac268d94f50718dc9bb1fdc0217a3022d7a49f787f9cf",
+      "figureKey": "maths-2010-FL-scheme-p016-i0",
+      "publishedQuestionSha256": "cb0a2e6eabba9876c3fec390ad77ebd3eefc99e227cbcdcc6e3765a7bb33f7a0"
+    },
+    "2-b-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 113,
+          "bottom": 161,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 181,
+          "bottom": 214,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 66,
+          "bottom": 376,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "37eb82c45c6e37ee3e9045496b7a854d7e8ec69f936728520ebfc254717afcb3",
+      "inspectedSolutionSha256": "2287745185e93f40547fdab226168fac7df7268fd863c2c1e1d2ea701a0a5ec4",
+      "figureKey": "maths-2010-FL-scheme-p017-i0",
+      "publishedQuestionSha256": "f9474df9d1511d2f1825300656eda6c5117aed783ccfe82c6263f9a4de2a49e9"
+    },
+    "2-b-iii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 113,
+          "bottom": 161,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 181,
+          "bottom": 199,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 215,
+          "bottom": 234,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 389,
+          "bottom": 694,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "5dc9e8cf344c0e3f2bd00a1811bda6ad799c45a95bcd865c56e5642b9f6e45ee",
+      "inspectedSolutionSha256": "3a67220f8ae8003081c77cf125ba9ffcd60163b5cb76600b3d6b938213cd56e2",
+      "figureKey": "maths-2010-FL-scheme-p017-i1",
+      "publishedQuestionSha256": "f5e6e0fd7c19cd35eaaedda53edd41736659221b800befb59434ef201fa787e3"
+    },
+    "2-c-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 262,
+          "bottom": 335,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 185,
+          "bottom": 529,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "a38a471672d9270358b64e3e688fd0fa7f24cf5137b34c8ecb5195503451d692",
+      "inspectedSolutionSha256": "8f245aba27aaf6d3d92e1d3a86bfe63461b934a3818d0d5043f3e651a1ba7f39",
+      "figureKey": "maths-2010-FL-scheme-p018-i0",
+      "publishedQuestionSha256": "e56601bbad9b514e63ac49436dd5f58af82e17e87f4872cf3f83242c62d8ac21"
+    },
+    "2-c-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 262,
+          "bottom": 315,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 336,
+          "bottom": 374,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 66,
+          "bottom": 461,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "2bcb2337a2412645ca5463e778b53f1508e50f1ef8d678f52cafe49bc366e72f",
+      "inspectedSolutionSha256": "765b8a6ba484b3099a0354742972b87e4bf5acc6c52ee937028efa0c953eba1c",
+      "figureKey": "maths-2010-FL-scheme-p019-i0",
+      "publishedQuestionSha256": "f7bbcfc037bc74165a3d9454e49bf1fa4430d3b25f7e8c39d5899c8da5a44276"
+    },
+    "2-c-iii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 262,
+          "bottom": 315,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 336,
+          "bottom": 354,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 375,
+          "bottom": 408,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 483,
+          "bottom": 750,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "d2f184df61e860f6229844fb61cc578e77fbbb12462c910736e84d285e824c46",
+      "inspectedSolutionSha256": "82538f3d299afe8087ae160430cceecabfc8965bea95ad2cfa4a8fb111e05744",
+      "figureKey": "maths-2010-FL-scheme-p019-i1",
+      "publishedQuestionSha256": "4aab6526edba7451a86287e2bf43022fedd38659c952b61371d00bb50a4e3c55"
+    },
+    "3-a-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 458,
+          "bottom": 518,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 221,
+          "bottom": 440,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "ffa99ac4f0021df2169c6076390415b41c4bfe8e7560e234f9421fc9dc05d149",
+      "inspectedSolutionSha256": "f416ba2c7d97e8d35dd2fc7f9525c58c706a4d3342e66d4f60e50c5296f9b970",
+      "figureKey": "maths-2010-FL-scheme-p020-i0",
+      "publishedQuestionSha256": "0682a830db0faac6c18b2b4ef2b9ef94cc2b933c931d0e0937b7e6ee65130030"
+    },
+    "3-a-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 458,
+          "bottom": 491,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 527,
+          "bottom": 546,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 449,
+          "bottom": 768,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "b8ff6cb9b12d966da635ae8912a14386cb23b716249a0a39abab02d1f4dd0901",
+      "inspectedSolutionSha256": "d957e59aa18ab6aaaeeee8ac7fc177c84b575d0a20acb8ef8b8e782b0977e2f5",
+      "figureKey": "maths-2010-FL-scheme-p020-i1",
+      "publishedQuestionSha256": "b224f74d6aa7e7bd0f167168cbda5c6184ef57383326552d05bb35726f964636"
+    },
+    "3-b": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 568,
+          "bottom": 615,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 6,
+          "top": 169,
+          "bottom": 274,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 21,
+          "top": 125,
+          "bottom": 773,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 22,
+          "top": 56,
+          "bottom": 771,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 23,
+          "top": 65,
+          "bottom": 282,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer with no work"
+      ],
+      "inspectedQuestionSha256": "c70896fee1aea53c4b24d80a419cdfc06eb93f7cc8369aa4a008279ae14d5dd0",
+      "inspectedSolutionSha256": "37b760f44234e9b2b799587b996515cd0ac1595253cd65b4cefc5d1e9e4f6853",
+      "figureKey": "maths-2010-FL-scheme-p021-i0",
+      "publishedQuestionSha256": "b6350012624ed555c28a4b6c5f4bfeb42adadefadbc2c0ffd7654d161deba1f4"
+    },
+    "3-c-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 637,
+          "bottom": 712,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 190,
+          "bottom": 450,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "f9bcde1cb5c72a3e05d7ea6f34e14ce52a2eef9032f629c9573eea7a38df0400",
+      "inspectedSolutionSha256": "1dc524b05ce34751a42c6e018b621dafaf8b9ac346668d7d887af6bea94b2be0",
+      "figureKey": "maths-2010-FL-scheme-p024-i0",
+      "publishedQuestionSha256": "8ec5e8944a9a785baa54620f180e1b3d809a31301a5042bae2f9571a15571871"
+    },
+    "3-c-ii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 637,
+          "bottom": 671,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 3,
+          "top": 720,
+          "bottom": 754,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 462,
+          "bottom": 767,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "7e6ac28f69b56b24022f8db2e28bbeb75a9c52fc2d74aa856f836cd15ee8d147",
+      "inspectedSolutionSha256": "04420da8634354f8a94e503a1db6d9dc55cdd44ab0af09255460628da68e6076",
+      "figureKey": "maths-2010-FL-scheme-p024-i1",
+      "publishedQuestionSha256": "24dd485ef32e7c41703acbea3b183187729c686ac05fa6c167c14ff334b45354"
+    },
+    "4-a": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 45,
+          "bottom": 79,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 198,
+          "bottom": 486,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Blunders — Each step omitted"
+      ],
+      "inspectedQuestionSha256": "c412c295f8f36a6c2bd1fb6841a08ced3f84ad1dcb4205fefcc1ab1603d6bc1d",
+      "inspectedSolutionSha256": "4c1efd9062954f24af98fcc138b5449d070e50280d16892f23c3763e2f8a3908",
+      "figureKey": "maths-2010-FL-scheme-p025-i0",
+      "publishedQuestionSha256": "8e55282bdba3d06dd6b55888df4df5df88465c5fb6762d119dd844d89f4977e2"
+    },
+    "4-b": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 114,
+          "bottom": 172,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 138,
+          "bottom": 659,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Attempts — Correct answer with no work shown"
+      ],
+      "inspectedQuestionSha256": "6d1890d3d40544a4d7335bde371cacd0a223ec57196d3135e5e727b94f978e08",
+      "inspectedSolutionSha256": "f7bb27493bff53941dfa34745a161faba085517fc8ec09bf966976a2865847da",
+      "figureKey": "maths-2010-FL-scheme-p026-i0",
+      "publishedQuestionSha256": "d10ae76fa66227f0bbdf5454540377442b48919f02181c6035dff6d31050b884"
+    },
+    "4-c-i": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 209,
+          "bottom": 234,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 135,
+          "bottom": 438,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Attempts — Some correct work"
+      ],
+      "inspectedQuestionSha256": "0774793250db69de9a2c2e76db29ba95842f42a85c35b6a9dc198de698c09ef0",
+      "inspectedSolutionSha256": "7f52fef53df7e4ebefd89ebcd6ecc8131c2f76ba056ba83858847a4eafd0ba5d",
+      "figureKey": "maths-2010-FL-scheme-p027-i0",
+      "publishedQuestionSha256": "9c1df3da8346ee96358faf9175b0f395f461a0d33d3ed1dff839dc94e5ffdcab"
+    },
+    "4-c-ii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 242,
+          "bottom": 266,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 449,
+          "bottom": 775,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Attempts — Some correct work"
+      ],
+      "inspectedQuestionSha256": "79fc85cd338dc22de84e9bb921eb0ef6eacb04aa76f96b9ba08a3cd7b43e41bc",
+      "inspectedSolutionSha256": "550385ba45ca93792ff4ece123609b7919f796d31c33bd4838a8cc3b9eeec72c",
+      "figureKey": "maths-2010-FL-scheme-p027-i1",
+      "publishedQuestionSha256": "dc075a57222fef71c7a9decfb75fa302397cb98bb12bdbb8c4a2d9ff2dd11dc1"
+    },
+    "4-c-iii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 209,
+          "bottom": 294,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 28,
+          "top": 56,
+          "bottom": 245,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates answers from (i) and (ii)"
+      ],
+      "inspectedQuestionSha256": "df241ddc1484d8871016b3b6a0a24a79790c390fa218a51aaa1d396472d296fc",
+      "inspectedSolutionSha256": "88f9817e7623500815ceee2e6db36efd24868155c3dc4fa3176f63c10ea7ffa9",
+      "figureKey": "maths-2010-FL-scheme-p028-i0",
+      "publishedQuestionSha256": "ab7c49568377590cb4da5aac9324a921d1d9e1ff649673ab2fbf016cb6abf058"
+    },
+    "5-a-i": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 385,
+          "bottom": 404,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 199,
+          "bottom": 341,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Attempts — At least one correct entry, each part"
+      ],
+      "inspectedQuestionSha256": "c9e7df8aa7f4feb2239f78df0c2513c7f28e86aac330e9bbc5d8b3860722ffd3",
+      "inspectedSolutionSha256": "02d36a004e4f9753270d811c9be7775eec7ff070cf146fd8fee0465a74770e13",
+      "figureKey": "maths-2010-FL-scheme-p029-i0",
+      "publishedQuestionSha256": "08b2c945b18966eff177c9b158eb85d90fcb66601c05b85cd529c96aaafa97ab"
+    },
+    "5-a-ii": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 385,
+          "bottom": 432,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 199,
+          "bottom": 341,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Attempts — At least one correct entry, each part"
+      ],
+      "inspectedQuestionSha256": "c8f2dcd3d62e653813e876c57cc316a5251b53118ccb8690549b8744a6cd9307",
+      "inspectedSolutionSha256": "02d36a004e4f9753270d811c9be7775eec7ff070cf146fd8fee0465a74770e13",
+      "figureKey": "maths-2010-FL-scheme-p029-i0",
+      "publishedQuestionSha256": "fa5d77aafbeae7f430a928ab7845886cf675b9770e5df1fcf54533caa3719a94"
+    },
+    "5-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 453,
+          "bottom": 475,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 6,
+          "top": 293,
+          "bottom": 378,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 475,
+          "bottom": 709,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 30,
+          "top": 57,
+          "bottom": 700,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Attempts — Effort at finding factors"
+      ],
+      "inspectedQuestionSha256": "7ce11e08a33e86debd92ac738db5ed51c6e771809210a8a563fc6f7acbce4649",
+      "inspectedSolutionSha256": "d9e5372e2b9c9b2771176449a927f4e92f55a4bb8fcf8e7586d735b44f2b1c95",
+      "figureKey": "maths-2010-FL-scheme-p029-i1",
+      "publishedQuestionSha256": "4c139848806f210f84c4eec8e8f319a939b669140e6ce50f267fd96010bbdda9"
+    },
+    "5-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 484,
+          "bottom": 505,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 6,
+          "top": 293,
+          "bottom": 378,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 57,
+          "bottom": 700,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Slips — Incorrect or omitted rounding off, each time"
+      ],
+      "inspectedQuestionSha256": "b87e89ed0a5be95409b91492c64f1466d33762d6d6be8ccc3373e45090b3bbf1",
+      "inspectedSolutionSha256": "eb93fc823b934a9fbdd311e0b46034fd98aff75989d0aa18038785d522696119",
+      "figureKey": "maths-2010-FL-scheme-p030-i0",
+      "publishedQuestionSha256": "95df9d7e0c320f11ab15c460035b67acc80811c5046e1665dadd589a3a518f4b"
+    },
+    "5-c-i": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 527,
+          "bottom": 621,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 184,
+          "bottom": 415,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Attempts — Some use of the data given"
+      ],
+      "inspectedQuestionSha256": "0851fe2fb278292bb3c7fe40a7404c2e2fbfc558ea74c57604627772bf76a41a",
+      "inspectedSolutionSha256": "3b7f3c8989869908a0b7bfe4617e793e69c94958f0c43107e33526c8e38ad223",
+      "figureKey": "maths-2010-FL-scheme-p031-i0",
+      "publishedQuestionSha256": "4e6b50011b14f252cf5b1a071201edf221aece8be7ad4847fa298f090573a87f"
+    },
+    "5-c-ii": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 527,
+          "bottom": 621,
+          "x0": 55,
+          "x1": 548,
+          "erase": [
+            [
+              110,
+              568,
+              444,
+              590
+            ]
+          ]
+        },
+        {
+          "page": 4,
+          "top": 624,
+          "bottom": 644,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 476,
+          "bottom": 629,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates answer from part (i)"
+      ],
+      "inspectedQuestionSha256": "7ff75e3ab067c2431e77ce13fbfae2d7554a44bab196a25a812afb9b8ad2c41a",
+      "inspectedSolutionSha256": "7341a628df96de7ebce6b477d06f476d3ad3bb2b66025cbd6aeb1b6b06f0b53b",
+      "figureKey": "maths-2010-FL-scheme-p031-i1",
+      "publishedQuestionSha256": "bad1e7a677f062fe1b9169b7b0426a6338d3c99ca64aab4ab5c4d669270e456a"
+    },
+    "5-c-iii": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 527,
+          "bottom": 621,
+          "x0": 55,
+          "x1": 548,
+          "erase": [
+            [
+              110,
+              568,
+              444,
+              590
+            ]
+          ]
+        },
+        {
+          "page": 4,
+          "top": 651,
+          "bottom": 671,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 32,
+          "top": 56,
+          "bottom": 367,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates answer from parts (i) and (ii)"
+      ],
+      "inspectedQuestionSha256": "fc71e0b71eb9b914102a16fc5eb1faaa67405ae10743ed4a3242168d391bb759",
+      "inspectedSolutionSha256": "81ed130b91b8b980dbbd948b23550e9724bb89b4a58857846ee3f9a8aa9c9065",
+      "figureKey": "maths-2010-FL-scheme-p032-i0",
+      "publishedQuestionSha256": "fa10dd681b146fbcdf4c5764a057d0c9432b76eeb868747f375abbc23c5dd162"
+    },
+    "6-i": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 45,
+          "bottom": 305,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 307,
+          "bottom": 327,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 476,
+          "bottom": 591,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Blunders — Saturday, the greatest, given as the least"
+      ],
+      "inspectedQuestionSha256": "80e668035b826fe9c7a6854ce9f9f4dee415bf8f934c620007bda8da65df1852",
+      "inspectedSolutionSha256": "b78d5be37e806de8b9ff96d2d7319c1bd50ac46cb35a4f08a206b68f96f58ea6",
+      "figureKey": "maths-2010-FL-scheme-p033-i0",
+      "publishedQuestionSha256": "638e013220286c55cd0d48ad0a0d09c0d66e0615f55c19b0dcdd793fb4d153fc"
+    },
+    "6-ii": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 45,
+          "bottom": 305,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 335,
+          "bottom": 355,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 655,
+          "bottom": 765,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Blunders — Only one of the correct days given"
+      ],
+      "inspectedQuestionSha256": "3500767cf1f061edf0cb97952a472bfa832c83f2d6302dfe971776b80342832a",
+      "inspectedSolutionSha256": "6d143272a91ebadeb413eaf991f331a499a178e8cc8ea3d44a55df2935d9d27b",
+      "figureKey": "maths-2010-FL-scheme-p033-i1",
+      "publishedQuestionSha256": "02db2b57b14be2e45025985e08bcba0120c53c2f24c0722829d63b90ae7f9d86"
+    },
+    "6-iii": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 45,
+          "bottom": 305,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 362,
+          "bottom": 396,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 134,
+          "bottom": 356,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "badc270c70183ce5d8d2ff02e6c35056ca292499ad338da65635dac6d7f455d1",
+      "inspectedSolutionSha256": "520f2b8955fc759dbb43b8be1f8e28e7323ca4a3bb470adc74c8f19ec48b8145",
+      "figureKey": "maths-2010-FL-scheme-p034-i0",
+      "publishedQuestionSha256": "c2822a915067afa979054552dd45a31007f75fecb446ec0a213a818994ecf2c4"
+    },
+    "6-iv": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 45,
+          "bottom": 305,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 404,
+          "bottom": 437,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 452,
+          "bottom": 767,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "4ad468e1ac31158379a0b633b9755b388288fc19c9b6fa0e5d58b302ed892f09",
+      "inspectedSolutionSha256": "9eaba4f5ad1248017870c19f6446ade22aa7acca44416bb18d94e2658f51545a",
+      "figureKey": "maths-2010-FL-scheme-p034-i1",
+      "publishedQuestionSha256": "2453c9e02e2c3450939a15b37c4b085444af0c4d75095fa83845f3f19edef91f"
+    },
+    "6-v": {
+      "topic": "1-6",
+      "atlas": "data-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 45,
+          "bottom": 305,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 445,
+          "bottom": 479,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 35,
+          "top": 121,
+          "bottom": 447,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates work from part (iv)"
+      ],
+      "inspectedQuestionSha256": "cd9cf1a768f38e56f2ce693f8a75703ecbaedfa176acf80ab0d07ca64a91b91a",
+      "inspectedSolutionSha256": "21581459508c9dda540b2e8221464e03d994e4413201af394d0115c588ce8da6",
+      "figureKey": "maths-2010-FL-scheme-p035-i0",
+      "publishedQuestionSha256": "d9fc9a6d62afacd6c1bd8c7f961c543c9d6723be5545e8e6601d153074e9a7c6"
+    },
+    "7-graph": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 541,
+          "bottom": 594,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 122,
+          "bottom": 532,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 37,
+          "top": 70,
+          "bottom": 470,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 38,
+          "top": 84,
+          "bottom": 589,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Fully correct graph drawn with no work shown: award 30 marks"
+      ],
+      "inspectedQuestionSha256": "832e35d25e56bba86507f53261959d0fdb369b3a556662165d70111932dd6694",
+      "inspectedSolutionSha256": "ed84ca54e5b6065ed19906e1b57092aa9e887206b0609a65b8f4f9ebe676cef7",
+      "figureKey": "maths-2010-FL-scheme-p036-i0",
+      "publishedQuestionSha256": "958cf0b3fea91fc3d7d75f439669478de8f20ef8763777b2abe5c7574ad2e58e"
+    },
+    "7-i": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 541,
+          "bottom": 620,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 625,
+          "bottom": 651,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 98,
+          "bottom": 364,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 39,
+          "top": 188,
+          "bottom": 548,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "sourceNote": "The printed minimum estimate is −11·3. The exact vertex is −11·5; the scheme allows ±0·5 on the y-axis, so the printed estimate lies within its stated graph-reading tolerance.",
+      "inspectedQuestionSha256": "763266bc928ddce32fda77ae8ddfff645e8d000ce37370631f67d58ed4fa1f5a",
+      "inspectedSolutionSha256": "478e96467987853fc00bf02644bc4fbece6a0cc01cf6e0284526aff55367277a",
+      "figureKey": "maths-2010-FL-scheme-p038-i0",
+      "publishedQuestionSha256": "dc42aa015e6ea01a65455db8eb75dd1db570b88ffff57a96338d80fa72dbe97b"
+    },
+    "7-ii": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 541,
+          "bottom": 620,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 656,
+          "bottom": 682,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 98,
+          "bottom": 364,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 39,
+          "top": 188,
+          "bottom": 548,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "inspectedQuestionSha256": "231fd02f8919867b467825ea422963bdc2d7718158859947c38052e540c11387",
+      "inspectedSolutionSha256": "478e96467987853fc00bf02644bc4fbece6a0cc01cf6e0284526aff55367277a",
+      "figureKey": "maths-2010-FL-scheme-p038-i0",
+      "publishedQuestionSha256": "a755e9f8ceb1d0a31f1cc7b3ba7dc6c785c8205b6aa1b1f21ceee0fa1346bd63"
+    },
+    "7-iii": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 541,
+          "bottom": 620,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 687,
+          "bottom": 713,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 98,
+          "bottom": 364,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 39,
+          "top": 188,
+          "bottom": 548,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "inspectedQuestionSha256": "8d989a21b640cab6722bdb204e40f4da1a7912d8082c42adf551a931b0a1e20f",
+      "inspectedSolutionSha256": "478e96467987853fc00bf02644bc4fbece6a0cc01cf6e0284526aff55367277a",
+      "figureKey": "maths-2010-FL-scheme-p038-i0",
+      "publishedQuestionSha256": "986607e3ee626ce1df101edbc6fcb7f8a818ff52bd31a7c34dc977854f74c983"
+    },
+    "7-iv": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 541,
+          "bottom": 620,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 5,
+          "top": 718,
+          "bottom": 743,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 38,
+          "top": 98,
+          "bottom": 364,
+          "x0": 55,
+          "x1": 548
+        },
+        {
+          "page": 39,
+          "top": 188,
+          "bottom": 548,
+          "x0": 55,
+          "x1": 548
+        }
+      ],
+      "rows": [
+        "Note — Accept candidates values from graph"
+      ],
+      "inspectedQuestionSha256": "93c419cc24884a7507d38ff9db6546bf60d3802ef278879f58074883880ca515",
+      "inspectedSolutionSha256": "478e96467987853fc00bf02644bc4fbece6a0cc01cf6e0284526aff55367277a",
+      "figureKey": "maths-2010-FL-scheme-p038-i0",
+      "publishedQuestionSha256": "c950c51e838d1bff10a8cc6ebdccea6137a28e228a00a04513a3304942ae0840"
+    }
+  },
+  "reviewedAt": "2026-10-30",
+  "reviewNotes": "All 45 raw question crops and 45 complete solution crops visually inspected, including re-rendered corrections to clipping, formula headings, full chart outlines and the restaurant illustration. Graph estimates share the same verified solution panel.",
+  "publishedQuestionReview": "All 45 actual published question images visually inspected; original formulae, charts, context and symbols retained."
+}

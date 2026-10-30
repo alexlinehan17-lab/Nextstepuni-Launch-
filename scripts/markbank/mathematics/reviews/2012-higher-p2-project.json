@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2012,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP230EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "a64ea9fcb9c23814b967c07d4f4afe351742662ea9643c3a08ef9d65a27a2071",
+  "schemeSha256": "d034ecd07854cd1ae60fe78514ae6436cbc48618f46272b932a1d56870df67a9",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual inspection of all 20 original paper pages and scheme PDF pages 37–72, including every model, alternative proof, diagram, scale, component allocation and detailed credit note. All 29 question and 29 solution crops inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 75,
+    "8": 75
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    56,
+    57,
+    58
+  ],
+  "sourceNotes": [
+    "Paper 2 uses its own credit ladders, not Paper 1 deduction rules.",
+    "29 independently practicable task groups contain 34 published component scales. Q1(a) has three 5B method descriptions; Q2(a) has two 5B circle components; Q8(a) has Length PR 10B, angle beta 20C* and angle alpha 25D*.",
+    "Seven starred scales: Q4(b)(i),(ii); Q7(d)(i),(ii),(iii); Q8(a) beta and alpha. Deductions apply independently to the marked components.",
+    "Q6B uses the six-band 25E ladder. All four alternative published proofs are retained.",
+    "Q6A construction tasks preserve the original line and require original-scale source access; angle tolerance is 2 degrees.",
+    "Source typos in Q5(b), one Q6B proof, and both Q7(e) interval methods have separate clarifications; original print is preserved.",
+    "All 20 Phase 3 paper pages and combined-scheme pages 37–72 independently visually inspected. The Phase 3 paper body matches the Phase 1 Paper 2, but remains a separate exact-source booklet. The combined Phase 3 scheme reproduces a Paper 2 model-solution cover labelled Phase 1; every task, model, mark allocation and detailed note matches this Phase 3 paper."
+  ],
+  "cards": [
+    {
+      "id": "maths-2012-hl-p2-project-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 15,
+      "components": [
+        {
+          "id": "method-1",
+          "label": "First method",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "method-2",
+          "label": "Second method",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "method-3",
+          "label": "Third method",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        }
+      ],
+      "schemePages": [
+        39,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Given the co-ordinates of the vertices of a quadrilateral ABCD, describe three different ways to determine, using co-ordinate geometry techniques, whether the quadrilateral is a parallelogram."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        39,
+        59
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Part (a): describe three different co-ordinate geometry methods for deciding whether a quadrilateral is a parallelogram.",
+      "questionText": "Using one of the methods you described, determine whether the quadrilateral with vertices (−4, −2), (21, −5), (8, 7) and (−17, 10) is a parallelogram."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "components": [
+        {
+          "id": "circle-1",
+          "label": "Circle c₁",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "circle-2",
+          "label": "Circle c₂",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        }
+      ],
+      "schemePages": [
+        40,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Write down the centre and radius-length of each circle.",
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0.",
+      "questionText": "Prove that the circles are touching."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0.",
+      "questionText": "Verify that (4, 7) is the point that they have in common."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0. Part (c): verify that (4, 7) is their point in common.",
+      "questionText": "Find the equation of the common tangent."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q3",
+      "printedParts": [
+        "Q3"
+      ],
+      "totalMarks": 25,
+      "scale": "25D",
+      "permittedMarks": [
+        0,
+        15,
+        20,
+        22,
+        25
+      ],
+      "schemePages": [
+        42,
+        43,
+        61
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle shown has as tangents the x-axis, the y-axis, the line x + y = 2 and the line x + y = 2k, where k > 1. Find k."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A basketball player scores 60% of the free-throw shots she attempts. During a particular game she gets six free throws.",
+      "questionText": "What assumption(s) must be made in order to regard this as a sequence of Bernoulli trials?"
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A basketball player scores 60% of the free-throw shots she attempts. During a particular game she gets six free throws.",
+      "questionText": "Based on the Bernoulli-trial assumptions, find, correct to three decimal places, the probability that she scores on exactly four of the six shots.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A basketball player scores 60% of the free-throw shots she attempts. During a particular game she gets six free throws.",
+      "questionText": "Based on the Bernoulli-trial assumptions, find, correct to three decimal places, the probability that she scores for the second time on the fifth shot.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        7,
+        10,
+        18,
+        20
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A company produces calculator batteries. The diameter is supposed to be 20 mm with tolerance 0·25 mm; batteries outside this tolerance are rejected, and this is the only reason for rejection.",
+      "questionText": "A machine produces normally distributed battery diameters with mean 20 mm and standard deviation 0·1 mm. Out of every 10 000 batteries, how many on average are rejected?"
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A company produces calculator batteries. The diameter is supposed to be 20 mm with tolerance 0·25 mm; batteries outside this tolerance are rejected, and this is the only reason for rejection. The original diameters were normally distributed with mean 20 mm and standard deviation 0·1 mm.",
+      "questionText": "A machine setting slips and the mean diameter increases to 20·05 mm, with standard deviation unchanged. Find the percentage increase in the rejection rate."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q6a-a-i",
+      "printedParts": [
+        "Q6A(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Given the points B and C, construct, without using a protractor or setsquare, a point A such that |∠ABC| = 60°.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q6a-a-ii",
+      "printedParts": [
+        "Q6A(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "Part (a)(i): construct A from the supplied B and C so that |∠ABC| = 60°, without a protractor or setsquare.",
+      "questionText": "Hence construct, on the same diagram, and using a compass and straight edge only, an angle of 15°.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        46,
+        47,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9,
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The parallel lines l₁, l₂, l₃ and l₄ make equal intercepts on transversal k. FG is parallel to k, and HG is parallel to ED. Use the original diagram.",
+      "questionText": "Prove that triangles CDE and FGH are congruent."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "totalMarks": 25,
+      "scale": "25E",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "schemePages": [
+        47,
+        48,
+        64
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The incircle of triangle ABC has centre O and touches the sides at P, Q and R, as shown.",
+      "questionText": "Prove that |∠PQR| = ½(|∠CAB| + |∠CBA|)."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales.",
+      "questionText": "What can you say about the change from September 2009 to September 2011 with regard to the arrears rates?"
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales.",
+      "questionText": "What can you say about the change from September 2009 to September 2011 with regard to the rates of interest being paid?"
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales.",
+      "questionText": "What can you say about the change from September 2009 to September 2011 with regard to the relationship between the arrears rate and the interest rate?"
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales.",
+      "questionText": "What additional information would you need before you could estimate the median interest rate being paid by mortgage holders in September 2011?"
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales.",
+      "questionText": "The report says “The direction of causality … is important” regarding the September 2011 relationship. Explain what “direction of causality” means in this context."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        51,
+        66
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more.",
+      "questionText": "Find the probability that a property selected at random from all those examined will be in negative equity. Give your answer correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        51,
+        66
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more.",
+      "questionText": "Find the probability that a property selected at random from those in negative equity will also be in arrears. Give your answer correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-d-iii",
+      "printedParts": [
+        "Q7(d)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        51,
+        52,
+        66
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more.",
+      "questionText": "Find the probability that a property selected at random from those in arrears will also be in negative equity. Give your answer correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        7,
+        10,
+        18,
+        20
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12,
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more.",
+      "questionText": "Treat the December 2010 study as the population. In early 2012, 552 of 2000 randomly selected mortgaged properties are in negative equity. Use a hypothesis test at the 5% significance level to decide whether there is sufficient evidence that the proportion has changed. State the null hypothesis and conclusion clearly."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 55,
+      "components": [
+        {
+          "id": "length-pr",
+          "label": "Length PR",
+          "code": "10B",
+          "marks": [
+            0,
+            5,
+            10
+          ]
+        },
+        {
+          "id": "angle-beta",
+          "label": "Angle β",
+          "code": "20C",
+          "fullCreditMinusOne": true,
+          "marks": [
+            0,
+            7,
+            18,
+            20
+          ]
+        },
+        {
+          "id": "angle-alpha",
+          "label": "Angle α",
+          "code": "25D",
+          "fullCreditMinusOne": true,
+          "marks": [
+            0,
+            15,
+            20,
+            22,
+            25
+          ]
+        }
+      ],
+      "schemePages": [
+        53,
+        67
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Determine α and β to locate R 24 cm to the right of P and 7 cm higher. Give the angles correct to the nearest degree.",
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        54,
+        67
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram. Part (a) puts R 24 cm right and 7 cm above P.",
+      "questionText": "In the position from part (a), which causes the greater error in R’s location: a 1° error in α or in β? Justify your answer. For motion through a small angle, assume distance from the starting point equals the arc length travelled."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        54,
+        67
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram. Part (b) compares the location errors caused by a 1° error in each angle; for a small angle, the movement is approximately the arc length.",
+      "questionText": "The answer to part (b) depends on the position of the arm. Describe, with justification, when R’s location is more sensitive to small errors in α than in β, and when the reverse is true."
+    },
+    {
+      "id": "maths-2012-hl-p2-project-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram.",
+      "questionText": "Illustrate all possible locations of R on the coordinate diagram. Take P as the origin and each unit as one centimetre in reality. Both α and β can vary only from 0° to 180°."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        9,
+        10
+      ],
+      "wording": "either Question 6A or Question 6B",
+      "classification": "expanded-alternatives",
+      "reason": "All three 6A tasks and the entire 6B proof are retained at their printed tariffs. Candidate total is 300; offered total is 325."
+    },
+    {
+      "pages": [
+        3
+      ],
+      "wording": "three different ways; using one of the methods you described",
+      "classification": "open-method-choice",
+      "reason": "The paper supplies no finite closed method list. Three independently scored descriptions remain one 15-mark response, followed by one 10-mark application. Scheme examples are accepted solutions, not printed optional prompts."
+    },
+    {
+      "pages": [
+        4,
+        7,
+        8,
+        12,
+        14,
+        16,
+        17,
+        18
+      ],
+      "wording": "each circle; assumption(s); probability; which angle; each of two situations; all possible locations",
+      "classification": "all-required-or-answer-construction",
+      "reason": "Required centres, radii, assumptions, angles, cases and loci remain in their respective tasks. Random selection in probability scenarios is mathematical data, not a choice of practice prompt."
+    }
+  ],
+  "selectionDecisions": {
+    "2:e5830086050477e0": {
+      "classification": "expanded-alternatives",
+      "reason": "All three 6A tasks and the entire 6B proof are retained at their printed tariffs. Candidate total is 300; offered total is 325."
+    },
+    "2:bbadecac6bac5d73": {
+      "classification": "expanded-alternatives",
+      "reason": "All three 6A tasks and the entire 6B proof are retained at their printed tariffs. Candidate total is 300; offered total is 325."
+    },
+    "3:13a77168de67c964": {
+      "classification": "all-required",
+      "reason": "All required tasks retained, including both complete Q6 alternatives."
+    },
+    "3:90e93eed6eb03ac3": {
+      "classification": "open-method-choice",
+      "reason": "The paper supplies no finite closed method list. Three independently scored descriptions remain one 15-mark response, followed by one 10-mark application. Scheme examples are accepted solutions, not printed optional prompts."
+    },
+    "9:033522ae4023106a": {
+      "classification": "expanded-alternatives",
+      "reason": "All three 6A tasks and the entire 6B proof are retained at their printed tariffs. Candidate total is 300; offered total is 325."
+    },
+    "12:1d3f445678ce6d94": {
+      "classification": "scenario-definition",
+      "reason": "This defines mortgage arrears; it is not a selection of practice questions."
+    }
+  }
+}

@@ -194,12 +194,12 @@ const ROOT = resolve(__dirname, '..');
  */
 const comparable = (text: string) => comparableScheme(text);
 
-const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
+const schemeFor = (card: { year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
+    `${card.year}-${({higher:'hl',ordinary:'ol',foundation:'fl',common:'cl'} as Record<string,string>)[card.level]}${card.subjectId === 'maths' && card.mathematicsScale?.schemeFileid.includes('LP030EV') ? '-project' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
-const schemeText = (card: { year: number; level: string; subjectId: string }) => {
+const schemeText = (card: { year: number; level: string; subjectId: string; mathematicsScale?: { schemeFileid: string } }) => {
   const path = schemeFor(card);
   if (!schemeCache.has(path)) {
     schemeCache.set(path, existsSync(path) ? comparable(readFileSync(path, 'utf8')) : '');
@@ -535,7 +535,7 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor } =
+    const { resolvePaperFileid, resolveIndexedPaperFileid, corpusSubjectFor } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
@@ -545,10 +545,14 @@ describe('every card points at the question paper it came from', () => {
         const sourceSection = c.subjectId === 'maths'
           ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
           : c.section;
-        return c.paperFileid !== null
-          && c.paperFileid !== resolvePaperFileid(
-            corpusSubjectFor(c.subjectId, c.questionRef),
-            c.year, c.level, sourceSection);
+        const source = c.subjectId === 'maths' && 'mathematicsScale' in c
+          && c.mathematicsScale && c.sourceMaterial?.sourceFileid
+          ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
+          : undefined;
+        const expected = source
+          ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
+          : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection);
+        return c.paperFileid !== null && c.paperFileid !== expected;
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
     expect(bad, show(bad)).toEqual([]);

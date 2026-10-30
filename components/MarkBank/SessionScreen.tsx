@@ -32,6 +32,7 @@
  * share a surface. `test/markBankSession.test.tsx` asserts it.
  */
 
+import { levelName, levelAbbreviation } from './levels';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import ActionButton from '../ui/ActionButton';
 import { LogOut, Maximize2, Minimize2, X } from 'lucide-react';
@@ -84,6 +85,7 @@ import AppliedMathematicsRubricPanel, {
   appliedMathematicsMarks,
   type AppliedMathematicsScoreId,
 } from './AppliedMathematicsRubricPanel';
+import MathematicsScalePanel, { mathematicsScaleMarks, type MathematicsScaleCard } from './MathematicsScalePanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
 import AccountingAssessment, { accountingMarks, accountingScoreId } from './AccountingAssessment';
 import type { AccountingScoreId } from './AccountingAssessment';
@@ -232,6 +234,7 @@ function claimedMarks(g: NonNullable<MarkRow['group']>, n: number): number {
  */
 export function claimableTotal(card: SecCard): number {
   if (isRubricCard(card)) return card.totalMarks;
+  if (card.mathematicsScale) return card.totalMarks;
   if (card.tariffModel.kind === 'orderedSplit') return card.totalMarks;
   // The scheme prices the question, not its parts, so the rows carry no marks
   // of their own — the question's own total is the only number that exists.
@@ -252,7 +255,7 @@ export function claimableTotal(card: SecCard): number {
 /** Only a `fixed` tariff may show per-row mark chips: for the other conventions
  *  a per-row number would be arithmetically wrong, so we show none. */
 export const showsRowMarks = (card: SecCard) =>
-  isPointCard(card) && card.tariffModel.kind === 'fixed';
+  isPointCard(card) && !card.mathematicsScale && card.tariffModel.kind === 'fixed';
 
 /**
  * Which mutually exclusive answer route the student has committed to, if any.
@@ -338,7 +341,7 @@ export type IrishScoreId = `irish:${string}`;
 export type { GeographyScoreId } from './geographyScoring';
 export { artMarks, artScoreId };
 export type { ArtScoreId };
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | AccountingScoreId | FrenchScoreId | BusinessScoreId | 'mathematics' | `mathematics:${string}`;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -2301,6 +2304,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   }, [answerVariantId, baseAssessmentCard]);
   const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
     && assessmentCard.tariffModel.kind === 'questionTotal');
+  const mathematicsCard = assessmentCard && isPointCard(assessmentCard) && assessmentCard.mathematicsScale
+    ? assessmentCard as MathematicsScaleCard : undefined;
   useEffect(() => {
     setAnswerVariantId(null);
   }, [baseAssessmentCard?.id]);
@@ -2324,7 +2329,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   const total = assessmentCard ? claimableTotal(assessmentCard) : 0;
   const got = assessmentCard
-    ? isRubricCard(assessmentCard) ? rubricMarks(assessmentCard, rubricScores) : marksClaimed(assessmentCard, rowClaims, picks)
+    ? mathematicsCard ? mathematicsScaleMarks(mathematicsCard, rubricScores.mathematics, rubricScores)
+      : isRubricCard(assessmentCard) ? rubricMarks(assessmentCard, rubricScores) : marksClaimed(assessmentCard, rowClaims, picks)
     : 0;
   const left = Math.max(0, total - got);
 
@@ -2362,7 +2368,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const unclaimedNames = unclaimed.slice(0, 3);
   const unclaimedMore = unclaimed.length - unclaimedNames.length;
   const suggested = assessmentCard
-    ? isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
+    ? mathematicsCard ? got === total ? 'got' : got > 0 ? 'shaky' : 'missed'
+      : isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
     : 'shaky';
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
@@ -2386,6 +2393,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setSchemeInteracted(true);
     setRubricScores(prev => {
       const next = { ...prev, [id]: marks };
+      if (id.startsWith('mathematics:') && id !== 'mathematics:deduction') next['mathematics:deduction'] = 0;
       // The SEC's cap is a rule, not a warning. Lowering Purpose also lowers a
       // previously selected C/L mark so the visible state can never imply an
       // award the examiner is forbidden to make.
@@ -2470,7 +2478,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         // Where the scheme leaves per-row values undefined we score no marks, so
         // we must not report a total either — otherwise the close screen reads
         // "0 of 20 marks" for a card the student may have answered perfectly.
-        marksAvailable: isRubricCard(member) || showsRowMarks(member)
+        marksAvailable: isRubricCard(member) || (isPointCard(member) && member.mathematicsScale) || showsRowMarks(member)
           ? claimableTotal(member)
           : 0,
       } satisfies SessionCardResult;
@@ -2552,8 +2560,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   if (!card || !assessmentCard) return null;
 
-  const levelLabel = assessmentCard.level === 'higher' ? 'HIGHER LEVEL'
-    : assessmentCard.level === 'common' ? 'COMMON LEVEL' : 'ORDINARY LEVEL';
+  const levelLabel = `${levelName[assessmentCard.level].toUpperCase()} LEVEL`;
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
   const printedQuestionReplacesText = Boolean(questionFigure && questionFigure.includesPrompt !== false);
@@ -2627,7 +2634,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             flexShrink: 1, minWidth: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
-            {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}
+            {subjectLabel} · {levelAbbreviation[assessmentCard.level]}
           </span>
 
           <span style={{ flex: 1 }} />
@@ -2801,7 +2808,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em',
                 textTransform: 'uppercase', color: LABEL,
               }}>
-                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL)\s+/, '')}
+                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL|FL)\s+/, '')}
               </span>
               {/* Inverted chip: ink as the fill. The text must flip WITH it --
                   --mb-ink goes near-white in dark mode, so hard-coded white
@@ -2813,6 +2820,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 {assessmentCard.totalMarks}m
               </span>
             </div>
+
+            {assessmentCard.kind === 'question' && assessmentCard.mathematicsScale?.practiceInstruction && (
+              <p style={{ margin: '12px 0 0', font: `600 14px/1.6 ${SANS}`, color: INK }}>
+                {assessmentCard.mathematicsScale.practiceInstruction}
+              </p>
+            )}
 
             {assessmentCard.stem && !printedQuestionReplacesText && (
               /* A printed bullet list keeps one item to a line; see stemText. */
@@ -2857,7 +2870,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               Practise: {assessmentCard.practiceFocus}
             </p>}
 
-            {figure && (revealed || !figure.solution) && (
+            {figure && !(mathematicsCard && figure.solution) && (revealed || !figure.solution) && (
               /* The crop sits directly on the sheet — no third box competing
                  with the card's own border. A full-bleed hairline rule marks
                  where our typesetting ends and the SEC's print begins.
@@ -3013,7 +3026,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     }}>
                       The scheme
                     </span>
-                    {isPointCard(assessmentCard) && !wholeResponseAssessment && (
+                    {isPointCard(assessmentCard) && !wholeResponseAssessment && !mathematicsCard && (
                       <button
                         type="button" onClick={claimAll}
                         style={{
@@ -3027,7 +3040,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     )}
                   </div>
 
-                  {isPointCard(assessmentCard) ? (
+                  {mathematicsCard ? (
+                    <MathematicsScalePanel card={mathematicsCard}
+                      selected={rubricScores.mathematics}
+                      onSelect={marks => setRubricScore('mathematics', marks)}
+                      componentScores={rubricScores}
+                      onComponentSelect={(id, marks) => setRubricScore(`mathematics:${id}`, marks)} />
+                  ) : isPointCard(assessmentCard) ? (
                     <>
                       <div style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
                         <p style={{ margin: 0, font: `600 18px/1.3 ${SERIF}`, color: INK }}>
@@ -3252,7 +3271,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               {(
                 <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
                   <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
-                    {!schemeInteracted
+                    {mathematicsCard
+                      ? !schemeInteracted
+                        ? <>No credit selected yet. Use the SEC {mathematicsCard.mathematicsScale.methods ? 'step marks' : 'scale'} above for a mark-based suggestion, or choose your own grade now.</>
+                        : <>Your SEC {mathematicsCard.mathematicsScale.methods ? 'award' : 'scale award'} is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
+                      : !schemeInteracted
                       ? isRubricCard(assessmentCard)
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
                         : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>

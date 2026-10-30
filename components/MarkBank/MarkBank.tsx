@@ -21,6 +21,7 @@ import { resolveSubjectId } from '../../curriculumRegistry';
  * open this and find it forgiving, not accusatory.
  */
 
+import { levelName } from './levels';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import MarkBankLibrary from './MarkBankLibrary';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
@@ -115,10 +116,12 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
     if (!subject) continue;
     // A common-level subject has no Higher/Ordinary to read off the profile,
     // and a profile that says "Higher" for one is saying nothing about it.
-    // The bank has no Foundation decks, so a Foundation student practises Ordinary.
+    // Preserve Foundation when this subject has a published Foundation deck.
     const levels = levelsFor(subject.id);
-    const level: Level = levels.length === 1 ? levels[0]
-      : /^(ordinary|foundation)/.test(profileSubject.level?.toLowerCase() ?? '') ? 'ordinary' : 'higher';
+    const requested: Level = profileSubject.level?.toLowerCase().startsWith('foundation') ? 'foundation'
+      : profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
+    const level: Level = levels.includes(requested) ? requested
+      : levels.includes('ordinary') ? 'ordinary' : levels[0];
     if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
   }
   return null;
@@ -146,7 +149,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
     // A subject examined at one level has no Higher deck to carry the current
     // choice into; without this, picking LCVP opened an empty Higher deck.
     const levels = levelsFor(id);
-    const next = levels.includes(level) ? level : levels[0];
+    const next = levels.includes(level) ? level : levels.includes('ordinary') ? 'ordinary' : levels[0];
     setLevel(next);
     writeChoice(uid, { subjectId: id, level: next });
   }, [uid, level, canSelectSubject]);
@@ -339,7 +342,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now
             {left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
           <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
-            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {level === 'higher' ? 'Higher level' : 'Ordinary level'}
+            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {levelName[level]} level
           </p>
 
           <ResultStatGrid items={[

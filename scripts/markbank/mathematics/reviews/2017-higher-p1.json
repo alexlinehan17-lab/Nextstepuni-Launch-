@@ -1,0 +1,997 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2017,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "47c99aa9efecdc588240b765bc473fcaf08e9a35ca746743fd4525293dcffda4",
+  "schemeSha256": "0bb64df5a2421450f158c6421586cd522c112d2dfa2b449bc9fe1f58e1bf175a",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and PDF pages 1–25 of the combined Higher Level scheme (cover, notes, contents, the Paper 1 title page 5, the scale table on page 6, the summary of mark allocations on page 7, every Paper 1 model solution and marking note on pages 8–24, and the Paper 2 title page 25). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 55,
+    "9": 40
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 55 marks, Q9 40 marks). Every question is retained.",
+    "33 independently marked units, matching the printed summary of allocations on scheme page 7.",
+    "Paper 1 bands from the 2017 scale table on scheme page 6: 5B 0,3,5; 5C 0,3,4,5; 5D 0,2,3,4,5; 10B 0,4,10; 10C 0,5,8,10; 10D 0,4,7,8,10; 15C 0,5,10,15; 15D 0,5,8,12,15; 20C 0,10,18,20; 20D 0,5,14,17,20. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 33 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced. Exponents in prompts use caret notation (e^x, e^(−0·05t)). The Q2(b) model solution continues onto scheme page 11 and is quoted from both pages.",
+    "Eleven parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal, because lines of their model solution cannot be carried by the text layer (a stacked fraction’s lone numerator or denominator, filtered as a mark cell) or are printed as images: Q1(c)(ii), Q3(b) (whose high partial credit d(fg(x))/dx extracts its f and g as unassigned code points and is not quoted), Q4(b), Q5(a) (the long division), Q6(a), Q6(b), Q7(f), Q8(a), Q8(b)(v), Q9(a) (the scaled graph) and Q9(b)(ii).",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. Scheme page references are PDF positions (printed page number + 3); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2017-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Write the function f(x) = 2x² − 7x − 10, where x ∈ ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ."
+    },
+    {
+      "id": "maths-2017-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "Part (a): Write the function f(x) = 2x² − 7x − 10, where x ∈ ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ.",
+      "questionText": "Hence, write the minimum point of f."
+    },
+    {
+      "id": "maths-2017-hl-p1-q1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "Part (a): Write the function f(x) = 2x² − 7x − 10, where x ∈ ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ.",
+      "questionText": "Explain why f must have two real roots."
+    },
+    {
+      "id": "maths-2017-hl-p1-q1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "Part (a): Write the function f(x) = 2x² − 7x − 10, where x ∈ ℝ, in the form a(x + h)² + k, where a, h, and k ∈ ℚ.",
+      "questionText": "Write the roots of f(x) = 0 in the form p ± √q, where p and q ∈ ℚ."
+    },
+    {
+      "id": "maths-2017-hl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "z = −√3 + i, where i² = −1.",
+      "questionText": "Use De Moivre’s Theorem to write z⁴ in the form a + b√c i, where a, b, and c ∈ ℤ."
+    },
+    {
+      "id": "maths-2017-hl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        8,
+        10
+      ],
+      "schemePages": [
+        10,
+        11
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "z = −√3 + i, where i² = −1.",
+      "questionText": "The complex number w is such that |w| = 3 and w makes an angle of 30° with the positive sense of the real axis. If t = zw, write t in its simplest form."
+    },
+    {
+      "id": "maths-2017-hl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        14,
+        17,
+        20
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "Differentiate (1/3)x² − x + 3 from first principles with respect to x."
+    },
+    {
+      "id": "maths-2017-hl-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-functions",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "f(x) = ln(3x² + 2) and g(x) = x + 5, where x ∈ ℝ. Find the value of the derivative of f(g(x)) at x = 1/4. Give your answer correct to 3 decimal places."
+    },
+    {
+      "id": "maths-2017-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "questionText": "The amount of a substance remaining in a solution reduces exponentially over time. An experiment measures the percentage of the substance remaining in the solution. The percentage is measured at the same time each day. The data collected over the first 4 days are given in the table below. Based on the data in the table, estimate which is the first day on which the percentage of the substance in the solution will be less than 0·01%. Day: 1, 2, 3, 4. Percentage of substance (%): 95, 42·75, 19·2375, 8·6569."
+    },
+    {
+      "id": "maths-2017-hl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "A square has sides of length 2 cm. The midpoints of the sides of this square are joined to form another square. This process is continued. The first three squares in the process are shown below. Find the sum of the perimeters of the squares if this process is continued indefinitely. Give your answer in the form a + b√c cm, where a, b, and c ∈ ℕ."
+    },
+    {
+      "id": "maths-2017-hl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics"
+      ],
+      "stem": "The function f is such that f(x) = 2x³ + 5x² − 4x − 3, where x ∈ ℝ.",
+      "questionText": "Show that x = −3 is a root of f(x) and find the other two roots."
+    },
+    {
+      "id": "maths-2017-hl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The function f is such that f(x) = 2x³ + 5x² − 4x − 3, where x ∈ ℝ.",
+      "questionText": "Find the co-ordinates of the local maximum point and the local minimum point of the function f."
+    },
+    {
+      "id": "maths-2017-hl-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-algebra-cubics"
+      ],
+      "stem": "The function f is such that f(x) = 2x³ + 5x² − 4x − 3, where x ∈ ℝ. Part (b): Find the co-ordinates of the local maximum point and the local minimum point of the function f.",
+      "questionText": "f(x) + a, where a is a constant, has only one real root. Find the range of possible values of a."
+    },
+    {
+      "id": "maths-2017-hl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The graph of the function g(x) = e^x, x ∈ ℝ, 0 ≤ x ≤ 1, is shown on the diagram below.",
+      "questionText": "On the same diagram, draw the graph of h(x) = e^(−x), x ∈ ℝ, in the domain 0 ≤ x ≤ 1."
+    },
+    {
+      "id": "maths-2017-hl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The graph of the function g(x) = e^x, x ∈ ℝ, 0 ≤ x ≤ 1, is shown on the diagram below. Part (a): On the same diagram, draw the graph of h(x) = e^(−x), x ∈ ℝ, in the domain 0 ≤ x ≤ 1.",
+      "questionText": "Find the area enclosed by g(x) = e^x, h(x) = e^(−x), and the line x = 0·75. Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2017-hl-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0·1t) × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3·9e^(kt) × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants.",
+      "questionText": "The population in Sapphire City at the beginning of 2010 is 1 100 000 people. Find the value of S."
+    },
+    {
+      "id": "maths-2017-hl-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0·1t) × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3·9e^(kt) × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Part (a): The population in Sapphire City at the beginning of 2010 is 1 100 000 people. Find the value of S.",
+      "questionText": "Find the predicted population in Sapphire City at the beginning of 2015."
+    },
+    {
+      "id": "maths-2017-hl-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0·1t) × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3·9e^(kt) × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Part (a): The population in Sapphire City at the beginning of 2010 is 1 100 000 people. Find the value of S.",
+      "questionText": "Find the predicted change in the population in Sapphire City during 2015."
+    },
+    {
+      "id": "maths-2017-hl-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0·1t) × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3·9e^(kt) × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants.",
+      "questionText": "The predicted population in Avalon at the beginning of 2011 is 3 709 795 people. Write down and solve an equation in k to show that k = −0·05, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-hl-p1-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0·1t) × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3·9e^(kt) × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Part (a): The population in Sapphire City at the beginning of 2010 is 1 100 000 people. Find the value of S. Part (d): The predicted population in Avalon at the beginning of 2011 is 3 709 795 people. Write down and solve an equation in k to show that k = −0·05, correct to 2 decimal places.",
+      "questionText": "Find the year during which the populations in both cities will be equal."
+    },
+    {
+      "id": "maths-2017-hl-p1-q7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0·1t) × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3·9e^(kt) × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants. Part (d): The predicted population in Avalon at the beginning of 2011 is 3 709 795 people. Write down and solve an equation in k to show that k = −0·05, correct to 2 decimal places.",
+      "questionText": "Find the predicted average population in Avalon from the beginning of 2010 to the beginning of 2025."
+    },
+    {
+      "id": "maths-2017-hl-p1-q7-g",
+      "printedParts": [
+        "Q7(g)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Sometimes it is possible to predict the future population in a city using a function. The population in Sapphire City, over time, can be predicted using the following function: p(t) = Se^(0·1t) × 10⁶. The population in Avalon, over time, can be predicted using the following function: q(t) = 3·9e^(kt) × 10⁶. In the functions above, t is time, in years; t = 0 is the beginning of 2010; and both S and k are constants.",
+      "questionText": "Use the function q(t) = 3·9e^(−0·05t) × 10⁶ to find the predicted rate of change of the population in Avalon at the beginning of 2018."
+    },
+    {
+      "id": "maths-2017-hl-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "When a loan of €P is repaid in equal repayments of amount €A, at the end of each of t equal periods of time, where i is the periodic compound interest rate (expressed as a decimal), the formula below can be used to find the amount of each repayment. A = P i(1 + i)^t/((1 + i)^t − 1). Show how this formula is derived. You may use the formula for the sum of a finite geometric series."
+    },
+    {
+      "id": "maths-2017-hl-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2·5% of the original debt.",
+      "questionText": "What is the fixed monthly repayment, €A, required to pay the debt of €5000?"
+    },
+    {
+      "id": "maths-2017-hl-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2·5% of the original debt.",
+      "questionText": "The annual percentage rate (APR) charged on debt by the credit card company is 21·75%, fixed for the term of the debt. Find as a percentage, correct to 3 significant figures, the monthly interest rate that is equivalent to an APR of 21·75%."
+    },
+    {
+      "id": "maths-2017-hl-p1-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2·5% of the original debt. Part (b)(i): What is the fixed monthly repayment, €A, required to pay the debt of €5000? Part (b)(ii): The annual percentage rate (APR) charged on debt by the credit card company is 21·75%, fixed for the term of the debt. Find as a percentage, correct to 3 significant figures, the monthly interest rate that is equivalent to an APR of 21·75%.",
+      "questionText": "Assume Alex pays the fixed monthly repayment, €A, each month and does not have any further transactions on that card. Complete the table below to show how the balance of the debt of €5000 is reducing each month for the first three months, assuming an APR of 21·75%, charged and compounded monthly. Columns: Payment number; Fixed monthly payment, €A; Interest; Previous balance reduced by (€); New balance of debt (€). Payment 0: new balance 5000. Payment 1: _, _, 42·50, 4957·50. Payment 2: _, _, _, _. Payment 3: _, _, _, _."
+    },
+    {
+      "id": "maths-2017-hl-p1-q8-b-iv",
+      "printedParts": [
+        "Q8(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        15,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Part (a): When a loan of €P is repaid in equal repayments of amount €A, at the end of each of t equal periods of time, where i is the periodic compound interest rate (expressed as a decimal), the formula below can be used to find the amount of each repayment. A = P i(1 + i)^t/((1 + i)^t − 1). Part (b): Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2·5% of the original debt. Part (b)(ii): The annual percentage rate (APR) charged on debt by the credit card company is 21·75%, fixed for the term of the debt. Find as a percentage, correct to 3 significant figures, the monthly interest rate that is equivalent to an APR of 21·75%.",
+      "questionText": "Using the formula you derived on the previous page, or otherwise, find how long it would take to pay off a credit card debt of €5000, using the repayment method outlined at the beginning of part (b) above. Give your answer in months, correct to the nearest month."
+    },
+    {
+      "id": "maths-2017-hl-p1-q8-b-v",
+      "printedParts": [
+        "Q8(b)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Part (a): When a loan of €P is repaid in equal repayments of amount €A, at the end of each of t equal periods of time, where i is the periodic compound interest rate (expressed as a decimal), the formula below can be used to find the amount of each repayment. A = P i(1 + i)^t/((1 + i)^t − 1). Part (b): Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2·5% of the original debt.",
+      "questionText": "Alex decides to borrow €5000 from the local Credit Union to pay off this credit card debt of €5000. The APR charge for the Credit Union loan is 8·5% fixed for the term of the loan. The loan is to be repaid in equal weekly repayments, at the end of each week, for 156 weeks. Find the amount of each weekly repayment."
+    },
+    {
+      "id": "maths-2017-hl-p1-q8-b-vi",
+      "printedParts": [
+        "Q8(b)(vi)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Alex has a credit card debt of €5000. One method of clearing this debt is to make a fixed repayment at the end of each month. The amount of this repayment is 2·5% of the original debt. Part (b)(i): What is the fixed monthly repayment, €A, required to pay the debt of €5000? Part (b)(v): Alex decides to borrow €5000 from the local Credit Union to pay off this credit card debt of €5000. The APR charge for the Credit Union loan is 8·5% fixed for the term of the loan. The loan is to be repaid in equal weekly repayments, at the end of each week, for 156 weeks. Find the amount of each weekly repayment.",
+      "questionText": "How much will Alex save by paying off the credit card debt using the loan from the Credit Union instead of paying the fixed repayment from part (b)(i) each month to the credit card company?"
+    },
+    {
+      "id": "maths-2017-hl-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        10,
+        18,
+        20
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + b cos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: The depth of the water in the harbour at high tide was 5·5 m; The depth of the water in the harbour at low tide was 1·7 m; High tide occurred at 02:00 and again at 14:34.",
+      "questionText": "Use the information you are given to add, as accurately as you can, labelled and scaled axes to the diagram below to show the graph of f over a portion of that Saturday. The point P should represent the depth of the water in the harbour at high tide on that Saturday morning."
+    },
+    {
+      "id": "maths-2017-hl-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + b cos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: The depth of the water in the harbour at high tide was 5·5 m; The depth of the water in the harbour at low tide was 1·7 m; High tide occurred at 02:00 and again at 14:34.",
+      "questionText": "Find the value of a and the value of b."
+    },
+    {
+      "id": "maths-2017-hl-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + b cos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: The depth of the water in the harbour at high tide was 5·5 m; The depth of the water in the harbour at low tide was 1·7 m; High tide occurred at 02:00 and again at 14:34.",
+      "questionText": "Show that c = 0·5, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2017-hl-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The depth of water, in metres, at a certain point in a harbour varies with the tide and can be modelled by a function of the form f(t) = a + b cos ct where t is the time in hours from the first high tide on a particular Saturday and a, b, and c are constants. (Note: ct is expressed in radians.) On that Saturday, the following were noted: The depth of the water in the harbour at high tide was 5·5 m; The depth of the water in the harbour at low tide was 1·7 m; High tide occurred at 02:00 and again at 14:34. Part (b)(i): Find the value of a and the value of b. Part (b)(ii): Show that c = 0·5, correct to 1 decimal place.",
+      "questionText": "Use the equation f(t) = a + b cos ct to find the times on that Saturday afternoon when the depth of the water in the harbour was exactly 5·2 m. Give each answer correct to the nearest minute."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        12
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        16
+      ],
+      "wording": "Using the formula you derived on the previous page, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:649abe9453e973b3": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "12:16ac9b97c9d9bf03": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "16:7c76b5f7a48eda7b": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    }
+  }
+}

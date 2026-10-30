@@ -1,0 +1,1009 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "328c12b10f16618bab448c41329fa8e7187ab9054cb13204e9352f97360e21ec",
+  "schemeSha256": "01da919c931eb4b0872f69fad0e769f421412b0144892871c39b9759ebe0d0d2",
+  "reviewedAt": "2026-10-28",
+  "reviewMethod": "Independent visual reading of all 16 question-paper pages and PDF pages 1–36 of the combined Higher Level scheme (cover, notes, contents, the Paper 1 model solutions on pages 5–22, the scale table on page 23, the summary of mark allocations on page 24, the Paper 1 detailed marking notes on pages 25–34, and the pages before Paper 2). Each task boundary is the published scale in the detailed marking notes, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 50,
+    "9": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    23,
+    24
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7–9, 50 marks each). Every question is retained.",
+    "32 independently marked units, matching the printed summary of allocations on scheme page 24. Q3(a)(i)+(ii), Q3(b)(i)+(ii) and Q6(a)(i)+(ii) are each marked “combined” on one printed scale and are one task; Q2 has no parts and is one 25E task.",
+    "Bands from the 2015 scale table on scheme page 23: 5B 0,2,5; 5C 0,2,4,5; 10B 0,5,10; 10C 0,4,8,10; 10D 0,2,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15; 25E 0,5,10,15,20,25. The marking notes print the same ladder beside every part except Q7(b)(i), whose notes print Scale 10C (0, 3, 7, 10); that card follows the notes. The summary prints Q9(e) as “10” without a letter; the notes print Scale 10D.",
+    "This paper had no authored cards before this review; all 32 units are new. The 2015 scheme sets the paper out with a boxed model solution under each part (pages 5–22) and lists the credit bands separately as detailed marking notes (pages 25–34). The model solutions are equation images whose text layer is scattered digits, so only lines the text layer carries whole are quoted; the bands are quoted from the notes. A band whose maths the text layer garbles (a stacked fraction, an f(x) or x = 0 set as an equation object) is not quoted; Q7(a)(i)’s only band, “Recognises x = 0”, extracts as separate characters, so that card quotes its model solution’s conclusion and the band is carried by the crop.",
+    "Every card carries the SEC’s own print of its scheme content, shown only after the reveal: the part’s boxed model solution above its detailed marking notes, cropped from the scheme PDF by scheme_solution_figures.py.",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. Scheme page references are PDF positions (printed page number + 2); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2015-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        7,
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Mary threw a ball onto level ground from a height of 2 m. Each time the ball hit the ground it bounced back up to 3/4 of the height of the previous bounce, as shown.",
+      "questionText": "Complete the table below to show the maximum height, in fraction form, reached by the ball on each of the first four bounces. Table: Bounce: 0, 1, 2, 3, 4. Height (m): 2/1, _, _, _, _."
+    },
+    {
+      "id": "maths-2015-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        7,
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Mary threw a ball onto level ground from a height of 2 m. Each time the ball hit the ground it bounced back up to 3/4 of the height of the previous bounce, as shown. Part (a): Complete the table below to show the maximum height, in fraction form, reached by the ball on each of the first four bounces. Table: Bounce: 0, 1, 2, 3, 4. Height (m): 2/1, _, _, _, _.",
+      "questionText": "Find, in metres, the total vertical distance (up and down) the ball had travelled when it hit the ground for the 5th time. Give your answer in fraction form."
+    },
+    {
+      "id": "maths-2015-hl-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        8,
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Mary threw a ball onto level ground from a height of 2 m. Each time the ball hit the ground it bounced back up to 3/4 of the height of the previous bounce, as shown.",
+      "questionText": "If the ball were to continue to bounce indefinitely, find, in metres, the total vertical distance it would travel."
+    },
+    {
+      "id": "maths-2015-hl-p1-q2",
+      "printedParts": [
+        "Q2"
+      ],
+      "totalMarks": 25,
+      "scale": "25E",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "schemePages": [
+        9,
+        26
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics"
+      ],
+      "questionText": "Solve the equation x³ − 3x² − 9x + 11 = 0. Write any irrational solution in the form a + b√c, where a, b, c ∈ ℤ."
+    },
+    {
+      "id": "maths-2015-hl-p1-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        10,
+        27
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-functions"
+      ],
+      "stem": "Let f(x) = −x² + 12x − 27, x ∈ ℝ.",
+      "questionText": "(i) Complete Table 1 below. Table 1: x: 3, 4, 5, 6, 7, 8, 9. f(x): 0, 5, _, _, 8, _, _. (ii) Use Table 1 and the trapezoidal rule to find the approximate area of the region bounded by the graph of f and the x-axis."
+    },
+    {
+      "id": "maths-2015-hl-p1-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        10,
+        27
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "Let f(x) = −x² + 12x − 27, x ∈ ℝ. Part (a): (i) Complete Table 1 below. Table 1: x: 3, 4, 5, 6, 7, 8, 9. f(x): 0, 5, _, _, 8, _, _. (ii) Use Table 1 and the trapezoidal rule to find the approximate area of the region bounded by the graph of f and the x-axis.",
+      "questionText": "(i) Find ∫ (from 3 to 9) f(x) dx. (ii) Use your answers above to find the percentage error in your approximation of the area, correct to one decimal place."
+    },
+    {
+      "id": "maths-2015-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        11,
+        12,
+        28
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "The complex numbers z₁, z₂ and z₃ are such that 2/z₁ = 1/z₂ + 1/z₃, z₂ = 2 + 3i and z₃ = 3 − 2i, where i² = −1. Write z₁ in the form a + bi, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2015-hl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        12,
+        28
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "Let ω be a complex number such that ωⁿ = 1, ω ≠ 1, and S = 1 + ω + ω² + ⋯ + ω^(n−1). Use the formula for the sum of a finite geometric series to write the value of S in its simplest form."
+    },
+    {
+      "id": "maths-2015-hl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        13,
+        29
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "questionText": "Solve the equation x = √(x + 6), x ∈ ℝ."
+    },
+    {
+      "id": "maths-2015-hl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13,
+        29
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "Differentiate x − √(x + 6) with respect to x."
+    },
+    {
+      "id": "maths-2015-hl-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        13,
+        29
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "Find the co-ordinates of the turning point of the function y = x − √(x + 6), x ≥ −6."
+    },
+    {
+      "id": "maths-2015-hl-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        14,
+        30
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Donagh is arranging a loan and is examining two different repayment options.",
+      "questionText": "(i) Bank A will charge him a monthly interest rate of 0·35%. Find, correct to three significant figures, the annual percentage rate (APR) that is equivalent to a monthly interest rate of 0·35%. (ii) Bank B will charge him a rate that is equivalent to an APR of 4·5%. Find, correct to three significant figures, the monthly interest rate that is equivalent to an APR of 4·5%."
+    },
+    {
+      "id": "maths-2015-hl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        15,
+        30
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Donagh is arranging a loan and is examining two different repayment options.",
+      "questionText": "Donagh borrowed €80 000 at a monthly interest rate of 0·35%, fixed for the term of the loan, from Bank A. The loan is to be repaid in equal monthly repayments over ten years. The first repayment is due one month after the loan is issued. Calculate, correct to the nearest euro, the amount of each monthly repayment."
+    },
+    {
+      "id": "maths-2015-hl-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        31
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A plane is flying horizontally at P at a height of 150 m above level ground when it begins its descent. P is 5 km, horizontally, from the point of touchdown O. The plane lands horizontally at O. Taking O as the origin, (x, f(x)) approximately describes the path of the plane’s descent where f(x) = 0·0024x³ + 0·018x² + cx + d, −5 ≤ x ≤ 0, and both x and f(x) are measured in km.",
+      "questionText": "Show that d = 0."
+    },
+    {
+      "id": "maths-2015-hl-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        31
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A plane is flying horizontally at P at a height of 150 m above level ground when it begins its descent. P is 5 km, horizontally, from the point of touchdown O. The plane lands horizontally at O. Taking O as the origin, (x, f(x)) approximately describes the path of the plane’s descent where f(x) = 0·0024x³ + 0·018x² + cx + d, −5 ≤ x ≤ 0, and both x and f(x) are measured in km.",
+      "questionText": "Using the fact that P is the point (−5, 0·15), or otherwise, show that c = 0."
+    },
+    {
+      "id": "maths-2015-hl-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        16,
+        31
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "A plane is flying horizontally at P at a height of 150 m above level ground when it begins its descent. P is 5 km, horizontally, from the point of touchdown O. The plane lands horizontally at O. Taking O as the origin, (x, f(x)) approximately describes the path of the plane’s descent where f(x) = 0·0024x³ + 0·018x² + cx + d, −5 ≤ x ≤ 0, and both x and f(x) are measured in km.",
+      "questionText": "Find the value of f′(x), the derivative of f(x), when x = −4."
+    },
+    {
+      "id": "maths-2015-hl-p1-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17,
+        31
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A plane is flying horizontally at P at a height of 150 m above level ground when it begins its descent. P is 5 km, horizontally, from the point of touchdown O. The plane lands horizontally at O. Taking O as the origin, (x, f(x)) approximately describes the path of the plane’s descent where f(x) = 0·0024x³ + 0·018x² + cx + d, −5 ≤ x ≤ 0, and both x and f(x) are measured in km. Part (b)(i): Find the value of f′(x), the derivative of f(x), when x = −4.",
+      "questionText": "Use your answer to part (b) (i) above to find the angle at which the plane is descending when it is 4 km from touchdown. Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2015-hl-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17,
+        31
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A plane is flying horizontally at P at a height of 150 m above level ground when it begins its descent. P is 5 km, horizontally, from the point of touchdown O. The plane lands horizontally at O. Taking O as the origin, (x, f(x)) approximately describes the path of the plane’s descent where f(x) = 0·0024x³ + 0·018x² + cx + d, −5 ≤ x ≤ 0, and both x and f(x) are measured in km.",
+      "questionText": "Show that (−2·5, 0·075) is the point of inflection of the curve y = f(x)."
+    },
+    {
+      "id": "maths-2015-hl-p1-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        17,
+        32
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A plane is flying horizontally at P at a height of 150 m above level ground when it begins its descent. P is 5 km, horizontally, from the point of touchdown O. The plane lands horizontally at O. Taking O as the origin, (x, f(x)) approximately describes the path of the plane’s descent where f(x) = 0·0024x³ + 0·018x² + cx + d, −5 ≤ x ≤ 0, and both x and f(x) are measured in km.",
+      "questionText": "If (x, y) is a point on the curve y = f(x), verify that (−x − 5, −y + 0·15) is also a point on y = f(x)."
+    },
+    {
+      "id": "maths-2015-hl-p1-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        17,
+        18,
+        32
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-functions"
+      ],
+      "stem": "A plane is flying horizontally at P at a height of 150 m above level ground when it begins its descent. P is 5 km, horizontally, from the point of touchdown O. The plane lands horizontally at O. Taking O as the origin, (x, f(x)) approximately describes the path of the plane’s descent where f(x) = 0·0024x³ + 0·018x² + cx + d, −5 ≤ x ≤ 0, and both x and f(x) are measured in km. Part (c): Show that (−2·5, 0·075) is the point of inflection of the curve y = f(x). Part (d)(i): If (x, y) is a point on the curve y = f(x), verify that (−x − 5, −y + 0·15) is also a point on y = f(x).",
+      "questionText": "Find the image of (−x − 5, −y + 0·15) under symmetry in the point of inflection."
+    },
+    {
+      "id": "maths-2015-hl-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19,
+        32
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "An oil-spill occurs off-shore in an area of calm water with no currents. The oil is spilling at a rate of 4 × 10⁶ cm³ per minute. The oil floats on top of the water.",
+      "questionText": "Complete the table below to show the total volume of oil on the water after each of the first 6 minutes of the oil-spill. Table: Time (minutes): 1, 2, 3, 4, 5, 6. Volume (10⁶ cm³): _, 8, _, _, _, _."
+    },
+    {
+      "id": "maths-2015-hl-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19,
+        32
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "An oil-spill occurs off-shore in an area of calm water with no currents. The oil is spilling at a rate of 4 × 10⁶ cm³ per minute. The oil floats on top of the water. Part (a)(i): Complete the table below to show the total volume of oil on the water after each of the first 6 minutes of the oil-spill. Table: Time (minutes): 1, 2, 3, 4, 5, 6. Volume (10⁶ cm³): _, 8, _, _, _, _.",
+      "questionText": "Draw a graph to show the total volume of oil on the water over the first 6 minutes."
+    },
+    {
+      "id": "maths-2015-hl-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19,
+        32
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "An oil-spill occurs off-shore in an area of calm water with no currents. The oil is spilling at a rate of 4 × 10⁶ cm³ per minute. The oil floats on top of the water.",
+      "questionText": "Write an equation for V(t), the volume of oil on the water, in cm³, after t minutes."
+    },
+    {
+      "id": "maths-2015-hl-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19,
+        32
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "An oil-spill occurs off-shore in an area of calm water with no currents. The oil is spilling at a rate of 4 × 10⁶ cm³ per minute. The oil floats on top of the water. Part (b): The spilled oil forms a circular oil slick 1 millimetre thick.",
+      "questionText": "Write an equation for the volume of oil in the slick, in cm³, when the radius is r cm."
+    },
+    {
+      "id": "maths-2015-hl-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        20,
+        33
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "An oil-spill occurs off-shore in an area of calm water with no currents. The oil is spilling at a rate of 4 × 10⁶ cm³ per minute. The oil floats on top of the water. Part (b): The spilled oil forms a circular oil slick 1 millimetre thick. Part (b)(i): Write an equation for the volume of oil in the slick, in cm³, when the radius is r cm.",
+      "questionText": "Find the rate, in cm per minute, at which the radius of the oil slick is increasing when the radius is 50 m."
+    },
+    {
+      "id": "maths-2015-hl-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        20,
+        33
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "An oil-spill occurs off-shore in an area of calm water with no currents. The oil is spilling at a rate of 4 × 10⁶ cm³ per minute. The oil floats on top of the water. Part (b): The spilled oil forms a circular oil slick 1 millimetre thick.",
+      "questionText": "Show that the area of water covered by the oil slick is increasing at a constant rate of 4 × 10⁷ cm² per minute."
+    },
+    {
+      "id": "maths-2015-hl-p1-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        20,
+        33
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "An oil-spill occurs off-shore in an area of calm water with no currents. The oil is spilling at a rate of 4 × 10⁶ cm³ per minute. The oil floats on top of the water. Part (b): The spilled oil forms a circular oil slick 1 millimetre thick.",
+      "questionText": "The nearest land is 1 km from the point at which the oil-spill began. Find how long it will take for the oil slick to reach land. Give your answer correct to the nearest hour."
+    },
+    {
+      "id": "maths-2015-hl-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        21,
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The approximate length of the day in Galway, measured in hours from sunrise to sunset, may be calculated using the function f(t) = 12·25 + 4·75 sin(2π/365 t), where t is the number of days after March 21st and (2π/365 t) is expressed in radians.",
+      "questionText": "Find the length of the day in Galway on June 5th (76 days after March 21st). Give your answer in hours and minutes, correct to the nearest minute."
+    },
+    {
+      "id": "maths-2015-hl-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        21,
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The approximate length of the day in Galway, measured in hours from sunrise to sunset, may be calculated using the function f(t) = 12·25 + 4·75 sin(2π/365 t), where t is the number of days after March 21st and (2π/365 t) is expressed in radians.",
+      "questionText": "Find a date on which the length of the day in Galway is approximately 15 hours."
+    },
+    {
+      "id": "maths-2015-hl-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        21,
+        34
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "The approximate length of the day in Galway, measured in hours from sunrise to sunset, may be calculated using the function f(t) = 12·25 + 4·75 sin(2π/365 t), where t is the number of days after March 21st and (2π/365 t) is expressed in radians.",
+      "questionText": "Find f′(t), the derivative of f(t)."
+    },
+    {
+      "id": "maths-2015-hl-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22,
+        34
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The approximate length of the day in Galway, measured in hours from sunrise to sunset, may be calculated using the function f(t) = 12·25 + 4·75 sin(2π/365 t), where t is the number of days after March 21st and (2π/365 t) is expressed in radians. Part (c): Find f′(t), the derivative of f(t).",
+      "questionText": "Hence, or otherwise, find the length of the longest day in Galway."
+    },
+    {
+      "id": "maths-2015-hl-p1-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22,
+        34
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The approximate length of the day in Galway, measured in hours from sunrise to sunset, may be calculated using the function f(t) = 12·25 + 4·75 sin(2π/365 t), where t is the number of days after March 21st and (2π/365 t) is expressed in radians.",
+      "questionText": "Use integration to find the average length of the day in Galway over the six months from March 21st to September 21st (184 days). Give your answer in hours and minutes, correct to the nearest minute."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        10,
+        15
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:76579a9d32c51b9f": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "10:1a155b6ddd7b7e18": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "10:4ae7287f6d291118": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "15:ba7da1bd4704a0c6": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    }
+  }
+}

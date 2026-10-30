@@ -1,0 +1,932 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2011,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP230EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "591e89aca36f8f78d50319633b4041c726954108d26d7448e42e392fa8eaeb52",
+  "schemeSha256": "cfcb62282992ce772d9b15856459dbb762078690bac621878466813c12a7e671",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual inspection of all 20 original paper pages and scheme PDF pages 43–76, including every model solution, alternative proof, diagram, scale, component allocation and detailed credit note. All 28 question and 28 solution crops visually inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 75,
+    "8": 75
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    60,
+    61
+  ],
+  "sourceNotes": [
+    "All 20 original paper pages and scheme PDF pages 43–76 independently visually inspected. Original paper printed pagination ends at 19 with a final blank PDF page.",
+    "Q5 and Q6A each have three independently scored components under one task. There are 28 tasks and 32 marking components.",
+    "Use the detailed 15B (0,9,15) for Q4(a), 25C (0,15,22,25) for Q6B/Q8(b)(i), and 25D (0,15,20,23,25) for Q8(a)(i). The generic scale table omits some used scales. No task is starred for Full Credit Minus One.",
+    "Original typeset solutions, all published alternatives, diagrams, detailed credit notes and official web-amendment footnotes are retained.",
+    "Q1(a) second z denominator should be 5; Q7(c) final alternative label should be OD. Q8(b)(ii) counts eight original readings within two degrees of 17.88/17.83, but independent count is nine; both paths still do not reject. Separate annotations explain these without altering source images.",
+    "Q7(a)(i) unequal class widths and flexible last-interval marking retained; Q7(a)(ii) accepts 200 < median < 300. Q7(b)(ii) reading tolerances and Q7(b)(iii) reasonable-p follow-through retained.",
+    "Q8(a)(i) expressly accepts floor-to-apex height; Q8(a)(ii) accepts carried height. Every dependent card includes original required diagrams, tables and prior prompts."
+  ],
+  "cards": [
+    {
+      "id": "maths-2011-hl-p2-project-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        10,
+        16,
+        18,
+        20
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "questionText": "A random variable X follows a normal distribution with mean 20 and standard deviation 5. Find P(14 ≤ X ≤ 26)."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "There are 16 girls and 8 boys in a class. Half study French. The probability that a randomly selected girl studies French is 1.5 times that for a randomly selected boy. How many boys study French?"
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "Explain, with the aid of an example, what is meant by “Correlation does not imply causality.”"
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        6,
+        10
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The observations are (x, y) = (1, 11), (2, 15), (3, 17), (4, 17), (5, 15), (6, 11), shown in the table and scatter diagram.",
+      "questionText": "Calculate the correlation coefficient."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The observations are (x, y) = (1, 11), (2, 15), (3, 17), (4, 17), (5, 15), (6, 11), shown in the table and scatter diagram.",
+      "questionText": "What kind of relationship, if any, do the observed data suggest exists between x and y?"
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        9,
+        13,
+        15
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram shows parallel lines j, k and l, and parallel lines m and n. Four equations are provided: x + 2y = −4; 2x − y = −4; x + 2y = 8; 2x − y = 2.",
+      "questionText": "Complete the table by matching four of the lines to their equations."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram shows parallel lines j, k and l, and parallel lines m and n. Four equations are provided: x + 2y = −4; 2x − y = −4; x + 2y = 8; 2x − y = 2. First match the four given equations to the lines.",
+      "questionText": "Hence, insert scales on the x-axis and y-axis."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram shows parallel lines j, k and l, and parallel lines m and n. Four equations are provided: x + 2y = −4; 2x − y = −4; x + 2y = 8; 2x − y = 2. First match the equations and insert scales on both axes.",
+      "questionText": "Hence, find the equation of the remaining line, given that its x-intercept and y-intercept are both integers."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        9,
+        15
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The triangles are on a square grid. P, Q, R, X and Z are grid vertices; Y lies on [PR]. Triangle PQR is an enlargement of triangle XYZ.",
+      "questionText": "Calculate the scale factor of the enlargement, showing your work."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The triangles are on a square grid. P, Q, R, X and Z are grid vertices; Y lies on [PR]. Triangle PQR is an enlargement of triangle XYZ.",
+      "questionText": "By construction or otherwise, locate the centre of enlargement on the diagram."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The triangles are on a square grid. P, Q, R, X and Z are grid vertices; Y lies on [PR]. Triangle PQR is an enlargement of triangle XYZ. Part (a) asks for the scale factor.",
+      "questionText": "Calculate |YR| in grid units."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q5",
+      "printedParts": [
+        "Q5"
+      ],
+      "totalMarks": 25,
+      "components": [
+        {
+          "id": "intersection",
+          "label": "Intersection of line and circle",
+          "code": "15D",
+          "marks": [
+            0,
+            8,
+            10,
+            13,
+            15
+          ]
+        },
+        {
+          "id": "radius-centre",
+          "label": "Radius and centre",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "equation",
+          "label": "Equation",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        }
+      ],
+      "schemePages": [
+        49,
+        67
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The line x + 3y = 20 intersects the circle x² + y² − 6x − 8y = 0 at P and Q. Find the equation of the circle that has [PQ] as diameter."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q6a",
+      "printedParts": [
+        "Q6A"
+      ],
+      "totalMarks": 25,
+      "components": [
+        {
+          "id": "diagram-given",
+          "label": "Diagram and given",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "construction",
+          "label": "Construction",
+          "code": "10B",
+          "marks": [
+            0,
+            6,
+            10
+          ]
+        },
+        {
+          "id": "proof",
+          "label": "Main body of proof",
+          "code": "10C",
+          "marks": [
+            0,
+            6,
+            8,
+            10
+          ]
+        }
+      ],
+      "schemePages": [
+        50,
+        68
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Prove that if three parallel lines cut off equal segments on some transversal line, then they will cut off equal segments on any other transversal line. Include a diagram, the given information, what is to be proved, a construction and the proof."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "totalMarks": 25,
+      "scale": "25C",
+      "permittedMarks": [
+        0,
+        15,
+        22,
+        25
+      ],
+      "schemePages": [
+        51,
+        68
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "In the diagram, P₁Q₁, P₂Q₂ and P₃Q₃ are parallel, and Q₁P₂ and Q₂P₃ are parallel. Prove that |P₁Q₁| × |P₃Q₃| = |P₂Q₂|²."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        10,
+        18,
+        20
+      ],
+      "schemePages": [
+        52,
+        69
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Students investigate the time between successive 20th-century earthquakes causing at least 1,000 deaths. The 115 intervals, in days, have frequencies: 0–100:31; 100–200:24; 200–300:12; 300–400:14; 400–500:8; 500–600:7; 600–700:5; 700–800:6; 800–1000:5; 1000–1300:3.",
+      "questionText": "Create a suitable graphical representation of the distribution."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        6,
+        10
+      ],
+      "schemePages": [
+        53,
+        69
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Students investigate the time between successive 20th-century earthquakes causing at least 1,000 deaths. The 115 intervals, in days, have frequencies: 0–100:31; 100–200:24; 200–300:12; 300–400:14; 400–500:8; 500–600:7; 600–700:5; 700–800:6; 800–1000:5; 1000–1300:3.",
+      "questionText": "Describe the distribution, referring to its shape and estimating its median."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        53,
+        69
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Students investigate the time between successive 20th-century earthquakes causing at least 1,000 deaths. The 115 intervals, in days, have frequencies: 0–100:31; 100–200:24; 200–300:12; 300–400:14; 400–500:8; 500–600:7; 600–700:5; 700–800:6; 800–1000:5; 1000–1300:3.",
+      "questionText": "The mean interval is 309 days and the standard deviation is 277 days. After such an earthquake occurs, explain why standard normal distribution tables cannot give the probability that the next one occurs between 100 and 200 days later."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        53,
+        69
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Students investigate the time between successive 20th-century earthquakes causing at least 1,000 deaths. The 115 intervals, in days, have frequencies: 0–100:31; 100–200:24; 200–300:12; 300–400:14; 400–500:8; 500–600:7; 600–700:5; 700–800:6; 800–1000:5; 1000–1300:3. Part (iii) concerns a wait between 100 and 200 days after the previous earthquake.",
+      "questionText": "Based on the information so far, give the best estimate of the probability described in part (iii), and explain your reasoning."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-a-v",
+      "printedParts": [
+        "Q7(a)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        6,
+        10
+      ],
+      "schemePages": [
+        53,
+        69
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Students investigate the time between successive 20th-century earthquakes causing at least 1,000 deaths. The 115 intervals, in days, have frequencies: 0–100:31; 100–200:24; 200–300:12; 300–400:14; 400–500:8; 500–600:7; 600–700:5; 700–800:6; 800–1000:5; 1000–1300:3.",
+      "questionText": "Suggest a different way to analyse the database to look for patterns in the timing of earthquakes."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        54,
+        70
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The back-to-back histograms show magnitudes of 20th-century earthquakes causing tsunamis and not causing tsunamis. A reporter claims strong earthquakes cause tsunamis while weaker ones do not.",
+      "questionText": "Comment on the reporter’s statement using the diagram, and suggest a more accurate statement."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        54,
+        70
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The back-to-back histograms show magnitudes of 20th-century earthquakes causing tsunamis and not causing tsunamis. A reporter claims strong earthquakes cause tsunamis while weaker ones do not.",
+      "questionText": "Use suitable readings from the diagram to estimate the probability that an earthquake of magnitude between 6.5 and 7.0 causes a tsunami."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        55,
+        70
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The back-to-back histograms show magnitudes of 20th-century earthquakes causing tsunamis and not causing tsunamis. A reporter claims strong earthquakes cause tsunamis while weaker ones do not.",
+      "questionText": "Estimate the probability that at least four of the next six earthquakes of magnitude at least 7.5 cause a tsunami, assuming independence."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        56,
+        70
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Find the radius of the earth’s core from the diagram. The earth has radius 6.4 units, the seismic path is a circular arc of radius 29.1 units and just touches the core, and ∠AOB = 104°. One unit is 1,000 km."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 25,
+      "scale": "25D",
+      "permittedMarks": [
+        0,
+        15,
+        20,
+        23,
+        25
+      ],
+      "schemePages": [
+        57,
+        71
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A tower has a square base of side 4 m and a pyramidal roof. A surveyor at O is 10 m horizontally from the tower. The angles of elevation to the apex and closest roof-base point are 46° and 42°; the angle of depression to the closest tower-base point is 9°.",
+      "questionText": "Find the vertical height of the roof."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        58,
+        71
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A tower has a square base of side 4 m and a pyramidal roof. A surveyor at O is 10 m horizontally from the tower. The angles of elevation to the apex and closest roof-base point are 46° and 42°; the angle of depression to the closest tower-base point is 9°. Part (i) asks for the vertical roof height.",
+      "questionText": "Find the total area of the roof."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        58,
+        71
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A tower has a square base of side 4 m and a pyramidal roof. A surveyor at O is 10 m horizontally from the tower. The angles of elevation to the apex and closest roof-base point are 46° and 42°; the angle of depression to the closest tower-base point is 9°.",
+      "questionText": "If all observed angles are subject to a possible error of ±1°, find the range of possible areas for the roof."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 25,
+      "scale": "25C",
+      "permittedMarks": [
+        0,
+        15,
+        22,
+        25
+      ],
+      "schemePages": [
+        59,
+        71
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Twenty-five students each measure an angle of elevation with a home-made clinometer. The readings in degrees are 24,20,22,15,70; 15,16,15,16,15; 18,16,21,21,73; 16,20,12,18,20; 18,18,14,22,18.",
+      "questionText": "Find what you consider the best estimate of the true angle, explaining your reasoning."
+    },
+    {
+      "id": "maths-2011-hl-p2-project-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        59,
+        71
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "Twenty-five students each measure an angle of elevation with a home-made clinometer. The readings in degrees are 24,20,22,15,70; 15,16,15,16,15; 18,16,21,21,73; 16,20,12,18,20; 18,18,14,22,18. First choose and justify an estimate of the true angle.",
+      "questionText": "A teacher claims that half of students measure the angle correctly to within two degrees. Treat these students as a simple random sample and your part (i) estimate as the true angle. Is there sufficient evidence to reject the claim at the 5% significance level?"
+    }
+  ],
+  "selectionReview": [
+    {
+      "scope": "whole paper / Q6",
+      "reason": "All mandatory questions retained. Both complete Q6A and Q6B proof alternatives get a 25-mark card; candidate answers one, so offered marks 325 versus candidate marks 300."
+    },
+    {
+      "scope": "Q2(a), Q3(a), Q4(b), Q6A, Q7(a)(i,v), Q8(b)(i)",
+      "reason": "Open examples, construction or alternative methods, universal transversal wording, graph choice and justified best estimate do not form finite answer pools. Q3(a) requires matching all four specified equations, not choosing four tasks from five; no combinatorial expansion. All required proof headings remain one response with three scales."
+    }
+  ],
+  "selectionDecisions": {
+    "2:e5830086050477e0": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory questions retained. Both complete Q6A and Q6B proof alternatives get a 25-mark card; candidate answers one, so offered marks 325 versus candidate marks 300."
+    },
+    "2:bbadecac6bac5d73": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory questions retained. Both complete Q6A and Q6B proof alternatives get a 25-mark card; candidate answers one, so offered marks 325 versus candidate marks 300."
+    },
+    "3:13518d47600b237e": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory questions retained. Both complete Q6A and Q6B proof alternatives get a 25-mark card; candidate answers one, so offered marks 325 versus candidate marks 300."
+    },
+    "6:c6e23c490598771b": {
+      "classification": "open-method-choice",
+      "reason": "Open examples, construction or alternative methods, universal transversal wording, graph choice and justified best estimate do not form finite answer pools. Q3(a) requires matching all four specified equations, not choosing four tasks from five; no combinatorial expansion. All required proof headings remain one response with three scales."
+    },
+    "8:8339d11b29349ccd": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory questions retained. Both complete Q6A and Q6B proof alternatives get a 25-mark card; candidate answers one, so offered marks 325 versus candidate marks 300."
+    }
+  }
+}

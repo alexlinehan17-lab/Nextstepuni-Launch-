@@ -1,0 +1,663 @@
+{
+  "reviewedAt": "2026-10-30",
+  "finding": "All 33 open asks are later parts of 29 existing shared-scale cards. Independently re-inspected original affected paper/scheme pages. No new cards or exclusions required.",
+  "before": {
+    "covered": 3535,
+    "leaves": 3568,
+    "open": 33
+  },
+  "after": {
+    "covered": 3568,
+    "leaves": 3568,
+    "open": 0,
+    "orphans": 0,
+    "unparsed": 0,
+    "excluded": 0
+  },
+  "scope": "Shared HL/OL census; Foundation is covered by the separate 111-paper review inventory.",
+  "groupedCards": [
+    {
+      "id": "maths-2026-hl-p1-q5-b-i-ii",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        19,
+        20
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p1.json",
+      "paperSha256": "02988125c4daf498f8a0b90f5b51c53df2b7ce1b89a64c64f84028435c668820",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p1-q8-e-i-ii",
+      "printedParts": [
+        "Q8(e)(i)",
+        "Q8(e)(ii)"
+      ],
+      "scale": "5D",
+      "totalMarks": 5,
+      "sourcePages": [
+        22
+      ],
+      "schemePages": [
+        32
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p1.json",
+      "paperSha256": "02988125c4daf498f8a0b90f5b51c53df2b7ce1b89a64c64f84028435c668820",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p1-q9-a-b",
+      "printedParts": [
+        "Q9(a)",
+        "Q9(b)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        24
+      ],
+      "schemePages": [
+        34
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p1.json",
+      "paperSha256": "02988125c4daf498f8a0b90f5b51c53df2b7ce1b89a64c64f84028435c668820",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p1-q10-a-i-ii",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        27
+      ],
+      "schemePages": [
+        38
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p1.json",
+      "paperSha256": "02988125c4daf498f8a0b90f5b51c53df2b7ce1b89a64c64f84028435c668820",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p1-q10-b-i-ii",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        28
+      ],
+      "schemePages": [
+        39
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p1.json",
+      "paperSha256": "02988125c4daf498f8a0b90f5b51c53df2b7ce1b89a64c64f84028435c668820",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p1-q10-f-i-ii",
+      "printedParts": [
+        "Q10(f)(i)",
+        "Q10(f)(ii)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        30
+      ],
+      "schemePages": [
+        43
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p1.json",
+      "paperSha256": "02988125c4daf498f8a0b90f5b51c53df2b7ce1b89a64c64f84028435c668820",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p2-q2-b-i-ii",
+      "printedParts": [
+        "Q2(b)(i)",
+        "Q2(b)(ii)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        48
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p2.json",
+      "paperSha256": "15dc629eb04c0b751e218b5dfa8324eab688fc75ae4d804cc414dfb241b90dba",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p2-q5-b-i-ii",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        54
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p2.json",
+      "paperSha256": "15dc629eb04c0b751e218b5dfa8324eab688fc75ae4d804cc414dfb241b90dba",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p2-q5-b-iii-iv",
+      "printedParts": [
+        "Q5(b)(iii)",
+        "Q5(b)(iv)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        12,
+        13
+      ],
+      "schemePages": [
+        55
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p2.json",
+      "paperSha256": "15dc629eb04c0b751e218b5dfa8324eab688fc75ae4d804cc414dfb241b90dba",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p2-q8-b-i-ii-iii",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)",
+        "Q8(b)(iii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        20,
+        21
+      ],
+      "schemePages": [
+        64
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p2.json",
+      "paperSha256": "15dc629eb04c0b751e218b5dfa8324eab688fc75ae4d804cc414dfb241b90dba",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-hl-p2-q10-b-i-ii",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        29
+      ],
+      "schemePages": [
+        74
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-higher-p2.json",
+      "paperSha256": "15dc629eb04c0b751e218b5dfa8324eab688fc75ae4d804cc414dfb241b90dba",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701"
+    },
+    {
+      "id": "maths-2026-ol-p1-q1-b-i-ii",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        7
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q3-c-i-ii",
+      "printedParts": [
+        "Q3(c)(i)",
+        "Q3(c)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        9
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q4-c-i-ii-iii",
+      "printedParts": [
+        "Q4(c)(i)",
+        "Q4(c)(ii)",
+        "Q4(c)(iii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        10
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q5-a-ii-iii",
+      "printedParts": [
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        11
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q6-a-i-ii",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        12
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q7-a-i-ii",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        16
+      ],
+      "schemePages": [
+        13
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-a-i-ii",
+      "printedParts": [
+        "Q8(a)(i)",
+        "Q8(a)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        20
+      ],
+      "schemePages": [
+        16
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-b-ii-iii",
+      "printedParts": [
+        "Q8(b)(ii)",
+        "Q8(b)(iii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        22
+      ],
+      "schemePages": [
+        18
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q9-a-i-ii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        23
+      ],
+      "schemePages": [
+        19
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-a-i-ii",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        26
+      ],
+      "schemePages": [
+        21
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-a-iv-v",
+      "printedParts": [
+        "Q10(a)(iv)",
+        "Q10(a)(v)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        26,
+        27
+      ],
+      "schemePages": [
+        21
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-b-c",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)",
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        28
+      ],
+      "schemePages": [
+        22
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p1.json",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p2-q2-a-ii-iii",
+      "printedParts": [
+        "Q2(a)(ii)",
+        "Q2(a)(iii)"
+      ],
+      "scale": "5D",
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        25
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p2.json",
+      "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p2-q3-a-i-ii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "scale": "15D",
+      "totalMarks": 15,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        26
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p2.json",
+      "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p2-q3-b-ii-iii",
+      "printedParts": [
+        "Q3(b)(ii)",
+        "Q3(b)(iii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        26
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p2.json",
+      "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p2-q5-a-ii-iii",
+      "printedParts": [
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        12
+      ],
+      "schemePages": [
+        28
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p2.json",
+      "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p2-q6-a-ii-iii",
+      "printedParts": [
+        "Q6(a)(ii)",
+        "Q6(a)(iii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        29
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p2.json",
+      "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    },
+    {
+      "id": "maths-2026-ol-p2-q7-c-i-ii",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)"
+      ],
+      "scale": "10D",
+      "totalMarks": 10,
+      "sourcePages": [
+        18
+      ],
+      "schemePages": [
+        31
+      ],
+      "reviewFile": "scripts/markbank/mathematics/reviews/2026-ordinary-p2.json",
+      "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a"
+    }
+  ],
+  "visualEvidence": {
+    "2026-higher-p1-paper-1.png": "2c3ab663f7a15fdfdcc7026fd8b1a2646551196e07903105bd0b75aad7358cf7",
+    "2026-higher-p1-paper-2.png": "31fcda9d090affbf547e287bd4add11d3e105428e14f946cfeb134f93f947dfe",
+    "2026-higher-p1-scheme-1.png": "3f6d34a128d00fa949051b3b3161d33e34eb0f2930064dde1156d89c89a01820",
+    "2026-higher-p1-scheme-2.png": "0614bdc57b5fbfd68d5835a077af03485741149d6ee7a3672b5756da1a785744",
+    "2026-higher-p2-paper-1.png": "418ba21f630d69a588d410d3e3c3f61a69e6293d0a6e8ad6642709c6527bf760",
+    "2026-higher-p2-paper-2.png": "3a65bc172af0ec6cac2de5d808ebdb7a59405354d00866fca114236690ee2e09",
+    "2026-higher-p2-scheme-1.png": "067418c96fdb53df0213d2ef49aa09b29fa8500b5ff650c2b1bfd0e73123129f",
+    "2026-higher-p2-scheme-2.png": "372671d0b571a7dfdfbb20ffb526e8920f7236f2f67363a8ebf1d45d79485fb4",
+    "2026-ordinary-p1-paper-1.png": "f6cc680716a4973d27d7a6f58d214e8610800eb429444753627142e0c55a9197",
+    "2026-ordinary-p1-paper-2.png": "733df7b896704a78f287d80d4e00f9317b0d08b96cd8961b4b6422db08b417b9",
+    "2026-ordinary-p1-paper-3.png": "d0986314ecb3b88f9ddf0154526a537e8a909ad2fc2e9514ed86f8c1afdadb79",
+    "2026-ordinary-p1-scheme-1.png": "e5c16f948b1c2b7c7287d3738c800f7714a6d51d44625e8b7aba244413282adc",
+    "2026-ordinary-p1-scheme-2.png": "a88576da575b70c3efd6d8e20c3469d7bdd261e8752ae63e8c1f053d5d6b2312",
+    "2026-ordinary-p1-scheme-3.png": "4c7ccd979f57123968e5cf6da47c0906c22ce9d0b5cd56b56537d83b16f4bfe7",
+    "2026-ordinary-p2-paper-1.png": "f6d3f0feef07cfb769047c2cc8ca1d178bc4cf9081363ae92e3b6cb62bcf30fb",
+    "2026-ordinary-p2-paper-2.png": "9c4f2ffb8d4978fefd3a8977444ead72ee59dd45b597cec1f0669be8039bff2f",
+    "2026-ordinary-p2-scheme-1.png": "496b53e2a677210ef72efe0ef2c51e1e6141f95dc6161d06be6fae95c8412f72",
+    "2026-ordinary-p2-scheme-2.png": "f2d77e9156ebf94c40ecc5c50c0468a58c88f3f09111de7bcc735a68777be022",
+    "flags-1.png": "df4e2892dd31c86653de2c2c1a401c4f71fb0263e9b6e468707cbdc61883b1cb",
+    "flags-2.png": "544eedad4a9954843f6502b53a0c8bb18a9abafd552c0515ec622e803bc50ec7",
+    "flags-3.png": "0644fb335ada115f19b39a3e9d1609034e7dd2f0cee03e550d262085b3770c61",
+    "flags-4.png": "c7a428385992f354e1d708d6297a2816c96c12413e49c77127bdd9651e1045bf"
+  },
+  "parserTests": 31,
+  "crossSubjectCitationComparison": "Only 29 Mathematics citations changed; zero changes to other subjects and zero newly unparsed citations.",
+  "irishSources": [
+    {
+      "url": "https://www.examinations.ie/archive/markingschemes/2014/LC003ALP000IV.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.examinations.ie/archive/markingschemes/2014/LC003GLP000IV.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.examinations.ie/archive/markingschemes/2014/LC003BLP000IV.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.examinations.ie/archive/markingschemes/2020/LC003BLP000IV.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "choiceGroupsToReconcileWithCurrentLaunchPolicy": [
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2010-higher-p1.json",
+      "group": "q3-c-ii-fifth-roots",
+      "variants": 4
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2011-higher-p1-project.json",
+      "group": "q4-a-observations",
+      "variants": 10
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2011-higher-p1-project.json",
+      "group": "q4-b-observations",
+      "variants": 30
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2012-foundation-p2.json",
+      "group": "q4b-c-triangle-pair",
+      "variants": 6
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2012-higher-p1-project.json",
+      "group": "q9-b-i-altitude",
+      "variants": 5
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-foundation-p1-project.json",
+      "group": "q10-b-c",
+      "variants": 5
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-foundation-p1.json",
+      "group": "q9-b-c",
+      "variants": 5
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-foundation-p2-project.json",
+      "group": "q3-a-menu",
+      "variants": 60
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-foundation-p2-project.json",
+      "group": "q8b-c-parallel-pair",
+      "variants": 2
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-foundation-p2.json",
+      "group": "q3-a-menu",
+      "variants": 60
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-foundation-p2.json",
+      "group": "q8b-c-parallel-pair",
+      "variants": 2
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-ordinary-p1-project.json",
+      "group": "q3-b-ii",
+      "variants": 21
+    },
+    {
+      "reviewFile": "scripts/markbank/mathematics/reviews/2013-ordinary-p1.json",
+      "group": "q3-b-ii",
+      "variants": 21
+    }
+  ]
+}

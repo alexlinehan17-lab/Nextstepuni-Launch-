@@ -1,0 +1,1599 @@
+{
+  "status": "complete locally; 51 tasks, 52 scoring components; all 102 question/solution crops visually inspected",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003BLP200EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+  ],
+  "generalNotesPages": [
+    42
+  ],
+  "candidateMarks": 300,
+  "offeredMarks": 400,
+  "printedQuestionMarks": {
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50
+  },
+  "selectionReview": [
+    {
+      "pages": [
+        1
+      ],
+      "wording": "Attempt SIX QUESTIONS (50 marks each).",
+      "classification": "whole-examination-selection",
+      "reason": "Retain all eight offered questions for practice: 400 offered marks, 300 candidate marks."
+    },
+    {
+      "pages": [
+        4,
+        7
+      ],
+      "wording": "Find the value of x and the value of y; the two axes of symmetry",
+      "classification": "required-complete-response",
+      "reason": "Required paired outputs are complete tasks. Q3(a) retains two five-mark scoring components; Q8(a)(ii) is one five-mark response."
+    },
+    {
+      "pages": [
+        5
+      ],
+      "wording": "a choice of 3 tops, 4 skirts and 2 jackets; either group A or group O",
+      "classification": "scenario-data",
+      "reason": "These are data and probability events within required calculations, not a finite choice of answers."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "Draw any triangle",
+      "classification": "open-choice",
+      "reason": "The candidate may draw any triangle. This is an open construction, not a finite set of alternative routes."
+    }
+  ],
+  "notes": [
+    "All eight original paper pages and scheme PDF pages 40–64 independently visually inspected, including the blank pages and Irish bonus page.",
+    "All eight questions retained. Q3(a) keeps its two required angles as one prompt with separate five-mark components; Q4(a) keeps both plots and midpoint within its single fifteen-mark tariff.",
+    "All diagrams, tables, original solutions and task-specific deduction notes retained.",
+    "Q6(b) and Q6(c) repeat-error rules and the 17/20 group award remain explicit on all eight cards.",
+    "Q7 estimates are readings of the smooth original curve; do not replace them with straight-line interpolation.",
+    "No finite answer-choice pool needs expansion. Required symmetry axes and open triangle construction remain complete responses."
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        43
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the area of the field.",
+      "stem": "A rectangular field is 150 m long and 90 m wide."
+    },
+    {
+      "suffix": "1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        43
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the length of the perimeter of the field.",
+      "stem": "A rectangular field is 150 m long and 90 m wide."
+    },
+    {
+      "suffix": "1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 30,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        44
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 30,
+              "attempt": 12
+            }
+          ]
+        }
+      ],
+      "questionText": "Use Simpson’s rule to calculate the area of the side of the fence in m².",
+      "stem": "The fence heights are 1·7, 1·3, 1·6, 2·5, 2·4, 2·2 and 2·3 metres at intervals of 1·8 metre along its base."
+    },
+    {
+      "suffix": "1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        44
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "One tin of paint covers 5·4 square metres. How many tins does the owner use to paint this side of the fence?",
+      "stem": "The fence heights are 1·7, 1·3, 1·6, 2·5, 2·4, 2·2 and 2·3 metres at intervals of 1·8 metre along its base."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the volume of the rectangular block.",
+      "stem": "The block is 70 cm long, 30 cm wide and 8 cm high."
+    },
+    {
+      "suffix": "2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the area of the circle, correct to the nearest cm².",
+      "stem": "A circle of radius 8 cm is inscribed in a square."
+    },
+    {
+      "suffix": "2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        45
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the area of the square.",
+      "stem": "A circle of radius 8 cm is inscribed in a square."
+    },
+    {
+      "suffix": "2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        46
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the volume of water in the container, in terms of π.",
+      "stem": "A full inverted conical container has diameter 9 cm and height 12 cm."
+    },
+    {
+      "suffix": "2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        46
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find h, the depth of water in the cylindrical can.",
+      "stem": "Water from a full inverted cone, diameter 9 cm and height 12 cm, is poured into a cylindrical can of diameter 6 cm."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        47
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "angle-x",
+              "label": "Angle x",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "angle-y",
+              "label": "Angle y",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of x and the value of y.",
+      "stem": "The original triangle shows interior angles 46°, 80° and x°, with exterior angle y°.",
+      "markingNote": "Both angles are required in this single printed task. Mark x and y independently, five marks each with an attempt floor of two."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of p.",
+      "stem": "The diagram shows a parallelogram with an exterior angle of 70° and a 38° angle at the diagonal."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of q.",
+      "stem": "The diagram shows a parallelogram with an exterior angle of 70° and a 38° angle at the diagonal."
+    },
+    {
+      "suffix": "3-b-iii",
+      "printedParts": [
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of r.",
+      "stem": "The diagram shows a parallelogram with an exterior angle of 70° and a 38° angle at the diagonal."
+    },
+    {
+      "suffix": "3-b-iv",
+      "printedParts": [
+        "Q3(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of s.",
+      "stem": "The diagram shows a parallelogram with an exterior angle of 70° and a 38° angle at the diagonal."
+    },
+    {
+      "suffix": "3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |∠OBC|.",
+      "stem": "The circle has centre O and diameter [AB]. |∠AOC| = 104° and |OC| = 6 cm."
+    },
+    {
+      "suffix": "3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |∠CAO|.",
+      "stem": "The circle has centre O and diameter [AB]. |∠AOC| = 104° and |OC| = 6 cm."
+    },
+    {
+      "suffix": "3-c-iii",
+      "printedParts": [
+        "Q3(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        48
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |AB|.",
+      "stem": "The circle has centre O and diameter [AB]. |∠AOC| = 104° and |OC| = 6 cm."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        49
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "questionText": "Plot A(4, 1) and B(−2, 3) on graph paper. Show the midpoint of [AB] on your diagram.",
+      "markingNote": "Both plotted points and the midpoint belong to this single fifteen-mark task."
+    },
+    {
+      "suffix": "4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        50
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the length of [PQ].",
+      "stem": "P(2, 4) and Q(−3, 1) are two points."
+    },
+    {
+      "suffix": "4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        50
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the slope of PQ.",
+      "stem": "P(2, 4) and Q(−3, 1) are two points."
+    },
+    {
+      "suffix": "4-b-iii",
+      "printedParts": [
+        "Q4(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        50
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the equation of the line PQ.",
+      "stem": "P(2, 4) and Q(−3, 1) are two points."
+    },
+    {
+      "suffix": "4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        51
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that R lies on the line l.",
+      "stem": "The line l has equation 2y = 3x + 1. R has coordinates (1, 2)."
+    },
+    {
+      "suffix": "4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        51
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write down the slope of l.",
+      "stem": "The line l has equation 2y = 3x + 1. R has coordinates (1, 2)."
+    },
+    {
+      "suffix": "4-c-iii",
+      "printedParts": [
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        51
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the equation of the line k through (4, −1), parallel to l.",
+      "stem": "The line l has equation 2y = 3x + 1. R has coordinates (1, 2)."
+    },
+    {
+      "suffix": "5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        52
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Write tan A as a fraction.",
+      "stem": "The right-angled triangle has sides 3, 4 and 5 cm, with angles A and B as labelled."
+    },
+    {
+      "suffix": "5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        52
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Write cos B as a fraction.",
+      "stem": "The right-angled triangle has sides 3, 4 and 5 cm, with angles A and B as labelled."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        53
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the height h of the wall, correct to one decimal place.",
+      "stem": "A ladder leans against the top of a wall at 71° to the ground. Its foot is 2 m from the wall."
+    },
+    {
+      "suffix": "5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        54
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the length of side d.",
+      "stem": "The right-angled triangle has hypotenuse 10, one shorter side 6 and remaining side d; A is labelled in the diagram."
+    },
+    {
+      "suffix": "5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        54
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the measure of angle A, to the nearest degree.",
+      "stem": "The right-angled triangle has hypotenuse 10, one shorter side 6 and remaining side d; A is labelled in the diagram."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "How many different outfits could Lucy wear?",
+      "stem": "Lucy wears one top, one skirt and one jacket. She has 3 tops, 4 skirts and 2 jackets."
+    },
+    {
+      "suffix": "6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the person belongs to group A.",
+      "stem": "Of 95 blood donors, 18 have group A, 27 group B and 50 group O. One donor is selected at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the person belongs to group B.",
+      "stem": "Of 95 blood donors, 18 have group A, 27 group B and 50 group O. One donor is selected at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the person belongs to either group A or group O.",
+      "stem": "Of 95 blood donors, 18 have group A, 27 group B and 50 group O. One donor is selected at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "6-b-iv",
+      "printedParts": [
+        "Q6(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the person does not belong to group O.",
+      "stem": "Of 95 blood donors, 18 have group A, 27 group B and 50 group O. One donor is selected at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the student is a boy.",
+      "stem": "Each of 80 students studies one language. Boys: French 12, Spanish 20, German 5. Girls: French 16, Spanish 24, German 3. One student is chosen at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the student studies French.",
+      "stem": "Each of 80 students studies one language. Boys: French 12, Spanish 20, German 5. Girls: French 16, Spanish 24, German 3. One student is chosen at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "6-c-iii",
+      "printedParts": [
+        "Q6(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the student is a girl studying Spanish.",
+      "stem": "Each of 80 students studies one language. Boys: French 12, Spanish 20, German 5. Girls: French 16, Spanish 24, German 3. One student is chosen at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "6-c-iv",
+      "printedParts": [
+        "Q6(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        56
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the probability that the student does not study German.",
+      "stem": "Each of 80 students studies one language. Boys: French 12, Spanish 20, German 5. Girls: French 16, Spanish 24, German 3. One student is chosen at random.",
+      "markingNote": "When marking the original four-part question together, penalise the same sample-space error only once. The scheme awards 17/20 for all four correct event counts with division omitted, or their reciprocals. That is a group award, not an extra award on this five-mark card."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        57
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "The mean of 1, 5, x, 8, 9 is 6. Find x."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        58
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Copy and complete the cumulative frequency table.",
+      "stem": "A survey of 50 teenagers records mobile-phone use: 0–10 minutes: 7; 10–20: 8; 20–30: 22; 30–40: 10; 40–60: 3. Each interval includes its lower bound but excludes its upper bound."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        58
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw the cumulative frequency curve.",
+      "stem": "A survey of 50 teenagers records mobile-phone use: 0–10 minutes: 7; 10–20: 8; 20–30: 22; 30–40: 10; 40–60: 3. Each interval includes its lower bound but excludes its upper bound."
+    },
+    {
+      "suffix": "7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        58
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your cumulative frequency curve to estimate the median number of minutes spent on the phone.",
+      "stem": "A survey of 50 teenagers records mobile-phone use: 0–10 minutes: 7; 10–20: 8; 20–30: 22; 30–40: 10; 40–60: 3. Each interval includes its lower bound but excludes its upper bound.",
+      "markingNote": "The scheme’s estimates are read from its smooth cumulative-frequency curve. The count above 35 minutes is 50 minus the reading below 35; the printed curve gives 50 − 44 = 6."
+    },
+    {
+      "suffix": "7-b-iv",
+      "printedParts": [
+        "Q7(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        58
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use your cumulative frequency curve to estimate how many teenagers spent more than 35 minutes on the phone.",
+      "stem": "A survey of 50 teenagers records mobile-phone use: 0–10 minutes: 7; 10–20: 8; 20–30: 22; 30–40: 10; 40–60: 3. Each interval includes its lower bound but excludes its upper bound.",
+      "markingNote": "The scheme’s estimates are read from its smooth cumulative-frequency curve. The count above 35 minutes is 50 minus the reading below 35; the printed curve gives 50 − 44 = 6."
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        59
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the standard deviation of 5, 7, 8, 12, correct to two decimal places."
+    },
+    {
+      "suffix": "8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        60
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw a rectangle in your answer book."
+    },
+    {
+      "suffix": "8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        60
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw the two axes of symmetry of the rectangle.",
+      "stem": "Use a rectangle drawn in your answer book.",
+      "markingNote": "Both axes are required within this five-mark response."
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        61
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the scale factor of the enlargement.",
+      "stem": "Triangle OHK is the image of triangle OAB under enlargement with centre O. |OA| = 8 cm, |AH| = 12 cm and |HK| = 11 cm."
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        61
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |AB|.",
+      "stem": "Triangle OHK is the image of triangle OAB under enlargement with centre O. |OA| = 8 cm, |AH| = 12 cm and |HK| = 11 cm."
+    },
+    {
+      "suffix": "8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        61
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "The area of OAB is 18 cm². Find the area of OHK.",
+      "stem": "Triangle OHK is the image of triangle OAB under enlargement with centre O. |OA| = 8 cm, |AH| = 12 cm and |HK| = 11 cm."
+    },
+    {
+      "suffix": "8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        62
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw any triangle in your answer book."
+    },
+    {
+      "suffix": "8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        62
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "solution",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "questionText": "Construct the circumscribed circle of this triangle.",
+      "stem": "Use any triangle drawn in your answer book.",
+      "markingNote": "Use perpendicular bisectors to locate the circumcentre, then draw a circle through all three vertices. The printed construction and all deductions are retained."
+    }
+  ],
+  "paperSha256": "6e759cfaeaca42b317ec1bd38d68c6153a316cf6b52b27525ff567026f9ea0c5",
+  "schemeSha256": "f3339a79a05a6c1a6146d970ed58173dfbaa3550dab2a6522dc43fb93b89d134"
+}

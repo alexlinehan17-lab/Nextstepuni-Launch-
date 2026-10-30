@@ -1,0 +1,1037 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2018,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003BLP100EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "882170d5b1bf391b70dab57bb6855df407b281e852ead7f936bc1329ab86f71b",
+  "schemeSha256": "cfc0df10990f34fef1264c6ff6b51ace7e6b6e6c9e8adf478109848cc1050804",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and all 20 scheme PDF pages; detailed allocations checked against the summary on PDF page 7 (printed page 4).",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7,
+    8
+  ],
+  "sourceNotes": [
+    "All ten questions are required. Candidate and offered totals are both 300 marks.",
+    "28 independently marked units. The numerous grouped scales retain every printed component, including all three television prices, all three journey calculations and calculator estimation/explanation/evaluation.",
+    "Paper Trail indexes this as Paper One, LC003BLP100EV.pdf. The matching scheme is LC003BLP000EV.pdf. All source page references are PDF positions, not the scheme’s differently numbered printed pages.",
+    "Q1(b) scheme calculation contains a printed 3(15) typo; its worked result 90/15 = 6 agrees with the paper’s three children aged 5. The original scheme is retained.",
+    "Q5 paper labels the first shop Shop 1; the scheme calls it Shop A. The paper wording is retained, and all three prices and the separate cheapest-shop response are included.",
+    "Q8(a) locus construction requires physical measurements and provides the printed-page ruler.",
+    "2018 20D uses 0,5,11,16,20; 15D uses 0,4,7,9,15; 10D uses 0,2,5,8,10."
+  ],
+  "cards": [
+    {
+      "id": "maths-2018-fl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The line plot below shows the ages (in years) of a group of children.",
+      "questionText": "Find the total number of children in the group.",
+      "solutionQuotes": [
+        "Indication of counting"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The line plot below shows the ages (in years) of a group of children.",
+      "questionText": "Find the mean (average) age of the children in the group.",
+      "solutionQuotes": [
+        "= 90/15",
+        "= 6"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The line plot below shows the ages (in years) of a group of children.",
+      "questionText": "Write down the range of the ages of the children in the group.",
+      "solutionQuotes": [
+        "12 – 2 = 10"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The line plot below shows the ages (in years) of a group of children.",
+      "questionText": "What percentage of the children in the group are aged 7 years or older?",
+      "solutionQuotes": [
+        "Percentage formulated correctly"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q2-a-i-ii-iii",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)",
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Figure 1 below shows a rectangular tile which is 8 cm long and 3 cm wide.",
+      "questionText": "(i) Find the area of the tile. (ii) Eight of these tiles are joined to make a rectangular shape, as shown in Figure 2. Find the value of L and the value of W. Hence find the area of the rectangular shape that includes the tiles. (iii) Hence, or otherwise, find the area of the white rectangle in the centre of Figure 2.",
+      "solutionQuotes": [
+        "3 × 8 = 24 cm2",
+        "L = 24 cm",
+        "W = 14 cm",
+        "336 – 8(24) = 144 cm2"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Ruairí needs to bring at least 1000 cm³ of water from a well near his home to his school science class. Ruairí has a cylindrical container with the measurements shown in the diagram below: radius 5 cm and height 15 cm.",
+      "questionText": "Will this container be large enough? Justify your answer by finding the volume of the container.",
+      "solutionQuotes": [
+        "= 1178·09 cm3",
+        "Answer: Yes. 1178 > 1000"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q3-a-i-ii-iii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)",
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Two identical fair spinners are divided into three equal sections as shown. The sections are coloured Black (B), Grey (G) and White (W). The spinners are spun at the same time and the colours in which the pointers end up are noted.",
+      "questionText": "(i) Complete the table below to list all the possible outcomes. One is already done and G, B means Grey on the first spinner and Black on the second spinner. (ii) Find the probability of getting the same colour on each spinner. (iii) Find the probability that the colour on one of the spinners is black and the colour on the other spinner is white.",
+      "solutionQuotes": [
+        "Black, Black",
+        "Grey, Grey",
+        "White, White"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q3-b-i-ii",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Gráinne is choosing her activities for Transition Year. She must choose 1 activity from each of the groups below. For example, she might choose Swimming, Bridge, and Art. Group 1: Swimming, Basketball, Hurling. Group 2: Chess, Bridge. Group 3: Creative Writing, Drama, Art.",
+      "questionText": "(i) How many different combinations of activities does Gráinne have? (ii) Because of an injury, Gráinne cannot take part in basketball or hurling. How many different combinations of activities does she have now?",
+      "solutionQuotes": [
+        "3× 2 ×3 = 18",
+        "1× 2× 3 = 6"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q4-a-i-ii",
+      "printedParts": [
+        "Q4(a)(i)",
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "",
+      "questionText": "(i) Fiachra invests €10 000 for 3 years at 3·25% per annum compound interest. How much does his investment amount to at the end of the 3 years? Give your answer correct to the nearest cent. (ii) Caoimhe also invests €10 000 for 3 years. At the end of the 3 years she gets a one-off interest payment of 10%. Who gets the most return on his/her investment and what is the difference between their final amounts?",
+      "solutionQuotes": [
+        "= €11007·03",
+        "Fiachra.",
+        "Difference: 11007·03 – 11000 = €7·03"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Amanda exchanges £150 sterling for euro. The exchange rate is €1 = £0·916.",
+      "questionText": "How much does she get? Give your answer correct to the nearest cent.",
+      "solutionQuotes": [
+        "= €163·76"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q5-a-b-c",
+      "printedParts": [
+        "Q5(a)",
+        "Q5(b)",
+        "Q5(c)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        11,
+        16,
+        20
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jamil is planning to buy a new television. The model he has chosen can be bought in three different shops.",
+      "questionText": "Find how much the television would cost Jamil in each of the three shops. (a) Shop 1: He would pay a deposit of €200 plus €25 per month for 12 months. (b) Shop B: The usual price is €600. There is a sale with a reduction of 20% off the usual price. (c) Shop C: Jamil would pay €22 per month for 2 years.",
+      "solutionQuotes": [
+        "200 + 12(25) = €500",
+        "600-120 = €480",
+        "24(22) = €528"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q5-d",
+      "printedParts": [
+        "Q5(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jamil is planning to buy a new television. The model he has chosen can be bought in three different shops. Shop 1: a deposit of €200 plus €25 per month for 12 months. Shop B: the usual price is €600 with a sale reduction of 20%. Shop C: €22 per month for 2 years.",
+      "questionText": "From which shop should Jamil buy the television if he wants to spend the least amount of money overall?",
+      "solutionQuotes": [
+        "Shop B"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q6-a-i-ii",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Sinead creates a pattern of numbers using the instructions in the table below. The first number, 10, is filled in for you: multiply by 3, then add 12 to your answer, giving 10 × 3, 30 + 12, outcome 42. The other starting numbers are 11 and 12.",
+      "questionText": "(i) Fill in the missing numbers in the table. (ii) Sinead picks a new starting number and gets an outcome of 60. Find the number she picked.",
+      "solutionQuotes": [
+        "60 – 12 = 48",
+        "48 ÷ 3 = 16"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A number of 4-legged stools and 3-legged stools has a total of 17 legs between them.",
+      "questionText": "How many 4-legged stools are there?",
+      "solutionQuotes": [
+        "8 + 9 = 17",
+        "There are 2 4-legged stools"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "Write the following numbers in order, starting with the smallest: 73%, 3/4, 0·7, 4/5.",
+      "solutionQuotes": [
+        "All entries in a single number format"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q7-b-i-ii",
+      "printedParts": [
+        "Q7(b)(i)",
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "The population of India is estimated to be about 1 343 000 000 people.",
+      "questionText": "(i) Write this number in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ. (ii) Mary is taking a trip to India and is texting a friend about the population of that country. Write the number 1 343 000 000 in words.",
+      "solutionQuotes": [
+        "1·343 ×109",
+        "One billion three hundred and forty three million"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q7-c-i-ii",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "There are 60 people at a party. The ratio of adults to children is 1:5.",
+      "questionText": "(i) How many adults are at the party? (ii) 8 more adults join the party and none of the children leave. What is the ratio of adults to children now?",
+      "solutionQuotes": [
+        "Now 10 + 8 =18 adults and 50 children.",
+        "Ratio: 18 : 50 or 9 : 25"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Sully’s back garden is in the shape of the rectangle ABCD shown in the scaled diagram below. In the diagram 1 cm represents 1 m. [AD] is the back wall of the house. There is a tree (T) near the end of the garden, as shown in the diagram. Sully wants to put up a bird table in the garden. The table has to be at least 3 m from the house and at least 4 m from the tree.",
+      "questionText": "Using your ruler and compass, draw and shade in the region of the garden where the bird table could be placed.",
+      "solutionQuotes": [
+        "Line 3 cm from house drawn",
+        "Any line and correct circle (radius = 4, centre T) drawn"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2018-fl-p1-q8-b-i-ii-iii",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)",
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A square board with a circular disc drawn on it is shown in the diagram below. The square has a side length of 20 cm.",
+      "questionText": "(i) Find, in cm², the area of the square. (ii) Find the area of the disc. Give your answer correct to the nearest cm². (iii) Write the area of the disc as a percentage of the total area of the square.",
+      "solutionQuotes": [
+        "20 × 20 = 400 cm2",
+        "πr2 = π(10)2 = 314 cm2",
+        "= 78·5%"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The triangle PQR is shown in the diagram below, where P = (3, 4), Q = (11, 4), and R = (3, 10).",
+      "questionText": "Draw the triangle ABC on the same diagram, where A = (1·5, 2), B = (5·5, 2), and C = (1·5, 5). Note: the point C is already marked in for you.",
+      "solutionQuotes": [
+        "A and B correctly plotted but no triangle drawn"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q9-a-ii-iii-iv",
+      "printedParts": [
+        "Q9(a)(ii)",
+        "Q9(a)(iii)",
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        11,
+        16,
+        20
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The triangle PQR is shown in the diagram below, where P = (3, 4), Q = (11, 4), and R = (3, 10). Triangle ABC has vertices A = (1·5, 2), B = (5·5, 2), and C = (1·5, 5).",
+      "questionText": "(ii) The triangle PQR is the image of the triangle ABC by an enlargement of scale factor k and using (0, 0) as the centre of the enlargement. Use the lengths of [PR] and [AC] to find k, the scale factor of the enlargement. (iii) The triangle PQR has a right angle at P. Use the Theorem of Pythagoras to find the length of [QR]. (iv) Use your answers to part (a)(ii) and part (a)(iii) to find the length of [BC].",
+      "solutionQuotes": [
+        "k = 6 ÷ 3 = 2",
+        "10 ÷ 2 = 5"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q9-a-v",
+      "printedParts": [
+        "Q9(a)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The triangle PQR is shown in the diagram below, where P = (3, 4), Q = (11, 4), and R = (3, 10). Triangle ABC has vertices A = (1·5, 2), B = (5·5, 2), and C = (1·5, 5). The triangle PQR is an enlargement of triangle ABC with centre (0, 0). The area of the triangle ABC is 6 square units.",
+      "questionText": "Using this, or otherwise, find the area of the triangle PQR.",
+      "solutionQuotes": [
+        "6 × (2)2 = 24 units2"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q9-b-i-ii-iii",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)",
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Frankie had to do the following calculation: (251·32 + 39·14)/10·3.",
+      "questionText": "(i) To begin, he makes an estimate of what the answer should be. By writing each number correct to the nearest whole number, use the boxes below to find the number that Frankie gets as his estimate. (ii) Next Frankie uses his calculator and gets 255·12 for his answer. Because of his estimate, he knows this answer is not correct. Frankie gets his incorrect answer of 255·12 by keying 251·32 + 39·14 ÷ 10·3 = into the calculator. Explain why this does not give the correct answer to the calculation. (iii) Use your calculator to find the actual value of (251·32 + 39·14)/10·3.",
+      "solutionQuotes": [
+        "Should have used brackets on the first two numbers",
+        "28·2"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q10-a-i-ii-iii",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)",
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        11,
+        16,
+        20
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Brian had to drive from his house to Cork for a job interview. He drove at an average speed of 80 km per hour for the first ½ hour.",
+      "questionText": "(i) Find the distance, in km, driven by Brian in the first ½ hour. (ii) It then took him 1½ hours to drive the remaining 117 km to Cork. At what average speed, in km/h, did Brian drive the remaining 117 km? (iii) Using the total distance travelled and the total time taken, what was Brian’s average speed for the journey from his house to Cork?",
+      "solutionQuotes": [
+        "Total distance: 40 + 117 = 157",
+        "½ + 1½ = 2 hours",
+        "= 78·5 km/h"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week.",
+      "questionText": "Use the graph to find Brian’s total weekly wage if he were to sell 3 cars in a particular week on Contract A.",
+      "solutionQuotes": [
+        "€700"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q10-b-ii-iii",
+      "printedParts": [
+        "Q10(b)(ii)",
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        9,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week.",
+      "questionText": "(ii) Table 2 below shows the total wages for Contract B for up to 6 cars sold per week. Complete the table. (iii) Use the values from Table 2 to plot the graph of the total weekly wages for Contract B on the grid on page 18.",
+      "solutionQuotes": [
+        "5 plots correct from correct table"
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q10-b-iv",
+      "printedParts": [
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week. The second graph plots the values from Table 2, showing total weekly wages for Contract B for up to 6 cars sold per week.",
+      "questionText": "Write down the point of intersection of the two graphs. Explain what each number means in the context of the question.",
+      "solutionQuotes": [
+        "(4, 800)",
+        "4 cars sold per week will give a weekly wage of €800 on both contracts."
+      ]
+    },
+    {
+      "id": "maths-2018-fl-p1-q10-b-v",
+      "printedParts": [
+        "Q10(b)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week. Brian thinks he can sell an average of 5 cars per week.",
+      "questionText": "Which contract do you think he should choose? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Contract A: He would get€ 900 /week on contract A but €850/week on contract B"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        4,
+        15
+      ],
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits another mathematical method for the same required area result. It does not define alternative prompts."
+    },
+    {
+      "pages": [
+        6
+      ],
+      "classification": "probability-sample-space",
+      "reason": "One of the two spinners identifies a probability event; all three printed parts are required under one scale."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "classification": "mathematical-counting",
+      "reason": "Gráinne chooses from a finite activities menu inside the scenario. The candidate must count the full and restricted combinations, not select practice prompts."
+    },
+    {
+      "pages": [
+        9,
+        18,
+        19
+      ],
+      "classification": "answer-selection",
+      "reason": "The chosen television model and Brian’s choice of contract are scenario data or mathematical answers. All shop prices and all separately marked contract tasks remain required."
+    },
+    {
+      "pages": [
+        10
+      ],
+      "classification": "algebraic-unknown",
+      "reason": "Sinead picks a starting number, which the candidate must calculate. This is an unknown mathematical value, not a prompt choice."
+    }
+  ],
+  "selectionDecisions": {
+    "2:07f7c42ffd22193f": {
+      "classification": "all-questions-required",
+      "reason": "The paper requires all ten questions, including all eight Section A questions. Every published scale unit is kept."
+    },
+    "3:045cef317290f4be": {
+      "classification": "all-questions-required",
+      "reason": "The paper requires all ten questions, including all eight Section A questions. Every published scale unit is kept."
+    },
+    "4:f8dda9806d205602": {
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits another mathematical method for the same required area result. It does not define alternative prompts."
+    },
+    "6:e1e90d934897ca6d": {
+      "classification": "probability-sample-space",
+      "reason": "One of the two spinners identifies a probability event; all three printed parts are required under one scale."
+    },
+    "7:9439722b41dd07ed": {
+      "classification": "mathematical-counting",
+      "reason": "Gráinne chooses from a finite activities menu inside the scenario. The candidate must count the full and restricted combinations, not select practice prompts."
+    },
+    "7:0554668389f170da": {
+      "classification": "mathematical-counting",
+      "reason": "Gráinne chooses from a finite activities menu inside the scenario. The candidate must count the full and restricted combinations, not select practice prompts."
+    },
+    "7:becfc4dd275c202d": {
+      "classification": "mathematical-counting",
+      "reason": "Gráinne chooses from a finite activities menu inside the scenario. The candidate must count the full and restricted combinations, not select practice prompts."
+    },
+    "15:766ae60b099d16e7": {
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits another mathematical method for the same required area result. It does not define alternative prompts."
+    },
+    "18:0e4757bf8be4a358": {
+      "classification": "answer-selection",
+      "reason": "The chosen television model and Brian’s choice of contract are scenario data or mathematical answers. All shop prices and all separately marked contract tasks remain required."
+    },
+    "19:e9fef74f8b243935": {
+      "classification": "answer-selection",
+      "reason": "The chosen television model and Brian’s choice of contract are scenario data or mathematical answers. All shop prices and all separately marked contract tasks remain required."
+    }
+  }
+}

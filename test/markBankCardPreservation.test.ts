@@ -1,3 +1,7 @@
+import mathsLaunchBaseline from '../scripts/markbank/mathematics/launch-baseline.json';
+import mathsLaunchReview from '../scripts/markbank/mathematics/launch-reconciliation.json';
+import mathsChoicePolicy from '../scripts/markbank/mathematics/choice-policy.json';
+import { CARDS as MATHS_FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
 import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS } from './fixtures/construction2026Reviewed';
 import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_IDS } from './fixtures/construction2025Reviewed';
@@ -1259,8 +1263,16 @@ const isBiologyAdded = (id: string) => {
 const biologyAdditionIds = new Set([...BIO_HIGHER, ...BIO_ORDINARY]
   .map(card => card.id).filter(isBiologyAdded));
 const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('bio-'));
+const mathsFrozen = new Set([...mathsLaunchBaseline.higher, ...mathsLaunchBaseline.ordinary]);
+const mathsNewAliases = new Set([...Object.keys(mathsLaunchReview.choiceAliases), ...Object.keys(mathsLaunchReview.identityMigrations).filter(id => id !== 'maths-2021-ol-p2-q6')]);
+const mathsNet = MATHS_HIGHER.length + MATHS_ORDINARY.length - mathsFrozen.size;
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('maths:')) {
+    const published = new Set(ids);
+    return mathsLaunchBaseline[name.endsWith(':higher') ? 'higher' : 'ordinary']
+      .filter(id => published.has(id) || published.has(CARD_ID_ALIASES[id]));
+  }
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('economics:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
@@ -1312,7 +1324,8 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   return ids;
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
-  name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
+  name.startsWith('maths:') ? cards.filter(card => mathsFrozen.has(card.id)).length
+    : name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
     : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
     : name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)).length
     : name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)).length
@@ -1423,7 +1436,7 @@ describe('Mark Bank card preservation', () => {
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
         || name.startsWith('geography:') || name.startsWith('english:') || name.startsWith('biology:')
-        || name.startsWith('chemistry:')
+        || name.startsWith('chemistry:') || name.startsWith('maths:')
         ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
@@ -1437,7 +1450,7 @@ describe('Mark Bank card preservation', () => {
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length + mathsNet);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1725,7 +1738,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
-    const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
+    const liveIds = new Set([...decks.flatMap(([, cards]) => cards.map(card => card.id)), ...MATHS_FOUNDATION.map(card => card.id)]);
     /* 54 earlier aliases + 68 Art per-option cards (2026-10-12) + 36 Economics consolidations from the 2021-2025
      * physical review, each a frozen half of a jointly priced answer (or a
      * duplicate route) withdrawn onto the card that now carries its progress:
@@ -1787,7 +1800,7 @@ describe('Mark Bank card preservation', () => {
     expect(chemistryWithdrawn).toHaveLength(54);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length);
+      + chemistryAuditAliases.length + mathsNewAliases.size);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1844,7 +1857,7 @@ describe('Mark Bank card preservation', () => {
     // Chemistry counts its live frozen cards (876 less the 34 shipped ids it
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768 + 18);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).filter(id => !mathsNewAliases.has(id) || mathsFrozen.has(id)).length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
@@ -2083,5 +2096,24 @@ describe('Mark Bank card preservation', () => {
     for (const id of routes) expect(CARD_ID_ALIASES[id]).toBe('art-2025-ol-q4-a');
     expect(idHash(frozen.filter(id => !routes.has(id))))
       .toBe('e5403f6e685e0133ad94ef321f97a77f96127c2ee3570395e00662d7719ddbd5');
+  });
+});
+
+
+describe('Maths launch integration preservation', () => {
+  const live = [...MATHS_HIGHER, ...MATHS_ORDINARY, ...MATHS_FOUNDATION];
+  const ids = new Set(live.map(c => c.id));
+  it('retains every launched identity or its directly reviewed successor', () => {
+    for (const id of mathsFrozen) expect(ids.has(id) || ids.has(CARD_ID_ALIASES[id]), id).toBe(true);
+    expect(mathsFrozen.size).toBe(854);
+  });
+  it('consolidates only the 218 recorded choice duplicates and preserves their progress', () => {
+    expect(Object.keys(mathsLaunchReview.choiceAliases)).toHaveLength(218);
+    for (const g of mathsChoicePolicy.groups) {
+      expect(g.legacyIds.filter(id => ids.has(id))).toEqual([g.canonicalId]);
+      for (const id of g.legacyIds.filter(id => id !== g.canonicalId)) expect(CARD_ID_ALIASES[id]).toBe(g.canonicalId);
+    }
+    for (const id of mathsNewAliases) expect(ids.has(CARD_ID_ALIASES[id]), id).toBe(true);
+    expect(MATHS_FOUNDATION).toHaveLength(1137);
   });
 });

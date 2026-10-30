@@ -365,6 +365,16 @@ INLINE_NOT_MARKERS[('chemistry', 2010, 'ol')] = ['(i) C2H2,', '(ii) CH3COOH.']
 # text is read as words of what is open (the ask, or else the lead-in), as CROSSREF's are.
 # Gated to the sitting: no other paper's reading may move because of it.
 PROSE_MARKER_BLOCKS = {('chemistry', 2010, 'ol'): ['(i) to identify the salts by means of flame tests,']}
+# Mathematics only. The SEC's maths font maps its italic letters onto Syriac
+# and Arabic Supplement code points (U+0700-U+077F: "f(x)" arrives as
+# "\u0742(\u0754)"), so a part that opens with a function -- 2017 HL Paper 1
+# Q3(b) "(b) f(x) = ln(3x\u00b2 + 2) and g(x) = x + 5" -- failed the lookahead
+# above, stayed welded to the tail of (a), and its card shipped as an orphan.
+# Gated to maths so every other subject's census is unchanged by
+# construction: no other subject's papers set their letters in that font.
+MATHS_INLINE_MARKER = re.compile(
+    r'\s(?=\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff\u0700-\u077f])')
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -400,7 +410,7 @@ LINE_OPENING_MARKER_ANY_SPACE = re.compile(
     r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:\s*$|\s+(?=[a-z]))')
 
 
-def _split_own_line_markers(raw, any_space=False):
+def _split_own_line_markers(raw, any_space=False, maths=False):
     """Flatten a block, but let a marker printed ALONE on its line start one.
 
     A block is flattened to a single line, and INLINE_MARKER -- which finds the
@@ -441,6 +451,12 @@ def _split_own_line_markers(raw, any_space=False):
         # sits mid-line and is rightly left alone -- into a phantom second
         # part. The census's own roman-gap flag caught it: a lone (ii).
         if cur and m and not alone and last and tok == _next_marker(last):
+            split = True
+        # Older Maths papers also use ordinary italic ASCII: 2015 OL P1
+        # Q3(c) starts "g(x) is a function" on its own printed line, in the
+        # same PDF block as (b). Require both a line-leading marker and
+        # function notation; do not relax the general lowercase prose rule.
+        if maths and cur and m and re.match(r'^\([a-z]+\)\s+[a-z]\(', line):
             split = True
         if split:
             out.append(' '.join(' '.join(x.split()) for x in cur))
@@ -669,11 +685,35 @@ def strip_set_lines(page):
     return out
 
 
-def _blocks(path, subject=None, strip_pages=(), any_space=False):
+def _deduplicated_lines(page):
+    """Read an overlapping-fragment text layer in physical line order.
+
+    The 2011 Higher Project Paper 1 jewellery page repeats glyphs where
+    narrow PDF text fragments overlap. Its blocks mix distant lines, hiding
+    Q5 and attaching its parts to Q4. Keep each printed glyph once at its
+    original baseline; do not rewrite the question or use the card ledger.
+    """
+    rows = {}
+    for block in page.get_text('rawdict')['blocks']:
+        for line in block.get('lines', []):
+            for span in line['spans']:
+                for char in span['chars']:
+                    x, y = char['origin']
+                    row = rows.setdefault(round(y, 1), [])
+                    if not any(c['c'] == char['c'] and abs(c['origin'][0] - x) < .5
+                               for c in row):
+                        row.append(char)
+    return [''.join(c['c'] for c in sorted(row, key=lambda c: c['origin'][0])).strip()
+            for _, row in sorted(rows.items())]
+
+
+def _blocks(path, subject=None, strip_pages=(), any_space=False, maths=False):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order.
     A strip-set page (STRIP_SET_PAGES) gives one block per rebuilt line."""
     with pymupdf.open(path) as doc:
-        pages = [[(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n]))]
+        pages = [[(0, 0, 0, 0, line) for line in _deduplicated_lines(doc[n])]
+                 if maths and os.path.basename(path) == '2011-hl-130-paper.pdf' and n == 7 else
+                 [(0, y, 0, y, t, i, 0) for i, (y, t) in enumerate(strip_set_lines(doc[n]))]
                  if n + 1 in strip_pages else
                  sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]
@@ -681,7 +721,7 @@ def _blocks(path, subject=None, strip_pages=(), any_space=False):
         pages = [_join_gutter_markers(p) for p in pages]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4], any_space):
+            for text in _split_own_line_markers(_repair(b[4], subject) if subject else b[4], any_space, maths=maths):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
@@ -854,7 +894,8 @@ class Paper:
                 or_next = False
             if index in contents:
                 continue
-            if index in false_heads:
+            if index in false_heads and not (self.subject == 'maths' and index > 0
+                                             and re.search(r'\d\s*:\s*$', blocks[index - 1])):
                 # The fraction denominator above. Strip it and read what
                 # follows as the prose it is -- it is the tail of the part
                 # that is open, not a new question.
@@ -899,8 +940,41 @@ class Paper:
                 joined_q = int(sp.group(1) + sp.group(2))
                 if q < joined_q <= q + 3 and not q < int(sp.group(1)) <= q + 3:
                     text = f'Question {joined_q}' + text[sp.end():]
+            # 2010 Project Maths prints Q9A/Q9B after Q8. Recognise the
+            # numeric boundary here so their parts cannot overwrite Q8.
+            # census_merged separately rereads the untouched source blocks
+            # to retain both complete alternatives under their printed IDs.
+            if self.subject == 'maths' and self.year == 2010 \
+                    and self.level in {'hl', 'ol'} and self.component == '230':
+                text = re.sub(r'^Question\s+9[AB]\b', 'Question 9', text)
             m = QHEAD.match(text)
-            if not m and q is not None:
+            # Older Maths papers put the first "1." in its own block.
+            # Require the opening (a) immediately after it: a cover-page
+            # instruction or a number in a diagram must not start the paper.
+            if self.subject == 'maths' and q is None and text == '1.' \
+                    and index + 1 < len(blocks) \
+                    and _leading(blocks[index + 1])[0] == 'a':
+                m = QHEAD.match(text + ' X')
+            # A ratio can wrap after its colon. In 2011 OL Paper 1 Q1(a),
+            # "4 : 3. Aoife gets €56." becomes two blocks, and accepting the
+            # "3." as a head skips all of Q2 and misfiles Q1's remaining parts.
+            # The preceding numeric ratio operand distinguishes this from a
+            # rubric ending in a colon before a genuine question head.
+            ratio_tail = (self.subject == 'maths' and m and m.group(2)
+                          and index > 0
+                          and re.search(r'\d\s*:\s*$', blocks[index - 1]))
+            if ratio_tail:
+                rest = text[m.end():].strip()
+                if _leading(rest)[:2] != (None, None):
+                    # The next part may share this block with the ratio's
+                    # final operand (2017 HL Paper 2 Q3). Keep both pieces.
+                    tail = (self.parts.get(open_key) if open_key
+                            else self.stems.get((q, letter)))
+                    if tail:
+                        tail[-1] = f'{tail[-1].rstrip()} {m.group(2)}.'
+                        text = rest
+                m = None
+            if not m and q is not None and not ratio_tail:
                 # Not every head is printed as "N." followed by a word. 2025 OL
                 # Physics sets "12." in a block of its own with part (a) in the
                 # next block, its Question 13 drops the full stop, and 2022 OL
@@ -960,6 +1034,7 @@ class Paper:
                 if m.group(1) and found == 1 and q is not None and not self.parts:
                     q, dot_heads = None, 0
                     self.stems = {}
+                rest = text[m.end():].strip()
                 if q is not None and not (q < found <= q + 3) and not variant:
                     # A question's OWN number reprinted above one of its parts.
                     # Two printings do this and neither is a new question: the
@@ -976,6 +1051,22 @@ class Paper:
                     tail = text[m.end():].strip()
                     if found == abs(q) and _leading(tail)[:2] != (None, None):
                         text = tail
+                    # Mathematics only: the number is the wrapped END of the
+                    # previous line, not a head. 2017 HL Paper 2 Q3 prints
+                    # "|AG| : |GP| = 2 : 1." with the "1." wrapped onto the
+                    # line that opens "(a) Find the co-ordinates of P.", so the
+                    # block reads "1. (a) Find ...". The backwards guard
+                    # rightly refused Question 1, but the whole block then fell
+                    # into the stem and Q3(a) was never keyed. Give the number
+                    # back to the line it ends and read the part. Gated to
+                    # maths, so no other subject's census can move.
+                    if self.subject == 'maths' and m.group(2) and rest \
+                            and _leading(rest)[:2] != (None, None):
+                        tail = (self.parts.get(open_key) if open_key
+                                else self.stems.get((q, letter)))
+                        if tail and re.search(r'[:=]$', tail[-1].rstrip()):
+                            tail[-1] = f'{tail[-1].rstrip()} {m.group(2)}.'
+                            text = rest
                 else:
                     if m.group(2):
                         dot_heads += 1
@@ -983,7 +1074,6 @@ class Paper:
                     or_pending = or_part = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
-                    rest = text[m.end():].strip()
                     if rest and _leading(rest)[:2] != (None, None):
                         # "7. (a) Define an acid ..." — the head is welded to its
                         # own first part, and filing that as stimulus prose loses
@@ -1178,16 +1268,39 @@ class Paper:
         split_at = '\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])' + ''.join(
             '|\\s+(?=' + re.escape(h) + ')'
             for h in DRAWN_RULE_HEADS.get((self.subject, self.year, self.level), []))
+        if self.subject == 'maths':
+            split_at = '\n|' + split_at
         welded = WELDED_HEADS.get((self.subject, self.year, self.level), [])
         carry = ''
+        inline = MATHS_INLINE_MARKER if self.subject == 'maths' else INLINE_MARKER
         for path in self.files:
             blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None,
                              strip_pages=STRIP_SET_PAGES.get((self.subject, self.year, self.level), {})
                              .get(os.path.basename(path), ()),
-                             any_space=self.subject in ANY_SPACE_MARKER_SUBJECTS)
+                             any_space=self.subject in ANY_SPACE_MARKER_SUBJECTS, maths=self.subject == 'maths')
             if welded:
                 blocks = [piece for block in blocks for piece in _unweld(block, welded)]
             for block in blocks:
+              # 2011 OL Paper 2 welds the standalone Q9 head to the end of
+              # Q8(c)(ii). Preserve the boundary before processing parts.
+              # A terminal full stop before a final dotted integer rules out
+              # decimal operands and the wrapped 2 : 1. vector ratio.
+              if self.subject == 'maths':
+                  block = re.sub(r'(?<=[.!?])\s+(?=\d{1,2}\.$)', '\n', block)
+                  # 2010 HL Paper 1 puts Q4's head after the out-of-order
+                  # fifth-root formula in Q3(c)(ii). The preceding equation
+                  # has no terminal full stop, so the general rule above
+                  # cannot see the independently inspected page-3 boundary.
+                  if (self.year, self.level, self.component) == (2010, 'hl', '100') \
+                          and 'Choose one of the roots w,' in block:
+                      block = re.sub(r'\s+(?=4\.\s+\(a\))', '\n', block)
+                  # The companion Paper 2 has four heads welded behind
+                  # out-of-order formula fragments or an unpunctuated rubric.
+                  # These are the visually checked numbered (a) boundaries,
+                  # not numeric operands inside the preceding equations.
+                  if (self.year, self.level, self.component) == (2010, 'hl', '200'):
+                      block = re.sub(r'\s+(?=[2468]\.\s+\(a\))', '\n', block)
+
               if block in FIGURE_BLOCKS.get((self.subject, self.year, self.level), ()):
                   continue           # (2012 HL Chemistry: a figure's numbered equations; see FIGURE_BLOCKS.)
               if self.subject in RULED_HEADS:
@@ -1205,7 +1318,7 @@ class Paper:
                 if head:
                     prefix, text = head.group(1) + ' ', text[head.end():]
                 marker = (INLINE_MARKER_STATES if self.subject in STATE_SYMBOL_SUBJECTS
-                          else INLINE_MARKER)
+                          else MATHS_INLINE_MARKER if self.subject == 'maths' else INLINE_MARKER)
                 pieces = [p.strip() for p in marker.split(text) if p.strip()]
                 # (2016 HL Chemistry Q6(e): a sentence's romans; see INLINE_NOT_MARKERS.)
                 for joined in INLINE_NOT_MARKERS.get((self.subject, self.year, self.level), []):

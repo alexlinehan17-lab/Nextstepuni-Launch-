@@ -649,8 +649,10 @@ def continuity_flags(parts, texts, subject=None, continuous=False):
         # sets Q10 twice joined by OR; the alternative files under -10) and sit
         # outside the run, and so does 'ABQ', Business's headless compulsory
         # question.
-        qs = sorted({k[-3] for k in keys if k[:-3] == pre
-                     and isinstance(k[-3], int) and k[-3] > 0})
+        question_keys = {k[-3] for k in keys if k[:-3] == pre
+                         and ((isinstance(k[-3], int) and k[-3] > 0)
+                              or re.fullmatch(r'\d+[A-Z]', str(k[-3])))}
+        qs = sorted({int(re.match(r'\d+', str(q)).group()) for q in question_keys})
         # The interior-gap and leading-question checks, ONCE. They were run
         # twice — a copy inside `if scoped:` without the runs-on exemption
         # below and a copy outside it that ignored `scoped` altogether — which
@@ -1061,6 +1063,45 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
+def lettered_alternatives(P, parts, texts):
+    """Read printed numbered alternatives directly from paper blocks.
+
+    The forward-only main reader merges 6A/6B into Q6. Keep their printed
+    addresses and restart part numbering for each alternative. This helper
+    is enabled only for independently reviewed layout families below.
+    """
+    found, current, open_key = {}, None, None
+    for text in P._all_blocks():
+        heading = re.search(r'(?:^|\. )Question\s+(\d{1,2}[A-Z])\b', text)
+        if heading:
+            current = heading.group(1)
+            open_key = (current, None, None)
+            found.setdefault(open_key, [])
+            continue
+        if PP.QHEAD.match(text) or re.match(r'^(?:Section|SECTION)\s', text):
+            current, open_key = None, None
+        if current is None or PP.FURNITURE.match(text) or text == 'OR':
+            continue
+        letter, roman, rest = PP._leading(text)
+        if letter or roman:
+            open_key = (current, letter or (open_key[1] if open_key else None), roman)
+            found.setdefault(open_key, []).append(rest)
+        elif open_key:
+            found[open_key].append(text)
+    # Retain a whole proof when the alternative has no lettered parts.
+    # For lettered alternatives, its bare heading is shared setup, not an ask.
+    lettered = {k[0] for k in found if k[1] is not None}
+    found = {k: lines for k, lines in found.items()
+             if any(line.strip() for line in lines) and not (k[0] in lettered and k[1:] == (None, None))}
+    numbers = {int(re.match(r'\d+', k[0]).group()) for k in found}
+    parts = {k for k in parts if k[0] not in numbers}
+    texts = {k: v for k, v in texts.items() if k[0] not in numbers}
+    for key, lines in found.items():
+        parts.add(key)
+        texts[key] = PP.unligature(' '.join(lines))
+    return parts, texts
+
+
 def census_merged(subject, year, level, component=None):
     P = PP.Paper(subject, year, level, component=component)
     P._adopt_unlettered()
@@ -1071,6 +1112,18 @@ def census_merged(subject, year, level, component=None):
     if subject == 'construction-studies':
         from construction_census_repairs import apply_construction_census_repairs
         parts, texts = apply_construction_census_repairs(year, level, parts, texts)
+
+
+    if subject == 'maths' and (year, level, component) in {(2010, 'ol', '230'), (2010, 'hl', '230'), (2011, 'ol', '230'), (2011, 'hl', '230'), (2012, 'ol', '230'), (2012, 'hl', '230'), (2012, 'hl', '200'), (2012, 'ol', '200'), (2013, 'ol', '200'), (2013, 'hl', '200'), (2013, 'ol', '230'), (2013, 'hl', '230'), (2014, 'hl', '230'), (2014, 'ol', '230')}:
+        parts, texts = lettered_alternatives(P, parts, texts)
+    if subject == 'maths' and (year, level, component) in {(2013, 'ol', '200'), (2013, 'ol', '230')}:
+        # Original page 15: (i) follows (h) at the lettered margin. It is the
+        # separate scatter-plot task, not a roman subpart of the ratio task.
+        old, new = (7, 'h', 'i'), (7, 'i', None)
+        assert old in parts and 'scatter plot' in texts[old]
+        parts.remove(old)
+        parts.add(new)
+        texts[new] = texts.pop(old)
     return parts, texts, P.files
 
 
@@ -3445,7 +3498,13 @@ def census_subject(subject):
     papers = []
     for year, level, comps in sittings(subject):
         if cfg['mode'] == 'papers':
-            units = [(cfg['papers'].get(c, c), c) for c in comps if c]
+            labels = cfg['papers']
+            if subject == 'maths' and year == 2014:
+                # The 2014 Project Maths edition is the sole numbered paper.
+                # Earlier years contain parallel legacy/project editions; do
+                # not collapse those distinct sources onto a shared key.
+                labels = {**labels, '130': 'Paper 1', '230': 'Paper 2'}
+            units = [(labels.get(c, c), c) for c in comps if c]
         elif cfg.get('components'):
             # A subject whose sitting is two SEPARATE papers a candidate
             # chooses between, rather than two booklets of one paper. Each is

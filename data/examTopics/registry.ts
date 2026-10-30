@@ -51,6 +51,7 @@ import japaneseAuditJson from './japanese.json';
 import japaneseRuntimeJson from './japanese-runtime.json';
 import linkModulesAuditJson from './link-modules.json';
 import mathematicsQuestionRuntimeJson from './mathematics-question-runtime.json';
+import mathematicsReviewedQuestionRuntimeJson from './mathematics-reviewed-question-runtime.json';
 import mathematicsRuntimeJson from './mathematics-runtime.json';
 import musicRuntimeJson from './music-runtime.json';
 import physicalEducationQuestionRuntimeJson from './physical-education-question-runtime.json';
@@ -3600,6 +3601,7 @@ registerBrowserQuestionRuntime(geographyQuestionRuntime);
 registerBrowserQuestionRuntime(geographyReviewedQuestionRuntime);
 registerBrowserQuestionRuntime(homeEconomicsQuestionRuntime);
 registerBrowserQuestionRuntime(mathematicsQuestionRuntime);
+registerBrowserQuestionRuntime(mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime);
 registerBrowserQuestionRuntime(physicalEducationQuestionRuntime);
 
 // Exact SEC-task evidence supplements the preserved historical reference map.

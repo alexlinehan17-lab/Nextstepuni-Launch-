@@ -1,0 +1,1553 @@
+{
+  "status": "complete locally; all 48 tasks published and all 96 question/solution images visually inspected",
+  "reviewedAt": "2026-10-29",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "paperSha256": "d74bdb89dff343ca00bf9c7ba01137502567e0e61ab8a39be6b5cdad36e89aa3",
+  "schemeSha256": "e85db588977d87d8b54f14af6f0cc92754bfa7c01417284023937d2e08903cbd",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "offeredMarks": 400,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "Q1": 50,
+    "Q2": 50,
+    "Q3": 50,
+    "Q4": 50,
+    "Q5": 50,
+    "Q6": 50,
+    "Q7": 50,
+    "Q8": 50
+  },
+  "selectionReview": [
+    "Attempt SIX QUESTIONS is whole-examination selection; every task in all eight questions is retained, without duplicating six-question exam bundles.",
+    "All roots, solutions, terms, graph read-offs, real parameters and proof steps are mandatory. No finite task-internal choose-one pool.",
+    "Published alternative methods are accepted ways to solve one task, not extra practice questions or marks."
+  ],
+  "markingRules": [
+    "Mathematical errors/omissions lose 3; numerical slips and permitted misreadings lose 1.",
+    "Relevant work earns at least the specified attempt award; worthless work earns 0. No marks strictly between zero and the attempt floor.",
+    "Detailed task rules override general deductions: Q2(c)(ii) and the two Q4(c) steps have explicit award lists.",
+    "Accept the best of two or more attempts unless specified otherwise; the same error in a section is penalised once.",
+    "Full original solutions, alternatives, source inconsistencies and task-specific caps remain beside the score controls."
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        6
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Journey length",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "When Katie had travelled 140 km, she had completed 4/9 of her journey. Find the length of her journey.",
+      "markingNote": "The scheme accepts a correct answer without work. Retain kilometres in the answer."
+    },
+    {
+      "suffix": "1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        7
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Cost of units",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Calculate the total cost of the units used.",
+      "stem": "Robert’s electricity bill: day readings 35 087 and 34 537 at €0.1506 per unit; night readings 17 213 and 16 853 at €0.0745 per unit."
+    },
+    {
+      "suffix": "1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        7
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Total before VAT",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Amount with VAT",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Robert also pays a standing charge of €24.89 and a levy of €5.46. VAT at 13.5% is charged on all amounts. Calculate his total electricity bill.",
+      "stem": "Robert’s electricity bill: day readings 35 087 and 34 537 at €0.1506 per unit; night readings 17 213 and 16 853 at €0.0745 per unit.",
+      "markingNote": "Carry forward your answer to part (i). Omitting the standing charge or levy is a permitted misreading (−1)."
+    },
+    {
+      "suffix": "1-c-i",
+      "printedParts": [
+        "Q1(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        8
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Cost",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "step-2",
+              "label": "Percentage profit",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write his total profit as a percentage of his cost, correct to one decimal place.",
+      "stem": "A retailer bought 40 toys at €24.75 each. He sold 10 at €33.88 each and the remaining 30 at a reduced price. Total sales were €1270."
+    },
+    {
+      "suffix": "1-c-ii",
+      "printedParts": [
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        8
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Reduced selling price",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the reduced selling price of each of the remaining 30 toys.",
+      "stem": "A retailer bought 40 toys at €24.75 each. He sold 10 at €33.88 each and the remaining 30 at a reduced price. Total sales were €1270."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        9
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Simultaneous equations",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve x − y = 4 and 2x + y = 5 for x and y.",
+      "markingNote": "Fully correct answers without work earn 15; one correct answer without work earns 12. Apply a mathematical-error deduction only once when finding the first variable."
+    },
+    {
+      "suffix": "2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        10
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Division",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Show, by division, that x − 1 is a factor of f(x).",
+      "stem": "f(x) = x³ + 2x² − x − 2.",
+      "markingNote": "Long, synthetic and array division are accepted. Showing f(1) = 0 without division incurs the specified 3-mark deduction."
+    },
+    {
+      "suffix": "2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        10
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Other factors",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Hence, or otherwise, find the other factors of f(x).",
+      "stem": "f(x) = x³ + 2x² − x − 2. Part (i) asks for division by x − 1.",
+      "markingNote": "Carry forward your quadratic if not oversimplified; a linear quotient earns at most the attempt mark. No retrospective marking."
+    },
+    {
+      "suffix": "2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        11
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Identity",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that h(x) = −2x[g(x)].",
+      "stem": "g(x) = 1/x² − 1/(2x) and h(x) = 1 − 2/x, where x ≠ 0 and x is real."
+    },
+    {
+      "suffix": "2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        11
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solutions",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the values of x for which g(x) = h(x).",
+      "stem": "g(x) = 1/x² − 1/(2x) and h(x) = 1 − 2/x, where x ≠ 0 and x is real.",
+      "markingNote": "This task has an explicit award list: 10 for a fully correct answer, 3 for work of some merit, otherwise 0. If the equation becomes linear, at most 3."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        12
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of x",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Given (t − 1)x = 2 − 5t, find x when t = 7.",
+      "markingNote": "A correct answer without work earns only the 5-mark attempt award."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        13
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "First variable",
+              "maximum": 10,
+              "attempt": 3
+            },
+            {
+              "id": "step-2",
+              "label": "Second variable",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Solve for x and y.",
+      "stem": "x − y + 5 = 0 and x² + y² = 17.",
+      "markingNote": "Correct answers by trial and error verified in one equation earn 2; in both, 3 + 2. Correct graphical solutions earn 3 + 2. Both algebraic elimination routes are shown."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        14
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Lesser value",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Which solution gives the lesser value of x − 2y? Write down this value.",
+      "stem": "x − y + 5 = 0 and x² + y² = 17. Part (i) asks for both solutions.",
+      "markingNote": "Carry forward your answers if not oversimplified. If only one solution was found, this task earns at most 2."
+    },
+    {
+      "suffix": "3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Simplification",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Simplify (√x − 2/√x)(√x + 2/√x), where x > 0 and x is real.",
+      "markingNote": "A correct answer without work earns the attempt mark. All three printed algebraic methods are retained."
+    },
+    {
+      "suffix": "3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        15
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Positive solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Hence solve (√x − 2/√x)(√x + 2/√x) = 3, where x > 0.",
+      "stem": "Part (i) asks you to simplify (√x − 2/√x)(√x + 2/√x), where x > 0 and x is real.",
+      "markingNote": "Carry forward the earlier expression; if linear, at most attempt marks. Isolate the positive solution."
+    },
+    {
+      "suffix": "3-c-iii",
+      "printedParts": [
+        "Q3(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        16
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Verification",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Verify your solution.",
+      "stem": "The equation is (√x − 2/√x)(√x + 2/√x) = 3 with x > 0; part (ii) asks for its solution.",
+      "markingNote": "Verify in the original expression. Verification only in a simplified expression earns at most the attempt mark. The printed carry-forward guidance is preserved."
+    },
+    {
+      "suffix": "4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        17
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of u",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the value of u.",
+      "stem": "6 − 4i + 3u = 5i, where i² = −1."
+    },
+    {
+      "suffix": "4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        17
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Argand diagram",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Plot u on an Argand diagram.",
+      "stem": "6 − 4i + 3u = 5i, where i² = −1. Part (i) asks for u.",
+      "markingNote": "Carry forward your answer. Interchanged real and imaginary axes are accepted if consistent."
+    },
+    {
+      "suffix": "4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Modulus",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find |z|.",
+      "stem": "z = 1 + i."
+    },
+    {
+      "suffix": "4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Conjugate identity",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show that z² + (conjugate of z)² = 0.",
+      "stem": "z = 1 + i."
+    },
+    {
+      "suffix": "4-b-iii",
+      "printedParts": [
+        "Q4(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        18
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Verification",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Verify (1 + 5i)/(3 + 2i) = z.",
+      "stem": "z = 1 + i.",
+      "markingNote": "Both the conjugate-division and cross-multiplication methods are shown."
+    },
+    {
+      "suffix": "4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        19
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Substitution",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                7,
+                10
+              ]
+            },
+            {
+              "id": "step-2",
+              "label": "Finish",
+              "maximum": 10,
+              "attempt": 3,
+              "permittedMarks": [
+                0,
+                3,
+                10
+              ]
+            }
+          ]
+        }
+      ],
+      "questionText": "Let w = 3 + 4i. Find real k and t such that w² − (k + t)w + t = 0.",
+      "markingNote": "Substitution: 10 fully correct, 7 partly correct, 3 attempt, or 0. Finish: 10 fully correct, 3 work of some merit, or 0. These explicit lists replace general deduction choices."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Sum of terms",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "The nth term of a sequence is Tₙ = (2n − 1)/(n + 1). Find the sum of its second and third terms.",
+      "markingNote": "Correct sum without work accepted. Correct second and third terms without the sum earn 12."
+    },
+    {
+      "suffix": "5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        21,
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Third term",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find T₃, the third term.",
+      "stem": "The first term of an arithmetic series is 2 and the eighth term is 30.",
+      "markingNote": "Correct answer without work accepted. The common difference 4 without work earns 7."
+    },
+    {
+      "suffix": "5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        21,
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Sum of ten terms",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find S₁₀, the sum of the first ten terms.",
+      "stem": "The first term of an arithmetic series is 2 and the eighth term is 30.",
+      "markingNote": "Both the formula and direct-list methods are retained. Correct answer without work accepted; no retrospective marking."
+    },
+    {
+      "suffix": "5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        22,
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Previous term",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Write an expression in n for Tₙ₋₁, the (n − 1)st term.",
+      "stem": "The nth term of a series is Tₙ = 2/(3^(n + 1)).",
+      "markingNote": "The task heading gives Att 2, while the Attempts paragraph says 3. This source inconsistency is explicitly labelled beside the original; the heading’s 2-mark floor is retained and a 3-mark award remains selectable."
+    },
+    {
+      "suffix": "5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        22,
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Geometric proof",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Prove the series is geometric.",
+      "stem": "The nth term of a series is Tₙ = 2/(3^(n + 1)). Part (i) asks for Tₙ₋₁.",
+      "markingNote": "Prove the ratio is constant; proof using specific terms only loses 3 marks."
+    },
+    {
+      "suffix": "5-c-iii",
+      "printedParts": [
+        "Q5(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        23,
+        20
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Sum of nine terms",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show S₉ = 1/3 − 1/3¹⁰, where S₉ is the sum of the first nine terms.",
+      "stem": "The nth term of a series is Tₙ = 2/(3^(n + 1)).",
+      "markingNote": "A correct list proof is accepted; no retrospective marking."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        24
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Values of a and b",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Let h(x) = ax + b for real x. Given h(0) = 3 and h(2) = −5, find a and b.",
+      "markingNote": "Correct answers without work accepted. Finding only one variable incurs a 3-mark deduction."
+    },
+    {
+      "suffix": "6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        25
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Roots from graph",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Use the graph to estimate the values of x for which f(x) = 0.",
+      "stem": "The original diagram shows part of the graph of a function f.",
+      "markingNote": "Each incorrect or missing value loses 3; tolerance ±0.2. Graphical answers must be clearly identified. Merely copying the graph earns 0."
+    },
+    {
+      "suffix": "6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        25
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Stationary points from graph",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use the graph to estimate the values of x for which f′(x) = 0.",
+      "stem": "The original diagram shows part of the graph of a function f.",
+      "markingNote": "Each incorrect or missing value loses 3; tolerance ±0.2. Keep the distinction between f and its derivative."
+    },
+    {
+      "suffix": "6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        25
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Decreasing interval",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Use the graph to estimate the range of x for which f′(x) < 0.",
+      "stem": "The original diagram shows part of the graph of a function f. Part (ii) asks where f′(x) = 0.",
+      "markingNote": "Carry forward the turning-point values if part (ii) earned at least attempt marks. Including equality in the inequality loses 1."
+    },
+    {
+      "suffix": "6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        26
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find g′(x), the derivative of g(x).",
+      "stem": "g(x) = x(3x² − 9), where x is real."
+    },
+    {
+      "suffix": "6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        26
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Turning-point coordinates",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the coordinates of the local maximum and local minimum of y = g(x).",
+      "stem": "g(x) = x(3x² − 9), where x is real.",
+      "markingNote": "Only one point found earns 4. No requirement to identify which is the maximum or minimum. Reading from a graph without calculus earns 0."
+    },
+    {
+      "suffix": "6-c-iii",
+      "printedParts": [
+        "Q6(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        27
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative graph",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Draw g′(x), the derivative of g(x), for −2 ≤ x ≤ 2.",
+      "stem": "g(x) = x(3x² − 9), where x is real. Part (i) asks for g′(x).",
+      "markingNote": "No penalty for extending the domain. Each missing or incorrectly plotted point loses 1, to a maximum of 3 slips."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate y = 6x − x² − 5x⁴ with respect to x.",
+      "markingNote": "A correct answer without work or notation earns full marks. Only one non-zero term correct earns 9."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Product derivative",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Differentiate y = (3x² + 2)(x³ − x) with respect to x.",
+      "markingNote": "Both product-rule and expansion methods are shown. Differentiation errors once per part; multiplication error once unless oversimplified."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative at −1",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Given y = (x³ − 2x² + 4)⁵, find dy/dx at x = −1.",
+      "markingNote": "Substituting −1 only into y earns 0; differentiate first. Both chain-rule presentations are retained."
+    },
+    {
+      "suffix": "7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Speed",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find its speed after 3 seconds.",
+      "stem": "A ball is thrown vertically down from the top of a high building. The distance it falls is s = 3t + 5t² metres, where t is seconds from release.",
+      "markingNote": "Differentiate distance; merely substituting into the distance formula earns 0. Units follow the general guidelines."
+    },
+    {
+      "suffix": "7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        31,
+        32
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Time at 23 m/s",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find t when the speed is 23 m s⁻¹.",
+      "stem": "A ball is thrown vertically down from the top of a high building. The distance it falls is s = 3t + 5t² metres, where t is seconds from release.",
+      "markingNote": "Use ds/dt explicitly. Carry forward the derivative from part (i), provided it involved differentiation."
+    },
+    {
+      "suffix": "7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        31,
+        32
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Building height",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "The ball hits the ground at 38 m s⁻¹. How high is the building?",
+      "stem": "A ball is thrown vertically down from the top of a high building. The distance it falls is s = 3t + 5t² metres, where t is seconds from release.",
+      "markingNote": "Use ds/dt explicitly before evaluating the distance. Carry forward the derivative from part (i), provided it involved differentiation."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Value of k",
+              "maximum": 15,
+              "attempt": 5
+            }
+          ]
+        }
+      ],
+      "questionText": "Let g(x) = k(1 − x) for real x. Given g(−5) = 20, find k.",
+      "markingNote": "A correct answer without work earns full marks."
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Function value",
+              "maximum": 10,
+              "attempt": 3
+            }
+          ]
+        }
+      ],
+      "questionText": "Find f(5).",
+      "stem": "f(x) = (5 + x²)/(2 − x), where x is real and x ≠ 2."
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Derivative",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find f′(x), the derivative of f(x).",
+      "stem": "f(x) = (5 + x²)/(2 − x), where x is real and x ≠ 2.",
+      "markingNote": "Both quotient-rule and product-rule methods are retained."
+    },
+    {
+      "suffix": "8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Stationary-point check",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Show f′(x) = 0 at x = −1.",
+      "stem": "f(x) = (5 + x²)/(2 − x), where x is real and x ≠ 2. Part (ii) asks for f′(x).",
+      "markingNote": "Carry forward the derivative; penalise any simplification error at this stage. A missing or wrong conclusion loses 1 if not proven."
+    },
+    {
+      "suffix": "8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Y-intercept",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the coordinates of P where y = h(x) cuts the y-axis.",
+      "stem": "h(x) = 5 + 3x − x², where x is real.",
+      "markingNote": "The answer (0, 5) without work is accepted."
+    },
+    {
+      "suffix": "8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Tangent equation",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "Find the equation of the tangent to y = h(x) at P.",
+      "stem": "h(x) = 5 + 3x − x², where x is real. P is the y-intercept found in part (i).",
+      "markingNote": "Carry forward P if not oversimplified. No differentiation earns at most attempt marks."
+    },
+    {
+      "suffix": "8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Perpendicular tangent",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "questionText": "The tangent at x = t is perpendicular to the tangent at P. Find t.",
+      "stem": "h(x) = 5 + 3x − x², where x is real. P is the y-intercept; part (ii) asks for the tangent at P.",
+      "markingNote": "Carry forward the earlier slope if not oversimplified."
+    }
+  ]
+}

@@ -1,0 +1,1218 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2010,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP230EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "2c8dd9f3c69edb29535eb8911f3743c5212775d143c12f4fb7ff5fb3615f6264",
+  "schemeSha256": "cd4089ad0834d23f9b7596ca2d1418ec38a138ac7fe56f94a3bf59d84e2bd9b0",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual inspection of all 20 original paper pages and scheme PDF pages 3–4 and 41–70, including every model solution, alternative proof, diagram, scale, component allocation and detailed credit note. All 35 question and 35 solution crops visually inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    3,
+    4,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 50,
+    "9A": 50,
+    "9B": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    59
+  ],
+  "sourceNotes": [
+    "All 20 original paper pages independently visually inspected; final pages are extra-work grids. Scheme introduction PDF4 confirms Paper1 and its scheme were identical to the common legacy paper already reviewed. This is the distinct Project Maths Paper2.",
+    "Scheme PDF3–4 and41–70 visually inspected, including every model solution, full diagram, alternative method, scale, detailed note and end matter. PDF59 defines scales; PDF60 assigns them.",
+    "There are 35 complete tasks and 42 component scales. Named scoring steps stay within Q6(b), Q7(b), Q9A(c), Q9B(a) and Q9B(b)(ii). Both complete Q9 alternatives retained.",
+    "The 2010 scales differ from later years: 10B is 0,4,10; 10C is 0,3,8,10; 15C is 0,5,10,15; 20C is 0,7,13,20. Do not reuse later-year bands.",
+    "Only five whole tasks are starred: Q8(a), Q8(c), Q9A(a), Q9A(b), Q9B(b)(i). The sixth star applies only to the final five-mark total component of Q9B(b)(ii).",
+    "All dependent cards carry original necessary stems, graph/table data and preceding prompts. Scatter-plot source attribution retained. Original diagrams and equations are preserved as readable typeset images.",
+    "Geometric constructions require the original paper and physical drawing tools. Both vector answers, both graph axes, all matches and complete proof headings are required, not finite answer choices.",
+    "Q6(d) retains all three consistency arguments; Q8(c) both distance methods; Q9A(b) both probability methods; Q9B(b)(ii) both length methods. No solution method creates an extra practice question."
+  ],
+  "cards": [
+    {
+      "id": "maths-2010-hl-p2-project-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6.",
+      "questionText": "Complete the Venn diagram.",
+      "markingNote": "The full Venn diagram is one task. Do not penalise omission of the probability outside both sets."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6.",
+      "questionText": "Find the probability that neither A nor B happens."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6.",
+      "questionText": "Find the conditional probability P(A | B)."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6.",
+      "questionText": "State whether A and B are independent events and justify your answer.",
+      "markingNote": "Follow-through from the candidate’s own probabilities may earn full credit. Mutually exclusive arguments earn no credit; retain both independence proofs and both detailed notes."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        45,
+        62
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "The back-to-back stem-and-leaf diagram shows two samples. The corresponding populations are assumed identical in shape and spread.",
+      "questionText": "Use the Tukey quick test at the 5% significance level to test whether the two populations have the same average.",
+      "markingNote": "Retain both complete samples and both keys. Tail count 8 is compared with the published critical value 7; the conclusion is part of the task."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        45,
+        62
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The diagram shows a skewed frequency distribution with vertical lines a, b and c.",
+      "questionText": "Identify the mean, mode and median by inserting the relevant letters.",
+      "markingNote": "All three labels are required within the one 10B task."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        7,
+        13,
+        20
+      ],
+      "schemePages": [
+        46,
+        62
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Construct the incircle of triangle ABC using only a compass and straight edge. Show all construction lines clearly.",
+      "measurementRequired": true,
+      "markingNote": "Keep the original full triangle and construction. The SEC template tolerance and trial-and-error credit rules remain in the original marking notes."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        62
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "An equilateral triangle has sides of length 2 units. Find the area of its incircle.",
+      "markingNote": "Exact area π/3 earns full credit. Keep the scheme’s diagram-measurement tolerance and its high-partial-credit rule for early decimal approximation."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The centre of a circle lies on x − 2y − 1 = 0. The x-axis and y = 6 are tangents. Find the equation of the circle."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "First find the circle whose centre lies on x − 2y − 1 = 0 and which is tangent to the x-axis and y = 6.",
+      "questionText": "Show that x² + y² − 6x − 12y + 41 = 0 touches the circle in part (a) externally."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Solve cos(3θ) = 1/2 for θ ∈ ℝ, with θ in radians.",
+      "markingNote": "Both complete families of solutions are required. Two or more isolated correct solutions earn high partial credit; there is no finite root-selection menu."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Match all three graphs f, g and h to cos(3x), 2cos(3x) and 3cos(2x).",
+      "markingNote": "All three matches are required; the three expressions are not an optional answer pool."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The same graph contains cos(3x), 2cos(3x) and 3cos(2x).",
+      "questionText": "Label the scales on both axes in the graph from part (b)."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0.",
+      "questionText": "Verify that C lies on l.",
+      "markingNote": "Substituting B can earn partial credit; substituting A earns none."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "components": [
+        {
+          "id": "slope",
+          "label": "Slope of AB",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "tangent",
+          "label": "tan ∠ABC",
+          "code": "5C",
+          "marks": [
+            0,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the slope of AB, and hence find tan(∠ABC) as a fraction.",
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0.",
+      "markingNote": "Two published component scales, 5B for slope and 5C for the tangent, remain in one complete task. Retain the sign, fraction and alternate-method caps."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0.",
+      "questionText": "Find both vectors BC and BA in terms of i and j.",
+      "markingNote": "Both vectors are required under one 5B scale."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q6-d",
+      "printedParts": [
+        "Q6(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0. Part (b) asks for the slope of AB and tan(∠ABC); part (c) asks for BC and BA.",
+      "questionText": "Use the dot product to find cos(∠ABC), and show that it is consistent with the answer to part (b).",
+      "markingNote": "Finding the cosine alone is high partial credit. All three published consistency arguments are retained with the complete dot-product calculation."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "questionText": "Estimate the correlation coefficient from the diagram.",
+      "markingNote": "The accepted correlation range is −0.9 to −0.6. Retain the original direction and tolerance credit rules."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "components": [
+        {
+          "id": "outlier",
+          "label": "Circle the outlier",
+          "code": "5A",
+          "marks": [
+            0,
+            5
+          ]
+        },
+        {
+          "id": "readings",
+          "label": "Age and maximum heart rate",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        }
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "Circle the outlier and write down both the person’s age and maximum heart rate.",
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "markingNote": "The outlier identification has a hit-or-miss 5A scale; both coordinate readings share a 5B scale. Accepted ranges: age 45–49 years and maximum heart rate 135–139 bpm."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "questionText": "Use the line of best fit to estimate the maximum heart rate of a 44-year-old person.",
+      "markingNote": "Accept 172–178 bpm; the source example is 176 bpm."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "questionText": "Take suitable readings from the diagram and calculate the slope of the line of best fit.",
+      "markingNote": "Accept slopes from −0.8 to −0.6 with working. An answer in tolerance without working receives partial credit."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained. Part (d) asks for its slope.",
+      "questionText": "Find the equation of the line of best fit in the form MHR = a − b × age."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained. First find the best-fit equation in the form MHR = a − b × age.",
+      "questionText": "Compare the new rule with MHR = 220 − age. Describe how their agreement varies with age, and illustrate your answer with two examples.",
+      "markingNote": "Two examples and an explanation are required. The ages are open choices, not a finite printed answer pool; retain both original examples and all accepted explanations."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q7-g",
+      "printedParts": [
+        "Q7(g)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained. The older rule is MHR = 220 − age; first obtain the new rule from the fitted line.",
+      "questionText": "In the stated exercise programme, a 65-year-old uses 75% of estimated MHR. What change does replacing the old rule with the researchers’ new rule imply?"
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units.",
+      "questionText": "Draw the coordinate axes with the lighthouse as origin, the east–west line as the x-axis and kilometres as units.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units.",
+      "questionText": "Find the equation of the line along which the ship is moving.",
+      "markingNote": "Retain both original line-equation methods and the high-partial-credit rule for a solution with one error."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units.",
+      "questionText": "Find the shortest distance between the ship and the lighthouse during the journey.",
+      "fullCreditMinusOne": true,
+      "markingNote": "Both trigonometric and point-to-line distance solutions are retained. The shortest distance is 8 km."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        54,
+        66
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units. Part (c) asks for the shortest distance.",
+      "questionText": "At what time is the ship closest to the lighthouse?",
+      "markingNote": "The full answer is a clock time, 12:24 pm. An estimate from 12:20 to 12:40 pm can receive low partial credit."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        54,
+        67
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units. Part (c) asks for the shortest distance.",
+      "questionText": "Visibility is limited to 9 km. For how many minutes in total is the ship visible from the lighthouse?",
+      "markingNote": "Count the complete visible chord, not just half of it. The answer is 8√17 minutes, about 33 minutes."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q9a-a",
+      "printedParts": [
+        "Q9A(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "A machine produces normally distributed aluminium-rod lengths with mean equal to its setting and standard deviation 0.2 mm. It is set to 40 mm.",
+      "questionText": "What is the probability that a randomly selected rod is less than 39.7 mm long?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q9a-b",
+      "printedParts": [
+        "Q9A(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        6,
+        9,
+        13,
+        15
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A machine produces normally distributed aluminium-rod lengths with mean equal to its setting and standard deviation 0.2 mm. It is set to 40 mm.",
+      "questionText": "Five rods are selected at random. Find the probability that at least two are less than 39.7 mm long.",
+      "fullCreditMinusOne": true,
+      "markingNote": "At least two means the union of the required outcomes two, three, four and five. Retain both the complement and direct-sum solutions; no answer-selection expansion applies."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q9a-c",
+      "printedParts": [
+        "Q9A(c)"
+      ],
+      "totalMarks": 25,
+      "components": [
+        {
+          "id": "test",
+          "label": "Hypothesis test",
+          "code": "20D",
+          "marks": [
+            0,
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "id": "conclusion",
+          "label": "Contextualised conclusion",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        }
+      ],
+      "schemePages": [
+        56,
+        67
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "Use the ten measured lengths to test at the 5% significance level whether the machine setting has become inaccurate. State both hypotheses and finish with a conclusion about the machine.",
+      "stem": "A machine produces normally distributed aluminium-rod lengths with mean equal to its setting and standard deviation 0.2 mm. It is set to 40 mm. The measured lengths, in mm, are 39.5, 40.0, 39.7, 40.2, 39.8, 39.7, 40.2, 39.9, 40.1, 39.6.",
+      "markingNote": "The test and contextualised conclusion are two scoring components of the one task. Retain the one-tailed-test cap; the required test is two-tailed."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q9b-a",
+      "printedParts": [
+        "Q9B(a)"
+      ],
+      "totalMarks": 20,
+      "components": [
+        {
+          "id": "diagram",
+          "label": "Diagram and given",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "construction",
+          "label": "Construction",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "proof",
+          "label": "Proof",
+          "code": "10D",
+          "marks": [
+            0,
+            3,
+            5,
+            8,
+            10
+          ]
+        }
+      ],
+      "schemePages": [
+        57,
+        68
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Prove that if three parallel lines cut off equal segments on some transversal line, then they cut off equal segments on any other transversal line. Include the diagram, given information, statement to prove, construction and proof.",
+      "markingNote": "Required proof headings remain one task with three published components. Retain both defined proof errors and all restrictions on alternative proofs."
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q9b-b-i",
+      "printedParts": [
+        "Q9B(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        8,
+        10
+      ],
+      "schemePages": [
+        58,
+        68
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The roof truss has AC = 6 m and pitch 35°. AD = DE = EC and AF = FB = BG = GC. Use the original complete truss diagram.",
+      "questionText": "Calculate AB in metres, correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2010-hl-p2-project-q9b-b-ii",
+      "printedParts": [
+        "Q9B(b)(ii)"
+      ],
+      "totalMarks": 20,
+      "components": [
+        {
+          "id": "fd",
+          "label": "Length FD",
+          "code": "5B",
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "id": "bd",
+          "label": "Length BD",
+          "code": "10B",
+          "marks": [
+            0,
+            4,
+            10
+          ]
+        },
+        {
+          "id": "total",
+          "label": "Total timber length",
+          "code": "5B",
+          "fullCreditMinusOne": true,
+          "marks": [
+            0,
+            3,
+            5
+          ]
+        }
+      ],
+      "schemePages": [
+        58,
+        68
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Calculate the total length of timber required to make the truss.",
+      "stem": "The roof truss has AC = 6 m and pitch 35°. AD = DE = EC and AF = FB = BG = GC. Use the original complete truss diagram. Part (i) asks for AB to two decimal places.",
+      "markingNote": "Three named scoring steps remain in one total-length task. Only the final 5B component permits Full Credit Minus One. Retain the cosine-rule and similar-triangle alternatives."
+    }
+  ],
+  "selectionReview": [
+    {
+      "scope": "whole paper / Q9",
+      "classification": "expanded-alternatives",
+      "reason": "Both complete Question 9A and Question 9B routes are retained. All six Section A questions and Questions 7 and 8 are required. Offered marks 350 versus candidate marks 300."
+    },
+    {
+      "scope": "Q7(f)",
+      "classification": "open-example-construction",
+      "reason": "Two examples of ages must be constructed. No finite candidate menu is printed, so retain one task requiring two examples and an explanation."
+    },
+    {
+      "scope": "Q1, Q2(b), Q5, Q6(c), Q7(b), Q9A(c), Q9B(a)",
+      "classification": "all-required",
+      "reason": "Both event conditions, all three distribution labels and graph matches, both full families of trigonometric solutions, both vectors, both outlier readings, both hypotheses and all proof headings are required. None is an optional finite pool."
+    },
+    {
+      "scope": "Q9B(a) / any other transversal",
+      "classification": "universal-statement",
+      "reason": "Any other transversal is the universal assertion to be proved, not a printed pool of optional tasks."
+    },
+    {
+      "scope": "Q9A(b) / selected at random",
+      "classification": "scenario-definition",
+      "reason": "Random rods define a probability model. At least two requires the full event, not choosing which outcomes to practise. Alternative solution methods stay with the same task."
+    }
+  ],
+  "selectionDecisions": {
+    "2:de64bfb352ce3f56": {
+      "classification": "whole-examination-selection",
+      "reason": "Both complete Question 9A and Question 9B routes are retained. All six Section A questions and Questions 7 and 8 are required. Offered marks 350 versus candidate marks 300."
+    },
+    "2:e7d40a92263a1e6f": {
+      "classification": "whole-examination-selection",
+      "reason": "Both complete Question 9A and Question 9B routes are retained. All six Section A questions and Questions 7 and 8 are required. Offered marks 350 versus candidate marks 300."
+    },
+    "2:95dbb0fd240d1f3d": {
+      "classification": "whole-examination-selection",
+      "reason": "Both complete Question 9A and Question 9B routes are retained. All six Section A questions and Questions 7 and 8 are required. Offered marks 350 versus candidate marks 300."
+    },
+    "3:0841055b1040daab": {
+      "classification": "whole-examination-selection",
+      "reason": "Both complete Question 9A and Question 9B routes are retained. All six Section A questions and Questions 7 and 8 are required. Offered marks 350 versus candidate marks 300."
+    },
+    "10:3fd16639a85c4496": {
+      "classification": "whole-examination-selection",
+      "reason": "Both complete Question 9A and Question 9B routes are retained. All six Section A questions and Questions 7 and 8 are required. Offered marks 350 versus candidate marks 300."
+    },
+    "14:0bd44eb839df68cd": {
+      "classification": "scenario-definition",
+      "reason": "One machine is specified in the scenario; this is not a candidate answer-selection pool."
+    }
+  }
+}

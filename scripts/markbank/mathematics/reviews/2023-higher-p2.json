@@ -1,0 +1,1262 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2023,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "24cf8105f917e43e030199c988c831ecf461514b88e19bc715d0677a0977cd18",
+  "schemeSha256": "c552c4050776073e91027ecfb5199ad66805464119c425592bfff463a357e130",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 35–68 of the combined Higher Level scheme (Paper 2 title page, the Paper 2 scale table on page 36, the summary of allocations on page 37, annotation palette, every Paper 2 model solution and marking note, and the closing pages). Each task boundary is the published scale, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    36,
+    37
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained.",
+    "41 independently marked units, matching the printed summary of allocations on scheme page 37. Shared scales keep their parts together: Q5(a)(i)–(iii) 20D and Q7(c)–(d) 10D.",
+    "Paper 2 bands from scheme page 36: 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,4,7,10; 10D 0,3,5,8,10; 15D 0,4,8,12,15; 20D 0,6,12,17,20 (the Paper 2 20D differs from Paper 1’s 0,5,10,15,20).",
+    "Before this review the deck held 36 of the 41 units and shipped 35. Added: Q2(b), Q8(b)(i), Q8(d)(i), Q8(d)(ii) and Q9(c)(i). Q1(b), refused by the provenance gate over garbled fraction text, now ships with quoted credit notes. Re-cited with the same IDs: “Q4(ii)” is Q4(a)(ii); “Q8(ii)”, which showed the Q8(a) prompt, is the 5C hypothesis test Q8(b)(ii). Q8(a) and Q9(a)(i) had shipped model-solution lines (Q8(a) also carried the Q8(b)(i) solution) plus the scheme page header as marking points; their rows are replaced with the published credit notes. Prompts are restored from the paper and topics corrected as metadata.",
+    "The question booklet is LC003ALP200EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 1. All page references are PDF positions."
+  ],
+  "cards": [
+    {
+      "id": "maths-2023-hl-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on.",
+      "questionText": "Fiona plays the game a number of times. Work out the probability that Fiona gets €6, then €9, then €6 the first three times she plays. Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2023-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on.",
+      "questionText": "Rohan also plays the game a number of times. Find the probability that Rohan gets €9 for the 3rd time, on the 8th time that he plays the game. Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2023-hl-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on.",
+      "questionText": "Olga plays the game 2 times. Find the probability that Olga gets less than €16 in total from playing the game. Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2023-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Prove that sin(A + B) = sin A cos B + cos A sin B."
+    },
+    {
+      "id": "maths-2023-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Part (a) proves that sin(A + B) = sin A cos B + cos A sin B.",
+      "questionText": "Using the formula in part (a), and without using a calculator, find the value of sin 75°. Give your answer in surd form."
+    },
+    {
+      "id": "maths-2023-hl-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Find all solutions of the following equation in t, for 0° ≤ t ≤ 360°: sin t = sin(2t)"
+    },
+    {
+      "id": "maths-2023-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the area of the triangle with vertices (4, 6), (−3, −1), and (0, 11)."
+    },
+    {
+      "id": "maths-2023-hl-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(−1, k) and B(5, l) are two points, where k, l ∈ ℚ.",
+      "questionText": "Show that the midpoint of [AB] is (2, (k + l)/2)."
+    },
+    {
+      "id": "maths-2023-hl-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "stem": "A(−1, k) and B(5, l) are two points, where k, l ∈ ℚ.",
+      "questionText": "The perpendicular bisector of [AB] is: 3x + 2y − 14 = 0. Find the value of l and the value of k."
+    },
+    {
+      "id": "maths-2023-hl-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The circle c has equation: (x − h)² + (y + 3)² = 12, where h ∈ ℝ.",
+      "questionText": "Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate."
+    },
+    {
+      "id": "maths-2023-hl-p2-q4-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The circle c has equation: (x − h)² + (y + 3)² = 12, where h ∈ ℝ.",
+      "questionText": "The perpendicular distance from the line x − 4y + 7 = 0 to the centre of the circle c is 5 units. Work out the two possible values of h. Give each answer in surd form."
+    },
+    {
+      "id": "maths-2023-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 < a < 5, a ∈ ℝ. The radius of the circle s is √20. Find the equation of the circle s."
+    },
+    {
+      "id": "maths-2023-hl-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        6,
+        12,
+        17,
+        20
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Rohan has a large number of small cubes. The cubes are identical in size. Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at random. He records the number of cubes of each colour, and replaces the 5 cubes. He then repeats this process a number of times. The table below shows the number of cubes of each colour the first 7 times Rohan does this, labelled Trial A to Trial G: red 0, 3, 2, 2, 4, 5, 1; green 4, 2, 0, 3, 0, 0, 2; blue 1, 0, 3, 0, 1, 0, 2.",
+      "questionText": "(i) Work out the mean and standard deviation of the number of red cubes per trial, for these 7 trials. Give each answer correct to 1 decimal place. (ii) Work out the correlation coefficient between the number of red cubes and the number of green cubes per trial, for these 7 trials. Give your answer correct to 3 decimal places. (iii) Rohan repeats this experiment a large number of times. Explain why you would expect the correlation coefficient between the number of red cubes and the number of green cubes per trial to be negative."
+    },
+    {
+      "id": "maths-2023-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Rohan has a large number of small cubes. The cubes are identical in size.",
+      "questionText": "Rohan makes a solid cuboid of dimensions 5 × 3 × 4 using his small cubes. Each small cube has sides of length 1 unit. Some of the small cubes have 1 face, 2 faces, or 3 faces on the outside of the cuboid. Other small cubes have no faces on the outside of the cuboid. In the diagram below, the small cube that is shaded has 3 faces on the outside of the cuboid. Fill in the table below, showing the number of small cubes with 3 faces, 2 faces, 1 face, or no faces on the outside of this cuboid. Show your working out. One of the values is filled in for you: 22 small cubes have 1 face on the outside."
+    },
+    {
+      "id": "maths-2023-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "State whether the following statement is true or false: Two angles are vertically opposite if, and only if, they are equal in size. Justify your answer."
+    },
+    {
+      "id": "maths-2023-hl-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The two diagrams below show the same rectangle, ACEG (not to scale). The points B, D, and F lie on [AC], [CE], and [EG], respectively, as shown. |AB| = 20 cm, |BC| = 30 cm, and |AG| = 90 cm. |∠GFA| = |∠EFD| = |∠DBC| = θ, where θ ∈ ℝ. In Diagram B, [GE] and [BD] are extended, and they meet at the point H.",
+      "questionText": "Prove that |FE| = |EH|, in Diagram B. Use congruent triangles. Give a reason for each statement that you make in your proof."
+    },
+    {
+      "id": "maths-2023-hl-p2-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "The two diagrams below show the same rectangle, ACEG (not to scale). The points B, D, and F lie on [AC], [CE], and [EG], respectively, as shown. |AB| = 20 cm, |BC| = 30 cm, and |AG| = 90 cm. |∠GFA| = |∠EFD| = |∠DBC| = θ, where θ ∈ ℝ. In Diagram B, [GE] and [BD] are extended, and they meet at the point H.",
+      "questionText": "Hence, or otherwise, find the size of the angle θ. Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2023-hl-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Olga is a cyclist.",
+      "questionText": "The diagram below shows a road [AB], which is not to scale. AC is horizontal and BC is vertical. |BC| = 9 m and |AB| = 70 m. The gradient of the road [AB] is |BC|/|AC| written as a percentage. Find the gradient of [AB], correct to the nearest percent."
+    },
+    {
+      "id": "maths-2023-hl-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Olga is a cyclist.",
+      "questionText": "Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angle of elevation from R to H. Taking O to be the point directly below H that is horizontal with R and P, Olga also measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale): the angle of elevation is 17°, |∠ORP| = 88° and |∠OPR| = 87°. Work out the distance |OH|, the vertical height of the top of the hill relative to the points R and P. Give your answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2023-hl-p2-q7-c",
+      "printedParts": [
+        "Q7(c)",
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+      "questionText": "(c) Find the values marked a and b on the graph, the minimum and maximum values of V. (d) What is the connection between V′(t), the derivative of V, and whether Olga is breathing in or breathing out?"
+    },
+    {
+      "id": "maths-2023-hl-p2-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+      "questionText": "Use the formula V(t) = 2 − 0·4 cos((π/2)t) to find each of the following, when Olga is resting. Give each answer correct to 3 decimal places. Find the volume of air in Olga’s lungs, half a second after t = 0."
+    },
+    {
+      "id": "maths-2023-hl-p2-q7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+      "questionText": "Use the formula V(t) = 2 − 0·4 cos((π/2)t), when Olga is resting, giving your answer correct to 3 decimal places. Find the rate at which the volume of air in Olga’s lungs is increasing, half a second after t = 0."
+    },
+    {
+      "id": "maths-2023-hl-p2-q7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+      "questionText": "Olga’s breathing is also measured while she is doing gentle exercise. During this time: when she breathes in fully, the volume of air in her lungs is 3·6 litres; when she breathes out fully, the volume of air in her lungs is 1·3 litres; she breathes in and out twice as many times per minute as when she is resting. Use this information to write a formula for E(t), the volume of air in Olga’s lungs during this time, t seconds after she has breathed out fully. Give your answer in the form E(t) = a + b cos(ct), where a, b, c, t ∈ ℝ, and ct is in radians."
+    },
+    {
+      "id": "maths-2023-hl-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word.",
+      "questionText": "In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3·5."
+    },
+    {
+      "id": "maths-2023-hl-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland.",
+      "questionText": "Use the information about this sample to construct a 95% confidence interval for the mean score of all Galway players. Use the standard deviation of 0·36 in your calculations."
+    },
+    {
+      "id": "maths-2023-hl-p2-q8-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Players in Ireland have a mean score of 3·87 with a standard deviation of 0·36.",
+      "questionText": "Carry out a hypothesis test at the 5% level of significance to test the newspaper’s claim that Galway players have a different mean score to players in Ireland. State your null hypothesis, state your alternative hypothesis, state your conclusion, and give a reason for your conclusion."
+    },
+    {
+      "id": "maths-2023-hl-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word.",
+      "questionText": "A national newspaper conducts a survey on a random sample of n teenagers in Ireland. 35% of the sample said they play the online word game every day. Based on this, a 95% confidence interval for the percentage, p, of all teenagers in Ireland who play the game every day was calculated, as accurately as possible. Correct to one decimal place, this interval was: 26·5% ≤ p ≤ 43·5%. Use this to work out the value of n, the number of teenagers surveyed."
+    },
+    {
+      "id": "maths-2023-hl-p2-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A player wins the game if they guess the word with 6 guesses or less. The organisers of the game record the following statistics for players in Europe: 80% of players win the game each day; 90% of players who win the game will play it again the following day; 25% of players who do not win the game will play it again the following day. Some of this information is shown in the tree diagram below, based on the 360 000 people who played the game on 1st June. The squares represent proportions. The rectangles labelled PLAY, WIN, and LOSE represent the number of people who play, win, and lose the game, respectively. For example, 0·8 of the 360 000 people who played the game on 1st June won the game. Assume that, for people who play the game on a number of days, winning the game on one day is independent of winning it on another day.",
+      "questionText": "Complete the tree diagram, by writing the proportion associated with each branch of the tree diagram into the appropriate square and writing the number of people who play, win, and lose the game into the appropriate rectangle."
+    },
+    {
+      "id": "maths-2023-hl-p2-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        58
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A player wins the game if they guess the word with 6 guesses or less. The organisers of the game record the following statistics for players in Europe: 80% of players win the game each day; 90% of players who win the game will play it again the following day; 25% of players who do not win the game will play it again the following day. Some of this information is shown in the tree diagram below, based on the 360 000 people who played the game on 1st June. The squares represent proportions. The rectangles labelled PLAY, WIN, and LOSE represent the number of people who play, win, and lose the game, respectively. For example, 0·8 of the 360 000 people who played the game on 1st June won the game. Assume that, for people who play the game on a number of days, winning the game on one day is independent of winning it on another day.",
+      "questionText": "One person is picked at random from those who played the game on all three days (1st, 2nd, and 3rd June). Find the probability that this person lost on 1st June or 2nd June (or on both)."
+    },
+    {
+      "id": "maths-2023-hl-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        59
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) A square tile and a hexagonal tile each have an area of 140 cm².",
+      "questionText": "Work out the length of the side of the square tile, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2023-hl-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        60
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) A square tile and a hexagonal tile each have an area of 140 cm².",
+      "questionText": "The hexagonal tile has sides of length x cm, where x ∈ ℝ. Work out the value of x, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2023-hl-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (ABED) and a quadrilateral (EBCD). The point E lies on the line AC, and both shapes are symmetrical about AC (diagrams not to scale).",
+      "questionText": "|AD| = 8 cm, |AE| = 6 cm, and |ED| = 4 cm. As shown in the diagram, α = ∠DAE. Show that α = cos⁻¹(7/8)."
+    },
+    {
+      "id": "maths-2023-hl-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (ABED) and a quadrilateral (EBCD). The point E lies on the line AC, and both shapes are symmetrical about AC (diagrams not to scale). |AD| = 8 cm and α = ∠DAE = cos⁻¹(7/8).",
+      "questionText": "In the diagram |∠ADC| = |∠ABC| = 90°. Use this, and part (b)(i), to work out the total area of the quadrilateral ABCD, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2023-hl-p2-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        62
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Ava also looks at a tiling of the inside of the unit circle c: x² + y² = 1. The diagram on the right (not to scale) shows the circle c and another circle, s. The points P and Q are on both circles. The part of s that lies inside c is an edge of a number of tiles. Ava wants to find the equation of the circle s.",
+      "questionText": "|∠QOP| = 45°, where O is the point (0, 0). Show that the point Q has co-ordinates (−1/√2, 1/√2)."
+    },
+    {
+      "id": "maths-2023-hl-p2-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        63
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Ava also looks at a tiling of the inside of the unit circle c: x² + y² = 1. The diagram on the right (not to scale) shows the circle c and another circle, s. The points P and Q are on both circles. The part of s that lies inside c is an edge of a number of tiles. Ava wants to find the equation of the circle s. |∠QOP| = 45° and Q is the point (−1/√2, 1/√2).",
+      "questionText": "The point P lies on the x-axis. The centre of the circle s lies on the tangent to c at the point P and on the tangent to c at the point Q. Find the centre and the radius of the circle s. Give your answers in surd form."
+    },
+    {
+      "id": "maths-2023-hl-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        64
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Séamus has a basin in the shape of an inverted right circular cone with the lower part removed, as shown in the diagram on the right below (diagrams not to scale). The radius of the original cone is 15 cm, and |CE|, the slant height of the basin, is 10 cm. The base of the basin is a horizontal circle with a radius of 12 cm, as shown. The basin is open – it does not have a top.",
+      "questionText": "Show that |BE| = 40 cm."
+    },
+    {
+      "id": "maths-2023-hl-p2-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        64
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Séamus has a basin in the shape of an inverted right circular cone with the lower part removed, as shown in the diagram on the right below (diagrams not to scale). The radius of the original cone is 15 cm, and |CE|, the slant height of the basin, is 10 cm. The base of the basin is a horizontal circle with a radius of 12 cm, as shown. The basin is open – it does not have a top. |BE| = 40 cm.",
+      "questionText": "Find the total internal surface area of the basin, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2023-hl-p2-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        65
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Séamus has a basin in the shape of an inverted right circular cone with the lower part removed, as shown in the diagram on the right below (diagrams not to scale). The radius of the original cone is 15 cm, and |CE|, the slant height of the basin, is 10 cm. The base of the basin is a horizontal circle with a radius of 12 cm, as shown. The basin is open – it does not have a top. |BE| = 40 cm.",
+      "questionText": "Draw a diagram of the net of the curved surface of the basin. Show your working out. Include on your diagram enough measurements of lengths and/or angles so that the net could be constructed using a ruler, straight edge, compass, and protractor, without any further calculation. Your diagram may need to include lines that are not part of the net itself, like the broken lines in the diagram on the previous page."
+    },
+    {
+      "id": "maths-2023-hl-p2-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        66
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once.",
+      "questionText": "Work out how many such codes are possible."
+    },
+    {
+      "id": "maths-2023-hl-p2-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        66
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once.",
+      "questionText": "Work out how many of these codes contain the digit 2."
+    },
+    {
+      "id": "maths-2023-hl-p2-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        66
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once.",
+      "questionText": "Work out how many of the codes in part (b)(i) have the sum of their first three digits equal to their fourth digit. (The codes can contain the digit 2, although they do not have to.)"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "One of the values is filled in for you",
+      "classification": "given-context",
+      "reason": "One table entry is supplied; the candidate completes the rest under one scale."
+    },
+    {
+      "pages": [
+        15
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task; no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:a55a152b75a8a56a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:589520ec9d125739": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:b96b52e8a2994b25": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "13:0aa8440d41306e00": {
+      "classification": "given-context",
+      "reason": "One of the four table values is supplied; the candidate completes the others under one scale."
+    },
+    "15:b75d7e210be8d33a": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "16:616593c3d2b75982": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    }
+  }
+}

@@ -1,0 +1,934 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2020,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "047919572be81c9ce54a4b55078737f238cc2001900f494e66e58a2a4f40d559",
+  "schemeSha256": "6626b366d885fd127e00d38737223dcda09da805980f8a126b0cf251e6da6365",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 24–48 of the combined Higher Level scheme (the Paper 2 title page, the Paper 2 scale table on page 26, the summary of mark allocations on page 27, every Paper 2 model solution and marking note on pages 28–43, the Irish-language bonus table on page 44 and the blank back pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 70,
+    "9": 25
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    26,
+    27
+  ],
+  "sourceNotes": [
+    "The 2020 Leaving Certificate examinations were cancelled and replaced by Calculated Grades, but the SEC published this paper and its marking scheme. The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 70 marks, Q9 25 marks). Every question is retained.",
+    "30 independently marked units, matching the printed summary on scheme page 27 except Q4: the summary lists Q4(a) 10C and Q4(b) 15D, but the scale printed beside each model solution on page 33 is Q4(a) “Scale 15D (0, 4, 7, 11, 15)” and Q4(b) “Scale 10D (0, 3, 5, 8, 10)”, and both marking notes carry low, mid and high partial credit, which only a D scale has. The cards follow the scales printed beside the solutions; Q4 totals 25 marks either way.",
+    "Paper 2 bands from the scale table on scheme page 26: 5B 0,2,5; 5C 0,3,4,5; 5D 0,2,3,4,5; 10C 0,4,8,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15.",
+    "This paper had no authored cards before this review; all 30 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; Q1(b) and Q2(b) keep each printed method’s ladder separately.",
+    "The question booklet is LC003ALP200EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2020-hl-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The coordinates of three points are A(2, −6), B(6, −12), and C(−4, 3). Find the perpendicular distance from A to BC. Based on your answer, what can you conclude about the relationship between the points A, B, and C?"
+    },
+    {
+      "id": "maths-2020-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "The diagram below shows two lines a and b. The equation of a is x − 2y + 1 = 0. The acute angle between a and b is θ. Line b makes an angle of 60° with the positive sense of the x-axis, as shown in the diagram. Find the value of θ, in degrees, correct to 3 decimal places."
+    },
+    {
+      "id": "maths-2020-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle c has equation x² + y² − 4x + 2y − 4 = 0. The point A is the centre of the circle. The line l is a tangent to c at the point T, as shown in the diagram. The point B(5, 8) is on l. Find |BT|."
+    },
+    {
+      "id": "maths-2020-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        30,
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Two circles, c₁ and c₂, have their centres on the x-axis. Each circle has a radius of 5 units. The point (1, 4) lies on each circle. Find the equation of c₁ and the equation of c₂."
+    },
+    {
+      "id": "maths-2020-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "A flagpole [GH], shown in the diagram, is vertical and the ground is inclined at an angle of 5° to the horizontal between E and G. The angles of elevation from E and F to the top of the pole are 35° and 52° respectively. The distance from E to F along the incline is 6 m. Find how far F is from the base of the pole (G) along the incline. Give your answer correct to two decimal places."
+    },
+    {
+      "id": "maths-2020-hl-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "In the diagram the large circle s has centre O and the small circle c has centre D. The circle c touches the circle s at the point C. OA and OB are tangents to c as shown. The radius of c is r. |∠BOA| = 60°. The ratio of the area of s to the area of c is k : 1. Find the value of k."
+    },
+    {
+      "id": "maths-2020-hl-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Find the two values of θ for which tan(θ/2) = −1/√3, where 0 ≤ θ ≤ 4π."
+    },
+    {
+      "id": "maths-2020-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "The diagram shows OAB, a sector of a circle of radius 7 cm with centre O. In the sector, |∠BOA| = 1·2 radians. The area of the shaded region is 21 cm². Find |BC|. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-hl-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two events A and B are such that P(A) = 3/4 and P(A ∩ B) = 1/2.",
+      "questionText": "Find P(B|A). Give your answer as a fraction in its simplest form."
+    },
+    {
+      "id": "maths-2020-hl-p2-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Two events A and B are such that P(A) = 3/4 and P(A ∩ B) = 1/2.",
+      "questionText": "P(A ∪ B) = 11/12. Investigate if the events A and B are independent."
+    },
+    {
+      "id": "maths-2020-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "A spinner consists of 4 segments, as shown. Each segment is equally likely to be landed on. Liam, Sorcha and Lee play a game in which the spinner is spun twice and the numbers landed on are added together. The result is divided by 3 and the remainder is recorded. If the remainder is 0 then Liam wins the game. If the remainder is 1 then Sorcha wins the game. If the remainder is 2 then Lee wins the game. Is this a fair game? (i.e. Are all 3 participants equally likely to win?) Justify your answer by relevant calculations."
+    },
+    {
+      "id": "maths-2020-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "A class group carried out a study of the makes and fuel types of cars in a large carpark. It found that 30% of the cars ran on diesel and 70% of these diesel cars were Volkswagen. It found that 60% of the cars ran on petrol and 25% of these petrol cars were Volkswagen. It found that 10% of the cars were hybrid/electric and 9% of these cars were Volkswagen. One car is selected at random from the car park. Find the probability that it is a Volkswagen car."
+    },
+    {
+      "id": "maths-2020-hl-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The Road Safety Authority has data on driving test pass rates at all its test centres.",
+      "questionText": "In a particular Driving Test Centre the probability that a person taking the test for the first time will pass is 1/4. All of the test results are independent. In this centre on a particular day Joe, along with 5 others, takes the test. All six are taking the test for the first time. Find the probability that Joe passes the test along with exactly 2 others."
+    },
+    {
+      "id": "maths-2020-hl-p2-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability",
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "The Road Safety Authority has data on driving test pass rates at all its test centres.",
+      "questionText": "The overall pass rate for all drivers at another centre is 1/2 (Whether it is their first attempt or a subsequent attempt). On a particular day, n people take the test in this centre. The probability that two people or less than two people pass the test can be written in the form (an² + bn + c)/2^(n+1), where a, b, c ∈ ℕ. Find the value of a, the value of b, and the value of c."
+    },
+    {
+      "id": "maths-2020-hl-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3·3 cm and a slant height of 9 cm, as shown.",
+      "questionText": "Show that the vertical height of the cup is 8·37 cm, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2020-hl-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3·3 cm and a slant height of 9 cm, as shown.",
+      "questionText": "Find the curved surface area of the cup correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2020-hl-p2-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3·3 cm and a slant height of 9 cm, as shown.",
+      "questionText": "The diagram shows the net of the cup. Find, in degrees, the size of the angle θ."
+    },
+    {
+      "id": "maths-2020-hl-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3·3 cm and a slant height of 9 cm, as shown.",
+      "questionText": "In order to avoid spillages each cup is marked with a dotted line at F which is 1 cm vertically below the top of the cup, as shown. Find the volume of water in the cup when it is filled as far as the dotted line. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-hl-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3·3 cm and a slant height of 9 cm, as shown. In order to avoid spillages each cup is marked with a dotted line at F which is 1 cm vertically below the top of the cup.",
+      "questionText": "Water flows into one of these cups through a cylindrical pipe of radius 0·8 cm at a flow rate of 2·5 cm/sec. Find, to the nearest second, how long it will take to fill the cup to the line at F."
+    },
+    {
+      "id": "maths-2020-hl-p2-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "A company makes biodegradable paper cups in the shape of a right circular cone. Each cup has a radius of 3·3 cm and a slant height of 9 cm, as shown. In order to avoid spillages each cup is marked with a dotted line at F which is 1 cm vertically below the top of the cup.",
+      "questionText": "The company decides to change the position of the line F in order to limit the capacity of the cup to 60 cm³. How far, vertically below the rim of the cup, should the line F be drawn? Give your answer, in cm, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-hl-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "An airline company Trans-sky Airways has designed an aptitude test for people applying for jobs as trainee pilots. The aptitude test is scored out of 500 marks. The results are normally distributed with a mean score of 280 and a standard deviation of 90.",
+      "questionText": "The top 25% of people taking the aptitude test are invited back for an interview. Find the minimum mark needed on the test in order to be invited back for interview."
+    },
+    {
+      "id": "maths-2020-hl-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "An airline company Trans-sky Airways has designed an aptitude test for people applying for jobs as trainee pilots. The aptitude test is scored out of 500 marks. The results are normally distributed with a mean score of 280 and a standard deviation of 90.",
+      "questionText": "Anyone who scores above the 40th percentile can re-sit the test later. Eileen scored 260 marks in the test. Find out whether or not Eileen is eligible to re-sit the test."
+    },
+    {
+      "id": "maths-2020-hl-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "questionText": "Explain the relevance of the z-scores −1·96 and 1·96 in the standard normal distribution."
+    },
+    {
+      "id": "maths-2020-hl-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Trans-sky Airways surveyed 2500 of its passengers about a new service it proposed to introduce. The variable p̂ is the proportion of respondents in the survey who said they would use the new service. The radius of the 95% confidence interval of the survey was 0·01568. Find the value of p̂, where 0·5 < p̂ ≤ 1."
+    },
+    {
+      "id": "maths-2020-hl-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "The weight of the Airline passengers’ carry-on luggage is normally distributed with a mean of 12 kg. The Airline has recently introduced a fee for non-carry-on luggage. After the fee was introduced, the Airline expected the mean weight of the carry-on luggage to change. They selected a random sample of 80 passengers and weighed their carry-on luggage. The sample mean was 13·1 kg and the sample standard deviation was 4·5 kg. Test the hypothesis, at the 5% level of significance, that the mean weight of the carry-on luggage has changed. State the null hypothesis and the alternative hypothesis. Give your conclusion in the context of the question."
+    },
+    {
+      "id": "maths-2020-hl-p2-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics",
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "questionText": "The company bus can carry passengers up to a total maximum weight allowance of 3000 kg. The weight of passengers is normally distributed with a mean of 73 kg and a standard deviation of 12 kg. 40 passengers board the bus. Find the probability that the total passenger weight will be over the maximum weight allowance. Give your answer as a percentage correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2020-hl-p2-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "A list consists of eight whole numbers. They are labelled from A to H as shown below. The numbers are all greater than zero and are ordered from smallest to largest. The difference between any two adjacent numbers is 2 or more. The median of the list is 12·5. The lower quartile (the median of the 4 lowest numbers) of the list is 7·5. The interquartile range is 12. The second largest number is 23, as shown. The range of the list is 21. The mean of the list is 13·5. Find the numbers which satisfy all of the above conditions and write them into the boxes below."
+    },
+    {
+      "id": "maths-2020-hl-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Two ships set sail at the same time, Ship A from Port A and Ship B from Port B. Port A is 90 km due west of Port B, as shown below. Ship A is traveling due east at a speed of 15 km/h. Ship B is travelling due south at a speed of 30 km/h.",
+      "questionText": "Find the distance between the two ships 30 minutes after they set sail. Give your answer in km, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2020-hl-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Two ships set sail at the same time, Ship A from Port A and Ship B from Port B. Port A is 90 km due west of Port B, as shown below. Ship A is traveling due east at a speed of 15 km/h. Ship B is travelling due south at a speed of 30 km/h.",
+      "questionText": "t is the time in hours after the ships set sail. Show that the distance between the ships at time t can be given by the function s(t) = (1125t² − 2700t + 8100)^(1/2), where 0 ≤ t ≤ 6."
+    },
+    {
+      "id": "maths-2020-hl-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Two ships set sail at the same time, Ship A from Port A and Ship B from Port B. Port A is 90 km due west of Port B, as shown below. Ship A is traveling due east at a speed of 15 km/h. Ship B is travelling due south at a speed of 30 km/h. t is the time in hours after the ships set sail. The distance between the ships at time t can be given by the function s(t) = (1125t² − 2700t + 8100)^(1/2), where 0 ≤ t ≤ 6.",
+      "questionText": "Use calculus to find the value of t when the ships are closest to each other, and find the distance between the ships at your value of t. Give the distance in km, correct to 1 decimal place."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4
+      ],
+      "wording": "Answer all nine / all six questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "Water flows into one of these cups",
+      "classification": "given-context",
+      "reason": "Every cup is identical; “one of these cups” names the single situation, not a choice between prompts."
+    },
+    {
+      "pages": [
+        23
+      ],
+      "wording": "The difference between any two adjacent numbers is 2 or more",
+      "classification": "mathematical-context",
+      "reason": "A condition on every pair of adjacent numbers in the list; not a choice between prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:be0afeb816496d43": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A questions; every published scale unit is retained."
+    },
+    "4:c7b23f00b6ff381a": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A questions; every published scale unit is retained."
+    },
+    "17:e7a60851f7489cc6": {
+      "classification": "given-context",
+      "reason": "Every cup is the same cone; “one of these cups” names the single situation to calculate, not a choice between prompts."
+    },
+    "23:6007a74d99806aa6": {
+      "classification": "mathematical-context",
+      "reason": "“Any two adjacent numbers” is a condition on every adjacent pair in the list, not a choice between prompts."
+    }
+  }
+}

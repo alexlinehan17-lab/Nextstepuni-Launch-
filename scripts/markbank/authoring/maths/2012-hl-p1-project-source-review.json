@@ -1,0 +1,760 @@
+{
+  "status": "complete original-source and presentation review; all 32 distinct question/solution pairs inspected",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003ALP130EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "generalNotesPages": [
+    23,
+    24,
+    25
+  ],
+  "offeredMarks": 300,
+  "candidateMarks": 300,
+  "practiceMarks": 320,
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      7,
+      10
+    ],
+    "10C": [
+      0,
+      5,
+      8,
+      10
+    ],
+    "10D": [
+      0,
+      3,
+      5,
+      8,
+      10
+    ],
+    "15B": [
+      0,
+      11,
+      15
+    ],
+    "15C": [
+      0,
+      8,
+      14,
+      15
+    ],
+    "15D": [
+      0,
+      5,
+      10,
+      14,
+      15
+    ],
+    "20C": [
+      0,
+      14,
+      18,
+      20
+    ],
+    "20D": [
+      0,
+      6,
+      12,
+      18,
+      20
+    ]
+  },
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "schemePages": [
+        7,
+        26
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Solve the simultaneous equations: a² − ab + b² = 3; a + 2b + 1 = 0.",
+      "scale": "15C"
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "schemePages": [
+        7,
+        26
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Find the set of all real values of x for which (2x − 5)/(x − 3) ≤ 5/2.",
+      "scale": "10D"
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "schemePages": [
+        8,
+        27
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "There are three regions in the diagram that represent empty sets. One of these is shaded. Shade in the other two.",
+      "scale": "15B",
+      "stem": "Let G be the set {x + yi | x, y ∈ ℤ, i² = −1}. Consider the original Venn diagram showing ℂ, ℝ, ℚ, ℤ and G."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "schemePages": [
+        8,
+        27
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Insert each of the following numbers in its correct region on the diagram: √2, 7, √3 − i, 4 + 3i, 1/2, 1/2 + 2i.",
+      "scale": "5C",
+      "stem": "Let G be the set {x + yi | x, y ∈ ℤ, i² = −1}. Consider the original Venn diagram showing ℂ, ℝ, ℚ, ℤ and G."
+    },
+    {
+      "suffix": "2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "schemePages": [
+        8,
+        27
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Consider the product ab, where a ∈ G and b ∈ ℚ. There is a non-empty region in the diagram where ab cannot be. Write the word “here” in this region.",
+      "scale": "5B",
+      "stem": "Let G be the set {x + yi | x, y ∈ ℤ, i² = −1}. Consider the original Venn diagram showing ℂ, ℝ, ℚ, ℤ and G."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "schemePages": [
+        9,
+        28
+      ],
+      "sourcePages": [
+        5
+      ],
+      "questionText": "Find, in polar form, the four complex fourth roots of z. That is, find the four values of w for which w⁴ = z.",
+      "scale": "20C",
+      "stem": "The complex number z has modulus 5 1/16 (that is, 81/16) and argument 4π/9."
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "schemePages": [
+        9,
+        28
+      ],
+      "sourcePages": [
+        5
+      ],
+      "questionText": "z is marked on the Argand diagram below. On the same diagram, show the four answers to part (a).",
+      "scale": "5B",
+      "stem": "The complex number z has modulus 5 1/16 (that is, 81/16) and argument 4π/9. Part (a): find the four complex fourth roots in polar form."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "schemePages": [
+        10,
+        29
+      ],
+      "sourcePages": [
+        6
+      ],
+      "questionText": "Prove, by induction, the formula for the sum of the first n terms of a geometric series. That is, prove that, for r ≠ 1: a + ar + ar² + … + arⁿ⁻¹ = a(1 − rⁿ)/(1 − r).",
+      "scale": "10C"
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "schemePages": [
+        10,
+        29
+      ],
+      "sourcePages": [
+        6
+      ],
+      "questionText": "By writing the recurring part as an infinite geometric series, express 5·2121212121… as a fraction of integers.",
+      "scale": "15C"
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "schemePages": [
+        11,
+        30
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Find the co-ordinates of the two points where the curves y = f(x) and y = g(x) intersect.",
+      "scale": "10C",
+      "stem": "The functions f and g are defined for x ∈ ℝ as f(x) = 2x² − 3x + 2 and g(x) = x² + x + 7. Refer to the original sketch of the two curves."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "schemePages": [
+        11,
+        30
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Find the area of the region enclosed between the two curves.",
+      "scale": "15D",
+      "stem": "The functions f and g are defined for x ∈ ℝ as f(x) = 2x² − 3x + 2 and g(x) = x² + x + 7. Refer to the original sketch of the two curves."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "schemePages": [
+        12,
+        31
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "Let f(x) = e^(−x²/2). Show that the second derivative of f(x) with respect to x is f″(x) = (x² − 1)e^(−x²/2).",
+      "components": [
+        {
+          "id": "first-derivative",
+          "label": "First derivative",
+          "code": "10B",
+          "fullCreditMinusOne": false
+        },
+        {
+          "id": "second-derivative",
+          "label": "Second derivative",
+          "code": "10B",
+          "fullCreditMinusOne": false
+        }
+      ]
+    },
+    {
+      "suffix": "6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "schemePages": [
+        13,
+        31
+      ],
+      "sourcePages": [
+        9
+      ],
+      "questionText": "The point P in the first quadrant is a point of inflection of the curve y = e^(−x²/2). Show that the tangent at P crosses the x-axis at (2, 0).",
+      "scale": "5C"
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "schemePages": [
+        14,
+        32
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "What is the height of the surface at time t = 0?",
+      "scale": "15B",
+      "stem": "An open cylindrical tank of water has radius 52 cm and a circular hole of radius 1 cm near the bottom. Over a certain 20-minute period, h = (10 − t/200)², where h is the water-surface height in cm measured from the centre of the hole, and t is the time in seconds from t = 0. Refer to the tank diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "schemePages": [
+        14,
+        32
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "After how many seconds will the height of the surface be 64 cm?",
+      "scale": "15C",
+      "stem": "An open cylindrical tank of water has radius 52 cm and a circular hole of radius 1 cm near the bottom. Over a certain 20-minute period, h = (10 − t/200)², where h is the water-surface height in cm measured from the centre of the hole, and t is the time in seconds from t = 0. Refer to the tank diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "schemePages": [
+        14,
+        32
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "Find the rate at which the volume of water in the tank is decreasing at the instant when the height is 64 cm. Give your answer correct to the nearest cm³ per second.",
+      "scale": "5C",
+      "stem": "An open cylindrical tank of water has radius 52 cm and a circular hole of radius 1 cm near the bottom. Over a certain 20-minute period, h = (10 − t/200)², where h is the water-surface height in cm measured from the centre of the hole, and t is the time in seconds from t = 0. Refer to the tank diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "schemePages": [
+        15,
+        32
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "The rate at which the volume of water in the tank is decreasing equals the speed of the water coming out of the hole multiplied by the area of the hole. Find the speed at which the water is coming out of the hole at the instant when the height is 64 cm.",
+      "scale": "10B",
+      "stem": "An open cylindrical tank of water has radius 52 cm and a circular hole of radius 1 cm near the bottom. Over a certain 20-minute period, h = (10 − t/200)², where h is the water-surface height in cm measured from the centre of the hole, and t is the time in seconds from t = 0. Refer to the tank diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "7-e-f",
+      "printedParts": [
+        "Q7(e)",
+        "Q7(f)"
+      ],
+      "schemePages": [
+        15,
+        32
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "(e) Show that, as t varies, the speed of the water coming out of the hole is a constant multiple of √h. (f) The speed is known to be v = c√(1962h) cm per second, where c depends on features of the hole. Find c for this hole, correct to one decimal place.",
+      "scale": "5C",
+      "stem": "An open cylindrical tank of water has radius 52 cm and a circular hole of radius 1 cm near the bottom. Over a certain 20-minute period, h = (10 − t/200)², where h is the water-surface height in cm measured from the centre of the hole, and t is the time in seconds from t = 0. Refer to the tank diagram. The rate at which the volume of water in the tank is decreasing equals the speed of the water coming out of the hole multiplied by the area of the hole."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "schemePages": [
+        16,
+        33
+      ],
+      "sourcePages": [
+        12
+      ],
+      "questionText": "By expressing r² in terms of h, show that the capacity of the cup, in cm³, is V = (π/3)h(81 − h²).",
+      "scale": "10B",
+      "stem": "A company makes conical drinking cups from a sector AOB cut from a circular piece of waterproof paper of radius 9 cm. Edges AO and OB are joined. The rim radius is r and the cup height is h. Refer to the original sector and cup diagrams."
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "schemePages": [
+        17,
+        33
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "questionText": "There are two positive values of h for which the capacity of the cup is 154π/3. One of these values is an integer. Find the two values. Give the non-integer value correct to two decimal places.",
+      "scale": "20D",
+      "stem": "A company makes conical drinking cups from a sector AOB cut from a circular piece of waterproof paper of radius 9 cm. Edges AO and OB are joined. The rim radius is r and the cup height is h. Refer to the original sector and cup diagrams. The capacity is V = (π/3)h(81 − h²) cm³.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "schemePages": [
+        18,
+        33
+      ],
+      "sourcePages": [
+        12,
+        14
+      ],
+      "questionText": "Find the maximum possible volume of the cup, correct to the nearest cm³.",
+      "scale": "5C",
+      "stem": "A company makes conical drinking cups from a sector AOB cut from a circular piece of waterproof paper of radius 9 cm. Edges AO and OB are joined. The rim radius is r and the cup height is h. Refer to the original sector and cup diagrams. The capacity is V = (π/3)h(81 − h²) cm³.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "schemePages": [
+        18,
+        33
+      ],
+      "sourcePages": [
+        12,
+        13,
+        14
+      ],
+      "questionText": "Complete the table to show the radius, height, and capacity of each of the cups involved in parts (b) and (c). In each case, give the radius and height correct to two decimal places.",
+      "scale": "5C",
+      "stem": "A company makes conical drinking cups from a sector AOB cut from a circular piece of waterproof paper of radius 9 cm. Edges AO and OB are joined. The rim radius is r and the cup height is h. Refer to the original sector and cup diagrams. The capacity is V = (π/3)h(81 − h²) cm³. Part (b): find both positive heights giving volume 154π/3. Part (c): find the maximum possible volume.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "schemePages": [
+        19,
+        33
+      ],
+      "sourcePages": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "questionText": "In practice, which one of the three cups above is the most reasonable shape for a conical cup? Give a reason for your answer.",
+      "scale": "5B",
+      "stem": "A company makes conical drinking cups from a sector AOB cut from a circular piece of waterproof paper of radius 9 cm. Edges AO and OB are joined. The rim radius is r and the cup height is h. Refer to the original sector and cup diagrams. The capacity is V = (π/3)h(81 − h²) cm³. Compare the two cups with capacity 154π/3 and the cup of maximum volume; calculate their radii and heights as in parts (b)–(d)."
+    },
+    {
+      "suffix": "8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "schemePages": [
+        19,
+        34
+      ],
+      "sourcePages": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "questionText": "For the cup you have chosen in part (e), find the measure of the angle AOB that must be cut from the circular disc in order to make the cup. Give your answer in degrees, correct to the nearest degree.",
+      "scale": "5C",
+      "stem": "A company makes conical drinking cups from a sector AOB cut from a circular piece of waterproof paper of radius 9 cm. Edges AO and OB are joined. The rim radius is r and the cup height is h. Refer to the original sector and cup diagrams. The capacity is V = (π/3)h(81 − h²) cm³. Parts (b)–(e): compare the two cups with capacity 154π/3 and the maximum-volume cup; select and justify the most reasonable cup.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "schemePages": [
+        20,
+        35
+      ],
+      "sourcePages": [
+        16
+      ],
+      "questionText": "Complete the table to show the values given by Hannah’s model, correct to one decimal place.",
+      "scale": "10C",
+      "stem": "Atmospheric pressure is measured in kilopascals (kPa) and decreases with altitude. The supplied data gives altitudes 0, 1, 2, 3, 4, 5 km and respective pressures 101·3, 89·9, 79·5, 70·1, 61·6, 54·0 kPa. Hannah models the data as a geometric sequence with first term 101·3 and common ratio 0·883.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "schemePages": [
+        20,
+        35
+      ],
+      "sourcePages": [
+        16
+      ],
+      "questionText": "By considering the percentage errors in the above values, insert an appropriate number to complete: “Hannah’s model is accurate to within ________%.”",
+      "scale": "5B",
+      "stem": "Atmospheric pressure is measured in kilopascals (kPa) and decreases with altitude. The supplied data gives altitudes 0, 1, 2, 3, 4, 5 km and respective pressures 101·3, 89·9, 79·5, 70·1, 61·6, 54·0 kPa. Hannah models the data as a geometric sequence with first term 101·3 and common ratio 0·883. First calculate the model values for altitudes 1–5 km, to one decimal place."
+    },
+    {
+      "suffix": "9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "schemePages": [
+        20,
+        35
+      ],
+      "sourcePages": [
+        16
+      ],
+      "questionText": "Taking any one value other than 0 for the altitude, verify that the pressure given by Thomas’s model and the pressure given by Hannah’s model differ by less than 0·01 kPa.",
+      "scale": "5B",
+      "stem": "Atmospheric pressure is measured in kilopascals (kPa) and decreases with altitude. The supplied data gives altitudes 0, 1, 2, 3, 4, 5 km and respective pressures 101·3, 89·9, 79·5, 70·1, 61·6, 54·0 kPa. Hannah models the data as a geometric sequence with first term 101·3 and common ratio 0·883. Thomas models pressure using p = 101·3e^(−0·1244h), where p is in kPa and h is altitude in km."
+    },
+    {
+      "suffix": "9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "schemePages": [
+        21,
+        35
+      ],
+      "sourcePages": [
+        16,
+        17
+      ],
+      "questionText": "Explain how Thomas might have arrived at the value of the constant 0·1244 in his model.",
+      "scale": "5B",
+      "stem": "Atmospheric pressure is measured in kilopascals (kPa) and decreases with altitude. The supplied data gives altitudes 0, 1, 2, 3, 4, 5 km and respective pressures 101·3, 89·9, 79·5, 70·1, 61·6, 54·0 kPa. Hannah models the data as a geometric sequence with first term 101·3 and common ratio 0·883. Thomas models pressure using p = 101·3e^(−0·1244h), where p is in kPa and h is altitude in km."
+    },
+    {
+      "suffix": "9-c",
+      "printedParts": [
+        "Q9(c)(i)",
+        "Q9(c)(ii)"
+      ],
+      "schemePages": [
+        21,
+        35
+      ],
+      "sourcePages": [
+        16,
+        17
+      ],
+      "questionText": "Hannah’s model is discrete, while Thomas’s is continuous. (i) Explain what this means. (ii) State one advantage of a continuous model over a discrete one.",
+      "scale": "5B",
+      "stem": "Atmospheric pressure is measured in kilopascals (kPa) and decreases with altitude. The supplied data gives altitudes 0, 1, 2, 3, 4, 5 km and respective pressures 101·3, 89·9, 79·5, 70·1, 61·6, 54·0 kPa. Hannah models the data as a geometric sequence with first term 101·3 and common ratio 0·883. Thomas models pressure using p = 101·3e^(−0·1244h), where p is in kPa and h is altitude in km."
+    },
+    {
+      "suffix": "9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "schemePages": [
+        21,
+        35
+      ],
+      "sourcePages": [
+        16,
+        17
+      ],
+      "questionText": "Use Thomas’s model to estimate the atmospheric pressure at the altitude of the top of Mount Everest: 8848 metres.",
+      "scale": "10B",
+      "stem": "Thomas models pressure using p = 101·3e^(−0·1244h), where p is in kPa and h is altitude in km.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "schemePages": [
+        22,
+        36
+      ],
+      "sourcePages": [
+        16,
+        18
+      ],
+      "questionText": "Using Thomas’s model, find an estimate for the altitude at which the atmospheric pressure is half of its value at sea level (altitude 0 km).",
+      "scale": "5C",
+      "stem": "Thomas models pressure using p = 101·3e^(−0·1244h), where p is in kPa and h is altitude in km.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "9-f",
+      "printedParts": [
+        "Q9(f)"
+      ],
+      "schemePages": [
+        22,
+        36
+      ],
+      "sourcePages": [
+        16,
+        18
+      ],
+      "questionText": "People sometimes experience a sensation in their ears when pressure changes rapidly by 1 kilopascal or more. Suppose such a person steps into a fast lift close to sea level. Taking a suitable approximation for the distance between two floors, estimate the number of floors the person would need to travel to feel this sensation.",
+      "scale": "5C",
+      "stem": "Thomas models pressure using p = 101·3e^(−0·1244h), where p is in kPa and h is altitude in km.",
+      "fullCreditMinusOne": true
+    }
+  ],
+  "notes": [
+    "All 20 paper pages and scheme pages 1–36 inspected independently. Parallel legacy booklet remains separate.",
+    "32 printed tasks use 33 published scoring components. Q6(a) has two 10B derivative components; Q7(e,f) and Q9(c)(i,ii) each remain one joint 5-mark response.",
+    "Q9(b)(i) expands all five nonzero altitudes in the supplied table, each retaining 5B; 36 practice cards, 37 controls and 320 practice marks result.",
+    "Only starred scales allow full credit minus one. Q9(e,f) use their explicit detailed-note stars despite omission in the summary.",
+    "Q7(d) detailed header ends in 5 instead of 10. Q9(f) detailed header ends in 10 instead of 5 and includes a mid-credit paragraph despite a 5C scale. Published allocation table and scale table determine maxima; full conflicting originals retained with visible source notes."
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine/six/three questions",
+      "classification": "all-required",
+      "reason": "Every question and task is retained."
+    },
+    {
+      "pages": [
+        4,
+        5,
+        14,
+        16
+      ],
+      "wording": "Shade in the other two; Insert each; four complex fourth roots; Complete the table",
+      "classification": "all-required-within-joint-task",
+      "reason": "All listed entries/roots/regions are mandatory under each published joint scale, not choose-k prompts."
+    },
+    {
+      "pages": [
+        15
+      ],
+      "wording": "which one of the three cups above is the most reasonable shape; For the cup you have chosen in part (e)",
+      "classification": "single-best-answer-and-dependent-task",
+      "reason": "Q8(e) evaluates the most reasonable cup, rather than offering any cup as an equally valid question route. All three candidate cups and prior construction tasks are retained. Q8(f) follows that judgement."
+    },
+    {
+      "pages": [
+        16
+      ],
+      "wording": "Taking any one value other than 0 for the altitude",
+      "classification": "expanded-alternatives",
+      "reason": "The supplied table and the five model solutions give the nonzero pool 1, 2, 3, 4, 5 km. Generate all five one-of-five practice routes with the same 5B tariff."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "State one advantage",
+      "classification": "open-response",
+      "reason": "No finite set of advantages is prescribed."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "One of these values is an integer",
+      "classification": "given-property",
+      "reason": "Both positive values are required; this is data, not a choice."
+    },
+    {
+      "pages": [
+        4
+      ],
+      "wording": "One of these is shaded",
+      "classification": "given-diagram-state",
+      "reason": "The already shaded region is given; both remaining empty regions are mandatory."
+    }
+  ],
+  "paperSha256": "9d57d3a997b8fbebbfd92448f902e65e70bc5d26f3ee76f676db1b4093ec55ea",
+  "schemeSha256": "d034ecd07854cd1ae60fe78514ae6436cbc48618f46272b932a1d56870df67a9"
+}

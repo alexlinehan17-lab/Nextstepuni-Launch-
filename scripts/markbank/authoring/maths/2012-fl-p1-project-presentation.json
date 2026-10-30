@@ -1,0 +1,1443 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003BLP130EV.pdf",
+  "schemeFileid": "LC003BLP030EV.pdf",
+  "tasks": {
+    "1": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 158,
+          "bottom": 191,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 3,
+          "top": 214,
+          "bottom": 232,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 3,
+          "top": 393,
+          "bottom": 412,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 3,
+          "top": 573,
+          "bottom": 591,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 7,
+          "top": 211,
+          "bottom": 233,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 280,
+          "bottom": 304,
+          "x0": 114,
+          "x1": 365
+        },
+        {
+          "page": 7,
+          "top": 350,
+          "bottom": 373,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 419,
+          "bottom": 443,
+          "x0": 114,
+          "x1": 365
+        },
+        {
+          "page": 7,
+          "top": 489,
+          "bottom": 512,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 558,
+          "bottom": 582,
+          "x0": 114,
+          "x1": 365
+        },
+        {
+          "page": 23,
+          "top": 128,
+          "bottom": 292,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit.",
+        "Mid Partial Credit — One correct sequence AND some further work of merit",
+        "Mid Partial Credit — Work of merit in ALL three.",
+        "High Partial Credit — Two correct sequences, with or without correct reasons."
+      ],
+      "inspectedQuestionSha256": "95b0b02ed973491250f1d4e7ea2e7d343f4e7795fd6012b5801c134bc4f3ba4a",
+      "inspectedSolutionSha256": "9decb378441577f06add663723ef1e52e4f2f5115ec4902bf8684b08d271175a"
+    },
+    "2-a": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 88,
+          "bottom": 107,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 323,
+          "bottom": 358,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 139,
+          "bottom": 312,
+          "x0": 82,
+          "x1": 543
+        },
+        {
+          "page": 8,
+          "top": 392,
+          "bottom": 471,
+          "x0": 82,
+          "x1": 543
+        },
+        {
+          "page": 23,
+          "top": 351,
+          "bottom": 459,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any work of merit.",
+        "High Partial Credit — One part correct."
+      ],
+      "inspectedQuestionSha256": "881c47c020ad8c6886bf16be6be13fa7ddf68c2fe13e7b268578f916580c1bf5",
+      "inspectedSolutionSha256": "ca5ad9bdc5a82db728b862af828e6dc9fa7020841e30e96e049a0acd1bc21584"
+    },
+    "2-b": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 504,
+          "bottom": 568,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 4,
+          "top": 731,
+          "bottom": 769,
+          "x0": 120,
+          "x1": 512
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 580,
+          "bottom": 730,
+          "x0": 82,
+          "x1": 543
+        },
+        {
+          "page": 23,
+          "top": 478,
+          "bottom": 571,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — 1 or 2 of the given numbers correctly placed on the line.",
+        "High Partial Credit — 3 or 4 of the given numbers correctly placed on the line."
+      ],
+      "inspectedQuestionSha256": "8ec84dbe18f9547f98aabebb193b96289acce8f528d7fe3fa5e4dd31b4467033",
+      "inspectedSolutionSha256": "6b4511ef1e1ae6979102ab36a119b6be464b8c6277b2b4645281ebccfcecaede"
+    },
+    "3-a": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 88,
+          "bottom": 162,
+          "x0": 52,
+          "x1": 302
+        },
+        {
+          "page": 5,
+          "top": 103,
+          "bottom": 289,
+          "x0": 331,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 195,
+          "bottom": 255,
+          "x0": 114,
+          "x1": 244
+        },
+        {
+          "page": 24,
+          "top": 52,
+          "bottom": 173,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Attempt at multiplication of dimensions in the diagram but does not finish.",
+        "Low Partial Credit — Area defined.",
+        "High Partial Credit — Correct area of one or both squares found."
+      ],
+      "inspectedQuestionSha256": "bba739d62b07dc2ecb5dc7598141530124a9af48d50b10519777e39c8a2fde9f",
+      "inspectedSolutionSha256": "5c2a66534b9e697fc133f8dce71ec8af7aead459823de087eb552bc111109ceb"
+    },
+    "3-b": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 88,
+          "bottom": 162,
+          "x0": 52,
+          "x1": 302
+        },
+        {
+          "page": 5,
+          "top": 103,
+          "bottom": 289,
+          "x0": 331,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 391,
+          "bottom": 546,
+          "x0": 52,
+          "x1": 555
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 495,
+          "bottom": 518,
+          "x0": 114,
+          "x1": 243
+        },
+        {
+          "page": 24,
+          "top": 192,
+          "bottom": 271,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Correct formula with / without substitution.",
+        "Note — Accept use of candidates answer from 3(a)."
+      ],
+      "inspectedQuestionSha256": "805024fbb7ac8383dcb30df27c8cbc1439d28a982f89f3143c9895b411514a43",
+      "inspectedSolutionSha256": "5c23e223d113ec9f110a3403922ec9e30f894881d1f7f2d9111a4234368f6de7"
+    },
+    "3-c": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 88,
+          "bottom": 162,
+          "x0": 52,
+          "x1": 302
+        },
+        {
+          "page": 5,
+          "top": 103,
+          "bottom": 289,
+          "x0": 331,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 391,
+          "bottom": 546,
+          "x0": 52,
+          "x1": 555
+        },
+        {
+          "page": 5,
+          "top": 644,
+          "bottom": 666,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 639,
+          "bottom": 671,
+          "x0": 121,
+          "x1": 261
+        },
+        {
+          "page": 24,
+          "top": 290,
+          "bottom": 411,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any relevant multiplication.",
+        "High Partial Credit — Correct answer (from candidates work) in grams.",
+        "Note — Accept use of candidates answer from 3(b)."
+      ],
+      "inspectedQuestionSha256": "ba4a6b80dbf3c8518817ee5a14598b7d0ac1532c0eca59d3f776e6d704aed3e5",
+      "inspectedSolutionSha256": "41aba57f20178ea19f743e77590acf137d7b003cfe1b4698b156f8e46ac4b731"
+    },
+    "4-a": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 74,
+          "bottom": 108,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 158,
+          "bottom": 191,
+          "x0": 116,
+          "x1": 302
+        },
+        {
+          "page": 25,
+          "top": 53,
+          "bottom": 204,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Attempt to solve equation by Trial and Improvement.",
+        "Low Partial Credit — Any one correct step.",
+        "High Partial Credit — Correct solution to equation and ignores inequality.",
+        "High Partial Credit — Correct method but with an error.",
+        "High Partial Credit — Correct verified solution to equation by Trial and Improvement but no solution set."
+      ],
+      "inspectedQuestionSha256": "0101dd6d364ab322e61d0a9226526ad446edddae57fdb8ce16162329320a42bd",
+      "inspectedSolutionSha256": "6a10b4a686c0a0cf3987bc68dc3666b477dfb0f0385f5514b3d4c1df19c0b932"
+    },
+    "4-b": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 364,
+          "bottom": 416,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 444,
+          "bottom": 529,
+          "x0": 115,
+          "x1": 403
+        },
+        {
+          "page": 25,
+          "top": 222,
+          "bottom": 459,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Effort at equalising the coefficients of a or b.",
+        "Low Partial Credit — Effort at cancelling one variable.",
+        "Low Partial Credit — Effort at writing a in terms of b or vice versa.",
+        "Low Partial Credit — Correct answer without work.",
+        "Low Partial Credit — Random a picked and used to calculate b or vice versa.",
+        "Mid Partial Credit — One variable correctly cancelled.",
+        "High Partial Credit — One solution correctly found.",
+        "Note — Award full marks for substitution of correct values in both equations if verification is shown."
+      ],
+      "inspectedQuestionSha256": "3e395d0474a12c5ae7a3c9ff76e6505ade21a08e62c3a1f732e2b62caee5d381",
+      "inspectedSolutionSha256": "578277ab199d0bfdc5b8d073854aca1450dbed7a3346ebc10ebc565735c0d6cd"
+    },
+    "5-a": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 75,
+          "bottom": 96,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 143,
+          "bottom": 221,
+          "x0": 116,
+          "x1": 244
+        },
+        {
+          "page": 26,
+          "top": 51,
+          "bottom": 259,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Incorrect factors and did not finish.",
+        "Low Partial Credit — Effort at solution by Trial and Improvement.",
+        "Low Partial Credit — Any correct step.",
+        "High Partial Credit — Correct factors but roots not found.",
+        "High Partial Credit — Incorrect factors but finished correctly.",
+        "High Partial Credit — One correct solution from Trial and Improvement, but must be verified.",
+        "Note — Award full marks for correct solutions from Trial and Improvement, if both are verified."
+      ],
+      "inspectedQuestionSha256": "2d71f6743ceadb30b187828f507076fb1282956ea112bb3197b24a9c65cf6beb",
+      "inspectedSolutionSha256": "f73d4b38ffb95baba938f8d9d011f525857055a11fe9d120051374ce88a96737"
+    },
+    "5-b": {
+      "topic": "4-2",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 394,
+          "bottom": 415,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 368,
+          "bottom": 533,
+          "x0": 116,
+          "x1": 274
+        },
+        {
+          "page": 26,
+          "top": 277,
+          "bottom": 484,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any correct work, e.g. effort at factors or a correct transposition.",
+        "Low Partial Credit — Correct formula written.",
+        "Low Partial Credit — Value of a, b or c (for quadratic formula) identified.",
+        "Mid Partial Credit — Correct method but errors made in calculating.",
+        "High Partial Credit — One solution correctly found.",
+        "Note — Award full marks for substitution of both correct values into equation if verification is shown."
+      ],
+      "inspectedQuestionSha256": "2e2b503714c30a2e0961db0a239d249d59e33bf6b19f62c3ab46b7eb21e92b93",
+      "inspectedSolutionSha256": "08c3b4dc09591dfd0880445697e44f4bd07566106285f3e6d7ed0048d55bb9d0"
+    },
+    "6": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 74,
+          "bottom": 172,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 8,
+          "top": 193,
+          "bottom": 213,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 8,
+          "top": 290,
+          "bottom": 309,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 8,
+          "top": 387,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 8,
+          "top": 486,
+          "bottom": 505,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 8,
+          "top": 585,
+          "bottom": 606,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 9,
+          "top": 60,
+          "bottom": 748,
+          "x0": 67,
+          "x1": 528
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 13,
+          "top": 58,
+          "bottom": 746,
+          "x0": 65,
+          "x1": 526
+        },
+        {
+          "page": 12,
+          "top": 246,
+          "bottom": 267,
+          "x0": 332,
+          "x1": 520
+        },
+        {
+          "page": 12,
+          "top": 357,
+          "bottom": 378,
+          "x0": 332,
+          "x1": 520
+        },
+        {
+          "page": 12,
+          "top": 470,
+          "bottom": 492,
+          "x0": 332,
+          "x1": 520
+        },
+        {
+          "page": 12,
+          "top": 585,
+          "bottom": 607,
+          "x0": 332,
+          "x1": 520
+        },
+        {
+          "page": 12,
+          "top": 704,
+          "bottom": 728,
+          "x0": 332,
+          "x1": 520
+        },
+        {
+          "page": 26,
+          "top": 530,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Work of merit in at least 1 part.",
+        "Mid Partial Credit — 1 or 2 parts correct or work of merit in at least 3 parts.",
+        "High Partial Credit — 3 or 4 parts correct, or",
+        "High Partial Credit — 2 parts correct + work of merit in two other parts.",
+        "Note — Accept use of candidates’ values from their work on the graph. Allow tolerance of ± 0·2."
+      ],
+      "inspectedQuestionSha256": "1b52fde12cd86509e4cf356a7b7e4d813e17f8f7acaa15480980bf7efced2d68",
+      "inspectedSolutionSha256": "592c8531b003817f102e09ab38baa390e6d41b8482d99f7c47bae4d50e11edfe"
+    },
+    "7-a-i-ii": {
+      "topic": "3-1",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 158,
+          "bottom": 439,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 10,
+          "top": 448,
+          "bottom": 482,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 10,
+          "top": 614,
+          "bottom": 661,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 207,
+          "bottom": 438,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 501,
+          "bottom": 579,
+          "x0": 113,
+          "x1": 432
+        },
+        {
+          "page": 14,
+          "top": 670,
+          "bottom": 734,
+          "x0": 86,
+          "x1": 435
+        },
+        {
+          "page": 27,
+          "top": 82,
+          "bottom": 287,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — 1 correct.",
+        "Low Partial Credit — Any work of merit.",
+        "Mid Partial Credit — 2 or 3 parts correct.",
+        "High Partial Credit — 4 or 5 parts correct.",
+        "Note — Any insertion in the “Summary” section which is consistent with earlier section counts as “correct”."
+      ],
+      "inspectedQuestionSha256": "67218525b8b5a86d4f3a2a215abd756074b577da9611de82e39d3baec13c474e",
+      "inspectedSolutionSha256": "4422ccfa73dc615613fce6cb5ad4a0f9cb2f2ceffb348480e995c6239a147f34"
+    },
+    "7-a-iii": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 158,
+          "bottom": 439,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 10,
+          "top": 448,
+          "bottom": 482,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 10,
+          "top": 614,
+          "bottom": 661,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 11,
+          "top": 54,
+          "bottom": 115,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 166,
+          "bottom": 250,
+          "x0": 112,
+          "x1": 372
+        },
+        {
+          "page": 27,
+          "top": 306,
+          "bottom": 470,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — One correct step.",
+        "Mid Partial Credit — One calculation completed correctly.",
+        "High Partial Credit — One calculation omitted or incorrect.",
+        "Note — Accept the use of candidates answers from 7(a)(ii) above."
+      ],
+      "inspectedQuestionSha256": "d7574aadf93717a24c28428d9ebb07cc020c166abe464f96d82b6f1f7f88d7a2",
+      "inspectedSolutionSha256": "e94f96753e62994e9ff578e31ab7d91dfa4113e7e37b2856a55c6a984f9125f2"
+    },
+    "7-a-iv": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 11,
+          "top": 399,
+          "bottom": 446,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 461,
+          "bottom": 585,
+          "x0": 112,
+          "x1": 338
+        },
+        {
+          "page": 27,
+          "top": 488,
+          "bottom": 582,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any correct step.",
+        "High Partial Credit — Method correct but with errors."
+      ],
+      "inspectedQuestionSha256": "3acd9fbaff42202c86d7211aef0427ebe1b7b449a310db5e63c3a96a7e2e249a",
+      "inspectedSolutionSha256": "5a3b462417f42f106757d10ae43b3db69acad85b36dbb8166054672993d76066"
+    },
+    "7-b-i": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 54,
+          "bottom": 182,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 121,
+          "bottom": 179,
+          "x0": 82,
+          "x1": 544
+        },
+        {
+          "page": 27,
+          "top": 600,
+          "bottom": 667,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Candidate completes the table, pattern obvious but incorrect.",
+        "Partial Credit — At least one correct or consistent step."
+      ],
+      "inspectedQuestionSha256": "91b2425682de3bd1389ec6632e7a25905f468bbf1ea8bf37e0213df684a0f943",
+      "inspectedSolutionSha256": "f430436d692b568a277f3a7736a5fe3cfdc476911428191e2f9b56e40677b77a"
+    },
+    "7-b-ii": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 54,
+          "bottom": 182,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 12,
+          "top": 216,
+          "bottom": 704,
+          "x0": 52,
+          "x1": 515
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 250,
+          "bottom": 703,
+          "x0": 90,
+          "x1": 508
+        },
+        {
+          "page": 28,
+          "top": 53,
+          "bottom": 189,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — 1, 2 or 3 points plotted correctly.",
+        "Low Partial Credit — Correct indication of any of the heights.",
+        "High Partial Credit — 4 points plotted correctly.",
+        "Note — if all the points are plotted correctly but not joined, award full credit."
+      ],
+      "inspectedQuestionSha256": "a3b7736c02fd6e9baf8c8bf53e0c2c70d05c865459a9d638f8a8482d48b9f876",
+      "inspectedSolutionSha256": "e5afb3fa2d4a4f96f21ed615412116332313a7ba217e475d826857efeb10a01e"
+    },
+    "7-b-iii": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 54,
+          "bottom": 182,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 12,
+          "top": 216,
+          "bottom": 704,
+          "x0": 52,
+          "x1": 515
+        },
+        {
+          "page": 13,
+          "top": 55,
+          "bottom": 78,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 250,
+          "bottom": 703,
+          "x0": 90,
+          "x1": 508
+        },
+        {
+          "page": 17,
+          "top": 131,
+          "bottom": 147,
+          "x0": 114,
+          "x1": 202
+        },
+        {
+          "page": 28,
+          "top": 207,
+          "bottom": 342,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — A reasonable answer outside of the tolerance allowed.",
+        "High Partial Credit — Answer read correctly from graph but not given in thousands.",
+        "Note — Accept an answer from the candidate’s graph – full credit if correct, etc. Allow tolerance of ±10 000."
+      ],
+      "inspectedQuestionSha256": "34fc583190d906388f7e1a647bbfa9867bf4e38fb15d3ab6384b5c07c71c4123",
+      "inspectedSolutionSha256": "4f1b26ebbe7b37c3e41c026fef6e0c3541486356202bcea347ca5bd611e211cc"
+    },
+    "7-b-iv": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 54,
+          "bottom": 182,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 12,
+          "top": 216,
+          "bottom": 704,
+          "x0": 52,
+          "x1": 515
+        },
+        {
+          "page": 13,
+          "top": 133,
+          "bottom": 181,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 250,
+          "bottom": 703,
+          "x0": 90,
+          "x1": 508
+        },
+        {
+          "page": 17,
+          "top": 312,
+          "bottom": 352,
+          "x0": 114,
+          "x1": 326
+        },
+        {
+          "page": 28,
+          "top": 361,
+          "bottom": 455,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Some relevant work shown.",
+        "High Partial Credit — Answer is correct but forgot to add the time to 10:00."
+      ],
+      "inspectedQuestionSha256": "6564c41cb7ed5a2dcffc783e831f6ec75e457de6286e9ea3d4d8ee05ba29f56e",
+      "inspectedSolutionSha256": "d03c434bb59da552b5885fae2e0d878b1bff47a676cab9313004581ef43d4143"
+    },
+    "8-a": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 205,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 535
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 235,
+          "bottom": 673,
+          "x0": 90,
+          "x1": 535
+        },
+        {
+          "page": 29,
+          "top": 52,
+          "bottom": 159,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — 1 of the three given points plotted correctly.",
+        "High Partial Credit — 2 of the three given points plotted correctly."
+      ],
+      "inspectedQuestionSha256": "c74b7632de675f5165efe00314666d5b6cfa1daa16f8678e5c37dbe9d0adc25e",
+      "inspectedSolutionSha256": "74fc88d528a6ce96a4e6d6ab786369227b95e0277931c74eb7ea31b0a2fed8fb"
+    },
+    "8-b": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 205,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 535
+        },
+        {
+          "page": 14,
+          "top": 702,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 235,
+          "bottom": 673,
+          "x0": 90,
+          "x1": 535
+        },
+        {
+          "page": 29,
+          "top": 177,
+          "bottom": 229,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — The line is drawn through at least one correct point."
+      ],
+      "inspectedQuestionSha256": "09b517c35904d7e5d58f7cbd50872de6fef99cfab651b746f8e2d9481afaeff9",
+      "inspectedSolutionSha256": "48ea0af094abf1513183d03f5900cd1ff25c04c4a3567ec5e0c9fcbe8ba33caa"
+    },
+    "8-c": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 205,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 535
+        },
+        {
+          "page": 14,
+          "top": 702,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 15,
+          "top": 54,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 235,
+          "bottom": 673,
+          "x0": 90,
+          "x1": 535
+        },
+        {
+          "page": 19,
+          "top": 92,
+          "bottom": 117,
+          "x0": 114,
+          "x1": 198
+        },
+        {
+          "page": 29,
+          "top": 247,
+          "bottom": 412,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Some relevant work shown.",
+        "Low Partial Credit — Answer read from incorrect axis but outside tolerance of ±7.",
+        "High Partial Credit — Answer outside of tolerance of ±1 but inside tolerance of ±7.",
+        "High Partial Credit — Answer read from incorrect axis but inside tolerance of ±1.",
+        "Note — Accept an answer consistent with the candidates graph – full credit if correct etc. Allow tolerance of ±1."
+      ],
+      "inspectedQuestionSha256": "1b400df9be0b4f25ed67464a738de463d876460ce1890e1c163ddafe3481fb9c",
+      "inspectedSolutionSha256": "ddffaf9ab5402365b205494ac3d61727abdbf5fd7d21ba329ef176f319bf7ed4"
+    },
+    "8-d": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 205,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 535
+        },
+        {
+          "page": 14,
+          "top": 702,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 15,
+          "top": 123,
+          "bottom": 143,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 235,
+          "bottom": 673,
+          "x0": 90,
+          "x1": 535
+        },
+        {
+          "page": 19,
+          "top": 190,
+          "bottom": 214,
+          "x0": 114,
+          "x1": 198
+        },
+        {
+          "page": 29,
+          "top": 430,
+          "bottom": 595,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Some relevant work shown.",
+        "Low Partial Credit — Answer read from incorrect axis but outside tolerance of ±7.",
+        "High Partial Credit — Answer outside of tolerance of ±1 but inside tolerance of ±7.",
+        "High Partial Credit — Answer read from incorrect axis but inside tolerance of ±1.",
+        "Note — Accept an answer consistent with the candidates graph – full credit if correct etc. Allow tolerance of ±1."
+      ],
+      "inspectedQuestionSha256": "2e9ecf4340bb4365dca959460b8c57cf9a47d3341978b95bf386bebcd3c582e4",
+      "inspectedSolutionSha256": "9f33dd9709fa4e3a43078ec8d767b065e71df31e3e1ce5c2b4bf1b3136a0e8f1"
+    },
+    "8-e": {
+      "topic": "5-1",
+      "atlas": "graphs-of-functions",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 205,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 535
+        },
+        {
+          "page": 14,
+          "top": 702,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 15,
+          "top": 192,
+          "bottom": 212,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 235,
+          "bottom": 673,
+          "x0": 90,
+          "x1": 535
+        },
+        {
+          "page": 19,
+          "top": 315,
+          "bottom": 411,
+          "x0": 115,
+          "x1": 296
+        },
+        {
+          "page": 29,
+          "top": 613,
+          "bottom": 678,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Any correct / relevant step, e.g. correct formula identified, or Slope = Rise over Run, with or without substitution."
+      ],
+      "inspectedQuestionSha256": "eec3dcbeb5d40139d1f2217a45c8c3aeb55d28d91be8f51ab5125aedc5965833",
+      "inspectedSolutionSha256": "53175be929a1d621b95c1717b328e0f249e42ebf1bc4960bc3365f50a2f12aba"
+    },
+    "8-f": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 205,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 535
+        },
+        {
+          "page": 14,
+          "top": 702,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 15,
+          "top": 413,
+          "bottom": 486,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 472,
+          "bottom": 494,
+          "x0": 82,
+          "x1": 485
+        },
+        {
+          "page": 30,
+          "top": 52,
+          "bottom": 104,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Answer indicates an upward trend or a positive slope of the line on the graph."
+      ],
+      "inspectedQuestionSha256": "5e52b2c6550cf25dfefedcea7bc322e5c28aeee44faa6e27c0df2db3d7c560cc",
+      "inspectedSolutionSha256": "a3f7a974977598236bb247410d0cd12c47f8ac48880ce20e0c2a5294a404de02"
+    },
+    "8-g": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 14,
+          "top": 205,
+          "bottom": 677,
+          "x0": 52,
+          "x1": 535
+        },
+        {
+          "page": 14,
+          "top": 702,
+          "bottom": 736,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 15,
+          "top": 508,
+          "bottom": 583,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 538,
+          "bottom": 590,
+          "x0": 82,
+          "x1": 468
+        },
+        {
+          "page": 30,
+          "top": 122,
+          "bottom": 216,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Either of the two required answers correct.",
+        "Partial Credit — Any relevant step or correct indication of the exchange rate.",
+        "Note — Accept the use of candidates values from their work on the graph."
+      ],
+      "inspectedQuestionSha256": "9663c52dc65416deb080022920f794086f9cd62b890c927696a58771c43ad711",
+      "inspectedSolutionSha256": "be922eb47343c0492c4b500572c8997c40bc271dc2b39225b50309c43ceda9b8"
+    },
+    "8-h": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 15,
+          "top": 604,
+          "bottom": 638,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 663,
+          "bottom": 715,
+          "x0": 114,
+          "x1": 432
+        },
+        {
+          "page": 30,
+          "top": 234,
+          "bottom": 286,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — Reason omitted or incorrect."
+      ],
+      "inspectedQuestionSha256": "d73023ef4852f91064f3ae5b860a6e0ed963ce6aeecd18664683ad708a115052",
+      "inspectedSolutionSha256": "da9606076edfe67cf1521186ff0f24c1166fd1de0fc444363f091c4d7b454cae"
+    },
+    "8-i": {
+      "topic": "3-3",
+      "atlas": "arithmetic",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 74,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 558
+        },
+        {
+          "page": 16,
+          "top": 54,
+          "bottom": 122,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 154,
+          "bottom": 290,
+          "x0": 114,
+          "x1": 379
+        },
+        {
+          "page": 30,
+          "top": 304,
+          "bottom": 356,
+          "x0": 52,
+          "x1": 558
+        }
+      ],
+      "rows": [
+        "Partial Credit — A correct or relevant step."
+      ],
+      "inspectedQuestionSha256": "2c4e2f53d38b837064d4a81322ef419d40271036f5c4dacb7fc27e08e499b3c9",
+      "inspectedSolutionSha256": "bdd787ff5282c372da4024a58810cedb52d3dbadf3cd022d76f6c121d2095d6c"
+    }
+  },
+  "reviewedAt": "2026-10-30"
+}

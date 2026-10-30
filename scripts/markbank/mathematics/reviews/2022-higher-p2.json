@@ -1,0 +1,1287 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2022,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "e0e4d90375d23ccfebf9106b31036dd4748d835378a252782ee653b3126cd7f7",
+  "schemeSha256": "e29a0c5bbc7174e05070790de76ff1438f52441bfc3b2325ed28aad4f51d1ce0",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 31–60 of the combined Higher Level scheme (Paper 2 title page, the Paper 2 scale table on page 32, the summary of allocations on page 33, annotation palette, every Paper 2 model solution and marking note, and the closing page). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    32,
+    33
+  ],
+  "sourceNotes": [
+    "The 2022 paper was adjusted for COVID-19 (220 marks): candidates answer any four of Q1–6 (30 marks each) and any two of Q7–10 (50 marks each), so 380 marks are offered and 220 count. Every question is retained.",
+    "43 independently marked units, matching the printed summary of allocations on scheme page 33. Shared scales keep their parts together: Q5(a)(i)–(ii) 10C, Q8(a)(i)–(ii) 10C, Q8(a)(iii)–(iv) 5C and Q8(a)(v) with Q8(b) 5B.",
+    "Paper 2 bands from scheme page 32: 5B 0,2,5; 5C 0,2,3,5; 10C 0,3,7,10; 10D 0,3,5,8,10; 15D 0,4,8,12,15; 15E 0,3,6,9,12,15. Q10(e) is a six-category E scale whose bands the scheme names Low, Low Mid, High Mid and High Partial Credit.",
+    "Before this review the deck held 41 of the 43 units and shipped 40. Q4(a)(ii) (tan 15° in surd form, 10C) and Q8(a)(v) with Q8(b) (correlation coefficient and a reason it is near 0, one 5B scale) had no card and are added. Q2(a) was refused by the provenance gate because its high-partial line joined two bullets the scheme prints apart; its marking points are now quoted one bullet each. Q5(a)(i)–(ii), Q7(e), Q10(a)(i), Q10(d) and Q10(e) carried garbled or merged scheme text (stacked fractions read out of order, the Q10(e) six-category bands run together); they are re-quoted and labelled by band. All existing IDs are kept; prompts are restored from the paper and topics corrected as metadata.",
+    "The question booklet is LC003ALP200EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2022-hl-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank.",
+      "questionText": "Fill in the three missing values to complete the table above."
+    },
+    {
+      "id": "maths-2022-hl-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The table below gives some details on the number of different types of student in a university. There are 22 714 students in the university in total. Undergraduate: 12 785 aged 23 or younger, 2922 aged 24 or older, 15 707 in total. Postgraduate: 1353 aged 23 or younger. Total aged 24 or older: 8576. The other three cells of the table are blank.",
+      "questionText": "One student is picked at random from the students in the university. Let O be the event that the student is 24 years old, or older. Let U be the event that the student is an undergraduate. Are the events O and U independent? Justify your answer."
+    },
+    {
+      "id": "maths-2022-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Three people are picked at random from a class. Find the probability that all three were born on the same day of the week. Assume that the probability of being born on each day is the same."
+    },
+    {
+      "id": "maths-2022-hl-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability",
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "questionText": "There are b boys and g girls in a class, where b, g ∈ ℕ. 3/5 of the students in the class are girls. 4 boys and 4 girls join the class. One student is then picked at random from the whole class. The probability that this student is a girl is now 4/7. Find the value of b and the value of g."
+    },
+    {
+      "id": "maths-2022-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The points A (8, −4) and B (−1, 3) are the endpoints of the line segment [AB]. Find the coordinates of the point C, which divides [AB] internally in the ratio 4 : 1."
+    },
+    {
+      "id": "maths-2022-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line l has a slope of m and contains the point (q, r), where m, q, r ∈ ℝ are all positive. Find the co-ordinates of the point where l cuts the y-axis, in terms of m, q, and r."
+    },
+    {
+      "id": "maths-2022-hl-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line k has a slope of −2. The line j makes an angle of 30° with k. Find one possible value of the slope of the line j. Give your answer in the form d + e√f, where d, e, f ∈ ℤ."
+    },
+    {
+      "id": "maths-2022-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle c has equation x² + y² − 2x + 8y + k = 0, where k ∈ ℝ. The radius of c is 5√3. Find the value of k."
+    },
+    {
+      "id": "maths-2022-hl-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle (x − 5)² + (y + 2)² = 20 has a tangent at the point (9, −4). Find the slope of this tangent."
+    },
+    {
+      "id": "maths-2022-hl-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Two circles each have both the x-axis and the y-axis as tangents, and each contains the point (1, −8), as shown in the diagram on the right (not to scale). Find the equation of each of these circles."
+    },
+    {
+      "id": "maths-2022-hl-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Prove that tan(A − B) = (tan A − tan B)/(1 + tan A tan B)."
+    },
+    {
+      "id": "maths-2022-hl-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Write tan 15° in the form (√a − 1)/(√a + 1), where a ∈ ℕ."
+    },
+    {
+      "id": "maths-2022-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "The triangle ABC is shown in the diagram below. |AC| = |BC| and |∠ACB| = 45°. |AB| = 10√(2 − √2), as shown. Find the length |AC|."
+    },
+    {
+      "id": "maths-2022-hl-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places.",
+      "questionText": "(i) Work out the proportion of the sample that preferred remote learning. (ii) Use the margin of error (1/√n) to create a 95% confidence interval for the proportion of the population that preferred remote learning."
+    },
+    {
+      "id": "maths-2022-hl-p2-q5-a-iii",
+      "printedParts": [
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A survey on remote learning was carried out on a random sample of 400 students. 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as decimals, correct to 4 decimal places.",
+      "questionText": "Using the proportion from part (a)(i), create a 95% confidence interval for this population proportion that is more accurate than the 95% confidence interval based on the margin of error."
+    },
+    {
+      "id": "maths-2022-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "In 2019, people with a pre-pay mobile phone plan spent an average (mean) of €20·79 on their mobile phone each month (source: www.comreg.ie). In 2021, some students carried out a survey to see if this figure had changed. They surveyed a random sample of 500 people with pre-pay mobile phone plans. For this sample, the mean amount spent per month was €22·16 and the standard deviation was €8·12. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the mean monthly spend on mobile phones for people with a pre-pay plan. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion."
+    },
+    {
+      "id": "maths-2022-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Construct the circumcentre of the triangle XYZ shown below, using only a compass and straight edge. Label the circumcentre C. Show your construction lines clearly."
+    },
+    {
+      "id": "maths-2022-hl-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "questionText": "The points A, B, C, and D lie on a circle, as shown in the diagram on the right (not to scale). [AB] is a diameter of the circle. |∠DAC| = 40°, as shown. The triangle ABD is isosceles. Find |∠ADC|."
+    },
+    {
+      "id": "maths-2022-hl-p2-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The diagram on the right shows the triangle PQR (not to scale). The angle at R is greater than 90°. k is the circumcircle of PQR, as shown, and O is the circumcentre. O is not shown in the diagram.",
+      "questionText": "Prove that O cannot be inside the triangle PQR. If you are proving this by contradiction, your first line should be: “Assume that O is inside the triangle PQR.”"
+    },
+    {
+      "id": "maths-2022-hl-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes and sells candles of different shapes and sizes.",
+      "questionText": "A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450π cm³. Work out the height of this candle."
+    },
+    {
+      "id": "maths-2022-hl-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes and sells candles of different shapes and sizes.",
+      "questionText": "A small candle in the shape of a cone has a volume of 12π cm³. A large candle, also in the shape of a cone, has a volume of 150π cm³. The height of the small candle is h, and the height of the large candle is 2h. The large candle has a radius that is k times that of the small candle, where k ∈ ℝ. Work out the value of k."
+    },
+    {
+      "id": "maths-2022-hl-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes and sells candles of different shapes and sizes.",
+      "questionText": "A third conical candle has its curved surface area covered in cloth. The net of the cloth is shown in the diagram below (not to scale). This net covers the cone perfectly, with no overlapping material. In the diagram, |∠BOA| = 216°, as shown. |OA| = 8 cm. Find the length of the arc from B to A, in terms of π, and hence find the radius of the cone. Give both answers in cm."
+    },
+    {
+      "id": "maths-2022-hl-p2-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes and sells candles of different shapes and sizes.",
+      "questionText": "A spherical ball of wax is used as a candle. The radius of the sphere is 2·7 cm. Find the volume of the sphere, correct to 3 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p2-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A company makes and sells candles of different shapes and sizes. A spherical ball of wax is used as a candle. The radius of the sphere is 2·7 cm.",
+      "questionText": "A horizontal slice is cut off this sphere so that the candle will balance on level surfaces. The area of the circular base of this candle is 5·4 cm². Find the value of l, the vertical distance from the top of the candle to where the cut is made. As shown in the diagram on the right, l > 2·7 cm. Give your answer in cm, correct to the nearest mm."
+    },
+    {
+      "id": "maths-2022-hl-p2-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A company makes and sells candles of different shapes and sizes.",
+      "questionText": "Part of the logo of the company is shown below. ABCD is a square, with sides of length 30 cm. The points E and F are the midpoints of [AB] and [AD], respectively. The lines EC and FB are perpendicular, and meet at the point O. Using similar triangles or trigonometry, find the length |EO|. Give your answer in the form a√b cm, where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2022-hl-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)",
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30.",
+      "questionText": "(i) The scatterplot below shows this data for cars A to F. Using the data in the table above, plot and label points to represent cars G and H on the scatterplot below. (ii) On the scatterplot, draw the line of best fit for the data, by eye."
+    },
+    {
+      "id": "maths-2022-hl-p2-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)",
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30.",
+      "questionText": "(iii) Two other cars, K and L, have the miles per gallon values given in the following table: K has a city value of 20; L has a motorway value of 60. Use your line of best fit on the scatterplot to fill in an estimate for each of the two missing values in the table below. Show your work on the scatterplot. (iv) Based on the data given, would you be more confident in the value you estimated for K or for L? Give a reason for your answer. (Tick one box only.)"
+    },
+    {
+      "id": "maths-2022-hl-p2-q8-a-v",
+      "printedParts": [
+        "Q8(a)(v)",
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        21,
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway. City (m/g): A 22, B 27, C 24, D 16, E 15, F 21, G 30, H 17. Motorway (m/g): A 34, B 38, C 34, D 27, E 24, F 30, G 40, H 30.",
+      "questionText": "(a)(v) Find the value of r, the correlation coefficient between city and motorway miles per gallon. Use only the values for the 8 cars A to H in the table on the previous page. Give your answer correct to 3 decimal places. (b) The scatterplot on the right shows some values of fuel consumption (F) for the given values of engine speed (S), for a particular car. For the points in this scatterplot, F can be closely approximated by a quadratic function of S. r_FS is the correlation coefficient between F and S, based on the points in this scatterplot. Give a reason why you might think that r_FS is very close to 0."
+    },
+    {
+      "id": "maths-2022-hl-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "questionText": "13 customers rated their experience in a garage, by giving a whole-number score out of 100. The mean score was 52. The median score was 54. No two scores were the same. The table below shows the score for each of the 13 customers (in no particular order): 46, 68, 24, 74, 42, 30, 61, 54, 28, 50, 57, S, M. Stephen gave a score of S and Mary gave a score of M, where S, M ∈ ℕ. Find the least value and the greatest value that S could be."
+    },
+    {
+      "id": "maths-2022-hl-p2-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073.",
+      "questionText": "If the head gasket blows, John will have to replace his car, at an estimated cost of €20 000. If the head gasket is replaced now, it will cost €1450, and the probability that it blows in the next year will be reduced to 0·005. Based on these figures, use expected values to work out if it is worth replacing the head gasket now, or not."
+    },
+    {
+      "id": "maths-2022-hl-p2-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year: head gasket blows, 0·095; timing belt goes, 0·041; air filters break, 0·073.",
+      "questionText": "Work out the probability that at least one of the events in the table above happens to John’s car this year, taking these events to be independent. Give your answer correct to 3 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle.",
+      "questionText": "Find the area of Field 1 and, hence, find the area of Field 2. Give each answer correct to the nearest m²."
+    },
+    {
+      "id": "maths-2022-hl-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (ABC) and Field 2 (BDC), as shown in the diagram below (not to scale). B lies on the line AD. |AB| = 30 m, |BD| = 10 m, |AC| = 35 m, and |∠CAD| = 50°. Note: the angle ABC is not a right angle.",
+      "questionText": "Find the length of the perimeter of Field 1. Give your answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2022-hl-p2-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air.",
+      "questionText": "As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it takes 41 seconds for the sound the airplane makes at P₁ to reach Oscar, correct to the nearest second."
+    },
+    {
+      "id": "maths-2022-hl-p2-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air.",
+      "questionText": "The airplane P is flying at a constant speed of 255 metres per second. By the time Oscar hears the sound the airplane made at the point P₁, the airplane has flown on to the point P₂, as shown in Diagram 2 above. Work out the size of the angle marked θ in Diagram 2, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-hl-p2-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis.",
+      "questionText": "Explain briefly why the following equation holds: √(100 + d²)/0·343 = 2d/0·255"
+    },
+    {
+      "id": "maths-2022-hl-p2-q9-d-ii",
+      "printedParts": [
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "Oscar is also watching an airplane, P, fly directly over his head. He is standing at the point O in the diagrams below. The x-axis is the horizontal ground and the y-axis runs vertically up from Oscar. The airplane P is flying at a constant height of 10 km above the ground, as shown in the diagrams. Sound travels at a speed of roughly 343 metres per second in air. P₃ and P₄ are two other points on the flightpath of airplane P. By the time Oscar hears the sound the airplane made at the point P₃, the airplane has flown on to the point P₄, as shown in the diagram below (not to scale). P₃ and P₄ are both a distance of d km from the y-axis. The equation is √(100 + d²)/0·343 = 2d/0·255.",
+      "questionText": "Solve the equation above to find the value of d, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2022-hl-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds.",
+      "questionText": "Find the percentage of runners in these heats who took more than 240 seconds to run the 1500 m."
+    },
+    {
+      "id": "maths-2022-hl-p2-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "In an athletics competition, there were a number of heats of the 1500 m race. In the heats, the times that it took the runners to complete the 1500 m were approximately normally distributed, with a mean time of 225 seconds and a standard deviation of 12 seconds.",
+      "questionText": "The 20% of runners with the fastest times qualified for the final. Assuming the race times were normally distributed as described above, work out the time needed to qualify for the final, correct to the nearest second."
+    },
+    {
+      "id": "maths-2022-hl-p2-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        57
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Sally takes part in a number of different races in the competition. The probability that she makes a false start in any given race is 5%. Find the probability that she makes her first false start in her fourth race. Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p2-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        58
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0·1. Find the probability that at most 2 teams drop the baton during the competition. Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2022-hl-p2-q10-d",
+      "printedParts": [
+        "Q10(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        58
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "300 runners take part in a road race. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number. Two runners are picked at random from the runners in this race. Work out the probability that the sum of their numbers is 101. Give your answer as a fraction in its simplest form."
+    },
+    {
+      "id": "maths-2022-hl-p2-q10-e",
+      "printedParts": [
+        "Q10(e)"
+      ],
+      "totalMarks": 15,
+      "scale": "15E",
+      "permittedMarks": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15
+      ],
+      "schemePages": [
+        59
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "questionText": "Sorcha ran two different marathons: the Windy Marathon and the Sunny Marathon. The table below gives some details on the finishing times for the two marathons. For each marathon, the finishing times of the runners were approximately normally distributed. Sorcha’s position in each marathon was based on her finishing time. Sorcha came 5265th in the Windy Marathon, so exactly 5264 of the 6000 runners had a finishing time that was less than Sorcha’s. Sorcha’s finishing time for both marathons was the same. Use this fact, and the details in the table, to estimate Sorcha’s position in the Sunny Marathon. Show all of your working out. Windy Marathon: mean finishing time 254 minutes, standard deviation 38 minutes, 6000 runners, Sorcha’s position 5265th. Sunny Marathon: mean 247 minutes, standard deviation 29 minutes, 2000 runners."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "wording": "Find one possible value of the slope of the line j",
+      "classification": "open-answer",
+      "reason": "Either slope (8 + 5√3 or 8 − 5√3) answers the single required task; the scheme marks both."
+    },
+    {
+      "pages": [
+        21
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "K or L is the answer to Q8(a)(iv), with a required reason, not a choice of prompts."
+    },
+    {
+      "pages": [
+        23
+      ],
+      "wording": "at least one of the events",
+      "classification": "mathematical-context",
+      "reason": "Defines the event whose probability is required; there is a single prompt."
+    }
+  ],
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:8503f5af75322140": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:7ec7dda8ff2342dc": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "23:36bab713c17c199f": {
+      "classification": "mathematical-context",
+      "reason": "Defines the compound event “at least one of the three events happens” whose probability is required; there is a single prompt."
+    }
+  }
+}

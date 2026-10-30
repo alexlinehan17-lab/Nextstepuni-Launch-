@@ -1,0 +1,1335 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2012,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "47c0ff2c6be7913b56a5860df7f1c4c45cb46eadb6c4669534f709fa2327a15a",
+  "schemeSha256": "e85db588977d87d8b54f14af6f0cc92754bfa7c01417284023937d2e08903cbd",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual inspection of all 20 original paper pages and scheme PDF pages 37–72, including every model, alternative proof, diagram, scale, component allocation and detailed credit note. All 43 question and 43 solution crops inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5A": 25,
+    "5B": 25,
+    "6": 75,
+    "7": 50,
+    "8": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    56,
+    57
+  ],
+  "sourceNotes": [
+    "43 independently practicable tasks and 43 scales; Q5A and Q5B both retained. All sections, including old-syllabus Section C, use the Paper 2 modern scales.",
+    "Ten starred tasks only: Q2(b)(iii), Q7(b,c,d), all six Q8 tasks. Q6(b)(ii) is binary 5A; Q5B is 25C with awards 0/8/17/25.",
+    "Q3(b) requires two methods under one 5B scale; Q3(c) is one open application. All four model solution methods retained.",
+    "Q6(c)(ii) retains the complete A–E response list; D full credit and B/C partial credit. This is an answer-selection task, not five optional prompts.",
+    "Full source tables, graphs, measurement grids and diagrams travel with dependent tasks. Q8(b)(i) preserves credit for measurements shown in part (ii). Original-scale source access retained for constructions, pie chart and offsets."
+  ],
+  "cards": [
+    {
+      "id": "maths-2012-ol-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl.",
+      "questionText": "Write out the sample space showing all the possible outcomes. For example, BGG is one outcome, representing Boy, Girl, Girl."
+    },
+    {
+      "id": "maths-2012-ol-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl.",
+      "questionText": "Peter says these outcomes are equally likely. Niamh says they are not. What do you need to know about the students in the school to decide which of them is correct?"
+    },
+    {
+      "id": "maths-2012-ol-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl.",
+      "questionText": "If all the outcomes are equally likely, what is the probability that the three students will be two girls followed by a boy?"
+    },
+    {
+      "id": "maths-2012-ol-p2-q1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        39,
+        58
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Peter and Niamh arrive early at a large school and guess whether each of the next three students to enter will be a boy or a girl.",
+      "questionText": "Niamh guesses there will be at least one girl; Peter guesses there will be either three boys or two boys and a girl. Who is more likely to be correct, assuming all outcomes are equally likely? Justify your answer."
+    },
+    {
+      "id": "maths-2012-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "The universal set is a normal deck of 52 playing cards. The two sets represent clubs and picture cards (kings, queens and jacks).",
+      "questionText": "Show on the Venn diagram the number of elements in each region."
+    },
+    {
+      "id": "maths-2012-ol-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A card is drawn from a pack of 52 cards. Find the probability that the card drawn is the king of clubs."
+    },
+    {
+      "id": "maths-2012-ol-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Picture cards are kings, queens and jacks.",
+      "questionText": "A card is drawn from a pack of 52 cards. Find the probability that the card drawn is a club or a picture card."
+    },
+    {
+      "id": "maths-2012-ol-p2-q2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        59
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Picture cards are kings, queens and jacks.",
+      "questionText": "Two cards are drawn from a pack of 52 cards. Find the probability that neither is a club or a picture card. Give your answer correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(6, −1), B(12, −3), C(8, 5) and D(2, 7) are four points.",
+      "questionText": "Plot the four points on the diagram below."
+    },
+    {
+      "id": "maths-2012-ol-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(6, −1), B(12, −3), C(8, 5) and D(2, 7) are four points.",
+      "questionText": "Describe two different ways of showing, using co-ordinate geometry techniques, that the points form a parallelogram ABCD."
+    },
+    {
+      "id": "maths-2012-ol-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        42,
+        60
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5,
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(6, −1), B(12, −3), C(8, 5) and D(2, 7) are four points. Part (b) asks for two different co-ordinate geometry methods.",
+      "questionText": "Use one of the ways you have described to show that ABCD is a parallelogram."
+    },
+    {
+      "id": "maths-2012-ol-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        42,
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram.",
+      "questionText": "Find the equation of c₁."
+    },
+    {
+      "id": "maths-2012-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        42,
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram.",
+      "questionText": "Show that the point P(−3, 4) is on c₁."
+    },
+    {
+      "id": "maths-2012-ol-p2-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        43,
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram.",
+      "questionText": "The two circles touch at P(−3, 4). P is on the line joining the two centres. Find the equation of c₂."
+    },
+    {
+      "id": "maths-2012-ol-p2-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        43,
+        61
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Two circles c₁ and c₂ have equal radius. c₁ has centre (0, 0) and cuts the x-axis at (5, 0). Use the original diagram. The circles touch at P(−3, 4), which lies on the line joining their centres.",
+      "questionText": "Find the equation of the common tangent at P."
+    },
+    {
+      "id": "maths-2012-ol-p2-q5a-a-i",
+      "printedParts": [
+        "Q5A(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Write down a geometrical result that can be used to construct a tangent to a circle at a point."
+    },
+    {
+      "id": "maths-2012-ol-p2-q5a-a-ii",
+      "printedParts": [
+        "Q5A(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "On the diagram shown, construct the tangent to the circle at A.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q5a-b",
+      "printedParts": [
+        "Q5A(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Construct the circumcentre and circumcircle of the triangle below, using only a straight edge and compass. Show all construction marks clearly.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q5b",
+      "printedParts": [
+        "Q5B"
+      ],
+      "totalMarks": 25,
+      "scale": "25C",
+      "permittedMarks": [
+        0,
+        8,
+        17,
+        25
+      ],
+      "schemePages": [
+        45,
+        62
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "ABCD is a parallelogram. A, B and C lie on the circle which cuts [AD] at P. The line CP meets BA at Q.",
+      "questionText": "Prove that |CD| = |CP|."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        46,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "Show the annual total sales of cars over the six years, using a suitable chart."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        46,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "Find the mean number of cars sold per year over the six years."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "Calculate the percentage increase in annual car sales between 2009 and 2011."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-a-iv",
+      "printedParts": [
+        "Q6(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types. Part (a)(iii) calculates the increase from 2009 to 2011.",
+      "questionText": "Aoife says the increase shows car sales are currently going well. Paul says they are going badly: sales have fallen by 52% since 2007 and are well below average. Complete the sentences to give a criticism of each argument."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-a-v",
+      "printedParts": [
+        "Q6(a)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "Give a more balanced description of the pattern of car sales over the six years."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "Describe how the sales of the cars are distributed over the four quarters of each year."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types. Part (b)(i) describes the distribution over the four quarters.",
+      "questionText": "Suggest a reason for this pattern of sales."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "The sales for the first quarter of 2012 are 36 081. Find, with justification, an estimate for the total annual sales for 2012."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "Two pie charts show the change from 2006 to 2011 in the popularity of petrol and diesel cars. Complete the second pie chart.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        48,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original table of new private cars sold in Ireland in each quarter of each year from 2006 to 2011, including the annual totals and engine types.",
+      "questionText": "Which of statements A–E best describes the change over time in the popularity of diesel cars as a percentage of the total? Write the letter corresponding to the correct answer in the box."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-d-i",
+      "printedParts": [
+        "Q6(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original CO₂ emissions data (g/km) for the 12 diesel and 12 petrol models. Part (d)(i) asks for a back-to-back stem-and-leaf plot.",
+      "questionText": "Construct a back-to-back stem-and-leaf plot of the above data."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-d-ii",
+      "printedParts": [
+        "Q6(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original CO₂ emissions data (g/km) for the 12 diesel and 12 petrol models. Part (d)(i) asks for a back-to-back stem-and-leaf plot.",
+      "questionText": "Does the information suggest that diesel engines produce lower CO₂ emissions than petrol engines? Refer to the stem-and-leaf plot and an appropriate measure of central tendency."
+    },
+    {
+      "id": "maths-2012-ol-p2-q6-d-iii",
+      "printedParts": [
+        "Q6(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original CO₂ emissions data (g/km) for the 12 diesel and 12 petrol models. Part (d)(i) asks for a back-to-back stem-and-leaf plot.",
+      "questionText": "Does the information suggest greater variation in the CO₂ emissions of diesel engines than petrol engines? Refer to the stem-and-leaf plot and an appropriate measure of variability."
+    },
+    {
+      "id": "maths-2012-ol-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The planned roof supports form scalene triangles of different sizes.",
+      "questionText": "Explain what is meant by a scalene triangle."
+    },
+    {
+      "id": "maths-2012-ol-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram.",
+      "questionText": "Find the length of [FG].",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram.",
+      "questionText": "Find the length of [BD], correct to three decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram.",
+      "questionText": "The centre of the enlargement is O. Find the distance from O to the point B.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Triangles ABC, CDE and EFG form roof supports. CDE is the enlargement of ABC and EFG is the enlargement of CDE under the same enlargement. |AB| = 7·2 m, |BC| = 8 m, |CD| = 9 m and |∠DCB| = 60°. Use the original diagram.",
+      "questionText": "The height of G above the horizontal line BF cannot exceed 11·6 m. Does the plan meet this condition? Justify your answer by calculation."
+    },
+    {
+      "id": "maths-2012-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A circle is inscribed in a square of area 16 cm².",
+      "questionText": "Find the radius length of the circle.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A circle is inscribed in a square of area 16 cm². The shaded region is inside the square and outside the circle.",
+      "questionText": "Find the area of the shaded region, in cm², correct to one decimal place.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        54,
+        66
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A horizontal line is drawn across the widest part of an irregular shape and five offsets at equal intervals. Each grid unit represents 5 mm.",
+      "questionText": "Find the lengths of the horizontal line and the offsets, taking each grid unit as 5 mm, and record the lengths on the diagram.",
+      "fullCreditMinusOne": true,
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        54,
+        66
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A horizontal line is drawn across the widest part of an irregular shape and five offsets at equal intervals. Each grid unit represents 5 mm. Part (b)(i) asks for the lengths of the horizontal line and offsets.",
+      "questionText": "Use Simpson’s rule to estimate the area of the shape.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A solid wax candle is a cylinder with a cone on top. The cylinder has diameter 3 cm and height 8 cm. The volume of wax is 21π cm³.",
+      "questionText": "Find the height of the candle.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2012-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A solid wax candle is a cylinder with a cone on top. The cylinder has diameter 3 cm and height 8 cm. The volume of wax is 21π cm³. Part (c)(i) asks for the candle height.",
+      "questionText": "Nine candles fit into a rectangular box with a square base. Find the volume of the smallest rectangular box that the candles will fit into.",
+      "fullCreditMinusOne": true
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        8,
+        9
+      ],
+      "wording": "either Question 5A or Question 5B",
+      "classification": "expanded-alternatives",
+      "reason": "All three Q5A tasks and the complete Q5B proof retained at their published tariffs; 325 offered marks and 300 candidate marks."
+    },
+    {
+      "pages": [
+        5,
+        6
+      ],
+      "wording": "two different ways; Use one of the ways you have described",
+      "classification": "open-method-choice",
+      "reason": "No closed method list is supplied by the paper. Two descriptions remain one 5B task; application remains one 5C task. Scheme methods are example solutions, not optional printed prompts."
+    },
+    {
+      "pages": [
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14,
+        18,
+        19
+      ],
+      "wording": "all outcomes; either three boys or two boys and a girl; each region; criticism of each argument; statements A–E; lengths of offsets",
+      "classification": "all-required-or-answer-construction",
+      "reason": "All outcomes, Venn entries, comparisons, arguments and lengths are retained. Probability scenarios and the five-option multiple-choice question are mathematical data/answer selection, not a choice of practice question; no extra routes are invented."
+    }
+  ],
+  "selectionDecisions": {
+    "2:1cbe30b911f47977": {
+      "classification": "expanded-alternatives",
+      "reason": "All three Q5A tasks and the complete Q5B proof retained at their published tariffs; 325 offered marks and 300 candidate marks."
+    },
+    "2:038051cd91304d50": {
+      "classification": "expanded-alternatives",
+      "reason": "All three Q5A tasks and the complete Q5B proof retained at their published tariffs; 325 offered marks and 300 candidate marks."
+    },
+    "3:878b20e19df8218f": {
+      "classification": "all-required",
+      "reason": "All required tasks retained, including both complete Q5 alternatives."
+    },
+    "3:e1a4f81956f343ca": {
+      "classification": "scenario-definition",
+      "reason": "Both predictions must be compared; this is probability data, not a selection of questions."
+    },
+    "6:a887486453a4010e": {
+      "classification": "open-method-choice",
+      "reason": "No closed method list is supplied by the paper. Two descriptions remain one 5B task; application remains one 5C task. Scheme methods are example solutions, not optional printed prompts."
+    },
+    "8:7ca45e868f9c3b5d": {
+      "classification": "expanded-alternatives",
+      "reason": "All three Q5A tasks and the complete Q5B proof retained at their published tariffs; 325 offered marks and 300 candidate marks."
+    }
+  }
+}

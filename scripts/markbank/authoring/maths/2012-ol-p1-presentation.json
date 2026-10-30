@@ -1,0 +1,1617 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "tasks": {
+    "1-a": {
+      "topic": "3-1",
+      "atlas": "number-systems",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 54,
+          "bottom": 102,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 6,
+          "top": 219,
+          "bottom": 587,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answers without work",
+        "Worthless — Incorrect answer without work"
+      ],
+      "inspectedQuestionSha256": "85b3ec17d15d9fd50664fe78baed2a82b8836d77e40305e47e7b6d7e66fcf2d5",
+      "inspectedSolutionSha256": "0cdc7a4d9881b62ec1a573a7b1f720329527f4a8682deb2a52e1f3937219d8d7"
+    },
+    "1-b-i": {
+      "topic": "3-3",
+      "atlas": "financial-maths",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 123,
+          "bottom": 222,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 7,
+          "top": 233,
+          "bottom": 441,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — mentions/states cost = units × rate"
+      ],
+      "inspectedQuestionSha256": "103bb7091a91e5c5e0b375206c97328320d4b0cab71dc6c3d748a6570d5e76b9",
+      "inspectedSolutionSha256": "e7640e53e356b99b2e446f2cc502f52da7c3837bdfc745961dad87ae122219b6"
+    },
+    "1-b-ii": {
+      "topic": "3-3",
+      "atlas": "financial-maths",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 123,
+          "bottom": 290,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 7,
+          "top": 445,
+          "bottom": 778,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Misreading — Omits standing charge or levy"
+      ],
+      "inspectedQuestionSha256": "fa6214d5d095d97bc544a2031ac4eb57df9fadd7a8fe5e820ee105fbdb7099ea",
+      "inspectedSolutionSha256": "b72ddac9642160a644f374414e0ff7e9faa97ec551c84a68c90ce1c419900a1d"
+    },
+    "1-c-i": {
+      "topic": "3-3",
+      "atlas": "financial-maths",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 310,
+          "bottom": 402,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 162,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 8,
+          "top": 199,
+          "bottom": 467,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Slips — Fails to round off or rounds-off incorrectly"
+      ],
+      "inspectedQuestionSha256": "69de91d54f9d86beee8f3c0386470b8d7e5e9bca7367572af823b85b861491e8",
+      "inspectedSolutionSha256": "f5169fa8e3c841f7cd787b78bdfca5d19d363ab56bd617b1e4554668243aaa5f"
+    },
+    "1-c-ii": {
+      "topic": "3-3",
+      "atlas": "financial-maths",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 310,
+          "bottom": 360,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 2,
+          "top": 408,
+          "bottom": 430,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 8,
+          "top": 162,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 8,
+          "top": 475,
+          "bottom": 670,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Mathematical error",
+        "Attempts — Any relevant work"
+      ],
+      "inspectedQuestionSha256": "d5513a70f34f1a9b86251d06554813834c1a4a9a9a0ebab29b88eafc7f6eee2e",
+      "inspectedSolutionSha256": "81abbd17ff9c684735370b54b78afd40e9ccabd34651ee91f357be75682f4fe6"
+    },
+    "2-a": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 491,
+          "bottom": 544,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 9,
+          "top": 212,
+          "bottom": 443,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept one correct answer without work for 12 marks"
+      ],
+      "inspectedQuestionSha256": "e45d11d59002cdf325d5f92d9edda3442ce2cdc5d52bed870e412a5bd91e36fc",
+      "inspectedSolutionSha256": "1ad03e0cef0b946765155bfdabdc408f0f5478d08daaab0c146f5cacd6779299"
+    },
+    "2-b-i": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 558,
+          "bottom": 610,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 137,
+          "bottom": 470,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Fails to show by division"
+      ],
+      "inspectedQuestionSha256": "a6358c496ae49019f5cbdc58840bab8604f3fa8bcd38a78ad27486308103513e",
+      "inspectedSolutionSha256": "9967dba45b50360754344ea2c35f68094abba6c85e42f1568b5e81a4c472e797"
+    },
+    "2-b-ii": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 558,
+          "bottom": 640,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 10,
+          "top": 487,
+          "bottom": 730,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — No back/ retrospective marking",
+        "Attempts — If quotient at (i) is linear award attempt marks at most in (ii)"
+      ],
+      "inspectedQuestionSha256": "f1119376d5ee3d57f8506a1952604ece782b2b8e515ff0eb19c7bbb9b1aa9bb2",
+      "inspectedSolutionSha256": "efefb19d4f88b1da563e4639f1cc19c66a952f7e7cf45852da9a6496aca9e654"
+    },
+    "2-c-i": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 663,
+          "bottom": 729,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 151,
+          "bottom": 313,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Mathematical error e.g. index error"
+      ],
+      "inspectedQuestionSha256": "3251c049181026306aafd7bb42d8f5d81013b7475af3c8038d3a8fa711d3f196",
+      "inspectedSolutionSha256": "bc28b512011b2adc69ba87f526ebe874f1a63300c75f025f02e0bf35c9c61176"
+    },
+    "2-c-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 663,
+          "bottom": 700,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 2,
+          "top": 738,
+          "bottom": 760,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 11,
+          "top": 358,
+          "bottom": 608,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — If equation becomes linear candidates will merit at most attempt marks",
+        "Model solution — Fully correct answer"
+      ],
+      "inspectedQuestionSha256": "2e27eba1099a63ea719b9370bb6938f475eef7f08babdc4eaee3b532ba37ca0d",
+      "inspectedSolutionSha256": "6da9cd8119c01029f22927a13131c4827a73990ee4575bc2ec6700ac876f3325"
+    },
+    "3-a": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 53,
+          "bottom": 79,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 12,
+          "top": 180,
+          "bottom": 399,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — correct answer without work"
+      ],
+      "inspectedQuestionSha256": "263cf8867f13bea50521319d2d42be6295092f09554b7ba27aaf5024a714ba17",
+      "inspectedSolutionSha256": "646a1dbd7e543fc88bc34c25903bece39d84c7d47785278a37e4c51f07c440e1"
+    },
+    "3-b-i": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 97,
+          "bottom": 158,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 13,
+          "top": 167,
+          "bottom": 585,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Candidates may use other acceptable algebraic approaches"
+      ],
+      "inspectedQuestionSha256": "6d82fcaed00540be8c04c47f0830bf36302ee4d466fde6112c432179fad295d5",
+      "inspectedSolutionSha256": "27bcb02ca34a28d23f20a9082e2becee6f8a05419acd4d6222d5269e4f62502a"
+    },
+    "3-b-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 97,
+          "bottom": 204,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 14,
+          "top": 51,
+          "bottom": 323,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Slips — Incorrect or no conclusion",
+        "Worthless — Invents values for x and y"
+      ],
+      "inspectedQuestionSha256": "e67f7778be172c66154724e3da24ef4b88f0d064471321206478ff0d6deeb5f7",
+      "inspectedSolutionSha256": "3a364bf7bc0adb3aca59aae6acf65705bdc232eee6a0749889ee22a37b162eef"
+    },
+    "3-c-i": {
+      "topic": "4-1",
+      "atlas": "algebra",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 225,
+          "bottom": 267,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 173,
+          "bottom": 455,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — Correct answer without work"
+      ],
+      "inspectedQuestionSha256": "f82436945ae6b259d8d4168c6ebd78bbbd2111a20137c901ce871c0f3524c328",
+      "inspectedSolutionSha256": "d0234f1eb37b1c6bf85f13edc0460b50c29f3110134283e586daeb8028518411"
+    },
+    "3-c-ii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 225,
+          "bottom": 317,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 15,
+          "top": 472,
+          "bottom": 758,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Slips — Does not isolate correct value"
+      ],
+      "inspectedQuestionSha256": "91eae1d2968f8fcf914ee1955e79712a4147cf66fd9940d10b22132b17ba8183",
+      "inspectedSolutionSha256": "108c1eacf8a247928dcef4d8c90bee97f6b68202ade3eb21fca5d3f6952cb424"
+    },
+    "3-c-iii": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 275,
+          "bottom": 345,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 16,
+          "top": 51,
+          "bottom": 354,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — verifies in simplified version"
+      ],
+      "inspectedQuestionSha256": "e1d59b265b4f1c8bd4f189239ad9c78d7fd52f47a68c58446b51cf0676b33ae0",
+      "inspectedSolutionSha256": "33a62aebec723544c42dbcfd9cd25d39e17695c5783b2c919596929eada495c8"
+    },
+    "4-a-i": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 413,
+          "bottom": 462,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 207,
+          "bottom": 227,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 17,
+          "top": 244,
+          "bottom": 315,
+          "x0": 52,
+          "x1": 300
+        },
+        {
+          "page": 17,
+          "top": 435,
+          "bottom": 551,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — No penalty for interchange of real and imaginary axes if consistent"
+      ],
+      "sourceNote": "The printed solution block includes neighbouring subparts and shared guidance. Apply only the marking notes for the task named on this card.",
+      "inspectedQuestionSha256": "30c99cbc1b732dabbedb29c5757aba9b90d1ab8ff552b39af48c8717f6bbe284",
+      "inspectedSolutionSha256": "c41956f7ac029c519110cd6ccfd8e3423664d0f5768d58e450ff84c2cb9b59be"
+    },
+    "4-a-ii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 413,
+          "bottom": 488,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 17,
+          "top": 207,
+          "bottom": 551,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — No penalty for interchange of real and imaginary axes if consistent"
+      ],
+      "sourceNote": "The printed solution block includes neighbouring subparts and shared guidance. Apply only the marking notes for the task named on this card.",
+      "inspectedQuestionSha256": "297fed344aefe050acb9202157d54f58853d82a14f48223dc4101ffc96ae677e",
+      "inspectedSolutionSha256": "6b0e1bf60f8f8498c0863be0c540fa43a6b6b244b23dd007f51910d6782f7af5"
+    },
+    "4-b-i": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 506,
+          "bottom": 557,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 164,
+          "bottom": 326,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Formula not in tables"
+      ],
+      "inspectedQuestionSha256": "675ba1909b0674bcfc059d1f50f8cf0299b7806dede4e649d600571c1b745679",
+      "inspectedSolutionSha256": "b95d33a164a23b250ce508491d6621f59a9dffcd4474cfd03621101a62186497"
+    },
+    "4-b-ii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 506,
+          "bottom": 529,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 566,
+          "bottom": 591,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 329,
+          "bottom": 490,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Mathematical error"
+      ],
+      "inspectedQuestionSha256": "eacd9bcce5bfb47ce6d2ca683def4228788b192f894b2e6f5f2ca92aae69bc51",
+      "inspectedSolutionSha256": "8d4fa773d30db3a45254b3bfb67f380b54dcf6d947f33cfba20ca7f2041f1bd4"
+    },
+    "4-b-iii": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 506,
+          "bottom": 529,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 3,
+          "top": 594,
+          "bottom": 634,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 18,
+          "top": 494,
+          "bottom": 768,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Slips — Incorrect answer and no conclusion or wrong conclusion"
+      ],
+      "inspectedQuestionSha256": "0c45af5cfe164f897c15a712e2e2dd2686570c36b744e5e1e7594e1b6b54db31",
+      "inspectedSolutionSha256": "73c12a1f39ef93f8db926baefcd99fdfc26050ab9bd670dd5b6eb9b8af071f09"
+    },
+    "4-c": {
+      "topic": "3-1",
+      "atlas": "complex-numbers",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 652,
+          "bottom": 712,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 19,
+          "top": 134,
+          "bottom": 581,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Step — Fully correct substitution",
+        "Step — Partial correct substitution",
+        "Step — Work of some merit"
+      ],
+      "sourceNote": "In the first substitution line, the printed (3 − 4i) multiplying (k + t) should be (3 + 4i), since w = 3 + 4i. The following expansion and final answers k = −19 and t = 25 use the correct sign. The original print is retained.",
+      "inspectedQuestionSha256": "3d830ede1319c394eb6484cee34fea83801e2b4f2b869874a14584ff52831f9c",
+      "inspectedSolutionSha256": "90793a0319b5598af353ff74b7ae42c6983ea62dbf942d8bd0e4523c0364f4a1"
+    },
+    "5-a": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 52,
+          "bottom": 105,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 119,
+          "bottom": 136,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 20,
+          "top": 222,
+          "bottom": 477,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answers without work"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "c9dfa149c6567038d23f275cd03ae9fc8fe78e7653d7a76ec3349ad4a776ba4f",
+      "inspectedSolutionSha256": "2419afb1f5514154fd6f7ffa0cd553e27584f4e349d27fc20f4e7d4cf9e51b34"
+    },
+    "5-b-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 111,
+          "bottom": 153,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 119,
+          "bottom": 136,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 21,
+          "top": 127,
+          "bottom": 147,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 21,
+          "top": 151,
+          "bottom": 428,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "ed59446a91f1e46a65a327c3e770baafd93f3bc8e476a20e1038a50ce678b6a6",
+      "inspectedSolutionSha256": "4205ad182de34d8ac239a719408405f0bb73a221776ad0b93d603e6fb6f2130c"
+    },
+    "5-b-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 111,
+          "bottom": 179,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 119,
+          "bottom": 136,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 21,
+          "top": 127,
+          "bottom": 147,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 21,
+          "top": 487,
+          "bottom": 761,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — each missing or extra term in method II"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "aebed28984fc726ecbf7426fc3913c0c2ea39800857deeb0f1fab63a34b88370",
+      "inspectedSolutionSha256": "69d19e4f576db7f73c5752b6e7945e1cb00b4ea5186728dd2367cadf5284bf65"
+    },
+    "5-c-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 187,
+          "bottom": 251,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 119,
+          "bottom": 136,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 22,
+          "top": 173,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 22,
+          "top": 196,
+          "bottom": 366,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work",
+        "Blunders — Mathematical error"
+      ],
+      "sourceNote": "The SEC task heading gives Att 2, but its Attempts paragraph says 3 marks. Both are preserved here. The scoring control keeps the heading’s 2-mark floor and also allows 3; this is a labelled inconsistency in the source, not an official correction. The introductory notation note applies across Question 5.",
+      "inspectedQuestionSha256": "f84710b07a48c2df70091392cf38568eda89ad09c692c298cdc51899ec811c4d",
+      "inspectedSolutionSha256": "05eab61d72c724a8d60a1d588eb915aa100be3e0a690ce10776854fe0719a5d6"
+    },
+    "5-c-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 187,
+          "bottom": 225,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 250,
+          "bottom": 272,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 119,
+          "bottom": 136,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 22,
+          "top": 173,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 22,
+          "top": 414,
+          "bottom": 646,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Proves for specific terms only"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "745cf7808918ff782fb19534d142e2bac7290259ecbac58aeb8d922d0f443520",
+      "inspectedSolutionSha256": "c542f2ba7371fcd36828956c090984b6668d1ea2e41c9ad64c67bdaaaf1a2ff0"
+    },
+    "5-c-iii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 187,
+          "bottom": 225,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 269,
+          "bottom": 309,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 20,
+          "top": 119,
+          "bottom": 136,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 22,
+          "top": 173,
+          "bottom": 192,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 23,
+          "top": 51,
+          "bottom": 301,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept proof by correct lists method"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "ec825cc25c1309b4a5758c83d967c645fac30788ac6d0ca416cded2961704c44",
+      "inspectedSolutionSha256": "ff702cd532dd3633a28a7dfb7ef003a1f77e2274c1b1f25041b495bcc204dfe8"
+    },
+    "6-a": {
+      "topic": "4-2",
+      "atlas": "algebra-equations",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 342,
+          "bottom": 382,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 24,
+          "top": 199,
+          "bottom": 429,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answers for a and b without work"
+      ],
+      "inspectedQuestionSha256": "c7333fa5b0deff6a50698a4c081400f3d7f0fe1932b12abc86a514c463eb870f",
+      "inspectedSolutionSha256": "06f2c0c431feb6d8df0450b5878f562531fdc1d78d6ecd8c8086bf71ac2932e9"
+    },
+    "6-b-i": {
+      "topic": "5-1",
+      "atlas": "graphing-functions",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 397,
+          "bottom": 610,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 317,
+          "bottom": 350,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 354,
+          "bottom": 400,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 401,
+          "bottom": 433,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 479,
+          "bottom": 759,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Each incorrect or missing value in (i) and (ii)",
+        "Worthless — Copies diagram from paper and stops"
+      ],
+      "sourceNote": "The printed solution block includes neighbouring subparts and shared guidance. Apply only the marking notes for the task named on this card.",
+      "inspectedQuestionSha256": "6070076ab723315161891bc192fa7685d27ac55ab5c2d1aa5acac7250be8d5a4",
+      "inspectedSolutionSha256": "2992d4c3b61d8c50f94b2086d2df8fcd8a3286b511cbd6a983d7d980f9f53694"
+    },
+    "6-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation,graphing-functions",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 397,
+          "bottom": 589,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 609,
+          "bottom": 635,
+          "x0": 52,
+          "x1": 580
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 317,
+          "bottom": 350,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 354,
+          "bottom": 400,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 434,
+          "bottom": 463,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 479,
+          "bottom": 759,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Each incorrect or missing value in (i) and (ii)",
+        "Worthless — Copies diagram from paper and stops"
+      ],
+      "sourceNote": "The printed solution block includes neighbouring subparts and shared guidance. Apply only the marking notes for the task named on this card.",
+      "inspectedQuestionSha256": "2273ff1660034d9270b1f91b6a3aa5d27ead3f278f04c76ae4647d16ef8778e4",
+      "inspectedSolutionSha256": "08da3e52832907e6b5d85dee2fd90081ad5255f38814e5be08279c2d4de76396"
+    },
+    "6-b-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation,graphing-functions",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 397,
+          "bottom": 589,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 632,
+          "bottom": 658,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 25,
+          "top": 317,
+          "bottom": 350,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 354,
+          "bottom": 400,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 464,
+          "bottom": 479,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 25,
+          "top": 479,
+          "bottom": 759,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Slips — Includes equal sign in inequality once only"
+      ],
+      "sourceNote": "The printed solution block includes neighbouring subparts and shared guidance. Apply only the marking notes for the task named on this card.",
+      "inspectedQuestionSha256": "cdeb8f7507a37835f17c37a3dc280a0b081fa79290be6eb19366fdfeefe89d24",
+      "inspectedSolutionSha256": "5fa550c0d1fe9f28e0e4a255684eb1c314c3611d2f57ec05134f6d76da1879d7"
+    },
+    "6-c-i": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 661,
+          "bottom": 713,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 168,
+          "bottom": 413,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Differentiate error once per part"
+      ],
+      "inspectedQuestionSha256": "b98905d91ff7f128b1c0c1a332ae6917a144b58a9bc36b912b6b01b886619c8d",
+      "inspectedSolutionSha256": "fddc9793d86de7a096c031c605ee1fada05d35536eeea4491c20a56ada912d27"
+    },
+    "6-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 661,
+          "bottom": 693,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 714,
+          "bottom": 749,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 26,
+          "top": 416,
+          "bottom": 715,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Not required to identify local maximum and/or local minimum"
+      ],
+      "inspectedQuestionSha256": "cbb55fb4b7c73b484d868b9e4eb8e50a56820771ddeb0959d02cb7b0770f8cce",
+      "inspectedSolutionSha256": "e019cd9387a502f4d83b8f4fdc33bcb8775879312117d53620e9ac3583794c96"
+    },
+    "6-c-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation,graphing-functions",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 661,
+          "bottom": 693,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 4,
+          "top": 750,
+          "bottom": 788,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 27,
+          "top": 51,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — No penalty if domain extended",
+        "Slips — Each missing or incorrectly plotted point to a maximum of 3 slips"
+      ],
+      "inspectedQuestionSha256": "74a4621a24ae5c3bfa3b57f5715f3fc4205654830d02e29c235f66825123c76b",
+      "inspectedSolutionSha256": "85b5893872c592cd5c317e4cbbcf880f6d000a0407a4a2741bcada14ac6b6f82"
+    },
+    "7-a": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 68,
+          "bottom": 91,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 28,
+          "top": 183,
+          "bottom": 396,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Only one non zero term correct, award 9 marks"
+      ],
+      "inspectedQuestionSha256": "7fe47e5bf115994e5bb5a2ec56f4b6f1858e54b97e900b2043d14b010e6cc792",
+      "inspectedSolutionSha256": "826db58eb725c6eecb6019832ce46a13f121264052047f4330daef83ade545d2"
+    },
+    "7-b-i": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 106,
+          "bottom": 139,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 29,
+          "top": 136,
+          "bottom": 484,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Differentiation errors once per part"
+      ],
+      "inspectedQuestionSha256": "3ee1249a2a909aaed08972e9dd1a0e9abcb5944cfca7fe950e3bb35adef26657",
+      "inspectedSolutionSha256": "a297bb65899da830fb9e71356245c3c2e375fa32fbe8a6a0a5836ab8db0be4e6"
+    },
+    "7-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 152,
+          "bottom": 190,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 30,
+          "top": 51,
+          "bottom": 474,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Differentiation errors once per part"
+      ],
+      "inspectedQuestionSha256": "ee87b1650c6cc48218bf8539fbdc60c5b3aaaae843dced406b19dedbde9d9349",
+      "inspectedSolutionSha256": "8ffa559c57640088bd71f7af521876a6407134159354312050e3f733a4eb1529"
+    },
+    "7-c-i": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 210,
+          "bottom": 315,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 198,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 31,
+          "top": 263,
+          "bottom": 517,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Slips — No units or incorrect units only applies if answer numerically correct"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "cf1a0be8d435ce0fc09f81d89630ab97a2242b5c2e3b2a1b6e7a7b101cba87a5",
+      "inspectedSolutionSha256": "5f6eaeaf46ce0f9d6348a6f7f0379080c3030e3daa8d22b80f1b2838bc95e6c9"
+    },
+    "7-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 210,
+          "bottom": 288,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 324,
+          "bottom": 345,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 198,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 32,
+          "top": 51,
+          "bottom": 381,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Mathematical error e.g. solving equation"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "29589dae8c0cad208dcac02c515817783e98be89aad18b5066e04c83f6ff8aa5",
+      "inspectedSolutionSha256": "c37ae4f0d9b3e35bd8eaefe1a769b0d05a67a8cffe21c9d640551f78bf5b46cb"
+    },
+    "7-c-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 210,
+          "bottom": 288,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 352,
+          "bottom": 390,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 31,
+          "top": 198,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 32,
+          "top": 392,
+          "bottom": 669,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Attempts — Any relevant work e.g. uses s as height"
+      ],
+      "sourceNote": "The introductory note is shared across this question. Apply it and the printed solution notes only to the task named on this card.",
+      "inspectedQuestionSha256": "a49273428dee5e9f201a2a92ae1b2ecbbfdbf9fe54be81693f17bec7f99e789b",
+      "inspectedSolutionSha256": "c8aed09ba36fb75f2c454db18492f4ce1b1f1c0a9dca107d41e6beed35b9ad5a"
+    },
+    "8-a": {
+      "topic": "5-1",
+      "atlas": "functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 455,
+          "bottom": 501,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 33,
+          "top": 199,
+          "bottom": 375,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "4f47f2634e1c114e9d14a47690aa3a2f5f20b6cababff29c796dd85248adf7fa",
+      "inspectedSolutionSha256": "dfc331daa1940064e636791915d9155fdbbb5105670be34ba1496686d26d970d"
+    },
+    "8-b-i": {
+      "topic": "5-1",
+      "atlas": "functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 525,
+          "bottom": 587,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 169,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Blunders — Mathematical error e.g. solves"
+      ],
+      "inspectedQuestionSha256": "673013b2b79e1c4f1abf471269ac122c35401104b893ac3419c0338855928345",
+      "inspectedSolutionSha256": "30f7a5437e5fd53d4deec2f7dd297d16976b1bfdfdb3677d04993e6eb0ae86fc"
+    },
+    "8-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 525,
+          "bottom": 564,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 589,
+          "bottom": 610,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 34,
+          "top": 361,
+          "bottom": 643,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — See blunder list at start on use of calculus formulae"
+      ],
+      "inspectedQuestionSha256": "422ff300c6859fbe7d432f5e2a591723fd6290c0022589cc92747adbb836b216",
+      "inspectedSolutionSha256": "fcf023919a45a2d90f28fb39455c1e08cdff6cf208bb55df6be141a57ffa5931"
+    },
+    "8-b-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 525,
+          "bottom": 564,
+          "x0": 52,
+          "x1": 550
+        },
+        {
+          "page": 5,
+          "top": 589,
+          "bottom": 639,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 35,
+          "top": 51,
+          "bottom": 351,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Worthless — No effort at substitution"
+      ],
+      "inspectedQuestionSha256": "6422fe36cda2dd389dcf14aa4772e080e8c83c47f1c480bd7b458f065a66d296",
+      "inspectedSolutionSha256": "8cb7debdf8d82926589a7dbf463690cfde8e5c3e7d780956c604dd953290def0"
+    },
+    "8-c-i": {
+      "topic": "5-1",
+      "atlas": "functions",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 656,
+          "bottom": 710,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 168,
+          "bottom": 338,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept (0, 5) without work"
+      ],
+      "inspectedQuestionSha256": "c304806bbb711bf0ee31d4bc74eaa70a8dae36cab178ae2c1beaa3c027046455",
+      "inspectedSolutionSha256": "221ca393b5abb222759636d4830f813bf0604037268705314a6278fd375a3c1e"
+    },
+    "8-c-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 656,
+          "bottom": 728,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 356,
+          "bottom": 546,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — No differentiation merits attempt marks at most"
+      ],
+      "inspectedQuestionSha256": "e2341e1d4011d1a233cf6264958b4242e3e751a39a26a0a2ad74c87f65f6ce82",
+      "inspectedSolutionSha256": "062880ab95ef86ff8e1b2265eebb1242fbfaf1f7cc8bdcd441b8dbf71cf6e6e0"
+    },
+    "8-c-iii": {
+      "topic": "5-2",
+      "atlas": "differentiation",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 656,
+          "bottom": 767,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 563,
+          "bottom": 748,
+          "x0": 52,
+          "x1": 550
+        }
+      ],
+      "rows": [
+        "Note — Accept candidate’s value of slope from (ii) if not oversimplified"
+      ],
+      "inspectedQuestionSha256": "d2f35f41b5b1efc1fb3addfe6f57b386076611c423fa46ac173dd8446fbb6019",
+      "inspectedSolutionSha256": "215ef54b045367d0681bd1bee79bc78bb10fac63847d09dc44b8eabddcb47bb5"
+    }
+  },
+  "reviewedAt": "2026-10-29"
+}

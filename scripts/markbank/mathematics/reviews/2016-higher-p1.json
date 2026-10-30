@@ -1,0 +1,1049 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2016,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "ba817e630bde1b93536569b974600274337d61379f6e52c4fee2a4b84cdd1b24",
+  "schemeSha256": "c561278937b118aa0b39c59dc2f147f4d440fff2fe6a5fe741411c070c030f41",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 24 question-paper pages and PDF pages 1–26 of the combined Higher Level scheme (cover, notes, contents, the Paper 1 title page 5, the scale table on page 6, the summary of mark allocations on page 7, every Paper 1 model solution and marking note on pages 8–25, and the blank page 26). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 40,
+    "8": 55,
+    "9": 55
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 40 marks, Q8 55 marks, Q9 55 marks). Every question is retained.",
+    "35 independently marked units, matching the printed summary of allocations on scheme page 7. Q6(b)(i)+(ii) share one printed scale (15D) and are one task.",
+    "Bands from the 2016 scale table on scheme page 6: 5B 0,2,5; 5C 0,2,4,5; 5D 0,2,3,4,5; 10C 0,3,7,10; 10D 0,2,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 35 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced. Exponents written as letters use caret notation (e^x, 8^k, (x − 3·8)^1·04), stacked fractions are written a/b, and the scheme’s italic h is written ℎ. Q4(b)(ii)’s high partial credit prints log_a a, whose doubled italic a the text layer collapses, so it is not quoted.",
+    "Fourteen parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal, because their model solution is printed as an image or a layout the text layer cannot carry (the Q2(a) graphs, the Q3(a) table and graphs, the Q1(c) long division, the first-principles and integral layouts, the Q9(a) table) or a credit band could not be quoted: Q1(c) (both pages), Q2(a), Q3(a)(i), Q3(a)(ii), Q3(a)(iii), Q4(b)(ii), Q6(a), Q6(b)(i)+(ii), Q7(b)(ii), Q8(a)(iv), Q9(a)(i), Q9(a)(ii), Q9(a)(iii) and Q9(b)(iii).",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. Scheme page references are PDF positions (printed page number + 3); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2016-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "(−4 + 3i) is one root of the equation az² + bz + c = 0, where a, b, c ∈ ℝ, and i² = −1. Write the other root."
+    },
+    {
+      "id": "maths-2016-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "Use De Moivre’s Theorem to express (1 + i)⁸ in its simplest form."
+    },
+    {
+      "id": "maths-2016-hl-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8,
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "(1 + i) is a root of the equation z² + (−2 + i)z + 3 − i = 0. Find its other root in the form m + ni, where m, n ∈ ℝ, and i² = −1."
+    },
+    {
+      "id": "maths-2016-hl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "questionText": "Find the range of values of x for which |x − 4| ≥ 2, where x ∈ ℝ."
+    },
+    {
+      "id": "maths-2016-hl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "questionText": "Solve the simultaneous equations: x² + xy + 2y² = 4; 2x + 3y = −1."
+    },
+    {
+      "id": "maths-2016-hl-p1-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "f(x) = 2/e^x and g(x) = e^x − 1, where x ∈ ℝ.",
+      "questionText": "Complete the table below. Write your values correct to two decimal places where necessary. x: 0, 0·5, 1, ln(4). f(x) = 2/e^x: _, _, _, _. g(x) = e^x − 1: _, _, _, _."
+    },
+    {
+      "id": "maths-2016-hl-p1-q3-a-ii",
+      "printedParts": [
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "f(x) = 2/e^x and g(x) = e^x − 1, where x ∈ ℝ. Part (a)(i): Complete the table below. Write your values correct to two decimal places where necessary. x: 0, 0·5, 1, ln(4). f(x) = 2/e^x: _, _, _, _. g(x) = e^x − 1: _, _, _, _.",
+      "questionText": "In the grid on the right, use the table to draw the graphs of f(x) and g(x) in the domain 0 ≤ x ≤ ln(4). Label each graph clearly."
+    },
+    {
+      "id": "maths-2016-hl-p1-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "f(x) = 2/e^x and g(x) = e^x − 1, where x ∈ ℝ. Part (a)(ii): In the grid on the right, use the table to draw the graphs of f(x) and g(x) in the domain 0 ≤ x ≤ ln(4). Label each graph clearly.",
+      "questionText": "Use your graphs to estimate the value of x for which f(x) = g(x)."
+    },
+    {
+      "id": "maths-2016-hl-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "f(x) = 2/e^x and g(x) = e^x − 1, where x ∈ ℝ.",
+      "questionText": "Solve f(x) = g(x) using algebra."
+    },
+    {
+      "id": "maths-2016-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction"
+      ],
+      "questionText": "Prove by induction that 8ⁿ − 1 is divisible by 7 for all n ∈ ℕ."
+    },
+    {
+      "id": "maths-2016-hl-p1-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Given logₐ 2 = p and logₐ 3 = q, where a > 0, write each of the following in terms of p and q:",
+      "questionText": "logₐ (8/3)"
+    },
+    {
+      "id": "maths-2016-hl-p1-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Given logₐ 2 = p and logₐ 3 = q, where a > 0, write each of the following in terms of p and q:",
+      "questionText": "logₐ (9a²/16)."
+    },
+    {
+      "id": "maths-2016-hl-p1-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics",
+        "mathematics-higher-geometry"
+      ],
+      "questionText": "The lengths of the sides of a right-angled triangle are given by the expressions x − 1, 4x, and 5x − 9, as shown in the diagram. Find the value of x."
+    },
+    {
+      "id": "maths-2016-hl-p1-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "The lengths of the sides of a right-angled triangle are given by the expressions x − 1, 4x, and 5x − 9, as shown in the diagram. Part (a)(i): Find the value of x.",
+      "questionText": "Verify, with this value of x, that the lengths of the sides of the triangle above form a pythagorean triple."
+    },
+    {
+      "id": "maths-2016-hl-p1-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "questionText": "Show that f(x) = 3x − 2, where x ∈ ℝ, is an injective function."
+    },
+    {
+      "id": "maths-2016-hl-p1-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "questionText": "Given that f(x) = 3x − 2, where x ∈ ℝ, find a formula for f⁻¹, the inverse function of f. Show your work."
+    },
+    {
+      "id": "maths-2016-hl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "Differentiate the function (2x + 4)² from first principles, with respect to x."
+    },
+    {
+      "id": "maths-2016-hl-p1-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)",
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "(i) If y = x sin(1/x), find dy/dx. (ii) Find the slope of the tangent to the curve y = x sin(1/x), when x = 4/π. Give your answer correct to two decimal places."
+    },
+    {
+      "id": "maths-2016-hl-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "Air is pumped into a spherical exercise ball at the rate of 250 cm³ per second. Find the rate at which the radius is increasing when the radius of the ball is 20 cm. Give your answer in terms of π."
+    },
+    {
+      "id": "maths-2016-hl-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Air is pumped into a spherical exercise ball at the rate of 250 cm³ per second. Part (a)(i): Find the rate at which the radius is increasing when the radius of the ball is 20 cm. Give your answer in terms of π.",
+      "questionText": "Find the rate at which the surface area of the ball is increasing when the radius of the ball is 20 cm."
+    },
+    {
+      "id": "maths-2016-hl-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "The inflated ball is kicked into the air from a point O on the ground. Taking O as the origin, (x, f(x)) approximately describes the path followed by the ball in the air, where f(x) = −x² + 10x and both x and f(x) are measured in metres.",
+      "questionText": "Find the values of x when the ball is on the ground."
+    },
+    {
+      "id": "maths-2016-hl-p1-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The inflated ball is kicked into the air from a point O on the ground. Taking O as the origin, (x, f(x)) approximately describes the path followed by the ball in the air, where f(x) = −x² + 10x and both x and f(x) are measured in metres. Part (b)(i): Find the values of x when the ball is on the ground.",
+      "questionText": "Find the average height of the ball above the ground, during the interval from when it is kicked until it hits the ground again."
+    },
+    {
+      "id": "maths-2016-hl-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The diagram shows Sarah’s first throw at the basket in a basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane with A(−0·5, 2·565) and B(4·5, 3·05), the equation of the path of the centre of the ball is f(x) = −0·274x² + 1·193x + 3·23, where both x and f(x) are measured in metres.",
+      "questionText": "Find the maximum height reached by the centre of the ball, correct to three decimal places."
+    },
+    {
+      "id": "maths-2016-hl-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The diagram shows Sarah’s first throw at the basket in a basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane with A(−0·5, 2·565) and B(4·5, 3·05), the equation of the path of the centre of the ball is f(x) = −0·274x² + 1·193x + 3·23, where both x and f(x) are measured in metres.",
+      "questionText": "Find the acute angle to the horizontal at which the ball entered the basket. Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2016-hl-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The diagram shows Sarah’s first throw at the basket in a basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane with A(−0·5, 2·565) and B(4·5, 3·05), the equation of the path of the centre of the ball is f(x) = −0·274x² + 1·193x + 3·23, where both x and f(x) are measured in metres. Part (a)(i): Find the maximum height reached by the centre of the ball, correct to three decimal places.",
+      "questionText": "Sarah took a second throw. This throw followed the path of the parabola g(x) as shown. The ball left Sarah’s hands at the point C(0, 2). The graph y = g(x) is the image of the graph y = f(x) under the translation which maps A onto C. Using your result from part a(i), show that the centre of this ball reached its maximum height at the point (2·677, 3·964), correct to three decimal places."
+    },
+    {
+      "id": "maths-2016-hl-p1-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "stem": "The diagram shows Sarah’s first throw at the basket in a basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane with A(−0·5, 2·565) and B(4·5, 3·05), the equation of the path of the centre of the ball is f(x) = −0·274x² + 1·193x + 3·23, where both x and f(x) are measured in metres. Part (a)(iii): Sarah took a second throw. This throw followed the path of the parabola g(x) as shown. The ball left Sarah’s hands at the point C(0, 2). The graph y = g(x) is the image of the graph y = f(x) under the translation which maps A onto C. Using your result from part a(i), show that the centre of this ball reached its maximum height at the point (2·677, 3·964), correct to three decimal places.",
+      "questionText": "Hence, or otherwise, find the equation of the parabola g(x)."
+    },
+    {
+      "id": "maths-2016-hl-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs",
+        "mathematics-higher-functions"
+      ],
+      "stem": "The heptathlon is an Olympic competition. It consists of seven events including the 200 m race and the javelin. The scoring system uses formulas to calculate a score for each event. The table below shows the formulas for two of the events and the values of constants used in these formulas, where x is the time taken (in seconds) or distance achieved (in metres) by the competitor and y is the number of points scored in the event. Table: Event, x, Formula, a, b, c. 200 m race, Time (s), y = a(b − x)^c, 4·99087, 42·5, 1·81. Javelin, Distance (m), y = a(x − b)^c, 15·9803, 3·8, 1·04.",
+      "questionText": "In the heptathlon, Jessica ran 200 m in 23·8 s and threw the javelin 58·2 m. Use the formulas in the table to find the number of points she scored in each of these events, correct to the nearest point."
+    },
+    {
+      "id": "maths-2016-hl-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The heptathlon is an Olympic competition. It consists of seven events including the 200 m race and the javelin. The scoring system uses formulas to calculate a score for each event. The table below shows the formulas for two of the events and the values of constants used in these formulas, where x is the time taken (in seconds) or distance achieved (in metres) by the competitor and y is the number of points scored in the event. Table: Event, x, Formula, a, b, c. 200 m race, Time (s), y = a(b − x)^c, 4·99087, 42·5, 1·81. Javelin, Distance (m), y = a(x − b)^c, 15·9803, 3·8, 1·04.",
+      "questionText": "The world record distance for the javelin, in the heptathlon, would merit a score of 1295 points. Find the world record distance for the javelin, in the heptathlon, correct to two decimal places."
+    },
+    {
+      "id": "maths-2016-hl-p1-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The heptathlon is an Olympic competition. It consists of seven events including the 200 m race and the javelin. The scoring system uses formulas to calculate a score for each event. The table below shows the formulas for two of the events and the values of constants used in these formulas, where x is the time taken (in seconds) or distance achieved (in metres) by the competitor and y is the number of points scored in the event. Table: Event, x, Formula, a, b, c. 200 m race, Time (s), y = a(b − x)^c, 4·99087, 42·5, 1·81. Javelin, Distance (m), y = a(x − b)^c, 15·9803, 3·8, 1·04.",
+      "questionText": "The formula used to calculate the points for the 800 m race, in the heptathlon, is the same formula used for the 200 m race but with different constants. Jessica ran the 800 m race in 2 minutes and 1·84 seconds which merited 1087 points. If a = 0·11193 and b = 254 for the 800 m race, find the value of c for this event, correct to two decimal places."
+    },
+    {
+      "id": "maths-2016-hl-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "At the first stage of a pattern, a point moves 4 units from the origin in the positive direction along the x-axis. For the second stage, it turns left and moves 2 units parallel to the y-axis. For the third stage, it turns left and moves 1 unit parallel to the x-axis. At each stage, after the first one, the point turns left and moves half the distance of the previous stage, as shown.",
+      "questionText": "How many stages has the point completed when the total distance it has travelled, along its path, is 7·9375 units?"
+    },
+    {
+      "id": "maths-2016-hl-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "At the first stage of a pattern, a point moves 4 units from the origin in the positive direction along the x-axis. For the second stage, it turns left and moves 2 units parallel to the y-axis. For the third stage, it turns left and moves 1 unit parallel to the x-axis. At each stage, after the first one, the point turns left and moves half the distance of the previous stage, as shown.",
+      "questionText": "Find the maximum distance the point can move, along its path, if it continues in this pattern indefinitely."
+    },
+    {
+      "id": "maths-2016-hl-p1-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "At the first stage of a pattern, a point moves 4 units from the origin in the positive direction along the x-axis. For the second stage, it turns left and moves 2 units parallel to the y-axis. For the third stage, it turns left and moves 1 unit parallel to the x-axis. At each stage, after the first one, the point turns left and moves half the distance of the previous stage, as shown.",
+      "questionText": "Complete the second row of the table below showing the changes to the x co-ordinate, the first nine times the point moves to a new position. Hence, or otherwise, find the x co-ordinate and the y co-ordinate of the final position that the point is approaching, if it continues indefinitely in this pattern. Table: Stage: 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th. Change in x: +4, 0, –1, _, _, _, _, _, _. Change in y: _, _, _, _, _, _, _, _, _."
+    },
+    {
+      "id": "maths-2016-hl-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "A male bee comes from an unfertilised egg, i.e. he has a female parent but he does not have a male parent. A female bee comes from a fertilised egg, i.e. she has a female parent and a male parent.",
+      "questionText": "The following diagram shows the ancestors of a certain male bee. We identify his generation as G₁ and our diagram goes back to G₄. Continue the diagram to G₅."
+    },
+    {
+      "id": "maths-2016-hl-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "A male bee comes from an unfertilised egg, i.e. he has a female parent but he does not have a male parent. A female bee comes from a fertilised egg, i.e. she has a female parent and a male parent.",
+      "questionText": "The number of ancestors of this bee in each generation can be calculated by the formula Gₙ₊₂ = Gₙ₊₁ + Gₙ, where G₁ = 1 and G₂ = 1, as in the diagram. Use this formula to calculate the number of ancestors in G₆ and in G₇."
+    },
+    {
+      "id": "maths-2016-hl-p1-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "A male bee comes from an unfertilised egg, i.e. he has a female parent but he does not have a male parent. A female bee comes from a fertilised egg, i.e. she has a female parent and a male parent. Part (b)(ii): The number of ancestors of this bee in each generation can be calculated by the formula Gₙ₊₂ = Gₙ₊₁ + Gₙ, where G₁ = 1 and G₂ = 1, as in the diagram. Use this formula to calculate the number of ancestors in G₆ and in G₇.",
+      "questionText": "The number of ancestors in each generation can also be calculated by using the formula Gₙ = ((1 + √5)ⁿ − (1 − √5)ⁿ)/(2ⁿ√5). Use this formula to verify the number of ancestors in G₃."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        12
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        15,
+        19
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:dca9cc5f2ecc8fae": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "12:eca40054d495831a": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "15:b0ddb7812cde44d3": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "19:680eec5e8912faf6": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    }
+  }
+}

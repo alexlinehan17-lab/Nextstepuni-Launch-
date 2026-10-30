@@ -1,0 +1,2096 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "tasks": {
+    "1-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 110,
+          "bottom": 176,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 36,
+          "top": 226,
+          "bottom": 780,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect squaring (apply once if same type of error)",
+        "Blunders (−3) — Incorrect centre or radius"
+      ],
+      "inspectedSolutionSha256": "14ecc893fa2d339373bdff8218f5c585b517d1c0eb3f23ed5f4e62b7033b84fa"
+    },
+    "1-b": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 195,
+          "bottom": 217,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 37,
+          "top": 104,
+          "bottom": 701,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 38,
+          "top": 54,
+          "bottom": 540,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect perpendicular slope",
+        "Blunders (−3) — Equation of circle incomplete"
+      ],
+      "inspectedSolutionSha256": "c0b830f5fdaf5172b4f7fd6b85c86d12d2f3ae42c98fe0b7080cad5d32b3daa7"
+    },
+    "1-c-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 238,
+          "bottom": 284,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 290,
+          "bottom": 314,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 39,
+          "top": 54,
+          "bottom": 707,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect conclusion stated or implied",
+        "Slips (−1) — Not establishing both cases"
+      ],
+      "inspectedSolutionSha256": "e1fcd3e460f24b9323e6493b2294033386925ca96a7c695ad775da27f10d395d"
+    },
+    "1-c-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 238,
+          "bottom": 284,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 322,
+          "bottom": 365,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 40,
+          "top": 54,
+          "bottom": 736,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — One case only",
+        "Blunders (−3) — Not verifying centre on tangents"
+      ],
+      "inspectedSolutionSha256": "d6527ba4a7f03b276148353e5bfa0de55f6daf398d929d62b3166777b7f516cf"
+    },
+    "2-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 398,
+          "bottom": 448,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 41,
+          "top": 200,
+          "bottom": 449,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — One value only",
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "54d273b8b0c839e490d76fc124dd24d90ac3f27c589779032b8361524bfba823"
+    },
+    "2-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 450,
+          "bottom": 489,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 492,
+          "bottom": 522,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 41,
+          "top": 559,
+          "bottom": 782,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic errors",
+        "Attempts — Relationship between a vector and related perpendicular stated or implied"
+      ],
+      "inspectedSolutionSha256": "968b14b14485f3af8e2ffa86d5150c0bcc941f6c9be20a99e3bc565439f60b07"
+    },
+    "2-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 450,
+          "bottom": 489,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 2,
+          "top": 532,
+          "bottom": 555,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 42,
+          "top": 54,
+          "bottom": 344,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in modulus formula",
+        "Blunders (−3) — Answer not in single surd"
+      ],
+      "inspectedSolutionSha256": "0f37a9feb74adb085d6d9f8f5ef3431dd7e8bb4f8cf516e05466e3190955b977",
+      "sourceNote": "The original denominator prints 289 + 461. Since 19² = 361, this should read 289 + 361 = 650, consistent with the next line and the correct final answer 5/√26."
+    },
+    "2-c-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 559,
+          "bottom": 654,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 42,
+          "top": 530,
+          "bottom": 748,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Attempts — as the sum of two vectors"
+      ],
+      "inspectedSolutionSha256": "069c62f288f1e9ab2dd6e1a07ee39c77b5fc295459de49658136b935c48fc9e7"
+    },
+    "2-c-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 2,
+          "top": 559,
+          "bottom": 685,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 43,
+          "top": 54,
+          "bottom": 423,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect conclusion or no conclusion implied",
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "e592438e43fdfa79046c3ad22d07ad7e87c8bc3f01946ff2d17c433e95b4c884"
+    },
+    "3-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 52,
+          "bottom": 92,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 44,
+          "top": 185,
+          "bottom": 464,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect ratio formula",
+        "Worthless — Midpoint used once"
+      ],
+      "inspectedSolutionSha256": "137d97e6a72f6e7e59efe49201fdd65e80570ed2372fabe313fc2df4923ec241"
+    },
+    "3-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 108,
+          "bottom": 155,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 162,
+          "bottom": 186,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 45,
+          "top": 54,
+          "bottom": 415,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect matrix",
+        "Blunders (−3) — Incorrect matrix multiplication"
+      ],
+      "inspectedSolutionSha256": "525609346f469f57cf2989f48441a80a9cea9e173132287d96a50ebb5e8a62c7"
+    },
+    "3-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 108,
+          "bottom": 155,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 192,
+          "bottom": 229,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 45,
+          "top": 420,
+          "bottom": 776,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 46,
+          "top": 54,
+          "bottom": 116,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Fails to finish correctly",
+        "Attempts — Effort at image of one line only"
+      ],
+      "inspectedSolutionSha256": "f9b3fa1d7b2f43217034777cd204217c7694cd9e9548550e7b1f4700a64d832f"
+    },
+    "3-b-iii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 108,
+          "bottom": 155,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 235,
+          "bottom": 309,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 120,
+          "bottom": 406,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — One value of k",
+        "Blunders (−3) — Error in area formula"
+      ],
+      "inspectedSolutionSha256": "bb2f5046eea78cdf77fe5e90bbfe85adf7fd79cfa734576e25dfaf2a6b6b505a"
+    },
+    "3-b-iv": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 108,
+          "bottom": 155,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 235,
+          "bottom": 341,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 46,
+          "top": 407,
+          "bottom": 753,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — A or B incorrect",
+        "Blunders (−3) — No conclusion or incorrect conclusion"
+      ],
+      "inspectedSolutionSha256": "8488fcf9308f9dff9e80d1b90d91549577db876d8e09b374bb6de8280d0bbcd3"
+    },
+    "4-a": {
+      "topic": "5-1",
+      "atlas": "functions,trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 393,
+          "bottom": 434,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 47,
+          "top": 215,
+          "bottom": 614,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error rewriting as sum of two limits",
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "1c8cdc71a56cc7e2f59ba05f11feec3e586f31712c7e443883b516fcbfa13b42"
+    },
+    "4-b": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 453,
+          "bottom": 493,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 121,
+          "bottom": 466,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Missing and /or incorrect solutions (to a max of 3)",
+        "Blunders (−3) — Solutions outside the range (to a max of 3)"
+      ],
+      "inspectedSolutionSha256": "18c1770aa4a1201650f551d3e2d894f341797f8c1543efdd6c10e74124cb63a9"
+    },
+    "4-c-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 512,
+          "bottom": 597,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 54,
+          "bottom": 338,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect value of x for bisected chord",
+        "Blunders (−3) — Incorrect use of Pythagoras"
+      ],
+      "inspectedSolutionSha256": "954b476f700e0c425e9d94371d8f2477d598094e4fa87b03051cc92955354b26"
+    },
+    "4-c-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 512,
+          "bottom": 597,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 3,
+          "top": 601,
+          "bottom": 672,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 345,
+          "bottom": 719,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect radius substituted into sector formula",
+        "Attempts — Required area identified"
+      ],
+      "inspectedSolutionSha256": "c0dfb54c5d2171feba9eabd83626e9b8e45ff8ba0fc21111bbb467e8c72bfc26"
+    },
+    "5-a": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 55,
+          "bottom": 80,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 176,
+          "bottom": 434,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Each incorrect angle and/or omitted angle",
+        "Blunders (−3) — Each incorrect angle outside the range"
+      ],
+      "inspectedSolutionSha256": "8fc62ff00a18db73d3dbef05ca7aec9e674c08481c1eb56e0a0adabcf21628bc"
+    },
+    "5-b-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 99,
+          "bottom": 139,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 501,
+          "bottom": 733,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 51,
+          "top": 54,
+          "bottom": 130,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in expanding sin (A+B)",
+        "Blunders (−3) — Error in expanding cos(A+B)"
+      ],
+      "inspectedSolutionSha256": "93dc0d63f484cf55e9698c8a159ec72cbb0d880fc78b86df0ac2717c0dbbcd75"
+    },
+    "5-b-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry-functions-identities",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 143,
+          "bottom": 184,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 206,
+          "bottom": 423,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect conclusion",
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "5b8ca26e40070b10199bef40aa92eb2e45712b10ea84f2d44ac4ba6ac45222d3"
+    },
+    "5-c-i": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 204,
+          "bottom": 425,
+          "x0": 52,
+          "x1": 565,
+          "erase": [
+            [
+              108,
+              330,
+              281,
+              356
+            ]
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 54,
+          "bottom": 323,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Answer not in surd form",
+        "Slips (−1) — Units omitted or incorrect"
+      ],
+      "inspectedSolutionSha256": "9ac48997f5a6aa600709c17a3584721b4bb5f8c786c184201e9efae3d820187a"
+    },
+    "5-c-ii": {
+      "topic": "2-3",
+      "atlas": "trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 204,
+          "bottom": 425,
+          "x0": 52,
+          "x1": 565,
+          "erase": [
+            [
+              108,
+              296,
+              283,
+              322
+            ]
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 333,
+          "bottom": 700,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in cosine formula with substitution",
+        "Slips (−1) — Units omitted or incorrect  (apply once only in this section)"
+      ],
+      "inspectedSolutionSha256": "f39b9eb45322c78e1825cc3c7a72e701b7671677ac83310072d43d5dbed84a4a"
+    },
+    "6-a": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 487,
+          "bottom": 524,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 211,
+          "bottom": 400,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Attempts — 2!+4! or 2+4! (with or without further work)"
+      ],
+      "inspectedSolutionSha256": "9386d63138f3eb36be4dfe50deb0db3312d7ac66d6cbfbcd63069ad8e76a6f05"
+    },
+    "6-b-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 543,
+          "bottom": 584,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 498,
+          "bottom": 759,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 54,
+          "top": 54,
+          "bottom": 103,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in general term",
+        "Blunders (−3) — Equation in l and k"
+      ],
+      "inspectedSolutionSha256": "154dc6ac5579119bc52188484aef66cf2f7e37775c86e43018125c86149a0bae"
+    },
+    "6-b-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 543,
+          "bottom": 584,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 589,
+          "bottom": 621,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 123,
+          "bottom": 323,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in handling indices",
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "c28ef20c3103b3d34b3c377ee91e9e0941d415b5321292093569b70c14def55b"
+    },
+    "6-c-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 641,
+          "bottom": 674,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 675,
+          "bottom": 697,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 518,
+          "bottom": 755,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect number of favourable outcomes",
+        "Slips (−1) — Answer not to two significant figures"
+      ],
+      "inspectedSolutionSha256": "e7dbfd5290697046ae57d184d91449558ad68db74955c0ff2df54accdd6adcea"
+    },
+    "6-c-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 641,
+          "bottom": 674,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 695,
+          "bottom": 717,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 54,
+          "bottom": 291,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect number of favourable outcomes",
+        "Slips (−1) — Answer not to two significant figures"
+      ],
+      "inspectedSolutionSha256": "471f904524bb80dbe00ea89a91ea889ffe5745d912f2080d1ef42e23ed22dede"
+    },
+    "6-c-iii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 641,
+          "bottom": 674,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 714,
+          "bottom": 737,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 302,
+          "bottom": 535,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect number of favourable outcomes",
+        "Slips (−1) — Answer not to two significant figures"
+      ],
+      "inspectedSolutionSha256": "69b890c83f71049e7cc029eba384dba2825f5a5a5ab3291297c5fd36385c09dd"
+    },
+    "6-c-iv": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 641,
+          "bottom": 674,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 4,
+          "top": 734,
+          "bottom": 757,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 546,
+          "bottom": 772,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect number of favourable outcomes",
+        "Slips (−1) — Answer not to two significant figures"
+      ],
+      "inspectedSolutionSha256": "34fa5ab9e6e11363b1670800a24a1e919658e0c15488152f5a3366998fdfef5d"
+    },
+    "7-a-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 52,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 5,
+          "top": 80,
+          "bottom": 103,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 236,
+          "bottom": 483,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "7e16297d32c33efb6e38aa8d9d8146fd7c224e0ae312dde0307255b9be01ee7c"
+    },
+    "7-a-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 52,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 5,
+          "top": 108,
+          "bottom": 130,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 493,
+          "bottom": 770,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Term omitted",
+        "Blunders (−3) — Incomplete answer"
+      ],
+      "inspectedSolutionSha256": "e8ee2cb04956a06480a73827faaf22f100d2ea36fae6a79535c2e041972f6da9"
+    },
+    "7-b-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 149,
+          "bottom": 199,
+          "x0": 52,
+          "x1": 425
+        },
+        {
+          "page": 5,
+          "top": 150,
+          "bottom": 290,
+          "x0": 416,
+          "x1": 560
+        },
+        {
+          "page": 5,
+          "top": 204,
+          "bottom": 241,
+          "x0": 52,
+          "x1": 415
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 311,
+          "bottom": 404,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — One path only"
+      ],
+      "inspectedSolutionSha256": "42d9e83d3f2fc96864bbbeae6a18d7fece654ee5c453409d738b50d79865dd04"
+    },
+    "7-b-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 149,
+          "bottom": 199,
+          "x0": 52,
+          "x1": 425
+        },
+        {
+          "page": 5,
+          "top": 150,
+          "bottom": 290,
+          "x0": 416,
+          "x1": 560
+        },
+        {
+          "page": 5,
+          "top": 245,
+          "bottom": 282,
+          "x0": 52,
+          "x1": 415
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 411,
+          "bottom": 730,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Number of favourable outcomes incorrect",
+        "Blunders (−3) — Number of possible outcomes incorrect"
+      ],
+      "inspectedSolutionSha256": "d66ce1f1ba93cbb5fd12b0c8d4abdb21f0dee1a7197e787763ed1fcb9d3ad809"
+    },
+    "7-b-iii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 149,
+          "bottom": 199,
+          "x0": 52,
+          "x1": 425
+        },
+        {
+          "page": 5,
+          "top": 150,
+          "bottom": 290,
+          "x0": 416,
+          "x1": 560
+        },
+        {
+          "page": 5,
+          "top": 287,
+          "bottom": 310,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 54,
+          "bottom": 337,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Number of favourable outcomes incorrect",
+        "Blunders (−3) — Number of possible outcomes incorrect"
+      ],
+      "inspectedSolutionSha256": "52e1661870e2b69bb21fed407bcdc40d2160607dd3cef79b2ad6466a041be9d3"
+    },
+    "7-b-iv": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 149,
+          "bottom": 199,
+          "x0": 52,
+          "x1": 425
+        },
+        {
+          "page": 5,
+          "top": 150,
+          "bottom": 290,
+          "x0": 416,
+          "x1": 560
+        },
+        {
+          "page": 5,
+          "top": 314,
+          "bottom": 351,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 340,
+          "bottom": 630,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Attempts — One marble only"
+      ],
+      "inspectedSolutionSha256": "f916111a2492da5d810a9f134d4f2b092d24a8e32a8ce1a4e4296074fa33439e"
+    },
+    "7-c-i": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 369,
+          "bottom": 393,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 5,
+          "top": 397,
+          "bottom": 437,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 68,
+          "bottom": 357,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "413edd2413e3908bb18f5a094d62d83be75cc84c6241cb44204ef9e745ff37b2"
+    },
+    "7-c-ii": {
+      "topic": "1-6",
+      "atlas": "statistics-descriptive-statistics",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 369,
+          "bottom": 393,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 5,
+          "top": 442,
+          "bottom": 496,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 361,
+          "bottom": 704,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in squaring",
+        "Attempts — Expression for standard deviation correct"
+      ],
+      "inspectedSolutionSha256": "3586a7a412343cc8f62245cf684a28f6cc1e3baab7a28650c2d1de90b0e68596"
+    },
+    "8-a": {
+      "topic": "5-2",
+      "atlas": "integration",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 95,
+          "bottom": 139,
+          "x0": 52,
+          "x1": 460
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 202,
+          "bottom": 500,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect ‘parts’ formula",
+        "Slips (−1) — Omits constant of integration"
+      ],
+      "inspectedSolutionSha256": "21240e1ed69bb157568664decfd364a23aaa5b165d90258b5e0a332b6d6f59fe",
+      "sourceNote": "In the assignment line, “dv = ∫ sin x dx” is a notation error. Take dv = sin x dx and v = −cos x. The final integral −x cos x + sin x + C is correct."
+    },
+    "8-b-i": {
+      "topic": "3-3",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 149,
+          "bottom": 199,
+          "x0": 52,
+          "x1": 467
+        },
+        {
+          "page": 6,
+          "top": 117,
+          "bottom": 232,
+          "x0": 468,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 204,
+          "bottom": 228,
+          "x0": 52,
+          "x1": 467
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 709,
+          "bottom": 778,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 61,
+          "top": 54,
+          "bottom": 213,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in perimeter",
+        "Blunders (−3) — Answer not in required form"
+      ],
+      "inspectedSolutionSha256": "732bdaec1fd95f43824d1ac30a8902a6a090c6ce4582a59e462366bdad40e191"
+    },
+    "8-b-ii": {
+      "topic": "5-2",
+      "atlas": "differentiation-applications",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 149,
+          "bottom": 199,
+          "x0": 52,
+          "x1": 467
+        },
+        {
+          "page": 6,
+          "top": 117,
+          "bottom": 232,
+          "x0": 468,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 233,
+          "bottom": 257,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 61,
+          "top": 220,
+          "bottom": 740,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in eliminating x from expression for area",
+        "Blunders (−3) — Error in differentiation"
+      ],
+      "inspectedSolutionSha256": "88033f3a91de2885434d9eba08dfbfbbf36415235461b64c1062d41bdcf31074"
+    },
+    "8-c-i": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 277,
+          "bottom": 316,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 315,
+          "bottom": 338,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 62,
+          "top": 238,
+          "bottom": 435,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — -1 omitted in general term",
+        "Blunders (−3) — Incorrect x index in general term"
+      ],
+      "inspectedSolutionSha256": "bc1f39709d7436ed48068ef7d981f9102774c9722a0bce4a7d9c7e16a1e07063"
+    },
+    "8-c-ii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 277,
+          "bottom": 316,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 344,
+          "bottom": 368,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 62,
+          "top": 436,
+          "bottom": 771,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect conclusion",
+        "Attempts — Ratio test used correctly"
+      ],
+      "inspectedSolutionSha256": "3d2f0d661e696692af4262598e3c7ca6750b91d6a6a8fa07dca54e63ccaac2cb"
+    },
+    "8-c-iii": {
+      "topic": "3-1",
+      "atlas": "sequences-series",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 277,
+          "bottom": 316,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 375,
+          "bottom": 448,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 63,
+          "top": 54,
+          "bottom": 271,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Term omitted in expansion",
+        "Slips (−1) — Arithmetic error"
+      ],
+      "inspectedSolutionSha256": "b9d44c72cbdb0a4dbee2c569d0b874359165c93a9b22d1fc700c63a5856f25c7"
+    },
+    "9-a": {
+      "topic": "1-7",
+      "atlas": "statistics-z-scores",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 480,
+          "bottom": 520,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 64,
+          "top": 201,
+          "bottom": 412,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect reading of tables",
+        "Blunders (−3) — Incorrect area"
+      ],
+      "inspectedSolutionSha256": "c72cafbdad653443ad6c37833a98b3a25c4b39450ae2748aa9bcc23d7b9306a4"
+    },
+    "9-b": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 528,
+          "bottom": 579,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 64,
+          "top": 497,
+          "bottom": 776,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 65,
+          "top": 54,
+          "bottom": 158,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Divisor other than 5",
+        "Blunders (−3) — Each term omitted to max of 3"
+      ],
+      "inspectedSolutionSha256": "2fa3c72cee0f125095fd18cc7c6bb894cbd67430edcb58516796427c9cab3940"
+    },
+    "9-c-i": {
+      "topic": "1-7",
+      "atlas": "statistics-inferential-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 597,
+          "bottom": 675,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 673,
+          "bottom": 709,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 65,
+          "top": 370,
+          "bottom": 771,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in formula",
+        "Blunders (−3) — Incorrect or no conclusion implied"
+      ],
+      "sourceNote": "In the second (interval) method, the printed upper-bound line starts with 69.3; it should start with the population mean 67, consistent with the general formula above and the stated upper endpoint 71.0768. The first z-score method and the final conclusion are unaffected.",
+      "inspectedSolutionSha256": "45f879671edf5f6ce1023d8e3b29f9c8bccfff9a03491b56245611a51f1e5382"
+    },
+    "9-c-ii": {
+      "topic": "1-7",
+      "atlas": "statistics-inferential-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 597,
+          "bottom": 675,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 706,
+          "bottom": 728,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 66,
+          "top": 54,
+          "bottom": 332,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in formula",
+        "Blunders (−3) — Incorrect or no conclusion"
+      ],
+      "inspectedSolutionSha256": "62cbf3c98ab83b91ec6cd709333449c82dc6acaad85b145c2200240aa2cdbae1"
+    },
+    "9-c-iii": {
+      "topic": "1-7",
+      "atlas": "statistics-inferential-statistics",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 597,
+          "bottom": 675,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 6,
+          "top": 725,
+          "bottom": 762,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 66,
+          "top": 353,
+          "bottom": 681,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect or smallest sample not chosen",
+        "Attempts — Formula partially substituted"
+      ],
+      "inspectedSolutionSha256": "1886d2619f79d8aade14ddf0586139bc86a242d189a0499ba1293ed4660a714a"
+    },
+    "10-a-i": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 50,
+          "bottom": 79,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 52,
+          "bottom": 137,
+          "x0": 415,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 86,
+          "bottom": 109,
+          "x0": 52,
+          "x1": 410
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 67,
+          "top": 236,
+          "bottom": 330,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Attempts — Identity property stated but element not identified"
+      ],
+      "inspectedSolutionSha256": "06e9de335b1ac044d2448159495cbd6e422d7d1244ed81219195ee60ab84ec5a"
+    },
+    "10-a-ii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 50,
+          "bottom": 79,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 52,
+          "bottom": 137,
+          "x0": 415,
+          "x1": 558
+        },
+        {
+          "page": 7,
+          "top": 114,
+          "bottom": 137,
+          "x0": 52,
+          "x1": 410
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 67,
+          "top": 333,
+          "bottom": 487,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Inverse of any element omitted",
+        "Attempts — Any correct inverse"
+      ],
+      "inspectedSolutionSha256": "6836883430488c0c85d0d3c8a621b70e33f9f774b9001f159733c1b59400888f"
+    },
+    "10-b-i": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 155,
+          "bottom": 219,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 160,
+          "bottom": 313,
+          "x0": 411,
+          "x1": 560
+        },
+        {
+          "page": 7,
+          "top": 224,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 410
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 68,
+          "top": 54,
+          "bottom": 351,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Permutation other than order 3",
+        "Blunders (−3) — Incomplete geometrical justification"
+      ],
+      "inspectedSolutionSha256": "a50a2bf504b016603b21cd1efa085da6e003aa3ae3087c8ad5a3868928954334"
+    },
+    "10-b-ii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 155,
+          "bottom": 219,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 160,
+          "bottom": 313,
+          "x0": 411,
+          "x1": 560
+        },
+        {
+          "page": 7,
+          "top": 265,
+          "bottom": 302,
+          "x0": 52,
+          "x1": 410
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 68,
+          "top": 358,
+          "bottom": 613,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incomplete geometrical interpretation",
+        "Attempts — Reference to π"
+      ],
+      "inspectedSolutionSha256": "aefab6c7d046a26d6ca7459570417381df942f321c066bbfaebd587dd39d94c0"
+    },
+    "10-b-iii": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 155,
+          "bottom": 219,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 160,
+          "bottom": 313,
+          "x0": 411,
+          "x1": 560
+        },
+        {
+          "page": 7,
+          "top": 224,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 265,
+          "bottom": 302,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 307,
+          "bottom": 330,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 68,
+          "top": 620,
+          "bottom": 776,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 69,
+          "top": 54,
+          "bottom": 186,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in composition",
+        "Blunders (−3) — Incorrect conclusion stated or implied"
+      ],
+      "inspectedSolutionSha256": "998320f099fb846bd67de0166e0c6ac35462c616cf96a7bb727dce503ab1c93e"
+    },
+    "10-b-iv": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 155,
+          "bottom": 219,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 160,
+          "bottom": 313,
+          "x0": 411,
+          "x1": 560
+        },
+        {
+          "page": 7,
+          "top": 224,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 265,
+          "bottom": 302,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 335,
+          "bottom": 380,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 69,
+          "top": 195,
+          "bottom": 449,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Incorrect composition",
+        "Blunders (−3) — No conclusion stated or implied"
+      ],
+      "inspectedSolutionSha256": "87a68da9aaa47f73f9da2eaa6e8b8402bbcdc99db431b1d774823472ef10958e"
+    },
+    "10-b-v": {
+      "topic": "4-1",
+      "atlas": "algebra-expressions-factorising",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 155,
+          "bottom": 219,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 160,
+          "bottom": 313,
+          "x0": 411,
+          "x1": 560
+        },
+        {
+          "page": 7,
+          "top": 224,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 265,
+          "bottom": 302,
+          "x0": 52,
+          "x1": 410
+        },
+        {
+          "page": 7,
+          "top": 307,
+          "bottom": 408,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 69,
+          "top": 456,
+          "bottom": 691,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in use of Lagrange’s Theorem",
+        "Attempts — Definition of a subgroup written or implied."
+      ],
+      "sourceNote": "The scheme refers to non-closure from part (iii). Non-closure is actually established in part (iv); the original numbering error is retained in the source image.",
+      "inspectedSolutionSha256": "1060ff1c81360faf22658f873e99f48bb1f39df112ec022f5c46d5d26988c011"
+    },
+    "11-a": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-circle",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 439,
+          "bottom": 486,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 70,
+          "top": 191,
+          "bottom": 449,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in formula",
+        "Attempts — a = 4 and stops"
+      ],
+      "inspectedSolutionSha256": "b473636dc675c1aee4805a05736da5b9240454fc6430501aba9e240a15dd6d24"
+    },
+    "11-b-i": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,trigonometry-triangles",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 505,
+          "bottom": 567,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 71,
+          "top": 54,
+          "bottom": 363,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in trigonometric formula",
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "e807ebd6f3bc9830b65d25967dcfb4b8660f3c96506ff0d3f5d8b18bb461ace5"
+    },
+    "11-b-ii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 505,
+          "bottom": 567,
+          "x0": 52,
+          "x1": 565
+        },
+        {
+          "page": 7,
+          "top": 572,
+          "bottom": 652,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 71,
+          "top": 365,
+          "bottom": 781,
+          "x0": 60,
+          "x1": 555
+        },
+        {
+          "page": 72,
+          "top": 68,
+          "bottom": 121,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — Error in matrix multiplication",
+        "Blunders (−3) — Incorrect conclusion"
+      ],
+      "sourceNote": "In the penultimate line of the original derivation, the second squared term is misprinted as 3(cos θ + 4 sin θ)². The preceding lines, final line and question consistently give (3 cos θ + 4 sin θ)². Use that final expression.",
+      "inspectedSolutionSha256": "6b02dc5fc053898110b07d528d0f061baa56b47511d39c36a29ffb47b7d7522f"
+    },
+    "11-b-iii": {
+      "topic": "2-2",
+      "atlas": "co-ordinate-geometry-of-the-line,functions",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 505,
+          "bottom": 683,
+          "x0": 52,
+          "x1": 565
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 72,
+          "top": 132,
+          "bottom": 432,
+          "x0": 60,
+          "x1": 555
+        }
+      ],
+      "rows": [
+        "Blunders (−3) — No conclusion or incorrect conclusion",
+        "Slips (−1) — Arithmetic errors"
+      ],
+      "inspectedSolutionSha256": "500d877252e445723c4633a8dfe949841f84e8115988b5c939b75ac5ed131944"
+    }
+  }
+}

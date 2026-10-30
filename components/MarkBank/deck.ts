@@ -20,6 +20,8 @@
  * so there is no cohort left for whom the old taxonomy is correct.
  */
 
+import type { Level } from './levels';
+export type { Level } from './levels';
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
 import { CURRICULUM } from '../../curriculum';
 import DECK_SIZES from './cards/sizes.json';
@@ -2029,6 +2031,7 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   maths: {
     higher: () => import('./cards/maths/higher'),
     ordinary: () => import('./cards/maths/ordinary'),
+    foundation: () => import('./cards/maths/foundation'),
   },
   english: {
     higher: () => import('./cards/english/higher'),
@@ -2203,10 +2206,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
  * level by everyone. `levelsFor` below is what the picker must use, so a
  * common-level subject never offers a Higher/Ordinary choice it does not have.
  */
-export type Level = 'higher' | 'ordinary' | 'common';
-export const LEVELS: Level[] = ['higher', 'ordinary', 'common'];
+
+export const LEVELS: Level[] = ['higher', 'ordinary', 'foundation', 'common'];
 export const LEVEL_LABEL: Record<Level, string> = {
-  higher: 'Higher', ordinary: 'Ordinary', common: 'Common',
+  higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation', common: 'Common',
 };
 
 /**
@@ -2255,3 +2258,6 @@ export const cardsForTopic = (topicId: string, cards: SecCard[]) =>
 /** Total marks available in a topic — the denominator for "marks secure". */
 export const topicMarks = (topicId: string, cards: SecCard[]) =>
   cardsForTopic(topicId, cards).reduce((n, c) => n + c.totalMarks, 0);
+
+/** Shared level lookup retained for the reviewed Mathematics integration. */
+export const levelsForSubject = levelsFor;

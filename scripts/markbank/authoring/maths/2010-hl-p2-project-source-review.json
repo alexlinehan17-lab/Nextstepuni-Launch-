@@ -1,0 +1,878 @@
+{
+  "status": "Independent paper and scheme sweep complete; all 35 question and 35 solution crops visually inspected.",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003ALP230EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    3,
+    4,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "generalNotesPages": [
+    59
+  ],
+  "allocationPages": [
+    60
+  ],
+  "offeredMarks": 350,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 50,
+    "9A": 50,
+    "9B": 50
+  },
+  "scales": {
+    "5A": [
+      0,
+      5
+    ],
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      4,
+      10
+    ],
+    "10C": [
+      0,
+      3,
+      8,
+      10
+    ],
+    "10D": [
+      0,
+      3,
+      5,
+      8,
+      10
+    ],
+    "15C": [
+      0,
+      5,
+      10,
+      15
+    ],
+    "15D": [
+      0,
+      6,
+      9,
+      13,
+      15
+    ],
+    "20C": [
+      0,
+      7,
+      13,
+      20
+    ],
+    "20D": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ]
+  },
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Complete the Venn diagram.",
+      "scale": "10B",
+      "totalMarks": 10,
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6.",
+      "markingNote": "The full Venn diagram is one task. Do not penalise omission of the probability outside both sets."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Find the probability that neither A nor B happens.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6."
+    },
+    {
+      "suffix": "1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Find the conditional probability P(A | B).",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6."
+    },
+    {
+      "suffix": "1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "schemePages": [
+        44,
+        61
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "State whether A and B are independent events and justify your answer.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "Two events A and B satisfy P(A) = 0.2, P(A ∩ B) = 0.15 and P(A′ ∩ B) = 0.6.",
+      "markingNote": "Follow-through from the candidate’s own probabilities may earn full credit. Mutually exclusive arguments earn no credit; retain both independence proofs and both detailed notes."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "schemePages": [
+        45,
+        62
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Use the Tukey quick test at the 5% significance level to test whether the two populations have the same average.",
+      "scale": "15C",
+      "totalMarks": 15,
+      "stem": "The back-to-back stem-and-leaf diagram shows two samples. The corresponding populations are assumed identical in shape and spread.",
+      "markingNote": "Retain both complete samples and both keys. Tail count 8 is compared with the published critical value 7; the conclusion is part of the task."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "schemePages": [
+        45,
+        62
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Identify the mean, mode and median by inserting the relevant letters.",
+      "scale": "10B",
+      "totalMarks": 10,
+      "stem": "The diagram shows a skewed frequency distribution with vertical lines a, b and c.",
+      "markingNote": "All three labels are required within the one 10B task."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "schemePages": [
+        46,
+        62
+      ],
+      "sourcePages": [
+        5
+      ],
+      "questionText": "Construct the incircle of triangle ABC using only a compass and straight edge. Show all construction lines clearly.",
+      "scale": "20C",
+      "totalMarks": 20,
+      "measurementRequired": true,
+      "markingNote": "Keep the original full triangle and construction. The SEC template tolerance and trial-and-error credit rules remain in the original marking notes."
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "schemePages": [
+        46,
+        62
+      ],
+      "sourcePages": [
+        5
+      ],
+      "questionText": "An equilateral triangle has sides of length 2 units. Find the area of its incircle.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Exact area π/3 earns full credit. Keep the scheme’s diagram-measurement tolerance and its high-partial-credit rule for early decimal approximation."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "sourcePages": [
+        6
+      ],
+      "questionText": "The centre of a circle lies on x − 2y − 1 = 0. The x-axis and y = 6 are tangents. Find the equation of the circle.",
+      "scale": "15C",
+      "totalMarks": 15
+    },
+    {
+      "suffix": "4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "schemePages": [
+        47,
+        63
+      ],
+      "sourcePages": [
+        6
+      ],
+      "questionText": "Show that x² + y² − 6x − 12y + 41 = 0 touches the circle in part (a) externally.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "First find the circle whose centre lies on x − 2y − 1 = 0 and which is tangent to the x-axis and y = 6."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Solve cos(3θ) = 1/2 for θ ∈ ℝ, with θ in radians.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "markingNote": "Both complete families of solutions are required. Two or more isolated correct solutions earn high partial credit; there is no finite root-selection menu."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Match all three graphs f, g and h to cos(3x), 2cos(3x) and 3cos(2x).",
+      "scale": "10B",
+      "totalMarks": 10,
+      "markingNote": "All three matches are required; the three expressions are not an optional answer pool."
+    },
+    {
+      "suffix": "5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "schemePages": [
+        48,
+        63
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Label the scales on both axes in the graph from part (b).",
+      "scale": "10B",
+      "totalMarks": 10,
+      "stem": "The same graph contains cos(3x), 2cos(3x) and 3cos(2x)."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "Verify that C lies on l.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0.",
+      "markingNote": "Substituting B can earn partial credit; substituting A earns none."
+    },
+    {
+      "suffix": "6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "Find the slope of AB, and hence find tan(∠ABC) as a fraction.",
+      "components": [
+        {
+          "id": "slope",
+          "label": "Slope of AB",
+          "code": "5B"
+        },
+        {
+          "id": "tangent",
+          "label": "tan ∠ABC",
+          "code": "5C"
+        }
+      ],
+      "totalMarks": 10,
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0.",
+      "markingNote": "Two published component scales, 5B for slope and 5C for the tangent, remain in one complete task. Retain the sign, fraction and alternate-method caps."
+    },
+    {
+      "suffix": "6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "schemePages": [
+        49,
+        64
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "Find both vectors BC and BA in terms of i and j.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0.",
+      "markingNote": "Both vectors are required under one 5B scale."
+    },
+    {
+      "suffix": "6-d",
+      "printedParts": [
+        "Q6(d)"
+      ],
+      "schemePages": [
+        50,
+        64
+      ],
+      "sourcePages": [
+        8,
+        9
+      ],
+      "questionText": "Use the dot product to find cos(∠ABC), and show that it is consistent with the answer to part (b).",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "A(−2, 9), B(6, −6) and C(11, 6) are shown in the diagram. The line l passes through B and has equation 12x − 5y − 102 = 0. Part (b) asks for the slope of AB and tan(∠ABC); part (c) asks for BC and BA.",
+      "markingNote": "Finding the cosine alone is high partial credit. All three published consistency arguments are retained with the complete dot-product calculation."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "Estimate the correlation coefficient from the diagram.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "markingNote": "The accepted correlation range is −0.9 to −0.6. Retain the original direction and tolerance credit rules."
+    },
+    {
+      "suffix": "7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "Circle the outlier and write down both the person’s age and maximum heart rate.",
+      "components": [
+        {
+          "id": "outlier",
+          "label": "Circle the outlier",
+          "code": "5A"
+        },
+        {
+          "id": "readings",
+          "label": "Age and maximum heart rate",
+          "code": "5B"
+        }
+      ],
+      "totalMarks": 10,
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "markingNote": "The outlier identification has a hit-or-miss 5A scale; both coordinate readings share a 5B scale. Accepted ranges: age 45–49 years and maximum heart rate 135–139 bpm."
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "schemePages": [
+        51,
+        65
+      ],
+      "sourcePages": [
+        10
+      ],
+      "questionText": "Use the line of best fit to estimate the maximum heart rate of a 44-year-old person.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "markingNote": "Accept 172–178 bpm; the source example is 176 bpm."
+    },
+    {
+      "suffix": "7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Take suitable readings from the diagram and calculate the slope of the line of best fit.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained.",
+      "markingNote": "Accept slopes from −0.8 to −0.6 with working. An answer in tolerance without working receives partial credit."
+    },
+    {
+      "suffix": "7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "schemePages": [
+        52,
+        65
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Find the equation of the line of best fit in the form MHR = a − b × age.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained. Part (d) asks for its slope."
+    },
+    {
+      "suffix": "7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Compare the new rule with MHR = 220 − age. Describe how their agreement varies with age, and illustrate your answer with two examples.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained. First find the best-fit equation in the form MHR = a − b × age.",
+      "markingNote": "Two examples and an explanation are required. The ages are open choices, not a finite printed answer pool; retain both original examples and all accepted explanations."
+    },
+    {
+      "suffix": "7-g",
+      "printedParts": [
+        "Q7(g)"
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "In the stated exercise programme, a 65-year-old uses 75% of estimated MHR. What change does replacing the old rule with the researchers’ new rule imply?",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "The scatter plot shows simulated data based on a 2001 study of the maximum heart rates of 514 adults, in beats per minute, compared with age. The original graph, best-fit line and source attribution are retained. The older rule is MHR = 220 − age; first obtain the new rule from the fitted line."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "sourcePages": [
+        12
+      ],
+      "questionText": "Draw the coordinate axes with the lighthouse as origin, the east–west line as the x-axis and kilometres as units.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "sourcePages": [
+        12
+      ],
+      "questionText": "Find the equation of the line along which the ship is moving.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units.",
+      "markingNote": "Retain both original line-equation methods and the high-partial-credit rule for a solution with one error."
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "schemePages": [
+        53,
+        66
+      ],
+      "sourcePages": [
+        12
+      ],
+      "questionText": "Find the shortest distance between the ship and the lighthouse during the journey.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units.",
+      "fullCreditMinusOne": true,
+      "markingNote": "Both trigonometric and point-to-line distance solutions are retained. The shortest distance is 8 km."
+    },
+    {
+      "suffix": "8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "schemePages": [
+        54,
+        66
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "questionText": "At what time is the ship closest to the lighthouse?",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units. Part (c) asks for the shortest distance.",
+      "markingNote": "The full answer is a clock time, 12:24 pm. An estimate from 12:20 to 12:40 pm can receive low partial credit."
+    },
+    {
+      "suffix": "8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "schemePages": [
+        54,
+        67
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "questionText": "Visibility is limited to 9 km. For how many minutes in total is the ship visible from the lighthouse?",
+      "scale": "15C",
+      "totalMarks": 15,
+      "stem": "At noon a ship is 10 km due south of a lighthouse. It travels at 15 km/h on a bearing θ = tan⁻¹(4/3). Use the original diagram; the lighthouse is the coordinate origin and the east–west line is the x-axis, with kilometres as units. Part (c) asks for the shortest distance.",
+      "markingNote": "Count the complete visible chord, not just half of it. The answer is 8√17 minutes, about 33 minutes."
+    },
+    {
+      "suffix": "9a-a",
+      "printedParts": [
+        "Q9A(a)"
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "sourcePages": [
+        14
+      ],
+      "questionText": "What is the probability that a randomly selected rod is less than 39.7 mm long?",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "A machine produces normally distributed aluminium-rod lengths with mean equal to its setting and standard deviation 0.2 mm. It is set to 40 mm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "9a-b",
+      "printedParts": [
+        "Q9A(b)"
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "sourcePages": [
+        14
+      ],
+      "questionText": "Five rods are selected at random. Find the probability that at least two are less than 39.7 mm long.",
+      "scale": "15D",
+      "totalMarks": 15,
+      "stem": "A machine produces normally distributed aluminium-rod lengths with mean equal to its setting and standard deviation 0.2 mm. It is set to 40 mm.",
+      "fullCreditMinusOne": true,
+      "markingNote": "At least two means the union of the required outcomes two, three, four and five. Retain both the complement and direct-sum solutions; no answer-selection expansion applies."
+    },
+    {
+      "suffix": "9a-c",
+      "printedParts": [
+        "Q9A(c)"
+      ],
+      "schemePages": [
+        56,
+        67
+      ],
+      "sourcePages": [
+        14,
+        15
+      ],
+      "questionText": "Use the ten measured lengths to test at the 5% significance level whether the machine setting has become inaccurate. State both hypotheses and finish with a conclusion about the machine.",
+      "components": [
+        {
+          "id": "test",
+          "label": "Hypothesis test",
+          "code": "20D"
+        },
+        {
+          "id": "conclusion",
+          "label": "Contextualised conclusion",
+          "code": "5B"
+        }
+      ],
+      "totalMarks": 25,
+      "stem": "A machine produces normally distributed aluminium-rod lengths with mean equal to its setting and standard deviation 0.2 mm. It is set to 40 mm. The measured lengths, in mm, are 39.5, 40.0, 39.7, 40.2, 39.8, 39.7, 40.2, 39.9, 40.1, 39.6.",
+      "markingNote": "The test and contextualised conclusion are two scoring components of the one task. Retain the one-tailed-test cap; the required test is two-tailed."
+    },
+    {
+      "suffix": "9b-a",
+      "printedParts": [
+        "Q9B(a)"
+      ],
+      "schemePages": [
+        57,
+        68
+      ],
+      "sourcePages": [
+        16
+      ],
+      "questionText": "Prove that if three parallel lines cut off equal segments on some transversal line, then they cut off equal segments on any other transversal line. Include the diagram, given information, statement to prove, construction and proof.",
+      "components": [
+        {
+          "id": "diagram",
+          "label": "Diagram and given",
+          "code": "5B"
+        },
+        {
+          "id": "construction",
+          "label": "Construction",
+          "code": "5B"
+        },
+        {
+          "id": "proof",
+          "label": "Proof",
+          "code": "10D"
+        }
+      ],
+      "totalMarks": 20,
+      "markingNote": "Required proof headings remain one task with three published components. Retain both defined proof errors and all restrictions on alternative proofs."
+    },
+    {
+      "suffix": "9b-b-i",
+      "printedParts": [
+        "Q9B(b)(i)"
+      ],
+      "schemePages": [
+        58,
+        68
+      ],
+      "sourcePages": [
+        17
+      ],
+      "questionText": "Calculate AB in metres, correct to two decimal places.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "The roof truss has AC = 6 m and pitch 35°. AD = DE = EC and AF = FB = BG = GC. Use the original complete truss diagram.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "9b-b-ii",
+      "printedParts": [
+        "Q9B(b)(ii)"
+      ],
+      "schemePages": [
+        58,
+        68
+      ],
+      "sourcePages": [
+        17
+      ],
+      "questionText": "Calculate the total length of timber required to make the truss.",
+      "components": [
+        {
+          "id": "fd",
+          "label": "Length FD",
+          "code": "5B"
+        },
+        {
+          "id": "bd",
+          "label": "Length BD",
+          "code": "10B"
+        },
+        {
+          "id": "total",
+          "label": "Total timber length",
+          "code": "5B",
+          "fullCreditMinusOne": true
+        }
+      ],
+      "totalMarks": 20,
+      "stem": "The roof truss has AC = 6 m and pitch 35°. AD = DE = EC and AF = FB = BG = GC. Use the original complete truss diagram. Part (i) asks for AB to two decimal places.",
+      "markingNote": "Three named scoring steps remain in one total-length task. Only the final 5B component permits Full Credit Minus One. Retain the cosine-rule and similar-triangle alternatives."
+    }
+  ],
+  "paperSha256": "2c8dd9f3c69edb29535eb8911f3743c5212775d143c12f4fb7ff5fb3615f6264",
+  "schemeSha256": "cd4089ad0834d23f9b7596ca2d1418ec38a138ac7fe56f94a3bf59d84e2bd9b0",
+  "selectionReview": [
+    {
+      "scope": "whole paper / Q9",
+      "classification": "expanded-alternatives",
+      "reason": "Both complete Question 9A and Question 9B routes are retained. All six Section A questions and Questions 7 and 8 are required. Offered marks 350 versus candidate marks 300."
+    },
+    {
+      "scope": "Q7(f)",
+      "classification": "open-example-construction",
+      "reason": "Two examples of ages must be constructed. No finite candidate menu is printed, so retain one task requiring two examples and an explanation."
+    },
+    {
+      "scope": "Q1, Q2(b), Q5, Q6(c), Q7(b), Q9A(c), Q9B(a)",
+      "classification": "all-required",
+      "reason": "Both event conditions, all three distribution labels and graph matches, both full families of trigonometric solutions, both vectors, both outlier readings, both hypotheses and all proof headings are required. None is an optional finite pool."
+    },
+    {
+      "scope": "Q9B(a) / any other transversal",
+      "classification": "universal-statement",
+      "reason": "Any other transversal is the universal assertion to be proved, not a printed pool of optional tasks."
+    },
+    {
+      "scope": "Q9A(b) / selected at random",
+      "classification": "scenario-definition",
+      "reason": "Random rods define a probability model. At least two requires the full event, not choosing which outcomes to practise. Alternative solution methods stay with the same task."
+    }
+  ],
+  "notes": [
+    "All 20 original paper pages independently visually inspected; final pages are extra-work grids. Scheme introduction PDF4 confirms Paper1 and its scheme were identical to the common legacy paper already reviewed. This is the distinct Project Maths Paper2.",
+    "Scheme PDF3–4 and41–70 visually inspected, including every model solution, full diagram, alternative method, scale, detailed note and end matter. PDF59 defines scales; PDF60 assigns them.",
+    "There are 35 complete tasks and 42 component scales. Named scoring steps stay within Q6(b), Q7(b), Q9A(c), Q9B(a) and Q9B(b)(ii). Both complete Q9 alternatives retained.",
+    "The 2010 scales differ from later years: 10B is 0,4,10; 10C is 0,3,8,10; 15C is 0,5,10,15; 20C is 0,7,13,20. Do not reuse later-year bands.",
+    "Only five whole tasks are starred: Q8(a), Q8(c), Q9A(a), Q9A(b), Q9B(b)(i). The sixth star applies only to the final five-mark total component of Q9B(b)(ii).",
+    "All dependent cards carry original necessary stems, graph/table data and preceding prompts. Scatter-plot source attribution retained. Original diagrams and equations are preserved as readable typeset images.",
+    "Geometric constructions require the original paper and physical drawing tools. Both vector answers, both graph axes, all matches and complete proof headings are required, not finite answer choices.",
+    "Q6(d) retains all three consistency arguments; Q8(c) both distance methods; Q9A(b) both probability methods; Q9B(b)(ii) both length methods. No solution method creates an extra practice question."
+  ]
+}

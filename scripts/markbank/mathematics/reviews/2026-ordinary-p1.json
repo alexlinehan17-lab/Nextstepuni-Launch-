@@ -1,0 +1,1494 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2026,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+  "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 3–22 of the combined Ordinary Level scheme (general notes, annotation palette, the Paper 1 scale table on page 6 and every Paper 1 model solution and marking note). Each task boundary is the published scale, not a parser count.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    3,
+    4,
+    6
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained; no combined multi-question cards.",
+    "42 independently marked units. Shared scales keep their parts together: Q1(b)(i)–(ii) 10D, Q3(c)(i)–(ii) 10D, Q4(c)(i)–(iii) 10D, Q5(a)(ii)–(iii) 10D, Q6(a)(i)–(ii) 15C, Q7(a)(i)–(ii) 10D, Q8(a)(i)–(ii) 10D, Q8(b)(ii)–(iii) 10D, Q9(a)(i)–(ii) 5C, Q10(a)(i)–(ii) 10C and Q10(a)(iv)–(v) 10D. Q10(b)(i)–(ii) and Q10(c)(i)–(ii) share one cross-letter 10D scale.",
+    "Paper 1 bands from scheme page 6: 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10C 0,4,7,10; 10D 0,3,5,8,10; 15C 0,5,11,15. These differ from the Higher Level bands.",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. All page references are PDF positions.",
+    "Diagrams and tables (Argand diagrams, k(x) and its three candidate derivative graphs, the bus timetable, tax table, sales axes, running table, walkway, slide co-ordinate diagram and number lines) are read from the attached original question pages; prompts quote the paper’s own wording.",
+    "Scheme text layers set some symbols as characters that do not match plain text (for example the h′(x) model line), so card rows quote only notes whose text layer matches the printed scheme; the scheme reader shows the full published notes."
+  ],
+  "cards": [
+    {
+      "id": "maths-2026-ol-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "Sara pays for lunch for herself and a friend. Sara’s lunch costs €34·60 and her friend’s lunch costs €28·90. A service charge of 12% is then added on. Find the total cost of lunch, after the service charge has been added on.",
+      "solutionQuotes": [
+        "(34·6 + 28·9)1·12 = [€]71·12",
+        "Accept correct answer without work",
+        "Finds total service charge (7·62)"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q1-b-i-ii",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "David buys a car for €22 600. It depreciates (goes down in value) by 18% each year, compounded annually.",
+      "questionText": "(i) How much does the car depreciate by in the 1st year? (ii) Find the value of the car after 2 years.",
+      "solutionQuotes": [
+        "22 600 × 0·18 = 4068",
+        "18 532 × 0·82 = [€]15 196·24",
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A machine was bought for €28 000. The value of the machine depreciated by k% each year for 2 years, where k ∈ ℝ. After 2 years, the machine was valued at €20 230. Using the following formula, or otherwise, work out the value of k, where F is the value of the machine after t years and P is the initial value of the machine: F = P(1 − k/100)^t",
+      "solutionQuotes": [
+        "k = 15%",
+        "Formula fully substituted",
+        "Work of merit, for example, some correct substitution or trial and improvement"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Expand and simplify: (3x − 5)² + 4x + 6",
+      "solutionQuotes": [
+        "9x² − 26x + 31",
+        "9x² − 30x + 25"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        11,
+        15
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following equation in x ∈ ℝ: 3x² − 4x − 5 = 0. Give each answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "= 2·12",
+        "= −0·79",
+        "Formula fully substituted",
+        "Apply a * for second value of x not found"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following equation in x ∈ ℝ, where x ≠ 3, −3: 5/(x + 3) − 5/(x − 3) = 6",
+      "solutionQuotes": [
+        "x = 2 , −2",
+        "Note: Use of CD leading to linear equation then LPC at most",
+        "Sets up quadratic equation"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        11,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Kim is making bread. She prepares 2200 grams of bread mix. For every 500 grams of mix, she needs to bake it for 25 minutes. Work out how many minutes it takes to bake the bread.",
+      "solutionQuotes": [
+        "4·4 × 25 = 110 [minutes]",
+        "Finds 4·4"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "Write 140 as a product of its prime factors.",
+      "solutionQuotes": [
+        "2 × 2 × 5 × 7",
+        "Three prime factors of 140 identified",
+        "A correct product of 140 including two prime factors"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q3-c-i-ii",
+      "printedParts": [
+        "Q3(c)(i)",
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "x² + px + r is a quadratic function in which p, r are constants. This function has roots at x = 3 and x = −7.",
+      "questionText": "(i) Write down two factors of this function. (ii) Hence, or otherwise, find the value of p and the value of r, where p, r ∈ ℤ.",
+      "solutionQuotes": [
+        "Factor one = x − 3",
+        "Factor two = x + 7",
+        "p = 4 r = −21"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "The complex numbers z₁ and z₂ are shown on the Argand diagram below. Using the Argand diagram, write down the values of z₁ and z₂ in the form a + bi, where a, b ∈ ℤ.",
+      "solutionQuotes": [
+        "z₁ = −2 + 3i",
+        "z₂ = 4 + i",
+        "Answers not given in the correct form"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "Find the value of the following expression: i(2 − i) + i²(2 − i). Give your answer in the form a + bi, where a, b ∈ ℤ.",
+      "solutionQuotes": [
+        "−1 + 3i",
+        "Correct multiplication AND substitutes −1 for i²"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q4-c-i-ii-iii",
+      "printedParts": [
+        "Q4(c)(i)",
+        "Q4(c)(ii)",
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. The complex number u is shown on the Argand diagram below. Four other complex numbers, labelled, A, B, C, and D, are also shown on the Argand diagram. The diagram is drawn to scale. Use the diagram to answer parts (c)(i) to (c)(iii).",
+      "questionText": "(i) Write down one possible complex number that u could be. Give your answer in the form a + bi, where a, b ∈ ℤ. (ii) Plot and label u̅ as accurately as you can on the Argand diagram above, where u̅ is the complex conjugate of u. (iii) Which of the complex numbers A, B, C, or D is equal to u + u̅? Tick one box only.",
+      "solutionQuotes": [
+        "1 + 3i",
+        "(iii) Box C ticked",
+        "Note: In (ii) if u̅ plotted correctly but not labelled apply * penalty for part (ii)"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three terms of an arithmetic sequence are: 12, 17, 22, …",
+      "questionText": "Write down the next three terms of the sequence.",
+      "solutionQuotes": [
+        "27, 32, 37",
+        "Finds term four"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q5-a-ii-iii",
+      "printedParts": [
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three terms of an arithmetic sequence are: 12, 17, 22, …",
+      "questionText": "(ii) Find an expression for Tₙ, the nth term of the sequence. (iii) Hence, or otherwise, find the value of T₂₀, the 20th term in the sequence.",
+      "solutionQuotes": [
+        "T₂₀ = 5(20) + 7 = 107",
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "questionText": "The first three terms of a different arithmetic sequence are: 6, x, −4, … Find the value of x.",
+      "solutionQuotes": [
+        "x = 1",
+        "Finds d"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "questionText": "The first three terms of another arithmetic sequence are: 43, 39, 35, … The first n terms of this sequence are added so that their sum is less than zero. Find the smallest such value of n.",
+      "solutionQuotes": [
+        "n = 23",
+        "Answer given as 22·5",
+        "Sn formula fully substituted AND equated to 0 or < 0"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q6-a-i-ii",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        11,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "The function g is defined as g(x) = 2x − 3, for x ∈ ℝ.",
+      "questionText": "(i) Find g(4). (ii) Find the value of x for which g(x) = 11.",
+      "solutionQuotes": [
+        "g(4) = 2(4) − 3 = 5",
+        "x = 7",
+        "One part correct"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "questionText": "The function h is defined as h(x) = 3x² − 2x + 1. Find h′(x), the derivative of h(x), and hence find the co-ordinates of the local minimum point of h.",
+      "solutionQuotes": [
+        "6x − 2 = 0",
+        "Correct differentiation",
+        "Solves for x",
+        "Answer not written as a couple"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "questionText": "The diagram below shows the graph of the quadratic function k(x). The three diagrams below, A, B, and C, show the graphs of three linear functions. One of these is the graph of k′(x), that is, the derivative of k(x). Which of the graphs in the diagrams A, B, or C is the graph of k′(x)? Justify your answer. Tick one box only.",
+      "solutionQuotes": [
+        "Box C ticked",
+        "Positive slope AND positive x intercept",
+        "Box C ticked and work of merit in explanation"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q7-a-i-ii",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Part of the bus timetable from Dublin Airport to Waterford Bus Station is shown below. Use the timetable to answer parts (a)(i), (a)(ii), and (a)(iii). The timetable on the original page gives the times of routes A to F at each stop from Dublin Airport to Waterford Bus Station.",
+      "questionText": "(i) Cathal took one of the buses from the table above and arrived in Waterford Bus Station between 18:00 and 21:00. Which bus did he take? Tick one box only: A, B, C, D, E or F. (ii) Work out how long it takes Bus B to travel from Dublin Airport to Waterford Bus Station.",
+      "solutionQuotes": [
+        "Box D ticked",
+        "14: 00 − 10: 50 = 3: 10",
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "Part of the bus timetable from Dublin Airport to Waterford Bus Station is shown below. Use the timetable to answer parts (a)(i), (a)(ii), and (a)(iii). The timetable on the original page gives the times of routes A to F at each stop from Dublin Airport to Waterford Bus Station.",
+      "questionText": "In the table, T represents the time that bus E arrives at Gowran. It takes bus E 3 minutes less to travel from Royal Oak to Gowran than it does to travel from Gowran to Thomastown. Find the time represented by T.",
+      "solutionQuotes": [
+        "= 21: 33",
+        "Finds 9 minutes"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "The cost of an adult ticket from Dublin Airport to Waterford Bus Station is €x and the cost of a child ticket is €y. 3 adult tickets and 4 child tickets cost €144. 2 adult tickets and 1 child ticket cost €71. Find the value of x and the value of y.",
+      "solutionQuotes": [
+        "x = [€]28",
+        "y = [€]15",
+        "Two equations in terms of x and y written."
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Luan, Shea, and Tara are all PAYE workers. Their tax rates and bands are shown in the table below: the first €44 000 of annual income is taxed at 20% and the balance at 40%. Assume that no other deductions are made from their income.",
+      "questionText": "Luan has a gross annual income of €37 600. He only pays tax at the lower rate. He has an annual tax credit of €4000. Work out his net annual tax and hence work out his net annual pay.",
+      "solutionQuotes": [
+        "7520 − 4000 = 3520",
+        "37 600 − 3520 = [€]34 080",
+        "Apply a * if net annual tax is not written"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Luan, Shea, and Tara are all PAYE workers. Their tax rates and bands are shown in the table below: the first €44 000 of annual income is taxed at 20% and the balance at 40%. Assume that no other deductions are made from their income.",
+      "questionText": "Shea has a gross annual income of €63 400. He has an annual tax credit of €4000. Work out his net annual tax.",
+      "solutionQuotes": [
+        "(16 560) − 4000 = [€]12 560",
+        "Finds tax paid at higher rate"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Luan, Shea, and Tara are all PAYE workers. Their tax rates and bands are shown in the table below: the first €44 000 of annual income is taxed at 20% and the balance at 40%. Assume that no other deductions are made from their income.",
+      "questionText": "Tara has a net annual tax of €17 000. She pays income tax at both tax rates. She has an annual tax credit of €4000. Work out her gross annual income.",
+      "solutionQuotes": [
+        "= [€]74 500",
+        "Finds gross pay at which higher rate is paid (30 500)"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-a-i-ii",
+      "printedParts": [
+        "Q8(a)(i)",
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "(i) Complete the table below to show the value of S(x) for each of the given values of x. Give each answer correct to the nearest whole number, where relevant. The table gives S(1) = 34, S(5) = 140 and S(7) = 152, and leaves x = 0, 2, 3, 4 and 6 to complete. (ii) Draw the graph of S(x) on the axes below, for 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "solutionQuotes": [
+        "Note: Solution requires 14 items, 5 values in table, 8 points plotted and the curve",
+        "Apply a * if 13 items correct"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "Use your graph to estimate the advertising spend (in thousands of euro) that is needed to give monthly sales of €100 000. Show your work on the graph.",
+      "solutionQuotes": [
+        "3·5 or 3500",
+        "Work of merit, for example, some relevant work on diagram"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "Use calculus to find the value of x that gives the maximum monthly sales according to the model. Remember: S(x) = −x³ + 9·6x² + 25.",
+      "solutionQuotes": [
+        "S′(x) = −3x² + 19·2x",
+        "x = 6·4",
+        "Equates S′(x) to zero"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-a-v",
+      "printedParts": [
+        "Q8(a)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+      "questionText": "The sales team spent €5000 on advertising in one particular month and the actual sales were €125 000 in the same month. Using the relevant value from the table on the previous page, find the percentage error in the predicted sales model, S(x), for that month.",
+      "solutionQuotes": [
+        "Error = 140 000 − 125 000 = 15 000",
+        "Formula fully substituted"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "The weekly pay for a holiday representative, €P, is given by the formula: P = rh + 2rt, where: r = hourly rate of pay; h = the number of hours worked at the hourly rate of pay, and t = the number of overtime hours worked.",
+      "questionText": "Philip has an hourly rate of pay of €15 per hour. On a particular week, Philip worked 39 hours at the hourly rate of pay. He also worked 5 hours overtime. Find Philip’s pay for this week.",
+      "solutionQuotes": [
+        "P = [€]735",
+        "Fully correct substitution into P"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q8-b-ii-iii",
+      "printedParts": [
+        "Q8(b)(ii)",
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "The weekly pay for a holiday representative, €P, is given by the formula: P = rh + 2rt, where: r = hourly rate of pay; h = the number of hours worked at the hourly rate of pay, and t = the number of overtime hours worked.",
+      "questionText": "(ii) Rearrange the formula P = rh + 2rt to write r in terms of P, h, and t. (iii) Philip’s hourly rate of pay is increased. The next week he is paid a total of €892·50 for working 35 hours at the hourly rate of pay and 8 hours overtime. Using your answer from (b)(ii), or otherwise, work out Philip’s new hourly rate of pay.",
+      "solutionQuotes": [
+        "= [€]17·5 [per hour]",
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q9-a-i-ii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. Dean does a number of sets as part of his running training session. One set consists of four 10-second runs and four 10-second rests. The times and the distances for each run are shown in the table below: Run 1 38 m, Run 2 41 m, Run 3 44 m and Run 4 41 m, each run and each rest taking 10 seconds. For example, in Run 1 Dean runs 38 m.",
+      "questionText": "(i) Find how many seconds it takes Dean to do one set, that is, find the total time of the 4 runs and 4 rests. (ii) Find the distance, in metres, that Dean runs in one set.",
+      "solutionQuotes": [
+        "80 [seconds]",
+        "164 [metres]",
+        "One part correct"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. Dean does a number of sets as part of his running training session. One set consists of four 10-second runs and four 10-second rests. The times and the distances for each run are shown in the table below: Run 1 38 m, Run 2 41 m, Run 3 44 m and Run 4 41 m, each run and each rest taking 10 seconds. For example, in Run 1 Dean runs 38 m.",
+      "questionText": "Dean keeps repeating the set above. Find the total distance Dean will have run after 7 minutes.",
+      "solutionQuotes": [
+        "820 + 38 = 858 m",
+        "5 full sets plus 20 seconds",
+        "Apply a * for no units"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club.",
+      "questionText": "Dean, Saoirse, Kayla, and Olor enter the London marathon. The entry fee is £80 sterling per person plus a carbon offset levy of £145 sterling per person. The total cost, in euro, for the 4 people is €1020. Work out the exchange rate used, that is, work out how much sterling is equal to €1. Give your answer correct to 3 decimal places.",
+      "solutionQuotes": [
+        "€1 = [£]0·882",
+        "Finds 225 AND 255",
+        "Finds 900"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club.",
+      "questionText": "Saoirse completes a 5 km run in 25 minutes. Work out her average speed for the 5 km run. Give your answer in metres per second correct to 1 decimal place.",
+      "solutionQuotes": [
+        "= 3·3 [m/s]"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. The diagram below shows a walkway, from the start point A to the point B. The length of the walkway is 4·8 km. When a person reaches the point B they must then go back to the start point A. Kayla and Olor both leave the point A at the same time. Kayla is running 2 times as fast as Olor is walking, and they both move at a constant speed.",
+      "questionText": "When Kayla reaches the point B, how far will Olor have walked?",
+      "solutionQuotes": [
+        "2·4 km",
+        "Apply a * for no units"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q9-d-ii",
+      "printedParts": [
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. The diagram below shows a walkway, from the start point A to the point B. The length of the walkway is 4·8 km. When a person reaches the point B they must then go back to the start point A. Kayla and Olor both leave the point A at the same time. Kayla is running 2 times as fast as Olor is walking, and they both move at a constant speed.",
+      "questionText": "Work out the distance Olor will have walked from A, in km, when he meets Kayla, as she is running back along the walkway from B to A.",
+      "solutionQuotes": [
+        "= 3·2 [km]",
+        "Identifies ratio as 2: 1",
+        "Finds 6·4 (distance run by Kayla)"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-a-i-ii",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram below shows the cross section of the ladder and top of a child’s slide. A, B, and C are points on the slide. The slide is on horizontal ground (x-axis). Each unit in the diagram is 1 m. The ladder, labelled l(x), goes from the point A to the point B. The top of the slide goes from the point B to the point C. You will draw the downward part of the slide later.",
+      "questionText": "(i) Write down the height of the slide in metres. (ii) Write down the length of the top of the slide, that is, the distance from B to C. Give your answer in centimetres.",
+      "solutionQuotes": [
+        "2 [m]",
+        "40 [cm]",
+        "In (ii) answer given as 0·4"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The co-ordinate diagram below shows the cross section of the ladder and top of a child’s slide. A, B, and C are points on the slide. The slide is on horizontal ground (x-axis). Each unit in the diagram is 1 m. The ladder, labelled l(x), goes from the point A to the point B. The top of the slide goes from the point B to the point C. You will draw the downward part of the slide later.",
+      "questionText": "In the diagram on the previous page, the graph of the function l(x) from A to B represents the ladder, where: l(x) = 2·5x + 3. Find l′(x) and explain what this means in the context of the question.",
+      "solutionQuotes": [
+        "l′(x) = 2·5",
+        "Slope of the ladder",
+        "l′(x) = 2·5 written but explanation is incorrect"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-a-iv-v",
+      "printedParts": [
+        "Q10(a)(iv)",
+        "Q10(a)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The co-ordinate diagram below shows the cross section of the ladder and top of a child’s slide. A, B, and C are points on the slide. The slide is on horizontal ground (x-axis). Each unit in the diagram is 1 m. The ladder, labelled l(x), goes from the point A to the point B. The top of the slide goes from the point B to the point C. You will draw the downward part of the slide later. The height of the downward part of the slide can be modelled by the function: d(x) = 2 × 0·2^x, where d(x) is the height of the slide, for 0 ≤ x ≤ 1·6, x ∈ ℝ.",
+      "questionText": "(iv) Complete the table below to show the value of d(x) for each of the given values of x. Give each value of d(x) correct to 2 decimal places, where relevant. The table gives d(0) = 2, d(0·2) = 1·45, d(0·8) = 0·55 and d(1·6) = 0·15, and leaves x = 0·4, 0·6, 1, 1·2 and 1·4 to complete. (v) Draw the graph of d(x) on the axes on the previous page, for 0 ≤ x ≤ 1·6, x ∈ ℝ.",
+      "solutionQuotes": [
+        "Note: Solution requires 14 items, 5 values in table, 8 points plotted and the curve",
+        "Apply a * if 13 items correct"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-b-c",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)",
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "Another slide in a children’s play area has two restrictions on its use.",
+      "questionText": "(b) All children using the slide must be at least 95 cm tall. (i) By writing in the missing symbol (<, >, ≤, or ≥), complete the inequality below to show this information, where h cm is the height of a child: h ☐ 95. (ii) Graph the inequality from part (b)(i) on the following number line for h ∈ ℝ, showing the allowable heights. (c) All children using the slide must also be at least 4 years old but younger than 12 years old. (i) By writing in the missing symbols, complete the inequality below to show this information, where A years is the age of a child: 4 ☐ A ☐ 12. (ii) Graph the inequality from part (c)(i) on the following number line for A ∈ ℝ, showing the allowable ages.",
+      "solutionQuotes": [
+        "4 years ≤ A < 12 years",
+        "(b) OR (c) correct",
+        "Work of merit in (b) AND (c)"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p1-q10-d",
+      "printedParts": [
+        "Q10(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "It takes 4 employees 13 hours working together to make a slide. On a particular day, the 4 employees work together for 2 hours making a slide. Then 1 employee leaves and the other 3 continue to finish making the slide. Find how long it takes the remaining 3 employees to finish making the slide. Assume that all employees work at the same rate. Give your answer in hours and minutes.",
+      "solutionQuotes": [
+        "= 14 [hours] 40 [minutes]",
+        "Finds 44",
+        "Apply a * if answer given in hours or minutes"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained. No combined multi-question practice cards."
+    },
+    {
+      "pages": [
+        5,
+        9,
+        12,
+        22
+      ],
+      "wording": "or otherwise / hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative solution methods for the same marked task; no printed pool of prompts."
+    },
+    {
+      "pages": [
+        11,
+        15,
+        16
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "Choosing the correct complex number, derivative graph or bus is the mathematical answer to one required task, not a choice of practice prompts."
+    },
+    {
+      "pages": [
+        11
+      ],
+      "wording": "one possible complex number that u could be",
+      "classification": "open-answer",
+      "reason": "Any value consistent with the scale drawing earns the same scale (“Or similar”); nothing finite to expand."
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:c7d001386c9c6606": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "5:48cf95c13676e43d": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "9:35b0d047c044ec43": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "12:41d30ba8ee0127fa": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "15:817810a03d5774ba": {
+      "classification": "answer-selection",
+      "reason": "Exactly one of the three printed graphs is k′(x); identifying it with justification is one required task, not a choice of prompts."
+    },
+    "16:1a498983effa085d": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:ca9d504341138ba0": {
+      "classification": "answer-selection",
+      "reason": "The timetable determines the one bus that arrives between 18:00 and 21:00; this is the answer to a required task, not a choice of prompts."
+    },
+    "22:23139ab20dd0560d": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    }
+  }
+}

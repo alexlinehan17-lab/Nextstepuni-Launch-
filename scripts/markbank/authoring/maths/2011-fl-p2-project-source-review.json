@@ -1,0 +1,706 @@
+{
+  "paperFileid": "LC003BLP230EV.pdf",
+  "schemeFileid": "LC003BLP030EV.pdf",
+  "offeredMarks": 325,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 75,
+    "8": 75
+  },
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      8,
+      10
+    ],
+    "10C": [
+      0,
+      6,
+      9,
+      10
+    ],
+    "15C": [
+      0,
+      9,
+      13,
+      15
+    ],
+    "20B": [
+      0,
+      15,
+      20
+    ],
+    "20C": [
+      0,
+      12,
+      17,
+      20
+    ],
+    "25B": [
+      0,
+      20,
+      25
+    ]
+  },
+  "status": "Independent source sweep complete; all question, solution and actual published question crops visually inspected",
+  "reviewedAt": "2026-10-30",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "generalNotesPages": [
+    44,
+    45
+  ],
+  "notes": [
+    "All 16 paper pages and scheme pages 29–52 independently visually inspected; page 16 is extra work and scheme pages 51–52 contain no additional tasks.",
+    "Both Q6A and Q6B retained: 325 offered marks versus 300 candidate marks.",
+    "Shared scales: Q2(b,c,d), Q3(c,d), Q4(b,c), Q7(g,h), Q8(b)(i,ii). All required prompts retained in each holistic card.",
+    "Q1 examples and Q2(a) constructed outcomes are responses, not a printed finite menu of alternative questions. The model examples do not restrict valid answers.",
+    "Required lists, both slopes, both intercepts and both Q6B(b) angles remain complete within their published tariffs.",
+    "Original data, stem-and-leaf key, histograms, constructions, alternative methods and complete detailed marking notes retained.",
+    "The 25B* Q8(a)(ii) allocation is unusual but agrees in summary and detailed notes. Only three tasks are starred.",
+    "Source notes explain the Q3(b) mean decimal, Q7(b) vertical scale, and Q8(b) premature-rounding difference."
+  ],
+  "selectionReview": [
+    {
+      "classification": "whole-examination-selection",
+      "reason": "All eight numbered questions required, with a choice between Q6A and Q6B. Both complete geometry alternatives are included; each retains 25 marks."
+    },
+    {
+      "classification": "context-not-choice",
+      "reason": "One of the things measured, one of the babies and one of the equal sloping sides identify context; none gives the candidate a menu of optional questions."
+    },
+    {
+      "classification": "open-example-construction",
+      "reason": "Q1 asks for an experiment and Q2(a) asks the candidate to construct three valid ordered-pair examples. The range 1–10 defines the experiment; it is not a printed pool of alternative prompts. The example (3,1) and scheme outcomes are illustrative. Keep all three required examples within one 20C task."
+    },
+    {
+      "classification": "required-data-or-open-method",
+      "reason": "Both slopes/intercepts/angles and all matching pairs are required. Q7(c) table and/or histogram permits different methods for one estimate; do not create additional questions."
+    }
+  ],
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "scale": "20C",
+      "totalMarks": 20,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        31,
+        46
+      ],
+      "questionText": "Give an example of an experiment with two outcomes that are equally likely, stating clearly what the two outcomes are.",
+      "markingNote": "The experiment and both outcomes form one response. The coin experiment is an example, not the only permitted answer."
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        31,
+        46
+      ],
+      "questionText": "Give an example of an experiment with two outcomes that are not equally likely, stating clearly what the two outcomes are.",
+      "markingNote": "The experiment and both outcomes form one response. The model experiments are examples; an appropriate sample space can make an apparently incorrect example valid."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "scale": "20C",
+      "totalMarks": 20,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        32,
+        46
+      ],
+      "questionText": "Write out three possible outcomes of this experiment.",
+      "stem": "A girl and a boy each think of a whole number from 1 to 10. Record the outcome as an ordered pair: for example, (3, 1) means the girl picks 3 and the boy picks 1.",
+      "markingNote": "Give three distinct valid ordered pairs. This is example construction, not selection from a printed menu of alternative questions. All three examples share one 20C award; the SEC examples are illustrative."
+    },
+    {
+      "suffix": "2-b-c-d",
+      "printedParts": [
+        "Q2(b)",
+        "Q2(c)",
+        "Q2(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        32,
+        46
+      ],
+      "questionText": "(b) How many different outcomes are there? (c) Write all outcomes where the children pick the same number. (d) If all numbers are equally likely and the choices independent, what is the probability of the same number?",
+      "stem": "A girl and a boy each think of a whole number from 1 to 10. Record the outcome as an ordered pair: for example, (3, 1) means the girl picks 3 and the boy picks 1.",
+      "markingNote": "All three printed parts share one five-mark scale. Complete all three for full credit. Part (d) correct, or both (b) and (c) correct, earns high partial credit. All ten equal-number pairs are required in (c)."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        33,
+        47
+      ],
+      "questionText": "What is the length of the longest ant?",
+      "stem": "The original split stem-and-leaf plot records the body lengths, in millimetres, of 39 ants. Key: 4 | 3 means 4.3 mm."
+    },
+    {
+      "suffix": "3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        33,
+        47
+      ],
+      "questionText": "What is the median length of the ants in the sample?",
+      "stem": "The original split stem-and-leaf plot records the body lengths, in millimetres, of 39 ants. Key: 4 | 3 means 4.3 mm."
+    },
+    {
+      "suffix": "3-c-d",
+      "printedParts": [
+        "Q3(c)",
+        "Q3(d)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        33,
+        47
+      ],
+      "questionText": "(c) Describe the shape of the distribution. (d) Suggest a reason why it might have this shape.",
+      "stem": "The original split stem-and-leaf plot records the body lengths, in millimetres, of 39 ants. Key: 4 | 3 means 4.3 mm.",
+      "markingNote": "The shape and possible reason share one five-mark scale. Both are required for full credit; either correct earns high partial credit. Explanations are open, not a finite choice between the model examples."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        34,
+        47
+      ],
+      "questionText": "Plot A, B and C on the diagram and show triangle ABC.",
+      "stem": "A(−4, 1), B(−1, −5) and C(4, 5) form triangle ABC.",
+      "markingNote": "All three points and the triangle form one 15C response."
+    },
+    {
+      "suffix": "4-b-c",
+      "printedParts": [
+        "Q4(b)",
+        "Q4(c)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        34,
+        47
+      ],
+      "questionText": "(b) Find the slope of AB and the slope of AC. (c) Use these answers to decide whether the triangle is right-angled at A.",
+      "stem": "A(−4, 1), B(−1, −5) and C(4, 5) form triangle ABC.",
+      "markingNote": "Both slopes and the right-angle conclusion share one ten-mark scale. The graphical and formula calculations are alternative methods, not extra marks. Either complete printed part earns high partial credit."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        35,
+        48
+      ],
+      "questionText": "Find the co-ordinates of A and B.",
+      "stem": "The line l has equation 5x + 12y − 60 = 0. It cuts the x-axis at A and the y-axis at B.",
+      "markingNote": "Both intercepts are required for the single ten-mark award."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        35,
+        48
+      ],
+      "questionText": "P has co-ordinates (5, 3). Show P and l on a co-ordinate diagram.",
+      "stem": "The line l has equation 5x + 12y − 60 = 0. It cuts the x-axis at A and the y-axis at B."
+    },
+    {
+      "suffix": "5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        35,
+        48
+      ],
+      "questionText": "Prove that P(5, 3) does not lie on l.",
+      "stem": "The line l has equation 5x + 12y − 60 = 0. It cuts the x-axis at A and the y-axis at B."
+    },
+    {
+      "suffix": "6a-a",
+      "printedParts": [
+        "Q6A(a)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        36,
+        48
+      ],
+      "questionText": "M is the midpoint of [AB] and [CD]. Show that |AC| must equal |BD|.",
+      "markingNote": "Full congruence proof retained: AM = MB, CM = MD and vertically opposite angles give SAS, then AC = BD."
+    },
+    {
+      "suffix": "6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        8
+      ],
+      "schemePages": [
+        36,
+        48
+      ],
+      "questionText": "Construct an angle of 60° without a protractor or setsquare. Show all construction lines clearly.",
+      "markingNote": "A drawn angle alone is not a construction. The original compass arcs and published ±5° / ±10° credit tolerances are retained.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "6b-a-i",
+      "printedParts": [
+        "Q6B(a)(i)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        37,
+        48
+      ],
+      "questionText": "Find the value of x in the triangle shown.",
+      "stem": "The triangle has one side extended. Its exterior angle is 130°; the adjacent interior angle is x°, and the other two angles are both y°."
+    },
+    {
+      "suffix": "6b-a-ii",
+      "printedParts": [
+        "Q6B(a)(ii)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        37,
+        48
+      ],
+      "questionText": "The other two angles are equal, each y°. Find y.",
+      "stem": "The triangle has one side extended. Its exterior angle is 130°; the adjacent interior angle is x°, and the other two angles are both y°."
+    },
+    {
+      "suffix": "6b-b",
+      "printedParts": [
+        "Q6B(b)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        9
+      ],
+      "schemePages": [
+        37,
+        48
+      ],
+      "questionText": "In the second triangle, find s and t. The interior angle s° is adjacent to exterior angle 4s°, and the other two interior angles are each t°.",
+      "markingNote": "Both s and t are required for one five-mark award. The two displayed ways of obtaining t are alternative methods."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "scale": "20B",
+      "totalMarks": 20,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        38,
+        49
+      ],
+      "questionText": "How many babies were in the sample?",
+      "stem": "The birth-weight table has six classes (kg): 2.2–2.6, 2.6–3.0, 3.0–3.4, 3.4–3.8, 3.8–4.2, 4.2–4.6, with frequencies 12, 40, 64, 56, 24, 4. Source: simulated data, based on multiple sources."
+    },
+    {
+      "suffix": "7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "scale": "10C",
+      "totalMarks": 10,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        38,
+        49
+      ],
+      "questionText": "Draw a histogram of the data.",
+      "stem": "The birth-weight table has six classes (kg): 2.2–2.6, 2.6–3.0, 3.0–3.4, 3.4–3.8, 3.8–4.2, 4.2–4.6, with frequencies 12, 40, 64, 56, 24, 4. Source: simulated data, based on multiple sources."
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        10
+      ],
+      "schemePages": [
+        38,
+        49
+      ],
+      "questionText": "Using the table and/or histogram, complete: “On average, these babies weighed about ___ kg at birth.”",
+      "stem": "The birth-weight table has six classes (kg): 2.2–2.6, 2.6–3.0, 3.0–3.4, 3.4–3.8, 3.8–4.2, 4.2–4.6, with frequencies 12, 40, 64, 56, 24, 4. Source: simulated data, based on multiple sources.",
+      "markingNote": "A point estimate from 3.0 to 3.5 kg or any reasonable interval containing 3.3 earns full credit. Using the table alone is permitted; the histogram is an alternative representation, not a second answer route."
+    },
+    {
+      "suffix": "7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        39,
+        49
+      ],
+      "questionText": "One baby weighed 3.675 kg. Describe her weight compared with the other babies.",
+      "stem": "The birth-weight table has six classes (kg): 2.2–2.6, 2.6–3.0, 3.0–3.4, 3.4–3.8, 3.8–4.2, 4.2–4.6, with frequencies 12, 40, 64, 56, 24, 4. Source: simulated data, based on multiple sources."
+    },
+    {
+      "suffix": "7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        11
+      ],
+      "schemePages": [
+        39,
+        49
+      ],
+      "questionText": "A weight below 2.5 kg is a “low birth-weight”. Estimate how many babies in the sample had low birth-weight.",
+      "stem": "The birth-weight table has six classes (kg): 2.2–2.6, 2.6–3.0, 3.0–3.4, 3.4–3.8, 3.8–4.2, 4.2–4.6, with frequencies 12, 40, 64, 56, 24, 4. Source: simulated data, based on multiple sources.",
+      "markingNote": "The original model accepts 9 assuming a uniform distribution within the first class, or 7/8 using a smoother overall distribution. Keep the estimate consistent in later calculations."
+    },
+    {
+      "suffix": "7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "scale": "10B",
+      "totalMarks": 10,
+      "sourcePages": [
+        11
+      ],
+      "schemePages": [
+        39,
+        49
+      ],
+      "questionText": "What is the size of the population from which the sample was drawn?",
+      "stem": "Approximately 60 000 babies were born in Ireland in 2005, and 20% of their mothers smoked during pregnancy. Suppose this sample was selected from babies whose mothers smoked."
+    },
+    {
+      "suffix": "7-g-h",
+      "printedParts": [
+        "Q7(g)",
+        "Q7(h)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        39,
+        40,
+        49
+      ],
+      "questionText": "(g) Estimate the number of low-birth-weight babies in that population. (h) Explain why the sample cannot tell us exactly how many there were.",
+      "stem": "The birth-weight table has six classes (kg): 2.2–2.6, 2.6–3.0, 3.0–3.4, 3.4–3.8, 3.8–4.2, 4.2–4.6, with frequencies 12, 40, 64, 56, 24, 4. Source: simulated data, based on multiple sources. Approximately 60 000 babies were born in Ireland in 2005, and 20% of their mothers smoked during pregnancy. Suppose this sample was selected from babies whose mothers smoked. Low birth-weight means below 2.5 kg.",
+      "markingNote": "The population estimate and explanation of uncertainty share one five-mark scale. Both parts are required for full credit; either complete part earns high partial credit. Use the candidate’s consistent sample estimate, not only the model’s 9 out of 200."
+    },
+    {
+      "suffix": "7-i",
+      "printedParts": [
+        "Q7(i)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        40,
+        49
+      ],
+      "questionText": "The national mean birth-weight was 3.51 kg. Does the sample information show that smoking during pregnancy affects birth weight? Explain.",
+      "stem": "The birth-weight table has six classes (kg): 2.2–2.6, 2.6–3.0, 3.0–3.4, 3.4–3.8, 3.8–4.2, 4.2–4.6, with frequencies 12, 40, 64, 56, 24, 4. Source: simulated data, based on multiple sources. Approximately 60 000 babies were born in Ireland in 2005, and 20% of their mothers smoked during pregnancy. Suppose this sample was selected from babies whose mothers smoked.",
+      "markingNote": "The original scheme accepts either a supported comparison or a cautious response about random variation. Both original explanations are retained; the same five marks apply."
+    },
+    {
+      "suffix": "8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "scale": "5B",
+      "totalMarks": 5,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        41,
+        50
+      ],
+      "questionText": "On the diagram, find the centre of enlargement.",
+      "stem": "A pendant has two silver triangles on a copper rectangle. The larger triangle is an enlargement of the smaller with scale factor 2. Its base is 3 cm.",
+      "measurementRequired": true
+    },
+    {
+      "suffix": "8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "scale": "25B",
+      "totalMarks": 25,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        41,
+        50
+      ],
+      "questionText": "The larger triangle is 3 cm wide. Find the width of the smaller triangle.",
+      "stem": "A pendant has two silver triangles on a copper rectangle. The larger triangle is an enlargement of the smaller with scale factor 2. Its base is 3 cm.",
+      "markingNote": "The published allocation is 25B*: 0, 20 or 25 marks, with the explicitly starred 24-mark award available. Retain this unusually large tariff unchanged.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "scale": "20C",
+      "totalMarks": 20,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        41,
+        50
+      ],
+      "questionText": "The smaller triangle is 2.8 cm high. Find the area of the larger triangle.",
+      "stem": "A pendant has two silver triangles on a copper rectangle. The larger triangle is an enlargement of the smaller with scale factor 2. Its base is 3 cm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        13
+      ],
+      "schemePages": [
+        41,
+        50
+      ],
+      "questionText": "What fraction of the copper rectangle is covered by the silver triangles?",
+      "stem": "A pendant has two silver triangles on a copper rectangle. The larger triangle is an enlargement of the smaller with scale factor 2. Its base is 3 cm. The smaller triangle is 2.8 cm high.",
+      "markingNote": "The smaller-triangle height from part (iii) is retained. Both area methods give the same fraction 5/12; they are alternative methods, not separate awards."
+    },
+    {
+      "suffix": "8-b-i-ii",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "scale": "5C",
+      "totalMarks": 5,
+      "sourcePages": [
+        14
+      ],
+      "schemePages": [
+        42,
+        50
+      ],
+      "questionText": "(i) Use Pythagoras’ theorem to find d, to one decimal place. (ii) Find α, to the nearest degree.",
+      "stem": "An isosceles triangular earring is half copper and half silver. Its base is 2 cm and perpendicular height 4 cm; the sloping side is d and its base angle is α.",
+      "markingNote": "The length and angle share one five-mark scale. Both are required for full credit; either complete part earns high partial credit. All three trigonometric methods are retained.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "scale": "15C",
+      "totalMarks": 15,
+      "sourcePages": [
+        14,
+        15
+      ],
+      "schemePages": [
+        43,
+        50
+      ],
+      "questionText": "Construct an accurate drawing of the earring at a scale of 2:1, so each centimetre in reality becomes 2 cm in the drawing.",
+      "stem": "An isosceles triangular earring is half copper and half silver. Its base is 2 cm and perpendicular height 4 cm; the sloping side is d and its base angle is α.",
+      "markingNote": "The original earring dimensions and half-silver design are retained as prerequisites. The enlarged base is 4 cm and height 8 cm.",
+      "measurementRequired": true
+    }
+  ],
+  "paperSha256": "ee66546ab03fb4fb2377d7f7007ff44dded91af9441b76fa442e0d83f38ce616",
+  "schemeSha256": "1141518171373aa02df40f492f62691bc5538258a0d9f1d69d6e943f0d9a874b"
+}

@@ -1,0 +1,1138 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2011,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP230EV.pdf",
+  "schemeFileid": "LC003GLP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "eefed571c26566544ec1f7e65b3fcdc5fd3baa07aebf7077be4fdeb685138c31",
+  "schemeSha256": "8f5f26d039d785de5584b6f8ee8fe6f601529c33e97f7df0afb76a8537631d7c",
+  "reviewedAt": "2026-10-30",
+  "reviewMethod": "Independent visual inspection of all 20 original paper pages and scheme PDF pages 43–76, including every model solution, alternative method, diagram, scale, construction tolerance and detailed credit note. All 37 question and 37 solution crops visually inspected.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6A": 25,
+    "6B": 25,
+    "7": 75,
+    "8": 75
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    60,
+    61
+  ],
+  "sourceNotes": [
+    "All 20 original paper pages and scheme PDF pages 43–76 independently visually inspected, including cover pages, blank working pages, model solutions, alternatives, diagrams, scale table, detailed notes and web amendments. All page references are PDF positions.",
+    "37 separately practicable tasks and 37 scale components. Q5(a)(i) and (ii) have separate published marks. Q2(c), Q4(d), Q6B and Q7(b) remain holistic tasks.",
+    "Full Credit Minus One applies only to the seven starred tasks: Q5(a)(i,ii), Q7(a)(iii), Q7(b), Q8(b,e,f). Q7(b) follows the detailed 5C* despite the unstarred summary; Q2(d) follows its published 0,3,4,5 ladder despite the omitted C.",
+    "Q6A(a) retains the original construction triangle, paper reader ruler and ±3 mm midpoint tolerance. Q7 keeps original table, CSO attribution, all slides and both graphs.",
+    "Q7(a)(iii) accepts 2.6–3.0 with work, exceptionally 2.8 without work; Q7(c) accepts a correct answer without work. Candidate-answer follow-through retained in Q2(b), Q5(b) and Q8(f).",
+    "Q8(b) printed 70√3 is corrected in a separate source note to 35√3 = 70 sin 60°; original scheme image unchanged. Q7(e)(i) source note qualifies the claim that graphically negligible bars prove zero households."
+  ],
+  "cards": [
+    {
+      "id": "maths-2011-ol-p2-project-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        7,
+        10,
+        13,
+        15
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(6, 1) and B(2, −1) are shown on the original coordinate diagram.",
+      "questionText": "Find the equation of the line AB."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(6, 1) and B(2, −1) are shown on the original coordinate diagram.",
+      "questionText": "The line AB crosses the y-axis at C. Find the coordinates of C."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A(6, 1) and B(2, −1) are shown on the original coordinate diagram. C is the y-axis intercept of AB; find it first if practising independently.",
+      "questionText": "Find |AB|/|AC| in the form p/q, where p and q are whole numbers."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units.",
+      "questionText": "Show c₁ on a coordinate diagram."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units.",
+      "questionText": "Find the equation of c₁."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units.",
+      "questionText": "Prove that (3, 2) is inside c₁ and that (3, 3) is outside it."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "Circle c₁ has centre (0, 0) and diameter 8 units.",
+      "questionText": "Circle c₂ has centre (0, 1) and just touches c₁. Show c₂ on your diagram and find its equation."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A hemispherical toy can land flat side down or flat side up.",
+      "questionText": "Explain why two possible outcomes do not necessarily give a probability of 1/2 for landing flat side down."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A hemispherical toy can land flat side down or flat side up. Group A drops it 100 times and estimates P(flat side down) = 0.76; Group B drops it 500 times and estimates 0.812.",
+      "questionText": "Which group’s estimate is likely to be better, and why?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A hemispherical toy can land flat side down or flat side up. Group A drops it 100 times and estimates P(flat side down) = 0.76; Group B drops it 500 times and estimates 0.812.",
+      "questionText": "How many times did the toy land flat side down for Group B?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q3-b-iii",
+      "printedParts": [
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        47,
+        65
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A hemispherical toy can land flat side down or flat side up. Group A drops it 100 times and estimates P(flat side down) = 0.76; Group B drops it 500 times and estimates 0.812.",
+      "questionText": "Using both groups’ data, what is the best estimate of the probability that the toy lands flat side down?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        6,
+        10
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets.",
+      "questionText": "What is the median number of sweets?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets.",
+      "questionText": "What is the range of the data?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets.",
+      "questionText": "Find the interquartile range of the data."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        48,
+        66
+      ],
+      "topicId": "maths-1-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The original stem-and-leaf plot records the number of sweets in nineteen packets.",
+      "questionText": "Delete the incorrect word in each pair: [univariate / bivariate] data; [discrete / continuous] data."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        49,
+        67
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the volume of a cylinder of radius 6 mm and height 20 mm, in terms of π.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        49,
+        67
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the volume of a cylinder of radius 6 mm and height 20 mm, correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        49,
+        67
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A solid block measures 60 mm × 35 mm × 20 mm. Holes of radius 6 mm are drilled through the 20 mm dimension in the direction shown.",
+      "questionText": "After how many cylindrical holes will more than half of the original block have been removed?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q6a-a",
+      "printedParts": [
+        "Q6A(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        8,
+        13,
+        15
+      ],
+      "schemePages": [
+        50,
+        68
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "Construct the centroid of the original triangle. All instruments are permitted; show any measurements and calculations used.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        50,
+        68
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "State what an axiom is and explain why axioms are needed to prove theorems."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "totalMarks": 25,
+      "scale": "25C",
+      "permittedMarks": [
+        0,
+        8,
+        20,
+        25
+      ],
+      "schemePages": [
+        51,
+        68
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "In the original diagram, ABCD is a cyclic quadrilateral and ABCF is a parallelogram.",
+      "questionText": "Show that DEFG is a cyclic quadrilateral."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        8,
+        15
+      ],
+      "schemePages": [
+        52,
+        69
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "questionText": "In 1966, how many households had exactly eight people?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        52,
+        69
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "questionText": "In 1986, how many people lived in households of exactly seven people?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        52,
+        69
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "questionText": "Estimate the mean number of people per household in 2006, correct to one decimal place.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        53,
+        69
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "questionText": "State the main point or points that each of Conor, Fiona and Ray was trying to make in the three original slides.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        54,
+        69
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        10,
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "questionText": "A household is chosen randomly from all households in 2006. What is the probability that it has seven or eight people?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        54,
+        69
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        10,
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Use the original census table of permanent private households in Ireland from 1926 to 2006. Ignore other types of household.",
+      "questionText": "1000 households are randomly selected from all households in 2006. If X is the number of four-person households selected, find E(X)."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-e-i",
+      "printedParts": [
+        "Q7(e)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        8,
+        15
+      ],
+      "schemePages": [
+        54,
+        70
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households.",
+      "questionText": "Describe the differences between the two distributions."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-e-ii",
+      "printedParts": [
+        "Q7(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        55,
+        70
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households.",
+      "questionText": "There are about 81,000 households in South Dublin. Estimate how many people live in four-person households."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-e-iii",
+      "printedParts": [
+        "Q7(e)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        55,
+        70
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households.",
+      "questionText": "What is the median household size in Dublin City?"
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q7-e-iv",
+      "printedParts": [
+        "Q7(e)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        55,
+        70
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Use the original 2006 charts of household sizes in Dublin City and South Dublin. The vertical axes show percentages of households.",
+      "questionText": "A person is randomly selected from all people living in Dublin City. Is the person more likely to live alone or in a three-person household? Explain."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        8,
+        13,
+        15
+      ],
+      "schemePages": [
+        56,
+        71
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°.",
+      "questionText": "Show that AB = 70 cm."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        10,
+        18,
+        20
+      ],
+      "schemePages": [
+        56,
+        71
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°. Part (a) establishes AB = 70 cm.",
+      "questionText": "Find the distance between the parallel sides AD and BC, in centimetres, correct to one decimal place.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        10,
+        18,
+        20
+      ],
+      "schemePages": [
+        57,
+        71
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°.",
+      "questionText": "What fraction of the table surface is yellow in the original yellow-and-blue pattern? Show your work."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        57,
+        71
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°.",
+      "questionText": "Two painted tables form the original hexagon. Prove that the yellow area is a rectangle."
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        58,
+        72
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°. Twelve tables form six hexagons as shown, with 2 m clearance between neighbouring tables and 1.5 m to the side walls.",
+      "questionText": "Find the total classroom width in metres, correct to two decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2011-ol-p2-project-q8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        59,
+        72
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A classroom table has an isosceles trapezium top ABCD, with AD = 140 cm, BC = 70 cm, AB = DC and ∠ADC = ∠DAB = 60°. The wooden top is 1.6 cm thick and weighs 0.75 g per cm³; the metal frame weighs 6 kg.",
+      "questionText": "How much does each table weigh, in kilograms, correct to one decimal place?",
+      "fullCreditMinusOne": true
+    }
+  ],
+  "selectionReview": [
+    {
+      "scope": "Whole paper / Q6",
+      "reason": "All mandatory tasks and both complete Question 6 alternatives retained. Q6A has two separately marked tasks; Q6B is one 25C proof. Candidates answer one alternative, giving 325 offered marks and 300 candidate marks."
+    },
+    {
+      "scope": "Q7 census introduction",
+      "reason": "“One of the items of information gathered in a census” introduces the household-size variable; it does not instruct the candidate to choose an answer."
+    },
+    {
+      "scope": "Q2(d), Q3(a), Q4(d), Q6A, Q6B, Q7(b,c,e), Q8",
+      "reason": "The two acceptable tangent circles and alternative mathematical methods are solution routes, not finite printed question pools. Both Q4 word pairs, all three Q7(b) slides and all five Q6B proof steps are required within their single scales. Seven or eight in Q7(c) is an event union; Q7(e)(iv) requires a comparison and explanation, not two selectable tasks. No internal finite answer pools remain."
+    }
+  ],
+  "selectionDecisions": {
+    "2:e5830086050477e0": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory tasks and both complete Question 6 alternatives retained. Q6A has two separately marked tasks; Q6B is one 25C proof. Candidates answer one alternative, giving 325 offered marks and 300 candidate marks."
+    },
+    "2:bbadecac6bac5d73": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory tasks and both complete Question 6 alternatives retained. Q6A has two separately marked tasks; Q6B is one 25C proof. Candidates answer one alternative, giving 325 offered marks and 300 candidate marks."
+    },
+    "3:61e55c99ff28b86d": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory tasks and both complete Question 6 alternatives retained. Q6A has two separately marked tasks; Q6B is one 25C proof. Candidates answer one alternative, giving 325 offered marks and 300 candidate marks."
+    },
+    "8:8708a8654063e50b": {
+      "classification": "whole-examination-selection",
+      "reason": "All mandatory tasks and both complete Question 6 alternatives retained. Q6A has two separately marked tasks; Q6B is one 25C proof. Candidates answer one alternative, giving 325 offered marks and 300 candidate marks."
+    },
+    "10:a676901a157d3f46": {
+      "classification": "scenario-definition",
+      "reason": "“One of the items of information gathered in a census” introduces the household-size variable; it does not instruct the candidate to choose an answer."
+    }
+  }
+}

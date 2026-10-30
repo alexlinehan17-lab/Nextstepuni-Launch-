@@ -1,0 +1,1023 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2016,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "60c143ed2b2eaae3311340cbdc2e4e52790ff82287aab2fd7dc8c2e62c642775",
+  "schemeSha256": "c561278937b118aa0b39c59dc2f147f4d440fff2fe6a5fe741411c070c030f41",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and PDF pages 27–52 of the combined Higher Level scheme (the Paper 2 title page 27, the scale table on page 28 (misheaded “Paper 1”), the summary of mark allocations on page 29, every Paper 2 model solution and marking note on pages 30–47, the Irish-language bonus-marks page 48 and the blank back pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 55,
+    "8": 45,
+    "9": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    28,
+    29
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 55 marks, Q8 45 marks, Q9 50 marks). Every question is retained.",
+    "34 independently marked units, matching the printed summary of allocations on scheme page 29.",
+    "Paper 2 bands from the scale table on scheme page 28, which differ from Paper 1’s in the 10D ladder: 5B 0,2,5; 5C 0,2,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 34 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced. Stacked fractions are written a/b. Q3(b)’s mid partial credit prints 132·2° where its high partial credit prints 138·2°; both are quoted as printed.",
+    "Nine parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal, because their model solution is a table, graph, construction or layout the text layer cannot carry: Q3(a) (the sum-to-product working), Q3(b) (method 4 continues on page 33), Q4(a)(ii), Q4(b) (the construction), Q5(a)(i) (the table), Q6(b) (the expected-value table), Q8(d)(i) (the table), Q8(d)(ii) (the graph) and Q9(a)(iii) (the confidence-interval methods continue on page 46).",
+    "The question booklet is LC003ALP200EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 1. Scheme page references are PDF positions (printed page number + 4 in this half of the scheme); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2016-hl-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(6, −2), B(5, 3) and C(–3, 4) are shown on the diagram.",
+      "questionText": "Find the equation of the line through B which is perpendicular to AC."
+    },
+    {
+      "id": "maths-2016-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "The points A(6, −2), B(5, 3) and C(–3, 4) are shown on the diagram. Part (a): Find the equation of the line through B which is perpendicular to AC.",
+      "questionText": "Use your answer to part (a) above to find the co-ordinates of the orthocentre of the triangle ABC."
+    },
+    {
+      "id": "maths-2016-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A point X has co-ordinates (−1, 6) and the slope of the line XC is 1/7.",
+      "questionText": "Find the equation of XC. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ."
+    },
+    {
+      "id": "maths-2016-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A point X has co-ordinates (−1, 6) and the slope of the line XC is 1/7. Part (a): Find the equation of XC. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ.",
+      "questionText": "C is the centre of a circle s, of radius 5 cm. The line l: 3x + 4y − 21 = 0 is a tangent to s and passes through X, as shown. Find the equation of one such circle s."
+    },
+    {
+      "id": "maths-2016-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Show that (cos 7A + cos A)/(sin 7A − sin A) = cot 3A."
+    },
+    {
+      "id": "maths-2016-hl-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        32,
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Given that cos 2θ = 1/9, find cos θ in the form ± √a/b, where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2016-hl-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs",
+        "mathematics-higher-geometry"
+      ],
+      "stem": "The diagram shows a semi-circle standing on a diameter [AC], and [BD] ⊥ [AC].",
+      "questionText": "Prove that the triangles ABD and DBC are similar."
+    },
+    {
+      "id": "maths-2016-hl-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "stem": "The diagram shows a semi-circle standing on a diameter [AC], and [BD] ⊥ [AC]. Part (a)(i): Prove that the triangles ABD and DBC are similar.",
+      "questionText": "If |AB| = x, |BC| = 1, and |BD| = y, write y in terms of x."
+    },
+    {
+      "id": "maths-2016-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "The diagram shows a semi-circle standing on a diameter [AC], and [BD] ⊥ [AC]. Part (a)(ii): If |AB| = x, |BC| = 1, and |BD| = y, write y in terms of x.",
+      "questionText": "Use your result from part (a)(ii) to construct a line segment equal in length (in centimetres) to the square root of the length of the line segment [TU] which is drawn below."
+    },
+    {
+      "id": "maths-2016-hl-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In an archery competition, the team consisting of John, David, and Mike will win 1st prize if at least two of them hit the bullseye with their last arrows. From past experience, they know that the probability that John, David, and Mike will hit the bullseye on their last arrow is 1/5, 1/6, and 1/4 respectively.",
+      "questionText": "Complete the table below to show all the ways in which they could win 1st prize. Table: Way 1, Way 2, Way 3, Way 4. John: ✓, _, _, _. David: ✓, _, _, _. Mike: ×, _, _, _. ✓ = Hit, × = Miss."
+    },
+    {
+      "id": "maths-2016-hl-p2-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In an archery competition, the team consisting of John, David, and Mike will win 1st prize if at least two of them hit the bullseye with their last arrows. From past experience, they know that the probability that John, David, and Mike will hit the bullseye on their last arrow is 1/5, 1/6, and 1/4 respectively. Part (a)(i): Complete the table below to show all the ways in which they could win 1st prize. Table: Way 1, Way 2, Way 3, Way 4. John: ✓, _, _, _. David: ✓, _, _, _. Mike: ×, _, _, _. ✓ = Hit, × = Miss.",
+      "questionText": "Hence or otherwise find the probability that they will win the competition."
+    },
+    {
+      "id": "maths-2016-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "Two events, A and B, are represented in the diagram. P(A ∩ B) = 0·1, P(B \\ A) = 0·3 and P(A \\ B) = x. Write P(A) in terms of x and hence, or otherwise, find the value of x for which the events A and B are independent."
+    },
+    {
+      "id": "maths-2016-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A local sports club is planning to run a weekly lotto. To win the Jackpot of €1000, contestants must match one letter chosen from the 26 letters in the alphabet and two numbers chosen, in the correct order, from the numbers 0 to 9. In this lotto, repetition of numbers is allowed (e.g. M, 3, 3 is an outcome).",
+      "questionText": "Calculate the probability that M, 3, 3 would be the winning outcome in a particular week."
+    },
+    {
+      "id": "maths-2016-hl-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A local sports club is planning to run a weekly lotto. To win the Jackpot of €1000, contestants must match one letter chosen from the 26 letters in the alphabet and two numbers chosen, in the correct order, from the numbers 0 to 9. In this lotto, repetition of numbers is allowed (e.g. M, 3, 3 is an outcome).",
+      "questionText": "If a contestant matches the letter only, or the letter and one number (but not both numbers), they will win €50. Using the table below, or otherwise, find how much the club should expect to make or lose on each play, correct to the nearest cent, if they charge €2 per play. Table: Event, Payout (x) €, Probability (P(x)), x.P(x). Rows: Win Jackpot; Match letter and first number only; Match letter and second number only; Match letter and neither number; Fail to win."
+    },
+    {
+      "id": "maths-2016-hl-p2-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "A local sports club is planning to run a weekly lotto. To win the Jackpot of €1000, contestants must match one letter chosen from the 26 letters in the alphabet and two numbers chosen, in the correct order, from the numbers 0 to 9. In this lotto, repetition of numbers is allowed (e.g. M, 3, 3 is an outcome). Part (b): If a contestant matches the letter only, or the letter and one number (but not both numbers), they will win €50. Using the table below, or otherwise, find how much the club should expect to make or lose on each play, correct to the nearest cent, if they charge €2 per play. Table: Event, Payout (x) €, Probability (P(x)), x.P(x). Rows: Win Jackpot; Match letter and first number only; Match letter and second number only; Match letter and neither number; Fail to win.",
+      "questionText": "The club estimates that the average number of plays per week will be 845. If the club wants to make an average profit of €600 per week from the lotto, how much should the club charge per play, correct to the nearest cent?"
+    },
+    {
+      "id": "maths-2016-hl-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2·5 m and |CF| = 3 m.",
+      "questionText": "Show that |AC| = 1·95 m, correct to two decimal places."
+    },
+    {
+      "id": "maths-2016-hl-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2·5 m and |CF| = 3 m. Part (a)(i): Show that |AC| = 1·95 m, correct to two decimal places.",
+      "questionText": "The angle of elevation of B from C is 50° (i.e. |∠BCA| = 50°). Show that |AB| = 2·3 m, correct to one decimal place."
+    },
+    {
+      "id": "maths-2016-hl-p2-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2·5 m and |CF| = 3 m. Part (a)(ii): The angle of elevation of B from C is 50° (i.e. |∠BCA| = 50°). Show that |AB| = 2·3 m, correct to one decimal place.",
+      "questionText": "Find |BC|, correct to the nearest metre."
+    },
+    {
+      "id": "maths-2016-hl-p2-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2·5 m and |CF| = 3 m. Part (a)(iii): Find |BC|, correct to the nearest metre.",
+      "questionText": "Find |∠BCD|, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2016-hl-p2-q7-a-v",
+      "printedParts": [
+        "Q7(a)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2·5 m and |CF| = 3 m. Part (a)(iii): Find |BC|, correct to the nearest metre. Part (a)(iv): Find |∠BCD|, correct to the nearest degree.",
+      "questionText": "Find the area of glass required to glaze all four triangular sides of the pyramid. Give your answer correct to the nearest m²."
+    },
+    {
+      "id": "maths-2016-hl-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "Another Roof Lantern, in the shape of a pyramid, has a square base CDEF. The vertical height |AB| = 3 m, where A is the point of intersection of the diagonals of the base as shown. The angle of elevation of B from C is 60° (i.e. |∠BCA| = 60°). Find the length of the side of the square base of the lantern. Give your answer in the form √a m, where a ∈ ℕ."
+    },
+    {
+      "id": "maths-2016-hl-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The height of the water in a port was measured over a period of time. The average height was found to be 1·6 m. The height measured in metres, h(t), was modelled using the function h(t) = 1·6 + 1·5 cos(π/6 t) where t represents the number of hours since the last recorded high tide and (π/6 t) is expressed in radians.",
+      "questionText": "Find the period and range of h(t)."
+    },
+    {
+      "id": "maths-2016-hl-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The height of the water in a port was measured over a period of time. The average height was found to be 1·6 m. The height measured in metres, h(t), was modelled using the function h(t) = 1·6 + 1·5 cos(π/6 t) where t represents the number of hours since the last recorded high tide and (π/6 t) is expressed in radians.",
+      "questionText": "Find the maximum height of the water in the port."
+    },
+    {
+      "id": "maths-2016-hl-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The height of the water in a port was measured over a period of time. The average height was found to be 1·6 m. The height measured in metres, h(t), was modelled using the function h(t) = 1·6 + 1·5 cos(π/6 t) where t represents the number of hours since the last recorded high tide and (π/6 t) is expressed in radians.",
+      "questionText": "Find the rate at which the height of the water is changing when t = 2, correct to two decimal places. Explain your answer in the context of the question."
+    },
+    {
+      "id": "maths-2016-hl-p2-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The height of the water in a port was measured over a period of time. The average height was found to be 1·6 m. The height measured in metres, h(t), was modelled using the function h(t) = 1·6 + 1·5 cos(π/6 t) where t represents the number of hours since the last recorded high tide and (π/6 t) is expressed in radians.",
+      "questionText": "On a particular day the high tide occurred at midnight (i.e. t = 0). Use the function to complete the table and show the height, h(t), of the water between midnight and the following midnight. Table: Time: Midnight, 3 a.m., 6 a.m., 9 a.m., 12 noon, 3 p.m., 6 p.m., 9 p.m., Midnight. t (hours): 0, 3, _, _, _, _, _, _, _. h(t) (m): _, _, _, _, _, _, _, _, _."
+    },
+    {
+      "id": "maths-2016-hl-p2-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The height of the water in a port was measured over a period of time. The average height was found to be 1·6 m. The height measured in metres, h(t), was modelled using the function h(t) = 1·6 + 1·5 cos(π/6 t) where t represents the number of hours since the last recorded high tide and (π/6 t) is expressed in radians. Part (d)(i): On a particular day the high tide occurred at midnight (i.e. t = 0). Use the function to complete the table and show the height, h(t), of the water between midnight and the following midnight. Table: Time: Midnight, 3 a.m., 6 a.m., 9 a.m., 12 noon, 3 p.m., 6 p.m., 9 p.m., Midnight. t (hours): 0, 3, _, _, _, _, _, _, _. h(t) (m): _, _, _, _, _, _, _, _, _.",
+      "questionText": "Sketch the graph of h(t) between midnight and the following midnight."
+    },
+    {
+      "id": "maths-2016-hl-p2-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The height of the water in a port was measured over a period of time. The average height was found to be 1·6 m. The height measured in metres, h(t), was modelled using the function h(t) = 1·6 + 1·5 cos(π/6 t) where t represents the number of hours since the last recorded high tide and (π/6 t) is expressed in radians. Part (d)(ii): Sketch the graph of h(t) between midnight and the following midnight.",
+      "questionText": "Find, from your sketch, the difference in water height between low tide and high tide."
+    },
+    {
+      "id": "maths-2016-hl-p2-q8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The height of the water in a port was measured over a period of time. The average height was found to be 1·6 m. The height measured in metres, h(t), was modelled using the function h(t) = 1·6 + 1·5 cos(π/6 t) where t represents the number of hours since the last recorded high tide and (π/6 t) is expressed in radians. Part (d)(ii): Sketch the graph of h(t) between midnight and the following midnight.",
+      "questionText": "A fully loaded barge enters the port, unloads its cargo and departs some time later. The fully loaded barge requires a minimum water level of 2 m. When the barge is unloaded it only requires 1·5 m. Use your graph to estimate the maximum amount of time that the barge can spend in port, without resting on the sea-bed."
+    },
+    {
+      "id": "maths-2016-hl-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Data on earnings were published for a particular country. The data showed that the annual income of people in full-time employment was normally distributed with a mean of €39 400 and a standard deviation of €12 920.",
+      "questionText": "The government intends to impose a new tax on incomes over €60 000. Find the percentage of full-time workers who will be liable for this tax, correct to one decimal place."
+    },
+    {
+      "id": "maths-2016-hl-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "Data on earnings were published for a particular country. The data showed that the annual income of people in full-time employment was normally distributed with a mean of €39 400 and a standard deviation of €12 920.",
+      "questionText": "The government will also provide a subsidy to the lowest 10 % of income earners. Find the level of income at which the government will stop paying the subsidy, correct to the nearest euro."
+    },
+    {
+      "id": "maths-2016-hl-p2-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        45,
+        46
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "Data on earnings were published for a particular country. The data showed that the annual income of people in full-time employment was normally distributed with a mean of €39 400 and a standard deviation of €12 920.",
+      "questionText": "Some time later a research institute surveyed a sample of 1000 full-time workers, randomly selected, and found that the mean annual income of the sample was €38 280. Test the hypothesis, at the 5 % level of significance, that the mean annual income of full-time workers has changed since the national data were published. State the null hypothesis and the alternative hypothesis. Give your conclusion in the context of the question."
+    },
+    {
+      "id": "maths-2016-hl-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "The research institute surveyed 400 full-time farmers, randomly selected from all the full-time farmers in the country, and found that the mean income for the sample was €26 974 and the standard deviation was €5120. Assuming that annual farm income is normally distributed in this country, create a 95 % confidence interval for the mean income of full-time farmers."
+    },
+    {
+      "id": "maths-2016-hl-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "It is known that data on farm size are not normally distributed. The research institute could take many large random samples of farm size and create a sampling distribution of the means of all these samples. Give one reason why they might do this."
+    },
+    {
+      "id": "maths-2016-hl-p2-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "questionText": "The research institute also carried out a survey into the use of agricultural land. n farmers were surveyed. If the margin of error of the survey was 4·5 %, find the value of n."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        8,
+        9
+      ],
+      "wording": "Hence or otherwise / hence, or otherwise / Using the table below, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:cc5035a1c3160d94": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "8:3be3283a77f00727": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "8:6054450829118514": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "9:17f995798243d06e": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "10:2cc21ee25d71410f": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    }
+  }
+}

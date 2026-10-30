@@ -1,0 +1,1313 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2021,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "33115ccba18b6973ee31c4aba967a0971755974e8c236734e3aeb575694eb9ef",
+  "schemeSha256": "922339c8452f8bb99b2fc80718df5e397ef7a7742e22c1abdf6945cb98b9d830",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 1–32 of the combined Higher Level scheme (cover, contents, the Paper 1 scale table on page 4, the summary of allocations on page 5, annotation palette, every Paper 1 model solution and marking note, and the Paper 2 scale table). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "sourceNotes": [
+    "The 2021 paper was adjusted for COVID-19 (220 marks): candidates answer any four of Q1–6 (30 marks each) and any two of Q7–10 (50 marks each), so 380 marks are offered and 220 count. Every question is retained.",
+    "44 independently marked units, matching the printed summary of allocations on scheme page 5. Every part has its own scale; none are shared.",
+    "Paper 1 bands from scheme page 4: 5B 0,2,5; 5C 0,2,3,5; 10C 0,3,7,10; 10D 0,3,5,8,10; 15D 0,4,8,12,15; 20D 0,5,10,15,20.",
+    "Before this review the deck held 43 of the 44 units. Q9(a)(i) (show that A = 75, 5C) had no card and is added. Seven cards had marking points garbled by the scheme text layer (stacked fractions and exponents read out of order, the two Q2(a) and Q3(a) method ladders merged into one, solution lines shipped instead of credit notes) and are re-quoted from the printed scheme, labelled by band and method. On the remaining cards, any “Full Credit (−1)” deduction welded onto a credit band is moved to the row note. All existing IDs are kept; prompts are restored from the paper and topics corrected as metadata.",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2021-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "(4 − 2i)/(2 + 4i) = 0 + ki, where k ∈ ℤ, and i² = −1. Find the value of k."
+    },
+    {
+      "id": "maths-2021-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "Find √(−5 + 12i). Give both of your answers in the form a + bi, where a, b ∈ ℝ."
+    },
+    {
+      "id": "maths-2021-hl-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "Use De Moivre’s theorem to find the three roots of z³ = −8. Give each of your answers in the form a + bi, where a, b ∈ ℝ, and i² = −1."
+    },
+    {
+      "id": "maths-2021-hl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "questionText": "Given that x = −3 is a solution to |x + p| = 5, find the two values of p, where p ∈ ℤ."
+    },
+    {
+      "id": "maths-2021-hl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics"
+      ],
+      "questionText": "(x + 4) is a factor of f(x) = x³ + qx² − 22x + 56, where x ∈ ℝ and q ∈ ℤ. Show that q = −5, and find the three roots of f(x)."
+    },
+    {
+      "id": "maths-2021-hl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The diagram shows a cuboid with dimensions x, y and z cm. The areas, in cm², of three of its faces are also shown: 2√2, 8√6 and 4√3.",
+      "questionText": "Find the volume of the cuboid in the form a√b cm³, where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-hl-p1-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "questionText": "Given that f(x) = 3x² + 8x − 35, where x ∈ ℝ, find the two roots of f(x) = 0."
+    },
+    {
+      "id": "maths-2021-hl-p1-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "Part (b)(i): f(x) = 3x² + 8x − 35, where x ∈ ℝ.",
+      "questionText": "Hence or otherwise, solve the equation 3^(2m + 1) = 35 − 8(3^m), where m ∈ ℝ. Give your answer in the form m = log₃ p − q, where p, q ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction"
+      ],
+      "questionText": "Prove using induction that 2^(3n − 1) + 3 is divisible by 7 for all n ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-hl-p1-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "p, p + 7, p + 14, p + 21, … is an arithmetic sequence, where p ∈ ℕ.",
+      "questionText": "Find the nth term, Tₙ, in terms of n and p, where n ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-hl-p1-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "p, p + 7, p + 14, p + 21, … is an arithmetic sequence, where p ∈ ℕ.",
+      "questionText": "Find the smallest value of p for which 2021 is a term in the sequence."
+    },
+    {
+      "id": "maths-2021-hl-p1-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "The derivative of f(x) = 2x³ + 6x² − 12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c ∈ ℤ and x ∈ ℝ.",
+      "questionText": "Find the value of a, the value of b, and the value of c."
+    },
+    {
+      "id": "maths-2021-hl-p1-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "stem": "The derivative of f(x) = 2x³ + 6x² − 12x + 3 can be expressed in the form f′(x) = a(x + b)² + c, where a, b, c ∈ ℤ and x ∈ ℝ.",
+      "questionText": "If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x)."
+    },
+    {
+      "id": "maths-2021-hl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The diagram below shows t, the tangent line to h(x) = 2 sin(2x), where 0 ≤ x ≤ π, at the point where x = π/6. A(0, k), where k ∈ ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6.",
+      "questionText": "Show that h′(x) = −2x² + 4x + 6."
+    },
+    {
+      "id": "maths-2021-hl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6.",
+      "questionText": "Use h′(x) to find the maximum positive value of the slope of a tangent to h(x)."
+    },
+    {
+      "id": "maths-2021-hl-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The diagram below shows the graph of h′(x) the derivative of a cubic function h(x). The graph cuts the x-axis at −1 and 3 and the y-axis at 6.",
+      "questionText": "The graph of h(x) passes through the point (0, −2). Find the equation of h(x)."
+    },
+    {
+      "id": "maths-2021-hl-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+      "questionText": "Complete the table below by filling in the missing lengths. Swing 1: 45 cm; swing 3: 729/20 cm; swings 2, 4 and 5 are blank."
+    },
+    {
+      "id": "maths-2021-hl-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+      "questionText": "Tₙ = 45(0·9)^(n − 1) is the arc length of swing n. Find the arc length of swing 25, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2021-hl-p1-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+      "questionText": "Find the total distance travelled by the tip of the pendulum when it has completed swing 40. Give your answer, in cm, correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2021-hl-p1-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. Tₙ = 45(0·9)^(n − 1) is the arc length of swing n.",
+      "questionText": "Swing p is the first swing which has an arc length of less than 2 cm. Find the value of p."
+    },
+    {
+      "id": "maths-2021-hl-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length.",
+      "questionText": "If the length of the pendulum is 1 m, show that the angle, θ, of swing 1 of the pendulum is 26°, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2021-hl-p1-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. The length of the pendulum is 1 m and the angle of swing 1 is 26°.",
+      "questionText": "Hence, find the total accumulated angle that the pendulum swings through (i.e. the sum of all the angles it swings through until it stops swinging). Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2021-hl-p1-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. The length of the pendulum is 1 m and the angle of swing 1 is 26°.",
+      "questionText": "Hence, or otherwise, find the total distance travelled by the tip of the pendulum when it has moved through half of the total accumulated angle. Give your answer, in cm, correct to the nearest integer."
+    },
+    {
+      "id": "maths-2021-hl-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³ − 0·12x² + px + 5, x ∈ ℝ, in the domain 0 ≤ x ≤ 75.",
+      "questionText": "Use h(10) = 30 to show that p = 3·6."
+    },
+    {
+      "id": "maths-2021-hl-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The table in Part (a)(ii) below shows some of the values of the function: h(x) = 0·001x³ − 0·12x² + px + 5, x ∈ ℝ, in the domain 0 ≤ x ≤ 75.",
+      "questionText": "Complete the table below and hence draw the graph of h(x) in the domain 0 ≤ x ≤ 75 on the grid below. The table gives h(10) = 30, h(40) = 21, h(60) = 5 and h(75) = 21·875, and leaves x = 0, 20, 30, 50 and 70 to complete."
+    },
+    {
+      "id": "maths-2021-hl-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+      "questionText": "Find h′(x), the derivative of h(x)."
+    },
+    {
+      "id": "maths-2021-hl-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+      "questionText": "Show that this section of the track reaches its maximum height above level ground when x = 20."
+    },
+    {
+      "id": "maths-2021-hl-p1-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+      "questionText": "Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5."
+    },
+    {
+      "id": "maths-2021-hl-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The function h(x) = 0·001x³ − 0·12x² + 3·6x + 5 can be used to model the height above level ground (in metres) of a section of the path followed by a rollercoaster track, where x is the horizontal distance from a fixed point.",
+      "questionText": "Use the function h(x) = 0·001x³ − 0·12x² + 3·6x + 5, x ∈ ℝ, to find the average height of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed.",
+      "questionText": "Show that A = 75."
+    },
+    {
+      "id": "maths-2021-hl-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed.",
+      "questionText": "Explain what the value 20 in the formula represents in the context of the coffee cooling."
+    },
+    {
+      "id": "maths-2021-hl-p1-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "A cup of coffee is freshly brewed to 95° C. The temperature, T, in degrees centigrade, of the coffee as it cools is given by the formula T(t) = Ae^(−0·081t) + 20, where A is constant and t is time measured in minutes from when the coffee was brewed.",
+      "questionText": "Find the decrease in the temperature of the coffee 10 minutes after brewing. Give your answer correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2021-hl-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "A cup of coffee is freshly brewed to 95° C.",
+      "questionText": "T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature."
+    },
+    {
+      "id": "maths-2021-hl-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "A cup of coffee is freshly brewed to 95° C. T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t.",
+      "questionText": "Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute."
+    },
+    {
+      "id": "maths-2021-hl-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. As the sugar cube dissolves, its volume decreases at the constant rate of 1/20 cm³/sec. Let x(t) be the sidelength of the cube at time t. Find the rate of change of x(t) when the volume of the cube reaches 1/64 cm³."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+      "questionText": "Find the value of t when the tank empties."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+      "questionText": "Find the rate at which the volume of water in the tank is changing when t = 5."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+      "questionText": "Find the value of t when the volume of water in the tank is a maximum."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-a-iv",
+      "printedParts": [
+        "Q10(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Water is flowing into and being removed from a tank. The volume of water in the tank is measured on a daily basis, starting at day 0. The volume of water, in litres, in the tank can be modelled by the formula V(t) = 60 + 41t − 3t², while V(t) ≥ 0, where t ∈ ℝ is the time in days, starting at day 0. Use the function V(t) to answer the following 4 questions.",
+      "questionText": "Find the maximum volume of the water in the tank, correct to the nearest litre."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1.",
+      "questionText": "In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: “The radius of the trees is increasing year on year.” Show that r(t) satisfies this condition."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1.",
+      "questionText": "Show that I(6) < I(5) and explain what this means in the context of the growth of a tree."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1.",
+      "questionText": "Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V₁ cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t ∈ ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. Give your answer in the form a + sin(bπ/5) + sin(cπ/5), where a, b, and c ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-hl-p1-q10-b-iv",
+      "printedParts": [
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks of these trees each year, in cm, during a particular 10 year period can be modelled by the formula: I(t) = 1·5 + sin(πt/5), where 1 ≤ t ≤ 10 and t ∈ ℕ is measured in years. Therefore r(1) = r(0) + I(1), r(2) = r(1) + I(2), …, r(t + 1) = r(t) + I(t + 1), where r(t) is the radius of the trunk of the tree after t years and r(0) is the radius of the trunk of a tree at the beginning of year 1. A section of the first tree’s trunk, a cylinder of radius 10 cm, standard length h cm and volume V₁ cm³, was sent to a sawmill.",
+      "questionText": "At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k ∈ ℝ, find the value of k."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        9,
+        19
+      ],
+      "wording": "Hence or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task; no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:44aefd6c69214722": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "9:7dd084a0f72cd86a": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "16:c619e20ad9c69f35": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "19:3654909503ee8660": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    }
+  }
+}

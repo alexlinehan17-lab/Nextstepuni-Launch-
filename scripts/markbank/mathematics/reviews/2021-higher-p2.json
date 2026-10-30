@@ -1,0 +1,1283 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2021,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "5e406fc416cdfb662cfb21d0c128aef93669a14daac02e275187b7c9139f2196",
+  "schemeSha256": "922339c8452f8bb99b2fc80718df5e397ef7a7742e22c1abdf6945cb98b9d830",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 32–60 of the combined Higher Level scheme (the Paper 2 scale table on page 32, the summary of allocations on page 33, annotation palette, every Paper 2 model solution and marking note, the Irish-language bonus-mark table on page 57 and the blank closing pages). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    32,
+    33
+  ],
+  "sourceNotes": [
+    "The 2021 paper was adjusted for COVID-19 (220 marks): candidates answer any four of Q1–6 (30 marks each) and any two of Q7–10 (50 marks each), so 380 marks are offered and 220 count. Every question is retained.",
+    "42 independently marked units, matching the printed summary of allocations on scheme page 33. Every part has its own scale; none are shared.",
+    "Paper 2 bands from scheme page 32: 5B 0,2,5; 5C 0,2,3,5; 10C 0,3,7,10; 10D 0,3,5,8,10; 15D 0,4,8,12,15; 20D 0,5,10,15,20.",
+    "All 42 units were already authored and shipping. The Q2(c)(i) card (ID maths-2021-hl-p2-q2-i, kept) had a prompt that merged Q2(a), Q2(b) and Q2(c); it now carries Q2(c)(i) alone with its stem. Seven cards had marking points whose stacked fractions, binomial coefficients and exponents the scheme text layer had scrambled (Q1(b), Q1(c), Q4(a)(ii), Q8(a)(i), Q8(c)(i), Q10(a)(i), Q10(a)(ii)); they are re-quoted from the printed scheme where the text layer keeps a readable form. Formula-only bullets with no readable text form (for example the Q10(a)(i) mid and high partial expressions) are left to the attached scheme page rather than retyped. All existing IDs are kept; prompts are restored from the paper (including its printed “Give you answer” in Q1) and topics corrected as metadata.",
+    "The question booklet is LC003ALP200EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 1. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2021-hl-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population.",
+      "questionText": "Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population.",
+      "questionText": "Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "In a particular population 15% of the people are left footed. A soccer team of 11 players, including 1 goalkeeper, is picked at random from the population.",
+      "questionText": "The goalkeeper is left footed. Find the probability that at least eight of the remainder of the team are right footed. Give you answer correct to two decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The line 3x − 6y + 2 = 0 contains the point (k, (2k + 2)/3), where k ∈ ℝ. Find the value of k."
+    },
+    {
+      "id": "maths-2021-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "The point P(s, t) is on the line x − 2y − 8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t."
+    },
+    {
+      "id": "maths-2021-hl-p2-q2-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| : |DC| is 2 : 1.",
+      "questionText": "Find |AD|."
+    },
+    {
+      "id": "maths-2021-hl-p2-q2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| : |DC| is 2 : 1.",
+      "questionText": "[AB] and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E."
+    },
+    {
+      "id": "maths-2021-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "The circle k has centre C(1, −2) and chord [AB] where |AB| = 4√3. The point D(3, 2) is the midpoint of the chord [AB], as shown below. Find the radius of k. Give your answer in the form a√b, where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-hl-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Show that the circles c: x² + y² + 4x − 2y − 95 = 0 and s: (x − 7)² + (y − 13)² = 25 touch externally."
+    },
+    {
+      "id": "maths-2021-hl-p2-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The circles are c: x² + y² + 4x − 2y − 95 = 0 and s: (x − 7)² + (y − 13)² = 25.",
+      "questionText": "There are an infinite number of circles which touch circle c externally at the same point that s touches c. Find the coordinates of the centre of one of these circles, apart from circle s."
+    },
+    {
+      "id": "maths-2021-hl-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Prove that cos 2A = cos² A − sin² A."
+    },
+    {
+      "id": "maths-2021-hl-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "sin(θ/2) = 1/√5, where 0 ≤ θ ≤ π. Use the formula cos 2A = cos² A − sin² A to find the value of cos θ."
+    },
+    {
+      "id": "maths-2021-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "Solve the equation: tan(B + 150°) = −√3, for 0° ≤ B ≤ 360°."
+    },
+    {
+      "id": "maths-2021-hl-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram.",
+      "questionText": "Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere."
+    },
+    {
+      "id": "maths-2021-hl-p2-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Two identical right-circular solid cones meet along their bases and fit exactly inside a sphere, as shown in the diagram.",
+      "questionText": "The combined volume of the two cones is (686/3)π cm³. Find the radius of one of the cones."
+    },
+    {
+      "id": "maths-2021-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "questionText": "At 9.00 a.m. a delivery van leaves a factory. It travels towards its destination at an average speed of 60 km/h. One hour and 45 minutes later a second van leaves the factory on the same route. It travels at an average speed of 95 km/h. Both vans arrive at their destination at the same time. Find at what time they arrive."
+    },
+    {
+      "id": "maths-2021-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Prove that if two triangles ΔABC and ΔA′B′C′ are similar, then the lengths of their sides are proportional in order: |AB|/|A′B′| = |BC|/|B′C′| = |CA|/|C′A′|. (Diagram, Given, To Prove, Construction, Proof.)"
+    },
+    {
+      "id": "maths-2021-hl-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "questionText": "In the diagram below, the lines PA, HK, and BR are parallel. Prove that |AH| × |QB| = |AP| × |HB|. Give a reason for each geometrical statement you use."
+    },
+    {
+      "id": "maths-2021-hl-p2-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A.",
+      "questionText": "Show that the total length of the course is 62 km."
+    },
+    {
+      "id": "maths-2021-hl-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations"
+      ],
+      "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km.",
+      "questionText": "On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h."
+    },
+    {
+      "id": "maths-2021-hl-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km.",
+      "questionText": "Show that |∠ACB| = 116·5°, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2021-hl-p2-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°.",
+      "questionText": "To comply with safety regulations, the region inside the triangular course must be kept clear of people. Find the area of this region. Give your answer, in km², correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2021-hl-p2-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km. |∠ACB| = 116·5°.",
+      "questionText": "Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2021-hl-p2-q7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "The diagram (Triangle ABC) shows the 3 sections of a level triathlon course. In order to complete the triathlon, each contestant must swim 4 km from C to B, cycle from B to A, and then run 28 km from A to C. Mary can cycle at an average speed of 25 km/hour. It takes her 1 hour and 12 minutes to cycle from B to A. Part (a) shows that the total length of the course is 62 km.",
+      "questionText": "The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05°. Find |AT|, the vertical height of the tower. Give your answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2021-hl-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition.",
+      "questionText": "Find the minimum mark needed on the exam to progress to the county stage."
+    },
+    {
+      "id": "maths-2021-hl-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "In a school all First Years sat a common maths exam. The results, in integer values, were normally distributed with a mean of 176 marks and a standard deviation of 36 marks. The top 10% of students will go forward to a county maths competition.",
+      "questionText": "The school awarded a Certificate of Merit to any student who achieved between 165 marks and 210 marks. Find the percentage of First Years who received the Certificate of Merit."
+    },
+    {
+      "id": "maths-2021-hl-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A news report claimed that 6th year students in Ireland studied an average of 21 hours per week, outside of class time. A Leaving Cert class surveyed 60 students in 6th year, chosen at random, from different schools. It found that the average study time was 19·8 hours and the standard deviation was 5·2 hours.",
+      "questionText": "Find the test statistic (the z-score) of this sample mean."
+    },
+    {
+      "id": "maths-2021-hl-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "A news report claimed that 6th year students in Ireland studied an average of 21 hours per week, outside of class time. A Leaving Cert class surveyed 60 students in 6th year, chosen at random, from different schools. It found that the average study time was 19·8 hours and the standard deviation was 5·2 hours.",
+      "questionText": "Find the p-value of this test statistic. Comment on what can be concluded from its value, in a two-tailed hypothesis test at the 5% level of significance, in relation to the news report claim."
+    },
+    {
+      "id": "maths-2021-hl-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices.",
+      "questionText": "Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "The school caretaker has a box with 23 room keys in it. 12 of the keys are for general classrooms, 6 for science labs and 5 for offices.",
+      "questionText": "All the keys are returned to the box. Then 3 keys are drawn at random from the box one after the other, without replacement. What is the probability that one of them is for a general classroom, one is for a science lab and one is for an office? Give your answer correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "An aeroplane flies east from point A for 2 hours at a constant speed of 420 km per hour until it reaches point B. It then changes direction by heading 20° towards the south at the same speed until it reaches point C, as shown in the diagram below. The direct distance from A to C is 1450 km and |∠BAC| = 8·57°.",
+      "questionText": "Find how long it took to fly from B to C. Give your answer correct to the nearest minute."
+    },
+    {
+      "id": "maths-2021-hl-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        52
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "An aeroplane flies east from point A for 2 hours at a constant speed of 420 km per hour until it reaches point B. It then changes direction by heading 20° towards the south at the same speed until it reaches point C, as shown in the diagram below. The direct distance from A to C is 1450 km and |∠BAC| = 8·57°.",
+      "questionText": "The average fuel consumption of the plane is 3·8 litres per second and the fuel capacity of the plane is 100 000 litres. Show that the plane will be able to complete the journey from A to B to C and directly back to A at a speed of 420 km/h without refuelling."
+    },
+    {
+      "id": "maths-2021-hl-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+      "questionText": "Find the period and range of the function V(t)."
+    },
+    {
+      "id": "maths-2021-hl-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+      "questionText": "Sketch the function for 0 ≤ t ≤ p, where p is the period of V(t). Indicate the period and range of the function on your graph."
+    },
+    {
+      "id": "maths-2021-hl-p2-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        53
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+      "questionText": "Use V(t) to find the voltage when t = 6·67 seconds. Give your answer correct to two decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q9-b-iv",
+      "printedParts": [
+        "Q9(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+      "questionText": "Find one value for t where the voltage is 110 Volts. Give your answer in the form a/b where a, b ∈ ℕ."
+    },
+    {
+      "id": "maths-2021-hl-p2-q9-b-v",
+      "printedParts": [
+        "Q9(b)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        54
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "The voltage, V(t), (in Volts) of a certain alternating current is given by the function: V(t) = 110√2 sin(120πt), where t is in seconds.",
+      "questionText": "Find the rate of change of the voltage when t = 2 seconds. Give your answer correct to the nearest unit."
+    },
+    {
+      "id": "maths-2021-hl-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service).",
+      "questionText": "At a blood donation clinic, ten donors give blood, one after the other. Find the probability that the tenth person is the third O-negative donor. Give your answer correct to four decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service).",
+      "questionText": "At a blood donation clinic, five donors give blood. What is the probability that at least one of the five donates O-negative blood? Give your answer correct to four decimal places."
+    },
+    {
+      "id": "maths-2021-hl-p2-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        55
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "People with O-negative blood type are called \"universal donors\" because their blood can be given to anyone else. In Ireland approximately 8% of the population have O-negative blood type (source: Blood Transfusion Service).",
+      "questionText": "Find the minimum number of blood donors required, so that the probability that at least one of them is type O-negative is greater than 0·97."
+    },
+    {
+      "id": "maths-2021-hl-p2-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system."
+    },
+    {
+      "id": "maths-2021-hl-p2-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        56
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "A life insurance policy pays out €120 000 if the policy holder dies and €40 000 if the policy holder becomes disabled. The insurance company has calculated that in general, in any given year, the probability of death is 0·0001 and the probability of disability is 0·002. The company has 18 000 policy holders on its books at present who are all charged the same premium. The company’s goal is to make €900 000 profit in a particular year. Find the annual premium it should charge its customers which in an average year would generate this level of profit."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any four / any two questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        9
+      ],
+      "wording": "Find the coordinates of the centre of one of these circles",
+      "classification": "open-answer",
+      "reason": "Any valid centre on the line of centres answers the single required task; the scheme accepts any such point."
+    },
+    {
+      "pages": [
+        12
+      ],
+      "wording": "Find the radius of one of the cones",
+      "classification": "given-context",
+      "reason": "The two cones are identical, so one radius is required; there is no choice of prompts."
+    },
+    {
+      "pages": [
+        21,
+        25,
+        26
+      ],
+      "wording": "one of them / at least one of",
+      "classification": "mathematical-context",
+      "reason": "Defines the event whose probability is required; there is a single prompt."
+    }
+  ],
+  "selectionDecisions": {
+    "3:6add43db1364664a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:61d2edd9d8426d56": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:75c9f6035291f042": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "9:df22b09a6a57173f": {
+      "classification": "open-answer",
+      "reason": "Any valid centre on the line through the two centres answers the single required task; the scheme accepts any such point."
+    },
+    "12:b6b91dce246fb2b3": {
+      "classification": "given-context",
+      "reason": "The two cones are identical, so the radius of one cone is the single value required; there is no choice of prompts."
+    },
+    "16:0a6c1b005e4eb682": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "21:c33a291b5234735e": {
+      "classification": "mathematical-context",
+      "reason": "Defines the event (one key of each type, or at least one O-negative donor) whose probability is required; there is a single prompt."
+    },
+    "25:78b79fa8e75b5813": {
+      "classification": "mathematical-context",
+      "reason": "Defines the event (one key of each type, or at least one O-negative donor) whose probability is required; there is a single prompt."
+    },
+    "26:730924e50535c974": {
+      "classification": "mathematical-context",
+      "reason": "Defines the event (one key of each type, or at least one O-negative donor) whose probability is required; there is a single prompt."
+    }
+  }
+}

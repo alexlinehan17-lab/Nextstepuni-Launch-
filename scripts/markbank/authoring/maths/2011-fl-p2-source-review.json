@@ -1,0 +1,1572 @@
+{
+  "status": "complete locally; all 49 tasks authored and all 98 question/solution crops visually inspected",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003BLP200EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "schemePagesInspected": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "generalNotesPages": [
+    39
+  ],
+  "offeredMarks": 400,
+  "candidateMarks": 300,
+  "printedQuestionMarks": {
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50
+  },
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        40
+      ],
+      "questionText": "Find a, the length of the base of the triangle.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "Apply the published task-specific deductions shown in the original solution.",
+      "stem": "The area of the triangle shown is 39 cm². The perpendicular height of the triangle is 6 cm."
+    },
+    {
+      "suffix": "1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 35,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        41
+      ],
+      "questionText": "Use Simpson’s rule to estimate the area of the damaged section of wallpaper.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 35,
+              "attempt": 14
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The two parts have separate 35- and 5-mark allocations; their marks are not added on one card.",
+      "stem": "A damaged section of wallpaper is shown in the diagram. Offsets of lengths 5, 7, 6, 8, 10, 9 and 12 cm are measured at intervals of 6 cm along the horizontal line as shown."
+    },
+    {
+      "suffix": "1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        2
+      ],
+      "schemePages": [
+        41
+      ],
+      "questionText": "What is the area of the smallest rectangle of wallpaper that can be used to cover the damaged section?",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The two parts have separate 35- and 5-mark allocations; their marks are not added on one card.",
+      "stem": "A damaged section of wallpaper is shown in the diagram. Offsets of lengths 5, 7, 6, 8, 10, 9 and 12 cm are measured at intervals of 6 cm along the horizontal line as shown."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 20,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        42
+      ],
+      "questionText": "Calculate the volume of the cylinder, correct to the nearest cm³.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 20,
+              "attempt": 8
+            }
+          ]
+        }
+      ],
+      "markingNote": "Round the volume to the nearest cubic centimetre. Giving the answer in terms of π or incorrect rounding loses one mark.",
+      "stem": "A cylinder has a radius of 3 cm and a height of 5 cm."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        42
+      ],
+      "questionText": "Calculate the area of the pond.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The two rectangle methods are alternatives for the same ten marks.",
+      "stem": "The diagram shows a formal pond in a garden."
+    },
+    {
+      "suffix": "2-c-i",
+      "printedParts": [
+        "Q2(c)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        43
+      ],
+      "questionText": "Find the volume of the cone, in terms of π.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. Leave the volume in terms of π; a numerical approximation loses one mark.",
+      "stem": "The diameter of a solid cone is 18 cm and the height is 20 cm."
+    },
+    {
+      "suffix": "2-c-ii",
+      "printedParts": [
+        "Q2(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        3
+      ],
+      "schemePages": [
+        43
+      ],
+      "questionText": "Find the value of r.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The original cone data and the sphere diagram are retained.",
+      "stem": "The diameter of a solid cone is 18 cm and the height is 20 cm. The cone is melted down and recast as 15 identical spheres of radius r cm."
+    },
+    {
+      "suffix": "3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        44
+      ],
+      "questionText": "Find the value of x and the value of y.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "angle-x",
+              "label": "Angle x",
+              "maximum": 5,
+              "attempt": 2
+            },
+            {
+              "id": "angle-y",
+              "label": "Angle y",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "Both angles are required in this single printed task. Mark x and y independently, five marks each with an attempt floor of two. The alternative calculations for y do not add marks.",
+      "stem": "In the triangle ABC, |AB| = |AC| and |∠DAC| = 138°."
+    },
+    {
+      "suffix": "3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        45
+      ],
+      "questionText": "Find the value of p.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The lines m and n are parallel."
+    },
+    {
+      "suffix": "3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        45
+      ],
+      "questionText": "Find the value of q.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The lines m and n are parallel."
+    },
+    {
+      "suffix": "3-b-iii",
+      "printedParts": [
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        45
+      ],
+      "questionText": "Find the value of r.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The lines m and n are parallel."
+    },
+    {
+      "suffix": "3-b-iv",
+      "printedParts": [
+        "Q3(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        45
+      ],
+      "questionText": "Find the value of s.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The lines m and n are parallel."
+    },
+    {
+      "suffix": "3-c-i",
+      "printedParts": [
+        "Q3(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        45
+      ],
+      "questionText": "Find |∠BCA|.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The diagram shows a circle with centre at O. [AB] is a diameter of the circle. |AB| = 15 cm and |BC| = 12 cm."
+    },
+    {
+      "suffix": "3-c-ii",
+      "printedParts": [
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        45
+      ],
+      "questionText": "Find |CO|.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The diagram shows a circle with centre at O. [AB] is a diameter of the circle. |AB| = 15 cm and |BC| = 12 cm."
+    },
+    {
+      "suffix": "3-c-iii",
+      "printedParts": [
+        "Q3(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        45
+      ],
+      "questionText": "Find |AC|.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The diagram shows a circle with centre at O. [AB] is a diameter of the circle. |AB| = 15 cm and |BC| = 12 cm."
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46
+      ],
+      "questionText": "Find the length of [PQ].",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "markingNote": "Apply the published task-specific deductions shown in the original solution.",
+      "stem": "P(1, 3) and Q(6, −2) are two points."
+    },
+    {
+      "suffix": "4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46
+      ],
+      "questionText": "Plot the points A and B on graph paper.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. Both points must be plotted; they remain one ten-mark task.",
+      "stem": "A is the point (1, 4) and B is the point (−3, −2)."
+    },
+    {
+      "suffix": "4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46
+      ],
+      "questionText": "Find the slope of AB.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "A is the point (1, 4) and B is the point (−3, −2)."
+    },
+    {
+      "suffix": "4-b-iii",
+      "printedParts": [
+        "Q4(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        46
+      ],
+      "questionText": "Find the equation of the line AB.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "A is the point (1, 4) and B is the point (−3, −2)."
+    },
+    {
+      "suffix": "4-c-i",
+      "printedParts": [
+        "Q4(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        47
+      ],
+      "questionText": "Show that the point R lies on the line l.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The line l has equation 5y = 2x + 4. The point R has co-ordinates (3, 2)."
+    },
+    {
+      "suffix": "4-c-ii",
+      "printedParts": [
+        "Q4(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        47
+      ],
+      "questionText": "Find the slope of the line l.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The line l has equation 5y = 2x + 4. The point R has co-ordinates (3, 2)."
+    },
+    {
+      "suffix": "4-c-iii",
+      "printedParts": [
+        "Q4(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        4
+      ],
+      "schemePages": [
+        47
+      ],
+      "questionText": "Find the equation of the line k that is perpendicular to l and passes through the point R.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. ",
+      "stem": "The line l has equation 5y = 2x + 4. The point R has co-ordinates (3, 2)."
+    },
+    {
+      "suffix": "5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "questionText": "Write tan A as a fraction.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. A fraction is required; giving the angle or a non-fraction answer loses one mark.",
+      "stem": "The diagram shows a right-angled triangle with sides of length 8, 15 and 17 cm and angles named A and B."
+    },
+    {
+      "suffix": "5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        48
+      ],
+      "questionText": "Write cos B as a fraction.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. A fraction is required; giving the angle or a non-fraction answer loses one mark.",
+      "stem": "The diagram shows a right-angled triangle with sides of length 8, 15 and 17 cm and angles named A and B."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "questionText": "Find the measure of the angle D in the diagram, correct to the nearest degree.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "Calculate the angle using trigonometry. Measuring the printed diagram earns attempt marks only. Incorrect rounding or calculator mode loses one mark."
+    },
+    {
+      "suffix": "5-c-i",
+      "printedParts": [
+        "Q5(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "questionText": "Calculate h, the height of the flagpole. Give your answer correct to two decimal places.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. Use calculation; measuring from the diagram earns attempt marks only. Apply the required rounding and calculator-mode notes.",
+      "stem": "A taut cable is 10 m long and joins the top of a vertical flagpole to a point on level ground 4 m from the bottom of the flagpole."
+    },
+    {
+      "suffix": "5-c-ii",
+      "printedParts": [
+        "Q5(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "questionText": "Find the measure of the angle X. Give your answer to the nearest degree.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. Use calculation; measuring from the diagram earns attempt marks only. Apply the required rounding and calculator-mode notes.",
+      "stem": "A taut cable is 10 m long and joins the top of a vertical flagpole to a point on level ground 4 m from the bottom of the flagpole."
+    },
+    {
+      "suffix": "6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "questionText": "How many different versions of this car are available?",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "Count the combinations of engine type, colour and engine size. These are data for one counting problem, not alternative questions.",
+      "stem": "A certain car is available with a petrol or diesel engine. Each of these is available in five different colours and three different engine sizes."
+    },
+    {
+      "suffix": "6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "questionText": "Find the probability that the ticket drawn is blue.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "A box contains eight red tickets, four blue tickets and five yellow tickets. One ticket is drawn at random from the box."
+    },
+    {
+      "suffix": "6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "questionText": "Find the probability that the ticket drawn is red.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "A box contains eight red tickets, four blue tickets and five yellow tickets. One ticket is drawn at random from the box."
+    },
+    {
+      "suffix": "6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "questionText": "Find the probability that the ticket drawn is red or yellow.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "A box contains eight red tickets, four blue tickets and five yellow tickets. One ticket is drawn at random from the box."
+    },
+    {
+      "suffix": "6-b-iv",
+      "printedParts": [
+        "Q6(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "questionText": "Find the probability that the ticket drawn is not yellow.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "A box contains eight red tickets, four blue tickets and five yellow tickets. One ticket is drawn at random from the box."
+    },
+    {
+      "suffix": "6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "questionText": "A student is chosen at random. Find the probability that the student is a girl.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "The age of each student in a group of 60 students was recorded. The information is given in the table below: boys aged 16, 17, 18: 11, 12, 4; girls aged 16, 17, 18: 15, 13, 5."
+    },
+    {
+      "suffix": "6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "questionText": "A student is chosen at random. Find the probability that the student is 16 years of age.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "The age of each student in a group of 60 students was recorded. The information is given in the table below: boys aged 16, 17, 18: 11, 12, 4; girls aged 16, 17, 18: 15, 13, 5."
+    },
+    {
+      "suffix": "6-c-iii",
+      "printedParts": [
+        "Q6(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "questionText": "A student is chosen at random. Find the probability that the student is a boy who is 17 years of age.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "The age of each student in a group of 60 students was recorded. The information is given in the table below: boys aged 16, 17, 18: 11, 12, 4; girls aged 16, 17, 18: 15, 13, 5."
+    },
+    {
+      "suffix": "6-c-iv",
+      "printedParts": [
+        "Q6(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        5
+      ],
+      "schemePages": [
+        51
+      ],
+      "questionText": "A student is chosen at random. Find the probability that the student is younger than 18 years of age.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The source’s 17-mark examples apply to all four answers together and do not change this card’s five-mark maximum. When marking a complete set, penalise the same sample-space error once only.",
+      "stem": "The age of each student in a group of 60 students was recorded. The information is given in the table below: boys aged 16, 17, 18: 11, 12, 4; girls aged 16, 17, 18: 15, 13, 5."
+    },
+    {
+      "suffix": "7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        52
+      ],
+      "questionText": "Find the value of x.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "Apply the published task-specific deductions shown in the original solution.",
+      "stem": "The mode of the numbers 5, 6, 4, 5, 6, 3, x is 5."
+    },
+    {
+      "suffix": "7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        52,
+        53
+      ],
+      "questionText": "Copy and complete the cumulative frequency table.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The full original cumulative-frequency table and curve are retained. The scheme’s graph estimates are 13 emails for the median and 6 students above 18; only the named part is marked.",
+      "stem": "The table below shows the number of emails sent by 40 students during one week. Number of emails: 0–5, 6–10, 11–15, 16–20, 21–30. Number of students: 2, 10, 13, 12, 3."
+    },
+    {
+      "suffix": "7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        52,
+        53
+      ],
+      "questionText": "Draw the cumulative frequency curve.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The full original cumulative-frequency table and curve are retained. The scheme’s graph estimates are 13 emails for the median and 6 students above 18; only the named part is marked.",
+      "stem": "The table below shows the number of emails sent by 40 students during one week. Number of emails: 0–5, 6–10, 11–15, 16–20, 21–30. Number of students: 2, 10, 13, 12, 3."
+    },
+    {
+      "suffix": "7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        52,
+        53
+      ],
+      "questionText": "Use your cumulative frequency curve to estimate the median number of emails sent.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The full original cumulative-frequency table and curve are retained. The scheme’s graph estimates are 13 emails for the median and 6 students above 18; only the named part is marked.",
+      "stem": "The table below shows the number of emails sent by 40 students during one week. Number of emails: 0–5, 6–10, 11–15, 16–20, 21–30. Number of students: 2, 10, 13, 12, 3."
+    },
+    {
+      "suffix": "7-b-iv",
+      "printedParts": [
+        "Q7(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        52,
+        53
+      ],
+      "questionText": "Use your cumulative frequency curve to estimate the number of students who sent more than 18 emails.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The full original cumulative-frequency table and curve are retained. The scheme’s graph estimates are 13 emails for the median and 6 students above 18; only the named part is marked.",
+      "stem": "The table below shows the number of emails sent by 40 students during one week. Number of emails: 0–5, 6–10, 11–15, 16–20, 21–30. Number of students: 2, 10, 13, 12, 3."
+    },
+    {
+      "suffix": "7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 15,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        54
+      ],
+      "questionText": "Find the mean of the numbers 2, 5, 12, 13.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 15,
+              "attempt": 6
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The published allocations are 15 for the mean and 5 for the standard deviation; they are intentionally different."
+    },
+    {
+      "suffix": "7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        6
+      ],
+      "schemePages": [
+        54
+      ],
+      "questionText": "Find the standard deviation of the numbers 2, 5, 12, 13, correct to two decimal places.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The published allocations are 15 for the mean and 5 for the standard deviation; they are intentionally different."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        55
+      ],
+      "questionText": "Construct a triangle XYZ where |XY| = 6 cm, |∠ZXY| = 60° and |∠XYZ| = 40°.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "Draw the requested triangle using the given side and angles. The published construction notes use ±5° for angles and ±1 cm for the given side; each omitted side is a blunder. These are the original paper’s tolerances."
+    },
+    {
+      "suffix": "8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        55
+      ],
+      "questionText": "How many axes of symmetry does the tile have?",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. Use the 4-mark attempt allocation in the question summary. These are deduction marks, not hit-or-miss awards.",
+      "stem": "The diagram shows a patterned square tile."
+    },
+    {
+      "suffix": "8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        55
+      ],
+      "questionText": "What is the smallest angle of rotation about the centre that will map the tile onto itself?",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. Use the 4-mark attempt allocation in the question summary. These are deduction marks, not hit-or-miss awards.",
+      "stem": "The diagram shows a patterned square tile."
+    },
+    {
+      "suffix": "8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 10,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        56
+      ],
+      "questionText": "Calculate |PQ|.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 10,
+              "attempt": 4
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The image is PQRS. The linear scale factor applies to lengths; square it when comparing areas.",
+      "stem": "The rectangle PQRS is the image of the rectangle ABCD under an enlargement with centre O. The scale factor is 1·5. |AB| = 3 cm and |QR| = 9 cm."
+    },
+    {
+      "suffix": "8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        56
+      ],
+      "questionText": "Calculate |BC|.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The image is PQRS. The linear scale factor applies to lengths; square it when comparing areas.",
+      "stem": "The rectangle PQRS is the image of the rectangle ABCD under an enlargement with centre O. The scale factor is 1·5. |AB| = 3 cm and |QR| = 9 cm."
+    },
+    {
+      "suffix": "8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "sourcePages": [
+        7
+      ],
+      "schemePages": [
+        56
+      ],
+      "questionText": "Find the area of the rectangle PQRS.",
+      "methods": [
+        {
+          "id": "main",
+          "label": "Printed method",
+          "components": [
+            {
+              "id": "step-1",
+              "label": "Solution",
+              "maximum": 5,
+              "attempt": 2
+            }
+          ]
+        }
+      ],
+      "markingNote": "The original panel includes connected parts and their shared notes. Only this card’s named part earns marks; the other solutions provide context. The image is PQRS. The linear scale factor applies to lengths; square it when comparing areas.",
+      "stem": "The rectangle PQRS is the image of the rectangle ABCD under an enlargement with centre O. The scale factor is 1·5. |AB| = 3 cm and |QR| = 9 cm."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        1
+      ],
+      "wording": "Attempt SIX QUESTIONS (50 marks each).",
+      "classification": "whole-examination-selection",
+      "reason": "Retain all eight complete 50-mark questions. The six-question candidate choice does not remove practice cards or produce combinations of whole papers."
+    },
+    {
+      "pages": [
+        4,
+        6
+      ],
+      "wording": "Find the value of x and the value of y; Plot the points A and B; Copy and complete the cumulative frequency table",
+      "classification": "all-required",
+      "reason": "Both required angles remain one printed Q3(a) task with two independent five-mark steps. Both points and every table entry are required, not optional pools."
+    },
+    {
+      "pages": [
+        5
+      ],
+      "wording": "petrol or diesel; five different colours; three different engine sizes; red or yellow; a student is chosen at random",
+      "classification": "problem-data",
+      "reason": "These are conditions and events within counting/probability problems, not candidate selections among answer routes."
+    }
+  ],
+  "notes": [
+    "Every paper page 1–8 and combined-scheme page 37–60 independently visually inspected; content is on paper pages 2–7 and scheme pages 40–56. Scheme 39 supplies general rules; 57 is Irish bonus guidance and 58–60 contain no further questions.",
+    "Q3(a) asks for both angles in one prompt: keep the task together with separate 5+5 controls. Every numbered subpart elsewhere has a separate card at its published allocation.",
+    "All original diagrams, tables, graphs, alternate workings and detailed deductions are retained. Shared solution panels explicitly identify the only marked part.",
+    "Q6 shared 17/20 examples concern four responses and a repeated error; no isolated five-mark card may award 17.",
+    "Q7 mean/standard-deviation allocations are 15/5, not reversed. Q8(a) source tolerances are unusually broad but retained exactly.",
+    "Q5(a) shared slip note gives B approximately 61 degrees, whereas arccos(8/17) is 61.93 degrees; the original note remains visible with a clarification."
+  ],
+  "paperSha256": "0f213c9d9a75a2e4c0da54e6ebb00020852e7e93917c19de0838d1c2cedae492",
+  "schemeSha256": "71489d15294f23003a621f7c6dd2bdb950c50a03504467f97f0bbda68558ecd5"
+}

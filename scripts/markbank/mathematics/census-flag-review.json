@@ -1,0 +1,1546 @@
+{
+  "reviewedAt": "2026-10-30",
+  "scope": "60 generic parser diagnostics. No content exclusions; independent source reviews remain authoritative.",
+  "flags": [
+    {
+      "year": 2010,
+      "level": "hl",
+      "paper": "230",
+      "type": "marks-checksum",
+      "where": "2010 hl 230",
+      "detail": "marks sum 250, other years say 275",
+      "paperFileid": "LC003ALP230EV.pdf",
+      "paperSha256": "2c8dd9f3c69edb29535eb8911f3743c5212775d143c12f4fb7ff5fb3615f6264",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "schemeSha256": "cd4089ad0834d23f9b7596ca2d1418ec38a138ac7fe56f94a3bf59d84e2bd9b0",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 50,
+        "8": 50,
+        "9A": 50,
+        "9B": 50
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q4(a)(i)",
+      "detail": "extracted text: 'Find x.'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "d2b7007bd828b6f9975f68bafeaeda008a251eba7373a5de252fbd504ecec186",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "de7c4cc69647e882150104e1585ddc68cb957a4d616fe1f7abc51313d29e8735",
+      "cards": [
+        {
+          "id": "maths-2010-ol-p2-q4-a-i",
+          "paperPages": [
+            4
+          ],
+          "schemePages": [
+            59
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q4(a)(ii)",
+      "detail": "extracted text: 'Find y.'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "d2b7007bd828b6f9975f68bafeaeda008a251eba7373a5de252fbd504ecec186",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "de7c4cc69647e882150104e1585ddc68cb957a4d616fe1f7abc51313d29e8735",
+      "cards": [
+        {
+          "id": "maths-2010-ol-p2-q4-a-ii",
+          "paperPages": [
+            4
+          ],
+          "schemePages": [
+            59
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q9(b)(i)",
+      "detail": "extracted text: 'x y \\uf02d'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "d2b7007bd828b6f9975f68bafeaeda008a251eba7373a5de252fbd504ecec186",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "de7c4cc69647e882150104e1585ddc68cb957a4d616fe1f7abc51313d29e8735",
+      "cards": [
+        {
+          "id": "maths-2010-ol-p2-q9-b-i",
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            80,
+            81
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q9(b)(ii)",
+      "detail": "extracted text: 'y x \\uf02b 2 x'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "d2b7007bd828b6f9975f68bafeaeda008a251eba7373a5de252fbd504ecec186",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "de7c4cc69647e882150104e1585ddc68cb957a4d616fe1f7abc51313d29e8735",
+      "cards": [
+        {
+          "id": "maths-2010-ol-p2-q9-b-ii",
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            80,
+            81
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q9(b)(iii)",
+      "detail": "extracted text: 'y x \\uf02d 2 1 . y'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "d2b7007bd828b6f9975f68bafeaeda008a251eba7373a5de252fbd504ecec186",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "de7c4cc69647e882150104e1585ddc68cb957a4d616fe1f7abc51313d29e8735",
+      "cards": [
+        {
+          "id": "maths-2010-ol-p2-q9-b-iii",
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            81
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "paper": "230",
+      "type": "marks-checksum",
+      "where": "2010 ol 230",
+      "detail": "marks sum 255, other years say 275",
+      "paperFileid": "LC003GLP230EV.pdf",
+      "paperSha256": "7c5a248842a404ad94346adf12a267d207ae60e57b9602fa9ebaae5f3d0cb935",
+      "schemeFileid": "LC003GLP030EV.pdf",
+      "schemeSha256": "70d0865498a3dc161c0b2b514d12ab434947bddacf3bce027829e7a5dc21d159",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 50,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 40,
+        "8": 40,
+        "9A": 45,
+        "9B": 45
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "paper": "130",
+      "type": "marks-checksum",
+      "where": "2011 hl 130",
+      "detail": "marks sum 325, other years say 275",
+      "paperFileid": "LC003ALP130EV.pdf",
+      "paperSha256": "7b0e3d7dc40a193d03ee20c70e31d17f63fca1b683e751f75bce6cdc22674d65",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "schemeSha256": "cfcb62282992ce772d9b15856459dbb762078690bac621878466813c12a7e671",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50
+      }
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "000",
+      "type": "empty-leaf",
+      "where": "Q4(a)(i)",
+      "detail": "extracted text: 'u'",
+      "paperFileid": "LC003GLP000EV.pdf",
+      "paperSha256": "18584915e15074062f0a225445ff9eaf69dba4f59de153132d9b139a573a73a3",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p1-q4-a-i",
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            22
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "000",
+      "type": "empty-leaf",
+      "where": "Q4(a)(ii)",
+      "detail": "extracted text: '3 \\uf02d u .'",
+      "paperFileid": "LC003GLP000EV.pdf",
+      "paperSha256": "18584915e15074062f0a225445ff9eaf69dba4f59de153132d9b139a573a73a3",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p1-q4-a-ii",
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            22
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "130",
+      "type": "marks-checksum",
+      "where": "2011 ol 130",
+      "detail": "marks sum 325, other years say 275",
+      "paperFileid": "LC003GLP130EV.pdf",
+      "paperSha256": "ebba67d4c3862b342b30e9a70ff62f5f251c461a3ba7d329161828d0dcc0142b",
+      "schemeFileid": "LC003GLP030EV.pdf",
+      "schemeSha256": "8f5f26d039d785de5584b6f8ee8fe6f601529c33e97f7df0afb76a8537631d7c",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50
+      }
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q4(a)(i)",
+      "detail": "extracted text: 'Find x.'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "ea6d881eaa63e040a8d6091e0415147a488468363738af0fe92ce5eb73aacdc0",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p2-q4-a-i",
+          "paperPages": [
+            4
+          ],
+          "schemePages": [
+            65
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q4(a)(ii)",
+      "detail": "extracted text: 'Find y.'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "ea6d881eaa63e040a8d6091e0415147a488468363738af0fe92ce5eb73aacdc0",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p2-q4-a-ii",
+          "paperPages": [
+            4
+          ],
+          "schemePages": [
+            65
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q6(a)(i)",
+      "detail": "extracted text: 'Find 4!'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "ea6d881eaa63e040a8d6091e0415147a488468363738af0fe92ce5eb73aacdc0",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p2-q6-a-i",
+          "paperPages": [
+            6
+          ],
+          "schemePages": [
+            75
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q9(c)(i)",
+      "detail": "extracted text: 'OB ,'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "ea6d881eaa63e040a8d6091e0415147a488468363738af0fe92ce5eb73aacdc0",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p2-q9-c-i",
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            89,
+            90
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q9(c)(ii)",
+      "detail": "extracted text: 'OX ,'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "ea6d881eaa63e040a8d6091e0415147a488468363738af0fe92ce5eb73aacdc0",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p2-q9-c-ii",
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            89,
+            90
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q9(c)(iii)",
+      "detail": "extracted text: 'OY ,'",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "ea6d881eaa63e040a8d6091e0415147a488468363738af0fe92ce5eb73aacdc0",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "0550df820b59db17845b1b21c0e7700ee8d435d76d18fef4cb916dcd07137b56",
+      "cards": [
+        {
+          "id": "maths-2011-ol-p2-q9-c-iii",
+          "paperPages": [
+            8
+          ],
+          "schemePages": [
+            89,
+            90
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "empty-leaf",
+      "where": "Q4(a)(i)",
+      "detail": "extracted text: 'find u,'",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "d74bdb89dff343ca00bf9c7ba01137502567e0e61ab8a39be6b5cdad36e89aa3",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "e85db588977d87d8b54f14af6f0cc92754bfa7c01417284023937d2e08903cbd",
+      "cards": [
+        {
+          "id": "maths-2012-ol-p1-q4-a-i",
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            17
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "empty-leaf",
+      "where": "Q4(b)(i)",
+      "detail": "extracted text: 'Find | | z .'",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "d74bdb89dff343ca00bf9c7ba01137502567e0e61ab8a39be6b5cdad36e89aa3",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "e85db588977d87d8b54f14af6f0cc92754bfa7c01417284023937d2e08903cbd",
+      "cards": [
+        {
+          "id": "maths-2012-ol-p1-q4-b-i",
+          "paperPages": [
+            3
+          ],
+          "schemePages": [
+            18
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "paper": "130",
+      "type": "empty-leaf",
+      "where": "Q6(c)",
+      "detail": "extracted text: 'Use i'",
+      "paperFileid": "LC003ALP130EV.pdf",
+      "paperSha256": "99f456958b9b733612d9f62ff336f5e3871d18bfaa22770f825a2c8f2bc43088",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "schemeSha256": "2f5b71e54351b0169be01c61f2a5c8cd37d80d99252dafbbe13d9b779ac6cd93",
+      "cards": [
+        {
+          "id": "maths-2013-hl-p1-project-q6-c",
+          "paperPages": [
+            9
+          ],
+          "schemePages": [
+            15,
+            32
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "roman-gap",
+      "where": " Q7(c)",
+      "detail": "romans found: ['i', 'iii']",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "74c22ae557aafa3ecb9b30d62db179a697e06f8ff99d1c2702f9cf02c62564dd",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "28ce10519d9169f602714dc9fa5651fa9a8b6836d3ea88787a50bd703fa761af",
+      "cards": [
+        {
+          "id": "maths-2013-hl-p2-q7-c",
+          "paperPages": [
+            12,
+            13
+          ],
+          "schemePages": [
+            53,
+            72
+          ]
+        }
+      ],
+      "disposition": "diagram-option-labels",
+      "reason": "(i), (ii), (iii) name three candidate graphs inside one Q7(c) selection-and-reason task. They are not three separately marked prompts. The original card retains all three graphs and the shared 5B scale."
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "empty-leaf",
+      "where": "Q7(c)(i)",
+      "detail": "extracted text: ''",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "74c22ae557aafa3ecb9b30d62db179a697e06f8ff99d1c2702f9cf02c62564dd",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "28ce10519d9169f602714dc9fa5651fa9a8b6836d3ea88787a50bd703fa761af",
+      "cards": [
+        {
+          "id": "maths-2013-hl-p2-q7-c",
+          "paperPages": [
+            12,
+            13
+          ],
+          "schemePages": [
+            53,
+            72
+          ]
+        }
+      ],
+      "disposition": "diagram-option-labels",
+      "reason": "(i), (ii), (iii) name three candidate graphs inside one Q7(c) selection-and-reason task. They are not three separately marked prompts. The original card retains all three graphs and the shared 5B scale."
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "paper": "230",
+      "type": "roman-gap",
+      "where": " Q7(c)",
+      "detail": "romans found: ['i', 'iii']",
+      "paperFileid": "LC003ALP230EV.pdf",
+      "paperSha256": "8ca3d3121b469bc15cfedb4113f990ebced0d76b43c515124767ff5dbb3ecbc9",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "schemeSha256": "2f5b71e54351b0169be01c61f2a5c8cd37d80d99252dafbbe13d9b779ac6cd93",
+      "cards": [
+        {
+          "id": "maths-2013-hl-p2-project-q7-c",
+          "paperPages": [
+            12,
+            13
+          ],
+          "schemePages": [
+            53,
+            72
+          ]
+        }
+      ],
+      "disposition": "diagram-option-labels",
+      "reason": "(i), (ii), (iii) name three candidate graphs inside one Q7(c) selection-and-reason task. They are not three separately marked prompts. The original card retains all three graphs and the shared 5B scale."
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "paper": "230",
+      "type": "empty-leaf",
+      "where": "Q7(c)(i)",
+      "detail": "extracted text: ''",
+      "paperFileid": "LC003ALP230EV.pdf",
+      "paperSha256": "8ca3d3121b469bc15cfedb4113f990ebced0d76b43c515124767ff5dbb3ecbc9",
+      "schemeFileid": "LC003ALP030EV.pdf",
+      "schemeSha256": "2f5b71e54351b0169be01c61f2a5c8cd37d80d99252dafbbe13d9b779ac6cd93",
+      "cards": [
+        {
+          "id": "maths-2013-hl-p2-project-q7-c",
+          "paperPages": [
+            12,
+            13
+          ],
+          "schemePages": [
+            53,
+            72
+          ]
+        }
+      ],
+      "disposition": "diagram-option-labels",
+      "reason": "(i), (ii), (iii) name three candidate graphs inside one Q7(c) selection-and-reason task. They are not three separately marked prompts. The original card retains all three graphs and the shared 5B scale."
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "empty-leaf",
+      "where": "Q4(b)(i)",
+      "detail": "extracted text: 'log\\u0bd4 8 3'",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "ba817e630bde1b93536569b974600274337d61379f6e52c4fee2a4b84cdd1b24",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "c561278937b118aa0b39c59dc2f147f4d440fff2fe6a5fe741411c070c030f41",
+      "cards": [
+        {
+          "id": "maths-2016-hl-p1-q4-b-i",
+          "paperPages": [
+            7
+          ],
+          "schemePages": [
+            15
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2016,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "empty-leaf",
+      "where": "Q8(d)(ii)",
+      "detail": "extracted text: 'Find \u0bd7\\u0bba \u0bd7\u0beb.'",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "c8d59c42675118a8833e29cbb28cb0ca281dff789c13f42604925f4659f87b42",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "646321674a62752356d9a6fd253ea56e667334201c6405e1cf47e306e353e90a",
+      "cards": [
+        {
+          "id": "maths-2016-ol-p1-q8-d-ii",
+          "paperPages": [
+            15
+          ],
+          "schemePages": [
+            17
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2017 hl Paper 2",
+      "detail": "marks sum 240, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "bbb81c9ff2b8ae69239c7b71cab442fcd5472030780b53a066c87a6594b458ba",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "0bb64df5a2421450f158c6421586cd522c112d2dfa2b449bc9fe1f58e1bf175a",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 40,
+        "8": 60,
+        "9": 50
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2017 ol Paper 1",
+      "detail": "marks sum 300, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "c19363c2d76d651c52ea9e1f17915f2295cffd8e9f36da2c24fc95be571a7f69",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "690a3906d4a062d85e6d70258c22aeaced2e5c710da01a35d5930f0aa3a7e7c8",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 50,
+        "8": 45,
+        "9": 55
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2017 ol Paper 2",
+      "detail": "marks sum 300, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "b083dcd43dcc7cdcda77697d3a9f82f839a6f2c01902046d5ba3654e19c06319",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "690a3906d4a062d85e6d70258c22aeaced2e5c710da01a35d5930f0aa3a7e7c8",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 55,
+        "8": 40,
+        "9": 55
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2019 hl Paper 1",
+      "detail": "marks sum 300, other years say 275",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "0957e7caac5f7827a7abcd9a6101ae4b4bb73b9d8a4bb6d5d5662b667767ef33",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "939dabdcff1d17b57e98911cb035dd928e1c997b235d4479029438c61fe34383",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 45,
+        "8": 50,
+        "9": 55
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2019 hl Paper 2",
+      "detail": "marks sum 300, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "0d5bce2d1d9586738606e06a17a91ab9b380682d04449836ef17af32db6b0926",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "939dabdcff1d17b57e98911cb035dd928e1c997b235d4479029438c61fe34383",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 50,
+        "8": 45,
+        "9": 55
+      }
+    },
+    {
+      "year": 2019,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2019 ol Paper 1",
+      "detail": "marks sum 300, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "6db649d8584db4fe7421bcfaefe595f22b4981ac3e28ae3eeee6cefdf004a02c",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c2a41dfed8a8c56058f8d36ffd2e0facb8ea06ce8c4a65345634c709caf89b7e",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 55,
+        "8": 55,
+        "9": 40
+      }
+    },
+    {
+      "year": 2019,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2019 ol Paper 2",
+      "detail": "marks sum 300, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "6f8e60a3058fbbc61d7ab2bef5f61f8a66cad37342bde4c0fa7899cf34ec3334",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c2a41dfed8a8c56058f8d36ffd2e0facb8ea06ce8c4a65345634c709caf89b7e",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 50,
+        "8": 45,
+        "9": 55
+      }
+    },
+    {
+      "year": 2020,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2020 hl Paper 2",
+      "detail": "marks sum 300, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "047919572be81c9ce54a4b55078737f238cc2001900f494e66e58a2a4f40d559",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "6626b366d885fd127e00d38737223dcda09da805980f8a126b0cf251e6da6365",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 25,
+        "2": 25,
+        "3": 25,
+        "4": 25,
+        "5": 25,
+        "6": 25,
+        "7": 55,
+        "8": 70,
+        "9": 25
+      }
+    },
+    {
+      "year": 2021,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2021 hl Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "33115ccba18b6973ee31c4aba967a0971755974e8c236734e3aeb575694eb9ef",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "922339c8452f8bb99b2fc80718df5e397ef7a7742e22c1abdf6945cb98b9d830",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2021,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2021 hl Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "5e406fc416cdfb662cfb21d0c128aef93669a14daac02e275187b7c9139f2196",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "922339c8452f8bb99b2fc80718df5e397ef7a7742e22c1abdf6945cb98b9d830",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2021,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2021 ol Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "60dfb68b828f2be13f31d2b42f4f863043c86139830c895e5cbfa64a8878903e",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "47f1e8757908dfd55fa946d1fca4b7c3e338cebc3f2d8ed4e0ba9f68dc467eee",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2021,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2021 ol Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "db2e8cb1b7c5c4121f01256705397f290972254aebb0ded154e3050fdef77924",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "47f1e8757908dfd55fa946d1fca4b7c3e338cebc3f2d8ed4e0ba9f68dc467eee",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2022,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2022 hl Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "8f5a3cd78f91b3b133886c00c8b7edf5d2e75580abe2aa047f672c2636dfee33",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "e29a0c5bbc7174e05070790de76ff1438f52441bfc3b2325ed28aad4f51d1ce0",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2022,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2022 hl Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "e0e4d90375d23ccfebf9106b31036dd4748d835378a252782ee653b3126cd7f7",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "e29a0c5bbc7174e05070790de76ff1438f52441bfc3b2325ed28aad4f51d1ce0",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "empty-leaf",
+      "where": "Q5(a)(i)",
+      "detail": "extracted text: '1200'",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "a8fdc57bf929cd908e008de43c018aa83a185c2412f32923786c9b21f1a24d08",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "03b6d60f182e4ec188d889171b072c463e7c1731b865c3c7f0f7fe1c57c73ab2",
+      "cards": [
+        {
+          "id": "maths-2022-ol-p1-q5-a",
+          "paperPages": [
+            12
+          ],
+          "schemePages": [
+            15
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "empty-leaf",
+      "where": "Q5(a)(ii)",
+      "detail": "extracted text: '0\u221927'",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "a8fdc57bf929cd908e008de43c018aa83a185c2412f32923786c9b21f1a24d08",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "03b6d60f182e4ec188d889171b072c463e7c1731b865c3c7f0f7fe1c57c73ab2",
+      "cards": [
+        {
+          "id": "maths-2022-ol-p1-q5-a",
+          "paperPages": [
+            12
+          ],
+          "schemePages": [
+            15
+          ]
+        }
+      ],
+      "disposition": "original-question-present",
+      "reason": "Short text or equation-only extraction; complete original question, required diagram/context and scheme are retained by the named reviewed cards."
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2022 ol Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "a8fdc57bf929cd908e008de43c018aa83a185c2412f32923786c9b21f1a24d08",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "03b6d60f182e4ec188d889171b072c463e7c1731b865c3c7f0f7fe1c57c73ab2",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2022 ol Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "daf5686ae18857574dd291f0e4221e7a934e893d4940531640c083f2bcf569d1",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "03b6d60f182e4ec188d889171b072c463e7c1731b865c3c7f0f7fe1c57c73ab2",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2023 hl Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "af21cc5d0b4d5e249ca9e43f1dc9a8071c56eb6c4aa019a0fe7847dfd95e74f5",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "c552c4050776073e91027ecfb5199ad66805464119c425592bfff463a357e130",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2023,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2023 hl Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "24cf8105f917e43e030199c988c831ecf461514b88e19bc715d0677a0977cd18",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "c552c4050776073e91027ecfb5199ad66805464119c425592bfff463a357e130",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2023,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2023 ol Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "26642151d3386f62adf452b67b2560e260074f177626db4577af383772762cfc",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "f002a1a1573c51aa6c33a551b33c93eaa654ae9d4b764fd942a131ed7fc8a9ca",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2023,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2023 ol Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "7c9d02e9e6ba0850a757864cd26854b97bcd2df54cc1e4659511f702f44d6034",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "f002a1a1573c51aa6c33a551b33c93eaa654ae9d4b764fd942a131ed7fc8a9ca",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2024,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2024 hl Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "6180e1eacc53dc6270605ccf1f15fd29f6d51ffc3896c66af5287acd2e4c513f",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "4f0b93a5830b420ab1773579f411f044d8a068791ae911864a5b01a45b1fdd97",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2024,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2024 hl Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "e8c02b04f4d8e834c7d0acfae79764bb34782d5156c6cef02fca82a656c47ade",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "4f0b93a5830b420ab1773579f411f044d8a068791ae911864a5b01a45b1fdd97",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2024,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2024 ol Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "416ebb5f564b8dae7a603ceae9db02e50c45d6423da031b6d96f817c69415a6e",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c856460b3a5a9b69a4ee84eb9661cfc32a76489fc5dc5c9a52b6dfc7176490d3",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2024,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2024 ol Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "89b5eb1d5f5bc1e53ef27ab61b4fe6b467306dd837182a2ca9f2e9403bf638fe",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c856460b3a5a9b69a4ee84eb9661cfc32a76489fc5dc5c9a52b6dfc7176490d3",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2025,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2025 hl Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "3c15ee1315f9ba1361beb82828fa41fdad72ca36b5dc28105fd5f7c1e1179b2a",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "c929568eaab7745c3601b9c694059a019b3c80319f398604f6960e9b7ef8fae2",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2025,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2025 hl Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "97a7d90c0e81133588c5243731d7ffeeab46b7be6763dce324c165a5d2ae860b",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "c929568eaab7745c3601b9c694059a019b3c80319f398604f6960e9b7ef8fae2",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2025,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2025 ol Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "87d6150ff7077495daa46d127be7445effa1ada6e5b02d9d118e5d98533be636",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c1fda1631ad49b1d83dfd60605c5c296f5627e5bd5790f7c9aec3af45b51daab",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2025,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2025 ol Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "58a2a8296cf1d19e1a9c4bbd603e71da36a1c5c613fbf44161aee5e4c7719498",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c1fda1631ad49b1d83dfd60605c5c296f5627e5bd5790f7c9aec3af45b51daab",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2026,
+      "level": "hl",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2026 hl Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP100EV.pdf",
+      "paperSha256": "02988125c4daf498f8a0b90f5b51c53df2b7ce1b89a64c64f84028435c668820",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2026,
+      "level": "hl",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2026 hl Paper 2",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003ALP200EV.pdf",
+      "paperSha256": "15dc629eb04c0b751e218b5dfa8324eab688fc75ae4d804cc414dfb241b90dba",
+      "schemeFileid": "LC003ALP000EV.pdf",
+      "schemeSha256": "4855c3b6f5672316c570a084bb835955e8fea2dbbb492a18e7520b882e0fa701",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2026,
+      "level": "ol",
+      "paper": "Paper 1",
+      "type": "marks-checksum",
+      "where": "2026 ol Paper 1",
+      "detail": "marks sum 380, other years say 275",
+      "paperFileid": "LC003GLP100EV.pdf",
+      "paperSha256": "654bc1d7c23510347caed2216feb32859bc621cedee7d4e22400b927d17d2178",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    },
+    {
+      "year": 2026,
+      "level": "ol",
+      "paper": "Paper 2",
+      "type": "marks-checksum",
+      "where": "2026 ol Paper 2",
+      "detail": "marks sum 350, other years say 275",
+      "paperFileid": "LC003GLP200EV.pdf",
+      "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+      "schemeFileid": "LC003GLP000EV.pdf",
+      "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a",
+      "disposition": "cross-year-heuristic",
+      "reason": "The generic checksum assumes identical offered marks across years and parses only some printed headers. Mathematics changed syllabus and selection rules. The independent paper/scheme review reconciles every published question total for this exact edition.",
+      "reviewedQuestionMarks": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 30,
+        "5": 30,
+        "6": 30,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      }
+    }
+  ]
+}

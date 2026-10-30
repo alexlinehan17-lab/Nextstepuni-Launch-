@@ -1,0 +1,734 @@
+{
+  "status": "complete independent original-source review; all 29 question and 29 solution presentations visually inspected",
+  "reviewedAt": "2026-10-30",
+  "paperFileid": "LC003ALP230EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+  ],
+  "generalNotesPages": [
+    56,
+    57,
+    58
+  ],
+  "offeredMarks": 325,
+  "candidateMarks": 300,
+  "scales": {
+    "5B": [
+      0,
+      3,
+      5
+    ],
+    "5C": [
+      0,
+      3,
+      4,
+      5
+    ],
+    "10B": [
+      0,
+      5,
+      10
+    ],
+    "10C": [
+      0,
+      4,
+      8,
+      10
+    ],
+    "20C": [
+      0,
+      7,
+      18,
+      20
+    ],
+    "20D": [
+      0,
+      7,
+      10,
+      18,
+      20
+    ],
+    "25D": [
+      0,
+      15,
+      20,
+      22,
+      25
+    ],
+    "25E": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25
+    ]
+  },
+  "tasks": [
+    {
+      "suffix": "1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "schemePages": [
+        39,
+        59
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Given the co-ordinates of the vertices of a quadrilateral ABCD, describe three different ways to determine, using co-ordinate geometry techniques, whether the quadrilateral is a parallelogram.",
+      "components": [
+        {
+          "id": "method-1",
+          "label": "First method",
+          "code": "5B"
+        },
+        {
+          "id": "method-2",
+          "label": "Second method",
+          "code": "5B"
+        },
+        {
+          "id": "method-3",
+          "label": "Third method",
+          "code": "5B"
+        }
+      ],
+      "totalMarks": 15
+    },
+    {
+      "suffix": "1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "schemePages": [
+        39,
+        59
+      ],
+      "sourcePages": [
+        3
+      ],
+      "questionText": "Using one of the methods you described, determine whether the quadrilateral with vertices (−4, −2), (21, −5), (8, 7) and (−17, 10) is a parallelogram.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "Part (a): describe three different co-ordinate geometry methods for deciding whether a quadrilateral is a parallelogram."
+    },
+    {
+      "suffix": "2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "schemePages": [
+        40,
+        60
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Write down the centre and radius-length of each circle.",
+      "components": [
+        {
+          "id": "circle-1",
+          "label": "Circle c₁",
+          "code": "5B"
+        },
+        {
+          "id": "circle-2",
+          "label": "Circle c₂",
+          "code": "5B"
+        }
+      ],
+      "totalMarks": 10,
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0."
+    },
+    {
+      "suffix": "2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "schemePages": [
+        40,
+        60
+      ],
+      "sourcePages": [
+        4
+      ],
+      "questionText": "Prove that the circles are touching.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0."
+    },
+    {
+      "suffix": "2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "sourcePages": [
+        4,
+        5
+      ],
+      "questionText": "Verify that (4, 7) is the point that they have in common.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0."
+    },
+    {
+      "suffix": "2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "schemePages": [
+        41,
+        60
+      ],
+      "sourcePages": [
+        4,
+        5
+      ],
+      "questionText": "Find the equation of the common tangent.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "c₁: x² + y² − 6x − 10y + 29 = 0; c₂: x² + y² − 2x − 2y − 43 = 0. Part (c): verify that (4, 7) is their point in common."
+    },
+    {
+      "suffix": "3",
+      "printedParts": [
+        "Q3"
+      ],
+      "schemePages": [
+        42,
+        43,
+        61
+      ],
+      "sourcePages": [
+        6
+      ],
+      "questionText": "The circle shown has as tangents the x-axis, the y-axis, the line x + y = 2 and the line x + y = 2k, where k > 1. Find k.",
+      "scale": "25D",
+      "totalMarks": 25
+    },
+    {
+      "suffix": "4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "What assumption(s) must be made in order to regard this as a sequence of Bernoulli trials?",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "A basketball player scores 60% of the free-throw shots she attempts. During a particular game she gets six free throws."
+    },
+    {
+      "suffix": "4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Based on the Bernoulli-trial assumptions, find, correct to three decimal places, the probability that she scores on exactly four of the six shots.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "stem": "A basketball player scores 60% of the free-throw shots she attempts. During a particular game she gets six free throws."
+    },
+    {
+      "suffix": "4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "schemePages": [
+        44,
+        62
+      ],
+      "sourcePages": [
+        7
+      ],
+      "questionText": "Based on the Bernoulli-trial assumptions, find, correct to three decimal places, the probability that she scores for the second time on the fifth shot.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "stem": "A basketball player scores 60% of the free-throw shots she attempts. During a particular game she gets six free throws."
+    },
+    {
+      "suffix": "5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "A machine produces normally distributed battery diameters with mean 20 mm and standard deviation 0·1 mm. Out of every 10 000 batteries, how many on average are rejected?",
+      "scale": "20D",
+      "totalMarks": 20,
+      "stem": "A company produces calculator batteries. The diameter is supposed to be 20 mm with tolerance 0·25 mm; batteries outside this tolerance are rejected, and this is the only reason for rejection."
+    },
+    {
+      "suffix": "5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "schemePages": [
+        45,
+        63
+      ],
+      "sourcePages": [
+        8
+      ],
+      "questionText": "A machine setting slips and the mean diameter increases to 20·05 mm, with standard deviation unchanged. Find the percentage increase in the rejection rate.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "A company produces calculator batteries. The diameter is supposed to be 20 mm with tolerance 0·25 mm; batteries outside this tolerance are rejected, and this is the only reason for rejection. The original diameters were normally distributed with mean 20 mm and standard deviation 0·1 mm."
+    },
+    {
+      "suffix": "6a-a-i",
+      "printedParts": [
+        "Q6A(a)(i)"
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "sourcePages": [
+        9
+      ],
+      "questionText": "Given the points B and C, construct, without using a protractor or setsquare, a point A such that |∠ABC| = 60°.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "measurementRequired": true
+    },
+    {
+      "suffix": "6a-a-ii",
+      "printedParts": [
+        "Q6A(a)(ii)"
+      ],
+      "schemePages": [
+        46,
+        64
+      ],
+      "sourcePages": [
+        9
+      ],
+      "questionText": "Hence construct, on the same diagram, and using a compass and straight edge only, an angle of 15°.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "measurementRequired": true,
+      "stem": "Part (a)(i): construct A from the supplied B and C so that |∠ABC| = 60°, without a protractor or setsquare."
+    },
+    {
+      "suffix": "6a-b",
+      "printedParts": [
+        "Q6A(b)"
+      ],
+      "schemePages": [
+        46,
+        47,
+        64
+      ],
+      "sourcePages": [
+        9,
+        10
+      ],
+      "questionText": "Prove that triangles CDE and FGH are congruent.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "The parallel lines l₁, l₂, l₃ and l₄ make equal intercepts on transversal k. FG is parallel to k, and HG is parallel to ED. Use the original diagram."
+    },
+    {
+      "suffix": "6b",
+      "printedParts": [
+        "Q6B"
+      ],
+      "schemePages": [
+        47,
+        48,
+        64
+      ],
+      "sourcePages": [
+        10,
+        11
+      ],
+      "questionText": "Prove that |∠PQR| = ½(|∠CAB| + |∠CBA|).",
+      "scale": "25E",
+      "totalMarks": 25,
+      "stem": "The incircle of triangle ABC has centre O and touches the sides at P, Q and R, as shown."
+    },
+    {
+      "suffix": "7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "schemePages": [
+        49,
+        65
+      ],
+      "sourcePages": [
+        12
+      ],
+      "questionText": "What can you say about the change from September 2009 to September 2011 with regard to the arrears rates?",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales."
+    },
+    {
+      "suffix": "7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "schemePages": [
+        49,
+        65
+      ],
+      "sourcePages": [
+        12
+      ],
+      "questionText": "What can you say about the change from September 2009 to September 2011 with regard to the rates of interest being paid?",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales."
+    },
+    {
+      "suffix": "7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "questionText": "What can you say about the change from September 2009 to September 2011 with regard to the relationship between the arrears rate and the interest rate?",
+      "scale": "10B",
+      "totalMarks": 10,
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales."
+    },
+    {
+      "suffix": "7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "questionText": "What additional information would you need before you could estimate the median interest rate being paid by mortgage holders in September 2011?",
+      "scale": "5B",
+      "totalMarks": 5,
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales."
+    },
+    {
+      "suffix": "7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "schemePages": [
+        50,
+        65
+      ],
+      "sourcePages": [
+        12,
+        13
+      ],
+      "questionText": "The report says “The direction of causality … is important” regarding the September 2011 relationship. Explain what “direction of causality” means in this context.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "In arrears means a mortgage repayment is overdue by 90 days or more. The two original charts compare September 2009 and September 2011. Each dot represents a group paying a particular interest rate to a lender; the arrears rate is the percentage in arrears. Pay attention to the different axis scales."
+    },
+    {
+      "suffix": "7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "schemePages": [
+        51,
+        66
+      ],
+      "sourcePages": [
+        12,
+        14
+      ],
+      "questionText": "Find the probability that a property selected at random from all those examined will be in negative equity. Give your answer correct to two decimal places.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more."
+    },
+    {
+      "suffix": "7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "schemePages": [
+        51,
+        66
+      ],
+      "sourcePages": [
+        12,
+        14
+      ],
+      "questionText": "Find the probability that a property selected at random from those in negative equity will also be in arrears. Give your answer correct to two decimal places.",
+      "scale": "5B",
+      "totalMarks": 5,
+      "fullCreditMinusOne": true,
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more."
+    },
+    {
+      "suffix": "7-d-iii",
+      "printedParts": [
+        "Q7(d)(iii)"
+      ],
+      "schemePages": [
+        51,
+        52,
+        66
+      ],
+      "sourcePages": [
+        12,
+        14
+      ],
+      "questionText": "Find the probability that a property selected at random from those in arrears will also be in negative equity. Give your answer correct to two decimal places.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "fullCreditMinusOne": true,
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more."
+    },
+    {
+      "suffix": "7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "schemePages": [
+        52,
+        66
+      ],
+      "sourcePages": [
+        12,
+        14,
+        15
+      ],
+      "questionText": "Treat the December 2010 study as the population. In early 2012, 552 of 2000 randomly selected mortgaged properties are in negative equity. Use a hypothesis test at the 5% significance level to decide whether there is sufficient evidence that the proportion has changed. State the null hypothesis and conclusion clearly.",
+      "scale": "20D",
+      "totalMarks": 20,
+      "stem": "A property is in negative equity when its mortgage debt exceeds its value. In December 2010, 475 136 mortgaged properties were examined: 145 414 were in negative equity; 11 644 of those were also in arrears; 317 355 were in neither arrears nor negative equity. In arrears means 90 days or more."
+    },
+    {
+      "suffix": "8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "schemePages": [
+        53,
+        67
+      ],
+      "sourcePages": [
+        16
+      ],
+      "questionText": "Determine α and β to locate R 24 cm to the right of P and 7 cm higher. Give the angles correct to the nearest degree.",
+      "components": [
+        {
+          "id": "length-pr",
+          "label": "Length PR",
+          "code": "10B"
+        },
+        {
+          "id": "angle-beta",
+          "label": "Angle β",
+          "code": "20C",
+          "fullCreditMinusOne": true
+        },
+        {
+          "id": "angle-alpha",
+          "label": "Angle α",
+          "code": "25D",
+          "fullCreditMinusOne": true
+        }
+      ],
+      "totalMarks": 55,
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram."
+    },
+    {
+      "suffix": "8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "schemePages": [
+        54,
+        67
+      ],
+      "sourcePages": [
+        16,
+        17
+      ],
+      "questionText": "In the position from part (a), which causes the greater error in R’s location: a 1° error in α or in β? Justify your answer. For motion through a small angle, assume distance from the starting point equals the arc length travelled.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram. Part (a) puts R 24 cm right and 7 cm above P."
+    },
+    {
+      "suffix": "8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "schemePages": [
+        54,
+        67
+      ],
+      "sourcePages": [
+        16,
+        17
+      ],
+      "questionText": "The answer to part (b) depends on the position of the arm. Describe, with justification, when R’s location is more sensitive to small errors in α than in β, and when the reverse is true.",
+      "scale": "5C",
+      "totalMarks": 5,
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram. Part (b) compares the location errors caused by a 1° error in each angle; for a small angle, the movement is approximately the arc length."
+    },
+    {
+      "suffix": "8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "schemePages": [
+        55,
+        67
+      ],
+      "sourcePages": [
+        16,
+        18
+      ],
+      "questionText": "Illustrate all possible locations of R on the coordinate diagram. Take P as the origin and each unit as one centimetre in reality. Both α and β can vary only from 0° to 180°.",
+      "scale": "10C",
+      "totalMarks": 10,
+      "stem": "The robotic arm moves in a vertical plane. P and the segment lengths are fixed; α and β each vary from 0° to 180°. |PQ| = 20 cm and |QR| = 12 cm. Use the original labelled diagram."
+    }
+  ],
+  "paperSha256": "a64ea9fcb9c23814b967c07d4f4afe351742662ea9643c3a08ef9d65a27a2071",
+  "schemeSha256": "d034ecd07854cd1ae60fe78514ae6436cbc48618f46272b932a1d56870df67a9",
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        9,
+        10
+      ],
+      "wording": "either Question 6A or Question 6B",
+      "classification": "expanded-alternatives",
+      "reason": "All three 6A tasks and the entire 6B proof are retained at their printed tariffs. Candidate total is 300; offered total is 325."
+    },
+    {
+      "pages": [
+        3
+      ],
+      "wording": "three different ways; using one of the methods you described",
+      "classification": "open-method-choice",
+      "reason": "The paper supplies no finite closed method list. Three independently scored descriptions remain one 15-mark response, followed by one 10-mark application. Scheme examples are accepted solutions, not printed optional prompts."
+    },
+    {
+      "pages": [
+        4,
+        7,
+        8,
+        12,
+        14,
+        16,
+        17,
+        18
+      ],
+      "wording": "each circle; assumption(s); probability; which angle; each of two situations; all possible locations",
+      "classification": "all-required-or-answer-construction",
+      "reason": "Required centres, radii, assumptions, angles, cases and loci remain in their respective tasks. Random selection in probability scenarios is mathematical data, not a choice of practice prompt."
+    }
+  ],
+  "notes": [
+    "Paper 2 uses its own credit ladders, not Paper 1 deduction rules.",
+    "29 independently practicable task groups contain 34 published component scales. Q1(a) has three 5B method descriptions; Q2(a) has two 5B circle components; Q8(a) has Length PR 10B, angle beta 20C* and angle alpha 25D*.",
+    "Seven starred scales: Q4(b)(i),(ii); Q7(d)(i),(ii),(iii); Q8(a) beta and alpha. Deductions apply independently to the marked components.",
+    "Q6B uses the six-band 25E ladder. All four alternative published proofs are retained.",
+    "Q6A construction tasks preserve the original line and require original-scale source access; angle tolerance is 2 degrees.",
+    "Source typos in Q5(b), one Q6B proof, and both Q7(e) interval methods have separate clarifications; original print is preserved.",
+    "All 20 Phase 3 paper pages and combined-scheme pages 37–72 independently visually inspected. The Phase 3 paper body matches the Phase 1 Paper 2, but remains a separate exact-source booklet. The combined Phase 3 scheme reproduces a Paper 2 model-solution cover labelled Phase 1; every task, model, mark allocation and detailed note matches this Phase 3 paper."
+  ]
+}

@@ -1,0 +1,1157 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2015,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "a5e648187aab74c8107d4812fc6fbc97ab9758802e56210ee939686773924003",
+  "schemeSha256": "86b89801484ce73748748443123dfbfec6da6b6297cd3623b29c02101f61ed01",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual inspection of all 20 question PDF pages and scheme PDF pages 29–60, including all model solutions, the scale table, allocation summary and detailed credit notes. Published mark boundaries independently reconciled with all 300 marks.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 35,
+    "8": 45,
+    "9": 70
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    45,
+    46
+  ],
+  "sourceNotes": [
+    "All nine questions are compulsory. Every published scale boundary is retained in 37 cards, totalling 300 marks.",
+    "Shared scales: Q1(b)(i)+(ii), Q2(a)(i)+(ii), Q4(b)(i)+(ii), Q6(a)(i)+(ii)+(iii), Q6(b)(i)+(ii), Q7(a)(ii)+(iii), Q7(c)(i)+(ii)+(iii). Q7(a)(i) remains its separately marked construction.",
+    "Paper 2 has different ladders from Paper 1: 10B 0,4,10; 10C 0,4,9,10; 10D 0,2,5,8,10; 15C 0,4,11,15; 15D 0,4,7,11,15; 20C 0,10,17,20; 20D 0,5,10,15,20. General Full Credit minus one is retained.",
+    "Q9(c)(i)–(iv) are confirmed in the PDF text layer, individual question crops, allocation summary and detailed notes. The Q9(d)(i) notes heading omits an opening parenthesis; its unambiguous scale remains 5C.",
+    "Q7 retains the original enlargement diagram and measurement access. Dependent tasks carry the original construction/scale-factor prompts, not inserted answers. Q9 dependent statistics cards retain the data tables and original boys histogram.",
+    "The Q4(a) model has a printed 100° typo in its calculation for y; the diagram gives 110° and the correct calculation is 180°−(110°+30°)=40°. Q4(b)(ii) prints half the parallelogram area equal to 120 m²; the correct fraction is one quarter. Q8(b)(iii) rounds 129/25 inconsistently: 5·16 from rounded litres or about 5·17 from unrounded litres, both requiring six tins costing €1080. Original images are preserved with separately labelled clarifications.",
+    "Model equations and full credit notes are carried as typeset source images after reveal; text quotes only intact prose. Source references use PDF positions; scheme printed page numbers are two less."
+  ],
+  "cards": [
+    {
+      "id": "maths-2015-ol-p2-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        31,
+        47
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "A bank issues a unique six-digit password to each of its online customers. The password may contain any of the numbers 0 to 9 in any position and numbers may be repeated. For example, 071737 is a valid password.",
+      "questionText": "How many different passwords are possible?"
+    },
+    {
+      "id": "maths-2015-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        9,
+        10
+      ],
+      "schemePages": [
+        31,
+        47
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting",
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A bank issues a unique six-digit password to each of its online customers. The password may contain any of the numbers 0 to 9 in any position and numbers may be repeated. For example, 071737 is a valid password.",
+      "questionText": "(i) How many different passwords do not contain any zero? (ii) One password is selected at random from all the possible passwords. What is the probability that this password contains at least one zero?"
+    },
+    {
+      "id": "maths-2015-ol-p2-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        31,
+        47
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "A bank issues a unique six-digit password to each of its online customers. The password may contain any of the numbers 0 to 9 in any position and numbers may be repeated. For example, 071737 is a valid password.",
+      "questionText": "John is issued with one such password from the bank. Each time John wants to access his account online, the bank’s website requires him to input three of his password digits into the boxes provided. For example, he may be asked for the 2nd, 4th and 5th digits, as shown below. In how many different ways can the bank select the three required boxes?"
+    },
+    {
+      "id": "maths-2015-ol-p2-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        9,
+        10
+      ],
+      "schemePages": [
+        32,
+        48
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line p makes equal intercepts on the axes at A and at B, as shown.",
+      "questionText": "(i) Write down the slope of p. (ii) The point (1, 5) is on p. Find the equation of p. Write your answer in the form ax + by + c = 0, where a, b, and c ∈ ℤ."
+    },
+    {
+      "id": "maths-2015-ol-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        32,
+        48
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The line p makes equal intercepts on the axes at A and at B, as shown.",
+      "questionText": "The line q is perpendicular to p and contains the point O(0, 0). Find the equation of q."
+    },
+    {
+      "id": "maths-2015-ol-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        32,
+        48
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "The line p makes equal intercepts on the axes at A and at B, as shown. The line q is perpendicular to p and contains the point O(0, 0).",
+      "questionText": "The lines p and q intersect at the point C. Explain why the triangles OCA and OBC are congruent."
+    },
+    {
+      "id": "maths-2015-ol-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        33,
+        49
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Draw the circle c: x² + y² = 25. Show your scale on both axes."
+    },
+    {
+      "id": "maths-2015-ol-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        33,
+        49
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle c has equation x² + y² = 25.",
+      "questionText": "Verify, using algebra, that A(−4, 3) is on c."
+    },
+    {
+      "id": "maths-2015-ol-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        33,
+        49
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "Find the equation of the circle with centre (−4, 3) that passes through the point (3, 4)."
+    },
+    {
+      "id": "maths-2015-ol-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        34,
+        50
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "questionText": "The diagram shows a parallelogram, with one side produced. Use the data on the diagram to find the value of x, of y, and of z. Give a reason for your answer in each case."
+    },
+    {
+      "id": "maths-2015-ol-p2-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)",
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        34,
+        50
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The area of the parallelogram ABCD is 480 m².",
+      "questionText": "(i) Find the area of the triangle ABD. (ii) E is the midpoint of [CD]. Find the area of the triangle BCE."
+    },
+    {
+      "id": "maths-2015-ol-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows the triangles BCD and ABD, with some measurements given.",
+      "questionText": "Find |BC|, correct to two decimal places."
+    },
+    {
+      "id": "maths-2015-ol-p2-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows the triangles BCD and ABD, with some measurements given.",
+      "questionText": "Find the area of the triangle BCD, correct to two decimal places."
+    },
+    {
+      "id": "maths-2015-ol-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows the triangles BCD and ABD, with some measurements given.",
+      "questionText": "Find |AB|, correct to two decimal places."
+    },
+    {
+      "id": "maths-2015-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)",
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        36,
+        52
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "Mark ten or more points on each of the scatter graphs below to show an example of the type of correlation named under each graph: (i) Strong positive correlation; (ii) Strong negative correlation; (iii) No correlation."
+    },
+    {
+      "id": "maths-2015-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)",
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37,
+        52
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A few days before the Scottish Independence Referendum in September 2014 a YouGov poll estimated the support for the ‘No’ campaign to be 54%.",
+      "questionText": "(i) If YouGov sampled 1000 people, find the margin of error. Write your answer as a percentage, correct to one decimal place. (ii) Create a 95% confidence interval for the level of support for the ‘No’ campaign in the population."
+    },
+    {
+      "id": "maths-2015-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        4,
+        11,
+        15
+      ],
+      "schemePages": [
+        38,
+        39,
+        53
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram below shows the right-angled triangle ABC, which is used in the logo for a company called Deane Construction Limited (DCL). The triangle PQR is the image of ABC under an enlargement.",
+      "questionText": "Construct the centre of enlargement and label it O.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2015-ol-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)",
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        9,
+        10
+      ],
+      "schemePages": [
+        38,
+        39,
+        53
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram below shows the right-angled triangle ABC, which is used in the logo for a company called Deane Construction Limited (DCL). The triangle PQR is the image of ABC under an enlargement. Part (a)(i): Construct the centre of enlargement and label it O.",
+      "questionText": "(ii) Measure, in centimetres, |OB| and |OQ|. (iii) Use your measurements to find the scale factor of the enlargement, correct to one decimal place.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2015-ol-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        39,
+        53
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram below shows the right-angled triangle ABC, which is used in the logo for a company called Deane Construction Limited (DCL). The triangle PQR is the image of ABC under an enlargement. Part (a)(i): Construct the centre of enlargement and label it O. Part (a): (ii) Measure, in centimetres, |OB| and |OQ|. (iii) Use your measurements to find the scale factor of the enlargement, correct to one decimal place.",
+      "questionText": "The area of the triangle ABC is 7·5 cm². Use the scale factor to find the area of the image triangle PQR under the enlargement.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2015-ol-p2-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)",
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        39,
+        53
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram below shows the right-angled triangle ABC, which is used in the logo for a company called Deane Construction Limited (DCL). The triangle PQR is the image of ABC under an enlargement. Part (a)(i): Construct the centre of enlargement and label it O. Part (a): (ii) Measure, in centimetres, |OB| and |OQ|. (iii) Use your measurements to find the scale factor of the enlargement, correct to one decimal place.",
+      "questionText": "(i) Given that |AB| = 5 cm, use the scale factor to find |PQ|. (ii) Given that |QR| = 8·7 cm, use the scale factor to find |BC|. (iii) Hence, show that |∠ABC| = |∠PQR|.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2015-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        40,
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A company has a spherical storage tank. The diameter of the tank is 12 m.",
+      "questionText": "Write down the radius of the tank."
+    },
+    {
+      "id": "maths-2015-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        40,
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A company has a spherical storage tank. The diameter of the tank is 12 m.",
+      "questionText": "Find the volume of the tank, correct to the nearest m³."
+    },
+    {
+      "id": "maths-2015-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A company has a spherical storage tank. The diameter of the tank is 12 m. The company paints the outside curved surface of the spherical tank.",
+      "questionText": "Find the curved surface area of the tank, correct to one decimal place."
+    },
+    {
+      "id": "maths-2015-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        40,
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A company has a spherical storage tank. The diameter of the tank is 12 m. The company paints the outside curved surface of the spherical tank.",
+      "questionText": "The curved surface is painted with a special paint. One litre of paint will cover 3·5 m². Find how many litres of paint are used, correct to the nearest litre."
+    },
+    {
+      "id": "maths-2015-ol-p2-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        40,
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A company has a spherical storage tank. The diameter of the tank is 12 m. The company paints the outside curved surface of the spherical tank. The curved surface is painted with a special paint. One litre of paint will cover 3·5 m². Find how many litres of paint are used, correct to the nearest litre.",
+      "questionText": "The paint is sold in 25 litre tins. Each tin costs €180. Find the total cost of the paint."
+    },
+    {
+      "id": "maths-2015-ol-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        41,
+        55
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "At another site the company has a differently-shaped tank with the same volume. This tank has hemispherical ends and a cylindrical mid-section of length h m, as shown. The radius of each hemispherical end is 4·5 m.",
+      "questionText": "Find the volume of one hemispherical end, correct to the nearest m³."
+    },
+    {
+      "id": "maths-2015-ol-p2-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        41,
+        55
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A company has a spherical storage tank. The diameter of the tank is 12 m. At another site the company has a differently-shaped tank with the same volume. This tank has hemispherical ends and a cylindrical mid-section of length h m, as shown. The radius of each hemispherical end is 4·5 m.",
+      "questionText": "Find the length, h, of the cylindrical section, correct to one decimal place."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        42,
+        56
+      ],
+      "topicId": "maths-1-5",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded.",
+      "questionText": "Tick one box from the table below to indicate how you would categorise the type of data collected. Explain your choice. Options: Categorical Nominal; Categorical Ordinal; Numerical Discrete; Numerical Continuous."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 20,
+      "scale": "20C",
+      "permittedMarks": [
+        0,
+        10,
+        17,
+        20
+      ],
+      "schemePages": [
+        42,
+        56
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1. Table 1 (Girls). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Number of girls: 15, 48, 80, 112, 125, 81, 29, 10.",
+      "questionText": "Use the information in Table 1 to estimate the mean height of the girls, using mid-interval values."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        42,
+        56
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1. Table 1 (Girls). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Number of girls: 15, 48, 80, 112, 125, 81, 29, 10.",
+      "questionText": "What is the largest possible value for the range of the heights of the girls in this sample?"
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        42,
+        56
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1.",
+      "questionText": "The median height of the girls in the sample is 164·5 cm. Explain what this means in the context of the heights of the 500 girls."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        43,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1. Table 1 (Girls). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Number of girls: 15, 48, 80, 112, 125, 81, 29, 10. Table 2 (Girls, %). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Percentage of girls: _, _, _, 22·4, 25, _, _, _.",
+      "questionText": "Use the data in Table 1 to complete Table 2 by finding the percentage of girls in each of the height categories."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        43,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1. Table 1 (Girls). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Number of girls: 15, 48, 80, 112, 125, 81, 29, 10. Table 2 (Girls, %). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Percentage of girls: _, _, _, 22·4, 25, _, _, _. Part (c)(i): Use the data in Table 1 to complete Table 2 by finding the percentage of girls in each of the height categories.",
+      "questionText": "Use the data in Table 2 to draw a histogram showing the percentage of girls in each height category."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        43,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1. Table 1 (Girls). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Number of girls: 15, 48, 80, 112, 125, 81, 29, 10. Table 2 (Girls, %). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Percentage of girls: _, _, _, 22·4, 25, _, _, _. Part (c)(i): Use the data in Table 1 to complete Table 2 by finding the percentage of girls in each of the height categories. Part (c)(ii): Use the data in Table 2 to draw a histogram showing the percentage of girls in each height category.",
+      "questionText": "A histogram showing the percentage of boys in each height category is given above. John examines both histograms and comments that “There are roughly twice as many boys as girls in the 175 to 180 cm category”. Do the histograms support his claim? Explain your answer."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-c-iv",
+      "printedParts": [
+        "Q9(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        43,
+        44,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14,
+        15,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1. Table 1 (Girls). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Number of girls: 15, 48, 80, 112, 125, 81, 29, 10. Table 2 (Girls, %). Height (cm): 145–150, 150–155, 155–160, 160–165, 165–170, 170–175, 175–180, 180–185. Percentage of girls: _, _, _, 22·4, 25, _, _, _. Part (c)(i): Use the data in Table 1 to complete Table 2 by finding the percentage of girls in each of the height categories. Part (c)(ii): Use the data in Table 2 to draw a histogram showing the percentage of girls in each height category.",
+      "questionText": "Mary examines both histograms and comments that “I see that there are more tall girls than tall boys”. Do the two histograms support her claim? Explain your answer."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        44,
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        14,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1.",
+      "questionText": "The mean height of the boys in the sample is 166·7 cm and the standard deviation of their height is 8·9 cm. Assuming that boys’ heights are normally distributed, use the Empirical Rule to find an interval that will contain the heights of approximately 95% of all boys."
+    },
+    {
+      "id": "maths-2015-ol-p2-q9-d-ii",
+      "printedParts": [
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        44,
+        57
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        14,
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The heights of a random sample of 1000 students were collected and recorded. The sample of 1000 students was made up of 500 boys and 500 girls. The data from the 500 girls was used to create the information shown in Table 1.",
+      "questionText": "The standard deviation of the heights of the girls in the sample is 7·7 cm while the standard deviation of the heights of the boys is 8·9 cm. Interpret this difference in the context of the data."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine / six / three questions",
+      "classification": "all-questions-required",
+      "reason": "All tasks are retained."
+    },
+    {
+      "pages": [
+        3
+      ],
+      "wording": "select the three required boxes",
+      "classification": "counting-problem",
+      "reason": "The selection is the mathematical problem, not a choice of examination tasks."
+    },
+    {
+      "pages": [
+        14
+      ],
+      "wording": "Tick one box",
+      "classification": "single-response-classification",
+      "reason": "One data-classification answer, with explanation; not alternative questions."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "Every published scale unit from all nine questions is retained."
+    },
+    "3:210c89f7d812c086": {
+      "classification": "all-questions-required",
+      "reason": "Every published scale unit from all nine questions is retained."
+    },
+    "10:e4773e047fc35f09": {
+      "classification": "all-questions-required",
+      "reason": "Every published scale unit from all nine questions is retained."
+    }
+  }
+}

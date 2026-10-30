@@ -1,0 +1,1108 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2020,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "b37788585cff1a1768470f7572c02b8ff7fc9fd6627d9dc1e345917d21e51044",
+  "schemeSha256": "6626b366d885fd127e00d38737223dcda09da805980f8a126b0cf251e6da6365",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 1–23 of the combined Higher Level scheme (cover, notes, the Paper 1 scale table on page 5, the summary of mark allocations on page 6, the annotation palette on page 7, and every Paper 1 model solution and marking note), plus the Paper 2 title page 24. Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 45,
+    "9": 55
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "The 2020 Leaving Certificate examinations were cancelled and replaced by Calculated Grades, but the SEC published this paper and its marking scheme. The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 50 marks, Q8 45 marks, Q9 55 marks). Every question is retained.",
+    "36 independently marked units, matching the printed summary of allocations on scheme page 6. No two parts share a scale on this paper.",
+    "Paper 1 bands from the scale table on scheme page 5: 5C 0,3,4,5; 10C 0,4,8,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,7,11,15. The table prints no 5-mark D scale; the 5D parts (Q1(b), Q2(a), Q4(b), Q6(b)(ii)) print their ladder beside the scale, “Scale 5D (0, 2, 3, 4, 5)”.",
+    "This paper had no authored cards before this review; all 36 units are new. Marking points are lifted line by line from the scheme and labelled with the part of the scheme they come from. The scheme’s text layer encodes its equation font in Syriac and NKo code points; the repair map was extended from glyph ids (derive_glyphs.py run over the 2019 and 2020 Higher and Ordinary schemes), not by hand.",
+    "The question booklet is LC003ALP100EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2020-hl-p1-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "f(x) = x² + 5x + p where x ∈ ℝ, −3 ≤ p ≤ 8, and p ∈ ℤ.",
+      "questionText": "Find the value of p for which x + 3 is a factor of f(x)."
+    },
+    {
+      "id": "maths-2020-hl-p1-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "f(x) = x² + 5x + p where x ∈ ℝ, −3 ≤ p ≤ 8, and p ∈ ℤ.",
+      "questionText": "Find the value of p for which f(x) has roots which differ by 3."
+    },
+    {
+      "id": "maths-2020-hl-p1-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics",
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "stem": "f(x) = x² + 5x + p where x ∈ ℝ, −3 ≤ p ≤ 8, and p ∈ ℤ.",
+      "questionText": "Find the two values of p for which the graph of f(x) will not cross the x-axis."
+    },
+    {
+      "id": "maths-2020-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "questionText": "Find the range of values of x for which |2x + 5| − 1 ≤ 0, where x ∈ ℝ."
+    },
+    {
+      "id": "maths-2020-hl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "questionText": "Find the two complex numbers z₁ and z₂ that satisfy the following simultaneous equations, where i² = −1: iz₁ = −4 + 3i; 3z₁ − z₂ = 11 + 17i. Write your answers in the form a + bi where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2020-hl-p1-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The complex numbers 3 + 2i and 5 − i are the first two terms of a geometric sequence.",
+      "questionText": "Find r, the common ratio of the sequence. Write your answer in the form a + bi where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2020-hl-p1-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "The complex numbers 3 + 2i and 5 − i are the first two terms of a geometric sequence.",
+      "questionText": "Use de Moivre’s Theorem to find T₉, the ninth term of the sequence. Write your answer in the form a + bi, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2020-hl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "questionText": "f(x) = 6x − 5 and g(x) = (x + 5)/6. Investigate if f(g(x)) = g(f(x))."
+    },
+    {
+      "id": "maths-2020-hl-p1-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The real variables y and x are related by y = 5x².",
+      "questionText": "The equation y = 5x² can be rewritten in the form log₅ y = a + b log₅ x. Find the value of a and the value of b."
+    },
+    {
+      "id": "maths-2020-hl-p1-q3-b-ii",
+      "printedParts": [
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "The real variables y and x are related by y = 5x².",
+      "questionText": "Hence, or otherwise, find the real values of y for which log₅ y = 2 + log₅((126/25)x − 1)."
+    },
+    {
+      "id": "maths-2020-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k ∈ ℤ, and x ∈ ℝ.",
+      "questionText": "Given that f′(3) = −12, show that k = −9, where f′(3) is the derivative of f(x) at x = 3."
+    },
+    {
+      "id": "maths-2020-hl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k ∈ ℤ, and x ∈ ℝ.",
+      "questionText": "The function g(x) is the line that passes through the two turning points of f(x) = x³ − 9x² + 15x + 8, as shown on the previous page. Find the equation of g(x)."
+    },
+    {
+      "id": "maths-2020-hl-p1-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The diagram below shows two functions f(x) and g(x). The function f(x) is given by the formula f(x) = x³ + kx² + 15x + 8, where k ∈ ℤ, and x ∈ ℝ. The function g(x) is the line that passes through the two turning points of f(x) = x³ − 9x² + 15x + 8.",
+      "questionText": "Show that the graph of g(x) contains the point of inflection of f(x)."
+    },
+    {
+      "id": "maths-2020-hl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "questionText": "A couple agree to take out a €250 000 mortgage in order to purchase a new home. The loan is to be paid back monthly over 25 years with the repayments due at the end of each month. The bank charges an annual percentage rate (APR) which is equivalent to a monthly rate of 0·287%. Using the amortisation formula, or otherwise, find the couples’ monthly repayment on the mortgage. Give your answer in euro correct to the nearest cent."
+    },
+    {
+      "id": "maths-2020-hl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "Another couple agree to take out a mortgage of €350 000, at a rate of 0·3% per month, in order to purchase a new home. This loan is also to be paid back monthly over 25 years with the repayments due at the end of each month. The amount of each repayment is €1771. After exactly 11 years of repayments, the couple receive a financial windfall. They decide to repay the remaining balance on the mortgage. Write down a series (including the first two and last two terms) which shows the total of the present values of all the remaining monthly repayments due over the remaining 14 years of the mortgage (after the last monthly repayment at the end of year 11). Hence, find how much the couple will need to repay in order to clear their mortgage entirely. Give your answer correct to the nearest cent."
+    },
+    {
+      "id": "maths-2020-hl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "questionText": "Differentiate (3x − 5)(2x + 4) with respect to x from first principles."
+    },
+    {
+      "id": "maths-2020-hl-p1-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ],
+      "stem": "h(x) = ½ ln(2x + 3) + C, where C is a constant.",
+      "questionText": "Find h′(x), the derivative of h(x)."
+    },
+    {
+      "id": "maths-2020-hl-p1-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "h(x) = ½ ln(2x + 3) + C, where C is a constant.",
+      "questionText": "The diagram below shows part of the graph of the function h′(x). The shaded region in the diagram is between the graph and the x-axis, from x = 0 to x = A. This shaded region has an area of ln 3 square units. Find the value of A."
+    },
+    {
+      "id": "maths-2020-hl-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6.",
+      "questionText": "Complete the table below to list the next five triangular numbers."
+    },
+    {
+      "id": "maths-2020-hl-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2.",
+      "questionText": "Is 1275 a triangular number? Give a reason for your answer."
+    },
+    {
+      "id": "maths-2020-hl-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2. The (n + 1)th triangular number can be written as Tₙ₊₁ = Tₙ + (n + 1), where n ∈ ℕ.",
+      "questionText": "Write the expression n(n + 1)/2 + (n + 1) as a single fraction in its simplest form."
+    },
+    {
+      "id": "maths-2020-hl-p1-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-expressions-factorising"
+      ],
+      "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2. The (n + 1)th triangular number can be written as Tₙ₊₁ = Tₙ + (n + 1), where n ∈ ℕ.",
+      "questionText": "Prove that the sum of any two consecutive triangular numbers will always be a square number (a number in the form k², where k ∈ ℕ)."
+    },
+    {
+      "id": "maths-2020-hl-p1-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-quadratics"
+      ],
+      "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6. The nth triangular number can be found directly using the formula Tₙ = n(n + 1)/2. The (n + 1)th triangular number can be written as Tₙ₊₁ = Tₙ + (n + 1), where n ∈ ℕ.",
+      "questionText": "Two consecutive triangular numbers sum to 12 544. Find the smaller of these two numbers."
+    },
+    {
+      "id": "maths-2020-hl-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "A number of the form 1 + 2 + 3 + ⋯ + n is sometimes called a triangular number because it can be represented as an equilateral triangle. The diagram below shows the first three terms in the sequence of triangular numbers: T₁ = 1, T₂ = 1 + 2 = 3, T₃ = 1 + 2 + 3 = 6.",
+      "questionText": "Some numbers are both triangular and square, for example 36. Leonhard Euler (1778) discovered the following formula for these numbers: Nₖ = (((3 + 2√2)^k − (3 − 2√2)^k)/(4√2))², where Nₖ is the kth number that is both triangular and square. Use Euler’s formula to find N₃, the third number that is both triangular and square."
+    },
+    {
+      "id": "maths-2020-hl-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction",
+        "mathematics-higher-sequences-series"
+      ],
+      "questionText": "Prove using induction that, for all n ∈ ℕ, the sum of the first n square numbers can be found using the formula: 1² + 2² + 3² + 4² + ⋯ + n² = n(n + 1)(2n + 1)/6."
+    },
+    {
+      "id": "maths-2020-hl-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2.",
+      "questionText": "The point R(x, y) can be written as (a cos θ, b sin θ), where a, b ∈ ℝ. Find the value of a and the value of b."
+    },
+    {
+      "id": "maths-2020-hl-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2.",
+      "questionText": "Show that A(θ), the area of the rectangle, measured in square units, can be written as A(θ) = 50 sin 2θ."
+    },
+    {
+      "id": "maths-2020-hl-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2. A(θ), the area of the rectangle, measured in square units, can be written as A(θ) = 50 sin 2θ.",
+      "questionText": "Use calculus to show that the rectangle with maximum area is a square."
+    },
+    {
+      "id": "maths-2020-hl-p1-q8-a-iv",
+      "printedParts": [
+        "Q8(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "A rectangle is inscribed in a circle of radius 5 units and centre O(0, 0) as shown below. Let R(x, y), where x, y ∈ ℝ, be the vertex of the rectangle in the first quadrant as shown. Let θ be the angle between [OR] and the positive x-axis, where 0 ≤ θ ≤ π/2. A(θ), the area of the rectangle, measured in square units, can be written as A(θ) = 50 sin 2θ. Use calculus to show that the rectangle with maximum area is a square.",
+      "questionText": "Find this maximum area."
+    },
+    {
+      "id": "maths-2020-hl-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "A person who is 2 m tall is walking towards a streetlight of height 5 m at a speed of 1·5 m/s. Find the rate, in m/s, at which the length of the person’s shadow (x), cast by the streetlight, is changing."
+    },
+    {
+      "id": "maths-2020-hl-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t.",
+      "questionText": "Find the number of bacteria in the colony after 4·5 hours. Give your answer correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2020-hl-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t.",
+      "questionText": "Find the time, in hours, that it takes the colony to grow to 790 bacteria. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2020-hl-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t.",
+      "questionText": "Using the function N(t) = 450e^(0·065t), find the average number of bacteria in the colony during the period from t = 3 to t = 12. Give your answer correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2020-hl-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t.",
+      "questionText": "Find the rate at which N(t) = 450e^(0·065t) is changing when t = 12. Give your answer correct to one decimal place. Interpret this value in the context of the question."
+    },
+    {
+      "id": "maths-2020-hl-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t.",
+      "questionText": "After k hours, the rate of increase of N(t) is greater than 90 bacteria per hour. Find the least value of k, where k ∈ ℕ."
+    },
+    {
+      "id": "maths-2020-hl-p1-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "The number of bacteria in the early stages of a growing colony of bacteria can be approximated using the function: N(t) = 450e^(0·065t), where t is the time, measured in hours, since the colony started to grow, and N(t) is the number of bacteria in the colony at time t.",
+      "questionText": "The number of bacteria in the early stages of a different colony of bacteria can be approximated using the function: P(t) = 220e^(0·17t), where P(t) is the number of bacteria and t is measured in hours. Assume that both colonies start growing at the same time. Find the time, to the nearest hour, at which the number of bacteria in both colonies will be equal."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        9,
+        12
+      ],
+      "wording": "Hence, or otherwise / Using the amortisation formula, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "the sum of any two consecutive triangular numbers",
+      "classification": "mathematical-context",
+      "reason": "A universal statement to be proved for every pair; not a choice between prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:4bcb6b2e6058aa0d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "4:501fb75508add41d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "9:b5bbf431b047e9fa": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "12:5c6dffa7d541f1d5": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same printed task and share its scale; there is no printed pool of prompts."
+    },
+    "16:91eb21f6e5ad1f73": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "17:1474a26f532a322a": {
+      "classification": "mathematical-context",
+      "reason": "“Any two consecutive triangular numbers” is the universal claim to be proved, not a choice between prompts."
+    }
+  }
+}

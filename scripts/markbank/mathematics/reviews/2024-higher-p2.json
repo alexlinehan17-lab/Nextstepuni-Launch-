@@ -1,0 +1,1223 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2024,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003ALP200EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "e8c02b04f4d8e834c7d0acfae79764bb34782d5156c6cef02fca82a656c47ade",
+  "schemeSha256": "4f0b93a5830b420ab1773579f411f044d8a068791ae911864a5b01a45b1fdd97",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 29–56 of the combined Higher Level scheme (Paper 2 title page, the Paper 2 scale table on page 30, annotation palette, every Paper 2 model solution and marking note, and the blank closing pages). Each task boundary is the published scale, not a parser count.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    30,
+    31
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained.",
+    "40 independently marked units. Shared scales keep their parts together: Q1(a)(i)–(iii) 15D, Q1(b)–(c) 15C across two letters, Q6(c)(i)–(ii) 15D, Q8(c)(i)–(ii) 20D and Q10(c)(ii)–(iii) 10D.",
+    "Paper 2 bands from scheme page 30: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10C 0,4,6,10; 10D 0,3,5,7,10; 15C 0,6,8,15; 15D 0,4,6,8,15; 20D 0,8,11,13,20. Q7(a)(ii) prints “Scale (0, 4, 6, 10)” without a letter; its ladder is the 10C ladder.",
+    "Before this review the deck held 39 cards for this paper. The Q7(a) card claimed both (i) and (ii) at 5 marks and its rows mixed the (ii) model solution into (i); it is re-cited as Q7(a)(i) with credit notes from its own 5C scale, and Q7(a)(ii) (10C) is added. The Q1(b) card is re-cited as Q1(b), (c): both letters share one 15C scale, and its question crop showed only part (b) without the seven-student table, so the card now shows the lifted prompt for both letters with the original page. Q2(d) and Q10(c)(i) carried scheme page furniture (“Mathematics – Higher Level”) as a marking point; those rows are replaced with the printed answer and notes. All 39 existing IDs are kept; prompts are restored from the paper and topics corrected as metadata.",
+    "Q4(a) is a construction that permits measurement, so it carries the calibrated measuring ruler.",
+    "The question booklet is LC003ALP200EV.pdf; its indexed scheme LC003ALP000EV.pdf is shared with Paper 1. All page references are PDF positions."
+  ],
+  "cards": [
+    {
+      "id": "maths-2024-hl-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)",
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have been replaced with the letters a, b, c, and d. Stem 2: b, 2, 7; stem 3: a, 4, 4, 5, 8; stem 4: 0, 1, d, 5, 6, 9; stem 5: 2, 3, 7, 7, 8; stem 6: 1, 8, c. Key: 2|7 = 27 metres.",
+      "questionText": "(i) The mode of the data is 34 metres. Use this to write down the value of a. (ii) The range of the data is 49 metres. Use this to find the value of b and the value of c. (iii) The median of the data is 43·5 metres. Use this to find the value of d."
+    },
+    {
+      "id": "maths-2024-hl-p2-q1-b",
+      "printedParts": [
+        "Q1(b)",
+        "Q1(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-descriptive-statistics"
+      ],
+      "stem": "Seven of the 22 students took swimming lessons. They were re-tested after the lessons, to see how far they could now swim without stopping. The table and graph below show the results of the initial test and of the re-test for these students. The initial-test distances are 22, 34, 38, 45, 49, 57 and 61 m; the matching re-test distances are 25, 40, 65, 96, 142, 262 and 350 m.",
+      "questionText": "(b) How would you best describe how the results changed for these students, from the initial test to the re-test? (c) The swimming coach worked out r, the correlation coefficient between the distance in the initial test and the distance in the re-test, for these seven students. Find the value of r, correct to 4 decimal places."
+    },
+    {
+      "id": "maths-2024-hl-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in terms of x ∈ ℝ. The table gives the prizes None, 2, x − 10 and x with probabilities 30%, 40%, 28% and 2%. It costs €10 to play the game once. The game is fair – that is, the expected value of the winnings, taking the cost into account, is €0. Work out the value of x."
+    },
+    {
+      "id": "maths-2024-hl-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "A and B are mutually exclusive events. P(A) = 0·1 and P(B) = 0·4. Write down the value of each of the following: P(A ∩ B) and P(A ∪ B)."
+    },
+    {
+      "id": "maths-2024-hl-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "C and D are two other events, with universal set U. P(C) = 0·5 and P(D) = 0·7. Find the maximum value of P[(C ∪ D)′]. Note: (C ∪ D)′ is the complement of the set C ∪ D in the set U."
+    },
+    {
+      "id": "maths-2024-hl-p2-q2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "questionText": "E is the event that it will be raining tomorrow morning. F is the event that I will wear a coat going outside tomorrow morning. Explain why it would not be reasonable to assume that E and F are independent events."
+    },
+    {
+      "id": "maths-2024-hl-p2-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles",
+        "mathematics-higher-area-volume"
+      ],
+      "questionText": "ABCD is a parallelogram. |AB| = 10 cm, |BC| = 13 cm, and |∠ABC| = 110°. Find the area of ABCD, correct to the nearest cm²."
+    },
+    {
+      "id": "maths-2024-hl-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "questionText": "X is an angle, with 0° ≤ X ≤ 360°, and cos(2X) = √3/2. Find all the possible values of X."
+    },
+    {
+      "id": "maths-2024-hl-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "questionText": "KLM is a triangle where |MK| = 15√3 cm, |ML| = 45 cm, and |∠KLM| = 25°. θ is the angle ∠LKM. Work out the two possible values of θ, for 0° < θ < 180°. Give each answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2024-hl-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "Construct the centroid of the triangle PQR below. Show all your construction lines clearly. Where measurement is used, show all relevant measurements and calculations clearly.",
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2024-hl-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "questionText": "The lines AD, BE, and CF in the diagram below are parallel. E ∈ DF and B ∈ AC. |AB| = |BC|. Prove that |DE| = |EF|. (That is, prove that if three parallel lines cut off equal segments on some transversal line, then they will cut off equal segments on any other transversal.) Give a reason for each statement that you make in your proof, as appropriate."
+    },
+    {
+      "id": "maths-2024-hl-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The circle s has equation: x² + y² + 4x − 6y + 5 = 0",
+      "questionText": "Write down the centre and radius of the circle s."
+    },
+    {
+      "id": "maths-2024-hl-p2-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "The circle s has equation: x² + y² + 4x − 6y + 5 = 0",
+      "questionText": "The circle c has equation: (x − 2)² + (y + 1)² = 72. Show that the circles s and c touch internally."
+    },
+    {
+      "id": "maths-2024-hl-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "questionText": "Another circle has its centre on the vertical line through the point (9, 0). The points (7, 10) and (12, 8) are on this circle. Find the equation of this circle. Note that your answer may contain non-integer values."
+    },
+    {
+      "id": "maths-2024-hl-p2-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "[AB] is a line segment. The point C (6, 11) divides the line segment [AB] internally in the ratio 1 : 3. A is the point (1, 13). Find the co-ordinates of the point B."
+    },
+    {
+      "id": "maths-2024-hl-p2-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the perpendicular distance from the point (5, −2) to the line: y = (4/3)x − 11"
+    },
+    {
+      "id": "maths-2024-hl-p2-q6-c-i",
+      "printedParts": [
+        "Q6(c)(i)",
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "In the co-ordinate diagram below, 16 points are marked with a dot (●). These are all of the points of the form (m, n), where m, n ∈ ℕ and m, n ≤ 4. A pair of these points is picked at random.",
+      "questionText": "(i) How many different pairs of points can be picked from these 16 points? (ii) The two points that are picked are joined with a straight line. Find the probability that this line is horizontal."
+    },
+    {
+      "id": "maths-2024-hl-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48·2 years and a standard deviation of 10·6 years.",
+      "questionText": "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old."
+    },
+    {
+      "id": "maths-2024-hl-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-z-scores"
+      ],
+      "stem": "PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48·2 years and a standard deviation of 10·6 years.",
+      "questionText": "Exactly 10% of people who stayed in a PK Hotel in 2023 are at least A years old. Find the value of A, correct to the nearest whole number."
+    },
+    {
+      "id": "maths-2024-hl-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "PK Hotels is a hotel chain in Europe. During their most recent stay, 1/5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii).",
+      "questionText": "6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them used the pool."
+    },
+    {
+      "id": "maths-2024-hl-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability",
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "PK Hotels is a hotel chain in Europe. During their most recent stay, 1/5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii).",
+      "questionText": "n of the PK Hotel customers are picked at random, where n ∈ ℕ. The probability that none of them used the pool, correct to 4 decimal places, is 0·0047. Work out the value of n."
+    },
+    {
+      "id": "maths-2024-hl-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "PK Hotels is a hotel chain in Europe.",
+      "questionText": "PK Hotels are testing a new booking system. 45% of people who log on to the PK Hotels website are shown the old booking system; the other 55% are shown the new booking system. People are assigned the booking system (old or new) at random. One third of people who see the old booking system end up booking a room. Two fifths of people who see the new booking system end up booking a room. One person is selected at random from those who booked a room through the PK Hotels website. Find the probability that this person used the new booking system. Give your answer as a percentage, correct to the nearest percent."
+    },
+    {
+      "id": "maths-2024-hl-p2-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-statistics-inferential-statistics"
+      ],
+      "stem": "PK Hotels is a hotel chain in Europe.",
+      "questionText": "In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers. In 2024, PK Hotels carried out a survey of a random sample of 1000 of their customers to see if this percentage had changed. Of these, 765 rated PK Hotels the best hotel chain in Europe. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the percentage of their customers who rate PK Hotels the best chain in Europe. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion."
+    },
+    {
+      "id": "maths-2024-hl-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Tommy makes ornaments from metal and glass.",
+      "questionText": "He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answers in cm, correct to 1 decimal place where appropriate."
+    },
+    {
+      "id": "maths-2024-hl-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Tommy makes ornaments from metal and glass.",
+      "questionText": "Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm. This cylinder fits exactly inside a glass sphere. The top and bottom edges of the cylinder touch the sphere. Find the volume of the sphere, in cm³, correct to 1 decimal place. Use the Theorem of Pythagoras in your solution."
+    },
+    {
+      "id": "maths-2024-hl-p2-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)",
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        8,
+        11,
+        13,
+        20
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry",
+        "mathematics-higher-geometry-constructions-proofs"
+      ],
+      "stem": "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E.",
+      "questionText": "(i) The diagram is symmetrical about the line DC. State why |∠CBD| = 90°. (ii) Hence, or otherwise, prove that the triangles BCE and DBE are similar. Give a reason for each statement that you make, where appropriate."
+    },
+    {
+      "id": "maths-2024-hl-p2-q8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "stem": "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E.",
+      "questionText": "The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Use the similar triangles BCE and DBE to show that: r² = 20h − h²"
+    },
+    {
+      "id": "maths-2024-hl-p2-q8-c-iv",
+      "printedParts": [
+        "Q8(c)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        44,
+        45
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E. The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Part (c)(iii) shows that r² = 20h − h².",
+      "questionText": "Hence, write the volume of the top cone in terms of h and π, and find the value of h that gives the maximum volume for the top cone."
+    },
+    {
+      "id": "maths-2024-hl-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+      "questionText": "Write down the equation of the circle s."
+    },
+    {
+      "id": "maths-2024-hl-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+      "questionText": "Ameena is at the point (a, 8) on the stream (circle s), where a ∈ ℝ, a > 0. Work out the value of a. Give your answer in surd form."
+    },
+    {
+      "id": "maths-2024-hl-p2-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+      "questionText": "Petro is at the point P(10, 6). Work out the shortest distance from the point P to the stream (circle s). Give your answer correct to the nearest metre. Remember that each unit on the diagram represents 100 metres."
+    },
+    {
+      "id": "maths-2024-hl-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        46
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-circle"
+      ],
+      "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+      "questionText": "There is a straight path, l, that is not shown on the diagram. l is parallel to the y-axis, and is a tangent to the stream s in the first quadrant. Write down the equation of this path l. Remember that the radius of s is 12."
+    },
+    {
+      "id": "maths-2024-hl-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        47
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The line segment w represents a road, where w has the equation: x − 3y = 9 for 0 ≤ y ≤ 8.",
+      "questionText": "Find the co-ordinates of the point on the road w that is closest to the point P(10, 6). It might be useful to find the equation of the line through P that is perpendicular to w."
+    },
+    {
+      "id": "maths-2024-hl-p2-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        48
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-co-ordinate-geometry-of-the-line",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The line segment w represents a road, where w has the equation: x − 3y = 9 for 0 ≤ y ≤ 8.",
+      "questionText": "Fiadh is at the point F(9, 0) on the road w. She travels 1200 m along the road w away from the point F, in the first quadrant, and then stops. Work out the co-ordinates of the point at which she stops. Give each value correct to 1 decimal place. Remember that each unit on the diagram represents 100 metres."
+    },
+    {
+      "id": "maths-2024-hl-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-geometry"
+      ],
+      "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle.",
+      "questionText": "Show that |OB| = 120 cm."
+    },
+    {
+      "id": "maths-2024-hl-p2-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle.",
+      "questionText": "Hence, show that |∠BOT| = 41·4°, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-hl-p2-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        49
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume",
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle.",
+      "questionText": "Hence, work out the area of ABB′A′. Remember that ABB′A′ is the sector OBB′ with the sector OAA′ removed. Give your answer correct to the nearest cm²."
+    },
+    {
+      "id": "maths-2024-hl-p2-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-triangles"
+      ],
+      "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm.",
+      "questionText": "Moving the point O along the line NM changes the size of the wiper blade and the region that it cleans. In the diagram below, [DE] rotates about O, where O ∈ DE, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle PQRS. Here, |∠E′OE| = 105°. By setting |OE| = x, use the triangle OEE′ and the Cosine Rule to find the value of |OE|. Give your answer in cm, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-hl-p2-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        50
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Mattie is driving home. On the way, she passes five traffic lights. Each traffic light is either red (R), green (G), or orange (O) when she arrives at it. One day, she notes the pattern made by the colour of each traffic light when she arrives at it. For example, this pattern could be R R O G R.",
+      "questionText": "How many different patterns could the five traffic lights make?"
+    },
+    {
+      "id": "maths-2024-hl-p2-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)",
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        51
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-probability"
+      ],
+      "stem": "Mattie is driving home. On the way, she passes five traffic lights. Each traffic light is either red (R), green (G), or orange (O) when she arrives at it. One day, she notes the pattern made by the colour of each traffic light when she arrives at it. For example, this pattern could be R R O G R.",
+      "questionText": "(ii) How many different patterns could the five traffic lights make, if the first light is red and the fifth light is not red? (iii) How many different patterns could the five traffic lights make if no two consecutive lights are the same colour?"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        20
+      ],
+      "wording": "Hence, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative proof methods for the same marked task; no printed pool of prompts."
+    },
+    {
+      "pages": [
+        29
+      ],
+      "wording": "either red (R), green (G), or orange (O)",
+      "classification": "counting-context",
+      "reason": "The three colours are the outcomes being counted, not a choice of tasks."
+    }
+  ],
+  "selectionDecisions": {
+    "3:a55a152b75a8a56a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:589520ec9d125739": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:f9f368ae89952dba": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:c32399482b083846": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "20:bf5406d428ce2485": {
+      "classification": "method-choice",
+      "reason": "Alternative proof methods for the same marked task, with no printed pool of prompts."
+    },
+    "29:15567b9f449f38df": {
+      "classification": "counting-context",
+      "reason": "Each light shows one of three colours; these are the outcomes counted in required tasks, not a choice of prompts."
+    }
+  }
+}

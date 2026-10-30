@@ -1,0 +1,1530 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2013,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003BLP230EV.pdf",
+  "schemeFileid": "LC003BLP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "d817d19ad6ab18d03cf702a887428031e35b7250af8252917cf1485241c32406",
+  "schemeSha256": "7aa5be97a6ef2b1fe03a5b0bae65515e1be52c20dbf4fd8958ef51e772ae4060",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual inspection of all 20 original paper pages and scheme PDF pages 29–60. All 47 published marking units retained; 60 mechanically generated menu routes and both parallel-pair routes give 107 cards. Publication follows the current one-card-per-printed-choice policy; legacy routes and source checks are retained in choice-policy.json.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8A": 25,
+    "8B": 25,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    46,
+    47
+  ],
+  "sourceNotes": [
+    "Candidate total is 300: Q1–7 plus either Q8A or Q8B and both Q9–10. All offered tasks total 325 before finite route expansion.",
+    "Paper 2 has different scale ladders from Paper 1. The PDF 46 table governs these cards. Exactly seven units are starred: Q7(b)(i–iii), Q8B(a), Q10(a)(ii), Q10(b)(ii), Q10(c).",
+    "Q2(b), Q2(c)(i–iii), Q3(c) retain one published scale each; all entries remain required. Q3(a) expands the Cartesian product of the printed 4 starters × 3 mains × 5 desserts, all with the shared 15C tariff.",
+    "Q8B(c) explicitly asks for one pair in the supplied parallelogram. Both possible parallel pairs are retained. Q1(a)(ii) asks for open descriptions of events, not a closed supplied pool.",
+    "Q4(e) model answer duplicates age 55: the original plot has one. A separate source clarification gives the correct 12 ages while retaining the SEC print.",
+    "The original blood percentages and menu spelling Vegetation curry are preserved. No medical assertion is made. Mathematical glyph criteria in Q3(b), Q5(b)(i), Q8B(b), Q10(b)(i) are retained visually in the complete printed notes.",
+    "Q8A construction, central symmetry and angle measurement retain the complete original template and prior construction context. Q7(b)(iii) carries both given lengths and the enlargement factor."
+  ],
+  "cards": [
+    {
+      "id": "maths-2013-fl-p2-project-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        31,
+        48
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "questionText": "Give the probability of each event: certain to happen; will never happen; has a 50:50 chance of happening."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        31,
+        48
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "questionText": "A standard fair die is tossed. Give one example of each: an event with a 50:50 chance of happening; an event that will never happen; an event certain to happen."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        31,
+        48
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The Venn diagram represents 30 students studying German and French: 10 study German only, 5 study both, and 15 study French only.",
+      "questionText": "How many students study both German and French?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        31,
+        48
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The Venn diagram represents 30 students studying German and French: 10 study German only, 5 study both, and 15 study French only.",
+      "questionText": "A student is picked at random. Find the probability that the student studies both German and French."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q1-b-iii",
+      "printedParts": [
+        "Q1(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        31,
+        48
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The Venn diagram represents 30 students studying German and French: 10 study German only, 5 study both, and 15 study French only.",
+      "questionText": "A student is picked at random. Find the probability that the student studies French but not German."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        32,
+        49
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The paper’s blood-group table gives percentages O+: 8, O−: 47, A+: 5, A−: 26, B+: 2, B−: 9, AB+: 1, AB−: 2. The + and − signs indicate rhesus positive and negative.",
+      "questionText": "Find the percentage of the population in blood group O."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        32,
+        49
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The paper’s blood-group table gives percentages O+: 8, O−: 47, A+: 5, A−: 26, B+: 2, B−: 9, AB+: 1, AB−: 2. The + and − signs indicate rhesus positive and negative.",
+      "questionText": "Find the percentage of the population with rhesus positive blood."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        32,
+        49
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The paper’s blood-group table gives percentages O+: 8, O−: 47, A+: 5, A−: 26, B+: 2, B−: 9, AB+: 1, AB−: 2. The + and − signs indicate rhesus positive and negative.",
+      "questionText": "A person is picked at random. Find all five probabilities: is in blood group A+; is in AB; is in A or B; has rhesus negative blood; is not in O."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q2-c",
+      "printedParts": [
+        "Q2(c)(i)",
+        "Q2(c)(ii)",
+        "Q2(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        33,
+        49
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The paper’s blood-group table gives percentages O+: 8, O−: 47, A+: 5, A−: 26, B+: 2, B−: 9, AB+: 1, AB−: 2. The + and − signs indicate rhesus positive and negative.",
+      "questionText": "Over a period, 8000 people donate blood. How many would you expect to donate (i) type AB blood, (ii) rhesus negative blood, and (iii) rhesus positive blood?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q3-a-meal-01",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        13,
+        15
+      ],
+      "schemePages": [
+        34,
+        50
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Sarah selects a starter, a main course and a dessert. Starters: Melon, Soup, Goats cheese salad, Smoked salmon. Main courses: Roast beef, Fish of the day, Vegetation curry (as printed). Desserts: Fruit salad, Chocolate brownie, Apple crumble, Pear flan, Ice cream.",
+      "questionText": "Write one three-course lunch that Sarah could select.",
+      "selectionChoice": {
+        "groupId": "q3-a-menu",
+        "pool": [
+          "Melon / Roast beef / Fruit salad",
+          "Melon / Roast beef / Chocolate brownie",
+          "Melon / Roast beef / Apple crumble",
+          "Melon / Roast beef / Pear flan",
+          "Melon / Roast beef / Ice cream",
+          "Melon / Fish of the day / Fruit salad",
+          "Melon / Fish of the day / Chocolate brownie",
+          "Melon / Fish of the day / Apple crumble",
+          "Melon / Fish of the day / Pear flan",
+          "Melon / Fish of the day / Ice cream",
+          "Melon / Vegetation curry / Fruit salad",
+          "Melon / Vegetation curry / Chocolate brownie",
+          "Melon / Vegetation curry / Apple crumble",
+          "Melon / Vegetation curry / Pear flan",
+          "Melon / Vegetation curry / Ice cream",
+          "Soup / Roast beef / Fruit salad",
+          "Soup / Roast beef / Chocolate brownie",
+          "Soup / Roast beef / Apple crumble",
+          "Soup / Roast beef / Pear flan",
+          "Soup / Roast beef / Ice cream",
+          "Soup / Fish of the day / Fruit salad",
+          "Soup / Fish of the day / Chocolate brownie",
+          "Soup / Fish of the day / Apple crumble",
+          "Soup / Fish of the day / Pear flan",
+          "Soup / Fish of the day / Ice cream",
+          "Soup / Vegetation curry / Fruit salad",
+          "Soup / Vegetation curry / Chocolate brownie",
+          "Soup / Vegetation curry / Apple crumble",
+          "Soup / Vegetation curry / Pear flan",
+          "Soup / Vegetation curry / Ice cream",
+          "Goats cheese salad / Roast beef / Fruit salad",
+          "Goats cheese salad / Roast beef / Chocolate brownie",
+          "Goats cheese salad / Roast beef / Apple crumble",
+          "Goats cheese salad / Roast beef / Pear flan",
+          "Goats cheese salad / Roast beef / Ice cream",
+          "Goats cheese salad / Fish of the day / Fruit salad",
+          "Goats cheese salad / Fish of the day / Chocolate brownie",
+          "Goats cheese salad / Fish of the day / Apple crumble",
+          "Goats cheese salad / Fish of the day / Pear flan",
+          "Goats cheese salad / Fish of the day / Ice cream",
+          "Goats cheese salad / Vegetation curry / Fruit salad",
+          "Goats cheese salad / Vegetation curry / Chocolate brownie",
+          "Goats cheese salad / Vegetation curry / Apple crumble",
+          "Goats cheese salad / Vegetation curry / Pear flan",
+          "Goats cheese salad / Vegetation curry / Ice cream",
+          "Smoked salmon / Roast beef / Fruit salad",
+          "Smoked salmon / Roast beef / Chocolate brownie",
+          "Smoked salmon / Roast beef / Apple crumble",
+          "Smoked salmon / Roast beef / Pear flan",
+          "Smoked salmon / Roast beef / Ice cream",
+          "Smoked salmon / Fish of the day / Fruit salad",
+          "Smoked salmon / Fish of the day / Chocolate brownie",
+          "Smoked salmon / Fish of the day / Apple crumble",
+          "Smoked salmon / Fish of the day / Pear flan",
+          "Smoked salmon / Fish of the day / Ice cream",
+          "Smoked salmon / Vegetation curry / Fruit salad",
+          "Smoked salmon / Vegetation curry / Chocolate brownie",
+          "Smoked salmon / Vegetation curry / Apple crumble",
+          "Smoked salmon / Vegetation curry / Pear flan",
+          "Smoked salmon / Vegetation curry / Ice cream"
+        ],
+        "choose": 1,
+        "sourcePage": 6,
+        "sourceDirective": "Write one three-course lunch that Sarah could select.",
+        "instruction": "Choose one starter, one main course and one dessert from the complete printed menu. The scheme’s lunch is an example; any valid selection earns the same marks."
+      }
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        34,
+        50
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Sarah selects a starter, a main course and a dessert. Starters: Melon, Soup, Goats cheese salad, Smoked salmon. Main courses: Roast beef, Fish of the day, Vegetation curry (as printed). Desserts: Fruit salad, Chocolate brownie, Apple crumble, Pear flan, Ice cream.",
+      "questionText": "How many possible different selections can Sarah make?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        34,
+        50
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Sarah selects a starter, a main course and a dessert. Starters: Melon, Soup, Goats cheese salad, Smoked salmon. Main courses: Roast beef, Fish of the day, Vegetation curry (as printed). Desserts: Fruit salad, Chocolate brownie, Apple crumble, Pear flan, Ice cream.",
+      "questionText": "Assuming each selection is equally likely, find all three probabilities: smoked salmon as starter; smoked salmon followed by roast beef; smoked salmon followed by roast beef followed by fruit salad or ice cream."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The stem-and-leaf plot records patient ages over two hours. Rows: 0 | 6,8,8,9; 1 | 0,4,5,6,8; 2 | 4,4,7; 3 | 1,2,6,6,6,9; 4 | 3,6; 5 | 0,0,5,8; 6 | 2,2,7,9; 7 | 1,4,5,5,6,8; 8 | 2,3,7. Key: 4 | 3 = 43.",
+      "questionText": "How many patients visited the accident department during the two-hour period?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The stem-and-leaf plot records patient ages over two hours. Rows: 0 | 6,8,8,9; 1 | 0,4,5,6,8; 2 | 4,4,7; 3 | 1,2,6,6,6,9; 4 | 3,6; 5 | 0,0,5,8; 6 | 2,2,7,9; 7 | 1,4,5,5,6,8; 8 | 2,3,7. Key: 4 | 3 = 43.",
+      "questionText": "What was the age of the oldest patient?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The stem-and-leaf plot records patient ages over two hours. Rows: 0 | 6,8,8,9; 1 | 0,4,5,6,8; 2 | 4,4,7; 3 | 1,2,6,6,6,9; 4 | 3,6; 5 | 0,0,5,8; 6 | 2,2,7,9; 7 | 1,4,5,5,6,8; 8 | 2,3,7. Key: 4 | 3 = 43.",
+      "questionText": "What was the modal age?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The stem-and-leaf plot records patient ages over two hours. Rows: 0 | 6,8,8,9; 1 | 0,4,5,6,8; 2 | 4,4,7; 3 | 1,2,6,6,6,9; 4 | 3,6; 5 | 0,0,5,8; 6 | 2,2,7,9; 7 | 1,4,5,5,6,8; 8 | 2,3,7. Key: 4 | 3 = 43.",
+      "questionText": "Find the median age."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q4-e",
+      "printedParts": [
+        "Q4(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        35,
+        51
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The stem-and-leaf plot records patient ages over two hours. Rows: 0 | 6,8,8,9; 1 | 0,4,5,6,8; 2 | 4,4,7; 3 | 1,2,6,6,6,9; 4 | 3,6; 5 | 0,0,5,8; 6 | 2,2,7,9; 7 | 1,4,5,5,6,8; 8 | 2,3,7. Key: 4 | 3 = 43.",
+      "questionText": "List the ages of all patients aged between 30 and 60."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        36,
+        52
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The original coordinate grid shows triangle ABC, with A = (5, 4). Read B and C from the diagram.",
+      "questionText": "Write down the coordinates of B and C."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36,
+        52
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The original coordinate grid shows triangle ABC, with A = (5, 4). B is at (−3, 6) and C is at (1, −2) on the supplied diagram.",
+      "questionText": "On the diagram mark M, the midpoint of [AB]."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36,
+        52
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The original coordinate grid shows triangle ABC, with A = (5, 4). B is at (−3, 6) and C is at (1, −2) on the supplied diagram.",
+      "questionText": "Use a formula to find the coordinates of M, the midpoint of [AB]."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        36,
+        52
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The original coordinate grid shows triangle ABC, with A = (5, 4). B is at (−3, 6) and C is at (1, −2) on the supplied diagram.",
+      "questionText": "Use a formula to find the length of [BC], the longest side of the triangle."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        37,
+        53
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Line l₁ passes through P(1, 6) and Q(4, 2). Line l₂ has equation 3x − 4y − 4 = 0.",
+      "questionText": "Plot P and Q on the supplied grid and show line l₁."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37,
+        53
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Line l₁ passes through P(1, 6) and Q(4, 2). Line l₂ has equation 3x − 4y − 4 = 0.",
+      "questionText": "Find the slope of line l₁."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        37,
+        53
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Line l₁ passes through P(1, 6) and Q(4, 2). Line l₂ has equation 3x − 4y − 4 = 0.",
+      "questionText": "State whether l₁ and l₂ are perpendicular. Give a reason."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        9,
+        10
+      ],
+      "schemePages": [
+        38,
+        54
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The original diagram shows C and right-angled triangle XYZ. X′Y′Z′ is its image under an enlargement centred at C with scale factor 2·5.",
+      "questionText": "Construct X′Y′Z′ on the supplied diagram."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        39,
+        54
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The original diagram shows C and right-angled triangle XYZ. X′Y′Z′ is its image under an enlargement centred at C with scale factor 2·5.",
+      "questionText": "Given |XY| = 2 cm, find |X′Y′|.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        39,
+        54
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The original diagram shows C and right-angled triangle XYZ. X′Y′Z′ is its image under an enlargement centred at C with scale factor 2·5.",
+      "questionText": "Given |Z′Y′| = 8 cm, find |ZY|. Show your calculations.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        39,
+        54
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The original diagram shows C and right-angled triangle XYZ. X′Y′Z′ is its image under an enlargement centred at C with scale factor 2·5. |XY| = 2 cm and |Z′Y′| = 8 cm; the right angle is at Y.",
+      "questionText": "Find the area of triangle XYZ.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8a-a",
+      "printedParts": [
+        "Q8A(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        9,
+        10
+      ],
+      "schemePages": [
+        40,
+        55
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "questionText": "Construct triangle PQR with |PQ| = 7 cm, |QR| = 5 cm and ∠PQR = 80°. P is marked on the supplied line."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8a-b",
+      "printedParts": [
+        "Q8A(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        9,
+        10
+      ],
+      "schemePages": [
+        40,
+        55
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Construct triangle PQR with |PQ| = 7 cm, |QR| = 5 cm and ∠PQR = 80°. P is marked on the supplied line.",
+      "questionText": "On your diagram from part (a), construct the image of triangle PQR under central symmetry in P."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8a-c",
+      "printedParts": [
+        "Q8A(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        40,
+        55
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Construct triangle PQR with |PQ| = 7 cm, |QR| = 5 cm and ∠PQR = 80°. P is marked on the supplied line.",
+      "questionText": "Use your protractor to measure ∠RPQ."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8b-a",
+      "printedParts": [
+        "Q8B(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41,
+        56
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "ABCD is a parallelogram. Its diagonals intersect at O. |AB| = 9 cm, |BC| = 6 cm and ∠DAB = 60°. The original diagram is supplied.",
+      "questionText": "Find |DC|.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8b-b",
+      "printedParts": [
+        "Q8B(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        41,
+        56
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "ABCD is a parallelogram. Its diagonals intersect at O. |AB| = 9 cm, |BC| = 6 cm and ∠DAB = 60°. The original diagram is supplied.",
+      "questionText": "Find ∠ABC."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8b-c-ab-dc",
+      "printedParts": [
+        "Q8B(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41,
+        56
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "ABCD is a parallelogram. Its diagonals intersect at O. |AB| = 9 cm, |BC| = 6 cm and ∠DAB = 60°. The original diagram is supplied.",
+      "questionText": "Name one pair of parallel lines in the diagram.",
+      "selectionChoice": {
+        "groupId": "q8b-c-parallel-pair",
+        "pool": [
+          "AB and DC",
+          "AD and BC"
+        ],
+        "choose": 1,
+        "sourcePage": 13,
+        "sourceDirective": "Name one pair of parallel lines",
+        "instruction": "Name either parallel pair in the diagram. The same marking scale applies to both choices."
+      }
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8b-d",
+      "printedParts": [
+        "Q8B(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        41,
+        56
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "ABCD is a parallelogram. Its diagonals intersect at O. |AB| = 9 cm, |BC| = 6 cm and ∠DAB = 60°. The original diagram is supplied.",
+      "questionText": "Is the statement |DO| = |OB| and |AO| = |OC| true or false? Give a reason."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q8b-e",
+      "printedParts": [
+        "Q8B(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        41,
+        56
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "ABCD is a parallelogram. Its diagonals intersect at O. |AB| = 9 cm, |BC| = 6 cm and ∠DAB = 60°. The original diagram is supplied.",
+      "questionText": "Construct the image of ABCD under axial symmetry in line AB on the supplied diagram."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        42,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Michelle and Jerry visit a shop daily. Monday to Sunday, Michelle spends €16, €12, €20, €5, €24, €8, €27. Jerry spends €10, €18, €25, €19, €26 on Monday to Friday; Saturday and Sunday are blank in the original table.",
+      "questionText": "On which day did Michelle spend the most?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        42,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Michelle and Jerry visit a shop daily. Monday to Sunday, Michelle spends €16, €12, €20, €5, €24, €8, €27. Jerry spends €10, €18, €25, €19, €26 on Monday to Friday; Saturday and Sunday are blank in the original table.",
+      "questionText": "Find the difference between the most and least amount Michelle spent in a day."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        13,
+        15
+      ],
+      "schemePages": [
+        42,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Michelle and Jerry visit a shop daily. Monday to Sunday, Michelle spends €16, €12, €20, €5, €24, €8, €27. Jerry spends €10, €18, €25, €19, €26 on Monday to Friday; Saturday and Sunday are blank in the original table.",
+      "questionText": "Draw a bar chart to show the amount Michelle spent each day."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        9,
+        10
+      ],
+      "schemePages": [
+        43,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Michelle and Jerry visit a shop daily. Monday to Sunday, Michelle spends €16, €12, €20, €5, €24, €8, €27. Jerry spends €10, €18, €25, €19, €26 on Monday to Friday; Saturday and Sunday are blank in the original table.",
+      "questionText": "Calculate the mean amount per day spent by Michelle during that week."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        9,
+        10
+      ],
+      "schemePages": [
+        43,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Michelle and Jerry visit a shop daily. Monday to Sunday, Michelle spends €16, €12, €20, €5, €24, €8, €27. Jerry spends €10, €18, €25, €19, €26 on Monday to Friday; Saturday and Sunday are blank in the original table.",
+      "questionText": "Jerry spent €140 during the week and equal amounts on Saturday and Sunday. How much did he spend on Saturday?"
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q9-f",
+      "printedParts": [
+        "Q9(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        43,
+        57
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Michelle and Jerry visit a shop daily. Monday to Sunday, Michelle spends €16, €12, €20, €5, €24, €8, €27. Jerry spends €10, €18, €25, €19, €26 on Monday to Friday; Saturday and Sunday are blank in the original table.",
+      "questionText": "Jerry spent €140 during the week. On average he spent €4 per day more than Michelle. Justify this statement."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        7,
+        15
+      ],
+      "schemePages": [
+        44,
+        58
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "Tom stands 40 m from the base of the basket of a hot-air balloon. The angle of elevation to its top is 35°. Its height is h.",
+      "questionText": "Find tan 35°."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        44,
+        58
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "Tom stands 40 m from the base of the basket of a hot-air balloon. The angle of elevation to its top is 35°. Its height is h.",
+      "questionText": "Find h, the height of the balloon.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        44,
+        58
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "The balloon rises vertically until its top is 70 m above the ground. Tom moves to a position 50 m horizontally from the point vertically under the basket. The diagram labels the distance from Tom to the top as d.",
+      "questionText": "Find the new angle of elevation to the top of the balloon."
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        45,
+        58
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The balloon rises vertically until its top is 70 m above the ground. Tom moves to a position 50 m horizontally from the point vertically under the basket. The diagram labels the distance from Tom to the top as d.",
+      "questionText": "Use the Theorem of Pythagoras to find d, the distance from Tom to the top of the balloon.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-fl-p2-project-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        45,
+        58
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "questionText": "Tom estimates that the volume of air in the balloon equals the volume of a sphere of radius 11 m. Find his estimate.",
+      "fullCreditMinusOne": true
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        12,
+        13
+      ],
+      "wording": "either Question 8A or Question 8B",
+      "classification": "finite-question-alternatives",
+      "reason": "Both complete alternatives retained at all their published scales."
+    },
+    {
+      "pages": [
+        6
+      ],
+      "wording": "Write one three-course lunch that Sarah could select.",
+      "classification": "finite-cartesian-product",
+      "reason": "4 × 3 × 5 = 60 distinct meals generated with itertools.product; each route retains 15C."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "Name one pair of parallel lines",
+      "classification": "finite-choose-one-of-two",
+      "reason": "Both opposite-side parallel pairs in the supplied diagram retained."
+    },
+    {
+      "pages": [
+        3
+      ],
+      "wording": "give one example of each",
+      "classification": "open-example-all-required",
+      "reason": "All three event types required; no closed list of event descriptions supplied."
+    },
+    {
+      "pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "wording": "A or B; fruit salad or ice cream; each; List the ages",
+      "classification": "all-required-or-event-union",
+      "reason": "Probability unions and required entries are mathematical tasks, not optional answer selections."
+    }
+  ],
+  "selectionDecisions": {
+    "2:2c00edb577d7eed1": {
+      "classification": "finite-question-alternatives",
+      "reason": "Both Q8 alternatives retained."
+    },
+    "2:c1c4af0a9a8cfc05": {
+      "classification": "finite-question-alternatives",
+      "reason": "Both Q8 alternatives retained."
+    },
+    "3:6c3e279711b9b3b1": {
+      "classification": "all-required",
+      "reason": "All specified questions and data entries retained."
+    },
+    "4:0a7a7ced90e4d7a0": {
+      "classification": "finite-question-alternatives",
+      "reason": "Both Q8 alternatives retained."
+    },
+    "12:0f9974fbca0e8d29": {
+      "classification": "finite-question-alternatives",
+      "reason": "Both Q8 alternatives retained."
+    }
+  }
+}

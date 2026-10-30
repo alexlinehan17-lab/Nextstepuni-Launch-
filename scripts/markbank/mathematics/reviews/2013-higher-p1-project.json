@@ -1,0 +1,1082 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2013,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP130EV.pdf",
+  "schemeFileid": "LC003ALP030EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "99f456958b9b733612d9f62ff336f5e3871d18bfaa22770f825a2c8f2bc43088",
+  "schemeSha256": "2f5b71e54351b0169be01c61f2a5c8cd37d80d99252dafbbe13d9b779ac6cd93",
+  "reviewedAt": "2026-10-29",
+  "reviewMethod": "Independent visual reading of all 20 original Project Maths paper pages and scheme PDF pages 1–38, including every model, detailed credit note and scale table. Parallel legacy edition remains separate.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 50,
+    "9": 50
+  },
+  "fullCreditMinusOne": false,
+  "generalNotesPages": [
+    26,
+    27
+  ],
+  "sourceNotes": [
+    "Only starred scales allow Full Credit minus one; the default is false, with explicit task overrides.",
+    "Q5(b) permits an explanation of any one of four rows. All four graphs/derivative options remain in the card; the choice is an example within one task.",
+    "Printed source issues: Q6(d) model cross-reference; Q8 missing distance offset after t=10; Q9(e) first model mistypes 4234 instead of 4134."
+  ],
+  "cards": [
+    {
+      "id": "maths-2013-hl-p1-project-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        7,
+        28
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "z = 4/(1 + √3i) is a complex number, where i² = −1.",
+      "questionText": "Verify that z can be written as 1 − √3i."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        7,
+        28
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "z = 4/(1 + √3i) is a complex number, where i² = −1.",
+      "questionText": "Plot z on an Argand diagram and write z in polar form."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        8,
+        28
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ],
+      "stem": "z = 4/(1 + √3i) is a complex number, where i² = −1.",
+      "questionText": "Use De Moivre’s theorem to show that z¹⁰ = −2⁹(1 − √3i)."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9,
+        29
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-inequalities"
+      ],
+      "questionText": "Find the set of all real values of x for which 2x² + x − 15 ≥ 0."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        9,
+        29
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "questionText": "Solve the simultaneous equations: x + y + z = 16; (5/2)x + y + 10z = 40; 2x + (1/2)y + 4z = 21."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        7,
+        15
+      ],
+      "schemePages": [
+        10,
+        29
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Scientists can estimate the age of certain ancient items by measuring the proportion of carbon–14, relative to the total carbon content in the item. The formula used is Q = e^(−0·693t/5730), where Q is the proportion of carbon–14 remaining and t is the age, in years, of the item.",
+      "questionText": "An item is 2000 years old. Use the formula to find the proportion of carbon–14 in the item."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10,
+        29
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ],
+      "stem": "Scientists can estimate the age of certain ancient items by measuring the proportion of carbon–14, relative to the total carbon content in the item. The formula used is Q = e^(−0·693t/5730), where Q is the proportion of carbon–14 remaining and t is the age, in years, of the item.",
+      "questionText": "The proportion of carbon–14 in an item found at Lough Boora, County Offaly, was 0·3402. Estimate, correct to two significant figures, the age of the item.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        11,
+        30
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "Niamh has saved to buy a car. She saved an equal amount at the beginning of each month in an account that earned an annual equivalent rate (AER) of 4%.",
+      "questionText": "Show that the rate of interest, compounded monthly, which is equivalent to an AER of 4% is 0·327%, correct to 3 decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        11,
+        12,
+        30
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths",
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Niamh has saved to buy a car. She saved an equal amount at the beginning of each month in an account that earned an annual equivalent rate (AER) of 4%. Part (a)(i): the equivalent monthly interest rate is 0·327%, correct to 3 decimal places.",
+      "questionText": "Niamh has €15 000 in the account at the end of 36 months. How much has she saved each month, correct to the nearest euro?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13,
+        30
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "questionText": "Conall borrowed to buy a car. He borrowed €15 000 at a monthly interest rate of 0·866%. He made 36 equal monthly payments to repay the entire loan. How much, to the nearest euro, was each of his monthly payments?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        14,
+        31
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Each diagram shows part of the graph of a function: f, g, h and k. Each function is either quadratic or cubic or trigonometric or exponential (not necessarily in that order). Diagrams A–D show their first derivatives, and I–IV their second derivatives, not necessarily in the same order. Refer to all twelve original graphs.",
+      "questionText": "Complete the table by matching the function to its first derivative and its second derivative. Rows: Quadratic, Cubic, Trigonometric, Exponential. Columns: Function, First derivative, Second derivative."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        14,
+        31
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "Each diagram shows part of the graph of a function: f, g, h and k. Each function is either quadratic or cubic or trigonometric or exponential (not necessarily in that order). Diagrams A–D show their first derivatives, and I–IV their second derivatives, not necessarily in the same order. Refer to all twelve original graphs. Part (a): match each of the four function types to its function, first derivative and second derivative.",
+      "questionText": "For one row in the table, explain your choice of first derivative and second derivative."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        15,
+        32
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-trigonometry-functions-identities"
+      ],
+      "stem": "The diagram shows the graph of the function y = sin x in the domain 0 ≤ x ≤ π, x ∈ ℝ. The table lists x = 0, π/6, π/3, π/2, 2π/3, 5π/6, π, with y values left blank.",
+      "questionText": "Complete the table below, correct to three decimal places.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15,
+        32
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram shows the graph of the function y = sin x in the domain 0 ≤ x ≤ π, x ∈ ℝ. The table lists x = 0, π/6, π/3, π/2, 2π/3, 5π/6, π, with y values left blank.",
+      "questionText": "Use the trapezoidal rule to find the approximate area of the region enclosed between the curve and the x-axis in the given domain."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        15,
+        32
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ],
+      "stem": "The diagram shows the graph of the function y = sin x in the domain 0 ≤ x ≤ π, x ∈ ℝ. The table lists x = 0, π/6, π/3, π/2, 2π/3, 5π/6, π, with y values left blank.",
+      "questionText": "Use integration to find the actual area of the region shown above."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q6-d",
+      "printedParts": [
+        "Q6(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15,
+        32
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-area-volume"
+      ],
+      "stem": "The diagram shows the graph of the function y = sin x in the domain 0 ≤ x ≤ π, x ∈ ℝ. The table lists x = 0, π/6, π/3, π/2, 2π/3, 5π/6, π, with y values left blank. Part (b): use the trapezoidal rule to approximate the area. Part (c): use integration to find the actual area.",
+      "questionText": "Find the percentage error in your answer to (b) above."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        16,
+        33
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ],
+      "stem": "A stadium can hold 25 000 people. People attending a regular event at the stadium must purchase a ticket in advance. When the ticket price is €20, the expected attendance at an event is 12 000 people. The results of a survey carried out by the owners suggest that for every €1 reduction, from €20, in the ticket price, the expected attendance would increase by 1000 people.",
+      "questionText": "If the ticket price was €18, how many people would be expected to attend?"
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        33
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A stadium can hold 25 000 people. People attending a regular event at the stadium must purchase a ticket in advance. When the ticket price is €20, the expected attendance at an event is 12 000 people. The results of a survey carried out by the owners suggest that for every €1 reduction, from €20, in the ticket price, the expected attendance would increase by 1000 people.",
+      "questionText": "Let x be the ticket price, where x ≤ 20. Write down, in terms of x, the expected attendance at such an event."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        33
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A stadium can hold 25 000 people. People attending a regular event at the stadium must purchase a ticket in advance. When the ticket price is €20, the expected attendance at an event is 12 000 people. The results of a survey carried out by the owners suggest that for every €1 reduction, from €20, in the ticket price, the expected attendance would increase by 1000 people. Let x be the ticket price, where x ≤ 20.",
+      "questionText": "Write down a function f that gives the expected income from the sale of tickets for such an event."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        16,
+        33
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "A stadium can hold 25 000 people. People attending a regular event at the stadium must purchase a ticket in advance. When the ticket price is €20, the expected attendance at an event is 12 000 people. The results of a survey carried out by the owners suggest that for every €1 reduction, from €20, in the ticket price, the expected attendance would increase by 1000 people.",
+      "questionText": "Find the price at which tickets should be sold to give the maximum expected income."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16,
+        33
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A stadium can hold 25 000 people. People attending a regular event at the stadium must purchase a ticket in advance. When the ticket price is €20, the expected attendance at an event is 12 000 people. The results of a survey carried out by the owners suggest that for every €1 reduction, from €20, in the ticket price, the expected attendance would increase by 1000 people. Part (d): find the ticket price that maximises expected income.",
+      "questionText": "Find this maximum expected income."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q7-f",
+      "printedParts": [
+        "Q7(f)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        17,
+        33
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "A stadium can hold 25 000 people. People attending a regular event at the stadium must purchase a ticket in advance. When the ticket price is €20, the expected attendance at an event is 12 000 people. The results of a survey carried out by the owners suggest that for every €1 reduction, from €20, in the ticket price, the expected attendance would increase by 1000 people.",
+      "questionText": "Suppose that tickets are instead priced at a value that is expected to give a full attendance at the stadium. Find the difference between the income from the sale of tickets at this price and the maximum income calculated at (e) above."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q7-g",
+      "printedParts": [
+        "Q7(g)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        17,
+        18,
+        34
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ],
+      "stem": "The stadium can hold 25 000 people.",
+      "questionText": "The stadium was full for a recent special event. Two types of tickets were sold, a single ticket for €16 and a family ticket (2 adults and 2 children) for a certain amount. The income from this event was €365 000. If 1000 more family tickets had been sold, the income from the event would have been reduced by €14 000. How many family tickets were sold?"
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19,
+        35
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ],
+      "stem": "The speed at which a raindrop falls increases until a maximum speed, called its terminal velocity, is reached. The raindrop then continues to fall at this terminal velocity. The distance, s metres, it falls is given by s(t) = 6t + 0·3t² − 0·01t³ for 0 ≤ t ≤ 10, and k(t − 10) for t > 10, as printed. Here t is the time in seconds from the instant the raindrop begins to fall and k is a constant.",
+      "questionText": "How far has this raindrop fallen after 10 seconds?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19,
+        35
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The speed at which a raindrop falls increases until a maximum speed, called its terminal velocity, is reached. The raindrop then continues to fall at this terminal velocity. The distance, s metres, it falls is given by s(t) = 6t + 0·3t² − 0·01t³ for 0 ≤ t ≤ 10, and k(t − 10) for t > 10, as printed. Here t is the time in seconds from the instant the raindrop begins to fall and k is a constant.",
+      "questionText": "After how many seconds is the raindrop falling at a speed of 8·25 metres per second?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19,
+        35
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The speed at which a raindrop falls increases until a maximum speed, called its terminal velocity, is reached. The raindrop then continues to fall at this terminal velocity. The distance, s metres, it falls is given by s(t) = 6t + 0·3t² − 0·01t³ for 0 ≤ t ≤ 10, and k(t − 10) for t > 10, as printed. Here t is the time in seconds from the instant the raindrop begins to fall and k is a constant.",
+      "questionText": "The acceleration of the raindrop is decreasing for the first 10 seconds of its fall. Find the value of t for which the acceleration is 0·006 m s⁻².",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19,
+        20,
+        35
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "stem": "The speed at which a raindrop falls increases until a maximum speed, called its terminal velocity, is reached. The raindrop then continues to fall at this terminal velocity. The distance, s metres, it falls is given by s(t) = 6t + 0·3t² − 0·01t³ for 0 ≤ t ≤ 10, and k(t − 10) for t > 10, as printed. Here t is the time in seconds from the instant the raindrop begins to fall and k is a constant.",
+      "questionText": "The raindrop falls vertically from a height of 620 metres. How long will it take the raindrop to fall to ground level?",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        20,
+        36
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ],
+      "questionText": "A raindrop increases in size as it falls. The volume of a spherical raindrop increases at a rate of 6 cubic millimetres per second. Find the rate at which the radius of the raindrop is increasing when the radius is 1·5 mm.",
+      "fullCreditMinusOne": true
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        21,
+        37
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Shapes in the form of small equilateral triangles can be made using matchsticks of equal length. These shapes can be put together into patterns. The first three triangular patterns are shown in the original diagrams. The table for patterns 1–4 gives numbers of small triangles: 1, blank, 9, blank; and numbers of matchsticks: 3, 9, blank, blank.",
+      "questionText": "Draw the fourth pattern in the sequence."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        21,
+        37
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Shapes in the form of small equilateral triangles can be made using matchsticks of equal length. These shapes can be put together into patterns. The first three triangular patterns are shown in the original diagrams. The table for patterns 1–4 gives numbers of small triangles: 1, blank, 9, blank; and numbers of matchsticks: 3, 9, blank, blank.",
+      "questionText": "The table below shows the number of small triangles in each pattern and the number of matchsticks needed to create each pattern. Complete the table."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        22,
+        37
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Shapes in the form of small equilateral triangles can be made using matchsticks of equal length. These shapes can be put together into patterns. The first three triangular patterns are shown in the original diagrams. The table for patterns 1–4 gives numbers of small triangles: 1, blank, 9, blank; and numbers of matchsticks: 3, 9, blank, blank.",
+      "questionText": "Write an expression in n for the number of triangles in the nth pattern in the sequence."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        22,
+        23,
+        37
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Shapes in the form of small equilateral triangles can be made using matchsticks of equal length. These shapes can be put together into patterns. The first three triangular patterns are shown in the original diagrams. The table for patterns 1–4 gives numbers of small triangles: 1, blank, 9, blank; and numbers of matchsticks: 3, 9, blank, blank.",
+      "questionText": "Find an expression, in n, for the number of matchsticks needed to turn the (n − 1)th pattern into the nth pattern."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        24,
+        38
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Shapes in the form of small equilateral triangles can be made using matchsticks of equal length. These shapes can be put together into patterns. The first three triangular patterns are shown in the original diagrams. The table for patterns 1–4 gives numbers of small triangles: 1, blank, 9, blank; and numbers of matchsticks: 3, 9, blank, blank.",
+      "questionText": "The number of matchsticks in the nth pattern in the sequence can be represented by the function uₙ = an² + bn where a, b ∈ ℚ and n ∈ ℕ. Find the value of a and the value of b."
+    },
+    {
+      "id": "maths-2013-hl-p1-project-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        25,
+        38
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ],
+      "stem": "Shapes in the form of small equilateral triangles can be made using matchsticks of equal length. These shapes can be put together into patterns. The first three triangular patterns are shown in the original diagrams. The table for patterns 1–4 gives numbers of small triangles: 1, blank, 9, blank; and numbers of matchsticks: 3, 9, blank, blank. Part (d): the number of matchsticks is represented by uₙ = an² + bn, where a, b ∈ ℚ and n ∈ ℕ.",
+      "questionText": "One of the patterns in the sequence has 4134 matchsticks. How many small triangles are in that pattern?"
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine/six/three questions",
+      "classification": "all-required",
+      "reason": "All 34 marking units retained."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "For one row in the table",
+      "classification": "example-choice-within-task",
+      "reason": "All four rows and twelve graphs are retained; the candidate explains one pair of derivative relationships."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-required",
+      "reason": "All printed tasks retained."
+    },
+    "3:b50a977cb69c5946": {
+      "classification": "all-required",
+      "reason": "All printed tasks retained."
+    },
+    "8:2be8f842afb5a3a8": {
+      "classification": "function-category",
+      "reason": "Describes the graph categories, not optional exam tasks."
+    },
+    "8:5e14d73b15ae3f15": {
+      "classification": "graph-correspondence",
+      "reason": "Each diagram corresponds to one function; all diagrams remain available."
+    },
+    "8:81ca10e2033ca8c6": {
+      "classification": "graph-correspondence",
+      "reason": "Each diagram corresponds to one function; all diagrams remain available."
+    },
+    "10:6c4700aaf5ee3e55": {
+      "classification": "all-required",
+      "reason": "All printed tasks retained."
+    },
+    "15:c0155daf11bb8912": {
+      "classification": "data-reference",
+      "reason": "The pattern count is given data, not a question choice."
+    }
+  }
+}

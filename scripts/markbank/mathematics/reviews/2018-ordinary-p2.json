@@ -1,0 +1,1145 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2018,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "8e27c5ce1db0a1e9777ddd26bd37689a6f3c074c83d39754dafd762b6d2f4431",
+  "schemeSha256": "3e24b6941a9023945287286d086d781523098bccd55969d390cca3d308c9c368",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 16 question-paper pages and PDF pages 21–40 of the combined Ordinary Level scheme (the Paper 2 title page 21, the scale table on page 22, the summary of mark allocations on page 23, every Paper 2 model solution and marking note on pages 24–39, and the back cover on page 40). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "schemePagesInspected": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 60,
+    "8": 50,
+    "9": 40
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    22,
+    23
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 60 marks, Q8 50 marks, Q9 40 marks). Every question is retained.",
+    "39 independently marked units, matching the printed summary of allocations on scheme page 23. Q3(a)(i)+(ii), Q3(b)(i)+(ii), Q5(b)(i)+(ii), Q6(a)(i)+(ii) and Q7(a)(i)+(ii)+(iii) each share one printed scale and are one task.",
+    "Paper 2 bands from the 2018 Ordinary scale table on scheme page 22, which differ from Paper 1’s: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,3,7,10; 10D 0,2,5,8,10; 15D 0,4,7,11,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 39 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced, and its Misreading notes keep their own label. The Q3(b) probability table is quoted as one multi-line point. The ticked Q7(f)(ii) box is named in the row label.",
+    "Nine parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal: Q1(a)(i), Q6(a), Q7(f)(i) and Q7(f)(ii), whose model solutions are a completed table, a construction, a scatterplot and a tick box printed as images, and Q8(e), Q8(f), Q9(a)(i), Q9(a)(iii) and Q9(b)(i), where a stacked fraction’s denominator or numerator is filtered as a mark cell.",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. Scheme page references are PDF positions (printed page number + 3); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2018-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An experiment consists of throwing two fair, standard, six-sided dice and recording the sum of the two numbers thrown. Some of the totals are shown in the table.",
+      "questionText": "Complete the table. Die 1 (columns): 1, 2, 3, 4, 5, 6. Die 2 = 1: 2, 3, 4, 5, 6, 7. Die 2 = 2: 3, 4, 5, 6, 7, 8. Die 2 = 3: 4, 5, 6, 7, 8, 9. Die 2 = 4: 5, 6, _, _, 9, 10. Die 2 = 5: 6, _, 8, 9, _, 11. Die 2 = 6: _, 8, 9, 10, 11, _."
+    },
+    {
+      "id": "maths-2018-ol-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An experiment consists of throwing two fair, standard, six-sided dice and recording the sum of the two numbers thrown. Some of the totals are shown in the table.",
+      "questionText": "Find the probability of getting a total of 7 or 11."
+    },
+    {
+      "id": "maths-2018-ol-p2-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "An experiment consists of throwing two fair, standard, six-sided dice and recording the sum of the two numbers thrown. Some of the totals are shown in the table.",
+      "questionText": "Find the probability of getting a total which is a prime number."
+    },
+    {
+      "id": "maths-2018-ol-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A car distributor sells Ford cars and Renault cars. It has 30 cars for sale on a particular day; 18 are Ford cars and 12 are Renault cars. 7 of the Ford cars are red and 4 of the Renault cars are red. One of the 30 cars is chosen at random. What is the probability that the car chosen is a Ford car or a car which is not red?"
+    },
+    {
+      "id": "maths-2018-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR].",
+      "questionText": "Find the co-ordinates of V."
+    },
+    {
+      "id": "maths-2018-ol-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR].",
+      "questionText": "Show, by using slopes, that UV is parallel to QR."
+    },
+    {
+      "id": "maths-2018-ol-p2-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR].",
+      "questionText": "Find the area of the triangle PQR."
+    },
+    {
+      "id": "maths-2018-ol-p2-q2-d",
+      "printedParts": [
+        "Q2(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points P(7, 10), Q(1, 2) and R(11, 4) are the vertices of the triangle shown. The point U(4, 6) is the midpoint of [PQ] and the point V is the midpoint of [PR].",
+      "questionText": "The point S is the image of the point Q under the translation UV⃗. Find the coordinates of S."
+    },
+    {
+      "id": "maths-2018-ol-p2-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "questionText": "(i) Find the number of different arrangements that can be made using all the letters of the word RAINBOW. Each letter is used only once. (ii) Find the number of different 3-letter arrangements that can be made using the letters of the word RAINBOW. Each letter is used at most once."
+    },
+    {
+      "id": "maths-2018-ol-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "A game, called Rainbow, uses an unbiased circular spinner. The spinner has seven sectors coloured red (R), orange (O), yellow (Y), green (G), blue (B), indigo (I), and violet (V) as shown below. The table below shows the angle of each sector. It also shows the cash prize that a player wins if the spinner stops in that sector. Colour, Angle, Probability, Prize: Red, 72°, _, €20; Orange, 30°, _, €60; Yellow, 45°, 1/8, €24; Green, 90°, _, €8; Blue, 60°, _, €42; Indigo, 18°, _, €90; Violet, 45°, _, €48.",
+      "questionText": "(i) Complete the “Probability” column of the table which shows the probability of the spinner coming to rest in each sector after one spin. (ii) Find the expected value of the prize that a player wins if they play Rainbow."
+    },
+    {
+      "id": "maths-2018-ol-p2-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram.",
+      "questionText": "Find the co-ordinates of the centre of w."
+    },
+    {
+      "id": "maths-2018-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram.",
+      "questionText": "Find the length of the radius of w. Give your answer in the form p√q, where p, q ∈ ℕ."
+    },
+    {
+      "id": "maths-2018-ol-p2-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram. Part (a): Find the co-ordinates of the centre of w. Part (b): Find the length of the radius of w. Give your answer in the form p√q, where p, q ∈ ℕ.",
+      "questionText": "Hence write down the equation of the circle w."
+    },
+    {
+      "id": "maths-2018-ol-p2-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The points A(1, 8) and B(9, 0) are the end-points of a diameter of the circle w, as shown in the diagram.",
+      "questionText": "Find the equation of the line that is a tangent to the circle w at A. Give your answer in the form ax + by + c = 0, where a, b, and c ∈ ℤ."
+    },
+    {
+      "id": "maths-2018-ol-p2-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "The square ABCD has sides of length 7 cm. The vertices of the square PQRS lie on the perimeter of ABCD, as shown in the diagram, with |AQ| = 5 cm. Find the area of the square PQRS."
+    },
+    {
+      "id": "maths-2018-ol-p2-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The circles u and v represent two wheels that are free to rotate about their centres, as shown. The radius of u is 4 cm and the radius of v is 6 cm.",
+      "questionText": "(i) Find the length of the circumference of each circle. Give your answers in cm in terms of π. (ii) The wheels u and v are in non-slip contact and therefore the rotation of one causes the other to rotate. Find the number of complete rotations wheel u makes if wheel v completes 100 rotations."
+    },
+    {
+      "id": "maths-2018-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "questionText": "(i) Construct the triangle ABC, where |AB| = 10 cm, |∠CAB| = 60° and |∠ABC| = 40°. Label each vertex clearly. (ii) Measure |BC|, and write your answer in cm, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2018-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram shows a parallelogram with vertices P, Q, R, and S. |∠SPQ| = 115°, |∠QRS| = α° and |∠RSP| = β°.",
+      "questionText": "Write down the value of α and the value of β."
+    },
+    {
+      "id": "maths-2018-ol-p2-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram shows a parallelogram with vertices P, Q, R, and S. |∠SPQ| = 115°, |∠QRS| = α° and |∠RSP| = β°.",
+      "questionText": "Explain why the triangle PQR is congruent to triangle RSP. Give a reason for any statement you make in your explanation."
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)",
+        "Q7(a)(ii)",
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann)",
+      "questionText": "Based on the data in the table above write down: (i) the range of the rainfall data (ii) the year with the highest June rainfall (iii) the year with the least June sunshine"
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann)",
+      "questionText": "Based on the data in the table, write down the year with the best June weather and give a reason for your answer."
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann)",
+      "questionText": "Write the rainfall data in increasing order and hence find the median of the rainfall."
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann)",
+      "questionText": "Find the mean number of sunshine hours for June in Valentia between 2001 and 2010."
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann) Part (d)(i): Find the mean number of sunshine hours for June in Valentia between 2001 and 2010.",
+      "questionText": "For what years was the sunshine data within 5% of the mean number of sunshine hours in Valentia?"
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann)",
+      "questionText": "Find the standard deviation of the rainfall data, in mm, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-f-i",
+      "printedParts": [
+        "Q7(f)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann) Part (f): Part of a scatterplot of the data in the table is shown below. The first four data points are plotted.",
+      "questionText": "Complete the scatterplot."
+    },
+    {
+      "id": "maths-2018-ol-p2-q7-f-ii",
+      "printedParts": [
+        "Q7(f)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The table below shows the total rainfall, in millimetres, and the total sunshine, in hours, at Valentia, County Kerry, during the month of June from 2001 to 2010. Total rainfall and total sunshine at Valentia in June. Year: 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010. Total Rainfall (mm): 72, 133, 155, 101, 94, 47, 149, 134, 94, 84. Total Sunshine (hours): 169, 124, 180, 173, 173, 239, 159, 168, 228, 205. (Source: Met Éireann) Part (f): Part of a scatterplot of the data in the table is shown below. The first four data points are plotted.",
+      "questionText": "One of the numbers in the table on the right is the correlation coefficient for the data above, correct to 1 decimal place. Based on the scatterplot, select the number that you think most accurately reflects this data. Explain your choice. Tick one box: 0·6, 0·1, −0·1, −0·6."
+    },
+    {
+      "id": "maths-2018-ol-p2-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°.",
+      "questionText": "Use the theorem of Pythagoras to find |RQ|."
+    },
+    {
+      "id": "maths-2018-ol-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°.",
+      "questionText": "Show that α = 31°, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2018-ol-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°.",
+      "questionText": "Use the value of α given in part (b) to find the value of β."
+    },
+    {
+      "id": "maths-2018-ol-p2-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°.",
+      "questionText": "Use the Cosine Rule to find the length of [RS]. Give your answer correct to the nearest metre."
+    },
+    {
+      "id": "maths-2018-ol-p2-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°.",
+      "questionText": "SQT is a sector of a circle whose centre is Q. Find the length of the arc TS. Give your answer in metres, correct to one decimal place."
+    },
+    {
+      "id": "maths-2018-ol-p2-q8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram shows a section of a garden divided into three parts. In the diagram: |PR| = 3·3 m, |PQ| = 6·5 m, |QT| = |QS| = 8 m, |∠QRP| = 90°, |∠PQR| = α°, and |∠RQS| = β°. Part (e): SQT is a sector of a circle whose centre is Q. Find the length of the arc TS. Give your answer in metres, correct to one decimal place.",
+      "questionText": "Find the area of the sector SQT. Give your answer in square metres, correct to one decimal place."
+    },
+    {
+      "id": "maths-2018-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the volume of a solid sphere of radius 0·3 cm. Give your answer in cm³, correct to 3 decimal places."
+    },
+    {
+      "id": "maths-2018-ol-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Part (a)(i): Find the volume of a solid sphere of radius 0·3 cm. Give your answer in cm³, correct to 3 decimal places.",
+      "questionText": "The sphere is made of pure gold. Each cm³ of pure gold weighs 19·3 grams. Find the number of grams of pure gold in the sphere. Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2018-ol-p2-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Part (a)(i): Find the volume of a solid sphere of radius 0·3 cm. Give your answer in cm³, correct to 3 decimal places. Part (a)(ii): The sphere is made of pure gold. Each cm³ of pure gold weighs 19·3 grams. Find the number of grams of pure gold in the sphere. Give your answer correct to 2 decimal places.",
+      "questionText": "It is known that there are approximately 6·02 × 10²³ atoms in 197 grams of pure gold. Find the number of atoms of pure gold in the sphere. Give your answer in the form a × 10^n, where 1 ≤ a < 10, n ∈ ℕ, and where a is correct to 2 significant figures."
+    },
+    {
+      "id": "maths-2018-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey was carried out on behalf of a television station to investigate the popularity of a certain show.",
+      "questionText": "A random sample of 1560 television viewers was surveyed. Find the margin of error of the survey. Give your answer as a percentage, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2018-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey was carried out on behalf of a television station to investigate the popularity of a certain show. Part (b)(i): A random sample of 1560 television viewers was surveyed. Find the margin of error of the survey. Give your answer as a percentage, correct to 1 decimal place.",
+      "questionText": "In the survey, 546 of the 1560 viewers surveyed said that they liked the show. Use your answer to part b(i) above to create a 95% confidence interval for the percentage of viewers who liked the show."
+    },
+    {
+      "id": "maths-2018-ol-p2-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A survey was carried out on behalf of a television station to investigate the popularity of a certain show. Part (b)(ii): In the survey, 546 of the 1560 viewers surveyed said that they liked the show. Use your answer to part b(i) above to create a 95% confidence interval for the percentage of viewers who liked the show.",
+      "questionText": "An executive for the television station had claimed that 40% of viewers liked the show. Use your answer to part b(ii) above to conduct a hypothesis test, at the 5% level of significance, to test the executive’s claim. State your null hypothesis, your alternative hypothesis and give your conclusion in the context of the question."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3
+      ],
+      "wording": "Answer all nine / all six questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        3
+      ],
+      "wording": "a Ford car or a car which is not red",
+      "classification": "mathematical-context",
+      "reason": "The or-event is the probability being asked for, not a choice between printed prompts."
+    },
+    {
+      "pages": [
+        11
+      ],
+      "wording": "select the number that you think most accurately reflects this data",
+      "classification": "answer-selection",
+      "reason": "The candidate ticks one of four printed correlation values as the answer to one required task; it is not a choice of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:6a812b38c12e3991": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:3bfebd04fe151e42": {
+      "classification": "mathematical-context",
+      "reason": "The car chosen being a Ford car or a car which is not red is the event whose probability is asked for, not a choice between printed prompts."
+    },
+    "11:4e497e027bcf1e50": {
+      "classification": "answer-selection",
+      "reason": "The candidate ticks one of four printed correlation values as the answer to one required task; it does not offer alternative practice prompts."
+    }
+  }
+}

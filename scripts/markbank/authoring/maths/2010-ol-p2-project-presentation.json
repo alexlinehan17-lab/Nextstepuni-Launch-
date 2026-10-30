@@ -1,0 +1,1949 @@
+{
+  "status": "visually inspected",
+  "paperFileid": "LC003GLP230EV.pdf",
+  "schemeFileid": "LC003GLP030EV.pdf",
+  "tasks": {
+    "1-a-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 152,
+          "bottom": 269,
+          "x0": 52,
+          "x1": 553,
+          "erase": [
+            [
+              82,
+              211,
+              400,
+              272
+            ]
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 63,
+          "top": 288,
+          "bottom": 775,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work, including an answer written on a diagram."
+      ],
+      "inspectedQuestionSha256": "d7a37b0c015dbd4f5e81bdbe34f6e63b64e57101b4e807d3576e068cb8586318",
+      "inspectedSolutionSha256": "24e6b914473d3707689e9a8305f1b1cf92dcf6ab54d8372790dbb9aef5b44a6b",
+      "figureKey": "maths-2010-OL-scheme-project-p063-i1",
+      "inspectedPublishedQuestionSha256": "d8b5d8b57b3b4ac7bd4667839842bc7fccc7695c61e6a650d2aa4ffb57bf6425"
+    },
+    "1-a-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 152,
+          "bottom": 269,
+          "x0": 52,
+          "x1": 553,
+          "erase": [
+            [
+              82,
+              191,
+              400,
+              272
+            ]
+          ]
+        },
+        {
+          "page": 3,
+          "top": 277,
+          "bottom": 298,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 63,
+          "top": 288,
+          "bottom": 775,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work, including an answer written on a diagram."
+      ],
+      "inspectedQuestionSha256": "0074e08df64006828810f5ccfc63c80c901508f906d67afe7ed87339897e1e86",
+      "inspectedSolutionSha256": "24e6b914473d3707689e9a8305f1b1cf92dcf6ab54d8372790dbb9aef5b44a6b",
+      "figureKey": "maths-2010-OL-scheme-project-p063-i1",
+      "inspectedPublishedQuestionSha256": "dae705738b6b0f5715c6234a01a3cc253475ae44da3e66ecff5a5ec5b30e5581"
+    },
+    "1-b-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 359,
+          "bottom": 575,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 64,
+          "top": 324,
+          "bottom": 747,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 65,
+          "top": 136,
+          "bottom": 249,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct TOFE or TOFE consistent with candidates F and L."
+      ],
+      "inspectedQuestionSha256": "b8ed5a8abf39b26adfd2eb363341126a776cb378be02b8431b0d5b9377b19e1d",
+      "inspectedSolutionSha256": "a622ecb6a8d29ea62c499a361e5ded4ddd2158f7eeb925bb162d3a2f8b191f34",
+      "figureKey": "maths-2010-OL-scheme-project-p064-i1",
+      "inspectedPublishedQuestionSha256": "d14aebf2e0cff9d4bb0b5e5cf98088077248d6dc6a120e937748f1cdc14fdc42"
+    },
+    "1-b-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 3,
+          "top": 359,
+          "bottom": 575,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 4,
+          "top": 52,
+          "bottom": 88,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 64,
+          "top": 354,
+          "bottom": 490,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 65,
+          "top": 54,
+          "bottom": 113,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Work of some merit, otherwise 0 marks."
+      ],
+      "inspectedQuestionSha256": "61cca855049810fcffb42a0b0f04ceb44aa6b1f88d75e9f615c1ebbc13a3d759",
+      "inspectedSolutionSha256": "2160db0cca24e8a10b649d43bd88746eb80cb513e0ed4de12a5ba450120c5503",
+      "figureKey": "maths-2010-OL-scheme-project-p064-i2",
+      "inspectedPublishedQuestionSha256": "416bbebff6407ab341c8819bc4c7ed55d20ff0a0bcb9eba63b873db73c249d67"
+    },
+    "1-c-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 177,
+          "bottom": 212,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 65,
+          "top": 584,
+          "bottom": 658,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 66,
+          "top": 68,
+          "bottom": 360,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Attempts (3 marks) — Correct answer without work in each section."
+      ],
+      "inspectedQuestionSha256": "3f2fd6baa0169bf972e5a8048948b8b5cb61b56eb68b90e836568657e5cc66ae",
+      "inspectedSolutionSha256": "71559710e50aa37b98c97df6f4dc0f5cf2305e14fb3bd3b149da9f40ba3d556e",
+      "figureKey": "maths-2010-OL-scheme-project-p065-i1",
+      "inspectedPublishedQuestionSha256": "73b0fa7ca95b969e7c402b55f76b1c11e11dd2ff507f48c7b5e1ef658a5d2ce7"
+    },
+    "1-c-ii": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 4,
+          "top": 177,
+          "bottom": 212,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 4,
+          "top": 343,
+          "bottom": 545,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 65,
+          "top": 646,
+          "bottom": 775,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 66,
+          "top": 68,
+          "bottom": 360,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Some merit in candidates work, otherwise 0 marks."
+      ],
+      "inspectedQuestionSha256": "d187aaeb84ae99b27d2bf813a5a4d1c526d9d351b371baf98d634790d1b0f3e3",
+      "inspectedSolutionSha256": "aee0e12b9ede24a8a04ebd8ef9023a48eecee62e6fdcb56afd155fe0384d88c4",
+      "figureKey": "maths-2010-OL-scheme-project-p065-i2",
+      "inspectedPublishedQuestionSha256": "97c2da4d5f1e28c57bab2899259ca6521b888d5b74f35713659563ecce0d5582"
+    },
+    "2-a": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 165,
+          "bottom": 369,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 165,
+          "bottom": 545,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 69,
+          "top": 140,
+          "bottom": 414,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "e74f1b23f6ab4e09167a4c1df6ae5783c4582344ebc6582850257e232f918923",
+      "inspectedSolutionSha256": "7915c314891ed9098741ec3241d821bf65e2564ed04a6eb70e19fe391c098400",
+      "figureKey": "maths-2010-OL-scheme-project-p048-i1",
+      "inspectedPublishedQuestionSha256": "0b6875285112b79777f2299d9cae1f43c57dce01839cfeb3e2fbaa1bc639d8af"
+    },
+    "2-b": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-of-the-line",
+      "questionRegions": [
+        {
+          "page": 5,
+          "top": 497,
+          "bottom": 568,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 48,
+          "top": 627,
+          "bottom": 734,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 69,
+          "top": 422,
+          "bottom": 554,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Both slopes correct but no/incorrect conclusion"
+      ],
+      "inspectedQuestionSha256": "5fc39821f2cb0cf308c1dbb24404bcbc9ce8c350d955ec73bca2509034f986d6",
+      "inspectedSolutionSha256": "971c888dfb8fbad98fb95e58ebbf47dccd3907f87adc527f24dac7eead6d645c",
+      "figureKey": "maths-2010-OL-scheme-project-p048-i2",
+      "inspectedPublishedQuestionSha256": "7b2d375ea25b1279b0c83082c507d24d80639f44f3b5d6e1f4a0191bd06b8d5c"
+    },
+    "3-a-i": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 73,
+          "bottom": 121,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 117,
+          "bottom": 237,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 70,
+          "top": 83,
+          "bottom": 241,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "da0d9d6f7bbaf007cb8e2c59c37a111b2ca72ceb0c923afbd6778fdb80e531f1",
+      "inspectedSolutionSha256": "889d10ba0f4a9e8b831d397be65632999379f13f3ec657f758f27cda02710a3f",
+      "figureKey": "maths-2010-OL-scheme-project-p049-i1",
+      "inspectedPublishedQuestionSha256": "40258dd7680372f98aa2fbaa0982bfbc9fa77c8662e12ebf3f3f7d5ac02b0835"
+    },
+    "3-a-ii": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 73,
+          "bottom": 93,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 6,
+          "top": 280,
+          "bottom": 301,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 276,
+          "bottom": 369,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 70,
+          "top": 262,
+          "bottom": 379,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer without work"
+      ],
+      "inspectedQuestionSha256": "c35188643d89006e51c4b36108910ce6f1a5b072be8732610d0495dfd6e0604f",
+      "inspectedSolutionSha256": "e5da95888a60e642590cdd37b9b93bde2f318d0ccd40c1c1fd83f4cbf1345c9a",
+      "figureKey": "maths-2010-OL-scheme-project-p049-i2",
+      "inspectedPublishedQuestionSha256": "5c32624fa65730cfa8175bc57ccf16ffdcd04d0f0a49f852964176637240a2ed"
+    },
+    "3-b": {
+      "topic": "2-3",
+      "atlas": "co-ordinate-geometry-the-circle",
+      "questionRegions": [
+        {
+          "page": 6,
+          "top": 473,
+          "bottom": 634,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 49,
+          "top": 458,
+          "bottom": 618,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 70,
+          "top": 400,
+          "bottom": 495,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Radius = 2 but fails to finish correctly"
+      ],
+      "inspectedQuestionSha256": "dbfa6f3a099f92862680b1bd385a52b5e3573c5016c04a3ebd7c61b44bec6f15",
+      "inspectedSolutionSha256": "2c6b82ea93bec4116bd5d55d18e431d2eab38894a2df9906cb51d379bea9e5ab",
+      "figureKey": "maths-2010-OL-scheme-project-p049-i3",
+      "inspectedPublishedQuestionSha256": "48a5281e5b4f277b27c4b6d76b7ecc1446b69886b06ecae2ac6dbb3601eafa4e"
+    },
+    "4-a": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 87,
+          "bottom": 211,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 177,
+          "bottom": 250,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 83,
+          "bottom": 138,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correctly calculates one answer only"
+      ],
+      "inspectedQuestionSha256": "c20bed59922a99a38bcfd436d3d8f69e7c108d736944e6100727548e6f4cb761",
+      "inspectedSolutionSha256": "967e0a9b55b60707952400dc51e29914d322fb8bbca1a1ed86451a98cbf9a09d",
+      "figureKey": "maths-2010-OL-scheme-project-p050-i1",
+      "inspectedPublishedQuestionSha256": "bf25964543794a5ca8a01b4952d5a4662e7fae4ed2bc4a62ad5befd24d74f1ab"
+    },
+    "4-b-i": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 258,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 7,
+          "top": 424,
+          "bottom": 471,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 452,
+          "bottom": 503,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 145,
+          "bottom": 207,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Partial Credit — Gives answer as 26 [Stem values included]"
+      ],
+      "inspectedQuestionSha256": "e981d616c1563ea61187cf253014bca40ee926c0a2bc6afafa0b222cde8b6330",
+      "inspectedSolutionSha256": "df7a850adb32c6ad390b5f8277db9234215c845849dbfa3a421d1c821172729e",
+      "figureKey": "maths-2010-OL-scheme-project-p050-i2",
+      "inspectedPublishedQuestionSha256": "86b0dca75f9e87625485f189299a1b0d53ca9e1e6737dd909b114cf9b67aefb5"
+    },
+    "4-b-ii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 258,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 7,
+          "top": 493,
+          "bottom": 514,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 540,
+          "bottom": 589,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 214,
+          "bottom": 282,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Max and min given but fails to subtract"
+      ],
+      "inspectedQuestionSha256": "814a581dd411df348098b8bc460085b5ffa27b5cfbda683c1c774a43f5971c34",
+      "inspectedSolutionSha256": "e9be52a6ee480cf996d49b90df8659964f60e6ae458f9f2df78e3b73e9ddce8c",
+      "figureKey": "maths-2010-OL-scheme-project-p050-i3",
+      "inspectedPublishedQuestionSha256": "71420b21d33b96e023a4963ae8713622d5181387a7ae416bb95d57f79932ee8a"
+    },
+    "4-b-iii": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 7,
+          "top": 258,
+          "bottom": 406,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 7,
+          "top": 590,
+          "bottom": 610,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 50,
+          "top": 625,
+          "bottom": 693,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 289,
+          "bottom": 375,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct fraction but fails to convert into percentage"
+      ],
+      "inspectedQuestionSha256": "494ead7fbd5ee717cb752f73c4211600be7991f23efdaa3020aad9c95c825248",
+      "inspectedSolutionSha256": "a69642e8eaef4050e57175554c6260add17770eb0833164402d3f9f3f4d5b805",
+      "figureKey": "maths-2010-OL-scheme-project-p050-i4",
+      "inspectedPublishedQuestionSha256": "a297a780591610ac9d8bed822c1c065449d41e7b73f8fa433c86c920e9025a6f"
+    },
+    "5-a": {
+      "topic": "1-1",
+      "atlas": "counting",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 73,
+          "bottom": 136,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 8,
+          "top": 225,
+          "bottom": 260,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 112,
+          "bottom": 299,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 411,
+          "bottom": 493,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — One correct answer only"
+      ],
+      "inspectedQuestionSha256": "81c60f93416769b037ace4ff7dd401e0459e5079f922e003d1971e2f5c64f506",
+      "inspectedSolutionSha256": "a6618fe39ab66411073fd80759616f7e3ae9022897e2b921dd09fafacf0e7092",
+      "figureKey": "maths-2010-OL-scheme-project-p051-i1",
+      "inspectedPublishedQuestionSha256": "8f7eec28c2e0ec7df852ad5e20f66b2f5127d39b6a11280e2371b08a438bbf85"
+    },
+    "5-b-i": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 363,
+          "bottom": 384,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 307,
+          "bottom": 389,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 500,
+          "bottom": 565,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Partial Credit — Attempt at Sample Space"
+      ],
+      "inspectedQuestionSha256": "dfcdb16aeba59bd9eacdb1c34346215948d04c1ab31c1c3665557c84cc6a050c",
+      "inspectedSolutionSha256": "f5a08f795912b0f3277cdc13cf71df9ea1124abd8cd73b0c690b8de337d277cd",
+      "figureKey": "maths-2010-OL-scheme-project-p051-i2",
+      "inspectedPublishedQuestionSha256": "e34dfcefd907855cba462b089689fd9ebb6dae8a0091a3294e8c67f5321c126e"
+    },
+    "5-b-ii": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 445,
+          "bottom": 467,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 410,
+          "bottom": 491,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 572,
+          "bottom": 668,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Allow candidate to use an incorrect answer from (b) (i) without further penalty"
+      ],
+      "inspectedQuestionSha256": "2916bac54dc9aa45189332b75f81a1d59e4ca8acd14f69792ff7ead0387bfdd6",
+      "inspectedSolutionSha256": "4aade5b0263a13fc41fcf2802addae71e002b60b4a0da68198fdff530a80a728",
+      "figureKey": "maths-2010-OL-scheme-project-p051-i3",
+      "inspectedPublishedQuestionSha256": "10e0a7cedf881a49830a8625c95b659f35f2d000ee2b567cd29ba0b0c8f71889"
+    },
+    "5-c": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 8,
+          "top": 542,
+          "bottom": 720,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 51,
+          "top": 501,
+          "bottom": 740,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 71,
+          "top": 674,
+          "bottom": 750,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct answer with no reason given"
+      ],
+      "inspectedQuestionSha256": "5c8cbea29402ab36941c25644208bc22637d052862ea8339cc07ffc1a708f5b2",
+      "inspectedSolutionSha256": "4cdd7190e13baf6c9b14f7fb3c8ca93b4f7c8e84f1010a4fdd8449ab358068a9",
+      "figureKey": "maths-2010-OL-scheme-project-p051-i4",
+      "inspectedPublishedQuestionSha256": "aa485c9295acefb8c2c14703956ef47c5d077431e0619d47807f099200089875"
+    },
+    "6-a": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 9,
+          "top": 73,
+          "bottom": 300,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 9,
+          "top": 312,
+          "bottom": 335,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 343,
+          "bottom": 425,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 72,
+          "top": 71,
+          "bottom": 226,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct answer by accurate measurement"
+      ],
+      "inspectedQuestionSha256": "93356212eb73d3332f5516f8933322571a44f743a02a9163664f6e3ce58fdd70",
+      "inspectedSolutionSha256": "7e04f037f4ecdc5d4c109bffdc652e6f980b3d054a7b0a9c8a00fa688a388814",
+      "figureKey": "maths-2010-OL-scheme-project-p052-i1",
+      "inspectedPublishedQuestionSha256": "f72404d9431f80ffe17fc2a6e813905ef8914e8c1d5b09127e57855b4ae2595d"
+    },
+    "6-b": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 9,
+          "top": 73,
+          "bottom": 300,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 9,
+          "top": 438,
+          "bottom": 459,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 460,
+          "bottom": 572,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 72,
+          "top": 233,
+          "bottom": 332,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Correct substitution into cosine rule"
+      ],
+      "inspectedQuestionSha256": "004bda6ec0bb7c6dbd62ccf5915abd33ec3c86de406343c4bae6b1dcc7670f13",
+      "inspectedSolutionSha256": "f6a512533d21ac051a0c252134d5d838d66e49302ef298074109a9db76a8a4d7",
+      "figureKey": "maths-2010-OL-scheme-project-p052-i2",
+      "inspectedPublishedQuestionSha256": "f87368eb5b5b9b42d1f0d5357f4ef8a71c828d6a56717e1d39f585ea5e052ee0"
+    },
+    "6-c": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 9,
+          "top": 73,
+          "bottom": 300,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 9,
+          "top": 617,
+          "bottom": 653,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 52,
+          "top": 620,
+          "bottom": 738,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 72,
+          "top": 351,
+          "bottom": 479,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any use of 3 and the answer to (a)"
+      ],
+      "inspectedQuestionSha256": "76b512ff33238e79d49d0cf7524bb307898689296ed724bf7875b74bcba066e6",
+      "inspectedSolutionSha256": "f73ab7d2125573605b9f550ff70f27a61979257927f8efc3fb2614db373892fa",
+      "figureKey": "maths-2010-OL-scheme-project-p052-i3",
+      "inspectedPublishedQuestionSha256": "8d28cf1e9a81ea3023312883835d128c689c4080c0c04cc4c1c1f775fa8eb2d4"
+    },
+    "7-a": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 157,
+          "bottom": 330,
+          "x0": 49,
+          "x1": 553
+        },
+        {
+          "page": 10,
+          "top": 336,
+          "bottom": 371,
+          "x0": 49,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 379,
+          "bottom": 466,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 73,
+          "top": 112,
+          "bottom": 264,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any use of 977 or 9634"
+      ],
+      "inspectedQuestionSha256": "a6e7136d24bcefec7f6dc8a1d20e0e2c50c7fcefb2d0d640863c62f8ef4e876a",
+      "inspectedSolutionSha256": "d03f10c59ee7c3a896426f03f5e45d9cf08efce91b613daea740d20384eb1266",
+      "figureKey": "maths-2010-OL-scheme-project-p053-i1",
+      "inspectedPublishedQuestionSha256": "f1141c4b06571c3075e82f011729649b0631cabaaa624f6b58fb7c61efe5c4ee"
+    },
+    "7-b": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 157,
+          "bottom": 330,
+          "x0": 49,
+          "x1": 553
+        },
+        {
+          "page": 10,
+          "top": 447,
+          "bottom": 482,
+          "x0": 49,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 509,
+          "bottom": 578,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 73,
+          "top": 270,
+          "bottom": 422,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any use of 581 or 6743"
+      ],
+      "inspectedQuestionSha256": "3d02e3840c692d6326001905a4a03f55431accdeadeb98b8fff7404f4fe7752e",
+      "inspectedSolutionSha256": "7707fdbb4e7a3a222ceda05d4f2138c36957251b30ed82f3d3989aeae5ce2b5d",
+      "figureKey": "maths-2010-OL-scheme-project-p053-i2",
+      "inspectedPublishedQuestionSha256": "15a4896b09ac067a7face9f465d0c496c341612d302f912a94b2a2d6238abf1c"
+    },
+    "7-c": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 157,
+          "bottom": 330,
+          "x0": 49,
+          "x1": 553
+        },
+        {
+          "page": 10,
+          "top": 557,
+          "bottom": 578,
+          "x0": 49,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 612,
+          "bottom": 661,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 73,
+          "top": 428,
+          "bottom": 519,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer or answer consistent with candidate’s answer from (a)"
+      ],
+      "inspectedQuestionSha256": "d982dc65c57d01b0e5777fb6b53da344d15695c1dd545b7ee2ed73b2d4e3417c",
+      "inspectedSolutionSha256": "54f2ae29766009ea66946b139601de0f35975baba92d04e40c16dafbcda8fddf",
+      "figureKey": "maths-2010-OL-scheme-project-p053-i3",
+      "inspectedPublishedQuestionSha256": "dc8cfd37bc18181cd3673d7a22f7a1f87ebaf26fd81e874dac71844e745f45d4"
+    },
+    "7-d": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 157,
+          "bottom": 330,
+          "x0": 49,
+          "x1": 553
+        },
+        {
+          "page": 10,
+          "top": 681,
+          "bottom": 702,
+          "x0": 49,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 53,
+          "top": 697,
+          "bottom": 747,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 73,
+          "top": 525,
+          "bottom": 616,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept correct answer or answer consistent with candidate’s answer from (b)"
+      ],
+      "inspectedQuestionSha256": "a15e3176262a4885014009f341951a943ef4ae590da4f61c23d39aff69496fb6",
+      "inspectedSolutionSha256": "d2408f944321553403c706adfaabe5b0195b17cbc8b7a00c0f8ce93d1475c451",
+      "figureKey": "maths-2010-OL-scheme-project-p053-i4",
+      "inspectedPublishedQuestionSha256": "5490616f9447bb22ba7c50deecf2501b1a3bd9e66cd0283c0107812a41c07c1f"
+    },
+    "7-e": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 10,
+          "top": 157,
+          "bottom": 330,
+          "x0": 49,
+          "x1": 553
+        },
+        {
+          "page": 11,
+          "top": 53,
+          "bottom": 122,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 131,
+          "bottom": 383,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 73,
+          "top": 621,
+          "bottom": 698,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct answers with no/incorrect comment"
+      ],
+      "inspectedQuestionSha256": "cdeb9a69559e6d7a3c64fc290792cee0490cca004798e43a9b9e9021e47a3c92",
+      "inspectedSolutionSha256": "a495f4d81f6826faf9eb56d89b6b14c0a4d137b5bad9bccd8940b8c6f5d74304",
+      "figureKey": "maths-2010-OL-scheme-project-p054-i1",
+      "inspectedPublishedQuestionSha256": "7de868b47cc5aebf964973c54e3ad67107dde368068d81d6fea68511c3fbb87a"
+    },
+    "7-f": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 11,
+          "top": 376,
+          "bottom": 425,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 54,
+          "top": 464,
+          "bottom": 551,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 73,
+          "top": 704,
+          "bottom": 768,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — €273 but fails to finish correctly"
+      ],
+      "inspectedQuestionSha256": "64010868b0972b46ec92da94d9b0094a2ac8705a6ec902fb935f364819b285ba",
+      "inspectedSolutionSha256": "6be473c6c75a02f693e053fb01cfc9a745bd15b8d17251662579d75190aa7583",
+      "figureKey": "maths-2010-OL-scheme-project-p054-i2",
+      "inspectedPublishedQuestionSha256": "4920374a91467745f831ca5d43d3dccacea074778e06cecbcdeee47bee9cb1e1"
+    },
+    "8-a": {
+      "topic": "2-1",
+      "atlas": "geometry-proofs-and-constructions",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 87,
+          "bottom": 270,
+          "x0": 52,
+          "x1": 553,
+          "erase": [
+            [
+              52,
+              225,
+              390,
+              270
+            ]
+          ]
+        },
+        {
+          "page": 12,
+          "top": 290,
+          "bottom": 580,
+          "x0": 397,
+          "x1": 552
+        },
+        {
+          "page": 12,
+          "top": 232,
+          "bottom": 254,
+          "x0": 52,
+          "x1": 390
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 253,
+          "bottom": 375,
+          "x0": 52,
+          "x1": 405
+        },
+        {
+          "page": 55,
+          "top": 290,
+          "bottom": 576,
+          "x0": 410,
+          "x1": 565
+        },
+        {
+          "page": 74,
+          "top": 74,
+          "bottom": 148,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Writes the reason as ‘Isosceles Triangle’"
+      ],
+      "inspectedQuestionSha256": "0ac1867d8bcf69ad9410f7c7b2e77f9c670d0712ee4e6eb5cc09f0ee8985fe33",
+      "inspectedSolutionSha256": "ffb9035d3dba7dbe041a5e64daae0813f3fc0e8215bf63aceb83bd219bd934a6",
+      "figureKey": "maths-2010-OL-scheme-project-p055-i1",
+      "inspectedPublishedQuestionSha256": "757f52d95dcfe086280f6be97f2b2377d78e3d798a0f57cdd6fc2376eddf62f8"
+    },
+    "8-b": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 87,
+          "bottom": 270,
+          "x0": 52,
+          "x1": 553,
+          "erase": [
+            [
+              52,
+              225,
+              390,
+              270
+            ]
+          ]
+        },
+        {
+          "page": 12,
+          "top": 290,
+          "bottom": 580,
+          "x0": 397,
+          "x1": 552
+        },
+        {
+          "page": 12,
+          "top": 444,
+          "bottom": 479,
+          "x0": 52,
+          "x1": 390
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 467,
+          "bottom": 579,
+          "x0": 52,
+          "x1": 405
+        },
+        {
+          "page": 55,
+          "top": 290,
+          "bottom": 576,
+          "x0": 410,
+          "x1": 565
+        },
+        {
+          "page": 74,
+          "top": 155,
+          "bottom": 282,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Uses a radius of 0.9 and finishes correctly"
+      ],
+      "inspectedQuestionSha256": "587b8af777b35da153c5a0ad84e58bd7359d3727a598397d40ccd45cf3edb440",
+      "inspectedSolutionSha256": "5e03b5c1ce4c89f80b01a0c153d2a28fea4b8ecbae747a0e3223e200b2df9f7a",
+      "figureKey": "maths-2010-OL-scheme-project-p055-i2",
+      "inspectedPublishedQuestionSha256": "ee03982b50e778c32c883e618e1e8b32454147196cac269f5b6f5a774283f23e"
+    },
+    "8-c": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 87,
+          "bottom": 270,
+          "x0": 52,
+          "x1": 553,
+          "erase": [
+            [
+              52,
+              225,
+              390,
+              270
+            ]
+          ]
+        },
+        {
+          "page": 12,
+          "top": 290,
+          "bottom": 580,
+          "x0": 397,
+          "x1": 552
+        },
+        {
+          "page": 12,
+          "top": 610,
+          "bottom": 645,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 55,
+          "top": 607,
+          "bottom": 708,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 74,
+          "top": 288,
+          "bottom": 351,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Uses at least 3 correct sides in addition"
+      ],
+      "inspectedQuestionSha256": "968c8ee2e9041c6afa1b90995a341d30f46abc74236b1204c2dced99631d49a1",
+      "inspectedSolutionSha256": "e57d436ef0aa779bf2db4c5238122970ac4b95bb80c28fc23ea5b02352aede56",
+      "figureKey": "maths-2010-OL-scheme-project-p055-i3",
+      "inspectedPublishedQuestionSha256": "ac38e4fbc63bbe6adff143ef38b48f6d54ca34725978ad4f121c6f95c0267fc2"
+    },
+    "8-d": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 87,
+          "bottom": 270,
+          "x0": 52,
+          "x1": 553,
+          "erase": [
+            [
+              52,
+              225,
+              390,
+              270
+            ]
+          ]
+        },
+        {
+          "page": 12,
+          "top": 290,
+          "bottom": 580,
+          "x0": 397,
+          "x1": 552
+        },
+        {
+          "page": 13,
+          "top": 53,
+          "bottom": 88,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 55,
+          "bottom": 218,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 74,
+          "top": 357,
+          "bottom": 448,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct height of triangle (1.56) but fails to add 2.4"
+      ],
+      "inspectedQuestionSha256": "09ee570490353a297b575ad9bb6e7941818ad72adcdf0ba2d3fc8c74b59e62dc",
+      "inspectedSolutionSha256": "7dcdcea1e15ff2a19da0f375c69eed16fe8a1cc2483543cf4a96cf80ab79c1b9",
+      "figureKey": "maths-2010-OL-scheme-project-p056-i1",
+      "inspectedPublishedQuestionSha256": "49f3af4ce22aa5ff072d6b6160009ff5bcb1c76920a488795d853d725323b2db"
+    },
+    "8-e": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 12,
+          "top": 87,
+          "bottom": 270,
+          "x0": 52,
+          "x1": 553,
+          "erase": [
+            [
+              52,
+              225,
+              390,
+              270
+            ]
+          ]
+        },
+        {
+          "page": 12,
+          "top": 290,
+          "bottom": 580,
+          "x0": 397,
+          "x1": 552
+        },
+        {
+          "page": 13,
+          "top": 246,
+          "bottom": 281,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 56,
+          "top": 296,
+          "bottom": 744,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 74,
+          "top": 454,
+          "bottom": 558,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Correct construction outside agreed tolerance [± 3mm]"
+      ],
+      "inspectedQuestionSha256": "9b43a455e32691c1b754fb397ea824f8b22145c79e82caf596d957b5ecb91dc4",
+      "inspectedSolutionSha256": "bc26b450d026b2c89b23cfa3f5201ac23ee6bf777fbba745b23b0fcc796313d4",
+      "figureKey": "maths-2010-OL-scheme-project-p056-i2",
+      "inspectedPublishedQuestionSha256": "136fa7d84fa166e404818a3ea9b0e3c75e3a1d865481df6d1148381dafeeefbf"
+    },
+    "9a-a": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 93,
+          "bottom": 243,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 14,
+          "top": 250,
+          "bottom": 479,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 738,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 280,
+          "bottom": 452,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 75,
+          "top": 97,
+          "bottom": 229,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Accept leaves unordered."
+      ],
+      "inspectedQuestionSha256": "8ee4faca0228a64cb57fb33d3f7e0c91e4f70de860960f0e6b348d3486952a08",
+      "inspectedSolutionSha256": "734ec73439e2387057cd4d9d4ad32d14c1135f8b4121c69f1b2972633579ed59",
+      "figureKey": "maths-2010-OL-scheme-project-p057-i1",
+      "inspectedPublishedQuestionSha256": "ecf4f8984e799566f348c53599f1af751b5db177ba9f3418319b27a5b48cf1ec"
+    },
+    "9a-b": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 93,
+          "bottom": 243,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 14,
+          "top": 485,
+          "bottom": 506,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 738,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 480,
+          "bottom": 617,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 75,
+          "top": 235,
+          "bottom": 284,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — One correct difference identified"
+      ],
+      "inspectedQuestionSha256": "7fc4c4bb65de1344a0eebdb0478e9890cb0d3f3df1e39fc1fd621f6bcbd001d8",
+      "inspectedSolutionSha256": "a5ee7ef7bec512df707876a5a683a736de277e3464a50a39543a48e3cc10aa46",
+      "figureKey": "maths-2010-OL-scheme-project-p057-i2",
+      "inspectedPublishedQuestionSha256": "c42717f7e2bb3db458ad377904e0191b52543f7d4a18ff9ea0c9cc63d7ccee72"
+    },
+    "9a-c": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 14,
+          "top": 93,
+          "bottom": 243,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 14,
+          "top": 629,
+          "bottom": 650,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 738,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 57,
+          "top": 651,
+          "bottom": 770,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 75,
+          "top": 290,
+          "bottom": 368,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — TC = 7 but incorrect conclusion"
+      ],
+      "inspectedQuestionSha256": "e8bd774dc19ca31889de0fd7331b5db33cedfd262514c985faa727c5717ef533",
+      "inspectedSolutionSha256": "42f953bc010ed4ba4bee482211f398c730e94ea847b446d4c7a15df154e55027",
+      "figureKey": "maths-2010-OL-scheme-project-p057-i3",
+      "inspectedPublishedQuestionSha256": "5b40fe44dc1529061acbd4af0d3c6cb4f11dcdc9c96db26748eaebf24f7bcdb8"
+    },
+    "9a-d": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 15,
+          "top": 53,
+          "bottom": 436,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 738,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 53,
+          "bottom": 449,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 75,
+          "top": 373,
+          "bottom": 478,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Note — Curve does not need to be joined to (0,0)"
+      ],
+      "inspectedQuestionSha256": "028dff70719389cd207e6b59d2b4175066b3d4470008a4fb06ce4c5da31063e4",
+      "inspectedSolutionSha256": "31c217b0611f05d78d6e2a9cb2c0d9c5a4d6ed864025c34da28d2ff79c6f5bdb",
+      "figureKey": "maths-2010-OL-scheme-project-p058-i1",
+      "inspectedPublishedQuestionSha256": "43b88cfcb6e996c5e8a950f46d3c318d3850fad685b7561c3e1ccab14c8138ed"
+    },
+    "9a-e": {
+      "topic": "1-6",
+      "atlas": "statistics",
+      "questionRegions": [
+        {
+          "page": 15,
+          "top": 53,
+          "bottom": 436,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 445,
+          "bottom": 525,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 738,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 165,
+          "bottom": 561,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 75,
+          "top": 484,
+          "bottom": 588,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — One correct answer"
+      ],
+      "inspectedQuestionSha256": "910abf8cb0865b3c30353ca6e43e18b4eaf30d4dde57b34c0b6998fea405ae1c",
+      "inspectedSolutionSha256": "722b1a30af92626aee455991deb9aed7f6d57cc7d163cb0271ddd09c688edad3",
+      "figureKey": "maths-2010-OL-scheme-project-p058-i2",
+      "inspectedPublishedQuestionSha256": "538d66d1a6e7e3692c0d32918b11bd1c1b7b2b90841a2dece3cb92d4fefceef5"
+    },
+    "9a-f": {
+      "topic": "1-2",
+      "atlas": "probability",
+      "questionRegions": [
+        {
+          "page": 15,
+          "top": 53,
+          "bottom": 436,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 572,
+          "bottom": 621,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 15,
+          "top": 738,
+          "bottom": 753,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 58,
+          "top": 165,
+          "bottom": 449,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 58,
+          "top": 648,
+          "bottom": 729,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 75,
+          "top": 594,
+          "bottom": 702,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — Writes 12, 13 or 14 but no fraction"
+      ],
+      "inspectedQuestionSha256": "0d8dcbfd7e91aba66e12b3dc96a957eda513170abea9e77f625c59dc62643d63",
+      "inspectedSolutionSha256": "1024d742e1e6fe119cb597f09e466875ed55d94b168f31b8e8e6b557bb2792c2",
+      "figureKey": "maths-2010-OL-scheme-project-p058-i3",
+      "inspectedPublishedQuestionSha256": "de82f6f25b2abc4461de34246e1875f3f12f04ea4805883ba2c513ae0275e554"
+    },
+    "9b-a-i": {
+      "topic": "3-4",
+      "atlas": "area-volume",
+      "questionRegions": [
+        {
+          "page": 16,
+          "top": 87,
+          "bottom": 400,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 16,
+          "top": 418,
+          "bottom": 436,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 448,
+          "bottom": 497,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 76,
+          "top": 97,
+          "bottom": 164,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Any use of 88 and 29"
+      ],
+      "inspectedQuestionSha256": "559cff9cca3aa99e572a4e61822194563f6732d13d7723873e493bea2c66ab1f",
+      "inspectedSolutionSha256": "c14851a51f33eb15af5b74f39be6476c1aea068786f33583911b8d28ba25533e",
+      "figureKey": "maths-2010-OL-scheme-project-p059-i1",
+      "inspectedPublishedQuestionSha256": "c85c36769a94f6992def822e35663491d9b2f142e688062a2fba803fc0fbc48d"
+    },
+    "9b-a-ii": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 16,
+          "top": 87,
+          "bottom": 400,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 16,
+          "top": 544,
+          "bottom": 565,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 59,
+          "top": 540,
+          "bottom": 721,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 76,
+          "top": 169,
+          "bottom": 233,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Joins B to D in diagram"
+      ],
+      "sourceNote": "The credit notes print x² = 277. The model solution and calculation give x² = 29² + 44² = 2777, so |BC| ≈ 52.697 m. The original notes are retained.",
+      "inspectedQuestionSha256": "203a12d6ed6c72383af9928e129f91a4330a5fc1a747a653c146b259e562c3b5",
+      "inspectedSolutionSha256": "a1349d4190a7984b0756e6ee65025ecaace71ccbd64e893e6678b4458a5519fb",
+      "figureKey": "maths-2010-OL-scheme-project-p059-i2",
+      "inspectedPublishedQuestionSha256": "18fd11a03400fdd04266d1a5459f72296ff3fe4ae10e735e96de77bcf32a3dec"
+    },
+    "9b-a-iii": {
+      "topic": "2-4",
+      "atlas": "trigonometry",
+      "questionRegions": [
+        {
+          "page": 16,
+          "top": 87,
+          "bottom": 400,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 16,
+          "top": 544,
+          "bottom": 565,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 17,
+          "top": 53,
+          "bottom": 74,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 83,
+          "bottom": 207,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 76,
+          "top": 238,
+          "bottom": 308,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Low Partial Credit — Uses answer from (i)"
+      ],
+      "inspectedQuestionSha256": "f7e292de38f64bc1ec1de14297fbe2faa0a72d613c0a73266f423c5fd8894284",
+      "inspectedSolutionSha256": "7846207c2985e3af44bf05c579e1fcac71d526b83c49c07b788832f7c4aa2261",
+      "figureKey": "maths-2010-OL-scheme-project-p060-i1",
+      "inspectedPublishedQuestionSha256": "c2e447db1276231c320a3b49b14423685e4a8dc277eafbce77df31cb15f0cbc3"
+    },
+    "9b-b": {
+      "topic": "2-1",
+      "atlas": "geometry-proofs-and-constructions",
+      "questionRegions": [
+        {
+          "page": 17,
+          "top": 232,
+          "bottom": 280,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 17,
+          "top": 410,
+          "bottom": 556,
+          "x0": 225,
+          "x1": 375
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 218,
+          "bottom": 525,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 76,
+          "top": 314,
+          "bottom": 391,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "Partial Credit — Tangent drawn with no radius/diameter"
+      ],
+      "inspectedQuestionSha256": "6334ca3720a2de3b8f931048c6f787e3eb97d664732539ccd41e28b6df1f478e",
+      "inspectedSolutionSha256": "5a16054695823160ab3baeefd76beb29a0e0ff66ded8e8ee3e8cc047dc1f71f6",
+      "figureKey": "maths-2010-OL-scheme-project-p060-i2",
+      "inspectedPublishedQuestionSha256": "ddf5150547e06f72ba242b2e7696e8a8a03e0fd870d83b7f507abe041184c696"
+    },
+    "9b-c": {
+      "topic": "2-1",
+      "atlas": "geometry",
+      "questionRegions": [
+        {
+          "page": 17,
+          "top": 564,
+          "bottom": 733,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "schemeRegions": [
+        {
+          "page": 60,
+          "top": 535,
+          "bottom": 722,
+          "x0": 52,
+          "x1": 553
+        },
+        {
+          "page": 76,
+          "top": 397,
+          "bottom": 475,
+          "x0": 52,
+          "x1": 553
+        }
+      ],
+      "rows": [
+        "High Partial Credit — 2 correct answers only"
+      ],
+      "inspectedQuestionSha256": "49d2e33cb24e77629eac5d1de636d33c7a3740e13a308bd5126154c3fc175bb2",
+      "inspectedSolutionSha256": "84f16e0535f2b88177e22a12c22b1ef6758f954d18a8fdda503b95d75b8a04f1",
+      "figureKey": "maths-2010-OL-scheme-project-p060-i3",
+      "inspectedPublishedQuestionSha256": "26dc0eb5b1a9e5804aecc22485a640f7498026d485f40e9c0f63deaa4fdad853"
+    }
+  }
+}

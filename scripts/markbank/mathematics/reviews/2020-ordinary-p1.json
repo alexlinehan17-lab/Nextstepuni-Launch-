@@ -1,0 +1,1178 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2020,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "9fefccdb002cdf45601ad1ea15fe3077f2379cb120f3ee38b62ee9cb9230d001",
+  "schemeSha256": "39ca5c244b17af1edbdc6b4edd50b851afd84c56f102677220c76e00396a874d",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 28 question-paper pages and PDF pages 1–21 of the combined Ordinary Level scheme (cover, notes, contents, the Paper 1 scale table on page 5, the summary of mark allocations on page 6, the annotation palette on page 7, every Paper 1 model solution and marking note on pages 8–20, and the Paper 2 title page 21). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 35,
+    "8": 55,
+    "9": 60
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "The 2020 Leaving Certificate examinations were cancelled and replaced by Calculated Grades, but the SEC published this paper and its marking scheme. The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 35 marks, Q8 55 marks, Q9 60 marks). Every question is retained.",
+    "40 independently marked units, matching the printed summary of allocations on scheme page 6. Q3(a)(i) and (a)(ii) share one 10D scale (“4 items (find z₃ and 3 plots)”) and are one task.",
+    "Paper 1 bands from the Ordinary Level scale table on scheme page 5: 5B 0,2,5; 5C 0,3,4,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,4,8,10; 10D 0,3,5,8,10; 15D 0,5,7,11,15 (the Ordinary Level 15D ladder differs from the Higher Level 0,4,7,11,15, and Q2(b) prints “Scale 15D (0, 5, 7, 11,15)”).",
+    "This paper had no authored cards before this review; all 40 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from. Q5(b)(ii)–(iii) are graph tasks whose model solutions are drawings; their cards carry the printed credit criteria and point to the scheme pages.",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. All page references are PDF positions, which match the printed scheme page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2020-ol-p1-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week.",
+      "questionText": "During a particular week, John worked 45 hours at the basic rate and made sales amounting to €350. Find John’s gross pay for this week."
+    },
+    {
+      "id": "maths-2020-ol-p1-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week.",
+      "questionText": "During the following week John worked 51 hours. This included 3 hours on Sunday. If John works on a Sunday he receives 1·5 times the basic rate for those hours. His gross pay for that week was €713·20. Find the amount of sales John made in that week."
+    },
+    {
+      "id": "maths-2020-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "John works as part of a sales team. He earns a basic rate of €12·60 per hour. In addition to his hourly pay, he earns a commission of 22% on any sales he makes above €200 each week.",
+      "questionText": "John pays tax at the Standard Rate of 20% and at the Higher Rate of 40%. He has a weekly Tax Credit of €26. The weekly Standard Rate Cut-off Point is €678. Find John’s net income for the week where his salary was €713·20."
+    },
+    {
+      "id": "maths-2020-ol-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the equation: (9x − 6)/2 = (3x − 14)/3 + 9x/4."
+    },
+    {
+      "id": "maths-2020-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the simultaneous equations: 3x − y = 4; 4x² − 3xy = 4."
+    },
+    {
+      "id": "maths-2020-ol-p1-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = 3 − 4i, z₂ = −2 + i and z₃ = 2iz₂, where i² = −1.",
+      "questionText": "(i) Write z₃ in the form a + bi, where a, b ∈ ℤ. (ii) Plot z₁, z₂ and z₃ on the given Argand Diagram. Label each point clearly."
+    },
+    {
+      "id": "maths-2020-ol-p1-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = 3 − 4i, z₂ = −2 + i and z₃ = 2iz₂, where i² = −1.",
+      "questionText": "Find |z₁|."
+    },
+    {
+      "id": "maths-2020-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "z₁ = 3 − 4i, z₂ = −2 + i and z₃ = 2iz₂, where i² = −1.",
+      "questionText": "If z₁ × z₄ = 29 + 3i, write z₄ in the form a + bi, where a, b ∈ ℝ."
+    },
+    {
+      "id": "maths-2020-ol-p1-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The Golden Gate Bridge in San Francisco is constantly being repainted. It is estimated that the surface area of exposed steel that needs to be painted is approximately 10 million square feet.",
+      "questionText": "Given that 1 metre is equal to 3·28 feet, convert the surface area of the bridge into square metres, giving your answer in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℕ. Give the value of a correct to two significant figures."
+    },
+    {
+      "id": "maths-2020-ol-p1-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The Golden Gate Bridge in San Francisco is constantly being repainted. It is estimated that the surface area of exposed steel that needs to be painted is approximately 10 million square feet.",
+      "questionText": "A litre of the paint used on the Golden Gate Bridge will cover approximately 5 square metres. This paint comes in 25 litre tins. Find the minimum number of tins of paint that will be needed to paint the entire bridge."
+    },
+    {
+      "id": "maths-2020-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "questionText": "Solve the equation 2^(9x−1) = 8^(2x)."
+    },
+    {
+      "id": "maths-2020-ol-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the equation x² − 3x − 4 = 0."
+    },
+    {
+      "id": "maths-2020-ol-p1-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-functions"
+      ],
+      "questionText": "Complete the table below to show the value of the function f(x) = −x² − x + 6 for each of the given values of x. x: −4, −3, −2, −1, 0, 1, 2. f(x): _, _, 4, _, _, _, _."
+    },
+    {
+      "id": "maths-2020-ol-p1-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "Part (b)(i): Complete the table below to show the value of the function f(x) = −x² − x + 6 for each of the given values of x.",
+      "questionText": "Hence draw the graph of f in the domain −4 ≤ x ≤ 2, where x ∈ ℝ, on the diagram below."
+    },
+    {
+      "id": "maths-2020-ol-p1-q5-b-iii",
+      "printedParts": [
+        "Q5(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "Part (b)(i): Complete the table below to show the value of the function f(x) = −x² − x + 6 for each of the given values of x.",
+      "questionText": "On the same diagram as the function f, draw the graph of the function g(x) = f(x − 2), in the domain −2 ≤ x ≤ 4, where x ∈ ℝ. Label the graphs of f(x) and g(x) clearly."
+    },
+    {
+      "id": "maths-2020-ol-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "questionText": "Differentiate the function f(x) = 4x³ − 3x² + x − 7, where x ∈ ℝ, with respect to x."
+    },
+    {
+      "id": "maths-2020-ol-p1-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "questionText": "Find the slope of the tangent to the graph of f(x) = 4x³ − 3x² + x − 7 at the point (1, −5)."
+    },
+    {
+      "id": "maths-2020-ol-p1-q6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Part (a)(ii): Find the slope of the tangent to the graph of f(x) = 4x³ − 3x² + x − 7 at the point (1, −5).",
+      "questionText": "Hence find the equation of the tangent to the graph at this point."
+    },
+    {
+      "id": "maths-2020-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "The function g(x) = 2x² + px + q, where p, q ∈ ℤ, and x ∈ ℝ. Given that g(2) = 6 and g′(3) = 9, find the value of p and the value of q. Note: g′(3) is the value of the derivative of g(x) at x = 3."
+    },
+    {
+      "id": "maths-2020-ol-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month.",
+      "questionText": "How much money does Pat pay in total to the credit union for the loan?"
+    },
+    {
+      "id": "maths-2020-ol-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month.",
+      "questionText": "Show the amount that Pat repays as a percentage of the amount that he borrows from the credit union is 133·1%, correct to one decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A sum of money is invested at r% per annum compound interest for 3 years. At the end of the 3 years the value of the investment has increased by 33·1%. Find the value of r."
+    },
+    {
+      "id": "maths-2020-ol-p1-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Pat buys a new car for €32 000. He trades in his old car and is given an allowance of €20 000 by the garage. He borrows the balance of the money from the credit union. His fixed monthly repayment over three years is €443·66 per month.",
+      "questionText": "It is estimated that the value of cars depreciates at a compound rate of 20% per year. Use this percentage to find the value of Pat's car after three years (original price €32 000)."
+    },
+    {
+      "id": "maths-2020-ol-p1-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "It is estimated that the value of cars depreciates at a compound rate of 20% per year.",
+      "questionText": "Pat's friend Caitlín bought a new car three years ago. Its value also depreciated by 20% per year. It is now worth €17 920. Find the original value of the car."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres.",
+      "questionText": "Find the height of the block above the water."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres.",
+      "questionText": "Show that the swimmer is on the surface of the water (i.e. h(x) = 0) when she is 12 metres from the starting block."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres.",
+      "questionText": "Find the horizontal distance, in metres, from the starting block to the point where the swimmer enters the water."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres.",
+      "questionText": "Find h′(x), the derivative of h(x) = (1/60)x² − (1/4)x + 3/5."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres.",
+      "questionText": "Use your answer to Part (c)(i) to find the horizontal distance (x), in metres, from the starting block to the point at which the swimmer reaches her greatest depth."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A swimmer is on a starting block at the beginning of a race. When she dives off the block until she resurfaces, the level of the swimmer relative to the level of the water is given by the function: h(x) = (1/60)x² − (1/4)x + 3/5. In the function, x is the horizontal distance in metres of the swimmer from the block, 0 ≤ x ≤ 12, where x ∈ ℝ and h(x) is measured in metres. Part (c)(ii): Use your answer to Part (c)(i) to find the horizontal distance (x), in metres, from the starting block to the point at which the swimmer reaches her greatest depth.",
+      "questionText": "Hence find this greatest depth."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In the 2016 Summer Olympics, Michael Phelps, won the 200 m Butterfly final in a time of 1 minute and 53·36 seconds (1: 53·36). The time it took to swim each of the four 50 m sections of the race (split time) is given in the table below. The percentage increase in the time taken to swim one section is also given. Thus, it took the swimmer 14·7% longer to swim the second 50 metres compared to the first 50 metres. Race Section, Split Time (secs), Percentage Increase: 0 – 50 m, 24·85; 50 – 100 m, 28·5, 14·7%; 100 – 150 m, 29·33; 150 – 200 m, 30·68; Total, 1:53·36.",
+      "questionText": "Complete the table by finding the percentage increase in split time by comparing each split time with the previous one. Give your answers correct to one decimal place."
+    },
+    {
+      "id": "maths-2020-ol-p1-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In the 2016 Summer Olympics, Michael Phelps, won the 200 m Butterfly final in a time of 1 minute and 53·36 seconds (1: 53·36). The time it took to swim each of the four 50 m sections of the race (split time) is given in the table below. The percentage increase in the time taken to swim one section is also given. Thus, it took the swimmer 14·7% longer to swim the second 50 metres compared to the first 50 metres. Race Section, Split Time (secs), Percentage Increase: 0 – 50 m, 24·85; 50 – 100 m, 28·5, 14·7%; 100 – 150 m, 29·33; 150 – 200 m, 30·68; Total, 1:53·36.",
+      "questionText": "Another swimmer in the race completed the first 50 m in a time of 25·01 seconds. His subsequent 50 m split times increased at the same rates as each of Michael Phelps’ times. Using the table below, or otherwise, find the difference between his finishing time and that of Michael Phelps. Give your answers in seconds correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "Complete the table below to show the number of matchsticks required to make each of the first six patterns of the above sequence. Pattern Number: 1, 2, 3, 4, 5, 6. Number of Matchsticks: 3, 7, _, _, _, _."
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "How many matchsticks are required to make pattern 10 of the sequence?"
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "Find a formula for Tₙ, the number of matchsticks required to make pattern n of the sequence."
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "Pattern k has 147 matchsticks, where k ∈ ℕ. Find the value of k."
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "Find a formula for Sₙ, the total number of matchsticks required to make the first n patterns."
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "Find the total number of complete patterns in the sequence that can be made using 820 matchsticks."
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "The table below shows the number of triangles formed by each pattern for the first two patterns. Complete the table to show the number of triangles formed for patterns three to six. Pattern Number: 1, 2, 3, 4, 5, 6. Number of Triangles: 1, 3, _, _, _, _."
+    },
+    {
+      "id": "maths-2020-ol-p1-q9-d-ii",
+      "printedParts": [
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The following sequence of patterns is created using matchsticks to form equilateral triangles.",
+      "questionText": "The area of each triangle is 4√3 cm². Find, correct to the nearest cm², the combined total area covered by the first 15 patterns in the sequence."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    },
+    {
+      "pages": [
+        21
+      ],
+      "wording": "Using the table below, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods for the same marked task, with no printed pool of prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:4bcb6b2e6058aa0d": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "4:6ced564ffef2266e": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "16:142e7551103ef437": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "21:cf83de1aa94ddb5e": {
+      "classification": "method-choice",
+      "reason": "The table is one permitted method for the same printed task and scale; there is no printed pool of prompts."
+    }
+  }
+}

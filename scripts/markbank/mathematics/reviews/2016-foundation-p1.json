@@ -1,0 +1,1401 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2016,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003BLP100EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "01465b2d5c3e1cc649bfdfb6e955eb4f6399ef0abcdb26a18285cc65d919e3da",
+  "schemeSha256": "87f2de002bafee374e87f00bd29e8fd6fc7b50932b86c57934f6f25f2562ed0c",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and all 24 scheme PDF pages; detailed allocations checked against the summary on PDF page 7 (printed page 4). Corrupt font-encoded scheme spans were independently transcribed from the rendered originals.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7,
+    8
+  ],
+  "sourceNotes": [
+    "All ten questions are required. Candidate and offered totals are both 300 marks.",
+    "39 independently marked units. Q1(a)(i–iii), Q1(b)(i–iii), Q2(a)(i+ii), Q2(b)(i–iii), Q3(a)(i+ii), Q3(b)(i+ii), Q4(b)(ii–iv), Q8(b)(i+ii) and Q10(b)(i+ii) each retain their single published scale.",
+    "Question file LC003BLP100EV.pdf and scheme file LC003BLP000EV.pdf are distinct. Page references are PDF positions.",
+    "The PDF scheme has corrupted text mappings in several embedded fonts. The raw extraction is retained alongside explicitly labelled visual transcriptions of affected quotes, keyed by PDF page. The original scheme remains the complete answer source.",
+    "Q6 construction and Q7 enlargement tasks need physical measurements. Q7 later parts depend on the unlabelled printed lengths and retain the ruler as well as the original diagram.",
+    "The toothpaste stem specifies radius 1.6 cm even though its picture’s arrow spans the width. Preserve the stated radius; the published scheme uses radius 1.6 cm.",
+    "2016 10C uses 0,4,7,10; Q10(a)(i) uses 5D, 0,2,3,4,5; Q10(a)(iii) volume is 15C as published."
+  ],
+  "schemeVisualTranscriptions": [
+    {
+      "page": 8,
+      "quotes": [
+        "14/27",
+        "13/27",
+        "9/16",
+        "8/12",
+        "11/28"
+      ]
+    },
+    {
+      "page": 10,
+      "quotes": [
+        "One correct interval marked on graph"
+      ]
+    },
+    {
+      "page": 11,
+      "quotes": [
+        "Shows knowledge of relevance of middle term",
+        "One correct new entry",
+        "Two or three correct new entries"
+      ]
+    },
+    {
+      "page": 13,
+      "quotes": [
+        "One line and angle correct",
+        "Two lines correct but wrong angle",
+        "51°",
+        "May have correct answer based on candidate’s diagram"
+      ]
+    },
+    {
+      "page": 14,
+      "quotes": [
+        "|AB| = 3·3 cm",
+        "|AD| = 6·6 cm",
+        "6·6/3·3 = 2",
+        "Some relevant construction"
+      ]
+    },
+    {
+      "page": 15,
+      "quotes": [
+        "12 − 2 × (3 + 1) = 4"
+      ]
+    },
+    {
+      "page": 16,
+      "quotes": [
+        "one correct entry",
+        "three correct entries"
+      ]
+    },
+    {
+      "page": 17,
+      "quotes": [
+        "One point plotted correctly",
+        "Two points plotted correctly",
+        "Five points plotted correctly"
+      ]
+    },
+    {
+      "page": 18,
+      "quotes": [
+        "Any line of correct length drawn",
+        "6 correct sides drawn but not net of the given block"
+      ]
+    },
+    {
+      "page": 19,
+      "quotes": [
+        "cos A = 1/4",
+        "A = 75·5°",
+        "96·5 ÷ 0·5 = 193"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "maths-2016-fl-p1-q1-a-i-ii-iii",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)",
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "A bag contains 6 yellow discs, 7 blue discs and 14 red discs.",
+      "questionText": "(i) What is the total number of discs in the bag? (ii) A disc is picked at random from the bag. What is the probability that the disc is red? (iii) A disc is picked at random from the bag. What is the probability that the disc is yellow or blue?",
+      "solutionQuotes": [
+        "6 + 7 + 14 = 27",
+        "14/27",
+        "13/27"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q1-b-i-ii-iii",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)",
+        "Q1(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "There are girls and boys in a class. 16 of the students in the class are girls. 9 of these girls play hockey.",
+      "questionText": "(i) A girl is selected at random from the class. What is the probability that this girl plays hockey? (ii) There are 28 students in the class. The remaining students are boys and 8 of these boys play hockey. A boy is selected at random from the class. What is the probability that this boy plays hockey? (iii) A student is selected at random from the class. What is the probability that this student does not play hockey?",
+      "solutionQuotes": [
+        "9/16",
+        "8/12",
+        "28 – (9 + 8) = 11",
+        "11/28"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q2-a-i-ii",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The side of a square is 8 cm.",
+      "questionText": "(i) Six of these squares have been put together to form the shape shown in the diagram. Find the length of the perimeter of the shape. (ii) The six squares are re-arranged as shown. Find the length of the perimeter of this new shape.",
+      "solutionQuotes": [
+        "8 × 10 = 80 cm",
+        "8 × 14 = 112 cm"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q2-b-i-ii-iii",
+      "printedParts": [
+        "Q2(b)(i)",
+        "Q2(b)(ii)",
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The surface area of a sphere is given by the formula A = 4πr², where r is the radius of the sphere.",
+      "questionText": "(i) Taking π as 3 and r as 2 cm, estimate the surface area of the sphere in the diagram: A = 4 × 3 × 2² = ___. (ii) The actual radius of the sphere in the diagram is 1·9 cm. Taking π as 3·142 and r as 1·9 cm find a more accurate estimate for the surface area of the sphere. Give your answer correct to one decimal place. (iii) Find the difference between your answers in part b(i) and part b(ii) above.",
+      "solutionQuotes": [
+        "= 48 cm2",
+        "= 45·37 = 45·4 cm2",
+        "48 – 45·4 = 2·6 cm2"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q3-a-i-ii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Carla left home at 12 noon for a bicycle ride. The graph represents part of her journey.",
+      "questionText": "(i) At 12.45 p.m., Carla stopped for a rest. After the rest she continued her journey. How long did she stop for? (ii) How far from home was she at 1.30 p.m.?",
+      "solutionQuotes": [
+        "15 min",
+        "30 km"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q3-a-iii",
+      "printedParts": [
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Carla left home at 12 noon for a bicycle ride. The graph represents part of her journey.",
+      "questionText": "Carla stopped at 2 p.m. and rested for one hour. She then cycled for 2 hours at a steady speed until she arrived back at her home. Use this information to complete the graph above.",
+      "solutionQuotes": [
+        "One correct interval marked on graph"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q3-b-i-ii",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "A, B, and C are towns. The town B lies on the road from A to C, as shown. The distance from A to C is 42 km. Aideen drives from A to C and then back to A. She completes this return journey 4 times each week.",
+      "questionText": "(i) What distance does Aideen travel in one week? (ii) Brian drives from B to C and back to B. He completes this return journey 5 times each week. Overall, each week, Brian drives 14 km more than Aideen. Find the distance from A to B.",
+      "solutionQuotes": [
+        "42 × 2 × 4 = 336 km",
+        "A to B: 42 – 35 = 7 km"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "A local supermarket had punnets of blackberries for sale. John counted the number of blackberries in each of 19 punnets. The stem-and-leaf diagram below shows the results. Key: 2|5 = 25 blackberries.",
+      "questionText": "What is the median of the data?",
+      "solutionQuotes": [
+        "Shows knowledge of relevance of middle term"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "A local supermarket had punnets of blackberries for sale. John counted the number of blackberries in each of 19 punnets. The stem-and-leaf diagram below shows the results. Key: 2|5 = 25 blackberries.",
+      "questionText": "What is the range of the data?",
+      "solutionQuotes": [
+        "34 – 18 = 16"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The histogram below shows how much time people spent in a supermarket on a particular morning. The intervals are 0–10, 10–20, 20–30, 30–40 and 40–50 minutes. (10–20 means 10 or more but less than 20, etc.)",
+      "questionText": "Use the data shown in the histogram to complete the table. The first entry, 30 people for 0–10 minutes, is already given.",
+      "solutionQuotes": [
+        "One correct new entry",
+        "Two or three correct new entries"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q4-b-ii-iii-iv",
+      "printedParts": [
+        "Q4(b)(ii)",
+        "Q4(b)(iii)",
+        "Q4(b)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The histogram below shows how much time people spent in a supermarket on a particular morning. The intervals are 0–10, 10–20, 20–30, 30–40 and 40–50 minutes. (10–20 means 10 or more but less than 20, etc.)",
+      "questionText": "(ii) How many people were in the supermarket on that morning? (iii) What percentage of people spent 30 minutes or more in the supermarket? Give your answer correct to the nearest percent. (iv) What is the maximum number of people who could have spent 25 minutes or less in the supermarket?",
+      "solutionQuotes": [
+        "30 + 60 + 45 + 20 + 15 = 170",
+        "= 21%",
+        "30 + 60 + 45 = 135"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C.",
+      "questionText": "Option A: The new car will cost €20 100. In exchange for her old car, she will get a discount of 1/3 on this price. How much will she have to pay?",
+      "solutionQuotes": [
+        "20 100 – 6700 = €13400"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C.",
+      "questionText": "Option B: The new car will cost €21 500. In exchange for her old car, she will get a 40% discount on this price. How much will she have to pay?",
+      "solutionQuotes": [
+        "21 500 – 8600 = €12900"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C.",
+      "questionText": "Option C: She trades in her old car. The new car will then cost €272·50 per month for 4 years. How much will she have to pay?",
+      "solutionQuotes": [
+        "272·50 × 12 × 4 = €13080"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q5-d",
+      "printedParts": [
+        "Q5(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C. Option A: €20 100 less a discount of 1/3. Option B: €21 500 less a 40% discount. Option C: €272·50 per month for 4 years. Each option includes trading in her old car.",
+      "questionText": "Which option should Rena choose if she wants to spend the least amount of money overall?",
+      "solutionQuotes": [
+        "Option B"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "",
+      "questionText": "Construct a triangle ABC, where |AB| = 5 cm, |∠ABC| = 90° and |AC| = 8 cm.",
+      "solutionQuotes": [
+        "One line and angle correct",
+        "Two lines correct but wrong angle"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2016-fl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Triangle ABC has |AB| = 5 cm, |∠ABC| = 90° and |AC| = 8 cm. Part (a) asks you to construct this triangle.",
+      "questionText": "Measure ∠BAC on your diagram.",
+      "solutionQuotes": [
+        "51°",
+        "May have correct answer based on candidate’s diagram"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Triangle ABC has |AB| = 5 cm, |∠ABC| = 90° and |AC| = 8 cm.",
+      "questionText": "Use Pythagoras’ Theorem to find the length of [BC]. Give your answer correct to one decimal place.",
+      "solutionQuotes": [
+        "= 6·24… = 6·2 cm"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram.",
+      "questionText": "Measure the length of [AB] and the length of [AD].",
+      "solutionQuotes": [
+        "|AB| = 3·3 cm",
+        "|AD| = 6·6 cm"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2016-fl-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram. Part (a) asks you to measure the lengths of [AB] and [AD].",
+      "questionText": "Hence, or otherwise, find the scale factor of the enlargement.",
+      "solutionQuotes": [
+        "6·6/3·3 = 2"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2016-fl-p1-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram.",
+      "questionText": "The area of triangle ABC is 3 square units. Find the area of triangle ADE.",
+      "solutionQuotes": [
+        "3 × 22 = 12 sq units"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2016-fl-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram.",
+      "questionText": "On the diagram above, draw the image of triangle ABC under an enlargement, with centre A and a scale factor of 3.",
+      "solutionQuotes": [
+        "Some relevant construction"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2016-fl-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "Find the value of (12 − 2) × (3 + 1).",
+      "solutionQuotes": [
+        "40"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "Find the value of 12 − 2 × 3 + 1.",
+      "solutionQuotes": [
+        "7"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "Add brackets to make the statement in the box below correct: 12 − 2 × 3 + 1 = 4.",
+      "solutionQuotes": [
+        "12 − 2 × (3 + 1) = 4"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q8-b-i-ii",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A computer game costs €55. If Chris and Ruairí put their money together, they would need another €12 to buy the computer game.",
+      "questionText": "(i) How much money do they have between them? (ii) Ruairí has €7 more than Chris. How much money does Chris have?",
+      "solutionQuotes": [
+        "55 – 12 = €43",
+        "36 ÷ 2 = €18"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+      "questionText": "What is the callout charge?",
+      "solutionQuotes": [
+        "€40"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+      "questionText": "If the company fits valves to 6 radiators what will Áine have to pay?",
+      "solutionQuotes": [
+        "€280"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+      "questionText": "How many valves would the company fit for €160?",
+      "solutionQuotes": [
+        "3 valves"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+      "questionText": "If the company fits 8 valves, what will Áine have to pay?",
+      "solutionQuotes": [
+        "€360"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator.",
+      "questionText": "Complete the table to show the amounts charged by Fixrad for 0, 1, 2, 3, 4, 5 and 6 radiators. The entry of €60 for 1 radiator is already given.",
+      "solutionQuotes": [
+        "one correct entry",
+        "three correct entries"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work. Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator. Part (b)(i) asks you to tabulate Fixrad’s charges for 0–6 radiators.",
+      "questionText": "Plot the Fixrad charges on the diagram in part (a).",
+      "solutionQuotes": [
+        "One point plotted correctly",
+        "Two points plotted correctly",
+        "Five points plotted correctly"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work. Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator. Part (b)(ii) asks you to plot the Fixrad charges on the same diagram.",
+      "questionText": "What is the point of intersection of the two graphs?",
+      "solutionQuotes": [
+        "( 2, 120 )"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q9-b-iv",
+      "printedParts": [
+        "Q9(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work. Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator.",
+      "questionText": "Áine decides to fit valves to 5 radiators. Which company should she choose if she wants to pay the least amount of money? Justify your answer by finding the amount she would save.",
+      "solutionQuotes": [
+        "Thermolok",
+        "Amount saved: 300 – 240 = €60"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A rectangular block with dimensions 4 cm, 2 cm, and 3 cm is shown below.",
+      "questionText": "Draw a net of the block on the grid below. Mark in the dimensions on your net.",
+      "solutionQuotes": [
+        "Any line of correct length drawn",
+        "6 correct sides drawn but not net of the given block"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2016-fl-p1-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A rectangular block with dimensions 4 cm, 2 cm, and 3 cm is shown below. Part (a)(i) asks you to draw and label a net of the block.",
+      "questionText": "Hence, or otherwise, find the surface area of the block.",
+      "solutionQuotes": [
+        "24 + 12 + 16 = 52 cm2"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A rectangular block with dimensions 4 cm, 2 cm, and 3 cm is shown below.",
+      "questionText": "Find the volume of the block.",
+      "solutionQuotes": [
+        "2 × 4 × 3 = 24 cm3"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q10-b-i-ii",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A tube of toothpaste is in the shape of a cylinder with radius 1·6 cm and length 12 cm.",
+      "questionText": "(i) Find the volume of toothpaste in the tube, correct to one decimal place. (ii) Each time Mary brushes her teeth she pumps approximately 0·5 cm³ of toothpaste onto her toothbrush. How many times can Mary expect to brush her teeth from this tube of toothpaste?",
+      "solutionQuotes": [
+        "= 96·5 cm3",
+        "96·5 ÷ 0·5 = 193"
+      ]
+    },
+    {
+      "id": "maths-2016-fl-p1-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "A ladder is 4 metres long. It rests against a wall. The base of the ladder is 1 metre from the base of the wall as shown in the diagram. Safety regulations state that the angle (A) between the ladder and the ground should be approximately 76°.",
+      "questionText": "Is it safe to use this ladder in the position shown in the diagram? Use Trigonometry to justify your answer.",
+      "solutionQuotes": [
+        "Yes",
+        "cos A = 1/4",
+        "A = 75·5°"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3
+      ],
+      "classification": "probability-sample-space",
+      "reason": "Picking or selecting discs and students defines the probability experiments; all three parts in each pool are required, not alternative prompts."
+    },
+    {
+      "pages": [
+        10,
+        15
+      ],
+      "classification": "answer-selection",
+      "reason": "The options are car offers or radiator companies to calculate and compare. The candidate answers all individually marked tasks; choosing the cheapest is a required mathematical conclusion."
+    },
+    {
+      "pages": [
+        12,
+        17
+      ],
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits alternative calculation methods for the same required result. It does not create alternative practice prompts."
+    },
+    {
+      "pages": [
+        16
+      ],
+      "classification": "open-construction",
+      "reason": "A net of the given cuboid allows different valid drawings. No closed printed choice pool is specified, and the scheme’s two model nets are illustrative answers rather than prompt alternatives."
+    }
+  ],
+  "selectionDecisions": {
+    "2:07f7c42ffd22193f": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions are required, including all eight Section A questions. All published scale units are retained."
+    },
+    "3:99afe6e50d0bb2be": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions are required, including all eight Section A questions. All published scale units are retained."
+    },
+    "10:69a73df25eec94a1": {
+      "classification": "answer-selection",
+      "reason": "The options are car offers or radiator companies to calculate and compare. The candidate answers all individually marked tasks; choosing the cheapest is a required mathematical conclusion."
+    },
+    "12:2e967056b2c45e8a": {
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits alternative calculation methods for the same required result. It does not create alternative practice prompts."
+    },
+    "15:fcf99ae419b98a20": {
+      "classification": "answer-selection",
+      "reason": "The options are car offers or radiator companies to calculate and compare. The candidate answers all individually marked tasks; choosing the cheapest is a required mathematical conclusion."
+    },
+    "17:c9b64b8aa7280f3e": {
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits alternative calculation methods for the same required result. It does not create alternative practice prompts."
+    }
+  }
+}

@@ -1,0 +1,1027 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2017,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "c19363c2d76d651c52ea9e1f17915f2295cffd8e9f36da2c24fc95be571a7f69",
+  "schemeSha256": "690a3906d4a062d85e6d70258c22aeaced2e5c710da01a35d5930f0aa3a7e7c8",
+  "reviewedAt": "2026-10-12",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and PDF pages 1–20 of the combined Ordinary Level scheme (cover, notes, contents, the Paper 1 title page 5, the scale table on page 6, the summary of mark allocations on page 7, every Paper 1 model solution and marking note on pages 8–19, and the blank page 20). Each task boundary is the published scale beside its model solution, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 50,
+    "8": 45,
+    "9": 55
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7
+  ],
+  "sourceNotes": [
+    "The paper is 300 marks: candidates answer all nine questions (Section A Q1–6, 25 marks each; Section B Q7 50 marks, Q8 45 marks, Q9 55 marks). Every question is retained.",
+    "35 independently marked units. The printed summary on scheme page 7 labels Question 2’s units (a)(i) 5B, (a)(ii) 5A, (b) 10D, (c) 5C, but the paper prints Q2(a)(i), (a)(ii), (a)(iii) and (b), and the model-solution page 9 labels the same four scales (a)(i) 5B, (a)(ii) 5A, (a)(iii) 10D, (b) 5C; the cards follow the paper and the solution page.",
+    "Paper 1 bands from the 2017 Ordinary scale table on scheme page 6: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 10B 0,5,10; 10C 0,4,6,10; 10D 0,4,6,8,10; 15C 0,6,10,15; 15D 0,5,7,10,15. Every part prints the same ladder beside its scale.",
+    "This paper had no authored cards before this review; all 35 units are new. Marking points are lifted line by line from the scheme (read through the glyph repair map) and labelled with the part of the scheme they come from; the scheme’s bullets are not reproduced, and a credit band that depends on a stacked fraction is not quoted as a fragment. List-method alternatives and the Q7(b) table are quoted as one multi-line point.",
+    "Seventeen parts carry the SEC’s own print of their scheme row (model solution and every credit band), cropped from the scheme PDF and shown only after the reveal, because a model-solution line or band was lost to the text layer or is an image: Q1(b), Q1(c), Q2(a)(iii), Q3(a), Q3(b), Q5(a), Q5(b), Q6(b), Q7(a), Q7(d)(i), Q7(d)(ii), Q8(c)(ii), Q8(d), Q9(c), Q9(e)(i), Q9(e)(ii), Q9(e)(iii).",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. Scheme page references are PDF positions (printed page number + 3); question-paper PDF positions match the printed page numbers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2017-ol-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A new machine is bought for €30 000. Its value depreciates by 15% each year for five years. Find the value of the machine at the end of the five years."
+    },
+    {
+      "id": "maths-2017-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "A sum of money was invested for two years at 3% compound interest per year. At the end of the two years it amounted to €30 000. Find the sum invested."
+    },
+    {
+      "id": "maths-2017-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths",
+        "mathematics-ordinary-indices"
+      ],
+      "questionText": "A company invested €25 000 for three years at a fixed rate of compound interest. At the end of the three years it amounted to €26 530·20. Find the rate of interest."
+    },
+    {
+      "id": "maths-2017-ol-p1-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "The complex number z₁ = a + bi, where i² = −1, is shown on the Argand Diagram below.",
+      "questionText": "Write down the value of a and the value of b."
+    },
+    {
+      "id": "maths-2017-ol-p1-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "The complex number z₁ = a + bi, where i² = −1, is shown on the Argand Diagram below.",
+      "questionText": "z₂ = −1 + 2i. Plot z₂ on the Argand Diagram."
+    },
+    {
+      "id": "maths-2017-ol-p1-q2-a-iii",
+      "printedParts": [
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "The complex number z₁ = a + bi, where i² = −1, is shown on the Argand Diagram below. Part (a)(ii): z₂ = −1 + 2i.",
+      "questionText": "z₃ = z₁/z₂. Write z₃ in the form x + yi, where x, y ∈ ℝ."
+    },
+    {
+      "id": "maths-2017-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "questionText": "Solve for z: 2z − 6(4 − 6i) = (−1 + i)(4 − 2i)."
+    },
+    {
+      "id": "maths-2017-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Find the two values of x for which 3x² − 6x − 8 = 0. Give each answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2017-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-functions"
+      ],
+      "questionText": "Find the co-ordinates of the minimum point of the function f(x) = 3x² − 6x − 8, where x ∈ ℝ."
+    },
+    {
+      "id": "maths-2017-ol-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve for x: 11x − 5(2x − 1) = 3(6 − x) + 3."
+    },
+    {
+      "id": "maths-2017-ol-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the simultaneous equations: y + 5 = 2x; x² + y² = 25."
+    },
+    {
+      "id": "maths-2017-ol-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "A field is divided into eight sections as shown below. The width of each section is 3 metres. The height, in metres, of each section is given in the diagram. Use the Trapezoidal rule to estimate the area of the field."
+    },
+    {
+      "id": "maths-2017-ol-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "The area of the same field was re-estimated by applying the Trapezoidal rule again. This time, a different section width (4 m) and a different set of section heights were used, as shown below. The area was found to be 145·6 m². Use this information to find the value of the height marked x on the diagram."
+    },
+    {
+      "id": "maths-2017-ol-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A salesman earns a basic salary of €150 per week. In addition, he gets commission of 20% on sales up to the value of €1000 in the week and 30% commission on any sales above this.",
+      "questionText": "Find his total income for a week when his total sales amount to €3000."
+    },
+    {
+      "id": "maths-2017-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems",
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A salesman earns a basic salary of €150 per week. In addition, he gets commission of 20% on sales up to the value of €1000 in the week and 30% commission on any sales above this.",
+      "questionText": "On a different week his total income is €1160. Find his total sales for this week."
+    },
+    {
+      "id": "maths-2017-ol-p1-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below.",
+      "questionText": "Draw the next pattern of tiles onto the diagram above."
+    },
+    {
+      "id": "maths-2017-ol-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below.",
+      "questionText": "Based on the patterns shown, complete the table below. Pattern number (n): 1, 2, 3, 4, 5. Number of Tiles: 5, _, _, _, _."
+    },
+    {
+      "id": "maths-2017-ol-p1-q7-c-i",
+      "printedParts": [
+        "Q7(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below.",
+      "questionText": "Assuming the pattern continues, the number of tiles in the nth pattern of the sequence is given by the formula Tₙ = pn + q, where p and q ∈ ℕ. Find the value of p and the value of q."
+    },
+    {
+      "id": "maths-2017-ol-p1-q7-c-ii",
+      "printedParts": [
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Part (c)(i): Assuming the pattern continues, the number of tiles in the nth pattern of the sequence is given by the formula Tₙ = pn + q, where p and q ∈ ℕ. Find the value of p and the value of q.",
+      "questionText": "How many tiles are in the 20th pattern?"
+    },
+    {
+      "id": "maths-2017-ol-p1-q7-c-iii",
+      "printedParts": [
+        "Q7(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Part (c)(i): Assuming the pattern continues, the number of tiles in the nth pattern of the sequence is given by the formula Tₙ = pn + q, where p and q ∈ ℕ. Find the value of p and the value of q.",
+      "questionText": "Find which pattern has exactly 290 tiles."
+    },
+    {
+      "id": "maths-2017-ol-p1-q7-d-i",
+      "printedParts": [
+        "Q7(d)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below.",
+      "questionText": "Show that Sₙ = (3n² + 7n)/2 is a formula for the total number of tiles needed to build the first n patterns."
+    },
+    {
+      "id": "maths-2017-ol-p1-q7-d-ii",
+      "printedParts": [
+        "Q7(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series"
+      ],
+      "stem": "The first three patterns in a sequence of patterns of tiles are shown in the diagram below. Part (d)(i): Show that Sₙ = (3n² + 7n)/2 is a formula for the total number of tiles needed to build the first n patterns.",
+      "questionText": "Find the total number of tiles needed to build the first 30 patterns."
+    },
+    {
+      "id": "maths-2017-ol-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro.",
+      "questionText": "Use the profit function, P(x), to find how much money the company loses if it does not sell any cable."
+    },
+    {
+      "id": "maths-2017-ol-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro.",
+      "questionText": "In a particular week the company made a profit of €8350. Find the number of kilometres of cable it sold that week."
+    },
+    {
+      "id": "maths-2017-ol-p1-q8-c-i",
+      "printedParts": [
+        "Q8(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro.",
+      "questionText": "The table below shows some of the data representing the profit on sales. Use the profit function, P(x), to complete the table. Number of km of cable sold (x): 50, 60, 70, 80, 90, 100. Profit (€): _, _, 12 350, _, _, _."
+    },
+    {
+      "id": "maths-2017-ol-p1-q8-c-ii",
+      "printedParts": [
+        "Q8(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. Part (c)(i): The table below shows some of the data representing the profit on sales. Use the profit function, P(x), to complete the table. Number of km of cable sold (x): 50, 60, 70, 80, 90, 100. Profit (€): _, _, 12 350, _, _, _.",
+      "questionText": "Use the data in the table to draw the graph of the profit function on the axes below for 50 ≤ x ≤ 100, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2017-ol-p1-q8-c-iii",
+      "printedParts": [
+        "Q8(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro. Part (c)(ii): Use the data in the table to draw the graph of the profit function on the axes below for 50 ≤ x ≤ 100, x ∈ ℝ.",
+      "questionText": "Use your graph to estimate the lower and upper range of sales (in km of cable) in order to make a profit of between €10 000 and €14 000 in a particular week. Show your work on the graph above."
+    },
+    {
+      "id": "maths-2017-ol-p1-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A company makes and sells fibre optic cable. It can sell, at most, 200 kilometres of cable in a week. For a certain range of its production the company has found that profit can be modelled using the function: P(x) = 275x − x² − 2000, where x ≤ 200. In the function, x is the number of kilometres of fibre optic cable sold and P(x) is the profit in euro.",
+      "questionText": "Use calculus to find the number of kilometres of cable sold when the profit is increasing at a rate of €105 per km."
+    },
+    {
+      "id": "maths-2017-ol-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm.",
+      "questionText": "Use the functions above to estimate the height of a male and the height of a female each of whose femur is 47·54 cm in length. Give both answers correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm.",
+      "questionText": "Use m(x) to estimate the femur length of a male whose height is 184 cm. Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm.",
+      "questionText": "Conor’s femur length is 44·2 cm. His height is 171 cm. Find the percentage error in using m(x) to estimate his height. Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2017-ol-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "Forensic scientists can estimate the height of a person from the lengths of their bones. One method uses a function which relates the length of the femur bone, x, to the height of the person. Using this method the heights of males and females are estimated using the following functions: Male: m(x) = 2·3x + 65·53, where m(x) is the height and x is the length of the femur, in cm. Female: f(x) = 2·5x + 54·13, where f(x) is the height and x is the length of the femur, in cm.",
+      "questionText": "Find the length of a femur for which the estimated height of a male and the estimated height of a female are the same and find this estimated height."
+    },
+    {
+      "id": "maths-2017-ol-p1-q9-e-i",
+      "printedParts": [
+        "Q9(e)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is P = M/h³ where M is weight in kg and h is height in metres.",
+      "questionText": "Find the Ponderal Index for a person who is 1·60 m tall and weighs 72·5 kg. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2017-ol-p1-q9-e-ii",
+      "printedParts": [
+        "Q9(e)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra",
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is P = M/h³ where M is weight in kg and h is height in metres.",
+      "questionText": "Rearrange the formula P = M/h³ to give a formula which will give the height of a person in terms of their weight and Ponderal index."
+    },
+    {
+      "id": "maths-2017-ol-p1-q9-e-iii",
+      "printedParts": [
+        "Q9(e)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices",
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "stem": "The Ponderal Index is a number which relates a person’s height to their weight. The formula for the Ponderal Index, P, is P = M/h³ where M is weight in kg and h is height in metres. Part (e)(ii): Rearrange the formula P = M/h³ to give a formula which will give the height of a person in terms of their weight and Ponderal index.",
+      "questionText": "Mary has a Ponderal Index of 13 and a weight of 67·5 kg. Find her height. Give your answer in metres, correct to 2 decimal places."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "wording": "Answer all nine / all six / all three questions",
+      "classification": "all-questions-required",
+      "reason": "Every question on the paper is required; every published scale unit is retained."
+    }
+  ],
+  "selectionDecisions": {
+    "2:48a21cd75db7f791": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "3:ec2bdfc72bd5aa25": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    },
+    "10:9d426d6c6ce5cf88": {
+      "classification": "all-questions-required",
+      "reason": "All nine questions are required, including all six Section A and all three Section B questions; every published scale unit is retained."
+    }
+  }
+}
